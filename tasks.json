@@ -1,0 +1,267 @@
+{
+  "tasks": [
+    {
+      "id": "find-pages",
+      "title": "Find pages with selectors",
+      "summary": "Query pages with selector strings.",
+      "keywords": [
+        "selectors",
+        "find",
+        "query",
+        "pages"
+      ],
+      "classes": [
+        "Pages",
+        "PageArray"
+      ],
+      "methods": [
+        "Pages::find",
+        "Pages::findOne",
+        "Pages::get"
+      ],
+      "guides": [
+        "guides/cheatsheets/selectors.md",
+        "guides/docs/selectors.md"
+      ]
+    },
+    {
+      "id": "load-page",
+      "title": "Load a single page",
+      "summary": "Load a page by selector, path, or ID.",
+      "keywords": [
+        "get",
+        "findOne",
+        "page"
+      ],
+      "classes": [
+        "Pages",
+        "Page"
+      ],
+      "methods": [
+        "Pages::get",
+        "Pages::findOne"
+      ],
+      "guides": [
+        "guides/cheatsheets/selectors.md"
+      ]
+    },
+    {
+      "id": "create-save-page",
+      "title": "Create and save pages",
+      "summary": "Create new pages and persist changes.",
+      "keywords": [
+        "create",
+        "save",
+        "page"
+      ],
+      "classes": [
+        "Pages",
+        "Page"
+      ],
+      "methods": [
+        "Pages::add",
+        "Pages::save",
+        "Page::save"
+      ],
+      "guides": [
+        "guides/docs/start/structure/pages.md"
+      ]
+    },
+    {
+      "id": "delete-page",
+      "title": "Delete pages",
+      "summary": "Remove pages safely and permanently.",
+      "keywords": [
+        "delete",
+        "remove",
+        "page"
+      ],
+      "classes": [
+        "Pages",
+        "Page"
+      ],
+      "methods": [
+        "Pages::delete",
+        "Page::delete"
+      ],
+      "guides": [
+        "guides/docs/start/structure/pages.md"
+      ]
+    },
+    {
+      "id": "templates-fields",
+      "title": "Manage templates and fields",
+      "summary": "Define templates and attach fields.",
+      "keywords": [
+        "templates",
+        "fields",
+        "structure"
+      ],
+      "classes": [
+        "Templates",
+        "Fields",
+        "Fieldgroups"
+      ],
+      "methods": [
+        "Templates::add",
+        "Fields::add",
+        "Fieldgroups::add"
+      ],
+      "guides": [
+        "guides/docs/start/structure/templates.md",
+        "guides/docs/start/structure/fields.md"
+      ]
+    },
+    {
+      "id": "render-output",
+      "title": "Render output",
+      "summary": "Render pages and control template output.",
+      "keywords": [
+        "render",
+        "output",
+        "template"
+      ],
+      "classes": [
+        "Page"
+      ],
+      "methods": [
+        "Page::render"
+      ],
+      "guides": [
+        "guides/cheatsheets/templates-output.md",
+        "guides/docs/front-end/output.md"
+      ]
+    },
+    {
+      "id": "users-roles",
+      "title": "Users, roles and permissions",
+      "summary": "Manage users, roles and permissions.",
+      "keywords": [
+        "users",
+        "roles",
+        "permissions",
+        "access"
+      ],
+      "classes": [
+        "Users",
+        "User",
+        "Roles",
+        "Permissions"
+      ],
+      "methods": [
+        "Users::get",
+        "User::hasRole"
+      ],
+      "guides": [
+        "guides/docs/user-access.md",
+        "guides/docs/user-access/roles.md",
+        "guides/docs/user-access/permissions.md"
+      ]
+    },
+    {
+      "id": "hooks",
+      "title": "Hooks",
+      "summary": "Attach hooks to modify behavior.",
+      "keywords": [
+        "hooks",
+        "hookable",
+        "events"
+      ],
+      "classes": [
+        "Wire"
+      ],
+      "methods": [
+        "Wire::addHook",
+        "Wire::addHookAfter",
+        "Wire::addHookBefore"
+      ],
+      "guides": [
+        "guides/docs/modules/hooks.md"
+      ]
+    },
+    {
+      "id": "modules",
+      "title": "Modules",
+      "summary": "Load and configure modules.",
+      "keywords": [
+        "modules",
+        "install",
+        "config"
+      ],
+      "classes": [
+        "Modules"
+      ],
+      "methods": [
+        "Modules::get",
+        "Modules::install"
+      ],
+      "guides": [
+        "guides/docs/modules.md",
+        "guides/docs/modules/intro.md"
+      ]
+    },
+    {
+      "id": "files-images",
+      "title": "Files and images",
+      "summary": "Work with file and image fields.",
+      "keywords": [
+        "files",
+        "images",
+        "upload"
+      ],
+      "classes": [
+        "Pagefiles",
+        "Pageimages"
+      ],
+      "methods": [
+        "Pagefiles::add",
+        "Pageimages::add"
+      ],
+      "guides": [
+        "guides/docs/fields/images.md"
+      ]
+    },
+    {
+      "id": "multilang",
+      "title": "Multi-language",
+      "summary": "Configure multi-language fields and URLs.",
+      "keywords": [
+        "language",
+        "i18n",
+        "translation"
+      ],
+      "classes": [
+        "Languages",
+        "Language"
+      ],
+      "methods": [
+        "Languages::get"
+      ],
+      "guides": [
+        "guides/cheatsheets/multi-language.md",
+        "guides/docs/multi-language-support.md"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "summary": "Apply security best practices.",
+      "keywords": [
+        "security",
+        "permissions",
+        "sessions"
+      ],
+      "classes": [
+        "Session",
+        "Config"
+      ],
+      "methods": [
+        "Session::get",
+        "Session::set"
+      ],
+      "guides": [
+        "guides/cheatsheets/security.md"
+      ]
+    }
+  ]
+}

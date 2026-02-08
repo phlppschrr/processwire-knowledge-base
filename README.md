@@ -6,6 +6,8 @@ This repository builds an LLM-friendly documentation skill from ProcessWire core
 - `docs/core/` — Core-only build (recommended for LLMs)
 - `docs/full/` — Full build (includes modules)
 - `docs/guides/` — Extracted official guides (summaries + cheatsheets)
+- `docs/_hookable.json` — Global hookable index (core + full)
+- `docs/_tasks.json` — Tasks map (task → relevant classes/methods)
 
 Each class/file is chunked into:
 - `index.md`

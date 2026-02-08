@@ -12,6 +12,7 @@ Use the extracted documentation in `docs/` as the canonical source of truth. The
 - `docs/core/index.md` (core-only, recommended)
 - `docs/full/index.md` (full)
 - `docs/guides/index.md` (official guides + cheatsheets)
+- `docs/_tasks.json` (task → relevant classes/methods)
 
 The index is organized into:
 - API Variables (from `ProcessWire` class `@property` list)
@@ -25,6 +26,7 @@ Index categories are configured in `categories.json` (official API structure). I
 - Start from `index.md`, then drill down via group files (`group-*.md`) before opening method files.
 - Each class/file has a `_manifest.json` entry in `docs/*/_manifest.json` with paths and method metadata.
 - Use `_search.json` for compact lookups and `_hookable.json` to find hookable methods fast.
+- Use `docs/_tasks.json` to jump from task intent to relevant classes/methods.
 
 ## Hookable Methods
 Methods implemented with a `___` prefix are hookable. In the docs:

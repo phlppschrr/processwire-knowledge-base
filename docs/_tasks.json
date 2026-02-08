@@ -1,0 +1,490 @@
+{
+  "tasks": [
+    {
+      "id": "find-pages",
+      "title": "Find pages with selectors",
+      "summary": "Query pages with selector strings.",
+      "keywords": [
+        "selectors",
+        "find",
+        "query",
+        "pages"
+      ],
+      "classes": [
+        {
+          "name": "Pages",
+          "profile": "core",
+          "file": "wire/core/Pages/index.md"
+        },
+        {
+          "name": "PageArray",
+          "profile": "core",
+          "file": "wire/core/PageArray/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Pages",
+          "name": "find",
+          "profile": "core",
+          "file": "wire/core/Pages/method-___find.md",
+          "hookable": true
+        },
+        {
+          "class": "Pages",
+          "name": "findOne",
+          "profile": "core",
+          "file": "wire/core/Pages/method-findone.md",
+          "hookable": false
+        },
+        {
+          "class": "Pages",
+          "name": "get",
+          "profile": "core",
+          "file": "wire/core/Pages/method-get.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/cheatsheets/selectors.md",
+        "guides/docs/selectors.md"
+      ]
+    },
+    {
+      "id": "load-page",
+      "title": "Load a single page",
+      "summary": "Load a page by selector, path, or ID.",
+      "keywords": [
+        "get",
+        "findOne",
+        "page"
+      ],
+      "classes": [
+        {
+          "name": "Pages",
+          "profile": "core",
+          "file": "wire/core/Pages/index.md"
+        },
+        {
+          "name": "Page",
+          "profile": "core",
+          "file": "wire/core/Page/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Pages",
+          "name": "get",
+          "profile": "core",
+          "file": "wire/core/Pages/method-get.md",
+          "hookable": false
+        },
+        {
+          "class": "Pages",
+          "name": "findOne",
+          "profile": "core",
+          "file": "wire/core/Pages/method-findone.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/cheatsheets/selectors.md"
+      ]
+    },
+    {
+      "id": "create-save-page",
+      "title": "Create and save pages",
+      "summary": "Create new pages and persist changes.",
+      "keywords": [
+        "create",
+        "save",
+        "page"
+      ],
+      "classes": [
+        {
+          "name": "Pages",
+          "profile": "core",
+          "file": "wire/core/Pages/index.md"
+        },
+        {
+          "name": "Page",
+          "profile": "core",
+          "file": "wire/core/Page/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Pages",
+          "name": "add",
+          "profile": "core",
+          "file": "wire/core/Pages/method-___add.md",
+          "hookable": true
+        },
+        {
+          "class": "Pages",
+          "name": "save",
+          "profile": "core",
+          "file": "wire/core/Pages/method-___save.md",
+          "hookable": true
+        },
+        {
+          "class": "Page",
+          "name": "save",
+          "profile": "core",
+          "file": "wire/core/Page/method-save.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/docs/start/structure/pages.md"
+      ]
+    },
+    {
+      "id": "delete-page",
+      "title": "Delete pages",
+      "summary": "Remove pages safely and permanently.",
+      "keywords": [
+        "delete",
+        "remove",
+        "page"
+      ],
+      "classes": [
+        {
+          "name": "Pages",
+          "profile": "core",
+          "file": "wire/core/Pages/index.md"
+        },
+        {
+          "name": "Page",
+          "profile": "core",
+          "file": "wire/core/Page/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Pages",
+          "name": "delete",
+          "profile": "core",
+          "file": "wire/core/Pages/method-___delete.md",
+          "hookable": true
+        },
+        {
+          "class": "Page",
+          "name": "delete",
+          "profile": "core",
+          "file": "wire/core/Page/method-delete.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/docs/start/structure/pages.md"
+      ]
+    },
+    {
+      "id": "templates-fields",
+      "title": "Manage templates and fields",
+      "summary": "Define templates and attach fields.",
+      "keywords": [
+        "templates",
+        "fields",
+        "structure"
+      ],
+      "classes": [
+        {
+          "name": "Templates",
+          "profile": "core",
+          "file": "wire/core/Templates/index.md"
+        },
+        {
+          "name": "Fields",
+          "profile": "core",
+          "file": "wire/core/Fields/index.md"
+        },
+        {
+          "name": "Fieldgroups",
+          "profile": "core",
+          "file": "wire/core/Fieldgroups/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Templates",
+          "name": "add",
+          "profile": "core",
+          "file": "wire/core/Templates/method-add.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/docs/start/structure/templates.md",
+        "guides/docs/start/structure/fields.md"
+      ]
+    },
+    {
+      "id": "render-output",
+      "title": "Render output",
+      "summary": "Render pages and control template output.",
+      "keywords": [
+        "render",
+        "output",
+        "template"
+      ],
+      "classes": [
+        {
+          "name": "Page",
+          "profile": "core",
+          "file": "wire/core/Page/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Page",
+          "name": "render",
+          "profile": "core",
+          "file": "wire/core/Page/method-___render.md",
+          "hookable": true
+        }
+      ],
+      "guides": [
+        "guides/cheatsheets/templates-output.md",
+        "guides/docs/front-end/output.md"
+      ]
+    },
+    {
+      "id": "users-roles",
+      "title": "Users, roles and permissions",
+      "summary": "Manage users, roles and permissions.",
+      "keywords": [
+        "users",
+        "roles",
+        "permissions",
+        "access"
+      ],
+      "classes": [
+        {
+          "name": "Users",
+          "profile": "core",
+          "file": "wire/core/Users/index.md"
+        },
+        {
+          "name": "User",
+          "profile": "core",
+          "file": "wire/core/User/index.md"
+        },
+        {
+          "name": "Roles",
+          "profile": "core",
+          "file": "wire/core/Roles/index.md"
+        },
+        {
+          "name": "Permissions",
+          "profile": "core",
+          "file": "wire/core/Permissions/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Users",
+          "name": "get",
+          "profile": "core",
+          "file": "wire/core/Users/method-get.md",
+          "hookable": false
+        },
+        {
+          "class": "User",
+          "name": "hasRole",
+          "profile": "core",
+          "file": "wire/core/User/method-hasrole.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/docs/user-access.md",
+        "guides/docs/user-access/roles.md",
+        "guides/docs/user-access/permissions.md"
+      ]
+    },
+    {
+      "id": "hooks",
+      "title": "Hooks",
+      "summary": "Attach hooks to modify behavior.",
+      "keywords": [
+        "hooks",
+        "hookable",
+        "events"
+      ],
+      "classes": [
+        {
+          "name": "Wire",
+          "profile": "core",
+          "file": "wire/core/Wire/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Wire",
+          "name": "addHookAfter",
+          "profile": "core",
+          "file": "wire/core/Wire/method-addhookafter.md",
+          "hookable": false
+        },
+        {
+          "class": "Wire",
+          "name": "addHookBefore",
+          "profile": "core",
+          "file": "wire/core/Wire/method-addhookbefore.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/docs/modules/hooks.md"
+      ]
+    },
+    {
+      "id": "modules",
+      "title": "Modules",
+      "summary": "Load and configure modules.",
+      "keywords": [
+        "modules",
+        "install",
+        "config"
+      ],
+      "classes": [
+        {
+          "name": "Modules",
+          "profile": "core",
+          "file": "wire/core/Modules/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Modules",
+          "name": "get",
+          "profile": "core",
+          "file": "wire/core/Modules/method-get.md",
+          "hookable": false
+        },
+        {
+          "class": "Modules",
+          "name": "install",
+          "profile": "core",
+          "file": "wire/core/Modules/method-___install.md",
+          "hookable": true
+        }
+      ],
+      "guides": [
+        "guides/docs/modules.md",
+        "guides/docs/modules/intro.md"
+      ]
+    },
+    {
+      "id": "files-images",
+      "title": "Files and images",
+      "summary": "Work with file and image fields.",
+      "keywords": [
+        "files",
+        "images",
+        "upload"
+      ],
+      "classes": [
+        {
+          "name": "Pagefiles",
+          "profile": "core",
+          "file": "wire/core/Pagefiles/index.md"
+        },
+        {
+          "name": "Pageimages",
+          "profile": "core",
+          "file": "wire/core/Pageimages/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Pagefiles",
+          "name": "add",
+          "profile": "core",
+          "file": "wire/core/Pagefiles/method-add.md",
+          "hookable": false
+        },
+        {
+          "class": "Pageimages",
+          "name": "add",
+          "profile": "core",
+          "file": "wire/core/Pageimages/method-add.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/docs/fields/images.md"
+      ]
+    },
+    {
+      "id": "multilang",
+      "title": "Multi-language",
+      "summary": "Configure multi-language fields and URLs.",
+      "keywords": [
+        "language",
+        "i18n",
+        "translation"
+      ],
+      "classes": [
+        {
+          "name": "Languages",
+          "profile": "full",
+          "file": "wire/modules/LanguageSupport/Languages/index.md"
+        },
+        {
+          "name": "Language",
+          "profile": "full",
+          "file": "wire/modules/LanguageSupport/Language/index.md"
+        }
+      ],
+      "methods": [],
+      "guides": [
+        "guides/cheatsheets/multi-language.md",
+        "guides/docs/multi-language-support.md"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "summary": "Apply security best practices.",
+      "keywords": [
+        "security",
+        "permissions",
+        "sessions"
+      ],
+      "classes": [
+        {
+          "name": "Session",
+          "profile": "core",
+          "file": "wire/core/Session/index.md"
+        },
+        {
+          "name": "Config",
+          "profile": "core",
+          "file": "wire/core/Config/index.md"
+        }
+      ],
+      "methods": [
+        {
+          "class": "Session",
+          "name": "get",
+          "profile": "core",
+          "file": "wire/core/Session/method-get.md",
+          "hookable": false
+        },
+        {
+          "class": "Session",
+          "name": "set",
+          "profile": "core",
+          "file": "wire/core/Session/method-set.md",
+          "hookable": false
+        }
+      ],
+      "guides": [
+        "guides/cheatsheets/security.md"
+      ]
+    }
+  ]
+}

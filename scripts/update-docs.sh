@@ -23,3 +23,9 @@ if [ -f "${ROOT_DIR}/cache/docs-html/_index.json" ]; then
 else
   echo "No cached HTML found in cache/docs-html; skipping guides build."
 fi
+
+python3 "${ROOT_DIR}/src/build_tasks.py" \
+  --core "${ROOT_DIR}/docs/core" \
+  --full "${ROOT_DIR}/docs/full" \
+  --tasks "${ROOT_DIR}/tasks.json" \
+  --out "${ROOT_DIR}/docs"
