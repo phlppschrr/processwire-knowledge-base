@@ -1,0 +1,88 @@
+# ProcessWire docs pages to cache (HTML)
+# One URL per line. Lines starting with # are ignored.
+
+https://processwire.com/docs/
+
+# Getting Started
+https://processwire.com/docs/start/
+https://processwire.com/docs/start/install/
+https://processwire.com/docs/start/install/new/
+https://processwire.com/docs/start/install/upgrade/
+https://processwire.com/docs/start/install/troubleshooting/
+https://processwire.com/docs/start/structure/
+https://processwire.com/docs/start/structure/pages/
+https://processwire.com/docs/start/structure/templates/
+https://processwire.com/docs/start/structure/fields/
+https://processwire.com/docs/start/structure/files/
+https://processwire.com/docs/start/api/
+https://processwire.com/docs/start/templates/
+https://processwire.com/docs/start/variables/
+https://processwire.com/docs/start/api-access/
+
+# Front-end
+https://processwire.com/docs/front-end/
+https://processwire.com/docs/front-end/output/
+https://processwire.com/docs/front-end/how-to-use-url-segments/
+https://processwire.com/docs/front-end/include/
+https://processwire.com/docs/front-end/front-end-editing/
+https://processwire.com/docs/front-end/markup-pager-nav/
+
+# Selectors
+https://processwire.com/docs/selectors/
+https://processwire.com/docs/selectors/operators/
+
+# Modules & Hooks
+https://processwire.com/docs/modules/
+https://processwire.com/docs/modules/intro/
+https://processwire.com/docs/modules/development/
+https://processwire.com/docs/modules/types/
+https://processwire.com/docs/modules/hooks/
+https://processwire.com/docs/modules/about-site-modules/
+
+# Fields
+https://processwire.com/docs/fields/
+https://processwire.com/docs/fields/dependencies/
+https://processwire.com/docs/fields/repeaters/
+https://processwire.com/docs/fields/textarea-fieldtype/
+https://processwire.com/docs/fields/select-options-fieldtype/
+https://processwire.com/docs/fields/images/
+https://processwire.com/docs/fields/ckeditor/
+https://processwire.com/docs/fields/multi-language-fields/
+
+# Access Control
+https://processwire.com/docs/user-access/
+https://processwire.com/docs/user-access/roles/
+https://processwire.com/docs/user-access/permissions/
+
+# Security
+https://processwire.com/docs/security/
+https://processwire.com/docs/security/file-permissions/
+https://processwire.com/docs/security/admin/
+https://processwire.com/docs/security/web-hosting/
+https://processwire.com/docs/security/migration/
+https://processwire.com/docs/security/remove-unnecessary-files/
+https://processwire.com/docs/security/sessions/
+https://processwire.com/docs/security/third-party-modules/
+https://processwire.com/docs/security/template-files/
+https://processwire.com/docs/security/two-factor-authentication/
+https://processwire.com/docs/security/other-software/
+
+# Multi-language
+https://processwire.com/docs/multi-language-support/
+https://processwire.com/docs/multi-language-support/code-i18n/
+https://processwire.com/docs/multi-language-support/multi-language-fields/
+https://processwire.com/docs/multi-language-support/multi-language-urls/
+https://processwire.com/docs/multi-language-support/multi-language-modules/
+
+# More Topics
+https://processwire.com/docs/more/
+https://processwire.com/docs/more/multi-site-support/
+https://processwire.com/docs/more/coding-style-guide/
+https://processwire.com/docs/more/lazy-cron/
+
+# Tutorials
+https://processwire.com/docs/tutorials/
+https://processwire.com/docs/tutorials/hello-worlds/
+https://processwire.com/docs/tutorials/default-site-profile/
+https://processwire.com/docs/tutorials/how-to-structure-your-template-files/
+https://processwire.com/docs/tutorials/using-custom-page-types-in-processwire/
