@@ -412,8 +412,7 @@ def iter_php_files(source_dir: Path) -> Iterable[Path]:
         if not base.exists():
             continue
         for path in base.rglob("*.php"):
-            parts = set(path.parts)
-            if "HTMLPurifier" in parts or path.name.startswith("HTMLPurifier"):
+            if should_skip_path(path):
                 continue
             yield path
 
@@ -423,7 +422,7 @@ def find_class_ranges(text: str, rel_path: str) -> list[ClassInfo]:
     classes: list[ClassInfo] = []
     for match in CLASS_DEF_RE.finditer(masked):
         class_name = match.group(2)
-        if class_name.startswith("HTMLPurifier"):
+        if class_name.startswith("HTMLPurifier") or should_skip_rel(rel_path):
             continue
         class_pos = match.start()
         brace_start = masked.find("{", match.end())
@@ -458,6 +457,20 @@ def find_class_ranges(text: str, rel_path: str) -> list[ClassInfo]:
             )
         )
     return classes
+
+
+def should_skip_path(path: Path) -> bool:
+    parts_lower = [p.lower() for p in path.parts]
+    if any("htmlpurifier" in part for part in parts_lower):
+        return True
+    if path.name.startswith("HTMLPurifier"):
+        return True
+    return False
+
+
+def should_skip_rel(rel_path: str) -> bool:
+    parts_lower = [p.lower() for p in Path(rel_path).parts]
+    return any("htmlpurifier" in part for part in parts_lower)
 
 
 def find_first_decl_pos(text: str) -> int | None:
@@ -680,6 +693,19 @@ def build_index(out_dir: Path, items: list[tuple[str, str]]):
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+def prune_skipped_docs(out_dir: Path):
+    for path in list(out_dir.rglob("*.md")):
+        if should_skip_path(path):
+            path.unlink()
+    # Remove empty directories
+    for path in sorted(out_dir.rglob("*"), reverse=True):
+        if path.is_dir():
+            try:
+                path.rmdir()
+            except OSError:
+                pass
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", required=True, help="Path to ProcessWire source root")
@@ -689,6 +715,7 @@ def main():
     source_dir = Path(args.source)
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
+    prune_skipped_docs(out_dir)
 
     written: list[tuple[str, str]] = []
     for src_path in iter_php_files(source_dir):
