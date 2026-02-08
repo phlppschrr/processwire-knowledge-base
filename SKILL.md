@@ -1,7 +1,7 @@
 ---
 name: processwire-api-lookup
 version: 0.2.0
-description: Official guide for navigating and retrieving ProcessWire Core API documentation.
+description: A specialized tool for finding ProcessWire API documentation, core classes, methods, and hooks. Use this to explain how to use ProcessWire features.
 usage_tips: Prefer docs/core first to reduce context size. Read only the specific files needed.
 ---
 

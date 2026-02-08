@@ -1,82 +1,82 @@
-# Selector Operators in ProcessWire
+# Unknown
 
 Source: https://processwire.com/docs/selectors/operators/
 
-## Summary
-
 A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=” sign), and the value (or values) you want to match. On this page all of the available operators are covered in depth.
 
-## Key Points
+- [Operator index](#operator-index)
+- [General operators](#general-operators)
+- [Phrase matching operators](#phrase-matching-operators)
+- [Word matching operators](#word-matching-operators)
+- [Advanced operators](#advanced-operators)
+- [Using more than one operator at a time](#using-more-than-one-operator-at-a-time)
 
-- A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=” sign), and the value (or values) you want to match. On this page all of the available operators are covered in depth.
-- * Operators with asterisk require ProcessWire 3.0.160 or newer.
-- These operators can generally be used anywhere in ProcessWire and with and kind of data.
+---
 
-## Sections
-
+[#](#)
 
 ## Operator index
 
-- = — Equal to — Given value is the same as value compared to.
-- != — Not equal to — Given value is not the same as value compared to.
-- < — Less than — Compared value is less than given value.
-- > — Greater than — Compared value is greater than given value.
-- <= — Less than or equal to — Compared value is less than or equal to given value.
-- >= — Greater than or equal to — Compared value is greater than or equal to given value.
-- *= — Contains phrase/text — Given phrase or word appears in value compared to.
-- ~= — Contains all words — All given whole words appear in compared value, in any order.
-- %= — Contains phrase/text like — Phrase or word appears in value compared to, using like.
-- ^= — Starts with phrase/text — Word or phrase appears at start of compared value.
-- $= — Ends with phrase/text — Word or phrase appears at end of compared value.
-- %^= — Starts like — Word or phrase appears at beginning of compared value, using like.
-- %$= — Ends like — Word or phrase appears at end of compared value, using like.
-- #= — Advanced text search — Match full or partial words and phrases with commands.*
-- *+= — Contains phrase expand — Phrase or word appears in value compared to and expand results.*
-- ~*= — Contains all partial words — All whole or partial words appear in value, in any order.*
-- ~~= — Contains all words live — All whole words and last partial word appear in any order.*
-- ~%= — Contain all words like — All whole or partial words appear in value using like, in any order.*
-- ~+= — Contains all words expand — All whole words appear in value and expand results.*
-- ~|= — Contains any words — Any given whole words appear in value, in any order.*
-- ~|*= — Contains any partial words — Any given whole or partial words appear in value, in any order.*
-- ~|%= — Contains any words like — Any given whole or partial words appear in value using like, in any order.*
-- ~|+= — Contains any words expand — Any given whole words appear in value and expand results.*
-- **= — Contains match — Any given whole words match against value.*
-- **+= — Contains match expand — Any given whole words match against value and expand results.*
-- & — Bitwise AND — Given integer results in positive AND against compared value.
+``[/docs/selectors/operators/#equal](/docs/selectors/operators/#equal)``[/docs/selectors/operators/#not-equal](/docs/selectors/operators/#not-equal)``[/docs/selectors/operators/#less-than](/docs/selectors/operators/#less-than)``[/docs/selectors/operators/#greater-than](/docs/selectors/operators/#greater-than)``[/docs/selectors/operators/#less-than-equal](/docs/selectors/operators/#less-than-equal)``[/docs/selectors/operators/#greater-than-equal](/docs/selectors/operators/#greater-than-equal)``[/docs/selectors/operators/#contains](/docs/selectors/operators/#contains)``[/docs/selectors/operators/#contains-words](/docs/selectors/operators/#contains-words)``[/docs/selectors/operators/#contains-like](/docs/selectors/operators/#contains-like)``[/docs/selectors/operators/#starts](/docs/selectors/operators/#starts)``[/docs/selectors/operators/#ends](/docs/selectors/operators/#ends)``[#starts-like](#starts-like)``[#ends-like](#ends-like)``[/docs/selectors/operators/#contains-advanced](/docs/selectors/operators/#contains-advanced)``[/docs/selectors/operators/#contains-expand](/docs/selectors/operators/#contains-expand)``[/docs/selectors/operators/#contains-words-partial](/docs/selectors/operators/#contains-words-partial)``[/docs/selectors/operators/#contains-words-live](/docs/selectors/operators/#contains-words-live)``[/docs/selectors/operators/#contains-words-like](/docs/selectors/operators/#contains-words-like)``[/docs/selectors/operators/#contains-words-expand](/docs/selectors/operators/#contains-words-expand)``[/docs/selectors/operators/#contains-any-words](/docs/selectors/operators/#contains-any-words)``[/docs/selectors/operators/#contains-any-words-partial](/docs/selectors/operators/#contains-any-words-partial)``[/docs/selectors/operators/#contains-any-words-like](/docs/selectors/operators/#contains-any-words-like)``[/docs/selectors/operators/#contains-any-words-expand](/docs/selectors/operators/#contains-any-words-expand)``[/docs/selectors/operators/#contains-match](/docs/selectors/operators/#contains-match)``[/docs/selectors/operators/#contains-match-expand](/docs/selectors/operators/#contains-match-expand)``[/docs/selectors/operators/#bitwise-and](/docs/selectors/operators/#bitwise-and)---[#](#)## ### []()`````
 
-* Operators with asterisk require ProcessWire 3.0.160 or newer.
+```### []()`````
 
+```### []()`````
 
-## General operators
+```### []()`````
 
-These operators can generally be used anywhere in ProcessWire and with and kind of data.
+```### []()`````
 
+```### []()`````
 
-### = Equals
+```---[#](#)## ### []()`````
 
-Given value is the same as value compared to.
+```### []()`````
 
+```### []()`````
 
-### != Not equals
+```### []()`````
 
-Given value is not the same as value compared to.
+```### []()`````
 
+```### []()`````
 
-### > Greater than
+```### []()`````
 
-Compared value is greater than given value.
+```---[#](#)## ### []()`````
 
+```### []()`````
 
-### < Less than
+```### []()`````
 
-Compared value is less than given value.
+```### []()`````
 
+```### []()`````
 
-### >= Greater than or equal
+```### []()`````
 
-Compared value is greater than or equal to given value.
+```### []()`````
 
+```### []()`````
 
-### <= Less than or equal
+```### []()`````
 
-Compared value is less than or equal to given value.
+```### []()`````
+
+```### []()`````
+
+```[#](#)## ### []()`````
+
+```- ``- ``- ``- ````- ``- ````- ````- ``[/api/ref/sanitizer/selector-value-advanced/](/api/ref/sanitizer/selector-value-advanced/)### []()`````
+
+```---[#](#)## `````
+
+``````
+
+``````
+
+``````
+
+``````
+
+```- ``- ``- ``- ``- ``- [/docs/selectors/](/docs/selectors/)- [/docs/selectors/operators/](/docs/selectors/operators/)- - [/docs/selectors/](/docs/selectors/)- [/blog/posts/pw-3.0.160/](/blog/posts/pw-3.0.160/)- [/docs/](/docs/)- [/api/ref/](/api/ref/)- [/docs/start/](/docs/start/)- [/docs/front-end/](/docs/front-end/)- [/docs/tutorials/](/docs/tutorials/)- [/docs/selectors/](/docs/selectors/)- [/docs/modules/](/docs/modules/)- [/docs/fields/](/docs/fields/)- [/docs/user-access/](/docs/user-access/)- [/docs/security/](/docs/security/)- [/docs/multi-language-support/](/docs/multi-language-support/)- [/docs/more/](/docs/more/)

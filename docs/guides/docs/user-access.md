@@ -1,19 +1,25 @@
-# Access control in ProcessWire
+# Unknown
 
 Source: https://processwire.com/docs/user-access/
 
-## Summary
-
 ProcessWire uses a role-based access control system (RBAC). Users are assigned to one or more roles, each role is assigned permissions, and roles are assigned to templates for access control of pages.
 
-## Key Points
+- #### [Roles](/docs/user-access/roles/)Roles are a way of grouping multiple users and assigning permissions to that group. They are the connection of both users and…Learn more →
+- #### [Permissions](/docs/user-access/permissions/)Permissions represent a granular permission to access something or to perform some action. This page outlines permissions…Learn more →
 
-- ProcessWire uses a role-based access control system (RBAC). Users are assigned to one or more roles, each role is assigned permissions, and roles are assigned to templates for access control of pages.
+- [Access control](/docs/user-access/)
+- [Roles](/docs/user-access/roles/)
+- [Permissions](/docs/user-access/permissions/)
 
-## Sections
-
-
-### Roles
-
-
-### Permissions
+- [Docs](/docs/)
+- [API reference](/api/ref/)
+- [Getting started](/docs/start/)
+- [Front-end](/docs/front-end/)
+- [Tutorials](/docs/tutorials/)
+- [Selectors](/docs/selectors/)
+- [Modules & hooks](/docs/modules/)
+- [Fields, types, input](/docs/fields/)
+- [Access control](/docs/user-access/)
+- [Security](/docs/security/)
+- [Multi-language](/docs/multi-language-support/)
+- [More topics](/docs/more/)

@@ -1,82 +1,188 @@
-# Using Selectors
+# Unknown
 
 Source: https://processwire.com/docs/selectors/
 
-## Summary
-
 Selectors are simple strings of text that specify fields and values. These selectors are used throughout ProcessWire to find pages (and other types of data).
 
-## Key Points
+For example, `name=karena` is a simple selector that says: “find items that have the name karena.” Selectors in ProcessWire are loosely based around the idea and syntax of attribute selectors in jQuery.
 
-- Selectors are simple strings of text that specify fields and values. These selectors are used throughout ProcessWire to find pages (and other types of data).
-- For example, name=karena is a simple selector that says: “find items that have the name karena.” Selectors in ProcessWire are loosely based around the idea and syntax of attribute selectors in jQuery.
-- An individual selector consists of three parts: the field you are looking for, an operator (like an equals '=' sign), and the value you want to match. For example, a basic selector might be:
+- [The components of a selector](#components)
+- [Where do you use selectors?](#where)
+- [Selector fields](#fields)
+- [Selector operators](#operators)
+- [Selector values](#values)
+- [Specifying multiple selectors](#multiple)
+- [OR selectors: matching one value or another](#or-selectors1)
+- [OR selectors, matching one field or another](#or-selectors2)
+- [AND selectors: matching more than one value in the same field](#and-selectors)
+- [OR-groups: matching one group of selectors or another](#or-groups)
+- [Sub-selectors: selectors within selectors](#sub-selectors)
+- [Sorting the results of a selector](#sort)
+- [Limiting the number of results returned by a selector](#limit)
+- [Count selectors – finding matches by quantity](#count)
+- [Subfield selectors](#subfield)
+- [Owner selectors](#owner-selectors)
+- [Finding pages that use specific templates](#finding1)
+- [Finding pages that have specific parents or ancestors](#finding2)
+- [Matching different subfields from the same (1) row in a multi-value field](#match-same-row)
+- [Access control in selectors](#access_control)
+- [API variables in stored selectors](#api-variables-in-selectors)
+- [Sanitizing user input in selectors](#sanitizing)
+- [Examples of selectors as used in page templates](#examples)
 
-## Sections
-
-
-### The components of a selector
+### []()The components of a selector
 
 An individual selector consists of three parts: the field you are looking for, an operator (like an equals '=' sign), and the value you want to match. For example, a basic selector might be:
 
+```
+title=products
+```
 
-### Where do you use selectors?
+In this example, "title" is the field, the equals sign "=" is the operator, and "products" is the value you want to match. This basic selector would match all pages having a title field of "products", regardless of where they exist in the site. You may also specify multiple selectors by separating each with a comma.
 
-Selectors are used throughout ProcessWire, typically for getting and finding pages with the $page and $pages variables. Below is a list of the most common functions where selectors are used:
+### []()Where do you use selectors?
 
+Selectors are used throughout ProcessWire, typically for getting and finding pages with the [$page](/docs/start/variables/page/) and [$pages](/docs/start/variables/pages/) variables. Below is a list of the most common functions where selectors are used:
 
-### Selector fields
+```
+$pages->find("selector"); 
+$pages->get("selector, path or ID");
+$page->children("selector");
+$page->siblings("selector");
+$page->find("selector");
+```
+
+Any function that accepts a selector will accept multiple selectors split by a comma.
+
+While you are less likely to use them, most of the other utility objects in ProcessWire, all of the array types, and several field types also accept selectors:
+
+```
+$matches = $templates->find("selector"); 
+$matches = $users->find("selector");
+$matches = $fields->find("selector");
+$matches = $page->images->find("selector")->not("selector");
+// ...and so on...
+```
+
+Below we examine the 3 parts of a selector in more detail: fields, operators and values.
+
+### []()Selector fields
 
 The field portion of a selector may refer to any field of a page. If you want to know what fields you can use for matching, see "Setup > Fields" in your ProcessWire admin. All custom fields are typically optimized for fast matches.
 
+If you want to match a value in one field or another, you may specify multiple fields separated by a pipe "|" symbol, i.e.
 
-### Selector operators
+```
+title|name|headline=products
+```
 
-The operator portion of a selector may be one of the following:
+Using the above syntax, the selector will match any pages that have a title, name, or headline field of "products" or "Products". Selector values are not case sensitive unless you configure your MySQL with a case sensitive collation.
 
-- = — Equal to — Given value is the same as value compared to.
-- != — Not equal to — Given value is not the same as value compared to.
-- < — Less than — Compared value is less than given value.
-- > — Greater than — Compared value is greater than given value.
-- <= — Less than or equal to — Compared value is less than or equal to given value.
-- >= — Greater than or equal to — Compared value is greater than or equal to given value.
-- *= — Contains phrase/text — Given phrase or word appears in value compared to.
-- ~= — Contains all words — All given whole words appear in compared value, in any order.
-- %= — Contains phrase/text like — Phrase or word appears in value compared to, using like.
-- ^= — Starts with phrase/text — Word or phrase appears at start of compared value.
-- $= — Ends with phrase/text — Word or phrase appears at end of compared value.
-- %^= — Starts like — Word or phrase appears at beginning of compared value, using like.
-- %$= — Ends like — Word or phrase appears at end of compared value, using like.
-- #= — Advanced text search — Match full or partial words and phrases with commands.*
-- *+= — Contains phrase expand — Phrase or word appears in value compared to and expand results.*
-- ~*= — Contains all partial words — All whole or partial words appear in value, in any order.*
-- ~~= — Contains all words live — All whole words and last partial word appear in any order.*
-- ~%= — Contain all words like — All whole or partial words appear in value using like, in any order.*
-- ~+= — Contains all words expand — All whole words appear in value and expand results.*
-- ~|= — Contains any words — Any given whole words appear in value, in any order.*
-- ~|*= — Contains any partial words — Any given whole or partial words appear in value, in any order.*
-- ~|%= — Contains any words like — Any given whole or partial words appear in value using like, in any order.*
-- ~|+= — Contains any words expand — Any given whole words appear in value and expand results.*
-- **= — Contains match — Any given whole words match against value.*
-- **+= — Contains match expand — Any given whole words match against value and expand results.*
-- & — Bitwise AND — Given integer results in positive AND against compared value.
+### []()Selector operators
+
+The [operator](/docs/selectors/operators/) portion of a selector may be one of the following:
+
+``[/docs/selectors/operators/#equal](/docs/selectors/operators/#equal)``[/docs/selectors/operators/#not-equal](/docs/selectors/operators/#not-equal)``[/docs/selectors/operators/#less-than](/docs/selectors/operators/#less-than)``[/docs/selectors/operators/#greater-than](/docs/selectors/operators/#greater-than)``[/docs/selectors/operators/#less-than-equal](/docs/selectors/operators/#less-than-equal)``[/docs/selectors/operators/#greater-than-equal](/docs/selectors/operators/#greater-than-equal)``[/docs/selectors/operators/#contains](/docs/selectors/operators/#contains)``[/docs/selectors/operators/#contains-words](/docs/selectors/operators/#contains-words)``[/docs/selectors/operators/#contains-like](/docs/selectors/operators/#contains-like)``[/docs/selectors/operators/#starts](/docs/selectors/operators/#starts)``[/docs/selectors/operators/#ends](/docs/selectors/operators/#ends)``[#starts-like](#starts-like)``[#ends-like](#ends-like)``[/docs/selectors/operators/#contains-advanced](/docs/selectors/operators/#contains-advanced)``[/docs/selectors/operators/#contains-expand](/docs/selectors/operators/#contains-expand)``[/docs/selectors/operators/#contains-words-partial](/docs/selectors/operators/#contains-words-partial)``[/docs/selectors/operators/#contains-words-live](/docs/selectors/operators/#contains-words-live)``[/docs/selectors/operators/#contains-words-like](/docs/selectors/operators/#contains-words-like)``[/docs/selectors/operators/#contains-words-expand](/docs/selectors/operators/#contains-words-expand)``[/docs/selectors/operators/#contains-any-words](/docs/selectors/operators/#contains-any-words)``[/docs/selectors/operators/#contains-any-words-partial](/docs/selectors/operators/#contains-any-words-partial)``[/docs/selectors/operators/#contains-any-words-like](/docs/selectors/operators/#contains-any-words-like)``[/docs/selectors/operators/#contains-any-words-expand](/docs/selectors/operators/#contains-any-words-expand)``[/docs/selectors/operators/#contains-match](/docs/selectors/operators/#contains-match)``[/docs/selectors/operators/#contains-match-expand](/docs/selectors/operators/#contains-match-expand)``[/docs/selectors/operators/#bitwise-and](/docs/selectors/operators/#bitwise-and)[/docs/selectors/operators/#general-operators](/docs/selectors/operators/#general-operators)[/docs/selectors/operators/#phrase-matching-operators](/docs/selectors/operators/#phrase-matching-operators)[/docs/selectors/operators/#word-matching-operators](/docs/selectors/operators/#word-matching-operators)[/docs/selectors/operators/#using-more-than-one-operator-at-a-time](/docs/selectors/operators/#using-more-than-one-operator-at-a-time)```
+
+``````
+
+``````
+
+```````[http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html](http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html)````````[http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html](http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html)[http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html](http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html)```````````````````
+
+``````
+
+```### []()```
+
+```[/api/ref/sanitizer/selector-value/](/api/ref/sanitizer/selector-value/)### []()```
+
+```### []()```
+
+```### []()```
+
+```### []()```
+
+```### []()```
+
+``````
+
+```
+
+```
+
+```### []()```
+
+``````
+
+`````#### [/blog/posts/processwire-3.0.6-brings-pages-upgrades-and-link-abstraction/#improvements-to-sub-selectors](/blog/posts/processwire-3.0.6-brings-pages-upgrades-and-link-abstraction/#improvements-to-sub-selectors)```
+
+```### []()```
+
+``````
+
+``````
+
+```````#### ``````````````````#### ````````### []()```
+
+``````
+
+```### []()`````
+
+``````
+
+```### []()[/blog/categories/repeaters/](/blog/categories/repeaters/)[/docs/modules/guides/comments/](/docs/modules/guides/comments/)```
+
+``````
+
+``````
+
+``````
+
+```[#match-same-row](#match-same-row)### []()[/blog/posts/processwire-3.0.95-core-updates/#owner-selectors](/blog/posts/processwire-3.0.95-core-updates/#owner-selectors)### []()```
+
+``````
+
+```### []()```
+
+``````
+
+``````
+
+``````
+
+``````
+
+``````
+
+```### []()```
+
+````````
+
+````````
 
 
-### Selector values
+```### []()[/api/ref/page-array/](/api/ref/page-array/)````- ``- ``- ``- `````
 
-After the operator comes the selector value that we want to match. At the basic level, little explanation is needed and the examples in the above section (operators) make that clear. But because selector values can contain nearly anything (including text submitted from user input, like a search for example), we need to take some special care with string-based selector values. If your selector value needs to contain a comma, you should surround your selector value in quotes, i.e.
+```[/api/ref/pages/get/](/api/ref/pages/get/)``[/api/ref/pages/find-one/](/api/ref/pages/find-one/)- ``- ``- ``### []()`````````````````````
 
+```````````### []()```
 
-### Specifying multiple selectors
+```[/docs/start/variables/sanitizer/](/docs/start/variables/sanitizer/)[/api/ref/sanitizer/selector-value/](/api/ref/sanitizer/selector-value/)```
 
-A selector string can match more than one field. You may specify multiple selectors together by separating each with a comma. For example, the following selector would match all pages with a year of 2010 and the word "Hanna" appearing somewhere in the body:
+```[/api/ref/sanitizer/selector-field/](/api/ref/sanitizer/selector-field/)```
 
+```### []()```
 
-### OR selectors: matching one value or another
+``````
 
-In instances where you need to match values in a single field with an either-or expression, the values should be split with the "or" operator, which is the pipe character "|". The following examples demonstrates its usage:
+``````
 
+``````
 
-### OR selectors, matching one field or another
+``````
 
-This was already described in the selector fields section above, but is repeated here for reference. Field names may be separated by a pipe "|" to indicate an OR condition:
+``````
+
+``````
+
+```- #### [/docs/selectors/operators/](/docs/selectors/operators/)- [/docs/selectors/](/docs/selectors/)- [/docs/selectors/operators/](/docs/selectors/operators/)- [/docs/](/docs/)- [/api/ref/](/api/ref/)- [/docs/start/](/docs/start/)- [/docs/front-end/](/docs/front-end/)- [/docs/tutorials/](/docs/tutorials/)- [/docs/selectors/](/docs/selectors/)- [/docs/modules/](/docs/modules/)- [/docs/fields/](/docs/fields/)- [/docs/user-access/](/docs/user-access/)- [/docs/security/](/docs/security/)- [/docs/multi-language-support/](/docs/multi-language-support/)- [/docs/more/](/docs/more/)
