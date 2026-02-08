@@ -32,15 +32,15 @@ foreach($page->images as $image) {
 }
 ```
 
-If you set your images field to contain just 1 image, then the above wouldn't work because $page->images (which you would probably name $page->image, singular, instead) refers to just a single image.* Instead, you would do something like this:
+If you set your images field to contain just 1 image, then the above wouldn't work because $page->images (which you would probably name $page->image, singular, instead) refers to just a *single* image.* Instead, you would do something like this:
 
 ```
 if($page->image) echo "<img src='{$page->image->url}'>";
 ```
 
-*Note for advanced users: the single image behavior described above is only applicable when output formatting is ON, as it is by default in template files. When output formatting is OFF, image fields always behave as arrays.
+**Note for advanced users: the single image behavior described above is only applicable when output formatting is ON, as it is by default in template files. When output formatting is OFF, image fields always behave as arrays. *
 
-When your image field is set to contain more than one image, $page->images is a WireArray. You may use any of the functions provided by WireArray. For example:
+When your image field is set to contain more than one image, $page->images is a [WireArray](/api/arrays/). You may use any of the functions provided by WireArray. For example:
 
 ```
 // grab and output first image
@@ -99,8 +99,8 @@ Note that when sizing an image, a new copy is created and cached, so that it doe
 - $img = $image->size($x, $y) — Create a new image at exactly the given width ($x) and height ($y). If necessary either dimension will be cropped to reach the target size. By default crop is to the center in both axis.
 - $img = $image->size($x, $y, $options) — Same as above, except with additional array of options* specified.
 - $img = $image->size($x, $y, "north") — Same as above, except crop to the "north" (top center). Options for cropping are: northwest, north, northeast, west, center, east, southwest, south, and southeast. If you prefer, you may specify shorter versions: nw, n, ne, w, c, e, sw, s, se.
-- $img = $image->size($x, $y, "50%,30%") — Same as above, except target your own x and y regions as percentages. Percentages may be 0–100%. Note that "0%,0%" is northwest, "50%,50%" is center, and "100%,100%" is southeast. This feature is in beta.
-- $img = $image->size($x, $y, "100,200"); — Same as above, except target your own x and y regions as number of pixels. This feature is in beta.
+- $img = $image->size($x, $y, "50%,30%") — Same as above, except target your own x and y regions as percentages. Percentages may be 0–100%. Note that "0%,0%" is northwest, "50%,50%" is center, and "100%,100%" is southeast. *This feature is in beta.*
+- $img = $image->size($x, $y, "100,200"); — Same as above, except target your own x and y regions as number of pixels. *This feature is in beta. *
 
 
 ### $options array
@@ -116,9 +116,9 @@ $options = array(
 $img = $image->size($x, $y, $options);
 ```
 
-You may specify any of the following for the $options array:qualityQuality setting of 1–100 (integer), where 1 is worst and 100 is best. Default is 90.upscalingAllow upscaling? (boolean). If set to false, options sent to width(), height() and size() functions become maximum values rather than absolutes. Meaning, if you ask for an image 900 pixels wide and this is larger than the original image, it won't be upscaled to reach that dimension. The default setting is true, meaning you'll always get an image at the sized you asked for, even if upscaling is required.cropping (as a boolean)The default value of 'cropping' is true, meaning cropping is allowed to reach target dimensions. If you want to disallow cropping, set to false.cropping (as a direction)If a direction string is specified, any necessary cropping will target the given direction. Valid values are: northwest, north, northeast, west, center, east, southwest, south and southeast. If you prefer, you may specify shorter versions: nw, n, ne, w, c, e, sw, s, se. Default is center.cropping (as a percent)If you specify two percent values in a string, like "50%,30%" then the crop will target those regions in the image. Note that "0%,0%" is northwest, "50%,50%" is center, and "100%,100%" is southeast. You may specify any percentage values between 0 and 100. This feature is in beta.cropping (as pixels)If you specify two pixels values in a string, like "100,200" then the crop will target those regions in the image (in pixel quantity). This feature is in beta.
+You may specify any of the following for the $options array:qualityQuality setting of 1–100 (integer), where 1 is worst and 100 is best. Default is 90.upscalingAllow upscaling? (boolean). If set to false, options sent to width(), height() and size() functions become maximum values rather than absolutes. Meaning, if you ask for an image 900 pixels wide and this is larger than the original image, it won't be upscaled to reach that dimension. The default setting is true, meaning you'll always get an image at the sized you asked for, even if upscaling is required.cropping (as a boolean)The default value of 'cropping' is true, meaning cropping is allowed to reach target dimensions. If you want to disallow cropping, set to false.cropping (as a direction)If a direction string is specified, any necessary cropping will target the given direction. Valid values are: northwest, north, northeast, west, center, east, southwest, south and southeast. If you prefer, you may specify shorter versions: nw, n, ne, w, c, e, sw, s, se. Default is center.cropping (as a percent)If you specify two percent values in a string, like "50%,30%" then the crop will target those regions in the image. Note that "0%,0%" is northwest, "50%,50%" is center, and "100%,100%" is southeast. You may specify any percentage values between 0 and 100. *This feature is in beta.*cropping (as pixels)If you specify two pixels values in a string, like "100,200" then the crop will target those regions in the image (in pixel quantity). *This feature is in beta.*
 
-You may modify the default $options that your system uses by adding a $config->imageSizerOptions in your /site/config.php file:
+You may modify the default $options that your system uses by adding a $config->imageSizerOptions in your **/site/config.php** file:
 
 ```
 $config->imageSizerOptions = array(

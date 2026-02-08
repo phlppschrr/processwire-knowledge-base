@@ -8,8 +8,8 @@ Roles are a way of grouping multiple users and assigning permissions to that gro
 
 ## Key Points
 
-- guest The guest role is automatically given to all anonymous site users. You should not give this role any access other than page-view permission.
-- superuser The superuser role has all-inclusive access to the site without limitation. This role should only be given to the most trusted users that operate the site. Superuser has all permissions regardless of what you assign with the superuser role.
+- **guest** The guest role is automatically given to all anonymous site users. You should not give this role any access other than page-view permission.
+- **superuser** The superuser role has all-inclusive access to the site without limitation. This role should only be given to the most trusted users that operate the site. Superuser has all permissions regardless of what you assign with the superuser role.
 
 ## Sections
 
@@ -28,8 +28,8 @@ A user can have multiple roles, each with different permissions. Though for simp
 
 ProcessWire includes two permanent roles by default, though you may add as many roles as you like. The two roles included with every ProcessWire installation are:
 
-- guest The guest role is automatically given to all anonymous site users. You should not give this role any access other than page-view permission.
-- superuser The superuser role has all-inclusive access to the site without limitation. This role should only be given to the most trusted users that operate the site. Superuser has all permissions regardless of what you assign with the superuser role.
+- **guest** The guest role is automatically given to all anonymous site users. You should not give this role any access other than page-view permission.
+- **superuser** The superuser role has all-inclusive access to the site without limitation. This role should only be given to the most trusted users that operate the site. Superuser has all permissions regardless of what you assign with the superuser role.
 
 
 ### Custom roles
@@ -39,7 +39,7 @@ You can also add as many other roles as you want and selectively assign them to 
 
 ### Checking if a user has a role
 
-To check if a user has a specific role from the API side, use the $user->hasRole('roleName') method:
+To check if a user has a specific role from the API side, use the [$user->hasRole('roleName')](/api/ref/user/has-role/) method:
 
 ```
 if($user->hasRole('editor')) {
@@ -51,9 +51,9 @@ if($user->hasRole('editor')) {
 
 ## Roles and permissions
 
-Roles are essentially a group of permissions that can be assigned to users. Users gain all the permissions assigned to all of their roles.
+Roles are essentially a group of [permissions](/docs/user-access/permissions/) that can be assigned to users. Users gain all the permissions assigned to all of their roles.
 
-In some cases a permission doesn't do much until the role containing the permission is also assigned to a template (the context). A good example of this is the page-edit permission. If it were as simple as giving a role page-edit permission, then they would be able to edit any page anywhere in the site, which is usually not what you want. Instead, a permission like page-edit also requires a context, and templates (as used by pages) are that context. So a user might have a general page-edit permission via a role assigned to them, but they won't be able to actually edit any pages until a template also has that same role selected. This is how you can enable granular access (edit, view, create, add, delete, etc.) to some pages and not others.
+In some cases a permission doesn't do much until the role containing the permission is also assigned to a template (the context). A good example of this is the [page-edit](/docs/user-access/permissions/#page-edit) permission. If it were as simple as giving a role page-edit permission, then they would be able to edit any page anywhere in the site, which is usually not what you want. Instead, a permission like page-edit also requires a context, and templates (as used by pages) are that context. So a user might have a general page-edit permission via a role assigned to them, but they won't be able to actually edit any pages until a template also has that same role selected. This is how you can enable granular access (edit, view, create, add, delete, etc.) to some pages and not others.
 
 
 ### Assigning permissions to roles
@@ -63,9 +63,9 @@ Assigning permissions to roles is as simple as editing the role in your admin at
 
 ### Permissions with template context
 
-Some permissions also support a template context. Meaning, the permission won't do much until the role having it is also assigned to a template. When this is the case, the role editor will show the permission along with a checkbox list of all templates where the permission can be assigned (which would be all templates that have access control enabled). If you don't see the template you need, you can enable access control for it (see roles and templates).
+Some permissions also support a template context. Meaning, the permission won't do much until the role having it is also assigned to a template. When this is the case, the role editor will show the permission along with a checkbox list of all templates where the permission can be assigned (which would be all templates that have access control enabled). If you don't see the template you need, you can enable access control for it (see [roles and templates](#roles-and-templates)).
 
-Editing permissions with template context in the role editor is convenient because it enables you to edit all permissions for the role, in the context of those access controlled templates, right on a single screen. You can also edit template/role assignments from the template editor (Setup > Template > your_template > Access), but in this case you are editing access for all roles on one template, rather than all templates on one role. It does not matter which one you use, but which is more convenient will depend on whether you've got more templates or more roles.
+Editing permissions with template context in the role editor is convenient because it enables you to edit all permissions for the role, in the context of those access controlled templates, right on a single screen. You can also edit template/role assignments from the template editor (Setup > Template > your_template > Access), but in this case you are editing access for *all* roles on *one* template, rather than *all* templates on *one* role. It does not matter which one you use, but which is more convenient will depend on whether you've got more templates or more roles.
 
 
 ## Roles and templates
@@ -75,4 +75,4 @@ Roles are assigned to users, but they are also assigned to templates that have a
 
 ### Enabling template access control
 
-You can enable access control for a template from the template editor Access tab (Setup > Templates > your_template > Access). From here you can dictate what roles are allowed to view, edit, create, add new pages, and more. Any role can be assigned for view permission, but only roles that have at least page-edit permission are assignable for edit/add/create access in these template access settings. Once a template has access control enabled, these can also be assigned in the role editor—see the section above on permissions with template context.
+You can enable access control for a template from the template editor *Access* tab (Setup > Templates > your_template > Access). From here you can dictate what roles are allowed to view, edit, create, add new pages, and more. Any role can be assigned for view permission, but only roles that have at least [page-edit permission](/docs/user-access/permissions/#page-edit) are assignable for edit/add/create access in these template access settings. Once a template has access control enabled, these can also be assigned in the role editor—see the section above on [permissions with template context](#permissions-with-template-context).

@@ -53,7 +53,7 @@ Perhaps your parents have defined some aspects of your life. The same goes for p
 
 While all pages exist within a family tree structure, that's not the only way that pages can be referenced. Pages can be identified and/or loaded based on any property common to them, regardless of where they are in the family tree.
 
-It's common for the Page template to be used as the property used to find all pages of the same type, wherever they may be. Though it can actually be any property/field common to any group of pages, anywhere in the family tree. In this manner, pages can work like the “bucket system”.
+It's common for the Page [template](../templates/) to be used as the property used to find all pages of the same type, wherever they may be. Though it can actually be any property/field common to any group of pages, anywhere in the family tree. In this manner, pages can work like the “bucket system”.
 
 To use a metaphor, think of an outdoor family gathering where everyone that's getting hot is encouraged to jump into the pool for a swim to cool off. That would be our “bucket” of “people that were getting hot and wanted to cool off”. Who is in this bucket (a pool) has everything to do with properties of the people (those getting hot), and nothing to do with parent and child relationships.
 

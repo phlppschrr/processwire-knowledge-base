@@ -10,7 +10,7 @@ We can vouch for the security of the code that we write in the ProcessWire core,
 
 - Install only those modules that solve an important need for your site. The fewer 3rd party modules you have installed, the less to keep track of and fewer developers you are dependent upon.
 - Verify that the module is still actively supported by developer in the ProcessWire support boards.
-- Keep third party modules up-to-date (the ProcessWireUpgrade module is a good way to track versions).
+- Keep third party modules up-to-date (the [ProcessWireUpgrade](http://modules.processwire.com/modules/process-wire-upgrade/) module is a good way to track versions).
 - Uninstall and erase any 3rd party modules that you have installed but are not using.
 
 ## Sections
@@ -24,5 +24,5 @@ ProcessWire doesn't require any third party modules in order to run and accompli
 
 - Install only those modules that solve an important need for your site. The fewer 3rd party modules you have installed, the less to keep track of and fewer developers you are dependent upon.
 - Verify that the module is still actively supported by developer in the ProcessWire support boards.
-- Keep third party modules up-to-date (the ProcessWireUpgrade module is a good way to track versions).
+- Keep third party modules up-to-date (the [ProcessWireUpgrade](http://modules.processwire.com/modules/process-wire-upgrade/) module is a good way to track versions).
 - Uninstall and erase any 3rd party modules that you have installed but are not using.

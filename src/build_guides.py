@@ -86,22 +86,63 @@ BLOCK_TAGS = set(HEADING_TAGS.keys()) | {"p", "ul", "ol", "table", "pre", "div",
 
 def get_clean_text(element: Tag, separator: str = "\n") -> str:
     """
-    Extract text from tag, respecting SUPPRESS_TOKENS and handling <br>.
+    Extract text from tag, respecting SUPPRESS_TOKENS and handling <br>,
+    while converting inline formatting to Markdown.
     """
     texts = []
     for child in element.children:
         if isinstance(child, NavigableString):
-            texts.append(str(child))
+            # Escape HTML characters to prevent them being interpreted as tags
+            # We use quote=False because we don't need to escape quotes in markdown text
+            texts.append(html.escape(str(child), quote=False))
         elif isinstance(child, Tag):
-            if child.name.lower() == "br":
+            tag = child.name.lower()
+            
+            if tag == "br":
                 texts.append(separator)
                 continue
+            
             if should_suppress(child):
                 continue
-            if child.name.lower() in IGNORE_TAGS:
+            
+            if tag in IGNORE_TAGS:
                 continue
-            # Recurse
-            texts.append(get_clean_text(child, separator))
+
+            # Handle inline code
+            if tag == "code":
+                # For code, we want the raw text, but we wrap it in backticks.
+                # We do NOT escape the content, because it's inside backticks.
+                # But we definitely want to avoid it matching the backticks themselves.
+                code_content = child.get_text()
+                # Simple handling for backticks in code
+                if "`" in code_content:
+                    texts.append(f"`` {code_content} ``")
+                else:
+                    texts.append(f"`{code_content}`")
+                continue
+
+            # Recurse for others
+            inner_text = get_clean_text(child, separator)
+            
+            # Formatting tags
+            if tag in ("strong", "b"):
+                 texts.append(f"**{inner_text}**")
+            elif tag in ("em", "i"):
+                 texts.append(f"*{inner_text}*")
+            elif tag == "a":
+                 # Extract href for links?
+                 # For now, let's just keep the text to match previous behavior 
+                 # or we could make it a link [text](href).
+                 # The user wants guides, so links are valuable.
+                 # Let's add link support if href exists.
+                 href = child.get("href")
+                 if href:
+                     texts.append(f"[{inner_text}]({href})")
+                 else:
+                     texts.append(inner_text)
+            else:
+                 texts.append(inner_text)
+                 
     return "".join(texts)
 
 

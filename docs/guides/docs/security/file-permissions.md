@@ -9,8 +9,8 @@ Getting your file permissions right is one of the most important factors in main
 ## Key Points
 
 - If the result is your account name, then Apache is running as you. This means you can most likely use more restricted permissions like 700, 750 or 755 for writable directories and 600, 640 or 644 for writable files.
-- If the result is something else, like "nobody" or "apache" (or another you don't recognize) then Apache is not running as you, and you'll have to open up write permissions to group (i.e. 770 and 660) or [worst case] everyone (like 777 and 666). But before you even consider using permissions like 777 and 666 in a non-dedicated environment, consult with your web host as they will hopefully have a better recommendation.
-- If you get an error message or nothing, then chances are exec() is not enabled for your server, as a security precaution. If that's the case, use this alternative script:
+- If the result is something else, like "nobody" or "apache" (or another you don't recognize) then Apache is *not* running as you, and you'll have to open up write permissions to group (i.e. 770 and 660) or [worst case] everyone (like 777 and 666). But before you even consider using permissions like 777 and 666 in a non-dedicated environment, consult with your web host as they will hopefully have a better recommendation.
+- If you get an error message or nothing, then chances are `exec()` is not enabled for your server, as a security precaution. If that's the case, use this alternative script:
 
 ## Sections
 
@@ -21,7 +21,7 @@ Getting your file permissions right is one of the most important factors in main
 
 Yet it's also one of the most difficult to get right, because there is no single correct answer that applies across all hosting environments. It is most definitely worth taking the time to make sure your file permissions are optimal for your environment.
 
-One of the first questions in determining what file permissions should be is whether Apache runs as your user account, or whether it runs as the same user for all accounts (like "nobody", "www" or "apache", for example). This is a question for your web host, as it depends entirely on their server configuration. Though if you want to do it yourself, there are a couple things you can do to make a reasonable determination yourself.
+One of the first questions in determining what file permissions should be is whether Apache runs as your user account, or whether it runs as the same user for all accounts (like "nobody", "www" or "apache", for example). This is a question for your web host, as it depends entirely on their server configuration. Though if you want to do it yourself, there are a [couple things](/docs/security/file-permissions/#determining-what-user-apache-runs-as) you can do to make a reasonable determination yourself.
 
 
 ## Securing writable directories and files
@@ -38,21 +38,21 @@ Permissions below are organized in order of most secure to least secure. If Apac
 
 ### Potential permissions for writable directories
 
-700 [rwx------] writable by owner, readable by owner (most secure, if it works) 750 [rwxr-x---] writable by owner, readable by owner and group 755 [rwxr-xr-x] writable by owner, readable by all (details) 770 [rwxrwx---] writable by owner and group, readable by owner and group 775 [rwxrwxr-x] writable by owner and group, readable by all 777 [rwxrwxrwx] writable by all, readable by all (not secure, details)
+`700 [rwx------]` writable by owner, readable by owner (most secure, if it works) `750 [rwxr-x---]` writable by owner, readable by owner and group `755 [rwxr-xr-x]` writable by owner, readable by all ([details](#permission-755-for-directories-and-644-for-files)) `770 [rwxrwx---]` writable by owner and group, readable by owner and group `775 [rwxrwxr-x]` writable by owner and group, readable by all `777 [rwxrwxrwx]` writable by all, readable by all (not secure, [details](#worst-case-777-for-directories-and-666-for-files))
 
 
 ### Potential permissions for writable files
 
-600 [rw-------] writable by owner, readable by owner (most secure, if it works) 640 [rw-r-----] writable by owner, readable by group 644 [rw-r--r--] writable by owner, readable by all (details) 660 [rw-rw----] writable by owner and group, readable by owner and group 664 [rw-rw-r--] writable by owner and group, readable by all 666 [rw-rw-rw-] writable by all, readable by all (not secure, details)
+`600 [rw-------]` writable by owner, readable by owner (most secure, if it works) `640 [rw-r-----]` writable by owner, readable by group `644 [rw-r--r--]` writable by owner, readable by all ([details](#permission-755-for-directories-and-644-for-files)) `660 [rw-rw----]` writable by owner and group, readable by owner and group `664 [rw-rw-r--]` writable by owner and group, readable by all `666 [rw-rw-rw-]` writable by all, readable by all (not secure, [details](#worst-case-777-for-directories-and-666-for-files))
 
 
 ### Is "writable by group" safe in a shared hosting environment?
 
-It depends who group implies. If group is the same as owner then it's just as safe as without any group permissions, though also not much point to it. But if group is instead the same group that other users on the system belong to, then it's not any safer than "writable by all".
+It depends who *group* implies. If *group* is the same as *owner* then it's just as safe as without any group permissions, though also not much point to it. But if *group* is instead the same group that other users on the system belong to, then it's not any safer than "writable by all".
 
-A common situation in web hosting is for group to be the same group belonged to by Apache (but not by other users), so that one could use a 770 for directories or 660 for files to give write permission to Apache without giving it to other users on the system.
+A common situation in web hosting is for *group* to be the same group belonged to by Apache (but not by other users), so that one could use a 770 for directories or 660 for files to give write permission to Apache without giving it to other users on the system.
 
-There's still a significant danger here though: other users on the system may still be able to create a PHP (or other language) script that runs as Apache, and thereby has all the group permissions that Apache does. In such a case, that user can still gain access to your files, if they are motivated enough and know what they are doing. That's assuming the hosting environment permits it. But last we tested, many still do. For these reasons, it's important to consult with your web host on what are the ideal permissions for your environment. For these same reasons, we recommend hosting in a dedicated environment whenever possible (regardless of CMS).
+**There's still a significant danger here though:** other users on the system may still be able to create a PHP (or other language) script that runs as Apache, and thereby has all the group permissions that Apache does. In such a case, that user can still gain access to your files, if they are motivated enough and know what they are doing. That's assuming the hosting environment permits it. But last we tested, many still do. For these reasons, it's important to consult with your web host on what are the ideal permissions for your environment. For these same reasons, we recommend [hosting in a dedicated environment](/docs/security/web-hosting/) whenever possible (regardless of CMS).
 
 
 ### Is "writable by all" safe in a dedicated hosting environment?
@@ -91,7 +91,7 @@ When you change the values of these two $config properties, it only affects dire
 
 ### How to change permissions of existing files
 
-If you have SSH access to your account, a recursive permission can be performed with chmod. If you have FTP access to your account, most FTP clients support recursive permission changes, but usage will vary. We'll cover use of chmod here, since usage will always be the same. The following examples all assume you are executing chmod from the root installation of your ProcessWire site (the same directory where index.php is located).
+If you have SSH access to your account, a recursive permission can be performed with `chmod`. If you have FTP access to your account, most FTP clients support recursive permission changes, but usage will vary. We'll cover use of chmod here, since usage will always be the same. The following examples all assume you are executing chmod from the root installation of your ProcessWire site (the same directory where index.php is located).
 
 
 ### Change the permission of just one file
@@ -136,13 +136,13 @@ find site/assets/ -type f -exec chmod 644 {} \;
 
 In a typical ProcessWire installation, your /site/config.php file is the one file that you need to make sure is not readable to any other user on the system (other than yourself and Apache). This file contains your database login and password information (and potentially other confidential information), so it's particularly important to lock this one down.
 
-In addition, the /site/config.php file needs to be writable by the installer (so it can record your settings), but it doesn't need to be writable afterwards. So it's a good idea to make adjusting the permissions of this file part of your regular installation process.
+In addition, the /site/config.php file needs to be writable by the installer (so it can record your settings), but it *doesn't* need to be writable afterwards. So it's a good idea to make adjusting the permissions of this file part of your regular installation process.
 
 As with other file permission settings, your /site/config.php permissions are primarily a consideration if you are in a shared (non-dedicated) hosting environment. In a dedicated environment, there aren't other potential users to worry about.
 
 While you can consult with your web host on what the best permissions for this file might be, you can also test things out yourself fairly easily. You can experiment with most restrictive permissions to least restrictive, until you find one that works.
 
-To change the permissions of this file, use chmod (if connected to your account via SSH) or use the permission settings in your FTP client. Usage will vary by FTP client. If using chmod from SSH, usage is as follows (replace "400" with whatever permission you want to apply):
+To change the permissions of this file, use `chmod` (if connected to your account via SSH) or use the permission settings in your FTP client. Usage will vary by FTP client. If using `chmod` from SSH, usage is as follows (replace "400" with whatever permission you want to apply):
 
 ```
 chmod 400 site/config.php
@@ -155,11 +155,11 @@ Below are potential settings, ordered from most secure to least secure. Find the
 
 How can you tell if the setting works with your server? Simply change the permission and load your site in a web browser. If you get your site, the setting worked. If you get an error message, 404 or nothing at all, the setting didn't work. Thats all there is to it.
 
-Recommend settings if you don't need write access: 400 [r--------] readable by owner (most secure, if it works) 440 [r--r-----] readable by owner and group (if 400 doesn't work)
+**Recommend settings if you don't need write access: ** `400 [r--------]` readable by owner (most secure, if it works) `440 [r--r-----]` readable by owner and group (if 400 doesn't work)
 
-Recommended settings if you need write access: 600 [rw-------] readable and writable by owner (most secure, if it works) 640 [rw-r-----] readable and writable by owner, readable to group 660 [rw-rw----] readable and writable by owner and group
+**Recommended settings if you need write access: ** `600 [rw-------]` readable and writable by owner (most secure, if it works) `640 [rw-r-----]` readable and writable by owner, readable to group `660 [rw-rw----]` readable and writable by owner and group
 
-Not recommended unless nothing else will work:* 444 [r--r--r--] readable by all 644 [rw-r--r--] readable by all, writable to owner 664 [rw-rw-r--] readable by all, writable to owner and group
+**Not recommended unless nothing else will work:*** `444 [r--r--r--]` readable by all `644 [rw-r--r--]` readable by all, writable to owner `664 [rw-rw-r--]` readable by all, writable to owner and group
 
 * Should be okay in a dedicated environment.
 
@@ -173,14 +173,14 @@ This is a question for your web host, but if you are the DIY type, there's a way
 ```
 
 - If the result is your account name, then Apache is running as you. This means you can most likely use more restricted permissions like 700, 750 or 755 for writable directories and 600, 640 or 644 for writable files.
-- If the result is something else, like "nobody" or "apache" (or another you don't recognize) then Apache is not running as you, and you'll have to open up write permissions to group (i.e. 770 and 660) or [worst case] everyone (like 777 and 666). But before you even consider using permissions like 777 and 666 in a non-dedicated environment, consult with your web host as they will hopefully have a better recommendation.
-- If you get an error message or nothing, then chances are exec() is not enabled for your server, as a security precaution. If that's the case, use this alternative script:
+- If the result is something else, like "nobody" or "apache" (or another you don't recognize) then Apache is *not* running as you, and you'll have to open up write permissions to group (i.e. 770 and 660) or [worst case] everyone (like 777 and 666). But before you even consider using permissions like 777 and 666 in a non-dedicated environment, consult with your web host as they will hopefully have a better recommendation.
+- If you get an error message or nothing, then chances are `exec()` is not enabled for your server, as a security precaution. If that's the case, use this alternative script:
 
 ```php
 <?php echo file_put_contents("test.txt", "test");
 ```
 
-If you get a positive number number and no error message then Apache is most likely running as you–read item #1 above. If you get the number 0 and/or an error message, Apache is most likely not running as you–read item #2 above.
+If you get a positive number number and no error message then Apache is most likely running as you–read item #1 above. If you get the number 0 and/or an error message, Apache is most likely *not* running as you–read item #2 above.
 
 Remember to delete your test.php file (and test.txt file, if applicable).
 
@@ -193,4 +193,4 @@ However, that convenience comes with a compromise. Writable directories with exe
 
 If your environment is non-dedicated and you have to supply any "all" (or even "group") write permissions, then don't have a writable /site/modules/ directory. You are safer just installing modules by FTP in this environment.
 
-To reiterate and put it in different terms: if your writable permissions for ProcessWire require any permission higher than 755 for directories or 644 for files, and you are not in a fully dedicated environment, then do not have a writable /site/modules/ directory under any circumstance. Manage your modules with other tools (FTP, SCP, rsync, etc.) in this scenario.
+To reiterate and put it in different terms: if your writable permissions for ProcessWire require any permission higher than 755 for directories or 644 for files, and you are not in a fully dedicated environment, then **do not** have a writable /site/modules/ directory under any circumstance. Manage your modules with other tools (FTP, SCP, rsync, etc.) in this scenario.

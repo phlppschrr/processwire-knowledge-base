@@ -8,8 +8,8 @@ Two-factor (or multi-factor) authentication gives you an extra layer of account 
 
 ## Key Points
 
-- TfaTotp for TOTP 2-factor authentication (time-based one time protocol)
-- TfaEmail for Email/SMS 2-factor authentication
+- [TfaTotp](/docs/security/two-factor-authentication/totp/) for TOTP 2-factor authentication (time-based one time protocol)
+- [TfaEmail](/docs/security/two-factor-authentication/email/) for Email/SMS 2-factor authentication
 
 ## Sections
 
@@ -18,10 +18,10 @@ Two-factor (or multi-factor) authentication gives you an extra layer of account 
 
 Two-factor (or multi-factor) authentication gives you an extra layer of account security relative to just using a password. ProcessWire versions 3.0.109 and newer include core support for two-factor authentication.
 
-The ProcessWire core provides the API, interface and flow control for the two-factor authentication process. But the actual implementation is handled by modules that extend the Tfa base module class. In this section we'll cover details on two different modules for implementation of two-factor authentication. To begin using two-factor authentication, you'll want to install one of these modules:
+The ProcessWire core provides the API, interface and flow control for the two-factor authentication process. But the actual implementation is handled by modules that extend the `Tfa` base module class. In this section we'll cover details on two different modules for implementation of two-factor authentication. To begin using two-factor authentication, you'll want to install one of these modules:
 
-- TfaTotp for TOTP 2-factor authentication (time-based one time protocol)
-- TfaEmail for Email/SMS 2-factor authentication
+- [TfaTotp](/docs/security/two-factor-authentication/totp/) for TOTP 2-factor authentication (time-based one time protocol)
+- [TfaEmail](/docs/security/two-factor-authentication/email/) for Email/SMS 2-factor authentication
 
 
 ### Which two-factor authentication module should you use?
@@ -31,7 +31,7 @@ The addition of any two-factor authentication to your login process is going to 
 
 ### How it works
 
-When you install one or more Tfa modules, the ProcessWire core automatically adds a new field to your user template, called tfa_type. This field is editable from the user profile screen, and enables the user to select what two-factor authentication type they want to use:
+When you install one or more `Tfa` modules, the ProcessWire core automatically adds a new field to your user template, called `tfa_type`. This field is editable from the user profile screen, and enables the user to select what two-factor authentication type they want to use:
 
 After making a selection, it will ask you to enter your current password for security purposes. Save your profile, and 2-factor authentication is ready to configure. In this case, I've selected the TOTP two-factor authentication:
 
@@ -45,5 +45,5 @@ You'll have about 90 seconds to get it right, as it'll accept the current, previ
 
 To begin using two-factor authentication in ProcessWire, install one of the “Tfa” modules:
 
-- TOTP 2-factor authentication (TfaTotp)TOTP standards for “Time-based One-Time Password”, which is an algorithm that computes a one-time password. It does this with a…
-- Email/SMS 2-factor authentication (TfaEmail)This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…
+- [TOTP 2-factor authentication (TfaTotp)](/docs/security/two-factor-authentication/totp/)TOTP standards for “Time-based One-Time Password”, which is an algorithm that computes a one-time password. It does this with a…
+- [Email/SMS 2-factor authentication (TfaEmail)](/docs/security/two-factor-authentication/email/)This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…

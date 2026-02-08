@@ -27,7 +27,7 @@ The Textarea Fieldtype is configured for the Details tab (Setup > Fields > [text
 
 ### Text Formatters
 
-If you want to apply any automatic formatting to the field when it is prepared for output, select one or more text formatters here. If you select more than one, drag them into the order they should be applied. For textarea fields that won't contain HTML, we strongly recommend selecting the HTML Entity Encoder text formatter.
+If you want to apply any automatic formatting to the field when it is prepared for output, select one or more text formatters here. If you select more than one, drag them into the order they should be applied. For textarea fields that won't contain HTML, we strongly recommend selecting the *HTML Entity Encoder* text formatter.
 
 
 ### Inputfield Type
@@ -39,41 +39,41 @@ The type of field that will be used to collect input (Textarea is the default). 
 
 This tells ProcessWire the type of content that will be contained in this field. If using a rich text editor or using plain HTML, choose one of the "Markup/HTML" options. If using plain text or a lightweight markup language (like Markdown) choose "Unknown".
 
-Content Type: Unknown
+**Content Type: Unknown**
 
 This option is intended for plain text or lightweight markup languages (like Markdown or Textile). If using plain text, we also recommend that you choose the HTML Entity Encoder for your "Text Formatters", as mentioned earlier on this page.
 
-Content Type: Markup/HTML
+**Content Type: Markup/HTML**
 
 This option adds checks to ensure that links and image references in your textarea value are not broken by changes in the site root URL. For instance, if your development server runs the site off a sub-directory, and the live server doesn't, this option update any links or image references in the markup at runtime with the correct site root URL.
 
-Content Type: Markup/HTML with image management
+**Content Type: Markup/HTML with image management**
 
-This option is available for ProcessWire 2.x only. For ProcessWire 3.x, see Markup/HTML options for the equivalent. This option includes everything in the Markup/HTML option and adds the following:
+This option is available for ProcessWire 2.x only. For ProcessWire 3.x, see [Markup/HTML options](#markup-html-options) for the equivalent. This option includes everything in the Markup/HTML option and adds the following:
 
 - Populate blank alt attributes with file description - ensures changes to file description are reflected in img[alt] attribute.
 - Automatically re-create image size variations that do not exist, when possible.
 - Remove <img> tags that point to files that do not exist and cannot be re-created.
 - Record missing image errors to "markup-qa-errors" log file (Setup > Logs > markup-qa-errors).
 
-See also: Quality assurance with images in textarea fields
+See also: [Quality assurance with images in textarea fields](/blog/posts/quality-assurance-for-images-in-rich-text-fields/)
 
 
 ### Markup/HTML Options
 
-These options are available for ProcessWire 3.x only.
+*These options are available for ProcessWire 3.x only. *
 
-Image Management
+**Image Management**
 
-Selecting this option provides the following quality assurance for <img> tags:
+Selecting this option provides the following quality assurance for `<img>` tags:
 
 - Populate blank alt attributes with file description - ensures changes to file description are reflected in img[alt] attribute.
 - Automatically re-create image size variations that do not exist, when possible.
 - Remove <img> tags that point to files that do not exist and cannot be re-created.
 - Record missing image errors to "markup-qa-errors" log file (Setup > Logs > markup-qa-errors).
 
-Link Abstraction
+**Link Abstraction**
 
-Selecting this option enables ProcessWire to provide quality assurance for your internal links referenced by <a> tags. When selected, ProcessWire will manage the a[href] attributes, ensuring they always point to the right page. If a link points to a page which has moved, ProcessWire will update the href attribute automatically when the field is rendered, so that it points to the correct location. If a link points to a page which no longer exists (or is in the Trash) ProcessWire will record the error to the "markup-qa-errors" log file (Setup > Logs > markup-qa-errors).
+Selecting this option enables ProcessWire to provide quality assurance for your internal links referenced by `<a>` tags. When selected, ProcessWire will manage the a[href] attributes, ensuring they always point to the right page. If a link points to a page which has moved, ProcessWire will update the href attribute automatically when the field is rendered, so that it points to the correct location. If a link points to a page which no longer exists (or is in the Trash) ProcessWire will record the error to the "markup-qa-errors" log file (Setup > Logs > markup-qa-errors).
 
-Note that the link management option works only for page fields saved after the option has been enabled.
+*Note that the link management option works only for page fields saved after the option has been enabled. *

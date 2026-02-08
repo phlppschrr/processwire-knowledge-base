@@ -114,6 +114,6 @@ LazyCron hooks are only executed during pageviews that are delivered by ProcessW
 
 In most cases, the way that LazyCron works out of the box is just fine. But if your need requires assurance that the module will always execute at exactly the interval you need (rather than possibly later), you need to setup a real cron job to trigger a pageview in your site. So if you needed accuracy to 1 minute, you'd setup a cron job to execute every one minute, and pull a page from the site. There are any number of ways you could pull a page from your site, but here is one using wget:
 
-wget --quiet --no-cache -O - http://www.your-site.com > /dev/null
+`wget --quiet --no-cache -O - http://www.your-site.com > /dev/null`
 
 That command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.

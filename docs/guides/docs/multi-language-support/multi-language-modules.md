@@ -8,9 +8,9 @@ To add multi-language translations to your module, you can export a CSV file of 
 
 ## Key Points
 
-- Why use CSV for bundled translations?
-- HelloWorld module with multi-language examples
-- ProcessHello module with multi-language examples
+- [Why use CSV for bundled translations?](/blog/posts/pw-3.0.181-hello/#why-csv)
+- [HelloWorld module with multi-language examples](/modules/helloworld/)
+- [ProcessHello module with multi-language examples](/modules/process-hello/)
 
 ## Sections
 
@@ -32,7 +32,7 @@ If you selected just one file above, it will take you there now. Otherwise, in S
 
 ### Step 3: Copy the CSV file(s) to a /languages/ dir in your module
 
-Copy the CSV file(s) or translations you exported in the previous step into a new /languages/ directory in your module’s files. For instance /site/modules/ProcessHello/languages/ is the one you'll see with the ProcessHello module.
+Copy the CSV file(s) or translations you exported in the previous step into a new /languages/ directory in your module’s files. For instance /site/modules/ProcessHello/languages/ is the one you'll see with the [ProcessHello](/modules/process-hello/) module.
 
 While not required, you might consider naming your files with the ISO-639-1 language code. For instance, German would be de.csv, Spanish would be es.csv, Finnish would be fi.csv, etc. Regardless of what name you use, the goal is just simply that the filename should explain what language it is for.
 
@@ -55,6 +55,6 @@ From here you can match the available translations with the languages you have i
 
 ### See also:
 
-- Why use CSV for bundled translations?
-- HelloWorld module with multi-language examples
-- ProcessHello module with multi-language examples
+- [Why use CSV for bundled translations?](/blog/posts/pw-3.0.181-hello/#why-csv)
+- [HelloWorld module with multi-language examples](/modules/helloworld/)
+- [ProcessHello module with multi-language examples](/modules/process-hello/)

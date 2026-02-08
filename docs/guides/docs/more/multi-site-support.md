@@ -21,11 +21,11 @@ The core supports multiple sites running on the same web account and ProcessWire
 
 Multiple-site support implies running multiple web sites at independent domains or subdomains from the same ProcessWire installation and web hosting account.
 
-ProcessWire can support multiple site setups using various methods, and you'll find several techniques discussed in the forum. On this page we outline the two most common and recommended methods of supporting multiple sites.
+ProcessWire can support multiple site setups using various methods, and you'll find several techniques discussed in the [forum](/talk/). On this page we outline the two most common and recommended methods of supporting multiple sites.
 
 The core supports multiple sites running on the same web account and ProcessWire installation, with each site maintaining its own database and /site/ directory (option #1). You can also run multiple sites from the same database by installing one of the Multisite modules (option #2).
 
-If using ProcessWire 3.x, you might also be interested in multi-instance support, which is a different topic from this but may have some crossover, depending on your need.
+If using ProcessWire 3.x, you might also be interested in [multi-instance support](/blog/posts/multi-instance-pw3/), which is a different topic from this but may have some crossover, depending on your need.
 
 
 ## Option #1: multiple sites with multiple databases
@@ -51,7 +51,7 @@ This section outlines how to install multiple sites on the same ProcessWire inst
 
 Point another domain or subdomain to your current ProcessWire installation. When you access that domain or subdomain, it should load your existing ProcessWire site.
 
-1. Create a subdirectory off of your web root called /tmp/ (or another name if you prefer). We will temporarily install a separate copy of ProcesWire there. So download and install a new copy of ProcessWire in that /tmp/ directory (run the installer by loading the /tmp/ URL in your web browser) . When it asks for database settings, make sure you are installing to a separate database than the one used by your main site. There is also an alternate version of step 1 further down, if you want to instead use a site that already exists.
+1. Create a subdirectory off of your web root called /tmp/ (or another name if you prefer). We will *temporarily* install a separate copy of ProcesWire there. So download and install a new copy of ProcessWire in that /tmp/ directory (run the installer by loading the /tmp/ URL in your web browser) . When it asks for database settings, *make sure* you are installing to a separate database than the one used by your main site. *There is also an alternate version of step 1 further down, if you want to instead use a site that already exists. *
 
 2. Once installation has completed, move or rename the /tmp/site/ directory to a /site-name/ directory in your main ProcessWire installation. You may name the directory whatever you want, so long as it starts with "site-", i.e. "site-name", "site-something" or "site-cats"… whatever you want. Just don't call it /site/, as that is already there for your main site.
 
@@ -63,12 +63,12 @@ Point another domain or subdomain to your current ProcessWire installation. When
 
 6. Now access your alternate domain or subdomain in the browser. It should now be functional. To edit template files for this site, edit the files in /site-something/templates/. To edit pages for that site, login at the site's /processwire/ URL (at the newly added domain/subdomain).
 
-Step 1 Alternate You don't necessarily have to install a new copy of ProcessWire for step 1. If you have an existing site that you want to install instead, all you need is its /site/ directory and database. Using PhpMyAdmin or another tool, export the database from that site, create the new database, and import the data you exported. Then take the /site/ directory from your new site that you want to install and copy it to a /site-something/ directory where you want to install it (which is your ProcessWire installation where you want to support multiple sites). Once you've done that, edit the /site-something/config.php file and note the database information at the bottom. Edit it to be consistent with the database you created and imported.
+**Step 1 Alternate** You don't necessarily have to install a new copy of ProcessWire for step 1. If you have an existing site that you want to install instead, all you need is its /site/ directory and database. Using PhpMyAdmin or another tool, export the database from that site, create the new database, and import the data you exported. Then take the /site/ directory from your new site that you want to install and copy it to a /site-something/ directory where you want to install it (which is your ProcessWire installation where you want to support multiple sites). Once you've done that, edit the /site-something/config.php file and note the database information at the bottom. Edit it to be consistent with the database you created and imported.
 
 
 ## Option #2: multiple sites from the same database
 
-This option requires installation of the 3rd party Multisite module by Antti Peisa, or the newer 3rd party Multisite module by Soma. These modules may not be in active development at present, but are still applicable and useful starting points if you are interested in implementing this kind of multi-site support.
+This option requires installation of the 3rd party [Multisite module](https://github.com/apeisa/Multisite/blob/master/Multisite.module) by Antti Peisa, or the newer 3rd party [Multisite module](https://github.com/somatonic/Multisite/) by Soma. These modules may not be in active development at present, but are still applicable and useful starting points if you are interested in implementing this kind of multi-site support.
 
 
 ### Advantages
@@ -89,4 +89,4 @@ This option requires installation of the 3rd party Multisite module by Antti Pei
 
 ### How to install
 
-Installation instructions and support can be found on the Multisite forum thread.
+Installation instructions and support can be found on the [Multisite forum thread](/talk/topic/1025-multisite/).

@@ -33,7 +33,7 @@ As you might gather from this example, URL segments enable your page's template 
 
 ### How do you enable URL segments?
 
-URL segments are not enabled by default. They have to be enabled for each template you want them in: Setup > Templates > [your template] > URLs > Enable URL segments. By default, ProcessWire allows up to 4 stacked URL segments before it'll start throwing 404s. You may modify this setting in your /site/config.php file via the $config->maxUrlSegments directive:
+URL segments are not enabled by default. They have to be enabled for each template you want them in: Setup > Templates > [your template] > URLs > Enable URL segments. By default, ProcessWire allows up to 4 stacked URL segments before it'll start throwing 404s. You may modify this setting in your /site/config.php file via the `$config->maxUrlSegments` directive:
 
 ```
 $config->maxUrlSegments = 4;
@@ -47,7 +47,7 @@ You can use URL segments on any page where your template settings allow, regardl
 
 ### How does a template file identify URL segments?
 
-URL segments can be accessed from the $input API variable:
+URL segments can be accessed from the [$input](https://processwire.com/docs/start/variables/input/) API variable:
 
 ```
 $input->urlSegment($n); // Retrieve the $n'th URL segment (1–3*)
@@ -93,7 +93,7 @@ if($input->urlSegment1 == 'photos') {
 }
 ```
 
-Another way of doing the same thing is to use PHP's switch statement:
+Another way of doing the same thing is to use PHP's [switch](http://php.net/manual/en/control-structures.switch.php) statement:
 
 ```
 // we are only using 1 URL segment, so send a 404 if there's more than 1
@@ -123,7 +123,7 @@ Arguably this method is easier to follow and to add further options, but it is a
 
 ### Using $input->urlSegmentStr instead
 
-If you want to retrieve all URL segments in one string, then $input->urlSegmentStr() does the trick. This is often preferable to retrieving a single URL segment like $input->urlSegment1 because we can automatically exclude the possibility of additional URL segments. If you simply replace the switch statement in the previous example with switch($input->urlSegmentStr) then you can effectively remove the first line of code from the example, which would throw a 404 if a second URL segment was also present.
+If you want to retrieve all URL segments in one string, then `$input->urlSegmentStr()` does the trick. This is often preferable to retrieving a single URL segment like `$input->urlSegment1` because we can automatically exclude the possibility of additional URL segments. If you simply replace the switch statement in the previous example with `switch($input->urlSegmentStr)` then you can effectively remove the first line of code from the example, which would throw a 404 if a second URL segment was also present.
 
 The urlSegmentStr method/property is also convenient if you need to check multiple segments at a time. Note that the urlSegmentStr never contains a leading or trailing slash.
 

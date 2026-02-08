@@ -89,7 +89,7 @@ Indicates whether a user has permission to create pages of a certain type (templ
 
 ### page-delete
 
-Enables a user to remove a page they have edit access to edit. For non-superusers, removing a page implies moving it to the trash. As a result, superusers can recover pages deleted by non-superusers. Also requires page-edit permission.
+Enables a user to remove a page they have edit access to edit. For non-superusers, removing a page implies moving it to the trash. As a result, superusers can recover pages deleted by non-superusers. *Also requires page-edit permission.*
 
 
 ### page-edit
@@ -99,32 +99,32 @@ Pre-requisite for having the ability to use the admin for listing or editing pag
 
 ### page-edit-front
 
-This permission is available in ProcessWire 3.0 and newer and is installed by the PageFrontEdit core module. It enables editing of fields you designate on the front-end of your site. Non-superusers must have this permission in order to make edits on the front-end. Such users must also have page-edit permission. When this permission is assigned to a role, users with that role can make front-edit edits to any pages they already have edit access to edit. Alternatively, this permission can instead be assigned to a role on a per-template basis from the Access tab of a template edit screen, enabling you to provide front-end editing for some instances and not others. For more information on how to implement front-end editing, see our documentation on front-end editing.
+This permission is available in ProcessWire 3.0 and newer and is installed by the *PageFrontEdit* core module. It enables editing of fields you designate on the front-end of your site. Non-superusers must have this permission in order to make edits on the front-end. Such users must also have page-edit permission. When this permission is assigned to a role, users with that role can make front-edit edits to any pages they already have edit access to edit. Alternatively, this permission can instead be assigned to a role on a per-template basis from the Access tab of a template edit screen, enabling you to provide front-end editing for some instances and not others. For more information on how to implement front-end editing, see our documentation on [front-end editing](/docs/front-end/front-end-editing/).
 
 
 ### page-lister
 
-Enables a user to access the Page Lister. In a default ProcessWire installation, Lister is located at Pages > Find. This permission is also a pre-requisite for other page-lister permissions used by ListerPro.
+Enables a user to access the Page Lister. In a default ProcessWire installation, Lister is located at Pages > Find. This permission is also a pre-requisite for [other page-lister permissions](/docs/user-access/permissions/#page-lister-name) used by ListerPro.
 
 
 ### page-lock
 
-Enables user to lock or unlock a page. When a page is locked, no edits may be performed on it until the page is first unlocked. A page can be locked or unlocked from the page editor Settings tab > Status field, or directly in the Page List/Lister inline page actions. Also requires page-edit permission.
+Enables user to lock or unlock a page. When a page is locked, no edits may be performed on it until the page is first unlocked. A page can be locked or unlocked from the page editor Settings tab > Status field, or directly in the Page List/Lister inline page actions. *Also requires page-edit permission.*
 
 
 ### page-move
 
-Enables user to change the parent of a page (if the page template family settings allow it to exist in another parent). Parent can be changed from the page editor Settings tab > Parent field, or from the inline drag-and-drop "move" action in Page List. Also requires page-edit permission.
+Enables user to change the parent of a page (if the page template family settings allow it to exist in another parent). Parent can be changed from the page editor Settings tab > Parent field, or from the inline drag-and-drop "move" action in Page List. *Also requires page-edit permission.*
 
 
 ### page-sort
 
-Enables user to change the sort order of child pages, or change the predefined sort order (if defined with the page). Note that this permission should be assigned on the page that has the children you want sortable, rather than on the child pages. Also requires page-edit permission.
+Enables user to change the sort order of child pages, or change the predefined sort order (if defined with the page). Note that this permission should be assigned on the page that has the children you want sortable, rather than on the child pages. *Also requires page-edit permission.*
 
 
 ### page-template
 
-Enables user to change the template used by a page. This is performed in the page editor Settings tab > Template field. Also requires page-edit permission.
+Enables user to change the template used by a page. This is performed in the page editor Settings tab > Template field. *Also requires page-edit permission.*
 
 
 ### page-view
@@ -139,7 +139,7 @@ Enables a user to edit their profile and change their password. This permission 
 
 ## Optional core permissions
 
-These permissions are not installed by default, but are recognized by the core and can be installed from Access > Permissions > Add New.
+*These permissions are not installed by default, but are recognized by the core and can be installed from Access > Permissions > Add New.*
 
 
 ### page-clone
@@ -154,7 +154,7 @@ This permission is available only if the core ProcessPageClone module is install
 
 ### page-edit-created
 
-When combined with page-edit permission, this optional permission limits a user to editing only pages that they created. Unlike other permissions, this permission reduces access by reducing the scope of the page-edit permission. Read more in: Limiting edit access with page-edit-created permission.
+When combined with page-edit permission, this optional permission limits a user to editing only pages that they created. Unlike other permissions, this permission reduces access by reducing the scope of the page-edit permission. Read more in: [Limiting edit access with page-edit-created permission](https://processwire.com/blog/posts/language-access-control-and-more-special-permissions/#limit-edits-to-pages-user-created-page-edit-created).
 
 
 ### page-edit-images
@@ -164,17 +164,17 @@ Use the image editor to manipulate (crop, resize, etc.) images. When not install
 
 ### page-edit-trash-created
 
-This optional permission lets a user trash pages that they created, so long as they are still editable to them. If the user already has page-delete permission to a page, then page-edit-trash-created permission is not necessary and does nothing. As a result, this permission is only useful in cases where a user does not have page-delete permission, but you still want them to be able to only trash pages they specifically created. Once a page has been trashed, only the superuser can restore or permanenty delete it. Requires ProcessWire 3.0.31 or newer (or 2.8.31+).
+This optional permission lets a user trash pages that they created, so long as they are still editable to them. If the user already has page-delete permission to a page, then page-edit-trash-created permission is not necessary and does nothing. As a result, this permission is only useful in cases where a user does not have page-delete permission, but you still want them to be able to only trash pages they specifically created. Once a page has been trashed, only the superuser can restore or permanenty delete it. *Requires ProcessWire 3.0.31 or newer (or 2.8.31+).*
 
 
 ### page-hide
 
-Enables user to hide or un-hide a page. When a page is hidden, it is not visible in front-end navigation and does not appear in $pages->find() API calls unless "include=hidden", "include=unpublished" or "include=all" is specified in the selector. A page can be hidden or un-hidden from the page editor Settings tab > Status field, or directly in the Page List/Lister inline page actions. When this permission is not installed, page-hide permission is inclusive of page-edit permission. Also requires page-edit permission and ProcessWire 2.6.15 or newer.
+Enables user to hide or un-hide a page. When a page is hidden, it is not visible in front-end navigation and does not appear in $pages->find() API calls unless "include=hidden", "include=unpublished" or "include=all" is specified in the selector. A page can be hidden or un-hidden from the page editor Settings tab > Status field, or directly in the Page List/Lister inline page actions. When this permission is not installed, page-hide permission is inclusive of page-edit permission. *Also requires page-edit permission and ProcessWire 2.6.15 or newer. *
 
 
 ### page-lister-[name]
 
-Replace "[name]" with the name of Lister and this enables you to assign access to that specific Lister. Requires ProcessWire 2.6 or newer, the ListerPro module, and page-lister permission as a pre-requisite.
+Replace "[name]" with the name of Lister and this enables you to assign access to that specific Lister. *Requires ProcessWire 2.6 or newer, the ListerPro module, and page-lister permission as a pre-requisite.*
 
 
 ### page-publish
@@ -192,24 +192,24 @@ Change the name of published pages the user is allowed to edit.
 
 ### user-admin
 
-Enables a user to administer all other users in the system (except superusers). Enables access to the Access > Users section of the admin. Also requires page-edit permission. When a ProcessWire 2.6.10+ system also has user-admin-all permission installed, the behavior of this permission is changed. See the following permissions for more details.
+Enables a user to administer all other users in the system (except superusers). Enables access to the Access > Users section of the admin. *Also requires page-edit permission. *When a ProcessWire 2.6.10+ system also has user-admin-all permission installed, the behavior of this permission is changed. See the following permissions for more details.
 
 
 ### user-admin-all
 
-When installed, this permission takes over the behavior of the user-admin permission, reducing the user-admin permission to just being able to edit "guest" users. The user-admin-all permission is primarily useful when combined with a user-admin-[role] permission, as described next. Users that you want to have this permission must also have page-edit and user-admin permission. Requires ProcessWire 2.6.10 or newer. See also discussion and examples of user-admin permissions.
+When installed, this permission takes over the behavior of the user-admin permission, reducing the user-admin permission to just being able to edit "guest" users. The user-admin-all permission is primarily useful when combined with a user-admin-[role] permission, as described next. Users that you want to have this permission must also have page-edit and user-admin permission. Requires ProcessWire 2.6.10 or newer. See also [discussion and examples of user-admin permissions](https://processwire.com/blog/posts/new-user-admin-permissions-automatic-version-change-detection-and-more-2.6.10/#new-user-admin-permissions).
 
 
 ### user-admin-[role]
 
-Enables editing of all users with the given [role]. Replace "[role]" with the name of the role you want to provide edit access to. Also requires page-edit and user-admin permission. Requires ProcessWire 2.6.10 or newer. See also discussion and examples of user-admin permissions.
+Enables editing of all users with the given [role]. Replace "[role]" with the name of the role you want to provide edit access to. Also requires page-edit and user-admin permission. Requires ProcessWire 2.6.10 or newer. See also [discussion and examples of user-admin permissions](https://processwire.com/blog/posts/new-user-admin-permissions-automatic-version-change-detection-and-more-2.6.10/#new-user-admin-permissions).
 
 
 ## Multi-language page edit permissions
 
 Multi-language page edit permissions are primarily useful for limiting language access for translator-specific roles. If no multi-language page edit permissions are installed, users with edit access to a given page may edit it in any of the available languages (the default behavior).
 
-Multi-language page-edit permissions require page-edit permission, ProcessWire core 2.6.3 or newer, and core modules: LanguageSupport and LanguageSupportFields, plus one or more multi-language fields. For more details, please see: Language Page Edit Permissions.
+*Multi-language page-edit permissions require page-edit permission, ProcessWire core 2.6.3 or newer, and core modules: LanguageSupport and LanguageSupportFields, plus one or more multi-language fields*. For more details, please see: [Language Page Edit Permissions](https://processwire.com/blog/posts/language-access-control-and-more-special-permissions/#language-page-edit-permissions).
 
 
 ### page-edit-lang-default
@@ -245,7 +245,7 @@ Provides edit access to non-multi-language fields in the page editor. Applicable
 
 ### More about page-edit-lang-none
 
-When present, this permission refers to all non-multi-language fields in the page editor. If you have this permission in your system, and a user does not have it, then their edit access will be limited to multi-language fields only, in the language(s) they have access to.
+When present, this permission refers to all non-multi-language fields in the page editor. If you have this permission in your system, and a user does *not* have it, then their edit access will be limited to multi-language fields only, in the language(s) they have access to.
 
 This permission is useful when you want to create user role(s) for the purpose of translating pages in one language to another. The translator need only focus on the fields that need translation. All of the non-multi-language fields are simply not shown in the page editor to users that don't have this permission.
 
@@ -256,4 +256,4 @@ Also note that when this permission is present in your system, a user must have 
 
 ### lang-edit
 
-In ProcessWire 2.6.23 (2.7) and newer you can add this permission to give users access to the language tools in Setup > Languages. This is largely useful for performing translations of static files like when creating language packs, or when translating phrases in your site template files. If you want to limit access to only a specific language, install the page-edit-lang-[name] permissions as described above, and ProcessWire will also consider these for access to language pages in Setup > Languages.
+In ProcessWire 2.6.23 (2.7) and newer you can add this permission to give users access to the language tools in Setup > Languages. This is largely useful for performing translations of static files like when creating language packs, or when [translating phrases in your site template files](http://processwire.com/docs/multi-language-support/code-i18n/#translatable-strings). If you want to limit access to only a specific language, install the page-edit-lang-[name] permissions as described above, and ProcessWire will also consider these for access to language pages in Setup > Languages.

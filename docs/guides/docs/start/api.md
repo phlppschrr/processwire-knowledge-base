@@ -43,13 +43,13 @@ This is where ProcessWire's API comes into play. It focuses on making the develo
 
 The ProcessWire API may already be comfortable and familiar for you, even if you've never used it before. To explain why it's both unique and familiar, lets first look at where it came from.
 
-When it was originally released, the jQuery javascript library was a paradigm shift. It took what was kind of a tricky and technical (Javascript) and turned it into something that was a joy to use. jQuery could be picked up quickly, and using it made my job fun. Its syntax was so simple, fast and powerful, that it was pure enjoyment for me, a web developer.
+When it was originally released, the [jQuery](https://jquery.com/) javascript library was a paradigm shift. It took what was kind of a tricky and technical (Javascript) and turned it into something that was a joy to use. jQuery could be picked up quickly, and using it made my job fun. Its syntax was so simple, fast and powerful, that it was pure enjoyment for me, a web developer.
 
 Prior to jQuery, I knew some Javascript but couldn't do very much with it (PHP was really my focus). jQuery came along and changed all that. To my clients, it made me look like a pro on the front-end. It enabled me to build things I never could have before, and have fun doing it. I could produce a whole lot of results without a lot of time. While it's now more than a decade ago, jQuery changed my world as a web developer.
 
 It wasn't long after discovering and learning jQuery that I started longing for a similar experience in a CMS. There were a lot of open source CMSs out there, and I tried them all, but nothing approached the powerful and simple joy of jQuery when it came to web development. I had already been developing custom CMS platforms for many years, and I thought it was time to pursue this project.
 
-After more than a year of planning and development, the first open source version of ProcessWire was born. First came the design and planning of the API, then the CMS was built around it. Like jQuery, it's fun, fast, powerful, and a joy to use. It has also proven to be a secure platform for websites and applications, and every bit as sought after of a tool for clients as it is for developers. It's pure enjoyment in a CMS.
+After more than a year of planning and development, the first open source version of ProcessWire was born.** **First came the design and planning of the API, then the CMS was built around it. Like jQuery, it's fun, fast, powerful, and a joy to use. It has also proven to be a secure platform for websites and applications, and every bit as sought after of a tool for clients as it is for developers. It's pure enjoyment in a CMS.
 
 Now more than eight years since the original open souce release of ProcessWire, this original concept is still our foundation and guide.
 
@@ -63,16 +63,16 @@ ProcessWire’s API consists of a few different components:
 
 The API consists of a few variables (via PHP objects) which are provided to your site's template files. These variables enable you to get or modify anything from your content, much in the same way that jQuery enables you to get and modify anything from the DOM.
 
-The two most common API variables are $page and $pages. For some sites, this is all that you will ever use. The $page API variables represents the current page being viewed, and $pages represents all the other pages in your site. These can be thought of like the $() object in jQuery.
+The two most common API variables are [$page](/api/variables/page/) and [$pages](/docs/start/variables/pages/). For some sites, this is all that you will ever use. The $page API variables represents the current page being viewed, and $pages represents all the other pages in your site. These can be thought of like the `$()` object in jQuery.
 
 ProcessWire's API variables provide access to all the components in ProcessWire, including all the site's pages, users, templates and fields. They provide a means of finding, getting, creating, modifying, saving and deleting these types of data.
 
-You don't even need to build a site or application in ProcessWire in order to use the API. That's because the API can also be accessed by bootstrapping ProcessWire from another PHP script. More about API variables
+You don't even need to build a site or application in ProcessWire in order to use the API. That's because the API can also be accessed by [bootstrapping ProcessWire](/docs/front-end/include/) from another PHP script. [More about API variables](/docs/start/variables/)
 
 
 ### Selectors
 
-Another major component of ProcessWire's API are selectors. Like in jQuery, selectors are simple strings of text that specify fields and values. For example, "name=ryan" is a simple selector that says: "find items that have the name ryan." These selectors are used throughout ProcessWire to get and find pages (and other types of data). ProcessWire selectors resemble jQuery selectors in many instances, but are also quite different. More about ProcessWire selectors
+Another major component of ProcessWire's API are selectors. Like in jQuery, selectors are simple strings of text that specify fields and values. For example, "name=ryan" is a simple selector that says: "find items that have the name ryan." These selectors are used throughout ProcessWire to get and find pages (and other types of data). ProcessWire selectors resemble jQuery selectors in many instances, but are also quite different. [More about ProcessWire selectors](/docs/selectors/)
 
 
 ### Fluent Interfaces
@@ -97,7 +97,7 @@ Of course, you don't have to chain statements like that unless you want to.
 
 ### Module Plugin Architecture
 
-ProcessWire is built around a modular architecture. Modules exist to enable a high level of extensibility and customization to an installation of ProcessWire. Nearly every component and action in ProcessWire is hookable. Much of ProcessWire itself is a collection of plugin modules. More about Modules
+ProcessWire is built around a modular architecture. Modules exist to enable a high level of extensibility and customization to an installation of ProcessWire. Nearly every component and action in ProcessWire is hookable. Much of ProcessWire itself is a collection of plugin modules. [More about Modules](/docs/modules/)
 
 
 ## How is the API similar to jQuery?
@@ -119,12 +119,12 @@ For the most part, ProcessWire's API attempts to use the same method naming conv
 
 ### Selectors
 
-ProcessWire takes the idea of attribute selectors from jQuery and lets you apply that methodology to getting and finding pages in your site based on values in their attributes (aka fields). These selectors are a simplified version of what you find in jQuery, but the intention, experience and results are the same. For the most part, the operators used in a selector are the same as the operators used in jQuery selectors. More about Selectors
+ProcessWire takes the idea of attribute selectors from jQuery and lets you apply that methodology to getting and finding pages in your site based on values in their attributes (aka fields). These selectors are a simplified version of what you find in jQuery, but the intention, experience and results are the same. For the most part, the operators used in a selector are the same as the operators used in jQuery selectors. [More about Selectors](/docs/selectors/)
 
 
 ### Chaining
 
-Like in jQuery, you can chain method calls in ProcessWire if you want to. This is what's called a fluent interface. Sometimes this is convenient and sometimes not, but the option is always there. For example, the following bit of code of grabs the first file from a field named images on the current $page, resizes it to 200px width, and outputs the URL in an <img> tag:
+Like in jQuery, you can chain method calls in ProcessWire if you want to. This is what's called a fluent interface. Sometimes this is convenient and sometimes not, but the option is always there. For example, the following bit of code of grabs the first file from a field named *images* on the current `$page`, resizes it to 200px width, and outputs the URL in an `<img>` tag:
 
 ```
 <img src='<?=$page->images->first->width(200)->url?>' alt='Example'>
@@ -133,4 +133,4 @@ Like in jQuery, you can chain method calls in ProcessWire if you want to. This i
 
 ### Traversing
 
-Like in jQuery, most traversing methods return values that can themselves be traversed and compared. For instance, a call to $page->find(...) or $page->children(...) returns an array type that also has its own methods for find(), filter(), first(), has(), add(), filter() and so on.
+Like in jQuery, most traversing methods return values that can themselves be traversed and compared. For instance, a call to `$page->find(...)` or `$page->children(...)` returns an array type that also has its own methods for find(), filter(), first(), has(), add(), filter() and so on.

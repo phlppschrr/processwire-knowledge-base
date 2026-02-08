@@ -26,11 +26,11 @@ This section covers the use of template files and serves as an introduction to u
 
 ## How do template files work?
 
-Every time a page is loaded on your site, ProcessWire looks at what template is assigned to the page, loads it, gives it several API variables, and then runs it as a PHP script. These template files are located in this directory: /site/templates/.
+Every time a page is loaded on your site, ProcessWire looks at what template is assigned to the page, loads it, gives it several [API variables](/docs/start/variables/), and then runs it as a PHP script. These template files are located in this directory:** **/site/templates/.
 
 These template files can be as simple as a plain HTML file, or they can be as complex as as an entire PHP application. But like most CMS platforms, the most common instance if for templates to contain markup (HTML) with PHP tags inserted where necessary to output content from ProcessWire.
 
-Adding a template is as simple as placing a new file (with .php extension) in the directory above, going into ProcessWire admin, and clicking on Templates > New. It will find your template and ask you to select which fields should be added to it. This article describes how you would work with the ProcessWire API in a template file.
+Adding a template is as simple as placing a new file (with .php extension) in the directory above, going into ProcessWire admin, and clicking on *Templates > New*. It will find your template and ask you to select which fields should be added to it. This article describes how you would work with the ProcessWire API in a template file.
 
 
 ## Basic Usage
@@ -53,7 +53,7 @@ The syntax that you saw above uses something called PHP short tags. Most PHP ins
 <h1><?php echo $page->title; ?></h1>
 ```
 
-The $page variable seen in the examples above is one of a few API variables that ProcessWire provides to every template file. But $page is the one that you are likely to use most often. It contains all the fields present on the page being viewed. Every one of those fields can be referenced like the 'title' field above.
+The [$page](/processwire/page/) variable seen in the examples above is one of a few [API variables](/docs/start/variables/) that ProcessWire provides to every template file. But $page is the one that you are likely to use most often. It contains all the fields present on the page being viewed. Every one of those fields can be referenced like the 'title' field above.
 
 For example, lets say that you had a field called 'bodycopy' that contained the body copy for your page. You might output it like this in your template:
 
@@ -63,7 +63,7 @@ For example, lets say that you had a field called 'bodycopy' that contained the 
 </div>
 ```
 
-The fields that you can reference from $page depend on what fields you have added to the template in the ProcessWire Admin, under Setup > Templates. The values output depend on what you've typed or pasted into them when editing the page in ProcessWire Admin.
+The fields that you can reference from [$page](/processwire/page/) depend on what fields you have added to the template in the ProcessWire Admin, under *Setup > Templates*. The values output depend on what you've typed or pasted into them when editing the page in ProcessWire Admin.
 
 
 ## Using other types of fields
@@ -127,7 +127,7 @@ In most cases, I recommend that you generate the markup yourself rather than usi
 
 ## Finding and loading other pages from your template file
 
-The API is not limited to just the $page variable and the variables reference will cover all of them for you. But lets look at another common one, which is the $pages variable. The $pages variable is your connection to all the other pages in your site. It provides get() and find() functions that enable you to find and load other pages with ease.
+The API is not limited to just the [$page](/processwire/page/) variable and the [variables reference](/docs/start/variables/) will cover all of them for you. But lets look at another common one, which is the [$pages](/docs/start/variables/pages/) variable. The $pages variable is your connection to all the other pages in your site. It provides get() and find() functions that enable you to find and load other pages with ease.
 
 For example, lets say that we have an 'address' field on our 'Contact Us' page, and it contains the text of our company's mailing address. We want to display it in the footer throughout our site. Here is what the code to do that might look like:
 
@@ -178,7 +178,7 @@ To achieve the above, we'll assume that press release pages have a 'date' and 's
 $pages->find("parent=/about/press/, featured=1, limit=3, sort=-date");
 ```
 
-...or...
+*...or...*
 
 ```php
 $pages->get("/about/press/")->children("featured=1, limit=3, sort=-date");
@@ -236,6 +236,6 @@ foreach($features as $feature) {
 
 ## Next steps
 
-Look at the different output strategies that you can use with your template files.
+Look at the different [output strategies](/docs/front-end/output/) that you can use with your template files.
 
 Take a look at the template files included with your ProcessWire installation in /site/templates/. They are live examples commented to help get you going.

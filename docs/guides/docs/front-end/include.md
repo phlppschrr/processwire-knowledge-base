@@ -27,7 +27,7 @@ include("/path/to/processwire/index.php");
 
 It doesn't matter if your intended use is HTTP or command line... ProcessWire will auto-detect the state from which it was included.
 
-Once you've included ProcessWire like in the example above, the API is now available to you, just like in template files. For example, here is how you would retrieve a fictional "Contact Us" page from ProcessWire's $pages API variable. Each line below is equivalent, so what syntax best suits your needs:
+Once you've included ProcessWire like in the example above, the API is now available to you, just like in template files. For example, here is how you would retrieve a fictional "Contact Us" page from ProcessWire's [$pages](/docs/start/variables/pages/) API variable. Each line below is equivalent, so what syntax best suits your needs:
 
 ```php
 $mypage = $pages->get("/about/contact/"); 
@@ -36,9 +36,9 @@ $mypage = $wire->pages->get("/about/contact/");
 $mypage = wire('pages')->get("/about/contact/");
 ```
 
-Note that if using pages() or wire('pages') with ProcessWire 3.x, you'll need to call them from the ProcessWire namespace. You can do this by having a namespace ProcessWire; at the top of your PHP file, or by referencing the namespace directly, i.e. \ProcessWire\wire('pages')->get(…);
+Note that if using `pages()` or `wire('pages')` with ProcessWire 3.x, you'll need to call them from the ProcessWire namespace. You can do this by having a `namespace ProcessWire;` at the top of your PHP file, or by referencing the namespace directly, i.e. `\ProcessWire\wire('pages')->get(…);`
 
-You can access all of the same API variables that you can from a template, except that there is no default $page variable accessible from the API since ProcessWire is not handling the web request. Of course, you are welcome to retrieve any page you want from the $pages API variable. Likewise you can modify, save, and delete pages as usual.
+You can access all of the same [API variables](/docs/start/variables/) that you can from a template, except that there is no default `$page` variable accessible from the API since ProcessWire is not handling the web request. Of course, you are welcome to retrieve any page you want from the [$pages API variable](/docs/start/variables/pages/). Likewise you can modify, save, and delete pages as usual.
 
 
 ### Creating a ProcessWire command-line script
@@ -134,4 +134,4 @@ We'll use the same example as in the shell script above, except that we'll use m
 </html>
 ```
 
-You can do anything with ProcessWire's API that you can do from a template, so everything you can do in template files still applies, as does everything in the developer API.
+You can do anything with ProcessWire's API that you can do from a template, so everything you can do in template files still applies, as does everything in the [developer API](/api/ref/).

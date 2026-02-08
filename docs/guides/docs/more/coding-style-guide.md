@@ -8,11 +8,11 @@ This PHP style guide represents the coding style preferred for the ProcessWire c
 
 ## Key Points
 
-- Files MUST use only <?php and <?= tags.
+- Files MUST use only `<?php` and `<?=` tags.
 - Files MUST use only UTF-8 without BOM for PHP code.
-- Class names MUST be declared in StudlyCaps.
-- Class constants SHOULD be declared in camelCase.*
-- Method names MUST be declared in camelCase.
+- Class names MUST be declared in `StudlyCaps`.
+- Class constants SHOULD be declared in `camelCase`.*
+- Method names MUST be declared in `camelCase`.
 
 ## Sections
 
@@ -23,12 +23,12 @@ This PHP style guide represents the coding style preferred for the ProcessWire c
 
 It is also recommended (though certainly not required) for 3rd party modules and other code using the ProcessWire API, unless an existing coding standard is already in place or preferred. Use of this coding standard is however requested for code submissions (pull requests) to the ProcessWire core.
 
-The ProcessWire coding style guide is based on PSR-1 and PSR-2 (with many sections copied directly from them), but with several important differences and additions. Read more in our Introduction to the ProcessWire Coding Style Guide.
+The ProcessWire coding style guide is based on [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) (with many sections copied directly from them), but with several important differences and additions. Read more in our [Introduction to the ProcessWire Coding Style Guide](https://processwire.com/blog/posts/processwire-2.7.1-dev-coding-style-guide/#style-guide-intro).
 
 
 ### Table of Contents
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 
 
 ## 1. Overview
@@ -36,23 +36,23 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ### 1.1. Summary
 
-*An asterisk is appended to lines that vary significantly from the PSR style guides.
+**An asterisk is appended to lines that vary significantly from the PSR style guides.*
 
-- Files MUST use only <?php and <?= tags.
+- Files MUST use only `<?php` and `<?=` tags.
 - Files MUST use only UTF-8 without BOM for PHP code.
-- Class names MUST be declared in StudlyCaps.
-- Class constants SHOULD be declared in camelCase.*
-- Method names MUST be declared in camelCase.
+- Class names MUST be declared in `StudlyCaps`.
+- Class constants SHOULD be declared in `camelCase`.*
+- Method names MUST be declared in `camelCase`.
 - Code MUST use tabs for indenting, not spaces.*
 - Code MUST use syntax compatible with PHP 5.3.8 or newer.* (PW core only)
-- There MUST NOT be a hard limit on line length and it is RECOMMENDED that line length not exceed 120 characters except in some circumstances (see Lines).*
+- There MUST NOT be a hard limit on line length and it is RECOMMENDED that line length not exceed 120 characters except in some circumstances (see [Lines](https://processwire.com/docs/more/coding-style-guide/#2.2-lines)).*
 - Opening braces for classes MUST go on the same line, and closing braces MUST go on the next line after the body.*
 - Opening braces for methods MUST go on the same line, and closing braces MUST go on the next line after the body.*
 - Visibility MUST be declared on all properties and methods.
 - Control structure keywords, method/function calls, and method/function declarations MUST NOT have one space after them.*
 - Opening braces for control structures MUST go on the same line, and closing braces MUST go on the next line after the body.
 - Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
-- Use PHPDoc for describing classes, methods, properties, arguments, return values, hookable methods, or anything else beneficial to documentation or IDEs.*
+- Use [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) for describing classes, methods, properties, arguments, return values, hookable methods, or anything else beneficial to documentation or IDEs.*
 - Make string constants translatable for multi-language support.*
 
 
@@ -126,9 +126,9 @@ class Sample extends WireData implements Module {
 ### 2.1. Files
 
 - All PHP files MUST use the Unix LF (linefeed) line ending.
-- PHP code MUST use the long <?php ?> tags or the short-echo <?= ?> tags; it MUST NOT use the other tag variations.
+- PHP code MUST use the long `<?php` `?>` tags or the short-echo `<?=` `?>` tags; it MUST NOT use the other tag variations.
 - PHP code MUST use only UTF-8 without BOM.
-- The closing ?> tag MUST be omitted from files containing only PHP, and the opening <?php tag MUST NOT be preceded by any whitespace.
+- The closing `?>` tag MUST be omitted from files containing only PHP, and the opening `<?php` tag MUST NOT be preceded by any whitespace.
 
 
 ### 2.2. Lines
@@ -144,13 +144,13 @@ class Sample extends WireData implements Module {
 - Code MUST use tabs for indenting, not spaces.
 - Additional whitespace MAY be used between or at the end of lines (whitespace is disregarded in diffs).
 
-For conversion purposes: when spaces are present instead of tabs, each group of 4-consecutive spaces at the beginning of a line will be assumed to be a tab, for spaces-to-tabs conversion.
+*For conversion purposes: when spaces are present instead of tabs, each group of 4-consecutive spaces at the beginning of a line will be assumed to be a tab, for spaces-to-tabs conversion.*
 
 
 ### 2.4. Keywords and True/False/Null
 
-- PHP keywords MUST be in lower case.
-- The PHP constants true, false, and null SHOULD be in lower case.
+- [PHP keywords](http://php.net/manual/en/reserved.keywords.php) MUST be in lower case.
+- The PHP constants `true`, `false`, and `null` SHOULD be in lower case.
 
 
 ## 3. Namespaces
@@ -160,9 +160,9 @@ For conversion purposes: when spaces are present instead of tabs, each group of 
 
 When namespaces are used (like with ProcessWire 3.x), the following are RECOMMENDED:
 
-- The namespace declaration be placed on the same line as the opening <?php tag, or on the first line after.
+- The `namespace` declaration be placed on the same line as the opening `<?php` tag, or on the first line after.
 - There is one blank line after the namespace declaration.
-- When present, use declarations go after the namespace declaration, with one use keyword per declaration, and a blank line after the block of use declarations.
+- When present, `use` declarations go after the namespace declaration, with one `use` keyword per declaration, and a blank line after the block of `use` declarations.
 
 For example:
 
@@ -182,7 +182,7 @@ use OtherVendor\OtherPackage\BazClass;
 
 ### 4.1. Class and Interface Declarations
 
-- Class and interface names MUST be declared in StudlyCaps.
+- Class and interface names MUST be declared in `StudlyCaps`.
 - Classes and interfaces SHOULD be documented with PHPDoc.
 
 ```
@@ -200,8 +200,8 @@ use OtherVendor\OtherPackage\BazClass;
 
 ### 4.2. Constants
 
-- Class constants in the ProcessWire core SHOULD be declared in camelCase.
-- Class constants outside of the ProcessWire core MAY be declared in camelCase or UPPER_CASE, but MUST be consistent in a given class.
+- Class constants in the ProcessWire core SHOULD be declared in `camelCase`.
+- Class constants outside of the ProcessWire core MAY be declared in `camelCase` or `UPPER_CASE`, but MUST be consistent in a given class.
 - Class constants SHOULD be documented with PHPDoc.
 
 ```
@@ -224,7 +224,7 @@ class Foo {
 
 ### 4.3. Extends and Implements
 
-The extends and implements keywords MUST be declared on the same line as the class name.
+The `extends` and `implements` keywords MUST be declared on the same line as the class name.
 
 ```
 class ClassName extends ParentClass implements SomeInterface {
@@ -232,7 +232,7 @@ class ClassName extends ParentClass implements SomeInterface {
 }
 ```
 
-Lists of implements MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line.
+Lists of `implements` MAY be split across multiple lines, where each subsequent line is indented once. When doing so, the first item in the list MUST be on the next line, and there MUST be only one interface per line.
 
 ```
 class ClassName extends ParentClass implements
@@ -244,12 +244,12 @@ class ClassName extends ParentClass implements
 
 ### 4.4. Properties
 
-- Property names SHOULD be declared in camelCase.
-- Properties SHOULD be documented with PHPDoc @var keywords. There SHOULD NOT be blank lines between the PHPDoc and property declaration.
-- Visibility MUST be declared on all properties (i.e. protected, private).
-- Visibility SHOULD be declared protected if a property has potential value to direct manipulation or access by descending classes. Otherwise it should be declared private. When in doubt, use protected.
-- It is RECOMMENDED that visibility not be declared public unless absolutely necessary.
-- The var keyword MUST NOT be used to declare a property.
+- Property names SHOULD be declared in `camelCase`.
+- Properties SHOULD be documented with PHPDoc `@var` keywords. There SHOULD NOT be blank lines between the PHPDoc and property declaration.
+- Visibility MUST be declared on all properties (i.e. `protected`, `private`).
+- Visibility SHOULD be declared `protected` if a property has potential value to direct manipulation or access by descending classes. Otherwise it should be declared `private`. When in doubt, use `protected`.
+- It is RECOMMENDED that visibility not be declared `public` unless absolutely necessary.
+- The `var` keyword MUST NOT be used to declare a property.
 - There MUST NOT be more than one property declared per statement.
 - Properties SHOULD be declared with a default value when possible.
 
@@ -269,9 +269,9 @@ class ClassName {
 
 ### 4.5. Properties and magic methods
 
-This refers to class properties that are pulled from the __get($key) magic method, or set by the __set($key, $value) magic method. For example, properties in a WireData class in ProcessWire.
+This refers to class properties that are pulled from the `__get($key)` magic method, or set by the `__set($key, $value)` magic method. For example, properties in a `WireData` class in ProcessWire.
 
-When possible, these properties SHOULD be documented with PHPDoc in the class declaration. Use @property for read/write properties, @property-read for read-only properties, and @property-write for write-only properties.
+When possible, these properties SHOULD be documented with PHPDoc in the class declaration. Use `@property` for read/write properties, `@property-read` for read-only properties, and `@property-write` for write-only properties.
 
 ```
 /**
@@ -292,7 +292,7 @@ class SampleClass {
 
 ### 4.6. Methods
 
-- Method names MUST be declared in camelCase.
+- Method names MUST be declared in `camelCase`.
 - Visibility MUST be declared on all methods.
 - Methods SHOULD be documented with PHPDoc. There SHOULD NOT be blank lines between the PHPDoc and the method declaration.
 - Method declarations MUST have at least one blank line separating them from other method, property or constant declarations in a class. If the method is documented with PHPDoc, this applies to the PHPDoc that accompanies the method rather than the method itself.
@@ -340,11 +340,11 @@ public function aVeryLongMethodName(
 
 ### 4.8. Hookable Methods and Arguments (ProcessWire only)
 
-- Hookable methods MUST be declared in a class that descends from Wire or any class that implements the WireHookable interface (this includes almost all ProcessWire classes).
+- Hookable methods MUST be declared in a class that descends from `Wire` or any class that implements the `WireHookable` interface (this includes almost all ProcessWire classes).
 - Hookable method names MUST be declared with 3-leading underscores "___".
-- Hookable methods MUST use either public or protected visibility.
-- Hookable methods MUST NOT force arguments to be passed by reference (i.e. avoid &$arg2).
-- Hookable methods SHOULD be documented with PHPDoc accompanying the method, as well as a PHPDoc @method statement in the class PHPDoc that documents the hookable method call, without the three leading underscores.
+- Hookable methods MUST use either `public` or `protected` visibility.
+- Hookable methods MUST NOT force arguments to be passed by reference (i.e. avoid `&$arg2`).
+- Hookable methods SHOULD be documented with PHPDoc accompanying the method, as well as a PHPDoc `@method` statement in the `class` PHPDoc that documents the hookable method call, *without* the three leading underscores.
 
 ```
 /**
@@ -374,8 +374,8 @@ class SampleClass extends Wire {
 
 ### 4.9. abstract, final, and static
 
-- When present, the abstract and final declarations SHOULD precede the visibility declaration.
-- When present, the static declaration SHOULD come after the visibility declaration.
+- When present, the `abstract` and `final` declarations SHOULD precede the visibility declaration.
+- When present, the `static` declaration SHOULD come after the visibility declaration.
 
 ```
 abstract class ClassName {
@@ -428,7 +428,7 @@ The body of each structure SHOULD be enclosed by braces. The braces MAY be omitt
 
 ### 5.1. if, elseif, else
 
-An if structure looks like the following. Note the placement of parentheses, spaces, and braces.
+An `if` structure looks like the following. Note the placement of parentheses, spaces, and braces.
 
 ```
 if($expr1) { 
@@ -440,12 +440,12 @@ if($expr1) {
 }
 ```
 
-The keywords else if SHOULD be used instead of elseif so that all control keywords are as readable as possible and remain in consistent English.
+The keywords `else if` SHOULD be used instead of `elseif` so that all control keywords are as readable as possible and remain in consistent English.
 
 
 ### 5.2. switch, case
 
-A switch structure looks like the following. Note the placement of parentheses, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There SHOULD be a comment such as // no break intentional when fall-through is intentional in a non-empty case body.
+A `switch` structure looks like the following. Note the placement of parentheses, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There SHOULD be a comment such as `// no break intentional` when fall-through is intentional in a non-empty case body.
 
 ```
 switch($expr) {
@@ -469,7 +469,7 @@ switch($expr) {
 
 ### 5.3. while, do while
 
-A while statement looks like the following. Note the placement of parentheses, spaces, and braces.
+A `while` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
 ```
 while($expr) {
@@ -477,7 +477,7 @@ while($expr) {
 }
 ```
 
-Similarly, a do while statement looks like the following. Note the placement of parentheses, spaces, and braces.
+Similarly, a `do while` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
 ```
 do {
@@ -488,7 +488,7 @@ do {
 
 ### 5.4. for
 
-A for statement looks like the following. Note the placement of parentheses, spaces, and braces.
+A `for` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
 ```
 for($i = 0; $i < 10; $i++) {
@@ -499,7 +499,7 @@ for($i = 0; $i < 10; $i++) {
 
 ### 4.5. foreach
 
-A foreach statement looks like the following. Note the placement of parentheses, spaces, and braces.
+A `foreach` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
 ```
 foreach($iterable as $key => $value) {
@@ -510,7 +510,7 @@ foreach($iterable as $key => $value) {
 
 ### 4.6. try, catch
 
-A try catch block looks like the following. Note the placement of parentheses, spaces, and braces.
+A `try catch` block looks like the following. Note the placement of parentheses, spaces, and braces.
 
 ```
 try {
@@ -528,7 +528,7 @@ try {
 
 ### 6.1. Using Closures
 
-Closures MUST follow the same rules as defined above for method and function declarations. When use is present, it MUST be preceded by a single space and SHOULD NOT have whitespace after it.
+Closures MUST follow the same rules as defined above for method and function declarations. When `use` is present, it MUST be preceded by a single space and SHOULD NOT have whitespace after it.
 
 ```
 // closure with arguments
@@ -600,8 +600,8 @@ $a ++; // not this
 
 Operators in ProcessWire selector strings MUST NOT have whitespace before or after them. This is not just a matter of style, but a requirement of statements in selector strings. We mention it here to call attention to the difference between operators usage in selector strings and operators in PHP code.
 
-- Do this: name=some_page, qty>10
-- Not this: name = some_page, qty > 10
+- Do this: `name=some_page, qty>10`
+- Not this: `name = some_page, qty > 10`
 
 
 ## 8. Strings and Quotes
@@ -611,7 +611,7 @@ Operators in ProcessWire selector strings MUST NOT have whitespace before or aft
 
 For strings, it is RECOMMENDED that you use double "quotes" if the string value may have (or may ever have) a PHP variable inserted into it. PHP variables are resolved in double quoted strings, but not in single quoted strings.
 
-Otherwise it is RECOMMENDED that you use whatever quote style reduces or prevents the need to escape characters within the string. For example, use double "quotes" if your string contains an apostrophe like "it's", or use single 'quotes' if your string contains embedded double quotes like 'click "submit" to continue'.
+Otherwise it is RECOMMENDED that you use whatever quote style reduces or prevents the need to escape characters within the string. For example, use double "quotes" if your string contains an apostrophe like `"it's"`, or use single 'quotes' if your string contains embedded double quotes like `'click "submit" to continue'`.
 
 When outputting strings with HTML markup, it is RECOMMENDED that you use double quotes for the string, and single quotes for HTML attribute values within the string. For example:
 
@@ -648,14 +648,14 @@ For the cases where it's not required to use {brackets} it is RECOMMENDED that y
 
 ### 8.4. Multi-language Translatable Strings
 
-- In order for a string to be translatable by ProcessWire's language translation parser, it MUST be wrapped in a $this->_('phrase') method or __('phrase') function call.
+- In order for a string to be translatable by ProcessWire's language translation parser, it MUST be wrapped in a `$this->_('phrase')` method or `__('phrase')` function call.
 - There MUST NOT be more than one translatable phrase per line.
 - Line length MAY exceed the 120 character recommended length as needed in order to avoid splitting phrases.
 - Translatable strings MUST be a single string that starts and ends with the same quote. They MUST NOT contain any concatenation, expressions, function calls or variable insertions.
-- Translatable phrases within a non-static method of a Wire derived class MUST use $this->_('phrase') Outside of that context, translatable phrases MUST use __('phrase').
-- $this->_x('phrase', 'context') or _x('phrase', 'context') SHOULD be used when the phrase might duplicate another in the same file, with a different context.
-- $this->_n('singular', 'plural', $number) or _n('singular', 'plural', $number) SHOULD be used when translating a phrase that may have different singular and plural translations depending on the value of $number.
-- PHP variables MUST NOT be directly inserted into translation strings, as variable values that change cannot be directly translated. However, variables MAY be inserted by using placeholder strings in combination with the PHP sprintf function.
+- Translatable phrases within a non-static method of a `Wire` derived class MUST use `$this->_('phrase')` Outside of that context, translatable phrases MUST use `__('phrase')`.
+- `$this->_x('phrase', 'context')` or `_x('phrase', 'context')` SHOULD be used when the phrase might duplicate another in the same file, with a different context.
+- `$this->_n('singular', 'plural', $number)` or `_n('singular', 'plural', $number)` SHOULD be used when translating a phrase that may have different singular and plural translations depending on the value of `$number`.
+- PHP variables MUST NOT be directly inserted into translation strings, as variable values that change cannot be directly translated. However, variables MAY be inserted by using placeholder strings in combination with the PHP `sprintf` function.
 
 ```
 echo sprintf(__('Thank you for visiting %s'), $user->fullname); // do this
@@ -664,7 +664,7 @@ echo __("Thank you for visiting $user->fullname"); // not this!
 
 Considering the above, it is RECOMMENDED that you use single 'quotes' when possible for translation strings, as it serves as a good reminder that variables may not be inserted in translation strings. However, you MAY use either quote style, so long as you remember variables should not be inserted in double quoted translatable strings.
 
-Additional comments to the person performing translation of phrases MAY be provided by appending a PHP // comment to the end of the line that the phrase exists on. For example:
+Additional comments to the person performing translation of phrases MAY be provided by appending a PHP `// comment` to the end of the line that the phrase exists on. For example:
 
 ```
 echo __('Thank you for visiting'); // Thank you message shown at logout
@@ -676,11 +676,11 @@ echo __('Thank you for visiting'); // Thank you message shown at logout
 
 ### 9.1. Accessing API Variables
 
-You SHOULD access ProcessWire API variables via $this->wire('var') within Wire derived classes. You MAY also use $this->var when supported by the class. When in doubt, use $this->wire('var').
+You SHOULD access ProcessWire API variables via `$this->wire('var')` within `Wire` derived classes. You MAY also use `$this->var` when supported by the class. When in doubt, use `$this->wire('var')`.
 
-You SHOULD access ProcessWire API variables via wire('var') outside of Wire derived classes. You MAY also use $var when API variables are locally scoped (as in template files, outside of function or class declarations).
+You SHOULD access ProcessWire API variables via `wire('var')` outside of Wire derived classes. You MAY also use `$var` when API variables are locally scoped (as in template files, outside of function or class declarations).
 
-Within hook functions that are procedural functions or closures, you SHOULD access API variables from the given HookEvent argument. For example:
+Within hook functions that are procedural functions or closures, you SHOULD access API variables from the given `HookEvent` argument. For example:
 
 ```
 $wire->addHookAfter('Pages::saved', function(HookEvent $event) {
@@ -713,20 +713,20 @@ You MUST NOT overwrite existing API variables (many will throw exceptions if you
 
 ### 10.1. Dependency Injection
 
-All newly-created objects that are derived from Wire SHOULD have their dependencies injected. In order to do this, pass the new object through the wire() method.
+All newly-created objects that are derived from `Wire` SHOULD have their dependencies injected. In order to do this, pass the new object through the `wire()` method.
 
 ```
 $item = $this->wire(new SampleClass()); // do this
 $item = new SampleClass(); // not this
 ```
 
-Within template files (outside of Wire-derived class scope) you may use the $wire API variable to perform the same thing:
+Within template files (outside of Wire-derived class scope) you may use the `$wire` API variable to perform the same thing:
 
 ```
 $item = $wire->wire(new SampleClass());
 ```
 
-Any objects returned from ProcessWire API functions/methods will already have their dependencies injected. You only need to inject dependencies to objects that you are creating yourself with new ClassName().
+Any objects returned from ProcessWire API functions/methods will already have their dependencies injected. You only need to inject dependencies to objects that you are creating yourself with `new ClassName()`.
 
 
 ### 10.2. ProcessWire 3.x Namespace
@@ -737,7 +737,7 @@ For new projects in ProcessWire 3.x, it is RECOMMENDED that you use the ProcessW
 <?php namespace ProcessWire;
 ```
 
-To declare your own namespace, replace ProcessWire above with the path/name of your namespace. However, unless you have a reason to use a separate namespace it is RECOMMENDED that you use the ProcessWire namespace for simplicity.
+To declare your own namespace, replace `ProcessWire` above with the path/name of your namespace. However, unless you have a reason to use a separate namespace it is RECOMMENDED that you use the ProcessWire namespace for simplicity.
 
 Please note that if you do not declare a namespace in your PHP file (reverting to the root namespace), ProcessWire may maintain a separate compiled copy of the file in order to ensure compatibility with 3.x.
 
@@ -752,7 +752,7 @@ Procedural functions SHOULD follow the same syntax and documentation rules as cl
 
 ### 11.2. define()
 
-PHP define() statements SHOULD use UPPERCASE rather than camelCase. Words should be split by underscores. For example:
+PHP `define()` statements SHOULD use `UPPERCASE` rather than `camelCase`. Words should be split by underscores. For example:
 
 ```
 define("SAMPLE_DEFINE", "This is a sample define");
@@ -762,9 +762,9 @@ define("SAMPLE_DEFINE", "This is a sample define");
 ### 11.3. PHPDoc Style Recommendations
 
 - There SHOULD NOT be blank lines between the PHPDoc comment and the method or variable it describes.
-- There SHOULD be at least one blank line between the PHPDoc description and any @ keywords.
-- There SHOULD NOT be any blank lines between @ keyword lines (they should stay together as a group).
-- There SHOULD be at least one blank line between the @ keywords and the closing comment.
+- There SHOULD be at least one blank line between the PHPDoc description and any `@` keywords.
+- There SHOULD NOT be any blank lines between `@` keyword lines (they should stay together as a group).
+- There SHOULD be at least one blank line between the `@` keywords and the closing comment.
 
 ```
 /**

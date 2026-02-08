@@ -8,8 +8,8 @@ This page provides detailed documentation on everything you need to know to make
 
 ## Key Points
 
-- When your translation needs occur outside of a class–such as in a template file–you must use the __('string') function call.
-- When your translation needs occur within a Processwire class–such as in a plugin module–it is preferable (though not required) to use $this->_('string').
+- When your translation needs occur outside of a class–such as in a template file–you must use the `__('string')` function call.
+- When your translation needs occur within a Processwire class–such as in a plugin module–it is preferable (though not required) to use `$this->_('string')`.
 
 ## Sections
 
@@ -18,7 +18,7 @@ This page provides detailed documentation on everything you need to know to make
 
 This page provides detailed documentation on everything you need to know to make your template files or modules translatable using ProcessWire's translation tools.
 
-This will primarily be of interest to those that are wanting to make static text in their own template files or modules translatable using ProcessWire's translation tools. ProcessWire uses a GNU gettext-like system for managing language translation of strings in your code (without actually using gettext).
+This will primarily be of interest to those that are wanting to make static text in their own template files or modules translatable using ProcessWire's translation tools. ProcessWire uses a [GNU gettext](http://www.gnu.org/software/gettext/)-like system for managing language translation of strings in your code (without actually using gettext).
 
 
 ### Demonstration Video
@@ -28,7 +28,7 @@ Below is a brief video demonstrating how simple it is to use ProcessWire's langu
 
 ## Translatable strings
 
-In order to make a string translatable in your template or module code, you just have to wrap the original string in a $this->_() or __() function call:
+In order to make a string translatable in your template or module code, you just have to wrap the original string in a `$this->_()` or `__()` function call:
 
 ```
 $out = $this->_("Live long and prosper");  // syntax within a class
@@ -41,7 +41,7 @@ $out = __("Live long and prosper!"); // syntax outside of a class
 
 ## Marking strings for translation
 
-The strings for translation are wrapped in a call to one of a set of special functions. The most commonly used ones are $this->_() and __(). These functions just returns the translation of their argument:
+The strings for translation are wrapped in a call to one of a set of special functions. The most commonly used ones are `$this->_()` and `__()`. These functions just returns the translation of their argument:
 
 ```
 echo "<h2>" . $this->_('Site Information') . "</h2>";
@@ -50,10 +50,10 @@ echo "<h2>" . $this->_('Site Information') . "</h2>";
 
 ### Syntax inside a class vs. syntax outside of a class
 
-In ProcessWire, the functions __() and $this->_() are equivalent, but __() will work in all contexts while $this->_() will only work within the context of a class. So why have $this->_() at all? Because it has a speed advantage that can only be realized within the context of a class. As a result, the following rules apply:
+In ProcessWire, the functions `__()` and `$this->_()` are equivalent, but `__()` will work in all contexts while `$this->_()` will only work within the context of a class. So why have `$this->_()` at all? Because it has a speed advantage that can only be realized within the context of a class. As a result, the following rules apply:
 
-- When your translation needs occur outside of a class–such as in a template file–you must use the __('string') function call.
-- When your translation needs occur within a Processwire class–such as in a plugin module–it is preferable (though not required) to use $this->_('string').
+- When your translation needs occur outside of a class–such as in a template file–you must use the `__('string')` function call.
+- When your translation needs occur within a Processwire class–such as in a plugin module–it is preferable (though not required) to use `$this->_('string')`.
 
 The rules above also apply to the other translation functions outlined later in this page.
 
@@ -72,23 +72,23 @@ Perhaps your first thought is to try this:
 echo __("Created $count pages.");
 ```
 
-It won't work! Strings for translation are extracted from the ProcessWire PHP files, so people performing translation will see the phrase: Created $count pages… However in ProcessWire, the __() function will be called with an argument like Created 3 pages. and ProcessWire won't find a suitable translation and will return its argument: Created 3 pages… regardless of how many pages there actually were. Meaning, it isn't translated correctly.
+It won't work! Strings for translation are extracted from the ProcessWire PHP files, so people performing translation will see the phrase: *Created $count pages…* However in ProcessWire, the `__()` function will be called with an argument like *Created 3 pages.* and ProcessWire won't find a suitable translation and will return its argument: *Created 3 pages…* regardless of how many pages there actually were. Meaning, it isn't translated correctly.
 
-The solution is to use the printf family of functions. Especially helpful are printf and sprintf. Here is what the right solution to the page count problem will look like:
+The solution is to use the printf family of functions. Especially helpful are [printf](http://php.net/printf) and [sprintf](http://php.net/sprintf). Here is what the right solution to the page count problem will look like:
 
 ```
 printf(__("Created %d pages."), $count);
 ```
 
-Or, if you are building output into a variable (like $out), you'd use sprintf:
+Or, if you are building output into a variable (like `$out`), you'd use sprintf:
 
 ```
 $out = sprintf(__("Created %d pages."), $count);
 ```
 
-Notice that the string for translation is just the template “Created %d pages.”, which is the same both in the source and at run-time.
+Notice that the string for translation is just the template “*Created %d pages.”*, which is the same both in the source and at run-time.
 
-If you have more than one placeholder in a string, it is recommended that you use argument swapping. In this case, single quotes (') are mandatory : double quotes (") will tell php to interpret the “$s” as the $s variable, which is not what we want.
+If you have more than one placeholder in a string, it is recommended that you use [argument swapping](http://www.php.net/manual/en/function.sprintf.php#example-4273). In this case, single quotes (') are mandatory : double quotes (") will tell php to interpret the “$s” as the `$s` variable, which is not what we want.
 
 ```
 $out = sprintf(__('Your city is %1$s, and your zip code is %2$s.'), $city, $zipcode);
@@ -103,15 +103,15 @@ $out = sprintf(__('Your zip code is %2$s, and your city is %1$s.'), $city, $zipc
 
 ### Plurals
 
-Let's get back to the 'created pages' example: sprintf(__("Created %d pages."), $count);. What if we create only 1 page? The output will be: “Created 1 pages.”, which is definitely not correct English, and would certainly be incorrect for many other languages as well.
+Let's get back to the 'created pages' example: `sprintf(__("Created %d pages."), $count);`. What if we create only 1 page? The output will be: “*Created 1 pages.”*, which is definitely not correct English, and would certainly be incorrect for many other languages as well.
 
-In ProcessWire you can use the _n() or $this->_n() function.
+In ProcessWire you can use the `_n()` or `$this->_n()` function.
 
 ```
 $out = sprintf(_n("Created %d page.", "Created %d pages.", $count), $count);
 ```
 
-_n() and $this->_n() accept 3 arguments:
+`_n()` and `$this->_n()` accept 3 arguments:
 
 - singular — the singular form of the string
 - plural — the plural form of the string
@@ -122,7 +122,7 @@ The return value of the functions is the correct translated form, corresponding 
 
 ### Context
 
-Sometimes one term is used in several contexts and although it is one and the same word in English it has to be translated differently in other languages. For example the word Post can be used both as a verb (Click here to post your comment) and as a noun (Edit this post). In such cases the _x() or $this->_x() function should be used. It is similar to __(), but it has an additional second argument–the context:
+Sometimes one term is used in several contexts and although it is one and the same word in English it has to be translated differently in other languages. For example the word Post can be used both as a verb (Click here to post your comment) and as a noun (Edit this post). In such cases the `_x()` or `$this->_x()` function should be used. It is similar to `__()`, but it has an additional second argument–the context:
 
 ```
 $label = _x('Comment', 'noun'); // or $this->_x('Comment', 'noun') in a class
@@ -131,14 +131,14 @@ $label = _x('Comment', 'noun'); // or $this->_x('Comment', 'noun') in a class
 echo _x('Comment', 'column name');
 ```
 
-Using this method in both cases we will get the string Comment for the original version, but the translators will see two Comment strings for translation, each in the different contexts.
+Using this method in both cases we will get the string *Comment* for the original version, but the translators will see two *Comment* strings for translation, each in the different contexts.
 
-To summarize contexts, you should use the _x() or $this->_x() functions when two or more identical translatable strings will appear in more then one place in the same file.
+To summarize contexts, you should use the `_x()` or `$this->_x()` functions when two or more identical translatable strings will appear in more then one place in the same file.
 
 
 ## Comment descriptions
 
-Do you think translators will know how to translate a string like: __('g:i:s a')? In this case you can add a clarifying comment in the source code. The comment must begin with // and be on the same line as the translation function call. Here is an example:
+Do you think translators will know how to translate a string like: `__('g:i:s a')`? In this case you can add a clarifying comment in the source code. The comment must begin with `//` and be on the same line as the translation function call. Here is an example:
 
 ```
 $date = __('g:i:s a'); // Date string in PHP date() format
@@ -220,17 +220,17 @@ Don't try to internationalize an empty string. It doesn't make any sense, becaus
 
 ## Best practices
 
-While ProcessWire doesn't use gettext, it is based on many of the same conventions and what applies for gettext generally applies for translation in ProcessWire. Below is a summary of best practices from the gettext manual and this page.
+While ProcessWire doesn't use gettext, it is based on many of the same conventions and what applies for gettext generally applies for translation in ProcessWire. Below is a summary of best practices from the [gettext manual](http://www.gnu.org/software/gettext/manual/html_node/Preparing-Strings.html#Preparing-Strings) and this page.
 
 - Decent English style—minimize slang and abbreviations.
 - Entire sentences—in most languages word order is different than that in English.
 - Split at paragraphs—merge related sentences, but do not include whole page of text in one string.
-- Use format strings instead of string concatenation: sprintf(__('Replace %s with %s'), $a, $b); is always better than __('Replace ') . $a . __(' with ') . $b;
+- Use format strings instead of string concatenation: `sprintf(__('Replace %s with %s'), $a, $b);` is always better than `__('Replace ') . $a . __(' with ') . $b;`
 - Avoid markup and unusual control characters—do not include tags that surround your text and do not leave URLs for translation, unless they could have version in another language.
 - Do not leave leading or trailing whitespace in a translatable phrase.
 - Keep your translation phrases on 1 line and between 1 pair of quotes.
 - Use only 1 translation function call per line in your source code.
-- Use $this->_('string') in your class files, and __('string') everywhere else.
+- Use `$this->_('string')` in your class files, and `__('string')` everywhere else.
 
 
 ## Technical details
@@ -244,7 +244,7 @@ If you've worked with gettext before, you may be familiar with the term "textdom
 
 In ProcessWire, each PHP file is considered it's own textdomain and the textdomain is nothing more than the filename (including path) from the root of the ProcessWire installation. The textdomain is not loaded by ProcessWire until a function call from a given PHP file requests a translation for a phrase. The textdomain consists of all translation phrases for the current language in one PHP file, and textdomains are internally stored in JSON files by ProcessWire.
 
-The developer using translation function calls does not have to think about textdomains, as it is something that ProcessWire figures out behind the scenes. However, if a developer does want to override the textdomain from the curent file for a given translation, they can do so by specifying the PHP filename (including path) as the second argument to a __() call, like this:
+The developer using translation function calls does not have to think about textdomains, as it is something that ProcessWire figures out behind the scenes. However, if a developer does want to override the textdomain from the curent file for a given translation, they can do so by specifying the PHP filename (including path) as the second argument to a `__()` call, like this:
 
 ```
 echo __('Save', '/site/templates/common.php');
@@ -256,9 +256,9 @@ You will see an example of this in ProcessWire's admin theme in the file /wire/t
 $title = __($title, '/wire/templates-admin/default.php');
 ```
 
-We do that in the default admin theme because we want to pull translations from default.php without keeping duplicate copies of translatable phrases in topnav.inc. You can see we're actually using $title rather than a static string in the function call above. We're doing that because we only need the translation capability of the __() function, which ultimately doesn't care if you give it a dynamic or static string. We've setup some predefined translations in default.php that we know are expected, like 'Pages', 'Setup', etc., and that's what is being translated in the above function call.
+We do that in the default admin theme because we want to pull translations from default.php without keeping duplicate copies of translatable phrases in topnav.inc. You can see we're actually using `$title` rather than a static string in the function call above. We're doing that because we only need the translation capability of the` __()` function, which ultimately doesn't care if you give it a dynamic or static string. We've setup some predefined translations in default.php that we know are expected, like 'Pages', 'Setup', etc., and that's what is being translated in the above function call.
 
-The __() function will also accept an actual object instance as a textdomain as well. It will figure out what file it came from on it's own. So if you know that there is a translatable phrase in the $pages API object that you want to make use of, you can put your phrase in the context of the $pages textdomain (/wire/core/Pages.php) just like this:
+The `__()` function will also accept an actual object instance as a textdomain as well. It will figure out what file it came from on it's own. So if you know that there is a translatable phrase in the `$pages` API object that you want to make use of, you can put your phrase in the context of the `$pages` textdomain (/wire/core/Pages.php) just like this:
 
 ```
 echo __('Page saved', $pages);
