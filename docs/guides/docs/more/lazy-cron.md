@@ -4,15 +4,116 @@ Source: https://processwire.com/docs/more/lazy-cron/
 
 ## Summary
 
-This core module provides hooks that are automatically executed at various intervals.It is called 'lazy' because it's triggered by a pageview, so the interval is guaranteed to be at least the time requested (and maybe more) rather than exactly the time requested. The more pageviews your site gets, the closer it is. This is fine for most cases, but if you need it to be fully accurate I'll describe how you can make it not-lazy a little further down.How to installThis is a core module included with ProcessWire 2.1+. Go to Admin > Modules and click "check for new modules". Then click the "install" button for the LazyCron module. LazyCron is now installed and ready to be used by other modules or via the API.Hookable time intervalsThese are the function names you can hook from LazyCron. The function names describe the time intervals they provide. If you think I'm missing any important time intervals, please let us know and we can add more.every30SecondseveryMinuteevery2Minutesevery3Minutesevery4Minutesevery5Minutesevery10Minutesevery15Minutesevery30Minutesevery45MinuteseveryHourevery2Hoursevery4Hoursevery6Hoursevery12HourseveryDayevery2Daysevery4DayseveryWeekevery2Weeksevery4WeeksHow to use Lazy CronThis module is mainly of use inside the API and to other modules. You hook one of the named intervals mentioned in the list above, and the function you provide will be executed at approximately that time interval. Here's how you do it, both from a class (module) and outside of one:Usage in a class/module// initialize the hook in your AutoLoad module public function init() { $this->addHook('LazyCron::every30Minutes', $this, 'myHook'); } // the function you want executed every 30 minutes public function myHook(HookEvent $e) { echo "30 Minutes have passed!"; }Procedural usage (like in a template or elsewhere in the API):// create your hook function function myHook(HookEvent $e) { echo "30 Minutes have passed!"; } // add a hook to your function: wire()->addHook('LazyCron::every30Minutes', null, 'myHook');Arguments provided to the hooksIf desired, you can retrieve the number of seconds that have actually elapsed since your hooked function was last called:function myHook(HookEvent $e) { $seconds = $e->arguments[0]; echo "30 Minutes have passed! (actual seconds were: $seconds)"; }Note that in production usage, you probably wouldn't want to echo anything from these hooks because they are executed after the pageview was already delivered. So while you can directly echo output from these, it's probably not that useful (other than for demonstration purposes, like this).How Lazy Cron worksWhen installed, LazyCron hooks into ProcessWire's ProcessPageView::finished() method. This ensures that the scheduled tasks are executed after the pageview has already been delivered rather than before or during it. This hopefully avoids any perceived slowdown if the scheduled tasks take time.LazyCron provides a bunch of hooks that anything else can hook into. These functions are outlined in the section above titled "Hookable time intervals." These functions are called at the interval specified in their name. LazyCron simply uses ProcessWire's existing hook system. So when you hook into any one of these functions, your hook will also be executed at that same time interval.LazyCron hooks are only executed during pageviews that are delivered by ProcessWire. They are not executed when using ProcessWire's API from other scripts.How to make it not-lazyIn most cases, the way that LazyCron works out of the box is just fine. But if your need requires assurance that the module will always execute at exactly the interval you need (rather than possibly later), you need to setup a real cron job to trigger a pageview in your site. So if you needed accuracy to 1 minute, you'd setup a cron job to execute every one minute, and pull a page from the site. There are any number of ways you could pull a page from your site, but here is one using wget:wget --quiet --no-cache -O - http://www.your-site.com > /dev/nullThat command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.
+This core module provides hooks that are automatically executed at various intervals.
 
 ## Key Points
 
-- This core module provides hooks that are automatically executed at various intervals.It is called 'lazy' because it's triggered by a pageview, so the interval is guaranteed to be at least the time requested (and maybe more) rather than exactly the time requested. The more pageviews your site gets, the closer it is. This is fine for most cases, but if you need it to be fully accurate I'll describe how you can make it not-lazy a little further down.How to installThis is a core module included with ProcessWire 2.1+. Go to Admin > Modules and click "check for new modules". Then click the "install" button for the LazyCron module. LazyCron is now installed and ready to be used by other modules or via the API.Hookable time intervalsThese are the function names you can hook from LazyCron. The function names describe the time intervals they provide. If you think I'm missing any important time intervals, please let us know and we can add more.every30SecondseveryMinuteevery2Minutesevery3Minutesevery4Minutesevery5Minutesevery10Minutesevery15Minutesevery30Minutesevery45MinuteseveryHourevery2Hoursevery4Hoursevery6Hoursevery12HourseveryDayevery2Daysevery4DayseveryWeekevery2Weeksevery4WeeksHow to use Lazy CronThis module is mainly of use inside the API and to other modules. You hook one of the named intervals mentioned in the list above, and the function you provide will be executed at approximately that time interval. Here's how you do it, both from a class (module) and outside of one:Usage in a class/module// initialize the hook in your AutoLoad module public function init() { $this->addHook('LazyCron::every30Minutes', $this, 'myHook'); } // the function you want executed every 30 minutes public function myHook(HookEvent $e) { echo "30 Minutes have passed!"; }Procedural usage (like in a template or elsewhere in the API):// create your hook function function myHook(HookEvent $e) { echo "30 Minutes have passed!"; } // add a hook to your function: wire()->addHook('LazyCron::every30Minutes', null, 'myHook');Arguments provided to the hooksIf desired, you can retrieve the number of seconds that have actually elapsed since your hooked function was last called:function myHook(HookEvent $e) { $seconds = $e->arguments[0]; echo "30 Minutes have passed! (actual seconds were: $seconds)"; }Note that in production usage, you probably wouldn't want to echo anything from these hooks because they are executed after the pageview was already delivered. So while you can directly echo output from these, it's probably not that useful (other than for demonstration purposes, like this).How Lazy Cron worksWhen installed, LazyCron hooks into ProcessWire's ProcessPageView::finished() method. This ensures that the scheduled tasks are executed after the pageview has already been delivered rather than before or during it. This hopefully avoids any perceived slowdown if the scheduled tasks take time.LazyCron provides a bunch of hooks that anything else can hook into. These functions are outlined in the section above titled "Hookable time intervals." These functions are called at the interval specified in their name. LazyCron simply uses ProcessWire's existing hook system. So when you hook into any one of these functions, your hook will also be executed at that same time interval.LazyCron hooks are only executed during pageviews that are delivered by ProcessWire. They are not executed when using ProcessWire's API from other scripts.How to make it not-lazyIn most cases, the way that LazyCron works out of the box is just fine. But if your need requires assurance that the module will always execute at exactly the interval you need (rather than possibly later), you need to setup a real cron job to trigger a pageview in your site. So if you needed accuracy to 1 minute, you'd setup a cron job to execute every one minute, and pull a page from the site. There are any number of ways you could pull a page from your site, but here is one using wget:wget --quiet --no-cache -O - http://www.your-site.com > /dev/nullThat command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.
+- every30Seconds
+- everyMinute
+- every2Minutes
+- every3Minutes
+- every4Minutes
 
 ## Sections
 
 
 ## Lazy Cron
 
-This core module provides hooks that are automatically executed at various intervals.It is called 'lazy' because it's triggered by a pageview, so the interval is guaranteed to be at least the time requested (and maybe more) rather than exactly the time requested. The more pageviews your site gets, the closer it is. This is fine for most cases, but if you need it to be fully accurate I'll describe how you can make it not-lazy a little further down.How to installThis is a core module included with ProcessWire 2.1+. Go to Admin > Modules and click "check for new modules". Then click the "install" button for the LazyCron module. LazyCron is now installed and ready to be used by other modules or via the API.Hookable time intervalsThese are the function names you can hook from LazyCron. The function names describe the time intervals they provide. If you think I'm missing any important time intervals, please let us know and we can add more.every30SecondseveryMinuteevery2Minutesevery3Minutesevery4Minutesevery5Minutesevery10Minutesevery15Minutesevery30Minutesevery45MinuteseveryHourevery2Hoursevery4Hoursevery6Hoursevery12HourseveryDayevery2Daysevery4DayseveryWeekevery2Weeksevery4WeeksHow to use Lazy CronThis module is mainly of use inside the API and to other modules. You hook one of the named intervals mentioned in the list above, and the function you provide will be executed at approximately that time interval. Here's how you do it, both from a class (module) and outside of one:Usage in a class/module// initialize the hook in your AutoLoad module public function init() { $this->addHook('LazyCron::every30Minutes', $this, 'myHook'); } // the function you want executed every 30 minutes public function myHook(HookEvent $e) { echo "30 Minutes have passed!"; }Procedural usage (like in a template or elsewhere in the API):// create your hook function function myHook(HookEvent $e) { echo "30 Minutes have passed!"; } // add a hook to your function: wire()->addHook('LazyCron::every30Minutes', null, 'myHook');Arguments provided to the hooksIf desired, you can retrieve the number of seconds that have actually elapsed since your hooked function was last called:function myHook(HookEvent $e) { $seconds = $e->arguments[0]; echo "30 Minutes have passed! (actual seconds were: $seconds)"; }Note that in production usage, you probably wouldn't want to echo anything from these hooks because they are executed after the pageview was already delivered. So while you can directly echo output from these, it's probably not that useful (other than for demonstration purposes, like this).How Lazy Cron worksWhen installed, LazyCron hooks into ProcessWire's ProcessPageView::finished() method. This ensures that the scheduled tasks are executed after the pageview has already been delivered rather than before or during it. This hopefully avoids any perceived slowdown if the scheduled tasks take time.LazyCron provides a bunch of hooks that anything else can hook into. These functions are outlined in the section above titled "Hookable time intervals." These functions are called at the interval specified in their name. LazyCron simply uses ProcessWire's existing hook system. So when you hook into any one of these functions, your hook will also be executed at that same time interval.LazyCron hooks are only executed during pageviews that are delivered by ProcessWire. They are not executed when using ProcessWire's API from other scripts.How to make it not-lazyIn most cases, the way that LazyCron works out of the box is just fine. But if your need requires assurance that the module will always execute at exactly the interval you need (rather than possibly later), you need to setup a real cron job to trigger a pageview in your site. So if you needed accuracy to 1 minute, you'd setup a cron job to execute every one minute, and pull a page from the site. There are any number of ways you could pull a page from your site, but here is one using wget:wget --quiet --no-cache -O - http://www.your-site.com > /dev/nullThat command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.
+This core module provides hooks that are automatically executed at various intervals.
+
+It is called 'lazy' because it's triggered by a pageview, so the interval is guaranteed to be at least the time requested (and maybe more) rather than exactly the time requested. The more pageviews your site gets, the closer it is. This is fine for most cases, but if you need it to be fully accurate I'll describe how you can make it not-lazy a little further down.
+
+
+### How to install
+
+This is a core module included with ProcessWire 2.1+. Go to Admin > Modules and click "check for new modules". Then click the "install" button for the LazyCron module. LazyCron is now installed and ready to be used by other modules or via the API.
+
+
+### Hookable time intervals
+
+These are the function names you can hook from LazyCron. The function names describe the time intervals they provide. If you think I'm missing any important time intervals, please let us know and we can add more.
+
+- every30Seconds
+- everyMinute
+- every2Minutes
+- every3Minutes
+- every4Minutes
+- every5Minutes
+- every10Minutes
+- every15Minutes
+- every30Minutes
+- every45Minutes
+- everyHour
+- every2Hours
+- every4Hours
+- every6Hours
+- every12Hours
+- everyDay
+- every2Days
+- every4Days
+- everyWeek
+- every2Weeks
+- every4Weeks
+
+
+## How to use Lazy Cron
+
+This module is mainly of use inside the API and to other modules. You hook one of the named intervals mentioned in the list above, and the function you provide will be executed at approximately that time interval. Here's how you do it, both from a class (module) and outside of one:
+
+
+### Usage in a class/module
+
+```
+// initialize the hook in your AutoLoad module
+public function init() {
+    $this->addHook('LazyCron::every30Minutes', $this, 'myHook');
+}
+// the function you want executed every 30 minutes
+public function myHook(HookEvent $e) {
+    echo "30 Minutes have passed!";
+}
+```
+
+
+### Procedural usage (like in a template or elsewhere in the API):
+
+```
+// create your hook function
+function myHook(HookEvent $e) {
+    echo "30 Minutes have passed!";
+}
+// add a hook to your function:
+wire()->addHook('LazyCron::every30Minutes', null, 'myHook');
+```
+
+
+### Arguments provided to the hooks
+
+If desired, you can retrieve the number of seconds that have actually elapsed since your hooked function was last called:
+
+```
+function myHook(HookEvent $e) { 
+    $seconds = $e->arguments[0];
+    echo "30 Minutes have passed! (actual seconds were: $seconds)";
+}
+```
+
+Note that in production usage, you probably wouldn't want to echo anything from these hooks because they are executed after the pageview was already delivered. So while you can directly echo output from these, it's probably not that useful (other than for demonstration purposes, like this).
+
+
+## How Lazy Cron works
+
+When installed, LazyCron hooks into ProcessWire's ProcessPageView::finished() method. This ensures that the scheduled tasks are executed after the pageview has already been delivered rather than before or during it. This hopefully avoids any perceived slowdown if the scheduled tasks take time.
+
+LazyCron provides a bunch of hooks that anything else can hook into. These functions are outlined in the section above titled "Hookable time intervals." These functions are called at the interval specified in their name. LazyCron simply uses ProcessWire's existing hook system. So when you hook into any one of these functions, your hook will also be executed at that same time interval.
+
+LazyCron hooks are only executed during pageviews that are delivered by ProcessWire. They are not executed when using ProcessWire's API from other scripts.
+
+
+### How to make it not-lazy
+
+In most cases, the way that LazyCron works out of the box is just fine. But if your need requires assurance that the module will always execute at exactly the interval you need (rather than possibly later), you need to setup a real cron job to trigger a pageview in your site. So if you needed accuracy to 1 minute, you'd setup a cron job to execute every one minute, and pull a page from the site. There are any number of ways you could pull a page from your site, but here is one using wget:
+
+wget --quiet --no-cache -O - http://www.your-site.com > /dev/null
+
+That command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.
