@@ -1862,7 +1862,8 @@ def build_search_indexes(
     doc_index: DocIndex,
 ):
     search_items: list[dict] = []
-    hookable_items: list[dict] = []
+    # Optimization: Group hookable methods by class to reduce file size
+    hookable_by_class: dict[str, list[dict]] = {}
 
     for item in classes:
         class_info = item.class_info
@@ -1934,14 +1935,20 @@ def build_search_indexes(
                 entry["hookable"] = True
                 entry["name_public"] = display_name
                 entry["name_internal"] = member.name
-                hookable_items.append(
-                    {
-                        "class": class_info.name,
-                        "name_public": display_name,
-                        "name_internal": member.name,
-                        "file": entry["file"],
-                    }
-                )
+                
+                # Add to grouped hookable index
+                if class_info.name not in hookable_by_class:
+                    hookable_by_class[class_info.name] = []
+                
+                # Check if internal name is just "___" + public name
+                # If so, we can omit it to save space (or keep it for clarity - let's keep it but rename key)
+                hookable_entry = {
+                    "name": display_name,
+                    "internal": member.name,
+                    "file": entry["file"],
+                }
+                hookable_by_class[class_info.name].append(hookable_entry)
+
             search_items.append(entry)
 
     for item in files:
@@ -1984,14 +1991,16 @@ def build_search_indexes(
                 entry["hookable"] = True
                 entry["name_public"] = display_name
                 entry["name_internal"] = member.name
-                hookable_items.append(
-                    {
-                        "class": file_info.name,
-                        "name_public": display_name,
-                        "name_internal": member.name,
-                        "file": entry["file"],
-                    }
-                )
+                
+                if file_info.name not in hookable_by_class:
+                    hookable_by_class[file_info.name] = []
+                
+                hookable_by_class[file_info.name].append({
+                    "name": display_name,
+                    "internal": member.name,
+                    "file": entry["file"],
+                })
+
             search_items.append(entry)
 
     (out_dir / "_search.json").write_text(
@@ -1999,7 +2008,7 @@ def build_search_indexes(
         encoding="utf-8",
     )
     (out_dir / "_hookable.json").write_text(
-        json.dumps({"items": hookable_items}, indent=2, ensure_ascii=False) + "\n",
+        json.dumps({"classes": hookable_by_class}, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
 
