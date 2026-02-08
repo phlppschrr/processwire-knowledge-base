@@ -11,10 +11,20 @@ Currently it does this:
 - Assigns a sort value.
 - Populates any default values for fields.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagesEditor->setupNew($page);
+
+// usage with all arguments
+$result = $pagesEditor->setupNew(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
 
-## Throws
+## Exceptions
 
-- \Exception|WireException|\PDOException if failure occurs while in DB transaction
+- `\Exception|WireException|\PDOException` if failure occurs while in DB transaction

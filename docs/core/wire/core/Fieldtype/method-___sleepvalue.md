@@ -10,6 +10,16 @@ and convert it to an array, int or string (serialized or otherwise).
 
 Returned value must be either an array, number, or string.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fieldtype->___sleepValue($page, $field, $value);
+
+// usage with all arguments
+$string = $fieldtype->___sleepValue(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -18,8 +28,8 @@ Returned value must be either an array, number, or string.
 
 ## Return value
 
-string|int|float|array
+- `string|int|float|array`
 
-## See also
+## See Also
 
 - [Fieldtype::wakeupValue()](method-___wakeupvalue.md)

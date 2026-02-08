@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Return last used PDO connection
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabasePDO->pdoLast();
+~~~~~
+
 ## Return value
 
-\PDO
+- `\PDO`
 
 ## Since
 

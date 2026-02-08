@@ -4,6 +4,13 @@ Source: `wire/modules/Pages/PagesVersions/PageVersionInfo.php`
 
 Set property
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pageVersionInfo->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set property
 
 ## Return value
 
-self
+- `self`

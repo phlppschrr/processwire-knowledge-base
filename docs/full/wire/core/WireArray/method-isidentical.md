@@ -4,6 +4,16 @@ Source: `wire/core/WireArray.php`
 
 Is the given WireArray identical to this one?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireArray->isIdentical($items);
+
+// usage with all arguments
+$bool = $wireArray->isIdentical(WireArray $items, $strict = true);
+~~~~~
+
 ## Arguments
 
 - `$items` `WireArray`
@@ -11,4 +21,4 @@ Is the given WireArray identical to this one?
 
 ## Return value
 
-bool True if identical, false if not.
+- `bool` True if identical, false if not.

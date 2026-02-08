@@ -7,6 +7,16 @@ Restore a page from the trash back to a non-trash state
 Note that this method assumes already have set a new parent, but have not yet saved.
 If you do not set a new parent, then it will restore to the original parent, when possible.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesTrash->restore($page);
+
+// usage with all arguments
+$bool = $pagesTrash->restore(Page $page, $save = true);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,4 +24,4 @@ If you do not set a new parent, then it will restore to the original parent, whe
 
 ## Return value
 
-bool
+- `bool`

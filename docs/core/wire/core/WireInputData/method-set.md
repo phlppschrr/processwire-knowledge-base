@@ -4,6 +4,16 @@ Source: `wire/core/WireInputData.php`
 
 Set a value
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireInputData->set($key, $value);
+
+// usage with all arguments
+$result = $wireInputData->set($key, $value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -12,7 +22,7 @@ Set a value
 
 ## Return value
 
-$this
+- `$this`
 
 ## Since
 

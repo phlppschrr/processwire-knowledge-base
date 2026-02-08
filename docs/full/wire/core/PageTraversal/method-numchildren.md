@@ -7,6 +7,16 @@ Return number of children, optionally with conditions
 Use this over $page->numChildren property when you want to specify a selector or when you want the result to
 include only visible children. See the options for the $selector argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageTraversal->numChildren($page);
+
+// usage with all arguments
+$int = $pageTraversal->numChildren(Page $page, $selector = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -15,4 +25,4 @@ include only visible children. See the options for the $selector argument.
 
 ## Return value
 
-int Number of children
+- `int` Number of children

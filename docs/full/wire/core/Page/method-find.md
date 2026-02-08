@@ -6,9 +6,21 @@ Find descendant pages matching given selector
 
 This is the same as `Pages::find()` except that the results are limited to descendents of this Page.
 
+## Example
+
 ~~~~~
 // Find all unpublished pages underneath the current page
 $items = $page->find("status=unpublished");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $page->find();
+
+// usage with all arguments
+$items = $page->find($selector = '', $options = array());
 ~~~~~
 
 ## Arguments
@@ -18,8 +30,8 @@ $items = $page->find("status=unpublished");
 
 ## Return value
 
-PageArray
+- `PageArray`
 
-## See also
+## See Also
 
 - [Pages::find()](../Pages/method-___find.md)

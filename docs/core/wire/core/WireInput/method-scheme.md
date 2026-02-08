@@ -6,6 +6,13 @@ Return the current access scheme/protocol
 
 Note that this is only useful for http/https, as we don't detect other schemes.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInput->scheme();
+~~~~~
+
 ## Return value
 
-string Return value is either "https" or "http"
+- `string` Return value is either "https" or "http"

@@ -19,9 +19,21 @@ the content to edit is not visible by default. It is recommended that you specif
 `$modal` argument when using the `$markup` argument, which makes it open the editor in a modal window,
 less likely to interfere with your front-end layout.
 
+## Example
+
 ~~~~~
 // retrieve editable value if field_name is editable, or just value if not
 $value = $page->edit('field_name');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $page->___edit();
+
+// usage with all arguments
+$string = $page->___edit($key = null, $markup = null, $modal = null);
 ~~~~~
 
 ## Arguments
@@ -32,9 +44,9 @@ $value = $page->edit('field_name');
 
 ## Return value
 
-string|bool|mixed
+- `string|bool|mixed`
 
-## See also
+## See Also
 
 - [https://processwire.com/docs/front-end/](https://processwire.com/docs/front-end/)
 

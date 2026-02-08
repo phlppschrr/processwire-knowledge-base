@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php
 
 Merge two setting values into one that combines them
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldTinyMCESettings->mergeSetting($value, $addValue);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array|mixed`
@@ -11,4 +18,4 @@ Merge two setting values into one that combines them
 
 ## Return value
 
-string|array|mixed
+- `string|array|mixed`

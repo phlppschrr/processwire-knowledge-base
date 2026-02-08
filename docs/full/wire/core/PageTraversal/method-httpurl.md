@@ -12,9 +12,21 @@ Returns the URL to the page, including scheme and hostname
   This ensures local links will always point to pages with the proper scheme. For other cases, it may
   be preferable to use `$page->url()` since it produces shorter output.
 
+## Example
+
 ~~~~~
 // Generating a link to this page using httpUrl
 echo "<a href='$page->httpUrl'>$page->title</a>";
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageTraversal->httpUrl($page);
+
+// usage with all arguments
+$string = $pageTraversal->httpUrl(Page $page, $options = array());
 ~~~~~
 
 ## Arguments
@@ -24,9 +36,9 @@ echo "<a href='$page->httpUrl'>$page->title</a>";
 
 ## Return value
 
-string Returns full URL to page, for example: `https://processwire.com/about/`
+- `string` Returns full URL to page, for example: `https://processwire.com/about/`
 
-## See also
+## See Also
 
 - [Page::url()](../Page/method-url.md)
 - [Page::localHttpUrl()](../Page/index.md)

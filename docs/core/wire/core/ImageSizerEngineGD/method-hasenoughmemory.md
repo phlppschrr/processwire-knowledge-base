@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Additional functionality on top of existing checkMemoryForImage function for the flip/rotate actions
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngineGD->hasEnoughMemory();
+
+// usage with all arguments
+$bool = $imageSizerEngineGD->hasEnoughMemory($filename = '', $double = true, $factor = 1, $action = 'action', $throwIfNot = false);
+~~~~~
+
 ## Arguments
 
 - `$filename` (optional) `string` Filename to check. Default is whatever was set to this ImageSizer.
@@ -14,8 +24,8 @@ Additional functionality on top of existing checkMemoryForImage function for the
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

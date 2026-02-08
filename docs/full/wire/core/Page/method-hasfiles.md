@@ -6,11 +6,18 @@ Does the page have a files path and one or more files present in it?
 
 This will only check if files exist, it will not create the directory if it’s not already present.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->hasFiles();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - hasFilesPath()
 - filesPath()

@@ -4,6 +4,16 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Get all fields that can support files
 
+## Usage
+
+~~~~~
+// basic usage
+$field = $pagesVersionsFiles->getFileFields($page);
+
+// usage with all arguments
+$field = $pagesVersionsFiles->getFileFields(Page $page, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Get all fields that can support files
 
 ## Return value
 
-Field[] Returned fields array is indexed by field name
+- `Field[]` Returned fields array is indexed by field name

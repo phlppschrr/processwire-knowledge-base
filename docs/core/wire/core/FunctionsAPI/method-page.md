@@ -25,6 +25,16 @@ page()->set('headline', 'My headline'); // regular syntax
 page('headline', 'My headline'); // shortcut syntax
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $functionsAPI->page();
+
+// usage with all arguments
+$page = $functionsAPI->page($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Optional property to get or set
@@ -32,8 +42,8 @@ page('headline', 'My headline'); // shortcut syntax
 
 ## Return value
 
-Page|mixed
+- `Page|mixed`
 
-## See also
+## See Also
 
 - Page

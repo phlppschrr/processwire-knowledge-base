@@ -4,6 +4,16 @@ Source: `wire/core/ImageInspector.php`
 
 parse Image and return information
 
+## Usage
+
+~~~~~
+// basic usage
+$imageInspector->inspect();
+
+// usage with all arguments
+$imageInspector->inspect($filename = '', $parseAppmarker = false);
+~~~~~
+
 ## Arguments
 
 - `$filename` (optional) `string` the file we want to inspect
@@ -11,4 +21,4 @@ parse Image and return information
 
 ## Return value
 
-null|false|array
+- `null|false|array`

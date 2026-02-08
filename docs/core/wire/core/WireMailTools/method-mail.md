@@ -13,6 +13,9 @@ PHP `mail(…)` call with `$mail->mail(…)`.
 But unlike PHP’s mail function, this one can also send HTML (or multipart) emails if you provide
 an `$options` array for the `$message` argument (rather than a string). See the options array for
 the `$mail->send()` method for details.
+
+## Example
+
 ~~~~~
 // 1. Basic PHP mail() style usage
 $mail->mail('ryan@processwire.com', 'Subject', 'Message body');
@@ -28,6 +31,16 @@ $mail->mail('ryan@processwire.com', 'Subject', [
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireMailTools->mail($to, $subject, $message);
+
+// usage with all arguments
+$bool = $wireMailTools->mail($to, $subject, $message, $headers = array());
+~~~~~
+
 ## Arguments
 
 - `$to` `string|array` Email address TO. For multiple, specify CSV string or array.
@@ -37,4 +50,4 @@ $mail->mail('ryan@processwire.com', 'Subject', [
 
 ## Return value
 
-bool True on success, false on fail.
+- `bool` True on success, false on fail.

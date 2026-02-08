@@ -4,6 +4,8 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Does the given column exist in given table?
 
+## Example
+
 ~~~~~
 // Standard usage:
 if($database->columnExists('pages', 'name')) {
@@ -23,6 +25,16 @@ if($exists) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->columnExists($table);
+
+// usage with all arguments
+$bool = $wireDatabasePDO->columnExists($table, $column = '', $getInfo = false);
+~~~~~
+
 ## Arguments
 
 - `$table` `string` Specify table name (or table and column name in format "table.column").
@@ -31,11 +43,11 @@ if($exists) {
 
 ## Return value
 
-bool|array
+- `bool|array`
 
-## Throws
+## Exceptions
 
-- WireDatabaseException
+- `WireDatabaseException`
 
 ## Since
 

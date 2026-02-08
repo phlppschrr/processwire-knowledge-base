@@ -4,6 +4,16 @@ Source: `wire/core/WireMail.php`
 
 Set the email 'from' address and optionally name
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMail->from($email);
+
+// usage with all arguments
+$result = $wireMail->from($email, $name = null);
+~~~~~
+
 ## Arguments
 
 - `$email` `string` Must be a single email address or "User Name <user@example.com>" string.
@@ -11,8 +21,8 @@ Set the email 'from' address and optionally name
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException if provided email was invalid or in blacklist
+- `WireException` if provided email was invalid or in blacklist

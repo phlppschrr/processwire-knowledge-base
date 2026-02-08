@@ -8,12 +8,24 @@ This method is primarily here to support predefined sanitizers in strings, like 
 be specified in settings for a module or field. For regular use, you probably want to call the
 sanitizer methods directly rather than through this method.
 
+## Example
+
 ~~~~~
 // sanitize with text then entities sanitizers
 $value = $sanitizer->sanitize($value, 'text,entities');
 
 // numbers appended to text sanitizers imply max length
 $value = $sanitizer->sanitize($value, 'text128,entities');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->sanitize($value);
+
+// usage with all arguments
+$string = $sanitizer->sanitize($value, $method = 'text');
 ~~~~~
 
 ## Arguments
@@ -23,7 +35,7 @@ $value = $sanitizer->sanitize($value, 'text128,entities');
 
 ## Return value
 
-string|int|array|float|null
+- `string|int|array|float|null`
 
 ## Since
 

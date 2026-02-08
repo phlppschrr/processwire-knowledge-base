@@ -4,9 +4,16 @@ Source: `wire/core/Notice.php`
 
 Is this notice viewable at runtime?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $notice->viewable();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

@@ -6,6 +6,16 @@ Same as include() method except that file will not be executed if it as previous
 
 See the `WireFileTools::include()` method for details, arguments and options.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->includeOnce($filename);
+
+// usage with all arguments
+$bool = $wireFileTools->includeOnce($filename, array $vars = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`
@@ -14,9 +24,9 @@ See the `WireFileTools::include()` method for details, arguments and options.
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [WireFileTools::include()](method-___include.md)
 

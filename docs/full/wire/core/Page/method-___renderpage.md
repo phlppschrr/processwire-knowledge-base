@@ -14,6 +14,8 @@ is a gateway to this method or the `renderField()` method, and this one is not. 
 This method is preferable to `render()` when it comes hooks or overriding in custom page classes,
 as you don't need to figure out anything about the arguments.
 
+## Example
+
 ~~~~~
 // regular page render call
 echo $page->renderPage();
@@ -33,17 +35,27 @@ $wire->addHookAfter('Page::renderPage', function(HookEvent $event) {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $page->___renderPage();
+
+// usage with all arguments
+$string = $page->___renderPage(array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` Custom variables to pass to template file, and/or options as described below: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. Absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/. - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
 
 ## Return value
 
-string|mixed Renders the rendered output
+- `string|mixed` Renders the rendered output
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

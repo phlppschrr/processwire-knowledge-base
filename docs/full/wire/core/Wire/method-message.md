@@ -6,12 +6,24 @@ Record an informational or “success” message in the system-wide notices.
 
 This method automatically identifies the message as coming from this class.
 
+## Example
+
 ~~~~~
 $this->message("This is the notice text");
 $this->message("This notice is also logged", true);
 $this->message("This notice is only shown in debug mode", Notice::debug);
 $this->message("This notice allows <em>markup</em>", Notice::allowMarkup);
 $this->message("Notice using multiple flags", Notice::debug | Notice::logOnly);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->message($text);
+
+// usage with all arguments
+$result = $wire->message($text, $flags = 0);
 ~~~~~
 
 ## Arguments
@@ -21,9 +33,9 @@ $this->message("Notice using multiple flags", Notice::debug | Notice::logOnly);
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [Wire::messages()](method-messages.md)
 - [Wire::warning()](method-warning.md)

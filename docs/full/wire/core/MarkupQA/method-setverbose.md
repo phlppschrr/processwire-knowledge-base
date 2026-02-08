@@ -15,6 +15,13 @@ $this->settings[$key] = $value; // set
 return $value;
 }
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $markupQA->setVerbose($verbose);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Setting name to get or set, or omit to get all settings
@@ -22,4 +29,4 @@ return $value;
 
 ## Return value
 
-string|array|int|null|$this Returns value of $key
+- `string|array|int|null|$this` Returns value of $key

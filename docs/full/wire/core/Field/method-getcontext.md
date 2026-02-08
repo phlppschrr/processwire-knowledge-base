@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Get this field in context of a Page/Template
 
+## Usage
+
+~~~~~
+// basic usage
+$field = $field->getContext($for);
+
+// usage with all arguments
+$field = $field->getContext($for, $namespace = '', $has = false);
+~~~~~
+
 ## Arguments
 
 - `$for` `Page|Template|Fieldgroup|string` Specify Page, Template, or template name string
@@ -12,9 +22,9 @@ Get this field in context of a Page/Template
 
 ## Return value
 
-Field|bool
+- `Field|bool`
 
-## See also
+## See Also
 
 - [Fieldgroup::getFieldContext()](../Fieldgroup/method-getfieldcontext.md)
 - [Field::hasContext()](method-hascontext.md)

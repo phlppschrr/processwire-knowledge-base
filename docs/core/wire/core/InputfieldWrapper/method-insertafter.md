@@ -6,6 +6,8 @@ Insert one Inputfield after one that’s already there.
 
 Note: string or array values for either argument require 3.0.196+.
 
+## Example
+
 ~~~~~
 // example 1: Get existing Inputfields, insert last_name after first_name
 $lastName = $form->getByName('last_name');
@@ -19,6 +21,13 @@ $form->insertBefore('last_name', 'first_name');
 $form->insertAfter([ 'type' => 'text', 'name' => 'last_name' ], 'first_name');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldWrapper->insertAfter($item, $existingItem);
+~~~~~
+
 ## Arguments
 
 - `$item` `Inputfield|array|string` Item to insert
@@ -26,4 +35,4 @@ $form->insertAfter([ 'type' => 'text', 'name' => 'last_name' ], 'first_name');
 
 ## Return value
 
-$this
+- `$this`

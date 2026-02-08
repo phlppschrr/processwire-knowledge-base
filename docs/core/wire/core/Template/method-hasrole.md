@@ -4,6 +4,16 @@ Source: `wire/core/Template.php`
 
 Does this template have the given Role?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $template->hasRole($role);
+
+// usage with all arguments
+$bool = $template->hasRole($role, $type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$role` `string|Role|Page` Name of Role or Role object.
@@ -11,4 +21,4 @@ Does this template have the given Role?
 
 ## Return value
 
-bool True if template has the role, false if not
+- `bool` True if template has the role, false if not

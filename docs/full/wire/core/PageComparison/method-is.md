@@ -4,6 +4,16 @@ Source: `wire/core/PageComparison.php`
 
 Is this page of the given type? (status, template, etc.)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageComparison->is($page, $status);
+
+// usage with all arguments
+$bool = $pageComparison->is(Page $page, $status);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Is this page of the given type? (status, template, etc.)
 
 ## Return value
 
-bool
+- `bool`

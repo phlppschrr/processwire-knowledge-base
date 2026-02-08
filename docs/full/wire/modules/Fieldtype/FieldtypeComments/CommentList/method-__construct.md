@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Construct the CommentList
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $commentList->__construct($comments);
+
+// usage with all arguments
+$result = $commentList->__construct(CommentArray $comments, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$comments` `CommentArray`

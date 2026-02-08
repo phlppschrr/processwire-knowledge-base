@@ -11,6 +11,8 @@ Alternative method for configuration that allows for array definition
 
 - See comments for `InputfieldWrapper::importArray()` for example of array definition.
 
+## Example
+
 ~~~~~
 // Example implementation
 public function ___getConfigArray() {
@@ -24,6 +26,13 @@ public function ___getConfigArray() {
 );
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfield->___getConfigArray();
+~~~~~
+
 ## Return value
 
-array
+- `array`

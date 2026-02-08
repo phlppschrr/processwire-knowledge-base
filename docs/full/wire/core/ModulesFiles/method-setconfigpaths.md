@@ -4,6 +4,13 @@ Source: `wire/core/ModulesFiles.php`
 
 Setup entries in config->urls and config->paths for the given module
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $modulesFiles->setConfigPaths($moduleName, $path);
+~~~~~
+
 ## Arguments
 
 - `$moduleName` `string`

@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Initiates a transaction
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->beginTransaction();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Details
 

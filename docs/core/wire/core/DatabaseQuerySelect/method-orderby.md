@@ -4,6 +4,16 @@ Source: `wire/core/DatabaseQuerySelect.php`
 
 Add an ORDER BY section to the query
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $databaseQuerySelect->orderby($value);
+
+// usage with all arguments
+$result = $databaseQuerySelect->orderby($value, $prepend = false);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array`
@@ -11,4 +21,4 @@ Add an ORDER BY section to the query
 
 ## Return value
 
-$this
+- `$this`

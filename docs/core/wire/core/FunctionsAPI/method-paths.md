@@ -6,10 +6,22 @@ Get one of any named server disk paths (shortcut to the $config API variable “
 
 Paths always have a trailing slash.
 
+## Example
+
 ~~~~~
 // you can use either syntax below, where “templates” can be the name for any system URL
 $path = paths()->templates;
 $path = paths('templates');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$functionsAPI->paths();
+
+// usage with all arguments
+$functionsAPI->paths($key = '');
 ~~~~~
 
 ## Arguments
@@ -18,8 +30,8 @@ $path = paths('templates');
 
 ## Return value
 
-null|Paths|string
+- `null|Paths|string`
 
-## See also
+## See Also
 
 - [Config::paths()](../Config/method-paths.md)

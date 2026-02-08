@@ -4,17 +4,24 @@ Source: `wire/core/PagesLoader.php`
 
 Load total number of children from DB for given page
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesLoader->getNumChildren($page);
+~~~~~
+
 ## Arguments
 
 - `$page` `int|Page` Page or Page ID
 
 ## Return value
 
-int
+- `int`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

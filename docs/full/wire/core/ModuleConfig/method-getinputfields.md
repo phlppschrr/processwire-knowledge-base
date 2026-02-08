@@ -12,6 +12,13 @@ Descending classes should call this method at the top of their getInputfields() 
 Use this method only if defining Inputfield objects programatically. If definining via
 an array then you should not implement this method.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldWrapper = $moduleConfig->getInputfields();
+~~~~~
+
 ## Return value
 
-InputfieldWrapper
+- `InputfieldWrapper`

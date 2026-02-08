@@ -7,6 +7,16 @@ Convert a string containing markup or entities to be a single line of plain text
 This is the same as the `$sanitizer->markupToText()` method except that the return
 value is always just a single line.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->markupToLine($value);
+
+// usage with all arguments
+$string = $sanitizer->markupToLine($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Value to convert
@@ -14,4 +24,4 @@ value is always just a single line.
 
 ## Return value
 
-string Converted string of text on a single line
+- `string` Converted string of text on a single line

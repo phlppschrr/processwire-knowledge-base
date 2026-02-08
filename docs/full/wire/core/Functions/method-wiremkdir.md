@@ -6,6 +6,16 @@ Create a directory (optionally recursively) that is writable to ProcessWire and 
 
 This is procedural version of the `$files->mkdir()` method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireMkdir($path);
+
+// usage with all arguments
+$bool = $functions->wireMkdir($path, $recursive = false, $chmod = null);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
@@ -14,8 +24,8 @@ This is procedural version of the `$files->mkdir()` method.
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [WireFileTools::mkdir()](../WireFileTools/method-mkdir.md)

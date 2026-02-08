@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngine.php`
 
 Get integer value within given range
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $imageSizerEngine->getIntegerValue($n, $min, $max);
+~~~~~
+
 ## Arguments
 
 - `$n` `int` Number to require in given range
@@ -12,4 +19,4 @@ Get integer value within given range
 
 ## Return value
 
-int
+- `int`

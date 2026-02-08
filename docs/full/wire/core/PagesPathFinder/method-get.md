@@ -17,9 +17,13 @@ Please access this method from `$pages->pathFinder()->get('…');`
 Below is an example when given a `$path` argument of `/en/foo/bar/page3`
 on a site that has default language homepage segment of `en`, a page living
 at `/foo/` that accepts URL segment `bar` and has pagination enabled;
+
+## Example
+
 ~~~~~
 $array = $pages->pathFinder()->get('/en/foo/bar/page3');
 ~~~~~
+
 ~~~~~
 [
   'request' => '/en/foo/bar/page3',
@@ -72,6 +76,16 @@ $array = $pages->pathFinder()->get('/en/foo/bar/page3');
 ]
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesPathFinder->get($path);
+
+// usage with all arguments
+$array = $pagesPathFinder->get($path, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string` Page path optionally including URL segments, language prefix, pagination number
@@ -79,8 +93,8 @@ $array = $pages->pathFinder()->get('/en/foo/bar/page3');
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [PagesPathFinder::getPage()](method-getpage.md)

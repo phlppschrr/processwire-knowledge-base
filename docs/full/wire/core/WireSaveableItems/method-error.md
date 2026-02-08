@@ -4,6 +4,16 @@ Source: `wire/core/WireSaveableItems.php`
 
 Record an error
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireSaveableItems->error($text);
+
+// usage with all arguments
+$wire = $wireSaveableItems->error($text, $flags = 0);
+~~~~~
+
 ## Arguments
 
 - `$text` `string`
@@ -11,4 +21,4 @@ Record an error
 
 ## Return value
 
-Wire|WireSaveableItems
+- `Wire|WireSaveableItems`

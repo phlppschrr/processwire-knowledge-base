@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Get or set class(es)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->classes($name);
+
+// usage with all arguments
+$string = $commentForm->classes($name, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,7 +21,7 @@ Get or set class(es)
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

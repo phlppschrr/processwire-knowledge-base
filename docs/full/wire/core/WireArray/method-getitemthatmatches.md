@@ -6,6 +6,13 @@ Return the first item in this WireArray having a property named $key with $value
 
 Used internally by get() and has() methods.
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireArray->getItemThatMatches($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Property to match.
@@ -13,4 +20,4 @@ Used internally by get() and has() methods.
 
 ## Return value
 
-Wire|null
+- `Wire|null`

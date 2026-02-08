@@ -4,13 +4,20 @@ Source: `wire/core/Field.php`
 
 Add one or more tags
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $field->addTag($tag);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string`
 
 ## Return value
 
-array Returns current tag list
+- `array` Returns current tag list
 
 ## Since
 

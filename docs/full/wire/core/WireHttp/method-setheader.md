@@ -4,6 +4,13 @@ Source: `wire/core/WireHttp.php`
 
 Send an individual request header to send with GET/POST/etc. request
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireHttp->setHeader($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Header name
@@ -11,4 +18,4 @@ Send an individual request header to send with GET/POST/etc. request
 
 ## Return value
 
-$this
+- `$this`

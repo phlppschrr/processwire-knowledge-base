@@ -4,11 +4,19 @@ Source: `wire/core/User.php`
 
 Does this user have the given Role?
 
+## Example
 
 ~~~~~
 if($user->hasRole('editor')) {
   // user has the editor role
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $user->hasRole($role);
 ~~~~~
 
 ## Arguments
@@ -17,4 +25,4 @@ if($user->hasRole('editor')) {
 
 ## Return value
 
-bool
+- `bool`

@@ -21,17 +21,28 @@ The following examples would go in /site/ready.php.
 Let’s say we created a symbolic link in our web root `/tiedostot/` (Finnish for “files”) that points to /site/assets/files/.
 We want all of our file URLs to appear as “/tiedostot/1234/img.jpg” rather than “/site/assets/files/1234/img.jpg”. We would
 change the URL for ProcessWire’s `$config->urls->files` to point there like this example below. (Please also see warning above)
+In this next example, we are changing all of our file URLs on the front-end to point a cookieless subdomain that maps all
+requests to the root path of https://files.domain.com to /site/assets/files/. The example works for CDNs as well.
+
+## Example
+
 ~~~~~
 if($page->template != 'admin') {
   $config->setUrl('files', 'tiedostot/');
 }
 ~~~~~
-In this next example, we are changing all of our file URLs on the front-end to point a cookieless subdomain that maps all
-requests to the root path of https://files.domain.com to /site/assets/files/. The example works for CDNs as well.
+
 ~~~~~
 if($page->template != 'admin) {
   $config->setUrl('files', 'https://files.domain.com/');
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $config->setUrl($for, $url);
 ~~~~~
 
 ## Arguments
@@ -41,11 +52,11 @@ if($page->template != 'admin) {
 
 ## Return value
 
-self
+- `self`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

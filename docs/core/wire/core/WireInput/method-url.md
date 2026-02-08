@@ -11,11 +11,23 @@ Get the URL that initiated the current request, including URL segments and page 
 - WARNING: if query string requested, it can contain undefined/unsanitized user input. If you use it for output
   make sure that you entity encode first (by running through `$sanitizer->entities()` for instance).
 
+## Example
+
 ~~~~~~
 $url = $input->url();
 $url = $sanitizer->entities($url); // entity encode for output
 echo "You accessed this page at: $url";
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInput->url();
+
+// usage with all arguments
+$string = $wireInput->url($options = array());
+~~~~~
 
 ## Arguments
 
@@ -23,9 +35,9 @@ echo "You accessed this page at: $url";
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [WireInput::httpUrl()](method-httpurl.md)
 - [Page::url()](../Page/method-url.md)

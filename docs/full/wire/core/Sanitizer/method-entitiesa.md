@@ -12,6 +12,16 @@ This is similar to the existing entities() method with the following differences
 - Objects that do not implement __toString() are converted to a class name.
 - If given an int, float, bool, array or string, that is also the type returned.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->entitiesA($value);
+
+// usage with all arguments
+$array = $sanitizer->entitiesA($value, $flags = ENT_QUOTES, $encoding = 'UTF-8', $doubleEncode = true);
+~~~~~
+
 ## Arguments
 
 - `$value` `array|string|int|float|object|bool`
@@ -21,9 +31,9 @@ This is similar to the existing entities() method with the following differences
 
 ## Return value
 
-array|string|int|float|bool
+- `array|string|int|float|bool`
 
-## See also
+## See Also
 
 - [Sanitizer::entitiesA1()](method-entitiesa1.md)
 - [Sanitizer::entities()](method-entities.md)

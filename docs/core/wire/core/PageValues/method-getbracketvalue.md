@@ -4,11 +4,24 @@ Source: `wire/core/PageValues.php`
 
 Get value that ends with square brackets to get iterable value, filtered value or property value
 
+Note: When requesting an iterable value, this method will return an empty array in cases where
+the Page::get() method would return null.
+
+## Example
+
 ~~~~~
 $iterableValue = $page->get('field_name[]');
 ~~~~~
-Note: When requesting an iterable value, this method will return an empty array in cases where
-the Page::get() method would return null.
+
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageValues->getBracketValue($page, $key);
+
+// usage with all arguments
+$array = $pageValues->getBracketValue(Page $page, $key, $value = null);
+~~~~~
 
 ## Arguments
 
@@ -18,4 +31,4 @@ the Page::get() method would return null.
 
 ## Return value
 
-array|mixed|Page|PageArray|Wire|WireArray|WireData|string|\Traversable
+- `array|mixed|Page|PageArray|Wire|WireArray|WireData|string|\Traversable`

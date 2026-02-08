@@ -4,6 +4,16 @@ Source: `wire/core/Page.php`
 
 Save only the given named fields for this page
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $page->saveFields($fields);
+
+// usage with all arguments
+$array = $page->saveFields($fields, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$fields` `array|string` Array of field name(s) or string (CSV or space separated)
@@ -11,13 +21,13 @@ Save only the given named fields for this page
 
 ## Return value
 
-array Names of fields that were saved
+- `array` Names of fields that were saved
 
-## Throws
+## Exceptions
 
-- WireException on database error
+- `WireException` on database error
 
-## See also
+## See Also
 
 - [Page::save()](method-save.md)
 

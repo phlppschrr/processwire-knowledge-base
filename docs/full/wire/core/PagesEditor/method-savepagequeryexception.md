@@ -12,6 +12,16 @@ that trigger duplicate-entry exceptions.
 Example of actual exception text, for reference:
 Integrity constraint violation: 1062 Duplicate entry 'background-3552' for key 'name3894_parent_id'
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->savePageQueryException($page, $query, $exception, $options);
+
+// usage with all arguments
+$bool = $pagesEditor->savePageQueryException(Page $page, $query, $exception, array $options);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -21,4 +31,4 @@ Integrity constraint violation: 1062 Duplicate entry 'background-3552' for key '
 
 ## Return value
 
-bool True if it should give $query another shot, false if not
+- `bool` True if it should give $query another shot, false if not

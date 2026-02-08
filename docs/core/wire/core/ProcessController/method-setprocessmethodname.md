@@ -8,6 +8,13 @@ It is only necessary to call this if you want to override the default behavior.
 The default behavior is to execute a method called "execute()" OR "executeSegment()" where "Segment" is
 the last URL segment in the request URL.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $processController->setProcessMethodName($processMethod);
+~~~~~
+
 ## Arguments
 
 - `$processMethod` `string`

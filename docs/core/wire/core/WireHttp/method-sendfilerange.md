@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Handle an HTTP_RANGE request for sending of partial file (called by sendFile method)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->sendFileRange($filename);
+
+// usage with all arguments
+$bool = $wireHttp->sendFileRange($filename, $rangeStr = '');
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`
@@ -11,4 +21,4 @@ Handle an HTTP_RANGE request for sending of partial file (called by sendFile met
 
 ## Return value
 
-bool|int Returns bytes sent, null if error in request or range, or false if request should be handled by sendFile() instead
+- `bool|int` Returns bytes sent, null if error in request or range, or false if request should be handled by sendFile() instead

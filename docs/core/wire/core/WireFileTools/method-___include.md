@@ -14,6 +14,16 @@ This is the same as PHP’s `include()` function except for the following:
 Note this function produces direct output. To retrieve output as a return value, use the
 `$files->render()` function instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->___include($filename);
+
+// usage with all arguments
+$bool = $wireFileTools->___include($filename, array $vars = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Filename to include
@@ -22,8 +32,8 @@ Note this function produces direct output. To retrieve output as a return value,
 
 ## Return value
 
-bool Always returns true
+- `bool` Always returns true
 
-## Throws
+## Exceptions
 
-- WireException if file doesn’t exist or is not allowed
+- `WireException` if file doesn’t exist or is not allowed

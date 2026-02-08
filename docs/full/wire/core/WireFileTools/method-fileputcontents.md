@@ -7,6 +7,16 @@ Create (overwrite or append) a file, put the $contents in it, and adjust permiss
 This is the same as PHP’s `file_put_contents()` except that it’s preferable to use this in
 ProcessWire because it adjusts the file permissions configured with `$config->chmodFile`.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireFileTools->filePutContents($filename, $contents);
+
+// usage with all arguments
+$int = $wireFileTools->filePutContents($filename, $contents, $flags = 0);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Filename to write to
@@ -15,12 +25,12 @@ ProcessWire because it adjusts the file permissions configured with `$config->ch
 
 ## Return value
 
-int|bool Number of bytes written or boolean false on fail
+- `int|bool` Number of bytes written or boolean false on fail
 
-## Throws
+## Exceptions
 
-- WireException if given invalid $filename (since 3.0.118)
+- `WireException` if given invalid $filename (since 3.0.118)
 
-## See also
+## See Also
 
 - [WireFileTools::fileGetContents()](method-filegetcontents.md)

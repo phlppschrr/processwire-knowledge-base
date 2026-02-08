@@ -8,6 +8,8 @@ If no page “name” is specified, one will be automatically assigned.
 
 For an alternate interface for adding new pages, see the `$pages->new()` method.
 
+## Example
+
 ~~~~~
 // Add new page using 'skyscraper' template into Atlanta
 $building = $pages->add('skyscraper', '/skyscrapers/atlanta/');
@@ -24,6 +26,16 @@ $building = $pages->add('skyscraper', '/skyscrapers/atlanta/', [
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pages->___add($template, $parent);
+
+// usage with all arguments
+$page = $pages->___add($template, $parent, $name = '', array $values = array());
+~~~~~
+
 ## Arguments
 
 - `$template` `string|Template` Template name or Template object
@@ -33,13 +45,13 @@ $building = $pages->add('skyscraper', '/skyscrapers/atlanta/', [
 
 ## Return value
 
-Page New page ready to populate. Note that this page has output formatting off.
+- `Page` New page ready to populate. Note that this page has output formatting off.
 
-## Throws
+## Exceptions
 
-- WireException When some criteria prevents the page from being saved.
+- `WireException` When some criteria prevents the page from being saved.
 
-## See also
+## See Also
 
 - [Pages::new()](method-___new.md)
 - [Pages::newPage()](method-newpage.md)

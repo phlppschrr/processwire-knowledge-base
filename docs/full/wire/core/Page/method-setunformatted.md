@@ -12,12 +12,21 @@ field types and not others, just depending on the case—this method is safe to 
 Make sure you do not use this to set an already formatted value to a Page (like some text that has been
 entity encoded). This method skips over some of the checks that might otherwise flag the page as corrupted.
 
+## Example
+
 ~~~~~
 // good usage
 $page->setUnformatted('title', 'This & That');
 
 // bad usage
 $page->setUnformatted('title', 'This &amp; That');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->setUnformatted($key, $value);
 ~~~~~
 
 ## Arguments
@@ -27,13 +36,13 @@ $page->setUnformatted('title', 'This &amp; That');
 
 ## Return value
 
-self
+- `self`
 
-## Throws
+## Exceptions
 
-- WireException if given an object value that indicates it is already formatted.
+- `WireException` if given an object value that indicates it is already formatted.
 
-## See also
+## See Also
 
 - [Page::getUnformatted()](method-getunformatted.md)
 - [Page::of()](method-of.md)

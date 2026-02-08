@@ -4,6 +4,16 @@ Source: `wire/core/WireInputData.php`
 
 Get a value
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInputData->get($key);
+
+// usage with all arguments
+$string = $wireInputData->get($key, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,7 +21,7 @@ Get a value
 
 ## Return value
 
-string|int|float|array|null $value
+- `string|int|float|array|null` $value
 
 ## Since
 

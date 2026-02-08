@@ -4,6 +4,16 @@ Source: `wire/core/PagesType.php`
 
 Hook called after a page of this type is successfully saved
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagesType->___saved($page);
+
+// usage with all arguments
+$result = $pagesType->___saved(Page $page, array $changes = array(), $values = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` The page that was saved

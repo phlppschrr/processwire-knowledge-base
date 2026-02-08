@@ -4,10 +4,17 @@ Source: `wire/core/Pagefile.php`
 
 Return the web accessible URL (with scheme and hostname) to this Pagefile.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagefile->___httpUrl();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Pagefile::url()](method-url.md)

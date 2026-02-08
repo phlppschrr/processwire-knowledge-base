@@ -6,6 +6,16 @@ Rename a file or directory and update permissions
 
 Note that this method will fail if pathname given by $newName argument already exists.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->rename($oldName, $newName);
+
+// usage with all arguments
+$bool = $wireFileTools->rename($oldName, $newName, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$oldName` `string` Old pathname, must be full disk path.
@@ -14,11 +24,11 @@ Note that this method will fail if pathname given by $newName argument already e
 
 ## Return value
 
-bool True on success, false on fail (or WireException if throw option specified).
+- `bool` True on success, false on fail (or WireException if throw option specified).
 
-## Throws
+## Exceptions
 
-- WireException If error occurs and $throw argument was true.
+- `WireException` If error occurs and $throw argument was true.
 
 ## Since
 

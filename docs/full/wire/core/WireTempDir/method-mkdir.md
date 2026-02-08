@@ -4,6 +4,16 @@ Source: `wire/core/WireTempDir.php`
 
 Create a temporary directory
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireTempDir->mkdir($dir);
+
+// usage with all arguments
+$bool = $wireTempDir->mkdir($dir, $recursive = false);
+~~~~~
+
 ## Arguments
 
 - `$dir` `string`
@@ -11,4 +21,4 @@ Create a temporary directory
 
 ## Return value
 
-bool
+- `bool`

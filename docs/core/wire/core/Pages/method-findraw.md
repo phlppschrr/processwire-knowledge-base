@@ -19,6 +19,15 @@ containing all of each page raw field and property values indexed by name…
 where you want to retrieve specific things without having to load the entire page
 (or its data). Below are a few examples of how you can do this.
 
+
+In 3.0.193 the following additional options were added for the `$field` argument:
+
+ - Specify `parent.field_name` or `parent.parent.field_name`, etc. to return values from parent(s).
+ - Specify `references` or `references.field_name`, etc. to also return values from pages referencing found pages.
+ - Specify `meta` or `meta.name` to also return values from page meta data.
+
+## Example
+
 ~~~~~
 // If you provide a string (field name) for `$field`, then it will return an
 // array with the values of the `data` column of that field. The `$field` can
@@ -67,11 +76,15 @@ $a = $pages->findRaw("template=blog, entities=title|summary");
 $a = $pages->findRaw("template=blog, options=objects|entities");
 ~~~~~
 
-In 3.0.193 the following additional options were added for the `$field` argument:
+## Usage
 
- - Specify `parent.field_name` or `parent.parent.field_name`, etc. to return values from parent(s).
- - Specify `references` or `references.field_name`, etc. to also return values from pages referencing found pages.
- - Specify `meta` or `meta.name` to also return values from page meta data.
+~~~~~
+// basic usage
+$array = $pages->findRaw($selector);
+
+// usage with all arguments
+$array = $pages->findRaw($selector, $field = '', $options = array());
+~~~~~
 
 ## Arguments
 
@@ -81,7 +94,7 @@ In 3.0.193 the following additional options were added for the `$field` argument
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

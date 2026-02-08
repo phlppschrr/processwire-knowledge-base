@@ -9,6 +9,8 @@ Get a session variable
   But if using namespaces we recommended using the dedicated getFor() and setFor() methods instead.
 - You can also get or set non-namespaced session values directly (see examples).
 
+## Example
+
 ~~~~~
 // Set value "Bob" to session variable named "firstName"
 $session->set('firstName', 'Bob');
@@ -19,10 +21,21 @@ $firstName = $session->get('firstName');
 // outputs: Hello Bob
 echo "Hello $firstName";
 ~~~~~
+
 ~~~~~
 // Setting and getting a session value directly
 $session->firstName = 'Bob';
 $firstName = $session->firstName;
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->get($key);
+
+// usage with all arguments
+$result = $session->get($key, $_key = null);
 ~~~~~
 
 ## Arguments
@@ -32,4 +45,4 @@ $firstName = $session->firstName;
 
 ## Return value
 
-mixed Returns value of seession variable, or NULL if not found.
+- `mixed` Returns value of seession variable, or NULL if not found.

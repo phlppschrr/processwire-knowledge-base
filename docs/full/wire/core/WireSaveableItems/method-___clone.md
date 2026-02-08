@@ -6,6 +6,16 @@ Create and return a cloned copy of this item
 
 If no name is specified and the new item uses a 'name' field, it will contain a number at the end to make it unique
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireSaveableItems->___clone($item);
+
+// usage with all arguments
+$bool = $wireSaveableItems->___clone(Saveable $item, $name = '');
+~~~~~
+
 ## Arguments
 
 - `$item` `Saveable` Item to clone
@@ -13,4 +23,4 @@ If no name is specified and the new item uses a 'name' field, it will contain a 
 
 ## Return value
 
-bool|Saveable $item Returns the new clone on success, or false on failure
+- `bool|Saveable` $item Returns the new clone on success, or false on failure

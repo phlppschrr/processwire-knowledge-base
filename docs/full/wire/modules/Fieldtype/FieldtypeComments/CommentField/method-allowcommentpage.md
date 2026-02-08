@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Allow given comment to live on given page?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $commentField->allowCommentPage($comment, $page);
+
+// usage with all arguments
+$bool = $commentField->allowCommentPage(Comment $comment, Page $page, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`
@@ -12,7 +22,7 @@ Allow given comment to live on given page?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

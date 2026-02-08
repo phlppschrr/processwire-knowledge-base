@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize string to contain only ASCII digits (0-9)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->digits($value);
+
+// usage with all arguments
+$string = $sanitizer->digits($value, $maxLength = 1024);
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Value to sanitize
@@ -11,4 +21,4 @@ Sanitize string to contain only ASCII digits (0-9)
 
 ## Return value
 
-string
+- `string`

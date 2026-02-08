@@ -6,14 +6,21 @@ Push an item to the end of the WireArray.
 
 Same as `WireArray::add()` and `WireArray::append()`, but here for syntax convenience.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->push($item);
+~~~~~
+
 ## Arguments
 
 - `$item` `Wire|mixed` Item to push.
 
 ## Return value
 
-$this This instance.
+- `$this` This instance.
 
-## See also
+## See Also
 
 - [WireArray::pop()](method-pop.md)

@@ -4,6 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Initialize new find operation and prepare options
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageFinder->init($selectors, $options);
+
+// usage with all arguments
+$array = $pageFinder->init(Selectors $selectors, array $options);
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors`
@@ -11,4 +21,4 @@ Initialize new find operation and prepare options
 
 ## Return value
 
-array Returns updated options with all present
+- `array` Returns updated options with all present

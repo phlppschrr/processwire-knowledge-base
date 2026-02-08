@@ -6,6 +6,16 @@ Return the given number of entries from the end of log file
 
 This method is pagination aware.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireLog->getLines($name);
+
+// usage with all arguments
+$array = $wireLog->getLines($name, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Name of log
@@ -13,8 +23,8 @@ This method is pagination aware.
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [WireLog::getEntries()](method-getentries.md)

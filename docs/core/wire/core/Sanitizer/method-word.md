@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Return first word in given string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->word($value);
+
+// usage with all arguments
+$string = $sanitizer->word($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` String containing one or more words
@@ -11,9 +21,9 @@ Return first word in given string
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::wordsArray()](method-wordsarray.md)
 

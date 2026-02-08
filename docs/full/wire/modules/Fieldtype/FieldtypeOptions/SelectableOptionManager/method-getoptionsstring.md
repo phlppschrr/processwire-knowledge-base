@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Get the options input string used for
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $selectableOptionManager->getOptionsString($options);
+
+// usage with all arguments
+$string = $selectableOptionManager->getOptionsString(SelectableOptionArray $options, $language = '');
+~~~~~
+
 ## Arguments
 
 - `$options` `SelectableOptionArray`
@@ -11,8 +21,8 @@ Get the options input string used for
 
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid language
+- `WireException` if given invalid language

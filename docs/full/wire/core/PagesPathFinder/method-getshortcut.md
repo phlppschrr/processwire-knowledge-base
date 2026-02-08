@@ -4,10 +4,17 @@ Source: `wire/core/PagesPathFinder.php`
 
 Attempt to match path to page using shortcuts and return true if shortcut found
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesPathFinder->getShortcut($path);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
 
 ## Return value
 
-bool Return true if shortcut found and result ready, false if not
+- `bool` Return true if shortcut found and result ready, false if not

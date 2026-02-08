@@ -8,6 +8,16 @@ This method is designed to restore dump files created by the backup() method of 
 class, however it *may* also work with dump files created from other sources like
 mysqldump or PhpMyAdmin.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabaseBackup->restore($filename);
+
+// usage with all arguments
+$result = $wireDatabaseBackup->restore($filename, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Filename to restore, optionally including path (if no path, then path set to construct is assumed)
@@ -15,12 +25,12 @@ mysqldump or PhpMyAdmin.
 
 ## Return value
 
-true on success, false on failure. Call the errors() method to retrieve errors.
+- `true` on success, false on failure. Call the errors() method to retrieve errors.
 
-## Throws
+## Exceptions
 
-- \Exception on fatal error
+- `\Exception` on fatal error
 
-## See also
+## See Also
 
 - [WireDatabaseBackup::backup()](method-backup.md)

@@ -6,6 +6,13 @@ Allows iteration of the languages values
 
 Fulfills \IteratorAggregate interface.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $languagesPageFieldValue->getIterator();
+~~~~~
+
 ## Return value
 
-\ArrayObject
+- `\ArrayObject`

@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Returns a URL to this user's gravatar image (static version, use non-static gravatar() function unless you specifically need static)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = Comment::getGravatar($email);
+
+// usage with all arguments
+$string = Comment::getGravatar($email, $rating = 'g', $imageset = 'mm', $size = 80);
+~~~~~
+
 ## Arguments
 
 - `$email` `string`
@@ -13,4 +23,4 @@ Returns a URL to this user's gravatar image (static version, use non-static grav
 
 ## Return value
 
-string
+- `string`

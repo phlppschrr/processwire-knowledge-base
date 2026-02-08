@@ -10,6 +10,16 @@ to `/site/assets/markup-regions/main.css`.
 If the autoInsert option is enabled and there is no existing `main.css` to update then it will return
 a string with the `<link>` tag to main.css in it.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupFileRegions->applyRegionLinks($html, $basename, $url, $ext, $options);
+
+// usage with all arguments
+$string = $wireMarkupFileRegions->applyRegionLinks(&$html, $basename, $url, $ext, array $options);
+~~~~~
+
 ## Arguments
 
 - `$html` `string`
@@ -20,7 +30,7 @@ a string with the `<link>` tag to main.css in it.
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

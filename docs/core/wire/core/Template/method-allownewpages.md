@@ -4,9 +4,16 @@ Source: `wire/core/Template.php`
 
 Allow new pages that use this template?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $template->allowNewPages();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

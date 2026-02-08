@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Download file using fopen
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->downloadFopen($fromURL, $fp, $options);
+
+// usage with all arguments
+$bool = $wireHttp->downloadFopen($fromURL, $fp, array $options);
+~~~~~
+
 ## Arguments
 
 - `$fromURL` `string`
@@ -12,4 +22,4 @@ Download file using fopen
 
 ## Return value
 
-bool True if successful false if not
+- `bool` True if successful false if not

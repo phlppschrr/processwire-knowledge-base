@@ -13,6 +13,16 @@ Values for `getString` argument:
 - `e` (string): lowercase scientific notation (e.g. 1.2e+2). 3.0.193+
 - `E` (string): uppercase scientific notation (e.g. 1.2E+2). 3.0.193+
 
+## Usage
+
+~~~~~
+// basic usage
+$float = $sanitizer->float($value);
+
+// usage with all arguments
+$float = $sanitizer->float($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `float|string|int`
@@ -20,4 +30,4 @@ Values for `getString` argument:
 
 ## Return value
 
-float|string
+- `float|string`

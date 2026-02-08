@@ -10,10 +10,20 @@ It also takes into account user access, if requested (see arg 1).
 If there is no defined parent, NULL is returned.
 If there are multiple defined parents, a NullPage is returned.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $template->getParentPage();
+
+// usage with all arguments
+$page = $template->getParentPage($checkAccess = false);
+~~~~~
+
 ## Arguments
 
 - `$checkAccess` (optional) `bool` Whether or not to check for user access to do this (default=false).
 
 ## Return value
 
-Page|NullPage|null
+- `Page|NullPage|null`

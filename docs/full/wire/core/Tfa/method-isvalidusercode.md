@@ -6,6 +6,16 @@ Return true if code is valid or false if not
 
 Modules MUST implement this method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $tfa->isValidUserCode($user, $code, $settings);
+
+// usage with all arguments
+$bool = $tfa->isValidUserCode(User $user, $code, array $settings);
+~~~~~
+
 ## Arguments
 
 - `$user` `User`
@@ -14,8 +24,8 @@ Modules MUST implement this method.
 
 ## Return value
 
-bool|int Returns true if valid, false if not, or optionally integer 0 if code was valid but is now expired
+- `bool|int` Returns true if valid, false if not, or optionally integer 0 if code was valid but is now expired
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

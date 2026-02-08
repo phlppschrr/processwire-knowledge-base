@@ -4,6 +4,16 @@ Source: `wire/core/ModulesDuplicates.php`
 
 Does the given module class have a duplicate?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesDuplicates->hasDuplicate($className);
+
+// usage with all arguments
+$bool = $modulesDuplicates->hasDuplicate($className, $pathname = '');
+~~~~~
+
 ## Arguments
 
 - `$className` `string`
@@ -11,4 +21,4 @@ Does the given module class have a duplicate?
 
 ## Return value
 
-bool
+- `bool`

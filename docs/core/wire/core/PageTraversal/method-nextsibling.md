@@ -16,6 +16,16 @@ When using a selector, note that this method operates only on visible children. 
 or "include=hidden", they will not work in the selector. Instead, you should provide the siblings already retrieved with
 one of those modifiers, and provide those siblings as the second argument to this function.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pageTraversal->nextSibling($page);
+
+// usage with all arguments
+$page = $pageTraversal->nextSibling(Page $page, $selector = '', ?PageArray $siblings = null);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -24,4 +34,4 @@ one of those modifiers, and provide those siblings as the second argument to thi
 
 ## Return value
 
-Page|NullPage Returns the next sibling page, or a NullPage if none found.
+- `Page|NullPage` Returns the next sibling page, or a NullPage if none found.

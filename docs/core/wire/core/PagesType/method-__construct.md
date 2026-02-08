@@ -4,6 +4,16 @@ Source: `wire/core/PagesType.php`
 
 Construct this PagesType manager for the given parent and template
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagesType->__construct($wire);
+
+// usage with all arguments
+$result = $pagesType->__construct(ProcessWire $wire, $templates = array(), $parents = array());
+~~~~~
+
 ## Arguments
 
 - `$wire` `ProcessWire`

@@ -6,6 +6,8 @@ Find all items in this WireArray that match the given selector.
 
 This is non destructive and returns a brand new WireArray.
 
+## Example
+
 ~~~~~
 // Find all items with a title property containing the word "foo"
 $matches = $items->find("title%=foo");
@@ -16,10 +18,17 @@ if($matches->count()) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireArray->find($selector);
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors`
 
 ## Return value
 
-WireArray
+- `WireArray`

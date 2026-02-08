@@ -4,6 +4,8 @@ Source: `wire/core/Page.php`
 
 Called when status flag is about to removed from page but not yet saved
 
+## Example
+
 ~~~~~
 $wire->addHook('Page::removeStatusReady', function($e) {
   $page = $e->object;
@@ -13,6 +15,13 @@ $wire->addHook('Page::removeStatusReady', function($e) {
     $e->error("Sitemap must remain hidden");
   }
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___removeStatusReady($name, $value);
 ~~~~~
 
 ## Arguments

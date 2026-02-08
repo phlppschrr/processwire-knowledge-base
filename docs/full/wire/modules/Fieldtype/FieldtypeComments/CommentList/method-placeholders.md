@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Get or set placeholders that will be populated by populatePlaceholders() method
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentList->placeholders();
+
+// usage with all arguments
+$string = $commentList->placeholders($name = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|array|false` Specify placeholder name to get or set, array of placeholders to set, false to unset all, omit to get all
@@ -11,7 +21,7 @@ Get or set placeholders that will be populated by populatePlaceholders() method
 
 ## Return value
 
-string|array
+- `string|array`
 
 ## Since
 

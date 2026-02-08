@@ -9,12 +9,24 @@ namespace to bind cache values to the object class, which often make a good name
 
 Please see the `$cache->get()` method for usage of all arguments.
 
+## Example
+
 ~~~~~
 // specify namespace as a string
 $value = $cache->getFor('my-namespace', 'my-cache-name');
 
 // or specify namespace is an object instance
 $value = $cache->get($this, 'my-cache-name');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireCache->getFor($ns, $name);
+
+// usage with all arguments
+$string = $wireCache->getFor($ns, $name, $expire = null, $func = null);
 ~~~~~
 
 ## Arguments
@@ -26,8 +38,8 @@ $value = $cache->get($this, 'my-cache-name');
 
 ## Return value
 
-string|array|PageArray|mixed|null Returns null if cache doesn’t exist and no generation function provided.
+- `string|array|PageArray|mixed|null` Returns null if cache doesn’t exist and no generation function provided.
 
-## See also
+## See Also
 
 - [WireCache::get()](method-get.md)

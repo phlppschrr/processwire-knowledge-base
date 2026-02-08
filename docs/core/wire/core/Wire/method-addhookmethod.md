@@ -13,6 +13,7 @@ Add a hook accessible as a new public method in a class (or object)
 
 - Methods added like this themselves become hookable as well.
 
+## Example
 
 ~~~~~
 // Adds a myHasParent($parent) method to all Page objects
@@ -38,6 +39,16 @@ if($page->myHasParent($parent)) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wire->addHookMethod($method, $toObject);
+
+// usage with all arguments
+$string = $wire->addHookMethod($method, $toObject, $toMethod = null, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$method` `string` Name of method you want to add, must not collide with existing property or method names: - `Class::method` to add the method to all instances of Class. - `method` to just add to a single object instance. - Since 3.0.137 it may also be multiple methods to hook in CSV string or array.
@@ -47,9 +58,9 @@ if($page->myHasParent($parent)) {
 
 ## Return value
 
-string A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
+- `string` A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
 
-## See also
+## See Also
 
 - [https://processwire.com/docs/modules/hooks/](https://processwire.com/docs/modules/hooks/)
 

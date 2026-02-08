@@ -4,10 +4,17 @@ Source: `wire/core/WireSessionHandler.php`
 
 Destroy the session indicated by the given session ID
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireSessionHandler->destroy($id);
+~~~~~
+
 ## Arguments
 
 - `$id` `string` Session ID
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure

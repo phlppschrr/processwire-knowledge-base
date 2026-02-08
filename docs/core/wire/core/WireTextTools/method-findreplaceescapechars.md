@@ -5,6 +5,9 @@ Source: `wire/core/WireTextTools.php`
 Find escaped characters in $str, replace them with a placeholder, and return the placeholders
 
 Usage
+
+## Example
+
 ~~~~~
 // 1. Escape certain chars in a string that you want to survive some processing:
 $str = 'Hello \*world\* foo \"bar\" baz';
@@ -19,6 +22,16 @@ $str = some_function_that_processes_the_string($str);
 $str = str_replace(array_keys($a), array_values($a), $str);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireTextTools->findReplaceEscapeChars($str, $escapeChars);
+
+// usage with all arguments
+$array = $wireTextTools->findReplaceEscapeChars(&$str, array $escapeChars, array $options = array());
+~~~~~
+
 ## Arguments
 
 - string &$str String to find escape chars in, it will be modified directly (passed by reference)
@@ -27,7 +40,7 @@ $str = str_replace(array_keys($a), array_values($a), $str);
 
 ## Return value
 
-array Returns assoc array where keys are placeholders substituted in $str and values are escaped characters.
+- `array` Returns assoc array where keys are placeholders substituted in $str and values are escaped characters.
 
 ## Since
 

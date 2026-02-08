@@ -16,10 +16,20 @@ $returnValue = [
   ],
 ];
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $processPageListActions->___getExtraActions($page);
+
+// usage with all arguments
+$array = $processPageListActions->___getExtraActions(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
 
 ## Return value
 
-array of $label => $url
+- `array` of $label => $url

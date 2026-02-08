@@ -10,6 +10,16 @@ seconds, minutes, hours, days, weeks, months, years decades
 If $plural argument is null (or omitted) it instead returns an array
 indexed by period name including both singular and plural periods.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDateTime->getPeriods($abbreviate);
+
+// usage with all arguments
+$array = $wireDateTime->getPeriods($abbreviate, $plural = null);
+~~~~~
+
 ## Arguments
 
 - $abbreviate - Specify 1 to get shortest possible abbreviations - Specify true to get standard/medium abbreviations - Specify false to get large/full terms (no abbreviations) - Specify associative array to get large/full terms and substitute your own
@@ -17,4 +27,4 @@ indexed by period name including both singular and plural periods.
 
 ## Return value
 
-array
+- `array`

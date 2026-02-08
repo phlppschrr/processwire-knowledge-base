@@ -7,6 +7,8 @@ Render an elapsed time string
 If the `$stop` argument is omitted then it is assumed to be the current time.
 The maximum period used is weeks, as months and years are not fixed length periods.
 
+## Example
+
 ~~~~~
 $start = '2023-09-08 08:33:52';
 $stop = '2023-09-09 10:47:23';
@@ -24,6 +26,16 @@ echo $datetime->elapsedTimeStr($start, $stop, true, [ 'exclude' => 'minutes seco
 echo $datetime->elapsedTimeStr($start, [ 'stop' => $stop, 'include' => 'hours minutes' ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDateTime->elapsedTimeStr($start);
+
+// usage with all arguments
+$string = $wireDateTime->elapsedTimeStr($start, $stop = null, $abbreviate = false, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$start` `int|string` Starting timestamp or date/time string.
@@ -33,7 +45,7 @@ echo $datetime->elapsedTimeStr($start, [ 'stop' => $stop, 'include' => 'hours mi
 
 ## Return value
 
-string|array Returns array only if the `getArray` option is true, otherwise returns a string.
+- `string|array` Returns array only if the `getArray` option is true, otherwise returns a string.
 
 ## Since
 

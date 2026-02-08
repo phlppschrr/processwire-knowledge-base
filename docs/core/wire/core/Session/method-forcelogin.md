@@ -4,9 +4,18 @@ Source: `wire/core/Session.php`
 
 Login a user without requiring a password
 
+## Example
+
 ~~~~~
 // login bob without knowing his password
 $u = $session->forceLogin('bob');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$user = $session->forceLogin($user);
 ~~~~~
 
 ## Arguments
@@ -15,4 +24,4 @@ $u = $session->forceLogin('bob');
 
 ## Return value
 
-User|null Returns User object on success, or null on failure
+- `User|null` Returns User object on success, or null on failure

@@ -4,10 +4,17 @@ Source: `wire/core/Password.php`
 
 Set the 'pass' to the given value
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $password->___setPass($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid $value
+- `WireException` if given invalid $value

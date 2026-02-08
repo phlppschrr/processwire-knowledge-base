@@ -6,6 +6,8 @@ Enables iteration of the page's properties and fields with PHP’s foreach()
 
 This fulfills PHP's IteratorAggregate interface, enabling you to interate all of the page's properties and fields.
 
+## Example
+
 ~~~~~
 // List all properties and fields from the page
 foreach($page as $name => $value) {
@@ -14,6 +16,13 @@ foreach($page as $name => $value) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->getIterator();
+~~~~~
+
 ## Return value
 
-\ArrayObject
+- `\ArrayObject`

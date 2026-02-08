@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Send to a URL using a HEAD request
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->head($url);
+
+// usage with all arguments
+$bool = $wireHttp->head($url, $data = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to request (including http:// or https://)
@@ -12,9 +22,9 @@ Send to a URL using a HEAD request
 
 ## Return value
 
-bool|array False on failure or Array with ResponseHeaders on success.
+- `bool|array` False on failure or Array with ResponseHeaders on success.
 
-## See also
+## See Also
 
 - [WireHttp::send()](method-___send.md)
 - [WireHttp::post()](method-post.md)

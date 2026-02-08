@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Find the first occurrence of a string
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireTextTools->strstr($haystack, $needle);
+
+// usage with all arguments
+$result = $wireTextTools->strstr($haystack, $needle, $beforeNeedle = false);
+~~~~~
+
 ## Arguments
 
 - `$haystack` `string`
@@ -12,8 +22,8 @@ Find the first occurrence of a string
 
 ## Return value
 
-false|string
+- `false|string`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.strstr.php](https://www.php.net/manual/en/function.strstr.php)

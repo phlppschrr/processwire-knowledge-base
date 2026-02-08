@@ -9,9 +9,21 @@ include only visible children. See the options for the $selector argument.
 
 When you want to retrieve all children with no exclusions or conditions, use the `$page->numChildren` property instead.
 
+## Example
+
 ~~~~~
 // Find how many children were modified in the last week
 $qty = $page->numChildren("modified>='-1 WEEK'");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->numChildren();
+
+// usage with all arguments
+$int = $page->numChildren($selector = null);
 ~~~~~
 
 ## Arguments
@@ -20,9 +32,9 @@ $qty = $page->numChildren("modified>='-1 WEEK'");
 
 ## Return value
 
-int Number of children
+- `int` Number of children
 
-## See also
+## See Also
 
 - [Page::hasChildren()](method-haschildren.md)
 - [Page::children()](method-children.md)

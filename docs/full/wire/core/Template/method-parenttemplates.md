@@ -8,13 +8,23 @@ Get or set parent templates (templates allowed for parent pages of pages using t
 - To allow any template as parent, specify a blank array.
 - To disallow any parents (other than what’s already in use) set the `$template->noParents` property to 1.
 
+## Usage
+
+~~~~~
+// basic usage
+$templatesArray = $template->parentTemplates();
+
+// usage with all arguments
+$templatesArray = $template->parentTemplates($setValue = null);
+~~~~~
+
 ## Arguments
 
 - `$setValue` (optional) `array|TemplatesArray|null` Specify only when setting, an iterable value containing Template objects, IDs or names
 
 ## Return value
 
-TemplatesArray
+- `TemplatesArray`
 
 ## Since
 

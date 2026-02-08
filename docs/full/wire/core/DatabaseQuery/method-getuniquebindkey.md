@@ -8,13 +8,23 @@ Note if you given a `key` option, it will only be used if it is determined uniqu
 otherwise it’ll auto-generate one. When using your specified key, it is the only
 option that applies, unless it is not unique and the method has to auto-generate one.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $databaseQuery->getUniqueBindKey();
+
+// usage with all arguments
+$string = $databaseQuery->getUniqueBindKey(array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` - `key` (string): Preferred bind key, or omit (blank) to auto-generate (digit only keys not accepted) - `value` (string|int): Value to use as part of the generated key - `prefix` (string): Prefix to override default - `global` (bool): Require globally unique among all instances?
 
 ## Return value
 
-string Returns bind key/name in format ":name" (with leading colon)
+- `string` Returns bind key/name in format ":name" (with leading colon)
 
 ## Since
 

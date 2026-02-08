@@ -4,13 +4,20 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize as language textdomain
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->textdomain($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

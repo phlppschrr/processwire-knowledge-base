@@ -4,6 +4,13 @@ Source: `wire/core/WireHooks.php`
 
 Does given value match given match condition?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHooks->conditionalArgMatch($argMatch, $argVal, $argMatchType);
+~~~~~
+
 ## Arguments
 
 - `$argMatch` `Selectors|string`
@@ -11,7 +18,7 @@ Does given value match given match condition?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

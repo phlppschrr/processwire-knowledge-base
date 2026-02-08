@@ -4,6 +4,16 @@ Source: `wire/core/WireInput.php`
 
 Handles find/match logic for URL segment methods
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInput->urlSegmentMatch($get);
+
+// usage with all arguments
+$string = $wireInput->urlSegmentMatch($get, $num = 0);
+~~~~~
+
 ## Arguments
 
 - `$get` `string` URL segment match string
@@ -11,7 +21,7 @@ Handles find/match logic for URL segment methods
 
 ## Return value
 
-string|int|bool
+- `string|int|bool`
 
 ## Since
 

@@ -15,6 +15,16 @@ more accurate. As a result, this method works well for more than just optimizati
 If checking for a hooked method, it should be in the form "method()".
 If checking for a hooked property, it should be in the form "property".
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHooks->hasHook($object, $method);
+
+// usage with all arguments
+$bool = $wireHooks->hasHook(Wire $object, $method);
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire`
@@ -22,11 +32,11 @@ If checking for a hooked property, it should be in the form "property".
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException whe you try to call it with a Class::something() type method.
+- `WireException` whe you try to call it with a Class::something() type method.
 
 ## Details
 

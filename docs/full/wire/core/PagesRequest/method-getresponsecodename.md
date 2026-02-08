@@ -22,6 +22,13 @@ Returns string, one of:
 - methodNotAllowed: request method is not allowed by template (405)
 - pathTooLong: path too long or segment too long (414)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesRequest->getResponseCodeName();
+~~~~~
+
 ## Return value
 
-string
+- `string`

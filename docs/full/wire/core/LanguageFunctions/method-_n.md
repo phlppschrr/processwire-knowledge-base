@@ -4,11 +4,23 @@ Source: `wire/core/LanguageFunctions.php`
 
 Perform a language translation with singular and plural versions
 
+## Example
+
 ~~~~~
 $items = array(...);
 $qty = count($items);
 echo _n('Found one item', 'Found multiple items', $qty);
 echo sprintf(_n('Found one item', 'Found %d items', $qty), $qty);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageFunctions->_n($textSingular, $textPlural, $count);
+
+// usage with all arguments
+$string = $languageFunctions->_n($textSingular, $textPlural, $count, $textdomain = null);
 ~~~~~
 
 ## Arguments
@@ -20,9 +32,9 @@ echo sprintf(_n('Found one item', 'Found %d items', $qty), $qty);
 
 ## Return value
 
-string Translated text or original text if translation not available.
+- `string` Translated text or original text if translation not available.
 
-## See also
+## See Also
 
 - __()
 - _x()

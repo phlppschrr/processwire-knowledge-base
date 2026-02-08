@@ -9,14 +9,21 @@ Return the markup value for a given field name or {tag} string
 2. If given a string with field names referenced in `{tags}`, it will populate those
    tags and return the populated string.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $page->___getMarkup($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Field name or markup string with field {name} tags in it
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Page::getText()](method-gettext.md)

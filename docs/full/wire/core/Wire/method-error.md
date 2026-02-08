@@ -7,12 +7,24 @@ Record an non-fatal error message in the system-wide notices.
 - This method automatically identifies the error as coming from this class.
 - You should still make fatal errors throw a `WireException` (or class derived from it).
 
+## Example
+
 ~~~~~
 $this->error("This is the notice text");
 $this->error("This notice is also logged", true);
 $this->error("This notice is only shown in debug mode", Notice::debug);
 $this->error("This notice allows <em>markup</em>", Notice::allowMarkup);
 $this->error("Notice using multiple flags", Notice::debug | Notice::logOnly);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->error($text);
+
+// usage with all arguments
+$result = $wire->error($text, $flags = 0);
 ~~~~~
 
 ## Arguments
@@ -22,9 +34,9 @@ $this->error("Notice using multiple flags", Notice::debug | Notice::logOnly);
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [Wire::errors()](method-errors.md)
 - [Wire::message()](method-message.md)

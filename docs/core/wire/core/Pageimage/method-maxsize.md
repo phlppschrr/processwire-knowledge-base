@@ -4,6 +4,16 @@ Source: `wire/core/Pageimage.php`
 
 Return an image no larger than the given width and height
 
+## Usage
+
+~~~~~
+// basic usage
+$pageimage = $pageimage->maxSize($width, $height);
+
+// usage with all arguments
+$pageimage = $pageimage->maxSize($width, $height, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$width` `int` Max allowed width
@@ -12,4 +22,4 @@ Return an image no larger than the given width and height
 
 ## Return value
 
-Pageimage
+- `Pageimage`

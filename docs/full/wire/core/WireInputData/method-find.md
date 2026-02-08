@@ -4,6 +4,8 @@ Source: `wire/core/WireInputData.php`
 
 Find all input vars that match given pattern in name (or optionally value)
 
+## Example
+
 ~~~~~
 // find all input vars having name beginning with "title_" (i.e. title_en, title_de, title_es)
 $values = $input->post->find('title_*');
@@ -23,6 +25,16 @@ $values = [
 ];
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireInputData->find($pattern);
+
+// usage with all arguments
+$array = $wireInputData->find($pattern, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$pattern` `string` Wildcard string or PCRE regular expression
@@ -30,7 +42,7 @@ $values = [
 
 ## Return value
 
-array Returns associative array of values `[ name => value ]` if found, or empty array if none found.
+- `array` Returns associative array of values `[ name => value ]` if found, or empty array if none found.
 
 ## Since
 

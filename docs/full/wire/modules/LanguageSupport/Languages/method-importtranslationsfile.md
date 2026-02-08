@@ -4,6 +4,16 @@ Source: `wire/modules/LanguageSupport/Languages.php`
 
 Import a language translations file
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $languages->importTranslationsFile($language, $file);
+
+// usage with all arguments
+$bool = $languages->importTranslationsFile($language, $file, $quiet = false);
+~~~~~
+
 ## Arguments
 
 - `$language` `Language|string`
@@ -12,11 +22,11 @@ Import a language translations file
 
 ## Return value
 
-bool|int Returns integer with number of translations imported or boolean false on error
+- `bool|int` Returns integer with number of translations imported or boolean false on error
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

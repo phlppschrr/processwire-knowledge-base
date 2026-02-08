@@ -4,6 +4,16 @@ Source: `wire/core/PagesExportImport.php`
 
 Given a PageArray export it to a portable PHP array
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesExportImport->pagesToArray($items);
+
+// usage with all arguments
+$array = $pagesExportImport->pagesToArray(PageArray $items, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$items` `PageArray`
@@ -11,4 +21,4 @@ Given a PageArray export it to a portable PHP array
 
 ## Return value
 
-array
+- `array`

@@ -8,6 +8,16 @@ This method may be deprecated at some point, so it is preferable to use the
 `randomLetters()` or `randomAlnum()` methods instead, when you can count on
 the PW version being 3.0.109 or higher.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $password->randomAlpha();
+
+// usage with all arguments
+$string = $password->randomAlpha($qty = 1, $alphanumeric = false, $disallow = array());
+~~~~~
+
 ## Arguments
 
 - `$qty` (optional) `int` Number of random characters requested
@@ -16,7 +26,7 @@ the PW version being 3.0.109 or higher.
 
 ## Return value
 
-string
+- `string`
 
 ## Deprecated
 

@@ -6,9 +6,16 @@ Get current server protocol (for example: "HTTP/1.1")
 
 This can be accessed by property `$config->serverProtocol`
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $config->serverProtocol();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizer.php`
 
 Get the default/fallback ImageSizer engine
 
+## Usage
+
+~~~~~
+// basic usage
+$imageSizerEngine = $imageSizer->newDefaultImageSizerEngine();
+
+// usage with all arguments
+$imageSizerEngine = $imageSizer->newDefaultImageSizerEngine($filename = '', $options = array(), $inspectionResult = null);
+~~~~~
+
 ## Arguments
 
 - `$filename` (optional) `string`
@@ -12,8 +22,8 @@ Get the default/fallback ImageSizer engine
 
 ## Return value
 
-ImageSizerEngine|null
+- `ImageSizerEngine|null`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

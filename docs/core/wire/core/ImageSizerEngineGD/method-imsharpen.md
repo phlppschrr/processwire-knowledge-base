@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Sharpen image (@horst)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngineGD->imSharpen($im, $mode);
+~~~~~
+
 ## Arguments
 
 - `$im` `resource`
@@ -11,4 +18,4 @@ Sharpen image (@horst)
 
 ## Return value
 
-resource|bool
+- `resource|bool`

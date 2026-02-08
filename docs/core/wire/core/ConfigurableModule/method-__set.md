@@ -4,6 +4,13 @@ Source: `wire/core/ConfigurableModule.php`
 
 Set a module config property
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $configurableModule->__set($key, $value);
+~~~~~
+
 ## Arguments
 
 - $key
@@ -11,4 +18,4 @@ Set a module config property
 
 ## Return value
 
-mixed
+- `mixed`

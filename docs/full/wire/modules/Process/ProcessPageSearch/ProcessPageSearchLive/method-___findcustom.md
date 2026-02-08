@@ -18,13 +18,23 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 });
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processPageSearchLive->___findCustom($data);
+
+// usage with all arguments
+$bool = $processPageSearchLive->___findCustom(array $data);
+~~~~~
+
 ## Arguments
 
 - `$data` `array` Data about the search including 'type', 'operator', 'q' (query) and more.
 
 ## Return value
 
-bool Optionally return false to stop search, making it use only results returned by this method.
+- `bool` Optionally return false to stop search, making it use only results returned by this method.
 
 ## Since
 

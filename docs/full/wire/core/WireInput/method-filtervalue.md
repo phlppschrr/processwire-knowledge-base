@@ -4,6 +4,16 @@ Source: `wire/core/WireInput.php`
 
 Filter value against given $valid whitelist
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireInput->filterValue($value, $valid, $getArray);
+
+// usage with all arguments
+$array = $wireInput->filterValue($value, array $valid, $getArray);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array`
@@ -12,8 +22,8 @@ Filter value against given $valid whitelist
 
 ## Return value
 
-array|string|null
+- `array|string|null`
 
-## Throws
+## Exceptions
 
-- WireException If given a multidimensional array for $valid argument
+- `WireException` If given a multidimensional array for $valid argument

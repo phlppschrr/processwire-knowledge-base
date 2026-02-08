@@ -4,6 +4,13 @@ Source: `wire/core/Paths.php`
 
 Construct the Paths
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $paths->__construct($root);
+~~~~~
+
 ## Arguments
 
 - `$root` `string` Path of the root that will be used as a base for stored paths.

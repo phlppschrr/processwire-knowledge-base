@@ -8,6 +8,16 @@ Spaces, commas and case in given value do not matter. Only the first character o
 taken into account, whether it appears in the given value, or is given in the $unit argument.
 Meaning a unit like megabytes (for example) can be specified as 'm', 'mb', 'megabytes', etc.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireNumberTools->strToBytes($value);
+
+// usage with all arguments
+$int = $wireNumberTools->strToBytes($value, $unit = null);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int|float`
@@ -15,7 +25,7 @@ Meaning a unit like megabytes (for example) can be specified as 'm', 'mb', 'mega
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

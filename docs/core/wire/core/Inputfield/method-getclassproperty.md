@@ -6,13 +6,20 @@ Get the internal property name for given class property
 
 This converts things like 'wrap' to 'wrapClass', 'header' to 'headerClass', etc.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfield->getClassProperty($property);
+~~~~~
+
 ## Arguments
 
 - `$property` `string`
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

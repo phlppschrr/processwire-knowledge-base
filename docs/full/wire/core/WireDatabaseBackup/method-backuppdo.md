@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Create a mysql dump file using PDO
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabaseBackup->backupPDO($file);
+
+// usage with all arguments
+$string = $wireDatabaseBackup->backupPDO($file, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$file` `string` Path + filename to create
@@ -11,4 +21,4 @@ Create a mysql dump file using PDO
 
 ## Return value
 
-string|bool Returns the created file on success or false on error
+- `string|bool` Returns the created file on success or false on error

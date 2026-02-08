@@ -6,6 +6,16 @@ Sort given array by first given property.
 
 This function contains additions and modifications by @niklaka.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireArray->stableSort($data, $properties);
+
+// usage with all arguments
+$array = $wireArray->stableSort(&$data, $properties, $numNeeded = null);
+~~~~~
+
 ## Arguments
 
 - array|WireArray &$data Reference to an array to sort.
@@ -14,4 +24,4 @@ This function contains additions and modifications by @niklaka.
 
 ## Return value
 
-array Sorted array (at least $numNeeded items, if $numNeeded is given)
+- `array` Sorted array (at least $numNeeded items, if $numNeeded is given)

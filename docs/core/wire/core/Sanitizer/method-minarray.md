@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Minimize an array to remove empty values
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->minArray($data);
+
+// usage with all arguments
+$array = $sanitizer->minArray($data, $allowEmpty = false, $convert = false);
+~~~~~
+
 ## Arguments
 
 - `$data` `array` Array to reduce
@@ -12,4 +22,4 @@ Minimize an array to remove empty values
 
 ## Return value
 
-array
+- `array`

@@ -4,6 +4,13 @@ Source: `wire/core/FileCompiler.php`
 
 Compile the given string of data
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fileCompiler->___compileData($data, $sourceFile);
+~~~~~
+
 ## Arguments
 
 - `$data` `string`
@@ -11,4 +18,4 @@ Compile the given string of data
 
 ## Return value
 
-string
+- `string`

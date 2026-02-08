@@ -6,11 +6,18 @@ Called when module version changes
 
 See the `Module` interface and the `upgrade` method there for more details.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $process->___upgrade($fromVersion, $toVersion);
+~~~~~
+
 ## Arguments
 
 - `$fromVersion` `int|string` Previous version
 - `$toVersion` `int|string` New version
 
-## Throws
+## Exceptions
 
-- WireException if upgrade fails
+- `WireException` if upgrade fails

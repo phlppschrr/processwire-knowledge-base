@@ -7,6 +7,16 @@ Hook after InputfieldForm::processInput()
 This method grabs data from the TFA related fields added by our render() hooks,
 and saves them in the user’s “tfa_type” field “settings” column.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $tfa->hookAfterInputfieldFormProcess($event);
+
+// usage with all arguments
+$result = $tfa->hookAfterInputfieldFormProcess(HookEvent $event);
+~~~~~
+
 ## Arguments
 
 - `$event` `HookEvent`

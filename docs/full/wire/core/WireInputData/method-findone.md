@@ -4,6 +4,16 @@ Source: `wire/core/WireInputData.php`
 
 Find one input var that matches given pattern in name (or optionally value)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInputData->findOne($pattern);
+
+// usage with all arguments
+$string = $wireInputData->findOne($pattern, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$pattern` `string` Wildcard string or PCRE regular expression
@@ -11,7 +21,7 @@ Find one input var that matches given pattern in name (or optionally value)
 
 ## Return value
 
-string|int|float|array|null $value Returns value if found or null if not.
+- `string|int|float|array|null` $value Returns value if found or null if not.
 
 ## Since
 

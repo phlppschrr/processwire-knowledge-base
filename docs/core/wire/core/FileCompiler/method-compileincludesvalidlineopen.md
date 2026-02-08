@@ -4,10 +4,17 @@ Source: `wire/core/FileCompiler.php`
 
 Test the given line $open preceding an include statement for validity
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fileCompiler->compileIncludesValidLineOpen($open);
+~~~~~
+
 ## Arguments
 
 - `$open` `string`
 
 ## Return value
 
-bool Returns true if valid, false if not
+- `bool` Returns true if valid, false if not

@@ -4,6 +4,16 @@ Source: `wire/core/Fieldgroup.php`
 
 Get all of the Inputfields for this Fieldgroup associated with the provided Page and populate them.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldWrapper = $fieldgroup->getPageInputfields($page);
+
+// usage with all arguments
+$inputfieldWrapper = $fieldgroup->getPageInputfields(Page $page, $contextStr = '', $fieldName = '', $namespace = '', $flat = true);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that the Inputfields will be for.
@@ -14,4 +24,4 @@ Get all of the Inputfields for this Fieldgroup associated with the provided Page
 
 ## Return value
 
-InputfieldWrapper Returns an InputfieldWrapper that acts as a container for multiple Inputfields.
+- `InputfieldWrapper` Returns an InputfieldWrapper that acts as a container for multiple Inputfields.

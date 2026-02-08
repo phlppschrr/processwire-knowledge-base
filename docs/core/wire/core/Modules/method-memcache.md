@@ -4,6 +4,16 @@ Source: `wire/core/Modules.php`
 
 Set a runtime memory cache
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modules->memcache($name);
+
+// usage with all arguments
+$bool = $modules->memcache($name, $setValue = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,4 +21,4 @@ Set a runtime memory cache
 
 ## Return value
 
-bool|array|mixed|null
+- `bool|array|mixed|null`

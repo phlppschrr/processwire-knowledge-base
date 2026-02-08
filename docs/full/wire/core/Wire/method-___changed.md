@@ -8,12 +8,22 @@ Hookable method that is called whenever a property has changed while change trac
 - Do not call this method directly, as the `Wire::trackChange()` method already does so.
 - Descending classes should call `$this->trackChange('name', $oldValue, $newValue);` when a property they are tracking has changed.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->___changed($what);
+
+// usage with all arguments
+$result = $wire->___changed($what, $old = null, $new = null);
+~~~~~
+
 ## Arguments
 
 - `$what` `string` Name of property that changed
 - `$old` (optional) `mixed` Previous value before change
 - `$new` (optional) `mixed` New value
 
-## See also
+## See Also
 
 - [Wire::trackChange()](method-trackchange.md)

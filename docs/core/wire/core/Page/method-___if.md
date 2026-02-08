@@ -61,6 +61,8 @@ The `$yes` and `$no` arguments (the conditional actions) may be any of the follo
   advantage of the method’s slightly different behavior than regular PHP if() statements (i.e. treating
   empty WireArray or NullPage objects as false conditions).
 
+## Example
+
 ~~~~~
 // if summary is populated, output it in an paragraph
 echo $page->if("summary", "<p class='summary'>{summary}</p>");
@@ -78,6 +80,16 @@ echo $page->if("inventory>10", "In stock", "Limited availability");
 echo $page->if("images", function($val) { return "<img src='{$val->first->url}'>"; });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___if($key);
+
+// usage with all arguments
+$result = $page->___if($key, $yes = '', $no = '');
+~~~~~
+
 ## Arguments
 
 - `$key` `string|bool|int` Name of field to check, selector string to evaluate, or boolean/int to evalute
@@ -86,7 +98,7 @@ echo $page->if("images", function($val) { return "<img src='{$val->first->url}'>
 
 ## Return value
 
-mixed|string|bool
+- `mixed|string|bool`
 
 ## Since
 

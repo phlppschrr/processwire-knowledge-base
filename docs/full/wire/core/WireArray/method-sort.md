@@ -12,12 +12,24 @@ Sort this WireArray by the given properties.
 
 - Prepend or append a minus "-" to reverse the sort (per field).
 
+## Example
+
 ~~~~~
 // Sort newest to oldest
 $items->sort("-created");
 
 // Sort by last_name then first_name
 $items->sort("last_name, first_name");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->sort($properties);
+
+// usage with all arguments
+$result = $wireArray->sort($properties, $flags = null);
 ~~~~~
 
 ## Arguments
@@ -27,4 +39,4 @@ $items->sort("last_name, first_name");
 
 ## Return value
 
-$this reference to current instance.
+- `$this` reference to current instance.

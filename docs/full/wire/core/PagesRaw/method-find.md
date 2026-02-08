@@ -4,6 +4,16 @@ Source: `wire/core/PagesRaw.php`
 
 Find pages and return raw data from them in a PHP array
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesRaw->find($selector);
+
+// usage with all arguments
+$array = $pagesRaw->find($selector, $field = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors`
@@ -12,7 +22,7 @@ Find pages and return raw data from them in a PHP array
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

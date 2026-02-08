@@ -4,6 +4,16 @@ Source: `wire/core/PagesEditor.php`
 
 Return whether given Page is moveable from $oldParent to $newParent
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->isMoveable($page, $oldParent, $newParent, $reason);
+
+// usage with all arguments
+$bool = $pagesEditor->isMoveable(Page $page, Page $oldParent, Page $newParent, &$reason);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to move
@@ -13,4 +23,4 @@ Return whether given Page is moveable from $oldParent to $newParent
 
 ## Return value
 
-bool
+- `bool`

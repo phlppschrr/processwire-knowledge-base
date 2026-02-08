@@ -4,6 +4,16 @@ Source: `wire/core/WireRandom.php`
 
 Get a random version of all keys in given array (or a specified quantity of them)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireRandom->arrayKeys($a);
+
+// usage with all arguments
+$array = $wireRandom->arrayKeys(array $a, $qty = 0);
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Array to get random keys from.
@@ -11,4 +21,4 @@ Get a random version of all keys in given array (or a specified quantity of them
 
 ## Return value
 
-array
+- `array`

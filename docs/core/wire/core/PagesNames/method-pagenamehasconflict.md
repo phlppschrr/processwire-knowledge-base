@@ -6,17 +6,27 @@ Does given page have a name that has a conflict/collision?
 
 In multi-language environment this applies to default language only.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesNames->pageNameHasConflict($page);
+
+// usage with all arguments
+$string = $pagesNames->pageNameHasConflict(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to check
 
 ## Return value
 
-string|bool Returns string with conflict reason or boolean false if no conflict
+- `string|bool` Returns string with conflict reason or boolean false if no conflict
 
-## Throws
+## Exceptions
 
-- WireException If given invalid $options argument
+- `WireException` If given invalid $options argument
 
 ## Since
 

@@ -9,6 +9,16 @@ indexed by field name, specify `references.field` instead. To get something more
 of page references, specify properties or fields as `references.field_name` replacing `field_name`
 with a page property or field name, i.e. `references.title`.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagesRawFinder->findReferences($colNames);
+
+// usage with all arguments
+$result = $pagesRawFinder->findReferences(array $colNames);
+~~~~~
+
 ## Arguments
 
 - `$colNames` `array`

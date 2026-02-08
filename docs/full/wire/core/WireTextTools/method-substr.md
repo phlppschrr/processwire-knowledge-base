@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Get part of a string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->substr($str, $start);
+
+// usage with all arguments
+$string = $wireTextTools->substr($str, $start, $length = null);
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
@@ -12,8 +22,8 @@ Get part of a string
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.substr.php](https://www.php.net/manual/en/function.substr.php)

@@ -7,6 +7,8 @@ Get list of tags for all files in this Pagefiles array, or return files matching
 This method can either return a list of all tags available, or return all files
 matching the given tag or tags (an alias of findTag method).
 
+## Example
+
 ~~~~~
 // Get string of all tags
 $tagsString = $page->files->tags();
@@ -18,15 +20,25 @@ $tagsArray = $page->files->tags(true);
 $pagefiles = $page->files->tags('foobar');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagefiles->tags();
+
+// usage with all arguments
+$string = $pagefiles->tags($value = null);
+~~~~~
+
 ## Arguments
 
 - `$value` (optional) `bool|string|array` Specify one of the following: - Omit to return all tags as a string. - Boolean true if you want to return tags as an array (rather than string). - Boolean false to return tags as an array, with lowercase enforced. - String if you want to return files matching tags (See `Pagefiles::findTag()` method for usage) - Array if you want to return files matching tags (See `Pagefiles::findTag()` method for usage)
 
 ## Return value
 
-string|array|Pagefiles Returns all tags as a string or an array, or Pagefiles matching given tag(s). When a tags array is returned, it is an associative array where the key and value are both the tag (keys are always lowercase).
+- `string|array|Pagefiles` Returns all tags as a string or an array, or Pagefiles matching given tag(s). When a tags array is returned, it is an associative array where the key and value are both the tag (keys are always lowercase).
 
-## See also
+## See Also
 
 - [Pagefiles::findTag()](method-findtag.md)
 - [Pagefile::tags()](../Pagefile/method-tags.md)

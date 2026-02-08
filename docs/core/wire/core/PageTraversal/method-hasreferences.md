@@ -8,6 +8,16 @@ Note that this excludes hidden, unpublished and otherwise non-accessible pages (
 If you do not want to exclude these, use the numFollowers() function instead, OR specify "include=all" for
 the $selector argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageTraversal->hasReferences($page);
+
+// usage with all arguments
+$int = $pageTraversal->hasReferences(Page $page, $selector = '', $field = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -16,4 +26,4 @@ the $selector argument.
 
 ## Return value
 
-int|array Returns count, or array of counts (if $field==true)
+- `int|array` Returns count, or array of counts (if $field==true)

@@ -12,6 +12,16 @@ Get parents for given Page and/or specific columns from them
   column(s) native to pages DB table only, with 1 exception—you may specify `path` as
   a column, which will return the generated page path(s).
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesParents->getParents($page);
+
+// usage with all arguments
+$array = $pagesParents->getParents($page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page|int` Page or page ID
@@ -19,7 +29,7 @@ Get parents for given Page and/or specific columns from them
 
 ## Return value
 
-array|PageArray If given column/columns returns an array, otherwise returns a PageArray
+- `array|PageArray` If given column/columns returns an array, otherwise returns a PageArray
 
 ## Since
 

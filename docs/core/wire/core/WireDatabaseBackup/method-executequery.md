@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Execute an SQL query, either a string or PDOStatement
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabaseBackup->executeQuery($query);
+
+// usage with all arguments
+$bool = $wireDatabaseBackup->executeQuery($query, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$query` `string|\PDOStatement`
@@ -11,8 +21,8 @@ Execute an SQL query, either a string or PDOStatement
 
 ## Return value
 
-bool Query result
+- `bool` Query result
 
-## Throws
+## Exceptions
 
-- \Exception if haltOnError, otherwise it populates $this->errors
+- `\Exception` if haltOnError, otherwise it populates $this->errors

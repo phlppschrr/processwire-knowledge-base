@@ -45,12 +45,24 @@ See the Process class for more details:
 On error, an `error` index in returned array contains error message. You can also identify errors
 such as a non-existing module by the returned module info having an `id` index of `0`
 
+## Example
+
 ~~~~~
 // example of getting module info
 $moduleInfo = $modules->getModuleInfo('InputfieldCKEditor');
 
 // example of getting verbose module info
 $moduleInfo = $modules->getModuleInfoVerbose('MarkupAdminDataTable');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$array = $modulesInfo->getModuleInfo($class);
+
+// usage with all arguments
+$array = $modulesInfo->getModuleInfo($class, array $options = array());
 ~~~~~
 
 ## Arguments
@@ -60,9 +72,9 @@ $moduleInfo = $modules->getModuleInfoVerbose('MarkupAdminDataTable');
 
 ## Return value
 
-array Associative array of module information. - On error, an `error` index is also populated with an error message. - When requesting a module that does not exist its `id` value will be `0` and its `name` will be blank.
+- `array` Associative array of module information. - On error, an `error` index is also populated with an error message. - When requesting a module that does not exist its `id` value will be `0` and its `name` will be blank.
 
-## See also
+## See Also
 
 - self::getModuleInfoVerbose()
 

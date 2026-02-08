@@ -4,6 +4,16 @@ Source: `wire/core/ProcessController.php`
 
 Does user have permission for the given $method name in the current Process?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processController->hasMethodPermission($method);
+
+// usage with all arguments
+$bool = $processController->hasMethodPermission($method, $throw = true);
+~~~~~
+
 ## Arguments
 
 - `$method` `string`
@@ -11,8 +21,8 @@ Does user have permission for the given $method name in the current Process?
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- ProcessControllerPermissionException
+- `ProcessControllerPermissionException`

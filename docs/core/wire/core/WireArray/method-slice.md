@@ -7,9 +7,21 @@ Get a slice of the WireArray.
 Given a starting point and a number of items, returns a new WireArray of those items.
 If `$limit` is omitted, then it includes everything beyond the starting point.
 
+## Example
+
 ~~~~~
 // Get first 3 items
 $myItems = $items->slice(0, 3);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireArray->slice($start);
+
+// usage with all arguments
+$items = $wireArray->slice($start, $limit = 0);
 ~~~~~
 
 ## Arguments
@@ -19,4 +31,4 @@ $myItems = $items->slice(0, 3);
 
 ## Return value
 
-WireArray Returns a new WireArray.
+- `WireArray` Returns a new WireArray.

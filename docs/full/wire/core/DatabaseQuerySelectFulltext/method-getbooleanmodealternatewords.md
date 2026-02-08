@@ -4,6 +4,16 @@ Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Helper for getBooleanModeWords to handle population of alternate words in boolean value
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $databaseQuerySelectFulltext->getBooleanModeAlternateWords($word, $booleanValue, $minWordLength, $options);
+
+// usage with all arguments
+$array = $databaseQuerySelectFulltext->getBooleanModeAlternateWords($word, &$booleanValue, $minWordLength, array $options);
+~~~~~
+
 ## Arguments
 
 - `$word` `string` Word to find alternates for
@@ -13,7 +23,7 @@ Helper for getBooleanModeWords to handle population of alternate words in boolea
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

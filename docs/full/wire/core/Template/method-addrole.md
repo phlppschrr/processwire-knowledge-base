@@ -4,6 +4,16 @@ Source: `wire/core/Template.php`
 
 Add a Role to this template for view, edit, create, or add permission
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $template->addRole($role);
+
+// usage with all arguments
+$result = $template->addRole($role, $type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$role` `Role|int|string` Role instance, id or name
@@ -11,8 +21,8 @@ Add a Role to this template for view, edit, create, or add permission
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException If given $role cannot be resolved
+- `WireException` If given $role cannot be resolved

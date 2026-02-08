@@ -28,6 +28,8 @@ available to any translation calls. However, it can be called from
 anywhere you’d like, so long as it is before the translation calls
 that you are looking to replace.
 
+## Example
+
 ~~~~~
 // The following example replaces the labels of all the Tabs in the
 // Page editor (and anywhere else labels used):
@@ -60,13 +62,23 @@ wireLangReplacements([
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $languageFunctions->wireLangReplacements($values);
+
+// usage with all arguments
+$array = $languageFunctions->wireLangReplacements(array $values);
+~~~~~
+
 ## Arguments
 
 - `$values` `array`
 
 ## Return value
 
-array|string
+- `array|string`
 
 ## Since
 

@@ -7,6 +7,16 @@ Provides the implementation for calling hooks in ProcessWire
 Unlike __call, this method won't trigger an Exception if the hook and method don't exist.
 Instead it returns a result array containing information about the call.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireHooks->runHooks($object, $method, $arguments);
+
+// usage with all arguments
+$array = $wireHooks->runHooks(Wire $object, $method, $arguments, $type = 'method');
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire`
@@ -16,4 +26,4 @@ Instead it returns a result array containing information about the call.
 
 ## Return value
 
-array Returns an array with the following information: [return] => The value returned from the hook or NULL if no value returned or hook didn't exist. [numHooksRun] => The number of hooks that were actually run. [methodExists] => Did the hook method exist as a real method in the class? (i.e. with 3 underscores ___method). [replace] => Set by the hook at runtime if it wants to prevent execution of the original hooked method.
+- `array` Returns an array with the following information: [return] => The value returned from the hook or NULL if no value returned or hook didn't exist. [numHooksRun] => The number of hooks that were actually run. [methodExists] => Did the hook method exist as a real method in the class? (i.e. with 3 underscores ___method). [replace] => Set by the hook at runtime if it wants to prevent execution of the original hooked method.

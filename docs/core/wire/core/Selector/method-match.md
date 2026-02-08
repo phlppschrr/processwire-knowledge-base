@@ -4,6 +4,13 @@ Source: `wire/core/Selector.php`
 
 Does $value1 match $value2?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selector->match($value1, $value2);
+~~~~~
+
 ## Arguments
 
 - `$value1` `mixed` Dynamic comparison value
@@ -11,4 +18,4 @@ Does $value1 match $value2?
 
 ## Return value
 
-bool
+- `bool`

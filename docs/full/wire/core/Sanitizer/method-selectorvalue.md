@@ -8,6 +8,8 @@ Always use this to sanitize any string values you are inserting in selector stri
 This ensures that the value can't be confused for another component of the selector string.
 This method may remove characters, escape characters, or surround the string in quotes.
 
+## Example
+
 ~~~~~
 // Sanitize text for a search on title and body fields
 $q = $input->get->text('q'); // text search query
@@ -18,6 +20,16 @@ $val = $sanitizer->selectorValue([ 'foo', 'bar', 'baz' ]);
 echo $val; // outputs: foo|bar|baz
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->selectorValue($value);
+
+// usage with all arguments
+$string = $sanitizer->selectorValue($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array` String value to sanitize (assumed to be UTF-8), or in 3.0.127+ you may use an array and it will be sanitized to an OR value string.
@@ -25,4 +37,4 @@ echo $val; // outputs: foo|bar|baz
 
 ## Return value
 
-string|int|bool|mixed Value ready to be used as the value component in a selector string. Always returns string unless you specify something different for 'emptyValue' option.
+- `string|int|bool|mixed` Value ready to be used as the value component in a selector string. Always returns string unless you specify something different for 'emptyValue' option.

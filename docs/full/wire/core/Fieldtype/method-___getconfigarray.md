@@ -8,10 +8,20 @@ If both getConfigInputfields and getConfigInputfieldsArray are implemented then
 definitions from both will be used. It's probably simplest just to implement one
 or the other.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtype->___getConfigArray($field);
+
+// usage with all arguments
+$array = $fieldtype->___getConfigArray(Field $field);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
 
 ## Return value
 
-array
+- `array`

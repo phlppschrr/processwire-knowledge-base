@@ -10,6 +10,16 @@ Returns string length of any type (string, array, object, bool, int, etc.)
 - If given array or object it duplicates the behavior of `wireCount()`.
 - If given null returns 0.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $functions->wireLength($value);
+
+// usage with all arguments
+$int = $functions->wireLength($value, $mb = true);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array|object|int|bool|null`
@@ -17,7 +27,7 @@ Returns string length of any type (string, array, object, bool, int, etc.)
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

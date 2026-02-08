@@ -6,6 +6,16 @@ Convert string to be all hyphenated-lowercase (aka kabab-case, hyphen-case, dash
 
 For example, "Hello World" or "helloWorld" becomes "hello-world".
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->hyphenCase($value);
+
+// usage with all arguments
+$string = $sanitizer->hyphenCase($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -13,4 +23,4 @@ For example, "Hello World" or "helloWorld" becomes "hello-world".
 
 ## Return value
 
-string
+- `string`

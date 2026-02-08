@@ -7,10 +7,20 @@ Return number of parents (depth relative to homepage) that this page has, option
 For example, homepage has 0 parents and root level pages have 1 parent (which is the homepage), and the
 number increases the deeper the page is in the pages structure.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->numParents();
+
+// usage with all arguments
+$int = $page->numParents($selector = '');
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string` Optional selector to filter by (default='')
 
 ## Return value
 
-int Number of parents
+- `int` Number of parents

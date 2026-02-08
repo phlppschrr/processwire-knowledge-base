@@ -4,6 +4,16 @@ Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Record an informational or 'success' message
 
+## Usage
+
+~~~~~
+// basic usage
+$notification = $notificationArray->message($text);
+
+// usage with all arguments
+$notification = $notificationArray->message($text, $flags = 0);
+~~~~~
+
 ## Arguments
 
 - `$text` `string`
@@ -11,4 +21,4 @@ Record an informational or 'success' message
 
 ## Return value
 
-Notification
+- `Notification`

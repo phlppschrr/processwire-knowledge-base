@@ -8,6 +8,16 @@ Indicates whether module accepts config settings, whether interactively or API o
 - Returns integer `30` if module accepts config settings but is not interactively configurable.
 - Returns true, int or string if module is interactively configurable, see `Modules::isConfigurable()` return values.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesConfigs->isConfigable($class);
+
+// usage with all arguments
+$bool = $modulesConfigs->isConfigable($class, $useCache = true);
+~~~~~
+
 ## Arguments
 
 - `$class` `string|Module`
@@ -15,7 +25,7 @@ Indicates whether module accepts config settings, whether interactively or API o
 
 ## Return value
 
-bool|int|string
+- `bool|int|string`
 
 ## Since
 

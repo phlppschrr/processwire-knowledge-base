@@ -6,6 +6,8 @@ Set a cookie (optionally with options)
 
 The defaults or previously set options from an `options()` method call are used for any `$options` not specified.
 
+## Example
+
 ~~~~~
 $input->cookie->foo = 'bar'; // set with default options (expires with session)
 $input->cookie->set('foo', 'bar'); // same as above
@@ -17,6 +19,16 @@ $input->cookie->set('foo', 'bar', [ // set with options
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireInputDataCookie->set($key, $value);
+
+// usage with all arguments
+$result = $wireInputDataCookie->set($key, $value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Cookie name
@@ -25,7 +37,7 @@ $input->cookie->set('foo', 'bar', [ // set with options
 
 ## Return value
 
-$this
+- `$this`
 
 ## Since
 

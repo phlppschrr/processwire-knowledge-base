@@ -3,3 +3,10 @@
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Construct a Comment and set defaults
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $comment->__construct();
+~~~~~

@@ -7,10 +7,17 @@ Install this Pagefile
 Implies copying the file to the correct location (if not already there), and populating its name.
 The given $filename may be local (path) or external (URL).
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagefile->___install($filename);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Full path and filename of file to install, or http/https URL to pull file from.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

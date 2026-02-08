@@ -4,6 +4,13 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Set a translation using an already known hash
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageTranslator->setTranslationFromHash($textdomain, $hash, $translation);
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string`
@@ -12,4 +19,4 @@ Set a translation using an already known hash
 
 ## Return value
 
-string
+- `string`

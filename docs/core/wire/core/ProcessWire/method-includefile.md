@@ -6,6 +6,16 @@ Include a PHP file, giving it all PW API varibles in scope
 
 File is executed in the directory where it exists.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processWire->includeFile($file);
+
+// usage with all arguments
+$bool = $processWire->includeFile($file, array $data = array());
+~~~~~
+
 ## Arguments
 
 - `$file` `string` Full path and filename
@@ -13,4 +23,4 @@ File is executed in the directory where it exists.
 
 ## Return value
 
-bool True if file existed and was included, false if not.
+- `bool` True if file existed and was included, false if not.

@@ -6,6 +6,16 @@ Sanitize array or CSV string to array of unsigned integers (or signed integers i
 
 If string specified, string delimiter may be comma (","), or pipe ("|"), or you may override with the 'delimiter' option.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->intArray($value);
+
+// usage with all arguments
+$array = $sanitizer->intArray($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first value in array.
@@ -13,4 +23,4 @@ If string specified, string delimiter may be comma (","), or pipe ("|"), or you 
 
 ## Return value
 
-array Array of integers
+- `array` Array of integers

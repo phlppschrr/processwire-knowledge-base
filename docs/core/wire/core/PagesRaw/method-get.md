@@ -4,6 +4,16 @@ Source: `wire/core/PagesRaw.php`
 
 Get page (no exclusions) and return raw data from it in a PHP array
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesRaw->get($selector);
+
+// usage with all arguments
+$array = $pagesRaw->get($selector, $field = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors`
@@ -12,7 +22,7 @@ Get page (no exclusions) and return raw data from it in a PHP array
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

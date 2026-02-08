@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return number of pages this one is following (referencing) by way of Page references
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageTraversal->numReferencing($page);
+
+// usage with all arguments
+$int = $pageTraversal->numReferencing(Page $page, $field = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Return number of pages this one is following (referencing) by way of Page refere
 
 ## Return value
 
-int|array
+- `int|array`

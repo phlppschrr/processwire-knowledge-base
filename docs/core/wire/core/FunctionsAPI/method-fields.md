@@ -7,9 +7,21 @@ Get or save fields independent of templates ($fields API variable as as function
 This function behaves the same as the `$fields` API variable, though does support
 an optional shortcut argument for getting a single field.
 
+## Example
+
 ~~~~~
 $field = fields()->get('title'); // regular syntax
 $field = fields('title'); // shortcut syntax
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$fields = $functionsAPI->fields();
+
+// usage with all arguments
+$fields = $functionsAPI->fields($name = '');
 ~~~~~
 
 ## Arguments
@@ -18,8 +30,8 @@ $field = fields('title'); // shortcut syntax
 
 ## Return value
 
-Fields|Field|null
+- `Fields|Field|null`
 
-## See also
+## See Also
 
 - Fields

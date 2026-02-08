@@ -11,6 +11,13 @@ echo $s; // outputs: "name=bar"
 $pages->find("name=[foo]"); // finds pages with name=bar
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = Selectors::setCustomVariableValue($name, $value);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`

@@ -12,6 +12,16 @@ Is there any page that matches the given $selector in the system? (with no exclu
 When `$verbose` option is used, an array is returned instead. Verbose return array includes page `id`,
 `parent_id` and `templates_id` indexes.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pages->has($selector);
+
+// usage with all arguments
+$array = $pages->has($selector, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|int|array|Selectors`
@@ -19,9 +29,9 @@ When `$verbose` option is used, an array is returned instead. Verbose return arr
 
 ## Return value
 
-array|int
+- `array|int`
 
-## See also
+## See Also
 
 - [Pages::count()](method-count.md)
 - [Pages::get()](method-get.md)

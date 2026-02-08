@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Rename table columns without changing type
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireDatabasePDO->renameColumns($table, $columns);
+
+// usage with all arguments
+$int = $wireDatabasePDO->renameColumns($table, array $columns);
+~~~~~
+
 ## Arguments
 
 - `$table` `string`
@@ -11,11 +21,11 @@ Rename table columns without changing type
 
 ## Return value
 
-int Number of columns renamed
+- `int` Number of columns renamed
 
-## Throws
+## Exceptions
 
-- \PDOException
+- `\PDOException`
 
 ## Since
 

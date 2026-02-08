@@ -4,17 +4,24 @@ Source: `wire/core/WireCacheDatabase.php`
 
 Database cache maintenance (every 10 minutes)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireCacheDatabase->maintenance($obj);
+~~~~~
+
 ## Arguments
 
 - `$obj` `Template|Page`
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

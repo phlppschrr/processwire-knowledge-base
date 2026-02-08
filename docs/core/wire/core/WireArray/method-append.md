@@ -7,9 +7,18 @@ Append an item to the end of the WireArray
 This is a functionally identical alias of the `WireArray::add()` method here for
 naming consistency with the `WireArray::prepend()` method.
 
+## Example
+
 ~~~~~
 // Add item to end
 $items->append($item);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->append($item);
 ~~~~~
 
 ## Arguments
@@ -18,9 +27,9 @@ $items->append($item);
 
 ## Return value
 
-$this This instance.
+- `$this` This instance.
 
-## See also
+## See Also
 
 - [WireArray::prepend()](method-prepend.md)
 - [WireArray::add()](method-add.md)

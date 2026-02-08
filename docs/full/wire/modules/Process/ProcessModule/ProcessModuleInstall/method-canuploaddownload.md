@@ -6,6 +6,16 @@ Check that the system supports direct upload and download of modules
 
 This primarily checks that needed dirs are writable and ZipArchive is available.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processModuleInstall->canUploadDownload();
+
+// usage with all arguments
+$bool = $processModuleInstall->canUploadDownload($notify = true, $type = '');
+~~~~~
+
 ## Arguments
 
 - `$notify` (optional) `bool` Specify true to make it queue the relevant reason/error message if upload/download not supported. (default=false)
@@ -13,4 +23,4 @@ This primarily checks that needed dirs are writable and ZipArchive is available.
 
 ## Return value
 
-bool
+- `bool`

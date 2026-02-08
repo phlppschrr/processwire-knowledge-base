@@ -9,6 +9,8 @@ Add a hook to be executed before the hooked method
 - This type of hook can also completely replace a hookable method if hook populates an `$event->replace` property.
   See the HookEvent class for details.
 
+## Example
+
 ~~~~~
 // Attach hook to a method in current object
 $this->addHookBefore('Page::path', $this, 'yourHookMethodName');
@@ -23,6 +25,16 @@ $this->addHookBefore('Page::path', 'your_function_name');
 $page->addHookBefore('path', function($event) { ... });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wire->addHookBefore($method, $toObject);
+
+// usage with all arguments
+$string = $wire->addHookBefore($method, $toObject, $toMethod = null, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$method` `string|array` Method to hook in one of the following formats (please omit 3 leading underscores): - `Class::method` - If hooking to *all* object instances of the class. - `method` - If hooking to a single object instance. - Since 3.0.137 it may also be multiple methods to hook in CSV string or array.
@@ -32,8 +44,8 @@ $page->addHookBefore('path', function($event) { ... });
 
 ## Return value
 
-string A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
+- `string` A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
 
-## See also
+## See Also
 
 - [https://processwire.com/docs/modules/hooks/](https://processwire.com/docs/modules/hooks/)

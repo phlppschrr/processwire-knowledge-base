@@ -8,9 +8,16 @@ This is generally the same or similar to the module title, though in a $this->_(
 so that it is translatable. When a module implements this, it should not make a
 parent::getTfaTypeLabel() call.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $tfa->getTfaTypeTitle();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

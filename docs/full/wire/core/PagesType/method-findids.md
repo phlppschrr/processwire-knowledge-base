@@ -4,6 +4,16 @@ Source: `wire/core/PagesType.php`
 
 Given a Selector string, return the page IDs that match
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesType->findIDs($selectorString);
+
+// usage with all arguments
+$array = $pagesType->findIDs($selectorString, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectorString` `string`
@@ -11,9 +21,9 @@ Given a Selector string, return the page IDs that match
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [Pages::findIDs()](../Pages/method-findids.md)
 

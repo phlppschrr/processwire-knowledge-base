@@ -12,6 +12,13 @@ TFA login, then this method returns true, but user still needs to be authenticat
 If preferred, you can ignore the return value, as this method will perform redirects whenever
 it needs to move on to the next 2FA step.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $tfa->___start($name, $pass);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -19,4 +26,4 @@ it needs to move on to the next 2FA step.
 
 ## Return value
 
-bool
+- `bool`

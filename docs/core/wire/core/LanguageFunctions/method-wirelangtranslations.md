@@ -16,6 +16,8 @@ values contain the translation (see examples).
 The function affects behavior of future `__()`, `_x()` and `_n()` calls,
 and their objected-oriented equivalents.
 
+## Example
+
 ~~~~~
 // Return 'Hola' when text is 'Hello' and 'Mundo' when text is 'World'
 if($user->language->name == 'es') {
@@ -32,13 +34,23 @@ wireLangTranslations([
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $languageFunctions->wireLangTranslations();
+
+// usage with all arguments
+$array = $languageFunctions->wireLangTranslations(array $values = array());
+~~~~~
+
 ## Arguments
 
 - `$values` (optional) `array`
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

@@ -14,10 +14,17 @@ to do so) and return integer 1 after doing so.
 
 If method wants to explain why the file is not valid, it should call $this->error('reason why not valid').
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fileValidatorModule->isValidFile($filename);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Full path and filename to the file
 
 ## Return value
 
-bool|int
+- `bool|int`

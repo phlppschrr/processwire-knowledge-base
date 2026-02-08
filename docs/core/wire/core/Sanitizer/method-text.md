@@ -10,6 +10,8 @@ Sanitize short string of text to single line without HTML
 
 - If using returned value for front-end output, be sure to run it through `$sanitizer->entities()` first.
 
+## Example
+
 ~~~~~
 $str = "
   <strong>Hello World</strong>
@@ -20,6 +22,16 @@ echo $sanitizer->text($str);
 // outputs: Hello World How are you doing today?
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->text($value);
+
+// usage with all arguments
+$string = $sanitizer->text($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` String value to sanitize
@@ -27,9 +39,9 @@ echo $sanitizer->text($str);
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::textarea()](method-textarea.md)
 - [Sanitizer::line()](method-line.md)

@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Update options for field
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $selectableOptionManager->updateOptions($field, $options);
+
+// usage with all arguments
+$int = $selectableOptionManager->updateOptions(Field $field, $options);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -11,4 +21,4 @@ Update options for field
 
 ## Return value
 
-int Number of options updated
+- `int` Number of options updated

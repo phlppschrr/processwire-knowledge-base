@@ -4,6 +4,13 @@ Source: `wire/core/WireTextTools.php`
 
 Find the last occurrence of a character in a string
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireTextTools->strrchr($haystack, $needle);
+~~~~~
+
 ## Arguments
 
 - `$haystack` `string`
@@ -11,8 +18,8 @@ Find the last occurrence of a character in a string
 
 ## Return value
 
-false|string
+- `false|string`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.strrchr.php](https://www.php.net/manual/en/function.strrchr.php)

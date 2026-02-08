@@ -4,6 +4,16 @@ Source: `wire/core/PageimageDebugInfo.php`
 
 Helper method that converts a multidim array to a multidim object for the getDebugInfo method
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pageimageDebugInfo->arrayToObject($array, $object);
+
+// usage with all arguments
+$result = $pageimageDebugInfo->arrayToObject($array, &$object, $multidim = true);
+~~~~~
+
 ## Arguments
 
 - `$array` `array` the input array
@@ -12,4 +22,4 @@ Helper method that converts a multidim array to a multidim object for the getDeb
 
 ## Return value
 
-object the final multidim object
+- `object` the final multidim object

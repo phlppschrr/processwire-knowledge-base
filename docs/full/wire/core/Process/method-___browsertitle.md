@@ -4,8 +4,17 @@ Source: `wire/core/Process.php`
 
 Set the current browser title tag
 
+## Example
+
 ~~~~~
 $this->browserTitle("Hello World");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $process->___browserTitle($title);
 ~~~~~
 
 ## Arguments
@@ -14,4 +23,4 @@ $this->browserTitle("Hello World");
 
 ## Return value
 
-$this
+- `$this`

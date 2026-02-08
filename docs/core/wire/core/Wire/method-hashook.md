@@ -9,10 +9,19 @@ Returns true if the method or property is hooked, false if it isn’t.
 - Class context is assumed to be the current class this method is called on.
 - Also considers the class parents for hooks.
 
+## Example
+
 ~~~~~
 if($pages->hasHook('find()')) {
   // the Pages::find() method is hooked
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wire->hasHook($name);
 ~~~~~
 
 ## Arguments
@@ -21,8 +30,8 @@ if($pages->hasHook('find()')) {
 
 ## Return value
 
-bool True if this class instance has the hook, false if not.
+- `bool` True if this class instance has the hook, false if not.
 
-## Throws
+## Exceptions
 
-- WireException When you try to call it with a Class::something() type method, which is not supported.
+- `WireException` When you try to call it with a Class::something() type method, which is not supported.

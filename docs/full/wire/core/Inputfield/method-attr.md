@@ -9,6 +9,8 @@ Get or set an attribute (or multiple attributes)
 - You can also set multiple attributes at once, see examples below.
 - To get all attributes, just specify boolean true as first argument (since 3.0.16).
 
+## Example
+
 ~~~~~
 // Get the "value" attribute
 $value = $inputfield->attr('value');
@@ -30,6 +32,16 @@ $inputfield->attr("name+id", "foobar");
 $attrs = $inputfield->attr(true);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfield->attr($key);
+
+// usage with all arguments
+$inputfield = $inputfield->attr($key, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|array|bool` Specify one of the following: - Name of attribute to get (if getting an attribute). - Name of attribute to set (if setting an attribute, and also specifying a value). - Aassociative array to set multiple attributes. - String with attributes split by "+" or "|" to set them all to have the same value. - Specify boolean true to get all attributes in an associative array.
@@ -37,9 +49,9 @@ $attrs = $inputfield->attr(true);
 
 ## Return value
 
-Inputfield|array|string|int|object|float If setting an attribute, it returns this instance. If getting an attribute, the attribute is returned.
+- `Inputfield|array|string|int|object|float` If setting an attribute, it returns this instance. If getting an attribute, the attribute is returned.
 
-## See also
+## See Also
 
 - [Inputfield::removeAttr()](method-removeattr.md)
 - [Inputfield::addClass()](method-addclass.md)

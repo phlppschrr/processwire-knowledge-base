@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizer.php`
 
 Instantiate an ImageSizerEngine
 
+## Usage
+
+~~~~~
+// basic usage
+$imageSizerEngine = $imageSizer->newImageSizerEngine();
+
+// usage with all arguments
+$imageSizerEngine = $imageSizer->newImageSizerEngine($filename = '', array $options = array(), $inspectionResult = null);
+~~~~~
+
 ## Arguments
 
 - `$filename` (optional) `string`
@@ -12,8 +22,8 @@ Instantiate an ImageSizerEngine
 
 ## Return value
 
-ImageSizerEngine|null
+- `ImageSizerEngine|null`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

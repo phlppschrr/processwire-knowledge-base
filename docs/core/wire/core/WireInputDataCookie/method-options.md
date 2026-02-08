@@ -26,6 +26,16 @@ Options you can get or set:
    boolean `true` for all subdomains of current domain, `domain.com` for domain.com and *.domain.com [same as true], `www.domain.com`
    for www subdomain and and hostnames off of it, like dev.www.domain.com. (default=null, current hostname)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInputDataCookie->options();
+
+// usage with all arguments
+$string = $wireInputDataCookie->options($key = null, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|array|null`
@@ -33,7 +43,7 @@ Options you can get or set:
 
 ## Return value
 
-string|array|int|float|null|$this
+- `string|array|int|float|null|$this`
 
 ## Since
 

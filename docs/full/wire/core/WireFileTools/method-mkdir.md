@@ -10,11 +10,23 @@ and directory /a/ doesn't yet exist, this method will take care of creating /a/,
 
 The `$recursive` and `$chmod` arguments may optionally be swapped (since 3.0.34).
 
+## Example
+
 ~~~~~
 // Create a new directory in ProcessWire's cache dir
 if($files->mkdir($config->paths->cache . 'foo-bar/')) {
   // directory created: /site/assets/cache/foo-bar/
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->mkdir($path);
+
+// usage with all arguments
+$bool = $wireFileTools->mkdir($path, $recursive = false, $chmod = null);
 ~~~~~
 
 ## Arguments
@@ -25,4 +37,4 @@ if($files->mkdir($config->paths->cache . 'foo-bar/')) {
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure

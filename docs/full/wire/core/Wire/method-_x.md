@@ -6,6 +6,13 @@ Perform a language translation in a specific context
 
 Used when to text strings might be the same in English, but different in other languages.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wire->_x($text, $context);
+~~~~~
+
 ## Arguments
 
 - `$text` `string|array` Text for translation.
@@ -13,4 +20,4 @@ Used when to text strings might be the same in English, but different in other l
 
 ## Return value
 
-string Translated text or original text if translation not available.
+- `string` Translated text or original text if translation not available.

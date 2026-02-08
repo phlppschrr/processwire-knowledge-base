@@ -9,6 +9,13 @@ Uninstall this Fieldtype, consistent with optional Module interface
 - If a Fieldtype overrides this to perform additional uninstall functions, it would be good to call this
   parent uninstall method first to make sure uninstall is okay.
 
-## Throws
+## Usage
 
-- WireException Should throw an Exception if uninstall can't be completed.
+~~~~~
+// basic usage
+$result = $fieldtype->___uninstall();
+~~~~~
+
+## Exceptions
+
+- `WireException` Should throw an Exception if uninstall can't be completed.

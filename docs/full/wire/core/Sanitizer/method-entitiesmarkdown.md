@@ -19,12 +19,24 @@ Basic allowed markdown currently includes:
 - `~~strikethrough~~`
 - code surrounded by backticks
 
+## Example
+
 ~~~~~
 // basic markdown
 echo $sanitizer->entitiesMarkdown($str);
 
 // full markdown
 echo $sanitizer->entitiesMarkdown($str, true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->entitiesMarkdown($str);
+
+// usage with all arguments
+$string = $sanitizer->entitiesMarkdown($str, $options = array());
 ~~~~~
 
 ## Arguments
@@ -34,4 +46,4 @@ echo $sanitizer->entitiesMarkdown($str, true);
 
 ## Return value
 
-string Formatted with a flavor of markdown
+- `string` Formatted with a flavor of markdown

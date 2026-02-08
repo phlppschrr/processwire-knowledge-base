@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Encode a name value to PW-punycode
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->punyEncodeName($value);
+
+// usage with all arguments
+$string = $sanitizer->punyEncodeName($value, $version = 0);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -11,4 +21,4 @@ Encode a name value to PW-punycode
 
 ## Return value
 
-string
+- `string`

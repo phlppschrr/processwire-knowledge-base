@@ -4,6 +4,16 @@ Source: `wire/core/MarkupQA.php`
 
 Quality assurance for <img> tags
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $markupQA->checkImgTags($value);
+
+// usage with all arguments
+$result = $markupQA->checkImgTags(&$value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string`

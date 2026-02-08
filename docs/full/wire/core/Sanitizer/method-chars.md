@@ -8,11 +8,23 @@ You must provide a string of allowed characters in the `$allow` argument. If not
 the only [ a-z A-Z 0-9 ] are allowed. You may optionally specify `[alpha]` to refer to any
 ASCII alphabet character, or `[digit]` to refer to any digit.
 
+## Example
+
 ~~~~~
 echo $sanitizer->chars('foo123barBaz456', 'barz1'); // Outputs: 1baraz
 echo $sanitizer->chars('(800) 555-1234', '[digit]', '.');  // Outputs: 800.555.1234
 echo $sanitizer->chars('Decatur, GA 30030', '[alpha]', '-'); // Outputs: Decatur-GA
 echo $sanitizer->chars('Decatur, GA 30030', '[alpha][digit]', '-'); // Outputs: Decatur-GA-30030
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->chars($value);
+
+// usage with all arguments
+$string = $sanitizer->chars($value, $allow = '', $replacement = '', $collapse = true, $mb = null);
 ~~~~~
 
 ## Arguments
@@ -25,7 +37,7 @@ echo $sanitizer->chars('Decatur, GA 30030', '[alpha][digit]', '-'); // Outputs: 
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

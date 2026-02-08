@@ -4,9 +4,16 @@ Source: `wire/core/AdminTheme.php`
 
 Get URL to this admin theme
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminTheme->url();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

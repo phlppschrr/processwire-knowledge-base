@@ -6,6 +6,16 @@ Return the blank value for this fieldtype, whether that is a blank string, zero 
 
 Default/non-implemented behavior is to return a blanks string.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fieldtype->getBlankValue($page, $field);
+
+// usage with all arguments
+$string = $fieldtype->getBlankValue(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page|NullPage`
@@ -13,4 +23,4 @@ Default/non-implemented behavior is to return a blanks string.
 
 ## Return value
 
-string|int|object|null
+- `string|int|object|null`

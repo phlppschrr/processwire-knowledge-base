@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Find other pages linking to the given one by way contextual links is textarea/html fields
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->links($page);
+
+// usage with all arguments
+$items = $pageTraversal->links(Page $page, $selector = '', $field = false, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,8 +23,8 @@ Find other pages linking to the given one by way contextual links is textarea/ht
 
 ## Return value
 
-PageArray|array|int
+- `PageArray|array|int`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

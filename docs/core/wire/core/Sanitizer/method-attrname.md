@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize to an ASCII-only HTML attribute name
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->attrName($value);
+
+// usage with all arguments
+$string = $sanitizer->attrName($value, $maxLength = 255);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -11,7 +21,7 @@ Sanitize to an ASCII-only HTML attribute name
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

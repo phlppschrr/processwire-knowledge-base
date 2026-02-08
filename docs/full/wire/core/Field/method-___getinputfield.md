@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Get the Inputfield module used to collect input for this field.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $field->___getInputfield($page);
+
+// usage with all arguments
+$inputfield = $field->___getInputfield(Page $page, $contextStr = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that the Inputfield is for.
@@ -11,4 +21,4 @@ Get the Inputfield module used to collect input for this field.
 
 ## Return value
 
-Inputfield|null
+- `Inputfield|null`

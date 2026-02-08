@@ -4,6 +4,11 @@ Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Hook this method if you want to manipulate the numChildren count for pages
 
+
+See Page::numChildren() for details on arguments
+
+## Example
+
 ~~~~~
 $wire->addHookAfter('ProcessPageListRender::getNumChildren', function($event) {
   $page = $event->arguments(0);
@@ -12,7 +17,15 @@ $wire->addHookAfter('ProcessPageListRender::getNumChildren', function($event) {
 });
 ~~~~~
 
-See Page::numChildren() for details on arguments
+## Usage
+
+~~~~~
+// basic usage
+$int = $processPageListRender->___getNumChildren($page);
+
+// usage with all arguments
+$int = $processPageListRender->___getNumChildren(Page $page, $selector = null);
+~~~~~
 
 ## Arguments
 
@@ -21,4 +34,4 @@ See Page::numChildren() for details on arguments
 
 ## Return value
 
-int
+- `int`

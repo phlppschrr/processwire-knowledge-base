@@ -16,6 +16,16 @@ When the remove option is false, it will attempt to close unclosed tags rather t
 remove them. It doesn't know exactly where they should be closed, so it appends the
 close tags to the end of the string.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->fixUnclosedTags($str);
+
+// usage with all arguments
+$string = $wireTextTools->fixUnclosedTags($str, $remove = true, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
@@ -24,4 +34,4 @@ close tags to the end of the string.
 
 ## Return value
 
-string
+- `string`

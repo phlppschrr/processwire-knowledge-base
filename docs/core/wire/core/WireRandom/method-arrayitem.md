@@ -12,6 +12,16 @@ Get a random item (or items, key or keys) from the given array
 - When using the `getArray` option, returned array will have keys retained, except when `qty`
   option exceeds the number of items in given array `$a`, then keys will not be retained.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireRandom->arrayItem($a);
+
+// usage with all arguments
+$result = $wireRandom->arrayItem(array $a, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Array to get random item from
@@ -19,4 +29,4 @@ Get a random item (or items, key or keys) from the given array
 
 ## Return value
 
-mixed|array|null
+- `mixed|array|null`

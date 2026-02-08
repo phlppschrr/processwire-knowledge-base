@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Allow given Comment to have given parent comment?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $commentField->allowCommentParent($comment, $parent);
+
+// usage with all arguments
+$bool = $commentField->allowCommentParent(Comment $comment, $parent, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`
@@ -12,7 +22,7 @@ Allow given Comment to have given parent comment?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

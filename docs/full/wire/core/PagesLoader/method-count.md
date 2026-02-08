@@ -4,6 +4,16 @@ Source: `wire/core/PagesLoader.php`
 
 Count and return how many pages will match the given selector string
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesLoader->count();
+
+// usage with all arguments
+$int = $pagesLoader->count($selector = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|array|Selectors` Specify selector, or omit to retrieve a site-wide count.
@@ -11,4 +21,4 @@ Count and return how many pages will match the given selector string
 
 ## Return value
 
-int
+- `int`

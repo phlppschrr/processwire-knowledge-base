@@ -4,6 +4,7 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Is the given string a database comparison operator?
 
+## Example
 
 ~~~~~
 if($database->isOperator('>=')) {
@@ -11,6 +12,16 @@ if($database->isOperator('>=')) {
 } else {
   // not a valid database operator
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->isOperator($str);
+
+// usage with all arguments
+$bool = $wireDatabasePDO->isOperator($str, $operatorType = self::operatorTypeAny, $get = false);
 ~~~~~
 
 ## Arguments
@@ -21,4 +32,4 @@ if($database->isOperator('>=')) {
 
 ## Return value
 
-bool True if valid, false if not
+- `bool` True if valid, false if not

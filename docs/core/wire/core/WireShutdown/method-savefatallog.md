@@ -4,6 +4,13 @@ Source: `wire/core/WireShutdown.php`
 
 Save fatal error to log
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireShutdown->saveFatalLog($url, $userName, $message);
+~~~~~
+
 ## Arguments
 
 - `$url` `string`
@@ -12,4 +19,4 @@ Save fatal error to log
 
 ## Return value
 
-bool
+- `bool`

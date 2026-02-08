@@ -4,6 +4,13 @@ Source: `wire/core/WireDateTime.php`
 
 Given a date/time string and expected format, convert it to a unix timestamp
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireDateTime->stringToTimestamp($str, $format);
+~~~~~
+
 ## Arguments
 
 - `$str` `string` Date/time string
@@ -11,4 +18,4 @@ Given a date/time string and expected format, convert it to a unix timestamp
 
 ## Return value
 
-int Unix timestamp
+- `int` Unix timestamp

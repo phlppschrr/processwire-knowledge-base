@@ -4,6 +4,13 @@ Source: `wire/core/WireTextTools.php`
 
 Count the number of substring occurrences
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireTextTools->substrCount($haystack, $needle);
+~~~~~
+
 ## Arguments
 
 - `$haystack` `string`
@@ -11,8 +18,8 @@ Count the number of substring occurrences
 
 ## Return value
 
-int
+- `int`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.substr-count.php](https://www.php.net/manual/en/function.substr-count.php)

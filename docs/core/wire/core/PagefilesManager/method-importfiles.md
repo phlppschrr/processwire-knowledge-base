@@ -4,6 +4,16 @@ Source: `wire/core/PagefilesManager.php`
 
 Copy/import files from given path into the page’s files directory
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagefilesManager->importFiles($fromPath);
+
+// usage with all arguments
+$int = $pagefilesManager->importFiles($fromPath, $move = false);
+~~~~~
+
 ## Arguments
 
 - `$fromPath` `string` Path to copy/import files from.
@@ -11,7 +21,7 @@ Copy/import files from given path into the page’s files directory
 
 ## Return value
 
-int Number of files/directories copied.
+- `int` Number of files/directories copied.
 
 ## Since
 

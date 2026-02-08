@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngine.php`
 
 Make IPTC tag (@horst)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $imageSizerEngine->iptcMakeTag($rec, $dat, $val);
+~~~~~
+
 ## Arguments
 
 - `$rec` `string`
@@ -12,4 +19,4 @@ Make IPTC tag (@horst)
 
 ## Return value
 
-string
+- `string`

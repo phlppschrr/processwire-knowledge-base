@@ -4,6 +4,13 @@ Source: `wire/core/FileCompiler.php`
 
 Initialize paths
 
-## Throws
+## Usage
 
-- WireException
+~~~~~
+// basic usage
+$result = $fileCompiler->init();
+~~~~~
+
+## Exceptions
+
+- `WireException`

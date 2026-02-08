@@ -11,6 +11,16 @@ If you specify boolean `true` for the verbose option then it returns an simplifi
 information about the primary key. If you specify integer `2` then it returns an array of
 raw MySQL SHOW INDEX information.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->getPrimaryKey($table);
+
+// usage with all arguments
+$string = $wireDatabasePDO->getPrimaryKey($table, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$table` `string`
@@ -18,7 +28,7 @@ raw MySQL SHOW INDEX information.
 
 ## Return value
 
-string|array
+- `string|array`
 
 ## Since
 

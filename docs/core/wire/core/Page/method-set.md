@@ -6,12 +6,21 @@ Set the value of a page property
 
 You can set properties to a page using either `$page->set('property', $value);` or `$page->property = $value;`.
 
+## Example
+
 ~~~~~
 // Set the page title using set() method
 $page->set('title', 'About Us');
 
 // Set the page title directly (equivalent to the above)
 $page->title = 'About Us';
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$page = $page->set($key, $value);
 ~~~~~
 
 ## Arguments
@@ -21,12 +30,12 @@ $page->title = 'About Us';
 
 ## Return value
 
-Page|WireData Reference to this Page
+- `Page|WireData` Reference to this Page
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - __set

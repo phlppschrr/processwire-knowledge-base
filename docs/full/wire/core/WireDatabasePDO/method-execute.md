@@ -11,11 +11,23 @@ Unlike other PDO methods, this one (native to ProcessWire) will retry queries
 if they failed due to a lost connection. By default it will retry up to 3 times,
 but you can adjust this number as needed in the arguments.
 
+## Example
+
 ~~~~~
 // prepare the query
 $query = $database->prepare("SELECT id, name FROM pages LIMIT 10");
 // you can do the following, rather than native PDO $query->execute();
 $database->execute($query);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->execute($query);
+
+// usage with all arguments
+$bool = $wireDatabasePDO->execute(\PDOStatement $query, $throw = true, $maxTries = 3);
 ~~~~~
 
 ## Arguments
@@ -26,8 +38,8 @@ $database->execute($query);
 
 ## Return value
 
-bool True on success, false on failure. Note if you want this, specify $throw=false in your arguments.
+- `bool` True on success, false on failure. Note if you want this, specify $throw=false in your arguments.
 
-## Throws
+## Exceptions
 
-- \PDOException
+- `\PDOException`

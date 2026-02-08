@@ -7,6 +7,8 @@ Get or set values in the current user session ($session API variable as a functi
 This function behaves the same as the `$session` API variable, though does support
 optional shortcut arguments for getting or setting values.
 
+## Example
+
 ~~~~~
 // Get a value from the session
 $foo = session()->foo; // direct syntax
@@ -19,6 +21,16 @@ session()->set('foo', 'bar');  // regular syntax
 session('foo', 'bar'); // shortcut syntax
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$session = $functionsAPI->session();
+
+// usage with all arguments
+$session = $functionsAPI->session($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Optional property to get or set
@@ -26,8 +38,8 @@ session('foo', 'bar'); // shortcut syntax
 
 ## Return value
 
-Session|null|string|array|int|float
+- `Session|null|string|array|int|float`
 
-## See also
+## See Also
 
 - Session

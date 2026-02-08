@@ -4,6 +4,8 @@ Source: `wire/core/Pagefile.php`
 
 Return the web accessible URL to this Pagefile.
 
+## Example
+
 ~~~~~
 // Example of using the url method/property
 foreach($page->files as $file) {
@@ -11,10 +13,17 @@ foreach($page->files as $file) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagefile->url();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - Pagefile:httpUrl()

@@ -4,13 +4,20 @@ Source: `wire/core/Template.php`
 
 Add tag
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $template->addTag($tag);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string`
 
 ## Return value
 
-$this
+- `$this`
 
 ## Since
 

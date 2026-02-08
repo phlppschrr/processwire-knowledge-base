@@ -33,6 +33,16 @@ Use the `$options` array for potential speed optimizations:
 - Specify false for 'findTemplates' so this method doesn't have to look them up. Potential speed optimization if you have few autojoin fields globally.
 - Note that if you specify false for 'findTemplates' the pageClass is assumed to be 'Page' unless you specify something different for the 'pageClass' option.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesLoader->getById($_ids);
+
+// usage with all arguments
+$items = $pagesLoader->getById($_ids, $template = null, $parent_id = null);
+~~~~~
+
 ## Arguments
 
 - `$_ids` `array|WireArray|string|int` Array of page IDs, comma or pipe-separated string of IDs, or single page ID (string or int) or in 3.0.156+ array of associative arrays where each in format: [ 'id' => 123, 'templates_id' => 456 ]
@@ -41,8 +51,8 @@ Use the `$options` array for potential speed optimizations:
 
 ## Return value
 
-PageArray|Page|NullPage Returns Page only if the 'getOne' option is specified, otherwise always returns a PageArray.
+- `PageArray|Page|NullPage` Returns Page only if the 'getOne' option is specified, otherwise always returns a PageArray.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

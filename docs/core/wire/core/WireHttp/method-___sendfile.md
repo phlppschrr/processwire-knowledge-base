@@ -9,6 +9,16 @@ to content type headers and force-download state.
 
 This function throws a `WireException` if the file can't be sent for some reason.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireHttp->___sendFile($filename);
+
+// usage with all arguments
+$int = $wireHttp->___sendFile($filename, array $options = array(), array $headers = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string|bool` Filename to send (or boolean false if sending $options[data] rather than file)
@@ -17,8 +27,8 @@ This function throws a `WireException` if the file can't be sent for some reason
 
 ## Return value
 
-int Returns value only if `exit` option is false (value is quantity of bytes sent)
+- `int` Returns value only if `exit` option is false (value is quantity of bytes sent)
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

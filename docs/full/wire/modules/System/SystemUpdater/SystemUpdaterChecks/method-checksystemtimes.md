@@ -4,9 +4,16 @@ Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Check that database time and PHP time match
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $systemUpdaterChecks->checkSystemTimes();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

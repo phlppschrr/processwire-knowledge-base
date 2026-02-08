@@ -4,13 +4,20 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Get option by ID
 
+## Usage
+
+~~~~~
+// basic usage
+$selectableOption = $selectableOptionArray->getByID($id);
+~~~~~
+
 ## Arguments
 
 - `$id` `int`
 
 ## Return value
 
-SelectableOption|null
+- `SelectableOption|null`
 
 ## Since
 

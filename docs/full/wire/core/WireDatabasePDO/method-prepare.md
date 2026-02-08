@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Prepare an SQL statement for accepting bound parameters
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabasePDO->prepare($statement);
+
+// usage with all arguments
+$result = $wireDatabasePDO->prepare($statement, $driver_options = array(), $note = '');
+~~~~~
+
 ## Arguments
 
 - `$statement` `string`
@@ -12,7 +22,7 @@ Prepare an SQL statement for accepting bound parameters
 
 ## Return value
 
-\PDOStatement|WireDatabasePDOStatement
+- `\PDOStatement|WireDatabasePDOStatement`
 
 ## Details
 

@@ -4,6 +4,8 @@ Source: `wire/core/Page.php`
 
 Called when a status flag has been removed from this page (and saved)
 
+## Example
+
 ~~~~~
 $wire->addHook('Page::removedStatus', function($e) {
   $page = $e->object;
@@ -11,6 +13,13 @@ $wire->addHook('Page::removedStatus', function($e) {
   $e->message("Removed status $name from page $page");
   if($name === 'unpublished') $e->message("Published page $page");
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___removedStatus($name, $value);
 ~~~~~
 
 ## Arguments

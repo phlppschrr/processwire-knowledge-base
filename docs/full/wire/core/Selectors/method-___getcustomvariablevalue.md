@@ -10,13 +10,20 @@ variables typically wouldn't be available.
 
 If hooking this method, /site/ready.php is recommended.
 
+## Usage
+
+~~~~~
+// basic usage
+$selectors->___getCustomVariableValue($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
 
 ## Return value
 
-null|string
+- `null|string`
 
 ## Since
 

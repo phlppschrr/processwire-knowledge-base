@@ -9,6 +9,16 @@ attribute name wrapped in `{}`, i.e. `{class}`
 
 Note that class attributes are appended while other attributes are replaced.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldWrapper->setAttributeInMarkup($name, $value, $markup);
+
+// usage with all arguments
+$string = $inputfieldWrapper->setAttributeInMarkup($name, $value, $markup, $removeEmpty = false);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Attribute name (i.e. "class", "for", etc.)
@@ -18,7 +28,7 @@ Note that class attributes are appended while other attributes are replaced.
 
 ## Return value
 
-string Updated markup
+- `string` Updated markup
 
 ## Since
 

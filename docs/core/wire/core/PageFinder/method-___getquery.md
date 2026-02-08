@@ -4,6 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Given one or more selectors, create the SQL query for finding pages.
 
+## Usage
+
+~~~~~
+// basic usage
+$databaseQuerySelect = $pageFinder->___getQuery($selectors, $options);
+
+// usage with all arguments
+$databaseQuerySelect = $pageFinder->___getQuery($selectors, array $options);
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors` Array of selectors.
@@ -11,11 +21,11 @@ Given one or more selectors, create the SQL query for finding pages.
 
 ## Return value
 
-DatabaseQuerySelect
+- `DatabaseQuerySelect`
 
-## Throws
+## Exceptions
 
-- PageFinderSyntaxException
+- `PageFinderSyntaxException`
 
 ## Details
 

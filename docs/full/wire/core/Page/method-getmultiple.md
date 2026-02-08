@@ -10,6 +10,8 @@ of those property/field values. By default it returns a regular (non-indexed) PH
 array in the same order given. To instead get an associative array indexed by the
 property/field names given, specify `true` for the `$assoc` argument.
 
+## Example
+
 ~~~~~
 // returns regular array i.e. [ 'foo val', 'bar val' ]
 $a = $page->getMultiple([ 'foo', 'bar' ]);
@@ -24,6 +26,16 @@ $bar = $a['bar'];
 $a = $page->getMultiple('foo,bar');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $page->getMultiple($keys);
+
+// usage with all arguments
+$array = $page->getMultiple($keys, $assoc = false);
+~~~~~
+
 ## Arguments
 
 - `$keys` `array|string` Array or CSV string of properties to get.
@@ -31,7 +43,7 @@ $a = $page->getMultiple('foo,bar');
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

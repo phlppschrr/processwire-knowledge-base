@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
 Render the comment
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentListCustom->___renderItem($comment);
+
+// usage with all arguments
+$string = $commentListCustom->___renderItem(Comment $comment, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`
@@ -11,8 +21,8 @@ Render the comment
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [CommentArray::render()](../CommentArray/method-render.md)

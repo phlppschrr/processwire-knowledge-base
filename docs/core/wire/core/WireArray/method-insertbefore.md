@@ -4,8 +4,17 @@ Source: `wire/core/WireArray.php`
 
 Insert an item before an existing item
 
+## Example
+
 ~~~~~
 $items->insertBefore($newItem, $existingItem);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->insertBefore($item, $existingItem);
 ~~~~~
 
 ## Arguments
@@ -15,4 +24,4 @@ $items->insertBefore($newItem, $existingItem);
 
 ## Return value
 
-$this
+- `$this`

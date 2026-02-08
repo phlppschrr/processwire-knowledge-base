@@ -8,6 +8,16 @@ Must be called once the current $user is known as it may change the $page.
 Returns NullPage if user lacks access or page out of bounds.
 Returns different page if it should be substituted due to lack of access (like login page).
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesRequest->___getPageForUser($page, $user);
+
+// usage with all arguments
+$page = $pagesRequest->___getPageForUser(Page $page, User $user);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -15,4 +25,4 @@ Returns different page if it should be substituted due to lack of access (like l
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`

@@ -4,6 +4,16 @@ Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Get verbose data array of words identified and prepared for boolean mode
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $databaseQuerySelectFulltext->getBooleanModeWords($value);
+
+// usage with all arguments
+$array = $databaseQuerySelectFulltext->getBooleanModeWords($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -11,4 +21,4 @@ Get verbose data array of words identified and prepared for boolean mode
 
 ## Return value
 
-array Value provided to the function with boolean operators added, or verbose array.
+- `array` Value provided to the function with boolean operators added, or verbose array.

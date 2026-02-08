@@ -11,6 +11,16 @@ array returned by the `get()` method.
 
 Please access this method from `$pages->pathFinder()->getPage('…');`
 
+## Usage
+
+~~~~~
+// basic usage
+$nullPage = $pagesPathFinder->getPage($path);
+
+// usage with all arguments
+$nullPage = $pagesPathFinder->getPage($path, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
@@ -18,8 +28,8 @@ Please access this method from `$pages->pathFinder()->getPage('…');`
 
 ## Return value
 
-NullPage|Page
+- `NullPage|Page`
 
-## See also
+## See Also
 
 - [PagesPathFinder::get()](method-get.md)

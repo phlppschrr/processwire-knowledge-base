@@ -7,10 +7,20 @@ Return quantity of versions available for given page
 This is the same as calling the `hasPageVersion()` method
 with $version argument omitted.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesVersions->hasPageVersions($page);
+
+// usage with all arguments
+$int = $pagesVersions->hasPageVersions(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
 
 ## Return value
 
-int
+- `int`

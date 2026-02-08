@@ -4,13 +4,20 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Remove given meta data property or '*' to remove all
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $comment->removeMeta($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
 
 ## Return value
 
-self
+- `self`
 
 ## Since
 

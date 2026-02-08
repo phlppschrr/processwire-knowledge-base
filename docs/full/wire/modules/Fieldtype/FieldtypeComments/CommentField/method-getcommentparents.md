@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Get parent comments for given Comment
 
+## Usage
+
+~~~~~
+// basic usage
+$commentArray = $commentField->getCommentParents($page, $comment);
+
+// usage with all arguments
+$commentArray = $commentField->getCommentParents(Page $page, Comment $comment);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,7 +21,7 @@ Get parent comments for given Comment
 
 ## Return value
 
-CommentArray
+- `CommentArray`
 
 ## Since
 

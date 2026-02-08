@@ -6,6 +6,16 @@ Convert string to be all snake_case (lowercase and underscores)
 
 For example, "Hello World" or "hello-world" becomes "hello_world".
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->snakeCase($value);
+
+// usage with all arguments
+$string = $sanitizer->snakeCase($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -13,4 +23,4 @@ For example, "Hello World" or "hello-world" becomes "hello_world".
 
 ## Return value
 
-string
+- `string`

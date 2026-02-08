@@ -4,6 +4,8 @@ Source: `wire/core/Functions.php`
 
 Get namespace for given class
 
+## Example
+
 ~~~~~
 echo wireClassNamespace('Page'); // returns: "\ProcessWire\"
 echo wireClassNamespace('DirectoryIterator'); // returns: "\"
@@ -24,6 +26,16 @@ if(is_array($val)) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $functions->wireClassNamespace($className);
+
+// usage with all arguments
+$string = $functions->wireClassNamespace($className, $withClass = false, $strict = false);
+~~~~~
+
 ## Arguments
 
 - `$className` `string|object`
@@ -32,7 +44,7 @@ if(is_array($val)) {
 
 ## Return value
 
-string|array Returns one of the following: - String of `\Namespace\` (leading+trailing backslashes) if namespace found. - String of `\` if class in root namespace. - Blank string if unable to find namespace for class. - Array of namespaces only if $strict option is true AND multiple namespaces were found for class. - If the $withClass option is true, then return value(s) have class, i.e. `\Namespace\ClassName`.
+- `string|array` Returns one of the following: - String of `\Namespace\` (leading+trailing backslashes) if namespace found. - String of `\` if class in root namespace. - Blank string if unable to find namespace for class. - Array of namespaces only if $strict option is true AND multiple namespaces were found for class. - If the $withClass option is true, then return value(s) have class, i.e. `\Namespace\ClassName`.
 
 ## Since
 

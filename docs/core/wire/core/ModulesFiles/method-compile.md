@@ -4,6 +4,16 @@ Source: `wire/core/ModulesFiles.php`
 
 Compile and return the given file for module, if allowed to do so
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $modulesFiles->compile($moduleName);
+
+// usage with all arguments
+$string = $modulesFiles->compile($moduleName, $file = '', $namespace = null);
+~~~~~
+
 ## Arguments
 
 - `$moduleName` `Module|string`
@@ -12,4 +22,4 @@ Compile and return the given file for module, if allowed to do so
 
 ## Return value
 
-string|bool
+- `string|bool`

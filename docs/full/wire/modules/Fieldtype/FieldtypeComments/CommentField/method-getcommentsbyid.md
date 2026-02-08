@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Get multiple comments by ID
 
+## Usage
+
+~~~~~
+// basic usage
+$commentArray = $commentField->getCommentsByID($ids);
+
+// usage with all arguments
+$commentArray = $commentField->getCommentsByID(array $ids, $page = null);
+~~~~~
+
 ## Arguments
 
 - `$ids` `int[]` Comment IDs
@@ -11,7 +21,7 @@ Get multiple comments by ID
 
 ## Return value
 
-CommentArray
+- `CommentArray`
 
 ## Since
 

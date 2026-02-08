@@ -36,6 +36,8 @@ arguments may be provided in the given $options array. These options may be spec
 - Specify false for `findTemplates` so this method doesn't have to look them up. Potential speed optimization if you have few autojoin fields globally.
 - Note that if you specify false for `findTemplates` the pageClass is assumed to be 'Page' unless you specify something different for the 'pageClass' option.
 
+## Example
+
 ~~~~~
 // Retrieve pages by IDs in CSV string
 $items = $pages->getById("1111,2222,3333");
@@ -53,6 +55,16 @@ $items = $pages->getById([1111,2222,3333], [
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pages->getById($_ids);
+
+// usage with all arguments
+$items = $pages->getById($_ids, $template = null, $parent_id = null);
+~~~~~
+
 ## Arguments
 
 - `$_ids` `array|WireArray|string|int` Array of Page IDs, CSV string of Page IDs, or single page ID.
@@ -61,8 +73,8 @@ $items = $pages->getById([1111,2222,3333], [
 
 ## Return value
 
-PageArray|Page Returns Page only if the 'getOne' option is specified, otherwise always returns a PageArray.
+- `PageArray|Page` Returns Page only if the 'getOne' option is specified, otherwise always returns a PageArray.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Open a new file for writing (for download methods)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireHttp->openWritableFile($toFile);
+
+// usage with all arguments
+$result = $wireHttp->openWritableFile($toFile, $fp = false);
+~~~~~
+
 ## Arguments
 
 - `$toFile` `string`
@@ -11,11 +21,11 @@ Open a new file for writing (for download methods)
 
 ## Return value
 
-resource
+- `resource`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

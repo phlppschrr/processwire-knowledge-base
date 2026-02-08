@@ -4,15 +4,25 @@ Source: `wire/core/Selector.php`
 
 Return array of value(s) for this Selector
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $selector->values();
+
+// usage with all arguments
+$array = $selector->values($nonEmpty = false);
+~~~~~
+
 ## Arguments
 
 - `$nonEmpty` (optional) `bool` If empty array will be returned, forces it to return array with one blank item instead (default=false).
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [Selector::value()](method-value.md)
 

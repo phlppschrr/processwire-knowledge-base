@@ -4,6 +4,13 @@ Source: `wire/core/Session.php`
 
 Unset a session variable within a namespace
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->removeFor($ns, $key);
+~~~~~
+
 ## Arguments
 
 - `$ns` `string|object` Namespace
@@ -11,4 +18,4 @@ Unset a session variable within a namespace
 
 ## Return value
 
-$this
+- `$this`

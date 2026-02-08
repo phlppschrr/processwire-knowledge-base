@@ -4,9 +4,21 @@ Source: `wire/core/Wire.php`
 
 Return an array of properties that have changed while change tracking was on.
 
+## Example
+
 ~~~~~
 // Get an array of changed field names
 $changes = $page->getChanges();
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$array = $wire->getChanges();
+
+// usage with all arguments
+$array = $wire->getChanges($getValues = false);
 ~~~~~
 
 ## Arguments
@@ -15,4 +27,4 @@ $changes = $page->getChanges();
 
 ## Return value
 
-array
+- `array`

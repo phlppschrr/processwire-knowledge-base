@@ -9,10 +9,22 @@ Sanitize and validate given URL or return blank if it can’t be made valid
 - Please note that URLs should always be entity encoded in your output. Many evil things are technically allowed in a valid URL,
   so your output should always entity encoded any URLs that came from user input.
 
+## Example
+
 ~~~~~~
 $url = $sanitizer->url('processwire.com/api/');
 echo $sanitizer->entities($url); // outputs: http://processwire.com/api/
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->url($value);
+
+// usage with all arguments
+$string = $sanitizer->url($value, $options = array());
+~~~~~
 
 ## Arguments
 
@@ -21,8 +33,8 @@ echo $sanitizer->entities($url); // outputs: http://processwire.com/api/
 
 ## Return value
 
-string Returns a valid URL or blank string if it can’t be made valid.
+- `string` Returns a valid URL or blank string if it can’t be made valid.
 
-## Throws
+## Exceptions
 
-- WireException on invalid URLs, only if `$options['throw']` is true.
+- `WireException` on invalid URLs, only if `$options['throw']` is true.

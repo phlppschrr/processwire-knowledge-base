@@ -4,6 +4,8 @@ Source: `wire/core/Inputfield.php`
 
 Remove the given class (or classes) from this Inputfield
 
+## Example
+
 ~~~~~
 // Remove the "foo" class
 $inputfield->removeClass('foo');
@@ -15,6 +17,16 @@ $inputfield->removeClass('foo bar');
 $inputfield->removeClass('bar', 'wrapClass');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfield->removeClass($class);
+
+// usage with all arguments
+$result = $inputfield->removeClass($class, $property = 'class');
+~~~~~
+
 ## Arguments
 
 - `$class` `string|array` Class name you want to remove or specify one of the following: - Single class name to remove. - Space-separated class names you want to remove (Since 3.0.16). - Array of class names you want to remove (Since 3.0.16).
@@ -22,9 +34,9 @@ $inputfield->removeClass('bar', 'wrapClass');
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [Inputfield::addClass()](method-addclass.md)
 - [Inputfield::hasClass()](method-hasclass.md)

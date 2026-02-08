@@ -7,6 +7,16 @@ Get all indexes from given table
 By default it returns an array of index names. Specify true for the verbose option to get
 index `name`, `type` and `columns` (array) for each index.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDatabasePDO->getIndexes($table);
+
+// usage with all arguments
+$array = $wireDatabasePDO->getIndexes($table, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$table` `string` Name of table to get indexes for or `table.index` (usually combined with verbose option).
@@ -14,7 +24,7 @@ index `name`, `type` and `columns` (array) for each index.
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

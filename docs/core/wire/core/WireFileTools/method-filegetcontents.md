@@ -8,6 +8,16 @@ This is the same as PHP’s `file_get_contents()` except that the arguments are 
 it may be preferable to use this in ProcessWire for future cases where the file system may be
 abstracted from the installation.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->fileGetContents($filename);
+
+// usage with all arguments
+$bool = $wireFileTools->fileGetContents($filename, $offset = 0, $maxlen = 0);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Full path and filename to read
@@ -16,9 +26,9 @@ abstracted from the installation.
 
 ## Return value
 
-bool|string Returns the read data (string) or boolean false on failure.
+- `bool|string` Returns the read data (string) or boolean false on failure.
 
-## See also
+## See Also
 
 - [WireFileTools::filePutContents()](method-fileputcontents.md)
 

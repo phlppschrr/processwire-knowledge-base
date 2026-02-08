@@ -13,6 +13,16 @@ and won't always work with paths outside ProcessWire.
 This method validates only and does not sanitize. See `$sanitizer->pagePathName()` for a similar
 method that does sanitiation.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $sanitizer->path($value);
+
+// usage with all arguments
+$bool = $sanitizer->path($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Path to validate
@@ -20,8 +30,8 @@ method that does sanitiation.
 
 ## Return value
 
-bool|string Returns false if invalid, actual path (string) if valid.
+- `bool|string` Returns false if invalid, actual path (string) if valid.
 
-## See also
+## See Also
 
 - [Sanitizer::pagePathName()](method-pagepathname.md)

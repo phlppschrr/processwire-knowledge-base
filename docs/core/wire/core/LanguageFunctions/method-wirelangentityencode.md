@@ -15,13 +15,23 @@ The following can be used for the `$value` argument:
 
 To get current entity encoding state, call this function with no arguments.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $languageFunctions->wireLangEntityEncode();
+
+// usage with all arguments
+$bool = $languageFunctions->wireLangEntityEncode($value = '');
+~~~~~
+
 ## Arguments
 
 - `$value` (optional) `bool|int|string|null`
 
 ## Return value
 
-bool|int|string|null
+- `bool|int|string|null`
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Update the region(s) that match the given $selector with the given $content (markup/text)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->update($selector, $content, $markup);
+
+// usage with all arguments
+$string = $wireMarkupRegions->update($selector, $content, $markup, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string` Specify one of the following: - Name of an attribute that must be present, i.e. "data-region", or "attribute=value" or "tag[attribute=value]". - Specify `#name` to match a specific `id='name'` attribute. - Specify `.name` or `tag.name` to match a specific `class='name'` attribute (class can appear anywhere in class attribute). - Specify `<tag>` to match all of those HTML tags (i.e. `<head>`, `<body>`, `<title>`, `<footer>`, etc.)
@@ -13,4 +23,4 @@ Update the region(s) that match the given $selector with the given $content (mar
 
 ## Return value
 
-string
+- `string`

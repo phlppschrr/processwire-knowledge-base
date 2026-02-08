@@ -6,6 +6,13 @@ Create the extra file
 
 Must be implemented by a hook or by descending class
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagefileExtra->___create();
+~~~~~
+
 ## Return value
 
-bool Returns true on success, false on fail
+- `bool` Returns true on success, false on fail

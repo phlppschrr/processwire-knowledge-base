@@ -4,6 +4,16 @@ Source: `wire/core/PagesPathFinder.php`
 
 Apply a found pages table row to the $result and return corresponding path
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesPathFinder->applyPagesRow($parts, $row);
+
+// usage with all arguments
+$string = $pagesPathFinder->applyPagesRow(array $parts, $row);
+~~~~~
+
 ## Arguments
 
 - `$parts` `array`
@@ -11,4 +21,4 @@ Apply a found pages table row to the $result and return corresponding path
 
 ## Return value
 
-string Path string
+- `string` Path string

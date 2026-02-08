@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Unzip the module file to tempDir and then copy to destination directory
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processModuleInstall->unzipModule($zipFile);
+
+// usage with all arguments
+$bool = $processModuleInstall->unzipModule($zipFile, $destinationDir = '');
+~~~~~
+
 ## Arguments
 
 - `$zipFile` `string` File to unzip
@@ -11,8 +21,8 @@ Unzip the module file to tempDir and then copy to destination directory
 
 ## Return value
 
-bool|string Returns destinationDir on success, false on failure
+- `bool|string` Returns destinationDir on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

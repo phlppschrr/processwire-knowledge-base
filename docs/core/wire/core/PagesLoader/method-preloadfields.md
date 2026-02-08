@@ -17,6 +17,16 @@ purposes using the `useFieldtypeMulti` $options argument.
 
 NOTE: This function is currently experimental, recommended for testing only.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesLoader->preloadFields($page, $fieldNames);
+
+// usage with all arguments
+$array = $pagesLoader->preloadFields(Page $page, array $fieldNames, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to preload fields for
@@ -25,7 +35,7 @@ NOTE: This function is currently experimental, recommended for testing only.
 
 ## Return value
 
-array Array containing what was loaded and skipped
+- `array` Array containing what was loaded and skipped
 
 ## Since
 

@@ -4,6 +4,13 @@ Source: `wire/core/Pageimage.php`
 
 If this image is a variation, return the original, otherwise return null.
 
+## Usage
+
+~~~~~
+// basic usage
+$pageimage = $pageimage->getOriginal();
+~~~~~
+
 ## Return value
 
-Pageimage|null
+- `Pageimage|null`

@@ -4,6 +4,8 @@ Source: `wire/core/Session.php`
 
 Unset a session variable
 
+## Example
+
 ~~~~~
 // Unset a session var
 $session->remove('firstName');
@@ -15,6 +17,16 @@ $session->remove($this, 'firstName');
 $session->remove($this, true);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->remove($key);
+
+// usage with all arguments
+$result = $session->remove($key, $_key = null);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|object` Name of session variable you want to remove (or namespace string/object)
@@ -22,4 +34,4 @@ $session->remove($this, true);
 
 ## Return value
 
-$this
+- `$this`

@@ -23,12 +23,21 @@ WireArray derived classes (assuming that `$items` is an instance of any WireArra
 - Also note that if you call `$items->foobar(", ", $options)` where $options is an
   array, it is equivalent to `$items->implode(", ", "foobar", $options)`.
 
+## Example
+
 ~~~~~
 // Get array of all "title" values from each item
 $titlesArray = $items->title();
 
 // Get a newline separated string of all "title" values from each item
 $titlesString = $items->title("\n");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wireArray->___callUnknown($method, $arguments);
 ~~~~~
 
 ## Arguments
@@ -38,8 +47,8 @@ $titlesString = $items->title("\n");
 
 ## Return value
 
-null|mixed
+- `null|mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

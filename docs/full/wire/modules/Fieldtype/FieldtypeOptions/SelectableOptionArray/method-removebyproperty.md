@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Remove item by property (value, title, id)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selectableOptionArray->removeByProperty($property, $value);
+~~~~~
+
 ## Arguments
 
 - `$property` `string`
@@ -11,7 +18,7 @@ Remove item by property (value, title, id)
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

@@ -11,6 +11,8 @@ Get the string of URL segments separated by slashes
 - URL segments are already sanitized as page names.
 - The URL segment string can also be accessed by property: `$input->urlSegmentStr`.
 
+## Example
+
 ~~~~~
 // Adjust output according to urlSegmentStr
 // In this case our urlSegmentStr is 2 URL segments
@@ -30,6 +32,16 @@ if($s == 'photos/large') {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInput->urlSegmentStr();
+
+// usage with all arguments
+$string = $wireInput->urlSegmentStr($verbose = false, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$verbose` (optional) `bool|array` Include pagination number (pageNum) and trailing slashes, when appropriate? (default=false) - Use this option for a more link-ready version of the URL segment string (since 3.0.106). - Optionally substitute $options argument for this argument, default for $verbose option remains false (since 3.0.155+).
@@ -37,8 +49,8 @@ if($s == 'photos/large') {
 
 ## Return value
 
-string URL segment string, i.e. `segment1/segment2/segment3` or blank if none
+- `string` URL segment string, i.e. `segment1/segment2/segment3` or blank if none
 
-## See also
+## See Also
 
 - [WireInput::urlSegment()](method-urlsegment.md)

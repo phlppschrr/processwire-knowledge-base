@@ -6,6 +6,16 @@ Returns whether this page has the given access role
 
 Given access role may be a role name, role ID or Role object
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageAccess->hasAccessRole($page, $role);
+
+// usage with all arguments
+$bool = $pageAccess->hasAccessRole(Page $page, $role, $type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,4 +24,4 @@ Given access role may be a role name, role ID or Role object
 
 ## Return value
 
-bool
+- `bool`

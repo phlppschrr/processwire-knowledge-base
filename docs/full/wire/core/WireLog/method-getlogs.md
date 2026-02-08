@@ -11,10 +11,20 @@ Each item in returned array is an associative array that includes the following:
 	- `size` (int): Size in bytes
 	- `modified` (int): Last modified date (unix timestamp)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireLog->getLogs();
+
+// usage with all arguments
+$array = $wireLog->getLogs($sortNewest = false);
+~~~~~
+
 ## Arguments
 
 - `$sortNewest` (optional) `bool` Sort by newest to oldest rather than by name? (default=false) Added 3.0.143
 
 ## Return value
 
-array Indexed by log name
+- `array` Indexed by log name

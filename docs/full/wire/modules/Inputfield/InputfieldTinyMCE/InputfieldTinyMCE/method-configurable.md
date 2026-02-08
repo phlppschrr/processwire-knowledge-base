@@ -8,10 +8,20 @@ Get or set configurable state
 - False if it is required that another field be used ($settingsField) to pull settings from.
 - Note this is completely unrelated to the $configName property.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $inputfieldTinyMCE->configurable();
+
+// usage with all arguments
+$bool = $inputfieldTinyMCE->configurable($set = null);
+~~~~~
+
 ## Arguments
 
 - `$set` (optional) `bool`
 
 ## Return value
 
-bool
+- `bool`

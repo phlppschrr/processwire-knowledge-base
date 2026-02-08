@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Set
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldTinyMCE->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - $key
@@ -11,4 +18,4 @@ Set
 
 ## Return value
 
-self
+- `self`

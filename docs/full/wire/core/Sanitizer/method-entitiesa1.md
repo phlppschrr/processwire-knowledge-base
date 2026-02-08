@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Same as entitiesA() but does not double encode
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->entitiesA1($value);
+
+// usage with all arguments
+$array = $sanitizer->entitiesA1($value, $flags = ENT_QUOTES, $encoding = 'UTF-8');
+~~~~~
+
 ## Arguments
 
 - `$value` `array|string|int|float|object|bool`
@@ -12,9 +22,9 @@ Same as entitiesA() but does not double encode
 
 ## Return value
 
-array|string|int|float|bool
+- `array|string|int|float|bool`
 
-## See also
+## See Also
 
 - [Sanitizer::entitiesA()](method-entitiesa.md)
 - [Sanitizer::entities1()](method-entities1.md)

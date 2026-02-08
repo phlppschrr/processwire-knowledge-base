@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Given all markup after a tag, return just the portion that is the tag body/region
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireMarkupRegions->getTagRegion($region, $tagInfo, $options);
+
+// usage with all arguments
+$array = $wireMarkupRegions->getTagRegion($region, array $tagInfo, array $options);
+~~~~~
+
 ## Arguments
 
 - `$region` `string` Markup that occurs after the ">" of the tag you want to get the region of.
@@ -12,4 +22,4 @@ Given all markup after a tag, return just the portion that is the tag body/regio
 
 ## Return value
 
-array|string Returns string except when verbose mode enabled it returns array.
+- `array|string` Returns string except when verbose mode enabled it returns array.

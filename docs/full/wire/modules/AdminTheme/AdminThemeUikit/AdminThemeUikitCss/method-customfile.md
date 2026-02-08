@@ -4,6 +4,16 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Apply custom file/path replacements
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeUikitCss->customFile($file);
+
+// usage with all arguments
+$string = $adminThemeUikitCss->customFile($file, $requireExtension = '');
+~~~~~
+
 ## Arguments
 
 - `$file` `string`
@@ -11,4 +21,4 @@ Apply custom file/path replacements
 
 ## Return value
 
-string
+- `string`

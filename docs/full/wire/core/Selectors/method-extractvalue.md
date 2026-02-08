@@ -4,6 +4,16 @@ Source: `wire/core/Selectors.php`
 
 Given a string starting with a value, return that value, and remove it from $str.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $selectors->extractValue($str, $quote);
+
+// usage with all arguments
+$array = $selectors->extractValue(&$str, &$quote);
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to extract value from
@@ -11,4 +21,4 @@ Given a string starting with a value, return that value, and remove it from $str
 
 ## Return value
 
-array|string Found values or value (excluding quotes)
+- `array|string` Found values or value (excluding quotes)

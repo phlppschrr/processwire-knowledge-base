@@ -4,6 +4,16 @@ Source: `wire/core/PageComparison.php`
 
 Return whether individual Selector object matches Page
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageComparison->selectorMatches($page, $selector);
+
+// usage with all arguments
+$bool = $pageComparison->selectorMatches(Page $page, Selector $selector);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,7 +21,7 @@ Return whether individual Selector object matches Page
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

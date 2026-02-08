@@ -47,17 +47,21 @@ Please also note regarding `$options`:
 - The `language` option requires that the `LanguageSupportPageNames` module is installed.
 - The prefix for page numbers honors `$config->pageNumUrlPrefix` and multi-language prefixes as well.
 
+## Example
+
 ~~~~~
 // Using $page->url to output navigation
 foreach($page->children as $child) {
   echo "<li><a href='$child->url'>$child->title</a></li>";
 }
 ~~~~~
+
 ~~~~~
 // Difference between url() and path() on site running from subdirectory /my-site/
 echo $page->url();  // outputs: /my-site/about/contact/
 echo $page->path(); // outputs: /about/contact/
 ~~~~~
+
 ~~~~~
 // Specify that you want a specific pagination (output: /example/page2)
 echo $page->url(2);
@@ -98,15 +102,25 @@ echo $page->url([
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $page->url();
+
+// usage with all arguments
+$string = $page->url($options = null);
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array|int|string|bool|Language|null` Optionally specify options to modify default behavior (see method description).
 
 ## Return value
 
-string Returns page URL, for example: `/my-site/about/contact/`
+- `string` Returns page URL, for example: `/my-site/about/contact/`
 
-## See also
+## See Also
 
 - [Page::path()](method-path.md)
 - [Page::httpUrl()](method-httpurl.md)

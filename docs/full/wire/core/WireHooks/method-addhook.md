@@ -11,6 +11,16 @@ The hook method that you define may be part of a class or a globally scoped func
 If you are hooking a procedural function, you may omit the $toObject and instead just call via:
 $this->addHook($method, 'function_name'); or $this->addHook($method, 'function_name', $options);
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireHooks->addHook($object, $method, $toObject);
+
+// usage with all arguments
+$string = $wireHooks->addHook(Wire $object, $method, $toObject, $toMethod = null, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire`
@@ -21,8 +31,8 @@ $this->addHook($method, 'function_name'); or $this->addHook($method, 'function_n
 
 ## Return value
 
-string A special Hook ID that should be retained if you need to remove the hook later. If the $method argument was a CSV string or array of multiple methods to hook, then CSV string of hook IDs will be returned, and the same CSV string can be used with removeHook() calls. (since 3.0.137).
+- `string` A special Hook ID that should be retained if you need to remove the hook later. If the $method argument was a CSV string or array of multiple methods to hook, then CSV string of hook IDs will be returned, and the same CSV string can be used with removeHook() calls. (since 3.0.137).
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

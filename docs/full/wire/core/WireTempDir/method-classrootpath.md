@@ -4,6 +4,16 @@ Source: `wire/core/WireTempDir.php`
 
 Return the class root path for cache files (i.e. /path/to/site/assets/cache/WireTempDir/)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTempDir->classRootPath();
+
+// usage with all arguments
+$string = $wireTempDir->classRootPath($createIfNotExists = false, $basePath = '');
+~~~~~
+
 ## Arguments
 
 - `$createIfNotExists` (optional) `bool` Create the directory if it does not exist? (default=false)
@@ -11,11 +21,11 @@ Return the class root path for cache files (i.e. /path/to/site/assets/cache/Wire
 
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

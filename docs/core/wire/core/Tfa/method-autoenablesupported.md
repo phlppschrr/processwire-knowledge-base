@@ -11,13 +11,23 @@ but cannot be supported by a module like TfaTotp which requires manual setup by 
 Modules that support auto-enable must implement this method to return true. Modules
 that do not support it can ignore this method, as the default returns false.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $tfa->autoEnableSupported();
+
+// usage with all arguments
+$bool = $tfa->autoEnableSupported(?User $user = null);
+~~~~~
+
 ## Arguments
 
 - `$user` (optional) `User|null` Specify user to also confirm it is supported for given user. Omit to test if the module supports it in general.
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

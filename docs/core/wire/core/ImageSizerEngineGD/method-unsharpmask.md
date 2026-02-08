@@ -10,6 +10,13 @@ Please leave this notice.
 
 http://vikjavev.no/computing/ump.php
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngineGD->unsharpMask($img, $amount, $radius, $threshold);
+~~~~~
+
 ## Arguments
 
 - `$img` `resource`
@@ -19,4 +26,4 @@ http://vikjavev.no/computing/ump.php
 
 ## Return value
 
-resource
+- `resource`

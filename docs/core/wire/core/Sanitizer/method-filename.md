@@ -9,12 +9,24 @@ ASCII-alphanumeric (a-z A-Z 0-9), hyphens, underscores and periods. Note that
 filenames may contain mixed case (a-z A-Z) so if you require lowercase then
 run the return value through a `strtolower()` function.
 
+## Example
+
 ~~~~~
 // outputs: FileName.jpg
 echo $sanitizer->filename('©®™FileName.jpg');
 
 // outputs: c_r_tmfilename.jpg
 echo strtolower($sanitizer->filename('©®™filename.jpg', Sanitizer::translate));
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->filename($value);
+
+// usage with all arguments
+$string = $sanitizer->filename($value, $beautify = false, $maxLength = 128);
 ~~~~~
 
 ## Arguments
@@ -25,4 +37,4 @@ echo strtolower($sanitizer->filename('©®™filename.jpg', Sanitizer::translate
 
 ## Return value
 
-string Sanitized filename
+- `string` Sanitized filename

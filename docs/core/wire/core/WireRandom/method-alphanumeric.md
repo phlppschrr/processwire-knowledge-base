@@ -15,6 +15,16 @@ numeric, then the `fast` option is always used, as the crypto-secure option does
 support non-alphanumeric characters. When the `allow` option is used, the `strict`
 option does not apply.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireRandom->alphanumeric();
+
+// usage with all arguments
+$string = $wireRandom->alphanumeric($length = 0, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$length` (optional) `int` Required length of string, or 0 for random length
@@ -22,11 +32,11 @@ option does not apply.
 
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

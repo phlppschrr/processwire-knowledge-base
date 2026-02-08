@@ -4,6 +4,13 @@ Source: `wire/core/WireDataDB.php`
 
 Set and save a value for a specific property/name/key
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDataDB->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,8 +18,8 @@ Set and save a value for a specific property/name/key
 
 ## Return value
 
-self
+- `self`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

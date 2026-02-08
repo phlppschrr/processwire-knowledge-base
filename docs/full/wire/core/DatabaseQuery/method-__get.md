@@ -3,10 +3,17 @@
 Source: `wire/core/DatabaseQuery.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $databaseQuery->__get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
 
 ## Return value
 
-array|mixed|null
+- `array|mixed|null`

@@ -4,6 +4,13 @@ Source: `wire/core/Page.php`
 
 Is $value1 equal to $value2?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->isEqual($key, $value1, $value2);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of the key that triggered the check (see WireData::set)
@@ -12,4 +19,4 @@ Is $value1 equal to $value2?
 
 ## Return value
 
-bool
+- `bool`

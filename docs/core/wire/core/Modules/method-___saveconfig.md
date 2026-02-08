@@ -7,6 +7,11 @@ Save provided configuration data for the given module
 - Applicable only for modules that support configuration.
 - Configuration data is stored encoded in the database "modules" table "data" field.
 
+
+3.0.16 Changed name from the more verbose saveModuleConfigData(), which will still work.
+
+## Example
+
 ~~~~~~
 // Getting, modifying and saving all module config data
 $data = $modules->getConfig('HelloWorld');
@@ -20,7 +25,15 @@ $value = $modules->getConfig('HelloWorld', 'some_property');
 $modules->saveConfig('HelloWorld', 'some_property', 'New Value');
 ~~~~~~
 
-3.0.16 Changed name from the more verbose saveModuleConfigData(), which will still work.
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modules->___saveConfig($class, $data);
+
+// usage with all arguments
+$bool = $modules->___saveConfig($class, $data, $value = null);
+~~~~~
 
 ## Arguments
 
@@ -30,13 +43,13 @@ $modules->saveConfig('HelloWorld', 'some_property', 'New Value');
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Modules::getConfig()](method-getconfig.md)
 

@@ -4,6 +4,16 @@ Source: `wire/core/FileLog.php`
 
 Return lines from the end of the log file, with various options
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $fileLog->find();
+
+// usage with all arguments
+$int = $fileLog->find($limit = 100, $pageNum = 1, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$limit` (optional) `int` Number of items to return (per pagination), or 0 for no limit.
@@ -12,8 +22,8 @@ Return lines from the end of the log file, with various options
 
 ## Return value
 
-int|array of strings (associative), each indexed by string containing slash separated numeric values of: "current/total/start/end/total" which is useful with pagination. If the 'toFile' option is used, then return value is instead an integer qty of lines written.
+- `int|array` of strings (associative), each indexed by string containing slash separated numeric values of: "current/total/start/end/total" which is useful with pagination. If the 'toFile' option is used, then return value is instead an integer qty of lines written.
 
-## Throws
+## Exceptions
 
-- \Exception on fatal error
+- `\Exception` on fatal error

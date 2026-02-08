@@ -4,6 +4,13 @@ Source: `wire/core/PageFinder.php`
 
 Perform an alternate/fallback find when first fails to match and alternate operators available
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageFinder->findAlt($selectors, $options, $matches);
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors`
@@ -12,4 +19,4 @@ Perform an alternate/fallback find when first fails to match and alternate opera
 
 ## Return value
 
-array
+- `array`

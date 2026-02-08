@@ -16,6 +16,16 @@ populate $event->return with any or all of the following (as available):
 
 See the protected WireTextTools::wordAlternates() method for hook instructions and an example.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireTextTools->getWordAlternates($word);
+
+// usage with all arguments
+$array = $wireTextTools->getWordAlternates($word, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$word` `string`
@@ -23,9 +33,9 @@ See the protected WireTextTools::wordAlternates() method for hook instructions a
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [WireTextTools::getWordStem()](index.md)
 

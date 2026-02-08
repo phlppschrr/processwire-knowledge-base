@@ -9,9 +9,21 @@ Sanitize consistent with names used by ProcessWire fields and/or PHP variables
 - This method is the same as the varName() sanitizer except that it supports beautification and max length.
 - Unlike other name formats, hyphen and period are excluded because they aren't allowed characters in PHP variables.
 
+## Example
+
 ~~~~~
 $test = "Hello world";
 echo $sanitizer->fieldName($test); // outputs: Hello_world
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->fieldName($value);
+
+// usage with all arguments
+$string = $sanitizer->fieldName($value, $beautify = false, $maxLength = 128);
 ~~~~~
 
 ## Arguments
@@ -22,4 +34,4 @@ echo $sanitizer->fieldName($test); // outputs: Hello_world
 
 ## Return value
 
-string Sanitized string
+- `string` Sanitized string

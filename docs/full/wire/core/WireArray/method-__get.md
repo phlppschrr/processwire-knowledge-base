@@ -8,10 +8,17 @@ Example: $myArray->myElement
 Not applicable to numerically indexed arrays.
 Fuel properties and hooked properties have precedence with this type of call.
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireArray->__get($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `int|string`
 
 ## Return value
 
-Wire|WireData|Page|mixed|bool Value of item requested, or false if it doesn't exist.
+- `Wire|WireData|Page|mixed|bool` Value of item requested, or false if it doesn't exist.

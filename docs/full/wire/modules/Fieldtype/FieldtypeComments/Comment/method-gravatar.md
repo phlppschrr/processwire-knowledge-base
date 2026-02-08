@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Returns a URL to this user's gravatar image
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $comment->gravatar();
+
+// usage with all arguments
+$string = $comment->gravatar($rating = 'g', $imageset = 'mm', $size = 80);
+~~~~~
+
 ## Arguments
 
 - `$rating` (optional) `string` Gravatar rating, one of [ g | pg | r | x ], default is g.
@@ -12,4 +22,4 @@ Returns a URL to this user's gravatar image
 
 ## Return value
 
-string
+- `string`

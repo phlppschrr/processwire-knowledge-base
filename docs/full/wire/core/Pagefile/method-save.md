@@ -4,13 +4,20 @@ Source: `wire/core/Pagefile.php`
 
 Save this Pagefile independently of the Page it lives on
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagefile->save();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

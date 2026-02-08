@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Send to a URL using a HEAD request and return the status code
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireHttp->status($url);
+
+// usage with all arguments
+$int = $wireHttp->status($url, $data = array(), $textMode = false, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to request (including http:// or https://)
@@ -13,9 +23,9 @@ Send to a URL using a HEAD request and return the status code
 
 ## Return value
 
-int|string Integer or string of status code (200, 404, etc.)
+- `int|string` Integer or string of status code (200, 404, etc.)
 
-## See also
+## See Also
 
 - [WireHttp::send()](method-___send.md)
 - [WireHttp::statusText()](method-statustext.md)

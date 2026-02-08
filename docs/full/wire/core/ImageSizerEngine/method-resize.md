@@ -13,6 +13,13 @@ Pre-processing is:
 Post-processing is:
   Copy back and delete tempfile, write IPTC if necessary, reload imageinfo, set the modified flag.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngine->resize($finalWidth, $finalHeight);
+~~~~~
+
 ## Arguments
 
 - `$finalWidth` `int`
@@ -20,4 +27,4 @@ Post-processing is:
 
 ## Return value
 
-bool
+- `bool`

@@ -15,6 +15,16 @@ The return value is true if assets were just added, and false if assets have alr
 call. This distinction probably doesn't matter in most usages, but here just in case a descending class needs
 to know when/if to add additional assets (i.e. when this method returns true).
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $inputfield->renderReady();
+
+// usage with all arguments
+$bool = $inputfield->renderReady(?Inputfield $parent = null, $renderValueMode = false);
+~~~~~
+
 ## Arguments
 
 - Inputfield|null The parent InputfieldWrapper that is rendering it, or null if no parent.
@@ -22,4 +32,4 @@ to know when/if to add additional assets (i.e. when this method returns true).
 
 ## Return value
 
-bool True if assets were just added, false if already added.
+- `bool` True if assets were just added, false if already added.

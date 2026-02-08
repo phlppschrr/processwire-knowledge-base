@@ -7,9 +7,21 @@ Return the Selectors that led to this PageArray, or null if not set/applicable.
 Use this to retrieve the Selectors that were used to find this group of pages,
 if dealing with a PageArray that originated from a database operation.
 
+## Example
+
 ~~~~~
 $products = $pages->find("template=product, featured=1, sort=-modified, limit=10");
 echo $products->getSelectors(); // outputs the selector above
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$selectors = $pageArray->getSelectors();
+
+// usage with all arguments
+$selectors = $pageArray->getSelectors($getString = false);
 ~~~~~
 
 ## Arguments
@@ -18,4 +30,4 @@ echo $products->getSelectors(); // outputs the selector above
 
 ## Return value
 
-Selectors|string|null Returns Selectors object if available, or null if not. Always return string if $getString argument is true.
+- `Selectors|string|null` Returns Selectors object if available, or null if not. Always return string if $getString argument is true.

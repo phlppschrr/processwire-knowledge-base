@@ -4,14 +4,21 @@ Source: `wire/core/WireAction.php`
 
 Execute the action for multiple items at once
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireAction->___executeMultiple($items);
+~~~~~
+
 ## Arguments
 
 - `$items` `array|WireArray` Items to operate upon
 
 ## Return value
 
-int Returns quantity of items successfully operated upon
+- `int` Returns quantity of items successfully operated upon
 
-## Throws
+## Exceptions
 
-- WireException when it receives an unexpected type for $items
+- `WireException` when it receives an unexpected type for $items

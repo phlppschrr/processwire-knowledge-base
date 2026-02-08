@@ -4,9 +4,18 @@ Source: `wire/core/WireArray.php`
 
 Prepend an item to the beginning of the WireArray.
 
+## Example
+
 ~~~~~
 // Add item to beginning
 $items->prepend($item);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->prepend($item);
 ~~~~~
 
 ## Arguments
@@ -15,12 +24,12 @@ $items->prepend($item);
 
 ## Return value
 
-$this This instance.
+- `$this` This instance.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [WireArray::append()](method-append.md)

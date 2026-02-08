@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Process flip action (internal)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngineGD->_processActionFlip($img, $flipType);
+
+// usage with all arguments
+$bool = $imageSizerEngineGD->_processActionFlip(&$img, $flipType);
+~~~~~
+
 ## Arguments
 
 - `$img` `resource`
@@ -11,4 +21,4 @@ Process flip action (internal)
 
 ## Return value
 
-bool|resource
+- `bool|resource`

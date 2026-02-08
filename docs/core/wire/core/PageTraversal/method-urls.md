@@ -15,6 +15,16 @@ any past (historical) URLs the page was previously available at (which will redi
 - If PagePathHistory core module is not installed then past/historical URLs are excluded.
 - You can disable past/historical or multi-language URLs by using the $options argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageTraversal->urls($page);
+
+// usage with all arguments
+$array = $pageTraversal->urls(Page $page, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -22,4 +32,4 @@ any past (historical) URLs the page was previously available at (which will redi
 
 ## Return value
 
-array
+- `array`

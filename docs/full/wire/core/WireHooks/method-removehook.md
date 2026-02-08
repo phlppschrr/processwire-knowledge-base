@@ -9,6 +9,16 @@ function(HookEvent $event) {
   $event->removeHook(null); // remove self
 }
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireHooks->removeHook($object, $hookID);
+
+// usage with all arguments
+$wire = $wireHooks->removeHook(Wire $object, $hookID);
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire`
@@ -16,4 +26,4 @@ function(HookEvent $event) {
 
 ## Return value
 
-Wire
+- `Wire`

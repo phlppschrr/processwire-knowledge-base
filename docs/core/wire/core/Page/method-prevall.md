@@ -4,6 +4,16 @@ Source: `wire/core/Page.php`
 
 Return all sibling pages before this one, optionally matching a selector
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $page->prevAll();
+
+// usage with all arguments
+$page = $page->prevAll($selector = '', $getQty = false);
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|array|bool` Optional selector. When specified, will filter the found siblings.
@@ -11,4 +21,4 @@ Return all sibling pages before this one, optionally matching a selector
 
 ## Return value
 
-Page|NullPage|int Returns all matching pages before this one, or integer if $getQty requested.
+- `Page|NullPage|int` Returns all matching pages before this one, or integer if $getQty requested.

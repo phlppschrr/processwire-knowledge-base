@@ -4,14 +4,21 @@ Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Given a flag name, return the corresponding flag value
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $notification->flagNameToFlag($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
 
 ## Return value
 
-int mixed
+- `int` mixed
 
-## Throws
+## Exceptions
 
-- WireException if given unknown flag
+- `WireException` if given unknown flag

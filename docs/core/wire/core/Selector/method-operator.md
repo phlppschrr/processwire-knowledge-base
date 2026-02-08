@@ -4,9 +4,16 @@ Source: `wire/core/Selector.php`
 
 Return the operator used by this Selector
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $selector->operator();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

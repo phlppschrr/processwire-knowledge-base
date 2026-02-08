@@ -6,6 +6,16 @@ Add a new page using the given template to the given parent
 
 If no name is specified one will be assigned based on the current timestamp.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesEditor->add($template, $parent);
+
+// usage with all arguments
+$page = $pagesEditor->add($template, $parent, $name = '', array $values = array());
+~~~~~
+
 ## Arguments
 
 - `$template` `string|Template` Template name or Template object
@@ -15,8 +25,8 @@ If no name is specified one will be assigned based on the current timestamp.
 
 ## Return value
 
-Page Returned page has output formatting off.
+- `Page` Returned page has output formatting off.
 
-## Throws
+## Exceptions
 
-- WireException When some criteria prevents the page from being saved.
+- `WireException` When some criteria prevents the page from being saved.

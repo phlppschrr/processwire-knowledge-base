@@ -8,6 +8,16 @@ Settings for predefined sizes can be specified in `$config->imageSizes` array.
 Each named item in this array must contain at least 'width' and 'height, but can also
 contain any other option from the `Pageimage::size()` argument `$options`.
 
+## Usage
+
+~~~~~
+// basic usage
+$pageimage = $pageimage->sizeName($name);
+
+// usage with all arguments
+$pageimage = $pageimage->sizeName($name, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Image size name
@@ -15,11 +25,11 @@ contain any other option from the `Pageimage::size()` argument `$options`.
 
 ## Return value
 
-Pageimage
+- `Pageimage`
 
-## Throws
+## Exceptions
 
-- WireException If given a $name that is not present in $config->imageSizes
+- `WireException` If given a $name that is not present in $config->imageSizes
 
 ## Since
 

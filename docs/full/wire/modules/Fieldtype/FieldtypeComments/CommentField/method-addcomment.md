@@ -10,6 +10,16 @@ and is ready to add. Note that the `sort` property is assigned automatically if 
 The primary reason to use this method is if you want to add a comment without loading all the other
 comments on a given Page.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $commentField->addComment($page, $comment, $send);
+
+// usage with all arguments
+$bool = $commentField->addComment(Page $page, Comment $comment, $send);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page where comments field exists
@@ -18,7 +28,7 @@ comments on a given Page.
 
 ## Return value
 
-bool Returns true on success, false on fail
+- `bool` Returns true on success, false on fail
 
 ## Since
 

@@ -10,10 +10,20 @@ with the setAllowSchemes() method in this class.
 
 To return current validate URL options, omit the $options argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireHttp->setValidateURLOptions();
+
+// usage with all arguments
+$array = $wireHttp->setValidateURLOptions(array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` Options to set, see the $sanitizer->url() method for details on options.
 
 ## Return value
 
-array Always returns current options
+- `array` Always returns current options

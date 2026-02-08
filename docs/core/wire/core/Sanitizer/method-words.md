@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Given string return a new string containing only words
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->words($value);
+
+// usage with all arguments
+$string = $sanitizer->words($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - $value
@@ -11,7 +21,7 @@ Given string return a new string containing only words
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

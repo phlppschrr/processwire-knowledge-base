@@ -4,13 +4,20 @@ Source: `wire/core/Notice.php`
 
 Does this Notice have given flag?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $notice->hasFlag($flag);
+~~~~~
+
 ## Arguments
 
 - `$flag` `int|string`
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

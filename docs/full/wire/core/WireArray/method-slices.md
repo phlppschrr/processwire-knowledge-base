@@ -6,10 +6,17 @@ Divide this WireArray into $qty slices and return array of them (each being anot
 
 This is not destructive to the original WireArray as it returns new WireArray objects.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireArray->slices($qty);
+~~~~~
+
 ## Arguments
 
 - `$qty` `int` Number of slices
 
 ## Return value
 
-array Array of WireArray objects
+- `array` Array of WireArray objects

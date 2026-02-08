@@ -4,6 +4,13 @@ Source: `wire/core/InputfieldWrapper.php`
 
 Remove named attribute from given markup
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldWrapper->removeAttributeFromMarkup($name, $markup);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,7 +18,7 @@ Remove named attribute from given markup
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

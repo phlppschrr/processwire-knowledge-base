@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Convert image to sepia
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngineGD->convertToSepia();
+
+// usage with all arguments
+$bool = $imageSizerEngineGD->convertToSepia($dstFilename = '', $sepia = 55);
+~~~~~
+
 ## Arguments
 
 - `$dstFilename` (optional) `string` If different from source file
@@ -11,4 +21,4 @@ Convert image to sepia
 
 ## Return value
 
-bool
+- `bool`

@@ -7,6 +7,13 @@ Match phrase at start or end of field value (also uses fulltext index when possi
 Ignores whitespace, punctuation and opening/closing tags, enabling it to match
 start/end words or phrases surrounded by non-word characters.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $databaseQuerySelectFulltext->matchStartEnd($value);
+~~~~~
+
 ## Arguments
 
 - $value

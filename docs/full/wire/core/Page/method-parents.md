@@ -9,19 +9,33 @@ will be filtered by the selector. By default, parents are returned in breadcrumb
 In 3.0.158+ if you specify boolean true for selector argument, then it will return parents
 in reverse order (closest to furthest).
 
+## Example
+
 ~~~~~
 // Render breadcrumbs
 foreach($page->parents() as $parent) {
   echo "<li><a href='$parent->url'>$parent->title</a></li>";
 }
 ~~~~~
+
 ~~~~~
 // Return all parents, excluding the homepage
 $parents = $page->parents("template!=home");
 ~~~~~
+
 ~~~~~
 // Return parents in reverse order (closest to furthest, 3.0.158+)
 $parents = $page->parents(true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $page->parents();
+
+// usage with all arguments
+$items = $page->parents($selector = '');
 ~~~~~
 
 ## Arguments
@@ -30,4 +44,4 @@ $parents = $page->parents(true);
 
 ## Return value
 
-PageArray All parent pages, or those matching the given selector.
+- `PageArray` All parent pages, or those matching the given selector.

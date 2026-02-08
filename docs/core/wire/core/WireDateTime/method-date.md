@@ -9,10 +9,22 @@ used in ProcessWire. This is helpful for reducing code in places where you might
 determining when to use `date()`, `strftime()`, `wireRelativeTimeStr()` or some other date
 formatting function.
 
+## Example
+
 ~~~~~~
 // Output the current date/time in relative format
 echo $datetime->date('relative');
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDateTime->date();
+
+// usage with all arguments
+$string = $wireDateTime->date($format = '', $ts = null);
+~~~~~
 
 ## Arguments
 
@@ -21,4 +33,4 @@ echo $datetime->date('relative');
 
 ## Return value
 
-string|bool Formatted date/time, or boolean false on failure
+- `string|bool` Formatted date/time, or boolean false on failure

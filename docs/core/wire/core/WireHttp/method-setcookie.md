@@ -4,9 +4,18 @@ Source: `wire/core/WireHttp.php`
 
 Set cookie(s) for http GET/POST/etc. request (currently used by curl option only)
 
+## Example
+
 ~~~~~
 $http->setCookie('PHPSESSID', 'f3943z12339jz93j39iafai3f9393g');
 $http->post('http://domain.com', [ 'foo' => 'bar' ], [ 'use' => 'curl' ]);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireHttp->setCookie($name, $value);
 ~~~~~
 
 ## Arguments
@@ -16,7 +25,7 @@ $http->post('http://domain.com', [ 'foo' => 'bar' ], [ 'use' => 'curl' ]);
 
 ## Return value
 
-self
+- `self`
 
 ## Since
 

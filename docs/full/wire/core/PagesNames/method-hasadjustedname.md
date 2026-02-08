@@ -4,6 +4,16 @@ Source: `wire/core/PagesNames.php`
 
 Does the given page have a modified “name” during this request?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesNames->hasAdjustedName($page);
+
+// usage with all arguments
+$bool = $pagesNames->hasAdjustedName(Page $page, $set = null);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Does the given page have a modified “name” during this request?
 
 ## Return value
 
-bool
+- `bool`

@@ -7,6 +7,8 @@ Add a hook to be executed after the hooked method
 - Use an "after" hook when you have code that should execute after a hookable method executes.
 - One benefit of using an "after" hook is that you can have it modify the return value.
 
+## Example
+
 ~~~~~
 // Attach hook to a method in current object
 $this->addHookAfter('Page::path', $this, 'yourHookMethodName');
@@ -21,6 +23,16 @@ $this->addHookAfter('Page::path', 'your_function_name');
 $page->addHookAfter('path', function($event) { ... });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wire->addHookAfter($method, $toObject);
+
+// usage with all arguments
+$string = $wire->addHookAfter($method, $toObject, $toMethod = null, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$method` `string|array` Method to hook in one of the following formats (please omit 3 leading underscores): - `Class::method` - If hooking to *all* object instances of the class. - `method` - If hooking to a single object instance. - Since 3.0.137 it may also be multiple methods to hook in CSV string or array.
@@ -30,8 +42,8 @@ $page->addHookAfter('path', function($event) { ... });
 
 ## Return value
 
-string A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
+- `string` A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
 
-## See also
+## See Also
 
 - [https://processwire.com/docs/modules/hooks/](https://processwire.com/docs/modules/hooks/)

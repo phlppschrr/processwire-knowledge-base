@@ -4,6 +4,8 @@ Source: `wire/core/WireData.php`
 
 Set a value to this object’s data
 
+## Example
+
 ~~~~~
 // Set a value for a property
 $item->set('foo', 'bar');
@@ -15,6 +17,13 @@ $item->foo = 'bar';
 $item['foo'] = 'bar';
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireData->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of property you want to set
@@ -22,9 +31,9 @@ $item['foo'] = 'bar';
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [WireData::setQuietly()](method-setquietly.md)
 - [WireData::get()](method-get.md)

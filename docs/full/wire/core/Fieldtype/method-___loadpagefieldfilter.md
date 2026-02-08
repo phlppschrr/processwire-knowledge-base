@@ -9,6 +9,16 @@ provided which can filter the returned value.
 
 As far as core Fieldtypes go, this one is only applicable to FieldtypeMulti derived types.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldtype->___loadPageFieldFilter($page, $field, $selector);
+
+// usage with all arguments
+$result = $fieldtype->___loadPageFieldFilter(Page $page, Field $field, $selector);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page object to save.
@@ -17,4 +27,4 @@ As far as core Fieldtypes go, this one is only applicable to FieldtypeMulti deri
 
 ## Return value
 
-mixed|null
+- `mixed|null`

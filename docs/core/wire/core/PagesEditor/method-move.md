@@ -10,6 +10,16 @@ for some cases with less code. This method:
 - Does not save the other custom fields of a page (if any are changed).
 - Does not require that output formatting be off (it manages that internally).
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->move($child, $parent);
+
+// usage with all arguments
+$bool = $pagesEditor->move(Page $child, $parent, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$child` `Page` Page that you want to move.
@@ -18,8 +28,8 @@ for some cases with less code. This method:
 
 ## Return value
 
-bool True on success or false if not necessary.
+- `bool` True on success or false if not necessary.
 
-## Throws
+## Exceptions
 
-- WireException if given parent does not exist, or move is not allowed
+- `WireException` if given parent does not exist, or move is not allowed

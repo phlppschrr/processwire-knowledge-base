@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Get current database engine (lowercase)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->getEngine();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

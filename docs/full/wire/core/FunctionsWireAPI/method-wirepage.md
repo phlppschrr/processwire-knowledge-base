@@ -12,6 +12,16 @@ $headline = page('headline|title'); // Get headline or title
 page('headline', 'Setting headline value'); // Set headline
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $functionsWireAPI->wirePage();
+
+// usage with all arguments
+$page = $functionsWireAPI->wirePage($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Optional property to get or set
@@ -19,4 +29,4 @@ page('headline', 'Setting headline value'); // Set headline
 
 ## Return value
 
-Page|mixed
+- `Page|mixed`

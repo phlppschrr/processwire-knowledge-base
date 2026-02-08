@@ -4,9 +4,16 @@ Source: `wire/core/Fields.php`
 
 Get WireArray container that items are stored in
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $fields->getWireArray();
+~~~~~
+
 ## Return value
 
-WireArray
+- `WireArray`
 
 ## Since
 

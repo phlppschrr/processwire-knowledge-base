@@ -6,6 +6,16 @@ Retrieve any cached page IDs for the given selector and options OR false if none
 
 You may specify a third param as TRUE, which will cause this to just return the selector string (with hashed options)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesLoaderCache->getSelectorCache($selector, $options);
+
+// usage with all arguments
+$array = $pagesLoaderCache->getSelectorCache($selector, $options, $returnSelector = false);
+~~~~~
+
 ## Arguments
 
 - `$selector` `string`
@@ -14,4 +24,4 @@ You may specify a third param as TRUE, which will cause this to just return the 
 
 ## Return value
 
-array|null|string|PageArray
+- `array|null|string|PageArray`

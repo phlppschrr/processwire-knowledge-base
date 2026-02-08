@@ -4,6 +4,16 @@ Source: `wire/core/PageValues.php`
 
 Get the value for a non-native page field, and call upon Fieldtype to join it if not autojoined
 
+## Usage
+
+~~~~~
+// basic usage
+$pageValues->getFieldValue($page, $key);
+
+// usage with all arguments
+$pageValues->getFieldValue(Page $page, $key, $selector = '');
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of field to get
@@ -11,4 +21,4 @@ Get the value for a non-native page field, and call upon Fieldtype to join it if
 
 ## Return value
 
-null|mixed
+- `null|mixed`

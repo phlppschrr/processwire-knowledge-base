@@ -9,6 +9,8 @@ Get the requested Module
 - You can also get/load a module by accessing it directly, like `$modules->ModuleName`.
 - To get a module with additional options, use `$modules->getModule($name, $options)` instead.
 
+## Example
+
 ~~~~~
 // Get the MarkupAdminDataTable module
 $table = $modules->get('MarkupAdminDataTable');
@@ -17,19 +19,26 @@ $table = $modules->get('MarkupAdminDataTable');
 $table = $modules->MarkupAdminDataTable;
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$module = $modules->get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|int` Module name (also accepts database ID)
 
 ## Return value
 
-Module|_Module|null Returns a Module or null if not found
+- `Module|_Module|null` Returns a Module or null if not found
 
-## Throws
+## Exceptions
 
-- WirePermissionException If module requires a particular permission the user does not have
+- `WirePermissionException` If module requires a particular permission the user does not have
 
-## See also
+## See Also
 
 - [Modules::getModule()](method-getmodule.md)
 - [Modules::isInstalled()](method-isinstalled.md)

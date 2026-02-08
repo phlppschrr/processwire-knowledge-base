@@ -12,6 +12,16 @@ When applicable, this method should map things like internal IDs to named equiva
 If not overridden, this takes on the same behavior as `Fieldtype::sleepValue()`. However, if overridden,
 it is intended to be more verbose than wakeupValue, where applicable.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fieldtype->___exportValue($page, $field, $value);
+
+// usage with all arguments
+$string = $fieldtype->___exportValue(Page $page, Field $field, $value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -21,4 +31,4 @@ it is intended to be more verbose than wakeupValue, where applicable.
 
 ## Return value
 
-string|float|int|array
+- `string|float|int|array`

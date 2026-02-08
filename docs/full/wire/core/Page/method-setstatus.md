@@ -6,6 +6,8 @@ Set the status setting, with some built-in protections
 
 This method is also used when you set status directly, i.e. `$page->status = $value;`.
 
+## Example
+
 ~~~~~
 // set status to unpublished
 $page->setStatus('unpublished');
@@ -17,15 +19,22 @@ $page->setStatus('hidden, unpublished');
 $page->setStatus(Page::statusHidden | Page::statusUnpublished);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->setStatus($value);
+~~~~~
+
 ## Arguments
 
 - int|array|string Status value, array of status names or values, or status name string.
 
 ## Return value
 
-self
+- `self`
 
-## See also
+## See Also
 
 - [Page::addStatus()](method-addstatus.md)
 - [Page::removeStatus()](method-removestatus.md)

@@ -4,6 +4,13 @@ Source: `wire/core/WireInputData.php`
 
 Maps to Sanitizer functions
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInputData->___callUnknown($method, $arguments);
+~~~~~
+
 ## Arguments
 
 - `$method` `string`
@@ -11,8 +18,8 @@ Maps to Sanitizer functions
 
 ## Return value
 
-string|int|array|float|null Returns null when input variable does not exist
+- `string|int|array|float|null` Returns null when input variable does not exist
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

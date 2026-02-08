@@ -4,10 +4,17 @@ Source: `wire/core/PagefileExtra.php`
 
 Get property
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagefileExtra->get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
 
 ## Return value
 
-bool|int|mixed|null|string
+- `bool|int|mixed|null|string`

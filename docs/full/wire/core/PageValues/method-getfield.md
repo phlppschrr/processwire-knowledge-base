@@ -6,6 +6,16 @@ Get a Field object in context or NULL if not valid for this page
 
 Field in context is only returned when output formatting is on.
 
+## Usage
+
+~~~~~
+// basic usage
+$field = $pageValues->getField($page, $field);
+
+// usage with all arguments
+$field = $pageValues->getField(Page $page, $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,7 +23,7 @@ Field in context is only returned when output formatting is on.
 
 ## Return value
 
-Field|null
+- `Field|null`
 
 ## Details
 

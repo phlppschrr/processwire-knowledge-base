@@ -6,6 +6,8 @@ Return this Page’s sibling pages, optionally filtered by a selector.
 
 To exclude the current page in list of siblings, specify boolean false for first or second argument.
 
+## Example
+
 ~~~~~
 // Get all sibling pages
 $siblings = $page->siblings();
@@ -20,6 +22,16 @@ $featured = $page->siblings("template=product-featured, sort=name");
 $featured = $page->siblings("template=product-featured, sort=name", false);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $page->siblings();
+
+// usage with all arguments
+$items = $page->siblings($selector = '', $includeCurrent = true);
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|array|bool` Optional selector to filter siblings by, or omit for all siblings.
@@ -27,4 +39,4 @@ $featured = $page->siblings("template=product-featured, sort=name", false);
 
 ## Return value
 
-PageArray
+- `PageArray`

@@ -7,6 +7,8 @@ Return the next sibling page
 By default, hidden, unpublished and non-viewable pages are excluded. If you want them included,
 be sure to specify `include=` with hidden, unpublished or all, in your selector.
 
+## Example
+
 ~~~~~
 // Get the next sibling
 $sibling = $page->next();
@@ -18,6 +20,16 @@ $sibling = $page->next("created>$page->created");
 $sibling = $page->next("include=all");
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $page->next();
+
+// usage with all arguments
+$page = $page->next($selector = '', ?PageArray $siblings = null);
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|array` Optional selector. When specified, will find nearest next sibling that matches.
@@ -25,4 +37,4 @@ $sibling = $page->next("include=all");
 
 ## Return value
 
-Page|NullPage Returns the next sibling page, or a NullPage if none found.
+- `Page|NullPage` Returns the next sibling page, or a NullPage if none found.

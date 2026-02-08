@@ -11,6 +11,8 @@ that this overrides the configured autojoin settings in ProcessWire fields.
 If a particular page in the returned set of pages was already loaded before this method call,
 then the one already in memory will be used rather than this method loading another copy of it.
 
+## Example
+
 ~~~~~
 // 1. Example of loading blog posts where we want to join title, date, summary:
 $posts = $pages->findJoin("template=blog-post", [ 'title', 'date', 'summary' ]);
@@ -35,6 +37,16 @@ $posts = $pages->findJoin("template=blog-post", false);
 $posts = $pages->find("template=blog-post, join=none"); // same as above
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pages->findJoin($selector, $joinFields);
+
+// usage with all arguments
+$items = $pages->findJoin($selector, $joinFields, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors`
@@ -43,7 +55,7 @@ $posts = $pages->find("template=blog-post, join=none"); // same as above
 
 ## Return value
 
-PageArray
+- `PageArray`
 
 ## Since
 

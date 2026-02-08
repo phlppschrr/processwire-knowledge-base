@@ -4,6 +4,16 @@ Source: `wire/modules/LanguageSupport/Languages.php`
 
 Find and return all languages except current user language
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $languages->findOther();
+
+// usage with all arguments
+$items = $languages->findOther($selector = '', $excludeLanguage = null);
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|Language` Optionally filter by a selector string
@@ -11,4 +21,4 @@ Find and return all languages except current user language
 
 ## Return value
 
-PageArray
+- `PageArray`

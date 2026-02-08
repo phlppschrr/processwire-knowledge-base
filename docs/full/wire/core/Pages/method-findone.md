@@ -9,10 +9,22 @@ filter for access control and hidden/unpublished/etc. states, in the same way th
 `find()` method does. You can add an `include=...` to your selector string to bypass.
 This method also accepts an `$options` array, whereas `get()` does not.
 
+## Example
+
 ~~~~~~
 // Find the newest page using the blog-post template
 $blogPost = $pages->findOne("template=blog-post, sort=-created");
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$page = $pages->findOne($selector);
+
+// usage with all arguments
+$page = $pages->findOne($selector, $options = array());
+~~~~~
 
 ## Arguments
 
@@ -21,9 +33,9 @@ $blogPost = $pages->findOne("template=blog-post, sort=-created");
 
 ## Return value
 
-Page|NullPage Returns a Page on success, or a NullPage (having id=0) on failure
+- `Page|NullPage` Returns a Page on success, or a NullPage (having id=0) on failure
 
-## See also
+## See Also
 
 - [Pages::get()](method-get.md)
 - [Pages::find()](method-___find.md)

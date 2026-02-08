@@ -7,6 +7,16 @@ Same as getMarkup() except returned value is plain text
 If no `$entities` argument is provided, returned value is entity encoded when output formatting
 is on, and not entity encoded when output formatting is off.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageValues->getText($page, $key);
+
+// usage with all arguments
+$string = $pageValues->getText(Page $page, $key, $oneLine = false, $entities = null);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -16,8 +26,8 @@ is on, and not entity encoded when output formatting is off.
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Page::getMarkup()](../Page/method-___getmarkup.md)

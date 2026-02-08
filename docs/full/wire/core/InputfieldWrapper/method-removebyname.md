@@ -8,13 +8,20 @@ Note that this works the same as the getByName/getChildByName methods in that it
 will find (and remove) the field by name, even if nested within other wrappers
 or fieldsets. It returns the removed Inputfield when found, or null if not.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->removeByName($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
 
 ## Return value
 
-Inputfield|null Removed Inputfield object on success, or null if not found
+- `Inputfield|null` Removed Inputfield object on success, or null if not found
 
 ## Since
 

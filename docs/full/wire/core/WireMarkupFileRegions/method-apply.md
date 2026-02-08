@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupFileRegions.php`
 
 Apply file regions in given HTML document and regions markup
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireMarkupFileRegions->apply($htmlDocument, $htmlRegions);
+
+// usage with all arguments
+$int = $wireMarkupFileRegions->apply(&$htmlDocument, &$htmlRegions, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$htmlDocument` `string`
@@ -12,4 +22,4 @@ Apply file regions in given HTML document and regions markup
 
 ## Return value
 
-int Number of file regions
+- `int` Number of file regions

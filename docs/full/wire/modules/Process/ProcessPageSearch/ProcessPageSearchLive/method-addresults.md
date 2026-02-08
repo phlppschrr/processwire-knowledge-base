@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Add multiple results at once
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $processPageSearchLive->addResults($group, $results);
+
+// usage with all arguments
+$result = $processPageSearchLive->addResults($group, array $results);
+~~~~~
+
 ## Arguments
 
 - `$group` `string` Group name for these search results
@@ -11,7 +21,7 @@ Add multiple results at once
 
 ## Return value
 
-true
+- `true`
 
 ## Since
 

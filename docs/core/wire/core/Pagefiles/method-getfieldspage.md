@@ -4,9 +4,16 @@ Source: `wire/core/Pagefiles.php`
 
 Get mock/placeholder Page object used for Pagefile custom fields
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagefiles->getFieldsPage();
+~~~~~
+
 ## Return value
 
-Page
+- `Page`
 
 ## Since
 

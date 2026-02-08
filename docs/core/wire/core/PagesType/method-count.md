@@ -4,6 +4,16 @@ Source: `wire/core/PagesType.php`
 
 Return the number of pages in this type matching the given selector string
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesType->count();
+
+// usage with all arguments
+$int = $pagesType->count($selectorString = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectorString` (optional) `string` Optional, if omitted then returns count of all pages of this type
@@ -11,8 +21,8 @@ Return the number of pages in this type matching the given selector string
 
 ## Return value
 
-int
+- `int`
 
-## See also
+## See Also
 
 - [Pages::count()](../Pages/method-count.md)

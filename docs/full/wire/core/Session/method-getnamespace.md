@@ -4,14 +4,21 @@ Source: `wire/core/Session.php`
 
 Given a namespace object or string, return the namespace string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $session->getNamespace($ns);
+~~~~~
+
 ## Arguments
 
 - `$ns` `object|string`
 
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid namespace type
+- `WireException` if given invalid namespace type

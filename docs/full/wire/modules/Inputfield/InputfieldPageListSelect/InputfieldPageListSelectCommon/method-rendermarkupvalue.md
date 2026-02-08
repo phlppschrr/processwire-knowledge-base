@@ -4,10 +4,17 @@ Source: `wire/modules/Inputfield/InputfieldPageListSelect/InputfieldPageListSele
 
 Render markup value for PageListSelect/PageListSelectMultiple
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldPageListSelectCommon->renderMarkupValue($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `int|int[]`
 
 ## Return value
 
-string
+- `string`

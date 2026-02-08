@@ -4,6 +4,16 @@ Source: `wire/core/FieldsTableTools.php`
 
 Delete rows having empty column value
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldsTableTools->deleteEmptyRows($field);
+
+// usage with all arguments
+$bool = $fieldsTableTools->deleteEmptyRows(Field $field, $col = 'data', $strict = true);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -12,8 +22,8 @@ Delete rows having empty column value
 
 ## Return value
 
-bool|int Returns false if delete not allowed, otherwise returns int with # of rows deleted
+- `bool|int` Returns false if delete not allowed, otherwise returns int with # of rows deleted
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

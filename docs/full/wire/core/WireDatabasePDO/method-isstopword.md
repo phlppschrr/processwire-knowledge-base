@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Is given word a fulltext stopword for database engine?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->isStopword($word);
+
+// usage with all arguments
+$bool = $wireDatabasePDO->isStopword($word, $engine = '');
+~~~~~
+
 ## Arguments
 
 - `$word` `string`
@@ -11,7 +21,7 @@ Is given word a fulltext stopword for database engine?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Render form
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->renderForm($id, $class, $attrs, $labels, $inputValues);
+~~~~~
+
 ## Arguments
 
 - `$id` `string`
@@ -14,4 +21,4 @@ Render form
 
 ## Return value
 
-string
+- `string`

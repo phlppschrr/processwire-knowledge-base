@@ -4,6 +4,13 @@ Source: `wire/core/WireHttp.php`
 
 Send an HTTP status header
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireHttp->sendStatusHeader($status);
+~~~~~
+
 ## Arguments
 
 - `$status` `int|string` Status code (i.e. '200') or code and text (i.e. '200 OK')

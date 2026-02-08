@@ -7,10 +7,17 @@ The compile method processes the contents of a file
 1. If you want to compile the entire contents of the file, override this method and don't parent::compile().
 2. If you only want to compile non-PHP sections of the file, implement the compileMarkup() method instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fileCompilerModule->compile($data);
+~~~~~
+
 ## Arguments
 
 - `$data` `string`
 
 ## Return value
 
-string|array
+- `string|array`

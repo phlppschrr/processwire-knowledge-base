@@ -4,12 +4,21 @@ Source: `wire/core/Page.php`
 
 Called right before this page is renamed (i.e. has its name property changed)
 
+## Example
+
 ~~~~~
 $wire->addHook('Page::renameReady', function($e) {
   $page = $e->object;
   list($oldName, $newName) = $e->arguments;
   $e->message("Page $page to be renamed: $oldName => $newName");
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___renameReady($oldName, $newName);
 ~~~~~
 
 ## Arguments

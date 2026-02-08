@@ -8,13 +8,23 @@ Most of the logic here allows for the special case of admin URLs, which work wit
 a custom pageNumUrlPrefix or the original/default one. This is a helper for the
 finishResult() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesPathFinder->finishResultRedirectPageNum($response, $result);
+
+// usage with all arguments
+$int = $pagesPathFinder->finishResultRedirectPageNum($response, &$result);
+~~~~~
+
 ## Arguments
 
 - `$response` `int`
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

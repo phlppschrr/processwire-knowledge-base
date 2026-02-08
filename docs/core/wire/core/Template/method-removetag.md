@@ -4,13 +4,20 @@ Source: `wire/core/Template.php`
 
 Remove tag
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $template->removeTag($tag);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string`
 
 ## Return value
 
-self
+- `self`
 
 ## Since
 

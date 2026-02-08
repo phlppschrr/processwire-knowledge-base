@@ -4,6 +4,8 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Delete specific page version
 
+## Example
+
 ~~~~~~
 // delete version 2 of the page
 $page = $pages->get(1234);
@@ -14,6 +16,16 @@ $pageV2 = $pagesVersions->getPageVersion($page, 2);
 $pagesVersions->deletePageVersion($pageV2);
 ~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesVersions->deletePageVersion($page);
+
+// usage with all arguments
+$int = $pagesVersions->deletePageVersion(Page $page, $version = 0);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to delete version from, or page having the version you want to delete.
@@ -21,4 +33,4 @@ $pagesVersions->deletePageVersion($pageV2);
 
 ## Return value
 
-int Number of DB rows deleted as part of the deletion process
+- `int` Number of DB rows deleted as part of the deletion process

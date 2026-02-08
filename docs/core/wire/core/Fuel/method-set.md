@@ -3,6 +3,16 @@
 Source: `wire/core/Fuel.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fuel->set($key, $value);
+
+// usage with all arguments
+$result = $fuel->set($key, $value, $lock = false);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` API variable name to set - should be valid PHP variable name.
@@ -11,8 +21,8 @@ Source: `wire/core/Fuel.php`
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException When you try to set a previously locked API variable, a WireException will be thrown.
+- `WireException` When you try to set a previously locked API variable, a WireException will be thrown.

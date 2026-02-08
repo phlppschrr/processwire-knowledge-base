@@ -15,6 +15,8 @@ case the string will be padded with as many copies of that $padChar are necessar
 length. By default it padds to the right, but you can specify `true` for the `$padLeft` argument to
 make it pad to the left instead.
 
+## Example
+
 ~~~~~~
 $value = $sanitizer->minLength('foo'); // returns "foo"
 $value = $sanitizer->minLength('foo', 3); // returns "foo"
@@ -22,6 +24,16 @@ $value = $sanitizer->minLength('foo', 5); // returns blank string
 $value = $sanitizer->minLength('foo', 5, 'o'); // returns "foooo"
 $value = $sanitizer->minLength('foo', 5, 'o', true); // returns "oofoo"
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->minLength($value);
+
+// usage with all arguments
+$string = $sanitizer->minLength($value, $minLength = 1, $padChar = '', $padLeft = false);
+~~~~~
 
 ## Arguments
 
@@ -32,8 +44,8 @@ $value = $sanitizer->minLength('foo', 5, 'o', true); // returns "oofoo"
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::maxLength()](method-maxlength.md)

@@ -4,9 +4,16 @@ Source: `wire/core/Selector.php`
 
 Get short label that describes this Selector
 
+## Usage
+
+~~~~~
+// basic usage
+$string = Selector::getLabel();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

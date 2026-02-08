@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Strip optional tags/comments from given markup
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->stripOptional($markup);
+
+// usage with all arguments
+$string = $wireMarkupRegions->stripOptional($markup, $debug = false);
+~~~~~
+
 ## Arguments
 
 - `$markup` `string`
@@ -11,4 +21,4 @@ Strip optional tags/comments from given markup
 
 ## Return value
 
-string
+- `string`

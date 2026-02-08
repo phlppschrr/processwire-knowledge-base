@@ -4,6 +4,16 @@ Source: `wire/core/PagesNames.php`
 
 Get the name format string that should be used for given $page if no name was assigned
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesNames->defaultPageNameFormat($page);
+
+// usage with all arguments
+$string = $pagesNames->defaultPageNameFormat(Page $page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Get the name format string that should be used for given $page if no name was as
 
 ## Return value
 
-string
+- `string`

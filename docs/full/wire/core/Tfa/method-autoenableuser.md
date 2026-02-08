@@ -9,14 +9,24 @@ Automatic enable means a TFA module can be enabled for a user without their inpu
 This method throws WireException for all error conditions, so you may want to call the
 `autoEnableSupported($user)` method first.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $tfa->autoEnableUser($user);
+
+// usage with all arguments
+$result = $tfa->autoEnableUser(User $user, array $settings = array());
+~~~~~
+
 ## Arguments
 
 - `$user` `User` User to auto-enable this Tfa module for.
 - `$settings` (optional) `array` This argument can be omitted in public API usage, but should be specified by Tfa modules in parent::autoEnableForUser() call, containing any needed settings.
 
-## Throws
+## Exceptions
 
-- WireException on all error conditions
+- `WireException` on all error conditions
 
 ## Since
 

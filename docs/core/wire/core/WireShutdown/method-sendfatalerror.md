@@ -6,6 +6,13 @@ Send a fatal error
 
 This is a public fatal error that doesn’t reveal anything specific.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireShutdown->sendFatalError($message, $useHTML);
+~~~~~
+
 ## Arguments
 
 - `$message` `string` Message to indicate who error was also sent to

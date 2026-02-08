@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Set property
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $comment->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set property
 
 ## Return value
 
-self|WireData
+- `self|WireData`

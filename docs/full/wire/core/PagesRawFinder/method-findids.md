@@ -4,6 +4,16 @@ Source: `wire/core/PagesRaw.php`
 
 Front-end to pages.findIDs that optionally accepts array of page IDs
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesRawFinder->findIDs($selector, $verbose);
+
+// usage with all arguments
+$array = $pagesRawFinder->findIDs($selector, $verbose, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `array|string|Selectors`
@@ -12,8 +22,8 @@ Front-end to pages.findIDs that optionally accepts array of page IDs
 
 ## Return value
 
-array
+- `array`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

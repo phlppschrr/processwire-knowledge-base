@@ -4,6 +4,16 @@ Source: `wire/core/PagesPathFinder.php`
 
 Return language identified by homepage name segment
 
+## Usage
+
+~~~~~
+// basic usage
+$language = $pagesPathFinder->segmentLanguage($segment);
+
+// usage with all arguments
+$language = $pagesPathFinder->segmentLanguage($segment, $getLanguageId = false);
+~~~~~
+
 ## Arguments
 
 - `$segment` `string`
@@ -11,4 +21,4 @@ Return language identified by homepage name segment
 
 ## Return value
 
-Language|null|int
+- `Language|null|int`

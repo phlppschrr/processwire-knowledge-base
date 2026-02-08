@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabasePDOStatement.php`
 
 Set a named debug parameter
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabasePDOStatement->setDebugParam($parameter, $value);
+
+// usage with all arguments
+$result = $wireDatabasePDOStatement->setDebugParam($parameter, $value, $data_type = null);
+~~~~~
+
 ## Arguments
 
 - `$parameter` `string`

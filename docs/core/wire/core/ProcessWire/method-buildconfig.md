@@ -4,6 +4,16 @@ Source: `wire/core/ProcessWire.php`
 
 Static method to build a Config object for booting ProcessWire
 
+## Usage
+
+~~~~~
+// basic usage
+$config = ProcessWire::buildConfig();
+
+// usage with all arguments
+$config = ProcessWire::buildConfig($rootPath = '', $rootURL = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$rootPath` (optional) `string` Path to root of installation where ProcessWire's index.php file is located.
@@ -12,4 +22,4 @@ Static method to build a Config object for booting ProcessWire
 
 ## Return value
 
-Config
+- `Config`

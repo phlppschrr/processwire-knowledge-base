@@ -16,6 +16,16 @@ note that non-matching double quotes or parenthesis are removed.
 *Note: If double quotes are used in your selector value, this method will convert them to matching
 parenthesis, i.e. `+"phrase"` gets converted to `+(phrase)`.*
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $sanitizer->selectorValueAdvanced($value);
+
+// usage with all arguments
+$bool = $sanitizer->selectorValueAdvanced($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array`
@@ -23,9 +33,9 @@ parenthesis, i.e. `+"phrase"` gets converted to `+(phrase)`.*
 
 ## Return value
 
-bool|mixed|string
+- `bool|mixed|string`
 
-## See also
+## See Also
 
 - [Sanitizer::selectorValue()](method-selectorvalue.md)
 - [https://processwire.com/docs/selectors/operators/#contains-advanced](https://processwire.com/docs/selectors/operators/#contains-advanced)

@@ -6,6 +6,16 @@ Access the $input->get API variable as a function
 
 This is the same as the input() function except that the $type "get" is already implied.
 
+## Usage
+
+~~~~~
+// basic usage
+$wireInputData = $functionsWireAPI->wireInputGet();
+
+// usage with all arguments
+$wireInputData = $functionsWireAPI->wireInputGet($key = '', $sanitizer = null, $fallback = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Name of input variable to get
@@ -14,4 +24,4 @@ This is the same as the input() function except that the $type "get" is already 
 
 ## Return value
 
-WireInputData|string|int|array|null
+- `WireInputData|string|int|array|null`

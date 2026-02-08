@@ -4,6 +4,13 @@ Source: `wire/core/Notice.php`
 
 Add a flag
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $notice->addFlag($flag);
+~~~~~
+
 ## Arguments
 
 - `$flag` `int|string`

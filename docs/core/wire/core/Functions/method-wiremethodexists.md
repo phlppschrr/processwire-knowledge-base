@@ -8,6 +8,16 @@ ProcessWire namespace aware version of PHP’s method_exists() function
 
 If given a class name that does not include a namespace, the `\ProcessWire` namespace is assumed.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireMethodExists($className, $method);
+
+// usage with all arguments
+$bool = $functions->wireMethodExists($className, $method, $hookable = false);
+~~~~~
+
 ## Arguments
 
 - `$className` `string` Class name or object
@@ -16,4 +26,4 @@ If given a class name that does not include a namespace, the `\ProcessWire` name
 
 ## Return value
 
-bool
+- `bool`

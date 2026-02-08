@@ -4,6 +4,16 @@ Source: `wire/core/WireFileTools.php`
 
 Find all files in the given $path recursively, and return a flat array of all found filenames
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireFileTools->find($path);
+
+// usage with all arguments
+$array = $wireFileTools->find($path, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string` Path to start from (required).
@@ -11,7 +21,7 @@ Find all files in the given $path recursively, and return a flat array of all fo
 
 ## Return value
 
-array Flat array of filenames
+- `array` Flat array of filenames
 
 ## Since
 

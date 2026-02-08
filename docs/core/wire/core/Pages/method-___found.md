@@ -4,6 +4,16 @@ Source: `wire/core/Pages.php`
 
 Hook called at the end of a $pages->find(), includes extra info not seen in the resulting PageArray
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pages->___found($pages, $details);
+
+// usage with all arguments
+$result = $pages->___found(PageArray $pages, array $details);
+~~~~~
+
 ## Arguments
 
 - `$pages` `PageArray` The pages that were found

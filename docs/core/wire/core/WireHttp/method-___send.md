@@ -7,6 +7,16 @@ Send the given $data array to a URL using given method (i.e. POST, GET, PUT, DEL
 This method handles the implementation for the get/post/head/etc. methods. It is preferable to use one
 of those dedicated request methods rather than this one.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->___send($url);
+
+// usage with all arguments
+$bool = $wireHttp->___send($url, $data = array(), $method = 'POST', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to send to (including http:// or https://).
@@ -16,4 +26,4 @@ of those dedicated request methods rather than this one.
 
 ## Return value
 
-bool|string False on failure or string of contents received on success.
+- `bool|string` False on failure or string of contents received on success.

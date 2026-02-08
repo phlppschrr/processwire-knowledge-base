@@ -13,12 +13,24 @@ When specifying boolean true for the `$options` argument (or using the `verbose`
 the return value is an array of associative arrays, with each of those associative arrays
 containing `id`, `parent_id` and `templates_id` keys for each page.
 
+## Example
+
 ~~~~~
 // returns array of page IDs (integers) like [ 1234, 1235, 1236 ]
 $a = $pages->findIDs("foo=bar");
 
 // verbose option: returns array of associative arrays, each with id, parent_id and templates_id
 $a = $pages->findIDs("foo=bar", true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$array = $pages->findIDs($selector);
+
+// usage with all arguments
+$array = $pages->findIDs($selector, $options = array());
 ~~~~~
 
 ## Arguments
@@ -28,7 +40,7 @@ $a = $pages->findIDs("foo=bar", true);
 
 ## Return value
 
-array Array of page IDs, or in verbose mode: array of arrays, each with id, parent_id and templates_id keys.
+- `array` Array of page IDs, or in verbose mode: array of arrays, each with id, parent_id and templates_id keys.
 
 ## Since
 

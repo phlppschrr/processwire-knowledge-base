@@ -7,6 +7,16 @@ Set page $sort value and increment siblings having same or greater sort value
 - This method is primarily applicable if configured sortfield is manual “sort” (or “none”).
 - This is typically used after a move, sort, clone or delete operation.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesEditor->sortPage($page);
+
+// usage with all arguments
+$int = $pagesEditor->sortPage(Page $page, $sort = null, $after = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that you want to set the sort value for
@@ -15,8 +25,8 @@ Set page $sort value and increment siblings having same or greater sort value
 
 ## Return value
 
-int Number of sibling pages that had to have sort adjusted
+- `int` Number of sibling pages that had to have sort adjusted
 
-## Throws
+## Exceptions
 
-- WireException if given invalid arguments
+- `WireException` if given invalid arguments

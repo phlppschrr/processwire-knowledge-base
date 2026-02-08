@@ -8,6 +8,16 @@ If no `$chmod` mode argument is specified the `$config->chmodFile` or $config->c
 
 This is procedural version of the `$files->chmod()` method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireChmod($path);
+
+// usage with all arguments
+$bool = $functions->wireChmod($path, $recursive = false, $chmod = null);
+~~~~~
+
 ## Arguments
 
 - `$path` `string` May be a directory or a filename
@@ -16,12 +26,12 @@ This is procedural version of the `$files->chmod()` method.
 
 ## Return value
 
-bool Returns true if all changes were successful, or false if at least one chmod failed.
+- `bool` Returns true if all changes were successful, or false if at least one chmod failed.
 
-## Throws
+## Exceptions
 
-- WireException when it receives incorrect chmod format
+- `WireException` when it receives incorrect chmod format
 
-## See also
+## See Also
 
 - [WireFileTools::chmod()](../WireFileTools/method-chmod.md)

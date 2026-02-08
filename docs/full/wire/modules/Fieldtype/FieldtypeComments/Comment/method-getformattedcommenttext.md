@@ -9,13 +9,23 @@ but without the first `<p>` and last `</p>` since it is assumed these will be th
 the comment in. If you want it to include the wrapping `<p>…</p>` tags then specify true for the
 `wrapParagraph` option in the `$options` argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $comment->getFormattedCommentText();
+
+// usage with all arguments
+$string = $comment->getFormattedCommentText(array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` - `useParagraphs` (bool): Convert newlines to paragraphs? (default=true) - `wrapParagraph` (bool): Use wrapping <p>…</p> tags around return value? (default=false) - `useLinebreaks` (bool): Convert single newlines to <br> tags? (default=true)
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

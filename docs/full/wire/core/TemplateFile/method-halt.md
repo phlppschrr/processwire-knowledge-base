@@ -11,10 +11,20 @@ Can be called from prepend/append files as well.
 
 USAGE from template file is: return $this->halt();
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $templateFile->halt();
+
+// usage with all arguments
+$result = $templateFile->halt($halt = true);
+~~~~~
+
 ## Arguments
 
 - `$halt` (optional) `bool|string` If given boolean, it will set the halt status. If given string, it will be output (3.0.239+)
 
 ## Return value
 
-$this
+- `$this`

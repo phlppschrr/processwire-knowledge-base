@@ -4,6 +4,16 @@ Source: `wire/core/Selectors.php`
 
 Does the given Wire match these Selector (single)?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selectors->matchesSelector($selector, $item);
+
+// usage with all arguments
+$bool = $selectors->matchesSelector(Selector $selector, Wire $item);
+~~~~~
+
 ## Arguments
 
 - `$selector` `Selector`
@@ -11,7 +21,7 @@ Does the given Wire match these Selector (single)?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

@@ -7,6 +7,16 @@ Rename by first copying files to destination and then deleting source files
 The operation is considered successful so long as the source files were able to be copied to the destination.
 If source files cannot be deleted afterwards, the warning is logged, plus a warning notice is also shown when in debug mode.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->renameCopy($oldName, $newName);
+
+// usage with all arguments
+$bool = $wireFileTools->renameCopy($oldName, $newName, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$oldName` `string` Old pathname, must be full disk path.
@@ -15,11 +25,11 @@ If source files cannot be deleted afterwards, the warning is logged, plus a warn
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

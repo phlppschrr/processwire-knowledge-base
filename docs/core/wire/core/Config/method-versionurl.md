@@ -6,6 +6,16 @@ Given a file asset URLs return it with cache-busting version string
 
 URLs that aready have query strings are left alone.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $config->versionUrl($url);
+
+// usage with all arguments
+$string = $config->versionUrl($url, $useVersion = null);
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to a file asset (such as JS/CSS file)
@@ -13,9 +23,9 @@ URLs that aready have query strings are left alone.
 
 ## Return value
 
-string URL updated with version strings where necessary
+- `string` URL updated with version strings where necessary
 
-## See also
+## See Also
 
 - [Config::versionUrls()](method-versionurls.md)
 

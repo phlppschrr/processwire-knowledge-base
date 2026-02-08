@@ -8,6 +8,8 @@ Return the current pagination/page number (starting from 1)
 - The current page number affects all paginated page finding operations.
 - First page number is 1 (not 0).
 
+## Example
+
 ~~~~~
 // Adjust output according to page number
 if($input->pageNum == 1) {
@@ -17,6 +19,13 @@ if($input->pageNum == 1) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireInput->pageNum();
+~~~~~
+
 ## Return value
 
-int Current pagination number
+- `int` Current pagination number

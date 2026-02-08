@@ -8,6 +8,13 @@ Applicable only if the value of the field is an array or object.
 
 Classes descending from MarkupFieldtype would implement their own method.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $markupFieldtype->renderProperty($property, $value);
+~~~~~
+
 ## Arguments
 
 - `$property` `string` The property name being rendered.
@@ -15,4 +22,4 @@ Classes descending from MarkupFieldtype would implement their own method.
 
 ## Return value
 
-string
+- `string`

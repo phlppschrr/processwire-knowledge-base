@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Given a potentially multi-dimensional array, return a flat 1-dimensional array
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->flatArray($value);
+
+// usage with all arguments
+$array = $sanitizer->flatArray($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `array`
@@ -11,7 +21,7 @@ Given a potentially multi-dimensional array, return a flat 1-dimensional array
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

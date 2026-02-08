@@ -4,6 +4,16 @@ Source: `wire/core/MarkupQA.php`
 
 Given page ID return the path to it
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $markupQA->getPagePathFromId($pageID);
+
+// usage with all arguments
+$string = $markupQA->getPagePathFromId($pageID, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$pageID` `int`
@@ -11,7 +21,7 @@ Given page ID return the path to it
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

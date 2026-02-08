@@ -6,6 +6,24 @@ Add a class or classes to this Inputfield (or a wrapping element)
 
 If given a class name that’s already present, it won’t be added again.
 
+
+**Formatted string option (3.0.204+):**
+Classes can be added by formatted string that dictates what Inputfield element they
+should be added to, in the format `element:classNames` like in this example below:
+Each line represents a group containing an element name and one or more space-separated
+classes. Groups may be separated by newline (like above) or with a comma. The element
+name may be any one of the following:
+
+ - `wrap`: The .Inputfield element that wraps the header and content
+ - `header`: The .InputfieldHeader element, typically a `<label>`.
+ - `content`: The .InputfieldContent element that wraps the input(s), typically a `<div>`.
+ - `input`: The primary `<input>` element(s) that accept input for the Inputfield.
+ - `class`: This is the same as the 'input' type, just an alias.
+
+Class names prefixed with a minus sign i.e. `-class` will be removed rather than added.
+
+## Example
+
 ~~~~~
 // Add class "foobar" to input element
 $inputfield->addClass('foobar');
@@ -20,26 +38,22 @@ $inputfield->addClass('foobar', 'wrapClass');
 $inputfield->addClass('wrap:card, header:card-header, content:card-body');
 ~~~~~
 
-**Formatted string option (3.0.204+):**
-Classes can be added by formatted string that dictates what Inputfield element they
-should be added to, in the format `element:classNames` like in this example below:
 ~~~~~
 wrap:card card-default
 header:card-header
 content:card-body
 input:form-input input-checkbox
 ~~~~~
-Each line represents a group containing an element name and one or more space-separated
-classes. Groups may be separated by newline (like above) or with a comma. The element
-name may be any one of the following:
 
- - `wrap`: The .Inputfield element that wraps the header and content
- - `header`: The .InputfieldHeader element, typically a `<label>`.
- - `content`: The .InputfieldContent element that wraps the input(s), typically a `<div>`.
- - `input`: The primary `<input>` element(s) that accept input for the Inputfield.
- - `class`: This is the same as the 'input' type, just an alias.
+## Usage
 
-Class names prefixed with a minus sign i.e. `-class` will be removed rather than added.
+~~~~~
+// basic usage
+$result = $inputfield->addClass($class);
+
+// usage with all arguments
+$result = $inputfield->addClass($class, $property = 'class');
+~~~~~
 
 ## Arguments
 
@@ -48,9 +62,9 @@ Class names prefixed with a minus sign i.e. `-class` will be removed rather than
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [Inputfield::hasClass()](method-hasclass.md)
 - [Inputfield::removeClass()](method-removeclass.md)

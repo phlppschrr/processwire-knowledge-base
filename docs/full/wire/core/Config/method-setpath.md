@@ -12,6 +12,13 @@ Change or set just the server disk path for the named location (leaving URL as-i
 - The `$for` argument can be: `cache`, `logs`, `files`, `tmp`, `templates`, or one of your own. Other named locations may
   also work, but since they can potentially be used before PW’s “ready” state, they may not be reliable.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $config->setPath($for, $path);
+~~~~~
+
 ## Arguments
 
 - `$for` `string` Named location from `$config->paths`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
@@ -19,11 +26,11 @@ Change or set just the server disk path for the named location (leaving URL as-i
 
 ## Return value
 
-self
+- `self`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

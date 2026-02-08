@@ -7,6 +7,16 @@ Send a DELETE request to a URL
 “The HTTP DELETE request method deletes the specified resource.”
 [More about DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->delete($url);
+
+// usage with all arguments
+$bool = $wireHttp->delete($url, $data = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to send to (including http:// or https://)
@@ -15,7 +25,7 @@ Send a DELETE request to a URL
 
 ## Return value
 
-bool|string False on failure or string of contents received on success.
+- `bool|string` False on failure or string of contents received on success.
 
 ## Since
 

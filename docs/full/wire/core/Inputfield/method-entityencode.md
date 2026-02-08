@@ -7,6 +7,16 @@ Entity encode a string with optional Markdown support.
 - Markdown support provided with second argument.
 - If string is already entity-encoded it will first be decoded.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfield->entityEncode($str);
+
+// usage with all arguments
+$string = $inputfield->entityEncode($str, $markdown = false);
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to encode
@@ -14,4 +24,4 @@ Entity encode a string with optional Markdown support.
 
 ## Return value
 
-string Entity encoded string or HTML string
+- `string` Entity encoded string or HTML string

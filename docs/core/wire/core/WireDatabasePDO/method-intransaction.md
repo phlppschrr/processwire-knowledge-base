@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Checks if inside a transaction
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->inTransaction();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Details
 

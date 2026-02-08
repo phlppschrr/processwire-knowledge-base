@@ -12,6 +12,8 @@ This works the same as PHP’s empty() function except for the following:
 - It uses the string value of objects that can be typecast strings (3.0.150+).
 - You cannot pass it an undefined variable without triggering a PHP warning.
 
+## Example
+
 ~~~~~
 // behavior with Countable objects
 $a = new WireArray();
@@ -31,13 +33,20 @@ empty($v); // returns true
 wireEmpty($v); // returns true but with PHP’s warning triggered
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireEmpty($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed` Value to test if empty
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

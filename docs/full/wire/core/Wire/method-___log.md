@@ -8,8 +8,20 @@ Message is saved to a log file in ProcessWire's logs path to a file with
 the same name as the class, converted to hyphenated lowercase. For example,
 a class named `MyWidgetData` would have a log named `my-widget-data.txt`.
 
+## Example
+
 ~~~~~
 $this->log("This message will be logged");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wireLog = $wire->___log();
+
+// usage with all arguments
+$wireLog = $wire->___log($str = '', array $options = array());
 ~~~~~
 
 ## Arguments
@@ -19,4 +31,4 @@ $this->log("This message will be logged");
 
 ## Return value
 
-WireLog
+- `WireLog`

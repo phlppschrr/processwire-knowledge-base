@@ -4,9 +4,16 @@ Source: `wire/core/PaginatedArray.php`
 
 Is there a previous pagination before the current one?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $paginatedArray->hasPrevPagination();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

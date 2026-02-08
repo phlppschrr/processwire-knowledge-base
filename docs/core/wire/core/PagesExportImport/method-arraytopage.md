@@ -29,6 +29,16 @@ The following options are for future use and not currently applicable:
  - `changeName` (bool): Allow name to be changed on existing pages? (default=false)
  - `replaceParents` (array): Array of import-data parent path to replacement parent path (default=[])
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesExportImport->arrayToPage($a);
+
+// usage with all arguments
+$page = $pagesExportImport->arrayToPage(array $a, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$a` `array`
@@ -36,8 +46,8 @@ The following options are for future use and not currently applicable:
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

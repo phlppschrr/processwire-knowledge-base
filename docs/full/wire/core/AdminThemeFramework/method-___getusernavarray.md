@@ -19,6 +19,13 @@ Supported properties/attributes as of 3.0.248:
 - onclick (html attr)
 - data-* (html attr)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $adminThemeFramework->___getUserNavArray();
+~~~~~
+
 ## Return value
 
-array
+- `array`

@@ -6,13 +6,20 @@ Perform maintenance by cleaning up old temporary directories
 
 Note: This is done automatically if any temporary directories are created during the request.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireTempDir->maintenance();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

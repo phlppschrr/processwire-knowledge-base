@@ -4,6 +4,16 @@ Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Set multiple flags
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $notification->setFlags($names);
+
+// usage with all arguments
+$result = $notification->setFlags($names, $add = true);
+~~~~~
+
 ## Arguments
 
 - `$names` `string` space separated string of flag names
@@ -11,4 +21,4 @@ Set multiple flags
 
 ## Return value
 
-self
+- `self`

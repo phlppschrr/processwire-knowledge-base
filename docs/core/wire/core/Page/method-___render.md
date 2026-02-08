@@ -15,6 +15,14 @@ If using the `$options` array argument (whether 1st or 2nd argument), you may us
 template file, and those values will be available in a variable named `$options` within the scope of the template file
 (see examples below).
 
+
+Note: If the page’s template has caching enabled, then this method will return a cached page render (when available)
+or save a new cache. Caches are only saved on guest users.
+
+For simpler and more specific methods, we recommend using, hooking or overriding `renderPage()` or `renderField()` instead.
+
+## Example
+
 ~~~~~
 // regular page render call
 $out = $page->render();
@@ -32,10 +40,15 @@ $out = $page->render([
 echo "<p>Full name: $options[firstName] $options[lastName]</p>";
 ~~~~~
 
-Note: If the page’s template has caching enabled, then this method will return a cached page render (when available)
-or save a new cache. Caches are only saved on guest users.
+## Usage
 
-For simpler and more specific methods, we recommend using, hooking or overriding `renderPage()` or `renderField()` instead.
+~~~~~
+// basic usage
+$string = $page->___render();
+
+// usage with all arguments
+$string = $page->___render($options = [], $options2 = null);
+~~~~~
 
 ## Arguments
 
@@ -44,13 +57,13 @@ For simpler and more specific methods, we recommend using, hooking or overriding
 
 ## Return value
 
-string|mixed
+- `string|mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Page::renderPage()](method-___renderpage.md)
 - [Page::renderField()](method-___renderfield.md)

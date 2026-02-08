@@ -12,6 +12,16 @@ steps should be processed:
 2 = only resize with aspect ratio
 4 = resize and crop with aspect ratio
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $imageSizerEngine->getResizeMethod($gdWidth, $gdHeight, $targetWidth, $targetHeight, $x1, $y1);
+
+// usage with all arguments
+$int = $imageSizerEngine->getResizeMethod(&$gdWidth, &$gdHeight, &$targetWidth, &$targetHeight, &$x1, &$y1);
+~~~~~
+
 ## Arguments
 
 - `$gdWidth` `mixed`
@@ -23,4 +33,4 @@ steps should be processed:
 
 ## Return value
 
-int 0|2|4
+- `int` 0|2|4

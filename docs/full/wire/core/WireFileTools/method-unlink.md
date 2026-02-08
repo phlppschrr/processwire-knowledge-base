@@ -10,6 +10,16 @@ Unlink/delete file with additional protections relative to PHP unlink()
 - This method will be limited to unlink files only in /site/assets/ if you
   specify `true` for the `$limitPath` option (recommended).
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->unlink($filename);
+
+// usage with all arguments
+$bool = $wireFileTools->unlink($filename, $limitPath = false, $throw = false);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`
@@ -18,11 +28,11 @@ Unlink/delete file with additional protections relative to PHP unlink()
 
 ## Return value
 
-bool True on success, false on fail
+- `bool` True on success, false on fail
 
-## Throws
+## Exceptions
 
-- WireException If file is not allowed to be removed or unlink fails
+- `WireException` If file is not allowed to be removed or unlink fails
 
 ## Since
 

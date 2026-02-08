@@ -6,10 +6,22 @@ Save only a field from the given page
 
 This is the same as calling `$page->save($field)`.
 
+## Example
+
 ~~~~~
 // Update the summary field on $page and save it
 $page->summary = "Those who know do not speak. Those who speak do not know.";
 $pages->saveField($page, 'summary');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->___saveField($page, $field);
+
+// usage with all arguments
+$bool = $pages->___saveField(Page $page, $field, $options = array());
 ~~~~~
 
 ## Arguments
@@ -20,13 +32,13 @@ $pages->saveField($page, 'summary');
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Page::save()](../Page/method-save.md)
 - [Page::setAndSave()](../Page/method-setandsave.md)

@@ -4,6 +4,16 @@ Source: `wire/core/PagesType.php`
 
 Given a Selector string, return the Page objects that match in a PageArray.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesType->find($selectorString);
+
+// usage with all arguments
+$items = $pagesType->find($selectorString, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectorString` `string`
@@ -11,8 +21,8 @@ Given a Selector string, return the Page objects that match in a PageArray.
 
 ## Return value
 
-PageArray
+- `PageArray`
 
-## See also
+## See Also
 
 - [Pages::find()](../Pages/method-___find.md)

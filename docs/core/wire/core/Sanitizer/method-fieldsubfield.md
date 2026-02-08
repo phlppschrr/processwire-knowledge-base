@@ -10,6 +10,8 @@ Sanitize as a field name but with optional subfield(s) like “field.subfield”
 - To reduce a `field.subfield...` combo to just `field` specify 0 for limit argument.
 - Maximum length of returned string is (128 + ($limit * 128)).
 
+## Example
+
 ~~~~~~
 echo $sanitizer->fieldSubfield('a.b.c'); // outputs: a.b (default behavior)
 echo $sanitizer->fieldSubfield('a.b.c', 2); // outputs: a.b.c
@@ -19,6 +21,16 @@ echo $sanitizer->fieldSubfield('foo bar.baz'); // outputs: foo_bar.baz
 echo $sanitizer->fieldSubfield('foo bar baz'); // outputs: foo_bar_baz
 ~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->fieldSubfield($value);
+
+// usage with all arguments
+$string = $sanitizer->fieldSubfield($value, $limit = 1);
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Value to sanitize
@@ -26,7 +38,7 @@ echo $sanitizer->fieldSubfield('foo bar baz'); // outputs: foo_bar_baz
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

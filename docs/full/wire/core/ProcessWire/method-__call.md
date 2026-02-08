@@ -4,6 +4,13 @@ Source: `wire/core/ProcessWire.php`
 
 Call method
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $processWire->__call($method, $arguments);
+~~~~~
+
 ## Arguments
 
 - `$method` `string`
@@ -11,8 +18,8 @@ Call method
 
 ## Return value
 
-mixed
+- `mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

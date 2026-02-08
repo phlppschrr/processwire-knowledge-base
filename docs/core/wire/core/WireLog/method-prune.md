@@ -4,6 +4,13 @@ Source: `wire/core/WireLog.php`
 
 Prune log file to contain only entries from last [n] days
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireLog->prune($name, $days);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Name of log file, excluding path and extension.
@@ -11,8 +18,8 @@ Prune log file to contain only entries from last [n] days
 
 ## Return value
 
-int Number of items in newly pruned log file or boolean false on failure
+- `int` Number of items in newly pruned log file or boolean false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

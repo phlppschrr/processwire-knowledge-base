@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Get or set meta data property
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $comment->meta();
+
+// usage with all arguments
+$array = $comment->meta($key = null, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|array` Property to get/set or omit to get all.
@@ -11,7 +21,7 @@ Get or set meta data property
 
 ## Return value
 
-array|string|int|mixed Returns value for $key or null if it does not exist. Returns array when getting all.
+- `array|string|int|mixed` Returns value for $key or null if it does not exist. Returns array when getting all.
 
 ## Since
 

@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Get current database charset (lowercase)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->getCharset();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

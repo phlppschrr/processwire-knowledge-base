@@ -4,6 +4,13 @@ Source: `wire/modules/Markup/MarkupPagerNav/PagerNav.php`
 
 Set the labels to use for the 'prev' and 'next' links
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagerNav->setLabels($previous, $next);
+~~~~~
+
 ## Arguments
 
 - `$previous` `string` 'Previous' label

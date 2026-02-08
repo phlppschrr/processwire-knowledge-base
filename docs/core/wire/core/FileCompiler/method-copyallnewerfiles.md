@@ -4,6 +4,16 @@ Source: `wire/core/FileCompiler.php`
 
 Recursively copy all files from $source to $target, but only if $source file is $newer
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $fileCompiler->copyAllNewerFiles($source, $target);
+
+// usage with all arguments
+$int = $fileCompiler->copyAllNewerFiles($source, $target, $recursive = true);
+~~~~~
+
 ## Arguments
 
 - `$source` `string`
@@ -12,4 +22,4 @@ Recursively copy all files from $source to $target, but only if $source file is 
 
 ## Return value
 
-int Number of files copied
+- `int` Number of files copied

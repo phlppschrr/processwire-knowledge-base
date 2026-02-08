@@ -6,6 +6,16 @@ Set meta data (custom fields for comments)
 
 To set multiple properties at once specify an associative array for $key and omit $value.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $comment->setMeta($key);
+
+// usage with all arguments
+$result = $comment->setMeta($key, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|array` Property name to set or assoc array of them
@@ -13,7 +23,7 @@ To set multiple properties at once specify an associative array for $key and omi
 
 ## Return value
 
-self
+- `self`
 
 ## Since
 

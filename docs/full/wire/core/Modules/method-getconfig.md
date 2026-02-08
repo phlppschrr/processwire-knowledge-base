@@ -18,6 +18,16 @@ $modules->saveConfig('HelloWorld', $data);
 
 3.0.16 Changed from more verbose name `getModuleConfigData()`, which can still be used.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $modules->getConfig($class);
+
+// usage with all arguments
+$array = $modules->getConfig($class, $property = '');
+~~~~~
+
 ## Arguments
 
 - `$class` `string|Module`
@@ -25,9 +35,9 @@ $modules->saveConfig('HelloWorld', $data);
 
 ## Return value
 
-array|string|int|float Module configuration data, returns array unless a specific $property was requested
+- `array|string|int|float` Module configuration data, returns array unless a specific $property was requested
 
-## See also
+## See Also
 
 - [Modules::saveConfig()](method-___saveconfig.md)
 

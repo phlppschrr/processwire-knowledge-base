@@ -12,9 +12,21 @@ file/directory tree at once.
 
 The `$recursive` or `$chmod` arguments may be optionally swapped in order (since 3.0.34).
 
+## Example
+
 ~~~~~
 // Update the mode of /site/assets/cache/foo-bar/ recursively
 $files->chmod($config->paths->cache . 'foo-bar/', true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->chmod($path);
+
+// usage with all arguments
+$bool = $wireFileTools->chmod($path, $recursive = false, $chmod = null);
 ~~~~~
 
 ## Arguments
@@ -25,8 +37,8 @@ $files->chmod($config->paths->cache . 'foo-bar/', true);
 
 ## Return value
 
-bool Returns true if all changes were successful, or false if at least one chmod failed.
+- `bool` Returns true if all changes were successful, or false if at least one chmod failed.
 
-## Throws
+## Exceptions
 
-- WireException when it receives incorrect chmod format
+- `WireException` when it receives incorrect chmod format

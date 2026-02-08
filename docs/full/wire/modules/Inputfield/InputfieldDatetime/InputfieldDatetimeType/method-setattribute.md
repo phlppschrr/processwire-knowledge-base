@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 Get attribute
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldDatetimeType->setAttribute($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Get attribute
 
 ## Return value
 
-self
+- `self`

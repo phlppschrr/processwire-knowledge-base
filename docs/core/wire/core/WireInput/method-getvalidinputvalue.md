@@ -4,6 +4,16 @@ Source: `wire/core/WireInput.php`
 
 Provides the implementation for get/post/cookie method validation and fallback features
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireInput->getValidInputValue($input, $key, $valid, $fallback);
+
+// usage with all arguments
+$array = $wireInput->getValidInputValue(WireInputData $input, $key, $valid, $fallback);
+~~~~~
+
 ## Arguments
 
 - `$input` `WireInputData`
@@ -13,8 +23,8 @@ Provides the implementation for get/post/cookie method validation and fallback f
 
 ## Return value
 
-array|int|mixed|null|WireInputData|string
+- `array|int|mixed|null|WireInputData|string`
 
-## Throws
+## Exceptions
 
-- WireException if given unknown Sanitizer method or some other invalid arguments.
+- `WireException` if given unknown Sanitizer method or some other invalid arguments.

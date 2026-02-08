@@ -4,11 +4,20 @@ Source: `wire/core/Pagefile.php`
 
 Add the given tag to this file’s tags (if not already present)
 
+## Example
+
 ~~~~~
 $file = $page->files->first();
 $file->addTag('foo'); // add single tag
 $file->addTag('foo,bar,baz'); // add multiple tags
 $file->addTag(['foo', 'bar', 'baz']); // same as above, using array
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagefile->addTag($tag);
 ~~~~~
 
 ## Arguments
@@ -17,9 +26,9 @@ $file->addTag(['foo', 'bar', 'baz']); // same as above, using array
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [Pagefile::tags()](method-tags.md)
 - [Pagefile::hasTag()](method-hastag.md)

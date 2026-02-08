@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Does this field have context settings for given Page/Template?
 
+## Usage
+
+~~~~~
+// basic usage
+$field = $field->hasContext($for);
+
+// usage with all arguments
+$field = $field->hasContext($for, $namespace = '');
+~~~~~
+
 ## Arguments
 
 - `$for` `Page|Template|Fieldgroup|string` Specify Page, Template, or template name string
@@ -11,9 +21,9 @@ Does this field have context settings for given Page/Template?
 
 ## Return value
 
-Field|bool
+- `Field|bool`
 
-## See also
+## See Also
 
 - [Field::getContext()](method-getcontext.md)
 

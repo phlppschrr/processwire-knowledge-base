@@ -4,3 +4,13 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 ************************************************************************
 INTERNAL API
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagesVersions->getPageFieldVersion($page, $field, $version);
+
+// usage with all arguments
+$result = $pagesVersions->getPageFieldVersion(Page $page, Field $field, $version, array $options = []);
+~~~~~

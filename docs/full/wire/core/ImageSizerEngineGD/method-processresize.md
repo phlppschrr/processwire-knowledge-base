@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Process the image resize
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngineGD->processResize($srcFilename, $dstFilename, $fullWidth, $fullHeight, $finalWidth, $finalHeight);
+~~~~~
+
 ## Arguments
 
 - `$srcFilename` `string` Source file
@@ -15,8 +22,8 @@ Process the image resize
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

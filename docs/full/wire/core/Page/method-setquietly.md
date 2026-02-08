@@ -7,6 +7,13 @@ Quietly set the value of a page property.
 Set a value to a page without tracking changes and without exceptions.
 Otherwise same as set().
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->setQuietly($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -14,4 +21,4 @@ Otherwise same as set().
 
 ## Return value
 
-$this
+- `$this`

@@ -8,6 +8,16 @@ This is the method used by by the `$page->save($field)` method.
 
 This function is public, but the preferred manner to call it is with `$page->save($field)`
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->saveField($page, $field);
+
+// usage with all arguments
+$bool = $pagesEditor->saveField(Page $page, $field, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -16,12 +26,12 @@ This function is public, but the preferred manner to call it is with `$page->sav
 
 ## Return value
 
-bool True on success
+- `bool` True on success
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Page::save()](../Page/method-save.md)

@@ -14,6 +14,16 @@ The keys of the returned array remain consistent with the original WireArray.
 
 [Introduction of explode method](https://processwire.com/talk/topic/5098-new-wirearray-api-additions-on-dev/)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireArray->explode();
+
+// usage with all arguments
+$array = $wireArray->explode($property = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$property` (optional) `string|callable|array` Property or properties to retrieve, or callable function that should receive items.
@@ -21,9 +31,9 @@ The keys of the returned array remain consistent with the original WireArray.
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [WireArray::each()](method-each.md)
 - [WireArray::implode()](method-implode.md)

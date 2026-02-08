@@ -4,10 +4,17 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Set the PDO database connection
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabaseBackup->setDatabase($database);
+~~~~~
+
 ## Arguments
 
 - `$database` `\PDO|WireDatabasePDO`
 
-## Throws
+## Exceptions
 
-- \PDOException on invalid connection
+- `\PDOException` on invalid connection

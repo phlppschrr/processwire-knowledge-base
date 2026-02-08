@@ -4,6 +4,16 @@ Source: `wire/core/WireHooks.php`
 
 Return all hooks associated with $object or method (if specified)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireHooks->getHooks($object);
+
+// usage with all arguments
+$array = $wireHooks->getHooks(Wire $object, $method = '', $getHooks = self::getHooksAll);
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire`
@@ -12,4 +22,4 @@ Return all hooks associated with $object or method (if specified)
 
 ## Return value
 
-array
+- `array`

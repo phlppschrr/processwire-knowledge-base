@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize selector value (original, version 1)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->selectorValueV1($value);
+
+// usage with all arguments
+$string = $sanitizer->selectorValueV1($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - $value
@@ -11,4 +21,4 @@ Sanitize selector value (original, version 1)
 
 ## Return value
 
-string
+- `string`

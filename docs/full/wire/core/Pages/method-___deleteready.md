@@ -7,6 +7,16 @@ Hook called when a page is about to be deleted, but before data has been touched
 This is different from a before `Pages::delete` hook because this hook is called once it has
 been confirmed that the page is deleteable and *will* be deleted.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pages->___deleteReady($page);
+
+// usage with all arguments
+$result = $pages->___deleteReady(Page $page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that is about to be deleted.

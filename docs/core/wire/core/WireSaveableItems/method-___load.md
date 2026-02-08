@@ -6,6 +6,16 @@ Load items from the database table and return them in the same type class that g
 
 A selector string or Selectors may be provided so that this can be used as a find() by descending classes that don't load all items at once.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireSaveableItems->___load($items);
+
+// usage with all arguments
+$items = $wireSaveableItems->___load(WireArray $items, $selectors = null);
+~~~~~
+
 ## Arguments
 
 - `$items` `WireArray`
@@ -13,4 +23,4 @@ A selector string or Selectors may be provided so that this can be used as a fin
 
 ## Return value
 
-WireArray Returns the same type as specified in the getAll() method.
+- `WireArray` Returns the same type as specified in the getAll() method.

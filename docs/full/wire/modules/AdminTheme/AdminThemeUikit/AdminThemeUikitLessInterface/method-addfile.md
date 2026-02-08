@@ -3,6 +3,16 @@
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $adminThemeUikitLessInterface->addFile($file);
+
+// usage with all arguments
+$result = $adminThemeUikitLessInterface->addFile($file, $url = '');
+~~~~~
+
 ## Arguments
 
 - `$file` `string`
@@ -10,4 +20,4 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 ## Return value
 
-self
+- `self`

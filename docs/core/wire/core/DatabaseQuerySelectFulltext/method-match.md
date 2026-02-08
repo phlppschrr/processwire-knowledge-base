@@ -4,6 +4,13 @@ Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Update the query (provided to the constructor) to match the given arguments
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $databaseQuerySelectFulltext->match($tableName, $fieldName, $operator, $value);
+~~~~~
+
 ## Arguments
 
 - `$tableName` `string`
@@ -13,8 +20,8 @@ Update the query (provided to the constructor) to match the given arguments
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException If given $operator argument is not implemented here
+- `WireException` If given $operator argument is not implemented here

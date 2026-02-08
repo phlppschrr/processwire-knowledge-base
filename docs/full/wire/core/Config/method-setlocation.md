@@ -20,11 +20,24 @@ Given a directory to a named location, updates $config->paths and $config->urls 
 The following example would be in /site/init.php or /site/ready.php (or equivalent module method). In this example we
 are changing the location (path and URL) of our /site/templates/ to use a new version of the files in /site/dev-templates/
 so that we can test them out with user 'karen', while all other users on the site get our regular templates.
+
+## Example
+
 ~~~~~
 // change templates path and URL to /site/dev-templates/ when user name is 'karen'
 if($user->name == 'karen') {
   $config->setLocation('templates', 'site/dev-templates/');
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $config->setLocation($for, $dir);
+
+// usage with all arguments
+$result = $config->setLocation($for, $dir, $url = '');
 ~~~~~
 
 ## Arguments
@@ -35,11 +48,11 @@ if($user->name == 'karen') {
 
 ## Return value
 
-self
+- `self`
 
-## Throws
+## Exceptions
 
-- WireException If request cannot be accommodated
+- `WireException` If request cannot be accommodated
 
 ## Since
 

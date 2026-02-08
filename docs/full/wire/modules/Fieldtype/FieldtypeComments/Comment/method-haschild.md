@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Does this comment have the given child comment?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $comment->hasChild($comment);
+
+// usage with all arguments
+$bool = $comment->hasChild($comment, $recursive = true);
+~~~~~
+
 ## Arguments
 
 - `$comment` `int|Comment` Comment or Comment ID
@@ -11,7 +21,7 @@ Does this comment have the given child comment?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

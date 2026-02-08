@@ -10,6 +10,16 @@ Makes sure that the quoted-printable encoded part is inside the 76 characters
 header limit (66 for first line that has the header name, minus a buffer
 of 2 characters for whitespace) given in rfc2047.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMail->findBestEncodePart($input);
+
+// usage with all arguments
+$string = $wireMail->findBestEncodePart($input, $maxlen = 63, $isFirst = false);
+~~~~~
+
 ## Arguments
 
 - `$input` `string` The subject to encode
@@ -18,4 +28,4 @@ of 2 characters for whitespace) given in rfc2047.
 
 ## Return value
 
-string
+- `string`

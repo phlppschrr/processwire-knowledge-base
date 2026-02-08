@@ -6,6 +6,16 @@ Convert string to be all camelCase
 
 For example, "Hello World" becomes "helloWorld" or "foo-bar-baz" becomes "fooBarBaz".
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->camelCase($value);
+
+// usage with all arguments
+$string = $sanitizer->camelCase($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -13,4 +23,4 @@ For example, "Hello World" becomes "helloWorld" or "foo-bar-baz" becomes "fooBar
 
 ## Return value
 
-string
+- `string`

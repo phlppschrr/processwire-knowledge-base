@@ -15,15 +15,25 @@ any past (historical) URLs the page was previously available at (which will redi
 - If PagePathHistory core module is not installed then past/historical URLs are excluded.
 - You can disable past/historical or multi-language URLs by using the $options argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $page->urls();
+
+// usage with all arguments
+$array = $page->urls($options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` Options to modify default behavior: - `http` (bool): Make URLs include current scheme and hostname (default=false). - `past` (bool): Include past/historical URLs? (default=true) - `languages` (bool): Include other language URLs when supported/available? (default=true). - `language` (Language|int|string): Include only URLs for this language (default=null). Note: the `languages` option must be true if using the `language` option.
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [Page::addUrl()](index.md)
 - page::removeUrl()

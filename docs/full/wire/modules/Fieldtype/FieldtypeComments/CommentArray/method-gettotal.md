@@ -6,6 +6,13 @@ Get the total number of comments
 
 Used for pagination.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $commentArray->getTotal();
+~~~~~
+
 ## Return value
 
-int
+- `int`

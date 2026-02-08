@@ -4,6 +4,16 @@ Source: `wire/core/Session.php`
 
 Add a SetCookie response header
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $session->setCookie($name, $value);
+
+// usage with all arguments
+$bool = $session->setCookie($name, $value, $expires = 0, $path = '/', $domain = null, $secure = false, $httponly = false, $samesite = 'Lax');
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -17,7 +27,7 @@ Add a SetCookie response header
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

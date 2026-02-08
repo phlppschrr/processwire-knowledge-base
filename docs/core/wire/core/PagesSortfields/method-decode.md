@@ -6,6 +6,16 @@ Decodes a sortfield from a signed integer or string to a field name
 
 The returned fieldname is preceded with a dash if the sortfield is reversed.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesSortfields->decode($sortfield);
+
+// usage with all arguments
+$string = $pagesSortfields->decode($sortfield, $default = 'sort');
+~~~~~
+
 ## Arguments
 
 - `$sortfield` `string|int`
@@ -13,4 +23,4 @@ The returned fieldname is preceded with a dash if the sortfield is reversed.
 
 ## Return value
 
-string
+- `string`

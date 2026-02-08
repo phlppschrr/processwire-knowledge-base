@@ -4,13 +4,20 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Normalize a string, filename or object to be a textdomain string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageTranslator->textdomainString($textdomain);
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string|object`
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

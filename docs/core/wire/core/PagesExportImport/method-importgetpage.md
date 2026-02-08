@@ -4,6 +4,16 @@ Source: `wire/core/PagesExportImport.php`
 
 Get the page to import to
 
+## Usage
+
+~~~~~
+// basic usage
+$nullPage = $pagesExportImport->importGetPage($a, $options, $errors);
+
+// usage with all arguments
+$nullPage = $pagesExportImport->importGetPage(array &$a, array &$options, array &$errors);
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Import data
@@ -12,4 +22,4 @@ Get the page to import to
 
 ## Return value
 
-NullPage|Page
+- `NullPage|Page`

@@ -6,6 +6,16 @@ Get or set attribute for the element wrapping this Inputfield
 
 Use this method when you need to assign some attribute to the outer wrapper of the Inputfield.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfield->wrapAttr();
+
+// usage with all arguments
+$inputfield = $inputfield->wrapAttr($key = null, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|null|bool` Specify one of the following for $key: - Specify string containing name of attribute to set. - Omit (or null or true) to get all wrap attributes as associative array.
@@ -13,9 +23,9 @@ Use this method when you need to assign some attribute to the outer wrapper of t
 
 ## Return value
 
-Inputfield|string|array|null Returns one of the following: - If getting, returns attribute value of NULL if not present. - If setting, returns $this.
+- `Inputfield|string|array|null` Returns one of the following: - If getting, returns attribute value of NULL if not present. - If setting, returns $this.
 
-## See also
+## See Also
 
 - [Inputfield::attr()](method-attr.md)
 - [Inputfield::addClass()](method-addclass.md)

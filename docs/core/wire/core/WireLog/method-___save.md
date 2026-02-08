@@ -8,9 +8,21 @@ Save text to a named log
 - The log filename is `/site/assets/logs/[name].txt`
 - Logs can be viewed in the admin at Setup > Logs
 
+## Example
+
 ~~~~~
 // Save text searches to custom log file (search.txt):
 $log->save("search", "User searched for: $phrase");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireLog->___save($name, $text);
+
+// usage with all arguments
+$bool = $wireLog->___save($name, $text, $options = array());
 ~~~~~
 
 ## Arguments
@@ -21,8 +33,8 @@ $log->save("search", "User searched for: $phrase");
 
 ## Return value
 
-bool Whether it was written or not (generally always going to be true)
+- `bool` Whether it was written or not (generally always going to be true)
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

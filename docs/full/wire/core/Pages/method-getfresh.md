@@ -10,6 +10,8 @@ Nor does it place the Page it loads in any memory cache. Use this method to load
 that you might need to compare to an existing loaded copy, or to load a copy that won’t be seen or touched
 by anything in ProcessWire other than your own code.
 
+## Example
+
 ~~~~~
 $p1 = $pages->get(1234);
 $p2 = $pages->get($p1->path);
@@ -19,6 +21,16 @@ $p3 = $pages->getFresh($p1);
 $p1 === $p3; // false: same Page but different instance
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pages->getFresh($selectorOrPage);
+
+// usage with all arguments
+$page = $pages->getFresh($selectorOrPage, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectorOrPage` `Page|string|array|Selectors|int` Specify Page to get copy of, selector or ID
@@ -26,7 +38,7 @@ $p1 === $p3; // false: same Page but different instance
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`
 
 ## Since
 

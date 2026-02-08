@@ -30,6 +30,16 @@ While this method combines what find() and getById() do in one query, there does
 appear to be any overhead benefit when the two strategies are dealing with identical
 conditions, like the same autojoin fields.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesLoader->findMin($selector);
+
+// usage with all arguments
+$items = $pagesLoader->findMin($selector, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors`
@@ -37,11 +47,11 @@ conditions, like the same autojoin fields.
 
 ## Return value
 
-PageArray
+- `PageArray`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

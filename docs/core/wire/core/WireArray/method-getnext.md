@@ -4,6 +4,16 @@ Source: `wire/core/WireArray.php`
 
 Given an item, get the item that comes after it in the WireArray
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireArray->getNext($item);
+
+// usage with all arguments
+$wire = $wireArray->getNext($item, $strict = true);
+~~~~~
+
 ## Arguments
 
 - `$item` `Wire`
@@ -11,4 +21,4 @@ Given an item, get the item that comes after it in the WireArray
 
 ## Return value
 
-Wire|null Returns next item if found, or null if not
+- `Wire|null` Returns next item if found, or null if not

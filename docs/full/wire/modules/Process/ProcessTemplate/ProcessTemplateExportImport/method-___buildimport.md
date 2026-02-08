@@ -4,10 +4,17 @@ Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
 Execute import
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $processTemplateExportImport->___buildImport();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid import data
+- `WireException` if given invalid import data

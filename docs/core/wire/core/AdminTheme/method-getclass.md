@@ -6,6 +6,16 @@ Return class for a given named item or blank if none available
 
 Omit the first argument to return all classes in an array.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminTheme->getClass();
+
+// usage with all arguments
+$string = $adminTheme->getClass($name = '', $getArray = false);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string` Tag or item name, i.e. “input”, or omit to return all defined [tags=classes]
@@ -13,4 +23,4 @@ Omit the first argument to return all classes in an array.
 
 ## Return value
 
-string|array Returns string or array of class names, or array of all [tags=classes] or $tagName argument is empty.
+- `string|array` Returns string or array of class names, or array of all [tags=classes] or $tagName argument is empty.

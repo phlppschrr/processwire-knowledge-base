@@ -4,6 +4,16 @@ Source: `wire/core/Role.php`
 
 Does this role have the given permission name, id or object?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $role->hasPermission($permission);
+
+// usage with all arguments
+$bool = $role->hasPermission($permission, $context = null);
+~~~~~
+
 ## Arguments
 
 - `$permission` `string|int|Permission` Permission object, name, or id.
@@ -11,8 +21,8 @@ Does this role have the given permission name, id or object?
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [User::hasPermission()](../User/method-haspermission.md)

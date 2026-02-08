@@ -6,6 +6,16 @@ Execute an SQL statement string
 
 If given a PDOStatement, this method behaves the same as the execute() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->exec($statement);
+
+// usage with all arguments
+$bool = $wireDatabasePDO->exec($statement, $note = '');
+~~~~~
+
 ## Arguments
 
 - `$statement` `string|\PDOStatement`
@@ -13,11 +23,11 @@ If given a PDOStatement, this method behaves the same as the execute() method.
 
 ## Return value
 
-bool|int
+- `bool|int`
 
-## Throws
+## Exceptions
 
-- \PDOException
+- `\PDOException`
 
 ## Details
 

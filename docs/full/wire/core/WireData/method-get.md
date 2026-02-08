@@ -8,6 +8,8 @@ Retrieve the value for a previously set property, or retrieve an API variable
 - If the given $key is a string with "|" pipe characters in it, it will try all till it finds a non-empty value.
 - If given an API variable name, it will return that API variable unless the class has direct access API variables disabled.
 
+## Example
+
 ~~~~~
 // Retrieve the value of a property
 $value = $item->get("some_property");
@@ -19,14 +21,21 @@ $value = $item->get("property1|property2|property2");
 $value = $item["some_property"];
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireData->get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|object` Name of property you want to retrieve.
 
 ## Return value
 
-mixed|null Returns value of requested property, or null if the property was not found.
+- `mixed|null` Returns value of requested property, or null if the property was not found.
 
-## See also
+## See Also
 
 - [WireData::set()](method-set.md)

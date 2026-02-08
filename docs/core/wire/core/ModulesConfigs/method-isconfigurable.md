@@ -7,29 +7,6 @@ Is the given module interactively configurable?
 This method can be used to simply determine if a module is configurable (yes or no), or more specifically
 how it is configurable.
 
-~~~~~
-// Determine IF a module is configurable
-if($modules->isConfigurable('HelloWorld')) {
-  // Module is configurable
-} else {
-  // Module is NOT configurable
-}
-~~~~~
-~~~~~
-// Determine HOW a module is configurable
-$configurable = $module->isConfigurable('HelloWorld');
-if($configurable === true) {
-  // configurable in a way compatible with all past versions of ProcessWire
-} else if(is_string($configurable)) {
-  // configurable via an external configuration file
-  // file is identifed in $configurable variable
-} else if(is_int($configurable)) {
-  // configurable via a method in the class
-  // the $configurable variable contains a number with specifics
-} else {
-  // module is NOT configurable
-}
-~~~~~
 
 ### Return value details
 
@@ -53,6 +30,43 @@ if($configurable === true) {
 
 *This method is named isConfigurableModule() in ProcessWire versions prior to to 3.0.16.*
 
+## Example
+
+~~~~~
+// Determine IF a module is configurable
+if($modules->isConfigurable('HelloWorld')) {
+  // Module is configurable
+} else {
+  // Module is NOT configurable
+}
+~~~~~
+
+~~~~~
+// Determine HOW a module is configurable
+$configurable = $module->isConfigurable('HelloWorld');
+if($configurable === true) {
+  // configurable in a way compatible with all past versions of ProcessWire
+} else if(is_string($configurable)) {
+  // configurable via an external configuration file
+  // file is identifed in $configurable variable
+} else if(is_int($configurable)) {
+  // configurable via a method in the class
+  // the $configurable variable contains a number with specifics
+} else {
+  // module is NOT configurable
+}
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesConfigs->isConfigurable($class);
+
+// usage with all arguments
+$bool = $modulesConfigs->isConfigurable($class, $useCache = true);
+~~~~~
+
 ## Arguments
 
 - `$class` `Module|string` Module name
@@ -60,7 +74,7 @@ if($configurable === true) {
 
 ## Return value
 
-bool|string|int See details about return values in method description.
+- `bool|string|int` See details about return values in method description.
 
 ## Since
 

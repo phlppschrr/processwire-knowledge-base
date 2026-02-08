@@ -12,6 +12,16 @@ Get a unique page name
 The returned value is not yet assigned to the given $page, so if it is something different than what
 is already on $page, you’ll want to assign it manually after this.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesNames->uniquePageName();
+
+// usage with all arguments
+$string = $pagesNames->uniquePageName($name = '', $page = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|Page|array` Name to make unique You may optionally substitute the $page argument or $options arguments here, if that is all you need.
@@ -20,4 +30,4 @@ is already on $page, you’ll want to assign it manually after this.
 
 ## Return value
 
-string Returns unique name
+- `string` Returns unique name

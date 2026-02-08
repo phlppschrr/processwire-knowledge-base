@@ -9,13 +9,20 @@ multibyte string lengths on strings, so it returns a byte length when given
 a multibyte string rather than a visual character length. So on strings
 it uses strlen() rather than mb_strlen().
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $functions->wireLen($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array|object|int|bool|null`
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

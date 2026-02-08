@@ -7,6 +7,13 @@ Set any email header
 - Multiple calls will append existing headers.
 - To remove an existing header, specify NULL as the value.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMail->header($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|array` Header name
@@ -14,4 +21,4 @@ Set any email header
 
 ## Return value
 
-$this
+- `$this`

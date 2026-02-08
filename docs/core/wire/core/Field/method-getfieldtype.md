@@ -6,9 +6,16 @@ Return the Fieldtype module representing this field’s type.
 
 Can also be accessed directly via `$field->type`.
 
+## Usage
+
+~~~~~
+// basic usage
+$fieldtype = $field->getFieldtype();
+~~~~~
+
 ## Return value
 
-Fieldtype|null|string
+- `Fieldtype|null|string`
 
 ## Since
 

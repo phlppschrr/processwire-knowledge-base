@@ -4,13 +4,20 @@ Source: `wire/core/InputfieldWrapper.php`
 
 Shorter alias of getChildByName()
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->getByName($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
 
 ## Return value
 
-Inputfield|InputfieldWrapper|null
+- `Inputfield|InputfieldWrapper|null`
 
 ## Since
 

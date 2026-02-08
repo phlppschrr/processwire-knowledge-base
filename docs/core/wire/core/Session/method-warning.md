@@ -4,6 +4,16 @@ Source: `wire/core/Session.php`
 
 Queue a warning to appear the next pageview
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->warning($text);
+
+// usage with all arguments
+$result = $session->warning($text, $flags = 0);
+~~~~~
+
 ## Arguments
 
 - `$text` `string` Warning to queue
@@ -11,4 +21,4 @@ Queue a warning to appear the next pageview
 
 ## Return value
 
-$this
+- `$this`

@@ -21,3 +21,10 @@ $this->add(array(
     'value' => '',
   ),
 ));
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $moduleConfig->__construct();
+~~~~~

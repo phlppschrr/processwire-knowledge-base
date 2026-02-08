@@ -4,13 +4,23 @@ Source: `wire/core/Notice.php`
 
 Get or set flags
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $notice->flags();
+
+// usage with all arguments
+$int = $notice->flags($value = null);
+~~~~~
+
 ## Arguments
 
 - `$value` (optional) `string|int|array|null` Accepts flags integer, or array of flag names, or space-separated string of flag names
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

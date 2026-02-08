@@ -8,6 +8,8 @@ Note that if the `$name` argument is populated then only that field/property was
 This is different from the `Pages::saved` hookable method, which is only called
 when the entire page is saved.
 
+## Example
+
 ~~~~~
 $wire->addHook('Page:saved', function($e) {
   $page = $e->object;
@@ -19,6 +21,16 @@ $wire->addHook('Page:saved', function($e) {
     $e->message("Saved page $page: " . implode(', ', $changes));
   }
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___saved($changes);
+
+// usage with all arguments
+$result = $page->___saved(array $changes, $name = false);
 ~~~~~
 
 ## Arguments

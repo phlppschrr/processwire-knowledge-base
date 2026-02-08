@@ -8,13 +8,20 @@ This is useful in cases where the input name may differ from the Field name
 that it represents, and you only know the field name. Applies only to
 Inputfields connected with a Page and Field (i.e. used for page editing).
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->getByField($field);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field|string|int`
 
 ## Return value
 
-Inputfield|InputfieldWrapper|null
+- `Inputfield|InputfieldWrapper|null`
 
 ## Since
 

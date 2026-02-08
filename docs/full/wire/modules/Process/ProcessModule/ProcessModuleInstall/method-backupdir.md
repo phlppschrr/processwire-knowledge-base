@@ -4,14 +4,21 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Create a backup of a module directory
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processModuleInstall->backupDir($moduleDir);
+~~~~~
+
 ## Arguments
 
 - `$moduleDir` `string`
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

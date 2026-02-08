@@ -10,10 +10,17 @@ Expects these GET vars to be present:
  - property
  - q
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $processPageSearchLive->executeViewAll();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

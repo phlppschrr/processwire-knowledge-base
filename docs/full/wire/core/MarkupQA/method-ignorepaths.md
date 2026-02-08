@@ -6,6 +6,16 @@ Get or set paths to ignore for link abstraction
 
 To get ignored paths call function with no arguments. Otherwise you are setting them.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $markupQA->ignorePaths();
+
+// usage with all arguments
+$array = $markupQA->ignorePaths($paths = null, $replace = false);
+~~~~~
+
 ## Arguments
 
 - `$paths` (optional) `array|string|null` Array of paths or string of one path, or CSV or newline separated string of multiple paths.
@@ -13,8 +23,8 @@ To get ignored paths call function with no arguments. Otherwise you are setting 
 
 ## Return value
 
-array Returns array of current ignore paths
+- `array` Returns array of current ignore paths
 
-## Throws
+## Exceptions
 
-- WireException if given invalid $paths argument
+- `WireException` if given invalid $paths argument

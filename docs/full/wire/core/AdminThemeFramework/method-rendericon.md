@@ -4,6 +4,16 @@ Source: `wire/core/AdminThemeFramework.php`
 
 Render markup for a font-awesome icon
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeFramework->renderIcon($icon);
+
+// usage with all arguments
+$string = $adminThemeFramework->renderIcon($icon, $fw = false);
+~~~~~
+
 ## Arguments
 
 - `$icon` `string` Name of icon to render, excluding the “fa-” prefix
@@ -11,4 +21,4 @@ Render markup for a font-awesome icon
 
 ## Return value
 
-string
+- `string`

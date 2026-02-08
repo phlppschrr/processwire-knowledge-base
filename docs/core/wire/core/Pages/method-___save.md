@@ -8,6 +8,8 @@ If the page is new, it will be inserted. If existing, it will be updated.
 This is the same as calling `$page->save()`. If you want to just save a particular field
 in a Page, use `$page->save($fieldName)` instead.
 
+## Example
+
 ~~~~~~
 // Modify a page and save it
 $p = $pages->get('/festivals/decatur/beer/');
@@ -17,6 +19,16 @@ $p->summary = "Come and enjoy fine beer and good company at the Decatur Beer Fes
 $pages->save($p);
 ~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->___save($page);
+
+// usage with all arguments
+$bool = $pages->___save(Page $page, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page object to save
@@ -24,13 +36,13 @@ $pages->save($p);
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Page::save()](../Page/method-save.md)
 - [Pages::saveField()](method-___savefield.md)

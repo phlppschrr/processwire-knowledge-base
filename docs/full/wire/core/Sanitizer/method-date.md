@@ -9,6 +9,16 @@ Sanitize a date or date/time string, making sure it is valid, and return it
 - If $value is an integer or string of all numbers, it is always assumed to be a unix timestamp.
 - If $format and “strict” option specified, date will also validate for format and no out-of-bounds values will be converted.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->date($value);
+
+// usage with all arguments
+$string = $sanitizer->date($value, $format = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int` Date string or unix timestamp
@@ -17,4 +27,4 @@ Sanitize a date or date/time string, making sure it is valid, and return it
 
 ## Return value
 
-string|int|null
+- `string|int|null`

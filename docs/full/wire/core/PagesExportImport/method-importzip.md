@@ -4,6 +4,16 @@ Source: `wire/core/PagesExportImport.php`
 
 Import ZIP file to create pages
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesExportImport->importZIP($filename);
+
+// usage with all arguments
+$items = $pagesExportImport->importZIP($filename, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Path+filename to ZIP file
@@ -11,4 +21,4 @@ Import ZIP file to create pages
 
 ## Return value
 
-PageArray|bool
+- `PageArray|bool`

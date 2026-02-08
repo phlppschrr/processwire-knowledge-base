@@ -4,13 +4,20 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Quote and escape a string value
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->quote($str);
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
 
 ## Return value
 
-string
+- `string`
 
 ## Details
 

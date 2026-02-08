@@ -9,8 +9,17 @@ Replace one item with the other
 - If one item is not already present, it will replace the one that is.
 - If neither item is present, both will be added at the end.
 
+## Example
+
 ~~~~~
 $items->replace($existingItem, $newItem);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->replace($itemA, $itemB);
 ~~~~~
 
 ## Arguments
@@ -20,4 +29,4 @@ $items->replace($existingItem, $newItem);
 
 ## Return value
 
-$this
+- `$this`

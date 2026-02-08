@@ -6,10 +6,17 @@ Provides direct reference to attributes and settings, and falls back to Inputfie
 
 This is different behavior from the get() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldWrapper->__get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
 
 ## Return value
 
-mixed|null
+- `mixed|null`

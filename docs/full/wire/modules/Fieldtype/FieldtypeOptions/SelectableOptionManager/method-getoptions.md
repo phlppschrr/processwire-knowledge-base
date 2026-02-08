@@ -7,6 +7,16 @@ Return array of current options for $field
 Returned array is indexed by "id$option_id" associative, which is used
 as a way to identify existing options vs. new options
 
+## Usage
+
+~~~~~
+// basic usage
+$selectableOptionArray = $selectableOptionManager->getOptions($field);
+
+// usage with all arguments
+$selectableOptionArray = $selectableOptionManager->getOptions(Field $field, array $filters = array());
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -14,8 +24,8 @@ as a way to identify existing options vs. new options
 
 ## Return value
 
-SelectableOptionArray|SelectableOption[]
+- `SelectableOptionArray|SelectableOption[]`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

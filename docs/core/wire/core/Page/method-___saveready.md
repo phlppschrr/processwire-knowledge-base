@@ -10,6 +10,8 @@ changes in the `$changes` array, and any more you make when this method is calle
 This is different from the `Pages::saveReady` hookable method, which is only called
 when the entire page is saved.
 
+## Example
+
 ~~~~~
 $wire->addHook('Page:saveReady', function($e) {
   $page = $e->object;
@@ -20,6 +22,16 @@ $wire->addHook('Page:saveReady', function($e) {
     $e->message("Ready to save page $page");
   }
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___saveReady($changes);
+
+// usage with all arguments
+$result = $page->___saveReady(array $changes, $name = false);
 ~~~~~
 
 ## Arguments

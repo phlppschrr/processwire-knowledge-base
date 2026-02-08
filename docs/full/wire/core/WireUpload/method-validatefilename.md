@@ -4,6 +4,16 @@ Source: `wire/core/WireUpload.php`
 
 Sanitize/validate a given filename
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireUpload->validateFilename($value);
+
+// usage with all arguments
+$bool = $wireUpload->validateFilename($value, $extensions = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Filename
@@ -11,4 +21,4 @@ Sanitize/validate a given filename
 
 ## Return value
 
-bool|string Returns boolean false if invalid or string of potentially modified filename if valid
+- `bool|string` Returns boolean false if invalid or string of potentially modified filename if valid

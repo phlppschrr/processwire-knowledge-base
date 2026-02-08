@@ -7,6 +7,16 @@ Given a Selector string, return the Page objects that match in a PageArray.
 Non-visible pages are excluded unless an `include=hidden|unpublished|all` mode is specified in the selector string,
 or in the `$options` array. If 'all' mode is specified, then non-accessible pages (via access control) can also be included.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesLoader->find($selector);
+
+// usage with all arguments
+$items = $pagesLoader->find($selector, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|int|array|Selectors` Specify selector (standard usage), but can also accept page ID or array of page IDs.
@@ -14,4 +24,4 @@ or in the `$options` array. If 'all' mode is specified, then non-accessible page
 
 ## Return value
 
-PageArray|array
+- `PageArray|array`

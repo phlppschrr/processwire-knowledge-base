@@ -271,6 +271,113 @@ def parse_param_tag(text: str) -> tuple[str, str, str] | None:
     return param_type, param_name, param_desc
 
 
+def split_body_and_examples(lines: list[str]) -> tuple[list[str], list[list[str]]]:
+    description: list[str] = []
+    examples: list[list[str]] = []
+    current: list[str] = []
+    in_code = False
+
+    def is_fence(line: str) -> bool:
+        stripped = line.strip()
+        return stripped.startswith("```") or stripped.startswith("~~~~~")
+
+    for line in lines:
+        if is_fence(line):
+            if not in_code:
+                in_code = True
+                current = [line]
+            else:
+                current.append(line)
+                examples.append(current)
+                current = []
+                in_code = False
+            continue
+
+        if in_code:
+            current.append(line)
+        else:
+            description.append(line)
+
+    if in_code and current:
+        description.extend(current)
+
+    while description and description[0] == "":
+        description.pop(0)
+    while description and description[-1] == "":
+        description.pop()
+
+    return description, examples
+
+
+def return_var_name(return_type: str | None) -> str | None:
+    if not return_type:
+        return "$result"
+    base = return_type.split("|", 1)[0].strip()
+    if not base:
+        return "$result"
+    lower = base.lower()
+    if lower in {"void", "null"}:
+        return None
+    mapping = {
+        "bool": "$bool",
+        "boolean": "$bool",
+        "array": "$array",
+        "string": "$string",
+        "int": "$int",
+        "integer": "$int",
+        "float": "$float",
+        "double": "$float",
+        "page": "$page",
+        "pagearray": "$items",
+        "wirearray": "$items",
+    }
+    if lower in mapping:
+        return mapping[lower]
+    if base[0].isupper():
+        return f"${camel_lower(base)}"
+    return "$result"
+
+
+def build_usage_block(
+    class_name: str,
+    member: MemberDoc,
+    return_type: str | None,
+) -> list[str]:
+    if member.kind != "method":
+        return []
+
+    if member.is_static:
+        call_target = f"{class_name}::{member.name}"
+    else:
+        call_target = f"${camel_lower(class_name)}->{member.name}"
+
+    signature = member.signature_params or ""
+    full_call = f"{call_target}({signature})"
+    optional_map = parse_signature_optional_map(signature)
+    basic_parts: list[str] = []
+    for part in split_signature_params(signature):
+        match = re.search(r"(\$[A-Za-z_][A-Za-z0-9_]*)", part)
+        if not match:
+            continue
+        name = match.group(1)
+        if optional_map.get(name, False):
+            continue
+        basic_parts.append(name)
+    basic_call = f"{call_target}({', '.join(basic_parts)})"
+
+    ret_var = return_var_name(return_type)
+    def format_line(call: str) -> str:
+        if ret_var:
+            return f"{ret_var} = {call};"
+        return f"{call};"
+
+    lines: list[str] = ["~~~~~", "// basic usage", format_line(basic_call)]
+    if full_call != basic_call:
+        lines.extend(["", "// usage with all arguments", format_line(full_call)])
+    lines.append("~~~~~")
+    return lines
+
+
 def split_signature_params(signature: str) -> list[str]:
     parts: list[str] = []
     buf: list[str] = []
@@ -981,7 +1088,7 @@ def render_see_links(
     lines: list[str] = []
     for ref, desc in items:
         if ref.startswith("http://") or ref.startswith("https://"):
-            suffix = f" {desc}" if desc else ""
+            suffix = f": {desc}" if desc else ""
             lines.append(f"- [{ref}]({ref}){suffix}")
             continue
 
@@ -996,11 +1103,11 @@ def render_see_links(
                 target = doc_index.class_dirs[class_name] / "index.md"
             if target is not None:
                 rel_link = Path(os.path.relpath(str(target), start=str(current_path.parent)))
-                suffix = f" {desc}" if desc else ""
+                suffix = f": {desc}" if desc else ""
                 lines.append(f"- [{class_name}::{member_name}()]({rel_link.as_posix()}){suffix}")
                 continue
 
-        suffix = f" {desc}" if desc else ""
+        suffix = f": {desc}" if desc else ""
         lines.append(f"- {ref}{suffix}")
     return lines
 
@@ -1048,8 +1155,26 @@ def render_member_doc(
         "",
     ]
 
-    if body_lines:
-        lines.extend(body_lines)
+    description_lines, example_blocks = split_body_and_examples(body_lines)
+    if description_lines:
+        lines.extend(description_lines)
+
+    if example_blocks:
+        lines.append("")
+        lines.append("## Example")
+        lines.append("")
+        for block in example_blocks:
+            lines.extend(block)
+            lines.append("")
+        while lines and lines[-1] == "":
+            lines.pop()
+
+    usage_block = build_usage_block(class_name, member, return_type)
+    if usage_block:
+        lines.append("")
+        lines.append("## Usage")
+        lines.append("")
+        lines.extend(usage_block)
 
     if params:
         lines.append("")
@@ -1074,18 +1199,31 @@ def render_member_doc(
         lines.append("")
         lines.append("## Return value")
         lines.append("")
-        lines.append(returns[0].text)
+        for tag in returns:
+            ret_type, ret_desc = split_type_and_desc(tag.text)
+            if ret_type and ret_desc:
+                lines.append(f"- `{ret_type}` {ret_desc}".rstrip())
+            elif ret_type:
+                lines.append(f"- `{ret_type}`")
+            elif ret_desc:
+                lines.append(f"- {ret_desc}")
 
     if throws:
         lines.append("")
-        lines.append("## Throws")
+        lines.append("## Exceptions")
         lines.append("")
         for tag in throws:
-            lines.append(f"- {tag.text}")
+            throw_type, throw_desc = split_type_and_desc(tag.text)
+            if throw_type and throw_desc:
+                lines.append(f"- `{throw_type}` {throw_desc}".rstrip())
+            elif throw_type:
+                lines.append(f"- `{throw_type}`")
+            elif throw_desc:
+                lines.append(f"- {throw_desc}")
 
     if sees:
         lines.append("")
-        lines.append("## See also")
+        lines.append("## See Also")
         lines.append("")
         see_items: list[tuple[str, str]] = []
         for tag in sees:

@@ -8,6 +8,16 @@ This method also converts the __(['a','b','c']) array calls to single value call
 as a pre-parser for all parsers that follow it, so they do not need to be * aware of array values
 for translation calls.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $languageParser->findArrayTranslations($data);
+
+// usage with all arguments
+$result = $languageParser->findArrayTranslations(&$data);
+~~~~~
+
 ## Arguments
 
 - `$data` `string`

@@ -8,6 +8,16 @@ Given an associative array of “key=value” attributes, render an HTML attribu
 - If value of any attribute is an array, it will be converted to a space-separated string.
 - Values get entity encoded, unless you specify false for the second argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->renderAttributes($attrs);
+
+// usage with all arguments
+$string = $wireMarkupRegions->renderAttributes(array $attrs, $encode = true, $quote = '"');
+~~~~~
+
 ## Arguments
 
 - `$attrs` `array` Associative array of attributes.
@@ -16,4 +26,4 @@ Given an associative array of “key=value” attributes, render an HTML attribu
 
 ## Return value
 
-string
+- `string`

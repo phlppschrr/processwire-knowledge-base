@@ -4,6 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Returns array of arrays with all columns in pages table indexed by page ID
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageFinder->findVerboseIDs($selectors);
+
+// usage with all arguments
+$array = $pageFinder->findVerboseIDs($selectors, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
@@ -11,7 +21,7 @@ Returns array of arrays with all columns in pages table indexed by page ID
 
 ## Return value
 
-array|DatabaseQuerySelect
+- `array|DatabaseQuerySelect`
 
 ## Since
 

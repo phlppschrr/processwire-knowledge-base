@@ -9,6 +9,13 @@ Retrieve array of all URL segments
 - URL segments are populated by ProcessWire automatically on each request.
 - URL segments are already sanitized as page names.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireInput->urlSegments();
+~~~~~
+
 ## Return value
 
-array Returns an array of strings, or an empty array if no URL segments available.
+- `array` Returns an array of strings, or an empty array if no URL segments available.

@@ -6,11 +6,23 @@ Get a new WireMail instance for sending email
 
 Note: The `$options` argument added in 3.0.123, previous versions had no $options argument.
 
+## Example
+
 ~~~~~
 $message = $mail->new();
 $message->to('user@domain.com')->from('you@company.com');
 $message->subject('Mail Subject')->body('Mail Body Text')->bodyHTML('Body HTML');
 $numSent = $message->send();
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wireMail = $wireMailTools->___new();
+
+// usage with all arguments
+$wireMail = $wireMailTools->___new($options = array());
 ~~~~~
 
 ## Arguments
@@ -19,4 +31,4 @@ $numSent = $message->send();
 
 ## Return value
 
-WireMail
+- `WireMail`

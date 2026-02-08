@@ -12,30 +12,6 @@ The third argument called `$options` enables you to modify the default behavior 
 in various ways. This method only creates the newly sized image once, and then it caches it. Future
 calls simply refer back to the previously resized image.
 
-~~~~~
-// Get an image to resize
-$image = $page->images->first();
-
-// Create 400x300 thumbnail cropped to center
-$thumb = $image->size(400, 300);
-
-// Create thumbnail with cropping to top
-$thumb = $image->size(400, 300, 'north');
-
-// Create thumbnail while specifying $options
-$thumb = $image->size(400, 300, [
-  'cropping' => 'north',
-  'quality' => 60,
-  'upscaling' => false,
-  'sharpening' => 'medium'
-]);
-
-// Output thumbnail
-echo "<img src='$thumb->url' />";
-
-// Create image of size predefined in $config->imageSizes (3.0.151+)
-$photo = $image->size('landscape');
-~~~~~
 
 **About the $options argument**
 
@@ -91,6 +67,43 @@ If you change these and a variation image at the existing dimensions already exi
 To clear out an old version of an image, use the `Pageimage::removeVariations()` method in this class before calling
 size() with new quality or upscaling settings.
 
+## Example
+
+~~~~~
+// Get an image to resize
+$image = $page->images->first();
+
+// Create 400x300 thumbnail cropped to center
+$thumb = $image->size(400, 300);
+
+// Create thumbnail with cropping to top
+$thumb = $image->size(400, 300, 'north');
+
+// Create thumbnail while specifying $options
+$thumb = $image->size(400, 300, [
+  'cropping' => 'north',
+  'quality' => 60,
+  'upscaling' => false,
+  'sharpening' => 'medium'
+]);
+
+// Output thumbnail
+echo "<img src='$thumb->url' />";
+
+// Create image of size predefined in $config->imageSizes (3.0.151+)
+$photo = $image->size('landscape');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$pageimage = $pageimage->size($width);
+
+// usage with all arguments
+$pageimage = $pageimage->size($width, $height = 0, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$width` `int|string` Target width of new image or (3.0.151+) specify prefined image size name
@@ -99,4 +112,4 @@ size() with new quality or upscaling settings.
 
 ## Return value
 
-Pageimage Returns a new Pageimage object that is a variation of the original. If the specified dimensions/options are the same as the original, then the original will be returned.
+- `Pageimage` Returns a new Pageimage object that is a variation of the original. If the specified dimensions/options are the same as the original, then the original will be returned.

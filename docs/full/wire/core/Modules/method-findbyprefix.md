@@ -9,12 +9,24 @@ To instead retrieve instantiated (ready-to-use) modules, specify boolean true
 for the second argument. Regardless of `$load` argument all returned arrays
 are indexed by module name.
 
+## Example
+
 ~~~~~
 // Retrieve array of all Textformatter module names
 $items = $modules->findByPrefix('Textformatter');
 
 // Retrieve array of all Textformatter modules (ready to use)
 $items = $modules->findByPrefix('Textformatter', true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$array = $modules->findByPrefix($prefix);
+
+// usage with all arguments
+$array = $modules->findByPrefix($prefix, $load = false);
 ~~~~~
 
 ## Arguments
@@ -24,4 +36,4 @@ $items = $modules->findByPrefix('Textformatter', true);
 
 ## Return value
 
-array Returns array of module class names, module info arrays, or Module objects. In all cases, array indexes are class names.
+- `array` Returns array of module class names, module info arrays, or Module objects. In all cases, array indexes are class names.

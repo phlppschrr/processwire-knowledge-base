@@ -6,10 +6,20 @@ Reads the session data from the session storage, and returns the results.
 
 Called right after the session starts or when `session_start()` is called.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireSessionHandlerAdaptor->read($id);
+
+// usage with all arguments
+$string = $wireSessionHandlerAdaptor->read(string $id);
+~~~~~
+
 ## Arguments
 
 - `$id` `string`
 
 ## Return value
 
-string|false
+- `string|false`

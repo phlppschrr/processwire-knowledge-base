@@ -6,14 +6,24 @@ Save the Fieldgroup to DB
 
 If fields were removed from the Fieldgroup, then track them down and remove them from the associated field_* tables
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldgroups->___save($item);
+
+// usage with all arguments
+$bool = $fieldgroups->___save(Saveable $item);
+~~~~~
+
 ## Arguments
 
 - `$item` `Saveable` Fieldgroup to save
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

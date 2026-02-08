@@ -6,6 +6,16 @@ Does the current user have permission to execute the given process name?
 
 Note: an empty permission name is accessible only by the superuser
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processController->hasPermission($permissionName);
+
+// usage with all arguments
+$bool = $processController->hasPermission($permissionName, $throw = true);
+~~~~~
+
 ## Arguments
 
 - `$permissionName` `string`
@@ -13,8 +23,8 @@ Note: an empty permission name is accessible only by the superuser
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- ProcessControllerPermissionException
+- `ProcessControllerPermissionException`

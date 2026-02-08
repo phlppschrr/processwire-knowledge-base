@@ -4,6 +4,13 @@ Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Get hash for given text + context
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageParser->getTextHash($text, $context);
+~~~~~
+
 ## Arguments
 
 - `$text` `string`
@@ -11,4 +18,4 @@ Get hash for given text + context
 
 ## Return value
 
-string
+- `string`

@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
 Fieldtype file field advanced configuration
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldWrapper = $fieldtypeFileConfiguration->getConfigAdvancedInputfields($field, $inputfields);
+
+// usage with all arguments
+$inputfieldWrapper = $fieldtypeFileConfiguration->getConfigAdvancedInputfields(Field $field, InputfieldWrapper $inputfields);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -11,4 +21,4 @@ Fieldtype file field advanced configuration
 
 ## Return value
 
-InputfieldWrapper
+- `InputfieldWrapper`

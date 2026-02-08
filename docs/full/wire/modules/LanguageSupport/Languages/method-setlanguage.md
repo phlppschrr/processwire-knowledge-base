@@ -7,8 +7,17 @@ Set the current user language for the current request
 This also remembers the previous Language setting which can be restored with
 a `$languages->unsetLanguage()` call.
 
+## Example
+
 ~~~~~
 $languages->setLanguage('de');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $languages->setLanguage($language);
 ~~~~~
 
 ## Arguments
@@ -17,12 +26,12 @@ $languages->setLanguage('de');
 
 ## Return value
 
-bool Returns false if no change necessary, true if language was changed
+- `bool` Returns false if no change necessary, true if language was changed
 
-## Throws
+## Exceptions
 
-- WireException if given $language argument doesn't resolve
+- `WireException` if given $language argument doesn't resolve
 
-## See also
+## See Also
 
 - [Languages::unsetLanguage()](method-unsetlanguage.md)

@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Add option by property (id, name, title)
 
+## Usage
+
+~~~~~
+// basic usage
+$selectableOption = $selectableOptionArray->addByProperty($property, $value);
+~~~~~
+
 ## Arguments
 
 - `$property` `string` One of id, name or title
@@ -11,8 +18,8 @@ Add option by property (id, name, title)
 
 ## Return value
 
-SelectableOption|false Returns option added or false if not found
+- `SelectableOption|false` Returns option added or false if not found
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

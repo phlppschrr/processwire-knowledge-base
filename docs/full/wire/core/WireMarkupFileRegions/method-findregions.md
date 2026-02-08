@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupFileRegions.php`
 
 Find and return file regions in given HTML
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireMarkupFileRegions->findRegions($html, $options);
+
+// usage with all arguments
+$array = $wireMarkupFileRegions->findRegions(&$html, array $options);
+~~~~~
+
 ## Arguments
 
 - `$html` `string`
@@ -11,7 +21,7 @@ Find and return file regions in given HTML
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

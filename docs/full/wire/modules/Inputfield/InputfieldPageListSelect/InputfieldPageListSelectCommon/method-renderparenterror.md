@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldPageListSelect/InputfieldPageListSele
 
 Render an error message that a parent ID is missing in field settings
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldPageListSelectCommon->renderParentError();
+~~~~~
+
 ## Return value
 
-string
+- `string`

@@ -4,6 +4,16 @@ Source: `wire/core/FieldtypeMulti.php`
 
 Process the value to convert it from array to whatever object it needs to be
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $fieldtypeMulti->___wakeupValue($page, $field, $value);
+
+// usage with all arguments
+$items = $fieldtypeMulti->___wakeupValue(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Process the value to convert it from array to whatever object it needs to be
 
 ## Return value
 
-WireArray
+- `WireArray`

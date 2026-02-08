@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Get or set label
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->labels($name);
+
+// usage with all arguments
+$string = $commentForm->labels($name, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,7 +21,7 @@ Get or set label
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

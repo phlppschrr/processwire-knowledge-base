@@ -7,6 +7,16 @@ Return given number of entries from end of log file, with each entry as an assoc
 This is effectively the same as the `getLines()` method except that each entry is an associative
 array rather than a single line (string). This method is pagination aware.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireLog->getEntries($name);
+
+// usage with all arguments
+$array = $wireLog->getEntries($name, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Name of log file (excluding extension)
@@ -14,8 +24,8 @@ array rather than a single line (string). This method is pagination aware.
 
 ## Return value
 
-array Returns an array of associative arrays, each with the following components: - `date` (string): ISO-8601 date string - `user` (string): user name or boolean false if unknown - `url` (string): full URL or boolean false if unknown - `text` (string): text of the log entry
+- `array` Returns an array of associative arrays, each with the following components: - `date` (string): ISO-8601 date string - `user` (string): user name or boolean false if unknown - `url` (string): full URL or boolean false if unknown - `text` (string): text of the log entry
 
-## See also
+## See Also
 
 - [WireLog::getLines()](method-getlines.md)

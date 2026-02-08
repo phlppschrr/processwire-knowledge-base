@@ -4,6 +4,16 @@ Source: `wire/core/Notices.php`
 
 Move notices from one Wire instance to another
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $notices->move($from, $to);
+
+// usage with all arguments
+$int = $notices->move(Wire $from, Wire $to, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$from` `Wire`
@@ -12,4 +22,4 @@ Move notices from one Wire instance to another
 
 ## Return value
 
-int Number of notices moved
+- `int` Number of notices moved

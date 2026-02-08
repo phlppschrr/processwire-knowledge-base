@@ -4,6 +4,16 @@ Source: `wire/core/Functions.php`
 
 Given a quantity of bytes (int), return readable string that refers to quantity in bytes, kB, MB, GB and TB
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $functions->wireBytesStr($bytes);
+
+// usage with all arguments
+$string = $functions->wireBytesStr($bytes, $small = false, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$bytes` `int` Quantity in bytes
@@ -12,4 +22,4 @@ Given a quantity of bytes (int), return readable string that refers to quantity 
 
 ## Return value
 
-string
+- `string`

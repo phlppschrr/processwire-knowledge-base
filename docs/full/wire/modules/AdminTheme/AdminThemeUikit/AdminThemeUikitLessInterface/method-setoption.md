@@ -3,6 +3,13 @@
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $adminThemeUikitLessInterface->setOption($name, $value);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -10,4 +17,4 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 ## Return value
 
-self
+- `self`

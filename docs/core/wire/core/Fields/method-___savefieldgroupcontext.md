@@ -4,6 +4,16 @@ Source: `wire/core/Fields.php`
 
 Save the context of the given field for the given fieldgroup
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fields->___saveFieldgroupContext($field, $fieldgroup);
+
+// usage with all arguments
+$bool = $fields->___saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = '');
+~~~~~
+
 ## Arguments
 
 - `$field` `Field` Field to save context for
@@ -12,8 +22,8 @@ Save the context of the given field for the given fieldgroup
 
 ## Return value
 
-bool True on success
+- `bool` True on success
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

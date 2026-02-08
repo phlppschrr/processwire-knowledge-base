@@ -4,6 +4,7 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Get SQL mode, set SQL mode, add to existing SQL mode, or remove from existing SQL mode
 
+## Example
 
 ~~~~~
 // Get SQL mode
@@ -16,6 +17,16 @@ $database->sqlMode('add', 'STRICT_TRANS_TABLES');
 $database->sqlMode('remove', 'ONLY_FULL_GROUP_BY', '5.7.0');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->sqlMode();
+
+// usage with all arguments
+$string = $wireDatabasePDO->sqlMode($action = 'get', $mode = '', $minVersion = '', $pdo = null);
+~~~~~
+
 ## Arguments
 
 - `$action` (optional) `string` Specify "get", "set", "add" or "remove". (default="get")
@@ -25,8 +36,8 @@ $database->sqlMode('remove', 'ONLY_FULL_GROUP_BY', '5.7.0');
 
 ## Return value
 
-string|bool Returns string in "get" action, boolean false if required version not present, or true otherwise.
+- `string|bool` Returns string in "get" action, boolean false if required version not present, or true otherwise.
 
-## Throws
+## Exceptions
 
-- WireException If given an invalid $action
+- `WireException` If given an invalid $action

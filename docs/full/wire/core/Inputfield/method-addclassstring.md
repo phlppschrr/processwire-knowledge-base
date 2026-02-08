@@ -8,12 +8,6 @@ To use this in the public API use `addClass()` method or set the `addClass` prop
 with a formatted string value as indicated here.
 
 Allows for setting via formatted string like:
-~~~~~
-wrap:card card-default
-header:card-header
-content:card-body
-input:form-input input-checkbox
-~~~~~
 Each line represents a group containing a element type, colon, and one or more space-
 separated classes. Groups may be separated by newline (like above) or with a comma.
 The element type may be any one of the following:
@@ -31,6 +25,25 @@ A string like `hello:world` where `hello` is not one of those element types list
 and is not prefixed with a plus sign `+`, will be added as a literal class name with the
 colon in it (such as those used by Tailwind).
 
+## Example
+
+~~~~~
+wrap:card card-default
+header:card-header
+content:card-body
+input:form-input input-checkbox
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfield->addClassString($class);
+
+// usage with all arguments
+$result = $inputfield->addClassString($class, $property = 'class');
+~~~~~
+
 ## Arguments
 
 - `$class` `string` Formatted class string to parse class types and names from
@@ -38,7 +51,7 @@ colon in it (such as those used by Tailwind).
 
 ## Return value
 
-self
+- `self`
 
 ## Since
 

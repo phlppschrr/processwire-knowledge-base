@@ -6,6 +6,16 @@ Remove a directory (optionally recursively)
 
 This is procedural version of the `$files->rmdir()` method. See that method for more options.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireRmdir($path);
+
+// usage with all arguments
+$bool = $functions->wireRmdir($path, $recursive = false);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
@@ -13,8 +23,8 @@ This is procedural version of the `$files->rmdir()` method. See that method for 
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [WireFileTools::rmdir()](../WireFileTools/method-rmdir.md)

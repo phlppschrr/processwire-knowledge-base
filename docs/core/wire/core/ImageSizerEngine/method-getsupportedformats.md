@@ -7,13 +7,23 @@ Get an array of image file formats this ImageSizerModule can use as source or ta
 Unless using the $type argument, returned array contains 'source' and 'target' indexes,
 each an array of image file types/extensions in uppercase.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $imageSizerEngine->getSupportedFormats();
+
+// usage with all arguments
+$array = $imageSizerEngine->getSupportedFormats($type = '');
+~~~~~
+
 ## Arguments
 
 - `$type` (optional) `string` Specify 'source' or 'target' to get just those formats, or omit to get all.
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

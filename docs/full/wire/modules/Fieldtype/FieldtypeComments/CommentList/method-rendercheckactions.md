@@ -12,10 +12,20 @@ error.
 It also populates a session variable 'CommentApprovalMessage' with
 a text message of what occurred.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentList->renderCheckActions();
+
+// usage with all arguments
+$string = $commentList->renderCheckActions(array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array`
 
 ## Return value
 
-string
+- `string`

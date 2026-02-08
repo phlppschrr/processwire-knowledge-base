@@ -9,12 +9,24 @@ generator, so you can use this function to rotate items on a daily basis.
 
 _Idea and implementation provided by [mindplay.dk](https://twitter.com/mindplaydk)_
 
+## Example
+
 ~~~~~
 // Get same 3 random items per day
 $randomItems = $items->findRandomTimed(3);
 
 // Get same 3 random items per hour
 $randomItems = $items->findRandomTimed('YmdH');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireArray->findRandomTimed($num);
+
+// usage with all arguments
+$items = $wireArray->findRandomTimed($num, $seed = 'Ymd');
 ~~~~~
 
 ## Arguments
@@ -24,8 +36,8 @@ $randomItems = $items->findRandomTimed('YmdH');
 
 ## Return value
 
-WireArray
+- `WireArray`
 
-## See also
+## See Also
 
 - [WireArray::findRandom()](method-findrandom.md)

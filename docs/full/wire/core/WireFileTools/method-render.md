@@ -16,6 +16,16 @@ If you specify a full path, it will accept files in or below any of the followin
 Note this function returns the output to you, so that you can send the output wherever you want (delayed output).
 For direct output, use the `$files->include()` function instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireFileTools->render($filename);
+
+// usage with all arguments
+$string = $wireFileTools->render($filename, array $vars = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Assumed relative to /site/templates/ unless you provide a full path name with the filename. If you provide a path, it must resolve somewhere in site/templates/, site/modules/ or wire/modules/.
@@ -24,12 +34,12 @@ For direct output, use the `$files->include()` function instead.
 
 ## Return value
 
-string|bool Rendered template file or boolean false on fatal error (and throwExceptions disabled)
+- `string|bool` Rendered template file or boolean false on fatal error (and throwExceptions disabled)
 
-## Throws
+## Exceptions
 
-- WireException if template file doesn't exist
+- `WireException` if template file doesn't exist
 
-## See also
+## See Also
 
 - [WireFileTools::include()](method-___include.md)

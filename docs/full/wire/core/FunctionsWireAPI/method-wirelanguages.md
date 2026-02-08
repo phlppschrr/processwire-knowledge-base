@@ -13,10 +13,20 @@ $en = languages()->getDefault();
 $de = languages('de');
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$languages = $functionsWireAPI->wireLanguages();
+
+// usage with all arguments
+$languages = $functionsWireAPI->wireLanguages($name = '');
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|int` Optional Language name or ID for language to retrieve
 
 ## Return value
 
-Languages|Language|NullPage|null
+- `Languages|Language|NullPage|null`

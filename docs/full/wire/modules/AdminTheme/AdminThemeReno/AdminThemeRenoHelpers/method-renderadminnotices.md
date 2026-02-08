@@ -4,6 +4,16 @@ Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
 Render runtime notices div#notices
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeRenoHelpers->renderAdminNotices($notices);
+
+// usage with all arguments
+$string = $adminThemeRenoHelpers->renderAdminNotices($notices, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$notices` `Notices`
@@ -11,4 +21,4 @@ Render runtime notices div#notices
 
 ## Return value
 
-string
+- `string`

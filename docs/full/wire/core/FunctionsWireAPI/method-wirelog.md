@@ -7,6 +7,16 @@ Access the $log API variable as a function
 Default behavior is to return the $log API variable.
 If both arguments are provided, it assumes you want to log a message.
 
+## Usage
+
+~~~~~
+// basic usage
+$wireLog = $functionsWireAPI->wireLog();
+
+// usage with all arguments
+$wireLog = $functionsWireAPI->wireLog($logName = '', $message = '');
+~~~~~
+
 ## Arguments
 
 - `$logName` (optional) `string` If logging a message, specify the name of the log.
@@ -14,4 +24,4 @@ If both arguments are provided, it assumes you want to log a message.
 
 ## Return value
 
-WireLog|bool Returns bool if saving log entry, WireLog otherwise.
+- `WireLog|bool` Returns bool if saving log entry, WireLog otherwise.

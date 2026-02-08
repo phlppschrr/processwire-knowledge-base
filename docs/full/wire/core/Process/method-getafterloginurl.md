@@ -11,13 +11,23 @@ after user has successfully authenticated.
 If module does not support this, or only needs to support an integer 'id' GET var, then this
 method can return false.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = Process::getAfterLoginUrl($page);
+
+// usage with all arguments
+$bool = Process::getAfterLoginUrl(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Requested page
 
 ## Return value
 
-bool|string
+- `bool|string`
 
 ## Details
 

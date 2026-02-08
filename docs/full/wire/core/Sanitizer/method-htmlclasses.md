@@ -6,6 +6,16 @@ Sanitize string to ASCII-only space-separated HTML class attribute values with n
 
 See additional notes in `Sanitizer::htmlClass()` method.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->htmlClasses($value);
+
+// usage with all arguments
+$string = $sanitizer->htmlClasses($value, $getArray = false);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array`
@@ -13,7 +23,7 @@ See additional notes in `Sanitizer::htmlClass()` method.
 
 ## Return value
 
-string|array
+- `string|array`
 
 ## Since
 

@@ -4,10 +4,17 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Get information about a backup file
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDatabaseBackup->getFileInfo($filename);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`
 
 ## Return value
 
-array Returns associative array of information on success, empty array on failure
+- `array` Returns associative array of information on success, empty array on failure

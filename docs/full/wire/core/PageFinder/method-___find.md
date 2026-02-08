@@ -4,6 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Return all pages matching the given selector.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageFinder->___find($selectors);
+
+// usage with all arguments
+$array = $pageFinder->___find($selectors, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
@@ -11,8 +21,8 @@ Return all pages matching the given selector.
 
 ## Return value
 
-array|DatabaseQuerySelect
+- `array|DatabaseQuerySelect`
 
-## Throws
+## Exceptions
 
-- PageFinderException
+- `PageFinderException`

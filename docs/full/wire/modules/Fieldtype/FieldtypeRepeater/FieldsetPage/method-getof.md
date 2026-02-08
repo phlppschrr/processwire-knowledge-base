@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldsetPage.php`
 
 Get property in formatted (true) or unformatted (false) state
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldsetPage->getOf($key, $of);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,7 +18,7 @@ Get property in formatted (true) or unformatted (false) state
 
 ## Return value
 
-mixed
+- `mixed`
 
 ## Since
 

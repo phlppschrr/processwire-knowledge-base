@@ -4,8 +4,20 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Return number of children (replies) for this comment
 
+## Example
+
 ~~~~~
 $qty = $comment->numChildren([ 'minStatus' => Comment::statusApproved ]);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $comment->numChildren();
+
+// usage with all arguments
+$int = $comment->numChildren(array $options = array());
 ~~~~~
 
 ## Arguments
@@ -14,7 +26,7 @@ $qty = $comment->numChildren([ 'minStatus' => Comment::statusApproved ]);
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

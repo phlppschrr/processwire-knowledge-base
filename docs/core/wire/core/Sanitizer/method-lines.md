@@ -13,6 +13,16 @@ Please note that like with the textarea sanitizer, the max length refers to a ma
 characters, not bytes. The maxBytes is automatically set to the maxLength * 4, or can be
 specifically set via the `maxBytes` option.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->lines($value);
+
+// usage with all arguments
+$string = $sanitizer->lines($value, $maxLength = 0, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` String value to sanitize
@@ -21,9 +31,9 @@ specifically set via the `maxBytes` option.
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::textarea()](method-textarea.md)
 - [Sanitizer::purify()](method-purify.md)

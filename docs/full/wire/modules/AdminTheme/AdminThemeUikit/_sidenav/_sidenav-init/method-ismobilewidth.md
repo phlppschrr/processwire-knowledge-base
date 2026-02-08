@@ -3,3 +3,10 @@
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 
 Are we currently at mobile width?
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $sidenavInit->isMobileWidth();
+~~~~~

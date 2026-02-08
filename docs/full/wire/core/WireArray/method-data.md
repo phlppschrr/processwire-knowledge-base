@@ -6,6 +6,11 @@ Store or retrieve an extra data value in this WireArray
 
 The data() function is exactly the same thing that it is in jQuery: <http://api.jquery.com/data/>.
 
+
+[Introduction of data method](https://processwire.com/talk/topic/5098-new-wirearray-api-additions-on-dev/)
+
+## Example
+
 ~~~~~~
 // set a data value named 'foo' to value 'bar'
 $a->data('foo', 'bar');
@@ -17,7 +22,15 @@ $bar = $a->data('foo');
 $all = $a->data();
 ~~~~~~
 
-[Introduction of data method](https://processwire.com/talk/topic/5098-new-wirearray-api-additions-on-dev/)
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireArray->data();
+
+// usage with all arguments
+$items = $wireArray->data($key = null, $value = null);
+~~~~~
 
 ## Arguments
 
@@ -26,4 +39,4 @@ $all = $a->data();
 
 ## Return value
 
-WireArray|mixed|array|null Returns one of the following, depending on specified arguments: - `mixed` when getting a single property: whatever you set is what you will get back. - `null` if the property you are trying to get does not exist in the data. - `$this` reference to this WireArray if you were setting a value. - `array` of all data if you specified no arguments or requested multiple keys.
+- `WireArray|mixed|array|null` Returns one of the following, depending on specified arguments: - `mixed` when getting a single property: whatever you set is what you will get back. - `null` if the property you are trying to get does not exist in the data. - `$this` reference to this WireArray if you were setting a value. - `array` of all data if you specified no arguments or requested multiple keys.

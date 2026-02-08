@@ -16,6 +16,16 @@ Please note
    If you don't want that behavior, double check the path of the returned page.
 4) See also the newer/more capable `$pages->pathFinder()` methods `get('/path/')` and `getPage('/path/')`.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesLoader->getByPath($path);
+
+// usage with all arguments
+$page = $pagesLoader->getByPath($path, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
@@ -23,9 +33,9 @@ Please note
 
 ## Return value
 
-Page|int
+- `Page|int`
 
-## See also
+## See Also
 
 - [PagesPathFinder::get()](../PagesPathFinder/method-get.md)
 - [PagesPathFinder::getPage()](../PagesPathFinder/method-getpage.md)

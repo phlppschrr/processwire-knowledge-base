@@ -6,6 +6,13 @@ Get the Pagefile or Pageimage object associated with any isValid() calls
 
 If not applicable, it will be null.
 
+## Usage
+
+~~~~~
+// basic usage
+$pagefile = $fileValidatorModule->getPagefile();
+~~~~~
+
 ## Return value
 
-Pagefile|null
+- `Pagefile|null`

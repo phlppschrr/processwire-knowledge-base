@@ -9,6 +9,16 @@ Return the parent page that this template assumes new pages are added to
 - If there is no defined parent, NULL is returned.
 - If there are multiple defined parents, a NullPage is returned (use $getAll to get them).
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $templates->getParentPage($template);
+
+// usage with all arguments
+$page = $templates->getParentPage(Template $template, $checkAccess = false, $getAll = false);
+~~~~~
+
 ## Arguments
 
 - `$template` `Template`
@@ -17,4 +27,4 @@ Return the parent page that this template assumes new pages are added to
 
 ## Return value
 
-Page|NullPage|null|PageArray
+- `Page|NullPage|null|PageArray`

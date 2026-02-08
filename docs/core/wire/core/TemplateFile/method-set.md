@@ -4,6 +4,13 @@ Source: `wire/core/TemplateFile.php`
 
 Set a property
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $templateFile->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set a property
 
 ## Return value
 
-$this|WireData
+- `$this|WireData`

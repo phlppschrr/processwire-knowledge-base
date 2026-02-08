@@ -7,6 +7,8 @@ Remove all pages from the cache (to clear memory)
 This method clears all pages that ProcessWire has cached in memory, making room for more pages to be loaded.
 Use of this method (along with pagination) may be necessary when modifying or calculating from thousand of pages.
 
+## Example
+
 ~~~~~
 // calculate total dollar value of all 50000+ products in inventory
 $total = 0;
@@ -28,6 +30,16 @@ do {
 echo "Total value of all products: $" . number_format($total);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pages->uncacheAll();
+
+// usage with all arguments
+$int = $pages->uncacheAll(?Page $page = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` (optional) `Page|null` Optional Page that initiated the uncacheAll
@@ -35,4 +47,4 @@ echo "Total value of all products: $" . number_format($total);
 
 ## Return value
 
-int Number of pages uncached
+- `int` Number of pages uncached

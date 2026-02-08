@@ -14,14 +14,21 @@ in the admin.
 This is the equivalent to the `Fieldtype::getConfigAllowContext()` method, but for the "Input"
 tab rather than the "Details" tab.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfield->___getConfigAllowContext($field);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
 
 ## Return value
 
-array of Inputfield names
+- `array` of Inputfield names
 
-## See also
+## See Also
 
 - [Fieldtype::getConfigAllowContext()](../Fieldtype/method-___getconfigallowcontext.md)

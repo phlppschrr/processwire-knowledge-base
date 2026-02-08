@@ -4,6 +4,16 @@ Source: `wire/core/Page.php`
 
 Does Page have given filename in its files directory?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->hasFile($file);
+
+// usage with all arguments
+$bool = $page->hasFile($file, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$file` `string` File basename or verbose hash
@@ -11,7 +21,7 @@ Does Page have given filename in its files directory?
 
 ## Return value
 
-bool|string
+- `bool|string`
 
 ## Since
 

@@ -6,6 +6,16 @@ Is the given $var callable as a function?
 
 ProcessWire namespace aware version of PHP’s is_callable() function
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireIsCallable($var);
+
+// usage with all arguments
+$bool = $functions->wireIsCallable($var, $syntaxOnly = false, &$callableName = '');
+~~~~~
+
 ## Arguments
 
 - `$var` `string|callable`
@@ -13,7 +23,7 @@ ProcessWire namespace aware version of PHP’s is_callable() function
 
 ## Return value
 
-bool
+- `bool`
 
 ## Details
 

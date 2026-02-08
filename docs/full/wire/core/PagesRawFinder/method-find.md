@@ -22,6 +22,16 @@ How to use the `$field` argument:
   it as a field named 'headline' in the return value, you would specify the array
   `[ 'title' => 'headline' ]` for the $field argument. (3.0.176+)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesRawFinder->find($selector);
+
+// usage with all arguments
+$array = $pagesRawFinder->find($selector, $field = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors`
@@ -30,7 +40,7 @@ How to use the `$field` argument:
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

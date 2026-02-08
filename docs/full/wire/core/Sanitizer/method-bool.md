@@ -10,10 +10,17 @@ This differs from regular boolean type conversion in the following ways:
 - If given an object, it will convert the object to a string before determining what boolean value it should represent.
 - If given an array, it returns false if the array contains zero items.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $sanitizer->bool($value);
+~~~~~
+
 ## Arguments
 
 - $value
 
 ## Return value
 
-bool
+- `bool`

@@ -7,10 +7,17 @@ Set whether the image was modified
 Public so that other modules/hooks can adjust this property if needed.
 Not for general API use
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngine->setModified($modified);
+~~~~~
+
 ## Arguments
 
 - `$modified` `bool`
 
 ## Return value
 
-self
+- `self`

@@ -6,12 +6,24 @@ Record a warning error message in the system-wide notices.
 
 This method automatically identifies the warning as coming from this class.
 
+## Example
+
 ~~~~~
 $this->warning("This is the notice text");
 $this->warning("This notice is also logged", true);
 $this->warning("This notice is only shown in debug mode", Notice::debug);
 $this->warning("This notice allows <em>markup</em>", Notice::allowMarkup);
 $this->warning("Notice using multiple flags", Notice::debug | Notice::logOnly);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->warning($text);
+
+// usage with all arguments
+$result = $wire->warning($text, $flags = 0);
 ~~~~~
 
 ## Arguments
@@ -21,9 +33,9 @@ $this->warning("Notice using multiple flags", Notice::debug | Notice::logOnly);
 
 ## Return value
 
-$this
+- `$this`
 
-## See also
+## See Also
 
 - [Wire::warnings()](method-warnings.md)
 - [Wire::message()](method-message.md)

@@ -4,6 +4,13 @@ Source: `wire/core/Interfaces.php`
 
 Save a cache
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireCacheInterface->save($name, $data, $expire);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -12,4 +19,4 @@ Save a cache
 
 ## Return value
 
-bool
+- `bool`

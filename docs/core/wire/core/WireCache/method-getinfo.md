@@ -4,6 +4,16 @@ Source: `wire/core/WireCache.php`
 
 Get information about all the caches in this WireCache
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireCache->getInfo();
+
+// usage with all arguments
+$array = $wireCache->getInfo($verbose = true, $names = array(), $exclude = array(), array $cols = array());
+~~~~~
+
 ## Arguments
 
 - `$verbose` (optional) `bool` Whether to be more verbose for human readability
@@ -13,4 +23,4 @@ Get information about all the caches in this WireCache
 
 ## Return value
 
-array of arrays of cache info
+- `array` of arrays of cache info

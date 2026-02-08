@@ -6,6 +6,16 @@ Generate a truly random base64 string of a certain length
 
 See WireRandom::base64() for details
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $password->randomBase64String();
+
+// usage with all arguments
+$string = $password->randomBase64String($requiredLength = 22, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$requiredLength` (optional) `int` Length of string you want returned (default=22)
@@ -13,4 +23,4 @@ See WireRandom::base64() for details
 
 ## Return value
 
-string|array Returns only array if you specify array for $test argument, otherwise returns string
+- `string|array` Returns only array if you specify array for $test argument, otherwise returns string

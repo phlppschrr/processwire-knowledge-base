@@ -12,6 +12,16 @@ Sanitize input string as multi-line text without HTML tags
 
 - If using returned value for front-end output, be sure to run it through `$sanitizer->entities()` first.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->textarea($value);
+
+// usage with all arguments
+$string = $sanitizer->textarea($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` String value to sanitize
@@ -19,9 +29,9 @@ Sanitize input string as multi-line text without HTML tags
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::text()](method-text.md)
 - [Sanitizer::purify()](method-purify.md)

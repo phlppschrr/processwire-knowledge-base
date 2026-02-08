@@ -8,11 +8,23 @@ Return the URL necessary to edit page
 - If user opens URL in their browser and is not logged in, they must login to account with edit permission.
 - This method can also be accessed by property at `$page->editUrl` (without parenthesis).
 
+## Example
+
 ~~~~~~
 if($page->editable()) {
   echo "<a href='$page->editUrl'>Edit this page</a>";
 }
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageTraversal->editUrl($page);
+
+// usage with all arguments
+$string = $pageTraversal->editUrl(Page $page, $options = array());
+~~~~~
 
 ## Arguments
 
@@ -21,4 +33,4 @@ if($page->editable()) {
 
 ## Return value
 
-string URL for editing this page
+- `string` URL for editing this page

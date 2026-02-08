@@ -7,6 +7,16 @@ Hook called when a Template detects that its file has changed
 Note that the hook is not called until something in the system (like a page render) asks for the template’s filename.
 That’s because it would not be efficient for PW to check the file for every template in the system on every request.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $templates->___fileModified($template);
+
+// usage with all arguments
+$result = $templates->___fileModified(Template $template);
+~~~~~
+
 ## Arguments
 
 - `$template` `Template`

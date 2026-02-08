@@ -7,6 +7,13 @@ Set a value to the Notification
 Note: setting the 'expires' value accepts either a future date, or a quantity of seconds
 in the future relative to now.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $notification->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -14,4 +21,4 @@ in the future relative to now.
 
 ## Return value
 
-self|Notification|WireData
+- `self|Notification|WireData`

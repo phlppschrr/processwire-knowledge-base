@@ -4,6 +4,13 @@ Source: `wire/core/ModulesFiles.php`
 
 Include the given filename
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesFiles->includeModuleFile($file, $moduleName);
+~~~~~
+
 ## Arguments
 
 - `$file` `string`
@@ -11,4 +18,4 @@ Include the given filename
 
 ## Return value
 
-bool
+- `bool`

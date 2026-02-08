@@ -6,6 +6,16 @@ Sanitize to unsigned (0 or positive) integer
 
 This is an alias to the int() method with default min/max arguments.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->intUnsigned($value);
+
+// usage with all arguments
+$int = $sanitizer->intUnsigned($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed`
@@ -13,4 +23,5 @@ This is an alias to the int() method with default min/max arguments.
 
 ## Return value
 
-int Returns integer, or specified blankValue (which doesn't necessarily have to be an integer)
+- `int` Returns integer, or specified blankValue (which doesn't necessarily have to be an integer)
+- `int`

@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Rotate image (@horst)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngineGD->imRotate($im, $degree);
+~~~~~
+
 ## Arguments
 
 - `$im` `resource`
@@ -11,4 +18,4 @@ Rotate image (@horst)
 
 ## Return value
 
-resource
+- `resource`

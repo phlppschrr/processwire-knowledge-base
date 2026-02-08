@@ -15,6 +15,16 @@ Also note this hook may be called if a page's multi-language name changes.
 In those cases the language-specific name is stored in "name123" while the
 previous value is stored in "-name123" (where 123 is the language ID).
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pages->___renamed($page);
+
+// usage with all arguments
+$result = $pages->___renamed(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` The $page that was renamed

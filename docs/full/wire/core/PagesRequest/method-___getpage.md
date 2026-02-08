@@ -9,10 +9,20 @@ Get the requested page
 - Returned page should be validated with getPageForUser() method before rendering it.
 - Call getFile() method afterwards to see if request resolved to file managed by returned page.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesRequest->___getPage();
+
+// usage with all arguments
+$page = $pagesRequest->___getPage(array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array`
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`

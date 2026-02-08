@@ -4,10 +4,20 @@ Source: `wire/core/Page.php`
 
 Returns the page from which role/access settings are inherited from
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $page->getAccessParent();
+
+// usage with all arguments
+$page = $page->getAccessParent($type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$type` (optional) `string` Optionally specify one of 'view', 'edit', 'add', or 'create' (default='view')
 
 ## Return value
 
-Page|NullPage Returns NullPage if none found
+- `Page|NullPage` Returns NullPage if none found

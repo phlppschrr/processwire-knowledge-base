@@ -4,6 +4,8 @@ Source: `wire/core/Templates.php`
 
 Given an array of Template export data, import it to the given Template
 
+## Example
+
 ~~~~~~
 // Example of return value
 $returnValue = array(
@@ -18,6 +20,16 @@ $returnValue = array(
 );
 ~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $templates->___setImportData($template, $data);
+
+// usage with all arguments
+$array = $templates->___setImportData(Template $template, array $data);
+~~~~~
+
 ## Arguments
 
 - `$template` `Template` Template you want to import to
@@ -25,4 +37,4 @@ $returnValue = array(
 
 ## Return value
 
-array Returns array with list of changes (see example in method description)
+- `array` Returns array with list of changes (see example in method description)

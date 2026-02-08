@@ -6,6 +6,16 @@ Preload all supported fields for given page (experimental)
 
 NOTE: This function is currently experimental, recommended for testing only.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesLoader->preloadAllFields($page);
+
+// usage with all arguments
+$array = $pagesLoader->preloadAllFields(Page $page, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to preload fields for
@@ -13,7 +23,7 @@ NOTE: This function is currently experimental, recommended for testing only.
 
 ## Return value
 
-array Array of details
+- `array` Array of details
 
 ## Since
 

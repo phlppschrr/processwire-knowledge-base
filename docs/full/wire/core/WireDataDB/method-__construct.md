@@ -4,6 +4,13 @@ Source: `wire/core/WireDataDB.php`
 
 Construct
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDataDB->__construct($sourceID, $tableName);
+~~~~~
+
 ## Arguments
 
 - `$sourceID` `int` ID of the source item this WireData is maintaining/persisting data for.

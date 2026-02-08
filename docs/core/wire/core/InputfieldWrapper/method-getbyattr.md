@@ -6,6 +6,13 @@ Given an attribute name and value, return the first matching Inputfield or null 
 
 This traverses all children recursively to find the requested Inputfield.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->getByAttr($attrName, $attrValue);
+~~~~~
+
 ## Arguments
 
 - `$attrName` `string` Attribute to match, such as 'id', 'name', 'value', etc.
@@ -13,7 +20,7 @@ This traverses all children recursively to find the requested Inputfield.
 
 ## Return value
 
-Inputfield|InputfieldWrapper|null
+- `Inputfield|InputfieldWrapper|null`
 
 ## Since
 

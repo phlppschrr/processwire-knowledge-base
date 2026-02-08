@@ -11,6 +11,8 @@ The following properties are required for each Inputfield definition:
 - `name` Name attribute to use for the Inputfield.
 - `label` Text label that appears above the Inputfield.
 
+## Example
+
 ~~~~~
 // Example array for Inputfield definitions
 array(
@@ -48,6 +50,16 @@ array(
 // be the 'name' attribute.See the last item 'my_fieldset' above for an example.
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldWrapper->importArray($a);
+
+// usage with all arguments
+$result = $inputfieldWrapper->importArray(array $a, ?InputfieldWrapper $inputfields = null);
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Array of Inputfield definitions
@@ -55,4 +67,4 @@ array(
 
 ## Return value
 
-$this
+- `$this`

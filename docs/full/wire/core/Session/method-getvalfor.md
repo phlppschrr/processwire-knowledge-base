@@ -7,6 +7,16 @@ Get a session variable or return $val argument if session value not present
 This is the same as get() except that it lets you specify a fallback return value in the method call.
 For a namespace version use `Session::getValFor()` instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->getValFor($ns, $key);
+
+// usage with all arguments
+$result = $session->getValFor($ns, $key, $val = null);
+~~~~~
+
 ## Arguments
 
 - `$ns` `string|object` Namespace string or object
@@ -15,7 +25,7 @@ For a namespace version use `Session::getValFor()` instead.
 
 ## Return value
 
-mixed
+- `mixed`
 
 ## Since
 

@@ -11,10 +11,17 @@ Hook note:
 If you want to hook this method, please hook the `addReady`, `Pages::add`, or `Pages::addReady` method
 instead, as hooking this method will not hook relevant pages added directly through $pages->add().
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesType->___add($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Name to use for the new page
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`

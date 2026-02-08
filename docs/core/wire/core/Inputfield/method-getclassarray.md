@@ -4,6 +4,16 @@ Source: `wire/core/Inputfield.php`
 
 Get classes in array for given class property
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfield->getClassArray();
+
+// usage with all arguments
+$array = $inputfield->getClassArray($property = 'class', $assoc = false);
+~~~~~
+
 ## Arguments
 
 - `$property` (optional) `string` One of 'wrap', 'header', 'content' or 'input' (or alias 'class')
@@ -11,7 +21,7 @@ Get classes in array for given class property
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

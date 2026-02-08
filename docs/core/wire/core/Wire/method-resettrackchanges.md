@@ -9,10 +9,20 @@ Clears out any tracked changes and turns change tracking ON or OFF
 $page->resetTrackChanges();
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->resetTrackChanges();
+
+// usage with all arguments
+$result = $wire->resetTrackChanges($trackChanges = true);
+~~~~~
+
 ## Arguments
 
 - `$trackChanges` (optional) `bool` True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
 
 ## Return value
 
-$this
+- `$this`

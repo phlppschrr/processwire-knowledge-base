@@ -16,6 +16,13 @@ Note the following additional properties are available from the $query argument:
  - `$query->parentQuery` (DatabaseQuerySelect): Parent database query that $query will be merged into.
  - `$query->pageFinder` (PageFinder): The PageFinder instance that initiated the query, for additional info.
 
+## Usage
+
+~~~~~
+// basic usage
+$pageFinderDatabaseQuerySelect = $fieldtype->getMatchQuery($query, $table, $subfield, $operator, $value);
+~~~~~
+
 ## Arguments
 
 - `$query` `PageFinderDatabaseQuerySelect`
@@ -26,8 +33,8 @@ Note the following additional properties are available from the $query argument:
 
 ## Return value
 
-PageFinderDatabaseQuerySelect|DatabaseQuerySelect $query
+- `PageFinderDatabaseQuerySelect|DatabaseQuerySelect` $query
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -4,6 +4,16 @@ Source: `wire/core/PagesParents.php`
 
 Rebuild pages_parents table for given page (experimental faster alternative/rewrite of rebuild method)
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesParents->movePage($page, $oldParent, $newParent);
+
+// usage with all arguments
+$int = $pagesParents->movePage(Page $page, Page $oldParent, Page $newParent);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,11 +22,11 @@ Rebuild pages_parents table for given page (experimental faster alternative/rewr
 
 ## Return value
 
-int
+- `int`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

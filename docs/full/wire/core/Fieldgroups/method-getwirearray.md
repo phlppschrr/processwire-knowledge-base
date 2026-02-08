@@ -3,6 +3,13 @@
 Source: `wire/core/Fieldgroups.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $fieldgroups->getWireArray();
+~~~~~
+
 ## Return value
 
-WireArray|FieldgroupsArray
+- `WireArray|FieldgroupsArray`

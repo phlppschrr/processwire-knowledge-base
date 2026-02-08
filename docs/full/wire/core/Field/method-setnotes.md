@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Set notes, optionally for a specific language
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $field->setNotes($text);
+
+// usage with all arguments
+$result = $field->setNotes($text, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$text` `string` Text to set

@@ -4,6 +4,8 @@ Source: `wire/core/Page.php`
 
 Called when new status flag about to be added to page but not yet saved
 
+## Example
+
 ~~~~~
 $wire->addHook('Page::addStatusReady', function($e) {
   $page = $e->object;
@@ -13,6 +15,13 @@ $wire->addHook('Page::addStatusReady', function($e) {
     $e->error("We do not allow unpublish of homepage");
   }
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___addStatusReady($name, $value);
 ~~~~~
 
 ## Arguments

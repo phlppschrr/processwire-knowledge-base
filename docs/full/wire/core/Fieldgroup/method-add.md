@@ -4,9 +4,18 @@ Source: `wire/core/Fieldgroup.php`
 
 Add a field to this Fieldgroup
 
+## Example
+
 ~~~~~
 $field = $fields->get('body');
 $fieldgroup->add($field);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldgroup->add($item);
 ~~~~~
 
 ## Arguments
@@ -15,8 +24,8 @@ $fieldgroup->add($field);
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

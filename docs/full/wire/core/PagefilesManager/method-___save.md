@@ -8,3 +8,10 @@ Executed before a page draft/published assets are moved around, when changes to 
 
 There are no arguments or return values here.
 Hooks may retrieve the Page object being saved from `$event->object->page`.
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagefilesManager->___save();
+~~~~~

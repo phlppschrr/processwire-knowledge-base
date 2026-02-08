@@ -9,6 +9,16 @@ plus some useful PW type-specific logic, providing a useful output shortcut.
 
 See phpdoc in `Page::if()` for full details.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pageComparison->_if($page, $key);
+
+// usage with all arguments
+$result = $pageComparison->_if(Page $page, $key, $yes = '', $no = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -18,7 +28,7 @@ See phpdoc in `Page::if()` for full details.
 
 ## Return value
 
-mixed|string|bool
+- `mixed|string|bool`
 
 ## Since
 

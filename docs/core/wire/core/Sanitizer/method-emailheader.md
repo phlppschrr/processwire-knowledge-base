@@ -6,6 +6,16 @@ Returns a value that may be used in an email header
 
 This method is designed to prevent one email header from injecting into another.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->emailHeader($value);
+
+// usage with all arguments
+$string = $sanitizer->emailHeader($value, $headerName = false);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -13,4 +23,4 @@ This method is designed to prevent one email header from injecting into another.
 
 ## Return value
 
-string
+- `string`

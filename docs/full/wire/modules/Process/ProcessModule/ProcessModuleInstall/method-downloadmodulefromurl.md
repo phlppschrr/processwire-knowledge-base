@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Download module from URL
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processModuleInstall->downloadModuleFromUrl($url);
+
+// usage with all arguments
+$bool = $processModuleInstall->downloadModuleFromUrl($url, $destinationDir = '');
+~~~~~
+
 ## Arguments
 
 - `$url` `string`
@@ -11,7 +21,7 @@ Download module from URL
 
 ## Return value
 
-bool|string
+- `bool|string`
 
 ## Since
 

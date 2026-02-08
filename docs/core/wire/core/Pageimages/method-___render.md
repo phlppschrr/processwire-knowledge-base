@@ -19,6 +19,8 @@ Given template string can contain any of the placeholders, which will be replace
  - `{original.name}` Replace “name” with any of the properties above to refer to original/full-size image.
     If there is no original image then these just refer back to the current image.
 
+## Example
+
 ~~~~~
 // default output
 echo $page->images->render();
@@ -43,6 +45,16 @@ echo "<ul>" . $page->images->render([
 ]) . "</ul>";
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageimages->___render();
+
+// usage with all arguments
+$string = $pageimages->___render($markup = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$markup` (optional) `string|array` Markup template string or optional $options array if you do not want the template string here.
@@ -50,7 +62,7 @@ echo "<ul>" . $page->images->render([
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

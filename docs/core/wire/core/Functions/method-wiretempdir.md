@@ -7,10 +7,22 @@ Return a new temporary directory/path ready to use for files
 - The directory will be automatically removed after a set period of time (default=120s).
 - This is a procedural version of the `$files->tempDir()` method.
 
+## Example
+
 ~~~~~
 $td = wireTempDir('hello-world');
 $path = (string) $td; // or use $td->get();
 file_put_contents($path . 'some-file.txt', 'Hello world');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wireTempDir = $functions->wireTempDir($name);
+
+// usage with all arguments
+$wireTempDir = $functions->wireTempDir($name, $options = array());
 ~~~~~
 
 ## Arguments
@@ -20,9 +32,9 @@ file_put_contents($path . 'some-file.txt', 'Hello world');
 
 ## Return value
 
-WireTempDir If you typecast return value to a string, it is the temp dir path (with trailing slash).
+- `WireTempDir` If you typecast return value to a string, it is the temp dir path (with trailing slash).
 
-## See also
+## See Also
 
 - [WireFileTools::tempDir()](../WireFileTools/method-tempdir.md)
 - WireTempDir

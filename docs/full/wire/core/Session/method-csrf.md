@@ -19,11 +19,18 @@ if($session->CSRF->hasValidToken()) {
 }
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$sessionCSRF = $session->CSRF();
+~~~~~
+
 ## Return value
 
-SessionCSRF
+- `SessionCSRF`
 
-## See also
+## See Also
 
 - [SessionCSRF::renderInput()](../SessionCSRF/method-renderinput.md)
 - [SessionCSRF::validate()](../SessionCSRF/method-validate.md)

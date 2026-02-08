@@ -4,6 +4,13 @@ Source: `wire/core/User.php`
 
 Does this user have the given permission on the given template?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $user->___hasTemplatePermission($name, $template);
+~~~~~
+
 ## Arguments
 
 - `$name` `string|Permission` Permission name
@@ -11,8 +18,8 @@ Does this user have the given permission on the given template?
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

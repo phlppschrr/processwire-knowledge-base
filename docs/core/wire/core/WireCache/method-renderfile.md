@@ -12,11 +12,23 @@ than re-rendering the file on every call.
 If there are any changes to the source file `$filename` the cache will be automatically
 re-created, regardless of what is specified for the `$expire` argument.
 
+## Example
+
 ~~~~~~
 // render primary nav from site/templates/partials/primary-nav.php
 // and cache for 3600 seconds (1 hour)
 echo $cache->renderFile('partials/primary-nav.php', 3600);
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireCache->renderFile($filename);
+
+// usage with all arguments
+$string = $wireCache->renderFile($filename, $expire = null, array $options = array());
+~~~~~
 
 ## Arguments
 
@@ -26,13 +38,13 @@ echo $cache->renderFile('partials/primary-nav.php', 3600);
 
 ## Return value
 
-string|bool Rendered template file or boolean false on fatal error (and throwExceptions disabled)
+- `string|bool` Rendered template file or boolean false on fatal error (and throwExceptions disabled)
 
-## Throws
+## Exceptions
 
-- WireException if given file doesn’t exist
+- `WireException` if given file doesn’t exist
 
-## See also
+## See Also
 
 - [WireFileTools::render()](../WireFileTools/method-render.md)
 

@@ -7,6 +7,13 @@ Create a new Selector object from a field name, operator, and value
 This is mostly for internal use, as the Selectors object already does this when you pass it
 a selector string in the constructor or init() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$selector = $selectors->create($field, $operator, $value);
+~~~~~
+
 ## Arguments
 
 - `$field` `string` Field name or names (separated by a pipe)
@@ -15,8 +22,8 @@ a selector string in the constructor or init() method.
 
 ## Return value
 
-Selector Returns the correct type of `Selector` object that corresponds to the given `$operator`.
+- `Selector` Returns the correct type of `Selector` object that corresponds to the given `$operator`.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

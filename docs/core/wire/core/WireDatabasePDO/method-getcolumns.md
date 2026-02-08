@@ -10,6 +10,16 @@ indicating the column name, column type, whether it can be null, what it’s def
 is, and any extra information, such as whether it is auto_increment. The verbose option
 also makes the return value indexed by column name (associative array).
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDatabasePDO->getColumns($table);
+
+// usage with all arguments
+$array = $wireDatabasePDO->getColumns($table, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$table` `string` Table name or or `table.column` to get for specific column (when combined with verbose=true)
@@ -17,7 +27,7 @@ also makes the return value indexed by column name (associative array).
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

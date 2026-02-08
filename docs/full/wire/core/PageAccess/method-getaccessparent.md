@@ -4,6 +4,16 @@ Source: `wire/core/PageAccess.php`
 
 Returns the parent page that has the template from which we get our role/access settings from
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pageAccess->getAccessParent($page);
+
+// usage with all arguments
+$page = $pageAccess->getAccessParent(Page $page, $type = 'view', $level = 0);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Returns the parent page that has the template from which we get our role/access 
 
 ## Return value
 
-Page|NullPage Returns NullPage if none found
+- `Page|NullPage` Returns NullPage if none found

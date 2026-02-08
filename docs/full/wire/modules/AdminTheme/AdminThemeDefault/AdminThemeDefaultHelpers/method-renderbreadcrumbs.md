@@ -4,10 +4,20 @@ Source: `wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers.php`
 
 Render a list of breadcrumbs (list items), excluding the containing <ul>
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeDefaultHelpers->renderBreadcrumbs();
+
+// usage with all arguments
+$string = $adminThemeDefaultHelpers->renderBreadcrumbs($appendCurrent = true);
+~~~~~
+
 ## Arguments
 
 - `$appendCurrent` (optional) `bool` Whether to append the current title/headline to the breadcrumb trail (default=true)
 
 ## Return value
 
-string
+- `string`

@@ -4,6 +4,16 @@ Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Set a named flag
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $notification->setFlag($name);
+
+// usage with all arguments
+$result = $notification->setFlag($name, $add = true);
+~~~~~
+
 ## Arguments
 
 - `$name` `string|int` Flag to set
@@ -11,4 +21,4 @@ Set a named flag
 
 ## Return value
 
-self
+- `self`

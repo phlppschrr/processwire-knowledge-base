@@ -53,6 +53,8 @@ Please also note the following about URL segments:
 - URL segments are already sanitized as page names.
 - Strongly recommended: throw a 404 when encountering URL segments you do not recognize.
 
+## Example
+
 ~~~~~
 // Get first URL segment and use it to determine output
 $action = $input->urlSegment(1);
@@ -141,14 +143,24 @@ if($sort === 'title') {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInput->urlSegment();
+
+// usage with all arguments
+$string = $wireInput->urlSegment($get = 1);
+~~~~~
+
 ## Arguments
 
 - `$get` (optional) `int|string` Specify one of the following - Omit argument to simply return 1st URL segment. - Positive integer of n’th URL segment where first is 1. - Negative integer of URL segment to match from end where last is -1. (3.0.155+) - Full URL segment string to return index for, if present (or 0 if not). (3.0.155+) - Full URL segment with equals sign before or after it, to return segment before or after it. (3.0.155+) - Wildcard string to match, as described in method description and examples. (3.0.155+) - Regular expression string to match, as described in method description and examples. (3.0.155+)
 
 ## Return value
 
-string|int Returns one of the following: - URL segment at requested index or blank string if not present. - Index (integer) of matching URL segment when given entire segment to match, or 0 when there is no match. (3.0.155+) - Matching URL segment when given wildcard string or regular expression. (3.0.155+) - Portion of matching URL segment when given wildcard or regex with parenthesis around pattern to match. (3.0.155+)
+- `string|int` Returns one of the following: - URL segment at requested index or blank string if not present. - Index (integer) of matching URL segment when given entire segment to match, or 0 when there is no match. (3.0.155+) - Matching URL segment when given wildcard string or regular expression. (3.0.155+) - Portion of matching URL segment when given wildcard or regex with parenthesis around pattern to match. (3.0.155+)
 
-## See also
+## See Also
 
 - [WireInput::urlSegmentStr()](method-urlsegmentstr.md)

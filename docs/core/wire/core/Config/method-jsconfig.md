@@ -21,6 +21,8 @@ is needed then you should still use $config->js().
 
 3. Specify no params to retrieve in array of all existing set values.
 
+## Example
+
 ~~~~~
 // Set a property from PHP
 $config->jsConfig('mySettings', [
@@ -31,11 +33,22 @@ $config->jsConfig('mySettings', [
 // Get a property (from PHP)
 $mySettings = $config->jsConfig('mySettings');
 ~~~~~
+
 ~~~~~
 // Get a property (from Javascript):
 var mySettings = ProcessWire.config.mySettings;
 console.log(mySettings.foo);
 console.log(mySettings.bar);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $config->jsConfig();
+
+// usage with all arguments
+$result = $config->jsConfig($key = null, $value = null);
 ~~~~~
 
 ## Arguments
@@ -45,7 +58,7 @@ console.log(mySettings.bar);
 
 ## Return value
 
-mixed|null|array|self Returns null if $key not found, value when getting, self when setting, or array when getting all
+- `mixed|null|array|self` Returns null if $key not found, value when getting, self when setting, or array when getting all
 
 ## Since
 

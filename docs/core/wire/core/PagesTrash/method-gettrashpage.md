@@ -4,10 +4,17 @@ Source: `wire/core/PagesTrash.php`
 
 Return the root parent trash page
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesTrash->getTrashPage();
+~~~~~
+
 ## Return value
 
-Page
+- `Page`
 
-## Throws
+## Exceptions
 
-- WireException if trash page cannot be located (highly unlikely)
+- `WireException` if trash page cannot be located (highly unlikely)

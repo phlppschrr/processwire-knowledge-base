@@ -4,6 +4,13 @@ Source: `wire/core/Notice.php`
 
 Remove a flag
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $notice->removeFlag($flag);
+~~~~~
+
 ## Arguments
 
 - `$flag` `int|string`

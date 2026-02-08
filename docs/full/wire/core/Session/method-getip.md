@@ -4,9 +4,21 @@ Source: `wire/core/Session.php`
 
 Get the IP address of the current user
 
+## Example
+
 ~~~~~
 $ip = $session->getIP();
 echo $ip; // outputs 111.222.333.444
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $session->getIP();
+
+// usage with all arguments
+$string = $session->getIP($int = false, $useClient = false);
 ~~~~~
 
 ## Arguments
@@ -16,4 +28,4 @@ echo $ip; // outputs 111.222.333.444
 
 ## Return value
 
-string|int Returns string by default, or integer if $int argument indicates to.
+- `string|int` Returns string by default, or integer if $int argument indicates to.

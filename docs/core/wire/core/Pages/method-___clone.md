@@ -12,6 +12,8 @@ Warning: this method can fail when recursive and cloning a page with huge amount
 children (or descendent family), and adequate resources (like memory or time limit) are
 not available.
 
+## Example
+
 ~~~~~
 // Clone the Westin Peachtree skyscraper page
 $building = $pages->get('/skyscrapers/atlanta/westin-peachtree/');
@@ -24,6 +26,16 @@ $copy->name = 'renaissance-center';
 $copy->save();
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pages->___clone($page);
+
+// usage with all arguments
+$page = $pages->___clone(Page $page, ?Page $parent = null, $recursive = true, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that you want to clone
@@ -33,8 +45,8 @@ $copy->save();
 
 ## Return value
 
-Page|NullPage The newly cloned Page or a NullPage() with id=0 if unsuccessful.
+- `Page|NullPage` The newly cloned Page or a NullPage() with id=0 if unsuccessful.
 
-## Throws
+## Exceptions
 
-- WireException|\Exception on fatal error
+- `WireException|\Exception` on fatal error

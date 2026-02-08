@@ -4,6 +4,16 @@ Source: `wire/core/Interfaces.php`
 
 Add a selectable option
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldHasSelectableOptions->addOption($value);
+
+// usage with all arguments
+$result = $inputfieldHasSelectableOptions->addOption($value, $label = null, ?array $attributes = null);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int`
@@ -12,4 +22,4 @@ Add a selectable option
 
 ## Return value
 
-self|$this
+- `self|$this`

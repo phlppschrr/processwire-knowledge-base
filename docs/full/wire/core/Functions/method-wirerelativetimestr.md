@@ -10,6 +10,16 @@ This is the procedural version of `$datetime->relativeTimeStr()`.
 
 Based upon: http://www.php.net/manual/en/function.time.php#89415
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $functions->wireRelativeTimeStr($ts);
+
+// usage with all arguments
+$string = $functions->wireRelativeTimeStr($ts, $abbreviate = false, $useTense = true);
+~~~~~
+
 ## Arguments
 
 - `$ts` `int|string` Unix timestamp or date string
@@ -18,8 +28,8 @@ Based upon: http://www.php.net/manual/en/function.time.php#89415
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [WireDateTime::relativeTimeStr()](../WireDateTime/method-___relativetimestr.md)

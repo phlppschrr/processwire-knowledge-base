@@ -6,6 +6,16 @@ Encodes a sortfield from a fieldname to a signed integer (ID) representing a cus
 
 The returned value will be a negative value (or string preceded by a dash) if the sortfield is reversed.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesSortfields->encode($sortfield);
+
+// usage with all arguments
+$string = $pagesSortfields->encode($sortfield, $default = 'sort');
+~~~~~
+
 ## Arguments
 
 - `$sortfield` `string`
@@ -13,4 +23,4 @@ The returned value will be a negative value (or string preceded by a dash) if th
 
 ## Return value
 
-string|int
+- `string|int`

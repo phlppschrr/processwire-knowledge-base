@@ -8,6 +8,16 @@ Omit all arguments to get flags for all modules indexed by module ID.
 
 Returns null if given module ID not found.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $modulesFlags->moduleFlags();
+
+// usage with all arguments
+$array = $modulesFlags->moduleFlags($moduleID = null, $setValue = null);
+~~~~~
+
 ## Arguments
 
 - `$moduleID` (optional) `int` This method only accepts module ID
@@ -15,4 +25,4 @@ Returns null if given module ID not found.
 
 ## Return value
 
-array|mixed|null
+- `array|mixed|null`

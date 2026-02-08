@@ -4,10 +4,20 @@ Source: `wire/core/PagesExportImport.php`
 
 Remove files and directories in /site/assets/backups/PagesExportImport/ that are older than $maxAge
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesExportImport->cleanupFiles();
+
+// usage with all arguments
+$int = $pagesExportImport->cleanupFiles($maxAge = 3600);
+~~~~~
+
 ## Arguments
 
 - `$maxAge` (optional) `int` Maximum age in seconds (default=3600)
 
 ## Return value
 
-int Number of files/dirs removed
+- `int` Number of files/dirs removed

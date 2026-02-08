@@ -32,6 +32,9 @@ when the page is rendered.
 In the examples, a “pw-id” or “data-pw-id” attribute may be used instead of an “id” attribute, when
 or if preferred. In addition, any “pw-” attribute may be specified as a “data-pw-” attribute if you
 prefer it.
+
+## Example
+
 ~~~~~~
 Replacing and removing elements
 
@@ -64,6 +67,16 @@ Inserting new elements
 
 ~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireMarkupRegions->populate($htmlDocument, $htmlRegions);
+
+// usage with all arguments
+$int = $wireMarkupRegions->populate(&$htmlDocument, $htmlRegions, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$htmlDocument` `string` Document to populate regions to
@@ -72,4 +85,4 @@ Inserting new elements
 
 ## Return value
 
-int Number of updates made to $htmlDocument
+- `int` Number of updates made to $htmlDocument

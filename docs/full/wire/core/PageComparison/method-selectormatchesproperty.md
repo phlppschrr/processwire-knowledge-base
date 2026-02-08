@@ -4,6 +4,16 @@ Source: `wire/core/PageComparison.php`
 
 Return whether single property from individual Selector matches Page
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageComparison->selectorMatchesProperty($page, $selector, $property);
+
+// usage with all arguments
+$bool = $pageComparison->selectorMatchesProperty(Page $page, Selector $selector, $property);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,7 +22,7 @@ Return whether single property from individual Selector matches Page
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

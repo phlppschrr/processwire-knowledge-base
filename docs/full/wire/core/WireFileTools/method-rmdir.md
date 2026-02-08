@@ -10,12 +10,24 @@ directory tree in a flash.
 
 Note that the $options argument was added in 3.0.118.
 
+## Example
+
 ~~~~~
 // Remove directory /site/assets/cache/foo-bar/ and everything in it
 $files->rmdir($config->paths->cache . 'foo-bar/', true);
 
 // Remove directory after ensuring $pathname is somewhere within /site/assets/
 $files->rmdir($pathname, true, [ 'limitPath' => $config->paths->assets ]);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->rmdir($path);
+
+// usage with all arguments
+$bool = $wireFileTools->rmdir($path, $recursive = false, $options = array());
 ~~~~~
 
 ## Arguments
@@ -26,4 +38,4 @@ $files->rmdir($pathname, true, [ 'limitPath' => $config->paths->assets ]);
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure

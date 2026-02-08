@@ -7,11 +7,23 @@ Sanitize to have a maximuim value
 If float or decimal string specified for $max argument, return value will be a float,
 otherwise an integer is returned.
 
+## Example
+
 ~~~~~
 $n = 10;
 $sanitizer->max(5); // returns 5
 $sanitizer->max(100); // returns 10
 $sanitizer->max(100.0); // returns 10.0
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->max($value);
+
+// usage with all arguments
+$int = $sanitizer->max($value, $max = PHP_INT_MAX);
 ~~~~~
 
 ## Arguments
@@ -21,9 +33,9 @@ $sanitizer->max(100.0); // returns 10.0
 
 ## Return value
 
-int|float
+- `int|float`
 
-## See also
+## See Also
 
 - [Sanitizer::min()](method-min.md)
 

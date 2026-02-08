@@ -9,6 +9,16 @@ Typically this would be used only if page had no name or if it had a temporary u
 Page will be populated with the name given. This method will not populate names to pages that
 already have a name, unless the name is "untitled"
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesEditor->setupPageName($page);
+
+// usage with all arguments
+$string = $pagesEditor->setupPageName(Page $page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -16,4 +26,4 @@ already have a name, unless the name is "untitled"
 
 ## Return value
 
-string If a name was generated it is returned. If no name was generated blank is returned.
+- `string` If a name was generated it is returned. If no name was generated blank is returned.

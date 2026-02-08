@@ -6,6 +6,16 @@ Verbose debug info (via @horst)
 
 Optionally with individual options array.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageimage->getDebugInfo();
+
+// usage with all arguments
+$array = $pageimage->getDebugInfo($options = array(), $returnType = 'string');
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` The individual options you also passes with your image variation creation
@@ -13,7 +23,7 @@ Optionally with individual options array.
 
 ## Return value
 
-array|object|string
+- `array|object|string`
 
 ## Since
 

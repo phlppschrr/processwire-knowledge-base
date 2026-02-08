@@ -10,6 +10,16 @@ shortcut for the `$cache->get()` method.
 - If called with no arguments it returns the $cache API variable.
 - If called with arguments, it can be used the same as `WireCache::get()`.
 
+## Usage
+
+~~~~~
+// basic usage
+$wireCache = $functionsAPI->cache();
+
+// usage with all arguments
+$wireCache = $functionsAPI->cache($name = '', $expire = null, $func = null);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string`
@@ -18,9 +28,9 @@ shortcut for the `$cache->get()` method.
 
 ## Return value
 
-WireCache|string|array|PageArray|null
+- `WireCache|string|array|PageArray|null`
 
-## See also
+## See Also
 
 - WireCache
 - [WireCache::get()](../WireCache/method-get.md)

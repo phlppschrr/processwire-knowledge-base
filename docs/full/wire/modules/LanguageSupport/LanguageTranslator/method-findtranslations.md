@@ -6,6 +6,16 @@ Find all translation(s) for given text
 
 Scans all textdomains to find translations.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $languageTranslator->findTranslations($text);
+
+// usage with all arguments
+$array = $languageTranslator->findTranslations($text, $context = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$text` `string`
@@ -14,7 +24,7 @@ Scans all textdomains to find translations.
 
 ## Return value
 
-array - Returns array of strings containing translations of given text. - Returns array of arrays, each with verbose info, if getInfo option requested.
+- `array` - Returns array of strings containing translations of given text. - Returns array of arrays, each with verbose info, if getInfo option requested.
 
 ## Since
 

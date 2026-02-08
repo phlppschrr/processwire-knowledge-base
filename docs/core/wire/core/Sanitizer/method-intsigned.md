@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize to signed integer (negative or positive)
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->intSigned($value);
+
+// usage with all arguments
+$int = $sanitizer->intSigned($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed`
@@ -11,4 +21,4 @@ Sanitize to signed integer (negative or positive)
 
 ## Return value
 
-int
+- `int`

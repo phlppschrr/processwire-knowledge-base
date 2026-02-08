@@ -9,6 +9,16 @@ Is this field editable?
 - **Please note:** this does not check that the provided $page itself is editable. If you want that
   check, then use `$page->editable($field)` instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $field->___editable();
+
+// usage with all arguments
+$bool = $field->___editable(?Page $page = null, ?User $user = null);
+~~~~~
+
 ## Arguments
 
 - `$page` (optional) `Page|null` Optionally specify a Page for context
@@ -16,4 +26,4 @@ Is this field editable?
 
 ## Return value
 
-bool
+- `bool`

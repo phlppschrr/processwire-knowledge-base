@@ -13,14 +13,24 @@ If you want to hook this method, please hook the `saveReady`, `saved`, or one of
 the `Pages::save*` methods instead, as hooking this method will not hook relevant pages
 saved directly through $pages->save().
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesType->___save($page);
+
+// usage with all arguments
+$bool = $pagesType->___save(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
 
 ## Return value
 
-bool True on success
+- `bool` True on success
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

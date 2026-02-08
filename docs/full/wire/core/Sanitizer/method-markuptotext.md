@@ -8,11 +8,23 @@ This is one implementation but there is also a better one that you may prefer wi
 `WireTextTools::markupToText()` method. Try both to determine which suits your needs
 best:
 
+## Example
+
 ~~~~~
 $markup = '<html>a bunch of HTML here</html>';
 // try both to see what you prefer:
 $text1 = $sanitizer->markupToText($html);
 $text2 = $sanitizer->getTextTools()->markupToText();
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->markupToText($value);
+
+// usage with all arguments
+$string = $sanitizer->markupToText($value, array $options = array());
 ~~~~~
 
 ## Arguments
@@ -22,9 +34,9 @@ $text2 = $sanitizer->getTextTools()->markupToText();
 
 ## Return value
 
-string Converted string of text
+- `string` Converted string of text
 
-## See also
+## See Also
 
 - [WireTextTools::markupToText()](../WireTextTools/method-markuptotext.md)
 - [Sanitizer::markupToLine()](method-markuptoline.md)

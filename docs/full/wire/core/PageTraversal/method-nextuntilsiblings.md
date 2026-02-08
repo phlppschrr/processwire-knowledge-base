@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return all sibling pages after this one until matching the one specified
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->nextUntilSiblings($page);
+
+// usage with all arguments
+$items = $pageTraversal->nextUntilSiblings(Page $page, $selector = '', $filter = '', ?PageArray $siblings = null);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,4 +23,4 @@ Return all sibling pages after this one until matching the one specified
 
 ## Return value
 
-PageArray
+- `PageArray`

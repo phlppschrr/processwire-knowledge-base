@@ -10,6 +10,8 @@ Get or set current status
 
 - You can also get or set status directly, by manipulating the `$page->status` property.
 
+## Example
+
 ~~~~~
 // Get the current status as bitmask
 $status = $page->status();
@@ -27,6 +29,16 @@ $page->status('unpublished');
 $page->status(['hidden', 'unpublished']);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->status();
+
+// usage with all arguments
+$int = $page->status($value = false, $status = null);
+~~~~~
+
 ## Arguments
 
 - `$value` (optional) `bool|int` Optionally specify one of the following: - `true` (boolean): To return an array of status names (indexed by status number). - `integer|string|array`: Status number(s) or status name(s) to set the current page status (same as $page->status = $value)
@@ -34,9 +46,9 @@ $page->status(['hidden', 'unpublished']);
 
 ## Return value
 
-int|array|Page If setting status, `$this` is returned. If getting status: current status or array of status names is returned.
+- `int|array|Page` If setting status, `$this` is returned. If getting status: current status or array of status names is returned.
 
-## See also
+## See Also
 
 - [Page::addStatus()](method-addstatus.md)
 - [Page::removeStatus()](method-removestatus.md)

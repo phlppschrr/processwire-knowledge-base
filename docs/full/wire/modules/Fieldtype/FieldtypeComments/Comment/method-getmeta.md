@@ -8,13 +8,23 @@ Note: values returned are exactly as they were set and do not go through any run
 formatting for HTML entities or anything like that. Be sure to provide your own formatting
 where necessary.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $comment->getMeta();
+
+// usage with all arguments
+$string = $comment->getMeta($key = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `null|string` Name of property to get
 
 ## Return value
 
-string|array|int|float|mixed|null Returns value or null if not found
+- `string|array|int|float|mixed|null` Returns value or null if not found
 
 ## Since
 

@@ -14,6 +14,8 @@ a string since it is the simplest for readability.
   option from being used, it doesn’t perform a NOT condition.
 - The `writable` option may also be written as `writeable`, if preferred.
 
+## Example
+
 ~~~~~
 // 1. check if exists
 $exists = $files->exists('/path/file.ext');
@@ -35,6 +37,16 @@ $exists = $files->exists('/path/dir/', 'writable dir');
 $exists = $files->exists('/path/file.ext', 'readable writable file');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->exists($filename);
+
+// usage with all arguments
+$bool = $wireFileTools->exists($filename, $options = '');
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`
@@ -42,11 +54,11 @@ $exists = $files->exists('/path/file.ext', 'readable writable file');
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid or unrecognized $options
+- `WireException` if given invalid or unrecognized $options
 
 ## Since
 

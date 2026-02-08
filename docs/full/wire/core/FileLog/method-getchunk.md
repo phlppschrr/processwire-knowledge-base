@@ -7,6 +7,16 @@ Get a chunk of data (string) from the end of the log file
 Returned string is automatically adjusted at the beginning and
 ending to contain only full log lines.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fileLog->getChunk();
+
+// usage with all arguments
+$string = $fileLog->getChunk($chunkNum = 1, $chunkSize = 0, $reverse = true, $clean = true);
+~~~~~
+
 ## Arguments
 
 - `$chunkNum` (optional) `int` Current chunk/pagination number (default=1, first)
@@ -16,4 +26,4 @@ ending to contain only full log lines.
 
 ## Return value
 
-string
+- `string`

@@ -7,10 +7,19 @@ Is the current request of the specified type?
 This is a more readable/shorter alias of `$input->requestMethod('type')` for syntax convenience.
 Internally, it determines the request type without accessing any input data, so it is efficient.
 
+## Example
+
 ~~~~~
 // The following are equivalent:
 $isPost = $input->is('post');
 $isPost = $input->requestMethod('post');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireInput->is($method);
 ~~~~~
 
 ## Arguments
@@ -19,7 +28,7 @@ $isPost = $input->requestMethod('post');
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

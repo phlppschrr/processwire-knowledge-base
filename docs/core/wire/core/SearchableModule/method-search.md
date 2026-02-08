@@ -45,6 +45,16 @@ what properties are available for search. For instance, properties for a Module 
 [ 'name', 'title', 'summary' ]. Implementation of the properties index is optional, and for PW’s informational
 purposes only.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $searchableModule->search($text);
+
+// usage with all arguments
+$array = $searchableModule->search($text, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$text` `string` Text to search for
@@ -52,4 +62,4 @@ purposes only.
 
 ## Return value
 
-array
+- `array`

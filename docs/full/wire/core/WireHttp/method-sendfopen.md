@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Send using fopen
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->sendFopen($url);
+
+// usage with all arguments
+$bool = $wireHttp->sendFopen($url, $method = 'POST', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string`
@@ -12,4 +22,4 @@ Send using fopen
 
 ## Return value
 
-bool|string
+- `bool|string`

@@ -4,9 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Get instance of WireTextTools
 
+## Usage
+
+~~~~~
+// basic usage
+$wireTextTools = $sanitizer->getTextTools();
+~~~~~
+
 ## Return value
 
-WireTextTools
+- `WireTextTools`
 
 ## Since
 

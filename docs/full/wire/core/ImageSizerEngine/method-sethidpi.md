@@ -6,10 +6,20 @@ Enable hidpi mode?
 
 Just a shortcut for calling $this->scale()
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngine->setHidpi();
+
+// usage with all arguments
+$result = $imageSizerEngine->setHidpi($hidpi = true);
+~~~~~
+
 ## Arguments
 
 - `$hidpi` (optional) `bool` True or false (default=true)
 
 ## Return value
 
-self
+- `self`

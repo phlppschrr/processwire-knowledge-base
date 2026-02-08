@@ -21,6 +21,16 @@ prefer to handle the match, or false if not. Fieldtype modules do not need
 to consider this unless they want to override the default empty value match
 behavior in PageFinder::whereEmptyValuePossible().
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldtype->isEmptyValue($field, $value);
+
+// usage with all arguments
+$bool = $fieldtype->isEmptyValue(Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -28,4 +38,4 @@ behavior in PageFinder::whereEmptyValuePossible().
 
 ## Return value
 
-bool
+- `bool`

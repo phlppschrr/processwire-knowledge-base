@@ -10,6 +10,16 @@ Log a query, start/stop query logging, or return logged queries
 - Specify boolean true for $sql argument to reset and start query logging (3.0.173+)
 - Specify boolean false for $sql argument to stop query logging (3.0.173+)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDatabasePDO->queryLog();
+
+// usage with all arguments
+$array = $wireDatabasePDO->queryLog($sql = '', $note = '');
+~~~~~
+
 ## Arguments
 
 - `$sql` (optional) `string|bool` Query (string) to log, boolean true to reset/start query logging, boolean false to stop query logging
@@ -17,4 +27,4 @@ Log a query, start/stop query logging, or return logged queries
 
 ## Return value
 
-array|bool Returns query log array, boolean true on success, boolean false if not
+- `array|bool` Returns query log array, boolean true on success, boolean false if not

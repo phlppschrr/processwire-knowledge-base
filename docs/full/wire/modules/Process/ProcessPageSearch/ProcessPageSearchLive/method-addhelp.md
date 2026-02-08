@@ -4,6 +4,8 @@ Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Add help examples for when the help results are displayed
 
+## Example
+
 ~~~~~
 // handle a search of "today" to find pages modified today
 $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
@@ -19,6 +21,16 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $processPageSearchLive->addHelp($group, $examples);
+
+// usage with all arguments
+$result = $processPageSearchLive->addHelp($group, array $examples);
+~~~~~
+
 ## Arguments
 
 - `$group` `string` Group name for these search results
@@ -26,7 +38,7 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 
 ## Return value
 
-true
+- `true`
 
 ## Since
 

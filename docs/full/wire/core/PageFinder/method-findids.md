@@ -4,6 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Same as find() but returns just a simple array of page IDs without any other info
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageFinder->findIDs($selectors);
+
+// usage with all arguments
+$array = $pageFinder->findIDs($selectors, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
@@ -11,4 +21,4 @@ Same as find() but returns just a simple array of page IDs without any other inf
 
 ## Return value
 
-array of page IDs
+- `array` of page IDs

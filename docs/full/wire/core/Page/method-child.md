@@ -7,9 +7,21 @@ Return the page’s first single child that matches the given selector.
 Same as `$page->children()` but returns a single Page object or NullPage (with id=0) rather than a PageArray.
 Meaning, this method will only ever return one Page.
 
+## Example
+
 ~~~~~
 // Get the newest created child page
 $newestChild = $page->child("sort=-created");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$page = $page->child();
+
+// usage with all arguments
+$page = $page->child($selector = '', $options = array());
 ~~~~~
 
 ## Arguments
@@ -19,8 +31,8 @@ $newestChild = $page->child("sort=-created");
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`
 
-## See also
+## See Also
 
 - [Page::children()](method-children.md)

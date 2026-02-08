@@ -8,6 +8,16 @@ Similar to PHP's `implode()` function.
 
 [Introduction of implode method](https://processwire.com/talk/topic/5098-new-wirearray-api-additions-on-dev/)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireArray->implode($delimiter);
+
+// usage with all arguments
+$string = $wireArray->implode($delimiter, $property = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$delimiter` `string` The delimiter to separate each item by (or the glue to tie them together). If not needed, this argument may be omitted and $property supplied first (also shifting $options to 2nd arg).
@@ -16,9 +26,9 @@ Similar to PHP's `implode()` function.
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [WireArray::each()](method-each.md)
 - [WireArray::explode()](method-explode.md)

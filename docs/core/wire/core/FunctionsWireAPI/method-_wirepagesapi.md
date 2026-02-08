@@ -4,6 +4,13 @@ Source: `wire/core/FunctionsWireAPI.php`
 
 Common helper for API functions dealing with pages
 
+## Usage
+
+~~~~~
+// basic usage
+$functionsWireAPI->_wirePagesAPI($_apiVar, $selector);
+~~~~~
+
 ## Arguments
 
 - $_apiVar
@@ -11,4 +18,4 @@ Common helper for API functions dealing with pages
 
 ## Return value
 
-null|NullPage|Page|PageArray|Pages|PagesType
+- `null|NullPage|Page|PageArray|Pages|PagesType`

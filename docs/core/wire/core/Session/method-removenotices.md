@@ -6,3 +6,10 @@ Remove queued notices
 
 Call this after displaying queued message, error or warning notices.
 This prevents them from re-appearing on the next request.
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->removeNotices();
+~~~~~

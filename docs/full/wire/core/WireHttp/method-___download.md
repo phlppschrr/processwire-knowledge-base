@@ -7,6 +7,16 @@ Download a file from a URL and save it locally
 First it will attempt to use CURL. If that fails, it will try `fopen()`,
 unless you specify the `use` option in `$options`.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireHttp->___download($fromURL, $toFile);
+
+// usage with all arguments
+$string = $wireHttp->___download($fromURL, $toFile, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$fromURL` `string` URL of file you want to download.
@@ -15,11 +25,11 @@ unless you specify the `use` option in `$options`.
 
 ## Return value
 
-string Filename that was downloaded (including full path).
+- `string` Filename that was downloaded (including full path).
 
-## Throws
+## Exceptions
 
-- WireException All error conditions throw exceptions.
+- `WireException` All error conditions throw exceptions.
 
 ## Details
 

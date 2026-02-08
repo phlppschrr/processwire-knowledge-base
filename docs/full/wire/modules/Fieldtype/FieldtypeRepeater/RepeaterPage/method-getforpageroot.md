@@ -4,9 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 For nested repeaters, return the root-level non-repeater page that this repeater item belongs to
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $repeaterPage->getForPageRoot();
+~~~~~
+
 ## Return value
 
-Page
+- `Page`
 
 ## Since
 

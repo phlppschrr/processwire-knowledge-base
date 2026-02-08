@@ -12,6 +12,16 @@ Is there any page that matches the given $selector in the system? (with no exclu
 When `$verbose` option is used, an array is returned instead. Verbose return array includes all columns
 from the matching row in the pages table.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesLoader->has($selector);
+
+// usage with all arguments
+$array = $pagesLoader->has($selector, $verbose = false, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|int|array|Selectors`
@@ -20,7 +30,7 @@ from the matching row in the pages table.
 
 ## Return value
 
-array|int
+- `array|int`
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/core/Notice.php`
 
 Get string of names for given flags integer
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $notice->flagNames();
+
+// usage with all arguments
+$array = $notice->flagNames($flags = null, $getString = false);
+~~~~~
+
 ## Arguments
 
 - `$flags` (optional) `null|int` Specify flags integer or omit to return all flag names (default=null)
@@ -11,7 +21,7 @@ Get string of names for given flags integer
 
 ## Return value
 
-array|string
+- `array|string`
 
 ## Since
 

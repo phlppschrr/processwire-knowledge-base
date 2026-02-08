@@ -4,6 +4,13 @@ Source: `wire/core/Fieldgroup.php`
 
 Set a fieldgroup property
 
+## Usage
+
+~~~~~
+// basic usage
+$fieldgroup = $fieldgroup->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of property to set
@@ -11,8 +18,8 @@ Set a fieldgroup property
 
 ## Return value
 
-Fieldgroup|WireArray $this
+- `Fieldgroup|WireArray` $this
 
-## Throws
+## Exceptions
 
-- WireException if passed invalid data
+- `WireException` if passed invalid data

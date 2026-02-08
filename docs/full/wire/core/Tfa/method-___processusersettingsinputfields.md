@@ -4,6 +4,16 @@ Source: `wire/core/Tfa.php`
 
 Called when the user config fieldset has been processed but before $settings have been saved
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $tfa->___processUserSettingsInputfields($user, $fieldset, $settings, $settingsPrev);
+
+// usage with all arguments
+$array = $tfa->___processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev);
+~~~~~
+
 ## Arguments
 
 - `$user` `User`
@@ -13,4 +23,4 @@ Called when the user config fieldset has been processed but before $settings hav
 
 ## Return value
 
-array Return $newSettings array (modified as needed)
+- `array` Return $newSettings array (modified as needed)

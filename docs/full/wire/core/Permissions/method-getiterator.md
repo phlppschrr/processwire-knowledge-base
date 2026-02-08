@@ -4,6 +4,8 @@ Source: `wire/core/Permissions.php`
 
 Returns all installed Permission pages and enables foreach() iteration of $permissions
 
+## Example
+
 ~~~~~
 // Example of listing all permissions
 foreach($permissions as $permission) {
@@ -11,6 +13,13 @@ foreach($permissions as $permission) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $permissions->getIterator();
+~~~~~
+
 ## Return value
 
-array|PageArray|\Traversable
+- `array|PageArray|\Traversable`

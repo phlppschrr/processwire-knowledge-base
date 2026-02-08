@@ -4,6 +4,8 @@ Source: `wire/core/Session.php`
 
 Logout the current user, and clear all session variables
 
+## Example
+
 ~~~~~
 // logout user when "?logout=1" in URL query string
 if($input->get('logout')) {
@@ -13,14 +15,24 @@ if($input->get('logout')) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->___logout();
+
+// usage with all arguments
+$result = $session->___logout($startNew = true);
+~~~~~
+
 ## Arguments
 
 - `$startNew` (optional) `bool` Start a new session after logout? (default=true)
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException if session is disabled
+- `WireException` if session is disabled

@@ -4,6 +4,16 @@ Source: `wire/core/WireHooks.php`
 
 Return path hooks that have potential to match given request path
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireHooks->filterPathHooks($requestPath);
+
+// usage with all arguments
+$array = $wireHooks->filterPathHooks($requestPath, $has = false);
+~~~~~
+
 ## Arguments
 
 - `$requestPath` `string`
@@ -11,7 +21,7 @@ Return path hooks that have potential to match given request path
 
 ## Return value
 
-array|bool
+- `array|bool`
 
 ## Since
 

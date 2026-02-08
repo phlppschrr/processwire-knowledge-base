@@ -3,6 +3,13 @@
 Source: `wire/core/Page.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$pageAccess = $page->access();
+~~~~~
+
 ## Return value
 
-PageAccess
+- `PageAccess`

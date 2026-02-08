@@ -4,6 +4,16 @@ Source: `wire/core/Modules.php`
 
 Get just a single property of module info
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $modules->getModuleInfoProperty($class, $property);
+
+// usage with all arguments
+$result = $modules->getModuleInfoProperty($class, $property, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$class` `Module|string` Module instance or module name
@@ -12,7 +22,7 @@ Get just a single property of module info
 
 ## Return value
 
-mixed|null Returns value of property or null if not found
+- `mixed|null` Returns value of property or null if not found
 
 ## Since
 

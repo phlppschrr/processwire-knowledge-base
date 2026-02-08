@@ -4,11 +4,21 @@ Source: `wire/core/PageFinder.php`
 
 Special case when requested value is path or URL
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pageFinder->___getQueryJoinPath($query, $selector);
+
+// usage with all arguments
+$result = $pageFinder->___getQueryJoinPath(DatabaseQuerySelect $query, $selector);
+~~~~~
+
 ## Arguments
 
 - `$query` `DatabaseQuerySelect`
 - `$selector` `Selector`
 
-## Throws
+## Exceptions
 
-- PageFinderSyntaxException
+- `PageFinderSyntaxException`

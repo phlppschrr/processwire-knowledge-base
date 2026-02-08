@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngine.php`
 
 Process rotate of an image
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngine->processRotate($srcFilename, $dstFilename, $degrees);
+~~~~~
+
 ## Arguments
 
 - `$srcFilename` `string`
@@ -12,4 +19,4 @@ Process rotate of an image
 
 ## Return value
 
-bool
+- `bool`

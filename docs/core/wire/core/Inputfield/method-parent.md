@@ -12,13 +12,23 @@ InputfieldWrapper instance of the parent.
 To set parent, specify an InputfieldWrapper for the $parent argument. The return value
 is the current Inputfield for fluent interface.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield->parent();
+
+// usage with all arguments
+$inputfield->parent($parent = null);
+~~~~~
+
 ## Arguments
 
 - `$parent` (optional) `null|InputfieldWrapper`
 
 ## Return value
 
-null|Inputfield|InputfieldWrapper
+- `null|Inputfield|InputfieldWrapper`
 
 ## Since
 

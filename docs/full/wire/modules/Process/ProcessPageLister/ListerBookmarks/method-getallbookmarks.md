@@ -4,6 +4,13 @@ Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get all bookmarks (public and owned)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $listerBookmarks->getAllBookmarks();
+~~~~~
+
 ## Return value
 
-array
+- `array`

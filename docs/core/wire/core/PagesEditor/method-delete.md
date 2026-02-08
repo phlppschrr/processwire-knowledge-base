@@ -9,6 +9,16 @@ Unlike trash(), pages deleted here are not restorable.
 If you attempt to delete a page with children, and don't specifically set the $recursive param to True, then
 this method will throw an exception. If a recursive delete fails for any reason, an exception will be thrown.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->delete($page);
+
+// usage with all arguments
+$bool = $pagesEditor->delete(Page $page, $recursive = false, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -17,8 +27,8 @@ this method will throw an exception. If a recursive delete fails for any reason,
 
 ## Return value
 
-bool|int Returns true (success), or integer of quantity deleted if recursive mode requested.
+- `bool|int` Returns true (success), or integer of quantity deleted if recursive mode requested.
 
-## Throws
+## Exceptions
 
-- WireException on fatal error
+- `WireException` on fatal error

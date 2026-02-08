@@ -4,6 +4,13 @@ Source: `wire/core/Template.php`
 
 Get languages allowed for this template or null if language support not active.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $template->getLanguages();
+~~~~~
+
 ## Return value
 
-PageArray|Languages|null Returns a PageArray of Language objects, or NULL if language support not active.
+- `PageArray|Languages|null` Returns a PageArray of Language objects, or NULL if language support not active.

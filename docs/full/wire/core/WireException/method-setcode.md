@@ -6,6 +6,13 @@ Replace previously set code
 
 Public since 3.0.248
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireException->setCode($code);
+~~~~~
+
 ## Arguments
 
 - `$code` `int|string`

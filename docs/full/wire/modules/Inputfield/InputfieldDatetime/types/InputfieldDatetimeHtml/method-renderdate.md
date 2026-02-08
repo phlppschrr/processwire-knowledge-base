@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeHtml
 
 Render date input
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldDatetimeHtml->renderDate();
+~~~~~
+
 ## Return value
 
-string
+- `string`

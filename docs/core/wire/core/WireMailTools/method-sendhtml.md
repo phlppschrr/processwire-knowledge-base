@@ -8,6 +8,16 @@ This is just like the `$mail->send()` method with the exception that the body ar
 is assumed to be HTML rather than text. Note that the text version of the email is auto
 generated from the HTML, unless a `body` is provided in the `$options` array.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireMailTools->sendHTML();
+
+// usage with all arguments
+$int = $wireMailTools->sendHTML($to = '', $from = '', $subject = '', $bodyHTML = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$to` (optional) `string|array` Email address TO. For multiple, specify CSV string or array.
@@ -18,4 +28,4 @@ generated from the HTML, unless a `body` is provided in the `$options` array.
 
 ## Return value
 
-int|WireMail Returns number of messages sent or WireMail object if no arguments specified.
+- `int|WireMail` Returns number of messages sent or WireMail object if no arguments specified.

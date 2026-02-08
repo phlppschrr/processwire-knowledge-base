@@ -10,6 +10,9 @@ their own handler should not do a `parent::__callUnknown()` unless they also fai
 cause an exception to be thrown.
 
 If you want to override this method with a hook, see the example below.
+
+## Example
+
 ~~~~~
 $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
   // Get information about unknown method that was called
@@ -24,6 +27,13 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$wire->___callUnknown($method, $arguments);
+~~~~~
+
 ## Arguments
 
 - `$method` `string` Requested method name
@@ -31,8 +41,8 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 
 ## Return value
 
-null|mixed Return value of method (if applicable)
+- `null|mixed` Return value of method (if applicable)
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

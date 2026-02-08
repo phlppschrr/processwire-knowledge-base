@@ -7,6 +7,13 @@ Return the option IDs found to have been removed from the last setOptions() call
 These are for options not yet deleted, and that should be deleted after confirmation.
 They can be deleted with this $this->deleteOptionIDs() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $selectableOptionManager->getRemovedOptionIDs();
+~~~~~
+
 ## Return value
 
-array
+- `array`

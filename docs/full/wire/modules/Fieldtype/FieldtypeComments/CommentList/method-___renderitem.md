@@ -6,6 +6,16 @@ Render the comment (hookable version)
 
 Hookable since 3.0.138
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentList->___renderItem($comment);
+
+// usage with all arguments
+$string = $commentList->___renderItem(Comment $comment, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`
@@ -13,8 +23,8 @@ Hookable since 3.0.138
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [CommentArray::render()](../CommentArray/method-render.md)

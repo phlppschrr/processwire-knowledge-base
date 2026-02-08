@@ -6,6 +6,16 @@ Preload the given caches, so that they will be returned without query on the nex
 
 After a preloaded cache is returned from a get() call, it is removed from local storage.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireCache->preload($names);
+
+// usage with all arguments
+$result = $wireCache->preload(array $names, $expire = null);
+~~~~~
+
 ## Arguments
 
 - `$names` `array`

@@ -4,6 +4,16 @@ Source: `wire/core/FileCompiler.php`
 
 Construct
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fileCompiler->__construct($sourcePath);
+
+// usage with all arguments
+$result = $fileCompiler->__construct($sourcePath, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$sourcePath` `string` Path where source files are located

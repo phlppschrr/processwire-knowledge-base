@@ -9,6 +9,16 @@ the format: “category=locale;category=locale”, and so on.
 
 The first and second arguments may optionally be swapped and either can be omitted.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languages->getLocale();
+
+// usage with all arguments
+$string = $languages->getLocale($category = LC_ALL, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$category` (optional) `int|Language|string|null` Optionally specify a PHP LC constant (default=LC_ALL)
@@ -16,12 +26,12 @@ The first and second arguments may optionally be swapped and either can be omitt
 
 ## Return value
 
-string|bool Locale(s) string or boolean false if not supported by the system.
+- `string|bool` Locale(s) string or boolean false if not supported by the system.
 
-## Throws
+## Exceptions
 
-- WireException if given a $language argument that is invalid
+- `WireException` if given a $language argument that is invalid
 
-## See also
+## See Also
 
 - [Languages::setLocale()](method-setlocale.md)

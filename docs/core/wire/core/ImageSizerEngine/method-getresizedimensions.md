@@ -8,6 +8,13 @@ Note: Some code used in this method is adapted from code found in comments at ph
 
 Intended for use by the resize() method
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $imageSizerEngine->getResizeDimensions($targetWidth, $targetHeight);
+~~~~~
+
 ## Arguments
 
 - `$targetWidth` `int`
@@ -15,4 +22,4 @@ Intended for use by the resize() method
 
 ## Return value
 
-array
+- `array`

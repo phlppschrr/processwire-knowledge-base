@@ -6,6 +6,16 @@ Import an array of page data to create or update pages
 
 Provided array ($a) must originate from the pagesToArray() method format.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesExportImport->arrayToPages($a);
+
+// usage with all arguments
+$items = $pagesExportImport->arrayToPages(array $a, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Array of import data
@@ -13,8 +23,8 @@ Provided array ($a) must originate from the pagesToArray() method format.
 
 ## Return value
 
-PageArray|int
+- `PageArray|int`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

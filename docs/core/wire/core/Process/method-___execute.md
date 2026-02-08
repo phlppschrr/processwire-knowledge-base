@@ -13,6 +13,13 @@ This execute() method is called when no URL segments are present. You may have a
 number of execute() methods, i.e. `executeFoo()` would be called for the URL `./foo/`
 and `executeBarBaz()` would be called for the URL `./bar-baz/`.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $process->___execute();
+~~~~~
+
 ## Return value
 
-string|array
+- `string|array`

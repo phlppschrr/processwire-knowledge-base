@@ -7,6 +7,16 @@ Log a message for this class
 Message is saved to a log file in ProcessWire's logs path to a file with
 the same name as the class, converted to hyphenated lowercase.
 
+## Usage
+
+~~~~~
+// basic usage
+$wireLog = $fileValidatorModule->___log();
+
+// usage with all arguments
+$wireLog = $fileValidatorModule->___log($str = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` (optional) `string` Text to log, or omit to just return the name of the log
@@ -14,4 +24,4 @@ the same name as the class, converted to hyphenated lowercase.
 
 ## Return value
 
-WireLog|null
+- `WireLog|null`

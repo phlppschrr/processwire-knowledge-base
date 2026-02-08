@@ -4,9 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Get current comment depth
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $comment->depth();
+~~~~~
+
 ## Return value
 
-int
+- `int`
 
 ## Since
 

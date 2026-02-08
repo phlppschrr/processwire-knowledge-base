@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Find the position of the first occurrence of a case-insensitive substring in a string
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireTextTools->stripos($haystack, $needle);
+
+// usage with all arguments
+$bool = $wireTextTools->stripos($haystack, $needle, $offset = 0);
+~~~~~
+
 ## Arguments
 
 - `$haystack` `string`
@@ -12,8 +22,8 @@ Find the position of the first occurrence of a case-insensitive substring in a s
 
 ## Return value
 
-bool|false|int
+- `bool|false|int`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.stripos.php](https://www.php.net/manual/en/function.stripos.php)

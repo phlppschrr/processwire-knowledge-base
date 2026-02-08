@@ -4,6 +4,13 @@ Source: `wire/core/WireArray.php`
 
 Static method caller, primarily for support of WireArray::new() method
 
+## Usage
+
+~~~~~
+// basic usage
+$items = WireArray::__callStatic($name, $arguments);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,8 +18,8 @@ Static method caller, primarily for support of WireArray::new() method
 
 ## Return value
 
-WireArray
+- `WireArray`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

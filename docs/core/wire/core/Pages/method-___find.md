@@ -8,14 +8,27 @@ Given a Selector string, return the Page objects that match in a PageArray.
 - If you only need to find one page, use the `Pages::get()` or `Pages::findOne()` method instead (and note the difference).
 - If you need to find a huge quantity of pages (like thousands) without limit or pagination, look at the `Pages::findMany()` method.
 
+
+Non-visible pages are excluded unless an `include=x` mode is specified in the selector,
+where `x` is `hidden`, `unpublished` or `all`. If `all` is specified, then non-accessible
+pages (via access control) can also be included.
+
+## Example
+
 ~~~~~
 // Find all pages using template "building" with 25 or more floors
 $skyscrapers = $pages->find("template=building, floors>=25");
 ~~~~~
 
-Non-visible pages are excluded unless an `include=x` mode is specified in the selector,
-where `x` is `hidden`, `unpublished` or `all`. If `all` is specified, then non-accessible
-pages (via access control) can also be included.
+## Usage
+
+~~~~~
+// basic usage
+$items = $pages->___find($selector);
+
+// usage with all arguments
+$items = $pages->___find($selector, $options = array());
+~~~~~
 
 ## Arguments
 
@@ -24,9 +37,9 @@ pages (via access control) can also be included.
 
 ## Return value
 
-PageArray|array PageArray of that matched the given selector, or array of page IDs (if using findIDs option).
+- `PageArray|array` PageArray of that matched the given selector, or array of page IDs (if using findIDs option).
 
-## See also
+## See Also
 
 - [Pages::findOne()](method-findone.md)
 - [Pages::findMany()](method-findmany.md)

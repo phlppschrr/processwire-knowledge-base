@@ -7,6 +7,16 @@ Return number of descendants, optionally with conditions
 Use this over $page->numDescendants property when you want to specify a selector or when you want the result to
 include only visible descendants. See the options for the $selector argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageTraversal->numDescendants($page);
+
+// usage with all arguments
+$int = $pageTraversal->numDescendants(Page $page, $selector = null);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,4 +24,4 @@ include only visible descendants. See the options for the $selector argument.
 
 ## Return value
 
-int Number of descendants
+- `int` Number of descendants

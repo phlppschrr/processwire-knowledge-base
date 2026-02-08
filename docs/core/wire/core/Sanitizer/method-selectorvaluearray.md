@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Wrapper for selectorValueV2() when it receives an array
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->selectorValueArray($value);
+
+// usage with all arguments
+$string = $sanitizer->selectorValueArray(array $value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `array`
@@ -11,4 +21,4 @@ Wrapper for selectorValueV2() when it receives an array
 
 ## Return value
 
-string Always returns string unless you specify something different for 'emptyValue'
+- `string` Always returns string unless you specify something different for 'emptyValue'

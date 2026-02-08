@@ -10,6 +10,13 @@ CREATE TABLE statements in filename1 won't be executed if they also exist in fil
 
 This method assumes both files follow the SQL dump format created by this class.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabaseBackup->restoreMerge($filename1, $filename2, $options);
+~~~~~
+
 ## Arguments
 
 - `$filename1` `string` Original filename
@@ -18,8 +25,8 @@ This method assumes both files follow the SQL dump format created by this class.
 
 ## Return value
 
-bool True on success, false on fail.
+- `bool` True on success, false on fail.
 
-## Throws
+## Exceptions
 
-- \Exception|WireException if $options['haltOnErrors'] == true.
+- `\Exception|WireException` if $options['haltOnErrors'] == true.

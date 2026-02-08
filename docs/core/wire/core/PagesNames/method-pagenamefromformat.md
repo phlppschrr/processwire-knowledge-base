@@ -27,6 +27,16 @@ Options for $format argument:
 For formats above that accept a wireDate() format, see `WireDateTime::date()` method for format details. It accepts PHP
 date() format, PHP strftime() format, as well as some other predefined options.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesNames->pageNameFromFormat($page);
+
+// usage with all arguments
+$string = $pagesNames->pageNameFromFormat(Page $page, $format = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -35,4 +45,4 @@ date() format, PHP strftime() format, as well as some other predefined options.
 
 ## Return value
 
-string
+- `string`

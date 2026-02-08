@@ -4,6 +4,8 @@ Source: `wire/core/Pages.php`
 
 Save multiple named fields from given page
 
+## Example
+
 ~~~~~
 // you can specify field names as array…
 $a = $pages->saveFields($page, [ 'title', 'body', 'summary' ]);
@@ -15,6 +17,16 @@ $a = $pages->saveFields($page, 'title, body, summary');
 print_r($a); // outputs: array( 'title', 'body', 'summary' )
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pages->___saveFields($page, $fields);
+
+// usage with all arguments
+$array = $pages->___saveFields(Page $page, $fields, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to save
@@ -23,11 +35,11 @@ print_r($a); // outputs: array( 'title', 'body', 'summary' )
 
 ## Return value
 
-array Array of saved field names (may also include property names if they were modified)
+- `array` Array of saved field names (may also include property names if they were modified)
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

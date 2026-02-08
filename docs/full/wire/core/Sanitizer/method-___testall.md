@@ -6,10 +6,17 @@ Run value through all sanitizers, return array indexed by sanitizer name and res
 
 Used for debugging and testing purposes.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->___testAll($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed`
 
 ## Return value
 
-array
+- `array`

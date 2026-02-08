@@ -4,6 +4,16 @@ Source: `wire/core/PagesEditor.php`
 
 Update page modified/created/published time to now (or given time)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->touch($pages);
+
+// usage with all arguments
+$bool = $pagesEditor->touch($pages, $options = null, $type = 'modified');
+~~~~~
+
 ## Arguments
 
 - `$pages` `Page|PageArray|array` May be Page, PageArray or array of page IDs (integers)
@@ -12,8 +22,8 @@ Update page modified/created/published time to now (or given time)
 
 ## Return value
 
-bool True on success, false on fail
+- `bool` True on success, false on fail
 
-## Throws
+## Exceptions
 
-- WireException|\PDOException if given invalid format for $modified argument or failed database query
+- `WireException|\PDOException` if given invalid format for $modified argument or failed database query

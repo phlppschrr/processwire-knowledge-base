@@ -7,6 +7,8 @@ Does the user have the given permission?
 - Optionally accepts a `Page` or `Template` context for the permission.
 - This method accounts for the user's permissions across all their roles.
 
+## Example
+
 ~~~~~
 if($user->hasPermission('page-publish')) {
   // user has the page-publish permission in one of their roles
@@ -16,6 +18,16 @@ if($user->hasPermission('page-publish', $page)) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $user->hasPermission($name);
+
+// usage with all arguments
+$bool = $user->hasPermission($name, $context = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string|Permission` Permission name, object or id.
@@ -23,4 +35,4 @@ if($user->hasPermission('page-publish', $page)) {
 
 ## Return value
 
-bool|array
+- `bool|array`

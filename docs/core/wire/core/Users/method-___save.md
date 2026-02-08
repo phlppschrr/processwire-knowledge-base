@@ -12,11 +12,24 @@ Save a User
 If you want to hook this method, please hook the `Users::saveReady`, `Users::saved`, or any one of
 the `Pages::save*` hook methods instead, as this method will not capture users saved directly
 through `$pages->save($user)`.
+
+## Example
+
 ~~~~~
 // Example of hooking $pages->save() on User objects only
 $wire->addHookBefore('Pages::save(<User>)', function(HookEvent $e) {
   $user = $event->arguments(0);
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $users->___save($page);
+
+// usage with all arguments
+$bool = $users->___save(Page $page);
 ~~~~~
 
 ## Arguments
@@ -25,8 +38,8 @@ $wire->addHookBefore('Pages::save(<User>)', function(HookEvent $e) {
 
 ## Return value
 
-bool True on success
+- `bool` True on success
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

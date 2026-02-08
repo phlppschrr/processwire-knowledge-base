@@ -4,6 +4,16 @@ Source: `wire/core/MarkupQA.php`
 
 Find pages linking to another
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $markupQA->findLinks();
+
+// usage with all arguments
+$items = $markupQA->findLinks(?Page $page = null, $fieldNames = array(), $selector = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` (optional) `Page|null` Page to find links to, or omit to use page specified in constructor
@@ -13,4 +23,4 @@ Find pages linking to another
 
 ## Return value
 
-PageArray|array|int
+- `PageArray|array|int`

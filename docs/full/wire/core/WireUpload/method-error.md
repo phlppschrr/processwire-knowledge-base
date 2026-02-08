@@ -4,6 +4,16 @@ Source: `wire/core/WireUpload.php`
 
 Record an error message
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireUpload->error($text);
+
+// usage with all arguments
+$wire = $wireUpload->error($text, $flags = 0);
+~~~~~
+
 ## Arguments
 
 - `$text` `array|Wire|string`
@@ -11,4 +21,4 @@ Record an error message
 
 ## Return value
 
-Wire|WireUpload
+- `Wire|WireUpload`

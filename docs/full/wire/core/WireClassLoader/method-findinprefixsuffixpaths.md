@@ -4,13 +4,20 @@ Source: `wire/core/WireClassLoader.php`
 
 Check prefix and suffix definition paths for given class name and return file if found
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireClassLoader->findInPrefixSuffixPaths($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Class name without namespace
 
 ## Return value
 
-bool|string Returns filename on success or boolean false if not found
+- `bool|string` Returns filename on success or boolean false if not found
 
 ## Since
 

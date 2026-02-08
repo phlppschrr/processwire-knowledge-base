@@ -8,6 +8,8 @@ This method is the preferred way to check if a page has a particular status.
 The status may be specified as one of the `Page::status` constants or a string representing
 one of the constants, i.e. `hidden`, `unpublished`, `locked`, and so on.
 
+## Example
+
 ~~~~~
 // check if page has hidden status using status name
 if($page->hasStatus('hidden')) { ... }
@@ -21,15 +23,22 @@ if($page->isUnpublished()) { ... }
 if($page->isLocked()) { ... }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->hasStatus($status);
+~~~~~
+
 ## Arguments
 
 - `$status` `int|string` Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
 ## Return value
 
-bool Returns true if page has the given status, or false if it doesn't.
+- `bool` Returns true if page has the given status, or false if it doesn't.
 
-## See also
+## See Also
 
 - [Page::addStatus()](method-addstatus.md)
 - [Page::removeStatus()](method-removestatus.md)

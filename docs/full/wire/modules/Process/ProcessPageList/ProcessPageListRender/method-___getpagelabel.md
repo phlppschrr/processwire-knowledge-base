@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Return the Page's label text, whether that originates from the Page's name, headline, title, etc.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $processPageListRender->___getPageLabel($page);
+
+// usage with all arguments
+$string = $processPageListRender->___getPageLabel(Page $page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Return the Page's label text, whether that originates from the Page's name, head
 
 ## Return value
 
-string
+- `string`

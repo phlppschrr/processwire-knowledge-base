@@ -4,11 +4,18 @@ Source: `wire/core/Fieldtype.php`
 
 Called when module version changes
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldtype->___upgrade($fromVersion, $toVersion);
+~~~~~
+
 ## Arguments
 
 - $fromVersion
 - $toVersion
 
-## Throws
+## Exceptions
 
-- WireException if upgrade fails
+- `WireException` if upgrade fails

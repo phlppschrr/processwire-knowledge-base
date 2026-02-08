@@ -9,6 +9,13 @@ Merge attributes from one HTML tag to another
 - Class attribute is combined with all classes from $htmlTag and $mergeTag.
 - The tag name from $htmlTag is used, and the one from $mergeTag is ignored.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->mergeTags($htmlTag, $mergeTag);
+~~~~~
+
 ## Arguments
 
 - `$htmlTag` `string` HTML tag string, optionally containing attributes
@@ -16,4 +23,4 @@ Merge attributes from one HTML tag to another
 
 ## Return value
 
-string Updated HTML tag string with merged attributes
+- `string` Updated HTML tag string with merged attributes

@@ -6,6 +6,8 @@ Insert one Inputfield before one that’s already there.
 
 Note: string or array values for either argument require 3.0.196+.
 
+## Example
+
 ~~~~~
 // example 1: Get existing Inputfields and insert first_name before last_name
 $firstName = $form->getByName('first_name');
@@ -19,6 +21,13 @@ $form->insertBefore('first_name', 'last_name');
 $form->insertBefore([ 'type' => 'text', 'name' => 'first_name' ], 'last_name');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldWrapper->insertBefore($item, $existingItem);
+~~~~~
+
 ## Arguments
 
 - `$item` `Inputfield|array|string` Item to insert
@@ -26,4 +35,4 @@ $form->insertBefore([ 'type' => 'text', 'name' => 'first_name' ], 'last_name');
 
 ## Return value
 
-$this
+- `$this`

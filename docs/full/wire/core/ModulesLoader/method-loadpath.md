@@ -4,6 +4,13 @@ Source: `wire/core/ModulesLoader.php`
 
 Given a disk path to the modules, determine all installed modules and keep track of all uninstalled (installable) modules.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $modulesLoader->loadPath($path);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`

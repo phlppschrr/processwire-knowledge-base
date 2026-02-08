@@ -8,6 +8,8 @@ Note that the restored page is saved to the database, replacing the current live
 So consider whether you should backup the live version (by using addPageVersion) before
 restoring a version to it.
 
+## Example
+
 ~~~~~
 // restore version 2 to live page
 $page = $pages->get(1234);
@@ -18,6 +20,16 @@ $pageV2 = $pagesVersions->getPageVersion($page, 2);
 $pagesVersions->restore($pageV2);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesVersions->restorePageVersion($page);
+
+// usage with all arguments
+$page = $pagesVersions->restorePageVersion(Page $page, $version = 0, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to restore version to or a page that was loaded as a version.
@@ -26,8 +38,8 @@ $pagesVersions->restore($pageV2);
 
 ## Return value
 
-Page|bool Returns restored version page on success or false on fail
+- `Page|bool` Returns restored version page on success or false on fail
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -11,10 +11,17 @@ Unlike PHP’s shuffle() function, this method:
 - Returns a copy of the value rather than modifying the given value directly.
 - Is cryptographically secure if PHP7 or mcrypt available.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireRandom->shuffle($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array`
 
 ## Return value
 
-string|array
+- `string|array`

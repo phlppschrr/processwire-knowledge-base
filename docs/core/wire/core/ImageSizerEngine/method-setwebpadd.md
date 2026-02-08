@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizerEngine.php`
 
 Set flag to also create a webp file or not
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngine->setWebpAdd($webpAdd);
+
+// usage with all arguments
+$result = $imageSizerEngine->setWebpAdd($webpAdd, $webpOnly = null);
+~~~~~
+
 ## Arguments
 
 - `$webpAdd` `bool`
@@ -11,4 +21,4 @@ Set flag to also create a webp file or not
 
 ## Return value
 
-self
+- `self`

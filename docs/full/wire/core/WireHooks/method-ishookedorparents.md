@@ -6,6 +6,16 @@ Similar to isHooked() method but also checks parent classes for the hooked metho
 
 This method is designed for fast determinations of whether something is hooked
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHooks->isHookedOrParents($class, $method);
+
+// usage with all arguments
+$bool = $wireHooks->isHookedOrParents($class, $method, $type = 'either');
+~~~~~
+
 ## Arguments
 
 - `$class` `string|Wire`
@@ -14,4 +24,4 @@ This method is designed for fast determinations of whether something is hooked
 
 ## Return value
 
-bool
+- `bool`

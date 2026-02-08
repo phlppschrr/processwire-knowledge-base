@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Executes an SQL statement, returning a result set as a PDOStatement object
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabasePDO->query($statement);
+
+// usage with all arguments
+$result = $wireDatabasePDO->query($statement, $note = '');
+~~~~~
+
 ## Arguments
 
 - `$statement` `string`
@@ -11,7 +21,7 @@ Executes an SQL statement, returning a result set as a PDOStatement object
 
 ## Return value
 
-\PDOStatement
+- `\PDOStatement`
 
 ## Details
 

@@ -13,6 +13,8 @@ This method can accept a simple property name, and also much more:
 - This method can also retrieve sub-properties of object properties, i.e. `parent.title`.
 - To get a guaranteed iterable value, append `[]` to the key, i.e. `$page->get('name[]')`. 3.0.205+
 
+## Example
+
 ~~~~~
 // retrieve the title using get…
 $title = $page->get('title');
@@ -53,14 +55,21 @@ $titles = $page->get('categories[title%=design].title'); // array of strings
 $title = $page->get('categories[title%=design].title[0]'); // string or null
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of property, format string or selector, per the details above.
 
 ## Return value
 
-mixed Value of found property, or NULL if not found.
+- `mixed` Value of found property, or NULL if not found.
 
-## See also
+## See Also
 
 - __get()

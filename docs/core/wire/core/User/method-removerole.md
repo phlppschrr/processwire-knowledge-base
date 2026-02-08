@@ -6,10 +6,19 @@ Remove Role from this user
 
 This is the same as `$user->roles->remove($role)` except this one will accept ID or name.
 
+## Example
+
 ~~~~~
 // Remove the "editor" role from the $user
 $user->removeRole('editor');
 $user->save();
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $user->removeRole($role);
 ~~~~~
 
 ## Arguments
@@ -18,4 +27,4 @@ $user->save();
 
 ## Return value
 
-bool false if role not recognized, true otherwise
+- `bool` false if role not recognized, true otherwise

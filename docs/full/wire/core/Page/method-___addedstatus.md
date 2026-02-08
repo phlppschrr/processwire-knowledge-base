@@ -4,6 +4,8 @@ Source: `wire/core/Page.php`
 
 Called when a new status flag has been added (and saved)
 
+## Example
+
 ~~~~~
 $wire->addHook('Page::addedStatus', function($e) {
   $page = $e->object;
@@ -11,6 +13,13 @@ $wire->addHook('Page::addedStatus', function($e) {
   $e->message("Added status $name to page $page");
   if($name === 'unpublished') $e->message("Unpublished page $page");
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___addedStatus($name, $value);
 ~~~~~
 
 ## Arguments

@@ -11,6 +11,16 @@ defines it's own ___deletePageField method (separate from the one above) then it
 This was added so that mass deletions can happen without loading every page, which may not be feasible
 when dealing with thousands of pages.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldtype->___deleteTemplateField($template, $field);
+
+// usage with all arguments
+$bool = $fieldtype->___deleteTemplateField(Template $template, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$template` `Template`
@@ -18,4 +28,4 @@ when dealing with thousands of pages.
 
 ## Return value
 
-bool
+- `bool`

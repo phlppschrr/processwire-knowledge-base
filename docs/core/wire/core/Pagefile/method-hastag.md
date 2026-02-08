@@ -4,6 +4,12 @@ Source: `wire/core/Pagefile.php`
 
 Does this file have the given tag(s)?
 
+
+3.0.17 Added support for AND mode, where multiple tags can be specified and all must be present to return true.
+3.0.17 OR mode now returns found tag rather than boolean true.
+
+## Example
+
 ~~~~~
 $file = $page->files->first();
 
@@ -20,8 +26,12 @@ if($file->hasTag("foo,baz")) {
 }
 ~~~~~
 
-3.0.17 Added support for AND mode, where multiple tags can be specified and all must be present to return true.
-3.0.17 OR mode now returns found tag rather than boolean true.
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagefile->hasTag($tag);
+~~~~~
 
 ## Arguments
 
@@ -29,9 +39,9 @@ if($file->hasTag("foo,baz")) {
 
 ## Return value
 
-bool|string True if it has the given tag(s), false if not. - If multiple tags were specified separated by a "|", then if at least one was present, this method returns the found tag. - If multiple tags were specified separated by a space or comma, and all tags are present, it returns true. (since 3.0.17)
+- `bool|string` True if it has the given tag(s), false if not. - If multiple tags were specified separated by a "|", then if at least one was present, this method returns the found tag. - If multiple tags were specified separated by a space or comma, and all tags are present, it returns true. (since 3.0.17)
 
-## See also
+## See Also
 
 - [Pagefile::tags()](method-tags.md)
 - [Pagefile::addTag()](method-addtag.md)

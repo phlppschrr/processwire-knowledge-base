@@ -6,6 +6,16 @@ Get or inject a ProcessWire API variable or fuel a new object instance
 
 See Wire::wire() for explanation of all options.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pageAccess->wire();
+
+// usage with all arguments
+$result = $pageAccess->wire($name = '', $value = null, $lock = false);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|WireFuelable` Name of API variable to retrieve, set, or omit to retrieve entire Fuel object.
@@ -14,8 +24,8 @@ See Wire::wire() for explanation of all options.
 
 ## Return value
 
-mixed|Fuel
+- `mixed|Fuel`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

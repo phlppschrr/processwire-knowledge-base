@@ -10,10 +10,17 @@ Returns blank string if given string is not a common phrase.
 Returns given $str if given string is common, but not translated here.
 Returns translated $str if common and translated.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageTranslator->commonTranslation($str);
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
 
 ## Return value
 
-string
+- `string`

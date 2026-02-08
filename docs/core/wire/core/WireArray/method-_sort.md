@@ -10,6 +10,16 @@ $properties can be given as a sortByField string, i.e. "name, datestamp" OR as a
 You may also specify the properties as "property.subproperty", where property resolves to a Wire derived object,
 and subproperty resolves to a property within that object.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->_sort($properties);
+
+// usage with all arguments
+$result = $wireArray->_sort($properties, $numNeeded = null);
+~~~~~
+
 ## Arguments
 
 - `$properties` `string|array` Field names to sort by (comma separated string or an array). Prepend or append a minus "-" to reverse the sort (per field).
@@ -17,4 +27,4 @@ and subproperty resolves to a property within that object.
 
 ## Return value
 
-$this reference to current instance.
+- `$this` reference to current instance.

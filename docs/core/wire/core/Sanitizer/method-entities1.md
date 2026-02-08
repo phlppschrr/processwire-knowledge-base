@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Entity encode a string and don’t double encode it if already encoded
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->entities1($str);
+
+// usage with all arguments
+$string = $sanitizer->entities1($str, $flags = ENT_QUOTES, $encoding = 'UTF-8');
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to entity encode
@@ -12,9 +22,9 @@ Entity encode a string and don’t double encode it if already encoded
 
 ## Return value
 
-string Entity encoded string
+- `string` Entity encoded string
 
-## See also
+## See Also
 
 - [Sanitizer::entities()](method-entities.md)
 - [Sanitizer::unentities()](method-unentities.md)

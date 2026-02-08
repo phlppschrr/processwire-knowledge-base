@@ -4,6 +4,16 @@ Source: `wire/core/PagesEditor.php`
 
 Clone an entire page (including fields, file assets, and optionally children) and return it.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesEditor->_clone($page);
+
+// usage with all arguments
+$page = $pagesEditor->_clone(Page $page, ?Page $parent = null, $recursive = true, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that you want to clone
@@ -13,8 +23,8 @@ Clone an entire page (including fields, file assets, and optionally children) an
 
 ## Return value
 
-Page|NullPage the newly cloned page or a NullPage() with id=0 if unsuccessful.
+- `Page|NullPage` the newly cloned page or a NullPage() with id=0 if unsuccessful.
 
-## Throws
+## Exceptions
 
-- WireException|\Exception on fatal error
+- `WireException|\Exception` on fatal error

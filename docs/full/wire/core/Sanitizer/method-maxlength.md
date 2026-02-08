@@ -10,6 +10,16 @@ Limit length of given value to that specified
 - For floats, maxLength is assumed to be max allowed digits (including decimal point).
 - Returns the same type it is given: string, array, int or float
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->maxLength($value);
+
+// usage with all arguments
+$array = $sanitizer->maxLength($value, $maxLength = 128, $maxBytes = null);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int|array|float`
@@ -18,9 +28,9 @@ Limit length of given value to that specified
 
 ## Return value
 
-array|float|int|string
+- `array|float|int|string`
 
-## See also
+## See Also
 
 - [Sanitizer::minLength()](method-minlength.md)
 

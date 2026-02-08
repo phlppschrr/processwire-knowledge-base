@@ -7,6 +7,16 @@ Queue a rename of a Pagefile
 This only queues a rename. Rename actually occurs when page is saved.
 Note this differs from the behavior of `Pagefile::rename()`.
 
+## Usage
+
+~~~~~
+// basic usage
+$pagefiles = $pagefiles->rename($item, $name);
+
+// usage with all arguments
+$pagefiles = $pagefiles->rename(Pagefile $item, $name);
+~~~~~
+
 ## Arguments
 
 - `$item` `Pagefile`
@@ -14,8 +24,8 @@ Note this differs from the behavior of `Pagefile::rename()`.
 
 ## Return value
 
-Pagefiles
+- `Pagefiles`
 
-## See also
+## See Also
 
 - [Pagefile::rename()](../Pagefile/method-rename.md)

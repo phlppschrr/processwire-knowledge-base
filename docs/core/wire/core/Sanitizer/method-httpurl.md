@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 URL with http or https scheme required
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->httpUrl($value);
+
+// usage with all arguments
+$string = $sanitizer->httpUrl($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` URL to validate
@@ -11,7 +21,7 @@ URL with http or https scheme required
 
 ## Return value
 
-string Returns valid URL or blank string if it cannot be made valid.
+- `string` Returns valid URL or blank string if it cannot be made valid.
 
 ## Since
 

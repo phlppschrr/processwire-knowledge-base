@@ -6,6 +6,13 @@ Similar to isHooked() method but also checks parent classes for the hooked prope
 
 This method is designed for fast determinations of whether something is hooked
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHooks->isPropertyHooked($class, $property);
+~~~~~
+
 ## Arguments
 
 - `$class` `string|Wire`
@@ -13,4 +20,4 @@ This method is designed for fast determinations of whether something is hooked
 
 ## Return value
 
-bool
+- `bool`

@@ -4,6 +4,16 @@ Source: `wire/core/Interfaces.php`
 
 Get Pageimages
 
+## Usage
+
+~~~~~
+// basic usage
+$pageimages = $fieldtypeHasPageimages->getPageimages($page, $field);
+
+// usage with all arguments
+$pageimages = $fieldtypeHasPageimages->getPageimages(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Get Pageimages
 
 ## Return value
 
-Pageimages|Pageimage[]
+- `Pageimages|Pageimage[]`

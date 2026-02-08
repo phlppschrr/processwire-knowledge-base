@@ -4,6 +4,13 @@ Source: `wire/core/Punycode.php`
 
 Bias adaptation
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $punycode->adapt($delta, $numPoints, $firstTime);
+~~~~~
+
 ## Arguments
 
 - `$delta` `integer`
@@ -12,4 +19,4 @@ Bias adaptation
 
 ## Return value
 
-integer
+- `integer`

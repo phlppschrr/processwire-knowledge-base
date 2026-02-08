@@ -4,10 +4,17 @@ Source: `wire/core/InputfieldsArray.php`
 
 Extends the find capability of WireArray to descend into the Inputfield children
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $inputfieldsArray->find($selector);
+~~~~~
+
 ## Arguments
 
 - `$selector` `string`
 
 ## Return value
 
-WireArray|InputfieldsArray
+- `WireArray|InputfieldsArray`

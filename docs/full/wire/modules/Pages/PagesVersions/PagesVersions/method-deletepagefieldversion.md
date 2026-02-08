@@ -7,6 +7,16 @@ Delete a page field version
 This should not be called independently of deletePageVersion() as this
 method does not delete any files connected to the version.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesVersions->deletePageFieldVersion($page, $field, $version);
+
+// usage with all arguments
+$bool = $pagesVersions->deletePageFieldVersion(Page $page, Field $field, $version);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -15,4 +25,4 @@ method does not delete any files connected to the version.
 
 ## Return value
 
-bool
+- `bool`

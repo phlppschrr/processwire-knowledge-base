@@ -13,6 +13,7 @@ other things (defined by descending classes) that you may not want.
 - To set a value, specify both the $key and $value arguments.
 - If you omit a $key and $value, this method will return the entire data array.
 
+## Example
 
 ~~~~~
 // Set a property
@@ -22,6 +23,16 @@ $item->data('some_property', 'some value');
 $value = $item->data('some_property');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireData->data();
+
+// usage with all arguments
+$array = $wireData->data($key = null, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|array` Property you want to get or set, or associative array of properties you want to set.
@@ -29,4 +40,4 @@ $value = $item->data('some_property');
 
 ## Return value
 
-array|WireData|null Returns one of the following: - `mixed` - Actual value if getting a previously set value. - `null` - If you are attempting to get a value that has not been set. - `$this` - If you are setting a value.
+- `array|WireData|null` Returns one of the following: - `mixed` - Actual value if getting a previously set value. - `null` - If you are attempting to get a value that has not been set. - `$this` - If you are setting a value.

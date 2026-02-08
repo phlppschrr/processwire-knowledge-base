@@ -4,10 +4,17 @@ Source: `wire/core/WireDataDB.php`
 
 Uninstall the table
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDataDB->uninstall();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

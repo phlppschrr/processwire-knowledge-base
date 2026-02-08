@@ -4,6 +4,16 @@ Source: `wire/core/MarkupFieldtype.php`
 
 Convert any value to a string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $markupFieldtype->valueToString($value);
+
+// usage with all arguments
+$string = $markupFieldtype->valueToString($value, $encode = true);
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed`
@@ -11,4 +21,4 @@ Convert any value to a string
 
 ## Return value
 
-string
+- `string`

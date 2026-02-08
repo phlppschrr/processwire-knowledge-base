@@ -21,12 +21,24 @@ If you are wondering whether you need to use this method for something, chances 
 This method is mostly applicable for internal core use, as ProcessWire manages Page sort values on its own
 internally for the most part.
 
+## Example
+
 ~~~~~
 // set $page to have sort=5, moving any 5+ sort pages ahead
 $pages->sort($page, 5);
 
 // re-build sort values for children of $page, removing duplicates and gaps
 $pages->sort($page, true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $pages->___sort($page);
+
+// usage with all arguments
+$int = $pages->___sort(Page $page, $value = false);
 ~~~~~
 
 ## Arguments
@@ -36,8 +48,8 @@ $pages->sort($page, true);
 
 ## Return value
 
-int Number of pages that had sort values adjusted
+- `int` Number of pages that had sort values adjusted
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

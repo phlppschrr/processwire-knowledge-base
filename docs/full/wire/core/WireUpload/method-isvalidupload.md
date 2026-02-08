@@ -6,6 +6,13 @@ Is the given upload information valid?
 
 Also populates $this->errors
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireUpload->isValidUpload($name, $size, $error);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Filename
@@ -14,4 +21,4 @@ Also populates $this->errors
 
 ## Return value
 
-bool
+- `bool`

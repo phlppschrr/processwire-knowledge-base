@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Sanitize comparison operator
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->escapeOperator($operator);
+
+// usage with all arguments
+$string = $wireDatabasePDO->escapeOperator($operator, $operatorType = self::operatorTypeComparison, $default = '=');
+~~~~~
+
 ## Arguments
 
 - `$operator` `string`
@@ -12,4 +22,4 @@ Sanitize comparison operator
 
 ## Return value
 
-string
+- `string`

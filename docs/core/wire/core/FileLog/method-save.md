@@ -4,6 +4,16 @@ Source: `wire/core/FileLog.php`
 
 Save the given log entry string
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fileLog->save($str);
+
+// usage with all arguments
+$bool = $fileLog->save($str, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
@@ -11,4 +21,4 @@ Save the given log entry string
 
 ## Return value
 
-bool Success state: true if log written, false if not.
+- `bool` Success state: true if log written, false if not.

@@ -4,11 +4,18 @@ Source: `wire/core/Page.php`
 
 Returns the URL for files, creating it if it does not yet exist
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $page->filesUrl();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - filesPath()
 - filesManager()

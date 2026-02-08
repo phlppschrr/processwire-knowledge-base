@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Get or set presets
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->presets($name);
+
+// usage with all arguments
+$string = $commentForm->presets($name, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,7 +21,7 @@ Get or set presets
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

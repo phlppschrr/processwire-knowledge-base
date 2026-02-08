@@ -12,10 +12,17 @@ Performs a deletion by finding all templates using this fieldgroup, then finding
 calling upon the Fieldtype to delete them one at a time. This is a potentially expensive/time consuming method, and
 may need further consideration.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldgroup->remove($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `Field|string` Field object or field name, or id.
 
 ## Return value
 
-bool True on success, false on failure.
+- `bool` True on success, false on failure.

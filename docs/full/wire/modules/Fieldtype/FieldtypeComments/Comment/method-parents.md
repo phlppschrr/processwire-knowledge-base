@@ -6,9 +6,16 @@ Get CommentArray of all parent comments for this one
 
 Order is closest parent to furthest parent
 
+## Usage
+
+~~~~~
+// basic usage
+$commentArray = $comment->parents();
+~~~~~
+
 ## Return value
 
-CommentArray
+- `CommentArray`
 
 ## Since
 

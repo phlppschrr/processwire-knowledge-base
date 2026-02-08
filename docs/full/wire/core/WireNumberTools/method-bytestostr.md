@@ -4,6 +4,16 @@ Source: `wire/core/WireNumberTools.php`
 
 Given a quantity of bytes (int), return readable string that refers to quantity in bytes, kB, MB, GB and TB
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireNumberTools->bytesToStr($bytes);
+
+// usage with all arguments
+$string = $wireNumberTools->bytesToStr($bytes, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$bytes` `int|string` Quantity in bytes (int) or any string accepted by strToBytes method.
@@ -11,7 +21,7 @@ Given a quantity of bytes (int), return readable string that refers to quantity 
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

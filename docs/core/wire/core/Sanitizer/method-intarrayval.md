@@ -10,6 +10,16 @@ This is the same as the `intArray()` method except for the following:
  - The `strict` option default is true, meaning non-integer numbers or those outside allowed range
    are removed rather than converted.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->intArrayVal($value);
+
+// usage with all arguments
+$array = $sanitizer->intArrayVal($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first value in array.
@@ -17,7 +27,7 @@ This is the same as the `intArray()` method except for the following:
 
 ## Return value
 
-array Array of integers
+- `array` Array of integers
 
 ## Since
 

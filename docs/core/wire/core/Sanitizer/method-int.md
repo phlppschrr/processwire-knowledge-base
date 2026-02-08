@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitized an integer (unsigned, unless you specify a negative minimum value)
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->int($value);
+
+// usage with all arguments
+$int = $sanitizer->int($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed` Value you want to sanitize as an integer
@@ -11,4 +21,4 @@ Sanitized an integer (unsigned, unless you specify a negative minimum value)
 
 ## Return value
 
-int Returns integer, or specified blankValue (which doesn't necessarily have to be an integer)
+- `int` Returns integer, or specified blankValue (which doesn't necessarily have to be an integer)

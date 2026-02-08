@@ -4,13 +4,20 @@ Source: `wire/core/FileLog.php`
 
 Prune to number of bytes
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fileLog->prune($bytes);
+~~~~~
+
 ## Arguments
 
 - $bytes
 
 ## Return value
 
-bool|int
+- `bool|int`
 
 ## Deprecated
 

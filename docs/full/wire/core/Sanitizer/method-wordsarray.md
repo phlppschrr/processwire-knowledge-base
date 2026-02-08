@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Return array of all words in given value (excluding punctuation and other non-word characters)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->wordsArray($value);
+
+// usage with all arguments
+$array = $sanitizer->wordsArray($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array` String containing words
@@ -11,7 +21,7 @@ Return array of all words in given value (excluding punctuation and other non-wo
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

@@ -14,10 +14,21 @@ cases like that you should compare the return value with NULL (or whatever your 
 things like 0 or false (if that is a valid value) compare the return value with null before
 assuming a value is not valid.
 
+## Example
 
 ~~~~~
 $sanitizer->validate('abc', 'alpha'); // valid: returns 'abc'
 $sanitizer->validate('abc123', 'alpha'); invalid: returns null
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$sanitizer->validate($value);
+
+// usage with all arguments
+$sanitizer->validate($value, $method = 'text', $fallback = null);
 ~~~~~
 
 ## Arguments
@@ -28,7 +39,7 @@ $sanitizer->validate('abc123', 'alpha'); invalid: returns null
 
 ## Return value
 
-null|mixed Returns sanitized value if it validates or null (or given fallback) if value does not validate
+- `null|mixed` Returns sanitized value if it validates or null (or given fallback) if value does not validate
 
 ## Since
 

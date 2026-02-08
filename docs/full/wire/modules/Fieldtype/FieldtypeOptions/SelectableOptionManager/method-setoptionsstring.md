@@ -14,6 +14,16 @@ For new options, specify just the option title
 (or value|title) on its own line. Options should
 be in the desired sort order.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $selectableOptionManager->setOptionsString($field, $value);
+
+// usage with all arguments
+$array = $selectableOptionManager->setOptionsString(Field $field, $value, $allowDelete = true);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -22,4 +32,4 @@ be in the desired sort order.
 
 ## Return value
 
-array containing ('added' => cnt, 'updated' => cnt, 'deleted' => cnt, 'marked' => cnt) note: 'marked' means marked for deletion
+- `array` containing ('added' => cnt, 'updated' => cnt, 'deleted' => cnt, 'marked' => cnt) note: 'marked' means marked for deletion

@@ -4,6 +4,13 @@ Source: `wire/core/Page.php`
 
 Set either the createdUser or the modifiedUser
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->setUser($user, $userType);
+~~~~~
+
 ## Arguments
 
 - `$user` `User|int|string` User object or integer/string representation of User
@@ -11,8 +18,8 @@ Set either the createdUser or the modifiedUser
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

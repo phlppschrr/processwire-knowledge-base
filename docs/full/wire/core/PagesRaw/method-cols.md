@@ -7,6 +7,16 @@ Get native pages table columns (plural) for given page ID
 This can only be used for native 'pages' table columns,
 i.e. id, name, templates_id, status, parent_id, etc.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesRaw->cols($pageId);
+
+// usage with all arguments
+$array = $pagesRaw->cols($pageId, $cols = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$pageId` `int|array` Page ID or array of page IDs
@@ -15,11 +25,11 @@ i.e. id, name, templates_id, status, parent_id, etc.
 
 ## Return value
 
-array Returns associative array on success or empty array if not found If $pageId argument was an array then it returns a page ID indexed array of associative arrays, one for each page.
+- `array` Returns associative array on success or empty array if not found If $pageId argument was an array then it returns a page ID indexed array of associative arrays, one for each page.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

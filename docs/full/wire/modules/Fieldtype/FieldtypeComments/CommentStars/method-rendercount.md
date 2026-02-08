@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentStars.php`
 
 Render a count of ratings
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentStars->renderCount($count);
+
+// usage with all arguments
+$string = $commentStars->renderCount($count, $stars = 0.0, $schema = '');
+~~~~~
+
 ## Arguments
 
 - `$count` `int`
@@ -12,4 +22,4 @@ Render a count of ratings
 
 ## Return value
 
-string
+- `string`

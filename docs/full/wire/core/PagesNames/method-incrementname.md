@@ -4,6 +4,16 @@ Source: `wire/core/PagesNames.php`
 
 Increment the suffix of a page name, or add one if not present
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesNames->incrementName($name);
+
+// usage with all arguments
+$string = $pagesNames->incrementName($name, $num = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,4 +21,4 @@ Increment the suffix of a page name, or add one if not present
 
 ## Return value
 
-string
+- `string`

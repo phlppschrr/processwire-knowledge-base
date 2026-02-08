@@ -4,6 +4,16 @@ Source: `wire/core/WireUpload.php`
 
 Save the uploaded file
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireUpload->saveUpload($tmp_name, $filename);
+
+// usage with all arguments
+$array = $wireUpload->saveUpload($tmp_name, $filename, $ajax = false);
+~~~~~
+
 ## Arguments
 
 - `$tmp_name` `string` Temporary filename (full path and filename)
@@ -12,4 +22,4 @@ Save the uploaded file
 
 ## Return value
 
-array|bool|string Boolean false on fail, array of multiple filenames, or string of filename if maxFiles=1
+- `array|bool|string` Boolean false on fail, array of multiple filenames, or string of filename if maxFiles=1

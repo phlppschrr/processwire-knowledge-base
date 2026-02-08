@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Insert the region(s) that match the given $selector after the given $content markup
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->after($selector, $content, $markup);
+
+// usage with all arguments
+$string = $wireMarkupRegions->after($selector, $content, $markup, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string` See the update() method for details
@@ -13,4 +23,4 @@ Insert the region(s) that match the given $selector after the given $content mar
 
 ## Return value
 
-string
+- `string`

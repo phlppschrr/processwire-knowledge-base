@@ -8,6 +8,13 @@ If no limit set, then return number of comments currently here.
 
 Used for pagination.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $commentArray->getLimit();
+~~~~~
+
 ## Return value
 
-int
+- `int`

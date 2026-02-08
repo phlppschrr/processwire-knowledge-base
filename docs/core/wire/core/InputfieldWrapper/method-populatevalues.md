@@ -11,10 +11,17 @@ the associated Inputfield.
 If given an array, it should be an associative with the field 'name' as the keys and
 the field 'value' as the array value, i.e. `['field_name' => 'field_value']`.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfieldWrapper->populateValues($data);
+~~~~~
+
 ## Arguments
 
 - `$data` `WireData|Wire|ConfigurableModule|array`
 
 ## Return value
 
-array Returns array of field names that were populated
+- `array` Returns array of field names that were populated

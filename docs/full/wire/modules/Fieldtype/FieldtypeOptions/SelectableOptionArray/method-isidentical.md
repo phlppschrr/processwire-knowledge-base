@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Is the given WireArray identical to this one?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selectableOptionArray->isIdentical($items);
+
+// usage with all arguments
+$bool = $selectableOptionArray->isIdentical(WireArray $items, $strict = true);
+~~~~~
+
 ## Arguments
 
 - `$items` `WireArray`
@@ -11,4 +21,4 @@ Is the given WireArray identical to this one?
 
 ## Return value
 
-bool
+- `bool`

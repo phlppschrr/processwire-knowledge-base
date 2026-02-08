@@ -22,6 +22,16 @@ image between it and the original:
 - `suffixAll` (array): Contains all suffixes including among parent variations
 - `parent` (array): Variation info array of direct parent variation file
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageimage->___isVariation($basename);
+
+// usage with all arguments
+$bool = $pageimage->___isVariation($basename, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$basename` `string` Filename to check (basename, which excludes path)
@@ -29,4 +39,4 @@ image between it and the original:
 
 ## Return value
 
-bool|string|array Returns false if not a variation, or array (verbose) or string (non-verbose) of info if it is.
+- `bool|string|array` Returns false if not a variation, or array (verbose) or string (non-verbose) of info if it is.

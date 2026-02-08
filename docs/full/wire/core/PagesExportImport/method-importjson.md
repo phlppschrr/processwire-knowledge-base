@@ -6,6 +6,16 @@ Import a PageArray from a JSON string
 
 Given JSON string must be one previously exported by the `exportJSON()` method in this class.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesExportImport->importJSON($json);
+
+// usage with all arguments
+$items = $pagesExportImport->importJSON($json, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$json` `string` JSON string of exported data to import
@@ -13,4 +23,4 @@ Given JSON string must be one previously exported by the `exportJSON()` method i
 
 ## Return value
 
-PageArray|bool
+- `PageArray|bool`

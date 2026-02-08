@@ -4,10 +4,19 @@ Source: `wire/core/Config.php`
 
 Return true if current PHP version is equal to or newer than the given version
 
+## Example
+
 ~~~~~
 if($config->phpVersion('7.0.0')) {
   // PHP version is 7.x
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $config->phpVersion($minVersion);
 ~~~~~
 
 ## Arguments
@@ -16,7 +25,7 @@ if($config->phpVersion('7.0.0')) {
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

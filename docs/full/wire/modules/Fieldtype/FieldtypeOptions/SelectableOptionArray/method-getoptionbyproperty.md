@@ -6,6 +6,13 @@ Alias of getByProperty
 
 Was renamed to getByProperty() but old method name kept in case this class is extended anywhere
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selectableOptionArray->getOptionByProperty($property, $value);
+~~~~~
+
 ## Arguments
 
 - `$property` `string`
@@ -13,6 +20,6 @@ Was renamed to getByProperty() but old method name kept in case this class is ex
 
 ## Return value
 
-bool|SelectableOption
+- `bool|SelectableOption`
 
 ## Deprecated

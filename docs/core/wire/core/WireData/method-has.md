@@ -4,10 +4,19 @@ Source: `wire/core/WireData.php`
 
 Does this object have the given property?
 
+## Example
+
 ~~~~~
 if($item->has('some_property')) {
   // the item has some_property
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireData->has($key);
 ~~~~~
 
 ## Arguments
@@ -16,4 +25,4 @@ if($item->has('some_property')) {
 
 ## Return value
 
-bool True if it has the property, false if not.
+- `bool` True if it has the property, false if not.

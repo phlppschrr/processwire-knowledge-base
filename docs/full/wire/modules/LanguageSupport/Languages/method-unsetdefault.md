@@ -4,10 +4,17 @@ Source: `wire/modules/LanguageSupport/Languages.php`
 
 Restores whatever previous language a user had prior to a setDefault() call
 
+## Usage
+
+~~~~~
+// basic usage
+$languages->unsetDefault();
+~~~~~
+
 ## Return value
 
-void
+- `void`
 
-## See also
+## See Also
 
 - [Languages::setDefault()](method-setdefault.md)

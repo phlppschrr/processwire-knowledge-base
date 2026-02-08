@@ -6,6 +6,16 @@ Purify HTML markup using HTML Purifier
 
 See: [htmlpurifier.org](http://htmlpurifier.org)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->purify($str);
+
+// usage with all arguments
+$string = $sanitizer->purify($str, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to purify
@@ -13,4 +23,4 @@ See: [htmlpurifier.org](http://htmlpurifier.org)
 
 ## Return value
 
-string Purified markup string.
+- `string` Purified markup string.

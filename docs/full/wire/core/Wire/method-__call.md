@@ -14,6 +14,13 @@ Hooks can also be added for methods that don't actually exist in the class, allo
 
 See the Wire::runHooks() method for the full implementation of hook calls.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->__call($method, $arguments);
+~~~~~
+
 ## Arguments
 
 - `$method` `string`
@@ -21,8 +28,8 @@ See the Wire::runHooks() method for the full implementation of hook calls.
 
 ## Return value
 
-mixed
+- `mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

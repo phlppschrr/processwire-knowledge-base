@@ -4,6 +4,16 @@ Source: `wire/core/WireDataDB.php`
 
 Save a value
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDataDB->save($name, $value);
+
+// usage with all arguments
+$bool = $wireDataDB->save($name, $value, $recursive = false);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -12,8 +22,8 @@ Save a value
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

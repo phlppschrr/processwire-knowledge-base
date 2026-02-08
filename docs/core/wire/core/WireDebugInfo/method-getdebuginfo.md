@@ -4,6 +4,16 @@ Source: `wire/core/WireDebugInfo.php`
 
 Get all debug info for the given Wire object
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDebugInfo->getDebugInfo($obj);
+
+// usage with all arguments
+$array = $wireDebugInfo->getDebugInfo(Wire $obj, $small = false);
+~~~~~
+
 ## Arguments
 
 - `$obj` `Wire`
@@ -11,4 +21,4 @@ Get all debug info for the given Wire object
 
 ## Return value
 
-array
+- `array`

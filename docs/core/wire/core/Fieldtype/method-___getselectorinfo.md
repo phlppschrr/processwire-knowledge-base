@@ -4,6 +4,16 @@ Source: `wire/core/Fieldtype.php`
 
 Return array with information about what properties and operators can be used with this field.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtype->___getSelectorInfo($field);
+
+// usage with all arguments
+$array = $fieldtype->___getSelectorInfo(Field $field, array $data = array());
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -11,4 +21,4 @@ Return array with information about what properties and operators can be used wi
 
 ## Return value
 
-array See `FieldSelectorInfo` class for details.
+- `array` See `FieldSelectorInfo` class for details.

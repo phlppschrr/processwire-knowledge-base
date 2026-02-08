@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Get or set attribute
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->attrs($name);
+
+// usage with all arguments
+$string = $commentForm->attrs($name, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,7 +21,7 @@ Get or set attribute
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

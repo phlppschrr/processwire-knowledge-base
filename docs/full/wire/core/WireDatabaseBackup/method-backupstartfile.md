@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Start a new backup file, adding our info header to the top
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabaseBackup->backupStartFile($file, $options);
+
+// usage with all arguments
+$bool = $wireDatabaseBackup->backupStartFile($file, array $options);
+~~~~~
+
 ## Arguments
 
 - `$file` `string`
@@ -11,4 +21,4 @@ Start a new backup file, adding our info header to the top
 
 ## Return value
 
-bool
+- `bool`

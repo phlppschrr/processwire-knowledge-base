@@ -8,10 +8,22 @@ Use this when you want to cache a slow or complex page finding operation so that
 have to be repated for every web request. Note that this only caches the find operation
 and not the loading of the found pages.
 
+## Example
+
 ~~~~~
 $items = $pages->findCache("title%=foo"); // 60 seconds (default)
 $items = $pages->findCache("title%=foo", 3600); // 1 hour
 $items = $pages->findCache("title%=foo", "+1 HOUR");  // same as above
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesLoader->findCache($selector);
+
+// usage with all arguments
+$items = $pagesLoader->findCache($selector, $expire = 60, $options = array());
 ~~~~~
 
 ## Arguments
@@ -22,7 +34,7 @@ $items = $pages->findCache("title%=foo", "+1 HOUR");  // same as above
 
 ## Return value
 
-PageArray|array
+- `PageArray|array`
 
 ## Since
 

@@ -6,10 +6,17 @@ Add a new Pagefile item or filename
 
 If give a filename (string) it will create the new `Pagefile` item from it and add it.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagefiles->add($item);
+~~~~~
+
 ## Arguments
 
 - `$item` `Pagefile|string` If item is a string (filename) it will create the new `Pagefile` item from it and add it.
 
 ## Return value
 
-$this
+- `$this`

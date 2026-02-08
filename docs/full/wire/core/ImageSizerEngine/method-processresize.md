@@ -9,6 +9,13 @@ Processing is as follows:
    2. than (try) to process all required steps, if one failes, return false
    3. if all is successful, finally return true
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngine->processResize($srcFilename, $dstFilename, $fullWidth, $fullHeight, $finalWidth, $finalHeight);
+~~~~~
+
 ## Arguments
 
 - `$srcFilename` `string` Source file
@@ -20,8 +27,8 @@ Processing is as follows:
 
 ## Return value
 
-bool True if successful, false if not
+- `bool` True if successful, false if not
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

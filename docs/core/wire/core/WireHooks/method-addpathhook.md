@@ -4,6 +4,16 @@ Source: `wire/core/WireHooks.php`
 
 Add a hook that handles a request path
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireHooks->addPathHook($object, $path, $toObject, $toMethod);
+
+// usage with all arguments
+$string = $wireHooks->addPathHook(Wire $object, $path, $toObject, $toMethod, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire`
@@ -14,8 +24,8 @@ Add a hook that handles a request path
 
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

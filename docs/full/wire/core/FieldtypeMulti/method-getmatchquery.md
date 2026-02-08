@@ -6,6 +6,13 @@ Get the query that matches a Fieldtype table's data with a given value
 
 Possible template method: If overridden, children should NOT call this parent method.
 
+## Usage
+
+~~~~~
+// basic usage
+$pageFinderDatabaseQuerySelect = $fieldtypeMulti->getMatchQuery($query, $table, $subfield, $operator, $value);
+~~~~~
+
 ## Arguments
 
 - `$query` `PageFinderDatabaseQuerySelect`
@@ -16,4 +23,4 @@ Possible template method: If overridden, children should NOT call this parent me
 
 ## Return value
 
-PageFinderDatabaseQuerySelect|DatabaseQuerySelect $query
+- `PageFinderDatabaseQuerySelect|DatabaseQuerySelect` $query

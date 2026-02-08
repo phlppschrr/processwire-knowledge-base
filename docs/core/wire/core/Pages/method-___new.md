@@ -25,6 +25,8 @@ Please note the following:
 - If new page has name that collides with an existing page (i.e. “foo”), new page name will increment (i.e. “foo-1”).
 - If no `name`, `path` or `title` is given (that name can be derived from) then an “untitled-page” name will be used.
 
+## Example
+
 ~~~~~
 // Creating a page via selector string
 $p = $pages->new("template=category, parent=/categories/, title=New Category");
@@ -46,15 +48,25 @@ $p = $pages->new('path=/blog/posts/foo-bar-baz');
 $p = $pages->new('/blog/posts/foo-bar-baz');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pages->___new();
+
+// usage with all arguments
+$page = $pages->___new($selector = '');
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|array` Selector string or array of properties to set
 
 ## Return value
 
-Page
+- `Page`
 
-## See also
+## See Also
 
 - [Pages::add()](method-___add.md)
 - [Pages::newPage()](method-newpage.md)

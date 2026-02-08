@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Identify decimals, minus signs and commas in numbers, replace them, and return the replacements array
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->wordsArrayNumberReplacements($value);
+
+// usage with all arguments
+$array = $sanitizer->wordsArrayNumberReplacements(&$value, $prefix = 'REP');
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -11,4 +21,4 @@ Identify decimals, minus signs and commas in numbers, replace them, and return t
 
 ## Return value
 
-array
+- `array`

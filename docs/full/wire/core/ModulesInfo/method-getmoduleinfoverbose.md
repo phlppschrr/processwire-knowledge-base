@@ -15,6 +15,16 @@ This is the same as what’s returned by `Modules::getModuleInfo()` except that 
  - `permissions` (array): permissions installed by this module, associative array ('permission  - name' => 'Description').
  - `page` (array): definition of page to create for Process module (see Process class)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $modulesInfo->getModuleInfoVerbose($class);
+
+// usage with all arguments
+$array = $modulesInfo->getModuleInfoVerbose($class, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$class` `string|Module|int` May be class name, module instance, or module ID
@@ -22,8 +32,8 @@ This is the same as what’s returned by `Modules::getModuleInfo()` except that 
 
 ## Return value
 
-array Associative array of module information
+- `array` Associative array of module information
 
-## See also
+## See Also
 
 - [Modules::getModuleInfo()](../Modules/method-getmoduleinfo.md)

@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Render form for threaded (depth) comments
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->renderFormThread($id, $class, $attrs, $labels, $inputValues);
+~~~~~
+
 ## Arguments
 
 - `$id` `string`
@@ -14,4 +21,4 @@ Render form for threaded (depth) comments
 
 ## Return value
 
-string
+- `string`

@@ -3,6 +3,16 @@
 Source: `wire/core/WireTempDir.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTempDir->create();
+
+// usage with all arguments
+$string = $wireTempDir->create($name = '', $basePath = '');
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string`
@@ -10,7 +20,7 @@ Source: `wire/core/WireTempDir.php`
 
 ## Return value
 
-string
+- `string`
 
 ## Deprecated
 

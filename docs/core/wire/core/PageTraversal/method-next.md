@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return the next sibling page
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pageTraversal->next($page);
+
+// usage with all arguments
+$page = $pageTraversal->next(Page $page, $selector = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Return the next sibling page
 
 ## Return value
 
-Page|NullPage Returns the next sibling page, or a NullPage if none found.
+- `Page|NullPage` Returns the next sibling page, or a NullPage if none found.

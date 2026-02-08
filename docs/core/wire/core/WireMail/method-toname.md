@@ -9,14 +9,21 @@ all properties can be set with direct access, i.e. $mailer->toName = 'User Name'
 
 This sets the 'to name' for whatever the last added 'to' email address was.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMail->toName($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` The 'to' name
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException if you attempt to set a toName before a to email.
+- `WireException` if you attempt to set a toName before a to email.

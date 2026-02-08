@@ -7,6 +7,8 @@ Current unsanitized request path (URL sans ProcessWire installation subdirectory
 This excludes any subdirectories leading to ProcessWire installation root, if present.
 Useful if you need to know request path from /site/config.php or other boot file.
 
+## Example
+
 ~~~~~
 if(strpos($config->requestPath(), '/processwire/') === 0) {
   // current request path starts with “/processwire/”
@@ -19,13 +21,23 @@ if($config->requestPath([ 'foo', 'bar', 'baz' ])) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $config->requestPath();
+
+// usage with all arguments
+$string = $config->requestPath($match = '');
+~~~~~
+
 ## Arguments
 
 - `$match` (optional) `string|array` Optionally return path only if some part matches given string(s) (default='')
 
 ## Return value
 
-string Returns path string or blank string if $match argument used and doesn’t match.
+- `string` Returns path string or blank string if $match argument used and doesn’t match.
 
 ## Since
 

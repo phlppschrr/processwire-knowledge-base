@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Collapse string to plain text that all exists on a single long line without destroying words/punctuation.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->collapse($str);
+
+// usage with all arguments
+$string = $wireTextTools->collapse($str, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to collapse
@@ -11,4 +21,4 @@ Collapse string to plain text that all exists on a single long line without dest
 
 ## Return value
 
-string
+- `string`

@@ -6,10 +6,17 @@ Translate the given text string into the current language if available.
 
 If not available, or if the current language is the native language, then it returns the text as is.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTranslatable->_($text);
+~~~~~
+
 ## Arguments
 
 - `$text` `string` Text string to translate
 
 ## Return value
 
-string
+- `string`

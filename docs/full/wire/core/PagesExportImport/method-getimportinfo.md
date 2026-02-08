@@ -10,6 +10,9 @@ an '_importToID' property containing the ID of the existing local page to update
 a newly created page.
 
 Return value:
+
+## Example
+
 ~~~~~
 array(
   'numNew' => 0,
@@ -23,10 +26,20 @@ array(
 );
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesExportImport->getImportInfo($a);
+
+// usage with all arguments
+$array = $pagesExportImport->getImportInfo(array &$a);
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Import data array
 
 ## Return value
 
-array
+- `array`

@@ -8,10 +8,22 @@ If you want to restore the page to some location other than its original locatio
 of the page to contain the location you want it to restore to. Otherwise the page will restore to its original location,
 when possible to do so.
 
+## Example
+
 ~~~~~
 // Grab a page from the trash and restore it
 $trashedPage = $pages->get(1234);
 $pages->restore($trashedPage);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->___restore($page);
+
+// usage with all arguments
+$bool = $pages->___restore(Page $page, $save = true);
 ~~~~~
 
 ## Arguments
@@ -21,8 +33,8 @@ $pages->restore($trashedPage);
 
 ## Return value
 
-bool True on success, false on failure.
+- `bool` True on success, false on failure.
 
-## See also
+## See Also
 
 - [Pages::trash()](method-___trash.md)

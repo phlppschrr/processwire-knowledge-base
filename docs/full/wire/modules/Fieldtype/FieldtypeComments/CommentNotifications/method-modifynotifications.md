@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Given a subscriber code, modify notifications on any comments where their email is present
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $commentNotifications->modifyNotifications($subcode, $enable);
+
+// usage with all arguments
+$bool = $commentNotifications->modifyNotifications($subcode, $enable, $all = false);
+~~~~~
+
 ## Arguments
 
 - `$subcode` `string` 40 digit subscriber code
@@ -12,8 +22,8 @@ Given a subscriber code, modify notifications on any comments where their email 
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

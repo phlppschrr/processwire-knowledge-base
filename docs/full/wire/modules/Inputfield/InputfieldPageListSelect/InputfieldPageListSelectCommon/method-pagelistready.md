@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldPageListSelect/InputfieldPageListSele
 
 Render ready
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldPageListSelectCommon->pageListReady($name, $labelFieldName);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`

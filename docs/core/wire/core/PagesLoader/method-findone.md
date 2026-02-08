@@ -16,6 +16,16 @@ override this, where appropriate.
 
 This method also accepts an `$options` array, whereas `Pages::get()` does not.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesLoader->findOne($selector);
+
+// usage with all arguments
+$page = $pagesLoader->findOne($selector, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|int|array|Selectors`
@@ -23,4 +33,4 @@ This method also accepts an `$options` array, whereas `Pages::get()` does not.
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`

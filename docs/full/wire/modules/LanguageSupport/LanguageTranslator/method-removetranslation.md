@@ -4,6 +4,13 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Remove a translation
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $languageTranslator->removeTranslation($textdomain, $hash);
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string`
@@ -11,4 +18,4 @@ Remove a translation
 
 ## Return value
 
-$this
+- `$this`

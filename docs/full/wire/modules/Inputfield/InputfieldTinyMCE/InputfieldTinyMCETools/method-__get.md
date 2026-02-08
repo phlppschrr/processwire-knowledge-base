@@ -3,10 +3,17 @@
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfieldTinyMCETools->__get($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
 
 ## Return value
 
-array|mixed|string|null
+- `array|mixed|string|null`

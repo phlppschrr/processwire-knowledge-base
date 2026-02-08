@@ -4,6 +4,16 @@ Source: `wire/core/WireRandom.php`
 
 Truncate password to requested maxLength without removing required options (for password method)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireRandom->passTrunc($value, $options);
+
+// usage with all arguments
+$string = $wireRandom->passTrunc($value, array $options);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
@@ -11,4 +21,4 @@ Truncate password to requested maxLength without removing required options (for 
 
 ## Return value
 
-string
+- `string`

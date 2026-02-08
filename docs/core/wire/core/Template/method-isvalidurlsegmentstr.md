@@ -4,13 +4,20 @@ Source: `wire/core/Template.php`
 
 Is the given URL segment string allowed according to this template’s settings?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $template->isValidUrlSegmentStr($urlSegmentStr);
+~~~~~
+
 ## Arguments
 
 - `$urlSegmentStr` `string`
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

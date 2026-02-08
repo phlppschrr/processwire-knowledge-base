@@ -4,6 +4,16 @@ Source: `wire/core/AdminThemeFramework.php`
 
 Allow the given Page to appear in admin theme navigation?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $adminThemeFramework->allowPageInNav($p);
+
+// usage with all arguments
+$bool = $adminThemeFramework->allowPageInNav(Page $p, $children = array(), $permission = null);
+~~~~~
+
 ## Arguments
 
 - `$p` `Page` Page to test
@@ -12,4 +22,4 @@ Allow the given Page to appear in admin theme navigation?
 
 ## Return value
 
-bool
+- `bool`

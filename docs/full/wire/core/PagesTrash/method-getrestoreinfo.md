@@ -14,6 +14,16 @@ Returns array with the following info:
  - `namePrevious` (string): Previous name, if we had to modify the original name to make it restorable.
  - `name{id}` (string): Name that should be restored  to language where {id} is language ID (if appliable).
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesTrash->getRestoreInfo($page);
+
+// usage with all arguments
+$array = $pagesTrash->getRestoreInfo(Page $page, $populateToPage = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to restore
@@ -21,4 +31,4 @@ Returns array with the following info:
 
 ## Return value
 
-array
+- `array`

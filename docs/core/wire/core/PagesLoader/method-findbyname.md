@@ -7,6 +7,16 @@ Find page(s) by name
 This method is optimized just for finding pages by name and it does
 not perform any filtering or access checking.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesLoader->findByName($name);
+
+// usage with all arguments
+$array = $pagesLoader->findByName($name, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Match this page name
@@ -14,4 +24,4 @@ not perform any filtering or access checking.
 
 ## Return value
 
-array|NullPage|Page|PageArray
+- `array|NullPage|Page|PageArray`

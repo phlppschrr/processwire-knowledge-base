@@ -20,6 +20,8 @@ Note that the locale is set once at bootup by ProcessWire, and does not change a
 method. Meaning, a change to `$user->language` does not automatically change the locale. If you want to change
 the locale, you would have to call this method after changing the user’s language from the API side.
 
+## Example
+
 ~~~~~
 // Set locale to whatever settings defined for current $user language
 $languages->setLocale();
@@ -40,6 +42,16 @@ $languages->setLocale(LC_ALL, 'en_US.UTF-8, en_US, en');
 $languages->setLocale(null, 'LC_CTYPE=en_US;LC_NUMERIC=de_DE;LC_TIME=es_ES');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languages->setLocale();
+
+// usage with all arguments
+$string = $languages->setLocale($category = LC_ALL, $locale = null);
+~~~~~
+
 ## Arguments
 
 - `$category` (optional) `int|string|array|null|Language` Specify a PHP “LC_” constant (int) or omit (or null) for default (LC_ALL).
@@ -47,8 +59,8 @@ $languages->setLocale(null, 'LC_CTYPE=en_US;LC_NUMERIC=de_DE;LC_TIME=es_ES');
 
 ## Return value
 
-string|bool Returns the locale that was set or boolean false if requested locale cannot be set.
+- `string|bool` Returns the locale that was set or boolean false if requested locale cannot be set.
 
-## See also
+## See Also
 
 - [Languages::getLocale()](method-getlocale.md)

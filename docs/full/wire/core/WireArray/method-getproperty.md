@@ -14,6 +14,8 @@ Default properties include;
 
 These can also be accessed by direct reference.
 
+## Example
+
 ~~~~~
 // Get count
 $count = $items->getProperty('count');
@@ -22,10 +24,17 @@ $count = $items->getProperty('count');
 $count = $items->count;
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireArray->getProperty($property);
+~~~~~
+
 ## Arguments
 
 - `$property` `string` Name of property to retrieve
 
 ## Return value
 
-Wire|mixed
+- `Wire|mixed`

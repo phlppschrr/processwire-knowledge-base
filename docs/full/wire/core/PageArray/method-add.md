@@ -6,6 +6,8 @@ Add one or more Page objects to this PageArray.
 
 Please see the `WireArray::add()` method for more details.
 
+## Example
+
 ~~~~~
 // Add one page
 $pageArray->add($page);
@@ -17,10 +19,17 @@ $pageArray->add($pages->find("template=basic-page"));
 $pageArray->add(1005);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pageArray->add($item);
+~~~~~
+
 ## Arguments
 
 - `$item` `Page|PageArray|int` Page object, PageArray object, or Page ID. - If given a `Page`, the Page will be added. - If given a `PageArray`, it will do the same thing as the `WireArray::import()` method and append all the pages. - If Page `ID`, the Page identified by that ID will be loaded and added to the PageArray.
 
 ## Return value
 
-$this
+- `$this`

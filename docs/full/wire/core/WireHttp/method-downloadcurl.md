@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Download file using CURL
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->downloadCURL($fromURL, $fp, $options);
+
+// usage with all arguments
+$bool = $wireHttp->downloadCURL($fromURL, $fp, array $options);
+~~~~~
+
 ## Arguments
 
 - `$fromURL` `string`
@@ -12,4 +22,4 @@ Download file using CURL
 
 ## Return value
 
-bool True if successful false if not
+- `bool` True if successful false if not

@@ -19,6 +19,8 @@ Given template string can contain any of the placeholders, which will be replace
  - `{original.name}` Replace “name” with any of the properties above to refer to original image.
     If there is no original image then these just refer back to the current image.
 
+## Example
+
 ~~~~~
 $image = $page->images->first();
 if($image) {
@@ -46,6 +48,16 @@ if($image) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageimage->___render();
+
+// usage with all arguments
+$string = $pageimage->___render($markup = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$markup` (optional) `string|array` Markup template string or optional $options array if you do not want the template string here.
@@ -53,9 +65,9 @@ if($image) {
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Pageimages::render()](../Pageimages/method-___render.md)
 

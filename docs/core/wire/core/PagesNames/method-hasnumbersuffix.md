@@ -4,6 +4,16 @@ Source: `wire/core/PagesNames.php`
 
 Does the given name or Page have a number suffix? Returns the number if yes, or false if not
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesNames->hasNumberSuffix($name);
+
+// usage with all arguments
+$int = $pagesNames->hasNumberSuffix($name, $getNamePrefix = false);
+~~~~~
+
 ## Arguments
 
 - `$name` `string|Page`
@@ -11,4 +21,4 @@ Does the given name or Page have a number suffix? Returns the number if yes, or 
 
 ## Return value
 
-int|bool|string Returns false if no number suffix, or int for number suffix or string for name prefix (if requested)
+- `int|bool|string` Returns false if no number suffix, or int for number suffix or string for name prefix (if requested)

@@ -7,9 +7,21 @@ Return this object’s class name
 By default, this method returns the class name without namespace. To include the namespace, call it
 with boolean true as the first argument.
 
+## Example
+
 ~~~~~
 echo $page->className(); // outputs: Page
 echo $page->className(true); // outputs: ProcessWire\Page
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $wire->className();
+
+// usage with all arguments
+$string = $wire->className($options = null);
 ~~~~~
 
 ## Arguments
@@ -18,4 +30,4 @@ echo $page->className(true); // outputs: ProcessWire\Page
 
 ## Return value
 
-string String with class name
+- `string` String with class name

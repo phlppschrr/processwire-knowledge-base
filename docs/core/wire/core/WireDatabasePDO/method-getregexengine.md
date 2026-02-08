@@ -6,9 +6,16 @@ Get the regular expression engine used by database
 
 Returns one of 'ICU' (MySQL 8.0.4+) or 'HenrySpencer' (earlier versions and MariaDB)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDatabasePDO->getRegexEngine();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

@@ -6,6 +6,8 @@ Update page modification time to now (or the given modification time)
 
 This behaves essentially the same as the unix `touch` command, but for ProcessWire pages.
 
+## Example
+
 ~~~~~
 // Touch the current $page to current date/time
 $pages->touch($page);
@@ -18,6 +20,16 @@ $skyscrapers = $pages->find("template=skyscraper, parent=/cities/atlanta/");
 $pages->touch($skyscrapers);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->___touch($pages);
+
+// usage with all arguments
+$bool = $pages->___touch($pages, $options = null, $type = 'modified');
+~~~~~
+
 ## Arguments
 
 - `$pages` `Page|PageArray|array` May be Page, PageArray or array of page IDs (integers)
@@ -26,11 +38,11 @@ $pages->touch($skyscrapers);
 
 ## Return value
 
-bool True on success, false on fail
+- `bool` True on success, false on fail
 
-## Throws
+## Exceptions
 
-- WireException|\PDOException if given invalid format for $modified argument or failed database query
+- `WireException|\PDOException` if given invalid format for $modified argument or failed database query
 
 ## Since
 

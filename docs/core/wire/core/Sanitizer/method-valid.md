@@ -4,11 +4,23 @@ Source: `wire/core/Sanitizer.php`
 
 Is given value valid? (i.e. unchanged by given sanitizer method)
 
+## Example
+
 ~~~~~~
 if($sanitizer->valid('abc123', 'alphanumeric')) {
  // value is valid
 }
 ~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $sanitizer->valid($value);
+
+// usage with all arguments
+$bool = $sanitizer->valid($value, $method = 'text', $strict = false);
+~~~~~
 
 ## Arguments
 
@@ -18,7 +30,7 @@ if($sanitizer->valid('abc123', 'alphanumeric')) {
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

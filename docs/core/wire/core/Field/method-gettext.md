@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Return field label, description or notes for language
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $field->getText($property);
+
+// usage with all arguments
+$string = $field->getText($property, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$property` `string` Specify either label, description or notes
@@ -11,4 +21,4 @@ Return field label, description or notes for language
 
 ## Return value
 
-string
+- `string`

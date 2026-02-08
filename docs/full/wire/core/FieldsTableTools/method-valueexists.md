@@ -4,6 +4,16 @@ Source: `wire/core/FieldsTableTools.php`
 
 Does given value exist anywhere in field table?
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $fieldsTableTools->valueExists($field, $value);
+
+// usage with all arguments
+$int = $fieldsTableTools->valueExists(Field $field, $value, $col = 'data');
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -12,8 +22,8 @@ Does given value exist anywhere in field table?
 
 ## Return value
 
-int Returns page ID where value exists, if found. Otherwise returns 0.
+- `int` Returns page ID where value exists, if found. Otherwise returns 0.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

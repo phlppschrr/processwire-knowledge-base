@@ -4,6 +4,16 @@ Source: `wire/core/Interfaces.php`
 
 Add a lookup item to this instance
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $hasLookupItems->addLookupItem($item, $row);
+
+// usage with all arguments
+$result = $hasLookupItems->addLookupItem($item, array &$row);
+~~~~~
+
 ## Arguments
 
 - `$item` `int` The ID of the item to add

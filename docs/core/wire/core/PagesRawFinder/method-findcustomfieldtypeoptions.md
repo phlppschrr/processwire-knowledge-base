@@ -13,6 +13,16 @@ To use, specify one of the following in the fields to get (where field_name is a
 - `field_name.title` to include the selected option titles.
 - `field_name.value` to include the selected option values.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pagesRawFinder->findCustomFieldtypeOptions($field, $cols, $getArray, $getAllCols);
+
+// usage with all arguments
+$result = $pagesRawFinder->findCustomFieldtypeOptions(Field $field, $cols, $getArray, $getAllCols);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`

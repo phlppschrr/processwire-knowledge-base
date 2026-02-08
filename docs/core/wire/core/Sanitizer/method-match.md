@@ -6,6 +6,13 @@ Validate that given value matches regex pattern.
 
 If given value matches, value is returned. If not, blank is returned.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->match($value, $regex);
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Value to match
@@ -13,4 +20,4 @@ If given value matches, value is returned. If not, blank is returned.
 
 ## Return value
 
-string Value you supplied if it matches, or blank string if it doesn't
+- `string` Value you supplied if it matches, or blank string if it doesn't

@@ -31,10 +31,17 @@ public function ___getConfigInputfields() {
 }
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldWrapper = $inputfield->___getConfigInputfields();
+~~~~~
+
 ## Return value
 
-InputfieldWrapper Populated with Inputfield instances
+- `InputfieldWrapper` Populated with Inputfield instances
 
-## See also
+## See Also
 
 - [Inputfield::getConfigArray()](method-___getconfigarray.md)

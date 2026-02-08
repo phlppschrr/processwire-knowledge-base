@@ -4,6 +4,13 @@ Source: `wire/core/FunctionsWireAPI.php`
 
 Common helper for API functions dealing with WireData objects
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $functionsWireAPI->_wireDataAPI($_apiVar, $key, $value);
+~~~~~
+
 ## Arguments
 
 - $_apiVar
@@ -12,4 +19,4 @@ Common helper for API functions dealing with WireData objects
 
 ## Return value
 
-mixed|null|WireData|Page
+- `mixed|null|WireData|Page`

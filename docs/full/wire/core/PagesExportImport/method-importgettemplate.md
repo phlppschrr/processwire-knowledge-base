@@ -4,6 +4,16 @@ Source: `wire/core/PagesExportImport.php`
 
 Get the Page Template to use for import
 
+## Usage
+
+~~~~~
+// basic usage
+$template = $pagesExportImport->importGetTemplate($a, $options, $errors);
+
+// usage with all arguments
+$template = $pagesExportImport->importGetTemplate(array &$a, array &$options, array &$errors);
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Import data
@@ -12,4 +22,4 @@ Get the Page Template to use for import
 
 ## Return value
 
-Template|null
+- `Template|null`

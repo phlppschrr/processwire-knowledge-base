@@ -11,10 +11,17 @@ Recognized email references are:
 	- Pull email from page ID and field name: "123:email_field_name"
 	- Pull email from page path and field name: "/path/to/page:email_field_name"
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $commentNotifications->parseEmails($str);
+~~~~~
+
 ## Arguments
 
 - $str
 
 ## Return value
 
-array
+- `array`

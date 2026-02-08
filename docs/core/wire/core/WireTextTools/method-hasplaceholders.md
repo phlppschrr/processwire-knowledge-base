@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Does the string have any {placeholder} tags in it?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireTextTools->hasPlaceholders($str);
+
+// usage with all arguments
+$bool = $wireTextTools->hasPlaceholders($str, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
@@ -11,7 +21,7 @@ Does the string have any {placeholder} tags in it?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

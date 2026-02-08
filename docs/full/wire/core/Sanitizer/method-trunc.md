@@ -7,6 +7,16 @@ Truncate string to given maximum length without breaking words and with no added
 This is a shortcut to the truncate() sanitizer, sanitizing to nearest word with the `more` option
 disabled and the `collapseLinesWith` set to 1 space (rather than ellipsis).
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->trunc($str);
+
+// usage with all arguments
+$string = $sanitizer->trunc($str, $maxLength = 300, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to truncate
@@ -15,7 +25,7 @@ disabled and the `collapseLinesWith` set to 1 space (rather than ellipsis).
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

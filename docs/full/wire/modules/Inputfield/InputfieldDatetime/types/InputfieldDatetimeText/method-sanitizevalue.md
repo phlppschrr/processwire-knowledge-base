@@ -4,10 +4,17 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText
 
 Sanitize value
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $inputfieldDatetimeText->sanitizeValue($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `int|string`
 
 ## Return value
 
-int|string
+- `int|string`

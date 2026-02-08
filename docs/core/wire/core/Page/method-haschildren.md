@@ -10,11 +10,23 @@ This method may be more convenient for front-end navigation use than the `$page-
 it only includes the count of visible children. By visible, we mean children that are not hidden, unpublished,
 or non-accessible due to access control.
 
+## Example
+
 ~~~~~
 // Determine if we should show navigation to children
 if($page->hasChildren()) {
   // Yes, we should show navigation to children
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->hasChildren();
+
+// usage with all arguments
+$int = $page->hasChildren($selector = true);
 ~~~~~
 
 ## Arguments
@@ -23,4 +35,4 @@ if($page->hasChildren()) {
 
 ## Return value
 
-int Number of children
+- `int` Number of children

@@ -4,6 +4,16 @@ Source: `wire/core/ModulesDuplicates.php`
 
 Populate duplicates info into config data, when applicable
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $modulesDuplicates->getDuplicatesConfigData($className);
+
+// usage with all arguments
+$array = $modulesDuplicates->getDuplicatesConfigData($className, array $configData = array());
+~~~~~
+
 ## Arguments
 
 - $className
@@ -11,4 +21,4 @@ Populate duplicates info into config data, when applicable
 
 ## Return value
 
-array Updated configData
+- `array` Updated configData

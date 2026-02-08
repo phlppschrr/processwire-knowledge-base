@@ -7,6 +7,16 @@ Generate SQL and modify $query for situations where it should be possible to mat
 This can include equals/not-equals with blank or 0, as well as greater/less-than searches that
 can potentially match blank or 0.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageFinder->whereEmptyValuePossible($field, $col, $selector, $query, $value, $where);
+
+// usage with all arguments
+$bool = $pageFinder->whereEmptyValuePossible(Field $field, $col, $selector, $query, $value, &$where);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -18,4 +28,4 @@ can potentially match blank or 0.
 
 ## Return value
 
-bool Whether or not the query was handled and modified
+- `bool` Whether or not the query was handled and modified

@@ -4,6 +4,16 @@ Source: `wire/core/Pages.php`
 
 Given array or CSV string of Page IDs, return a PageArray
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pages->getByIDs($ids);
+
+// usage with all arguments
+$items = $pages->getByIDs($ids, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$ids` `array|string|WireArray` Any one of the following: - Single page ID (string or int) - Array of page IDs - Comma or pipe-separated string of page IDs - Array of associative arrays having id and templates_id: [ [ 'id' => 1, 'templates_id' => 2], [ 'id' => 3, 'templates_id' => 4 ] ]
@@ -11,7 +21,7 @@ Given array or CSV string of Page IDs, return a PageArray
 
 ## Return value
 
-PageArray|Page Returns PageArray unless the getOne option was specified in which case a Page is returned.
+- `PageArray|Page` Returns PageArray unless the getOne option was specified in which case a Page is returned.
 
 ## Since
 

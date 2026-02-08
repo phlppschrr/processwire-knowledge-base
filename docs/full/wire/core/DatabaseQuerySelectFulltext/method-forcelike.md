@@ -7,13 +7,23 @@ Call forceLike(true) to force use of LIKE, or omit argument to get current setti
 This forces LIKE only for matching operators that have a LIKE equivalent.
 This includes these operators: `*=`, `^=`, `$=`, `~=`, `~|=`.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $databaseQuerySelectFulltext->forceLike();
+
+// usage with all arguments
+$bool = $databaseQuerySelectFulltext->forceLike($forceLike = null);
+~~~~~
+
 ## Arguments
 
 - `$forceLike` (optional) `bool|null`
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Replace the region(s) that match the given $selector with the given $replace markup
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->replace($selector, $replace, $markup);
+
+// usage with all arguments
+$string = $wireMarkupRegions->replace($selector, $replace, $markup, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string` See the update() method $selector argument for supported formats
@@ -13,4 +23,4 @@ Replace the region(s) that match the given $selector with the given $replace mar
 
 ## Return value
 
-string
+- `string`

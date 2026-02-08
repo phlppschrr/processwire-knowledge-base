@@ -15,6 +15,8 @@ Get the database schema for this field
 - If you want a PHP `NULL` value to become a NULL in the database, your column definition must specify:
   `DEFAULT NULL`.
 
+## Example
+
 ~~~~~~
 array(
  'data' => 'mediumtext NOT NULL',
@@ -36,10 +38,20 @@ array(
 );
 ~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtype->getDatabaseSchema($field);
+
+// usage with all arguments
+$array = $fieldtype->getDatabaseSchema(Field $field);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field` In case it's needed for the schema, but typically isn't.
 
 ## Return value
 
-array
+- `array`

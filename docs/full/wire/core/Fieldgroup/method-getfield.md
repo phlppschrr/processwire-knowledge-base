@@ -7,6 +7,16 @@ Get a field that is part of this fieldgroup
 Same as `Fieldgroup::get()` except that it only checks fields, not other properties of a fieldgroup.
 Meaning, this is the preferred way to retrieve a Field from a Fieldgroup.
 
+## Usage
+
+~~~~~
+// basic usage
+$field = $fieldgroup->getField($key);
+
+// usage with all arguments
+$field = $fieldgroup->getField($key, $useFieldgroupContext = false);
+~~~~~
+
 ## Arguments
 
 - `$key` `string|int|Field` Field object, name or id.
@@ -14,4 +24,4 @@ Meaning, this is the preferred way to retrieve a Field from a Fieldgroup.
 
 ## Return value
 
-Field|null Field object when present in this Fieldgroup, or null if not.
+- `Field|null` Field object when present in this Fieldgroup, or null if not.

@@ -29,10 +29,20 @@ $result = array(
   )
 );
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $processPageSearchLive->find($liveSearch);
+
+// usage with all arguments
+$array = $processPageSearchLive->find(array &$liveSearch);
+~~~~~
+
 ## Arguments
 
 - `$liveSearch` `array`
 
 ## Return value
 
-array Array of matches
+- `array` Array of matches

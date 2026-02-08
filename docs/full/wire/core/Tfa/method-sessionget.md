@@ -4,6 +4,16 @@ Source: `wire/core/Tfa.php`
 
 Get a session variable for this module
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $tfa->sessionGet($key);
+
+// usage with all arguments
+$result = $tfa->sessionGet($key, $blankValue = null);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +21,4 @@ Get a session variable for this module
 
 ## Return value
 
-mixed|null
+- `mixed|null`

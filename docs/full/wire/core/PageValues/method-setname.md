@@ -4,6 +4,8 @@ Source: `wire/core/PageValues.php`
 
 Set the page name, optionally for specific language
 
+## Example
+
 ~~~~~
 // Set page name (default language)
 $page->setName('my-page-name');
@@ -15,6 +17,16 @@ $page->name = 'my-page-name';
 $page->setName('la-cerveza', 'es');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pageValues->setName($page, $value);
+
+// usage with all arguments
+$page = $pageValues->setName(Page $page, $value, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Page name that you want to set
@@ -22,4 +34,4 @@ $page->setName('la-cerveza', 'es');
 
 ## Return value
 
-Page
+- `Page`

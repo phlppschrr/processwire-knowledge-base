@@ -3,6 +3,13 @@
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldDatetimeType->renderValue();
+~~~~~
+
 ## Return value
 
-string
+- `string`

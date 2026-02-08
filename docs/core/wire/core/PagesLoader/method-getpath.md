@@ -13,6 +13,16 @@ Please note
 4) It's possible for there to be Page::path() hooks, and this method completely bypasses them,
    which is another reason not to use it unless you know such hooks aren't applicable to you.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesLoader->getPath($id);
+
+// usage with all arguments
+$string = $pagesLoader->getPath($id, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$id` `int|Page` ID of the page you want the path to
@@ -20,4 +30,4 @@ Please note
 
 ## Return value
 
-string Path to page or blank on error/not-found
+- `string` Path to page or blank on error/not-found

@@ -4,13 +4,20 @@ Source: `wire/core/Field.php`
 
 Remove a tag
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $field->removeTag($tag);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string`
 
 ## Return value
 
-array Returns current tag list
+- `array` Returns current tag list
 
 ## Since
 

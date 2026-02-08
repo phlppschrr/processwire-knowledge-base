@@ -9,6 +9,13 @@ Return the field name by which children are sorted
 - Note the return value from this method may be different from the `Page::sortfield` (lowercase) property,
   as this method considers the sort field specified with the template as well.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $page->sortfield();
+~~~~~
+
 ## Return value
 
-string
+- `string`

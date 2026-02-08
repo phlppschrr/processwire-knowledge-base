@@ -10,6 +10,16 @@ This is the same as calling $page->save()
 
 If you want to just save a particular field in a Page, use $page->save($fieldName) instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->save($page);
+
+// usage with all arguments
+$bool = $pagesEditor->save(Page $page, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to save
@@ -17,8 +27,8 @@ If you want to just save a particular field in a Page, use $page->save($fieldNam
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Does the given class exist in given $classes array?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireMarkupRegions->hasClass($class, $classes);
+
+// usage with all arguments
+$bool = $wireMarkupRegions->hasClass($class, array $classes);
+~~~~~
+
 ## Arguments
 
 - `$class` `string` May be class name, or class prefix if $class has "*" at end.
@@ -11,4 +21,4 @@ Does the given class exist in given $classes array?
 
 ## Return value
 
-bool|string Returns false if no match, or class name if matched
+- `bool|string` Returns false if no match, or class name if matched

@@ -4,6 +4,13 @@ Source: `wire/core/FilenameArray.php`
 
 Replace one file with another
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $filenameArray->replace($oldFile, $newFile);
+~~~~~
+
 ## Arguments
 
 - `$oldFile` `string`
@@ -11,7 +18,7 @@ Replace one file with another
 
 ## Return value
 
-$this
+- `$this`
 
 ## Since
 

@@ -6,10 +6,22 @@ Get one of any named system URLs (shortcut to the $config API variable “urls�
 
 URLs always have a trailing slash.
 
+## Example
+
 ~~~~~
 // you can use either syntax below, where “templates” can be the name for any system URL
 $url = urls()->templates;
 $url = urls('templates');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$functionsAPI->urls();
+
+// usage with all arguments
+$functionsAPI->urls($key = '');
 ~~~~~
 
 ## Arguments
@@ -18,8 +30,8 @@ $url = urls('templates');
 
 ## Return value
 
-null|Paths|string
+- `null|Paths|string`
 
-## See also
+## See Also
 
 - [Config::urls()](../Config/method-urls.md)

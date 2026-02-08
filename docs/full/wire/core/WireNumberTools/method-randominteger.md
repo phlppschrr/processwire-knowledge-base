@@ -4,6 +4,16 @@ Source: `wire/core/WireNumberTools.php`
 
 Return a random integer (cryptographically secure when available)
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireNumberTools->randomInteger($min, $max);
+
+// usage with all arguments
+$int = $wireNumberTools->randomInteger($min, $max, $throw = false);
+~~~~~
+
 ## Arguments
 
 - `$min` `int` Minimum value (default=0)
@@ -12,7 +22,7 @@ Return a random integer (cryptographically secure when available)
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

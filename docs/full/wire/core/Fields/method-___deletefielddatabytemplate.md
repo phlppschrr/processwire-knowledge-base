@@ -10,6 +10,16 @@ Fieldtype::deleteTemplateField
 If you need to remove a field from a Fieldgroup, use Fieldgroup::remove(), and this
 method will be call automatically at the appropriate time when save the fieldgroup.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fields->___deleteFieldDataByTemplate($field, $template);
+
+// usage with all arguments
+$bool = $fields->___deleteFieldDataByTemplate(Field $field, Template $template);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -17,8 +27,8 @@ method will be call automatically at the appropriate time when save the fieldgro
 
 ## Return value
 
-bool Whether or not it was successful
+- `bool` Whether or not it was successful
 
-## Throws
+## Exceptions
 
-- WireException when given a situation where deletion is not allowed
+- `WireException` when given a situation where deletion is not allowed

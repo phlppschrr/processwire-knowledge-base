@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Construct a CommentForm
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $commentForm->__construct($page, $comments);
+
+// usage with all arguments
+$result = $commentForm->__construct(Page $page, CommentArray $comments, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` The page with the comments

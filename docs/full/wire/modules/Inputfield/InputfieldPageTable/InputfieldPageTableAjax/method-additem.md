@@ -4,6 +4,16 @@ Source: `wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax.php
 
 Handler for the InputfieldPageTableAdd ajax action
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $inputfieldPageTableAjax->addItem($page, $field, $item);
+
+// usage with all arguments
+$bool = $inputfieldPageTableAjax->addItem(Page $page, Field $field, Page $item);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Handler for the InputfieldPageTableAdd ajax action
 
 ## Return value
 
-bool
+- `bool`

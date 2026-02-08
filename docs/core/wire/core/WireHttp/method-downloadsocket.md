@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Download file using sockets
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->downloadSocket($fromURL, $fp, $options);
+
+// usage with all arguments
+$bool = $wireHttp->downloadSocket($fromURL, $fp, array $options);
+~~~~~
+
 ## Arguments
 
 - `$fromURL` `string`
@@ -12,4 +22,4 @@ Download file using sockets
 
 ## Return value
 
-bool True if successful false if not
+- `bool` True if successful false if not

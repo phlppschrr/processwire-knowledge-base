@@ -6,10 +6,22 @@ Count and return how many pages will match the given selector.
 
 If no selector provided, it returns count of all pages in site.
 
+## Example
+
 ~~~~~~~~~
 // Return count of how may pages in the site use the blog-post template
 $numBlogPosts = $pages->count("template=blog-post");
 ~~~~~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $pages->count();
+
+// usage with all arguments
+$int = $pages->count($selector = '', $options = array());
+~~~~~
 
 ## Arguments
 
@@ -18,8 +30,8 @@ $numBlogPosts = $pages->count("template=blog-post");
 
 ## Return value
 
-int
+- `int`
 
-## See also
+## See Also
 
 - [Pages::find()](method-___find.md)

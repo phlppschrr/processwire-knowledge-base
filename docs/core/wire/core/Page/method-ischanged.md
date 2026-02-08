@@ -8,6 +8,7 @@ To check if only a specific property on the page has changed, specify the proper
 This method assumes that change tracking is enabled for the Page (as it is by default).
 Pages that are new (i.e. don't yet exist in the database) always return true.
 
+## Example
 
 ~~~~~
 // Check if page has any changes
@@ -16,6 +17,7 @@ if($page->isChanged()) {
   $changes = $page->getChanges();
 }
 ~~~~~
+
 ~~~~~
 // When page is about to be saved, update summary when body has changed
 $this->addHookBefore('Pages::saveReady', function($event) {
@@ -32,15 +34,25 @@ $this->addHookBefore('Pages::saveReady', function($event) {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->isChanged();
+
+// usage with all arguments
+$bool = $page->isChanged($what = '');
+~~~~~
+
 ## Arguments
 
 - `$what` (optional) `string` If specified, only checks the given property for changes rather than the whole page.
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [Wire::setTrackChanges()](../Wire/method-settrackchanges.md)
 - [Wire::getChanges()](../Wire/method-getchanges.md)

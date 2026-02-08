@@ -25,6 +25,16 @@ filename like “test.jpg” without path, when using this option. If using the 
 the `getArray` option then it will return an array of module names that would perform the
 validation for the given file type (or blank array if none).
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $sanitizer->validateFile($filename);
+
+// usage with all arguments
+$bool = $sanitizer->validateFile($filename, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Full path and filename to validate
@@ -32,4 +42,4 @@ validation for the given file type (or blank array if none).
 
 ## Return value
 
-bool|array|null Returns one of the following, depending on use of dryrun and getArray options: - Boolean true if valid, false if not. - NULL if no validator available for given file type or file does not exist. - If dryrun option is used, returns boolean (or array of strings if getArray option is true). - If getArray option is used, returns associative array of results or blank array if no validators.
+- `bool|array|null` Returns one of the following, depending on use of dryrun and getArray options: - Boolean true if valid, false if not. - NULL if no validator available for given file type or file does not exist. - If dryrun option is used, returns boolean (or array of strings if getArray option is true). - If getArray option is used, returns associative array of results or blank array if no validators.

@@ -13,15 +13,25 @@ $de = languages()->get('de'); // Get another language
 $de = languages('de'); // Get another language (shorcut syntax)
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$languages = $functionsAPI->languages();
+
+// usage with all arguments
+$languages = $functionsAPI->languages($name = '');
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|int` Optional Language name or ID for language to retrieve
 
 ## Return value
 
-Languages|Language|NullPage|null
+- `Languages|Language|NullPage|null`
 
-## See also
+## See Also
 
 - Languages
 - Languages::get()

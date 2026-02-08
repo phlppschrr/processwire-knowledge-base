@@ -29,6 +29,16 @@ $mail->to('user@domain.com')->from('you@company.com');
 $mail->subject('Mail Subject')->body('Mail Body Text')->bodyHTML('Body HTML');
 $numSent = $mail->send();
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $functions->wireMail();
+
+// usage with all arguments
+$int = $functions->wireMail($to = '', $from = '', $subject = '', $body = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$to` (optional) `string|array` Email address TO. For multiple, specify CSV string or array.
@@ -39,4 +49,4 @@ $numSent = $mail->send();
 
 ## Return value
 
-int|WireMail Returns number of messages sent or WireMail object if no arguments specified.
+- `int|WireMail` Returns number of messages sent or WireMail object if no arguments specified.

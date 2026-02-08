@@ -6,9 +6,16 @@ Get the current path / work directory
 
 This is like PHP’s getcwd() function except that is in ProcessWire format as unix path with trailing slash.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireFileTools->currentPath();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

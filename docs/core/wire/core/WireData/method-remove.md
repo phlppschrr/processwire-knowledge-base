@@ -4,8 +4,17 @@ Source: `wire/core/WireData.php`
 
 Remove a previously set property
 
+## Example
+
 ~~~~~
 $item->remove('some_property');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireData->remove($key);
 ~~~~~
 
 ## Arguments
@@ -14,4 +23,4 @@ $item->remove('some_property');
 
 ## Return value
 
-$this
+- `$this`

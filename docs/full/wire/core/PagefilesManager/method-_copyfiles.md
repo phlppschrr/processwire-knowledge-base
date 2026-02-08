@@ -4,6 +4,16 @@ Source: `wire/core/PagefilesManager.php`
 
 Recursively copy all files in $fromPath to $toPath, for internal use
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagefilesManager->_copyFiles($fromPath, $toPath);
+
+// usage with all arguments
+$int = $pagefilesManager->_copyFiles($fromPath, $toPath, $rename = false);
+~~~~~
+
 ## Arguments
 
 - `$fromPath` `string` Path to copy from
@@ -12,4 +22,4 @@ Recursively copy all files in $fromPath to $toPath, for internal use
 
 ## Return value
 
-int Number of files copied
+- `int` Number of files copied

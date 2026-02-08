@@ -6,10 +6,17 @@ Given a Fieldtype name (or class name) return the instantiated Fieldtype module.
 
 If the requested Fieldtype is not already installed, it will be installed here automatically.
 
+## Usage
+
+~~~~~
+// basic usage
+$fieldtype = $fieldtypes->get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Fieldtype name or class name, or dynamic property of Fieldtypes
 
 ## Return value
 
-Fieldtype|null
+- `Fieldtype|null`

@@ -4,6 +4,16 @@ Source: `wire/core/Fieldtype.php`
 
 Move this field’s data from one page to another.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldtype->___replacePageField($src, $dst, $field);
+
+// usage with all arguments
+$bool = $fieldtype->___replacePageField(Page $src, Page $dst, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$src` `Page` Source Page
@@ -12,4 +22,4 @@ Move this field’s data from one page to another.
 
 ## Return value
 
-bool
+- `bool`

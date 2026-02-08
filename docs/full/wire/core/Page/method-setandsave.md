@@ -9,10 +9,16 @@ You can specify a single field and value, or an array of fields and values.
 This method does not need output formatting to be turned off first, so make sure that whatever
 value(s) you set are not formatted values.
 
+
+[Blog post about setAndSave](https://processwire.com/blog/posts/processwire-2.6.9-core-updates-and-new-procache-version/)
+
+## Example
+
 ~~~~~
 // Set and save the summary field
 $page->setAndSave('summary', 'When nothing is done, nothing is left undone.');
 ~~~~~
+
 ~~~~~
 // Set and save multiple fields
 $page->setAndSave([
@@ -21,6 +27,7 @@ $page->setAndSave([
   'body' => 'Hope you all have a great weekend!'
 ]);
 ~~~~~
+
 ~~~~~
 // Update a 'last_login' field after every user login
 $session->addHookAfter('loginSuccess', function($event) {
@@ -29,7 +36,15 @@ $session->addHookAfter('loginSuccess', function($event) {
 });
 ~~~~~
 
-[Blog post about setAndSave](https://processwire.com/blog/posts/processwire-2.6.9-core-updates-and-new-procache-version/)
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->setAndSave($key);
+
+// usage with all arguments
+$bool = $page->setAndSave($key, $value = null, array $options = array());
+~~~~~
 
 ## Arguments
 
@@ -39,8 +54,8 @@ $session->addHookAfter('loginSuccess', function($event) {
 
 ## Return value
 
-bool Returns true on success, false on failure
+- `bool` Returns true on success, false on failure
 
-## See also
+## See Also
 
 - [Pages::save()](../Pages/method-___save.md)

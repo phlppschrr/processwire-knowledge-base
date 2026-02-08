@@ -12,6 +12,16 @@ the status properties of those instantiated Page objects, it only updates the DB
 
 Note: Please use addStatus() or removeStatus() instead, unless you need to perform a recursive add/remove status.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesEditor->savePageStatus($pageID, $status);
+
+// usage with all arguments
+$int = $pagesEditor->savePageStatus($pageID, $status, $recursive = false, $remove = false);
+~~~~~
+
 ## Arguments
 
 - `$pageID` `int|array|Page|PageArray` Page ID, Page, array of page IDs, or PageArray
@@ -21,4 +31,4 @@ Note: Please use addStatus() or removeStatus() instead, unless you need to perfo
 
 ## Return value
 
-int Number of pages updated
+- `int` Number of pages updated

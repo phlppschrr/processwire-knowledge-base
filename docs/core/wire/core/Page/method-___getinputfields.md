@@ -6,10 +6,20 @@ Hookable version of getInputfields() method.
 
 See the getInputfields() method above for documentation details.
 
+## Usage
+
+~~~~~
+// basic usage
+$page->___getInputfields();
+
+// usage with all arguments
+$page->___getInputfields($fieldName = '');
+~~~~~
+
 ## Arguments
 
 - `$fieldName` (optional) `string|array`
 
 ## Return value
 
-null|InputfieldWrapper Returns an InputfieldWrapper array of Inputfield objects, or NULL on failure.
+- `null|InputfieldWrapper` Returns an InputfieldWrapper array of Inputfield objects, or NULL on failure.

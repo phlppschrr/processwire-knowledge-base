@@ -4,6 +4,16 @@ Source: `wire/core/InputfieldWrapper.php`
 
 Get Inputfield by some other non-attribute property or setting
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->getByProperty($property, $value);
+
+// usage with all arguments
+$inputfield = $inputfieldWrapper->getByProperty($property, $value, $getAll = false);
+~~~~~
+
 ## Arguments
 
 - `$property` `string`
@@ -12,7 +22,7 @@ Get Inputfield by some other non-attribute property or setting
 
 ## Return value
 
-Inputfield|InputfieldWrapper|null|array
+- `Inputfield|InputfieldWrapper|null|array`
 
 ## Since
 

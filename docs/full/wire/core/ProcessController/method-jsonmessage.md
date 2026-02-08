@@ -4,6 +4,16 @@ Source: `wire/core/ProcessController.php`
 
 Generate a message in JSON format, for use with AJAX output
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $processController->jsonMessage($msg);
+
+// usage with all arguments
+$string = $processController->jsonMessage($msg, $error = false, $allowMarkup = false);
+~~~~~
+
 ## Arguments
 
 - `$msg` `string|array` Message string or in 3.0.246+ also accepts an array of extra data When using an array, please include a 'message' index with text about the error or non-error.
@@ -12,4 +22,4 @@ Generate a message in JSON format, for use with AJAX output
 
 ## Return value
 
-string JSON encoded string
+- `string` JSON encoded string

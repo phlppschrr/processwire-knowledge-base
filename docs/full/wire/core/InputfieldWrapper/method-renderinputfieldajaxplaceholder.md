@@ -4,6 +4,16 @@ Source: `wire/core/InputfieldWrapper.php`
 
 Render a placeholder for an ajax-loaded Inputfield
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldWrapper->renderInputfieldAjaxPlaceholder($inputfield, $renderValueMode);
+
+// usage with all arguments
+$string = $inputfieldWrapper->renderInputfieldAjaxPlaceholder(Inputfield $inputfield, $renderValueMode);
+~~~~~
+
 ## Arguments
 
 - `$inputfield` `Inputfield`
@@ -11,4 +21,4 @@ Render a placeholder for an ajax-loaded Inputfield
 
 ## Return value
 
-string
+- `string`

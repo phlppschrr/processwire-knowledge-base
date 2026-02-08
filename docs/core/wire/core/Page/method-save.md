@@ -9,12 +9,24 @@ on the $page like this may be more convenient in many instances.
 
 If you want to hook into the save operation, hook into one of the many Pages class hooks referenced in the 'See Also' section.
 
+## Example
+
 ~~~~~
 // Save the page
 $page->save();
 
 // Save just the 'title' field from the page
 $page->save('title');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->save();
+
+// usage with all arguments
+$bool = $page->save($field = null, array $options = array());
 ~~~~~
 
 ## Arguments
@@ -24,13 +36,13 @@ $page->save('title');
 
 ## Return value
 
-bool Returns true on success false on fail
+- `bool` Returns true on success false on fail
 
-## Throws
+## Exceptions
 
-- WireException on database error
+- `WireException` on database error
 
-## See also
+## See Also
 
 - [Pages::save()](../Pages/method-___save.md)
 - [Page::saveFields()](method-savefields.md)

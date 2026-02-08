@@ -10,6 +10,16 @@ Load the given page field from the database table and return the value.
 - Typically this is only called for fields that don't have 'autojoin' turned on.
 - Any actual conversion of the value should be handled by the `Fieldtype::wakeupValue()` method.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldtype->___loadPageField($page, $field);
+
+// usage with all arguments
+$result = $fieldtype->___loadPageField(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page object to save.
@@ -17,4 +27,4 @@ Load the given page field from the database table and return the value.
 
 ## Return value
 
-mixed|null
+- `mixed|null`

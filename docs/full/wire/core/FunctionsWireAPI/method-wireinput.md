@@ -9,6 +9,8 @@ Access the $input API variable as a function
 - If given a $type and $key it will return the input variable.
 - If all arguments given, the returned value will also be run through the given sanitizer.
 
+## Example
+
 ~~~~~
 // Examples
 $input = wireInput(); // Returns $input API var (WireInput)
@@ -21,6 +23,16 @@ $value = wireInput('get', 'sort', ['title', 'created', 'likes'], 'title'); // Re
 $value = wireInput()->get('sort', ['title', 'created', 'likes'], 'title'); // Same as above (3.0.125)
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$wireInput = $functionsWireAPI->wireInput();
+
+// usage with all arguments
+$wireInput = $functionsWireAPI->wireInput($type = '', $key = '', $sanitizer = null, $fallback = null);
+~~~~~
+
 ## Arguments
 
 - `$type` (optional) `string` Optionally indicate "get", "post", "cookie" or "whitelist"
@@ -30,4 +42,4 @@ $value = wireInput()->get('sort', ['title', 'created', 'likes'], 'title'); // Sa
 
 ## Return value
 
-WireInput|WireInputData|array|string|int|null
+- `WireInput|WireInputData|array|string|int|null`

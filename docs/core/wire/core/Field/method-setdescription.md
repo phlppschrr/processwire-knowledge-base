@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Set description, optionally for a specific language
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $field->setDescription($text);
+
+// usage with all arguments
+$result = $field->setDescription($text, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$text` `string` Text to set

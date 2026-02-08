@@ -4,10 +4,20 @@ Source: `wire/core/ImageSizer.php`
 
 Convert image to sepia tone
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizer->convertToSepia();
+
+// usage with all arguments
+$bool = $imageSizer->convertToSepia($sepia = 55);
+~~~~~
+
 ## Arguments
 
 - `$sepia` (optional) `int` Sepia amount
 
 ## Return value
 
-bool
+- `bool`

@@ -4,6 +4,16 @@ Source: `wire/core/PagesLoaderCache.php`
 
 Uncache pages that were cached with given group name
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesLoaderCache->uncacheGroup($groupName);
+
+// usage with all arguments
+$int = $pagesLoaderCache->uncacheGroup($groupName, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$groupName` `string`
@@ -11,7 +21,7 @@ Uncache pages that were cached with given group name
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

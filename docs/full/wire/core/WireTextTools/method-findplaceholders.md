@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Find and return all {placeholder} tags found in given string
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireTextTools->findPlaceholders($str);
+
+// usage with all arguments
+$array = $wireTextTools->findPlaceholders($str, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String that might contain field {tags}
@@ -11,7 +21,7 @@ Find and return all {placeholder} tags found in given string
 
 ## Return value
 
-array|bool Always returns array unless you specify the `has` option as true.
+- `array|bool` Always returns array unless you specify the `has` option as true.
 
 ## Since
 

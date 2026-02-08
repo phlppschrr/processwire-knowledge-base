@@ -4,13 +4,20 @@ Source: `wire/core/PagesLoaderCache.php`
 
 Is given page ID in the cache?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesLoaderCache->hasCache($id);
+~~~~~
+
 ## Arguments
 
 - int page ID
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

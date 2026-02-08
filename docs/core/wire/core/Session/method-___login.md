@@ -6,6 +6,8 @@ Login a user with the given name and password
 
 Also sets them to the current user.
 
+## Example
+
 ~~~~~
 $u = $session->login('bob', 'laj3939$a');
 if($u) {
@@ -13,6 +15,16 @@ if($u) {
 } else {
   echo "Sorry Bob";
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$user = $session->___login($name, $pass);
+
+// usage with all arguments
+$user = $session->___login($name, $pass, $force = false);
 ~~~~~
 
 ## Arguments
@@ -23,8 +35,8 @@ if($u) {
 
 ## Return value
 
-User|null Return the $user if the login was successful or null if not.
+- `User|null` Return the $user if the login was successful or null if not.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

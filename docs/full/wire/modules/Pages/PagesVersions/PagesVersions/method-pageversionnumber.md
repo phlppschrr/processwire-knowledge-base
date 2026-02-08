@@ -4,6 +4,16 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Get the version number of given page or 0 if not versioned
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesVersions->pageVersionNumber($page);
+
+// usage with all arguments
+$int = $pagesVersions->pageVersionNumber(Page $page, $version = 0);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Get the version number of given page or 0 if not versioned
 
 ## Return value
 
-int
+- `int`

@@ -8,6 +8,16 @@ This is largely taken from Anthony Ferrara's password_compat library:
 https://github.com/ircmaxell/password_compat/blob/master/lib/password.php
 Modified for camelCase, variable names, and function-based context by Ryan.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireRandom->base64();
+
+// usage with all arguments
+$string = $wireRandom->base64($requiredLength = 22, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$requiredLength` (optional) `int` Length of string you want returned (default=22)
@@ -15,4 +25,4 @@ Modified for camelCase, variable names, and function-based context by Ryan.
 
 ## Return value
 
-string|array Returns only array if you specify array for $test argument, otherwise returns string
+- `string|array` Returns only array if you specify array for $test argument, otherwise returns string

@@ -11,11 +11,23 @@ in the destination ($dst) directory.
 This method can also be used to copy single files. If a file is specified for $src, and
 only a path is specified for $dst, then the original filename will be retained in $dst.
 
+## Example
+
 ~~~~~
 // Copy everything from /site/assets/cache/foo/ to /site/assets/cache/bar/
 $copyFrom = $config->paths->cache . "foo/";
 $copyTo = $config->paths->cache . "bar/";
 $files->copy($copyFrom, $copyTo);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireFileTools->copy($src, $dst);
+
+// usage with all arguments
+$bool = $wireFileTools->copy($src, $dst, $options = array());
 ~~~~~
 
 ## Arguments
@@ -26,8 +38,8 @@ $files->copy($copyFrom, $copyTo);
 
 ## Return value
 
-bool True on success, false on failure.
+- `bool` True on success, false on failure.
 
-## Throws
+## Exceptions
 
-- WireException if `limitPath` option is used and either $src or $dst is not allowed
+- `WireException` if `limitPath` option is used and either $src or $dst is not allowed

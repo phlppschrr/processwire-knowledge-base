@@ -10,10 +10,17 @@ Get a single Inputfield for the given field name
 - Please note this method deals only with custom fields, not system fields name 'name' or 'status', etc.,
   as those are exclusive to the ProcessPageEdit page editor.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $page->getInputfield($fieldName);
+~~~~~
+
 ## Arguments
 
 - `$fieldName` `string`
 
 ## Return value
 
-Inputfield|InputfieldWrapper|null Returns Inputfield, or null if given field name doesn't match field for this page.
+- `Inputfield|InputfieldWrapper|null` Returns Inputfield, or null if given field name doesn't match field for this page.

@@ -6,14 +6,21 @@ Given an unhashed password, generate a hash of the password for database storage
 
 Note: When blowfish, returns the entire blowfish string which has the salt as the first 28 characters.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $password->hash($pass);
+~~~~~
+
 ## Arguments
 
 - `$pass` `string` Raw password
 
 ## Return value
 
-string
+- `string`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

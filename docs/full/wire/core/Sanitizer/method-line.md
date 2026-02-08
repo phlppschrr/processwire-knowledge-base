@@ -13,6 +13,16 @@ Please note that like with the text sanitizer, the max length refers to a maximu
 characters, not bytes. The maxBytes is automatically set to the maxLength * 4, or can be
 specifically set via the `maxBytes` option.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->line($value);
+
+// usage with all arguments
+$string = $sanitizer->line($value, $maxLength = 0, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` String to sanitize
@@ -21,9 +31,9 @@ specifically set via the `maxBytes` option.
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::text()](method-text.md)
 - [Sanitizer::lines()](method-lines.md)

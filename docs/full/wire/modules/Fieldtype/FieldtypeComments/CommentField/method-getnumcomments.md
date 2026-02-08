@@ -7,6 +7,16 @@ Get number of comments for Page, optionally limited by specific $options
 Unlike the count() method this is focused on a specific Page and may be faster in
 cases where it matches what you need to count.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $commentField->getNumComments($page);
+
+// usage with all arguments
+$int = $commentField->getNumComments(Page $page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,7 +24,7 @@ cases where it matches what you need to count.
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

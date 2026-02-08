@@ -4,6 +4,16 @@ Source: `wire/core/WireFileTools.php`
 
 Get size of file or directory (in bytes)
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireFileTools->size($path);
+
+// usage with all arguments
+$int = $wireFileTools->size($path, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string` File or directory path
@@ -11,7 +21,7 @@ Get size of file or directory (in bytes)
 
 ## Return value
 
-int|string
+- `int|string`
 
 ## Since
 

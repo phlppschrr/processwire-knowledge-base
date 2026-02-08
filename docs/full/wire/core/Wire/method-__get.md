@@ -8,10 +8,17 @@ If not overridden, this is primarily used as a shortcut for the fuel() method.
 
 Descending classes may have their own __get() but must pass control to this one when they can't find something.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->__get($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
 
 ## Return value
 
-mixed|null
+- `mixed|null`

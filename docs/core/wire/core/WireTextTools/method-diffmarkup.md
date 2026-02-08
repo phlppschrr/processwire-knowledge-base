@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Given two strings ($old and $new) return a diff string in HTML markup
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->diffMarkup($old, $new);
+
+// usage with all arguments
+$string = $wireTextTools->diffMarkup($old, $new, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$old` `string` Old string value
@@ -12,7 +22,7 @@ Given two strings ($old and $new) return a diff string in HTML markup
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

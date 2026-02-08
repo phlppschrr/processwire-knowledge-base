@@ -4,6 +4,16 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Delete files for given page and field version
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesVersionsFiles->deletePageFieldVersionFiles($page, $field, $version);
+
+// usage with all arguments
+$int = $pagesVersionsFiles->deletePageFieldVersionFiles(Page $page, Field $field, $version);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,7 +22,7 @@ Delete files for given page and field version
 
 ## Return value
 
-int
+- `int`
 
 ## Details
 

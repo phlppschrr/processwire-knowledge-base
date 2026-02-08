@@ -4,6 +4,16 @@ Source: `wire/core/WireHttp.php`
 
 Alternate method of sending when allow_url_fopen isn't allowed
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->sendSocket($url);
+
+// usage with all arguments
+$bool = $wireHttp->sendSocket($url, $method = 'POST', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string`
@@ -12,4 +22,4 @@ Alternate method of sending when allow_url_fopen isn't allowed
 
 ## Return value
 
-bool|string
+- `bool|string`

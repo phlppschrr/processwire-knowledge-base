@@ -15,9 +15,21 @@ Sanitize as a ProcessWire page name
 - If `$config->pageNameCharset` is "UTF8" then non-ASCII page names will be converted to punycode ("xn-") ASCII page names,
   rather than converted, regardless of `$beautify` setting.
 
+## Example
+
 ~~~~~
 $test = "Hello world!";
 echo $sanitizer->pageName($test, true); // outputs: hello-world
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->pageName($value);
+
+// usage with all arguments
+$string = $sanitizer->pageName($value, $beautify = false, $maxLength = 128, array $options = array());
 ~~~~~
 
 ## Arguments
@@ -29,8 +41,8 @@ echo $sanitizer->pageName($test, true); // outputs: hello-world
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::name()](method-name.md)

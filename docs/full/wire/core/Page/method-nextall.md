@@ -4,6 +4,16 @@ Source: `wire/core/Page.php`
 
 Return all sibling pages after this one, optionally matching a selector
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $page->nextAll();
+
+// usage with all arguments
+$items = $page->nextAll($selector = '', $getQty = false, $getPrev = false);
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|array|bool` Optional selector. When specified, will filter the found siblings.
@@ -12,4 +22,4 @@ Return all sibling pages after this one, optionally matching a selector
 
 ## Return value
 
-PageArray|int Returns all matching pages after this one, or integer if $count option specified.
+- `PageArray|int` Returns all matching pages after this one, or integer if $count option specified.

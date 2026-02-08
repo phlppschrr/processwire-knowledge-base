@@ -8,6 +8,8 @@ Optionally specify expiration time and/or a cache generation function to use whe
 
 Cached value can be a string, an array of non-object values, or a PageArray.
 
+## Example
+
 ~~~~~
 // get single cache value
 $str = $cache->get('foo');
@@ -27,6 +29,16 @@ $str = $cache->get('foo', 3600, function() {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireCache->get($name);
+
+// usage with all arguments
+$string = $wireCache->get($name, $expire = null, $func = null);
+~~~~~
+
 ## Arguments
 
 - `$name` `string|array` Provide a single cache name, an array of cache names, or an asterisk cache name. - If given a single cache name (string) just the contents of that cache will be returned. - If given an array of names, multiple caches will be returned, indexed by cache name. - If given a cache name with an asterisk in it, it will return an array of all matching caches.
@@ -35,8 +47,8 @@ $str = $cache->get('foo', 3600, function() {
 
 ## Return value
 
-string|array|PageArray|mixed|null Returns null if cache doesn’t exist and no generation function provided.
+- `string|array|PageArray|mixed|null` Returns null if cache doesn’t exist and no generation function provided.
 
-## Throws
+## Exceptions
 
-- WireException if given invalid arguments
+- `WireException` if given invalid arguments

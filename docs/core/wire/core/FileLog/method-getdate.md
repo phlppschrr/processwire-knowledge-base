@@ -4,6 +4,16 @@ Source: `wire/core/FileLog.php`
 
 Get log lines that lie within a date range
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fileLog->getDate($dateFrom);
+
+// usage with all arguments
+$array = $fileLog->getDate($dateFrom, $dateTo = 0, $pageNum = 1, $limit = 100);
+~~~~~
+
 ## Arguments
 
 - `$dateFrom` `int` Starting date (unix timestamp or strtotime compatible string)
@@ -13,4 +23,4 @@ Get log lines that lie within a date range
 
 ## Return value
 
-array
+- `array`

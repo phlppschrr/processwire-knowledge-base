@@ -22,6 +22,8 @@ existing $config property with JS.
 
 4. Specify no params to retrieve in array of all existing set values.
 
+## Example
+
 ~~~~~
 // Set a property from PHP
 $config->js('mySettings', [
@@ -32,11 +34,22 @@ $config->js('mySettings', [
 // Get a property (from PHP)
 $mySettings = $config->js('mySettings');
 ~~~~~
+
 ~~~~~
 // Get a property (from Javascript):
 var mySettings = ProcessWire.config.mySettings;
 console.log(mySettings.foo);
 console.log(mySettings.bar);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$array = $config->js();
+
+// usage with all arguments
+$array = $config->js($key = null, $value = null);
 ~~~~~
 
 ## Arguments
@@ -46,4 +59,4 @@ console.log(mySettings.bar);
 
 ## Return value
 
-array|mixed|null|$this
+- `array|mixed|null|$this`

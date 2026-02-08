@@ -16,6 +16,8 @@ To set a different default value for the `$useVersion` argument, you can populat
 the `$config->useVersionUrls` setting in your /site/config.php with the default
 value you want to substitute.
 
+## Example
+
 ~~~~~
 foreach($config->versionUrls($config->styles) as $url) {
   echo "<link rel='stylesheet' href='$url' />";
@@ -26,6 +28,16 @@ foreach($config->styles->urls() as $url) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $config->versionUrls($urls);
+
+// usage with all arguments
+$array = $config->versionUrls($urls, $useVersion = null);
+~~~~~
+
 ## Arguments
 
 - `$urls` `array|FilenameArray|WireArray|\ArrayObject` Array of URLs to file assets such as JS/CSS files.
@@ -33,7 +45,7 @@ foreach($config->styles->urls() as $url) {
 
 ## Return value
 
-array Array of URLs updated with version strings where needed
+- `array` Array of URLs updated with version strings where needed
 
 ## Since
 

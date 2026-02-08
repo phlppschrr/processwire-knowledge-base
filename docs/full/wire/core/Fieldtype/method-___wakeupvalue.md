@@ -10,6 +10,16 @@ then this would be the method that converts that value to an object and returns 
 This method is called by the Page class, which takes the value provided by `Fieldtype::loadPageField()` and sends
 it to this method before making it a part of the Page.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $fieldtype->___wakeupValue($page, $field, $value);
+
+// usage with all arguments
+$string = $fieldtype->___wakeupValue(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -18,8 +28,8 @@ it to this method before making it a part of the Page.
 
 ## Return value
 
-string|int|array|object $value
+- `string|int|array|object` $value
 
-## See also
+## See Also
 
 - [Fieldtype::sleepValue()](method-___sleepvalue.md)

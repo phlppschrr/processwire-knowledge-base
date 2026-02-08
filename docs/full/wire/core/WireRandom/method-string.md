@@ -4,6 +4,16 @@ Source: `wire/core/WireRandom.php`
 
 Generate a random string using given characters
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireRandom->string();
+
+// usage with all arguments
+$string = $wireRandom->string($length = 0, $characters = '', array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$length` (optional) `int` Length of string or specify 0 for random length
@@ -12,7 +22,7 @@ Generate a random string using given characters
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

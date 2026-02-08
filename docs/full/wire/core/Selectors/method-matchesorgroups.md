@@ -4,6 +4,16 @@ Source: `wire/core/Selectors.php`
 
 Do the given OR-groups match the given Wire?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selectors->matchesOrGroups($orGroups, $item);
+
+// usage with all arguments
+$bool = $selectors->matchesOrGroups(array $orGroups, Wire $item);
+~~~~~
+
 ## Arguments
 
 - `$orGroups` `array|string[]|array[]`
@@ -11,7 +21,7 @@ Do the given OR-groups match the given Wire?
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

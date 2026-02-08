@@ -4,6 +4,16 @@ Source: `wire/core/DatabaseQuery.php`
 
 Bind a parameter value
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $databaseQuery->bindValue($key, $value);
+
+// usage with all arguments
+$result = $databaseQuery->bindValue($key, $value, $type = null);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Parameter name
@@ -12,4 +22,4 @@ Bind a parameter value
 
 ## Return value
 
-$this
+- `$this`

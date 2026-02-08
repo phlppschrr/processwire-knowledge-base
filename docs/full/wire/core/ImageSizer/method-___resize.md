@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizer.php`
 
 Resize the image proportionally to the given width/height
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizer->___resize($targetWidth);
+
+// usage with all arguments
+$bool = $imageSizer->___resize($targetWidth, $targetHeight = 0);
+~~~~~
+
 ## Arguments
 
 - `$targetWidth` `int` Target width in pixels, or 0 for proportional to height
@@ -11,8 +21,8 @@ Resize the image proportionally to the given width/height
 
 ## Return value
 
-bool True if the resize was successful, false if not
+- `bool` True if the resize was successful, false if not
 
-## Throws
+## Exceptions
 
-- WireException when not enough memory to load image or missing required data
+- `WireException` when not enough memory to load image or missing required data

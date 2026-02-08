@@ -6,6 +6,16 @@ Render a admin theme template file
 
 This method is only used if it is hooked
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeFramework->___renderFile($file);
+
+// usage with all arguments
+$string = $adminThemeFramework->___renderFile($file, array $vars = array());
+~~~~~
+
 ## Arguments
 
 - `$file` `string` Full path and filename
@@ -13,7 +23,7 @@ This method is only used if it is hooked
 
 ## Return value
 
-string Returns blank string when $echo is true
+- `string` Returns blank string when $echo is true
 
 ## Since
 

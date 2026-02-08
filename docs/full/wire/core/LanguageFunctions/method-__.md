@@ -46,6 +46,8 @@ changed based on whether a value `$n` would require a singular or plural tense.
 - The provided text argument must be one string of static text. It cannot contain PHP variables or concatenation. To populate
   dynamic values you should use PHP’s `sprintf()` (see examples below).
 
+## Example
+
 ~~~~~~
 // Standard way to make static text translatable
 echo __('This is translatable text');
@@ -78,6 +80,16 @@ __([ 'New text', 'Old text' ]);
 _x([ 'Canada Goose', 'Canadian Goose' ], 'bird');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageFunctions->__($text);
+
+// usage with all arguments
+$string = $languageFunctions->__($text, $textdomain = null, $context = '');
+~~~~~
+
 ## Arguments
 
 - `$text` `string|array|bool` Text for translation.
@@ -86,9 +98,9 @@ _x([ 'Canada Goose', 'Canadian Goose' ], 'bird');
 
 ## Return value
 
-string|array Translated text or original text if translation not available. Returns array only if getting/setting options.
+- `string|array` Translated text or original text if translation not available. Returns array only if getting/setting options.
 
-## See also
+## See Also
 
 - _x()
 - _n()

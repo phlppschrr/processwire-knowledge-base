@@ -4,9 +4,16 @@ Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Get unique score field name
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $databaseQuerySelectFulltext->getScoreFieldName();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

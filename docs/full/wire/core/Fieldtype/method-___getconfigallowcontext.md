@@ -10,10 +10,20 @@ or getConfigArray().
 Inputfield field names returned from here are allowed to have unique values per Fieldgroup assignment, rather
 than sharing the same setting globally.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtype->___getConfigAllowContext($field);
+
+// usage with all arguments
+$array = $fieldtype->___getConfigAllowContext(Field $field);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
 
 ## Return value
 
-array of Inputfield names
+- `array` of Inputfield names

@@ -6,6 +6,16 @@ Sanitize and validate an email address
 
 Returns valid email address, or blank string if it isn’t valid.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->email($value);
+
+// usage with all arguments
+$string = $sanitizer->email($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Email address to sanitize and validate.
@@ -13,4 +23,4 @@ Returns valid email address, or blank string if it isn’t valid.
 
 ## Return value
 
-string Sanitized, valid email address, or blank string on failure.
+- `string` Sanitized, valid email address, or blank string on failure.

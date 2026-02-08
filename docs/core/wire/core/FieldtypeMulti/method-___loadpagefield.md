@@ -16,6 +16,16 @@ If pagination is active, the following extra properties are populated to the ret
 - `_pagination_start` (int): The starting index of the pagination.
 - `_pagination_total` (int): The total number of items across all paginations.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtypeMulti->___loadPageField($page, $field);
+
+// usage with all arguments
+$array = $fieldtypeMulti->___loadPageField(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page object to save.
@@ -23,4 +33,4 @@ If pagination is active, the following extra properties are populated to the ret
 
 ## Return value
 
-array|null
+- `array|null`

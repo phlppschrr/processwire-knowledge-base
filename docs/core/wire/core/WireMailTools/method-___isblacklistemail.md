@@ -10,6 +10,8 @@ Is given email address in the blacklist?
 - Specify true for the `why` option if you want to return the matching rule when email is in blacklist.
 - Specify true for the `throw` option if you want a WireException thrown when email is blacklisted.
 
+## Example
+
 ~~~~~
 // Define blacklist in /site/config.php
 $config->wireMail('blacklist', [
@@ -32,6 +34,16 @@ if($result === false) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireMailTools->___isBlacklistEmail($email);
+
+// usage with all arguments
+$bool = $wireMailTools->___isBlacklistEmail($email, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$email` `string` Email to check
@@ -39,11 +51,11 @@ if($result === false) {
 
 ## Return value
 
-bool|string Returns true if email is blacklisted, false if not. Returns string if `why` option specified + email blacklisted.
+- `bool|string` Returns true if email is blacklisted, false if not. Returns string if `why` option specified + email blacklisted.
 
-## Throws
+## Exceptions
 
-- WireException if given a blacklist that is not an array, or if requested to via `throw` option.
+- `WireException` if given a blacklist that is not an array, or if requested to via `throw` option.
 
 ## Since
 

@@ -18,6 +18,16 @@ For example:
 This method also supports multi-language and will output in the current user's language, so long as the
 phrases in /wire/core/WireDateTime.php are translated in the language pack.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDateTime->___relativeTimeStr($ts);
+
+// usage with all arguments
+$string = $wireDateTime->___relativeTimeStr($ts, $abbreviate = false, $useTense = true);
+~~~~~
+
 ## Arguments
 
 - `$ts` `int|string` Unix timestamp or date string
@@ -26,4 +36,4 @@ phrases in /wire/core/WireDateTime.php are translated in the language pack.
 
 ## Return value
 
-string Formatted relative time string
+- `string` Formatted relative time string

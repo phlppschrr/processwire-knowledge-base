@@ -4,6 +4,16 @@ Source: `wire/core/PageAccess.php`
 
 Returns the template from which we get our role/access settings from
 
+## Usage
+
+~~~~~
+// basic usage
+$template = $pageAccess->getAccessTemplate($page);
+
+// usage with all arguments
+$template = $pageAccess->getAccessTemplate(Page $page, $type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Returns the template from which we get our role/access settings from
 
 ## Return value
 
-Template|null Returns null if none
+- `Template|null` Returns null if none

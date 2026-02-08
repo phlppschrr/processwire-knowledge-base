@@ -4,6 +4,16 @@ Source: `wire/core/WireMarkupFileRegions.php`
 
 Populate file regions
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupFileRegions->populateRegions($fileRegions, $html);
+
+// usage with all arguments
+$string = $wireMarkupFileRegions->populateRegions(array $fileRegions, &$html, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$fileRegions` `array` Regions found by findRegions()
@@ -12,7 +22,7 @@ Populate file regions
 
 ## Return value
 
-string Returned value only useful if autoInsert=true
+- `string` Returned value only useful if autoInsert=true
 
 ## Since
 

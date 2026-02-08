@@ -4,6 +4,13 @@ Source: `wire/core/Wire.php`
 
 Record a Notice, internal use (contains the code for message, warning and error methods)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->_notice($text, $flags, $name, $class);
+~~~~~
+
 ## Arguments
 
 - `$text` `string|array|Wire` Title of notice
@@ -13,4 +20,4 @@ Record a Notice, internal use (contains the code for message, warning and error 
 
 ## Return value
 
-$this
+- `$this`

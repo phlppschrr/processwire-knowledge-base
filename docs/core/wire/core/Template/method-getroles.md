@@ -10,14 +10,24 @@ Get the role pages that are part of this template
 - If you make changes to returned roles, make sure to set it back to the template again with setRoles().
   It’s preferable to make changes with addRole() and removeRole() methods instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $template->getRoles();
+
+// usage with all arguments
+$items = $template->getRoles($type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$type` (optional) `string` Default is 'view', but you may also specify 'edit', 'create' or 'add' to retrieve those.
 
 ## Return value
 
-PageArray of Role objects.
+- `PageArray` of Role objects.
 
-## Throws
+## Exceptions
 
-- WireException if given an unknown roles type
+- `WireException` if given an unknown roles type

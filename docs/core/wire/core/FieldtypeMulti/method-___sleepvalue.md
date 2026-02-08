@@ -11,6 +11,16 @@ the table, so other fieldtypes may want to override this and return an array of 
 and any other fields that map to the table. i.e. $values[] = array('data' => $data, 'description' => $description), etc.
 See FieldtypePagefiles module class for an example of this.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtypeMulti->___sleepValue($page, $field, $value);
+
+// usage with all arguments
+$array = $fieldtypeMulti->___sleepValue(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -19,4 +29,4 @@ See FieldtypePagefiles module class for an example of this.
 
 ## Return value
 
-array
+- `array`

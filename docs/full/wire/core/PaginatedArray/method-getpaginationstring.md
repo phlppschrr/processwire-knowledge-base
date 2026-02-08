@@ -17,6 +17,8 @@ array instead, and you can specify any of these options:
  - `limit` (int): Use this limit rather than limit in this PaginatedArray (default=-1, disabled).
  - `total` (int): Use this total rather than total in this PaginatedArray (default=-1, disabled).
 
+## Example
+
 ~~~~~
 // Get string like "Items 1 to 25 of 500"
 echo $items->getPaginationString('Items');
@@ -36,6 +38,16 @@ echo $items->getPaginationString(array(
 ));
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $paginatedArray->getPaginationString();
+
+// usage with all arguments
+$string = $paginatedArray->getPaginationString($label = '', $usePageNum = false);
+~~~~~
+
 ## Arguments
 
 - `$label` (optional) `string|array` Label to identify item type, i.e. "Items" or "Page", etc. (default=empty).
@@ -43,4 +55,4 @@ echo $items->getPaginationString(array(
 
 ## Return value
 
-string Formatted string
+- `string` Formatted string

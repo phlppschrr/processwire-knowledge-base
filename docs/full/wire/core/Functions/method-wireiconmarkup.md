@@ -11,6 +11,8 @@ lg, fw, 2x, 3x, 4x, 5x, spin, spinner, li, border, inverse,
 rotate-90, rotate-180, rotate-270, flip-horizontal, flip-vertical,
 stack, stack-1x, stack-2x
 
+## Example
+
 ~~~~~
 // Outputs: "<i class='fa fa-home'></i>"
 echo wireIconMarkup('home');
@@ -23,6 +25,16 @@ echo wireIconMarkup('home', 'fw id=root-icon');
 echo wireIconMarkup('home fw id=root-icon'); // same as above
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $functions->wireIconMarkup($icon);
+
+// usage with all arguments
+$string = $functions->wireIconMarkup($icon, $class = '');
+~~~~~
+
 ## Arguments
 
 - `$icon` `string` Icon name (currently a font-awesome icon name)
@@ -30,4 +42,4 @@ echo wireIconMarkup('home fw id=root-icon'); // same as above
 
 ## Return value
 
-string
+- `string`

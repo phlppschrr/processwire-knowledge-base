@@ -10,10 +10,20 @@ Check if the requested path is to a secured page file
 - Returns true and updates $path when pagefile was found using deprecated prefix method.
 - Returns false when none found.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesRequest->checkRequestFile($path);
+
+// usage with all arguments
+$bool = $pagesRequest->checkRequestFile(&$path);
+~~~~~
+
 ## Arguments
 
 - `$path` `string` Request path
 
 ## Return value
 
-bool|Page|NullPage
+- `bool|Page|NullPage`

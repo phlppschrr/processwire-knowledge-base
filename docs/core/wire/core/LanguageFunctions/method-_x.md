@@ -8,9 +8,21 @@ Used when two or more text strings might be the same in default language, but di
 This enables you to limit the context of the translation to a named context, like "button" or "headline" or
 whatever name you decide to use.
 
+## Example
+
 ~~~~~
 echo _x('Click for more', 'button');
 echo _x('Click for more', 'text-link');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageFunctions->_x($text, $context);
+
+// usage with all arguments
+$string = $languageFunctions->_x($text, $context, $textdomain = null);
 ~~~~~
 
 ## Arguments
@@ -21,9 +33,9 @@ echo _x('Click for more', 'text-link');
 
 ## Return value
 
-string Translated text or original text if translation not available.
+- `string` Translated text or original text if translation not available.
 
-## See also
+## See Also
 
 - __()
 - _n()

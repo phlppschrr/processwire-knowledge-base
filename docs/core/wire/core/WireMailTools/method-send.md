@@ -9,6 +9,8 @@ Send an email
 - This function will attempt to use an installed module that extends `WireMail`.
   If no module is installed, `WireMail` (which uses PHP mail) will be used instead.
 
+## Example
+
 ~~~~~
 // 1. Default usage:
 $mail->send($to, $from, $subject, $body);
@@ -26,6 +28,16 @@ $mail->send($to, $from, $subject, $body, $bodyHTML);
 $wireMail = $mail->send();
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireMailTools->send();
+
+// usage with all arguments
+$int = $wireMailTools->send($to = '', $from = '', $subject = '', $body = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$to` (optional) `string|array` Email address TO. For multiple, specify CSV string or array.
@@ -36,4 +48,4 @@ $wireMail = $mail->send();
 
 ## Return value
 
-int|WireMail Returns number of messages sent or WireMail object if no arguments specified.
+- `int|WireMail` Returns number of messages sent or WireMail object if no arguments specified.

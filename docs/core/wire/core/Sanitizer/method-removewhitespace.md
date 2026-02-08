@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Remove or replace all whitespace from string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->removeWhitespace($str);
+
+// usage with all arguments
+$string = $sanitizer->removeWhitespace($str, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to remove whitespace from
@@ -11,7 +21,7 @@ Remove or replace all whitespace from string
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

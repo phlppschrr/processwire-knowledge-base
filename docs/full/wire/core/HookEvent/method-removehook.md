@@ -6,9 +6,18 @@ Remove a hook by ID
 
 To remove the hook that this event is for, call it with the $hookId argument as null or blank.
 
+## Example
+
 ~~~~~
 // Remove this hook event, preventing it from executing again
 $event->removeHook(null);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$hookEvent = $hookEvent->removeHook($hookId);
 ~~~~~
 
 ## Arguments
@@ -17,4 +26,4 @@ $event->removeHook(null);
 
 ## Return value
 
-HookEvent|WireData $this
+- `HookEvent|WireData` $this

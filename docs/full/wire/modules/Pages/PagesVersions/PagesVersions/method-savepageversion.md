@@ -4,6 +4,16 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Save a page version
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesVersions->savePageVersion($page);
+
+// usage with all arguments
+$int = $pagesVersions->savePageVersion(Page $page, $version = 0, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,8 +22,8 @@ Save a page version
 
 ## Return value
 
-int|array Returns version number saved or added or 0 on fail
+- `int|array` Returns version number saved or added or 0 on fail
 
-## Throws
+## Exceptions
 
-- WireException|\PDOException
+- `WireException|\PDOException`

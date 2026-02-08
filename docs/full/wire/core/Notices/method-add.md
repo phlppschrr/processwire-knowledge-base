@@ -8,10 +8,17 @@ Add a Notice object
 $notices->add(new NoticeError("An error occurred!"));
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$notices = $notices->add($item);
+~~~~~
+
 ## Arguments
 
 - `$item` `Notice`
 
 ## Return value
 
-Notices|WireArray
+- `Notices|WireArray`

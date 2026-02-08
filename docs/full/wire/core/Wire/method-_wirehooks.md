@@ -3,9 +3,16 @@
 Source: `wire/core/Wire.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$wireHooks = $wire->_wireHooks();
+~~~~~
+
 ## Return value
 
-WireHooks|null
+- `WireHooks|null`
 
 ## Since
 

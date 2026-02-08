@@ -7,14 +7,21 @@ Import the given item(s) into this WireArray.
 - Adds imported items to the end of the WireArray.
 - Skips over any items already present in the WireArray (when duplicateChecking is enabled)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->import($items);
+~~~~~
+
 ## Arguments
 
 - `$items` `array|WireArray` Items to import.
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException If given items not compatible with the WireArray
+- `WireException` If given items not compatible with the WireArray

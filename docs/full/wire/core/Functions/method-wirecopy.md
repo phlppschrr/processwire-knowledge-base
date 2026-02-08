@@ -6,6 +6,16 @@ Copy all files recursively from one directory to another
 
 This is procedural version of the `$files->copy()` method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $functions->wireCopy($src, $dst);
+
+// usage with all arguments
+$bool = $functions->wireCopy($src, $dst, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$src` `string` Path to copy files from
@@ -14,8 +24,8 @@ This is procedural version of the `$files->copy()` method.
 
 ## Return value
 
-bool True on success, false on failure.
+- `bool` True on success, false on failure.
 
-## See also
+## See Also
 
 - [WireFileTools::copy()](../WireFileTools/method-copy.md)

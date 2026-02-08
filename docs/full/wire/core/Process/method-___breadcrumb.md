@@ -4,8 +4,17 @@ Source: `wire/core/Process.php`
 
 Add a breadcrumb
 
+## Example
+
 ~~~~~
 $this->breadcrumb("../", "Widgets");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $process->___breadcrumb($href, $label);
 ~~~~~
 
 ## Arguments
@@ -15,4 +24,4 @@ $this->breadcrumb("../", "Widgets");
 
 ## Return value
 
-$this
+- `$this`

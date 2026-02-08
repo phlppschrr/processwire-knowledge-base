@@ -20,6 +20,13 @@ Returns integer, one of:
 - 405: method not allowed
 - 414: request path too long or segment too long
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesRequest->getResponseCode();
+~~~~~
+
 ## Return value
 
-int
+- `int`

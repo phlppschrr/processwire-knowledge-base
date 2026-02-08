@@ -4,6 +4,13 @@ Source: `wire/core/PagesPathFinder.php`
 
 Get value from page status column
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesPathFinder->getPageLanguageStatus($pageId, $languageId);
+~~~~~
+
 ## Arguments
 
 - `$pageId` `int`
@@ -11,4 +18,4 @@ Get value from page status column
 
 ## Return value
 
-int
+- `int`

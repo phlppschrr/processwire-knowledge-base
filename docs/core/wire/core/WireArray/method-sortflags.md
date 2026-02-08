@@ -19,13 +19,23 @@ The following constants may be used when setting the sort flags:
 
 For more details, see `$sort_flags` argument at: https://www.php.net/manual/en/function.sort.php
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireArray->sortFlags();
+
+// usage with all arguments
+$int = $wireArray->sortFlags($sortFlags = false);
+~~~~~
+
 ## Arguments
 
 - `$sortFlags` (optional) `bool` Optionally specify flag(s) to set
 
 ## Return value
 
-int Returns current flags
+- `int` Returns current flags
 
 ## Since
 

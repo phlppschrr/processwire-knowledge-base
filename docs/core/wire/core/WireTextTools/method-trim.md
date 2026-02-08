@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Strip whitespace (or other characters) from the beginning and end of a string
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->trim($str);
+
+// usage with all arguments
+$string = $wireTextTools->trim($str, $chars = '');
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
@@ -11,4 +21,4 @@ Strip whitespace (or other characters) from the beginning and end of a string
 
 ## Return value
 
-string
+- `string`

@@ -8,6 +8,16 @@ This is to reduce the number of unique selectors that produce the same result.
 It is helpful with caching results, so that we don't cache the same results multiple
 times because they used slightly different selectors.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesLoader->normalizeSelectorString($selector);
+
+// usage with all arguments
+$array = $pagesLoader->normalizeSelectorString($selector, $convertIDs = true);
+~~~~~
+
 ## Arguments
 
 - `$selector` `string`
@@ -15,4 +25,4 @@ times because they used slightly different selectors.
 
 ## Return value
 
-array|int|string
+- `array|int|string`

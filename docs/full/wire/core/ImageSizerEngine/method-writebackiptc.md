@@ -7,6 +7,16 @@ Default IPTC Handling
 If we've retrieved IPTC-Metadata from sourcefile, we write it into the variation here but we omit
 custom tags for internal use (@horst)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngine->writeBackIPTC($filename);
+
+// usage with all arguments
+$bool = $imageSizerEngine->writeBackIPTC($filename, $includeCustomTags = false);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` the file we want write the IPTC data to
@@ -14,4 +24,4 @@ custom tags for internal use (@horst)
 
 ## Return value
 
-bool|null
+- `bool|null`

@@ -3,3 +3,10 @@
 Source: `wire/core/WireTempDir.php`
 
 Destruct
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireTempDir->__destruct();
+~~~~~

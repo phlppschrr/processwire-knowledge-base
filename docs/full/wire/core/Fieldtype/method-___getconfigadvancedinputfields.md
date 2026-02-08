@@ -12,10 +12,20 @@ In most cases, you will want to implement the getConfigInputfields() or getConfi
 NOTE: Inputfields with a name that starts with an underscore, i.e. "_myname" are assumed to be for runtime
 use and are NOT stored in the database.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldWrapper = $fieldtype->___getConfigAdvancedInputfields($field);
+
+// usage with all arguments
+$inputfieldWrapper = $fieldtype->___getConfigAdvancedInputfields(Field $field);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
 
 ## Return value
 
-InputfieldWrapper
+- `InputfieldWrapper`

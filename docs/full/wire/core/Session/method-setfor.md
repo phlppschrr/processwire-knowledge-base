@@ -6,9 +6,18 @@ Set a session variable within a given namespace
 
 To remove a namespace, use `$session->remove($namespace)`.
 
+## Example
+
 ~~~~~
 // Set a session value for a namespace
 $session->setFor($this, 'firstName', 'Bob');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->setFor($ns, $key, $value);
 ~~~~~
 
 ## Arguments
@@ -19,4 +28,4 @@ $session->setFor($this, 'firstName', 'Bob');
 
 ## Return value
 
-$this
+- `$this`

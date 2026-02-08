@@ -4,9 +4,18 @@ Source: `wire/core/WireMail.php`
 
 Set the email message body (text only)
 
+## Example
+
 ~~~~~
 $m = wireMail();
 $m->body('Hello world');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMail->body($body);
 ~~~~~
 
 ## Arguments
@@ -15,4 +24,4 @@ $m->body('Hello world');
 
 ## Return value
 
-$this
+- `$this`

@@ -11,9 +11,21 @@ if you don’t need a selector.
 
 If you want to find descendant pages (rather than count), use the `Page::find()` method.
 
+## Example
+
 ~~~~~
 // Find how many descendants were modified in the last week
 $qty = $page->numDescendants("modified>='-1 WEEK'");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->numDescendants();
+
+// usage with all arguments
+$int = $page->numDescendants($selector = null);
 ~~~~~
 
 ## Arguments
@@ -22,9 +34,9 @@ $qty = $page->numDescendants("modified>='-1 WEEK'");
 
 ## Return value
 
-int Number of descendants
+- `int` Number of descendants
 
-## See also
+## See Also
 
 - [Page::numChildren()](method-numchildren.md)
 - [Page::find()](method-find.md)

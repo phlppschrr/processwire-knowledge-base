@@ -4,6 +4,16 @@ Source: `wire/core/PagesEditor.php`
 
 Is the given page in a state where it can be saved from the API?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->isSaveable($page, $reason);
+
+// usage with all arguments
+$bool = $pagesEditor->isSaveable(Page $page, &$reason, $fieldName = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,4 +23,4 @@ Is the given page in a state where it can be saved from the API?
 
 ## Return value
 
-bool True if saveable, False if not
+- `bool` True if saveable, False if not

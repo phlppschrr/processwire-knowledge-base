@@ -4,6 +4,16 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Returns array of all create table statements, indexed by table name
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireDatabaseBackup->findStatements($filename, $regex);
+
+// usage with all arguments
+$array = $wireDatabaseBackup->findStatements($filename, $regex, $multi = true);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` to extract all CREATE TABLE statements from
@@ -12,8 +22,8 @@ Returns array of all create table statements, indexed by table name
 
 ## Return value
 
-array of statements, indexed by table name. If $multi is true, it will be array of arrays.
+- `array` of statements, indexed by table name. If $multi is true, it will be array of arrays.
 
-## Throws
+## Exceptions
 
-- \Exception if unable to open specified file
+- `\Exception` if unable to open specified file

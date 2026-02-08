@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize to ASCII alpha (a-z A-Z)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->alpha($value);
+
+// usage with all arguments
+$string = $sanitizer->alpha($value, $beautify = false, $maxLength = 1024);
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Value to sanitize
@@ -12,4 +22,4 @@ Sanitize to ASCII alpha (a-z A-Z)
 
 ## Return value
 
-string
+- `string`

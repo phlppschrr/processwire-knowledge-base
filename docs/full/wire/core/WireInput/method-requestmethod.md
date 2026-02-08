@@ -13,13 +13,23 @@ Possible return values are:
 - OPTIONS
 - or blank if not known
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireInput->requestMethod();
+
+// usage with all arguments
+$string = $wireInput->requestMethod($method = '');
+~~~~~
+
 ## Arguments
 
 - `$method` (optional) `string` Optionally enter the request method to return bool if current method matches
 
 ## Return value
 
-string|bool
+- `string|bool`
 
 ## Since
 

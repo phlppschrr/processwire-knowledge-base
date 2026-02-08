@@ -10,6 +10,16 @@ and force-download state.
 This function throws a `WireException` if the file can’t be sent for some reason. Set the `throw` option to
 false if you want it to instead return integer 0 when errors occur.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireFileTools->send($filename);
+
+// usage with all arguments
+$int = $wireFileTools->send($filename, array $options = array(), array $headers = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string|bool` Full path and filename to send or boolean false if provided in `$options[data]`.
@@ -18,12 +28,12 @@ false if you want it to instead return integer 0 when errors occur.
 
 ## Return value
 
-int Returns bytes sent, only if `exit` option is false (since 3.0.169)
+- `int` Returns bytes sent, only if `exit` option is false (since 3.0.169)
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [WireHttp::sendFile()](../WireHttp/method-___sendfile.md)

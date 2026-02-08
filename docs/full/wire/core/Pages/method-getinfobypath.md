@@ -15,6 +15,9 @@ If the `response` property in the return value is 301 or 302, then the
 If given a `$path` argument of `/en/foo/bar/page3` on a site that has default
 language homepage segment of `en`, a page living at `/foo/` that accepts
 URL segment `bar` and has pagination enabled, it will return the following:
+
+## Example
+
 ~~~~~
 [
   'request' => '/en/foo/bar/page3',
@@ -67,6 +70,16 @@ URL segment `bar` and has pagination enabled, it will return the following:
 ]
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pages->getInfoByPath($path);
+
+// usage with all arguments
+$array = $pages->getInfoByPath($path, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string` Page path optionally including URL segments, language prefix, pagination number
@@ -74,4 +87,4 @@ URL segment `bar` and has pagination enabled, it will return the following:
 
 ## Return value
 
-array
+- `array`

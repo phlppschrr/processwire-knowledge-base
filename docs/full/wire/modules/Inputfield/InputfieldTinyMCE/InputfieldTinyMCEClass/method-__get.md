@@ -4,10 +4,17 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEClass.php`
 
 Get
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfieldTinyMCEClass->__get($name);
+~~~~~
+
 ## Arguments
 
 - $key
 
 ## Return value
 
-array|mixed|string|null
+- `array|mixed|string|null`

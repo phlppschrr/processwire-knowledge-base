@@ -4,6 +4,16 @@ Source: `wire/core/WireFileTools.php`
 
 Convert given directory name to use unix slashes and enforce trailing or no-trailing slash
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireFileTools->unixDirName($dir);
+
+// usage with all arguments
+$string = $wireFileTools->unixDirName($dir, $trailingSlash = true);
+~~~~~
+
 ## Arguments
 
 - `$dir` `string` Directory name to adust (if it needs it)
@@ -11,4 +21,4 @@ Convert given directory name to use unix slashes and enforce trailing or no-trai
 
 ## Return value
 
-string Adjusted directory name
+- `string` Adjusted directory name

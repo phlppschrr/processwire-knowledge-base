@@ -19,6 +19,8 @@ Please note:
 - If previously added but unsaved items (aka "ready items") exist in the repeater, they will
   be recycled and returned by this method rather than creating a new item.
 
+## Example
+
 ~~~~~
 $item = $page->repeater_field->getNewItem(); // get new repeater item
 $item->title = 'My new item'; // set field value(s) as needed
@@ -26,6 +28,13 @@ $item->save(); // save the item
 $page->save('repeater_field'); // save the page that has the repeater
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$repeaterPage = $repeaterPageArray->getNewItem();
+~~~~~
+
 ## Return value
 
-RepeaterPage
+- `RepeaterPage`

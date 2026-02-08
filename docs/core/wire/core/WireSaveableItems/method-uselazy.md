@@ -4,9 +4,16 @@ Source: `wire/core/WireSaveableItems.php`
 
 Use lazy loading for this type?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireSaveableItems->useLazy();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Given a URL to a ZIP file, download it, unzip it, and move to /site/modules/[ModuleName]
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processModuleInstall->downloadModule($url);
+
+// usage with all arguments
+$bool = $processModuleInstall->downloadModule($url, $destinationDir = '', $type = 'download');
+~~~~~
+
 ## Arguments
 
 - `$url` `string` Download URL
@@ -12,4 +22,4 @@ Given a URL to a ZIP file, download it, unzip it, and move to /site/modules/[Mod
 
 ## Return value
 
-bool|string Returns destinationDir on success, false on failure.
+- `bool|string` Returns destinationDir on success, false on failure.

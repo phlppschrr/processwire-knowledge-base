@@ -24,6 +24,8 @@ There is also the `wire()` procedural function, which provides the same access t
 variables. Note however the procedural version does not support creating API variables or
 injection of dependencies.
 
+## Example
+
 ~~~~~
 // Get the 'pages' API variable
 $pages = $this->wire('pages');
@@ -54,6 +56,16 @@ $this->wire($widgets);
 $newPage = $this->wire(new Page());
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$processWire = $wire->wire();
+
+// usage with all arguments
+$processWire = $wire->wire($name = '', $value = null, $lock = false);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|object` Name of API variable to retrieve, set, or omit to retrieve the master ProcessWire object.
@@ -62,8 +74,8 @@ $newPage = $this->wire(new Page());
 
 ## Return value
 
-ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|PagesVersions|string|mixed
+- `ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|PagesVersions|string|mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -11,6 +11,16 @@ Please see the documentation for the `$pages->findRaw()` method, which all appli
 The biggest difference is that this method returns data for just 1 page, unlike `$pages->findRaw()` which can
 return data for many pages at once.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pages->getRaw($selector);
+
+// usage with all arguments
+$array = $pages->getRaw($selector, $field = '', $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors|int` Page matching selector or page ID
@@ -19,4 +29,4 @@ return data for many pages at once.
 
 ## Return value
 
-array
+- `array`

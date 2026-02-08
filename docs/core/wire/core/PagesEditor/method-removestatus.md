@@ -7,6 +7,16 @@ Silently remove status flag from a Page and save
 This action does not update the Page modified date.
 It updates the status for both the given instantiated Page object and the value in the DB.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->removeStatus($page, $status);
+
+// usage with all arguments
+$bool = $pagesEditor->removeStatus(Page $page, $status);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,9 +24,9 @@ It updates the status for both the given instantiated Page object and the value 
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [PagesEditor::setStatus()](index.md)
 - [PagesEditor::addStatus()](method-addstatus.md)

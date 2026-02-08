@@ -7,6 +7,16 @@ Get one ID of page matching given selector with no exclusions, like get() but re
 This method is an alias of the has() method, and depending on what you are after, may make more
 or less sense with your code readability. Use whichever better suits your case.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pages->getID($selector);
+
+// usage with all arguments
+$int = $pages->getID($selector, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors` Specify selector to find first matching page ID
@@ -14,9 +24,9 @@ or less sense with your code readability. Use whichever better suits your case.
 
 ## Return value
 
-int|array
+- `int|array`
 
-## See also
+## See Also
 
 - [Pages::get()](method-get.md)
 - [Pages::has()](method-has.md)

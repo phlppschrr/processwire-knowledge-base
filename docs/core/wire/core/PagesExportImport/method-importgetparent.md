@@ -4,6 +4,16 @@ Source: `wire/core/PagesExportImport.php`
 
 Get the parent of the page being imported
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesExportImport->importGetParent($a, $options, $errors);
+
+// usage with all arguments
+$page = $pagesExportImport->importGetParent(array &$a, array &$options, array &$errors);
+~~~~~
+
 ## Arguments
 
 - `$a` `array` Import data
@@ -12,4 +22,4 @@ Get the parent of the page being imported
 
 ## Return value
 
-Page|NullPage
+- `Page|NullPage`

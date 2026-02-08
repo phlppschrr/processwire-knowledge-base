@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeaterVersions.php`
 
 Normalize a value to a RepeaterPageArray
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $fieldtypeRepeaterVersions->getRepeaterPageArray($page, $field, $value);
+
+// usage with all arguments
+$items = $fieldtypeRepeaterVersions->getRepeaterPageArray(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Normalize a value to a RepeaterPageArray
 
 ## Return value
 
-PageArray
+- `PageArray`

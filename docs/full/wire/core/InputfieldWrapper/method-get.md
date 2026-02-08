@@ -11,18 +11,25 @@ collide with an Inputfield name. For that reason, you may prefer to use the `Inp
 If you want a method that can only return a matching Inputfield object, use the
 `InputfieldWrapper::getChildByName()` method .
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->get($key);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of Inputfield or setting/property to retrieve.
 
 ## Return value
 
-Inputfield|mixed
+- `Inputfield|mixed`
 
-## Throws
+## Exceptions
 
-- WireException Only in core development/debugging, otherwise does not throw exceptions.
+- `WireException` Only in core development/debugging, otherwise does not throw exceptions.
 
-## See also
+## See Also
 
 - [InputfieldWrapper::getChildByName()](method-getchildbyname.md)

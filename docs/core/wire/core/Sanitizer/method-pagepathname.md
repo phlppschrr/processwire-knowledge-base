@@ -6,6 +6,16 @@ Sanitize a page path name
 
 Returned path is not guaranteed to be valid or match a page, just sanitized.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->pagePathName($value);
+
+// usage with all arguments
+$string = $sanitizer->pagePathName($value, $beautify = false, $maxLength = 2048);
+~~~~~
+
 ## Arguments
 
 - `$value` `string` Value to sanitize
@@ -14,4 +24,4 @@ Returned path is not guaranteed to be valid or match a page, just sanitized.
 
 ## Return value
 
-string Sanitized path name
+- `string` Sanitized path name

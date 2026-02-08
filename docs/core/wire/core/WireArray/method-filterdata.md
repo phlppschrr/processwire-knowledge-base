@@ -7,6 +7,16 @@ Filter out Wires that don't match the selector.
 This is applicable to and destructive to the WireArray.
 This function contains additions and modifications by @niklaka.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->filterData($selectors);
+
+// usage with all arguments
+$result = $wireArray->filterData($selectors, $not = false);
+~~~~~
+
 ## Arguments
 
 - `$selectors` `string|array|Selectors` Selector string|array to use as the filter.
@@ -14,4 +24,4 @@ This function contains additions and modifications by @niklaka.
 
 ## Return value
 
-$this reference to current [filtered] instance
+- `$this` reference to current [filtered] instance

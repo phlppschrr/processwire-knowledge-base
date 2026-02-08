@@ -9,13 +9,20 @@ and instead focuses on the most commonly used ones. Characters allowed in HTML c
 attributes from this method include: `-_:@a-zA-Z0-9`. This method does not allow
 values that have no letters or digits.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->htmlClass($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `string`
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

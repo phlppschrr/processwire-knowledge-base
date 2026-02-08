@@ -4,13 +4,20 @@ Source: `wire/core/Session.php`
 
 Get all session variables for given namespace and return associative array
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $session->getAllFor($ns);
+~~~~~
+
 ## Arguments
 
 - `$ns` `string|Wire`
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

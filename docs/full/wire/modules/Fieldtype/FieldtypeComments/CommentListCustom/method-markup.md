@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
 Get or set markup properties
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $commentListCustom->markup();
+
+// usage with all arguments
+$result = $commentListCustom->markup($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|array` Property to get or set, or array of properties to set
@@ -11,4 +21,4 @@ Get or set markup properties
 
 ## Return value
 
-mixed
+- `mixed`

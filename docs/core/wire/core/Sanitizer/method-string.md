@@ -7,6 +7,16 @@ Sanitize value to string
 Note that this makes no assumptions about what is a "safe" string, so you should always apply another
 sanitizer to it.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->string($value);
+
+// usage with all arguments
+$string = $sanitizer->string($value, $sanitizer = null);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int|array|object|bool|float` Value to sanitize as string
@@ -14,4 +24,4 @@ sanitizer to it.
 
 ## Return value
 
-string
+- `string`

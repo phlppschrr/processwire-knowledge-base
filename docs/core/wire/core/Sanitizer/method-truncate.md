@@ -22,6 +22,8 @@ HTML will be stripped from returned string. If you want to keep some tags use th
 options to specify what tags are allowed to remain. The `keepFormatTags` option that, when true, will make it
 retain all HTML inline text formatting tags.
 
+## Example
+
 ~~~~~~~
 // Truncate string to closest word within 150 characters
 $s = $sanitizer->truncate($str, 150);
@@ -38,6 +40,16 @@ $s = $sanitizer->truncate($str, [
 ]);
 ~~~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->truncate($str);
+
+// usage with all arguments
+$string = $sanitizer->truncate($str, $maxLength = 300, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to truncate
@@ -46,7 +58,7 @@ $s = $sanitizer->truncate($str, [
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

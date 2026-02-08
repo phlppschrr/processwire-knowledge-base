@@ -6,9 +6,21 @@ Record an error message in the error log (errors.txt)
 
 Note: Fatal errors should instead always throw a WireException.
 
+## Example
+
 ~~~~~
 // Log an error message to errors.txt log
 $log->error("Login attempt failed");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireLog->error($text);
+
+// usage with all arguments
+$wire = $wireLog->error($text, $flags = 0);
 ~~~~~
 
 ## Arguments
@@ -18,4 +30,4 @@ $log->error("Login attempt failed");
 
 ## Return value
 
-Wire|WireLog
+- `Wire|WireLog`

@@ -4,8 +4,20 @@ Source: `wire/core/Templates.php`
 
 Save a Template
 
+## Example
+
 ~~~~~
 $templates->save($template);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $templates->___save($item);
+
+// usage with all arguments
+$bool = $templates->___save(Saveable $item);
 ~~~~~
 
 ## Arguments
@@ -14,8 +26,8 @@ $templates->save($template);
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

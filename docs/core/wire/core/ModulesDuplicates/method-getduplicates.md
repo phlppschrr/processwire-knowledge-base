@@ -19,10 +19,20 @@ Array(
    ...and so on...
 )
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $modulesDuplicates->getDuplicates();
+
+// usage with all arguments
+$array = $modulesDuplicates->getDuplicates($className = '');
+~~~~~
+
 ## Arguments
 
 - `$className` (optional) `string|Module|int` Optionally return only duplicates for given module name
 
 ## Return value
 
-array
+- `array`

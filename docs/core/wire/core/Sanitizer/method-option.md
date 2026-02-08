@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Return $value if it exists in $allowedValues, or null if it doesn't
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->option($value);
+
+// usage with all arguments
+$string = $sanitizer->option($value, array $allowedValues = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int`
@@ -11,4 +21,4 @@ Return $value if it exists in $allowedValues, or null if it doesn't
 
 ## Return value
 
-string|int|null
+- `string|int|null`

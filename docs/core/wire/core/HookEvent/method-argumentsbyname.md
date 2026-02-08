@@ -6,6 +6,8 @@ Returns an array of all arguments indexed by name, or the value of a single spec
 
 Note: `$event->arguments('name')` can also be used as a shorter synonym for `$event->argumentsByName('name')`.
 
+## Example
+
 ~~~~~
 // Get an array of all arguments indexed by name
 $arguments = $event->argumentsByName();
@@ -14,10 +16,20 @@ $arguments = $event->argumentsByName();
 $page = $event->argumentsByName('page');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $hookEvent->argumentsByName();
+
+// usage with all arguments
+$result = $hookEvent->argumentsByName($n = '');
+~~~~~
+
 ## Arguments
 
 - `$n` (optional) `string` Optional name of argument value to return. If not specified, array of all argument values returned.
 
 ## Return value
 
-mixed|array Depending on whether you specify $n
+- `mixed|array` Depending on whether you specify $n

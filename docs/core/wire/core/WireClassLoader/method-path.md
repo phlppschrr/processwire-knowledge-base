@@ -4,13 +4,20 @@ Source: `wire/core/WireClassLoader.php`
 
 Normalize a path
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireClassLoader->path($path);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

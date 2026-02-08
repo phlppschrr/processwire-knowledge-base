@@ -4,13 +4,20 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Return label to indicate option is disabled and how to enable it
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $processModuleInstall->installDisabledLabel($type);
+~~~~~
+
 ## Arguments
 
 - `$type` `string`
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

@@ -7,6 +7,16 @@ Duplicate the Pagefile and add to this Pagefiles instance
 After duplicating a file, you must follow up with a save of the page containing it.
 Otherwise the file is marked for deletion.
 
+## Usage
+
+~~~~~
+// basic usage
+$pagefile = $pagefiles->___clone($item);
+
+// usage with all arguments
+$pagefile = $pagefiles->___clone(Pagefile $item, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$item` `Pagefile` Pagefile item to duplicate
@@ -14,4 +24,4 @@ Otherwise the file is marked for deletion.
 
 ## Return value
 
-Pagefile|bool Returns new Pagefile or boolean false on fail
+- `Pagefile|bool` Returns new Pagefile or boolean false on fail

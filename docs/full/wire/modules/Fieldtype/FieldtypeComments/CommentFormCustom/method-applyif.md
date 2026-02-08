@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentFormCustom.php`
 
 Apply an {if.name} ... {endif.name} statement
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $commentFormCustom->applyIf($name, $value, $out);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Property name for if statement
@@ -12,4 +19,4 @@ Apply an {if.name} ... {endif.name} statement
 
 ## Return value
 
-mixed|string
+- `mixed|string`

@@ -4,6 +4,16 @@ Source: `wire/core/PagesLoader.php`
 
 Remove pages from already-loaded PageArray aren't visible or accessible
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pagesLoader->filterListable($items);
+
+// usage with all arguments
+$items = $pagesLoader->filterListable(PageArray $items, $includeMode = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$items` `PageArray`
@@ -12,4 +22,4 @@ Remove pages from already-loaded PageArray aren't visible or accessible
 
 ## Return value
 
-PageArray
+- `PageArray`

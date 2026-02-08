@@ -4,6 +4,16 @@ Source: `wire/core/Sanitizer.php`
 
 Sanitize checkbox value
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->checkbox($value);
+
+// usage with all arguments
+$int = $sanitizer->checkbox($value, $yes = true, $no = false);
+~~~~~
+
 ## Arguments
 
 - `$value` `int|bool|string|mixed|null` Value to check
@@ -12,9 +22,9 @@ Sanitize checkbox value
 
 ## Return value
 
-int|bool|string|mixed|null Return value, based on $checked or $unchecked argument
+- `int|bool|string|mixed|null` Return value, based on $checked or $unchecked argument
 
-## See also
+## See Also
 
 - [Sanitizer::bool()](method-bool.md)
 - [Sanitizer::bit()](method-bit.md)

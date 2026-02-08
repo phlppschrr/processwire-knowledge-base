@@ -8,6 +8,8 @@ This affects pages loaded after this method has been called.
 By default, output formatting is turned on on the front-end of the site,
 and off on the back-end (admin) of the site.
 
+## Example
+
 ~~~~~
 // Dictate that loaded pages should have output formatting enabled
 $pages->of(true);
@@ -20,10 +22,20 @@ if($pages->of()) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->of();
+
+// usage with all arguments
+$bool = $pages->of($of = null);
+~~~~~
+
 ## Arguments
 
 - `$of` (optional) `null|bool` Specify boolean to set output formatting state, or omit to get output formatting state.
 
 ## Return value
 
-bool Returns current output formatting state.
+- `bool` Returns current output formatting state.

@@ -4,6 +4,13 @@ Source: `wire/core/WireInput.php`
 
 Sanitize the given value with the given method(s)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireInput->sanitizeValue($method, $value, $getArray);
+~~~~~
+
 ## Arguments
 
 - `$method` `string` Sanitizer method name or CSV string of sanitizer method names
@@ -12,8 +19,8 @@ Sanitize the given value with the given method(s)
 
 ## Return value
 
-array|int|float|string|null
+- `array|int|float|string|null`
 
-## Throws
+## Exceptions
 
-- WireException If given unknown sanitizer method
+- `WireException` If given unknown sanitizer method

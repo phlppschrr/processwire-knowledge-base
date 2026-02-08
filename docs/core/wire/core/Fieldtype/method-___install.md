@@ -8,6 +8,13 @@ Install this Fieldtype, consistent with optional Module interface
 - If custom Fieldtype classes need to perform any setup beyond that performed in ___createTable(),
   this method is where they should do it. This is not required, and probably not applicable to most.
 
-## Throws
+## Usage
 
-- WireException Should throw an Exception on failure to install
+~~~~~
+// basic usage
+$result = $fieldtype->___install();
+~~~~~
+
+## Exceptions
+
+- `WireException` Should throw an Exception on failure to install

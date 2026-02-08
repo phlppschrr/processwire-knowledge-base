@@ -6,14 +6,21 @@ Returns the item at the given index starting from 0, or NULL if it doesn't exist
 
 Unlike the `WireArray::index()` method, this returns an actual item and not another WireArray.
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireArray->eq($num);
+~~~~~
+
 ## Arguments
 
 - `$num` `int` Return the n'th item in this WireArray. Specify a negative number to count from the end rather than the start.
 
 ## Return value
 
-Wire|null
+- `Wire|null`
 
-## See also
+## See Also
 
 - [WireArray::index()](method-index.md)

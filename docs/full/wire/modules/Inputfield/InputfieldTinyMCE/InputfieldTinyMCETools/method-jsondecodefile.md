@@ -4,6 +4,13 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
 Decode JSON file
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfieldTinyMCETools->jsonDecodeFile($file, $propertyName);
+~~~~~
+
 ## Arguments
 
 - `$file` `string`
@@ -11,4 +18,4 @@ Decode JSON file
 
 ## Return value
 
-array
+- `array`

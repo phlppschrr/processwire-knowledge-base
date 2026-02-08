@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Send confirmation/opt-in email for notifications (not yet active)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $commentNotifications->___sendConfirmationEmail($comment, $email, $subcode);
+
+// usage with all arguments
+$result = $commentNotifications->___sendConfirmationEmail(Comment $comment, $email, $subcode);
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`
@@ -12,8 +22,8 @@ Send confirmation/opt-in email for notifications (not yet active)
 
 ## Return value
 
-mixed
+- `mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

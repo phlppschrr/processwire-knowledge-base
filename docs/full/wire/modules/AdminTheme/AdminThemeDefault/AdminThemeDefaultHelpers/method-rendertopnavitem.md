@@ -6,6 +6,16 @@ Render a single top navigation item for the given page
 
 This function designed primarily to be called by the renderTopNavItems() function.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeDefaultHelpers->renderTopNavItem($p);
+
+// usage with all arguments
+$string = $adminThemeDefaultHelpers->renderTopNavItem(Page $p, $level = 0);
+~~~~~
+
 ## Arguments
 
 - `$p` `Page`
@@ -13,4 +23,4 @@ This function designed primarily to be called by the renderTopNavItems() functio
 
 ## Return value
 
-string
+- `string`

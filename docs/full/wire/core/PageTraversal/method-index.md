@@ -13,6 +13,16 @@ If you want this method to include hidden/unpublished pages as part of the index
 specify boolean true for the $selector argument (which implies "include=all") OR specify a
 selector of "include=hidden", "include=unpublished" or "include=all".
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageTraversal->index($page);
+
+// usage with all arguments
+$int = $pageTraversal->index(Page $page, $selector = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -20,4 +30,4 @@ selector of "include=hidden", "include=unpublished" or "include=all".
 
 ## Return value
 
-int Returns index number (zero-based)
+- `int` Returns index number (zero-based)

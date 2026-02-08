@@ -4,10 +4,17 @@ Source: `wire/core/WireUpload.php`
 
 Execute/process the upload
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireUpload->execute();
+~~~~~
+
 ## Return value
 
-array of uploaded filenames
+- `array` of uploaded filenames
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

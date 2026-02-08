@@ -4,6 +4,16 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Get verbose array of information about translation
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $languageTranslator->getTranslationInfo($textdomain, $text);
+
+// usage with all arguments
+$array = $languageTranslator->getTranslationInfo($textdomain, $text, $context = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string|object` Textdomain string, filename, or object.
@@ -13,7 +23,7 @@ Get verbose array of information about translation
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/core/Password.php`
 
 Return string of random letters
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $password->randomLetters();
+
+// usage with all arguments
+$string = $password->randomLetters($length = 0, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$length` (optional) `int` Required length of string or 0 for random length
@@ -11,7 +21,7 @@ Return string of random letters
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

@@ -16,6 +16,8 @@ The following optional features are available in ProcessWire version 3.0.125 and
 
 Note that the `$valid` and `$fallback` arguments are only applicable if a `$key` argument is provided.
 
+## Example
+
 ~~~~~
 // Retrieve a "q" GET variable, sanitize and output
 // Example request URL: domain.com/path/to/page/?q=TEST
@@ -45,6 +47,16 @@ $color = $input->get('color', [ 'red', 'blue', 'green' ], 'red'); // return red 
 $isActive = $input->get('active', function($val) { return $val ? true : false; });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$wireInput->get();
+
+// usage with all arguments
+$wireInput->get($key = '', $valid = null, $fallback = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Name of GET variable you want to retrieve. - If populated, returns the value corresponding to the key or NULL if it doesn’t exist. - If blank, returns reference to the WireDataInput containing all GET vars.
@@ -53,8 +65,8 @@ $isActive = $input->get('active', function($val) { return $val ? true : false; }
 
 ## Return value
 
-null|mixed|WireInputData Returns one of the following: - If given no `$key` argument, returns `WireInputData` with all unsanitized GET vars. - If given no `$valid` argument, returns unsanitized value or NULL if not present. - If given a Sanitizer name for `$valid` argument, returns value sanitized with that Sanitizer method (3.0.125+). - If given an array of allowed values for `$valid` argument, returns value from that array if it was in the input, or null if not (3.0.125+). - If given a callable function for `$valid` argument, returns the value returned by that function (3.0.125+). - If given a `$fallback` argument, returns that value when it would otherwise return null (3.0.125+).
+- `null|mixed|WireInputData` Returns one of the following: - If given no `$key` argument, returns `WireInputData` with all unsanitized GET vars. - If given no `$valid` argument, returns unsanitized value or NULL if not present. - If given a Sanitizer name for `$valid` argument, returns value sanitized with that Sanitizer method (3.0.125+). - If given an array of allowed values for `$valid` argument, returns value from that array if it was in the input, or null if not (3.0.125+). - If given a callable function for `$valid` argument, returns the value returned by that function (3.0.125+). - If given a `$fallback` argument, returns that value when it would otherwise return null (3.0.125+).
 
-## Throws
+## Exceptions
 
-- WireException if given unknown Sanitizer method for $valid argument
+- `WireException` if given unknown Sanitizer method for $valid argument

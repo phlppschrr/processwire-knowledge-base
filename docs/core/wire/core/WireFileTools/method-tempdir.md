@@ -9,11 +9,22 @@ Return a new temporary directory/path ready to use for files
 - If you call this with the same non-empty `$name` argument more than once in the
   same request, the same `WireTempDir` instance will be returned.
 
+## Example
 
 ~~~~~
 $tempDir = $files->tempDir();
 $path = $tempDir->get();
 file_put_contents($path . 'some-file.txt', 'Hello world');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wireTempDir = $wireFileTools->tempDir();
+
+// usage with all arguments
+$wireTempDir = $wireFileTools->tempDir($name = '', $options = array());
 ~~~~~
 
 ## Arguments
@@ -23,8 +34,8 @@ file_put_contents($path . 'some-file.txt', 'Hello world');
 
 ## Return value
 
-WireTempDir Returns a WireTempDir instance. If you typecast return value to a string, it is the temp dir path (with trailing slash).
+- `WireTempDir` Returns a WireTempDir instance. If you typecast return value to a string, it is the temp dir path (with trailing slash).
 
-## See also
+## See Also
 
 - WireTempDir

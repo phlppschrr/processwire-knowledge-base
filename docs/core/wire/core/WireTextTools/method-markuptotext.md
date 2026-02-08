@@ -14,6 +14,16 @@ Note that this method differs from the `Sanitizer::markupToText()` method in tha
 more powerful and has more options. But the two methods differ in how they perform markup-to-text
 conversion so you may want to review and try both to determine which one better suits your needs.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->markupToText($str);
+
+// usage with all arguments
+$string = $wireTextTools->markupToText($str, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to convert to text
@@ -21,8 +31,8 @@ conversion so you may want to review and try both to determine which one better 
 
 ## Return value
 
-string
+- `string`
 
-## See also
+## See Also
 
 - [Sanitizer::markupToText()](../Sanitizer/method-markuptotext.md)

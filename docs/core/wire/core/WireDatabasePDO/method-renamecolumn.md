@@ -4,6 +4,13 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Rename a table column without changing type
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->renameColumn($table, $oldName, $newName);
+~~~~~
+
 ## Arguments
 
 - `$table` `string`
@@ -12,11 +19,11 @@ Rename a table column without changing type
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- \PDOException
+- `\PDOException`
 
 ## Since
 

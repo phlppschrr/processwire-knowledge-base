@@ -6,6 +6,16 @@ Revoke a permission that applies to users having a specific role with pages usin
 
 Note that the change is not committed until you save() the template.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $template->revokePermissionByRole($permission, $role);
+
+// usage with all arguments
+$bool = $template->revokePermissionByRole($permission, $role, $test = false);
+~~~~~
+
 ## Arguments
 
 - `$permission` `Permission|int|string` Permission object, name, or id
@@ -14,4 +24,4 @@ Note that the change is not committed until you save() the template.
 
 ## Return value
 
-bool Returns true if an update was made (or would be made), false if not
+- `bool` Returns true if an update was made (or would be made), false if not

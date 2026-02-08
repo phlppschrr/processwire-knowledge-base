@@ -9,13 +9,23 @@ Get internal Punycode version to use
 2: Dedicated Punycode PHP library (no known issues at present).
 3: PHP IDN function call updated for PHP 7.4+ (default in new installations after January 2025).
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->getPunycodeVersion();
+
+// usage with all arguments
+$int = $sanitizer->getPunycodeVersion($version = 0);
+~~~~~
+
 ## Arguments
 
 - `$version` (optional) `int`
 
 ## Return value
 
-int 1=PHP DN but buggy after PHP 7.4+, 2=Punycode library, 3=PHP IDN function PHP 7.4+
+- `int` 1=PHP DN but buggy after PHP 7.4+, 2=Punycode library, 3=PHP IDN function PHP 7.4+
 
 ## Since
 

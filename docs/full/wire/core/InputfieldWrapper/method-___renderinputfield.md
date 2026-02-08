@@ -8,6 +8,16 @@ This method takes care of all the pre-and-post requisites needed for rendering a
 among a group of Inputfields. It is used by the `InputfieldWrapper::render()` method for each
 Inputfield present in the children.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldWrapper->___renderInputfield($inputfield);
+
+// usage with all arguments
+$string = $inputfieldWrapper->___renderInputfield(Inputfield $inputfield, $renderValueMode = false);
+~~~~~
+
 ## Arguments
 
 - `$inputfield` `Inputfield` The Inputfield to render.
@@ -15,4 +25,4 @@ Inputfield present in the children.
 
 ## Return value
 
-string Rendered output
+- `string` Rendered output

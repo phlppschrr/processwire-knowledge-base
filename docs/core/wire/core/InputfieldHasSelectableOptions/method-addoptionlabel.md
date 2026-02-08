@@ -4,6 +4,16 @@ Source: `wire/core/Interfaces.php`
 
 Add selectable option with label, optionally for specific language
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldHasSelectableOptions->addOptionLabel($value, $label);
+
+// usage with all arguments
+$result = $inputfieldHasSelectableOptions->addOptionLabel($value, $label, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|int`
@@ -12,4 +22,4 @@ Add selectable option with label, optionally for specific language
 
 ## Return value
 
-self|$this
+- `self|$this`

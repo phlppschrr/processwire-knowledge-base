@@ -11,6 +11,13 @@ Provided $func may either echo or return it's output. If any value is returned b
 the function it will be used as the cache value. If no value is returned, then
 the output buffer will be used as the cache value.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireCache->renderCacheValue($name, $expire, $func);
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -19,7 +26,7 @@ the output buffer will be used as the cache value.
 
 ## Return value
 
-bool|string
+- `bool|string`
 
 ## Since
 

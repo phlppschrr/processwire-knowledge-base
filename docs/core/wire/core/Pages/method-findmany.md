@@ -16,6 +16,8 @@ The example below demonstrates use of this method. Note that attempting to do th
 the regular `$pages->find()` would run out of memory, as it's unlikely the server would have
 enough memory to store 20k pages in memory at once.
 
+## Example
+
 ~~~~~
 // Calculating a total from 20000 pages
 $totalCost = 0;
@@ -26,6 +28,16 @@ foreach($items as $item) {
 echo "Total cost is: $totalCost";
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pages->findMany($selector);
+
+// usage with all arguments
+$items = $pages->findMany($selector, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|array|Selectors` Selector to find pages
@@ -33,9 +45,9 @@ echo "Total cost is: $totalCost";
 
 ## Return value
 
-PageArray
+- `PageArray`
 
-## See also
+## See Also
 
 - [Pages::find()](method-___find.md)
 - [Pages::findOne()](method-findone.md)

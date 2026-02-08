@@ -4,6 +4,13 @@ Source: `wire/core/Paths.php`
 
 Set a new path/URL location
 
+## Usage
+
+~~~~~
+// basic usage
+$paths = $paths->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set a new path/URL location
 
 ## Return value
 
-Paths|WireData
+- `Paths|WireData`

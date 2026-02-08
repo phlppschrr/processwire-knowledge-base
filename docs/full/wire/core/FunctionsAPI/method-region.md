@@ -15,6 +15,8 @@ regardless of whether the Functions API is enabled or not.
 
 *Note: unlike other functions in the Functions API, this function is not related to API variables.*
 
+## Example
+
 ~~~~~
 // define a region
 region('content', '<p>this is some content</p>');
@@ -38,6 +40,16 @@ region('content', '');
 region('*', '');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $functionsAPI->region();
+
+// usage with all arguments
+$string = $functionsAPI->region($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Name of region to get or set. - Specify "*" to retrieve all defined regions in an array. - Prepend a "+" to the region name to have it prepend your given value to any existing value. - Append a "+" to the region name to have it append your given value to any existing value. - Prepend a "++" to region name to make future calls without "+" automatically prepend. - Append a "++" to region name to make future calls without "+" to automatically append.
@@ -45,4 +57,4 @@ region('*', '');
 
 ## Return value
 
-string|null|bool|array Returns string of text when getting a region, NULL if region not set, or TRUE if setting region.
+- `string|null|bool|array` Returns string of text when getting a region, NULL if region not set, or TRUE if setting region.

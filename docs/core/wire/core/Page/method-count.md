@@ -10,6 +10,8 @@ Returns number of children page has, affected by output formatting mode.
 - When output formatting is off, returns number of all children without exclusion,
   making the return value the same as the `Page::numChildren()` method.
 
+## Example
+
 ~~~~~
 // Get number of visible children, like $page->hasChildren()
 $page->of(true); // enable output formatting
@@ -20,11 +22,18 @@ $page->of(false); // disable output formatting
 $numTotal = $page->count();
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->count();
+~~~~~
+
 ## Return value
 
-int Quantity of children
+- `int` Quantity of children
 
-## See also
+## See Also
 
 - [Page::hasChildren()](method-haschildren.md)
 - [Page::numChildren()](method-numchildren.md)

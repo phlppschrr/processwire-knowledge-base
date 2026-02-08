@@ -10,6 +10,8 @@ Faster than findParents() in cases where the pages_parents table cannot be used
 and there are potentially hundreds/thousands of parents to find. However, it does
 use more memory than findParents() even if it can be potentially a lot faster.
 
+## Example
+
 ~~~~~
 // the following two calls should produce identical results (excluding order)
 // if they don’t, the index may need to be rebuilt
@@ -21,13 +23,23 @@ $pages->parents()->findParents([
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pagesParents->findParentIDs();
+
+// usage with all arguments
+$array = $pagesParents->findParentIDs($fromParent = null);
+~~~~~
+
 ## Arguments
 
 - `$fromParent` (optional) `null|Page|int` Specify parent to limit results within, or negative int for minimum parent_id, for instance a value of -2 would exclude homepage and items with homepage (id=1) as their parent.
 
 ## Return value
 
-array Returns array in format [ id => parent_id ]
+- `array` Returns array in format [ id => parent_id ]
 
 ## Since
 

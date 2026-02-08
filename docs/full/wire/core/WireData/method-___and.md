@@ -5,10 +5,23 @@ Source: `wire/core/WireData.php`
 Take the current item and append the given item(s), returning a new WireArray
 
 This is for syntactic convenience in fluent interfaces.
+
+## Example
+
 ~~~~~
 if($page->and($page->parents)->has("featured=1")) {
    // page or one of its parents has a featured property with value of 1
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireData->___and();
+
+// usage with all arguments
+$items = $wireData->___and($items = null);
 ~~~~~
 
 ## Arguments
@@ -17,8 +30,8 @@ if($page->and($page->parents)->has("featured=1")) {
 
 ## Return value
 
-WireArray Returns a WireArray of this object *and* the one(s) given.
+- `WireArray` Returns a WireArray of this object *and* the one(s) given.
 
-## Throws
+## Exceptions
 
-- WireException If invalid argument supplied.
+- `WireException` If invalid argument supplied.

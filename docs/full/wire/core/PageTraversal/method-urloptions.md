@@ -33,6 +33,16 @@ Please also note regarding `$options`:
 - The `language` option requires that the `LanguageSupportPageNames` module is installed.
 - The prefix for page numbers honors `$config->pageNumUrlPrefix` and multi-language prefixes as well.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageTraversal->urlOptions($page);
+
+// usage with all arguments
+$string = $pageTraversal->urlOptions(Page $page, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -40,9 +50,9 @@ Please also note regarding `$options`:
 
 ## Return value
 
-string Returns page URL, for example: `/my-site/about/contact/`
+- `string` Returns page URL, for example: `/my-site/about/contact/`
 
-## See also
+## See Also
 
 - [Page::path()](../Page/method-path.md)
 - [Page::httpUrl()](../Page/method-httpurl.md)

@@ -4,6 +4,13 @@ Source: `wire/core/WireSessionHandler.php`
 
 Write the given $data for the given session ID
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireSessionHandler->write($id, $data);
+~~~~~
+
 ## Arguments
 
 - `$id` `string` Session ID
@@ -11,4 +18,4 @@ Write the given $data for the given session ID
 
 ## Return value
 
-bool
+- `bool`

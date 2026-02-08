@@ -4,6 +4,16 @@ Source: `wire/core/ModulesFiles.php`
 
 Get the path + filename (or optionally URL) for module
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesFiles->getModuleFile($class);
+
+// usage with all arguments
+$bool = $modulesFiles->getModuleFile($class, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$class` `string|Module` Module class name or object instance
@@ -11,4 +21,4 @@ Get the path + filename (or optionally URL) for module
 
 ## Return value
 
-bool|string Returns string of module file, or false on failure.
+- `bool|string` Returns string of module file, or false on failure.

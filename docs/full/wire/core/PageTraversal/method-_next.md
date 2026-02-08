@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Provides the core logic for next, prev, nextAll, prevAll, nextUntil, prevUntil
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pageTraversal->_next($page);
+
+// usage with all arguments
+$page = $pageTraversal->_next(Page $page, $selector = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Provides the core logic for next, prev, nextAll, prevAll, nextUntil, prevUntil
 
 ## Return value
 
-Page|NullPage|PageArray|int Returns one of the following: - `PageArray` if the "all" or "until" option is specified. - `Page|NullPage` in other cases.
+- `Page|NullPage|PageArray|int` Returns one of the following: - `PageArray` if the "all" or "until" option is specified. - `Page|NullPage` in other cases.

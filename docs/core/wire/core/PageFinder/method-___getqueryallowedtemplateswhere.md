@@ -7,6 +7,16 @@ Method that allows external hooks to add to or modify the access control WHERE c
 Called only if it's hooked. To utilize it, modify the $where argument in a BEFORE hook
 or the $event->return in an AFTER hook.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pageFinder->___getQueryAllowedTemplatesWhere($query, $where);
+
+// usage with all arguments
+$string = $pageFinder->___getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where);
+~~~~~
+
 ## Arguments
 
 - `$query` `DatabaseQuerySelect`
@@ -14,4 +24,4 @@ or the $event->return in an AFTER hook.
 
 ## Return value
 
-string
+- `string`

@@ -6,6 +6,16 @@ Apply 'add_*' settings in $addSettings, plus merge all $addSettings into given $
 
 This updates the $settings and $addSettings variables directly
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $inputfieldTinyMCESettings->applyAddSettings($settings, $addSettings, $defaults);
+
+// usage with all arguments
+$result = $inputfieldTinyMCESettings->applyAddSettings(array &$settings, array &$addSettings, array $defaults);
+~~~~~
+
 ## Arguments
 
 - `$settings` `array`

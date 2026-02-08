@@ -12,6 +12,8 @@ in scope and accessible anywhere in your template files, even within existing fu
 
 *Note: unlike other functions in the Functions API, this function is not related to API variables.*
 
+## Example
+
 ~~~~~
 // set a setting named “foo” to value “bar”
 setting('foo', 'bar');
@@ -33,6 +35,16 @@ $a = setting();
 setting(false, 'foo');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $functionsAPI->setting();
+
+// usage with all arguments
+$array = $functionsAPI->setting($name = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|array` Setting name, or array to set multiple
@@ -40,4 +52,4 @@ setting(false, 'foo');
 
 ## Return value
 
-array|string|int|bool|mixed|null
+- `array|string|int|bool|mixed|null`

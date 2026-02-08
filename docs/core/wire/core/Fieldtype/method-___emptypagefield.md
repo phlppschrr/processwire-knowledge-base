@@ -7,6 +7,16 @@ Empty out the DB table data for page field, but leave everything else in tact.
 In most cases this may be nearly identical to `Fieldtype::deletePageField()`, but would be different
 for things like page references where we wouldn't want relational data deleted.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldtype->___emptyPageField($page, $field);
+
+// usage with all arguments
+$bool = $fieldtype->___emptyPageField(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,8 +24,8 @@ for things like page references where we wouldn't want relational data deleted.
 
 ## Return value
 
-bool True on success, false on DB delete failure.
+- `bool` True on success, false on DB delete failure.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

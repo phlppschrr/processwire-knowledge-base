@@ -6,6 +6,8 @@ Get the session history (if enabled)
 
 Applicable only if `$config->sessionHistory > 0`.
 
+## Example
+
 ~~~~~
 $history = $session->getHistory();
 print_r($history);
@@ -26,6 +28,13 @@ array(
 );
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $session->getHistory();
+~~~~~
+
 ## Return value
 
-array Array of arrays containing history entries.
+- `array` Array of arrays containing history entries.

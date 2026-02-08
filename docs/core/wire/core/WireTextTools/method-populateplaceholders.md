@@ -13,11 +13,23 @@ variable to pull from $vars, `{` is the opening tag character, and `}` is the cl
 The tag parser can also handle subfields and OR tags, if `$vars` is an object that supports that.
 For instance `{products.title}` is a subfield, and `{first_name|title|name}` is an OR tag.
 
+## Example
+
 ~~~~~
 $vars = [ 'foo' => 'FOO!', 'bar' => 'BAR!' ];
 $str = 'This is a test: {foo}, and this is another test: {bar}';
 echo $sanitizer->getTextTools()->populatePlaceholders($str, $vars);
 // outputs: This is a test: FOO!, and this is another test: BAR!
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->populatePlaceholders($str, $vars);
+
+// usage with all arguments
+$string = $wireTextTools->populatePlaceholders($str, $vars, array $options = array());
 ~~~~~
 
 ## Arguments
@@ -28,7 +40,7 @@ echo $sanitizer->getTextTools()->populatePlaceholders($str, $vars);
 
 ## Return value
 
-string String with tags populated.
+- `string` String with tags populated.
 
 ## Since
 

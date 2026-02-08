@@ -4,6 +4,16 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Perform a translation in the given $textdomain for $text to the current language
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageTranslator->getTranslation($textdomain, $text);
+
+// usage with all arguments
+$string = $languageTranslator->getTranslation($textdomain, $text, $context = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string|object` Textdomain string, filename, or object.
@@ -13,4 +23,4 @@ Perform a translation in the given $textdomain for $text to the current language
 
 ## Return value
 
-string|array|false Translation if available, or original EN version if translation not available. - Returns array if options[getInfo] is true. - Returns false if translation not found and options[getFalse] is true.
+- `string|array|false` Translation if available, or original EN version if translation not available. - Returns array if options[getInfo] is true. - Returns false if translation not found and options[getFalse] is true.

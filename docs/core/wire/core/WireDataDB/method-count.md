@@ -6,6 +6,13 @@ Count the number of rows this WireDataDB maintains in the database for source ID
 
 This implements the \Countable interface.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireDataDB->count();
+~~~~~
+
 ## Return value
 
-int
+- `int`

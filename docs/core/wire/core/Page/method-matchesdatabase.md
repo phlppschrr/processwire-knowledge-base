@@ -4,10 +4,19 @@ Source: `wire/core/Page.php`
 
 Given a selector, return whether or not this Page matches by querying the database
 
+## Example
+
 ~~~~~
 if($page->matchesDatabase("created>=today")) {
   echo "This page was created today";
 }
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->matchesDatabase($s);
 ~~~~~
 
 ## Arguments
@@ -16,7 +25,7 @@ if($page->matchesDatabase("created>=today")) {
 
 ## Return value
 
-bool Returns true if this page matches, or false if it doesn't.
+- `bool` Returns true if this page matches, or false if it doesn't.
 
 ## Since
 

@@ -4,6 +4,16 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php
 
 Merge all settings in given array and combine those with "add_" prefix
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfieldTinyMCESettings->mergeSettings($settings1);
+
+// usage with all arguments
+$array = $inputfieldTinyMCESettings->mergeSettings(array $settings1, array $settings2 = array());
+~~~~~
+
 ## Arguments
 
 - `$settings1` `array`
@@ -11,4 +21,4 @@ Merge all settings in given array and combine those with "add_" prefix
 
 ## Return value
 
-array
+- `array`

@@ -8,9 +8,16 @@ This is generally the same or similar to the module summary, though in a $this->
 so that it is translatable. When a module implements this, it should not make a
 parent::getTfaTypeLabel() call.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $tfa->getTfaTypeSummary();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

@@ -6,6 +6,16 @@ Normalize a class name with or without namespace, or get namespace of class
 
 Default behavior is to return class name without namespace.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $functions->wireClassName($className);
+
+// usage with all arguments
+$string = $functions->wireClassName($className, $withNamespace = false, $verbose = false);
+~~~~~
+
 ## Arguments
 
 - `$className` `string|object` Class name or object instance
@@ -14,4 +24,4 @@ Default behavior is to return class name without namespace.
 
 ## Return value
 
-string|null Returns string or NULL if namespace-only requested and unable to determine
+- `string|null` Returns string or NULL if namespace-only requested and unable to determine

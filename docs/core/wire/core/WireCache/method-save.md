@@ -4,6 +4,8 @@ Source: `wire/core/WireCache.php`
 
 Save data to cache with given name
 
+## Example
+
 ~~~~~
 $value = "This is the value that will be cached.";
 
@@ -14,6 +16,16 @@ $cache->save("my-cache-name", $value);
 $cache->save("my-cache-name", $value, 3600);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireCache->save($name, $data);
+
+// usage with all arguments
+$bool = $wireCache->save($name, $data, $expire = self::expireDaily);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Name of cache, can be any string up to 255 chars
@@ -22,8 +34,8 @@ $cache->save("my-cache-name", $value, 3600);
 
 ## Return value
 
-bool Returns true if cache was successful, false if not
+- `bool` Returns true if cache was successful, false if not
 
-## Throws
+## Exceptions
 
-- WireException if given data that cannot be cached
+- `WireException` if given data that cannot be cached

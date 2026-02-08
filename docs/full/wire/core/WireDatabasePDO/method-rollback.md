@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Rolls back a transaction
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->rollBack();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
 ## Details
 

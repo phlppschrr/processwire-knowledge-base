@@ -8,13 +8,20 @@ For the return value, override the default `false` return value and set
 it to `true` in order to make it continue as if the filename did exist,
 such as if your hook copied a file to $filename.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageimage->___filenameDoesNotExist($filename);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

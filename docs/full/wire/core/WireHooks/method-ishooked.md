@@ -15,6 +15,16 @@ If checking for a hooked property, it should be in the form `Class::property` or
 If you need to check if a method/property is hooked, including any of its parent classes, use
 the `WireHooks::isMethodHooked()`, `WireHooks::isPropertyHooked()`, or `WireHooks::hasHook()` methods instead.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHooks->isHooked($method);
+
+// usage with all arguments
+$bool = $wireHooks->isHooked($method, ?Wire $instance = null);
+~~~~~
+
 ## Arguments
 
 - `$method` `string` Method or property name in one of the following formats: Class::method() Class::property method() property
@@ -22,9 +32,9 @@ the `WireHooks::isMethodHooked()`, `WireHooks::isPropertyHooked()`, or `WireHook
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [WireHooks::isMethodHooked()](method-ismethodhooked.md)
 - [WireHooks::isPropertyHooked()](method-ispropertyhooked.md)

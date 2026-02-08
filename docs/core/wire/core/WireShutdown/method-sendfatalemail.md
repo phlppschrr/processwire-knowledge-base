@@ -4,6 +4,13 @@ Source: `wire/core/WireShutdown.php`
 
 Send fatal error email
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireShutdown->sendFatalEmail($url, $userName, $message);
+~~~~~
+
 ## Arguments
 
 - `$url` `string`
@@ -12,4 +19,4 @@ Send fatal error email
 
 ## Return value
 
-bool
+- `bool`

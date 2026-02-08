@@ -6,6 +6,16 @@ Save individual Page fields and supporting actions
 
 triggers hooks: saved, added, moved, renamed, templateChanged
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->savePageFinish($page, $isNew, $options);
+
+// usage with all arguments
+$bool = $pagesEditor->savePageFinish(Page $page, $isNew, array $options);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -14,8 +24,8 @@ triggers hooks: saved, added, moved, renamed, templateChanged
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- \Exception|WireException|\PDOException If any field-saving failure occurs while in a DB transaction
+- `\Exception|WireException|\PDOException` If any field-saving failure occurs while in a DB transaction

@@ -4,10 +4,20 @@ Source: `wire/core/ImageSizerEngine.php`
 
 Turn on/off cropping and/or set cropping direction
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $imageSizerEngine->setCropping();
+
+// usage with all arguments
+$result = $imageSizerEngine->setCropping($cropping = true);
+~~~~~
+
 ## Arguments
 
 - `$cropping` (optional) `bool|string|array` Specify one of: northwest, north, northeast, west, center, east, southwest, south, southeast. Or a string of: 50%,50% (x and y percentages to crop from) Or an array('50%', '50%') Or to disable cropping, specify boolean false. To enable cropping with default (center), you may also specify boolean true.
 
 ## Return value
 
-self
+- `self`

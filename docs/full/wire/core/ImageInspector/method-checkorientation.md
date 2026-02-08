@@ -4,13 +4,20 @@ Source: `wire/core/ImageInspector.php`
 
 Check orientation (@horst)
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $imageInspector->checkOrientation($filename);
+~~~~~
+
 ## Arguments
 
 - array
 
 ## Return value
 
-array
+- `array`
 
 ## Details
 

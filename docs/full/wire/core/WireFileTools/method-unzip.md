@@ -4,6 +4,8 @@ Source: `wire/core/WireFileTools.php`
 
 Unzips the given ZIP file to the destination directory
 
+## Example
+
 ~~~~~
 // Unzip a file
 $zip = $config->paths->cache . "my-file.zip";
@@ -14,6 +16,16 @@ if(count($items)) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireFileTools->unzip($zipFile, $destinationPath);
+
+// usage with all arguments
+$array = $wireFileTools->unzip($zipFile, $destinationPath, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$zipFile` `string` ZIP file to extract
@@ -22,12 +34,12 @@ if(count($items)) {
 
 ## Return value
 
-array Returns an array of filenames (excluding $dst) that were unzipped.
+- `array` Returns an array of filenames (excluding $dst) that were unzipped.
 
-## Throws
+## Exceptions
 
-- WireException All error conditions result in WireException being thrown.
+- `WireException` All error conditions result in WireException being thrown.
 
-## See also
+## See Also
 
 - [WireFileTools::zip()](method-zip.md)

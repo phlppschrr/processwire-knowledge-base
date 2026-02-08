@@ -4,6 +4,16 @@ Source: `wire/core/WireArray.php`
 
 Given an item, get the item before it in the WireArray
 
+## Usage
+
+~~~~~
+// basic usage
+$wire = $wireArray->getPrev($item);
+
+// usage with all arguments
+$wire = $wireArray->getPrev($item, $strict = true);
+~~~~~
+
 ## Arguments
 
 - `$item` `Wire`
@@ -11,4 +21,4 @@ Given an item, get the item before it in the WireArray
 
 ## Return value
 
-Wire|null Returns item that comes before given item, or null if not found
+- `Wire|null` Returns item that comes before given item, or null if not found

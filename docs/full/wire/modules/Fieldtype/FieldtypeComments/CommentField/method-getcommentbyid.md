@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Get a comment by ID or NULL if not found
 
+## Usage
+
+~~~~~
+// basic usage
+$comment = $commentField->getCommentByID($page, $id);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page|int|string`
@@ -11,4 +18,4 @@ Get a comment by ID or NULL if not found
 
 ## Return value
 
-Comment|null
+- `Comment|null`

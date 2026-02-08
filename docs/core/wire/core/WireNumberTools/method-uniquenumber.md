@@ -12,17 +12,27 @@ Generate and return an installation unique number/ID (integer)
 - You cannot reset the default namespace, so any caller is always assured a unique number.
 - This method creates table names that begin with `unique_num`.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireNumberTools->uniqueNumber();
+
+// usage with all arguments
+$int = $wireNumberTools->uniqueNumber($options = array());
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array|string` Array of options or string for the namespace option. - `namespace` (string): Optional namespace for unique numbers, in table name format [_a-zA-Z0-9] (default='') - `getLast` (bool): Get last unique number rather than generating new one? (default=false) - `reset` (bool): Reset numbers in namespace by deleting its table? Namespace required (default=false)
 
 ## Return value
 
-int Returns unique number, or returns 0 if `reset` option is used, or returns 0 if `getLast` option is used and no numbers exist.
+- `int` Returns unique number, or returns 0 if `reset` option is used, or returns 0 if `getLast` option is used and no numbers exist.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

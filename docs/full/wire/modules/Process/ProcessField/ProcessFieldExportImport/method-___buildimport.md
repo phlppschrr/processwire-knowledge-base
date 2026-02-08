@@ -4,10 +4,17 @@ Source: `wire/modules/Process/ProcessField/ProcessFieldExportImport.php`
 
 Execute import
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldForm = $processFieldExportImport->___buildImport();
+~~~~~
+
 ## Return value
 
-InputfieldForm
+- `InputfieldForm`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid import data
+- `WireException` if given invalid import data

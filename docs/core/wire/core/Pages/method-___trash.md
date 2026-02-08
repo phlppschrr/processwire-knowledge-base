@@ -7,10 +7,22 @@ Move a page to the trash
 When a page is moved to the trash, it is in a "delete pending" state. Once trashed, the page can be either restored
 to its original location, or permanently deleted (when the trash is emptied).
 
+## Example
+
 ~~~~~
 // Trash a product page
 $product = $pages->get('/products/foo-bar-widget/');
 $pages->trash($product);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->___trash($page);
+
+// usage with all arguments
+$bool = $pages->___trash(Page $page, $save = true);
 ~~~~~
 
 ## Arguments
@@ -20,13 +32,13 @@ $pages->trash($product);
 
 ## Return value
 
-bool Returns true on success, false on failure.
+- `bool` Returns true on success, false on failure.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Pages::restore()](method-___restore.md)
 - [Pages::emptyTrash()](method-___emptytrash.md)

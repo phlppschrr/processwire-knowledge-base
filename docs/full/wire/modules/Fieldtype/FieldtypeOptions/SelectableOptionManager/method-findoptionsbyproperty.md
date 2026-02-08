@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Perform a partial match on title of options
 
+## Usage
+
+~~~~~
+// basic usage
+$selectableOptionArray = $selectableOptionManager->findOptionsByProperty($field, $property, $operator, $value);
+
+// usage with all arguments
+$selectableOptionArray = $selectableOptionManager->findOptionsByProperty(Field $field, $property, $operator, $value);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -13,4 +23,4 @@ Perform a partial match on title of options
 
 ## Return value
 
-SelectableOptionArray
+- `SelectableOptionArray`

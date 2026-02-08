@@ -4,6 +4,8 @@ Source: `wire/core/HookEvent.php`
 
 Retrieve or set a hooked function argument
 
+## Example
+
 ~~~~~
 // Retrieve first argument by index (0=first)
 $page = $event->arguments(0);
@@ -21,6 +23,16 @@ $event->arguments(0, $page);
 $event->arguments('page', $page);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $hookEvent->arguments();
+
+// usage with all arguments
+$array = $hookEvent->arguments($n = null, $value = null);
+~~~~~
+
 ## Arguments
 
 - `$n` (optional) `int` Zero based number of the argument you want to retrieve, where 0 is the first. May also be a string containing the argument name. Omit to return array of all arguments.
@@ -28,4 +40,4 @@ $event->arguments('page', $page);
 
 ## Return value
 
-array|null|mixed
+- `array|null|mixed`

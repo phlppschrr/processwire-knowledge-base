@@ -4,13 +4,20 @@ Source: `wire/core/WireDatabaseBackup.php`
 
 Drop all tables from database
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireDatabaseBackup->dropAllTables();
+~~~~~
+
 ## Return value
 
-int Quantity of tables dropped
+- `int` Quantity of tables dropped
 
-## Throws
+## Exceptions
 
-- \Exception
+- `\Exception`
 
 ## Since
 

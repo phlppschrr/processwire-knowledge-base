@@ -4,6 +4,16 @@ Source: `wire/core/PagesEditor.php`
 
 Clear a page of its data
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->clear($page);
+
+// usage with all arguments
+$bool = $pagesEditor->clear(Page $page, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,11 +21,11 @@ Clear a page of its data
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

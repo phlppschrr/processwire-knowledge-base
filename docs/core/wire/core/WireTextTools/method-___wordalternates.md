@@ -16,6 +16,8 @@ which may or may not be provided by the caller.
 In hook implementation, avoid deleting what’s already present in $event->return just in
 case multiple hooks are adding words.
 
+## Example
+
 ~~~~~
 // Contrived example of how to implement
 $wire->addHookAfter('WireTextTools::wordAlternates', function(HookEvent $event) {
@@ -39,6 +41,16 @@ $words = $sanitizer->getTextTools()->getWordAlternates('cat');
 echo implode(', ', $words); // outputs: cats, kitty, kitten, feline, felines
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireTextTools->___wordAlternates($word, $options);
+
+// usage with all arguments
+$array = $wireTextTools->___wordAlternates($word, array $options);
+~~~~~
+
 ## Arguments
 
 - `$word` `string`
@@ -46,7 +58,7 @@ echo implode(', ', $words); // outputs: cats, kitty, kitten, feline, felines
 
 ## Return value
 
-array
+- `array`
 
 ## Since
 

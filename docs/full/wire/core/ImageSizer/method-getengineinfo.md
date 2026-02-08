@@ -20,13 +20,23 @@ Returns array of arrays indexed by engine name, each with the following:
  - `priority` (int): Engine priority (lower is higher priority)
  - `runOrder` (int): Order ImageSizer will try this engine in relative to others (lower runs first), derived from priority.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $imageSizer->getEngineInfo();
+
+// usage with all arguments
+$array = $imageSizer->getEngineInfo($name = '');
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string` Specify engine name to get info just for that engine or omit to get info for all engines (default)
 
 ## Return value
 
-array Array of arrays indexed by engine name, or if $name specified then just array of info for that engine. Returns empty array on error.
+- `array` Array of arrays indexed by engine name, or if $name specified then just array of info for that engine. Returns empty array on error.
 
 ## Since
 

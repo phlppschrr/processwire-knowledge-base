@@ -4,6 +4,16 @@ Source: `wire/core/FieldtypeMulti.php`
 
 Return the query used for loading all parts of the data from this field.
 
+## Usage
+
+~~~~~
+// basic usage
+$databaseQuerySelect = $fieldtypeMulti->getLoadQuery($field, $query);
+
+// usage with all arguments
+$databaseQuerySelect = $fieldtypeMulti->getLoadQuery(Field $field, DatabaseQuerySelect $query);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -11,8 +21,8 @@ Return the query used for loading all parts of the data from this field.
 
 ## Return value
 
-DatabaseQuerySelect
+- `DatabaseQuerySelect`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

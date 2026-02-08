@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return number of ANY pages that are following (referencing) the given one by way of Page references
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageTraversal->numReferences($page);
+
+// usage with all arguments
+$int = $pageTraversal->numReferences(Page $page, $selector = '', $field = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Return number of ANY pages that are following (referencing) the given one by way
 
 ## Return value
 
-int|array Returns count, or array of counts (if $field==true)
+- `int|array` Returns count, or array of counts (if $field==true)

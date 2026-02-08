@@ -6,6 +6,16 @@ Create a ZIP file from given files
 
 This is procedural version of the `$files->zip()` method. See that method for all options.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $functions->wireZipFile($zipfile, $files);
+
+// usage with all arguments
+$array = $functions->wireZipFile($zipfile, $files, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$zipfile` `string` Full path and filename to create or update (i.e. /path/to/myfile.zip)
@@ -14,12 +24,12 @@ This is procedural version of the `$files->zip()` method. See that method for al
 
 ## Return value
 
-array Returns associative array of: - `files` (array): all files that were added - `errors` (array): files that failed to add, if any
+- `array` Returns associative array of: - `files` (array): all files that were added - `errors` (array): files that failed to add, if any
 
-## Throws
+## Exceptions
 
-- WireException Original ZIP file creation error conditions result in WireException being thrown.
+- `WireException` Original ZIP file creation error conditions result in WireException being thrown.
 
-## See also
+## See Also
 
 - [WireFileTools::zip()](../WireFileTools/method-zip.md)

@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Strip whitespace (or other characters) from the end of string only (aka right trim)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTextTools->rtrim($str);
+
+// usage with all arguments
+$string = $wireTextTools->rtrim($str, $chars = '');
+~~~~~
+
 ## Arguments
 
 - `$str` `string`
@@ -11,7 +21,7 @@ Strip whitespace (or other characters) from the end of string only (aka right tr
 
 ## Return value
 
-string
+- `string`
 
 ## Since
 

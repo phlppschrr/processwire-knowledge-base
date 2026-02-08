@@ -10,9 +10,21 @@ determining when to use `date()`, `strftime()`, or `wireRelativeTimeStr()`.
 
 This is the procedural version of the `$datetime->date()` method.
 
+## Example
+
 ~~~~~
 echo wireDate('Y-m-d H:i:s'); // Outputs: 2019-01-20 06:48:11
 echo wireDate('relative', '2019-01-20 06:00'); // Outputs: 48 minutes ago
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $functions->wireDate();
+
+// usage with all arguments
+$string = $functions->wireDate($format = '', $ts = null);
 ~~~~~
 
 ## Arguments
@@ -22,4 +34,4 @@ echo wireDate('relative', '2019-01-20 06:00'); // Outputs: 48 minutes ago
 
 ## Return value
 
-string|bool Formatted date/time, or boolean false on failure
+- `string|bool` Formatted date/time, or boolean false on failure

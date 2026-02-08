@@ -7,6 +7,16 @@ Is the given name is use by a page?
 If the `multilang` option is used, it checks if the page name exists in any language.
 IF the `language` option is used, it only checks that particular language (regardless of `multilang` option).
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesNames->pageNameExists($name);
+
+// usage with all arguments
+$int = $pagesNames->pageNameExists($name, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -14,4 +24,4 @@ IF the `language` option is used, it only checks that particular language (regar
 
 ## Return value
 
-int Returns quantity of pages using name, or 0 if name not in use.
+- `int` Returns quantity of pages using name, or 0 if name not in use.

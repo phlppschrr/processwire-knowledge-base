@@ -21,6 +21,16 @@ If the module is not installed, but is installable, it will be installed, instan
 If you don't want that behavior, call `$modules->isInstalled('ModuleName')` as a condition first, OR specify
 true for the `noInstall` option in the `$options` argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$module = $modules->getModule($key);
+
+// usage with all arguments
+$module = $modules->getModule($key, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$key` `string|int` Module name or database ID.
@@ -28,12 +38,12 @@ true for the `noInstall` option in the `$options` argument.
 
 ## Return value
 
-Module|_Module|null|string Returns ready-to-use module or NULL|string if not found (string if `returnError` option used).
+- `Module|_Module|null|string` Returns ready-to-use module or NULL|string if not found (string if `returnError` option used).
 
-## Throws
+## Exceptions
 
-- WirePermissionException|\Exception If module requires a particular permission the user does not have
+- `WirePermissionException|\Exception` If module requires a particular permission the user does not have
 
-## See also
+## See Also
 
 - [Modules::get()](method-get.md)

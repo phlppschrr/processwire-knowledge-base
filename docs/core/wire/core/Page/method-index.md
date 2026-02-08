@@ -13,10 +13,22 @@ If you want this method to include hidden/unpublished pages as part of the index
 specify boolean true for the $selector argument (which implies "include=all") OR specify a
 selector of "include=hidden", "include=unpublished" or "include=all".
 
+## Example
+
 ~~~~~
 $i = $page->index();
 $n = $page->parent->numChildren();
 echo "This page is $i out of $n total pages";
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $page->index();
+
+// usage with all arguments
+$int = $page->index($selector = '');
 ~~~~~
 
 ## Arguments
@@ -25,7 +37,7 @@ echo "This page is $i out of $n total pages";
 
 ## Return value
 
-int Returns index number (zero-based)
+- `int` Returns index number (zero-based)
 
 ## Since
 

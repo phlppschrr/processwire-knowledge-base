@@ -10,6 +10,16 @@ $o->dbUser, $o->dbPass, $o->dbHost, $o->dbName, $config->dbPort, $config->dbSock
 This would usually be from a ProcessWire Config ($config) API var, but kept as generic object
 in case someone wants to use this class elsewhere.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $database->__construct();
+
+// usage with all arguments
+$result = $database->__construct($host = 'localhost', $user = null, $pass = null, $db = null, $port = null, $socket = null);
+~~~~~
+
 ## Arguments
 
 - `$host` (optional) `string|Config` Hostname or object with config properties.
@@ -19,6 +29,6 @@ in case someone wants to use this class elsewhere.
 - `$port` (optional) `int` Port
 - `$socket` (optional) `string` Socket
 
-## Throws
+## Exceptions
 
-- WireDatabaseException
+- `WireDatabaseException`

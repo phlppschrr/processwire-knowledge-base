@@ -8,6 +8,16 @@ By default this excludes pages that are hidden, unpublished and pages excluded d
 To prevent these exclusions specify an include mode in the selector, i.e. `include=all`, or you can use
 boolean `true` as a shortcut to specify that you do not want any exclusions.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $page->___references();
+
+// usage with all arguments
+$items = $page->___references($selector = '', $field = '');
+~~~~~
+
 ## Arguments
 
 - `$selector` (optional) `string|bool` Optional selector to filter results by, or boolean true as shortcut for `include=all`.
@@ -15,7 +25,7 @@ boolean `true` as a shortcut to specify that you do not want any exclusions.
 
 ## Return value
 
-PageArray|array
+- `PageArray|array`
 
 ## Since
 

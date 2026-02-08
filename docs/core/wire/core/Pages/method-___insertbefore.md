@@ -4,11 +4,21 @@ Source: `wire/core/Pages.php`
 
 Sort/move one page above another (for manually sorted pages)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pages->___insertBefore($page, $beforePage);
+
+// usage with all arguments
+$result = $pages->___insertBefore(Page $page, Page $beforePage);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page you want to move/sort
 - `$beforePage` `Page` Page you want to insert before
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -6,6 +6,16 @@ Hook called when a page is about to be moved to another parent
 
 Note the previous parent is accessible in the `$page->parentPrevious` property.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pages->___moveReady($page);
+
+// usage with all arguments
+$result = $pages->___moveReady(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that is about to be moved.

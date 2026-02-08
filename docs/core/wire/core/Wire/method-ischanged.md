@@ -6,6 +6,8 @@ Does the object have changes, or has the given property changed?
 
 Applicable only when object has change tracking enabled.
 
+## Example
+
 ~~~~~
 // Check if page has changed
 if($page->isChanged()) {
@@ -18,10 +20,20 @@ if($page->isChanged('title')) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wire->isChanged();
+
+// usage with all arguments
+$bool = $wire->isChanged($what = '');
+~~~~~
+
 ## Arguments
 
 - `$what` (optional) `string` Name of property, or if left blank, checks if any properties have changed.
 
 ## Return value
 
-bool True if property has changed, false if not.
+- `bool` True if property has changed, false if not.

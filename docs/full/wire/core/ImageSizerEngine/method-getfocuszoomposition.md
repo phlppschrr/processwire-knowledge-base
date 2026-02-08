@@ -6,6 +6,13 @@ Helper function to perform a cropExtra / cropBefore cropping
 
 Intended for use by the getFocusZoomCropDimensions() method
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $imageSizerEngine->getFocusZoomPosition($focus, $sourceDimension, $cropDimension, $zoom);
+~~~~~
+
 ## Arguments
 
 - `$focus` `string` (focus point in percent, like: 54.7%)
@@ -15,4 +22,4 @@ Intended for use by the getFocusZoomCropDimensions() method
 
 ## Return value
 
-int $position (crop position x or y in pixel)
+- `int` $position (crop position x or y in pixel)

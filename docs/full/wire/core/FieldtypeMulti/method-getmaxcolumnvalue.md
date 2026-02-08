@@ -4,6 +4,16 @@ Source: `wire/core/FieldtypeMulti.php`
 
 Get max value of column for given Page and Field or boolean false (or specified $noValue) if no rows present
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $fieldtypeMulti->getMaxColumnValue($page, $field, $column);
+
+// usage with all arguments
+$int = $fieldtypeMulti->getMaxColumnValue(Page $page, Field $field, $column, $noValue = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,11 +23,11 @@ Get max value of column for given Page and Field or boolean false (or specified 
 
 ## Return value
 
-int|bool|mixed
+- `int|bool|mixed`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

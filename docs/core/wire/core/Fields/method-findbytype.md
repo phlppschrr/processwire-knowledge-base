@@ -4,6 +4,16 @@ Source: `wire/core/Fields.php`
 
 Find fields by type
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fields->findByType($type);
+
+// usage with all arguments
+$array = $fields->findByType($type, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$type` `string|Fieldtype` Fieldtype class name or object
@@ -11,7 +21,7 @@ Find fields by type
 
 ## Return value
 
-array|Field[]
+- `array|Field[]`
 
 ## Since
 

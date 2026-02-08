@@ -4,10 +4,22 @@ Source: `wire/core/FunctionsWireAPI.php`
 
 Access the $sanitizer API variable as a function
 
+## Example
+
 ~~~~~
 // Example usages
 $clean = sanitizer()->pageName($dirty);
 $clean = sanitizer('pageName', $dirty); // same as above
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$sanitizer = $functionsWireAPI->wireSanitizer();
+
+// usage with all arguments
+$sanitizer = $functionsWireAPI->wireSanitizer($name = '', $value = '');
 ~~~~~
 
 ## Arguments
@@ -17,4 +29,4 @@ $clean = sanitizer('pageName', $dirty); // same as above
 
 ## Return value
 
-Sanitizer|string|int|array|null|mixed
+- `Sanitizer|string|int|array|null|mixed`

@@ -4,6 +4,16 @@ Source: `wire/core/Fieldtype.php`
 
 Return new instance of the Inputfield module associated with this Fieldtype.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $fieldtype->getInputfield($page, $field);
+
+// usage with all arguments
+$inputfield = $fieldtype->getInputfield(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that the Inputfield will be for
@@ -11,4 +21,4 @@ Return new instance of the Inputfield module associated with this Fieldtype.
 
 ## Return value
 
-Inputfield|null Returns Inputfield or null if not applicable/available.
+- `Inputfield|null` Returns Inputfield or null if not applicable/available.

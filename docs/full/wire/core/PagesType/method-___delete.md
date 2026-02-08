@@ -13,6 +13,16 @@ Hook note:
 If you want to hook this method, please hook the `deleteReady`, `deleted`, or `Pages::delete` method
 instead, as hooking this method will not hook relevant pages deleted directly through $pages->delete().
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesType->___delete($page);
+
+// usage with all arguments
+$bool = $pagesType->___delete(Page $page, $recursive = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -20,8 +30,8 @@ instead, as hooking this method will not hook relevant pages deleted directly th
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

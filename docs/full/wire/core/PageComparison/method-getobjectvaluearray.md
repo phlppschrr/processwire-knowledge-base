@@ -7,6 +7,16 @@ Given an object, return the value(s) it represents (optionally from a property i
 This method is setup for the matches() method above this. It will go recursive when given a property
 that resolves to another object.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pageComparison->getObjectValueArray($object);
+
+// usage with all arguments
+$array = $pageComparison->getObjectValueArray($object, $property = '');
+~~~~~
+
 ## Arguments
 
 - `$object` `Wire|object`
@@ -14,4 +24,4 @@ that resolves to another object.
 
 ## Return value
 
-array Always returns an array, which may be empty or populated
+- `array` Always returns an array, which may be empty or populated

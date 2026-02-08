@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Find all module files, recursively in Path
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $processModuleInstall->findModuleFiles();
+
+// usage with all arguments
+$array = $processModuleInstall->findModuleFiles($path = '', $maxLevel = 4);
+~~~~~
+
 ## Arguments
 
 - `$path` (optional) `string` Omit to use the default (/site/modules/)
@@ -11,4 +21,4 @@ Find all module files, recursively in Path
 
 ## Return value
 
-array of module classname => full pathname to module file
+- `array` of module classname => full pathname to module file

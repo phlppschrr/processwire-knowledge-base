@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return pages that this page is referencing by way of Page reference fields
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->referencing($page);
+
+// usage with all arguments
+$items = $pageTraversal->referencing(Page $page, $field = false, $getCount = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Return pages that this page is referencing by way of Page reference fields
 
 ## Return value
 
-PageArray|int|array
+- `PageArray|int|array`

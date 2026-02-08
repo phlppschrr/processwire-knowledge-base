@@ -23,9 +23,21 @@ one of the following:
 Note that the examples above showing $file require that the `$file` argument is specified
 in the `renderField()` method call.
 
+## Example
+
 ~~~~~
 // Render output for the 'images' field (assumes you have implemented an output file)
 echo $page->renderField('images');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___renderField($fieldName);
+
+// usage with all arguments
+$result = $page->___renderField($fieldName, $file = '', $value = null);
 ~~~~~
 
 ## Arguments
@@ -36,8 +48,8 @@ echo $page->renderField('images');
 
 ## Return value
 
-mixed|string Returns the rendered value of the field
+- `mixed|string` Returns the rendered value of the field
 
-## See also
+## See Also
 
 - [Page::renderValue()](method-___rendervalue.md)

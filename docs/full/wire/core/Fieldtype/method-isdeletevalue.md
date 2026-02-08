@@ -7,6 +7,16 @@ Is given value one that should cause the DB row(s) to be deleted rather than sav
 Not applicable to Fieldtypes that override the savePageField() method with their own
 implementation, unless they also use this method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldtype->isDeleteValue($page, $field, $value);
+
+// usage with all arguments
+$bool = $fieldtype->isDeleteValue(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -15,7 +25,7 @@ implementation, unless they also use this method.
 
 ## Return value
 
-bool
+- `bool`
 
 ## Since
 

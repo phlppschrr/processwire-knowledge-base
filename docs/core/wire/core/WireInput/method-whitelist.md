@@ -12,15 +12,28 @@ This whitelist is not specifically used by ProcessWire unless you populate it fr
 When populated, it is used by the MarkupPagerNav module (for instance) to ensure that sanitized query string (GET) variables
 are maintained across paginations.
 
+## Example
+
 ~~~~~
 // Retrieve a GET variable, sanitize/validate it, and populate to whitelist
 $limit = (int) $input->get('limit');
 if($limit < 10 || $limit > 100) $limit = 25; // validate
 $input->whitelist('limit', $limit);
 ~~~~~
+
 ~~~~~
 // Retrieve a variable from the whitelist
 $limit = $input->whitelist('limit');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$wireInput->whitelist();
+
+// usage with all arguments
+$wireInput->whitelist($key = '', $value = null);
 ~~~~~
 
 ## Arguments
@@ -30,4 +43,4 @@ $limit = $input->whitelist('limit');
 
 ## Return value
 
-null|mixed|WireInputData Returns whitelist variable value if getting a value (null if it doesn't exist).
+- `null|mixed|WireInputData` Returns whitelist variable value if getting a value (null if it doesn't exist).

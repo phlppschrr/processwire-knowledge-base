@@ -10,10 +10,17 @@ Duplicates behavior of PHP count() function prior to PHP 7.2, which states:
 object with implemented Countable interface, 1 will be returned. There is one exception,
 if $value is NULL, 0 will be returned.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $functions->wireCount($value);
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed`
 
 ## Return value
 
-int
+- `int`

@@ -4,9 +4,18 @@ Source: `wire/core/WireArray.php`
 
 Filter this WireArray to only include items that match the given selector (destructive)
 
+## Example
+
 ~~~~~
 // Filter $items to contain only those with "featured" property having value 1
 $items->filter("featured=1");
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->filter($selector);
 ~~~~~
 
 ## Arguments
@@ -15,8 +24,8 @@ $items->filter("featured=1");
 
 ## Return value
 
-$this reference to current instance.
+- `$this` reference to current instance.
 
-## See also
+## See Also
 
 - filterData

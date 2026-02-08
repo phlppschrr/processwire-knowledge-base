@@ -3,3 +3,10 @@
 Source: `wire/core/FieldgroupsArray.php`
 
 Per WireArray interface, this class only carries Fieldgroup instances
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldgroupsArray->isValidItem($item);
+~~~~~

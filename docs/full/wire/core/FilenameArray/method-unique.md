@@ -4,9 +4,16 @@ Source: `wire/core/FilenameArray.php`
 
 Make FilenameArray unique (deprecated)
 
+## Usage
+
+~~~~~
+// basic usage
+$filenameArray = $filenameArray->unique();
+~~~~~
+
 ## Return value
 
-FilenameArray
+- `FilenameArray`
 
 ## Deprecated
 

@@ -4,6 +4,16 @@ Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Record an error notification
 
+## Usage
+
+~~~~~
+// basic usage
+$notification = $notificationArray->error($text);
+
+// usage with all arguments
+$notification = $notificationArray->error($text, $flags = 0);
+~~~~~
+
 ## Arguments
 
 - `$text` `string`
@@ -11,4 +21,4 @@ Record an error notification
 
 ## Return value
 
-Notification
+- `Notification`

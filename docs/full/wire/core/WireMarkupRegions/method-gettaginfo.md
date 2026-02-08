@@ -17,10 +17,17 @@ Returned info includes:
  - `tag` (string): The entire tag as given
  - `close` (string): The HTML string that would close this tag
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireMarkupRegions->getTagInfo($tag);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string` Must be a tag in format “<tag attrs>”
 
 ## Return value
 
-array
+- `array`

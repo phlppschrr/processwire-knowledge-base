@@ -8,15 +8,25 @@ May be preferable to a before `Pages::save` hook because you know for sure a sav
 be executed immediately after this is called. Whereas you don't necessarily know
 that when the before `Pages::save` is called, as an error may prevent it.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $pages->___saveReady($page);
+
+// usage with all arguments
+$array = $pages->___saveReady(Page $page);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` The page about to be saved
 
 ## Return value
 
-array Optional extra data to add to pages save query, which the hook can populate.
+- `array` Optional extra data to add to pages save query, which the hook can populate.
 
-## See also
+## See Also
 
 - [Pages::savePageOrFieldReady()](method-___savepageorfieldready.md)
 - [Pages::saveFieldReady()](method-___savefieldready.md)

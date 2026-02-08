@@ -4,9 +4,16 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Return read-only PDO connection if available or read/write PDO connection if not
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabasePDO->pdoReader();
+~~~~~
+
 ## Return value
 
-\PDO
+- `\PDO`
 
 ## Since
 

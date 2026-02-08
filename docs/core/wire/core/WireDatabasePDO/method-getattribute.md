@@ -4,13 +4,20 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Retrieve a database connection attribute
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDatabasePDO->getAttribute($attribute);
+~~~~~
+
 ## Arguments
 
 - `$attribute` `int`
 
 ## Return value
 
-mixed
+- `mixed`
 
 ## Details
 

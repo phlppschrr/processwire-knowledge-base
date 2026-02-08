@@ -6,6 +6,16 @@ Execute query to save to pages table
 
 triggers hooks: addReady, saveReady, statusChangeReady (when status changed)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesEditor->savePageQuery($page, $options);
+
+// usage with all arguments
+$bool = $pagesEditor->savePageQuery(Page $page, array $options);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,8 +23,8 @@ triggers hooks: addReady, saveReady, statusChangeReady (when status changed)
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException|\Exception
+- `WireException|\Exception`

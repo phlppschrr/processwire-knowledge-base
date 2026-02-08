@@ -4,6 +4,16 @@ Source: `wire/core/Role.php`
 
 Return whether the role has the permission within the context of a Page or Template
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $role->hasPermissionContext($has, $permission, $context);
+
+// usage with all arguments
+$bool = $role->hasPermissionContext($has, Permission $permission, Wire $context);
+~~~~~
+
 ## Arguments
 
 - `$has` `bool` Result from the hasPermission() method
@@ -12,4 +22,4 @@ Return whether the role has the permission within the context of a Page or Templ
 
 ## Return value
 
-bool
+- `bool`

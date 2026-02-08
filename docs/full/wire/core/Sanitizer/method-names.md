@@ -8,6 +8,16 @@ Sanitize a string or array containing multiple names
 - If given a string, multiple names may be separated by a delimeter (which is a space by default).
 - Return value will be of the same type as the given value (i.e. string or array).
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->names($value);
+
+// usage with all arguments
+$string = $sanitizer->names($value, $delimeter = ' ', $allowedExtras = array('-', '_', '.'), $replacementChar = '_', $beautify = false);
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array` Value(s) to sanitize to name format.
@@ -18,4 +28,4 @@ Sanitize a string or array containing multiple names
 
 ## Return value
 
-string|array Returns string if given a string for $value, returns array if given an array for $value.
+- `string|array` Returns string if given a string for $value, returns array if given an array for $value.

@@ -7,6 +7,22 @@ Retrieve a named COOKIE variable value or all COOKIE variables
 Please see the [cookie API reference page](https://processwire.com/api/ref/wire-input-data-cookie/) for
 additional documentation on how to get and set cookies and cookie options.
 
+
+Cookies are a form of user input, so always sanitize (and validate where appropriate) any values.
+
+The following optional features are available in ProcessWire version 3.0.125 and newer:
+
+- Provide a sanitization method as the 2nd argument to include sanitization.
+- Provide an array of valid values as the 2nd argument to limit input to those values.
+- Provide a callback function that receives the value and returns a validated value.
+- Provide a fallback value as the 3rd argument to use if value not present or invalid.
+- Append “[]” to the 1st argument to always force return value to be an array, i.e “colors[]”.
+
+Note that the `$valid` and `$fallback` arguments are only applicable if a `$key` argument is provided.
+See the `WireInput::get()` method for usage examples (get method works the same as cookie method).
+
+## Example
+
 ~~~~~
 // setting cookies
 $input->cookie->foo = 'bar'; // set with default options (expires with session)
@@ -42,18 +58,15 @@ $config->cookieOptions = [
 ];
 ~~~~~
 
-Cookies are a form of user input, so always sanitize (and validate where appropriate) any values.
+## Usage
 
-The following optional features are available in ProcessWire version 3.0.125 and newer:
+~~~~~
+// basic usage
+$wireInput->cookie();
 
-- Provide a sanitization method as the 2nd argument to include sanitization.
-- Provide an array of valid values as the 2nd argument to limit input to those values.
-- Provide a callback function that receives the value and returns a validated value.
-- Provide a fallback value as the 3rd argument to use if value not present or invalid.
-- Append “[]” to the 1st argument to always force return value to be an array, i.e “colors[]”.
-
-Note that the `$valid` and `$fallback` arguments are only applicable if a `$key` argument is provided.
-See the `WireInput::get()` method for usage examples (get method works the same as cookie method).
+// usage with all arguments
+$wireInput->cookie($key = '', $valid = null, $fallback = null);
+~~~~~
 
 ## Arguments
 
@@ -63,8 +76,8 @@ See the `WireInput::get()` method for usage examples (get method works the same 
 
 ## Return value
 
-null|mixed|WireInputData Returns one of the following: - If given no `$key` argument, returns `WireInputData` with all unsanitized COOKIE vars. - If given no `$valid` argument, returns unsanitized value or NULL if not present. - If given a Sanitizer name for `$valid` argument, returns value sanitized with that Sanitizer method (3.0.125+). - If given an array of allowed values for `$valid` argument, returns value from that array if it was in the input, or null if not (3.0.125+). - If given a callable function for `$valid` argument, returns the value returned by that function (3.0.125+). - If given a `$fallback` argument, returns that value when it would otherwise return null (3.0.125+).
+- `null|mixed|WireInputData` Returns one of the following: - If given no `$key` argument, returns `WireInputData` with all unsanitized COOKIE vars. - If given no `$valid` argument, returns unsanitized value or NULL if not present. - If given a Sanitizer name for `$valid` argument, returns value sanitized with that Sanitizer method (3.0.125+). - If given an array of allowed values for `$valid` argument, returns value from that array if it was in the input, or null if not (3.0.125+). - If given a callable function for `$valid` argument, returns the value returned by that function (3.0.125+). - If given a `$fallback` argument, returns that value when it would otherwise return null (3.0.125+).
 
-## Throws
+## Exceptions
 
-- WireException if given unknown Sanitizer method for $valid argument
+- `WireException` if given unknown Sanitizer method for $valid argument

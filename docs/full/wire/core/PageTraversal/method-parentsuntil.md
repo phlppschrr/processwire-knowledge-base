@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return all parent from current till the one matched by $selector
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->parentsUntil($page);
+
+// usage with all arguments
+$items = $pageTraversal->parentsUntil(Page $page, $selector = '', $filter = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -12,4 +22,4 @@ Return all parent from current till the one matched by $selector
 
 ## Return value
 
-PageArray
+- `PageArray`

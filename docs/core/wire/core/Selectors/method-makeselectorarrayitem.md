@@ -4,6 +4,16 @@ Source: `wire/core/Selectors.php`
 
 Return an array of an individual Selector info, for use by setSelectorArray() method
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $selectors->makeSelectorArrayItem($key, $data);
+
+// usage with all arguments
+$array = $selectors->makeSelectorArrayItem($key, $data, $dataType = '');
+~~~~~
+
 ## Arguments
 
 - `$key` `string|int`
@@ -12,8 +22,8 @@ Return an array of an individual Selector info, for use by setSelectorArray() me
 
 ## Return value
 
-array
+- `array`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

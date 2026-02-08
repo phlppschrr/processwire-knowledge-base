@@ -7,6 +7,16 @@ Sanitize array or CSV string to array of values, optionally sanitized by given m
 If given a string, delimiter may be pipe ("|"), or comma (","), unless overridden with the `delimiter`
 or `delimiters` options.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->___array($value);
+
+// usage with all arguments
+$array = $sanitizer->___array($value, $sanitizer = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first item in array.
@@ -15,8 +25,8 @@ or `delimiters` options.
 
 ## Return value
 
-array
+- `array`
 
-## Throws
+## Exceptions
 
-- WireException if an unknown $sanitizer method is given
+- `WireException` if an unknown $sanitizer method is given

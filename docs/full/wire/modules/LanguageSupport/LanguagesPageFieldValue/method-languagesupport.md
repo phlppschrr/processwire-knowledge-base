@@ -3,11 +3,18 @@
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 
+## Usage
+
+~~~~~
+// basic usage
+$languagesPageFieldValue->languageSupport();
+~~~~~
+
 ## Return value
 
-null|LanguageSupport
+- `null|LanguageSupport`
 
-## Throws
+## Exceptions
 
-- WireException
-- WirePermissionException
+- `WireException`
+- `WirePermissionException`

@@ -4,6 +4,16 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Get translated text or boolean false if not translated (rather than default language value)
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageTranslator->getTranslationOrFalse($textdomain, $text);
+
+// usage with all arguments
+$string = $languageTranslator->getTranslationOrFalse($textdomain, $text, $context = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string|object` Textdomain string, filename, or object.
@@ -13,7 +23,7 @@ Get translated text or boolean false if not translated (rather than default lang
 
 ## Return value
 
-string|false
+- `string|false`
 
 ## Since
 

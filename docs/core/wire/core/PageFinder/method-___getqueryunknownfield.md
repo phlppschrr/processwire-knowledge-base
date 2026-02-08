@@ -10,6 +10,16 @@ map it to a Field by returning a Field object. If it returns integer 1 then it i
 fieldName mapped to an API variable. If this method returns false, then it signals the getQuery()
 method that it was unable to map it to anything and should be considered a fail.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pageFinder->___getQueryUnknownField($fieldName, $data);
+
+// usage with all arguments
+$bool = $pageFinder->___getQueryUnknownField($fieldName, array $data);
+~~~~~
+
 ## Arguments
 
 - `$fieldName` `string`
@@ -17,8 +27,8 @@ method that it was unable to map it to anything and should be considered a fail.
 
 ## Return value
 
-bool|Field|int
+- `bool|Field|int`
 
-## Throws
+## Exceptions
 
-- PageFinderSyntaxException
+- `PageFinderSyntaxException`

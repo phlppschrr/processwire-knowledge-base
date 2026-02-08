@@ -4,10 +4,17 @@ Source: `wire/core/Pageimages.php`
 
 Does this field have the given file name? If so, return it, if not return null.
 
+## Usage
+
+~~~~~
+// basic usage
+$pageimages->getFile($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Basename is assumed
 
 ## Return value
 
-null|Pagefile|Pageimage Returns Pagefile object if found, null if not
+- `null|Pagefile|Pageimage` Returns Pagefile object if found, null if not

@@ -7,6 +7,16 @@ Removes 4-byte UTF-8 characters (like emoji) that produce error with with MySQL 
 Returns the same value type that it is given. If given something other than a string or array, it just
 returns it without modification.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->removeMB4($value);
+
+// usage with all arguments
+$string = $sanitizer->removeMB4($value, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `string|array` String or array containing strings
@@ -14,4 +24,4 @@ returns it without modification.
 
 ## Return value
 
-string|array
+- `string|array`

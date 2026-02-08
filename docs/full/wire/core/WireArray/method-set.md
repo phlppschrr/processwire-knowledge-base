@@ -4,6 +4,13 @@ Source: `wire/core/WireArray.php`
 
 Set an item by key in the WireArray.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `int|string` Key of item to set.
@@ -11,8 +18,8 @@ Set an item by key in the WireArray.
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException If given an item not compatible with this WireArray.
+- `WireException` If given an item not compatible with this WireArray.

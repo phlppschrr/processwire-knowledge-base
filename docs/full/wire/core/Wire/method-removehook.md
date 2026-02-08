@@ -6,6 +6,8 @@ Given a Hook ID, remove the hook
 
 Once a hook is removed, it will no longer execute.
 
+## Example
+
 ~~~~~
 // Add a hook
 $hookID = $pages->addHookAfter('find', function($event) {
@@ -15,6 +17,7 @@ $hookID = $pages->addHookAfter('find', function($event) {
 // Remove the hook
 $pages->removeHook($hookID);
 ~~~~~
+
 ~~~~~
 // Hook function that removes itself
 $hookID = $pages->addHookAfter('find', function($event) {
@@ -23,10 +26,17 @@ $hookID = $pages->addHookAfter('find', function($event) {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->removeHook($hookId);
+~~~~~
+
 ## Arguments
 
 - `$hookId` `string|array|null` ID of hook to remove (ID is returned by the addHook() methods) Since 3.0.137 it may also be an array or CSV string of hook IDs to remove.
 
 ## Return value
 
-$this
+- `$this`

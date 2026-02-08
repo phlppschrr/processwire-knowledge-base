@@ -4,6 +4,16 @@ Source: `wire/core/AdminThemeFramework.php`
 
 Render runtime notices div#notices
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $adminThemeFramework->renderNotices($notices);
+
+// usage with all arguments
+$string = $adminThemeFramework->renderNotices($notices, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$notices` `Notices|bool` Notices object or specify boolean true to return array of all available $options
@@ -11,4 +21,4 @@ Render runtime notices div#notices
 
 ## Return value
 
-string|array Returns string unless you specify true for $notices argument, then it returns an array.
+- `string|array` Returns string unless you specify true for $notices argument, then it returns an array.

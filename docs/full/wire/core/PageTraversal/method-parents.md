@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return this page's parent pages, or the parent pages matching the given selector.
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->parents($page);
+
+// usage with all arguments
+$items = $pageTraversal->parents(Page $page, $selector = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Return this page's parent pages, or the parent pages matching the given selector
 
 ## Return value
 
-PageArray
+- `PageArray`

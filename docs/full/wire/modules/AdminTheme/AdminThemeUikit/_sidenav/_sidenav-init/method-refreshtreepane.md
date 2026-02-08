@@ -6,3 +6,13 @@ Reload/refresh the tree pane, optionally for children of specific page ID
 
 If page ID provided, it refreshes just children of that page ID.
 If no argument provided, then it refreshes the entire pane.
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $sidenavInit->refreshTreePane();
+
+// usage with all arguments
+$result = $sidenavInit->refreshTreePane(pageID);
+~~~~~

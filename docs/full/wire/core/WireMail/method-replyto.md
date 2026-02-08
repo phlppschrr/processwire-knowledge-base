@@ -4,6 +4,16 @@ Source: `wire/core/WireMail.php`
 
 Set the 'reply-to' email address and optionally name (where supported)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMail->replyTo($email);
+
+// usage with all arguments
+$result = $wireMail->replyTo($email, $name = null);
+~~~~~
+
 ## Arguments
 
 - `$email` `string` Must be a single email address or "User Name <user@example.com>" string.
@@ -11,8 +21,8 @@ Set the 'reply-to' email address and optionally name (where supported)
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException if provided email was invalid or in blacklist
+- `WireException` if provided email was invalid or in blacklist

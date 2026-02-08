@@ -4,6 +4,13 @@ Source: `wire/core/Notice.php`
 
 Set property
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $notice->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set property
 
 ## Return value
 
-$this|WireData
+- `$this|WireData`

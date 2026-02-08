@@ -4,6 +4,16 @@ Source: `wire/core/WireClassLoader.php`
 
 Find class file among given paths and return full pathname to file if found
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireClassLoader->findClassInPaths($name, $paths);
+
+// usage with all arguments
+$string = $wireClassLoader->findClassInPaths($name, $paths, $dir = '');
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Class name without namespace
@@ -12,7 +22,7 @@ Find class file among given paths and return full pathname to file if found
 
 ## Return value
 
-string|bool Returns full path+filename when found or boolean false when not found
+- `string|bool` Returns full path+filename when found or boolean false when not found
 
 ## Since
 

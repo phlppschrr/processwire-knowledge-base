@@ -4,6 +4,16 @@ Source: `wire/core/WireDateTime.php`
 
 Parse English textual datetime description into a formatted date string, or blank if not a date
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireDateTime->strtodate($str);
+
+// usage with all arguments
+$string = $wireDateTime->strtodate($str, $format = true, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` Date/time string to parse
@@ -12,7 +22,7 @@ Parse English textual datetime description into a formatted date string, or blan
 
 ## Return value
 
-string Return string, returns blank string on fail.
+- `string` Return string, returns blank string on fail.
 
 ## Since
 

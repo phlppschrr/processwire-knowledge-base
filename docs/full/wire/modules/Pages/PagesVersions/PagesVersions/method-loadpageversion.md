@@ -7,6 +7,16 @@ Load and populate version data to given page
 This is similar to the `getPageVersion()` method except that it populates
 the given `$page` rather than populating and returning a cloned copy of it.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pagesVersions->loadPageVersion($page, $version);
+
+// usage with all arguments
+$bool = $pagesVersions->loadPageVersion(Page $page, $version, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -15,4 +25,4 @@ the given `$page` rather than populating and returning a cloned copy of it.
 
 ## Return value
 
-bool True if version data was available and populated, false if not
+- `bool` True if version data was available and populated, false if not

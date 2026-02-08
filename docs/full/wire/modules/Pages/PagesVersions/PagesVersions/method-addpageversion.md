@@ -4,10 +4,22 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Add a new page version and return the added version number
 
+## Example
+
 ~~~~~
 $page = $pages->get(1234);
 $version = $pagesVersions->addPageVersion($page);
 echo "Added version $version for page $page";
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesVersions->addPageVersion($page);
+
+// usage with all arguments
+$int = $pagesVersions->addPageVersion(Page $page, array $options = []);
 ~~~~~
 
 ## Arguments
@@ -17,8 +29,8 @@ echo "Added version $version for page $page";
 
 ## Return value
 
-int Version number or 0 if no version created
+- `int` Version number or 0 if no version created
 
-## Throws
+## Exceptions
 
-- WireException|\PDOException
+- `WireException|\PDOException`

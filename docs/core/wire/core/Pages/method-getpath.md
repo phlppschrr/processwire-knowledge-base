@@ -11,10 +11,22 @@ Given an ID, return a path to a page, without loading the actual page
 4. It's possible for there to be `Page::path()` hooks, and this method completely bypasses them,
    which is another reason not to use it unless you know such hooks aren't applicable to you.
 
+## Example
+
 ~~~~~
 // Get the path for page having ID 1234
 $path = $pages->getPath(1234);
 echo "Path for page 1234 is: $path";
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $pages->getPath($id);
+
+// usage with all arguments
+$string = $pages->getPath($id, $options = array());
 ~~~~~
 
 ## Arguments
@@ -24,9 +36,9 @@ echo "Path for page 1234 is: $path";
 
 ## Return value
 
-string Path to page or blank on error/not-found.
+- `string` Path to page or blank on error/not-found.
 
-## See also
+## See Also
 
 - [Page::path()](../Page/method-path.md)
 

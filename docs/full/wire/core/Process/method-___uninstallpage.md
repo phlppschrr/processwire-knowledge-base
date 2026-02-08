@@ -8,6 +8,13 @@ If there is more than one page using this Process, it will trash them all.
 
 To be called by the Process module's ___uninstall() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $process->___uninstallPage();
+~~~~~
+
 ## Return value
 
-int Number of pages trashed
+- `int` Number of pages trashed

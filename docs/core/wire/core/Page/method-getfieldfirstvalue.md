@@ -8,6 +8,16 @@ A Multi Key is a string with multiple field names split by pipes, i.e. headline|
 
 Example: browser_title|headline|title - Return the value of the first field that is non-empty
 
+## Usage
+
+~~~~~
+// basic usage
+$page->getFieldFirstValue($multiKey);
+
+// usage with all arguments
+$page->getFieldFirstValue($multiKey, $getKey = false);
+~~~~~
+
 ## Arguments
 
 - `$multiKey` `string`
@@ -15,7 +25,7 @@ Example: browser_title|headline|title - Return the value of the first field that
 
 ## Return value
 
-null|mixed Returns null if no values match, or if there aren't multiple keys split by "|" chars
+- `null|mixed` Returns null if no values match, or if there aren't multiple keys split by "|" chars
 
 ## Deprecated
 

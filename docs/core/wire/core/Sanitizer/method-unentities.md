@@ -14,6 +14,16 @@ decode than what PHP does. That will make it convert all UTF-8 entities (includi
 entities), and it will remove any remaining entity sequences if the could not be converted, ensuring there
 are no entities possible in returned value.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->unentities($str);
+
+// usage with all arguments
+$string = $sanitizer->unentities($str, $flags = ENT_QUOTES, $encoding = 'UTF-8');
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to remove entities from
@@ -22,8 +32,8 @@ are no entities possible in returned value.
 
 ## Return value
 
-string String with entities removed.
+- `string` String with entities removed.
 
-## See also
+## See Also
 
 - [Sanitizer::entities()](method-entities.md)

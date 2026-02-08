@@ -6,9 +6,16 @@ Delete all caches (where allowed)
 
 This method deletes all caches other than those with `WireCache::expireReserved` status.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireCache->deleteAll();
+~~~~~
+
 ## Return value
 
-int Quantity of caches deleted
+- `int` Quantity of caches deleted
 
 ## Since
 

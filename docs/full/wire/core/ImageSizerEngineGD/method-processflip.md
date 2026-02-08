@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Process vertical or horizontal flip of an image
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngineGD->processFlip($srcFilename, $dstFilename, $flipType);
+~~~~~
+
 ## Arguments
 
 - `$srcFilename` `string`
@@ -12,4 +19,4 @@ Process vertical or horizontal flip of an image
 
 ## Return value
 
-bool
+- `bool`

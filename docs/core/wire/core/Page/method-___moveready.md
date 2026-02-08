@@ -4,6 +4,8 @@ Source: `wire/core/Page.php`
 
 Called when this Page is about to be moved to another parent
 
+## Example
+
 ~~~~~
 $wire->addHook('Page::moveReady', function($e) {
   $page = $e->object;
@@ -11,6 +13,13 @@ $wire->addHook('Page::moveReady', function($e) {
   $e->log->message("Moving page $page from $oldParent->path into $newParent->path");
   if($newParent->isTrash()) $e->log->save("trash", "Trashing page $page");
 });
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $page->___moveReady($oldParent, $newParent);
 ~~~~~
 
 ## Arguments

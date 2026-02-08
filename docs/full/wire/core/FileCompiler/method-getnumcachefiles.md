@@ -4,6 +4,16 @@ Source: `wire/core/FileCompiler.php`
 
 Get a count of how many files are in the cache
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $fileCompiler->getNumCacheFiles();
+
+// usage with all arguments
+$int = $fileCompiler->getNumCacheFiles($all = false, $targetPath = null);
+~~~~~
+
 ## Arguments
 
 - `$all` (optional) `bool` Specify true to get a count for all file compiler caches
@@ -11,4 +21,4 @@ Get a count of how many files are in the cache
 
 ## Return value
 
-int
+- `int`

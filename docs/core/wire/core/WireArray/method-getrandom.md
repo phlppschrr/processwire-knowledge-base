@@ -9,12 +9,24 @@ Get a random item from this WireArray.
 - We recommend using this method when you just need 1 random item, and using the `WireArray::findRandom()` method
   when you need multiple random items.
 
+## Example
+
 ~~~~~
 // Get a single random item
 $randomItem = $items->getRandom();
 
 // Get 3 random items
 $randomItems = $items->getRandom(3);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$items = $wireArray->getRandom();
+
+// usage with all arguments
+$items = $wireArray->getRandom($num = 1, $alwaysArray = false);
 ~~~~~
 
 ## Arguments
@@ -24,9 +36,9 @@ $randomItems = $items->getRandom(3);
 
 ## Return value
 
-WireArray|Wire|mixed|null Returns value of item, or new WireArray of items if more than one requested.
+- `WireArray|Wire|mixed|null` Returns value of item, or new WireArray of items if more than one requested.
 
-## See also
+## See Also
 
 - [WireArray::findRandom()](method-findrandom.md)
 - [WireArray::findRandomTimed()](method-findrandomtimed.md)

@@ -4,6 +4,16 @@ Source: `wire/core/Selectors.php`
 
 Early-exit optimizations for extractValue
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $selectors->extractValueQuick($str, $openingQuote, $closingQuote);
+
+// usage with all arguments
+$result = $selectors->extractValueQuick(&$str, $openingQuote, $closingQuote);
+~~~~~
+
 ## Arguments
 
 - `$str` `string` String to extract value from, $str will be modified if extraction successful
@@ -12,4 +22,4 @@ Early-exit optimizations for extractValue
 
 ## Return value
 
-false|string|string[] Returns found value if successful, boolean false if not
+- `false|string|string[]` Returns found value if successful, boolean false if not

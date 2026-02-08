@@ -15,6 +15,8 @@ and has no connection to ProcessWire fields.
 Values for meta data must be basic PHP types, whether arrays, strings, numbers, etc. Please do
 not use objects for meta values at this time.
 
+## Example
+
 ~~~~~
 // set and save a meta value
 $page->meta()->set('colors', [ 'red', 'green', 'blue' ]);
@@ -37,6 +39,16 @@ $meta = $page->meta();
 $values = $meta->getArray();
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$wireDataDB = $page->meta();
+
+// usage with all arguments
+$wireDataDB = $page->meta($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|bool` Omit to get the WireData instance or specify property name to get or set.
@@ -44,7 +56,7 @@ $values = $meta->getArray();
 
 ## Return value
 
-WireDataDB|string|array|int|float
+- `WireDataDB|string|array|int|float`
 
 ## Since
 

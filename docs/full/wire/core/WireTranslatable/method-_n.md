@@ -4,6 +4,13 @@ Source: `wire/core/Interfaces.php`
 
 Perform a language translation with singular and plural versions
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireTranslatable->_n($textSingular, $textPlural, $count);
+~~~~~
+
 ## Arguments
 
 - `$textSingular` `string` Singular version of text (when there is 1 item)
@@ -12,4 +19,4 @@ Perform a language translation with singular and plural versions
 
 ## Return value
 
-string Translated text or original text if translation not available.
+- `string` Translated text or original text if translation not available.

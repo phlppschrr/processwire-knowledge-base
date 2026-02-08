@@ -6,6 +6,16 @@ Return this Page's sibling pages, optionally filtered by a selector.
 
 Note that the siblings include the current page. To exclude the current page, specify "id!=$page".
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->siblings($page);
+
+// usage with all arguments
+$items = $pageTraversal->siblings(Page $page, $selector = '');
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,4 +23,4 @@ Note that the siblings include the current page. To exclude the current page, sp
 
 ## Return value
 
-PageArray
+- `PageArray`

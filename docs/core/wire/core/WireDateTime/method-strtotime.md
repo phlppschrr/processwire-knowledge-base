@@ -9,6 +9,16 @@ and lets you specify the return value for empty or zeroed dates like 0000-00-00.
 then it returns null by default (rather than throwing an error as PHP8 does). As of 3.0.238+ this method
 also lets you optionally specify an input format should the given date string not be strtotime compatible.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireDateTime->strtotime($str);
+
+// usage with all arguments
+$result = $wireDateTime->strtotime($str, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$str` `string` Date/time string
@@ -16,9 +26,9 @@ also lets you optionally specify an input format should the given date string no
 
 ## Return value
 
-false|int|null
+- `false|int|null`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.strtotime.php](https://www.php.net/manual/en/function.strtotime.php)
 

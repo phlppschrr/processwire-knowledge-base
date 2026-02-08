@@ -18,13 +18,17 @@ all correspond to the identically named PHP [fgetcsv](https://www.php.net/manual
 arguments.
 
 Example foods.csv file (first row is header):
+Example of reading the foods.csv file above:
+
+## Example
+
 ~~~~~
 Food,Type,Color
 Apple,Fruit,Red
 Banana,Fruit,Yellow
 Spinach,Vegetable,Green
 ~~~~~
-Example of reading the foods.csv file above:
+
 ~~~~~
 $rows = $files->getAllCSV('/path/to/foods.csv');
 foreach($rows as $row) {
@@ -34,6 +38,16 @@ foreach($rows as $row) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireFileTools->getAllCSV($filename);
+
+// usage with all arguments
+$array = $wireFileTools->getAllCSV($filename, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` CSV filename to read from
@@ -41,9 +55,9 @@ foreach($rows as $row) {
 
 ## Return value
 
-array
+- `array`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.fgetcsv.php](https://www.php.net/manual/en/function.fgetcsv.php)
 - getCSV()

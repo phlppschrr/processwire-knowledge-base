@@ -4,6 +4,16 @@ Source: `wire/core/WireMailInterface.php`
 
 Set the email from address
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMailInterface->from($email);
+
+// usage with all arguments
+$result = $wireMailInterface->from($email, $name = null);
+~~~~~
+
 ## Arguments
 
 - string Must be a single email address or "User Name <user@example.com>" string.
@@ -11,8 +21,8 @@ Set the email from address
 
 ## Return value
 
-self
+- `self`
 
-## Throws
+## Exceptions
 
-- WireException if provided email was invalid
+- `WireException` if provided email was invalid

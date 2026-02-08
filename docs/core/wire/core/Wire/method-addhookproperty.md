@@ -11,6 +11,8 @@ Note that adding a hook with this just makes it possible to call the hook as a p
 Any hook property you add can also be called as a method, i.e. `$obj->foo` and `$obj->foo()`
 are the same.
 
+## Example
+
 ~~~~~
 // Adding a hook property
 $wire->addHookProperty('Page::lastModifiedStr', function($event) {
@@ -22,6 +24,16 @@ $wire->addHookProperty('Page::lastModifiedStr', function($event) {
 echo $page->lastModifiedStr; // outputs: "10 days ago"
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wire->addHookProperty($property, $toObject);
+
+// usage with all arguments
+$string = $wire->addHookProperty($property, $toObject, $toMethod = null, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$property` `string|array` Name of property you want to add, must not collide with existing property or method names: - `Class::property` to add the property to all instances of Class. - `property` if just adding to a single object instance. - Since 3.0.137 it may also be multiple properties to hook in CSV string or array.
@@ -31,8 +43,8 @@ echo $page->lastModifiedStr; // outputs: "10 days ago"
 
 ## Return value
 
-string A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
+- `string` A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
 
-## See also
+## See Also
 
 - [https://processwire.com/docs/modules/hooks/](https://processwire.com/docs/modules/hooks/)

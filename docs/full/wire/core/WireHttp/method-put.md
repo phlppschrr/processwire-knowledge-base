@@ -8,6 +8,16 @@ Send a PUT request to a URL
 target resource with the request payload.”
 [More about PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->put($url);
+
+// usage with all arguments
+$bool = $wireHttp->put($url, $data = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to PUT to (including http:// or https://)
@@ -16,7 +26,7 @@ target resource with the request payload.”
 
 ## Return value
 
-bool|string False on failure or string of contents received on success.
+- `bool|string` False on failure or string of contents received on success.
 
 ## Since
 

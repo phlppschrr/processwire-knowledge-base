@@ -4,6 +4,13 @@ Source: `wire/core/WireDatabasePDO.php`
 
 Sets an attribute on the database handle
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->setAttribute($attribute, $value);
+~~~~~
+
 ## Arguments
 
 - `$attribute` `int`
@@ -11,7 +18,7 @@ Sets an attribute on the database handle
 
 ## Return value
 
-bool
+- `bool`
 
 ## Details
 

@@ -4,6 +4,16 @@ Source: `wire/core/Templates.php`
 
 Add and save new template (and fieldgroup) with given name and return it
 
+## Usage
+
+~~~~~
+// basic usage
+$template = $templates->add($name);
+
+// usage with all arguments
+$template = $templates->add($name, array $properties = array());
+~~~~~
+
 ## Arguments
 
 - `$name` `string`
@@ -11,11 +21,11 @@ Add and save new template (and fieldgroup) with given name and return it
 
 ## Return value
 
-Template
+- `Template`
 
-## Throws
+## Exceptions
 
-- WireException if given invalid template name or template already exists
+- `WireException` if given invalid template name or template already exists
 
 ## Since
 

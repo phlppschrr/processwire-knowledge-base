@@ -4,6 +4,8 @@ Source: `wire/core/WireFileTools.php`
 
 Creates a ZIP file
 
+## Example
+
 ~~~~~
 // Create zip of all files in directory $dir to file $zip
 $dir = $config->paths->cache . "my-files/";
@@ -23,6 +25,16 @@ if(count($result['errors'])) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireFileTools->zip($zipfile, $files);
+
+// usage with all arguments
+$array = $wireFileTools->zip($zipfile, $files, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$zipfile` `string` Full path and filename to create or update (i.e. /path/to/myfile.zip)
@@ -31,12 +43,12 @@ if(count($result['errors'])) {
 
 ## Return value
 
-array Returns associative array of: - `files` (array): all files that were added - `errors` (array): files that failed to add, if any
+- `array` Returns associative array of: - `files` (array): all files that were added - `errors` (array): files that failed to add, if any
 
-## Throws
+## Exceptions
 
-- WireException Original ZIP file creation error conditions result in WireException being thrown.
+- `WireException` Original ZIP file creation error conditions result in WireException being thrown.
 
-## See also
+## See Also
 
 - [WireFileTools::unzip()](method-unzip.md)

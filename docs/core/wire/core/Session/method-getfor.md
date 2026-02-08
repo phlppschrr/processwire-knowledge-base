@@ -4,9 +4,18 @@ Source: `wire/core/Session.php`
 
 Get a session variable within a given namespace
 
+## Example
+
 ~~~~~
 // Retrieve namespaced session value
 $firstName = $session->getFor($this, 'firstName');
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $session->getFor($ns, $key);
 ~~~~~
 
 ## Arguments
@@ -16,4 +25,4 @@ $firstName = $session->getFor($this, 'firstName');
 
 ## Return value
 
-mixed
+- `mixed`

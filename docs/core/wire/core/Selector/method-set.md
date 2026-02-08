@@ -4,6 +4,13 @@ Source: `wire/core/Selector.php`
 
 Set a property of the Selector
 
+## Usage
+
+~~~~~
+// basic usage
+$selector = $selector->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set a property of the Selector
 
 ## Return value
 
-Selector|WireData
+- `Selector|WireData`

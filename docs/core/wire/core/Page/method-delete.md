@@ -6,6 +6,8 @@ Delete this page from the database
 
 This is the same as calling `$pages->delete($page)`.
 
+## Example
+
 ~~~~~
 // Delete pages named "delete-me" that don't have children
 $items = $pages->find("name=delete-me, numChildren=0");
@@ -13,10 +15,21 @@ foreach($items as $item) {
   $item->delete();
 }
 ~~~~~
+
 ~~~~~
 // Delete a page and recursively all of its children, grandchildren, etc.
 $item = $pages->get('/some-page/');
 $item->delete(true);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->delete();
+
+// usage with all arguments
+$bool = $page->delete($recursive = false);
 ~~~~~
 
 ## Arguments
@@ -25,12 +38,12 @@ $item->delete(true);
 
 ## Return value
 
-bool|int True on success, false on failure, or int quantity of pages deleted when recursive option is true.
+- `bool|int` True on success, false on failure, or int quantity of pages deleted when recursive option is true.
 
-## Throws
+## Exceptions
 
-- WireException when attempting to delete a page with children and $recursive option is not specified.
+- `WireException` when attempting to delete a page with children and $recursive option is not specified.
 
-## See also
+## See Also
 
 - [Pages::delete()](../Pages/method-___delete.md)

@@ -6,6 +6,16 @@ Install a dedicated page for this Process module and assign it this Process
 
 To be called by Process module's ___install() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $process->___installPage();
+
+// usage with all arguments
+$page = $process->___installPage($name = '', $parent = null, $title = '', $template = 'admin', $extras = array());
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string` Desired name of page, or omit (or blank) to use module name
@@ -16,8 +26,8 @@ To be called by Process module's ___install() method.
 
 ## Return value
 
-Page Returns the page that was created
+- `Page` Returns the page that was created
 
-## Throws
+## Exceptions
 
-- WireException if page can't be created
+- `WireException` if page can't be created

@@ -6,6 +6,16 @@ Set the system status to one of the ProcessWire::status* constants
 
 This also triggers init/ready functions for modules, when applicable.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $processWire->setStatus($status);
+
+// usage with all arguments
+$result = $processWire->setStatus($status, array $data = array());
+~~~~~
+
 ## Arguments
 
 - `$status` `int`

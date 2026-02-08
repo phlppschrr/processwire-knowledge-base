@@ -6,9 +6,16 @@ Get array of all parents of this Inputfield
 
 This is identical to and an alias of the getParents() method.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $inputfield->parents();
+~~~~~
+
 ## Return value
 
-array
+- `array`
 
 ## Since
 

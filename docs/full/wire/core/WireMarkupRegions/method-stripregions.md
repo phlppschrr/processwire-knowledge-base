@@ -6,6 +6,16 @@ Strip the given region non-nested tags from the document
 
 Note that this only works on non-nested tags like HTML comments, script or style tags.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireMarkupRegions->stripRegions($tag, $markup);
+
+// usage with all arguments
+$string = $wireMarkupRegions->stripRegions($tag, $markup, $getRegions = false);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string` Specify "<!--" to remove comments or "<script" to remove scripts, or "<tag" for any other tags.
@@ -14,4 +24,4 @@ Note that this only works on non-nested tags like HTML comments, script or style
 
 ## Return value
 
-string|array
+- `string|array`

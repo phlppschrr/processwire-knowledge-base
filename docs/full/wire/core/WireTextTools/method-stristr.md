@@ -4,6 +4,16 @@ Source: `wire/core/WireTextTools.php`
 
 Find the first occurrence of a string (case insensitive)
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireTextTools->stristr($haystack, $needle);
+
+// usage with all arguments
+$result = $wireTextTools->stristr($haystack, $needle, $beforeNeedle = false);
+~~~~~
+
 ## Arguments
 
 - `$haystack` `string`
@@ -12,8 +22,8 @@ Find the first occurrence of a string (case insensitive)
 
 ## Return value
 
-false|string
+- `false|string`
 
-## See also
+## See Also
 
 - [https://www.php.net/manual/en/function.stristr.php](https://www.php.net/manual/en/function.stristr.php)

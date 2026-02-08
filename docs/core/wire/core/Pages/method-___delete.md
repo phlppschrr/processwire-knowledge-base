@@ -8,10 +8,22 @@ Unlike trash(), pages deleted here are not restorable. If you attempt to delete 
 and don't specifically set the `$recursive` argument to `true`, then this method will throw an exception.
 If a recursive delete fails for any reason, an exception will also will be thrown.
 
+## Example
+
 ~~~~~
 // Delete a product page
 $product = $pages->get('/products/foo-bar-widget/');
 $pages->delete($product);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $pages->___delete($page);
+
+// usage with all arguments
+$bool = $pages->___delete(Page $page, $recursive = false, array $options = array());
 ~~~~~
 
 ## Arguments
@@ -22,12 +34,12 @@ $pages->delete($product);
 
 ## Return value
 
-bool|int Returns true (success), or integer of quantity deleted if recursive mode requested.
+- `bool|int` Returns true (success), or integer of quantity deleted if recursive mode requested.
 
-## Throws
+## Exceptions
 
-- WireException on fatal error
+- `WireException` on fatal error
 
-## See also
+## See Also
 
 - [Pages::trash()](method-___trash.md)

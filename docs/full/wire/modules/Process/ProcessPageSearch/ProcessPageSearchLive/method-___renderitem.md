@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Render an item for the “view all” list
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $processPageSearchLive->___renderItem($item);
+
+// usage with all arguments
+$string = $processPageSearchLive->___renderItem(array $item, $prefix = 'pw-search', $class = 'item');
+~~~~~
+
 ## Arguments
 
 - `$item` `array`
@@ -12,4 +22,4 @@ Render an item for the “view all” list
 
 ## Return value
 
-string HTML markup
+- `string` HTML markup

@@ -10,13 +10,23 @@ Get list of all tags used by fields
 - If you specify "reset" for the `$getFields` argument it returns a blank array and resets
   internal tags cache.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fields->___getTags();
+
+// usage with all arguments
+$array = $fields->___getTags($getFieldNames = false);
+~~~~~
+
 ## Arguments
 
 - `$getFieldNames` (optional) `bool|string` Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
 
 ## Return value
 
-array Both keys and values are tags in return value
+- `array` Both keys and values are tags in return value
 
 ## Since
 

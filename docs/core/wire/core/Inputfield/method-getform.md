@@ -7,9 +7,16 @@ Get the InputfieldForm element that contains this field or null if not yet defin
 This is the same as the `getRootParent()` method except that it returns null if root parent
 is not an InputfieldForm.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldForm = $inputfield->getForm();
+~~~~~
+
 ## Return value
 
-InputfieldForm|null
+- `InputfieldForm|null`
 
 ## Since
 

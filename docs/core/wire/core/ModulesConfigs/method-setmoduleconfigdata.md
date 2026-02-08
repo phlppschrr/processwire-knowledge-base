@@ -7,6 +7,16 @@ Populate configuration data to a ConfigurableModule
 If the Module has a 'setConfigData' method, it will send the array of data to that.
 Otherwise it will populate the properties individually.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesConfigs->setModuleConfigData($module);
+
+// usage with all arguments
+$bool = $modulesConfigs->setModuleConfigData(Module $module, $data = null, $extraData = null);
+~~~~~
+
 ## Arguments
 
 - `$module` `Module`
@@ -15,4 +25,4 @@ Otherwise it will populate the properties individually.
 
 ## Return value
 
-bool True if configured, false if not configurable
+- `bool` True if configured, false if not configurable

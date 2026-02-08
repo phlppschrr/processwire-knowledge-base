@@ -9,6 +9,8 @@ Current unsanitized request URL
 - Returned value does not include query string, if present.
 - Returned value includes installation subdirectory, if present.
 
+## Example
+
 ~~~~~
 if($config->requestUrl() === '/products/2021/') {
   // current request URL is exactly “/products/2021/”
@@ -21,6 +23,16 @@ if($config->requestUrl([ 'foo', 'bar', 'baz' ])) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $config->requestUrl();
+
+// usage with all arguments
+$string = $config->requestUrl($match = '', $get = '');
+~~~~~
+
 ## Arguments
 
 - `$match` (optional) `string|array` Optionally return URL only if some part matches given string(s) (default='')
@@ -28,7 +40,7 @@ if($config->requestUrl([ 'foo', 'bar', 'baz' ])) {
 
 ## Return value
 
-string Returns URL string or blank string if $match argument used and doesn’t match.
+- `string` Returns URL string or blank string if $match argument used and doesn’t match.
 
 ## Since
 

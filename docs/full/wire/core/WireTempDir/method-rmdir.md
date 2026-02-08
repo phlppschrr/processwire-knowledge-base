@@ -4,6 +4,16 @@ Source: `wire/core/WireTempDir.php`
 
 Remove a temporary directory
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireTempDir->rmdir($dir);
+
+// usage with all arguments
+$bool = $wireTempDir->rmdir($dir, $recursive = false);
+~~~~~
+
 ## Arguments
 
 - `$dir` `string`
@@ -11,4 +21,4 @@ Remove a temporary directory
 
 ## Return value
 
-bool
+- `bool`

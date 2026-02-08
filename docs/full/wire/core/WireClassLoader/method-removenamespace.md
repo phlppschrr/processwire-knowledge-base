@@ -4,6 +4,16 @@ Source: `wire/core/WireClassLoader.php`
 
 Remove defined paths (or single path) for given namespace
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireClassLoader->removeNamespace($namespace);
+
+// usage with all arguments
+$result = $wireClassLoader->removeNamespace($namespace, $path = '');
+~~~~~
+
 ## Arguments
 
 - `$namespace` `string`

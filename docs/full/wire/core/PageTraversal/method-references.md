@@ -4,6 +4,16 @@ Source: `wire/core/PageTraversal.php`
 
 Return pages that are referencing the given one by way of Page references
 
+## Usage
+
+~~~~~
+// basic usage
+$items = $pageTraversal->references($page);
+
+// usage with all arguments
+$items = $pageTraversal->references(Page $page, $selector = '', $field = '', $getCount = false);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -13,8 +23,8 @@ Return pages that are referencing the given one by way of Page references
 
 ## Return value
 
-PageArray|array|int
+- `PageArray|array|int`
 
-## Throws
+## Exceptions
 
-- WireException Highly unlikely
+- `WireException` Highly unlikely

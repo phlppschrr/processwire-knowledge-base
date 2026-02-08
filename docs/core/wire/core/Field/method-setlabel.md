@@ -4,6 +4,16 @@ Source: `wire/core/Field.php`
 
 Set label, optionally for a specific language
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $field->setLabel($text);
+
+// usage with all arguments
+$result = $field->setLabel($text, $language = null);
+~~~~~
+
 ## Arguments
 
 - `$text` `string` Text to set

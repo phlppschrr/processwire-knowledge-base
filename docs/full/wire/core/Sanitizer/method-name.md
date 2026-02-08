@@ -10,9 +10,21 @@ Default behavior:
 - Limits maximum length to 128 characters.
 - Replaces non-name format characters with underscore "_".
 
+## Example
+
 ~~~~~
 $test = "Foo+Bar Baz-123"
 echo $sanitizer->name($test); // outputs: Foo_Bar_Baz-123
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$string = $sanitizer->name($value);
+
+// usage with all arguments
+$string = $sanitizer->name($value, $beautify = false, $maxLength = 128, $replacement = '_', $options = array());
 ~~~~~
 
 ## Arguments
@@ -25,8 +37,8 @@ echo $sanitizer->name($test); // outputs: Foo_Bar_Baz-123
 
 ## Return value
 
-string Sanitized value in name format
+- `string` Sanitized value in name format
 
-## See also
+## See Also
 
 - [Sanitizer::pageName()](method-pagename.md)

@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Get or set array property
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $commentForm->arrayOption($property);
+
+// usage with all arguments
+$string = $commentForm->arrayOption($property, $name = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$property` `string` Name of array property: labels, markup, classes, attrs, presets
@@ -12,11 +22,11 @@ Get or set array property
 
 ## Return value
 
-string|array
+- `string|array`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

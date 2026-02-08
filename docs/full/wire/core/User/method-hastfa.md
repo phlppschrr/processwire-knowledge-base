@@ -16,13 +16,23 @@ When using `$getInstance` to return module instance, note that the module instan
 be initialized (hooks not added, etc.). To retrieve an initialized instance, you can get it
 from `$user->tfa_type` rather than calling this method.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $user->hasTfa();
+
+// usage with all arguments
+$bool = $user->hasTfa($getInstance = false);
+~~~~~
+
 ## Arguments
 
 - `$getInstance` (optional) `bool` Get Tfa module instance when available? (default=false)
 
 ## Return value
 
-bool|string|Tfa
+- `bool|string|Tfa`
 
 ## Since
 

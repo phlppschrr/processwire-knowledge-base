@@ -17,6 +17,13 @@ Please note the above is specifically stating that the module must be in its
 own “site/ModuleName/” directory and have the “.module.php” extension. Using
 just the “.module” extension is not supported for preload modules.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $modulesLoader->preloadModules($path);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`

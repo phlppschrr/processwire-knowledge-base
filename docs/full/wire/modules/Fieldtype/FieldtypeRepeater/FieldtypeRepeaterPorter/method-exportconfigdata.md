@@ -8,6 +8,16 @@ Use this method to externalize any config values when necessary.
 For example, internal IDs should be converted to GUIDs where possible.
 Most Fieldtype modules can use the default implementation already provided here.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $fieldtypeRepeaterPorter->exportConfigData($field, $data);
+
+// usage with all arguments
+$array = $fieldtypeRepeaterPorter->exportConfigData(Field $field, array $data);
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -15,4 +25,4 @@ Most Fieldtype modules can use the default implementation already provided here.
 
 ## Return value
 
-array
+- `array`

@@ -10,6 +10,8 @@ previous language the user had.
 
 If given a Language object, it sets that as the default language (for internal use only).
 
+## Example
+
 ~~~~~
 // set current user to have default language
 $languages->setDefault();
@@ -18,15 +20,25 @@ $languages->setDefault();
 $languages->unsetDefault();
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$languages->setDefault();
+
+// usage with all arguments
+$languages->setDefault(?Language $language = null);
+~~~~~
+
 ## Arguments
 
 - `$language` (optional) `Language|null`
 
 ## Return value
 
-void
+- `void`
 
-## See also
+## See Also
 
 - [Languages::unsetDefault()](method-unsetdefault.md)
 - [Languages::setLanguage()](method-setlanguage.md)

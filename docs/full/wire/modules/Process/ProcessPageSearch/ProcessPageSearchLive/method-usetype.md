@@ -4,6 +4,16 @@ Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Allow this search type?
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $processPageSearchLive->useType($type);
+
+// usage with all arguments
+$bool = $processPageSearchLive->useType($type, $requestType = '');
+~~~~~
+
 ## Arguments
 
 - `$type` `string` Type to check
@@ -11,4 +21,4 @@ Allow this search type?
 
 ## Return value
 
-bool
+- `bool`

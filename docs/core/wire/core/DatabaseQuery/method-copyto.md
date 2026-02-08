@@ -6,6 +6,16 @@ Copy queries from this DatabaseQuery to another DatabaseQuery
 
 If you want to copy bind values you should also call copyBindValuesTo($query) afterwards.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $databaseQuery->copyTo($query);
+
+// usage with all arguments
+$int = $databaseQuery->copyTo(DatabaseQuery $query, array $methods = array());
+~~~~~
+
 ## Arguments
 
 - `$query` `DatabaseQuery` Query to copy data to
@@ -13,7 +23,7 @@ If you want to copy bind values you should also call copyBindValuesTo($query) af
 
 ## Return value
 
-int Total items copied
+- `int` Total items copied
 
 ## Since
 

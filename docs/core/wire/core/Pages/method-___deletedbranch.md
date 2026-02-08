@@ -6,6 +6,16 @@ Hook called after a a branch of pages has been deleted, called on root page of b
 
 Note: this is called only on deletions that had 'recursive' option true and 1+ children.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $pages->___deletedBranch($page, $options, $numDeleted);
+
+// usage with all arguments
+$result = $pages->___deletedBranch(Page $page, array $options, $numDeleted);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that was the root of the branch

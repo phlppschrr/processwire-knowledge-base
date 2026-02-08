@@ -8,6 +8,13 @@ This form typically appears on the screen after the user has submitted their log
 
 At minimum it must have an Inputfield with name “tfa_code”
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfieldForm = $tfa->___buildAuthCodeForm();
+~~~~~
+
 ## Return value
 
-InputfieldForm
+- `InputfieldForm`

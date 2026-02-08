@@ -4,9 +4,16 @@ Source: `wire/modules/LanguageSupport/Languages.php`
 
 Get LanguageSupportPageNames module if installed, false if not
 
+## Usage
+
+~~~~~
+// basic usage
+$languageSupportPageNames = $languages->pageNames();
+~~~~~
+
 ## Return value
 
-LanguageSupportPageNames|false
+- `LanguageSupportPageNames|false`
 
 ## Since
 

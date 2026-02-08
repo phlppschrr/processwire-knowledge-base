@@ -7,12 +7,24 @@ Same as save() except with namespace
 Namespace is useful to avoid cache name collisions. The ProcessWire core commonly uses cache
 namespace to bind cache values to the object class, which often make a good namespace.
 
+## Example
+
 ~~~~~
 // save cache using manually specified namespace
 $cache->save("my-namespace", "my-cache-name", $value);
 
 // save cache using namespace of current object
 $cache->save($this, "my-cache-name", $value);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireCache->saveFor($ns, $name, $data);
+
+// usage with all arguments
+$bool = $wireCache->saveFor($ns, $name, $data, $expire = self::expireDaily);
 ~~~~~
 
 ## Arguments
@@ -24,4 +36,4 @@ $cache->save($this, "my-cache-name", $value);
 
 ## Return value
 
-bool Returns true if cache was successful, false if not
+- `bool` Returns true if cache was successful, false if not

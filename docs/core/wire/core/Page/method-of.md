@@ -14,11 +14,23 @@ Get or set the current output formatting state of the page
 
 See this post about [output formatting](https://processwire.com/blog/posts/output-formatting/).
 
+## Example
+
 ~~~~~
 // Set output formatting state off, for page manipulation
 $page->of(false);
 $page->title = 'About Us';
 $page->save();
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$bool = $page->of();
+
+// usage with all arguments
+$bool = $page->of($outputFormatting = null);
 ~~~~~
 
 ## Arguments
@@ -27,7 +39,7 @@ $page->save();
 
 ## Return value
 
-bool Current output formatting state (before this function call, if it was changed)
+- `bool` Current output formatting state (before this function call, if it was changed)
 
 ## Details
 

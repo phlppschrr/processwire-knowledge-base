@@ -7,11 +7,23 @@ Sanitize value to be within the given min and max range
 If float or decimal string specified for $min or $max arguments, return value will be a float,
 otherwise an integer is returned.
 
+## Example
+
 ~~~~~
 $n = 10;
 $sanitizer->range($n, 100, 200); // returns 100
 $sanitizer->range($n, 0, 1.0); // returns 1.0
 $sanitizer->range($n, 1.1, 100.5); // returns 10.0
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$int = $sanitizer->range($value);
+
+// usage with all arguments
+$int = $sanitizer->range($value, $min = null, $max = null);
 ~~~~~
 
 ## Arguments
@@ -22,7 +34,7 @@ $sanitizer->range($n, 1.1, 100.5); // returns 10.0
 
 ## Return value
 
-int|float
+- `int|float`
 
 ## Since
 

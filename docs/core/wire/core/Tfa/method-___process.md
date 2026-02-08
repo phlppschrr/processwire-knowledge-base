@@ -7,6 +7,13 @@ Process two-factor authentication code input
 This method processes the submission of the form containing “tfa_code”.
 Note that this method will perform redirects as needed.
 
+## Usage
+
+~~~~~
+// basic usage
+$user = $tfa->___process();
+~~~~~
+
 ## Return value
 
-User|bool Returns logged-in user object on successful code completion, or false on fail
+- `User|bool` Returns logged-in user object on successful code completion, or false on fail

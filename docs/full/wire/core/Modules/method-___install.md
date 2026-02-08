@@ -4,6 +4,16 @@ Source: `wire/core/Modules.php`
 
 Install the given module name
 
+## Usage
+
+~~~~~
+// basic usage
+$modules->___install($class);
+
+// usage with all arguments
+$modules->___install($class, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$class` `string` Module name (class name)
@@ -11,8 +21,8 @@ Install the given module name
 
 ## Return value
 
-null|Module Returns null if unable to install, or ready-to-use Module object if successfully installed.
+- `null|Module` Returns null if unable to install, or ready-to-use Module object if successfully installed.
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

@@ -5,6 +5,9 @@ Source: `wire/core/Page.php`
 If method call resulted in no handler, this hookable method is called.
 
 If you want to override this method with a hook, see the example below.
+
+## Example
+
 ~~~~~
 $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
   // Get information about unknown method that was called
@@ -19,6 +22,13 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page->___callUnknown($method, $arguments);
+~~~~~
+
 ## Arguments
 
 - `$method` `string` Requested method name
@@ -26,12 +36,12 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 
 ## Return value
 
-null|mixed Return value of method (if applicable)
+- `null|mixed` Return value of method (if applicable)
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
-## See also
+## See Also
 
 - [Wire::callUnknown()](../Wire/method-___callunknown.md)

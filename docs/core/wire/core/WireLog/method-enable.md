@@ -4,15 +4,22 @@ Source: `wire/core/WireLog.php`
 
 Enable a previously disabled log
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireLog->enable($name);
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Log name or specify '*' to reverse a previous disable('*') call.
 
 ## Return value
 
-self
+- `self`
 
-## See also
+## See Also
 
 - [WireLog::disable()](method-disable.md)
 

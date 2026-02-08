@@ -9,6 +9,16 @@ but only if output formatting `$page->of()` is enabled. The most common use of t
 need to have some text formatting applied to them, like Markdown, SmartyPants, Textile, etc. As a result,
 Fieldtype modules don't need to implement this unless it's applicable.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $fieldtype->___formatValue($page, $field, $value);
+
+// usage with all arguments
+$result = $fieldtype->___formatValue(Page $page, Field $field, $value);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that the value lives on
@@ -17,4 +27,4 @@ Fieldtype modules don't need to implement this unless it's applicable.
 
 ## Return value
 
-mixed
+- `mixed`

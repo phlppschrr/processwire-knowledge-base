@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Send a user (not admin) notification email
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $commentNotifications->___sendNotificationEmail($comment, $email, $subcode);
+
+// usage with all arguments
+$int = $commentNotifications->___sendNotificationEmail(Comment $comment, $email, $subcode, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`
@@ -13,4 +23,4 @@ Send a user (not admin) notification email
 
 ## Return value
 
-int
+- `int`

@@ -8,6 +8,16 @@ Create a new Inputfield, add it to this InputfieldWrapper, and return the new In
 - You may optionally substitute the $settings argument for the $name or $label arguments.
 - You may optionally substitute Inputfield “description” property for $settings argument.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfieldWrapper->___new($typeName);
+
+// usage with all arguments
+$inputfield = $inputfieldWrapper->___new($typeName, $name = '', $label = '', $settings = array());
+~~~~~
+
 ## Arguments
 
 - `$typeName` `string` Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
@@ -17,11 +27,11 @@ Create a new Inputfield, add it to this InputfieldWrapper, and return the new In
 
 ## Return value
 
-Inputfield|InputfieldSelect|InputfieldWrapper An Inputfield instance ready to populate with additional properties/attributes.
+- `Inputfield|InputfieldSelect|InputfieldWrapper` An Inputfield instance ready to populate with additional properties/attributes.
 
-## Throws
+## Exceptions
 
-- WireException If you request an unknown Inputfield type
+- `WireException` If you request an unknown Inputfield type
 
 ## Since
 

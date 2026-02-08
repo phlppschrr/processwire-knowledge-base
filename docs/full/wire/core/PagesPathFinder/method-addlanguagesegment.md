@@ -4,6 +4,13 @@ Source: `wire/core/PagesPathFinder.php`
 
 Add language segment
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesPathFinder->addLanguageSegment($path, $language);
+~~~~~
+
 ## Arguments
 
 - `$path` `string`
@@ -11,4 +18,4 @@ Add language segment
 
 ## Return value
 
-string
+- `string`

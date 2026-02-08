@@ -4,6 +4,16 @@ Source: `wire/core/PagesLoaderCache.php`
 
 Remove all pages from the cache
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pagesLoaderCache->uncacheAll();
+
+// usage with all arguments
+$int = $pagesLoaderCache->uncacheAll(?Page $page = null, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$page` (optional) `Page|null` Optional Page that initiated the uncacheAll
@@ -11,4 +21,4 @@ Remove all pages from the cache
 
 ## Return value
 
-int Number of pages uncached
+- `int` Number of pages uncached

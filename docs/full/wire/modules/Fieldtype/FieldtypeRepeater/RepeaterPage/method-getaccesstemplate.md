@@ -21,6 +21,16 @@ if($forPage->id && $forField) $forPage->trackChange($forField->name);
 return $this;
 }
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $repeaterPage->getAccessTemplate();
+
+// usage with all arguments
+$result = $repeaterPage->getAccessTemplate($type = 'view');
+~~~~~
+
 ## Arguments
 
 - `$what` `string` Name of property that changed
@@ -29,4 +39,4 @@ return $this;
 
 ## Return value
 
-$this
+- `$this`

@@ -4,6 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Get SelectableOption by $property matching $value, or boolean false if not found
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $selectableOptionArray->getByProperty($property, $value);
+
+// usage with all arguments
+$bool = $selectableOptionArray->getByProperty($property, $value, $noValue = false);
+~~~~~
+
 ## Arguments
 
 - `$property` `string` May be "title", "value" or "id"
@@ -12,4 +22,4 @@ Get SelectableOption by $property matching $value, or boolean false if not found
 
 ## Return value
 
-bool|null|SelectableOption
+- `bool|null|SelectableOption`

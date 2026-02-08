@@ -6,14 +6,21 @@ Copy all data to a new source ID
 
 Useful to call on the source object after a clone has been created from it.
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $wireDataDB->copyTo($newSourceID);
+~~~~~
+
 ## Arguments
 
 - `$newSourceID` `int`
 
 ## Return value
 
-int Number of rows copied
+- `int` Number of rows copied
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

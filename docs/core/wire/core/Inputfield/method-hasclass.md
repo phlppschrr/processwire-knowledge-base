@@ -4,6 +4,8 @@ Source: `wire/core/Inputfield.php`
 
 Does this Inputfield have the given class name (or names)?
 
+## Example
+
 ~~~~~
 if($inputfield->hasClass('foo')) {
   // This Inputfield has a class attribute with "foo"
@@ -18,6 +20,16 @@ if($inputfield->hasClass('foo bar')) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $inputfield->hasClass($class);
+
+// usage with all arguments
+$bool = $inputfield->hasClass($class, $property = 'class');
+~~~~~
+
 ## Arguments
 
 - `$class` `string|array` Specify class name or one of the following: - String containing name of class you want to check (string). - String containing Space separated string class names you want to check, all must be present for this method to return true. (Since 3.0.16) - Array of class names you want to check, all must be present for this method to return true. (Since 3.0.16)
@@ -25,9 +37,9 @@ if($inputfield->hasClass('foo bar')) {
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [Inputfield::addClass()](method-addclass.md)
 - [Inputfield::removeClass()](method-removeclass.md)

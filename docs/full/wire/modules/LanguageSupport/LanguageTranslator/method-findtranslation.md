@@ -6,6 +6,16 @@ Find a translation for given text
 
 Scans all textdomains to find first translation.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $languageTranslator->findTranslation($text);
+
+// usage with all arguments
+$string = $languageTranslator->findTranslation($text, $context = '', array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$text` `string`
@@ -14,7 +24,7 @@ Scans all textdomains to find first translation.
 
 ## Return value
 
-string|array - Returns string with translated text if found, or blank string if not found. - Returns array of info if getInfo option requested. This array is empty if translation was not found.
+- `string|array` - Returns string with translated text if found, or blank string if not found. - Returns array of info if getInfo option requested. This array is empty if translation was not found.
 
 ## Since
 

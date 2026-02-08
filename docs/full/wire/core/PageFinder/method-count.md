@@ -4,6 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Return a count of pages that match
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $pageFinder->count($selectors);
+
+// usage with all arguments
+$int = $pageFinder->count($selectors, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
@@ -11,7 +21,7 @@ Return a count of pages that match
 
 ## Return value
 
-int
+- `int`
 
 ## Since
 

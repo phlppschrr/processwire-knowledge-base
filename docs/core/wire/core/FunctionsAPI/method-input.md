@@ -12,6 +12,8 @@ Access GET, POST or COOKIE input variables and more ($input API variable as a fu
 - If `$fallback` argument given, it will return the fallback value if input value was not present or not valid (3.0.125+).
 - See the `WireInput::get()` method for all options.
 
+## Example
+
 ~~~~~
 // Can be used the same way as the $input API variable
 // In examples below the “post” can also be “get” or “cookie”
@@ -28,6 +30,16 @@ $s = input('get', 'sort', ['title', 'created']); // Require sort to be one in gi
 $s = input('get', 'sort', ['title', 'created'], 'title'); // Same as above, fallback to 'title' (3.0.125+)
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$wireInput = $functionsAPI->input();
+
+// usage with all arguments
+$wireInput = $functionsAPI->input($type = '', $key = '', $sanitizer = null, $fallback = null);
+~~~~~
+
 ## Arguments
 
 - `$type` (optional) `string` Optionally indicate "get", "post", "cookie" or "whitelist"
@@ -37,8 +49,8 @@ $s = input('get', 'sort', ['title', 'created'], 'title'); // Same as above, fall
 
 ## Return value
 
-WireInput|WireInputData|array|string|int|null
+- `WireInput|WireInputData|array|string|int|null`
 
-## See also
+## See Also
 
 - WireInput

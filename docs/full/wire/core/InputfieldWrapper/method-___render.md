@@ -4,9 +4,16 @@ Source: `wire/core/InputfieldWrapper.php`
 
 Render this Inputfield and the output of its children.
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $inputfieldWrapper->___render();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Details
 

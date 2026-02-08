@@ -24,6 +24,8 @@ a print_r() call on it, and the result is self explanatory.
 
 NOTE: This function is currently experimental, recommended for testing only.
 
+## Example
+
 ~~~~~
 // Example usage
 $page->preload([ 'headline', 'body', 'sidebar', 'intro', 'summary' ]);
@@ -36,6 +38,16 @@ echo "
 ";
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $page->preload();
+
+// usage with all arguments
+$array = $page->preload(array $fieldNames = array(), $options = array());
+~~~~~
+
 ## Arguments
 
 - `$fieldNames` (optional) `array` Names of fields to preload or omit (or blank array) to preload all supported fields.
@@ -43,7 +55,7 @@ echo "
 
 ## Return value
 
-array Array of details
+- `array` Array of details
 
 ## Since
 

@@ -4,8 +4,17 @@ Source: `wire/core/WireArray.php`
 
 Add an item to the end of the WireArray.
 
+## Example
+
 ~~~~~
 $items->add($item);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->add($item);
 ~~~~~
 
 ## Arguments
@@ -14,13 +23,13 @@ $items->add($item);
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- WireException If given an item that can't be stored by this WireArray.
+- `WireException` If given an item that can't be stored by this WireArray.
 
-## See also
+## See Also
 
 - [WireArray::prepend()](method-prepend.md)
 - [WireArray::append()](method-append.md)

@@ -4,6 +4,13 @@ Source: `wire/core/TemplateFile.php`
 
 Set the current filename being rendered
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $templateFile->setCurrentFilename($filename);
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`

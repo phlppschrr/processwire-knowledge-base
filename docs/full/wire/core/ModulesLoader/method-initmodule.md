@@ -4,6 +4,16 @@ Source: `wire/core/ModulesLoader.php`
 
 Initialize a single module
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $modulesLoader->initModule($module);
+
+// usage with all arguments
+$bool = $modulesLoader->initModule(Module $module, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$module` `Module`
@@ -11,8 +21,8 @@ Initialize a single module
 
 ## Return value
 
-bool True on success, false on fail
+- `bool` True on success, false on fail
 
-## Throws
+## Exceptions
 
-- \Exception Only if the `throw` option is true.
+- `\Exception` Only if the `throw` option is true.

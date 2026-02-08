@@ -9,13 +9,23 @@ Get the current language or optionally a specific named language
 - If you call with no arguments, it returns the current user language, same as `$user->language`, but using this
   method may be preferable in some contexts, depending on how your IDE understands API calls.
 
+## Usage
+
+~~~~~
+// basic usage
+$language = $languages->getLanguage();
+
+// usage with all arguments
+$language = $languages->getLanguage($name = '');
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|int` Specify language name (or ID) to get a specific language, or omit to get current language
 
 ## Return value
 
-Language|null
+- `Language|null`
 
 ## Since
 

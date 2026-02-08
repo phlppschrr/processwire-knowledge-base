@@ -14,6 +14,16 @@ Using **$all:** By default only the first matching selector is returned. If you 
 matching selectors in an array, then specify true for the $all argument. This changes the return value
 to always be an array of Selector objects, or a blank array if no match.
 
+## Usage
+
+~~~~~
+// basic usage
+$selector = $selectors->getSelectorByField($fieldName);
+
+// usage with all arguments
+$selector = $selectors->getSelectorByField($fieldName, $or = false, $all = false);
+~~~~~
+
 ## Arguments
 
 - `$fieldName` `string` Name of field to return value for (i.e. "include", "limit", etc.)
@@ -22,4 +32,4 @@ to always be an array of Selector objects, or a blank array if no match.
 
 ## Return value
 
-Selector|array|null Returns null if field not present in selectors (or blank array if $all mode)
+- `Selector|array|null` Returns null if field not present in selectors (or blank array if $all mode)

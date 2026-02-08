@@ -24,6 +24,16 @@ C. Modules that do not generate or send codes, but only validate them (i.e. TOTP
    You can omit implementation, leaving just the built-in one below.
    But if you do implement it, make sure you call the parent::startUser($user).
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $tfa->startUser($user, $settings);
+
+// usage with all arguments
+$bool = $tfa->startUser(User $user, array $settings);
+~~~~~
+
 ## Arguments
 
 - `$user` `User`
@@ -31,4 +41,4 @@ C. Modules that do not generate or send codes, but only validate them (i.e. TOTP
 
 ## Return value
 
-bool True on success, false on fail
+- `bool` True on success, false on fail

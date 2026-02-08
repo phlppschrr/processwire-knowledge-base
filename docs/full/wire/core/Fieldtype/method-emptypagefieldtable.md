@@ -4,6 +4,16 @@ Source: `wire/core/Fieldtype.php`
 
 Empty DB table of page field
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $fieldtype->emptyPageFieldTable($page, $field);
+
+// usage with all arguments
+$bool = $fieldtype->emptyPageFieldTable(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,11 +21,11 @@ Empty DB table of page field
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

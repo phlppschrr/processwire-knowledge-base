@@ -10,6 +10,8 @@ It simply sets and gets settings that you define. It is preferable to using Proc
 ProcessWire. It is also preferable to using a variable (or variables) because it is always
 in scope and accessible anywhere in your template files, even within existing functions.
 
+## Example
+
 ~~~~~
 // set a setting named “foo” to value “bar”
 setting('foo', 'bar');
@@ -31,6 +33,16 @@ $a = setting();
 setting(false, 'foo');
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $functionsWireAPI->wireSetting();
+
+// usage with all arguments
+$array = $functionsWireAPI->wireSetting($name = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string|array` Setting name, or array to set multiple
@@ -38,4 +50,4 @@ setting(false, 'foo');
 
 ## Return value
 
-array|string|int|bool|mixed|null
+- `array|string|int|bool|mixed|null`

@@ -4,6 +4,16 @@ Source: `wire/core/ImageSizerEngine.php`
 
 Just rotate image by number of degrees
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngine->rotate($degrees);
+
+// usage with all arguments
+$bool = $imageSizerEngine->rotate($degrees, $dstFilename = '');
+~~~~~
+
 ## Arguments
 
 - `$degrees` `int`
@@ -11,4 +21,4 @@ Just rotate image by number of degrees
 
 ## Return value
 
-bool True on success, false on fail
+- `bool` True on success, false on fail

@@ -7,15 +7,22 @@ Does this CommentArray have the given Comment (or comment ID)?
 Note: this method is very specific in purpose, accepting only a Comment object or ID.
 You can use the has() method for more flexibility.
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $commentArray->hasComment($comment);
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment|int`
 
 ## Return value
 
-bool
+- `bool`
 
-## See also
+## See Also
 
 - [WireArray::has()](../../../../core/WireArray/method-has.md)
 

@@ -10,6 +10,13 @@ If the provided $value is an array of pipe "|" separated string, Selector may ma
 If only one field is provided as a string, and that field is prepended by an exclamation point, i.e. !field=something
 then the condition is reversed.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $selector->__construct($field, $value);
+~~~~~
+
 ## Arguments
 
 - `$field` `string|array`

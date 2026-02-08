@@ -4,8 +4,17 @@ Source: `wire/core/WireArray.php`
 
 Insert an item after an existing item
 
+## Example
+
 ~~~~~
 $items->insertAfter($newItem, $existingItem);
+~~~~~
+
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireArray->insertAfter($item, $existingItem);
 ~~~~~
 
 ## Arguments
@@ -15,4 +24,4 @@ $items->insertAfter($newItem, $existingItem);
 
 ## Return value
 
-$this
+- `$this`

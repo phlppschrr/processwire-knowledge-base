@@ -4,6 +4,13 @@ Source: `wire/core/WireMailInterface.php`
 
 Set any email header
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wireMailInterface->header($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string`
@@ -11,4 +18,4 @@ Set any email header
 
 ## Return value
 
-self
+- `self`

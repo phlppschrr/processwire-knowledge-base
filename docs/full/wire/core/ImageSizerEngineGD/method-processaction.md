@@ -4,6 +4,13 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Process a rotate or flip action
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $imageSizerEngineGD->processAction($srcFilename, $dstFilename, $action, $value);
+~~~~~
+
 ## Arguments
 
 - `$srcFilename` `string`
@@ -13,8 +20,8 @@ Process a rotate or flip action
 
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

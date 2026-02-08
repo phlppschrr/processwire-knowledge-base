@@ -8,6 +8,16 @@ This is the same as the `array()` sanitizer except that it does not attempt to c
 delimited/csv strings to arrays. Meaning, a delimited string would simply become an array
 with the first item being that delimited string.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $sanitizer->arrayVal($value);
+
+// usage with all arguments
+$array = $sanitizer->arrayVal($value, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$value` `mixed`
@@ -15,11 +25,11 @@ with the first item being that delimited string.
 
 ## Return value
 
-array
+- `array`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

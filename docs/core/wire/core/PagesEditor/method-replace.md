@@ -4,6 +4,16 @@ Source: `wire/core/PagesEditor.php`
 
 Replace one page with another (work in progress)
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pagesEditor->replace($oldPage, $newPage);
+
+// usage with all arguments
+$page = $pagesEditor->replace(Page $oldPage, Page $newPage);
+~~~~~
+
 ## Arguments
 
 - `$oldPage` `Page`
@@ -11,11 +21,11 @@ Replace one page with another (work in progress)
 
 ## Return value
 
-Page
+- `Page`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`
 
 ## Since
 

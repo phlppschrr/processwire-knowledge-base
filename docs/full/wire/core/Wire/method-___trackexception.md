@@ -12,6 +12,16 @@ Hookable method called when an Exception (or Error) occurs
 Please note that if your root /index.php version is less than 302 it will only receive
 Exception (and not Error) objects.
 
+## Usage
+
+~~~~~
+// basic usage
+$result = $wire->___trackException($e);
+
+// usage with all arguments
+$result = $wire->___trackException($e, $severe = true, $text = null);
+~~~~~
+
 ## Arguments
 
 - `$e` `\Throwable` Exception or Error object that was thrown.
@@ -20,8 +30,8 @@ Exception (and not Error) objects.
 
 ## Return value
 
-$this
+- `$this`
 
-## Throws
+## Exceptions
 
-- \Exception|\Error If `$severe==true` and `$config->allowExceptions==true`
+- `\Exception|\Error` If `$severe==true` and `$config->allowExceptions==true`

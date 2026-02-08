@@ -4,6 +4,8 @@ Source: `wire/core/WireHttp.php`
 
 Send a POST request to a URL
 
+## Example
+
 ~~~~~
 $http = new WireHttp();
 $response = $http->post("http://domain.com/path/", [
@@ -16,6 +18,16 @@ if($response !== false) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireHttp->post($url);
+
+// usage with all arguments
+$bool = $wireHttp->post($url, $data = array(), array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to post to (including http:// or https://)
@@ -24,9 +36,9 @@ if($response !== false) {
 
 ## Return value
 
-bool|string False on failure or string of contents received on success.
+- `bool|string` False on failure or string of contents received on success.
 
-## See also
+## See Also
 
 - [WireHttp::send()](method-___send.md)
 - [WireHttp::get()](method-get.md)

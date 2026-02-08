@@ -4,6 +4,16 @@ Source: `wire/core/FunctionsWireAPI.php`
 
 Access the $user API variable as a function
 
+## Usage
+
+~~~~~
+// basic usage
+$user = $functionsWireAPI->wireUser();
+
+// usage with all arguments
+$user = $functionsWireAPI->wireUser($key = '', $value = null);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Optional property to get or set
@@ -11,4 +21,4 @@ Access the $user API variable as a function
 
 ## Return value
 
-User|mixed
+- `User|mixed`

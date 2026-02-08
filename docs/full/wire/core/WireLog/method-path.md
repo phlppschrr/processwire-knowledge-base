@@ -4,9 +4,16 @@ Source: `wire/core/WireLog.php`
 
 Return disk path to log files
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $wireLog->path();
+~~~~~
+
 ## Return value
 
-string
+- `string`
 
 ## Since
 

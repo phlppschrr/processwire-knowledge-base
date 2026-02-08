@@ -6,6 +6,7 @@ Get just PageVersionInfo objects for all versions of given page
 
 This is the same as using the getPageVersions() method with the `getInfo` option.
 
+## Example
 
 ~~~~~
 $page = $pages->get(1234);
@@ -15,6 +16,16 @@ foreach($infos as $info) {
 }
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$pageVersionInfo = $pagesVersions->getPageVersionInfos($page);
+
+// usage with all arguments
+$pageVersionInfo = $pagesVersions->getPageVersionInfos(Page $page, array $options = []);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -22,4 +33,4 @@ foreach($infos as $info) {
 
 ## Return value
 
-PageVersionInfo[]
+- `PageVersionInfo[]`

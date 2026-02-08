@@ -4,10 +4,17 @@ Source: `wire/core/WireDataDB.php`
 
 Install the table
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDataDB->install();
+~~~~~
+
 ## Return value
 
-bool
+- `bool`
 
-## Throws
+## Exceptions
 
-- WireException
+- `WireException`

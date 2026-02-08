@@ -4,6 +4,16 @@ Source: `wire/core/Fields.php`
 
 Return a count of database rows populated the given field
 
+## Usage
+
+~~~~~
+// basic usage
+$int = $fields->getNumRows($field);
+
+// usage with all arguments
+$int = $fields->getNumRows(Field $field, array $options = array());
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`
@@ -11,8 +21,8 @@ Return a count of database rows populated the given field
 
 ## Return value
 
-int|array Returns array only if getPageIDs option set, otherwise returns a count of rows.
+- `int|array` Returns array only if getPageIDs option set, otherwise returns a count of rows.
 
-## Throws
+## Exceptions
 
-- WireException If given option for page or template doesn't resolve to actual page/template.
+- `WireException` If given option for page or template doesn't resolve to actual page/template.

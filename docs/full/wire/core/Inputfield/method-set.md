@@ -9,6 +9,13 @@ Set a property or attribute to the Inputfield
 - If setting an attribute (like name, id, etc.) this will work, but it is preferable to use the `Inputfield::attr()` method.
 - If setting any kind of "class" it is preferable to use the `Inputfield::addClass()` method.
 
+## Usage
+
+~~~~~
+// basic usage
+$inputfield = $inputfield->set($key, $value);
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of property to set
@@ -16,4 +23,4 @@ Set a property or attribute to the Inputfield
 
 ## Return value
 
-Inputfield|WireData
+- `Inputfield|WireData`

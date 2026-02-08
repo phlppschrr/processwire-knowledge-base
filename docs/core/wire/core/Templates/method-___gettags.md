@@ -4,13 +4,23 @@ Source: `wire/core/Templates.php`
 
 Get all tags used by templates
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $templates->___getTags();
+
+// usage with all arguments
+$array = $templates->___getTags($getTemplateNames = false);
+~~~~~
+
 ## Arguments
 
 - `$getTemplateNames` (optional) `bool` Get arrays of template names for each tag? (default=false)
 
 ## Return value
 
-array In return value both key and value are the tag
+- `array` In return value both key and value are the tag
 
 ## Since
 

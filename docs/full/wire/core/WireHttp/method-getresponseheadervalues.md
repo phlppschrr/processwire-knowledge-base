@@ -11,6 +11,16 @@ an array.
 This method always returns an associative array of strings and arrays, unless you specify the
 `$key` option in which case it can return an array, string, or NULL if the header is not present.
 
+## Usage
+
+~~~~~
+// basic usage
+$array = $wireHttp->getResponseHeaderValues();
+
+// usage with all arguments
+$array = $wireHttp->getResponseHeaderValues($key = '', $forceArrays = false);
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string` Optional header name you want to get (if you only need a specific header)
@@ -18,4 +28,4 @@ This method always returns an associative array of strings and arrays, unless yo
 
 ## Return value
 
-array|string|null
+- `array|string|null`

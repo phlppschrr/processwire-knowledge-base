@@ -19,6 +19,16 @@ if($info) {
 }
 ~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireDatabasePDO->indexExists($table, $indexName);
+
+// usage with all arguments
+$bool = $wireDatabasePDO->indexExists($table, $indexName, $getInfo = false);
+~~~~~
+
 ## Arguments
 
 - `$table` `string`
@@ -27,7 +37,7 @@ if($info) {
 
 ## Return value
 
-bool|array Returns one of the following: - `false`: if index does not exist (regardless of $getInfo argument). - `true`: if index exists and $getInfo argument is omitted or false. - `array`: array of arrays with verbose information if index exists and $getInfo argument is true.
+- `bool|array` Returns one of the following: - `false`: if index does not exist (regardless of $getInfo argument). - `true`: if index exists and $getInfo argument is omitted or false. - `array`: array of arrays with verbose information if index exists and $getInfo argument is true.
 
 ## Since
 

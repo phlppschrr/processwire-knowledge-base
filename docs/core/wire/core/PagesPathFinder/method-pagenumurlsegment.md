@@ -4,6 +4,16 @@ Source: `wire/core/PagesPathFinder.php`
 
 Get page number segment with given pageNum and and in given language name
 
+## Usage
+
+~~~~~
+// basic usage
+$string = $pagesPathFinder->pageNumUrlSegment($pageNum);
+
+// usage with all arguments
+$string = $pagesPathFinder->pageNumUrlSegment($pageNum, $langName = 'default');
+~~~~~
+
 ## Arguments
 
 - `$pageNum` `int`
@@ -11,4 +21,4 @@ Get page number segment with given pageNum and and in given language name
 
 ## Return value
 
-string
+- `string`

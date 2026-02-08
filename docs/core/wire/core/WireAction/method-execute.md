@@ -4,10 +4,17 @@ Source: `wire/core/WireAction.php`
 
 Execute the action for the given item
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireAction->execute($item);
+~~~~~
+
 ## Arguments
 
 - `$item` `Wire` Item to operate upon
 
 ## Return value
 
-bool True if the item was successfully operated upon, false if not.
+- `bool` True if the item was successfully operated upon, false if not.

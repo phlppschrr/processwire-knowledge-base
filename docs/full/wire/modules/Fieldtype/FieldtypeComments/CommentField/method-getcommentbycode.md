@@ -4,6 +4,13 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Given a comment code or subcode, return the associated comment ID or 0 if it doesn't exist
 
+## Usage
+
+~~~~~
+// basic usage
+$comment = $commentField->getCommentByCode($page, $code);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page|int|string`
@@ -11,4 +18,4 @@ Given a comment code or subcode, return the associated comment ID or 0 if it doe
 
 ## Return value
 
-Comment|null
+- `Comment|null`

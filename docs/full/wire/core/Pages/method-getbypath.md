@@ -12,6 +12,8 @@ Get a page by its path, similar to $pages->get('/path/to/page/') but with more o
 3. Partial paths may also match, so long as the partial path is completely unique in the site.
    If you don't want that behavior, double check the path of the returned page.
 
+## Example
+
 ~~~~~
 // Get a page by path
 $p = $pages->getByPath('/skyscrapers/atlanta/191-peachtree/');
@@ -28,6 +30,16 @@ $p = $pages->getByPath('/products/widget/', [
 ]);
 ~~~~~
 
+## Usage
+
+~~~~~
+// basic usage
+$page = $pages->getByPath($path);
+
+// usage with all arguments
+$page = $pages->getByPath($path, $options = array());
+~~~~~
+
 ## Arguments
 
 - `$path` `string` Path of page you want to retrieve.
@@ -35,7 +47,7 @@ $p = $pages->getByPath('/products/widget/', [
 
 ## Return value
 
-Page|int
+- `Page|int`
 
 ## Since
 

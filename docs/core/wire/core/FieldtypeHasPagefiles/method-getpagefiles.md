@@ -4,6 +4,16 @@ Source: `wire/core/Interfaces.php`
 
 Get Pagefiles
 
+## Usage
+
+~~~~~
+// basic usage
+$pagefiles = $fieldtypeHasPagefiles->getPagefiles($page, $field);
+
+// usage with all arguments
+$pagefiles = $fieldtypeHasPagefiles->getPagefiles(Page $page, Field $field);
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`
@@ -11,4 +21,4 @@ Get Pagefiles
 
 ## Return value
 
-Pagefiles|Pagefile[]
+- `Pagefiles|Pagefile[]`

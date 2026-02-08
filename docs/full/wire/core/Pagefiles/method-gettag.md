@@ -13,15 +13,22 @@ Given tag may be any of the following:
 
 3.0.17 Added support for multiple AND tags and allow tag specified as an array.
 
+## Usage
+
+~~~~~
+// basic usage
+$pagefile = $pagefiles->getTag($tag);
+~~~~~
+
 ## Arguments
 
 - `$tag` `string`
 
 ## Return value
 
-Pagefile|null
+- `Pagefile|null`
 
-## See also
+## See Also
 
 - [Pagefiles::findTag()](method-findtag.md)
 - [Pagefile::hasTag()](../Pagefile/method-hastag.md)

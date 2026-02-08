@@ -4,6 +4,13 @@ Source: `wire/core/WireSessionHandler.php`
 
 Open the session
 
+## Usage
+
+~~~~~
+// basic usage
+$bool = $wireSessionHandler->open($path, $name);
+~~~~~
+
 ## Arguments
 
 - `$path` `string` Save path
@@ -11,4 +18,4 @@ Open the session
 
 ## Return value
 
-bool True on success, false on failure
+- `bool` True on success, false on failure
