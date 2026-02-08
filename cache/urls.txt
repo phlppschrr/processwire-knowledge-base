@@ -6,9 +6,9 @@ https://processwire.com/docs/
 # Getting Started
 https://processwire.com/docs/start/
 https://processwire.com/docs/start/install/
-https://processwire.com/docs/start/install/new/
-https://processwire.com/docs/start/install/upgrade/
-https://processwire.com/docs/start/install/troubleshooting/
+# https://processwire.com/docs/start/install/new/
+# https://processwire.com/docs/start/install/upgrade/
+# https://processwire.com/docs/start/install/troubleshooting/
 https://processwire.com/docs/start/structure/
 https://processwire.com/docs/start/structure/pages/
 https://processwire.com/docs/start/structure/templates/
@@ -82,7 +82,7 @@ https://processwire.com/docs/more/lazy-cron/
 
 # Tutorials
 https://processwire.com/docs/tutorials/
-https://processwire.com/docs/tutorials/hello-worlds/
-https://processwire.com/docs/tutorials/default-site-profile/
+# https://processwire.com/docs/tutorials/hello-worlds/
+# https://processwire.com/docs/tutorials/default-site-profile/
 https://processwire.com/docs/tutorials/how-to-structure-your-template-files/
 https://processwire.com/docs/tutorials/using-custom-page-types-in-processwire/
