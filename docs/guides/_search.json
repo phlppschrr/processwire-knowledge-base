@@ -22,85 +22,64 @@
       "kind": "page"
     },
     {
-      "title": "Installing ProcessWire",
-      "category": "Getting Started",
-      "file": "docs/start/install/new.md",
-      "summary": "Information on how to download and install a new copy of ProcessWire from a ZIP file, from GitHub, or with Composer.",
-      "kind": "page"
-    },
-    {
-      "title": "Upgrading ProcessWire from one version to another",
-      "category": "Getting Started",
-      "file": "docs/start/install/upgrade.md",
-      "summary": "Most version upgrades in ProcessWire are as simple as just replacing the /wire/ directory with the new version.",
-      "kind": "page"
-    },
-    {
-      "title": "Troubleshooting ProcessWire install or upgrade",
-      "category": "Getting Started",
-      "file": "docs/start/install/troubleshooting.md",
-      "summary": "If you’ve run into an issue during installation or upgrade of ProcessWire, find out how to fix it here.",
-      "kind": "page"
-    },
-    {
       "title": "ProcessWire Structure",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/structure.md",
       "summary": "Overview of ProcessWire’s structure in terms of pages, templates and fields. And an outline of the directory structure.",
       "kind": "page"
     },
     {
       "title": "Pages in ProcessWire",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/structure/pages.md",
       "summary": "Almost everything in ProcessWire is represented by a Page. The term “Page” refers to a webpage, though in ProcessWire it’s also much more.",
       "kind": "page"
     },
     {
       "title": "Templates in ProcessWire",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/structure/templates.md",
       "summary": "Every Page has a template which defines the type of Page and what fields are present on pages using it. Every template may be used by one or more pages.",
       "kind": "page"
     },
     {
       "title": "Fields and field types in ProcessWire",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/structure/fields.md",
       "summary": "Fields in ProcessWire are where the content is actually stored. Any field may be one of many storing content for a Page and its output.",
       "kind": "page"
     },
     {
       "title": "ProcessWire’s file and directory structure",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/structure/files.md",
       "summary": "An outline of ProcessWire’s file and directory structure, highlighting the locations where your site’s files go, where the core files live, where to place modules, and more.",
       "kind": "page"
     },
     {
       "title": "About the ProcessWire API",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/api.md",
       "summary": "What the API is, why we think you'll like it, and how it makes ProcessWire a unique platform in the CMS landscape.",
       "kind": "page"
     },
     {
       "title": "Using template files in ProcessWire",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/templates.md",
       "summary": "Every time a page is loaded on your site, ProcessWire looks at what template is assigned to the page, loads it, gives it several API variables, and then runs it as a PHP script.",
       "kind": "page"
     },
     {
       "title": "Introduction to ProcessWire API variables",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/variables.md",
       "summary": "ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.",
       "kind": "page"
     },
     {
       "title": "Various ways of accessing the ProcessWire API",
-      "category": "Getting Started",
+      "category": "https://processwire.com/docs/start/install/troubleshooting/",
       "file": "docs/start/api-access.md",
       "summary": "In ProcessWire there are several ways that you can access the API and we take a look at the most common ones here. Regardless of what method you use, you are technically accessing what are called API variables.",
       "kind": "page"
@@ -428,29 +407,15 @@
       "kind": "page"
     },
     {
-      "title": "“Hello Worlds”, a beginning ProcessWire tutorial",
-      "category": "Tutorials",
-      "file": "docs/tutorials/hello-worlds.md",
-      "summary": "In this tutorial you will learn how to create and work with templates, fields, pages, and how to output dynamic data via your templates.",
-      "kind": "page"
-    },
-    {
-      "title": "Introduction to the default site profile",
-      "category": "Tutorials",
-      "file": "docs/tutorials/default-site-profile.md",
-      "summary": "Just getting started with ProcessWire and aren't totally clear on what template files are? The good news is that template files aren't anything other than regular HTML or PHP files, and you can use them however you want!",
-      "kind": "page"
-    },
-    {
       "title": "How to structure your template files",
-      "category": "Tutorials",
+      "category": "https://processwire.com/docs/tutorials/default-site-profile/",
       "file": "docs/tutorials/how-to-structure-your-template-files.md",
       "summary": "How to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as extensive examples.",
       "kind": "page"
     },
     {
       "title": "Using custom page types in ProcessWire",
-      "category": "Tutorials",
+      "category": "https://processwire.com/docs/tutorials/default-site-profile/",
       "file": "docs/tutorials/using-custom-page-types-in-processwire.md",
       "summary": "A look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types.",
       "kind": "page"

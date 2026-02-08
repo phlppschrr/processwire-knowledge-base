@@ -24,8 +24,10 @@ foreach($selectors as $selector) {
   echo "</p>";
 }
 ~~~~~
+For details on how to use selectors please see [Using Selectors](https://processwire.com/docs/selectors/)
+and [Selector Operators](https://processwire.com/docs/selectors/operators/).
 
-@link https://processwire.com/api/selectors/ Official Selectors Documentation
+@link https://processwire.com/docs/selectors/ Official Selectors Documentation
 
 ProcessWire 3.x, Copyright 2026 by Ryan Cramer
 https://processwire.com

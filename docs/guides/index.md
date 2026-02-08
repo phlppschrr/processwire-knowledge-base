@@ -10,20 +10,8 @@
 
 ## Getting Started
 
-- [About the ProcessWire API](docs/start/api.md)
-- [Fields and field types in ProcessWire](docs/start/structure/fields.md)
 - [Getting started with ProcessWire](docs/start.md)
 - [Installing or upgrading ProcessWire](docs/start/install.md)
-- [Installing ProcessWire](docs/start/install/new.md)
-- [Introduction to ProcessWire API variables](docs/start/variables.md)
-- [Pages in ProcessWire](docs/start/structure/pages.md)
-- [ProcessWire Structure](docs/start/structure.md)
-- [ProcessWire’s file and directory structure](docs/start/structure/files.md)
-- [Templates in ProcessWire](docs/start/structure/templates.md)
-- [Troubleshooting ProcessWire install or upgrade](docs/start/install/troubleshooting.md)
-- [Upgrading ProcessWire from one version to another](docs/start/install/upgrade.md)
-- [Using template files in ProcessWire](docs/start/templates.md)
-- [Various ways of accessing the ProcessWire API](docs/start/api-access.md)
 
 ## Front-end
 
@@ -96,11 +84,7 @@
 
 ## Tutorials
 
-- [How to structure your template files](docs/tutorials/how-to-structure-your-template-files.md)
-- [Introduction to the default site profile](docs/tutorials/default-site-profile.md)
 - [ProcessWire Tutorials](docs/tutorials.md)
-- [Using custom page types in ProcessWire](docs/tutorials/using-custom-page-types-in-processwire.md)
-- [“Hello Worlds”, a beginning ProcessWire tutorial](docs/tutorials/hello-worlds.md)
 
 ## Other
 

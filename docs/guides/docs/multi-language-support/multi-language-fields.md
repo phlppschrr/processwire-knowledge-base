@@ -1,30 +1,27 @@
-# Multi-language CMS fields in ProcessWire
+# Using multi-language fields
 
 Source: https://processwire.com/docs/multi-language-support/multi-language-fields/
 
-# Using multi-language fields 
+## Summary
 
 Here we look in detail at multi-language fields and language-alternate fields, as well as how to use them. Also includes a video overview and examples of how to use language fields to create full multi-language websites.
 
-ProcessWire supports the use of multi-language fields and language-alternate fields. A multi-language field is a single field that supports multiple languages, and these are typically text-based fields. Language-alternate fields are separate fields where the value of one can substitute for another, when the user's language justifies it. Below is a short video that demonstrates the use of both.
-- [Multi-language fields](#multi-language-fields)
-- [Language alternate fields](#language-alternate-fields)
-- [How language fields work from the $pages API](#how-language-fields-work)
-- [Getting and setting language-specific values in the API](#getting-and-setting)
-- [Multi-language field values](#multi-language-field-values)
-- [Language alternate field values](#language-alternate-field-values)
+## Key Points
 
----
+- Here we look in detail at multi-language fields and language-alternate fields, as well as how to use them. Also includes a video overview and examples of how to use language fields to create full multi-language websites.
+- ProcessWire supports the use of multi-language fields and language-alternate fields. A multi-language field is a single field that supports multiple languages, and these are typically text-based fields. Language-alternate fields are separate fields where the value of one can substitute for another, when the user's language justifies it. Below is a short video that demonstrates the use of both.
+- This is an old video, but all the concepts still apply in current versions of ProcessWire.
 
-This is an old video, but all the concepts still apply in current versions of ProcessWire. 
+## Sections
 
----
 
 ## Getting started
+
 
 ### How to install
 
 To use multi-language fields or language-alternate fields, you must first install the "Language Support - Fields" module, included with ProcessWire 2.2 or newer. To do this, click "install" for "Language Support - Fields" from the Modules menu.
+
 
 ### When and where to use language fields
 
@@ -32,32 +29,30 @@ Language fields (whether multi-language or language-alternate) enable your site'
 
 In order to present your site's content in a different language using language fields, the current user's language has to be set to the one you want the site to display in. This is a simple matter if you are dealing with users that can log-in, because they can set their language from their profile. However, we are assuming you want to use language fields for the purpose of having multi-language versions of your site available to anonymous visitors. There are a large number of approaches you could take. See the numerous examples on this page for how multi-language fields can be used to produce a multi-language website.
 
----
 
 ## Multi-language fields
 
 ProcessWire 2.2 includes 3 new fieldtypes that support multiple languages:
-- TextLanguage – single line text field
-- TextareaLanguage – multi-line text or rich-text (TinyMCE) field
-- PageTitleLanguage – special text field to be used with page titles only
 
 These 3 fieldtypes correspond to the standard text fieldtypes already included in ProcessWire: Text, Textarea and PageTitle. When you convert a field to the multi-language version (i.e. convert a Textarea to a TextareaLanguage) the field now has inputs for every installed language in your system. If an input is left blank for any language, then the default language is substituted at runtime.
+
 
 ### Converting an existing field to multi-language
 
 To convert an existing field to a multi-language field, it must be a Text, Textarea or PageTitle field. Edit the field settings in Setup > Fields > Your Field. Change the "Type" to be: TextLanguage, TextareaLanguage or PageTitleLanguage. Because this change involves adding new columns to the field's database table, it will ask you to confirm the schema change. While this is a safe process, any time something modifies existing database tables, it's a good idea to make sure you have a backup of your database. When ready, confirm the change, and your field will now support all languages installed in the system. Should you want to convert back, repeat the same process but choose the non multi-language fieldtype instead.
 
-*Please note: when converting to or from a multi-language field, some of your field settings can be lost. For instance, if you are converting a textarea field that uses TinyMCE for input, you will have to reconfigure these settings after converting to or from a multi-language field. *
+Please note: when converting to or from a multi-language field, some of your field settings can be lost. For instance, if you are converting a textarea field that uses TinyMCE for input, you will have to reconfigure these settings after converting to or from a multi-language field.
+
 
 ### Creating a new multi-language field
 
 To create a new multi-language field, all you need to do is go to Setup > Fields > Add New. When it asks you to select a field type, choose either TextLanguage or TextareaLanguage.
 
----
 
 ## Language-alternate fields
 
 Language-alternate fields allow for the value of one field to replace the value of another when the user's language is something other than the default. Unlike multi-language fields, language-alternate fields are actually separate fields that you create on your own. ProcessWire identifies them based on the name you give them. The name is a combination of an existing field in the system combined with the language name.
+
 
 ### Creating a language-alternate field
 
@@ -67,23 +62,22 @@ Assuming you have a language installed named "dutch" and the current user's lang
 
 Unlike multi-language fields, language alternate fields can be used with any type of field.
 
----
 
 ## How language fields work from the $pages API
 
 Whether using multi-language fields or language-alternate fields, when a user's language is something other than the default, then the value of the field reflects the language-specific value, if it is available. If it is not available, then the default language version is substituted. Likewise, any API calls using selectors that include the field, will match pages that contain the term in either the current user's language, OR the default language.
 
+
 ### Example
 
 We will assume that the current user's language is Dutch and that this is a language installed in the system. We will also assume that the field "body" is a multi-language textarea field. Because the user's current language is Dutch, the following API call matches any pages that contain the phrase "welkom vrienden" (welcome friends) in the Dutch body field OR the default body field. If there are other languages installed, it does not attempt to search them.
 
-```
+```php
 $results = $pages->find("body*=welkom vrienden");
 ```
 
 Lets now change the example and say that "body" was not a multi-language field, but it had a language-alternate field called "body_dutch". Because the user's current language is Dutch, the results of the above API call would be identical to when we were considering multi-language fields. Meaning, a search in the "body" field actually performs a search on "body_dutch" and "body" at the same time. Should you need to, you can also target just the language-alternate field by specifying it's name in the selector, i.e. "body_dutch" rather than "body".
 
----
 
 ## Getting and setting language values in the API
 
@@ -98,11 +92,12 @@ $user->language = $language; // restore the user's language
 
 The value of a multi-language or language-alternate field is affected by the "outputFormatting" setting of a page. On the front-end of your site, outputFormatting is always turned on, unless you've turned it off. In other applications, like in the admin, or at the command line, outputFormatting may be off by default. The example above, and most of the documentation on this page assumes that outputFormatting is on. In cases where outputFormatting is off, the value of our language fields may be different. These differences are outlined below:
 
+
 ## Multi-language field values
 
 When outputFormatting is ON, the value of a multi-language field is a string (as it shows in most examples on this page). That string reflects the value from the current user's language. If the value is blank in the current user's language, the value from the default language will be there instead.
 
-However, when outputFormatting is OFF, the value of a multi-language field (like $page->body) will instead return an object of type *LanguagesPageFieldValue*, rather than a string. That object contains all of the translations available for the given field. If you access or typecast this object as a string, it will return the same thing as if outputFormatting was on. If you want to get or set the value of this field for another language, you can do the following:
+However, when outputFormatting is OFF, the value of a multi-language field (like $page->body) will instead return an object of type LanguagesPageFieldValue, rather than a string. That object contains all of the translations available for the given field. If you access or typecast this object as a string, it will return the same thing as if outputFormatting was on. If you want to get or set the value of this field for another language, you can do the following:
 
 ```
 $page->of(false); // turn off outputFormatting (if it's not already)
@@ -111,6 +106,7 @@ $body = $page->body->getLanguageValue($dutch); // get the unformatted value in D
 ```
 
 This is very similar to what we did in an earlier example, except that we didn't have to change the current user's language, and we're dealing with a value that has not had any textformatters applied to it (which is exactly what you want if you need to modify and save it).
+
 
 ### Setting a multi-language field value
 
@@ -138,7 +134,6 @@ $page->body->setLanguageValue($spanish, "Bienvenidos amigos"); // set in Spanish
 $page->save(); // save the page with the new language values
 ```
 
----
 
 ## Language-alternate field values
 
@@ -147,6 +142,7 @@ For the following description, lets assume we have a field called "body" and ano
 When outputFormatting is OFF, the language-alternate fields behave as if they were completely separate, unrelated fields. Meaning, $page->body will always return the value of $page->body (never substituting the value of $page->body_dutch).
 
 Regardless of whether outputFormatting is on or off, you can always access the language-specific alternate fields and expect that they will return the value in the language they signify. So regardless of what the current user's language is, $page->body_dutch will always return the Dutch version of body, and $page->body_spanish will always return the Spanish version. It is only $page->body that has it's value substituted with alternate language versions when outputFormatting is on.
+
 
 ### Setting a language-alternate field value
 

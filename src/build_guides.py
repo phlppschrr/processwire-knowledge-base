@@ -365,32 +365,48 @@ def build_sections(blocks: list[Block]) -> list[tuple[int, str, list[Block]]]:
     return sections
 
 
-def render_sections(sections: list[tuple[int, str, list[Block]]], max_sections: int = 8) -> list[str]:
+def render_sections(sections: list[tuple[int, str, list[Block]]], max_sections: int | None = None) -> list[str]:
     lines: list[str] = []
-    for level, heading, blocks in sections[:max_sections]:
+    
+    # Filter sections if max_sections is set
+    effective_sections = sections
+    if max_sections is not None:
+        effective_sections = sections[:max_sections]
+
+    for level, heading, blocks in effective_sections:
         if not heading:
             continue
         header = "##" if level <= 2 else "###"
         lines.extend(["", f"{header} {heading}", ""])
-        para_added = False
-        list_added = False
+        
         for block in blocks:
-            if block.kind == "paragraph" and block.text and not para_added:
+            if block.kind == "paragraph" and block.text:
                 lines.append(block.text)
                 lines.append("")
-                para_added = True
                 continue
-            if block.kind == "list" and block.items and not list_added:
-                for item in block.items[:8]:
+            if block.kind == "list" and block.items:
+                for item in block.items:
                     lines.append(f"- {item}")
                 lines.append("")
-                list_added = True
                 continue
             if block.kind == "table" and block.rows:
                 lines.extend(render_table_as_list(block.rows))
                 lines.append("")
+                continue
+            if block.kind == "code" and block.text:
+                # Basic code block detection/formatting
+                lang = ""
+                if "<?php" in block.text or "$pages->" in block.text:
+                    lang = "php"
+                lines.append(f"```{lang}")
+                lines.append(block.text)
+                lines.append("```")
+                lines.append("")
+                continue
+
         if lines and lines[-1] == "":
             continue
+            
     if lines and lines[-1] == "":
         lines.pop()
     return lines
@@ -464,7 +480,7 @@ def render_guide_page(doc: GuideDoc, out_path: Path) -> None:
     sections = build_sections(doc.blocks)
     if sections:
         lines.extend(["## Sections", ""])
-        lines.extend(render_sections(sections))
+        lines.extend(render_sections(sections, max_sections=None))
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
