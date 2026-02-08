@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from html.parser import HTMLParser
 
+from bs4 import BeautifulSoup, Tag, NavigableString
 
 IGNORE_TAGS = {"script", "style", "noscript"}
 SUPPRESS_TOKENS = {
@@ -55,222 +56,101 @@ class GuidePage:
     kind: str = "page"
 
 
-class GuideHTMLParser(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.blocks: list[Block] = []
-        self.title: str | None = None
-        self._stack: list[tuple[str, bool, bool]] = []
-        self._suppress_depth = 0
-        self._ignore_depth = 0
-        self._current_tag: str | None = None
-        self._current_text: list[str] = []
-        self._list_depth = 0
-        self._current_list: list[str] | None = None
-        self._table_depth = 0
-        self._current_row: list[str] | None = None
-        self._current_cell: list[str] | None = None
-        self._current_table: list[list[str]] | None = None
-        self._in_pre = False
-        self._block_start_tags = set(HEADING_TAGS.keys()) | {"p", "ul", "ol", "table", "pre"}
-
-    def _push(self, tag: str, suppress: bool, ignore: bool) -> None:
-        self._stack.append((tag, suppress, ignore))
-        if suppress:
-            self._suppress_depth += 1
-        if ignore:
-            self._ignore_depth += 1
-
-    def _pop(self, tag: str) -> None:
-        while self._stack:
-            current_tag, suppress, ignore = self._stack.pop()
-            if suppress:
-                self._suppress_depth = max(self._suppress_depth - 1, 0)
-            if ignore:
-                self._ignore_depth = max(self._ignore_depth - 1, 0)
-            if current_tag == tag:
-                break
-
-    def _is_suppressed(self) -> bool:
-        return self._suppress_depth > 0 or self._ignore_depth > 0
-
-    def _should_suppress(self, attrs: list[tuple[str, str | None]]) -> bool:
-        for key, value in attrs:
-            if value is None:
-                continue
-            if key in {"id", "class"}:
-                lowered = value.lower()
-                for token in SUPPRESS_TOKENS:
-                    if token in lowered:
-                        return True
-        return False
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        tag = tag.lower()
-        ignore = tag in IGNORE_TAGS
-        suppress = self._should_suppress(attrs)
-        self._push(tag, suppress, ignore)
-        if ignore or self._is_suppressed():
-            return
-
-        if tag in self._block_start_tags:
-            self._flush_current_tag()
-
-        if tag in HEADING_TAGS:
-            self._current_tag = tag
-            self._current_text = []
-            return
-        if tag == "p":
-            self._current_tag = tag
-            self._current_text = []
-            return
-        if tag in {"ul", "ol"}:
-            self._list_depth += 1
-            if self._list_depth == 1:
-                self._current_list = []
-            return
-        if tag == "li" and self._list_depth >= 1:
-            self._current_tag = tag
-            self._current_text = []
-            return
-        if tag == "table":
-            self._table_depth += 1
-            if self._table_depth == 1:
-                self._current_table = []
-            return
-        if tag == "tr" and self._table_depth == 1:
-            if self._current_cell is not None:
-                text = normalize_text("".join(self._current_cell))
-                if self._current_row is not None:
-                    self._current_row.append(text)
-                self._current_cell = None
-            if self._current_row is not None and self._current_table is not None:
-                self._current_table.append(self._current_row)
-            self._current_row = []
-            return
-        if tag in {"td", "th"} and self._table_depth == 1:
-            if self._current_cell is not None:
-                text = normalize_text("".join(self._current_cell))
-                if self._current_row is not None:
-                    self._current_row.append(text)
-            self._current_cell = []
-            return
-        if tag == "pre":
-            self._in_pre = True
-            self._current_tag = tag
-            self._current_text = []
-            return
-        if tag == "br" and self._current_tag:
-            self._current_text.append("\n")
-
-    def handle_data(self, data: str) -> None:
-        if self._is_suppressed():
-            return
-        if not data:
-            return
-        if self._current_cell is not None:
-            self._current_cell.append(data)
-            return
-        if self._current_tag:
-            self._current_text.append(data)
-
-    def handle_endtag(self, tag: str) -> None:
-        tag = tag.lower()
-        if tag in HEADING_TAGS and self._current_tag == tag:
-            text = normalize_text("".join(self._current_text))
-            if text:
-                if tag == "h1" and self.title is None:
-                    self.title = text
-                else:
-                    self.blocks.append(Block(kind="heading", text=text, level=HEADING_TAGS[tag]))
-            self._current_tag = None
-            self._current_text = []
-        elif tag == "p" and self._current_tag == tag:
-            text = normalize_text("".join(self._current_text))
-            if text:
-                self.blocks.append(Block(kind="paragraph", text=text))
-            self._current_tag = None
-            self._current_text = []
-        elif tag == "li" and self._current_tag == tag:
-            text = normalize_text("".join(self._current_text))
-            if text and self._current_list is not None:
-                if text.lower() not in {"learn more", "learn more →", "learn more →"}:
-                    self._current_list.append(text)
-            self._current_tag = None
-            self._current_text = []
-        elif tag in {"ul", "ol"}:
-            if self._list_depth > 0:
-                if self._list_depth == 1 and self._current_list:
-                    self.blocks.append(Block(kind="list", items=self._current_list))
-                self._list_depth = max(self._list_depth - 1, 0)
-                if self._list_depth == 0:
-                    self._current_list = None
-        elif tag in {"td", "th"} and self._current_cell is not None:
-            text = normalize_text("".join(self._current_cell))
-            if self._current_row is not None:
-                self._current_row.append(text)
-            self._current_cell = None
-        elif tag == "tr" and self._current_row is not None:
-            if self._current_table is not None:
-                self._current_table.append(self._current_row)
-            self._current_row = None
-        elif tag == "table" and self._table_depth > 0:
-            if self._current_cell is not None:
-                text = normalize_text("".join(self._current_cell))
-                if self._current_row is not None:
-                    self._current_row.append(text)
-                self._current_cell = None
-            if self._current_row is not None and self._current_table is not None:
-                self._current_table.append(self._current_row)
-                self._current_row = None
-            if self._table_depth == 1 and self._current_table:
-                self.blocks.append(Block(kind="table", rows=self._current_table))
-            self._table_depth = max(self._table_depth - 1, 0)
-            if self._table_depth == 0:
-                self._current_table = None
-        elif tag == "pre" and self._current_tag == tag:
-            text = "".join(self._current_text)
-            if text:
-                self.blocks.append(Block(kind="code", text=text))
-            self._current_tag = None
-            self._current_text = []
-            self._in_pre = False
-
-        self._pop(tag)
-
-    def _flush_current_tag(self) -> None:
-        if not self._current_tag:
-            return
-        tag = self._current_tag
-        if tag in HEADING_TAGS:
-            text = normalize_text("".join(self._current_text))
-            if text:
-                if tag == "h1" and self.title is None:
-                    self.title = text
-                else:
-                    self.blocks.append(Block(kind="heading", text=text, level=HEADING_TAGS[tag]))
-        elif tag == "p":
-            text = normalize_text("".join(self._current_text))
-            if text:
-                self.blocks.append(Block(kind="paragraph", text=text))
-        elif tag == "li":
-            text = normalize_text("".join(self._current_text))
-            if text and self._current_list is not None:
-                if text.lower() not in {"learn more", "learn more →", "learn more →"}:
-                    self._current_list.append(text)
-        elif tag == "pre":
-            text = "".join(self._current_text)
-            if text:
-                self.blocks.append(Block(kind="code", text=text))
-
-        self._current_tag = None
-        self._current_text = []
+def should_suppress(element: Tag) -> bool:
+    for attr in ["id", "class"]:
+        val = element.get(attr)
+        if not val:
+            continue
+        if isinstance(val, list):
+            val = " ".join(val)
+        lowered = val.lower()
+        for token in SUPPRESS_TOKENS:
+            if token in lowered:
+                return True
+    return False
 
 
 def normalize_text(text: str) -> str:
     text = html.unescape(text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def extract_blocks_from_soup(soup: BeautifulSoup | Tag) -> list[Block]:
+    blocks: list[Block] = []
+    
+    # We want to traverse elements in document order-ish, but BS4 traversal can be tricky.
+    # For a guide, we usually care about the main content flow.
+    # Let's iterate over immediate children of the main container if possible, 
+    # or just find all relevant tags and order them by position? 
+    # Actually, a recursive traverser that collects blocks is probably best 
+    # but flattening the "readable" content is the goal.
+    
+    # Simple approach: Find all block-level elements we care about in order
+    # This might miss text directly inside a div if we aren't careful, 
+    # but usually guide content is in p, h*, ul, ol, table, pre.
+
+    # Better approach: Recursive walk
+    
+    def walk(element: Tag | NavigableString):
+        if isinstance(element, NavigableString):
+            return
+
+        if isinstance(element, Tag):
+            tag_name = element.name.lower()
+            
+            if tag_name in IGNORE_TAGS:
+                return
+            
+            if should_suppress(element):
+                return
+
+            if tag_name in HEADING_TAGS:
+                text = normalize_text(element.get_text())
+                if text:
+                    blocks.append(Block(kind="heading", text=text, level=HEADING_TAGS[tag_name]))
+                return
+
+            if tag_name == "p":
+                # Check if it's not just containing an image or empty
+                text = normalize_text(element.get_text())
+                if text:
+                   blocks.append(Block(kind="paragraph", text=text))
+                return
+
+            if tag_name in ("ul", "ol"):
+                items = []
+                for li in element.find_all("li", recursive=False):
+                    text = normalize_text(li.get_text())
+                    if text and text.lower() not in {"learn more", "learn more →", "learn more →"}:
+                        items.append(text)
+                if items:
+                    blocks.append(Block(kind="list", items=items))
+                return
+
+            if tag_name == "table":
+                rows = []
+                for tr in element.find_all("tr"):
+                    cells = []
+                    for td in tr.find_all(["td", "th"]):
+                        cells.append(normalize_text(td.get_text()))
+                    rows.append(cells)
+                if rows:
+                    blocks.append(Block(kind="table", rows=rows))
+                return
+
+            if tag_name == "pre":
+                text = element.get_text()
+                if text:
+                    blocks.append(Block(kind="code", text=text))
+                return
+            
+            # For divs and other containers, recurse
+            for child in element.children:
+                walk(child)
+
+    walk(soup)
+    return blocks
 
 
 def extract_main_html(text: str) -> str:
@@ -311,17 +191,31 @@ def extract_title(text: str) -> str | None:
 def parse_html_doc(url: str, html_text: str) -> GuideDoc:
     meta_desc = extract_meta_description(html_text)
     main_html = extract_main_html(html_text)
-    parser = GuideHTMLParser()
-    parser.feed(main_html)
-    title = parser.title or extract_title(html_text) or url
+    
+    soup = BeautifulSoup(main_html, "html.parser")
+    # If we have h1 in main_html processing, we might want to extract title from there too
+    
+    blocks = extract_blocks_from_soup(soup)
+    
+    title = extract_title(html_text) or url
+    # Try to find h1 in blocks if title is generic? 
+    # Ideally checking blocks for h1 
+    
+    for block in blocks:
+        if block.kind == "heading" and block.level == 1:
+             # Use the first H1 as title if we rely on content title
+             # But extract_title usually gets <title> tag which is safer for metadata
+             pass
+
     summary = None
-    for block in parser.blocks:
+    for block in blocks:
         if block.kind == "paragraph" and block.text:
             summary = block.text
             break
     if not summary:
         summary = meta_desc
-    return GuideDoc(url=url, title=title, summary=summary, blocks=parser.blocks)
+        
+    return GuideDoc(url=url, title=title, summary=summary, blocks=blocks)
 
 
 def render_table_as_list(rows: list[list[str]], max_rows: int = 40) -> list[str]:

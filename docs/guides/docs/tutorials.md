@@ -1,37 +1,18 @@
-# ProcessWire Tutorials
+# ProcessWire tutorials
 
 Source: https://processwire.com/docs/tutorials/
 
 ## Summary
 
-If you like to learn by doing or by example, these tutorials will help you get up to speed with ProcessWire quickly.
+If you like to learn by doing or by example, these tutorials will help you get up to speed with ProcessWire quickly.A Beginner’s Guide To ProcessWireThe Aesthetic Of Non-Opinionated Content Management. Published at Smashing Magazine. By Francesco Schwarz.Learn more →Hello WorldsIn this tutorial you will learn how to create and work with templates, fields, pages, and how to output dynamic data via your…Learn more →How to Create an AJAX Driven Theme for ProcessWireIn this tutorial we will look at setting up a simple theme in ProcessWire, we’ll investigate delayed output (now the default…Learn more →How to Develop a Processwire ThemeIntroduction to theming via template files, external tutorial at Envato Tuts+. By Ben Byford.Learn more →Default site profileIf you've installed ProcessWire's default site profile and want a guide on how the template files work, this is for…Learn more →How to structure your template filesHow to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as…Learn more →Using custom page types in ProcessWireA look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types. An…Learn more →More tutorialsThis link takes you to an external website (pwtuts.com) that hosts several useful ProcessWire tutorials.Learn more →
 
 ## Key Points
 
-- If you like to learn by doing or by example, these tutorials will help you get up to speed with ProcessWire quickly.
+- If you like to learn by doing or by example, these tutorials will help you get up to speed with ProcessWire quickly.A Beginner’s Guide To ProcessWireThe Aesthetic Of Non-Opinionated Content Management. Published at Smashing Magazine. By Francesco Schwarz.Learn more →Hello WorldsIn this tutorial you will learn how to create and work with templates, fields, pages, and how to output dynamic data via your…Learn more →How to Create an AJAX Driven Theme for ProcessWireIn this tutorial we will look at setting up a simple theme in ProcessWire, we’ll investigate delayed output (now the default…Learn more →How to Develop a Processwire ThemeIntroduction to theming via template files, external tutorial at Envato Tuts+. By Ben Byford.Learn more →Default site profileIf you've installed ProcessWire's default site profile and want a guide on how the template files work, this is for…Learn more →How to structure your template filesHow to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as…Learn more →Using custom page types in ProcessWireA look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types. An…Learn more →More tutorialsThis link takes you to an external website (pwtuts.com) that hosts several useful ProcessWire tutorials.Learn more →
 
 ## Sections
 
 
-### A Beginner’s Guide To ProcessWire
+## ProcessWire Tutorials
 
-
-### Hello Worlds
-
-
-### How to Create an AJAX Driven Theme for ProcessWire
-
-
-### How to Develop a Processwire Theme
-
-
-### Default site profile
-
-
-### How to structure your template files
-
-
-### Using custom page types in ProcessWire
-
-
-### More tutorials
+If you like to learn by doing or by example, these tutorials will help you get up to speed with ProcessWire quickly.A Beginner’s Guide To ProcessWireThe Aesthetic Of Non-Opinionated Content Management. Published at Smashing Magazine. By Francesco Schwarz.Learn more →Hello WorldsIn this tutorial you will learn how to create and work with templates, fields, pages, and how to output dynamic data via your…Learn more →How to Create an AJAX Driven Theme for ProcessWireIn this tutorial we will look at setting up a simple theme in ProcessWire, we’ll investigate delayed output (now the default…Learn more →How to Develop a Processwire ThemeIntroduction to theming via template files, external tutorial at Envato Tuts+. By Ben Byford.Learn more →Default site profileIf you've installed ProcessWire's default site profile and want a guide on how the template files work, this is for…Learn more →How to structure your template filesHow to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as…Learn more →Using custom page types in ProcessWireA look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types. An…Learn more →More tutorialsThis link takes you to an external website (pwtuts.com) that hosts several useful ProcessWire tutorials.Learn more →

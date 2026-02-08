@@ -10,82 +10,82 @@
 
 ## Getting Started
 
-- [Getting started with ProcessWire](docs/start.md)
-- [Installing or upgrading ProcessWire](docs/start/install.md)
+- [Getting started with ProcessWire CMS](docs/start.md)
+- [ProcessWire installation guide](docs/start/install.md)
 
 ## Front-end
 
-- [Common output strategies](docs/front-end/output.md)
-- [Front-end editing (PageFrontEdit module)](docs/front-end/front-end-editing.md)
-- [Including and bootstrapping ProcessWire](docs/front-end/include.md)
-- [MarkupPagerNav (markup for pagination)](docs/front-end/markup-pager-nav.md)
-- [Producing output on the front-end](docs/front-end.md)
-- [URL segments and routing](docs/front-end/how-to-use-url-segments.md)
+- [Bootstrapping ProcessWire CMS from external scripts](docs/front-end/include.md)
+- [Front-end CMS output in ProcessWire](docs/front-end.md)
+- [Front-end editing in ProcessWire CMS (PageFrontEdit module)](docs/front-end/front-end-editing.md)
+- [Output strategies for template files in ProcessWire CMS](docs/front-end/output.md)
+- [Pagination in ProcessWire CMS](docs/front-end/markup-pager-nav.md)
+- [Using URL segments and routing in ProcessWire CMS](docs/front-end/how-to-use-url-segments.md)
 
 ## Selectors
 
-- [Selector Operators in ProcessWire](docs/selectors/operators.md)
-- [Using Selectors](docs/selectors.md)
+- [ProcessWire Selector Operators](docs/selectors/operators.md)
+- [Using selectors in ProcessWire CMS](docs/selectors.md)
 
 ## Modules & Hooks
 
+- [About ProcessWire modules (plugins)](docs/modules.md)
 - [About the /site/modules/ directory](docs/modules/about-site-modules.md)
-- [Developing modules in ProcessWire](docs/modules/development.md)
-- [Introduction to modules](docs/modules/intro.md)
-- [Modules (plugins) and hooks](docs/modules.md)
-- [Predefined module types in ProcessWire](docs/modules/types.md)
-- [Using hooks in ProcessWire](docs/modules/hooks.md)
+- [Introduction to modules in ProcessWire CMS (plugins)](docs/modules/intro.md)
+- [Module development in ProcessWire CMS](docs/modules/development.md)
+- [ProcessWire Hooks](docs/modules/hooks.md)
+- [ProcessWire module types](docs/modules/types.md)
 
 ## Fields
 
-- [Fields, Fieldtypes and Inputfields](docs/fields.md)
-- [FieldtypeImage (for images fields)](docs/fields/images.md)
-- [Input dependencies (or field dependencies)](docs/fields/dependencies.md)
-- [ProcessWire CKEditor Inputfield module](docs/fields/ckeditor.md)
-- [Repeatable Fields / Matrix Fields](docs/fields/repeaters.md)
-- [Select Options Fieldtype (FieldtypeOptions)](docs/fields/select-options-fieldtype.md)
-- [Textarea (FieldtypeTextarea) multi-line text](docs/fields/textarea-fieldtype.md)
-- [Using multi-language fields](docs/fields/multi-language-fields.md)
+- [CKEditor](docs/fields/ckeditor.md)
+- [CMS Repeater fields (aka Matrix fields) using FieldtypeRepeater in ProcessWire](docs/fields/repeaters.md)
+- [Field dependencies](docs/fields/dependencies.md)
+- [Fields, types, input](docs/fields.md)
+- [Image field type in ProcessWire CMS](docs/fields/images.md)
+- [Multi-language CMS fields in ProcessWire](docs/fields/multi-language-fields.md)
+- [Select Options Fieldtype in ProcessWire CMS](docs/fields/select-options-fieldtype.md)
+- [Textarea field type in ProcessWire CMS (multi-line text)](docs/fields/textarea-fieldtype.md)
 
 ## Access Control
 
-- [Access control in ProcessWire](docs/user-access.md)
-- [Permissions for access control in ProcessWire](docs/user-access/permissions.md)
-- [Roles for access control in ProcessWire](docs/user-access/roles.md)
+- [Access control in ProcessWire CMS](docs/user-access.md)
+- [Permissions for access control in ProcessWire CMS](docs/user-access/permissions.md)
+- [Roles for ProcessWire access control (RBAC)](docs/user-access/roles.md)
 
 ## Security
 
-- [CMS Security for ProcessWire](docs/security.md)
-- [Database-driven sessions](docs/security/sessions.md)
-- [Migrating to production](docs/security/migration.md)
-- [Remove unnecessary files](docs/security/remove-unnecessary-files.md)
+- [2-factor authentication](docs/security/two-factor-authentication.md)
+- [CMS security / ProcessWire](docs/security.md)
+- [ProcessWire security: database driven sessions](docs/security/sessions.md)
+- [ProcessWire security: file permissions](docs/security/file-permissions.md)
+- [ProcessWire security: migrating to production](docs/security/migration.md)
+- [ProcessWire security: remove unnecessary files](docs/security/remove-unnecessary-files.md)
+- [ProcessWire security: securing your admin control panel](docs/security/admin.md)
+- [ProcessWire security: template files](docs/security/template-files.md)
+- [ProcessWire security: third party modules](docs/security/third-party-modules.md)
+- [ProcessWire security: web hosting](docs/security/web-hosting.md)
 - [Running ProcessWire alongside other software](docs/security/other-software.md)
-- [Securing file permissions](docs/security/file-permissions.md)
-- [Securing your admin](docs/security/admin.md)
-- [Security for template files in ProcessWire](docs/security/template-files.md)
-- [Third party modules](docs/security/third-party-modules.md)
-- [Two-factor (or multi-factor) authentication](docs/security/two-factor-authentication.md)
-- [Web hosting security](docs/security/web-hosting.md)
 
 ## Multi-language
 
 - [Add multi-language translations to your module](docs/multi-language-support/multi-language-modules.md)
-- [Code Internationalization (i18n)](docs/multi-language-support/code-i18n.md)
-- [Multi-language URLs and page names](docs/multi-language-support/multi-language-urls.md)
-- [Multiple language support with ProcessWire](docs/multi-language-support.md)
-- [Using multi-language fields](docs/multi-language-support/multi-language-fields.md)
+- [Multi language support with ProcessWire CMS](docs/multi-language-support.md)
+- [Multi-language CMS fields in ProcessWire](docs/multi-language-support/multi-language-fields.md)
+- [Multi-language URLs in ProcessWire CMS](docs/multi-language-support/multi-language-urls.md)
+- [PHP Internationalization (i18n) and multi-language tools in ProcessWire CMS](docs/multi-language-support/code-i18n.md)
 
 ## More Topics
 
-- [Lazy Cron](docs/more/lazy-cron.md)
 - [More topics](docs/more.md)
-- [Multiple-site support](docs/more/multi-site-support.md)
+- [Multiple site support in ProcessWire CMS](docs/more/multi-site-support.md)
+- [ProcessWire CRON module (LazyCron)](docs/more/lazy-cron.md)
 - [ProcessWire PHP Coding Style Guide v1.0](docs/more/coding-style-guide.md)
 
 ## Tutorials
 
-- [ProcessWire Tutorials](docs/tutorials.md)
+- [ProcessWire tutorials](docs/tutorials.md)
 
 ## Other
 
-- [ProcessWire documentation](docs.md)
+- [ProcessWire CMS documentation](docs.md)

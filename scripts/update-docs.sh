@@ -2,6 +2,20 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+VENV_DIR="${ROOT_DIR}/.venv"
+
+# Ensure virtual environment exists
+if [ ! -d "${VENV_DIR}" ]; then
+  echo "Creating virtual environment in ${VENV_DIR}..."
+  python3 -m venv "${VENV_DIR}"
+fi
+
+# Activate virtual environment for this script
+source "${VENV_DIR}/bin/activate"
+
+# Install dependencies locally
+echo "Installing dependencies..."
+pip install -r "${ROOT_DIR}/requirements.txt"
 
 "${ROOT_DIR}/scripts/sync-processwire.sh"
 
