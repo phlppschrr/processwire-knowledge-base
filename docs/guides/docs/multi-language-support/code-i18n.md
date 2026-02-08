@@ -222,16 +222,6 @@ Don't try to internationalize an empty string. It doesn't make any sense, becaus
 
 While ProcessWire doesn't use gettext, it is based on many of the same conventions and what applies for gettext generally applies for translation in ProcessWire. Below is a summary of best practices from the [gettext manual](http://www.gnu.org/software/gettext/manual/html_node/Preparing-Strings.html#Preparing-Strings) and this page.
 
-- Decent English style—minimize slang and abbreviations.
-- Entire sentences—in most languages word order is different than that in English.
-- Split at paragraphs—merge related sentences, but do not include whole page of text in one string.
-- Use format strings instead of string concatenation: `sprintf(__('Replace %s with %s'), $a, $b);` is always better than `__('Replace ') . $a . __(' with ') . $b;`
-- Avoid markup and unusual control characters—do not include tags that surround your text and do not leave URLs for translation, unless they could have version in another language.
-- Do not leave leading or trailing whitespace in a translatable phrase.
-- Keep your translation phrases on 1 line and between 1 pair of quotes.
-- Use only 1 translation function call per line in your source code.
-- Use `$this->_('string')` in your class files, and `__('string')` everywhere else.
-
 
 ## Technical details
 

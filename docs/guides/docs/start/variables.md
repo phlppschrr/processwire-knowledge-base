@@ -8,11 +8,9 @@ ProcessWire provides various API variables to every template file. These variabl
 
 ## Key Points
 
-- [$page](/docs/start/variables/page/)The $page variable is provided to every template, and it contains all the fields specific to the page being viewed. This includes…
-- [$pages](/docs/start/variables/pages/)While the $page variable holds the current page, the $pages variable is where you can get at all the other pages in your site. It…
-- [$input](/docs/start/variables/input/)The $input variable is your connection to GET, POST and COOKIE variables, URL segments, page (pagination) numbers, and more.
-- [$sanitizer](/docs/start/variables/sanitizer/)The $sanitizer functions are provided to fill the most common data sanitization needs with sites developed in ProcessWire. Always…
-- [$session](/docs/start/variables/session/)This API variable provides access to read/write of session variables, login and logout of users, redirects, and more.
+- ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.
+- API variables can be accessed in a few different ways. The most common way is as a variable. Here are a few different ways you might access the same $page API variable (as an example):
+- `$page` the most common access as a variable.
 
 ## Sections
 
@@ -45,14 +43,3 @@ This is just an introduction to some of ProcessWire's API variables. Once you ar
 
 
 ### Some of ProcessWire’s most common API variables
-
-- [$page](/docs/start/variables/page/)The $page variable is provided to every template, and it contains all the fields specific to the page being viewed. This includes…
-- [$pages](/docs/start/variables/pages/)While the $page variable holds the current page, the $pages variable is where you can get at all the other pages in your site. It…
-- [$input](/docs/start/variables/input/)The $input variable is your connection to GET, POST and COOKIE variables, URL segments, page (pagination) numbers, and more.
-- [$sanitizer](/docs/start/variables/sanitizer/)The $sanitizer functions are provided to fill the most common data sanitization needs with sites developed in ProcessWire. Always…
-- [$session](/docs/start/variables/session/)This API variable provides access to read/write of session variables, login and logout of users, redirects, and more.
-- [$fields](/docs/start/variables/fields/)$fields is an API variable that contains all the custom page fields in your site. It provides the API functions available in the…
-- [$user](/docs/start/variables/user/)The $user API variable is your connection to the current user viewing the page.
-- [$log](/docs/start/variables/log/)The $log API variable enables you to create, manage and filter log entries. Log files are stored in /site/assets/logs/.
-- [$templates](/docs/start/variables/templates/)The $templates API variable provides access to all of your site’s templates. Use the $templates API variable to retrieve, modify…
-- [$config](/docs/start/variables/config/)The $config API variable contains all the settings specific to your site configuration. This includes URLs and paths, database…

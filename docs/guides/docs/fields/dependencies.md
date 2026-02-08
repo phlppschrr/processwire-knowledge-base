@@ -42,9 +42,6 @@ This is an old video and shows a much older version of ProcessWire, but still do
 
 ## Types of field dependencies
 
-- **show-if** dependencies enable you to specify a selector string of conditions that must match in order for a field to be shown.
-- **require-if** dependencies enable you to specify a selector string of conditions that must match in order for the field to be required in the form.
-
 
 ### Where you can configure *show-if* dependencies
 

@@ -134,11 +134,6 @@ Using either one of these strategies, we can easily provide links for the user t
 
 In the example above for the language switcher you might have noticed the localUrl($language) function that we used. This is a function that was added by *Language Support Page Names*, for your convenience. Here is a list of all the functions that are enhanced or added, should you ever find them helpful:
 
-- **$page->viewable($language);** This function is always present in ProcessWire, but the *Language Support Page Names* module enhances it to be language aware. It returns whether the page is viewable by the current user in the given $language.
-- **$page->localUrl($language);** Given a $language, this returns the URL for $page in that language.
-- **$page->localName($language);** Given a $language, this returns the name for $page in that language.
-- **$page->localPath($language);** Given a $language, this returns the path for $page in that language.
-
 Of course, these functions work on any Page object, we just use $page as an example.
 
 

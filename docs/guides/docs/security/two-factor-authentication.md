@@ -44,6 +44,3 @@ With two-factor authentication now enabled, the next time you login, you'll get 
 You'll have about 90 seconds to get it right, as it'll accept the current, previous, or next 30-second codes, to account for any time differences or delays between the server and client. If you can't get the code right in a few tries (not likely), it'll abort and make you re-authenticate with your username and password.
 
 To begin using two-factor authentication in ProcessWire, install one of the “Tfa” modules:
-
-- [TOTP 2-factor authentication (TfaTotp)](/docs/security/two-factor-authentication/totp/)TOTP standards for “Time-based One-Time Password”, which is an algorithm that computes a one-time password. It does this with a…
-- [Email/SMS 2-factor authentication (TfaEmail)](/docs/security/two-factor-authentication/email/)This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…

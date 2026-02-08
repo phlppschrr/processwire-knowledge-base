@@ -8,11 +8,7 @@ ProcessWire contains many methods that you may easily hook in order to modify th
 
 ## Key Points
 
-- **Before hooks:** A hook that runs before the hooked method. These hooks typically analyze and/or modify the arguments passed to the hooked method.
-- **After hooks:** A hook that runs after the hooked method. These hooks typically analyze and/or modify the return value of the method.
-- **Replace hooks:** A hook that entirely replaces the hooked method. This is a type of Before hook that signals to ProcessWire that it wants to replace the hooked method.
-- **Method hooks:** A hook that adds a new method to a class. The new method becomes accessible via `$object->method()`.
-- **Property hooks:** A hook that adds a new property/variable to a class. The new property becomes accessible via `$object->property`. Not all ProcessWire classes support property hooks.
+- **URL/path hooks:** A special type of hook that enables the ability to hook into ProcessWire's request URL routing to add your own custom handlers.
 
 ## Sections
 
@@ -27,11 +23,6 @@ ProcessWire contains many methods that you may easily hook in order to modify th
 
 ### What are the different types of hooks in ProcessWire?
 
-- **Before hooks:** A hook that runs before the hooked method. These hooks typically analyze and/or modify the arguments passed to the hooked method.
-- **After hooks:** A hook that runs after the hooked method. These hooks typically analyze and/or modify the return value of the method.
-- **Replace hooks:** A hook that entirely replaces the hooked method. This is a type of Before hook that signals to ProcessWire that it wants to replace the hooked method.
-- **Method hooks:** A hook that adds a new method to a class. The new method becomes accessible via `$object->method()`.
-- **Property hooks:** A hook that adds a new property/variable to a class. The new property becomes accessible via `$object->property`. Not all ProcessWire classes support property hooks.
 - **URL/path hooks:** A special type of hook that enables the ability to hook into ProcessWire's request URL routing to add your own custom handlers.
 
 

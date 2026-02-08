@@ -108,6 +108,10 @@ def get_clean_text(element: Tag, separator: str = "\n") -> str:
             if tag in IGNORE_TAGS:
                 continue
 
+            # Skip block-level tags to avoid mashing their text into paragraphs
+            if tag in BLOCK_TAGS and tag not in ("strong", "b", "em", "i", "a", "code", "span", "br", "u"):
+                 continue
+
             # Handle inline code
             if tag == "code":
                 # For code, we want the raw text, but we wrap it in backticks.
@@ -174,7 +178,7 @@ def extract_blocks_from_soup(soup: BeautifulSoup | Tag) -> list[Block]:
                 text = normalize_text(get_clean_text(element))
                 if text:
                    blocks.append(Block(kind="paragraph", text=text))
-                return
+                # Do NOT return, let it recurse if there are block children (buggy HTML)
 
             # Handle lists
             if tag_name in ("ul", "ol"):
@@ -281,6 +285,68 @@ def parse_html_doc(url: str, html_text: str) -> GuideDoc:
     return GuideDoc(url=url, title=title, summary=summary, blocks=blocks)
 
 
+def maybe_wrap_code(text: str) -> str:
+    """Wrap text in backticks if it looks like code and isn't already."""
+    if not text:
+        return text
+    
+    # If it's already wrapped or looks like markdown formatting, skip
+    if text.startswith("`") or text.startswith("**") or text.startswith("*") or text.startswith("_"):
+        return text
+
+    # Heuristic for code: $var, ->method, function(), etc.
+    # 1. Single tokens with code-like characters
+    if " " not in text:
+        if any(c in text for c in ("$", "->", "(", ")", "::", "[", "]", "=", ">", "<")) or text.endswith(".php"):
+             return f"`{text}`"
+    
+    # 2. Short phrases that start with $ or contain -> (likely assignments or calls)
+    if text.startswith("$") or "->" in text:
+        # Code rarely has many spaces unless it's very verbose
+        if text.count(" ") < 6:
+             return f"`{text}`"
+
+    return text
+
+
+def render_markdown_table(rows: list[list[str]]) -> list[str]:
+    """Render a List of Lists as a Markdown table."""
+    if not rows:
+        return []
+    
+    # Determine max cols
+    max_cols = 0
+    for row in rows:
+        max_cols = max(max_cols, len(row))
+    
+    if max_cols == 0:
+        return []
+
+    # Prepare rows: escape pipes, wrap code, ensure length
+    clean_rows = []
+    for row in rows:
+        clean_row = []
+        for cell in row:
+            val = cell.replace("|", "\\|")
+            val = maybe_wrap_code(val)
+            clean_row.append(val)
+        
+        while len(clean_row) < max_cols:
+            clean_row.append("")
+        clean_rows.append(clean_row)
+
+    lines = []
+    # Header
+    lines.append("| " + " | ".join(clean_rows[0]) + " |")
+    # Separator
+    lines.append("| " + " | ".join(["---"] * max_cols) + " |")
+    # Body
+    for row in clean_rows[1:]:
+        lines.append("| " + " | ".join(row) + " |")
+    
+    return lines
+
+
 def render_table_as_list(rows: list[list[str]], max_rows: int = 40) -> list[str]:
     lines: list[str] = []
     for row in rows[:max_rows]:
@@ -347,7 +413,11 @@ def render_sections(sections: list[tuple[int, str, list[Block]]], max_sections: 
                 lines.append("")
                 continue
             if block.kind == "table" and block.rows:
-                lines.extend(render_table_as_list(block.rows))
+                # Use real table if it has at least 2 columns and looks structured
+                if any(len(row) > 1 for row in block.rows):
+                    lines.extend(render_markdown_table(block.rows))
+                else:
+                    lines.extend(render_table_as_list(block.rows))
                 lines.append("")
                 continue
             if block.kind == "code" and block.text:

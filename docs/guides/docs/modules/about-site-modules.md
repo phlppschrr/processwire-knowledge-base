@@ -8,8 +8,10 @@ This directory /site/modules/ is where you may install additional 3rd party plug
 
 ## Key Points
 
-- [Helloworld](https://processwire.com/modules/helloworld/) demonstrates the basics of modules and hooks.
-- [ProcessHello](https://processwire.com/modules/process-hello/) demonstrates the basics of how to create a Process module. Process modules are those that create applications in the admin.
+- To find and download new modules, see the [modules directory](https://processwire.com/modules/process-hello/).
+- For more information about modules, see the [modules documentation](https://processwire.com/docs/modules/).
+- For discussion and support of modules, see [modules support forum](https://processwire.com/talk/forum/4-modulesplugins/).
+- For commercially developed and supported 1st party modules see [Pro modules](/store/).
 
 ## Sections
 
@@ -49,9 +51,6 @@ If your file system is not writable, you may remove the module files manually fr
 ### Interested in learning how to make your own modules?
 
 We've created two "Hello World" modules as examples for those interested in learning module development:
-
-- [Helloworld](https://processwire.com/modules/helloworld/) demonstrates the basics of modules and hooks.
-- [ProcessHello](https://processwire.com/modules/process-hello/) demonstrates the basics of how to create a Process module. Process modules are those that create applications in the admin.
 
 Also check out the [Modules development forum](https://processwire.com/talk/forum/19-moduleplugin-development/).
 

@@ -8,9 +8,9 @@ CKEditor is the rich text editor used by ProcessWire via the module InputfieldCK
 
 ## Key Points
 
-- Go to **Setup > Fields** and locate a textarea field that you want to use CKEditor (or create a new textarea field).
-- When editing the settings for a textarea field, click the **Details** tab. Change the **Inputfield Type** to **CKEditor** and save.
-- While still editing the field settings, click to the **Input** tab for CKEditor-specific settings you may optionally configure.
+- Multi-language textarea fields
+- Textarea fields in repeaters
+- Any instance where you have multiple (3+) CKEditor textarea fields in the same page editor.
 
 ## Sections
 
@@ -25,10 +25,6 @@ The InputfieldCKEditor module is paired with and relies upon the FieldtypeTextar
 ### Changing a field to use CKEditor
 
 This module is tested and confirmed compatible with both repeaters and multi-language support.
-
-- Go to **Setup > Fields** and locate a textarea field that you want to use CKEditor (or create a new textarea field).
-- When editing the settings for a textarea field, click the **Details** tab. Change the **Inputfield Type** to **CKEditor** and save.
-- While still editing the field settings, click to the **Input** tab for CKEditor-specific settings you may optionally configure.
 
 
 ### Inline Mode vs. Regular Mode
@@ -63,11 +59,6 @@ This is an option that appears in your CKEditor field settings when editing a te
 
 ### Instructions
 
-- Edit your CKEditor field in **Setup > Fields**, and click to the **Input** tab.
-- In the **CKEditor Toolbar** field, enter `Styles` somewhere. Here is an example of what my first toolbar line looks like: `Format, Styles, Bold, Italic, -, RemoveFormat`
-- Open the **Custom Editor JS Styles Set** field, and type or paste in:`mystyles:/site/modules/InputfieldCKEditor/mystyles.js`ProcessWire's [site-default profile](https://github.com/processwire/site-default) comes with a [ready-to-go mystyles.js](https://github.com/processwire/site-default/blob/main/modules/InputfieldCKEditor/mystyles.js) in the path mentioned above. Feel free to use this.The term **mystyles** is just something we made up, and you may use whatever keyword you like, but note you will have to use that same keyword in the file itself. In our example below, you will see where we used the term **mystyles** again. If you want to keep things simple, then just stick with using mystyles.If you don't have a mystyles.js file in /site/modules/InputfieldCKEditor/, then you can copy the one in /wire/modules/Inputfield/InputfieldCKEditor/ to /site/modules/InputfieldCKEditor/mystyles.js.
-- Edit and modify the mystyles.js file to suit your particular needs. Save and you are done.
-
 When editing a page that uses your CKEditor field, you should now see a **Styles** dropdown with the styles you specified in your `mystyles.js` file. Note that you may not initially see all styles in the dropdown, as they may be contextual. For instance, you will not see the styles related to images in the example above unless you are focused on an `img` element in your editor.
 
 You may wish to combine your settings here with a custom editor CSS file covered in the section below.
@@ -89,10 +80,6 @@ You can use this files directory, or you can copy them somewhere else. However, 
 *There is also a Sass (SCSS) file called `contents-inline.scss` which you may prefer to use as your starting point if using Sass. Just remember to compile it to a contents-inline.css file when done. The Sass file is located here: /wire/modules/Inputfield/InputfieldCKEditor/contents-inline.scss*
 
 As you can see above, you will be using a different CSS file depending on whether you need to modify the styles in a regular editor, or an inline-mode editor.
-
-- Modify the file(s) mentioned above and style the elements as you wish, or you may return to this step later. If using more than one CKEditor inline editor in your page, please see the important note below these instructions.
-- Edit your textarea field that uses CKEditor in **Setup > Fields > your_field**. Go to the **Input** tab and see the **Custom Editor CSS File** option. Type or paste in the location of the file you copied in step 1 (relative to web root). Example: `/site/modules/InputfieldCKEditor/contents.css`. Save.
-- Your editor should now be using your new `contents.css` or `contents-inline.css` file rather than the defaults. Note that sometimes it can be difficult to see the results of your new file immediately, especially in regular mode, due to browser caching. If you run into trouble, quit your browser and re-open (or use Incognito mode).
 
 
 ### Important Note About Inline Mode (contents-inline.css)

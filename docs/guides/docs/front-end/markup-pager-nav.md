@@ -164,19 +164,20 @@ Below is a reference of all the options available, along with the defaults.
 
 ### Custom Options Reference
 
-- numPageLinks — Number of links (integer) that the pagination navigation should have. *Default: 10*
-- getVars — Array of GET vars that should appear in the pagination links, or leave empty and populate $input->whitelist (preferred). This is handy with search results that may include custom options that should remain on each paginated page (like sorting order, fields to search, etc.). It is recommended that you populate such GET vars with $input->whitelist($name, $value) rather than specifying them here as an option to MarkupPagerNav. *Default: empty*
-- baseUrl — The baseUrl (string) from which the navigiation item links will start. You should omit this unless you are rending pagination results to some other page. *Default: blank*
-- listMarkup — The markup (string) used to generate the list container. Place "{out}" where the list items will appear. *Default: <ul class='MarkupPagerNav'>{out}</ul> *
-- itemMarkup — The markup (string) used to generate each pagination list item. "{class}" and "{out}" must be specified, as in the default. *Default: <li class='{class}'>{out}</li> *
-- linkMarkup — The markup (string) used to generate each pagination link. "{url}" and "{out}" must be specified, as in the default. *Default: <a href='{url}'><span>{out}</span></a> *
-- nextItemLabel — The label (string) used for the "next" button. *Default: Next *
-- previousItemLabel — The label (string) used for the "previous" button. *Default: Prev *
-- separatorItemLabel — The label (string) used for the list "separator". *Default: … *
-- separatorItemClass — Class attribute (string) for the "separator" list item. *Default: MarkupPagerNavSeparator *
-- nextItemClass — Class attribute (string) used for the "next" button list item. *Default: MarkupPagerNavNext *
-- previousItemClass — Class attribute (string) used for the "previous" button list item. *Default: MarkupPagerNavPrevious *
-- lastItemClass — Class attribute (string) used for the "last" button list item (represented by the last page number). *Default: MarkupPagerNavLast *
-- currentItemClass — Class attribute (string) used for the "current/active/on" button list item (the page number being viewed). *Default: MarkupPagerNavOn *
+| numPageLinks | Number of links (integer) that the pagination navigation should have. *Default: 10* |
+| --- | --- |
+| getVars | Array of GET vars that should appear in the pagination links, or leave empty and populate $input->whitelist (preferred). This is handy with search results that may include custom options that should remain on each paginated page (like sorting order, fields to search, etc.). It is recommended that you populate such GET vars with $input->whitelist($name, $value) rather than specifying them here as an option to MarkupPagerNav. *Default: empty* |
+| baseUrl | The baseUrl (string) from which the navigiation item links will start. You should omit this unless you are rending pagination results to some other page. *Default: blank* |
+| listMarkup | The markup (string) used to generate the list container. Place "{out}" where the list items will appear. *Default: <ul class='MarkupPagerNav'>{out}</ul> * |
+| itemMarkup | The markup (string) used to generate each pagination list item. "{class}" and "{out}" must be specified, as in the default. *Default: <li class='{class}'>{out}</li> * |
+| linkMarkup | The markup (string) used to generate each pagination link. "{url}" and "{out}" must be specified, as in the default. *Default: <a href='{url}'><span>{out}</span></a> * |
+| nextItemLabel | The label (string) used for the "next" button. *Default: Next * |
+| previousItemLabel | The label (string) used for the "previous" button. *Default: Prev * |
+| separatorItemLabel | The label (string) used for the list "separator". *Default: … * |
+| separatorItemClass | Class attribute (string) for the "separator" list item. *Default: MarkupPagerNavSeparator * |
+| nextItemClass | Class attribute (string) used for the "next" button list item. *Default: MarkupPagerNavNext * |
+| previousItemClass | Class attribute (string) used for the "previous" button list item. *Default: MarkupPagerNavPrevious * |
+| lastItemClass | Class attribute (string) used for the "last" button list item (represented by the last page number). *Default: MarkupPagerNavLast * |
+| currentItemClass | Class attribute (string) used for the "current/active/on" button list item (the page number being viewed). *Default: MarkupPagerNavOn * |
 
 For more information please see the [MarkupPagerNav API reference](https://processwire.com/api/ref/markup-pager-nav/) page.

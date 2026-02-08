@@ -101,7 +101,35 @@ Using the above syntax, the selector will match any pages that have a title, nam
 
 ### Selector operators
 
-The [operator](/docs/selectors/operators/) portion of a selector may be one of the following:`=`[Equal to](/docs/selectors/operators/#equal)Given value is the same as value compared to.`!=`[Not equal to](/docs/selectors/operators/#not-equal)Given value is not the same as value compared to.`<`[Less than](/docs/selectors/operators/#less-than)Compared value is less than given value.`>`[Greater than](/docs/selectors/operators/#greater-than)Compared value is greater than given value.`<=`[Less than or equal to](/docs/selectors/operators/#less-than-equal)Compared value is less than or equal to given value.`>=`[Greater than or equal to](/docs/selectors/operators/#greater-than-equal)Compared value is greater than or equal to given value.`*=`[Contains phrase/text](/docs/selectors/operators/#contains)Given phrase or word appears in value compared to.`~=`[Contains all words](/docs/selectors/operators/#contains-words)All given whole words appear in compared value, in any order.`%=`[Contains phrase/text like](/docs/selectors/operators/#contains-like)Phrase or word appears in value compared to, using like.`^=`[Starts with phrase/text](/docs/selectors/operators/#starts)Word or phrase appears at start of compared value.`$=`[Ends with phrase/text](/docs/selectors/operators/#ends)Word or phrase appears at end of compared value.`%^=`[Starts like](#starts-like)Word or phrase appears at beginning of compared value, using like.`%$=`[Ends like](#ends-like)Word or phrase appears at end of compared value, using like.`#=`[Advanced text search](/docs/selectors/operators/#contains-advanced)Match full or partial words and phrases with commands.*`*+=`[Contains phrase expand](/docs/selectors/operators/#contains-expand)Phrase or word appears in value compared to and expand results.*`~*=`[Contains all partial words](/docs/selectors/operators/#contains-words-partial)All whole or partial words appear in value, in any order.*`~~=`[Contains all words live](/docs/selectors/operators/#contains-words-live)All whole words and last partial word appear in any order.*`~%=`[Contain all words like](/docs/selectors/operators/#contains-words-like)All whole or partial words appear in value using like, in any order.*`~+=`[Contains all words expand](/docs/selectors/operators/#contains-words-expand)All whole words appear in value and expand results.*`~|=`[Contains any words](/docs/selectors/operators/#contains-any-words)Any given whole words appear in value, in any order.*`~|*=`[Contains any partial words](/docs/selectors/operators/#contains-any-words-partial)Any given whole or partial words appear in value, in any order.*`~|%=`[Contains any words like](/docs/selectors/operators/#contains-any-words-like)Any given whole or partial words appear in value using like, in any order.*`~|+=`[Contains any words expand](/docs/selectors/operators/#contains-any-words-expand)Any given whole words appear in value and expand results.*`**=`[Contains match](/docs/selectors/operators/#contains-match)Any given whole words match against value.*`**+=`[Contains match expand](/docs/selectors/operators/#contains-match-expand)Any given whole words match against value and expand results.*`&`[Bitwise AND](/docs/selectors/operators/#bitwise-and)Given integer results in positive AND against compared value.
+The [operator](/docs/selectors/operators/) portion of a selector may be one of the following:
+
+| `=` | [Equal to](/docs/selectors/operators/#equal) | Given value is the same as value compared to. |
+| --- | --- | --- |
+| `!=` | [Not equal to](/docs/selectors/operators/#not-equal) | Given value is not the same as value compared to. |
+| `<` | [Less than](/docs/selectors/operators/#less-than) | Compared value is less than given value. |
+| `>` | [Greater than](/docs/selectors/operators/#greater-than) | Compared value is greater than given value. |
+| `<=` | [Less than or equal to](/docs/selectors/operators/#less-than-equal) | Compared value is less than or equal to given value. |
+| `>=` | [Greater than or equal to](/docs/selectors/operators/#greater-than-equal) | Compared value is greater than or equal to given value. |
+| `*=` | [Contains phrase/text](/docs/selectors/operators/#contains) | Given phrase or word appears in value compared to. |
+| `~=` | [Contains all words](/docs/selectors/operators/#contains-words) | All given whole words appear in compared value, in any order. |
+| `%=` | [Contains phrase/text like](/docs/selectors/operators/#contains-like) | Phrase or word appears in value compared to, using like. |
+| `^=` | [Starts with phrase/text](/docs/selectors/operators/#starts) | Word or phrase appears at start of compared value. |
+| `$=` | [Ends with phrase/text](/docs/selectors/operators/#ends) | Word or phrase appears at end of compared value. |
+| `%^=` | [Starts like](#starts-like) | Word or phrase appears at beginning of compared value, using like. |
+| `%$=` | [Ends like](#ends-like) | Word or phrase appears at end of compared value, using like. |
+| `#=` | [Advanced text search](/docs/selectors/operators/#contains-advanced) | Match full or partial words and phrases with commands.* |
+| `*+=` | [Contains phrase expand](/docs/selectors/operators/#contains-expand) | Phrase or word appears in value compared to and expand results.* |
+| `~*=` | [Contains all partial words](/docs/selectors/operators/#contains-words-partial) | All whole or partial words appear in value, in any order.* |
+| `~~=` | [Contains all words live](/docs/selectors/operators/#contains-words-live) | All whole words and last partial word appear in any order.* |
+| `~%=` | [Contain all words like](/docs/selectors/operators/#contains-words-like) | All whole or partial words appear in value using like, in any order.* |
+| `~+=` | [Contains all words expand](/docs/selectors/operators/#contains-words-expand) | All whole words appear in value and expand results.* |
+| `~\|=` | [Contains any words](/docs/selectors/operators/#contains-any-words) | Any given whole words appear in value, in any order.* |
+| `~\|*=` | [Contains any partial words](/docs/selectors/operators/#contains-any-words-partial) | Any given whole or partial words appear in value, in any order.* |
+| `~\|%=` | [Contains any words like](/docs/selectors/operators/#contains-any-words-like) | Any given whole or partial words appear in value using like, in any order.* |
+| `~\|+=` | [Contains any words expand](/docs/selectors/operators/#contains-any-words-expand) | Any given whole words appear in value and expand results.* |
+| `**=` | [Contains match](/docs/selectors/operators/#contains-match) | Any given whole words match against value.* |
+| `**+=` | [Contains match expand](/docs/selectors/operators/#contains-match-expand) | Any given whole words match against value and expand results.* |
+| `&` | [Bitwise AND](/docs/selectors/operators/#bitwise-and) | Given integer results in positive AND against compared value. |
 
 * Operators with asterisk require ProcessWire 3.0.160 or newer.
 
@@ -473,11 +501,6 @@ Currently matching the same (1) row is known to be supported by multi-value Page
 
 Pages with *hidden* or *unpublished* status will not appear in the results from database-querying selectors that can return multiple pages (i.e. functions that return the [PageArray](/api/ref/page-array/) type). For instance `$pages->find()`, `$page->children()`, etc. In addition, pages that the user does not have access to view (via access control in template settings) will also not appear in the results. All of this is usually expected and desirable behavior. However, there may be instances where you actually want to include hidden, unpublished or non-viewable pages in results. To do this, you can use the "include" or "check_access" properties in your selectors.
 
-- `include=hidden` indicates that you will allow hidden pages to be included in the results.
-- `include=unpublished` indicates that you will allow both hidden and unpublished pages to be included in the results.
-- `include=all` indicates that you don't want any exclusions and results may include hidden pages, unpublished pages, or pages that aren't viewable to the user via access control.
-- `check_access=0` indicates that you don't want access control to be a factor in the results returned. Results may include pages that the user can't view as a result of template access control settings. Pages that the user can't view only because they are *unpublished* will not be included. *Hidden* pages won't be included unless you've also used the *include=hidden* selector as well. Note that if you are using *include=all* then there is no reason to use *check_access=0* since it is assumed.
-
 These are best demonstrated by examples:
 
 ```php
@@ -497,10 +520,6 @@ $pages->find("template=skyscraper, check_access=0");
 Note that [$pages->get(…);](/api/ref/pages/get/) is not subject to this behavior (or access control) and `include=all` is assumed. This is because requesting a single page is a very specific request, and not typically used for generating navigation. To put it another way, if you are asking for a single specific page, we assume you mean it. If you want to retrieve a single page where include=all is not assumed, then use [$pages->findOne(…)](/api/ref/pages/find-one/) instead.
 
 The examples above are all focused on including pages in results that wouldn't usually be included, among other pages. But lets say that you want to find only pages that have a hidden, unpublished or locked status. This is a fairly uncommon need, so no need to commit this to memory, but we'll include it for completeness. You can do it by querying the "status" property:
-
-- `status=hidden` indicates that you only want pages with hidden status to be included in the results.
-- `status=unpublished` indicates that you only want pages with unpublished status to be included in the results.
-- `status=locked`** **indicates that you only want pages with locked status to be included in the results.
 
 
 ### API variables in stored selectors
@@ -593,5 +612,3 @@ Find all skyscrapers that mention the phrase "empire state building" in their bo
 ```php
 $pages->get("/cities/")->find("template=skyscraper, body*=empire state building");
 ```
-
-- [Operators](/docs/selectors/operators/)A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=”…

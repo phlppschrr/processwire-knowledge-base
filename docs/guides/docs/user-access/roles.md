@@ -8,8 +8,9 @@ Roles are a way of grouping multiple users and assigning permissions to that gro
 
 ## Key Points
 
-- **guest** The guest role is automatically given to all anonymous site users. You should not give this role any access other than page-view permission.
-- **superuser** The superuser role has all-inclusive access to the site without limitation. This role should only be given to the most trusted users that operate the site. Superuser has all permissions regardless of what you assign with the superuser role.
+- Roles are a way of grouping multiple users and assigning permissions to that group. They are the connection of both users and templates to permissions.
+- A user can have multiple roles, each with different permissions. Though for simple needs, it's common for a user to just have one non-guest role. However, you may assign as many roles to a user as you need, and the user will gain the access and permissions assigned to all of the roles they belong to.
+- ProcessWire includes two permanent roles by default, though you may add as many roles as you like. The two roles included with every ProcessWire installation are:
 
 ## Sections
 
@@ -27,9 +28,6 @@ A user can have multiple roles, each with different permissions. Though for simp
 ### Default roles
 
 ProcessWire includes two permanent roles by default, though you may add as many roles as you like. The two roles included with every ProcessWire installation are:
-
-- **guest** The guest role is automatically given to all anonymous site users. You should not give this role any access other than page-view permission.
-- **superuser** The superuser role has all-inclusive access to the site without limitation. This role should only be given to the most trusted users that operate the site. Superuser has all permissions regardless of what you assign with the superuser role.
 
 
 ### Custom roles
