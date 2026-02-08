@@ -76,21 +76,33 @@ def normalize_text(text: str) -> str:
     return text.strip()
 
 
+
+BLOCK_TAGS = set(HEADING_TAGS.keys()) | {"p", "ul", "ol", "table", "pre", "div", "section", "article", "main", "header", "footer", "nav", "aside", "blockquote", "li", "td", "th", "tr"}
+
+
+def get_clean_text(element: Tag, separator: str = "\n") -> str:
+    """
+    Extract text from tag, respecting SUPPRESS_TOKENS and handling <br>.
+    """
+    texts = []
+    for child in element.children:
+        if isinstance(child, NavigableString):
+            texts.append(str(child))
+        elif isinstance(child, Tag):
+            if child.name.lower() == "br":
+                texts.append(separator)
+                continue
+            if should_suppress(child):
+                continue
+            if child.name.lower() in IGNORE_TAGS:
+                continue
+            # Recurse
+            texts.append(get_clean_text(child, separator))
+    return "".join(texts)
+
+
 def extract_blocks_from_soup(soup: BeautifulSoup | Tag) -> list[Block]:
     blocks: list[Block] = []
-    
-    # We want to traverse elements in document order-ish, but BS4 traversal can be tricky.
-    # For a guide, we usually care about the main content flow.
-    # Let's iterate over immediate children of the main container if possible, 
-    # or just find all relevant tags and order them by position? 
-    # Actually, a recursive traverser that collects blocks is probably best 
-    # but flattening the "readable" content is the goal.
-    
-    # Simple approach: Find all block-level elements we care about in order
-    # This might miss text directly inside a div if we aren't careful, 
-    # but usually guide content is in p, h*, ul, ol, table, pre.
-
-    # Better approach: Recursive walk
     
     def walk(element: Tag | NavigableString):
         if isinstance(element, NavigableString):
@@ -105,47 +117,57 @@ def extract_blocks_from_soup(soup: BeautifulSoup | Tag) -> list[Block]:
             if should_suppress(element):
                 return
 
+            # Handle headings
             if tag_name in HEADING_TAGS:
-                text = normalize_text(element.get_text())
+                text = normalize_text(get_clean_text(element, separator=" "))
                 if text:
                     blocks.append(Block(kind="heading", text=text, level=HEADING_TAGS[tag_name]))
                 return
 
+            # Handle paragraphs
             if tag_name == "p":
-                # Check if it's not just containing an image or empty
-                text = normalize_text(element.get_text())
+                text = normalize_text(get_clean_text(element))
                 if text:
                    blocks.append(Block(kind="paragraph", text=text))
                 return
 
+            # Handle lists
             if tag_name in ("ul", "ol"):
                 items = []
                 for li in element.find_all("li", recursive=False):
-                    text = normalize_text(li.get_text())
+                    if should_suppress(li):
+                        continue
+                    text = normalize_text(get_clean_text(li))
                     if text and text.lower() not in {"learn more", "learn more →", "learn more →"}:
                         items.append(text)
                 if items:
                     blocks.append(Block(kind="list", items=items))
                 return
 
+            # Handle tables
             if tag_name == "table":
                 rows = []
                 for tr in element.find_all("tr"):
+                    if should_suppress(tr):
+                        continue
                     cells = []
                     for td in tr.find_all(["td", "th"]):
-                        cells.append(normalize_text(td.get_text()))
+                        if should_suppress(td):
+                            continue
+                        cells.append(normalize_text(get_clean_text(td)))
                     rows.append(cells)
                 if rows:
                     blocks.append(Block(kind="table", rows=rows))
                 return
 
+            # Handle code blocks
             if tag_name == "pre":
-                text = element.get_text()
+                text = element.get_text() # Preserve whitespace for code
                 if text:
                     blocks.append(Block(kind="code", text=text))
                 return
             
-            # For divs and other containers, recurse
+            # Recurse for containers not handled above
             for child in element.children:
                 walk(child)
 
@@ -192,19 +214,15 @@ def parse_html_doc(url: str, html_text: str) -> GuideDoc:
     meta_desc = extract_meta_description(html_text)
     main_html = extract_main_html(html_text)
     
-    soup = BeautifulSoup(main_html, "html.parser")
-    # If we have h1 in main_html processing, we might want to extract title from there too
+    # Use html5lib to correctly handle implicitly closed tags (like <p>)
+    soup = BeautifulSoup(main_html, "html5lib")
     
     blocks = extract_blocks_from_soup(soup)
     
     title = extract_title(html_text) or url
-    # Try to find h1 in blocks if title is generic? 
-    # Ideally checking blocks for h1 
     
     for block in blocks:
         if block.kind == "heading" and block.level == 1:
-             # Use the first H1 as title if we rely on content title
-             # But extract_title usually gets <title> tag which is safer for metadata
              pass
 
     summary = None
