@@ -1,4 +1,4 @@
-# $fieldtype->___deletePageField(Page $page, Field $field): bool
+# $fieldtype->deletePageField(Page $page, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,11 +10,17 @@ Must delete entries from field's database table that belong to the Page.
 
 ~~~~~
 // basic usage
-$bool = $fieldtype->___deletePageField($page, $field);
+$bool = $fieldtype->deletePageField($page, $field);
 
 // usage with all arguments
-$bool = $fieldtype->___deletePageField(Page $page, Field $field);
+$bool = $fieldtype->deletePageField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deletePageField`
+- Implementation: `___deletePageField`
+- Hook with: `$fieldtype->deletePageField()`
 
 ## Arguments
 

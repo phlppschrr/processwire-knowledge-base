@@ -1,4 +1,4 @@
-# $page->___cloned(Page $copy)
+# $page->cloned(Page $copy)
 
 Source: `wire/core/Page.php`
 
@@ -18,11 +18,17 @@ $wire->addHook('Page::cloned', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___cloned($copy);
+$result = $page->cloned($copy);
 
 // usage with all arguments
-$result = $page->___cloned(Page $copy);
+$result = $page->cloned(Page $copy);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `cloned`
+- Implementation: `___cloned`
+- Hook with: `$page->cloned()`
 
 ## Arguments
 

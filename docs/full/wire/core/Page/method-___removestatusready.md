@@ -1,4 +1,4 @@
-# $page->___removeStatusReady($name, $value)
+# $page->removeStatusReady($name, $value)
 
 Source: `wire/core/Page.php`
 
@@ -21,8 +21,14 @@ $wire->addHook('Page::removeStatusReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___removeStatusReady($name, $value);
+$result = $page->removeStatusReady($name, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `removeStatusReady`
+- Implementation: `___removeStatusReady`
+- Hook with: `$page->removeStatusReady()`
 
 ## Arguments
 

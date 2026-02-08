@@ -1,4 +1,4 @@
-# $selectors->___getCustomVariableValue($name): null|string
+# $selectors->getCustomVariableValue($name): null|string
 
 Source: `wire/core/Selectors.php`
 
@@ -14,8 +14,14 @@ If hooking this method, /site/ready.php is recommended.
 
 ~~~~~
 // basic usage
-$selectors->___getCustomVariableValue($name);
+$selectors->getCustomVariableValue($name);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getCustomVariableValue`
+- Implementation: `___getCustomVariableValue`
+- Hook with: `$selectors->getCustomVariableValue()`
 
 ## Arguments
 

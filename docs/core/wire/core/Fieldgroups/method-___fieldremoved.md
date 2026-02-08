@@ -1,4 +1,4 @@
-# $fieldgroups->___fieldRemoved(Fieldgroup $fieldgroup, Field $field)
+# $fieldgroups->fieldRemoved(Fieldgroup $fieldgroup, Field $field)
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -8,11 +8,17 @@ Hook called when field has been removed from fieldgroup
 
 ~~~~~
 // basic usage
-$result = $fieldgroups->___fieldRemoved($fieldgroup, $field);
+$result = $fieldgroups->fieldRemoved($fieldgroup, $field);
 
 // usage with all arguments
-$result = $fieldgroups->___fieldRemoved(Fieldgroup $fieldgroup, Field $field);
+$result = $fieldgroups->fieldRemoved(Fieldgroup $fieldgroup, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `fieldRemoved`
+- Implementation: `___fieldRemoved`
+- Hook with: `$fieldgroups->fieldRemoved()`
 
 ## Arguments
 

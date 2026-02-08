@@ -1,4 +1,4 @@
-# $pageimage->___filenameDoesNotExist($filename): bool
+# $pageimage->filenameDoesNotExist($filename): bool
 
 Source: `wire/core/Pageimage.php`
 
@@ -12,8 +12,14 @@ such as if your hook copied a file to $filename.
 
 ~~~~~
 // basic usage
-$bool = $pageimage->___filenameDoesNotExist($filename);
+$bool = $pageimage->filenameDoesNotExist($filename);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `filenameDoesNotExist`
+- Implementation: `___filenameDoesNotExist`
+- Hook with: `$pageimage->filenameDoesNotExist()`
 
 ## Arguments
 

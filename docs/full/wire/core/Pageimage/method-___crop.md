@@ -1,4 +1,4 @@
-# $pageimage->___crop($x, $y, $width, $height, $options = array()): Pageimage
+# $pageimage->crop($x, $y, $width, $height, $options = array()): Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -20,11 +20,17 @@ echo "<img src='$crop->url' />";
 
 ~~~~~
 // basic usage
-$pageimage = $pageimage->___crop($x, $y, $width, $height);
+$pageimage = $pageimage->crop($x, $y, $width, $height);
 
 // usage with all arguments
-$pageimage = $pageimage->___crop($x, $y, $width, $height, $options = array());
+$pageimage = $pageimage->crop($x, $y, $width, $height, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `crop`
+- Implementation: `___crop`
+- Hook with: `$pageimage->crop()`
 
 ## Arguments
 

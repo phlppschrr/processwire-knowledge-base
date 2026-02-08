@@ -1,4 +1,4 @@
-# $tfa->___buildAuthCodeForm(): InputfieldForm
+# $tfa->buildAuthCodeForm(): InputfieldForm
 
 Source: `wire/core/Tfa.php`
 
@@ -12,8 +12,14 @@ At minimum it must have an Inputfield with name “tfa_code”
 
 ~~~~~
 // basic usage
-$inputfieldForm = $tfa->___buildAuthCodeForm();
+$inputfieldForm = $tfa->buildAuthCodeForm();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `buildAuthCodeForm`
+- Implementation: `___buildAuthCodeForm`
+- Hook with: `$tfa->buildAuthCodeForm()`
 
 ## Return value
 

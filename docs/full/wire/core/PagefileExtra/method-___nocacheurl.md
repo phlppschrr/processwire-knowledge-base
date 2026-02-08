@@ -1,4 +1,4 @@
-# $pagefileExtra->___noCacheURL($http = false): string
+# $pagefileExtra->noCacheURL($http = false): string
 
 Source: `wire/core/PagefileExtra.php`
 
@@ -8,11 +8,17 @@ Get cache busted URL
 
 ~~~~~
 // basic usage
-$string = $pagefileExtra->___noCacheURL();
+$string = $pagefileExtra->noCacheURL();
 
 // usage with all arguments
-$string = $pagefileExtra->___noCacheURL($http = false);
+$string = $pagefileExtra->noCacheURL($http = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `noCacheURL`
+- Implementation: `___noCacheURL`
+- Hook with: `$pagefileExtra->noCacheURL()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $page->___addedStatus($name, $value)
+# $page->addedStatus($name, $value)
 
 Source: `wire/core/Page.php`
 
@@ -19,8 +19,14 @@ $wire->addHook('Page::addedStatus', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___addedStatus($name, $value);
+$result = $page->addedStatus($name, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `addedStatus`
+- Implementation: `___addedStatus`
+- Hook with: `$page->addedStatus()`
 
 ## Arguments
 

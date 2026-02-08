@@ -8,8 +8,8 @@ Group: [other](group-other.md)
 
 Methods:
 Method: [getExportData()](method-getexportdata.md)
-Method: [___buildExport()](method-___buildexport.md)
-Method: [___buildInputDataForm()](method-___buildinputdataform.md)
-Method: [___buildImport()](method-___buildimport.md)
-Method: [___processImport()](method-___processimport.md)
+Method: [buildExport()](method-___buildexport.md) (hookable)
+Method: [buildInputDataForm()](method-___buildinputdataform.md) (hookable)
+Method: [buildImport()](method-___buildimport.md) (hookable)
+Method: [processImport()](method-___processimport.md) (hookable)
 Method: [saveItem()](method-saveitem.md)

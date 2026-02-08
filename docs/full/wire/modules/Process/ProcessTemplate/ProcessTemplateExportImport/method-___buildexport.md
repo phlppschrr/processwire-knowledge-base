@@ -1,4 +1,4 @@
-# $processTemplateExportImport->___buildExport(): InputfieldForm
+# $processTemplateExportImport->buildExport(): InputfieldForm
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
@@ -8,8 +8,14 @@ Execute export
 
 ~~~~~
 // basic usage
-$inputfieldForm = $processTemplateExportImport->___buildExport();
+$inputfieldForm = $processTemplateExportImport->buildExport();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `buildExport`
+- Implementation: `___buildExport`
+- Hook with: `$processTemplateExportImport->buildExport()`
 
 ## Return value
 

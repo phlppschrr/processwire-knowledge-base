@@ -31,7 +31,7 @@ Groups:
 Group: [other](group-other.md)
 
 Methods:
-Method: [___new()](method-___new.md)
+Method: [new()](method-___new.md) (hookable)
 Method: [send()](method-send.md)
 Method: [sendHTML()](method-sendhtml.md)
 Method: [mail()](method-mail.md)
@@ -39,4 +39,4 @@ Method: [mailHTML()](method-mailhtml.md)
 Method: [to()](method-to.md)
 Method: [from()](method-from.md)
 Method: [subject()](method-subject.md)
-Method: [___isBlacklistEmail()](method-___isblacklistemail.md)
+Method: [isBlacklistEmail()](method-___isblacklistemail.md) (hookable)

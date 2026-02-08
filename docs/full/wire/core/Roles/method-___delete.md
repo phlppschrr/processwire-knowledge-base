@@ -1,4 +1,4 @@
-# $roles->___delete(Page $page, $recursive = false): bool
+# $roles->delete(Page $page, $recursive = false): bool
 
 Source: `wire/core/Roles.php`
 
@@ -8,11 +8,17 @@ Permanently delete a Role
 
 ~~~~~
 // basic usage
-$bool = $roles->___delete($page);
+$bool = $roles->delete($page);
 
 // usage with all arguments
-$bool = $roles->___delete(Page $page, $recursive = false);
+$bool = $roles->delete(Page $page, $recursive = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$roles->delete()`
 
 ## Arguments
 

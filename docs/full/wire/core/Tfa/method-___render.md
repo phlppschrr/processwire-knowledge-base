@@ -1,4 +1,4 @@
-# $tfa->___render(): string
+# $tfa->render(): string
 
 Source: `wire/core/Tfa.php`
 
@@ -10,8 +10,14 @@ Render the code input form
 
 ~~~~~
 // basic usage
-$string = $tfa->___render();
+$string = $tfa->render();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$tfa->render()`
 
 ## Return value
 

@@ -1,4 +1,4 @@
-# $session->___loginFailure($name, $reason)
+# $session->loginFailure($name, $reason)
 
 Source: `wire/core/Session.php`
 
@@ -8,8 +8,14 @@ Login failure method for hooks
 
 ~~~~~
 // basic usage
-$result = $session->___loginFailure($name, $reason);
+$result = $session->loginFailure($name, $reason);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `loginFailure`
+- Implementation: `___loginFailure`
+- Hook with: `$session->loginFailure()`
 
 ## Arguments
 

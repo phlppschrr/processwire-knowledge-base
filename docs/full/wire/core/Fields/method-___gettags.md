@@ -1,4 +1,4 @@
-# $fields->___getTags($getFieldNames = false): array
+# $fields->getTags($getFieldNames = false): array
 
 Source: `wire/core/Fields.php`
 
@@ -14,11 +14,17 @@ Get list of all tags used by fields
 
 ~~~~~
 // basic usage
-$array = $fields->___getTags();
+$array = $fields->getTags();
 
 // usage with all arguments
-$array = $fields->___getTags($getFieldNames = false);
+$array = $fields->getTags($getFieldNames = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getTags`
+- Implementation: `___getTags`
+- Hook with: `$fields->getTags()`
 
 ## Arguments
 

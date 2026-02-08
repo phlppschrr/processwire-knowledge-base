@@ -1,4 +1,4 @@
-# $session->___allowLoginAttempt($name): bool
+# $session->allowLoginAttempt($name): bool
 
 Source: `wire/core/Session.php`
 
@@ -10,8 +10,14 @@ This method does nothing and is purely for hooks to modify return value.
 
 ~~~~~
 // basic usage
-$bool = $session->___allowLoginAttempt($name);
+$bool = $session->allowLoginAttempt($name);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `allowLoginAttempt`
+- Implementation: `___allowLoginAttempt`
+- Hook with: `$session->allowLoginAttempt()`
 
 ## Arguments
 

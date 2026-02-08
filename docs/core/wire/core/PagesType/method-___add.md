@@ -1,4 +1,4 @@
-# $pagesType->___add($name): Page|NullPage
+# $pagesType->add($name): Page|NullPage
 
 Source: `wire/core/PagesType.php`
 
@@ -15,8 +15,14 @@ instead, as hooking this method will not hook relevant pages added directly thro
 
 ~~~~~
 // basic usage
-$page = $pagesType->___add($name);
+$page = $pagesType->add($name);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `add`
+- Implementation: `___add`
+- Hook with: `$pagesType->add()`
 
 ## Arguments
 

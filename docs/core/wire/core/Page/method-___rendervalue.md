@@ -1,4 +1,4 @@
-# $page->___renderValue($value, $file = ''): mixed|string
+# $page->renderValue($value, $file = ''): mixed|string
 
 Source: `wire/core/Page.php`
 
@@ -18,11 +18,17 @@ echo $page->renderValue($images, 'my-images');
 
 ~~~~~
 // basic usage
-$result = $page->___renderValue($value);
+$result = $page->renderValue($value);
 
 // usage with all arguments
-$result = $page->___renderValue($value, $file = '');
+$result = $page->renderValue($value, $file = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderValue`
+- Implementation: `___renderValue`
+- Hook with: `$page->renderValue()`
 
 ## Arguments
 

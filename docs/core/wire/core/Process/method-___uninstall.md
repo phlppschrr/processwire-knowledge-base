@@ -1,4 +1,4 @@
-# $process->___uninstall()
+# $process->uninstall()
 
 Source: `wire/core/Process.php`
 
@@ -12,5 +12,11 @@ See the `Module` interface and the `uninstall` method there for more details.
 
 ~~~~~
 // basic usage
-$result = $process->___uninstall();
+$result = $process->uninstall();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstall`
+- Implementation: `___uninstall`
+- Hook with: `$process->uninstall()`

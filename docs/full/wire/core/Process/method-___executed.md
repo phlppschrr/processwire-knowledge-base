@@ -1,4 +1,4 @@
-# $process->___executed($method)
+# $process->executed($method)
 
 Source: `wire/core/Process.php`
 
@@ -8,8 +8,14 @@ Hookable method automatically called after execute() method has finished.
 
 ~~~~~
 // basic usage
-$result = $process->___executed($method);
+$result = $process->executed($method);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `executed`
+- Implementation: `___executed`
+- Hook with: `$process->executed()`
 
 ## Arguments
 

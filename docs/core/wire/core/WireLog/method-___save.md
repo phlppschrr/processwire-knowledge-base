@@ -1,4 +1,4 @@
-# $wireLog->___save($name, $text, $options = array()): bool
+# $wireLog->save($name, $text, $options = array()): bool
 
 Source: `wire/core/WireLog.php`
 
@@ -19,11 +19,17 @@ $log->save("search", "User searched for: $phrase");
 
 ~~~~~
 // basic usage
-$bool = $wireLog->___save($name, $text);
+$bool = $wireLog->save($name, $text);
 
 // usage with all arguments
-$bool = $wireLog->___save($name, $text, $options = array());
+$bool = $wireLog->save($name, $text, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$wireLog->save()`
 
 ## Arguments
 

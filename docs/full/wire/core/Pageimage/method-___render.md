@@ -1,4 +1,4 @@
-# $pageimage->___render($markup = '', $options = array()): string
+# $pageimage->render($markup = '', $options = array()): string
 
 Source: `wire/core/Pageimage.php`
 
@@ -52,11 +52,17 @@ if($image) {
 
 ~~~~~
 // basic usage
-$string = $pageimage->___render();
+$string = $pageimage->render();
 
 // usage with all arguments
-$string = $pageimage->___render($markup = '', $options = array());
+$string = $pageimage->render($markup = '', $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$pageimage->render()`
 
 ## Arguments
 

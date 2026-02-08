@@ -1,4 +1,4 @@
-# $wire->___changed($what, $old = null, $new = null)
+# $wire->changed($what, $old = null, $new = null)
 
 Source: `wire/core/Wire.php`
 
@@ -12,11 +12,17 @@ Hookable method that is called whenever a property has changed while change trac
 
 ~~~~~
 // basic usage
-$result = $wire->___changed($what);
+$result = $wire->changed($what);
 
 // usage with all arguments
-$result = $wire->___changed($what, $old = null, $new = null);
+$result = $wire->changed($what, $old = null, $new = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `changed`
+- Implementation: `___changed`
+- Hook with: `$wire->changed()`
 
 ## Arguments
 

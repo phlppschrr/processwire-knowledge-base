@@ -1,4 +1,4 @@
-# $templates->___getTags($getTemplateNames = false): array
+# $templates->getTags($getTemplateNames = false): array
 
 Source: `wire/core/Templates.php`
 
@@ -8,11 +8,17 @@ Get all tags used by templates
 
 ~~~~~
 // basic usage
-$array = $templates->___getTags();
+$array = $templates->getTags();
 
 // usage with all arguments
-$array = $templates->___getTags($getTemplateNames = false);
+$array = $templates->getTags($getTemplateNames = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getTags`
+- Implementation: `___getTags`
+- Hook with: `$templates->getTags()`
 
 ## Arguments
 

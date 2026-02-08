@@ -1,4 +1,4 @@
-# $pages->___clone(Page $page, ?Page $parent = null, $recursive = true, $options = array()): Page|NullPage
+# $pages->clone(Page $page, ?Page $parent = null, $recursive = true, $options = array()): Page|NullPage
 
 Source: `wire/core/Pages.php`
 
@@ -30,11 +30,17 @@ $copy->save();
 
 ~~~~~
 // basic usage
-$page = $pages->___clone($page);
+$page = $pages->clone($page);
 
 // usage with all arguments
-$page = $pages->___clone(Page $page, ?Page $parent = null, $recursive = true, $options = array());
+$page = $pages->clone(Page $page, ?Page $parent = null, $recursive = true, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `clone`
+- Implementation: `___clone`
+- Hook with: `$pages->clone()`
 
 ## Arguments
 

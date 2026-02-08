@@ -1,4 +1,4 @@
-# $pagesType->___deleteReady(Page $page)
+# $pagesType->deleteReady(Page $page)
 
 Source: `wire/core/PagesType.php`
 
@@ -8,11 +8,17 @@ Hook called when a page is about to be deleted, but before data has been touched
 
 ~~~~~
 // basic usage
-$result = $pagesType->___deleteReady($page);
+$result = $pagesType->deleteReady($page);
 
 // usage with all arguments
-$result = $pagesType->___deleteReady(Page $page);
+$result = $pagesType->deleteReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteReady`
+- Implementation: `___deleteReady`
+- Hook with: `$pagesType->deleteReady()`
 
 ## Arguments
 

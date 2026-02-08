@@ -1,4 +1,4 @@
-# $pages->___touch($pages, $options = null, $type = 'modified'): bool
+# $pages->touch($pages, $options = null, $type = 'modified'): bool
 
 Source: `wire/core/Pages.php`
 
@@ -24,11 +24,17 @@ $pages->touch($skyscrapers);
 
 ~~~~~
 // basic usage
-$bool = $pages->___touch($pages);
+$bool = $pages->touch($pages);
 
 // usage with all arguments
-$bool = $pages->___touch($pages, $options = null, $type = 'modified');
+$bool = $pages->touch($pages, $options = null, $type = 'modified');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `touch`
+- Implementation: `___touch`
+- Hook with: `$pages->touch()`
 
 ## Arguments
 

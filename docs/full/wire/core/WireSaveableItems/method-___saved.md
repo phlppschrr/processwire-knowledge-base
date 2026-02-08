@@ -1,4 +1,4 @@
-# $wireSaveableItems->___saved(Saveable $item, array $changes = array())
+# $wireSaveableItems->saved(Saveable $item, array $changes = array())
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -10,11 +10,17 @@ Unlike after(save), when this runs, it has already been confirmed that the item 
 
 ~~~~~
 // basic usage
-$result = $wireSaveableItems->___saved($item);
+$result = $wireSaveableItems->saved($item);
 
 // usage with all arguments
-$result = $wireSaveableItems->___saved(Saveable $item, array $changes = array());
+$result = $wireSaveableItems->saved(Saveable $item, array $changes = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saved`
+- Implementation: `___saved`
+- Hook with: `$wireSaveableItems->saved()`
 
 ## Arguments
 

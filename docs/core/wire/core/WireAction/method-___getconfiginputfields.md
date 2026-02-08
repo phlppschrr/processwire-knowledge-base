@@ -1,4 +1,4 @@
-# $wireAction->___getConfigInputfields(): InputfieldWrapper
+# $wireAction->getConfigInputfields(): InputfieldWrapper
 
 Source: `wire/core/WireAction.php`
 
@@ -8,8 +8,14 @@ Return any Inputfields needed to configure this action
 
 ~~~~~
 // basic usage
-$inputfieldWrapper = $wireAction->___getConfigInputfields();
+$inputfieldWrapper = $wireAction->getConfigInputfields();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigInputfields`
+- Implementation: `___getConfigInputfields`
+- Hook with: `$wireAction->getConfigInputfields()`
 
 ## Return value
 

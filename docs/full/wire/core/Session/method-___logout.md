@@ -1,4 +1,4 @@
-# $session->___logout($startNew = true): $this
+# $session->logout($startNew = true): $this
 
 Source: `wire/core/Session.php`
 
@@ -19,11 +19,17 @@ if($input->get('logout')) {
 
 ~~~~~
 // basic usage
-$result = $session->___logout();
+$result = $session->logout();
 
 // usage with all arguments
-$result = $session->___logout($startNew = true);
+$result = $session->logout($startNew = true);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `logout`
+- Implementation: `___logout`
+- Hook with: `$session->logout()`
 
 ## Arguments
 

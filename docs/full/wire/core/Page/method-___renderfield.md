@@ -1,4 +1,4 @@
-# $page->___renderField($fieldName, $file = '', $value = null): mixed|string
+# $page->renderField($fieldName, $file = '', $value = null): mixed|string
 
 Source: `wire/core/Page.php`
 
@@ -34,11 +34,17 @@ echo $page->renderField('images');
 
 ~~~~~
 // basic usage
-$result = $page->___renderField($fieldName);
+$result = $page->renderField($fieldName);
 
 // usage with all arguments
-$result = $page->___renderField($fieldName, $file = '', $value = null);
+$result = $page->renderField($fieldName, $file = '', $value = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderField`
+- Implementation: `___renderField`
+- Hook with: `$page->renderField()`
 
 ## Arguments
 

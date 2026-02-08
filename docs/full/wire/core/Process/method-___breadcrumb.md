@@ -1,4 +1,4 @@
-# $process->___breadcrumb($href, $label): $this
+# $process->breadcrumb($href, $label): $this
 
 Source: `wire/core/Process.php`
 
@@ -14,8 +14,14 @@ $this->breadcrumb("../", "Widgets");
 
 ~~~~~
 // basic usage
-$result = $process->___breadcrumb($href, $label);
+$result = $process->breadcrumb($href, $label);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `breadcrumb`
+- Implementation: `___breadcrumb`
+- Hook with: `$process->breadcrumb()`
 
 ## Arguments
 

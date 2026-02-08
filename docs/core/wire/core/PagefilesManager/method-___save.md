@@ -1,4 +1,4 @@
-# $pagefilesManager->___save()
+# $pagefilesManager->save()
 
 Source: `wire/core/PagefilesManager.php`
 
@@ -13,5 +13,11 @@ Hooks may retrieve the Page object being saved from `$event->object->page`.
 
 ~~~~~
 // basic usage
-$result = $pagefilesManager->___save();
+$result = $pagefilesManager->save();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$pagefilesManager->save()`

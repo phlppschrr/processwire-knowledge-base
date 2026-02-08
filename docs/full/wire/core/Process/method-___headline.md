@@ -1,4 +1,4 @@
-# $process->___headline($headline): $this
+# $process->headline($headline): $this
 
 Source: `wire/core/Process.php`
 
@@ -14,8 +14,14 @@ $this->headline("Hello World");
 
 ~~~~~
 // basic usage
-$result = $process->___headline($headline);
+$result = $process->headline($headline);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `headline`
+- Implementation: `___headline`
+- Hook with: `$process->headline()`
 
 ## Arguments
 

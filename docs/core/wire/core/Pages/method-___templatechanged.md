@@ -1,4 +1,4 @@
-# $pages->___templateChanged(Page $page)
+# $pages->templateChanged(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -10,11 +10,17 @@ Note the previous template is available in the `$page->templatePrevious` propert
 
 ~~~~~
 // basic usage
-$result = $pages->___templateChanged($page);
+$result = $pages->templateChanged($page);
 
 // usage with all arguments
-$result = $pages->___templateChanged(Page $page);
+$result = $pages->templateChanged(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `templateChanged`
+- Implementation: `___templateChanged`
+- Hook with: `$pages->templateChanged()`
 
 ## Arguments
 

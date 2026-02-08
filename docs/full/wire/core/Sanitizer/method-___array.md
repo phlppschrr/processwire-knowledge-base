@@ -1,4 +1,4 @@
-# $sanitizer->___array($value, $sanitizer = null, array $options = array()): array
+# $sanitizer->array($value, $sanitizer = null, array $options = array()): array
 
 Source: `wire/core/Sanitizer.php`
 
@@ -11,11 +11,17 @@ or `delimiters` options.
 
 ~~~~~
 // basic usage
-$array = $sanitizer->___array($value);
+$array = $sanitizer->array($value);
 
 // usage with all arguments
-$array = $sanitizer->___array($value, $sanitizer = null, array $options = array());
+$array = $sanitizer->array($value, $sanitizer = null, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `array`
+- Implementation: `___array`
+- Hook with: `$sanitizer->array()`
 
 ## Arguments
 

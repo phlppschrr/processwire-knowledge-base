@@ -1,4 +1,4 @@
-# $wireSaveableItems->___save(Saveable $item): bool
+# $wireSaveableItems->save(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -8,11 +8,17 @@ Save the provided item to database
 
 ~~~~~
 // basic usage
-$bool = $wireSaveableItems->___save($item);
+$bool = $wireSaveableItems->save($item);
 
 // usage with all arguments
-$bool = $wireSaveableItems->___save(Saveable $item);
+$bool = $wireSaveableItems->save(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$wireSaveableItems->save()`
 
 ## Arguments
 

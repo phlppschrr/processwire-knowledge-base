@@ -1,4 +1,4 @@
-# $wireHttp->___sendFile($filename, array $options = array(), array $headers = array()): int
+# $wireHttp->sendFile($filename, array $options = array(), array $headers = array()): int
 
 Source: `wire/core/WireHttp.php`
 
@@ -13,11 +13,17 @@ This function throws a `WireException` if the file can't be sent for some reason
 
 ~~~~~
 // basic usage
-$int = $wireHttp->___sendFile($filename);
+$int = $wireHttp->sendFile($filename);
 
 // usage with all arguments
-$int = $wireHttp->___sendFile($filename, array $options = array(), array $headers = array());
+$int = $wireHttp->sendFile($filename, array $options = array(), array $headers = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sendFile`
+- Implementation: `___sendFile`
+- Hook with: `$wireHttp->sendFile()`
 
 ## Arguments
 

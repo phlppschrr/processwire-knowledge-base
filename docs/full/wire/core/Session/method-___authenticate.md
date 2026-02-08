@@ -1,4 +1,4 @@
-# $session->___authenticate(User $user, $pass): bool
+# $session->authenticate(User $user, $pass): bool
 
 Source: `wire/core/Session.php`
 
@@ -8,11 +8,17 @@ Return true or false whether the user authenticated with the supplied password
 
 ~~~~~
 // basic usage
-$bool = $session->___authenticate($user, $pass);
+$bool = $session->authenticate($user, $pass);
 
 // usage with all arguments
-$bool = $session->___authenticate(User $user, $pass);
+$bool = $session->authenticate(User $user, $pass);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `authenticate`
+- Implementation: `___authenticate`
+- Hook with: `$session->authenticate()`
 
 ## Arguments
 

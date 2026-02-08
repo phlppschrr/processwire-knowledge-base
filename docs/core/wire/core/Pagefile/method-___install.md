@@ -1,4 +1,4 @@
-# $pagefile->___install($filename)
+# $pagefile->install($filename)
 
 Source: `wire/core/Pagefile.php`
 
@@ -11,8 +11,14 @@ The given $filename may be local (path) or external (URL).
 
 ~~~~~
 // basic usage
-$result = $pagefile->___install($filename);
+$result = $pagefile->install($filename);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$pagefile->install()`
 
 ## Arguments
 

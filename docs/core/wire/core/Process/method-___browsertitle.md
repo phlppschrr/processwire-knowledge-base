@@ -1,4 +1,4 @@
-# $process->___browserTitle($title): $this
+# $process->browserTitle($title): $this
 
 Source: `wire/core/Process.php`
 
@@ -14,8 +14,14 @@ $this->browserTitle("Hello World");
 
 ~~~~~
 // basic usage
-$result = $process->___browserTitle($title);
+$result = $process->browserTitle($title);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `browserTitle`
+- Implementation: `___browserTitle`
+- Hook with: `$process->browserTitle()`
 
 ## Arguments
 

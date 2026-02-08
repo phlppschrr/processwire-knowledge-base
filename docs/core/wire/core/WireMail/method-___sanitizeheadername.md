@@ -1,4 +1,4 @@
-# $wireMail->___sanitizeHeaderName($name): string
+# $wireMail->sanitizeHeaderName($name): string
 
 Source: `wire/core/WireMail.php`
 
@@ -8,8 +8,14 @@ Sanitize and normalize a header name
 
 ~~~~~
 // basic usage
-$string = $wireMail->___sanitizeHeaderName($name);
+$string = $wireMail->sanitizeHeaderName($name);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sanitizeHeaderName`
+- Implementation: `___sanitizeHeaderName`
+- Hook with: `$wireMail->sanitizeHeaderName()`
 
 ## Arguments
 

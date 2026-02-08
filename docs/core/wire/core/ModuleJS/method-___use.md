@@ -1,4 +1,4 @@
-# $moduleJS->___use($name): $this
+# $moduleJS->use($name): $this
 
 Source: `wire/core/ModuleJS.php`
 
@@ -8,8 +8,14 @@ Use an extra named component
 
 ~~~~~
 // basic usage
-$result = $moduleJS->___use($name);
+$result = $moduleJS->use($name);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `use`
+- Implementation: `___use`
+- Hook with: `$moduleJS->use()`
 
 ## Arguments
 

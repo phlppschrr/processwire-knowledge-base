@@ -1,4 +1,4 @@
-# $wireMail->___htmlToText($html): string
+# $wireMail->htmlToText($html): string
 
 Source: `wire/core/WireMail.php`
 
@@ -8,8 +8,14 @@ Convert HTML mail body to TEXT mail body
 
 ~~~~~
 // basic usage
-$string = $wireMail->___htmlToText($html);
+$string = $wireMail->htmlToText($html);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `htmlToText`
+- Implementation: `___htmlToText`
+- Hook with: `$wireMail->htmlToText()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $notices->___renderText(): string
+# $notices->renderText(): string
 
 Source: `wire/core/Notices.php`
 
@@ -11,8 +11,14 @@ through `$sanitizer->entities()` or `htmlspecialchars()` before outputting.
 
 ~~~~~
 // basic usage
-$string = $notices->___renderText();
+$string = $notices->renderText();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderText`
+- Implementation: `___renderText`
+- Hook with: `$notices->renderText()`
 
 ## Return value
 

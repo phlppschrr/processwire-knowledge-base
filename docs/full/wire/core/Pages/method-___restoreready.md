@@ -1,4 +1,4 @@
-# $pages->___restoreReady(Page $page)
+# $pages->restoreReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called when a page is about to be moved OUT of the trash (restored)
 
 ~~~~~
 // basic usage
-$result = $pages->___restoreReady($page);
+$result = $pages->restoreReady($page);
 
 // usage with all arguments
-$result = $pages->___restoreReady(Page $page);
+$result = $pages->restoreReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `restoreReady`
+- Implementation: `___restoreReady`
+- Hook with: `$pages->restoreReady()`
 
 ## Arguments
 

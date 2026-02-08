@@ -1,4 +1,4 @@
-# $session->___isValidSession($userID): bool
+# $session->isValidSession($userID): bool
 
 Source: `wire/core/Session.php`
 
@@ -10,8 +10,14 @@ These items may be disabled at the config level, in which case this method alway
 
 ~~~~~
 // basic usage
-$bool = $session->___isValidSession($userID);
+$bool = $session->isValidSession($userID);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `isValidSession`
+- Implementation: `___isValidSession`
+- Hook with: `$session->isValidSession()`
 
 ## Arguments
 

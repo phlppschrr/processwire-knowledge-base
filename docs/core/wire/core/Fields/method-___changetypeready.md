@@ -1,4 +1,4 @@
-# $fields->___changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType)
+# $fields->changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType)
 
 Source: `wire/core/Fields.php`
 
@@ -8,11 +8,17 @@ Hook called right before a field is about to change type
 
 ~~~~~
 // basic usage
-$result = $fields->___changeTypeReady($item, $fromType, $toType);
+$result = $fields->changeTypeReady($item, $fromType, $toType);
 
 // usage with all arguments
-$result = $fields->___changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType);
+$result = $fields->changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `changeTypeReady`
+- Implementation: `___changeTypeReady`
+- Hook with: `$fields->changeTypeReady()`
 
 ## Arguments
 

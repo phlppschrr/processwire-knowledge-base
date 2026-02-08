@@ -1,4 +1,4 @@
-# $pages->___statusChanged(Page $page)
+# $pages->statusChanged(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -10,11 +10,17 @@ Previous status may be accessed at `$page->statusPrevious`.
 
 ~~~~~
 // basic usage
-$result = $pages->___statusChanged($page);
+$result = $pages->statusChanged($page);
 
 // usage with all arguments
-$result = $pages->___statusChanged(Page $page);
+$result = $pages->statusChanged(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `statusChanged`
+- Implementation: `___statusChanged`
+- Hook with: `$pages->statusChanged()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $page->___renameReady($oldName, $newName)
+# $page->renameReady($oldName, $newName)
 
 Source: `wire/core/Page.php`
 
@@ -18,8 +18,14 @@ $wire->addHook('Page::renameReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___renameReady($oldName, $newName);
+$result = $page->renameReady($oldName, $newName);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renameReady`
+- Implementation: `___renameReady`
+- Hook with: `$page->renameReady()`
 
 ## Arguments
 

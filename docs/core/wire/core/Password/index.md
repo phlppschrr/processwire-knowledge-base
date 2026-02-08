@@ -17,7 +17,7 @@ Methods:
 Method: [matches()](method-matches.md)
 Method: [__get()](method-__get.md)
 Method: [__set()](method-__set.md)
-Method: [___setPass()](method-___setpass.md)
+Method: [setPass()](method-___setpass.md) (hookable)
 Method: [salt()](method-salt.md)
 Method: [randomBase64String()](method-randombase64string.md)
 Method: [isBlowfish()](method-isblowfish.md)

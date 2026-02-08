@@ -1,4 +1,4 @@
-# $page->___edit($key = null, $markup = null, $modal = null): string|bool|mixed
+# $page->edit($key = null, $markup = null, $modal = null): string|bool|mixed
 
 Source: `wire/core/Page.php`
 
@@ -30,11 +30,17 @@ $value = $page->edit('field_name');
 
 ~~~~~
 // basic usage
-$string = $page->___edit();
+$string = $page->edit();
 
 // usage with all arguments
-$string = $page->___edit($key = null, $markup = null, $modal = null);
+$string = $page->edit($key = null, $markup = null, $modal = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `edit`
+- Implementation: `___edit`
+- Hook with: `$page->edit()`
 
 ## Arguments
 

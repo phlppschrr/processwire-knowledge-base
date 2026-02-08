@@ -1,4 +1,4 @@
-# $page->___moveReady($oldParent, $newParent)
+# $page->moveReady($oldParent, $newParent)
 
 Source: `wire/core/Page.php`
 
@@ -19,8 +19,14 @@ $wire->addHook('Page::moveReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___moveReady($oldParent, $newParent);
+$result = $page->moveReady($oldParent, $newParent);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `moveReady`
+- Implementation: `___moveReady`
+- Hook with: `$page->moveReady()`
 
 ## Arguments
 

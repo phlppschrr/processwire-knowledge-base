@@ -1,4 +1,4 @@
-# $fieldtype->___loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null
+# $fieldtype->loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null
 
 Source: `wire/core/Fieldtype.php`
 
@@ -13,11 +13,17 @@ As far as core Fieldtypes go, this one is only applicable to FieldtypeMulti deri
 
 ~~~~~
 // basic usage
-$result = $fieldtype->___loadPageFieldFilter($page, $field, $selector);
+$result = $fieldtype->loadPageFieldFilter($page, $field, $selector);
 
 // usage with all arguments
-$result = $fieldtype->___loadPageFieldFilter(Page $page, Field $field, $selector);
+$result = $fieldtype->loadPageFieldFilter(Page $page, Field $field, $selector);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `loadPageFieldFilter`
+- Implementation: `___loadPageFieldFilter`
+- Hook with: `$fieldtype->loadPageFieldFilter()`
 
 ## Arguments
 

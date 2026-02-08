@@ -1,4 +1,4 @@
-# $page->___renderPage(array $options = []): string|mixed
+# $page->renderPage(array $options = []): string|mixed
 
 Source: `wire/core/Page.php`
 
@@ -39,11 +39,17 @@ $wire->addHookAfter('Page::renderPage', function(HookEvent $event) {
 
 ~~~~~
 // basic usage
-$string = $page->___renderPage();
+$string = $page->renderPage();
 
 // usage with all arguments
-$string = $page->___renderPage(array $options = []);
+$string = $page->renderPage(array $options = []);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderPage`
+- Implementation: `___renderPage`
+- Hook with: `$page->renderPage()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $modules->___refresh($showMessages = false)
+# $modules->refresh($showMessages = false)
 
 Source: `wire/core/Modules.php`
 
@@ -10,11 +10,17 @@ This forces the modules file and information cache to be re-created.
 
 ~~~~~
 // basic usage
-$result = $modules->___refresh();
+$result = $modules->refresh();
 
 // usage with all arguments
-$result = $modules->___refresh($showMessages = false);
+$result = $modules->refresh($showMessages = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `refresh`
+- Implementation: `___refresh`
+- Hook with: `$modules->refresh()`
 
 ## Arguments
 

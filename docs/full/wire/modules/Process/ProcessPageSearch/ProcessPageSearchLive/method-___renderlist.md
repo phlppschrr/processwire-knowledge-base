@@ -1,4 +1,4 @@
-# $processPageSearchLive->___renderList(array $items, $prefix = 'pw-search', $class = 'list'): string
+# $processPageSearchLive->renderList(array $items, $prefix = 'pw-search', $class = 'list'): string
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -8,11 +8,17 @@ Render “view all” list
 
 ~~~~~
 // basic usage
-$string = $processPageSearchLive->___renderList($items);
+$string = $processPageSearchLive->renderList($items);
 
 // usage with all arguments
-$string = $processPageSearchLive->___renderList(array $items, $prefix = 'pw-search', $class = 'list');
+$string = $processPageSearchLive->renderList(array $items, $prefix = 'pw-search', $class = 'list');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderList`
+- Implementation: `___renderList`
+- Hook with: `$processPageSearchLive->renderList()`
 
 ## Arguments
 

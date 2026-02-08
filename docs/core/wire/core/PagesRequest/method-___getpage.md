@@ -1,4 +1,4 @@
-# $pagesRequest->___getPage(array $options = array()): Page|NullPage
+# $pagesRequest->getPage(array $options = array()): Page|NullPage
 
 Source: `wire/core/PagesRequest.php`
 
@@ -13,11 +13,17 @@ Get the requested page
 
 ~~~~~
 // basic usage
-$page = $pagesRequest->___getPage();
+$page = $pagesRequest->getPage();
 
 // usage with all arguments
-$page = $pagesRequest->___getPage(array $options = array());
+$page = $pagesRequest->getPage(array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getPage`
+- Implementation: `___getPage`
+- Hook with: `$pagesRequest->getPage()`
 
 ## Arguments
 

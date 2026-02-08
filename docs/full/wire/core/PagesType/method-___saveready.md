@@ -1,4 +1,4 @@
-# $pagesType->___saveReady(Page $page): array
+# $pagesType->saveReady(Page $page): array
 
 Source: `wire/core/PagesType.php`
 
@@ -8,11 +8,17 @@ Hook called just before a page of this type is saved
 
 ~~~~~
 // basic usage
-$array = $pagesType->___saveReady($page);
+$array = $pagesType->saveReady($page);
 
 // usage with all arguments
-$array = $pagesType->___saveReady(Page $page);
+$array = $pagesType->saveReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveReady`
+- Implementation: `___saveReady`
+- Hook with: `$pagesType->saveReady()`
 
 ## Arguments
 

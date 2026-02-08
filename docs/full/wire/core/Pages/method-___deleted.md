@@ -1,4 +1,4 @@
-# $pages->___deleted(Page $page, array $options = array())
+# $pages->deleted(Page $page, array $options = array())
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called after a page and its data have been deleted
 
 ~~~~~
 // basic usage
-$result = $pages->___deleted($page);
+$result = $pages->deleted($page);
 
 // usage with all arguments
-$result = $pages->___deleted(Page $page, array $options = array());
+$result = $pages->deleted(Page $page, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleted`
+- Implementation: `___deleted`
+- Hook with: `$pages->deleted()`
 
 ## Arguments
 

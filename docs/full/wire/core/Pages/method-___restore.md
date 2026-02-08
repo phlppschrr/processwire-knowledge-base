@@ -1,4 +1,4 @@
-# $pages->___restore(Page $page, $save = true): bool
+# $pages->restore(Page $page, $save = true): bool
 
 Source: `wire/core/Pages.php`
 
@@ -20,11 +20,17 @@ $pages->restore($trashedPage);
 
 ~~~~~
 // basic usage
-$bool = $pages->___restore($page);
+$bool = $pages->restore($page);
 
 // usage with all arguments
-$bool = $pages->___restore(Page $page, $save = true);
+$bool = $pages->restore(Page $page, $save = true);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `restore`
+- Implementation: `___restore`
+- Hook with: `$pages->restore()`
 
 ## Arguments
 

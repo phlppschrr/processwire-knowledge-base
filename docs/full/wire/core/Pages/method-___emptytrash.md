@@ -1,4 +1,4 @@
-# $pages->___emptyTrash(array $options = array()): int|array
+# $pages->emptyTrash(array $options = array()): int|array
 
 Source: `wire/core/Pages.php`
 
@@ -18,11 +18,17 @@ $pages->emptyTrash();
 
 ~~~~~
 // basic usage
-$int = $pages->___emptyTrash();
+$int = $pages->emptyTrash();
 
 // usage with all arguments
-$int = $pages->___emptyTrash(array $options = array());
+$int = $pages->emptyTrash(array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `emptyTrash`
+- Implementation: `___emptyTrash`
+- Hook with: `$pages->emptyTrash()`
 
 ## Arguments
 

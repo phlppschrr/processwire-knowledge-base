@@ -1,4 +1,4 @@
-# $wireHttp->___download($fromURL, $toFile, array $options = array()): string
+# $wireHttp->download($fromURL, $toFile, array $options = array()): string
 
 Source: `wire/core/WireHttp.php`
 
@@ -11,11 +11,17 @@ unless you specify the `use` option in `$options`.
 
 ~~~~~
 // basic usage
-$string = $wireHttp->___download($fromURL, $toFile);
+$string = $wireHttp->download($fromURL, $toFile);
 
 // usage with all arguments
-$string = $wireHttp->___download($fromURL, $toFile, array $options = array());
+$string = $wireHttp->download($fromURL, $toFile, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `download`
+- Implementation: `___download`
+- Hook with: `$wireHttp->download()`
 
 ## Arguments
 

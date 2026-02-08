@@ -1,4 +1,4 @@
-# $fieldtype->___sleepValue(Page $page, Field $field, $value): string|int|float|array
+# $fieldtype->sleepValue(Page $page, Field $field, $value): string|int|float|array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -14,11 +14,17 @@ Returned value must be either an array, number, or string.
 
 ~~~~~
 // basic usage
-$string = $fieldtype->___sleepValue($page, $field, $value);
+$string = $fieldtype->sleepValue($page, $field, $value);
 
 // usage with all arguments
-$string = $fieldtype->___sleepValue(Page $page, Field $field, $value);
+$string = $fieldtype->sleepValue(Page $page, Field $field, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sleepValue`
+- Implementation: `___sleepValue`
+- Hook with: `$fieldtype->sleepValue()`
 
 ## Arguments
 

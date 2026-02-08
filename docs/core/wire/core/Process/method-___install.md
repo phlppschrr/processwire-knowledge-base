@@ -1,4 +1,4 @@
-# $process->___install()
+# $process->install()
 
 Source: `wire/core/Process.php`
 
@@ -13,5 +13,11 @@ See the `Module` interface and the `install` method there for more details.
 
 ~~~~~
 // basic usage
-$result = $process->___install();
+$result = $process->install();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$process->install()`

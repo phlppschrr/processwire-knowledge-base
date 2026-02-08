@@ -1,4 +1,4 @@
-# $fileCompilerModule->___uninstall()
+# $fileCompilerModule->uninstall()
 
 Source: `wire/core/FileCompilerModule.php`
 
@@ -8,5 +8,11 @@ Perform any uninstall procedures specific to this module, if needed.
 
 ~~~~~
 // basic usage
-$result = $fileCompilerModule->___uninstall();
+$result = $fileCompilerModule->uninstall();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstall`
+- Implementation: `___uninstall`
+- Hook with: `$fileCompilerModule->uninstall()`

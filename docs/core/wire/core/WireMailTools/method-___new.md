@@ -1,4 +1,4 @@
-# $wireMailTools->___new($options = array()): WireMail
+# $wireMailTools->new($options = array()): WireMail
 
 Source: `wire/core/WireMailTools.php`
 
@@ -19,11 +19,17 @@ $numSent = $message->send();
 
 ~~~~~
 // basic usage
-$wireMail = $wireMailTools->___new();
+$wireMail = $wireMailTools->new();
 
 // usage with all arguments
-$wireMail = $wireMailTools->___new($options = array());
+$wireMail = $wireMailTools->new($options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `new`
+- Implementation: `___new`
+- Hook with: `$wireMailTools->new()`
 
 ## Arguments
 

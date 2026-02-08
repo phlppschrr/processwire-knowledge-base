@@ -1,4 +1,4 @@
-# $pages->___saved(Page $page, array $changes = array(), $values = array())
+# $pages->saved(Page $page, array $changes = array(), $values = array())
 
 Source: `wire/core/Pages.php`
 
@@ -11,11 +11,17 @@ Whereas `Pages::save` hooks occur after. In most cases, the distinction does not
 
 ~~~~~
 // basic usage
-$result = $pages->___saved($page);
+$result = $pages->saved($page);
 
 // usage with all arguments
-$result = $pages->___saved(Page $page, array $changes = array(), $values = array());
+$result = $pages->saved(Page $page, array $changes = array(), $values = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saved`
+- Implementation: `___saved`
+- Hook with: `$pages->saved()`
 
 ## Arguments
 

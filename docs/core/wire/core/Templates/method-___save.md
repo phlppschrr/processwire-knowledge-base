@@ -1,4 +1,4 @@
-# $templates->___save(Saveable $item): bool
+# $templates->save(Saveable $item): bool
 
 Source: `wire/core/Templates.php`
 
@@ -14,11 +14,17 @@ $templates->save($template);
 
 ~~~~~
 // basic usage
-$bool = $templates->___save($item);
+$bool = $templates->save($item);
 
 // usage with all arguments
-$bool = $templates->___save(Saveable $item);
+$bool = $templates->save(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$templates->save()`
 
 ## Arguments
 

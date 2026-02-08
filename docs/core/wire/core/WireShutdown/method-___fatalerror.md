@@ -1,4 +1,4 @@
-# $wireShutdown->___fatalError($error)
+# $wireShutdown->fatalError($error)
 
 Source: `wire/core/WireShutdown.php`
 
@@ -8,8 +8,14 @@ Hook called when fatal error received by shutdown()
 
 ~~~~~
 // basic usage
-$result = $wireShutdown->___fatalError($error);
+$result = $wireShutdown->fatalError($error);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `fatalError`
+- Implementation: `___fatalError`
+- Hook with: `$wireShutdown->fatalError()`
 
 ## Arguments
 

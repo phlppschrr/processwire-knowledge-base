@@ -1,4 +1,4 @@
-# $pages->___find($selector, $options = array()): PageArray|array
+# $pages->find($selector, $options = array()): PageArray|array
 
 Source: `wire/core/Pages.php`
 
@@ -24,11 +24,17 @@ $skyscrapers = $pages->find("template=building, floors>=25");
 
 ~~~~~
 // basic usage
-$items = $pages->___find($selector);
+$items = $pages->find($selector);
 
 // usage with all arguments
-$items = $pages->___find($selector, $options = array());
+$items = $pages->find($selector, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `find`
+- Implementation: `___find`
+- Hook with: `$pages->find()`
 
 ## Arguments
 

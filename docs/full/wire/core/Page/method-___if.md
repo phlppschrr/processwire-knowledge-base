@@ -1,4 +1,4 @@
-# $page->___if($key, $yes = '', $no = ''): mixed|string|bool
+# $page->if($key, $yes = '', $no = ''): mixed|string|bool
 
 Source: `wire/core/Page.php`
 
@@ -84,11 +84,17 @@ echo $page->if("images", function($val) { return "<img src='{$val->first->url}'>
 
 ~~~~~
 // basic usage
-$result = $page->___if($key);
+$result = $page->if($key);
 
 // usage with all arguments
-$result = $page->___if($key, $yes = '', $no = '');
+$result = $page->if($key, $yes = '', $no = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `if`
+- Implementation: `___if`
+- Hook with: `$page->if()`
 
 ## Arguments
 

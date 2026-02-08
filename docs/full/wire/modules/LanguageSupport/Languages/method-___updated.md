@@ -1,4 +1,4 @@
-# $languages->___updated(Page $language, $what)
+# $languages->updated(Page $language, $what)
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -8,11 +8,17 @@ Hook called when a language is added or deleted
 
 ~~~~~
 // basic usage
-$result = $languages->___updated($language, $what);
+$result = $languages->updated($language, $what);
 
 // usage with all arguments
-$result = $languages->___updated(Page $language, $what);
+$result = $languages->updated(Page $language, $what);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `updated`
+- Implementation: `___updated`
+- Hook with: `$languages->updated()`
 
 ## Arguments
 

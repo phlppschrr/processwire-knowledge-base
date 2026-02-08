@@ -1,4 +1,4 @@
-# $wireSaveableItems->___saveReady(Saveable $item)
+# $wireSaveableItems->saveReady(Saveable $item)
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -10,11 +10,17 @@ Unlike before(save), when this runs, it has already been confirmed that the item
 
 ~~~~~
 // basic usage
-$result = $wireSaveableItems->___saveReady($item);
+$result = $wireSaveableItems->saveReady($item);
 
 // usage with all arguments
-$result = $wireSaveableItems->___saveReady(Saveable $item);
+$result = $wireSaveableItems->saveReady(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveReady`
+- Implementation: `___saveReady`
+- Hook with: `$wireSaveableItems->saveReady()`
 
 ## Arguments
 

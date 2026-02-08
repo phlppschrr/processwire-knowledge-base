@@ -1,4 +1,4 @@
-# $processPageListActions->___processAction(Page $page, $action): array
+# $processPageListActions->processAction(Page $page, $action): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
@@ -8,11 +8,17 @@ Process action
 
 ~~~~~
 // basic usage
-$array = $processPageListActions->___processAction($page, $action);
+$array = $processPageListActions->processAction($page, $action);
 
 // usage with all arguments
-$array = $processPageListActions->___processAction(Page $page, $action);
+$array = $processPageListActions->processAction(Page $page, $action);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `processAction`
+- Implementation: `___processAction`
+- Hook with: `$processPageListActions->processAction()`
 
 ## Arguments
 

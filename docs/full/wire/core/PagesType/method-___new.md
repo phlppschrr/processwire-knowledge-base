@@ -1,4 +1,4 @@
-# $pagesType->___new(array $options = []): Page
+# $pagesType->new(array $options = []): Page
 
 Source: `wire/core/PagesType.php`
 
@@ -8,11 +8,17 @@ Create new instance of this page type
 
 ~~~~~
 // basic usage
-$page = $pagesType->___new();
+$page = $pagesType->new();
 
 // usage with all arguments
-$page = $pagesType->___new(array $options = []);
+$page = $pagesType->new(array $options = []);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `new`
+- Implementation: `___new`
+- Hook with: `$pagesType->new()`
 
 ## Arguments
 

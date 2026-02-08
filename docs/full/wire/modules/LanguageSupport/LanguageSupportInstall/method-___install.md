@@ -1,4 +1,4 @@
-# $languageSupportInstall->___install()
+# $languageSupportInstall->install()
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 
@@ -8,5 +8,11 @@ Install the module and related modules
 
 ~~~~~
 // basic usage
-$result = $languageSupportInstall->___install();
+$result = $languageSupportInstall->install();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$languageSupportInstall->install()`

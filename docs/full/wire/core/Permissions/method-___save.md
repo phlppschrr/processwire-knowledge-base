@@ -1,4 +1,4 @@
-# $permissions->___save(Page $page): bool
+# $permissions->save(Page $page): bool
 
 Source: `wire/core/Permissions.php`
 
@@ -8,11 +8,17 @@ Save a Permission
 
 ~~~~~
 // basic usage
-$bool = $permissions->___save($page);
+$bool = $permissions->save($page);
 
 // usage with all arguments
-$bool = $permissions->___save(Page $page);
+$bool = $permissions->save(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$permissions->save()`
 
 ## Arguments
 

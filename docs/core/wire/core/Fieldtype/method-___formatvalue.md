@@ -1,4 +1,4 @@
-# $fieldtype->___formatValue(Page $page, Field $field, $value): mixed
+# $fieldtype->formatValue(Page $page, Field $field, $value): mixed
 
 Source: `wire/core/Fieldtype.php`
 
@@ -13,11 +13,17 @@ Fieldtype modules don't need to implement this unless it's applicable.
 
 ~~~~~
 // basic usage
-$result = $fieldtype->___formatValue($page, $field, $value);
+$result = $fieldtype->formatValue($page, $field, $value);
 
 // usage with all arguments
-$result = $fieldtype->___formatValue(Page $page, Field $field, $value);
+$result = $fieldtype->formatValue(Page $page, Field $field, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `formatValue`
+- Implementation: `___formatValue`
+- Hook with: `$fieldtype->formatValue()`
 
 ## Arguments
 

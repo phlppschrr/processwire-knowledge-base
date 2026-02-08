@@ -1,4 +1,4 @@
-# $pages->___trashReady(Page $page)
+# $pages->trashReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called when a Page is about to be trashed
 
 ~~~~~
 // basic usage
-$result = $pages->___trashReady($page);
+$result = $pages->trashReady($page);
 
 // usage with all arguments
-$result = $pages->___trashReady(Page $page);
+$result = $pages->trashReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `trashReady`
+- Implementation: `___trashReady`
+- Hook with: `$pages->trashReady()`
 
 ## Arguments
 

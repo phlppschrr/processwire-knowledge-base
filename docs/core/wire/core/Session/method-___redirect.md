@@ -1,4 +1,4 @@
-# $session->___redirect($url, $status = 301)
+# $session->redirect($url, $status = 301)
 
 Source: `wire/core/Session.php`
 
@@ -17,11 +17,17 @@ $session->redirect('/');
 
 ~~~~~
 // basic usage
-$result = $session->___redirect($url);
+$result = $session->redirect($url);
 
 // usage with all arguments
-$result = $session->___redirect($url, $status = 301);
+$result = $session->redirect($url, $status = 301);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `redirect`
+- Implementation: `___redirect`
+- Hook with: `$session->redirect()`
 
 ## Arguments
 

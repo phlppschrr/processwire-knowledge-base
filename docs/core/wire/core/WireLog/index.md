@@ -22,7 +22,7 @@ Methods:
 Method: [message()](method-message.md)
 Method: [error()](method-error.md)
 Method: [warning()](method-warning.md)
-Method: [___save()](method-___save.md)
+Method: [save()](method-___save.md) (hookable)
 Method: [getLogs()](method-getlogs.md)
 Method: [getFilename()](method-getfilename.md)
 Method: [exists()](method-exists.md)

@@ -1,4 +1,4 @@
-# $pages->___saveFields(Page $page, $fields, array $options = array()): array
+# $pages->saveFields(Page $page, $fields, array $options = array()): array
 
 Source: `wire/core/Pages.php`
 
@@ -21,11 +21,17 @@ print_r($a); // outputs: array( 'title', 'body', 'summary' )
 
 ~~~~~
 // basic usage
-$array = $pages->___saveFields($page, $fields);
+$array = $pages->saveFields($page, $fields);
 
 // usage with all arguments
-$array = $pages->___saveFields(Page $page, $fields, array $options = array());
+$array = $pages->saveFields(Page $page, $fields, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveFields`
+- Implementation: `___saveFields`
+- Hook with: `$pages->saveFields()`
 
 ## Arguments
 

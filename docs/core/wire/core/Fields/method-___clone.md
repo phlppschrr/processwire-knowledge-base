@@ -1,4 +1,4 @@
-# $fields->___clone(Saveable $item, $name = ''): Field
+# $fields->clone(Saveable $item, $name = ''): Field
 
 Source: `wire/core/Fields.php`
 
@@ -8,11 +8,17 @@ Create and return a cloned copy of the given Field
 
 ~~~~~
 // basic usage
-$field = $fields->___clone($item);
+$field = $fields->clone($item);
 
 // usage with all arguments
-$field = $fields->___clone(Saveable $item, $name = '');
+$field = $fields->clone(Saveable $item, $name = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `clone`
+- Implementation: `___clone`
+- Hook with: `$fields->clone()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $password->___setPass($value)
+# $password->setPass($value)
 
 Source: `wire/core/Password.php`
 
@@ -8,8 +8,14 @@ Set the 'pass' to the given value
 
 ~~~~~
 // basic usage
-$result = $password->___setPass($value);
+$result = $password->setPass($value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `setPass`
+- Implementation: `___setPass`
+- Hook with: `$password->setPass()`
 
 ## Arguments
 

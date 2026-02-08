@@ -1,4 +1,4 @@
-# $page->___moved($oldParent, $newParent)
+# $page->moved($oldParent, $newParent)
 
 Source: `wire/core/Page.php`
 
@@ -19,8 +19,14 @@ $wire->addHook('Page::moved', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___moved($oldParent, $newParent);
+$result = $page->moved($oldParent, $newParent);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `moved`
+- Implementation: `___moved`
+- Hook with: `$page->moved()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $wireSaveableItems->___clone(Saveable $item, $name = ''): bool|Saveable
+# $wireSaveableItems->clone(Saveable $item, $name = ''): bool|Saveable
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -10,11 +10,17 @@ If no name is specified and the new item uses a 'name' field, it will contain a 
 
 ~~~~~
 // basic usage
-$bool = $wireSaveableItems->___clone($item);
+$bool = $wireSaveableItems->clone($item);
 
 // usage with all arguments
-$bool = $wireSaveableItems->___clone(Saveable $item, $name = '');
+$bool = $wireSaveableItems->clone(Saveable $item, $name = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `clone`
+- Implementation: `___clone`
+- Hook with: `$wireSaveableItems->clone()`
 
 ## Arguments
 

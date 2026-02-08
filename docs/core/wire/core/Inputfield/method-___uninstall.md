@@ -1,4 +1,4 @@
-# $inputfield->___uninstall()
+# $inputfield->uninstall()
 
 Source: `wire/core/Inputfield.php`
 
@@ -8,5 +8,11 @@ Per the Module interface, uninstall() is called when this Inputfield is uninstal
 
 ~~~~~
 // basic usage
-$result = $inputfield->___uninstall();
+$result = $inputfield->uninstall();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstall`
+- Implementation: `___uninstall`
+- Hook with: `$inputfield->uninstall()`

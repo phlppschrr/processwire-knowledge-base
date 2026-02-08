@@ -1,4 +1,4 @@
-# $pages->___saveField(Page $page, $field, $options = array()): bool
+# $pages->saveField(Page $page, $field, $options = array()): bool
 
 Source: `wire/core/Pages.php`
 
@@ -18,11 +18,17 @@ $pages->saveField($page, 'summary');
 
 ~~~~~
 // basic usage
-$bool = $pages->___saveField($page, $field);
+$bool = $pages->saveField($page, $field);
 
 // usage with all arguments
-$bool = $pages->___saveField(Page $page, $field, $options = array());
+$bool = $pages->saveField(Page $page, $field, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveField`
+- Implementation: `___saveField`
+- Hook with: `$pages->saveField()`
 
 ## Arguments
 

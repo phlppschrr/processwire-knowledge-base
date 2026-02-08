@@ -1,4 +1,4 @@
-# $pages->___published(Page $page)
+# $pages->published(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called after an unpublished page has just been published
 
 ~~~~~
 // basic usage
-$result = $pages->___published($page);
+$result = $pages->published($page);
 
 // usage with all arguments
-$result = $pages->___published(Page $page);
+$result = $pages->published(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `published`
+- Implementation: `___published`
+- Hook with: `$pages->published()`
 
 ## Arguments
 

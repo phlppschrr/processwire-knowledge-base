@@ -1,4 +1,4 @@
-# $pages->___savedField(Page $page, Field $field)
+# $pages->savedField(Page $page, Field $field)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called after Pages::saveField successfully executes
 
 ~~~~~
 // basic usage
-$result = $pages->___savedField($page, $field);
+$result = $pages->savedField($page, $field);
 
 // usage with all arguments
-$result = $pages->___savedField(Page $page, Field $field);
+$result = $pages->savedField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `savedField`
+- Implementation: `___savedField`
+- Hook with: `$pages->savedField()`
 
 ## Arguments
 

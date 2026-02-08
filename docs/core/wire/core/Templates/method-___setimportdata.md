@@ -1,4 +1,4 @@
-# $templates->___setImportData(Template $template, array $data): array
+# $templates->setImportData(Template $template, array $data): array
 
 Source: `wire/core/Templates.php`
 
@@ -24,11 +24,17 @@ $returnValue = array(
 
 ~~~~~
 // basic usage
-$array = $templates->___setImportData($template, $data);
+$array = $templates->setImportData($template, $data);
 
 // usage with all arguments
-$array = $templates->___setImportData(Template $template, array $data);
+$array = $templates->setImportData(Template $template, array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `setImportData`
+- Implementation: `___setImportData`
+- Hook with: `$templates->setImportData()`
 
 ## Arguments
 

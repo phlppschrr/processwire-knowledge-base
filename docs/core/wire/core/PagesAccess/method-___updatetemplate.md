@@ -1,4 +1,4 @@
-# $pagesAccess->___updateTemplate(Template $template)
+# $pagesAccess->updateTemplate(Template $template)
 
 Source: `wire/core/PagesAccess.php`
 
@@ -10,11 +10,17 @@ To be called when a `$template->useRoles` property has changed.
 
 ~~~~~
 // basic usage
-$result = $pagesAccess->___updateTemplate($template);
+$result = $pagesAccess->updateTemplate($template);
 
 // usage with all arguments
-$result = $pagesAccess->___updateTemplate(Template $template);
+$result = $pagesAccess->updateTemplate(Template $template);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `updateTemplate`
+- Implementation: `___updateTemplate`
+- Hook with: `$pagesAccess->updateTemplate()`
 
 ## Arguments
 

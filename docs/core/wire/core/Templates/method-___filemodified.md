@@ -1,4 +1,4 @@
-# $templates->___fileModified(Template $template)
+# $templates->fileModified(Template $template)
 
 Source: `wire/core/Templates.php`
 
@@ -11,11 +11,17 @@ That’s because it would not be efficient for PW to check the file for every te
 
 ~~~~~
 // basic usage
-$result = $templates->___fileModified($template);
+$result = $templates->fileModified($template);
 
 // usage with all arguments
-$result = $templates->___fileModified(Template $template);
+$result = $templates->fileModified(Template $template);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `fileModified`
+- Implementation: `___fileModified`
+- Hook with: `$templates->fileModified()`
 
 ## Arguments
 

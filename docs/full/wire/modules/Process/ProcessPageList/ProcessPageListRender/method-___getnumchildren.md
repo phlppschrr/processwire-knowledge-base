@@ -1,4 +1,4 @@
-# $processPageListRender->___getNumChildren(Page $page, $selector = null): int
+# $processPageListRender->getNumChildren(Page $page, $selector = null): int
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
@@ -21,11 +21,17 @@ $wire->addHookAfter('ProcessPageListRender::getNumChildren', function($event) {
 
 ~~~~~
 // basic usage
-$int = $processPageListRender->___getNumChildren($page);
+$int = $processPageListRender->getNumChildren($page);
 
 // usage with all arguments
-$int = $processPageListRender->___getNumChildren(Page $page, $selector = null);
+$int = $processPageListRender->getNumChildren(Page $page, $selector = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getNumChildren`
+- Implementation: `___getNumChildren`
+- Hook with: `$processPageListRender->getNumChildren()`
 
 ## Arguments
 

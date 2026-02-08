@@ -1,4 +1,4 @@
-# $fields->___delete(Saveable $item): bool
+# $fields->delete(Saveable $item): bool
 
 Source: `wire/core/Fields.php`
 
@@ -10,11 +10,17 @@ This method will throw a WireException if you attempt to delete a field that is 
 
 ~~~~~
 // basic usage
-$bool = $fields->___delete($item);
+$bool = $fields->delete($item);
 
 // usage with all arguments
-$bool = $fields->___delete(Saveable $item);
+$bool = $fields->delete(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$fields->delete()`
 
 ## Arguments
 

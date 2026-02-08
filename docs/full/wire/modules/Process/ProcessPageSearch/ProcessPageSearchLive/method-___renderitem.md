@@ -1,4 +1,4 @@
-# $processPageSearchLive->___renderItem(array $item, $prefix = 'pw-search', $class = 'item'): string
+# $processPageSearchLive->renderItem(array $item, $prefix = 'pw-search', $class = 'item'): string
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -8,11 +8,17 @@ Render an item for the “view all” list
 
 ~~~~~
 // basic usage
-$string = $processPageSearchLive->___renderItem($item);
+$string = $processPageSearchLive->renderItem($item);
 
 // usage with all arguments
-$string = $processPageSearchLive->___renderItem(array $item, $prefix = 'pw-search', $class = 'item');
+$string = $processPageSearchLive->renderItem(array $item, $prefix = 'pw-search', $class = 'item');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderItem`
+- Implementation: `___renderItem`
+- Hook with: `$processPageSearchLive->renderItem()`
 
 ## Arguments
 

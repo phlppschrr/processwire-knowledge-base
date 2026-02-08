@@ -1,4 +1,4 @@
-# $wire->___callUnknown($method, $arguments): null|mixed
+# $wire->callUnknown($method, $arguments): null|mixed
 
 Source: `wire/core/Wire.php`
 
@@ -31,8 +31,14 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 
 ~~~~~
 // basic usage
-$wire->___callUnknown($method, $arguments);
+$wire->callUnknown($method, $arguments);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `callUnknown`
+- Implementation: `___callUnknown`
+- Hook with: `$wire->callUnknown()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $wireSaveableItems->___added(Saveable $item)
+# $wireSaveableItems->added(Saveable $item)
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -8,11 +8,17 @@ Hook that runs right after a new item has been added.
 
 ~~~~~
 // basic usage
-$result = $wireSaveableItems->___added($item);
+$result = $wireSaveableItems->added($item);
 
 // usage with all arguments
-$result = $wireSaveableItems->___added(Saveable $item);
+$result = $wireSaveableItems->added(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `added`
+- Implementation: `___added`
+- Hook with: `$wireSaveableItems->added()`
 
 ## Arguments
 

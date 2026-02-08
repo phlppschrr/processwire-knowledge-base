@@ -1,4 +1,4 @@
-# $languageSupportInstall->___uninstall()
+# $languageSupportInstall->uninstall()
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 
@@ -8,5 +8,11 @@ Uninstall the module and related modules
 
 ~~~~~
 // basic usage
-$result = $languageSupportInstall->___uninstall();
+$result = $languageSupportInstall->uninstall();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstall`
+- Implementation: `___uninstall`
+- Hook with: `$languageSupportInstall->uninstall()`

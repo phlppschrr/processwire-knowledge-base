@@ -1,4 +1,4 @@
-# $tfa->___start($name, $pass): bool
+# $tfa->start($name, $pass): bool
 
 Source: `wire/core/Tfa.php`
 
@@ -16,8 +16,14 @@ it needs to move on to the next 2FA step.
 
 ~~~~~
 // basic usage
-$bool = $tfa->___start($name, $pass);
+$bool = $tfa->start($name, $pass);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `start`
+- Implementation: `___start`
+- Hook with: `$tfa->start()`
 
 ## Arguments
 

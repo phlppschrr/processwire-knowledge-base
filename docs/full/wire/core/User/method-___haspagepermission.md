@@ -1,4 +1,4 @@
-# $user->___hasPagePermission($name, ?Page $page = null): bool
+# $user->hasPagePermission($name, ?Page $page = null): bool
 
 Source: `wire/core/User.php`
 
@@ -12,11 +12,17 @@ The PagePermissions does use this function for some of it's checking.
 
 ~~~~~
 // basic usage
-$bool = $user->___hasPagePermission($name);
+$bool = $user->hasPagePermission($name);
 
 // usage with all arguments
-$bool = $user->___hasPagePermission($name, ?Page $page = null);
+$bool = $user->hasPagePermission($name, ?Page $page = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `hasPagePermission`
+- Implementation: `___hasPagePermission`
+- Hook with: `$user->hasPagePermission()`
 
 ## Arguments
 

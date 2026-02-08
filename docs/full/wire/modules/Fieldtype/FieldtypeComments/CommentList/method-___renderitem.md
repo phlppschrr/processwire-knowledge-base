@@ -1,4 +1,4 @@
-# $commentList->___renderItem(Comment $comment, $options = array()): string
+# $commentList->renderItem(Comment $comment, $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
@@ -10,11 +10,17 @@ Hookable since 3.0.138
 
 ~~~~~
 // basic usage
-$string = $commentList->___renderItem($comment);
+$string = $commentList->renderItem($comment);
 
 // usage with all arguments
-$string = $commentList->___renderItem(Comment $comment, $options = array());
+$string = $commentList->renderItem(Comment $comment, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderItem`
+- Implementation: `___renderItem`
+- Hook with: `$commentList->renderItem()`
 
 ## Arguments
 

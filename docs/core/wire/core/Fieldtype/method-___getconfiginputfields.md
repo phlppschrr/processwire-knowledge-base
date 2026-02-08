@@ -1,4 +1,4 @@
-# $fieldtype->___getConfigInputfields(Field $field): InputfieldWrapper
+# $fieldtype->getConfigInputfields(Field $field): InputfieldWrapper
 
 Source: `wire/core/Fieldtype.php`
 
@@ -16,11 +16,17 @@ use and are NOT stored in the database.
 
 ~~~~~
 // basic usage
-$inputfieldWrapper = $fieldtype->___getConfigInputfields($field);
+$inputfieldWrapper = $fieldtype->getConfigInputfields($field);
 
 // usage with all arguments
-$inputfieldWrapper = $fieldtype->___getConfigInputfields(Field $field);
+$inputfieldWrapper = $fieldtype->getConfigInputfields(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigInputfields`
+- Implementation: `___getConfigInputfields`
+- Hook with: `$fieldtype->getConfigInputfields()`
 
 ## Arguments
 

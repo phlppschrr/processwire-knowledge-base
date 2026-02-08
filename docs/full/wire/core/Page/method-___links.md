@@ -1,4 +1,4 @@
-# $page->___links($selector = '', $field = ''): PageArray
+# $page->links($selector = '', $field = ''): PageArray
 
 Source: `wire/core/Page.php`
 
@@ -10,11 +10,17 @@ Applies only to Textarea fields with “html” content-type and link abstractio
 
 ~~~~~
 // basic usage
-$items = $page->___links();
+$items = $page->links();
 
 // usage with all arguments
-$items = $page->___links($selector = '', $field = '');
+$items = $page->links($selector = '', $field = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `links`
+- Implementation: `___links`
+- Hook with: `$page->links()`
 
 ## Arguments
 

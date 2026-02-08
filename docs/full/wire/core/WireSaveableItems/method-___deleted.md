@@ -1,4 +1,4 @@
-# $wireSaveableItems->___deleted(Saveable $item)
+# $wireSaveableItems->deleted(Saveable $item)
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -10,11 +10,17 @@ Unlike after(delete), it has already been confirmed that the item was indeed del
 
 ~~~~~
 // basic usage
-$result = $wireSaveableItems->___deleted($item);
+$result = $wireSaveableItems->deleted($item);
 
 // usage with all arguments
-$result = $wireSaveableItems->___deleted(Saveable $item);
+$result = $wireSaveableItems->deleted(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleted`
+- Implementation: `___deleted`
+- Hook with: `$wireSaveableItems->deleted()`
 
 ## Arguments
 

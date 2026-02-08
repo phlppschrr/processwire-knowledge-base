@@ -1,4 +1,4 @@
-# $wireMailInterface->___send(): int
+# $wireMailInterface->send(): int
 
 Source: `wire/core/WireMailInterface.php`
 
@@ -8,8 +8,14 @@ Send the email
 
 ~~~~~
 // basic usage
-$int = $wireMailInterface->___send();
+$int = $wireMailInterface->send();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `send`
+- Implementation: `___send`
+- Hook with: `$wireMailInterface->send()`
 
 ## Return value
 

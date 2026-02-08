@@ -1,4 +1,4 @@
-# $fileCompiler->___compile($sourceFile): string
+# $fileCompiler->compile($sourceFile): string
 
 Source: `wire/core/FileCompiler.php`
 
@@ -8,8 +8,14 @@ Compile given source file and return compiled destination file
 
 ~~~~~
 // basic usage
-$string = $fileCompiler->___compile($sourceFile);
+$string = $fileCompiler->compile($sourceFile);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `compile`
+- Implementation: `___compile`
+- Hook with: `$fileCompiler->compile()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $fieldtype->___getConfigAdvancedInputfields(Field $field): InputfieldWrapper
+# $fieldtype->getConfigAdvancedInputfields(Field $field): InputfieldWrapper
 
 Source: `wire/core/Fieldtype.php`
 
@@ -16,11 +16,17 @@ use and are NOT stored in the database.
 
 ~~~~~
 // basic usage
-$inputfieldWrapper = $fieldtype->___getConfigAdvancedInputfields($field);
+$inputfieldWrapper = $fieldtype->getConfigAdvancedInputfields($field);
 
 // usage with all arguments
-$inputfieldWrapper = $fieldtype->___getConfigAdvancedInputfields(Field $field);
+$inputfieldWrapper = $fieldtype->getConfigAdvancedInputfields(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigAdvancedInputfields`
+- Implementation: `___getConfigAdvancedInputfields`
+- Hook with: `$fieldtype->getConfigAdvancedInputfields()`
 
 ## Arguments
 

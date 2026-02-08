@@ -49,7 +49,7 @@ Method: [emptyPath()](method-emptypath.md)
 Method: [emptyAllPaths()](method-emptyallpaths.md)
 Method: [path()](method-path.md)
 Method: [url()](method-url.md)
-Method: [___save()](method-___save.md)
+Method: [save()](method-___save.md) (hookable)
 Method: [__get()](method-__get.md)
 Method: [getTempPath()](method-gettemppath.md)
 

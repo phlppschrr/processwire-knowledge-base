@@ -1,4 +1,4 @@
-# $fieldgroups->___setImportData(Fieldgroup $fieldgroup, array $data): array
+# $fieldgroups->setImportData(Fieldgroup $fieldgroup, array $data): array
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -10,11 +10,17 @@ Changes are not committed until the item is saved
 
 ~~~~~
 // basic usage
-$array = $fieldgroups->___setImportData($fieldgroup, $data);
+$array = $fieldgroups->setImportData($fieldgroup, $data);
 
 // usage with all arguments
-$array = $fieldgroups->___setImportData(Fieldgroup $fieldgroup, array $data);
+$array = $fieldgroups->setImportData(Fieldgroup $fieldgroup, array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `setImportData`
+- Implementation: `___setImportData`
+- Hook with: `$fieldgroups->setImportData()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pagesRequest->___getPageForUser(Page $page, User $user): Page|NullPage
+# $pagesRequest->getPageForUser(Page $page, User $user): Page|NullPage
 
 Source: `wire/core/PagesRequest.php`
 
@@ -12,11 +12,17 @@ Returns different page if it should be substituted due to lack of access (like l
 
 ~~~~~
 // basic usage
-$page = $pagesRequest->___getPageForUser($page, $user);
+$page = $pagesRequest->getPageForUser($page, $user);
 
 // usage with all arguments
-$page = $pagesRequest->___getPageForUser(Page $page, User $user);
+$page = $pagesRequest->getPageForUser(Page $page, User $user);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getPageForUser`
+- Implementation: `___getPageForUser`
+- Hook with: `$pagesRequest->getPageForUser()`
 
 ## Arguments
 

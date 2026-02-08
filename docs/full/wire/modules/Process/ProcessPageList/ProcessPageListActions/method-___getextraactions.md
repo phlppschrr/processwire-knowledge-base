@@ -1,4 +1,4 @@
-# $processPageListActions->___getExtraActions(Page $page): array
+# $processPageListActions->getExtraActions(Page $page): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
@@ -20,11 +20,17 @@ $returnValue = [
 
 ~~~~~
 // basic usage
-$array = $processPageListActions->___getExtraActions($page);
+$array = $processPageListActions->getExtraActions($page);
 
 // usage with all arguments
-$array = $processPageListActions->___getExtraActions(Page $page);
+$array = $processPageListActions->getExtraActions(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getExtraActions`
+- Implementation: `___getExtraActions`
+- Hook with: `$processPageListActions->getExtraActions()`
 
 ## Arguments
 

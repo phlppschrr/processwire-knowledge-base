@@ -1,4 +1,4 @@
-# $wire->___trackException($e, $severe = true, $text = null): $this
+# $wire->trackException($e, $severe = true, $text = null): $this
 
 Source: `wire/core/Wire.php`
 
@@ -16,11 +16,17 @@ Exception (and not Error) objects.
 
 ~~~~~
 // basic usage
-$result = $wire->___trackException($e);
+$result = $wire->trackException($e);
 
 // usage with all arguments
-$result = $wire->___trackException($e, $severe = true, $text = null);
+$result = $wire->trackException($e, $severe = true, $text = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `trackException`
+- Implementation: `___trackException`
+- Hook with: `$wire->trackException()`
 
 ## Arguments
 

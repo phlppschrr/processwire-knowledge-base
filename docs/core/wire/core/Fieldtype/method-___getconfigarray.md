@@ -1,4 +1,4 @@
-# $fieldtype->___getConfigArray(Field $field): array
+# $fieldtype->getConfigArray(Field $field): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -12,11 +12,17 @@ or the other.
 
 ~~~~~
 // basic usage
-$array = $fieldtype->___getConfigArray($field);
+$array = $fieldtype->getConfigArray($field);
 
 // usage with all arguments
-$array = $fieldtype->___getConfigArray(Field $field);
+$array = $fieldtype->getConfigArray(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigArray`
+- Implementation: `___getConfigArray`
+- Hook with: `$fieldtype->getConfigArray()`
 
 ## Arguments
 

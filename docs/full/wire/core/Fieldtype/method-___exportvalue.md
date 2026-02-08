@@ -1,4 +1,4 @@
-# $fieldtype->___exportValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array
+# $fieldtype->exportValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -16,11 +16,17 @@ it is intended to be more verbose than wakeupValue, where applicable.
 
 ~~~~~
 // basic usage
-$string = $fieldtype->___exportValue($page, $field, $value);
+$string = $fieldtype->exportValue($page, $field, $value);
 
 // usage with all arguments
-$string = $fieldtype->___exportValue(Page $page, Field $field, $value, array $options = array());
+$string = $fieldtype->exportValue(Page $page, Field $field, $value, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `exportValue`
+- Implementation: `___exportValue`
+- Hook with: `$fieldtype->exportValue()`
 
 ## Arguments
 

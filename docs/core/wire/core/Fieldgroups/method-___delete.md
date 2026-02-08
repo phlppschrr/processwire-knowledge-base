@@ -1,4 +1,4 @@
-# $fieldgroups->___delete(Saveable $item): bool
+# $fieldgroups->delete(Saveable $item): bool
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -10,11 +10,17 @@ Also deletes the references in fieldgroups_fields table
 
 ~~~~~
 // basic usage
-$bool = $fieldgroups->___delete($item);
+$bool = $fieldgroups->delete($item);
 
 // usage with all arguments
-$bool = $fieldgroups->___delete(Saveable $item);
+$bool = $fieldgroups->delete(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$fieldgroups->delete()`
 
 ## Arguments
 

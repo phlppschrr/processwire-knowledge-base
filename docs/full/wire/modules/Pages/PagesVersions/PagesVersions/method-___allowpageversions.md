@@ -1,4 +1,4 @@
-# $pagesVersions->___allowPageVersions(Page $page): bool
+# $pagesVersions->allowPageVersions(Page $page): bool
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -8,11 +8,17 @@ Is given page allowed to have versions?
 
 ~~~~~
 // basic usage
-$bool = $pagesVersions->___allowPageVersions($page);
+$bool = $pagesVersions->allowPageVersions($page);
 
 // usage with all arguments
-$bool = $pagesVersions->___allowPageVersions(Page $page);
+$bool = $pagesVersions->allowPageVersions(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `allowPageVersions`
+- Implementation: `___allowPageVersions`
+- Hook with: `$pagesVersions->allowPageVersions()`
 
 ## Arguments
 

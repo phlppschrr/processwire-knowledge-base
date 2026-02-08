@@ -1,4 +1,4 @@
-# $fieldtype->___emptyPageField(Page $page, Field $field): bool
+# $fieldtype->emptyPageField(Page $page, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -11,11 +11,17 @@ for things like page references where we wouldn't want relational data deleted.
 
 ~~~~~
 // basic usage
-$bool = $fieldtype->___emptyPageField($page, $field);
+$bool = $fieldtype->emptyPageField($page, $field);
 
 // usage with all arguments
-$bool = $fieldtype->___emptyPageField(Page $page, Field $field);
+$bool = $fieldtype->emptyPageField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `emptyPageField`
+- Implementation: `___emptyPageField`
+- Hook with: `$fieldtype->emptyPageField()`
 
 ## Arguments
 

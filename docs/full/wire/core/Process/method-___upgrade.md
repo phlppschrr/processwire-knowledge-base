@@ -1,4 +1,4 @@
-# $process->___upgrade($fromVersion, $toVersion)
+# $process->upgrade($fromVersion, $toVersion)
 
 Source: `wire/core/Process.php`
 
@@ -10,8 +10,14 @@ See the `Module` interface and the `upgrade` method there for more details.
 
 ~~~~~
 // basic usage
-$result = $process->___upgrade($fromVersion, $toVersion);
+$result = $process->upgrade($fromVersion, $toVersion);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `upgrade`
+- Implementation: `___upgrade`
+- Hook with: `$process->upgrade()`
 
 ## Arguments
 

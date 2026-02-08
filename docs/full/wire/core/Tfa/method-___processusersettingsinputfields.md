@@ -1,4 +1,4 @@
-# $tfa->___processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array
+# $tfa->processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array
 
 Source: `wire/core/Tfa.php`
 
@@ -8,11 +8,17 @@ Called when the user config fieldset has been processed but before $settings hav
 
 ~~~~~
 // basic usage
-$array = $tfa->___processUserSettingsInputfields($user, $fieldset, $settings, $settingsPrev);
+$array = $tfa->processUserSettingsInputfields($user, $fieldset, $settings, $settingsPrev);
 
 // usage with all arguments
-$array = $tfa->___processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev);
+$array = $tfa->processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `processUserSettingsInputfields`
+- Implementation: `___processUserSettingsInputfields`
+- Hook with: `$tfa->processUserSettingsInputfields()`
 
 ## Arguments
 

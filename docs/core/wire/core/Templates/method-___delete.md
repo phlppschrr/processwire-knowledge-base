@@ -1,4 +1,4 @@
-# $templates->___delete(Saveable $item): bool
+# $templates->delete(Saveable $item): bool
 
 Source: `wire/core/Templates.php`
 
@@ -8,11 +8,17 @@ Delete a Template
 
 ~~~~~
 // basic usage
-$bool = $templates->___delete($item);
+$bool = $templates->delete($item);
 
 // usage with all arguments
-$bool = $templates->___delete(Saveable $item);
+$bool = $templates->delete(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$templates->delete()`
 
 ## Arguments
 

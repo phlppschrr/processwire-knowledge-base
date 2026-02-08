@@ -1,4 +1,4 @@
-# $templateFile->___render(): string|array
+# $templateFile->render(): string|array
 
 Source: `wire/core/TemplateFile.php`
 
@@ -8,8 +8,14 @@ Render the template: execute it and return its output
 
 ~~~~~
 // basic usage
-$string = $templateFile->___render();
+$string = $templateFile->render();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$templateFile->render()`
 
 ## Return value
 

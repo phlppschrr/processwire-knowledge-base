@@ -1,4 +1,4 @@
-# $fieldtype->___loadPageField(Page $page, Field $field): mixed|null
+# $fieldtype->loadPageField(Page $page, Field $field): mixed|null
 
 Source: `wire/core/Fieldtype.php`
 
@@ -14,11 +14,17 @@ Load the given page field from the database table and return the value.
 
 ~~~~~
 // basic usage
-$result = $fieldtype->___loadPageField($page, $field);
+$result = $fieldtype->loadPageField($page, $field);
 
 // usage with all arguments
-$result = $fieldtype->___loadPageField(Page $page, Field $field);
+$result = $fieldtype->loadPageField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `loadPageField`
+- Implementation: `___loadPageField`
+- Hook with: `$fieldtype->loadPageField()`
 
 ## Arguments
 

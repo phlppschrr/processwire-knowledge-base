@@ -1,4 +1,4 @@
-# $tfa->___processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array
+# $tfa->processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array
 
 Source: `wire/core/Tfa.php`
 
@@ -8,11 +8,17 @@ Called when the user config fieldset has been processed (for enabled user) but b
 
 ~~~~~
 // basic usage
-$array = $tfa->___processUserEnabledInputfields($user, $fieldset, $settings, $settingsPrev);
+$array = $tfa->processUserEnabledInputfields($user, $fieldset, $settings, $settingsPrev);
 
 // usage with all arguments
-$array = $tfa->___processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev);
+$array = $tfa->processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `processUserEnabledInputfields`
+- Implementation: `___processUserEnabledInputfields`
+- Hook with: `$tfa->processUserEnabledInputfields()`
 
 ## Arguments
 

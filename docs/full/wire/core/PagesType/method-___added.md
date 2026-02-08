@@ -1,4 +1,4 @@
-# $pagesType->___added(Page $page)
+# $pagesType->added(Page $page)
 
 Source: `wire/core/PagesType.php`
 
@@ -8,11 +8,17 @@ Hook called when a new page of this type has been added
 
 ~~~~~
 // basic usage
-$result = $pagesType->___added($page);
+$result = $pagesType->added($page);
 
 // usage with all arguments
-$result = $pagesType->___added(Page $page);
+$result = $pagesType->added(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `added`
+- Implementation: `___added`
+- Hook with: `$pagesType->added()`
 
 ## Arguments
 

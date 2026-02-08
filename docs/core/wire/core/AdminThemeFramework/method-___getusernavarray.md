@@ -1,4 +1,4 @@
-# $adminThemeFramework->___getUserNavArray(): array
+# $adminThemeFramework->getUserNavArray(): array
 
 Source: `wire/core/AdminThemeFramework.php`
 
@@ -23,8 +23,14 @@ Supported properties/attributes as of 3.0.248:
 
 ~~~~~
 // basic usage
-$array = $adminThemeFramework->___getUserNavArray();
+$array = $adminThemeFramework->getUserNavArray();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getUserNavArray`
+- Implementation: `___getUserNavArray`
+- Hook with: `$adminThemeFramework->getUserNavArray()`
 
 ## Return value
 

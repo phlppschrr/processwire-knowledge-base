@@ -1,4 +1,4 @@
-# $inputfield->___processInput(WireInputData $input): $this
+# $inputfield->processInput(WireInputData $input): $this
 
 Source: `wire/core/Inputfield.php`
 
@@ -15,11 +15,17 @@ to the `Inputfield::setAttribute('value', $value)` method to occur when given th
 
 ~~~~~
 // basic usage
-$result = $inputfield->___processInput($input);
+$result = $inputfield->processInput($input);
 
 // usage with all arguments
-$result = $inputfield->___processInput(WireInputData $input);
+$result = $inputfield->processInput(WireInputData $input);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `processInput`
+- Implementation: `___processInput`
+- Hook with: `$inputfield->processInput()`
 
 ## Arguments
 

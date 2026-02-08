@@ -1,4 +1,4 @@
-# $process->___installPage($name = '', $parent = null, $title = '', $template = 'admin', $extras = array()): Page
+# $process->installPage($name = '', $parent = null, $title = '', $template = 'admin', $extras = array()): Page
 
 Source: `wire/core/Process.php`
 
@@ -10,11 +10,17 @@ To be called by Process module's ___install() method.
 
 ~~~~~
 // basic usage
-$page = $process->___installPage();
+$page = $process->installPage();
 
 // usage with all arguments
-$page = $process->___installPage($name = '', $parent = null, $title = '', $template = 'admin', $extras = array());
+$page = $process->installPage($name = '', $parent = null, $title = '', $template = 'admin', $extras = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `installPage`
+- Implementation: `___installPage`
+- Hook with: `$process->installPage()`
 
 ## Arguments
 

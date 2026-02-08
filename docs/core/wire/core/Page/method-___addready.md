@@ -1,4 +1,4 @@
-# $page->___addReady()
+# $page->addReady()
 
 Source: `wire/core/Page.php`
 
@@ -17,8 +17,14 @@ $wire->addHook('Page::addReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___addReady();
+$result = $page->addReady();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `addReady`
+- Implementation: `___addReady`
+- Hook with: `$page->addReady()`
 
 ## Since
 

@@ -1,4 +1,4 @@
-# $wireMail->___sanitizeHeaderValue($value): string
+# $wireMail->sanitizeHeaderValue($value): string
 
 Source: `wire/core/WireMail.php`
 
@@ -8,8 +8,14 @@ Sanitize an email header header value
 
 ~~~~~
 // basic usage
-$string = $wireMail->___sanitizeHeaderValue($value);
+$string = $wireMail->sanitizeHeaderValue($value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sanitizeHeaderValue`
+- Implementation: `___sanitizeHeaderValue`
+- Hook with: `$wireMail->sanitizeHeaderValue()`
 
 ## Arguments
 

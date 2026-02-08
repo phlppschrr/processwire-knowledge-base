@@ -1,4 +1,4 @@
-# $users->___save(Page $page): bool
+# $users->save(Page $page): bool
 
 Source: `wire/core/Users.php`
 
@@ -26,11 +26,17 @@ $wire->addHookBefore('Pages::save(<User>)', function(HookEvent $e) {
 
 ~~~~~
 // basic usage
-$bool = $users->___save($page);
+$bool = $users->save($page);
 
 // usage with all arguments
-$bool = $users->___save(Page $page);
+$bool = $users->save(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$users->save()`
 
 ## Arguments
 

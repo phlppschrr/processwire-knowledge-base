@@ -1,4 +1,4 @@
-# $pagesType->___saved(Page $page, array $changes = array(), $values = array())
+# $pagesType->saved(Page $page, array $changes = array(), $values = array())
 
 Source: `wire/core/PagesType.php`
 
@@ -8,11 +8,17 @@ Hook called after a page of this type is successfully saved
 
 ~~~~~
 // basic usage
-$result = $pagesType->___saved($page);
+$result = $pagesType->saved($page);
 
 // usage with all arguments
-$result = $pagesType->___saved(Page $page, array $changes = array(), $values = array());
+$result = $pagesType->saved(Page $page, array $changes = array(), $values = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saved`
+- Implementation: `___saved`
+- Hook with: `$pagesType->saved()`
 
 ## Arguments
 

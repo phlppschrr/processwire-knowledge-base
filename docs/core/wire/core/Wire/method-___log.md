@@ -1,4 +1,4 @@
-# $wire->___log($str = '', array $options = array()): WireLog
+# $wire->log($str = '', array $options = array()): WireLog
 
 Source: `wire/core/Wire.php`
 
@@ -18,11 +18,17 @@ $this->log("This message will be logged");
 
 ~~~~~
 // basic usage
-$wireLog = $wire->___log();
+$wireLog = $wire->log();
 
 // usage with all arguments
-$wireLog = $wire->___log($str = '', array $options = array());
+$wireLog = $wire->log($str = '', array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `log`
+- Implementation: `___log`
+- Hook with: `$wire->log()`
 
 ## Arguments
 

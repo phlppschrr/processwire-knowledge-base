@@ -1,4 +1,4 @@
-# $fileValidatorModule->___log($str = '', array $options = array()): WireLog|null
+# $fileValidatorModule->log($str = '', array $options = array()): WireLog|null
 
 Source: `wire/core/FileValidatorModule.php`
 
@@ -11,11 +11,17 @@ the same name as the class, converted to hyphenated lowercase.
 
 ~~~~~
 // basic usage
-$wireLog = $fileValidatorModule->___log();
+$wireLog = $fileValidatorModule->log();
 
 // usage with all arguments
-$wireLog = $fileValidatorModule->___log($str = '', array $options = array());
+$wireLog = $fileValidatorModule->log($str = '', array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `log`
+- Implementation: `___log`
+- Hook with: `$fileValidatorModule->log()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pages->___insertBefore(Page $page, Page $beforePage)
+# $pages->insertBefore(Page $page, Page $beforePage)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Sort/move one page above another (for manually sorted pages)
 
 ~~~~~
 // basic usage
-$result = $pages->___insertBefore($page, $beforePage);
+$result = $pages->insertBefore($page, $beforePage);
 
 // usage with all arguments
-$result = $pages->___insertBefore(Page $page, Page $beforePage);
+$result = $pages->insertBefore(Page $page, Page $beforePage);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `insertBefore`
+- Implementation: `___insertBefore`
+- Hook with: `$pages->insertBefore()`
 
 ## Arguments
 

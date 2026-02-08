@@ -1,4 +1,4 @@
-# $page->___getInputfields($fieldName = ''): null|InputfieldWrapper
+# $page->getInputfields($fieldName = ''): null|InputfieldWrapper
 
 Source: `wire/core/Page.php`
 
@@ -10,11 +10,17 @@ See the getInputfields() method above for documentation details.
 
 ~~~~~
 // basic usage
-$page->___getInputfields();
+$page->getInputfields();
 
 // usage with all arguments
-$page->___getInputfields($fieldName = '');
+$page->getInputfields($fieldName = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getInputfields`
+- Implementation: `___getInputfields`
+- Hook with: `$page->getInputfields()`
 
 ## Arguments
 

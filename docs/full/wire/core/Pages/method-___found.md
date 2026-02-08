@@ -1,4 +1,4 @@
-# $pages->___found(PageArray $pages, array $details)
+# $pages->found(PageArray $pages, array $details)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called at the end of a $pages->find(), includes extra info not seen in the 
 
 ~~~~~
 // basic usage
-$result = $pages->___found($pages, $details);
+$result = $pages->found($pages, $details);
 
 // usage with all arguments
-$result = $pages->___found(PageArray $pages, array $details);
+$result = $pages->found(PageArray $pages, array $details);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `found`
+- Implementation: `___found`
+- Hook with: `$pages->found()`
 
 ## Arguments
 

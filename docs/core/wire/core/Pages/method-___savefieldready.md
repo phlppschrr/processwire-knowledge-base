@@ -1,4 +1,4 @@
-# $pages->___saveFieldReady(Page $page, Field $field)
+# $pages->saveFieldReady(Page $page, Field $field)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called when Pages::saveField is ready to execute
 
 ~~~~~
 // basic usage
-$result = $pages->___saveFieldReady($page, $field);
+$result = $pages->saveFieldReady($page, $field);
 
 // usage with all arguments
-$result = $pages->___saveFieldReady(Page $page, Field $field);
+$result = $pages->saveFieldReady(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveFieldReady`
+- Implementation: `___saveFieldReady`
+- Hook with: `$pages->saveFieldReady()`
 
 ## Arguments
 

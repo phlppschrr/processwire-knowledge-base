@@ -1,4 +1,4 @@
-# $pages->___delete(Page $page, $recursive = false, array $options = array()): bool|int
+# $pages->delete(Page $page, $recursive = false, array $options = array()): bool|int
 
 Source: `wire/core/Pages.php`
 
@@ -20,11 +20,17 @@ $pages->delete($product);
 
 ~~~~~
 // basic usage
-$bool = $pages->___delete($page);
+$bool = $pages->delete($page);
 
 // usage with all arguments
-$bool = $pages->___delete(Page $page, $recursive = false, array $options = array());
+$bool = $pages->delete(Page $page, $recursive = false, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$pages->delete()`
 
 ## Arguments
 

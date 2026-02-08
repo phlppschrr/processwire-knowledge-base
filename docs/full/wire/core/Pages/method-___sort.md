@@ -1,4 +1,4 @@
-# $pages->___sort(Page $page, $value = false): int
+# $pages->sort(Page $page, $value = false): int
 
 Source: `wire/core/Pages.php`
 
@@ -35,11 +35,17 @@ $pages->sort($page, true);
 
 ~~~~~
 // basic usage
-$int = $pages->___sort($page);
+$int = $pages->sort($page);
 
 // usage with all arguments
-$int = $pages->___sort(Page $page, $value = false);
+$int = $pages->sort(Page $page, $value = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sort`
+- Implementation: `___sort`
+- Hook with: `$pages->sort()`
 
 ## Arguments
 

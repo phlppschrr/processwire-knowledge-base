@@ -1,4 +1,4 @@
-# $adminTheme->___getExtraMarkup(): array
+# $adminTheme->getExtraMarkup(): array
 
 Source: `wire/core/AdminTheme.php`
 
@@ -8,8 +8,14 @@ Enables hooks to append extra markup to various sections of the admin page
 
 ~~~~~
 // basic usage
-$array = $adminTheme->___getExtraMarkup();
+$array = $adminTheme->getExtraMarkup();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getExtraMarkup`
+- Implementation: `___getExtraMarkup`
+- Hook with: `$adminTheme->getExtraMarkup()`
 
 ## Return value
 

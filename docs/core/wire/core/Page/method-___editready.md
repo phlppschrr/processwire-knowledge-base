@@ -1,4 +1,4 @@
-# $page->___editReady(InputfieldWrapper $form)
+# $page->editReady(InputfieldWrapper $form)
 
 Source: `wire/core/Page.php`
 
@@ -19,11 +19,17 @@ $wire->addHook('Page::editReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___editReady($form);
+$result = $page->editReady($form);
 
 // usage with all arguments
-$result = $page->___editReady(InputfieldWrapper $form);
+$result = $page->editReady(InputfieldWrapper $form);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `editReady`
+- Implementation: `___editReady`
+- Hook with: `$page->editReady()`
 
 ## Arguments
 

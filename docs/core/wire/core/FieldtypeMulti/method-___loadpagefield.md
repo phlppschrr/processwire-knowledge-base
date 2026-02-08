@@ -1,4 +1,4 @@
-# $fieldtypeMulti->___loadPageField(Page $page, Field $field): array|null
+# $fieldtypeMulti->loadPageField(Page $page, Field $field): array|null
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -20,11 +20,17 @@ If pagination is active, the following extra properties are populated to the ret
 
 ~~~~~
 // basic usage
-$array = $fieldtypeMulti->___loadPageField($page, $field);
+$array = $fieldtypeMulti->loadPageField($page, $field);
 
 // usage with all arguments
-$array = $fieldtypeMulti->___loadPageField(Page $page, Field $field);
+$array = $fieldtypeMulti->loadPageField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `loadPageField`
+- Implementation: `___loadPageField`
+- Hook with: `$fieldtypeMulti->loadPageField()`
 
 ## Arguments
 

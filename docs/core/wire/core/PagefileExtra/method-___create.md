@@ -1,4 +1,4 @@
-# $pagefileExtra->___create(): bool
+# $pagefileExtra->create(): bool
 
 Source: `wire/core/PagefileExtra.php`
 
@@ -10,8 +10,14 @@ Must be implemented by a hook or by descending class
 
 ~~~~~
 // basic usage
-$bool = $pagefileExtra->___create();
+$bool = $pagefileExtra->create();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `create`
+- Implementation: `___create`
+- Hook with: `$pagefileExtra->create()`
 
 ## Return value
 

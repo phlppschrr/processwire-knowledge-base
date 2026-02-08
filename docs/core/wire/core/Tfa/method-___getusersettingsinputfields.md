@@ -1,4 +1,4 @@
-# $tfa->___getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings)
+# $tfa->getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings)
 
 Source: `wire/core/Tfa.php`
 
@@ -11,11 +11,17 @@ a TFA type and submitted form, but has not yet configured the TFA type.
 
 ~~~~~
 // basic usage
-$result = $tfa->___getUserSettingsInputfields($user, $fieldset, $settings);
+$result = $tfa->getUserSettingsInputfields($user, $fieldset, $settings);
 
 // usage with all arguments
-$result = $tfa->___getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings);
+$result = $tfa->getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getUserSettingsInputfields`
+- Implementation: `___getUserSettingsInputfields`
+- Hook with: `$tfa->getUserSettingsInputfields()`
 
 ## Arguments
 

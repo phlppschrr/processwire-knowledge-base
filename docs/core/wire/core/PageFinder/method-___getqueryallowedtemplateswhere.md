@@ -1,4 +1,4 @@
-# $pageFinder->___getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string
+# $pageFinder->getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string
 
 Source: `wire/core/PageFinder.php`
 
@@ -11,11 +11,17 @@ or the $event->return in an AFTER hook.
 
 ~~~~~
 // basic usage
-$string = $pageFinder->___getQueryAllowedTemplatesWhere($query, $where);
+$string = $pageFinder->getQueryAllowedTemplatesWhere($query, $where);
 
 // usage with all arguments
-$string = $pageFinder->___getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where);
+$string = $pageFinder->getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getQueryAllowedTemplatesWhere`
+- Implementation: `___getQueryAllowedTemplatesWhere`
+- Hook with: `$pageFinder->getQueryAllowedTemplatesWhere()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $processPageListActions->___getActions(Page $page): array
+# $processPageListActions->getActions(Page $page): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
@@ -8,11 +8,17 @@ Get an array of available Page actions, indexed by $label => $url
 
 ~~~~~
 // basic usage
-$array = $processPageListActions->___getActions($page);
+$array = $processPageListActions->getActions($page);
 
 // usage with all arguments
-$array = $processPageListActions->___getActions(Page $page);
+$array = $processPageListActions->getActions(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getActions`
+- Implementation: `___getActions`
+- Hook with: `$processPageListActions->getActions()`
 
 ## Arguments
 

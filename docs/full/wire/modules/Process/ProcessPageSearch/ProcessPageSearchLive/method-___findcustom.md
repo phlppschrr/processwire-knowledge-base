@@ -1,4 +1,4 @@
-# $processPageSearchLive->___findCustom(array $data): bool
+# $processPageSearchLive->findCustom(array $data): bool
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -22,11 +22,17 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 
 ~~~~~
 // basic usage
-$bool = $processPageSearchLive->___findCustom($data);
+$bool = $processPageSearchLive->findCustom($data);
 
 // usage with all arguments
-$bool = $processPageSearchLive->___findCustom(array $data);
+$bool = $processPageSearchLive->findCustom(array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `findCustom`
+- Implementation: `___findCustom`
+- Hook with: `$processPageSearchLive->findCustom()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pageimage->___rebuildVariations($mode = 0, array $suffix = array(), array $options = array()): array
+# $pageimage->rebuildVariations($mode = 0, array $suffix = array(), array $options = array()): array
 
 Source: `wire/core/Pageimage.php`
 
@@ -23,11 +23,17 @@ rebuilding variations that include crops from an original image that has since c
 
 ~~~~~
 // basic usage
-$array = $pageimage->___rebuildVariations();
+$array = $pageimage->rebuildVariations();
 
 // usage with all arguments
-$array = $pageimage->___rebuildVariations($mode = 0, array $suffix = array(), array $options = array());
+$array = $pageimage->rebuildVariations($mode = 0, array $suffix = array(), array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `rebuildVariations`
+- Implementation: `___rebuildVariations`
+- Hook with: `$pageimage->rebuildVariations()`
 
 ## Arguments
 

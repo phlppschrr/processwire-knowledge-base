@@ -1,4 +1,4 @@
-# $wireAction->___action($item): bool
+# $wireAction->action($item): bool
 
 Source: `wire/core/WireAction.php`
 
@@ -8,8 +8,14 @@ Perform the action on the given item
 
 ~~~~~
 // basic usage
-$bool = $wireAction->___action($item);
+$bool = $wireAction->action($item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `action`
+- Implementation: `___action`
+- Hook with: `$wireAction->action()`
 
 ## Arguments
 

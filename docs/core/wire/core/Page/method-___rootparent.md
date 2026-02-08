@@ -1,4 +1,4 @@
-# $page->___rootParent(): Page
+# $page->rootParent(): Page
 
 Source: `wire/core/Page.php`
 
@@ -22,8 +22,14 @@ if($page->rootParent()->template == 'products') {
 
 ~~~~~
 // basic usage
-$page = $page->___rootParent();
+$page = $page->rootParent();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `rootParent`
+- Implementation: `___rootParent`
+- Hook with: `$page->rootParent()`
 
 ## Return value
 

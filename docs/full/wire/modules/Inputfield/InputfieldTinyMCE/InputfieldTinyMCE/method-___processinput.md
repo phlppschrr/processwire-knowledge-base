@@ -1,4 +1,4 @@
-# $inputfieldTinyMCE->___processInput(WireInputData $input): $this
+# $inputfieldTinyMCE->processInput(WireInputData $input): $this
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
@@ -8,11 +8,17 @@ Process input
 
 ~~~~~
 // basic usage
-$result = $inputfieldTinyMCE->___processInput($input);
+$result = $inputfieldTinyMCE->processInput($input);
 
 // usage with all arguments
-$result = $inputfieldTinyMCE->___processInput(WireInputData $input);
+$result = $inputfieldTinyMCE->processInput(WireInputData $input);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `processInput`
+- Implementation: `___processInput`
+- Hook with: `$inputfieldTinyMCE->processInput()`
 
 ## Arguments
 

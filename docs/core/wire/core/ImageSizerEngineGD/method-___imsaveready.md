@@ -1,4 +1,4 @@
-# $imageSizerEngineGD->___imSaveReady($im, $filename): bool
+# $imageSizerEngineGD->imSaveReady($im, $filename): bool
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
@@ -10,8 +10,14 @@ Also Creates a webp file when settings indicate it should.
 
 ~~~~~
 // basic usage
-$bool = $imageSizerEngineGD->___imSaveReady($im, $filename);
+$bool = $imageSizerEngineGD->imSaveReady($im, $filename);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `imSaveReady`
+- Implementation: `___imSaveReady`
+- Hook with: `$imageSizerEngineGD->imSaveReady()`
 
 ## Arguments
 

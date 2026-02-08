@@ -16,7 +16,7 @@ Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)
-Method: [___checkAjax()](method-___checkajax.md)
+Method: [checkAjax()](method-___checkajax.md) (hookable)
 Method: [renderAjax()](method-renderajax.md)
 Method: [addItem()](method-additem.md)
 Method: [sortItems()](method-sortitems.md)

@@ -1,4 +1,4 @@
-# $wireInputData->___callUnknown($method, $arguments): string|int|array|float|null
+# $wireInputData->callUnknown($method, $arguments): string|int|array|float|null
 
 Source: `wire/core/WireInputData.php`
 
@@ -8,8 +8,14 @@ Maps to Sanitizer functions
 
 ~~~~~
 // basic usage
-$string = $wireInputData->___callUnknown($method, $arguments);
+$string = $wireInputData->callUnknown($method, $arguments);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `callUnknown`
+- Implementation: `___callUnknown`
+- Hook with: `$wireInputData->callUnknown()`
 
 ## Arguments
 

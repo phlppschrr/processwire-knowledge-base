@@ -1,4 +1,4 @@
-# $pages->___moveReady(Page $page)
+# $pages->moveReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -10,11 +10,17 @@ Note the previous parent is accessible in the `$page->parentPrevious` property.
 
 ~~~~~
 // basic usage
-$result = $pages->___moveReady($page);
+$result = $pages->moveReady($page);
 
 // usage with all arguments
-$result = $pages->___moveReady(Page $page);
+$result = $pages->moveReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `moveReady`
+- Implementation: `___moveReady`
+- Hook with: `$pages->moveReady()`
 
 ## Arguments
 

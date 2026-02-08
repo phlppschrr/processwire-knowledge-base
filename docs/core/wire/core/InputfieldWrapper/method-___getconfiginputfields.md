@@ -1,4 +1,4 @@
-# $inputfieldWrapper->___getConfigInputfields(): InputfieldWrapper
+# $inputfieldWrapper->getConfigInputfields(): InputfieldWrapper
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,8 +8,14 @@ Get configuration Inputfields for this InputfieldWrapper
 
 ~~~~~
 // basic usage
-$inputfieldWrapper = $inputfieldWrapper->___getConfigInputfields();
+$inputfieldWrapper = $inputfieldWrapper->getConfigInputfields();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigInputfields`
+- Implementation: `___getConfigInputfields`
+- Hook with: `$inputfieldWrapper->getConfigInputfields()`
 
 ## Return value
 

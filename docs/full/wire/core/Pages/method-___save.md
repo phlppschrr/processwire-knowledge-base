@@ -1,4 +1,4 @@
-# $pages->___save(Page $page, $options = array()): bool
+# $pages->save(Page $page, $options = array()): bool
 
 Source: `wire/core/Pages.php`
 
@@ -23,11 +23,17 @@ $pages->save($p);
 
 ~~~~~
 // basic usage
-$bool = $pages->___save($page);
+$bool = $pages->save($page);
 
 // usage with all arguments
-$bool = $pages->___save(Page $page, $options = array());
+$bool = $pages->save(Page $page, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$pages->save()`
 
 ## Arguments
 

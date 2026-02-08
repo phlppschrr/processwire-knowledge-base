@@ -1,4 +1,4 @@
-# $processWire->___finished(array $data = array())
+# $processWire->finished(array $data = array())
 
 Source: `wire/core/ProcessWire.php`
 
@@ -8,11 +8,17 @@ Hookable ready for anyone that wants to hook when the request is finished
 
 ~~~~~
 // basic usage
-$result = $processWire->___finished();
+$result = $processWire->finished();
 
 // usage with all arguments
-$result = $processWire->___finished(array $data = array());
+$result = $processWire->finished(array $data = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `finished`
+- Implementation: `___finished`
+- Hook with: `$processWire->finished()`
 
 ## Arguments
 

@@ -11,6 +11,6 @@ Group: [other](group-other.md)
 
 Methods:
 Method: [get()](method-get.md)
-Method: [___save()](method-___save.md)
-Method: [___delete()](method-___delete.md)
-Method: [___add()](method-___add.md)
+Method: [save()](method-___save.md) (hookable)
+Method: [delete()](method-___delete.md) (hookable)
+Method: [add()](method-___add.md) (hookable)

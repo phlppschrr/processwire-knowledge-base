@@ -1,4 +1,4 @@
-# $field->___editable(?Page $page = null, ?User $user = null): bool
+# $field->editable(?Page $page = null, ?User $user = null): bool
 
 Source: `wire/core/Field.php`
 
@@ -13,11 +13,17 @@ Is this field editable?
 
 ~~~~~
 // basic usage
-$bool = $field->___editable();
+$bool = $field->editable();
 
 // usage with all arguments
-$bool = $field->___editable(?Page $page = null, ?User $user = null);
+$bool = $field->editable(?Page $page = null, ?User $user = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `editable`
+- Implementation: `___editable`
+- Hook with: `$field->editable()`
 
 ## Arguments
 

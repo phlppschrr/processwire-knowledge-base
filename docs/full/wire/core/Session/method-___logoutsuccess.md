@@ -1,4 +1,4 @@
-# $session->___logoutSuccess(User $user)
+# $session->logoutSuccess(User $user)
 
 Source: `wire/core/Session.php`
 
@@ -8,11 +8,17 @@ Logout success method for hooks
 
 ~~~~~
 // basic usage
-$result = $session->___logoutSuccess($user);
+$result = $session->logoutSuccess($user);
 
 // usage with all arguments
-$result = $session->___logoutSuccess(User $user);
+$result = $session->logoutSuccess(User $user);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `logoutSuccess`
+- Implementation: `___logoutSuccess`
+- Hook with: `$session->logoutSuccess()`
 
 ## Arguments
 

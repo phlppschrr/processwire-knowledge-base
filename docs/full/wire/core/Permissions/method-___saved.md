@@ -1,4 +1,4 @@
-# $permissions->___saved(Page $page, array $changes = array(), $values = array())
+# $permissions->saved(Page $page, array $changes = array(), $values = array())
 
 Source: `wire/core/Permissions.php`
 
@@ -8,11 +8,17 @@ Hook called when a permission is saved
 
 ~~~~~
 // basic usage
-$result = $permissions->___saved($page);
+$result = $permissions->saved($page);
 
 // usage with all arguments
-$result = $permissions->___saved(Page $page, array $changes = array(), $values = array());
+$result = $permissions->saved(Page $page, array $changes = array(), $values = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saved`
+- Implementation: `___saved`
+- Hook with: `$permissions->saved()`
 
 ## Arguments
 

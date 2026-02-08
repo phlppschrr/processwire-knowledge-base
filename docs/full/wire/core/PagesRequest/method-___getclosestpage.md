@@ -1,4 +1,4 @@
-# $pagesRequest->___getClosestPage(): Page|NullPage
+# $pagesRequest->getClosestPage(): Page|NullPage
 
 Source: `wire/core/PagesRequest.php`
 
@@ -22,8 +22,14 @@ if($p->id) {
 
 ~~~~~
 // basic usage
-$page = $pagesRequest->___getClosestPage();
+$page = $pagesRequest->getClosestPage();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getClosestPage`
+- Implementation: `___getClosestPage`
+- Hook with: `$pagesRequest->getClosestPage()`
 
 ## Return value
 

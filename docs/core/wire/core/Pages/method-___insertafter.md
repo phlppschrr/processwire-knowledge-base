@@ -1,4 +1,4 @@
-# $pages->___insertAfter(Page $page, Page $afterPage)
+# $pages->insertAfter(Page $page, Page $afterPage)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Sort/move one page after another (for manually sorted pages)
 
 ~~~~~
 // basic usage
-$result = $pages->___insertAfter($page, $afterPage);
+$result = $pages->insertAfter($page, $afterPage);
 
 // usage with all arguments
-$result = $pages->___insertAfter(Page $page, Page $afterPage);
+$result = $pages->insertAfter(Page $page, Page $afterPage);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `insertAfter`
+- Implementation: `___insertAfter`
+- Hook with: `$pages->insertAfter()`
 
 ## Arguments
 

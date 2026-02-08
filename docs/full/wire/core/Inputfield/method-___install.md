@@ -1,4 +1,4 @@
-# $inputfield->___install()
+# $inputfield->install()
 
 Source: `wire/core/Inputfield.php`
 
@@ -8,5 +8,11 @@ Per the Module interface, this method is called when this Inputfield is installe
 
 ~~~~~
 // basic usage
-$result = $inputfield->___install();
+$result = $inputfield->install();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$inputfield->install()`

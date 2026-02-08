@@ -1,4 +1,4 @@
-# $pages->___deletedBranch(Page $page, array $options, $numDeleted)
+# $pages->deletedBranch(Page $page, array $options, $numDeleted)
 
 Source: `wire/core/Pages.php`
 
@@ -10,11 +10,17 @@ Note: this is called only on deletions that had 'recursive' option true and 1+ c
 
 ~~~~~
 // basic usage
-$result = $pages->___deletedBranch($page, $options, $numDeleted);
+$result = $pages->deletedBranch($page, $options, $numDeleted);
 
 // usage with all arguments
-$result = $pages->___deletedBranch(Page $page, array $options, $numDeleted);
+$result = $pages->deletedBranch(Page $page, array $options, $numDeleted);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deletedBranch`
+- Implementation: `___deletedBranch`
+- Hook with: `$pages->deletedBranch()`
 
 ## Arguments
 

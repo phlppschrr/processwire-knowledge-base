@@ -1,4 +1,4 @@
-# $pages->___sorted(Page $page, $children = false, $total = 0)
+# $pages->sorted(Page $page, $children = false, $total = 0)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called after a page has been sorted, or had its children re-sorted
 
 ~~~~~
 // basic usage
-$result = $pages->___sorted($page);
+$result = $pages->sorted($page);
 
 // usage with all arguments
-$result = $pages->___sorted(Page $page, $children = false, $total = 0);
+$result = $pages->sorted(Page $page, $children = false, $total = 0);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sorted`
+- Implementation: `___sorted`
+- Hook with: `$pages->sorted()`
 
 ## Arguments
 

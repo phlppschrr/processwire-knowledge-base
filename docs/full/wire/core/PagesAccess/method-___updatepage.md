@@ -1,4 +1,4 @@
-# $pagesAccess->___updatePage(Page $page)
+# $pagesAccess->updatePage(Page $page)
 
 Source: `wire/core/PagesAccess.php`
 
@@ -15,11 +15,17 @@ This is used by PageFinder to determine what pages to include in a find() operat
 
 ~~~~~
 // basic usage
-$result = $pagesAccess->___updatePage($page);
+$result = $pagesAccess->updatePage($page);
 
 // usage with all arguments
-$result = $pagesAccess->___updatePage(Page $page);
+$result = $pagesAccess->updatePage(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `updatePage`
+- Implementation: `___updatePage`
+- Hook with: `$pagesAccess->updatePage()`
 
 ## Arguments
 

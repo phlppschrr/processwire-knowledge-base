@@ -1,4 +1,4 @@
-# $field->___getConfigInputfields(): InputfieldWrapper
+# $field->getConfigInputfields(): InputfieldWrapper
 
 Source: `wire/core/Field.php`
 
@@ -8,8 +8,14 @@ Get any Inputfields needed to configure the field in the admin.
 
 ~~~~~
 // basic usage
-$inputfieldWrapper = $field->___getConfigInputfields();
+$inputfieldWrapper = $field->getConfigInputfields();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigInputfields`
+- Implementation: `___getConfigInputfields`
+- Hook with: `$field->getConfigInputfields()`
 
 ## Return value
 

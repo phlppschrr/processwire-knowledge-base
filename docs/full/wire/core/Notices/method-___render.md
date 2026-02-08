@@ -1,4 +1,4 @@
-# $notices->___render(array $options = []): string
+# $notices->render(array $options = []): string
 
 Source: `wire/core/Notices.php`
 
@@ -8,11 +8,17 @@ Render these notices as HTML
 
 ~~~~~
 // basic usage
-$string = $notices->___render();
+$string = $notices->render();
 
 // usage with all arguments
-$string = $notices->___render(array $options = []);
+$string = $notices->render(array $options = []);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$notices->render()`
 
 ## Arguments
 

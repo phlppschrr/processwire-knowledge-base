@@ -1,4 +1,4 @@
-# $users->___saveReady(Page $page): array
+# $users->saveReady(Page $page): array
 
 Source: `wire/core/Users.php`
 
@@ -8,11 +8,17 @@ Hook called just before a user is saved
 
 ~~~~~
 // basic usage
-$array = $users->___saveReady($page);
+$array = $users->saveReady($page);
 
 // usage with all arguments
-$array = $users->___saveReady(Page $page);
+$array = $users->saveReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveReady`
+- Implementation: `___saveReady`
+- Hook with: `$users->saveReady()`
 
 ## Arguments
 

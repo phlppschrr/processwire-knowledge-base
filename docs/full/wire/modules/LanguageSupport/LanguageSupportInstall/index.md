@@ -14,7 +14,7 @@ Groups:
 Group: [other](group-other.md)
 
 Methods:
-Method: [___install()](method-___install.md)
+Method: [install()](method-___install.md) (hookable)
 Method: [addFilesFields()](method-addfilesfields.md)
-Method: [___uninstall()](method-___uninstall.md)
+Method: [uninstall()](method-___uninstall.md) (hookable)
 Method: [getModuleConfigInputfields()](method-getmoduleconfiginputfields.md)

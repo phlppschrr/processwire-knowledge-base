@@ -1,4 +1,4 @@
-# $fieldtype->___install()
+# $fieldtype->install()
 
 Source: `wire/core/Fieldtype.php`
 
@@ -12,8 +12,14 @@ Install this Fieldtype, consistent with optional Module interface
 
 ~~~~~
 // basic usage
-$result = $fieldtype->___install();
+$result = $fieldtype->install();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$fieldtype->install()`
 
 ## Exceptions
 

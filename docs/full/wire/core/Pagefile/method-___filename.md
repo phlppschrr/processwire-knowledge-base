@@ -1,4 +1,4 @@
-# $pagefile->___filename()
+# $pagefile->filename()
 
 Source: `wire/core/Pagefile.php`
 
@@ -8,5 +8,11 @@ Hookable version of filename() method
 
 ~~~~~
 // basic usage
-$result = $pagefile->___filename();
+$result = $pagefile->filename();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `filename`
+- Implementation: `___filename`
+- Hook with: `$pagefile->filename()`

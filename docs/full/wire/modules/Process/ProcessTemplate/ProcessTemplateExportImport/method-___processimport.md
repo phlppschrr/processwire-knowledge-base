@@ -1,4 +1,4 @@
-# $processTemplateExportImport->___processImport()
+# $processTemplateExportImport->processImport()
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
@@ -8,5 +8,11 @@ Commit changed field data
 
 ~~~~~
 // basic usage
-$result = $processTemplateExportImport->___processImport();
+$result = $processTemplateExportImport->processImport();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `processImport`
+- Implementation: `___processImport`
+- Hook with: `$processTemplateExportImport->processImport()`

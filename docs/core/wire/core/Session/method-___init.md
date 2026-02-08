@@ -1,4 +1,4 @@
-# $session->___init()
+# $session->init()
 
 Source: `wire/core/Session.php`
 
@@ -11,5 +11,11 @@ is called to provide an alternate save handler.
 
 ~~~~~
 // basic usage
-$result = $session->___init();
+$result = $session->init();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `init`
+- Implementation: `___init`
+- Hook with: `$session->init()`

@@ -1,4 +1,4 @@
-# $page->___references($selector = '', $field = ''): PageArray|array
+# $page->references($selector = '', $field = ''): PageArray|array
 
 Source: `wire/core/Page.php`
 
@@ -12,11 +12,17 @@ boolean `true` as a shortcut to specify that you do not want any exclusions.
 
 ~~~~~
 // basic usage
-$items = $page->___references();
+$items = $page->references();
 
 // usage with all arguments
-$items = $page->___references($selector = '', $field = '');
+$items = $page->references($selector = '', $field = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `references`
+- Implementation: `___references`
+- Hook with: `$page->references()`
 
 ## Arguments
 

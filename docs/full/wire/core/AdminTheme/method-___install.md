@@ -1,4 +1,4 @@
-# $adminTheme->___install()
+# $adminTheme->install()
 
 Source: `wire/core/AdminTheme.php`
 
@@ -10,5 +10,11 @@ Other admin themes using an install() method must call this install before their
 
 ~~~~~
 // basic usage
-$result = $adminTheme->___install();
+$result = $adminTheme->install();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$adminTheme->install()`

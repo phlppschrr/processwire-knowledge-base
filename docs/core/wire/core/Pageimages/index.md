@@ -34,4 +34,4 @@ Methods:
 Method: [add()](method-add.md)
 Method: [getFile()](method-getfile.md)
 Method: [getAllVariations()](method-getallvariations.md)
-Method: [___render()](method-___render.md)
+Method: [render()](method-___render.md) (hookable)

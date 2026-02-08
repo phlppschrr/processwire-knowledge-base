@@ -1,4 +1,4 @@
-# $commentNotifications->___sendConfirmationEmail(Comment $comment, $email, $subcode): mixed
+# $commentNotifications->sendConfirmationEmail(Comment $comment, $email, $subcode): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
@@ -8,11 +8,17 @@ Send confirmation/opt-in email for notifications (not yet active)
 
 ~~~~~
 // basic usage
-$result = $commentNotifications->___sendConfirmationEmail($comment, $email, $subcode);
+$result = $commentNotifications->sendConfirmationEmail($comment, $email, $subcode);
 
 // usage with all arguments
-$result = $commentNotifications->___sendConfirmationEmail(Comment $comment, $email, $subcode);
+$result = $commentNotifications->sendConfirmationEmail(Comment $comment, $email, $subcode);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sendConfirmationEmail`
+- Implementation: `___sendConfirmationEmail`
+- Hook with: `$commentNotifications->sendConfirmationEmail()`
 
 ## Arguments
 

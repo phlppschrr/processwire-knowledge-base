@@ -1,4 +1,4 @@
-# $fieldtypeMulti->___sleepValue(Page $page, Field $field, $value): array
+# $fieldtypeMulti->sleepValue(Page $page, Field $field, $value): array
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -15,11 +15,17 @@ See FieldtypePagefiles module class for an example of this.
 
 ~~~~~
 // basic usage
-$array = $fieldtypeMulti->___sleepValue($page, $field, $value);
+$array = $fieldtypeMulti->sleepValue($page, $field, $value);
 
 // usage with all arguments
-$array = $fieldtypeMulti->___sleepValue(Page $page, Field $field, $value);
+$array = $fieldtypeMulti->sleepValue(Page $page, Field $field, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `sleepValue`
+- Implementation: `___sleepValue`
+- Hook with: `$fieldtypeMulti->sleepValue()`
 
 ## Arguments
 

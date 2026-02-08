@@ -1,4 +1,4 @@
-# $wireTextTools->___wordAlternates($word, array $options): array
+# $wireTextTools->wordAlternates($word, array $options): array
 
 Source: `wire/core/WireTextTools.php`
 
@@ -45,11 +45,17 @@ echo implode(', ', $words); // outputs: cats, kitty, kitten, feline, felines
 
 ~~~~~
 // basic usage
-$array = $wireTextTools->___wordAlternates($word, $options);
+$array = $wireTextTools->wordAlternates($word, $options);
 
 // usage with all arguments
-$array = $wireTextTools->___wordAlternates($word, array $options);
+$array = $wireTextTools->wordAlternates($word, array $options);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `wordAlternates`
+- Implementation: `___wordAlternates`
+- Hook with: `$wireTextTools->wordAlternates()`
 
 ## Arguments
 

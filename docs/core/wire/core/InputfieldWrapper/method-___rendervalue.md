@@ -1,4 +1,4 @@
-# $inputfieldWrapper->___renderValue(): string
+# $inputfieldWrapper->renderValue(): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,8 +8,14 @@ Render the output of this Inputfield and its children, showing values only (no i
 
 ~~~~~
 // basic usage
-$string = $inputfieldWrapper->___renderValue();
+$string = $inputfieldWrapper->renderValue();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderValue`
+- Implementation: `___renderValue`
+- Hook with: `$inputfieldWrapper->renderValue()`
 
 ## Return value
 

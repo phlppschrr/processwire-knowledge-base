@@ -1,4 +1,4 @@
-# $pages->___moved(Page $page)
+# $pages->moved(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -10,11 +10,17 @@ Note the previous parent is accessible in the `$page->parentPrevious` property.
 
 ~~~~~
 // basic usage
-$result = $pages->___moved($page);
+$result = $pages->moved($page);
 
 // usage with all arguments
-$result = $pages->___moved(Page $page);
+$result = $pages->moved(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `moved`
+- Implementation: `___moved`
+- Hook with: `$pages->moved()`
 
 ## Arguments
 

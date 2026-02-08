@@ -1,4 +1,4 @@
-# $field->___viewable(?Page $page = null, ?User $user = null): bool
+# $field->viewable(?Page $page = null, ?User $user = null): bool
 
 Source: `wire/core/Field.php`
 
@@ -14,11 +14,17 @@ Is this field viewable?
 
 ~~~~~
 // basic usage
-$bool = $field->___viewable();
+$bool = $field->viewable();
 
 // usage with all arguments
-$bool = $field->___viewable(?Page $page = null, ?User $user = null);
+$bool = $field->viewable(?Page $page = null, ?User $user = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `viewable`
+- Implementation: `___viewable`
+- Hook with: `$field->viewable()`
 
 ## Arguments
 

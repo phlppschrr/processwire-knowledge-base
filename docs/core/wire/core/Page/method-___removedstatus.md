@@ -1,4 +1,4 @@
-# $page->___removedStatus($name, $value)
+# $page->removedStatus($name, $value)
 
 Source: `wire/core/Page.php`
 
@@ -19,8 +19,14 @@ $wire->addHook('Page::removedStatus', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___removedStatus($name, $value);
+$result = $page->removedStatus($name, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `removedStatus`
+- Implementation: `___removedStatus`
+- Hook with: `$page->removedStatus()`
 
 ## Arguments
 

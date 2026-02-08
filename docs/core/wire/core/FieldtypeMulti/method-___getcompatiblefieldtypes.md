@@ -1,4 +1,4 @@
-# $fieldtypeMulti->___getCompatibleFieldtypes(Field $field): Fieldtypes|null
+# $fieldtypeMulti->getCompatibleFieldtypes(Field $field): Fieldtypes|null
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -8,11 +8,17 @@ Get an array of Fieldtypes that are compatible with this one (i.e. ones the user
 
 ~~~~~
 // basic usage
-$fieldtypes = $fieldtypeMulti->___getCompatibleFieldtypes($field);
+$fieldtypes = $fieldtypeMulti->getCompatibleFieldtypes($field);
 
 // usage with all arguments
-$fieldtypes = $fieldtypeMulti->___getCompatibleFieldtypes(Field $field);
+$fieldtypes = $fieldtypeMulti->getCompatibleFieldtypes(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getCompatibleFieldtypes`
+- Implementation: `___getCompatibleFieldtypes`
+- Hook with: `$fieldtypeMulti->getCompatibleFieldtypes()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $wireSaveableItemsLookup->___delete(Saveable $item): bool
+# $wireSaveableItemsLookup->delete(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 
@@ -8,11 +8,17 @@ Delete the provided item from the database
 
 ~~~~~
 // basic usage
-$bool = $wireSaveableItemsLookup->___delete($item);
+$bool = $wireSaveableItemsLookup->delete($item);
 
 // usage with all arguments
-$bool = $wireSaveableItemsLookup->___delete(Saveable $item);
+$bool = $wireSaveableItemsLookup->delete(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$wireSaveableItemsLookup->delete()`
 
 ## Arguments
 

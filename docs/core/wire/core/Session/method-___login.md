@@ -1,4 +1,4 @@
-# $session->___login($name, $pass, $force = false): User|null
+# $session->login($name, $pass, $force = false): User|null
 
 Source: `wire/core/Session.php`
 
@@ -21,11 +21,17 @@ if($u) {
 
 ~~~~~
 // basic usage
-$user = $session->___login($name, $pass);
+$user = $session->login($name, $pass);
 
 // usage with all arguments
-$user = $session->___login($name, $pass, $force = false);
+$user = $session->login($name, $pass, $force = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `login`
+- Implementation: `___login`
+- Hook with: `$session->login()`
 
 ## Arguments
 

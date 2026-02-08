@@ -1,4 +1,4 @@
-# $fields->___save(Saveable $item): bool
+# $fields->save(Saveable $item): bool
 
 Source: `wire/core/Fields.php`
 
@@ -17,11 +17,17 @@ $fields->save($field);
 
 ~~~~~
 // basic usage
-$bool = $fields->___save($item);
+$bool = $fields->save($item);
 
 // usage with all arguments
-$bool = $fields->___save(Saveable $item);
+$bool = $fields->save(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$fields->save()`
 
 ## Arguments
 

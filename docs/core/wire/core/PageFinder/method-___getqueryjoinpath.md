@@ -1,4 +1,4 @@
-# $pageFinder->___getQueryJoinPath(DatabaseQuerySelect $query, $selector)
+# $pageFinder->getQueryJoinPath(DatabaseQuerySelect $query, $selector)
 
 Source: `wire/core/PageFinder.php`
 
@@ -8,11 +8,17 @@ Special case when requested value is path or URL
 
 ~~~~~
 // basic usage
-$result = $pageFinder->___getQueryJoinPath($query, $selector);
+$result = $pageFinder->getQueryJoinPath($query, $selector);
 
 // usage with all arguments
-$result = $pageFinder->___getQueryJoinPath(DatabaseQuerySelect $query, $selector);
+$result = $pageFinder->getQueryJoinPath(DatabaseQuerySelect $query, $selector);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getQueryJoinPath`
+- Implementation: `___getQueryJoinPath`
+- Hook with: `$pageFinder->getQueryJoinPath()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pageimages->___render($markup = '', $options = array()): string
+# $pageimages->render($markup = '', $options = array()): string
 
 Source: `wire/core/Pageimages.php`
 
@@ -49,11 +49,17 @@ echo "<ul>" . $page->images->render([
 
 ~~~~~
 // basic usage
-$string = $pageimages->___render();
+$string = $pageimages->render();
 
 // usage with all arguments
-$string = $pageimages->___render($markup = '', $options = array());
+$string = $pageimages->render($markup = '', $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$pageimages->render()`
 
 ## Arguments
 

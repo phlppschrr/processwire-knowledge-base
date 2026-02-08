@@ -1,4 +1,4 @@
-# $fieldtype->___cloneField(Field $field): Field
+# $fieldtype->cloneField(Field $field): Field
 
 Source: `wire/core/Fieldtype.php`
 
@@ -8,11 +8,17 @@ Return a cloned copy of $field
 
 ~~~~~
 // basic usage
-$field = $fieldtype->___cloneField($field);
+$field = $fieldtype->cloneField($field);
 
 // usage with all arguments
-$field = $fieldtype->___cloneField(Field $field);
+$field = $fieldtype->cloneField(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `cloneField`
+- Implementation: `___cloneField`
+- Hook with: `$fieldtype->cloneField()`
 
 ## Arguments
 

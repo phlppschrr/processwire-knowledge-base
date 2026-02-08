@@ -1,4 +1,4 @@
-# $inputfield->___getConfigAllowContext($field): array
+# $inputfield->getConfigAllowContext($field): array
 
 Source: `wire/core/Inputfield.php`
 
@@ -18,8 +18,14 @@ tab rather than the "Details" tab.
 
 ~~~~~
 // basic usage
-$array = $inputfield->___getConfigAllowContext($field);
+$array = $inputfield->getConfigAllowContext($field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigAllowContext`
+- Implementation: `___getConfigAllowContext`
+- Hook with: `$inputfield->getConfigAllowContext()`
 
 ## Arguments
 

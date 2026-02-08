@@ -1,4 +1,4 @@
-# $templateFile->___fileFailed($filename, \Exception $e): bool
+# $templateFile->fileFailed($filename, \Exception $e): bool
 
 Source: `wire/core/TemplateFile.php`
 
@@ -8,11 +8,17 @@ Called when render of specific file failed with Exception
 
 ~~~~~
 // basic usage
-$bool = $templateFile->___fileFailed($filename, $e);
+$bool = $templateFile->fileFailed($filename, $e);
 
 // usage with all arguments
-$bool = $templateFile->___fileFailed($filename, \Exception $e);
+$bool = $templateFile->fileFailed($filename, \Exception $e);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `fileFailed`
+- Implementation: `___fileFailed`
+- Hook with: `$templateFile->fileFailed()`
 
 ## Arguments
 

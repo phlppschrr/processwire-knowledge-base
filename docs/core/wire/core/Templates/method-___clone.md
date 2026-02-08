@@ -1,4 +1,4 @@
-# $templates->___clone(Saveable $item, $name = ''): bool|Template
+# $templates->clone(Saveable $item, $name = ''): bool|Template
 
 Source: `wire/core/Templates.php`
 
@@ -10,11 +10,17 @@ Note that this also clones the Fieldgroup if the template being cloned has its o
 
 ~~~~~
 // basic usage
-$bool = $templates->___clone($item);
+$bool = $templates->clone($item);
 
 // usage with all arguments
-$bool = $templates->___clone(Saveable $item, $name = '');
+$bool = $templates->clone(Saveable $item, $name = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `clone`
+- Implementation: `___clone`
+- Hook with: `$templates->clone()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pageFinder->___find($selectors, array $options = array()): array|DatabaseQuerySelect
+# $pageFinder->find($selectors, array $options = array()): array|DatabaseQuerySelect
 
 Source: `wire/core/PageFinder.php`
 
@@ -8,11 +8,17 @@ Return all pages matching the given selector.
 
 ~~~~~
 // basic usage
-$array = $pageFinder->___find($selectors);
+$array = $pageFinder->find($selectors);
 
 // usage with all arguments
-$array = $pageFinder->___find($selectors, array $options = array());
+$array = $pageFinder->find($selectors, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `find`
+- Implementation: `___find`
+- Hook with: `$pageFinder->find()`
 
 ## Arguments
 

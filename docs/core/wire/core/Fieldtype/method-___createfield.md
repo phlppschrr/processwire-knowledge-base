@@ -1,4 +1,4 @@
-# $fieldtype->___createField(Field $field): bool
+# $fieldtype->createField(Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -12,11 +12,17 @@ Most Fieldtype modules use this built-in implementation.
 
 ~~~~~
 // basic usage
-$bool = $fieldtype->___createField($field);
+$bool = $fieldtype->createField($field);
 
 // usage with all arguments
-$bool = $fieldtype->___createField(Field $field);
+$bool = $fieldtype->createField(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `createField`
+- Implementation: `___createField`
+- Hook with: `$fieldtype->createField()`
 
 ## Arguments
 

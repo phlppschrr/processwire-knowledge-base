@@ -1,4 +1,4 @@
-# $sanitizer->___testAll($value): array
+# $sanitizer->testAll($value): array
 
 Source: `wire/core/Sanitizer.php`
 
@@ -10,8 +10,14 @@ Used for debugging and testing purposes.
 
 ~~~~~
 // basic usage
-$array = $sanitizer->___testAll($value);
+$array = $sanitizer->testAll($value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `testAll`
+- Implementation: `___testAll`
+- Hook with: `$sanitizer->testAll()`
 
 ## Arguments
 

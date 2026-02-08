@@ -1,4 +1,4 @@
-# $fieldtype->___wakeupValue(Page $page, Field $field, $value): string|int|array|object
+# $fieldtype->wakeupValue(Page $page, Field $field, $value): string|int|array|object
 
 Source: `wire/core/Fieldtype.php`
 
@@ -14,11 +14,17 @@ it to this method before making it a part of the Page.
 
 ~~~~~
 // basic usage
-$string = $fieldtype->___wakeupValue($page, $field, $value);
+$string = $fieldtype->wakeupValue($page, $field, $value);
 
 // usage with all arguments
-$string = $fieldtype->___wakeupValue(Page $page, Field $field, $value);
+$string = $fieldtype->wakeupValue(Page $page, Field $field, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `wakeupValue`
+- Implementation: `___wakeupValue`
+- Hook with: `$fieldtype->wakeupValue()`
 
 ## Arguments
 

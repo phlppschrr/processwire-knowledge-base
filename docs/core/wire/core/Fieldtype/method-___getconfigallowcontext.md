@@ -1,4 +1,4 @@
-# $fieldtype->___getConfigAllowContext(Field $field): array
+# $fieldtype->getConfigAllowContext(Field $field): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -14,11 +14,17 @@ than sharing the same setting globally.
 
 ~~~~~
 // basic usage
-$array = $fieldtype->___getConfigAllowContext($field);
+$array = $fieldtype->getConfigAllowContext($field);
 
 // usage with all arguments
-$array = $fieldtype->___getConfigAllowContext(Field $field);
+$array = $fieldtype->getConfigAllowContext(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigAllowContext`
+- Implementation: `___getConfigAllowContext`
+- Hook with: `$fieldtype->getConfigAllowContext()`
 
 ## Arguments
 

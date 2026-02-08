@@ -1,4 +1,4 @@
-# $processTemplateExportImport->___buildImport(): string
+# $processTemplateExportImport->buildImport(): string
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
@@ -8,8 +8,14 @@ Execute import
 
 ~~~~~
 // basic usage
-$string = $processTemplateExportImport->___buildImport();
+$string = $processTemplateExportImport->buildImport();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `buildImport`
+- Implementation: `___buildImport`
+- Hook with: `$processTemplateExportImport->buildImport()`
 
 ## Return value
 

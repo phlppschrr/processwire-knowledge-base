@@ -59,7 +59,10 @@
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefiles/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefiles/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "deleteAll",
@@ -71,7 +74,10 @@
         },
         {
           "name": "___clone",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefiles/method-___clone.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefiles/method-___clone.md",
+          "hookable": true,
+          "name_public": "clone",
+          "name_internal": "___clone"
         },
         {
           "name": "path",
@@ -376,7 +382,10 @@
         },
         {
           "name": "___and",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireData/method-___and.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireData/method-___and.md",
+          "hookable": true,
+          "name_public": "and",
+          "name_internal": "___and"
         },
         {
           "name": "__debugInfo",
@@ -411,7 +420,10 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimages/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimages/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         }
       ],
       "constants": []
@@ -864,7 +876,10 @@
         },
         {
           "name": "___resize",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ImageSizer/method-___resize.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ImageSizer/method-___resize.md",
+          "hookable": true,
+          "name_public": "resize",
+          "name_internal": "___resize"
         },
         {
           "name": "resizeFallback",
@@ -1304,11 +1319,17 @@
         },
         {
           "name": "___compile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompiler/method-___compile.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompiler/method-___compile.md",
+          "hookable": true,
+          "name_public": "compile",
+          "name_internal": "___compile"
         },
         {
           "name": "___compileData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompiler/method-___compiledata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompiler/method-___compiledata.md",
+          "hookable": true,
+          "name_public": "compileData",
+          "name_internal": "___compileData"
         },
         {
           "name": "compileComments",
@@ -1453,7 +1474,10 @@
         },
         {
           "name": "___start",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___start.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___start.md",
+          "hookable": true,
+          "name_public": "start",
+          "name_internal": "___start"
         },
         {
           "name": "startUser",
@@ -1481,35 +1505,59 @@
         },
         {
           "name": "___buildAuthCodeForm",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___buildauthcodeform.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___buildauthcodeform.md",
+          "hookable": true,
+          "name_public": "buildAuthCodeForm",
+          "name_internal": "___buildAuthCodeForm"
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "___process",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___process.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___process.md",
+          "hookable": true,
+          "name_public": "process",
+          "name_internal": "___process"
         },
         {
           "name": "___getUserSettingsInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___getusersettingsinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___getusersettingsinputfields.md",
+          "hookable": true,
+          "name_public": "getUserSettingsInputfields",
+          "name_internal": "___getUserSettingsInputfields"
         },
         {
           "name": "___getUserSettingsInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___getusersettingsinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___getusersettingsinputfields.md",
+          "hookable": true,
+          "name_public": "getUserSettingsInputfields",
+          "name_internal": "___getUserSettingsInputfields"
         },
         {
           "name": "___getUserEnabledInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___getuserenabledinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___getuserenabledinputfields.md",
+          "hookable": true,
+          "name_public": "getUserEnabledInputfields",
+          "name_internal": "___getUserEnabledInputfields"
         },
         {
           "name": "___processUserSettingsInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___processusersettingsinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___processusersettingsinputfields.md",
+          "hookable": true,
+          "name_public": "processUserSettingsInputfields",
+          "name_internal": "___processUserSettingsInputfields"
         },
         {
           "name": "___processUserEnabledInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___processuserenabledinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___processuserenabledinputfields.md",
+          "hookable": true,
+          "name_public": "processUserEnabledInputfields",
+          "name_internal": "___processUserEnabledInputfields"
         },
         {
           "name": "getModuleConfigInputfields",
@@ -1593,15 +1641,24 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___uninstall",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___uninstall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Tfa/method-___uninstall.md",
+          "hookable": true,
+          "name_public": "uninstall",
+          "name_internal": "___uninstall"
         }
       ],
       "constants": []
@@ -1719,7 +1776,10 @@
         },
         {
           "name": "___new",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___new.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___new.md",
+          "hookable": true,
+          "name_public": "new",
+          "name_internal": "___new"
         },
         {
           "name": "import",
@@ -1763,7 +1823,10 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "setAttributeInMarkup",
@@ -1779,11 +1842,17 @@
         },
         {
           "name": "___renderValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___rendervalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___rendervalue.md",
+          "hookable": true,
+          "name_public": "renderValue",
+          "name_internal": "___renderValue"
         },
         {
           "name": "___renderInputfield",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___renderinputfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___renderinputfield.md",
+          "hookable": true,
+          "name_public": "renderInputfield",
+          "name_internal": "___renderInputfield"
         },
         {
           "name": "renderInputfieldAjaxPlaceholder",
@@ -1791,7 +1860,10 @@
         },
         {
           "name": "___processInput",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___processinput.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___processinput.md",
+          "hookable": true,
+          "name_public": "processInput",
+          "name_internal": "___processInput"
         },
         {
           "name": "isEmpty",
@@ -1855,7 +1927,10 @@
         },
         {
           "name": "___getConfigInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___getconfiginputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/InputfieldWrapper/method-___getconfiginputfields.md",
+          "hookable": true,
+          "name_public": "getConfigInputfields",
+          "name_internal": "___getConfigInputfields"
         },
         {
           "name": "importArray",
@@ -1947,7 +2022,10 @@
         },
         {
           "name": "___new",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___new.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___new.md",
+          "hookable": true,
+          "name_public": "new",
+          "name_internal": "___new"
         },
         {
           "name": "addTemplates",
@@ -1983,15 +2061,24 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___add",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___add.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___add.md",
+          "hookable": true,
+          "name_public": "add",
+          "name_internal": "___add"
         },
         {
           "name": "getTemplate",
@@ -2035,27 +2122,45 @@
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___saved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___saved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___saved.md",
+          "hookable": true,
+          "name_public": "saved",
+          "name_internal": "___saved"
         },
         {
           "name": "___added",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___added.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___added.md",
+          "hookable": true,
+          "name_public": "added",
+          "name_internal": "___added"
         },
         {
           "name": "___deleteReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___deleteready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___deleteready.md",
+          "hookable": true,
+          "name_public": "deleteReady",
+          "name_internal": "___deleteReady"
         },
         {
           "name": "___deleted",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___deleted.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesType/method-___deleted.md",
+          "hookable": true,
+          "name_public": "deleted",
+          "name_internal": "___deleted"
         }
       ],
       "constants": []
@@ -2078,15 +2183,24 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Roles/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Roles/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Roles/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Roles/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___add",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Roles/method-___add.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Roles/method-___add.md",
+          "hookable": true,
+          "name_public": "add",
+          "name_internal": "___add"
         }
       ],
       "constants": []
@@ -2301,7 +2415,10 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "checkFieldTable",
@@ -2309,23 +2426,38 @@
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___clone",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___clone.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___clone.md",
+          "hookable": true,
+          "name_public": "clone",
+          "name_internal": "___clone"
         },
         {
           "name": "___saveFieldgroupContext",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___savefieldgroupcontext.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___savefieldgroupcontext.md",
+          "hookable": true,
+          "name_public": "saveFieldgroupContext",
+          "name_internal": "___saveFieldgroupContext"
         },
         {
           "name": "___changeFieldtype",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___changefieldtype.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___changefieldtype.md",
+          "hookable": true,
+          "name_public": "changeFieldtype",
+          "name_internal": "___changeFieldtype"
         },
         {
           "name": "___deleteFieldDataByTemplate",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___deletefielddatabytemplate.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___deletefielddatabytemplate.md",
+          "hookable": true,
+          "name_public": "deleteFieldDataByTemplate",
+          "name_internal": "___deleteFieldDataByTemplate"
         },
         {
           "name": "getNumPages",
@@ -2341,7 +2473,10 @@
         },
         {
           "name": "___getTags",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___gettags.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___gettags.md",
+          "hookable": true,
+          "name_public": "getTags",
+          "name_internal": "___getTags"
         },
         {
           "name": "findByTag",
@@ -2357,15 +2492,24 @@
         },
         {
           "name": "___changedType",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___changedtype.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___changedtype.md",
+          "hookable": true,
+          "name_public": "changedType",
+          "name_internal": "___changedType"
         },
         {
           "name": "___changeTypeReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___changetypeready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___changetypeready.md",
+          "hookable": true,
+          "name_public": "changeTypeReady",
+          "name_internal": "___changeTypeReady"
         },
         {
           "name": "___applySetupName",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___applysetupname.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fields/method-___applysetupname.md",
+          "hookable": true,
+          "name_public": "applySetupName",
+          "name_internal": "___applySetupName"
         }
       ],
       "constants": []
@@ -2396,15 +2540,24 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___clone",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___clone.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___clone.md",
+          "hookable": true,
+          "name_public": "clone",
+          "name_internal": "___clone"
         },
         {
           "name": "rename",
@@ -2420,11 +2573,17 @@
         },
         {
           "name": "___getExportData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___getexportdata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___getexportdata.md",
+          "hookable": true,
+          "name_public": "getExportData",
+          "name_internal": "___getExportData"
         },
         {
           "name": "___setImportData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___setimportdata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___setimportdata.md",
+          "hookable": true,
+          "name_public": "setImportData",
+          "name_internal": "___setImportData"
         },
         {
           "name": "getParentPage",
@@ -2440,11 +2599,17 @@
         },
         {
           "name": "___getTags",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___gettags.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___gettags.md",
+          "hookable": true,
+          "name_public": "getTags",
+          "name_internal": "___getTags"
         },
         {
           "name": "___fileModified",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___filemodified.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Templates/method-___filemodified.md",
+          "hookable": true,
+          "name_public": "fileModified",
+          "name_internal": "___fileModified"
         }
       ],
       "constants": []
@@ -3003,7 +3168,10 @@
         },
         {
           "name": "___execute",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessController/method-___execute.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessController/method-___execute.md",
+          "hookable": true,
+          "name_public": "execute",
+          "name_internal": "___execute"
         },
         {
           "name": "getViewFile",
@@ -3345,11 +3513,17 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___uninstall",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___uninstall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___uninstall.md",
+          "hookable": true,
+          "name_public": "uninstall",
+          "name_internal": "___uninstall"
         },
         {
           "name": "set",
@@ -3433,11 +3607,17 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "___renderValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___rendervalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___rendervalue.md",
+          "hookable": true,
+          "name_public": "renderValue",
+          "name_internal": "___renderValue"
         },
         {
           "name": "renderReady",
@@ -3445,11 +3625,17 @@
         },
         {
           "name": "___renderReadyHook",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___renderreadyhook.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___renderreadyhook.md",
+          "hookable": true,
+          "name_public": "renderReadyHook",
+          "name_internal": "___renderReadyHook"
         },
         {
           "name": "___processInput",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___processinput.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___processinput.md",
+          "hookable": true,
+          "name_public": "processInput",
+          "name_internal": "___processInput"
         },
         {
           "name": "isEmpty",
@@ -3457,15 +3643,24 @@
         },
         {
           "name": "___getConfigInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___getconfiginputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___getconfiginputfields.md",
+          "hookable": true,
+          "name_public": "getConfigInputfields",
+          "name_internal": "___getConfigInputfields"
         },
         {
           "name": "___getConfigArray",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___getconfigarray.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___getconfigarray.md",
+          "hookable": true,
+          "name_public": "getConfigArray",
+          "name_internal": "___getConfigArray"
         },
         {
           "name": "___getConfigAllowContext",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___getconfigallowcontext.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Inputfield/method-___getconfigallowcontext.md",
+          "hookable": true,
+          "name_public": "getConfigAllowContext",
+          "name_internal": "___getConfigAllowContext"
         },
         {
           "name": "error",
@@ -3677,7 +3872,10 @@
         },
         {
           "name": "___callUnknown",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireInputData/method-___callunknown.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireInputData/method-___callunknown.md",
+          "hookable": true,
+          "name_public": "callUnknown",
+          "name_internal": "___callUnknown"
         }
       ],
       "constants": []
@@ -3708,7 +3906,10 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireLog/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireLog/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "getLogs",
@@ -3827,15 +4028,24 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___add",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___add.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___add.md",
+          "hookable": true,
+          "name_public": "add",
+          "name_internal": "___add"
         },
         {
           "name": "getReducerPermissions",
@@ -3847,11 +4057,17 @@
         },
         {
           "name": "___saved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___saved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___saved.md",
+          "hookable": true,
+          "name_public": "saved",
+          "name_internal": "___saved"
         },
         {
           "name": "___deleted",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___deleted.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Permissions/method-___deleted.md",
+          "hookable": true,
+          "name_public": "deleted",
+          "name_internal": "___deleted"
         }
       ],
       "constants": []
@@ -4011,7 +4227,10 @@
         },
         {
           "name": "___getExtraMarkup",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminTheme/method-___getextramarkup.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminTheme/method-___getextramarkup.md",
+          "hookable": true,
+          "name_public": "getExtraMarkup",
+          "name_internal": "___getExtraMarkup"
         },
         {
           "name": "addExtraMarkup",
@@ -4031,7 +4250,10 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminTheme/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminTheme/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         }
       ],
       "constants": []
@@ -4116,11 +4338,17 @@
         },
         {
           "name": "___init",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___init.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___init.md",
+          "hookable": true,
+          "name_public": "init",
+          "name_internal": "___init"
         },
         {
           "name": "___isValidSession",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___isvalidsession.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___isvalidsession.md",
+          "hookable": true,
+          "name_public": "isValidSession",
+          "name_internal": "___isValidSession"
         },
         {
           "name": "isValidFingerprint",
@@ -4188,7 +4416,10 @@
         },
         {
           "name": "___login",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___login.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___login.md",
+          "hookable": true,
+          "name_public": "login",
+          "name_internal": "___login"
         },
         {
           "name": "forceLogin",
@@ -4196,27 +4427,45 @@
         },
         {
           "name": "___loginSuccess",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___loginsuccess.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___loginsuccess.md",
+          "hookable": true,
+          "name_public": "loginSuccess",
+          "name_internal": "___loginSuccess"
         },
         {
           "name": "___loginFailure",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___loginfailure.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___loginfailure.md",
+          "hookable": true,
+          "name_public": "loginFailure",
+          "name_internal": "___loginFailure"
         },
         {
           "name": "___allowLogin",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___allowlogin.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___allowlogin.md",
+          "hookable": true,
+          "name_public": "allowLogin",
+          "name_internal": "___allowLogin"
         },
         {
           "name": "___allowLoginAttempt",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___allowloginattempt.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___allowloginattempt.md",
+          "hookable": true,
+          "name_public": "allowLoginAttempt",
+          "name_internal": "___allowLoginAttempt"
         },
         {
           "name": "___authenticate",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___authenticate.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___authenticate.md",
+          "hookable": true,
+          "name_public": "authenticate",
+          "name_internal": "___authenticate"
         },
         {
           "name": "___logout",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___logout.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___logout.md",
+          "hookable": true,
+          "name_public": "logout",
+          "name_internal": "___logout"
         },
         {
           "name": "setCookie",
@@ -4232,11 +4481,17 @@
         },
         {
           "name": "___logoutSuccess",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___logoutsuccess.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___logoutsuccess.md",
+          "hookable": true,
+          "name_public": "logoutSuccess",
+          "name_internal": "___logoutSuccess"
         },
         {
           "name": "___redirect",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___redirect.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Session/method-___redirect.md",
+          "hookable": true,
+          "name_public": "redirect",
+          "name_internal": "___redirect"
         },
         {
           "name": "location",
@@ -4374,11 +4629,17 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Notices/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Notices/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "___renderText",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Notices/method-___rendertext.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Notices/method-___rendertext.md",
+          "hookable": true,
+          "name_public": "renderText",
+          "name_internal": "___renderText"
         }
       ],
       "constants": []
@@ -4526,7 +4787,10 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "filedata",
@@ -4554,11 +4818,17 @@
         },
         {
           "name": "___url",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___url.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___url.md",
+          "hookable": true,
+          "name_public": "url",
+          "name_internal": "___url"
         },
         {
           "name": "___httpUrl",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___httpurl.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___httpurl.md",
+          "hookable": true,
+          "name_public": "httpUrl",
+          "name_internal": "___httpUrl"
         },
         {
           "name": "filename",
@@ -4566,7 +4836,10 @@
         },
         {
           "name": "___filename",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___filename.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pagefile/method-___filename.md",
+          "hookable": true,
+          "name_public": "filename",
+          "name_internal": "___filename"
         },
         {
           "name": "basename",
@@ -4674,7 +4947,10 @@
         },
         {
           "name": "___load",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___load.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___load.md",
+          "hookable": true,
+          "name_public": "load",
+          "name_internal": "___load"
         },
         {
           "name": "getAll",
@@ -4710,11 +4986,17 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "deleteField",
@@ -4722,27 +5004,45 @@
         },
         {
           "name": "___clone",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___clone.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___clone.md",
+          "hookable": true,
+          "name_public": "clone",
+          "name_internal": "___clone"
         },
         {
           "name": "___saveContext",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___savecontext.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___savecontext.md",
+          "hookable": true,
+          "name_public": "saveContext",
+          "name_internal": "___saveContext"
         },
         {
           "name": "___getExportData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___getexportdata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___getexportdata.md",
+          "hookable": true,
+          "name_public": "getExportData",
+          "name_internal": "___getExportData"
         },
         {
           "name": "___setImportData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___setimportdata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___setimportdata.md",
+          "hookable": true,
+          "name_public": "setImportData",
+          "name_internal": "___setImportData"
         },
         {
           "name": "___fieldAdded",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___fieldadded.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___fieldadded.md",
+          "hookable": true,
+          "name_public": "fieldAdded",
+          "name_internal": "___fieldAdded"
         },
         {
           "name": "___fieldRemoved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___fieldremoved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldgroups/method-___fieldremoved.md",
+          "hookable": true,
+          "name_public": "fieldRemoved",
+          "name_internal": "___fieldRemoved"
         }
       ],
       "constants": []
@@ -4994,7 +5294,10 @@
         },
         {
           "name": "___relativeTimeStr",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireDateTime/method-___relativetimestr.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireDateTime/method-___relativetimestr.md",
+          "hookable": true,
+          "name_public": "relativeTimeStr",
+          "name_internal": "___relativeTimeStr"
         },
         {
           "name": "elapsedTimeStr",
@@ -5125,7 +5428,10 @@
         },
         {
           "name": "___getCustomVariableValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Selectors/method-___getcustomvariablevalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Selectors/method-___getcustomvariablevalue.md",
+          "hookable": true,
+          "name_public": "getCustomVariableValue",
+          "name_internal": "___getCustomVariableValue"
         }
       ],
       "constants": [
@@ -5337,11 +5643,17 @@
         },
         {
           "name": "___hasPagePermission",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/User/method-___haspagepermission.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/User/method-___haspagepermission.md",
+          "hookable": true,
+          "name_public": "hasPagePermission",
+          "name_internal": "___hasPagePermission"
         },
         {
           "name": "___hasTemplatePermission",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/User/method-___hastemplatepermission.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/User/method-___hastemplatepermission.md",
+          "hookable": true,
+          "name_public": "hasTemplatePermission",
+          "name_internal": "___hasTemplatePermission"
         },
         {
           "name": "getPermissions",
@@ -5611,31 +5923,52 @@
         },
         {
           "name": "___getConfigInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfiginputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfiginputfields.md",
+          "hookable": true,
+          "name_public": "getConfigInputfields",
+          "name_internal": "___getConfigInputfields"
         },
         {
           "name": "___getConfigArray",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfigarray.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfigarray.md",
+          "hookable": true,
+          "name_public": "getConfigArray",
+          "name_internal": "___getConfigArray"
         },
         {
           "name": "___getConfigAllowContext",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfigallowcontext.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfigallowcontext.md",
+          "hookable": true,
+          "name_public": "getConfigAllowContext",
+          "name_internal": "___getConfigAllowContext"
         },
         {
           "name": "___getConfigAdvancedInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfigadvancedinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getconfigadvancedinputfields.md",
+          "hookable": true,
+          "name_public": "getConfigAdvancedInputfields",
+          "name_internal": "___getConfigAdvancedInputfields"
         },
         {
           "name": "___exportConfigData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___exportconfigdata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___exportconfigdata.md",
+          "hookable": true,
+          "name_public": "exportConfigData",
+          "name_internal": "___exportConfigData"
         },
         {
           "name": "___importConfigData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___importconfigdata.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___importconfigdata.md",
+          "hookable": true,
+          "name_public": "importConfigData",
+          "name_internal": "___importConfigData"
         },
         {
           "name": "___getCompatibleFieldtypes",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getcompatiblefieldtypes.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getcompatiblefieldtypes.md",
+          "hookable": true,
+          "name_public": "getCompatibleFieldtypes",
+          "name_internal": "___getCompatibleFieldtypes"
         },
         {
           "name": "sanitizeValue",
@@ -5643,11 +5976,17 @@
         },
         {
           "name": "___formatValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___formatvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___formatvalue.md",
+          "hookable": true,
+          "name_public": "formatValue",
+          "name_internal": "___formatValue"
         },
         {
           "name": "___markupValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___markupvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___markupvalue.md",
+          "hookable": true,
+          "name_public": "markupValue",
+          "name_internal": "___markupValue"
         },
         {
           "name": "getBlankValue",
@@ -5663,15 +6002,24 @@
         },
         {
           "name": "___wakeupValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___wakeupvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___wakeupvalue.md",
+          "hookable": true,
+          "name_public": "wakeupValue",
+          "name_internal": "___wakeupValue"
         },
         {
           "name": "___sleepValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___sleepvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___sleepvalue.md",
+          "hookable": true,
+          "name_public": "sleepValue",
+          "name_internal": "___sleepValue"
         },
         {
           "name": "___exportValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___exportvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___exportvalue.md",
+          "hookable": true,
+          "name_public": "exportValue",
+          "name_internal": "___exportValue"
         },
         {
           "name": "getMatchQuery",
@@ -5679,7 +6027,10 @@
         },
         {
           "name": "___createField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___createfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___createfield.md",
+          "hookable": true,
+          "name_public": "createField",
+          "name_internal": "___createField"
         },
         {
           "name": "getDatabaseSchema",
@@ -5691,15 +6042,24 @@
         },
         {
           "name": "___getSelectorInfo",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getselectorinfo.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___getselectorinfo.md",
+          "hookable": true,
+          "name_public": "getSelectorInfo",
+          "name_internal": "___getSelectorInfo"
         },
         {
           "name": "___loadPageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___loadpagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___loadpagefield.md",
+          "hookable": true,
+          "name_public": "loadPageField",
+          "name_internal": "___loadPageField"
         },
         {
           "name": "___loadPageFieldFilter",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___loadpagefieldfilter.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___loadpagefieldfilter.md",
+          "hookable": true,
+          "name_public": "loadPageFieldFilter",
+          "name_internal": "___loadPageFieldFilter"
         },
         {
           "name": "getLoadQuery",
@@ -5711,19 +6071,31 @@
         },
         {
           "name": "___savePageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___savepagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___savepagefield.md",
+          "hookable": true,
+          "name_public": "savePageField",
+          "name_internal": "___savePageField"
         },
         {
           "name": "___deleteField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___deletefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___deletefield.md",
+          "hookable": true,
+          "name_public": "deleteField",
+          "name_internal": "___deleteField"
         },
         {
           "name": "___deletePageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___deletepagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___deletepagefield.md",
+          "hookable": true,
+          "name_public": "deletePageField",
+          "name_internal": "___deletePageField"
         },
         {
           "name": "___emptyPageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___emptypagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___emptypagefield.md",
+          "hookable": true,
+          "name_public": "emptyPageField",
+          "name_internal": "___emptyPageField"
         },
         {
           "name": "emptyPageFieldTable",
@@ -5731,15 +6103,24 @@
         },
         {
           "name": "___replacePageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___replacepagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___replacepagefield.md",
+          "hookable": true,
+          "name_public": "replacePageField",
+          "name_internal": "___replacePageField"
         },
         {
           "name": "___deleteTemplateField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___deletetemplatefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___deletetemplatefield.md",
+          "hookable": true,
+          "name_public": "deleteTemplateField",
+          "name_internal": "___deleteTemplateField"
         },
         {
           "name": "___cloneField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___clonefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___clonefield.md",
+          "hookable": true,
+          "name_public": "cloneField",
+          "name_internal": "___cloneField"
         },
         {
           "name": "get",
@@ -5747,15 +6128,24 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___uninstall",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___uninstall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___uninstall.md",
+          "hookable": true,
+          "name_public": "uninstall",
+          "name_internal": "___uninstall"
         },
         {
           "name": "___upgrade",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___upgrade.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Fieldtype/method-___upgrade.md",
+          "hookable": true,
+          "name_public": "upgrade",
+          "name_internal": "___upgrade"
         },
         {
           "name": "__toString",
@@ -5810,15 +6200,24 @@
         },
         {
           "name": "___init",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessWire/method-___init.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessWire/method-___init.md",
+          "hookable": true,
+          "name_public": "init",
+          "name_internal": "___init"
         },
         {
           "name": "___ready",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessWire/method-___ready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessWire/method-___ready.md",
+          "hookable": true,
+          "name_public": "ready",
+          "name_internal": "___ready"
         },
         {
           "name": "___finished",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessWire/method-___finished.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ProcessWire/method-___finished.md",
+          "hookable": true,
+          "name_public": "finished",
+          "name_internal": "___finished"
         },
         {
           "name": "set",
@@ -6229,7 +6628,10 @@
         },
         {
           "name": "___log",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileValidatorModule/method-___log.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileValidatorModule/method-___log.md",
+          "hookable": true,
+          "name_public": "log",
+          "name_internal": "___log"
         }
       ],
       "constants": []
@@ -6283,7 +6685,10 @@
         },
         {
           "name": "___noCacheURL",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagefileExtra/method-___nocacheurl.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagefileExtra/method-___nocacheurl.md",
+          "hookable": true,
+          "name_public": "noCacheURL",
+          "name_internal": "___noCacheURL"
         },
         {
           "name": "unlink",
@@ -6295,7 +6700,10 @@
         },
         {
           "name": "___create",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagefileExtra/method-___create.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagefileExtra/method-___create.md",
+          "hookable": true,
+          "name_public": "create",
+          "name_internal": "___create"
         },
         {
           "name": "get",
@@ -6402,7 +6810,10 @@
         },
         {
           "name": "___include",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireFileTools/method-___include.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireFileTools/method-___include.md",
+          "hookable": true,
+          "name_public": "include",
+          "name_internal": "___include"
         },
         {
           "name": "includeOnce",
@@ -6501,11 +6912,17 @@
         },
         {
           "name": "___viewable",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___viewable.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___viewable.md",
+          "hookable": true,
+          "name_public": "viewable",
+          "name_internal": "___viewable"
         },
         {
           "name": "___editable",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___editable.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___editable.md",
+          "hookable": true,
+          "name_public": "editable",
+          "name_internal": "___editable"
         },
         {
           "name": "save",
@@ -6525,11 +6942,17 @@
         },
         {
           "name": "___getInputfield",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___getinputfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___getinputfield.md",
+          "hookable": true,
+          "name_public": "getInputfield",
+          "name_internal": "___getInputfield"
         },
         {
           "name": "___getConfigInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___getconfiginputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Field/method-___getconfiginputfields.md",
+          "hookable": true,
+          "name_public": "getConfigInputfields",
+          "name_internal": "___getConfigInputfields"
         },
         {
           "name": "getTable",
@@ -6806,7 +7229,10 @@
         },
         {
           "name": "___imSaveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ImageSizerEngineGD/method-___imsaveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ImageSizerEngineGD/method-___imsaveready.md",
+          "hookable": true,
+          "name_public": "imSaveReady",
+          "name_internal": "___imSaveReady"
         },
         {
           "name": "imSaveWebP",
@@ -7373,7 +7799,10 @@
         },
         {
           "name": "___load",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItemsLookup/method-___load.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItemsLookup/method-___load.md",
+          "hookable": true,
+          "name_public": "load",
+          "name_internal": "___load"
         },
         {
           "name": "initItem",
@@ -7385,11 +7814,17 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItemsLookup/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItemsLookup/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItemsLookup/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItemsLookup/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "__debugInfo",
@@ -7771,11 +8206,17 @@
         },
         {
           "name": "___array",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Sanitizer/method-___array.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Sanitizer/method-___array.md",
+          "hookable": true,
+          "name_public": "array",
+          "name_internal": "___array"
         },
         {
           "name": "___array",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Sanitizer/method-___array.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Sanitizer/method-___array.md",
+          "hookable": true,
+          "name_public": "array",
+          "name_internal": "___array"
         },
         {
           "name": "arrayVal",
@@ -7843,7 +8284,10 @@
         },
         {
           "name": "___testAll",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Sanitizer/method-___testall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Sanitizer/method-___testall.md",
+          "hookable": true,
+          "name_public": "testAll",
+          "name_internal": "___testAll"
         },
         {
           "name": "getAll",
@@ -7931,7 +8375,10 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/TemplateFile/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/TemplateFile/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "fileReady",
@@ -7943,7 +8390,10 @@
         },
         {
           "name": "___fileFailed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/TemplateFile/method-___filefailed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/TemplateFile/method-___filefailed.md",
+          "hookable": true,
+          "name_public": "fileFailed",
+          "name_internal": "___fileFailed"
         },
         {
           "name": "renderReady",
@@ -8036,11 +8486,17 @@
         },
         {
           "name": "___sanitizeHeaderName",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___sanitizeheadername.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___sanitizeheadername.md",
+          "hookable": true,
+          "name_public": "sanitizeHeaderName",
+          "name_internal": "___sanitizeHeaderName"
         },
         {
           "name": "___sanitizeHeaderValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___sanitizeheadervalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___sanitizeheadervalue.md",
+          "hookable": true,
+          "name_public": "sanitizeHeaderValue",
+          "name_internal": "___sanitizeHeaderValue"
         },
         {
           "name": "extractEmailAndName",
@@ -8108,7 +8564,10 @@
         },
         {
           "name": "___send",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___send.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___send.md",
+          "hookable": true,
+          "name_public": "send",
+          "name_internal": "___send"
         },
         {
           "name": "renderMailHeader",
@@ -8128,7 +8587,10 @@
         },
         {
           "name": "___htmlToText",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___htmltotext.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMail/method-___htmltotext.md",
+          "hookable": true,
+          "name_public": "htmlToText",
+          "name_internal": "___htmlToText"
         },
         {
           "name": "encodeSubject",
@@ -8237,11 +8699,17 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Users/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Users/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Users/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Users/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         }
       ],
       "constants": []
@@ -8272,11 +8740,17 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompilerModule/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompilerModule/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___uninstall",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompilerModule/method-___uninstall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FileCompilerModule/method-___uninstall.md",
+          "hookable": true,
+          "name_public": "uninstall",
+          "name_internal": "___uninstall"
         },
         {
           "name": "getSourceFile",
@@ -8384,11 +8858,17 @@
         },
         {
           "name": "___send",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailInterface/method-___send.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailInterface/method-___send.md",
+          "hookable": true,
+          "name_public": "send",
+          "name_internal": "___send"
         },
         {
           "name": "___send",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailInterface/method-___send.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailInterface/method-___send.md",
+          "hookable": true,
+          "name_public": "send",
+          "name_internal": "___send"
         }
       ],
       "constants": []
@@ -8739,7 +9219,10 @@
         },
         {
           "name": "___setPass",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Password/method-___setpass.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Password/method-___setpass.md",
+          "hookable": true,
+          "name_public": "setPass",
+          "name_internal": "___setPass"
         },
         {
           "name": "salt",
@@ -9139,7 +9622,10 @@
         },
         {
           "name": "___action",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireAction/method-___action.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireAction/method-___action.md",
+          "hookable": true,
+          "name_public": "action",
+          "name_internal": "___action"
         },
         {
           "name": "execute",
@@ -9147,11 +9633,17 @@
         },
         {
           "name": "___executeMultiple",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireAction/method-___executemultiple.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireAction/method-___executemultiple.md",
+          "hookable": true,
+          "name_public": "executeMultiple",
+          "name_internal": "___executeMultiple"
         },
         {
           "name": "___getConfigInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireAction/method-___getconfiginputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireAction/method-___getconfiginputfields.md",
+          "hookable": true,
+          "name_public": "getConfigInputfields",
+          "name_internal": "___getConfigInputfields"
         },
         {
           "name": "setRunner",
@@ -9293,15 +9785,24 @@
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___uninstall",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___uninstall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___uninstall.md",
+          "hookable": true,
+          "name_public": "uninstall",
+          "name_internal": "___uninstall"
         },
         {
           "name": "getFlags",
@@ -9337,7 +9838,10 @@
         },
         {
           "name": "___saveConfig",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___saveconfig.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___saveconfig.md",
+          "hookable": true,
+          "name_public": "saveConfig",
+          "name_internal": "___saveConfig"
         },
         {
           "name": "isConfigurable",
@@ -9357,7 +9861,10 @@
         },
         {
           "name": "___refresh",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___refresh.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Modules/method-___refresh.md",
+          "hookable": true,
+          "name_public": "refresh",
+          "name_internal": "___refresh"
         },
         {
           "name": "getRequiredBy",
@@ -9515,7 +10022,10 @@
         },
         {
           "name": "___getPrimaryNavArray",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminThemeFramework/method-___getprimarynavarray.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminThemeFramework/method-___getprimarynavarray.md",
+          "hookable": true,
+          "name_public": "getPrimaryNavArray",
+          "name_internal": "___getPrimaryNavArray"
         },
         {
           "name": "moduleToNavArray",
@@ -9527,7 +10037,10 @@
         },
         {
           "name": "___getUserNavArray",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminThemeFramework/method-___getusernavarray.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminThemeFramework/method-___getusernavarray.md",
+          "hookable": true,
+          "name_public": "getUserNavArray",
+          "name_internal": "___getUserNavArray"
         },
         {
           "name": "getBrowserTitle",
@@ -9555,7 +10068,10 @@
         },
         {
           "name": "___renderFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminThemeFramework/method-___renderfile.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/AdminThemeFramework/method-___renderfile.md",
+          "hookable": true,
+          "name_public": "renderFile",
+          "name_internal": "___renderFile"
         },
         {
           "name": "includeFile",
@@ -9626,7 +10142,10 @@
         },
         {
           "name": "___crop",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___crop.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___crop.md",
+          "hookable": true,
+          "name_public": "crop",
+          "name_internal": "___crop"
         },
         {
           "name": "width",
@@ -9658,11 +10177,17 @@
         },
         {
           "name": "___rebuildVariations",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___rebuildvariations.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___rebuildvariations.md",
+          "hookable": true,
+          "name_public": "rebuildVariations",
+          "name_internal": "___rebuildVariations"
         },
         {
           "name": "___isVariation",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___isvariation.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___isvariation.md",
+          "hookable": true,
+          "name_public": "isVariation",
+          "name_internal": "___isVariation"
         },
         {
           "name": "removeVariations",
@@ -9670,7 +10195,10 @@
         },
         {
           "name": "___createdVariation",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___createdvariation.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___createdvariation.md",
+          "hookable": true,
+          "name_public": "createdVariation",
+          "name_internal": "___createdVariation"
         },
         {
           "name": "setOriginal",
@@ -9682,7 +10210,10 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "webp",
@@ -9698,7 +10229,10 @@
         },
         {
           "name": "___filenameDoesNotExist",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___filenamedoesnotexist.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pageimage/method-___filenamedoesnotexist.md",
+          "hookable": true,
+          "name_public": "filenameDoesNotExist",
+          "name_internal": "___filenameDoesNotExist"
         },
         {
           "name": "__debugInfo",
@@ -9761,7 +10295,10 @@
         },
         {
           "name": "___send",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireHttp/method-___send.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireHttp/method-___send.md",
+          "hookable": true,
+          "name_public": "send",
+          "name_internal": "___send"
         },
         {
           "name": "sendOptions",
@@ -9781,7 +10318,10 @@
         },
         {
           "name": "___download",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireHttp/method-___download.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireHttp/method-___download.md",
+          "hookable": true,
+          "name_public": "download",
+          "name_internal": "___download"
         },
         {
           "name": "downloadCURL",
@@ -9841,7 +10381,10 @@
         },
         {
           "name": "___sendFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireHttp/method-___sendfile.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireHttp/method-___sendfile.md",
+          "hookable": true,
+          "name_public": "sendFile",
+          "name_internal": "___sendFile"
         },
         {
           "name": "sendFileRange",
@@ -10139,7 +10682,10 @@
         },
         {
           "name": "___callUnknown",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___callunknown.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___callunknown.md",
+          "hookable": true,
+          "name_public": "callUnknown",
+          "name_internal": "___callUnknown"
         },
         {
           "name": "getHooks",
@@ -10175,7 +10721,10 @@
         },
         {
           "name": "___changed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___changed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___changed.md",
+          "hookable": true,
+          "name_public": "changed",
+          "name_internal": "___changed"
         },
         {
           "name": "trackChange",
@@ -10219,7 +10768,10 @@
         },
         {
           "name": "___trackException",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___trackexception.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___trackexception.md",
+          "hookable": true,
+          "name_public": "trackException",
+          "name_internal": "___trackException"
         },
         {
           "name": "errors",
@@ -10235,7 +10787,10 @@
         },
         {
           "name": "___log",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___log.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Wire/method-___log.md",
+          "hookable": true,
+          "name_public": "log",
+          "name_internal": "___log"
         },
         {
           "name": "_",
@@ -10311,7 +10866,10 @@
         },
         {
           "name": "___use",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ModuleJS/method-___use.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/ModuleJS/method-___use.md",
+          "hookable": true,
+          "name_public": "use",
+          "name_internal": "___use"
         }
       ],
       "constants": []
@@ -10721,7 +11279,10 @@
         },
         {
           "name": "___and",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireArray/method-___and.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireArray/method-___and.md",
+          "hookable": true,
+          "name_public": "and",
+          "name_internal": "___and"
         },
         {
           "name": "data",
@@ -10737,7 +11298,10 @@
         },
         {
           "name": "___callUnknown",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireArray/method-___callunknown.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireArray/method-___callunknown.md",
+          "hookable": true,
+          "name_public": "callUnknown",
+          "name_internal": "___callUnknown"
         },
         {
           "name": "each",
@@ -10995,7 +11559,10 @@
         },
         {
           "name": "___getUnknown",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___getunknown.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___getunknown.md",
+          "hookable": true,
+          "name_public": "getUnknown",
+          "name_internal": "___getUnknown"
         },
         {
           "name": "getFieldFirstValue",
@@ -11011,11 +11578,17 @@
         },
         {
           "name": "___if",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___if.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___if.md",
+          "hookable": true,
+          "name_public": "if",
+          "name_internal": "___if"
         },
         {
           "name": "___getMarkup",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___getmarkup.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___getmarkup.md",
+          "hookable": true,
+          "name_public": "getMarkup",
+          "name_internal": "___getMarkup"
         },
         {
           "name": "getText",
@@ -11043,7 +11616,10 @@
         },
         {
           "name": "___callUnknown",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___callunknown.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___callunknown.md",
+          "hookable": true,
+          "name_public": "callUnknown",
+          "name_internal": "___callUnknown"
         },
         {
           "name": "setName",
@@ -11107,7 +11683,10 @@
         },
         {
           "name": "___rootParent",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___rootparent.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___rootparent.md",
+          "hookable": true,
+          "name_public": "rootParent",
+          "name_internal": "___rootParent"
         },
         {
           "name": "siblings",
@@ -11143,11 +11722,17 @@
         },
         {
           "name": "___references",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___references.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___references.md",
+          "hookable": true,
+          "name_public": "references",
+          "name_internal": "___references"
         },
         {
           "name": "___links",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___links.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___links.md",
+          "hookable": true,
+          "name_public": "links",
+          "name_internal": "___links"
         },
         {
           "name": "getLanguages",
@@ -11219,19 +11804,31 @@
         },
         {
           "name": "___render",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___render.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___render.md",
+          "hookable": true,
+          "name_public": "render",
+          "name_internal": "___render"
         },
         {
           "name": "___renderPage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renderpage.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renderpage.md",
+          "hookable": true,
+          "name_public": "renderPage",
+          "name_internal": "___renderPage"
         },
         {
           "name": "___renderField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renderfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renderfield.md",
+          "hookable": true,
+          "name_public": "renderField",
+          "name_internal": "___renderField"
         },
         {
           "name": "___renderValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___rendervalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___rendervalue.md",
+          "hookable": true,
+          "name_public": "renderValue",
+          "name_internal": "___renderValue"
         },
         {
           "name": "getInputfields",
@@ -11239,7 +11836,10 @@
         },
         {
           "name": "___getInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___getinputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___getinputfields.md",
+          "hookable": true,
+          "name_public": "getInputfields",
+          "name_internal": "___getInputfields"
         },
         {
           "name": "getInputfield",
@@ -11247,7 +11847,10 @@
         },
         {
           "name": "___edit",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___edit.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___edit.md",
+          "hookable": true,
+          "name_public": "edit",
+          "name_internal": "___edit"
         },
         {
           "name": "setStatus",
@@ -11299,7 +11902,10 @@
         },
         {
           "name": "___isPublic",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___ispublic.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___ispublic.md",
+          "hookable": true,
+          "name_public": "isPublic",
+          "name_internal": "___isPublic"
         },
         {
           "name": "status",
@@ -11391,75 +11997,129 @@
         },
         {
           "name": "___loaded",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___loaded.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___loaded.md",
+          "hookable": true,
+          "name_public": "loaded",
+          "name_internal": "___loaded"
         },
         {
           "name": "___editReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___editready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___editready.md",
+          "hookable": true,
+          "name_public": "editReady",
+          "name_internal": "___editReady"
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___saved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___saved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___saved.md",
+          "hookable": true,
+          "name_public": "saved",
+          "name_internal": "___saved"
         },
         {
           "name": "___addReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___addready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___addready.md",
+          "hookable": true,
+          "name_public": "addReady",
+          "name_internal": "___addReady"
         },
         {
           "name": "___added",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___added.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___added.md",
+          "hookable": true,
+          "name_public": "added",
+          "name_internal": "___added"
         },
         {
           "name": "___moveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___moveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___moveready.md",
+          "hookable": true,
+          "name_public": "moveReady",
+          "name_internal": "___moveReady"
         },
         {
           "name": "___moved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___moved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___moved.md",
+          "hookable": true,
+          "name_public": "moved",
+          "name_internal": "___moved"
         },
         {
           "name": "___deleteReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___deleteready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___deleteready.md",
+          "hookable": true,
+          "name_public": "deleteReady",
+          "name_internal": "___deleteReady"
         },
         {
           "name": "___deleted",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___deleted.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___deleted.md",
+          "hookable": true,
+          "name_public": "deleted",
+          "name_internal": "___deleted"
         },
         {
           "name": "___cloneReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___cloneready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___cloneready.md",
+          "hookable": true,
+          "name_public": "cloneReady",
+          "name_internal": "___cloneReady"
         },
         {
           "name": "___cloned",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___cloned.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___cloned.md",
+          "hookable": true,
+          "name_public": "cloned",
+          "name_internal": "___cloned"
         },
         {
           "name": "___renameReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renameready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renameready.md",
+          "hookable": true,
+          "name_public": "renameReady",
+          "name_internal": "___renameReady"
         },
         {
           "name": "___renamed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renamed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___renamed.md",
+          "hookable": true,
+          "name_public": "renamed",
+          "name_internal": "___renamed"
         },
         {
           "name": "___addStatusReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___addstatusready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___addstatusready.md",
+          "hookable": true,
+          "name_public": "addStatusReady",
+          "name_internal": "___addStatusReady"
         },
         {
           "name": "___addedStatus",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___addedstatus.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___addedstatus.md",
+          "hookable": true,
+          "name_public": "addedStatus",
+          "name_internal": "___addedStatus"
         },
         {
           "name": "___removeStatusReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___removestatusready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___removestatusready.md",
+          "hookable": true,
+          "name_public": "removeStatusReady",
+          "name_internal": "___removeStatusReady"
         },
         {
           "name": "___removedStatus",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___removedstatus.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Page/method-___removedstatus.md",
+          "hookable": true,
+          "name_public": "removedStatus",
+          "name_internal": "___removedStatus"
         }
       ],
       "constants": [
@@ -11495,11 +12155,17 @@
         },
         {
           "name": "___getSelectorInfo",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___getselectorinfo.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___getselectorinfo.md",
+          "hookable": true,
+          "name_public": "getSelectorInfo",
+          "name_internal": "___getSelectorInfo"
         },
         {
           "name": "___getCompatibleFieldtypes",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___getcompatiblefieldtypes.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___getcompatiblefieldtypes.md",
+          "hookable": true,
+          "name_public": "getCompatibleFieldtypes",
+          "name_internal": "___getCompatibleFieldtypes"
         },
         {
           "name": "getBlankValue",
@@ -11511,19 +12177,31 @@
         },
         {
           "name": "___wakeupValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___wakeupvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___wakeupvalue.md",
+          "hookable": true,
+          "name_public": "wakeupValue",
+          "name_internal": "___wakeupValue"
         },
         {
           "name": "___sleepValue",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___sleepvalue.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___sleepvalue.md",
+          "hookable": true,
+          "name_public": "sleepValue",
+          "name_internal": "___sleepValue"
         },
         {
           "name": "___savePageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___savepagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___savepagefield.md",
+          "hookable": true,
+          "name_public": "savePageField",
+          "name_internal": "___savePageField"
         },
         {
           "name": "___loadPageField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___loadpagefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___loadpagefield.md",
+          "hookable": true,
+          "name_public": "loadPageField",
+          "name_internal": "___loadPageField"
         },
         {
           "name": "getLoadQuery",
@@ -11559,7 +12237,10 @@
         },
         {
           "name": "___getConfigInputfields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___getconfiginputfields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/FieldtypeMulti/method-___getconfiginputfields.md",
+          "hookable": true,
+          "name_public": "getConfigInputfields",
+          "name_internal": "___getConfigInputfields"
         }
       ],
       "constants": [
@@ -11902,7 +12583,10 @@
         },
         {
           "name": "___getPage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getpage.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getpage.md",
+          "hookable": true,
+          "name_public": "getPage",
+          "name_internal": "___getPage"
         },
         {
           "name": "getPageInfo",
@@ -11910,11 +12594,17 @@
         },
         {
           "name": "___getPageForUser",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getpageforuser.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getpageforuser.md",
+          "hookable": true,
+          "name_public": "getPageForUser",
+          "name_internal": "___getPageForUser"
         },
         {
           "name": "___getClosestPage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getclosestpage.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getclosestpage.md",
+          "hookable": true,
+          "name_public": "getClosestPage",
+          "name_internal": "___getClosestPage"
         },
         {
           "name": "getRequestPage",
@@ -11934,7 +12624,10 @@
         },
         {
           "name": "___getLoginPageOrUrl",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getloginpageorurl.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesRequest/method-___getloginpageorurl.md",
+          "hookable": true,
+          "name_public": "getLoginPageOrUrl",
+          "name_internal": "___getLoginPageOrUrl"
         },
         {
           "name": "checkAccess",
@@ -12204,7 +12897,10 @@
       "methods": [
         {
           "name": "___new",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailTools/method-___new.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailTools/method-___new.md",
+          "hookable": true,
+          "name_public": "new",
+          "name_internal": "___new"
         },
         {
           "name": "send",
@@ -12236,7 +12932,10 @@
         },
         {
           "name": "___isBlacklistEmail",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailTools/method-___isblacklistemail.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireMailTools/method-___isblacklistemail.md",
+          "hookable": true,
+          "name_public": "isBlacklistEmail",
+          "name_internal": "___isBlacklistEmail"
         }
       ],
       "constants": []
@@ -13236,7 +13935,10 @@
         },
         {
           "name": "___fatalError",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireShutdown/method-___fatalerror.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireShutdown/method-___fatalerror.md",
+          "hookable": true,
+          "name_public": "fatalError",
+          "name_internal": "___fatalError"
         },
         {
           "name": "setFatalError",
@@ -13692,7 +14394,10 @@
         },
         {
           "name": "___find",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___find.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___find.md",
+          "hookable": true,
+          "name_public": "find",
+          "name_internal": "___find"
         },
         {
           "name": "findAlt",
@@ -13736,7 +14441,10 @@
         },
         {
           "name": "___getQuery",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getquery.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getquery.md",
+          "hookable": true,
+          "name_public": "getQuery",
+          "name_internal": "___getQuery"
         },
         {
           "name": "getMatchQueryJSON",
@@ -13756,11 +14464,17 @@
         },
         {
           "name": "___getQueryAllowedTemplatesWhere",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getqueryallowedtemplateswhere.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getqueryallowedtemplateswhere.md",
+          "hookable": true,
+          "name_public": "getQueryAllowedTemplatesWhere",
+          "name_internal": "___getQueryAllowedTemplatesWhere"
         },
         {
           "name": "___getQueryJoinPath",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getqueryjoinpath.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getqueryjoinpath.md",
+          "hookable": true,
+          "name_public": "getQueryJoinPath",
+          "name_internal": "___getQueryJoinPath"
         },
         {
           "name": "getQueryNativeField",
@@ -13828,7 +14542,10 @@
         },
         {
           "name": "___getQueryUnknownField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getqueryunknownfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PageFinder/method-___getqueryunknownfield.md",
+          "hookable": true,
+          "name_public": "getQueryUnknownField",
+          "name_internal": "___getQueryUnknownField"
         },
         {
           "name": "getQueryOwnerField",
@@ -13984,7 +14701,10 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagefilesManager/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagefilesManager/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "__get",
@@ -14051,11 +14771,17 @@
         },
         {
           "name": "___updateTemplate",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesAccess/method-___updatetemplate.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesAccess/method-___updatetemplate.md",
+          "hookable": true,
+          "name_public": "updateTemplate",
+          "name_internal": "___updateTemplate"
         },
         {
           "name": "___updatePage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesAccess/method-___updatepage.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/PagesAccess/method-___updatepage.md",
+          "hookable": true,
+          "name_public": "updatePage",
+          "name_internal": "___updatePage"
         },
         {
           "name": "deletePage",
@@ -14114,7 +14840,10 @@
         },
         {
           "name": "___load",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___load.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___load.md",
+          "hookable": true,
+          "name_public": "load",
+          "name_internal": "___load"
         },
         {
           "name": "loadRowsReady",
@@ -14130,19 +14859,31 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___clone",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___clone.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___clone.md",
+          "hookable": true,
+          "name_public": "clone",
+          "name_internal": "___clone"
         },
         {
           "name": "___find",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___find.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___find.md",
+          "hookable": true,
+          "name_public": "find",
+          "name_internal": "___find"
         },
         {
           "name": "get",
@@ -14170,43 +14911,73 @@
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___deleteReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___deleteready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___deleteready.md",
+          "hookable": true,
+          "name_public": "deleteReady",
+          "name_internal": "___deleteReady"
         },
         {
           "name": "___cloneReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___cloneready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___cloneready.md",
+          "hookable": true,
+          "name_public": "cloneReady",
+          "name_internal": "___cloneReady"
         },
         {
           "name": "___renameReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___renameready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___renameready.md",
+          "hookable": true,
+          "name_public": "renameReady",
+          "name_internal": "___renameReady"
         },
         {
           "name": "___saved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___saved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___saved.md",
+          "hookable": true,
+          "name_public": "saved",
+          "name_internal": "___saved"
         },
         {
           "name": "___added",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___added.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___added.md",
+          "hookable": true,
+          "name_public": "added",
+          "name_internal": "___added"
         },
         {
           "name": "___deleted",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___deleted.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___deleted.md",
+          "hookable": true,
+          "name_public": "deleted",
+          "name_internal": "___deleted"
         },
         {
           "name": "___cloned",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___cloned.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___cloned.md",
+          "hookable": true,
+          "name_public": "cloned",
+          "name_internal": "___cloned"
         },
         {
           "name": "___renamed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___renamed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireSaveableItems/method-___renamed.md",
+          "hookable": true,
+          "name_public": "renamed",
+          "name_internal": "___renamed"
         },
         {
           "name": "__invoke",
@@ -14284,7 +15055,10 @@
         },
         {
           "name": "___wordAlternates",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireTextTools/method-___wordalternates.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/WireTextTools/method-___wordalternates.md",
+          "hookable": true,
+          "name_public": "wordAlternates",
+          "name_internal": "___wordAlternates"
         },
         {
           "name": "findPlaceholders",
@@ -14428,7 +15202,10 @@
         },
         {
           "name": "___find",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___find.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___find.md",
+          "hookable": true,
+          "name_public": "find",
+          "name_internal": "___find"
         },
         {
           "name": "findOne",
@@ -14476,47 +15253,80 @@
         },
         {
           "name": "___save",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___save.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___save.md",
+          "hookable": true,
+          "name_public": "save",
+          "name_internal": "___save"
         },
         {
           "name": "___saveField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savefield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savefield.md",
+          "hookable": true,
+          "name_public": "saveField",
+          "name_internal": "___saveField"
         },
         {
           "name": "___saveFields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savefields.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savefields.md",
+          "hookable": true,
+          "name_public": "saveFields",
+          "name_internal": "___saveFields"
         },
         {
           "name": "___add",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___add.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___add.md",
+          "hookable": true,
+          "name_public": "add",
+          "name_internal": "___add"
         },
         {
           "name": "___new",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___new.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___new.md",
+          "hookable": true,
+          "name_public": "new",
+          "name_internal": "___new"
         },
         {
           "name": "___clone",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___clone.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___clone.md",
+          "hookable": true,
+          "name_public": "clone",
+          "name_internal": "___clone"
         },
         {
           "name": "___delete",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___delete.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___delete.md",
+          "hookable": true,
+          "name_public": "delete",
+          "name_internal": "___delete"
         },
         {
           "name": "___trash",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___trash.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___trash.md",
+          "hookable": true,
+          "name_public": "trash",
+          "name_internal": "___trash"
         },
         {
           "name": "___restore",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___restore.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___restore.md",
+          "hookable": true,
+          "name_public": "restore",
+          "name_internal": "___restore"
         },
         {
           "name": "___emptyTrash",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___emptytrash.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___emptytrash.md",
+          "hookable": true,
+          "name_public": "emptyTrash",
+          "name_internal": "___emptyTrash"
         },
         {
           "name": "___emptyTrash",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___emptytrash.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___emptytrash.md",
+          "hookable": true,
+          "name_public": "emptyTrash",
+          "name_internal": "___emptyTrash"
         },
         {
           "name": "getById",
@@ -14544,19 +15354,31 @@
         },
         {
           "name": "___touch",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___touch.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___touch.md",
+          "hookable": true,
+          "name_public": "touch",
+          "name_internal": "___touch"
         },
         {
           "name": "___sort",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___sort.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___sort.md",
+          "hookable": true,
+          "name_public": "sort",
+          "name_internal": "___sort"
         },
         {
           "name": "___insertBefore",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___insertbefore.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___insertbefore.md",
+          "hookable": true,
+          "name_public": "insertBefore",
+          "name_internal": "___insertBefore"
         },
         {
           "name": "___insertAfter",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___insertafter.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___insertafter.md",
+          "hookable": true,
+          "name_public": "insertAfter",
+          "name_internal": "___insertAfter"
         },
         {
           "name": "getCache",
@@ -14628,131 +15450,227 @@
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___saveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___saveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___saveready.md",
+          "hookable": true,
+          "name_public": "saveReady",
+          "name_internal": "___saveReady"
         },
         {
           "name": "___saved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___saved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___saved.md",
+          "hookable": true,
+          "name_public": "saved",
+          "name_internal": "___saved"
         },
         {
           "name": "___addReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___addready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___addready.md",
+          "hookable": true,
+          "name_public": "addReady",
+          "name_internal": "___addReady"
         },
         {
           "name": "___added",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___added.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___added.md",
+          "hookable": true,
+          "name_public": "added",
+          "name_internal": "___added"
         },
         {
           "name": "___moveReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___moveready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___moveready.md",
+          "hookable": true,
+          "name_public": "moveReady",
+          "name_internal": "___moveReady"
         },
         {
           "name": "___moved",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___moved.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___moved.md",
+          "hookable": true,
+          "name_public": "moved",
+          "name_internal": "___moved"
         },
         {
           "name": "___templateChanged",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___templatechanged.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___templatechanged.md",
+          "hookable": true,
+          "name_public": "templateChanged",
+          "name_internal": "___templateChanged"
         },
         {
           "name": "___trashReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___trashready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___trashready.md",
+          "hookable": true,
+          "name_public": "trashReady",
+          "name_internal": "___trashReady"
         },
         {
           "name": "___trashed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___trashed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___trashed.md",
+          "hookable": true,
+          "name_public": "trashed",
+          "name_internal": "___trashed"
         },
         {
           "name": "___restoreReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___restoreready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___restoreready.md",
+          "hookable": true,
+          "name_public": "restoreReady",
+          "name_internal": "___restoreReady"
         },
         {
           "name": "___restored",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___restored.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___restored.md",
+          "hookable": true,
+          "name_public": "restored",
+          "name_internal": "___restored"
         },
         {
           "name": "___deleteReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deleteready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deleteready.md",
+          "hookable": true,
+          "name_public": "deleteReady",
+          "name_internal": "___deleteReady"
         },
         {
           "name": "___deleted",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deleted.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deleted.md",
+          "hookable": true,
+          "name_public": "deleted",
+          "name_internal": "___deleted"
         },
         {
           "name": "___deleteBranchReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deletebranchready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deletebranchready.md",
+          "hookable": true,
+          "name_public": "deleteBranchReady",
+          "name_internal": "___deleteBranchReady"
         },
         {
           "name": "___deletedBranch",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deletedbranch.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___deletedbranch.md",
+          "hookable": true,
+          "name_public": "deletedBranch",
+          "name_internal": "___deletedBranch"
         },
         {
           "name": "___cloneReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___cloneready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___cloneready.md",
+          "hookable": true,
+          "name_public": "cloneReady",
+          "name_internal": "___cloneReady"
         },
         {
           "name": "___cloned",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___cloned.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___cloned.md",
+          "hookable": true,
+          "name_public": "cloned",
+          "name_internal": "___cloned"
         },
         {
           "name": "___renameReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___renameready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___renameready.md",
+          "hookable": true,
+          "name_public": "renameReady",
+          "name_internal": "___renameReady"
         },
         {
           "name": "___renamed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___renamed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___renamed.md",
+          "hookable": true,
+          "name_public": "renamed",
+          "name_internal": "___renamed"
         },
         {
           "name": "___sorted",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___sorted.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___sorted.md",
+          "hookable": true,
+          "name_public": "sorted",
+          "name_internal": "___sorted"
         },
         {
           "name": "___statusChanged",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___statuschanged.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___statuschanged.md",
+          "hookable": true,
+          "name_public": "statusChanged",
+          "name_internal": "___statusChanged"
         },
         {
           "name": "___statusChangeReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___statuschangeready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___statuschangeready.md",
+          "hookable": true,
+          "name_public": "statusChangeReady",
+          "name_internal": "___statusChangeReady"
         },
         {
           "name": "___published",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___published.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___published.md",
+          "hookable": true,
+          "name_public": "published",
+          "name_internal": "___published"
         },
         {
           "name": "___unpublished",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___unpublished.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___unpublished.md",
+          "hookable": true,
+          "name_public": "unpublished",
+          "name_internal": "___unpublished"
         },
         {
           "name": "___publishReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___publishready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___publishready.md",
+          "hookable": true,
+          "name_public": "publishReady",
+          "name_internal": "___publishReady"
         },
         {
           "name": "___unpublishReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___unpublishready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___unpublishready.md",
+          "hookable": true,
+          "name_public": "unpublishReady",
+          "name_internal": "___unpublishReady"
         },
         {
           "name": "___found",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___found.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___found.md",
+          "hookable": true,
+          "name_public": "found",
+          "name_internal": "___found"
         },
         {
           "name": "___saveFieldReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savefieldready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savefieldready.md",
+          "hookable": true,
+          "name_public": "saveFieldReady",
+          "name_internal": "___saveFieldReady"
         },
         {
           "name": "___savedField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savedfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savedfield.md",
+          "hookable": true,
+          "name_public": "savedField",
+          "name_internal": "___savedField"
         },
         {
           "name": "___savePageOrFieldReady",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savepageorfieldready.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savepageorfieldready.md",
+          "hookable": true,
+          "name_public": "savePageOrFieldReady",
+          "name_internal": "___savePageOrFieldReady"
         },
         {
           "name": "___savedPageOrField",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savedpageorfield.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Pages/method-___savedpageorfield.md",
+          "hookable": true,
+          "name_public": "savedPageOrField",
+          "name_internal": "___savedPageOrField"
         }
       ],
       "constants": [
@@ -14784,43 +15702,73 @@
         },
         {
           "name": "___execute",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___execute.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___execute.md",
+          "hookable": true,
+          "name_public": "execute",
+          "name_internal": "___execute"
         },
         {
           "name": "___executed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___executed.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___executed.md",
+          "hookable": true,
+          "name_public": "executed",
+          "name_internal": "___executed"
         },
         {
           "name": "___headline",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___headline.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___headline.md",
+          "hookable": true,
+          "name_public": "headline",
+          "name_internal": "___headline"
         },
         {
           "name": "___browserTitle",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___browsertitle.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___browsertitle.md",
+          "hookable": true,
+          "name_public": "browserTitle",
+          "name_internal": "___browserTitle"
         },
         {
           "name": "___breadcrumb",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___breadcrumb.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___breadcrumb.md",
+          "hookable": true,
+          "name_public": "breadcrumb",
+          "name_internal": "___breadcrumb"
         },
         {
           "name": "___install",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___install.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___install.md",
+          "hookable": true,
+          "name_public": "install",
+          "name_internal": "___install"
         },
         {
           "name": "___uninstall",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___uninstall.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___uninstall.md",
+          "hookable": true,
+          "name_public": "uninstall",
+          "name_internal": "___uninstall"
         },
         {
           "name": "___upgrade",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___upgrade.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___upgrade.md",
+          "hookable": true,
+          "name_public": "upgrade",
+          "name_internal": "___upgrade"
         },
         {
           "name": "___installPage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___installpage.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___installpage.md",
+          "hookable": true,
+          "name_public": "installPage",
+          "name_internal": "___installPage"
         },
         {
           "name": "___uninstallPage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___uninstallpage.md"
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/core/wire/core/Process/method-___uninstallpage.md",
+          "hookable": true,
+          "name_public": "uninstallPage",
+          "name_internal": "___uninstallPage"
         },
         {
           "name": "setViewFile",

@@ -1,4 +1,4 @@
-# $processFieldExportImport->___buildExport(): InputfieldForm
+# $processFieldExportImport->buildExport(): InputfieldForm
 
 Source: `wire/modules/Process/ProcessField/ProcessFieldExportImport.php`
 
@@ -8,8 +8,14 @@ Execute export
 
 ~~~~~
 // basic usage
-$inputfieldForm = $processFieldExportImport->___buildExport();
+$inputfieldForm = $processFieldExportImport->buildExport();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `buildExport`
+- Implementation: `___buildExport`
+- Hook with: `$processFieldExportImport->buildExport()`
 
 ## Return value
 

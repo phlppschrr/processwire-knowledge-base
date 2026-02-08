@@ -1,4 +1,4 @@
-# $page->___cloneReady(Page $copy)
+# $page->cloneReady(Page $copy)
 
 Source: `wire/core/Page.php`
 
@@ -17,11 +17,17 @@ $wire->addHook('Page::cloneReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___cloneReady($copy);
+$result = $page->cloneReady($copy);
 
 // usage with all arguments
-$result = $page->___cloneReady(Page $copy);
+$result = $page->cloneReady(Page $copy);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `cloneReady`
+- Implementation: `___cloneReady`
+- Hook with: `$page->cloneReady()`
 
 ## Arguments
 

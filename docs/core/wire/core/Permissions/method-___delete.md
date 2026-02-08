@@ -1,4 +1,4 @@
-# $permissions->___delete(Page $page, $recursive = false): bool
+# $permissions->delete(Page $page, $recursive = false): bool
 
 Source: `wire/core/Permissions.php`
 
@@ -8,11 +8,17 @@ Permanently delete a Permission
 
 ~~~~~
 // basic usage
-$bool = $permissions->___delete($page);
+$bool = $permissions->delete($page);
 
 // usage with all arguments
-$bool = $permissions->___delete(Page $page, $recursive = false);
+$bool = $permissions->delete(Page $page, $recursive = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$permissions->delete()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pages->___add($template, $parent, $name = '', array $values = array()): Page
+# $pages->add($template, $parent, $name = '', array $values = array()): Page
 
 Source: `wire/core/Pages.php`
 
@@ -30,11 +30,17 @@ $building = $pages->add('skyscraper', '/skyscrapers/atlanta/', [
 
 ~~~~~
 // basic usage
-$page = $pages->___add($template, $parent);
+$page = $pages->add($template, $parent);
 
 // usage with all arguments
-$page = $pages->___add($template, $parent, $name = '', array $values = array());
+$page = $pages->add($template, $parent, $name = '', array $values = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `add`
+- Implementation: `___add`
+- Hook with: `$pages->add()`
 
 ## Arguments
 

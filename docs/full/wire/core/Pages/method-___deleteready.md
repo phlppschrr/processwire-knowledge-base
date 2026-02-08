@@ -1,4 +1,4 @@
-# $pages->___deleteReady(Page $page, array $options = array())
+# $pages->deleteReady(Page $page, array $options = array())
 
 Source: `wire/core/Pages.php`
 
@@ -11,11 +11,17 @@ been confirmed that the page is deleteable and *will* be deleted.
 
 ~~~~~
 // basic usage
-$result = $pages->___deleteReady($page);
+$result = $pages->deleteReady($page);
 
 // usage with all arguments
-$result = $pages->___deleteReady(Page $page, array $options = array());
+$result = $pages->deleteReady(Page $page, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteReady`
+- Implementation: `___deleteReady`
+- Hook with: `$pages->deleteReady()`
 
 ## Arguments
 

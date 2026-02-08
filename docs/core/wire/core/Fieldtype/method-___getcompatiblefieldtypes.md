@@ -1,4 +1,4 @@
-# $fieldtype->___getCompatibleFieldtypes(Field $field): Fieldtypes|null
+# $fieldtype->getCompatibleFieldtypes(Field $field): Fieldtypes|null
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,11 +10,17 @@ This represents the list of Fieldtype modules that the user is allowed to change
 
 ~~~~~
 // basic usage
-$fieldtypes = $fieldtype->___getCompatibleFieldtypes($field);
+$fieldtypes = $fieldtype->getCompatibleFieldtypes($field);
 
 // usage with all arguments
-$fieldtypes = $fieldtype->___getCompatibleFieldtypes(Field $field);
+$fieldtypes = $fieldtype->getCompatibleFieldtypes(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getCompatibleFieldtypes`
+- Implementation: `___getCompatibleFieldtypes`
+- Hook with: `$fieldtype->getCompatibleFieldtypes()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $fieldtype->___exportConfigData(Field $field, array $data): array
+# $fieldtype->exportConfigData(Field $field, array $data): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -12,11 +12,17 @@ Most Fieldtype modules can use the default implementation already provided here.
 
 ~~~~~
 // basic usage
-$array = $fieldtype->___exportConfigData($field, $data);
+$array = $fieldtype->exportConfigData($field, $data);
 
 // usage with all arguments
-$array = $fieldtype->___exportConfigData(Field $field, array $data);
+$array = $fieldtype->exportConfigData(Field $field, array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `exportConfigData`
+- Implementation: `___exportConfigData`
+- Hook with: `$fieldtype->exportConfigData()`
 
 ## Arguments
 

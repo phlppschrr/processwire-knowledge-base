@@ -1,4 +1,4 @@
-# $wireMail->___send(): int
+# $wireMail->send(): int
 
 Source: `wire/core/WireMail.php`
 
@@ -10,8 +10,14 @@ Call this method only after you have specified at least the `subject`, `to` and 
 
 ~~~~~
 // basic usage
-$int = $wireMail->___send();
+$int = $wireMail->send();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `send`
+- Implementation: `___send`
+- Hook with: `$wireMail->send()`
 
 ## Return value
 

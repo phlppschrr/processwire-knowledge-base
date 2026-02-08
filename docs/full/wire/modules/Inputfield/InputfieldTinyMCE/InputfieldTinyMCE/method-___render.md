@@ -1,4 +1,4 @@
-# $inputfieldTinyMCE->___render(): string
+# $inputfieldTinyMCE->render(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
@@ -8,8 +8,14 @@ Render Inputfield
 
 ~~~~~
 // basic usage
-$string = $inputfieldTinyMCE->___render();
+$string = $inputfieldTinyMCE->render();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$inputfieldTinyMCE->render()`
 
 ## Return value
 

@@ -1,4 +1,4 @@
-# $inputfieldTinyMCE->___getModuleConfigInputfields(InputfieldWrapper $inputfields)
+# $inputfieldTinyMCE->getModuleConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
@@ -8,11 +8,17 @@ Module config
 
 ~~~~~
 // basic usage
-$result = $inputfieldTinyMCE->___getModuleConfigInputfields($inputfields);
+$result = $inputfieldTinyMCE->getModuleConfigInputfields($inputfields);
 
 // usage with all arguments
-$result = $inputfieldTinyMCE->___getModuleConfigInputfields(InputfieldWrapper $inputfields);
+$result = $inputfieldTinyMCE->getModuleConfigInputfields(InputfieldWrapper $inputfields);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getModuleConfigInputfields`
+- Implementation: `___getModuleConfigInputfields`
+- Hook with: `$inputfieldTinyMCE->getModuleConfigInputfields()`
 
 ## Arguments
 

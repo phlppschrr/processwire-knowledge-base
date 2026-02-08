@@ -1,4 +1,4 @@
-# $processWire->___init()
+# $processWire->init()
 
 Source: `wire/core/ProcessWire.php`
 
@@ -8,5 +8,11 @@ Hookable init for anyone that wants to hook immediately before any autoload modu
 
 ~~~~~
 // basic usage
-$result = $processWire->___init();
+$result = $processWire->init();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `init`
+- Implementation: `___init`
+- Hook with: `$processWire->init()`

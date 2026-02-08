@@ -1,4 +1,4 @@
-# $fieldgroups->___clone(Saveable $item, $name = ''): Fieldgroup|false
+# $fieldgroups->clone(Saveable $item, $name = ''): Fieldgroup|false
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -10,11 +10,17 @@ If the new item uses a 'name' field, it will contain a number at the end to make
 
 ~~~~~
 // basic usage
-$fieldgroup = $fieldgroups->___clone($item);
+$fieldgroup = $fieldgroups->clone($item);
 
 // usage with all arguments
-$fieldgroup = $fieldgroups->___clone(Saveable $item, $name = '');
+$fieldgroup = $fieldgroups->clone(Saveable $item, $name = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `clone`
+- Implementation: `___clone`
+- Hook with: `$fieldgroups->clone()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $fieldtypeMulti->___savePageField(Page $page, Field $field): bool
+# $fieldtypeMulti->savePageField(Page $page, Field $field): bool
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -11,11 +11,17 @@ and reinserts them as new.
 
 ~~~~~
 // basic usage
-$bool = $fieldtypeMulti->___savePageField($page, $field);
+$bool = $fieldtypeMulti->savePageField($page, $field);
 
 // usage with all arguments
-$bool = $fieldtypeMulti->___savePageField(Page $page, Field $field);
+$bool = $fieldtypeMulti->savePageField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `savePageField`
+- Implementation: `___savePageField`
+- Hook with: `$fieldtypeMulti->savePageField()`
 
 ## Arguments
 

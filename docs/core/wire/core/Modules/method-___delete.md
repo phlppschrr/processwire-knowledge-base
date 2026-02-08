@@ -1,4 +1,4 @@
-# $modules->___delete($class): bool
+# $modules->delete($class): bool
 
 Source: `wire/core/Modules.php`
 
@@ -8,8 +8,14 @@ Delete the given module, physically removing its files
 
 ~~~~~
 // basic usage
-$bool = $modules->___delete($class);
+$bool = $modules->delete($class);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$modules->delete()`
 
 ## Arguments
 

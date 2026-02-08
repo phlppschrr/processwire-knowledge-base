@@ -1,4 +1,4 @@
-# $fieldtypeMulti->___getSelectorInfo(Field $field, array $data = array()): array
+# $fieldtypeMulti->getSelectorInfo(Field $field, array $data = array()): array
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -8,11 +8,17 @@ Return array with information about what properties and operators can be used wi
 
 ~~~~~
 // basic usage
-$array = $fieldtypeMulti->___getSelectorInfo($field);
+$array = $fieldtypeMulti->getSelectorInfo($field);
 
 // usage with all arguments
-$array = $fieldtypeMulti->___getSelectorInfo(Field $field, array $data = array());
+$array = $fieldtypeMulti->getSelectorInfo(Field $field, array $data = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getSelectorInfo`
+- Implementation: `___getSelectorInfo`
+- Hook with: `$fieldtypeMulti->getSelectorInfo()`
 
 ## Arguments
 

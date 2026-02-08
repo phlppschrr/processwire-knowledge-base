@@ -1,4 +1,4 @@
-# $pages->___renamed(Page $page)
+# $pages->renamed(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -19,11 +19,17 @@ previous value is stored in "-name123" (where 123 is the language ID).
 
 ~~~~~
 // basic usage
-$result = $pages->___renamed($page);
+$result = $pages->renamed($page);
 
 // usage with all arguments
-$result = $pages->___renamed(Page $page);
+$result = $pages->renamed(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renamed`
+- Implementation: `___renamed`
+- Hook with: `$pages->renamed()`
 
 ## Arguments
 

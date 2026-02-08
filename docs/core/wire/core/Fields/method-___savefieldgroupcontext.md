@@ -1,4 +1,4 @@
-# $fields->___saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = ''): bool
+# $fields->saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = ''): bool
 
 Source: `wire/core/Fields.php`
 
@@ -8,11 +8,17 @@ Save the context of the given field for the given fieldgroup
 
 ~~~~~
 // basic usage
-$bool = $fields->___saveFieldgroupContext($field, $fieldgroup);
+$bool = $fields->saveFieldgroupContext($field, $fieldgroup);
 
 // usage with all arguments
-$bool = $fields->___saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = '');
+$bool = $fields->saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveFieldgroupContext`
+- Implementation: `___saveFieldgroupContext`
+- Hook with: `$fields->saveFieldgroupContext()`
 
 ## Arguments
 

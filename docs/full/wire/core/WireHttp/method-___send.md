@@ -1,4 +1,4 @@
-# $wireHttp->___send($url, $data = array(), $method = 'POST', array $options = array()): bool|string
+# $wireHttp->send($url, $data = array(), $method = 'POST', array $options = array()): bool|string
 
 Source: `wire/core/WireHttp.php`
 
@@ -11,11 +11,17 @@ of those dedicated request methods rather than this one.
 
 ~~~~~
 // basic usage
-$bool = $wireHttp->___send($url);
+$bool = $wireHttp->send($url);
 
 // usage with all arguments
-$bool = $wireHttp->___send($url, $data = array(), $method = 'POST', array $options = array());
+$bool = $wireHttp->send($url, $data = array(), $method = 'POST', array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `send`
+- Implementation: `___send`
+- Hook with: `$wireHttp->send()`
 
 ## Arguments
 

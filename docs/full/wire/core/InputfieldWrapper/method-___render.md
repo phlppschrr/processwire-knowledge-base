@@ -1,4 +1,4 @@
-# $inputfieldWrapper->___render(): string
+# $inputfieldWrapper->render(): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,8 +8,14 @@ Render this Inputfield and the output of its children.
 
 ~~~~~
 // basic usage
-$string = $inputfieldWrapper->___render();
+$string = $inputfieldWrapper->render();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$inputfieldWrapper->render()`
 
 ## Return value
 

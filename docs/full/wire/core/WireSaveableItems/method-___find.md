@@ -1,4 +1,4 @@
-# $wireSaveableItems->___find($selectors): WireArray
+# $wireSaveableItems->find($selectors): WireArray
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -12,8 +12,14 @@ override this to the ___load() method instead.
 
 ~~~~~
 // basic usage
-$items = $wireSaveableItems->___find($selectors);
+$items = $wireSaveableItems->find($selectors);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `find`
+- Implementation: `___find`
+- Hook with: `$wireSaveableItems->find()`
 
 ## Arguments
 

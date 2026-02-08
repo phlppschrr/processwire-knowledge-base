@@ -1,4 +1,4 @@
-# $processWire->___ready()
+# $processWire->ready()
 
 Source: `wire/core/ProcessWire.php`
 
@@ -8,5 +8,11 @@ Hookable ready for anyone that wants to hook immediately before any autoload mod
 
 ~~~~~
 // basic usage
-$result = $processWire->___ready();
+$result = $processWire->ready();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `ready`
+- Implementation: `___ready`
+- Hook with: `$processWire->ready()`

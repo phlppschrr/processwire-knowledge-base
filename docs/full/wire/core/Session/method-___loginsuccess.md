@@ -1,4 +1,4 @@
-# $session->___loginSuccess(User $user)
+# $session->loginSuccess(User $user)
 
 Source: `wire/core/Session.php`
 
@@ -8,11 +8,17 @@ Login success method for hooks
 
 ~~~~~
 // basic usage
-$result = $session->___loginSuccess($user);
+$result = $session->loginSuccess($user);
 
 // usage with all arguments
-$result = $session->___loginSuccess(User $user);
+$result = $session->loginSuccess(User $user);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `loginSuccess`
+- Implementation: `___loginSuccess`
+- Hook with: `$session->loginSuccess()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $field->___getInputfield(Page $page, $contextStr = ''): Inputfield|null
+# $field->getInputfield(Page $page, $contextStr = ''): Inputfield|null
 
 Source: `wire/core/Field.php`
 
@@ -8,11 +8,17 @@ Get the Inputfield module used to collect input for this field.
 
 ~~~~~
 // basic usage
-$inputfield = $field->___getInputfield($page);
+$inputfield = $field->getInputfield($page);
 
 // usage with all arguments
-$inputfield = $field->___getInputfield(Page $page, $contextStr = '');
+$inputfield = $field->getInputfield(Page $page, $contextStr = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getInputfield`
+- Implementation: `___getInputfield`
+- Hook with: `$field->getInputfield()`
 
 ## Arguments
 

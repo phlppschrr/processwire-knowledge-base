@@ -1,4 +1,4 @@
-# $pageFinder->___getQueryUnknownField($fieldName, array $data): bool|Field|int
+# $pageFinder->getQueryUnknownField($fieldName, array $data): bool|Field|int
 
 Source: `wire/core/PageFinder.php`
 
@@ -14,11 +14,17 @@ method that it was unable to map it to anything and should be considered a fail.
 
 ~~~~~
 // basic usage
-$bool = $pageFinder->___getQueryUnknownField($fieldName, $data);
+$bool = $pageFinder->getQueryUnknownField($fieldName, $data);
 
 // usage with all arguments
-$bool = $pageFinder->___getQueryUnknownField($fieldName, array $data);
+$bool = $pageFinder->getQueryUnknownField($fieldName, array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getQueryUnknownField`
+- Implementation: `___getQueryUnknownField`
+- Hook with: `$pageFinder->getQueryUnknownField()`
 
 ## Arguments
 

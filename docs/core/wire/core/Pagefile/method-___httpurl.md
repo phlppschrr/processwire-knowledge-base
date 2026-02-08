@@ -1,4 +1,4 @@
-# $pagefile->___httpUrl(): string
+# $pagefile->httpUrl(): string
 
 Source: `wire/core/Pagefile.php`
 
@@ -8,8 +8,14 @@ Return the web accessible URL (with scheme and hostname) to this Pagefile.
 
 ~~~~~
 // basic usage
-$string = $pagefile->___httpUrl();
+$string = $pagefile->httpUrl();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `httpUrl`
+- Implementation: `___httpUrl`
+- Hook with: `$pagefile->httpUrl()`
 
 ## Return value
 

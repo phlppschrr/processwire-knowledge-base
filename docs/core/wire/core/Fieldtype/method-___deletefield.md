@@ -1,4 +1,4 @@
-# $fieldtype->___deleteField(Field $field): bool
+# $fieldtype->deleteField(Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -11,11 +11,17 @@ deleted before this method is called.
 
 ~~~~~
 // basic usage
-$bool = $fieldtype->___deleteField($field);
+$bool = $fieldtype->deleteField($field);
 
 // usage with all arguments
-$bool = $fieldtype->___deleteField(Field $field);
+$bool = $fieldtype->deleteField(Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteField`
+- Implementation: `___deleteField`
+- Hook with: `$fieldtype->deleteField()`
 
 ## Arguments
 

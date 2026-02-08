@@ -1,4 +1,4 @@
-# $fieldtype->___savePageField(Page $page, Field $field): bool
+# $fieldtype->savePageField(Page $page, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,11 +10,17 @@ Possible template method: If overridden, it is likely not necessary to call this
 
 ~~~~~
 // basic usage
-$bool = $fieldtype->___savePageField($page, $field);
+$bool = $fieldtype->savePageField($page, $field);
 
 // usage with all arguments
-$bool = $fieldtype->___savePageField(Page $page, Field $field);
+$bool = $fieldtype->savePageField(Page $page, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `savePageField`
+- Implementation: `___savePageField`
+- Hook with: `$fieldtype->savePageField()`
 
 ## Arguments
 

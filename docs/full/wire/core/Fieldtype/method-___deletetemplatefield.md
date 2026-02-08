@@ -1,4 +1,4 @@
-# $fieldtype->___deleteTemplateField(Template $template, Field $field): bool
+# $fieldtype->deleteTemplateField(Template $template, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -15,11 +15,17 @@ when dealing with thousands of pages.
 
 ~~~~~
 // basic usage
-$bool = $fieldtype->___deleteTemplateField($template, $field);
+$bool = $fieldtype->deleteTemplateField($template, $field);
 
 // usage with all arguments
-$bool = $fieldtype->___deleteTemplateField(Template $template, Field $field);
+$bool = $fieldtype->deleteTemplateField(Template $template, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteTemplateField`
+- Implementation: `___deleteTemplateField`
+- Hook with: `$fieldtype->deleteTemplateField()`
 
 ## Arguments
 

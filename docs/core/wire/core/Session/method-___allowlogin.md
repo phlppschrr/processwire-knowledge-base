@@ -1,4 +1,4 @@
-# $session->___allowLogin($name, $user = null): bool
+# $session->allowLogin($name, $user = null): bool
 
 Source: `wire/core/Session.php`
 
@@ -8,11 +8,17 @@ Allow the user $name to login? Provided for use by hooks.
 
 ~~~~~
 // basic usage
-$bool = $session->___allowLogin($name);
+$bool = $session->allowLogin($name);
 
 // usage with all arguments
-$bool = $session->___allowLogin($name, $user = null);
+$bool = $session->allowLogin($name, $user = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `allowLogin`
+- Implementation: `___allowLogin`
+- Hook with: `$session->allowLogin()`
 
 ## Arguments
 

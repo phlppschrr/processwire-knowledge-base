@@ -1,4 +1,4 @@
-# $page->___renamed($oldName, $newName)
+# $page->renamed($oldName, $newName)
 
 Source: `wire/core/Page.php`
 
@@ -18,8 +18,14 @@ $wire->addHook('Page::renamed', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___renamed($oldName, $newName);
+$result = $page->renamed($oldName, $newName);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renamed`
+- Implementation: `___renamed`
+- Hook with: `$page->renamed()`
 
 ## Arguments
 

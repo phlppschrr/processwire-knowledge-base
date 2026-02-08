@@ -1,4 +1,4 @@
-# $inputfieldWrapper->___renderInputfield(Inputfield $inputfield, $renderValueMode = false): string
+# $inputfieldWrapper->renderInputfield(Inputfield $inputfield, $renderValueMode = false): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -12,11 +12,17 @@ Inputfield present in the children.
 
 ~~~~~
 // basic usage
-$string = $inputfieldWrapper->___renderInputfield($inputfield);
+$string = $inputfieldWrapper->renderInputfield($inputfield);
 
 // usage with all arguments
-$string = $inputfieldWrapper->___renderInputfield(Inputfield $inputfield, $renderValueMode = false);
+$string = $inputfieldWrapper->renderInputfield(Inputfield $inputfield, $renderValueMode = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderInputfield`
+- Implementation: `___renderInputfield`
+- Hook with: `$inputfieldWrapper->renderInputfield()`
 
 ## Arguments
 

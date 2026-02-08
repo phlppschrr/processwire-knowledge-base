@@ -1,4 +1,4 @@
-# $processPageListRender->___getPageLabel(Page $page, array $options = array()): string
+# $processPageListRender->getPageLabel(Page $page, array $options = array()): string
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
@@ -8,11 +8,17 @@ Return the Page's label text, whether that originates from the Page's name, head
 
 ~~~~~
 // basic usage
-$string = $processPageListRender->___getPageLabel($page);
+$string = $processPageListRender->getPageLabel($page);
 
 // usage with all arguments
-$string = $processPageListRender->___getPageLabel(Page $page, array $options = array());
+$string = $processPageListRender->getPageLabel(Page $page, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getPageLabel`
+- Implementation: `___getPageLabel`
+- Hook with: `$processPageListRender->getPageLabel()`
 
 ## Arguments
 

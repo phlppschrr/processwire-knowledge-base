@@ -1,4 +1,4 @@
-# $page->___render($options = [], $options2 = null): string|mixed
+# $page->render($options = [], $options2 = null): string|mixed
 
 Source: `wire/core/Page.php`
 
@@ -44,11 +44,17 @@ echo "<p>Full name: $options[firstName] $options[lastName]</p>";
 
 ~~~~~
 // basic usage
-$string = $page->___render();
+$string = $page->render();
 
 // usage with all arguments
-$string = $page->___render($options = [], $options2 = null);
+$string = $page->render($options = [], $options2 = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$page->render()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $fieldtype->___importConfigData(Field $field, array $data): array
+# $fieldtype->importConfigData(Field $field, array $data): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -11,11 +11,17 @@ Most modules can use the default implementation provided here.
 
 ~~~~~
 // basic usage
-$array = $fieldtype->___importConfigData($field, $data);
+$array = $fieldtype->importConfigData($field, $data);
 
 // usage with all arguments
-$array = $fieldtype->___importConfigData(Field $field, array $data);
+$array = $fieldtype->importConfigData(Field $field, array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `importConfigData`
+- Implementation: `___importConfigData`
+- Hook with: `$fieldtype->importConfigData()`
 
 ## Arguments
 

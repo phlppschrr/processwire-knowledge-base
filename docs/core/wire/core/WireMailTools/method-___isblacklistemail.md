@@ -1,4 +1,4 @@
-# $wireMailTools->___isBlacklistEmail($email, array $options = array()): bool|string
+# $wireMailTools->isBlacklistEmail($email, array $options = array()): bool|string
 
 Source: `wire/core/WireMailTools.php`
 
@@ -38,11 +38,17 @@ if($result === false) {
 
 ~~~~~
 // basic usage
-$bool = $wireMailTools->___isBlacklistEmail($email);
+$bool = $wireMailTools->isBlacklistEmail($email);
 
 // usage with all arguments
-$bool = $wireMailTools->___isBlacklistEmail($email, array $options = array());
+$bool = $wireMailTools->isBlacklistEmail($email, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `isBlacklistEmail`
+- Implementation: `___isBlacklistEmail`
+- Hook with: `$wireMailTools->isBlacklistEmail()`
 
 ## Arguments
 

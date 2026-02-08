@@ -1,4 +1,4 @@
-# $fileCompiler->___compileData($data, $sourceFile): string
+# $fileCompiler->compileData($data, $sourceFile): string
 
 Source: `wire/core/FileCompiler.php`
 
@@ -8,8 +8,14 @@ Compile the given string of data
 
 ~~~~~
 // basic usage
-$string = $fileCompiler->___compileData($data, $sourceFile);
+$string = $fileCompiler->compileData($data, $sourceFile);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `compileData`
+- Implementation: `___compileData`
+- Hook with: `$fileCompiler->compileData()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $fields->___deleteFieldDataByTemplate(Field $field, Template $template): bool
+# $fields->deleteFieldDataByTemplate(Field $field, Template $template): bool
 
 Source: `wire/core/Fields.php`
 
@@ -14,11 +14,17 @@ method will be call automatically at the appropriate time when save the fieldgro
 
 ~~~~~
 // basic usage
-$bool = $fields->___deleteFieldDataByTemplate($field, $template);
+$bool = $fields->deleteFieldDataByTemplate($field, $template);
 
 // usage with all arguments
-$bool = $fields->___deleteFieldDataByTemplate(Field $field, Template $template);
+$bool = $fields->deleteFieldDataByTemplate(Field $field, Template $template);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteFieldDataByTemplate`
+- Implementation: `___deleteFieldDataByTemplate`
+- Hook with: `$fields->deleteFieldDataByTemplate()`
 
 ## Arguments
 

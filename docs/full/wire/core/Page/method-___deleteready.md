@@ -1,4 +1,4 @@
-# $page->___deleteReady()
+# $page->deleteReady()
 
 Source: `wire/core/Page.php`
 
@@ -17,8 +17,14 @@ $wire->addHook('Page::deleteReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___deleteReady();
+$result = $page->deleteReady();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteReady`
+- Implementation: `___deleteReady`
+- Hook with: `$page->deleteReady()`
 
 ## Since
 

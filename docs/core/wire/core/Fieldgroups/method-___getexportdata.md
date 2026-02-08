@@ -1,4 +1,4 @@
-# $fieldgroups->___getExportData(Fieldgroup $fieldgroup): array
+# $fieldgroups->getExportData(Fieldgroup $fieldgroup): array
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -8,11 +8,17 @@ Export config data for the given fieldgroup
 
 ~~~~~
 // basic usage
-$array = $fieldgroups->___getExportData($fieldgroup);
+$array = $fieldgroups->getExportData($fieldgroup);
 
 // usage with all arguments
-$array = $fieldgroups->___getExportData(Fieldgroup $fieldgroup);
+$array = $fieldgroups->getExportData(Fieldgroup $fieldgroup);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getExportData`
+- Implementation: `___getExportData`
+- Hook with: `$fieldgroups->getExportData()`
 
 ## Arguments
 

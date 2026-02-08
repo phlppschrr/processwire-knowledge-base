@@ -1,4 +1,4 @@
-# $inputfield->___render(): string
+# $inputfield->render(): string
 
 Source: `wire/core/Inputfield.php`
 
@@ -10,8 +10,14 @@ This is an abstract method that descending Inputfield module classes are require
 
 ~~~~~
 // basic usage
-$string = $inputfield->___render();
+$string = $inputfield->render();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `render`
+- Implementation: `___render`
+- Hook with: `$inputfield->render()`
 
 ## Return value
 

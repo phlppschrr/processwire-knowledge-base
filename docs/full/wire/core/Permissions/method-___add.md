@@ -1,4 +1,4 @@
-# $permissions->___add($name): Permission|NullPage
+# $permissions->add($name): Permission|NullPage
 
 Source: `wire/core/Permissions.php`
 
@@ -8,8 +8,14 @@ Add a new Permission with the given name and return it
 
 ~~~~~
 // basic usage
-$permission = $permissions->___add($name);
+$permission = $permissions->add($name);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `add`
+- Implementation: `___add`
+- Hook with: `$permissions->add()`
 
 ## Arguments
 

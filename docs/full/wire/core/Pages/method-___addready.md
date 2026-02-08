@@ -1,4 +1,4 @@
-# $pages->___addReady(Page $page)
+# $pages->addReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called when a new page is about to be added and saved to the database
 
 ~~~~~
 // basic usage
-$result = $pages->___addReady($page);
+$result = $pages->addReady($page);
 
 // usage with all arguments
-$result = $pages->___addReady(Page $page);
+$result = $pages->addReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `addReady`
+- Implementation: `___addReady`
+- Hook with: `$pages->addReady()`
 
 ## Arguments
 

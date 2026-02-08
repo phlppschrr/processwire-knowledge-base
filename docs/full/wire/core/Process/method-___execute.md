@@ -1,4 +1,4 @@
-# $process->___execute(): string|array
+# $process->execute(): string|array
 
 Source: `wire/core/Process.php`
 
@@ -17,8 +17,14 @@ and `executeBarBaz()` would be called for the URL `./bar-baz/`.
 
 ~~~~~
 // basic usage
-$string = $process->___execute();
+$string = $process->execute();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `execute`
+- Implementation: `___execute`
+- Hook with: `$process->execute()`
 
 ## Return value
 

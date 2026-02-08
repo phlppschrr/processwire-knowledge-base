@@ -1,4 +1,4 @@
-# $page->___saveReady(array $changes, $name = false)
+# $page->saveReady(array $changes, $name = false)
 
 Source: `wire/core/Page.php`
 
@@ -28,11 +28,17 @@ $wire->addHook('Page:saveReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___saveReady($changes);
+$result = $page->saveReady($changes);
 
 // usage with all arguments
-$result = $page->___saveReady(array $changes, $name = false);
+$result = $page->saveReady(array $changes, $name = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveReady`
+- Implementation: `___saveReady`
+- Hook with: `$page->saveReady()`
 
 ## Arguments
 

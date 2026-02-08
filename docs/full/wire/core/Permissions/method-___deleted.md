@@ -1,4 +1,4 @@
-# $permissions->___deleted(Page $page)
+# $permissions->deleted(Page $page)
 
 Source: `wire/core/Permissions.php`
 
@@ -8,11 +8,17 @@ Hook called when a permission is deleted
 
 ~~~~~
 // basic usage
-$result = $permissions->___deleted($page);
+$result = $permissions->deleted($page);
 
 // usage with all arguments
-$result = $permissions->___deleted(Page $page);
+$result = $permissions->deleted(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleted`
+- Implementation: `___deleted`
+- Hook with: `$permissions->deleted()`
 
 ## Arguments
 

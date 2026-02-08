@@ -1,4 +1,4 @@
-# $languages->___deleted(Page $language)
+# $languages->deleted(Page $language)
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -8,11 +8,17 @@ Hook called when a language is deleted
 
 ~~~~~
 // basic usage
-$result = $languages->___deleted($language);
+$result = $languages->deleted($language);
 
 // usage with all arguments
-$result = $languages->___deleted(Page $language);
+$result = $languages->deleted(Page $language);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleted`
+- Implementation: `___deleted`
+- Hook with: `$languages->deleted()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $languageTranslator->___getTranslation($textdomain, $text, $context = '', array $options = array()): string|array|false
+# $languageTranslator->getTranslation($textdomain, $text, $context = '', array $options = array()): string|array|false
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
@@ -8,11 +8,17 @@ Implementation for the getTranslation() function - you should call getTranslatio
 
 ~~~~~
 // basic usage
-$string = $languageTranslator->___getTranslation($textdomain, $text);
+$string = $languageTranslator->getTranslation($textdomain, $text);
 
 // usage with all arguments
-$string = $languageTranslator->___getTranslation($textdomain, $text, $context = '', array $options = array());
+$string = $languageTranslator->getTranslation($textdomain, $text, $context = '', array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getTranslation`
+- Implementation: `___getTranslation`
+- Hook with: `$languageTranslator->getTranslation()`
 
 ## Arguments
 

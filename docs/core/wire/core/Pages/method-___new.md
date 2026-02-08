@@ -1,4 +1,4 @@
-# $pages->___new($selector = ''): Page
+# $pages->new($selector = ''): Page
 
 Source: `wire/core/Pages.php`
 
@@ -52,11 +52,17 @@ $p = $pages->new('/blog/posts/foo-bar-baz');
 
 ~~~~~
 // basic usage
-$page = $pages->___new();
+$page = $pages->new();
 
 // usage with all arguments
-$page = $pages->___new($selector = '');
+$page = $pages->new($selector = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `new`
+- Implementation: `___new`
+- Hook with: `$pages->new()`
 
 ## Arguments
 

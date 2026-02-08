@@ -1,4 +1,4 @@
-# $imageSizer->___resize($targetWidth, $targetHeight = 0): bool
+# $imageSizer->resize($targetWidth, $targetHeight = 0): bool
 
 Source: `wire/core/ImageSizer.php`
 
@@ -8,11 +8,17 @@ Resize the image proportionally to the given width/height
 
 ~~~~~
 // basic usage
-$bool = $imageSizer->___resize($targetWidth);
+$bool = $imageSizer->resize($targetWidth);
 
 // usage with all arguments
-$bool = $imageSizer->___resize($targetWidth, $targetHeight = 0);
+$bool = $imageSizer->resize($targetWidth, $targetHeight = 0);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `resize`
+- Implementation: `___resize`
+- Hook with: `$imageSizer->resize()`
 
 ## Arguments
 

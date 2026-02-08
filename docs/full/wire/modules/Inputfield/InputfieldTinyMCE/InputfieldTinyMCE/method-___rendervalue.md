@@ -1,4 +1,4 @@
-# $inputfieldTinyMCE->___renderValue(): string
+# $inputfieldTinyMCE->renderValue(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
@@ -8,8 +8,14 @@ Render non-editable value
 
 ~~~~~
 // basic usage
-$string = $inputfieldTinyMCE->___renderValue();
+$string = $inputfieldTinyMCE->renderValue();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderValue`
+- Implementation: `___renderValue`
+- Hook with: `$inputfieldTinyMCE->renderValue()`
 
 ## Return value
 

@@ -1,4 +1,4 @@
-# $inputfieldTinyMCESettings->___prepareSettingsForOutput(array $settings): array
+# $inputfieldTinyMCESettings->prepareSettingsForOutput(array $settings): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
@@ -10,11 +10,17 @@ This converts relative URLs to absolute, etc.
 
 ~~~~~
 // basic usage
-$array = $inputfieldTinyMCESettings->___prepareSettingsForOutput($settings);
+$array = $inputfieldTinyMCESettings->prepareSettingsForOutput($settings);
 
 // usage with all arguments
-$array = $inputfieldTinyMCESettings->___prepareSettingsForOutput(array $settings);
+$array = $inputfieldTinyMCESettings->prepareSettingsForOutput(array $settings);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `prepareSettingsForOutput`
+- Implementation: `___prepareSettingsForOutput`
+- Hook with: `$inputfieldTinyMCESettings->prepareSettingsForOutput()`
 
 ## Arguments
 

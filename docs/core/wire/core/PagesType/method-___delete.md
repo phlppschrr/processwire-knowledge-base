@@ -1,4 +1,4 @@
-# $pagesType->___delete(Page $page, $recursive = false): bool
+# $pagesType->delete(Page $page, $recursive = false): bool
 
 Source: `wire/core/PagesType.php`
 
@@ -17,11 +17,17 @@ instead, as hooking this method will not hook relevant pages deleted directly th
 
 ~~~~~
 // basic usage
-$bool = $pagesType->___delete($page);
+$bool = $pagesType->delete($page);
 
 // usage with all arguments
-$bool = $pagesType->___delete(Page $page, $recursive = false);
+$bool = $pagesType->delete(Page $page, $recursive = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$pagesType->delete()`
 
 ## Arguments
 

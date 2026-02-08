@@ -1,4 +1,4 @@
-# $page->___saved(array $changes, $name = false)
+# $page->saved(array $changes, $name = false)
 
 Source: `wire/core/Page.php`
 
@@ -27,11 +27,17 @@ $wire->addHook('Page:saved', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___saved($changes);
+$result = $page->saved($changes);
 
 // usage with all arguments
-$result = $page->___saved(array $changes, $name = false);
+$result = $page->saved(array $changes, $name = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saved`
+- Implementation: `___saved`
+- Hook with: `$page->saved()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $tfa->___process(): User|bool
+# $tfa->process(): User|bool
 
 Source: `wire/core/Tfa.php`
 
@@ -11,8 +11,14 @@ Note that this method will perform redirects as needed.
 
 ~~~~~
 // basic usage
-$user = $tfa->___process();
+$user = $tfa->process();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `process`
+- Implementation: `___process`
+- Hook with: `$tfa->process()`
 
 ## Return value
 

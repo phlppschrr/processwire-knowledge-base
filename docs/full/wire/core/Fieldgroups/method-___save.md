@@ -1,4 +1,4 @@
-# $fieldgroups->___save(Saveable $item): bool
+# $fieldgroups->save(Saveable $item): bool
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -10,11 +10,17 @@ If fields were removed from the Fieldgroup, then track them down and remove them
 
 ~~~~~
 // basic usage
-$bool = $fieldgroups->___save($item);
+$bool = $fieldgroups->save($item);
 
 // usage with all arguments
-$bool = $fieldgroups->___save(Saveable $item);
+$bool = $fieldgroups->save(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$fieldgroups->save()`
 
 ## Arguments
 

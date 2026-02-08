@@ -1,4 +1,4 @@
-# $roles->___save(Page $page): bool
+# $roles->save(Page $page): bool
 
 Source: `wire/core/Roles.php`
 
@@ -8,11 +8,17 @@ Save a Role
 
 ~~~~~
 // basic usage
-$bool = $roles->___save($page);
+$bool = $roles->save($page);
 
 // usage with all arguments
-$bool = $roles->___save(Page $page);
+$bool = $roles->save(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$roles->save()`
 
 ## Arguments
 

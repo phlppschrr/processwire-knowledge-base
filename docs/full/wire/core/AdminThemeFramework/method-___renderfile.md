@@ -1,4 +1,4 @@
-# $adminThemeFramework->___renderFile($file, array $vars = array()): string
+# $adminThemeFramework->renderFile($file, array $vars = array()): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
@@ -10,11 +10,17 @@ This method is only used if it is hooked
 
 ~~~~~
 // basic usage
-$string = $adminThemeFramework->___renderFile($file);
+$string = $adminThemeFramework->renderFile($file);
 
 // usage with all arguments
-$string = $adminThemeFramework->___renderFile($file, array $vars = array());
+$string = $adminThemeFramework->renderFile($file, array $vars = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderFile`
+- Implementation: `___renderFile`
+- Hook with: `$adminThemeFramework->renderFile()`
 
 ## Arguments
 

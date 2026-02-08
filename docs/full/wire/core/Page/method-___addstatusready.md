@@ -1,4 +1,4 @@
-# $page->___addStatusReady($name, $value)
+# $page->addStatusReady($name, $value)
 
 Source: `wire/core/Page.php`
 
@@ -21,8 +21,14 @@ $wire->addHook('Page::addStatusReady', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___addStatusReady($name, $value);
+$result = $page->addStatusReady($name, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `addStatusReady`
+- Implementation: `___addStatusReady`
+- Hook with: `$page->addStatusReady()`
 
 ## Arguments
 

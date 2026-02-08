@@ -1,4 +1,4 @@
-# $fields->___applySetupName(Field $field, $setupName = ''): bool
+# $fields->applySetupName(Field $field, $setupName = ''): bool
 
 Source: `wire/core/Fields.php`
 
@@ -10,11 +10,17 @@ If no setupName is provided then this method doesn’t do anything, but hooks to
 
 ~~~~~
 // basic usage
-$bool = $fields->___applySetupName($field);
+$bool = $fields->applySetupName($field);
 
 // usage with all arguments
-$bool = $fields->___applySetupName(Field $field, $setupName = '');
+$bool = $fields->applySetupName(Field $field, $setupName = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `applySetupName`
+- Implementation: `___applySetupName`
+- Hook with: `$fields->applySetupName()`
 
 ## Arguments
 

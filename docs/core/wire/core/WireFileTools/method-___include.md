@@ -1,4 +1,4 @@
-# $wireFileTools->___include($filename, array $vars = array(), array $options = array()): bool
+# $wireFileTools->include($filename, array $vars = array(), array $options = array()): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -18,11 +18,17 @@ Note this function produces direct output. To retrieve output as a return value,
 
 ~~~~~
 // basic usage
-$bool = $wireFileTools->___include($filename);
+$bool = $wireFileTools->include($filename);
 
 // usage with all arguments
-$bool = $wireFileTools->___include($filename, array $vars = array(), array $options = array());
+$bool = $wireFileTools->include($filename, array $vars = array(), array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `include`
+- Implementation: `___include`
+- Hook with: `$wireFileTools->include()`
 
 ## Arguments
 

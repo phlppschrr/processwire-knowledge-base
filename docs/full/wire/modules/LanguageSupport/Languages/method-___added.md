@@ -1,4 +1,4 @@
-# $languages->___added(Page $language)
+# $languages->added(Page $language)
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -8,11 +8,17 @@ Hook called when a language is added
 
 ~~~~~
 // basic usage
-$result = $languages->___added($language);
+$result = $languages->added($language);
 
 // usage with all arguments
-$result = $languages->___added(Page $language);
+$result = $languages->added(Page $language);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `added`
+- Implementation: `___added`
+- Hook with: `$languages->added()`
 
 ## Arguments
 

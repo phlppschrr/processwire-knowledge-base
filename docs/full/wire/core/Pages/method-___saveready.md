@@ -1,4 +1,4 @@
-# $pages->___saveReady(Page $page): array
+# $pages->saveReady(Page $page): array
 
 Source: `wire/core/Pages.php`
 
@@ -12,11 +12,17 @@ that when the before `Pages::save` is called, as an error may prevent it.
 
 ~~~~~
 // basic usage
-$array = $pages->___saveReady($page);
+$array = $pages->saveReady($page);
 
 // usage with all arguments
-$array = $pages->___saveReady(Page $page);
+$array = $pages->saveReady(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveReady`
+- Implementation: `___saveReady`
+- Hook with: `$pages->saveReady()`
 
 ## Arguments
 

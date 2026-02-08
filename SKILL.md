@@ -12,6 +12,18 @@ Use the extracted documentation in `docs/` as the canonical source of truth. The
 - `docs/core/index.md` (core-only, recommended)
 - `docs/full/index.md` (full)
 
+The index is organized into:
+- API Variables (from `ProcessWire` class `@property` list)
+- Core Classes
+- Functions (file-level docs without classes)
+
+## Hookable Methods
+Methods implemented with a `___` prefix are hookable. In the docs:
+- Filenames keep the `___` prefix (e.g. `method-___if.md`).
+- Headings, usage and links use the public name without the prefix (e.g. `$page->if()`).
+- Hookable methods include a **Hookable** section with both the public name and the implementation name.
+- Class index lists mark hookable methods with `(hookable)`.
+
 ## Update
 Run:
 - `scripts/update-docs.sh`

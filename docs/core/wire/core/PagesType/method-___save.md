@@ -1,4 +1,4 @@
-# $pagesType->___save(Page $page): bool
+# $pagesType->save(Page $page): bool
 
 Source: `wire/core/PagesType.php`
 
@@ -17,11 +17,17 @@ saved directly through $pages->save().
 
 ~~~~~
 // basic usage
-$bool = $pagesType->___save($page);
+$bool = $pagesType->save($page);
 
 // usage with all arguments
-$bool = $pagesType->___save(Page $page);
+$bool = $pagesType->save(Page $page);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `save`
+- Implementation: `___save`
+- Hook with: `$pagesType->save()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $fieldtypeMulti->___wakeupValue(Page $page, Field $field, $value): WireArray
+# $fieldtypeMulti->wakeupValue(Page $page, Field $field, $value): WireArray
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -8,11 +8,17 @@ Process the value to convert it from array to whatever object it needs to be
 
 ~~~~~
 // basic usage
-$items = $fieldtypeMulti->___wakeupValue($page, $field, $value);
+$items = $fieldtypeMulti->wakeupValue($page, $field, $value);
 
 // usage with all arguments
-$items = $fieldtypeMulti->___wakeupValue(Page $page, Field $field, $value);
+$items = $fieldtypeMulti->wakeupValue(Page $page, Field $field, $value);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `wakeupValue`
+- Implementation: `___wakeupValue`
+- Hook with: `$fieldtypeMulti->wakeupValue()`
 
 ## Arguments
 

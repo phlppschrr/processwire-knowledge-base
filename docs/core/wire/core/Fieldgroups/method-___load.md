@@ -1,4 +1,4 @@
-# $fieldgroups->___load(WireArray $items, $selectors = null): WireArray
+# $fieldgroups->load(WireArray $items, $selectors = null): WireArray
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -11,11 +11,17 @@ After loaded, we check for any 'global' fields and add them to the Fieldgroup, i
 
 ~~~~~
 // basic usage
-$items = $fieldgroups->___load($items);
+$items = $fieldgroups->load($items);
 
 // usage with all arguments
-$items = $fieldgroups->___load(WireArray $items, $selectors = null);
+$items = $fieldgroups->load(WireArray $items, $selectors = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `load`
+- Implementation: `___load`
+- Hook with: `$fieldgroups->load()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $pageimage->___createdVariation(Pageimage $image, array $data)
+# $pageimage->createdVariation(Pageimage $image, array $data)
 
 Source: `wire/core/Pageimage.php`
 
@@ -8,11 +8,17 @@ Hook called after successful creation of image variation
 
 ~~~~~
 // basic usage
-$result = $pageimage->___createdVariation($image, $data);
+$result = $pageimage->createdVariation($image, $data);
 
 // usage with all arguments
-$result = $pageimage->___createdVariation(Pageimage $image, array $data);
+$result = $pageimage->createdVariation(Pageimage $image, array $data);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `createdVariation`
+- Implementation: `___createdVariation`
+- Hook with: `$pageimage->createdVariation()`
 
 ## Arguments
 

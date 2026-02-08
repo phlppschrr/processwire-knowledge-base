@@ -1,4 +1,4 @@
-# $pagefiles->___clone(Pagefile $item, array $options = array()): Pagefile|bool
+# $pagefiles->clone(Pagefile $item, array $options = array()): Pagefile|bool
 
 Source: `wire/core/Pagefiles.php`
 
@@ -11,11 +11,17 @@ Otherwise the file is marked for deletion.
 
 ~~~~~
 // basic usage
-$pagefile = $pagefiles->___clone($item);
+$pagefile = $pagefiles->clone($item);
 
 // usage with all arguments
-$pagefile = $pagefiles->___clone(Pagefile $item, array $options = array());
+$pagefile = $pagefiles->clone(Pagefile $item, array $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `clone`
+- Implementation: `___clone`
+- Hook with: `$pagefiles->clone()`
 
 ## Arguments
 

@@ -1,4 +1,4 @@
-# $wireDateTime->___relativeTimeStr($ts, $abbreviate = false, $useTense = true): string
+# $wireDateTime->relativeTimeStr($ts, $abbreviate = false, $useTense = true): string
 
 Source: `wire/core/WireDateTime.php`
 
@@ -22,11 +22,17 @@ phrases in /wire/core/WireDateTime.php are translated in the language pack.
 
 ~~~~~
 // basic usage
-$string = $wireDateTime->___relativeTimeStr($ts);
+$string = $wireDateTime->relativeTimeStr($ts);
 
 // usage with all arguments
-$string = $wireDateTime->___relativeTimeStr($ts, $abbreviate = false, $useTense = true);
+$string = $wireDateTime->relativeTimeStr($ts, $abbreviate = false, $useTense = true);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `relativeTimeStr`
+- Implementation: `___relativeTimeStr`
+- Hook with: `$wireDateTime->relativeTimeStr()`
 
 ## Arguments
 

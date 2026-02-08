@@ -1,4 +1,4 @@
-# $pagesRequest->___getLoginPageOrUrl(?Page $page = null): string|Page|null
+# $pagesRequest->getLoginPageOrUrl(?Page $page = null): string|Page|null
 
 Source: `wire/core/PagesRequest.php`
 
@@ -12,11 +12,17 @@ Get login Page object or URL to redirect to for login needed to access given $pa
 
 ~~~~~
 // basic usage
-$string = $pagesRequest->___getLoginPageOrUrl();
+$string = $pagesRequest->getLoginPageOrUrl();
 
 // usage with all arguments
-$string = $pagesRequest->___getLoginPageOrUrl(?Page $page = null);
+$string = $pagesRequest->getLoginPageOrUrl(?Page $page = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getLoginPageOrUrl`
+- Implementation: `___getLoginPageOrUrl`
+- Hook with: `$pagesRequest->getLoginPageOrUrl()`
 
 ## Arguments
 

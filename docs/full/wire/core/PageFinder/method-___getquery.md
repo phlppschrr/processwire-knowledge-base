@@ -1,4 +1,4 @@
-# $pageFinder->___getQuery($selectors, array $options): DatabaseQuerySelect
+# $pageFinder->getQuery($selectors, array $options): DatabaseQuerySelect
 
 Source: `wire/core/PageFinder.php`
 
@@ -8,11 +8,17 @@ Given one or more selectors, create the SQL query for finding pages.
 
 ~~~~~
 // basic usage
-$databaseQuerySelect = $pageFinder->___getQuery($selectors, $options);
+$databaseQuerySelect = $pageFinder->getQuery($selectors, $options);
 
 // usage with all arguments
-$databaseQuerySelect = $pageFinder->___getQuery($selectors, array $options);
+$databaseQuerySelect = $pageFinder->getQuery($selectors, array $options);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getQuery`
+- Implementation: `___getQuery`
+- Hook with: `$pageFinder->getQuery()`
 
 ## Arguments
 

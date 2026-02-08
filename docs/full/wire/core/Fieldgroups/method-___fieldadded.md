@@ -1,4 +1,4 @@
-# $fieldgroups->___fieldAdded(Fieldgroup $fieldgroup, Field $field)
+# $fieldgroups->fieldAdded(Fieldgroup $fieldgroup, Field $field)
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -8,11 +8,17 @@ Hook called when field has been added to fieldgroup
 
 ~~~~~
 // basic usage
-$result = $fieldgroups->___fieldAdded($fieldgroup, $field);
+$result = $fieldgroups->fieldAdded($fieldgroup, $field);
 
 // usage with all arguments
-$result = $fieldgroups->___fieldAdded(Fieldgroup $fieldgroup, Field $field);
+$result = $fieldgroups->fieldAdded(Fieldgroup $fieldgroup, Field $field);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `fieldAdded`
+- Implementation: `___fieldAdded`
+- Hook with: `$fieldgroups->fieldAdded()`
 
 ## Arguments
 

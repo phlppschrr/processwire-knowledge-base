@@ -1,4 +1,4 @@
-# $wireArray->___callUnknown($method, $arguments): null|mixed
+# $wireArray->callUnknown($method, $arguments): null|mixed
 
 Source: `wire/core/WireArray.php`
 
@@ -37,8 +37,14 @@ $titlesString = $items->title("\n");
 
 ~~~~~
 // basic usage
-$wireArray->___callUnknown($method, $arguments);
+$wireArray->callUnknown($method, $arguments);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `callUnknown`
+- Implementation: `___callUnknown`
+- Hook with: `$wireArray->callUnknown()`
 
 ## Arguments
 

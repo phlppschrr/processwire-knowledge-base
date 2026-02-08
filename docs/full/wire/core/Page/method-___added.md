@@ -1,4 +1,4 @@
-# $page->___added()
+# $page->added()
 
 Source: `wire/core/Page.php`
 
@@ -17,8 +17,14 @@ $wire->addHook('Page::added', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___added();
+$result = $page->added();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `added`
+- Implementation: `___added`
+- Hook with: `$page->added()`
 
 ## Since
 

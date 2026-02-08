@@ -1,4 +1,4 @@
-# $fieldtype->___uninstall()
+# $fieldtype->uninstall()
 
 Source: `wire/core/Fieldtype.php`
 
@@ -13,8 +13,14 @@ Uninstall this Fieldtype, consistent with optional Module interface
 
 ~~~~~
 // basic usage
-$result = $fieldtype->___uninstall();
+$result = $fieldtype->uninstall();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstall`
+- Implementation: `___uninstall`
+- Hook with: `$fieldtype->uninstall()`
 
 ## Exceptions
 

@@ -1,4 +1,4 @@
-# $page->___getMarkup($key): string
+# $page->getMarkup($key): string
 
 Source: `wire/core/Page.php`
 
@@ -13,8 +13,14 @@ Return the markup value for a given field name or {tag} string
 
 ~~~~~
 // basic usage
-$string = $page->___getMarkup($key);
+$string = $page->getMarkup($key);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getMarkup`
+- Implementation: `___getMarkup`
+- Hook with: `$page->getMarkup()`
 
 ## Arguments
 

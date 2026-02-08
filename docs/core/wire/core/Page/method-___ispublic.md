@@ -1,4 +1,4 @@
-# $page->___isPublic(): bool
+# $page->isPublic(): bool
 
 Source: `wire/core/Page.php`
 
@@ -8,8 +8,14 @@ Hookable implementation for the above isPublic function
 
 ~~~~~
 // basic usage
-$bool = $page->___isPublic();
+$bool = $page->isPublic();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `isPublic`
+- Implementation: `___isPublic`
+- Hook with: `$page->isPublic()`
 
 ## Return value
 

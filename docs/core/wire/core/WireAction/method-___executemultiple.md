@@ -1,4 +1,4 @@
-# $wireAction->___executeMultiple($items): int
+# $wireAction->executeMultiple($items): int
 
 Source: `wire/core/WireAction.php`
 
@@ -8,8 +8,14 @@ Execute the action for multiple items at once
 
 ~~~~~
 // basic usage
-$int = $wireAction->___executeMultiple($items);
+$int = $wireAction->executeMultiple($items);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `executeMultiple`
+- Implementation: `___executeMultiple`
+- Hook with: `$wireAction->executeMultiple()`
 
 ## Arguments
 

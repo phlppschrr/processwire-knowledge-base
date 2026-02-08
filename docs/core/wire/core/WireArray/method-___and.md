@@ -1,4 +1,4 @@
-# $wireArray->___and($item): WireArray
+# $wireArray->and($item): WireArray
 
 Source: `wire/core/WireArray.php`
 
@@ -21,8 +21,14 @@ if($page->parents->and($page)->has($featured)) {
 
 ~~~~~
 // basic usage
-$items = $wireArray->___and($item);
+$items = $wireArray->and($item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `and`
+- Implementation: `___and`
+- Hook with: `$wireArray->and()`
 
 ## Arguments
 

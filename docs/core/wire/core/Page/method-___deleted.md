@@ -1,4 +1,4 @@
-# $page->___deleted()
+# $page->deleted()
 
 Source: `wire/core/Page.php`
 
@@ -17,8 +17,14 @@ $wire->addHook('Page::deleted', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___deleted();
+$result = $page->deleted();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleted`
+- Implementation: `___deleted`
+- Hook with: `$page->deleted()`
 
 ## Since
 

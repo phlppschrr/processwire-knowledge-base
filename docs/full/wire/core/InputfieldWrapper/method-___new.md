@@ -1,4 +1,4 @@
-# $inputfieldWrapper->___new($typeName, $name = '', $label = '', $settings = array()): Inputfield|InputfieldSelect|InputfieldWrapper
+# $inputfieldWrapper->new($typeName, $name = '', $label = '', $settings = array()): Inputfield|InputfieldSelect|InputfieldWrapper
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -12,11 +12,17 @@ Create a new Inputfield, add it to this InputfieldWrapper, and return the new In
 
 ~~~~~
 // basic usage
-$inputfield = $inputfieldWrapper->___new($typeName);
+$inputfield = $inputfieldWrapper->new($typeName);
 
 // usage with all arguments
-$inputfield = $inputfieldWrapper->___new($typeName, $name = '', $label = '', $settings = array());
+$inputfield = $inputfieldWrapper->new($typeName, $name = '', $label = '', $settings = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `new`
+- Implementation: `___new`
+- Hook with: `$inputfieldWrapper->new()`
 
 ## Arguments
 

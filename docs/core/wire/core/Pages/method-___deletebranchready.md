@@ -1,4 +1,4 @@
-# $pages->___deleteBranchReady(Page $page, array $options)
+# $pages->deleteBranchReady(Page $page, array $options)
 
 Source: `wire/core/Pages.php`
 
@@ -10,11 +10,17 @@ Note: this is called only on deletions that had 'recursive' option true and 1+ c
 
 ~~~~~
 // basic usage
-$result = $pages->___deleteBranchReady($page, $options);
+$result = $pages->deleteBranchReady($page, $options);
 
 // usage with all arguments
-$result = $pages->___deleteBranchReady(Page $page, array $options);
+$result = $pages->deleteBranchReady(Page $page, array $options);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteBranchReady`
+- Implementation: `___deleteBranchReady`
+- Hook with: `$pages->deleteBranchReady()`
 
 ## Arguments
 

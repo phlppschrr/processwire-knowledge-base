@@ -1,4 +1,4 @@
-# $fieldtype->___markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype
+# $fieldtype->markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype
 
 Source: `wire/core/Fieldtype.php`
 
@@ -20,11 +20,17 @@ as Inputfields can have external CSS or JS dependencies.
 
 ~~~~~
 // basic usage
-$string = $fieldtype->___markupValue($page, $field);
+$string = $fieldtype->markupValue($page, $field);
 
 // usage with all arguments
-$string = $fieldtype->___markupValue(Page $page, Field $field, $value = null, $property = '');
+$string = $fieldtype->markupValue(Page $page, Field $field, $value = null, $property = '');
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `markupValue`
+- Implementation: `___markupValue`
+- Hook with: `$fieldtype->markupValue()`
 
 ## Arguments
 

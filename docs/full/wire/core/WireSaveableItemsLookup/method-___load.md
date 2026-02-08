@@ -1,4 +1,4 @@
-# $wireSaveableItemsLookup->___load(WireArray $items, $selectors = null): WireArray
+# $wireSaveableItemsLookup->load(WireArray $items, $selectors = null): WireArray
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 
@@ -10,11 +10,17 @@ A selector string or Selectors may be provided so that this can be used as a fin
 
 ~~~~~
 // basic usage
-$items = $wireSaveableItemsLookup->___load($items);
+$items = $wireSaveableItemsLookup->load($items);
 
 // usage with all arguments
-$items = $wireSaveableItemsLookup->___load(WireArray $items, $selectors = null);
+$items = $wireSaveableItemsLookup->load(WireArray $items, $selectors = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `load`
+- Implementation: `___load`
+- Hook with: `$wireSaveableItemsLookup->load()`
 
 ## Arguments
 

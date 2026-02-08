@@ -261,6 +261,12 @@ def split_type_and_desc(text: str) -> tuple[str, str]:
     return parts[0], parts[1].strip()
 
 
+def hookable_display_name(name: str) -> tuple[str, bool]:
+    if name.startswith("___") and len(name) > 3:
+        return name[3:], True
+    return name, False
+
+
 def parse_param_tag(text: str) -> tuple[str, str, str] | None:
     match = re.match(r"^([^\s]+)\s+(\$[A-Za-z_][A-Za-z0-9_]*)\s*(.*)$", text)
     if not match:
@@ -346,10 +352,11 @@ def build_usage_block(
     if member.kind != "method":
         return []
 
+    display_name, _ = hookable_display_name(member.name)
     if member.is_static:
-        call_target = f"{class_name}::{member.name}"
+        call_target = f"{class_name}::{display_name}"
     else:
-        call_target = f"${camel_lower(class_name)}->{member.name}"
+        call_target = f"${camel_lower(class_name)}->{display_name}"
 
     signature = member.signature_params or ""
     full_call = f"{call_target}({signature})"
@@ -1021,7 +1028,11 @@ def build_doc_index(
             if not cleaned:
                 continue
             if member.kind == "method":
-                method_files[(class_name, member.name)] = class_dir / f"method-{slugify(member.name)}.md"
+                target = class_dir / f"method-{slugify(member.name)}.md"
+                method_files[(class_name, member.name)] = target
+                display_name, is_hookable = hookable_display_name(member.name)
+                if is_hookable:
+                    method_files.setdefault((class_name, display_name), target)
             else:
                 const_files[(class_name, member.name)] = class_dir / f"const-{slugify(member.name)}.md"
 
@@ -1034,7 +1045,11 @@ def build_doc_index(
             if not cleaned:
                 continue
             if member.kind == "method":
-                method_files[(file_name, member.name)] = file_dir / f"method-{slugify(member.name)}.md"
+                target = file_dir / f"method-{slugify(member.name)}.md"
+                method_files[(file_name, member.name)] = target
+                display_name, is_hookable = hookable_display_name(member.name)
+                if is_hookable:
+                    method_files.setdefault((file_name, display_name), target)
             else:
                 const_files[(file_name, member.name)] = file_dir / f"const-{slugify(member.name)}.md"
 
@@ -1046,6 +1061,7 @@ def format_method_heading(
     member: MemberDoc,
     return_type: str | None,
 ) -> str:
+    display_name, _ = hookable_display_name(member.name)
     params = member.signature_params or ""
     sig = f"({params})"
     if member.kind != "method":
@@ -1053,10 +1069,10 @@ def format_method_heading(
         return f"# {label}"
 
     if member.is_static:
-        label = f"{class_name}::{member.name}{sig}"
+        label = f"{class_name}::{display_name}{sig}"
     else:
         instance = f"${camel_lower(class_name)}"
-        label = f"{instance}->{member.name}{sig}"
+        label = f"{instance}->{display_name}{sig}"
 
     if return_type:
         label = f"{label}: {return_type}"
@@ -1123,6 +1139,7 @@ def render_member_doc(
     if not cleaned:
         return None
 
+    display_name, is_hookable = hookable_display_name(member.name)
     body_lines, tags = split_docblock_lines(cleaned)
     while body_lines and body_lines[0] == "":
         body_lines.pop(0)
@@ -1175,6 +1192,18 @@ def render_member_doc(
         lines.append("## Usage")
         lines.append("")
         lines.extend(usage_block)
+
+    if is_hookable:
+        lines.append("")
+        lines.append("## Hookable")
+        lines.append("")
+        lines.append(f"- Hookable method name: `{display_name}`")
+        lines.append(f"- Implementation: `{member.name}`")
+        if member.is_static:
+            lines.append(f"- Hook with: `{class_name}::{display_name}()`")
+        else:
+            instance = f"${camel_lower(class_name)}"
+            lines.append(f"- Hook with: `{instance}->{display_name}()`")
 
     if params:
         lines.append("")
@@ -1313,7 +1342,11 @@ def write_doc(
         if not cleaned:
             continue
         if member.kind == "method":
-            method_links.append(f"Method: [{member.name}()](method-{slugify(member.name)}.md)")
+            display_name, is_hookable = hookable_display_name(member.name)
+            hook_label = " (hookable)" if is_hookable else ""
+            method_links.append(
+                f"Method: [{display_name}()](method-{slugify(member.name)}.md){hook_label}"
+            )
         else:
             const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
 
@@ -1421,6 +1454,12 @@ def write_doc(
             ).as_posix(),
         }
         if member.kind == "method":
+            display_name, is_hookable = hookable_display_name(member.name)
+            if is_hookable:
+                entry["hookable"] = True
+                entry["name_public"] = display_name
+                entry["name_internal"] = member.name
+        if member.kind == "method":
             meta["methods"].append(entry)
         else:
             meta["constants"].append(entry)
@@ -1452,7 +1491,11 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
         if not cleaned:
             continue
         if member.kind == "method":
-            method_links.append(f"Method: [{member.name}()](method-{slugify(member.name)}.md)")
+            display_name, is_hookable = hookable_display_name(member.name)
+            hook_label = " (hookable)" if is_hookable else ""
+            method_links.append(
+                f"Method: [{display_name}()](method-{slugify(member.name)}.md){hook_label}"
+            )
         else:
             const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
 
@@ -1511,6 +1554,12 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
             ).as_posix(),
         }
         if member.kind == "method":
+            display_name, is_hookable = hookable_display_name(member.name)
+            if is_hookable:
+                entry["hookable"] = True
+                entry["name_public"] = display_name
+                entry["name_internal"] = member.name
+        if member.kind == "method":
             meta["methods"].append(entry)
         else:
             meta["constants"].append(entry)
@@ -1518,12 +1567,88 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
     return meta
 
 
-def build_index(out_dir: Path, items: list[tuple[str, str]]):
+def resolve_type_link(type_value: str, doc_index: DocIndex) -> Path | None:
+    for part in [p.strip() for p in type_value.split("|")]:
+        lower = part.lower()
+        if lower in {"null", "mixed", "false", "true", "bool", "boolean", "int", "integer", "float", "double", "string", "array", "callable"}:
+            continue
+        if part in doc_index.class_dirs:
+            return doc_index.class_dirs[part] / "index.md"
+    return None
+
+
+def extract_api_variables(
+    classes: list[ParsedClassDoc],
+    doc_index: DocIndex,
+    out_dir: Path,
+) -> list[str]:
+    for item in classes:
+        if item.class_info.name != "ProcessWire":
+            continue
+        if not item.class_info.docblock:
+            break
+        lines = strip_docblock(item.class_info.docblock)
+        entries: list[str] = []
+        for line in lines:
+            stripped = line.strip()
+            match = re.match(
+                r"^@property(?:-read|-write)?\s+([^\s]+)\s+(\$[A-Za-z_][A-Za-z0-9_]*)\s*(.*)$",
+                stripped,
+            )
+            if not match:
+                continue
+            type_value = match.group(1).strip()
+            var_name = match.group(2).strip()
+            desc = match.group(3).strip()
+            link_target = resolve_type_link(type_value, doc_index)
+            type_label = type_value
+            if link_target is not None:
+                rel_link = Path(os.path.relpath(str(link_target), start=str(out_dir)))
+                type_label = f"[`{type_value}`]({rel_link.as_posix()})"
+            else:
+                type_label = f"`{type_value}`"
+            desc_label = f" {desc}" if desc else ""
+            entries.append(f"- `{var_name}` {type_label}{desc_label}")
+        return entries
+    return []
+
+
+def build_index(
+    out_dir: Path,
+    classes: list[ParsedClassDoc],
+    files: list[ParsedFileDoc],
+    doc_index: DocIndex,
+):
     index_path = out_dir / "index.md"
-    lines = ["# ProcessWire API (Extracted)", "", "## Docs", ""]
-    for rel_path, class_name in sorted(items, key=lambda x: x[1].lower()):
-        doc_path = (Path(rel_path).parent / class_name / "index.md").as_posix()
+    lines = ["# ProcessWire API (Extracted)", ""]
+
+    api_vars = extract_api_variables(classes, doc_index, out_dir)
+    lines.append("## API Variables")
+    lines.append("")
+    if api_vars:
+        lines.extend(api_vars)
+    else:
+        lines.append("_No API variables detected._")
+
+    lines.append("")
+    lines.append("## Core Classes")
+    lines.append("")
+    for item in sorted(classes, key=lambda x: x.class_info.name.lower()):
+        class_name = item.class_info.name
+        doc_path = (Path(item.rel_path).parent / class_name / "index.md").as_posix()
         lines.append(f"- [{class_name}]({doc_path})")
+
+    lines.append("")
+    lines.append("## Functions")
+    lines.append("")
+    if files:
+        for item in sorted(files, key=lambda x: x.file_info.name.lower()):
+            name = item.file_info.name
+            doc_path = (Path(item.rel_path).parent / name / "index.md").as_posix()
+            lines.append(f"- [{name}]({doc_path})")
+    else:
+        lines.append("_No function docs detected._")
+
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
@@ -1594,23 +1719,20 @@ def main():
 
     doc_index = build_doc_index(out_dir, parsed_classes, parsed_files)
 
-    written: list[tuple[str, str]] = []
     manifest: dict = {
         "profile": args.profile,
         "items": [],
     }
     for item in parsed_classes:
         meta = write_doc(out_dir, item.rel_path, item.class_info, item.members, doc_index)
-        written.append((item.rel_path, item.class_info.name))
         manifest["items"].append(meta)
 
     for item in parsed_files:
         meta = write_file_doc(out_dir, item.file_info, doc_index)
-        written.append((item.rel_path, item.file_info.name))
         manifest["items"].append(meta)
 
-    if written:
-        build_index(out_dir, written)
+    if manifest["items"]:
+        build_index(out_dir, parsed_classes, parsed_files, doc_index)
         manifest_path = out_dir / "_manifest.json"
         manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

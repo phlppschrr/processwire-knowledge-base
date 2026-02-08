@@ -1,4 +1,4 @@
-# $wireSaveableItems->___deleteReady(Saveable $item)
+# $wireSaveableItems->deleteReady(Saveable $item)
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -10,11 +10,17 @@ Unlike before(delete), when this runs, it has already been confirmed that the it
 
 ~~~~~
 // basic usage
-$result = $wireSaveableItems->___deleteReady($item);
+$result = $wireSaveableItems->deleteReady($item);
 
 // usage with all arguments
-$result = $wireSaveableItems->___deleteReady(Saveable $item);
+$result = $wireSaveableItems->deleteReady(Saveable $item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `deleteReady`
+- Implementation: `___deleteReady`
+- Hook with: `$wireSaveableItems->deleteReady()`
 
 ## Arguments
 

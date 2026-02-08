@@ -1,4 +1,4 @@
-# $modules->___install($class, $options = array()): null|Module
+# $modules->install($class, $options = array()): null|Module
 
 Source: `wire/core/Modules.php`
 
@@ -8,11 +8,17 @@ Install the given module name
 
 ~~~~~
 // basic usage
-$modules->___install($class);
+$modules->install($class);
 
 // usage with all arguments
-$modules->___install($class, $options = array());
+$modules->install($class, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `install`
+- Implementation: `___install`
+- Hook with: `$modules->install()`
 
 ## Arguments
 

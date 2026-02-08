@@ -1,4 +1,4 @@
-# $inputfield->___getConfigArray(): array
+# $inputfield->getConfigArray(): array
 
 Source: `wire/core/Inputfield.php`
 
@@ -30,8 +30,14 @@ public function ___getConfigArray() {
 
 ~~~~~
 // basic usage
-$array = $inputfield->___getConfigArray();
+$array = $inputfield->getConfigArray();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getConfigArray`
+- Implementation: `___getConfigArray`
+- Hook with: `$inputfield->getConfigArray()`
 
 ## Return value
 

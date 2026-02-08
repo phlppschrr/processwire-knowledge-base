@@ -1,4 +1,4 @@
-# $tfa->___uninstall()
+# $tfa->uninstall()
 
 Source: `wire/core/Tfa.php`
 
@@ -10,5 +10,11 @@ Please note: Tfa modules with their own uninstall method must also call parent::
 
 ~~~~~
 // basic usage
-$result = $tfa->___uninstall();
+$result = $tfa->uninstall();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstall`
+- Implementation: `___uninstall`
+- Hook with: `$tfa->uninstall()`

@@ -1,4 +1,4 @@
-# $modules->___saveConfig($class, $data, $value = null): bool
+# $modules->saveConfig($class, $data, $value = null): bool
 
 Source: `wire/core/Modules.php`
 
@@ -29,11 +29,17 @@ $modules->saveConfig('HelloWorld', 'some_property', 'New Value');
 
 ~~~~~
 // basic usage
-$bool = $modules->___saveConfig($class, $data);
+$bool = $modules->saveConfig($class, $data);
 
 // usage with all arguments
-$bool = $modules->___saveConfig($class, $data, $value = null);
+$bool = $modules->saveConfig($class, $data, $value = null);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `saveConfig`
+- Implementation: `___saveConfig`
+- Hook with: `$modules->saveConfig()`
 
 ## Arguments
 

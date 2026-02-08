@@ -1,4 +1,4 @@
-# $pages->___cloneReady(Page $page, Page $copy)
+# $pages->cloneReady(Page $page, Page $copy)
 
 Source: `wire/core/Pages.php`
 
@@ -8,11 +8,17 @@ Hook called when a page is about to be cloned, but before data has been touched
 
 ~~~~~
 // basic usage
-$result = $pages->___cloneReady($page, $copy);
+$result = $pages->cloneReady($page, $copy);
 
 // usage with all arguments
-$result = $pages->___cloneReady(Page $page, Page $copy);
+$result = $pages->cloneReady(Page $page, Page $copy);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `cloneReady`
+- Implementation: `___cloneReady`
+- Hook with: `$pages->cloneReady()`
 
 ## Arguments
 

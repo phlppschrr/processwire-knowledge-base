@@ -1,4 +1,4 @@
-# $inputfield->___renderReadyHook(?Inputfield $parent = null, $renderValueMode = false)
+# $inputfield->renderReadyHook(?Inputfield $parent = null, $renderValueMode = false)
 
 Source: `wire/core/Inputfield.php`
 
@@ -10,11 +10,17 @@ Hook this method instead if you want to hook renderReady().
 
 ~~~~~
 // basic usage
-$result = $inputfield->___renderReadyHook();
+$result = $inputfield->renderReadyHook();
 
 // usage with all arguments
-$result = $inputfield->___renderReadyHook(?Inputfield $parent = null, $renderValueMode = false);
+$result = $inputfield->renderReadyHook(?Inputfield $parent = null, $renderValueMode = false);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `renderReadyHook`
+- Implementation: `___renderReadyHook`
+- Hook with: `$inputfield->renderReadyHook()`
 
 ## Arguments
 

@@ -62,7 +62,7 @@ Method: [__toString()](method-__tostring.md)
 Method: [__debugInfo()](method-__debuginfo.md)
 Method: [debugInfoItem()](method-debuginfoitem.md)
 Method: [setCustomVariableValue()](method-setcustomvariablevalue.md)
-Method: [___getCustomVariableValue()](method-___getcustomvariablevalue.md)
+Method: [getCustomVariableValue()](method-___getcustomvariablevalue.md) (hookable)
 
 Constants:
 Const: [maxOperatorLength](const-maxoperatorlength.md)

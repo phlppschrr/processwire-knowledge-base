@@ -1,4 +1,4 @@
-# $processPageSearchLive->___execute($getJSON = true): string|array
+# $processPageSearchLive->execute($getJSON = true): string|array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -8,11 +8,17 @@ Execute live search and return JSON result
 
 ~~~~~
 // basic usage
-$string = $processPageSearchLive->___execute();
+$string = $processPageSearchLive->execute();
 
 // usage with all arguments
-$string = $processPageSearchLive->___execute($getJSON = true);
+$string = $processPageSearchLive->execute($getJSON = true);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `execute`
+- Implementation: `___execute`
+- Hook with: `$processPageSearchLive->execute()`
 
 ## Arguments
 

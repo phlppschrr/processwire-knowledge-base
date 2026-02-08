@@ -1,4 +1,4 @@
-# $pagefiles->___delete($item): $this
+# $pagefiles->delete($item): $this
 
 Source: `wire/core/Pagefiles.php`
 
@@ -11,8 +11,14 @@ The actual deletion of the file does not take effect until `$page->save()`.
 
 ~~~~~
 // basic usage
-$result = $pagefiles->___delete($item);
+$result = $pagefiles->delete($item);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `delete`
+- Implementation: `___delete`
+- Hook with: `$pagefiles->delete()`
 
 ## Arguments
 

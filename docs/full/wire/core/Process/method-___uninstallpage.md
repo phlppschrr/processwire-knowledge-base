@@ -1,4 +1,4 @@
-# $process->___uninstallPage(): int
+# $process->uninstallPage(): int
 
 Source: `wire/core/Process.php`
 
@@ -12,8 +12,14 @@ To be called by the Process module's ___uninstall() method.
 
 ~~~~~
 // basic usage
-$int = $process->___uninstallPage();
+$int = $process->uninstallPage();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `uninstallPage`
+- Implementation: `___uninstallPage`
+- Hook with: `$process->uninstallPage()`
 
 ## Return value
 

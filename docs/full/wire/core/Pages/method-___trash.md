@@ -1,4 +1,4 @@
-# $pages->___trash(Page $page, $save = true): bool
+# $pages->trash(Page $page, $save = true): bool
 
 Source: `wire/core/Pages.php`
 
@@ -19,11 +19,17 @@ $pages->trash($product);
 
 ~~~~~
 // basic usage
-$bool = $pages->___trash($page);
+$bool = $pages->trash($page);
 
 // usage with all arguments
-$bool = $pages->___trash(Page $page, $save = true);
+$bool = $pages->trash(Page $page, $save = true);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `trash`
+- Implementation: `___trash`
+- Hook with: `$pages->trash()`
 
 ## Arguments
 

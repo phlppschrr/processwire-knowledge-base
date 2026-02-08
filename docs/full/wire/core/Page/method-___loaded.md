@@ -1,4 +1,4 @@
-# $page->___loaded()
+# $page->loaded()
 
 Source: `wire/core/Page.php`
 
@@ -16,5 +16,11 @@ $wire->addHook('Page::loaded', function($e) {
 
 ~~~~~
 // basic usage
-$result = $page->___loaded();
+$result = $page->loaded();
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `loaded`
+- Implementation: `___loaded`
+- Hook with: `$page->loaded()`

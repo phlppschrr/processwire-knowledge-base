@@ -1,4 +1,4 @@
-# $tfa->___getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings)
+# $tfa->getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings)
 
 Source: `wire/core/Tfa.php`
 
@@ -10,11 +10,17 @@ This method does not need to be implemented by TFA modules unless they want to a
 
 ~~~~~
 // basic usage
-$result = $tfa->___getUserEnabledInputfields($user, $fieldset, $settings);
+$result = $tfa->getUserEnabledInputfields($user, $fieldset, $settings);
 
 // usage with all arguments
-$result = $tfa->___getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings);
+$result = $tfa->getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getUserEnabledInputfields`
+- Implementation: `___getUserEnabledInputfields`
+- Hook with: `$tfa->getUserEnabledInputfields()`
 
 ## Arguments
 

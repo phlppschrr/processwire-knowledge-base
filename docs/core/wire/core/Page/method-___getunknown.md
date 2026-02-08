@@ -1,4 +1,4 @@
-# $page->___getUnknown($key): null|mixed
+# $page->getUnknown($key): null|mixed
 
 Source: `wire/core/Page.php`
 
@@ -10,8 +10,14 @@ Hooks that want to inject something here should hook after and modify the $event
 
 ~~~~~
 // basic usage
-$page->___getUnknown($key);
+$page->getUnknown($key);
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `getUnknown`
+- Implementation: `___getUnknown`
+- Hook with: `$page->getUnknown()`
 
 ## Arguments
 

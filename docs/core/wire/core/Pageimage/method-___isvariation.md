@@ -1,4 +1,4 @@
-# $pageimage->___isVariation($basename, $options = array()): bool|string|array
+# $pageimage->isVariation($basename, $options = array()): bool|string|array
 
 Source: `wire/core/Pageimage.php`
 
@@ -26,11 +26,17 @@ image between it and the original:
 
 ~~~~~
 // basic usage
-$bool = $pageimage->___isVariation($basename);
+$bool = $pageimage->isVariation($basename);
 
 // usage with all arguments
-$bool = $pageimage->___isVariation($basename, $options = array());
+$bool = $pageimage->isVariation($basename, $options = array());
 ~~~~~
+
+## Hookable
+
+- Hookable method name: `isVariation`
+- Implementation: `___isVariation`
+- Hook with: `$pageimage->isVariation()`
 
 ## Arguments
 
