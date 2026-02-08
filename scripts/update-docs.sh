@@ -14,3 +14,12 @@ python3 "${ROOT_DIR}/src/build_docs.py" \
   --source "${ROOT_DIR}/source/processwire" \
   --out "${ROOT_DIR}/docs/full" \
   --profile full
+
+if [ -f "${ROOT_DIR}/cache/docs-html/_index.json" ]; then
+  python3 "${ROOT_DIR}/src/build_guides.py" \
+    --cache "${ROOT_DIR}/cache/docs-html" \
+    --urls "${ROOT_DIR}/cache/urls.txt" \
+    --out "${ROOT_DIR}/docs/guides"
+else
+  echo "No cached HTML found in cache/docs-html; skipping guides build."
+fi

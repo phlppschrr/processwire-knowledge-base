@@ -1,0 +1,22 @@
+# Common output strategies
+
+Source: https://processwire.com/docs/front-end/output/
+
+## Summary
+
+Template files receive content and how they deliver it to the user is what we call the output strategy. There are a few different options and this section covers each in detail.
+
+## Key Points
+
+- Template files receive content and how they deliver it to the user is what we call the output strategy. There are a few different options and this section covers each in detail.
+
+## Sections
+
+
+### Direct output
+
+
+### Delayed output
+
+
+### Markup regions

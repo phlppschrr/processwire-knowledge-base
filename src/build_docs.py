@@ -252,6 +252,38 @@ def camel_lower(name: str) -> str:
     return first + "".join(rest)
 
 
+def extract_summary_from_lines(lines: list[str]) -> str | None:
+    if not lines:
+        return None
+    paragraph: list[str] = []
+    in_code = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```") or stripped.startswith("~~~~~"):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+        if stripped == "":
+            if paragraph:
+                break
+            continue
+        paragraph.append(stripped)
+    if not paragraph:
+        return None
+    return " ".join(paragraph)
+
+
+def extract_summary_from_docblock(docblock: str | None) -> str | None:
+    if not docblock:
+        return None
+    cleaned = clean_docblock(strip_docblock(docblock), drop_if_internal=True)
+    if not cleaned:
+        return None
+    body, _ = split_docblock_lines(cleaned)
+    return extract_summary_from_lines(body)
+
+
 def split_type_and_desc(text: str) -> tuple[str, str]:
     parts = text.split(None, 1)
     if not parts:
@@ -1823,6 +1855,155 @@ def build_index(
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+def build_search_indexes(
+    out_dir: Path,
+    classes: list[ParsedClassDoc],
+    files: list[ParsedFileDoc],
+    doc_index: DocIndex,
+):
+    search_items: list[dict] = []
+    hookable_items: list[dict] = []
+
+    for item in classes:
+        class_info = item.class_info
+        class_dir = out_dir / Path(item.rel_path).parent / class_info.name
+        class_summary = extract_summary_from_docblock(class_info.docblock)
+        search_items.append(
+            {
+                "type": "class",
+                "name": class_info.name,
+                "file": rel_out_path(class_dir / "index.md", out_dir),
+                "summary": class_summary,
+            }
+        )
+
+        if class_info.docblock:
+            _, grouped, order_groups, group_summaries = parse_class_docblock(class_info.docblock)
+            ordered_names: list[str] = []
+            remaining = sorted(grouped.keys(), key=lambda k: k.lower())
+            for name in order_groups:
+                lower = name.lower()
+                matches = [g for g in grouped.keys() if g.lower() == lower]
+                for g in matches:
+                    if g not in ordered_names:
+                        ordered_names.append(g)
+                        if g in remaining:
+                            remaining.remove(g)
+            for g in remaining:
+                if g not in ordered_names:
+                    ordered_names.append(g)
+            summary_map = {k.lower(): v for k, v in group_summaries.items()}
+            for group_name in ordered_names:
+                if group_name not in grouped:
+                    continue
+                search_items.append(
+                    {
+                        "type": "group",
+                        "name": group_name,
+                        "class": class_info.name,
+                        "file": rel_out_path(class_dir / f"group-{slugify(group_name)}.md", out_dir),
+                        "summary": summary_map.get(group_name.lower()),
+                    }
+                )
+
+        for member in item.members:
+            cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+            if not cleaned:
+                continue
+            display_name, is_hookable = hookable_display_name(member.name)
+            member_summary = extract_summary_from_lines(split_docblock_lines(cleaned)[0])
+            entry = {
+                "type": member.kind,
+                "name": display_name if member.kind == "method" else member.name,
+                "class": class_info.name,
+                "file": rel_out_path(
+                    class_dir
+                    / (
+                        f"method-{slugify(member.name)}.md"
+                        if member.kind == "method"
+                        else f"const-{slugify(member.name)}.md"
+                    ),
+                    out_dir,
+                ),
+                "summary": member_summary,
+            }
+            if member.kind == "method":
+                entry["signature"] = member.signature_params
+                entry["return"] = member.signature_return
+            if is_hookable:
+                entry["hookable"] = True
+                entry["name_public"] = display_name
+                entry["name_internal"] = member.name
+                hookable_items.append(
+                    {
+                        "class": class_info.name,
+                        "name_public": display_name,
+                        "name_internal": member.name,
+                        "file": entry["file"],
+                    }
+                )
+            search_items.append(entry)
+
+    for item in files:
+        file_info = item.file_info
+        file_dir = out_dir / Path(item.rel_path).parent / file_info.name
+        file_summary = extract_summary_from_docblock(file_info.docblock)
+        search_items.append(
+            {
+                "type": "file",
+                "name": file_info.name,
+                "file": rel_out_path(file_dir / "index.md", out_dir),
+                "summary": file_summary,
+            }
+        )
+        for member in file_info.members:
+            cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+            if not cleaned:
+                continue
+            display_name, is_hookable = hookable_display_name(member.name)
+            member_summary = extract_summary_from_lines(split_docblock_lines(cleaned)[0])
+            entry = {
+                "type": member.kind,
+                "name": display_name if member.kind == "method" else member.name,
+                "class": file_info.name,
+                "file": rel_out_path(
+                    file_dir
+                    / (
+                        f"method-{slugify(member.name)}.md"
+                        if member.kind == "method"
+                        else f"const-{slugify(member.name)}.md"
+                    ),
+                    out_dir,
+                ),
+                "summary": member_summary,
+            }
+            if member.kind == "method":
+                entry["signature"] = member.signature_params
+                entry["return"] = member.signature_return
+            if is_hookable:
+                entry["hookable"] = True
+                entry["name_public"] = display_name
+                entry["name_internal"] = member.name
+                hookable_items.append(
+                    {
+                        "class": file_info.name,
+                        "name_public": display_name,
+                        "name_internal": member.name,
+                        "file": entry["file"],
+                    }
+                )
+            search_items.append(entry)
+
+    (out_dir / "_search.json").write_text(
+        json.dumps({"items": search_items}, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    (out_dir / "_hookable.json").write_text(
+        json.dumps({"items": hookable_items}, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+
 def prune_skipped_docs(out_dir: Path):
     for path in list(out_dir.rglob("*.md")):
         if should_skip_path(path):
@@ -1904,6 +2085,7 @@ def main():
 
     if manifest["items"]:
         build_index(out_dir, parsed_classes, parsed_files, doc_index)
+        build_search_indexes(out_dir, parsed_classes, parsed_files, doc_index)
         manifest_path = out_dir / "_manifest.json"
         manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

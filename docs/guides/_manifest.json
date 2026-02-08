@@ -1,0 +1,564 @@
+{
+  "items": [
+    {
+      "title": "ProcessWire documentation",
+      "url": "https://processwire.com/docs/",
+      "category": "Other",
+      "file": "docs.md",
+      "summary": null,
+      "kind": "page"
+    },
+    {
+      "title": "Getting started with ProcessWire",
+      "url": "https://processwire.com/docs/start/",
+      "category": "Getting Started",
+      "file": "docs/start.md",
+      "summary": "Introductory topics on installation as well as some of the basics of ProcessWire’s structure, API and more.",
+      "kind": "page"
+    },
+    {
+      "title": "Installing or upgrading ProcessWire",
+      "url": "https://processwire.com/docs/start/install/",
+      "category": "Getting Started",
+      "file": "docs/start/install.md",
+      "summary": "Covers installation of ProcessWire, troubleshooting installation and upgrading from version to version.",
+      "kind": "page"
+    },
+    {
+      "title": "Installing ProcessWire",
+      "url": "https://processwire.com/docs/start/install/new/",
+      "category": "Getting Started",
+      "file": "docs/start/install/new.md",
+      "summary": "Information on how to download and install a new copy of ProcessWire from a ZIP file, from GitHub, or with Composer.",
+      "kind": "page"
+    },
+    {
+      "title": "Upgrading ProcessWire from one version to another",
+      "url": "https://processwire.com/docs/start/install/upgrade/",
+      "category": "Getting Started",
+      "file": "docs/start/install/upgrade.md",
+      "summary": "Most version upgrades in ProcessWire are as simple as just replacing the /wire/ directory with the new version.",
+      "kind": "page"
+    },
+    {
+      "title": "Troubleshooting ProcessWire install or upgrade",
+      "url": "https://processwire.com/docs/start/install/troubleshooting/",
+      "category": "Getting Started",
+      "file": "docs/start/install/troubleshooting.md",
+      "summary": "If you’ve run into an issue during installation or upgrade of ProcessWire, find out how to fix it here.",
+      "kind": "page"
+    },
+    {
+      "title": "ProcessWire Structure",
+      "url": "https://processwire.com/docs/start/structure/",
+      "category": "Getting Started",
+      "file": "docs/start/structure.md",
+      "summary": "Overview of ProcessWire’s structure in terms of pages, templates and fields. And an outline of the directory structure.",
+      "kind": "page"
+    },
+    {
+      "title": "Pages in ProcessWire",
+      "url": "https://processwire.com/docs/start/structure/pages/",
+      "category": "Getting Started",
+      "file": "docs/start/structure/pages.md",
+      "summary": "Almost everything in ProcessWire is represented by a Page. The term “Page” refers to a webpage, though in ProcessWire it’s also much more.",
+      "kind": "page"
+    },
+    {
+      "title": "Templates in ProcessWire",
+      "url": "https://processwire.com/docs/start/structure/templates/",
+      "category": "Getting Started",
+      "file": "docs/start/structure/templates.md",
+      "summary": "Every Page has a template which defines the type of Page and what fields are present on pages using it. Every template may be used by one or more pages.",
+      "kind": "page"
+    },
+    {
+      "title": "Fields and field types in ProcessWire",
+      "url": "https://processwire.com/docs/start/structure/fields/",
+      "category": "Getting Started",
+      "file": "docs/start/structure/fields.md",
+      "summary": "Fields in ProcessWire are where the content is actually stored. Any field may be one of many storing content for a Page and its output.",
+      "kind": "page"
+    },
+    {
+      "title": "ProcessWire’s file and directory structure",
+      "url": "https://processwire.com/docs/start/structure/files/",
+      "category": "Getting Started",
+      "file": "docs/start/structure/files.md",
+      "summary": "An outline of ProcessWire’s file and directory structure, highlighting the locations where your site’s files go, where the core files live, where to place modules, and more.",
+      "kind": "page"
+    },
+    {
+      "title": "About the ProcessWire API",
+      "url": "https://processwire.com/docs/start/api/",
+      "category": "Getting Started",
+      "file": "docs/start/api.md",
+      "summary": "What the API is, why we think you'll like it, and how it makes ProcessWire a unique platform in the CMS landscape.",
+      "kind": "page"
+    },
+    {
+      "title": "Using template files in ProcessWire",
+      "url": "https://processwire.com/docs/start/templates/",
+      "category": "Getting Started",
+      "file": "docs/start/templates.md",
+      "summary": "Every time a page is loaded on your site, ProcessWire looks at what template is assigned to the page, loads it, gives it several API variables, and then runs it as a PHP script.",
+      "kind": "page"
+    },
+    {
+      "title": "Introduction to ProcessWire API variables",
+      "url": "https://processwire.com/docs/start/variables/",
+      "category": "Getting Started",
+      "file": "docs/start/variables.md",
+      "summary": "ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.",
+      "kind": "page"
+    },
+    {
+      "title": "Various ways of accessing the ProcessWire API",
+      "url": "https://processwire.com/docs/start/api-access/",
+      "category": "Getting Started",
+      "file": "docs/start/api-access.md",
+      "summary": "In ProcessWire there are several ways that you can access the API and we take a look at the most common ones here. Regardless of what method you use, you are technically accessing what are called API variables.",
+      "kind": "page"
+    },
+    {
+      "title": "Producing output on the front-end",
+      "url": "https://processwire.com/docs/front-end/",
+      "category": "Front-end",
+      "file": "docs/front-end.md",
+      "summary": "Topics on using the ProcessWire API to render output on the front-end of your site with your template files.",
+      "kind": "page"
+    },
+    {
+      "title": "Common output strategies",
+      "url": "https://processwire.com/docs/front-end/output/",
+      "category": "Front-end",
+      "file": "docs/front-end/output.md",
+      "summary": "Template files receive content and how they deliver it to the user is what we call the output strategy. There are a few different options and this section covers each in detail.",
+      "kind": "page"
+    },
+    {
+      "title": "URL segments and routing",
+      "url": "https://processwire.com/docs/front-end/how-to-use-url-segments/",
+      "category": "Front-end",
+      "file": "docs/front-end/how-to-use-url-segments.md",
+      "summary": "URL segments enable your page’s template file to become a URL router or controller to act upon different URLs sent to it.",
+      "kind": "page"
+    },
+    {
+      "title": "Including and bootstrapping ProcessWire",
+      "url": "https://processwire.com/docs/front-end/include/",
+      "category": "Front-end",
+      "file": "docs/front-end/include.md",
+      "summary": "Use ProcessWire’s API in other PHP apps and shell scripts… It’s easy!",
+      "kind": "page"
+    },
+    {
+      "title": "Front-end editing (PageFrontEdit module)",
+      "url": "https://processwire.com/docs/front-end/front-end-editing/",
+      "category": "Front-end",
+      "file": "docs/front-end/front-end-editing.md",
+      "summary": "Edit pages on the front-end of your site with the core PageFrontEdit module.",
+      "kind": "page"
+    },
+    {
+      "title": "MarkupPagerNav (markup for pagination)",
+      "url": "https://processwire.com/docs/front-end/markup-pager-nav/",
+      "category": "Front-end",
+      "file": "docs/front-end/markup-pager-nav.md",
+      "summary": "This module renders navigation for pagination. Such navigation usually appears as a list of \"1, 2, 3, next…\" links at the bottom of search results.",
+      "kind": "page"
+    },
+    {
+      "title": "Using Selectors",
+      "url": "https://processwire.com/docs/selectors/",
+      "category": "Selectors",
+      "file": "docs/selectors.md",
+      "summary": "Selectors are simple strings of text that specify fields and values. These selectors are used throughout ProcessWire to find pages (and other types of data).",
+      "kind": "page"
+    },
+    {
+      "title": "Selector Operators in ProcessWire",
+      "url": "https://processwire.com/docs/selectors/operators/",
+      "category": "Selectors",
+      "file": "docs/selectors/operators.md",
+      "summary": "A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=” sign), and the value (or values) you want to match. On this page all of the available operators are covered in depth.",
+      "kind": "page"
+    },
+    {
+      "title": "Modules (plugins) and hooks",
+      "url": "https://processwire.com/docs/modules/",
+      "category": "Modules & Hooks",
+      "file": "docs/modules.md",
+      "summary": "A module is a type of plugin that runs in ProcessWire, and they come in many flavors. At its core, ProcessWire is a platform for executing modules, and much ProcessWire is built upon these modules. Hooks enable you to intercept and modify events in ProcessWire and can be used both inside and outside of modules.",
+      "kind": "page"
+    },
+    {
+      "title": "Introduction to modules",
+      "url": "https://processwire.com/docs/modules/intro/",
+      "category": "Modules & Hooks",
+      "file": "docs/modules/intro.md",
+      "summary": "Learn about what modules are, what different flavors of modules are available, how to install them, and where to get them.",
+      "kind": "page"
+    },
+    {
+      "title": "Developing modules in ProcessWire",
+      "url": "https://processwire.com/docs/modules/development/",
+      "category": "Modules & Hooks",
+      "file": "docs/modules/development.md",
+      "summary": "It is easy to develop a module in ProcessWire, though some PHP experience is helpful. This section introduces module development and guides you through a simple example to get you started.",
+      "kind": "page"
+    },
+    {
+      "title": "Predefined module types in ProcessWire",
+      "url": "https://processwire.com/docs/modules/types/",
+      "category": "Modules & Hooks",
+      "file": "docs/modules/types.md",
+      "summary": "This page looks at the different predefined types of modules in ProcessWire and what they do. It also provides the recommended naming prefixes for modules so that ProcessWire can recognize your module type without actually loading it.",
+      "kind": "page"
+    },
+    {
+      "title": "Using hooks in ProcessWire",
+      "url": "https://processwire.com/docs/modules/hooks/",
+      "category": "Modules & Hooks",
+      "file": "docs/modules/hooks.md",
+      "summary": "ProcessWire contains many methods that you may easily hook in order to modify the behavior of the method. Hooks can also be used to add new methods to existing classes.",
+      "kind": "page"
+    },
+    {
+      "title": "About the /site/modules/ directory",
+      "url": "https://processwire.com/docs/modules/about-site-modules/",
+      "category": "Modules & Hooks",
+      "file": "docs/modules/about-site-modules.md",
+      "summary": "This directory /site/modules/ is where you may install additional 3rd party plugin modules, or create your own. Modules in this directory are specific to your site only.",
+      "kind": "page"
+    },
+    {
+      "title": "Fields, Fieldtypes and Inputfields",
+      "url": "https://processwire.com/docs/fields/",
+      "category": "Fields",
+      "file": "docs/fields.md",
+      "summary": "Additional documentation and details on using various different kinds of field types and input fields in ProcessWire.",
+      "kind": "page"
+    },
+    {
+      "title": "Input dependencies (or field dependencies)",
+      "url": "https://processwire.com/docs/fields/dependencies/",
+      "category": "Fields",
+      "file": "docs/fields/dependencies.md",
+      "summary": "Input and field dependencies enable you to specify the conditions under which a particular field in the page editor is shown or required.",
+      "kind": "page"
+    },
+    {
+      "title": "Repeatable Fields / Matrix Fields",
+      "url": "https://processwire.com/docs/fields/repeaters/",
+      "category": "Fields",
+      "file": "docs/fields/repeaters.md",
+      "summary": "The repeater fieldtype enables you to create a group of fields and make it repeatable in any quantity on your page. This opens many new possibilities with how you might manage and structure data.",
+      "kind": "page"
+    },
+    {
+      "title": "Textarea (FieldtypeTextarea) multi-line text",
+      "url": "https://processwire.com/docs/fields/textarea-fieldtype/",
+      "category": "Fields",
+      "file": "docs/fields/textarea-fieldtype.md",
+      "summary": "The Textarea Fieldtype is designed to hold any amount of text. Typically Textarea is used for multi-line text values. It is also used for rich text (CKEditor) fields.",
+      "kind": "page"
+    },
+    {
+      "title": "Select Options Fieldtype (FieldtypeOptions)",
+      "url": "https://processwire.com/docs/fields/select-options-fieldtype/",
+      "category": "Fields",
+      "file": "docs/fields/select-options-fieldtype.md",
+      "summary": "The Options Fieldtype provides single and multi choice selectable options in ProcessWire, as an alternative to using Page fields.",
+      "kind": "page"
+    },
+    {
+      "title": "FieldtypeImage (for images fields)",
+      "url": "https://processwire.com/docs/fields/images/",
+      "category": "Fields",
+      "file": "docs/fields/images.md",
+      "summary": "This page outlines using and manipulating image fields — one of the most commonly used in ProcessWire.",
+      "kind": "page"
+    },
+    {
+      "title": "ProcessWire CKEditor Inputfield module",
+      "url": "https://processwire.com/docs/fields/ckeditor/",
+      "category": "Fields",
+      "file": "docs/fields/ckeditor.md",
+      "summary": "CKEditor is the rich text editor used by ProcessWire via the module InputfieldCKEditor. On a default installation of ProcessWire, there is typically a “body” field which uses CKEditor.",
+      "kind": "page"
+    },
+    {
+      "title": "Using multi-language fields",
+      "url": "https://processwire.com/docs/fields/multi-language-fields/",
+      "category": "Fields",
+      "file": "docs/fields/multi-language-fields.md",
+      "summary": "Here we look in detail at multi-language fields and language-alternate fields, as well as how to use them. Also includes a video overview and examples of how to use language fields to create full multi-language websites.",
+      "kind": "page"
+    },
+    {
+      "title": "Access control in ProcessWire",
+      "url": "https://processwire.com/docs/user-access/",
+      "category": "Access Control",
+      "file": "docs/user-access.md",
+      "summary": "ProcessWire uses a role-based access control system (RBAC). Users are assigned to one or more roles, each role is assigned permissions, and roles are assigned to templates for access control of pages.",
+      "kind": "page"
+    },
+    {
+      "title": "Roles for access control in ProcessWire",
+      "url": "https://processwire.com/docs/user-access/roles/",
+      "category": "Access Control",
+      "file": "docs/user-access/roles.md",
+      "summary": "Roles are a way of grouping multiple users and assigning permissions to that group. They are the connection of both users and templates to permissions.",
+      "kind": "page"
+    },
+    {
+      "title": "Permissions for access control in ProcessWire",
+      "url": "https://processwire.com/docs/user-access/permissions/",
+      "category": "Access Control",
+      "file": "docs/user-access/permissions.md",
+      "summary": "Permissions represent a granular permission to access something or to perform some action. This page outlines permissions recognized by the core.",
+      "kind": "page"
+    },
+    {
+      "title": "CMS Security for ProcessWire",
+      "url": "https://processwire.com/docs/security/",
+      "category": "Security",
+      "file": "docs/security.md",
+      "summary": "Security is our number one priority with ProcessWire. Make it your number one priority too. In this section we attempt to cover some of the more important aspects in maintaining a secure installation.",
+      "kind": "page"
+    },
+    {
+      "title": "Securing file permissions",
+      "url": "https://processwire.com/docs/security/file-permissions/",
+      "category": "Security",
+      "file": "docs/security/file-permissions.md",
+      "summary": "Getting your file permissions right is one of the most important factors in maintaining the security of your ProcessWire installation, particularly in non-dedicated/shared environments.",
+      "kind": "page"
+    },
+    {
+      "title": "Securing your admin",
+      "url": "https://processwire.com/docs/security/admin/",
+      "category": "Security",
+      "file": "docs/security/admin.md",
+      "summary": "Information about the design and purpose of the admin environment and how to protect it. Overview of securing your admin, preventing attacks, SSL certificates, tracking logins, enabling 2FA, managing page edit access and other security best practices.",
+      "kind": "page"
+    },
+    {
+      "title": "Web hosting security",
+      "url": "https://processwire.com/docs/security/web-hosting/",
+      "category": "Security",
+      "file": "docs/security/web-hosting.md",
+      "summary": "When possible, your production sites running ProcessWire (or any CMS) should ideally be in a dedicated environment. This doesn't necessarily mean a dedicated server…",
+      "kind": "page"
+    },
+    {
+      "title": "Migrating to production",
+      "url": "https://processwire.com/docs/security/migration/",
+      "category": "Security",
+      "file": "docs/security/migration.md",
+      "summary": "Unless the production server is a completely dedicated environment, don't assume that what was safe on your development server will also be safe on the production server.",
+      "kind": "page"
+    },
+    {
+      "title": "Remove unnecessary files",
+      "url": "https://processwire.com/docs/security/remove-unnecessary-files/",
+      "category": "Security",
+      "file": "docs/security/remove-unnecessary-files.md",
+      "summary": "ProcessWire comes with several files that you will no longer need after installation.",
+      "kind": "page"
+    },
+    {
+      "title": "Database-driven sessions",
+      "url": "https://processwire.com/docs/security/sessions/",
+      "category": "Security",
+      "file": "docs/security/sessions.md",
+      "summary": "Database-driven sessions offer potentially better security since the session information is not stored on the file system.",
+      "kind": "page"
+    },
+    {
+      "title": "Third party modules",
+      "url": "https://processwire.com/docs/security/third-party-modules/",
+      "category": "Security",
+      "file": "docs/security/third-party-modules.md",
+      "summary": "We can vouch for the security of the code that we write in the ProcessWire core, but we can't vouch for the security of third party modules. Follow these guidelines to maximize your security with third party modules.",
+      "kind": "page"
+    },
+    {
+      "title": "Security for template files in ProcessWire",
+      "url": "https://processwire.com/docs/security/template-files/",
+      "category": "Security",
+      "file": "docs/security/template-files.md",
+      "summary": "While ProcessWire handles a lot of the common security considerations before your template files are even loaded, you should also follow security best practices within your template files as you would in any other PHP framework.",
+      "kind": "page"
+    },
+    {
+      "title": "Two-factor (or multi-factor) authentication",
+      "url": "https://processwire.com/docs/security/two-factor-authentication/",
+      "category": "Security",
+      "file": "docs/security/two-factor-authentication.md",
+      "summary": "Two-factor (or multi-factor) authentication gives you an extra layer of account security relative to just using a password. ProcessWire versions 3.0.109 and newer include core support for two-factor authentication.",
+      "kind": "page"
+    },
+    {
+      "title": "Running ProcessWire alongside other software",
+      "url": "https://processwire.com/docs/security/other-software/",
+      "category": "Security",
+      "file": "docs/security/other-software.md",
+      "summary": "ProcessWire will happily run alongside almost any other PHP application, including other CMSs. However, security on your site will only be as good as the weakest link.",
+      "kind": "page"
+    },
+    {
+      "title": "Multiple language support with ProcessWire",
+      "url": "https://processwire.com/docs/multi-language-support/",
+      "category": "Multi-language",
+      "file": "docs/multi-language-support.md",
+      "summary": "Multi-language page names (URLs) and multi-language text fields make developing a multilingual site as easy as developing a single language site.",
+      "kind": "page"
+    },
+    {
+      "title": "Code Internationalization (i18n)",
+      "url": "https://processwire.com/docs/multi-language-support/code-i18n/",
+      "category": "Multi-language",
+      "file": "docs/multi-language-support/code-i18n.md",
+      "summary": "This page provides detailed documentation on everything you need to know to make your template files or modules translatable using ProcessWire's translation tools.",
+      "kind": "page"
+    },
+    {
+      "title": "Using multi-language fields",
+      "url": "https://processwire.com/docs/multi-language-support/multi-language-fields/",
+      "category": "Multi-language",
+      "file": "docs/multi-language-support/multi-language-fields.md",
+      "summary": "Here we look in detail at multi-language fields and language-alternate fields, as well as how to use them. Also includes a video overview and examples of how to use language fields to create full multi-language websites.",
+      "kind": "page"
+    },
+    {
+      "title": "Multi-language URLs and page names",
+      "url": "https://processwire.com/docs/multi-language-support/multi-language-urls/",
+      "category": "Multi-language",
+      "file": "docs/multi-language-support/multi-language-urls.md",
+      "summary": "Multi-language URLs and page names enable you to maintain different/translated URLs for each page, based on the language. It also lets you produce your site easily, as the language is determined automatically by the URL.",
+      "kind": "page"
+    },
+    {
+      "title": "Add multi-language translations to your module",
+      "url": "https://processwire.com/docs/multi-language-support/multi-language-modules/",
+      "category": "Multi-language",
+      "file": "docs/multi-language-support/multi-language-modules.md",
+      "summary": "To add multi-language translations to your module, you can export a CSV file of translations, give them names that reflect the language and copy them to /languages/ directory in your module’s files. We'll cover the details in 4 steps below.",
+      "kind": "page"
+    },
+    {
+      "title": "More topics",
+      "url": "https://processwire.com/docs/more/",
+      "category": "More Topics",
+      "file": "docs/more.md",
+      "summary": "Additional topics on developing with ProcessWire that didn’t fit into one of the categories above.",
+      "kind": "page"
+    },
+    {
+      "title": "Multiple-site support",
+      "url": "https://processwire.com/docs/more/multi-site-support/",
+      "category": "More Topics",
+      "file": "docs/more/multi-site-support.md",
+      "summary": "The core supports multiple sites running on the same web account and ProcessWire installation, with each site maintaining its own database and /site/ directory. This section outlines how to install multiple sites on the same ProcessWire installation using this method.",
+      "kind": "page"
+    },
+    {
+      "title": "ProcessWire PHP Coding Style Guide v1.0",
+      "url": "https://processwire.com/docs/more/coding-style-guide/",
+      "category": "More Topics",
+      "file": "docs/more/coding-style-guide.md",
+      "summary": "This PHP style guide represents the coding style preferred for the ProcessWire core.",
+      "kind": "page"
+    },
+    {
+      "title": "Lazy Cron",
+      "url": "https://processwire.com/docs/more/lazy-cron/",
+      "category": "More Topics",
+      "file": "docs/more/lazy-cron.md",
+      "summary": "This core module provides hooks that are automatically executed at various intervals.",
+      "kind": "page"
+    },
+    {
+      "title": "ProcessWire Tutorials",
+      "url": "https://processwire.com/docs/tutorials/",
+      "category": "Tutorials",
+      "file": "docs/tutorials.md",
+      "summary": "If you like to learn by doing or by example, these tutorials will help you get up to speed with ProcessWire quickly.",
+      "kind": "page"
+    },
+    {
+      "title": "“Hello Worlds”, a beginning ProcessWire tutorial",
+      "url": "https://processwire.com/docs/tutorials/hello-worlds/",
+      "category": "Tutorials",
+      "file": "docs/tutorials/hello-worlds.md",
+      "summary": "In this tutorial you will learn how to create and work with templates, fields, pages, and how to output dynamic data via your templates.",
+      "kind": "page"
+    },
+    {
+      "title": "Introduction to the default site profile",
+      "url": "https://processwire.com/docs/tutorials/default-site-profile/",
+      "category": "Tutorials",
+      "file": "docs/tutorials/default-site-profile.md",
+      "summary": "Just getting started with ProcessWire and aren't totally clear on what template files are? The good news is that template files aren't anything other than regular HTML or PHP files, and you can use them however you want!",
+      "kind": "page"
+    },
+    {
+      "title": "How to structure your template files",
+      "url": "https://processwire.com/docs/tutorials/how-to-structure-your-template-files/",
+      "category": "Tutorials",
+      "file": "docs/tutorials/how-to-structure-your-template-files.md",
+      "summary": "How to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as extensive examples.",
+      "kind": "page"
+    },
+    {
+      "title": "Using custom page types in ProcessWire",
+      "url": "https://processwire.com/docs/tutorials/using-custom-page-types-in-processwire/",
+      "category": "Tutorials",
+      "file": "docs/tutorials/using-custom-page-types-in-processwire.md",
+      "summary": "A look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types.",
+      "kind": "page"
+    },
+    {
+      "title": "Selector Cheatsheet",
+      "url": "https://processwire.com/docs/selectors/operators/",
+      "category": "Cheatsheets",
+      "file": "cheatsheets/selectors.md",
+      "summary": "Selectors are simple strings of text that specify fields and values. These selectors are used throughout ProcessWire to find pages (and other types of data).",
+      "kind": "cheatsheet"
+    },
+    {
+      "title": "Templates, Fields & Output Primer",
+      "url": "https://processwire.com/docs/front-end/output/",
+      "category": "Cheatsheets",
+      "file": "cheatsheets/templates-output.md",
+      "summary": "Template files receive content and how they deliver it to the user is what we call the output strategy. There are a few different options and this section covers each in detail.",
+      "kind": "cheatsheet"
+    },
+    {
+      "title": "API Variables Map",
+      "url": "https://processwire.com/docs/start/variables/",
+      "category": "Cheatsheets",
+      "file": "cheatsheets/api-variables.md",
+      "summary": "ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.",
+      "kind": "cheatsheet"
+    },
+    {
+      "title": "Security Checklist",
+      "url": "https://processwire.com/docs/security/file-permissions/",
+      "category": "Cheatsheets",
+      "file": "cheatsheets/security.md",
+      "summary": "Getting your file permissions right is one of the most important factors in maintaining the security of your ProcessWire installation, particularly in non-dedicated/shared environments.",
+      "kind": "cheatsheet"
+    },
+    {
+      "title": "Multi-language Checklist",
+      "url": "https://processwire.com/docs/multi-language-support/",
+      "category": "Cheatsheets",
+      "file": "cheatsheets/multi-language.md",
+      "summary": "Multi-language page names (URLs) and multi-language text fields make developing a multilingual site as easy as developing a single language site.",
+      "kind": "cheatsheet"
+    }
+  ]
+}

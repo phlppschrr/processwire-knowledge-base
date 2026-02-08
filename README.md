@@ -5,12 +5,15 @@ This repository builds an LLM-friendly documentation skill from ProcessWire core
 ## Outputs
 - `docs/core/` — Core-only build (recommended for LLMs)
 - `docs/full/` — Full build (includes modules)
+- `docs/guides/` — Extracted official guides (summaries + cheatsheets)
 
 Each class/file is chunked into:
 - `index.md`
 - `group-<name>.md`
 - `method-<name>.md` / `const-<name>.md`
 - `_manifest.json` for retrieval
+- `_search.json` for compact lookup
+- `_hookable.json` for hookable method lookup
 
 ## Update
 ```bash
@@ -29,6 +32,11 @@ python3 scripts/cache-docs.py
 This will:
 - Download the ProcessWire guides from `cache/urls.txt`
 - Store HTML under `cache/docs-html/` with an `_index.json` manifest
+
+Then build the guides:
+```bash
+python3 src/build_guides.py
+```
 
 ## Notes
 - HTMLPurifier-related docs are skipped.

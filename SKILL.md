@@ -11,6 +11,7 @@ Use the extracted documentation in `docs/` as the canonical source of truth. The
 ## Entry Point
 - `docs/core/index.md` (core-only, recommended)
 - `docs/full/index.md` (full)
+- `docs/guides/index.md` (official guides + cheatsheets)
 
 The index is organized into:
 - API Variables (from `ProcessWire` class `@property` list)
@@ -23,6 +24,7 @@ Index categories are configured in `categories.json` (official API structure). I
 - Prefer `docs/core` for smaller context; fall back to `docs/full` only if needed.
 - Start from `index.md`, then drill down via group files (`group-*.md`) before opening method files.
 - Each class/file has a `_manifest.json` entry in `docs/*/_manifest.json` with paths and method metadata.
+- Use `_search.json` for compact lookups and `_hookable.json` to find hookable methods fast.
 
 ## Hookable Methods
 Methods implemented with a `___` prefix are hookable. In the docs:
@@ -37,6 +39,9 @@ If you need conceptual guidance beyond API docs, cache the official guides as HT
 - `python3 scripts/cache-docs.py`
 
 Cached HTML lives under `cache/docs-html/` with an `_index.json` manifest. Use these sources to summarize key concepts like templates, selectors, hooks, modules, security, and multi-language setup.
+
+To build the extracted guides (summaries + cheatsheets):
+- `python3 src/build_guides.py`
 
 ## Update
 Run:
