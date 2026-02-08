@@ -1422,7 +1422,7 @@ def write_doc(
         "type": "class",
         "name": class_info.name,
         "source": rel_path,
-        "index": (class_dir / "index.md").as_posix(),
+        "index": rel_out_path(class_dir / "index.md", out_dir),
         "groups": [],
         "methods": [],
         "constants": [],
@@ -1435,7 +1435,7 @@ def write_doc(
             meta["groups"].append(
                 {
                     "name": group_name,
-                    "file": (class_dir / f"group-{slugify(group_name)}.md").as_posix(),
+                    "file": rel_out_path(class_dir / f"group-{slugify(group_name)}.md", out_dir),
                 }
             )
     for member in members_sorted:
@@ -1444,14 +1444,15 @@ def write_doc(
             continue
         entry = {
             "name": member.name,
-            "file": (
+            "file": rel_out_path(
                 class_dir
                 / (
                     f"method-{slugify(member.name)}.md"
                     if member.kind == "method"
                     else f"const-{slugify(member.name)}.md"
-                )
-            ).as_posix(),
+                ),
+                out_dir,
+            ),
         }
         if member.kind == "method":
             display_name, is_hookable = hookable_display_name(member.name)
@@ -1534,7 +1535,7 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
         "type": "file",
         "name": file_info.name,
         "source": file_info.rel_path,
-        "index": (file_dir / "index.md").as_posix(),
+        "index": rel_out_path(file_dir / "index.md", out_dir),
         "methods": [],
         "constants": [],
     }
@@ -1544,14 +1545,15 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
             continue
         entry = {
             "name": member.name,
-            "file": (
+            "file": rel_out_path(
                 file_dir
                 / (
                     f"method-{slugify(member.name)}.md"
                     if member.kind == "method"
                     else f"const-{slugify(member.name)}.md"
-                )
-            ).as_posix(),
+                ),
+                out_dir,
+            ),
         }
         if member.kind == "method":
             display_name, is_hookable = hookable_display_name(member.name)
@@ -1763,6 +1765,10 @@ def render_category_section(lines: list[str], title: str, categories: dict[str, 
         lines.append("")
     if lines and lines[-1] == "":
         lines.pop()
+
+
+def rel_out_path(path: Path, out_dir: Path) -> str:
+    return Path(os.path.relpath(str(path), start=str(out_dir))).as_posix()
 
 
 def build_index(
