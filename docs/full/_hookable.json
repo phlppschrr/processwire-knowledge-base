@@ -1,2146 +1,1943 @@
 {
-  "items": [
-    {
-      "class": "Pagefiles",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Pagefiles/method-___delete.md"
-    },
-    {
-      "class": "Pagefiles",
-      "name_public": "clone",
-      "name_internal": "___clone",
-      "file": "wire/core/Pagefiles/method-___clone.md"
-    },
-    {
-      "class": "WireData",
-      "name_public": "and",
-      "name_internal": "___and",
-      "file": "wire/core/WireData/method-___and.md"
-    },
-    {
-      "class": "Pageimages",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/Pageimages/method-___render.md"
-    },
-    {
-      "class": "ImageSizer",
-      "name_public": "resize",
-      "name_internal": "___resize",
-      "file": "wire/core/ImageSizer/method-___resize.md"
-    },
-    {
-      "class": "FileCompiler",
-      "name_public": "compile",
-      "name_internal": "___compile",
-      "file": "wire/core/FileCompiler/method-___compile.md"
-    },
-    {
-      "class": "FileCompiler",
-      "name_public": "compileData",
-      "name_internal": "___compileData",
-      "file": "wire/core/FileCompiler/method-___compiledata.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "start",
-      "name_internal": "___start",
-      "file": "wire/core/Tfa/method-___start.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "buildAuthCodeForm",
-      "name_internal": "___buildAuthCodeForm",
-      "file": "wire/core/Tfa/method-___buildauthcodeform.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/Tfa/method-___render.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "process",
-      "name_internal": "___process",
-      "file": "wire/core/Tfa/method-___process.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "getUserSettingsInputfields",
-      "name_internal": "___getUserSettingsInputfields",
-      "file": "wire/core/Tfa/method-___getusersettingsinputfields.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "getUserSettingsInputfields",
-      "name_internal": "___getUserSettingsInputfields",
-      "file": "wire/core/Tfa/method-___getusersettingsinputfields.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "getUserEnabledInputfields",
-      "name_internal": "___getUserEnabledInputfields",
-      "file": "wire/core/Tfa/method-___getuserenabledinputfields.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "processUserSettingsInputfields",
-      "name_internal": "___processUserSettingsInputfields",
-      "file": "wire/core/Tfa/method-___processusersettingsinputfields.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "processUserEnabledInputfields",
-      "name_internal": "___processUserEnabledInputfields",
-      "file": "wire/core/Tfa/method-___processuserenabledinputfields.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Tfa/method-___install.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Tfa/method-___install.md"
-    },
-    {
-      "class": "Tfa",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/core/Tfa/method-___uninstall.md"
-    },
-    {
-      "class": "InputfieldWrapper",
-      "name_public": "new",
-      "name_internal": "___new",
-      "file": "wire/core/InputfieldWrapper/method-___new.md"
-    },
-    {
-      "class": "InputfieldWrapper",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/InputfieldWrapper/method-___render.md"
-    },
-    {
-      "class": "InputfieldWrapper",
-      "name_public": "renderValue",
-      "name_internal": "___renderValue",
-      "file": "wire/core/InputfieldWrapper/method-___rendervalue.md"
-    },
-    {
-      "class": "InputfieldWrapper",
-      "name_public": "renderInputfield",
-      "name_internal": "___renderInputfield",
-      "file": "wire/core/InputfieldWrapper/method-___renderinputfield.md"
-    },
-    {
-      "class": "InputfieldWrapper",
-      "name_public": "processInput",
-      "name_internal": "___processInput",
-      "file": "wire/core/InputfieldWrapper/method-___processinput.md"
-    },
-    {
-      "class": "InputfieldWrapper",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/core/InputfieldWrapper/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "new",
-      "name_internal": "___new",
-      "file": "wire/core/PagesType/method-___new.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/PagesType/method-___save.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/PagesType/method-___delete.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "add",
-      "name_internal": "___add",
-      "file": "wire/core/PagesType/method-___add.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/PagesType/method-___saveready.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/PagesType/method-___saveready.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "saved",
-      "name_internal": "___saved",
-      "file": "wire/core/PagesType/method-___saved.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "added",
-      "name_internal": "___added",
-      "file": "wire/core/PagesType/method-___added.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "deleteReady",
-      "name_internal": "___deleteReady",
-      "file": "wire/core/PagesType/method-___deleteready.md"
-    },
-    {
-      "class": "PagesType",
-      "name_public": "deleted",
-      "name_internal": "___deleted",
-      "file": "wire/core/PagesType/method-___deleted.md"
-    },
-    {
-      "class": "Roles",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Roles/method-___save.md"
-    },
-    {
-      "class": "Roles",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Roles/method-___delete.md"
-    },
-    {
-      "class": "Roles",
-      "name_public": "add",
-      "name_internal": "___add",
-      "file": "wire/core/Roles/method-___add.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Fields/method-___save.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Fields/method-___delete.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "clone",
-      "name_internal": "___clone",
-      "file": "wire/core/Fields/method-___clone.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "saveFieldgroupContext",
-      "name_internal": "___saveFieldgroupContext",
-      "file": "wire/core/Fields/method-___savefieldgroupcontext.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "changeFieldtype",
-      "name_internal": "___changeFieldtype",
-      "file": "wire/core/Fields/method-___changefieldtype.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "deleteFieldDataByTemplate",
-      "name_internal": "___deleteFieldDataByTemplate",
-      "file": "wire/core/Fields/method-___deletefielddatabytemplate.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "getTags",
-      "name_internal": "___getTags",
-      "file": "wire/core/Fields/method-___gettags.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "changedType",
-      "name_internal": "___changedType",
-      "file": "wire/core/Fields/method-___changedtype.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "changeTypeReady",
-      "name_internal": "___changeTypeReady",
-      "file": "wire/core/Fields/method-___changetypeready.md"
-    },
-    {
-      "class": "Fields",
-      "name_public": "applySetupName",
-      "name_internal": "___applySetupName",
-      "file": "wire/core/Fields/method-___applysetupname.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Templates/method-___save.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Templates/method-___delete.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "clone",
-      "name_internal": "___clone",
-      "file": "wire/core/Templates/method-___clone.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "getExportData",
-      "name_internal": "___getExportData",
-      "file": "wire/core/Templates/method-___getexportdata.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "setImportData",
-      "name_internal": "___setImportData",
-      "file": "wire/core/Templates/method-___setimportdata.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "getTags",
-      "name_internal": "___getTags",
-      "file": "wire/core/Templates/method-___gettags.md"
-    },
-    {
-      "class": "Templates",
-      "name_public": "fileModified",
-      "name_internal": "___fileModified",
-      "file": "wire/core/Templates/method-___filemodified.md"
-    },
-    {
-      "class": "ProcessController",
-      "name_public": "execute",
-      "name_internal": "___execute",
-      "file": "wire/core/ProcessController/method-___execute.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Inputfield/method-___install.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/core/Inputfield/method-___uninstall.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/Inputfield/method-___render.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "renderValue",
-      "name_internal": "___renderValue",
-      "file": "wire/core/Inputfield/method-___rendervalue.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "renderReadyHook",
-      "name_internal": "___renderReadyHook",
-      "file": "wire/core/Inputfield/method-___renderreadyhook.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "processInput",
-      "name_internal": "___processInput",
-      "file": "wire/core/Inputfield/method-___processinput.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/core/Inputfield/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "getConfigArray",
-      "name_internal": "___getConfigArray",
-      "file": "wire/core/Inputfield/method-___getconfigarray.md"
-    },
-    {
-      "class": "Inputfield",
-      "name_public": "getConfigAllowContext",
-      "name_internal": "___getConfigAllowContext",
-      "file": "wire/core/Inputfield/method-___getconfigallowcontext.md"
-    },
-    {
-      "class": "WireInputData",
-      "name_public": "callUnknown",
-      "name_internal": "___callUnknown",
-      "file": "wire/core/WireInputData/method-___callunknown.md"
-    },
-    {
-      "class": "WireLog",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/WireLog/method-___save.md"
-    },
-    {
-      "class": "Permissions",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Permissions/method-___save.md"
-    },
-    {
-      "class": "Permissions",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Permissions/method-___delete.md"
-    },
-    {
-      "class": "Permissions",
-      "name_public": "add",
-      "name_internal": "___add",
-      "file": "wire/core/Permissions/method-___add.md"
-    },
-    {
-      "class": "Permissions",
-      "name_public": "saved",
-      "name_internal": "___saved",
-      "file": "wire/core/Permissions/method-___saved.md"
-    },
-    {
-      "class": "Permissions",
-      "name_public": "deleted",
-      "name_internal": "___deleted",
-      "file": "wire/core/Permissions/method-___deleted.md"
-    },
-    {
-      "class": "AdminTheme",
-      "name_public": "getExtraMarkup",
-      "name_internal": "___getExtraMarkup",
-      "file": "wire/core/AdminTheme/method-___getextramarkup.md"
-    },
-    {
-      "class": "AdminTheme",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/AdminTheme/method-___install.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "init",
-      "name_internal": "___init",
-      "file": "wire/core/Session/method-___init.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "isValidSession",
-      "name_internal": "___isValidSession",
-      "file": "wire/core/Session/method-___isvalidsession.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "login",
-      "name_internal": "___login",
-      "file": "wire/core/Session/method-___login.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "loginSuccess",
-      "name_internal": "___loginSuccess",
-      "file": "wire/core/Session/method-___loginsuccess.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "loginFailure",
-      "name_internal": "___loginFailure",
-      "file": "wire/core/Session/method-___loginfailure.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "allowLogin",
-      "name_internal": "___allowLogin",
-      "file": "wire/core/Session/method-___allowlogin.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "allowLoginAttempt",
-      "name_internal": "___allowLoginAttempt",
-      "file": "wire/core/Session/method-___allowloginattempt.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "authenticate",
-      "name_internal": "___authenticate",
-      "file": "wire/core/Session/method-___authenticate.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "logout",
-      "name_internal": "___logout",
-      "file": "wire/core/Session/method-___logout.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "logoutSuccess",
-      "name_internal": "___logoutSuccess",
-      "file": "wire/core/Session/method-___logoutsuccess.md"
-    },
-    {
-      "class": "Session",
-      "name_public": "redirect",
-      "name_internal": "___redirect",
-      "file": "wire/core/Session/method-___redirect.md"
-    },
-    {
-      "class": "Notices",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/Notices/method-___render.md"
-    },
-    {
-      "class": "Notices",
-      "name_public": "renderText",
-      "name_internal": "___renderText",
-      "file": "wire/core/Notices/method-___rendertext.md"
-    },
-    {
-      "class": "Pagefile",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Pagefile/method-___install.md"
-    },
-    {
-      "class": "Pagefile",
-      "name_public": "url",
-      "name_internal": "___url",
-      "file": "wire/core/Pagefile/method-___url.md"
-    },
-    {
-      "class": "Pagefile",
-      "name_public": "httpUrl",
-      "name_internal": "___httpUrl",
-      "file": "wire/core/Pagefile/method-___httpurl.md"
-    },
-    {
-      "class": "Pagefile",
-      "name_public": "filename",
-      "name_internal": "___filename",
-      "file": "wire/core/Pagefile/method-___filename.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "load",
-      "name_internal": "___load",
-      "file": "wire/core/Fieldgroups/method-___load.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Fieldgroups/method-___save.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Fieldgroups/method-___delete.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "clone",
-      "name_internal": "___clone",
-      "file": "wire/core/Fieldgroups/method-___clone.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "saveContext",
-      "name_internal": "___saveContext",
-      "file": "wire/core/Fieldgroups/method-___savecontext.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "getExportData",
-      "name_internal": "___getExportData",
-      "file": "wire/core/Fieldgroups/method-___getexportdata.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "setImportData",
-      "name_internal": "___setImportData",
-      "file": "wire/core/Fieldgroups/method-___setimportdata.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "fieldAdded",
-      "name_internal": "___fieldAdded",
-      "file": "wire/core/Fieldgroups/method-___fieldadded.md"
-    },
-    {
-      "class": "Fieldgroups",
-      "name_public": "fieldRemoved",
-      "name_internal": "___fieldRemoved",
-      "file": "wire/core/Fieldgroups/method-___fieldremoved.md"
-    },
-    {
-      "class": "WireDateTime",
-      "name_public": "relativeTimeStr",
-      "name_internal": "___relativeTimeStr",
-      "file": "wire/core/WireDateTime/method-___relativetimestr.md"
-    },
-    {
-      "class": "Selectors",
-      "name_public": "getCustomVariableValue",
-      "name_internal": "___getCustomVariableValue",
-      "file": "wire/core/Selectors/method-___getcustomvariablevalue.md"
-    },
-    {
-      "class": "User",
-      "name_public": "hasPagePermission",
-      "name_internal": "___hasPagePermission",
-      "file": "wire/core/User/method-___haspagepermission.md"
-    },
-    {
-      "class": "User",
-      "name_public": "hasTemplatePermission",
-      "name_internal": "___hasTemplatePermission",
-      "file": "wire/core/User/method-___hastemplatepermission.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/core/Fieldtype/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "getConfigArray",
-      "name_internal": "___getConfigArray",
-      "file": "wire/core/Fieldtype/method-___getconfigarray.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "getConfigAllowContext",
-      "name_internal": "___getConfigAllowContext",
-      "file": "wire/core/Fieldtype/method-___getconfigallowcontext.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "getConfigAdvancedInputfields",
-      "name_internal": "___getConfigAdvancedInputfields",
-      "file": "wire/core/Fieldtype/method-___getconfigadvancedinputfields.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "exportConfigData",
-      "name_internal": "___exportConfigData",
-      "file": "wire/core/Fieldtype/method-___exportconfigdata.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "importConfigData",
-      "name_internal": "___importConfigData",
-      "file": "wire/core/Fieldtype/method-___importconfigdata.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "getCompatibleFieldtypes",
-      "name_internal": "___getCompatibleFieldtypes",
-      "file": "wire/core/Fieldtype/method-___getcompatiblefieldtypes.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "formatValue",
-      "name_internal": "___formatValue",
-      "file": "wire/core/Fieldtype/method-___formatvalue.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "markupValue",
-      "name_internal": "___markupValue",
-      "file": "wire/core/Fieldtype/method-___markupvalue.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "wakeupValue",
-      "name_internal": "___wakeupValue",
-      "file": "wire/core/Fieldtype/method-___wakeupvalue.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "sleepValue",
-      "name_internal": "___sleepValue",
-      "file": "wire/core/Fieldtype/method-___sleepvalue.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "exportValue",
-      "name_internal": "___exportValue",
-      "file": "wire/core/Fieldtype/method-___exportvalue.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "createField",
-      "name_internal": "___createField",
-      "file": "wire/core/Fieldtype/method-___createfield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "getSelectorInfo",
-      "name_internal": "___getSelectorInfo",
-      "file": "wire/core/Fieldtype/method-___getselectorinfo.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "loadPageField",
-      "name_internal": "___loadPageField",
-      "file": "wire/core/Fieldtype/method-___loadpagefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "loadPageFieldFilter",
-      "name_internal": "___loadPageFieldFilter",
-      "file": "wire/core/Fieldtype/method-___loadpagefieldfilter.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "savePageField",
-      "name_internal": "___savePageField",
-      "file": "wire/core/Fieldtype/method-___savepagefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "deleteField",
-      "name_internal": "___deleteField",
-      "file": "wire/core/Fieldtype/method-___deletefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "deletePageField",
-      "name_internal": "___deletePageField",
-      "file": "wire/core/Fieldtype/method-___deletepagefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "emptyPageField",
-      "name_internal": "___emptyPageField",
-      "file": "wire/core/Fieldtype/method-___emptypagefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "replacePageField",
-      "name_internal": "___replacePageField",
-      "file": "wire/core/Fieldtype/method-___replacepagefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "deleteTemplateField",
-      "name_internal": "___deleteTemplateField",
-      "file": "wire/core/Fieldtype/method-___deletetemplatefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "cloneField",
-      "name_internal": "___cloneField",
-      "file": "wire/core/Fieldtype/method-___clonefield.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Fieldtype/method-___install.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/core/Fieldtype/method-___uninstall.md"
-    },
-    {
-      "class": "Fieldtype",
-      "name_public": "upgrade",
-      "name_internal": "___upgrade",
-      "file": "wire/core/Fieldtype/method-___upgrade.md"
-    },
-    {
-      "class": "ProcessWire",
-      "name_public": "init",
-      "name_internal": "___init",
-      "file": "wire/core/ProcessWire/method-___init.md"
-    },
-    {
-      "class": "ProcessWire",
-      "name_public": "ready",
-      "name_internal": "___ready",
-      "file": "wire/core/ProcessWire/method-___ready.md"
-    },
-    {
-      "class": "ProcessWire",
-      "name_public": "finished",
-      "name_internal": "___finished",
-      "file": "wire/core/ProcessWire/method-___finished.md"
-    },
-    {
-      "class": "FileValidatorModule",
-      "name_public": "log",
-      "name_internal": "___log",
-      "file": "wire/core/FileValidatorModule/method-___log.md"
-    },
-    {
-      "class": "PagefileExtra",
-      "name_public": "noCacheURL",
-      "name_internal": "___noCacheURL",
-      "file": "wire/core/PagefileExtra/method-___nocacheurl.md"
-    },
-    {
-      "class": "PagefileExtra",
-      "name_public": "create",
-      "name_internal": "___create",
-      "file": "wire/core/PagefileExtra/method-___create.md"
-    },
-    {
-      "class": "WireFileTools",
-      "name_public": "include",
-      "name_internal": "___include",
-      "file": "wire/core/WireFileTools/method-___include.md"
-    },
-    {
-      "class": "Field",
-      "name_public": "viewable",
-      "name_internal": "___viewable",
-      "file": "wire/core/Field/method-___viewable.md"
-    },
-    {
-      "class": "Field",
-      "name_public": "editable",
-      "name_internal": "___editable",
-      "file": "wire/core/Field/method-___editable.md"
-    },
-    {
-      "class": "Field",
-      "name_public": "getInputfield",
-      "name_internal": "___getInputfield",
-      "file": "wire/core/Field/method-___getinputfield.md"
-    },
-    {
-      "class": "Field",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/core/Field/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "ImageSizerEngineGD",
-      "name_public": "imSaveReady",
-      "name_internal": "___imSaveReady",
-      "file": "wire/core/ImageSizerEngineGD/method-___imsaveready.md"
-    },
-    {
-      "class": "WireSaveableItemsLookup",
-      "name_public": "load",
-      "name_internal": "___load",
-      "file": "wire/core/WireSaveableItemsLookup/method-___load.md"
-    },
-    {
-      "class": "WireSaveableItemsLookup",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/WireSaveableItemsLookup/method-___save.md"
-    },
-    {
-      "class": "WireSaveableItemsLookup",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/WireSaveableItemsLookup/method-___delete.md"
-    },
-    {
-      "class": "Sanitizer",
-      "name_public": "array",
-      "name_internal": "___array",
-      "file": "wire/core/Sanitizer/method-___array.md"
-    },
-    {
-      "class": "Sanitizer",
-      "name_public": "array",
-      "name_internal": "___array",
-      "file": "wire/core/Sanitizer/method-___array.md"
-    },
-    {
-      "class": "Sanitizer",
-      "name_public": "testAll",
-      "name_internal": "___testAll",
-      "file": "wire/core/Sanitizer/method-___testall.md"
-    },
-    {
-      "class": "TemplateFile",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/TemplateFile/method-___render.md"
-    },
-    {
-      "class": "TemplateFile",
-      "name_public": "fileFailed",
-      "name_internal": "___fileFailed",
-      "file": "wire/core/TemplateFile/method-___filefailed.md"
-    },
-    {
-      "class": "WireMail",
-      "name_public": "sanitizeHeaderName",
-      "name_internal": "___sanitizeHeaderName",
-      "file": "wire/core/WireMail/method-___sanitizeheadername.md"
-    },
-    {
-      "class": "WireMail",
-      "name_public": "sanitizeHeaderValue",
-      "name_internal": "___sanitizeHeaderValue",
-      "file": "wire/core/WireMail/method-___sanitizeheadervalue.md"
-    },
-    {
-      "class": "WireMail",
-      "name_public": "send",
-      "name_internal": "___send",
-      "file": "wire/core/WireMail/method-___send.md"
-    },
-    {
-      "class": "WireMail",
-      "name_public": "htmlToText",
-      "name_internal": "___htmlToText",
-      "file": "wire/core/WireMail/method-___htmltotext.md"
-    },
-    {
-      "class": "Users",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Users/method-___save.md"
-    },
-    {
-      "class": "Users",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/Users/method-___saveready.md"
-    },
-    {
-      "class": "FileCompilerModule",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/FileCompilerModule/method-___install.md"
-    },
-    {
-      "class": "FileCompilerModule",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/core/FileCompilerModule/method-___uninstall.md"
-    },
-    {
-      "class": "WireMailInterface",
-      "name_public": "send",
-      "name_internal": "___send",
-      "file": "wire/core/WireMailInterface/method-___send.md"
-    },
-    {
-      "class": "WireMailInterface",
-      "name_public": "send",
-      "name_internal": "___send",
-      "file": "wire/core/WireMailInterface/method-___send.md"
-    },
-    {
-      "class": "Password",
-      "name_public": "setPass",
-      "name_internal": "___setPass",
-      "file": "wire/core/Password/method-___setpass.md"
-    },
-    {
-      "class": "WireHooks",
-      "name_public": "debug",
-      "name_internal": "___debug",
-      "file": "wire/core/WireHooks/const-___debug.md"
-    },
-    {
-      "class": "WireAction",
-      "name_public": "action",
-      "name_internal": "___action",
-      "file": "wire/core/WireAction/method-___action.md"
-    },
-    {
-      "class": "WireAction",
-      "name_public": "executeMultiple",
-      "name_internal": "___executeMultiple",
-      "file": "wire/core/WireAction/method-___executemultiple.md"
-    },
-    {
-      "class": "WireAction",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/core/WireAction/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "Modules",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Modules/method-___install.md"
-    },
-    {
-      "class": "Modules",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Modules/method-___delete.md"
-    },
-    {
-      "class": "Modules",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/core/Modules/method-___uninstall.md"
-    },
-    {
-      "class": "Modules",
-      "name_public": "saveConfig",
-      "name_internal": "___saveConfig",
-      "file": "wire/core/Modules/method-___saveconfig.md"
-    },
-    {
-      "class": "Modules",
-      "name_public": "refresh",
-      "name_internal": "___refresh",
-      "file": "wire/core/Modules/method-___refresh.md"
-    },
-    {
-      "class": "AdminThemeFramework",
-      "name_public": "getPrimaryNavArray",
-      "name_internal": "___getPrimaryNavArray",
-      "file": "wire/core/AdminThemeFramework/method-___getprimarynavarray.md"
-    },
-    {
-      "class": "AdminThemeFramework",
-      "name_public": "getUserNavArray",
-      "name_internal": "___getUserNavArray",
-      "file": "wire/core/AdminThemeFramework/method-___getusernavarray.md"
-    },
-    {
-      "class": "AdminThemeFramework",
-      "name_public": "renderFile",
-      "name_internal": "___renderFile",
-      "file": "wire/core/AdminThemeFramework/method-___renderfile.md"
-    },
-    {
-      "class": "Pageimage",
-      "name_public": "crop",
-      "name_internal": "___crop",
-      "file": "wire/core/Pageimage/method-___crop.md"
-    },
-    {
-      "class": "Pageimage",
-      "name_public": "rebuildVariations",
-      "name_internal": "___rebuildVariations",
-      "file": "wire/core/Pageimage/method-___rebuildvariations.md"
-    },
-    {
-      "class": "Pageimage",
-      "name_public": "isVariation",
-      "name_internal": "___isVariation",
-      "file": "wire/core/Pageimage/method-___isvariation.md"
-    },
-    {
-      "class": "Pageimage",
-      "name_public": "createdVariation",
-      "name_internal": "___createdVariation",
-      "file": "wire/core/Pageimage/method-___createdvariation.md"
-    },
-    {
-      "class": "Pageimage",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/Pageimage/method-___render.md"
-    },
-    {
-      "class": "Pageimage",
-      "name_public": "filenameDoesNotExist",
-      "name_internal": "___filenameDoesNotExist",
-      "file": "wire/core/Pageimage/method-___filenamedoesnotexist.md"
-    },
-    {
-      "class": "WireHttp",
-      "name_public": "send",
-      "name_internal": "___send",
-      "file": "wire/core/WireHttp/method-___send.md"
-    },
-    {
-      "class": "WireHttp",
-      "name_public": "download",
-      "name_internal": "___download",
-      "file": "wire/core/WireHttp/method-___download.md"
-    },
-    {
-      "class": "WireHttp",
-      "name_public": "sendFile",
-      "name_internal": "___sendFile",
-      "file": "wire/core/WireHttp/method-___sendfile.md"
-    },
-    {
-      "class": "Wire",
-      "name_public": "callUnknown",
-      "name_internal": "___callUnknown",
-      "file": "wire/core/Wire/method-___callunknown.md"
-    },
-    {
-      "class": "Wire",
-      "name_public": "changed",
-      "name_internal": "___changed",
-      "file": "wire/core/Wire/method-___changed.md"
-    },
-    {
-      "class": "Wire",
-      "name_public": "trackException",
-      "name_internal": "___trackException",
-      "file": "wire/core/Wire/method-___trackexception.md"
-    },
-    {
-      "class": "Wire",
-      "name_public": "log",
-      "name_internal": "___log",
-      "file": "wire/core/Wire/method-___log.md"
-    },
-    {
-      "class": "ModuleJS",
-      "name_public": "use",
-      "name_internal": "___use",
-      "file": "wire/core/ModuleJS/method-___use.md"
-    },
-    {
-      "class": "WireArray",
-      "name_public": "and",
-      "name_internal": "___and",
-      "file": "wire/core/WireArray/method-___and.md"
-    },
-    {
-      "class": "WireArray",
-      "name_public": "callUnknown",
-      "name_internal": "___callUnknown",
-      "file": "wire/core/WireArray/method-___callunknown.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "getUnknown",
-      "name_internal": "___getUnknown",
-      "file": "wire/core/Page/method-___getunknown.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "if",
-      "name_internal": "___if",
-      "file": "wire/core/Page/method-___if.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "getMarkup",
-      "name_internal": "___getMarkup",
-      "file": "wire/core/Page/method-___getmarkup.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "callUnknown",
-      "name_internal": "___callUnknown",
-      "file": "wire/core/Page/method-___callunknown.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "rootParent",
-      "name_internal": "___rootParent",
-      "file": "wire/core/Page/method-___rootparent.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "references",
-      "name_internal": "___references",
-      "file": "wire/core/Page/method-___references.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "links",
-      "name_internal": "___links",
-      "file": "wire/core/Page/method-___links.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/core/Page/method-___render.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "renderPage",
-      "name_internal": "___renderPage",
-      "file": "wire/core/Page/method-___renderpage.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "renderField",
-      "name_internal": "___renderField",
-      "file": "wire/core/Page/method-___renderfield.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "renderValue",
-      "name_internal": "___renderValue",
-      "file": "wire/core/Page/method-___rendervalue.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "getInputfields",
-      "name_internal": "___getInputfields",
-      "file": "wire/core/Page/method-___getinputfields.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "edit",
-      "name_internal": "___edit",
-      "file": "wire/core/Page/method-___edit.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "isPublic",
-      "name_internal": "___isPublic",
-      "file": "wire/core/Page/method-___ispublic.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "loaded",
-      "name_internal": "___loaded",
-      "file": "wire/core/Page/method-___loaded.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "editReady",
-      "name_internal": "___editReady",
-      "file": "wire/core/Page/method-___editready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/Page/method-___saveready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "saved",
-      "name_internal": "___saved",
-      "file": "wire/core/Page/method-___saved.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "addReady",
-      "name_internal": "___addReady",
-      "file": "wire/core/Page/method-___addready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "added",
-      "name_internal": "___added",
-      "file": "wire/core/Page/method-___added.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "moveReady",
-      "name_internal": "___moveReady",
-      "file": "wire/core/Page/method-___moveready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "moved",
-      "name_internal": "___moved",
-      "file": "wire/core/Page/method-___moved.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "deleteReady",
-      "name_internal": "___deleteReady",
-      "file": "wire/core/Page/method-___deleteready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "deleted",
-      "name_internal": "___deleted",
-      "file": "wire/core/Page/method-___deleted.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "cloneReady",
-      "name_internal": "___cloneReady",
-      "file": "wire/core/Page/method-___cloneready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "cloned",
-      "name_internal": "___cloned",
-      "file": "wire/core/Page/method-___cloned.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "renameReady",
-      "name_internal": "___renameReady",
-      "file": "wire/core/Page/method-___renameready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "renamed",
-      "name_internal": "___renamed",
-      "file": "wire/core/Page/method-___renamed.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "addStatusReady",
-      "name_internal": "___addStatusReady",
-      "file": "wire/core/Page/method-___addstatusready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "addedStatus",
-      "name_internal": "___addedStatus",
-      "file": "wire/core/Page/method-___addedstatus.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "removeStatusReady",
-      "name_internal": "___removeStatusReady",
-      "file": "wire/core/Page/method-___removestatusready.md"
-    },
-    {
-      "class": "Page",
-      "name_public": "removedStatus",
-      "name_internal": "___removedStatus",
-      "file": "wire/core/Page/method-___removedstatus.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "getSelectorInfo",
-      "name_internal": "___getSelectorInfo",
-      "file": "wire/core/FieldtypeMulti/method-___getselectorinfo.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "getCompatibleFieldtypes",
-      "name_internal": "___getCompatibleFieldtypes",
-      "file": "wire/core/FieldtypeMulti/method-___getcompatiblefieldtypes.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "wakeupValue",
-      "name_internal": "___wakeupValue",
-      "file": "wire/core/FieldtypeMulti/method-___wakeupvalue.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "sleepValue",
-      "name_internal": "___sleepValue",
-      "file": "wire/core/FieldtypeMulti/method-___sleepvalue.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "savePageField",
-      "name_internal": "___savePageField",
-      "file": "wire/core/FieldtypeMulti/method-___savepagefield.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "loadPageField",
-      "name_internal": "___loadPageField",
-      "file": "wire/core/FieldtypeMulti/method-___loadpagefield.md"
-    },
-    {
-      "class": "FieldtypeMulti",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/core/FieldtypeMulti/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "PagesRequest",
-      "name_public": "getPage",
-      "name_internal": "___getPage",
-      "file": "wire/core/PagesRequest/method-___getpage.md"
-    },
-    {
-      "class": "PagesRequest",
-      "name_public": "getPageForUser",
-      "name_internal": "___getPageForUser",
-      "file": "wire/core/PagesRequest/method-___getpageforuser.md"
-    },
-    {
-      "class": "PagesRequest",
-      "name_public": "getClosestPage",
-      "name_internal": "___getClosestPage",
-      "file": "wire/core/PagesRequest/method-___getclosestpage.md"
-    },
-    {
-      "class": "PagesRequest",
-      "name_public": "getLoginPageOrUrl",
-      "name_internal": "___getLoginPageOrUrl",
-      "file": "wire/core/PagesRequest/method-___getloginpageorurl.md"
-    },
-    {
-      "class": "WireMailTools",
-      "name_public": "new",
-      "name_internal": "___new",
-      "file": "wire/core/WireMailTools/method-___new.md"
-    },
-    {
-      "class": "WireMailTools",
-      "name_public": "isBlacklistEmail",
-      "name_internal": "___isBlacklistEmail",
-      "file": "wire/core/WireMailTools/method-___isblacklistemail.md"
-    },
-    {
-      "class": "WireShutdown",
-      "name_public": "fatalError",
-      "name_internal": "___fatalError",
-      "file": "wire/core/WireShutdown/method-___fatalerror.md"
-    },
-    {
-      "class": "PageFinder",
-      "name_public": "find",
-      "name_internal": "___find",
-      "file": "wire/core/PageFinder/method-___find.md"
-    },
-    {
-      "class": "PageFinder",
-      "name_public": "getQuery",
-      "name_internal": "___getQuery",
-      "file": "wire/core/PageFinder/method-___getquery.md"
-    },
-    {
-      "class": "PageFinder",
-      "name_public": "getQueryAllowedTemplatesWhere",
-      "name_internal": "___getQueryAllowedTemplatesWhere",
-      "file": "wire/core/PageFinder/method-___getqueryallowedtemplateswhere.md"
-    },
-    {
-      "class": "PageFinder",
-      "name_public": "getQueryJoinPath",
-      "name_internal": "___getQueryJoinPath",
-      "file": "wire/core/PageFinder/method-___getqueryjoinpath.md"
-    },
-    {
-      "class": "PageFinder",
-      "name_public": "getQueryUnknownField",
-      "name_internal": "___getQueryUnknownField",
-      "file": "wire/core/PageFinder/method-___getqueryunknownfield.md"
-    },
-    {
-      "class": "PagefilesManager",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/PagefilesManager/method-___save.md"
-    },
-    {
-      "class": "PagesAccess",
-      "name_public": "updateTemplate",
-      "name_internal": "___updateTemplate",
-      "file": "wire/core/PagesAccess/method-___updatetemplate.md"
-    },
-    {
-      "class": "PagesAccess",
-      "name_public": "updatePage",
-      "name_internal": "___updatePage",
-      "file": "wire/core/PagesAccess/method-___updatepage.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "load",
-      "name_internal": "___load",
-      "file": "wire/core/WireSaveableItems/method-___load.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/WireSaveableItems/method-___save.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/WireSaveableItems/method-___delete.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "clone",
-      "name_internal": "___clone",
-      "file": "wire/core/WireSaveableItems/method-___clone.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "find",
-      "name_internal": "___find",
-      "file": "wire/core/WireSaveableItems/method-___find.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/WireSaveableItems/method-___saveready.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/WireSaveableItems/method-___saveready.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "deleteReady",
-      "name_internal": "___deleteReady",
-      "file": "wire/core/WireSaveableItems/method-___deleteready.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "cloneReady",
-      "name_internal": "___cloneReady",
-      "file": "wire/core/WireSaveableItems/method-___cloneready.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "renameReady",
-      "name_internal": "___renameReady",
-      "file": "wire/core/WireSaveableItems/method-___renameready.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "saved",
-      "name_internal": "___saved",
-      "file": "wire/core/WireSaveableItems/method-___saved.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "added",
-      "name_internal": "___added",
-      "file": "wire/core/WireSaveableItems/method-___added.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "deleted",
-      "name_internal": "___deleted",
-      "file": "wire/core/WireSaveableItems/method-___deleted.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "cloned",
-      "name_internal": "___cloned",
-      "file": "wire/core/WireSaveableItems/method-___cloned.md"
-    },
-    {
-      "class": "WireSaveableItems",
-      "name_public": "renamed",
-      "name_internal": "___renamed",
-      "file": "wire/core/WireSaveableItems/method-___renamed.md"
-    },
-    {
-      "class": "WireTextTools",
-      "name_public": "wordAlternates",
-      "name_internal": "___wordAlternates",
-      "file": "wire/core/WireTextTools/method-___wordalternates.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "find",
-      "name_internal": "___find",
-      "file": "wire/core/Pages/method-___find.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "save",
-      "name_internal": "___save",
-      "file": "wire/core/Pages/method-___save.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "saveField",
-      "name_internal": "___saveField",
-      "file": "wire/core/Pages/method-___savefield.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "saveFields",
-      "name_internal": "___saveFields",
-      "file": "wire/core/Pages/method-___savefields.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "add",
-      "name_internal": "___add",
-      "file": "wire/core/Pages/method-___add.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "new",
-      "name_internal": "___new",
-      "file": "wire/core/Pages/method-___new.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "clone",
-      "name_internal": "___clone",
-      "file": "wire/core/Pages/method-___clone.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "delete",
-      "name_internal": "___delete",
-      "file": "wire/core/Pages/method-___delete.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "trash",
-      "name_internal": "___trash",
-      "file": "wire/core/Pages/method-___trash.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "restore",
-      "name_internal": "___restore",
-      "file": "wire/core/Pages/method-___restore.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "emptyTrash",
-      "name_internal": "___emptyTrash",
-      "file": "wire/core/Pages/method-___emptytrash.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "emptyTrash",
-      "name_internal": "___emptyTrash",
-      "file": "wire/core/Pages/method-___emptytrash.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "touch",
-      "name_internal": "___touch",
-      "file": "wire/core/Pages/method-___touch.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "sort",
-      "name_internal": "___sort",
-      "file": "wire/core/Pages/method-___sort.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "insertBefore",
-      "name_internal": "___insertBefore",
-      "file": "wire/core/Pages/method-___insertbefore.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "insertAfter",
-      "name_internal": "___insertAfter",
-      "file": "wire/core/Pages/method-___insertafter.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/Pages/method-___saveready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "saveReady",
-      "name_internal": "___saveReady",
-      "file": "wire/core/Pages/method-___saveready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "saved",
-      "name_internal": "___saved",
-      "file": "wire/core/Pages/method-___saved.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "addReady",
-      "name_internal": "___addReady",
-      "file": "wire/core/Pages/method-___addready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "added",
-      "name_internal": "___added",
-      "file": "wire/core/Pages/method-___added.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "moveReady",
-      "name_internal": "___moveReady",
-      "file": "wire/core/Pages/method-___moveready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "moved",
-      "name_internal": "___moved",
-      "file": "wire/core/Pages/method-___moved.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "templateChanged",
-      "name_internal": "___templateChanged",
-      "file": "wire/core/Pages/method-___templatechanged.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "trashReady",
-      "name_internal": "___trashReady",
-      "file": "wire/core/Pages/method-___trashready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "trashed",
-      "name_internal": "___trashed",
-      "file": "wire/core/Pages/method-___trashed.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "restoreReady",
-      "name_internal": "___restoreReady",
-      "file": "wire/core/Pages/method-___restoreready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "restored",
-      "name_internal": "___restored",
-      "file": "wire/core/Pages/method-___restored.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "deleteReady",
-      "name_internal": "___deleteReady",
-      "file": "wire/core/Pages/method-___deleteready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "deleted",
-      "name_internal": "___deleted",
-      "file": "wire/core/Pages/method-___deleted.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "deleteBranchReady",
-      "name_internal": "___deleteBranchReady",
-      "file": "wire/core/Pages/method-___deletebranchready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "deletedBranch",
-      "name_internal": "___deletedBranch",
-      "file": "wire/core/Pages/method-___deletedbranch.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "cloneReady",
-      "name_internal": "___cloneReady",
-      "file": "wire/core/Pages/method-___cloneready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "cloned",
-      "name_internal": "___cloned",
-      "file": "wire/core/Pages/method-___cloned.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "renameReady",
-      "name_internal": "___renameReady",
-      "file": "wire/core/Pages/method-___renameready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "renamed",
-      "name_internal": "___renamed",
-      "file": "wire/core/Pages/method-___renamed.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "sorted",
-      "name_internal": "___sorted",
-      "file": "wire/core/Pages/method-___sorted.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "statusChanged",
-      "name_internal": "___statusChanged",
-      "file": "wire/core/Pages/method-___statuschanged.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "statusChangeReady",
-      "name_internal": "___statusChangeReady",
-      "file": "wire/core/Pages/method-___statuschangeready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "published",
-      "name_internal": "___published",
-      "file": "wire/core/Pages/method-___published.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "unpublished",
-      "name_internal": "___unpublished",
-      "file": "wire/core/Pages/method-___unpublished.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "publishReady",
-      "name_internal": "___publishReady",
-      "file": "wire/core/Pages/method-___publishready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "unpublishReady",
-      "name_internal": "___unpublishReady",
-      "file": "wire/core/Pages/method-___unpublishready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "found",
-      "name_internal": "___found",
-      "file": "wire/core/Pages/method-___found.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "saveFieldReady",
-      "name_internal": "___saveFieldReady",
-      "file": "wire/core/Pages/method-___savefieldready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "savedField",
-      "name_internal": "___savedField",
-      "file": "wire/core/Pages/method-___savedfield.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "savePageOrFieldReady",
-      "name_internal": "___savePageOrFieldReady",
-      "file": "wire/core/Pages/method-___savepageorfieldready.md"
-    },
-    {
-      "class": "Pages",
-      "name_public": "savedPageOrField",
-      "name_internal": "___savedPageOrField",
-      "file": "wire/core/Pages/method-___savedpageorfield.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "execute",
-      "name_internal": "___execute",
-      "file": "wire/core/Process/method-___execute.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "executed",
-      "name_internal": "___executed",
-      "file": "wire/core/Process/method-___executed.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "headline",
-      "name_internal": "___headline",
-      "file": "wire/core/Process/method-___headline.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "browserTitle",
-      "name_internal": "___browserTitle",
-      "file": "wire/core/Process/method-___browsertitle.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "breadcrumb",
-      "name_internal": "___breadcrumb",
-      "file": "wire/core/Process/method-___breadcrumb.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/core/Process/method-___install.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/core/Process/method-___uninstall.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "upgrade",
-      "name_internal": "___upgrade",
-      "file": "wire/core/Process/method-___upgrade.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "installPage",
-      "name_internal": "___installPage",
-      "file": "wire/core/Process/method-___installpage.md"
-    },
-    {
-      "class": "Process",
-      "name_public": "uninstallPage",
-      "name_internal": "___uninstallPage",
-      "file": "wire/core/Process/method-___uninstallpage.md"
-    },
-    {
-      "class": "Languages",
-      "name_public": "deleted",
-      "name_internal": "___deleted",
-      "file": "wire/modules/LanguageSupport/Languages/method-___deleted.md"
-    },
-    {
-      "class": "Languages",
-      "name_public": "added",
-      "name_internal": "___added",
-      "file": "wire/modules/LanguageSupport/Languages/method-___added.md"
-    },
-    {
-      "class": "Languages",
-      "name_public": "updated",
-      "name_internal": "___updated",
-      "file": "wire/modules/LanguageSupport/Languages/method-___updated.md"
-    },
-    {
-      "class": "LanguageTranslator",
-      "name_public": "getTranslation",
-      "name_internal": "___getTranslation",
-      "file": "wire/modules/LanguageSupport/LanguageTranslator/method-___gettranslation.md"
-    },
-    {
-      "class": "LanguagesPageFieldValue",
-      "name_public": "getStringValue",
-      "name_internal": "___getStringValue",
-      "file": "wire/modules/LanguageSupport/LanguagesPageFieldValue/method-___getstringvalue.md"
-    },
-    {
-      "class": "LanguageSupportInstall",
-      "name_public": "install",
-      "name_internal": "___install",
-      "file": "wire/modules/LanguageSupport/LanguageSupportInstall/method-___install.md"
-    },
-    {
-      "class": "LanguageSupportInstall",
-      "name_public": "uninstall",
-      "name_internal": "___uninstall",
-      "file": "wire/modules/LanguageSupport/LanguageSupportInstall/method-___uninstall.md"
-    },
-    {
-      "class": "ProcessFieldExportImport",
-      "name_public": "buildExport",
-      "name_internal": "___buildExport",
-      "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___buildexport.md"
-    },
-    {
-      "class": "ProcessFieldExportImport",
-      "name_public": "buildInputDataForm",
-      "name_internal": "___buildInputDataForm",
-      "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___buildinputdataform.md"
-    },
-    {
-      "class": "ProcessFieldExportImport",
-      "name_public": "buildImport",
-      "name_internal": "___buildImport",
-      "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___buildimport.md"
-    },
-    {
-      "class": "ProcessFieldExportImport",
-      "name_public": "processImport",
-      "name_internal": "___processImport",
-      "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___processimport.md"
-    },
-    {
-      "class": "ProcessPageSearchLive",
-      "name_public": "execute",
-      "name_internal": "___execute",
-      "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___execute.md"
-    },
-    {
-      "class": "ProcessPageSearchLive",
-      "name_public": "renderList",
-      "name_internal": "___renderList",
-      "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___renderlist.md"
-    },
-    {
-      "class": "ProcessPageSearchLive",
-      "name_public": "renderItem",
-      "name_internal": "___renderItem",
-      "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___renderitem.md"
-    },
-    {
-      "class": "ProcessPageSearchLive",
-      "name_public": "findCustom",
-      "name_internal": "___findCustom",
-      "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___findcustom.md"
-    },
-    {
-      "class": "ProcessPageSearchLive",
-      "name_public": "getDefaultPageSearchFields",
-      "name_internal": "___getDefaultPageSearchFields",
-      "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___getdefaultpagesearchfields.md"
-    },
-    {
-      "class": "ProcessPageListActions",
-      "name_public": "getActions",
-      "name_internal": "___getActions",
-      "file": "wire/modules/Process/ProcessPageList/ProcessPageListActions/method-___getactions.md"
-    },
-    {
-      "class": "ProcessPageListActions",
-      "name_public": "getExtraActions",
-      "name_internal": "___getExtraActions",
-      "file": "wire/modules/Process/ProcessPageList/ProcessPageListActions/method-___getextraactions.md"
-    },
-    {
-      "class": "ProcessPageListActions",
-      "name_public": "processAction",
-      "name_internal": "___processAction",
-      "file": "wire/modules/Process/ProcessPageList/ProcessPageListActions/method-___processaction.md"
-    },
-    {
-      "class": "ProcessPageListRender",
-      "name_public": "getPageActions",
-      "name_internal": "___getPageActions",
-      "file": "wire/modules/Process/ProcessPageList/ProcessPageListRender/method-___getpageactions.md"
-    },
-    {
-      "class": "ProcessPageListRender",
-      "name_public": "getPageLabel",
-      "name_internal": "___getPageLabel",
-      "file": "wire/modules/Process/ProcessPageList/ProcessPageListRender/method-___getpagelabel.md"
-    },
-    {
-      "class": "ProcessPageListRender",
-      "name_public": "getNumChildren",
-      "name_internal": "___getNumChildren",
-      "file": "wire/modules/Process/ProcessPageList/ProcessPageListRender/method-___getnumchildren.md"
-    },
-    {
-      "class": "ProcessTemplateExportImport",
-      "name_public": "buildExport",
-      "name_internal": "___buildExport",
-      "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___buildexport.md"
-    },
-    {
-      "class": "ProcessTemplateExportImport",
-      "name_public": "buildInputDataForm",
-      "name_internal": "___buildInputDataForm",
-      "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___buildinputdataform.md"
-    },
-    {
-      "class": "ProcessTemplateExportImport",
-      "name_public": "buildImport",
-      "name_internal": "___buildImport",
-      "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___buildimport.md"
-    },
-    {
-      "class": "ProcessTemplateExportImport",
-      "name_public": "processImport",
-      "name_internal": "___processImport",
-      "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___processimport.md"
-    },
-    {
-      "class": "PagesVersions",
-      "name_public": "allowPageVersions",
-      "name_internal": "___allowPageVersions",
-      "file": "wire/modules/Pages/PagesVersions/PagesVersions/method-___allowpageversions.md"
-    },
-    {
-      "class": "InputfieldPageTableAjax",
-      "name_public": "checkAjax",
-      "name_internal": "___checkAjax",
-      "file": "wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax/method-___checkajax.md"
-    },
-    {
-      "class": "InputfieldTinyMCE",
-      "name_public": "render",
-      "name_internal": "___render",
-      "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___render.md"
-    },
-    {
-      "class": "InputfieldTinyMCE",
-      "name_public": "renderValue",
-      "name_internal": "___renderValue",
-      "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___rendervalue.md"
-    },
-    {
-      "class": "InputfieldTinyMCE",
-      "name_public": "processInput",
-      "name_internal": "___processInput",
-      "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___processinput.md"
-    },
-    {
-      "class": "InputfieldTinyMCE",
-      "name_public": "getConfigInputfields",
-      "name_internal": "___getConfigInputfields",
-      "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___getconfiginputfields.md"
-    },
-    {
-      "class": "InputfieldTinyMCE",
-      "name_public": "getModuleConfigInputfields",
-      "name_internal": "___getModuleConfigInputfields",
-      "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___getmoduleconfiginputfields.md"
-    },
-    {
-      "class": "InputfieldTinyMCESettings",
-      "name_public": "prepareSettingsForOutput",
-      "name_internal": "___prepareSettingsForOutput",
-      "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings/method-___preparesettingsforoutput.md"
-    },
-    {
-      "class": "AdminThemeRenoHelpers",
-      "name_public": "topNavItems",
-      "name_internal": "___topNavItems",
-      "file": "wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers/method-___topnavitems.md"
-    },
-    {
-      "class": "CommentListCustom",
-      "name_public": "renderItem",
-      "name_internal": "___renderItem",
-      "file": "wire/modules/Fieldtype/FieldtypeComments/CommentListCustom/method-___renderitem.md"
-    },
-    {
-      "class": "CommentNotifications",
-      "name_public": "sendAdminNotificationEmail",
-      "name_internal": "___sendAdminNotificationEmail",
-      "file": "wire/modules/Fieldtype/FieldtypeComments/CommentNotifications/method-___sendadminnotificationemail.md"
-    },
-    {
-      "class": "CommentNotifications",
-      "name_public": "sendNotificationEmail",
-      "name_internal": "___sendNotificationEmail",
-      "file": "wire/modules/Fieldtype/FieldtypeComments/CommentNotifications/method-___sendnotificationemail.md"
-    },
-    {
-      "class": "CommentNotifications",
-      "name_public": "sendConfirmationEmail",
-      "name_internal": "___sendConfirmationEmail",
-      "file": "wire/modules/Fieldtype/FieldtypeComments/CommentNotifications/method-___sendconfirmationemail.md"
-    },
-    {
-      "class": "CommentList",
-      "name_public": "renderItem",
-      "name_internal": "___renderItem",
-      "file": "wire/modules/Fieldtype/FieldtypeComments/CommentList/method-___renderitem.md"
-    }
-  ]
+  "classes": {
+    "Pagefiles": [
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Pagefiles/method-___delete.md"
+      },
+      {
+        "name": "clone",
+        "internal": "___clone",
+        "file": "wire/core/Pagefiles/method-___clone.md"
+      }
+    ],
+    "WireData": [
+      {
+        "name": "and",
+        "internal": "___and",
+        "file": "wire/core/WireData/method-___and.md"
+      }
+    ],
+    "Pageimages": [
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/Pageimages/method-___render.md"
+      }
+    ],
+    "ImageSizer": [
+      {
+        "name": "resize",
+        "internal": "___resize",
+        "file": "wire/core/ImageSizer/method-___resize.md"
+      }
+    ],
+    "FileCompiler": [
+      {
+        "name": "compile",
+        "internal": "___compile",
+        "file": "wire/core/FileCompiler/method-___compile.md"
+      },
+      {
+        "name": "compileData",
+        "internal": "___compileData",
+        "file": "wire/core/FileCompiler/method-___compiledata.md"
+      }
+    ],
+    "Tfa": [
+      {
+        "name": "start",
+        "internal": "___start",
+        "file": "wire/core/Tfa/method-___start.md"
+      },
+      {
+        "name": "buildAuthCodeForm",
+        "internal": "___buildAuthCodeForm",
+        "file": "wire/core/Tfa/method-___buildauthcodeform.md"
+      },
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/Tfa/method-___render.md"
+      },
+      {
+        "name": "process",
+        "internal": "___process",
+        "file": "wire/core/Tfa/method-___process.md"
+      },
+      {
+        "name": "getUserSettingsInputfields",
+        "internal": "___getUserSettingsInputfields",
+        "file": "wire/core/Tfa/method-___getusersettingsinputfields.md"
+      },
+      {
+        "name": "getUserSettingsInputfields",
+        "internal": "___getUserSettingsInputfields",
+        "file": "wire/core/Tfa/method-___getusersettingsinputfields.md"
+      },
+      {
+        "name": "getUserEnabledInputfields",
+        "internal": "___getUserEnabledInputfields",
+        "file": "wire/core/Tfa/method-___getuserenabledinputfields.md"
+      },
+      {
+        "name": "processUserSettingsInputfields",
+        "internal": "___processUserSettingsInputfields",
+        "file": "wire/core/Tfa/method-___processusersettingsinputfields.md"
+      },
+      {
+        "name": "processUserEnabledInputfields",
+        "internal": "___processUserEnabledInputfields",
+        "file": "wire/core/Tfa/method-___processuserenabledinputfields.md"
+      },
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Tfa/method-___install.md"
+      },
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Tfa/method-___install.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/core/Tfa/method-___uninstall.md"
+      }
+    ],
+    "InputfieldWrapper": [
+      {
+        "name": "new",
+        "internal": "___new",
+        "file": "wire/core/InputfieldWrapper/method-___new.md"
+      },
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/InputfieldWrapper/method-___render.md"
+      },
+      {
+        "name": "renderValue",
+        "internal": "___renderValue",
+        "file": "wire/core/InputfieldWrapper/method-___rendervalue.md"
+      },
+      {
+        "name": "renderInputfield",
+        "internal": "___renderInputfield",
+        "file": "wire/core/InputfieldWrapper/method-___renderinputfield.md"
+      },
+      {
+        "name": "processInput",
+        "internal": "___processInput",
+        "file": "wire/core/InputfieldWrapper/method-___processinput.md"
+      },
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/core/InputfieldWrapper/method-___getconfiginputfields.md"
+      }
+    ],
+    "PagesType": [
+      {
+        "name": "new",
+        "internal": "___new",
+        "file": "wire/core/PagesType/method-___new.md"
+      },
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/PagesType/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/PagesType/method-___delete.md"
+      },
+      {
+        "name": "add",
+        "internal": "___add",
+        "file": "wire/core/PagesType/method-___add.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/PagesType/method-___saveready.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/PagesType/method-___saveready.md"
+      },
+      {
+        "name": "saved",
+        "internal": "___saved",
+        "file": "wire/core/PagesType/method-___saved.md"
+      },
+      {
+        "name": "added",
+        "internal": "___added",
+        "file": "wire/core/PagesType/method-___added.md"
+      },
+      {
+        "name": "deleteReady",
+        "internal": "___deleteReady",
+        "file": "wire/core/PagesType/method-___deleteready.md"
+      },
+      {
+        "name": "deleted",
+        "internal": "___deleted",
+        "file": "wire/core/PagesType/method-___deleted.md"
+      }
+    ],
+    "Roles": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Roles/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Roles/method-___delete.md"
+      },
+      {
+        "name": "add",
+        "internal": "___add",
+        "file": "wire/core/Roles/method-___add.md"
+      }
+    ],
+    "Fields": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Fields/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Fields/method-___delete.md"
+      },
+      {
+        "name": "clone",
+        "internal": "___clone",
+        "file": "wire/core/Fields/method-___clone.md"
+      },
+      {
+        "name": "saveFieldgroupContext",
+        "internal": "___saveFieldgroupContext",
+        "file": "wire/core/Fields/method-___savefieldgroupcontext.md"
+      },
+      {
+        "name": "changeFieldtype",
+        "internal": "___changeFieldtype",
+        "file": "wire/core/Fields/method-___changefieldtype.md"
+      },
+      {
+        "name": "deleteFieldDataByTemplate",
+        "internal": "___deleteFieldDataByTemplate",
+        "file": "wire/core/Fields/method-___deletefielddatabytemplate.md"
+      },
+      {
+        "name": "getTags",
+        "internal": "___getTags",
+        "file": "wire/core/Fields/method-___gettags.md"
+      },
+      {
+        "name": "changedType",
+        "internal": "___changedType",
+        "file": "wire/core/Fields/method-___changedtype.md"
+      },
+      {
+        "name": "changeTypeReady",
+        "internal": "___changeTypeReady",
+        "file": "wire/core/Fields/method-___changetypeready.md"
+      },
+      {
+        "name": "applySetupName",
+        "internal": "___applySetupName",
+        "file": "wire/core/Fields/method-___applysetupname.md"
+      }
+    ],
+    "Templates": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Templates/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Templates/method-___delete.md"
+      },
+      {
+        "name": "clone",
+        "internal": "___clone",
+        "file": "wire/core/Templates/method-___clone.md"
+      },
+      {
+        "name": "getExportData",
+        "internal": "___getExportData",
+        "file": "wire/core/Templates/method-___getexportdata.md"
+      },
+      {
+        "name": "setImportData",
+        "internal": "___setImportData",
+        "file": "wire/core/Templates/method-___setimportdata.md"
+      },
+      {
+        "name": "getTags",
+        "internal": "___getTags",
+        "file": "wire/core/Templates/method-___gettags.md"
+      },
+      {
+        "name": "fileModified",
+        "internal": "___fileModified",
+        "file": "wire/core/Templates/method-___filemodified.md"
+      }
+    ],
+    "ProcessController": [
+      {
+        "name": "execute",
+        "internal": "___execute",
+        "file": "wire/core/ProcessController/method-___execute.md"
+      }
+    ],
+    "Inputfield": [
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Inputfield/method-___install.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/core/Inputfield/method-___uninstall.md"
+      },
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/Inputfield/method-___render.md"
+      },
+      {
+        "name": "renderValue",
+        "internal": "___renderValue",
+        "file": "wire/core/Inputfield/method-___rendervalue.md"
+      },
+      {
+        "name": "renderReadyHook",
+        "internal": "___renderReadyHook",
+        "file": "wire/core/Inputfield/method-___renderreadyhook.md"
+      },
+      {
+        "name": "processInput",
+        "internal": "___processInput",
+        "file": "wire/core/Inputfield/method-___processinput.md"
+      },
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/core/Inputfield/method-___getconfiginputfields.md"
+      },
+      {
+        "name": "getConfigArray",
+        "internal": "___getConfigArray",
+        "file": "wire/core/Inputfield/method-___getconfigarray.md"
+      },
+      {
+        "name": "getConfigAllowContext",
+        "internal": "___getConfigAllowContext",
+        "file": "wire/core/Inputfield/method-___getconfigallowcontext.md"
+      }
+    ],
+    "WireInputData": [
+      {
+        "name": "callUnknown",
+        "internal": "___callUnknown",
+        "file": "wire/core/WireInputData/method-___callunknown.md"
+      }
+    ],
+    "WireLog": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/WireLog/method-___save.md"
+      }
+    ],
+    "Permissions": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Permissions/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Permissions/method-___delete.md"
+      },
+      {
+        "name": "add",
+        "internal": "___add",
+        "file": "wire/core/Permissions/method-___add.md"
+      },
+      {
+        "name": "saved",
+        "internal": "___saved",
+        "file": "wire/core/Permissions/method-___saved.md"
+      },
+      {
+        "name": "deleted",
+        "internal": "___deleted",
+        "file": "wire/core/Permissions/method-___deleted.md"
+      }
+    ],
+    "AdminTheme": [
+      {
+        "name": "getExtraMarkup",
+        "internal": "___getExtraMarkup",
+        "file": "wire/core/AdminTheme/method-___getextramarkup.md"
+      },
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/AdminTheme/method-___install.md"
+      }
+    ],
+    "Session": [
+      {
+        "name": "init",
+        "internal": "___init",
+        "file": "wire/core/Session/method-___init.md"
+      },
+      {
+        "name": "isValidSession",
+        "internal": "___isValidSession",
+        "file": "wire/core/Session/method-___isvalidsession.md"
+      },
+      {
+        "name": "login",
+        "internal": "___login",
+        "file": "wire/core/Session/method-___login.md"
+      },
+      {
+        "name": "loginSuccess",
+        "internal": "___loginSuccess",
+        "file": "wire/core/Session/method-___loginsuccess.md"
+      },
+      {
+        "name": "loginFailure",
+        "internal": "___loginFailure",
+        "file": "wire/core/Session/method-___loginfailure.md"
+      },
+      {
+        "name": "allowLogin",
+        "internal": "___allowLogin",
+        "file": "wire/core/Session/method-___allowlogin.md"
+      },
+      {
+        "name": "allowLoginAttempt",
+        "internal": "___allowLoginAttempt",
+        "file": "wire/core/Session/method-___allowloginattempt.md"
+      },
+      {
+        "name": "authenticate",
+        "internal": "___authenticate",
+        "file": "wire/core/Session/method-___authenticate.md"
+      },
+      {
+        "name": "logout",
+        "internal": "___logout",
+        "file": "wire/core/Session/method-___logout.md"
+      },
+      {
+        "name": "logoutSuccess",
+        "internal": "___logoutSuccess",
+        "file": "wire/core/Session/method-___logoutsuccess.md"
+      },
+      {
+        "name": "redirect",
+        "internal": "___redirect",
+        "file": "wire/core/Session/method-___redirect.md"
+      }
+    ],
+    "Notices": [
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/Notices/method-___render.md"
+      },
+      {
+        "name": "renderText",
+        "internal": "___renderText",
+        "file": "wire/core/Notices/method-___rendertext.md"
+      }
+    ],
+    "Pagefile": [
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Pagefile/method-___install.md"
+      },
+      {
+        "name": "url",
+        "internal": "___url",
+        "file": "wire/core/Pagefile/method-___url.md"
+      },
+      {
+        "name": "httpUrl",
+        "internal": "___httpUrl",
+        "file": "wire/core/Pagefile/method-___httpurl.md"
+      },
+      {
+        "name": "filename",
+        "internal": "___filename",
+        "file": "wire/core/Pagefile/method-___filename.md"
+      }
+    ],
+    "Fieldgroups": [
+      {
+        "name": "load",
+        "internal": "___load",
+        "file": "wire/core/Fieldgroups/method-___load.md"
+      },
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Fieldgroups/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Fieldgroups/method-___delete.md"
+      },
+      {
+        "name": "clone",
+        "internal": "___clone",
+        "file": "wire/core/Fieldgroups/method-___clone.md"
+      },
+      {
+        "name": "saveContext",
+        "internal": "___saveContext",
+        "file": "wire/core/Fieldgroups/method-___savecontext.md"
+      },
+      {
+        "name": "getExportData",
+        "internal": "___getExportData",
+        "file": "wire/core/Fieldgroups/method-___getexportdata.md"
+      },
+      {
+        "name": "setImportData",
+        "internal": "___setImportData",
+        "file": "wire/core/Fieldgroups/method-___setimportdata.md"
+      },
+      {
+        "name": "fieldAdded",
+        "internal": "___fieldAdded",
+        "file": "wire/core/Fieldgroups/method-___fieldadded.md"
+      },
+      {
+        "name": "fieldRemoved",
+        "internal": "___fieldRemoved",
+        "file": "wire/core/Fieldgroups/method-___fieldremoved.md"
+      }
+    ],
+    "WireDateTime": [
+      {
+        "name": "relativeTimeStr",
+        "internal": "___relativeTimeStr",
+        "file": "wire/core/WireDateTime/method-___relativetimestr.md"
+      }
+    ],
+    "Selectors": [
+      {
+        "name": "getCustomVariableValue",
+        "internal": "___getCustomVariableValue",
+        "file": "wire/core/Selectors/method-___getcustomvariablevalue.md"
+      }
+    ],
+    "User": [
+      {
+        "name": "hasPagePermission",
+        "internal": "___hasPagePermission",
+        "file": "wire/core/User/method-___haspagepermission.md"
+      },
+      {
+        "name": "hasTemplatePermission",
+        "internal": "___hasTemplatePermission",
+        "file": "wire/core/User/method-___hastemplatepermission.md"
+      }
+    ],
+    "Fieldtype": [
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/core/Fieldtype/method-___getconfiginputfields.md"
+      },
+      {
+        "name": "getConfigArray",
+        "internal": "___getConfigArray",
+        "file": "wire/core/Fieldtype/method-___getconfigarray.md"
+      },
+      {
+        "name": "getConfigAllowContext",
+        "internal": "___getConfigAllowContext",
+        "file": "wire/core/Fieldtype/method-___getconfigallowcontext.md"
+      },
+      {
+        "name": "getConfigAdvancedInputfields",
+        "internal": "___getConfigAdvancedInputfields",
+        "file": "wire/core/Fieldtype/method-___getconfigadvancedinputfields.md"
+      },
+      {
+        "name": "exportConfigData",
+        "internal": "___exportConfigData",
+        "file": "wire/core/Fieldtype/method-___exportconfigdata.md"
+      },
+      {
+        "name": "importConfigData",
+        "internal": "___importConfigData",
+        "file": "wire/core/Fieldtype/method-___importconfigdata.md"
+      },
+      {
+        "name": "getCompatibleFieldtypes",
+        "internal": "___getCompatibleFieldtypes",
+        "file": "wire/core/Fieldtype/method-___getcompatiblefieldtypes.md"
+      },
+      {
+        "name": "formatValue",
+        "internal": "___formatValue",
+        "file": "wire/core/Fieldtype/method-___formatvalue.md"
+      },
+      {
+        "name": "markupValue",
+        "internal": "___markupValue",
+        "file": "wire/core/Fieldtype/method-___markupvalue.md"
+      },
+      {
+        "name": "wakeupValue",
+        "internal": "___wakeupValue",
+        "file": "wire/core/Fieldtype/method-___wakeupvalue.md"
+      },
+      {
+        "name": "sleepValue",
+        "internal": "___sleepValue",
+        "file": "wire/core/Fieldtype/method-___sleepvalue.md"
+      },
+      {
+        "name": "exportValue",
+        "internal": "___exportValue",
+        "file": "wire/core/Fieldtype/method-___exportvalue.md"
+      },
+      {
+        "name": "createField",
+        "internal": "___createField",
+        "file": "wire/core/Fieldtype/method-___createfield.md"
+      },
+      {
+        "name": "getSelectorInfo",
+        "internal": "___getSelectorInfo",
+        "file": "wire/core/Fieldtype/method-___getselectorinfo.md"
+      },
+      {
+        "name": "loadPageField",
+        "internal": "___loadPageField",
+        "file": "wire/core/Fieldtype/method-___loadpagefield.md"
+      },
+      {
+        "name": "loadPageFieldFilter",
+        "internal": "___loadPageFieldFilter",
+        "file": "wire/core/Fieldtype/method-___loadpagefieldfilter.md"
+      },
+      {
+        "name": "savePageField",
+        "internal": "___savePageField",
+        "file": "wire/core/Fieldtype/method-___savepagefield.md"
+      },
+      {
+        "name": "deleteField",
+        "internal": "___deleteField",
+        "file": "wire/core/Fieldtype/method-___deletefield.md"
+      },
+      {
+        "name": "deletePageField",
+        "internal": "___deletePageField",
+        "file": "wire/core/Fieldtype/method-___deletepagefield.md"
+      },
+      {
+        "name": "emptyPageField",
+        "internal": "___emptyPageField",
+        "file": "wire/core/Fieldtype/method-___emptypagefield.md"
+      },
+      {
+        "name": "replacePageField",
+        "internal": "___replacePageField",
+        "file": "wire/core/Fieldtype/method-___replacepagefield.md"
+      },
+      {
+        "name": "deleteTemplateField",
+        "internal": "___deleteTemplateField",
+        "file": "wire/core/Fieldtype/method-___deletetemplatefield.md"
+      },
+      {
+        "name": "cloneField",
+        "internal": "___cloneField",
+        "file": "wire/core/Fieldtype/method-___clonefield.md"
+      },
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Fieldtype/method-___install.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/core/Fieldtype/method-___uninstall.md"
+      },
+      {
+        "name": "upgrade",
+        "internal": "___upgrade",
+        "file": "wire/core/Fieldtype/method-___upgrade.md"
+      }
+    ],
+    "ProcessWire": [
+      {
+        "name": "init",
+        "internal": "___init",
+        "file": "wire/core/ProcessWire/method-___init.md"
+      },
+      {
+        "name": "ready",
+        "internal": "___ready",
+        "file": "wire/core/ProcessWire/method-___ready.md"
+      },
+      {
+        "name": "finished",
+        "internal": "___finished",
+        "file": "wire/core/ProcessWire/method-___finished.md"
+      }
+    ],
+    "FileValidatorModule": [
+      {
+        "name": "log",
+        "internal": "___log",
+        "file": "wire/core/FileValidatorModule/method-___log.md"
+      }
+    ],
+    "PagefileExtra": [
+      {
+        "name": "noCacheURL",
+        "internal": "___noCacheURL",
+        "file": "wire/core/PagefileExtra/method-___nocacheurl.md"
+      },
+      {
+        "name": "create",
+        "internal": "___create",
+        "file": "wire/core/PagefileExtra/method-___create.md"
+      }
+    ],
+    "WireFileTools": [
+      {
+        "name": "include",
+        "internal": "___include",
+        "file": "wire/core/WireFileTools/method-___include.md"
+      }
+    ],
+    "Field": [
+      {
+        "name": "viewable",
+        "internal": "___viewable",
+        "file": "wire/core/Field/method-___viewable.md"
+      },
+      {
+        "name": "editable",
+        "internal": "___editable",
+        "file": "wire/core/Field/method-___editable.md"
+      },
+      {
+        "name": "getInputfield",
+        "internal": "___getInputfield",
+        "file": "wire/core/Field/method-___getinputfield.md"
+      },
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/core/Field/method-___getconfiginputfields.md"
+      }
+    ],
+    "ImageSizerEngineGD": [
+      {
+        "name": "imSaveReady",
+        "internal": "___imSaveReady",
+        "file": "wire/core/ImageSizerEngineGD/method-___imsaveready.md"
+      }
+    ],
+    "WireSaveableItemsLookup": [
+      {
+        "name": "load",
+        "internal": "___load",
+        "file": "wire/core/WireSaveableItemsLookup/method-___load.md"
+      },
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/WireSaveableItemsLookup/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/WireSaveableItemsLookup/method-___delete.md"
+      }
+    ],
+    "Sanitizer": [
+      {
+        "name": "array",
+        "internal": "___array",
+        "file": "wire/core/Sanitizer/method-___array.md"
+      },
+      {
+        "name": "array",
+        "internal": "___array",
+        "file": "wire/core/Sanitizer/method-___array.md"
+      },
+      {
+        "name": "testAll",
+        "internal": "___testAll",
+        "file": "wire/core/Sanitizer/method-___testall.md"
+      }
+    ],
+    "TemplateFile": [
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/TemplateFile/method-___render.md"
+      },
+      {
+        "name": "fileFailed",
+        "internal": "___fileFailed",
+        "file": "wire/core/TemplateFile/method-___filefailed.md"
+      }
+    ],
+    "WireMail": [
+      {
+        "name": "sanitizeHeaderName",
+        "internal": "___sanitizeHeaderName",
+        "file": "wire/core/WireMail/method-___sanitizeheadername.md"
+      },
+      {
+        "name": "sanitizeHeaderValue",
+        "internal": "___sanitizeHeaderValue",
+        "file": "wire/core/WireMail/method-___sanitizeheadervalue.md"
+      },
+      {
+        "name": "send",
+        "internal": "___send",
+        "file": "wire/core/WireMail/method-___send.md"
+      },
+      {
+        "name": "htmlToText",
+        "internal": "___htmlToText",
+        "file": "wire/core/WireMail/method-___htmltotext.md"
+      }
+    ],
+    "Users": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Users/method-___save.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/Users/method-___saveready.md"
+      }
+    ],
+    "FileCompilerModule": [
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/FileCompilerModule/method-___install.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/core/FileCompilerModule/method-___uninstall.md"
+      }
+    ],
+    "WireMailInterface": [
+      {
+        "name": "send",
+        "internal": "___send",
+        "file": "wire/core/WireMailInterface/method-___send.md"
+      },
+      {
+        "name": "send",
+        "internal": "___send",
+        "file": "wire/core/WireMailInterface/method-___send.md"
+      }
+    ],
+    "Password": [
+      {
+        "name": "setPass",
+        "internal": "___setPass",
+        "file": "wire/core/Password/method-___setpass.md"
+      }
+    ],
+    "WireHooks": [
+      {
+        "name": "debug",
+        "internal": "___debug",
+        "file": "wire/core/WireHooks/const-___debug.md"
+      }
+    ],
+    "WireAction": [
+      {
+        "name": "action",
+        "internal": "___action",
+        "file": "wire/core/WireAction/method-___action.md"
+      },
+      {
+        "name": "executeMultiple",
+        "internal": "___executeMultiple",
+        "file": "wire/core/WireAction/method-___executemultiple.md"
+      },
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/core/WireAction/method-___getconfiginputfields.md"
+      }
+    ],
+    "Modules": [
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Modules/method-___install.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Modules/method-___delete.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/core/Modules/method-___uninstall.md"
+      },
+      {
+        "name": "saveConfig",
+        "internal": "___saveConfig",
+        "file": "wire/core/Modules/method-___saveconfig.md"
+      },
+      {
+        "name": "refresh",
+        "internal": "___refresh",
+        "file": "wire/core/Modules/method-___refresh.md"
+      }
+    ],
+    "AdminThemeFramework": [
+      {
+        "name": "getPrimaryNavArray",
+        "internal": "___getPrimaryNavArray",
+        "file": "wire/core/AdminThemeFramework/method-___getprimarynavarray.md"
+      },
+      {
+        "name": "getUserNavArray",
+        "internal": "___getUserNavArray",
+        "file": "wire/core/AdminThemeFramework/method-___getusernavarray.md"
+      },
+      {
+        "name": "renderFile",
+        "internal": "___renderFile",
+        "file": "wire/core/AdminThemeFramework/method-___renderfile.md"
+      }
+    ],
+    "Pageimage": [
+      {
+        "name": "crop",
+        "internal": "___crop",
+        "file": "wire/core/Pageimage/method-___crop.md"
+      },
+      {
+        "name": "rebuildVariations",
+        "internal": "___rebuildVariations",
+        "file": "wire/core/Pageimage/method-___rebuildvariations.md"
+      },
+      {
+        "name": "isVariation",
+        "internal": "___isVariation",
+        "file": "wire/core/Pageimage/method-___isvariation.md"
+      },
+      {
+        "name": "createdVariation",
+        "internal": "___createdVariation",
+        "file": "wire/core/Pageimage/method-___createdvariation.md"
+      },
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/Pageimage/method-___render.md"
+      },
+      {
+        "name": "filenameDoesNotExist",
+        "internal": "___filenameDoesNotExist",
+        "file": "wire/core/Pageimage/method-___filenamedoesnotexist.md"
+      }
+    ],
+    "WireHttp": [
+      {
+        "name": "send",
+        "internal": "___send",
+        "file": "wire/core/WireHttp/method-___send.md"
+      },
+      {
+        "name": "download",
+        "internal": "___download",
+        "file": "wire/core/WireHttp/method-___download.md"
+      },
+      {
+        "name": "sendFile",
+        "internal": "___sendFile",
+        "file": "wire/core/WireHttp/method-___sendfile.md"
+      }
+    ],
+    "Wire": [
+      {
+        "name": "callUnknown",
+        "internal": "___callUnknown",
+        "file": "wire/core/Wire/method-___callunknown.md"
+      },
+      {
+        "name": "changed",
+        "internal": "___changed",
+        "file": "wire/core/Wire/method-___changed.md"
+      },
+      {
+        "name": "trackException",
+        "internal": "___trackException",
+        "file": "wire/core/Wire/method-___trackexception.md"
+      },
+      {
+        "name": "log",
+        "internal": "___log",
+        "file": "wire/core/Wire/method-___log.md"
+      }
+    ],
+    "ModuleJS": [
+      {
+        "name": "use",
+        "internal": "___use",
+        "file": "wire/core/ModuleJS/method-___use.md"
+      }
+    ],
+    "WireArray": [
+      {
+        "name": "and",
+        "internal": "___and",
+        "file": "wire/core/WireArray/method-___and.md"
+      },
+      {
+        "name": "callUnknown",
+        "internal": "___callUnknown",
+        "file": "wire/core/WireArray/method-___callunknown.md"
+      }
+    ],
+    "Page": [
+      {
+        "name": "getUnknown",
+        "internal": "___getUnknown",
+        "file": "wire/core/Page/method-___getunknown.md"
+      },
+      {
+        "name": "if",
+        "internal": "___if",
+        "file": "wire/core/Page/method-___if.md"
+      },
+      {
+        "name": "getMarkup",
+        "internal": "___getMarkup",
+        "file": "wire/core/Page/method-___getmarkup.md"
+      },
+      {
+        "name": "callUnknown",
+        "internal": "___callUnknown",
+        "file": "wire/core/Page/method-___callunknown.md"
+      },
+      {
+        "name": "rootParent",
+        "internal": "___rootParent",
+        "file": "wire/core/Page/method-___rootparent.md"
+      },
+      {
+        "name": "references",
+        "internal": "___references",
+        "file": "wire/core/Page/method-___references.md"
+      },
+      {
+        "name": "links",
+        "internal": "___links",
+        "file": "wire/core/Page/method-___links.md"
+      },
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/core/Page/method-___render.md"
+      },
+      {
+        "name": "renderPage",
+        "internal": "___renderPage",
+        "file": "wire/core/Page/method-___renderpage.md"
+      },
+      {
+        "name": "renderField",
+        "internal": "___renderField",
+        "file": "wire/core/Page/method-___renderfield.md"
+      },
+      {
+        "name": "renderValue",
+        "internal": "___renderValue",
+        "file": "wire/core/Page/method-___rendervalue.md"
+      },
+      {
+        "name": "getInputfields",
+        "internal": "___getInputfields",
+        "file": "wire/core/Page/method-___getinputfields.md"
+      },
+      {
+        "name": "edit",
+        "internal": "___edit",
+        "file": "wire/core/Page/method-___edit.md"
+      },
+      {
+        "name": "isPublic",
+        "internal": "___isPublic",
+        "file": "wire/core/Page/method-___ispublic.md"
+      },
+      {
+        "name": "loaded",
+        "internal": "___loaded",
+        "file": "wire/core/Page/method-___loaded.md"
+      },
+      {
+        "name": "editReady",
+        "internal": "___editReady",
+        "file": "wire/core/Page/method-___editready.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/Page/method-___saveready.md"
+      },
+      {
+        "name": "saved",
+        "internal": "___saved",
+        "file": "wire/core/Page/method-___saved.md"
+      },
+      {
+        "name": "addReady",
+        "internal": "___addReady",
+        "file": "wire/core/Page/method-___addready.md"
+      },
+      {
+        "name": "added",
+        "internal": "___added",
+        "file": "wire/core/Page/method-___added.md"
+      },
+      {
+        "name": "moveReady",
+        "internal": "___moveReady",
+        "file": "wire/core/Page/method-___moveready.md"
+      },
+      {
+        "name": "moved",
+        "internal": "___moved",
+        "file": "wire/core/Page/method-___moved.md"
+      },
+      {
+        "name": "deleteReady",
+        "internal": "___deleteReady",
+        "file": "wire/core/Page/method-___deleteready.md"
+      },
+      {
+        "name": "deleted",
+        "internal": "___deleted",
+        "file": "wire/core/Page/method-___deleted.md"
+      },
+      {
+        "name": "cloneReady",
+        "internal": "___cloneReady",
+        "file": "wire/core/Page/method-___cloneready.md"
+      },
+      {
+        "name": "cloned",
+        "internal": "___cloned",
+        "file": "wire/core/Page/method-___cloned.md"
+      },
+      {
+        "name": "renameReady",
+        "internal": "___renameReady",
+        "file": "wire/core/Page/method-___renameready.md"
+      },
+      {
+        "name": "renamed",
+        "internal": "___renamed",
+        "file": "wire/core/Page/method-___renamed.md"
+      },
+      {
+        "name": "addStatusReady",
+        "internal": "___addStatusReady",
+        "file": "wire/core/Page/method-___addstatusready.md"
+      },
+      {
+        "name": "addedStatus",
+        "internal": "___addedStatus",
+        "file": "wire/core/Page/method-___addedstatus.md"
+      },
+      {
+        "name": "removeStatusReady",
+        "internal": "___removeStatusReady",
+        "file": "wire/core/Page/method-___removestatusready.md"
+      },
+      {
+        "name": "removedStatus",
+        "internal": "___removedStatus",
+        "file": "wire/core/Page/method-___removedstatus.md"
+      }
+    ],
+    "FieldtypeMulti": [
+      {
+        "name": "getSelectorInfo",
+        "internal": "___getSelectorInfo",
+        "file": "wire/core/FieldtypeMulti/method-___getselectorinfo.md"
+      },
+      {
+        "name": "getCompatibleFieldtypes",
+        "internal": "___getCompatibleFieldtypes",
+        "file": "wire/core/FieldtypeMulti/method-___getcompatiblefieldtypes.md"
+      },
+      {
+        "name": "wakeupValue",
+        "internal": "___wakeupValue",
+        "file": "wire/core/FieldtypeMulti/method-___wakeupvalue.md"
+      },
+      {
+        "name": "sleepValue",
+        "internal": "___sleepValue",
+        "file": "wire/core/FieldtypeMulti/method-___sleepvalue.md"
+      },
+      {
+        "name": "savePageField",
+        "internal": "___savePageField",
+        "file": "wire/core/FieldtypeMulti/method-___savepagefield.md"
+      },
+      {
+        "name": "loadPageField",
+        "internal": "___loadPageField",
+        "file": "wire/core/FieldtypeMulti/method-___loadpagefield.md"
+      },
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/core/FieldtypeMulti/method-___getconfiginputfields.md"
+      }
+    ],
+    "PagesRequest": [
+      {
+        "name": "getPage",
+        "internal": "___getPage",
+        "file": "wire/core/PagesRequest/method-___getpage.md"
+      },
+      {
+        "name": "getPageForUser",
+        "internal": "___getPageForUser",
+        "file": "wire/core/PagesRequest/method-___getpageforuser.md"
+      },
+      {
+        "name": "getClosestPage",
+        "internal": "___getClosestPage",
+        "file": "wire/core/PagesRequest/method-___getclosestpage.md"
+      },
+      {
+        "name": "getLoginPageOrUrl",
+        "internal": "___getLoginPageOrUrl",
+        "file": "wire/core/PagesRequest/method-___getloginpageorurl.md"
+      }
+    ],
+    "WireMailTools": [
+      {
+        "name": "new",
+        "internal": "___new",
+        "file": "wire/core/WireMailTools/method-___new.md"
+      },
+      {
+        "name": "isBlacklistEmail",
+        "internal": "___isBlacklistEmail",
+        "file": "wire/core/WireMailTools/method-___isblacklistemail.md"
+      }
+    ],
+    "WireShutdown": [
+      {
+        "name": "fatalError",
+        "internal": "___fatalError",
+        "file": "wire/core/WireShutdown/method-___fatalerror.md"
+      }
+    ],
+    "PageFinder": [
+      {
+        "name": "find",
+        "internal": "___find",
+        "file": "wire/core/PageFinder/method-___find.md"
+      },
+      {
+        "name": "getQuery",
+        "internal": "___getQuery",
+        "file": "wire/core/PageFinder/method-___getquery.md"
+      },
+      {
+        "name": "getQueryAllowedTemplatesWhere",
+        "internal": "___getQueryAllowedTemplatesWhere",
+        "file": "wire/core/PageFinder/method-___getqueryallowedtemplateswhere.md"
+      },
+      {
+        "name": "getQueryJoinPath",
+        "internal": "___getQueryJoinPath",
+        "file": "wire/core/PageFinder/method-___getqueryjoinpath.md"
+      },
+      {
+        "name": "getQueryUnknownField",
+        "internal": "___getQueryUnknownField",
+        "file": "wire/core/PageFinder/method-___getqueryunknownfield.md"
+      }
+    ],
+    "PagefilesManager": [
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/PagefilesManager/method-___save.md"
+      }
+    ],
+    "PagesAccess": [
+      {
+        "name": "updateTemplate",
+        "internal": "___updateTemplate",
+        "file": "wire/core/PagesAccess/method-___updatetemplate.md"
+      },
+      {
+        "name": "updatePage",
+        "internal": "___updatePage",
+        "file": "wire/core/PagesAccess/method-___updatepage.md"
+      }
+    ],
+    "WireSaveableItems": [
+      {
+        "name": "load",
+        "internal": "___load",
+        "file": "wire/core/WireSaveableItems/method-___load.md"
+      },
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/WireSaveableItems/method-___save.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/WireSaveableItems/method-___delete.md"
+      },
+      {
+        "name": "clone",
+        "internal": "___clone",
+        "file": "wire/core/WireSaveableItems/method-___clone.md"
+      },
+      {
+        "name": "find",
+        "internal": "___find",
+        "file": "wire/core/WireSaveableItems/method-___find.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/WireSaveableItems/method-___saveready.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/WireSaveableItems/method-___saveready.md"
+      },
+      {
+        "name": "deleteReady",
+        "internal": "___deleteReady",
+        "file": "wire/core/WireSaveableItems/method-___deleteready.md"
+      },
+      {
+        "name": "cloneReady",
+        "internal": "___cloneReady",
+        "file": "wire/core/WireSaveableItems/method-___cloneready.md"
+      },
+      {
+        "name": "renameReady",
+        "internal": "___renameReady",
+        "file": "wire/core/WireSaveableItems/method-___renameready.md"
+      },
+      {
+        "name": "saved",
+        "internal": "___saved",
+        "file": "wire/core/WireSaveableItems/method-___saved.md"
+      },
+      {
+        "name": "added",
+        "internal": "___added",
+        "file": "wire/core/WireSaveableItems/method-___added.md"
+      },
+      {
+        "name": "deleted",
+        "internal": "___deleted",
+        "file": "wire/core/WireSaveableItems/method-___deleted.md"
+      },
+      {
+        "name": "cloned",
+        "internal": "___cloned",
+        "file": "wire/core/WireSaveableItems/method-___cloned.md"
+      },
+      {
+        "name": "renamed",
+        "internal": "___renamed",
+        "file": "wire/core/WireSaveableItems/method-___renamed.md"
+      }
+    ],
+    "WireTextTools": [
+      {
+        "name": "wordAlternates",
+        "internal": "___wordAlternates",
+        "file": "wire/core/WireTextTools/method-___wordalternates.md"
+      }
+    ],
+    "Pages": [
+      {
+        "name": "find",
+        "internal": "___find",
+        "file": "wire/core/Pages/method-___find.md"
+      },
+      {
+        "name": "save",
+        "internal": "___save",
+        "file": "wire/core/Pages/method-___save.md"
+      },
+      {
+        "name": "saveField",
+        "internal": "___saveField",
+        "file": "wire/core/Pages/method-___savefield.md"
+      },
+      {
+        "name": "saveFields",
+        "internal": "___saveFields",
+        "file": "wire/core/Pages/method-___savefields.md"
+      },
+      {
+        "name": "add",
+        "internal": "___add",
+        "file": "wire/core/Pages/method-___add.md"
+      },
+      {
+        "name": "new",
+        "internal": "___new",
+        "file": "wire/core/Pages/method-___new.md"
+      },
+      {
+        "name": "clone",
+        "internal": "___clone",
+        "file": "wire/core/Pages/method-___clone.md"
+      },
+      {
+        "name": "delete",
+        "internal": "___delete",
+        "file": "wire/core/Pages/method-___delete.md"
+      },
+      {
+        "name": "trash",
+        "internal": "___trash",
+        "file": "wire/core/Pages/method-___trash.md"
+      },
+      {
+        "name": "restore",
+        "internal": "___restore",
+        "file": "wire/core/Pages/method-___restore.md"
+      },
+      {
+        "name": "emptyTrash",
+        "internal": "___emptyTrash",
+        "file": "wire/core/Pages/method-___emptytrash.md"
+      },
+      {
+        "name": "emptyTrash",
+        "internal": "___emptyTrash",
+        "file": "wire/core/Pages/method-___emptytrash.md"
+      },
+      {
+        "name": "touch",
+        "internal": "___touch",
+        "file": "wire/core/Pages/method-___touch.md"
+      },
+      {
+        "name": "sort",
+        "internal": "___sort",
+        "file": "wire/core/Pages/method-___sort.md"
+      },
+      {
+        "name": "insertBefore",
+        "internal": "___insertBefore",
+        "file": "wire/core/Pages/method-___insertbefore.md"
+      },
+      {
+        "name": "insertAfter",
+        "internal": "___insertAfter",
+        "file": "wire/core/Pages/method-___insertafter.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/Pages/method-___saveready.md"
+      },
+      {
+        "name": "saveReady",
+        "internal": "___saveReady",
+        "file": "wire/core/Pages/method-___saveready.md"
+      },
+      {
+        "name": "saved",
+        "internal": "___saved",
+        "file": "wire/core/Pages/method-___saved.md"
+      },
+      {
+        "name": "addReady",
+        "internal": "___addReady",
+        "file": "wire/core/Pages/method-___addready.md"
+      },
+      {
+        "name": "added",
+        "internal": "___added",
+        "file": "wire/core/Pages/method-___added.md"
+      },
+      {
+        "name": "moveReady",
+        "internal": "___moveReady",
+        "file": "wire/core/Pages/method-___moveready.md"
+      },
+      {
+        "name": "moved",
+        "internal": "___moved",
+        "file": "wire/core/Pages/method-___moved.md"
+      },
+      {
+        "name": "templateChanged",
+        "internal": "___templateChanged",
+        "file": "wire/core/Pages/method-___templatechanged.md"
+      },
+      {
+        "name": "trashReady",
+        "internal": "___trashReady",
+        "file": "wire/core/Pages/method-___trashready.md"
+      },
+      {
+        "name": "trashed",
+        "internal": "___trashed",
+        "file": "wire/core/Pages/method-___trashed.md"
+      },
+      {
+        "name": "restoreReady",
+        "internal": "___restoreReady",
+        "file": "wire/core/Pages/method-___restoreready.md"
+      },
+      {
+        "name": "restored",
+        "internal": "___restored",
+        "file": "wire/core/Pages/method-___restored.md"
+      },
+      {
+        "name": "deleteReady",
+        "internal": "___deleteReady",
+        "file": "wire/core/Pages/method-___deleteready.md"
+      },
+      {
+        "name": "deleted",
+        "internal": "___deleted",
+        "file": "wire/core/Pages/method-___deleted.md"
+      },
+      {
+        "name": "deleteBranchReady",
+        "internal": "___deleteBranchReady",
+        "file": "wire/core/Pages/method-___deletebranchready.md"
+      },
+      {
+        "name": "deletedBranch",
+        "internal": "___deletedBranch",
+        "file": "wire/core/Pages/method-___deletedbranch.md"
+      },
+      {
+        "name": "cloneReady",
+        "internal": "___cloneReady",
+        "file": "wire/core/Pages/method-___cloneready.md"
+      },
+      {
+        "name": "cloned",
+        "internal": "___cloned",
+        "file": "wire/core/Pages/method-___cloned.md"
+      },
+      {
+        "name": "renameReady",
+        "internal": "___renameReady",
+        "file": "wire/core/Pages/method-___renameready.md"
+      },
+      {
+        "name": "renamed",
+        "internal": "___renamed",
+        "file": "wire/core/Pages/method-___renamed.md"
+      },
+      {
+        "name": "sorted",
+        "internal": "___sorted",
+        "file": "wire/core/Pages/method-___sorted.md"
+      },
+      {
+        "name": "statusChanged",
+        "internal": "___statusChanged",
+        "file": "wire/core/Pages/method-___statuschanged.md"
+      },
+      {
+        "name": "statusChangeReady",
+        "internal": "___statusChangeReady",
+        "file": "wire/core/Pages/method-___statuschangeready.md"
+      },
+      {
+        "name": "published",
+        "internal": "___published",
+        "file": "wire/core/Pages/method-___published.md"
+      },
+      {
+        "name": "unpublished",
+        "internal": "___unpublished",
+        "file": "wire/core/Pages/method-___unpublished.md"
+      },
+      {
+        "name": "publishReady",
+        "internal": "___publishReady",
+        "file": "wire/core/Pages/method-___publishready.md"
+      },
+      {
+        "name": "unpublishReady",
+        "internal": "___unpublishReady",
+        "file": "wire/core/Pages/method-___unpublishready.md"
+      },
+      {
+        "name": "found",
+        "internal": "___found",
+        "file": "wire/core/Pages/method-___found.md"
+      },
+      {
+        "name": "saveFieldReady",
+        "internal": "___saveFieldReady",
+        "file": "wire/core/Pages/method-___savefieldready.md"
+      },
+      {
+        "name": "savedField",
+        "internal": "___savedField",
+        "file": "wire/core/Pages/method-___savedfield.md"
+      },
+      {
+        "name": "savePageOrFieldReady",
+        "internal": "___savePageOrFieldReady",
+        "file": "wire/core/Pages/method-___savepageorfieldready.md"
+      },
+      {
+        "name": "savedPageOrField",
+        "internal": "___savedPageOrField",
+        "file": "wire/core/Pages/method-___savedpageorfield.md"
+      }
+    ],
+    "Process": [
+      {
+        "name": "execute",
+        "internal": "___execute",
+        "file": "wire/core/Process/method-___execute.md"
+      },
+      {
+        "name": "executed",
+        "internal": "___executed",
+        "file": "wire/core/Process/method-___executed.md"
+      },
+      {
+        "name": "headline",
+        "internal": "___headline",
+        "file": "wire/core/Process/method-___headline.md"
+      },
+      {
+        "name": "browserTitle",
+        "internal": "___browserTitle",
+        "file": "wire/core/Process/method-___browsertitle.md"
+      },
+      {
+        "name": "breadcrumb",
+        "internal": "___breadcrumb",
+        "file": "wire/core/Process/method-___breadcrumb.md"
+      },
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/core/Process/method-___install.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/core/Process/method-___uninstall.md"
+      },
+      {
+        "name": "upgrade",
+        "internal": "___upgrade",
+        "file": "wire/core/Process/method-___upgrade.md"
+      },
+      {
+        "name": "installPage",
+        "internal": "___installPage",
+        "file": "wire/core/Process/method-___installpage.md"
+      },
+      {
+        "name": "uninstallPage",
+        "internal": "___uninstallPage",
+        "file": "wire/core/Process/method-___uninstallpage.md"
+      }
+    ],
+    "Languages": [
+      {
+        "name": "deleted",
+        "internal": "___deleted",
+        "file": "wire/modules/LanguageSupport/Languages/method-___deleted.md"
+      },
+      {
+        "name": "added",
+        "internal": "___added",
+        "file": "wire/modules/LanguageSupport/Languages/method-___added.md"
+      },
+      {
+        "name": "updated",
+        "internal": "___updated",
+        "file": "wire/modules/LanguageSupport/Languages/method-___updated.md"
+      }
+    ],
+    "LanguageTranslator": [
+      {
+        "name": "getTranslation",
+        "internal": "___getTranslation",
+        "file": "wire/modules/LanguageSupport/LanguageTranslator/method-___gettranslation.md"
+      }
+    ],
+    "LanguagesPageFieldValue": [
+      {
+        "name": "getStringValue",
+        "internal": "___getStringValue",
+        "file": "wire/modules/LanguageSupport/LanguagesPageFieldValue/method-___getstringvalue.md"
+      }
+    ],
+    "LanguageSupportInstall": [
+      {
+        "name": "install",
+        "internal": "___install",
+        "file": "wire/modules/LanguageSupport/LanguageSupportInstall/method-___install.md"
+      },
+      {
+        "name": "uninstall",
+        "internal": "___uninstall",
+        "file": "wire/modules/LanguageSupport/LanguageSupportInstall/method-___uninstall.md"
+      }
+    ],
+    "ProcessFieldExportImport": [
+      {
+        "name": "buildExport",
+        "internal": "___buildExport",
+        "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___buildexport.md"
+      },
+      {
+        "name": "buildInputDataForm",
+        "internal": "___buildInputDataForm",
+        "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___buildinputdataform.md"
+      },
+      {
+        "name": "buildImport",
+        "internal": "___buildImport",
+        "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___buildimport.md"
+      },
+      {
+        "name": "processImport",
+        "internal": "___processImport",
+        "file": "wire/modules/Process/ProcessField/ProcessFieldExportImport/method-___processimport.md"
+      }
+    ],
+    "ProcessPageSearchLive": [
+      {
+        "name": "execute",
+        "internal": "___execute",
+        "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___execute.md"
+      },
+      {
+        "name": "renderList",
+        "internal": "___renderList",
+        "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___renderlist.md"
+      },
+      {
+        "name": "renderItem",
+        "internal": "___renderItem",
+        "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___renderitem.md"
+      },
+      {
+        "name": "findCustom",
+        "internal": "___findCustom",
+        "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___findcustom.md"
+      },
+      {
+        "name": "getDefaultPageSearchFields",
+        "internal": "___getDefaultPageSearchFields",
+        "file": "wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive/method-___getdefaultpagesearchfields.md"
+      }
+    ],
+    "ProcessPageListActions": [
+      {
+        "name": "getActions",
+        "internal": "___getActions",
+        "file": "wire/modules/Process/ProcessPageList/ProcessPageListActions/method-___getactions.md"
+      },
+      {
+        "name": "getExtraActions",
+        "internal": "___getExtraActions",
+        "file": "wire/modules/Process/ProcessPageList/ProcessPageListActions/method-___getextraactions.md"
+      },
+      {
+        "name": "processAction",
+        "internal": "___processAction",
+        "file": "wire/modules/Process/ProcessPageList/ProcessPageListActions/method-___processaction.md"
+      }
+    ],
+    "ProcessPageListRender": [
+      {
+        "name": "getPageActions",
+        "internal": "___getPageActions",
+        "file": "wire/modules/Process/ProcessPageList/ProcessPageListRender/method-___getpageactions.md"
+      },
+      {
+        "name": "getPageLabel",
+        "internal": "___getPageLabel",
+        "file": "wire/modules/Process/ProcessPageList/ProcessPageListRender/method-___getpagelabel.md"
+      },
+      {
+        "name": "getNumChildren",
+        "internal": "___getNumChildren",
+        "file": "wire/modules/Process/ProcessPageList/ProcessPageListRender/method-___getnumchildren.md"
+      }
+    ],
+    "ProcessTemplateExportImport": [
+      {
+        "name": "buildExport",
+        "internal": "___buildExport",
+        "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___buildexport.md"
+      },
+      {
+        "name": "buildInputDataForm",
+        "internal": "___buildInputDataForm",
+        "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___buildinputdataform.md"
+      },
+      {
+        "name": "buildImport",
+        "internal": "___buildImport",
+        "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___buildimport.md"
+      },
+      {
+        "name": "processImport",
+        "internal": "___processImport",
+        "file": "wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport/method-___processimport.md"
+      }
+    ],
+    "PagesVersions": [
+      {
+        "name": "allowPageVersions",
+        "internal": "___allowPageVersions",
+        "file": "wire/modules/Pages/PagesVersions/PagesVersions/method-___allowpageversions.md"
+      }
+    ],
+    "InputfieldPageTableAjax": [
+      {
+        "name": "checkAjax",
+        "internal": "___checkAjax",
+        "file": "wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax/method-___checkajax.md"
+      }
+    ],
+    "InputfieldTinyMCE": [
+      {
+        "name": "render",
+        "internal": "___render",
+        "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___render.md"
+      },
+      {
+        "name": "renderValue",
+        "internal": "___renderValue",
+        "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___rendervalue.md"
+      },
+      {
+        "name": "processInput",
+        "internal": "___processInput",
+        "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___processinput.md"
+      },
+      {
+        "name": "getConfigInputfields",
+        "internal": "___getConfigInputfields",
+        "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___getconfiginputfields.md"
+      },
+      {
+        "name": "getModuleConfigInputfields",
+        "internal": "___getModuleConfigInputfields",
+        "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE/method-___getmoduleconfiginputfields.md"
+      }
+    ],
+    "InputfieldTinyMCESettings": [
+      {
+        "name": "prepareSettingsForOutput",
+        "internal": "___prepareSettingsForOutput",
+        "file": "wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings/method-___preparesettingsforoutput.md"
+      }
+    ],
+    "AdminThemeRenoHelpers": [
+      {
+        "name": "topNavItems",
+        "internal": "___topNavItems",
+        "file": "wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers/method-___topnavitems.md"
+      }
+    ],
+    "CommentListCustom": [
+      {
+        "name": "renderItem",
+        "internal": "___renderItem",
+        "file": "wire/modules/Fieldtype/FieldtypeComments/CommentListCustom/method-___renderitem.md"
+      }
+    ],
+    "CommentNotifications": [
+      {
+        "name": "sendAdminNotificationEmail",
+        "internal": "___sendAdminNotificationEmail",
+        "file": "wire/modules/Fieldtype/FieldtypeComments/CommentNotifications/method-___sendadminnotificationemail.md"
+      },
+      {
+        "name": "sendNotificationEmail",
+        "internal": "___sendNotificationEmail",
+        "file": "wire/modules/Fieldtype/FieldtypeComments/CommentNotifications/method-___sendnotificationemail.md"
+      },
+      {
+        "name": "sendConfirmationEmail",
+        "internal": "___sendConfirmationEmail",
+        "file": "wire/modules/Fieldtype/FieldtypeComments/CommentNotifications/method-___sendconfirmationemail.md"
+      }
+    ],
+    "CommentList": [
+      {
+        "name": "renderItem",
+        "internal": "___renderItem",
+        "file": "wire/modules/Fieldtype/FieldtypeComments/CommentList/method-___renderitem.md"
+      }
+    ]
+  }
 }
