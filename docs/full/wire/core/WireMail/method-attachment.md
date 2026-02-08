@@ -1,0 +1,25 @@
+# WireMail::attachment()
+
+Source: `wire/core/WireMail.php`
+
+Add a file to be attached to the email
+
+~~~~~~
+$m = wireMail();
+$m->to('user@domain.com')->from('hello@world.com');
+$m->subject('Test attachment');
+$m->body('This is just a test of a file attachment');
+$m->attachment('/path/to/file.jpg');
+$m->send();
+~~~~~~
+
+
+- Multiple calls will append attachments.
+- To remove the supplied attachments, specify NULL as the value.
+- Attachments may or may not be supported by 3rd party WireMail modules.
+
+@param string $value Full path and filename of file attachment
+
+@param string $filename Optional different basename for file as it appears in the mail
+
+@return $this

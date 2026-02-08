@@ -1,0 +1,15 @@
+# PagesLoader::normalizeSelector()
+
+Source: `wire/core/PagesLoader.php`
+
+Normalize a selector
+
+This is to reduce the number of unique selectors that produce the same result.
+It is helpful with caching results, so that we don't cache the same results multiple
+times because they used slightly different selectors.
+
+@param string|int|array $selector
+
+@param bool $convertIDs Convert ID-only selectors to integers or arrays of integers?
+
+@return array|int|string

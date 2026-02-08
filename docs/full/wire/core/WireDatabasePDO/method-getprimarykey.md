@@ -1,0 +1,21 @@
+# WireDatabasePDO::getPrimaryKey()
+
+Source: `wire/core/WireDatabasePDO.php`
+
+Get column(s) or info for given table’s primary key/index
+
+By default it returns a string with the column name compromising the primary key, i.e. `col1`.
+If the primary key is multiple columns then it returns a CSV string, like `col1,col2,col3`.
+
+If you specify boolean `true` for the verbose option then it returns an simplified array of
+information about the primary key. If you specify integer `2` then it returns an array of
+raw MySQL SHOW INDEX information.
+
+
+@param string $table
+
+@param bool|int $verbose Get array of info rather than column(s) string? (default=false)
+
+@return string|array
+
+@since 3.0.182

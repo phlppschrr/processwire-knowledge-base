@@ -1,0 +1,14 @@
+# Template::getLabel()
+
+Source: `wire/core/Template.php`
+
+Return template label for current language, or specified language if provided
+
+If no template label, return template name.
+This is different from `$template->label` in that it knows about languages (when installed)
+and it will always return something. If there's no label, you'll still get the name.
+
+
+@param Page|Language $language Optional, if not used then user's current language is used
+
+@return string

@@ -1,0 +1,11 @@
+# WireSaveableItems::decodeData()
+
+Source: `wire/core/WireSaveableItems.php`
+
+Decode the 'data' portion of the table.
+
+This is a front-end to wireDecodeJSON that it can be overridden if needed.
+
+@param string $value
+
+@return array

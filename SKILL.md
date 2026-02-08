@@ -6,13 +6,16 @@ description: Extracted ProcessWire API documentation from core source PHPDoc.
 
 # ProcessWire Docs Skill
 
-Use the extracted documentation in `docs/` as the canonical source of truth. The text is taken verbatim from ProcessWire core PHPDoc, with `#pw-*` directives treated as metadata and `#pw-internal` items excluded.
+Use the extracted documentation in `docs/` as the canonical source of truth. The text is taken verbatim from ProcessWire core PHPDoc, with `#pw-*` directives treated as metadata and `#pw-internal`/`@internal` items excluded.
 
 ## Entry Point
-- `docs/index.md`
+- `docs/core/index.md` (core-only, recommended)
+- `docs/full/index.md` (full)
 
 ## Update
 Run:
 - `scripts/update-docs.sh`
 
-This will sync the ProcessWire source (DEV branch) into `source/processwire` and rebuild the docs into `docs/`.
+This will sync the ProcessWire source (DEV branch) into `source/processwire` and rebuild:
+- `docs/core/` (core-only)
+- `docs/full/` (full)

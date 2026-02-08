@@ -1,0 +1,31 @@
+# Sanitizer::validate()
+
+Source: `wire/core/Sanitizer.php`
+
+Validate that value remains unchanged by given sanitizer method, or return null if not
+
+If change is just a type conversion change or surrounding whitespace (that gets trimmed)
+then this is still considered valid.
+
+Returns NULL or given $fallback value if value does not validate. Note that if results like
+0, false or blank string are considered valid values, then this method can return them. So for
+cases like that you should compare the return value with NULL (or whatever your $fallback is).
+
+things like 0 or false (if that is a valid value) compare the return value with null before
+assuming a value is not valid.
+
+
+~~~~~
+$sanitizer->validate('abc', 'alpha'); // valid: returns 'abc'
+$sanitizer->validate('abc123', 'alpha'); invalid: returns null
+~~~~~
+
+@param string|int|array|float $value Value to validate
+
+@param string $method Saniatizer method name or CSV names combo
+
+@param null|mixed mixed $fallback Optionally return this fallback value (rather than null) if value does not validate
+
+@return null|mixed Returns sanitized value if it validates or null (or given fallback) if value does not validate
+
+@since 3.0.125

@@ -1,0 +1,26 @@
+# Fieldtype::___exportValue()
+
+Source: `wire/core/Fieldtype.php`
+
+Given a value, return an portable version of it as either a string, int, float or array
+
+If an array is returned, it should only contain: strings, ints, floats or more arrays of those types.
+This is intended for web service exports.
+
+When applicable, this method should map things like internal IDs to named equivalents (name, path, etc.).
+
+If not overridden, this takes on the same behavior as `Fieldtype::sleepValue()`. However, if overridden,
+it is intended to be more verbose than wakeupValue, where applicable.
+
+
+@param Page $page
+
+@param Field $field
+
+@param string|int|float|array|object|null $value
+
+@param array $options Optional settings to shape the exported value, if needed:
+ - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false).
+ - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
+
+@return string|float|int|array

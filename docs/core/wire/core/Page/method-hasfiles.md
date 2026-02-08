@@ -1,0 +1,14 @@
+# Page::hasFiles()
+
+Source: `wire/core/Page.php`
+
+Does the page have a files path and one or more files present in it?
+
+This will only check if files exist, it will not create the directory if it’s not already present.
+
+
+@return bool
+
+@since 3.0.138 Earlier versions must use the more verbose PagefilesManager::hasFiles($page)
+
+@see hasFilesPath(), filesPath(), filesManager()

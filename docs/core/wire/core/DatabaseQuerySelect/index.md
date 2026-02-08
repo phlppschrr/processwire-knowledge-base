@@ -1,0 +1,35 @@
+# DatabaseQuerySelect
+
+Source: `wire/core/DatabaseQuerySelect.php`
+
+ProcessWire DatabaseQuerySelect
+
+A wrapper for SELECT SQL queries.
+
+The intention behind these classes is to have a query that can safely
+be passed between methods and objects that add to it without knowledge
+of what other methods/objects have done to it. It also means being able
+to build a complex query without worrying about correct syntax placement.
+
+This file is licensed under the MIT license
+https://processwire.com/about/license/mit/
+
+ProcessWire 3.x, Copyright 2022 by Ryan Cramer
+https://processwire.com
+
+
+
+Below are Properties populated by DatabaseQuerySelect objects created by PageFinder.
+This is what gets passed to Fieldtype::getMatchQuery() method calls as properties
+available from the $query argument.
+
+Groups:
+Group: [other](group-other.md)
+
+Methods:
+Method: [__construct()](method-__construct.md)
+Method: [getQuery()](method-getquery.md)
+Method: [orderby()](method-orderby.md)
+Method: [getQuerySelect()](method-getqueryselect.md)
+Method: [getQueryGroupby()](method-getquerygroupby.md)
+Method: [getQueryLimit()](method-getquerylimit.md)

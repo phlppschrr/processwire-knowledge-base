@@ -1,0 +1,9 @@
+# WireDataDB::__construct()
+
+Source: `wire/core/WireDataDB.php`
+
+Construct
+
+@param int $sourceID ID of the source item this WireData is maintaining/persisting data for.
+
+@param string $tableName Name of the table to store data in. If it does not exist, it will be created.

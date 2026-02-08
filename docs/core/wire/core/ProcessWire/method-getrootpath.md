@@ -1,0 +1,10 @@
+# ProcessWire::getRootPath()
+
+Source: `wire/core/ProcessWire.php`
+
+Get root path, check it, and optionally auto-detect it if not provided
+
+@param bool|string $rootPath Root path if already known, in which case we’ll just modify as needed
+  …or specify boolean true to get absolute root path, which disregards any symbolic links to core.
+
+@return string

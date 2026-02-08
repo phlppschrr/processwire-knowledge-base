@@ -1,0 +1,15 @@
+# PagesTrash::restore()
+
+Source: `wire/core/PagesTrash.php`
+
+Restore a page from the trash back to a non-trash state
+
+Note that this method assumes already have set a new parent, but have not yet saved.
+If you do not set a new parent, then it will restore to the original parent, when possible.
+
+
+@param Page $page
+
+@param bool $save Set to false if you only want to prep the page for restore (i.e. being saved elsewhere)
+
+@return bool

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -43,6 +44,11 @@ DROP_DIRECTIVES = {
     "hookable",
     "redirect",
 }
+
+PROFILE_CORE = "core"
+PROFILE_FULL = "full"
+
+CORE_MODULE_DIRS = []
 
 
 @dataclass
@@ -90,6 +96,12 @@ def remove_inline_directives(line: str) -> str:
     return re.sub(r"\s*#pw-[A-Za-z0-9_-]+", "", line).rstrip()
 
 
+def slugify(value: str) -> str:
+    slug = re.sub(r"[^A-Za-z0-9_-]+", "-", value.strip())
+    slug = re.sub(r"-{2,}", "-", slug).strip("-")
+    return slug.lower() if slug else "item"
+
+
 def insert_tag_breaks(lines: list[str]) -> list[str]:
     out: list[str] = []
     for line in lines:
@@ -132,7 +144,7 @@ def clean_docblock(lines: list[str], drop_if_internal: bool) -> list[str] | None
             cleaned.append(line.rstrip())
             continue
 
-        if "#pw-internal" in line:
+        if "#pw-internal" in line or "@internal" in line:
             internal_flag = True
             continue
 
@@ -156,6 +168,9 @@ def clean_docblock(lines: list[str], drop_if_internal: bool) -> list[str] | None
             # Unknown directive: treat as metadata, skip
             continue
 
+        if "@internal" in line:
+            internal_flag = True
+            continue
         cleaned_line = remove_inline_directives(line)
         if cleaned_line == "" and stripped == "":
             cleaned.append("")
@@ -189,6 +204,7 @@ def parse_class_docblock(docblock: str):
     intro: list[str] = []
     groups: dict[str, list[str]] = {}
     order_groups: list[str] = []
+    group_summaries: dict[str, str] = {}
     in_body_block = False
     in_manual_section = False
 
@@ -233,7 +249,7 @@ def parse_class_docblock(docblock: str):
             intro.append(remove_inline_directives(line))
             continue
 
-        if "#pw-internal" in line:
+        if "#pw-internal" in line or "@internal" in line:
             continue
 
         if stripped.startswith("#pw-"):
@@ -244,6 +260,12 @@ def parse_class_docblock(docblock: str):
             payload = (match.group(2) or "").rstrip()
 
             if directive in DROP_DIRECTIVES or directive.startswith("group-"):
+                continue
+
+            if directive.startswith("summary-"):
+                group_name = directive[len("summary-") :].strip()
+                if group_name and payload:
+                    group_summaries[group_name] = remove_inline_directives(payload)
                 continue
 
             if directive in KEEP_DIRECTIVES or directive.startswith("summary-"):
@@ -266,11 +288,10 @@ def parse_class_docblock(docblock: str):
             if in_manual_section:
                 intro.append(cleaned_line)
             else:
-                if groups_found:
-                    group = groups_found[0]
-                else:
-                    group = "other"
-                groups.setdefault(group, []).append(cleaned_line)
+                if not groups_found:
+                    groups_found = ["other"]
+                for group in groups_found:
+                    groups.setdefault(group, []).append(cleaned_line)
             continue
 
         if stripped.startswith("@"):
@@ -305,7 +326,7 @@ def parse_class_docblock(docblock: str):
             group_lines.pop()
         groups[group_name] = insert_tag_breaks(group_lines)
 
-    return intro, groups, order_groups
+    return intro, groups, order_groups, group_summaries
 
 
 def mask_strings_and_comments(text: str) -> str:
@@ -406,8 +427,14 @@ def find_class_docblock(text: str, class_pos: int) -> str | None:
     return None
 
 
-def iter_php_files(source_dir: Path) -> Iterable[Path]:
-    for rel in ("wire/core", "wire/modules"):
+def iter_php_files(source_dir: Path, profile: str) -> Iterable[Path]:
+    rels: list[str]
+    if profile == PROFILE_CORE:
+        rels = ["wire/core"]
+    else:
+        rels = ["wire/core", "wire/modules"]
+
+    for rel in rels:
         base = source_dir / rel
         if not base.exists():
             continue
@@ -600,8 +627,9 @@ def write_doc(
     class_info: ClassInfo,
     members: list[MemberDoc],
 ):
-    out_path = out_dir / Path(rel_path).parent / f"{class_info.name}.md"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
+    class_dir = out_dir / Path(rel_path).parent / class_info.name
+    class_dir.mkdir(parents=True, exist_ok=True)
+    index_path = class_dir / "index.md"
 
     lines: list[str] = []
     lines.append(f"# {class_info.name}")
@@ -609,12 +637,15 @@ def write_doc(
     lines.append(f"Source: `{rel_path}`")
     lines.append("")
 
+    ordered_names: list[str] = []
+    grouped: dict[str, list[str]] = {}
+    group_summaries: dict[str, str] = {}
+
     if class_info.docblock:
-        intro_lines, grouped, order_groups = parse_class_docblock(class_info.docblock)
+        intro_lines, grouped, order_groups, group_summaries = parse_class_docblock(class_info.docblock)
         if intro_lines:
             lines.extend(intro_lines)
         if grouped:
-            ordered_names: list[str] = []
             remaining = sorted(grouped.keys(), key=lambda k: k.lower())
             for name in order_groups:
                 lower = name.lower()
@@ -628,34 +659,138 @@ def write_doc(
                 if g not in ordered_names:
                     ordered_names.append(g)
 
+            lines.append("")
+            lines.append("Groups:")
             for group_name in ordered_names:
-                group_lines = grouped.get(group_name, [])
-                if not group_lines:
-                    continue
-                lines.append("")
-                lines.append(f"## {group_name}")
-                lines.append("")
-                lines.extend(group_lines)
+                group_file = f"group-{slugify(group_name)}.md"
+                lines.append(f"Group: [{group_name}]({group_file})")
 
     members_sorted = sorted(members, key=lambda m: m.pos)
+    method_links: list[str] = []
+    const_links: list[str] = []
     for member in members_sorted:
         cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
         if not cleaned:
             continue
-        lines.append("")
         if member.kind == "method":
-            lines.append(f"## {member.name}()")
+            method_links.append(f"Method: [{member.name}()](method-{slugify(member.name)}.md)")
         else:
-            lines.append(f"## {member.name}")
-        lines.append("")
-        lines.extend(cleaned)
+            const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
 
-    out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    if method_links:
+        lines.append("")
+        lines.append("Methods:")
+        lines.extend(method_links)
+    if const_links:
+        lines.append("")
+        lines.append("Constants:")
+        lines.extend(const_links)
+
+    index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+    # Write group files
+    if class_info.docblock:
+        intro_lines, grouped, order_groups, group_summaries = parse_class_docblock(class_info.docblock)
+        ordered_names: list[str] = []
+        remaining = sorted(grouped.keys(), key=lambda k: k.lower())
+        for name in order_groups:
+            lower = name.lower()
+            matches = [g for g in grouped.keys() if g.lower() == lower]
+            for g in matches:
+                if g not in ordered_names:
+                    ordered_names.append(g)
+                    if g in remaining:
+                        remaining.remove(g)
+        for g in remaining:
+            if g not in ordered_names:
+                ordered_names.append(g)
+
+        summary_map = {k.lower(): v for k, v in group_summaries.items()}
+        for group_name in ordered_names:
+            group_lines = grouped.get(group_name, [])
+            if not group_lines:
+                continue
+            group_path = class_dir / f"group-{slugify(group_name)}.md"
+            group_content: list[str] = [
+                f"# {class_info.name}: {group_name}",
+                "",
+                f"Source: `{rel_path}`",
+                "",
+            ]
+            summary = summary_map.get(group_name.lower())
+            if summary:
+                group_content.append(summary)
+                group_content.append("")
+            group_content.extend(group_lines)
+            group_path.write_text("\n".join(group_content).rstrip() + "\n", encoding="utf-8")
+
+    # Write member files
+    for member in members_sorted:
+        cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+        if not cleaned:
+            continue
+        if member.kind == "method":
+            member_path = class_dir / f"method-{slugify(member.name)}.md"
+            title = f"# {class_info.name}::{member.name}()"
+        else:
+            member_path = class_dir / f"const-{slugify(member.name)}.md"
+            title = f"# {class_info.name}::{member.name}"
+        member_content = [
+            title,
+            "",
+            f"Source: `{rel_path}`",
+            "",
+        ]
+        member_content.extend(cleaned)
+        member_path.write_text("\n".join(member_content).rstrip() + "\n", encoding="utf-8")
+
+    meta = {
+        "type": "class",
+        "name": class_info.name,
+        "source": rel_path,
+        "index": (class_dir / "index.md").as_posix(),
+        "groups": [],
+        "methods": [],
+        "constants": [],
+    }
+    if class_info.docblock:
+        for group_name in ordered_names:
+            group_lines = grouped.get(group_name, [])
+            if not group_lines:
+                continue
+            meta["groups"].append(
+                {
+                    "name": group_name,
+                    "file": (class_dir / f"group-{slugify(group_name)}.md").as_posix(),
+                }
+            )
+    for member in members_sorted:
+        cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+        if not cleaned:
+            continue
+        entry = {
+            "name": member.name,
+            "file": (
+                class_dir
+                / (
+                    f"method-{slugify(member.name)}.md"
+                    if member.kind == "method"
+                    else f"const-{slugify(member.name)}.md"
+                )
+            ).as_posix(),
+        }
+        if member.kind == "method":
+            meta["methods"].append(entry)
+        else:
+            meta["constants"].append(entry)
+
+    return meta
 
 
 def write_file_doc(out_dir: Path, file_info: FileInfo):
-    out_path = out_dir / Path(file_info.rel_path).parent / f"{file_info.name}.md"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
+    file_dir = out_dir / Path(file_info.rel_path).parent / file_info.name
+    file_dir.mkdir(parents=True, exist_ok=True)
+    index_path = file_dir / "index.md"
 
     lines: list[str] = []
     lines.append(f"# {file_info.name}")
@@ -669,26 +804,83 @@ def write_file_doc(out_dir: Path, file_info: FileInfo):
             lines.extend(file_lines)
 
     members_sorted = sorted(file_info.members, key=lambda m: m.pos)
+    method_links: list[str] = []
+    const_links: list[str] = []
     for member in members_sorted:
         cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
         if not cleaned:
             continue
-        lines.append("")
         if member.kind == "method":
-            lines.append(f"## {member.name}()")
+            method_links.append(f"Method: [{member.name}()](method-{slugify(member.name)}.md)")
         else:
-            lines.append(f"## {member.name}")
-        lines.append("")
-        lines.extend(cleaned)
+            const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
 
-    out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    if method_links:
+        lines.append("")
+        lines.append("Methods:")
+        lines.extend(method_links)
+    if const_links:
+        lines.append("")
+        lines.append("Constants:")
+        lines.extend(const_links)
+
+    index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+    for member in members_sorted:
+        cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+        if not cleaned:
+            continue
+        if member.kind == "method":
+            member_path = file_dir / f"method-{slugify(member.name)}.md"
+            title = f"# {file_info.name}::{member.name}()"
+        else:
+            member_path = file_dir / f"const-{slugify(member.name)}.md"
+            title = f"# {file_info.name}::{member.name}"
+        member_content = [
+            title,
+            "",
+            f"Source: `{file_info.rel_path}`",
+            "",
+        ]
+        member_content.extend(cleaned)
+        member_path.write_text("\n".join(member_content).rstrip() + "\n", encoding="utf-8")
+
+    meta = {
+        "type": "file",
+        "name": file_info.name,
+        "source": file_info.rel_path,
+        "index": (file_dir / "index.md").as_posix(),
+        "methods": [],
+        "constants": [],
+    }
+    for member in members_sorted:
+        cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+        if not cleaned:
+            continue
+        entry = {
+            "name": member.name,
+            "file": (
+                file_dir
+                / (
+                    f"method-{slugify(member.name)}.md"
+                    if member.kind == "method"
+                    else f"const-{slugify(member.name)}.md"
+                )
+            ).as_posix(),
+        }
+        if member.kind == "method":
+            meta["methods"].append(entry)
+        else:
+            meta["constants"].append(entry)
+
+    return meta
 
 
 def build_index(out_dir: Path, items: list[tuple[str, str]]):
     index_path = out_dir / "index.md"
     lines = ["# ProcessWire API (Extracted)", "", "## Docs", ""]
     for rel_path, class_name in sorted(items, key=lambda x: x[1].lower()):
-        doc_path = (Path(rel_path).parent / f"{class_name}.md").as_posix()
+        doc_path = (Path(rel_path).parent / class_name / "index.md").as_posix()
         lines.append(f"- [{class_name}]({doc_path})")
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
@@ -706,19 +898,36 @@ def prune_skipped_docs(out_dir: Path):
                 pass
 
 
+def clean_output_dir(out_dir: Path):
+    for path in list(out_dir.rglob("*.md")):
+        path.unlink()
+    for path in sorted(out_dir.rglob("*"), reverse=True):
+        if path.is_dir():
+            try:
+                path.rmdir()
+            except OSError:
+                pass
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", required=True, help="Path to ProcessWire source root")
     parser.add_argument("--out", required=True, help="Output directory for docs")
+    parser.add_argument("--profile", choices=[PROFILE_CORE, PROFILE_FULL], default=PROFILE_FULL)
     args = parser.parse_args()
 
     source_dir = Path(args.source)
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
+    clean_output_dir(out_dir)
     prune_skipped_docs(out_dir)
 
     written: list[tuple[str, str]] = []
-    for src_path in iter_php_files(source_dir):
+    manifest: dict = {
+        "profile": args.profile,
+        "items": [],
+    }
+    for src_path in iter_php_files(source_dir, args.profile):
         rel_path = src_path.relative_to(source_dir).as_posix()
         text = src_path.read_text(encoding="utf-8", errors="replace")
         classes = find_class_ranges(text, rel_path)
@@ -735,19 +944,23 @@ def main():
                 # constants are already in member_docs
                 pass
 
-            write_doc(out_dir, rel_path, class_info, members)
+            meta = write_doc(out_dir, rel_path, class_info, members)
             written.append((rel_path, class_info.name))
+            manifest["items"].append(meta)
 
         if not classes:
             file_members = [m for m in member_docs if not any(c.start <= m.decl_pos <= c.end for c in classes)]
             file_name = Path(rel_path).stem
             file_info = FileInfo(name=file_name, rel_path=rel_path, docblock=file_docblock, members=file_members)
             if file_info.docblock or file_info.members:
-                write_file_doc(out_dir, file_info)
+                meta = write_file_doc(out_dir, file_info)
                 written.append((rel_path, file_info.name))
+                manifest["items"].append(meta)
 
     if written:
         build_index(out_dir, written)
+        manifest_path = out_dir / "_manifest.json"
+        manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,36 @@
+# Functions::wirePopulateStringTags()
+
+Source: `wire/core/Functions.php`
+
+Given a string ($str) and values ($vars), replace “{tags}” in the string with the values
+
+- The `$vars` should be an associative array of `[ 'tag' => 'value' ]`.
+- The `$vars` may also be an object, in which case values will be pulled as properties of the object.
+
+By default, tags are specified in the format: {first_name} where first_name is the name of the
+variable to pull from $vars, `{` is the opening tag character, and `}` is the closing tag char.
+
+The tag parser can also handle subfields and OR tags, if `$vars` is an object that supports that.
+For instance `{products.title}` is a subfield, and `{first_name|title|name}` is an OR tag.
+
+~~~~~
+$vars = [ 'foo' => 'FOO!', 'bar' => 'BAR!' ];
+$str = 'This is a test: {foo}, and this is another test: {bar}';
+echo wirePopulateStringTags($str, $vars);
+// outputs: This is a test: FOO!, and this is another test: BAR!
+~~~~~
+
+
+@param string $str The string to operate on (where the {tags} might be found)
+
+@param WireData|object|array $vars Object or associative array to pull replacement values from.
+
+@param array $options Array of optional changes to default behavior, including:
+	- `tagOpen` (string): The required opening tag character(s), default is '{'
+	- `tagClose` (string): The optional closing tag character(s), default is '}'
+	- `recursive` (bool): If replacement value contains tags, populate those too? (default=false)
+	- `removeNullTags` (bool): If a tag resolves to a NULL, remove it? If false, tag will remain. (default=true)
+	- `entityEncode` (bool): Entity encode the values pulled from $vars? (default=false)
+	- `entityDecode` (bool): Entity decode the values pulled from $vars? (default=false)
+
+@return string String with tags populated.

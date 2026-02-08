@@ -10,13 +10,22 @@ if [ ! -d "${SOURCE_DIR}" ]; then
   mkdir -p "${ROOT_DIR}/source"
   git clone --branch "${BRANCH}" "${REMOTE_URL}" "${SOURCE_DIR}"
 else
-  if [ ! -d "${SOURCE_DIR}/.git" ]; then
-    echo "ERROR: ${SOURCE_DIR} exists but is not a git repository" >&2
-    exit 1
+  if ! git -C "${SOURCE_DIR}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    backup_dir="${SOURCE_DIR}.backup"
+    if [ -e "${backup_dir}" ]; then
+      i=1
+      while [ -e "${backup_dir}.${i}" ]; do
+        i=$((i+1))
+      done
+      backup_dir="${backup_dir}.${i}"
+    fi
+    mv "${SOURCE_DIR}" "${backup_dir}"
+    git clone --branch "${BRANCH}" "${REMOTE_URL}" "${SOURCE_DIR}"
+  else
+    git -C "${SOURCE_DIR}" fetch origin
+    git -C "${SOURCE_DIR}" checkout "${BRANCH}"
+    git -C "${SOURCE_DIR}" pull --ff-only origin "${BRANCH}"
   fi
-  git -C "${SOURCE_DIR}" fetch origin
-  git -C "${SOURCE_DIR}" checkout "${BRANCH}"
-  git -C "${SOURCE_DIR}" pull --ff-only origin "${BRANCH}"
 fi
 
 COMMIT_SHA="$(git -C "${SOURCE_DIR}" rev-parse HEAD)"

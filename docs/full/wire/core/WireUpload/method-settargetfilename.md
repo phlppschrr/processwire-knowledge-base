@@ -1,0 +1,7 @@
+# WireUpload::setTargetFilename()
+
+Source: `wire/core/WireUpload.php`
+
+Set the target filename, only useful for single uploads
+
+@param $filename

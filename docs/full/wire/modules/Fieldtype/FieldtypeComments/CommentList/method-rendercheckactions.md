@@ -1,0 +1,17 @@
+# CommentList::renderCheckActions()
+
+Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
+
+Check for URL-based comment approval actions
+
+Note that when it finds an actionable approval code, it performs a
+redirect back to the same page after completing the action, with
+?comment_success=2 on successful action, or ?comment_success=3 on
+error.
+
+It also populates a session variable 'CommentApprovalMessage' with
+a text message of what occurred.
+
+@param array $options
+
+@return string

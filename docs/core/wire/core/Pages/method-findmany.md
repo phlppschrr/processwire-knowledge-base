@@ -1,0 +1,38 @@
+# Pages::findMany()
+
+Source: `wire/core/Pages.php`
+
+Like find(), but with “lazy loading” to support giant result sets without running out of memory.
+
+When using this method, you can retrieve tens of thousands, or hundreds of thousands of pages
+or more, without needing a pagination "limit" in your selector. Individual pages are loaded
+and unloaded in chunks as you iterate them, making it possible to iterate all pages without
+running out of memory. This is useful for performing some kind of calculation on all pages or
+other tasks like that. Note however that if you are building something from the result set
+that consumes more memory for each page iterated (like concatening a string of page titles
+or something), then you could still run out of memory there.
+
+The example below demonstrates use of this method. Note that attempting to do the same using
+the regular `$pages->find()` would run out of memory, as it's unlikely the server would have
+enough memory to store 20k pages in memory at once.
+
+~~~~~
+// Calculating a total from 20000 pages
+$totalCost = 0;
+$items = $pages->findMany("template=foo"); // 20000 pages
+foreach($items as $item) {
+  $totalCost += $item->cost;
+}
+echo "Total cost is: $totalCost";
+~~~~~
+
+
+@param string|array|Selectors $selector Selector to find pages
+
+@param array $options Options to modify behavior. See `Pages::find()` $options argument for details.
+
+@return PageArray
+
+@since 3.0.19
+
+@see Pages::find(), Pages::findOne()
