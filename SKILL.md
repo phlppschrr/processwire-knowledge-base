@@ -1,12 +1,16 @@
 ---
-name: processwire-docs-skill
-version: 0.1.0
-description: Extracted ProcessWire API documentation from core source PHPDoc.
+name: processwire-api-lookup
+version: 0.2.0
+description: Official guide for navigating and retrieving ProcessWire Core API documentation.
+usage_tips: Prefer docs/core first to reduce context size. Read only the specific files needed.
 ---
 
-# ProcessWire Docs Skill
+# ProcessWire API Lookup Logic
 
-Use the extracted documentation in `docs/` as the canonical source of truth. The text is taken verbatim from ProcessWire core PHPDoc, with `#pw-*` directives treated as metadata and `#pw-internal`/`@internal` items excluded.
+Use this skill to answer technical questions about ProcessWire classes, methods, hooks, selectors, and core functionality. The documentation is pre-extracted in `docs/`. Do not modify the extracted docs when answering.
+
+## Triggers
+Use this skill when the user asks about ProcessWire Core API, classes, methods, hooks, selectors, or core functionality (for example: how to find pages, save pages, use hooks, or build selectors).
 
 ## Entry Point
 - `docs/core/index.md` (core-only, recommended)
@@ -14,19 +18,19 @@ Use the extracted documentation in `docs/` as the canonical source of truth. The
 - `docs/guides/index.md` (official guides + cheatsheets)
 - `docs/_tasks.json` (task → relevant classes/methods)
 
-The index is organized into:
-- API Variables (from `ProcessWire` class `@property` list)
-- Core Classes
-- Functions (file-level docs without classes)
+The index is organized into API Variables, Core Classes, and Functions. Categories are configured in `categories.json` (official API structure). If an entry is not listed there, heuristic grouping is used and it falls back to `Additional`/`Other`.
 
-Index categories are configured in `categories.json` (official API structure). If an entry is not listed there, heuristic grouping is used and it falls back to `Additional`/`Other`.
+## Search Workflow
+1. Identify intent. Is it a specific class or a conceptual question?
+2. Consult index. Start with `docs/core/index.md`.
+3. Task matching. If the user asks “How do I…”, check `docs/_tasks.json` first.
+4. Drill down. Open the specific class or method file only after locating it.
+5. Guides. If the question is conceptual, consult `docs/guides/` after core API.
 
 ## Retrieval Tips
 - Prefer `docs/core` for smaller context; fall back to `docs/full` only if needed.
 - Start from `index.md`, then drill down via group files (`group-*.md`) before opening method files.
-- Each class/file has a `_manifest.json` entry in `docs/*/_manifest.json` with paths and method metadata.
-- Use `_search.json` for compact lookups and `_hookable.json` to find hookable methods fast.
-- Use `docs/_tasks.json` to jump from task intent to relevant classes/methods.
+- Use `_search.json` for compact lookups before opening full files.
 
 ## Hookable Methods
 Methods implemented with a `___` prefix are hookable. In the docs:
@@ -36,19 +40,14 @@ Methods implemented with a `___` prefix are hookable. In the docs:
 - Class index lists mark hookable methods with `(hookable)`.
 In `_manifest.json`, hookable methods include `hookable`, `name_public`, and `name_internal` fields for reliable lookup.
 
-## Official Guides (Optional Cache)
-If you need conceptual guidance beyond API docs, cache the official guides as HTML:
-- `python3 scripts/cache-docs.py`
+## JSON Helpers
+- `docs/_tasks.json`: Map user intent to relevant classes and methods. Search this first for “How do I…” questions.
+- `docs/_hookable.json`: Look here when the user wants to customize behavior via hooks.
+- `docs/*/_search.json`: Compact lookup for classes, methods, and summaries.
+- `docs/*/_manifest.json`: Full metadata and paths for each class/file.
 
-Cached HTML lives under `cache/docs-html/` with an `_index.json` manifest. Use these sources to summarize key concepts like templates, selectors, hooks, modules, security, and multi-language setup.
-
-To build the extracted guides (summaries + cheatsheets):
-- `python3 src/build_guides.py`
-
-## Update
-Run:
-- `scripts/update-docs.sh`
-
-This will sync the ProcessWire source (DEV branch) into `source/processwire` and rebuild:
-- `docs/core/` (core-only)
-- `docs/full/` (full)
+## Maintenance (For Developers Only)
+Only run these when explicitly asked to update documentation.
+- `scripts/update-docs.sh` to sync ProcessWire source and rebuild `docs/core` and `docs/full`.
+- `python3 scripts/cache-docs.py` to refresh the local HTML cache for guides.
+- `python3 src/build_guides.py` to rebuild `docs/guides/` from cached HTML.
