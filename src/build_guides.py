@@ -11,7 +11,11 @@ from pathlib import Path
 from urllib.parse import urlparse
 from html.parser import HTMLParser
 
-from bs4 import BeautifulSoup, Tag, NavigableString
+try:
+    from bs4 import BeautifulSoup, Tag, NavigableString
+except ImportError:
+    import sys
+    sys.exit("Error: 'bs4' module not found.\nPlease run './scripts/update-docs.sh' to set up the environment, or verify you have activated the virtual environment (source .venv/bin/activate).")
 
 IGNORE_TAGS = {"script", "style", "noscript"}
 SUPPRESS_TOKENS = {
