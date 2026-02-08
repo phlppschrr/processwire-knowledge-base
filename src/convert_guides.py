@@ -235,11 +235,21 @@ def url_to_cache_path(url):
         path = f"{path}__{safe_query}"
     return f"{host}{path}"
 
-def url_to_out_path(url):
+def url_to_out_path(url, all_paths):
     parsed = urlparse(url)
-    path = parsed.path.strip("/") or "docs"
-    if path.endswith("/"): path = path[:-1]
-    return Path(f"{path}.md")
+    # Normalize current absolute path for comparison (ensure trailing slash)
+    current_abs_path = parsed.path.rstrip('/') + '/'
+    
+    # Check if this URL is a parent of any other URL
+    is_parent = any(p != current_abs_path and p.startswith(current_abs_path) for p in all_paths)
+    
+    # Construct relative path for output
+    rel_path = parsed.path.strip("/") or "docs"
+    
+    if is_parent:
+        return Path(f"{rel_path}/index.md")
+    else:
+        return Path(f"{rel_path}.md")
 
 def load_url_groups(path: Path):
     groups = []
@@ -261,8 +271,15 @@ def convert_guides(cache, urls, out):
     cache_root, urls_path, out_dir = Path(cache), Path(urls), Path(out)
     groups = load_url_groups(urls_path)
     
-    for category, urls in groups:
-        for url in urls:
+    # Collect all paths for parent detection
+    all_paths = set()
+    for _, group_urls in groups:
+        for url in group_urls:
+            path = urlparse(url).path.rstrip('/') + '/'
+            all_paths.add(path)
+    
+    for category, group_urls in groups:
+        for url in group_urls:
             print(f"Converting {url}...")
             html_path = cache_root / url_to_cache_path(url)
             if not html_path.exists(): continue
@@ -299,7 +316,7 @@ def convert_guides(cache, urls, out):
                 md = converter.get_markdown()
                 
                 # Output
-                final_out = out_dir / url_to_out_path(url)
+                final_out = out_dir / url_to_out_path(url, all_paths)
                 final_out.parent.mkdir(parents=True, exist_ok=True)
                 with open(final_out, 'w', encoding='utf-8') as f:
                     f.write(f"# {title}\n\nSource: {url}\n\n{md}\n")
