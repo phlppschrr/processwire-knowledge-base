@@ -1,9 +1,10 @@
-# Unknown
+# ProcessWire security: securing your admin control panel
 
 Source: https://processwire.com/docs/security/admin/
 
-Information about the design and purpose of the admin environment and how to protect it. Overview of securing your admin, preventing attacks, SSL certificates, tracking logins, enabling 2FA, managing page edit access and other security best practices.
+# Securing your admin 
 
+Information about the design and purpose of the admin environment and how to protect it. Overview of securing your admin, preventing attacks, SSL certificates, tracking logins, enabling 2FA, managing page edit access and other security best practices.
 - [About the admin environment](#about-the-admin-environment)
 - [Who the admin is for and who it is not](#who-the-admin-is-for-and-who-it-is-not)
 - [Hiding your admin URL](#hiding-your-admin-url)
@@ -16,8 +17,7 @@ Information about the design and purpose of the admin environment and how to pro
 - [Managing the security of page edit access in the admin](#managing-the-security-of-page-edit-access-in-the-admin)
 
 ---
-
-[#](#)
+[](#)
 
 ### About the admin environment
 
@@ -27,9 +27,7 @@ ProcessWire completely isolates the front-end from the admin environment with no
 
 Using an isolated admin also promotes greater long term content portability for the site, as content administrators remain focused on long term semantics over short term style. This ensures that when the front-end is redesigned, the underlying content remains semantic enough to work within any design.
 
-To reinforce ProcessWire as a trusted-user only environment, a user must have (at minimum) page-edit permission in one of their assigned roles (whether assigned to any templates or not). Otherwise the user will not be able to use the admin environment. The intention here is to prevent developers from utilizing the admin as a front-end environment, ensuring the integrity of the separation between isolated admin and front-end is maintained.
-
-[#](#)
+To reinforce ProcessWire as a trusted-user only environment, a user must have (at minimum) page-edit permission in one of their assigned roles (whether assigned to any templates or not). Otherwise the user will not be able to use the admin environment. The intention here is to prevent developers from utilizing the admin as a front-end environment, ensuring the integrity of the separation between isolated admin and front-end is maintained.[](#)
 
 ### Who the admin is for and who it is not
 
@@ -39,20 +37,17 @@ Trusted users are individuals that you trust with the content and operation of y
 
 Superusers and other users with the ability to edit and/or publish site content should be trusted in the same way you would trust someone to compose an email for you, and in the same way you would trust someone with ftp access to the site. While the access is certainly not the same (no they can't compose your email and they don't have ftp access), the level of trust should be the same. If it is not, then you should maintain a workflow and approval process between the source of the content and the trusted user that posts the content.
 
-With an understanding of the power and scope of the admin environment, you'll want to protect it in several ways, which we'll discuss below.
-
-[#](#)
+With an understanding of the power and scope of the admin environment, you'll want to protect it in several ways, which we'll discuss below.[](#)
 
 ### Hiding your admin URL
 
 The default ProcessWire admin URL is domain.com/processwire/. If you want to hide the location of your admin URL, you can rename it. You have the option of doing this during the installation process. You can also do it from the ProcessWire admin. Here's how:
-
 1. Login to your ProcessWire admin. In the page tree, click and edit the *Admin* page.
 2. Click the *Settings* tab and change the *Name* field to something different. After changing it, save.
 3. You will get a 404 error–this is normal, because your admin no longer lives at the previous URL.
 4. In your browser address bar, enter your new admin URL and you are good to go.
 
-[#](#)
+[](#)
 
 ### Preventing dictionary attacks
 
@@ -60,9 +55,7 @@ You'll be glad to know that your ProcessWire admin login is secured automaticall
 
 You can further lock down the settings of this module by configuring it (in Modules > Core > Session > Login Throttle). If your admin doesn't have simultaneous users coming from the same shared IP address, we recommend checking the box to enable throttling by IP address. When checked, not only will attempts for the same username be throttled, but any attempts (regardless of username) will be throttled by IP address as well.
 
-The only reason that we don't have this "throttle by IP" box checked by default is because some clients have multiple users coming from the same IP address. In that instance, one person forgetting their password could temporarily prevent other people from logging in.
-
-[#](#)
+The only reason that we don't have this "throttle by IP" box checked by default is because some clients have multiple users coming from the same IP address. In that instance, one person forgetting their password could temporarily prevent other people from logging in.[](#)
 
 ### Install an SSL certificate and require https for your admin
 
@@ -71,21 +64,18 @@ Web traffic is inherently insecure and everything sent to and from the server is
 Once you've got an SSL certificate installed on your server, you need to make sure that it is put to use. At minimum, we recommend locking down your "admin" template to only allow https traffic. However, make sure that your site is accessible via https://yourdomain.com before you do this, otherwise you could lock yourself out of the admin.
 
 Once confirmed that your site is accessible via https, login to your admin (using the https URL), and do the following:
-
 1. Click "Setup" then "Templates" (click the Templates label rather than a specific template).
 2. Click the "Filters" box, then "Show system templates", and choose "Yes".
 3. When the page reloads, you'll have a "System" section where you will see an "admin" template. Click "admin".
 4. Click the "URLs" tab and scroll to the "Scheme/Protocol" section. Click "HTTPS only" and Save.
 
-[#](#)
+[](#)
 
 ### Keep track of logins
 
 A good security practice is to keep track of who is using the ProcessWire admin. It can be helpful to keep track of both successful and failed logins, and may serve as an early warning when someone is snooping around. You can access the built-in session log via Setup > Logs > session.
 
-If you'd like more information or options than what the default session log includes, take a look at the [Login Notifier](http://modules.processwire.com/modules/login-notifier/) module by Ryan Cramer or the [Login History module](http://modules.processwire.com/modules/process-login-history/) by Teppo Koivula.
-
-[#](#)
+If you'd like more information or options than what the default session log includes, take a look at the [Login Notifier](http://modules.processwire.com/modules/login-notifier/) module by Ryan Cramer or the [Login History module](http://modules.processwire.com/modules/process-login-history/) by Teppo Koivula.[](#)
 
 ### Don't install the “forgot password” module unless you need it
 
@@ -93,15 +83,11 @@ ProcessWire comes with a module called *Process Forgot Password*, which can be i
 
 While we've gone to great efforts to ensure our forgot password module is secure (and in fact, more secure than any other we've seen), it still involves emailing the user a time-limited link to reset their password. As you may already know, email is not the safest way to transport confidential information, so limiting what can happen with email [when you can] is worthwhile.
 
-It's worth noting that ProcessWire's forgot password function only works if the session that requested the reset is the same session that clicks the email link and performs the reset. That provides an additional layer of security over other password reset functions that we've seen. But if your email account is compromised, then all bets are off: your ProcessWire password then has the potential to be compromised as well. So if your site doesn't absolutely need a forgot password function, then don't install it.
-
-[#](#)
+It's worth noting that ProcessWire's forgot password function only works if the session that requested the reset is the same session that clicks the email link and performs the reset. That provides an additional layer of security over other password reset functions that we've seen. But if your email account is compromised, then all bets are off: your ProcessWire password then has the potential to be compromised as well. So if your site doesn't absolutely need a forgot password function, then don't install it.[](#)
 
 ### Choose strong passwords
 
-This goes without saying, but regardless of how well your admin URL is hidden, you should make sure you (and any other ProcessWire user accounts) have good passwords that aren't used elsewhere. You can enforce password strength settings from the "pass" field settings, editable in the admin from Fields > Show System Fields > Edit ("pass" field).
-
-[#](#)
+This goes without saying, but regardless of how well your admin URL is hidden, you should make sure you (and any other ProcessWire user accounts) have good passwords that aren't used elsewhere. You can enforce password strength settings from the "pass" field settings, editable in the admin from Fields > Show System Fields > Edit ("pass" field).[](#)
 
 ### Install 2-factor (or multi-factor) authentication
 
@@ -109,9 +95,7 @@ ProcessWire supports 2-factor authentication (2FA/TFA/MFA) natively and can be u
 
 To start using it, you'll want to install the 1st party [TfaTotp](http://modules.processwire.com/modules/tfa-totp/) module. You may also want to install the [TfaEmail](https://modules.processwire.com/modules/tfa-email/) module as a 2nd option, which may not be as secure as TOTP, but can be an easier path for some users, and enables you to enforce 2-factor authentication automatically. Other Tfa module options may also be available in the modules directory [Tfa page](https://modules.processwire.com/categories/tfa/). Once one or more Tfa modules are installed, you can enable them to be used in admin by configuring the ProcessLogin module settings (Modules > Configure > ProcessLogin).
 
-[See this page for more details on two-factor authentication in ProcessWire](/docs/security/two-factor-authentication/)
-
-[#](#)
+[See this page for more details on two-factor authentication in ProcessWire](/docs/security/two-factor-authentication/)[](#)
 
 ### Managing the security of page edit access in the admin
 
@@ -130,7 +114,6 @@ After taking the standard template-level access control into account, consider t
 
 **Balancing complexity**
 Be careful not to over-complicate your access control settings beyond your security needs. ProcessWire will let you create very powerful and complex access control scenarios in your admin, but that doesn't mean that you should. Increasing complexity can also reduce security, as the who/what/where of access control becomes more difficult to keep track of. For this reason, only introduce fine granular access control settings (such as field-level access control) into your installation in cases where you need it, and where it adds additional clarity or simplicity to the overall access control setup. Find the right balance that maximizes security while limiting complexity.
-
 - [Security](/docs/security/)
 - [Securing file permissions](/docs/security/file-permissions/)
 - [Securing your admin](/docs/security/admin/)
@@ -156,4 +139,5 @@ Be careful not to over-complicate your access control settings beyond your secur
 - [Multi-language](/docs/multi-language-support/)
 - [More topics](/docs/more/)
 
-[Securing file permissions](/docs/security/file-permissions/)[Web hosting security](/docs/security/web-hosting/)
+[Securing file permissions](/docs/security/file-permissions/)
+[Web hosting security](/docs/security/web-hosting/)

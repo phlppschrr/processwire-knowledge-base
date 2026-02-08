@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire intro tutorial “Hello Worlds”
 
 Source: https://processwire.com/docs/tutorials/hello-worlds/
+
+# “Hello Worlds”, a beginning ProcessWire tutorial 
 
 In this tutorial you will learn how to create and work with templates, fields, pages, and how to output dynamic data via your templates. 
 
@@ -45,7 +47,6 @@ The above is just a plain HTML file with nothing specific to ProcessWire. We wil
 ### Step 3 – Creating a page using your template
 
 Your planet template is now in the system and ready to use, but it's not being used by any pages. So lets create a page that uses the planet template.
-
 - In the ProcessWire admin, click Pages in the top navigation. This is a site map of your page structure. We want to create a new page under the homepage, so click the new link that appears to the right of the home page.
 - The next screen has 3 inputs: title, name and template. Enter "Earth" for the title, and the name should populate automatically. For the template, select planet. Then click Save.
 - Now you have created a new page using the template that you added. You are now in the page edit screen and you should see your title field populated with "Earth". Click the View link that appears on this page edit screen. You should see the output of the HTML from step 1. Click the back button in your browser to return to the edit screen.
@@ -59,7 +60,6 @@ Your planet template is now in the system and ready to use, but it's not being u
 Now you know how to create a template and a page using that template. You could create more pages using the same template if you wanted to. But that wouldn't be particularly useful – this template file is just a static HTML file.
 
 Lets make it dynamic by creating some fields and adding them to it. We are going to create 3 fields to represent the pieces of data that currently appear in our static template. These include the planet's type, age in years, and a brief summary. We will call these fields: `planet_type`, `planet_age` and `planet_summary`.
-
 - In ProcessWire admin, click Setup > Fields. This screen shows a list of fields currently in the system, most of which are general purpose fields for the basic profile. For the purposes of this tutorial, we are going to ignore those and create our own.
 - Click the *Add New Field* button. On the next screen, enter `planet_type` for the Name, select "Text" as the Type, and enter "Planet Type" for the Label. Then click the *Save Field* button. Now that your field is saved, you are on the Field Edit screen. At this point, your field is created and ready to be added to your planet template.
 - *Optional but recommended:* While editing your field, click the details tab where you'll see a select box for Text Formatters. Select "HTML Entity Encoder" – this ensures that characters like `<`, `>` and `&` will be converted to HTML entities and not confused as HTML tags. While not required, it's a good practice for text fields like this. After you've done that, click the *Save Field* button.
@@ -67,7 +67,6 @@ Lets make it dynamic by creating some fields and adding them to it. We are going
 ### Step 5 – Creating more new fields
 
 In step 4 we created the planet_type field. Now we want to create the `planet_age` and `planet_summary` fields. So in this step, you'll want to do the same thing for the remaining two fields:
-
 - Create the `planet_age` field exactly like you created the planet_type field, but enter "Planet age in years" for the label.
 - Create the `planet_summary` field exactly like you created the `planet_type` field, but chose "Textarea" as the Type and enter "Planet summary" for the label.
 
@@ -76,14 +75,12 @@ In step 4 we created the planet_type field. Now we want to create the `planet_ag
 ### Step 6 – Adding new fields to your template
 
 Now that you've created 3 new fields, you need to add them to your planet template.
-
 - In ProcessWire admin, click Setup > Templates > planet. You are now editing your planet template.
 - In the Fields select box, choose `planet_type`, then `planet_age`, then `planet_summary`. You will see each added to the list. Cick the *Save Template* button.
 
 ### Step 7 – Editing a page using your template
 
 Now that you have new fields added to your template, go back and edit the Earth page you created earlier and populate the new fields that are on it.
-
 - In ProcessWire admin, click Pages at the top, then click the Earth page, and click the edit button that appears to the right of it.
 - You are now editing the Earth page you created earlier. You should see the new fields you added, waiting for text.
 - Enter "Terrestrial planet" for Planet Type
@@ -109,7 +106,7 @@ Edit /site/templates/planet.php and replace the static text in there with tags l
 If supported by your server, you may also use this shorter format which some people find easier to look at and faster to enter:
 
 ```
-<?=$page->field_name?>
+
 ```
 
 Here is the /site/templates/planet.php file updated to output the content of the page using tags like the above:
@@ -117,17 +114,7 @@ Here is the /site/templates/planet.php file updated to output the content of the
 ```
 <html>
   <head>
-    <title><?php echo $page->title; ?></title>
-  </head>
-  <body>
-    <h1><?php echo $page->title; ?></h1>
-    <h2>
-        Type: <?php echo $page->planet_type; ?>,
-        Age: <?php echo $page->planet_age; ?> years
-    </h2>
-    <p><?php echo $page->planet_summary; ?></p>
-  </body>
-</html>
+    <title>
 ```
 
 After making these changes, save your planet.php template file. Now view your Earth page again. You should see it properly outputting all of the content you entered on the page, including "Terrestrial planet" for Type and "4.54 billion years" for age. Any changes you make from this point forward should be reflected in the output.
@@ -139,7 +126,6 @@ After making these changes, save your planet.php template file. Now view your Ea
 ### Step 9 – Creating more pages, reusing your template
 
 For this last step, we'll create another page (for Jupiter) using the same template just to demonstrate how a template may be reused.
-
 - In ProcessWire Admin, click Pages and then click the new link to the right of the home page.
 - Enter "Jupiter" as the Title and select "planet" for the Template. Click Save.
 - Now that you are editing the Jupiter page, enter "Gas giant" for Type, enter "4.5 billion" for Age in Years, and copy+paste the following for Planet Summary:
@@ -153,7 +139,6 @@ For this last step, we'll create another page (for Jupiter) using the same templ
 ## Conclusion
 
 In this tutorial, we covered the basics of how to develop in ProcessWire, including the following:
-
 - Creating templates and their associated template files
 - Creating basic text fields and adding them to templates
 - Creating and editing pages that use your templates

@@ -1,6 +1,8 @@
-# Unknown
+# CMS Repeater fields (aka Matrix fields) using FieldtypeRepeater in ProcessWire
 
 Source: https://processwire.com/docs/fields/repeaters/
+
+# Repeatable Fields / Matrix Fields 
 
 The repeater fieldtype enables you to create a group of fields and make it repeatable in any quantity on your page. This opens many new possibilities with how you might manage and structure data. 
 
@@ -29,7 +31,6 @@ You also don't want to use repeaters for items of content that you want to have 
 The repeaters fieldtype is not installed by default. To install, login to your ProcessWire admin and click to *Modules*. Locate the *Fieldtype* section and click the *Install* button for the *Repeater* fieldtype.
 
 Next create the individual fields that will live in your repeater. Create these fields like you would any other, from Setup > Fields > Add New Field. Lets say that I wanted to create fields to hold data for skyscrapers. I might plan to re-use the built-in *title* field for my building name, and then create these 3 new fields:
-
 - feet_high
 - num_floors
 - year_built
@@ -135,7 +136,6 @@ foreach($page->buildings as $building) {
 ### See also
 
 [Repeater Matrix](/store/pro-fields/repeater-matrix/)
-
 - [Fields, types, input](/docs/fields/)
 - [Introduction to fields](/docs/start/structure/fields/)
 - [Field dependencies](/docs/fields/dependencies/)

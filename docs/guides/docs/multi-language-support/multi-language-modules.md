@@ -1,6 +1,8 @@
-# Unknown
+# Add multi-language translations to your module
 
 Source: https://processwire.com/docs/multi-language-support/multi-language-modules/
+
+# Add multi-language translations to your module 
 
 To add multi-language translations to your module, you can export a CSV file of translations, give them names that reflect the language and copy them to /languages/ directory in your module’s files. We'll cover the details in 4 steps below.
 

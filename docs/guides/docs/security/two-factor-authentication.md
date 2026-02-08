@@ -1,11 +1,12 @@
-# Unknown
+# 2-factor authentication
 
 Source: https://processwire.com/docs/security/two-factor-authentication/
+
+# Two-factor (or multi-factor) authentication 
 
 Two-factor (or multi-factor) authentication gives you an extra layer of account security relative to just using a password. ProcessWire versions 3.0.109 and newer include core support for two-factor authentication.
 
 The ProcessWire core provides the API, interface and flow control for the two-factor authentication process. But the actual implementation is handled by modules that extend the `Tfa` base module class. In this section we'll cover details on two different modules for implementation of two-factor authentication. To begin using two-factor authentication, you'll want to install one of these modules:
-
 - [TfaTotp](/docs/security/two-factor-authentication/totp/) for TOTP 2-factor authentication (time-based one time protocol)
 - [TfaEmail](/docs/security/two-factor-authentication/email/) for Email/SMS 2-factor authentication
 
@@ -32,9 +33,22 @@ You'll have about 90 seconds to get it right, as it'll accept the current, previ
 ---
 
 To begin using two-factor authentication in ProcessWire, install one of the “Tfa” modules:
+- 
+[
 
-- #### [TOTP 2-factor authentication (TfaTotp)](/docs/security/two-factor-authentication/totp/)TOTP standards for “Time-based One-Time Password”, which is an algorithm that computes a one-time password. It does this with a…Learn more →
-- #### [Email/SMS 2-factor authentication (TfaEmail)](/docs/security/two-factor-authentication/email/)This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…Learn more →
+#### TOTP 2-factor authentication (TfaTotp)
+
+](/docs/security/two-factor-authentication/totp/)
+TOTP standards for “Time-based One-Time Password”, which is an algorithm that computes a one-time password. It does this with a…
+Learn more →
+- 
+[
+
+#### Email/SMS 2-factor authentication (TfaEmail)
+
+](/docs/security/two-factor-authentication/email/)
+This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…
+Learn more →
 
 - [2-factor authentication](/docs/security/two-factor-authentication/)
 - [TOTP 2-factor authentication (TfaTotp)](/docs/security/two-factor-authentication/totp/)

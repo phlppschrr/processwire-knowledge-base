@@ -1,13 +1,14 @@
-# Unknown
+# API access
 
 Source: https://processwire.com/docs/start/api-access/
+
+# Various ways of accessing the ProcessWire API 
 
 In ProcessWire there are several ways that you can access the API and we take a look at the most common ones here. Regardless of what method you use, you are technically accessing what are called API variables.
 
 Each API variable has a unique name to distinguish it from others. For instance, the “pages” (plural) API variable provides access to loading and saving pages, the “page” (singular) API variable provides access to the page being viewed, the “input” API variable provides access to user input, and so on. See the [API reference](/api/ref/) for a full list of ProcessWire’s core API variables.
 
 There are several different ways to access these API variables. For instance, all of the following accesses to the $page API variable are synonyms of each other, though with different benefits depending on the context:
-
 - `$page` when $page in scope
 - `page()` when using functions API
 - `wire('page')` works anywhere
@@ -129,7 +130,6 @@ This is a fairly minor point, but beyond just providing access to ProcessWire’
 ### Potential drawbacks of the functions API
 
 The functions API provides a nice convenience for accessing API variables, but there are also a few considerations to be aware of when using the functions API:
-
 - The functions API is specifically built as a convenience for front-end website or application development. While it can be used anywhere, it is not intended for modules and back-end processes/hooks.
 - For API variables with properties (like $page and $user) It’s simpler to dereference variables in double quoted strings than it is functions.
 - If booting multiple independent ProcessWire instances on the front-end, you have to pay attention what instance is the current instance.

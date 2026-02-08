@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire security: database driven sessions
 
 Source: https://processwire.com/docs/security/sessions/
+
+# Database-driven sessions 
 
 Database-driven sessions offer potentially better security since the session information is not stored on the file system.
 
@@ -9,7 +11,6 @@ ProcessWire comes with the option to use database-driven sessions, but it is not
 To enable database-driven sessions, login to your admin and go to Modules > Core > Session > Session Handler Database. Click the Install button. Database-driven sessions will be enabled immediately, which means you are immediately logged out. Simply log back in, and your system is now using database-driven sessions.
 
 As a bonus, you can now monitor live traffic on your site from Setup > Sessions. If you want the information present on this screen to include IP address and/or user agent, enable these options from the Session Handler Database module configuration screen.
-
 - [Security](/docs/security/)
 - [Securing file permissions](/docs/security/file-permissions/)
 - [Securing your admin](/docs/security/admin/)
@@ -35,4 +36,5 @@ As a bonus, you can now monitor live traffic on your site from Setup > Sessions.
 - [Multi-language](/docs/multi-language-support/)
 - [More topics](/docs/more/)
 
-[Remove unnecessary files](/docs/security/remove-unnecessary-files/)[Running ProcessWire alongside other software](/docs/security/other-software/)
+[Remove unnecessary files](/docs/security/remove-unnecessary-files/)
+[Running ProcessWire alongside other software](/docs/security/other-software/)

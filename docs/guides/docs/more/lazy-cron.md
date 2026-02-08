@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire CRON module (LazyCron)
 
 Source: https://processwire.com/docs/more/lazy-cron/
+
+# Lazy Cron 
 
 This core module provides hooks that are automatically executed at various intervals.
 
@@ -13,7 +15,6 @@ This is a core module included with ProcessWire 2.1+. Go to Admin > Modules and 
 ### Hookable time intervals
 
 These are the function names you can hook from LazyCron. The function names describe the time intervals they provide. If you think I'm missing any important time intervals, please let us know and we can add more.
-
 - every30Seconds
 - everyMinute
 - every2Minutes
@@ -94,7 +95,6 @@ In most cases, the way that LazyCron works out of the box is just fine. But if y
 `wget --quiet --no-cache -O - http://www.your-site.com > /dev/null`
 
 That command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.
-
 - [More topics](/docs/more/)
 - [Multi-site support](/docs/more/multi-site-support/)
 - [Coding style guide](/docs/more/coding-style-guide/)

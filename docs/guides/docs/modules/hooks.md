@@ -1,9 +1,10 @@
-# Unknown
+# ProcessWire Hooks
 
 Source: https://processwire.com/docs/modules/hooks/
 
-ProcessWire contains many methods that you may easily hook in order to modify the behavior of the method. Hooks can also be used to add new methods to existing classes.
+# Using hooks in ProcessWire 
 
+ProcessWire contains many methods that you may easily hook in order to modify the behavior of the method. Hooks can also be used to add new methods to existing classes.
 - [About hooks](#about-hooks)
   - [What are the different types of hooks in ProcessWire?](#what-are-the-different-types-of-hooks-in-processwire)
   - [What methods in ProcessWire are hookable?](#what-methods-in-processwire-are-hookable)
@@ -33,42 +34,36 @@ ProcessWire contains many methods that you may easily hook in order to modify th
   - [Removing hooks](#removing-hooks)
 
 ---
-
-[#](#)
+[](#)
 
 ## About hooks
 
-[#](#)
+[](#)
 
 ### What are the different types of hooks in ProcessWire?
 
 - 
 
 **Before hooks:** A hook that runs before the hooked method. These hooks typically analyze and/or modify the arguments passed to the hooked method.
-
 - 
 
 **After hooks:** A hook that runs after the hooked method. These hooks typically analyze and/or modify the return value of the method.
-
 - 
 
 **Replace hooks:** A hook that entirely replaces the hooked method. This is a type of Before hook that signals to ProcessWire that it wants to replace the hooked method.
-
 - 
 
 **Method hooks:** A hook that adds a new method to a class. The new method becomes accessible via `$object->method()`.
-
 - 
 
 **Property hooks:** A hook that adds a new property/variable to a class. The new property becomes accessible via `$object->property`. Not all ProcessWire classes support property hooks.
-
 - **URL/path hooks:** A special type of hook that enables the ability to hook into ProcessWire's request URL routing to add your own custom handlers.
 
-[#](#)
+[](#)
 
 ### What methods in ProcessWire are hookable?
 
-Any method that begins with 3 underscores, i.e. `___method()`, is hookable in ProcessWire.* There are hundreds of them. The ProcessWire [API reference](/api/ref/) outlines the hookable methods for every class and API variable in ProcessWire. Note the icon in the right column of each method list table which identifies hookable methods ([example](/docs/start/variables/pages/#pwapi-methods-hooker)). If you click on the details of any hookable method ([example](/api/ref/pages/saved/)), it also provides introduction of how to hook both before and after that method ([example](/api/ref/pages/saved/#pwapi-hooking)).
+Any method that begins with 3 underscores, i.e. `___method()`, is hookable in ProcessWire.* There are hundreds of them. The ProcessWire [API reference](/api/ref/) outlines the hookable methods for every class and API variable in ProcessWire. Note the icon  in the right column of each method list table which identifies hookable methods ([example](/docs/start/variables/pages/#pwapi-methods-hooker)). If you click on the details of any hookable method ([example](/api/ref/pages/saved/)), it also provides introduction of how to hook both before and after that method ([example](/api/ref/pages/saved/#pwapi-hooking)).
 
 New methods added to a class via a hook are themselves hookable too. For example, `Page::render()`, `Page::viewable()` and `Page::editable()` are all methods added to the [Page](/api/ref/page/) class via method hooks. If you view the /wire/core/Page.php class, you'll see that none of these methods actually exist in the class. However, you can hook before or after any of them just as easily as if they were defined in the class.
 
@@ -77,12 +72,11 @@ If you can't find a hook that you need (or just aren't sure) post a question in 
 *Note that the 3 leading underscores for hookable methods only appears in ProcessWire's source code—hookable methods are not identified this way in the online API reference. That's because you should not call a hookable method with the 3 underscores directly, unless you want to intentionally bypass any hooks attached to it.
 
 ---
-
-[#](#)
+[](#)
 
 ## Defining Hooks
 
-[#](#)
+[](#)
 
 ### Do I want my hook to run before or after the method I am hooking? (Or, does it matter?)
 
@@ -118,7 +112,7 @@ $wire->addHook('Class::method', function(HookEvent $e) {
 }, [ 'before' => true, 'after' => true ]);
 ```
 
-[#](#)
+[](#)
 
 ### Do I want my hook to apply to all instances of a class, or just one?
 
@@ -164,7 +158,7 @@ $this->addHookAfter('Pages::saveReady', function($event) { ... });
 $pages->addHookAfter('saveReady', function($event) { ... }); // equivalent
 ```
 
-[#](#)
+[](#)
 
 ### Where should I define my hook?
 
@@ -184,9 +178,7 @@ A common and excellent place for attaching site-specific hooks is from the /site
 
 If you are defining hooks via your template file(s), you will most likely want to place such definitions near the top of the file, or in a common header include file used by all of your template files. An easy way to do this is to define `$config->prependTemplateFile` in your /site/config.php file. Whatever file you define there will be automatically included before all of your site template files (except for the one used by the admin). Many of ProcessWire's site profile already have this defined as `_init.php`. Regardless of what it is named, this is the file where you would want to place your hooks.
 
-The `$config->prependTemplateFile` is not used by the ProcessWire admin, so if you are defining hooks specific to the ProcessWire admin, you should define them at the very top of the /site/templates/admin.php. If your hooks are applicable to both your site (front-end) and the ProcessWire admin, then you should manually include your site's initialization fie, i.e. `include("./_init.php");` from your /site/templates/admin.php file.
-
-[#](#)
+The `$config->prependTemplateFile` is not used by the ProcessWire admin, so if you are defining hooks specific to the ProcessWire admin, you should define them at the very top of the /site/templates/admin.php. If your hooks are applicable to both your site (front-end) and the ProcessWire admin, then you should manually include your site's initialization fie, i.e. `include("./_init.php");` from your /site/templates/admin.php file.[](#)
 
 ### How can my hook read (or modify) the arguments sent to the hooked method?
 
@@ -212,7 +204,7 @@ $event->arguments(0, $myValue);
 $event->arguments('argument_name', $myValue);
 ```
 
-[#](#)
+[](#)
 
 ### How can my hook read (or modify) the return value of the hooked method?
 
@@ -228,7 +220,7 @@ public function hookAfterPageRender($event) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### How can my hook know what object/instance the hook was called on?
 
@@ -243,7 +235,7 @@ public function hookAfterPageRender($event) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### How can my hook replace another method entirely?
 
@@ -260,7 +252,7 @@ public function hookBeforePageRender($event) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### How can I define my own hookable methods?
 
@@ -282,9 +274,7 @@ Calls to a hookable method should always be without the 3 underscores, i.e.
 $this->hookableMethod('a', 'b');
 ```
 
-If for some reason you need to bypass ProcessWire's hook system for a given method, you can include the 3 underscores in the method call and no hooks will be executed.
-
-[#](#)
+If for some reason you need to bypass ProcessWire's hook system for a given method, you can include the 3 underscores in the method call and no hooks will be executed.[](#)
 
 ### How can I add a new method via a hook?
 
@@ -329,7 +319,7 @@ echo $page->lastModified(false); // returns "2013-05-15 10:15:12"
 echo $page->lastModified(); // returns "2013-05-15 10:15:12"
 ```
 
-[#](#)
+[](#)
 
 ### How can I add a new property via a hook?
 
@@ -372,7 +362,7 @@ foreach($page->children as $child) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### Shorter hook syntax
 
@@ -391,8 +381,7 @@ wire()->addHookAfter('Class::method', function($event) { // outside a class
 *Note: since the anonymous function usage is now common, we use examples of both throughout this documentation page. If for some reason you are using a really old very of ProcessWire (prior to 2.4) you'll want to stick with the non-anonymous function version. *
 
 ---
-
-[#](#)
+[](#)
 
 ## URL/path hooks
 
@@ -417,14 +406,11 @@ $wire->addHook('/contact/', function($event) {
 **Please see the dedicated [URL/path hooks page](/blog/posts/pw-3.0.173/#introducing-url-path-hooks) for full details, documentation and examples.**
 
 ---
-
-[#](#)
+[](#)
 
 ## Conditional hooks
 
-Conditional hooks imply the ability to specify conditions along with the hook definition. These conditions determine at runtime whether or not your hook function will execute.
-
-[#](#)
+Conditional hooks imply the ability to specify conditions along with the hook definition. These conditions determine at runtime whether or not your hook function will execute.[](#)
 
 ### Defining conditional hooks
 
@@ -493,9 +479,7 @@ $wire->addHookAfter("Page(template=order)::changed(order_status)",
   });
 ```
 
-The selectors that you see above like `Page(template=order)` are just examples. The `Page` part could be any ProcessWire class name—our example here is just matching instances of Page objects. The `template=order` can be any selector and use [any operator](/docs/selectors/#operators) supported by our in-memory selectors. For instance, if we wanted to instead match all Page objects using a template having a name that *started with* the word "order" then we would use `Page(template^=order)` since the `^=` operator is the "starts with" operator. Such a selector would match Page objects having templates with names like "orderinfo", "order_product", "order-details", etc. For more about about selectors and operators see [ProcessWire selectors](/docs/selectors/).
-
-[#](#)
+The selectors that you see above like `Page(template=order)` are just examples. The `Page` part could be any ProcessWire class name—our example here is just matching instances of Page objects. The `template=order` can be any selector and use [any operator](/docs/selectors/#operators) supported by our in-memory selectors. For instance, if we wanted to instead match all Page objects using a template having a name that *started with* the word "order" then we would use `Page(template^=order)` since the `^=` operator is the "starts with" operator. Such a selector would match Page objects having templates with names like "orderinfo", "order_product", "order-details", etc. For more about about selectors and operators see [ProcessWire selectors](/docs/selectors/).[](#)
 
 ### Conditional hooks matching argument type
 
@@ -517,9 +501,7 @@ $wire->addHook('Pages::saveReady(<User|Role|Permission>)', function($event) {
 });
 ```
 
-When using `<Name>` where `Name` is a class or interface name (i.e. <Page>) please note that it is checking that the argument value is an instance of the given class name. Meaning that `<Page>` will also match objects of type `User` since the User class extends the Page class. The same would be true of Role, Permission, and Language objects, since they all extend Page. The point here is that it is performing an [instanceof](https://www.php.net/manual/en/language.operators.type.php) comparison, not a class name comparison.
-
-[#](#)
+When using `<Name>` where `Name` is a class or interface name (i.e. <Page>) please note that it is checking that the argument value is an instance of the given class name. Meaning that `<Page>` will also match objects of type `User` since the User class extends the Page class. The same would be true of Role, Permission, and Language objects, since they all extend Page. The point here is that it is performing an [instanceof](https://www.php.net/manual/en/language.operators.type.php) comparison, not a class name comparison.[](#)
 
 ### Conditional hooks matching return value or type
 
@@ -621,12 +603,11 @@ $wire->addHookAfter('Field(name!=title)::getInputfield(template=product):(label*
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## More hook features
 
-[#](#)
+[](#)
 
 ### Hook priority to dictate execution order
 
@@ -642,7 +623,7 @@ $this->addHookBefore('Pages::saveReady', function($event) {
 }, [ 'priority' => 99 ]);
 ```
 
-[#](#)
+[](#)
 
 ### Hooking multiple methods at once
 
@@ -660,9 +641,7 @@ $pages->addHookBefore('saveReady, saved', function($event) {
 });
 ```
 
-This works with any of the [addHook methods](/docs/modules/hooks/), whether it’s addHookBefore, addHookAfter, addHookProperty, addHookMethod, or just the regular addHook method. [Here is a real life example](/blog/posts/pw-3.0.137/#on-demand-mirroring-of-remote-web-server-files-to-your-dev-environment) of using this capability.
-
-[#](#)
+This works with any of the [addHook methods](/docs/modules/hooks/), whether it’s addHookBefore, addHookAfter, addHookProperty, addHookMethod, or just the regular addHook method. [Here is a real life example](/blog/posts/pw-3.0.137/#on-demand-mirroring-of-remote-web-server-files-to-your-dev-environment) of using this capability.[](#)
 
 ### Removing hooks
 

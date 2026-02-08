@@ -1,11 +1,12 @@
-# Unknown
+# Using selectors in ProcessWire CMS
 
 Source: https://processwire.com/docs/selectors/
+
+# Using Selectors 
 
 Selectors are simple strings of text that specify fields and values. These selectors are used throughout ProcessWire to find pages (and other types of data).
 
 For example, `name=karena` is a simple selector that says: “find items that have the name karena.” Selectors in ProcessWire are loosely based around the idea and syntax of attribute selectors in jQuery.
-
 - [The components of a selector](#components)
 - [Where do you use selectors?](#where)
 - [Selector fields](#fields)
@@ -30,7 +31,7 @@ For example, `name=karena` is a simple selector that says: “find items that ha
 - [Sanitizing user input in selectors](#sanitizing)
 - [Examples of selectors as used in page templates](#examples)
 
-### []()The components of a selector
+### The components of a selector
 
 An individual selector consists of three parts: the field you are looking for, an operator (like an equals '=' sign), and the value you want to match. For example, a basic selector might be:
 
@@ -40,7 +41,7 @@ title=products
 
 In this example, "title" is the field, the equals sign "=" is the operator, and "products" is the value you want to match. This basic selector would match all pages having a title field of "products", regardless of where they exist in the site. You may also specify multiple selectors by separating each with a comma.
 
-### []()Where do you use selectors?
+### Where do you use selectors?
 
 Selectors are used throughout ProcessWire, typically for getting and finding pages with the [$page](/docs/start/variables/page/) and [$pages](/docs/start/variables/pages/) variables. Below is a list of the most common functions where selectors are used:
 
@@ -66,7 +67,7 @@ $matches = $page->images->find("selector")->not("selector");
 
 Below we examine the 3 parts of a selector in more detail: fields, operators and values.
 
-### []()Selector fields
+### Selector fields
 
 The field portion of a selector may refer to any field of a page. If you want to know what fields you can use for matching, see "Setup > Fields" in your ProcessWire admin. All custom fields are typically optimized for fast matches.
 
@@ -78,111 +79,542 @@ title|name|headline=products
 
 Using the above syntax, the selector will match any pages that have a title, name, or headline field of "products" or "Products". Selector values are not case sensitive unless you configure your MySQL with a case sensitive collation.
 
-### []()Selector operators
+### Selector operators
 
 The [operator](/docs/selectors/operators/) portion of a selector may be one of the following:
 
-``[/docs/selectors/operators/#equal](/docs/selectors/operators/#equal)``[/docs/selectors/operators/#not-equal](/docs/selectors/operators/#not-equal)``[/docs/selectors/operators/#less-than](/docs/selectors/operators/#less-than)``[/docs/selectors/operators/#greater-than](/docs/selectors/operators/#greater-than)``[/docs/selectors/operators/#less-than-equal](/docs/selectors/operators/#less-than-equal)``[/docs/selectors/operators/#greater-than-equal](/docs/selectors/operators/#greater-than-equal)``[/docs/selectors/operators/#contains](/docs/selectors/operators/#contains)``[/docs/selectors/operators/#contains-words](/docs/selectors/operators/#contains-words)``[/docs/selectors/operators/#contains-like](/docs/selectors/operators/#contains-like)``[/docs/selectors/operators/#starts](/docs/selectors/operators/#starts)``[/docs/selectors/operators/#ends](/docs/selectors/operators/#ends)``[#starts-like](#starts-like)``[#ends-like](#ends-like)``[/docs/selectors/operators/#contains-advanced](/docs/selectors/operators/#contains-advanced)``[/docs/selectors/operators/#contains-expand](/docs/selectors/operators/#contains-expand)``[/docs/selectors/operators/#contains-words-partial](/docs/selectors/operators/#contains-words-partial)``[/docs/selectors/operators/#contains-words-live](/docs/selectors/operators/#contains-words-live)``[/docs/selectors/operators/#contains-words-like](/docs/selectors/operators/#contains-words-like)``[/docs/selectors/operators/#contains-words-expand](/docs/selectors/operators/#contains-words-expand)``[/docs/selectors/operators/#contains-any-words](/docs/selectors/operators/#contains-any-words)``[/docs/selectors/operators/#contains-any-words-partial](/docs/selectors/operators/#contains-any-words-partial)``[/docs/selectors/operators/#contains-any-words-like](/docs/selectors/operators/#contains-any-words-like)``[/docs/selectors/operators/#contains-any-words-expand](/docs/selectors/operators/#contains-any-words-expand)``[/docs/selectors/operators/#contains-match](/docs/selectors/operators/#contains-match)``[/docs/selectors/operators/#contains-match-expand](/docs/selectors/operators/#contains-match-expand)``[/docs/selectors/operators/#bitwise-and](/docs/selectors/operators/#bitwise-and)[/docs/selectors/operators/#general-operators](/docs/selectors/operators/#general-operators)[/docs/selectors/operators/#phrase-matching-operators](/docs/selectors/operators/#phrase-matching-operators)[/docs/selectors/operators/#word-matching-operators](/docs/selectors/operators/#word-matching-operators)[/docs/selectors/operators/#using-more-than-one-operator-at-a-time](/docs/selectors/operators/#using-more-than-one-operator-at-a-time)```
+| `=` | [Equal to](/docs/selectors/operators/#equal) | Given value is the same as value compared to. |
+| --- | --- | --- |
+| `!=` | [Not equal to](/docs/selectors/operators/#not-equal) | Given value is not the same as value compared to. |
+| `<` | [Less than](/docs/selectors/operators/#less-than) | Compared value is less than given value. |
+| `>` | [Greater than](/docs/selectors/operators/#greater-than) | Compared value is greater than given value. |
+| `<=` | [Less than or equal to](/docs/selectors/operators/#less-than-equal) | Compared value is less than or equal to given value. |
+| `>=` | [Greater than or equal to](/docs/selectors/operators/#greater-than-equal) | Compared value is greater than or equal to given value. |
+| `*=` | [Contains phrase/text](/docs/selectors/operators/#contains) | Given phrase or word appears in value compared to. |
+| `~=` | [Contains all words](/docs/selectors/operators/#contains-words) | All given whole words appear in compared value, in any order. |
+| `%=` | [Contains phrase/text like](/docs/selectors/operators/#contains-like) | Phrase or word appears in value compared to, using like. |
+| `^=` | [Starts with phrase/text](/docs/selectors/operators/#starts) | Word or phrase appears at start of compared value. |
+| `$=` | [Ends with phrase/text](/docs/selectors/operators/#ends) | Word or phrase appears at end of compared value. |
+| `%^=` | [Starts like](#starts-like) | Word or phrase appears at beginning of compared value, using like. |
+| `%$=` | [Ends like](#ends-like) | Word or phrase appears at end of compared value, using like. |
+| `#=` | [Advanced text search](/docs/selectors/operators/#contains-advanced) | Match full or partial words and phrases with commands.* |
+| `*+=` | [Contains phrase expand](/docs/selectors/operators/#contains-expand) | Phrase or word appears in value compared to and expand results.* |
+| `~*=` | [Contains all partial words](/docs/selectors/operators/#contains-words-partial) | All whole or partial words appear in value, in any order.* |
+| `~~=` | [Contains all words live](/docs/selectors/operators/#contains-words-live) | All whole words and last partial word appear in any order.* |
+| `~%=` | [Contain all words like](/docs/selectors/operators/#contains-words-like) | All whole or partial words appear in value using like, in any order.* |
+| `~+=` | [Contains all words expand](/docs/selectors/operators/#contains-words-expand) | All whole words appear in value and expand results.* |
+| `~\|=` | [Contains any words](/docs/selectors/operators/#contains-any-words) | Any given whole words appear in value, in any order.* |
+| `~\|*=` | [Contains any partial words](/docs/selectors/operators/#contains-any-words-partial) | Any given whole or partial words appear in value, in any order.* |
+| `~\|%=` | [Contains any words like](/docs/selectors/operators/#contains-any-words-like) | Any given whole or partial words appear in value using like, in any order.* |
+| `~\|+=` | [Contains any words expand](/docs/selectors/operators/#contains-any-words-expand) | Any given whole words appear in value and expand results.* |
+| `**=` | [Contains match](/docs/selectors/operators/#contains-match) | Any given whole words match against value.* |
+| `**+=` | [Contains match expand](/docs/selectors/operators/#contains-match-expand) | Any given whole words match against value and expand results.* |
+| `&` | [Bitwise AND](/docs/selectors/operators/#bitwise-and) | Given integer results in positive AND against compared value. |
 
-``````
+* Operators with asterisk require ProcessWire 3.0.160 or newer.
 
-``````
+For more details see, [general operators](/docs/selectors/operators/#general-operators), [phrase matching operators](/docs/selectors/operators/#phrase-matching-operators) and [word matching operators](/docs/selectors/operators/#word-matching-operators). Also note that in ProcessWire 3.0.161 and newer, you can specify [more than one operator at a time](/docs/selectors/operators/#using-more-than-one-operator-at-a-time).
 
-```````[http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html](http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html)````````[http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html](http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html)[http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html](http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html)```````````````````
-
-``````
-
-```### []()```
-
-```[/api/ref/sanitizer/selector-value/](/api/ref/sanitizer/selector-value/)### []()```
-
-```### []()```
-
-```### []()```
-
-```### []()```
-
-```### []()```
-
-``````
+Let's take a closer look at the word and phrase matching operators by starting with an example:
 
 ```
-
+title|body~=sushi tobiko
 ```
 
-```### []()```
+The above example would match all pages that have the words "sushi" and "tobiko" somewhere in either their title or body fields. The words don't need to be next to one another in order to match. Whereas this selector…
 
-``````
+```
+title|body*=sushi tobiko
+```
 
-`````#### [/blog/posts/processwire-3.0.6-brings-pages-upgrades-and-link-abstraction/#improvements-to-sub-selectors](/blog/posts/processwire-3.0.6-brings-pages-upgrades-and-link-abstraction/#improvements-to-sub-selectors)```
+...would match only those pages that had the exact phrase "sushi tobiko" present in either their title or body fields. As it's a phrase match, the words must be next to each other in that order. Here's an alternate method to do the same thing, but with some compromises and benefits:
 
-```### []()```
+```
+title|body%=sushi tobiko
+```
 
-``````
+This works exactly the same way as the `*=` except that it uses a different method with the database engine. This operator has an advantage over the `*=` operator when you may need to match very short words or [stopwords](http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html). As a result, it can match some things that `*=` and `~=` can't.
 
-``````
+The `*=` and `~=` rely upon MySQL fulltext indexes, which only index words of at least a certain length ([configurable](http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html), but typically 4 characters). They also don't index common English words called [stopwords](http://dev.mysql.com/doc/refman/5.5/en/fulltext-stopwords.html). So while it's potentially preferable to use `*=` and `~=` for their index, if you aren't getting the results you need, you should consider using `%=` instead. Interestingly, there are cases where `%=` can be faster, and there are cases where it can be slower. Though in our experience the difference is often not measurable. Nevertheless, when doing optimization, you may want to test both to find what performs best for your case.
 
-```````#### ``````````````````#### ````````### []()```
+The `^=` and `$=` operators use a method similar to the `%=` operator, and can have potentially more overhead, but can also do something unique. They can match text at the beginning (^=) or end ($=) of a field.
 
-``````
+**Negative operators**
 
-```### []()`````
+You'll notice we have a `!=` "not equal to" operator. That's great for numbers and fields where we know the entire value, but not particularly handy for large text fields. For example, this would not be useful:
 
-``````
+```
+body!=sushi tobiko
+```
 
-```### []()[/blog/categories/repeaters/](/blog/categories/repeaters/)[/docs/modules/guides/comments/](/docs/modules/guides/comments/)```
+That would likely match all the pages in the site, unless you had a page that contained only the phrase "sushi tobiko" as the entire body field with nothing else in it. So that selector isn't useful, whereas, we can take a different approach to negate the result of any selector by simply preceding the field with an exclamation point "!", i.e.
 
-``````
+```
+!body*=sushi tobiko
+```
 
-``````
+This would match all pages that didn't contain the phrase "sushi tobiko" somewhere in their body field. Now that is useful.
 
-``````
+### Selector values
 
-```[#match-same-row](#match-same-row)### []()[/blog/posts/processwire-3.0.95-core-updates/#owner-selectors](/blog/posts/processwire-3.0.95-core-updates/#owner-selectors)### []()```
+After the operator comes the selector value that we want to match. At the basic level, little explanation is needed and the examples in the above section (operators) make that clear. But because selector values can contain nearly anything (including text submitted from user input, like a search for example), we need to take some special care with string-based selector values. If your selector value needs to contain a comma, you should surround your selector value in quotes, i.e.
 
-``````
+```
+body*="sushi, tobiko"
+```
 
-```### []()```
+If you don't surround such a selector in quotes, then ProcessWire will assume the comma is starting another selector (see specifying multiple selectors, below). Selector values may not contain double quotes as part of the value to match, unless you escape them with a backslash character "\". Because the need to match double quotes is rare, a simpler approach is just to disallow double quotes from appearing in your selector values by filtering them out of user input. See the [$sanitizer->selectorValue()](/api/ref/sanitizer/selector-value/) method for a simple way to sanitize strings going into a selector.
 
-``````
+Selector values may contain single quotes or apostrophes. For that reason, single quotes aren't interchangeable with double quotes for surrounding selector values.
 
-``````
+You may also specify an either/or value, by separating each of the values that may match with a pipe character "|". More details and examples can be found in the "OR selectors" section below.
 
-``````
+### Specifying multiple selectors
 
-``````
+A selector string can match more than one field. You may specify multiple selectors together by separating each with a comma. For example, the following selector would match all pages with a year of 2010 *and* the word "Hanna" appearing somewhere in the body:
 
-``````
+```
+year=2010, body*=Hanna
+```
 
-```### []()```
+You may specify as many selectors as you want as long as each is separated by a comma.
 
-````````
+### OR selectors: matching one value or another
 
-````````
+In instances where you need to match values in a single field with an either-or expression, the values should be split with the "or" operator, which is the pipe character "|". The following examples demonstrates its usage:
 
+```
+firstname=Mike|Steve
+id=123|124|125
+title*=Red|Blue|Green
+```
 
-```### []()[/api/ref/page-array/](/api/ref/page-array/)````- ``- ``- ``- `````
+Each of the above selectors matches pages that have either of the values specified between the pipe "|".
 
-```[/api/ref/pages/get/](/api/ref/pages/get/)``[/api/ref/pages/find-one/](/api/ref/pages/find-one/)- ``- ``- ``### []()`````````````````````
+### OR selectors, matching one field or another
 
-```````````### []()```
+This was already described in the selector fields section above, but is repeated here for reference. Field names may be separated by a pipe "|" to indicate an OR condition:
 
-```[/docs/start/variables/sanitizer/](/docs/start/variables/sanitizer/)[/api/ref/sanitizer/selector-value/](/api/ref/sanitizer/selector-value/)```
+```
+body|sidebar*=carbonated
+```
 
-```[/api/ref/sanitizer/selector-field/](/api/ref/sanitizer/selector-field/)```
+The above selector matches pages that have the word "carbonated" in either the body or sidebar fields.
 
-```### []()```
+### AND selectors: matching more than one value in the same field
 
-``````
+There will be instances where you need to say that a specific field matches more than one selector. This is simple, just specify all the conditions you need to match as separate selectors in the same string. For example:
 
-``````
+```
+height>500, height<=1000
+```
 
-``````
+This AND selector matches all pages that have a "height" field greater than 500, and less than or equal to 1000.
 
-``````
+### OR-groups: matching one group of selectors or another
 
-``````
+OR-group selectors let you specify multiple expressions and only one of them has to match in order for the selector to match. It's a way of saying "either this has to match OR that has to match". This is useful because selectors by default assume AND – meaning everything has to match. While you can use the pipe "|" to specify ORs for fields or values or both, the scope of it was just that *field=value* statement only. ProcessWire 2.5 added OR-groups where you can create multiple selector groups and only one of them has to match. You can specify OR-groups by surrounding selectors in parenthesis.
 
-``````
+An example demonstrates it best. Lets say that we wanted to find all "product" pages that were in stock, and either in a featured date range, or had a highlighted checkbox checked. Previously we would do like this with two separate find operations:
 
-```- #### [/docs/selectors/operators/](/docs/selectors/operators/)- [/docs/selectors/](/docs/selectors/)- [/docs/selectors/operators/](/docs/selectors/operators/)- [/docs/](/docs/)- [/api/ref/](/api/ref/)- [/docs/start/](/docs/start/)- [/docs/front-end/](/docs/front-end/)- [/docs/tutorials/](/docs/tutorials/)- [/docs/selectors/](/docs/selectors/)- [/docs/modules/](/docs/modules/)- [/docs/fields/](/docs/fields/)- [/docs/user-access/](/docs/user-access/)- [/docs/security/](/docs/security/)- [/docs/multi-language-support/](/docs/multi-language-support/)- [/docs/more/](/docs/more/)
+```
+$items = $pages->find("template=product, stock>0, featured_from<=today, featured_to>=today");
+$items->add($pages->find("template=product, stock>0, highlighted=1"));
+```
+
+With OR-groups, we can do it in one find operation:
+
+```
+$items = $pages->find("template=product, stock>0, (featured_from<=today, featured_to>=today), (highlighted=1)");
+```
+
+Above are two selectors surrounded in parenthesis. Only one of them has to match. You can specify as many of them as you want. This type of OR expression is supported by ProcessWire 2.5 and newer. Think of the parenthesis as a way of saying "this is optional". But of course, at least one of your parenthesized selectors has to match in order for the full selector to match.
+
+The above usage probably covers 99% of the situations where you might need it. But lets say that you want to have different combinations of OR expressions. You can create named groups that OR with each-other by specifying:
+
+```
+foo=(selector1), bar=(selector2), foo=(selector3), bar=(selector4)
+```
+
+In the above you'd replace "foo" and "bar" with names of your choice. And you'd replace the "selector" with any selector strings. Those foo/bar names aren't referring to fields, instead they are just named groups that you can name however you want. In that selector, at least one of the "foo" named selectors would have to match, and at least one of the "bar" named selectors would have to match. If you didn't use the foo/bar named groups here (but still used the parenthesis), then only one of the 4 selectors would be required to match.
+
+Please note: OR-groups work with database-driven find operations, but not with in-memory filtering (where they are less useful).
+
+### Sub-selectors: selectors within selectors
+
+Sub-selectors let you put a selector within a selector, enabling you to perform more complex matches that you might have assumed would require separate API calls. These can be used on the 'id' property of any field that maps to a page. The 'id' property is assumed when referring to a page reference or a parent, so it's not necessary to specify it unless you want to, i.e. "field" and "field.id" mean the same thing in this case.
+
+Sub-selectors are specified between [square brackets]. For example, lets say we are matching products and our product template has a "company" page field. Each company also has its own page field where all the company locations are identified. Lets say we want to find all products that are made by a company that has more than 5 locations and at least one of those locations has "Finland" in the title. Without sub-selectors we would have had to do it like this:
+
+```
+$companies = $pages->find("template=company, locations>5, locations.title%=Finland"); 
+$items = $pages->find("template=product, company=$companies");
+```
+
+That's easy enough. But with sub-selectors it's even simpler, requiring only one operation:
+
+```
+$items = $pages->find("template=product, company=[locations>5, locations.title%=Finland]");
+```
+
+When you've got a `field=[value]` selector, any properties you refer to in "[value]" assume the "field"; so "locations" above is referring to a property of the "company" field.
+
+Please note: Sub-selectors work with database-driven find operations, but not with in-memory filtering (where they are less useful). 
+
+#### Nested sub-selectors
+
+In ProcessWire 3.x, you can use [nested subselectors](/blog/posts/processwire-3.0.6-brings-pages-upgrades-and-link-abstraction/#improvements-to-sub-selectors):
+
+```
+template=member, invoice=[status=paid, invoice_row!=[product.color=Red]]
+```
+
+### Sorting the results of a selector
+
+There is a reserved-word for selectors called "sort" and it may be used to specify what order should be returned by the matches. Here is an example of it's usage:
+
+```
+sort=title
+```
+
+That essentially says to sort the results by their "title" field, A-Z. If we want to reverse the sort, we just precede "title" with a minus sign, like this:
+
+```
+sort=-title
+```
+
+That would return results sorted by the "title" field, Z-A.
+
+You may specify multiple fields to sort by. For example, lets say that you wanted to sort first by date descending (newest to oldest) and then by title ascending, you would do this:
+
+```
+sort=-date, sort=title
+```
+
+That way if two results had the same date, the secondary sort would be alphabetical.
+
+In newer versions of ProcessWire, you can also specify multiple sorts with one single selector having a value with an OR condition, i.e. `sort=date|title`. In this case, "date" is the first sort and "title" is the second. You may add additional levels as needed, i.e. `sort=date|title|price`
+
+#### How results are sorted if you don't specify a "sort" in your selector
+
+In `$page->children()` and `$page->siblings()` the results are automatically sorted by the page's default sort field that you specify in the admin. If not specified in the admin, the pages will be sorted by the order they are placed in the admin. This behavior can be overridden by specifying your own `sort=property` (where `property` is any property or field name). With `$pages->find()` and `$page->find()`, if you don't specify your own `sort=property`, the results are sorted according to MySQL's text searching relevance. If no text searches are performed in your find(), the results are unsorted. As a result, it is generally a good idea to include a `sort=property` when using `$pages->find()`, especially if you care about the order and your find() operation is not text/relevance related.
+
+#### How to force pages to sort by their admin order with $pages->find()
+
+Unlike `$page->children()`, the `$pages->find()` method does not automatically sort by the order they appear in the site tree. This is because `$pages->find()` is not limited to finding pages specific to one parent, so it may be pulling pages from multiple places (according to your selector). If your parent page(s) are not already sorting by a specific field, you may still tell the find() to sort by the parent's order by literally specifying `sort=sort` in your selector. This is the same as saying "sort by whatever order I dragged the pages to in the admin." But note that if the results have multiple parents, the resulting order isn't likely to be that useful.
+
+### Limiting the number of results returned by a selector
+
+If you are dealing with a lot of potential results, you may want to limit the number of returned results for pagination or other reasons. In order to specify a limit, use the reserved word "limit" as a selector, i.e.
+
+```
+limit=50
+```
+
+That selector tells ProcessWire to return 50 (or fewer) results. The starting result is always the first, unless you use the "start" reserved word, i.e.
+
+```
+start=50, limit=50
+```
+
+This tells ProcessWire to return 50 (or less) results starting at the 51st (results 51–100).
+
+If you are using a limit selector with pages, and your template has page-numbers (pagination) turned on, ProcessWire will automatically set the "start" selector according to the current page/pagination number. So when it comes to pagination, you don't usually have to think about anything other than the "limit" selector.
+
+### Count selectors – finding matches by quantity
+
+You can match pages with multiple-value fields based on the number of values they contain. For instance, you can find all pages with a given number of children, images, page references, files, comments, etc. You do this by appending `.count` to the field name. This is best demonstrated by an example. The following example would find pages that have at least 1 child and between 3 and 5 images:
+
+```
+children.count>0, images.count>=3, images.count<=5
+```
+
+In this next example, we'll assume you have a page reference field called 'categories', and you want to match all pages that have zero (0) categories:
+
+```
+categories.count=0
+```
+
+Note that a selector like the above will literally match all pages that have a 'categories' field without any selected. It will not match pages that don't have a 'categories' field.
+
+*The 'children' field is automatically built-in to all ProcessWire pages. It is also the only countable field where you can only specify one count operation per query. To clarify, the first example above demonstrates matching 3 to 5 'images'. You can't do this with children.count since it can only be specified once per query. This limitation may be changed at some point in the future. *
+
+### Subfield selectors
+
+Some field types support selection by subfield, where a subfield holds a value independent of the field's regular value. This is only used with field types that contain more complex data types. Examples include Page fields, [Repeaters](/blog/categories/repeaters/), Files, Images, [Comments](/docs/modules/guides/comments/) and Map Markers, among others. Usage in a selector is quite simple and very similar to the count selectors, mentioned in the previous section. The format goes like this:
+
+```
+field.subfield=value
+```
+
+Other than the specification of the ".subfield", the selector is no different from any other. You may use any operators or selector features that you would use elsewhere. For our first example, lets say we have a field called "images" and that you want to find all pages that have at least one image containing the word "atrium" in the image description:
+
+```
+images.description*=atrium
+```
+
+Here is an example of using a subfield selector with a repeater field (or a Page or PageTable field) called buildings that contains various subfields describing the building. Lets say we want to locate all pages that have at least one building greater than 1000 feet, and at least one building built before 1980:
+
+```
+buildings.feet_high>1000, buildings.year_built<1980
+```
+
+If you instead want to find all pages that have at least one building greater than 1000 feet that also happens to be built before 1980 (matching the same exact building, even if the page has multiple buildings) then you can specify that in the selector by preceding the field name with a "@", i.e.
+
+```
+@buildings.feet_high>1000, @buildings.year_built<1980
+```
+
+For more about this feature see [matching the same row from a multi-value field](#match-same-row). 
+
+### Owner selectors
+
+Owner selectors let you match aspects of whatever Page reverse references another (whether from a Page field, Repeater field or PageTable field), and make it part of the find() criteria. There is a full dedicated post about about these, including several examples, see: [Owner Selectors](/blog/posts/processwire-3.0.95-core-updates/#owner-selectors).
+
+### Finding pages that use specific templates
+
+You can specify that your matches should be using a specific template like this (replacing 'name' with the name of your template):
+
+```
+template=name
+```
+
+…or specify that it can have any one of these templates:
+
+```
+template=name1|name2|name3
+```
+
+### Finding pages that have specific parents or ancestors
+
+To specify that matches should have a specific parent, specify the parent's path, object or ID. First is an example of using the parent's path:
+
+```
+parent=/path/to/parent/
+```
+
+An example of using the parent's object (where $parent is an instance of a Page object):
+
+```
+parent=$parent
+```
+
+An example of using the parent's ID (where 123 is the ID of the parent):
+
+```
+parent=123
+```
+
+Of course, you can also do this with any of the above syntaxes if it can be any one of multiple parents:
+
+```
+parent=$parent1|$parent2|$parent3
+```
+
+**Now lets say that you want to find pages that include a particular parent as an ancestor. **Meaning, the found pages must include the given parent at some point in the hierarchy between them at the homepage, whether as a parent, grandparent, great-great-grandparent, etc. To do this, use has_parent.
+
+```
+has_parent=$parent
+has_parent=123
+has_parent=/path/to/parent/
+```
+
+You can specify a Page object, Page ID, or path, like shown above.
+
+Lastly, you can always replace the equals sign "=" in any of the above examples with "!=" to reverse the behavior. You might find it useful to find pages that *don't* have a given parent or ancestor:
+
+```
+parent!=123
+has_parent!=/path/to/parent/
+```
+
+### Matching different subfields from the same (1) row in a multi-value field
+
+While it’s not something you are likely to need on every project, it’s good to know about this advanced feature which lets you match the same (1) row in a multi-value field, just in case you need it sometime.
+
+Multi-value fields (such as Page, Repeater, Table, etc.) can have multiple rows of values, like a spreadsheet. A selector typically matches any of them, which is most often exactly what we need. But there may be times where we need to know that we are matching two or more subfields from the same exact row in a multi-value field.
+
+Consider this example selector below, which finds pages using the template “house” that matches values from a multi-value Page field named “categories”.
+
+```
+template=house, categories.name=modern, categories.featured=1
+```
+
+At first glance, we might assume this will match “house” pages that have the “modern” category, and with that category having a “featured” checkbox checked. But our “categories” field can hold more than one category. So a given “house” page might have multiple categories like: modern, multi-level, garage, etc. So are we matching a “modern” category that is “featured”, or are we matching a “modern” category, plus some other category that is featured?
+
+What the selector really says is this: find “house” pages that have a “modern” category, and also a category that has the “featured” checkbox checked. It does not say that they both have to be the same category. It only requires that one of the house’s categories is “featured”. And it may or may not be the “modern” category that is featured.
+
+What if we only want it to match the “modern” category if it is also “featured”? To do this, we use the “match same item” prefix `@` in our field name, like this:
+
+```
+template=house, @categories.name=modern, @categories.featured=1
+```
+
+Now this selector will only match if the “house” has the category “modern” selected and “modern” has the “featured” checkbox checked.
+
+While rare, if you need to do this with more then one row (whether from the same field or a different field), then you’ll want to group your matches by giving them a name, i.e. `foo@categories…`. I usually just use a letter, like “a” or “b”, but you may use whatever makes the most sense to you. Below is an example:
+
+```
+a@categories=modern, a@categories.featured=1, b@architects.locations.name=atlanta, b@architects.locations.showrooms>0
+```
+
+Currently matching the same (1) row is known to be supported by multi-value Page, Repeater, and Table fields, and potentially others.
+
+### Access control in selectors
+
+Pages with *hidden* or *unpublished* status will not appear in the results from database-querying selectors that can return multiple pages (i.e. functions that return the [PageArray](/api/ref/page-array/) type). For instance `$pages->find()`, `$page->children()`, etc. In addition, pages that the user does not have access to view (via access control in template settings) will also not appear in the results. All of this is usually expected and desirable behavior. However, there may be instances where you actually want to include hidden, unpublished or non-viewable pages in results. To do this, you can use the "include" or "check_access" properties in your selectors.
+- 
+
+`include=hidden` indicates that you will allow hidden pages to be included in the results.
+- 
+
+`include=unpublished` indicates that you will allow both hidden and unpublished pages to be included in the results.
+- 
+
+`include=all` indicates that you don't want any exclusions and results may include hidden pages, unpublished pages, or pages that aren't viewable to the user via access control.
+- 
+
+`check_access=0` indicates that you don't want access control to be a factor in the results returned. Results may include pages that the user can't view as a result of template access control settings. Pages that the user can't view only because they are *unpublished* will not be included. *Hidden* pages won't be included unless you've also used the *include=hidden* selector as well. Note that if you are using *include=all* then there is no reason to use *check_access=0* since it is assumed.
+
+These are best demonstrated by examples:
+
+```
+// results exclude hidden, unpublished or non-viewable pages
+$pages->find("template=skyscraper");
+
+// results may include hidden pages
+$pages->find("template=skyscraper, include=hidden");
+
+// results have no exclusions
+$pages->find("template=skyscraper, include=all");
+
+// results may include pages user can't view
+$pages->find("template=skyscraper, check_access=0");
+```
+
+Note that [$pages->get(…);](/api/ref/pages/get/) is not subject to this behavior (or access control) and `include=all` is assumed. This is because requesting a single page is a very specific request, and not typically used for generating navigation. To put it another way, if you are asking for a single specific page, we assume you mean it. If you want to retrieve a single page where include=all is not assumed, then use [$pages->findOne(…)](/api/ref/pages/find-one/) instead.
+
+The examples above are all focused on including pages in results that wouldn't usually be included, among other pages. But lets say that you want to find only pages that have a hidden, unpublished or locked status. This is a fairly uncommon need, so no need to commit this to memory, but we'll include it for completeness. You can do it by querying the "status" property:
+- 
+
+`status=hidden` indicates that you only want pages with hidden status to be included in the results.
+- 
+
+`status=unpublished` indicates that you only want pages with unpublished status to be included in the results.
+- 
+
+`status=locked`** **indicates that you only want pages with locked status to be included in the results.
+
+### API variables in stored selectors
+
+When used in a selector string, you can dynamically refer to a property/field from the current $page, $user or $session API variables like this: `field=[page.id]` (including the square brackets) where the `field` part is the field you want to match, the `page` part is one of "page", "user" or "session", and the `id` part can be any field or property available on the $page, $user or $session API variables. For $user and $page, the `id` part is assumed, so if you want to use `[page.id]` or `[user.id]` you can also just use `[page]` or `[user]`. Below are a few examples of using this feature in a selector string, through please also read the text the follows.
+
+```
+// find pages created by current user
+$pages->find("created_users_id=[user.id]");
+
+// find pages with current page selected in related_pages field
+$pages->find("related_pages=[page]");
+
+// find pages matching some field you previously set in $session
+$pages->find("id=[session.last_viewed]");
+
+// find pages with categories field similar to current page
+$pages->find("categories=[page.categories]");
+```
+
+From the context of PHP code (like above), there's actually little reason to use this feature since you can already directly refer to PHP and API variables in double-quoted selector strings, for example `$pages->find("related_pages=$page");` Instead, where this feature becomes useful is when the selector needs to be stored for later processing. This would be the case for anything that needs to be configured, such as a module or field, or any other configuration need that might arise. For these cases, the values in `[page]`, `[user]` or `[session]` can indeed be different from $page, $user or $session, because they represent the current values at runtime (when they are processed) rather than the values at the time they were stored.
+
+### Sanitizing user input in selectors
+
+If you are supplying user input in selector values (like from a submitted form), you should sanitize the input before placing it in a selector. If you are expecting an integer for example, then type cast it as an int before using it in your selector, i.e.
+
+```
+$year = (int) $input->post->year; 
+$matches = $pages->find("year=$year");
+```
+
+If your selector value needs to contain more arbitrary strings, like for text matching, you must sanitize the value before sending it to a selector. You may want to use ProcessWire's built in [$sanitizer](/docs/start/variables/sanitizer/) for that purpose, specifically [$sanitizer->selectorValue()](/api/ref/sanitizer/selector-value/). The sanitizer will remove any characters from the selector that could be problematic. Here is how to use it from your templates:
+
+```
+$keywords = $sanitizer->selectorValue($input->get->keywords); 
+$matches = $pages->find("keywords~=$keywords");
+```
+
+Though less common, if you are using a field name provided by user input, you should sanitize it like this with [$sanitizer->selectorField()](/api/ref/sanitizer/selector-field/):
+
+```
+$field = $sanitizer->selectorField($input->get->field); 
+$matches = $pages->find("$field=the value you want to match");
+```
+
+### Examples of selectors as used in page templates
+
+Find all pages using the skyscraper template
+
+```
+$pages->find("template=skyscraper");
+```
+
+Find all skyscrapers with a height greater than 500 ft, and less than or equal to 1000 ft.
+
+```
+$pages->find("template=skyscraper, height>500, height<=1000");
+```
+
+Find all skyscrapers in Chicago with 60+ floors, sorted by floors ascending
+
+```
+$pages->get("/cities/chicago/")->find("floors>=60, sort=floors");
+```
+
+Find all skyscrapers built before 1950 with 10+ floors, sorted by year descending, then floors descending
+
+```
+$pages->find("template=skyscraper, year<1950, floors>=10, sort=-year, sort=-floors");
+```
+
+Find all skyscrapers by architects David Childs or Renzo Piano, and sort by height descending
+
+```
+$david = $pages->get("/architects/david-childs/");
+$renzo = $pages->get("/architects/renzo-piano/");
+$pages->find("architect=$david|$renzo, sort=-height");
+```
+
+Find all skyscrapers that mention the words "limestone" and "granite" somewhere in their body copy.
+
+```
+$pages->get("/cities/")->find("template=skyscraper, body~=limestone granite");
+```
+
+Find all skyscrapers that mention the phrase "empire state building" in their body copy.
+
+```
+$pages->get("/cities/")->find("template=skyscraper, body*=empire state building");
+```
+
+- 
+[
+
+#### Operators
+
+](/docs/selectors/operators/)
+A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=”…
+Learn more →
+
+- [Selectors](/docs/selectors/)
+- [Operators](/docs/selectors/operators/)
+
+- [Docs](/docs/)
+- [API reference](/api/ref/)
+- [Getting started](/docs/start/)
+- [Front-end](/docs/front-end/)
+- [Tutorials](/docs/tutorials/)
+- [Selectors](/docs/selectors/)
+- [Modules & hooks](/docs/modules/)
+- [Fields, types, input](/docs/fields/)
+- [Access control](/docs/user-access/)
+- [Security](/docs/security/)
+- [Multi-language](/docs/multi-language-support/)
+- [More topics](/docs/more/)

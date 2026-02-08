@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire security: template files
 
 Source: https://processwire.com/docs/security/template-files/
+
+# Security for template files in ProcessWire 
 
 While ProcessWire handles a lot of the common security considerations before your template files are even loaded, you should also follow security best practices within your template files as you would in any other PHP framework.
 
@@ -26,7 +28,6 @@ if($text) {
 ```
 
 This is only a single ProcessWire-specific example, but the scope of PHP best practices for handling user input is outside the scope of this document. When in doubt, ask in our forums. If dealing with user input, get familiar with ProcessWire's built-in [$sanitizer](/docs/start/variables/sanitizer/) as well as general [PHP data filtering and sanitization](http://www.phptherightway.com/#data_filtering) and other PHP security best practices, as your project scope and needs dictate.
-
 - [Security](/docs/security/)
 - [Securing file permissions](/docs/security/file-permissions/)
 - [Securing your admin](/docs/security/admin/)
@@ -52,4 +53,5 @@ This is only a single ProcessWire-specific example, but the scope of PHP best pr
 - [Multi-language](/docs/multi-language-support/)
 - [More topics](/docs/more/)
 
-[Third party modules](/docs/security/third-party-modules/)[2-factor authentication](/docs/security/two-factor-authentication/)
+[Third party modules](/docs/security/third-party-modules/)
+[2-factor authentication](/docs/security/two-factor-authentication/)

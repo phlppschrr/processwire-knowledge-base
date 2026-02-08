@@ -1,9 +1,10 @@
-# Unknown
+# How to install ProcessWire CMS
 
 Source: https://processwire.com/docs/start/install/new/
 
-Information on how to download and install a new copy of ProcessWire from a ZIP file, from GitHub, or with Composer.
+# Installing ProcessWire 
 
+Information on how to download and install a new copy of ProcessWire from a ZIP file, from GitHub, or with Composer.
 - [Installing ProcessWire](#installing-processwire)
   - [Requirements](#requirements)
   - [Installation from ZIP file](#installation-from-zip-file)
@@ -12,17 +13,15 @@ Information on how to download and install a new copy of ProcessWire from a ZIP 
   - [Other installation options](#other-installation-options)
 
 ---
-
-[#](#)
+[](#)
 
 ## Installing ProcessWire
 
-[#](#)
+[](#)
 
 ### Requirements
 
 Before installing, please double check that your server meets the following minimum requirements:
-
 - A Unix or Windows-based web server running Apache or 100% compatible.
 - PHP 8.x is recommended. PHP 7.1 and newer versions are also supported.
 - PDO database support in PHP.
@@ -31,8 +30,7 @@ Before installing, please double check that your server meets the following mini
 - PHP's bundled GD 2 library or ImageMagick library
 
 ---
-
-[#](#)
+[](#)
 
 ### Installation from ZIP file
 
@@ -43,8 +41,7 @@ Unzip the ProcessWire installation file to the location where you want it instal
 Load the location that you unzipped (or uploaded) the files to in your web browser. This will initiate the ProcessWire installer. The installer will guide you through the rest of the installation.
 
 ---
-
-[#](#)
+[](#)
 
 ### Installation from GitHub
 
@@ -55,8 +52,7 @@ Git clone ProcessWire to the place where you want to install it (from the comman
 Load the location where you installed ProcessWire into your browser. This will initiate the ProcessWire installer. The installer will guide you through the rest of the installation.
 
 ---
-
-[#](#)
+[](#)
 
 ### Installation with Composer and Packagist
 
@@ -69,8 +65,7 @@ If you prefer, you can pull ProcessWire into an existing project (which will pla
 `composer require processwire/processwire`
 
 ---
-
-[#](#)
+[](#)
 
 ### Other installation options
 

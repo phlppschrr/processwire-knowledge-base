@@ -1,11 +1,12 @@
-# Unknown
+# PHP Internationalization (i18n) and multi-language tools in ProcessWire CMS
 
 Source: https://processwire.com/docs/multi-language-support/code-i18n/
+
+# Code Internationalization (i18n) 
 
 This page provides detailed documentation on everything you need to know to make your template files or modules translatable using ProcessWire's translation tools. 
 
 This will primarily be of interest to those that are wanting to make static text in their own template files or modules translatable using ProcessWire's translation tools. ProcessWire uses a [GNU gettext](http://www.gnu.org/software/gettext/)-like system for managing language translation of strings in your code (without actually using gettext).
-
 - [Translatable strings](#translatable-strings)
 - [Marking strings for translation](#marking-strings-for-translation)
   - [Syntax inside a class vs. syntax outside of a class](#syntax-inside-a-class-vs-syntax-outside-of-a-class)
@@ -32,8 +33,7 @@ This will primarily be of interest to those that are wanting to make static text
 Below is a brief video demonstrating how simple it is to use ProcessWire's language translation tools in your own templates (switch to 720p and the full screen version to see it better):
 
 ---
-
-[#](#)
+[](#)
 
 ## Translatable strings
 
@@ -48,8 +48,7 @@ $out = __("Live long and prosper!"); // syntax outside of a class
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## Marking strings for translation
 
@@ -59,18 +58,15 @@ The strings for translation are wrapped in a call to one of a set of special fun
 echo "<h2>" . $this->_('Site Information') . "</h2>";
 ```
 
-[#](#)
+[](#)
 
 ### Syntax inside a class vs. syntax outside of a class
 
 In ProcessWire, the functions `__()` and `$this->_()` are equivalent, but `__()` will work in all contexts while `$this->_()` will only work within the context of a class. So why have `$this->_()` at all? Because it has a speed advantage that can only be realized within the context of a class. As a result, the following rules apply:
-
 - When your translation needs occur outside of a class–such as in a template file–you must use the `__('string')` function call.
 - When your translation needs occur within a Processwire class–such as in a plugin module–it is preferable (though not required) to use `$this->_('string')`.
 
-The rules above also apply to the other translation functions outlined later in this page.
-
-[#](#)
+The rules above also apply to the other translation functions outlined later in this page.[](#)
 
 ### Placeholders
 
@@ -114,7 +110,7 @@ Here the zip code is being displayed after the city name. In some languages disp
 $out = sprintf(__('Your zip code is %2$s, and your city is %1$s.'), $city, $zipcode);
 ```
 
-[#](#)
+[](#)
 
 ### Plurals
 
@@ -127,14 +123,11 @@ $out = sprintf(_n("Created %d page.", "Created %d pages.", $count), $count);
 ```
 
 `_n()` and `$this->_n()` accept 3 arguments:
-
 - singular — the singular form of the string
 - plural — the plural form of the string
 - count — the number of objects, which will determine if the singular or the plural form to be returned (there are languages, which have far more than 2 forms)
 
-The return value of the functions is the correct translated form, corresponding to the given count.
-
-[#](#)
+The return value of the functions is the correct translated form, corresponding to the given count.[](#)
 
 ### Context
 
@@ -152,8 +145,7 @@ Using this method in both cases we will get the string *Comment* for the origina
 To summarize contexts, you should use the `_x()` or `$this->_x()` functions when two or more identical translatable strings will appear in more then one place in the same file.
 
 ---
-
-[#](#)
+[](#)
 
 ## Comment descriptions
 
@@ -163,9 +155,7 @@ Do you think translators will know how to translate a string like: `__('g:i:s a'
 $date = __('g:i:s a'); // Date string in PHP date() format
 ```
 
-In this way you can write a personal message to the translators, so that they know how to deal with the string. It is also recommended that you use comment descriptions in long translatable strings (i.e. those that are more than a sentence) so that you can summarize what it is for. The translator will be provided with the string to translate either way, so it is always good to use comment descriptions any time you think they might be helpful.
-
-[#](#)
+In this way you can write a personal message to the translators, so that they know how to deal with the string. It is also recommended that you use comment descriptions in long translatable strings (i.e. those that are more than a sentence) so that you can summarize what it is for. The translator will be provided with the string to translate either way, so it is always good to use comment descriptions any time you think they might be helpful.[](#)
 
 ### Comment notes
 
@@ -176,14 +166,11 @@ echo __("Welcome Guest"); // Headline for guest user // Keep it short (2-3 words
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## Translation rules
 
-ProcessWire's file translation parser works very much like the gettext parser in that it pulls the strings directly from the PHP files (outside of program execution), rather than identifying them at runtime. This is necessary because it is simply not possible to identify every translatable string at runtime. It would require every scenario to play out at execution (i.e. every error message, every success message, etc. in the same request). Given that, ProcessWire has to be able to identify your translatable strings directly in the PHP source code of your files. The format must be consistent and well-formed, as outlined below. Note that these rules may vary somewhat from those of WordPress and other gettext-implementations.
-
-[#](#)
+ProcessWire's file translation parser works very much like the gettext parser in that it pulls the strings directly from the PHP files (outside of program execution), rather than identifying them at runtime. This is necessary because it is simply not possible to identify every translatable string at runtime. It would require every scenario to play out at execution (i.e. every error message, every success message, etc. in the same request). Given that, ProcessWire has to be able to identify your translatable strings directly in the PHP source code of your files. The format must be consistent and well-formed, as outlined below. Note that these rules may vary somewhat from those of WordPress and other gettext-implementations.[](#)
 
 ### Translation function calls must be on one line and in one pair of quotes
 
@@ -210,9 +197,7 @@ $out = __("It's time for you \nto get to the party.");  // good
 
 Note the "\n" between the words "you" and "to" above. It is okay to include a PHP carriage return character in your strings like this if you need it. What's not okay is to have an actual line break in your code.
 
-To reiterate the above examples: if you have a long string of text that you are sending to a translation function, you need to keep it all on one line. Embrace horizontal scrolling in your code editor. 
-
-[#](#)
+To reiterate the above examples: if you have a long string of text that you are sending to a translation function, you need to keep it all on one line. Embrace horizontal scrolling in your code editor. [](#)
 
 ### There may only be one translation function call per line
 
@@ -237,65 +222,52 @@ $b = __("and something else");
 $out = "$a $b";
 ```
 
-[#](#)
+[](#)
 
 ### Empty strings
 
 Don't try to internationalize an empty string. It doesn't make any sense, because the translators won't see any context.
 
 ---
-
-[#](#)
+[](#)
 
 ## Best practices
 
 While ProcessWire doesn't use gettext, it is based on many of the same conventions and what applies for gettext generally applies for translation in ProcessWire. Below is a summary of best practices from the [gettext manual](http://www.gnu.org/software/gettext/manual/html_node/Preparing-Strings.html#Preparing-Strings) and this page.
-
 - 
 
 Decent English style—minimize slang and abbreviations.
-
 - 
 
 Entire sentences—in most languages word order is different than that in English.
-
 - 
 
 Split at paragraphs—merge related sentences, but do not include whole page of text in one string.
-
 - 
 
 Use format strings instead of string concatenation: `sprintf(__('Replace %s with %s'), $a, $b);` is always better than `__('Replace ') . $a . __(' with ') . $b;`
-
 - 
 
 Avoid markup and unusual control characters—do not include tags that surround your text and do not leave URLs for translation, unless they could have version in another language.
-
 - 
 
 Do not leave leading or trailing whitespace in a translatable phrase.
-
 - 
 
 Keep your translation phrases on 1 line and between 1 pair of quotes.
-
 - 
 
 Use only 1 translation function call per line in your source code.
-
 - 
 
 Use `$this->_('string')` in your class files, and `__('string')` everywhere else.
 
 ---
-
-[#](#)
+[](#)
 
 ## Technical details
 
-Below are some additional technical details that may be of interest to some, but are not required reading.
-
-[#](#)
+Below are some additional technical details that may be of interest to some, but are not required reading.[](#)
 
 ### Using Textdomains
 
@@ -324,7 +296,6 @@ echo __('Page saved', $pages);
 ```
 
 Note that the above is a contrived example used for demonstration purposes only, as $pages doesn't actually have any translatable phrases in it.
-
 - [Multi-language](/docs/multi-language-support/)
 - [Code i18n](/docs/multi-language-support/code-i18n/)
 - [Multi-language fields](/docs/multi-language-support/multi-language-fields/)

@@ -1,11 +1,12 @@
-# Unknown
+# Select Options Fieldtype in ProcessWire CMS
 
 Source: https://processwire.com/docs/fields/select-options-fieldtype/
+
+# Select Options Fieldtype (FieldtypeOptions) 
 
 The Options Fieldtype provides single and multi choice selectable options in ProcessWire, as an alternative to using Page fields.
 
 For features and highlights see our [post on the Options Fieldtype](/blog/posts/new-options-fieldtype-processwire-2.5.17/) or continue reading here to learn more about how to use it.
-
 - [About the Options Fieldtype](#about-the-options-fieldtype)
 - [Creating an Options field](#creating-an-options-field)
 - [Defining options](#defining-options)
@@ -21,8 +22,7 @@ For features and highlights see our [post on the Options Fieldtype](/blog/posts/
 - [Manipulating available options for all pages](#manipulating-available-options-for-all-pages)
 
 ---
-
-[#](#)
+[](#)
 
 ### About the Options Fieldtype
 
@@ -36,7 +36,7 @@ The Options Fieldtype was added to the core in ProcessWire 2.5.17.
 
 ## Options Administration
 
-[#](#)
+[](#)
 
 ### Creating an Options field
 
@@ -45,7 +45,7 @@ The Options Fieldtype was added to the core in ProcessWire 2.5.17.
 3. Create a new field (Setup > Fields > Add New) and choose "Options" as the type.
 4. After creating the field, click to the *Details* tab, where you can define your options.
 
-[#](#)
+[](#)
 
 ### Defining options
 
@@ -53,45 +53,33 @@ You can define options on the *Details* tab when editing an Options field (Setup
 
 Once an option exists in the database, it is assigned an ID number. When selected options are saved on a page, the ID number [for each option] is stored rather than the option title or value. This enables you to go back and later modify options without breaking existing selections on a page. However, it does require that that the assigned ID number always remain with the option.
 
-In addition, these ID numbers enable mutli-language support by connecting an option in one language with a translation in another language. Please note that these ID numbers need not symbolize anything about your option title or value, and are not typically used for anything on the front-end of your site.
-
-[#](#)
+In addition, these ID numbers enable mutli-language support by connecting an option in one language with a translation in another language. Please note that these ID numbers need not symbolize anything about your option title or value, and are not typically used for anything on the front-end of your site.[](#)
 
 ### Adding New Options
 
 Enter the text of each new option on a new line anywhere in the existing options. You may omit the ID number as one will be automatically assigned after you save. Once assigned, you should never change this ID number, but you can change the title (or value) as much as you like.
 
-While we recommend letting the Options Fieldtype assign unique ID numbers for you, you may optionally assign your own. To do this, specify `123=title` when adding a new option, where `123` is the ID number you wish to assign and `title` is the title text for your option. If you need separate "value" and "title" properties for each option, see the last section in these notes.
-
-[#](#)
+While we recommend letting the Options Fieldtype assign unique ID numbers for you, you may optionally assign your own. To do this, specify `123=title` when adding a new option, where `123` is the ID number you wish to assign and `title` is the title text for your option. If you need separate "value" and "title" properties for each option, see the last section in these notes.[](#)
 
 ### Moving or Sorting Options
 
-Copy entire line(s), including ID number, and paste wherever you want them to go.
-
-[#](#)
+Copy entire line(s), including ID number, and paste wherever you want them to go.[](#)
 
 ### Editing or Renaming Options
 
-Modify the option title or value as you would like, ensuring that the original ID number remains connected with the option.
-
-[#](#)
+Modify the option title or value as you would like, ensuring that the original ID number remains connected with the option.[](#)
 
 ### Deleting Options
 
 Delete the entire lines containing the options that you want to delete. You will be asked to confirm the deletion after you submit the form. The option will not be deleted until you click the box to confirm and submit the form again. Note that this also deletes any selections for that option in the database.
 
-If using multi-language options, deleting the option in the default language deletes it for all languages, and deleting an option in a non-default language only deletes the translation.
-
-[#](#)
+If using multi-language options, deleting the option in the default language deletes it for all languages, and deleting an option in a non-default language only deletes the translation.[](#)
 
 ### Multi-Language: Translating Options
 
 Multi-language support with options requires that you have the LanguageSupportFields module installed (Modules > Core > Language > Language Support Fields).
 
-Define your options in the default language and save, before defining them in other languages. Copy the options you want to translate from the default language tab to the other language tab. Paste in and translate the titles (and/or values). Untranslated options inherit the default language title and value. If using separate option values (as described in the next section) your translation does not need to include the "value" portion unless you want it to.
-
-[#](#)
+Define your options in the default language and save, before defining them in other languages. Copy the options you want to translate from the default language tab to the other language tab. Paste in and translate the titles (and/or values). Untranslated options inherit the default language title and value. If using separate option values (as described in the next section) your translation does not need to include the "value" portion unless you want it to.[](#)
 
 ### Separate Option Values
 
@@ -101,7 +89,7 @@ By default only titles are kept with each option. If you want to maintain a sepa
 
 ## Options API
 
-[#](#)
+[](#)
 
 ### Outputting selected options on a page
 
@@ -119,9 +107,7 @@ If Options field only supports 1 selection, the above example would still work. 
 echo $page->countries->title;
 ```
 
-There is no distinction between single-value and multi-value options at the API level. You can simply choose to treat it as a single or multi-value field as you see fit. This works because when you access the title (or other) property from the field, it simply gives you the value for that property from the first item.
-
-[#](#)
+There is no distinction between single-value and multi-value options at the API level. You can simply choose to treat it as a single or multi-value field as you see fit. This works because when you access the title (or other) property from the field, it simply gives you the value for that property from the first item.[](#)
 
 ### Checking if an option is selected
 
@@ -157,9 +143,7 @@ if($page->countries->hasValue('fi')) {
 }
 ```
 
-All selectable options also have numeric IDs which you can use in comparisons as well. For example: `$page->country->id == 123` or `$page->countries->hasID(123);` But using IDs doesn't make for very easy-to-read code, so we'd suggest sticking with using the titles or values instead.
-
-[#](#)
+All selectable options also have numeric IDs which you can use in comparisons as well. For example: `$page->country->id == 123` or `$page->countries->hasID(123);` But using IDs doesn't make for very easy-to-read code, so we'd suggest sticking with using the titles or values instead.[](#)
 
 ### Manipulating options on a page from the API
 
@@ -227,12 +211,11 @@ $options = $all_options->find("title=Finland|Sweden|Norway");
 $page->countries = $options;
 ```
 
-[#](#)
+[](#)
 
 ### Manipulating available options for all pages
 
 This section coming soon. For additional info now, see the bottom of the /wire/modules/Fieldtype/FieldtypeOptions/FieldtypeOptions.module file, which contains all the public API methods for adding, updating and deleting available options at the API level.
-
 - [Fields, types, input](/docs/fields/)
 - [Introduction to fields](/docs/start/structure/fields/)
 - [Field dependencies](/docs/fields/dependencies/)

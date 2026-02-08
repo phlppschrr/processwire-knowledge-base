@@ -1,11 +1,12 @@
-# Unknown
+# Multi-language CMS fields in ProcessWire
 
 Source: https://processwire.com/docs/fields/multi-language-fields/
+
+# Using multi-language fields 
 
 Here we look in detail at multi-language fields and language-alternate fields, as well as how to use them. Also includes a video overview and examples of how to use language fields to create full multi-language websites.
 
 ProcessWire supports the use of multi-language fields and language-alternate fields. A multi-language field is a single field that supports multiple languages, and these are typically text-based fields. Language-alternate fields are separate fields where the value of one can substitute for another, when the user's language justifies it. Below is a short video that demonstrates the use of both.
-
 - [Multi-language fields](#multi-language-fields)
 - [Language alternate fields](#language-alternate-fields)
 - [How language fields work from the $pages API](#how-language-fields-work)
@@ -33,10 +34,9 @@ In order to present your site's content in a different language using language f
 
 ---
 
-## []()Multi-language fields
+## Multi-language fields
 
 ProcessWire 2.2 includes 3 new fieldtypes that support multiple languages:
-
 - TextLanguage – single line text field
 - TextareaLanguage – multi-line text or rich-text (TinyMCE) field
 - PageTitleLanguage – special text field to be used with page titles only
@@ -55,7 +55,7 @@ To create a new multi-language field, all you need to do is go to Setup > Fields
 
 ---
 
-## []()Language-alternate fields
+## Language-alternate fields
 
 Language-alternate fields allow for the value of one field to replace the value of another when the user's language is something other than the default. Unlike multi-language fields, language-alternate fields are actually separate fields that you create on your own. ProcessWire identifies them based on the name you give them. The name is a combination of an existing field in the system combined with the language name.
 
@@ -69,7 +69,7 @@ Unlike multi-language fields, language alternate fields can be used with any typ
 
 ---
 
-## []()How language fields work from the $pages API
+## How language fields work from the $pages API
 
 Whether using multi-language fields or language-alternate fields, when a user's language is something other than the default, then the value of the field reflects the language-specific value, if it is available. If it is not available, then the default language version is substituted. Likewise, any API calls using selectors that include the field, will match pages that contain the term in either the current user's language, OR the default language.
 
@@ -85,7 +85,7 @@ Lets now change the example and say that "body" was not a multi-language field, 
 
 ---
 
-## []()Getting and setting language values in the API
+## Getting and setting language values in the API
 
 Getting values is no different from anywhere else in the API except that you'll be getting a value that is specific to the current user's language. As a result, if you wanted to get a value in some other language installed on your system, you would have to switch the current user's language:
 
@@ -98,7 +98,7 @@ $user->language = $language; // restore the user's language
 
 The value of a multi-language or language-alternate field is affected by the "outputFormatting" setting of a page. On the front-end of your site, outputFormatting is always turned on, unless you've turned it off. In other applications, like in the admin, or at the command line, outputFormatting may be off by default. The example above, and most of the documentation on this page assumes that outputFormatting is on. In cases where outputFormatting is off, the value of our language fields may be different. These differences are outlined below:
 
-## []()Multi-language field values
+## Multi-language field values
 
 When outputFormatting is ON, the value of a multi-language field is a string (as it shows in most examples on this page). That string reflects the value from the current user's language. If the value is blank in the current user's language, the value from the default language will be there instead.
 
@@ -140,7 +140,7 @@ $page->save(); // save the page with the new language values
 
 ---
 
-## []()Language-alternate field values
+## Language-alternate field values
 
 For the following description, lets assume we have a field called "body" and another called "body_dutch", which is the Dutch alternate for body. The value of a language-alternate field is always a string, regardless of whether outputFormatting is on or off. But when outputFormatting is ON (as it is in most API usage), the value of "body" will be the value of the alternate field when the user's language justifies it. For instance, if the user's language is Dutch, and the value of $page->body_dutch is populated, then an access to $page->body will actually return the value from $page->body_dutch. But if $page->body_dutch is not populated, then the default, $page->body is returned.
 
@@ -182,4 +182,5 @@ $page->save(); // save the page
 - [Multi-language](/docs/multi-language-support/)
 - [More topics](/docs/more/)
 
-[Code i18n](/docs/multi-language-support/code-i18n/)[Multi-language URLs](/docs/multi-language-support/multi-language-urls/)
+[Code i18n](/docs/multi-language-support/code-i18n/)
+[Multi-language URLs](/docs/multi-language-support/multi-language-urls/)

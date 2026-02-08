@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire PHP Coding Style Guide v1.0
 
 Source: https://processwire.com/docs/more/coding-style-guide/
+
+# ProcessWire PHP Coding Style Guide v1.0 
 
 This PHP style guide represents the coding style preferred for the ProcessWire core.
 
@@ -70,81 +72,63 @@ The ProcessWire coding style guide is based on [PSR-1](https://github.com/php-fi
 
 ---
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
-
-[#](#)
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).[](#)
 
 ## 1. Overview
 
-[#](#)
+[](#)
 
 ### 1.1. Summary
 
 **An asterisk is appended to lines that vary significantly from the PSR style guides.*
-
 - 
 
 Files MUST use only `<?php` and `<?=` tags.
-
 - 
 
 Files MUST use only UTF-8 without BOM for PHP code.
-
 - 
 
 Class names MUST be declared in `StudlyCaps`.
-
 - 
 
 Class constants SHOULD be declared in `camelCase`.*
-
 - 
 
 Method names MUST be declared in `camelCase`.
-
 - 
 
 Code MUST use tabs for indenting, not spaces.*
-
 - 
 
 Code MUST use syntax compatible with PHP 5.3.8 or newer.* (PW core only)
-
 - 
 
 There MUST NOT be a hard limit on line length and it is RECOMMENDED that line length not exceed 120 characters except in some circumstances (see [Lines](https://processwire.com/docs/more/coding-style-guide/#2.2-lines)).*
-
 - 
 
 Opening braces for classes MUST go on the same line, and closing braces MUST go on the next line after the body.*
-
 - 
 
 Opening braces for methods MUST go on the same line, and closing braces MUST go on the next line after the body.*
-
 - 
 
 Visibility MUST be declared on all properties and methods.
-
 - 
 
 Control structure keywords, method/function calls, and method/function declarations MUST NOT have one space after them.*
-
 - 
 
 Opening braces for control structures MUST go on the same line, and closing braces MUST go on the next line after the body.
-
 - 
 
 Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
-
 - 
 
 Use [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) for describing classes, methods, properties, arguments, return values, hookable methods, or anything else beneficial to documentation or IDEs.*
-
 - Make string constants translatable for multi-language support.*
 
-[#](#)
+[](#)
 
 ### 1.2. Example
 
@@ -210,95 +194,80 @@ class Sample extends WireData implements Module {
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## 2. General
 
-[#](#)
+[](#)
 
 ### 2.1. Files
 
 - 
 
 All PHP files MUST use the Unix LF (linefeed) line ending.
-
 - 
 
 PHP code MUST use the long `<?php` `?>` tags or the short-echo `<?=` `?>` tags; it MUST NOT use the other tag variations.
-
 - 
 
 PHP code MUST use only UTF-8 without BOM.
-
 - 
 
 The closing `?>` tag MUST be omitted from files containing only PHP, and the opening `<?php` tag MUST NOT be preceded by any whitespace.
 
-[#](#)
+[](#)
 
 ### 2.2. Lines
 
 - 
 
 There MUST NOT be a hard limit on line length.
-
 - 
 
 A maximum line length of 120 characters is RECOMMENDED, except for lines containing translatable phrases where the length should be dictated by the phrase. Line length SHOULD NOT exceed 145 characters unless it is for a translatable phrase or PHP comment. Lines of PHP code longer than that SHOULD be split into multiple subsequent lines of no more than 120 characters each.
-
 - 
 
 Blank lines SHOULD be added where appropriate to improve readability and to indicate related blocks of code.
-
 - There SHOULD NOT be more than one statement per line.
 
-[#](#)
+[](#)
 
 ### 2.3. Indentation, Tabs, Spaces
 
 - 
 
 Code MUST use tabs for indenting, not spaces.
-
 - 
 
 Additional whitespace MAY be used between or at the end of lines (whitespace is disregarded in diffs).
 
-*For conversion purposes: when spaces are present instead of tabs, each group of 4-consecutive spaces at the beginning of a line will be assumed to be a tab, for spaces-to-tabs conversion.*
-
-[#](#)
+*For conversion purposes: when spaces are present instead of tabs, each group of 4-consecutive spaces at the beginning of a line will be assumed to be a tab, for spaces-to-tabs conversion.*[](#)
 
 ### 2.4. Keywords and True/False/Null
 
 - 
 
 [PHP keywords](http://php.net/manual/en/reserved.keywords.php) MUST be in lower case.
-
 - 
 
 The PHP constants `true`, `false`, and `null` SHOULD be in lower case.
 
 ---
-
-[#](#)
+[](#)
 
 ## 3. Namespaces
 
-[#](#)
+[](#)
 
 ### 3.1. Using Namespaces
 
 When namespaces are used (like with ProcessWire 3.x), the following are RECOMMENDED:
-
 - 
 
 The `namespace` declaration be placed on the same line as the opening `<?php` tag, or on the first line after.
-
 - 
 
 There is one blank line after the namespace declaration.
-
 - When present, `use` declarations go after the namespace declaration, with one `use` keyword per declaration, and a blank line after the block of `use` declarations.
 
 For example:
@@ -314,19 +283,17 @@ use OtherVendor\OtherPackage\BazClass;
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## 4. Classes, Properties, and Methods
 
-[#](#)
+[](#)
 
 ### 4.1. Class and Interface Declarations
 
 - 
 
 Class and interface names MUST be declared in `StudlyCaps`.
-
 - 
 
 Classes and interfaces SHOULD be documented with PHPDoc.
@@ -343,18 +310,16 @@ Classes and interfaces SHOULD be documented with PHPDoc.
  }
 ```
 
-[#](#)
+[](#)
 
 ### 4.2. Constants
 
 - 
 
 Class constants in the ProcessWire core SHOULD be declared in `camelCase`.
-
 - 
 
 Class constants outside of the ProcessWire core MAY be declared in `camelCase` or `UPPER_CASE`, but MUST be consistent in a given class.
-
 - 
 
 Class constants SHOULD be documented with PHPDoc.
@@ -376,7 +341,7 @@ class Foo {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.3. Extends and Implements
 
@@ -397,38 +362,31 @@ class ClassName extends ParentClass implements
     InterfaceC {
 ```
 
-[#](#)
+[](#)
 
 ### 4.4. Properties
 
 - 
 
 Property names SHOULD be declared in `camelCase`.
-
 - 
 
 Properties SHOULD be documented with PHPDoc `@var` keywords. There SHOULD NOT be blank lines between the PHPDoc and property declaration.
-
 - 
 
 Visibility MUST be declared on all properties (i.e. `protected`, `private`).
-
 - 
 
 Visibility SHOULD be declared `protected` if a property has potential value to direct manipulation or access by descending classes. Otherwise it should be declared `private`. When in doubt, use `protected`.
-
 - 
 
 It is RECOMMENDED that visibility not be declared `public` unless absolutely necessary.
-
 - 
 
 The `var` keyword MUST NOT be used to declare a property.
-
 - 
 
 There MUST NOT be more than one property declared per statement.
-
 - 
 
 Properties SHOULD be declared with a default value when possible.
@@ -446,7 +404,7 @@ class ClassName {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.5. Properties and magic methods
 
@@ -470,26 +428,22 @@ class SampleClass {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.6. Methods
 
 - 
 
 Method names MUST be declared in `camelCase`.
-
 - 
 
 Visibility MUST be declared on all methods.
-
 - 
 
 Methods SHOULD be documented with PHPDoc. There SHOULD NOT be blank lines between the PHPDoc and the method declaration.
-
 - 
 
 Method declarations MUST have at least one blank line separating them from other method, property or constant declarations in a class. If the method is documented with PHPDoc, this applies to the PHPDoc that accompanies the method rather than the method itself.
-
 - 
 
 Method names MUST NOT be declared with a space after the method name. The opening brace MUST go on the same line with a space between the closing parenthesis and the opening brace. The closing brace MUST go on the next line following the body. There MUST NOT be a space after the opening parenthesis, and there MUST NOT be a space before the closing parenthesis.
@@ -507,14 +461,13 @@ public function fooBarBaz($arg1, $arg2) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.7. Method Arguments
 
 - 
 
 In the argument list, there MUST NOT be a space before each comma, and there MUST be one space after each comma.
-
 - 
 
 Method arguments with default values MUST go at the end of the argument list.
@@ -539,26 +492,22 @@ public function aVeryLongMethodName(
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.8. Hookable Methods and Arguments (ProcessWire only)
 
 - 
 
 Hookable methods MUST be declared in a class that descends from `Wire` or any class that implements the `WireHookable` interface (this includes almost all ProcessWire classes).
-
 - 
 
 Hookable method names MUST be declared with 3-leading underscores "___".
-
 - 
 
 Hookable methods MUST use either `public` or `protected` visibility.
-
 - 
 
 Hookable methods MUST NOT force arguments to be passed by reference (i.e. avoid `&$arg2`).
-
 - 
 
 Hookable methods SHOULD be documented with PHPDoc accompanying the method, as well as a PHPDoc `@method` statement in the `class` PHPDoc that documents the hookable method call, *without* the three leading underscores.
@@ -588,14 +537,13 @@ class SampleClass extends Wire {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.9. abstract, final, and static
 
 - 
 
 When present, the `abstract` and `final` declarations SHOULD precede the visibility declaration.
-
 - 
 
 When present, the `static` declaration SHOULD come after the visibility declaration.
@@ -613,7 +561,7 @@ abstract class ClassName {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.10. Method and Function Calls
 
@@ -636,13 +584,11 @@ $foo->bar(
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## 5. Control Structures
 
 The general style rules for control structures are as follows:
-
 - There MUST NOT be whitespace after the control structure keyword
 - There MUST NOT be a space after the opening parenthesis
 - There MUST NOT be a space before the closing parenthesis
@@ -650,9 +596,7 @@ The general style rules for control structures are as follows:
 - The structure body MUST be indented once
 - The closing brace MUST be on the next line after the body
 
-The body of each structure SHOULD be enclosed by braces. The braces MAY be omitted if the structure exists on a single line of 80 characters or less.
-
-[#](#)
+The body of each structure SHOULD be enclosed by braces. The braces MAY be omitted if the structure exists on a single line of 80 characters or less.[](#)
 
 ### 5.1. if, elseif, else
 
@@ -668,9 +612,7 @@ if($expr1) {
 }
 ```
 
-The keywords `else if` SHOULD be used instead of `elseif` so that all control keywords are as readable as possible and remain in consistent English.
-
-[#](#)
+The keywords `else if` SHOULD be used instead of `elseif` so that all control keywords are as readable as possible and remain in consistent English.[](#)
 
 ### 5.2. switch, case
 
@@ -695,7 +637,7 @@ switch($expr) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 5.3. while, do while
 
@@ -715,7 +657,7 @@ do {
 } while($expr);
 ```
 
-[#](#)
+[](#)
 
 ### 5.4. for
 
@@ -727,7 +669,7 @@ for($i = 0; $i < 10; $i++) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.5. foreach
 
@@ -739,7 +681,7 @@ foreach($iterable as $key => $value) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### 4.6. try, catch
 
@@ -756,12 +698,11 @@ try {
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## 6. Closures
 
-[#](#)
+[](#)
 
 ### 6.1. Using Closures
 
@@ -794,12 +735,11 @@ $foo->bar(
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## 7. Operators
 
-[#](#)
+[](#)
 
 ### 7.1. Operators and spacing
 
@@ -836,22 +776,20 @@ $a++; // do this
 $a ++; // not this
 ```
 
-[#](#)
+[](#)
 
 ### 7.2. Operators in ProcessWire Selector Strings
 
 Operators in ProcessWire selector strings MUST NOT have whitespace before or after them. This is not just a matter of style, but a requirement of statements in selector strings. We mention it here to call attention to the difference between operators usage in selector strings and operators in PHP code.
-
 - Do this: `name=some_page, qty>10`
 - Not this: `name = some_page, qty > 10`
 
 ---
-
-[#](#)
+[](#)
 
 ## 8. Strings and Quotes
 
-[#](#)
+[](#)
 
 ### 8.1. Single vs. Double Quotes
 
@@ -866,7 +804,7 @@ $q = htmlentities($searchValue, ENT_QUOTES, 'UTF-8');
 echo "<input type='search' name='q' placeholder='Search' value='$q'>";
 ```
 
-[#](#)
+[](#)
 
 ### 8.2. Variables in strings
 
@@ -890,40 +828,31 @@ echo "You have logged in $user->logins times.";
 echo "<input name='{$id}_sort'>";
 ```
 
-For the cases where it's not required to use {brackets} it is RECOMMENDED that you don't use them, unless they aid readability in a specific case.
-
-[#](#)
+For the cases where it's not required to use {brackets} it is RECOMMENDED that you don't use them, unless they aid readability in a specific case.[](#)
 
 ### 8.4. Multi-language Translatable Strings
 
 - 
 
 In order for a string to be translatable by ProcessWire's language translation parser, it MUST be wrapped in a `$this->_('phrase')` method or `__('phrase')` function call.
-
 - 
 
 There MUST NOT be more than one translatable phrase per line.
-
 - 
 
 Line length MAY exceed the 120 character recommended length as needed in order to avoid splitting phrases.
-
 - 
 
 Translatable strings MUST be a single string that starts and ends with the same quote. They MUST NOT contain any concatenation, expressions, function calls or variable insertions.
-
 - 
 
 Translatable phrases within a non-static method of a `Wire` derived class MUST use `$this->_('phrase')` Outside of that context, translatable phrases MUST use `__('phrase')`.
-
 - 
 
 `$this->_x('phrase', 'context')` or `_x('phrase', 'context')` SHOULD be used when the phrase might duplicate another in the same file, with a different context.
-
 - 
 
 `$this->_n('singular', 'plural', $number)` or `_n('singular', 'plural', $number)` SHOULD be used when translating a phrase that may have different singular and plural translations depending on the value of `$number`.
-
 - 
 
 PHP variables MUST NOT be directly inserted into translation strings, as variable values that change cannot be directly translated. However, variables MAY be inserted by using placeholder strings in combination with the PHP `sprintf` function.
@@ -942,12 +871,11 @@ echo __('Thank you for visiting'); // Thank you message shown at logout
 ```
 
 ---
-
-[#](#)
+[](#)
 
 ## 9. Using ProcessWire API Variables
 
-[#](#)
+[](#)
 
 ### 9.1. Accessing API Variables
 
@@ -964,7 +892,7 @@ $wire->addHookAfter('Pages::saved', function(HookEvent $event) {
 });
 ```
 
-[#](#)
+[](#)
 
 ### 9.2. Creating API Variables
 
@@ -984,12 +912,11 @@ wire()-wire('varName', $varValue); // if $wire is not in scope
 You MUST NOT overwrite existing API variables (many will throw exceptions if you attempt to).
 
 ---
-
-[#](#)
+[](#)
 
 ## 10. ProcessWire 3.x
 
-[#](#)
+[](#)
 
 ### 10.1. Dependency Injection
 
@@ -1006,9 +933,7 @@ Within template files (outside of Wire-derived class scope) you may use the `$wi
 $item = $wire->wire(new SampleClass());
 ```
 
-Any objects returned from ProcessWire API functions/methods will already have their dependencies injected. You only need to inject dependencies to objects that you are creating yourself with `new ClassName()`.
-
-[#](#)
+Any objects returned from ProcessWire API functions/methods will already have their dependencies injected. You only need to inject dependencies to objects that you are creating yourself with `new ClassName()`.[](#)
 
 ### 10.2. ProcessWire 3.x Namespace
 
@@ -1023,18 +948,15 @@ To declare your own namespace, replace `ProcessWire` above with the path/name of
 Please note that if you do not declare a namespace in your PHP file (reverting to the root namespace), ProcessWire may maintain a separate compiled copy of the file in order to ensure compatibility with 3.x.
 
 ---
-
-[#](#)
+[](#)
 
 ## 11. Other
 
-[#](#)
+[](#)
 
 ### 11.1. Procedural functions
 
-Procedural functions SHOULD follow the same syntax and documentation rules as class methods.
-
-[#](#)
+Procedural functions SHOULD follow the same syntax and documentation rules as class methods.[](#)
 
 ### 11.2. define()
 
@@ -1044,22 +966,19 @@ PHP `define()` statements SHOULD use `UPPERCASE` rather than `camelCase`. Words 
 define("SAMPLE_DEFINE", "This is a sample define");
 ```
 
-[#](#)
+[](#)
 
 ### 11.3. PHPDoc Style Recommendations
 
 - 
 
 There SHOULD NOT be blank lines between the PHPDoc comment and the method or variable it describes.
-
 - 
 
 There SHOULD be at least one blank line between the PHPDoc description and any `@` keywords.
-
 - 
 
 There SHOULD NOT be any blank lines between `@` keyword lines (they should stay together as a group).
-
 - 
 
 There SHOULD be at least one blank line between the `@` keywords and the closing comment.

@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire tutorial: how to structure template files
 
 Source: https://processwire.com/docs/tutorials/how-to-structure-your-template-files/
+
+# How to structure your template files 
 
 How to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as extensive examples.
 
@@ -51,13 +53,7 @@ file:/site/templates/basic-page.php
 ```
 <html>
   <head>
-    <title><?php echo $page->title; ?></title>
-  </head>
-  <body>
-    <h1><?php echo $page->title; ?></h1>
-    <?php echo $page->body; ?>
-  </body>
-</html>
+    <title>
 ```
 
 Simply by adding `<?php echo $page->title; ?>` where we want to output the page's title, and `<?php echo $page->body; ?>` where we want to output the page's body, are all that is necessary to have a template file that we could use for dynamic output of any page in our site. Note that you may also shorten that to just `<?=$page->title?>` and `<?=$page->body?>` if you prefer (and the same goes for the rest of this tutorial), but we will stick to the longer syntax since there are still a few (rare) web servers out there that may not support these PHP short open/close tags.
@@ -77,10 +73,7 @@ file:/site/templates/head.inc
 ```
 <html>
   <head>
-    <title><?php echo $page->title; ?></title>
-  </head>
-  <body>
-    <h1><?php echo $page->title; ?></h1>
+    <title>
 ```
 
 We also know that the markup at the end of all our template files will be the same, so we'll move that markup into a foot.inc file.
@@ -93,7 +86,6 @@ file:/site/templates/foot.inc
 ```
 
 Where the template files will vary is what's in-between head.inc and foot.inc. So we'll use our basic-page.php template file to do the following, in this order:
-
 1. include the head.inc file
 2. output content
 3. include the foot.inc file
@@ -172,18 +164,7 @@ file:/site/templates/main.inc
 ```
 <html>
   <head>
-    <title><?php echo $headline; ?></title>
-  </head>
-  <body>
-    <div id='bodycopy'>
-      <h1><?php echo $headline; ?></h1>
-      <?php echo $bodycopy; ?>
-    </div>
-    <div id='sidebar'>
-      <?php echo $sidebar; ?>
-    </div>
-  </body>
-</html>
+    <title>
 ```
 
 What this example isn't showing is that your `$bodycopy` and `$sidebar` may consist of a lot more than just `$page->body` and `$page->sidebar`. Which leads us to…
@@ -242,27 +223,7 @@ file:/site/templates/main.inc
 ```
 <html>
   <head>
-    <title><?php echo $headline; ?></title>
-  </head>
-  <body>
-    <div id='bodycopy'>
-      <h1><?php echo $headline; ?></h1>
-      <?php echo $bodycopy; ?>
-    </div>
-    <div id='sidebar'>
-      <?php
-      echo $sidebar
-      if(count($subnav)) {
-        echo "<ul class='nav'>";
-        foreach($subnav as $child) {
-          echo "<li><a href='$child->url'>$child->title</a></li>";
-        }
-        echo "</ul>";
-      }
-      ?>
-    </div>
-  </body>
-</html>
+    <title>
 ```
 
 ### Adding an init.inc file to the mix (a best practice)
@@ -316,7 +277,6 @@ $bodycopy .= $page->comments->render();
 
 **When to use automatic inclusions**
 Whether or not you should use automatic inclusions kind of depends on the situation. If you are working with a site that has various output needs, some direct and some delayed, then automatic inclusions may get in the way. Likewise, if you have more than one main.inc file (perhaps representing different layouts) then it might be preferable to `include()` whatever output file you desire at the end of each template file. You may find in some cases that you'll use `$config->prependTemplateFile`, but not `$config->appendTemplateFile`. Again, it really just depends on the situation. However, now that you know about automatic inclusions, we think you'll find them very useful in many instances.
-
 - [Tutorials](/docs/tutorials/)
 - [A Beginner’s Guide To ProcessWire](https://www.smashingmagazine.com/2016/07/the-aesthetic-of-non-opinionated-content-management-a-beginners-guide-to-processwire/)
 - [How to install and setup ProcessWire CMS](https://webdesign.tutsplus.com/tutorials/how-to-install-and-setup-processwire-cms--cms-25509)

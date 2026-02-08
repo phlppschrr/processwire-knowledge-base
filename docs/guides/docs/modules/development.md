@@ -1,9 +1,10 @@
-# Unknown
+# Module development in ProcessWire CMS
 
 Source: https://processwire.com/docs/modules/development/
 
-It is easy to develop a module in ProcessWire, though some PHP experience is helpful. This section introduces module development and guides you through a simple example to get you started.
+# Developing modules in ProcessWire 
 
+It is easy to develop a module in ProcessWire, though some PHP experience is helpful. This section introduces module development and guides you through a simple example to get you started.
 - [Creating a simple module](#creating-a-simple-module)
 - [Telling ProcessWire about your module](#telling-processwire-about-your-module)
 - [Making the module do something](#making-the-module-do-something)
@@ -14,7 +15,7 @@ It is easy to develop a module in ProcessWire, though some PHP experience is hel
 - [Module name requirements](#module-name-requirements)
 - [Next steps](#next-steps)
 
-[#](#)
+[](#)
 
 ### Creating a simple module
 
@@ -27,9 +28,7 @@ class Foo extends WireData implements Module {
 }
 ```
 
-Save the class that you create in a file with the same name as the class, but with the extension “.module” or “.module.php” (either works). For example, a module with class *Foo* (like above) would be in a file named Foo.module or Foo.module.php. The file should be placed in /site/modules/. Though we recommend placing it in a directory within that, having the same name as the module class, like /site/modules/Foo/Foo.module.
-
-[#](#)
+Save the class that you create in a file with the same name as the class, but with the extension “.module” or “.module.php” (either works). For example, a module with class *Foo* (like above) would be in a file named Foo.module or Foo.module.php. The file should be placed in /site/modules/. Though we recommend placing it in a directory within that, having the same name as the module class, like /site/modules/Foo/Foo.module.[](#)
 
 ### Telling ProcessWire about your module
 
@@ -50,9 +49,7 @@ class Foo extends WireData implements Module {
 
 With the above, you've now got the minimum amount of information that ProcessWire needs to install your module. So go ahead and install it. Since you just creating the file, ProcessWire might not be able to see your module yet, so you'll want to login to your admin and then go to Modules > Refresh. ProcessWire should detect your module, and you'll see it on the Site tab of your Modules screen. Click the “Install” button.
 
-Your module may now be installed, but it doesn't actually do anything. That's okay, we'll get to that next.
-
-[#](#)
+Your module may now be installed, but it doesn't actually do anything. That's okay, we'll get to that next.[](#)
 
 ### Making the module do something
 
@@ -83,22 +80,19 @@ echo "<h1>" . $module->hi() . "</h1>";
 
 The output would be `<h1>Hi there guest</h1>` or whatever the current user’s name is.
 
-So now we've got a module that actually does something. If you are building a module to provide a library of reusable functions or the like, then this might be all you need. But what if you want to create a module that performs actions automatically, without having to be loaded manually? Read on…
-
-[#](#)
+So now we've got a module that actually does something. If you are building a module to provide a library of reusable functions or the like, then this might be all you need. But what if you want to create a module that performs actions automatically, without having to be loaded manually? Read on…[](#)
 
 ### Automatically loading modules
 
 ProcessWire supports something called **autoload modules**. These are modules that are loaded automatically when ProcessWire boots. Autoload modules are especially useful when you want to hook into anything within ProcessWire. We'll get into hooks in a bit, but first we'll tell you how to define an autoload module. It's as simple as just adding `'autoload' => true` to the information returned by your `getModuleInfo()` method or file:
 
 ```
-
 public static function getModuleInfo() {
   return [
     'title' => 'Hello World',
     'summary' => 'An example of creating a module',
     'version' => 1,
-    **'autoload' => true**
+    'autoload' => true
   ];
 }
 ```
@@ -124,9 +118,7 @@ If you go into your admin, you should now see a "Hi there name" notification at 
 
 Note in the above example that we don't display our “Hi there” message unless the user happens to be in the admin (which we determine by checking the current page's template). While it wouldn't hurt anything if we did, messages/notifications aren't displayed to users on the front-end, so there would be no point.
 
-** Pro Tip: **If you only want your module to autoload in the admin, change your **'autoload' => true** in your getModuleInfo() method to instead return **'autoload' => 'template=admin'**, which essentially says "autoload only if the current page template is admin." If you do this, then you can remove if() statement from the ready() method above, since you are now asking ProcessWire to autoload your module only in the admin. Remember to Modules > Refresh, after making this change.
-
-[#](#)
+** Pro Tip: **If you only want your module to autoload in the admin, change your **'autoload' => true** in your getModuleInfo() method to instead return **'autoload' => 'template=admin'**, which essentially says "autoload only if the current page template is admin." If you do this, then you can remove if() statement from the ready() method above, since you are now asking ProcessWire to autoload your module only in the admin. Remember to Modules > Refresh, after making this change.[](#)
 
 ### Adding hooks to autoload modules
 
@@ -158,9 +150,7 @@ public function ready() {
 }
 ```
 
-The `$event` argument that the hook function receives is a [HookEvent](https://processwire.com/api/ref/hook-event/) object. Since we are hooking *after* an existing method, it provides us the return value in `$event->return`, which we then modify by appending some more markup to it. It also provides all of the arguments the method received in `$event->arguments()`, and each argument can be retrieved by zero-based index, or by name. Were we using a *before* hook, we could also modify those arguments before they are received by the method we have hooked. For more about hooks and events, please see our [Hooks documentation](/docs/modules/hooks/).
-
-[#](#)
+The `$event` argument that the hook function receives is a [HookEvent](https://processwire.com/api/ref/hook-event/) object. Since we are hooking *after* an existing method, it provides us the return value in `$event->return`, which we then modify by appending some more markup to it. It also provides all of the arguments the method received in `$event->arguments()`, and each argument can be retrieved by zero-based index, or by name. Were we using a *before* hook, we could also modify those arguments before they are received by the method we have hooked. For more about hooks and events, please see our [Hooks documentation](/docs/modules/hooks/).[](#)
 
 ### Using an autoload module to add new methods to existing classes
 
@@ -193,7 +183,7 @@ foreach($page->children as $item) {
 }
 ```
 
-[#](#)
+[](#)
 
 ### Another example
 
@@ -222,9 +212,7 @@ What's a little different in this example relative to our previous examples is t
 
 What we are doing here is adding this hook to 1 specific object instance `$this->pages` rather than ALL instances of a class. In this case, it does not matter because there is only ever one instance of the Pages class, identified by `$this->pages`. But for classes that can have any number of instances (like Page) it would matter, as `$this->addHook('Page::method', ...)` would hook all instances of a Page and `$page->addHook('method', ...)` would only add the hook to that one $page.
 
-When it comes to module development, it's more likely you'll be hooking all instances of a class rather than just a single instance, so we won't dive deeper into it here. But if you are interested, be sure to read more in our [hooks documentation](/docs/modules/hooks/). This completes our basic introduction to development of a simple module, but there's lots more to learn if you are interested…
-
-[#](#)
+When it comes to module development, it's more likely you'll be hooking all instances of a class rather than just a single instance, so we won't dive deeper into it here. But if you are interested, be sure to read more in our [hooks documentation](/docs/modules/hooks/). This completes our basic introduction to development of a simple module, but there's lots more to learn if you are interested…[](#)
 
 ### Module name requirements
 
@@ -237,46 +225,45 @@ Modules that extend [core module types](/docs/modules/types/) should also have t
 **The module filename** must be the same as the module class name and end with the extension `.module` or `.module.php`, for example `HelloWorld.module` or `HelloWorld.module.php`.
 
 ---
-
-[#](#)
+[](#)
 
 ### Next steps
 
 - 
 
 Take a look at the HelloWorld module that’s included with the core. You can find it in your /site/modules/HelloWorld/ directory.
-
 - 
 
 Read the documentation for the [Module class](/api/ref/module/).
-
 - 
 
 Learn about configurable modules with the [ConfigurableModule class](https://processwire.com/api/ref/configurable-module/).
-
 - 
 
 Learn about the different kinds of [predefined module types](/docs/modules/types/).
-
 - 
 
 Check out the [Process Hello](https://github.com/ryancramerdesign/ProcessHello) module which demonstrates how to build an admin application.
-
 - 
 
 The [Fieldtype Map Marker](https://github.com/ryancramerdesign/FieldtypeMapMarker) module was originally put together as an example of how to create your own [Fieldtype](http://modules.processwire.com/categories/fieldtype/) and [Inputfield](http://modules.processwire.com/categories/inputfield/) (a more advanced example).
-
 - 
 
 Need to build a module that requires or installs other modules? Learn about [module dependencies](/talk/topic/778-module-dependencies/) and how to use them.
-
 - 
 
 Want help with module development? We are glad to help and have a [forum board](https://processwire.com/talk/forum/19-moduleplugin-development/) dedicated to it.
 
 ### 
 
-- #### [Add multi-language translations to your module](/docs/modules/development/multi-language-translations/)If you are a module developer, you might want to bundle multi-language translations with your module. This page covers all the…Learn more →
+- 
+[
+
+#### Add multi-language translations to your module
+
+](/docs/modules/development/multi-language-translations/)
+If you are a module developer, you might want to bundle multi-language translations with your module. This page covers all the…
+Learn more →
 
 - [Module development](/docs/modules/development/)
 - [Add multi-language translations to your module](/docs/modules/development/multi-language-translations/)
@@ -303,4 +290,5 @@ Want help with module development? We are glad to help and have a [forum board](
 - [Multi-language](/docs/multi-language-support/)
 - [More topics](/docs/more/)
 
-[Introduction to modules](/docs/modules/intro/)[Module types](/docs/modules/types/)
+[Introduction to modules](/docs/modules/intro/)
+[Module types](/docs/modules/types/)

@@ -1,6 +1,8 @@
-# Unknown
+# ProcessWire tutorial: intro to default site profile
 
 Source: https://processwire.com/docs/tutorials/default-site-profile/
+
+# Introduction to the default site profile 
 
 Just getting started with ProcessWire and aren't totally clear on what template files are? The good news is that template files aren't anything other than regular HTML or PHP files, and you can use them however you want!
 
@@ -11,17 +13,10 @@ For instance, `$page->title` contains the text contained in the Title field of t
 ```
 <html>
   <head>
-    <title><?= $page->title ?></title>
-  </head>
-  <body>
-    <h1><?= $page->title ?></h1>
-    <?= $page->body ?>
-  </body>
-</html>
+    <title>
 ```
 
 That's all that a template file is. But when we're building something for real, we like to save ourselves as much work as possible and avoid writing the same HTML markup in multiple places. In order to do that we'll usually isolate the repetitive markup into separate files or functions so that we don't have to write it more than once. That's not required of course, but it's a good idea to save you time and make it easier to maintain your site further down the road.
-
 - [Beginner / direct output version](#beginner-direct-output-version)
 - [Intermediate / delayed output version](#intermediate-delayed-output-version)
 - [Multi-language version](#multi-language-version)
@@ -29,22 +24,18 @@ That's all that a template file is. But when we're building something for real, 
 ### Template file strategies
 
 The default site profile uses a strategy called Delayed Output, but you should use whatever strategy you prefer (or make up your own). The two most popular strategies for template files are:
-
 1. 
 
 [Direct Output](http://processwire.com/to/direct-output/) is the simplest strategy and the one used by the Beginner Default Site Profile (described on the next page). While it doesn't scale as well as other strategies, it is a very good point to start from (and it may be all you ever need). If you've ever worked with WordPress templates, chances are you already know how Direct Output works. If you'd like to get started with this strategy, be sure to install the Beginner Default Site Profile (or the Classic Site Profile also uses this strategy).
-
 2. 
 
 [Delayed Output](http://processwire.com/to/delayed-output/) is the strategy used by the Intermediate Default Site Profile. It is also quite simple but involves populating content to placeholder variables rather than outputting directly. As a result it may take a few more seconds to understand than direct output, but the result can be more scalable and maintainable. By the time you finish reading this tutorial, we think you'll have a good sense of how delayed output works.
-
 3. 
 
 [Markup Regions](/docs/front-end/output/markup-regions/) is the newest supported strategy and for many may also be the easiest to use. It's good to understand the difference between direct and delayed output first, as Markup Regions are kind of a combination of those two. Currently no versions of the “Default” site profile use Markup Regions, but the “Regular” site profile does.
 
 ---
-
-[#](#)
+[](#)
 
 ## Beginner / direct output version
 
@@ -55,12 +46,10 @@ The default site profile comes in 3 different versions: beginner, intermediate, 
 ### How the beginner version of the default site profile works
 
 This beginner version of the default site profile uses the [Direct Output](http://processwire.com/to/direct-output/) strategy. When a page is viewed on your site, here's what happens:
-
 1. 
 
 **The initialization file is loaded:** [_init.php](https://github.com/processwire/site-beginner/blob/main/templates/_init.php)
 Here we use it just to define a shared function for navigation.
-
 2. 
 
 **The template file is loaded:** i.e. [basic-page.php](https://github.com/processwire/site-beginner/blob/main/templates/basic-page.php) or another
@@ -91,7 +80,6 @@ This all means that our template files (using direct output) are focused on outp
 ### Files in the beginner default profile
 
 Here is a summary of what is in each of the files in the /site/templates/ directory of the beginner default site profile. We also recommend reviewing them in this order:
-
 - [_head.php](https://github.com/processwire/site-beginner/blob/main/templates/_head.php) - HTML header (top half of HTML document)
 - [_foot.php](https://github.com/processwire/site-beginner/blob/main/templates/_foot.php) - HTML footer (bottom half of HTML document)
 - [basic-page.php](https://github.com/processwire/site-beginner/blob/main/templates/basic-page.php) - Template file outputting #content and #sidebar columns. This template file is used by most pages in this small site.
@@ -101,8 +89,7 @@ Here is a summary of what is in each of the files in the /site/templates/ direct
 - [_init.php](https://github.com/processwire/site-beginner/blob/main/templates/_init.php) - Initialization file that we use to define a shared function for generating navigation markup.
 
 ---
-
-[#](#)
+[](#)
 
 ## Intermediate / delayed output version
 
@@ -115,17 +102,14 @@ In the beginner version, the template files focused on outputting what went in b
 ### How the intermediate version of the default site profile works
 
 The intermediate default site profile uses the Delayed Output strategy mentioned on the first page. Here's how it works:
-
 1. 
 
 **The initialization file is loaded: **[_init.php](https://github.com/processwire/site-default/blob/main/templates/_init.php)
 We use it to define placeholder variables for content regions.
-
 2. 
 
 **The template file is loaded**: i.e. [home.php](https://github.com/processwire/site-default/blob/main/templates/home.php) or another
 We use it to populate values into the placeholder variables.
-
 3. 
 
 **The main output file is loaded: **[_main.php](https://github.com/processwire/site-default/blob/main/templates/_main.php)
@@ -138,7 +122,6 @@ Below are more details on exactly what takes place and in the three steps outlin
 We define placeholder variables for the regions in our page in the _init.php file. These placeholders can be anything that you like (and in any quantity) and usually depends entirely on the needs of your site design and content.
 
 In this default site, our needs are simple so we've defined placeholders for just 3 regions on the page. We usually name these regions something consistent with the HTML tag, id or class attribute just for ease of readability, but that's not required. These are the three placeholder variables we've defined in this site:
-
 - **$title **- The headline or title (we use for `<title>` and `<h1>`)
 - **$content** - The main page content (we use for `<div id='content'>`)
 - **$sidebar **- Sidebar content (we use for `<div id='sidebar'>`)
@@ -184,8 +167,6 @@ After ProcessWire has loaded our template file (i.e. home.php) it then knows to 
 
 ```
 <div id='content'>
-  <?= $content ?>
-​</div>
 ```
 
 Please go ahead and take a look at the [_main.php](https://github.com/processwire/site-default/blob/main/templates/_main.php) file for context.
@@ -203,8 +184,7 @@ Another benefit of delaying output in this manner means that we can make changes
 For example, lets say that one of the things we need to populate is the `<title>` tag in the document header. In the beginner edition, this lives in the _head.php file and it outputs the page title before we've output our main content. That's fine, but lets say that something about our main content affects the page title. Maybe we're using pagination (like this page you are reading now) or maybe it generates some kind of search results, and we want that to be reflected in the <title> tag… We might like it to say "Products 1-10 of 70" somewhere in the <title> tag. If we were using direct output–as in the beginner profile–it would be too late, because our <title> had already been output by the time we got around to retrieving search results and outputting them in the body copy region. To put it simply, delaying output gives you more control over what the final output will be since nothing is final till the end.
 
 ---
-
-[#](#)
+[](#)
 
 ## Multi-language version
 
@@ -227,7 +207,6 @@ _n('singular', 'plural', $count);
 For more about making your static text translatable see our documentation on [code internationalization](/docs/multi-language-support/code-i18n/).
 
 The only other thing different about the multi-language default site profile is that it contains some additional code in the _main.php file for navigation that lets you view the page in each language. You'll see this near the top of the _main.php file.
-
 - [Tutorials](/docs/tutorials/)
 - [A Beginner’s Guide To ProcessWire](https://www.smashingmagazine.com/2016/07/the-aesthetic-of-non-opinionated-content-management-a-beginners-guide-to-processwire/)
 - [How to install and setup ProcessWire CMS](https://webdesign.tutsplus.com/tutorials/how-to-install-and-setup-processwire-cms--cms-25509)

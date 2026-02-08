@@ -49,7 +49,6 @@ class BSMarkdownConverter:
 
         tag = element.name
         
-        # Block level newlines
         if tag in ['p', 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'pre', 'blockquote', 'table', 'tr']:
             self._ensure_newline(2 if tag in ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'blockquote', 'table'] else 1)
 
@@ -106,14 +105,20 @@ class BSMarkdownConverter:
 
         # Links
         elif tag == 'a':
-            href = element.get('href', '')
-            self._add_text('[', raw=True)
-            for child in element.children:
-                self.convert(child)
-            self._add_text(f']({href})', raw=True)
+            href = element.get('href')
+            # Skip empty anchors (often used for targets)
+            if not href:
+                for child in element.children:
+                    self.convert(child)
+            else:
+                self._add_text('[', raw=True)
+                for child in element.children:
+                    self.convert(child)
+                self._add_text(f']({href})', raw=True)
 
         # Tables
         elif tag == 'table':
+            # print(f"DEBUG: Found table with {len(element.find_all('tr'))} rows")
             self._convert_table(element)
             self._ensure_newline(2)
 
@@ -136,12 +141,32 @@ class BSMarkdownConverter:
             for child in element.children:
                 self.convert(child, list_depth, list_type, list_index)
 
+    def get_markdown(self):
+        return "".join(self.output).strip()
+
     def _convert_table(self, table):
         rows = []
-        for tr in table.find_all('tr'):
-            cells = [normalize_text(td.get_text()).replace('|', '\\|') for td in tr.find_all(['td', 'th'])]
-            if cells:
-                rows.append(cells)
+        # Support tbody, thead, tfoot explicitly
+        all_rows = table.find_all('tr')
+        if not all_rows:
+             # Maybe rows are direct children?
+             pass 
+
+        for tr in all_rows:
+            row_cells = []
+            for cell in tr.find_all(['td', 'th']):
+                # Convert cell content to markdown
+                sub_converter = BSMarkdownConverter()
+                # Process children of the cell, not the cell itself (to avoid wrapper)
+                for child in cell.children:
+                    sub_converter.convert(child)
+                cell_md = sub_converter.get_markdown()
+                # Escape pipes for table format
+                cell_md = cell_md.replace('|', '\\|').replace('\n', ' ')
+                row_cells.append(cell_md)
+            
+            if row_cells:
+                rows.append(row_cells)
         
         if not rows: return
 
@@ -149,6 +174,8 @@ class BSMarkdownConverter:
         for i, row in enumerate(rows):
             while len(row) < max_cols: row.append("")
             self.output.append("| " + " | ".join(row) + " |\n")
+            # Assume first row is header if widely used convention, or check for TH
+            # For simplicity, always add separator after first row
             if i == 0:
                 self.output.append("| " + " | ".join(['---'] * max_cols) + " |\n")
 
@@ -209,8 +236,8 @@ def load_url_groups(path: Path):
     if current_urls: groups.append((current_name, current_urls))
     return groups
 
-def convert_guides(cache_root, urls_path, out_dir):
-    cache_root, urls_path, out_dir = Path(cache_root), Path(urls_path), Path(out_dir)
+def convert_guides(cache, urls, out):
+    cache_root, urls_path, out_dir = Path(cache), Path(urls), Path(out)
     groups = load_url_groups(urls_path)
     
     for category, urls in groups:

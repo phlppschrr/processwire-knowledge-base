@@ -1,9 +1,10 @@
-# Unknown
+# Using URL segments and routing in ProcessWire CMS
 
 Source: https://processwire.com/docs/front-end/how-to-use-url-segments/
 
-URL segments enable your page’s template file to become a URL router or controller to act upon different URLs sent to it.
+# URL segments and routing 
 
+URL segments enable your page’s template file to become a URL router or controller to act upon different URLs sent to it.
 - [What are URL segments?](#what-are-url-segments)
 - [How do you enable URL segments?](#how-do-you-enable-url-segments)
 - [Where can you use URL segments?](#where-can-you-use-url-segments)
@@ -14,8 +15,7 @@ URL segments enable your page’s template file to become a URL router or contro
 - [URL segment whitelist](#url-segment-whitelist)
 
 ---
-
-[#](#)
+[](#)
 
 ### What are URL segments?
 
@@ -25,9 +25,7 @@ Lets assume that the path /products/tools/hammer/ resolved to an actual page in 
 
 If there was yet another segment appended to it, like /products/tools/hammer/photos/grip/ then "photos" would be URL segment #1 and "grip" would be URL segment #2. The "hammer" page would still be displayed, but its template file could respond to the different URL segments however it wanted. In this case, the logic in the template file might look for "photos" in URL segment #1 and display a photo gallery when present.
 
-As you might gather from this example, URL segments enable your page's template file to become a URL router or controller to act upon different URLs sent to it.
-
-[#](#)
+As you might gather from this example, URL segments enable your page's template file to become a URL router or controller to act upon different URLs sent to it.[](#)
 
 ### How do you enable URL segments?
 
@@ -37,13 +35,11 @@ URL segments are not enabled by default. They have to be enabled for each templa
 $config->maxUrlSegments = 4;
 ```
 
-[#](#)
+[](#)
 
 ### Where can you use URL segments?
 
-You can use URL segments on any page where your template settings allow, regardless of whether it has children or not. Should there be a child page that has the same name as a URL segment that the parent page's template is looking for, the pages in the tree always have precedence. Meaning, URL segments only apply if the requested URL did not resolve to an actual page. As a result, you should avoid using URL segments where you think the page names and URL segments could collide.
-
-[#](#)
+You can use URL segments on any page where your template settings allow, regardless of whether it has children or not. Should there be a child page that has the same name as a URL segment that the parent page's template is looking for, the pages in the tree always have precedence. Meaning, URL segments only apply if the requested URL did not resolve to an actual page. As a result, you should avoid using URL segments where you think the page names and URL segments could collide.[](#)
 
 ### How does a template file identify URL segments?
 
@@ -51,10 +47,10 @@ URL segments can be accessed from the [$input](https://processwire.com/docs/star
 
 ```
 $input->urlSegment($n); // Retrieve the $n'th URL segment (1–3*)
-$input->urlSegment1; // Retrieve the first: /path/to/page/**aaa**/
-$input->urlSegment2; // Retrieve the second: /path/to/page/aaa/**bbb**/
-$input->urlSegment3; // Retrieve the third: /path/to/page/aaa/bbb/**ccc**/
-$input->urlSegmentStr; // Retrieve all: /path/to/page/**aaa/bbb/ccc**/
+$input->urlSegment1; // Retrieve the first: /path/to/page/aaa/
+$input->urlSegment2; // Retrieve the second: /path/to/page/aaa/bbb/
+$input->urlSegment3; // Retrieve the third: /path/to/page/aaa/bbb/ccc/
+$input->urlSegmentStr; // Retrieve all: /path/to/page/aaa/bbb/ccc/
 ```
 
 Example:
@@ -69,7 +65,7 @@ if($input->urlSegment1 == 'photos') {
 }
 ```
 
-[#](#)
+[](#)
 
 ### Best practices
 
@@ -119,9 +115,7 @@ switch($input->urlSegment1) {
 }
 ```
 
-Arguably this method is easier to follow and to add further options, but it is a matter of personal preference.
-
-[#](#)
+Arguably this method is easier to follow and to add further options, but it is a matter of personal preference.[](#)
 
 ### Using $input->urlSegmentStr instead
 
@@ -140,18 +134,15 @@ if($input->urlSegmentStr() === 'photos/primary') {
 }
 ```
 
-[#](#)
+[](#)
 
 ### Page numbers and URL segments
 
-When using pagination, you may also see page numbers in URLs, like /a/b/c/page2/. The page2 portion is not considered a URL segment and is instead considered a page number. When page numbers are enabled for your template, any URLs matching the page number format will not be counted towards your URL segments. When both URL segments and page numbers are used, the page numbers always appear at the end.
-
-[#](#)
+When using pagination, you may also see page numbers in URLs, like /a/b/c/page2/. The page2 portion is not considered a URL segment and is instead considered a page number. When page numbers are enabled for your template, any URLs matching the page number format will not be counted towards your URL segments. When both URL segments and page numbers are used, the page numbers always appear at the end.[](#)
 
 ### URL segment whitelist
 
 If you don't want your template file to have to determine when to throw a 404 for unknown URL segment(s) you can define a whitelist of URL segments. This is done by editing any template (Setup > Templates > your_template) and then clicking on the URLs tab. You'll see a “Which URL Segments do you want to allow?” field where you can directly specify the URL segments you want to allow, or a regular expression to match what's allowed.
-
 - [Front-end](/docs/front-end/)
 - [Output strategies](/docs/front-end/output/)
 - [URL segments and routing](/docs/front-end/how-to-use-url-segments/)

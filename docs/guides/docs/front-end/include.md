@@ -1,6 +1,8 @@
-# Unknown
+# Bootstrapping ProcessWire CMS from external scripts
 
 Source: https://processwire.com/docs/front-end/include/
+
+# Including and bootstrapping ProcessWire 
 
 Use ProcessWire’s API in other PHP apps and shell scripts… It’s easy!
 
@@ -45,7 +47,6 @@ listPage($pages->get("/")); // start at homepage
 Note that you would need to replace the lines containing paths to have the equivalent paths on your machine (lines 1 and 3). You would also make the shell script executable, i.e.
 
 ```
-
 chmod +x sitemap.sh
 ```
 
@@ -100,27 +101,9 @@ We'll use the same example as in the shell script above, except that we'll use m
 </head>
 <body>
     <h1>Site Map</h1>
-    <?php
-    include("./index.php"); // bootstrap ProcessWire
-    function listPage($page, $level = 0) {
-        echo "<li><a href='$page->url'>$page->title</a>";
-        if($page->numChildren) {
-            echo "<ul>";
-            foreach($page->children as $child) listPage($child, $level+1);
-            echo "</ul>";
-        }
-        echo "</li>";
-    }
-    ?>
-    <ul>
-      <?php listPage($pages->get("/")); ?>
-    </ul>
-    </body>
-</html>
 ```
 
 You can do anything with ProcessWire's API that you can do from a template, so everything you can do in template files still applies, as does everything in the [developer API](/api/ref/).
-
 - [Front-end](/docs/front-end/)
 - [Output strategies](/docs/front-end/output/)
 - [URL segments and routing](/docs/front-end/how-to-use-url-segments/)
