@@ -17,6 +17,8 @@ The index is organized into:
 - Core Classes
 - Functions (file-level docs without classes)
 
+Index categories are configured in `categories.json` (official API structure). If an entry is not listed there, heuristic grouping is used and it falls back to `Additional`/`Other`.
+
 ## Hookable Methods
 Methods implemented with a `___` prefix are hookable. In the docs:
 - Filenames keep the `___` prefix (e.g. `method-___if.md`).

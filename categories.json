@@ -1,0 +1,163 @@
+{
+  "api_variables": {
+    "order": [
+      "Primary",
+      "Input & Output",
+      "Users & Access",
+      "Utilities & Helpers",
+      "System",
+      "Additional"
+    ],
+    "categories": {
+      "Primary": ["$page", "$pages", "$modules", "$user"],
+      "Input & Output": ["$input", "$sanitizer", "$session", "$log"],
+      "Users & Access": ["$user", "$users", "$permissions", "$roles"],
+      "Utilities & Helpers": ["$cache", "$datetime", "$files", "$mail"],
+      "System": [
+        "$config",
+        "$database",
+        "$fields",
+        "$templates",
+        "$languages",
+        "$classLoader",
+        "$urls"
+      ]
+    }
+  },
+  "core_classes": {
+    "order": [
+      "Primary",
+      "Pages",
+      "Arrays",
+      "Modules",
+      "Files & Images",
+      "Fields & Templates",
+      "Pro Modules",
+      "Additional"
+    ],
+    "categories": {
+      "Primary": ["Wire", "WireData", "WireArray"],
+      "Pages": ["Page", "NullPage", "User", "Role", "Permission"],
+      "Arrays": ["WireArray", "PageArray", "PaginatedArray"],
+      "Modules": ["Module", "Fieldtype", "Inputfield", "Process", "Textformatter"],
+      "Files & Images": [
+        "Pagefile",
+        "Pagefiles",
+        "Pageimage",
+        "Pageimages",
+        "PagefilesManager"
+      ],
+      "Fields & Templates": ["Field", "Fieldgroup", "Template"],
+      "Pro Modules": ["FormBuilder", "ProCache"],
+      "Additional": [
+        "HookEvent",
+        "InputfieldWrapper",
+        "MarkupPagerNav",
+        "PagesPathFinder",
+        "PagesType",
+        "Paths",
+        "ProcessWire",
+        "Selector",
+        "Selectors",
+        "SessionCSRF",
+        "WireDatabaseBackup",
+        "WireHttp",
+        "WireMail",
+        "WireRandom",
+        "WireTextTools",
+        "WireUpload"
+      ]
+    }
+  },
+  "functions": {
+    "order": [
+      "Functions-API",
+      "Arrays",
+      "Class-helpers",
+      "Common",
+      "Files",
+      "Markup",
+      "Strings",
+      "Translation",
+      "Other"
+    ],
+    "categories": {
+      "Functions-API": [
+        "cache",
+        "config",
+        "database",
+        "datetime",
+        "fields",
+        "files",
+        "input",
+        "languages",
+        "modules",
+        "page",
+        "pageId",
+        "pages",
+        "paths",
+        "permissions",
+        "region",
+        "roles",
+        "sanitizer",
+        "session",
+        "setting",
+        "templates",
+        "urls",
+        "user",
+        "users",
+        "wire"
+      ],
+      "Arrays": ["PageArray", "WireArray", "WireData"],
+      "Class-helpers": [
+        "wireClassExists",
+        "wireClassImplements",
+        "wireClassName",
+        "wireClassNamespace",
+        "wireClassParents",
+        "wireInstanceOf",
+        "wireIsCallable",
+        "wireMethodExists"
+      ],
+      "Common": [
+        "wire",
+        "wire404",
+        "wireCount",
+        "wireDate",
+        "wireEmpty",
+        "wireInstance",
+        "wireLen",
+        "wireLength",
+        "wireMail"
+      ],
+      "Files": [
+        "wireChmod",
+        "wireCopy",
+        "wireIconMarkupFile",
+        "wireIncludeFile",
+        "wireMkdir",
+        "wireRenderFile",
+        "wireRmdir",
+        "wireSendFile",
+        "wireTempDir",
+        "wireUnzipFile",
+        "wireZipFile"
+      ],
+      "Markup": ["wireIconMarkup", "wireIconMarkupFile"],
+      "Strings": [
+        "wireBytesStr",
+        "wireDate",
+        "wirePopulateStringTags",
+        "wireRelativeTimeStr"
+      ],
+      "Translation": [
+        "__",
+        "_n",
+        "_x",
+        "wireLangEntityEncode",
+        "wireLangReplacements",
+        "wireLangTranslations"
+      ]
+    }
+  }
+}

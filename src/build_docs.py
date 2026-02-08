@@ -1581,14 +1581,14 @@ def extract_api_variables(
     classes: list[ParsedClassDoc],
     doc_index: DocIndex,
     out_dir: Path,
-) -> list[str]:
+) -> list[dict]:
     for item in classes:
         if item.class_info.name != "ProcessWire":
             continue
         if not item.class_info.docblock:
             break
         lines = strip_docblock(item.class_info.docblock)
-        entries: list[str] = []
+        entries: list[dict] = []
         for line in lines:
             stripped = line.strip()
             match = re.match(
@@ -1608,9 +1608,161 @@ def extract_api_variables(
             else:
                 type_label = f"`{type_value}`"
             desc_label = f" {desc}" if desc else ""
-            entries.append(f"- `{var_name}` {type_label}{desc_label}")
+            entries.append(
+                {
+                    "key": var_name,
+                    "label": f"- `{var_name}` {type_label}{desc_label}",
+                }
+            )
         return entries
     return []
+
+
+def load_categories_config(base_dir: Path) -> dict:
+    config_path = base_dir / "categories.json"
+    if not config_path.is_file():
+        return {}
+    try:
+        return json.loads(config_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def group_entries(
+    entries: list[dict],
+    config: dict,
+    default_order: list[str],
+    heuristic,
+    fallback_name: str,
+) -> tuple[dict[str, list[dict]], list[str]]:
+    order = list(config.get("order", default_order))
+    categories_map = config.get("categories", {})
+    categories: dict[str, list[dict]] = {name: [] for name in order}
+
+    entry_by_key = {entry["key"]: entry for entry in entries}
+    used: set[str] = set()
+
+    for cat in order:
+        for key in categories_map.get(cat, []):
+            entry = entry_by_key.get(key)
+            if not entry:
+                continue
+            categories.setdefault(cat, []).append(entry)
+            used.add(key)
+
+    for entry in sorted(entries, key=lambda e: e["key"].lower()):
+        if entry["key"] in used:
+            continue
+        category = heuristic(entry["key"]) if heuristic else None
+        if not category:
+            category = fallback_name
+        if category not in categories:
+            categories[category] = []
+            if category not in order:
+                order.append(category)
+        categories[category].append(entry)
+        used.add(entry["key"])
+
+    if fallback_name not in order and fallback_name in categories:
+        order.append(fallback_name)
+
+    return categories, order
+
+
+def api_variable_heuristic(key: str) -> str | None:
+    name = key.lstrip("$")
+    if name in {"page", "pages", "modules", "user"}:
+        return "Primary"
+    if name in {"input", "sanitizer", "session", "log"}:
+        return "Input & Output"
+    if name in {"user", "users", "permissions", "roles"}:
+        return "Users & Access"
+    if name in {"cache", "datetime", "files", "mail"}:
+        return "Utilities & Helpers"
+    if name in {"config", "database", "fields", "templates", "languages", "classLoader", "urls"}:
+        return "System"
+    return None
+
+
+def function_heuristic(name: str) -> str | None:
+    if name in {"cache", "config", "database", "datetime", "fields", "files", "input", "languages", "modules", "page", "pageId", "pages", "paths", "permissions", "region", "roles", "sanitizer", "session", "setting", "templates", "urls", "user", "users", "wire"}:
+        return "Functions-API"
+    if name in {"PageArray", "WireArray", "WireData"}:
+        return "Arrays"
+    if name.startswith("wireClass") or name in {"wireInstanceOf", "wireIsCallable", "wireMethodExists"}:
+        return "Class-helpers"
+    if name in {"wireIconMarkup", "wireIconMarkupFile"}:
+        return "Markup"
+    if name in {"wireBytesStr", "wireDate", "wirePopulateStringTags", "wireRelativeTimeStr"}:
+        return "Strings"
+    if name in {"__", "_n", "_x", "wireLangEntityEncode", "wireLangReplacements", "wireLangTranslations"}:
+        return "Translation"
+    if name in {"wireChmod", "wireCopy", "wireIncludeFile", "wireMkdir", "wireRenderFile", "wireRmdir", "wireSendFile", "wireTempDir", "wireUnzipFile", "wireZipFile", "wireIconMarkupFile"}:
+        return "Files"
+    if name.startswith("wire"):
+        return "Common"
+    return None
+
+
+def class_heuristic(name: str) -> str | None:
+    if name in {"Wire", "WireData", "WireArray"}:
+        return "Primary"
+    if name in {"Page", "NullPage", "User", "Role", "Permission"} or name.startswith("Page"):
+        return "Pages"
+    if name.endswith("Array") or name in {"PaginatedArray"}:
+        return "Arrays"
+    if name in {"Module", "Fieldtype", "Inputfield", "Process", "Textformatter"} or name.startswith("Inputfield") or name.endswith("Module"):
+        return "Modules"
+    if name.startswith("Pagefile") or name.startswith("Pageimage") or name in {"Pagefiles", "Pageimages", "PagefilesManager"}:
+        return "Files & Images"
+    if name in {"Field", "Fieldgroup", "Template"}:
+        return "Fields & Templates"
+    if name in {"FormBuilder", "ProCache"}:
+        return "Pro Modules"
+    return None
+
+
+def collect_class_entries(classes: list[ParsedClassDoc]) -> list[dict]:
+    entries: list[dict] = []
+    for item in classes:
+        class_name = item.class_info.name
+        doc_path = (Path(item.rel_path).parent / class_name / "index.md").as_posix()
+        entries.append({"key": class_name, "label": f"- [{class_name}]({doc_path})"})
+    return entries
+
+
+def collect_function_entries(
+    out_dir: Path,
+    files: list[ParsedFileDoc],
+) -> list[dict]:
+    entries: list[dict] = []
+    for item in files:
+        file_info = item.file_info
+        file_dir = out_dir / Path(item.rel_path).parent / file_info.name
+        for member in sorted(file_info.members, key=lambda m: m.pos):
+            cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
+            if not cleaned or member.kind != "method":
+                continue
+            func_name = member.name
+            doc_path = (file_dir / f"method-{slugify(func_name)}.md").as_posix()
+            entries.append({"key": func_name, "label": f"- [{func_name}()]({doc_path})"})
+    return entries
+
+
+def render_category_section(lines: list[str], title: str, categories: dict[str, list[dict]], order: list[str]):
+    lines.append(f"## {title}")
+    lines.append("")
+    for cat in order:
+        items = categories.get(cat, [])
+        if not items:
+            continue
+        lines.append(f"### {cat}")
+        lines.append("")
+        for entry in items:
+            lines.append(entry["label"])
+        lines.append("")
+    if lines and lines[-1] == "":
+        lines.pop()
 
 
 def build_index(
@@ -1622,31 +1774,44 @@ def build_index(
     index_path = out_dir / "index.md"
     lines = ["# ProcessWire API (Extracted)", ""]
 
+    base_dir = Path(__file__).resolve().parent.parent
+    categories_config = load_categories_config(base_dir)
+
     api_vars = extract_api_variables(classes, doc_index, out_dir)
-    lines.append("## API Variables")
-    lines.append("")
-    if api_vars:
-        lines.extend(api_vars)
-    else:
-        lines.append("_No API variables detected._")
+    api_categories, api_order = group_entries(
+        api_vars,
+        categories_config.get("api_variables", {}),
+        ["Primary", "Input & Output", "Users & Access", "Utilities & Helpers", "System", "Additional"],
+        api_variable_heuristic,
+        "Additional",
+    )
+    render_category_section(lines, "API Variables", api_categories, api_order)
 
     lines.append("")
-    lines.append("## Core Classes")
-    lines.append("")
-    for item in sorted(classes, key=lambda x: x.class_info.name.lower()):
-        class_name = item.class_info.name
-        doc_path = (Path(item.rel_path).parent / class_name / "index.md").as_posix()
-        lines.append(f"- [{class_name}]({doc_path})")
+    class_entries = collect_class_entries(classes)
+    class_categories, class_order = group_entries(
+        class_entries,
+        categories_config.get("core_classes", {}),
+        ["Primary", "Pages", "Arrays", "Modules", "Files & Images", "Fields & Templates", "Pro Modules", "Additional"],
+        class_heuristic,
+        "Additional",
+    )
+    render_category_section(lines, "Core Classes", class_categories, class_order)
 
     lines.append("")
-    lines.append("## Functions")
-    lines.append("")
-    if files:
-        for item in sorted(files, key=lambda x: x.file_info.name.lower()):
-            name = item.file_info.name
-            doc_path = (Path(item.rel_path).parent / name / "index.md").as_posix()
-            lines.append(f"- [{name}]({doc_path})")
+    function_entries = collect_function_entries(out_dir, files)
+    if function_entries:
+        function_categories, function_order = group_entries(
+            function_entries,
+            categories_config.get("functions", {}),
+            ["Functions-API", "Arrays", "Class-helpers", "Common", "Files", "Markup", "Strings", "Translation", "Other"],
+            function_heuristic,
+            "Other",
+        )
+        render_category_section(lines, "Functions", function_categories, function_order)
     else:
+        lines.append("## Functions")
+        lines.append("")
         lines.append("_No function docs detected._")
 
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
