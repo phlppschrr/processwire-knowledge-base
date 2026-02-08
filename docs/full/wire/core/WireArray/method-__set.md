@@ -9,7 +9,7 @@ Not applicable to numerically indexed arrays.
 
 ## Arguments
 
-- int|string $property Key of item to set.
+- `$property` `int|string` Key of item to set.
 - int|string|array|object Value of item to set.
 
 ## Throws

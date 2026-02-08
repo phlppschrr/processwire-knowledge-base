@@ -8,7 +8,7 @@ Remember to follow this up with a `$page->save()` for the page that the file liv
 
 ## Arguments
 
-- string $basename New name to use. Must be just the file basename (no path).
+- `$basename` `string` New name to use. Must be just the file basename (no path).
 
 ## Return value
 

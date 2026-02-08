@@ -6,13 +6,13 @@ Copy/import files from given path into the page’s files directory
 
 ## Arguments
 
-- string $fromPath Path to copy/import files from.
-- bool $move Move files into directory rather than copy?
+- `$fromPath` `string` Path to copy/import files from.
+- `$move` (optional) `bool` Move files into directory rather than copy?
 
 ## Return value
 
 int Number of files/directories copied.
 
-## Meta
+## Since
 
-- @since 3.0.114
+3.0.114

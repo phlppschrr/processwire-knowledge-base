@@ -6,8 +6,8 @@ Return total found number of pages linking to this one with no exclusions
 
 ## Arguments
 
-- Page $page
-- bool $field
+- `$page` `Page`
+- `$field` (optional) `bool`
 
 ## Return value
 

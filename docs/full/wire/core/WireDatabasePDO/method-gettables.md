@@ -8,7 +8,7 @@ Note that this method caches its result unless you specify boolean false for the
 
 ## Arguments
 
-- bool $allowCache Specify false if you don't want result to be cached or pulled from cache (default=true)
+- `$allowCache` (optional) `bool` Specify false if you don't want result to be cached or pulled from cache (default=true)
 
 ## Return value
 

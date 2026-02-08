@@ -6,7 +6,7 @@ Get years range
 
 ## Arguments
 
-- int $valueYear
+- `$valueYear` `int`
 
 ## Return value
 

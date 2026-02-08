@@ -39,13 +39,13 @@ $values = $meta->getArray();
 
 ## Arguments
 
-- string|bool $key Omit to get the WireData instance or specify property name to get or set.
-- null|mixed $value Value to set for given $key or omit if getting a value.
+- `$key` (optional) `string|bool` Omit to get the WireData instance or specify property name to get or set.
+- `$value` (optional) `null|mixed` Value to set for given $key or omit if getting a value.
 
 ## Return value
 
 WireDataDB|string|array|int|float
 
-## Meta
+## Since
 
-- @since 3.0.133
+3.0.133

@@ -6,4 +6,4 @@ Grab language values from Inputfield and populate to this object
 
 ## Arguments
 
-- Inputfield $inputfield
+- `$inputfield` `Inputfield`

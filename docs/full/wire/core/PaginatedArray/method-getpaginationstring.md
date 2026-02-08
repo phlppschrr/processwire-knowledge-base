@@ -38,8 +38,8 @@ echo $items->getPaginationString(array(
 
 ## Arguments
 
-- string|array $label Label to identify item type, i.e. "Items" or "Page", etc. (default=empty).
-- bool|array $usePageNum Specify true to show page numbers rather than item numbers (default=false).
+- `$label` (optional) `string|array` Label to identify item type, i.e. "Items" or "Page", etc. (default=empty).
+- `$usePageNum` (optional) `bool|array` Specify true to show page numbers rather than item numbers (default=false).
 
 ## Return value
 

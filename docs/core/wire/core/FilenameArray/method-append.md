@@ -6,7 +6,7 @@ Append $filename to the end
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

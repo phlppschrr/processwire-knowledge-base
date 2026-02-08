@@ -8,8 +8,8 @@ File is executed in the directory where it exists.
 
 ## Arguments
 
-- string $file Full path and filename
-- array $data Associative array of any extra data to pass along to include file as locally scoped vars
+- `$file` `string` Full path and filename
+- `$data` (optional) `array` Associative array of any extra data to pass along to include file as locally scoped vars
 
 ## Return value
 

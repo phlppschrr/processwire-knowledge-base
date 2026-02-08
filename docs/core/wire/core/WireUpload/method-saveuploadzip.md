@@ -6,7 +6,7 @@ Save and process an uploaded ZIP file
 
 ## Arguments
 
-- string $zipFile
+- `$zipFile` `string`
 
 ## Return value
 

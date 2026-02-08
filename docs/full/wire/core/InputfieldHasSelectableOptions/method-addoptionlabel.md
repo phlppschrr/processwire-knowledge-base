@@ -6,9 +6,9 @@ Add selectable option with label, optionally for specific language
 
 ## Arguments
 
-- string|int $value
-- string $label
-- Language|null $language
+- `$value` `string|int`
+- `$label` `string`
+- `$language` (optional) `Language|null`
 
 ## Return value
 

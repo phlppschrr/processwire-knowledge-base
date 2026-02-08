@@ -11,7 +11,7 @@ $items->prepend($item);
 
 ## Arguments
 
-- Wire|WireArray|mixed $item Item to prepend.
+- `$item` `Wire|WireArray|mixed` Item to prepend.
 
 ## Return value
 

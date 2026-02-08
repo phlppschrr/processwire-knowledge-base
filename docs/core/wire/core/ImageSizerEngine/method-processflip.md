@@ -6,9 +6,9 @@ Process vertical or horizontal flip of an image
 
 ## Arguments
 
-- string $srcFilename
-- string $dstFilename
-- bool $flipVertical True if flip is vertical, false if flip is horizontal
+- `$srcFilename` `string`
+- `$dstFilename` `string`
+- `$flipVertical` `bool` True if flip is vertical, false if flip is horizontal
 
 ## Return value
 

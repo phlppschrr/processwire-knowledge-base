@@ -13,7 +13,7 @@ $value = $item->get("parent.title");
 
 ## Arguments
 
-- string $key Name of property you want to retrieve in "a.b" or "a.b.c" format
+- `$key` `string` Name of property you want to retrieve in "a.b" or "a.b.c" format
 
 ## Return value
 

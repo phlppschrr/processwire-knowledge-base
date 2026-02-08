@@ -6,8 +6,8 @@ Include the given filename
 
 ## Arguments
 
-- string $file
-- string $moduleName
+- `$file` `string`
+- `$moduleName` `string`
 
 ## Return value
 

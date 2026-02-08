@@ -6,9 +6,9 @@ Given a Selectors object or a selector string, return whether this Page matches 
 
 ## Arguments
 
-- Page $page
-- string|array|Selectors $s
-- array $options Options to modify behavior (3.0.225+ only): - `useDatabase` (bool|null): Use database for matching rather than in-memory? (default=false)
+- `$page` `Page`
+- `$s` `string|array|Selectors`
+- `$options` (optional) `array` Options to modify behavior (3.0.225+ only): - `useDatabase` (bool|null): Use database for matching rather than in-memory? (default=false)
 
 ## Return value
 

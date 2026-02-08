@@ -10,7 +10,7 @@ that when the before `Pages::save` is called, as an error may prevent it.
 
 ## Arguments
 
-- Page $page The page about to be saved
+- `$page` `Page` The page about to be saved
 
 ## Return value
 

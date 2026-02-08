@@ -10,9 +10,9 @@ abstracted from the installation.
 
 ## Arguments
 
-- string $filename Full path and filename to read
-- int $offset The offset where the reading starts on the original stream. Negative offsets count from the end of the stream.
-- int $maxlen Maximum length of data read. The default is to read until end of file is reached.
+- `$filename` `string` Full path and filename to read
+- `$offset` (optional) `int` The offset where the reading starts on the original stream. Negative offsets count from the end of the stream.
+- `$maxlen` (optional) `int` Maximum length of data read. The default is to read until end of file is reached.
 
 ## Return value
 
@@ -22,6 +22,6 @@ bool|string Returns the read data (string) or boolean false on failure.
 
 - [WireFileTools::filePutContents()](method-fileputcontents.md)
 
-## Meta
+## Since
 
-- @since 3.0.167
+3.0.167

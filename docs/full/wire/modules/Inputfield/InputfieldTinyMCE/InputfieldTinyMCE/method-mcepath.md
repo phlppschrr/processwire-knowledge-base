@@ -6,7 +6,7 @@ Return path or URL to TinyMCE files
 
 ## Arguments
 
-- bool $getUrl
+- `$getUrl` (optional) `bool`
 
 ## Return value
 

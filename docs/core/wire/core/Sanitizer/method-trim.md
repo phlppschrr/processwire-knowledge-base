@@ -13,14 +13,14 @@ PHP multibyte support (mb_string) is strongly recommended if using this function
 
 ## Arguments
 
-- string $str
-- string|array $chars Array or string of chars to trim, or omit (blank string) for all whitespace (includes UTF-8 and HTML-entity whitespace too).
-- string $method Trim method, one of "trim" (both), "rtrim" (right-only) or "ltrim" (left-only). Or just "t", "r", "l" is also fine. 3.0.168+
+- `$str` `string`
+- `$chars` (optional) `string|array` Array or string of chars to trim, or omit (blank string) for all whitespace (includes UTF-8 and HTML-entity whitespace too).
+- `$method` (optional) `string` Trim method, one of "trim" (both), "rtrim" (right-only) or "ltrim" (left-only). Or just "t", "r", "l" is also fine. 3.0.168+
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.124
+3.0.124

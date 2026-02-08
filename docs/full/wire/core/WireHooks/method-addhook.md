@@ -13,11 +13,11 @@ $this->addHook($method, 'function_name'); or $this->addHook($method, 'function_n
 
 ## Arguments
 
-- Wire $object
-- string|array $method Method name to hook into, NOT including the three preceding underscores. May also be Class::Method for same result as using the fromClass option. May also be array OR CSV string of either of the above to add multiple (since 3.0.137).
-- object|null|callable $toObject Object to call $toMethod from, Or null if $toMethod is a function outside of an object, Or function|callable if $toObject is not applicable or function is provided as a closure.
-- string|array $toMethod Method from $toObject, or function name to call on a hook event, or $options array.
-- array $options See $defaultHookOptions at the beginning of this class. Optional.
+- `$object` `Wire`
+- `$method` `string|array` Method name to hook into, NOT including the three preceding underscores. May also be Class::Method for same result as using the fromClass option. May also be array OR CSV string of either of the above to add multiple (since 3.0.137).
+- `$toObject` `object|null|callable` Object to call $toMethod from, Or null if $toMethod is a function outside of an object, Or function|callable if $toObject is not applicable or function is provided as a closure.
+- `$toMethod` (optional) `string|array` Method from $toObject, or function name to call on a hook event, or $options array.
+- `$options` (optional) `array` See $defaultHookOptions at the beginning of this class. Optional.
 
 ## Return value
 

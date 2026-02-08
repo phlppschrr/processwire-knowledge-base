@@ -9,13 +9,13 @@ Most modules can use the default implementation provided here.
 
 ## Arguments
 
-- Field $field
-- array $data
+- `$field` `Field`
+- `$data` `array`
 
 ## Return value
 
 array Data as given and modified as needed. Also included is $data[errors], an associative array indexed by property name containing errors that occurred during import of config data.
 
-## Meta
+## Details
 
 - @var array $errors Errors populated to this array

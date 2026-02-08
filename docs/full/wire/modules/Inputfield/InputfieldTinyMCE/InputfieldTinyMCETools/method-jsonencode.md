@@ -6,9 +6,9 @@ Encode array to JSON
 
 ## Arguments
 
-- array $a
-- string $propertyName Name of property JSON is for
-- bool $pretty
+- `$a` `array`
+- `$propertyName` `string` Name of property JSON is for
+- `$pretty` (optional) `bool`
 
 ## Return value
 

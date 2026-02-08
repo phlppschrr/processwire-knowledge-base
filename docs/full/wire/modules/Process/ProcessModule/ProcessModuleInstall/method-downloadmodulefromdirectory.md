@@ -6,13 +6,13 @@ Download module from directory
 
 ## Arguments
 
-- string $url
-- string $destinationDir
+- `$url` `string`
+- `$destinationDir` (optional) `string`
 
 ## Return value
 
 bool|string
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

@@ -8,7 +8,7 @@ This is typically the current page number (minus 1) multiplied by limit setting.
 
 ## Arguments
 
-- int $numStart
+- `$numStart` `int`
 
 ## Return value
 

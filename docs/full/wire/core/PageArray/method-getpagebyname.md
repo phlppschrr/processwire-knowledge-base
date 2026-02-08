@@ -6,12 +6,12 @@ Get Page from this PageArray having given name, or return NullPage if not presen
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 NullPage|Page
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

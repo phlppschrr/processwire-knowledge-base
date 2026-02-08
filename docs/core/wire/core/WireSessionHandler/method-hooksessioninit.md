@@ -6,4 +6,4 @@ Hook before Session::init
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`

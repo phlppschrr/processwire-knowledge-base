@@ -6,7 +6,7 @@ Return a Page helper class instance that’s common among all Page (and derived)
 
 ## Arguments
 
-- string $className
+- `$className` `string`
 
 ## Return value
 

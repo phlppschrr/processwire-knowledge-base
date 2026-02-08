@@ -22,14 +22,14 @@ $sanitizer->validate('abc123', 'alpha'); invalid: returns null
 
 ## Arguments
 
-- string|int|array|float $value Value to validate
-- string $method Saniatizer method name or CSV names combo
+- `$value` `string|int|array|float` Value to validate
+- `$method` (optional) `string` Saniatizer method name or CSV names combo
 - null|mixed mixed $fallback Optionally return this fallback value (rather than null) if value does not validate
 
 ## Return value
 
 null|mixed Returns sanitized value if it validates or null (or given fallback) if value does not validate
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

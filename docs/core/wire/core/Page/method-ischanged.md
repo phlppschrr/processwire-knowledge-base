@@ -34,7 +34,7 @@ $this->addHookBefore('Pages::saveReady', function($event) {
 
 ## Arguments
 
-- string $what If specified, only checks the given property for changes rather than the whole page.
+- `$what` (optional) `string` If specified, only checks the given property for changes rather than the whole page.
 
 ## Return value
 

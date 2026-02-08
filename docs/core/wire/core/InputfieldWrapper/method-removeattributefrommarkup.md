@@ -6,13 +6,13 @@ Remove named attribute from given markup
 
 ## Arguments
 
-- string $name
-- string $markup
+- `$name` `string`
+- `$markup` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.250
+3.0.250

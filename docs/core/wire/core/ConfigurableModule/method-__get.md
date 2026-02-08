@@ -6,7 +6,7 @@ Get a module config property
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

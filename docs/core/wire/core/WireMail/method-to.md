@@ -9,8 +9,8 @@ you specify NULL as the email address, in which case it clears them all.
 
 ## Arguments
 
-- string|array|null $email Specify any ONE of the following: - Single email address or "User Name <user@example.com>" string. - CSV string of #1. - Non-associative array of #1. - Associative array of (email => name) - NULL (default value, to clear out any previously set values)
-- string $name Optionally provide a TO name, applicable only when specifying #1 (single email) for the first argument.
+- `$email` (optional) `string|array|null` Specify any ONE of the following: - Single email address or "User Name <user@example.com>" string. - CSV string of #1. - Non-associative array of #1. - Associative array of (email => name) - NULL (default value, to clear out any previously set values)
+- `$name` (optional) `string` Optionally provide a TO name, applicable only when specifying #1 (single email) for the first argument.
 
 ## Return value
 

@@ -15,7 +15,7 @@ saved directly through $pages->save().
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

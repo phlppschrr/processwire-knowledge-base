@@ -20,9 +20,9 @@ $files->rmdir($pathname, true, [ 'limitPath' => $config->paths->assets ]);
 
 ## Arguments
 
-- string $path Path/directory you want to remove
-- bool $recursive If set to true, all files and directories in $path will be recursively removed as well (default=false).
-- array|bool|string $options Optional settings to adjust behavior or (bool|string) for limitPath option: - `limitPath` (string|bool|array): Must be somewhere within given path, boolean true for site assets, or false to disable (default=false). - `throw` (bool): Throw verbose WireException (rather than return false) when potentially consequential fail (default=false).
+- `$path` `string` Path/directory you want to remove
+- `$recursive` (optional) `bool` If set to true, all files and directories in $path will be recursively removed as well (default=false).
+- `$options` (optional) `array|bool|string` Optional settings to adjust behavior or (bool|string) for limitPath option: - `limitPath` (string|bool|array): Must be somewhere within given path, boolean true for site assets, or false to disable (default=false). - `throw` (bool): Throw verbose WireException (rather than return false) when potentially consequential fail (default=false).
 
 ## Return value
 

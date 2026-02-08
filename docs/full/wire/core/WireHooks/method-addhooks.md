@@ -9,11 +9,11 @@ See the addHook() method for more detailed info on arguments.
 
 ## Arguments
 
-- Wire $object
-- array|string $methods Array of one or more strings hook definitions, or CSV string of hook definitions
-- object|null|callable $toObject
-- string|array|null $toMethod
-- array $options
+- `$object` `Wire`
+- `$methods` `array|string` Array of one or more strings hook definitions, or CSV string of hook definitions
+- `$toObject` `object|null|callable`
+- `$toMethod` (optional) `string|array|null`
+- `$options` (optional) `array`
 
 ## Return value
 
@@ -23,6 +23,6 @@ string CSV string of hook IDs that were added
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.137
+3.0.137

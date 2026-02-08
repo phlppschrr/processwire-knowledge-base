@@ -6,4 +6,4 @@ Set whether or not to test all checks (as if all checks failed)
 
 ## Arguments
 
-- bool $testAll
+- `$testAll` (optional) `bool`

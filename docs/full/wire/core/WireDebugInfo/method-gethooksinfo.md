@@ -6,7 +6,7 @@ Get hooks debug info for the given Wire object
 
 ## Arguments
 
-- Wire $obj
+- `$obj` `Wire`
 
 ## Return value
 

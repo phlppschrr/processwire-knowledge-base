@@ -6,8 +6,8 @@ Get array of words from given value
 
 ## Arguments
 
-- string $value
-- array $options
+- `$value` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

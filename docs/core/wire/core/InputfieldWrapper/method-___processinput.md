@@ -6,7 +6,7 @@ Process input for all children
 
 ## Arguments
 
-- WireInputData $input
+- `$input` `WireInputData`
 
 ## Return value
 

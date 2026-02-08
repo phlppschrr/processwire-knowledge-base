@@ -9,5 +9,5 @@ string or array of flag names. Previous versions only accepted flags integer.
 
 ## Arguments
 
-- string $text Notification text
-- int|string|array $flags Flags Flags for Notice
+- `$text` `string` Notification text
+- `$flags` (optional) `int|string|array` Flags Flags for Notice

@@ -6,6 +6,6 @@ Rebuild the entire pages_access table (or a part of it) starting from the given 
 
 ## Arguments
 
-- int $parent_id
-- int $accessTemplateID
-- bool $doDeletions
+- `$parent_id` (optional) `int`
+- `$accessTemplateID` (optional) `int`
+- `$doDeletions` (optional) `bool`

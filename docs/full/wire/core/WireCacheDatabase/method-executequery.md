@@ -6,7 +6,7 @@ Execute query
 
 ## Arguments
 
-- \PDOStatement $query
+- `$query` `\PDOStatement`
 
 ## Return value
 

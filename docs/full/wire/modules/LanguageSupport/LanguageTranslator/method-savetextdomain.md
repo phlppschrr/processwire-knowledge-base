@@ -6,7 +6,7 @@ Save the translation group given by $textdomain to disk in its translation file
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`
 
 ## Return value
 

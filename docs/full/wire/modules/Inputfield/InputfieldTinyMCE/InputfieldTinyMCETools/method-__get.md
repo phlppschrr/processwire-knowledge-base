@@ -5,7 +5,7 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

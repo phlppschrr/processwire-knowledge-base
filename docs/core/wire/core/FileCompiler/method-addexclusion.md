@@ -6,4 +6,4 @@ Exclude a file or path from compilation
 
 ## Arguments
 
-- string $pathname
+- `$pathname` `string`

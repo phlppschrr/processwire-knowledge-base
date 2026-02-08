@@ -8,7 +8,7 @@ Primarily used to determine if the Fieldgroup is deleteable.
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
+- `$fieldgroup` `Fieldgroup`
 
 ## Return value
 

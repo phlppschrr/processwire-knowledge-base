@@ -8,5 +8,5 @@ Optionally set several variables at once by specifying just $key as an associati
 
 ## Arguments
 
-- string|array $key
-- mixed $value
+- `$key` `string|array`
+- `$value` (optional) `mixed`

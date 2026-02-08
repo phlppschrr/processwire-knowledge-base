@@ -6,12 +6,12 @@ Get or set the current ProcessWire instance
 
 ## Arguments
 
-- Wire|null $wire To set specify ProcessWire instance or any Wire-derived object in it, or omit to get current instance.
+- `$wire` (optional) `Wire|null` To set specify ProcessWire instance or any Wire-derived object in it, or omit to get current instance.
 
 ## Return value
 
 ProcessWire
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

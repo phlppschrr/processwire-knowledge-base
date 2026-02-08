@@ -9,4 +9,4 @@ and saves them in the user’s “tfa_type” field “settings” column.
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`

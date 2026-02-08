@@ -6,9 +6,9 @@ Populate comment {variable} placeholders
 
 ## Arguments
 
-- Comment $comment
-- string $out
-- array $placeholders Additional placeholders to populate as name => value (exclude the brackets)
+- `$comment` `Comment`
+- `$out` `string`
+- `$placeholders` (optional) `array` Additional placeholders to populate as name => value (exclude the brackets)
 
 ## Return value
 

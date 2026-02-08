@@ -6,7 +6,7 @@ Finish result/return value
 
 ## Arguments
 
-- string|bool $path Path string or boolean false when 404
+- `$path` `string|bool` Path string or boolean false when 404
 
 ## Return value
 

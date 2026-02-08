@@ -5,8 +5,8 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 ## Arguments
 
-- string $name
-- mixed $value
+- `$name` `string`
+- `$value` `mixed`
 
 ## Return value
 

@@ -30,10 +30,10 @@ $s = input('get', 'sort', ['title', 'created'], 'title'); // Same as above, fall
 
 ## Arguments
 
-- string $type Optionally indicate "get", "post", "cookie" or "whitelist"
-- string $key If getting a value, specify name of input property containing value
-- string $sanitizer Optionally specify sanitizer name to run value through, or in 3.0.125+ may also be an array of allowed values.
-- string|int|null $fallback Value to fallback to if input not present or invalid
+- `$type` (optional) `string` Optionally indicate "get", "post", "cookie" or "whitelist"
+- `$key` (optional) `string` If getting a value, specify name of input property containing value
+- `$sanitizer` (optional) `string` Optionally specify sanitizer name to run value through, or in 3.0.125+ may also be an array of allowed values.
+- `$fallback` (optional) `string|int|null` Value to fallback to if input not present or invalid
 
 ## Return value
 

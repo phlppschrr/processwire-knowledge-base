@@ -9,4 +9,4 @@ you should remember to turn it back on
 
 ## Arguments
 
-- bool $autojoin
+- `$autojoin` (optional) `bool`

@@ -6,7 +6,7 @@ Function that returns a $config->urls->[name] value o
 
 ## Arguments
 
-- string $key
+- `$key` (optional) `string`
 
 ## Return value
 

@@ -14,10 +14,10 @@ Note: Please use addStatus() or removeStatus() instead, unless you need to perfo
 
 ## Arguments
 
-- int|array|Page|PageArray $pageID Page ID, Page, array of page IDs, or PageArray
-- int $status Status per flags in Page::status* constants. Status will be OR'd with existing status, unless $remove is used.
-- bool $recursive Should the status descend into the page's children, and grandchildren, etc? (default=false)
-- bool|int $remove Should the status be removed rather than added? Use integer 2 to overwrite (default=false)
+- `$pageID` `int|array|Page|PageArray` Page ID, Page, array of page IDs, or PageArray
+- `$status` `int` Status per flags in Page::status* constants. Status will be OR'd with existing status, unless $remove is used.
+- `$recursive` (optional) `bool` Should the status descend into the page's children, and grandchildren, etc? (default=false)
+- `$remove` (optional) `bool|int` Should the status be removed rather than added? Use integer 2 to overwrite (default=false)
 
 ## Return value
 

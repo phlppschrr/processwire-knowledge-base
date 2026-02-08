@@ -25,10 +25,10 @@ $value = $sanitizer->minLength('foo', 5, 'o', true); // returns "oofoo"
 
 ## Arguments
 
-- string $value Value to enforcer a minimum length for
-- int $minLength Minimum allowed length
-- string $padChar Pad string with this character if it does not meet minimum length (default='')
-- bool $padLeft Pad to left rather than right? (default=false)
+- `$value` `string` Value to enforcer a minimum length for
+- `$minLength` (optional) `int` Minimum allowed length
+- `$padChar` (optional) `string` Pad string with this character if it does not meet minimum length (default='')
+- `$padLeft` (optional) `bool` Pad to left rather than right? (default=false)
 
 ## Return value
 

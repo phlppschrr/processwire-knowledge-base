@@ -6,7 +6,7 @@ Set multiple resize options
 
 ## Arguments
 
-- array $options
+- `$options` `array`
 
 ## Return value
 

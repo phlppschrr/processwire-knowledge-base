@@ -6,13 +6,13 @@ Get classes in array for given class property
 
 ## Arguments
 
-- string $property One of 'wrap', 'header', 'content' or 'input' (or alias 'class')
-- bool $assoc Return as associative array where both keys and values are class names? (default=false)
+- `$property` (optional) `string` One of 'wrap', 'header', 'content' or 'input' (or alias 'class')
+- `$assoc` (optional) `bool` Return as associative array where both keys and values are class names? (default=false)
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.204
+3.0.204

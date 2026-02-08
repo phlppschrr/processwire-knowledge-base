@@ -7,7 +7,7 @@ Populate duplicates info into config data, when applicable
 ## Arguments
 
 - $className
-- array $configData
+- `$configData` (optional) `array`
 
 ## Return value
 

@@ -8,7 +8,7 @@ If module is already installed, it returns the URL to edit the module.
 
 ## Arguments
 
-- string $className
+- `$className` `string`
 
 ## Return value
 

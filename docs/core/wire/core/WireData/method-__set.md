@@ -6,5 +6,5 @@ Provides direct reference access to set values in the $data array
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`

@@ -11,6 +11,6 @@ through `$sanitizer->entities()` or `htmlspecialchars()` before outputting.
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

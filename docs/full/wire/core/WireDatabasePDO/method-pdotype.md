@@ -6,8 +6,8 @@ Return correct PDO instance type (reader or writer) based on given statement
 
 ## Arguments
 
-- string|\PDOStatement $query
-- bool $getName Get name of PDO type rather than instance? (default=false)
+- `$query` `string|\PDOStatement`
+- `$getName` (optional) `bool` Get name of PDO type rather than instance? (default=false)
 
 ## Return value
 

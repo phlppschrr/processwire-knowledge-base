@@ -18,9 +18,9 @@ Note this function produces direct output. To retrieve output as a return value,
 
 ## Arguments
 
-- string $filename Filename to include
-- array $vars Optional variables you want to hand to the include (associative array)
-- array $options Array of options to modify behavior: - `func` (string): Function to use: include, include_once, require or require_once (default=include) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of start paths include files are allowed from. Note current dir is always allowed.
+- `$filename` `string` Filename to include
+- `$vars` (optional) `array` Optional variables you want to hand to the include (associative array)
+- `$options` (optional) `array` Array of options to modify behavior: - `func` (string): Function to use: include, include_once, require or require_once (default=include) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of start paths include files are allowed from. Note current dir is always allowed.
 
 ## Return value
 

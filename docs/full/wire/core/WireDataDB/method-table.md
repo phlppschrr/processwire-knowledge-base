@@ -6,7 +6,7 @@ Get the current table name
 
 ## Arguments
 
-- string $tableName
+- `$tableName` (optional) `string`
 
 ## Return value
 

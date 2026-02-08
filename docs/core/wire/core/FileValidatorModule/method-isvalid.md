@@ -9,7 +9,7 @@ for logging purposes.
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

@@ -6,8 +6,8 @@ Sharpen image (@horst)
 
 ## Arguments
 
-- resource $im
-- string $mode May be: none | soft | medium | strong
+- `$im` `resource`
+- `$mode` `string` May be: none | soft | medium | strong
 
 ## Return value
 

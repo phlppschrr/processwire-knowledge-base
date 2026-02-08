@@ -6,8 +6,8 @@ Export a PageArray to JSON string
 
 ## Arguments
 
-- PageArray $items
-- array $options
+- `$items` `PageArray`
+- `$options` (optional) `array`
 
 ## Return value
 

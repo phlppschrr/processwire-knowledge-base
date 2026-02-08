@@ -6,9 +6,9 @@ Rebuild pages_parents table for given page (experimental faster alternative/rewr
 
 ## Arguments
 
-- Page $page
-- Page $oldParent
-- Page $newParent
+- `$page` `Page`
+- `$oldParent` `Page`
+- `$newParent` `Page`
 
 ## Return value
 
@@ -18,6 +18,6 @@ int
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.212
+3.0.212

@@ -6,5 +6,5 @@ Display and log a warning about a path that didn't resolve
 
 ## Arguments
 
-- string $path
-- bool $logWarning
+- `$path` `string`
+- `$logWarning` (optional) `bool`

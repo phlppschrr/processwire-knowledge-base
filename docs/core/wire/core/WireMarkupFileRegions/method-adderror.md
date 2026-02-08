@@ -6,5 +6,5 @@ Add an error
 
 ## Arguments
 
-- string $key Error context
-- string $error Error message
+- `$key` `string` Error context
+- `$error` `string` Error message

@@ -6,8 +6,8 @@ Hook called when a page is about to be deleted, but before data has been touched
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.128
+3.0.128

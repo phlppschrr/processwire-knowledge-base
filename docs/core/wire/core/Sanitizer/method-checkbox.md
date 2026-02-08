@@ -6,9 +6,9 @@ Sanitize checkbox value
 
 ## Arguments
 
-- int|bool|string|mixed|null $value Value to check
-- int|bool|string|mixed|null $yes Value to return if checked (default=true)
-- int|bool|string|mixed|null $no Value to return if not checked (default=false)
+- `$value` `int|bool|string|mixed|null` Value to check
+- `$yes` (optional) `int|bool|string|mixed|null` Value to return if checked (default=true)
+- `$no` (optional) `int|bool|string|mixed|null` Value to return if not checked (default=false)
 
 ## Return value
 
@@ -19,6 +19,6 @@ int|bool|string|mixed|null Return value, based on $checked or $unchecked argumen
 - [Sanitizer::bool()](method-bool.md)
 - [Sanitizer::bit()](method-bit.md)
 
-## Meta
+## Since
 
-- @since 3.0.128
+3.0.128

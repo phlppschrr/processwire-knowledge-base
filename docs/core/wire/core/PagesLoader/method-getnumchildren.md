@@ -6,7 +6,7 @@ Load total number of children from DB for given page
 
 ## Arguments
 
-- int|Page $page Page or Page ID
+- `$page` `int|Page` Page or Page ID
 
 ## Return value
 
@@ -16,6 +16,6 @@ int
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

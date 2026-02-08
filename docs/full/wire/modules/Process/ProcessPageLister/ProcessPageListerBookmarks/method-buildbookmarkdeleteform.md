@@ -6,7 +6,7 @@ Build form for deleting a bookmark
 
 ## Arguments
 
-- int $bookmarkID Bookmark ID
+- `$bookmarkID` `int` Bookmark ID
 
 ## Return value
 

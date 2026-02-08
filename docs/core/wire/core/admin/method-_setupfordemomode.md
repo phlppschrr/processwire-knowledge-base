@@ -6,5 +6,5 @@ Setup for demo mode
 
 ## Arguments
 
-- Page $page
-- ProcessWire $wire
+- `$page` `Page`
+- `$wire` `ProcessWire`

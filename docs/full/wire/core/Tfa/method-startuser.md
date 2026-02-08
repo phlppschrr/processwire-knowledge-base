@@ -26,8 +26,8 @@ C. Modules that do not generate or send codes, but only validate them (i.e. TOTP
 
 ## Arguments
 
-- User $user
-- array $settings Settings configured by user
+- `$user` `User`
+- `$settings` `array` Settings configured by user
 
 ## Return value
 

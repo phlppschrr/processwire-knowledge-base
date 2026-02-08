@@ -6,7 +6,7 @@ Get the input format string for the user's language
 
 ## Arguments
 
-- bool $getArray
+- `$getArray` (optional) `bool`
 
 ## Return value
 

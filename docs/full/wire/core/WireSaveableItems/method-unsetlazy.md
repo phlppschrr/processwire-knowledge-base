@@ -6,7 +6,7 @@ Remove item from lazy loading data/indexes
 
 ## Arguments
 
-- Saveable $item
+- `$item` `Saveable`
 
 ## Return value
 

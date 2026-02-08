@@ -8,7 +8,7 @@ If give a filename (string) it will create the new `Pagefile` item from it and a
 
 ## Arguments
 
-- Pagefile|string $item If item is a string (filename) it will create the new `Pagefile` item from it and add it.
+- `$item` `Pagefile|string` If item is a string (filename) it will create the new `Pagefile` item from it and add it.
 
 ## Return value
 

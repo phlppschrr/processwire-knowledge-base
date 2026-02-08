@@ -6,8 +6,8 @@ Get a notification that contains the given value for $property
 
 ## Arguments
 
-- string $property
-- mixed $value
+- `$property` `string`
+- `$value` `mixed`
 
 ## Return value
 

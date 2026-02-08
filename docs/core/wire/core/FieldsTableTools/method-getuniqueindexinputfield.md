@@ -6,7 +6,7 @@ Create a checkbox Inputfield to configure unique value state
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

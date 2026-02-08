@@ -8,6 +8,6 @@ Are child comments (replies) allowed?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.204
+3.0.204

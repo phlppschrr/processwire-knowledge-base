@@ -6,6 +6,6 @@ Find and apply values for Page reference fields
 
 ## Arguments
 
-- Field $field
-- string $fieldName
-- array $pageRefCols
+- `$field` `Field`
+- `$fieldName` `string`
+- `$pageRefCols` `array`

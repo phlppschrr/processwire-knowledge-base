@@ -11,12 +11,12 @@ it seems extremely unlikely, I think we have to cover this, just in case.
 
 ## Arguments
 
-- User $user
+- `$user` `User`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

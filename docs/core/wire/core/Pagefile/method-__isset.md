@@ -6,7 +6,7 @@ Ensures that isset() and empty() work for dynamic class properties
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

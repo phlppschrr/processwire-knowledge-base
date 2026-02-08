@@ -8,6 +8,6 @@ Does a session currently exist? (i.e. already one started)
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.158
+3.0.158

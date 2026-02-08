@@ -6,5 +6,5 @@ Apply skin or skin_url directly to given settings/defaults
 
 ## Arguments
 
-- array $settings
-- array $defaults
+- `$settings` `array`
+- `$defaults` `array`

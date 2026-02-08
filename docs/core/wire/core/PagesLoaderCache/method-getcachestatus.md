@@ -8,12 +8,12 @@ Returns count of each cache type, or contents of each cache type of verbose opti
 
 ## Arguments
 
-- bool|null $verbose Specify true to get contents of cache, false to get string counts, or omit for array of counts
+- `$verbose` (optional) `bool|null` Specify true to get contents of cache, false to get string counts, or omit for array of counts
 
 ## Return value
 
 array|string
 
-## Meta
+## Since
 
-- @since 3.0.198
+3.0.198

@@ -6,9 +6,9 @@ Return configuration fields definable for each FieldtypePage
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
-- Template $template
-- Page $parent
+- `$inputfields` `InputfieldWrapper`
+- `$template` `Template`
+- `$parent` `Page`
 
 ## Return value
 

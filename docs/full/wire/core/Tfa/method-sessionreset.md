@@ -6,7 +6,7 @@ Remove all session variables set for this module
 
 ## Arguments
 
-- string $redirectURL Optionally redirect to URL after reset
+- `$redirectURL` (optional) `string` Optionally redirect to URL after reset
 
 ## Return value
 

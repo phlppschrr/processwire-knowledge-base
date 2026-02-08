@@ -6,7 +6,7 @@ Module upload allowed?
 
 ## Arguments
 
-- bool $notify
+- `$notify` (optional) `bool`
 
 ## Return value
 

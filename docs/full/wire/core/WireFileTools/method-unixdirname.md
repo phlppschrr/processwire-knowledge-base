@@ -6,8 +6,8 @@ Convert given directory name to use unix slashes and enforce trailing or no-trai
 
 ## Arguments
 
-- string $dir Directory name to adust (if it needs it)
-- bool $trailingSlash True to force trailing slash, false to force no trailing slash (default=true)
+- `$dir` `string` Directory name to adust (if it needs it)
+- `$trailingSlash` (optional) `bool` True to force trailing slash, false to force no trailing slash (default=true)
 
 ## Return value
 

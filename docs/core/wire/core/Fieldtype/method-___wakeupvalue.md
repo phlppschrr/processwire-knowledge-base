@@ -12,9 +12,9 @@ it to this method before making it a part of the Page.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string|int|array $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|array`
 
 ## Return value
 

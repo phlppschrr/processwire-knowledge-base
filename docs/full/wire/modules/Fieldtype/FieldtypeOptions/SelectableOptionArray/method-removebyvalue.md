@@ -6,12 +6,12 @@ Remove option by value
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

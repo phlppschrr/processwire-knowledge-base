@@ -10,6 +10,6 @@ Note: To get response headers from a previously sent request, use `WireHttp::get
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.131
+3.0.131

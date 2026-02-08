@@ -6,4 +6,4 @@ Constructor
 
 ## Arguments
 
-- string $encoding Character encoding
+- `$encoding` (optional) `string` Character encoding

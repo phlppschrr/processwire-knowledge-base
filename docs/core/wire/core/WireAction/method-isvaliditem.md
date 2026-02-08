@@ -6,7 +6,7 @@ Is the given item valid for use by this action?
 
 ## Arguments
 
-- object $item
+- `$item` `object`
 
 ## Return value
 

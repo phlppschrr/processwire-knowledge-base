@@ -6,7 +6,7 @@ Write the given $data for the given session ID
 
 ## Arguments
 
-- string $id Session ID
+- `$id` `string` Session ID
 - string Serialized data to write
 
 ## Return value

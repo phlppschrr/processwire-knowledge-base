@@ -6,9 +6,9 @@ Get part of a string
 
 ## Arguments
 
-- string $str
-- int $start
-- int|null $length Max chars to use from str. If omitted or NULL, extract all characters to the end of the string.
+- `$str` `string`
+- `$start` `int`
+- `$length` (optional) `int|null` Max chars to use from str. If omitted or NULL, extract all characters to the end of the string.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Record a duplicate at runtime
 
 ## Arguments
 
-- string $basename Name of module
-- string $pathname Path of module
-- string $pathname2 Second path of module
-- array $installed Installed module info array
+- `$basename` `string` Name of module
+- `$pathname` `string` Path of module
+- `$pathname2` `string` Second path of module
+- `$installed` `array` Installed module info array

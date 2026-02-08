@@ -6,7 +6,7 @@ Get a Role by name, numeric ID or selector
 
 ## Arguments
 
-- string $selectorString Role name or selector
+- `$selectorString` `string` Role name or selector
 
 ## Return value
 

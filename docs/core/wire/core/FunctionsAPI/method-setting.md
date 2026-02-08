@@ -35,8 +35,8 @@ setting(false, 'foo');
 
 ## Arguments
 
-- string|array $name Setting name, or array to set multiple
-- string|int|array|float|mixed $value Value to set, or omit if getting value of $name (default=null)
+- `$name` (optional) `string|array` Setting name, or array to set multiple
+- `$value` (optional) `string|int|array|float|mixed` Value to set, or omit if getting value of $name (default=null)
 
 ## Return value
 

@@ -6,7 +6,7 @@ Get array of parent Inputfield classes for given Inputfield (excluding the base 
 
 ## Arguments
 
-- Inputfield|string $inputfield
+- `$inputfield` `Inputfield|string`
 
 ## Return value
 

@@ -27,6 +27,6 @@ echo "This page is $i out of $n total pages";
 
 int Returns index number (zero-based)
 
-## Meta
+## Since
 
-- @since 3.0.24
+3.0.24

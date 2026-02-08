@@ -6,7 +6,7 @@ Hook called when a permission is deleted
 
 ## Arguments
 
-- Page $page Page that was deleted
+- `$page` `Page` Page that was deleted
 
 ## Throws
 

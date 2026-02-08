@@ -10,9 +10,9 @@ Given an associative array of “key=value” attributes, render an HTML attribu
 
 ## Arguments
 
-- array $attrs Associative array of attributes.
-- bool $encode Entity encode attribute values? Default is true, so if they are already encoded, specify false.
-- string $quote Quote style, specify double quotes, single quotes, or blank for none except when required (default=")
+- `$attrs` `array` Associative array of attributes.
+- `$encode` (optional) `bool` Entity encode attribute values? Default is true, so if they are already encoded, specify false.
+- `$quote` (optional) `string` Quote style, specify double quotes, single quotes, or blank for none except when required (default=")
 
 ## Return value
 

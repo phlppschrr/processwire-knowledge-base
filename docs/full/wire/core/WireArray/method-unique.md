@@ -8,7 +8,7 @@ This is the equivalent to PHP's [array_unique()](http://php.net/manual/en/functi
 
 ## Arguments
 
-- int $sortFlags Sort flags per PHP's `array_unique()` function (default=`SORT_STRING`)
+- `$sortFlags` (optional) `int` Sort flags per PHP's `array_unique()` function (default=`SORT_STRING`)
 
 ## Return value
 

@@ -9,7 +9,7 @@ Set language for user (quietly)
 
 ## Arguments
 
-- Language|string|int $language Language object, name, or ID
+- `$language` `Language|string|int` Language object, name, or ID
 
 ## Return value
 
@@ -19,6 +19,6 @@ self
 
 - WireException if language support is installed and given an invalid/unknown language
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

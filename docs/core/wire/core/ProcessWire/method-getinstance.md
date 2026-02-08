@@ -6,7 +6,7 @@ Get a ProcessWire instance by ID
 
 ## Arguments
 
-- int|null $instanceID Omit this argument to return the current instance
+- `$instanceID` (optional) `int|null` Omit this argument to return the current instance
 
 ## Return value
 

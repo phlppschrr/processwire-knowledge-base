@@ -6,7 +6,7 @@ Delete the provided item from the database
 
 ## Arguments
 
-- Saveable $item
+- `$item` `Saveable`
 
 ## Return value
 

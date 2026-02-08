@@ -23,10 +23,10 @@ $value = wireInput()->get('sort', ['title', 'created', 'likes'], 'title'); // Sa
 
 ## Arguments
 
-- string $type Optionally indicate "get", "post", "cookie" or "whitelist"
-- string $key If getting a value, specify name of property containing value
-- string $sanitizer Optionally specify sanitizer name to run value through, or array containing whitelist of allowed values (3.0.125).
-- mixed $fallback Fallback value to return rather than null if value not present or does not validate (3.0.125+)
+- `$type` (optional) `string` Optionally indicate "get", "post", "cookie" or "whitelist"
+- `$key` (optional) `string` If getting a value, specify name of property containing value
+- `$sanitizer` (optional) `string` Optionally specify sanitizer name to run value through, or array containing whitelist of allowed values (3.0.125).
+- `$fallback` (optional) `mixed` Fallback value to return rather than null if value not present or does not validate (3.0.125+)
 
 ## Return value
 

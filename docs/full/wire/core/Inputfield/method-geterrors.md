@@ -9,7 +9,7 @@ rather than just the current run.
 
 ## Arguments
 
-- bool $clear Optionally clear the errors after getting them (Default=false).
+- `$clear` (optional) `bool` Optionally clear the errors after getting them (Default=false).
 
 ## Return value
 

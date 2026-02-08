@@ -9,12 +9,12 @@ each an array of image file types/extensions in uppercase.
 
 ## Arguments
 
-- string $type Specify 'source' or 'target' to get just those formats, or omit to get all.
+- `$type` (optional) `string` Specify 'source' or 'target' to get just those formats, or omit to get all.
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.138
+3.0.138

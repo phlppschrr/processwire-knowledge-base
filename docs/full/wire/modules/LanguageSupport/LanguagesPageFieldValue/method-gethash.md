@@ -6,12 +6,12 @@ Get hash of all language values stored in here
 
 ## Arguments
 
-- bool $verbose Specify true for the hash to also include page and field
+- `$verbose` (optional) `bool` Specify true for the hash to also include page and field
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

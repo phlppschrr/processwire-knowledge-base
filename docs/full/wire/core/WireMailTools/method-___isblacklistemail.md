@@ -34,8 +34,8 @@ if($result === false) {
 
 ## Arguments
 
-- string $email Email to check
-- array $options - `blacklist` (array): Use this blacklist rather than `$config->emailBlacklist` (default=[]) - `throw` (bool): Throw WireException if email is blacklisted? (default=false) - `why` (bool): Return string containing matching rule when email is blacklisted? (default=false)
+- `$email` `string` Email to check
+- `$options` (optional) `array` - `blacklist` (array): Use this blacklist rather than `$config->emailBlacklist` (default=[]) - `throw` (bool): Throw WireException if email is blacklisted? (default=false) - `why` (bool): Return string containing matching rule when email is blacklisted? (default=false)
 
 ## Return value
 
@@ -45,6 +45,6 @@ bool|string Returns true if email is blacklisted, false if not. Returns string i
 
 - WireException if given a blacklist that is not an array, or if requested to via `throw` option.
 
-## Meta
+## Since
 
-- @since 3.0.129
+3.0.129

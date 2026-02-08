@@ -6,7 +6,7 @@ Is given page allowed to have versions?
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

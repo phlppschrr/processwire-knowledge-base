@@ -9,8 +9,8 @@ Copy/restore files individually by field for given page?
 
 ## Arguments
 
-- Page $page
-- Field[]|string[] $names Optionally limit check to these fields
+- `$page` `Page`
+- `$names` (optional) `Field[]|string[]` Optionally limit check to these fields
 
 ## Return value
 

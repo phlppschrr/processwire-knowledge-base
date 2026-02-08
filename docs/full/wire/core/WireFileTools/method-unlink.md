@@ -12,9 +12,9 @@ Unlink/delete file with additional protections relative to PHP unlink()
 
 ## Arguments
 
-- string $filename
-- string|bool $limitPath Limit only to files within some starting path? (default=false) - Boolean true to limit unlink operations to somewhere within /site/assets/ (only known always writable path). - Boolean false to disable to security feature. (default) - An alternative path (string) that represents the starting path (full disk path) to limit deletions to. - An array with multiple of the above string option.
-- bool $throw Throw exception on error?
+- `$filename` `string`
+- `$limitPath` (optional) `string|bool` Limit only to files within some starting path? (default=false) - Boolean true to limit unlink operations to somewhere within /site/assets/ (only known always writable path). - Boolean false to disable to security feature. (default) - An alternative path (string) that represents the starting path (full disk path) to limit deletions to. - An array with multiple of the above string option.
+- `$throw` (optional) `bool` Throw exception on error?
 
 ## Return value
 
@@ -24,6 +24,6 @@ bool True on success, false on fail
 
 - WireException If file is not allowed to be removed or unlink fails
 
-## Meta
+## Since
 
-- @since 3.0.118
+3.0.118

@@ -6,8 +6,8 @@ Get all fields that can support files
 
 ## Arguments
 
-- Page $page
-- array $options - `populated` (bool): Only return populated file fields with 1+ files in them? (default=false) - `names` (array): Limit check to these field names or omit for all. (default=[])
+- `$page` `Page`
+- `$options` (optional) `array` - `populated` (bool): Only return populated file fields with 1+ files in them? (default=false) - `names` (array): Limit check to these field names or omit for all. (default=[])
 
 ## Return value
 

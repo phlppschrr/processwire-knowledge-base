@@ -6,7 +6,7 @@ Per WireArray interface, only Inputfield instances are accepted.
 
 ## Arguments
 
-- Wire $item
+- `$item` `Wire`
 
 ## Return value
 

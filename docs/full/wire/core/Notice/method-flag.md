@@ -6,7 +6,7 @@ Given flag name or int, return flag int
 
 ## Arguments
 
-- string|int $name
+- `$name` `string|int`
 
 ## Return value
 

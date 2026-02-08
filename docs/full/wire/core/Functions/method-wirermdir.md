@@ -8,8 +8,8 @@ This is procedural version of the `$files->rmdir()` method. See that method for 
 
 ## Arguments
 
-- string $path
-- bool $recursive If set to true, all files and directories in $path will be recursively removed as well.
+- `$path` `string`
+- `$recursive` (optional) `bool` If set to true, all files and directories in $path will be recursively removed as well.
 
 ## Return value
 

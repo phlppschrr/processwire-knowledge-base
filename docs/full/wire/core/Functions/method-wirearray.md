@@ -15,12 +15,12 @@ $a = WireArray(['foo', 'bar', 'baz']); // create WireArray with 3 strings
 
 ## Arguments
 
-- array|WireArray|mixed $items
+- `$items` (optional) `array|WireArray|mixed`
 
 ## Return value
 
 WireArray
 
-## Meta
+## Since
 
-- @since 3.0.123
+3.0.123

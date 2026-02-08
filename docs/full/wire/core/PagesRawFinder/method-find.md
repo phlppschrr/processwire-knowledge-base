@@ -24,14 +24,14 @@ How to use the `$field` argument:
 
 ## Arguments
 
-- string|array|Selectors $selector
-- string|Field|int|array $field Field/property name or array of of them
-- array $options See options for Pages::find
+- `$selector` `string|array|Selectors`
+- `$field` (optional) `string|Field|int|array` Field/property name or array of of them
+- `$options` (optional) `array` See options for Pages::find
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

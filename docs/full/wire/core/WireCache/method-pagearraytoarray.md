@@ -6,7 +6,7 @@ Given a PageArray, convert it to a cachable array
 
 ## Arguments
 
-- PageArray $items
+- `$items` `PageArray`
 
 ## Return value
 
@@ -16,6 +16,6 @@ array
 
 - WireException
 
-## Meta
+## Since
 
-- @since 2.5.28
+2.5.28

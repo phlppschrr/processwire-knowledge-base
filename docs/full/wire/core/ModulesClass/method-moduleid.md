@@ -6,7 +6,7 @@ Convert given value to module ID
 
 ## Arguments
 
-- string|int|Module $name
+- `$name` `string|int|Module`
 
 ## Return value
 

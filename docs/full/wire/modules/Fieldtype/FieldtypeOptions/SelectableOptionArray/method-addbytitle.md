@@ -6,7 +6,7 @@ Add by option title
 
 ## Arguments
 
-- string $title
+- `$title` `string`
 
 ## Return value
 

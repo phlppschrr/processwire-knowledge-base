@@ -6,7 +6,7 @@ Get errors
 
 ## Arguments
 
-- string $key Optional context
+- `$key` (optional) `string` Optional context
 
 ## Return value
 

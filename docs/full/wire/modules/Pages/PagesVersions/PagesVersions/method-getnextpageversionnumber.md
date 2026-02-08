@@ -6,7 +6,7 @@ Get next available version number for given page
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Returns the page from which role/access settings are inherited from
 
 ## Arguments
 
-- string $type Optionally specify one of 'view', 'edit', 'add', or 'create' (default='view')
+- `$type` (optional) `string` Optionally specify one of 'view', 'edit', 'add', or 'create' (default='view')
 
 ## Return value
 

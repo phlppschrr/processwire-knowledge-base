@@ -11,12 +11,12 @@ Get internal Punycode version to use
 
 ## Arguments
 
-- int $version
+- `$version` (optional) `int`
 
 ## Return value
 
 int 1=PHP DN but buggy after PHP 7.4+, 2=Punycode library, 3=PHP IDN function PHP 7.4+
 
-## Meta
+## Since
 
-- @since 3.0.244
+3.0.244

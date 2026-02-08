@@ -13,8 +13,8 @@ $wire->addHook('Page::cloneReady', function($e) {
 
 ## Arguments
 
-- Page $copy The copy of this page that it will be cloned to
+- `$copy` `Page` The copy of this page that it will be cloned to
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

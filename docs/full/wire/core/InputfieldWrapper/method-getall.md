@@ -8,7 +8,7 @@ Note that all InputfieldWrapper instances are removed as a result (except for th
 
 ## Arguments
 
-- array $options Options to modify behavior (3.0.169+) - `withWrappers` (bool): Also include InputfieldWrapper objects? (default=false) 3.0.169+
+- `$options` (optional) `array` Options to modify behavior (3.0.169+) - `withWrappers` (bool): Also include InputfieldWrapper objects? (default=false) 3.0.169+
 
 ## Return value
 

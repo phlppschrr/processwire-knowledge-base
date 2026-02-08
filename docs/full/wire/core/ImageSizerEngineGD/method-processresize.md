@@ -6,12 +6,12 @@ Process the image resize
 
 ## Arguments
 
-- string $srcFilename Source file
-- string $dstFilename Destination file
-- int $fullWidth Current width
-- int $fullHeight Current height
-- int $finalWidth Requested final width
-- int $finalHeight Requested final height
+- `$srcFilename` `string` Source file
+- `$dstFilename` `string` Destination file
+- `$fullWidth` `int` Current width
+- `$fullHeight` `int` Current height
+- `$finalWidth` `int` Requested final width
+- `$finalHeight` `int` Requested final height
 
 ## Return value
 

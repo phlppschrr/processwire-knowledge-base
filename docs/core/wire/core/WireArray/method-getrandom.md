@@ -19,8 +19,8 @@ $randomItems = $items->getRandom(3);
 
 ## Arguments
 
-- int $num Number of items to return. Optional and defaults to 1.
-- bool $alwaysArray If true, then method will always return an array of items, even if it only contains 1 item.
+- `$num` (optional) `int` Number of items to return. Optional and defaults to 1.
+- `$alwaysArray` (optional) `bool` If true, then method will always return an array of items, even if it only contains 1 item.
 
 ## Return value
 

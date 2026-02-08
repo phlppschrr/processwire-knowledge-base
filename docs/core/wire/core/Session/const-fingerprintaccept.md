@@ -4,6 +4,6 @@ Source: `wire/core/Session.php`
 
 Fingerprint bitmask: Use “accept” content-types header
 
-## Meta
+## Since
 
-- @since 3.0.159
+3.0.159

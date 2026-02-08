@@ -6,13 +6,13 @@ Get string of names for given flags integer
 
 ## Arguments
 
-- null|int $flags Specify flags integer or omit to return all flag names (default=null)
-- bool $getString Get a space separated string rather than an array (default=false)
+- `$flags` (optional) `null|int` Specify flags integer or omit to return all flag names (default=null)
+- `$getString` (optional) `bool` Get a space separated string rather than an array (default=false)
 
 ## Return value
 
 array|string
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

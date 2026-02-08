@@ -6,8 +6,8 @@ Update given path for result language and return it
 
 ## Arguments
 
-- string $path
-- string $langName
+- `$path` `string`
+- `$langName` (optional) `string`
 
 ## Return value
 

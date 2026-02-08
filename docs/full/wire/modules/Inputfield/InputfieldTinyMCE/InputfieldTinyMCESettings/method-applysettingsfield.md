@@ -8,7 +8,7 @@ This is called from the main InputfieldTinyMCE class.
 
 ## Arguments
 
-- string $fieldName Field name or 'fieldName:id' string
+- `$fieldName` `string` Field name or 'fieldName:id' string
 
 ## Return value
 

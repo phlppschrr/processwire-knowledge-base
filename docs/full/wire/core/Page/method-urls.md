@@ -17,7 +17,7 @@ any past (historical) URLs the page was previously available at (which will redi
 
 ## Arguments
 
-- array $options Options to modify default behavior: - `http` (bool): Make URLs include current scheme and hostname (default=false). - `past` (bool): Include past/historical URLs? (default=true) - `languages` (bool): Include other language URLs when supported/available? (default=true). - `language` (Language|int|string): Include only URLs for this language (default=null). Note: the `languages` option must be true if using the `language` option.
+- `$options` (optional) `array` Options to modify default behavior: - `http` (bool): Make URLs include current scheme and hostname (default=false). - `past` (bool): Include past/historical URLs? (default=true) - `languages` (bool): Include other language URLs when supported/available? (default=true). - `language` (Language|int|string): Include only URLs for this language (default=null). Note: the `languages` option must be true if using the `language` option.
 
 ## Return value
 
@@ -28,6 +28,6 @@ array
 - [Page::addUrl()](index.md)
 - page::removeUrl()
 
-## Meta
+## Since
 
-- @since 3.0.107
+3.0.107

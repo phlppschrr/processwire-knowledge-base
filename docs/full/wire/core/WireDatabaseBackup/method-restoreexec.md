@@ -6,8 +6,8 @@ Import a database SQL file using exec(mysql)
 
 ## Arguments
 
-- string $filename Filename to restore (must be SQL file exported by this class)
-- array $options See $restoreOptions
+- `$filename` `string` Filename to restore (must be SQL file exported by this class)
+- `$options` (optional) `array` See $restoreOptions
 
 ## Return value
 

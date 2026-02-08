@@ -6,8 +6,8 @@ Render runtime notices div#notices
 
 ## Arguments
 
-- Notices|bool $notices Notices object or specify boolean true to return array of all available $options
-- array $options See defaults in method
+- `$notices` `Notices|bool` Notices object or specify boolean true to return array of all available $options
+- `$options` (optional) `array` See defaults in method
 
 ## Return value
 

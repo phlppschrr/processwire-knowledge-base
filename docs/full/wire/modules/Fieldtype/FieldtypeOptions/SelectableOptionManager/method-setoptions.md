@@ -6,9 +6,9 @@ Set current options for $field, identify and acting on added, deleted, updated o
 
 ## Arguments
 
-- Field $field
-- array|SelectableOptionArray $options Array of SelectableOption objects For new options specify 0 for the 'id' property.
-- bool $allowDelete Allow options to be deleted? If false, the options marked for deletion can be retrieved via $this->getRemovedOptions($field);
+- `$field` `Field`
+- `$options` `array|SelectableOptionArray` Array of SelectableOption objects For new options specify 0 for the 'id' property.
+- `$allowDelete` (optional) `bool` Allow options to be deleted? If false, the options marked for deletion can be retrieved via $this->getRemovedOptions($field);
 
 ## Return value
 

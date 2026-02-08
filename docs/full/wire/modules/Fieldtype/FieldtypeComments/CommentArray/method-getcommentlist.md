@@ -6,7 +6,7 @@ Return instance of CommentList object
 
 ## Arguments
 
-- array $options See CommentList::$options for details, plus: - `className` (string): PHP class name to use for CommentList (default='CommentList')
+- `$options` (optional) `array` See CommentList::$options for details, plus: - `className` (string): PHP class name to use for CommentList (default='CommentList')
 
 ## Return value
 

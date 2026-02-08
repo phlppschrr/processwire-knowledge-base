@@ -9,8 +9,8 @@ If you do not set a new parent, then it will restore to the original parent, whe
 
 ## Arguments
 
-- Page $page
-- bool $save Set to false if you only want to prep the page for restore (i.e. being saved elsewhere)
+- `$page` `Page`
+- `$save` (optional) `bool` Set to false if you only want to prep the page for restore (i.e. being saved elsewhere)
 
 ## Return value
 

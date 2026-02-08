@@ -6,5 +6,5 @@ Construct the ImageSizer for a single image
 
 ## Arguments
 
-- string $filename Filename to resize. Omit only if instantiating class for a getEngines() call.
-- array $options Initial options to the engine.
+- `$filename` (optional) `string` Filename to resize. Omit only if instantiating class for a getEngines() call.
+- `$options` (optional) `array` Initial options to the engine.

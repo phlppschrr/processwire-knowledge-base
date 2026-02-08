@@ -6,7 +6,7 @@ Get all configurable setting names
 
 ## Arguments
 
-- array|string $types Types to get, one or more of: 'tinymce', 'field', 'module', 'optionals'
+- `$types` `array|string` Types to get, one or more of: 'tinymce', 'field', 'module', 'optionals'
 
 ## Return value
 

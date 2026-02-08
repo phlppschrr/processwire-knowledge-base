@@ -6,4 +6,4 @@ Each loaded page is passed through this function for additional checks if needed
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

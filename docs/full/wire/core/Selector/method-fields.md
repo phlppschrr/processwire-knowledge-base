@@ -12,6 +12,6 @@ array
 
 - [Selector::field()](method-field.md)
 
-## Meta
+## Since
 
-- @since 3.0.42 Prior versions just supported the 'fields' property.
+3.0.42 Prior versions just supported the 'fields' property.

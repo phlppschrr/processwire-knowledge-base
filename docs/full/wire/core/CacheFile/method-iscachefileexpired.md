@@ -6,7 +6,7 @@ Is the given cache filename expired?
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

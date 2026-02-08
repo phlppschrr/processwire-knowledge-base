@@ -55,8 +55,8 @@ $moduleInfo = $modules->getModuleInfoVerbose('MarkupAdminDataTable');
 
 ## Arguments
 
-- string|Module|int $class Specify one of the following: - Module object instance - Module class name (string) - Module ID (int) - To get info for ALL modules, specify `*` or `all`. - To get system information, specify `ProcessWire` or `PHP`. - To get a blank module info template, specify `info`.
-- array $options Optional options to modify behavior of what gets returned - `verbose` (bool): Makes the info also include verbose properties, which are otherwise blank. (default=false) - `minify` (bool): Remove non-applicable and properties that match defaults? (default=false, or true when getting `all`) - `noCache` (bool): prevents use of cache to retrieve the module info. (default=false)
+- `$class` `string|Module|int` Specify one of the following: - Module object instance - Module class name (string) - Module ID (int) - To get info for ALL modules, specify `*` or `all`. - To get system information, specify `ProcessWire` or `PHP`. - To get a blank module info template, specify `info`.
+- `$options` (optional) `array` Optional options to modify behavior of what gets returned - `verbose` (bool): Makes the info also include verbose properties, which are otherwise blank. (default=false) - `minify` (bool): Remove non-applicable and properties that match defaults? (default=false, or true when getting `all`) - `noCache` (bool): prevents use of cache to retrieve the module info. (default=false)
 
 ## Return value
 
@@ -66,6 +66,6 @@ array Associative array of module information. - On error, an `error` index is a
 
 - self::getModuleInfoVerbose()
 
-## Meta
+## Details
 
 - @todo move all getModuleInfo methods to their own ModuleInfo class and break this method down further.

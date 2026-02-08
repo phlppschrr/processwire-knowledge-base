@@ -6,7 +6,7 @@ Was this ProcessWire installation installed after a particular date?
 
 ## Arguments
 
-- int|string $date Unix timestamp or strtotime() compatible date string
+- `$date` `int|string` Unix timestamp or strtotime() compatible date string
 
 ## Return value
 
@@ -17,6 +17,6 @@ bool
 - [Config::installedBefore()](method-installedbefore.md)
 - Config::installed
 
-## Meta
+## Since
 
-- @since 3.0.129
+3.0.129

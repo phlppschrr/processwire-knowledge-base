@@ -6,7 +6,7 @@ Provide additional seasoning for error message during debug mode output
 
 ## Arguments
 
-- string $message
+- `$message` `string`
 
 ## Return value
 

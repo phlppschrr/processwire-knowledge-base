@@ -6,7 +6,7 @@ Extends the find capability of WireArray to descend into the Inputfield children
 
 ## Arguments
 
-- string $selector
+- `$selector` `string`
 
 ## Return value
 

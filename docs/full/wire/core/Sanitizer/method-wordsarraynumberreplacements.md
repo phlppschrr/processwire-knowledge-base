@@ -6,8 +6,8 @@ Identify decimals, minus signs and commas in numbers, replace them, and return t
 
 ## Arguments
 
-- string $value
-- string $prefix
+- `$value` `string`
+- `$prefix` (optional) `string`
 
 ## Return value
 

@@ -13,10 +13,10 @@ echo sprintf(_n('Found one item', 'Found %d items', $qty), $qty);
 
 ## Arguments
 
-- string $textSingular Singular version of text (when there is 1 item)
-- string $textPlural Plural version of text (when there are multiple items or 0 items)
-- int $count Quantity of items, should be 0 or more.
-- string $textdomain Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine automatically.
+- `$textSingular` `string` Singular version of text (when there is 1 item)
+- `$textPlural` `string` Plural version of text (when there are multiple items or 0 items)
+- `$count` `int` Quantity of items, should be 0 or more.
+- `$textdomain` (optional) `string` Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine automatically.
 
 ## Return value
 
@@ -27,6 +27,6 @@ string Translated text or original text if translation not available.
 - __()
 - _x()
 
-## Meta
+## Details
 
 - @link https://processwire.com/docs/multi-language-support/code-i18n/

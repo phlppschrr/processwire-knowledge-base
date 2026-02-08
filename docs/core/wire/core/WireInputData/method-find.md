@@ -25,13 +25,13 @@ $values = [
 
 ## Arguments
 
-- string $pattern Wildcard string or PCRE regular expression
-- array $options - `type` (string): Specify "value" to match input value (rather input name), OR prefix pattern with "value=". - `limit` (int): Maximum number of items to return (default=0, no limit) - `sanitizer` (string): Name of sanitizer to run values through (default='', none) - `arrays` (bool): Also find on input varibles that are arrays? (default=false)
+- `$pattern` `string` Wildcard string or PCRE regular expression
+- `$options` (optional) `array` - `type` (string): Specify "value" to match input value (rather input name), OR prefix pattern with "value=". - `limit` (int): Maximum number of items to return (default=0, no limit) - `sanitizer` (string): Name of sanitizer to run values through (default='', none) - `arrays` (bool): Also find on input varibles that are arrays? (default=false)
 
 ## Return value
 
 array Returns associative array of values `[ name => value ]` if found, or empty array if none found.
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

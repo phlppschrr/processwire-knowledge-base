@@ -26,9 +26,9 @@ $firstName = $session->firstName;
 
 ## Arguments
 
-- string|object $key Name of session variable to set (or object for namespace)
-- string|mixed $value Value to set (or name of variable, if first argument is namespace)
-- mixed $_value Value to set if first argument is namespace. Omit otherwise.
+- `$key` `string|object` Name of session variable to set (or object for namespace)
+- `$value` `string|mixed` Value to set (or name of variable, if first argument is namespace)
+- `$_value` (optional) `mixed` Value to set if first argument is namespace. Omit otherwise.
 
 ## Return value
 

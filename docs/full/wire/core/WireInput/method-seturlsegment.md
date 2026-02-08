@@ -9,5 +9,5 @@ Set a URL segment value
 
 ## Arguments
 
-- int $num Number of this URL segment (1 based)
-- string|null $value Value to set, or NULL to unset.
+- `$num` `int` Number of this URL segment (1 based)
+- `$value` `string|null` Value to set, or NULL to unset.

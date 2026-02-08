@@ -6,8 +6,8 @@ Hook called after either of Pages::save or Pages::saveField successfully execute
 
 ## Arguments
 
-- Page $page
-- array $changes Names of fields
+- `$page` `Page`
+- `$changes` (optional) `array` Names of fields
 
 ## See also
 

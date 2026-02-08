@@ -6,12 +6,12 @@ Same as find() or findOne() methods, but always returns a Page (whether Page or 
 
 ## Arguments
 
-- string $selector
+- `$selector` `string`
 
 ## Return value
 
 Page|NullPage
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

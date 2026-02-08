@@ -8,7 +8,7 @@ Note that the returned value excludes the default engine (ImageSizerEngineGD).
 
 ## Arguments
 
-- bool $forceReload Specify true only if you want to prevent it from using cached result from previous call.
+- `$forceReload` (optional) `bool` Specify true only if you want to prevent it from using cached result from previous call.
 
 ## Return value
 

@@ -6,9 +6,9 @@ Hook called after successful creation of image variation
 
 ## Arguments
 
-- Pageimage $image The variation image that was created
-- array $data Verbose associative array of data used to create the variation
+- `$image` `Pageimage` The variation image that was created
+- `$data` `array` Verbose associative array of data used to create the variation
 
-## Meta
+## Since
 
-- @since 3.0.180
+3.0.180

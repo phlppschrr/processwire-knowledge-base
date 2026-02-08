@@ -261,6 +261,105 @@ def split_type_and_desc(text: str) -> tuple[str, str]:
     return parts[0], parts[1].strip()
 
 
+def parse_param_tag(text: str) -> tuple[str, str, str] | None:
+    match = re.match(r"^([^\s]+)\s+(\$[A-Za-z_][A-Za-z0-9_]*)\s*(.*)$", text)
+    if not match:
+        return None
+    param_type = match.group(1).strip()
+    param_name = match.group(2).strip()
+    param_desc = match.group(3).strip()
+    return param_type, param_name, param_desc
+
+
+def split_signature_params(signature: str) -> list[str]:
+    parts: list[str] = []
+    buf: list[str] = []
+    depth_paren = 0
+    depth_brack = 0
+    depth_brace = 0
+    in_single = False
+    in_double = False
+    escape = False
+
+    for ch in signature:
+        if escape:
+            buf.append(ch)
+            escape = False
+            continue
+        if ch == "\\":
+            buf.append(ch)
+            escape = True
+            continue
+        if in_single:
+            buf.append(ch)
+            if ch == "'":
+                in_single = False
+            continue
+        if in_double:
+            buf.append(ch)
+            if ch == '"':
+                in_double = False
+            continue
+        if ch == "'":
+            in_single = True
+            buf.append(ch)
+            continue
+        if ch == '"':
+            in_double = True
+            buf.append(ch)
+            continue
+        if ch == "(":
+            depth_paren += 1
+            buf.append(ch)
+            continue
+        if ch == ")":
+            depth_paren = max(depth_paren - 1, 0)
+            buf.append(ch)
+            continue
+        if ch == "[":
+            depth_brack += 1
+            buf.append(ch)
+            continue
+        if ch == "]":
+            depth_brack = max(depth_brack - 1, 0)
+            buf.append(ch)
+            continue
+        if ch == "{":
+            depth_brace += 1
+            buf.append(ch)
+            continue
+        if ch == "}":
+            depth_brace = max(depth_brace - 1, 0)
+            buf.append(ch)
+            continue
+        if ch == "," and depth_paren == 0 and depth_brack == 0 and depth_brace == 0:
+            part = "".join(buf).strip()
+            if part:
+                parts.append(part)
+            buf = []
+            continue
+        buf.append(ch)
+
+    part = "".join(buf).strip()
+    if part:
+        parts.append(part)
+    return parts
+
+
+def parse_signature_optional_map(signature: str | None) -> dict[str, bool]:
+    if not signature:
+        return {}
+    optional_map: dict[str, bool] = {}
+    for part in split_signature_params(signature):
+        match = re.search(r"(\$[A-Za-z_][A-Za-z0-9_]*)", part)
+        if not match:
+            continue
+        name = match.group(1)
+        suffix = part[match.end() :]
+        optional_map[name] = "=" in suffix
+    return optional_map
+
+
 def parse_order_groups(line: str) -> list[str]:
     stripped = line.strip()
     if not stripped.startswith("#pw-order-groups"):
@@ -857,30 +956,36 @@ def format_method_heading(
     return f"# {label}"
 
 
-def parse_see_items(text: str) -> list[str]:
+def parse_see_items(text: str) -> list[tuple[str, str]]:
     if not text:
         return []
     parts = [p.strip() for p in text.split(",") if p.strip()]
-    cleaned: list[str] = []
+    cleaned: list[tuple[str, str]] = []
     for part in parts:
         cleaned_part = part.rstrip(".;")
-        if cleaned_part:
-            cleaned.append(cleaned_part)
+        if not cleaned_part:
+            continue
+        if " " in cleaned_part:
+            ref, desc = cleaned_part.split(None, 1)
+        else:
+            ref, desc = cleaned_part, ""
+        cleaned.append((ref, desc))
     return cleaned
 
 
 def render_see_links(
-    items: list[str],
+    items: list[tuple[str, str]],
     doc_index: DocIndex,
     current_path: Path,
 ) -> list[str]:
     lines: list[str] = []
-    for item in items:
-        if item.startswith("http://") or item.startswith("https://"):
-            lines.append(f"- [{item}]({item})")
+    for ref, desc in items:
+        if ref.startswith("http://") or ref.startswith("https://"):
+            suffix = f" {desc}" if desc else ""
+            lines.append(f"- [{ref}]({ref}){suffix}")
             continue
 
-        match = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)::([A-Za-z_][A-Za-z0-9_]*)\s*\(\s*\)?$", item)
+        match = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)::([A-Za-z_][A-Za-z0-9_]*)\s*\(\s*\)?$", ref)
         if match:
             class_name = match.group(1)
             member_name = match.group(2)
@@ -891,10 +996,12 @@ def render_see_links(
                 target = doc_index.class_dirs[class_name] / "index.md"
             if target is not None:
                 rel_link = Path(os.path.relpath(str(target), start=str(current_path.parent)))
-                lines.append(f"- [{class_name}::{member_name}()]({rel_link.as_posix()})")
+                suffix = f" {desc}" if desc else ""
+                lines.append(f"- [{class_name}::{member_name}()]({rel_link.as_posix()}){suffix}")
                 continue
 
-        lines.append(f"- {item}")
+        suffix = f" {desc}" if desc else ""
+        lines.append(f"- {ref}{suffix}")
     return lines
 
 
@@ -918,7 +1025,14 @@ def render_member_doc(
     returns = [t for t in tags if t.name == "return"]
     throws = [t for t in tags if t.name == "throws"]
     sees = [t for t in tags if t.name == "see"]
-    meta = [t for t in tags if t.name not in {"param", "return", "throws", "see"}]
+    since_tags = [t for t in tags if t.name == "since"]
+    deprecated_tags = [t for t in tags if t.name == "deprecated"]
+    meta = [
+        t
+        for t in tags
+        if t.name
+        not in {"param", "return", "throws", "see", "since", "deprecated"}
+    ]
 
     return_type = None
     if returns:
@@ -941,8 +1055,20 @@ def render_member_doc(
         lines.append("")
         lines.append("## Arguments")
         lines.append("")
+        optional_map = parse_signature_optional_map(member.signature_params)
         for tag in params:
-            lines.append(f"- {tag.text}")
+            parsed = parse_param_tag(tag.text)
+            if not parsed:
+                lines.append(f"- {tag.text}")
+                continue
+            param_type, param_name, param_desc = parsed
+            is_optional = optional_map.get(param_name, False) or bool(
+                re.search(r"\boptional\b", param_desc, re.I)
+            )
+            optional_label = " (optional)" if is_optional else ""
+            type_label = f" `{param_type}`" if param_type else ""
+            desc_label = f" {param_desc}" if param_desc else ""
+            lines.append(f"- `{param_name}`{optional_label}{type_label}{desc_label}".rstrip())
 
     if returns:
         lines.append("")
@@ -961,14 +1087,34 @@ def render_member_doc(
         lines.append("")
         lines.append("## See also")
         lines.append("")
-        see_items: list[str] = []
+        see_items: list[tuple[str, str]] = []
         for tag in sees:
             see_items.extend(parse_see_items(tag.text))
         lines.extend(render_see_links(see_items, doc_index, output_path))
 
+    if since_tags:
+        lines.append("")
+        lines.append("## Since")
+        lines.append("")
+        if len(since_tags) == 1:
+            lines.append(since_tags[0].text)
+        else:
+            for tag in since_tags:
+                lines.append(f"- {tag.text}")
+
+    if deprecated_tags:
+        lines.append("")
+        lines.append("## Deprecated")
+        lines.append("")
+        if len(deprecated_tags) == 1:
+            lines.append(deprecated_tags[0].text)
+        else:
+            for tag in deprecated_tags:
+                lines.append(f"- {tag.text}")
+
     if meta:
         lines.append("")
-        lines.append("## Meta")
+        lines.append("## Details")
         lines.append("")
         for tag in meta:
             lines.append(f"- @{tag.name} {tag.text}".rstrip())

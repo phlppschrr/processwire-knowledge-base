@@ -6,7 +6,7 @@ Does this Inputfield have the requested property or attribute?
 
 ## Arguments
 
-- string $key Requested property or attribute.
+- `$key` `string` Requested property or attribute.
 
 ## Return value
 

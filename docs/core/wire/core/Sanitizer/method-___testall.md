@@ -8,7 +8,7 @@ Used for debugging and testing purposes.
 
 ## Arguments
 
-- mixed $value
+- `$value` `mixed`
 
 ## Return value
 

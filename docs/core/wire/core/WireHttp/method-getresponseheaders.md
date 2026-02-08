@@ -14,7 +14,7 @@ This method always returns an associative array of strings, unless you specify t
 
 ## Arguments
 
-- string $key Optional header name you want to get (if you only need one)
+- `$key` (optional) `string` Optional header name you want to get (if you only need one)
 
 ## Return value
 

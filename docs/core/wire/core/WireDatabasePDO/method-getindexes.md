@@ -9,13 +9,13 @@ index `name`, `type` and `columns` (array) for each index.
 
 ## Arguments
 
-- string $table Name of table to get indexes for or `table.index` (usually combined with verbose option).
-- bool|int|string $verbose Include array of verbose information for each? (default=false) - Omit or false (bool) to just get index names. - True (bool) or 1 (int) to get a verbose array of information for each index, indexed by index name. - 2 (int) to get regular PHP array of raw MySQL index information. - Index name (string) to get verbose array only for only that index.
+- `$table` `string` Name of table to get indexes for or `table.index` (usually combined with verbose option).
+- `$verbose` (optional) `bool|int|string` Include array of verbose information for each? (default=false) - Omit or false (bool) to just get index names. - True (bool) or 1 (int) to get a verbose array of information for each index, indexed by index name. - 2 (int) to get regular PHP array of raw MySQL index information. - Index name (string) to get verbose array only for only that index.
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.182
+3.0.182

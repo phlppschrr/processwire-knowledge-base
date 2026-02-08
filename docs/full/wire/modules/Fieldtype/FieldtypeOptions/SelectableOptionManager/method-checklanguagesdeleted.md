@@ -6,7 +6,7 @@ Check for deleted languages
 
 ## Arguments
 
-- Language|null $languageDeleted
+- `$languageDeleted` (optional) `Language|null`
 
 ## Return value
 

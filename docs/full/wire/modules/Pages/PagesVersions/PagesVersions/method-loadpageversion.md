@@ -9,9 +9,9 @@ the given `$page` rather than populating and returning a cloned copy of it.
 
 ## Arguments
 
-- Page $page
-- int|string|PageVersionInfo $version
-- array $options - `names` (array): Optionally load only these field/property names from version.
+- `$page` `Page`
+- `$version` `int|string|PageVersionInfo`
+- `$options` (optional) `array` - `names` (array): Optionally load only these field/property names from version.
 
 ## Return value
 

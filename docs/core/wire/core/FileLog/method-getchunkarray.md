@@ -6,9 +6,9 @@ Get lines from the end of a file based on chunk size
 
 ## Arguments
 
-- int $chunkSize
-- int $chunkNum
-- bool $reverse
+- `$chunkSize` (optional) `int`
+- `$chunkNum` (optional) `int`
+- `$reverse` (optional) `bool`
 
 ## Return value
 

@@ -16,7 +16,7 @@ $path = $config->paths->root;
 
 ## Arguments
 
-- string $for Predefined ProcessWire paths property or module class name
+- `$for` `string` Predefined ProcessWire paths property or module class name
 
 ## Return value
 

@@ -6,13 +6,13 @@ Executes an SQL statement, returning a result set as a PDOStatement object
 
 ## Arguments
 
-- string $statement
-- string $note
+- `$statement` `string`
+- `$note` (optional) `string`
 
 ## Return value
 
 \PDOStatement
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.query.php

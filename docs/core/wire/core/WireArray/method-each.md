@@ -34,7 +34,7 @@ $properties = $page->children()->each(["title", "url"]);
 
 ## Arguments
 
-- callable|string|array|null $func Accepts any of the following: 1. Callable function that each item will be passed to as first argument. If this function returns a string, it will be appended to that of the other items and the result returned by this each() method. 2. Markup or text string with variable {tags} within it where each {tag} resolves to a property in each item. This each() method will return the concatenated result. 3. A property name (string) common to items in this WireArray. The result will be returned as an array. 4. An array of property names common to items in this WireArray. The result will be returned as an array of associative arrays indexed by property name.
+- `$func` (optional) `callable|string|array|null` Accepts any of the following: 1. Callable function that each item will be passed to as first argument. If this function returns a string, it will be appended to that of the other items and the result returned by this each() method. 2. Markup or text string with variable {tags} within it where each {tag} resolves to a property in each item. This each() method will return the concatenated result. 3. A property name (string) common to items in this WireArray. The result will be returned as an array. 4. An array of property names common to items in this WireArray. The result will be returned as an array of associative arrays indexed by property name.
 
 ## Return value
 

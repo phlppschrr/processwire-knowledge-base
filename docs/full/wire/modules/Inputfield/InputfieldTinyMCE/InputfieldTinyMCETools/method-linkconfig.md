@@ -6,7 +6,7 @@ Get config for ProcessPageEditLink module
 
 ## Arguments
 
-- string $key
+- `$key` (optional) `string`
 
 ## Return value
 

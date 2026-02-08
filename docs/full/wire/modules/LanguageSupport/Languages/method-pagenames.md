@@ -8,6 +8,6 @@ Get LanguageSupportPageNames module if installed, false if not
 
 LanguageSupportPageNames|false
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

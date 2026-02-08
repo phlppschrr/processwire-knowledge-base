@@ -6,7 +6,7 @@ Set whether or not ZIP files may be extracted
 
 ## Arguments
 
-- bool $extract
+- `$extract` (optional) `bool`
 
 ## Return value
 

@@ -6,8 +6,8 @@ Remove newlines from the given string and return it
 
 ## Arguments
 
-- string $str String to remove newlines from
-- string $replacement Character to replace newlines with (default=" ")
+- `$str` `string` String to remove newlines from
+- `$replacement` (optional) `string` Character to replace newlines with (default=" ")
 
 ## Return value
 

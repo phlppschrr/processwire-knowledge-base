@@ -10,8 +10,8 @@ with the first item being that delimited string.
 
 ## Arguments
 
-- mixed $value
-- array $options - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) - `sanitizer` (string): Optionally specify sanitizer method name to apply to items (default='') - `keySanitizer` (string): Optionally sanitize associative array keys with this method (default='') Since 3.0.167
+- `$value` `mixed`
+- `$options` (optional) `array` - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) - `sanitizer` (string): Optionally specify sanitizer method name to apply to items (default='') - `keySanitizer` (string): Optionally sanitize associative array keys with this method (default='') Since 3.0.167
 
 ## Return value
 
@@ -21,6 +21,6 @@ array
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.165
+3.0.165

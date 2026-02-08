@@ -11,4 +11,4 @@ populates the module-specific configuration fields.
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`

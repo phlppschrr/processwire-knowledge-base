@@ -6,7 +6,7 @@ Given an array of $options convert to an PHP-code array() string
 
 ## Arguments
 
-- array $options
+- `$options` `array`
 
 ## Return value
 

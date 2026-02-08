@@ -17,8 +17,8 @@ option does not apply.
 
 ## Arguments
 
-- int $length Required length of string, or 0 for random length
-- array $options Options to modify default behavior: - `alpha` (bool): Allow ASCII alphabetic characters? (default=true) - `upper` (bool): Allow uppercase ASCII alphabetic characters? (default=true) - `lower` (bool): Allow lowercase ASCII alphabetic characters? (default=true) - `numeric` (bool): Allow numeric characters 0123456789? (default=true) - `strict` (bool): Require that at least 1 character representing each true option above is present? (default=false) - `allow` (array|string): Only allow these ASCII alpha or digit characters, see notes. (default='') - `disallow` (array|string): Do not allow these characters. (default='') - `require` (array|string): Require that these character(s) are present. (default='') - `extras` (array|string): Also allow these non-alphanumeric extra characters. (default='') - `minLength` (int): If $length argument is 0, minimum length of returned string. (default=10) - `maxLength` (int): If $length argument is 0, maximum length of returned string. (default=40) - `noRepeat` (bool): Prevent same character from appearing more than once in sequence? (default=false) - `noStart` (string|array): Do not start string with these characters. (default='') - 'noEnd` (string|array): Do not end string with these characters. (default='') - `fast` (bool): Use faster method? (default=true if PHP7 or mcrypt available, false if not)
+- `$length` (optional) `int` Required length of string, or 0 for random length
+- `$options` (optional) `array` Options to modify default behavior: - `alpha` (bool): Allow ASCII alphabetic characters? (default=true) - `upper` (bool): Allow uppercase ASCII alphabetic characters? (default=true) - `lower` (bool): Allow lowercase ASCII alphabetic characters? (default=true) - `numeric` (bool): Allow numeric characters 0123456789? (default=true) - `strict` (bool): Require that at least 1 character representing each true option above is present? (default=false) - `allow` (array|string): Only allow these ASCII alpha or digit characters, see notes. (default='') - `disallow` (array|string): Do not allow these characters. (default='') - `require` (array|string): Require that these character(s) are present. (default='') - `extras` (array|string): Also allow these non-alphanumeric extra characters. (default='') - `minLength` (int): If $length argument is 0, minimum length of returned string. (default=10) - `maxLength` (int): If $length argument is 0, maximum length of returned string. (default=40) - `noRepeat` (bool): Prevent same character from appearing more than once in sequence? (default=false) - `noStart` (string|array): Do not start string with these characters. (default='') - 'noEnd` (string|array): Do not end string with these characters. (default='') - `fast` (bool): Use faster method? (default=true if PHP7 or mcrypt available, false if not)
 
 ## Return value
 
@@ -28,6 +28,6 @@ string
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.111
+3.0.111

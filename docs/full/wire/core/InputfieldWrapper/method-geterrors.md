@@ -8,7 +8,7 @@ Should only be called after `InputfieldWrapper::processInput()`.
 
 ## Arguments
 
-- bool $clear Specify true to clear out the errors (default=false).
+- `$clear` (optional) `bool` Specify true to clear out the errors (default=false).
 
 ## Return value
 

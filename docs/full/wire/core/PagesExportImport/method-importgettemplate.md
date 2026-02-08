@@ -6,9 +6,9 @@ Get the Page Template to use for import
 
 ## Arguments
 
-- array $a Import data
-- array $options Import options
-- array $errors Errors array
+- `$a` `array` Import data
+- `$options` `array` Import options
+- `$errors` `array` Errors array
 
 ## Return value
 

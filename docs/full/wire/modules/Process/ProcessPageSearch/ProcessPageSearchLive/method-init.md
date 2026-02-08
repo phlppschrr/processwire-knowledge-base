@@ -6,7 +6,7 @@ Initialize live search
 
 ## Arguments
 
-- array $presets Additional info to populate in liveSearchInfo
+- `$presets` (optional) `array` Additional info to populate in liveSearchInfo
 
 ## Return value
 

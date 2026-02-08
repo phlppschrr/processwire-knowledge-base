@@ -6,7 +6,7 @@ Cache the given page in memory
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

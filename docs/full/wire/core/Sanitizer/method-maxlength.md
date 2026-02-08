@@ -12,9 +12,9 @@ Limit length of given value to that specified
 
 ## Arguments
 
-- string|int|array|float $value
-- int $maxLength Maximum length (default=128)
-- null|int $maxBytes Maximum allowed bytes (used for string types only)
+- `$value` `string|int|array|float`
+- `$maxLength` (optional) `int` Maximum length (default=128)
+- `$maxBytes` (optional) `null|int` Maximum allowed bytes (used for string types only)
 
 ## Return value
 
@@ -24,6 +24,6 @@ array|float|int|string
 
 - [Sanitizer::minLength()](method-minlength.md)
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

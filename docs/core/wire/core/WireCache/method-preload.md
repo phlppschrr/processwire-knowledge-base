@@ -8,9 +8,7 @@ After a preloaded cache is returned from a get() call, it is removed from local 
 
 ## Arguments
 
-- array $names
-- int|string|null $expire
+- `$names` `array`
+- `$expire` (optional) `int|string|null`
 
-## Meta
-
-- @deprecated
+## Deprecated

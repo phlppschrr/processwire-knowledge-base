@@ -100,7 +100,7 @@ echo $page->url([
 
 ## Arguments
 
-- array|int|string|bool|Language|null $options Optionally specify options to modify default behavior (see method description).
+- `$options` (optional) `array|int|string|bool|Language|null` Optionally specify options to modify default behavior (see method description).
 
 ## Return value
 

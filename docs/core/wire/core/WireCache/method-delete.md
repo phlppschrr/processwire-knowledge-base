@@ -14,7 +14,7 @@ $cache->delete("my-*");
 
 ## Arguments
 
-- string $name Name of cache, or partial name with wildcard (i.e. "MyCache*") to clear multiple caches.
+- `$name` `string` Name of cache, or partial name with wildcard (i.e. "MyCache*") to clear multiple caches.
 
 ## Return value
 

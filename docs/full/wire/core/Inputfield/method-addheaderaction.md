@@ -68,12 +68,12 @@ Settings for dropdown menu actions (3.0.241+)
 
 ## Arguments
 
-- array $settings Specify array containing the appropriate settings above.
+- `$settings` (optional) `array` Specify array containing the appropriate settings above.
 
 ## Return value
 
 array Returns all currently added actions.
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

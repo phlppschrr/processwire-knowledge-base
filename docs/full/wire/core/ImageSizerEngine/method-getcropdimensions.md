@@ -8,9 +8,9 @@ Intended for use by the resize() method
 
 ## Arguments
 
-- int $w1 - byReference
-- int $h1 - byReference
-- int $gdWidth
-- int $targetWidth
-- int $gdHeight
-- int $targetHeight
+- `$w1` `int` - byReference
+- `$h1` `int` - byReference
+- `$gdWidth` `int`
+- `$targetWidth` `int`
+- `$gdHeight` `int`
+- `$targetHeight` `int`

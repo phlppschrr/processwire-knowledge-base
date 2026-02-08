@@ -8,6 +8,6 @@ Return read-only PDO connection if available or read/write PDO connection if not
 
 \PDO
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

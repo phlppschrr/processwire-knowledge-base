@@ -8,6 +8,6 @@ Get all notices visible to current user
 
 Notices Returns a new Notices object
 
-## Meta
+## Since
 
-- @since 3.0.252
+3.0.252

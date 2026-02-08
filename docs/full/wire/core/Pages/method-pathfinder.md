@@ -8,6 +8,6 @@ Get the PagesPathFinder instance which provides methods for finding pages by pat
 
 PagesPathFinder
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

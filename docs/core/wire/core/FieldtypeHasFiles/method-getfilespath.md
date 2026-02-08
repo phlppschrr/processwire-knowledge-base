@@ -6,8 +6,8 @@ Get path where files are (or would be) stored
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 

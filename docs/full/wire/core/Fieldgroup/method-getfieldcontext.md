@@ -9,8 +9,8 @@ already populated to it.
 
 ## Arguments
 
-- string|int|Field $key Field object, name or id.
-- string $namespace Optional namespace string for context
+- `$key` `string|int|Field` Field object, name or id.
+- `$namespace` (optional) `string` Optional namespace string for context
 
 ## Return value
 

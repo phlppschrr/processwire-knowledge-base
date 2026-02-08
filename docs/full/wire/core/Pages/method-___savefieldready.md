@@ -6,8 +6,8 @@ Hook called when Pages::saveField is ready to execute
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## See also
 

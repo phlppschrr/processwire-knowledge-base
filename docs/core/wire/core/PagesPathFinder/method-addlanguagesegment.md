@@ -6,8 +6,8 @@ Add language segment
 
 ## Arguments
 
-- string $path
-- string|Language|int $language
+- `$path` `string`
+- `$language` `string|Language|int`
 
 ## Return value
 

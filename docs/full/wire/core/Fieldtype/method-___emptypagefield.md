@@ -9,8 +9,8 @@ for things like page references where we wouldn't want relational data deleted.
 
 ## Arguments
 
-- Page $page
-- Field $field Field object
+- `$page` `Page`
+- `$field` `Field` Field object
 
 ## Return value
 

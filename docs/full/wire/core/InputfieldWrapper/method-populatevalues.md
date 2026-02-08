@@ -13,7 +13,7 @@ the field 'value' as the array value, i.e. `['field_name' => 'field_value']`.
 
 ## Arguments
 
-- WireData|Wire|ConfigurableModule|array $data
+- `$data` `WireData|Wire|ConfigurableModule|array`
 
 ## Return value
 

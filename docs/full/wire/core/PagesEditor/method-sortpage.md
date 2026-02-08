@@ -9,9 +9,9 @@ Set page $sort value and increment siblings having same or greater sort value
 
 ## Arguments
 
-- Page $page Page that you want to set the sort value for
-- int|null $sort New sort value for page or null to pull from $page->sort
-- bool $after If another page already has the sort, make $page go after it rather than before it? (default=false)
+- `$page` `Page` Page that you want to set the sort value for
+- `$sort` (optional) `int|null` New sort value for page or null to pull from $page->sort
+- `$after` (optional) `bool` If another page already has the sort, make $page go after it rather than before it? (default=false)
 
 ## Return value
 

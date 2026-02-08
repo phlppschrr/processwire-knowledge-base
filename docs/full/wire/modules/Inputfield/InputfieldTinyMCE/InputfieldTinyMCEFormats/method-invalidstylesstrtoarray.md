@@ -6,8 +6,8 @@ Convert invalid_styles string to array
 
 ## Arguments
 
-- string $value i.e. "line-height color a=background|background-color td=height"
-- array $a Optionally merge with these styles
+- `$value` `string` i.e. "line-height color a=background|background-color td=height"
+- `$a` (optional) `array` Optionally merge with these styles
 
 ## Return value
 

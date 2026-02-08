@@ -6,8 +6,8 @@ Prepare rows for save or delete
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 - $value
 
 ## Return value

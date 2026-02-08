@@ -6,7 +6,7 @@ Get the first match of your selector string
 
 ## Arguments
 
-- string|int $selectorString
+- `$selectorString` `string|int`
 
 ## Return value
 

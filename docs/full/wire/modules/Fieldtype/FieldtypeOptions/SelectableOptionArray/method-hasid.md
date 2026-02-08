@@ -6,7 +6,7 @@ Is the given id present in these selectable options?
 
 ## Arguments
 
-- int $id
+- `$id` `int`
 
 ## Return value
 

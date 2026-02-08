@@ -6,7 +6,7 @@ Given a value return corresponding language
 
 ## Arguments
 
-- string|int|Language $value
+- `$value` `string|int|Language`
 
 ## Return value
 

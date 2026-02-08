@@ -6,9 +6,9 @@ Save the uploaded file
 
 ## Arguments
 
-- string $tmp_name Temporary filename (full path and filename)
-- string $filename Actual filename (basename)
-- bool $ajax Is this an AJAX upload?
+- `$tmp_name` `string` Temporary filename (full path and filename)
+- `$filename` `string` Actual filename (basename)
+- `$ajax` (optional) `bool` Is this an AJAX upload?
 
 ## Return value
 

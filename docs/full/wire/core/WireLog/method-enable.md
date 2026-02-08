@@ -6,7 +6,7 @@ Enable a previously disabled log
 
 ## Arguments
 
-- string $name Log name or specify '*' to reverse a previous disable('*') call.
+- `$name` `string` Log name or specify '*' to reverse a previous disable('*') call.
 
 ## Return value
 
@@ -16,6 +16,6 @@ self
 
 - [WireLog::disable()](method-disable.md)
 
-## Meta
+## Since
 
-- @since 3.0.148
+3.0.148

@@ -10,4 +10,4 @@ the last URL segment in the request URL.
 
 ## Arguments
 
-- string $processMethod
+- `$processMethod` `string`

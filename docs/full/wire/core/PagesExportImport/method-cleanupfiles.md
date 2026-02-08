@@ -6,7 +6,7 @@ Remove files and directories in /site/assets/backups/PagesExportImport/ that are
 
 ## Arguments
 
-- int $maxAge Maximum age in seconds (default=3600)
+- `$maxAge` (optional) `int` Maximum age in seconds (default=3600)
 
 ## Return value
 

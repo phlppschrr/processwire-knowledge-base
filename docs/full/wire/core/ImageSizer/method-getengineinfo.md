@@ -22,12 +22,12 @@ Returns array of arrays indexed by engine name, each with the following:
 
 ## Arguments
 
-- string $name Specify engine name to get info just for that engine or omit to get info for all engines (default)
+- `$name` (optional) `string` Specify engine name to get info just for that engine or omit to get info for all engines (default)
 
 ## Return value
 
 array Array of arrays indexed by engine name, or if $name specified then just array of info for that engine. Returns empty array on error.
 
-## Meta
+## Since
 
-- @since 3.0.138
+3.0.138

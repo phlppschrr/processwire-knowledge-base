@@ -9,8 +9,8 @@ Get an array of all the interfaces that the given class implements
 
 ## Arguments
 
-- string|object $className
-- bool $autoload
+- `$className` `string|object`
+- `$autoload` (optional) `bool`
 
 ## Return value
 

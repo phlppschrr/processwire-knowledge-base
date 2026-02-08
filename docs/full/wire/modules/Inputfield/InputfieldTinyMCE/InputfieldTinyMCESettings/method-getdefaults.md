@@ -10,6 +10,6 @@ This should have no field-specific settings (no dynamic values)
 
 array
 
-## Meta
+## Details
 
 - @property string $key

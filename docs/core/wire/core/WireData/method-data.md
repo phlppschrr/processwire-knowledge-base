@@ -24,8 +24,8 @@ $value = $item->data('some_property');
 
 ## Arguments
 
-- string|array $key Property you want to get or set, or associative array of properties you want to set.
-- mixed $value Optionally specify a value if you want to set rather than get. Or Specify boolean TRUE if setting an array via $key and you want to overwrite any existing values (rather than merge).
+- `$key` (optional) `string|array` Property you want to get or set, or associative array of properties you want to set.
+- `$value` (optional) `mixed` Optionally specify a value if you want to set rather than get. Or Specify boolean TRUE if setting an array via $key and you want to overwrite any existing values (rather than merge).
 
 ## Return value
 

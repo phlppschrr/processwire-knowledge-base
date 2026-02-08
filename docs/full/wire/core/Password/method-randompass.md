@@ -8,7 +8,7 @@ See WireRandom::pass() method for details.
 
 ## Arguments
 
-- array $options See WireRandom::pass() for options
+- `$options` (optional) `array` See WireRandom::pass() for options
 
 ## Return value
 

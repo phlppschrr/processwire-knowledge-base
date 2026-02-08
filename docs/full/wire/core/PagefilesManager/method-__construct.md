@@ -6,4 +6,4 @@ Construct the PagefilesManager and ensure all needed paths are created
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

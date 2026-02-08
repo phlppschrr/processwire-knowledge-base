@@ -8,6 +8,6 @@ Return all pending path hooks
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

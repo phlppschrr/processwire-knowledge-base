@@ -6,7 +6,7 @@ Arrange the order of field names where necessary
 
 ## Arguments
 
-- array $fields
+- `$fields` `array`
 
 ## Return value
 

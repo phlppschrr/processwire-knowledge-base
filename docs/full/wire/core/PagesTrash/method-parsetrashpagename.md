@@ -6,7 +6,7 @@ Parse a trashed page name into an array of its components
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

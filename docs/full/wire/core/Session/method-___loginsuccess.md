@@ -6,4 +6,4 @@ Login success method for hooks
 
 ## Arguments
 
-- User $user
+- `$user` `User`

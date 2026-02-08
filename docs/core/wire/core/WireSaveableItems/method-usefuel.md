@@ -6,7 +6,7 @@ Enforce no locally-scoped fuel for this class
 
 ## Arguments
 
-- bool|null $useFuel
+- `$useFuel` (optional) `bool|null`
 
 ## Return value
 

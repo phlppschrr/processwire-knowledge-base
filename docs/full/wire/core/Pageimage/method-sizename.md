@@ -10,8 +10,8 @@ contain any other option from the `Pageimage::size()` argument `$options`.
 
 ## Arguments
 
-- string $name Image size name
-- array $options Optionally add or override options defined for size.
+- `$name` `string` Image size name
+- `$options` (optional) `array` Optionally add or override options defined for size.
 
 ## Return value
 
@@ -21,6 +21,6 @@ Pageimage
 
 - WireException If given a $name that is not present in $config->imageSizes
 
-## Meta
+## Since
 
-- @since 3.0.151
+3.0.151

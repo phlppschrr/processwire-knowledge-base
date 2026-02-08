@@ -6,7 +6,7 @@ Save a Permission
 
 ## Arguments
 
-- Permission|Page $page
+- `$page` `Permission|Page`
 
 ## Return value
 

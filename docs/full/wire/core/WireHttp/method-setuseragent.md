@@ -6,8 +6,8 @@ Set the current user-agent header
 
 ## Arguments
 
-- string $userAgent
+- `$userAgent` `string`
 
-## Meta
+## Since
 
-- @since 3.0.183
+3.0.183

@@ -9,7 +9,7 @@ equivalent PageFinder setting if present in the original initiating selector.
 
 ## Arguments
 
-- Selectors|string $selectors
+- `$selectors` `Selectors|string`
 
 ## Return value
 

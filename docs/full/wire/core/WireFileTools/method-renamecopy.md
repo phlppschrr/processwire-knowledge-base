@@ -9,9 +9,9 @@ If source files cannot be deleted afterwards, the warning is logged, plus a warn
 
 ## Arguments
 
-- string $oldName Old pathname, must be full disk path.
-- string $newName New pathname, must be full disk path OR can be basename to assume same path as $oldName.
-- array $options See options for rename() method
+- `$oldName` `string` Old pathname, must be full disk path.
+- `$newName` `string` New pathname, must be full disk path OR can be basename to assume same path as $oldName.
+- `$options` (optional) `array` See options for rename() method
 
 ## Return value
 
@@ -21,6 +21,6 @@ bool
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.178
+3.0.178

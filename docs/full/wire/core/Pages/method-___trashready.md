@@ -6,8 +6,8 @@ Hook called when a Page is about to be trashed
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

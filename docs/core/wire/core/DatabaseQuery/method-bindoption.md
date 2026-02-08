@@ -6,13 +6,13 @@ Get or set a bind option
 
 ## Arguments
 
-- string|bool $optionName One of 'prefix' or 'global', boolean true to get/set all
-- null|int|string|array $optionValue Omit when getting, Specify option value to set, or array when setting all
+- `$optionName` `string|bool` One of 'prefix' or 'global', boolean true to get/set all
+- `$optionValue` (optional) `null|int|string|array` Omit when getting, Specify option value to set, or array when setting all
 
 ## Return value
 
 string|int|array
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

@@ -5,7 +5,7 @@ Source: `wire/core/Module.php`
 
 ## Arguments
 
-- InputfieldWrapper|array|null $data
+- `$data` (optional) `InputfieldWrapper|array|null`
 
 ## Return value
 

@@ -12,12 +12,12 @@ language-specific page number settings in the LanguageSupportPageNames module.
 
 ## Arguments
 
-- int $pageNum Optionally specify page number to use (default=0, which means use current page number)
+- `$pageNum` (optional) `int` Optionally specify page number to use (default=0, which means use current page number)
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.106
+3.0.106

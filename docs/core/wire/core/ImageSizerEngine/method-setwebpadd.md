@@ -6,8 +6,8 @@ Set flag to also create a webp file or not
 
 ## Arguments
 
-- bool $webpAdd
-- bool|null $webpOnly
+- `$webpAdd` `bool`
+- `$webpOnly` (optional) `bool|null`
 
 ## Return value
 

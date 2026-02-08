@@ -14,7 +14,7 @@ $pages->emptyTrash();
 
 ## Arguments
 
-- array $options See PagesTrash::emptyTrash() for advanced options
+- `$options` (optional) `array` See PagesTrash::emptyTrash() for advanced options
 
 ## Return value
 

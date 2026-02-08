@@ -14,7 +14,7 @@ Get a property or attribute from the Inputfield
 
 ## Arguments
 
-- string $key Name of property or attribute to retrieve.
+- `$key` `string` Name of property or attribute to retrieve.
 
 ## Return value
 

@@ -9,5 +9,5 @@ Note that options set from $input->cookie->options take precedence over those se
 
 ## Arguments
 
-- string $key Cookie name
-- array|float|int|null|string $value Cookie value
+- `$key` `string` Cookie name
+- `$value` `array|float|int|null|string` Cookie value

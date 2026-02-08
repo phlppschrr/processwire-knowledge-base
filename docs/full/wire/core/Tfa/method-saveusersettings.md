@@ -6,8 +6,8 @@ Save TFA data for given user to user_tfa field
 
 ## Arguments
 
-- User $user
-- array $settings
+- `$user` `User`
+- `$settings` `array`
 
 ## Return value
 

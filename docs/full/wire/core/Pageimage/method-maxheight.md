@@ -12,8 +12,8 @@ will be returned at the requested dimension.
 
 ## Arguments
 
-- int $n Maximum height
-- array $options See `Pageimage::size()` method for options
+- `$n` `int` Maximum height
+- `$options` (optional) `array` See `Pageimage::size()` method for options
 
 ## Return value
 

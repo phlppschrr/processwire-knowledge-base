@@ -6,9 +6,9 @@ Returns array of all create table statements, indexed by table name
 
 ## Arguments
 
-- string $filename to extract all CREATE TABLE statements from
-- string $regex Regex (PCRE) to match for statement to be returned, must stuff table name into first match
-- bool $multi Whether there can be multiple matches per table
+- `$filename` `string` to extract all CREATE TABLE statements from
+- `$regex` `string` Regex (PCRE) to match for statement to be returned, must stuff table name into first match
+- `$multi` (optional) `bool` Whether there can be multiple matches per table
 
 ## Return value
 

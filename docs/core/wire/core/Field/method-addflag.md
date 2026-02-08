@@ -6,7 +6,7 @@ Add the given bitmask flag
 
 ## Arguments
 
-- int $flag
+- `$flag` `int`
 
 ## Return value
 

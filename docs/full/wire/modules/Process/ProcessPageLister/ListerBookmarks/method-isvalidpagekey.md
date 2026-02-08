@@ -6,7 +6,7 @@ Is the given page ID or key valid and existing?
 
 ## Arguments
 
-- int|string $val
+- `$val` `int|string`
 
 ## Return value
 

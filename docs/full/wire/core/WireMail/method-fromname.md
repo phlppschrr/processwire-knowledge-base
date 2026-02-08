@@ -9,7 +9,7 @@ all properties can be set with direct access, i.e. $mailer->fromName = 'User Nam
 
 ## Arguments
 
-- string $name The 'from' name
+- `$name` `string` The 'from' name
 
 ## Return value
 

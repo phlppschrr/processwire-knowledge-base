@@ -6,8 +6,8 @@ Does this user have the given permission on the given template?
 
 ## Arguments
 
-- string|Permission $name Permission name
-- Template|int|string $template Template object, name or ID
+- `$name` `string|Permission` Permission name
+- `$template` `Template|int|string` Template object, name or ID
 
 ## Return value
 

@@ -12,7 +12,7 @@ than sharing the same setting globally.
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

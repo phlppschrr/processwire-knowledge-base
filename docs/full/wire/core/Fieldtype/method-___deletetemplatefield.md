@@ -13,8 +13,8 @@ when dealing with thousands of pages.
 
 ## Arguments
 
-- Template $template
-- Field $field
+- `$template` `Template`
+- `$field` `Field`
 
 ## Return value
 

@@ -8,8 +8,8 @@ Default/non-implemented behavior is to return a blanks string.
 
 ## Arguments
 
-- Page|NullPage $page
-- Field $field
+- `$page` `Page|NullPage`
+- `$field` `Field`
 
 ## Return value
 

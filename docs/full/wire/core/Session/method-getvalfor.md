@@ -9,14 +9,14 @@ For a namespace version use `Session::getValFor()` instead.
 
 ## Arguments
 
-- string|object $ns Namespace string or object
-- string $key Specify variable name to retrieve
-- mixed $val Fallback value if session does not have one
+- `$ns` `string|object` Namespace string or object
+- `$key` `string` Specify variable name to retrieve
+- `$val` (optional) `mixed` Fallback value if session does not have one
 
 ## Return value
 
 mixed
 
-## Meta
+## Since
 
-- @since 3.0.133
+3.0.133

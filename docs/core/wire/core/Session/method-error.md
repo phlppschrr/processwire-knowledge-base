@@ -6,8 +6,8 @@ Queue an error to appear on the next pageview
 
 ## Arguments
 
-- string $text Error to queue
-- int $flags See Notice::flags
+- `$text` `string` Error to queue
+- `$flags` (optional) `int` See Notice::flags
 
 ## Return value
 

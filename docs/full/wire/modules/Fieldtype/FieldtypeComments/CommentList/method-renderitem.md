@@ -11,8 +11,8 @@ using your own code in your templates.
 
 ## Arguments
 
-- Comment $comment
-- array $options
+- `$comment` `Comment`
+- `$options` (optional) `array`
 
 ## Return value
 

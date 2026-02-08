@@ -6,4 +6,4 @@ Set the ProcessWire instance
 
 ## Arguments
 
-- ProcessWire $wire
+- `$wire` `ProcessWire`

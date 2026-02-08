@@ -6,7 +6,7 @@ Ensures that isset() and empty() work for this classes properties.
 
 ## Arguments
 
-- string|int $key
+- `$key` `string|int`
 
 ## Return value
 

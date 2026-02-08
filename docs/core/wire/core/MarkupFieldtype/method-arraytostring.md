@@ -6,8 +6,8 @@ Render an unknown array or WireArray to a string
 
 ## Arguments
 
-- array|WireArray $value
-- bool $encode
+- `$value` `array|WireArray`
+- `$encode` (optional) `bool`
 
 ## Return value
 

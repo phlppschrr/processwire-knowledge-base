@@ -6,7 +6,7 @@ Delete the entries in fieldgroups_fields for the given Field
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

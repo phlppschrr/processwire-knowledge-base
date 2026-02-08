@@ -6,7 +6,7 @@ Return the requested path or URL (functionally the same as direct access)
 
 ## Arguments
 
-- object|string $key
+- `$key` `object|string`
 
 ## Return value
 

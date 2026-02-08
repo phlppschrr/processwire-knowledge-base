@@ -9,6 +9,6 @@ to their constructor.
 
 ## Arguments
 
-- string $filename
-- array $options
-- null|array $inspectionResult
+- `$filename` `string`
+- `$options` (optional) `array`
+- `$inspectionResult` (optional) `null|array`

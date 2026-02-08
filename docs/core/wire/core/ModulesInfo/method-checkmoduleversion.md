@@ -9,4 +9,4 @@ triggers the $module->___upgrade($fromVersion, $toVersion) method.
 
 ## Arguments
 
-- Module $module
+- `$module` `Module`

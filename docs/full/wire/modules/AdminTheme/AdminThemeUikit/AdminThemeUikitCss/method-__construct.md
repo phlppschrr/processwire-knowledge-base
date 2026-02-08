@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- AdminTheme $adminTheme
-- array $options
+- `$adminTheme` `AdminTheme`
+- `$options` (optional) `array`

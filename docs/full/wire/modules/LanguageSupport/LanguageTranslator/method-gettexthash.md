@@ -6,7 +6,7 @@ Given original $text, issue a unique MD5 key used to reference it
 
 ## Arguments
 
-- string $text
+- `$text` `string`
 
 ## Return value
 

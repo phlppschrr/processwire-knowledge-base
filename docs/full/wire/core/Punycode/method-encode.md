@@ -6,7 +6,7 @@ Encode a domain to its Punycode version
 
 ## Arguments
 
-- string $input Domain name in Unicode to be encoded
+- `$input` `string` Domain name in Unicode to be encoded
 
 ## Return value
 

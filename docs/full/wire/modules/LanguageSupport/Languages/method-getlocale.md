@@ -11,8 +11,8 @@ The first and second arguments may optionally be swapped and either can be omitt
 
 ## Arguments
 
-- int|Language|string|null $category Optionally specify a PHP LC constant (default=LC_ALL)
-- Language|string|int|null $language Optionally return locale for specific language (default=current locale, regardless of language)
+- `$category` (optional) `int|Language|string|null` Optionally specify a PHP LC constant (default=LC_ALL)
+- `$language` (optional) `Language|string|int|null` Optionally return locale for specific language (default=current locale, regardless of language)
 
 ## Return value
 

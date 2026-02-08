@@ -6,13 +6,13 @@ Replace one file with another
 
 ## Arguments
 
-- string $oldFile
-- string $newFile
+- `$oldFile` `string`
+- `$newFile` `string`
 
 ## Return value
 
 $this
 
-## Meta
+## Since
 
-- @since 3.0.215
+3.0.215

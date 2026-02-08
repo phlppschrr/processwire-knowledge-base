@@ -10,7 +10,10 @@ Returns one of 'ICU' (MySQL 8.0.4+) or 'HenrySpencer' (earlier versions and Mari
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.166
+3.0.166
+
+## Details
+
 - @todo this will need to be updated when/if MariaDB adds version that uses ICU engine

@@ -12,8 +12,8 @@ method will be call automatically at the appropriate time when save the fieldgro
 
 ## Arguments
 
-- Field $field
-- Template $template
+- `$field` `Field`
+- `$template` `Template`
 
 ## Return value
 

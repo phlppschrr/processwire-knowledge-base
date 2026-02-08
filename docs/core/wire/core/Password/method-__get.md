@@ -6,7 +6,7 @@ Get a property via direct access ('salt' or 'hash')
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

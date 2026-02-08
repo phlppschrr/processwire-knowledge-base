@@ -8,7 +8,7 @@ rootParents typically comprise the first level of navigation on a site.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

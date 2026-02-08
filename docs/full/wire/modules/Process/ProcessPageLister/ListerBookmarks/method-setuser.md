@@ -6,4 +6,4 @@ Set user that bookmarks will be for
 
 ## Arguments
 
-- User $user
+- `$user` `User`

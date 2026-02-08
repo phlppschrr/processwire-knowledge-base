@@ -8,4 +8,4 @@ Previous status may be accessed at `$page->statusPrevious`.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

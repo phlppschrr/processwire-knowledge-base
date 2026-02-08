@@ -6,7 +6,7 @@ Export config data for the given fieldgroup
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
+- `$fieldgroup` `Fieldgroup`
 
 ## Return value
 

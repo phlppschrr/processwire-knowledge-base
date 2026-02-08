@@ -6,12 +6,12 @@ URL to edit template settings (for administrator)
 
 ## Arguments
 
-- bool $http Full http/https URL?
+- `$http` (optional) `bool` Full http/https URL?
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.170
+3.0.170

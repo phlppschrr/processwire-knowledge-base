@@ -6,7 +6,7 @@ Given a target height, return the proportional width for this image
 
 ## Arguments
 
-- int $targetHeight
+- `$targetHeight` `int`
 
 ## Return value
 

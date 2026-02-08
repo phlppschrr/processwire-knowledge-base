@@ -8,8 +8,8 @@ If given value matches, value is returned. If not, blank is returned.
 
 ## Arguments
 
-- string $value Value to match
-- string $regex PCRE regex pattern (same as you would provide to PHP's `preg_match()`)
+- `$value` `string` Value to match
+- `$regex` `string` PCRE regex pattern (same as you would provide to PHP's `preg_match()`)
 
 ## Return value
 

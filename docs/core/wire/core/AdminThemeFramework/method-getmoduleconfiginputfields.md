@@ -6,4 +6,4 @@ Module Configuration
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

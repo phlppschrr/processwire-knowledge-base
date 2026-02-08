@@ -6,12 +6,12 @@ Simplify error message to remove unnecessary or redundant information
 
 ## Arguments
 
-- string $text
+- `$text` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

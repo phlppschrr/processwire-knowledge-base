@@ -10,12 +10,12 @@ Inputfield cannot be found.
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 array|float|int|object|Wire|WireArray|WireData|string|null
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

@@ -6,5 +6,5 @@ Hook called when a page is about to be cloned, but before data has been touched
 
 ## Arguments
 
-- Page $page The original page to be cloned
-- Page $copy The actual clone about to be saved
+- `$page` `Page` The original page to be cloned
+- `$copy` `Page` The actual clone about to be saved

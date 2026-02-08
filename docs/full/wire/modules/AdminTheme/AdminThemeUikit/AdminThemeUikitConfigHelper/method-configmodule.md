@@ -6,4 +6,4 @@ Implementation for Uikit admin theme getConfigInputfields method for module conf
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

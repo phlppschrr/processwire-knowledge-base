@@ -6,4 +6,4 @@ Clear the module information cache
 
 ## Arguments
 
-- bool|null $showMessages Specify true to show message notifications
+- `$showMessages` (optional) `bool|null` Specify true to show message notifications

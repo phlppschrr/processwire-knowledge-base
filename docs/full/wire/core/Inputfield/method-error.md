@@ -9,8 +9,8 @@ See the `Wire::error()` method for full details on arguments and options.
 
 ## Arguments
 
-- string $text Text of error message
-- int $flags Optional flags
+- `$text` `string` Text of error message
+- `$flags` (optional) `int` Optional flags
 
 ## Return value
 

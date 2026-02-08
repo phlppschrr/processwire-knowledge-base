@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- Page $page
-- User $user
+- `$page` `Page`
+- `$user` `User`

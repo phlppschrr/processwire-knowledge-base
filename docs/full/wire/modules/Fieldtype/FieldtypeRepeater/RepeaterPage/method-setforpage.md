@@ -6,7 +6,7 @@ Set the page that owns this repeater item
 
 ## Arguments
 
-- Page $forPage
+- `$forPage` `Page`
 
 ## Return value
 

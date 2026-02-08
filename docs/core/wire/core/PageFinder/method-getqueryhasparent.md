@@ -6,5 +6,5 @@ Make the query specific to all pages below a certain parent (children, grandchil
 
 ## Arguments
 
-- DatabaseQuerySelect $query
-- Selector $selector
+- `$query` `DatabaseQuerySelect`
+- `$selector` `Selector`

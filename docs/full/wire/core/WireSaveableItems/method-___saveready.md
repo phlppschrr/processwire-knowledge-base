@@ -8,4 +8,4 @@ Unlike before(save), when this runs, it has already been confirmed that the item
 
 ## Arguments
 
-- Saveable $item
+- `$item` `Saveable`

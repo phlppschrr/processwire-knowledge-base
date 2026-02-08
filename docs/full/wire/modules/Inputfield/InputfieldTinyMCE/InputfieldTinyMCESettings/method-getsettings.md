@@ -6,8 +6,8 @@ Get settings from Inputfield vary from the $defaults
 
 ## Arguments
 
-- array|null $defaults Default settings Default settings or omit to pull automatically
-- string $cacheKey Optionally cache with this key
+- `$defaults` (optional) `array|null` Default settings Default settings or omit to pull automatically
+- `$cacheKey` (optional) `string` Optionally cache with this key
 
 ## Return value
 

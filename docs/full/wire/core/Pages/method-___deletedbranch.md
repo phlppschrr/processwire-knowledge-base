@@ -8,10 +8,10 @@ Note: this is called only on deletions that had 'recursive' option true and 1+ c
 
 ## Arguments
 
-- Page $page Page that was the root of the branch
-- array $options Options passed to delete method
-- int $numDeleted Number of pages deleted
+- `$page` `Page` Page that was the root of the branch
+- `$options` `array` Options passed to delete method
+- `$numDeleted` `int` Number of pages deleted
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

@@ -6,5 +6,5 @@ Wake URLs for wakeup or sleep, converting root URLs as necessary
 
 ## Arguments
 
-- string $value
-- bool $sleep
+- `$value` `string`
+- `$sleep` (optional) `bool`

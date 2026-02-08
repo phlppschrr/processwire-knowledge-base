@@ -6,9 +6,9 @@ Include an admin theme file
 
 ## Arguments
 
-- string $basename
-- array $vars
+- `$basename` `string`
+- `$vars` (optional) `array`
 
-## Meta
+## Since
 
-- @since 3.0.196
+3.0.196

@@ -6,8 +6,8 @@ Strip optional tags/comments from given markup
 
 ## Arguments
 
-- string $markup
-- bool $debug
+- `$markup` `string`
+- `$debug` (optional) `bool`
 
 ## Return value
 

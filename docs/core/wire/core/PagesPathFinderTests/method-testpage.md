@@ -5,7 +5,7 @@ Source: `wire/core/PagesPathFinder.php`
 
 ## Arguments
 
-- Page $item
+- `$item` `Page`
 
 ## Return value
 

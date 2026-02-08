@@ -6,7 +6,7 @@ Is the given Fieldtype for a repeater?
 
 ## Arguments
 
-- Fieldtype $fieldtype
+- `$fieldtype` `Fieldtype`
 
 ## Return value
 

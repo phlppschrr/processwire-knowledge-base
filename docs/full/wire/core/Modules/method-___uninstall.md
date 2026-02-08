@@ -6,7 +6,7 @@ Uninstall the given module name
 
 ## Arguments
 
-- string $class Module name (class name)
+- `$class` `string` Module name (class name)
 
 ## Return value
 

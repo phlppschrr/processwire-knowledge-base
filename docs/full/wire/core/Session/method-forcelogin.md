@@ -11,7 +11,7 @@ $u = $session->forceLogin('bob');
 
 ## Arguments
 
-- string|User $user Username or User object
+- `$user` `string|User` Username or User object
 
 ## Return value
 

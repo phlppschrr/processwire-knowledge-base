@@ -8,12 +8,12 @@ Returns combined result of supportsTransaction() === true and inTransaction() ==
 
 ## Arguments
 
-- string $table Optional table that transaction will be for
+- `$table` (optional) `string` Optional table that transaction will be for
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.140
+3.0.140

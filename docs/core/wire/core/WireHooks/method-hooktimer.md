@@ -6,9 +6,9 @@ Start timing a hook and return the timer name
 
 ## Arguments
 
-- Wire $object
-- String $method
-- array $arguments
+- `$object` `Wire`
+- `$method` `String`
+- `$arguments` `array`
 
 ## Return value
 

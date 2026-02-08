@@ -17,8 +17,8 @@ $page->setName('la-cerveza', 'es');
 
 ## Arguments
 
-- string $value Page name that you want to set
-- Language|string|int|null $language Set language for name (can also be language name or string in format "name1234")
+- `$value` `string` Page name that you want to set
+- `$language` (optional) `Language|string|int|null` Set language for name (can also be language name or string in format "name1234")
 
 ## Return value
 

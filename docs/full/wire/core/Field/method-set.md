@@ -8,8 +8,8 @@ This can also be used directly via `$field->name = 'company';`
 
 ## Arguments
 
-- string $key Property name to set
-- mixed $value
+- `$key` `string` Property name to set
+- `$value` `mixed`
 
 ## Return value
 

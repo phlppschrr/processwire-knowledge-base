@@ -12,7 +12,7 @@ Returns translated $str if common and translated.
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

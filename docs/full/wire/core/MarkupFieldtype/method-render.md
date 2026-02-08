@@ -6,7 +6,7 @@ Render markup for the field or for the property from field
 
 ## Arguments
 
-- string $property Optional property (for object or array field values)
+- `$property` (optional) `string` Optional property (for object or array field values)
 
 ## Return value
 

@@ -6,9 +6,9 @@ Get the page to import to
 
 ## Arguments
 
-- array $a Import data
-- array $options Import settings
-- array $errors Errors array
+- `$a` `array` Import data
+- `$options` `array` Import settings
+- `$errors` `array` Errors array
 
 ## Return value
 

@@ -6,4 +6,4 @@ Set pagination start
 
 ## Arguments
 
-- int $n
+- `$n` `int`

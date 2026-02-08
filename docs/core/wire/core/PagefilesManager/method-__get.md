@@ -6,7 +6,7 @@ Handle non-function versions of some properties
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

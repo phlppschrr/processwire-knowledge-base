@@ -6,8 +6,8 @@ Prepare to nclude specific file (whether prepend, main or append)
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

@@ -8,7 +8,7 @@ Assumes that you have already performed all session-specific ini_set() and sessi
 
 ## Arguments
 
-- ProcessWire $wire
+- `$wire` `ProcessWire`
 
 ## Throws
 

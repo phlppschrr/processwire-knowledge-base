@@ -6,4 +6,4 @@ Populate the $this->rawPHP data which contains only raw php without quoted value
 
 ## Arguments
 
-- string $data
+- `$data` `string`

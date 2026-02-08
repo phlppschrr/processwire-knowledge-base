@@ -8,8 +8,8 @@ Example: http://трикотаж-леко.рф
 
 ## Arguments
 
-- string $url
-- array $options Specify ('allowIDN' => false) to disallow internationalized domain names
+- `$url` `string`
+- `$options` `array` Specify ('allowIDN' => false) to disallow internationalized domain names
 
 ## Return value
 

@@ -6,5 +6,5 @@ Pre-process a selector having field name that begins with "Fieldtype"
 
 ## Arguments
 
-- Selectors $selectors
-- Selector $selector
+- `$selectors` `Selectors`
+- `$selector` `Selector`

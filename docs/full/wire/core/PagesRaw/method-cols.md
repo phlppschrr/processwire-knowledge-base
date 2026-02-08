@@ -9,9 +9,9 @@ i.e. id, name, templates_id, status, parent_id, etc.
 
 ## Arguments
 
-- int|array $pageId Page ID or array of page IDs
-- array|string $cols Names of columns to get or omit to get all columns
-- array $options - `cache` (bool): Allow use of memory cache to retrieve column value when available? (default=true) Used only if $pageId is an integer (not used when array of page IDs).
+- `$pageId` `int|array` Page ID or array of page IDs
+- `$cols` (optional) `array|string` Names of columns to get or omit to get all columns
+- `$options` (optional) `array` - `cache` (bool): Allow use of memory cache to retrieve column value when available? (default=true) Used only if $pageId is an integer (not used when array of page IDs).
 
 ## Return value
 
@@ -21,6 +21,6 @@ array Returns associative array on success or empty array if not found If $pageI
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.190
+3.0.190

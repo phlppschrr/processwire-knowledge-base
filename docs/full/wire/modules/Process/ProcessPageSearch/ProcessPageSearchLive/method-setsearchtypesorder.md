@@ -6,4 +6,4 @@ Set order of search types
 
 ## Arguments
 
-- array $types Names of types, in order
+- `$types` `array` Names of types, in order

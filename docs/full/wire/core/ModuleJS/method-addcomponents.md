@@ -6,7 +6,7 @@ Add an array of optional components
 
 ## Arguments
 
-- array $components
+- `$components` `array`
 
 ## Return value
 

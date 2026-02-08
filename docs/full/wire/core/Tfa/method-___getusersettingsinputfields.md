@@ -9,6 +9,6 @@ a TFA type and submitted form, but has not yet configured the TFA type.
 
 ## Arguments
 
-- User $user
-- InputfieldWrapper $fieldset
-- array $settings
+- `$user` `User`
+- `$fieldset` `InputfieldWrapper`
+- `$settings` `array`

@@ -6,12 +6,12 @@ Get module language translation files
 
 ## Arguments
 
-- Module|string $module
+- `$module` `Module|string`
 
 ## Return value
 
 array Array of translation files including full path, indexed by basename without extension
 
-## Meta
+## Since
 
-- @since 3.0.181
+3.0.181

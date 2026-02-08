@@ -6,4 +6,4 @@ Begin parsing given file
 
 ## Arguments
 
-- string $file
+- `$file` `string`

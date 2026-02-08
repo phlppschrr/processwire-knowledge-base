@@ -6,7 +6,7 @@ Hook called just before a user is saved
 
 ## Arguments
 
-- Page $page The user about to be saved
+- `$page` `Page` The user about to be saved
 
 ## Return value
 

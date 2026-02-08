@@ -6,8 +6,8 @@ Does the given field or fieldName resolve to a field that uses Page or PageArray
 
 ## Arguments
 
-- string|Field $fieldName Field name or object
-- bool $literal Specify true to only allow types that literally use FieldtypePage::getMatchQuery()
+- `$fieldName` `string|Field` Field name or object
+- `$literal` (optional) `bool` Specify true to only allow types that literally use FieldtypePage::getMatchQuery()
 
 ## Return value
 

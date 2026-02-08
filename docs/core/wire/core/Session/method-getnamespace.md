@@ -6,7 +6,7 @@ Given a namespace object or string, return the namespace string
 
 ## Arguments
 
-- object|string $ns
+- `$ns` `object|string`
 
 ## Return value
 

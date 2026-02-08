@@ -6,8 +6,8 @@ Hook called when a page and its data have been deleted
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.128
+3.0.128

@@ -6,7 +6,7 @@ Get a property from this Fieldtype’s data
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

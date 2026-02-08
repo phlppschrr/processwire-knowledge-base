@@ -6,7 +6,7 @@ Process input
 
 ## Arguments
 
-- WireInputData $input
+- `$input` `WireInputData`
 
 ## Return value
 

@@ -12,8 +12,8 @@ Load the given page field from the database table and return the value.
 
 ## Arguments
 
-- Page $page Page object to save.
-- Field $field Field to retrieve from the page.
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
 
 ## Return value
 

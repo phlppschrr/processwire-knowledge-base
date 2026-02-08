@@ -57,8 +57,8 @@ See the `WireInput::get()` method for usage examples (get method works the same 
 
 ## Arguments
 
-- string $key Name of the COOKIE variable you want to retrieve. - If populated, returns the value corresponding to the key or NULL if it doesn't exist. - If blank, returns reference to the WireDataInput containing all COOKIE vars.
-- array|string|int|callable|null $valid Omit for no validation/sanitization, or provide one of the following: - String name of Sanitizer method to to sanitize value with before returning it. - CSV string of multiple sanitizer names to process the value, in order. - Array of allowed values (aka whitelist), where input value must be one of these, otherwise null (or fallback value) will returned. Values in the array may be any string or integer. - Callback function to sanitize and validate the value. - Integer if a specific number is the only allowed value other than fallback value (i.e. like a checkbox toggle).
+- `$key` (optional) `string` Name of the COOKIE variable you want to retrieve. - If populated, returns the value corresponding to the key or NULL if it doesn't exist. - If blank, returns reference to the WireDataInput containing all COOKIE vars.
+- `$valid` (optional) `array|string|int|callable|null` Omit for no validation/sanitization, or provide one of the following: - String name of Sanitizer method to to sanitize value with before returning it. - CSV string of multiple sanitizer names to process the value, in order. - Array of allowed values (aka whitelist), where input value must be one of these, otherwise null (or fallback value) will returned. Values in the array may be any string or integer. - Callback function to sanitize and validate the value. - Integer if a specific number is the only allowed value other than fallback value (i.e. like a checkbox toggle).
 - mixed|null Optional Fallback value to return if input value is not present or does not validate.
 
 ## Return value

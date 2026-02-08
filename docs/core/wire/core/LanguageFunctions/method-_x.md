@@ -15,9 +15,9 @@ echo _x('Click for more', 'text-link');
 
 ## Arguments
 
-- string $text Text for translation.
-- string $context Name of context
-- string $textdomain Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine automatically.
+- `$text` `string` Text for translation.
+- `$context` `string` Name of context
+- `$textdomain` (optional) `string` Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine automatically.
 
 ## Return value
 
@@ -28,6 +28,6 @@ string Translated text or original text if translation not available.
 - __()
 - _n()
 
-## Meta
+## Details
 
 - @link https://processwire.com/docs/multi-language-support/code-i18n/

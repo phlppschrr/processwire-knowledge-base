@@ -6,7 +6,7 @@ Attempt to re-create images that don't exist, when possible
 
 ## Arguments
 
-- Pageimage $pagefile
+- `$pagefile` `Pageimage`
 - $img
 - $src
 - $value

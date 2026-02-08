@@ -6,7 +6,7 @@ Implementation for deleteAll and expireAll methods
 
 ## Arguments
 
-- bool $expireAll
+- `$expireAll` (optional) `bool`
 
 ## Return value
 

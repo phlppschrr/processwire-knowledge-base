@@ -9,7 +9,7 @@ sanitizer to it.
 
 ## Arguments
 
-- string|int|array|object|bool|float $value Value to sanitize as string
+- `$value` `string|int|array|object|bool|float` Value to sanitize as string
 - string|null Optional sanitizer method (from this class) to apply to the string before returning
 
 ## Return value

@@ -16,8 +16,8 @@ The keys of the returned array remain consistent with the original WireArray.
 
 ## Arguments
 
-- string|callable|array $property Property or properties to retrieve, or callable function that should receive items.
-- array $options Options to modify default behavior: - `getMethod` (string): Method to call on each item to retrieve $property (default = "get") - `key` (string|null): Property of Wire objects to use for key of array, or omit (null) for non-associative array (default).
+- `$property` (optional) `string|callable|array` Property or properties to retrieve, or callable function that should receive items.
+- `$options` (optional) `array` Options to modify default behavior: - `getMethod` (string): Method to call on each item to retrieve $property (default = "get") - `key` (string|null): Property of Wire objects to use for key of array, or omit (null) for non-associative array (default).
 
 ## Return value
 

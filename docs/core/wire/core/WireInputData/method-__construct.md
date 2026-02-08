@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- array $input Associative array of variables to store
-- bool $lazy Use lazy loading?
+- `$input` (optional) `array` Associative array of variables to store
+- `$lazy` (optional) `bool` Use lazy loading?

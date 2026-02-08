@@ -8,7 +8,7 @@ If the value held by this Selector is an array of values, it will check if any o
 
 ## Arguments
 
-- string|int|Wire|array $value If given a Wire, then matches will also operate on OR field=value type selectors, where present
+- `$value` `string|int|Wire|array` If given a Wire, then matches will also operate on OR field=value type selectors, where present
 
 ## Return value
 

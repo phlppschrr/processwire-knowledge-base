@@ -9,8 +9,8 @@ as a way to identify existing options vs. new options
 
 ## Arguments
 
-- Field $field
-- array $filters Any of array(property => array) where property is 'id', 'title' or 'value'.
+- `$field` `Field`
+- `$filters` (optional) `array` Any of array(property => array) where property is 'id', 'title' or 'value'.
 
 ## Return value
 

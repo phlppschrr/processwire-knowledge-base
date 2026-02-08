@@ -6,7 +6,7 @@ Get language that path is in and apply it to result
 
 ## Arguments
 
-- array $parts
+- `$parts` `array`
 
 ## Return value
 

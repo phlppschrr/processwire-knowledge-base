@@ -7,8 +7,8 @@ Returns whether the given log line is valid to be considered a log entry
 ## Arguments
 
 - $line
-- array $options
-- bool $stopNow Populates this with true when it can determine no more lines are necessary.
+- `$options` `array`
+- `$stopNow` `bool` Populates this with true when it can determine no more lines are necessary.
 
 ## Return value
 

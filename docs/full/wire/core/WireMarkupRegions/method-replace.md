@@ -6,10 +6,10 @@ Replace the region(s) that match the given $selector with the given $replace mar
 
 ## Arguments
 
-- string $selector See the update() method $selector argument for supported formats
-- string $replace Markup to replace with
-- string $markup Document markup where region(s) exist
-- array $options See $options argument for update() method
+- `$selector` `string` See the update() method $selector argument for supported formats
+- `$replace` `string` Markup to replace with
+- `$markup` `string` Document markup where region(s) exist
+- `$options` (optional) `array` See $options argument for update() method
 
 ## Return value
 

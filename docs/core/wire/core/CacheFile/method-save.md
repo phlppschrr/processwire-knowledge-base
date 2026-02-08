@@ -6,7 +6,7 @@ Saves $data to the cache
 
 ## Arguments
 
-- string $data
+- `$data` `string`
 
 ## Return value
 

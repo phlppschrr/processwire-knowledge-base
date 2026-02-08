@@ -6,7 +6,7 @@ Set the limit that was used in pagination.
 
 ## Arguments
 
-- int $numLimit
+- `$numLimit` `int`
 
 ## Return value
 

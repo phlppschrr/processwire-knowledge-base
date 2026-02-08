@@ -8,9 +8,9 @@ Returns populated string with reason if yes, or blank string if no.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- array $options
+- `$page` `Page`
+- `$field` `Field`
+- `$options` `array`
 
 ## Return value
 

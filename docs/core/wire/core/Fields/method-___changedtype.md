@@ -6,6 +6,6 @@ Hook called when a field has changed type
 
 ## Arguments
 
-- Field $item
-- Fieldtype $fromType
-- Fieldtype $toType
+- `$item` `Field`
+- `$fromType` `Fieldtype`
+- `$toType` `Fieldtype`

@@ -6,8 +6,8 @@ Process flip action (internal)
 
 ## Arguments
 
-- resource $img
-- string $flipType vertical, horizontal or both
+- `$img` `resource`
+- `$flipType` `string` vertical, horizontal or both
 
 ## Return value
 

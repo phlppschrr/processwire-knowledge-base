@@ -6,8 +6,8 @@ Enables this WireArray to behave like the first item (for setting properties)
 
 ## Arguments
 
-- string $property
-- mixed $value
+- `$property` `string`
+- `$value` `mixed`
 
 ## Return value
 

@@ -6,12 +6,12 @@ Simplify error message HTML for output (inclusive of simplifyErrorMessageText al
 
 ## Arguments
 
-- string $html
+- `$html` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

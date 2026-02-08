@@ -10,12 +10,12 @@ to change the behavior of the request from a 404 to something else (like a 301 r
 
 ## Arguments
 
-- string $message Optional message to send to Exception message argument (not used in output by default)
+- `$message` (optional) `string` Optional message to send to Exception message argument (not used in output by default)
 
 ## Throws
 
 - Wire404Exception
 
-## Meta
+## Since
 
-- @since 3.0.146
+3.0.146

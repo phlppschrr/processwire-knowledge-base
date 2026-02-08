@@ -6,4 +6,4 @@ Set depth
 
 ## Arguments
 
-- int $depth
+- `$depth` `int`

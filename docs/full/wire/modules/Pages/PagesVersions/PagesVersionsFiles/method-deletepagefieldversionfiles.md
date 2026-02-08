@@ -6,14 +6,14 @@ Delete files for given page and field version
 
 ## Arguments
 
-- Page $page
-- Field $field
-- int $version
+- `$page` `Page`
+- `$field` `Field`
+- `$version` `int`
 
 ## Return value
 
 int
 
-## Meta
+## Details
 
 - @todo is this method even needed?

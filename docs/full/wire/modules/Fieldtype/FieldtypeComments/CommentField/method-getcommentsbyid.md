@@ -6,13 +6,13 @@ Get multiple comments by ID
 
 ## Arguments
 
-- int[] $ids Comment IDs
-- Page|null $page Optionally limit comments to this page
+- `$ids` `int[]` Comment IDs
+- `$page` (optional) `Page|null` Optionally limit comments to this page
 
 ## Return value
 
 CommentArray
 
-## Meta
+## Since
 
-- @since 3.0.255
+3.0.255

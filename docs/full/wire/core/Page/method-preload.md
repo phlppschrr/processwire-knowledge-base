@@ -38,13 +38,13 @@ echo "
 
 ## Arguments
 
-- array $fieldNames Names of fields to preload or omit (or blank array) to preload all supported fields.
-- array $options Options to modify default behavior: - `debug` (bool): Specify true to return additional info in returned array (default=false). - See the `PagesLoader::preloadFields()` method for additional options.
+- `$fieldNames` (optional) `array` Names of fields to preload or omit (or blank array) to preload all supported fields.
+- `$options` (optional) `array` Options to modify default behavior: - `debug` (bool): Specify true to return additional info in returned array (default=false). - See the `PagesLoader::preloadFields()` method for additional options.
 
 ## Return value
 
 array Array of details
 
-## Meta
+## Since
 
-- @since 3.0.243
+3.0.243

@@ -6,12 +6,12 @@ Prepare argument match
 
 ## Arguments
 
-- string $argMatch
+- `$argMatch` `string`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.247
+3.0.247

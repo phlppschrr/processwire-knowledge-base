@@ -22,7 +22,7 @@ if($pages->of()) {
 
 ## Arguments
 
-- null|bool $of Specify boolean to set output formatting state, or omit to get output formatting state.
+- `$of` (optional) `null|bool` Specify boolean to set output formatting state, or omit to get output formatting state.
 
 ## Return value
 

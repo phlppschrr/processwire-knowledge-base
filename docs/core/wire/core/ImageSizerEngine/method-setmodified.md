@@ -9,7 +9,7 @@ Not for general API use
 
 ## Arguments
 
-- bool $modified
+- `$modified` `bool`
 
 ## Return value
 

@@ -27,8 +27,8 @@ $firstName = $session->firstName;
 
 ## Arguments
 
-- string|object $key Name of session variable to retrieve (or object if using namespaces)
-- string $_key Name of session variable to get if first argument is namespace, omit otherwise.
+- `$key` `string|object` Name of session variable to retrieve (or object if using namespaces)
+- `$_key` (optional) `string` Name of session variable to get if first argument is namespace, omit otherwise.
 
 ## Return value
 

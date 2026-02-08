@@ -6,7 +6,7 @@ Get the total number of entries present in the given log
 
 ## Arguments
 
-- string $name Name of log, not including path or extension
+- `$name` `string` Name of log, not including path or extension
 
 ## Return value
 

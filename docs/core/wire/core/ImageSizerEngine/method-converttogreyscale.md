@@ -6,7 +6,7 @@ Convert image to greyscale
 
 ## Arguments
 
-- string $dstFilename If different from source file
+- `$dstFilename` (optional) `string` If different from source file
 
 ## Return value
 

@@ -6,5 +6,5 @@ Add a lookup item to this instance
 
 ## Arguments
 
-- int $item The ID of the item to add
-- array $row The row from which it was retrieved (in case you want to retrieve or modify other details)
+- `$item` `int` The ID of the item to add
+- `$row` `array` The row from which it was retrieved (in case you want to retrieve or modify other details)

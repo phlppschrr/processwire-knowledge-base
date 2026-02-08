@@ -6,10 +6,10 @@ Implementation for the getTranslation() function - you should call getTranslatio
 
 ## Arguments
 
-- string|object $textdomain Textdomain string, filename, or object.
-- string $text Text in default language (EN) that needs to be converted to current language.
-- string $context Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
-- array $options 3.0.237+ only - `getInfo` (bool): Get verbose array of info about translation? (default=false) - `getFalse` (bool): Return false rather than default language value if translation not found? (default=false)
+- `$textdomain` `string|object` Textdomain string, filename, or object.
+- `$text` `string` Text in default language (EN) that needs to be converted to current language.
+- `$context` (optional) `string` Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
+- `$options` (optional) `array` 3.0.237+ only - `getInfo` (bool): Get verbose array of info about translation? (default=false) - `getFalse` (bool): Return false rather than default language value if translation not found? (default=false)
 
 ## Return value
 

@@ -55,9 +55,9 @@ $items = $pages->getById([1111,2222,3333], [
 
 ## Arguments
 
-- array|WireArray|string|int $_ids Array of Page IDs, CSV string of Page IDs, or single page ID.
-- Template|array|null $template Specify a template to make the load faster, because it won't have to attempt to join all possible fields... just those used by the template. Optionally specify an $options array instead, see the method notes above.
-- int|null $parent_id Specify a parent to make the load faster, as it reduces the possibility for full table scans. This argument is ignored when an options array is supplied for the $template.
+- `$_ids` `array|WireArray|string|int` Array of Page IDs, CSV string of Page IDs, or single page ID.
+- `$template` (optional) `Template|array|null` Specify a template to make the load faster, because it won't have to attempt to join all possible fields... just those used by the template. Optionally specify an $options array instead, see the method notes above.
+- `$parent_id` (optional) `int|null` Specify a parent to make the load faster, as it reduces the possibility for full table scans. This argument is ignored when an options array is supplied for the $template.
 
 ## Return value
 

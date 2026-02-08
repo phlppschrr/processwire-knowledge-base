@@ -6,8 +6,8 @@ Get Pagefiles
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 

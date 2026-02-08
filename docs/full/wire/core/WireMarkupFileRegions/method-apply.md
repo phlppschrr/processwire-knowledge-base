@@ -6,9 +6,9 @@ Apply file regions in given HTML document and regions markup
 
 ## Arguments
 
-- string $htmlDocument
-- string $htmlRegions
-- array $options
+- `$htmlDocument` `string`
+- `$htmlRegions` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

@@ -11,6 +11,6 @@ is not an InputfieldForm.
 
 InputfieldForm|null
 
-## Meta
+## Since
 
-- @since 3.0.106
+3.0.106

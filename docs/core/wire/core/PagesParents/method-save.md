@@ -6,7 +6,7 @@ Check if saved page needs any pages_parents updates and perform them when applic
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

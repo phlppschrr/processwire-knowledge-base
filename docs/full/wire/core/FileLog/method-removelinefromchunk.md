@@ -6,10 +6,10 @@ Remove given $line from $chunk and add counter to end of $line indicating quanti
 
 ## Arguments
 
-- string $line
-- string $chunk
-- int $chunkSize
+- `$line` `string`
+- `$chunk` `string`
+- `$chunkSize` `int`
 
-## Meta
+## Since
 
-- @since 3.0.143
+3.0.143

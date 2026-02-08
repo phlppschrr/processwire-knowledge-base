@@ -8,7 +8,7 @@ Descending modules should implement this method.
 
 ## Arguments
 
-- User $user
+- `$user` `User`
 
 ## Return value
 

@@ -18,12 +18,12 @@ from `$user->tfa_type` rather than calling this method.
 
 ## Arguments
 
-- bool $getInstance Get Tfa module instance when available? (default=false)
+- `$getInstance` (optional) `bool` Get Tfa module instance when available? (default=false)
 
 ## Return value
 
 bool|string|Tfa
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

@@ -10,7 +10,7 @@ or the other.
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

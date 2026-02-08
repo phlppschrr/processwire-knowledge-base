@@ -11,8 +11,8 @@ Is this field editable?
 
 ## Arguments
 
-- Page|null $page Optionally specify a Page for context
-- User|null $user Optionally specify a different user (default = current user)
+- `$page` (optional) `Page|null` Optionally specify a Page for context
+- `$user` (optional) `User|null` Optionally specify a different user (default = current user)
 
 ## Return value
 

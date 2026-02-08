@@ -13,7 +13,7 @@ If you want a method that can only return a matching Inputfield object, use the
 
 ## Arguments
 
-- string $key Name of Inputfield or setting/property to retrieve.
+- `$key` `string` Name of Inputfield or setting/property to retrieve.
 
 ## Return value
 

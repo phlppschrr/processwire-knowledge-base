@@ -11,12 +11,12 @@ Get the current language or optionally a specific named language
 
 ## Arguments
 
-- string|int $name Specify language name (or ID) to get a specific language, or omit to get current language
+- `$name` (optional) `string|int` Specify language name (or ID) to get a specific language, or omit to get current language
 
 ## Return value
 
 Language|null
 
-## Meta
+## Since
 
-- @since 3.0.127
+3.0.127

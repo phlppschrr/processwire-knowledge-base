@@ -8,12 +8,12 @@ Use this when you want to identify the field names (or IDs) without loading the 
 
 ## Arguments
 
-- string|int|Fieldgroup $fieldgroup Fieldgroup name, ID or object
+- `$fieldgroup` `string|int|Fieldgroup` Fieldgroup name, ID or object
 
 ## Return value
 
 array Returned array of field names indexed by field ID
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

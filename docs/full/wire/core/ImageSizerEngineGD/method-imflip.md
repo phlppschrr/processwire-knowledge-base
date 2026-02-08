@@ -6,8 +6,8 @@ Flip image (@horst)
 
 ## Arguments
 
-- resource $im
-- bool $vertical (default = false)
+- `$im` `resource`
+- `$vertical` (optional) `bool` (default = false)
 
 ## Return value
 

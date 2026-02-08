@@ -6,5 +6,5 @@ Track an item added
 
 ## Arguments
 
-- Comment $item
-- int|string $key
+- `$item` `Comment`
+- `$key` `int|string`

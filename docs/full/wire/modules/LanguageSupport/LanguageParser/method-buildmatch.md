@@ -6,9 +6,9 @@ Build the match abstracted away from the preg_match result
 
 ## Arguments
 
-- array $m
-- int $key
-- string $text
+- `$m` `array`
+- `$key` `int`
+- `$text` `string`
 
 ## Return value
 

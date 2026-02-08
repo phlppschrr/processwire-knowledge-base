@@ -6,8 +6,8 @@ Render a placeholder for an ajax-loaded Inputfield
 
 ## Arguments
 
-- Inputfield $inputfield
-- bool $renderValueMode
+- `$inputfield` `Inputfield`
+- `$renderValueMode` `bool`
 
 ## Return value
 

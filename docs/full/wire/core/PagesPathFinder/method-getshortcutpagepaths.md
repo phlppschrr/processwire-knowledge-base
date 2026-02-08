@@ -6,7 +6,7 @@ Find a shortcut using the PagePaths module
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

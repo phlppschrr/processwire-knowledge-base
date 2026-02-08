@@ -6,7 +6,7 @@ Get array of operators
 
 ## Arguments
 
-- string $inputType Specify: number, text, fulltext or select, or omit to return all possible operators at once
+- `$inputType` (optional) `string` Specify: number, text, fulltext or select, or omit to return all possible operators at once
 
 ## Return value
 

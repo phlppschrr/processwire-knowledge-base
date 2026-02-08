@@ -6,8 +6,8 @@ Return given values that that also exist in $allowedValues whitelist
 
 ## Arguments
 
-- array $values
-- array $allowedValues Whitelist of option values that are allowed
+- `$values` `array`
+- `$allowedValues` (optional) `array` Whitelist of option values that are allowed
 
 ## Return value
 

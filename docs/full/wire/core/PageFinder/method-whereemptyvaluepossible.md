@@ -9,12 +9,12 @@ can potentially match blank or 0.
 
 ## Arguments
 
-- Field $field
-- string $col
-- Selector $selector
-- DatabaseQuerySelect $query
-- string $value The value presumed to be blank (passed the empty() test)
-- string $where SQL where string that will be modified/appended
+- `$field` `Field`
+- `$col` `string`
+- `$selector` `Selector`
+- `$query` `DatabaseQuerySelect`
+- `$value` `string` The value presumed to be blank (passed the empty() test)
+- `$where` `string` SQL where string that will be modified/appended
 
 ## Return value
 

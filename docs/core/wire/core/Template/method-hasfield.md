@@ -6,7 +6,7 @@ Does this template have the given Field?
 
 ## Arguments
 
-- string|int|Field $name May be field name, id or object.
+- `$name` `string|int|Field` May be field name, id or object.
 
 ## Return value
 

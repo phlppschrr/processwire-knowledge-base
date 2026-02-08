@@ -11,8 +11,8 @@ Set a property or attribute to the Inputfield
 
 ## Arguments
 
-- string $key Name of property to set
-- mixed $value Value of property
+- `$key` `string` Name of property to set
+- `$value` `mixed` Value of property
 
 ## Return value
 

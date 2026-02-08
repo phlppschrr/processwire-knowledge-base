@@ -14,8 +14,8 @@ $cache->deleteFor("my-namespace", "my-cache-name");
 
 ## Arguments
 
-- string $ns Namespace of cache.
-- string $name Name of cache. If none specified, all for namespace are deleted.
+- `$ns` `string` Namespace of cache.
+- `$name` (optional) `string` Name of cache. If none specified, all for namespace are deleted.
 
 ## Return value
 

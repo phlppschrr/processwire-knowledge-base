@@ -6,5 +6,5 @@ Set the redirect path
 
 ## Arguments
 
-- string $redirectPath
-- int $type 301 or 302
+- `$redirectPath` `string`
+- `$type` (optional) `int` 301 or 302

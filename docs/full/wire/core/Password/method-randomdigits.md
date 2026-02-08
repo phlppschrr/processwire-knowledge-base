@@ -6,14 +6,17 @@ Return string of random digits
 
 ## Arguments
 
-- int $length Required length of string or 0 for random length
-- array $options See WireRandom::numeric() method
+- `$length` (optional) `int` Required length of string or 0 for random length
+- `$options` (optional) `array` See WireRandom::numeric() method
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.109
-- @deprecated Use WireRandom::numeric() instead
+3.0.109
+
+## Deprecated
+
+Use WireRandom::numeric() instead

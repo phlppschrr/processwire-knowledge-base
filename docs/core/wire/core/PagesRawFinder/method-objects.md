@@ -6,4 +6,4 @@ Convert associative arrays to objects
 
 ## Arguments
 
-- array $values
+- `$values` `array`

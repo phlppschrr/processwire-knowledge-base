@@ -6,5 +6,5 @@ Track an item added
 
 ## Arguments
 
-- Wire|mixed $item
-- int|string $key
+- `$item` `Wire|mixed`
+- `$key` `int|string`

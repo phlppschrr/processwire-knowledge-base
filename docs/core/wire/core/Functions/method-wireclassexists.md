@@ -10,8 +10,8 @@ If given a class name that does not include a namespace, the `\ProcessWire` name
 
 ## Arguments
 
-- string $className
-- bool $autoload
+- `$className` `string`
+- `$autoload` (optional) `bool`
 
 ## Return value
 

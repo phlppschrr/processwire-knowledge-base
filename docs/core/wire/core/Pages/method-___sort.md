@@ -31,8 +31,8 @@ $pages->sort($page, true);
 
 ## Arguments
 
-- Page $page Page to sort (or parent of pages to sort, if using $value=true option)
-- int|bool $value Specify one of the following: - Omit to set and use sort value from given $page. - Specify sort value (integer) to save that value. - Specify boolean true to instead rebuild sort for all of $page children.
+- `$page` `Page` Page to sort (or parent of pages to sort, if using $value=true option)
+- `$value` (optional) `int|bool` Specify one of the following: - Omit to set and use sort value from given $page. - Specify sort value (integer) to save that value. - Specify boolean true to instead rebuild sort for all of $page children.
 
 ## Return value
 

@@ -18,9 +18,9 @@ if($response !== false) {
 
 ## Arguments
 
-- string $url URL to send request to (including http:// or https://)
-- array|string $data Array of data to send (if not already set before) or raw string of data to send, such as JSON.
-- array $options Optional options to modify default behavior, see the send() method for details.
+- `$url` `string` URL to send request to (including http:// or https://)
+- `$data` (optional) `array|string` Array of data to send (if not already set before) or raw string of data to send, such as JSON.
+- `$options` (optional) `array` Optional options to modify default behavior, see the send() method for details.
 
 ## Return value
 

@@ -9,7 +9,7 @@ And can also be used for $input->pageNum.
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

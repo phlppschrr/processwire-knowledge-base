@@ -9,7 +9,7 @@ as laid out in rfc2047.
 
 ## Arguments
 
-- string $text
+- `$text` `string`
 
 ## Return value
 

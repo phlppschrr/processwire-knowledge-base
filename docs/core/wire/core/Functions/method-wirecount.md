@@ -12,7 +12,7 @@ if $value is NULL, 0 will be returned.
 
 ## Arguments
 
-- mixed $value
+- `$value` `mixed`
 
 ## Return value
 

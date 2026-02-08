@@ -31,8 +31,8 @@ The following options are for future use and not currently applicable:
 
 ## Arguments
 
-- array $a
-- array $options Options to modify default behavior, see method description.
+- `$a` `array`
+- `$options` (optional) `array` Options to modify default behavior, see method description.
 
 ## Return value
 

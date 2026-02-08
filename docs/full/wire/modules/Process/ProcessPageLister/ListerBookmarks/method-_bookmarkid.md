@@ -6,7 +6,7 @@ Sanitize a bookmark ID
 
 ## Arguments
 
-- string|array $bookmarkID
+- `$bookmarkID` `string|array`
 
 ## Return value
 

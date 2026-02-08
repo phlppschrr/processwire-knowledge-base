@@ -6,8 +6,8 @@ Rotate image (@horst)
 
 ## Arguments
 
-- resource $im
-- int $degree
+- `$im` `resource`
+- `$degree` `int`
 
 ## Return value
 

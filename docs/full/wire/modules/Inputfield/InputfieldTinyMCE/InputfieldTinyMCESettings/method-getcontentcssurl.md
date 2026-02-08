@@ -6,7 +6,7 @@ Get content_css URL
 
 ## Arguments
 
-- string $content_css
+- `$content_css` (optional) `string`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Per the WireArray interface, keys must be strings (fieldtype class names)
 
 ## Arguments
 
-- string|int $key
+- `$key` `string|int`
 
 ## Return value
 

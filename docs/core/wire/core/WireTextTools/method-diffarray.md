@@ -8,13 +8,13 @@ Based upon Paul Butler’s Simple Diff Algorithm v0.1 © 2007 (zlib/libpng) http
 
 ## Arguments
 
-- array $oldArray
-- array $newArray
+- `$oldArray` `array`
+- `$newArray` `array`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.144
+3.0.144

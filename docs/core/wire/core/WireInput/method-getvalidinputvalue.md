@@ -6,10 +6,10 @@ Provides the implementation for get/post/cookie method validation and fallback f
 
 ## Arguments
 
-- WireInputData $input
-- string $key Name of variable to pull from $input
-- array|string|callable|mixed|null $valid String containing name of Sanitizer method, or array of allowed values.
-- string|array|int|mixed $fallback Return this value rather than null if input value is not present or not valid.
+- `$input` `WireInputData`
+- `$key` `string` Name of variable to pull from $input
+- `$valid` `array|string|callable|mixed|null` String containing name of Sanitizer method, or array of allowed values.
+- `$fallback` `string|array|int|mixed` Return this value rather than null if input value is not present or not valid.
 
 ## Return value
 

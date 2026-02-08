@@ -6,12 +6,12 @@ Sanitize an email header header value
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.132
+3.0.132

@@ -6,12 +6,12 @@ Find filename for given class name (primarily for API testing/debugging purposes
 
 ## Arguments
 
-- string $className Class name with namespace
+- `$className` `string` Class name with namespace
 
 ## Return value
 
 bool|string Returns file on success or boolean false when not found
 
-## Meta
+## Since
 
-- @since 3.0.152
+3.0.152

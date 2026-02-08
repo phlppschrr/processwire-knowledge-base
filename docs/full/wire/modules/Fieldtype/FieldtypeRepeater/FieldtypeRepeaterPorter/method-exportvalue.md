@@ -6,10 +6,10 @@ Export repeater value
 
 ## Arguments
 
-- Page $page
-- Field $field
-- RepeaterPageArray $value
-- array $options - `minimal` (bool): Export a minimal array of just fields and values indexed by repeater page name (default=false)
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `RepeaterPageArray`
+- `$options` (optional) `array` - `minimal` (bool): Export a minimal array of just fields and values indexed by repeater page name (default=false)
 
 ## Return value
 

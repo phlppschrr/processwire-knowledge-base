@@ -17,16 +17,16 @@ echo $sanitizer->chars('Decatur, GA 30030', '[alpha][digit]', '-'); // Outputs: 
 
 ## Arguments
 
-- string $value Value to sanitize
-- string|array $allow Allowed characters string. If omitted then only alphanumeric [ a-z A-Z 0-9 ] are allowed. Use shortcut `[alpha]` to refer to any “a-z A-Z” char or `[digit]` to refer to any digit.
-- string $replacement Replace disallowed chars with this char or string, or omit for blank. (default='')
-- bool $collapse Collapse multiple $replacement chars to one and trim from return value? (default=true)
-- bool|null $mb Specify bool to force use of multibyte on or off, or omit to auto-detect. (default=null)
+- `$value` `string` Value to sanitize
+- `$allow` (optional) `string|array` Allowed characters string. If omitted then only alphanumeric [ a-z A-Z 0-9 ] are allowed. Use shortcut `[alpha]` to refer to any “a-z A-Z” char or `[digit]` to refer to any digit.
+- `$replacement` (optional) `string` Replace disallowed chars with this char or string, or omit for blank. (default='')
+- `$collapse` (optional) `bool` Collapse multiple $replacement chars to one and trim from return value? (default=true)
+- `$mb` (optional) `bool|null` Specify bool to force use of multibyte on or off, or omit to auto-detect. (default=null)
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.126
+3.0.126

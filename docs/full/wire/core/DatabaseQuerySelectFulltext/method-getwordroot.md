@@ -6,7 +6,7 @@ Get root of word (currently not implemented)
 
 ## Arguments
 
-- string $word
+- `$word` `string`
 
 ## Return value
 

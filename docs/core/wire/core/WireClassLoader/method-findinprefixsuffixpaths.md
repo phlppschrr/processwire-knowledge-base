@@ -6,12 +6,12 @@ Check prefix and suffix definition paths for given class name and return file if
 
 ## Arguments
 
-- string $name Class name without namespace
+- `$name` `string` Class name without namespace
 
 ## Return value
 
 bool|string Returns filename on success or boolean false if not found
 
-## Meta
+## Since
 
-- @since 3.0.152
+3.0.152

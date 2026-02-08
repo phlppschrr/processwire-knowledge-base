@@ -37,14 +37,14 @@ $posts = $pages->find("template=blog-post, join=none"); // same as above
 
 ## Arguments
 
-- string|array|Selectors $selector
-- array|string|bool $joinFields Array or CSV string of field names to autojoin, or false to join none.
-- array $options
+- `$selector` `string|array|Selectors`
+- `$joinFields` `array|string|bool` Array or CSV string of field names to autojoin, or false to join none.
+- `$options` (optional) `array`
 
 ## Return value
 
 PageArray
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

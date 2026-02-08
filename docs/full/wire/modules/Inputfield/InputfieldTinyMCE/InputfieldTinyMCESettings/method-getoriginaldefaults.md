@@ -6,7 +6,7 @@ Get original defaults from source JSON, prior to being overriden by module defau
 
 ## Arguments
 
-- string $key
+- `$key` (optional) `string`
 
 ## Return value
 

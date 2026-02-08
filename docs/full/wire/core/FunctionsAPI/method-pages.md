@@ -24,7 +24,7 @@ $page = pages("page-name");
 
 ## Arguments
 
-- string|array|int $selector Specify one of the following: - Nothing, makes it return the $pages API variable. - Selector (string) to find matching pages, makes function return PageArray - equivalent to $pages->find("selector"); - Page ID (int) to return a single matching Page - equivalent to $pages->get(123); - Page name (string) to return a single page having the given name - equivalent to $pages->get("name");
+- `$selector` (optional) `string|array|int` Specify one of the following: - Nothing, makes it return the $pages API variable. - Selector (string) to find matching pages, makes function return PageArray - equivalent to $pages->find("selector"); - Page ID (int) to return a single matching Page - equivalent to $pages->get(123); - Page name (string) to return a single page having the given name - equivalent to $pages->get("name");
 
 ## Return value
 

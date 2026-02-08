@@ -6,6 +6,6 @@ Add method debug info (verbose mode)
 
 ## Arguments
 
-- string $name
-- int|bool $code
-- string $note
+- `$name` `string`
+- `$code` `int|bool`
+- `$note` (optional) `string`

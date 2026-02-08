@@ -10,8 +10,8 @@ Lets it prepare the Wire for any states needed for sorting.
 
 ## Arguments
 
-- Wire $item
-- string $property
+- `$item` `Wire`
+- `$property` `string`
 
 ## Return value
 

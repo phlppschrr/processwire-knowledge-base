@@ -8,8 +8,8 @@ This function designed primarily to be called by the renderTopNavItems() functio
 
 ## Arguments
 
-- Page $p
-- int $level Recursion level (default=0)
+- `$p` `Page`
+- `$level` (optional) `int` Recursion level (default=0)
 
 ## Return value
 

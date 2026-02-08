@@ -9,8 +9,8 @@ and reinserts them as new.
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 

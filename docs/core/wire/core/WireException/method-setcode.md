@@ -8,8 +8,8 @@ Public since 3.0.248
 
 ## Arguments
 
-- int|string $code
+- `$code` `int|string`
 
-## Meta
+## Since
 
-- @since 3.0.150
+3.0.150

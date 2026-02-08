@@ -6,7 +6,7 @@ Get field configuration
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`
 
 ## Return value
 

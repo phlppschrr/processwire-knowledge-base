@@ -13,7 +13,7 @@ instead, as hooking this method will not hook relevant pages added directly thro
 
 ## Arguments
 
-- string $name Name to use for the new page
+- `$name` `string` Name to use for the new page
 
 ## Return value
 

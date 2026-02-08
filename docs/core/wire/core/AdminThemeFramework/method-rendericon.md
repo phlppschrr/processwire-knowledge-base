@@ -6,8 +6,8 @@ Render markup for a font-awesome icon
 
 ## Arguments
 
-- string $icon Name of icon to render, excluding the “fa-” prefix
-- bool $fw Specify true to make fixed width (default=false).
+- `$icon` `string` Name of icon to render, excluding the “fa-” prefix
+- `$fw` (optional) `bool` Specify true to make fixed width (default=false).
 
 ## Return value
 

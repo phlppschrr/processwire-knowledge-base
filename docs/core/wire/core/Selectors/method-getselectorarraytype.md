@@ -6,7 +6,7 @@ Return string indicating given data type for use in selector arrays
 
 ## Arguments
 
-- int|string|array $data
+- `$data` `int|string|array`
 
 ## Return value
 

@@ -6,8 +6,8 @@ Record an error
 
 ## Arguments
 
-- string $text
-- int|bool $flags See Notices::flags
+- `$text` `string`
+- `$flags` (optional) `int|bool` See Notices::flags
 
 ## Return value
 

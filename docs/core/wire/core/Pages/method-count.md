@@ -13,8 +13,8 @@ $numBlogPosts = $pages->count("template=blog-post");
 
 ## Arguments
 
-- string|array|Selectors $selector Specify selector, or omit to retrieve a site-wide count.
-- array|string $options See $options for $pages->find().
+- `$selector` (optional) `string|array|Selectors` Specify selector, or omit to retrieve a site-wide count.
+- `$options` (optional) `array|string` See $options for $pages->find().
 
 ## Return value
 

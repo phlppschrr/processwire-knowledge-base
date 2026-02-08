@@ -8,11 +8,11 @@ Intended for use by the resize() method
 
 ## Arguments
 
-- int $zoom
-- int $fullWidth
-- int $fullHeight
-- int $finalWidth
-- int $finalHeight
+- `$zoom` `int`
+- `$fullWidth` `int`
+- `$fullHeight` `int`
+- `$finalWidth` `int`
+- `$finalHeight` `int`
 
 ## Return value
 

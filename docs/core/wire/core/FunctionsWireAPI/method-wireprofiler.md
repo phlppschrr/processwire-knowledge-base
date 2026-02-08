@@ -6,9 +6,9 @@ Start or stop a profiler event or return WireProfilerInterface instance
 
 ## Arguments
 
-- string|array|object|null $name Name of event to start or event to stop
-- null|object|string $source If starting an event, optional source of event (object)
-- array $data Optional extra data as associative array
+- `$name` (optional) `string|array|object|null` Name of event to start or event to stop
+- `$source` (optional) `null|object|string` If starting an event, optional source of event (object)
+- `$data` (optional) `array` Optional extra data as associative array
 
 ## Return value
 

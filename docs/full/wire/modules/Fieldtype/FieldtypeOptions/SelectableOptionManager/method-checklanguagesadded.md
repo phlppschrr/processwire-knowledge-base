@@ -6,7 +6,7 @@ Check for added languages
 
 ## Arguments
 
-- Language|null $languageAdded
+- `$languageAdded` (optional) `Language|null`
 
 ## Return value
 

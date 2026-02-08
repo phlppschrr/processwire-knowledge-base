@@ -6,13 +6,13 @@ Find template ID for each page — returns array of template IDs indexed by pag
 
 ## Arguments
 
-- Selectors|string|array $selectors Selectors object, selector string or selector array
-- array $options
+- `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
+- `$options` (optional) `array`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.152
+3.0.152

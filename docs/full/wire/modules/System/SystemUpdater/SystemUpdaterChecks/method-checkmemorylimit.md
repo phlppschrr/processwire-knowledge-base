@@ -8,6 +8,6 @@ Check PHP memory_limit setting
 
 bool Always returns true as memory_limit errors not considered fatal
 
-## Meta
+## Since
 
-- @since 3.0.206
+3.0.206

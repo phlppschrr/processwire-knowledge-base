@@ -6,7 +6,7 @@ Per the WireArray interface, Fields are indxed by their name
 
 ## Arguments
 
-- Fieldtype $item
+- `$item` `Fieldtype`
 
 ## Return value
 

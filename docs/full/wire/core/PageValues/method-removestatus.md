@@ -16,8 +16,8 @@ $page->removeStatus(Page::statusHidden);
 
 ## Arguments
 
-- Page $page
-- int|string $statusFlag Status flag constant or string representation (hidden, locked, unpublished, etc.)
+- `$page` `Page`
+- `$statusFlag` `int|string` Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
 ## Return value
 

@@ -6,8 +6,8 @@ Filter bookmarks, removing those that are not of the requested type
 
 ## Arguments
 
-- array $allBookmarks
-- int $type
+- `$allBookmarks` `array`
+- `$type` `int`
 
 ## Return value
 

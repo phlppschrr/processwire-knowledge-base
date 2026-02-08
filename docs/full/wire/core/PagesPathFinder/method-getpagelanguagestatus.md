@@ -6,8 +6,8 @@ Get value from page status column
 
 ## Arguments
 
-- int $pageId
-- int $languageId
+- `$pageId` `int`
+- `$languageId` `int`
 
 ## Return value
 

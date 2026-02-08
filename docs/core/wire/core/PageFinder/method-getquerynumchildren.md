@@ -6,8 +6,8 @@ Match a number of children count
 
 ## Arguments
 
-- DatabaseQuerySelect $query
-- Selector $selector
+- `$query` `DatabaseQuerySelect`
+- `$selector` `Selector`
 
 ## Return value
 

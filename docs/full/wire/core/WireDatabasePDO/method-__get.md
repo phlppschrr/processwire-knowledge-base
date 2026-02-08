@@ -5,7 +5,7 @@ Source: `wire/core/WireDatabasePDO.php`
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

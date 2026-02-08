@@ -5,8 +5,8 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 ## Arguments
 
-- string $file
-- string $url
+- `$file` `string`
+- `$url` (optional) `string`
 
 ## Return value
 

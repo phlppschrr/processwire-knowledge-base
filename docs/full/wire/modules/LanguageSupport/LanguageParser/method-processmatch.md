@@ -6,4 +6,4 @@ Process the match and populate $this->untranslated and $this->comments
 
 ## Arguments
 
-- array $match
+- `$match` `array`

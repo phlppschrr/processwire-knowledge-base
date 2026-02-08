@@ -8,7 +8,7 @@ This method does nothing and is purely for hooks to modify return value.
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

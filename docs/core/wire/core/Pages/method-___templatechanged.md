@@ -8,4 +8,4 @@ Note the previous template is available in the `$page->templatePrevious` propert
 
 ## Arguments
 
-- Page $page Page that had its template changed.
+- `$page` `Page` Page that had its template changed.

@@ -6,8 +6,8 @@ Decode JSON
 
 ## Arguments
 
-- string $json JSON string
-- string $propertyName Name of property JSON is for
+- `$json` `string` JSON string
+- `$propertyName` `string` Name of property JSON is for
 
 ## Return value
 

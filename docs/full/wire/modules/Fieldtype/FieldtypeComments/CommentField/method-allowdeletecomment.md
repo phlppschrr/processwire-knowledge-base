@@ -6,7 +6,7 @@ May the given comment be deleted?
 
 ## Arguments
 
-- Comment $comment
+- `$comment` `Comment`
 
 ## Return value
 

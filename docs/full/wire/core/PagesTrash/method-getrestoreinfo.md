@@ -16,8 +16,8 @@ Returns array with the following info:
 
 ## Arguments
 
-- Page $page Page to restore
-- bool $populateToPage Populate this information to given page? (default=false)
+- `$page` `Page` Page to restore
+- `$populateToPage` (optional) `bool` Populate this information to given page? (default=false)
 
 ## Return value
 

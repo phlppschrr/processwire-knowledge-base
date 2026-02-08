@@ -6,7 +6,7 @@ Return the overriden "page name" label, or blank if not overridden
 
 ## Arguments
 
-- Language|null $language
+- `$language` (optional) `Language|null`
 
 ## Return value
 

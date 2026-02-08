@@ -6,7 +6,7 @@ Load translation group $textdomain into the current language translations
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`
 
 ## Return value
 

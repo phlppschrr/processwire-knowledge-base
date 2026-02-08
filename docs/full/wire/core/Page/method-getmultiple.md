@@ -26,13 +26,13 @@ $a = $page->getMultiple('foo,bar');
 
 ## Arguments
 
-- array|string $keys Array or CSV string of properties to get.
-- bool $assoc Get associative array indexed by given properties? (default=false)
+- `$keys` `array|string` Array or CSV string of properties to get.
+- `$assoc` (optional) `bool` Get associative array indexed by given properties? (default=false)
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.201
+3.0.201

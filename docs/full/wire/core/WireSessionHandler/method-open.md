@@ -6,8 +6,8 @@ Open the session
 
 ## Arguments
 
-- string $path Save path
-- string $name Name of session
+- `$path` `string` Save path
+- `$name` `string` Name of session
 
 ## Return value
 

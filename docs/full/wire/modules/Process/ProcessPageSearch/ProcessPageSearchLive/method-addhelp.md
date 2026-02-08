@@ -21,13 +21,13 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 
 ## Arguments
 
-- string $group Group name for these search results
-- array $examples Examples where keys are example queries and values are descriptions
+- `$group` `string` Group name for these search results
+- `$examples` `array` Examples where keys are example queries and values are descriptions
 
 ## Return value
 
 true
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

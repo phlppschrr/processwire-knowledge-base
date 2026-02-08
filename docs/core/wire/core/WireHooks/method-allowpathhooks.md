@@ -6,12 +6,12 @@ Get or set whether path hooks are allowed
 
 ## Arguments
 
-- bool|null $allow
+- `$allow` (optional) `bool|null`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

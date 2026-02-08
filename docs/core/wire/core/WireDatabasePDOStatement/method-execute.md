@@ -6,7 +6,7 @@ Execute prepared statement
 
 ## Arguments
 
-- array|null $input_parameters
+- `$input_parameters` (optional) `array|null`
 
 ## Return value
 

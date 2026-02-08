@@ -6,8 +6,8 @@ Queue a warning to appear the next pageview
 
 ## Arguments
 
-- string $text Warning to queue
-- int $flags See Notice::flags
+- `$text` `string` Warning to queue
+- `$flags` (optional) `int` See Notice::flags
 
 ## Return value
 

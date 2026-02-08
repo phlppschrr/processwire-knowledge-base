@@ -9,14 +9,14 @@ implementation, unless they also use this method.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- mixed $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `mixed`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.150
+3.0.150

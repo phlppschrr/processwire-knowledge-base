@@ -6,8 +6,8 @@ Same as find() but returns just a simple array of page IDs without any other inf
 
 ## Arguments
 
-- Selectors|string|array $selectors Selectors object, selector string or selector array
-- array $options
+- `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
+- `$options` (optional) `array`
 
 ## Return value
 

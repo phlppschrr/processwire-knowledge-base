@@ -6,9 +6,9 @@ Return all sibling pages prior to this one, optionally matching a selector
 
 ## Arguments
 
-- Page $page
-- string|array|Selectors $selector Optional selector. When specified, will filter the found siblings.
-- array $options Options to pass to the _next() method
+- `$page` `Page`
+- `$selector` (optional) `string|array|Selectors` Optional selector. When specified, will filter the found siblings.
+- `$options` (optional) `array` Options to pass to the _next() method
 
 ## Return value
 

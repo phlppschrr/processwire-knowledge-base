@@ -6,7 +6,7 @@ Get shared text label
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

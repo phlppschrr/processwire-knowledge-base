@@ -6,7 +6,7 @@ Get the user by name, ID or selector string
 
 ## Arguments
 
-- string $selectorString
+- `$selectorString` `string`
 
 ## Return value
 

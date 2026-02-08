@@ -6,9 +6,9 @@ Set notes, optionally for a specific language
 
 ## Arguments
 
-- string $text Text to set
-- Language|string|int|null $language Language to use
+- `$text` `string` Text to set
+- `$language` (optional) `Language|string|int|null` Language to use
 
-## Meta
+## Since
 
-- @since 3.0.16 Added for consistency, all versions can still set property directly.
+3.0.16 Added for consistency, all versions can still set property directly.

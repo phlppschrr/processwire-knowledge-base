@@ -6,4 +6,4 @@ Set whether Exceptions should be thrown on query errors
 
 ## Arguments
 
-- bool $throwExceptions Default is true
+- `$throwExceptions` (optional) `bool` Default is true

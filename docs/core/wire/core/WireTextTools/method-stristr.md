@@ -6,9 +6,9 @@ Find the first occurrence of a string (case insensitive)
 
 ## Arguments
 
-- string $haystack
-- string $needle
-- bool $beforeNeedle Return part of haystack before first occurrence of the needle? (default=false)
+- `$haystack` `string`
+- `$needle` `string`
+- `$beforeNeedle` (optional) `bool` Return part of haystack before first occurrence of the needle? (default=false)
 
 ## Return value
 

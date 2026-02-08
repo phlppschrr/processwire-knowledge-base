@@ -6,4 +6,4 @@ Set the Field that these comments are on
 
 ## Arguments
 
-- CommentField|Field $field
+- `$field` `CommentField|Field`

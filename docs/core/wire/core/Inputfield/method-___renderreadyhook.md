@@ -8,5 +8,5 @@ Hook this method instead if you want to hook renderReady().
 
 ## Arguments
 
-- Inputfield|null $parent
-- bool $renderValueMode
+- `$parent` (optional) `Inputfield|null`
+- `$renderValueMode` (optional) `bool`

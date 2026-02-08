@@ -8,7 +8,7 @@ Called right after the session starts or when `session_start()` is called.
 
 ## Arguments
 
-- string $id
+- `$id` `string`
 
 ## Return value
 

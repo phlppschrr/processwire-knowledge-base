@@ -16,14 +16,14 @@ $sanitizer->range($n, 1.1, 100.5); // returns 10.0
 
 ## Arguments
 
-- int|float|string $value
-- int|float|string|null $min Minimum allowed value or null for no minimum (default=null)
-- int|float|string|null $max Maximum allowed value or null for no maximum (default=null)
+- `$value` `int|float|string`
+- `$min` (optional) `int|float|string|null` Minimum allowed value or null for no minimum (default=null)
+- `$max` (optional) `int|float|string|null` Maximum allowed value or null for no maximum (default=null)
 
 ## Return value
 
 int|float
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

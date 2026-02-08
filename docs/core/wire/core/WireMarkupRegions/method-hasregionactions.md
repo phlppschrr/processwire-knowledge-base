@@ -6,7 +6,7 @@ Does the given HTML markup have references to any pw-actions?
 
 ## Arguments
 
-- string $html
+- `$html` `string`
 
 ## Return value
 

@@ -9,12 +9,12 @@ such as FieldtypeMulti::getLoadQueryWhere()
 
 ## Arguments
 
-- array $value
+- `$value` `array`
 
 ## Throws
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.141
+3.0.141

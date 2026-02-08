@@ -6,7 +6,7 @@ Test the given line $open preceding an include statement for validity
 
 ## Arguments
 
-- string $open
+- `$open` `string`
 
 ## Return value
 

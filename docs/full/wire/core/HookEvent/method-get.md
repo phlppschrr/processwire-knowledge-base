@@ -6,7 +6,7 @@ Get
 
 ## Arguments
 
-- object|string $key
+- `$key` `object|string`
 
 ## Return value
 

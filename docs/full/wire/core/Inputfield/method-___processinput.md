@@ -13,7 +13,7 @@ to the `Inputfield::setAttribute('value', $value)` method to occur when given th
 
 ## Arguments
 
-- WireInputData $input User input where value should be pulled from (typically `$input->post`)
+- `$input` `WireInputData` User input where value should be pulled from (typically `$input->post`)
 
 ## Return value
 

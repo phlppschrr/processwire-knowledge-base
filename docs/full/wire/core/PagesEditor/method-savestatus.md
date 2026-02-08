@@ -8,12 +8,12 @@ This action does not update the Page modified date.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.146
+3.0.146

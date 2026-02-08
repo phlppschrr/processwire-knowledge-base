@@ -13,7 +13,7 @@ if($page->and($page->parents)->has("featured=1")) {
 
 ## Arguments
 
-- WireArray|WireData|string|null $items May be any of the following: - `WireData` object (or derivative) - `WireArray` object (or derivative) - Name of any property from this object that returns one of the above. - Omit argument to simply return this object in a WireArray
+- `$items` (optional) `WireArray|WireData|string|null` May be any of the following: - `WireData` object (or derivative) - `WireArray` object (or derivative) - Name of any property from this object that returns one of the above. - Omit argument to simply return this object in a WireArray
 
 ## Return value
 

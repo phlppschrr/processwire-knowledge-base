@@ -6,7 +6,7 @@ Execute prepared statement when in debug mode only
 
 ## Arguments
 
-- array|null $input_parameters
+- `$input_parameters` (optional) `array|null`
 
 ## Return value
 

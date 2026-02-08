@@ -38,7 +38,7 @@ array(
 
 ## Arguments
 
-- Field $field In case it's needed for the schema, but typically isn't.
+- `$field` `Field` In case it's needed for the schema, but typically isn't.
 
 ## Return value
 

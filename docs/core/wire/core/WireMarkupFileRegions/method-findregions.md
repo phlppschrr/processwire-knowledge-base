@@ -6,13 +6,13 @@ Find and return file regions in given HTML
 
 ## Arguments
 
-- string $html
-- array $options - `action` (string): The "pw-[action]" or "data-pw-[action]" attribute to look for (default='file') - `tags` (array): Array of tag names to allow for action, and default action value (when non specified) - `exts` (array): File extensions to allow in action value (default=['css','less', 'scss','sass','js']) - `allowPaths` (bool): Allow paths in action value? (default=false)
+- `$html` `string`
+- `$options` `array` - `action` (string): The "pw-[action]" or "data-pw-[action]" attribute to look for (default='file') - `tags` (array): Array of tag names to allow for action, and default action value (when non specified) - `exts` (array): File extensions to allow in action value (default=['css','less', 'scss','sass','js']) - `allowPaths` (bool): Allow paths in action value? (default=false)
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

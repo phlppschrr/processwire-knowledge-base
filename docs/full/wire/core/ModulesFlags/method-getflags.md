@@ -6,7 +6,7 @@ Get flags for the given module
 
 ## Arguments
 
-- int|string|Module $id Module to add flag to
+- `$id` `int|string|Module` Module to add flag to
 
 ## Return value
 

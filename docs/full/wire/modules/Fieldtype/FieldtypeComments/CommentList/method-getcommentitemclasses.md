@@ -6,7 +6,7 @@ Get classes to use with comment item
 
 ## Arguments
 
-- Comment $comment
+- `$comment` `Comment`
 
 ## Return value
 

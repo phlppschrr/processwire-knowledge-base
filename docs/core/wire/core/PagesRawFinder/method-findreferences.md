@@ -11,8 +11,8 @@ with a page property or field name, i.e. `references.title`.
 
 ## Arguments
 
-- array $colNames
+- `$colNames` `array`
 
-## Meta
+## Since
 
-- @since 3.0.193
+3.0.193

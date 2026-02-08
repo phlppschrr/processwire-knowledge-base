@@ -22,8 +22,8 @@ $page->setUnformatted('title', 'This &amp; That');
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`
 
 ## Return value
 
@@ -40,6 +40,6 @@ self
 - [Page::setOutputFormatting()](index.md)
 - [Page::outputFormatting()](index.md)
 
-## Meta
+## Since
 
-- @since 3.0.169
+3.0.169

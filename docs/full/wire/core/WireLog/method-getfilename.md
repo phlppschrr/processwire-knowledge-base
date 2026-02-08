@@ -6,7 +6,7 @@ Get the full filename (including path) for the given log name
 
 ## Arguments
 
-- string $name Name of log (not including extension)
+- `$name` `string` Name of log (not including extension)
 
 ## Return value
 

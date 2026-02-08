@@ -6,4 +6,4 @@ Perform a regular scored MATCH/AGAINST query (non-boolean)
 
 ## Arguments
 
-- string $value
+- `$value` `string`

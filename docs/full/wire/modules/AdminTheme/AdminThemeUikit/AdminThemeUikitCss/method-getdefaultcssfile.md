@@ -6,7 +6,7 @@ Get default Uikit CSS file URL or disk path
 
 ## Arguments
 
-- bool $getPath
+- `$getPath` (optional) `bool`
 
 ## Return value
 

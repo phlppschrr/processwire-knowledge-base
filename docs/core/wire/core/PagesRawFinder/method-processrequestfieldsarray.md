@@ -6,9 +6,9 @@ Process given array of values to populate $this->requestFields and $this->rename
 
 ## Arguments
 
-- array $values
-- string $prefix Prefix for recursive use
+- `$values` `array`
+- `$prefix` (optional) `string` Prefix for recursive use
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

@@ -6,7 +6,7 @@ Get a property
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

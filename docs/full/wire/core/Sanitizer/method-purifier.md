@@ -8,7 +8,7 @@ See: [htmlpurifier.org](http://htmlpurifier.org)
 
 ## Arguments
 
-- array $options See [config options](http://htmlpurifier.org/live/configdoc/plain.html).
+- `$options` (optional) `array` See [config options](http://htmlpurifier.org/live/configdoc/plain.html).
 
 ## Return value
 

@@ -10,12 +10,12 @@ option that applies, unless it is not unique and the method has to auto-generate
 
 ## Arguments
 
-- array $options - `key` (string): Preferred bind key, or omit (blank) to auto-generate (digit only keys not accepted) - `value` (string|int): Value to use as part of the generated key - `prefix` (string): Prefix to override default - `global` (bool): Require globally unique among all instances?
+- `$options` (optional) `array` - `key` (string): Preferred bind key, or omit (blank) to auto-generate (digit only keys not accepted) - `value` (string|int): Value to use as part of the generated key - `prefix` (string): Prefix to override default - `global` (bool): Require globally unique among all instances?
 
 ## Return value
 
 string Returns bind key/name in format ":name" (with leading colon)
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

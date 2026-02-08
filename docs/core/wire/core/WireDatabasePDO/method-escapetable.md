@@ -6,7 +6,7 @@ Sanitize a table name for _a-zA-Z0-9
 
 ## Arguments
 
-- string $table String containing table name
+- `$table` `string` String containing table name
 
 ## Return value
 

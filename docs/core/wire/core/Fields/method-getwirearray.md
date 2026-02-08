@@ -8,6 +8,6 @@ Get WireArray container that items are stored in
 
 WireArray
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

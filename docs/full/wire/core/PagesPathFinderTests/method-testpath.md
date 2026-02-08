@@ -5,8 +5,8 @@ Source: `wire/core/PagesPathFinder.php`
 
 ## Arguments
 
-- string $path
-- int $expectResponse
+- `$path` `string`
+- `$expectResponse` (optional) `int`
 
 ## Return value
 

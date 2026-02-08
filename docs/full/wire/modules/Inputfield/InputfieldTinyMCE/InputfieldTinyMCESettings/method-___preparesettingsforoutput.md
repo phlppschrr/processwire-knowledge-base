@@ -8,7 +8,7 @@ This converts relative URLs to absolute, etc.
 
 ## Arguments
 
-- array $settings
+- `$settings` `array`
 
 ## Return value
 

@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- Pageimage $pageimage
+- `$pageimage` `Pageimage`

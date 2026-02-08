@@ -6,8 +6,8 @@ Return the query used for Autojoining this field (if different from getLoadQuery
 
 ## Arguments
 
-- Field $field
-- DatabaseQuerySelect $query
+- `$field` `Field`
+- `$query` `DatabaseQuerySelect`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Return corresponding template filename including path, or set template filename
 
 ## Arguments
 
-- string $filename Specify basename or path+basename to set, or omit to get filename. This argument added 3.0.143.
+- `$filename` (optional) `string` Specify basename or path+basename to set, or omit to get filename. This argument added 3.0.143.
 
 ## Return value
 

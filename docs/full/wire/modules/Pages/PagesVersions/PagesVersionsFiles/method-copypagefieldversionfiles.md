@@ -6,9 +6,9 @@ Copy files for given $page and field into version directory
 
 ## Arguments
 
-- Page $page
-- Field $field
-- int $version
+- `$page` `Page`
+- `$field` `Field`
+- `$version` `int`
 
 ## Return value
 

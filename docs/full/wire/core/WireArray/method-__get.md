@@ -10,7 +10,7 @@ Fuel properties and hooked properties have precedence with this type of call.
 
 ## Arguments
 
-- int|string $name
+- `$name` `int|string`
 
 ## Return value
 

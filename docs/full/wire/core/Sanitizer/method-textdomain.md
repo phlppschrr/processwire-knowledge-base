@@ -6,12 +6,12 @@ Sanitize as language textdomain
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.181
+3.0.181

@@ -10,13 +10,13 @@ Example: browser_title|headline|title - Return the value of the first field that
 
 ## Arguments
 
-- string $multiKey
-- bool $getKey Specify true to get the first matching key (name) rather than value
+- `$multiKey` `string`
+- `$getKey` (optional) `bool` Specify true to get the first matching key (name) rather than value
 
 ## Return value
 
 null|mixed Returns null if no values match, or if there aren't multiple keys split by "|" chars
 
-## Meta
+## Deprecated
 
-- @deprecated Use $page->values()->getFieldFirstValue() instead
+Use $page->values()->getFieldFirstValue() instead

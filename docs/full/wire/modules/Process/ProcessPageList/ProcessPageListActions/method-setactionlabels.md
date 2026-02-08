@@ -6,4 +6,4 @@ Set action labels
 
 ## Arguments
 
-- array $actionLabels Assoc array of [ name => label ]
+- `$actionLabels` `array` Assoc array of [ name => label ]

@@ -9,8 +9,8 @@ This function contains additions and modifications by @niklaka.
 ## Arguments
 
 - array|WireArray &$data Reference to an array to sort.
-- array $properties Array of properties: first property is used now and others in recursion, if needed.
-- int $numNeeded *Internal* amount of rows that need to be sorted (optimization used by filterData)
+- `$properties` `array` Array of properties: first property is used now and others in recursion, if needed.
+- `$numNeeded` (optional) `int` *Internal* amount of rows that need to be sorted (optimization used by filterData)
 
 ## Return value
 

@@ -6,5 +6,5 @@ Add extra markup to a region in the admin theme
 
 ## Arguments
 
-- string $name
-- string $value
+- `$name` `string`
+- `$value` `string`

@@ -6,7 +6,7 @@ Filter bookmarks, removing those user does not have access to
 
 ## Arguments
 
-- array $bookmarks
+- `$bookmarks` `array`
 
 ## Return value
 

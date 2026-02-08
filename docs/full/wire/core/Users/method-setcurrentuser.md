@@ -6,4 +6,4 @@ Set the current system user (the $user API variable)
 
 ## Arguments
 
-- User $user
+- `$user` `User`

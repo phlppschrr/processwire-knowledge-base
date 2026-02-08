@@ -6,7 +6,7 @@ Extract and return operator from end of field name, as used by selector arrays
 
 ## Arguments
 
-- string $field
+- `$field` `string`
 
 ## Return value
 

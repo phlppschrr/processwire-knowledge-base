@@ -6,8 +6,8 @@ Rename fields on request
 
 ## Arguments
 
-- array $values
+- `$values` `array`
 
-## Meta
+## Since
 
-- @since 3.0.167
+3.0.167

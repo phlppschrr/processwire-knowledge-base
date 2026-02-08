@@ -8,13 +8,13 @@ ProcessWire namespace aware version of PHP’s is_callable() function
 
 ## Arguments
 
-- string|callable $var
-- bool $syntaxOnly
+- `$var` `string|callable`
+- `$syntaxOnly` (optional) `bool`
 
 ## Return value
 
 bool
 
-## Meta
+## Details
 
 - @var string $callableName

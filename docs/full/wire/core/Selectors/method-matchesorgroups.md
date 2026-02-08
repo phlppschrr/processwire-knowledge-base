@@ -6,13 +6,13 @@ Do the given OR-groups match the given Wire?
 
 ## Arguments
 
-- array|string[]|array[] $orGroups
-- Wire $item
+- `$orGroups` `array|string[]|array[]`
+- `$item` `Wire`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.330
+3.0.330

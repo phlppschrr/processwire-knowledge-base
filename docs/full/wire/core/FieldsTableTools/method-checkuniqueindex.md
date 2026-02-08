@@ -6,8 +6,8 @@ Check state of field unique 'data' index and update as needed
 
 ## Arguments
 
-- Field $field
-- bool $verbose Show messages when changes made? (default=true)
+- `$field` `Field`
+- `$verbose` (optional) `bool` Show messages when changes made? (default=true)
 
 ## Throws
 

@@ -26,8 +26,8 @@ Implied parameters (using "?") was added in 3.0.157.
 
 ## Arguments
 
-- string $method
-- array $arguments
+- `$method` `string`
+- `$arguments` `array`
 
 ## Return value
 

@@ -6,4 +6,4 @@ Construct the template file
 
 ## Arguments
 
-- string $filename Full path and filename to the PHP template file
+- `$filename` (optional) `string` Full path and filename to the PHP template file

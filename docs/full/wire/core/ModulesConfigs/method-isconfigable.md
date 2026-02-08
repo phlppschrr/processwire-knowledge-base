@@ -10,13 +10,13 @@ Indicates whether module accepts config settings, whether interactively or API o
 
 ## Arguments
 
-- string|Module $class
-- bool $useCache
+- `$class` `string|Module`
+- `$useCache` (optional) `bool`
 
 ## Return value
 
 bool|int|string
 
-## Meta
+## Since
 
-- @since 3.0.179
+3.0.179

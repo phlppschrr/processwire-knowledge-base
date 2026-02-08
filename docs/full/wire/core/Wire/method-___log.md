@@ -14,8 +14,8 @@ $this->log("This message will be logged");
 
 ## Arguments
 
-- string $str Text to log, or omit to return the `$log` API variable.
-- array $options Optional extras to include: - `url` (string): URL to record the with the log entry (default=auto-detect) - `name` (string): Name of log to use (default=auto-detect) - `user` (User|string|null): User instance, user name, or null to log for current User. (default=null)
+- `$str` (optional) `string` Text to log, or omit to return the `$log` API variable.
+- `$options` (optional) `array` Optional extras to include: - `url` (string): URL to record the with the log entry (default=auto-detect) - `name` (string): Name of log to use (default=auto-detect) - `user` (User|string|null): User instance, user name, or null to log for current User. (default=null)
 
 ## Return value
 

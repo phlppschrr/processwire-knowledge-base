@@ -6,13 +6,13 @@ Given a hook ID or multiple hook IDs (in array or CSV string) remove the hooks
 
 ## Arguments
 
-- Wire $object
-- array|string $hookIDs
+- `$object` `Wire`
+- `$hookIDs` `array|string`
 
 ## Return value
 
 Wire
 
-## Meta
+## Since
 
-- @since 3.0.137
+3.0.137

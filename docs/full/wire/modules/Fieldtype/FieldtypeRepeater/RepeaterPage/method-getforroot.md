@@ -6,12 +6,12 @@ For nested repeaters, returns the root level forPage and forField in an array
 
 ## Arguments
 
-- string $get Specify 'page' or 'field' or omit for array of both
+- `$get` (optional) `string` Specify 'page' or 'field' or omit for array of both
 
 ## Return value
 
 array|Page|Field
 
-## Meta
+## Since
 
-- @since 3.0.132
+3.0.132

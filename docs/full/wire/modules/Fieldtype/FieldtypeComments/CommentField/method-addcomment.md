@@ -12,14 +12,14 @@ comments on a given Page.
 
 ## Arguments
 
-- Page $page Page where comments field exists
-- Comment $comment New comment to add
-- bool $send Send comment for automatic approval filtering and email notifications? - `true` if comment was just submitted now from user input and filtering should apply, notifications sent, etc. - `false` if you are importing comments and NO filtering should be applied, NO notifications sent, etc.
+- `$page` `Page` Page where comments field exists
+- `$comment` `Comment` New comment to add
+- `$send` `bool` Send comment for automatic approval filtering and email notifications? - `true` if comment was just submitted now from user input and filtering should apply, notifications sent, etc. - `false` if you are importing comments and NO filtering should be applied, NO notifications sent, etc.
 
 ## Return value
 
 bool Returns true on success, false on fail
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

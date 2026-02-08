@@ -6,5 +6,5 @@ Pre-process given Selectors object
 
 ## Arguments
 
-- Selectors $selectors
-- array $options
+- `$selectors` `Selectors`
+- `$options` (optional) `array`

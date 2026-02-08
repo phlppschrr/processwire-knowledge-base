@@ -6,8 +6,8 @@ Process a module upload
 
 ## Arguments
 
-- string $inputName Optionally specify the name of the $_FILES input to look for (default=upload_module)
-- string $destinationDir Optionally specify destination path for completed unzipped files
+- `$inputName` (optional) `string` Optionally specify the name of the $_FILES input to look for (default=upload_module)
+- `$destinationDir` (optional) `string` Optionally specify destination path for completed unzipped files
 
 ## Return value
 

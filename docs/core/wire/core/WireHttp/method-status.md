@@ -6,10 +6,10 @@ Send to a URL using a HEAD request and return the status code
 
 ## Arguments
 
-- string $url URL to request (including http:// or https://)
-- mixed $data Array of data to send (if not already set before) or raw data
-- bool $textMode When true function will return a string rather than integer, see the statusText() method.
-- array $options Optional options to modify default behavior, see the send() method for details.
+- `$url` `string` URL to request (including http:// or https://)
+- `$data` (optional) `mixed` Array of data to send (if not already set before) or raw data
+- `$textMode` (optional) `bool` When true function will return a string rather than integer, see the statusText() method.
+- `$options` (optional) `array` Optional options to modify default behavior, see the send() method for details.
 
 ## Return value
 

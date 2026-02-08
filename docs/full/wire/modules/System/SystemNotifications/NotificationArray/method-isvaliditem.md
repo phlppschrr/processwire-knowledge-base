@@ -6,7 +6,7 @@ Template method from WireArray
 
 ## Arguments
 
-- Notification $item
+- `$item` `Notification`
 
 ## Return value
 

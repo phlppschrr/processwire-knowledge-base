@@ -20,8 +20,8 @@ $returnValue = array(
 
 ## Arguments
 
-- Template $template Template you want to import to
-- array $data Import data array (must have been exported from getExportData() method).
+- `$template` `Template` Template you want to import to
+- `$data` `array` Import data array (must have been exported from getExportData() method).
 
 ## Return value
 

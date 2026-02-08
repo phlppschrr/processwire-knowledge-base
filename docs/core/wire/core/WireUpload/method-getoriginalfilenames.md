@@ -8,6 +8,6 @@ Get unsanitized array of original filenames (basenames) indexed by completed bas
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.212
+3.0.212

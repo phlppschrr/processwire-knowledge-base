@@ -6,7 +6,7 @@ Convert a code point to its single or multi-byte character
 
 ## Arguments
 
-- integer $code
+- `$code` `integer`
 
 ## Return value
 

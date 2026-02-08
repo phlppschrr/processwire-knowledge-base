@@ -8,4 +8,4 @@ Also called when module is installed
 
 ## Arguments
 
-- HookEvent|null $event
+- `$event` (optional) `HookEvent|null`

@@ -6,7 +6,7 @@ Per WireArray interface, Field keys have to be integers
 
 ## Arguments
 
-- int $key
+- `$key` `int`
 
 ## Return value
 

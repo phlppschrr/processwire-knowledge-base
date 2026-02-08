@@ -6,7 +6,7 @@ Process rotate action (internal)
 
 ## Arguments
 
-- resource $img
+- `$img` `resource`
 - $degrees
 
 ## Return value

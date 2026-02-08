@@ -6,14 +6,17 @@ Return string of random letters
 
 ## Arguments
 
-- int $length Required length of string or 0 for random length
-- array $options See options for randomAlnum() method
+- `$length` (optional) `int` Required length of string or 0 for random length
+- `$options` (optional) `array` See options for randomAlnum() method
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.109
-- @deprecated use WireRandom::alpha() instead.
+3.0.109
+
+## Deprecated
+
+use WireRandom::alpha() instead.

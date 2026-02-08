@@ -6,9 +6,9 @@ Remove the region(s) that match the given $selector
 
 ## Arguments
 
-- string $selector See the update() method for details
-- string $markup Document markup where region(s) exist
-- array $options See the update() method for details
+- `$selector` `string` See the update() method for details
+- `$markup` `string` Document markup where region(s) exist
+- `$options` (optional) `array` See the update() method for details
 
 ## Return value
 

@@ -6,8 +6,8 @@ Get the namespace used in the given .php or .module file
 
 ## Arguments
 
-- string $file File name or file data (if file data, specify true for 2nd argument)
-- bool $fileIsContents Specify true if the given $file is actually the contents of the file, rather than file name.
+- `$file` `string` File name or file data (if file data, specify true for 2nd argument)
+- `$fileIsContents` (optional) `bool` Specify true if the given $file is actually the contents of the file, rather than file name.
 
 ## Return value
 

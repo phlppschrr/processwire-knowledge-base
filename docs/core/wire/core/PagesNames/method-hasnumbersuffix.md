@@ -6,8 +6,8 @@ Does the given name or Page have a number suffix? Returns the number if yes, or 
 
 ## Arguments
 
-- string|Page $name
-- bool $getNamePrefix Return the name prefix rather than the number suffix? (default=false)
+- `$name` `string|Page`
+- `$getNamePrefix` (optional) `bool` Return the name prefix rather than the number suffix? (default=false)
 
 ## Return value
 

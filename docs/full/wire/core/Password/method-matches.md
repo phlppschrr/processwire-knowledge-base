@@ -6,7 +6,7 @@ Does this Password match the given string?
 
 ## Arguments
 
-- string $pass Password to compare
+- `$pass` `string` Password to compare
 
 ## Return value
 

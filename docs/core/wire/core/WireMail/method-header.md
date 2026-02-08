@@ -9,8 +9,8 @@ Set any email header
 
 ## Arguments
 
-- string|array $key Header name
-- string $value Header value or specify null to unset
+- `$key` `string|array` Header name
+- `$value` `string` Header value or specify null to unset
 
 ## Return value
 

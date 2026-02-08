@@ -10,10 +10,10 @@ Create a new Inputfield, add it to this InputfieldWrapper, and return the new In
 
 ## Arguments
 
-- string $typeName Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
-- string|array $name Name of input (or substitute $settings here).
-- string|array $label Label for input (or substitute $settings here).
-- array|string $settings Settings to add to Inputfield (optional). Or if string, assumed to be “description”.
+- `$typeName` `string` Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
+- `$name` (optional) `string|array` Name of input (or substitute $settings here).
+- `$label` (optional) `string|array` Label for input (or substitute $settings here).
+- `$settings` (optional) `array|string` Settings to add to Inputfield (optional). Or if string, assumed to be “description”.
 
 ## Return value
 
@@ -23,6 +23,6 @@ Inputfield|InputfieldSelect|InputfieldWrapper An Inputfield instance ready to po
 
 - WireException If you request an unknown Inputfield type
 
-## Meta
+## Since
 
-- @since 3.0.110
+3.0.110

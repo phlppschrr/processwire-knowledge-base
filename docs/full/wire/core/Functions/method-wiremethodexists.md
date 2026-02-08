@@ -10,9 +10,9 @@ If given a class name that does not include a namespace, the `\ProcessWire` name
 
 ## Arguments
 
-- string $className Class name or object
-- string $method Method name
-- bool $hookable Also return true if "method" exists in a hookable format "___method"? (default=false) 3.0.204+
+- `$className` `string` Class name or object
+- `$method` `string` Method name
+- `$hookable` (optional) `bool` Also return true if "method" exists in a hookable format "___method"? (default=false) 3.0.204+
 
 ## Return value
 

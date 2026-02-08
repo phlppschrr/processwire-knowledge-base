@@ -9,8 +9,8 @@ After loaded, we check for any 'global' fields and add them to the Fieldgroup, i
 
 ## Arguments
 
-- WireArray $items
-- Selectors|string|null $selectors Selectors or a selector string to find, or NULL to load all.
+- `$items` `WireArray`
+- `$selectors` (optional) `Selectors|string|null` Selectors or a selector string to find, or NULL to load all.
 
 ## Return value
 

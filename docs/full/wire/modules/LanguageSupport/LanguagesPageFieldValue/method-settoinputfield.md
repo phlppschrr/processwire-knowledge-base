@@ -6,8 +6,8 @@ Populate language values from this object to given Inputfield
 
 ## Arguments
 
-- Inputfield $inputfield
+- `$inputfield` `Inputfield`
 
-## Meta
+## Since
 
-- @since 3.0.170
+3.0.170

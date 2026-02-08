@@ -8,7 +8,7 @@ If the requested Fieldtype is not already installed, it will be installed here a
 
 ## Arguments
 
-- string $key Fieldtype name or class name, or dynamic property of Fieldtypes
+- `$key` `string` Fieldtype name or class name, or dynamic property of Fieldtypes
 
 ## Return value
 

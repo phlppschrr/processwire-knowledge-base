@@ -15,12 +15,12 @@ $a = PageArray([ $page1, $page2, $page3 ]); // create PageArray with multiple it
 
 ## Arguments
 
-- array|PageArray $items
+- `$items` (optional) `array|PageArray`
 
 ## Return value
 
 PageArray
 
-## Meta
+## Since
 
-- @since 3.0.123
+3.0.123

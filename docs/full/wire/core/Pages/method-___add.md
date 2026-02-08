@@ -26,10 +26,10 @@ $building = $pages->add('skyscraper', '/skyscrapers/atlanta/', [
 
 ## Arguments
 
-- string|Template $template Template name or Template object
-- string|int|Page $parent Parent path, ID or Page object
-- string $name Optional name or title of page. If none provided, one will be automatically assigned. If you want to specify a different name and title then specify the $name argument, and $values['title'].
-- array $values Field values to assign to page (optional). If $name is omitted, this may also be 3rd param.
+- `$template` `string|Template` Template name or Template object
+- `$parent` `string|int|Page` Parent path, ID or Page object
+- `$name` (optional) `string` Optional name or title of page. If none provided, one will be automatically assigned. If you want to specify a different name and title then specify the $name argument, and $values['title'].
+- `$values` (optional) `array` Field values to assign to page (optional). If $name is omitted, this may also be 3rd param.
 
 ## Return value
 

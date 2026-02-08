@@ -6,4 +6,4 @@ Logout success method for hooks
 
 ## Arguments
 
-- User $user User that logged in
+- `$user` `User` User that logged in

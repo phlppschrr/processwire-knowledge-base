@@ -8,6 +8,6 @@ Return last used PDO connection
 
 \PDO
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

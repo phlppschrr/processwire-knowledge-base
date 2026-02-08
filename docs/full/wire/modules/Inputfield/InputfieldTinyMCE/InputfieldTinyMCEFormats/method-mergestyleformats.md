@@ -6,8 +6,8 @@ Merge the given style formats
 
 ## Arguments
 
-- array $styleFormats
-- array $addFormats
+- `$styleFormats` `array`
+- `$addFormats` `array`
 
 ## Return value
 

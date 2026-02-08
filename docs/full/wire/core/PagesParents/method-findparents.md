@@ -6,12 +6,12 @@ Find all pages that have children
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 
 array|PageArray
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

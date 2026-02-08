@@ -9,8 +9,8 @@ or during a normal shutdown. `close()` is called right after this function.
 
 ## Arguments
 
-- string $id
-- string $data
+- `$id` `string`
+- `$data` `string`
 
 ## Return value
 

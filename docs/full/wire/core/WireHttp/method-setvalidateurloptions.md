@@ -12,7 +12,7 @@ To return current validate URL options, omit the $options argument.
 
 ## Arguments
 
-- array $options Options to set, see the $sanitizer->url() method for details on options.
+- `$options` (optional) `array` Options to set, see the $sanitizer->url() method for details on options.
 
 ## Return value
 

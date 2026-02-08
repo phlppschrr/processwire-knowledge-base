@@ -6,7 +6,7 @@ Convert a relative path to be absolute
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

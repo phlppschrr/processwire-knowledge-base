@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- FieldtypeFile $fieldtype
+- `$fieldtype` `FieldtypeFile`

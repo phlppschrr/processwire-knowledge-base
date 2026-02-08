@@ -9,7 +9,7 @@ Called by `session_start()`, based on `session.gc_divisor`,
 
 ## Arguments
 
-- int $max_lifetime
+- `$max_lifetime` `int`
 
 ## Return value
 

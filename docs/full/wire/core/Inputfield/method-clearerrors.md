@@ -6,6 +6,6 @@ Clear errors from this Inputfield
 
 This is the same as `$inputfield->getErrors(true);` but has no return value.
 
-## Meta
+## Since
 
-- @since 3.0.205
+3.0.205

@@ -10,12 +10,12 @@ to re-establish the connection.
 
 ## Arguments
 
-- string|null $type - Specify 'writer' to reset writer instance. - Specify 'reader' to reset reader instance. - Omit or null to reset both, or whichever one is in use.
+- `$type` (optional) `string|null` - Specify 'writer' to reset writer instance. - Specify 'reader' to reset reader instance. - Omit or null to reset both, or whichever one is in use.
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

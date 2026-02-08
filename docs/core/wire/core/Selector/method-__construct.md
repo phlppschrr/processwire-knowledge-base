@@ -12,5 +12,5 @@ then the condition is reversed.
 
 ## Arguments
 
-- string|array $field
-- string|int|array $value
+- `$field` `string|array`
+- `$value` `string|int|array`

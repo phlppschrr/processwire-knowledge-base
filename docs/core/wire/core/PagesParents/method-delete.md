@@ -6,12 +6,12 @@ Delete page entirely from pages_parents table (both as page and parent)
 
 ## Arguments
 
-- Page|int $page
+- `$page` `Page|int`
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

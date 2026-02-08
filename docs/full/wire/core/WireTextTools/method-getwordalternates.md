@@ -18,8 +18,8 @@ See the protected WireTextTools::wordAlternates() method for hook instructions a
 
 ## Arguments
 
-- string $word
-- array $options - `operator` (string): Operator being used, if applicable (default='') - `minLength` (int): Minimum word length to return in alternates (default=2) - `lowercase` (bool): Convert words to lowercase, if not already (default=false)
+- `$word` `string`
+- `$options` (optional) `array` - `operator` (string): Operator being used, if applicable (default='') - `minLength` (int): Minimum word length to return in alternates (default=2) - `lowercase` (bool): Convert words to lowercase, if not already (default=false)
 
 ## Return value
 
@@ -29,6 +29,6 @@ array
 
 - [WireTextTools::getWordStem()](index.md)
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

@@ -6,8 +6,8 @@ Rename table columns without changing type
 
 ## Arguments
 
-- string $table
-- array $columns Associative array with one or more of `[ 'old_name' => 'new_name' ]`
+- `$table` `string`
+- `$columns` `array` Associative array with one or more of `[ 'old_name' => 'new_name' ]`
 
 ## Return value
 
@@ -17,6 +17,6 @@ int Number of columns renamed
 
 - \PDOException
 
-## Meta
+## Since
 
-- @since 3.0.185
+3.0.185

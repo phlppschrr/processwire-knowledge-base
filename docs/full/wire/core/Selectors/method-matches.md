@@ -6,7 +6,7 @@ Does the given Wire match these Selectors?
 
 ## Arguments
 
-- Wire $item
+- `$item` `Wire`
 
 ## Return value
 

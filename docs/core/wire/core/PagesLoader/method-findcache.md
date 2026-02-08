@@ -16,14 +16,14 @@ $items = $pages->findCache("title%=foo", "+1 HOUR");  // same as above
 
 ## Arguments
 
-- string|array|Selectors $selector
-- int|string|bool|null $expire When the cache should expire, one of the following: - Max age integer (in seconds). - Any string accepted by PHP’s `strtotime()` that specifies when the cache should be expired. - Any `WireCache::expire…` constant or anything accepted by the `WireCache::get()` $expire argument.
-- array $options Options to pass to `$pages->getByIDs()`, or: - `findIDs` (bool): Return just the page IDs rather then the actual pages? (default=false)
+- `$selector` `string|array|Selectors`
+- `$expire` (optional) `int|string|bool|null` When the cache should expire, one of the following: - Max age integer (in seconds). - Any string accepted by PHP’s `strtotime()` that specifies when the cache should be expired. - Any `WireCache::expire…` constant or anything accepted by the `WireCache::get()` $expire argument.
+- `$options` (optional) `array` Options to pass to `$pages->getByIDs()`, or: - `findIDs` (bool): Return just the page IDs rather then the actual pages? (default=false)
 
 ## Return value
 
 PageArray|array
 
-## Meta
+## Since
 
-- @since 3.0.218
+3.0.218

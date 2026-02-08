@@ -6,5 +6,5 @@ Set the redirect URL
 
 ## Arguments
 
-- string $redirectUrl
-- int $type
+- `$redirectUrl` `string`
+- `$type` (optional) `int`

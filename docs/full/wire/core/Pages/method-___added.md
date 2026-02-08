@@ -6,4 +6,4 @@ Hook called after a new page has been added
 
 ## Arguments
 
-- Page $page Page that was added.
+- `$page` `Page` Page that was added.

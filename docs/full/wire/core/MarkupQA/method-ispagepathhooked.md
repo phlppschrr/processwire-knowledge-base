@@ -8,6 +8,6 @@ Is the Page::path method hooked in a manner that might affect MarkupQA?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.231
+3.0.231

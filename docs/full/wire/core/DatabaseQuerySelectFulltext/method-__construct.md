@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- DatabaseQuerySelect|PageFinderDatabaseQuerySelect $query
+- `$query` `DatabaseQuerySelect|PageFinderDatabaseQuerySelect`

@@ -6,9 +6,9 @@ Same as entitiesA() but does not double encode
 
 ## Arguments
 
-- array|string|int|float|object|bool $value
-- int $flags
-- string $encoding
+- `$value` `array|string|int|float|object|bool`
+- `$flags` (optional) `int`
+- `$encoding` (optional) `string`
 
 ## Return value
 
@@ -19,6 +19,6 @@ array|string|int|float|bool
 - [Sanitizer::entitiesA()](method-entitiesa.md)
 - [Sanitizer::entities1()](method-entities1.md)
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

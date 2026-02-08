@@ -8,4 +8,4 @@ Template method for descending classes to modify selectors if needed
 
 ## Arguments
 
-- Selectors $selectors
+- `$selectors` `Selectors`

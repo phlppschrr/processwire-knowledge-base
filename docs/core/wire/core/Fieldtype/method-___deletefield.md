@@ -9,7 +9,7 @@ deleted before this method is called.
 
 ## Arguments
 
-- Field $field Field object
+- `$field` `Field` Field object
 
 ## Return value
 

@@ -9,7 +9,7 @@ Applicable to numerically indexed WireArray only.
 
 ## Arguments
 
-- int $num Index number
+- `$num` `int` Index number
 
 ## Return value
 

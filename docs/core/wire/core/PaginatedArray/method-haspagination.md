@@ -8,6 +8,6 @@ Does this WireArray have more than one pagination?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.120
+3.0.120

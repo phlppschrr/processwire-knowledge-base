@@ -8,7 +8,7 @@ Note that the default timeout for http requests is 4.5 seconds
 
 ## Arguments
 
-- int|float $seconds
+- `$seconds` `int|float`
 
 ## Return value
 

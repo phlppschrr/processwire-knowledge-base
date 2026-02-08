@@ -13,7 +13,7 @@ $file->addTag(['foo', 'bar', 'baz']); // same as above, using array
 
 ## Arguments
 
-- string|array $tag Tag to add, or array of tags to add, or CSV string of tags to add.
+- `$tag` `string|array` Tag to add, or array of tags to add, or CSV string of tags to add.
 
 ## Return value
 
@@ -25,6 +25,6 @@ $this
 - [Pagefile::hasTag()](method-hastag.md)
 - [Pagefile::removeTag()](method-removetag.md)
 
-## Meta
+## Since
 
-- @since 3.0.17
+3.0.17

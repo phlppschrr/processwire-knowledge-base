@@ -6,12 +6,12 @@ Normalize a string, filename or object to be a textdomain string
 
 ## Arguments
 
-- string|object $textdomain
+- `$textdomain` `string|object`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.154 was protected in prior versions
+3.0.154 was protected in prior versions

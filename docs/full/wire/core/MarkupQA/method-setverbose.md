@@ -17,8 +17,8 @@ return $value;
 
 ## Arguments
 
-- string $key Setting name to get or set, or omit to get all settings
-- string|array|int|null $value Setting value to set, or omit when getting setting
+- `$key` `string` Setting name to get or set, or omit to get all settings
+- `$value` `string|array|int|null` Setting value to set, or omit when getting setting
 
 ## Return value
 

@@ -6,9 +6,9 @@ Save a value
 
 ## Arguments
 
-- string $name
-- mixed $value
-- bool $recursive
+- `$name` `string`
+- `$value` `mixed`
+- `$recursive` (optional) `bool`
 
 ## Return value
 

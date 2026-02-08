@@ -6,13 +6,13 @@ Bind value and get unique key that refers to it in one step
 
 ## Arguments
 
-- string|int|float $value
-- null|int|string $type
+- `$value` `string|int|float`
+- `$type` (optional) `null|int|string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

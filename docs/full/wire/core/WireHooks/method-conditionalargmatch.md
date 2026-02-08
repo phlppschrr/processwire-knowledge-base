@@ -6,13 +6,13 @@ Does given value match given match condition?
 
 ## Arguments
 
-- Selectors|string $argMatch
-- mixed $argVal
+- `$argMatch` `Selectors|string`
+- `$argVal` `mixed`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.247
+3.0.247

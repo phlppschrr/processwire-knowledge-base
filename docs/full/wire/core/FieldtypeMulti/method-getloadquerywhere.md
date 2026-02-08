@@ -6,11 +6,11 @@ Apply a where condition to a load query (used by getLoadQuery method)
 
 ## Arguments
 
-- Field $field
-- DatabaseQuerySelect $query
-- string $col The column name
-- string $operator The comparison operator
-- mixed $value The value to find
+- `$field` `Field`
+- `$query` `DatabaseQuerySelect`
+- `$col` `string` The column name
+- `$operator` `string` The comparison operator
+- `$value` `mixed` The value to find
 
 ## Return value
 

@@ -6,8 +6,8 @@ Render comment list
 
 ## Arguments
 
-- int $parent_id
-- int $depth
+- `$parent_id` (optional) `int`
+- `$depth` (optional) `int`
 
 ## Return value
 

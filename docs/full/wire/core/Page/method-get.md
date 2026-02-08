@@ -55,7 +55,7 @@ $title = $page->get('categories[title%=design].title[0]'); // string or null
 
 ## Arguments
 
-- string $key Name of property, format string or selector, per the details above.
+- `$key` `string` Name of property, format string or selector, per the details above.
 
 ## Return value
 

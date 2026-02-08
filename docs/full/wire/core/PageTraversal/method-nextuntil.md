@@ -6,10 +6,10 @@ Return all sibling pages after this one until matching the one specified
 
 ## Arguments
 
-- Page $page
-- string|Page|array|Selectors $selector May either be a selector or Page to stop at. Results will not include this.
-- string|array $filter Optional selector to filter matched pages by
-- array $options Options to pass to the _next() method
+- `$page` `Page`
+- `$selector` (optional) `string|Page|array|Selectors` May either be a selector or Page to stop at. Results will not include this.
+- `$filter` (optional) `string|array` Optional selector to filter matched pages by
+- `$options` (optional) `array` Options to pass to the _next() method
 
 ## Return value
 

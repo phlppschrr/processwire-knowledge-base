@@ -6,7 +6,7 @@ Return all children Inputfield objects
 
 ## Arguments
 
-- string $selector Optional selector string to filter the children by
+- `$selector` (optional) `string` Optional selector string to filter the children by
 
 ## Return value
 

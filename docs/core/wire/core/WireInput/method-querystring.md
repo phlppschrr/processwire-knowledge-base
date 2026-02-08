@@ -10,7 +10,7 @@ param can be used to add new GET params or override existing ones.
 
 ## Arguments
 
-- array $overrides Optional assoc array for overriding or adding GET params
+- `$overrides` (optional) `array` Optional assoc array for overriding or adding GET params
 
 ## Return value
 

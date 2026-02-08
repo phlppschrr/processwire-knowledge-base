@@ -6,8 +6,8 @@ Does the given module class have a duplicate?
 
 ## Arguments
 
-- string $className
-- string $pathname Optionally specify the duplicate to check
+- `$className` `string`
+- `$pathname` (optional) `string` Optionally specify the duplicate to check
 
 ## Return value
 

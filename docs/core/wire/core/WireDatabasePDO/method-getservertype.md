@@ -8,6 +8,6 @@ Get server type, one of MySQL, MariDB, Percona, etc.
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.185
+3.0.185

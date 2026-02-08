@@ -18,8 +18,8 @@ parenthesis, i.e. `+"phrase"` gets converted to `+(phrase)`.*
 
 ## Arguments
 
-- string|array $value
-- array $options See options for Sanitizer::selectorValue() method
+- `$value` `string|array`
+- `$options` (optional) `array` See options for Sanitizer::selectorValue() method
 
 ## Return value
 
@@ -30,6 +30,6 @@ bool|mixed|string
 - [Sanitizer::selectorValue()](method-selectorvalue.md)
 - [https://processwire.com/docs/selectors/operators/#contains-advanced](https://processwire.com/docs/selectors/operators/#contains-advanced)
 
-## Meta
+## Since
 
-- @since 3.0.182
+3.0.182

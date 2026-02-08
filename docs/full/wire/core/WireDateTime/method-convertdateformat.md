@@ -6,8 +6,8 @@ Given a PHP date() format, convert it to either 'js', 'strftime' or 'regex' form
 
 ## Arguments
 
-- string $format PHP date() format
-- string $type New format to convert to: either 'js', 'strftime', or 'regex'
+- `$format` `string` PHP date() format
+- `$type` `string` New format to convert to: either 'js', 'strftime', or 'regex'
 
 ## Return value
 

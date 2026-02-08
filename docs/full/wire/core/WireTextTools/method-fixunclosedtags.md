@@ -18,9 +18,9 @@ close tags to the end of the string.
 
 ## Arguments
 
-- string $str
-- bool $remove Remove unclosed tags? If false, it will attempt to close them instead. (default=true)
-- array $options - `ignoreTags` (array): Tags that can be ignored because they close themselves. (default=per HTML spec)
+- `$str` `string`
+- `$remove` (optional) `bool` Remove unclosed tags? If false, it will attempt to close them instead. (default=true)
+- `$options` (optional) `array` - `ignoreTags` (array): Tags that can be ignored because they close themselves. (default=per HTML spec)
 
 ## Return value
 

@@ -6,8 +6,8 @@ Given random buffer string of bytes return base64 encoded salt
 
 ## Arguments
 
-- string $buffer
-- int $requiredLength
+- `$buffer` `string`
+- `$requiredLength` `int`
 
 ## Return value
 

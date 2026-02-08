@@ -6,7 +6,7 @@ Create more informative error message from $error array
 
 ## Arguments
 
-- array $error Error array from PHP’s error_get_last()
+- `$error` `array` Error array from PHP’s error_get_last()
 
 ## Return value
 

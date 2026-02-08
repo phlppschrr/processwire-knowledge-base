@@ -6,12 +6,12 @@ Get all sanitizer method names and optionally types they return
 
 ## Arguments
 
-- bool $getReturnTypes Get array where method names are keys and values are return types?
+- `$getReturnTypes` (optional) `bool` Get array where method names are keys and values are return types?
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.165
+3.0.165

@@ -6,7 +6,7 @@ Get label to represent given $page
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

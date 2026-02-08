@@ -6,4 +6,4 @@ Format the given text string, outside of specific Page or Field context.
 
 ## Arguments
 
-- string $str String is provided as a reference, so is modified directly (not returned).
+- `$str` `string` String is provided as a reference, so is modified directly (not returned).

@@ -10,6 +10,6 @@ Can also be accessed directly via `$field->type`.
 
 Fieldtype|null|string
 
-## Meta
+## Since
 
-- @since 3.0.16 Added for consistency, but all versions can still use $field->type.
+3.0.16 Added for consistency, but all versions can still use $field->type.

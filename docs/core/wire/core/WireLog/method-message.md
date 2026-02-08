@@ -11,8 +11,8 @@ $log->message("User updated profile");
 
 ## Arguments
 
-- string $text Message to log
-- bool|int $flags Specify boolean true to also have the message displayed interactively (admin only).
+- `$text` `string` Message to log
+- `$flags` (optional) `bool|int` Specify boolean true to also have the message displayed interactively (admin only).
 
 ## Return value
 

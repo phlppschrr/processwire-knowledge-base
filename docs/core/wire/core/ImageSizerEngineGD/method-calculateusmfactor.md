@@ -9,10 +9,10 @@ according to resizing scalevalue and absolute target dimensions
 
 ## Arguments
 
-- mixed $targetWidth width of the targetimage
-- mixed $targetHeight height of the targetimage
-- mixed $origWidth
-- mixed $origHeight
+- `$targetWidth` `mixed` width of the targetimage
+- `$targetHeight` `mixed` height of the targetimage
+- `$origWidth` (optional) `mixed`
+- `$origHeight` (optional) `mixed`
 
 ## Return value
 

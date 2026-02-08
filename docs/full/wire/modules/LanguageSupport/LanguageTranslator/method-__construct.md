@@ -6,4 +6,4 @@ Construct the translator and set the current language
 
 ## Arguments
 
-- Language $currentLanguage
+- `$currentLanguage` `Language`

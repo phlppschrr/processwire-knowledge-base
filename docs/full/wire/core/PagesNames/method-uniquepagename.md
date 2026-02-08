@@ -14,9 +14,9 @@ is already on $page, you’ll want to assign it manually after this.
 
 ## Arguments
 
-- string|Page|array $name Name to make unique You may optionally substitute the $page argument or $options arguments here, if that is all you need.
+- `$name` (optional) `string|Page|array` Name to make unique You may optionally substitute the $page argument or $options arguments here, if that is all you need.
 - Page|string|null|array Page to exclude from duplicate check and/or to pull $name or parent from (if not otherwise specified). Note that specifying a Page is important if the page already exists, as it is used as the page to exclude when checking for name collisions, and we want to exclude $page from that check. You may optionally substitute the $options or $name arguments here, if that is all you need. If $parent or $name are specified separately from this $page argument, they will override whatever parent or name settings are on this $page argument.
-- array $options - `parent` (Page|null): Optionally specify a different parent if $page does not currently have the parent you want to use. - `language` (Language|int): Get unique for this language (if multi-language page names active). - `page` (Page|null): If you specified no $page argument, you can optionally bundle it in the $options array. - `name` (string): If you specified no $name argument, you can optionally bundle it in the $options array.
+- `$options` (optional) `array` - `parent` (Page|null): Optionally specify a different parent if $page does not currently have the parent you want to use. - `language` (Language|int): Get unique for this language (if multi-language page names active). - `page` (Page|null): If you specified no $page argument, you can optionally bundle it in the $options array. - `name` (string): If you specified no $name argument, you can optionally bundle it in the $options array.
 
 ## Return value
 

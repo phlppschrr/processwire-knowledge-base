@@ -6,9 +6,9 @@ Get integer value within given range
 
 ## Arguments
 
-- int $n Number to require in given range
-- int $min Minimum allowed number
-- int $max Maximum allowed number
+- `$n` `int` Number to require in given range
+- `$min` `int` Minimum allowed number
+- `$max` `int` Maximum allowed number
 
 ## Return value
 

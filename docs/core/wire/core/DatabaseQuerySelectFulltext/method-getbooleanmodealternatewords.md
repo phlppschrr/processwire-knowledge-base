@@ -6,15 +6,15 @@ Helper for getBooleanModeWords to handle population of alternate words in boolea
 
 ## Arguments
 
-- string $word Word to find alternates for
+- `$word` `string` Word to find alternates for
 - string &$booleanValue Existing boolean value which will be updated
-- int $minWordLength
-- array $options
+- `$minWordLength` `int`
+- `$options` `array`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

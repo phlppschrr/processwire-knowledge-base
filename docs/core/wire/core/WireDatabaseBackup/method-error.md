@@ -6,7 +6,7 @@ Add an error and return last error
 
 ## Arguments
 
-- string $str If omitted, no error is added
+- `$str` (optional) `string` If omitted, no error is added
 
 ## Return value
 

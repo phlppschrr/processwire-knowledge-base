@@ -10,7 +10,7 @@ You may also pass in the string "id=123", where 123 is the page_id
 
 ## Arguments
 
-- int|string|null $id
+- `$id` (optional) `int|string|null`
 
 ## Return value
 

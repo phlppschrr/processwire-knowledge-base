@@ -8,9 +8,9 @@ This is procedural version of the `$files->zip()` method. See that method for al
 
 ## Arguments
 
-- string $zipfile Full path and filename to create or update (i.e. /path/to/myfile.zip)
-- array|string $files Array of files to add (full path and filename), or directory (string) to add. If given a directory, it will recursively add everything in that directory.
-- array $options Options modify default behavior: - `allowHidden` (bool|array): allow hidden files? May be boolean, or array of hidden files (basenames) you allow. (default=false) Note that if you actually specify a hidden file in your $files argument, then that overrides this. - `allowEmptyDirs` (bool): allow empty directories in the ZIP file? (default=true) - `overwrite` (bool): Replaces ZIP file if already present (rather than adding to it) (default=false) - `exclude` (array): Files or directories to exclude - `dir` (string): Directory name to prepend to added files in the ZIP
+- `$zipfile` `string` Full path and filename to create or update (i.e. /path/to/myfile.zip)
+- `$files` `array|string` Array of files to add (full path and filename), or directory (string) to add. If given a directory, it will recursively add everything in that directory.
+- `$options` (optional) `array` Options modify default behavior: - `allowHidden` (bool|array): allow hidden files? May be boolean, or array of hidden files (basenames) you allow. (default=false) Note that if you actually specify a hidden file in your $files argument, then that overrides this. - `allowEmptyDirs` (bool): allow empty directories in the ZIP file? (default=true) - `overwrite` (bool): Replaces ZIP file if already present (rather than adding to it) (default=false) - `exclude` (array): Files or directories to exclude - `dir` (string): Directory name to prepend to added files in the ZIP
 
 ## Return value
 

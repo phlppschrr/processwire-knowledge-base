@@ -9,8 +9,8 @@ or less sense with your code readability. Use whichever better suits your case.
 
 ## Arguments
 
-- string|array|Selectors $selector Specify selector to find first matching page ID
-- bool|array $options Specify boolean true to return all pages columns rather than just IDs. Or specify array of options (see find method for details), `verbose` option can optionally be in array.
+- `$selector` `string|array|Selectors` Specify selector to find first matching page ID
+- `$options` (optional) `bool|array` Specify boolean true to return all pages columns rather than just IDs. Or specify array of options (see find method for details), `verbose` option can optionally be in array.
 
 ## Return value
 
@@ -22,6 +22,6 @@ int|array
 - [Pages::has()](method-has.md)
 - [Pages::findIDs()](method-findids.md)
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

@@ -4,6 +4,6 @@ Source: `wire/core/Inputfield.php`
 
 Collapsed into a separate tab and locked (not editable)
 
-## Meta
+## Since
 
-- @since 3.0.201
+3.0.201

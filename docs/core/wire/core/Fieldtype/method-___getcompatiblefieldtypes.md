@@ -8,7 +8,7 @@ This represents the list of Fieldtype modules that the user is allowed to change
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

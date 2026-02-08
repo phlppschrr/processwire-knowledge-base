@@ -12,9 +12,9 @@ Returned value must be either an array, number, or string.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string|int|float|array|object $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|float|array|object`
 
 ## Return value
 

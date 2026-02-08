@@ -19,8 +19,8 @@ $items = $modules->findByPrefix('Textformatter', true);
 
 ## Arguments
 
-- string $prefix Specify prefix, i.e. "Process", "Fieldtype", "Inputfield", etc.
-- bool|int $load Specify one of the following (all indexed by module name): - Boolean true to return array of instantiated modules. - Boolean false to return array of module names (default). - Integer 1 to return array of module info for each matching module. - Integer 2 to return array of verbose module info for each matching module. - Integer 3 to return array of Module or ModulePlaceholder objects (whatever current state is). Added 3.0.146.
+- `$prefix` `string` Specify prefix, i.e. "Process", "Fieldtype", "Inputfield", etc.
+- `$load` (optional) `bool|int` Specify one of the following (all indexed by module name): - Boolean true to return array of instantiated modules. - Boolean false to return array of module names (default). - Integer 1 to return array of module info for each matching module. - Integer 2 to return array of verbose module info for each matching module. - Integer 3 to return array of Module or ModulePlaceholder objects (whatever current state is). Added 3.0.146.
 
 ## Return value
 

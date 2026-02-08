@@ -6,9 +6,9 @@ Instantiate an ImageSizerEngine
 
 ## Arguments
 
-- string $filename
-- array $options
-- null|array $inspectionResult
+- `$filename` (optional) `string`
+- `$options` (optional) `array`
+- `$inspectionResult` (optional) `null|array`
 
 ## Return value
 

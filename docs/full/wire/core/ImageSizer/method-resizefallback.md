@@ -9,8 +9,8 @@ or if an invoked Engine failes with the image manipulation.
 
 ## Arguments
 
-- mixed $targetWidth
-- mixed $targetHeight
+- `$targetWidth` `mixed`
+- `$targetHeight` (optional) `mixed`
 
 ## Return value
 

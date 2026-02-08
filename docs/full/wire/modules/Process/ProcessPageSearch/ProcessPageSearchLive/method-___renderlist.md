@@ -6,9 +6,9 @@ Render “view all” list
 
 ## Arguments
 
-- array $items
-- string $prefix For CSS classes, default is "pw-search"
-- string $class Class name for list, default is "list" which translates to "pw-search-list"
+- `$items` `array`
+- `$prefix` (optional) `string` For CSS classes, default is "pw-search"
+- `$class` (optional) `string` Class name for list, default is "list" which translates to "pw-search-list"
 
 ## Return value
 

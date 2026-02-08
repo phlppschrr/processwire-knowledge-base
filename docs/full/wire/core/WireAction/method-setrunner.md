@@ -9,4 +9,4 @@ it should throw a WireException if the given runner is not valid.
 
 ## Arguments
 
-- Wire $runner
+- `$runner` `Wire`

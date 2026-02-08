@@ -11,7 +11,7 @@ Return the markup value for a given field name or {tag} string
 
 ## Arguments
 
-- string $key Field name or markup string with field {name} tags in it
+- `$key` `string` Field name or markup string with field {name} tags in it
 
 ## Return value
 

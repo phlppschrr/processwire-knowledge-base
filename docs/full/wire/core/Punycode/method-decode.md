@@ -6,7 +6,7 @@ Decode a Punycode domain name to its Unicode counterpart
 
 ## Arguments
 
-- string $input Domain name in Punycode
+- `$input` `string` Domain name in Punycode
 
 ## Return value
 

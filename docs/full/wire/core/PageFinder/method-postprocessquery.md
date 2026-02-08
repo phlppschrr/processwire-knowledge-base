@@ -6,7 +6,7 @@ Post process a DatabaseQuerySelect for page finder
 
 ## Arguments
 
-- DatabaseQuerySelect $parentQuery
+- `$parentQuery` `DatabaseQuerySelect`
 
 ## Throws
 

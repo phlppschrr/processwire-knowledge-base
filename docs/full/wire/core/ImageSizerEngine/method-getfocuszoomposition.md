@@ -8,10 +8,10 @@ Intended for use by the getFocusZoomCropDimensions() method
 
 ## Arguments
 
-- string $focus (focus point in percent, like: 54.7%)
-- int $sourceDimension (source image width or height)
-- int $cropDimension (target crop-image width or height)
-- int $zoom
+- `$focus` `string` (focus point in percent, like: 54.7%)
+- `$sourceDimension` `int` (source image width or height)
+- `$cropDimension` `int` (target crop-image width or height)
+- `$zoom` `int`
 
 ## Return value
 

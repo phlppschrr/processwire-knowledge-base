@@ -12,6 +12,6 @@ Prune to number of bytes
 
 bool|int
 
-## Meta
+## Deprecated
 
-- @deprecated use pruneBytes() or pruneLines() instead
+use pruneBytes() or pruneLines() instead

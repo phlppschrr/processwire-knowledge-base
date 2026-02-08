@@ -13,7 +13,7 @@ Render a form input[hidden] containing the token name and value, as looked for b
 
 ## Arguments
 
-- int|string|null $id Optional unique ID for this token
+- `$id` (optional) `int|string|null` Optional unique ID for this token
 
 ## Return value
 

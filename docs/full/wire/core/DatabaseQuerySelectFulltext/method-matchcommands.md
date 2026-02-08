@@ -6,8 +6,8 @@ Match text using boolean mode commands (Advanced search)
 
 ## Arguments
 
-- string $text
+- `$text` `string`
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

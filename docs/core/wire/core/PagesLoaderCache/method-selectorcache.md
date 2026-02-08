@@ -6,9 +6,9 @@ Cache the given selector string and options with the given PageArray
 
 ## Arguments
 
-- string $selector
-- array $options
-- PageArray $pages
+- `$selector` `string`
+- `$options` `array`
+- `$pages` `PageArray`
 
 ## Return value
 

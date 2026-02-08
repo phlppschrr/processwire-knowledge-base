@@ -6,8 +6,8 @@ Get page number segment with given pageNum and and in given language name
 
 ## Arguments
 
-- int $pageNum
-- string $langName
+- `$pageNum` `int`
+- `$langName` (optional) `string`
 
 ## Return value
 

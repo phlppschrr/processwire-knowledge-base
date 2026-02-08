@@ -6,8 +6,8 @@ Record error message to image-errors log
 
 ## Arguments
 
-- string $text
-- int $flags
+- `$text` `string`
+- `$flags` (optional) `int`
 
 ## Return value
 

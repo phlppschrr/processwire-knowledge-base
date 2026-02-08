@@ -6,7 +6,7 @@ Set the filename that may be overwritten (i.e. myphoto.jpg) for single uploads o
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

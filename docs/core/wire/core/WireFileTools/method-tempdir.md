@@ -18,8 +18,8 @@ file_put_contents($path . 'some-file.txt', 'Hello world');
 
 ## Arguments
 
-- Object|string $name Any one of the following: (default='') - Omit this argument for auto-generated name, 3.0.178+ - Name/word that you specify using fieldName format, i.e. [_a-zA-Z0-9]. - Object instance that needs the temp dir.
-- array|int $options Deprecated argument. Call `WireTempDir` methods if you need more options.
+- `$name` (optional) `Object|string` Any one of the following: (default='') - Omit this argument for auto-generated name, 3.0.178+ - Name/word that you specify using fieldName format, i.e. [_a-zA-Z0-9]. - Object instance that needs the temp dir.
+- `$options` (optional) `array|int` Deprecated argument. Call `WireTempDir` methods if you need more options.
 
 ## Return value
 

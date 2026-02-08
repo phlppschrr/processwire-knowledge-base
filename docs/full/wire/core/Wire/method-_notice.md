@@ -6,10 +6,10 @@ Record a Notice, internal use (contains the code for message, warning and error 
 
 ## Arguments
 
-- string|array|Wire $text Title of notice
-- int|string $flags Flags bitmask or space separated string of flag names
-- string $name Name of container
-- string $class Name of Notice class
+- `$text` `string|array|Wire` Title of notice
+- `$flags` `int|string` Flags bitmask or space separated string of flag names
+- `$name` `string` Name of container
+- `$class` `string` Name of Notice class
 
 ## Return value
 

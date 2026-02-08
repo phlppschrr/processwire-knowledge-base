@@ -8,8 +8,8 @@ Used when to text strings might be the same in English, but different in other l
 
 ## Arguments
 
-- string|array $text Text for translation.
-- string $context Name of context
+- `$text` `string|array` Text for translation.
+- `$context` `string` Name of context
 
 ## Return value
 

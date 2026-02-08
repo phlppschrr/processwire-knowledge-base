@@ -5,4 +5,4 @@ Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
+- `$fieldgroup` `Fieldgroup`

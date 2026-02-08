@@ -6,7 +6,7 @@ Return total quantity of comments matching the selector
 
 ## Arguments
 
-- string|null $selectorString Selector string with query
+- `$selectorString` `string|null` Selector string with query
 
 ## Return value
 

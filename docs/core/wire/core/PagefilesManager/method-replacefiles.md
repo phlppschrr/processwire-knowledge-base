@@ -6,8 +6,8 @@ Replace all page’s files with those from given path
 
 ## Arguments
 
-- string $fromPath
-- bool $move Move files to destination rather than copy? (default=false)
+- `$fromPath` `string`
+- `$move` (optional) `bool` Move files to destination rather than copy? (default=false)
 
 ## Return value
 
@@ -17,6 +17,6 @@ int Number of files/directories copied.
 
 - WireException if given a path that does not exist.
 
-## Meta
+## Since
 
-- @since 3.0.114
+3.0.114

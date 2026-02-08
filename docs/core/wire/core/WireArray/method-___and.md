@@ -16,7 +16,7 @@ if($page->parents->and($page)->has($featured)) {
 
 ## Arguments
 
-- Wire|WireArray $item Item(s) to append
+- `$item` `Wire|WireArray` Item(s) to append
 
 ## Return value
 

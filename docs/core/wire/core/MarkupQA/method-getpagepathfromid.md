@@ -6,13 +6,13 @@ Given page ID return the path to it
 
 ## Arguments
 
-- int $pageID
-- Language|null $language
+- `$pageID` `int`
+- `$language` (optional) `Language|null`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.231
+3.0.231

@@ -6,7 +6,7 @@ Set this Template's Fieldgroup
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
+- `$fieldgroup` `Fieldgroup`
 
 ## Return value
 

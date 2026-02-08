@@ -8,8 +8,8 @@ To get ignored paths call function with no arguments. Otherwise you are setting 
 
 ## Arguments
 
-- array|string|null $paths Array of paths or string of one path, or CSV or newline separated string of multiple paths.
-- bool $replace True to replace all existing paths, or false to merge with existing paths (default=false)
+- `$paths` (optional) `array|string|null` Array of paths or string of one path, or CSV or newline separated string of multiple paths.
+- `$replace` (optional) `bool` True to replace all existing paths, or false to merge with existing paths (default=false)
 
 ## Return value
 

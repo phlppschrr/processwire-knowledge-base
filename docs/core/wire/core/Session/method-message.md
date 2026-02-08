@@ -6,8 +6,8 @@ Queue a message to appear on the next pageview
 
 ## Arguments
 
-- string $text Message to queue
-- int $flags Optional flags, See Notice::flags
+- `$text` `string` Message to queue
+- `$flags` (optional) `int` Optional flags, See Notice::flags
 
 ## Return value
 

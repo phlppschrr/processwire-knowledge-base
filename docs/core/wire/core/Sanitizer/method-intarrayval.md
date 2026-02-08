@@ -12,13 +12,13 @@ This is the same as the `intArray()` method except for the following:
 
 ## Arguments
 
-- array|string|mixed $value Accepts an array or CSV string. If given something else, it becomes first value in array.
-- array|bool $options Options to modify behavior or specify bool for `strict` option: - `min` (int): Minimum allowed value (default=0) - `max` (int): Maximum allowed value (default=PHP_INT_MAX) - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) Since 3.0.160 - `strict` (bool): Remove rather than convert any values that are not all digits or fall outside min/max range? (default=true) Note that this default for the strict option is different from the one on the intArray() method.
+- `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first value in array.
+- `$options` (optional) `array|bool` Options to modify behavior or specify bool for `strict` option: - `min` (int): Minimum allowed value (default=0) - `max` (int): Maximum allowed value (default=PHP_INT_MAX) - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) Since 3.0.160 - `strict` (bool): Remove rather than convert any values that are not all digits or fall outside min/max range? (default=true) Note that this default for the strict option is different from the one on the intArray() method.
 
 ## Return value
 
 array Array of integers
 
-## Meta
+## Since
 
-- @since 3.0.165
+3.0.165

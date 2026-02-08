@@ -6,8 +6,8 @@ Retrieve module info from internal getModuleInfo function in the class
 
 ## Arguments
 
-- Module|string $module
-- string $namespace
+- `$module` `Module|string`
+- `$namespace` (optional) `string`
 
 ## Return value
 

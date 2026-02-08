@@ -12,8 +12,8 @@ $clean = sanitizer('pageName', $dirty); // same as above
 
 ## Arguments
 
-- string $name Optionally enter a sanitizer function name
-- string $value If $name populated, enter the value to sanitize
+- `$name` (optional) `string` Optionally enter a sanitizer function name
+- `$value` (optional) `string` If $name populated, enter the value to sanitize
 
 ## Return value
 

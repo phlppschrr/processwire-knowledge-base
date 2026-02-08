@@ -6,9 +6,9 @@ Perform an alternate/fallback find when first fails to match and alternate opera
 
 ## Arguments
 
-- Selectors $selectors
-- array $options
-- array $matches
+- `$selectors` `Selectors`
+- `$options` `array`
+- `$matches` `array`
 
 ## Return value
 

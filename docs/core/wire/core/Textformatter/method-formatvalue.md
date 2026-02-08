@@ -8,6 +8,6 @@ Module developers may override this function completely when providing your own 
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string|mixed $value Value is provided as a reference, so is modified directly (not returned).
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|mixed` Value is provided as a reference, so is modified directly (not returned).

@@ -6,7 +6,7 @@ Returns a temporary directory (path)
 
 ## Arguments
 
-- string $id Optional identifier to use (default=autogenerate)
+- `$id` (optional) `string` Optional identifier to use (default=autogenerate)
 
 ## Return value
 

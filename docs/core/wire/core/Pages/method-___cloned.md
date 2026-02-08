@@ -6,5 +6,5 @@ Hook called when a page has been cloned
 
 ## Arguments
 
-- Page $page The original page to be cloned
-- Page $copy The completed cloned version of the page
+- `$page` `Page` The original page to be cloned
+- `$copy` `Page` The completed cloned version of the page

@@ -6,8 +6,8 @@ Per Fieldtype interface, return a blank value of this Fieldtype
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 

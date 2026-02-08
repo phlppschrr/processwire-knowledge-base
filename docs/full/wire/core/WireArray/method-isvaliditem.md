@@ -8,7 +8,7 @@ Template method that descending classes may use to validate items added to this 
 
 ## Arguments
 
-- mixed $item Item to test for validity
+- `$item` `mixed` Item to test for validity
 
 ## Return value
 

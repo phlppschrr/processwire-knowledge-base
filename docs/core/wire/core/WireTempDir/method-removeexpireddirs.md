@@ -8,7 +8,7 @@ Also removes $path if it's found that everything in it is expired.
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 - int Max age in seconds
 
 ## Return value

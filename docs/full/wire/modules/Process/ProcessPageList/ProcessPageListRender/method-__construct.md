@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- Page $page
-- PageArray $children
+- `$page` `Page`
+- `$children` `PageArray`

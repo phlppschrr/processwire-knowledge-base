@@ -20,8 +20,8 @@ $m->send();
 
 ## Arguments
 
-- string $value Full path and filename of file attachment
-- string $filename Optional different basename for file as it appears in the mail
+- `$value` `string` Full path and filename of file attachment
+- `$filename` (optional) `string` Optional different basename for file as it appears in the mail
 
 ## Return value
 

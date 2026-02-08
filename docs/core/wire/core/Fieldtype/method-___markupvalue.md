@@ -18,10 +18,10 @@ as Inputfields can have external CSS or JS dependencies.
 
 ## Arguments
 
-- Page $page Page that $value comes from
-- Field $field Field that $value comes from
-- mixed $value Optionally specify the value returned by `$page->getFormatted('field')`. When specified, value must be a formatted value. If null or not specified (recommended), it will be retrieved automatically.
-- string $property Optionally specify the property or index to render. If omitted, entire value is rendered.
+- `$page` `Page` Page that $value comes from
+- `$field` `Field` Field that $value comes from
+- `$value` (optional) `mixed` Optionally specify the value returned by `$page->getFormatted('field')`. When specified, value must be a formatted value. If null or not specified (recommended), it will be retrieved automatically.
+- `$property` (optional) `string` Optionally specify the property or index to render. If omitted, entire value is rendered.
 
 ## Return value
 

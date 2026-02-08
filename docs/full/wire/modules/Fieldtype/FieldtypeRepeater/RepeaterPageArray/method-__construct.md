@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- Page $parent
-- Field $field
+- `$parent` `Page`
+- `$field` `Field`

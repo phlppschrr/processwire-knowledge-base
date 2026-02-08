@@ -5,4 +5,4 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

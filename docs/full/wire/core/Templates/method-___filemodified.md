@@ -9,8 +9,8 @@ That’s because it would not be efficient for PW to check the file for every te
 
 ## Arguments
 
-- Template $template
+- `$template` `Template`
 
-## Meta
+## Since
 
-- @since 3.0.141
+3.0.141

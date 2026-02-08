@@ -12,8 +12,8 @@ Log a query, start/stop query logging, or return logged queries
 
 ## Arguments
 
-- string|bool $sql Query (string) to log, boolean true to reset/start query logging, boolean false to stop query logging
-- string $note Any additional debugging notes about the query
+- `$sql` (optional) `string|bool` Query (string) to log, boolean true to reset/start query logging, boolean false to stop query logging
+- `$note` (optional) `string` Any additional debugging notes about the query
 
 ## Return value
 

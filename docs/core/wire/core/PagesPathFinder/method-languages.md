@@ -6,7 +6,7 @@ Return Languages if installed w/languageSupportPageNames module or blank array i
 
 ## Arguments
 
-- bool $getArray Force return value as an array indexed by language name
+- `$getArray` (optional) `bool` Force return value as an array indexed by language name
 
 ## Return value
 

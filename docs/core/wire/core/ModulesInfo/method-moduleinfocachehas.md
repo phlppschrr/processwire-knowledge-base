@@ -6,7 +6,7 @@ Does the module info cache have an entry for given module ID?
 
 ## Arguments
 
-- int $moduleID
+- `$moduleID` `int`
 
 ## Return value
 

@@ -6,13 +6,13 @@ Get or set class(es)
 
 ## Arguments
 
-- string $name
-- string|null $value
+- `$name` `string`
+- `$value` (optional) `string|null`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

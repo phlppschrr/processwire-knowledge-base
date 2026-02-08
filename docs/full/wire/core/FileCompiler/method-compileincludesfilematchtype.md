@@ -6,8 +6,8 @@ Returns fileMatch type of 'var', 'file', 'func' or boolean false if not valid
 
 ## Arguments
 
-- string $fileMatch The $fileMatch var from compileIncludes() method
-- string $funcMatch include function name
+- `$fileMatch` `string` The $fileMatch var from compileIncludes() method
+- `$funcMatch` `string` include function name
 
 ## Return value
 

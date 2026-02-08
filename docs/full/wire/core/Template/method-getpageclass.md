@@ -9,12 +9,12 @@ If it is different, then it is at least a class that extends the one defined by 
 
 ## Arguments
 
-- bool $withNamespace Returned class includes namespace? (default=true)
+- `$withNamespace` (optional) `bool` Returned class includes namespace? (default=true)
 
 ## Return value
 
 string Returned page class includes namespace
 
-## Meta
+## Since
 
-- @since 3.0.152
+3.0.152

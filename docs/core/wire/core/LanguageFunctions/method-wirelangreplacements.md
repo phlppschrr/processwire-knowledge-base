@@ -62,12 +62,12 @@ wireLangReplacements([
 
 ## Arguments
 
-- array $values
+- `$values` `array`
 
 ## Return value
 
 array|string
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

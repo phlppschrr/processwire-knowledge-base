@@ -6,8 +6,8 @@ Merge two setting values into one that combines them
 
 ## Arguments
 
-- string|array|mixed $value
-- string|array|mixed $addValue
+- `$value` `string|array|mixed`
+- `$addValue` `string|array|mixed`
 
 ## Return value
 

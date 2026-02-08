@@ -8,13 +8,13 @@ If no setupName is provided then this method doesn’t do anything, but hooks to
 
 ## Arguments
 
-- Field $field Newly created field
-- string $setupName Setup name to apply
+- `$field` `Field` Newly created field
+- `$setupName` (optional) `string` Setup name to apply
 
 ## Return value
 
 bool True if setup was appled, false if not
 
-## Meta
+## Since
 
-- @since 3.0.213
+3.0.213

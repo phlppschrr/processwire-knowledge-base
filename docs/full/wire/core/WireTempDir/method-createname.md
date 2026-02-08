@@ -6,7 +6,7 @@ Create a randomized name for runtime temp dir
 
 ## Arguments
 
-- string $prefix Optional prefix for name
+- `$prefix` (optional) `string` Optional prefix for name
 
 ## Return value
 

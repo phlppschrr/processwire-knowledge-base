@@ -6,8 +6,8 @@ Set any email header
 
 ## Arguments
 
-- string $key
-- string $value
+- `$key` `string`
+- `$value` `string`
 
 ## Return value
 

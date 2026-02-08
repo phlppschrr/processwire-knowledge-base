@@ -6,9 +6,9 @@ Handler for the InputfieldPageTableAdd ajax action
 
 ## Arguments
 
-- Page $page
-- Field $field
-- Page $item
+- `$page` `Page`
+- `$field` `Field`
+- `$item` `Page`
 
 ## Return value
 

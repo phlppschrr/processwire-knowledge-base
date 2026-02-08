@@ -6,7 +6,7 @@ Return array of all field names referenced in all of the Selector objects here
 
 ## Arguments
 
-- bool $subfields Default is to allow "field.subfield" fields, or specify false to convert them to just "field".
+- `$subfields` (optional) `bool` Default is to allow "field.subfield" fields, or specify false to convert them to just "field".
 
 ## Return value
 

@@ -6,7 +6,7 @@ Does the given page have an untitled page name?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

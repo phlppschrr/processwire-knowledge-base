@@ -6,9 +6,9 @@ Find the position of the last occurrence of a substring in a string
 
 ## Arguments
 
-- string $haystack
-- string $needle
-- int $offset
+- `$haystack` `string`
+- `$needle` `string`
+- `$offset` (optional) `int`
 
 ## Return value
 

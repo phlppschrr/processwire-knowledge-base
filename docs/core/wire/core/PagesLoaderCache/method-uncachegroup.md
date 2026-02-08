@@ -6,13 +6,13 @@ Uncache pages that were cached with given group name
 
 ## Arguments
 
-- string $groupName
-- array $options
+- `$groupName` `string`
+- `$options` (optional) `array`
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.198
+3.0.198

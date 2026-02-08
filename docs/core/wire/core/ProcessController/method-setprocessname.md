@@ -10,4 +10,4 @@ If overridden, then make sure the name includes the prefix, and don't bother cal
 
 ## Arguments
 
-- string $processName
+- `$processName` `string`

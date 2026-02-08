@@ -24,7 +24,7 @@ $count = $items->count;
 
 ## Arguments
 
-- string $property Name of property to retrieve
+- `$property` `string` Name of property to retrieve
 
 ## Return value
 

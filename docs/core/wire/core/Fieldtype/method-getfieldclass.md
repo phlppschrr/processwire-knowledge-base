@@ -8,12 +8,12 @@ Return blank if default class (Field) should be used.
 
 ## Arguments
 
-- array $a Field data from DB (if needed)
+- `$a` (optional) `array` Field data from DB (if needed)
 
 ## Return value
 
 string Return class name or blank to use default Field class
 
-## Meta
+## Since
 
-- @since 3.0.146
+3.0.146

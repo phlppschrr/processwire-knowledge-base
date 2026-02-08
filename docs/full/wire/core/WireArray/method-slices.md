@@ -8,7 +8,7 @@ This is not destructive to the original WireArray as it returns new WireArray ob
 
 ## Arguments
 
-- int $qty Number of slices
+- `$qty` `int` Number of slices
 
 ## Return value
 

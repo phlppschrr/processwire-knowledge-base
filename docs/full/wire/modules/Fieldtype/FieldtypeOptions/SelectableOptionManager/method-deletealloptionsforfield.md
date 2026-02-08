@@ -6,7 +6,7 @@ Delete all options for given field
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

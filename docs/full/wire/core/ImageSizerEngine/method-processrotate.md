@@ -6,9 +6,9 @@ Process rotate of an image
 
 ## Arguments
 
-- string $srcFilename
-- string $dstFilename
-- int $degrees Clockwise degrees, i.e. 90, 180, 270, -90, -180, -270
+- `$srcFilename` `string`
+- `$dstFilename` `string`
+- `$degrees` `int` Clockwise degrees, i.e. 90, 180, 270, -90, -180, -270
 
 ## Return value
 

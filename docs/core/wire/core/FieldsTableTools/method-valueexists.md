@@ -6,9 +6,9 @@ Does given value exist anywhere in field table?
 
 ## Arguments
 
-- Field $field
-- string|int $value
-- string $col
+- `$field` `Field`
+- `$value` `string|int`
+- `$col` (optional) `string`
 
 ## Return value
 

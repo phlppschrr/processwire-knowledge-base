@@ -6,7 +6,7 @@ Given a string starting with an operator, return that operator, and remove it fr
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

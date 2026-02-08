@@ -33,13 +33,13 @@ colon in it (such as those used by Tailwind).
 
 ## Arguments
 
-- string $class Formatted class string to parse class types and names from
-- string $property Default/fallback element/property if not indicated in string
+- `$class` `string` Formatted class string to parse class types and names from
+- `$property` (optional) `string` Default/fallback element/property if not indicated in string
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.204
+3.0.204

@@ -8,8 +8,8 @@ If name is blank, then just the email will be returned
 
 ## Arguments
 
-- string $email
-- string $name
+- `$email` `string`
+- `$name` `string`
 
 ## Return value
 

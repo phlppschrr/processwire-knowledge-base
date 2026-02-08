@@ -6,6 +6,6 @@ Render an error message and reason why
 
 ## Arguments
 
-- string $message
-- string $why
-- bool $useHTML
+- `$message` `string`
+- `$why` `string`
+- `$useHTML` `bool`

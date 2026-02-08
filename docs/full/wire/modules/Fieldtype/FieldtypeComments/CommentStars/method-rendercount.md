@@ -6,9 +6,9 @@ Render a count of ratings
 
 ## Arguments
 
-- int $count
-- float|int $stars
-- string $schema May be "rdfa" or "microdata" or blank (default) to omit.
+- `$count` `int`
+- `$stars` (optional) `float|int`
+- `$schema` (optional) `string` May be "rdfa" or "microdata" or blank (default) to omit.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Is the given page property/field name one that should be linked to the source pa
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 - $property
 
 ## Return value

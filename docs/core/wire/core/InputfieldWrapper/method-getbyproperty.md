@@ -6,14 +6,14 @@ Get Inputfield by some other non-attribute property or setting
 
 ## Arguments
 
-- string $property
-- mixed $value
-- bool $getAll Get array of all matching Inputfields rather than just first? (default=false)
+- `$property` `string`
+- `$value` `mixed`
+- `$getAll` (optional) `bool` Get array of all matching Inputfields rather than just first? (default=false)
 
 ## Return value
 
 Inputfield|InputfieldWrapper|null|array
 
-## Meta
+## Since
 
-- @since 3.0.239
+3.0.239

@@ -6,10 +6,10 @@ Called when the user config fieldset has been processed but before $settings hav
 
 ## Arguments
 
-- User $user
-- InputfieldWrapper $fieldset
-- array $settings Associative array of new/current settings after processing
-- array $settingsPrev Associative array of previous settings
+- `$user` `User`
+- `$fieldset` `InputfieldWrapper`
+- `$settings` `array` Associative array of new/current settings after processing
+- `$settingsPrev` `array` Associative array of previous settings
 
 ## Return value
 

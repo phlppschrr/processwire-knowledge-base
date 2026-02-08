@@ -6,7 +6,7 @@ Execute live search and return JSON result
 
 ## Arguments
 
-- bool $getJSON Get results as JSON string? Specify false to get array instead.
+- `$getJSON` (optional) `bool` Get results as JSON string? Specify false to get array instead.
 
 ## Return value
 

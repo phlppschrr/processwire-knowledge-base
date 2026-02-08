@@ -19,8 +19,8 @@ just the “.module” extension is not supported for preload modules.
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

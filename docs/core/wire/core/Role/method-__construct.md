@@ -6,4 +6,4 @@ Create a new Role page in memory.
 
 ## Arguments
 
-- Template|null $tpl
+- `$tpl` (optional) `Template|null`

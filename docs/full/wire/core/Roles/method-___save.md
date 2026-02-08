@@ -6,7 +6,7 @@ Save a Role
 
 ## Arguments
 
-- Role|Page $page
+- `$page` `Role|Page`
 
 ## Return value
 

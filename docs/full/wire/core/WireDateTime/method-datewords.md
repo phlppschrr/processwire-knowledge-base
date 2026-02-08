@@ -6,7 +6,7 @@ Get translated month/day words indexed by English words
 
 ## Arguments
 
-- string $key One of: monthNames, monthAbbrs, dayNames, dayAbbrs, meridiums
+- `$key` `string` One of: monthNames, monthAbbrs, dayNames, dayAbbrs, meridiums
 
 ## Return value
 

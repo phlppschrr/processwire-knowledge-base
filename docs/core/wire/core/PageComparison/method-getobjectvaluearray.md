@@ -9,8 +9,8 @@ that resolves to another object.
 
 ## Arguments
 
-- Wire|object $object
-- string $property Optional property to pull from object (may also be property.subproperty, and so on)
+- `$object` `Wire|object`
+- `$property` (optional) `string` Optional property to pull from object (may also be property.subproperty, and so on)
 
 ## Return value
 

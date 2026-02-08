@@ -6,9 +6,9 @@ Send to a URL using HEAD and return the status code and text like "200 OK"
 
 ## Arguments
 
-- string $url URL to request (including http:// or https://)
-- mixed $data Array of data to send (if not already set before) or raw data
-- array $options Optional options to modify default behavior, see the send() method for details.
+- `$url` `string` URL to request (including http:// or https://)
+- `$data` (optional) `mixed` Array of data to send (if not already set before) or raw data
+- `$options` (optional) `array` Optional options to modify default behavior, see the send() method for details.
 
 ## Return value
 

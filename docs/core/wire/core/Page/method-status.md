@@ -29,8 +29,8 @@ $page->status(['hidden', 'unpublished']);
 
 ## Arguments
 
-- bool|int $value Optionally specify one of the following: - `true` (boolean): To return an array of status names (indexed by status number). - `integer|string|array`: Status number(s) or status name(s) to set the current page status (same as $page->status = $value)
-- int|null $status If you specified `true` for first argument, optionally specify status value you want to use (if not the current).
+- `$value` (optional) `bool|int` Optionally specify one of the following: - `true` (boolean): To return an array of status names (indexed by status number). - `integer|string|array`: Status number(s) or status name(s) to set the current page status (same as $page->status = $value)
+- `$status` (optional) `int|null` If you specified `true` for first argument, optionally specify status value you want to use (if not the current).
 
 ## Return value
 

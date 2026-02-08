@@ -6,7 +6,7 @@ Get an array of available Page actions, indexed by $label => $url
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

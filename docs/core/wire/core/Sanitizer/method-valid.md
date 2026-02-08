@@ -12,14 +12,14 @@ if($sanitizer->valid('abc123', 'alphanumeric')) {
 
 ## Arguments
 
-- string|int|array|float $value Value to check if valid
-- string $method Method name or CSV method names
-- bool $strict When true, sanitized value must be identical in type to the one given
+- `$value` `string|int|array|float` Value to check if valid
+- `$method` (optional) `string` Method name or CSV method names
+- `$strict` (optional) `bool` When true, sanitized value must be identical in type to the one given
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

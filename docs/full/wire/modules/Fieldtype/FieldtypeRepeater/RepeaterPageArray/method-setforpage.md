@@ -6,8 +6,8 @@ Set page this RepeaterPageArray is for
 
 ## Arguments
 
-- Page $forPage
+- `$forPage` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

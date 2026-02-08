@@ -11,7 +11,7 @@ Get the requested page
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

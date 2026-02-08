@@ -6,4 +6,4 @@ Match LIKE phrase
 
 ## Arguments
 
-- string $value
+- `$value` `string`

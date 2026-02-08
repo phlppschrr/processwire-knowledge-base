@@ -8,6 +8,6 @@ Get current database charset (lowercase)
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

@@ -6,7 +6,7 @@ Compile a section of markup
 
 ## Arguments
 
-- string $data
+- `$data` `string`
 
 ## Return value
 

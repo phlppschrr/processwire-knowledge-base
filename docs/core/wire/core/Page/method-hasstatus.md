@@ -23,7 +23,7 @@ if($page->isLocked()) { ... }
 
 ## Arguments
 
-- int|string $status Status flag constant or string representation (hidden, locked, unpublished, etc.)
+- `$status` `int|string` Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
 ## Return value
 

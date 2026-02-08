@@ -9,8 +9,8 @@ custom tags for internal use (@horst)
 
 ## Arguments
 
-- string $filename the file we want write the IPTC data to
-- bool $includeCustomTags default is FALSE
+- `$filename` `string` the file we want write the IPTC data to
+- `$includeCustomTags` (optional) `bool` default is FALSE
 
 ## Return value
 

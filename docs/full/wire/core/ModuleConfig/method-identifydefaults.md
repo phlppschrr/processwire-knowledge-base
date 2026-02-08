@@ -9,7 +9,7 @@ and inputfields use an array definition.
 
 ## Arguments
 
-- array $a
+- `$a` `array`
 
 ## Return value
 

@@ -13,7 +13,7 @@ Unlike PHP’s shuffle() function, this method:
 
 ## Arguments
 
-- string|array $value
+- `$value` `string|array`
 
 ## Return value
 

@@ -8,6 +8,6 @@ Get instance of WireTextTools
 
 WireTextTools
 
-## Meta
+## Since
 
-- @since 3.0.101
+3.0.101

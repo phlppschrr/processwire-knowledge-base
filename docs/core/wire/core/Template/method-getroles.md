@@ -12,7 +12,7 @@ Get the role pages that are part of this template
 
 ## Arguments
 
-- string $type Default is 'view', but you may also specify 'edit', 'create' or 'add' to retrieve those.
+- `$type` (optional) `string` Default is 'view', but you may also specify 'edit', 'create' or 'add' to retrieve those.
 
 ## Return value
 

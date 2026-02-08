@@ -6,7 +6,7 @@ Make a string uppercase
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

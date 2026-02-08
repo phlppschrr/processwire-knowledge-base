@@ -7,6 +7,6 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 Field
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

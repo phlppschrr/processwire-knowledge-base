@@ -6,7 +6,7 @@ Remove the given flag name(s) (shortcut for setFlag)
 
 ## Arguments
 
-- string $name One or more space-separated flag names
+- `$name` `string` One or more space-separated flag names
 
 ## Return value
 

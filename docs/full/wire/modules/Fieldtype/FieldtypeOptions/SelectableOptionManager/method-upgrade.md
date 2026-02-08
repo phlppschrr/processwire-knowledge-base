@@ -6,8 +6,8 @@ Upgrade fieldtype_options table
 
 ## Arguments
 
-- string $fromVersion
-- string $toVersion
+- `$fromVersion` `string`
+- `$toVersion` `string`
 
 ## Throws
 

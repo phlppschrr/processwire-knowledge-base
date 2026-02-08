@@ -8,9 +8,9 @@ In this case, make sure that it's a WireArray (able to hold multiple values)
 
 ## Arguments
 
-- Page $page
-- Field $field
-- mixed $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `mixed`
 
 ## Return value
 

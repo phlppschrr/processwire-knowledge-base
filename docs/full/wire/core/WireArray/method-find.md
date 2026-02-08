@@ -18,7 +18,7 @@ if($matches->count()) {
 
 ## Arguments
 
-- string|array|Selectors $selector
+- `$selector` `string|array|Selectors`
 
 ## Return value
 

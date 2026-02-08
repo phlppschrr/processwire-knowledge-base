@@ -11,7 +11,7 @@ Populates the following indexes in the returned array:
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

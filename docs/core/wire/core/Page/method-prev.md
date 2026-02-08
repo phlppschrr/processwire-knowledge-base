@@ -14,8 +14,8 @@ $sibling = $page->prev("featured=1");
 
 ## Arguments
 
-- string|array $selector Optional selector. When specified, will find nearest previous sibling that matches.
-- PageArray|null $siblings Optional siblings to use instead of the default.
+- `$selector` (optional) `string|array` Optional selector. When specified, will find nearest previous sibling that matches.
+- `$siblings` (optional) `PageArray|null` Optional siblings to use instead of the default.
 
 ## Return value
 

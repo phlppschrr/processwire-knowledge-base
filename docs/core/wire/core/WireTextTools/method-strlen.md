@@ -6,7 +6,7 @@ Get string length
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

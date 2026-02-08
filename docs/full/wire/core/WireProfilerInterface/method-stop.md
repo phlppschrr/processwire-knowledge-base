@@ -6,7 +6,7 @@ Stop profiling an event
 
 ## Arguments
 
-- array|object|string $event Event returned by start()
+- `$event` `array|object|string` Event returned by start()
 
 ## Return value
 

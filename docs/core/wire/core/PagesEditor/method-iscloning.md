@@ -6,7 +6,7 @@ Are we currently in a page clone?
 
 ## Arguments
 
-- bool $getDepth Get depth (int) rather than state (bool)?
+- `$getDepth` (optional) `bool` Get depth (int) rather than state (bool)?
 
 ## Return value
 

@@ -6,13 +6,13 @@ Get lines from the end of a file based on chunk size (deprecated)
 
 ## Arguments
 
-- int $chunkSize
-- int $chunkNum
+- `$chunkSize` (optional) `int`
+- `$chunkNum` (optional) `int`
 
 ## Return value
 
 array
 
-## Meta
+## Deprecated
 
-- @deprecated Use find() instead
+Use find() instead

@@ -6,7 +6,7 @@ Delete all versions across all pages
 
 ## Arguments
 
-- bool $areYouSure Specify true to indicate you are sure you want to do this
+- `$areYouSure` (optional) `bool` Specify true to indicate you are sure you want to do this
 
 ## Return value
 

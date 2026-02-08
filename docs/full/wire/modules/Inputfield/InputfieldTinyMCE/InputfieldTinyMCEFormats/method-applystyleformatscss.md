@@ -8,6 +8,6 @@ Easier-to-use alternative to the importcss plugin
 
 ## Arguments
 
-- string $css From the styleFormatsCSS setting
-- array $settings
-- array $defaults
+- `$css` `string` From the styleFormatsCSS setting
+- `$settings` `array`
+- `$defaults` `array`

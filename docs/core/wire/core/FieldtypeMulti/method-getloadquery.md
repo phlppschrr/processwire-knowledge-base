@@ -6,8 +6,8 @@ Return the query used for loading all parts of the data from this field.
 
 ## Arguments
 
-- Field $field
-- DatabaseQuerySelect $query
+- `$field` `Field`
+- `$query` `DatabaseQuerySelect`
 
 ## Return value
 

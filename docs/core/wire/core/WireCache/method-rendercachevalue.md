@@ -13,14 +13,14 @@ the output buffer will be used as the cache value.
 
 ## Arguments
 
-- string $name
-- int|string|null $expire
-- callable $func
+- `$name` `string`
+- `$expire` `int|string|null`
+- `$func` `callable`
 
 ## Return value
 
 bool|string
 
-## Meta
+## Since
 
-- @since 2.5.28
+2.5.28

@@ -6,4 +6,4 @@ Hook called when a page has been moved to the trash
 
 ## Arguments
 
-- Page $page Page that was moved to the trash
+- `$page` `Page` Page that was moved to the trash

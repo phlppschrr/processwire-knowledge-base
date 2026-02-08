@@ -6,7 +6,7 @@ Get the formatted value of a field, regardless of output formatting state
 
 ## Arguments
 
-- string $key Field or property name to retrieve
+- `$key` `string` Field or property name to retrieve
 
 ## Return value
 

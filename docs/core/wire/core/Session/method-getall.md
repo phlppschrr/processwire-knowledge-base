@@ -6,7 +6,7 @@ Get all session variables in an associative array
 
 ## Arguments
 
-- object|string $ns Optional namespace
+- `$ns` (optional) `object|string` Optional namespace
 
 ## Return value
 

@@ -6,7 +6,7 @@ Get classes to use with comment list
 
 ## Arguments
 
-- int $parent_id
+- `$parent_id` `int`
 
 ## Return value
 

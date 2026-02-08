@@ -6,8 +6,8 @@ Apply custom file/path replacements
 
 ## Arguments
 
-- string $file
-- string $requireExtension Extension to require on given file
+- `$file` `string`
+- `$requireExtension` (optional) `string` Extension to require on given file
 
 ## Return value
 

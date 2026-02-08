@@ -10,6 +10,6 @@ This is identical to and an alias of the getParents() method.
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.110
+3.0.110

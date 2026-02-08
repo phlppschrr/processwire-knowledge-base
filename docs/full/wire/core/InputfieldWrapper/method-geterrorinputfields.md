@@ -8,6 +8,6 @@ Get Inputfield objects that have errors
 
 array|Inputfield[] Array of Inputfield objects indexed by Inputfield name attribute
 
-## Meta
+## Since
 
-- @since 3.0.205
+3.0.205

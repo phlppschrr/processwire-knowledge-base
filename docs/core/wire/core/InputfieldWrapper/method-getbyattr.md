@@ -8,13 +8,13 @@ This traverses all children recursively to find the requested Inputfield.
 
 ## Arguments
 
-- string $attrName Attribute to match, such as 'id', 'name', 'value', etc.
-- string $attrValue Attribute value to match
+- `$attrName` `string` Attribute to match, such as 'id', 'name', 'value', etc.
+- `$attrValue` `string` Attribute value to match
 
 ## Return value
 
 Inputfield|InputfieldWrapper|null
 
-## Meta
+## Since
 
-- @since 3.0.196
+3.0.196

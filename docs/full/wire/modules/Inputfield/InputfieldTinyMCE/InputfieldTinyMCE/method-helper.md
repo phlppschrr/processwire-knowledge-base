@@ -6,7 +6,7 @@ Get helper
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

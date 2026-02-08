@@ -11,8 +11,8 @@ also lets you optionally specify an input format should the given date string no
 
 ## Arguments
 
-- string $str Date/time string
-- array|int $options Options to modify behavior, or specify int for the `baseTimestamp` option, or string for `inputFormat` option. - `emptyReturnValue` (int|null|false): Value to return for empty or zero-only date strings (default=null) - `baseTimestamp` (int|null): The timestamp which is used as a base for the calculation of relative dates. - `inputFormat` (string): Optional date format that given $str is in, if not strtotime() compatible. (3.0.238+) - `outputFormat` (string): Optionally return value in this date format rather than unix timestamp (3.0.238+)
+- `$str` `string` Date/time string
+- `$options` (optional) `array|int` Options to modify behavior, or specify int for the `baseTimestamp` option, or string for `inputFormat` option. - `emptyReturnValue` (int|null|false): Value to return for empty or zero-only date strings (default=null) - `baseTimestamp` (int|null): The timestamp which is used as a base for the calculation of relative dates. - `inputFormat` (string): Optional date format that given $str is in, if not strtotime() compatible. (3.0.238+) - `outputFormat` (string): Optionally return value in this date format rather than unix timestamp (3.0.238+)
 
 ## Return value
 
@@ -22,6 +22,6 @@ false|int|null
 
 - [https://www.php.net/manual/en/function.strtotime.php](https://www.php.net/manual/en/function.strtotime.php)
 
-## Meta
+## Since
 
-- @since 3.0.178
+3.0.178

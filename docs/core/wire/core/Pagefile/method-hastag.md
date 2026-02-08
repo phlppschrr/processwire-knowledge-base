@@ -25,7 +25,7 @@ if($file->hasTag("foo,baz")) {
 
 ## Arguments
 
-- string $tag Specify one of the following: - Single tag without whitespace. - Multiple tags separated by a "|" to determine if Pagefile has at least one of the tags. - Multiple tags separated by a comma to determine if Pagefile has all of the tags. (since 3.0.17)
+- `$tag` `string` Specify one of the following: - Single tag without whitespace. - Multiple tags separated by a "|" to determine if Pagefile has at least one of the tags. - Multiple tags separated by a comma to determine if Pagefile has all of the tags. (since 3.0.17)
 
 ## Return value
 

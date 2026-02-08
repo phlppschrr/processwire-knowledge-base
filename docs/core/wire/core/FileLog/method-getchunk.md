@@ -9,10 +9,10 @@ ending to contain only full log lines.
 
 ## Arguments
 
-- int $chunkNum Current chunk/pagination number (default=1, first)
-- int $chunkSize Number of bytes to retrieve (default=0, which assigns default chunk size of 12288)
-- bool $reverse True=pull from end of file, false=pull from beginning (default=true)
-- bool $clean Get a clean chunk that starts at the beginning of a line? (default=true)
+- `$chunkNum` (optional) `int` Current chunk/pagination number (default=1, first)
+- `$chunkSize` (optional) `int` Number of bytes to retrieve (default=0, which assigns default chunk size of 12288)
+- `$reverse` (optional) `bool` True=pull from end of file, false=pull from beginning (default=true)
+- `$clean` (optional) `bool` Get a clean chunk that starts at the beginning of a line? (default=true)
 
 ## Return value
 

@@ -6,7 +6,7 @@ Get or set formatted state
 
 ## Arguments
 
-- bool|null $set
+- `$set` (optional) `bool|null`
 
 ## Return value
 

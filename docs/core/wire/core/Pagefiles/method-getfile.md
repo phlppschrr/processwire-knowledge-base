@@ -6,7 +6,7 @@ Get the Pagefile having the given basename, or null if not found.
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

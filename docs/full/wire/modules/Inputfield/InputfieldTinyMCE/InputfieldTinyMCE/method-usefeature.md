@@ -6,7 +6,7 @@ Use the named feature?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

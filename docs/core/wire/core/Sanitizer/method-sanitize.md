@@ -18,13 +18,13 @@ $value = $sanitizer->sanitize($value, 'text128,entities');
 
 ## Arguments
 
-- mixed $value
-- string $method Method name "method", or combined method name(s) "method1,method2,method3"
+- `$value` `mixed`
+- `$method` (optional) `string` Method name "method", or combined method name(s) "method1,method2,method3"
 
 ## Return value
 
 string|int|array|float|null
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

@@ -6,7 +6,7 @@ Return array of advanced search commands from given value
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

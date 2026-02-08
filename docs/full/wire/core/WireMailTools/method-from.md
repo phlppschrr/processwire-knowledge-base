@@ -6,13 +6,13 @@ Return new WireMail instance populated with “from” email
 
 ## Arguments
 
-- string $email Must be a single email address or "User Name <user@example.com>" string.
+- `$email` `string` Must be a single email address or "User Name <user@example.com>" string.
 - string|null An optional FROM name
 
 ## Return value
 
 WireMail
 
-## Meta
+## Since
 
-- @since 3.0.113
+3.0.113

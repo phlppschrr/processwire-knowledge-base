@@ -6,7 +6,7 @@ Return ALL translations for the given textdomain
 
 ## Arguments
 
-- string|object $textdomain Textdomain string, filename, or object.
+- `$textdomain` `string|object` Textdomain string, filename, or object.
 
 ## Return value
 

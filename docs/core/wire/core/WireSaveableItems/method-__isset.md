@@ -6,7 +6,7 @@ Isset
 
 ## Arguments
 
-- string|int $key
+- `$key` `string|int`
 
 ## Return value
 

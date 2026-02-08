@@ -6,7 +6,7 @@ Add a ProcessWire instance and return the instance ID
 
 ## Arguments
 
-- ProcessWire $wire
+- `$wire` `ProcessWire`
 
 ## Return value
 

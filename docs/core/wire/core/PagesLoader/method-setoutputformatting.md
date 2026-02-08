@@ -8,4 +8,4 @@ By default, it is turned on.
 
 ## Arguments
 
-- bool $outputFormatting
+- `$outputFormatting` (optional) `bool`

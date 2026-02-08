@@ -9,7 +9,7 @@ You may also use status names: hidden, locked, unpublished, system, systemID
 
 ## Arguments
 
-- int|string|Selectors $status Status number, status name, or Template name or selector string/object
+- `$status` `int|string|Selectors` Status number, status name, or Template name or selector string/object
 
 ## Return value
 

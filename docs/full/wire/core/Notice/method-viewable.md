@@ -8,6 +8,6 @@ Is this notice viewable at runtime?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

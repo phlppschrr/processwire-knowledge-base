@@ -25,9 +25,9 @@ if($exists) {
 
 ## Arguments
 
-- string $table Specify table name (or table and column name in format "table.column").
-- string $column Specify column name (or omit or blank string if already specified in $table argument).
-- bool $getInfo Return array of column info (with type info, etc.) rather than true when exists? (default=false) Note that the returned array is raw MySQL values from a SHOW COLUMNS command.
+- `$table` `string` Specify table name (or table and column name in format "table.column").
+- `$column` (optional) `string` Specify column name (or omit or blank string if already specified in $table argument).
+- `$getInfo` (optional) `bool` Return array of column info (with type info, etc.) rather than true when exists? (default=false) Note that the returned array is raw MySQL values from a SHOW COLUMNS command.
 
 ## Return value
 
@@ -37,6 +37,6 @@ bool|array
 
 - WireDatabaseException
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

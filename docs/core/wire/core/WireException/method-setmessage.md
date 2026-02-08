@@ -8,8 +8,8 @@ Public since 3.0.248
 
 ## Arguments
 
-- string $message
+- `$message` `string`
 
-## Meta
+## Since
 
-- @since 3.0.150
+3.0.150

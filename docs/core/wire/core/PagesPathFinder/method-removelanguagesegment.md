@@ -6,7 +6,7 @@ Remove any language segments present on given path
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

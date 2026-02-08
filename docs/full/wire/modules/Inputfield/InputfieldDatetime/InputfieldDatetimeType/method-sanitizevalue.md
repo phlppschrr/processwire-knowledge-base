@@ -6,7 +6,7 @@ Sanitize value to unix timestamp integer or blank string (to represent no value)
 
 ## Arguments
 
-- string|int $value
+- `$value` `string|int`
 
 ## Return value
 

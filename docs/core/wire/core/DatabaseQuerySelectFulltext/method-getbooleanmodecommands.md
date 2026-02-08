@@ -6,7 +6,7 @@ Get boolean query value where "+" and "-" and "*" and '"' are allowed in query t
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

@@ -16,9 +16,9 @@ are no entities possible in returned value.
 
 ## Arguments
 
-- string $str String to remove entities from
-- int|bool $flags See PHP html_entity_decode function for flags, OR specify boolean true to convert all entities and remove any that cannot be converted (since 3.0.105).
-- string $encoding Encoding (default="UTF-8").
+- `$str` `string` String to remove entities from
+- `$flags` (optional) `int|bool` See PHP html_entity_decode function for flags, OR specify boolean true to convert all entities and remove any that cannot be converted (since 3.0.105).
+- `$encoding` (optional) `string` Encoding (default="UTF-8").
 
 ## Return value
 

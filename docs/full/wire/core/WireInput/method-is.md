@@ -15,12 +15,12 @@ $isPost = $input->requestMethod('post');
 
 ## Arguments
 
-- string $method Specify one of: post, get, head, put, delete, options, patch (not case sensitive)
+- `$method` `string` Specify one of: post, get, head, put, delete, options, patch (not case sensitive)
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.145
+3.0.145

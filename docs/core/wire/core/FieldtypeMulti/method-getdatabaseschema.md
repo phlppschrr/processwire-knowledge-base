@@ -6,7 +6,7 @@ Modify the default schema provided by Fieldtype to include a 'sort' field, and i
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

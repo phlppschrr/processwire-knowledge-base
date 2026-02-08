@@ -6,8 +6,8 @@ Return new instance of the Inputfield module associated with this Fieldtype.
 
 ## Arguments
 
-- Page $page Page that the Inputfield will be for
-- Field $field Field that the Inputfield will be for
+- `$page` `Page` Page that the Inputfield will be for
+- `$field` `Field` Field that the Inputfield will be for
 
 ## Return value
 

@@ -9,5 +9,5 @@ with mode = false it set it back to the originating gamma value
 
 ## Arguments
 
-- resource $image
-- bool $mode
+- `$image` `resource`
+- `$mode` `bool`

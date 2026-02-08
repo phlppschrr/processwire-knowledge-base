@@ -6,4 +6,4 @@ Unload the given textdomain string from memory
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`

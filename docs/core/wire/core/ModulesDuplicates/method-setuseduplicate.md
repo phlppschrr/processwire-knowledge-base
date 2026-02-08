@@ -6,8 +6,8 @@ For a module that has duplicates, tell it which file to use
 
 ## Arguments
 
-- string $className
-- string $pathname Full path and filename to module file
+- `$className` `string`
+- `$pathname` `string` Full path and filename to module file
 
 ## Throws
 

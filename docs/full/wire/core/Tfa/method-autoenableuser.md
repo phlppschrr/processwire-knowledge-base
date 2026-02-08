@@ -11,13 +11,13 @@ This method throws WireException for all error conditions, so you may want to ca
 
 ## Arguments
 
-- User $user User to auto-enable this Tfa module for.
-- array $settings This argument can be omitted in public API usage, but should be specified by Tfa modules in parent::autoEnableForUser() call, containing any needed settings.
+- `$user` `User` User to auto-enable this Tfa module for.
+- `$settings` (optional) `array` This argument can be omitted in public API usage, but should be specified by Tfa modules in parent::autoEnableForUser() call, containing any needed settings.
 
 ## Throws
 
 - WireException on all error conditions
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

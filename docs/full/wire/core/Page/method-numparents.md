@@ -9,7 +9,7 @@ number increases the deeper the page is in the pages structure.
 
 ## Arguments
 
-- string $selector Optional selector to filter by (default='')
+- `$selector` (optional) `string` Optional selector to filter by (default='')
 
 ## Return value
 

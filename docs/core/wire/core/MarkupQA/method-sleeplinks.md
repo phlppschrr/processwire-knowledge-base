@@ -9,4 +9,4 @@ relative to "/" rather than potential "/subdir/".
 
 ## Arguments
 
-- string $value
+- `$value` `string`

@@ -6,7 +6,7 @@ ImageInformation from Image Inspector in short form or full RawInfoData
 
 ## Arguments
 
-- bool $rawData
+- `$rawData` (optional) `bool`
 
 ## Return value
 

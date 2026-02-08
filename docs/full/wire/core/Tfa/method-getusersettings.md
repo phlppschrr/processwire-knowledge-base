@@ -6,7 +6,7 @@ Get TFA data for given user from user_tfa field
 
 ## Arguments
 
-- User $user
+- `$user` `User`
 
 ## Return value
 

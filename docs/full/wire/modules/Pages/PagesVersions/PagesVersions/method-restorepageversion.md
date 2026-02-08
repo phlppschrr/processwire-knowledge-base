@@ -20,9 +20,9 @@ $pagesVersions->restore($pageV2);
 
 ## Arguments
 
-- Page $page Page to restore version to or a page that was loaded as a version.
-- int $version Version number to restore. Can be omitted if given $page is already a version.
-- array $options - `names` (array): Names of fields/properties to restore or omit for all (default=[]) - `useTempVersion` (bool): Create a temporary version and restore from that? (default=auto-detect). This is necessary for some Fieldtypes like nested repeaters. Use of it is auto-detected so it is not necessary to specify this when using the public API.
+- `$page` `Page` Page to restore version to or a page that was loaded as a version.
+- `$version` (optional) `int` Version number to restore. Can be omitted if given $page is already a version.
+- `$options` (optional) `array` - `names` (array): Names of fields/properties to restore or omit for all (default=[]) - `useTempVersion` (bool): Create a temporary version and restore from that? (default=auto-detect). This is necessary for some Fieldtypes like nested repeaters. Use of it is auto-detected so it is not necessary to specify this when using the public API.
 
 ## Return value
 

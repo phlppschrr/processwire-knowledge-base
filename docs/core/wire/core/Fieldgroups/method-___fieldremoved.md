@@ -6,9 +6,9 @@ Hook called when field has been removed from fieldgroup
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
-- Field $field
+- `$fieldgroup` `Fieldgroup`
+- `$field` `Field`
 
-## Meta
+## Since
 
-- @since 3.0.193
+3.0.193

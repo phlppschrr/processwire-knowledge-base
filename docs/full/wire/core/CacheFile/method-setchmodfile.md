@@ -6,8 +6,8 @@ Set the octal mode for files created by CacheFile
 
 ## Arguments
 
-- string $mode
+- `$mode` `string`
 
-## Meta
+## Deprecated
 
-- @deprecated No longer used
+No longer used

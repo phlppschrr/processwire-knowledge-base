@@ -6,13 +6,13 @@ Sanitize to an ASCII-only HTML attribute name
 
 ## Arguments
 
-- string $value
-- int $maxLength
+- `$value` `string`
+- `$maxLength` (optional) `int`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.133
+3.0.133

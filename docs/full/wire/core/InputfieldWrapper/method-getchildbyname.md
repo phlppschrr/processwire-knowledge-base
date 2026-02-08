@@ -12,7 +12,7 @@ properties or API variables.
 
 ## Arguments
 
-- string $name Name of Inputfield
+- `$name` `string` Name of Inputfield
 
 ## Return value
 

@@ -42,8 +42,8 @@ $languages->setLocale(null, 'LC_CTYPE=en_US;LC_NUMERIC=de_DE;LC_TIME=es_ES');
 
 ## Arguments
 
-- int|string|array|null|Language $category Specify a PHP “LC_” constant (int) or omit (or null) for default (LC_ALL).
-- int|string|array|null|Language $locale Specify string, array or CSV string of locale name(s), omit (null) for current language locale, or specify Language object to pull locale from that language.
+- `$category` (optional) `int|string|array|null|Language` Specify a PHP “LC_” constant (int) or omit (or null) for default (LC_ALL).
+- `$locale` (optional) `int|string|array|null|Language` Specify string, array or CSV string of locale name(s), omit (null) for current language locale, or specify Language object to pull locale from that language.
 
 ## Return value
 

@@ -6,10 +6,10 @@ Is the given page in a state where it can be saved from the API?
 
 ## Arguments
 
-- Page $page
-- string $reason Text containing the reason why it can't be saved (assuming it's not saveable)
-- string|Field $fieldName Optional fieldname to limit check to.
-- array $options Options array given to the original save method (optional)
+- `$page` `Page`
+- `$reason` `string` Text containing the reason why it can't be saved (assuming it's not saveable)
+- `$fieldName` (optional) `string|Field` Optional fieldname to limit check to.
+- `$options` (optional) `array` Options array given to the original save method (optional)
 
 ## Return value
 

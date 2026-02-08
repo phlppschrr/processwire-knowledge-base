@@ -6,9 +6,9 @@ Does the given attribute name and value appear somewhere in the given html?
 
 ## Arguments
 
-- string $name
-- string|bool $value Value to find, or specify boolean true for boolean attribute without value
-- string $html
+- `$name` `string`
+- `$value` `string|bool` Value to find, or specify boolean true for boolean attribute without value
+- `$html` `string`
 
 ## Return value
 

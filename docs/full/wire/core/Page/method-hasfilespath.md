@@ -15,6 +15,6 @@ bool
 - hasFiles()
 - filesManager()
 
-## Meta
+## Since
 
-- @since 3.0.138 Earlier versions must use the more verbose PagefilesManager::hasPath($page)
+3.0.138 Earlier versions must use the more verbose PagefilesManager::hasPath($page)

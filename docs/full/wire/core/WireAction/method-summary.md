@@ -6,7 +6,7 @@ Get or set a text summary of what this action did
 
 ## Arguments
 
-- string|null $text Set the summary or omit to only retrieve the summary
+- `$text` (optional) `string|null` Set the summary or omit to only retrieve the summary
 
 ## Return value
 

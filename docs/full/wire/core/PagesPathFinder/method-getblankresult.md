@@ -6,7 +6,7 @@ Build blank result/return value array
 
 ## Arguments
 
-- array $result Optionally return blank result merged with this one
+- `$result` (optional) `array` Optionally return blank result merged with this one
 
 ## Return value
 

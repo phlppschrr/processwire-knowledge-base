@@ -14,8 +14,8 @@ Change or set just the server disk path for the named location (leaving URL as-i
 
 ## Arguments
 
-- string $for Named location from `$config->paths`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
-- string $path Path relative to PW installation root (no leading slash), or absolute path if not.
+- `$for` `string` Named location from `$config->paths`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- `$path` `string` Path relative to PW installation root (no leading slash), or absolute path if not.
 
 ## Return value
 
@@ -25,6 +25,6 @@ self
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.141
+3.0.141

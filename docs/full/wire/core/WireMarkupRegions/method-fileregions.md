@@ -8,6 +8,6 @@ Get instance of WireMarkupFileRegions
 
 WireMarkupFileRegions
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

@@ -6,8 +6,8 @@ Permanently delete a Permission
 
 ## Arguments
 
-- Permission|Page $page Permission to delete
-- bool $recursive If set to true, then this will attempt to delete any pages below the Permission too.
+- `$page` `Permission|Page` Permission to delete
+- `$recursive` (optional) `bool` If set to true, then this will attempt to delete any pages below the Permission too.
 
 ## Return value
 

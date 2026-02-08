@@ -10,14 +10,14 @@ the PW version being 3.0.109 or higher.
 
 ## Arguments
 
-- int $qty Number of random characters requested
-- bool $alphanumeric Specify true to allow digits in return value
-- array $disallow Characters that may not be used in return value
+- `$qty` (optional) `int` Number of random characters requested
+- `$alphanumeric` (optional) `bool` Specify true to allow digits in return value
+- `$disallow` (optional) `array` Characters that may not be used in return value
 
 ## Return value
 
 string
 
-## Meta
+## Deprecated
 
-- @deprecated use WireRandom::alpha() instead
+use WireRandom::alpha() instead

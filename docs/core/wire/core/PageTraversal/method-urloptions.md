@@ -35,8 +35,8 @@ Please also note regarding `$options`:
 
 ## Arguments
 
-- Page $page
-- array|int|string|bool|Language $options Optionally specify options to modify default behavior (see method description).
+- `$page` `Page`
+- `$options` (optional) `array|int|string|bool|Language` Optionally specify options to modify default behavior (see method description).
 
 ## Return value
 

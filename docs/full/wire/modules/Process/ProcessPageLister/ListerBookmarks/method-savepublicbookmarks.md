@@ -6,7 +6,7 @@ Save public bookmarks (to module config)
 
 ## Arguments
 
-- array $bookmarks
+- `$bookmarks` `array`
 
 ## Return value
 

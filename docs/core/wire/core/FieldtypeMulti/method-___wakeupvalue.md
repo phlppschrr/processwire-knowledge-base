@@ -6,9 +6,9 @@ Process the value to convert it from array to whatever object it needs to be
 
 ## Arguments
 
-- Page $page
-- Field $field
-- array $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `array`
 
 ## Return value
 

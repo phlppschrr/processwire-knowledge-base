@@ -6,8 +6,8 @@ Update options for field
 
 ## Arguments
 
-- Field $field
-- array|SelectableOptionArray $options
+- `$field` `Field`
+- `$options` `array|SelectableOptionArray`
 
 ## Return value
 

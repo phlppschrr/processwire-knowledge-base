@@ -11,5 +11,5 @@ $pagefile = new Pagefile($page->files, '/path/to/file.pdf');
 
 ## Arguments
 
-- Pagefiles $pagefiles The Pagefiles WireArray that will contain this file.
-- string $filename Full path and filename to this Pagefile.
+- `$pagefiles` `Pagefiles` The Pagefiles WireArray that will contain this file.
+- `$filename` `string` Full path and filename to this Pagefile.

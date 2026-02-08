@@ -20,12 +20,12 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 
 ## Arguments
 
-- array $data Data about the search including 'type', 'operator', 'q' (query) and more.
+- `$data` `array` Data about the search including 'type', 'operator', 'q' (query) and more.
 
 ## Return value
 
 bool Optionally return false to stop search, making it use only results returned by this method.
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

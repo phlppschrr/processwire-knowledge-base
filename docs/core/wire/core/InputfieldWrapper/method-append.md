@@ -6,7 +6,7 @@ Append an Inputfield to this instance’s children.
 
 ## Arguments
 
-- Inputfield $item Item to append
+- `$item` `Inputfield` Item to append
 
 ## Return value
 

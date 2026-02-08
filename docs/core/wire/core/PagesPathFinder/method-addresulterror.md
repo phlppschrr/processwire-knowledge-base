@@ -6,6 +6,6 @@ Add named error message to result
 
 ## Arguments
 
-- string $name
-- string $message
-- bool $force Force add even if not in verbose mode? (default=false)
+- `$name` `string`
+- `$message` `string`
+- `$force` (optional) `bool` Force add even if not in verbose mode? (default=false)

@@ -6,7 +6,7 @@ Create a password (for password method)
 
 ## Arguments
 
-- array $options
+- `$options` `array`
 
 ## Return value
 

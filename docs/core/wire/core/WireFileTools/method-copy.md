@@ -20,9 +20,9 @@ $files->copy($copyFrom, $copyTo);
 
 ## Arguments
 
-- string $src Path to copy files from, or filename to copy.
-- string $dst Path (or filename) to copy file(s) to. Directory is created if it doesn't already exist.
-- bool|array $options Array of options: - `recursive` (bool): Whether to copy directories within recursively. (default=true) - `allowEmptyDirs` (boolean): Copy directories even if they are empty? (default=true) - `limitPath` (bool|string|array): Limit copy to within path given here, or true for site assets path. The limitPath option requires core 3.0.118+. (default=false). - `hidden` (bool): Also copy hidden files/directories within given $src directory? (applies only if $src is dir) The hidden option requires core 3.0.180+. (default=true) - If a boolean is specified for $options, it is assumed to be the `recursive` option.
+- `$src` `string` Path to copy files from, or filename to copy.
+- `$dst` `string` Path (or filename) to copy file(s) to. Directory is created if it doesn't already exist.
+- `$options` (optional) `bool|array` Array of options: - `recursive` (bool): Whether to copy directories within recursively. (default=true) - `allowEmptyDirs` (boolean): Copy directories even if they are empty? (default=true) - `limitPath` (bool|string|array): Limit copy to within path given here, or true for site assets path. The limitPath option requires core 3.0.118+. (default=false). - `hidden` (bool): Also copy hidden files/directories within given $src directory? (applies only if $src is dir) The hidden option requires core 3.0.180+. (default=true) - If a boolean is specified for $options, it is assumed to be the `recursive` option.
 
 ## Return value
 

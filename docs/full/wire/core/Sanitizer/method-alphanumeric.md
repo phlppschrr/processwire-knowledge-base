@@ -6,9 +6,9 @@ Sanitize to ASCII alphanumeric (a-z A-Z 0-9)
 
 ## Arguments
 
-- string $value Value to sanitize
-- bool|int $beautify Whether to beautify (See Sanitizer::translate option too)
-- int $maxLength Maximum length of returned value (default=1024)
+- `$value` `string` Value to sanitize
+- `$beautify` (optional) `bool|int` Whether to beautify (See Sanitizer::translate option too)
+- `$maxLength` (optional) `int` Maximum length of returned value (default=1024)
 
 ## Return value
 

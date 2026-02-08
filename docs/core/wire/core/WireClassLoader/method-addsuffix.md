@@ -9,5 +9,5 @@ but the path will be added as another to check when not found in namespace path(
 
 ## Arguments
 
-- string $suffix Case sensitive suffix specific to class name (not namespace).
-- string $path
+- `$suffix` `string` Case sensitive suffix specific to class name (not namespace).
+- `$path` `string`

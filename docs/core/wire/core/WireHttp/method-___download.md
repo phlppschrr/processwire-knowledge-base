@@ -9,9 +9,9 @@ unless you specify the `use` option in `$options`.
 
 ## Arguments
 
-- string $fromURL URL of file you want to download.
-- string $toFile Filename you want to save it to (including full path).
-- array $options Optional options array for PHP's stream_context_create(), plus these optional options: - `use` or `useMethod` (string): Specify "curl", "fopen" or "socket" to force a specific method (default=auto-detect). - `timeout` (float): Number of seconds till timeout or omit to use previously set timeout setting or default. - `fopen_bufferSize' (int): Buffer size (bytes) or 0 to disable buffer, used only by fopen method (default=1048576) 3.0.222+
+- `$fromURL` `string` URL of file you want to download.
+- `$toFile` `string` Filename you want to save it to (including full path).
+- `$options` (optional) `array` Optional options array for PHP's stream_context_create(), plus these optional options: - `use` or `useMethod` (string): Specify "curl", "fopen" or "socket" to force a specific method (default=auto-detect). - `timeout` (float): Number of seconds till timeout or omit to use previously set timeout setting or default. - `fopen_bufferSize' (int): Buffer size (bytes) or 0 to disable buffer, used only by fopen method (default=1048576) 3.0.222+
 
 ## Return value
 
@@ -21,6 +21,6 @@ string Filename that was downloaded (including full path).
 
 - WireException All error conditions throw exceptions.
 
-## Meta
+## Details
 
 - @todo update the use option to support array like the send() method

@@ -6,7 +6,7 @@ Is the given Notice a duplicate of one already here?
 
 ## Arguments
 
-- Notice $item
+- `$item` `Notice`
 
 ## Return value
 

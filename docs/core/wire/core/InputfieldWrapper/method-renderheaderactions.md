@@ -6,13 +6,13 @@ Render Inputfield header actions
 
 ## Arguments
 
-- Inputfield $inputfield
-- array $actions
+- `$inputfield` `Inputfield`
+- `$actions` `array`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

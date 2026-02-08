@@ -10,7 +10,7 @@ Returns true if root segment is not in this site and 404 should be the result.
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

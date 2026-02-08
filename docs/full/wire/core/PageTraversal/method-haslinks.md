@@ -6,8 +6,8 @@ Return total number of pages visible to current user linking to this one
 
 ## Arguments
 
-- Page $page
-- bool $field
+- `$page` `Page`
+- `$field` (optional) `bool`
 
 ## Return value
 

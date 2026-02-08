@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- Pagefile|Pageimage $pagefile
+- `$pagefile` `Pagefile|Pageimage`
 - $extension

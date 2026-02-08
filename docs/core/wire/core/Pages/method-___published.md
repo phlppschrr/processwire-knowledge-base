@@ -6,4 +6,4 @@ Hook called after an unpublished page has just been published
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

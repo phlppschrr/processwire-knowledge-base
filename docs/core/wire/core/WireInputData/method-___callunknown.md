@@ -6,8 +6,8 @@ Maps to Sanitizer functions
 
 ## Arguments
 
-- string $method
-- array $arguments
+- `$method` `string`
+- `$arguments` `array`
 
 ## Return value
 

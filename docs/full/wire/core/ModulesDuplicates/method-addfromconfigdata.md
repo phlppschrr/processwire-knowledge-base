@@ -7,4 +7,4 @@ Add duplicates from module config data
 ## Arguments
 
 - $className
-- array $data
+- `$data` `array`

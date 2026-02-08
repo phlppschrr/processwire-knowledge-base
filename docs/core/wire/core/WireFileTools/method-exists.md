@@ -37,8 +37,8 @@ $exists = $files->exists('/path/file.ext', 'readable writable file');
 
 ## Arguments
 
-- string $filename
-- array|string $options Can be specified as array or string: - `type` (string): Verify it is of type: 'file', 'link', 'dir' (default='') - `readable` (bool): Verify it is readable? (default=false) - `writable` (bool): Also verify the file is writable? (default=false) - `writeable` (bool): Alias of writable (default=false) - When specified as string, you can use any combination of the words: `readable, writable, file, link, dir` (separated by space or comma).
+- `$filename` `string`
+- `$options` (optional) `array|string` Can be specified as array or string: - `type` (string): Verify it is of type: 'file', 'link', 'dir' (default='') - `readable` (bool): Verify it is readable? (default=false) - `writable` (bool): Also verify the file is writable? (default=false) - `writeable` (bool): Alias of writable (default=false) - When specified as string, you can use any combination of the words: `readable, writable, file, link, dir` (separated by space or comma).
 
 ## Return value
 
@@ -48,6 +48,6 @@ bool
 
 - WireException if given invalid or unrecognized $options
 
-## Meta
+## Since
 
-- @since 3.0.180
+3.0.180

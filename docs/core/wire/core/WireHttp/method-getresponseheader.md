@@ -11,7 +11,7 @@ and this one is kept primarily for backwards compatibility.
 
 ## Arguments
 
-- string $key Optional header name you want to get
+- `$key` (optional) `string` Optional header name you want to get
 
 ## Return value
 

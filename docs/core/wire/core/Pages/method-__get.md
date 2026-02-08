@@ -6,7 +6,7 @@ Return a fuel or other property set to the Pages instance
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

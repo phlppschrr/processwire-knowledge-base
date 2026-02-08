@@ -6,12 +6,12 @@ Get or set template
 
 ## Arguments
 
-- null|Template|string|int $template
+- `$template` (optional) `null|Template|string|int`
 
 ## Return value
 
 Template|null
 
-## Meta
+## Since
 
-- @since 3.0.181
+3.0.181

@@ -14,8 +14,8 @@ echo $page->renderValue($images, 'my-images');
 
 ## Arguments
 
-- mixed $value Value to render
-- string $file Optionally specify file (in site/templates/fields/) to render with (may omit .php extension)
+- `$value` `mixed` Value to render
+- `$file` (optional) `string` Optionally specify file (in site/templates/fields/) to render with (may omit .php extension)
 
 ## Return value
 

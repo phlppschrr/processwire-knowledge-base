@@ -13,7 +13,7 @@ if($user->hasRole('editor')) {
 
 ## Arguments
 
-- string|Role|int $role May be Role name, object or ID.
+- `$role` `string|Role|int` May be Role name, object or ID.
 
 ## Return value
 

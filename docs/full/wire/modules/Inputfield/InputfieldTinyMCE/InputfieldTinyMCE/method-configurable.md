@@ -10,7 +10,7 @@ Get or set configurable state
 
 ## Arguments
 
-- bool $set
+- `$set` (optional) `bool`
 
 ## Return value
 

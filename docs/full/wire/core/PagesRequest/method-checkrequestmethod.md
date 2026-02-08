@@ -6,7 +6,7 @@ Check current request method
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

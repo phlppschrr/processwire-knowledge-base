@@ -9,7 +9,7 @@ Extracts the pagination segment from the path.
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

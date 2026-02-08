@@ -17,8 +17,8 @@ the `WireHooks::isMethodHooked()`, `WireHooks::isPropertyHooked()`, or `WireHook
 
 ## Arguments
 
-- string $method Method or property name in one of the following formats: Class::method() Class::property method() property
-- Wire|null $instance Optional instance to check against (see hasHook method for details) Note that if specifying an $instance, you may not use the Class::method() or Class::property options for $method argument.
+- `$method` `string` Method or property name in one of the following formats: Class::method() Class::property method() property
+- `$instance` (optional) `Wire|null` Optional instance to check against (see hasHook method for details) Note that if specifying an $instance, you may not use the Class::method() or Class::property options for $method argument.
 
 ## Return value
 

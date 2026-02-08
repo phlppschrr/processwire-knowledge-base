@@ -6,8 +6,8 @@ Does page have the given version?
 
 ## Arguments
 
-- Page $page
-- int|string|PageVersionInfo $version Version number or omit to return quantity of versions
+- `$page` `Page`
+- `$version` (optional) `int|string|PageVersionInfo` Version number or omit to return quantity of versions
 
 ## Return value
 

@@ -6,9 +6,9 @@ Make IPTC tag (@horst)
 
 ## Arguments
 
-- string $rec
-- string $dat
-- string $val
+- `$rec` `string`
+- `$dat` `string`
+- `$val` `string`
 
 ## Return value
 

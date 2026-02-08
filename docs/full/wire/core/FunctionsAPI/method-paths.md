@@ -14,7 +14,7 @@ $path = paths('templates');
 
 ## Arguments
 
-- string $key
+- `$key` (optional) `string`
 
 ## Return value
 

@@ -21,8 +21,8 @@ $form->insertBefore([ 'type' => 'text', 'name' => 'first_name' ], 'last_name');
 
 ## Arguments
 
-- Inputfield|array|string $item Item to insert
-- Inputfield|string $existingItem Existing item you want to insert before.
+- `$item` `Inputfield|array|string` Item to insert
+- `$existingItem` `Inputfield|string` Existing item you want to insert before.
 
 ## Return value
 

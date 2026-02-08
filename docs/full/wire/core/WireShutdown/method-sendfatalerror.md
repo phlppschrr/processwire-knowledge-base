@@ -8,5 +8,5 @@ This is a public fatal error that doesn’t reveal anything specific.
 
 ## Arguments
 
-- string $message Message to indicate who error was also sent to
-- bool $useHTML Output for a web browser?
+- `$message` `string` Message to indicate who error was also sent to
+- `$useHTML` `bool` Output for a web browser?

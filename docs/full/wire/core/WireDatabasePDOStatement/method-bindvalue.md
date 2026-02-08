@@ -6,9 +6,9 @@ Bind a value for this statement
 
 ## Arguments
 
-- string|int $parameter
-- mixed $value
-- int $data_type
+- `$parameter` `string|int`
+- `$value` `mixed`
+- `$data_type` (optional) `int`
 
 ## Return value
 

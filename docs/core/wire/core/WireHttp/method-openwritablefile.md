@@ -6,8 +6,8 @@ Open a new file for writing (for download methods)
 
 ## Arguments
 
-- string $toFile
-- resource|false $fp
+- `$toFile` `string`
+- `$fp` (optional) `resource|false`
 
 ## Return value
 
@@ -17,6 +17,6 @@ resource
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.222
+3.0.222

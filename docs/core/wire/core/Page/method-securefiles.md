@@ -10,6 +10,6 @@ See also `$template->pagefileSecure` and `$config->pagefileSecure` which determi
 
 bool|null Returns boolean true if yes, false if no, or null if not known
 
-## Meta
+## Since
 
-- @since 3.0.166
+3.0.166

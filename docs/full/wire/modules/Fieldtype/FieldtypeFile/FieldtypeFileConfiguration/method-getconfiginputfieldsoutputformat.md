@@ -5,5 +5,5 @@ Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
 ## Arguments
 
-- Field $field
-- InputfieldWrapper $fs
+- `$field` `Field`
+- `$fs` `InputfieldWrapper`

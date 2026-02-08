@@ -6,7 +6,7 @@ Set whether or not lowercase is enforced
 
 ## Arguments
 
-- bool $lowercase
+- `$lowercase` (optional) `bool`
 
 ## Return value
 

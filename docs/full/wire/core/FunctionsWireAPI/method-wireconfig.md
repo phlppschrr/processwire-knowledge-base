@@ -14,8 +14,8 @@ config('debug', true);  // Same as above
 
 ## Arguments
 
-- string $key
-- null $value
+- `$key` (optional) `string`
+- `$value` (optional) `null`
 
 ## Return value
 

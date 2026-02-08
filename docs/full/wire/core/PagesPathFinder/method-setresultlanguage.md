@@ -6,5 +6,5 @@ Set result language by name or ID
 
 ## Arguments
 
-- int|string|Language $language
-- string $segment
+- `$language` `int|string|Language`
+- `$segment` (optional) `string`

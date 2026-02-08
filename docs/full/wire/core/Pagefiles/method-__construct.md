@@ -6,4 +6,4 @@ Construct a Pagefiles object
 
 ## Arguments
 
-- Page $page The page associated with this Pagefiles instance
+- `$page` `Page` The page associated with this Pagefiles instance

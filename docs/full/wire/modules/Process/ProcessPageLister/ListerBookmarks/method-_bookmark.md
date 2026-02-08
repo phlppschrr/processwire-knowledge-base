@@ -6,7 +6,7 @@ Get a template array for a bookmark
 
 ## Arguments
 
-- array $bookmark
+- `$bookmark` (optional) `array`
 
 ## Return value
 

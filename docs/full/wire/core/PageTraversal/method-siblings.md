@@ -8,8 +8,8 @@ Note that the siblings include the current page. To exclude the current page, sp
 
 ## Arguments
 
-- Page $page
-- string $selector Optional selector to filter siblings by.
+- `$page` `Page`
+- `$selector` (optional) `string` Optional selector to filter siblings by.
 
 ## Return value
 

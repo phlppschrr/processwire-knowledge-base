@@ -6,4 +6,4 @@ Change the default prev/next links for MarkupPagerNav
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`

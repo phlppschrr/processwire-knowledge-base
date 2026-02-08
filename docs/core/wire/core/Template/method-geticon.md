@@ -6,7 +6,7 @@ Return the icon name used by this template
 
 ## Arguments
 
-- bool $prefix Specify true if you want the icon prefix (icon- or fa-) to be included (default=false).
+- `$prefix` (optional) `bool` Specify true if you want the icon prefix (icon- or fa-) to be included (default=false).
 
 ## Return value
 

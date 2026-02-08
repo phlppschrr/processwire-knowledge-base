@@ -8,13 +8,11 @@ Was renamed to getByProperty() but old method name kept in case this class is ex
 
 ## Arguments
 
-- string $property
-- string|int $value
+- `$property` `string`
+- `$value` `string|int`
 
 ## Return value
 
 bool|SelectableOption
 
-## Meta
-
-- @deprecated
+## Deprecated

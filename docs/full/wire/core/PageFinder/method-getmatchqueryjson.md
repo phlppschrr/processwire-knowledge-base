@@ -7,10 +7,10 @@ Get match query when data is stored in a JSON DB column (future use)
 ## Arguments
 
 - PageFinderDatabaseQuerySelect DatabaseQuerySelect $q
-- string $tableAlias
-- string $subfields
-- string $operator
-- string|int|array $value
+- `$tableAlias` `string`
+- `$subfields` `string`
+- `$operator` `string`
+- `$value` `string|int|array`
 
 ## Return value
 

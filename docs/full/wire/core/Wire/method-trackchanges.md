@@ -6,7 +6,7 @@ Returns true or 1 if change tracking is on, or false or 0 if it is not, or mode 
 
 ## Arguments
 
-- bool $getMode When true, the track changes mode bitmask will be returned
+- `$getMode` (optional) `bool` When true, the track changes mode bitmask will be returned
 
 ## Return value
 

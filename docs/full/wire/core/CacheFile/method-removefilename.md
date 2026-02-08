@@ -6,4 +6,4 @@ Removes just the given file, as opposed to remove() which removes the entire cac
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`

@@ -6,7 +6,7 @@ Set the parent (InputfieldWrapper) of this Inputfield.
 
 ## Arguments
 
-- InputfieldWrapper $parent
+- `$parent` `InputfieldWrapper`
 
 ## Return value
 

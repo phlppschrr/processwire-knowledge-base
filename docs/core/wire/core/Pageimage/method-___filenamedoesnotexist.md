@@ -10,12 +10,12 @@ such as if your hook copied a file to $filename.
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

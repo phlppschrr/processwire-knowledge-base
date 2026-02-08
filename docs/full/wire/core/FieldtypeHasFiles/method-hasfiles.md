@@ -6,8 +6,8 @@ Whether or not given Page/Field has any files connected with it
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 

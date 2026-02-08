@@ -6,6 +6,6 @@ Prepare to render
 
 Called right before render about to start
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

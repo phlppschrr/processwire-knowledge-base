@@ -6,4 +6,4 @@ Set debug note
 
 ## Arguments
 
-- string $note
+- `$note` `string`

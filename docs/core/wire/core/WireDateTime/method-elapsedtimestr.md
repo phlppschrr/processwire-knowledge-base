@@ -26,15 +26,15 @@ echo $datetime->elapsedTimeStr($start, [ 'stop' => $stop, 'include' => 'hours mi
 
 ## Arguments
 
-- int|string $start Starting timestamp or date/time string.
-- int|string|array $stop Ending timestamp or date/time string, omit for “now”, or: - In 3.0.227+ you may optionally substitute the `$options` array argument here. When doing so, all remaining arguments are ignored and the `stop` and `abbreviate` (if needed) may be specified in the given options array, along with any other options.
-- bool|int|array $abbreviate - Specify boolean FALSE for verbose elapsed time string without abbreviations (default). - Specify boolean TRUE for abbreviations (abbreviated where common, not always different from non-abbreviated). - Specify integer `1` for extra short abbreviations (all terms abbreviated into shortest possible string). - Specify integer `0` for digital elapsed time string like “00:01:12” referring to hours:minutes:seconds. - Note that when using `0` no options apply except except for `exclude[seconds]` option.
-- array $options Additional options: - `delimiter` (string): String to separate time periods (default=' '). - `getArray` (bool): Return an array of integers indexed by period name (rather than a string)? 3.0.227+ - `exclude` (array|string): Exclude these periods, one or more of: 'seconds', 'minutes', 'hours', 'days', 'weeks' (default=[]) - `include` (array|string): Include only these periods, one or more of: 'seconds', 'minutes', 'hours', 'days', 'weeks' (default=[]) 3.0.227+ - Note the exclude and include options should not be used together, and the include option requires 3.0.227+.
+- `$start` `int|string` Starting timestamp or date/time string.
+- `$stop` (optional) `int|string|array` Ending timestamp or date/time string, omit for “now”, or: - In 3.0.227+ you may optionally substitute the `$options` array argument here. When doing so, all remaining arguments are ignored and the `stop` and `abbreviate` (if needed) may be specified in the given options array, along with any other options.
+- `$abbreviate` (optional) `bool|int|array` - Specify boolean FALSE for verbose elapsed time string without abbreviations (default). - Specify boolean TRUE for abbreviations (abbreviated where common, not always different from non-abbreviated). - Specify integer `1` for extra short abbreviations (all terms abbreviated into shortest possible string). - Specify integer `0` for digital elapsed time string like “00:01:12” referring to hours:minutes:seconds. - Note that when using `0` no options apply except except for `exclude[seconds]` option.
+- `$options` (optional) `array` Additional options: - `delimiter` (string): String to separate time periods (default=' '). - `getArray` (bool): Return an array of integers indexed by period name (rather than a string)? 3.0.227+ - `exclude` (array|string): Exclude these periods, one or more of: 'seconds', 'minutes', 'hours', 'days', 'weeks' (default=[]) - `include` (array|string): Include only these periods, one or more of: 'seconds', 'minutes', 'hours', 'days', 'weeks' (default=[]) 3.0.227+ - Note the exclude and include options should not be used together, and the include option requires 3.0.227+.
 
 ## Return value
 
 string|array Returns array only if the `getArray` option is true, otherwise returns a string.
 
-## Meta
+## Since
 
-- @since 3.0.129
+3.0.129

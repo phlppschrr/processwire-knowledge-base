@@ -8,6 +8,6 @@ Make FilenameArray unique (deprecated)
 
 FilenameArray
 
-## Meta
+## Deprecated
 
-- @deprecated no longer necessary since the add() function ensures uniqueness
+no longer necessary since the add() function ensures uniqueness

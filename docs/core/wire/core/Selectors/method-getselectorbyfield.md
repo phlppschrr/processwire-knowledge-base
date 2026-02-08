@@ -16,9 +16,9 @@ to always be an array of Selector objects, or a blank array if no match.
 
 ## Arguments
 
-- string $fieldName Name of field to return value for (i.e. "include", "limit", etc.)
-- bool $or Allow fields that appear in OR expressions? (default=false)
-- bool $all Return an array of all matching Selector objects? (default=false)
+- `$fieldName` `string` Name of field to return value for (i.e. "include", "limit", etc.)
+- `$or` (optional) `bool` Allow fields that appear in OR expressions? (default=false)
+- `$all` (optional) `bool` Return an array of all matching Selector objects? (default=false)
 
 ## Return value
 

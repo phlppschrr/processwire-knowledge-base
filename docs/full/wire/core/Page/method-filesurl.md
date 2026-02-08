@@ -13,6 +13,6 @@ string
 - filesPath()
 - filesManager()
 
-## Meta
+## Since
 
-- @since 3.0.138 You can use the equivalent but more verbose `$page->filesManager()->url()` in any version
+3.0.138 You can use the equivalent but more verbose `$page->filesManager()->url()` in any version

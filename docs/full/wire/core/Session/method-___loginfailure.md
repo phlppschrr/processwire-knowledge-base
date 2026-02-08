@@ -6,5 +6,5 @@ Login failure method for hooks
 
 ## Arguments
 
-- string $name Attempted login name
-- string $reason Reason for login failure
+- `$name` `string` Attempted login name
+- `$reason` `string` Reason for login failure

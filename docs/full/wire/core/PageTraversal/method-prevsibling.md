@@ -18,9 +18,9 @@ one of those modifiers, and provide those siblings as the second argument to thi
 
 ## Arguments
 
-- Page $page
-- string|array $selector Optional selector. When specified, will find nearest previous sibling that matches.
-- PageArray|null $siblings Optional siblings to use instead of the default. May also be specified as first argument when no selector needed.
+- `$page` `Page`
+- `$selector` (optional) `string|array` Optional selector. When specified, will find nearest previous sibling that matches.
+- `$siblings` (optional) `PageArray|null` Optional siblings to use instead of the default. May also be specified as first argument when no selector needed.
 
 ## Return value
 

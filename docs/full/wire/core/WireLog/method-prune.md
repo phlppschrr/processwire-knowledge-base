@@ -6,8 +6,8 @@ Prune log file to contain only entries from last [n] days
 
 ## Arguments
 
-- string $name Name of log file, excluding path and extension.
-- int $days Number of days
+- `$name` `string` Name of log file, excluding path and extension.
+- `$days` `int` Number of days
 
 ## Return value
 

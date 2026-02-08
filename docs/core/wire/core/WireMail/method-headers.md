@@ -6,7 +6,7 @@ Set multiple email headers using associative array
 
 ## Arguments
 
-- array $headers
+- `$headers` `array`
 
 ## Return value
 

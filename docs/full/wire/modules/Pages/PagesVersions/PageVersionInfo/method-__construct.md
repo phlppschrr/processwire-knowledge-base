@@ -5,4 +5,4 @@ Source: `wire/modules/Pages/PagesVersions/PageVersionInfo.php`
 
 ## Arguments
 
-- array $data
+- `$data` (optional) `array`

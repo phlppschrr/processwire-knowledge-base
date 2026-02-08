@@ -6,8 +6,8 @@ Increment the suffix of a page name, or add one if not present
 
 ## Arguments
 
-- string $name
-- int|null $num Number to use, or omit to determine and increment automatically
+- `$name` `string`
+- `$num` (optional) `int|null` Number to use, or omit to determine and increment automatically
 
 ## Return value
 

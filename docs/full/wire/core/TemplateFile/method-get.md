@@ -6,7 +6,7 @@ Get a set property from the template file, typically to check if a template has 
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

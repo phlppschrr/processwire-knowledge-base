@@ -6,5 +6,5 @@ Initialize status checks
 
 ## Arguments
 
-- Selectors $selectors
-- array $options
+- `$selectors` `Selectors`
+- `$options` `array`

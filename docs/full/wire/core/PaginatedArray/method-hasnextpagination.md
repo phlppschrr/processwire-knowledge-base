@@ -8,6 +8,6 @@ Is there a next pagination containing more items in this PaginatedArray after th
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.120
+3.0.120

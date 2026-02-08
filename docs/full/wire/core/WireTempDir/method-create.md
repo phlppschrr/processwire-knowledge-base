@@ -5,13 +5,13 @@ Source: `wire/core/WireTempDir.php`
 
 ## Arguments
 
-- string $name
-- string $basePath
+- `$name` (optional) `string`
+- `$basePath` (optional) `string`
 
 ## Return value
 
 string
 
-## Meta
+## Deprecated
 
-- @deprecated Use init() method instead
+Use init() method instead

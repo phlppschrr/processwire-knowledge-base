@@ -16,8 +16,8 @@ $blogPost = $pages->findOne("template=blog-post, sort=-created");
 
 ## Arguments
 
-- string|array|Selectors $selector Selector string, array or Selectors object
-- array|string $options See $options for $pages->find()
+- `$selector` `string|array|Selectors` Selector string, array or Selectors object
+- `$options` (optional) `array|string` See $options for $pages->find()
 
 ## Return value
 
@@ -29,6 +29,6 @@ Page|NullPage Returns a Page on success, or a NullPage (having id=0) on failure
 - [Pages::find()](method-___find.md)
 - [Pages::findMany()](method-findmany.md)
 
-## Meta
+## Since
 
-- @since 3.0.0
+3.0.0

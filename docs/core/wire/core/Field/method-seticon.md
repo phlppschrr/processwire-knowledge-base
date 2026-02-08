@@ -6,7 +6,7 @@ Set the icon for this field
 
 ## Arguments
 
-- string $icon Icon name
+- `$icon` `string` Icon name
 
 ## Return value
 

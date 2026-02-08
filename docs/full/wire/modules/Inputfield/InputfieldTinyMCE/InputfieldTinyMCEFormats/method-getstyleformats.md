@@ -6,7 +6,7 @@ Get style_formats
 
 ## Arguments
 
-- array $defaults
+- `$defaults` `array`
 
 ## Return value
 

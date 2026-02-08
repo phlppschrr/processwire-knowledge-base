@@ -9,7 +9,7 @@ want to add. In that case, it will create the Inputfield and return it instead o
 
 ## Arguments
 
-- Inputfield|array|string $item
+- `$item` `Inputfield|array|string`
 
 ## Return value
 

@@ -13,7 +13,7 @@ $inputfield->val('foo'); * // Setting
 
 ## Arguments
 
-- string|null $value
+- `$value` (optional) `string|null`
 
 ## Return value
 

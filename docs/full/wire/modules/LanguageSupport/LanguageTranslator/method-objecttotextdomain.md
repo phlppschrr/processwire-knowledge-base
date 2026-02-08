@@ -10,7 +10,7 @@ don't have to do this again.
 
 ## Arguments
 
-- Wire|object $o
+- `$o` `Wire|object`
 
 ## Return value
 

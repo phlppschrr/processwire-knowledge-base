@@ -6,8 +6,8 @@ Populate 'meta' to (form pages_meta table) to the result values
 
 ## Arguments
 
-- array $names
+- `$names` `array`
 
-## Meta
+## Since
 
-- @since 3.0.193
+3.0.193

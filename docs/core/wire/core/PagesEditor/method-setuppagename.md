@@ -11,8 +11,8 @@ already have a name, unless the name is "untitled"
 
 ## Arguments
 
-- Page $page
-- array $options - format: Optionally specify the format to use, or leave blank to auto-determine.
+- `$page` `Page`
+- `$options` (optional) `array` - format: Optionally specify the format to use, or leave blank to auto-determine.
 
 ## Return value
 

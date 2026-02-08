@@ -8,9 +8,9 @@ This is procedural version of the `$files->unzip()` method. See that method for 
 
 ## Arguments
 
-- string $file ZIP file to extract
-- string $dst Directory where files should be unzipped into. Directory is created if it doesn’t exist.
-- array $options See `WireFileTools::unzip()` for options.
+- `$file` `string` ZIP file to extract
+- `$dst` `string` Directory where files should be unzipped into. Directory is created if it doesn’t exist.
+- `$options` (optional) `array` See `WireFileTools::unzip()` for options.
 
 ## Return value
 

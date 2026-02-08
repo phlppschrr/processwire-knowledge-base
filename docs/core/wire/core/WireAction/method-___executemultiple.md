@@ -6,7 +6,7 @@ Execute the action for multiple items at once
 
 ## Arguments
 
-- array|WireArray $items Items to operate upon
+- `$items` `array|WireArray` Items to operate upon
 
 ## Return value
 

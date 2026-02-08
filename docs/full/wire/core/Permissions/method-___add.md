@@ -6,7 +6,7 @@ Add a new Permission with the given name and return it
 
 ## Arguments
 
-- string $name Name of permission you want to add, i.e. "hello-world"
+- `$name` `string` Name of permission you want to add, i.e. "hello-world"
 
 ## Return value
 

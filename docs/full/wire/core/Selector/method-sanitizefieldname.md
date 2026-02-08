@@ -6,12 +6,12 @@ Sanitize field name
 
 ## Arguments
 
-- string|array $fieldName
+- `$fieldName` `string|array`
 
 ## Return value
 
 string|array
 
-## Meta
+## Details
 
 - @todo This needs testing and then to be used by this class

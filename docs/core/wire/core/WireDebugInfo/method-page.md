@@ -6,8 +6,8 @@ Debug info specific to Page objects
 
 ## Arguments
 
-- Page $page
-- bool $small
+- `$page` `Page`
+- `$small` (optional) `bool`
 
 ## Return value
 

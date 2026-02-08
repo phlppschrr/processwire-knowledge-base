@@ -9,7 +9,7 @@ then it will go down the tree till it finds usable roles to use and inherit from
 
 ## Arguments
 
-- string $type May be 'view', 'edit', 'create' or 'add' (default='view')
+- `$type` (optional) `string` May be 'view', 'edit', 'create' or 'add' (default='view')
 
 ## Return value
 

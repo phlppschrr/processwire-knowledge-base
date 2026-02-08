@@ -8,6 +8,6 @@ Compile comments so that they can be easily identified by other compiler methods
 
 - $data
 
-## Meta
+## Details
 
 - @todo this is a work in progress, not yet in use

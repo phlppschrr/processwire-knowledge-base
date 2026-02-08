@@ -6,4 +6,4 @@ Set result language segment
 
 ## Arguments
 
-- string $segment
+- `$segment` `string`

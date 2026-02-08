@@ -8,7 +8,7 @@ Note that this only indicates validity, not whether the field is populated.
 
 ## Arguments
 
-- int|string|Field|array $field Field name, object or ID to check. - In 3.0.126+ this may also be an array or pipe "|" separated string of field names to check.
+- `$field` `int|string|Field|array` Field name, object or ID to check. - In 3.0.126+ this may also be an array or pipe "|" separated string of field names to check.
 
 ## Return value
 

@@ -11,8 +11,8 @@ $log->warning("This is a warning");
 
 ## Arguments
 
-- string $text Text to save in the log
-- int|bool $flags Specify boolean true to also display the warning interactively (admin only).
+- `$text` `string` Text to save in the log
+- `$flags` (optional) `int|bool` Specify boolean true to also display the warning interactively (admin only).
 
 ## Return value
 

@@ -6,7 +6,7 @@ Get markup property or all markup
 
 ## Arguments
 
-- string $property Specify property or omit to get all
+- `$property` (optional) `string` Specify property or omit to get all
 
 ## Return value
 

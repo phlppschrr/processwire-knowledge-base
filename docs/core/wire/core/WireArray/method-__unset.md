@@ -6,4 +6,4 @@ Ensures that unset() works for this classes data.
 
 ## Arguments
 
-- int|string $key
+- `$key` `int|string`

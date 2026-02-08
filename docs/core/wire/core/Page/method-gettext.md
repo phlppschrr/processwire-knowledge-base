@@ -9,9 +9,9 @@ is on, and not entity encoded when output formatting is off.
 
 ## Arguments
 
-- string $key Field name or string with field {name} tags in it.
-- bool $oneLine Specify true if returned value must be on single line.
-- bool|null $entities True to entity encode, false to not. Null for auto, which follows page's outputFormatting state.
+- `$key` `string` Field name or string with field {name} tags in it.
+- `$oneLine` (optional) `bool` Specify true if returned value must be on single line.
+- `$entities` (optional) `bool|null` True to entity encode, false to not. Null for auto, which follows page's outputFormatting state.
 
 ## Return value
 

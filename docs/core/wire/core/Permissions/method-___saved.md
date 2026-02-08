@@ -6,9 +6,9 @@ Hook called when a permission is saved
 
 ## Arguments
 
-- Page $page Page that was saved
-- array $changes Array of changed field names
-- array $values Array of changed field values indexed by name (when enabled)
+- `$page` `Page` Page that was saved
+- `$changes` (optional) `array` Array of changed field names
+- `$values` (optional) `array` Array of changed field values indexed by name (when enabled)
 
 ## Throws
 

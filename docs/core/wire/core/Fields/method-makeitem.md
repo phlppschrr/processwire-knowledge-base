@@ -6,7 +6,7 @@ Make an item and populate with given data
 
 ## Arguments
 
-- array $a Associative array of data to populate
+- `$a` (optional) `array` Associative array of data to populate
 
 ## Return value
 
@@ -16,6 +16,6 @@ Saveable|Wire
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.146
+3.0.146

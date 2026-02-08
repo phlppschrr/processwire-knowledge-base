@@ -12,6 +12,6 @@ int Quantity of tables dropped
 
 - \Exception
 
-## Meta
+## Since
 
-- @since 3.0.130
+3.0.130

@@ -6,13 +6,13 @@ Handles find/match logic for URL segment methods
 
 ## Arguments
 
-- string $get URL segment match string
-- int $num Limit only to this URL segment number (default=0 to indicate ignore)
+- `$get` `string` URL segment match string
+- `$num` (optional) `int` Limit only to this URL segment number (default=0 to indicate ignore)
 
 ## Return value
 
 string|int|bool
 
-## Meta
+## Since
 
-- @since 3.0.155
+3.0.155

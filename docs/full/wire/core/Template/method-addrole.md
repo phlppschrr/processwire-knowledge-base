@@ -6,8 +6,8 @@ Add a Role to this template for view, edit, create, or add permission
 
 ## Arguments
 
-- Role|int|string $role Role instance, id or name
-- string $type Type of role being added, one of: view, edit, create, add. (default=view)
+- `$role` `Role|int|string` Role instance, id or name
+- `$type` (optional) `string` Type of role being added, one of: view, edit, create, add. (default=view)
 
 ## Return value
 

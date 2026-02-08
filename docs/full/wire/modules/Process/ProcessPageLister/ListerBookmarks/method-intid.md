@@ -6,7 +6,7 @@ Given an id or string key, return an int ID
 
 ## Arguments
 
-- string|int $val
+- `$val` `string|int`
 
 ## Return value
 

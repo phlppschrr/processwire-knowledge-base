@@ -6,7 +6,7 @@ Check access to a delegated repeater
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

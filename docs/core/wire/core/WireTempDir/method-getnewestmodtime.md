@@ -6,8 +6,8 @@ Get the newest modification time of a file in $path, recursively
 
 ## Arguments
 
-- string $path Path to start from
-- int $maxDepth
+- `$path` `string` Path to start from
+- `$maxDepth` (optional) `int`
 
 ## Return value
 

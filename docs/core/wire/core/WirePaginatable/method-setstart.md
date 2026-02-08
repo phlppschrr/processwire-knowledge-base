@@ -6,7 +6,7 @@ Set the starting offset that was used for pagination.
 
 ## Arguments
 
-- int $numStart;
+- `$numStart` `int` ;
 
 ## Return value
 

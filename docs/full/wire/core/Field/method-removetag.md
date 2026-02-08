@@ -6,12 +6,12 @@ Remove a tag
 
 ## Arguments
 
-- string $tag
+- `$tag` `string`
 
 ## Return value
 
 array Returns current tag list
 
-## Meta
+## Since
 
-- @since 3.0.106
+3.0.106

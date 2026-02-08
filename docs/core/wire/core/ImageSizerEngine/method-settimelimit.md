@@ -8,7 +8,7 @@ If specified time limit is less than PHP's max_execution_time, then PHP's settin
 
 ## Arguments
 
-- int $value 10 to 60 recommended, default is 30
+- `$value` (optional) `int` 10 to 60 recommended, default is 30
 
 ## Return value
 

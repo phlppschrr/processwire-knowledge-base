@@ -8,7 +8,7 @@ This is primarily for HTML Purifier
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

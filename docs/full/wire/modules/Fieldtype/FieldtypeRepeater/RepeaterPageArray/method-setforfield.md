@@ -6,8 +6,8 @@ Set repeater field this RepeaterPageArray is for
 
 ## Arguments
 
-- RepeaterField $field
+- `$field` `RepeaterField`
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

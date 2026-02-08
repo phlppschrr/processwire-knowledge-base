@@ -6,5 +6,5 @@ Uikit configuration for Inputfield
 
 ## Arguments
 
-- Inputfield $inputfield
-- InputfieldWrapper $inputfields
+- `$inputfield` `Inputfield`
+- `$inputfields` `InputfieldWrapper`

@@ -11,15 +11,15 @@ See phpdoc in `Page::if()` for full details.
 
 ## Arguments
 
-- Page $page
-- string|bool|int $key Name of field to check, selector string to evaluate, or boolean/int to evalute
-- string|callable|mixed $yes If value for $key is present, return or call this
-- string|callable|mixed $no If value for $key is empty, return or call this
+- `$page` `Page`
+- `$key` `string|bool|int` Name of field to check, selector string to evaluate, or boolean/int to evalute
+- `$yes` (optional) `string|callable|mixed` If value for $key is present, return or call this
+- `$no` (optional) `string|callable|mixed` If value for $key is empty, return or call this
 
 ## Return value
 
 mixed|string|bool
 
-## Meta
+## Since
 
-- @since 3.0.126
+3.0.126

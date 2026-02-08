@@ -6,7 +6,7 @@ Add by option value
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

@@ -9,8 +9,8 @@ in the constructor, then you should not call this method because it will have al
 
 ## Arguments
 
-- string|object $name Recommend providing the object that is using the temp dir, but can also be any string
-- string $basePath Base path where temp dirs should be created. Omit to use default (recommended).
+- `$name` (optional) `string|object` Recommend providing the object that is using the temp dir, but can also be any string
+- `$basePath` (optional) `string` Base path where temp dirs should be created. Omit to use default (recommended).
 
 ## Return value
 

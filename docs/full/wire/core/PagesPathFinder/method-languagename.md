@@ -6,7 +6,7 @@ Return name for given language id or object
 
 ## Arguments
 
-- int|string|Language $language
+- `$language` `int|string|Language`
 
 ## Return value
 

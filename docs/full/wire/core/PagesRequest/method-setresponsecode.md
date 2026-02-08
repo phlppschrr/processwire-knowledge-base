@@ -6,5 +6,5 @@ Set response code and type
 
 ## Arguments
 
-- int $code
-- string $message Optional message string
+- `$code` `int`
+- `$message` (optional) `string` Optional message string

@@ -6,7 +6,7 @@ Get the multipart boundary string for this email
 
 ## Arguments
 
-- string|bool $prefix Specify optional boundary prefix or boolean true to clear any existing stored boundary
+- `$prefix` (optional) `string|bool` Specify optional boundary prefix or boolean true to clear any existing stored boundary
 
 ## Return value
 

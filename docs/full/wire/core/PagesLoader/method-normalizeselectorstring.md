@@ -10,8 +10,8 @@ times because they used slightly different selectors.
 
 ## Arguments
 
-- string $selector
-- bool $convertIDs Normalize to integer ID or array of integer IDs when possible (default=true)
+- `$selector` `string`
+- `$convertIDs` (optional) `bool` Normalize to integer ID or array of integer IDs when possible (default=true)
 
 ## Return value
 

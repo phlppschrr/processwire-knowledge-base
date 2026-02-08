@@ -6,13 +6,13 @@ Get page label icon and modify $label to remove existing icon references
 
 ## Arguments
 
-- Page $page
-- string $label
+- `$page` `Page`
+- `$label` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

@@ -8,7 +8,7 @@ When providing a suffix, this method can be thought of: hasSuffix(suffix)
 
 ## Arguments
 
-- string $s Optionally provide suffix to return true/false if file has the suffix
+- `$s` (optional) `string` Optionally provide suffix to return true/false if file has the suffix
 
 ## Return value
 

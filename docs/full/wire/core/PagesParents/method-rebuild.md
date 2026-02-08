@@ -9,12 +9,12 @@ and this method already calls the rebuildBranch() method when appropriate.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

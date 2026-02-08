@@ -6,13 +6,13 @@ Get parent comments for given Comment
 
 ## Arguments
 
-- Page $page
-- Comment $comment
+- `$page` `Page`
+- `$comment` `Comment`
 
 ## Return value
 
 CommentArray
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

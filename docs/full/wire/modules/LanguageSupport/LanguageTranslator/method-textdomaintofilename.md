@@ -8,7 +8,7 @@ This is determined by loading the textdomain and then grabbing the filename stor
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`
 
 ## Return value
 

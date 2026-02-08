@@ -6,7 +6,7 @@ Get owned bookmarks
 
 ## Arguments
 
-- int $userID
+- `$userID` (optional) `int`
 
 ## Return value
 

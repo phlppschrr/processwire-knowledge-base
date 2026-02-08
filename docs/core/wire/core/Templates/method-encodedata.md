@@ -6,7 +6,7 @@ Overridden from WireSaveableItems to retain specific keys
 
 ## Arguments
 
-- array $value
+- `$value` `array`
 
 ## Return value
 

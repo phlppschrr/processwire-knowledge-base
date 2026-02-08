@@ -9,4 +9,4 @@ matchStartEnd() method does, so this can be used to perform more literal start/e
 
 ## Arguments
 
-- string $value
+- `$value` `string`

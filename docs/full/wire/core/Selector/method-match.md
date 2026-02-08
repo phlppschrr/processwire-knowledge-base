@@ -6,8 +6,8 @@ Does $value1 match $value2?
 
 ## Arguments
 
-- mixed $value1 Dynamic comparison value
-- string $value2 User-supplied value to compare against
+- `$value1` `mixed` Dynamic comparison value
+- `$value2` `string` User-supplied value to compare against
 
 ## Return value
 

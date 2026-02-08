@@ -6,12 +6,12 @@ Create new instance of this page type
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 
 Page
 
-## Meta
+## Since
 
-- @since 3.0.249
+3.0.249

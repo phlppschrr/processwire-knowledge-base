@@ -5,7 +5,7 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`
 
 ## Return value
 

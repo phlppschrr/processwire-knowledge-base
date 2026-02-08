@@ -6,7 +6,7 @@ Is given directory/path created by this class?
 
 ## Arguments
 
-- string $dir
+- `$dir` `string`
 
 ## Return value
 

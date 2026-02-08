@@ -11,12 +11,12 @@ it uses strlen() rather than mb_strlen().
 
 ## Arguments
 
-- string|array|object|int|bool|null $value
+- `$value` `string|array|object|int|bool|null`
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.192
+3.0.192

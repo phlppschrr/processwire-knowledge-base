@@ -8,8 +8,8 @@ Changes are not committed until the item is saved
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
-- array $data
+- `$fieldgroup` `Fieldgroup`
+- `$data` `array`
 
 ## Return value
 

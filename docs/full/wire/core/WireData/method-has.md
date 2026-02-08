@@ -12,7 +12,7 @@ if($item->has('some_property')) {
 
 ## Arguments
 
-- string $key Name of property you want to check.
+- `$key` `string` Name of property you want to check.
 
 ## Return value
 

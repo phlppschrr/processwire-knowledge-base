@@ -14,7 +14,7 @@ $tags->tags(["foo", "bar", "baz"]); // Same as above, using array
 
 ## Arguments
 
-- bool|string|array $value Specify one of the following: - Omit to simply return the tags as a string. - Boolean true if you want to return tags as an array (rather than string). - Boolean false to return tags as an array, with lowercase enforced. - String or array if you are setting the tags.
+- `$value` (optional) `bool|string|array` Specify one of the following: - Omit to simply return the tags as a string. - Boolean true if you want to return tags as an array (rather than string). - Boolean false to return tags as an array, with lowercase enforced. - String or array if you are setting the tags.
 
 ## Return value
 

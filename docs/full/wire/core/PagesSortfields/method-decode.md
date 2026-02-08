@@ -8,8 +8,8 @@ The returned fieldname is preceded with a dash if the sortfield is reversed.
 
 ## Arguments
 
-- string|int $sortfield
-- string $default Default sortfield name (default='sort')
+- `$sortfield` `string|int`
+- `$default` (optional) `string` Default sortfield name (default='sort')
 
 ## Return value
 

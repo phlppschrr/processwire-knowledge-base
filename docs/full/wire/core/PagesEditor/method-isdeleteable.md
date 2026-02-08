@@ -9,8 +9,8 @@ It only checks if the page is in a state to be deleteable via the API.
 
 ## Arguments
 
-- Page $page
-- bool $throw Throw WireException with additional details?
+- `$page` `Page`
+- `$throw` (optional) `bool` Throw WireException with additional details?
 
 ## Return value
 

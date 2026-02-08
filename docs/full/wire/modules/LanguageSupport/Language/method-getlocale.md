@@ -8,7 +8,7 @@ See the `Languages::getLocale()` method for full details.
 
 ## Arguments
 
-- int $category Optional category (default=LC_ALL)
+- `$category` (optional) `int` Optional category (default=LC_ALL)
 
 ## Return value
 

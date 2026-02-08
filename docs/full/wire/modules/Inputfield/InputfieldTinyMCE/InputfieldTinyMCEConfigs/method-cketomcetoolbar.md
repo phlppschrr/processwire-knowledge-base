@@ -6,7 +6,7 @@ Convert CKE toolbar to MCE (future use)
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

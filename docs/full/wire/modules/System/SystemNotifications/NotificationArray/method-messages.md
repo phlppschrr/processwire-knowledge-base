@@ -6,7 +6,7 @@ Return messages recorded by this object
 
 ## Arguments
 
-- string|array $options One or more of array elements or space separated string of: first: only first item will be returned (string) last: only last item will be returned (string) clear: clear out all items that are returned from this method (includes both local and global) errors: returns errors rather than messages. warnings: returns warnings rather than messages.
+- `$options` (optional) `string|array` One or more of array elements or space separated string of: first: only first item will be returned (string) last: only last item will be returned (string) clear: clear out all items that are returned from this method (includes both local and global) errors: returns errors rather than messages. warnings: returns warnings rather than messages.
 
 ## Return value
 

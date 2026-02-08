@@ -6,8 +6,8 @@ Record an error message
 
 ## Arguments
 
-- array|Wire|string $text
-- int $flags
+- `$text` `array|Wire|string`
+- `$flags` (optional) `int`
 
 ## Return value
 

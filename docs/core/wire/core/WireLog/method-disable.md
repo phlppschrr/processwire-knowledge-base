@@ -6,7 +6,7 @@ Disable the given log name temporarily so that save() calls do not record entrie
 
 ## Arguments
 
-- string $name Log name or specify '*' to disable all
+- `$name` `string` Log name or specify '*' to disable all
 
 ## Return value
 
@@ -16,6 +16,6 @@ self
 
 - [WireLog::enable()](method-enable.md)
 
-## Meta
+## Since
 
-- @since 3.0.148
+3.0.148

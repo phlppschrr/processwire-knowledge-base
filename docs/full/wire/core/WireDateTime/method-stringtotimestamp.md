@@ -6,8 +6,8 @@ Given a date/time string and expected format, convert it to a unix timestamp
 
 ## Arguments
 
-- string $str Date/time string
-- string $format Format of the date/time string in PHP date syntax
+- `$str` `string` Date/time string
+- `$format` `string` Format of the date/time string in PHP date syntax
 
 ## Return value
 

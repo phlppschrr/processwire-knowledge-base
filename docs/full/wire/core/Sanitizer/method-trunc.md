@@ -9,14 +9,14 @@ disabled and the `collapseLinesWith` set to 1 space (rather than ellipsis).
 
 ## Arguments
 
-- string $str String to truncate
-- int|array $maxLength Maximum allowed length in characters, or substitute $options argument here
-- array $options See options for truncate() method or specify `type` option (word, punctuation, sentence, block).
+- `$str` `string` String to truncate
+- `$maxLength` (optional) `int|array` Maximum allowed length in characters, or substitute $options argument here
+- `$options` (optional) `array` See options for truncate() method or specify `type` option (word, punctuation, sentence, block).
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

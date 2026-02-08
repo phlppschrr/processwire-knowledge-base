@@ -6,7 +6,7 @@ Does the given filename have a valid extension?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

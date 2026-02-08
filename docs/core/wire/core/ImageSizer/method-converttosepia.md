@@ -6,7 +6,7 @@ Convert image to sepia tone
 
 ## Arguments
 
-- int $sepia Sepia amount
+- `$sepia` (optional) `int` Sepia amount
 
 ## Return value
 

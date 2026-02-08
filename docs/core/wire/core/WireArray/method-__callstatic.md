@@ -6,8 +6,8 @@ Static method caller, primarily for support of WireArray::new() method
 
 ## Arguments
 
-- string $name
-- array $arguments
+- `$name` `string`
+- `$arguments` `array`
 
 ## Return value
 

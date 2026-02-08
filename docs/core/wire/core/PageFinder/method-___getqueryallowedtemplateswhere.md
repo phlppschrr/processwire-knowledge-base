@@ -9,8 +9,8 @@ or the $event->return in an AFTER hook.
 
 ## Arguments
 
-- DatabaseQuerySelect $query
-- string $where SQL string for WHERE statement, not including the actual "WHERE"
+- `$query` `DatabaseQuerySelect`
+- `$where` `string` SQL string for WHERE statement, not including the actual "WHERE"
 
 ## Return value
 

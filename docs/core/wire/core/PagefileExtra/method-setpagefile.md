@@ -6,4 +6,4 @@ Set Pagefile instance this extra is connected to
 
 ## Arguments
 
-- Pagefile $pagefile
+- `$pagefile` `Pagefile`

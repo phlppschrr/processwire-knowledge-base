@@ -8,7 +8,7 @@ i.e. ProcessWire.config.InputfieldTinyMCE.settings.[configName].[settingName]
 
 ## Arguments
 
-- string $configName
+- `$configName` `string`
 
 ## Return value
 

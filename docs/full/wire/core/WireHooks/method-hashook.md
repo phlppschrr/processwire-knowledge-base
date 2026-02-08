@@ -17,8 +17,8 @@ If checking for a hooked property, it should be in the form "property".
 
 ## Arguments
 
-- Wire $object
-- string $method Method() or property name
+- `$object` `Wire`
+- `$method` `string` Method() or property name
 
 ## Return value
 
@@ -28,6 +28,6 @@ bool
 
 - WireException whe you try to call it with a Class::something() type method.
 
-## Meta
+## Details
 
 - @todo differentiate between "method()" and "property"

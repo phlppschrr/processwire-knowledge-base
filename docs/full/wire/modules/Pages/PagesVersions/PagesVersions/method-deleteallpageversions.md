@@ -6,7 +6,7 @@ Delete all versions for given page
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

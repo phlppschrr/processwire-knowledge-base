@@ -6,9 +6,9 @@ Set attribute
 
 ## Arguments
 
-- string $attr
-- string $value
+- `$attr` `string`
+- `$value` `string`
 
-## Meta
+## Deprecated
 
-- @deprecated Use attrs() method instead
+Use attrs() method instead

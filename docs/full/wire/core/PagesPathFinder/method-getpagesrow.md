@@ -6,7 +6,7 @@ Find a row for given $parts in pages table
 
 ## Arguments
 
-- array $parts
+- `$parts` `array`
 
 ## Return value
 

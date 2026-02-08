@@ -6,4 +6,4 @@ Construct the HookEvent and establish default values
 
 ## Arguments
 
-- array $eventData Optional event data to start with
+- `$eventData` (optional) `array` Optional event data to start with

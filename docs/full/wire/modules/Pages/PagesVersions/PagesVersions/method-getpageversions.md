@@ -14,8 +14,8 @@ foreach($versions as $p) {
 
 ## Arguments
 
-- Page $page
-- array $options - `getInfo` (bool): Specify true to instead get PageVersionInfo objects (default=false) - `sort` (string): Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created') - `version` (array): Limit to this version number, for internal use (default=0)
+- `$page` `Page`
+- `$options` (optional) `array` - `getInfo` (bool): Specify true to instead get PageVersionInfo objects (default=false) - `sort` (string): Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created') - `version` (array): Limit to this version number, for internal use (default=0)
 
 ## Return value
 

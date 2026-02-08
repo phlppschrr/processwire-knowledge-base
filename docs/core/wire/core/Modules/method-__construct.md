@@ -6,4 +6,4 @@ Construct the Modules
 
 ## Arguments
 
-- string $path Core modules path (you may add other paths with addPath method)
+- `$path` `string` Core modules path (you may add other paths with addPath method)

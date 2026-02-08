@@ -48,7 +48,7 @@ $p = $pages->new('/blog/posts/foo-bar-baz');
 
 ## Arguments
 
-- string|array $selector Selector string or array of properties to set
+- `$selector` (optional) `string|array` Selector string or array of properties to set
 
 ## Return value
 
@@ -59,6 +59,6 @@ Page
 - [Pages::add()](method-___add.md)
 - [Pages::newPage()](method-newpage.md)
 
-## Meta
+## Since
 
-- @since 3.0.191
+3.0.191

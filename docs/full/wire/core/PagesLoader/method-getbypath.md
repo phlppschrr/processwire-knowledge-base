@@ -18,8 +18,8 @@ Please note
 
 ## Arguments
 
-- string $path
-- array|bool $options array of options (below), or specify boolean for $useLanguages option only. - `getID` (bool): Specify true to just return the page ID (default=false) - `useLanguages` (bool): Specify true to allow retrieval by language-specific paths (default=false) - `useHistory` (bool): Allow use of previous paths used by the page, if PagePathHistory module is installed (default=false) - `allowUrl` (bool): Allow getting page by path OR url? Specify false to find only by path. This option only applies if the site happens to run from a subdirectory. (default=true) 3.0.184+ - `allowPartial` (bool): Allow partial paths to match? (default=true) 3.0.184+ - `allowUrlSegments` (bool): Allow paths with URL segments to match? When true and page match cannot be found, the closest parent page that allows URL segments will be returned. Found URL segments are populated to a `_urlSegments` array property on the returned page object. This also cancels the allowPartial setting. (default=false) 3.0.184+
+- `$path` `string`
+- `$options` (optional) `array|bool` array of options (below), or specify boolean for $useLanguages option only. - `getID` (bool): Specify true to just return the page ID (default=false) - `useLanguages` (bool): Specify true to allow retrieval by language-specific paths (default=false) - `useHistory` (bool): Allow use of previous paths used by the page, if PagePathHistory module is installed (default=false) - `allowUrl` (bool): Allow getting page by path OR url? Specify false to find only by path. This option only applies if the site happens to run from a subdirectory. (default=true) 3.0.184+ - `allowPartial` (bool): Allow partial paths to match? (default=true) 3.0.184+ - `allowUrlSegments` (bool): Allow paths with URL segments to match? When true and page match cannot be found, the closest parent page that allows URL segments will be returned. Found URL segments are populated to a `_urlSegments` array property on the returned page object. This also cancels the allowPartial setting. (default=false) 3.0.184+
 
 ## Return value
 

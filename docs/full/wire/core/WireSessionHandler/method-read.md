@@ -6,7 +6,7 @@ Read and return data for session indicated by $id
 
 ## Arguments
 
-- string $id Session ID
+- `$id` `string` Session ID
 
 ## Return value
 

@@ -8,7 +8,7 @@ Value can be string representations like: 0, 1 off, on, yes, no, y, n, false, tr
 
 ## Arguments
 
-- bool|int|string $value
+- `$value` `bool|int|string`
 
 ## Return value
 

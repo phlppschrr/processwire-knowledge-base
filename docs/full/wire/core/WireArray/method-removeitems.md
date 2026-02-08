@@ -6,7 +6,7 @@ Removes multiple identified items at once
 
 ## Arguments
 
-- array|Wire|string|WireArray $items Items to remove
+- `$items` `array|Wire|string|WireArray` Items to remove
 
 ## Return value
 

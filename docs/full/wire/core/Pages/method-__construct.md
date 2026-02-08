@@ -6,4 +6,4 @@ Create the Pages object
 
 ## Arguments
 
-- ProcessWire $wire
+- `$wire` `ProcessWire`

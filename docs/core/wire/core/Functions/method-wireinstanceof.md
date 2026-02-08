@@ -10,9 +10,9 @@ not support interfaces unless the $instance argument was an object.
 
 ## Arguments
 
-- object|string $instance Object instance to test (or string of its class name).
-- string|array $className Class/interface name or array of class/interface names to test against.
-- bool $autoload Allow PHP to autoload the class? (default=true)
+- `$instance` `object|string` Object instance to test (or string of its class name).
+- `$className` `string|array` Class/interface name or array of class/interface names to test against.
+- `$autoload` (optional) `bool` Allow PHP to autoload the class? (default=true)
 
 ## Return value
 

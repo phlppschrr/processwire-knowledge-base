@@ -6,8 +6,8 @@ Does this field have context settings for given Page/Template?
 
 ## Arguments
 
-- Page|Template|Fieldgroup|string $for Specify Page, Template, or template name string
-- string $namespace Optional namespace (internal use)
+- `$for` `Page|Template|Fieldgroup|string` Specify Page, Template, or template name string
+- `$namespace` (optional) `string` Optional namespace (internal use)
 
 ## Return value
 
@@ -17,6 +17,6 @@ Field|bool
 
 - [Field::getContext()](method-getcontext.md)
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

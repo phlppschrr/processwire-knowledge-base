@@ -8,7 +8,7 @@ Hooks that want to inject something here should hook after and modify the $event
 
 ## Arguments
 
-- string $key Name of property.
+- `$key` `string` Name of property.
 
 ## Return value
 

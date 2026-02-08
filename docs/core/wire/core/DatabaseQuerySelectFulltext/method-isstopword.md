@@ -6,7 +6,7 @@ Is given word a stopword?
 
 ## Arguments
 
-- string $word
+- `$word` `string`
 
 ## Return value
 

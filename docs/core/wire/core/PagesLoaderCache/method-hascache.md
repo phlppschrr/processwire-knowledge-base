@@ -12,6 +12,6 @@ Is given page ID in the cache?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.243
+3.0.243

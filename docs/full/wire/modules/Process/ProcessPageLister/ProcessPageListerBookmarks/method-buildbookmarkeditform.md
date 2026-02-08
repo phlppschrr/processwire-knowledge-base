@@ -6,7 +6,7 @@ Build the form needed to edit/add bookmarks
 
 ## Arguments
 
-- int $bookmarkID Specify bookmark ID if editing existing bookmark
+- `$bookmarkID` (optional) `int` Specify bookmark ID if editing existing bookmark
 
 ## Return value
 

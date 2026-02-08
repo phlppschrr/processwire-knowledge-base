@@ -8,8 +8,8 @@ If you have already set the parent to somewhere in the trash, then this method w
 
 ## Arguments
 
-- Page $page
-- bool $save Set to false if you will perform the save() call, as is the case when called from the Pages::save() method.
+- `$page` `Page`
+- `$save` (optional) `bool` Set to false if you will perform the save() call, as is the case when called from the Pages::save() method.
 
 ## Return value
 

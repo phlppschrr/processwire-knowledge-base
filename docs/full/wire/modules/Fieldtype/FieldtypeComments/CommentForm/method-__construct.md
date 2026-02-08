@@ -6,6 +6,6 @@ Construct a CommentForm
 
 ## Arguments
 
-- Page $page The page with the comments
-- CommentArray $comments The field value from $page
-- array $options Optional modifications to default behavior (see CommentForm::$options)
+- `$page` `Page` The page with the comments
+- `$comments` `CommentArray` The field value from $page
+- `$options` (optional) `array` Optional modifications to default behavior (see CommentForm::$options)

@@ -11,8 +11,8 @@ Return the markup value for a given field name or {tag} string
 
 ## Arguments
 
-- Page $page
-- string $key Field name or markup string with field {name} tags in it
+- `$page` `Page`
+- `$key` `string` Field name or markup string with field {name} tags in it
 
 ## Return value
 

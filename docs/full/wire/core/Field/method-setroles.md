@@ -8,8 +8,8 @@ Applicable only if the `Field::flagAccess` is set to this field's flags.
 
 ## Arguments
 
-- string $type Must be either "view" or "edit"
-- PageArray|array|null $roles May be a PageArray of Role objects or an array of Role IDs.
+- `$type` `string` Must be either "view" or "edit"
+- `$roles` `PageArray|array|null` May be a PageArray of Role objects or an array of Role IDs.
 
 ## Throws
 

@@ -8,6 +8,6 @@ Get all filenames associated with this image
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.233
+3.0.233

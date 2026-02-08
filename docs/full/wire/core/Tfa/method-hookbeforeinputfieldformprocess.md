@@ -6,4 +6,4 @@ Hook before InputfieldForm::processInput()
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`

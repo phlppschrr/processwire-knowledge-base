@@ -6,7 +6,7 @@ Returns whether the given string is blowfish hashed
 
 ## Arguments
 
-- string $str
+- `$str` (optional) `string`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Set the current language and reset current stored textdomains
 
 ## Arguments
 
-- Language $language
+- `$language` `Language`
 
 ## Return value
 

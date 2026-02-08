@@ -6,12 +6,12 @@ Return label to indicate option is disabled and how to enable it
 
 ## Arguments
 
-- string $type
+- `$type` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

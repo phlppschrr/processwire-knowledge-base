@@ -6,7 +6,7 @@ Sanitize a column name for _a-zA-Z0-9
 
 ## Arguments
 
-- string $col
+- `$col` `string`
 
 ## Return value
 

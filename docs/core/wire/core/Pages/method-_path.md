@@ -6,7 +6,7 @@ Alias of getPath method for backwards compatibility
 
 ## Arguments
 
-- int $id
+- `$id` `int`
 
 ## Return value
 

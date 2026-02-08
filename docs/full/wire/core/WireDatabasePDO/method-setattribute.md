@@ -6,13 +6,13 @@ Sets an attribute on the database handle
 
 ## Arguments
 
-- int $attribute
-- mixed $value
+- `$attribute` `int`
+- `$value` `mixed`
 
 ## Return value
 
 bool
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.setattribute.php

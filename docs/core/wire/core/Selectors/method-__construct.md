@@ -6,4 +6,4 @@ Given a selector string, extract it into one or more corresponding Selector obje
 
 ## Arguments
 
-- string|null|array $selector Please omit this argument and use a separate init($selector) call instead.
+- `$selector` (optional) `string|null|array` Please omit this argument and use a separate init($selector) call instead.

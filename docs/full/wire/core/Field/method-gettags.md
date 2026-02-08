@@ -6,12 +6,12 @@ Get tags
 
 ## Arguments
 
-- bool|string $getString Optionally specify true for space-separated string, or delimiter string (default=false)
+- `$getString` (optional) `bool|string` Optionally specify true for space-separated string, or delimiter string (default=false)
 
 ## Return value
 
 array|string Returns array of tags unless $getString option is requested
 
-## Meta
+## Since
 
-- @since 3.0.106
+3.0.106

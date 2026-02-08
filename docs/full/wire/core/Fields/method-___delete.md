@@ -8,7 +8,7 @@ This method will throw a WireException if you attempt to delete a field that is 
 
 ## Arguments
 
-- Field $item Field to delete
+- `$item` `Field` Field to delete
 
 ## Return value
 

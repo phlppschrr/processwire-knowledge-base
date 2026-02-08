@@ -25,9 +25,9 @@ if(count($result['errors'])) {
 
 ## Arguments
 
-- string $zipfile Full path and filename to create or update (i.e. /path/to/myfile.zip)
-- array|string $files Array of files to add (full path and filename), or directory (string) to add. If given a directory, it will recursively add everything in that directory.
-- array $options Associative array of options to modify default behavior: - `allowHidden` (boolean or array): allow hidden files? May be boolean, or array of hidden files (basenames) you allow. (default=false) Note that if you actually specify a hidden file in your $files argument, then that overrides this. - `allowEmptyDirs` (boolean): allow empty directories in the ZIP file? (default=true) - `overwrite` (boolean): Replaces ZIP file if already present (rather than adding to it) (default=false) - `maxDepth` (int): Max dir depth 0 for no limit (default=0). Specify 1 to stay only in dirs listed in $files. - `exclude` (array): Files or directories to exclude - `dir` (string): Directory name to prepend to added files in the ZIP
+- `$zipfile` `string` Full path and filename to create or update (i.e. /path/to/myfile.zip)
+- `$files` `array|string` Array of files to add (full path and filename), or directory (string) to add. If given a directory, it will recursively add everything in that directory.
+- `$options` (optional) `array` Associative array of options to modify default behavior: - `allowHidden` (boolean or array): allow hidden files? May be boolean, or array of hidden files (basenames) you allow. (default=false) Note that if you actually specify a hidden file in your $files argument, then that overrides this. - `allowEmptyDirs` (boolean): allow empty directories in the ZIP file? (default=true) - `overwrite` (boolean): Replaces ZIP file if already present (rather than adding to it) (default=false) - `maxDepth` (int): Max dir depth 0 for no limit (default=0). Specify 1 to stay only in dirs listed in $files. - `exclude` (array): Files or directories to exclude - `dir` (string): Directory name to prepend to added files in the ZIP
 
 ## Return value
 

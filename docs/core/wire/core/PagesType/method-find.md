@@ -6,8 +6,8 @@ Given a Selector string, return the Page objects that match in a PageArray.
 
 ## Arguments
 
-- string $selectorString
-- array $options Options to modify default behavior: - `findOne` (bool): apply optimizations for finding a single page and include pages with 'hidden' status
+- `$selectorString` `string`
+- `$options` (optional) `array` Options to modify default behavior: - `findOne` (bool): apply optimizations for finding a single page and include pages with 'hidden' status
 
 ## Return value
 

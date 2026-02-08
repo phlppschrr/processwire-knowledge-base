@@ -8,6 +8,6 @@ Get current comment depth
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

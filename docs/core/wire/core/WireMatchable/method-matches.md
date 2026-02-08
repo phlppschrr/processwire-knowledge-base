@@ -6,7 +6,7 @@ Does this object match the given Selectors object or string?
 
 ## Arguments
 
-- Selectors|string $s
+- `$s` `Selectors|string`
 
 ## Return value
 

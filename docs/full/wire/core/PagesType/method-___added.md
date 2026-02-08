@@ -6,8 +6,8 @@ Hook called when a new page of this type has been added
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.128
+3.0.128

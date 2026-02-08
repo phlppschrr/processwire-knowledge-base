@@ -13,9 +13,9 @@ $session->setFor($this, 'firstName', 'Bob');
 
 ## Arguments
 
-- string|object $ns Namespace string or object.
-- string $key Name of session variable you want to set.
-- mixed $value Value you want to set, or specify null to unset.
+- `$ns` `string|object` Namespace string or object.
+- `$key` `string` Name of session variable you want to set.
+- `$value` `mixed` Value you want to set, or specify null to unset.
 
 ## Return value
 

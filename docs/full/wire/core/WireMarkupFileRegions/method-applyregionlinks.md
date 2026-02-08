@@ -12,16 +12,16 @@ a string with the `<link>` tag to main.css in it.
 
 ## Arguments
 
-- string $html
-- string $basename
-- string $url
-- string $ext
-- array $options
+- `$html` `string`
+- `$basename` `string`
+- `$url` `string`
+- `$ext` `string`
+- `$options` `array`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- WireSessionHandler $handler
+- `$handler` `WireSessionHandler`

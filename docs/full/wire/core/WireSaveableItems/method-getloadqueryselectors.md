@@ -6,8 +6,8 @@ Provides additions to the ___load query for when selectors or selector string ar
 
 ## Arguments
 
-- Selectors $selectors
-- DatabaseQuerySelect $query
+- `$selectors` `Selectors`
+- `$query` `DatabaseQuerySelect`
 
 ## Return value
 

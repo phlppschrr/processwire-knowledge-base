@@ -21,8 +21,8 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 
 ## Arguments
 
-- string $method Requested method name
-- array $arguments Arguments provided
+- `$method` `string` Requested method name
+- `$arguments` `array` Arguments provided
 
 ## Return value
 

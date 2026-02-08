@@ -6,9 +6,9 @@ Allow the given Page to appear in admin theme navigation?
 
 ## Arguments
 
-- Page $p Page to test
-- PageArray|array $children Children of page, if applicable (optional)
-- string|null $permission Specify required permission (optional)
+- `$p` `Page` Page to test
+- `$children` (optional) `PageArray|array` Children of page, if applicable (optional)
+- `$permission` (optional) `string|null` Specify required permission (optional)
 
 ## Return value
 

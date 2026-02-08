@@ -6,7 +6,7 @@ Get array of punctuation characters
 
 ## Arguments
 
-- bool $sentence Get only sentence-ending punctuation
+- `$sentence` (optional) `bool` Get only sentence-ending punctuation
 
 ## Return value
 

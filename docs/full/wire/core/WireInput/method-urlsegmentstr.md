@@ -32,8 +32,8 @@ if($s == 'photos/large') {
 
 ## Arguments
 
-- bool|array $verbose Include pagination number (pageNum) and trailing slashes, when appropriate? (default=false) - Use this option for a more link-ready version of the URL segment string (since 3.0.106). - Optionally substitute $options argument for this argument, default for $verbose option remains false (since 3.0.155+).
-- array $options Options to adjust behavior (since 3.0.106): - `segments` (array): Optionally specify URL segments to use, rather than those from current request. (default=[]) - `values` (array): Same as segments option, but associative array converted to /key1/value1/key2/value2/ segment string. (default=[]) 3.0.155+ - `pageNum` (int): Optionally specify page number to use rather than current. (default=current page number) - `page` (Page): Optionally specify Page to use for context. (default=current page) - `verbose` (bool): Verbose argument from method, applies only if $options given for $verbose argument. - *NOTE* the `pageNum` and `page` options are not applicable unless the $verbose argument is true.
+- `$verbose` (optional) `bool|array` Include pagination number (pageNum) and trailing slashes, when appropriate? (default=false) - Use this option for a more link-ready version of the URL segment string (since 3.0.106). - Optionally substitute $options argument for this argument, default for $verbose option remains false (since 3.0.155+).
+- `$options` (optional) `array` Options to adjust behavior (since 3.0.106): - `segments` (array): Optionally specify URL segments to use, rather than those from current request. (default=[]) - `values` (array): Same as segments option, but associative array converted to /key1/value1/key2/value2/ segment string. (default=[]) 3.0.155+ - `pageNum` (int): Optionally specify page number to use rather than current. (default=current page number) - `page` (Page): Optionally specify Page to use for context. (default=current page) - `verbose` (bool): Verbose argument from method, applies only if $options given for $verbose argument. - *NOTE* the `pageNum` and `page` options are not applicable unless the $verbose argument is true.
 
 ## Return value
 

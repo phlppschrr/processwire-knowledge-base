@@ -8,13 +8,13 @@ If you want to copy bind values you should also call copyBindValuesTo($query) af
 
 ## Arguments
 
-- DatabaseQuery $query Query to copy data to
-- array $methods Optionally specify the names of methods to copy, otherwise all are copied
+- `$query` `DatabaseQuery` Query to copy data to
+- `$methods` (optional) `array` Optionally specify the names of methods to copy, otherwise all are copied
 
 ## Return value
 
 int Total items copied
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

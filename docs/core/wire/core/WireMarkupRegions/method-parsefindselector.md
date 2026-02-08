@@ -6,7 +6,7 @@ Given a $find selector return array with tests and other meta info
 
 ## Arguments
 
-- string $find
+- `$find` `string`
 
 ## Return value
 

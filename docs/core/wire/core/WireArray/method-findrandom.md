@@ -13,7 +13,7 @@ $randomItems = $items->findRandom(3);
 
 ## Arguments
 
-- int $num Number of items to return
+- `$num` `int` Number of items to return
 
 ## Return value
 

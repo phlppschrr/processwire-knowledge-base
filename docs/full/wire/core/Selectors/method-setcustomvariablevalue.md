@@ -13,9 +13,9 @@ $pages->find("name=[foo]"); // finds pages with name=bar
 
 ## Arguments
 
-- string $name
-- string|int|array|WireData|float|null|bool $value
+- `$name` `string`
+- `$value` `string|int|array|WireData|float|null|bool`
 
-## Meta
+## Since
 
-- @since 3.0.255
+3.0.255

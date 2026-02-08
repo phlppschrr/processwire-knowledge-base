@@ -6,4 +6,4 @@ Set types that should be excluded unless specifically asked for
 
 ## Arguments
 
-- array $types Names of types to exclude
+- `$types` `array` Names of types to exclude

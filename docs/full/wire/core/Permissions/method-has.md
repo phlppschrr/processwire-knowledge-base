@@ -13,7 +13,7 @@ if($permissions->has('page-publish')) {
 
 ## Arguments
 
-- string $name Name of permission
+- `$name` `string` Name of permission
 
 ## Return value
 

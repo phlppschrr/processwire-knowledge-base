@@ -6,14 +6,14 @@ Return whether single property from individual Selector matches Page
 
 ## Arguments
 
-- Page $page
-- Selector $selector
-- string $property
+- `$page` `Page`
+- `$selector` `Selector`
+- `$property` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.231
+3.0.231

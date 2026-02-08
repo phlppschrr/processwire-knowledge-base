@@ -6,8 +6,8 @@ Set admin theme for all users having role
 
 ## Arguments
 
-- AdminTheme|string $adminTheme Admin theme instance or class/module name
-- Role $role
+- `$adminTheme` `AdminTheme|string` Admin theme instance or class/module name
+- `$role` `Role`
 
 ## Return value
 
@@ -17,6 +17,6 @@ int Number of users set for admin theme
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.176
+3.0.176

@@ -9,7 +9,7 @@ The actual deletion of the file does not take effect until `$page->save()`.
 
 ## Arguments
 
-- Pagefile|string $item Pagefile or basename
+- `$item` `Pagefile|string` Pagefile or basename
 
 ## Return value
 

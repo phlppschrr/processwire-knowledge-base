@@ -6,7 +6,7 @@ Attempt to match page path from PagePathHistory module
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

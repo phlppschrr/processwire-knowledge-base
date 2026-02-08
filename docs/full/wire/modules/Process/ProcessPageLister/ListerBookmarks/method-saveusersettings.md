@@ -6,7 +6,7 @@ Save user settings for current page
 
 ## Arguments
 
-- array $settings
+- `$settings` `array`
 
 ## Return value
 

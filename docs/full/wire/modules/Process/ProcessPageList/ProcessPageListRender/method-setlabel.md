@@ -6,5 +6,5 @@ Set action label by name
 
 ## Arguments
 
-- string $key
-- string $value
+- `$key` `string`
+- `$value` `string`

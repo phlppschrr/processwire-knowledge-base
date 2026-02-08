@@ -6,8 +6,8 @@ Get a bookmark by ID (whether public or owned)
 
 ## Arguments
 
-- string|int $bookmarkID
-- int|null $type
+- `$bookmarkID` `string|int`
+- `$type` (optional) `int|null`
 
 ## Return value
 

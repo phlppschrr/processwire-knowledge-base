@@ -17,8 +17,8 @@ config('debug', true);  // Same as above, shortcut syntax
 
 ## Arguments
 
-- string $key
-- null $value
+- `$key` (optional) `string`
+- `$value` (optional) `null`
 
 ## Return value
 

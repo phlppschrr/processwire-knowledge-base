@@ -6,7 +6,7 @@ Given a filename, convert it to a textdomain string
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

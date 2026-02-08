@@ -6,14 +6,17 @@ Given a string starting with an operator, return that operator, and remove it fr
 
 ## Arguments
 
-- string $str
-- array $operatorChars
+- `$str` `string`
+- `$operatorChars` `array`
 
 ## Return value
 
 string
 
-## Meta
+## Deprecated
 
-- @deprecated Replaced by extractOperators()
+Replaced by extractOperators()
+
+## Details
+
 - @todo this method can be removed once confirmed nothing else uses it

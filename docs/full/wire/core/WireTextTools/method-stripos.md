@@ -6,9 +6,9 @@ Find the position of the first occurrence of a case-insensitive substring in a s
 
 ## Arguments
 
-- string $haystack
-- string $needle
-- int $offset
+- `$haystack` `string`
+- `$needle` `string`
+- `$offset` (optional) `int`
 
 ## Return value
 

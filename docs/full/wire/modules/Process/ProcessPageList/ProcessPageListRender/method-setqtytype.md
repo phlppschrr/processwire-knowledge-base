@@ -6,4 +6,4 @@ Set the quantity type
 
 ## Arguments
 
-- string $qtyType
+- `$qtyType` `string`

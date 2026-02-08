@@ -6,7 +6,7 @@ Safely determine the HTTP host
 
 ## Arguments
 
-- Config $config
+- `$config` `Config`
 
 ## Return value
 

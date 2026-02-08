@@ -14,7 +14,7 @@ $items->append($item);
 
 ## Arguments
 
-- Wire|WireArray|mixed $item Item to append.
+- `$item` `Wire|WireArray|mixed` Item to append.
 
 ## Return value
 

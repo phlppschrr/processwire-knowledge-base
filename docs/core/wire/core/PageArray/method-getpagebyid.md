@@ -6,12 +6,12 @@ Get Page from this PageArray having given ID, or return NullPage if not present
 
 ## Arguments
 
-- int $id
+- `$id` `int`
 
 ## Return value
 
 NullPage|Page
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

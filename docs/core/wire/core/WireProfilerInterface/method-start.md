@@ -8,9 +8,9 @@ Return the event array to be used for stop profiling
 
 ## Arguments
 
-- string $name Name of event in format "method" or "method.id" or "something"
+- `$name` `string` Name of event in format "method" or "method.id" or "something"
 - Wire|object|string|null Source of event (may be object instance)
-- array $data
+- `$data` (optional) `array`
 
 ## Return value
 

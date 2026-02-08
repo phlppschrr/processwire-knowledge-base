@@ -7,4 +7,4 @@ Add multiple duplicates
 ## Arguments
 
 - $className
-- array $files
+- `$files` `array`

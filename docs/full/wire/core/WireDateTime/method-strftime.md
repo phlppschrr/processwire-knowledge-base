@@ -6,13 +6,13 @@ strftime() replacement function that works in PHP 8.1+ (though not locale aware)
 
 ## Arguments
 
-- string $format
-- null|int|string $timestamp
+- `$format` `string`
+- `$timestamp` (optional) `null|int|string`
 
 ## Return value
 
 string|false
 
-## Meta
+## Since
 
-- @since 3.0.197
+3.0.197

@@ -6,10 +6,10 @@ Set a translation
 
 ## Arguments
 
-- string $textdomain
-- string $text
-- string $translation
-- string $context
+- `$textdomain` `string`
+- `$text` `string`
+- `$translation` `string`
+- `$context` (optional) `string`
 
 ## Return value
 

@@ -34,12 +34,12 @@ wireLangTranslations([
 
 ## Arguments
 
-- array $values
+- `$values` (optional) `array`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, array $values);
+3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, array $values);

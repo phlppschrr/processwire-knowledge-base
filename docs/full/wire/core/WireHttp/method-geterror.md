@@ -6,7 +6,7 @@ Get a string of the last error message
 
 ## Arguments
 
-- bool $getArray Specify true to receive an array of error messages, or omit for a string.
+- `$getArray` (optional) `bool` Specify true to receive an array of error messages, or omit for a string.
 
 ## Return value
 

@@ -11,6 +11,6 @@ This method is more self describing version of `$session->hasCookie(true);`
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

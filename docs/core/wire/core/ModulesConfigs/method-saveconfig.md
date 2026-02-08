@@ -18,9 +18,9 @@ $modules->saveConfig('HelloWorld', $data);
 
 ## Arguments
 
-- string|Module $class Module or module name
-- array|string $data Associative array of configuration data, or name of property you want to save.
-- mixed|null $value If you specified a property in previous arg, the value for the property.
+- `$class` `string|Module` Module or module name
+- `$data` `array|string` Associative array of configuration data, or name of property you want to save.
+- `$value` (optional) `mixed|null` If you specified a property in previous arg, the value for the property.
 
 ## Return value
 
@@ -34,6 +34,6 @@ bool True on success, false on failure
 
 - [Modules::getConfig()](../Modules/method-getconfig.md)
 
-## Meta
+## Since
 
-- @since 3.0.16 Use method saveModuleConfigData() with same arguments for prior versions (can also be used on any version).
+3.0.16 Use method saveModuleConfigData() with same arguments for prior versions (can also be used on any version).

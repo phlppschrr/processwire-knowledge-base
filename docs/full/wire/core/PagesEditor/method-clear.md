@@ -6,8 +6,8 @@ Clear a page of its data
 
 ## Arguments
 
-- Page $page
-- array $options
+- `$page` `Page`
+- `$options` (optional) `array`
 
 ## Return value
 
@@ -17,6 +17,6 @@ bool
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.189
+3.0.189

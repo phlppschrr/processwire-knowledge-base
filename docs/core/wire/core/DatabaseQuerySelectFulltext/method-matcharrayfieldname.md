@@ -6,9 +6,9 @@ Match when given $fieldName is an array
 
 ## Arguments
 
-- array $fieldNames
-- mixed $value
+- `$fieldNames` `array`
+- `$value` `mixed`
 
-## Meta
+## Since
 
-- @since 3.0.169
+3.0.169

@@ -6,7 +6,7 @@ Get page’s created or modified user
 
 ## Arguments
 
-- string $userType One of 'created' or 'modified'
+- `$userType` `string` One of 'created' or 'modified'
 
 ## Return value
 

@@ -13,7 +13,7 @@ Each item in returned array is an associative array that includes the following:
 
 ## Arguments
 
-- bool $sortNewest Sort by newest to oldest rather than by name? (default=false) Added 3.0.143
+- `$sortNewest` (optional) `bool` Sort by newest to oldest rather than by name? (default=false) Added 3.0.143
 
 ## Return value
 

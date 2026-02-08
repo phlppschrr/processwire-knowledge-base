@@ -6,7 +6,7 @@ Save contexts for all fields in the given fieldgroup
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
+- `$fieldgroup` `Fieldgroup`
 
 ## Return value
 

@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- Field $field
-- InputfieldWrapper $inputfields
+- `$field` `Field`
+- `$inputfields` `InputfieldWrapper`

@@ -10,7 +10,7 @@ Most Fieldtype modules use this built-in implementation.
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

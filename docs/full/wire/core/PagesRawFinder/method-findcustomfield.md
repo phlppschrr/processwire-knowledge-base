@@ -6,8 +6,8 @@ Find raw custom field
 
 ## Arguments
 
-- Field $field
-- array $cols
+- `$field` `Field`
+- `$cols` `array`
 
 ## Throws
 

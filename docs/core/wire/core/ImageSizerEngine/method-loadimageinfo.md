@@ -6,8 +6,8 @@ Load all image information from ImageInspector (Module)
 
 ## Arguments
 
-- string $filename
-- bool $reloadAll
+- `$filename` `string`
+- `$reloadAll` (optional) `bool`
 
 ## Throws
 

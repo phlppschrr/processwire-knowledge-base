@@ -11,7 +11,7 @@ Return an API variable, or return current ProcessWire instance if given no argum
 
 ## Arguments
 
-- string $name If omitted, returns current ProcessWire instance.
+- `$name` (optional) `string` If omitted, returns current ProcessWire instance.
 
 ## Return value
 

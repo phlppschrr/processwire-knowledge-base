@@ -6,7 +6,7 @@ Delete a Template
 
 ## Arguments
 
-- Template|Saveable $item Template to delete
+- `$item` `Template|Saveable` Template to delete
 
 ## Return value
 

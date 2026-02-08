@@ -13,7 +13,7 @@ $m->bodyHTML('<html><body><h1>Hello world</h1></body></html>');
 
 ## Arguments
 
-- string $body Email body in HTML
+- `$body` `string` Email body in HTML
 
 ## Return value
 

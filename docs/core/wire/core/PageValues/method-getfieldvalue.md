@@ -6,8 +6,8 @@ Get the value for a non-native page field, and call upon Fieldtype to join it if
 
 ## Arguments
 
-- string $key Name of field to get
-- string $selector Optional selector to filter load by... ...or, if not in selector format, it becomes an __invoke() argument for object values .
+- `$key` `string` Name of field to get
+- `$selector` (optional) `string` Optional selector to filter load by... ...or, if not in selector format, it becomes an __invoke() argument for object values .
 
 ## Return value
 

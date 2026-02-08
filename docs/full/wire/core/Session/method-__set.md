@@ -6,8 +6,8 @@ Provide non-namespaced $session->variable = variable set access
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`
 
 ## Return value
 

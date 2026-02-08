@@ -8,8 +8,8 @@ Note: an empty permission name is accessible only by the superuser
 
 ## Arguments
 
-- string $permissionName
-- bool $throw Whether to throw an Exception if the user does not have permission
+- `$permissionName` `string`
+- `$throw` (optional) `bool` Whether to throw an Exception if the user does not have permission
 
 ## Return value
 

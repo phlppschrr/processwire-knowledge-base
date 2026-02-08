@@ -6,9 +6,9 @@ Apply an {if.name} ... {endif.name} statement
 
 ## Arguments
 
-- string $name Property name for if statement
-- bool $value If true the contents of the {if...} statement will stay, if false it will be removed
-- string $out
+- `$name` `string` Property name for if statement
+- `$value` `bool` If true the contents of the {if...} statement will stay, if false it will be removed
+- `$out` `string`
 
 ## Return value
 

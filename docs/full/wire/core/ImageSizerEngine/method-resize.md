@@ -15,8 +15,8 @@ Post-processing is:
 
 ## Arguments
 
-- int $finalWidth
-- int $finalHeight
+- `$finalWidth` `int`
+- `$finalHeight` `int`
 
 ## Return value
 

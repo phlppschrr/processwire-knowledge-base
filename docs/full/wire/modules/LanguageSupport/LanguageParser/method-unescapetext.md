@@ -6,7 +6,7 @@ Replace any escaped characters with non-escaped versions
 
 ## Arguments
 
-- string $text
+- `$text` `string`
 
 ## Return value
 

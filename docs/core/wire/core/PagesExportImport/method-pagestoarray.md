@@ -6,8 +6,8 @@ Given a PageArray export it to a portable PHP array
 
 ## Arguments
 
-- PageArray $items
-- array $options Additional options to modify behavior - `fieldNames` (array): Export oly these field names, when specified. (default=[])
+- `$items` `PageArray`
+- `$options` (optional) `array` Additional options to modify behavior - `fieldNames` (array): Export oly these field names, when specified. (default=[])
 
 ## Return value
 

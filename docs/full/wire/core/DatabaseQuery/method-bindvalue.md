@@ -6,8 +6,8 @@ Bind a parameter value
 
 ## Arguments
 
-- string $key Parameter name
-- mixed $value Parameter value
+- `$key` `string` Parameter name
+- `$value` `mixed` Parameter value
 - null|int|string Optionally specify value type: string, int, bool, null or PDO::PARAM_* constant.
 
 ## Return value

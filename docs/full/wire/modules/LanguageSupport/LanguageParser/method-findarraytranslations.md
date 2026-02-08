@@ -10,4 +10,4 @@ for translation calls.
 
 ## Arguments
 
-- string $data
+- `$data` `string`

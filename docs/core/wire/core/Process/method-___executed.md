@@ -6,4 +6,4 @@ Hookable method automatically called after execute() method has finished.
 
 ## Arguments
 
-- string $method Name of method that was executed
+- `$method` `string` Name of method that was executed

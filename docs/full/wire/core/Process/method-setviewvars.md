@@ -9,8 +9,8 @@ variables to send to the view file.
 
 ## Arguments
 
-- string|array $key Property to set, or array of `[property => value]` to set (leaving 2nd argument as null)
-- mixed|null $value Value to set
+- `$key` `string|array` Property to set, or array of `[property => value]` to set (leaving 2nd argument as null)
+- `$value` (optional) `mixed|null` Value to set
 
 ## Return value
 

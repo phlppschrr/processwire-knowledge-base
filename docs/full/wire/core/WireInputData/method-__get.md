@@ -6,7 +6,7 @@ Get an input value
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Set the field that owns this repeater item
 
 ## Arguments
 
-- Field $forField
+- `$forField` `Field`
 
 ## Return value
 

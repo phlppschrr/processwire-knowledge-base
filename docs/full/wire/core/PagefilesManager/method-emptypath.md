@@ -6,8 +6,8 @@ Empty out the published files (delete all of them)
 
 ## Arguments
 
-- bool $rmdir Remove the directory too? (default=false)
-- bool $recursive Recursively do the same for subdirectories? (default=true)
+- `$rmdir` (optional) `bool` Remove the directory too? (default=false)
+- `$recursive` (optional) `bool` Recursively do the same for subdirectories? (default=true)
 
 ## Return value
 

@@ -6,4 +6,4 @@ Set whether or not to show verbose notices
 
 ## Arguments
 
-- bool $showNotices
+- `$showNotices` (optional) `bool`

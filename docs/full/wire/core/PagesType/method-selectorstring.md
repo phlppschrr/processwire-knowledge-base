@@ -6,7 +6,7 @@ Convert the given selector string to qualify for the proper page type
 
 ## Arguments
 
-- string $selectorString
+- `$selectorString` `string`
 
 ## Return value
 

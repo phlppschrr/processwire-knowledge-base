@@ -8,6 +8,6 @@ For nested repeaters, return the root-level non-repeater page that this repeater
 
 Page
 
-## Meta
+## Since
 
-- @since 3.0.132
+3.0.132

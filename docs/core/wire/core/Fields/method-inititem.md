@@ -6,13 +6,13 @@ Create a new Saveable item from a raw array ($row) and add it to $items
 
 ## Arguments
 
-- array $row
-- WireArray|null $items
+- `$row` `array`
+- `$items` (optional) `WireArray|null`
 
 ## Return value
 
 Saveable|WireData|Wire
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

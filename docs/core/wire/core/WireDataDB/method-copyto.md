@@ -8,7 +8,7 @@ Useful to call on the source object after a clone has been created from it.
 
 ## Arguments
 
-- int $newSourceID
+- `$newSourceID` `int`
 
 ## Return value
 

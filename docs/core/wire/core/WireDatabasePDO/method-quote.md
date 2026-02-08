@@ -6,12 +6,12 @@ Quote and escape a string value
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.quote.php

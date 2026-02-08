@@ -14,8 +14,8 @@ $wire->addHook('Page::cloned', function($e) {
 
 ## Arguments
 
-- Page $copy The new cloned copy of the page
+- `$copy` `Page` The new cloned copy of the page
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

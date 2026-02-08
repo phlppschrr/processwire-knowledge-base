@@ -6,12 +6,12 @@ Convert strftime() format to date() format
 
 ## Arguments
 
-- string $format
+- `$format` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.197
+3.0.197

@@ -9,7 +9,7 @@ setting (3.0.178+) and remove slashes if applicable/necessary.
 
 ## Arguments
 
-- array $a
+- `$a` `array`
 
 ## Return value
 

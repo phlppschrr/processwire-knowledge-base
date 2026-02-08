@@ -8,7 +8,7 @@ This part indicates the group name, which may also be blank to indicate grouping
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

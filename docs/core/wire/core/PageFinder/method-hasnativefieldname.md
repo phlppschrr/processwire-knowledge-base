@@ -8,7 +8,7 @@ This is primarily used to determine whether the getQueryNativeField() method sho
 
 ## Arguments
 
-- string|array|Selector $fieldNames Single field name, array of field names or pipe-separated string of field names
+- `$fieldNames` `string|array|Selector` Single field name, array of field names or pipe-separated string of field names
 
 ## Return value
 

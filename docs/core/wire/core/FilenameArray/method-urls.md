@@ -9,7 +9,7 @@ query strings to the URLs that resolve to physical files.
 
 ## Arguments
 
-- bool|null|string $useVersion See Config::versionUrls() for arument details
+- `$useVersion` (optional) `bool|null|string` See Config::versionUrls() for arument details
 
 ## Return value
 
@@ -23,6 +23,6 @@ array
 
 - [Config::versionUrls()](../Config/method-versionurls.md)
 
-## Meta
+## Since
 
-- @since 3.0.227
+3.0.227

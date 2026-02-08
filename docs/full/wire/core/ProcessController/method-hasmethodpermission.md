@@ -6,8 +6,8 @@ Does user have permission for the given $method name in the current Process?
 
 ## Arguments
 
-- string $method
-- bool $throw Throw exception if not permission?
+- `$method` `string`
+- `$throw` (optional) `bool` Throw exception if not permission?
 
 ## Return value
 

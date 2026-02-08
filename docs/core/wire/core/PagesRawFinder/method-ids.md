@@ -9,7 +9,7 @@ In case the quantity gets to be huge, it'll be more memory friendly.
 
 ## Arguments
 
-- bool $csv
+- `$csv` (optional) `bool`
 
 ## Return value
 

@@ -6,4 +6,4 @@ Hook called when a language is added
 
 ## Arguments
 
-- Page $language
+- `$language` `Page`

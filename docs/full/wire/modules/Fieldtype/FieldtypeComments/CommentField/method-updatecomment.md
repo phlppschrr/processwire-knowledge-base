@@ -6,9 +6,9 @@ Update specific properties for a comment
 
 ## Arguments
 
-- Page $page
-- Comment $comment
-- array $properties Associative array of properties to update
+- `$page` `Page`
+- `$comment` `Comment`
+- `$properties` `array` Associative array of properties to update
 
 ## Return value
 

@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- InputfieldDatetime $inputfield
+- `$inputfield` `InputfieldDatetime`

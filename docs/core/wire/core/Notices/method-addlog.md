@@ -6,4 +6,4 @@ Add Notice to log
 
 ## Arguments
 
-- Notice $item
+- `$item` `Notice`

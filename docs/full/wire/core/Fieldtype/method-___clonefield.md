@@ -6,7 +6,7 @@ Return a cloned copy of $field
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

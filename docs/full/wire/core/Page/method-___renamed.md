@@ -14,9 +14,9 @@ $wire->addHook('Page::renamed', function($e) {
 
 ## Arguments
 
-- string $oldName The old name
-- string $newName The new name
+- `$oldName` `string` The old name
+- `$newName` `string` The new name
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

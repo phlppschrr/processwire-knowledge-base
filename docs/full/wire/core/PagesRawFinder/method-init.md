@@ -6,5 +6,5 @@ Source: `wire/core/PagesRaw.php`
 ## Arguments
 
 - string|int|array|Selectors
-- string|array|Field $field
-- array $options
+- `$field` `string|array|Field`
+- `$options` `array`

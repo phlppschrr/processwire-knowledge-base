@@ -6,13 +6,13 @@ Return whether individual Selector object matches Page
 
 ## Arguments
 
-- Page $page
-- Selector $selector
+- `$page` `Page`
+- `$selector` `Selector`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.231
+3.0.231

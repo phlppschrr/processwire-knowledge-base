@@ -14,7 +14,7 @@ $url = urls('templates');
 
 ## Arguments
 
-- string $key
+- `$key` (optional) `string`
 
 ## Return value
 

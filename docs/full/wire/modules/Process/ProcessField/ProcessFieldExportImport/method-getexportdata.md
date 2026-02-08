@@ -6,7 +6,7 @@ Return export data for all given $exportFields
 
 ## Arguments
 
-- array $exportFields field names
+- `$exportFields` `array` field names
 
 ## Return value
 

@@ -8,4 +8,4 @@ Note: ".php" is already assumed, so does not need to be added.
 
 ## Arguments
 
-- string $ext
+- `$ext` `string`

@@ -9,7 +9,7 @@ then you don't need to implement this method as it's already present.
 
 ## Arguments
 
-- array|bool|null $options Optionally an option or boolean for 'namespace' option: - `lowercase` (bool): Specify true to make it return hyphenated lowercase version of class name - `namespace` (bool): Specify false to omit namespace from returned class name. Default=true. - Note: when lowercase=true option is specified, the namespace=false option is required.
+- `$options` (optional) `array|bool|null` Optionally an option or boolean for 'namespace' option: - `lowercase` (bool): Specify true to make it return hyphenated lowercase version of class name - `namespace` (bool): Specify false to omit namespace from returned class name. Default=true. - Note: when lowercase=true option is specified, the namespace=false option is required.
 
 ## Return value
 

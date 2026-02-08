@@ -8,6 +8,6 @@ Clear out all pending output buffers
 
 int Number of output buffers cleaned
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

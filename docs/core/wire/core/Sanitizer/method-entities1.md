@@ -6,9 +6,9 @@ Entity encode a string and don’t double encode it if already encoded
 
 ## Arguments
 
-- string $str String to entity encode
-- int|bool $flags See PHP htmlentities() function for flags.
-- string $encoding Encoding of string (default="UTF-8").
+- `$str` `string` String to entity encode
+- `$flags` (optional) `int|bool` See PHP htmlentities() function for flags.
+- `$encoding` (optional) `string` Encoding of string (default="UTF-8").
 
 ## Return value
 

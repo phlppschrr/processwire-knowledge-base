@@ -13,13 +13,13 @@ raw MySQL SHOW INDEX information.
 
 ## Arguments
 
-- string $table
-- bool|int $verbose Get array of info rather than column(s) string? (default=false)
+- `$table` `string`
+- `$verbose` (optional) `bool|int` Get array of info rather than column(s) string? (default=false)
 
 ## Return value
 
 string|array
 
-## Meta
+## Since
 
-- @since 3.0.182
+3.0.182

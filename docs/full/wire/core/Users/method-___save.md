@@ -21,7 +21,7 @@ $wire->addHookBefore('Pages::save(<User>)', function(HookEvent $e) {
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

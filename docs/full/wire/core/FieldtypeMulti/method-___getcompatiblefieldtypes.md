@@ -6,7 +6,7 @@ Get an array of Fieldtypes that are compatible with this one (i.e. ones the user
 
 ## Arguments
 
-- Field $field Just in case it's needed
+- `$field` `Field` Just in case it's needed
 
 ## Return value
 

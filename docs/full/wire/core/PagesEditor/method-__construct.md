@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- Pages $pages
+- `$pages` `Pages`

@@ -19,8 +19,8 @@ $randomItems = $items->findRandomTimed('YmdH');
 
 ## Arguments
 
-- int $num The amount of items to extract from the given list
-- int|string $seed Optionally provide one of the following: - A PHP [date()](http://php.net/manual/en/function.date.php) format string. - A number used to see the random number generator. - The default is the PHP date format "Ymd" which makes it randomize once daily.
+- `$num` `int` The amount of items to extract from the given list
+- `$seed` (optional) `int|string` Optionally provide one of the following: - A PHP [date()](http://php.net/manual/en/function.date.php) format string. - A number used to see the random number generator. - The default is the PHP date format "Ymd" which makes it randomize once daily.
 
 ## Return value
 

@@ -8,7 +8,7 @@ When applicable, $database->escapeStr() must also be applied (before or after).
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

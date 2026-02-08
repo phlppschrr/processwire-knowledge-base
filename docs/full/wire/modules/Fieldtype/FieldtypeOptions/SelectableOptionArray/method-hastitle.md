@@ -6,7 +6,7 @@ Is the given title present in these selectable options?
 
 ## Arguments
 
-- string $title
+- `$title` `string`
 
 ## Return value
 

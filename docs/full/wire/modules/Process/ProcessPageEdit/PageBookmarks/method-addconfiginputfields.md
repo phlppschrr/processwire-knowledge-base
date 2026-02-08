@@ -6,4 +6,4 @@ Populate any configuration inputfields to the given $inputfields wrapper for $pr
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

@@ -8,7 +8,7 @@ v1 format is used by ProcessWire admin themes.
 
 ## Arguments
 
-- array $items
+- `$items` `array`
 
 ## Return value
 

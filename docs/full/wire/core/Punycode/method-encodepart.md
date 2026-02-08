@@ -6,7 +6,7 @@ Encode a part of a domain name, such as tld, to its Punycode version
 
 ## Arguments
 
-- string $input Part of a domain name
+- `$input` `string` Part of a domain name
 
 ## Return value
 

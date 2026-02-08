@@ -8,6 +8,6 @@ Get WireCache module that is currently being used
 
 WireCacheInterface
 
-## Meta
+## Since
 
-- @since 3.0.218
+3.0.218

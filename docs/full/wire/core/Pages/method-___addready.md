@@ -6,8 +6,8 @@ Hook called when a new page is about to be added and saved to the database
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

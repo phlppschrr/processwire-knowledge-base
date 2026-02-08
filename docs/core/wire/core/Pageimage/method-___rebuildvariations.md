@@ -21,9 +21,9 @@ rebuilding variations that include crops from an original image that has since c
 
 ## Arguments
 
-- int $mode See the options for $mode argument above (default=0).
-- array $suffix Optional argument to specify suffixes to include or exclude (according to $mode).
-- array $options See $options for `Pageimage::size()` for details.
+- `$mode` (optional) `int` See the options for $mode argument above (default=0).
+- `$suffix` (optional) `array` Optional argument to specify suffixes to include or exclude (according to $mode).
+- `$options` (optional) `array` See $options for `Pageimage::size()` for details.
 
 ## Return value
 

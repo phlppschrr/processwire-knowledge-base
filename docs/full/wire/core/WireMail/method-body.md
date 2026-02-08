@@ -11,7 +11,7 @@ $m->body('Hello world');
 
 ## Arguments
 
-- string $body Email body in text only
+- `$body` `string` Email body in text only
 
 ## Return value
 

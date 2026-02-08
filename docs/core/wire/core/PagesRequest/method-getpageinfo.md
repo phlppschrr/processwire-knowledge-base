@@ -14,6 +14,6 @@ method has not yet been called or that it did not match a page.
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

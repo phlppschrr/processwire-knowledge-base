@@ -8,7 +8,7 @@ Note that WireDatabaseBackup does not currently use exec() mode so this is here 
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

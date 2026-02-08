@@ -8,8 +8,8 @@ Also Creates a webp file when settings indicate it should.
 
 ## Arguments
 
-- resource $im
-- string $filename Source filename
+- `$im` `resource`
+- `$filename` `string` Source filename
 
 ## Return value
 

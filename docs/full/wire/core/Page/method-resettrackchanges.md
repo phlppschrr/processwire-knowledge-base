@@ -11,7 +11,7 @@ the page is saved.
 
 ## Arguments
 
-- bool $trackChanges True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
+- `$trackChanges` (optional) `bool` True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
 
 ## Return value
 

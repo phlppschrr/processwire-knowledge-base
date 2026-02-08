@@ -6,9 +6,9 @@ Add a selectable option
 
 ## Arguments
 
-- string|int $value
-- string|null $label
-- array|null $attributes
+- `$value` `string|int`
+- `$label` (optional) `string|null`
+- `$attributes` (optional) `array|null`
 
 ## Return value
 

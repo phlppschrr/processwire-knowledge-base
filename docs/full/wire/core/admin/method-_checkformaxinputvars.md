@@ -6,4 +6,4 @@ Check if POST request exceeds PHP’s max_input_vars
 
 ## Arguments
 
-- WireInput $input
+- `$input` `WireInput`

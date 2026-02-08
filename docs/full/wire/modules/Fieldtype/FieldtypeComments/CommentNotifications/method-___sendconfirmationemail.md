@@ -6,7 +6,7 @@ Send confirmation/opt-in email for notifications (not yet active)
 
 ## Arguments
 
-- Comment $comment
+- `$comment` `Comment`
 - $email
 - $subcode
 

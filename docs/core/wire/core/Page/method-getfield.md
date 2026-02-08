@@ -8,12 +8,12 @@ Field in context is only returned when output formatting is on.
 
 ## Arguments
 
-- string|int|Field $field
+- `$field` `string|int|Field`
 
 ## Return value
 
 Field|null
 
-## Meta
+## Details
 
 - @todo determine if we can always retrieve in context regardless of output formatting.

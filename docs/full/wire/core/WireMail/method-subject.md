@@ -6,7 +6,7 @@ Set the email subject
 
 ## Arguments
 
-- string $subject Email subject text
+- `$subject` `string` Email subject text
 
 ## Return value
 

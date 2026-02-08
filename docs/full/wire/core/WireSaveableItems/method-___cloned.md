@@ -6,5 +6,5 @@ Hook that runs right after an item has been cloned.
 
 ## Arguments
 
-- Saveable $item
-- Saveable $copy
+- `$item` `Saveable`
+- `$copy` `Saveable`

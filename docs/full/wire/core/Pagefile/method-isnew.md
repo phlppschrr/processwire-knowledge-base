@@ -8,7 +8,7 @@ This is true with a Pagefile that was created during this request and not loaded
 
 ## Arguments
 
-- bool|null $set
+- `$set` (optional) `bool|null`
 
 ## Return value
 

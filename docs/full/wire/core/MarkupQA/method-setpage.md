@@ -6,4 +6,4 @@ Set the current Page
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

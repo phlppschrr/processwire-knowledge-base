@@ -16,8 +16,8 @@ $page->title = 'About Us';
 
 ## Arguments
 
-- string $key Name of property to set
-- mixed $value Value to set
+- `$key` `string` Name of property to set
+- `$value` `mixed` Value to set
 
 ## Return value
 

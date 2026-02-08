@@ -30,8 +30,8 @@ echo "Total value of all products: $" . number_format($total);
 
 ## Arguments
 
-- Page|null $page Optional Page that initiated the uncacheAll
-- array $options Options to modify default behavior: - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent that call, set this to true.
+- `$page` (optional) `Page|null` Optional Page that initiated the uncacheAll
+- `$options` (optional) `array` Options to modify default behavior: - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent that call, set this to true.
 
 ## Return value
 

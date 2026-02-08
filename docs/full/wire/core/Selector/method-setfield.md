@@ -6,12 +6,12 @@ Set field or fields
 
 ## Arguments
 
-- string|array $field
+- `$field` `string|array`
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

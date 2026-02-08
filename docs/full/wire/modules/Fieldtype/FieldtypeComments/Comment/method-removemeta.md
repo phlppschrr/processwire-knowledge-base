@@ -6,12 +6,12 @@ Remove given meta data property or '*' to remove all
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.203
+3.0.203

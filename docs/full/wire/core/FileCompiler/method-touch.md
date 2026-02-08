@@ -6,8 +6,8 @@ Same as PHP touch() but with fallbacks for cases where touch() does not work
 
 ## Arguments
 
-- string $filename
-- null|int $time
+- `$filename` `string`
+- `$time` (optional) `null|int`
 
 ## Return value
 

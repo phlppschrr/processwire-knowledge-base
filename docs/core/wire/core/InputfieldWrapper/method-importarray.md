@@ -50,8 +50,8 @@ array(
 
 ## Arguments
 
-- array $a Array of Inputfield definitions
-- InputfieldWrapper|null $inputfields Specify the wrapper you want them added to, or omit to use current.
+- `$a` `array` Array of Inputfield definitions
+- `$inputfields` (optional) `InputfieldWrapper|null` Specify the wrapper you want them added to, or omit to use current.
 
 ## Return value
 

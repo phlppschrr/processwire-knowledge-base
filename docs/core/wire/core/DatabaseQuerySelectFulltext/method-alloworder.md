@@ -6,12 +6,12 @@ Get or set whether or not 'ORDER BY' statements are allowed to be added
 
 ## Arguments
 
-- null|bool $allow Specify bool to set or omit to get
+- `$allow` (optional) `null|bool` Specify bool to set or omit to get
 
 ## Return value
 
 bool|null Returns bool when known or null when not yet known
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

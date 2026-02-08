@@ -8,6 +8,6 @@ Check that database time and PHP time match
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.241
+3.0.241

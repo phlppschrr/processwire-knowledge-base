@@ -13,7 +13,7 @@ as those are exclusive to the ProcessPageEdit page editor.
 
 ## Arguments
 
-- string|array $fieldName Optional field to limit to, typically the name of a fieldset or tab. - Or optionally specify array of $options (See `Fieldgroup::getPageInputfields()` for options).
+- `$fieldName` (optional) `string|array` Optional field to limit to, typically the name of a fieldset or tab. - Or optionally specify array of $options (See `Fieldgroup::getPageInputfields()` for options).
 
 ## Return value
 

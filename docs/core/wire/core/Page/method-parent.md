@@ -18,7 +18,7 @@ $parent = $page->parent("template=products");
 
 ## Arguments
 
-- string|array $selector Optional selector. When used, it returns the closest parent matching the selector.
+- `$selector` (optional) `string|array` Optional selector. When used, it returns the closest parent matching the selector.
 
 ## Return value
 

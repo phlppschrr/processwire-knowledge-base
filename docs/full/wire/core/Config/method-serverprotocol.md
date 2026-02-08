@@ -10,6 +10,6 @@ This can be accessed by property `$config->serverProtocol`
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.166
+3.0.166

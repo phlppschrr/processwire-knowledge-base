@@ -16,7 +16,7 @@ $page = $event->argumentsByName('page');
 
 ## Arguments
 
-- string $n Optional name of argument value to return. If not specified, array of all argument values returned.
+- `$n` (optional) `string` Optional name of argument value to return. If not specified, array of all argument values returned.
 
 ## Return value
 

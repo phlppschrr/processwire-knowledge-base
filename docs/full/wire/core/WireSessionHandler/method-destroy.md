@@ -6,7 +6,7 @@ Destroy the session indicated by the given session ID
 
 ## Arguments
 
-- string $id Session ID
+- `$id` `string` Session ID
 
 ## Return value
 

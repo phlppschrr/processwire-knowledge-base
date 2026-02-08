@@ -32,8 +32,8 @@ $attrs = $inputfield->attr(true);
 
 ## Arguments
 
-- string|array|bool $key Specify one of the following: - Name of attribute to get (if getting an attribute). - Name of attribute to set (if setting an attribute, and also specifying a value). - Aassociative array to set multiple attributes. - String with attributes split by "+" or "|" to set them all to have the same value. - Specify boolean true to get all attributes in an associative array.
-- string|int|bool|null $value Value to set (if setting), omit otherwise.
+- `$key` `string|array|bool` Specify one of the following: - Name of attribute to get (if getting an attribute). - Name of attribute to set (if setting an attribute, and also specifying a value). - Aassociative array to set multiple attributes. - String with attributes split by "+" or "|" to set them all to have the same value. - Specify boolean true to get all attributes in an associative array.
+- `$value` (optional) `string|int|bool|null` Value to set (if setting), omit otherwise.
 
 ## Return value
 

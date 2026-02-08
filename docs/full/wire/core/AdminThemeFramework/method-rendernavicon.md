@@ -9,7 +9,7 @@ class is added to it.
 
 ## Arguments
 
-- string $icon Name of icon to render, excluding the “fa-” prefix
+- `$icon` `string` Name of icon to render, excluding the “fa-” prefix
 
 ## Return value
 

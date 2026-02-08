@@ -5,9 +5,9 @@ Source: `wire/core/Fuel.php`
 
 ## Arguments
 
-- string $key API variable name to set - should be valid PHP variable name.
-- object|mixed $value Value for the API variable.
-- bool $lock Whether to prevent this API variable from being overwritten in the future.
+- `$key` `string` API variable name to set - should be valid PHP variable name.
+- `$value` `object|mixed` Value for the API variable.
+- `$lock` (optional) `bool` Whether to prevent this API variable from being overwritten in the future.
 
 ## Return value
 

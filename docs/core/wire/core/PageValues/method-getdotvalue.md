@@ -6,8 +6,8 @@ Given a 'field.subfield' type string traverse properties and return value
 
 ## Arguments
 
-- Page $page
-- string $key
+- `$page` `Page`
+- `$key` `string`
 
 ## Return value
 

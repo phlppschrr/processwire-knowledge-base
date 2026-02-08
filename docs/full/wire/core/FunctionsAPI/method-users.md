@@ -19,7 +19,7 @@ $us = users('roles.name=editor');
 
 ## Arguments
 
-- string|array|int $selector Optional selector to send to find() or get() - Specify user name or ID to get and return that User - Specify a selector string to find all users matching selector (PageArray)
+- `$selector` (optional) `string|array|int` Optional selector to send to find() or get() - Specify user name or ID to get and return that User - Specify a selector string to find all users matching selector (PageArray)
 
 ## Return value
 

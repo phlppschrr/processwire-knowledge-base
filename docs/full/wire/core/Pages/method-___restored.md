@@ -6,4 +6,4 @@ Hook called when a page has been moved OUT of the trash (restored)
 
 ## Arguments
 
-- Page $page Page that was restored
+- `$page` `Page` Page that was restored

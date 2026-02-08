@@ -6,8 +6,8 @@ Handles field config for Textarea field
 
 ## Arguments
 
-- Field $field
-- InputfieldWrapper $inputfields
+- `$field` `Field`
+- `$inputfields` `InputfieldWrapper`
 
 ## Return value
 

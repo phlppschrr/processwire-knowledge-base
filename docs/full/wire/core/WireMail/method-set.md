@@ -6,8 +6,8 @@ Set property
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`
 
 ## Return value
 

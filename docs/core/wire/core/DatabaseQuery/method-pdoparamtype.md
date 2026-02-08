@@ -6,7 +6,7 @@ Get the PDO::PARAM_* type for given value
 
 ## Arguments
 
-- string|int|null $value
+- `$value` `string|int|null`
 
 ## Return value
 

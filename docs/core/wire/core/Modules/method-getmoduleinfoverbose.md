@@ -17,8 +17,8 @@ This is the same as what’s returned by `Modules::getModuleInfo()` except that 
 
 ## Arguments
 
-- string|Module|int $class May be class name, module instance, or module ID
-- array $options Optional options to modify behavior of what gets returned: - `noCache` (bool): prevents use of cache to retrieve the module info - `noInclude` (bool): prevents include() of the module file, applicable only if it hasn't already been included
+- `$class` `string|Module|int` May be class name, module instance, or module ID
+- `$options` (optional) `array` Optional options to modify behavior of what gets returned: - `noCache` (bool): prevents use of cache to retrieve the module info - `noInclude` (bool): prevents include() of the module file, applicable only if it hasn't already been included
 
 ## Return value
 

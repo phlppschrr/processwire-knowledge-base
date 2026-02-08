@@ -6,7 +6,7 @@ Get attribute
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

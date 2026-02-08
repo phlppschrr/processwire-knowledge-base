@@ -93,9 +93,9 @@ size() with new quality or upscaling settings.
 
 ## Arguments
 
-- int|string $width Target width of new image or (3.0.151+) specify prefined image size name
-- int|array $height Target height of new image or (3.0.151+) options array if no height argument needed
-- array|string|int $options Array of options to override default behavior: - Specify `array` of options as indicated in the section above. - Or you may specify type `string` containing "cropping" value. - Or you may specify type `int` containing "quality" value. - Or you may specify type `bool` containing "upscaling" value.
+- `$width` `int|string` Target width of new image or (3.0.151+) specify prefined image size name
+- `$height` (optional) `int|array` Target height of new image or (3.0.151+) options array if no height argument needed
+- `$options` (optional) `array|string|int` Array of options to override default behavior: - Specify `array` of options as indicated in the section above. - Or you may specify type `string` containing "cropping" value. - Or you may specify type `int` containing "quality" value. - Or you may specify type `bool` containing "upscaling" value.
 
 ## Return value
 

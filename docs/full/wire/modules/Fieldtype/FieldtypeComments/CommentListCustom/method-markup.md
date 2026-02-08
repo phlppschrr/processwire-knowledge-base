@@ -6,8 +6,8 @@ Get or set markup properties
 
 ## Arguments
 
-- string|array $key Property to get or set, or array of properties to set
-- null|mixed $value Specify only if setting individual property
+- `$key` (optional) `string|array` Property to get or set, or array of properties to set
+- `$value` (optional) `null|mixed` Specify only if setting individual property
 
 ## Return value
 

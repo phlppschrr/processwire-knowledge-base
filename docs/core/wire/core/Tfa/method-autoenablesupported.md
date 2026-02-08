@@ -13,12 +13,12 @@ that do not support it can ignore this method, as the default returns false.
 
 ## Arguments
 
-- User|null $user Specify user to also confirm it is supported for given user. Omit to test if the module supports it in general.
+- `$user` (optional) `User|null` Specify user to also confirm it is supported for given user. Omit to test if the module supports it in general.
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

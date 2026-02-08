@@ -6,8 +6,8 @@ Given a string starting with a value, return that value, and remove it from $str
 
 ## Arguments
 
-- string $str String to extract value from
-- string $quote Automatically populated with quote type, if found
+- `$str` `string` String to extract value from
+- `$quote` `string` Automatically populated with quote type, if found
 
 ## Return value
 

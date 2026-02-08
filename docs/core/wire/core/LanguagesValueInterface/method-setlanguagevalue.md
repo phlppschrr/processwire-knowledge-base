@@ -6,5 +6,5 @@ Sets the value for a given language
 
 ## Arguments
 
-- int|Language $languageID
-- mixed $value
+- `$languageID` `int|Language`
+- `$value` `mixed`

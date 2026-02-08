@@ -6,7 +6,7 @@ Run maintenance for a page that was just saved or deleted
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

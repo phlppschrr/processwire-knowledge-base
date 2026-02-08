@@ -8,6 +8,6 @@ Get array of information about this engine
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.138
+3.0.138

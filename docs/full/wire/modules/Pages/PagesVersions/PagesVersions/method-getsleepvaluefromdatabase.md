@@ -6,13 +6,13 @@ Get sleep value from the page field’s field_name table data in database
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 
 array|int|mixed|string
 
-## Meta
+## Details
 
 - @todo method currently not used but may be later

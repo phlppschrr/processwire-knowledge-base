@@ -22,8 +22,8 @@ $items->sort("last_name, first_name");
 
 ## Arguments
 
-- string|array $properties Field names to sort by (CSV string or array).
-- int|null $flags Optionally specify sort flags (see sortFlags method for details).
+- `$properties` `string|array` Field names to sort by (CSV string or array).
+- `$flags` (optional) `int|null` Optionally specify sort flags (see sortFlags method for details).
 
 ## Return value
 

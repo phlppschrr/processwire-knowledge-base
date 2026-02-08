@@ -6,12 +6,12 @@ Get URL to edit field in the admin
 
 ## Arguments
 
-- array|bool|string $options Specify array of options, string for find option, or bool for http option. - `find` (string): Name of field to find in editor form - `http` (bool): True to force inclusion of scheme and hostname
+- `$options` (optional) `array|bool|string` Specify array of options, string for find option, or bool for http option. - `find` (string): Name of field to find in editor form - `http` (bool): True to force inclusion of scheme and hostname
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.151
+3.0.151

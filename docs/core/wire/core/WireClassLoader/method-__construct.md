@@ -5,4 +5,4 @@ Source: `wire/core/WireClassLoader.php`
 
 ## Arguments
 
-- ProcessWire $wire
+- `$wire` (optional) `ProcessWire`

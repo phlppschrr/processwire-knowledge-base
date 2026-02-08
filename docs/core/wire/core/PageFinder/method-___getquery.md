@@ -6,8 +6,8 @@ Given one or more selectors, create the SQL query for finding pages.
 
 ## Arguments
 
-- Selectors $selectors Array of selectors.
-- array $options
+- `$selectors` `Selectors` Array of selectors.
+- `$options` `array`
 
 ## Return value
 
@@ -17,6 +17,6 @@ DatabaseQuerySelect
 
 - PageFinderSyntaxException
 
-## Meta
+## Details
 
 - @TODO split this method up into more parts, it's too long

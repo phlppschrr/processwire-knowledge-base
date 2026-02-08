@@ -9,13 +9,13 @@ If it is different, then it is at least a class that extends the one defined by 
 
 ## Arguments
 
-- Template $template
-- bool $withNamespace Include namespace? (default=true)
+- `$template` `Template`
+- `$withNamespace` (optional) `bool` Include namespace? (default=true)
 
 ## Return value
 
 string Returned class name includes namespace
 
-## Meta
+## Since
 
-- @since 3.0.152
+3.0.152

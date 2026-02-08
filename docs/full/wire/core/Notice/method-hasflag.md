@@ -6,12 +6,12 @@ Does this Notice have given flag?
 
 ## Arguments
 
-- int|string $flag
+- `$flag` `int|string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

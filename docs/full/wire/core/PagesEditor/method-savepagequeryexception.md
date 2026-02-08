@@ -14,10 +14,10 @@ Integrity constraint violation: 1062 Duplicate entry 'background-3552' for key '
 
 ## Arguments
 
-- Page $page
-- \PDOStatement $query
-- \PDOException|\Exception $exception
-- array $options
+- `$page` `Page`
+- `$query` `\PDOStatement`
+- `$exception` `\PDOException|\Exception`
+- `$options` `array`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Clean a comment string by issuing several filters
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

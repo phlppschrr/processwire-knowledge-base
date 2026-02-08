@@ -6,9 +6,9 @@ Generate random string using method that pulls from the base64 method
 
 ## Arguments
 
-- int $length Required length
-- string $allowed Allowed characters
-- array $options See options for alphanumeric() method
+- `$length` `int` Required length
+- `$allowed` `string` Allowed characters
+- `$options` `array` See options for alphanumeric() method
 
 ## Return value
 

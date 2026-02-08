@@ -10,7 +10,7 @@ $notices->add(new NoticeError("An error occurred!"));
 
 ## Arguments
 
-- Notice $item
+- `$item` `Notice`
 
 ## Return value
 

@@ -8,4 +8,4 @@ This forces the modules file and information cache to be re-created.
 
 ## Arguments
 
-- bool $showMessages Show notification messages about what was found? (default=false) 3.0.172+
+- `$showMessages` (optional) `bool` Show notification messages about what was found? (default=false) 3.0.172+

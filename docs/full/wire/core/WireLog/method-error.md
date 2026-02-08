@@ -13,8 +13,8 @@ $log->error("Login attempt failed");
 
 ## Arguments
 
-- string $text Text to save in the log
-- int|bool $flags Specify boolean true to also display the error interactively (admin only).
+- `$text` `string` Text to save in the log
+- `$flags` (optional) `int|bool` Specify boolean true to also display the error interactively (admin only).
 
 ## Return value
 

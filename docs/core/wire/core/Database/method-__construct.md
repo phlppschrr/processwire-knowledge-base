@@ -12,12 +12,12 @@ in case someone wants to use this class elsewhere.
 
 ## Arguments
 
-- string|Config $host Hostname or object with config properties.
-- string $user Username
-- string $pass Password
-- string $db Database name
-- int $port Port
-- string $socket Socket
+- `$host` (optional) `string|Config` Hostname or object with config properties.
+- `$user` (optional) `string` Username
+- `$pass` (optional) `string` Password
+- `$db` (optional) `string` Database name
+- `$port` (optional) `int` Port
+- `$socket` (optional) `string` Socket
 
 ## Throws
 

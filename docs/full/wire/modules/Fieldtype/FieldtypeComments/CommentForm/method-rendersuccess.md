@@ -8,7 +8,7 @@ A success message is shown rather than the form.
 
 ## Arguments
 
-- Comment|null $comment
+- `$comment` (optional) `Comment|null`
 
 ## Return value
 

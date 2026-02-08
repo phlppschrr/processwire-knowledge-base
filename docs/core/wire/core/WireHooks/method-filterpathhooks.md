@@ -6,13 +6,13 @@ Return path hooks that have potential to match given request path
 
 ## Arguments
 
-- string $requestPath
-- bool $has Specify true to change return value to boolean as to whether any can match (default=false)
+- `$requestPath` `string`
+- `$has` (optional) `bool` Specify true to change return value to boolean as to whether any can match (default=false)
 
 ## Return value
 
 array|bool
 
-## Meta
+## Since
 
-- @since 3.0.174
+3.0.174

@@ -9,7 +9,7 @@ effectively skipping over input processing entirely for this Inputfield.
 
 ## Arguments
 
-- bool|null $setEditable Specify true or false to set the editable state, or omit just to get the editable state.
+- `$setEditable` (optional) `bool|null` Specify true or false to set the editable state, or omit just to get the editable state.
 
 ## Return value
 

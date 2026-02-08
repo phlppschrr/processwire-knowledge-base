@@ -15,8 +15,8 @@ Filedata is any additional data that you want to store with the file’s databas
 
 ## Arguments
 
-- string|array|false|null $key Specify array to set all file data, or key (string) to set or get a property, Or specify boolean false to remove key specified by $value argument.
-- null|string|array|int|float $value Specify a value to set for given property
+- `$key` (optional) `string|array|false|null` Specify array to set all file data, or key (string) to set or get a property, Or specify boolean false to remove key specified by $value argument.
+- `$value` (optional) `null|string|array|int|float` Specify a value to set for given property
 
 ## Return value
 

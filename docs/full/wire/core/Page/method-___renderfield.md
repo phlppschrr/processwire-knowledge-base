@@ -30,9 +30,9 @@ echo $page->renderField('images');
 
 ## Arguments
 
-- string $fieldName May be any custom field name or native page property.
-- string $file Optionally specify file (in site/templates/fields/) to render with (may optionally omit .php extension).
-- mixed|null $value Optionally specify value to render, otherwise it will be pulled from this page.
+- `$fieldName` `string` May be any custom field name or native page property.
+- `$file` (optional) `string` Optionally specify file (in site/templates/fields/) to render with (may optionally omit .php extension).
+- `$value` (optional) `mixed|null` Optionally specify value to render, otherwise it will be pulled from this page.
 
 ## Return value
 

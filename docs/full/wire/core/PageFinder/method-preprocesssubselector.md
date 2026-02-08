@@ -6,5 +6,5 @@ Pre-process a Selector that has a [quoted selector] embedded within its value
 
 ## Arguments
 
-- Selector $selector
-- Selectors $parentSelectors
+- `$selector` `Selector`
+- `$parentSelectors` `Selectors`

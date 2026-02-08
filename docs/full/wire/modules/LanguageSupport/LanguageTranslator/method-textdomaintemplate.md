@@ -6,9 +6,9 @@ Return the array template for a textdomain, optionally populating it with data
 
 ## Arguments
 
-- string $file
-- string $textdomain
-- array $translations
+- `$file` (optional) `string`
+- `$textdomain` (optional) `string`
+- `$translations` (optional) `array`
 
 ## Return value
 

@@ -8,7 +8,7 @@ This should be called at the end of each request.
 
 ## Arguments
 
-- int $interval Number of seconds between maintenance runs (default=86400)
+- `$interval` (optional) `int` Number of seconds between maintenance runs (default=86400)
 
 ## Return value
 

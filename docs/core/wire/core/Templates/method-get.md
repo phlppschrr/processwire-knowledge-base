@@ -8,7 +8,7 @@ Given a template ID or name, return the matching template or NULL if not found.
 
 ## Arguments
 
-- string|int $key Template name or ID
+- `$key` `string|int` Template name or ID
 
 ## Return value
 

@@ -12,12 +12,12 @@ if($page->matchesDatabase("created>=today")) {
 
 ## Arguments
 
-- string|Selectors|array $s Selector to compare against (string, Selectors object, or array).
+- `$s` `string|Selectors|array` Selector to compare against (string, Selectors object, or array).
 
 ## Return value
 
 bool Returns true if this page matches, or false if it doesn't.
 
-## Meta
+## Since
 
-- @since 3.0.225
+3.0.225

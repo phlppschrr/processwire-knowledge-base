@@ -8,6 +8,6 @@ Get last used instance of PageFinder (for debugging purposes)
 
 PageFinder|null
 
-## Meta
+## Since
 
-- @since 3.0.146
+3.0.146

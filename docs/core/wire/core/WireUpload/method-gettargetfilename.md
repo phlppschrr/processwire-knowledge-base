@@ -9,7 +9,7 @@ Otehrwise returns the filename you gave it.
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

@@ -6,8 +6,8 @@ Given an item, get the item before it in the WireArray
 
 ## Arguments
 
-- Wire $item
-- bool $strict If false, string comparison will be used rather than exact instance comparison.
+- `$item` `Wire`
+- `$strict` (optional) `bool` If false, string comparison will be used rather than exact instance comparison.
 
 ## Return value
 

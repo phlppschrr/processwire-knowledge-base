@@ -9,9 +9,9 @@ i.e. id, name, templates_id, status, parent_id, etc.
 
 ## Arguments
 
-- int|array $pageId Page ID or array of page IDs
-- string|array $col Column name you want to get
-- array $options - `cache` (bool): Allow use of memory cache to retrieve column value when available? (default=true) Used only if $pageId is an integer (not used when array of page IDs).
+- `$pageId` `int|array` Page ID or array of page IDs
+- `$col` `string|array` Column name you want to get
+- `$options` (optional) `array` - `cache` (bool): Allow use of memory cache to retrieve column value when available? (default=true) Used only if $pageId is an integer (not used when array of page IDs).
 
 ## Return value
 
@@ -21,6 +21,6 @@ int|string|array|null Returns column value or array of column values if $pageId 
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.190
+3.0.190

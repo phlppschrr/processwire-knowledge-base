@@ -6,4 +6,4 @@ Delete a page from the pages_access table
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

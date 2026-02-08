@@ -8,8 +8,8 @@ This works by finding the children of the trash page and performing a recursive 
 
 ## Arguments
 
-- array $options Options passed to emptyTrash() method
-- array $result Verbose array, modified directly
+- `$options` `array` Options passed to emptyTrash() method
+- `$result` `array` Verbose array, modified directly
 
 ## Return value
 

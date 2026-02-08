@@ -7,12 +7,12 @@ in short form or full RawInfoData
 
 ## Arguments
 
-- bool $rawData
+- `$rawData` (optional) `bool`
 
 ## Return value
 
 string|array
 
-## Meta
+## Details
 
 - @todo this appears to be a duplicate of what's in ImageSizer class?

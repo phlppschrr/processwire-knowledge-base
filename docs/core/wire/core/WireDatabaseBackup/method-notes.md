@@ -6,7 +6,7 @@ Get all notes
 
 ## Arguments
 
-- bool $reset
+- `$reset` (optional) `bool`
 
 ## Return value
 

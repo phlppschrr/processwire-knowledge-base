@@ -8,8 +8,8 @@ This is procedural version of the `$files->copy()` method.
 
 ## Arguments
 
-- string $src Path to copy files from
-- string $dst Path to copy files to. Directory is created if it doesn’t already exist.
+- `$src` `string` Path to copy files from
+- `$dst` `string` Path to copy files to. Directory is created if it doesn’t already exist.
 - bool|array Array of options: - `recursive` (bool): Whether to copy directories within recursively. (default=true) - `allowEmptyDirs` (bool): Copy directories even if they are empty? (default=true) - If a boolean is specified for $options, it is assumed to be the 'recursive' option.
 
 ## Return value

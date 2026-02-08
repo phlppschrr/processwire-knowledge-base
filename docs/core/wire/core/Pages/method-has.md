@@ -14,8 +14,8 @@ When `$verbose` option is used, an array is returned instead. Verbose return arr
 
 ## Arguments
 
-- string|int|array|Selectors $selector
-- bool $verbose Return verbose array with page id, parent_id, templates_id rather than just page id? (default=false)
+- `$selector` `string|int|array|Selectors`
+- `$verbose` (optional) `bool` Return verbose array with page id, parent_id, templates_id rather than just page id? (default=false)
 
 ## Return value
 
@@ -26,6 +26,6 @@ array|int
 - [Pages::count()](method-count.md)
 - [Pages::get()](method-get.md)
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

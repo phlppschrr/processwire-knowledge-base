@@ -8,4 +8,4 @@ Add a duplicate to the list
 
 - $className
 - $pathname
-- bool $current Is this the current one in use?
+- `$current` (optional) `bool` Is this the current one in use?

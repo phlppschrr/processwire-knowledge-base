@@ -10,14 +10,14 @@ target resource with the request payload.”
 
 ## Arguments
 
-- string $url URL to PUT to (including http:// or https://)
-- array|string $data Associative array of data to send (if not already set before), or raw data to send (such as JSON string)
-- array $options Optional options to modify default behavior, see the send() method for details.
+- `$url` `string` URL to PUT to (including http:// or https://)
+- `$data` (optional) `array|string` Associative array of data to send (if not already set before), or raw data to send (such as JSON string)
+- `$options` (optional) `array` Optional options to modify default behavior, see the send() method for details.
 
 ## Return value
 
 bool|string False on failure or string of contents received on success.
 
-## Meta
+## Since
 
-- @since 3.0.222
+3.0.222

@@ -8,14 +8,14 @@ Scans all textdomains to find first translation.
 
 ## Arguments
 
-- string $text
-- string|array $context - Optional context label for the text, to differentiate from others that may be the same in English, but not other languages. - If context is not needed you may optionally specify the $options array here.
-- array $options - `getInfo` (bool): Return verbose array of information about found translation? (default=false)
+- `$text` `string`
+- `$context` (optional) `string|array` - Optional context label for the text, to differentiate from others that may be the same in English, but not other languages. - If context is not needed you may optionally specify the $options array here.
+- `$options` (optional) `array` - `getInfo` (bool): Return verbose array of information about found translation? (default=false)
 
 ## Return value
 
 string|array - Returns string with translated text if found, or blank string if not found. - Returns array of info if getInfo option requested. This array is empty if translation was not found.
 
-## Meta
+## Since
 
-- @since 3.0.237
+3.0.237

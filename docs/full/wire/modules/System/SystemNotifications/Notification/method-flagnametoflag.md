@@ -6,7 +6,7 @@ Given a flag name, return the corresponding flag value
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

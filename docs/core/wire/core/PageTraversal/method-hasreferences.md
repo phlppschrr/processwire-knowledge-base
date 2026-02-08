@@ -10,9 +10,9 @@ the $selector argument.
 
 ## Arguments
 
-- Page $page
-- string $selector Filter count by this selector
-- string|Field|bool $field Limit count to given Field or specify boolean true to return array of counts.
+- `$page` `Page`
+- `$selector` (optional) `string` Filter count by this selector
+- `$field` (optional) `string|Field|bool` Limit count to given Field or specify boolean true to return array of counts.
 
 ## Return value
 

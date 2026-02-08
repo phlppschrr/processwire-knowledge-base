@@ -6,8 +6,8 @@ Given a process and method name, return the first matching valid view file for i
 
 ## Arguments
 
-- Process $process
-- string $method If omitted, 'execute' is assumed
+- `$process` `Process`
+- `$method` (optional) `string` If omitted, 'execute' is assumed
 
 ## Return value
 

@@ -6,8 +6,8 @@ Count the number of substring occurrences
 
 ## Arguments
 
-- string $haystack
-- string $needle
+- `$haystack` `string`
+- `$needle` `string`
 
 ## Return value
 

@@ -8,7 +8,7 @@ This function designed primarily to be called by the renderSideNavItems() functi
 
 ## Arguments
 
-- Page $p
+- `$p` `Page`
 
 ## Return value
 

@@ -16,8 +16,8 @@ See Page::numChildren() for details on arguments
 
 ## Arguments
 
-- Page $page
-- string|int|bool|null $selector
+- `$page` `Page`
+- `$selector` (optional) `string|int|bool|null`
 
 ## Return value
 

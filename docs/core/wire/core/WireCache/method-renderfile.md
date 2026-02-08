@@ -20,9 +20,9 @@ echo $cache->renderFile('partials/primary-nav.php', 3600);
 
 ## Arguments
 
-- string $filename Filename to render (typically PHP file). Can be full path/file, or dir/file relative to current work directory (which is typically /site/templates/). If providing a file relative to current dir, it should not start with "/". File must be somewhere within site/templates/, site/modules/ or wire/modules/, or provide your own `allowedPaths` option. Please note that $filename receives API variables already (you don’t have to provide them).
-- int|Page|string|null $expire Lifetime of this cache, in seconds, OR one of the following: - Specify one of the `WireCache::expire*` constants. - Specify the future date you want it to expire (as unix timestamp or any `strtotime()` compatible date format) - Provide a `Page` object to expire when any page using that template is saved. - Specify `WireCache::expireNever` to prevent expiration. - Specify `WireCache::expireSave` to expire when any page or template is saved. - Specify selector string matching pages that–when saved–expire the cache. - Omit for default value, which is `WireCache::expireDaily`.
-- array $options Accepts all options for the `WireFileTools::render()` method, plus these additional ones: - `name` (string): Optionally specify a unique name for this cache, otherwise $filename will be used as the unique name. (default='') - `vars` (array): Optional associative array of extra variables to send to template file. (default=[]) - `allowedPaths` (array): Array of paths that are allowed (default is anywhere within templates, core modules and site modules) - `throwExceptions` (bool): Throw exceptions when fatal error occurs? (default=true)
+- `$filename` `string` Filename to render (typically PHP file). Can be full path/file, or dir/file relative to current work directory (which is typically /site/templates/). If providing a file relative to current dir, it should not start with "/". File must be somewhere within site/templates/, site/modules/ or wire/modules/, or provide your own `allowedPaths` option. Please note that $filename receives API variables already (you don’t have to provide them).
+- `$expire` (optional) `int|Page|string|null` Lifetime of this cache, in seconds, OR one of the following: - Specify one of the `WireCache::expire*` constants. - Specify the future date you want it to expire (as unix timestamp or any `strtotime()` compatible date format) - Provide a `Page` object to expire when any page using that template is saved. - Specify `WireCache::expireNever` to prevent expiration. - Specify `WireCache::expireSave` to expire when any page or template is saved. - Specify selector string matching pages that–when saved–expire the cache. - Omit for default value, which is `WireCache::expireDaily`.
+- `$options` (optional) `array` Accepts all options for the `WireFileTools::render()` method, plus these additional ones: - `name` (string): Optionally specify a unique name for this cache, otherwise $filename will be used as the unique name. (default='') - `vars` (array): Optional associative array of extra variables to send to template file. (default=[]) - `allowedPaths` (array): Array of paths that are allowed (default is anywhere within templates, core modules and site modules) - `throwExceptions` (bool): Throw exceptions when fatal error occurs? (default=true)
 
 ## Return value
 
@@ -36,6 +36,6 @@ string|bool Rendered template file or boolean false on fatal error (and throwExc
 
 - [WireFileTools::render()](../WireFileTools/method-render.md)
 
-## Meta
+## Since
 
-- @since 3.0.130
+3.0.130

@@ -6,7 +6,7 @@ Set the max allowed number of uploaded files
 
 ## Arguments
 
-- int $maxFiles
+- `$maxFiles` `int`
 
 ## Return value
 

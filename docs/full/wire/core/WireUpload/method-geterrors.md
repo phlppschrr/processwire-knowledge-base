@@ -6,7 +6,7 @@ Get error messages
 
 ## Arguments
 
-- bool $clear Clear the list of error messages? (default=false)
+- `$clear` (optional) `bool` Clear the list of error messages? (default=false)
 
 ## Return value
 

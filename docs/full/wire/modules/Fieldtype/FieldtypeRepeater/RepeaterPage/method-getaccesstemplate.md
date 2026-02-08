@@ -23,9 +23,9 @@ return $this;
 
 ## Arguments
 
-- string $what Name of property that changed
-- mixed $old Previous value before change
-- mixed $new New value
+- `$what` `string` Name of property that changed
+- `$old` `mixed` Previous value before change
+- `$new` `mixed` New value
 
 ## Return value
 

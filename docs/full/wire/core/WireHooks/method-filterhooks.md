@@ -6,9 +6,9 @@ Filter and return hooks matching given property and value
 
 ## Arguments
 
-- array $hooks Hooks from getHooks() method
-- string $property Property name from hook (or hook options)
-- string|bool|int $value Value to match
+- `$hooks` `array` Hooks from getHooks() method
+- `$property` `string` Property name from hook (or hook options)
+- `$value` `string|bool|int` Value to match
 
 ## Return value
 

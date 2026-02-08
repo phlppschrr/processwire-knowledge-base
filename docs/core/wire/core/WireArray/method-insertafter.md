@@ -10,8 +10,8 @@ $items->insertAfter($newItem, $existingItem);
 
 ## Arguments
 
-- Wire|string|int $item Item you want to insert
-- Wire|string|int $existingItem Item already present that you want to insert after
+- `$item` `Wire|string|int` Item you want to insert
+- `$existingItem` `Wire|string|int` Item already present that you want to insert after
 
 ## Return value
 

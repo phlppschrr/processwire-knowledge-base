@@ -9,8 +9,8 @@ When any $page argument is given, this does not remove pages from selectorCache.
 
 ## Arguments
 
-- Page|PageArray|int|null $page Page to uncache, PageArray of pages to uncache, ID of page to uncache (3.0.153+), or omit to uncache all.
-- array $options Additional options to modify behavior: - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent that call, set this to true.
+- `$page` (optional) `Page|PageArray|int|null` Page to uncache, PageArray of pages to uncache, ID of page to uncache (3.0.153+), or omit to uncache all.
+- `$options` (optional) `array` Additional options to modify behavior: - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent that call, set this to true.
 
 ## Return value
 

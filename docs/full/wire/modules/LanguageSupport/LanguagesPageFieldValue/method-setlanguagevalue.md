@@ -6,8 +6,8 @@ Sets the value for a given language
 
 ## Arguments
 
-- int|Language|string $languageID Language object, id, or name
-- mixed $value
+- `$languageID` `int|Language|string` Language object, id, or name
+- `$value` `mixed`
 
 ## Return value
 

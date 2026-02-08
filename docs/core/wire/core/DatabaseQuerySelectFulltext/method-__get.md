@@ -5,7 +5,7 @@ Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

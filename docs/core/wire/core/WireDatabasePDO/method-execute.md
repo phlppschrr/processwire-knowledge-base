@@ -20,9 +20,9 @@ $database->execute($query);
 
 ## Arguments
 
-- \PDOStatement $query
-- bool $throw Whether or not to throw exception on query error (default=true)
-- int $maxTries Max number of times it will attempt to retry query on lost connection error
+- `$query` `\PDOStatement`
+- `$throw` (optional) `bool` Whether or not to throw exception on query error (default=true)
+- `$maxTries` (optional) `int` Max number of times it will attempt to retry query on lost connection error
 
 ## Return value
 

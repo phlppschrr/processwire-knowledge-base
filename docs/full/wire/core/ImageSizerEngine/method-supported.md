@@ -6,7 +6,7 @@ Is this ImageSizer class ready only means: does the server / system provide all 
 
 ## Arguments
 
-- string $action Optional type of action supported.
+- `$action` (optional) `string` Optional type of action supported.
 
 ## Return value
 

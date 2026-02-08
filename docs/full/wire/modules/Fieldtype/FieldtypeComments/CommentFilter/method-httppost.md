@@ -9,12 +9,12 @@ Send an HTTP POST request
 - $request
 - $host
 - $path
-- int $port
+- `$port` (optional) `int`
 
 ## Return value
 
 array|string
 
-## Meta
+## Deprecated
 
-- @deprecated no longer in use (replaced with WireHttp)
+no longer in use (replaced with WireHttp)

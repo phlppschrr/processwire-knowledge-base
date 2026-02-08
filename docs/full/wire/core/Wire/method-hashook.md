@@ -17,7 +17,7 @@ if($pages->hasHook('find()')) {
 
 ## Arguments
 
-- string $name Method() name or property name: - If checking for a hooked method, it should be in the form `method()`. - If checking for a hooked property, it should be in the form `property`.
+- `$name` `string` Method() name or property name: - If checking for a hooked method, it should be in the form `method()`. - If checking for a hooked property, it should be in the form `property`.
 
 ## Return value
 

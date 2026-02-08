@@ -6,7 +6,7 @@ Lock field table for writing
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

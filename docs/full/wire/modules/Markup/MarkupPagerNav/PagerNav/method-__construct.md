@@ -6,9 +6,9 @@ Construct the PagerNav
 
 ## Arguments
 
-- int $totalItems Total number of items in the list to be paginated.
-- int $itemsPerPage The number of items you want to appear per page.
-- int $currentPage The current page number (NOTE: 0 based, not 1 based)
+- `$totalItems` `int` Total number of items in the list to be paginated.
+- `$itemsPerPage` `int` The number of items you want to appear per page.
+- `$currentPage` `int` The current page number (NOTE: 0 based, not 1 based)
 
 ## Throws
 

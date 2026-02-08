@@ -6,9 +6,9 @@ Cache given page into a named group that it can be uncached with
 
 ## Arguments
 
-- Page $page
-- string $groupName
+- `$page` `Page`
+- `$groupName` `string`
 
-## Meta
+## Since
 
-- @since 3.0.198
+3.0.198

@@ -6,7 +6,7 @@ Database cache maintenance (every 10 minutes)
 
 ## Arguments
 
-- Template|Page $obj
+- `$obj` `Template|Page`
 
 ## Return value
 
@@ -16,6 +16,6 @@ bool
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

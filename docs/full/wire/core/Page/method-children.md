@@ -20,8 +20,8 @@ $newest = $page->children("limit=3, sort=-created");
 
 ## Arguments
 
-- string $selector Selector to use, or omit to return all children.
-- array $options Optional options to modify behavior, the same as those provided to Pages::find.
+- `$selector` (optional) `string` Selector to use, or omit to return all children.
+- `$options` (optional) `array` Optional options to modify behavior, the same as those provided to Pages::find.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Does the given string value represent an ID? If yes, return ID, otherwise return
 
 ## Arguments
 
-- string $val
+- `$val` `string`
 
 ## Return value
 

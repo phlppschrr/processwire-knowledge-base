@@ -6,4 +6,4 @@ Format Notice text
 
 ## Arguments
 
-- Notice $item
+- `$item` `Notice`

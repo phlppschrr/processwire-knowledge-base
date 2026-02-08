@@ -11,12 +11,12 @@ Example return values:
 
 ## Arguments
 
-- bool $getNumberOnly Get only version number, exclude any vendor specific suffixes? (default=false) 3.0.185+
+- `$getNumberOnly` (optional) `bool` Get only version number, exclude any vendor specific suffixes? (default=false) 3.0.185+
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.166
+3.0.166

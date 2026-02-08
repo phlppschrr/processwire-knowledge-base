@@ -8,7 +8,7 @@ Otherwise the same as get()
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

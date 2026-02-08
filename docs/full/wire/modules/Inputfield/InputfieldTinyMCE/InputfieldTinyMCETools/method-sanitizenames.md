@@ -6,7 +6,7 @@ Sanitize toolbar or plugin names
 
 ## Arguments
 
-- string|array $value
+- `$value` `string|array`
 
 ## Return value
 

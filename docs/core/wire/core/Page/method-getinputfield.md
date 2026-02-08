@@ -12,7 +12,7 @@ Get a single Inputfield for the given field name
 
 ## Arguments
 
-- string $fieldName
+- `$fieldName` `string`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Create a backup of a module directory
 
 ## Arguments
 
-- string $moduleDir
+- `$moduleDir` `string`
 
 ## Return value
 

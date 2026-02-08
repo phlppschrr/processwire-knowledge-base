@@ -10,9 +10,9 @@ Example: browser_title|headline|title - Return the value of the first field that
 
 ## Arguments
 
-- page $page
-- string $multiKey
-- bool $getKey Specify true to get the first matching key (name) rather than value
+- `$page` `page`
+- `$multiKey` `string`
+- `$getKey` (optional) `bool` Specify true to get the first matching key (name) rather than value
 
 ## Return value
 

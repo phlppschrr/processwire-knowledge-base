@@ -6,7 +6,7 @@ Render an extra markup region
 
 ## Arguments
 
-- string $for
+- `$for` `string`
 
 ## Return value
 

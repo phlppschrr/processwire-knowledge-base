@@ -11,13 +11,13 @@ $http->post('http://domain.com', [ 'foo' => 'bar' ], [ 'use' => 'curl' ]);
 
 ## Arguments
 
-- string $name Name of cookie to set
-- string|int|null $value Specify value to set or null to remove
+- `$name` `string` Name of cookie to set
+- `$value` `string|int|null` Specify value to set or null to remove
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.199
+3.0.199

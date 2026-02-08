@@ -15,6 +15,6 @@ string
 - hasFiles()
 - filesManager()
 
-## Meta
+## Since
 
-- @since 3.0.138 You can also use the equivalent but more verbose `$page->filesManager()->path()` in any version
+3.0.138 You can also use the equivalent but more verbose `$page->filesManager()->path()` in any version

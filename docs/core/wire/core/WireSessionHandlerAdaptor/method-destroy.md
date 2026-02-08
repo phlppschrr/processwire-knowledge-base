@@ -9,7 +9,7 @@ Called by `session_regenerate_id()` (with `$destroy = true`),
 
 ## Arguments
 
-- string $id
+- `$id` `string`
 
 ## Return value
 

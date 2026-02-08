@@ -8,7 +8,7 @@ Such fields are disallowed from being used for custom field names.
 
 ## Arguments
 
-- string $name Field name you want to check
+- `$name` `string` Field name you want to check
 
 ## Return value
 

@@ -22,12 +22,12 @@ if($method) {
 
 ## Arguments
 
-- string|array $match Return found method if request method equals one given (blank if not), not case sensitive (default='')
+- `$match` (optional) `string|array` Return found method if request method equals one given (blank if not), not case sensitive (default='')
 
 ## Return value
 
 string Returns one of GET, POST, HEAD, PUT, DELETE, OPTIONS, PATCH, OTHER or blank string if no match
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

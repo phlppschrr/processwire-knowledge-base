@@ -9,7 +9,7 @@ of properties at once.
 
 ## Arguments
 
-- array $data Associative array of where the keys are property names, and values are… values.
+- `$data` `array` Associative array of where the keys are property names, and values are… values.
 
 ## Return value
 

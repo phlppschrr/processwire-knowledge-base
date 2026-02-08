@@ -8,6 +8,6 @@ This updates the $settings and $addSettings variables directly
 
 ## Arguments
 
-- array $settings
-- array $addSettings
-- array $defaults
+- `$settings` `array`
+- `$addSettings` `array`
+- `$defaults` `array`

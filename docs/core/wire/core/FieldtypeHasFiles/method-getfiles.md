@@ -6,8 +6,8 @@ Get array of full path/file for all files managed by given page and field
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 

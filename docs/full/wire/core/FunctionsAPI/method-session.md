@@ -21,8 +21,8 @@ session('foo', 'bar'); // shortcut syntax
 
 ## Arguments
 
-- string $key Optional property to get or set
-- null $value Optional value to set
+- `$key` (optional) `string` Optional property to get or set
+- `$value` (optional) `null` Optional value to set
 
 ## Return value
 

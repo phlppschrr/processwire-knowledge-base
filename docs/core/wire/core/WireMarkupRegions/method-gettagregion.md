@@ -6,9 +6,9 @@ Given all markup after a tag, return just the portion that is the tag body/regio
 
 ## Arguments
 
-- string $region Markup that occurs after the ">" of the tag you want to get the region of.
-- array $tagInfo Array returned by getTagInfo method.
-- array $options Options to modify behavior, see getMarkupRegions $options argument. - `verbose` (bool): Verbose mode (default=false) - `wrap` (bool): Whether or not wrapping markup should be included (default=false)
+- `$region` `string` Markup that occurs after the ">" of the tag you want to get the region of.
+- `$tagInfo` `array` Array returned by getTagInfo method.
+- `$options` `array` Options to modify behavior, see getMarkupRegions $options argument. - `verbose` (bool): Verbose mode (default=false) - `wrap` (bool): Whether or not wrapping markup should be included (default=false)
 
 ## Return value
 

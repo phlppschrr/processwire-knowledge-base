@@ -18,11 +18,11 @@ Note the following additional properties are available from the $query argument:
 
 ## Arguments
 
-- PageFinderDatabaseQuerySelect $query
-- string $table The table name to use
-- string $subfield Name of the subfield (typically 'data', unless selector explicitly specified another)
-- string $operator The comparison operator. - This base Fieldtype class accepts only database operators (=, !=, >, >=, <, <=, &). - Other Fieldtypes may choose to accept more operators according to need of Fieldtype.
-- mixed $value Value to find. - If given array, this base Fieldtype class (only) will match via OR condition. (3.0.182+) - Other Fieldtypes may choose to interpret array values differently according need of Fieldtype.
+- `$query` `PageFinderDatabaseQuerySelect`
+- `$table` `string` The table name to use
+- `$subfield` `string` Name of the subfield (typically 'data', unless selector explicitly specified another)
+- `$operator` `string` The comparison operator. - This base Fieldtype class accepts only database operators (=, !=, >, >=, <, <=, &). - Other Fieldtypes may choose to accept more operators according to need of Fieldtype.
+- `$value` `mixed` Value to find. - If given array, this base Fieldtype class (only) will match via OR condition. (3.0.182+) - Other Fieldtypes may choose to interpret array values differently according need of Fieldtype.
 
 ## Return value
 

@@ -17,12 +17,12 @@ To get current entity encoding state, call this function with no arguments.
 
 ## Arguments
 
-- bool|int|string|null $value
+- `$value` (optional) `bool|int|string|null`
 
 ## Return value
 
 bool|int|string|null
 
-## Meta
+## Since
 
-- @since 3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, 'entityEncode', $value);
+3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, 'entityEncode', $value);

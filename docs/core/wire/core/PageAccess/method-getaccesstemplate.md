@@ -6,8 +6,8 @@ Returns the template from which we get our role/access settings from
 
 ## Arguments
 
-- Page $page
-- string $type Type, one of 'view', 'edit', 'create' or 'add' (default='view')
+- `$page` `Page`
+- `$type` (optional) `string` Type, one of 'view', 'edit', 'create' or 'add' (default='view')
 
 ## Return value
 

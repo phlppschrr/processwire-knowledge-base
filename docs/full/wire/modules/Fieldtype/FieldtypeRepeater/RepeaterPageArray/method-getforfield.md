@@ -8,6 +8,6 @@ Get repeater field this RepeaterPageArray is for
 
 RepeaterField
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

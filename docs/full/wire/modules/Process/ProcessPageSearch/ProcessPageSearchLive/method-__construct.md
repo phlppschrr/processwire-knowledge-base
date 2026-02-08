@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- ProcessPageSearch|null $process
-- array $liveSearch
+- `$process` (optional) `ProcessPageSearch|null`
+- `$liveSearch` (optional) `array`

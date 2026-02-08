@@ -6,7 +6,7 @@ Get a navigation array the given Page, or null if page not allowed in nav
 
 ## Arguments
 
-- Page $p
+- `$p` `Page`
 
 ## Return value
 

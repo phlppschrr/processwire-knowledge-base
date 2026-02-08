@@ -6,4 +6,4 @@ Set Page that this Comment belongs to
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

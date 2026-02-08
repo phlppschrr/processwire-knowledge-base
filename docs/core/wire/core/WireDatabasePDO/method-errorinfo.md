@@ -8,6 +8,6 @@ Fetch extended error information associated with the last operation on the datab
 
 array
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.errorinfo.php

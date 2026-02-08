@@ -8,4 +8,4 @@ Unlike before(delete), when this runs, it has already been confirmed that the it
 
 ## Arguments
 
-- Saveable $item
+- `$item` `Saveable`

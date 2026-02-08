@@ -6,12 +6,12 @@ Return new WireMail instance populated with subject
 
 ## Arguments
 
-- string $subject
+- `$subject` `string`
 
 ## Return value
 
 WireMail
 
-## Meta
+## Since
 
-- @since 3.0.113
+3.0.113

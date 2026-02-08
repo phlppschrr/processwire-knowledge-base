@@ -6,7 +6,7 @@ Delete the given module, physically removing its files
 
 ## Arguments
 
-- string $class Module name (class name)
+- `$class` `string` Module name (class name)
 
 ## Return value
 

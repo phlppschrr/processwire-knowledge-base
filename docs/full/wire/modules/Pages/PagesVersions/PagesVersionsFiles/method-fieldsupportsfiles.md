@@ -6,7 +6,7 @@ Does given field support files?
 
 ## Arguments
 
-- Field|string|int $field
+- `$field` `Field|string|int`
 
 ## Return value
 

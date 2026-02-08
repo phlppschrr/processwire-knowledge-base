@@ -6,7 +6,7 @@ Convert HTML mail body to TEXT mail body
 
 ## Arguments
 
-- string $html
+- `$html` `string`
 
 ## Return value
 

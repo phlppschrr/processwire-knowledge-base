@@ -6,8 +6,8 @@ Initialize given HTML for markup regions
 
 ## Arguments
 
-- string $html
+- `$html` `string`
 
-## Meta
+## Since
 
-- @since 3.0.250
+3.0.250

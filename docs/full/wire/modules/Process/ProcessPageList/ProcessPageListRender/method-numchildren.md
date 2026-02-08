@@ -6,8 +6,8 @@ Return number of children for page
 
 ## Arguments
 
-- Page $page
-- string|int|bool|null $selector
+- `$page` `Page`
+- `$selector` (optional) `string|int|bool|null`
 
 ## Return value
 

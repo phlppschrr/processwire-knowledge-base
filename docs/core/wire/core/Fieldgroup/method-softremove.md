@@ -10,7 +10,7 @@ a fieldgroup, like when moving a field to a Fieldset within the Fieldgroup.
 
 ## Arguments
 
-- Field|string|int $field Field object, name or id.
+- `$field` `Field|string|int` Field object, name or id.
 
 ## Return value
 

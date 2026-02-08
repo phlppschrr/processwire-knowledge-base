@@ -16,9 +16,9 @@ be in the desired sort order.
 
 ## Arguments
 
-- Field $field
-- string $value
-- bool $allowDelete Allow removed lines in the string to result in deleted options? If false, no options will be affected but you can call the getRemovedOptionIDs() method to retrieve them for confirmation.
+- `$field` `Field`
+- `$value` `string`
+- `$allowDelete` (optional) `bool` Allow removed lines in the string to result in deleted options? If false, no options will be affected but you can call the getRemovedOptionIDs() method to retrieve them for confirmation.
 
 ## Return value
 

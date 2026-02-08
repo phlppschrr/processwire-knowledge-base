@@ -9,5 +9,5 @@ been confirmed that the page is deleteable and *will* be deleted.
 
 ## Arguments
 
-- Page $page Page that is about to be deleted.
-- array $options Options passed to delete method (since 3.0.163)
+- `$page` `Page` Page that is about to be deleted.
+- `$options` (optional) `array` Options passed to delete method (since 3.0.163)

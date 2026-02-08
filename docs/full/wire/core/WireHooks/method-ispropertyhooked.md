@@ -8,8 +8,8 @@ This method is designed for fast determinations of whether something is hooked
 
 ## Arguments
 
-- string|Wire $class
-- string $property Name of property
+- `$class` `string|Wire`
+- `$property` `string` Name of property
 
 ## Return value
 

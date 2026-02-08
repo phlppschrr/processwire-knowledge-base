@@ -10,8 +10,8 @@ Classes descending from MarkupFieldtype would implement their own method.
 
 ## Arguments
 
-- string $property The property name being rendered.
-- mixed $value The value of the property.
+- `$property` `string` The property name being rendered.
+- `$value` `mixed` The value of the property.
 
 ## Return value
 

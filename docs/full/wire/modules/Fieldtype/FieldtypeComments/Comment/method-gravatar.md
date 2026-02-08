@@ -6,9 +6,9 @@ Returns a URL to this user's gravatar image
 
 ## Arguments
 
-- string $rating Gravatar rating, one of [ g | pg | r | x ], default is g.
-- string $imageset Gravatar default imageset, one of [ 404 | mm | identicon | monsterid | wavatar | retro | blank ], default is mm.
-- int $size Gravatar image size, default is 80.
+- `$rating` (optional) `string` Gravatar rating, one of [ g | pg | r | x ], default is g.
+- `$imageset` (optional) `string` Gravatar default imageset, one of [ 404 | mm | identicon | monsterid | wavatar | retro | blank ], default is mm.
+- `$size` (optional) `int` Gravatar image size, default is 80.
 
 ## Return value
 

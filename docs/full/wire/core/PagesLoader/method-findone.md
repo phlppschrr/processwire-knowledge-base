@@ -18,8 +18,8 @@ This method also accepts an `$options` array, whereas `Pages::get()` does not.
 
 ## Arguments
 
-- string|int|array|Selectors $selector
-- array|string $options See $options for `Pages::find`
+- `$selector` `string|int|array|Selectors`
+- `$options` (optional) `array|string` See $options for `Pages::find`
 
 ## Return value
 

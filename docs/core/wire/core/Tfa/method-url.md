@@ -6,7 +6,7 @@ Get the start URL and optionally append query string
 
 ## Arguments
 
-- string $queryString
+- `$queryString` (optional) `string`
 
 ## Return value
 

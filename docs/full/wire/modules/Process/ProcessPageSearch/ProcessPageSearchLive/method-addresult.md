@@ -9,15 +9,15 @@ See code example in findCustom() method above.
 
 ## Arguments
 
-- string $group Group name for this search result
-- string $title Title/name of this search result (text that gets clicked on )
-- string $url URL to this search result
-- array $data Array of additional data
+- `$group` `string` Group name for this search result
+- `$title` `string` Title/name of this search result (text that gets clicked on )
+- `$url` (optional) `string` URL to this search result
+- `$data` (optional) `array` Array of additional data
 
 ## Return value
 
 true
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

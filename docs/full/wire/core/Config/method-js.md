@@ -41,8 +41,8 @@ console.log(mySettings.bar);
 
 ## Arguments
 
-- string|array $key Property or array of properties
-- mixed $value
+- `$key` (optional) `string|array` Property or array of properties
+- `$value` (optional) `mixed`
 
 ## Return value
 

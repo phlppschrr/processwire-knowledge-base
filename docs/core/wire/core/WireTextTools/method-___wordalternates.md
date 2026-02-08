@@ -41,13 +41,13 @@ echo implode(', ', $words); // outputs: cats, kitty, kitten, feline, felines
 
 ## Arguments
 
-- string $word
-- array $options - `operator` (string): Operator being used, if applicable (default='')
+- `$word` `string`
+- `$options` `array` - `operator` (string): Operator being used, if applicable (default='')
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

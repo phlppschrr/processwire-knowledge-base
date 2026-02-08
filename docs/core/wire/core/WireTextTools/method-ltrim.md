@@ -6,13 +6,13 @@ Strip whitespace (or other characters) from the beginning of string only (aka le
 
 ## Arguments
 
-- string $str
-- string $chars Omit for default
+- `$str` `string`
+- `$chars` (optional) `string` Omit for default
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.168
+3.0.168

@@ -6,14 +6,14 @@ Flatten multidimensional values from array['a']['b']['c'] to array['a.b.c']
 
 ## Arguments
 
-- array $values
-- string $prefix Prefix for recursive use
-- string $delimiter
+- `$values` `array`
+- `$prefix` (optional) `string` Prefix for recursive use
+- `$delimiter` (optional) `string`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.193
+3.0.193

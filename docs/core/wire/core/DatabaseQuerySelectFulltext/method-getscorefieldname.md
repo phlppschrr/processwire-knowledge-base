@@ -8,6 +8,6 @@ Get unique score field name
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

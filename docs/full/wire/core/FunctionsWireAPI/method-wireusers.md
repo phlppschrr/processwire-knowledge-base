@@ -8,7 +8,7 @@ See the pages() function for full usage details.
 
 ## Arguments
 
-- string|array $selector Optional selector to send to find() or get()
+- `$selector` (optional) `string|array` Optional selector to send to find() or get()
 
 ## Return value
 

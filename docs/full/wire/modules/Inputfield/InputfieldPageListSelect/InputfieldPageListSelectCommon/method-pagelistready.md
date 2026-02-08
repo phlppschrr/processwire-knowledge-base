@@ -6,5 +6,5 @@ Render ready
 
 ## Arguments
 
-- string $name
-- string $labelFieldName
+- `$name` `string`
+- `$labelFieldName` `string`

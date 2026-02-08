@@ -6,13 +6,13 @@ URL with http or https scheme required
 
 ## Arguments
 
-- string $value URL to validate
-- array $options See the url() method for all options.
+- `$value` `string` URL to validate
+- `$options` (optional) `array` See the url() method for all options.
 
 ## Return value
 
 string Returns valid URL or blank string if it cannot be made valid.
 
-## Meta
+## Since
 
-- @since 3.0.129
+3.0.129

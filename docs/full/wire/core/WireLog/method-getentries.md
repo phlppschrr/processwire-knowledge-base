@@ -9,8 +9,8 @@ array rather than a single line (string). This method is pagination aware.
 
 ## Arguments
 
-- string $name Name of log file (excluding extension)
-- array $options Optional options to modify default behavior: - `limit` (integer): Specify number of lines (default=100) - `text` (string): Text to find. - `dateFrom` (int|string): Oldest date to match entries. - `dateTo` (int|string): Newest date to match entries. - `reverse` (bool): Reverse order (default=true) - `pageNum` (int): Pagination number 1 or above (default=0 which means auto-detect)
+- `$name` `string` Name of log file (excluding extension)
+- `$options` (optional) `array` Optional options to modify default behavior: - `limit` (integer): Specify number of lines (default=100) - `text` (string): Text to find. - `dateFrom` (int|string): Oldest date to match entries. - `dateTo` (int|string): Newest date to match entries. - `reverse` (bool): Reverse order (default=true) - `pageNum` (int): Pagination number 1 or above (default=0 which means auto-detect)
 
 ## Return value
 

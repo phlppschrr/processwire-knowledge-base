@@ -6,10 +6,10 @@ Get log lines that lie within a date range
 
 ## Arguments
 
-- int $dateFrom Starting date (unix timestamp or strtotime compatible string)
-- int $dateTo Ending date (unix timestamp or strtotime compatible string)
-- int $pageNum Current pagination number (default=1)
-- int $limit Items per pagination (default=100), or specify 0 for no limit.
+- `$dateFrom` `int` Starting date (unix timestamp or strtotime compatible string)
+- `$dateTo` (optional) `int` Ending date (unix timestamp or strtotime compatible string)
+- `$pageNum` (optional) `int` Current pagination number (default=1)
+- `$limit` (optional) `int` Items per pagination (default=100), or specify 0 for no limit.
 
 ## Return value
 

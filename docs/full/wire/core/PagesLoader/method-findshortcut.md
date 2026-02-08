@@ -6,9 +6,9 @@ Helper for find() method to attempt to shortcut the find when possible
 
 ## Arguments
 
-- string|array|Selectors $selector
-- array $options
-- array $loadOptions
+- `$selector` `string|array|Selectors`
+- `$options` `array`
+- `$loadOptions` `array`
 
 ## Return value
 

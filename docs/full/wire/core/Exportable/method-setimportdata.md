@@ -6,7 +6,7 @@ Given an export data array, import it back to the class and return what happened
 
 ## Arguments
 
-- array $data
+- `$data` `array`
 
 ## Return value
 

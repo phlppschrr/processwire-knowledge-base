@@ -6,7 +6,7 @@ Get navigation title for the given page, return blank if page should not be show
 
 ## Arguments
 
-- Page $c
+- `$c` `Page`
 
 ## Return value
 

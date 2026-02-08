@@ -6,7 +6,7 @@ Get the JSON filename where the current languages class translations are
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`
 
 ## Return value
 

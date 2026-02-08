@@ -6,9 +6,9 @@ Get SelectableOption by $property matching $value, or boolean false if not found
 
 ## Arguments
 
-- string $property May be "title", "value" or "id"
-- string|int $value
-- bool|null $noValue Value to return if option not present (default=false)
+- `$property` `string` May be "title", "value" or "id"
+- `$value` `string|int`
+- `$noValue` (optional) `bool|null` Value to return if option not present (default=false)
 
 ## Return value
 

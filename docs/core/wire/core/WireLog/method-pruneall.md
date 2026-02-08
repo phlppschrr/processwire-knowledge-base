@@ -6,12 +6,12 @@ Prune all log files to given number of days
 
 ## Arguments
 
-- int $days
+- `$days` `int`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.214
+3.0.214

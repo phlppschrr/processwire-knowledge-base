@@ -8,13 +8,13 @@ Applies only to Textarea fields with “html” content-type and link abstractio
 
 ## Arguments
 
-- string|bool $selector Optional selector to filter by or boolean true for “include=all”. (default='')
-- string|Field $field Optionally limit results to specified field. (default=all applicable Textarea fields)
+- `$selector` (optional) `string|bool` Optional selector to filter by or boolean true for “include=all”. (default='')
+- `$field` (optional) `string|Field` Optionally limit results to specified field. (default=all applicable Textarea fields)
 
 ## Return value
 
 PageArray
 
-## Meta
+## Since
 
-- @since 3.0.107
+3.0.107

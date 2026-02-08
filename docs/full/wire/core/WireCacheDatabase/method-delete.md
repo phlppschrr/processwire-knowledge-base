@@ -6,7 +6,7 @@ Delete a cache by name
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

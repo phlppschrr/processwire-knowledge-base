@@ -8,7 +8,7 @@ This is different behavior from the get() method.
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

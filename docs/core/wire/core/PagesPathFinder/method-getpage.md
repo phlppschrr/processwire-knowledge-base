@@ -13,8 +13,8 @@ Please access this method from `$pages->pathFinder()->getPage('…');`
 
 ## Arguments
 
-- string $path
-- array $options
+- `$path` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

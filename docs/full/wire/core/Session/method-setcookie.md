@@ -6,19 +6,19 @@ Add a SetCookie response header
 
 ## Arguments
 
-- string $name
-- string|null|false $value
-- int $expires
-- string $path
-- string|null $domain
-- bool $secure
-- bool $httponly
-- string $samesite One of 'Strict', 'Lax', 'None'
+- `$name` `string`
+- `$value` `string|null|false`
+- `$expires` (optional) `int`
+- `$path` (optional) `string`
+- `$domain` (optional) `string|null`
+- `$secure` (optional) `bool`
+- `$httponly` (optional) `bool`
+- `$samesite` (optional) `string` One of 'Strict', 'Lax', 'None'
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.178
+3.0.178

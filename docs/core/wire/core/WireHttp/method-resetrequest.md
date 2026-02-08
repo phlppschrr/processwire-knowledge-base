@@ -6,6 +6,6 @@ Reset all request data
 
 This resets any previously set request data, raw request data, and request HTTP headers.
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

@@ -6,5 +6,5 @@ Construct the CommentList
 
 ## Arguments
 
-- CommentArray $comments
-- array $options Options that may override those provided with the class (see CommentList::$options)
+- `$comments` `CommentArray`
+- `$options` (optional) `array` Options that may override those provided with the class (see CommentList::$options)

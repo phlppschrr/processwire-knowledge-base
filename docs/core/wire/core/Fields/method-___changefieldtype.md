@@ -6,8 +6,8 @@ Change a field's type
 
 ## Arguments
 
-- Field $field1 Field with the new type already assigned
-- bool $keepSettings Whether or not to keep custom $data settings (default=false)
+- `$field1` `Field` Field with the new type already assigned
+- `$keepSettings` (optional) `bool` Whether or not to keep custom $data settings (default=false)
 
 ## Return value
 

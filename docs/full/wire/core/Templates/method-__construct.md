@@ -6,4 +6,4 @@ Construct the Templates
 
 ## Arguments
 
-- Fieldgroups $fieldgroups Reference to the Fieldgroups
+- `$fieldgroups` `Fieldgroups` Reference to the Fieldgroups

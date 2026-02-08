@@ -9,8 +9,8 @@ This function contains additions and modifications by @niklaka.
 
 ## Arguments
 
-- string|array|Selectors $selectors Selector string|array to use as the filter.
-- bool|int $not Make this a "not" filter? Use int 1 for “not all” mode as if selectors had brackets around it. (default is false)
+- `$selectors` `string|array|Selectors` Selector string|array to use as the filter.
+- `$not` (optional) `bool|int` Make this a "not" filter? Use int 1 for “not all” mode as if selectors had brackets around it. (default is false)
 
 ## Return value
 

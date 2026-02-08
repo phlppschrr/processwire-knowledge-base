@@ -6,8 +6,8 @@ Get an array of parent classes and interfaces for the given object
 
 ## Arguments
 
-- Wire|string $object Maybe either object instance or class name
-- bool $cache Allow use of cache for getting or storing? (default=true)
+- `$object` `Wire|string` Maybe either object instance or class name
+- `$cache` (optional) `bool` Allow use of cache for getting or storing? (default=true)
 
 ## Return value
 

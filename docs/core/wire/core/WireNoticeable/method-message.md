@@ -8,8 +8,8 @@ This method automatically identifies the message as coming from this class.
 
 ## Arguments
 
-- string $text
-- int $flags See Notices::flags
+- `$text` `string`
+- `$flags` (optional) `int` See Notices::flags
 
 ## Return value
 

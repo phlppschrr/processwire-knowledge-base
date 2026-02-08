@@ -6,7 +6,7 @@ Given an email string like "User <user@example.com>" extract and return email an
 
 ## Arguments
 
-- string $email
+- `$email` `string`
 
 ## Return value
 

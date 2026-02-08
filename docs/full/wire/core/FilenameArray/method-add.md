@@ -6,7 +6,7 @@ Add a file
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

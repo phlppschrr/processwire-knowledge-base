@@ -8,7 +8,7 @@ Detects and confirms option deletions.
 
 ## Arguments
 
-- Inputfield $inputfield For the _options inputfield
+- `$inputfield` `Inputfield` For the _options inputfield
 
 ## Throws
 

@@ -9,8 +9,8 @@ the quantity of items in given array.
 
 ## Arguments
 
-- array $a Array to get random items from.
-- int $qty Quantity of items, or 0 to return all (default=0).
+- `$a` `array` Array to get random items from.
+- `$qty` (optional) `int` Quantity of items, or 0 to return all (default=0).
 
 ## Return value
 

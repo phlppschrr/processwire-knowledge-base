@@ -12,8 +12,8 @@ and subproperty resolves to a property within that object.
 
 ## Arguments
 
-- string|array $properties Field names to sort by (comma separated string or an array). Prepend or append a minus "-" to reverse the sort (per field).
-- int $numNeeded *Internal* amount of rows that need to be sorted (optimization used by filterData)
+- `$properties` `string|array` Field names to sort by (comma separated string or an array). Prepend or append a minus "-" to reverse the sort (per field).
+- `$numNeeded` (optional) `int` *Internal* amount of rows that need to be sorted (optimization used by filterData)
 
 ## Return value
 

@@ -13,7 +13,7 @@ USAGE from template file is: return $this->halt();
 
 ## Arguments
 
-- bool|string $halt If given boolean, it will set the halt status. If given string, it will be output (3.0.239+)
+- `$halt` (optional) `bool|string` If given boolean, it will set the halt status. If given string, it will be output (3.0.239+)
 
 ## Return value
 

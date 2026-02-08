@@ -6,8 +6,8 @@ Wrapper for selectorValueV2() when it receives an array
 
 ## Arguments
 
-- array $value
-- array $options See options for selectorValue()
+- `$value` `array`
+- `$options` (optional) `array` See options for selectorValue()
 
 ## Return value
 

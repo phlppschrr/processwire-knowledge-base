@@ -11,12 +11,12 @@ the comment in. If you want it to include the wrapping `<p>…</p>` tags then sp
 
 ## Arguments
 
-- array $options - `useParagraphs` (bool): Convert newlines to paragraphs? (default=true) - `wrapParagraph` (bool): Use wrapping <p>…</p> tags around return value? (default=false) - `useLinebreaks` (bool): Convert single newlines to <br> tags? (default=true)
+- `$options` (optional) `array` - `useParagraphs` (bool): Convert newlines to paragraphs? (default=true) - `wrapParagraph` (bool): Use wrapping <p>…</p> tags around return value? (default=false) - `useLinebreaks` (bool): Convert single newlines to <br> tags? (default=true)
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.169
+3.0.169

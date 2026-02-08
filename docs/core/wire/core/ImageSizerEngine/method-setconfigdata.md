@@ -6,4 +6,4 @@ Set module config data for ConfigurableModule interface
 
 ## Arguments
 
-- array $data
+- `$data` `array`

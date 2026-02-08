@@ -8,5 +8,5 @@ This also triggers init/ready functions for modules, when applicable.
 
 ## Arguments
 
-- int $status
-- array $data Associative array of any extra data to pass along to include files as locally scoped vars (3.0.142+)
+- `$status` `int`
+- `$data` (optional) `array` Associative array of any extra data to pass along to include files as locally scoped vars (3.0.142+)

@@ -11,15 +11,15 @@ Note that class attributes are appended while other attributes are replaced.
 
 ## Arguments
 
-- string $name Attribute name (i.e. "class", "for", etc.)
-- string $value Value to set for the attribute
-- string $markup Markup where the attribute or placeholder exists
-- bool $removeEmpty Remove attribute if it resolves to empty value?
+- `$name` `string` Attribute name (i.e. "class", "for", etc.)
+- `$value` `string` Value to set for the attribute
+- `$markup` `string` Markup where the attribute or placeholder exists
+- `$removeEmpty` (optional) `bool` Remove attribute if it resolves to empty value?
 
 ## Return value
 
 string Updated markup
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

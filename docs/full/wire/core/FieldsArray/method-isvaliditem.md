@@ -6,7 +6,7 @@ Per WireArray interface, only Field instances may be added
 
 ## Arguments
 
-- Wire $item
+- `$item` `Wire`
 
 ## Return value
 

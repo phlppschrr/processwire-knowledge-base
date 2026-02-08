@@ -6,7 +6,7 @@ Provide non-namespaced $session->variable get access
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

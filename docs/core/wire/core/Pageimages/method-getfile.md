@@ -6,7 +6,7 @@ Does this field have the given file name? If so, return it, if not return null.
 
 ## Arguments
 
-- string $name Basename is assumed
+- `$name` `string` Basename is assumed
 
 ## Return value
 

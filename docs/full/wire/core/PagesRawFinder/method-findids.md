@@ -6,9 +6,9 @@ Front-end to pages.findIDs that optionally accepts array of page IDs
 
 ## Arguments
 
-- array|string|Selectors $selector
-- bool|string $verbose One of true, false, or '*'
-- array $options
+- `$selector` `array|string|Selectors`
+- `$verbose` `bool|string` One of true, false, or '*'
+- `$options` (optional) `array`
 
 ## Return value
 

@@ -11,7 +11,7 @@ $items->filter("featured=1");
 
 ## Arguments
 
-- string|array|Selectors $selector Selector string or array to use as the filter.
+- `$selector` `string|array|Selectors` Selector string or array to use as the filter.
 
 ## Return value
 

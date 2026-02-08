@@ -9,8 +9,8 @@ It updates the status for both the given instantiated Page object and the value 
 
 ## Arguments
 
-- Page $page
-- int $status Use Page::status* constants
+- `$page` `Page`
+- `$status` `int` Use Page::status* constants
 
 ## Return value
 
@@ -22,6 +22,6 @@ bool
 - [PagesEditor::addStatus()](method-addstatus.md)
 - [PagesEditor::saveStatus()](method-savestatus.md)
 
-## Meta
+## Since
 
-- @since 3.0.146
+3.0.146

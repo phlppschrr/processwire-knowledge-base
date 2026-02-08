@@ -8,8 +8,8 @@ See: [htmlpurifier.org](http://htmlpurifier.org)
 
 ## Arguments
 
-- string $str String to purify
-- array $options See [config options](http://htmlpurifier.org/live/configdoc/plain.html).
+- `$str` `string` String to purify
+- `$options` (optional) `array` See [config options](http://htmlpurifier.org/live/configdoc/plain.html).
 
 ## Return value
 

@@ -23,8 +23,8 @@ $event->arguments('page', $page);
 
 ## Arguments
 
-- int $n Zero based number of the argument you want to retrieve, where 0 is the first. May also be a string containing the argument name. Omit to return array of all arguments.
-- mixed $value Value that you want to set to this argument, or omit to only return the argument.
+- `$n` (optional) `int` Zero based number of the argument you want to retrieve, where 0 is the first. May also be a string containing the argument name. Omit to return array of all arguments.
+- `$value` (optional) `mixed` Value that you want to set to this argument, or omit to only return the argument.
 
 ## Return value
 

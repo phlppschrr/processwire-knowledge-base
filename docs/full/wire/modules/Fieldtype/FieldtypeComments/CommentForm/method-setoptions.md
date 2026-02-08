@@ -6,4 +6,4 @@ Initialize and set options
 
 ## Arguments
 
-- array $options
+- `$options` `array`

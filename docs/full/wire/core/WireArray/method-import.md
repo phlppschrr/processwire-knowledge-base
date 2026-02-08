@@ -9,7 +9,7 @@ Import the given item(s) into this WireArray.
 
 ## Arguments
 
-- array|WireArray $items Items to import.
+- `$items` `array|WireArray` Items to import.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Helper to getConfigInputfields, handles adding and removing of repeater fields
 
 ## Arguments
 
-- Template $template
+- `$template` `Template`
 
 ## Throws
 

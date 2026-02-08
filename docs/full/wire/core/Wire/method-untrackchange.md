@@ -6,7 +6,7 @@ Untrack a change to a property in this object
 
 ## Arguments
 
-- string $what Name of property that you want to remove its change being tracked
+- `$what` `string` Name of property that you want to remove its change being tracked
 
 ## Return value
 

@@ -6,8 +6,8 @@ Set property
 
 ## Arguments
 
-- string $key
-- string|int|Page $value
+- `$key` `string`
+- `$value` `string|int|Page`
 
 ## Return value
 

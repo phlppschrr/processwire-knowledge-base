@@ -6,8 +6,8 @@ Record a warning notification
 
 ## Arguments
 
-- string $text
-- int|bool $flags See Notification flags
+- `$text` `string`
+- `$flags` (optional) `int|bool` See Notification flags
 
 ## Return value
 

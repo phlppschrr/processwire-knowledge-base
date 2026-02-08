@@ -9,10 +9,10 @@ and OR-groups, i.e. "(bar=foo), (foo=bar)"
 
 ## Arguments
 
-- Selector $selector
-- Selectors $selectors
-- array $options
-- int $level
+- `$selector` `Selector`
+- `$selectors` `Selectors`
+- `$options` `array`
+- `$level` (optional) `int`
 
 ## Return value
 

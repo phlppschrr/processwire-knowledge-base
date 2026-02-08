@@ -6,9 +6,9 @@ Get the parent of the page being imported
 
 ## Arguments
 
-- array $a Import data
-- array $options Import options
-- array $errors Errors array
+- `$a` `array` Import data
+- `$options` `array` Import options
+- `$errors` `array` Errors array
 
 ## Return value
 

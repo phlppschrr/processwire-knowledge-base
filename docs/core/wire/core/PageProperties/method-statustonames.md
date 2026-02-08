@@ -6,7 +6,7 @@ Given a status (flags int) return array of status names
 
 ## Arguments
 
-- int $status
+- `$status` `int`
 
 ## Return value
 

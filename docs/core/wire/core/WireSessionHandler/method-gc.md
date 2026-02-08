@@ -6,7 +6,7 @@ Garbage collection: remove stale sessions
 
 ## Arguments
 
-- int $seconds Max lifetime of a session
+- `$seconds` `int` Max lifetime of a session
 
 ## Return value
 

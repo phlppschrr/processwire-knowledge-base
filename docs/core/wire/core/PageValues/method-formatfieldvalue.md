@@ -8,9 +8,9 @@ This is primarily for use as a helper to the getFieldValue() method.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- mixed $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `mixed`
 
 ## Return value
 

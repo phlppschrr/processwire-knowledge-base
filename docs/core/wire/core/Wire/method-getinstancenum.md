@@ -10,7 +10,7 @@ Get this Wire object’s instance number
 
 ## Arguments
 
-- bool $getTotal Specify true to get the total quantity of Wire instances rather than this instance number.
+- `$getTotal` (optional) `bool` Specify true to get the total quantity of Wire instances rather than this instance number.
 
 ## Return value
 

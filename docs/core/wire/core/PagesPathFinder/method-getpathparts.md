@@ -8,7 +8,7 @@ If language segment detected then remove it and populate language to result
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

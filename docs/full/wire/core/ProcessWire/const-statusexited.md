@@ -4,6 +4,6 @@ Source: `wire/core/ProcessWire.php`
 
 Status when the request has finished abnormally (like a manual exit)
 
-## Meta
+## Since
 
-- @since 3.0.180
+3.0.180

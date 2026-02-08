@@ -12,13 +12,13 @@ Returns string length of any type (string, array, object, bool, int, etc.)
 
 ## Arguments
 
-- string|array|object|int|bool|null $value
-- bool $mb Use multibyte string length when available (default=true)
+- `$value` `string|array|object|int|bool|null`
+- `$mb` (optional) `bool` Use multibyte string length when available (default=true)
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.192
+3.0.192

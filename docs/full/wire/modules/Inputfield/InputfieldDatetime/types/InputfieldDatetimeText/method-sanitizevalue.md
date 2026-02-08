@@ -6,7 +6,7 @@ Sanitize value
 
 ## Arguments
 
-- int|string $value
+- `$value` `int|string`
 
 ## Return value
 

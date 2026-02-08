@@ -12,9 +12,9 @@ of 2 characters for whitespace) given in rfc2047.
 
 ## Arguments
 
-- string $input The subject to encode
-- int $maxlen Maximum length of unencoded string, defaults to 63
-- bool $isFirst Set to true for first line to account for the header name
+- `$input` `string` The subject to encode
+- `$maxlen` (optional) `int` Maximum length of unencoded string, defaults to 63
+- `$isFirst` (optional) `bool` Set to true for first line to account for the header name
 
 ## Return value
 

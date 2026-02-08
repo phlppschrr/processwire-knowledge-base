@@ -19,7 +19,7 @@ echo "<a href='$page->httpUrl'>$page->title</a>";
 
 ## Arguments
 
-- array $options For details on usage see `Page::url()` options argument.
+- `$options` (optional) `array` For details on usage see `Page::url()` options argument.
 
 ## Return value
 

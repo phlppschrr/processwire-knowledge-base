@@ -6,7 +6,7 @@ JSON encode language translation data
 
 ## Arguments
 
-- array|string $value
+- `$value` `array|string`
 
 ## Return value
 

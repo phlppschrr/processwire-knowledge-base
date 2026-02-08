@@ -8,8 +8,8 @@ If the user doesn’t have access, then a login Page or NULL (for 404) is return
 
 ## Arguments
 
-- Page $page
-- User $user
+- `$page` `Page`
+- `$user` `User`
 
 ## Return value
 

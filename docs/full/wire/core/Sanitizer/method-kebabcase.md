@@ -6,8 +6,8 @@ Alias of hyphenCase()
 
 ## Arguments
 
-- string $value
-- array $options See hyphenCase()
+- `$value` `string`
+- `$options` (optional) `array` See hyphenCase()
 
 ## Return value
 

@@ -8,7 +8,7 @@ Used only if $config->pagefileUrlPrefix is defined
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

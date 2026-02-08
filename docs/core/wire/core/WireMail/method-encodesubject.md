@@ -6,7 +6,7 @@ Encode a subject, use mbstring if available
 
 ## Arguments
 
-- string $subject
+- `$subject` `string`
 
 ## Return value
 

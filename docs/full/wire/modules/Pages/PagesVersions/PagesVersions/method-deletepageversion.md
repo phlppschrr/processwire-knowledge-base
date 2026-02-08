@@ -16,8 +16,8 @@ $pagesVersions->deletePageVersion($pageV2);
 
 ## Arguments
 
-- Page $page Page to delete version from, or page having the version you want to delete.
-- int $version Version number to delete or omit if given $page is the version you want to delete.
+- `$page` `Page` Page to delete version from, or page having the version you want to delete.
+- `$version` (optional) `int` Version number to delete or omit if given $page is the version you want to delete.
 
 ## Return value
 

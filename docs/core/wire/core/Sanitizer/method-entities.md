@@ -18,10 +18,10 @@ echo $sanitizer->entities($test);
 
 ## Arguments
 
-- string $str String to entity encode
-- int|bool $flags See PHP htmlentities() function for flags.
-- string $encoding Encoding of string (default="UTF-8").
-- bool $doubleEncode Allow double encode? (default=true).
+- `$str` `string` String to entity encode
+- `$flags` (optional) `int|bool` See PHP htmlentities() function for flags.
+- `$encoding` (optional) `string` Encoding of string (default="UTF-8").
+- `$doubleEncode` (optional) `bool` Allow double encode? (default=true).
 
 ## Return value
 

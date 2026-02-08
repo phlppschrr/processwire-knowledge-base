@@ -13,8 +13,8 @@ $session->redirect('/');
 
 ## Arguments
 
-- string $url URL to redirect to
-- bool|int $status One of the following (or omit for 301): - `true` (bool): Permanent redirect (same as 301). - `false` (bool): Temporary redirect (same as 302). - `301` (int): Permanent redirect using GET. (3.0.166+) - `302` (int): “Found”, Temporary redirect using GET. (3.0.166+) - `303` (int): “See other”, Temporary redirect using GET. (3.0.166+) - `307` (int): Temporary redirect using current request method such as POST (repeat that request). (3.0.166+)
+- `$url` `string` URL to redirect to
+- `$status` (optional) `bool|int` One of the following (or omit for 301): - `true` (bool): Permanent redirect (same as 301). - `false` (bool): Temporary redirect (same as 302). - `301` (int): Permanent redirect using GET. (3.0.166+) - `302` (int): “Found”, Temporary redirect using GET. (3.0.166+) - `303` (int): “See other”, Temporary redirect using GET. (3.0.166+) - `307` (int): Temporary redirect using current request method such as POST (repeat that request). (3.0.166+)
 
 ## See also
 

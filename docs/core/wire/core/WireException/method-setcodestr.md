@@ -6,8 +6,8 @@ Set alphanumeric code string
 
 ## Arguments
 
-- string $codeStr
+- `$codeStr` `string`
 
-## Meta
+## Since
 
-- @since 3.0.248
+3.0.248

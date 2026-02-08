@@ -6,8 +6,8 @@ Set and save a value for a specific property/name/key
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Set whether or not AJAX uploads are allowed
 
 ## Arguments
 
-- bool $allowAjax
+- `$allowAjax` (optional) `bool`
 
 ## Return value
 

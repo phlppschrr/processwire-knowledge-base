@@ -14,8 +14,8 @@ it needs to move on to the next 2FA step.
 
 ## Arguments
 
-- string $name
-- string $pass
+- `$name` `string`
+- `$pass` `string`
 
 ## Return value
 

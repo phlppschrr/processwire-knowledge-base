@@ -18,9 +18,9 @@ For direct output, use the `wireIncludeFile()` or `$files->include()` function i
 
 ## Arguments
 
-- string $filename Assumed relative to /site/templates/ unless you provide a full path name with the filename. If you provide a path, it must resolve somewhere in site/templates/, site/modules/ or wire/modules/.
-- array $vars Optional associative array of variables to send to template file. Please note that all template files automatically receive all API variables already (you don't have to provide them).
-- array $options Associative array of options to modify behavior: - `defaultPath` (string): Path where files are assumed to be when only filename or relative filename is specified (default=/site/templates/) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of paths that are allowed (default is templates, core modules and site modules) - `allowDotDot` (bool): Allow use of ".." in paths? (default=false) - `throwExceptions` (bool): Throw exceptions when fatal error occurs? (default=true)
+- `$filename` `string` Assumed relative to /site/templates/ unless you provide a full path name with the filename. If you provide a path, it must resolve somewhere in site/templates/, site/modules/ or wire/modules/.
+- `$vars` (optional) `array` Optional associative array of variables to send to template file. Please note that all template files automatically receive all API variables already (you don't have to provide them).
+- `$options` (optional) `array` Associative array of options to modify behavior: - `defaultPath` (string): Path where files are assumed to be when only filename or relative filename is specified (default=/site/templates/) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of paths that are allowed (default is templates, core modules and site modules) - `allowDotDot` (bool): Allow use of ".." in paths? (default=false) - `throwExceptions` (bool): Throw exceptions when fatal error occurs? (default=true)
 
 ## Return value
 

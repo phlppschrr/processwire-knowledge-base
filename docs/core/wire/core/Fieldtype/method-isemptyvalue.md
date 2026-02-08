@@ -23,8 +23,8 @@ behavior in PageFinder::whereEmptyValuePossible().
 
 ## Arguments
 
-- Field $field
-- mixed $value
+- `$field` `Field`
+- `$value` `mixed`
 
 ## Return value
 

@@ -28,13 +28,13 @@ Options you can get or set:
 
 ## Arguments
 
-- string|array|null $key
-- string|array|int|float|null $value
+- `$key` (optional) `string|array|null`
+- `$value` (optional) `string|array|int|float|null`
 
 ## Return value
 
 string|array|int|float|null|$this
 
-## Meta
+## Since
 
-- @since 3.0.141
+3.0.141

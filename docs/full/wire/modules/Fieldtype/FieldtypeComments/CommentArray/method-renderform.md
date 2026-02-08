@@ -6,7 +6,7 @@ Provides the default rendering of a comment form, which may or may not be what y
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

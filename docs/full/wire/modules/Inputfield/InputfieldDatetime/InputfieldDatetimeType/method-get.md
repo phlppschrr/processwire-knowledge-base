@@ -6,7 +6,7 @@ Get setting or attribute or API var
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

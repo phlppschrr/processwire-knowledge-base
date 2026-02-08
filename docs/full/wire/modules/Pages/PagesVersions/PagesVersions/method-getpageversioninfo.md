@@ -18,8 +18,8 @@ if($info) {
 
 ## Arguments
 
-- Page $page
-- int $version
+- `$page` `Page`
+- `$version` `int`
 
 ## Return value
 

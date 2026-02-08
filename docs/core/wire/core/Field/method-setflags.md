@@ -6,4 +6,4 @@ Set the bitmask of flags for the field
 
 ## Arguments
 
-- int $value
+- `$value` `int`

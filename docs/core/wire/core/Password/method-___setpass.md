@@ -6,7 +6,7 @@ Set the 'pass' to the given value
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Throws
 

@@ -6,7 +6,7 @@ Set an array that defines Inputfields
 
 ## Arguments
 
-- array $a
+- `$a` `array`
 
 ## Return value
 

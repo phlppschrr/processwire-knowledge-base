@@ -6,8 +6,8 @@ Add an optional component that can be used with this module
 
 ## Arguments
 
-- string $name
-- string $file
+- `$name` `string`
+- `$file` `string`
 
 ## Return value
 

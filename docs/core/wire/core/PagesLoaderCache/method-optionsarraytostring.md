@@ -6,7 +6,7 @@ Convert an options array to a string
 
 ## Arguments
 
-- array $options
+- `$options` `array`
 
 ## Return value
 

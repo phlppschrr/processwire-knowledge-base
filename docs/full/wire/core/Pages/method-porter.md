@@ -10,6 +10,6 @@ Please note that unlike most other helper methods, this method returns a new ins
 
 PagesExportImport
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

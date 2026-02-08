@@ -16,7 +16,7 @@ tab rather than the "Details" tab.
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

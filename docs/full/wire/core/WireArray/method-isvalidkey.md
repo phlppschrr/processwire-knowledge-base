@@ -8,7 +8,7 @@ Template method that descendant classes may use to validate the key of items add
 
 ## Arguments
 
-- string|int $key Key to test
+- `$key` `string|int` Key to test
 
 ## Return value
 

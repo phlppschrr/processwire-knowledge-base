@@ -6,9 +6,9 @@ Download file using CURL
 
 ## Arguments
 
-- string $fromURL
-- resource $fp Open file pointer
-- array $options
+- `$fromURL` `string`
+- `$fp` `resource` Open file pointer
+- `$options` `array`
 
 ## Return value
 

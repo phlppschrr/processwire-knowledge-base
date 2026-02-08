@@ -6,7 +6,7 @@ Set path where database files are stored
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

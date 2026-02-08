@@ -6,8 +6,8 @@ Allow the user $name to login? Provided for use by hooks.
 
 ## Arguments
 
-- string $name User login name
-- User|null $user User object
+- `$name` `string` User login name
+- `$user` (optional) `User|null` User object
 
 ## Return value
 

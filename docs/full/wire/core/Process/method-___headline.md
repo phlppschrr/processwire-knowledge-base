@@ -10,7 +10,7 @@ $this->headline("Hello World");
 
 ## Arguments
 
-- string $headline
+- `$headline` `string`
 
 ## Return value
 

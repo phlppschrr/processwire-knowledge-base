@@ -33,12 +33,12 @@ wireEmpty($v); // returns true but with PHP’s warning triggered
 
 ## Arguments
 
-- mixed $value Value to test if empty
+- `$value` `mixed` Value to test if empty
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.143
+3.0.143

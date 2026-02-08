@@ -11,8 +11,8 @@ function(HookEvent $event) {
 
 ## Arguments
 
-- Wire $object
-- string|array|null $hookID Can be single hook ID, array of hook IDs, or CSV string of hook IDs
+- `$object` `Wire`
+- `$hookID` `string|array|null` Can be single hook ID, array of hook IDs, or CSV string of hook IDs
 
 ## Return value
 

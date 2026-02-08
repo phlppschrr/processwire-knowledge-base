@@ -10,12 +10,12 @@ Get or set child templates (templates allowed for children of pages using this t
 
 ## Arguments
 
-- array|TemplatesArray|null $setValue Specify only when setting, an iterable value containing Template objects, IDs or names
+- `$setValue` (optional) `array|TemplatesArray|null` Specify only when setting, an iterable value containing Template objects, IDs or names
 
 ## Return value
 
 TemplatesArray|Template[]
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

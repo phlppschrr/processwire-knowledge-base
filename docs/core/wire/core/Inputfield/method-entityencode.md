@@ -9,8 +9,8 @@ Entity encode a string with optional Markdown support.
 
 ## Arguments
 
-- string $str String to encode
-- bool|int $markdown Optionally specify one of the following: - `true` (boolean): To allow Markdown using default "textFormat" setting (which is basic Markdown by default). - `false` (boolean): To disallow Markdown support (this is the default when $markdown argument omitted). - `Inputfield::textFormatNone` (constant): Disallow Markdown support (default). - `Inputfield::textFormatBasic` (constant): To support basic/inline Markdown. - `Inputfield::textFormatMarkdown` (constant): To support full Markdown and HTML.
+- `$str` `string` String to encode
+- `$markdown` (optional) `bool|int` Optionally specify one of the following: - `true` (boolean): To allow Markdown using default "textFormat" setting (which is basic Markdown by default). - `false` (boolean): To disallow Markdown support (this is the default when $markdown argument omitted). - `Inputfield::textFormatNone` (constant): Disallow Markdown support (default). - `Inputfield::textFormatBasic` (constant): To support basic/inline Markdown. - `Inputfield::textFormatMarkdown` (constant): To support full Markdown and HTML.
 
 ## Return value
 

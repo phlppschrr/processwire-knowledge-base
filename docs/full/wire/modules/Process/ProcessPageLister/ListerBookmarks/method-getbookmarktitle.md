@@ -6,7 +6,7 @@ Get the title for the given bookmark ID or bookmark array
 
 ## Arguments
 
-- int|array $bookmarkID
+- `$bookmarkID` `int|array`
 
 ## Return value
 

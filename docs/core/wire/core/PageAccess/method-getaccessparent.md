@@ -6,9 +6,9 @@ Returns the parent page that has the template from which we get our role/access 
 
 ## Arguments
 
-- Page $page
-- string $type Type, one of 'view', 'edit', 'create' or 'add' (default='view')
-- int $level Recursion level for internal use only
+- `$page` `Page`
+- `$type` (optional) `string` Type, one of 'view', 'edit', 'create' or 'add' (default='view')
+- `$level` (optional) `int` Recursion level for internal use only
 
 ## Return value
 

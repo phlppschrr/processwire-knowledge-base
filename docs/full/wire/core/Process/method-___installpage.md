@@ -8,11 +8,11 @@ To be called by Process module's ___install() method.
 
 ## Arguments
 
-- string $name Desired name of page, or omit (or blank) to use module name
+- `$name` (optional) `string` Desired name of page, or omit (or blank) to use module name
 - Page|string|int|null Parent for the page, with one of the following: - name of parent, relative to admin root, i.e. "setup" - Page object of parent - path to parent - parent ID - Or omit and admin root is assumed
-- string $title Omit or blank to pull title from module information
+- `$title` (optional) `string` Omit or blank to pull title from module information
 - string|Template Template to use for page (omit to assume 'admin')
-- array $extras Any extra properties to assign (like status)
+- `$extras` (optional) `array` Any extra properties to assign (like status)
 
 ## Return value
 

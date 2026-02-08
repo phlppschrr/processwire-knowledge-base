@@ -6,12 +6,12 @@ Given different ways to refer to a role type return array of type, property and 
 
 ## Arguments
 
-- string|Permission $type
+- `$type` `string|Permission`
 
 ## Return value
 
 array Returns array of [ typeName, propertyName, permissionName ]
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

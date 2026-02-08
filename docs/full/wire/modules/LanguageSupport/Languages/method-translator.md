@@ -6,7 +6,7 @@ Return the LanguageTranslator instance for the given language
 
 ## Arguments
 
-- Language $language
+- `$language` `Language`
 
 ## Return value
 

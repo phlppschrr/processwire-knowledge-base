@@ -11,9 +11,9 @@ $pageV2 = $pagesVersions->getPageVersion($page, 2);
 
 ## Arguments
 
-- Page $page Page that version is for
-- int $version Version number to get
-- array $options - `names` (array): Optionally load only these field/property names from version.
+- `$page` `Page` Page that version is for
+- `$version` `int` Version number to get
+- `$options` (optional) `array` - `names` (array): Optionally load only these field/property names from version.
 
 ## Return value
 

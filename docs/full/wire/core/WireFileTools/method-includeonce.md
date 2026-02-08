@@ -8,9 +8,9 @@ See the `WireFileTools::include()` method for details, arguments and options.
 
 ## Arguments
 
-- string $filename
-- array $vars
-- array $options
+- `$filename` `string`
+- `$vars` (optional) `array`
+- `$options` (optional) `array`
 
 ## Return value
 
@@ -20,6 +20,6 @@ bool
 
 - [WireFileTools::include()](method-___include.md)
 
-## Meta
+## Since
 
-- @since 3.0.96
+3.0.96

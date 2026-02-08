@@ -6,5 +6,5 @@ Render the ajax request output directly and halt execution
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`

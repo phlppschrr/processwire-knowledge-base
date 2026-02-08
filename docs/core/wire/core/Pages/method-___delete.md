@@ -16,9 +16,9 @@ $pages->delete($product);
 
 ## Arguments
 
-- Page $page Page to delete
-- bool|array $recursive If set to true, then this will attempt to delete all children too. If you don't need this argument, optionally provide $options array instead.
-- array $options Optional settings to change behavior: - uncacheAll (bool): Whether to clear memory cache after delete (default=false) - recursive (bool): Same as $recursive argument, may be specified in $options array if preferred.
+- `$page` `Page` Page to delete
+- `$recursive` (optional) `bool|array` If set to true, then this will attempt to delete all children too. If you don't need this argument, optionally provide $options array instead.
+- `$options` (optional) `array` Optional settings to change behavior: - uncacheAll (bool): Whether to clear memory cache after delete (default=false) - recursive (bool): Same as $recursive argument, may be specified in $options array if preferred.
 
 ## Return value
 

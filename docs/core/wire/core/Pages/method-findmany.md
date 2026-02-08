@@ -28,8 +28,8 @@ echo "Total cost is: $totalCost";
 
 ## Arguments
 
-- string|array|Selectors $selector Selector to find pages
-- array $options Options to modify behavior. See `Pages::find()` $options argument for details.
+- `$selector` `string|array|Selectors` Selector to find pages
+- `$options` (optional) `array` Options to modify behavior. See `Pages::find()` $options argument for details.
 
 ## Return value
 
@@ -40,6 +40,6 @@ PageArray
 - [Pages::find()](method-___find.md)
 - [Pages::findOne()](method-findone.md)
 
-## Meta
+## Since
 
-- @since 3.0.19
+3.0.19

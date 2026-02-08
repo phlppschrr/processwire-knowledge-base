@@ -6,11 +6,11 @@ Make a search result item that displays a “view all” link
 
 ## Arguments
 
-- array $liveSearch
-- string $type
-- string $group
-- int $total
-- string $url If module provides its own view-all URL
+- `$liveSearch` `array`
+- `$type` `string`
+- `$group` `string`
+- `$total` `int`
+- `$url` (optional) `string` If module provides its own view-all URL
 
 ## Return value
 

@@ -10,8 +10,8 @@ $this->breadcrumb("../", "Widgets");
 
 ## Arguments
 
-- string $href URL of breadcrumb
-- string $label Label for breadcrumb
+- `$href` `string` URL of breadcrumb
+- `$label` `string` Label for breadcrumb
 
 ## Return value
 

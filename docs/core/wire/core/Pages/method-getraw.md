@@ -13,9 +13,9 @@ return data for many pages at once.
 
 ## Arguments
 
-- string|array|Selectors|int $selector Page matching selector or page ID
-- string|array|Field $field Name of field/property to get, or array of them, or omit to get all (default='')
-- array $options
+- `$selector` `string|array|Selectors|int` Page matching selector or page ID
+- `$field` (optional) `string|array|Field` Name of field/property to get, or array of them, or omit to get all (default='')
+- `$options` (optional) `array`
 
 ## Return value
 

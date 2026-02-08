@@ -11,6 +11,6 @@ $wire->addHook('Page::deleted', function($e) {
 });
 ~~~~~
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

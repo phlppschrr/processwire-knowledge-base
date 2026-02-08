@@ -6,7 +6,7 @@ Does the extra file currently exist?
 
 ## Arguments
 
-- bool $clear Clear stat cache before checking? (default=false)
+- `$clear` (optional) `bool` Clear stat cache before checking? (default=false)
 
 ## Return value
 

@@ -6,7 +6,7 @@ Return the URL to the extra file, creating it if it does not already exist
 
 ## Arguments
 
-- bool $fallback Allow falling back to source Pagefile URL when appropriate?
+- `$fallback` (optional) `bool` Allow falling back to source Pagefile URL when appropriate?
 
 ## Return value
 

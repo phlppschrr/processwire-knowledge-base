@@ -6,7 +6,7 @@ Render stars markup
 
 ## Arguments
 
-- array $options See CommentArray::renderStars for $options
+- `$options` (optional) `array` See CommentArray::renderStars for $options
 
 ## Return value
 

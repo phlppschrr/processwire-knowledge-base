@@ -11,9 +11,9 @@ Return the parent page that this template assumes new pages are added to
 
 ## Arguments
 
-- Template $template
-- bool $checkAccess Whether or not to check for user access to do this (default=false).
-- bool|int $getAll Specify true to return all possible parents (makes method always return a PageArray) Or specify int of maximum allowed `Page::status*` constant for items in returned PageArray (since 3.0.138).
+- `$template` `Template`
+- `$checkAccess` (optional) `bool` Whether or not to check for user access to do this (default=false).
+- `$getAll` (optional) `bool|int` Specify true to return all possible parents (makes method always return a PageArray) Or specify int of maximum allowed `Page::status*` constant for items in returned PageArray (since 3.0.138).
 
 ## Return value
 

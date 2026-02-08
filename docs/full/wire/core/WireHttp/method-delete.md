@@ -9,14 +9,14 @@ Send a DELETE request to a URL
 
 ## Arguments
 
-- string $url URL to send to (including http:// or https://)
-- array|string $data Optional associative array of data to send (if not already set before), or raw data to send (such as JSON string)
-- array $options Optional options to modify default behavior, see the send() method for details.
+- `$url` `string` URL to send to (including http:// or https://)
+- `$data` (optional) `array|string` Optional associative array of data to send (if not already set before), or raw data to send (such as JSON string)
+- `$options` (optional) `array` Optional options to modify default behavior, see the send() method for details.
 
 ## Return value
 
 bool|string False on failure or string of contents received on success.
 
-## Meta
+## Since
 
-- @since 3.0.222
+3.0.222

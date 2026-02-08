@@ -24,10 +24,10 @@ echo $page->lastModifiedStr; // outputs: "10 days ago"
 
 ## Arguments
 
-- string|array $property Name of property you want to add, must not collide with existing property or method names: - `Class::property` to add the property to all instances of Class. - `property` if just adding to a single object instance. - Since 3.0.137 it may also be multiple properties to hook in CSV string or array.
-- object|null|callable $toObject Specify one of the following: - Object instance to call `$toMethod` from (like `$this`). - Inline function (closure) if providing implemention inline. - Procedural function name, if hook is implemented by a procedural function. - Null if you want to use the 3rd argument and don't need this argument.
-- string|array $toMethod Method from $toObject, or function name to call on a hook event. This argument can be sustituted as the 2nd argument when the 2nd argument isn’t needed, or it can be the $options argument.
-- array $options Options typically aren't used in this context, but see Wire::addHookBefore() $options if you'd like.
+- `$property` `string|array` Name of property you want to add, must not collide with existing property or method names: - `Class::property` to add the property to all instances of Class. - `property` if just adding to a single object instance. - Since 3.0.137 it may also be multiple properties to hook in CSV string or array.
+- `$toObject` `object|null|callable` Specify one of the following: - Object instance to call `$toMethod` from (like `$this`). - Inline function (closure) if providing implemention inline. - Procedural function name, if hook is implemented by a procedural function. - Null if you want to use the 3rd argument and don't need this argument.
+- `$toMethod` (optional) `string|array` Method from $toObject, or function name to call on a hook event. This argument can be sustituted as the 2nd argument when the 2nd argument isn’t needed, or it can be the $options argument.
+- `$options` (optional) `array` Options typically aren't used in this context, but see Wire::addHookBefore() $options if you'd like.
 
 ## Return value
 

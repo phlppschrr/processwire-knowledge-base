@@ -8,4 +8,4 @@ Applies only to non-associative WireArray types.
 
 ## Arguments
 
-- bool $value True to enable dup check, false to disable
+- `$value` `bool` True to enable dup check, false to disable

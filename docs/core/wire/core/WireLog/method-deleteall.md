@@ -6,12 +6,12 @@ Delete all log files
 
 ## Arguments
 
-- bool $throw Throw WireException if any delete fails? (default=false)
+- `$throw` (optional) `bool` Throw WireException if any delete fails? (default=false)
 
 ## Return value
 
 array Basenames of deleted log files
 
-## Meta
+## Since
 
-- @since 3.0.214
+3.0.214

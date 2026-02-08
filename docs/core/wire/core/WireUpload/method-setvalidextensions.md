@@ -6,7 +6,7 @@ Set allowed file extensions
 
 ## Arguments
 
-- array $extensions Array of file extensions (strings), not including periods
+- `$extensions` `array` Array of file extensions (strings), not including periods
 
 ## Return value
 

@@ -6,8 +6,8 @@ Return number of pages this one is following (referencing) by way of Page refere
 
 ## Arguments
 
-- Page $page
-- bool $field Optionally limit to field, or specify boolean true to return array of counts per field.
+- `$page` `Page`
+- `$field` (optional) `bool` Optionally limit to field, or specify boolean true to return array of counts per field.
 
 ## Return value
 

@@ -6,8 +6,8 @@ Set WireCache module to use for caching
 
 ## Arguments
 
-- WireCacheInterface $module
+- `$module` `WireCacheInterface`
 
-## Meta
+## Since
 
-- @since 3.0.218
+3.0.218

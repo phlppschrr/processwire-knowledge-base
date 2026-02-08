@@ -6,7 +6,7 @@ Convert UTF-8 page name to ascii
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

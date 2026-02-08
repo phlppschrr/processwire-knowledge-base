@@ -14,7 +14,7 @@ may need further consideration.
 
 ## Arguments
 
-- Field|string $key Field object or field name, or id.
+- `$key` `Field|string` Field object or field name, or id.
 
 ## Return value
 

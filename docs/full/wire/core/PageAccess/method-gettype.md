@@ -8,7 +8,7 @@ Converts things like 'page-view' to 'view', and more.
 
 ## Arguments
 
-- string|int|Permission $name
+- `$name` `string|int|Permission`
 
 ## Return value
 

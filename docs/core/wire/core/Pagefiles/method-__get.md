@@ -6,7 +6,7 @@ Get for direct access to properties
 
 ## Arguments
 
-- int|string $name
+- `$name` `int|string`
 
 ## Return value
 

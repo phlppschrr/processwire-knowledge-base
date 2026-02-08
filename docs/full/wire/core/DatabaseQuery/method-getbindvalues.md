@@ -12,7 +12,7 @@ which was never used so has been removed.
 
 ## Arguments
 
-- string|\PDOStatement|DatabaseQuery|array $options Optionally specify an option: - `query` (\PDOStatement|DatabaseQuery): Copy bind values to this query object (default=null) - `count` (bool): Get a count of values rather than array of values (default=false) 3.0.157+ - `inSQL` (string): Only get bind values referenced in this given SQL statement
+- `$options` (optional) `string|\PDOStatement|DatabaseQuery|array` Optionally specify an option: - `query` (\PDOStatement|DatabaseQuery): Copy bind values to this query object (default=null) - `count` (bool): Get a count of values rather than array of values (default=false) 3.0.157+ - `inSQL` (string): Only get bind values referenced in this given SQL statement
 
 ## Return value
 

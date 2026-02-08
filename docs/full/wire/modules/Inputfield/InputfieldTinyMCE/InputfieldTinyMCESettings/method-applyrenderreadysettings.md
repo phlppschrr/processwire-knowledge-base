@@ -6,4 +6,4 @@ Determine which settings go where and apply to Inputfield
 
 ## Arguments
 
-- array $addSettings Optionally add this settings on top of those that would otherwise be used
+- `$addSettings` (optional) `array` Optionally add this settings on top of those that would otherwise be used

@@ -8,7 +8,7 @@ Note: When blowfish, returns the entire blowfish string which has the salt as th
 
 ## Arguments
 
-- string $pass Raw password
+- `$pass` `string` Raw password
 
 ## Return value
 

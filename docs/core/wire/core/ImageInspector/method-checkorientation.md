@@ -12,6 +12,6 @@ Check orientation (@horst)
 
 array
 
-## Meta
+## Details
 
 - @todo there is already a checkOrientation method in ImageSizerEngine - do we need both?

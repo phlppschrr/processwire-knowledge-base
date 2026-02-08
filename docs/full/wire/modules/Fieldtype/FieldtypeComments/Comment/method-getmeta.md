@@ -10,12 +10,12 @@ where necessary.
 
 ## Arguments
 
-- null|string $key Name of property to get
+- `$key` (optional) `null|string` Name of property to get
 
 ## Return value
 
 string|array|int|float|mixed|null Returns value or null if not found
 
-## Meta
+## Since
 
-- @since 3.0.203
+3.0.203

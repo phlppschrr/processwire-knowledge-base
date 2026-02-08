@@ -14,8 +14,8 @@ Get a random item (or items, key or keys) from the given array
 
 ## Arguments
 
-- array $a Array to get random item from
-- array $options Options to modify behavior: - `qty` (int): Return this quantity of item(s) (default=1). - `getKey` (bool): Return item key(s) rather than values. - `getArray` (bool): Return array (with original keys) rather than value (default=false if qty==1, true if not).
+- `$a` `array` Array to get random item from
+- `$options` (optional) `array` Options to modify behavior: - `qty` (int): Return this quantity of item(s) (default=1). - `getKey` (bool): Return item key(s) rather than values. - `getArray` (bool): Return array (with original keys) rather than value (default=false if qty==1, true if not).
 
 ## Return value
 

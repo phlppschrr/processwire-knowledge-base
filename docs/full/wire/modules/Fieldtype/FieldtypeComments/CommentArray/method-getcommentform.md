@@ -6,7 +6,7 @@ Return instance of CommentForm object
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Find and return all languages except default language
 
 ## Arguments
 
-- string $selector Optionally filter by a selector string
+- `$selector` (optional) `string` Optionally filter by a selector string
 
 ## Return value
 

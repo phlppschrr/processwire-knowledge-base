@@ -6,7 +6,7 @@ Return all error messages that occurred
 
 ## Arguments
 
-- bool $reset Specify true to clear out existing errors or omit just to return error messages
+- `$reset` (optional) `bool` Specify true to clear out existing errors or omit just to return error messages
 
 ## Return value
 

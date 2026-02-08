@@ -6,8 +6,8 @@ Find all module files, recursively in Path
 
 ## Arguments
 
-- string $path Omit to use the default (/site/modules/)
-- int $maxLevel Max depth to pursue module files in (recursion level)
+- `$path` (optional) `string` Omit to use the default (/site/modules/)
+- `$maxLevel` (optional) `int` Max depth to pursue module files in (recursion level)
 
 ## Return value
 

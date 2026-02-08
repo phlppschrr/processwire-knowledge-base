@@ -19,7 +19,7 @@ if($page->hasChildren()) {
 
 ## Arguments
 
-- bool|string|array $selector - When not specified, result is quantity of visible children (excludes unpublished, hidden, no-access, etc.) - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible children (this is the default behavior, so no need to specify this value). - When boolean false, number includes all children without conditions, including unpublished, hidden, no-access, etc.
+- `$selector` (optional) `bool|string|array` - When not specified, result is quantity of visible children (excludes unpublished, hidden, no-access, etc.) - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible children (this is the default behavior, so no need to specify this value). - When boolean false, number includes all children without conditions, including unpublished, hidden, no-access, etc.
 
 ## Return value
 

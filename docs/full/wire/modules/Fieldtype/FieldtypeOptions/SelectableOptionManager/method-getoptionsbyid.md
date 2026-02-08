@@ -6,8 +6,8 @@ Shortcut to get options by ID number
 
 ## Arguments
 
-- Field $field
-- array $ids
+- `$field` `Field`
+- `$ids` `array`
 
 ## Return value
 

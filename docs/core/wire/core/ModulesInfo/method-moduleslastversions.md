@@ -5,7 +5,7 @@ Source: `wire/core/ModulesInfo.php`
 
 ## Arguments
 
-- int|null $id
+- `$id` (optional) `int|null`
 
 ## Return value
 

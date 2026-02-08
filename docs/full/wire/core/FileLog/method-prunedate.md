@@ -6,7 +6,7 @@ Prune log file to contain only entries newer than $oldestDate
 
 ## Arguments
 
-- int|string $oldestDate
+- `$oldestDate` `int|string`
 
 ## Return value
 

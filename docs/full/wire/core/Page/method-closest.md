@@ -9,7 +9,7 @@ and the $selector argument is required.
 
 ## Arguments
 
-- string|array $selector Selector string to match.
+- `$selector` `string|array` Selector string to match.
 
 ## Return value
 

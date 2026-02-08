@@ -6,8 +6,8 @@ Is the given WireArray identical to this one?
 
 ## Arguments
 
-- WireArray $items
-- bool|int $strict
+- `$items` `WireArray`
+- `$strict` (optional) `bool|int`
 
 ## Return value
 

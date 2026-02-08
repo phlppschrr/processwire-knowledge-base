@@ -4,6 +4,6 @@ Source: `wire/core/Notice.php`
 
 Alias of allowMarkup flag
 
-## Meta
+## Since
 
-- @since 3.0.208
+3.0.208

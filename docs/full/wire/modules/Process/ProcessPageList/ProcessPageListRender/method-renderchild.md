@@ -6,7 +6,7 @@ Render child item in page list
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

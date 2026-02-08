@@ -6,7 +6,7 @@ Return the data available for the given $textdomain string
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`
 
 ## Return value
 

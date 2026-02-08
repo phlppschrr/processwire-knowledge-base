@@ -6,8 +6,8 @@ Set a runtime memory cache
 
 ## Arguments
 
-- string $name
-- mixed $setValue
+- `$name` `string`
+- `$setValue` (optional) `mixed`
 
 ## Return value
 

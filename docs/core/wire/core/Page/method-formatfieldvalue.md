@@ -8,8 +8,8 @@ This is primarily for use as a helper to the getFieldValue() method.
 
 ## Arguments
 
-- Field $field
-- mixed $value
+- `$field` `Field`
+- `$value` `mixed`
 
 ## Return value
 

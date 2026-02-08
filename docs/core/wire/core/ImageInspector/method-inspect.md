@@ -6,8 +6,8 @@ parse Image and return information
 
 ## Arguments
 
-- string $filename the file we want to inspect
-- bool $parseAppmarker (IPTC), default is FALSE
+- `$filename` (optional) `string` the file we want to inspect
+- `$parseAppmarker` (optional) `bool` (IPTC), default is FALSE
 
 ## Return value
 

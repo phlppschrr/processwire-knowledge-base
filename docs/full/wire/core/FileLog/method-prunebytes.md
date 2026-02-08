@@ -6,7 +6,7 @@ Prune log file to specified number of bytes (from the end)
 
 ## Arguments
 
-- int $bytes
+- `$bytes` `int`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Get options that will be passed to Pages::getById()
 
 ## Arguments
 
-- array $loadOptions Optionally specify options to merge with and override defaults
+- `$loadOptions` (optional) `array` Optionally specify options to merge with and override defaults
 
 ## Return value
 

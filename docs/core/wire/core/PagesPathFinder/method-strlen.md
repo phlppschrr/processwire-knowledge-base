@@ -6,7 +6,7 @@ Get string length, using mb_strlen() if available, strlen() if not
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

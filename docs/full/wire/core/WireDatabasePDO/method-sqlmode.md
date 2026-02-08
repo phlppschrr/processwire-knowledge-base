@@ -18,9 +18,9 @@ $database->sqlMode('remove', 'ONLY_FULL_GROUP_BY', '5.7.0');
 
 ## Arguments
 
-- string $action Specify "get", "set", "add" or "remove". (default="get")
-- string $mode Mode string or CSV string with SQL mode(s), i.e. "STRICT_TRANS_TABLES,ONLY_FULL_GROUP_BY". This argument should be omitted when using the "get" action.
-- string $minVersion Make the given action only apply if MySQL version is at least $minVersion, i.e. "5.7.0".
+- `$action` (optional) `string` Specify "get", "set", "add" or "remove". (default="get")
+- `$mode` (optional) `string` Mode string or CSV string with SQL mode(s), i.e. "STRICT_TRANS_TABLES,ONLY_FULL_GROUP_BY". This argument should be omitted when using the "get" action.
+- `$minVersion` (optional) `string` Make the given action only apply if MySQL version is at least $minVersion, i.e. "5.7.0".
 - \PDO PDO connection to use or omit for current (default=null) 3.0.175+
 
 ## Return value

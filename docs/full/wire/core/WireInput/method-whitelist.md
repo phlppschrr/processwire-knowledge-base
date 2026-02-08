@@ -25,8 +25,8 @@ $limit = $input->whitelist('limit');
 
 ## Arguments
 
-- string $key Whitelist variable name that you want to get or set. - If $key is blank, it assumes you are asking to return the entire whitelist. - If $key and $value are populated, it adds the value to the whitelist. - If $key is an array, it adds all the values present in the array to the whitelist. - If $value is omitted, it assumes you are asking for a value with $key, in which case it returns it.
-- mixed $value Value you want to set (if setting a value). See explanation for the $key param.
+- `$key` (optional) `string` Whitelist variable name that you want to get or set. - If $key is blank, it assumes you are asking to return the entire whitelist. - If $key and $value are populated, it adds the value to the whitelist. - If $key is an array, it adds all the values present in the array to the whitelist. - If $value is omitted, it assumes you are asking for a value with $key, in which case it returns it.
+- `$value` (optional) `mixed` Value you want to set (if setting a value). See explanation for the $key param.
 
 ## Return value
 

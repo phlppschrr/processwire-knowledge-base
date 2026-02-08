@@ -6,7 +6,7 @@ Turn change tracking ON or OFF
 
 ## Arguments
 
-- bool|int $trackChanges True to turn on, false to turn off. Integer to specify bitmask.
+- `$trackChanges` (optional) `bool|int` True to turn on, false to turn off. Integer to specify bitmask.
 
 ## Return value
 

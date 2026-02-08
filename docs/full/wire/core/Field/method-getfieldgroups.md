@@ -6,7 +6,7 @@ Return the list of Fieldgroups using this field.
 
 ## Arguments
 
-- bool $getCount Get count rather than FieldgroupsArray? (default=false) 3.0.182+
+- `$getCount` (optional) `bool` Get count rather than FieldgroupsArray? (default=false) 3.0.182+
 
 ## Return value
 

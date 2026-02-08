@@ -9,9 +9,9 @@ Otherwise it will populate the properties individually.
 
 ## Arguments
 
-- Module $module
-- array|null $data Configuration data [key=value], or omit/null if you want it to retrieve the config data for you.
-- array|null $extraData Additional runtime configuration data to merge (default=null) 3.0.169+
+- `$module` `Module`
+- `$data` (optional) `array|null` Configuration data [key=value], or omit/null if you want it to retrieve the config data for you.
+- `$extraData` (optional) `array|null` Additional runtime configuration data to merge (default=null) 3.0.169+
 
 ## Return value
 

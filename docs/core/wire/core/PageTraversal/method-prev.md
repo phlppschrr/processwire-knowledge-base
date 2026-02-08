@@ -6,8 +6,8 @@ Return the previous sibling page
 
 ## Arguments
 
-- Page $page
-- string|array|Selectors $selector Optional selector. When specified, will find nearest previous sibling that matches.
+- `$page` `Page`
+- `$selector` (optional) `string|array|Selectors` Optional selector. When specified, will find nearest previous sibling that matches.
 
 ## Return value
 

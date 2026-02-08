@@ -8,7 +8,7 @@ See $additional_parameters at: http://www.php.net/manual/en/function.mail.php
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

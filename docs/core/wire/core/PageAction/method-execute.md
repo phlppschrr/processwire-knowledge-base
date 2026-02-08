@@ -6,7 +6,7 @@ Execute the action for the given page
 
 ## Arguments
 
-- Page $item Item to operate upon
+- `$item` `Page` Item to operate upon
 
 ## Return value
 

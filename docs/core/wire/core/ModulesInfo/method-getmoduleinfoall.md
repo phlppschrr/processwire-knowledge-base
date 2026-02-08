@@ -6,7 +6,7 @@ Get info arrays for all modules indexed by module name
 
 ## Arguments
 
-- array $options See options for getModuleInfo() method
+- `$options` (optional) `array` See options for getModuleInfo() method
 
 ## Return value
 

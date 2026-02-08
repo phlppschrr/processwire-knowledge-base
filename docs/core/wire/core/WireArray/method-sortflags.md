@@ -21,12 +21,12 @@ For more details, see `$sort_flags` argument at: https://www.php.net/manual/en/f
 
 ## Arguments
 
-- bool $sortFlags Optionally specify flag(s) to set
+- `$sortFlags` (optional) `bool` Optionally specify flag(s) to set
 
 ## Return value
 
 int Returns current flags
 
-## Meta
+## Since
 
-- @since 3.0.129
+3.0.129

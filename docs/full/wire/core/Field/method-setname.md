@@ -9,7 +9,7 @@ is a system field, or is in some format not accepted for a field name.
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

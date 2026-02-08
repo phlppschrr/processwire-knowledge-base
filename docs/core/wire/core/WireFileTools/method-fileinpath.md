@@ -9,8 +9,8 @@ Note that if $file and $path are identical, this method returns false.
 
 ## Arguments
 
-- string $file May be a file or a directory
-- string $path
+- `$file` `string` May be a file or a directory
+- `$path` `string`
 
 ## Return value
 

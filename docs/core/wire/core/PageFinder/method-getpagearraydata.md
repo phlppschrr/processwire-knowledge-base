@@ -6,7 +6,7 @@ Get data that should be populated back to any resulting PageArray’s data() met
 
 ## Arguments
 
-- PageArray|null $pageArray Optionally populate given PageArray
+- `$pageArray` (optional) `PageArray|null` Optionally populate given PageArray
 
 ## Return value
 

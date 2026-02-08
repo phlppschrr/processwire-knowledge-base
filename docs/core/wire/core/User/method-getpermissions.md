@@ -14,7 +14,7 @@ $permissions = $user->getPermissions($page);
 
 ## Arguments
 
-- Page|null $page Optional page to check against
+- `$page` (optional) `Page|null` Optional page to check against
 
 ## Return value
 

@@ -9,7 +9,7 @@ the scope of this `get()` method means it can return more than just Field object
 
 ## Arguments
 
-- string|int $key Property name to retrieve, or Field name
+- `$key` `string|int` Property name to retrieve, or Field name
 
 ## Return value
 

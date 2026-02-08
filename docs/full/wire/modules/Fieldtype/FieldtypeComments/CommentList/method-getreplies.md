@@ -6,7 +6,7 @@ Get replies to the given comment ID, or 0 for root level comments
 
 ## Arguments
 
-- int|Comment $commentID
+- `$commentID` `int|Comment`
 
 ## Return value
 

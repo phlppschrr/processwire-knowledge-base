@@ -6,8 +6,8 @@ Return cryptographically secure random alphanumeric, alpha or numeric string
 
 ## Arguments
 
-- int $length Required length of string, or 0 for random length
-- array $options See WireRandom::alphanumeric() for options
+- `$length` (optional) `int` Required length of string, or 0 for random length
+- `$options` (optional) `array` See WireRandom::alphanumeric() for options
 
 ## Return value
 
@@ -17,7 +17,10 @@ string
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.109
-- @deprecated use WireRandom::alphanumeric() instead
+3.0.109
+
+## Deprecated
+
+use WireRandom::alphanumeric() instead

@@ -6,12 +6,12 @@ Convert a cacheable array to a PageArray
 
 ## Arguments
 
-- array $data
+- `$data` `array`
 
 ## Return value
 
 PageArray
 
-## Meta
+## Since
 
-- @since 2.5.28
+2.5.28

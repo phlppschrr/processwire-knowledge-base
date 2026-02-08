@@ -17,9 +17,9 @@ if($u) {
 
 ## Arguments
 
-- string|User $name May be user name or User object.
-- string $pass Raw, non-hashed password.
-- bool $force Specify boolean true to login user without requiring a password ($pass argument can be blank, or anything). You can also use the `$session->forceLogin($user)` method to force a login without a password.
+- `$name` `string|User` May be user name or User object.
+- `$pass` `string` Raw, non-hashed password.
+- `$force` (optional) `bool` Specify boolean true to login user without requiring a password ($pass argument can be blank, or anything). You can also use the `$session->forceLogin($user)` method to force a login without a password.
 
 ## Return value
 

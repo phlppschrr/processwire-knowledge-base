@@ -6,12 +6,12 @@ Get ratio of width divided by height
 
 ## Arguments
 
-- int $precision Optionally specify a value >2 for custom precision (default=2) 3.0.211+
+- `$precision` (optional) `int` Optionally specify a value >2 for custom precision (default=2) 3.0.211+
 
 ## Return value
 
 float
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

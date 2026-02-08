@@ -25,7 +25,7 @@ array(
 
 ## Arguments
 
-- array $a Import data array
+- `$a` `array` Import data array
 
 ## Return value
 

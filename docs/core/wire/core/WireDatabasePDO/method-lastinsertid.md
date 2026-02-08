@@ -6,12 +6,12 @@ Returns the ID of the last inserted row or sequence value
 
 ## Arguments
 
-- string|null $name
+- `$name` (optional) `string|null`
 
 ## Return value
 
 string
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.lastinsertid.php

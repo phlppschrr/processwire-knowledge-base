@@ -12,8 +12,8 @@ method that it was unable to map it to anything and should be considered a fail.
 
 ## Arguments
 
-- string $fieldName
-- array $data Array of data containing the following in it: - `subfield` (string): First subfield - `subfields` (string): All subfields separated by period (i.e. subfield.tertiaryfield) - `fields` (array): Array of all other field names being processed in this selector. - `query` (DatabaseQuerySelect): Database query select object - `selector` (Selector): Selector that contains this field - `selectors` (Selectors): All the selectors
+- `$fieldName` `string`
+- `$data` `array` Array of data containing the following in it: - `subfield` (string): First subfield - `subfields` (string): All subfields separated by period (i.e. subfield.tertiaryfield) - `fields` (array): Array of all other field names being processed in this selector. - `query` (DatabaseQuerySelect): Database query select object - `selector` (Selector): Selector that contains this field - `selectors` (Selectors): All the selectors
 
 ## Return value
 

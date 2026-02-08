@@ -6,7 +6,7 @@ Set a file to append to the template file at render time
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

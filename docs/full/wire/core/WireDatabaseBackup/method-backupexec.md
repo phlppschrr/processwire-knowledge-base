@@ -6,13 +6,13 @@ Create a mysql dump file using exec(mysqldump)
 
 ## Arguments
 
-- string $file Path + filename to create
-- array $options
+- `$file` `string` Path + filename to create
+- `$options` `array`
 
 ## Return value
 
 string|bool Returns the created file on success or false on error
 
-## Meta
+## Details
 
 - @todo add backupStartFile/backupEndFile support

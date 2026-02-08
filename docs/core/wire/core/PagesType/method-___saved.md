@@ -6,10 +6,10 @@ Hook called after a page of this type is successfully saved
 
 ## Arguments
 
-- Page $page The page that was saved
-- array $changes Array of field names that changed
-- array $values Array of values that changed, if values were being recorded, see Wire::getChanges(true) for details.
+- `$page` `Page` The page that was saved
+- `$changes` (optional) `array` Array of field names that changed
+- `$values` (optional) `array` Array of values that changed, if values were being recorded, see Wire::getChanges(true) for details.
 
-## Meta
+## Since
 
-- @since 3.0.128
+3.0.128

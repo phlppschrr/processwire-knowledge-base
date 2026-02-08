@@ -75,14 +75,14 @@ In 3.0.193 the following additional options were added for the `$field` argument
 
 ## Arguments
 
-- string|array|Selectors|int $selector Page matching selector or page ID
-- string|array|Field $field Name of field/property to get, or array of them, CSV string, or omit to get all (default='') - Optionally use associative array to rename fields in returned value, i.e. `['title' => 'label']` returns 'title' as 'label' in return value. - Note: this argument may also be specified in the $selector argument as "field=foo" or "field=foo|bar|baz" (3.0.173+).
-- array $options Options to adjust behavior (may also be specified in selector, i.e. “objects=1, entities=foo|bar”) - `objects` (bool): Use objects rather than associative arrays? (default=false) 3.0.174+ - `entities` (bool|array): Entity encode string values? True or 1 to enable, or specify array of field names. (default=false) 3.0.174+ - `nulls` (bool): Populate nulls for field values that are not present, rather than omitting them? (default=false) 3.0.198+ - `indexed` (bool): Index by page ID? (default=true) - `flat` (bool|string): Flatten return value as `["field.subfield" => "value"]` rather than `["field" => ["subfield" => "value"]]`? Optionally specify field delimiter for the value, otherwise a period `.` will be used as the delimiter. (default=false) 3.0.193+ - Any of these options above can be specified in the $selector argument as a string, i.e. `…, flat=1, entities=1`. - Note the `objects` and `flat` options are not meant to be used together.
+- `$selector` `string|array|Selectors|int` Page matching selector or page ID
+- `$field` (optional) `string|array|Field` Name of field/property to get, or array of them, CSV string, or omit to get all (default='') - Optionally use associative array to rename fields in returned value, i.e. `['title' => 'label']` returns 'title' as 'label' in return value. - Note: this argument may also be specified in the $selector argument as "field=foo" or "field=foo|bar|baz" (3.0.173+).
+- `$options` (optional) `array` Options to adjust behavior (may also be specified in selector, i.e. “objects=1, entities=foo|bar”) - `objects` (bool): Use objects rather than associative arrays? (default=false) 3.0.174+ - `entities` (bool|array): Entity encode string values? True or 1 to enable, or specify array of field names. (default=false) 3.0.174+ - `nulls` (bool): Populate nulls for field values that are not present, rather than omitting them? (default=false) 3.0.198+ - `indexed` (bool): Index by page ID? (default=true) - `flat` (bool|string): Flatten return value as `["field.subfield" => "value"]` rather than `["field" => ["subfield" => "value"]]`? Optionally specify field delimiter for the value, otherwise a period `.` will be used as the delimiter. (default=false) 3.0.193+ - Any of these options above can be specified in the $selector argument as a string, i.e. `…, flat=1, entities=1`. - Note the `objects` and `flat` options are not meant to be used together.
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

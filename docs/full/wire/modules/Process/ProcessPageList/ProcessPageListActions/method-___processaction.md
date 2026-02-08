@@ -6,8 +6,8 @@ Process action
 
 ## Arguments
 
-- Page $page
-- string $action
+- `$page` `Page`
+- `$action` `string`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Turn on/off interlace
 
 ## Arguments
 
-- bool $value Whether to upscale or not (default = true)
+- `$value` (optional) `bool` Whether to upscale or not (default = true)
 
 ## Return value
 

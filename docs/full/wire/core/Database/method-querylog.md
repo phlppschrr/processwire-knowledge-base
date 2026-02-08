@@ -6,7 +6,7 @@ Log a query or return the query log
 
 ## Arguments
 
-- string $sql Omit to instead return the query log
+- `$sql` (optional) `string` Omit to instead return the query log
 
 ## Return value
 

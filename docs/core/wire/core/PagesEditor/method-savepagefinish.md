@@ -8,9 +8,9 @@ triggers hooks: saved, added, moved, renamed, templateChanged
 
 ## Arguments
 
-- Page $page
-- bool $isNew
-- array $options
+- `$page` `Page`
+- `$isNew` `bool`
+- `$options` `array`
 
 ## Return value
 

@@ -8,7 +8,7 @@ This can also be accessed directly, i.e. `$fieldName = $field->name;`.
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

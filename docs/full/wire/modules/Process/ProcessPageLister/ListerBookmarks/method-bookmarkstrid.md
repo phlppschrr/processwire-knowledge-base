@@ -6,8 +6,8 @@ Given an id or string key, return an bookmark string ID
 
 ## Arguments
 
-- string|int $val
-- int $type
+- `$val` `string|int`
+- `$type` `int`
 
 ## Return value
 

@@ -6,12 +6,12 @@ Return generated SQL for entire query or specific method
 
 ## Arguments
 
-- string $method Optionally specify method name to get SQL for
+- `$method` (optional) `string` Optionally specify method name to get SQL for
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

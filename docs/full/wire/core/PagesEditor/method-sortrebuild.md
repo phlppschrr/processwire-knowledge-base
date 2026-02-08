@@ -9,7 +9,7 @@ consistent with whatever the pages are sorted by.
 
 ## Arguments
 
-- Page $parent
+- `$parent` `Page`
 
 ## Return value
 

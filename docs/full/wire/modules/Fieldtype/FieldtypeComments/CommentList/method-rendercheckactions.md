@@ -14,7 +14,7 @@ a text message of what occurred.
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

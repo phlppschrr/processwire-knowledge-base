@@ -9,8 +9,8 @@ the same name as the class, converted to hyphenated lowercase.
 
 ## Arguments
 
-- string $str Text to log, or omit to just return the name of the log
-- array $options Optional extras to include: - url (string): URL to record the with the log entry (default=auto-detect) - name (string): Name of log to use (default=auto-detect)
+- `$str` (optional) `string` Text to log, or omit to just return the name of the log
+- `$options` (optional) `array` Optional extras to include: - url (string): URL to record the with the log entry (default=auto-detect) - name (string): Name of log to use (default=auto-detect)
 
 ## Return value
 

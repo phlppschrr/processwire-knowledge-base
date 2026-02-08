@@ -8,7 +8,7 @@ Selectors should include a call to this in their matches function
 
 ## Arguments
 
-- bool $matches
+- `$matches` `bool`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Set the icon to use with this template
 
 ## Arguments
 
-- string $icon Font-awesome icon name
+- `$icon` `string` Font-awesome icon name
 
 ## Return value
 

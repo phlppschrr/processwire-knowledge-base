@@ -13,8 +13,8 @@ $item = $page->findOne("sort=-modified");
 
 ## Arguments
 
-- string|array $selector Selector string or array
-- array $options Optional options to modify default bheavior, see options for `Pages::find()`.
+- `$selector` (optional) `string|array` Selector string or array
+- `$options` (optional) `array` Optional options to modify default bheavior, see options for `Pages::find()`.
 
 ## Return value
 
@@ -25,6 +25,6 @@ Page|NullPage Returns Page when found, or NullPage when nothing found.
 - [Pages::findOne()](../Pages/method-findone.md)
 - [Page::child()](method-child.md)
 
-## Meta
+## Since
 
-- @since 3.0.116
+3.0.116

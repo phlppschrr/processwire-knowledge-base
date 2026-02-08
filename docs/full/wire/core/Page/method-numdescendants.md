@@ -18,7 +18,7 @@ $qty = $page->numDescendants("modified>='-1 WEEK'");
 
 ## Arguments
 
-- bool|string|array $selector - When not specified, result includes all descendants without conditions, same as $page->numDescendants property. - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible descendants (excludes unpublished, hidden, no-access, etc.)
+- `$selector` (optional) `bool|string|array` - When not specified, result includes all descendants without conditions, same as $page->numDescendants property. - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible descendants (excludes unpublished, hidden, no-access, etc.)
 
 ## Return value
 

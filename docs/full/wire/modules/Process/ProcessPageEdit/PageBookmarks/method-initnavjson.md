@@ -6,7 +6,7 @@ Initialize/create the $options array for executeNavJSON() in Process modules
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

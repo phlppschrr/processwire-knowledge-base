@@ -9,7 +9,7 @@ Determines if the given item iterable as an array.
 
 ## Arguments
 
-- mixed $item Item to check for iterability.
+- `$item` `mixed` Item to check for iterability.
 
 ## Return value
 

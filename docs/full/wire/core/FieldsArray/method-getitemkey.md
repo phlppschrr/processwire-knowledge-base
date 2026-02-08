@@ -6,7 +6,7 @@ Per WireArray interface, Field instances are keyed by their ID
 
 ## Arguments
 
-- Field $item
+- `$item` `Field`
 
 ## Return value
 

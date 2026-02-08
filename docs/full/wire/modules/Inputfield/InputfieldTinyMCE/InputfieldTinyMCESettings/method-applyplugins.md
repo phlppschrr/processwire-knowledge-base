@@ -6,5 +6,5 @@ Apply plugins settings
 
 ## Arguments
 
-- array $settings
-- array $defaults
+- `$settings` `array`
+- `$defaults` `array`

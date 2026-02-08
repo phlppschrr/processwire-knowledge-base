@@ -6,8 +6,8 @@ Delete the given option IDs
 
 ## Arguments
 
-- Field $field
-- array $ids
+- `$field` `Field`
+- `$ids` `array`
 
 ## Return value
 

@@ -19,10 +19,10 @@ $value = $cache->get($this, 'my-cache-name');
 
 ## Arguments
 
-- string|object $ns Namespace
-- string $name Cache name
-- null|int|string $expire Optional expiration
-- callable|null $func Optional cache generation function
+- `$ns` `string|object` Namespace
+- `$name` `string` Cache name
+- `$expire` (optional) `null|int|string` Optional expiration
+- `$func` (optional) `callable|null` Optional cache generation function
 
 ## Return value
 

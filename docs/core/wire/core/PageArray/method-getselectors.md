@@ -14,7 +14,7 @@ echo $products->getSelectors(); // outputs the selector above
 
 ## Arguments
 
-- bool $getString Specify true to get selector string rather than Selectors object (default=false) added in 3.0.142
+- `$getString` (optional) `bool` Specify true to get selector string rather than Selectors object (default=false) added in 3.0.142
 
 ## Return value
 

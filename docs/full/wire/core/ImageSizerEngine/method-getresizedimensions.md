@@ -10,8 +10,8 @@ Intended for use by the resize() method
 
 ## Arguments
 
-- int $targetWidth
-- int $targetHeight
+- `$targetWidth` `int`
+- `$targetHeight` `int`
 
 ## Return value
 

@@ -6,4 +6,4 @@ Create tests for Inputfields widths and showIf
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

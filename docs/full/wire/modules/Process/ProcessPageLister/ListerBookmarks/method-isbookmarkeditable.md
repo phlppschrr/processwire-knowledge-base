@@ -6,7 +6,7 @@ Is the given bookmark editable?
 
 ## Arguments
 
-- array $bookmark
+- `$bookmark` `array`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Set the destination path for uploaded files
 
 ## Arguments
 
-- string $destinationPath Include a trailing slash
+- `$destinationPath` `string` Include a trailing slash
 
 ## Return value
 

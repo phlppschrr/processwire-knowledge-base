@@ -6,4 +6,4 @@ Set the field these options are for
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`

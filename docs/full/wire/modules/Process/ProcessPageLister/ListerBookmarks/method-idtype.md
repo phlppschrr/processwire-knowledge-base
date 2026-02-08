@@ -6,7 +6,7 @@ Get the type from the given id string
 
 ## Arguments
 
-- string $val
+- `$val` `string`
 
 ## Return value
 

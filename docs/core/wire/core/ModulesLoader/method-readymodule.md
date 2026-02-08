@@ -6,7 +6,7 @@ Call ready for a single module
 
 ## Arguments
 
-- Module $module
+- `$module` `Module`
 
 ## Return value
 

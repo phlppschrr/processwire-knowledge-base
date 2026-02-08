@@ -21,7 +21,7 @@ $value = $item["some_property"];
 
 ## Arguments
 
-- string|object $key Name of property you want to retrieve.
+- `$key` `string|object` Name of property you want to retrieve.
 
 ## Return value
 

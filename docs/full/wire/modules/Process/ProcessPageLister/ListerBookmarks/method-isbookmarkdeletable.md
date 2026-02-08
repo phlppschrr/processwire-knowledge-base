@@ -6,7 +6,7 @@ Is the given bookmark deletable?
 
 ## Arguments
 
-- array $bookmark
+- `$bookmark` `array`
 
 ## Return value
 

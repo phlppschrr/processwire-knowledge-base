@@ -10,8 +10,8 @@ Modified for camelCase, variable names, and function-based context by Ryan.
 
 ## Arguments
 
-- int $requiredLength Length of string you want returned (default=22)
-- array|bool $options Specify array of options or boolean to specify only `fast` option. - `fast` (bool): Use fastest, not cryptographically secure method (default=false). - `test` (bool|array): Return tests in a string (bool true), or specify array(true) to return tests array (default=false). Note that if the test option is used, then the fast option is disabled.
+- `$requiredLength` (optional) `int` Length of string you want returned (default=22)
+- `$options` (optional) `array|bool` Specify array of options or boolean to specify only `fast` option. - `fast` (bool): Use fastest, not cryptographically secure method (default=false). - `test` (bool|array): Return tests in a string (bool true), or specify array(true) to return tests array (default=false). Note that if the test option is used, then the fast option is disabled.
 
 ## Return value
 

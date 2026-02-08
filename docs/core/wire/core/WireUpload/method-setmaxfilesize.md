@@ -6,7 +6,7 @@ Set the max allowed uploaded file size
 
 ## Arguments
 
-- int $bytes
+- `$bytes` `int`
 
 ## Return value
 

@@ -6,8 +6,8 @@ Unzip the module file to tempDir and then copy to destination directory
 
 ## Arguments
 
-- string $zipFile File to unzip
-- string $destinationDir Directory to copy completed files into. Optionally omit to determine automatically.
+- `$zipFile` `string` File to unzip
+- `$destinationDir` (optional) `string` Directory to copy completed files into. Optionally omit to determine automatically.
 
 ## Return value
 

@@ -6,9 +6,9 @@ Add a vote to the current comment from the current user/IP
 
 ## Arguments
 
-- Page $page
-- Comment $comment
-- bool $up Specify true for upvote, or false for downvote
+- `$page` `Page`
+- `$comment` `Comment`
+- `$up` (optional) `bool` Specify true for upvote, or false for downvote
 
 ## Return value
 

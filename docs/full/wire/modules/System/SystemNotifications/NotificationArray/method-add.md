@@ -6,7 +6,7 @@ Add a Notification instance to this NotificationArray
 
 ## Arguments
 
-- Notification $item
+- `$item` `Notification`
 
 ## Return value
 

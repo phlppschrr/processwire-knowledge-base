@@ -21,13 +21,13 @@ echo $sanitizer->fieldSubfield('foo bar baz'); // outputs: foo_bar_baz
 
 ## Arguments
 
-- string $value Value to sanitize
-- int $limit Max allowed quantity of subfields, or use -1 for any quantity (default=1).
+- `$value` `string` Value to sanitize
+- `$limit` (optional) `int` Max allowed quantity of subfields, or use -1 for any quantity (default=1).
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.126
+3.0.126

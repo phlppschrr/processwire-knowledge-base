@@ -14,7 +14,7 @@ $t = templates('basic-page'); // shortcut syntax
 
 ## Arguments
 
-- string $name Optional template to retrieve
+- `$name` (optional) `string` Optional template to retrieve
 
 ## Return value
 

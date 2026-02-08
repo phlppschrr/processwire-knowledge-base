@@ -6,12 +6,12 @@ Get cache busted URL
 
 ## Arguments
 
-- bool $http
+- `$http` (optional) `bool`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

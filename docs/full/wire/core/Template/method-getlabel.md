@@ -10,7 +10,7 @@ and it will always return something. If there's no label, you'll still get the n
 
 ## Arguments
 
-- Page|Language $language Optional, if not used then user's current language is used
+- `$language` (optional) `Page|Language` Optional, if not used then user's current language is used
 
 ## Return value
 

@@ -6,7 +6,7 @@ Return visible length of string, which is length not counting markup or entities
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

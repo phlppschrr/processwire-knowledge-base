@@ -6,8 +6,8 @@ Does the given class exist in given $classes array?
 
 ## Arguments
 
-- string $class May be class name, or class prefix if $class has "*" at end.
-- array $classes
+- `$class` `string` May be class name, or class prefix if $class has "*" at end.
+- `$classes` `array`
 
 ## Return value
 

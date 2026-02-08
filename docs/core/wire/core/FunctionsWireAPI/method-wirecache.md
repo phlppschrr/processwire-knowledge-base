@@ -9,9 +9,9 @@ If called with arguments, it can be used the same as `WireCache::get()`.
 
 ## Arguments
 
-- string $name
-- callable|int|string|null $expire
-- callable|int|string|null $func
+- `$name` (optional) `string`
+- `$expire` (optional) `callable|int|string|null`
+- `$func` (optional) `callable|int|string|null`
 
 ## Return value
 

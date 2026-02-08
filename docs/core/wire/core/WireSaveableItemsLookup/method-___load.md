@@ -8,8 +8,8 @@ A selector string or Selectors may be provided so that this can be used as a fin
 
 ## Arguments
 
-- WireArray $items
-- Selectors|string|null $selectors Selectors or a selector string to find, or NULL to load all.
+- `$items` `WireArray`
+- `$selectors` (optional) `Selectors|string|null` Selectors or a selector string to find, or NULL to load all.
 
 ## Return value
 

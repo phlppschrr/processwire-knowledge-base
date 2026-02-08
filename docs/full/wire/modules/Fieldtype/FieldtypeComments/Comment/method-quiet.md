@@ -8,7 +8,7 @@ When quiet mode is active, comment additions/changes don't trigger notifications
 
 ## Arguments
 
-- bool $quiet Specify only if setting
+- `$quiet` (optional) `bool` Specify only if setting
 
 ## Return value
 

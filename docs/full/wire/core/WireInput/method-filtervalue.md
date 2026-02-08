@@ -6,9 +6,9 @@ Filter value against given $valid whitelist
 
 ## Arguments
 
-- string|array $value
-- array $valid Whitelist of valid values
-- bool $getArray Filter to allow multiple values (array)?
+- `$value` `string|array`
+- `$valid` `array` Whitelist of valid values
+- `$getArray` `bool` Filter to allow multiple values (array)?
 
 ## Return value
 

@@ -8,4 +8,4 @@ To be called when a `$template->useRoles` property has changed.
 
 ## Arguments
 
-- Template $template
+- `$template` `Template`

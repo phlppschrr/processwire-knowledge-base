@@ -13,7 +13,7 @@ $event->removeHook(null);
 
 ## Arguments
 
-- string|HookEvent|null $hookId
+- `$hookId` `string|HookEvent|null`
 
 ## Return value
 

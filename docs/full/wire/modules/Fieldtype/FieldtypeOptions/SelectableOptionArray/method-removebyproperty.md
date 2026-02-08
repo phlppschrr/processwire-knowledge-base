@@ -6,13 +6,13 @@ Remove item by property (value, title, id)
 
 ## Arguments
 
-- string $property
-- string|int $value
+- `$property` `string`
+- `$value` `string|int`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

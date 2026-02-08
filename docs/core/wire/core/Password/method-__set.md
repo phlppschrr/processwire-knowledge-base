@@ -6,5 +6,5 @@ Set a property
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`

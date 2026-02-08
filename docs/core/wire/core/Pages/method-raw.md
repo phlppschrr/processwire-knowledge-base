@@ -8,6 +8,6 @@ Get the PagesRaw instance which provides methods for findind and loading raw pag
 
 PagesRaw
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

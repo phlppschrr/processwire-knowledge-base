@@ -19,9 +19,9 @@ if($files->mkdir($config->paths->cache . 'foo-bar/')) {
 
 ## Arguments
 
-- string $path Directory you want to create
-- bool|string $recursive If set to true, all directories will be created as needed to reach the end.
-- string|null|bool $chmod Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755" If omitted, then ProcessWire's `$config->chmodDir` setting is used instead.
+- `$path` `string` Directory you want to create
+- `$recursive` (optional) `bool|string` If set to true, all directories will be created as needed to reach the end.
+- `$chmod` (optional) `string|null|bool` Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755" If omitted, then ProcessWire's `$config->chmodDir` setting is used instead.
 
 ## Return value
 

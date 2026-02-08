@@ -16,8 +16,8 @@ See the Wire::runHooks() method for the full implementation of hook calls.
 
 ## Arguments
 
-- string $method
-- array $arguments
+- `$method` `string`
+- `$arguments` `array`
 
 ## Return value
 

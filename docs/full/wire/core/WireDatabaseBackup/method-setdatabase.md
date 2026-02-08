@@ -6,7 +6,7 @@ Set the PDO database connection
 
 ## Arguments
 
-- \PDO|WireDatabasePDO $database
+- `$database` `\PDO|WireDatabasePDO`
 
 ## Throws
 

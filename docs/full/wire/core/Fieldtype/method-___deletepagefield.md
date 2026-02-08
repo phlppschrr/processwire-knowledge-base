@@ -8,8 +8,8 @@ Must delete entries from field's database table that belong to the Page.
 
 ## Arguments
 
-- Page $page
-- Field $field Field object
+- `$page` `Page`
+- `$field` `Field` Field object
 
 ## Return value
 

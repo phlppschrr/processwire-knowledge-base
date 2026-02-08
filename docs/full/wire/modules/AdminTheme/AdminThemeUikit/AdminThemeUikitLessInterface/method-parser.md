@@ -5,7 +5,7 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 ## Arguments
 
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

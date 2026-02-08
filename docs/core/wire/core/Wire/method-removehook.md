@@ -25,7 +25,7 @@ $hookID = $pages->addHookAfter('find', function($event) {
 
 ## Arguments
 
-- string|array|null $hookId ID of hook to remove (ID is returned by the addHook() methods) Since 3.0.137 it may also be an array or CSV string of hook IDs to remove.
+- `$hookId` `string|array|null` ID of hook to remove (ID is returned by the addHook() methods) Since 3.0.137 it may also be an array or CSV string of hook IDs to remove.
 
 ## Return value
 

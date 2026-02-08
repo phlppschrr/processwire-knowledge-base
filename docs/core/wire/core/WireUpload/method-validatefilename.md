@@ -6,8 +6,8 @@ Sanitize/validate a given filename
 
 ## Arguments
 
-- string $value Filename
-- array $extensions Allowed file extensions
+- `$value` `string` Filename
+- `$extensions` (optional) `array` Allowed file extensions
 
 ## Return value
 

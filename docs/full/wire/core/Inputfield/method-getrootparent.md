@@ -10,6 +10,6 @@ This returns null only if Inputfield it is called from has not yet been added to
 
 InputfieldForm|InputfieldWrapper|null
 
-## Meta
+## Since
 
-- @since 3.0.106
+3.0.106

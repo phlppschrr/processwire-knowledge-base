@@ -6,7 +6,7 @@ Set the email message body (HTML only)
 
 ## Arguments
 
-- string $body in HTML
+- `$body` `string` in HTML
 
 ## Return value
 

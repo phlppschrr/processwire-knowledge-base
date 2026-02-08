@@ -6,8 +6,8 @@ Truncate password to requested maxLength without removing required options (for 
 
 ## Arguments
 
-- string $value
-- array $options See options from password() method
+- `$value` `string`
+- `$options` `array` See options from password() method
 
 ## Return value
 

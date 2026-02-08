@@ -6,9 +6,9 @@ Return all sibling pages after this one, optionally matching a selector
 
 ## Arguments
 
-- string|array|bool $selector Optional selector. When specified, will filter the found siblings.
-- bool|PageArray $getQty Return a count instead of PageArray? (boolean) - If no $selector argument is needed, this may be specified as the first argument. - Legacy support: You may specify a PageArray of siblings to use instead of the default (deprecated, avoid it).
-- bool $getPrev For internal use, makes this method implement the prevAll() behavior instead.
+- `$selector` (optional) `string|array|bool` Optional selector. When specified, will filter the found siblings.
+- `$getQty` (optional) `bool|PageArray` Return a count instead of PageArray? (boolean) - If no $selector argument is needed, this may be specified as the first argument. - Legacy support: You may specify a PageArray of siblings to use instead of the default (deprecated, avoid it).
+- `$getPrev` (optional) `bool` For internal use, makes this method implement the prevAll() behavior instead.
 
 ## Return value
 

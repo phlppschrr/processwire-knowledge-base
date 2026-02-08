@@ -6,13 +6,13 @@ Get property in formatted (true) or unformatted (false) state
 
 ## Arguments
 
-- string $key
-- bool $of
+- `$key` `string`
+- `$of` `bool`
 
 ## Return value
 
 mixed
 
-## Meta
+## Since
 
-- @since 3.0.215
+3.0.215

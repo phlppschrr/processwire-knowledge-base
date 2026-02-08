@@ -8,8 +8,8 @@ This method is designed for fast determinations of whether something is hooked
 
 ## Arguments
 
-- string|Wire $class
-- string $method Name of method
+- `$class` `string|Wire`
+- `$method` `string` Name of method
 
 ## Return value
 

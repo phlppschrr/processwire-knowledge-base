@@ -6,9 +6,9 @@ Rename a table column without changing type
 
 ## Arguments
 
-- string $table
-- string $oldName
-- string $newName
+- `$table` `string`
+- `$oldName` `string`
+- `$newName` `string`
 
 ## Return value
 
@@ -18,6 +18,6 @@ bool
 
 - \PDOException
 
-## Meta
+## Since
 
-- @since 3.0.185
+3.0.185

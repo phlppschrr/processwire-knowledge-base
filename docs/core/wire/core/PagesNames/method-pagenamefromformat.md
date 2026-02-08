@@ -29,9 +29,9 @@ date() format, PHP strftime() format, as well as some other predefined options.
 
 ## Arguments
 
-- Page $page
-- string|array $format Optional format. If not specified, pulls from $page’s parent template.
-- array $options Options to modify behavior. May also be specified in $format argument. - `language` (Language|string): Language to use - `format` (string): Optional format to use, if $options were specified in $format argument.
+- `$page` `Page`
+- `$format` (optional) `string|array` Optional format. If not specified, pulls from $page’s parent template.
+- `$options` (optional) `array` Options to modify behavior. May also be specified in $format argument. - `language` (Language|string): Language to use - `format` (string): Optional format to use, if $options were specified in $format argument.
 
 ## Return value
 

@@ -8,7 +8,7 @@ This is the same as `$role->permissions->remove($permission)` except this one wi
 
 ## Arguments
 
-- string|int|Permission $permission Permission object, name or id.
+- `$permission` `string|int|Permission` Permission object, name or id.
 
 ## Return value
 

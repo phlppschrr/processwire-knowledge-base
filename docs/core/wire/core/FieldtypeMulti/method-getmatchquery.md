@@ -8,11 +8,11 @@ Possible template method: If overridden, children should NOT call this parent me
 
 ## Arguments
 
-- PageFinderDatabaseQuerySelect $query
-- string $table The table name to use
-- string $subfield Name of the field (typically 'data', unless selector explicitly specified another)
-- string $operator The comparison operator
-- mixed $value The value to find
+- `$query` `PageFinderDatabaseQuerySelect`
+- `$table` `string` The table name to use
+- `$subfield` `string` Name of the field (typically 'data', unless selector explicitly specified another)
+- `$operator` `string` The comparison operator
+- `$value` `mixed` The value to find
 
 ## Return value
 

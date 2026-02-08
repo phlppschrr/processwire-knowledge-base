@@ -6,7 +6,7 @@ Get a random key from given array
 
 ## Arguments
 
-- array $a
+- `$a` `array`
 
 ## Return value
 

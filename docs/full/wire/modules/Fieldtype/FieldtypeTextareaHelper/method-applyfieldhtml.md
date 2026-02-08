@@ -6,7 +6,7 @@ Apply all htmlOptions to field values (hook to Session::redirect)
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`
 
 ## Throws
 

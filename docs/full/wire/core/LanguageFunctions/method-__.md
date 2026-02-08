@@ -80,9 +80,9 @@ _x([ 'Canada Goose', 'Canadian Goose' ], 'bird');
 
 ## Arguments
 
-- string|array|bool $text Text for translation.
-- string|array $textdomain Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine it automatically.
-- string|bool|array $context Name of context - DO NOT USE with this function for translation as it will not be parsed for translation. Use only with the `_x()` function, which will be parsed.
+- `$text` `string|array|bool` Text for translation.
+- `$textdomain` (optional) `string|array` Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine it automatically.
+- `$context` (optional) `string|bool|array` Name of context - DO NOT USE with this function for translation as it will not be parsed for translation. Use only with the `_x()` function, which will be parsed.
 
 ## Return value
 
@@ -93,6 +93,6 @@ string|array Translated text or original text if translation not available. Retu
 - _x()
 - _n()
 
-## Meta
+## Details
 
 - @link https://processwire.com/docs/multi-language-support/code-i18n/

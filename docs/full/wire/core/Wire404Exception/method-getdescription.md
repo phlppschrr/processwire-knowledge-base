@@ -8,6 +8,6 @@ Get description of source for 404 error
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.255
+3.0.255

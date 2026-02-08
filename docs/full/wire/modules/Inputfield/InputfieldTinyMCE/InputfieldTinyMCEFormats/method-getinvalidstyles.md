@@ -14,9 +14,9 @@ and height is disabled for "td" elements.
 
 ## Arguments
 
-- string|array $value
-- array|string $defaultValue
-- bool $merge Merge with given defaultValue?
+- `$value` `string|array`
+- `$defaultValue` `array|string`
+- `$merge` (optional) `bool` Merge with given defaultValue?
 
 ## Return value
 

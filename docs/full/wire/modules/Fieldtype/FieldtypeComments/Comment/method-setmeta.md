@@ -8,13 +8,13 @@ To set multiple properties at once specify an associative array for $key and omi
 
 ## Arguments
 
-- string|array $key Property name to set or assoc array of them
-- null|string|array|int|float|mixed $value Value to set for $key or omit of you used an array.
+- `$key` `string|array` Property name to set or assoc array of them
+- `$value` (optional) `null|string|array|int|float|mixed` Value to set for $key or omit of you used an array.
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.203
+3.0.203

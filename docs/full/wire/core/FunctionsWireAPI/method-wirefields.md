@@ -6,7 +6,7 @@ Access the $fields API variable as a function
 
 ## Arguments
 
-- string $name Optional field name to retrieve
+- `$name` (optional) `string` Optional field name to retrieve
 
 ## Return value
 

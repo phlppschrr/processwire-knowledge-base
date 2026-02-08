@@ -6,7 +6,7 @@ Get information about a backup file
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

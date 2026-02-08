@@ -16,7 +16,7 @@ $page->addStatus(Page::statusHidden);
 
 ## Arguments
 
-- int|string $statusFlag Status flag constant or string representation (hidden, locked, unpublished, etc.)
+- `$statusFlag` `int|string` Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
 ## Return value
 

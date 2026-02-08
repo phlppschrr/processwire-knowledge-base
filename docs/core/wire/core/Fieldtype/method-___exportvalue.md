@@ -14,10 +14,10 @@ it is intended to be more verbose than wakeupValue, where applicable.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string|int|float|array|object|null $value
-- array $options Optional settings to shape the exported value, if needed: - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false). - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|float|array|object|null`
+- `$options` (optional) `array` Optional settings to shape the exported value, if needed: - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false). - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
 
 ## Return value
 

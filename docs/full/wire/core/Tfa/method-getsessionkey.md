@@ -6,7 +6,7 @@ Get a unique key that can be used in the “tfa” GET variable used by this mod
 
 ## Arguments
 
-- bool $reset Reset to new key?
+- `$reset` (optional) `bool` Reset to new key?
 
 ## Return value
 

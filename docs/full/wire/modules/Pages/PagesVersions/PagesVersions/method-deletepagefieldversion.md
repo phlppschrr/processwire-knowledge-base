@@ -9,9 +9,9 @@ method does not delete any files connected to the version.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- int $version
+- `$page` `Page`
+- `$field` `Field`
+- `$version` `int`
 
 ## Return value
 

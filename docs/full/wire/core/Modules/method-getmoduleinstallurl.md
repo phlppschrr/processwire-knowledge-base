@@ -8,12 +8,12 @@ If module is already installed, it returns the URL to edit the module.
 
 ## Arguments
 
-- string $className
+- `$className` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.216
+3.0.216

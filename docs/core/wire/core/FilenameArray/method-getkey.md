@@ -6,7 +6,7 @@ Get key for $filename that excludes query strings
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

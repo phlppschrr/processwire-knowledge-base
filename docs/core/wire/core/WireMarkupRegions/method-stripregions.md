@@ -8,9 +8,9 @@ Note that this only works on non-nested tags like HTML comments, script or style
 
 ## Arguments
 
-- string $tag Specify "<!--" to remove comments or "<script" to remove scripts, or "<tag" for any other tags.
-- string $markup Markup to remove the tags from
-- bool $getRegions Specify true to return array of the strip regions rather than the updated markup
+- `$tag` `string` Specify "<!--" to remove comments or "<script" to remove scripts, or "<tag" for any other tags.
+- `$markup` `string` Markup to remove the tags from
+- `$getRegions` (optional) `bool` Specify true to return array of the strip regions rather than the updated markup
 
 ## Return value
 

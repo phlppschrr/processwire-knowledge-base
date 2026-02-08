@@ -40,13 +40,13 @@ console.log(mySettings.bar);
 
 ## Arguments
 
-- string $key Name of property to get or set or omit to return all data
-- mixed|null $value Specify value to set or omit (null) to get
+- `$key` (optional) `string` Name of property to get or set or omit to return all data
+- `$value` (optional) `mixed|null` Specify value to set or omit (null) to get
 
 ## Return value
 
 mixed|null|array|self Returns null if $key not found, value when getting, self when setting, or array when getting all
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

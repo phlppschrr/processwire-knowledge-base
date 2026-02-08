@@ -6,8 +6,8 @@ Get value of of a native column in pages table for given page ID
 
 ## Arguments
 
-- int|Page $id Page ID
-- string $column
+- `$id` `int|Page` Page ID
+- `$column` `string`
 
 ## Return value
 
@@ -17,6 +17,6 @@ int|string|bool Returns int/string value on success or boolean false if no match
 
 - \PDOException|WireException
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

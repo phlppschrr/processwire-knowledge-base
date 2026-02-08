@@ -6,8 +6,8 @@ Unset a session variable within a namespace
 
 ## Arguments
 
-- string|object $ns Namespace
-- string $key Provide name of variable to remove, or boolean true to remove all in namespace.
+- `$ns` `string|object` Namespace
+- `$key` `string` Provide name of variable to remove, or boolean true to remove all in namespace.
 
 ## Return value
 

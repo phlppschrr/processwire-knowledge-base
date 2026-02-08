@@ -6,8 +6,8 @@ Overrides default mysqli query method so that it also records and times queries.
 
 ## Arguments
 
-- string $sql SQL Query
-- int $resultmode See http://www.php.net/manual/en/mysqli.query.php
+- `$sql` `string` SQL Query
+- `$resultmode` (optional) `int` See http://www.php.net/manual/en/mysqli.query.php
 
 ## Return value
 

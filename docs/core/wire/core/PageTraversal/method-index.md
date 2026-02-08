@@ -15,8 +15,8 @@ selector of "include=hidden", "include=unpublished" or "include=all".
 
 ## Arguments
 
-- Page $page
-- string|array|bool|Selectors $selector Selector to apply or boolean true for "include=all" (since 3.0.121). - Boolean true to include hidden and unpublished pages as part of the index numbers (same as "include=all"). - An "include=hidden", "include=unpublished" or "include=all" selector to include them in the index numbers. - A string selector or selector array to filter the criteria for the returned index number.
+- `$page` `Page`
+- `$selector` (optional) `string|array|bool|Selectors` Selector to apply or boolean true for "include=all" (since 3.0.121). - Boolean true to include hidden and unpublished pages as part of the index numbers (same as "include=all"). - An "include=hidden", "include=unpublished" or "include=all" selector to include them in the index numbers. - A string selector or selector array to filter the criteria for the returned index number.
 
 ## Return value
 

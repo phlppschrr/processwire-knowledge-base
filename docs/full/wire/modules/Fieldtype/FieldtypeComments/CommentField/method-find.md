@@ -7,7 +7,7 @@ Find comments matching given selector
 ## Arguments
 
 - $selectorString
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

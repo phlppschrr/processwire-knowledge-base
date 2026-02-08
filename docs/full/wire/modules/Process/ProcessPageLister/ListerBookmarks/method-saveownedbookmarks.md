@@ -6,4 +6,4 @@ Save owned bookmarks
 
 ## Arguments
 
-- array $bookmarks
+- `$bookmarks` `array`

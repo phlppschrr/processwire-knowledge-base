@@ -20,8 +20,8 @@ $modules->saveConfig('HelloWorld', $data);
 
 ## Arguments
 
-- string|Module $class
-- string $property Optionally just get value for a specific property (omit to get all config)
+- `$class` `string|Module`
+- `$property` (optional) `string` Optionally just get value for a specific property (omit to get all config)
 
 ## Return value
 
@@ -31,7 +31,10 @@ array|string|int|float Module configuration data, returns array unless a specifi
 
 - [Modules::saveConfig()](method-___saveconfig.md)
 
-## Meta
+## Since
+
+3.0.16 Use method getModuleConfigData() with same arguments for prior versions (can also be used on any version).
+
+## Details
 
 - @apiKey = $modules->getConfig('HelloWorld', 'apiKey'); ~~~~~~
-- @since 3.0.16 Use method getModuleConfigData() with same arguments for prior versions (can also be used on any version).

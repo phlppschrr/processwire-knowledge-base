@@ -6,4 +6,4 @@ Check and update the given process page for hidden/visible status depending on u
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

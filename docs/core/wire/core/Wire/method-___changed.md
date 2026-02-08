@@ -10,9 +10,9 @@ Hookable method that is called whenever a property has changed while change trac
 
 ## Arguments
 
-- string $what Name of property that changed
-- mixed $old Previous value before change
-- mixed $new New value
+- `$what` `string` Name of property that changed
+- `$old` (optional) `mixed` Previous value before change
+- `$new` (optional) `mixed` New value
 
 ## See also
 

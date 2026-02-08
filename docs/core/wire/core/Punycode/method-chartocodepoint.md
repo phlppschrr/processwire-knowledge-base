@@ -6,7 +6,7 @@ Convert a single or multi-byte character to its code point
 
 ## Arguments
 
-- string $char
+- `$char` `string`
 
 ## Return value
 

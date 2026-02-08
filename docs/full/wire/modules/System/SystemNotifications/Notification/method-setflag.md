@@ -6,8 +6,8 @@ Set a named flag
 
 ## Arguments
 
-- string|int $name Flag to set
-- bool $add True to add flag, false to remove
+- `$name` `string|int` Flag to set
+- `$add` (optional) `bool` True to add flag, false to remove
 
 ## Return value
 

@@ -6,8 +6,8 @@ Compile the given string of data
 
 ## Arguments
 
-- string $data
-- string $sourceFile
+- `$data` `string`
+- `$sourceFile` `string`
 
 ## Return value
 

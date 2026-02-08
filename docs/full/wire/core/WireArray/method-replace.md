@@ -15,8 +15,8 @@ $items->replace($existingItem, $newItem);
 
 ## Arguments
 
-- Wire|string|int $itemA
-- Wire|string|int $itemB
+- `$itemA` `Wire|string|int`
+- `$itemB` `Wire|string|int`
 
 ## Return value
 

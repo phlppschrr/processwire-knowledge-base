@@ -6,8 +6,8 @@ Send an HTTP status header
 
 ## Arguments
 
-- int|string $status Status code (i.e. '200') or code and text (i.e. '200 OK')
+- `$status` `int|string` Status code (i.e. '200') or code and text (i.e. '200 OK')
 
-## Meta
+## Since
 
-- @since 3.0.166
+3.0.166

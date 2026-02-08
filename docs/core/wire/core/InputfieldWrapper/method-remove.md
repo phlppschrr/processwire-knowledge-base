@@ -6,7 +6,7 @@ Remove an Inputfield from this instance’s children.
 
 ## Arguments
 
-- Inputfield|string $key Inputfield object or name
+- `$key` `Inputfield|string` Inputfield object or name
 
 ## Return value
 

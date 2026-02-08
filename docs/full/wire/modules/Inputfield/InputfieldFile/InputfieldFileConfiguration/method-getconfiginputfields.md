@@ -6,5 +6,5 @@ Configuration settings for InputfieldFile
 
 ## Arguments
 
-- InputfieldFile|Field $field
-- InputfieldWrapper $inputfields
+- `$field` `InputfieldFile|Field`
+- `$inputfields` `InputfieldWrapper`

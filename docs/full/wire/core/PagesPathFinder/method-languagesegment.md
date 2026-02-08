@@ -6,7 +6,7 @@ Return homepage name segment used by given language
 
 ## Arguments
 
-- string|int|Language $language
+- `$language` `string|int|Language`
 
 ## Return value
 

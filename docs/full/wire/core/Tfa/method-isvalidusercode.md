@@ -8,9 +8,9 @@ Modules MUST implement this method.
 
 ## Arguments
 
-- User $user
-- string|int $code
-- array $settings User configured TFA settings
+- `$user` `User`
+- `$code` `string|int`
+- `$settings` `array` User configured TFA settings
 
 ## Return value
 

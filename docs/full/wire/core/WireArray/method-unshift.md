@@ -8,7 +8,7 @@ This is for consistency with PHP's naming convention of the `array_unshift()` me
 
 ## Arguments
 
-- Wire|WireArray|mixed $item Item to prepend.
+- `$item` `Wire|WireArray|mixed` Item to prepend.
 
 ## Return value
 

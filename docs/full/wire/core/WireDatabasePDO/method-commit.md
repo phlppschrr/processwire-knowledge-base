@@ -8,6 +8,6 @@ Commits a transaction
 
 bool
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.commit.php

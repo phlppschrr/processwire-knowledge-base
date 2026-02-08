@@ -6,8 +6,8 @@ Save to the modules log
 
 ## Arguments
 
-- string $str Message to log
-- array|string $options Specify module name (string) or options array
+- `$str` `string` Message to log
+- `$options` (optional) `array|string` Specify module name (string) or options array
 
 ## Return value
 

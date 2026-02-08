@@ -6,14 +6,14 @@ Return a random integer (cryptographically secure when available)
 
 ## Arguments
 
-- int $min Minimum value (default=0)
-- int $max Maximum value (default=PHP_INT_MAX)
-- bool $throw Throw WireException if we cannot achieve a cryptographically secure random number? (default=false)
+- `$min` `int` Minimum value (default=0)
+- `$max` `int` Maximum value (default=PHP_INT_MAX)
+- `$throw` (optional) `bool` Throw WireException if we cannot achieve a cryptographically secure random number? (default=false)
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.214
+3.0.214

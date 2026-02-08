@@ -8,7 +8,7 @@ Added by @horst
 
 ## Arguments
 
-- array $value containing 4 params (x y w h) indexed or associative
+- `$value` `array` containing 4 params (x y w h) indexed or associative
 
 ## Return value
 

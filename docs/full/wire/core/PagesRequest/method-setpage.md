@@ -6,7 +6,7 @@ Set current request page
 
 ## Arguments
 
-- Page|NullPage|null $page
+- `$page` `Page|NullPage|null`
 
 ## Return value
 

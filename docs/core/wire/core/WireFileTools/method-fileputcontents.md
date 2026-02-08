@@ -9,9 +9,9 @@ ProcessWire because it adjusts the file permissions configured with `$config->ch
 
 ## Arguments
 
-- string $filename Filename to write to
-- string|mixed $contents Contents to write to file
-- int $flags Flags to modify behavior: - `FILE_APPEND` (constant): Append to file if it already exists. - `LOCK_EX` (constant): Acquire exclusive lock to file while writing.
+- `$filename` `string` Filename to write to
+- `$contents` `string|mixed` Contents to write to file
+- `$flags` (optional) `int` Flags to modify behavior: - `FILE_APPEND` (constant): Append to file if it already exists. - `LOCK_EX` (constant): Acquire exclusive lock to file while writing.
 
 ## Return value
 

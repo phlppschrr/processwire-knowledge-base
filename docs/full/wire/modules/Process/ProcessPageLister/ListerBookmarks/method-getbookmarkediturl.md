@@ -6,7 +6,7 @@ Get the URL for a bookmark
 
 ## Arguments
 
-- string $bookmarkID
+- `$bookmarkID` `string`
 
 ## Return value
 

@@ -13,9 +13,9 @@ This is procedural version of the `$files->send()` method. See that method for a
 
 ## Arguments
 
-- string $filename Full path and filename to send
-- array $options Optional options that you may pass in (see `WireHttp::sendFile()` for details)
-- array $headers Optional headers that are sent (see `WireHttp::sendFile()` for details)
+- `$filename` `string` Full path and filename to send
+- `$options` (optional) `array` Optional options that you may pass in (see `WireHttp::sendFile()` for details)
+- `$headers` (optional) `array` Optional headers that are sent (see `WireHttp::sendFile()` for details)
 
 ## Throws
 

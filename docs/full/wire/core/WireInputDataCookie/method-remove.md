@@ -6,7 +6,7 @@ Remove a cookie value by name
 
 ## Arguments
 
-- string $key Name of cookie variable to remove value for
+- `$key` `string` Name of cookie variable to remove value for
 
 ## Return value
 

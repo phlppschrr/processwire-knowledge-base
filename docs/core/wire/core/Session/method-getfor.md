@@ -11,8 +11,8 @@ $firstName = $session->getFor($this, 'firstName');
 
 ## Arguments
 
-- string|object $ns Namespace string or object
-- string $key Specify variable name to retrieve, or blank string to return all variables in the namespace.
+- `$ns` `string|object` Namespace string or object
+- `$key` `string` Specify variable name to retrieve, or blank string to return all variables in the namespace.
 
 ## Return value
 

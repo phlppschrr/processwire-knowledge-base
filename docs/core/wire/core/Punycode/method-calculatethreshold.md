@@ -6,8 +6,8 @@ Calculate the bias threshold to fall between TMIN and TMAX
 
 ## Arguments
 
-- integer $k
-- integer $bias
+- `$k` `integer`
+- `$bias` `integer`
 
 ## Return value
 

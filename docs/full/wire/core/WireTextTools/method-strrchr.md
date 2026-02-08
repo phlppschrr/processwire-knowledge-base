@@ -6,8 +6,8 @@ Find the last occurrence of a character in a string
 
 ## Arguments
 
-- string $haystack
-- string $needle Only first given character used
+- `$haystack` `string`
+- `$needle` `string` Only first given character used
 
 ## Return value
 

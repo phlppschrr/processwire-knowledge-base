@@ -22,8 +22,8 @@ $featured = $page->siblings("template=product-featured, sort=name", false);
 
 ## Arguments
 
-- string|array|bool $selector Optional selector to filter siblings by, or omit for all siblings.
-- bool $includeCurrent Specify false to exclude current page in the returned siblings (default=true). If no $selector argument is given, this argument may optionally be specified as the first argument.
+- `$selector` (optional) `string|array|bool` Optional selector to filter siblings by, or omit for all siblings.
+- `$includeCurrent` (optional) `bool` Specify false to exclude current page in the returned siblings (default=true). If no $selector argument is given, this argument may optionally be specified as the first argument.
 
 ## Return value
 

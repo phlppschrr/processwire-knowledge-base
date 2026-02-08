@@ -8,8 +8,8 @@ By default whitespace is trimmed so you would call `$templateFile->setTrim(false
 
 ## Arguments
 
-- bool $trim
+- `$trim` `bool`
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

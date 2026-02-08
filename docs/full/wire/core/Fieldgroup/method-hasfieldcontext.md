@@ -10,8 +10,8 @@ columnWidth setting of 100% in its global settings, but only 50% when used in th
 
 ## Arguments
 
-- int|string|Field $field Field object, name or id
-- string $namespace Optional namespace string for context
+- `$field` `int|string|Field` Field object, name or id
+- `$namespace` (optional) `string` Optional namespace string for context
 
 ## Return value
 

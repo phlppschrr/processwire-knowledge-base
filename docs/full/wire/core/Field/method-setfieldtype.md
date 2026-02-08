@@ -6,7 +6,7 @@ Set what type of field this is (Fieldtype).
 
 ## Arguments
 
-- string|Fieldtype $type Type should be either a Fieldtype object or the string name of a Fieldtype object.
+- `$type` `string|Fieldtype` Type should be either a Fieldtype object or the string name of a Fieldtype object.
 
 ## Return value
 

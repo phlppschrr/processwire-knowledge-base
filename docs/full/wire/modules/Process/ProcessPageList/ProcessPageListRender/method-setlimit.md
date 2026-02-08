@@ -6,4 +6,4 @@ Set pagination limit
 
 ## Arguments
 
-- int $n
+- `$n` `int`

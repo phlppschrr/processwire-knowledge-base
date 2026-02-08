@@ -6,7 +6,7 @@ Get the DatabaseQuerySelect to perform the load operation of items
 
 ## Arguments
 
-- Selectors|string|null $selectors Selectors or a selector string to find, or NULL to load all.
+- `$selectors` (optional) `Selectors|string|null` Selectors or a selector string to find, or NULL to load all.
 
 ## Return value
 

@@ -11,8 +11,8 @@ Sanitize and allow for UTF-8 characters in page name
 
 ## Arguments
 
-- string $value Value to sanitize
-- int $maxLength Maximum number of characters allowed
+- `$value` `string` Value to sanitize
+- `$maxLength` (optional) `int` Maximum number of characters allowed
 
 ## Return value
 

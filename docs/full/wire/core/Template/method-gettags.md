@@ -8,6 +8,6 @@ Get tags array
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.176
+3.0.176

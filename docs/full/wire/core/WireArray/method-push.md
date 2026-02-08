@@ -8,7 +8,7 @@ Same as `WireArray::add()` and `WireArray::append()`, but here for syntax conven
 
 ## Arguments
 
-- Wire|mixed $item Item to push.
+- `$item` `Wire|mixed` Item to push.
 
 ## Return value
 

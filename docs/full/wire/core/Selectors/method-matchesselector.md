@@ -6,13 +6,13 @@ Does the given Wire match these Selector (single)?
 
 ## Arguments
 
-- Selector $selector
-- Wire $item
+- `$selector` `Selector`
+- `$item` `Wire`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.330
+3.0.330

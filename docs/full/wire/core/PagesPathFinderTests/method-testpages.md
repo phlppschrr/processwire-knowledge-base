@@ -5,7 +5,7 @@ Source: `wire/core/PagesPathFinder.php`
 
 ## Arguments
 
-- string|PageArray $selector
+- `$selector` `string|PageArray`
 
 ## Return value
 

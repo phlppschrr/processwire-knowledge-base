@@ -6,7 +6,7 @@ Set associative array of variables to store
 
 ## Arguments
 
-- array $input
+- `$input` `array`
 
 ## Return value
 

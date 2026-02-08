@@ -13,4 +13,4 @@ This is used by PageFinder to determine what pages to include in a find() operat
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

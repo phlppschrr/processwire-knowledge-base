@@ -6,8 +6,8 @@ Get hash for given text + context
 
 ## Arguments
 
-- string $text
-- string $context
+- `$text` `string`
+- `$context` `string`
 
 ## Return value
 

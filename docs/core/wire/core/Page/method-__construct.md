@@ -6,4 +6,4 @@ Create a new page in memory.
 
 ## Arguments
 
-- Template|null $tpl Template object this page should use.
+- `$tpl` (optional) `Template|null` Template object this page should use.

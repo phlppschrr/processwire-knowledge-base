@@ -6,8 +6,8 @@ Set multiple flags
 
 ## Arguments
 
-- string $names space separated string of flag names
-- bool $add True to add, false to remove
+- `$names` `string` space separated string of flag names
+- `$add` (optional) `bool` True to add, false to remove
 
 ## Return value
 

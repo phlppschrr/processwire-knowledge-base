@@ -6,7 +6,7 @@ Rebuild pages_parents branch starting at $fromParent and into all descendents
 
 ## Arguments
 
-- Page|int $fromParent From parent Page or ID
+- `$fromParent` `Page|int` From parent Page or ID
 
 ## Return value
 

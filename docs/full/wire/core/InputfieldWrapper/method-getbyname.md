@@ -6,12 +6,12 @@ Shorter alias of getChildByName()
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 Inputfield|InputfieldWrapper|null
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

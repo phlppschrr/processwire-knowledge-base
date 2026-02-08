@@ -6,8 +6,8 @@ Empty DB table of page field
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## Return value
 
@@ -17,6 +17,6 @@ bool
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.189
+3.0.189

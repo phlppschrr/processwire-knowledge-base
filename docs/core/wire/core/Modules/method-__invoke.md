@@ -6,7 +6,7 @@ Enables use of $modules('ModuleName')
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

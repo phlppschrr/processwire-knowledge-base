@@ -10,8 +10,8 @@ Returns null if given module ID not found.
 
 ## Arguments
 
-- int $moduleID This method only accepts module ID
-- int $setValue Flag(s) to set
+- `$moduleID` (optional) `int` This method only accepts module ID
+- `$setValue` (optional) `int` Flag(s) to set
 
 ## Return value
 

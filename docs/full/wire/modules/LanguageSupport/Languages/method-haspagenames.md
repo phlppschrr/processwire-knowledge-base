@@ -8,6 +8,6 @@ Is LanguageSupportPageNames installed?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

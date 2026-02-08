@@ -23,13 +23,13 @@ $a = $pages->findIDs("foo=bar", true);
 
 ## Arguments
 
-- string|array|Selectors $selector Selector to find page IDs.
-- array|bool|int|string $options Options to modify behavior. - `verbose` (bool|int|string): Specify true to make return value array of associative arrays, each with id, parent_id, templates_id. Specify integer `2` or string `*` to return verbose array of associative arrays, each with all columns from pages table. - `indexed` (bool): Index by page ID? (default=false) Added 3.0.172 - The verbose option above can also be specified as alternative to the $options argument. - See `Pages::find()` $options argument for additional options.
+- `$selector` `string|array|Selectors` Selector to find page IDs.
+- `$options` (optional) `array|bool|int|string` Options to modify behavior. - `verbose` (bool|int|string): Specify true to make return value array of associative arrays, each with id, parent_id, templates_id. Specify integer `2` or string `*` to return verbose array of associative arrays, each with all columns from pages table. - `indexed` (bool): Index by page ID? (default=false) Added 3.0.172 - The verbose option above can also be specified as alternative to the $options argument. - See `Pages::find()` $options argument for additional options.
 
 ## Return value
 
 array Array of page IDs, or in verbose mode: array of arrays, each with id, parent_id and templates_id keys.
 
-## Meta
+## Since
 
-- @since 3.0.46
+3.0.46

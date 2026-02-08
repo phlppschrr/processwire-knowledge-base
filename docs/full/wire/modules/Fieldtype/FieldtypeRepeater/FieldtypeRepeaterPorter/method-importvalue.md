@@ -6,10 +6,10 @@ Import repeater value previously exported by exportValue()
 
 ## Arguments
 
-- Page $page
-- Field $field
-- array $value
-- array $options
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `array`
+- `$options` (optional) `array`
 
 ## Return value
 

@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- string|object $name DEPRECATED (Call 'init' method instead)
-- string $basePath DEPRECATED (Call 'init' method instead)
+- `$name` (optional) `string|object` DEPRECATED (Call 'init' method instead)
+- `$basePath` (optional) `string` DEPRECATED (Call 'init' method instead)

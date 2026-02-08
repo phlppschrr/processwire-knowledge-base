@@ -6,7 +6,7 @@ Override get() method from WireData to support additional properties
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

@@ -8,7 +8,7 @@ See the pages() function for usage details.
 
 ## Arguments
 
-- string $selector
+- `$selector` (optional) `string`
 
 ## Return value
 

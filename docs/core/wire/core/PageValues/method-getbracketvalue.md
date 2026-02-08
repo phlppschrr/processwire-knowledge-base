@@ -12,9 +12,9 @@ the Page::get() method would return null.
 
 ## Arguments
 
-- Page $page
-- string $key
-- mixed $value Value to use rather than pulling from $page
+- `$page` `Page`
+- `$key` `string`
+- `$value` (optional) `mixed` Value to use rather than pulling from $page
 
 ## Return value
 

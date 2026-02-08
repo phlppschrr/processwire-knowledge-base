@@ -6,4 +6,4 @@ Set request path
 
 ## Arguments
 
-- string $requestPath
+- `$requestPath` `string`

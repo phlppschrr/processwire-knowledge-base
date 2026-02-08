@@ -6,12 +6,12 @@ Get non-empty value in this order: current lang, default lang, other lang, failV
 
 ## Arguments
 
-- string $failValue Value to use if we cannot find a non-empty value
+- `$failValue` (optional) `string` Value to use if we cannot find a non-empty value
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.147
+3.0.147

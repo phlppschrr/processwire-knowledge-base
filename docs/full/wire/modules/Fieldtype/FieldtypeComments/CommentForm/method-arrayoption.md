@@ -6,9 +6,9 @@ Get or set array property
 
 ## Arguments
 
-- string $property Name of array property: labels, markup, classes, attrs, presets
-- string|array $name Name of item to get or set or omit to get all, or assoc array to set all/multiple (and omit $value)
-- string|null $value Value to set (if setting) or omit if getting
+- `$property` `string` Name of array property: labels, markup, classes, attrs, presets
+- `$name` (optional) `string|array` Name of item to get or set or omit to get all, or assoc array to set all/multiple (and omit $value)
+- `$value` (optional) `string|null` Value to set (if setting) or omit if getting
 
 ## Return value
 
@@ -18,6 +18,6 @@ string|array
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

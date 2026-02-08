@@ -6,7 +6,7 @@ Render page/child
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

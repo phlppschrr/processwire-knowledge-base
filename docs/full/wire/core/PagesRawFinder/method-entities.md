@@ -6,4 +6,4 @@ Apply entity encoding to all strings in given value, recursively
 
 ## Arguments
 
-- mixed $value
+- `$value` `mixed`

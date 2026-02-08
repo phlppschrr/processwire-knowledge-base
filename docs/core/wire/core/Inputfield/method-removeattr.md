@@ -6,7 +6,7 @@ Remove an attribute
 
 ## Arguments
 
-- string $key Name of attribute to remove.
+- `$key` `string` Name of attribute to remove.
 
 ## Return value
 

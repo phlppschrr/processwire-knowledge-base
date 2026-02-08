@@ -36,8 +36,8 @@ if($page->template != 'admin) {
 
 ## Arguments
 
-- string $for Named location from `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
-- string $url URL relative to PW installation root (no leading slash) or absolute URL if not (optionally including scheme and domain).
+- `$for` `string` Named location from `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- `$url` `string` URL relative to PW installation root (no leading slash) or absolute URL if not (optionally including scheme and domain).
 
 ## Return value
 
@@ -47,6 +47,6 @@ self
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.141
+3.0.141

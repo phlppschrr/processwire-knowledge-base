@@ -15,8 +15,8 @@ file_put_contents($path . 'some-file.txt', 'Hello world');
 
 ## Arguments
 
-- Object|string $name Provide the object that needs the temp dir, or name your own string
-- array|int $options Options array to modify default behavior: - `maxAge` (integer): Maximum age of temp dir files in seconds (default=120) - `basePath` (string): Base path where temp dirs should be created. Omit to use default (recommended). - Note: if you specify an integer for $options, then 'maxAge' is assumed.
+- `$name` `Object|string` Provide the object that needs the temp dir, or name your own string
+- `$options` (optional) `array|int` Options array to modify default behavior: - `maxAge` (integer): Maximum age of temp dir files in seconds (default=120) - `basePath` (string): Base path where temp dirs should be created. Omit to use default (recommended). - Note: if you specify an integer for $options, then 'maxAge' is assumed.
 
 ## Return value
 

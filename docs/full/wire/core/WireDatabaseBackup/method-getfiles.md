@@ -8,7 +8,7 @@ To get additional info on any of them, call getFileInfo($basename) method
 
 ## Arguments
 
-- bool $getObjects Get SplFileInfo objects rather than basenames? (3.0.214+)
+- `$getObjects` (optional) `bool` Get SplFileInfo objects rather than basenames? (3.0.214+)
 
 ## Return value
 

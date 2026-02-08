@@ -6,8 +6,8 @@ Return language identified by homepage name segment
 
 ## Arguments
 
-- string $segment
-- bool $getLanguageId
+- `$segment` `string`
+- `$getLanguageId` (optional) `bool`
 
 ## Return value
 

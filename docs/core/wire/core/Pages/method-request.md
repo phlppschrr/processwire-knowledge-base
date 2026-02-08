@@ -8,6 +8,6 @@ Get the PagesRequest instance which provides methods for identifying and loading
 
 PagesRequest
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

@@ -9,12 +9,12 @@ This includes these operators: `*=`, `^=`, `$=`, `~=`, `~|=`.
 
 ## Arguments
 
-- bool|null $forceLike
+- `$forceLike` (optional) `bool|null`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.182
+3.0.182

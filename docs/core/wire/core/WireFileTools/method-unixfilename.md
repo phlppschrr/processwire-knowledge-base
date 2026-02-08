@@ -6,7 +6,7 @@ Convert given file name to use unix slashes (if it isn’t already)
 
 ## Arguments
 
-- string $file File name to adjust (if it needs it)
+- `$file` `string` File name to adjust (if it needs it)
 
 ## Return value
 

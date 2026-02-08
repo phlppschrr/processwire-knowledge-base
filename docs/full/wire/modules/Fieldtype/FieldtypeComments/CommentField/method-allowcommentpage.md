@@ -6,14 +6,14 @@ Allow given comment to live on given page?
 
 ## Arguments
 
-- Comment $comment
-- Page $page
-- bool $verbose Report reason why not to standard errors? (default=false)
+- `$comment` `Comment`
+- `$page` `Page`
+- `$verbose` (optional) `bool` Report reason why not to standard errors? (default=false)
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

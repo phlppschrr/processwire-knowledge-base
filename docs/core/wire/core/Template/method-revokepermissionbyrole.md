@@ -8,9 +8,9 @@ Note that the change is not committed until you save() the template.
 
 ## Arguments
 
-- Permission|int|string $permission Permission object, name, or id
-- Role|int|string $role Role object, name or id
-- bool $test Specify true to only test if an update would be made, without changing anything
+- `$permission` `Permission|int|string` Permission object, name, or id
+- `$role` `Role|int|string` Role object, name or id
+- `$test` (optional) `bool` Specify true to only test if an update would be made, without changing anything
 
 ## Return value
 

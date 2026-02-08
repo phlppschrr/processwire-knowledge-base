@@ -12,9 +12,9 @@ This method assumes both files follow the SQL dump format created by this class.
 
 ## Arguments
 
-- string $filename1 Original filename
-- string $filename2 Filename that may have statements that will update/override those in filename1
-- array $options
+- `$filename1` `string` Original filename
+- `$filename2` `string` Filename that may have statements that will update/override those in filename1
+- `$options` `array`
 
 ## Return value
 

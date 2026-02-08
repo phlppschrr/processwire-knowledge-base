@@ -6,7 +6,7 @@ Add helpful info or replace error message with something better, when possible
 
 ## Arguments
 
-- string $message
+- `$message` `string`
 
 ## Return value
 

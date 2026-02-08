@@ -15,7 +15,7 @@ if($input->get('logout')) {
 
 ## Arguments
 
-- bool $startNew Start a new session after logout? (default=true)
+- `$startNew` (optional) `bool` Start a new session after logout? (default=true)
 
 ## Return value
 

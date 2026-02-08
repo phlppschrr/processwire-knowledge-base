@@ -10,11 +10,11 @@ Sanitize a string or array containing multiple names
 
 ## Arguments
 
-- string|array $value Value(s) to sanitize to name format.
-- string $delimeter Character that delimits values, if $value is a string (default=" ").
-- array $allowedExtras Additional characters that are allowed in the value (default=['-', '_', '.']).
-- string $replacementChar Single character replacement value for invalid characters (default='_').
-- bool $beautify Whether or not to beautify returned values (default=false). See Sanitizer::name() for beautify options.
+- `$value` `string|array` Value(s) to sanitize to name format.
+- `$delimeter` (optional) `string` Character that delimits values, if $value is a string (default=" ").
+- `$allowedExtras` (optional) `array` Additional characters that are allowed in the value (default=['-', '_', '.']).
+- `$replacementChar` (optional) `string` Single character replacement value for invalid characters (default='_').
+- `$beautify` (optional) `bool` Whether or not to beautify returned values (default=false). See Sanitizer::name() for beautify options.
 
 ## Return value
 

@@ -6,6 +6,6 @@ Hook called after a page has been sorted, or had its children re-sorted
 
 ## Arguments
 
-- Page $page Page given to have sort adjusted
-- bool $children If true, children of $page have been all been re-sorted
-- int $total Total number of pages that had sort adjusted as a result
+- `$page` `Page` Page given to have sort adjusted
+- `$children` (optional) `bool` If true, children of $page have been all been re-sorted
+- `$total` (optional) `int` Total number of pages that had sort adjusted as a result

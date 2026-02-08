@@ -6,8 +6,8 @@ Set this template's filename, with or without path
 
 ## Arguments
 
-- string $value The filename with or without path
+- `$value` `string` The filename with or without path
 
-## Meta
+## Deprecated
 
-- @deprecated Now just using filename() method
+Now just using filename() method

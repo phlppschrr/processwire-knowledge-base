@@ -6,7 +6,7 @@ Does this fieldgroup have the given field?
 
 ## Arguments
 
-- string|int|Field $key Field object, name or id.
+- `$key` `string|int|Field` Field object, name or id.
 
 ## Return value
 

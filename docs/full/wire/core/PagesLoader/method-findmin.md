@@ -32,8 +32,8 @@ conditions, like the same autojoin fields.
 
 ## Arguments
 
-- string|array|Selectors $selector
-- array $options - `cache` (bool): Allow pulling from and saving results to cache? (default=true) - `joinFields` (array): Names of fields to also join into the page load
+- `$selector` `string|array|Selectors`
+- `$options` (optional) `array` - `cache` (bool): Allow pulling from and saving results to cache? (default=true) - `joinFields` (array): Names of fields to also join into the page load
 
 ## Return value
 
@@ -43,6 +43,6 @@ PageArray
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

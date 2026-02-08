@@ -6,12 +6,12 @@ Normalize a path
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.152
+3.0.152

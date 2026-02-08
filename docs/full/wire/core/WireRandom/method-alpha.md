@@ -6,13 +6,13 @@ Return string of random ASCII alphabetical letters
 
 ## Arguments
 
-- int $length Required length of string or 0 for random length
-- array $options See options for alphanumeric() method
+- `$length` (optional) `int` Required length of string or 0 for random length
+- `$options` (optional) `array` See options for alphanumeric() method
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.111
+3.0.111

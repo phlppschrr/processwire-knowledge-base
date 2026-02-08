@@ -6,9 +6,9 @@ End a new backup file, adding our footer to the bottom
 
 ## Arguments
 
-- string|resource $file
-- array $summary
-- array $options
+- `$file` `string|resource`
+- `$summary` (optional) `array`
+- `$options` (optional) `array`
 
 ## Return value
 

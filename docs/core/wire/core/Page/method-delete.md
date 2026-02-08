@@ -21,7 +21,7 @@ $item->delete(true);
 
 ## Arguments
 
-- bool $recursive If set to true, then this will attempt to delete all children too.
+- `$recursive` (optional) `bool` If set to true, then this will attempt to delete all children too.
 
 ## Return value
 

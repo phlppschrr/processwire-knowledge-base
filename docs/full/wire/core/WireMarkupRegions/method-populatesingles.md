@@ -6,9 +6,9 @@ Populate single-use tags as unnamed markup regions
 
 ## Arguments
 
-- string $htmlDocument
-- array|string $htmlRegions
+- `$htmlDocument` `string`
+- `$htmlRegions` `array|string`
 
-## Meta
+## Since
 
-- @since 3.0.250
+3.0.250

@@ -6,12 +6,12 @@ Set selector value(s)
 
 ## Arguments
 
-- string|int|array|mixed $value
+- `$value` `string|int|array|mixed`
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

@@ -19,14 +19,14 @@ NOTE: This function is currently experimental, recommended for testing only.
 
 ## Arguments
 
-- Page $page Page to preload fields for
-- array $fieldNames Names of fields to preload
-- array $options - `debug` (bool): Specify true to include additional debug info in return value (default=false). - `useFieldtypeMulti` (bool): Enable FieldtypeMulti for testing purposes (default=false). - `loadPageRefs` (bool): Optimization to early load pages in page reference fields? (default=true)
+- `$page` `Page` Page to preload fields for
+- `$fieldNames` `array` Names of fields to preload
+- `$options` (optional) `array` - `debug` (bool): Specify true to include additional debug info in return value (default=false). - `useFieldtypeMulti` (bool): Enable FieldtypeMulti for testing purposes (default=false). - `loadPageRefs` (bool): Optimization to early load pages in page reference fields? (default=true)
 
 ## Return value
 
 array Array containing what was loaded and skipped
 
-## Meta
+## Since
 
-- @since 3.0.243
+3.0.243

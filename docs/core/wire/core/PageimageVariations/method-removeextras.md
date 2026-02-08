@@ -6,6 +6,6 @@ Remove extras
 
 ## Arguments
 
-- Pageimage $pageimage
-- array $deletedFiles
-- array $options See options for remove() method
+- `$pageimage` `Pageimage`
+- `$deletedFiles` `array`
+- `$options` `array` See options for remove() method

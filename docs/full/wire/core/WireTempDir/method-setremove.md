@@ -9,7 +9,7 @@ If you do not remove it yourself, WireTempDir will remove as part of the daily m
 
 ## Arguments
 
-- bool $remove
+- `$remove` (optional) `bool`
 
 ## Return value
 

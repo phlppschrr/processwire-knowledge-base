@@ -6,8 +6,8 @@ Add option by property (id, name, title)
 
 ## Arguments
 
-- string $property One of id, name or title
-- string|int $value Value to match for above property
+- `$property` `string` One of id, name or title
+- `$value` `string|int` Value to match for above property
 
 ## Return value
 

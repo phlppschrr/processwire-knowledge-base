@@ -10,8 +10,8 @@ Most Fieldtype modules can use the default implementation already provided here.
 
 ## Arguments
 
-- Field $field
-- array $data
+- `$field` `Field`
+- `$data` `array`
 
 ## Return value
 

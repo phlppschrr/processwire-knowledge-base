@@ -8,7 +8,7 @@ These items may be disabled at the config level, in which case this method alway
 
 ## Arguments
 
-- int $userID
+- `$userID` `int`
 
 ## Return value
 

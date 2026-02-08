@@ -6,7 +6,7 @@ Get markup for icon used by the given page
 
 ## Arguments
 
-- Page $p
+- `$p` `Page`
 
 ## Return value
 

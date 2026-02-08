@@ -8,8 +8,8 @@ Hookable since 3.0.138
 
 ## Arguments
 
-- Comment $comment
-- array|int $options Options array
+- `$comment` `Comment`
+- `$options` (optional) `array|int` Options array
 
 ## Return value
 

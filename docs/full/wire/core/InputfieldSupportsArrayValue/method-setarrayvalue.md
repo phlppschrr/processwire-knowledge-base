@@ -5,4 +5,4 @@ Source: `wire/core/Interfaces.php`
 
 ## Arguments
 
-- array $value
+- `$value` `array`

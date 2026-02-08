@@ -6,7 +6,7 @@ Does this Notification match the given flag name(s)?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

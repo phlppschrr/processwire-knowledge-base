@@ -5,7 +5,7 @@ Source: `wire/modules/Inputfield/InputfieldFile/config.php`
 
 ## Arguments
 
-- Field|InputfieldFile $field
+- `$field` `Field|InputfieldFile`
 
 ## Return value
 

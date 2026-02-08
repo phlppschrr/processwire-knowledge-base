@@ -6,7 +6,7 @@ Module download from URL allowed?
 
 ## Arguments
 
-- bool $notify
+- `$notify` (optional) `bool`
 
 ## Return value
 

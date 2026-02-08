@@ -6,4 +6,4 @@ Identify and populate pagination number from $result['urlSegments']
 
 ## Arguments
 
-- array $parts
+- `$parts` `array`

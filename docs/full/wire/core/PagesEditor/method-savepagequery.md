@@ -8,8 +8,8 @@ triggers hooks: addReady, saveReady, statusChangeReady (when status changed)
 
 ## Arguments
 
-- Page $page
-- array $options
+- `$page` `Page`
+- `$options` `array`
 
 ## Return value
 

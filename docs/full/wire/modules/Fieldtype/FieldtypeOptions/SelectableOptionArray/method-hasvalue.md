@@ -6,7 +6,7 @@ Is the given value present in these selectable options?
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

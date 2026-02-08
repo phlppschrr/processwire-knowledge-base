@@ -10,13 +10,13 @@ that will appear in the HookEvent.
 
 ## Arguments
 
-- string $id Hook ID
-- array $arguments
+- `$id` `string` Hook ID
+- `$arguments` `array`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

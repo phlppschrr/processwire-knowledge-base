@@ -6,4 +6,4 @@ Create a new NotificationArray
 
 ## Arguments
 
-- Page|User $page User (or page) that these notifications are for
+- `$page` `Page|User` User (or page) that these notifications are for

@@ -6,7 +6,7 @@ Sets the template file name, replacing whatever was set in the constructor
 
 ## Arguments
 
-- string $filename Full path and filename to the PHP template file
+- `$filename` `string` Full path and filename to the PHP template file
 
 ## Return value
 

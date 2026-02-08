@@ -6,8 +6,8 @@ Get the options input string used for
 
 ## Arguments
 
-- SelectableOptionArray $options
-- int|string|Language $language Language id, object, or name, if applicable
+- `$options` `SelectableOptionArray`
+- `$language` (optional) `int|string|Language` Language id, object, or name, if applicable
 
 ## Return value
 

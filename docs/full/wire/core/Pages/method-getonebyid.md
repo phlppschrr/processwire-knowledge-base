@@ -8,13 +8,13 @@ This is the same as `getById()` with the `getOne` option.
 
 ## Arguments
 
-- int $id
-- array $options
+- `$id` `int`
+- `$options` (optional) `array`
 
 ## Return value
 
 Page|NullPage
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

@@ -8,6 +8,6 @@ This method does not need to be implemented by TFA modules unless they want to a
 
 ## Arguments
 
-- User $user
-- InputfieldWrapper $fieldset
-- array $settings
+- `$user` `User`
+- `$fieldset` `InputfieldWrapper`
+- `$settings` `array`

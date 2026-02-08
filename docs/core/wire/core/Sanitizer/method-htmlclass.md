@@ -11,12 +11,12 @@ values that have no letters or digits.
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.212
+3.0.212

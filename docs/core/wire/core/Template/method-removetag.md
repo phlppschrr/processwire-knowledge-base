@@ -6,12 +6,12 @@ Remove tag
 
 ## Arguments
 
-- string $tag
+- `$tag` `string`
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.176
+3.0.176

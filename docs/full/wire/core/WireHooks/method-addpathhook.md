@@ -6,11 +6,11 @@ Add a hook that handles a request path
 
 ## Arguments
 
-- Wire $object
-- string $path
-- Wire|null|callable $toObject
-- string $toMethod
-- array $options
+- `$object` `Wire`
+- `$path` `string`
+- `$toObject` `Wire|null|callable`
+- `$toMethod` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

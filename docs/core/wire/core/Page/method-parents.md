@@ -26,7 +26,7 @@ $parents = $page->parents(true);
 
 ## Arguments
 
-- string|array|bool $selector Optional selector string to filter parents by or boolean true for reverse order
+- `$selector` (optional) `string|array|bool` Optional selector string to filter parents by or boolean true for reverse order
 
 ## Return value
 

@@ -8,6 +8,6 @@ Use lazy loading for this type?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

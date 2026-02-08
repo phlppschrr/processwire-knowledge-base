@@ -14,8 +14,8 @@ $myItems = $items->slice(0, 3);
 
 ## Arguments
 
-- int $start Starting index.
-- int $limit Number of items to include. If omitted, includes the rest of the array.
+- `$start` `int` Starting index.
+- `$limit` (optional) `int` Number of items to include. If omitted, includes the rest of the array.
 
 ## Return value
 

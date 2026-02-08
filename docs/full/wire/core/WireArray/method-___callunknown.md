@@ -33,8 +33,8 @@ $titlesString = $items->title("\n");
 
 ## Arguments
 
-- string $method Requested method name
-- array $arguments Arguments provided to the method
+- `$method` `string` Requested method name
+- `$arguments` `array` Arguments provided to the method
 
 ## Return value
 

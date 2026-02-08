@@ -8,6 +8,6 @@ Fetch the SQLSTATE associated with the last operation on the statement handle
 
 string
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdostatement.errorcode.php

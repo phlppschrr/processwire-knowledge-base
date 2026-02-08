@@ -11,8 +11,8 @@ values are the non-namespaced classname.
 
 ## Arguments
 
-- string|object $className
-- bool $autoload
+- `$className` `string|object`
+- `$autoload` (optional) `bool`
 
 ## Return value
 

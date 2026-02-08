@@ -6,7 +6,7 @@ Perform a translation, based on text from shared admin file: /wire/templates-adm
 
 ## Arguments
 
-- string $text
+- `$text` `string`
 
 ## Return value
 

@@ -5,5 +5,5 @@ Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
 ## Arguments
 
-- Template $item
-- array $changes
+- `$item` `Template`
+- `$changes` `array`

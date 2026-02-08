@@ -6,9 +6,9 @@ Set a translation using an already known hash
 
 ## Arguments
 
-- string $textdomain
-- string $hash
-- string $translation
+- `$textdomain` `string`
+- `$hash` `string`
+- `$translation` `string`
 
 ## Return value
 

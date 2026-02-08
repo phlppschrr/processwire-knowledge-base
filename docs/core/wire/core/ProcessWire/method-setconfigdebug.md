@@ -6,12 +6,12 @@ Determine whether debug mode should be enabled
 
 ## Arguments
 
-- Config $config
+- `$config` `Config`
 
 ## Return value
 
 bool|int Returns determined debug mode value
 
-## Meta
+## Since
 
-- @since 3.0.212
+3.0.212

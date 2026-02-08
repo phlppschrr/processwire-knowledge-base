@@ -6,6 +6,6 @@ Import native page settings
 
 ## Arguments
 
-- Page $page
-- array $settings Contents of the import data 'settings' array
-- array $options
+- `$page` `Page`
+- `$settings` `array` Contents of the import data 'settings' array
+- `$options` `array`

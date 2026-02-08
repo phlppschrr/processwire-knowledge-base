@@ -12,7 +12,7 @@ If there are multiple defined parents, a NullPage is returned.
 
 ## Arguments
 
-- bool $checkAccess Whether or not to check for user access to do this (default=false).
+- `$checkAccess` (optional) `bool` Whether or not to check for user access to do this (default=false).
 
 ## Return value
 

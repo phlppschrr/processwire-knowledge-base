@@ -6,8 +6,8 @@ Just rotate image by number of degrees
 
 ## Arguments
 
-- int $degrees
-- string $dstFilename Optional destination filename. If not present, source will be overwritten.
+- `$degrees` `int`
+- `$dstFilename` (optional) `string` Optional destination filename. If not present, source will be overwritten.
 
 ## Return value
 

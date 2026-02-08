@@ -6,7 +6,7 @@ Per the WireArray interface, is the item a Comment
 
 ## Arguments
 
-- Wire|Comment $item
+- `$item` `Wire|Comment`
 
 ## Return value
 

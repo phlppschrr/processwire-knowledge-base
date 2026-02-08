@@ -8,6 +8,6 @@ Return the operator used by this Selector
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.42 Prior versions just supported the 'operator' property.
+3.0.42 Prior versions just supported the 'operator' property.

@@ -10,8 +10,8 @@ is performed without output formatting.
 
 ## Arguments
 
-- Wire $item
-- string $property
+- `$item` `Wire`
+- `$property` `string`
 
 ## Return value
 

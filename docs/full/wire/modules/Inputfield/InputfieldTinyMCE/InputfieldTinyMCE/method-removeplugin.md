@@ -6,7 +6,7 @@ Remove an external plugin .js file
 
 ## Arguments
 
-- string $file File must be .js file relative to PW installation root, i.e. /site/templates/mce/myplugin.js
+- `$file` `string` File must be .js file relative to PW installation root, i.e. /site/templates/mce/myplugin.js
 
 ## Return value
 

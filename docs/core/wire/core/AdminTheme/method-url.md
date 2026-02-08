@@ -8,6 +8,6 @@ Get URL to this admin theme
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.171
+3.0.171

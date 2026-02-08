@@ -6,8 +6,8 @@ Hook called when either of Pages::save or Pages::saveField is ready to execute
 
 ## Arguments
 
-- Page $page
-- string $fieldName Populated only if call originates from saveField
+- `$page` `Page`
+- `$fieldName` (optional) `string` Populated only if call originates from saveField
 
 ## See also
 

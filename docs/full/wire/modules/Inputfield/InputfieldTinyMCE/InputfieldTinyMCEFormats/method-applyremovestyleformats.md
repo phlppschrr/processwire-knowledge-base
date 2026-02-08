@@ -6,7 +6,7 @@ Remove style formats that have a 'remove=true' property
 
 ## Arguments
 
-- array $styleFormats
+- `$styleFormats` `array`
 
 ## Return value
 

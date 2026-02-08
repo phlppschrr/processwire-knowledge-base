@@ -6,7 +6,7 @@ Retrieve a value from the Notification
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

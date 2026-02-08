@@ -8,12 +8,12 @@ This converts things like 'wrap' to 'wrapClass', 'header' to 'headerClass', etc.
 
 ## Arguments
 
-- string $property
+- `$property` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.204
+3.0.204

@@ -6,8 +6,8 @@ Prepare options for send method(s)
 
 ## Arguments
 
-- string $url
-- array $options
+- `$url` `string`
+- `$options` `array`
 
 ## Return value
 

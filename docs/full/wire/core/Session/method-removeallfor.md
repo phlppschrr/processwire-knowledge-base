@@ -6,7 +6,7 @@ Remove all session variables in given namespace
 
 ## Arguments
 
-- string|object $ns
+- `$ns` `string|object`
 
 ## Return value
 

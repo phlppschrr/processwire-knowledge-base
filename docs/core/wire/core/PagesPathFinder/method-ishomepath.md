@@ -6,7 +6,7 @@ Does given path refer to homepage?
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

@@ -7,7 +7,7 @@ Sanitize selector value (original, version 1)
 ## Arguments
 
 - $value
-- array $options
+- `$options` (optional) `array`
 
 ## Return value
 

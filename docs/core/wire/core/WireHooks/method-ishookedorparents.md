@@ -8,9 +8,9 @@ This method is designed for fast determinations of whether something is hooked
 
 ## Arguments
 
-- string|Wire $class
-- string $method Name of method or property
-- string $type May be either 'method', 'property' or 'either'
+- `$class` `string|Wire`
+- `$method` `string` Name of method or property
+- `$type` (optional) `string` May be either 'method', 'property' or 'either'
 
 ## Return value
 

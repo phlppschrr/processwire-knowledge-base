@@ -6,7 +6,7 @@ Delete a log file
 
 ## Arguments
 
-- string $name Name of log, excluding path and extension.
+- `$name` `string` Name of log, excluding path and extension.
 
 ## Return value
 

@@ -7,9 +7,9 @@ Is requested by image options: ["webpAdd" => true] OR ["webpOnly" => true]
 
 ## Arguments
 
-- resource $im
-- string $filename
-- int $quality
+- `$im` `resource`
+- `$filename` `string`
+- `$quality` (optional) `int`
 
 ## Return value
 

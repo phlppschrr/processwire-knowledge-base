@@ -13,7 +13,7 @@ Currently it does this:
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Throws
 

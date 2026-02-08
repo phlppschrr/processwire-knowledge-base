@@ -23,8 +23,8 @@ true for the `noInstall` option in the `$options` argument.
 
 ## Arguments
 
-- string|int $key Module name or database ID.
-- array $options Optional settings to change load behavior, see method description for details.
+- `$key` `string|int` Module name or database ID.
+- `$options` (optional) `array` Optional settings to change load behavior, see method description for details.
 
 ## Return value
 

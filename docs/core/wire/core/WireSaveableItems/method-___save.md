@@ -6,7 +6,7 @@ Save the provided item to database
 
 ## Arguments
 
-- Saveable $item The item to save
+- `$item` `Saveable` The item to save
 
 ## Return value
 

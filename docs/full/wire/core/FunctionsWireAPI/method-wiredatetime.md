@@ -13,8 +13,8 @@ $str = datetime('Y-m-d', time());
 
 ## Arguments
 
-- string $format Optional date format
-- string|int $value Optional date to format
+- `$format` (optional) `string` Optional date format
+- `$value` (optional) `string|int` Optional date to format
 
 ## Return value
 

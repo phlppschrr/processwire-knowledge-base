@@ -6,13 +6,13 @@ Return a count of pages that match
 
 ## Arguments
 
-- Selectors|string|array $selectors Selectors object, selector string or selector array
-- array $options
+- `$selectors` `Selectors|string|array` Selectors object, selector string or selector array
+- `$options` (optional) `array`
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.121
+3.0.121

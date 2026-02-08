@@ -66,9 +66,9 @@ Inserting new elements
 
 ## Arguments
 
-- string $htmlDocument Document to populate regions to
-- string|array $htmlRegions Markup containing regions (or regions array from a find call)
-- array $options Options to modify behavior: - `useClassActions` (bool): Allow "pw-*" actions to be specified in class names? Per original/legacy spec. (default=false) - `useFileRegions` (bool): Allow use of markup file regions? (default=false)
+- `$htmlDocument` `string` Document to populate regions to
+- `$htmlRegions` `string|array` Markup containing regions (or regions array from a find call)
+- `$options` (optional) `array` Options to modify behavior: - `useClassActions` (bool): Allow "pw-*" actions to be specified in class names? Per original/legacy spec. (default=false) - `useFileRegions` (bool): Allow use of markup file regions? (default=false)
 
 ## Return value
 

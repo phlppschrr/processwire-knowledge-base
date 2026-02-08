@@ -6,9 +6,9 @@ Return whether the role has the permission within the context of a Page or Templ
 
 ## Arguments
 
-- bool $has Result from the hasPermission() method
-- Permission $permission Permission to check
-- Wire $context Must be a Template or Page
+- `$has` `bool` Result from the hasPermission() method
+- `$permission` `Permission` Permission to check
+- `$context` `Wire` Must be a Template or Page
 
 ## Return value
 

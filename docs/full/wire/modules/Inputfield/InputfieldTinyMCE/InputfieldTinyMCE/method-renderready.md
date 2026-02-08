@@ -6,8 +6,8 @@ Render ready
 
 ## Arguments
 
-- Inputfield|null $parent
-- bool $renderValueMode
+- `$parent` (optional) `Inputfield|null`
+- `$renderValueMode` (optional) `bool`
 
 ## Return value
 

@@ -6,9 +6,9 @@ Delete rows having empty column value
 
 ## Arguments
 
-- Field $field
-- string $col Column name (default='data')
-- bool $strict When true, delete not allowed if there are columns other than one given and 'pages_id' (default=true)
+- `$field` `Field`
+- `$col` (optional) `string` Column name (default='data')
+- `$strict` (optional) `bool` When true, delete not allowed if there are columns other than one given and 'pages_id' (default=true)
 
 ## Return value
 

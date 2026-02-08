@@ -6,8 +6,8 @@ Copy files for given $page into version directory
 
 ## Arguments
 
-- Page $page
-- int $version
+- `$page` `Page`
+- `$version` `int`
 
 ## Return value
 

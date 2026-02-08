@@ -6,7 +6,7 @@ Set the upload field name (same as that provided to the constructor)
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

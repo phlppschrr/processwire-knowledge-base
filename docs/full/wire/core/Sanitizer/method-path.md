@@ -15,8 +15,8 @@ method that does sanitiation.
 
 ## Arguments
 
-- string $value Path to validate
-- int|array $options Options to modify behavior, or maxLength (int) may be specified. - `allowDotDot` (bool): Whether to allow ".." in a path (default=false) - `maxLength` (int): Maximum length of allowed path (default=1024)
+- `$value` `string` Path to validate
+- `$options` (optional) `int|array` Options to modify behavior, or maxLength (int) may be specified. - `allowDotDot` (bool): Whether to allow ".." in a path (default=false) - `maxLength` (int): Maximum length of allowed path (default=1024)
 
 ## Return value
 

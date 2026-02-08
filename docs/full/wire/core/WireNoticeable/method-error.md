@@ -10,8 +10,8 @@ Fatal errors should still throw a WireException (or class derived from it)
 
 ## Arguments
 
-- string $text
-- int $flags See Notices::flags
+- `$text` `string`
+- `$flags` (optional) `int` See Notices::flags
 
 ## Return value
 

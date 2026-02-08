@@ -19,7 +19,7 @@ $table = $modules->MarkupAdminDataTable;
 
 ## Arguments
 
-- string|int $key Module name (also accepts database ID)
+- `$key` `string|int` Module name (also accepts database ID)
 
 ## Return value
 

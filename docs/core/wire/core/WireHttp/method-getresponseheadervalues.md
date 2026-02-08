@@ -13,8 +13,8 @@ This method always returns an associative array of strings and arrays, unless yo
 
 ## Arguments
 
-- string $key Optional header name you want to get (if you only need a specific header)
-- bool $forceArrays If even single-value headers should be arrays, specify true (default=false).
+- `$key` (optional) `string` Optional header name you want to get (if you only need a specific header)
+- `$forceArrays` (optional) `bool` If even single-value headers should be arrays, specify true (default=false).
 
 ## Return value
 

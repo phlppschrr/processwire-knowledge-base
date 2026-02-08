@@ -14,7 +14,7 @@ $user->save();
 
 ## Arguments
 
-- string|int|Role $role May be Role name, object, or ID.
+- `$role` `string|int|Role` May be Role name, object, or ID.
 
 ## Return value
 

@@ -6,12 +6,12 @@ Get sortfield for given Page from DB
 
 ## Arguments
 
-- int|Page $page Page or page ID
+- `$page` `int|Page` Page or page ID
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

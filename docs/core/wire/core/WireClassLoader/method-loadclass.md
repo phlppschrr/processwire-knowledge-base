@@ -6,4 +6,4 @@ Load the file for the given class
 
 ## Arguments
 
-- string $className
+- `$className` `string`

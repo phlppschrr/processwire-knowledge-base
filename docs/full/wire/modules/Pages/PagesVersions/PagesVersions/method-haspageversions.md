@@ -9,7 +9,7 @@ with $version argument omitted.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

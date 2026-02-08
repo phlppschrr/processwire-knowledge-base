@@ -6,4 +6,4 @@ Save all bookmarks (whether public or owned)
 
 ## Arguments
 
-- array $allBookmarks
+- `$allBookmarks` `array`

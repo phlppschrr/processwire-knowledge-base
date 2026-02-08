@@ -6,7 +6,7 @@ Import a files/images field and populate to given $page
 
 ## Arguments
 
-- Page $page
-- Field $field
-- array $data Export value of file field
-- array $options
+- `$page` `Page`
+- `$field` `Field`
+- `$data` `array` Export value of file field
+- `$options` (optional) `array`

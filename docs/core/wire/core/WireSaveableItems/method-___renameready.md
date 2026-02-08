@@ -6,6 +6,6 @@ Hook that runs right before item is to be renamed.
 
 ## Arguments
 
-- Saveable $item
-- string $oldName
-- string $newName
+- `$item` `Saveable`
+- `$oldName` `string`
+- `$newName` `string`

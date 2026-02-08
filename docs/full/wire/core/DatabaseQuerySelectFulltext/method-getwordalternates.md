@@ -6,8 +6,8 @@ Get other variations of given word to search (such as plural, singular, lemmas, 
 
 ## Arguments
 
-- string $word
-- int|null $minLength Minimum length for returned words
+- `$word` `string`
+- `$minLength` (optional) `int|null` Minimum length for returned words
 
 ## Return value
 

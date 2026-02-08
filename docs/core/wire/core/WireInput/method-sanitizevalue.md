@@ -6,9 +6,9 @@ Sanitize the given value with the given method(s)
 
 ## Arguments
 
-- string $method Sanitizer method name or CSV string of sanitizer method names
-- string|array|null $value
-- bool $getArray
+- `$method` `string` Sanitizer method name or CSV string of sanitizer method names
+- `$value` `string|array|null`
+- `$getArray` `bool`
 
 ## Return value
 

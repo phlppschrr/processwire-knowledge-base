@@ -8,9 +8,9 @@ Also populates $this->errors
 
 ## Arguments
 
-- string $name Filename
-- int $size Size in bytes
-- int $error Error code from PHP
+- `$name` `string` Filename
+- `$size` `int` Size in bytes
+- `$error` `int` Error code from PHP
 
 ## Return value
 

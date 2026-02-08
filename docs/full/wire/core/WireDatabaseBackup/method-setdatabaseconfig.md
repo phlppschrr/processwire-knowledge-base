@@ -6,7 +6,7 @@ Set the database configuration information
 
 ## Arguments
 
-- array|Config|object $config Containing these properties: - dbUser - dbHost - dbPort - dbName - dbPass - dbPath (optional) - dbCharset (optional)
+- `$config` (optional) `array|Config|object` Containing these properties: - dbUser - dbHost - dbPort - dbName - dbPass - dbPath (optional) - dbCharset (optional)
 
 ## Return value
 

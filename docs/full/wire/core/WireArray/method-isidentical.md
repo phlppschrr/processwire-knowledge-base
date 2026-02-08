@@ -6,8 +6,8 @@ Is the given WireArray identical to this one?
 
 ## Arguments
 
-- WireArray $items
-- bool|int $strict Use strict mode? Optionally specify one of the following: `true` (boolean): Default. Compares items, item object instances, order, and any other data contained in WireArray. `false` (boolean): Compares only that items in the WireArray resolve to the same order and values (though not object instances).
+- `$items` `WireArray`
+- `$strict` (optional) `bool|int` Use strict mode? Optionally specify one of the following: `true` (boolean): Default. Compares items, item object instances, order, and any other data contained in WireArray. `false` (boolean): Compares only that items in the WireArray resolve to the same order and values (though not object instances).
 
 ## Return value
 

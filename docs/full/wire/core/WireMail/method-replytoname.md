@@ -6,7 +6,7 @@ Set the 'reply-to' name (where supported)
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

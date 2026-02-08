@@ -10,7 +10,7 @@ When given an array, it calls $pages->getById($key);
 
 ## Arguments
 
-- string|int|array $key
+- `$key` `string|int|array`
 
 ## Return value
 

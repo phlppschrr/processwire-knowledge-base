@@ -6,7 +6,7 @@ Prepare IPTC data (@horst)
 
 ## Arguments
 
-- bool $includeCustomTags (default=false)
+- `$includeCustomTags` (optional) `bool` (default=false)
 
 ## Return value
 

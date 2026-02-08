@@ -8,6 +8,6 @@ Is there a previous pagination before the current one?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.120
+3.0.120

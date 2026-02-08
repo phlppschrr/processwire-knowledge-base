@@ -8,6 +8,6 @@ Return disk path to log files
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.214
+3.0.214

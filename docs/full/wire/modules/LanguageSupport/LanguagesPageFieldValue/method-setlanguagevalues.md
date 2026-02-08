@@ -14,13 +14,13 @@ $page->title->setLanguageValues([
 
 ## Arguments
 
-- array $values Associative array of values where keys are language names or IDs.
-- bool $reset Reset any languages not specified to blank? (default=false)
+- `$values` `array` Associative array of values where keys are language names or IDs.
+- `$reset` (optional) `bool` Reset any languages not specified to blank? (default=false)
 
 ## Return value
 
 self
 
-## Meta
+## Since
 
-- @since 3.0.236
+3.0.236

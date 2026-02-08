@@ -6,7 +6,7 @@ Return URL to view comment
 
 ## Arguments
 
-- bool $http
+- `$http` (optional) `bool`
 
 ## Return value
 

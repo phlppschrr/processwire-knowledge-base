@@ -6,4 +6,4 @@ Remove a ProcessWire instance
 
 ## Arguments
 
-- ProcessWire $wire
+- `$wire` `ProcessWire`

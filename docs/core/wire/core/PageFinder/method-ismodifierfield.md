@@ -6,7 +6,7 @@ Is given field name a modifier that does not directly refer to a field or column
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

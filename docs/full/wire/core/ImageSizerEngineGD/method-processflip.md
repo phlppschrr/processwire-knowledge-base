@@ -6,9 +6,9 @@ Process vertical or horizontal flip of an image
 
 ## Arguments
 
-- string $srcFilename
-- string $dstFilename
-- string $flipType Specify vertical, horizontal, or both
+- `$srcFilename` `string`
+- `$dstFilename` `string`
+- `$flipType` `string` Specify vertical, horizontal, or both
 
 ## Return value
 

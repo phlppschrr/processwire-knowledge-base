@@ -74,8 +74,8 @@ $array = $pages->pathFinder()->get('/en/foo/bar/page3');
 
 ## Arguments
 
-- string $path Page path optionally including URL segments, language prefix, pagination number
-- array $options - `useLanguages` (bool): Allow use of multi-language page names? (default=true) Requires LanguageSupportPageNames module installed. - `useHistory` (bool): Allow use historical path names? (default=true) Requires PagePathHistory module installed. - `verbose` (bool): Return verbose array of information? (default=true) If false, some optional information will be omitted in return value.
+- `$path` `string` Page path optionally including URL segments, language prefix, pagination number
+- `$options` (optional) `array` - `useLanguages` (bool): Allow use of multi-language page names? (default=true) Requires LanguageSupportPageNames module installed. - `useHistory` (bool): Allow use historical path names? (default=true) Requires PagePathHistory module installed. - `verbose` (bool): Return verbose array of information? (default=true) If false, some optional information will be omitted in return value.
 
 ## Return value
 

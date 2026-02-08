@@ -6,7 +6,7 @@ Return all defined parent pages for this template
 
 ## Arguments
 
-- bool $checkAccess Specify true to exclude parents that user doesn't have access to add children to (default=false)
+- `$checkAccess` (optional) `bool` Specify true to exclude parents that user doesn't have access to add children to (default=false)
 
 ## Return value
 

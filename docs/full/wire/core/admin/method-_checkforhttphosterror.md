@@ -6,4 +6,4 @@ Check if the current HTTP host is recognized and generate error if not
 
 ## Arguments
 
-- Config $config
+- `$config` `Config`

@@ -12,5 +12,5 @@ $classLoader->addNamespace('HelloWorld', '/path/to/that/');
 
 ## Arguments
 
-- string $namespace
-- string $path Full system path
+- `$namespace` `string`
+- `$path` `string` Full system path

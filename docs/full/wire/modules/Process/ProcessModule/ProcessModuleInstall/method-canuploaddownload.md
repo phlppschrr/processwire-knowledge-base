@@ -8,8 +8,8 @@ This primarily checks that needed dirs are writable and ZipArchive is available.
 
 ## Arguments
 
-- bool $notify Specify true to make it queue the relevant reason/error message if upload/download not supported. (default=false)
-- string $type One of 'upload' or 'download' or omit for general check
+- `$notify` (optional) `bool` Specify true to make it queue the relevant reason/error message if upload/download not supported. (default=false)
+- `$type` (optional) `string` One of 'upload' or 'download' or omit for general check
 
 ## Return value
 

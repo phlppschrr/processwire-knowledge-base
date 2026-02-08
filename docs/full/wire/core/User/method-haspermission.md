@@ -18,8 +18,8 @@ if($user->hasPermission('page-publish', $page)) {
 
 ## Arguments
 
-- string|Permission $name Permission name, object or id.
-- Page|Template|bool|string $context Page or Template... - or specify boolean true to return if user has permission OR if it was added at any template - or specify string "templates" to return array of Template objects where user has permission
+- `$name` `string|Permission` Permission name, object or id.
+- `$context` (optional) `Page|Template|bool|string` Page or Template... - or specify boolean true to return if user has permission OR if it was added at any template - or specify string "templates" to return array of Template objects where user has permission
 
 ## Return value
 

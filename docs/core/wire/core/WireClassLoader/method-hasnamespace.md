@@ -6,7 +6,7 @@ Return true if namespace is defined with paths or false if not
 
 ## Arguments
 
-- string $namespace
+- `$namespace` `string`
 
 ## Return value
 

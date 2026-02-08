@@ -15,9 +15,9 @@ specifically set via the `maxBytes` option.
 
 ## Arguments
 
-- string $value String to sanitize
-- int|array $maxLength Maximum length in characters, omit (0) for no max-length, or substitute $options array
-- array $options Options to modify behavior, see text() sanitizer for all options.
+- `$value` `string` String to sanitize
+- `$maxLength` (optional) `int|array` Maximum length in characters, omit (0) for no max-length, or substitute $options array
+- `$options` (optional) `array` Options to modify behavior, see text() sanitizer for all options.
 
 ## Return value
 
@@ -28,6 +28,6 @@ string
 - [Sanitizer::text()](method-text.md)
 - [Sanitizer::lines()](method-lines.md)
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

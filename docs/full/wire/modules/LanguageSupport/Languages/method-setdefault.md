@@ -20,7 +20,7 @@ $languages->unsetDefault();
 
 ## Arguments
 
-- Language|null $language
+- `$language` (optional) `Language|null`
 
 ## Return value
 

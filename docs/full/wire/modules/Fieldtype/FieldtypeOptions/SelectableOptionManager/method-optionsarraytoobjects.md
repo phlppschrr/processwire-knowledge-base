@@ -6,7 +6,7 @@ Convert an array of option arrays, to a SelectableOptionArray of SelectableOptio
 
 ## Arguments
 
-- array $value
+- `$value` `array`
 
 ## Return value
 

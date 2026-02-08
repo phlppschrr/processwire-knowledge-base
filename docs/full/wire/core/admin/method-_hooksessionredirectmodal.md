@@ -6,4 +6,4 @@ Ensures a modal GET variable is retained through redirects, when appropriate
 
 ## Arguments
 
-- HookEvent $event
+- `$event` `HookEvent`

@@ -6,5 +6,5 @@ Set response message
 
 ## Arguments
 
-- string $message
-- bool $append Append to existing message?
+- `$message` `string`
+- `$append` (optional) `bool` Append to existing message?

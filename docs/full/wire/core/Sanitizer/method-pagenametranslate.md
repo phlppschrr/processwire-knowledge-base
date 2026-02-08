@@ -8,8 +8,8 @@ This is the same as calling pageName with the `Sanitizer::translate` option for 
 
 ## Arguments
 
-- string $value Value to sanitize
-- int $maxLength Maximum number of characters allowed in the name
+- `$value` `string` Value to sanitize
+- `$maxLength` (optional) `int` Maximum number of characters allowed in the name
 
 ## Return value
 

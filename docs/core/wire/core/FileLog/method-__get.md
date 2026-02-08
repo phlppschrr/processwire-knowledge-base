@@ -5,7 +5,7 @@ Source: `wire/core/FileLog.php`
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

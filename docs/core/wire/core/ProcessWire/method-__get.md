@@ -6,7 +6,7 @@ Get API var directly
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

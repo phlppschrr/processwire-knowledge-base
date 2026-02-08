@@ -6,12 +6,12 @@ Are secure pagefiles possible on this system and url?
 
 ## Arguments
 
-- string $url
+- `$url` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.166
+3.0.166

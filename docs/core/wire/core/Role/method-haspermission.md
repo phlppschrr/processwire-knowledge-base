@@ -6,8 +6,8 @@ Does this role have the given permission name, id or object?
 
 ## Arguments
 
-- string|int|Permission $permission Permission object, name, or id.
-- Page|Template|null $context Optional Page or Template context.
+- `$permission` `string|int|Permission` Permission object, name, or id.
+- `$context` (optional) `Page|Template|null` Optional Page or Template context.
 
 ## Return value
 

@@ -6,6 +6,6 @@ Construct the multi language value
 
 ## Arguments
 
-- Page|null $page
-- Field|null $field
-- array|string $values
+- `$page` (optional) `Page|null`
+- `$field` (optional) `Field|null`
+- `$values` (optional) `array|string`

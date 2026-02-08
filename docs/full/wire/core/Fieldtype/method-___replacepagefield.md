@@ -6,9 +6,9 @@ Move this field’s data from one page to another.
 
 ## Arguments
 
-- Page $src Source Page
-- Page $dst Destination Page
-- Field $field
+- `$src` `Page` Source Page
+- `$dst` `Page` Destination Page
+- `$field` `Field`
 
 ## Return value
 

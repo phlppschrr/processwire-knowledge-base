@@ -11,9 +11,9 @@ Fieldtype modules don't need to implement this unless it's applicable.
 
 ## Arguments
 
-- Page $page Page that the value lives on
-- Field $field Field that represents the value
-- string|int|object $value The value to format
+- `$page` `Page` Page that the value lives on
+- `$field` `Field` Field that represents the value
+- `$value` `string|int|object` The value to format
 
 ## Return value
 

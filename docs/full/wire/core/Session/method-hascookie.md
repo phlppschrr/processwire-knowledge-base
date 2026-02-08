@@ -6,7 +6,7 @@ Are session cookie(s) present?
 
 ## Arguments
 
-- bool $checkLogin Specify true to check instead for challenge cookie (which indicates login may be active).
+- `$checkLogin` (optional) `bool` Specify true to check instead for challenge cookie (which indicates login may be active).
 
 ## Return value
 

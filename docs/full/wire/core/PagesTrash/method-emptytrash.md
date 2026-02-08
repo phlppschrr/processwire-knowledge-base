@@ -8,7 +8,7 @@ Populates error notices when there are errors deleting specific pages.
 
 ## Arguments
 
-- array $options - `chunkSize` (int): Pages will be deleted in chunks of this many pages per chunk (default=100). - `chunkTimeLimit` (int): Maximum seconds allowed to process deletion of each chunk (default=600). - `chunkLimit' (int): Maximum chunks to process in an emptyTrash() call (default=1000); - `pageLimit` (int): Maximum pages to delete per emptyTrash() call (default=0, no limit). - `timeLimit` (int): Maximum time (in seconds) to allow for trash empty (default=3600). - `pass2` (bool): Perform a secondary pass using alternate method as a backup? (default=true) Note: pass2 is always disabled when a pageLimit is in use or timeLimit has been exceeded. - `verbose` (bool): Return verbose array of information about the trash empty process? For debug/dev purposes (default=false)
+- `$options` (optional) `array` - `chunkSize` (int): Pages will be deleted in chunks of this many pages per chunk (default=100). - `chunkTimeLimit` (int): Maximum seconds allowed to process deletion of each chunk (default=600). - `chunkLimit' (int): Maximum chunks to process in an emptyTrash() call (default=1000); - `pageLimit` (int): Maximum pages to delete per emptyTrash() call (default=0, no limit). - `timeLimit` (int): Maximum time (in seconds) to allow for trash empty (default=3600). - `pass2` (bool): Perform a secondary pass using alternate method as a backup? (default=true) Note: pass2 is always disabled when a pageLimit is in use or timeLimit has been exceeded. - `verbose` (bool): Return verbose array of information about the trash empty process? For debug/dev purposes (default=false)
 
 ## Return value
 

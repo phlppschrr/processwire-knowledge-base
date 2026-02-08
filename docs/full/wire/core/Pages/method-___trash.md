@@ -15,8 +15,8 @@ $pages->trash($product);
 
 ## Arguments
 
-- Page $page Page to trash
-- bool $save Set to false if you will perform your own save() call afterwards to complete the operation. Omit otherwise. Primarily for internal use.
+- `$page` `Page` Page to trash
+- `$save` (optional) `bool` Set to false if you will perform your own save() call afterwards to complete the operation. Omit otherwise. Primarily for internal use.
 
 ## Return value
 

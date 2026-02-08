@@ -5,8 +5,8 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
 ## Arguments
 
-- string $file
-- array $options
+- `$file` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

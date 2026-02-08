@@ -9,8 +9,8 @@ If the name did not have a numbered suffix, then the 123 will be 0 and `name` wi
 
 ## Arguments
 
-- string $name
-- string $delimiter Character(s) that separate name and numbered suffix
+- `$name` `string`
+- `$delimiter` (optional) `string` Character(s) that separate name and numbered suffix
 
 ## Return value
 

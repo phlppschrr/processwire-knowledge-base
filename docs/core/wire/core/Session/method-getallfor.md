@@ -6,12 +6,12 @@ Get all session variables for given namespace and return associative array
 
 ## Arguments
 
-- string|Wire $ns
+- `$ns` `string|Wire`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.141 Method added for consistency, but any version can do this with $session->getFor($ns, '');
+3.0.141 Method added for consistency, but any version can do this with $session->getFor($ns, '');

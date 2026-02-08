@@ -6,7 +6,7 @@ Does the given page have an auto-generated name (during this request)?
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

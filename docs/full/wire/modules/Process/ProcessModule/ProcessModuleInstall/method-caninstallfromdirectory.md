@@ -6,7 +6,7 @@ Module install/upgrade from directory allowed?
 
 ## Arguments
 
-- bool $notify
+- `$notify` (optional) `bool`
 
 ## Return value
 

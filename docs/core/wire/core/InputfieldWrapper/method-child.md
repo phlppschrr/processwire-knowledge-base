@@ -10,13 +10,13 @@ can optionally disable the $recursive behavior.
 
 ## Arguments
 
-- string|int $name Name or selector string of child to find, omit for first child, or specify zero-based index of child to return.
-- bool $recursive Find child recursively? Looks for child in this wrapper, and all other wrappers below it. (default=true)
+- `$name` (optional) `string|int` Name or selector string of child to find, omit for first child, or specify zero-based index of child to return.
+- `$recursive` (optional) `bool` Find child recursively? Looks for child in this wrapper, and all other wrappers below it. (default=true)
 
 ## Return value
 
 Inputfield|null Returns Inputfield instance if found, or null if not.
 
-## Meta
+## Since
 
-- @since 3.0.110
+3.0.110

@@ -6,7 +6,7 @@ Retrieve module info from ModuleName.info.json or ModuleName.info.php
 
 ## Arguments
 
-- string $moduleName
+- `$moduleName` `string`
 
 ## Return value
 

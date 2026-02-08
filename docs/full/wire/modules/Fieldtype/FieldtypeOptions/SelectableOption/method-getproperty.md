@@ -6,7 +6,7 @@ Get the language-aware property
 
 ## Arguments
 
-- string $property Either 'title' or 'value'
+- `$property` `string` Either 'title' or 'value'
 
 ## Return value
 

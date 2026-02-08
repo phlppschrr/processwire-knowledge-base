@@ -10,9 +10,9 @@ This is procedural version of the `$files->chmod()` method.
 
 ## Arguments
 
-- string $path May be a directory or a filename
-- bool $recursive If set to true, all files and directories in $path will be recursively set as well.
-- string $chmod If you want to set the mode to something other than PW's chmodFile/chmodDir settings, you may override it by specifying it here. Ignored otherwise. Format should be a string, like "0755".
+- `$path` `string` May be a directory or a filename
+- `$recursive` (optional) `bool` If set to true, all files and directories in $path will be recursively set as well.
+- `$chmod` (optional) `string` If you want to set the mode to something other than PW's chmodFile/chmodDir settings, you may override it by specifying it here. Ignored otherwise. Format should be a string, like "0755".
 
 ## Return value
 

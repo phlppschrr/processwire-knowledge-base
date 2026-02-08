@@ -7,6 +7,6 @@ Source: `wire/core/Wire.php`
 
 WireHooks|null
 
-## Meta
+## Since
 
-- @since 3.0.171
+3.0.171

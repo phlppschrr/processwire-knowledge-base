@@ -6,8 +6,8 @@ Direct access set method
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`
 
 ## See also
 

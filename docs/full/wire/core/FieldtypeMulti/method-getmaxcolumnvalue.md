@@ -6,10 +6,10 @@ Get max value of column for given Page and Field or boolean false (or specified 
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string $column
-- int|bool $noValue Return this value if there are no rows to count from (default=false)
+- `$page` `Page`
+- `$field` `Field`
+- `$column` `string`
+- `$noValue` (optional) `int|bool` Return this value if there are no rows to count from (default=false)
 
 ## Return value
 
@@ -19,6 +19,6 @@ int|bool|mixed
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

@@ -21,13 +21,13 @@ $p1 === $p3; // false: same Page but different instance
 
 ## Arguments
 
-- Page|string|array|Selectors|int $selectorOrPage Specify Page to get copy of, selector or ID
-- array $options Options to modify behavior
+- `$selectorOrPage` `Page|string|array|Selectors|int` Specify Page to get copy of, selector or ID
+- `$options` (optional) `array` Options to modify behavior
 
 ## Return value
 
 Page|NullPage
 
-## Meta
+## Since
 
-- @since 3.0.172
+3.0.172

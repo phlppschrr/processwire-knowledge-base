@@ -9,4 +9,4 @@ To disable TemplateFile from changing any directories, set to false (3.0.154+).
 
 ## Arguments
 
-- string|bool $chdir
+- `$chdir` `string|bool`

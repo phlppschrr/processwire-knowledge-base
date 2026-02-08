@@ -33,9 +33,9 @@ $session->addHookAfter('loginSuccess', function($event) {
 
 ## Arguments
 
-- array|string $key Field or property name to set, or array of one or more ['property' => $value].
-- string|int|bool|object $value Value to set, or omit if you provided an array in first argument.
-- array $options See Pages::save() for additional $options that may be specified.
+- `$key` `array|string` Field or property name to set, or array of one or more ['property' => $value].
+- `$value` (optional) `string|int|bool|object` Value to set, or omit if you provided an array in first argument.
+- `$options` (optional) `array` See Pages::save() for additional $options that may be specified.
 
 ## Return value
 

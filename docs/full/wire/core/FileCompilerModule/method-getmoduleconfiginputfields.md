@@ -6,4 +6,4 @@ Configure the FileCompiler module
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

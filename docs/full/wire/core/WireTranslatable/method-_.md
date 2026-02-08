@@ -8,7 +8,7 @@ If not available, or if the current language is the native language, then it ret
 
 ## Arguments
 
-- string $text Text string to translate
+- `$text` `string` Text string to translate
 
 ## Return value
 

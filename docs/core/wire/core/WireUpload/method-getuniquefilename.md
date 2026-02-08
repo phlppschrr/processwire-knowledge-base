@@ -6,7 +6,7 @@ Given a filename/path destination, adjust it to ensure it is unique
 
 ## Arguments
 
-- string $destination
+- `$destination` `string`
 
 ## Return value
 

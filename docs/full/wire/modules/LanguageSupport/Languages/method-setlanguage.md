@@ -13,7 +13,7 @@ $languages->setLanguage('de');
 
 ## Arguments
 
-- int|string|Language $language Language id, name or Language object
+- `$language` `int|string|Language` Language id, name or Language object
 
 ## Return value
 

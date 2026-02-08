@@ -9,7 +9,7 @@ The compile method processes the contents of a file
 
 ## Arguments
 
-- string $data
+- `$data` `string`
 
 ## Return value
 

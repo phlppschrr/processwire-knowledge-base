@@ -6,7 +6,7 @@ Set page selector or test if feature is disabledd
 
 ## Arguments
 
-- string $selector Selector string or blank string when testing if feature is disabled
+- `$selector` `string` Selector string or blank string when testing if feature is disabled
 
 ## Return value
 

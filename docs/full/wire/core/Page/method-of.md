@@ -23,12 +23,12 @@ $page->save();
 
 ## Arguments
 
-- bool $outputFormatting If specified, sets output formatting state ON or OFF. If not specified, nothing is changed.
+- `$outputFormatting` (optional) `bool` If specified, sets output formatting state ON or OFF. If not specified, nothing is changed.
 
 ## Return value
 
 bool Current output formatting state (before this function call, if it was changed)
 
-## Meta
+## Details
 
 - @link https://processwire.com/blog/posts/output-formatting/

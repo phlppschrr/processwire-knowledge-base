@@ -6,4 +6,4 @@ Match equals, not equals, less, greater, etc.
 
 ## Arguments
 
-- string $value
+- `$value` `string`

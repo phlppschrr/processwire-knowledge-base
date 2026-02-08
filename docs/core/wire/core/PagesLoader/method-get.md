@@ -6,8 +6,8 @@ Returns the first page matching the given selector with no exclusions
 
 ## Arguments
 
-- string|int|array|Selectors $selector
-- array $options See Pages::find method for options
+- `$selector` `string|int|array|Selectors`
+- `$options` (optional) `array` See Pages::find method for options
 
 ## Return value
 

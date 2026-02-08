@@ -27,8 +27,8 @@ validation for the given file type (or blank array if none).
 
 ## Arguments
 
-- string $filename Full path and filename to validate
-- array $options When available, provide array with any one or all of the following: - `page` (Page): Page object associated with $filename. (default=null) - `field` (Field): Field object associated with $filename. (default=null) - `pagefile` (Pagefile): Pagefile object associated with $filename. (default=null) - `getArray` (bool): Return array of results rather than a boolean? (default=false) Added 3.0.167 - `dryrun` (bool|int): Specify true to only return if the file can be validated with this method, without actually performing any validation. (default=false). Added 3.0.167
+- `$filename` `string` Full path and filename to validate
+- `$options` (optional) `array` When available, provide array with any one or all of the following: - `page` (Page): Page object associated with $filename. (default=null) - `field` (Field): Field object associated with $filename. (default=null) - `pagefile` (Pagefile): Pagefile object associated with $filename. (default=null) - `getArray` (bool): Return array of results rather than a boolean? (default=false) Added 3.0.167 - `dryrun` (bool|int): Specify true to only return if the file can be validated with this method, without actually performing any validation. (default=false). Added 3.0.167
 
 ## Return value
 

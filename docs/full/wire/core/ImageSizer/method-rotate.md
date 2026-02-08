@@ -6,7 +6,7 @@ Rotate image by given degrees
 
 ## Arguments
 
-- int $degrees
+- `$degrees` `int`
 
 ## Return value
 

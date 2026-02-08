@@ -6,7 +6,7 @@ Per WireArray interface, items added to Fieldtypes must be Fieldtype instances
 
 ## Arguments
 
-- Wire|Fieldtype $item
+- `$item` `Wire|Fieldtype`
 
 ## Return value
 

@@ -6,8 +6,8 @@ Convert HTML bracket tags [tag]...[/tag] to HTML - helper method for entitiesMar
 
 ## Arguments
 
-- string $str String containing bracket tags, should be entity encoded ahead of time
-- array $options
+- `$str` `string` String containing bracket tags, should be entity encoded ahead of time
+- `$options` `array`
 
 ## Return value
 

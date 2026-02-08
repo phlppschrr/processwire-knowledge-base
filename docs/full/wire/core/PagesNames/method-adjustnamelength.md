@@ -6,8 +6,8 @@ If name exceeds maxLength, truncate it, while keeping any numbered suffixes in p
 
 ## Arguments
 
-- string $name
-- int $maxLength
+- `$name` `string`
+- `$maxLength` (optional) `int`
 
 ## Return value
 

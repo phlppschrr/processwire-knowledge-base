@@ -10,12 +10,12 @@ Inputfields connected with a Page and Field (i.e. used for page editing).
 
 ## Arguments
 
-- Field|string|int $field
+- `$field` `Field|string|int`
 
 ## Return value
 
 Inputfield|InputfieldWrapper|null
 
-## Meta
+## Since
 
-- @since 3.0.239
+3.0.239

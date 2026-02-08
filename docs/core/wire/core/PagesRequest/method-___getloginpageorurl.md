@@ -10,7 +10,7 @@ Get login Page object or URL to redirect to for login needed to access given $pa
 
 ## Arguments
 
-- Page|null $page Page that access was requested to or omit to get admin login page
+- `$page` (optional) `Page|null` Page that access was requested to or omit to get admin login page
 
 ## Return value
 

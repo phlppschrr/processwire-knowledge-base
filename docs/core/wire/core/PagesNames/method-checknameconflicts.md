@@ -6,8 +6,8 @@ Check given page’s name for conflicts and increment as needed while also trigg
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.127
+3.0.127

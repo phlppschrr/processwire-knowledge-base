@@ -8,9 +8,9 @@ Provides the implementation for the insertBefore and insertAfter functions
 
 ## Arguments
 
-- int|string|array|object $item Item you want to insert
-- int|string|array|object $existingItem Item already present that you want to insert before/afer
-- bool $insertBefore True if you want to insert before, false if after
+- `$item` `int|string|array|object` Item you want to insert
+- `$existingItem` `int|string|array|object` Item already present that you want to insert before/afer
+- `$insertBefore` (optional) `bool` True if you want to insert before, false if after
 
 ## Return value
 

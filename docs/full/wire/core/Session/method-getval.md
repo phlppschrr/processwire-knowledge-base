@@ -9,13 +9,13 @@ For a namespace version use `Session::getValFor()` instead.
 
 ## Arguments
 
-- string $key Name of session variable to retrieve.
-- mixed $val Fallback value to return if session does not have it.
+- `$key` `string` Name of session variable to retrieve.
+- `$val` (optional) `mixed` Fallback value to return if session does not have it.
 
 ## Return value
 
 mixed Returns value of seession variable, or NULL if not found.
 
-## Meta
+## Since
 
-- @since 3.0.133
+3.0.133

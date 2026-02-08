@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- string $filename
+- `$filename` (optional) `string`

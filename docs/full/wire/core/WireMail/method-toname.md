@@ -11,7 +11,7 @@ This sets the 'to name' for whatever the last added 'to' email address was.
 
 ## Arguments
 
-- string $name The 'to' name
+- `$name` `string` The 'to' name
 
 ## Return value
 

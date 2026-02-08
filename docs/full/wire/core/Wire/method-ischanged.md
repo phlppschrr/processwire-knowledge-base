@@ -20,7 +20,7 @@ if($page->isChanged('title')) {
 
 ## Arguments
 
-- string $what Name of property, or if left blank, checks if any properties have changed.
+- `$what` (optional) `string` Name of property, or if left blank, checks if any properties have changed.
 
 ## Return value
 

@@ -8,8 +8,8 @@ Use this method when you need to assign some attribute to the outer wrapper of t
 
 ## Arguments
 
-- string|null|bool $key Specify one of the following for $key: - Specify string containing name of attribute to set. - Omit (or null or true) to get all wrap attributes as associative array.
-- string|null|bool $value Specify one of the following for $value: - Omit if getting an attribute. - Value to set for $key of setting. - Boolean false to remove the attribute specified for $key.
+- `$key` (optional) `string|null|bool` Specify one of the following for $key: - Specify string containing name of attribute to set. - Omit (or null or true) to get all wrap attributes as associative array.
+- `$value` (optional) `string|null|bool` Specify one of the following for $value: - Omit if getting an attribute. - Value to set for $key of setting. - Boolean false to remove the attribute specified for $key.
 
 ## Return value
 

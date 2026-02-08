@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- array $lazypages
-- array $options Options provided to $pages->find()
+- `$lazypages` `array`
+- `$options` (optional) `array` Options provided to $pages->find()

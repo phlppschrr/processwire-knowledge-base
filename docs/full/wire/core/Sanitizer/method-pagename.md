@@ -22,10 +22,10 @@ echo $sanitizer->pageName($test, true); // outputs: hello-world
 
 ## Arguments
 
-- string $value Value to sanitize as a page name
-- bool|int|array $beautify This argument accepts a few different possible values (default=false): - `true` (boolean): Make it pretty. Use this when using a pageName for the first time. - `$options` (array): You can optionally specify the $options array for this argument instead. - `Sanitizer::translate` (constant): This will make it translate non-ASCII letters based on *InputfieldPageName* module config settings. - `Sanitizer::toAscii` (constant): Convert UTF-8 characters to punycode ASCII. - `Sanitizer::toUTF8` (constant): Convert punycode ASCII to UTF-8. - `Sanitizer::okUTF8` (constant): Allow UTF-8 characters to appear in path (implied if $config->pageNameCharset is 'UTF8').
-- int|array $maxLength Maximum number of characters allowed in the name. You may also specify the $options array for this argument instead.
-- array $options Array of options to modify default behavior. See Sanitizer::name() method for available options, plus: - `punycodeVersion` (int): Punycode version to use with UTF-8 page names, see Sanitizer::getPunycodeVersion() method for details.
+- `$value` `string` Value to sanitize as a page name
+- `$beautify` (optional) `bool|int|array` This argument accepts a few different possible values (default=false): - `true` (boolean): Make it pretty. Use this when using a pageName for the first time. - `$options` (array): You can optionally specify the $options array for this argument instead. - `Sanitizer::translate` (constant): This will make it translate non-ASCII letters based on *InputfieldPageName* module config settings. - `Sanitizer::toAscii` (constant): Convert UTF-8 characters to punycode ASCII. - `Sanitizer::toUTF8` (constant): Convert punycode ASCII to UTF-8. - `Sanitizer::okUTF8` (constant): Allow UTF-8 characters to appear in path (implied if $config->pageNameCharset is 'UTF8').
+- `$maxLength` (optional) `int|array` Maximum number of characters allowed in the name. You may also specify the $options array for this argument instead.
+- `$options` (optional) `array` Array of options to modify default behavior. See Sanitizer::name() method for available options, plus: - `punycodeVersion` (int): Punycode version to use with UTF-8 page names, see Sanitizer::getPunycodeVersion() method for details.
 
 ## Return value
 

@@ -9,7 +9,7 @@ Sanitize a UTF-8 page path name (does not perform ASCII/UTF8 conversions)
 
 ## Arguments
 
-- string $value Path name to sanitize
+- `$value` `string` Path name to sanitize
 
 ## Return value
 

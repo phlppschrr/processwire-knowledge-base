@@ -6,5 +6,5 @@ Setup entries in config->urls and config->paths for the given module
 
 ## Arguments
 
-- string $moduleName
-- string $path
+- `$moduleName` `string`
+- `$path` `string`

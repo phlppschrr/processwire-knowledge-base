@@ -6,7 +6,7 @@ Get the current ImageSizerEngine
 
 ## Arguments
 
-- string $engineName Optionally specify a specific engine name to get a new instance of that engine When used, returned engine is in an unprepared state (no filename assigned, etc.). Since 3.0.138.
+- `$engineName` (optional) `string` Optionally specify a specific engine name to get a new instance of that engine When used, returned engine is in an unprepared state (no filename assigned, etc.). Since 3.0.138.
 
 ## Return value
 

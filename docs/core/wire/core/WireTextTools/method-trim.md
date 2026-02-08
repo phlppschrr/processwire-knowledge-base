@@ -6,8 +6,8 @@ Strip whitespace (or other characters) from the beginning and end of a string
 
 ## Arguments
 
-- string $str
-- string $chars Omit for default
+- `$str` `string`
+- `$chars` (optional) `string` Omit for default
 
 ## Return value
 

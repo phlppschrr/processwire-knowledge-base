@@ -12,7 +12,7 @@ Check if the requested path is to a secured page file
 
 ## Arguments
 
-- string $path Request path
+- `$path` `string` Request path
 
 ## Return value
 

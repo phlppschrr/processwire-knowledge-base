@@ -6,7 +6,7 @@ Delete a bookmark by ID
 
 ## Arguments
 
-- int $bookmarkID
+- `$bookmarkID` `int`
 
 ## Return value
 

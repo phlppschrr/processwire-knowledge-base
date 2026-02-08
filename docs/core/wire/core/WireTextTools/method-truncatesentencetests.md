@@ -6,7 +6,7 @@ Helper to truncate() method, generate tests/positions for where sentences end
 
 ## Arguments
 
-- string $str
-- array $tests Tests to append found positions to
-- array $endSentenceChars
-- array $options Options provided to truncate method
+- `$str` `string`
+- `$tests` `array` Tests to append found positions to
+- `$endSentenceChars` `array`
+- `$options` `array` Options provided to truncate method

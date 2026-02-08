@@ -6,5 +6,5 @@ Remove defined paths (or single path) for given namespace
 
 ## Arguments
 
-- string $namespace
-- string $path Optionally specify path to remove (default=remove all)
+- `$namespace` `string`
+- `$path` (optional) `string` Optionally specify path to remove (default=remove all)

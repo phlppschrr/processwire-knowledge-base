@@ -6,4 +6,4 @@ Given a selector string, populate to Selector objects in this Selectors instance
 
 ## Arguments
 
-- string $str The string containing a selector (or multiple selectors, separated by commas)
+- `$str` `string` The string containing a selector (or multiple selectors, separated by commas)

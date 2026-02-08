@@ -26,9 +26,9 @@ $a = $page->getMultiple('foo,bar');
 
 ## Arguments
 
-- page $page
-- array|string $keys Array or CSV string of properties to get.
-- bool $assoc Get associative array indexed by given properties? (default=false)
+- `$page` `page`
+- `$keys` `array|string` Array or CSV string of properties to get.
+- `$assoc` (optional) `bool` Get associative array indexed by given properties? (default=false)
 
 ## Return value
 

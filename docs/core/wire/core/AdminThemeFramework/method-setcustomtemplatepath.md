@@ -9,8 +9,8 @@ in /site/templates/AdminTheme[Class]/ is used.
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
-## Meta
+## Since
 
-- @since 3.0.196
+3.0.196

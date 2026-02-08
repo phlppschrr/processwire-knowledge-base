@@ -20,8 +20,8 @@ $sibling = $page->next("include=all");
 
 ## Arguments
 
-- string|array $selector Optional selector. When specified, will find nearest next sibling that matches.
-- PageArray $siblings Optional siblings to use instead of the default. Avoid using this argument as it forces this method to use the older/slower functions.
+- `$selector` (optional) `string|array` Optional selector. When specified, will find nearest next sibling that matches.
+- `$siblings` (optional) `PageArray` Optional siblings to use instead of the default. Avoid using this argument as it forces this method to use the older/slower functions.
 
 ## Return value
 

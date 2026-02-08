@@ -6,12 +6,12 @@ Is the given URL segment string allowed according to this template’s settings?
 
 ## Arguments
 
-- string $urlSegmentStr
+- `$urlSegmentStr` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.186
+3.0.186

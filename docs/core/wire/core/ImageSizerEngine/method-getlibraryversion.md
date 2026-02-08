@@ -8,6 +8,6 @@ Get library version string
 
 string Returns version string or blank string if not applicable/available
 
-## Meta
+## Since
 
-- @since 3.0.138
+3.0.138

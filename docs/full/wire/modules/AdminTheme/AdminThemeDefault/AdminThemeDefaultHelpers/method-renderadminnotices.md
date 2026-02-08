@@ -6,8 +6,8 @@ Render runtime notices div#notices
 
 ## Arguments
 
-- array $options See defaults in method
-- Notices $notices
+- `$options` (optional) `array` See defaults in method
+- `$notices` `Notices`
 
 ## Return value
 

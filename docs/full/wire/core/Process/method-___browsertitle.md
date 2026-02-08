@@ -10,7 +10,7 @@ $this->browserTitle("Hello World");
 
 ## Arguments
 
-- string $title
+- `$title` `string`
 
 ## Return value
 

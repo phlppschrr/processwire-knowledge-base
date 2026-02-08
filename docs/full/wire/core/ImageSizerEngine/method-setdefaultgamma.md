@@ -6,7 +6,7 @@ Set default gamma value: 0.5 - 4.0 | -1
 
 ## Arguments
 
-- float|int $value 0.5 to 4.0 or -1 to disable
+- `$value` (optional) `float|int` 0.5 to 4.0 or -1 to disable
 
 ## Return value
 

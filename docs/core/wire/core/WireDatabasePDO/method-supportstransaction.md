@@ -6,7 +6,7 @@ Are transactions available with current DB engine (or table)?
 
 ## Arguments
 
-- string $table Optionally specify a table to specifically check to that table
+- `$table` (optional) `string` Optionally specify a table to specifically check to that table
 
 ## Return value
 

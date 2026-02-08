@@ -6,4 +6,4 @@ Check if two factor authentication is being required and display warning with li
 
 ## Arguments
 
-- Session $session
+- `$session` `Session`

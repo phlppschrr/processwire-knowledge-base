@@ -6,7 +6,7 @@ Return array with information about what properties and operators can be used wi
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

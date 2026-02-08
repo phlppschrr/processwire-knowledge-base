@@ -6,5 +6,5 @@ Compile include(), require() (and variations) to refer to compiled files where p
 
 ## Arguments
 
-- string $data
-- string $sourceFile
+- `$data` `string`
+- `$sourceFile` `string`

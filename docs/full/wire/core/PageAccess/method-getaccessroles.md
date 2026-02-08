@@ -9,8 +9,8 @@ then it will go down the tree till it finds usable roles to use.
 
 ## Arguments
 
-- Page $page
-- string $type Default is 'view', but you may specify 'edit', 'create' or 'add' to retrieve that type
+- `$page` `Page`
+- `$type` (optional) `string` Default is 'view', but you may specify 'edit', 'create' or 'add' to retrieve that type
 
 ## Return value
 

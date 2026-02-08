@@ -6,7 +6,7 @@ Get user’s lister settings for current page
 
 ## Arguments
 
-- int $userID
+- `$userID` (optional) `int`
 
 ## Return value
 

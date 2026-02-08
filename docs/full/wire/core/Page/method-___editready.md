@@ -15,9 +15,12 @@ $wire->addHook('Page::editReady', function($e) {
 
 ## Arguments
 
-- InputfieldWrapper $form The page editing form
+- `$form` `InputfieldWrapper` The page editing form
 
-## Meta
+## Since
+
+3.0.253
+
+## Details
 
 - @todo Determine if this can also apply to the front-end editor.
-- @since 3.0.253

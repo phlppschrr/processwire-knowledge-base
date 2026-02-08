@@ -6,12 +6,12 @@ Sanitize and normalize a header name
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.132
+3.0.132

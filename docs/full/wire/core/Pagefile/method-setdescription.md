@@ -6,7 +6,7 @@ Set a description, optionally parsing JSON language-specific descriptions to sep
 
 ## Arguments
 
-- string|array $value
+- `$value` `string|array`
 - Language|null Langage to set it for. Omit to determine automatically.
 
 ## Return value

@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- Modules $modules
+- `$modules` `Modules`

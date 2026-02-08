@@ -6,7 +6,7 @@ Sanitize an email address or throw WireException if invalid or in blacklist
 
 ## Arguments
 
-- string $email
+- `$email` `string`
 
 ## Return value
 

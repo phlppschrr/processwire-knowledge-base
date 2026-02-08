@@ -16,8 +16,8 @@ $sanitizer->max(100.0); // returns 10.0
 
 ## Arguments
 
-- int|float|string $value
-- int|float|string $max Maximum allowed value
+- `$value` `int|float|string`
+- `$max` (optional) `int|float|string` Maximum allowed value
 
 ## Return value
 
@@ -27,6 +27,6 @@ int|float
 
 - [Sanitizer::min()](method-min.md)
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

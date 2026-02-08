@@ -6,8 +6,8 @@ Set the found IDs and init the $this->values array
 
 ## Arguments
 
-- array $ids
+- `$ids` `array`
 
-## Meta
+## Since
 
-- @since 3.0.193
+3.0.193

@@ -8,6 +8,6 @@ Get array of language values stored in here
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

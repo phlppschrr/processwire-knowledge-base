@@ -6,10 +6,10 @@ Return whether given Page is moveable from $oldParent to $newParent
 
 ## Arguments
 
-- Page $page Page to move
-- Page $oldParent Current/old parent page
-- Page $newParent New requested parent page
-- string $reason Populated with reason why page is not moveable, if return value is false.
+- `$page` `Page` Page to move
+- `$oldParent` `Page` Current/old parent page
+- `$newParent` `Page` New requested parent page
+- `$reason` `string` Populated with reason why page is not moveable, if return value is false.
 
 ## Return value
 

@@ -6,14 +6,14 @@ Set a value
 
 ## Arguments
 
-- string $key
-- string|int|float|array|null $value
-- array|int|string $options Options not currently used, but available for descending classes or future use
+- `$key` `string`
+- `$value` `string|int|float|array|null`
+- `$options` (optional) `array|int|string` Options not currently used, but available for descending classes or future use
 
 ## Return value
 
 $this
 
-## Meta
+## Since
 
-- @since 3.0.141 You can also use __set() or set directly for compatibility with all versions
+3.0.141 You can also use __set() or set directly for compatibility with all versions

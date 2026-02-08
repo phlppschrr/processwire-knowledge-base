@@ -11,7 +11,7 @@ $fieldgroup->add($field);
 
 ## Arguments
 
-- Field|string $item Field object, field name or id.
+- `$item` `Field|string` Field object, field name or id.
 
 ## Return value
 

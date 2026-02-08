@@ -6,7 +6,7 @@ Create a directory with proper permissions, for internal use.
 
 ## Arguments
 
-- string $path Path to create
+- `$path` `string` Path to create
 
 ## Return value
 

@@ -9,7 +9,7 @@ The given $filename may be local (path) or external (URL).
 
 ## Arguments
 
-- string $filename Full path and filename of file to install, or http/https URL to pull file from.
+- `$filename` `string` Full path and filename of file to install, or http/https URL to pull file from.
 
 ## Throws
 

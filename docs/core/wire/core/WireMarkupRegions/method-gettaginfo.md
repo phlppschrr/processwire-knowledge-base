@@ -19,7 +19,7 @@ Returned info includes:
 
 ## Arguments
 
-- string $tag Must be a tag in format “<tag attrs>”
+- `$tag` `string` Must be a tag in format “<tag attrs>”
 
 ## Return value
 

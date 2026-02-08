@@ -16,7 +16,7 @@ $url = $config->urls->admin;
 
 ## Arguments
 
-- string|Wire $for Predefined ProcessWire URLs property or module name
+- `$for` `string|Wire` Predefined ProcessWire URLs property or module name
 
 ## Return value
 

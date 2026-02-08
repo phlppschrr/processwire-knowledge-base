@@ -10,7 +10,7 @@ $items->add($item);
 
 ## Arguments
 
-- int|string|array|object|Wire|WireArray $item Item to add.
+- `$item` `int|string|array|object|Wire|WireArray` Item to add.
 
 ## Return value
 

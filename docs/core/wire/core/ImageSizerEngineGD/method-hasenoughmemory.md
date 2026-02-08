@@ -6,11 +6,11 @@ Additional functionality on top of existing checkMemoryForImage function for the
 
 ## Arguments
 
-- string $filename Filename to check. Default is whatever was set to this ImageSizer.
-- bool $double Need enough for both src and dst files loaded at same time? (default=true)
-- int|float $factor Tweak factor (multiply needed memory by this factor), i.e. 2 for rotate actions. (default=1)
-- string $action Name of action (if something other than "action")
-- bool $throwIfNot Throw WireException if not enough memory? (default=false)
+- `$filename` (optional) `string` Filename to check. Default is whatever was set to this ImageSizer.
+- `$double` (optional) `bool` Need enough for both src and dst files loaded at same time? (default=true)
+- `$factor` (optional) `int|float` Tweak factor (multiply needed memory by this factor), i.e. 2 for rotate actions. (default=1)
+- `$action` (optional) `string` Name of action (if something other than "action")
+- `$throwIfNot` (optional) `bool` Throw WireException if not enough memory? (default=false)
 
 ## Return value
 

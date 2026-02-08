@@ -10,12 +10,12 @@ or fieldsets. It returns the removed Inputfield when found, or null if not.
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 Inputfield|null Removed Inputfield object on success, or null if not found
 
-## Meta
+## Since
 
-- @since 3.0.250
+3.0.250

@@ -6,7 +6,7 @@ Does current user have edit access for page fields in given language?
 
 ## Arguments
 
-- Language|int|string $language Language id, name or object, or string "none" to refer to non-multi-language fields
+- `$language` `Language|int|string` Language id, name or object, or string "none" to refer to non-multi-language fields
 
 ## Return value
 

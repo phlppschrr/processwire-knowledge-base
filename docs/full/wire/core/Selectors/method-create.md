@@ -9,9 +9,9 @@ a selector string in the constructor or init() method.
 
 ## Arguments
 
-- string $field Field name or names (separated by a pipe)
-- string $operator Operator, i.e. "="
-- string|array $value Value or values (separated by a pipe)
+- `$field` `string` Field name or names (separated by a pipe)
+- `$operator` `string` Operator, i.e. "="
+- `$value` `string|array` Value or values (separated by a pipe)
 
 ## Return value
 

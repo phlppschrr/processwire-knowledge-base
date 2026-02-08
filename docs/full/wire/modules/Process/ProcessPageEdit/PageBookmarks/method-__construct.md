@@ -5,4 +5,4 @@ Source: `wire/modules/Process/ProcessPageEdit/PageBookmarks.php`
 
 ## Arguments
 
-- Process|ProcessPageEdit $process
+- `$process` `Process|ProcessPageEdit`

@@ -5,7 +5,7 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText
 
 ## Arguments
 
-- WireInputData $input
+- `$input` `WireInputData`
 
 ## Return value
 

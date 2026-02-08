@@ -6,4 +6,4 @@ Redirect to URL
 
 ## Arguments
 
-- string $url
+- `$url` `string`

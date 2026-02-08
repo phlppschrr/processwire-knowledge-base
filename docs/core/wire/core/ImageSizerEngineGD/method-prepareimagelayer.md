@@ -8,5 +8,5 @@ Intended for use by the resize() method
 
 ## Arguments
 
-- resource $im, destination resource needs to be prepared
-- resource $image, with GIF we need to read from source resource
+- `$im` `resource` , destination resource needs to be prepared
+- `$image` `resource` , with GIF we need to read from source resource

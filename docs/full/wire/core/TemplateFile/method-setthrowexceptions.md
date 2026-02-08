@@ -6,4 +6,4 @@ Call this with boolean false to disable exceptions when file doesn’t exist
 
 ## Arguments
 
-- bool $throwExceptions
+- `$throwExceptions` `bool`

@@ -6,7 +6,7 @@ Export Template data for external use
 
 ## Arguments
 
-- Template $template Template you want to export
+- `$template` `Template` Template you want to export
 
 ## Return value
 

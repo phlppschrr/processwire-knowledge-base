@@ -8,9 +8,9 @@ Same as children() but returns a Page object or NullPage (with id=0) rather than
 
 ## Arguments
 
-- Page $page
-- string|array $selector Selector to use, or blank to return the first child.
-- array $options
+- `$page` `Page`
+- `$selector` (optional) `string|array` Selector to use, or blank to return the first child.
+- `$options` (optional) `array`
 
 ## Return value
 

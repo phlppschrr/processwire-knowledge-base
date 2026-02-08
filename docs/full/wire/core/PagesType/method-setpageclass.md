@@ -6,4 +6,4 @@ Set the PHP class name to use for Page objects of this type
 
 ## Arguments
 
-- string $class
+- `$class` `string`

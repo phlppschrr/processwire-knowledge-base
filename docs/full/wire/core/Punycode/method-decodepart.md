@@ -6,7 +6,7 @@ Decode a part of domain name, such as tld
 
 ## Arguments
 
-- string $input Part of a domain name
+- `$input` `string` Part of a domain name
 
 ## Return value
 

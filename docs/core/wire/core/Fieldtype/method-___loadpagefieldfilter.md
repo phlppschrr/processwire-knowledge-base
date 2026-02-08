@@ -11,9 +11,9 @@ As far as core Fieldtypes go, this one is only applicable to FieldtypeMulti deri
 
 ## Arguments
 
-- Page $page Page object to save.
-- Field $field Field to retrieve from the page.
-- Selectors|string|array $selector
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
+- `$selector` `Selectors|string|array`
 
 ## Return value
 

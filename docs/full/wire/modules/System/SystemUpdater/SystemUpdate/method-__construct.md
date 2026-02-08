@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- SystemUpdater $updater
+- `$updater` `SystemUpdater`

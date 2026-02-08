@@ -8,9 +8,9 @@ Used only for index version >= 302
 
 ## Arguments
 
-- \Throwable $e
-- string $message
+- `$e` `\Throwable`
+- `$message` (optional) `string`
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

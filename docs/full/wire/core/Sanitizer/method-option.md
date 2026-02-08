@@ -6,8 +6,8 @@ Return $value if it exists in $allowedValues, or null if it doesn't
 
 ## Arguments
 
-- string|int $value
-- array $allowedValues Whitelist of option values that are allowed
+- `$value` `string|int`
+- `$allowedValues` (optional) `array` Whitelist of option values that are allowed
 
 ## Return value
 

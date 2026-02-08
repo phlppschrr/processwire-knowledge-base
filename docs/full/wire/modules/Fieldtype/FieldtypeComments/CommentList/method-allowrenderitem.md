@@ -6,7 +6,7 @@ Allow comment to be rendered in list?
 
 ## Arguments
 
-- Comment $comment
+- `$comment` `Comment`
 
 ## Return value
 

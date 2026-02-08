@@ -6,7 +6,7 @@ Get or set output formatting mode
 
 ## Arguments
 
-- bool|null $of Omit to retrieve mode, or specify bool to set it
+- `$of` (optional) `bool|null` Omit to retrieve mode, or specify bool to set it
 
 ## Return value
 

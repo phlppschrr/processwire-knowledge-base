@@ -20,7 +20,7 @@ $pagefiles = $page->files->tags('foobar');
 
 ## Arguments
 
-- bool|string|array $value Specify one of the following: - Omit to return all tags as a string. - Boolean true if you want to return tags as an array (rather than string). - Boolean false to return tags as an array, with lowercase enforced. - String if you want to return files matching tags (See `Pagefiles::findTag()` method for usage) - Array if you want to return files matching tags (See `Pagefiles::findTag()` method for usage)
+- `$value` (optional) `bool|string|array` Specify one of the following: - Omit to return all tags as a string. - Boolean true if you want to return tags as an array (rather than string). - Boolean false to return tags as an array, with lowercase enforced. - String if you want to return files matching tags (See `Pagefiles::findTag()` method for usage) - Array if you want to return files matching tags (See `Pagefiles::findTag()` method for usage)
 
 ## Return value
 

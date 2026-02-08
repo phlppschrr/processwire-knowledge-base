@@ -8,7 +8,7 @@ This method is also here to implement the Countable interface.
 
 ## Arguments
 
-- array $options See options for find() method
+- `$options` (optional) `array` See options for find() method
 
 ## Return value
 

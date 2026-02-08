@@ -15,7 +15,7 @@ Given tag may be any of the following:
 
 ## Arguments
 
-- string $tag
+- `$tag` `string`
 
 ## Return value
 

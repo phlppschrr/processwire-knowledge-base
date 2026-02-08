@@ -16,8 +16,8 @@ $pages->restore($trashedPage);
 
 ## Arguments
 
-- Page $page Page that is in the trash that you want to restore
-- bool $save Set to false if you only want to prep the page for restore (i.e. you will save the page yourself later). Primarily for internal use.
+- `$page` `Page` Page that is in the trash that you want to restore
+- `$save` (optional) `bool` Set to false if you only want to prep the page for restore (i.e. you will save the page yourself later). Primarily for internal use.
 
 ## Return value
 

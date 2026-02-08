@@ -18,7 +18,7 @@ to know when/if to add additional assets (i.e. when this method returns true).
 ## Arguments
 
 - Inputfield|null The parent InputfieldWrapper that is rendering it, or null if no parent.
-- bool $renderValueMode Specify true only if this is for `Inputfield::renderValue()` rather than `Inputfield::render()`.
+- `$renderValueMode` (optional) `bool` Specify true only if this is for `Inputfield::renderValue()` rather than `Inputfield::render()`.
 
 ## Return value
 

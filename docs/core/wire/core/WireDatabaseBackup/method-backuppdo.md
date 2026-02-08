@@ -6,8 +6,8 @@ Create a mysql dump file using PDO
 
 ## Arguments
 
-- string $file Path + filename to create
-- array $options
+- `$file` `string` Path + filename to create
+- `$options` (optional) `array`
 
 ## Return value
 

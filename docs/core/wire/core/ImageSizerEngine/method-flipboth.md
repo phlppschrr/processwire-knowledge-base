@@ -6,7 +6,7 @@ Flip both vertically and horizontally
 
 ## Arguments
 
-- string $dstFilename
+- `$dstFilename` (optional) `string`
 
 ## Return value
 

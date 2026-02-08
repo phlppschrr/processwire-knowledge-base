@@ -17,9 +17,9 @@ $wire->addHook('Page::removeStatusReady', function($e) {
 
 ## Arguments
 
-- string $name Name of the status flag to be removed, i.e. unpublished, hidden, trash, locked
-- int $value Value of the status flag to be removed, a `Page::status*` constant
+- `$name` `string` Name of the status flag to be removed, i.e. unpublished, hidden, trash, locked
+- `$value` `int` Value of the status flag to be removed, a `Page::status*` constant
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

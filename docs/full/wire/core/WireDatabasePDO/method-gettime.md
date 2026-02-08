@@ -6,12 +6,12 @@ Get current date/time ISO-8601 string or UNIX timestamp according to database
 
 ## Arguments
 
-- bool $getTimestamp Get unix timestamp rather than ISO-8601 string? (default=false)
+- `$getTimestamp` (optional) `bool` Get unix timestamp rather than ISO-8601 string? (default=false)
 
 ## Return value
 
 string|int
 
-## Meta
+## Since
 
-- @since 3.0.183
+3.0.183

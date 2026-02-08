@@ -8,8 +8,8 @@ Note the previous parent is accessible in the `$page->parentPrevious` property.
 
 ## Arguments
 
-- Page $page Page that is about to be moved.
+- `$page` `Page` Page that is about to be moved.
 
-## Meta
+## Since
 
-- @since 3.0.235
+3.0.235

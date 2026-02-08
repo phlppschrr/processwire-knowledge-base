@@ -6,7 +6,7 @@ Is the given HTML markup likely to have regions?
 
 ## Arguments
 
-- string $html
+- `$html` `string`
 
 ## Return value
 

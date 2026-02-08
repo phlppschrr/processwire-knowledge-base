@@ -6,5 +6,5 @@ Initialize the given API var
 
 ## Arguments
 
-- string $name
-- Fieldtypes|Fields|Fieldgroups|Templates|Pages|Session $value
+- `$name` `string`
+- `$value` `Fieldtypes|Fields|Fieldgroups|Templates|Pages|Session`

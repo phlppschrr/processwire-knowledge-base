@@ -6,7 +6,7 @@ Render markup value for PageListSelect/PageListSelectMultiple
 
 ## Arguments
 
-- int|int[] $value
+- `$value` `int|int[]`
 
 ## Return value
 

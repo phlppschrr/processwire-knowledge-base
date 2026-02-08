@@ -21,7 +21,7 @@ Array(
 
 ## Arguments
 
-- string|Module|int $className Optionally return only duplicates for given module name
+- `$className` (optional) `string|Module|int` Optionally return only duplicates for given module name
 
 ## Return value
 

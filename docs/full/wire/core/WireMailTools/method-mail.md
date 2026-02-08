@@ -30,10 +30,10 @@ $mail->mail('ryan@processwire.com', 'Subject', [
 
 ## Arguments
 
-- string|array $to Email address TO. For multiple, specify CSV string or array.
-- string $subject Email subject
-- string|array $message Email body (PHP mail style), OR specify $options array with any of the following: - `bodyHTML` (string): Email body (HTML) - `body` (string): Email body (text). If not specified, and bodyHTML is, then text body will be auto-generated. - `from` (string): From email address - `replyTo` (string): Reply-to email address - `headers` (array): Associative array of header name => header value
-- array $headers Optional additional headers as [name=value] array or "Name: Value" newline-separated string. Use this argument to duplicate PHP mail() style arguments. No need to use if you used $options array for the $message argument.
+- `$to` `string|array` Email address TO. For multiple, specify CSV string or array.
+- `$subject` `string` Email subject
+- `$message` `string|array` Email body (PHP mail style), OR specify $options array with any of the following: - `bodyHTML` (string): Email body (HTML) - `body` (string): Email body (text). If not specified, and bodyHTML is, then text body will be auto-generated. - `from` (string): From email address - `replyTo` (string): Reply-to email address - `headers` (array): Associative array of header name => header value
+- `$headers` (optional) `array` Optional additional headers as [name=value] array or "Name: Value" newline-separated string. Use this argument to duplicate PHP mail() style arguments. No need to use if you used $options array for the $message argument.
 
 ## Return value
 

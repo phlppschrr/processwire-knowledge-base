@@ -6,4 +6,4 @@ Set the Lister page that bookmarks will be for
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

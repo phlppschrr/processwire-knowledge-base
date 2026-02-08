@@ -8,13 +8,13 @@ See additional notes in `Sanitizer::htmlClass()` method.
 
 ## Arguments
 
-- string|array $value
-- bool $getArray Get array rather than string? (default=false)
+- `$value` `string|array`
+- `$getArray` (optional) `bool` Get array rather than string? (default=false)
 
 ## Return value
 
 string|array
 
-## Meta
+## Since
 
-- @since 3.0.212
+3.0.212

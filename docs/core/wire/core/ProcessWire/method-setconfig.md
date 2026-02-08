@@ -6,4 +6,4 @@ Populate ProcessWire's configuration with runtime and optional variables
 
 ## Arguments
 
-- Config $config
+- `$config` `Config`

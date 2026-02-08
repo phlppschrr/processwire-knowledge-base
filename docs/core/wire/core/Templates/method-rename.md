@@ -9,13 +9,13 @@ argument to this method.
 
 ## Arguments
 
-- Template $template
-- string $name New name to use
+- `$template` `Template`
+- `$name` `string` New name to use
 
 ## Throws
 
 - WireException if rename cannot be completed
 
-## Meta
+## Since
 
-- @since 3.0.170
+3.0.170

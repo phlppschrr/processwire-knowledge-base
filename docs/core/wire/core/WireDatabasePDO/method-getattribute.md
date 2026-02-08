@@ -6,12 +6,12 @@ Retrieve a database connection attribute
 
 ## Arguments
 
-- int $attribute
+- `$attribute` `int`
 
 ## Return value
 
 mixed
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.getattribute.php

@@ -6,7 +6,7 @@ Make a search result item that displays debugging info
 
 ## Arguments
 
-- array $liveSearch
+- `$liveSearch` `array`
 
 ## Return value
 

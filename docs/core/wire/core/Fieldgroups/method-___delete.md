@@ -8,7 +8,7 @@ Also deletes the references in fieldgroups_fields table
 
 ## Arguments
 
-- Saveable|Fieldgroup $item
+- `$item` `Saveable|Fieldgroup`
 
 ## Return value
 

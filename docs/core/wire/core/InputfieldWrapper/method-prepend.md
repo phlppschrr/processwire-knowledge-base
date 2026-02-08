@@ -6,7 +6,7 @@ Prepend an Inputfield to this instance’s children.
 
 ## Arguments
 
-- Inputfield $item Item to prepend
+- `$item` `Inputfield` Item to prepend
 
 ## Return value
 

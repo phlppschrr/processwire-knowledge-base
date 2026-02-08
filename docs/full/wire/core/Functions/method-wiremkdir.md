@@ -8,9 +8,9 @@ This is procedural version of the `$files->mkdir()` method.
 
 ## Arguments
 
-- string $path
-- bool $recursive If set to true, all directories will be created as needed to reach the end.
-- string $chmod Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755" If omitted, then ProcessWire’s $config->chmodDir setting is used instead.
+- `$path` `string`
+- `$recursive` (optional) `bool` If set to true, all directories will be created as needed to reach the end.
+- `$chmod` (optional) `string` Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755" If omitted, then ProcessWire’s $config->chmodDir setting is used instead.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Does a json translation file exist for the given textdomain?
 
 ## Arguments
 
-- string $textdomain
+- `$textdomain` `string`
 
 ## Return value
 

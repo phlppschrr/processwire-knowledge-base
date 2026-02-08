@@ -6,8 +6,8 @@ Initialize the selectors to add Page status checks
 
 ## Arguments
 
-- Selectors $selectors
-- array $options
+- `$selectors` `Selectors`
+- `$options` `array`
 
 ## Return value
 

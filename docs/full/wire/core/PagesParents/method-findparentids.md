@@ -23,12 +23,12 @@ $pages->parents()->findParents([
 
 ## Arguments
 
-- null|Page|int $fromParent Specify parent to limit results within, or negative int for minimum parent_id, for instance a value of -2 would exclude homepage and items with homepage (id=1) as their parent.
+- `$fromParent` (optional) `null|Page|int` Specify parent to limit results within, or negative int for minimum parent_id, for instance a value of -2 would exclude homepage and items with homepage (id=1) as their parent.
 
 ## Return value
 
 array Returns array in format [ id => parent_id ]
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

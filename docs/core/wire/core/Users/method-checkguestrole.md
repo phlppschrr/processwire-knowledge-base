@@ -6,8 +6,8 @@ Check that given user has guest role and add it if not
 
 ## Arguments
 
-- User $user
+- `$user` `User`
 
-## Meta
+## Since
 
-- @since 3.0.198
+3.0.198

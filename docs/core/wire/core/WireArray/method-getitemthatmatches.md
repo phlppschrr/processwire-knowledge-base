@@ -8,8 +8,8 @@ Used internally by get() and has() methods.
 
 ## Arguments
 
-- string $key Property to match.
-- string|int|object $value $value to match.
+- `$key` `string` Property to match.
+- `$value` `string|int|object` $value to match.
 
 ## Return value
 

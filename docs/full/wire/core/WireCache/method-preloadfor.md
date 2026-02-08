@@ -6,9 +6,7 @@ Preload all caches for the given object or namespace
 
 ## Arguments
 
-- object|string $ns
-- int|string|null $expire
+- `$ns` `object|string`
+- `$expire` (optional) `int|string|null`
 
-## Meta
-
-- @deprecated
+## Deprecated

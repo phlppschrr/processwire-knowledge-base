@@ -6,4 +6,4 @@ Add note to result
 
 ## Arguments
 
-- string $message
+- `$message` `string`

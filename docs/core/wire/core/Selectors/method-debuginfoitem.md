@@ -6,7 +6,7 @@ Debug info for Selector item
 
 ## Arguments
 
-- Selector|mixed $item
+- `$item` `Selector|mixed`
 
 ## Return value
 

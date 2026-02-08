@@ -6,7 +6,7 @@ Get a random value from given array
 
 ## Arguments
 
-- array $a Array to get random value from
+- `$a` `array` Array to get random value from
 
 ## Return value
 

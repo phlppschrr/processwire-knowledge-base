@@ -19,7 +19,7 @@ echo "You accessed this page at: $url";
 
 ## Arguments
 
-- array|bool $options Specify `withQueryString` (bool) option, or in 3.0.167+ you can also use an options array: - `withQueryString` (bool): Include the query string as well? (if present, default=false) - `page` (Page): Page object to use, if different from $page (default=$page) - `pageNum` (int): Override current pagination number with this one, 1 to exclude pageNum, 0 for no override (default=0). 3.0.169+
+- `$options` (optional) `array|bool` Specify `withQueryString` (bool) option, or in 3.0.167+ you can also use an options array: - `withQueryString` (bool): Include the query string as well? (if present, default=false) - `page` (Page): Page object to use, if different from $page (default=$page) - `pageNum` (int): Override current pagination number with this one, 1 to exclude pageNum, 0 for no override (default=0). 3.0.169+
 
 ## Return value
 

@@ -6,5 +6,5 @@ Save the width and height of the image
 
 ## Arguments
 
-- int $width
-- int $height
+- `$width` `int`
+- `$height` `int`

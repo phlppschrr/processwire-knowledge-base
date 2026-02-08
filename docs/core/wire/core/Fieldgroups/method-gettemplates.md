@@ -6,7 +6,7 @@ Given a Fieldgroup, return a TemplatesArray of all templates using the Fieldgrou
 
 ## Arguments
 
-- Fieldgroup $fieldgroup
+- `$fieldgroup` `Fieldgroup`
 
 ## Return value
 

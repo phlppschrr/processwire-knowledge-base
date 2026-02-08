@@ -26,10 +26,10 @@ $copy->save();
 
 ## Arguments
 
-- Page $page Page that you want to clone
-- Page|null $parent New parent, if different (default=null, which implies same parent)
-- bool $recursive Clone the children too? (default=true)
-- array|string $options Options that can be passed to modify default behavior of clone or save: - `forceID` (int): force a specific ID. - `set` (array): Array of properties to set to the clone (you can also do this later). - `recursionLevel` (int): recursion level, for internal use only.
+- `$page` `Page` Page that you want to clone
+- `$parent` (optional) `Page|null` New parent, if different (default=null, which implies same parent)
+- `$recursive` (optional) `bool` Clone the children too? (default=true)
+- `$options` (optional) `array|string` Options that can be passed to modify default behavior of clone or save: - `forceID` (int): force a specific ID. - `set` (array): Array of properties to set to the clone (you can also do this later). - `recursionLevel` (int): recursion level, for internal use only.
 
 ## Return value
 

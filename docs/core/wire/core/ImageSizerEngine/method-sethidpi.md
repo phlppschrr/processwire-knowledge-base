@@ -8,7 +8,7 @@ Just a shortcut for calling $this->scale()
 
 ## Arguments
 
-- bool $hidpi True or false (default=true)
+- `$hidpi` (optional) `bool` True or false (default=true)
 
 ## Return value
 

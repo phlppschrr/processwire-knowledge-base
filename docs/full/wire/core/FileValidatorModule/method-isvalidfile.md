@@ -16,7 +16,7 @@ If method wants to explain why the file is not valid, it should call $this->erro
 
 ## Arguments
 
-- string $filename Full path and filename to the file
+- `$filename` `string` Full path and filename to the file
 
 ## Return value
 

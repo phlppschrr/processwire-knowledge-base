@@ -14,12 +14,12 @@ if($config->version('3.0.100')) {
 
 ## Arguments
 
-- string $minVersion Specify version string if you want to compare against current version
+- `$minVersion` (optional) `string` Specify version string if you want to compare against current version
 
 ## Return value
 
 bool|string Returns current version if no argument given (3.0.130+), OR boolean if given a version argument: - If given version is older than current, returns false. - If given version is equal to or newer than current, returns true.
 
-## Meta
+## Since
 
-- @since 3.0.106 with no-argument behavior added in 3.0.130
+3.0.106 with no-argument behavior added in 3.0.130

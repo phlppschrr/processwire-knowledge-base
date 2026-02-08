@@ -6,12 +6,12 @@ Does given log name exist?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.176
+3.0.176

@@ -6,9 +6,9 @@ Set label
 
 ## Arguments
 
-- string $label Label name
-- string $value Label value
+- `$label` `string` Label name
+- `$value` `string` Label value
 
-## Meta
+## Deprecated
 
-- @deprecated Use labels() method instead
+Use labels() method instead

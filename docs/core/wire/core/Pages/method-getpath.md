@@ -19,8 +19,8 @@ echo "Path for page 1234 is: $path";
 
 ## Arguments
 
-- int|Page $id ID of the page you want the path to
-- null|array|Language|int|string $options Specify $options array or Language object, id or name. Allowed options include: - `language` (int|string|anguage): To retrieve in non-default language, specify language object, ID or name (default=null) - `useCache` (bool): Allow pulling paths from already loaded pages? (default=true) - `usePagePaths` (bool): Allow pulling paths from PagePaths module, if installed? (default=true)
+- `$id` `int|Page` ID of the page you want the path to
+- `$options` (optional) `null|array|Language|int|string` Specify $options array or Language object, id or name. Allowed options include: - `language` (int|string|anguage): To retrieve in non-default language, specify language object, ID or name (default=null) - `useCache` (bool): Allow pulling paths from already loaded pages? (default=true) - `usePagePaths` (bool): Allow pulling paths from PagePaths module, if installed? (default=true)
 
 ## Return value
 
@@ -30,6 +30,6 @@ string Path to page or blank on error/not-found.
 
 - [Page::path()](../Page/method-path.md)
 
-## Meta
+## Since
 
-- @since 3.0.6
+3.0.6

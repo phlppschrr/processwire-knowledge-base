@@ -6,9 +6,9 @@ Send using fopen
 
 ## Arguments
 
-- string $url
-- string $method
-- array $options Options specific to fopen should be specified in [ 'fopen' => [ ... ] ]
+- `$url` `string`
+- `$method` (optional) `string`
+- `$options` (optional) `array` Options specific to fopen should be specified in [ 'fopen' => [ ... ] ]
 
 ## Return value
 

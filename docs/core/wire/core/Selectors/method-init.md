@@ -11,4 +11,4 @@ $selectors->init("sale_price|retail_price>100, currency=USD|EUR");
 
 ## Arguments
 
-- string|array $selector
+- `$selector` `string|array`

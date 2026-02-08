@@ -6,7 +6,7 @@ Set an array of data, or string of raw data to send with next GET/POST/etc. requ
 
 ## Arguments
 
-- array|string $data Associative array of data or string of raw data
+- `$data` `array|string` Associative array of data or string of raw data
 
 ## Return value
 

@@ -28,13 +28,13 @@ foreach($config->styles->urls() as $url) {
 
 ## Arguments
 
-- array|FilenameArray|WireArray|\ArrayObject $urls Array of URLs to file assets such as JS/CSS files.
-- bool|null|string $useVersion What to use for the version string (`null` is default): - `true` (bool): Get version from filemtime. - `false` (bool): Never get file version, just use $config->version. - `null` (null): Auto-detect: use file version in debug mode or dev branch only, $config->version otherwise. - `foobar` (string): Specify any string to be the version to use on all URLs needing it. `- ?foo=bar` (string): Optionally specify your own query string variable=value. - The default value (null) can be overridden by the `$config->useVersionUrls` setting.
+- `$urls` `array|FilenameArray|WireArray|\ArrayObject` Array of URLs to file assets such as JS/CSS files.
+- `$useVersion` (optional) `bool|null|string` What to use for the version string (`null` is default): - `true` (bool): Get version from filemtime. - `false` (bool): Never get file version, just use $config->version. - `null` (null): Auto-detect: use file version in debug mode or dev branch only, $config->version otherwise. - `foobar` (string): Specify any string to be the version to use on all URLs needing it. `- ?foo=bar` (string): Optionally specify your own query string variable=value. - The default value (null) can be overridden by the `$config->useVersionUrls` setting.
 
 ## Return value
 
 array Array of URLs updated with version strings where needed
 
-## Meta
+## Since
 
-- @since 3.0.227
+3.0.227

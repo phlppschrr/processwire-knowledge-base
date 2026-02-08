@@ -22,13 +22,13 @@ $str = str_replace(array_keys($a), array_values($a), $str);
 ## Arguments
 
 - string &$str String to find escape chars in, it will be modified directly (passed by reference)
-- array $escapeChars Array of chars you want to escape i.e. [ '*', '[', ']', '(', ')', '`', '_', '\\', '"' ]
-- array $options Options to modify behavior: - `escapePrefix` (string): Character used to escape another character (default is backslash). - `restoreEscape` (bool): Should returned array also include the escape prefix, so escapes are restored? (default=false) - `gluePrefix` (string): Prefix for placeholders we substitute for escaped characters (default='{ESC') - `glueSuffix` (string): Suffix for placeholders we substitute for escaped characters (default='}') - `unescapeUnknown` (bool): If we come across escaped char not in your $escapeChars list, unescape it? (default=false) - `removeUnknown` (bool): If we come across escaped char not in your $escapeChars list, remove the escape and char? (default=false)
+- `$escapeChars` `array` Array of chars you want to escape i.e. [ '*', '[', ']', '(', ')', '`', '_', '\\', '"' ]
+- `$options` (optional) `array` Options to modify behavior: - `escapePrefix` (string): Character used to escape another character (default is backslash). - `restoreEscape` (bool): Should returned array also include the escape prefix, so escapes are restored? (default=false) - `gluePrefix` (string): Prefix for placeholders we substitute for escaped characters (default='{ESC') - `glueSuffix` (string): Suffix for placeholders we substitute for escaped characters (default='}') - `unescapeUnknown` (bool): If we come across escaped char not in your $escapeChars list, unescape it? (default=false) - `removeUnknown` (bool): If we come across escaped char not in your $escapeChars list, remove the escape and char? (default=false)
 
 ## Return value
 
 array Returns assoc array where keys are placeholders substituted in $str and values are escaped characters.
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

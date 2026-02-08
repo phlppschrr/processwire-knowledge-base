@@ -8,11 +8,11 @@ TODO not all operators will work here, so may want to add some translation or fi
 
 ## Arguments
 
-- DatabaseQuerySelect $query
-- Selector $selector
-- array $fields
-- array $options
-- Selectors $selectors
+- `$query` `DatabaseQuerySelect`
+- `$selector` `Selector`
+- `$fields` `array`
+- `$options` `array`
+- `$selectors` `Selectors`
 
 ## Throws
 

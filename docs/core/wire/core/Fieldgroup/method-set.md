@@ -6,8 +6,8 @@ Set a fieldgroup property
 
 ## Arguments
 
-- string $key Name of property to set
-- string|int|object $value Value of property
+- `$key` `string` Name of property to set
+- `$value` `string|int|object` Value of property
 
 ## Return value
 

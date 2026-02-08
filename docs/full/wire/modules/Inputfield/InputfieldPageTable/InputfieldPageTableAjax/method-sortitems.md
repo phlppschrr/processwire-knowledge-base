@@ -6,6 +6,6 @@ Update items to make sure they are in same order specified in GET var Inputfield
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string $sort CSV string
+- `$page` `Page`
+- `$field` `Field`
+- `$sort` `string` CSV string

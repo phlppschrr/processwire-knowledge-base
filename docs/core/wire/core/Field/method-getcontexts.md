@@ -8,6 +8,6 @@ Get all contexts this field is used in
 
 array Array of 'fieldgroup-name' => [ contexts ]
 
-## Meta
+## Since
 
-- @since 3.0.182
+3.0.182

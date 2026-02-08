@@ -6,8 +6,8 @@ Find descendents of $page by going recursive rather than using pages_parents tab
 
 ## Arguments
 
-- Page $page
-- string $selector
+- `$page` `Page`
+- `$selector` (optional) `string`
 
 ## Return value
 

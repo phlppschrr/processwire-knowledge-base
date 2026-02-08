@@ -8,4 +8,4 @@ Note the previous parent is accessible in the `$page->parentPrevious` property.
 
 ## Arguments
 
-- Page $page Page that was moved.
+- `$page` `Page` Page that was moved.

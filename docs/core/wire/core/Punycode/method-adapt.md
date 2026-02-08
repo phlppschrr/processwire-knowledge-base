@@ -6,9 +6,9 @@ Bias adaptation
 
 ## Arguments
 
-- integer $delta
-- integer $numPoints
-- boolean $firstTime
+- `$delta` `integer`
+- `$numPoints` `integer`
+- `$firstTime` `boolean`
 
 ## Return value
 

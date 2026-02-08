@@ -10,6 +10,6 @@ This method does not delete caches that are expired by saving of resources or ma
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.130
+3.0.130

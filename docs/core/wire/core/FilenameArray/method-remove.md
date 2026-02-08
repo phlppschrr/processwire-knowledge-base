@@ -6,7 +6,7 @@ Remove filename
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

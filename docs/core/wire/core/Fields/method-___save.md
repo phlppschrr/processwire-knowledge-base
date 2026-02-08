@@ -13,7 +13,7 @@ $fields->save($field);
 
 ## Arguments
 
-- Field $item The field to save
+- `$item` `Field` The field to save
 
 ## Return value
 

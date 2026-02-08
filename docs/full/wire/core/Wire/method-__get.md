@@ -10,7 +10,7 @@ Descending classes may have their own __get() but must pass control to this one 
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

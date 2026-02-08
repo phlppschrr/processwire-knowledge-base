@@ -6,7 +6,7 @@ Sanitize a table name for _a-zA-Z0-9
 
 ## Arguments
 
-- string $table
+- `$table` `string`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Is the given bookmark viewable?
 
 ## Arguments
 
-- array $bookmark
+- `$bookmark` `array`
 
 ## Return value
 

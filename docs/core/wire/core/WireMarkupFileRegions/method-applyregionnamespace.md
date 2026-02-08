@@ -6,4 +6,4 @@ Apply namespace to region content
 
 ## Arguments
 
-- array $region
+- `$region` `array`

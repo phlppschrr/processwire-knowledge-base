@@ -6,8 +6,8 @@ Set an item by key in the WireArray.
 
 ## Arguments
 
-- int|string $key Key of item to set.
-- int|string|array|object|Wire $value Item value to set.
+- `$key` `int|string` Key of item to set.
+- `$value` `int|string|array|object|Wire` Item value to set.
 
 ## Return value
 

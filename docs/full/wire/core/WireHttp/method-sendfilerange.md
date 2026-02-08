@@ -6,8 +6,8 @@ Handle an HTTP_RANGE request for sending of partial file (called by sendFile met
 
 ## Arguments
 
-- string $filename
-- string $rangeStr Range string (i.e. `bytes=0-1234`) or omit to pull from `$_SERVER['HTTP_RANGE']`
+- `$filename` `string`
+- `$rangeStr` (optional) `string` Range string (i.e. `bytes=0-1234`) or omit to pull from `$_SERVER['HTTP_RANGE']`
 
 ## Return value
 

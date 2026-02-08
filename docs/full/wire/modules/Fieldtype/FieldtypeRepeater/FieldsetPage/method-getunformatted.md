@@ -6,7 +6,7 @@ Get the unformatted value of a field, regardless of current output formatting st
 
 ## Arguments
 
-- string $key Field or property name to retrieve
+- `$key` `string` Field or property name to retrieve
 
 ## Return value
 

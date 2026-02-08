@@ -6,7 +6,7 @@ Run regexes on file contents to locate all translation functions
 
 ## Arguments
 
-- string $file
+- `$file` `string`
 
 ## Return value
 

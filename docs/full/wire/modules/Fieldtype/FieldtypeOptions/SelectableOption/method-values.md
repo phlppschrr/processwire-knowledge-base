@@ -6,7 +6,7 @@ Return all values stored in this SelectableOption
 
 ## Arguments
 
-- bool $returnHash Makes it return a string hash of all values
+- `$returnHash` (optional) `bool` Makes it return a string hash of all values
 
 ## Return value
 

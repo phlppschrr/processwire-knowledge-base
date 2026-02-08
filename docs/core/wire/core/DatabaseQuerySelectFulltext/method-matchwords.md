@@ -6,8 +6,8 @@ Match contains words (full, any or partial)
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

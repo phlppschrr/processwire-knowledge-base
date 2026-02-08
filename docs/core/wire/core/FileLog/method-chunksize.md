@@ -6,12 +6,12 @@ Get or set the default chunk size used when reading from logs and not overridden
 
 ## Arguments
 
-- int $chunkSize Specify chunk size to set, or omit to get
+- `$chunkSize` (optional) `int` Specify chunk size to set, or omit to get
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.143
+3.0.143

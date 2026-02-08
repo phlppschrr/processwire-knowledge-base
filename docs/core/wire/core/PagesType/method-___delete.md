@@ -15,8 +15,8 @@ instead, as hooking this method will not hook relevant pages deleted directly th
 
 ## Arguments
 
-- Page $page
-- bool $recursive If set to true, then this will attempt to delete all children too.
+- `$page` `Page`
+- `$recursive` (optional) `bool` If set to true, then this will attempt to delete all children too.
 
 ## Return value
 

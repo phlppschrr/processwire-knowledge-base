@@ -8,8 +8,8 @@ i.e. /site/modules/[ModuleDir]/
 
 ## Arguments
 
-- array $files Files found in the module's ZIP file
-- string $modulePath Path where module will live
+- `$files` `array` Files found in the module's ZIP file
+- `$modulePath` (optional) `string` Path where module will live
 
 ## Return value
 

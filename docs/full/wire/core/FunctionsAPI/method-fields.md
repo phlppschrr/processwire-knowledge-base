@@ -14,7 +14,7 @@ $field = fields('title'); // shortcut syntax
 
 ## Arguments
 
-- string $name Optional field name to retrieve
+- `$name` (optional) `string` Optional field name to retrieve
 
 ## Return value
 

@@ -10,7 +10,7 @@ override this to the ___load() method instead.
 
 ## Arguments
 
-- Selectors|string $selectors
+- `$selectors` `Selectors|string`
 
 ## Return value
 

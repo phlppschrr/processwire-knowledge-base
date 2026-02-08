@@ -6,7 +6,7 @@ Add by option ID
 
 ## Arguments
 
-- int $id
+- `$id` `int`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Direct access get method
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

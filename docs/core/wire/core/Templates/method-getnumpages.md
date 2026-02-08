@@ -6,7 +6,7 @@ Return the number of pages using the provided Template
 
 ## Arguments
 
-- Template $tpl Template you want to get count for
+- `$tpl` `Template` Template you want to get count for
 
 ## Return value
 

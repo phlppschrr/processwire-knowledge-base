@@ -8,6 +8,6 @@ Return redirect URL required by an applicable path hook, or blank otherwise
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

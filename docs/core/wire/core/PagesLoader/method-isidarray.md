@@ -6,7 +6,7 @@ Is this an array of IDs? Also sanitizes to all integers when true
 
 ## Arguments
 
-- array $a
+- `$a` `array`
 
 ## Return value
 

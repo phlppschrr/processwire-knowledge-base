@@ -19,7 +19,7 @@ $ps = permissions('name^=page'); // shortcut syntax
 
 ## Arguments
 
-- string|int $selector - Specify permission name or ID to retrieve that Permission (Permission) - Specify a selector string to return all permissions matching selector (PageArray)
+- `$selector` (optional) `string|int` - Specify permission name or ID to retrieve that Permission (Permission) - Specify a selector string to return all permissions matching selector (PageArray)
 
 ## Return value
 

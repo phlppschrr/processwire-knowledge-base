@@ -6,4 +6,4 @@ Set page that value is for
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

@@ -6,7 +6,7 @@ Return export data for all given $exportTemplates
 
 ## Arguments
 
-- array $exportTemplates template names
+- `$exportTemplates` `array` template names
 
 ## Return value
 

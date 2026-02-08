@@ -6,6 +6,6 @@ Set a field label, description or notes for language
 
 ## Arguments
 
-- string $property Specify either label, description or notes
-- string $value Text to set for property
-- Page|Language $language Optionally specify a language. If not specified default language is used.
+- `$property` `string` Specify either label, description or notes
+- `$value` `string` Text to set for property
+- `$language` (optional) `Page|Language` Optionally specify a language. If not specified default language is used.

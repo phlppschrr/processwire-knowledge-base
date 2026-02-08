@@ -6,8 +6,8 @@ Set either the createdUser or the modifiedUser
 
 ## Arguments
 
-- User|int|string $user User object or integer/string representation of User
-- string $userType Must be either 'created' or 'modified'
+- `$user` `User|int|string` User object or integer/string representation of User
+- `$userType` `string` Must be either 'created' or 'modified'
 
 ## Return value
 

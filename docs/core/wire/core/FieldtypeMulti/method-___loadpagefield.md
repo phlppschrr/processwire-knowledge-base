@@ -18,8 +18,8 @@ If pagination is active, the following extra properties are populated to the ret
 
 ## Arguments
 
-- Page $page Page object to save.
-- Field $field Field to retrieve from the page.
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
 
 ## Return value
 

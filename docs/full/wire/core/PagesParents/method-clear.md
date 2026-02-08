@@ -6,12 +6,12 @@ Clear page from pages_parents index
 
 ## Arguments
 
-- Page|int $page
+- `$page` `Page|int`
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

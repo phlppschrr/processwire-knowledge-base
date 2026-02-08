@@ -11,8 +11,8 @@ Merge attributes from one HTML tag to another
 
 ## Arguments
 
-- string $htmlTag HTML tag string, optionally containing attributes
-- array|string $mergeTag HTML tag to merge (or attributes array)
+- `$htmlTag` `string` HTML tag string, optionally containing attributes
+- `$mergeTag` `array|string` HTML tag to merge (or attributes array)
 
 ## Return value
 

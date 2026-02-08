@@ -6,12 +6,12 @@ Remove option by ID
 
 ## Arguments
 
-- int $id
+- `$id` `int`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

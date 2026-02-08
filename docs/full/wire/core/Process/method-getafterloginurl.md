@@ -13,12 +13,12 @@ method can return false.
 
 ## Arguments
 
-- Page $page Requested page
+- `$page` `Page` Requested page
 
 ## Return value
 
 bool|string
 
-## Meta
+## Details
 
 - @sine 3.0.167

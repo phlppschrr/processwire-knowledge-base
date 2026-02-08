@@ -6,8 +6,8 @@ Replace one page with another (work in progress)
 
 ## Arguments
 
-- Page $oldPage
-- Page $newPage
+- `$oldPage` `Page`
+- `$newPage` `Page`
 
 ## Return value
 
@@ -17,6 +17,6 @@ Page
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.189 But not yet available in public API
+3.0.189 But not yet available in public API

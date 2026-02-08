@@ -6,8 +6,8 @@ Restore files from version into live $page
 
 ## Arguments
 
-- Page $page
-- int $version
+- `$page` `Page`
+- `$version` `int`
 
 ## Return value
 

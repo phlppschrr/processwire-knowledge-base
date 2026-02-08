@@ -6,5 +6,5 @@ Construct the Language Parser
 
 ## Arguments
 
-- LanguageTranslator $translator
-- string $file PHP filename to parse
+- `$translator` `LanguageTranslator`
+- `$file` `string` PHP filename to parse

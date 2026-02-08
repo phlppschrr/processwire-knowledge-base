@@ -11,4 +11,4 @@ noticeMessage, noticeLink, noticeSuccessClass, noticeErrorClass
 
 ## Arguments
 
-- array $markup
+- `$markup` `array`

@@ -8,6 +8,6 @@ This calls the module's ___upgrade($fromVersion, $toVersion) method.
 
 ## Arguments
 
-- Module|_Module $module
-- int|string $fromVersion
-- int|string $toVersion
+- `$module` `Module|_Module`
+- `$fromVersion` `int|string`
+- `$toVersion` `int|string`

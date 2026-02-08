@@ -8,7 +8,7 @@ This is the same as `$role->permissions->add($permission)` except this one will 
 
 ## Arguments
 
-- string|int|Permission $permission Permission object, name or id.
+- `$permission` `string|int|Permission` Permission object, name or id.
 
 ## Return value
 

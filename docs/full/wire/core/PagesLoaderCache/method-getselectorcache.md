@@ -8,9 +8,9 @@ You may specify a third param as TRUE, which will cause this to just return the 
 
 ## Arguments
 
-- string $selector
-- array $options
-- bool $returnSelector default false
+- `$selector` `string`
+- `$options` `array`
+- `$returnSelector` (optional) `bool` default false
 
 ## Return value
 

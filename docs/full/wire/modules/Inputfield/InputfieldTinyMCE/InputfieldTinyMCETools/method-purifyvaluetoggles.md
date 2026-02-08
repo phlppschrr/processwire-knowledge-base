@@ -6,7 +6,7 @@ Apply markup cleaning toggles
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

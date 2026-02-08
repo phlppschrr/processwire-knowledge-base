@@ -6,7 +6,7 @@ Add a new Role with the given name and return it
 
 ## Arguments
 
-- string $name Name of role you want to add, i.e. "hello-world"
+- `$name` `string` Name of role you want to add, i.e. "hello-world"
 
 ## Return value
 

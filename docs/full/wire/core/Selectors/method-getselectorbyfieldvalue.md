@@ -14,15 +14,15 @@ to always be an array of Selector objects, or a blank array if no match.
 
 ## Arguments
 
-- string $fieldName Name of field to match
-- string|int $value Value that must match
-- bool $or Allow fields and values that appear in OR expressions? (default=false)
-- bool $all Return an array of all matching Selector objects? (default=false)
+- `$fieldName` `string` Name of field to match
+- `$value` `string|int` Value that must match
+- `$or` (optional) `bool` Allow fields and values that appear in OR expressions? (default=false)
+- `$all` (optional) `bool` Return an array of all matching Selector objects? (default=false)
 
 ## Return value
 
 Selector|array|null Returns null if field not present in selectors (or blank array if $all mode)
 
-## Meta
+## Since
 
-- @since 3.0.142
+3.0.142

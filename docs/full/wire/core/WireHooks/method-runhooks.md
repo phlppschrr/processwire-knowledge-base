@@ -9,10 +9,10 @@ Instead it returns a result array containing information about the call.
 
 ## Arguments
 
-- Wire $object
-- string $method Method or property to run hooks for.
-- array $arguments Arguments passed to the method and hook.
-- string|array $type May be any one of the following: - method: for hooked methods (default) - property: for hooked properties - before: only run before hooks and do nothing else - after: only run after hooks and do nothing else - Or array[] of hooks (from getHooks method) to run (does not call hooked method)
+- `$object` `Wire`
+- `$method` `string` Method or property to run hooks for.
+- `$arguments` `array` Arguments passed to the method and hook.
+- `$type` (optional) `string|array` May be any one of the following: - method: for hooked methods (default) - property: for hooked properties - before: only run before hooks and do nothing else - after: only run after hooks and do nothing else - Or array[] of hooks (from getHooks method) to run (does not call hooked method)
 
 ## Return value
 

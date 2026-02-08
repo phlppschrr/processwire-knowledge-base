@@ -6,9 +6,9 @@ Save version of given page field
 
 ## Arguments
 
-- Page $page
-- Field $field
-- int $version
+- `$page` `Page`
+- `$field` `Field`
+- `$version` `int`
 
 ## Return value
 

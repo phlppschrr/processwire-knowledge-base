@@ -6,9 +6,9 @@ Builds the PageFinder options for the _next() method
 
 ## Arguments
 
-- Page $page
-- string|array|Selectors $selector
-- array $options
+- `$page` `Page`
+- `$selector` `string|array|Selectors`
+- `$options` `array`
 
 ## Return value
 

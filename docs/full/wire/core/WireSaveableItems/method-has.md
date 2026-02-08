@@ -6,7 +6,7 @@ Do we have the given item or item by given key?
 
 ## Arguments
 
-- string|int|Saveable|WireData $item
+- `$item` `string|int|Saveable|WireData`
 
 ## Return value
 

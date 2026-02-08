@@ -6,4 +6,4 @@ Set an override table name, or omit (or null) to restore default table name
 
 ## Arguments
 
-- null|string $table
+- `$table` (optional) `null|string`

@@ -8,7 +8,7 @@ $version will be 0 and $operator blank if there are no requirements.
 
 ## Arguments
 
-- string $require Module class name with operator and version string
+- `$require` `string` Module class name with operator and version string
 
 ## Return value
 

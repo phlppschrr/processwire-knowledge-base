@@ -6,7 +6,7 @@ Get last HTTP code
 
 ## Arguments
 
-- bool $withText Specify true to include the HTTP code text label with the code
+- `$withText` (optional) `bool` Specify true to include the HTTP code text label with the code
 
 ## Return value
 

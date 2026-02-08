@@ -8,9 +8,9 @@ Note: this is called only on deletions that had 'recursive' option true and 1+ c
 
 ## Arguments
 
-- Page $page Page that was deleted
-- array $options Options passed to delete method
+- `$page` `Page` Page that was deleted
+- `$options` `array` Options passed to delete method
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

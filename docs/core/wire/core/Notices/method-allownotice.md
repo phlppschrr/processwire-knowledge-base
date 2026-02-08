@@ -6,7 +6,7 @@ Allow given Notice to be added?
 
 ## Arguments
 
-- Notice $item
+- `$item` `Notice`
 
 ## Return value
 

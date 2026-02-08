@@ -6,7 +6,7 @@ Get the Pagefile object containing the given filename.
 
 ## Arguments
 
-- string $name Name of file to get: - If given a URL or path, this will traverse to other pages. - If given a basename, it will stay with current page.
+- `$name` `string` Name of file to get: - If given a URL or path, this will traverse to other pages. - If given a basename, it will stay with current page.
 
 ## Return value
 

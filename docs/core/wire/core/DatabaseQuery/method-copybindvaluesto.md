@@ -9,13 +9,13 @@ thing as passing a DatabaseQuery or PDOStatement to the getBindValues() method.
 
 ## Arguments
 
-- DatabaseQuery|\PDOStatement $query
-- array $options Additional options - `inSQL` (string): Only copy bind values that are referenced in given SQL string
+- `$query` `DatabaseQuery|\PDOStatement`
+- `$options` (optional) `array` Additional options - `inSQL` (string): Only copy bind values that are referenced in given SQL string
 
 ## Return value
 
 int Number of bind values that were copied
 
-## Meta
+## Since
 
-- @since 3.0.157
+3.0.157

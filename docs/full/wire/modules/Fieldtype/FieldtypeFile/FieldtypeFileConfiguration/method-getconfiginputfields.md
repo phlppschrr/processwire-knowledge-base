@@ -6,8 +6,8 @@ Fieldtype file field configuration
 
 ## Arguments
 
-- Field $field
-- InputfieldWrapper $inputfields
+- `$field` `Field`
+- `$inputfields` `InputfieldWrapper`
 
 ## Return value
 

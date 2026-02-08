@@ -6,8 +6,8 @@ Send an individual request header to send with GET/POST/etc. request
 
 ## Arguments
 
-- string $key Header name
-- string $value Header value to set (or specify null to remove header, since 3.0.131)
+- `$key` `string` Header name
+- `$value` `string` Header value to set (or specify null to remove header, since 3.0.131)
 
 ## Return value
 

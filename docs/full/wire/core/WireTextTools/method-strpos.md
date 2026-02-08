@@ -6,9 +6,9 @@ Find position of first occurrence of string in a string
 
 ## Arguments
 
-- string $haystack
-- string $needle
-- int $offset
+- `$haystack` `string`
+- `$needle` `string`
+- `$offset` (optional) `int`
 
 ## Return value
 

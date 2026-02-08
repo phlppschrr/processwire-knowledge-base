@@ -6,10 +6,10 @@ Render quicklinks for templates/fields. Designed to be called by renderSideNav()
 
 ## Arguments
 
-- Page $page
-- array $items
-- string $title
-- string $json
+- `$page` `Page`
+- `$items` `array`
+- `$title` `string`
+- `$json` (optional) `string`
 
 ## Return value
 

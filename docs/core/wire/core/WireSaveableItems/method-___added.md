@@ -6,4 +6,4 @@ Hook that runs right after a new item has been added.
 
 ## Arguments
 
-- Saveable $item
+- `$item` `Saveable`

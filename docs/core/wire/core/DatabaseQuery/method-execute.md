@@ -6,7 +6,7 @@ Execute the query with the current database handle
 
 ## Arguments
 
-- array $options - `throw` (bool): Throw exceptions? (default=true) - `maxTries` (int): Max times to retry if connection lost during query. (default=3) - `returnQuery` (bool): Return PDOStatement query? If false, returns bool result of execute. (default=true)
+- `$options` (optional) `array` - `throw` (bool): Throw exceptions? (default=true) - `maxTries` (int): Max times to retry if connection lost during query. (default=3) - `returnQuery` (bool): Return PDOStatement query? If false, returns bool result of execute. (default=true)
 
 ## Return value
 

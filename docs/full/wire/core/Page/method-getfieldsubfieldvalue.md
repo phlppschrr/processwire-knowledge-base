@@ -14,6 +14,6 @@ This is like the getDot() method, but with additional protection during output f
 
 mixed|null
 
-## Meta
+## Deprecated
 
-- @deprecated Method no longer needed
+Method no longer needed

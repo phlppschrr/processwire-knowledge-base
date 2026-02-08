@@ -6,12 +6,12 @@ Get URL for requested resource or module or get all URLs if no argument
 
 ## Arguments
 
-- string|Wire $for Predefined ProcessWire URLs property or module name
+- `$for` (optional) `string|Wire` Predefined ProcessWire URLs property or module name
 
 ## Return value
 
 null|string|Paths
 
-## Meta
+## Since
 
-- @since 3.0.130
+3.0.130

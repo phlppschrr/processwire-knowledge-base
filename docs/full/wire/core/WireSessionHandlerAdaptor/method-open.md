@@ -8,8 +8,8 @@ Called when a session starts or when `session_start()` is invoked.
 
 ## Arguments
 
-- string $path
-- string $name
+- `$path` `string`
+- `$name` `string`
 
 ## Return value
 

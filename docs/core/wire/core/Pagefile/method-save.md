@@ -12,6 +12,6 @@ bool
 
 - WireException
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

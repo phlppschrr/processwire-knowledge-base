@@ -9,4 +9,4 @@ Set the current page number.
 
 ## Arguments
 
-- int $num
+- `$num` `int`

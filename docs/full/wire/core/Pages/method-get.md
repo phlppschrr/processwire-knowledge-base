@@ -19,8 +19,8 @@ $p = $pages->get('template=skyscraper, sort=random');
 
 ## Arguments
 
-- string|array|Selectors|int $selector Selector string, array or Selectors object. May also be page path or ID.
-- array $options See `Pages::find()` for extra options that may be specified.
+- `$selector` `string|array|Selectors|int` Selector string, array or Selectors object. May also be page path or ID.
+- `$options` (optional) `array` See `Pages::find()` for extra options that may be specified.
 
 ## Return value
 

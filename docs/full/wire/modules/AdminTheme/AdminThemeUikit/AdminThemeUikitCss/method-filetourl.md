@@ -6,7 +6,7 @@ Get URL for given full path/file
 
 ## Arguments
 
-- string $file
+- `$file` `string`
 
 ## Return value
 

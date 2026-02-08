@@ -15,9 +15,9 @@ $wire->addHook('Page::moveReady', function($e) {
 
 ## Arguments
 
-- Page $oldParent
-- Page $newParent
+- `$oldParent` `Page`
+- `$newParent` `Page`
 
-## Meta
+## Since
 
-- @since 3.0.253
+3.0.253

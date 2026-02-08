@@ -31,7 +31,7 @@ $result = array(
 
 ## Arguments
 
-- array $liveSearch
+- `$liveSearch` `array`
 
 ## Return value
 

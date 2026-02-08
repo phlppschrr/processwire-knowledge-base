@@ -6,7 +6,7 @@ Identify and populate language information in result
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

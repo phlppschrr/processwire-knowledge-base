@@ -11,7 +11,7 @@ the `InputfieldWrapper::importArray()` method.
 
 ## Arguments
 
-- InputfieldWrapper|array|InputfieldsArray $items Wrapper containing items to add
+- `$items` `InputfieldWrapper|array|InputfieldsArray` Wrapper containing items to add
 
 ## Return value
 

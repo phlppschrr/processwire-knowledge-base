@@ -6,8 +6,8 @@ Return field label, description or notes for language
 
 ## Arguments
 
-- string $property Specify either label, description or notes
-- Page|Language $language Optionally specify a language. If not specified user's current language is used.
+- `$property` `string` Specify either label, description or notes
+- `$language` (optional) `Page|Language` Optionally specify a language. If not specified user's current language is used.
 
 ## Return value
 

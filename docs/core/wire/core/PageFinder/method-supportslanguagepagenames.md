@@ -8,6 +8,6 @@ Are multi-language page names supported?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.165
+3.0.165

@@ -6,7 +6,7 @@ Convert invalid_styles array to string
 
 ## Arguments
 
-- array $a
+- `$a` `array`
 
 ## Return value
 

@@ -18,8 +18,8 @@ $thumb = $image->width(200);
 
 ## Arguments
 
-- int $n Optional width if you are creating a new size.
-- array|string|int|bool $options See `Pageimage::size()` $options argument for details.
+- `$n` (optional) `int` Optional width if you are creating a new size.
+- `$options` (optional) `array|string|int|bool` See `Pageimage::size()` $options argument for details.
 
 ## Return value
 

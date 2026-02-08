@@ -9,8 +9,8 @@ Otherwise same as set().
 
 ## Arguments
 
-- string $key
-- mixed $value
+- `$key` `string`
+- `$value` `mixed`
 
 ## Return value
 

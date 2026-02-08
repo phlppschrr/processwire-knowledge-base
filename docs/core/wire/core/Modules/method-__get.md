@@ -6,7 +6,7 @@ Direct read-only properties
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

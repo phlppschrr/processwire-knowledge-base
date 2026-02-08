@@ -6,12 +6,12 @@ Get or set whether fulltext searches can fallback to LIKE searches to match stop
 
 ## Arguments
 
-- null|bool $allow Specify bool to set or omit to get
+- `$allow` (optional) `null|bool` Specify bool to set or omit to get
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

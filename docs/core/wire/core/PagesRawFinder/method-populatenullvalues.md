@@ -6,7 +6,10 @@ Populate null values for requested fields that were not present (the 'nulls' opt
 
 Applies only if specific fields were requested.
 
-## Meta
+## Since
+
+3.0.198
+
+## Details
 
 - @var array $values
-- @since 3.0.198

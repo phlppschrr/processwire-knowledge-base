@@ -6,12 +6,12 @@ Rebuild pages_parents table entirely or from branch starting with a parent branc
 
 ## Arguments
 
-- int|Page $fromParent Specify parent ID or page to rebuild from that parent, or omit to rebuild all
+- `$fromParent` (optional) `int|Page` Specify parent ID or page to rebuild from that parent, or omit to rebuild all
 
 ## Return value
 
 int Number of rows inserted
 
-## Meta
+## Since
 
-- @since 3.0.156
+3.0.156

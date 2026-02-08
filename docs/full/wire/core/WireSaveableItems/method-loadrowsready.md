@@ -6,4 +6,4 @@ Called after rows loaded from DB but before populated to this instance
 
 ## Arguments
 
-- array $rows
+- `$rows` `array`

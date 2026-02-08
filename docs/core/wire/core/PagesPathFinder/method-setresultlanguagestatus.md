@@ -6,4 +6,4 @@ Set result language status
 
 ## Arguments
 
-- int|bool $status
+- `$status` `int|bool`

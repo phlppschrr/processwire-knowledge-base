@@ -6,9 +6,9 @@ Get this field in context of a Page/Template
 
 ## Arguments
 
-- Page|Template|Fieldgroup|string $for Specify Page, Template, or template name string
-- string $namespace Optional namespace (internal use)
-- bool $has Return boolean rather than Field to check if context exists? (default=false)
+- `$for` `Page|Template|Fieldgroup|string` Specify Page, Template, or template name string
+- `$namespace` (optional) `string` Optional namespace (internal use)
+- `$has` (optional) `bool` Return boolean rather than Field to check if context exists? (default=false)
 
 ## Return value
 
@@ -19,6 +19,6 @@ Field|bool
 - [Fieldgroup::getFieldContext()](../Fieldgroup/method-getfieldcontext.md)
 - [Field::hasContext()](method-hascontext.md)
 
-## Meta
+## Since
 
-- @since 3.0.162
+3.0.162

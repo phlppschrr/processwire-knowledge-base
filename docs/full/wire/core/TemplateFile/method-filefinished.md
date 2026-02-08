@@ -4,6 +4,6 @@ Source: `wire/core/TemplateFile.php`
 
 Clean up after include specific file
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

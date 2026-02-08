@@ -25,7 +25,7 @@ if($items->has("something")) {
 
 ## Arguments
 
-- int|string|Wire $key Key of item to check or selector.
+- `$key` `int|string|Wire` Key of item to check or selector.
 
 ## Return value
 

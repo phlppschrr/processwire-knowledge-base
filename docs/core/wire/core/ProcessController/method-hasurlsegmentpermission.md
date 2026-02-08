@@ -6,8 +6,8 @@ Does user have permission for the given urlSegment in the current Process?
 
 ## Arguments
 
-- string $urlSegment
-- bool $throw Throw exception if not permission?
+- `$urlSegment` `string`
+- `$throw` (optional) `bool` Throw exception if not permission?
 
 ## Return value
 

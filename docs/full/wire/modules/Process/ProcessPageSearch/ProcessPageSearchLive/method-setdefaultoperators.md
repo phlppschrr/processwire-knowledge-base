@@ -6,5 +6,5 @@ Set default operators to use for searches (if query does not specify operator)
 
 ## Arguments
 
-- string $singleWordOperator
-- string $multiWordOperator
+- `$singleWordOperator` `string`
+- `$multiWordOperator` (optional) `string`

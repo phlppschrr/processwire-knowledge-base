@@ -12,12 +12,12 @@ if($config->phpVersion('7.0.0')) {
 
 ## Arguments
 
-- string|null $minVersion
+- `$minVersion` `string|null`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.101
+3.0.101

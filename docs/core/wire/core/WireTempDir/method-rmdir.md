@@ -6,8 +6,8 @@ Remove a temporary directory
 
 ## Arguments
 
-- string $dir
-- bool $recursive
+- `$dir` `string`
+- `$recursive` (optional) `bool`
 
 ## Return value
 

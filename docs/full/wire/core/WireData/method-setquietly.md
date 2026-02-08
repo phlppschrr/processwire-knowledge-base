@@ -9,8 +9,8 @@ Same as set() but without change tracking
 
 ## Arguments
 
-- string $key Name of property you want to set
-- mixed $value Value of property
+- `$key` `string` Name of property you want to set
+- `$value` `mixed` Value of property
 
 ## Return value
 

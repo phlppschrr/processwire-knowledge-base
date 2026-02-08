@@ -10,8 +10,8 @@ times because they used slightly different selectors.
 
 ## Arguments
 
-- string|int|array $selector
-- bool $convertIDs Convert ID-only selectors to integers or arrays of integers?
+- `$selector` `string|int|array`
+- `$convertIDs` (optional) `bool` Convert ID-only selectors to integers or arrays of integers?
 
 ## Return value
 

@@ -6,6 +6,6 @@ Set a named debug parameter
 
 ## Arguments
 
-- string $parameter
-- int|string|null $value
-- int|null $data_type \PDO::PARAM_* type
+- `$parameter` `string`
+- `$value` `int|string|null`
+- `$data_type` (optional) `int|null` \PDO::PARAM_* type

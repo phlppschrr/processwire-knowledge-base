@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- AdminThemeUikit $adminTheme
+- `$adminTheme` `AdminThemeUikit`

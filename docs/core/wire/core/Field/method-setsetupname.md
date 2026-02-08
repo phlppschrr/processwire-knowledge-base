@@ -6,7 +6,7 @@ Set setup name from Fieldtype to apply when field is saved
 
 ## Arguments
 
-- string $setupName Setup name or omit to instead get the current value
+- `$setupName` (optional) `string` Setup name or omit to instead get the current value
 
 ## Return value
 

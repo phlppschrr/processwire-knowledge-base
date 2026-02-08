@@ -6,7 +6,7 @@ Return language id for given value (language name, name column or home segment)
 
 ## Arguments
 
-- int|string|Language $language
+- `$language` `int|string|Language`
 
 ## Return value
 

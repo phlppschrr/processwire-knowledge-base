@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- InputfieldTinyMCE $inputfield
+- `$inputfield` `InputfieldTinyMCE`

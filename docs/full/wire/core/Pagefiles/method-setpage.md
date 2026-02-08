@@ -6,4 +6,4 @@ Set the Page these files are assigned to
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

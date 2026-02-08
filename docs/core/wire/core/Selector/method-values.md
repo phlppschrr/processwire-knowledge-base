@@ -6,7 +6,7 @@ Return array of value(s) for this Selector
 
 ## Arguments
 
-- bool $nonEmpty If empty array will be returned, forces it to return array with one blank item instead (default=false).
+- `$nonEmpty` (optional) `bool` If empty array will be returned, forces it to return array with one blank item instead (default=false).
 
 ## Return value
 
@@ -16,6 +16,6 @@ array
 
 - [Selector::value()](method-value.md)
 
-## Meta
+## Since
 
-- @since 3.0.42 Prior versions just supported the 'values' property.
+3.0.42 Prior versions just supported the 'values' property.

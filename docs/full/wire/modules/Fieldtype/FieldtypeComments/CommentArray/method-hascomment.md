@@ -9,7 +9,7 @@ You can use the has() method for more flexibility.
 
 ## Arguments
 
-- Comment|int $comment
+- `$comment` `Comment|int`
 
 ## Return value
 
@@ -19,6 +19,6 @@ bool
 
 - [WireArray::has()](../../../../core/WireArray/method-has.md)
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

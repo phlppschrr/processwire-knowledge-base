@@ -6,4 +6,4 @@ Ensure that every user loaded has at least the 'guest' role
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

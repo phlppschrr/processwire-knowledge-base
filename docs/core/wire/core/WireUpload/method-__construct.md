@@ -6,4 +6,4 @@ Construct with the given input name
 
 ## Arguments
 
-- string $name
+- `$name` `string`

@@ -5,4 +5,4 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText
 
 ## Arguments
 
-- InputfieldWrapper $inputfields
+- `$inputfields` `InputfieldWrapper`

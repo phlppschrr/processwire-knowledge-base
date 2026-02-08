@@ -8,8 +8,8 @@ If given a PDOStatement, this method behaves the same as the execute() method.
 
 ## Arguments
 
-- string|\PDOStatement $statement
-- string $note
+- `$statement` `string|\PDOStatement`
+- `$note` (optional) `string`
 
 ## Return value
 
@@ -19,6 +19,6 @@ bool|int
 
 - \PDOException
 
-## Meta
+## Details
 
 - @link http://php.net/manual/en/pdo.exec.php

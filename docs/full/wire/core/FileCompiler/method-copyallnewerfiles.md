@@ -6,9 +6,9 @@ Recursively copy all files from $source to $target, but only if $source file is 
 
 ## Arguments
 
-- string $source
-- string $target
-- bool $recursive
+- `$source` `string`
+- `$target` `string`
+- `$recursive` (optional) `bool`
 
 ## Return value
 

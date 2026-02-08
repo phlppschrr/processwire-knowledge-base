@@ -6,7 +6,7 @@ Load a value or all values
 
 ## Arguments
 
-- string|bool $name Property name to load or boolean true to load all
+- `$name` `string|bool` Property name to load or boolean true to load all
 
 ## Return value
 

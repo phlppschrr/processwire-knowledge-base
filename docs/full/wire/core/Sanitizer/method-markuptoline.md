@@ -9,8 +9,8 @@ value is always just a single line.
 
 ## Arguments
 
-- string $value Value to convert
-- array $options Options to modify default behavior: - `newline` (string): Character(s) to replace newlines with (default=" "). - `separator` (string): Character(s) to separate HTML <li> items with (default=", "). - `entities` (bool): Entity encode returned value? (default=false). - `trim` (string): Character(s) to trim from beginning and end of value (default=" -,:;|\n\t").
+- `$value` `string` Value to convert
+- `$options` (optional) `array` Options to modify default behavior: - `newline` (string): Character(s) to replace newlines with (default=" "). - `separator` (string): Character(s) to separate HTML <li> items with (default=", "). - `entities` (bool): Entity encode returned value? (default=false). - `trim` (string): Character(s) to trim from beginning and end of value (default=" -,:;|\n\t").
 
 ## Return value
 

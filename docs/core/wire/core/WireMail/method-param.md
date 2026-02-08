@@ -14,7 +14,7 @@ installed as email params are only used by PHP's `mail()` function.
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

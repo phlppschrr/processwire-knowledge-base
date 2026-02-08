@@ -6,4 +6,4 @@ Construct
 
 ## Arguments
 
-- ProcessPageLister $lister
+- `$lister` `ProcessPageLister`

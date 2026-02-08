@@ -10,13 +10,16 @@ finishResult() method.
 
 ## Arguments
 
-- int $response
+- `$response` `int`
 
 ## Return value
 
 int
 
-## Meta
+## Since
+
+3.0.198
+
+## Details
 
 - @var array $result
-- @since 3.0.198

@@ -6,7 +6,7 @@ Change file to correct mode for FileCompiler
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
 ## Return value
 

@@ -17,8 +17,8 @@ previous value is stored in "-name123" (where 123 is the language ID).
 
 ## Arguments
 
-- Page $page The $page that was renamed
+- `$page` `Page` The $page that was renamed
 
-## Meta
+## Since
 
-- @since 3.0.235
+3.0.235

@@ -21,12 +21,12 @@ if($config->requestPath([ 'foo', 'bar', 'baz' ])) {
 
 ## Arguments
 
-- string|array $match Optionally return path only if some part matches given string(s) (default='')
+- `$match` (optional) `string|array` Optionally return path only if some part matches given string(s) (default='')
 
 ## Return value
 
 string Returns path string or blank string if $match argument used and doesn’t match.
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

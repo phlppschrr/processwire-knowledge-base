@@ -6,10 +6,10 @@ Clone an entire page (including fields, file assets, and optionally children) an
 
 ## Arguments
 
-- Page $page Page that you want to clone
-- Page|null $parent New parent, if different (default=same parent)
-- bool $recursive Clone the children too? (default=true)
-- array|string $options Optional options that can be passed to clone or save - `forceID` (int): force a specific ID - `set` (array): Array of properties to set to the clone (you can also do this later) - `recursionLevel` (int): recursion level, for internal use only.
+- `$page` `Page` Page that you want to clone
+- `$parent` (optional) `Page|null` New parent, if different (default=same parent)
+- `$recursive` (optional) `bool` Clone the children too? (default=true)
+- `$options` (optional) `array|string` Optional options that can be passed to clone or save - `forceID` (int): force a specific ID - `set` (array): Array of properties to set to the clone (you can also do this later) - `recursionLevel` (int): recursion level, for internal use only.
 
 ## Return value
 

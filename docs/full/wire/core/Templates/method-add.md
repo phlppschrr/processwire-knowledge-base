@@ -6,8 +6,8 @@ Add and save new template (and fieldgroup) with given name and return it
 
 ## Arguments
 
-- string $name
-- array $properties Any additional properties to add to template
+- `$name` `string`
+- `$properties` (optional) `array` Any additional properties to add to template
 
 ## Return value
 
@@ -17,6 +17,6 @@ Template
 
 - WireException if given invalid template name or template already exists
 
-## Meta
+## Since
 
-- @since 3.0.170
+3.0.170

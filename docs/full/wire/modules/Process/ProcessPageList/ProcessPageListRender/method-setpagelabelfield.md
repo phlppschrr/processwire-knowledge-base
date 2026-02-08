@@ -6,4 +6,4 @@ Set the default page label field/format
 
 ## Arguments
 
-- string $pageLabelField
+- `$pageLabelField` `string`

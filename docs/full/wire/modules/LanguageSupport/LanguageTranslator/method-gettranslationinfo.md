@@ -6,15 +6,15 @@ Get verbose array of information about translation
 
 ## Arguments
 
-- string|object $textdomain Textdomain string, filename, or object.
-- string $text Text in default language (EN) that needs to be converted to current language.
-- string $context Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
-- array $options
+- `$textdomain` `string|object` Textdomain string, filename, or object.
+- `$text` `string` Text in default language (EN) that needs to be converted to current language.
+- `$context` (optional) `string` Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
+- `$options` (optional) `array`
 
 ## Return value
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.237
+3.0.237

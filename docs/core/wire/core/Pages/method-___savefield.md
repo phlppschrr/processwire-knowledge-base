@@ -14,9 +14,9 @@ $pages->saveField($page, 'summary');
 
 ## Arguments
 
-- Page $page Page to save
-- string|Field $field Field object or name (string)
-- array|string $options Optionally specify one or more of the following to modify default behavior: - `quiet` (boolean): Specify true to bypass updating of modified user and time (default=false). - `noHooks` (boolean): Prevent before/after save hooks (default=false), please also use $pages->___saveField() for call.
+- `$page` `Page` Page to save
+- `$field` `string|Field` Field object or name (string)
+- `$options` (optional) `array|string` Optionally specify one or more of the following to modify default behavior: - `quiet` (boolean): Specify true to bypass updating of modified user and time (default=false). - `noHooks` (boolean): Prevent before/after save hooks (default=false), please also use $pages->___saveField() for call.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Find pages for live search
 
 ## Arguments
 
-- array $liveSearch
+- `$liveSearch` `array`
 
 ## Return value
 

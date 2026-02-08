@@ -6,13 +6,13 @@ Called when render of specific file failed with Exception
 
 ## Arguments
 
-- string $filename
-- \Exception $e
+- `$filename` `string`
+- `$e` `\Exception`
 
 ## Return value
 
 bool True if Exception $e should be thrown, false if it should be ignored
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

@@ -8,4 +8,4 @@ PDO requires the PDOStatement constructor to be protected for some reason
 
 ## Arguments
 
-- WireDatabasePDO $database
+- `$database` `WireDatabasePDO`

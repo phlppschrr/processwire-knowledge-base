@@ -13,8 +13,8 @@ $items = $page->find("status=unpublished");
 
 ## Arguments
 
-- string|array $selector Selector string or array
-- array $options Same as the $options array passed to $pages->find().
+- `$selector` (optional) `string|array` Selector string or array
+- `$options` (optional) `array` Same as the $options array passed to $pages->find().
 
 ## Return value
 

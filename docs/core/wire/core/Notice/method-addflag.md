@@ -6,8 +6,8 @@ Add a flag
 
 ## Arguments
 
-- int|string $flag
+- `$flag` `int|string`
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

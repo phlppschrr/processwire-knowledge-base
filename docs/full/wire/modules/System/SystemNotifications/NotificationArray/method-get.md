@@ -6,7 +6,7 @@ Retrieve a Notification by index or by id
 
 ## Arguments
 
-- int|string $key
+- `$key` `int|string`
 
 ## Return value
 

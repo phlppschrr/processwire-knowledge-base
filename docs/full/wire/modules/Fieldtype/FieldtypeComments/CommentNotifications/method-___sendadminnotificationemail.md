@@ -6,7 +6,7 @@ Send notification email to specified admin to review the comment
 
 ## Arguments
 
-- Comment $comment
+- `$comment` `Comment`
 
 ## Return value
 

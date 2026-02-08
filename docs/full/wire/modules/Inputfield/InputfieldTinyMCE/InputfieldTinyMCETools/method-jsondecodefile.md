@@ -6,8 +6,8 @@ Decode JSON file
 
 ## Arguments
 
-- string $file
-- string $propertyName
+- `$file` `string`
+- `$propertyName` `string`
 
 ## Return value
 

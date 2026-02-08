@@ -9,7 +9,7 @@ if a similar check is needed somewhere else in the core.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

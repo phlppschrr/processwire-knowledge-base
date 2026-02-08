@@ -6,7 +6,7 @@ Remove a value from input
 
 ## Arguments
 
-- string $key Name of input variable to remove value for
+- `$key` `string` Name of input variable to remove value for
 
 ## Return value
 

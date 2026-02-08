@@ -6,9 +6,9 @@ Delete a given comment
 
 ## Arguments
 
-- Page $page
-- Comment $comment
-- string $notes
+- `$page` `Page`
+- `$comment` `Comment`
+- `$notes` (optional) `string`
 
 ## Return value
 

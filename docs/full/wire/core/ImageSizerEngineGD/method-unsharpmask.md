@@ -12,10 +12,10 @@ http://vikjavev.no/computing/ump.php
 
 ## Arguments
 
-- resource $img
-- int $amount
-- int $radius
-- int $threshold
+- `$img` `resource`
+- `$amount` `int`
+- `$radius` `int`
+- `$threshold` `int`
 
 ## Return value
 

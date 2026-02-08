@@ -6,8 +6,8 @@ Hook called after Pages::saveField successfully executes
 
 ## Arguments
 
-- Page $page
-- Field $field
+- `$page` `Page`
+- `$field` `Field`
 
 ## See also
 

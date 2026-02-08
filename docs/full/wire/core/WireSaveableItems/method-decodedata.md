@@ -8,7 +8,7 @@ This is a front-end to wireDecodeJSON that it can be overridden if needed.
 
 ## Arguments
 
-- string $value
+- `$value` `string`
 
 ## Return value
 

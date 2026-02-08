@@ -6,7 +6,7 @@ Get a CSRF Token name, or create one if it doesn't yet exist
 
 ## Arguments
 
-- int|string|null $id Optional unique ID for this token
+- `$id` (optional) `int|string|null` Optional unique ID for this token
 
 ## Return value
 

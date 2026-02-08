@@ -8,7 +8,7 @@ See the getInputfields() method above for documentation details.
 
 ## Arguments
 
-- string|array $fieldName
+- `$fieldName` (optional) `string|array`
 
 ## Return value
 

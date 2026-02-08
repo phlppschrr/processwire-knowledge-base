@@ -24,8 +24,8 @@ image between it and the original:
 
 ## Arguments
 
-- string $basename Filename to check (basename, which excludes path)
-- array|bool $options Array of options to modify behavior, or boolean to only specify `allowSelf` option. - `allowSelf` (bool): When true, it will return variation info even if same as current Pageimage. (default=false) - `verbose` (bool): Return verbose array of info? If false, just returns basename (string) or false. (default=true)
+- `$basename` `string` Filename to check (basename, which excludes path)
+- `$options` (optional) `array|bool` Array of options to modify behavior, or boolean to only specify `allowSelf` option. - `allowSelf` (bool): When true, it will return variation info even if same as current Pageimage. (default=false) - `verbose` (bool): Return verbose array of info? If false, just returns basename (string) or false. (default=true)
 
 ## Return value
 

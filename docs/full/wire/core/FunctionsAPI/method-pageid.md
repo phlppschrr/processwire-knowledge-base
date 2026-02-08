@@ -9,12 +9,12 @@ or false if given $value is not a Page.
 
 ## Arguments
 
-- Page|mixed $value
+- `$value` `Page|mixed`
 
 ## Return value
 
 int|false
 
-## Meta
+## Since
 
-- @since 3.0.224
+3.0.224

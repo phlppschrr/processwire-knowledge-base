@@ -9,8 +9,8 @@ but do appear in the unformatted value.
 
 ## Arguments
 
-- bool|null $set
+- `$set` (optional) `bool|null`
 
-## Meta
+## Since
 
-- @since 3.0.237
+3.0.237

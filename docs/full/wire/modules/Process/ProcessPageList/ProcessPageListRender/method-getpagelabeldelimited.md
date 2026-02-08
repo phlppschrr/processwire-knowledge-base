@@ -6,14 +6,14 @@ Get page label when label format is space delimited
 
 ## Arguments
 
-- Page $page
-- string $label
-- array $options
+- `$page` `Page`
+- `$label` `string`
+- `$options` `array`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.163
+3.0.163

@@ -6,4 +6,4 @@ Match contains entire phrase/string (*=)
 
 ## Arguments
 
-- string $value
+- `$value` `string`

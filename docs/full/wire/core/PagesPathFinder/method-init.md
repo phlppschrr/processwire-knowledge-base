@@ -6,5 +6,5 @@ Init for new get()
 
 ## Arguments
 
-- string $path
-- array $options
+- `$path` `string`
+- `$options` `array`

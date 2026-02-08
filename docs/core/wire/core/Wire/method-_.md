@@ -8,7 +8,7 @@ If not available, or if the current language is the native language, then it ret
 
 ## Arguments
 
-- string|array $text Text string to translate (or array in 3.0.151 also supported)
+- `$text` `string|array` Text string to translate (or array in 3.0.151 also supported)
 
 ## Return value
 

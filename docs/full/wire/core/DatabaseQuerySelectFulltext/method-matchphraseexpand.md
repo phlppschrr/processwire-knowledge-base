@@ -6,4 +6,4 @@ Match phrase with query expansion (*+=)
 
 ## Arguments
 
-- string $value
+- `$value` `string`

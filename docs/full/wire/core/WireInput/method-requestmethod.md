@@ -15,12 +15,12 @@ Possible return values are:
 
 ## Arguments
 
-- string $method Optionally enter the request method to return bool if current method matches
+- `$method` (optional) `string` Optionally enter the request method to return bool if current method matches
 
 ## Return value
 
 string|bool
 
-## Meta
+## Since
 
-- @since 3.0.39
+3.0.39

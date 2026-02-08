@@ -6,7 +6,7 @@ Build description from predefined keys for SelectorContains* classes
 
 ## Arguments
 
-- array|string $keys
+- `$keys` `array|string`
 
 ## Return value
 

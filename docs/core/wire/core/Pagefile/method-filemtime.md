@@ -6,12 +6,12 @@ Get last modified time of file
 
 ## Arguments
 
-- bool $reset
+- `$reset` (optional) `bool`
 
 ## Return value
 
 int Unix timestamp
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

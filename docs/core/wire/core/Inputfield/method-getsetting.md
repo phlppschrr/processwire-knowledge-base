@@ -9,7 +9,7 @@ named "collapsed" or "required".
 
 ## Arguments
 
-- string $key Name of setting or API variable to retrieve.
+- `$key` `string` Name of setting or API variable to retrieve.
 
 ## Return value
 

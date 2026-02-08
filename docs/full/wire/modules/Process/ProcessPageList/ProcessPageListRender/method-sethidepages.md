@@ -6,5 +6,5 @@ Set when pages should be hidden in page list
 
 ## Arguments
 
-- array $hidePages IDs of pages that should be hidden
-- array $hidePagesNot Do not hide pages when state matches one or more of 'debug', 'advanced', 'superuser'
+- `$hidePages` `array` IDs of pages that should be hidden
+- `$hidePagesNot` `array` Do not hide pages when state matches one or more of 'debug', 'advanced', 'superuser'

@@ -6,7 +6,7 @@ Unlink file using PW if available or PHP if not
 
 ## Arguments
 
-- string $file
+- `$file` `string`
 
 ## Return value
 

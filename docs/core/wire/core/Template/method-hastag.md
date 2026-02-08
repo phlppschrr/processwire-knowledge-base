@@ -6,12 +6,12 @@ Does this template have given tag?
 
 ## Arguments
 
-- string $tag
+- `$tag` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.176
+3.0.176

@@ -19,8 +19,8 @@ $page->save('title');
 
 ## Arguments
 
-- Field|string $field Optional field to save (name of field or Field object)
-- array $options See Pages::save() documentation for options. You may also specify $options as the first argument if no $field is needed.
+- `$field` (optional) `Field|string` Optional field to save (name of field or Field object)
+- `$options` (optional) `array` See Pages::save() documentation for options. You may also specify $options as the first argument if no $field is needed.
 
 ## Return value
 

@@ -9,8 +9,8 @@ returns it without modification.
 
 ## Arguments
 
-- string|array $value String or array containing strings
-- array $options Options to modify behavior, 3.0.169+ only: - `replaceWith` (string): Replace MB4+ characters with this character, may not be blank (default='�') - `version` (int): Replacement method version (default=2)
+- `$value` `string|array` String or array containing strings
+- `$options` (optional) `array` Options to modify behavior, 3.0.169+ only: - `replaceWith` (string): Replace MB4+ characters with this character, may not be blank (default='�') - `version` (int): Replacement method version (default=2)
 
 ## Return value
 

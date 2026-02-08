@@ -6,8 +6,8 @@ Return a count of pages containing populated values for the given field
 
 ## Arguments
 
-- Field $field
-- array $options Optionally specify one of the following options: - `template` (template|int|string): Specify a Template object, ID or name to isolate returned rows specific to pages using that template. - `page` (Page|int|string): Specify a Page object, ID or path to isolate returned rows specific to that page. - `getPageIDs` (bool): Specify boolean true to make it return an array of matching Page IDs rather than a count.
+- `$field` `Field`
+- `$options` (optional) `array` Optionally specify one of the following options: - `template` (template|int|string): Specify a Template object, ID or name to isolate returned rows specific to pages using that template. - `page` (Page|int|string): Specify a Page object, ID or path to isolate returned rows specific to that page. - `getPageIDs` (bool): Specify boolean true to make it return an array of matching Page IDs rather than a count.
 
 ## Return value
 

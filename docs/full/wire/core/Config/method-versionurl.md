@@ -8,8 +8,8 @@ URLs that aready have query strings are left alone.
 
 ## Arguments
 
-- string $url URL to a file asset (such as JS/CSS file)
-- bool|null|string $useVersion See versionUrls() method for description of this argument.
+- `$url` `string` URL to a file asset (such as JS/CSS file)
+- `$useVersion` (optional) `bool|null|string` See versionUrls() method for description of this argument.
 
 ## Return value
 
@@ -19,6 +19,6 @@ string URL updated with version strings where necessary
 
 - [Config::versionUrls()](method-versionurls.md)
 
-## Meta
+## Since
 
-- @since 3.0.227
+3.0.227

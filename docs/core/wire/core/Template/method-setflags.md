@@ -8,4 +8,4 @@ As a safety it prevents the system flag from being removed.
 
 ## Arguments
 
-- int $value
+- `$value` `int`

@@ -6,9 +6,9 @@ Send using CURL
 
 ## Arguments
 
-- string $url
-- string $method
-- array $options
+- `$url` `string`
+- `$method` (optional) `string`
+- `$options` (optional) `array`
 
 ## Return value
 

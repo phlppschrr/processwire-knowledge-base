@@ -6,4 +6,4 @@ Construct and register shutdown function
 
 ## Arguments
 
-- Config $config
+- `$config` `Config`

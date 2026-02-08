@@ -6,9 +6,9 @@ Given a source file to translate, create a new textdomain
 
 ## Arguments
 
-- string $filename Filename or textdomain that we will be translating, relative to site root.
-- bool $filenameIsTextdomain Specify true if $filename is a textdomain instead.
-- bool $save Whether to save the language
+- `$filename` `string` Filename or textdomain that we will be translating, relative to site root.
+- `$filenameIsTextdomain` (optional) `bool` Specify true if $filename is a textdomain instead.
+- `$save` (optional) `bool` Whether to save the language
 
 ## Return value
 

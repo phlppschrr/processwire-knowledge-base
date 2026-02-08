@@ -6,12 +6,12 @@ Get 'SameSite' value for session cookie
 
 ## Arguments
 
-- string|null $value
+- `$value` (optional) `string|null`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.178
+3.0.178

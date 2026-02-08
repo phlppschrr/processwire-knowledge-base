@@ -9,7 +9,7 @@ So call them once and store your result if you need the result multiple times.
 
 ## Arguments
 
-- int|string $id Optional unique ID/name for this token (of omitted one is generated automatically)
+- `$id` (optional) `int|string` Optional unique ID/name for this token (of omitted one is generated automatically)
 
 ## Return value
 

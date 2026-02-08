@@ -6,7 +6,7 @@ Perform the action on the given item
 
 ## Arguments
 
-- Wire $item Item to operate upon
+- `$item` `Wire` Item to operate upon
 
 ## Return value
 

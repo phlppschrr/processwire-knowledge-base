@@ -6,12 +6,12 @@ Get memory limit
 
 ## Arguments
 
-- string $getInUnit Get value in 'K' [kilobytes], 'M' [megabytes], 'G' [gigabytes] (default='M')
+- `$getInUnit` (optional) `string` Get value in 'K' [kilobytes], 'M' [megabytes], 'G' [gigabytes] (default='M')
 
 ## Return value
 
 int|float
 
-## Meta
+## Since
 
-- @since 3.0.206
+3.0.206

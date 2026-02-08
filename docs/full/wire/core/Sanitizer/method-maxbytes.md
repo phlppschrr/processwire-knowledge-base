@@ -9,13 +9,13 @@ Limit bytes used by given string to max specified
 
 ## Arguments
 
-- string $value
-- int $maxBytes
+- `$value` `string`
+- `$maxBytes` (optional) `int`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

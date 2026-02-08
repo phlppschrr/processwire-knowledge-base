@@ -6,9 +6,9 @@ Return an image no larger than the given width and height
 
 ## Arguments
 
-- int $width Max allowed width
-- int $height Max allowed height
-- array $options See `Pageimage::size()` method for options, or these additional options: - `allowOriginal` (bool): Allow original image to be returned if already within max requested dimensions? (default=false)
+- `$width` `int` Max allowed width
+- `$height` `int` Max allowed height
+- `$options` (optional) `array` See `Pageimage::size()` method for options, or these additional options: - `allowOriginal` (bool): Allow original image to be returned if already within max requested dimensions? (default=false)
 
 ## Return value
 

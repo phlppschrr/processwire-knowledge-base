@@ -6,8 +6,8 @@ Get a session variable for this module
 
 ## Arguments
 
-- string $key
-- mixed $blankValue Optionally provide replacement blank value if session var does not exist.
+- `$key` `string`
+- `$blankValue` (optional) `mixed` Optionally provide replacement blank value if session var does not exist.
 
 ## Return value
 

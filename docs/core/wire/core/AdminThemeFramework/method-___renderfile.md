@@ -8,13 +8,13 @@ This method is only used if it is hooked
 
 ## Arguments
 
-- string $file Full path and filename
-- array $vars Associative array of variables to populate in rendered file
+- `$file` `string` Full path and filename
+- `$vars` (optional) `array` Associative array of variables to populate in rendered file
 
 ## Return value
 
 string Returns blank string when $echo is true
 
-## Meta
+## Since
 
-- @since 3.0.196
+3.0.196

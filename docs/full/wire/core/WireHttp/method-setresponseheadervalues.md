@@ -6,4 +6,4 @@ Set response headers where they are provided as an associative array and values 
 
 ## Arguments
 
-- array $responseHeader headers in an associative array
+- `$responseHeader` `array` headers in an associative array

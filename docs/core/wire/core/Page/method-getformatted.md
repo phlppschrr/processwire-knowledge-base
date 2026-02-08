@@ -14,7 +14,7 @@ $body = $page->getFormatted('body');
 
 ## Arguments
 
-- string $key Field or property name to retrieve
+- `$key` `string` Field or property name to retrieve
 
 ## Return value
 

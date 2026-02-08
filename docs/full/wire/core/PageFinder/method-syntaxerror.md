@@ -6,7 +6,7 @@ Throw a fatal syntax error
 
 ## Arguments
 
-- string $message
+- `$message` `string`
 
 ## Throws
 

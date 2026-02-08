@@ -6,7 +6,7 @@ Get an item
 
 ## Arguments
 
-- string|int $key
+- `$key` `string|int`
 
 ## Return value
 

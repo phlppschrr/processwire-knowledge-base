@@ -6,7 +6,7 @@ Does the given column name exist in the 'pages' table?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

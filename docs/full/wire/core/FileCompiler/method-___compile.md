@@ -6,7 +6,7 @@ Compile given source file and return compiled destination file
 
 ## Arguments
 
-- string $sourceFile Source file to compile (relative to sourcePath given in constructor)
+- `$sourceFile` `string` Source file to compile (relative to sourcePath given in constructor)
 
 ## Return value
 

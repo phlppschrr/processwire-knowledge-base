@@ -6,8 +6,8 @@ Retrieve module info for system properties: PHP or ProcessWire
 
 ## Arguments
 
-- string $moduleName
-- array $options
+- `$moduleName` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

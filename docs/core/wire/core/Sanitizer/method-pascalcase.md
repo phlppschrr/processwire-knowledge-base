@@ -8,8 +8,8 @@ For example, "hello world" becomes "HelloWorld" or "foo-bar-baz" becomes "FooBar
 
 ## Arguments
 
-- string $value
-- array $options See options for camelCase() method
+- `$value` `string`
+- `$options` (optional) `array` See options for camelCase() method
 
 ## Return value
 

@@ -6,13 +6,13 @@ Get size of file or directory (in bytes)
 
 ## Arguments
 
-- string $path File or directory path
-- array|bool $options Options array, or boolean true for getString option: - `getString` (bool): Get string that summarizes bytes, kB, MB, etc.? (default=false)
+- `$path` `string` File or directory path
+- `$options` (optional) `array|bool` Options array, or boolean true for getString option: - `getString` (bool): Get string that summarizes bytes, kB, MB, etc.? (default=false)
 
 ## Return value
 
 int|string
 
-## Meta
+## Since
 
-- @since 3.0.214
+3.0.214

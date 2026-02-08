@@ -16,11 +16,11 @@ echo "<img src='$crop->url' />";
 
 ## Arguments
 
-- int $x Starting X position (left) in pixels
-- int $y Starting Y position (top) in pixels
-- int $width Width of crop in pixels
-- int $height Height of crop in pixels
-- array $options See options array for `Pageimage::size()` method. Avoid setting crop properties in $options since we are overriding them.
+- `$x` `int` Starting X position (left) in pixels
+- `$y` `int` Starting Y position (top) in pixels
+- `$width` `int` Width of crop in pixels
+- `$height` `int` Height of crop in pixels
+- `$options` (optional) `array` See options array for `Pageimage::size()` method. Avoid setting crop properties in $options since we are overriding them.
 
 ## Return value
 

@@ -6,7 +6,7 @@ Get or set debug state
 
 ## Arguments
 
-- bool|null $debug
+- `$debug` (optional) `bool|null`
 
 ## Return value
 

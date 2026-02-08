@@ -6,9 +6,9 @@ Given a URL to a ZIP file, download it, unzip it, and move to /site/modules/[Mod
 
 ## Arguments
 
-- string $url Download URL
-- string $destinationDir Optional destination path for files (omit to auto-determine)
-- string $type Specify type of 'download' or 'directory'
+- `$url` `string` Download URL
+- `$destinationDir` (optional) `string` Optional destination path for files (omit to auto-determine)
+- `$type` (optional) `string` Specify type of 'download' or 'directory'
 
 ## Return value
 

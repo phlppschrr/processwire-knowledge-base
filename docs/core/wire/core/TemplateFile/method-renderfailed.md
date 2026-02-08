@@ -6,12 +6,12 @@ Called when overall render failed
 
 ## Arguments
 
-- \Exception $e
+- `$e` `\Exception`
 
 ## Return value
 
 \Exception
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

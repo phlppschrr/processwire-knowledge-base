@@ -12,8 +12,8 @@ Is this field viewable?
 
 ## Arguments
 
-- Page|null $page Optionally specify a Page for context (i.e. Is field viewable on $page?)
-- User|null $user Optionally specify a different user for context (default=current user)
+- `$page` (optional) `Page|null` Optionally specify a Page for context (i.e. Is field viewable on $page?)
+- `$user` (optional) `User|null` Optionally specify a different user for context (default=current user)
 
 ## Return value
 

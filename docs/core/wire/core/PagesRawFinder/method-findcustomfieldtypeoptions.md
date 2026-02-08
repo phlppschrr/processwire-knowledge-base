@@ -15,11 +15,11 @@ To use, specify one of the following in the fields to get (where field_name is a
 
 ## Arguments
 
-- Field $field
-- array $cols
-- bool $getArray
-- bool $getAllCols
+- `$field` `Field`
+- `$cols` `array`
+- `$getArray` `bool`
+- `$getAllCols` `bool`
 
-## Meta
+## Since
 
-- @since 3.0.193
+3.0.193

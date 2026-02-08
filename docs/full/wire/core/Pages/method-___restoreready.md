@@ -6,8 +6,8 @@ Hook called when a page is about to be moved OUT of the trash (restored)
 
 ## Arguments
 
-- Page $page Page that is about to be restored
+- `$page` `Page` Page that is about to be restored
 
-## Meta
+## Since
 
-- @since 3.0.235
+3.0.235

@@ -12,12 +12,12 @@ Get list of all tags used by fields
 
 ## Arguments
 
-- bool|string $getFieldNames Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
+- `$getFieldNames` (optional) `bool|string` Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
 
 ## Return value
 
 array Both keys and values are tags in return value
 
-## Meta
+## Since
 
-- @since 3.0.106 + made hookable in 3.0.179
+3.0.106 + made hookable in 3.0.179

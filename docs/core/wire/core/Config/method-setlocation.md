@@ -29,9 +29,9 @@ if($user->name == 'karen') {
 
 ## Arguments
 
-- string $for Named location from `$config->paths` or `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
-- string $dir Directory or URL to the location. Should be either a path or URL relative to current installation root (recommended), or an absolute disk path that resolves somewhere in current installation root. If specifying an absolute path outside of the installation root, then you’ll also want to provide the $url argument since PW won’t know it. You may also specify a blank string for this argument if you only want to set the $url argument.
-- string|bool $url If the $dir argument represents both the path and URL relative to site root, you can omit this argument. If path and URL cannot be derived from one another, or you only want to modify the $url (leaving $dir blank), you can specify the URL in this argument. Specify boolean false if you only want to set the $dir (path) and not detect the $url from it.
+- `$for` `string` Named location from `$config->paths` or `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- `$dir` `string` Directory or URL to the location. Should be either a path or URL relative to current installation root (recommended), or an absolute disk path that resolves somewhere in current installation root. If specifying an absolute path outside of the installation root, then you’ll also want to provide the $url argument since PW won’t know it. You may also specify a blank string for this argument if you only want to set the $url argument.
+- `$url` (optional) `string|bool` If the $dir argument represents both the path and URL relative to site root, you can omit this argument. If path and URL cannot be derived from one another, or you only want to modify the $url (leaving $dir blank), you can specify the URL in this argument. Specify boolean false if you only want to set the $dir (path) and not detect the $url from it.
 
 ## Return value
 
@@ -41,6 +41,6 @@ self
 
 - WireException If request cannot be accommodated
 
-## Meta
+## Since
 
-- @since 3.0.141
+3.0.141

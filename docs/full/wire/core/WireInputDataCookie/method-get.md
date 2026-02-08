@@ -15,8 +15,8 @@ $val = $input->cookie->text('foo'); // get and use text sanitizer
 
 ## Arguments
 
-- string $key Name of cookie to get
-- array|int|string $options Options not currently used, but available for descending classes or future use
+- `$key` `string` Name of cookie to get
+- `$options` (optional) `array|int|string` Options not currently used, but available for descending classes or future use
 
 ## Return value
 

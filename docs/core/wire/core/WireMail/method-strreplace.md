@@ -10,9 +10,9 @@ Note: this function ignores case.
 
 ## Arguments
 
-- string $str
-- string|array $find
-- string $replace
+- `$str` `string`
+- `$find` `string|array`
+- `$replace` (optional) `string`
 
 ## Return value
 

@@ -8,6 +8,6 @@ Are we currently loading pages?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.195
+3.0.195

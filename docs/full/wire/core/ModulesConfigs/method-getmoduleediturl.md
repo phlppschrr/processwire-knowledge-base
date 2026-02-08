@@ -8,8 +8,8 @@ If module is not installed, it returns URL to install the module.
 
 ## Arguments
 
-- string|Module $className
-- bool $collapseInfo
+- `$className` `string|Module`
+- `$collapseInfo` (optional) `bool`
 
 ## Return value
 

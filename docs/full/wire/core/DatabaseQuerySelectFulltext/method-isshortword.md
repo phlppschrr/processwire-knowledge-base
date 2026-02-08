@@ -6,7 +6,7 @@ Is word too short for fulltext index?
 
 ## Arguments
 
-- string $word
+- `$word` `string`
 
 ## Return value
 

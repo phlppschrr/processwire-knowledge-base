@@ -8,13 +8,13 @@ This is used to identify and invalidate a previously used authentication code,
 
 ## Arguments
 
-- User $user
-- string $code
+- `$user` `User`
+- `$code` `string`
 
 ## Return value
 
 string
 
-## Meta
+## Since
 
-- @since 3.0.160
+3.0.160

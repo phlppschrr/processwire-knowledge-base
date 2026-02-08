@@ -6,9 +6,9 @@ Normalize a value to a RepeaterPageArray
 
 ## Arguments
 
-- Page $page
-- Field $field
-- RepeaterPage|RepeaterPageArray $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `RepeaterPage|RepeaterPageArray`
 
 ## Return value
 

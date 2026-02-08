@@ -8,7 +8,7 @@ This is different from `$field->notes` in that it knows about languages (when in
 
 ## Arguments
 
-- Page|Language $language Optionally specify a language. If not specified user's current language is used.
+- `$language` (optional) `Page|Language` Optionally specify a language. If not specified user's current language is used.
 
 ## Return value
 

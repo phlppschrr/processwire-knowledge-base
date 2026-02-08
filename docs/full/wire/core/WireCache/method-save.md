@@ -16,9 +16,9 @@ $cache->save("my-cache-name", $value, 3600);
 
 ## Arguments
 
-- string $name Name of cache, can be any string up to 255 chars
-- string|array|PageArray $data Data that you want to cache. May be string, array of non-object values, or PageArray.
-- int|string|Page $expire Lifetime of this cache, in seconds, OR one of the following: - Specify one of the `WireCache::expire*` constants. - Specify the future date you want it to expire (as unix timestamp or any `strtotime()` compatible date format) - Provide a `Page` object to expire when any page using that template is saved. - Specify `WireCache::expireNever` to prevent expiration. - Specify `WireCache::expireSave` to expire when any page or template is saved. - Specify selector string matching pages that–when saved–expire the cache.
+- `$name` `string` Name of cache, can be any string up to 255 chars
+- `$data` `string|array|PageArray` Data that you want to cache. May be string, array of non-object values, or PageArray.
+- `$expire` (optional) `int|string|Page` Lifetime of this cache, in seconds, OR one of the following: - Specify one of the `WireCache::expire*` constants. - Specify the future date you want it to expire (as unix timestamp or any `strtotime()` compatible date format) - Provide a `Page` object to expire when any page using that template is saved. - Specify `WireCache::expireNever` to prevent expiration. - Specify `WireCache::expireSave` to expire when any page or template is saved. - Specify selector string matching pages that–when saved–expire the cache.
 
 ## Return value
 

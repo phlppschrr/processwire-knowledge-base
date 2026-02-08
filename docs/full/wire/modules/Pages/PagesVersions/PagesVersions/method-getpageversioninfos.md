@@ -17,8 +17,8 @@ foreach($infos as $info) {
 
 ## Arguments
 
-- Page $page
-- array $options - `sort`: Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created')
+- `$page` `Page`
+- `$options` (optional) `array` - `sort`: Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created')
 
 ## Return value
 

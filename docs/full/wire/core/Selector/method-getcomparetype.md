@@ -8,6 +8,6 @@ What type of comparson does Selector perform?
 
 int Returns a Selector::compareType* constant or 0 if not defined
 
-## Meta
+## Since
 
-- @since 3.0.154
+3.0.154

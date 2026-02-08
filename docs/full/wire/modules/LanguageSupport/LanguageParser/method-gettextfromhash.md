@@ -6,7 +6,7 @@ Given a hash, return the untranslated text associated with it
 
 ## Arguments
 
-- string $hash
+- `$hash` `string`
 
 ## Return value
 

@@ -12,9 +12,9 @@ for some cases with less code. This method:
 
 ## Arguments
 
-- Page $child Page that you want to move.
-- Page|int|string $parent Parent to move it under (may be Page object, path string, or ID integer).
-- array $options Options to modify behavior (see PagesEditor::save for options).
+- `$child` `Page` Page that you want to move.
+- `$parent` `Page|int|string` Parent to move it under (may be Page object, path string, or ID integer).
+- `$options` (optional) `array` Options to modify behavior (see PagesEditor::save for options).
 
 ## Return value
 

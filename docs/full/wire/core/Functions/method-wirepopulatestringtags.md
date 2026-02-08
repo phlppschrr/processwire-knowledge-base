@@ -22,9 +22,9 @@ echo wirePopulateStringTags($str, $vars);
 
 ## Arguments
 
-- string $str The string to operate on (where the {tags} might be found)
-- WireData|object|array $vars Object or associative array to pull replacement values from.
-- array $options Array of optional changes to default behavior, including: - `tagOpen` (string): The required opening tag character(s), default is '{' - `tagClose` (string): The optional closing tag character(s), default is '}' - `recursive` (bool): If replacement value contains tags, populate those too? (default=false) - `removeNullTags` (bool): If a tag resolves to a NULL, remove it? If false, tag will remain. (default=true) - `entityEncode` (bool): Entity encode the values pulled from $vars? (default=false) - `entityDecode` (bool): Entity decode the values pulled from $vars? (default=false)
+- `$str` `string` The string to operate on (where the {tags} might be found)
+- `$vars` `WireData|object|array` Object or associative array to pull replacement values from.
+- `$options` (optional) `array` Array of optional changes to default behavior, including: - `tagOpen` (string): The required opening tag character(s), default is '{' - `tagClose` (string): The optional closing tag character(s), default is '}' - `recursive` (bool): If replacement value contains tags, populate those too? (default=false) - `removeNullTags` (bool): If a tag resolves to a NULL, remove it? If false, tag will remain. (default=true) - `entityEncode` (bool): Entity encode the values pulled from $vars? (default=false) - `entityDecode` (bool): Entity decode the values pulled from $vars? (default=false)
 
 ## Return value
 

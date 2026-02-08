@@ -6,9 +6,9 @@ Is $value1 equal to $value2?
 
 ## Arguments
 
-- string $key Name of the key that triggered the check (see WireData::set)
-- mixed $value1
-- mixed $value2
+- `$key` `string` Name of the key that triggered the check (see WireData::set)
+- `$value1` `mixed`
+- `$value2` `mixed`
 
 ## Return value
 

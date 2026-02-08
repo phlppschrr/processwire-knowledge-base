@@ -11,7 +11,7 @@ the context of this page.
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 
 ## Return value
 

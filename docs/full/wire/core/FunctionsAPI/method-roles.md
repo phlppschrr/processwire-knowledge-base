@@ -9,7 +9,7 @@ shortcuts available by providing an argument to this function.
 
 ## Arguments
 
-- string|int $selector - Specify name or ID of role to get (Role object) - Specify selector string matching roles to find (PageArray object)
+- `$selector` (optional) `string|int` - Specify name or ID of role to get (Role object) - Specify selector string matching roles to find (PageArray object)
 
 ## Return value
 

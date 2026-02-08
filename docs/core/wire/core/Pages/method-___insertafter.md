@@ -6,8 +6,8 @@ Sort/move one page after another (for manually sorted pages)
 
 ## Arguments
 
-- Page $page Page you want to move/sort
-- Page $afterPage Page you want to insert after
+- `$page` `Page` Page you want to move/sort
+- `$afterPage` `Page` Page you want to insert after
 
 ## Throws
 

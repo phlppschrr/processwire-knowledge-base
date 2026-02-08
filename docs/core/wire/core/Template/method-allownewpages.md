@@ -8,6 +8,6 @@ Allow new pages that use this template?
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

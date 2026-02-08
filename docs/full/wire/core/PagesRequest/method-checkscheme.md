@@ -9,4 +9,4 @@ Note this does not work if GET vars are present in the URL -- they will be lost 
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`

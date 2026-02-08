@@ -8,9 +8,9 @@ The change will only be recorded if self::$trackChanges is true.
 
 ## Arguments
 
-- string $what Name of property that changed
-- mixed $old Previous value before change
-- mixed $new New value
+- `$what` `string` Name of property that changed
+- `$old` (optional) `mixed` Previous value before change
+- `$new` (optional) `mixed` New value
 
 ## Return value
 

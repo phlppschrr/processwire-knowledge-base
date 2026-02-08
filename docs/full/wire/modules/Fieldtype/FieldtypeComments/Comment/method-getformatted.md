@@ -9,8 +9,8 @@ in order for backwards compatibility with older installations.
 
 ## Arguments
 
-- string $key One of: text, cite, email, user_agent, website
-- array $options
+- `$key` `string` One of: text, cite, email, user_agent, website
+- `$options` (optional) `array`
 
 ## Return value
 

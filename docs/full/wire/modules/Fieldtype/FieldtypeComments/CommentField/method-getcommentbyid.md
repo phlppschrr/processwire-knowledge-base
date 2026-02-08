@@ -6,8 +6,8 @@ Get a comment by ID or NULL if not found
 
 ## Arguments
 
-- Page|int|string $page
-- int $id
+- `$page` `Page|int|string`
+- `$id` `int`
 
 ## Return value
 

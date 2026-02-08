@@ -6,12 +6,12 @@ Return true if this field has the given tag or false if not
 
 ## Arguments
 
-- string $tag
+- `$tag` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.106
+3.0.106

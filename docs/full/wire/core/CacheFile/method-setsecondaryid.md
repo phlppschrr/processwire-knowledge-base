@@ -8,4 +8,4 @@ When a call to remove the cache is included, then all 'secondary' versions of it
 
 ## Arguments
 
-- string|int $id
+- `$id` `string|int`

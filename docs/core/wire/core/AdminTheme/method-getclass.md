@@ -8,8 +8,8 @@ Omit the first argument to return all classes in an array.
 
 ## Arguments
 
-- string $name Tag or item name, i.e. “input”, or omit to return all defined [tags=classes]
-- bool $getArray Specify true to return array of class name(s) rather than string (default=false). $name argument required.
+- `$name` (optional) `string` Tag or item name, i.e. “input”, or omit to return all defined [tags=classes]
+- `$getArray` (optional) `bool` Specify true to return array of class name(s) rather than string (default=false). $name argument required.
 
 ## Return value
 

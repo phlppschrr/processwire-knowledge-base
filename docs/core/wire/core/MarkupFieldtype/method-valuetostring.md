@@ -6,8 +6,8 @@ Convert any value to a string
 
 ## Arguments
 
-- mixed $value
-- bool $encode
+- `$value` `mixed`
+- `$encode` (optional) `bool`
 
 ## Return value
 

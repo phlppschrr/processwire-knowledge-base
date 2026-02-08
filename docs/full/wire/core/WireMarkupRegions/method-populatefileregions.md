@@ -6,7 +6,7 @@ Populate file regions
 
 ## Arguments
 
-- string $htmlDocument
-- array|string $htmlRegions
-- array $options
-- bool $debug
+- `$htmlDocument` `string`
+- `$htmlRegions` `array|string`
+- `$options` `array`
+- `$debug` `bool`

@@ -8,8 +8,8 @@ See the `Module` interface and the `upgrade` method there for more details.
 
 ## Arguments
 
-- int|string $fromVersion Previous version
-- int|string $toVersion New version
+- `$fromVersion` `int|string` Previous version
+- `$toVersion` `int|string` New version
 
 ## Throws
 

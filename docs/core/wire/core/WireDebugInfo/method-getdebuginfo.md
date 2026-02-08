@@ -6,8 +6,8 @@ Get all debug info for the given Wire object
 
 ## Arguments
 
-- Wire $obj
-- bool $small Return non-verbose debug info? (default=false)
+- `$obj` `Wire`
+- `$small` (optional) `bool` Return non-verbose debug info? (default=false)
 
 ## Return value
 

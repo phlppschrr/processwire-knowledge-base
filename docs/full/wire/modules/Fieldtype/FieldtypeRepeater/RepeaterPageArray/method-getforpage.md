@@ -8,6 +8,6 @@ Get page this RepeaterPageArray is for
 
 Page
 
-## Meta
+## Since
 
-- @since 3.0.188
+3.0.188

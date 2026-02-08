@@ -8,9 +8,9 @@ Given access role may be a role name, role ID or Role object
 
 ## Arguments
 
-- Page $page
-- string|int|Role $role
-- string $type Default is 'view', but you may specify 'create' or 'add' as well
+- `$page` `Page`
+- `$role` `string|int|Role`
+- `$type` (optional) `string` Default is 'view', but you may specify 'create' or 'add' as well
 
 ## Return value
 

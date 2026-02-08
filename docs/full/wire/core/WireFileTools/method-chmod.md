@@ -19,9 +19,9 @@ $files->chmod($config->paths->cache . 'foo-bar/', true);
 
 ## Arguments
 
-- string $path Path or file that you want to adjust mode for (may be a path/directory or a filename).
-- bool|string $recursive If set to true, all files and directories in $path will be recursively set as well (default=false).
-- string|null|bool $chmod If you want to set the mode to something other than ProcessWire's chmodFile/chmodDir settings, you may override it by specifying it here. Ignored otherwise. Format should be a string, like "0755".
+- `$path` `string` Path or file that you want to adjust mode for (may be a path/directory or a filename).
+- `$recursive` (optional) `bool|string` If set to true, all files and directories in $path will be recursively set as well (default=false).
+- `$chmod` (optional) `string|null|bool` If you want to set the mode to something other than ProcessWire's chmodFile/chmodDir settings, you may override it by specifying it here. Ignored otherwise. Format should be a string, like "0755".
 
 ## Return value
 

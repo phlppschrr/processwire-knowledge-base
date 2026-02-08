@@ -6,7 +6,7 @@ Store a persist Notice in Session
 
 ## Arguments
 
-- Notice $item
+- `$item` `Notice`
 
 ## Return value
 

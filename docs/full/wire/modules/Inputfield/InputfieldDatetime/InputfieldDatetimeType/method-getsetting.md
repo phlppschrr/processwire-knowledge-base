@@ -6,7 +6,7 @@ Get setting
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

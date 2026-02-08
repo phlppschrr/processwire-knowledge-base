@@ -6,12 +6,12 @@ Get or set flags
 
 ## Arguments
 
-- string|int|array|null $value Accepts flags integer, or array of flag names, or space-separated string of flag names
+- `$value` (optional) `string|int|array|null` Accepts flags integer, or array of flag names, or space-separated string of flag names
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.149
+3.0.149

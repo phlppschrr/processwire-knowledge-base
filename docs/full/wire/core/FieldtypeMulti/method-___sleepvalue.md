@@ -13,9 +13,9 @@ See FieldtypePagefiles module class for an example of this.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- WireArray $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `WireArray`
 
 ## Return value
 

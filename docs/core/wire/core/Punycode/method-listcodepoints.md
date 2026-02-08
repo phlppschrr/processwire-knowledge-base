@@ -6,7 +6,7 @@ List code points for a given input
 
 ## Arguments
 
-- string $input
+- `$input` `string`
 
 ## Return value
 

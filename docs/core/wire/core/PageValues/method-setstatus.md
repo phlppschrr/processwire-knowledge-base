@@ -19,7 +19,7 @@ $page->setStatus(Page::statusHidden | Page::statusUnpublished);
 
 ## Arguments
 
-- Page $page
+- `$page` `Page`
 - int|array|string Status value, array of status names or values, or status name string.
 
 ## Return value

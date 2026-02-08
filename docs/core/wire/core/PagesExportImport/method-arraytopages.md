@@ -8,8 +8,8 @@ Provided array ($a) must originate from the pagesToArray() method format.
 
 ## Arguments
 
-- array $a Array of import data
-- array $options - `count` (bool):  Return count of imported pages, rather than PageArray? Reduces memory requirements. (default=false) - `pageArray` (PageArray): PageArray object to populate, or omit to return new PageArray (default=null)
+- `$a` `array` Array of import data
+- `$options` (optional) `array` - `count` (bool):  Return count of imported pages, rather than PageArray? Reduces memory requirements. (default=false) - `pageArray` (PageArray): PageArray object to populate, or omit to return new PageArray (default=null)
 
 ## Return value
 

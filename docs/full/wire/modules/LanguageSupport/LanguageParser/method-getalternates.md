@@ -6,7 +6,7 @@ Get phrase alternates
 
 ## Arguments
 
-- string $hash Specify phrase hash to get alternates or omit to get all alternates
+- `$hash` (optional) `string` Specify phrase hash to get alternates or omit to get all alternates
 
 ## Return value
 

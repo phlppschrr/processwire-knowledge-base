@@ -10,9 +10,9 @@ Sanitize the value for runtime storage and return it.
 
 ## Arguments
 
-- Page $page
-- Field $field
-- string|int|WireArray|object $value
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|WireArray|object`
 
 ## Return value
 

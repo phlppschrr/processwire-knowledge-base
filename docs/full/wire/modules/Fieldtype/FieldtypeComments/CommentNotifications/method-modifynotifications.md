@@ -6,9 +6,9 @@ Given a subscriber code, modify notifications on any comments where their email 
 
 ## Arguments
 
-- string $subcode 40 digit subscriber code
-- bool $enable Whether to enable or disable notifications
-- bool $all Specify true to disable notifications site-wide, rather than just current page
+- `$subcode` `string` 40 digit subscriber code
+- `$enable` `bool` Whether to enable or disable notifications
+- `$all` (optional) `bool` Specify true to disable notifications site-wide, rather than just current page
 
 ## Return value
 

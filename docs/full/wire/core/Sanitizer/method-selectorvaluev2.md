@@ -8,8 +8,8 @@ This version is a little more thorough and has more options than version 1.
 
 ## Arguments
 
-- string|array $value
-- array $options
+- `$value` `string|array`
+- `$options` (optional) `array`
 
 ## Return value
 

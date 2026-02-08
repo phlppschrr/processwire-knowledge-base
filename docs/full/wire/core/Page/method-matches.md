@@ -12,7 +12,7 @@ if($page->matches("created>=" . strtotime("today"))) {
 
 ## Arguments
 
-- string|Selectors|array $s Selector to compare against (string, Selectors object, or array).
+- `$s` `string|Selectors|array` Selector to compare against (string, Selectors object, or array).
 
 ## Return value
 

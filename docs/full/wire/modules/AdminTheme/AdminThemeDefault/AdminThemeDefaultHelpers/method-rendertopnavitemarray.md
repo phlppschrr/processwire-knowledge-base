@@ -6,8 +6,8 @@ Renders static navigation from an array coming from getModuleInfo()['nav'] array
 
 ## Arguments
 
-- Page $p
-- array $nav
+- `$p` `Page`
+- `$nav` `array`
 
 ## Return value
 

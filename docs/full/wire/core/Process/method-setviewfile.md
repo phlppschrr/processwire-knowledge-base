@@ -10,7 +10,7 @@ Set the file to use for the output view, if different from default.
 
 ## Arguments
 
-- string $file File must be relative to the module's home directory.
+- `$file` `string` File must be relative to the module's home directory.
 
 ## Return value
 

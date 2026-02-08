@@ -8,13 +8,13 @@ Note that this also clones the Fieldgroup if the template being cloned has its o
 
 ## Arguments
 
-- Template|Saveable $item Template to clone
-- string $name Name of new template that will be created, or omit to auto-assign.
+- `$item` `Template|Saveable` Template to clone
+- `$name` (optional) `string` Name of new template that will be created, or omit to auto-assign.
 
 ## Return value
 
 bool|Template $item Returns the new Template on success, or false on failure
 
-## Meta
+## Details
 
 - @todo: clone the fieldgroup context settings too.

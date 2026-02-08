@@ -14,8 +14,8 @@ $newestChild = $page->child("sort=-created");
 
 ## Arguments
 
-- string|array|int $selector Selector to use, or blank to return the first child.
-- array $options Optional options per Pages::find
+- `$selector` (optional) `string|array|int` Selector to use, or blank to return the first child.
+- `$options` (optional) `array` Optional options per Pages::find
 
 ## Return value
 

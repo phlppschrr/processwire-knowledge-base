@@ -6,11 +6,11 @@ Custom markup form render
 
 ## Arguments
 
-- string $id
-- string $class
-- array $attrs
-- array $labels
-- array $inputValues
+- `$id` `string`
+- `$class` `string`
+- `$attrs` `array`
+- `$labels` `array`
+- `$inputValues` `array`
 
 ## Return value
 

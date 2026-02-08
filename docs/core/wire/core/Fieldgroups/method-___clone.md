@@ -8,8 +8,8 @@ If the new item uses a 'name' field, it will contain a number at the end to make
 
 ## Arguments
 
-- Saveable $item Item to clone
-- string $name
+- `$item` `Saveable` Item to clone
+- `$name` (optional) `string`
 
 ## Return value
 

@@ -6,13 +6,13 @@ Add multiple results at once
 
 ## Arguments
 
-- string $group Group name for these search results
-- array $results Associative array where keys are URLs and values are titles/labels
+- `$group` `string` Group name for these search results
+- `$results` `array` Associative array where keys are URLs and values are titles/labels
 
 ## Return value
 
 true
 
-## Meta
+## Since
 
-- @since 3.0.240
+3.0.240

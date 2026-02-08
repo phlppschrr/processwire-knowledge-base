@@ -6,7 +6,7 @@ Return a readable selector from bookmark for output purposes
 
 ## Arguments
 
-- array $bookmark
+- `$bookmark` `array`
 
 ## Return value
 

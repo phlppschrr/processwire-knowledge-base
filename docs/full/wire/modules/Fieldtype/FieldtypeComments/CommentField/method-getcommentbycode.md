@@ -6,8 +6,8 @@ Given a comment code or subcode, return the associated comment ID or 0 if it doe
 
 ## Arguments
 
-- Page|int|string $page
-- string $code
+- `$page` `Page|int|string`
+- `$code` `string`
 
 ## Return value
 

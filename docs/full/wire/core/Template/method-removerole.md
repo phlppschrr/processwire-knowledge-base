@@ -6,8 +6,8 @@ Remove a Role to this template for view, edit, create, or add permission
 
 ## Arguments
 
-- Role|int|string $role Role instance, id or name
-- string $type Type of role being added, one of: view, edit, create, add. (default=view) You may also specify “all” to remove the role entirely from all possible usages in the template.
+- `$role` `Role|int|string` Role instance, id or name
+- `$type` (optional) `string` Type of role being added, one of: view, edit, create, add. (default=view) You may also specify “all” to remove the role entirely from all possible usages in the template.
 
 ## Return value
 

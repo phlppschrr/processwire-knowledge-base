@@ -6,4 +6,4 @@ Check that the given Field's table exists and create it if it doesn't
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`

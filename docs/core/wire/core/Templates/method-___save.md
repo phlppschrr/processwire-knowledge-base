@@ -10,7 +10,7 @@ $templates->save($template);
 
 ## Arguments
 
-- Saveable|Template $item Template to save
+- `$item` `Saveable|Template` Template to save
 
 ## Return value
 

@@ -10,13 +10,13 @@ Meaning a unit like megabytes (for example) can be specified as 'm', 'mb', 'mega
 
 ## Arguments
 
-- string|int|float $value
-- string|null $unit Optional unit that given value is in (b, kb, mb, gb, tb), or omit to auto-detect
+- `$value` `string|int|float`
+- `$unit` (optional) `string|null` Optional unit that given value is in (b, kb, mb, gb, tb), or omit to auto-detect
 
 ## Return value
 
 int
 
-## Meta
+## Since
 
-- @since 3.0.214
+3.0.214

@@ -6,8 +6,8 @@ Create and return a cloned copy of the given Field
 
 ## Arguments
 
-- Field $item Field to clone
-- string $name Optionally specify name for new cloned item
+- `$item` `Field` Field to clone
+- `$name` (optional) `string` Optionally specify name for new cloned item
 
 ## Return value
 

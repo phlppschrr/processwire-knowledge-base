@@ -6,8 +6,8 @@ Set the current filename being rendered
 
 ## Arguments
 
-- string $filename
+- `$filename` `string`
 
-## Meta
+## Deprecated
 
-- @deprecated Moved to fileReady() and fileFinished()
+Moved to fileReady() and fileFinished()

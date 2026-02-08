@@ -6,7 +6,7 @@ Get the prefix for the given bookmark type
 
 ## Arguments
 
-- int $type
+- `$type` `int`
 
 ## Return value
 

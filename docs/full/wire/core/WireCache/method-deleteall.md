@@ -10,6 +10,6 @@ This method deletes all caches other than those with `WireCache::expireReserved`
 
 int Quantity of caches deleted
 
-## Meta
+## Since
 
-- @since 3.0.130
+3.0.130

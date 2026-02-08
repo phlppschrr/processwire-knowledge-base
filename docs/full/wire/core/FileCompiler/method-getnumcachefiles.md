@@ -6,8 +6,8 @@ Get a count of how many files are in the cache
 
 ## Arguments
 
-- bool $all Specify true to get a count for all file compiler caches
-- string $targetPath for internal recursion use, public calls should omit this
+- `$all` (optional) `bool` Specify true to get a count for all file compiler caches
+- `$targetPath` (optional) `string` for internal recursion use, public calls should omit this
 
 ## Return value
 

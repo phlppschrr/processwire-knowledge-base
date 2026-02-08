@@ -6,4 +6,4 @@ Add a <body> class to the admin theme
 
 ## Arguments
 
-- string $className
+- `$className` `string`

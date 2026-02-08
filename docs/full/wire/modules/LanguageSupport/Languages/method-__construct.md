@@ -6,6 +6,6 @@ Construct
 
 ## Arguments
 
-- ProcessWire $wire
-- array $templates
-- array $parents
+- `$wire` `ProcessWire`
+- `$templates` (optional) `array`
+- `$parents` (optional) `array`

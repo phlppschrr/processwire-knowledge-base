@@ -6,7 +6,7 @@ Enables use of $var('key')
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

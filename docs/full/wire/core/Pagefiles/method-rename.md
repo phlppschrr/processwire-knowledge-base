@@ -9,8 +9,8 @@ Note this differs from the behavior of `Pagefile::rename()`.
 
 ## Arguments
 
-- Pagefile $item
-- string $name
+- `$item` `Pagefile`
+- `$name` `string`
 
 ## Return value
 

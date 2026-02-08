@@ -6,8 +6,8 @@ Apply a found pages table row to the $result and return corresponding path
 
 ## Arguments
 
-- array $parts
-- array|null $row
+- `$parts` `array`
+- `$row` `array|null`
 
 ## Return value
 

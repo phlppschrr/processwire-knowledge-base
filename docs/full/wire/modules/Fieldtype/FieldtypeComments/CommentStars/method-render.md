@@ -9,8 +9,8 @@ If given an int for $stars, it will only render whole stars.
 
 ## Arguments
 
-- int|float|null $stars Number of stars that are in active state
-- bool $allowInput Whether to allow input of stars
+- `$stars` (optional) `int|float|null` Number of stars that are in active state
+- `$allowInput` (optional) `bool` Whether to allow input of stars
 
 ## Return value
 

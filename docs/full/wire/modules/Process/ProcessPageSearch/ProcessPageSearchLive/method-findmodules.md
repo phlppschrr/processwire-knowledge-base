@@ -6,8 +6,8 @@ Find modules matching query
 
 ## Arguments
 
-- array $liveSearch
-- array $modulesInfo
+- `$liveSearch` `array`
+- `$modulesInfo` `array`
 
 ## Return value
 

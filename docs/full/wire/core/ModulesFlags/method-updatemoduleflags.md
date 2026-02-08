@@ -6,5 +6,5 @@ Update module flags if any happen to differ from what's in the given moduleInfo
 
 ## Arguments
 
-- int $moduleID
-- array $info
+- `$moduleID` `int`
+- `$info` `array`

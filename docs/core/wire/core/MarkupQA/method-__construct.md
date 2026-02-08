@@ -6,5 +6,5 @@ Construct
 
 ## Arguments
 
-- Page|null $page
-- Field|null $field
+- `$page` (optional) `Page|null`
+- `$field` (optional) `Field|null`

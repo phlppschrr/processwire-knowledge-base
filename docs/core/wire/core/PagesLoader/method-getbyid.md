@@ -35,9 +35,9 @@ Use the `$options` array for potential speed optimizations:
 
 ## Arguments
 
-- array|WireArray|string|int $_ids Array of page IDs, comma or pipe-separated string of IDs, or single page ID (string or int) or in 3.0.156+ array of associative arrays where each in format: [ 'id' => 123, 'templates_id' => 456 ]
-- Template|array|string|int|null $template Specify a template to make the load faster, because it won't have to attempt to join all possible fields... just those used by the template. Optionally specify an $options array instead, see the method notes above.
-- int|null $parent_id Specify a parent to make the load faster, as it reduces the possibility for full table scans. This argument is ignored when an options array is supplied for the $template.
+- `$_ids` `array|WireArray|string|int` Array of page IDs, comma or pipe-separated string of IDs, or single page ID (string or int) or in 3.0.156+ array of associative arrays where each in format: [ 'id' => 123, 'templates_id' => 456 ]
+- `$template` (optional) `Template|array|string|int|null` Specify a template to make the load faster, because it won't have to attempt to join all possible fields... just those used by the template. Optionally specify an $options array instead, see the method notes above.
+- `$parent_id` (optional) `int|null` Specify a parent to make the load faster, as it reduces the possibility for full table scans. This argument is ignored when an options array is supplied for the $template.
 
 ## Return value
 

@@ -10,12 +10,12 @@ $data = WireData([ 'hello' => 'world', 'foo' => 'bar' ]);
 
 ## Arguments
 
-- array|\Traversable $data Can be an associative array or Traversable object of data to set, or omit if not needed
+- `$data` (optional) `array|\Traversable` Can be an associative array or Traversable object of data to set, or omit if not needed
 
 ## Return value
 
 WireData
 
-## Meta
+## Since
 
-- @since 3.0.126
+3.0.126

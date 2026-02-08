@@ -8,7 +8,7 @@ Template method used by ___save()
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

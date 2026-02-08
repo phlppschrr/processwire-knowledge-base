@@ -8,8 +8,8 @@ This method is designed to prevent one email header from injecting into another.
 
 ## Arguments
 
-- string $value
-- bool $headerName Sanitize a header name rather than header value? (default=false) Since 3.0.132
+- `$value` `string`
+- `$headerName` (optional) `bool` Sanitize a header name rather than header value? (default=false) Since 3.0.132
 
 ## Return value
 

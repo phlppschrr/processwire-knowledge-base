@@ -6,7 +6,7 @@ Does this template have the given Role?
 
 ## Arguments
 
-- string|Role|Page $role Name of Role or Role object.
+- `$role` `string|Role|Page` Name of Role or Role object.
 - string|Permission Specify one of the following: - `view` (default) - `edit` - `create` - `add` - Or a `Permission` object of `page-view` or `page-edit`
 
 ## Return value

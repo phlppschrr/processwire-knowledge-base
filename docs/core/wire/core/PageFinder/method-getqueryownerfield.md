@@ -6,8 +6,8 @@ Process an owner back reference selector for PageTable, Page and Repeater fields
 
 ## Arguments
 
-- string $fieldName Field name in "fieldName__owner" format
-- array $data Data as provided to getQueryUnknownField method
+- `$fieldName` `string` Field name in "fieldName__owner" format
+- `$data` `array` Data as provided to getQueryUnknownField method
 
 ## Return value
 

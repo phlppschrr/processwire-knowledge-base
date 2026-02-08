@@ -6,8 +6,8 @@ Prepare a word or phrase for use in an RLIKE statement
 
 ## Arguments
 
-- string $value
-- array $options
+- `$value` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

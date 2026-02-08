@@ -17,6 +17,6 @@ $wire->addHookAfter('ProcessPageSearchLive::getDefaultPageSearchFields', functio
 
 array
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

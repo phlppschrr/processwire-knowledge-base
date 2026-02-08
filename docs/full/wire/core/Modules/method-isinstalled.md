@@ -6,7 +6,7 @@ Is the given module name installed?
 
 ## Arguments
 
-- string $class Just a module class name, or optionally: `ModuleClassName>=1.2.3` (operator and version)
+- `$class` `string` Just a module class name, or optionally: `ModuleClassName>=1.2.3` (operator and version)
 
 ## Return value
 

@@ -6,9 +6,9 @@ Save a cache
 
 ## Arguments
 
-- string $name
-- string $data
-- string $expire
+- `$name` `string`
+- `$data` `string`
+- `$expire` `string`
 
 ## Return value
 

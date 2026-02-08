@@ -6,14 +6,14 @@ Populate file regions
 
 ## Arguments
 
-- array $fileRegions Regions found by findRegions()
-- string $html HTML to populate them into
-- array $options
+- `$fileRegions` `array` Regions found by findRegions()
+- `$html` `string` HTML to populate them into
+- `$options` (optional) `array`
 
 ## Return value
 
 string Returned value only useful if autoInsert=true
 
-## Meta
+## Since
 
-- @since 3.0.254
+3.0.254

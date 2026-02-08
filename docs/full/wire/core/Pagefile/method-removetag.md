@@ -13,7 +13,7 @@ $file->removeTag(['foo', 'bar', 'baz']); // same as above, using array
 
 ## Arguments
 
-- string $tag Tag to remove, or array of tags to remove, or CSV string of tags to remove.
+- `$tag` `string` Tag to remove, or array of tags to remove, or CSV string of tags to remove.
 
 ## Return value
 
@@ -25,6 +25,6 @@ $this
 - [Pagefile::hasTag()](method-hastag.md)
 - [Pagefile::addTag()](method-addtag.md)
 
-## Meta
+## Since
 
-- @since 3.0.17
+3.0.17

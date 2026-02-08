@@ -12,9 +12,9 @@ echo $value; // outputs "4"
 
 ## Arguments
 
-- string $name Name of MySQL variable you want to retrieve
-- bool $cache Allow use of cached values? (default=true)
-- bool $sub Allow substitution of MyISAM variable names to InnoDB equivalents when InnoDB is engine? (default=true)
+- `$name` `string` Name of MySQL variable you want to retrieve
+- `$cache` (optional) `bool` Allow use of cached values? (default=true)
+- `$sub` (optional) `bool` Allow substitution of MyISAM variable names to InnoDB equivalents when InnoDB is engine? (default=true)
 
 ## Return value
 

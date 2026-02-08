@@ -6,4 +6,4 @@ Set whether or not to use trash
 
 ## Arguments
 
-- bool $useTrash
+- `$useTrash` `bool`

@@ -6,7 +6,7 @@ Attempt to match path to page using shortcuts and return true if shortcut found
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

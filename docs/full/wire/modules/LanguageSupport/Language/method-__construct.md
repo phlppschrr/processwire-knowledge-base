@@ -6,4 +6,4 @@ Construct a new Language instance
 
 ## Arguments
 
-- Template|null $tpl
+- `$tpl` (optional) `Template|null`

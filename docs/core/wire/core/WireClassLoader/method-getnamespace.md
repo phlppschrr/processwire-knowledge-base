@@ -6,7 +6,7 @@ Return array of paths for the given namespace, or empty array if none found
 
 ## Arguments
 
-- string $namespace
+- `$namespace` `string`
 
 ## Return value
 

@@ -8,7 +8,7 @@ This method only proceeds if the path contains no slashes, meaning it is 1-level
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

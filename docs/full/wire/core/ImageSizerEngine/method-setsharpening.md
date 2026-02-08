@@ -6,7 +6,7 @@ Set sharpening value: blank (for none), soft, medium, or strong
 
 ## Arguments
 
-- mixed $value
+- `$value` `mixed`
 
 ## Return value
 

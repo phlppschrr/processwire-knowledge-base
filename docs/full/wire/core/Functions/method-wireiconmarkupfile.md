@@ -11,8 +11,8 @@ echo wireIconMarkupFile('file.pdf');
 
 ## Arguments
 
-- string $filename Can be any type of filename (with or without path).
-- string|bool $class Additional class attributes, i.e. "fw" for fixed-width (optional). Or specify boolean TRUE to get just the icon class name (no markup).
+- `$filename` `string` Can be any type of filename (with or without path).
+- `$class` (optional) `string|bool` Additional class attributes, i.e. "fw" for fixed-width (optional). Or specify boolean TRUE to get just the icon class name (no markup).
 
 ## Return value
 

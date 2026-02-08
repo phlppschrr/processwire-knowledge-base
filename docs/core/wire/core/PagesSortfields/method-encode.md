@@ -8,8 +8,8 @@ The returned value will be a negative value (or string preceded by a dash) if th
 
 ## Arguments
 
-- string $sortfield
-- string $default Default sortfield name (default='sort')
+- `$sortfield` `string`
+- `$default` (optional) `string` Default sortfield name (default='sort')
 
 ## Return value
 

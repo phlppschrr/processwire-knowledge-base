@@ -6,5 +6,5 @@ Construct WireHooks
 
 ## Arguments
 
-- ProcessWire $wire
-- Config $config
+- `$wire` `ProcessWire`
+- `$config` `Config`

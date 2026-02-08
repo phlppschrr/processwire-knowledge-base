@@ -9,8 +9,8 @@ If you specify null for any header value, it removes the header (since 3.0.131).
 
 ## Arguments
 
-- array $headers Associative array of headers to set
-- array $options Options to modify default behavior (since 3.0.131): - `reset` (bool): Reset/clear all existing headers first? (default=false) - `replacements` (array): Associative array of [ find => replace ] values to replace in header values (default=[])
+- `$headers` `array` Associative array of headers to set
+- `$options` (optional) `array` Options to modify default behavior (since 3.0.131): - `reset` (bool): Reset/clear all existing headers first? (default=false) - `replacements` (array): Associative array of [ find => replace ] values to replace in header values (default=[])
 
 ## Return value
 

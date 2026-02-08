@@ -6,8 +6,8 @@ Hook called when fatal error received by shutdown()
 
 ## Arguments
 
-- array $error
+- `$error` `array`
 
-## Meta
+## Since
 
-- @since 3.0.173
+3.0.173

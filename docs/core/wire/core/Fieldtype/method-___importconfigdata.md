@@ -9,8 +9,8 @@ Most modules can use the default implementation provided here.
 
 ## Arguments
 
-- Field $field
-- array $data
+- `$field` `Field`
+- `$data` `array`
 
 ## Return value
 

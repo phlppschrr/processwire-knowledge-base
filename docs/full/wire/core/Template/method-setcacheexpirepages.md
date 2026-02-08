@@ -6,4 +6,4 @@ Set the cacheExpirePages property
 
 ## Arguments
 
-- array $value
+- `$value` `array`

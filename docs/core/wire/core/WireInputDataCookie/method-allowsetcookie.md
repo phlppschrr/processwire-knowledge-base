@@ -6,7 +6,7 @@ Allow cookie with given name to be set or unset?
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 

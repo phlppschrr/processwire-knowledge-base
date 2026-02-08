@@ -10,7 +10,7 @@ $item->remove('some_property');
 
 ## Arguments
 
-- string $key Name of property you want to remove
+- `$key` `string` Name of property you want to remove
 
 ## Return value
 

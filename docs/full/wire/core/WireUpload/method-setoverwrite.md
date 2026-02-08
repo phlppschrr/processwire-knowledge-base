@@ -6,7 +6,7 @@ Set whether or not overwrite is allowed
 
 ## Arguments
 
-- bool $overwrite
+- `$overwrite` `bool`
 
 ## Return value
 

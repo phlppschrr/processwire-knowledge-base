@@ -14,7 +14,7 @@ use and are NOT stored in the database.
 
 ## Arguments
 
-- Field $field
+- `$field` `Field`
 
 ## Return value
 

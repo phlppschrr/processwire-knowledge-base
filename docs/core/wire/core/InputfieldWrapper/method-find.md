@@ -6,7 +6,7 @@ Find all children Inputfields matching a selector string
 
 ## Arguments
 
-- string $selector Required selector string to filter the children by
+- `$selector` `string` Required selector string to filter the children by
 
 ## Return value
 

@@ -11,7 +11,7 @@ You should follow-up the construct call with one or both of the following:
 
 ## Arguments
 
-- string $path Path where database files are stored
+- `$path` (optional) `string` Path where database files are stored
 
 ## Throws
 

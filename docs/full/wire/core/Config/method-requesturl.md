@@ -23,13 +23,13 @@ if($config->requestUrl([ 'foo', 'bar', 'baz' ])) {
 
 ## Arguments
 
-- string|array $match Optionally return URL only if some part matches given string(s) (default='')
-- string $get Specify 'path' to get and/or match path, 'query' to get and/or match query string, or omit for URL (default='')
+- `$match` (optional) `string|array` Optionally return URL only if some part matches given string(s) (default='')
+- `$get` (optional) `string` Specify 'path' to get and/or match path, 'query' to get and/or match query string, or omit for URL (default='')
 
 ## Return value
 
 string Returns URL string or blank string if $match argument used and doesn’t match.
 
-## Meta
+## Since
 
-- @since 3.0.175
+3.0.175

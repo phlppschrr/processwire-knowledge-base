@@ -15,9 +15,9 @@ if($database->isOperator('>=')) {
 
 ## Arguments
 
-- string $str 1-2 character operator to test
-- bool|null|int $operatorType Specify a WireDatabasePDO::operatorType* constant (3.0.162+), or any one of the following (3.0.143+): - `NULL`: allow all operators (default value if not specified) - `FALSE`: allow only comparison operators - `TRUE`: allow only bitwise operators
-- bool $get Return the operator rather than true, when valid? (default=false) Added 3.0.162
+- `$str` `string` 1-2 character operator to test
+- `$operatorType` (optional) `bool|null|int` Specify a WireDatabasePDO::operatorType* constant (3.0.162+), or any one of the following (3.0.143+): - `NULL`: allow all operators (default value if not specified) - `FALSE`: allow only comparison operators - `TRUE`: allow only bitwise operators
+- `$get` (optional) `bool` Return the operator rather than true, when valid? (default=false) Added 3.0.162
 
 ## Return value
 

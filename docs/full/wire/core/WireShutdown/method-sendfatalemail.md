@@ -6,9 +6,9 @@ Send fatal error email
 
 ## Arguments
 
-- string $url
-- string $userName
-- string $message
+- `$url` `string`
+- `$userName` `string`
+- `$message` `string`
 
 ## Return value
 

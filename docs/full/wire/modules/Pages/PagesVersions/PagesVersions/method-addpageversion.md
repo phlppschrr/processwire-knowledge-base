@@ -12,8 +12,8 @@ echo "Added version $version for page $page";
 
 ## Arguments
 
-- Page $page
-- array $options - `description` (string): Optional text description for version. - `names` (array): Names of fields/properties to include in the version or omit for all.
+- `$page` `Page`
+- `$options` (optional) `array` - `description` (string): Optional text description for version. - `names` (array): Names of fields/properties to include in the version or omit for all.
 
 ## Return value
 

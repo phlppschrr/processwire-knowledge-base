@@ -10,8 +10,8 @@ Inputfield present in the children.
 
 ## Arguments
 
-- Inputfield $inputfield The Inputfield to render.
-- bool $renderValueMode Specify true if we are only rendering values (default=false).
+- `$inputfield` `Inputfield` The Inputfield to render.
+- `$renderValueMode` (optional) `bool` Specify true if we are only rendering values (default=false).
 
 ## Return value
 

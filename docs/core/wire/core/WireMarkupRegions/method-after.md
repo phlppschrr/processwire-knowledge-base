@@ -6,10 +6,10 @@ Insert the region(s) that match the given $selector after the given $content mar
 
 ## Arguments
 
-- string $selector See the update() method for details
-- string $content Markup to prepend
-- string $markup Document markup where region(s) exist
-- array $options See the update() method for details
+- `$selector` `string` See the update() method for details
+- `$content` `string` Markup to prepend
+- `$markup` `string` Document markup where region(s) exist
+- `$options` (optional) `array` See the update() method for details
 
 ## Return value
 

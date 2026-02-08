@@ -6,8 +6,8 @@ Resize the image proportionally to the given width/height
 
 ## Arguments
 
-- int $targetWidth Target width in pixels, or 0 for proportional to height
-- int $targetHeight Target height in pixels, or 0 for proportional to width. Optional-if not specified, 0 is assumed.
+- `$targetWidth` `int` Target width in pixels, or 0 for proportional to height
+- `$targetHeight` (optional) `int` Target height in pixels, or 0 for proportional to width. Optional-if not specified, 0 is assumed.
 
 ## Return value
 

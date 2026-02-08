@@ -26,9 +26,9 @@ $value = $page->edit('field_name');
 
 ## Arguments
 
-- string|bool|null $key Name of field, omit to get editor active status, or boolean true to enable editor.
-- string|bool|null $markup Markup user should click on to edit $fieldName (typically omitted).
-- bool|null $modal Specify true to force editable region to open a modal window (typically omitted).
+- `$key` (optional) `string|bool|null` Name of field, omit to get editor active status, or boolean true to enable editor.
+- `$markup` (optional) `string|bool|null` Markup user should click on to edit $fieldName (typically omitted).
+- `$modal` (optional) `bool|null` Specify true to force editable region to open a modal window (typically omitted).
 
 ## Return value
 
@@ -38,6 +38,6 @@ string|bool|mixed
 
 - [https://processwire.com/docs/front-end/](https://processwire.com/docs/front-end/)
 
-## Meta
+## Since
 
-- @since 3.0.0 This method is added by a hook in PageFrontEdit and only shown in this class for documentation purposes.
+3.0.0 This method is added by a hook in PageFrontEdit and only shown in this class for documentation purposes.

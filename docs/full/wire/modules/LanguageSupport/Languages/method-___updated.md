@@ -6,5 +6,5 @@ Hook called when a language is added or deleted
 
 ## Arguments
 
-- Page $language
-- string $what What occurred? ('added' or 'deleted')
+- `$language` `Page`
+- `$what` `string` What occurred? ('added' or 'deleted')

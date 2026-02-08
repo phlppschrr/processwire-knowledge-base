@@ -11,8 +11,8 @@ $pageimage = new Pageimage($page->images, '/path/to/file.png');
 
 ## Arguments
 
-- Pagefiles $pagefiles
-- string $filename Full path and filename to this pagefile
+- `$pagefiles` `Pagefiles`
+- `$filename` `string` Full path and filename to this pagefile
 
 ## Throws
 

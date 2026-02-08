@@ -6,7 +6,7 @@ Return whether or not GD can proceed - Is the current image(sub)format supported
 
 ## Arguments
 
-- string $action
+- `$action` (optional) `string`
 
 ## Return value
 

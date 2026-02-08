@@ -6,7 +6,7 @@ Update paths for template info like urlSegments and pageNum and populate urls pr
 
 ## Arguments
 
-- string $path
+- `$path` `string`
 
 ## Return value
 

@@ -14,14 +14,14 @@ from the matching row in the pages table.
 
 ## Arguments
 
-- string|int|array|Selectors $selector
-- bool $verbose Return verbose array with all pages columns rather than just page id? (default=false)
-- array $options Additional options to pass in find() $options argument (not currently applicable)
+- `$selector` `string|int|array|Selectors`
+- `$verbose` (optional) `bool` Return verbose array with all pages columns rather than just page id? (default=false)
+- `$options` (optional) `array` Additional options to pass in find() $options argument (not currently applicable)
 
 ## Return value
 
 array|int
 
-## Meta
+## Since
 
-- @since 3.0.153
+3.0.153

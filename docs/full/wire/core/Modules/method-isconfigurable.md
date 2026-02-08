@@ -55,13 +55,13 @@ if($configurable === true) {
 
 ## Arguments
 
-- Module|string $class Module name
-- bool $useCache Use caching? This accepts a few options: - Specify boolean `true` to allow use of cache when available (default behavior). - Specify boolean `false` to disable retrieval of this property from getModuleInfo (forces a new check). - Specify string `interface` to check only if module implements ConfigurableModule interface. - Specify string `file` to check only if module has a separate configuration class/file.
+- `$class` `Module|string` Module name
+- `$useCache` (optional) `bool` Use caching? This accepts a few options: - Specify boolean `true` to allow use of cache when available (default behavior). - Specify boolean `false` to disable retrieval of this property from getModuleInfo (forces a new check). - Specify string `interface` to check only if module implements ConfigurableModule interface. - Specify string `file` to check only if module has a separate configuration class/file.
 
 ## Return value
 
 bool|string|int See details about return values in method description.
 
-## Meta
+## Since
 
-- @since 3.0.16
+3.0.16

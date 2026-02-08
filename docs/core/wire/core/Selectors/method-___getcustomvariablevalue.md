@@ -12,12 +12,12 @@ If hooking this method, /site/ready.php is recommended.
 
 ## Arguments
 
-- string $name
+- `$name` `string`
 
 ## Return value
 
 null|string
 
-## Meta
+## Since
 
-- @since 3.0.255
+3.0.255

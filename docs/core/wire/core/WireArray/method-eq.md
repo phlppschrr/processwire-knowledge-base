@@ -8,7 +8,7 @@ Unlike the `WireArray::index()` method, this returns an actual item and not anot
 
 ## Arguments
 
-- int $num Return the n'th item in this WireArray. Specify a negative number to count from the end rather than the start.
+- `$num` `int` Return the n'th item in this WireArray. Specify a negative number to count from the end rather than the start.
 
 ## Return value
 

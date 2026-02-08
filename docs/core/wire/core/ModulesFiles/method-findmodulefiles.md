@@ -8,9 +8,9 @@ If $readCache is true, this will perform the find from the cache
 
 ## Arguments
 
-- string $path Path to the modules
-- bool $readCache Optional. If set to true, then this method will attempt to read modules from the cache.
-- int $level For internal recursive use.
+- `$path` `string` Path to the modules
+- `$readCache` (optional) `bool` Optional. If set to true, then this method will attempt to read modules from the cache.
+- `$level` (optional) `int` For internal recursive use.
 
 ## Return value
 

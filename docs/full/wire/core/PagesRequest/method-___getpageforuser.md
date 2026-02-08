@@ -10,8 +10,8 @@ Returns different page if it should be substituted due to lack of access (like l
 
 ## Arguments
 
-- Page $page
-- User $user
+- `$page` `Page`
+- `$user` `User`
 
 ## Return value
 

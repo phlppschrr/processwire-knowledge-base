@@ -10,15 +10,15 @@ from the given HTML.
 
 ## Arguments
 
-- string|array $to Email address TO. For multiple, specify CSV string or array.
-- string $subject Email subject
+- `$to` `string|array` Email address TO. For multiple, specify CSV string or array.
+- `$subject` `string` Email subject
 - string|array Email message in HTML
-- array $headers Optional additional headers as [name=value] array or "Name: Value" newline-separated string. Use this argument to duplicate PHP mail() style arguments. No need to use if you used $options array for the $message argument.
+- `$headers` (optional) `array` Optional additional headers as [name=value] array or "Name: Value" newline-separated string. Use this argument to duplicate PHP mail() style arguments. No need to use if you used $options array for the $message argument.
 
 ## Return value
 
 bool True on success, false on fail.
 
-## Meta
+## Since
 
-- @since 3.0.109
+3.0.109

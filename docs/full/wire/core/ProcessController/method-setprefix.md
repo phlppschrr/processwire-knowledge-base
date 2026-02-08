@@ -10,4 +10,4 @@ to fully resolve the class name.
 
 ## Arguments
 
-- string $prefix
+- `$prefix` `string`

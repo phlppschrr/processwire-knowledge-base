@@ -11,7 +11,7 @@ When getting, if $page or $field have not been populated, verbose is always fals
 
 ## Arguments
 
-- bool|null $set Omit this argument to get or specify bool to set
+- `$set` (optional) `bool|null` Omit this argument to get or specify bool to set
 
 ## Return value
 

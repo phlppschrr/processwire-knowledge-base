@@ -6,12 +6,12 @@ Does the given table exist in this database?
 
 ## Arguments
 
-- string $table
+- `$table` `string`
 
 ## Return value
 
 bool
 
-## Meta
+## Since
 
-- @since 3.0.133
+3.0.133

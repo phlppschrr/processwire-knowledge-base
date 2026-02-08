@@ -6,7 +6,7 @@ Throws an exception if the token is invalid
 
 ## Arguments
 
-- int|string|null $id Optional unique ID for this token
+- `$id` (optional) `int|string|null` Optional unique ID for this token
 
 ## Return value
 

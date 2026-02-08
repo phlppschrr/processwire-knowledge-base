@@ -6,8 +6,8 @@ Convert image to sepia
 
 ## Arguments
 
-- string $dstFilename If different from source file
-- float|int $sepia Sepia value
+- `$dstFilename` (optional) `string` If different from source file
+- `$sepia` (optional) `float|int` Sepia value
 
 ## Return value
 

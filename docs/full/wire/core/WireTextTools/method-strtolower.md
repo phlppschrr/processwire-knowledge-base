@@ -6,7 +6,7 @@ Make a string lowercase
 
 ## Arguments
 
-- string $str
+- `$str` `string`
 
 ## Return value
 

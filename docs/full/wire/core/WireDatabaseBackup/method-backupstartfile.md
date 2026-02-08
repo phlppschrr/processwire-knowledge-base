@@ -6,8 +6,8 @@ Start a new backup file, adding our info header to the top
 
 ## Arguments
 
-- string $file
-- array $options
+- `$file` `string`
+- `$options` `array`
 
 ## Return value
 

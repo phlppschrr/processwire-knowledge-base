@@ -8,7 +8,7 @@ Also removes data-pw-id and pw-id attributes
 
 ## Arguments
 
-- string $html
+- `$html` `string`
 
 ## Return value
 

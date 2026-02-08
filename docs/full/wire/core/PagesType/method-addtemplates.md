@@ -6,4 +6,4 @@ Add one or more templates that this PagesType represents
 
 ## Arguments
 
-- array|int|string $templates Single or array of Template objects, IDs, or names
+- `$templates` `array|int|string` Single or array of Template objects, IDs, or names

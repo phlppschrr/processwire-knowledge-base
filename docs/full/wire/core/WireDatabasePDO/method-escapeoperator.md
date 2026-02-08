@@ -6,9 +6,9 @@ Sanitize comparison operator
 
 ## Arguments
 
-- string $operator
-- bool|int|null $operatorType Specify a WireDatabasePDO::operatorType* constant (default=operatorTypeComparison)
-- string $default Default/fallback operator to return if given one is not valid (default='=')
+- `$operator` `string`
+- `$operatorType` (optional) `bool|int|null` Specify a WireDatabasePDO::operatorType* constant (default=operatorTypeComparison)
+- `$default` (optional) `string` Default/fallback operator to return if given one is not valid (default='=')
 
 ## Return value
 

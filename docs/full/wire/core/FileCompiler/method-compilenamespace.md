@@ -6,7 +6,7 @@ Compile global class/interface/function references to namespaced versions
 
 ## Arguments
 
-- string $data
+- `$data` `string`
 
 ## Return value
 

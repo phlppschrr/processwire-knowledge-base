@@ -6,9 +6,9 @@ Multi-selector version of find(), where $selector contains CSV
 
 ## Arguments
 
-- string $selector
-- string $markup
-- array $options
+- `$selector` `string`
+- `$markup` `string`
+- `$options` (optional) `array`
 
 ## Return value
 

@@ -6,7 +6,7 @@ Identify this Pageimage as a variation, by setting the Pageimage it was resized 
 
 ## Arguments
 
-- Pageimage $image
+- `$image` `Pageimage`
 
 ## Return value
 

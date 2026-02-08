@@ -8,4 +8,4 @@ Unlike after(delete), it has already been confirmed that the item was indeed del
 
 ## Arguments
 
-- Saveable $item
+- `$item` `Saveable`

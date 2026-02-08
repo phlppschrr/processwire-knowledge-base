@@ -6,8 +6,8 @@ Save only the given named fields for this page
 
 ## Arguments
 
-- array|string $fields Array of field name(s) or string (CSV or space separated)
-- array $options See Pages::save() documentation for options.
+- `$fields` `array|string` Array of field name(s) or string (CSV or space separated)
+- `$options` (optional) `array` See Pages::save() documentation for options.
 
 ## Return value
 
@@ -21,6 +21,6 @@ array Names of fields that were saved
 
 - [Page::save()](method-save.md)
 
-## Meta
+## Since
 
-- @since 3.0.242
+3.0.242

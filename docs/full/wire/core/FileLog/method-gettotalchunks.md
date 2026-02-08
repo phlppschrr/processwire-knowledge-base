@@ -6,7 +6,7 @@ Get the total number of chunks in the file
 
 ## Arguments
 
-- int $chunkSize
+- `$chunkSize` (optional) `int`
 
 ## Return value
 

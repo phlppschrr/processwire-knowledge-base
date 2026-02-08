@@ -6,8 +6,8 @@ Given a Selector string, return the page IDs that match
 
 ## Arguments
 
-- string $selectorString
-- array $options
+- `$selectorString` `string`
+- `$options` (optional) `array`
 
 ## Return value
 
@@ -17,6 +17,6 @@ array
 
 - [Pages::findIDs()](../Pages/method-findids.md)
 
-## Meta
+## Since
 
-- @since 3.0.128
+3.0.128

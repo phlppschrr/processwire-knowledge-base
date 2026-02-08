@@ -11,7 +11,7 @@ The PagePermissions does use this function for some of it's checking.
 ## Arguments
 
 - string|Permission
-- Page|null $page Optional page to check against
+- `$page` (optional) `Page|null` Optional page to check against
 
 ## Return value
 

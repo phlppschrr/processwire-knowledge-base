@@ -14,12 +14,12 @@ steps should be processed:
 
 ## Arguments
 
-- mixed $gdWidth
-- mixed $gdHeight
-- mixed $targetWidth
-- mixed $targetHeight
-- mixed $x1
-- mixed $y1
+- `$gdWidth` `mixed`
+- `$gdHeight` `mixed`
+- `$targetWidth` `mixed`
+- `$targetHeight` `mixed`
+- `$x1` `mixed`
+- `$y1` `mixed`
 
 ## Return value
 

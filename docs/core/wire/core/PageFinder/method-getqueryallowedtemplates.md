@@ -6,5 +6,5 @@ Determine which templates the user is allowed to view
 
 ## Arguments
 
-- DatabaseQuerySelect $query
-- array $options
+- `$query` `DatabaseQuerySelect`
+- `$options` `array`

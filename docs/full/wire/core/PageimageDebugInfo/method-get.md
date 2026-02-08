@@ -9,7 +9,7 @@ directly from this class.
 
 ## Arguments
 
-- string $key
+- `$key` `string`
 
 ## Return value
 

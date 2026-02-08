@@ -14,10 +14,10 @@ This is similar to the existing entities() method with the following differences
 
 ## Arguments
 
-- array|string|int|float|object|bool $value
-- int $flags
-- string $encoding
-- bool $doubleEncode
+- `$value` `array|string|int|float|object|bool`
+- `$flags` (optional) `int`
+- `$encoding` (optional) `string`
+- `$doubleEncode` (optional) `bool`
 
 ## Return value
 
@@ -28,6 +28,6 @@ array|string|int|float|bool
 - [Sanitizer::entitiesA1()](method-entitiesa1.md)
 - [Sanitizer::entities()](method-entities.md)
 
-## Meta
+## Since
 
-- @since 3.0.194
+3.0.194

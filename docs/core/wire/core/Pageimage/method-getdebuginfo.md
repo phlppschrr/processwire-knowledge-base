@@ -8,13 +8,13 @@ Optionally with individual options array.
 
 ## Arguments
 
-- array $options The individual options you also passes with your image variation creation
-- string $returnType 'string'|'array'|'object', default is 'string' and returns markup or plain text
+- `$options` (optional) `array` The individual options you also passes with your image variation creation
+- `$returnType` (optional) `string` 'string'|'array'|'object', default is 'string' and returns markup or plain text
 
 ## Return value
 
 array|object|string
 
-## Meta
+## Since
 
-- @since 3.0.132
+3.0.132

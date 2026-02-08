@@ -21,14 +21,14 @@ if($info) {
 
 ## Arguments
 
-- string $table
-- string $indexName
-- bool $getInfo Return arrays of index information rather than boolean true? (default=false) Note that the verbose arrays are the raw MySQL return values from a SHOW INDEX command.
+- `$table` `string`
+- `$indexName` `string`
+- `$getInfo` (optional) `bool` Return arrays of index information rather than boolean true? (default=false) Note that the verbose arrays are the raw MySQL return values from a SHOW INDEX command.
 
 ## Return value
 
 bool|array Returns one of the following: - `false`: if index does not exist (regardless of $getInfo argument). - `true`: if index exists and $getInfo argument is omitted or false. - `array`: array of arrays with verbose information if index exists and $getInfo argument is true.
 
-## Meta
+## Since
 
-- @since 3.0.182
+3.0.182

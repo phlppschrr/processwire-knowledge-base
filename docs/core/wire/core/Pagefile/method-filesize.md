@@ -6,7 +6,7 @@ Returns the filesize in number of bytes.
 
 ## Arguments
 
-- bool $reset
+- `$reset` (optional) `bool`
 
 ## Return value
 

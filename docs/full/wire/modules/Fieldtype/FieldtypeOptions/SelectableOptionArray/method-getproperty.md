@@ -6,7 +6,7 @@ Enables this WireArray to behave like the first item (for getting properties)
 
 ## Arguments
 
-- string $property
+- `$property` `string`
 
 ## Return value
 

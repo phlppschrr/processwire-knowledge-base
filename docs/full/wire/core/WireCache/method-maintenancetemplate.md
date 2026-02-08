@@ -6,7 +6,7 @@ Run maintenance for a template that was just saved or deleted
 
 ## Arguments
 
-- Template $template
+- `$template` `Template`
 
 ## Return value
 

@@ -15,7 +15,7 @@ $de = languages('de'); // Get another language (shorcut syntax)
 
 ## Arguments
 
-- string|int $name Optional Language name or ID for language to retrieve
+- `$name` (optional) `string|int` Optional Language name or ID for language to retrieve
 
 ## Return value
 

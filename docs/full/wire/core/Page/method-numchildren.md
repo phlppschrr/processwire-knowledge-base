@@ -16,7 +16,7 @@ $qty = $page->numChildren("modified>='-1 WEEK'");
 
 ## Arguments
 
-- bool|string|array $selector - When not specified, result includes all children without conditions, same as $page->numChildren property. - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible children (excludes unpublished, hidden, no-access, etc.) - When boolean false, number includes all children without conditions, including unpublished, hidden, no-access, etc. - When integer 1 number includes “viewable” children (as opposed to “visible” children, viewable children includes hidden pages and also includes unpublished pages if user has page-edit permission).
+- `$selector` (optional) `bool|string|array` - When not specified, result includes all children without conditions, same as $page->numChildren property. - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible children (excludes unpublished, hidden, no-access, etc.) - When boolean false, number includes all children without conditions, including unpublished, hidden, no-access, etc. - When integer 1 number includes “viewable” children (as opposed to “visible” children, viewable children includes hidden pages and also includes unpublished pages if user has page-edit permission).
 
 ## Return value
 

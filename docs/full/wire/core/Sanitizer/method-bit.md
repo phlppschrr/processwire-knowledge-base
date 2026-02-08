@@ -8,7 +8,7 @@ This works the same as the bool sanitizer except that it returns 0 or 1 rather t
 
 ## Arguments
 
-- string|int|array $value
+- `$value` `string|int|array`
 
 ## Return value
 
@@ -18,6 +18,6 @@ int
 
 - [Sanitizer::bool()](method-bool.md)
 
-## Meta
+## Since
 
-- @since 3.0.125
+3.0.125

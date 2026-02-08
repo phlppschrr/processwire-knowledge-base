@@ -6,8 +6,8 @@ Initialize new find operation and prepare options
 
 ## Arguments
 
-- Selectors $selectors
-- array $options
+- `$selectors` `Selectors`
+- `$options` `array`
 
 ## Return value
 

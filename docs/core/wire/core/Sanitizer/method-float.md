@@ -15,8 +15,8 @@ Values for `getString` argument:
 
 ## Arguments
 
-- float|string|int $value
-- array $options Optionally specify one or more options in an associative array: - `precision` (int|null): Optional number of digits to round to (default=null) - `mode` (int): Mode to use for rounding precision (default=PHP_ROUND_HALF_UP); - `blankValue` (null|int|string|float): Value to return (whether float or non-float) if provided $value is an empty non-float (default=0.0) - `min` (float|null): Minimum allowed value, excluding blankValue (default=null) - `max` (float|null): Maximum allowed value, excluding blankValue (default=null) - `getString (bool|string): Return a string rather than float value? 3.0.171+ (default=false). See value options in method description.
+- `$value` `float|string|int`
+- `$options` (optional) `array` Optionally specify one or more options in an associative array: - `precision` (int|null): Optional number of digits to round to (default=null) - `mode` (int): Mode to use for rounding precision (default=PHP_ROUND_HALF_UP); - `blankValue` (null|int|string|float): Value to return (whether float or non-float) if provided $value is an empty non-float (default=0.0) - `min` (float|null): Minimum allowed value, excluding blankValue (default=null) - `max` (float|null): Maximum allowed value, excluding blankValue (default=null) - `getString (bool|string): Return a string rather than float value? 3.0.171+ (default=false). See value options in method description.
 
 ## Return value
 

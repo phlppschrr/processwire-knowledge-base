@@ -6,7 +6,7 @@ Escape a string value, plus escape characters necessary for a MySQL 'LIKE' phras
 
 ## Arguments
 
-- string $like
+- `$like` `string`
 
 ## Return value
 

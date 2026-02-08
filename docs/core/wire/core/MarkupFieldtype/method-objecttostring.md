@@ -6,7 +6,7 @@ Render an object to a string
 
 ## Arguments
 
-- Wire|object $value
+- `$value` `Wire|object`
 
 ## Return value
 
