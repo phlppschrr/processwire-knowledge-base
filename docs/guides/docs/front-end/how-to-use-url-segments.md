@@ -143,22 +143,3 @@ When using pagination, you may also see page numbers in URLs, like /a/b/c/page2/
 ### URL segment whitelist
 
 If you don't want your template file to have to determine when to throw a 404 for unknown URL segment(s) you can define a whitelist of URL segments. This is done by editing any template (Setup > Templates > your_template) and then clicking on the URLs tab. You'll see a “Which URL Segments do you want to allow?” field where you can directly specify the URL segments you want to allow, or a regular expression to match what's allowed.
-- [Front-end](/docs/front-end/)
-- [Output strategies](/docs/front-end/output/)
-- [URL segments and routing](/docs/front-end/how-to-use-url-segments/)
-- [Include & bootstrap](/docs/front-end/include/)
-- [Front-end editing](/docs/front-end/front-end-editing/)
-- [Pagination](/docs/front-end/markup-pager-nav/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

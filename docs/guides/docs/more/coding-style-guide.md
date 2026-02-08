@@ -995,22 +995,3 @@ public function someMethod($arg1, $arg2) {
   // method body
 }
 ```
-
-- [More topics](/docs/more/)
-- [Multi-site support](/docs/more/multi-site-support/)
-- [Coding style guide](/docs/more/coding-style-guide/)
-- [Tracy debugger](https://adrianbj.github.io/TracyDebugger/#/)
-- [LazyCron](/docs/more/lazy-cron/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

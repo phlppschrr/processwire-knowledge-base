@@ -212,29 +212,3 @@ However, that convenience comes with a compromise. Writable directories with exe
 If your environment is non-dedicated and you have to supply any "all" (or even "group") write permissions, then don't have a writable /site/modules/ directory. You are safer just installing modules by FTP in this environment.
 
 To reiterate and put it in different terms: if your writable permissions for ProcessWire require any permission higher than 755 for directories or 644 for files, and you are not in a fully dedicated environment, then **do not** have a writable /site/modules/ directory under any circumstance. Manage your modules with other tools (FTP, SCP, rsync, etc.) in this scenario.
-- [Security](/docs/security/)
-- [Securing file permissions](/docs/security/file-permissions/)
-- [Securing your admin](/docs/security/admin/)
-- [Web hosting security](/docs/security/web-hosting/)
-- [Migrating to production](/docs/security/migration/)
-- [Remove unnecessary files](/docs/security/remove-unnecessary-files/)
-- [Database-driven sessions](/docs/security/sessions/)
-- [Running ProcessWire alongside other software](/docs/security/other-software/)
-- [Third party modules](/docs/security/third-party-modules/)
-- [Template files](/docs/security/template-files/)
-- [2-factor authentication](/docs/security/two-factor-authentication/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-[Securing your admin](/docs/security/admin/)

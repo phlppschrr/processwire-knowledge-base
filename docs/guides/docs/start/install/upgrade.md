@@ -64,29 +64,3 @@ Sometimes people have made changes to the .htaccess file. If this is the case fo
 ### Troubleshooting upgrades
 
 Please see our [Troubleshooting Upgrades](https://processwire.com/docs/start/install/troubleshooting/#troubleshooting-upgrades) page.
-- [Installation](/docs/start/install/)
-- [Install](/docs/start/install/new/)
-- [Upgrade](/docs/start/install/upgrade/)
-- [Troubleshoot](/docs/start/install/troubleshooting/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-- [Getting started](/docs/start/)
-- [Installation](/docs/start/install/)
-- [Structure](/docs/start/structure/)
-- [About the API](/docs/start/api/)
-- [Template files](/docs/start/templates/)
-- [API variables](/docs/start/variables/)
-- [API access](/docs/start/api-access/)
-- [Output strategies](/docs/front-end/output/)

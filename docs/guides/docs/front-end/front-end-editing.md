@@ -158,25 +158,3 @@ All of the front-end editing features are provided by a module included with the
 Any time you edit a field in the admin (Setup > Fields) you'll see a "Front-end editing" section on the "Input" tab (at the bottom). If you don't have *PageFrontEdit* installed, it gives you a button you can click to automatically install it. When the module is installed, the "Front-end editing" section in your field editor shows you all of the options mentioned above but within the context of the field you are editing. If the field does not support one of the options, it is disabled in the copy/paste examples it gives you.
 
 By the way, the *PageFrontEdit* module has a configuration screen that lists all of the fields that you can enable for option A (automatic editing), with checkboxes for each to enable. These checkboxes are not applicable to options B through D mentioned above, just option A.
-- [Front-end](/docs/front-end/)
-- [Output strategies](/docs/front-end/output/)
-- [URL segments and routing](/docs/front-end/how-to-use-url-segments/)
-- [Include & bootstrap](/docs/front-end/include/)
-- [Front-end editing](/docs/front-end/front-end-editing/)
-- [Pagination](/docs/front-end/markup-pager-nav/)
-
-- See also
-- [Front-end editing now in ProcessWire 3.0 alpha-4](/blog/posts/front-end-editing-now-in-processwire-3.0-alpha-4/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

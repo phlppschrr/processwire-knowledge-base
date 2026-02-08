@@ -27,6 +27,10 @@ UNWANTED = [
     {"class": "pw-sidebar"},
     {"class": "pw-footer"},
     {"class": "pw-search-form"},
+    {"class": "prev-next-links"},
+    {"id": "content-secondary"},
+    {"id": "content-meta"},
+    {"id": "content-side"},
     {"name": "nav"},
     {"name": "header"},
     {"name": "footer"},
@@ -267,6 +271,8 @@ def convert_guides(cache, urls, out):
                 for crit in UNWANTED:
                     if "class" in crit:
                         for el in content.find_all(class_=crit["class"]): el.decompose()
+                    elif "id" in crit:
+                        for el in content.find_all(id=crit["id"]): el.decompose()
                     elif "name" in crit:
                         for el in content.find_all(crit["name"]): el.decompose()
 

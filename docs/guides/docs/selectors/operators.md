@@ -331,22 +331,3 @@ So that looks like a pretty complex operator there, but as you've seen by follow
 - `~|%=` Contains any words like
 
 I think a more likely scenario in a site search is that you might stack two operators, such as the *= followed by the ~|*=, or whatever combination suits your need. So long as you are running ProcessWire 3.0.161 or newer, you can do this with any operators, not just the text searching ones.
-- [Selectors](/docs/selectors/)
-- [Operators](/docs/selectors/operators/)
-
-- See also
-- [Selectors](/docs/selectors/)
-- [Powerful new text-searching abilities in 3.0.160](/blog/posts/pw-3.0.160/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

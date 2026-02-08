@@ -49,37 +49,3 @@ Learn more →
 ](/docs/security/two-factor-authentication/email/)
 This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…
 Learn more →
-
-- [2-factor authentication](/docs/security/two-factor-authentication/)
-- [TOTP 2-factor authentication (TfaTotp)](/docs/security/two-factor-authentication/totp/)
-- [Email/SMS 2-factor authentication (TfaEmail)](/docs/security/two-factor-authentication/email/)
-
-- [Security](/docs/security/)
-- [Securing file permissions](/docs/security/file-permissions/)
-- [Securing your admin](/docs/security/admin/)
-- [Web hosting security](/docs/security/web-hosting/)
-- [Migrating to production](/docs/security/migration/)
-- [Remove unnecessary files](/docs/security/remove-unnecessary-files/)
-- [Database-driven sessions](/docs/security/sessions/)
-- [Running ProcessWire alongside other software](/docs/security/other-software/)
-- [Third party modules](/docs/security/third-party-modules/)
-- [Template files](/docs/security/template-files/)
-- [2-factor authentication](/docs/security/two-factor-authentication/)
-
-- See also
-- [ProcessWire 3.0.115 and 3.0.116 core updates](/blog/posts/processwire-3.0.115-and-3.0.116-core-updates/)
-- [ProcessWire 3.0.109 adds two-factor authentication](/blog/posts/processwire-3.0.109-adds-two-factor-authentication/)
-- [2-factor authentication coming to ProcessWire](/blog/posts/2-factor-authentication-coming-to-processwire/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

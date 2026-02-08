@@ -27,27 +27,3 @@ When creating new modules that fall in this category of predefined types, the mo
 - Use the prefix **LanguageSupport** for modules that provide multi-language features and don't match an existing predefined type.
 
 Outside of these module types and naming conventions, you are welcome to use whatever name you'd like when developing a module.
-- [Modules & hooks](/docs/modules/)
-- [Introduction to modules](/docs/modules/intro/)
-- [Module development](/docs/modules/development/)
-- [Module types](/docs/modules/types/)
-- [Using hooks](/docs/modules/hooks/)
-- [Pro modules](/store/)
-- [About the /site/modules/ directory](/docs/modules/about-site-modules/)
-- [Third-party modules](https://modules.processwire.com)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-[Module development](/docs/modules/development/)
-[Using hooks](/docs/modules/hooks/)

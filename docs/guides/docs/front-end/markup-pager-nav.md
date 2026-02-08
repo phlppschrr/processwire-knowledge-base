@@ -177,22 +177,3 @@ Below is a reference of all the options available, along with the defaults.[](#)
 | currentItemClass | Class attribute (string) used for the "current/active/on" button list item (the page number being viewed). *Default: MarkupPagerNavOn * |
 
 For more information please see the [MarkupPagerNav API reference](https://processwire.com/api/ref/markup-pager-nav/) page.
-- [Front-end](/docs/front-end/)
-- [Output strategies](/docs/front-end/output/)
-- [URL segments and routing](/docs/front-end/how-to-use-url-segments/)
-- [Include & bootstrap](/docs/front-end/include/)
-- [Front-end editing](/docs/front-end/front-end-editing/)
-- [Pagination](/docs/front-end/markup-pager-nav/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

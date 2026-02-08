@@ -82,19 +82,3 @@ Roles are assigned to users, but they are also assigned to templates that have a
 ### Enabling template access control
 
 You can enable access control for a template from the template editor *Access* tab (Setup > Templates > your_template > Access). From here you can dictate what roles are allowed to view, edit, create, add new pages, and more. Any role can be assigned for view permission, but only roles that have at least [page-edit permission](/docs/user-access/permissions/#page-edit) are assignable for edit/add/create access in these template access settings. Once a template has access control enabled, these can also be assigned in the role editor—see the section above on [permissions with template context](#permissions-with-template-context).
-- [Access control](/docs/user-access/)
-- [Roles](/docs/user-access/roles/)
-- [Permissions](/docs/user-access/permissions/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

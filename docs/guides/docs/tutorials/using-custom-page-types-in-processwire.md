@@ -199,28 +199,3 @@ Also as hooks are just runtime replacements for real methods they don't have fea
 ### Finish up
 
 I hope you enjoyed this excursion into some more advanced ProcessWire usage and you learned something new. Maybe this can encourage you to explore the core files of ProcessWire on your own. It can be exciting to not use a magic box anymore, but understand a bit about what's actually happening.
-- [Tutorials](/docs/tutorials/)
-- [A Beginner’s Guide To ProcessWire](https://www.smashingmagazine.com/2016/07/the-aesthetic-of-non-opinionated-content-management-a-beginners-guide-to-processwire/)
-- [How to install and setup ProcessWire CMS](https://webdesign.tutsplus.com/tutorials/how-to-install-and-setup-processwire-cms--cms-25509)
-- [Hello Worlds](/docs/tutorials/hello-worlds/)
-- [How to Create an AJAX Driven Theme for ProcessWire](https://webdesign.tutsplus.com/tutorials/how-to-create-an-ajax-driven-theme-for-processwire--cms-26579)
-- [A Beginner’s Introduction to Writing Modules in ProcessWire](https://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-writing-modules-in-processwire--cms-26862)
-- [Extending the ProcessWire Admin Using Custom Modules](https://webdesign.tutsplus.com/tutorials/extending-the-processwire-admin-using-custom-modules--cms-26863)
-- [How to Develop a Processwire Theme](https://webdesign.tutsplus.com/tutorials/how-to-develop-a-processwire-theme--cms-25692)
-- [Default site profile](/docs/tutorials/default-site-profile/)
-- [How to structure your template files](/docs/tutorials/how-to-structure-your-template-files/)
-- [Using custom page types in ProcessWire](/docs/tutorials/using-custom-page-types-in-processwire/)
-- [More tutorials](https://www.pwtuts.com)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

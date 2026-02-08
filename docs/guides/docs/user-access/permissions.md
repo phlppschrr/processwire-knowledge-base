@@ -339,19 +339,3 @@ Also note that when this permission is present in your system, a user must have 
 ### lang-edit
 
 In ProcessWire 2.6.23 (2.7) and newer you can add this permission to give users access to the language tools in Setup > Languages. This is largely useful for performing translations of static files like when creating language packs, or when [translating phrases in your site template files](http://processwire.com/docs/multi-language-support/code-i18n/#translatable-strings). If you want to limit access to only a specific language, install the page-edit-lang-[name] permissions as described above, and ProcessWire will also consider these for access to language pages in Setup > Languages.
-- [Access control](/docs/user-access/)
-- [Roles](/docs/user-access/roles/)
-- [Permissions](/docs/user-access/permissions/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

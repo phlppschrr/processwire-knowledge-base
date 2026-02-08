@@ -73,25 +73,3 @@ Selecting this option provides the following quality assurance for `<img>` tags:
 Selecting this option enables ProcessWire to provide quality assurance for your internal links referenced by `<a>` tags. When selected, ProcessWire will manage the a[href] attributes, ensuring they always point to the right page. If a link points to a page which has moved, ProcessWire will update the href attribute automatically when the field is rendered, so that it points to the correct location. If a link points to a page which no longer exists (or is in the Trash) ProcessWire will record the error to the "markup-qa-errors" log file (Setup > Logs > markup-qa-errors).
 
 *Note that the link management option works only for page fields saved after the option has been enabled. *
-- [Fields, types, input](/docs/fields/)
-- [Introduction to fields](/docs/start/structure/fields/)
-- [Field dependencies](/docs/fields/dependencies/)
-- [Repeaters](/docs/fields/repeaters/)
-- [Textarea](/docs/fields/textarea-fieldtype/)
-- [Select options](/docs/fields/select-options-fieldtype/)
-- [Images](/docs/fields/images/)
-- [Multi-language fields](/docs/multi-language-support/multi-language-fields/)
-- [CKEditor](/docs/fields/ckeditor/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

@@ -69,33 +69,3 @@ A template can be configured to cache its output on the front-end, so that it on
 #### Advanced
 
 A template can be categorized with tags, it can customize the page editor (when an edited page is using the template), it can dictate how required fields are handled, it can control how using it appear in the page list, and more.
-- [Structure](/docs/start/structure/)
-- [Pages](/docs/start/structure/pages/)
-- [Templates](/docs/start/structure/templates/)
-- [Fields](/docs/start/structure/fields/)
-- [File system](/docs/start/structure/files/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-- [Getting started](/docs/start/)
-- [Installation](/docs/start/install/)
-- [Structure](/docs/start/structure/)
-- [About the API](/docs/start/api/)
-- [Template files](/docs/start/templates/)
-- [API variables](/docs/start/variables/)
-- [API access](/docs/start/api-access/)
-- [Output strategies](/docs/front-end/output/)
-
-[Pages](/docs/start/structure/pages/)
-[Fields](/docs/start/structure/fields/)

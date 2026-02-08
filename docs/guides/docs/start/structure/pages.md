@@ -71,32 +71,3 @@ The benefit of everything being a Page is that this keeps the both the admin UI 
 There is no hard limit to the number of pages you can have in ProcessWire, and they are designed to scale infinitely, within the limits of the database. A given page might be packed with fields, content and files, or it might only have a simple title field. Pages are highly flexible and likely to be your best choice for managing content, no matter how much or little is needed on any given Page.
 
 As scale increases, ProcessWire is ready-to-go with pagination of pages, lazy-loading pages, load-on-demand fields/content, caching of page loads and output, and more. ProcessWire is built with the assumption that your scale is large, regardless of how small or large it actually is, so that there is a quality, consistency and ease-of-use that transcends scale.
-- [Structure](/docs/start/structure/)
-- [Pages](/docs/start/structure/pages/)
-- [Templates](/docs/start/structure/templates/)
-- [Fields](/docs/start/structure/fields/)
-- [File system](/docs/start/structure/files/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-- [Getting started](/docs/start/)
-- [Installation](/docs/start/install/)
-- [Structure](/docs/start/structure/)
-- [About the API](/docs/start/api/)
-- [Template files](/docs/start/templates/)
-- [API variables](/docs/start/variables/)
-- [API access](/docs/start/api-access/)
-- [Output strategies](/docs/front-end/output/)
-
-[Templates](/docs/start/structure/templates/)

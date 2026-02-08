@@ -135,32 +135,3 @@ Like in jQuery, you can chain method calls in ProcessWire if you want to. This i
 ### Traversing
 
 Like in jQuery, most traversing methods return values that can themselves be traversed and compared. For instance, a call to `$page->find(...)` or `$page->children(...)` returns an array type that also has its own methods for find(), filter(), first(), has(), add(), filter() and so on.
-- [Getting started](/docs/start/)
-- [Installation](/docs/start/install/)
-- [Structure](/docs/start/structure/)
-- [About the API](/docs/start/api/)
-- [Template files](/docs/start/templates/)
-- [API variables](/docs/start/variables/)
-- [API access](/docs/start/api-access/)
-- [Output strategies](/docs/front-end/output/)
-
-- See also
-- [API Reference](/api/ref/)
-- [API variables](/docs/start/variables/)
-- [Selectors](/docs/selectors/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-[Structure](/docs/start/structure/)
-[Template files](/docs/start/templates/)

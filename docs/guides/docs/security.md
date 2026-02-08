@@ -87,28 +87,3 @@ Learn more →
 ](/docs/security/two-factor-authentication/)
 Two factor authentication gives you an extra layer of account security relative to just using a password. ProcessWire comes…
 Learn more →
-
-- [Security](/docs/security/)
-- [Securing file permissions](/docs/security/file-permissions/)
-- [Securing your admin](/docs/security/admin/)
-- [Web hosting security](/docs/security/web-hosting/)
-- [Migrating to production](/docs/security/migration/)
-- [Remove unnecessary files](/docs/security/remove-unnecessary-files/)
-- [Database-driven sessions](/docs/security/sessions/)
-- [Running ProcessWire alongside other software](/docs/security/other-software/)
-- [Third party modules](/docs/security/third-party-modules/)
-- [Template files](/docs/security/template-files/)
-- [2-factor authentication](/docs/security/two-factor-authentication/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

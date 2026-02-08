@@ -114,30 +114,3 @@ After taking the standard template-level access control into account, consider t
 
 **Balancing complexity**
 Be careful not to over-complicate your access control settings beyond your security needs. ProcessWire will let you create very powerful and complex access control scenarios in your admin, but that doesn't mean that you should. Increasing complexity can also reduce security, as the who/what/where of access control becomes more difficult to keep track of. For this reason, only introduce fine granular access control settings (such as field-level access control) into your installation in cases where you need it, and where it adds additional clarity or simplicity to the overall access control setup. Find the right balance that maximizes security while limiting complexity.
-- [Security](/docs/security/)
-- [Securing file permissions](/docs/security/file-permissions/)
-- [Securing your admin](/docs/security/admin/)
-- [Web hosting security](/docs/security/web-hosting/)
-- [Migrating to production](/docs/security/migration/)
-- [Remove unnecessary files](/docs/security/remove-unnecessary-files/)
-- [Database-driven sessions](/docs/security/sessions/)
-- [Running ProcessWire alongside other software](/docs/security/other-software/)
-- [Third party modules](/docs/security/third-party-modules/)
-- [Template files](/docs/security/template-files/)
-- [2-factor authentication](/docs/security/two-factor-authentication/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-[Securing file permissions](/docs/security/file-permissions/)
-[Web hosting security](/docs/security/web-hosting/)

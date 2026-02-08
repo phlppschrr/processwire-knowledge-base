@@ -45,23 +45,3 @@ Learn more →
 ](/docs/front-end/markup-pager-nav/)
 This module renders navigation for pagination. Such navigation usually appears as a list of "1, 2, 3, next…" links at…
 Learn more →
-
-- [Front-end](/docs/front-end/)
-- [Output strategies](/docs/front-end/output/)
-- [URL segments and routing](/docs/front-end/how-to-use-url-segments/)
-- [Include & bootstrap](/docs/front-end/include/)
-- [Front-end editing](/docs/front-end/front-end-editing/)
-- [Pagination](/docs/front-end/markup-pager-nav/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

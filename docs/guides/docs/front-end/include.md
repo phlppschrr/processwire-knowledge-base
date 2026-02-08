@@ -104,22 +104,3 @@ We'll use the same example as in the shell script above, except that we'll use m
 ```
 
 You can do anything with ProcessWire's API that you can do from a template, so everything you can do in template files still applies, as does everything in the [developer API](/api/ref/).
-- [Front-end](/docs/front-end/)
-- [Output strategies](/docs/front-end/output/)
-- [URL segments and routing](/docs/front-end/how-to-use-url-segments/)
-- [Include & bootstrap](/docs/front-end/include/)
-- [Front-end editing](/docs/front-end/front-end-editing/)
-- [Pagination](/docs/front-end/markup-pager-nav/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

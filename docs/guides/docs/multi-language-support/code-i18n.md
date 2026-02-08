@@ -296,26 +296,3 @@ echo __('Page saved', $pages);
 ```
 
 Note that the above is a contrived example used for demonstration purposes only, as $pages doesn't actually have any translatable phrases in it.
-- [Multi-language](/docs/multi-language-support/)
-- [Code i18n](/docs/multi-language-support/code-i18n/)
-- [Multi-language fields](/docs/multi-language-support/multi-language-fields/)
-- [Multi-language URLs](/docs/multi-language-support/multi-language-urls/)
-- [Language Packs](http://modules.processwire.com/categories/language-pack/)
-- [Multi-Language Support Forum](https://processwire.com/talk/forum/14-multi-language-support/)
-- [Hreflang tag generator](/docs/multi-language-support/hreflang-generator/)
-- [Creating multi-language modules](https://processwire.com/docs/modules/development/multi-language-translations/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-[Multi-language fields](/docs/multi-language-support/multi-language-fields/)

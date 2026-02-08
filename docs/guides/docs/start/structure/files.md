@@ -46,30 +46,3 @@ Note: To upgrade ProcessWire, you simply replace the entire /wire/ directory wit
 | /site/templates/scripts/ | Javascript files specific to your site. You may locate this directory elsewhere, and/or rename it, if you prefer. |
 
 Note: The /site/templates/ directory is the most used directory in developing a site.
-- [Structure](/docs/start/structure/)
-- [Pages](/docs/start/structure/pages/)
-- [Templates](/docs/start/structure/templates/)
-- [Fields](/docs/start/structure/fields/)
-- [File system](/docs/start/structure/files/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-- [Getting started](/docs/start/)
-- [Installation](/docs/start/install/)
-- [Structure](/docs/start/structure/)
-- [About the API](/docs/start/api/)
-- [Template files](/docs/start/templates/)
-- [API variables](/docs/start/variables/)
-- [API access](/docs/start/api-access/)
-- [Output strategies](/docs/front-end/output/)

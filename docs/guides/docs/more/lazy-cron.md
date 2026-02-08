@@ -95,21 +95,3 @@ In most cases, the way that LazyCron works out of the box is just fine. But if y
 `wget --quiet --no-cache -O - http://www.your-site.com > /dev/null`
 
 That command basically says to pull a page from the site, don't tell us anything, don't cache the request, and discard any output.
-- [More topics](/docs/more/)
-- [Multi-site support](/docs/more/multi-site-support/)
-- [Coding style guide](/docs/more/coding-style-guide/)
-- [Tracy debugger](https://adrianbj.github.io/TracyDebugger/#/)
-- [LazyCron](/docs/more/lazy-cron/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

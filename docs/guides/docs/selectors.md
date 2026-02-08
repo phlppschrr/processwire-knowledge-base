@@ -602,19 +602,3 @@ $pages->get("/cities/")->find("template=skyscraper, body*=empire state building"
 ](/docs/selectors/operators/)
 A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=”…
 Learn more →
-
-- [Selectors](/docs/selectors/)
-- [Operators](/docs/selectors/operators/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

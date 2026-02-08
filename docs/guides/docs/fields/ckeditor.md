@@ -136,25 +136,3 @@ Lets say that you had a field named `body`. You could target it specifically in 
 Note the `.Inputfield_body` part, as `body` is the name of the field in ProcessWire.
 
 If you will use the same `contents-inline.css` file for all of your inline fields, then just make sure it is specified with the settings for each of your CKEditor inline textarea fields, otherwise you may end up reverting back to the default `contents-inline.css`.
-- [Fields, types, input](/docs/fields/)
-- [Introduction to fields](/docs/start/structure/fields/)
-- [Field dependencies](/docs/fields/dependencies/)
-- [Repeaters](/docs/fields/repeaters/)
-- [Textarea](/docs/fields/textarea-fieldtype/)
-- [Select options](/docs/fields/select-options-fieldtype/)
-- [Images](/docs/fields/images/)
-- [Multi-language fields](/docs/multi-language-support/multi-language-fields/)
-- [CKEditor](/docs/fields/ckeditor/)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)

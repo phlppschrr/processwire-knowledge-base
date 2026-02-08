@@ -264,31 +264,3 @@ Want help with module development? We are glad to help and have a [forum board](
 ](/docs/modules/development/multi-language-translations/)
 If you are a module developer, you might want to bundle multi-language translations with your module. This page covers all the…
 Learn more →
-
-- [Module development](/docs/modules/development/)
-- [Add multi-language translations to your module](/docs/modules/development/multi-language-translations/)
-
-- [Modules & hooks](/docs/modules/)
-- [Introduction to modules](/docs/modules/intro/)
-- [Module development](/docs/modules/development/)
-- [Module types](/docs/modules/types/)
-- [Using hooks](/docs/modules/hooks/)
-- [Pro modules](/store/)
-- [About the /site/modules/ directory](/docs/modules/about-site-modules/)
-- [Third-party modules](https://modules.processwire.com)
-
-- [Docs](/docs/)
-- [API reference](/api/ref/)
-- [Getting started](/docs/start/)
-- [Front-end](/docs/front-end/)
-- [Tutorials](/docs/tutorials/)
-- [Selectors](/docs/selectors/)
-- [Modules & hooks](/docs/modules/)
-- [Fields, types, input](/docs/fields/)
-- [Access control](/docs/user-access/)
-- [Security](/docs/security/)
-- [Multi-language](/docs/multi-language-support/)
-- [More topics](/docs/more/)
-
-[Introduction to modules](/docs/modules/intro/)
-[Module types](/docs/modules/types/)
