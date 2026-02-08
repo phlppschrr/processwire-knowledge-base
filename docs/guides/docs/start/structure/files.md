@@ -28,16 +28,18 @@ ProcessWire only creates two directories from your root. This includes /wire and
 
 ### Root installation directory (/)
 
-| /.htaccess | Required directives to Apache |
+|  |  |
 | --- | --- |
+| /.htaccess | Required directives to Apache |
 | `/index.php` | Bootstrap index file |
 | `/install.php` | Installation script (you should delete this after installation) |
 
 
 ### Core and modules (/wire/)
 
-| /wire/core/ | ProcessWire core |
+|  |  |
 | --- | --- |
+| /wire/core/ | ProcessWire core |
 | /wire/modules/ | Default plugin modules |
 | /wire/templates-admin/ | Templates, stylesheets and scripts for the admin control panel |
 
@@ -46,8 +48,9 @@ Note: To upgrade ProcessWire, you simply replace the entire /wire/ directory wit
 
 ### All files unique to a given site (/site/)
 
-| `/site/config.php` | Your site's configuration file |
+|  |  |
 | --- | --- |
+| `/site/config.php` | Your site's configuration file |
 | /site/assets/ | All writable assets including files, images, cache files, logs and temporary files created by ProcessWire. |
 | /site/install/ | Installation profile. You should delete this directory after installation. |
 | /site/modules/ | Any plugin modules unique to a given site (optional). |

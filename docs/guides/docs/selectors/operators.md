@@ -24,8 +24,9 @@ A selector like “field=value” consists of three parts—the field (or fields
 
 ## Operator index
 
-| `=` | [Equal to](/docs/selectors/operators/#equal) | Given value is the same as value compared to. |
+|  |  |  |
 | --- | --- | --- |
+| `=` | [Equal to](/docs/selectors/operators/#equal) | Given value is the same as value compared to. |
 | `!=` | [Not equal to](/docs/selectors/operators/#not-equal) | Given value is not the same as value compared to. |
 | `<` | [Less than](/docs/selectors/operators/#less-than) | Compared value is less than given value. |
 | `>` | [Greater than](/docs/selectors/operators/#greater-than) | Compared value is greater than given value. |

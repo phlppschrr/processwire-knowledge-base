@@ -92,8 +92,9 @@ Note that when sizing an image, a new copy is created and cached, so that it doe
 
 ### Image resize functions
 
-| `$img = $image->width($x)` | Create a new image at width $x, and proportional in height to the original. |
+|  |  |
 | --- | --- |
+| `$img = $image->width($x)` | Create a new image at width $x, and proportional in height to the original. |
 | `$img = $image->width($x, $options)` | Same as above, except with additional array of options* specified. |
 | `$img = $image->height($y)` | Create a new image at height $y, and proportional in width to the original. |
 | `$img = $image->height($y, $options)` | Same as above, except with additional array of options* specified. |
@@ -119,8 +120,9 @@ $img = $image->size($x, $y, $options);
 
 You may specify any of the following for the $options array:
 
-| quality | Quality setting of 1–100 (integer), where 1 is worst and 100 is best. Default is 90. |
+|  |  |
 | --- | --- |
+| quality | Quality setting of 1–100 (integer), where 1 is worst and 100 is best. Default is 90. |
 | upscaling | Allow upscaling? (boolean). If set to false, options sent to width(), height() and size() functions become maximum values rather than absolutes. Meaning, if you ask for an image 900 pixels wide and this is larger than the original image, it won't be upscaled to reach that dimension. The default setting is true, meaning you'll always get an image at the sized you asked for, even if upscaling is required. |
 | cropping (as a boolean) | The default value of 'cropping' is true, meaning cropping is allowed to reach target dimensions. If you want to disallow cropping, set to false. |
 | cropping (as a direction) | If a direction string is specified, any necessary cropping will target the given direction. Valid values are: northwest, north, northeast, west, center, east, southwest, south and southeast. If you prefer, you may specify shorter versions: nw, n, ne, w, c, e, sw, s, se. Default is center. |
@@ -151,8 +153,9 @@ echo "<img src='$image->url' alt='$image->description' />";
 
 Here are all the image properties that are present with every image:
 
-| `$image->url` | Full URL to the image |
+|  |  |
 | --- | --- |
+| `$image->url` | Full URL to the image |
 | `$image->filename` | Image filename, including server path |
 | `$image->basename` | Image filename, without server path |
 | `$image->description` | Image description text (typically for "alt" attribute) |

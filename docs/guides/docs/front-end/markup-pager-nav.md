@@ -164,8 +164,9 @@ Below is a reference of all the options available, along with the defaults.
 
 ### Custom Options Reference
 
-| numPageLinks | Number of links (integer) that the pagination navigation should have. *Default: 10* |
+|  |  |
 | --- | --- |
+| numPageLinks | Number of links (integer) that the pagination navigation should have. *Default: 10* |
 | getVars | Array of GET vars that should appear in the pagination links, or leave empty and populate $input->whitelist (preferred). This is handy with search results that may include custom options that should remain on each paginated page (like sorting order, fields to search, etc.). It is recommended that you populate such GET vars with $input->whitelist($name, $value) rather than specifying them here as an option to MarkupPagerNav. *Default: empty* |
 | baseUrl | The baseUrl (string) from which the navigiation item links will start. You should omit this unless you are rending pagination results to some other page. *Default: blank* |
 | listMarkup | The markup (string) used to generate the list container. Place "{out}" where the list items will appear. *Default: <ul class='MarkupPagerNav'>{out}</ul> * |

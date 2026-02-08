@@ -103,8 +103,9 @@ Using the above syntax, the selector will match any pages that have a title, nam
 
 The [operator](/docs/selectors/operators/) portion of a selector may be one of the following:
 
-| `=` | [Equal to](/docs/selectors/operators/#equal) | Given value is the same as value compared to. |
+|  |  |  |
 | --- | --- | --- |
+| `=` | [Equal to](/docs/selectors/operators/#equal) | Given value is the same as value compared to. |
 | `!=` | [Not equal to](/docs/selectors/operators/#not-equal) | Given value is not the same as value compared to. |
 | `<` | [Less than](/docs/selectors/operators/#less-than) | Compared value is less than given value. |
 | `>` | [Greater than](/docs/selectors/operators/#greater-than) | Compared value is greater than given value. |

@@ -40,6 +40,7 @@ class Block:
     level: int | None = None
     items: list[str] = field(default_factory=list)
     rows: list[list[str]] = field(default_factory=list)
+    has_header: bool = False
 
 
 @dataclass
@@ -196,6 +197,7 @@ def extract_blocks_from_soup(soup: BeautifulSoup | Tag) -> list[Block]:
             # Handle tables
             if tag_name == "table":
                 rows = []
+                has_header = bool(element.find("thead") or element.find("th"))
                 for tr in element.find_all("tr"):
                     if should_suppress(tr):
                         continue
@@ -204,9 +206,10 @@ def extract_blocks_from_soup(soup: BeautifulSoup | Tag) -> list[Block]:
                         if should_suppress(td):
                             continue
                         cells.append(normalize_text(get_clean_text(td)))
-                    rows.append(cells)
+                    if cells:
+                        rows.append(cells)
                 if rows:
-                    blocks.append(Block(kind="table", rows=rows))
+                    blocks.append(Block(kind="table", rows=rows, has_header=has_header))
                 return
 
             # Handle code blocks
@@ -309,7 +312,7 @@ def maybe_wrap_code(text: str) -> str:
     return text
 
 
-def render_markdown_table(rows: list[list[str]]) -> list[str]:
+def render_markdown_table(rows: list[list[str]], has_header: bool = True) -> list[str]:
     """Render a List of Lists as a Markdown table."""
     if not rows:
         return []
@@ -322,7 +325,7 @@ def render_markdown_table(rows: list[list[str]]) -> list[str]:
     if max_cols == 0:
         return []
 
-    # Prepare rows: escape pipes, wrap code, ensure length
+    # Prepare rows: escape pipes, wrap code (if short), ensure length
     clean_rows = []
     for row in rows:
         clean_row = []
@@ -336,12 +339,26 @@ def render_markdown_table(rows: list[list[str]]) -> list[str]:
         clean_rows.append(clean_row)
 
     lines = []
+    
+    header_row = []
+    body_start_idx = 0
+
+    if has_header:
+        header_row = clean_rows[0]
+        body_start_idx = 1
+    else:
+        # Markdown REQUIRES a header. If we don't have one, use generic or empty.
+        # PW tables without headers are usually "Key | Value" or "Prop | Desc".
+        # Let's use empty headers to be safe and clean.
+        header_row = [""] * max_cols
+        body_start_idx = 0
+
     # Header
-    lines.append("| " + " | ".join(clean_rows[0]) + " |")
+    lines.append("| " + " | ".join(header_row) + " |")
     # Separator
     lines.append("| " + " | ".join(["---"] * max_cols) + " |")
     # Body
-    for row in clean_rows[1:]:
+    for row in clean_rows[body_start_idx:]:
         lines.append("| " + " | ".join(row) + " |")
     
     return lines
@@ -415,7 +432,7 @@ def render_sections(sections: list[tuple[int, str, list[Block]]], max_sections: 
             if block.kind == "table" and block.rows:
                 # Use real table if it has at least 2 columns and looks structured
                 if any(len(row) > 1 for row in block.rows):
-                    lines.extend(render_markdown_table(block.rows))
+                    lines.extend(render_markdown_table(block.rows, has_header=block.has_header))
                 else:
                     lines.extend(render_table_as_list(block.rows))
                 lines.append("")
