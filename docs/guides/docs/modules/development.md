@@ -254,13 +254,4 @@ Need to build a module that requires or installs other modules? Learn about [mod
 
 Want help with module development? We are glad to help and have a [forum board](https://processwire.com/talk/forum/19-moduleplugin-development/) dedicated to it.
 
-### 
-
-- 
-[
-
-#### Add multi-language translations to your module
-
-](/docs/modules/development/multi-language-translations/)
-If you are a module developer, you might want to bundle multi-language translations with your module. This page covers all the…
-Learn more →
+###

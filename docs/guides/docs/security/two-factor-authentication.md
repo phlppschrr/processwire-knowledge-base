@@ -33,19 +33,3 @@ You'll have about 90 seconds to get it right, as it'll accept the current, previ
 ---
 
 To begin using two-factor authentication in ProcessWire, install one of the “Tfa” modules:
-- 
-[
-
-#### TOTP 2-factor authentication (TfaTotp)
-
-](/docs/security/two-factor-authentication/totp/)
-TOTP standards for “Time-based One-Time Password”, which is an algorithm that computes a one-time password. It does this with a…
-Learn more →
-- 
-[
-
-#### Email/SMS 2-factor authentication (TfaEmail)
-
-](/docs/security/two-factor-authentication/email/)
-This is a push-based two-factor authentication method, where it sends out an email or SMS message to you with your authentication…
-Learn more →

@@ -36,7 +36,8 @@ UNWANTED = [
     {"name": "footer"},
     {"name": "script"},
     {"name": "style"},
-    {"name": "noscript"}
+    {"name": "noscript"},
+    {"class": "pw-card-pages"}
 ]
 
 class BSMarkdownConverter:
@@ -136,6 +137,22 @@ class BSMarkdownConverter:
         # Blockquote
         elif tag == 'blockquote':
             self._add_text('> ', raw=True)
+            for child in element.children:
+                self.convert(child)
+            self._ensure_newline(2)
+
+        # Definition Lists
+        elif tag == 'dl':
+            for child in element.children:
+                self.convert(child)
+            self._ensure_newline(2)
+        elif tag == 'dt':
+            self._add_text('**', raw=True)
+            for child in element.children:
+                self.convert(child)
+            self._add_text('**\n', raw=True)
+        elif tag == 'dd':
+            self._add_text(': ', raw=True)
             for child in element.children:
                 self.convert(child)
             self._ensure_newline(2)

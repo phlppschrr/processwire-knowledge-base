@@ -593,12 +593,3 @@ Find all skyscrapers that mention the phrase "empire state building" in their bo
 ```
 $pages->get("/cities/")->find("template=skyscraper, body*=empire state building");
 ```
-
-- 
-[
-
-#### Operators
-
-](/docs/selectors/operators/)
-A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=”…
-Learn more →
