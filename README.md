@@ -17,6 +17,17 @@ Each class/file is chunked into:
 - `_search.json` for compact lookup
 - `_hookable.json` for hookable method lookup
 
+## Setup
+To use the guide extraction scripts, install the Python dependencies:
+```bash
+# Optional: Create a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
 ## Update
 ```bash
 ./scripts/update-docs.sh
@@ -35,9 +46,9 @@ This will:
 - Download the ProcessWire guides from `cache/urls.txt`
 - Store HTML under `cache/docs-html/` with an `_index.json` manifest
 
-Then build the guides:
+Then build the guides (Markdown):
 ```bash
-python3 src/build_guides.py
+python3 src/convert_guides.py
 ```
 
 ## Notes
