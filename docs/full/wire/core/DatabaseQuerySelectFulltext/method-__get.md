@@ -1,7 +1,12 @@
-# DatabaseQuerySelectFulltext::__get()
+# $databaseQuerySelectFulltext->__get($name): mixed|string
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
-@param string $name
 
-@return mixed|string
+## Arguments
+
+- string $name
+
+## Return value
+
+mixed|string

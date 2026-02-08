@@ -1,11 +1,14 @@
-# WireUpload::error()
+# $wireUpload->error($text, $flags = 0): Wire|WireUpload
 
 Source: `wire/core/WireUpload.php`
 
 Record an error message
 
-@param array|Wire|string $text
+## Arguments
 
-@param int $flags
+- array|Wire|string $text
+- int $flags
 
-@return Wire|WireUpload
+## Return value
+
+Wire|WireUpload

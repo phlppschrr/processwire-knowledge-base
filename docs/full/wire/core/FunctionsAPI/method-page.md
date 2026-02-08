@@ -1,4 +1,4 @@
-# FunctionsAPI::page()
+# $functionsAPI->page($key = '', $value = null): Page|mixed
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -25,11 +25,15 @@ page()->set('headline', 'My headline'); // regular syntax
 page('headline', 'My headline'); // shortcut syntax
 ~~~~
 
+## Arguments
 
-@param string $key Optional property to get or set
+- string $key Optional property to get or set
+- null $value Optional value to set
 
-@param null $value Optional value to set
+## Return value
 
-@return Page|mixed
+Page|mixed
 
-@see Page
+## See also
+
+- Page

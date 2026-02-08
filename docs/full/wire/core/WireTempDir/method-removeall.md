@@ -1,4 +1,4 @@
-# WireTempDir::removeAll()
+# $wireTempDir->removeAll()
 
 Source: `wire/core/WireTempDir.php`
 

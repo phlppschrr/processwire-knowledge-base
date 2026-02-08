@@ -1,17 +1,17 @@
-# CommentForm::renderForm()
+# $commentForm->renderForm($id, $class, $attrs, $labels, $inputValues): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Render form
 
-@param string $id
+## Arguments
 
-@param string $class
+- string $id
+- string $class
+- array $attrs
+- array $labels
+- array $inputValues
 
-@param array $attrs
+## Return value
 
-@param array $labels
-
-@param array $inputValues
-
-@return string
+string

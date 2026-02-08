@@ -1,4 +1,4 @@
-# Wire::isChanged()
+# $wire->isChanged($what = ''): bool
 
 Source: `wire/core/Wire.php`
 
@@ -18,7 +18,10 @@ if($page->isChanged('title')) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $what Name of property, or if left blank, checks if any properties have changed.
+- string $what Name of property, or if left blank, checks if any properties have changed.
 
-@return bool True if property has changed, false if not.
+## Return value
+
+bool True if property has changed, false if not.

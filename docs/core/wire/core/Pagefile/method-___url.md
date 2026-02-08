@@ -1,7 +1,9 @@
-# Pagefile::___url()
+# $pagefile->___url(): string
 
 Source: `wire/core/Pagefile.php`
 
 Hookable version of url() method
 
-@return string
+## Return value
+
+string

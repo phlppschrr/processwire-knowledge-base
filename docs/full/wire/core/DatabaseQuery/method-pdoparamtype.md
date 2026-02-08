@@ -1,9 +1,13 @@
-# DatabaseQuery::pdoParamType()
+# $databaseQuery->pdoParamType($value): int
 
 Source: `wire/core/DatabaseQuery.php`
 
 Get the PDO::PARAM_* type for given value
 
-@param string|int|null $value
+## Arguments
 
-@return int
+- string|int|null $value
+
+## Return value
+
+int

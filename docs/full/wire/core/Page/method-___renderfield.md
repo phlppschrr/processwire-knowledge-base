@@ -1,4 +1,4 @@
-# Page::___renderField()
+# $page->___renderField($fieldName, $file = '', $value = null): mixed|string
 
 Source: `wire/core/Page.php`
 
@@ -28,13 +28,16 @@ in the `renderField()` method call.
 echo $page->renderField('images');
 ~~~~~
 
+## Arguments
 
-@param string $fieldName May be any custom field name or native page property.
+- string $fieldName May be any custom field name or native page property.
+- string $file Optionally specify file (in site/templates/fields/) to render with (may optionally omit .php extension).
+- mixed|null $value Optionally specify value to render, otherwise it will be pulled from this page.
 
-@param string $file Optionally specify file (in site/templates/fields/) to render with (may optionally omit .php extension).
+## Return value
 
-@param mixed|null $value Optionally specify value to render, otherwise it will be pulled from this page.
+mixed|string Returns the rendered value of the field
 
-@return mixed|string Returns the rendered value of the field
+## See also
 
-@see Page::renderValue()
+- [Page::renderValue()](method-___rendervalue.md)

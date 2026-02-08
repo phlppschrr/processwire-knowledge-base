@@ -1,4 +1,4 @@
-# Page::___added()
+# $page->___added()
 
 Source: `wire/core/Page.php`
 
@@ -11,5 +11,6 @@ $wire->addHook('Page::added', function($e) {
 });
 ~~~~~
 
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

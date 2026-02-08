@@ -1,7 +1,9 @@
-# PagesPathFinder::addResultNote()
+# $pagesPathFinder->addResultNote($message)
 
 Source: `wire/core/PagesPathFinder.php`
 
 Add note to result
 
-@param string $message
+## Arguments
+
+- string $message

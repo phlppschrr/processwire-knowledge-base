@@ -1,13 +1,18 @@
-# WireDateTime::strftime()
+# $wireDateTime->strftime($format, $timestamp = null): string|false
 
 Source: `wire/core/WireDateTime.php`
 
 strftime() replacement function that works in PHP 8.1+ (though not locale aware)
 
-@param string $format
+## Arguments
 
-@param null|int|string $timestamp
+- string $format
+- null|int|string $timestamp
 
-@return string|false
+## Return value
 
-@since 3.0.197
+string|false
+
+## Meta
+
+- @since 3.0.197

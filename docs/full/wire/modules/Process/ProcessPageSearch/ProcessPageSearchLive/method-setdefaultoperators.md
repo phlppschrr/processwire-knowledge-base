@@ -1,9 +1,10 @@
-# ProcessPageSearchLive::setDefaultOperators()
+# $processPageSearchLive->setDefaultOperators($singleWordOperator, $multiWordOperator = '')
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Set default operators to use for searches (if query does not specify operator)
 
-@param string $singleWordOperator
+## Arguments
 
-@param string $multiWordOperator
+- string $singleWordOperator
+- string $multiWordOperator

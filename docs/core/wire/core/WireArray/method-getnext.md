@@ -1,12 +1,14 @@
-# WireArray::getNext()
+# $wireArray->getNext($item, $strict = true): Wire|null
 
 Source: `wire/core/WireArray.php`
 
 Given an item, get the item that comes after it in the WireArray
 
+## Arguments
 
-@param Wire $item
+- Wire $item
+- bool $strict If false, string comparison will be used rather than exact instance comparison.
 
-@param bool $strict If false, string comparison will be used rather than exact instance comparison.
+## Return value
 
-@return Wire|null Returns next item if found, or null if not
+Wire|null Returns next item if found, or null if not

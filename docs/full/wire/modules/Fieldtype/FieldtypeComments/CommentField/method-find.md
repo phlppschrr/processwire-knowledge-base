@@ -1,11 +1,14 @@
-# CommentField::find()
+# $commentField->find($selectorString, array $options = array()): CommentArray
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Find comments matching given selector
 
-@param $selectorString
+## Arguments
 
-@param array $options
+- $selectorString
+- array $options
 
-@return CommentArray
+## Return value
+
+CommentArray

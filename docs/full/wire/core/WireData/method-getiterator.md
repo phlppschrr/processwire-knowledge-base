@@ -1,4 +1,4 @@
-# WireData::getIterator()
+# $wireData->getIterator(): \ArrayObject
 
 Source: `wire/core/WireData.php`
 
@@ -10,5 +10,6 @@ foreach($item as $key => $value) {
 }
 ~~~~~
 
+## Return value
 
-@return \ArrayObject
+\ArrayObject

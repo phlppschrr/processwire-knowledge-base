@@ -1,4 +1,4 @@
-# Page::___if()
+# $page->___if($key, $yes = '', $no = ''): mixed|string|bool
 
 Source: `wire/core/Page.php`
 
@@ -78,12 +78,16 @@ echo $page->if("inventory>10", "In stock", "Limited availability");
 echo $page->if("images", function($val) { return "<img src='{$val->first->url}'>"; });
 ~~~~~
 
-@param string|bool|int $key Name of field to check, selector string to evaluate, or boolean/int to evalute
+## Arguments
 
-@param string|callable|mixed $yes If value for $key is present, return or call this
+- string|bool|int $key Name of field to check, selector string to evaluate, or boolean/int to evalute
+- string|callable|mixed $yes If value for $key is present, return or call this
+- string|callable|mixed $no If value for $key is empty, return or call this
 
-@param string|callable|mixed $no If value for $key is empty, return or call this
+## Return value
 
-@return mixed|string|bool
+mixed|string|bool
 
-@since 3.0.126
+## Meta
+
+- @since 3.0.126

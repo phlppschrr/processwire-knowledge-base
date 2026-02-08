@@ -1,7 +1,9 @@
-# ImageSizer::flipBoth()
+# $imageSizer->flipBoth(): bool
 
 Source: `wire/core/ImageSizer.php`
 
 Flip both vertically and horizontally
 
-@return bool
+## Return value
+
+bool

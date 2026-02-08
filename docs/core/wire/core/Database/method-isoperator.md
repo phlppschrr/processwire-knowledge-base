@@ -1,9 +1,13 @@
-# Database::isOperator()
+# $database->isOperator($str): bool
 
 Source: `wire/core/Database.php`
 
 Is the given string a database comparison operator?
 
-@param string $str 1-2 character opreator to test
+## Arguments
 
-@return bool
+- string $str 1-2 character opreator to test
+
+## Return value
+
+bool

@@ -1,9 +1,10 @@
-# WireSaveableItems::___cloned()
+# $wireSaveableItems->___cloned(Saveable $item, Saveable $copy)
 
 Source: `wire/core/WireSaveableItems.php`
 
 Hook that runs right after an item has been cloned.
 
-@param Saveable $item
+## Arguments
 
-@param Saveable $copy
+- Saveable $item
+- Saveable $copy

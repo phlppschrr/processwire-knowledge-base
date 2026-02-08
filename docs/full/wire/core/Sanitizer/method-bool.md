@@ -1,4 +1,4 @@
-# Sanitizer::bool()
+# $sanitizer->bool($value): bool
 
 Source: `wire/core/Sanitizer.php`
 
@@ -10,7 +10,10 @@ This differs from regular boolean type conversion in the following ways:
 - If given an object, it will convert the object to a string before determining what boolean value it should represent.
 - If given an array, it returns false if the array contains zero items.
 
+## Arguments
 
-@param $value
+- $value
 
-@return bool
+## Return value
+
+bool

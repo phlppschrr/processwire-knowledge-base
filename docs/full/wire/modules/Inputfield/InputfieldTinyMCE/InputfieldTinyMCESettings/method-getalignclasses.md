@@ -1,7 +1,9 @@
-# InputfieldTinyMCESettings::getAlignClasses()
+# $inputfieldTinyMCESettings->getAlignClasses(): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Get image alignment classes
 
-@return array
+## Return value
+
+array

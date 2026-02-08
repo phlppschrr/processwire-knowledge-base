@@ -1,14 +1,18 @@
-# ProcessPageSearchLive::addResults()
+# $processPageSearchLive->addResults($group, array $results): true
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Add multiple results at once
 
+## Arguments
 
-@param string $group Group name for these search results
+- string $group Group name for these search results
+- array $results Associative array where keys are URLs and values are titles/labels
 
-@param array $results Associative array where keys are URLs and values are titles/labels
+## Return value
 
-@since 3.0.240
+true
 
-@return true
+## Meta
+
+- @since 3.0.240

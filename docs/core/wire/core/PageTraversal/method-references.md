@@ -1,18 +1,20 @@
-# PageTraversal::references()
+# $pageTraversal->references(Page $page, $selector = '', $field = '', $getCount = false): PageArray|array|int
 
 Source: `wire/core/PageTraversal.php`
 
 Return pages that are referencing the given one by way of Page references
 
-@param Page $page
+## Arguments
 
-@param string|bool $selector Optional selector to filter results by or boolean true as shortcut for `include=all`.
+- Page $page
+- string|bool $selector Optional selector to filter results by or boolean true as shortcut for `include=all`.
+- Field|string $field Limit to follower pages using this field, - or specify boolean TRUE to make it return array of PageArrays indexed by field name.
+- bool $getCount Specify true to return counts rather than PageArray(s)
 
-@param Field|string $field Limit to follower pages using this field,
-  - or specify boolean TRUE to make it return array of PageArrays indexed by field name.
+## Return value
 
-@param bool $getCount Specify true to return counts rather than PageArray(s)
+PageArray|array|int
 
-@return PageArray|array|int
+## Throws
 
-@throws WireException Highly unlikely
+- WireException Highly unlikely

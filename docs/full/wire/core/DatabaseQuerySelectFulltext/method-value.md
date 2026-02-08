@@ -1,7 +1,12 @@
-# DatabaseQuerySelectFulltext::value()
+# $databaseQuerySelectFulltext->value($value): string
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
-@param string $value
 
-@return string
+## Arguments
+
+- string $value
+
+## Return value
+
+string

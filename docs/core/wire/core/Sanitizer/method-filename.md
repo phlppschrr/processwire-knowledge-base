@@ -1,4 +1,4 @@
-# Sanitizer::filename()
+# $sanitizer->filename($value, $beautify = false, $maxLength = 128): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -17,13 +17,12 @@ echo $sanitizer->filename('©®™FileName.jpg');
 echo strtolower($sanitizer->filename('©®™filename.jpg', Sanitizer::translate));
 ~~~~~
 
+## Arguments
 
-@param string $value Filename to sanitize
+- string $value Filename to sanitize
+- bool|int $beautify Should be true when creating a file's name for the first time. Default is false. You may also specify Sanitizer::translate (or number 2) for the $beautify param, which will make it translate letters based on the InputfieldPageName custom config settings.
+- int $maxLength Maximum number of characters allowed in the filename
 
-@param bool|int $beautify Should be true when creating a file's name for the first time. Default is false.
- You may also specify Sanitizer::translate (or number 2) for the $beautify param, which will make it translate letters
- based on the InputfieldPageName custom config settings.
+## Return value
 
-@param int $maxLength Maximum number of characters allowed in the filename
-
-@return string Sanitized filename
+string Sanitized filename

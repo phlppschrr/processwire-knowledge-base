@@ -1,9 +1,13 @@
-# WireDataDB::install()
+# $wireDataDB->install(): bool
 
 Source: `wire/core/WireDataDB.php`
 
 Install the table
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

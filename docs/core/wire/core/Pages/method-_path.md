@@ -1,9 +1,13 @@
-# Pages::_path()
+# $pages->_path($id): string
 
 Source: `wire/core/Pages.php`
 
 Alias of getPath method for backwards compatibility
 
-@param int $id
+## Arguments
 
-@return string
+- int $id
+
+## Return value
+
+string

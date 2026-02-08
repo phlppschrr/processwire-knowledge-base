@@ -1,11 +1,11 @@
-# Languages::__construct()
+# $languages->__construct(ProcessWire $wire, $templates = array(), $parents = array())
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Construct
 
-@param ProcessWire $wire
+## Arguments
 
-@param array $templates
-
-@param array $parents
+- ProcessWire $wire
+- array $templates
+- array $parents

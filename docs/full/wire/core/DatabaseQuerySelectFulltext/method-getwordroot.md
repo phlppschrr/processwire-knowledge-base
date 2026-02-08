@@ -1,9 +1,13 @@
-# DatabaseQuerySelectFulltext::getWordRoot()
+# $databaseQuerySelectFulltext->getWordRoot($word): string
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Get root of word (currently not implemented)
 
-@param string $word
+## Arguments
 
-@return string
+- string $word
+
+## Return value
+
+string

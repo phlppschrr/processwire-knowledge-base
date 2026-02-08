@@ -1,4 +1,4 @@
-# PagesLoader::has()
+# $pagesLoader->has($selector, $verbose = false, array $options = array()): array|int
 
 Source: `wire/core/PagesLoader.php`
 
@@ -12,13 +12,16 @@ Is there any page that matches the given $selector in the system? (with no exclu
 When `$verbose` option is used, an array is returned instead. Verbose return array includes all columns
 from the matching row in the pages table.
 
+## Arguments
 
-@param string|int|array|Selectors $selector
+- string|int|array|Selectors $selector
+- bool $verbose Return verbose array with all pages columns rather than just page id? (default=false)
+- array $options Additional options to pass in find() $options argument (not currently applicable)
 
-@param bool $verbose Return verbose array with all pages columns rather than just page id? (default=false)
+## Return value
 
-@param array $options Additional options to pass in find() $options argument (not currently applicable)
+array|int
 
-@return array|int
+## Meta
 
-@since 3.0.153
+- @since 3.0.153

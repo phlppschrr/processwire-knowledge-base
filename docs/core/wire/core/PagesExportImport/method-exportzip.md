@@ -1,12 +1,14 @@
-# PagesExportImport::exportZIP()
+# $pagesExportImport->exportZIP(PageArray $items, array $options = array()): string
 
 Source: `wire/core/PagesExportImport.php`
 
 Export given PageArray to a ZIP file
 
+## Arguments
 
-@param PageArray $items
+- PageArray $items
+- array $options
 
-@param array $options
+## Return value
 
-@return string Path+filename to ZIP file
+string Path+filename to ZIP file

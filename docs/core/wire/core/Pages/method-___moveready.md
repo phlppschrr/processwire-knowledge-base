@@ -1,4 +1,4 @@
-# Pages::___moveReady()
+# $pages->___moveReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -6,7 +6,10 @@ Hook called when a page is about to be moved to another parent
 
 Note the previous parent is accessible in the `$page->parentPrevious` property.
 
+## Arguments
 
-@param Page $page Page that is about to be moved.
+- Page $page Page that is about to be moved.
 
-@since 3.0.235
+## Meta
+
+- @since 3.0.235

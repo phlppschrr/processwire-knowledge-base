@@ -1,4 +1,4 @@
-# CommentNotifications::parseEmails()
+# $commentNotifications->parseEmails($str): array
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
@@ -11,6 +11,10 @@ Recognized email references are:
 	- Pull email from page ID and field name: "123:email_field_name"
 	- Pull email from page path and field name: "/path/to/page:email_field_name"
 
-@param $str
+## Arguments
 
-@return array
+- $str
+
+## Return value
+
+array

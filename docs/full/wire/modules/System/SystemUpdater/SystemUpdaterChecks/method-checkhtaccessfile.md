@@ -1,9 +1,13 @@
-# SystemUpdaterChecks::checkHtaccessFile()
+# $systemUpdaterChecks->checkHtaccessFile(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Check that main htaccess file is the correct version
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

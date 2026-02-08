@@ -1,7 +1,9 @@
-# WireSessionHandler::close()
+# $wireSessionHandler->close(): bool
 
 Source: `wire/core/WireSessionHandler.php`
 
 Close the session
 
-@return bool True on success, false on failure
+## Return value
+
+bool True on success, false on failure

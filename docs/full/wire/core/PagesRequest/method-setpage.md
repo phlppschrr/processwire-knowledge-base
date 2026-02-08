@@ -1,9 +1,13 @@
-# PagesRequest::setPage()
+# $pagesRequest->setPage($page): Page|NullPage|null
 
 Source: `wire/core/PagesRequest.php`
 
 Set current request page
 
-@param Page|NullPage|null $page
+## Arguments
 
-@return Page|NullPage|null
+- Page|NullPage|null $page
+
+## Return value
+
+Page|NullPage|null

@@ -1,9 +1,13 @@
-# PageFinder::getPageArrayData()
+# $pageFinder->getPageArrayData(?PageArray $pageArray = null): array
 
 Source: `wire/core/PageFinder.php`
 
 Get data that should be populated back to any resulting PageArray’s data() method
 
-@param PageArray|null $pageArray Optionally populate given PageArray
+## Arguments
 
-@return array
+- PageArray|null $pageArray Optionally populate given PageArray
+
+## Return value
+
+array

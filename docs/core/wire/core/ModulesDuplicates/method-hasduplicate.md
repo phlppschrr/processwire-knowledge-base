@@ -1,11 +1,14 @@
-# ModulesDuplicates::hasDuplicate()
+# $modulesDuplicates->hasDuplicate($className, $pathname = ''): bool
 
 Source: `wire/core/ModulesDuplicates.php`
 
 Does the given module class have a duplicate?
 
-@param string $className
+## Arguments
 
-@param string $pathname Optionally specify the duplicate to check
+- string $className
+- string $pathname Optionally specify the duplicate to check
 
-@return bool
+## Return value
+
+bool

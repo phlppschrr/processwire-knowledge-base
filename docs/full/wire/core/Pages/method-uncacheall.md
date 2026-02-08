@@ -1,4 +1,4 @@
-# Pages::uncacheAll()
+# $pages->uncacheAll(?Page $page = null, array $options = array()): int
 
 Source: `wire/core/Pages.php`
 
@@ -28,10 +28,11 @@ do {
 echo "Total value of all products: $" . number_format($total);
 ~~~~~
 
+## Arguments
 
-@param Page|null $page Optional Page that initiated the uncacheAll
+- Page|null $page Optional Page that initiated the uncacheAll
+- array $options Options to modify default behavior: - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent that call, set this to true.
 
-@param array $options Options to modify default behavior:
-  - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent that call, set this to true.
+## Return value
 
-@return int Number of pages uncached
+int Number of pages uncached

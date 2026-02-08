@@ -1,7 +1,9 @@
-# PagefileExtra::filesize()
+# $pagefileExtra->filesize(): int
 
 Source: `wire/core/PagefileExtra.php`
 
 Return the file size in bytes
 
-@return int
+## Return value
+
+int

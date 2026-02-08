@@ -1,4 +1,4 @@
-# InputfieldWrapper::setAttributeInMarkup()
+# $inputfieldWrapper->setAttributeInMarkup($name, $value, $markup, $removeEmpty = false): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -9,14 +9,17 @@ attribute name wrapped in `{}`, i.e. `{class}`
 
 Note that class attributes are appended while other attributes are replaced.
 
-@param string $name Attribute name (i.e. "class", "for", etc.)
+## Arguments
 
-@param string $value Value to set for the attribute
+- string $name Attribute name (i.e. "class", "for", etc.)
+- string $value Value to set for the attribute
+- string $markup Markup where the attribute or placeholder exists
+- bool $removeEmpty Remove attribute if it resolves to empty value?
 
-@param string $markup Markup where the attribute or placeholder exists
+## Return value
 
-@param bool $removeEmpty Remove attribute if it resolves to empty value?
+string Updated markup
 
-@return string Updated markup
+## Meta
 
-@since 3.0.242
+- @since 3.0.242

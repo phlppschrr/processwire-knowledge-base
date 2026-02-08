@@ -1,9 +1,13 @@
-# WireUpload::setValidExtensions()
+# $wireUpload->setValidExtensions(array $extensions): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set allowed file extensions
 
-@param array $extensions Array of file extensions (strings), not including periods
+## Arguments
 
-@return $this
+- array $extensions Array of file extensions (strings), not including periods
+
+## Return value
+
+$this

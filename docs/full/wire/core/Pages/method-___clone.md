@@ -1,4 +1,4 @@
-# Pages::___clone()
+# $pages->___clone(Page $page, ?Page $parent = null, $recursive = true, $options = array()): Page|NullPage
 
 Source: `wire/core/Pages.php`
 
@@ -24,18 +24,17 @@ $copy->name = 'renaissance-center';
 $copy->save();
 ~~~~~
 
+## Arguments
 
-@param Page $page Page that you want to clone
+- Page $page Page that you want to clone
+- Page|null $parent New parent, if different (default=null, which implies same parent)
+- bool $recursive Clone the children too? (default=true)
+- array|string $options Options that can be passed to modify default behavior of clone or save: - `forceID` (int): force a specific ID. - `set` (array): Array of properties to set to the clone (you can also do this later). - `recursionLevel` (int): recursion level, for internal use only.
 
-@param Page|null $parent New parent, if different (default=null, which implies same parent)
+## Return value
 
-@param bool $recursive Clone the children too? (default=true)
+Page|NullPage The newly cloned Page or a NullPage() with id=0 if unsuccessful.
 
-@param array|string $options Options that can be passed to modify default behavior of clone or save:
- - `forceID` (int): force a specific ID.
- - `set` (array): Array of properties to set to the clone (you can also do this later).
- - `recursionLevel` (int): recursion level, for internal use only.
+## Throws
 
-@return Page|NullPage The newly cloned Page or a NullPage() with id=0 if unsuccessful.
-
-@throws WireException|\Exception on fatal error
+- WireException|\Exception on fatal error

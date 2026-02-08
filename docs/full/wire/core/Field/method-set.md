@@ -1,4 +1,4 @@
-# Field::set()
+# $field->set($key, $value): Field|WireData
 
 Source: `wire/core/Field.php`
 
@@ -6,9 +6,11 @@ Set a native setting or a dynamic data property for this Field
 
 This can also be used directly via `$field->name = 'company';`
 
+## Arguments
 
-@param string $key Property name to set
+- string $key Property name to set
+- mixed $value
 
-@param mixed $value
+## Return value
 
-@return Field|WireData
+Field|WireData

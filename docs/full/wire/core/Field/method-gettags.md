@@ -1,11 +1,17 @@
-# Field::getTags()
+# $field->getTags($getString = false): array|string
 
 Source: `wire/core/Field.php`
 
 Get tags
 
-@param bool|string $getString Optionally specify true for space-separated string, or delimiter string (default=false)
+## Arguments
 
-@return array|string Returns array of tags unless $getString option is requested
+- bool|string $getString Optionally specify true for space-separated string, or delimiter string (default=false)
 
-@since 3.0.106
+## Return value
+
+array|string Returns array of tags unless $getString option is requested
+
+## Meta
+
+- @since 3.0.106

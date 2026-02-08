@@ -1,4 +1,4 @@
-# ImageSizerEngine::getResizeMethod()
+# $imageSizerEngine->getResizeMethod(&$gdWidth, &$gdHeight, &$targetWidth, &$targetHeight, &$x1, &$y1): int
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -12,16 +12,15 @@ steps should be processed:
 2 = only resize with aspect ratio
 4 = resize and crop with aspect ratio
 
-@param mixed $gdWidth
+## Arguments
 
-@param mixed $gdHeight
+- mixed $gdWidth
+- mixed $gdHeight
+- mixed $targetWidth
+- mixed $targetHeight
+- mixed $x1
+- mixed $y1
 
-@param mixed $targetWidth
+## Return value
 
-@param mixed $targetHeight
-
-@param mixed $x1
-
-@param mixed $y1
-
-@return int 0|2|4
+int 0|2|4

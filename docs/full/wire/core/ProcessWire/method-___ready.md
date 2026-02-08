@@ -1,4 +1,4 @@
-# ProcessWire::___ready()
+# $processWire->___ready()
 
 Source: `wire/core/ProcessWire.php`
 

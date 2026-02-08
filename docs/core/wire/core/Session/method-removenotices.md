@@ -1,4 +1,4 @@
-# Session::removeNotices()
+# $session->removeNotices()
 
 Source: `wire/core/Session.php`
 

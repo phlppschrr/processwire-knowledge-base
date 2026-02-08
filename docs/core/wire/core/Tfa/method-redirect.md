@@ -1,7 +1,9 @@
-# Tfa::redirect()
+# $tfa->redirect($url)
 
 Source: `wire/core/Tfa.php`
 
 Redirect to URL
 
-@param string $url
+## Arguments
+
+- string $url

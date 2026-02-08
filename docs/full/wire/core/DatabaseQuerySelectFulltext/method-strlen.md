@@ -1,7 +1,12 @@
-# DatabaseQuerySelectFulltext::strlen()
+# $databaseQuerySelectFulltext->strlen($value): int
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
-@param string $value
 
-@return int
+## Arguments
+
+- string $value
+
+## Return value
+
+int

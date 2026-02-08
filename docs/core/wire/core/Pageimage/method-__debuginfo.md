@@ -1,7 +1,9 @@
-# Pageimage::__debugInfo()
+# $pageimage->__debugInfo(): array
 
 Source: `wire/core/Pageimage.php`
 
 Basic debug info
 
-@return array
+## Return value
+
+array

@@ -1,4 +1,4 @@
-# WireFileTools::unlink()
+# $wireFileTools->unlink($filename, $limitPath = false, $throw = false): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -10,19 +10,20 @@ Unlink/delete file with additional protections relative to PHP unlink()
 - This method will be limited to unlink files only in /site/assets/ if you
   specify `true` for the `$limitPath` option (recommended).
 
+## Arguments
 
-@param string $filename
+- string $filename
+- string|bool $limitPath Limit only to files within some starting path? (default=false) - Boolean true to limit unlink operations to somewhere within /site/assets/ (only known always writable path). - Boolean false to disable to security feature. (default) - An alternative path (string) that represents the starting path (full disk path) to limit deletions to. - An array with multiple of the above string option.
+- bool $throw Throw exception on error?
 
-@param string|bool $limitPath Limit only to files within some starting path? (default=false)
- - Boolean true to limit unlink operations to somewhere within /site/assets/ (only known always writable path).
- - Boolean false to disable to security feature. (default)
- - An alternative path (string) that represents the starting path (full disk path) to limit deletions to.
- - An array with multiple of the above string option.
+## Return value
 
-@param bool $throw Throw exception on error?
+bool True on success, false on fail
 
-@return bool True on success, false on fail
+## Throws
 
-@throws WireException If file is not allowed to be removed or unlink fails
+- WireException If file is not allowed to be removed or unlink fails
 
-@since 3.0.118
+## Meta
+
+- @since 3.0.118

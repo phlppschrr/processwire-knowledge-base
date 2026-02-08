@@ -1,4 +1,4 @@
-# Fieldtype::___sleepValue()
+# $fieldtype->___sleepValue(Page $page, Field $field, $value): string|int|float|array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,13 +10,16 @@ and convert it to an array, int or string (serialized or otherwise).
 
 Returned value must be either an array, number, or string.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
+- string|int|float|array|object $value
 
-@param Field $field
+## Return value
 
-@param string|int|float|array|object $value
+string|int|float|array
 
-@return string|int|float|array
+## See also
 
-@see Fieldtype::wakeupValue()
+- [Fieldtype::wakeupValue()](method-___wakeupvalue.md)

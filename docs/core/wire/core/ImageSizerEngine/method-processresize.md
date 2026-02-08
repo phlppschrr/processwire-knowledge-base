@@ -1,4 +1,4 @@
-# ImageSizerEngine::processResize()
+# $imageSizerEngine->processResize($srcFilename, $dstFilename, $fullWidth, $fullHeight, $finalWidth, $finalHeight): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -9,18 +9,19 @@ Processing is as follows:
    2. than (try) to process all required steps, if one failes, return false
    3. if all is successful, finally return true
 
-@param string $srcFilename Source file
+## Arguments
 
-@param string $dstFilename Destination file
+- string $srcFilename Source file
+- string $dstFilename Destination file
+- int $fullWidth Current width
+- int $fullHeight Current height
+- int $finalWidth Requested final width
+- int $finalHeight Requested final height
 
-@param int $fullWidth Current width
+## Return value
 
-@param int $fullHeight Current height
+bool True if successful, false if not
 
-@param int $finalWidth Requested final width
+## Throws
 
-@param int $finalHeight Requested final height
-
-@return bool True if successful, false if not
-
-@throws WireException
+- WireException

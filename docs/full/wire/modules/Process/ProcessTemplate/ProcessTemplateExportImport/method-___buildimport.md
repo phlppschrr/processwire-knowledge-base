@@ -1,9 +1,13 @@
-# ProcessTemplateExportImport::___buildImport()
+# $processTemplateExportImport->___buildImport(): string
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
 Execute import
 
-@return string
+## Return value
 
-@throws WireException if given invalid import data
+string
+
+## Throws
+
+- WireException if given invalid import data

@@ -1,4 +1,4 @@
-# Page::parent()
+# $page->parent($selector = ''): Page
 
 Source: `wire/core/Page.php`
 
@@ -16,7 +16,10 @@ $parent = $page->parent();
 $parent = $page->parent("template=products");
 ~~~~~
 
+## Arguments
 
-@param string|array $selector Optional selector. When used, it returns the closest parent matching the selector.
+- string|array $selector Optional selector. When used, it returns the closest parent matching the selector.
 
-@return Page Returns a Page or a NullPage when there is no parent or the selector string did not match any parents.
+## Return value
+
+Page Returns a Page or a NullPage when there is no parent or the selector string did not match any parents.

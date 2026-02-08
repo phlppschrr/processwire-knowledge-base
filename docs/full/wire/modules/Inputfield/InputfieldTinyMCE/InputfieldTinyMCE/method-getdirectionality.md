@@ -1,7 +1,9 @@
-# InputfieldTinyMCE::getDirectionality()
+# $inputfieldTinyMCE->getDirectionality(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Get directionality, either 'ltr' or 'rtl'
 
-@return string
+## Return value
+
+string

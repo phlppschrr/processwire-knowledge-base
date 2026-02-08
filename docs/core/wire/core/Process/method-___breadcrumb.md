@@ -1,4 +1,4 @@
-# Process::___breadcrumb()
+# $process->___breadcrumb($href, $label): $this
 
 Source: `wire/core/Process.php`
 
@@ -8,8 +8,11 @@ Add a breadcrumb
 $this->breadcrumb("../", "Widgets");
 ~~~~~
 
-@param string $href URL of breadcrumb
+## Arguments
 
-@param string $label Label for breadcrumb
+- string $href URL of breadcrumb
+- string $label Label for breadcrumb
 
-@return $this
+## Return value
+
+$this

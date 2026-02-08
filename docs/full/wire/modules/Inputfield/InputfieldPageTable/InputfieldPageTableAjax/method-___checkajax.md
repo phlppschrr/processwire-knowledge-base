@@ -1,4 +1,4 @@
-# InputfieldPageTableAjax::___checkAjax()
+# $inputfieldPageTableAjax->___checkAjax()
 
 Source: `wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax.php`
 

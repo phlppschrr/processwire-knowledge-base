@@ -1,9 +1,13 @@
-# ImageSizerEngine::flipHorizontal()
+# $imageSizerEngine->flipHorizontal($dstFilename = ''): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Flip horizontally
 
-@param string $dstFilename
+## Arguments
 
-@return bool
+- string $dstFilename
+
+## Return value
+
+bool

@@ -1,13 +1,15 @@
-# PageTraversal::children()
+# $pageTraversal->children(Page $page, $selector = '', $options = array()): PageArray
 
 Source: `wire/core/PageTraversal.php`
 
 Return this page's children pages, optionally filtered by a selector
 
-@param Page $page
+## Arguments
 
-@param string|array $selector Selector to use, or blank to return all children
+- Page $page
+- string|array $selector Selector to use, or blank to return all children
+- array $options
 
-@param array $options
+## Return value
 
-@return PageArray
+PageArray

@@ -1,11 +1,14 @@
-# WireMailInterface::header()
+# $wireMailInterface->header($key, $value): self
 
 Source: `wire/core/WireMailInterface.php`
 
 Set any email header
 
-@param string $key
+## Arguments
 
-@param string $value
+- string $key
+- string $value
 
-@return self
+## Return value
+
+self

@@ -1,17 +1,20 @@
-# LanguageTranslator::getTranslationOrFalse()
+# $languageTranslator->getTranslationOrFalse($textdomain, $text, $context = '', array $options = array()): string|false
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Get translated text or boolean false if not translated (rather than default language value)
 
-@param string|object $textdomain Textdomain string, filename, or object.
+## Arguments
 
-@param string $text Text in default language (EN) that needs to be converted to current language.
+- string|object $textdomain Textdomain string, filename, or object.
+- string $text Text in default language (EN) that needs to be converted to current language.
+- string $context Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
+- array $options
 
-@param string $context Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
+## Return value
 
-@param array $options
+string|false
 
-@return string|false
+## Meta
 
-@since 3.0.237
+- @since 3.0.237

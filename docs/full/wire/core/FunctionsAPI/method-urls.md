@@ -1,4 +1,4 @@
-# FunctionsAPI::urls()
+# $functionsAPI->urls($key = ''): null|Paths|string
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -12,9 +12,14 @@ $url = urls()->templates;
 $url = urls('templates');
 ~~~~~
 
+## Arguments
 
-@param string $key
+- string $key
 
-@return null|Paths|string
+## Return value
 
-@see Config::urls()
+null|Paths|string
+
+## See also
+
+- [Config::urls()](../Config/method-urls.md)

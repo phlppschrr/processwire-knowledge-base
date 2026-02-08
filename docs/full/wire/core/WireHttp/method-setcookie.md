@@ -1,4 +1,4 @@
-# WireHttp::setCookie()
+# $wireHttp->setCookie($name, $value): self
 
 Source: `wire/core/WireHttp.php`
 
@@ -9,11 +9,15 @@ $http->setCookie('PHPSESSID', 'f3943z12339jz93j39iafai3f9393g');
 $http->post('http://domain.com', [ 'foo' => 'bar' ], [ 'use' => 'curl' ]);
 ~~~~~
 
+## Arguments
 
-@param string $name Name of cookie to set
+- string $name Name of cookie to set
+- string|int|null $value Specify value to set or null to remove
 
-@param string|int|null $value Specify value to set or null to remove
+## Return value
 
-@return self
+self
 
-@since 3.0.199
+## Meta
+
+- @since 3.0.199

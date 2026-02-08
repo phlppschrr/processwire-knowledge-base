@@ -1,4 +1,4 @@
-# WireFileTools::renameCopy()
+# $wireFileTools->renameCopy($oldName, $newName, $options = array()): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -7,15 +7,20 @@ Rename by first copying files to destination and then deleting source files
 The operation is considered successful so long as the source files were able to be copied to the destination.
 If source files cannot be deleted afterwards, the warning is logged, plus a warning notice is also shown when in debug mode.
 
+## Arguments
 
-@param string $oldName Old pathname, must be full disk path.
+- string $oldName Old pathname, must be full disk path.
+- string $newName New pathname, must be full disk path OR can be basename to assume same path as $oldName.
+- array $options See options for rename() method
 
-@param string $newName New pathname, must be full disk path OR can be basename to assume same path as $oldName.
+## Return value
 
-@param array $options See options for rename() method
+bool
 
-@return bool
+## Throws
 
-@throws WireException
+- WireException
 
-@since 3.0.178
+## Meta
+
+- @since 3.0.178

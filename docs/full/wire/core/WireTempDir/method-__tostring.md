@@ -1,7 +1,9 @@
-# WireTempDir::__toString()
+# $wireTempDir->__toString(): string
 
 Source: `wire/core/WireTempDir.php`
 
 Accessing this object as a string returns the temp dir
 
-@return string
+## Return value
+
+string

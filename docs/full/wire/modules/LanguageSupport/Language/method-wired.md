@@ -1,4 +1,4 @@
-# Language::wired()
+# $language->wired()
 
 Source: `wire/modules/LanguageSupport/Language.php`
 

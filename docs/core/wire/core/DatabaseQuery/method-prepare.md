@@ -1,7 +1,9 @@
-# DatabaseQuery::prepare()
+# $databaseQuery->prepare(): \PDOStatement
 
 Source: `wire/core/DatabaseQuery.php`
 
 Prepare and return a PDOStatement
 
-@return \PDOStatement
+## Return value
+
+\PDOStatement

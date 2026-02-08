@@ -1,7 +1,9 @@
-# ProcessPageSearchLive::setSearchTypesOrder()
+# $processPageSearchLive->setSearchTypesOrder(array $types)
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Set order of search types
 
-@param array $types Names of types, in order
+## Arguments
+
+- array $types Names of types, in order

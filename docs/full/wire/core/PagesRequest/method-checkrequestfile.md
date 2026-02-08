@@ -1,4 +1,4 @@
-# PagesRequest::checkRequestFile()
+# $pagesRequest->checkRequestFile(&$path): bool|Page|NullPage
 
 Source: `wire/core/PagesRequest.php`
 
@@ -10,6 +10,10 @@ Check if the requested path is to a secured page file
 - Returns true and updates $path when pagefile was found using deprecated prefix method.
 - Returns false when none found.
 
-@param string $path Request path
+## Arguments
 
-@return bool|Page|NullPage
+- string $path Request path
+
+## Return value
+
+bool|Page|NullPage

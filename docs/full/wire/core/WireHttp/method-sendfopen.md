@@ -1,13 +1,15 @@
-# WireHttp::sendFopen()
+# $wireHttp->sendFopen($url, $method = 'POST', array $options = array()): bool|string
 
 Source: `wire/core/WireHttp.php`
 
 Send using fopen
 
-@param string $url
+## Arguments
 
-@param string $method
+- string $url
+- string $method
+- array $options Options specific to fopen should be specified in [ 'fopen' => [ ... ] ]
 
-@param array $options Options specific to fopen should be specified in [ 'fopen' => [ ... ] ]
+## Return value
 
-@return bool|string
+bool|string

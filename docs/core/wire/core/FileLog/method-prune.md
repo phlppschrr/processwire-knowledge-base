@@ -1,11 +1,17 @@
-# FileLog::prune()
+# $fileLog->prune($bytes): bool|int
 
 Source: `wire/core/FileLog.php`
 
 Prune to number of bytes
 
-@param $bytes
+## Arguments
 
-@return bool|int
+- $bytes
 
-@deprecated use pruneBytes() or pruneLines() instead
+## Return value
+
+bool|int
+
+## Meta
+
+- @deprecated use pruneBytes() or pruneLines() instead

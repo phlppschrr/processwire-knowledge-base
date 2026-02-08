@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wireCache()
+# $functionsWireAPI->wireCache($name = '', $expire = null, $func = null): WireCache|string|array|PageArray|null
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -7,12 +7,16 @@ Access the $cache API variable as a function
 If called with no arguments it returns the $cache API variable.
 If called with arguments, it can be used the same as `WireCache::get()`.
 
-@param string $name
+## Arguments
 
-@param callable|int|string|null $expire
+- string $name
+- callable|int|string|null $expire
+- callable|int|string|null $func
 
-@param callable|int|string|null $func
+## Return value
 
-@return WireCache|string|array|PageArray|null
+WireCache|string|array|PageArray|null
 
-@see WireCache::get()
+## See also
+
+- [WireCache::get()](../WireCache/method-get.md)

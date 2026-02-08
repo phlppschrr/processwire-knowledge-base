@@ -1,7 +1,9 @@
-# Pagefiles::setField()
+# $pagefiles->setField(Field $field)
 
 Source: `wire/core/Pagefiles.php`
 
 Set the field these files are assigned to
 
-@param Field $field
+## Arguments
+
+- Field $field

@@ -1,4 +1,4 @@
-# PageValues::formatFieldValue()
+# $pageValues->formatFieldValue(Page $page, Field $field, $value): mixed
 
 Source: `wire/core/PageValues.php`
 
@@ -6,10 +6,12 @@ Return a value consistent with the page’s output formatting state
 
 This is primarily for use as a helper to the getFieldValue() method.
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- mixed $value
 
-@param mixed $value
+## Return value
 
-@return mixed
+mixed

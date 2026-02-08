@@ -1,9 +1,13 @@
-# CacheFile::save()
+# $cacheFile->save($data): bool
 
 Source: `wire/core/CacheFile.php`
 
 Saves $data to the cache
 
-@param string $data
+## Arguments
 
-@return bool
+- string $data
+
+## Return value
+
+bool

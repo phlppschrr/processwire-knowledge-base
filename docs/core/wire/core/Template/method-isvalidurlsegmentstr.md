@@ -1,12 +1,17 @@
-# Template::isValidUrlSegmentStr()
+# $template->isValidUrlSegmentStr($urlSegmentStr): bool
 
 Source: `wire/core/Template.php`
 
 Is the given URL segment string allowed according to this template’s settings?
 
+## Arguments
 
-@param string $urlSegmentStr
+- string $urlSegmentStr
 
-@return bool
+## Return value
 
-@since 3.0.186
+bool
+
+## Meta
+
+- @since 3.0.186

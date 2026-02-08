@@ -1,4 +1,4 @@
-# WireTextTools::getWordAlternates()
+# $wireTextTools->getWordAlternates($word, array $options = array()): array
 
 Source: `wire/core/WireTextTools.php`
 
@@ -16,15 +16,19 @@ populate $event->return with any or all of the following (as available):
 
 See the protected WireTextTools::wordAlternates() method for hook instructions and an example.
 
-@param string $word
+## Arguments
 
-@param array $options
- - `operator` (string): Operator being used, if applicable (default='')
- - `minLength` (int): Minimum word length to return in alternates (default=2)
- - `lowercase` (bool): Convert words to lowercase, if not already (default=false)
+- string $word
+- array $options - `operator` (string): Operator being used, if applicable (default='') - `minLength` (int): Minimum word length to return in alternates (default=2) - `lowercase` (bool): Convert words to lowercase, if not already (default=false)
 
-@return array
+## Return value
 
-@since 3.0.162
+array
 
-@see WireTextTools::getWordStem()
+## See also
+
+- [WireTextTools::getWordStem()](index.md)
+
+## Meta
+
+- @since 3.0.162

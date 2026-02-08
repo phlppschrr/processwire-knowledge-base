@@ -1,4 +1,4 @@
-# Fieldtype::___importConfigData()
+# $fieldtype->___importConfigData(Field $field, array $data): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -7,10 +7,11 @@ Convert an array of exported data to a format that will be understood internally
 This is the opposite of the exportConfigData() method.
 Most modules can use the default implementation provided here.
 
+## Arguments
 
-@param Field $field
+- Field $field
+- array $data
 
-@param array $data
+## Return value
 
-@return array Data as given and modified as needed. Also included is $data[errors], an associative array
-	indexed by property name containing errors that occurred during import of config data.
+array Data as given and modified as needed. Also included is $data[errors], an associative array indexed by property name containing errors that occurred during import of config data.

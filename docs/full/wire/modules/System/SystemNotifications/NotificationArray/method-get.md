@@ -1,9 +1,13 @@
-# NotificationArray::get()
+# $notificationArray->get($key): Notification|null
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Retrieve a Notification by index or by id
 
-@param int|string $key
+## Arguments
 
-@return Notification|null
+- int|string $key
+
+## Return value
+
+Notification|null

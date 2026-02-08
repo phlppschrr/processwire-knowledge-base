@@ -1,9 +1,13 @@
-# PagesRawFinder::findMeta()
+# $pagesRawFinder->findMeta(array $names)
 
 Source: `wire/core/PagesRaw.php`
 
 Populate 'meta' to (form pages_meta table) to the result values
 
-@param array $names
+## Arguments
 
-@since 3.0.193
+- array $names
+
+## Meta
+
+- @since 3.0.193

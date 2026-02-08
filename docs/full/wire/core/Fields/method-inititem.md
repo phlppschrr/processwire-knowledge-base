@@ -1,13 +1,18 @@
-# Fields::initItem()
+# $fields->initItem(array &$row, ?WireArray $items = null): Saveable|WireData|Wire
 
 Source: `wire/core/Fields.php`
 
 Create a new Saveable item from a raw array ($row) and add it to $items
 
-@param array $row
+## Arguments
 
-@param WireArray|null $items
+- array $row
+- WireArray|null $items
 
-@return Saveable|WireData|Wire
+## Return value
 
-@since 3.0.194
+Saveable|WireData|Wire
+
+## Meta
+
+- @since 3.0.194

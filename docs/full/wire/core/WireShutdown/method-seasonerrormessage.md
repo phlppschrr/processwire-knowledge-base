@@ -1,9 +1,13 @@
-# WireShutdown::seasonErrorMessage()
+# $wireShutdown->seasonErrorMessage($message): string
 
 Source: `wire/core/WireShutdown.php`
 
 Provide additional seasoning for error message during debug mode output
 
-@param string $message
+## Arguments
 
-@return string
+- string $message
+
+## Return value
+
+string

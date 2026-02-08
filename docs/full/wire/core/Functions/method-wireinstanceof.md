@@ -1,4 +1,4 @@
-# Functions::wireInstanceOf()
+# $functions->wireInstanceOf($instance, $className, $autoload = true): bool|string
 
 Source: `wire/core/Functions.php`
 
@@ -8,14 +8,12 @@ Since version 3.0.108 the $className argument may also represent an interface,
 array of interfaces, or mixed array of interfaces and class names. Previous versions did
 not support interfaces unless the $instance argument was an object.
 
+## Arguments
 
-@param object|string $instance Object instance to test (or string of its class name).
+- object|string $instance Object instance to test (or string of its class name).
+- string|array $className Class/interface name or array of class/interface names to test against.
+- bool $autoload Allow PHP to autoload the class? (default=true)
 
-@param string|array $className Class/interface name or array of class/interface names to test against.
+## Return value
 
-@param bool $autoload Allow PHP to autoload the class? (default=true)
-
-@return bool|string Returns one of the following:
- - `false` (bool): if not an instance (whether $className argument is string or array).
- - `true` (bool): if given a single $className (string) and $instance is an instance of it.
- - `ClassName` (string): first matching class/interface name if $className was an array of classes to test.
+bool|string Returns one of the following: - `false` (bool): if not an instance (whether $className argument is string or array). - `true` (bool): if given a single $className (string) and $instance is an instance of it. - `ClassName` (string): first matching class/interface name if $className was an array of classes to test.

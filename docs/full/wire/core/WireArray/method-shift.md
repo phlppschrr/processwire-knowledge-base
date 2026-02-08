@@ -1,4 +1,4 @@
-# WireArray::shift()
+# $wireArray->shift(): Wire|mixed|null
 
 Source: `wire/core/WireArray.php`
 
@@ -6,7 +6,10 @@ Shift an element off the beginning of the WireArray and return it
 
 Consistent with behavior of PHP's `array_shift()` method.
 
+## Return value
 
-@return Wire|mixed|null Item shifted off the beginning or NULL if empty.
+Wire|mixed|null Item shifted off the beginning or NULL if empty.
 
-@see WireArray::unshift()
+## See also
+
+- [WireArray::unshift()](method-unshift.md)

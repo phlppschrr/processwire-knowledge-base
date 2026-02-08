@@ -1,4 +1,4 @@
-# Page::editUrl()
+# $page->editUrl($options = array()): string
 
 Source: `wire/core/Page.php`
 
@@ -14,11 +14,10 @@ if($page->editable()) {
 }
 ~~~~~~
 
+## Arguments
 
-@param array|bool|string $options Specify true for http option, specify name of field to find (3.0.151+), or use $options array:
- - `http` (bool): True to force scheme and hostname in URL (default=auto detect).
- - `language` (Language|bool): Optionally specify Language to start editor in, or boolean true to force current user language.
- - `find` (string): Name of field to find in the editor (3.0.151+)
- - `vars` (array): Additional variables to include in query string (3.0.239+)
+- array|bool|string $options Specify true for http option, specify name of field to find (3.0.151+), or use $options array: - `http` (bool): True to force scheme and hostname in URL (default=auto detect). - `language` (Language|bool): Optionally specify Language to start editor in, or boolean true to force current user language. - `find` (string): Name of field to find in the editor (3.0.151+) - `vars` (array): Additional variables to include in query string (3.0.239+)
 
-@return string URL for editing this page
+## Return value
+
+string URL for editing this page

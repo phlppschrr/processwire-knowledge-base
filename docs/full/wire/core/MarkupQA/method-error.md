@@ -1,11 +1,14 @@
-# MarkupQA::error()
+# $markupQA->error($text, $flags = 0): $this
 
 Source: `wire/core/MarkupQA.php`
 
 Record error message to image-errors log
 
-@param string $text
+## Arguments
 
-@param int $flags
+- string $text
+- int $flags
 
-@return $this
+## Return value
+
+$this

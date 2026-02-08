@@ -1,7 +1,9 @@
-# FieldtypeRepeaterConfigHelper::__construct()
+# $fieldtypeRepeaterConfigHelper->__construct(Field $field)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 Construct
 
-@param Field $field
+## Arguments
+
+- Field $field

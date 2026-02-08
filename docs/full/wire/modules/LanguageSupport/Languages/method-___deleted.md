@@ -1,8 +1,9 @@
-# Languages::___deleted()
+# $languages->___deleted(Page $language)
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Hook called when a language is deleted
 
+## Arguments
 
-@param Page $language
+- Page $language

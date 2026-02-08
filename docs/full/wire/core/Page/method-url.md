@@ -1,4 +1,4 @@
-# Page::url()
+# $page->url($options = null): string
 
 Source: `wire/core/Page.php`
 
@@ -98,9 +98,17 @@ echo $page->url([
 ]);
 ~~~~~
 
+## Arguments
 
-@param array|int|string|bool|Language|null $options Optionally specify options to modify default behavior (see method description).
+- array|int|string|bool|Language|null $options Optionally specify options to modify default behavior (see method description).
 
-@return string Returns page URL, for example: `/my-site/about/contact/`
+## Return value
 
-@see Page::path(), Page::httpUrl(), Page::editUrl(), Page::localUrl()
+string Returns page URL, for example: `/my-site/about/contact/`
+
+## See also
+
+- [Page::path()](method-path.md)
+- [Page::httpUrl()](method-httpurl.md)
+- [Page::editUrl()](method-editurl.md)
+- [Page::localUrl()](index.md)

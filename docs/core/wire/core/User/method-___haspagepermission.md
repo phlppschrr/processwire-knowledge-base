@@ -1,4 +1,4 @@
-# User::___hasPagePermission()
+# $user->___hasPagePermission($name, ?Page $page = null): bool
 
 Source: `wire/core/User.php`
 
@@ -8,9 +8,11 @@ This is a basic permission check and it is recommended that you use those from t
 You use the PagePermissions module by calling the editable(), addable(), etc., functions on a page object.
 The PagePermissions does use this function for some of it's checking.
 
+## Arguments
 
-@param string|Permission
+- string|Permission
+- Page|null $page Optional page to check against
 
-@param Page|null $page Optional page to check against
+## Return value
 
-@return bool
+bool

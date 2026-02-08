@@ -1,9 +1,13 @@
-# Selector::getLabel()
+# Selector::getLabel(): string
 
 Source: `wire/core/Selector.php`
 
 Get short label that describes this Selector
 
-@return string
+## Return value
 
-@since 3.0.160
+string
+
+## Meta
+
+- @since 3.0.160

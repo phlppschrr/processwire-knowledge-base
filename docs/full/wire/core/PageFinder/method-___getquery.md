@@ -1,15 +1,22 @@
-# PageFinder::___getQuery()
+# $pageFinder->___getQuery($selectors, array $options): DatabaseQuerySelect
 
 Source: `wire/core/PageFinder.php`
 
 Given one or more selectors, create the SQL query for finding pages.
 
-@TODO split this method up into more parts, it's too long
+## Arguments
 
-@param Selectors $selectors Array of selectors.
+- Selectors $selectors Array of selectors.
+- array $options
 
-@param array $options
+## Return value
 
-@return DatabaseQuerySelect
+DatabaseQuerySelect
 
-@throws PageFinderSyntaxException
+## Throws
+
+- PageFinderSyntaxException
+
+## Meta
+
+- @TODO split this method up into more parts, it's too long

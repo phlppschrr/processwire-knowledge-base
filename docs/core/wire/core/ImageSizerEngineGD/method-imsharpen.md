@@ -1,11 +1,14 @@
-# ImageSizerEngineGD::imSharpen()
+# $imageSizerEngineGD->imSharpen($im, $mode): resource|bool
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Sharpen image (@horst)
 
-@param resource $im
+## Arguments
 
-@param string $mode May be: none | soft | medium | strong
+- resource $im
+- string $mode May be: none | soft | medium | strong
 
-@return resource|bool
+## Return value
+
+resource|bool

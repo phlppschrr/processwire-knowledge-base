@@ -1,7 +1,9 @@
-# DatabaseQuerySelect::getQueryGroupby()
+# $databaseQuerySelect->getQueryGroupby(): string
 
 Source: `wire/core/DatabaseQuerySelect.php`
 
 Get GROUP BY section of SQL
 
-@return string
+## Return value
+
+string

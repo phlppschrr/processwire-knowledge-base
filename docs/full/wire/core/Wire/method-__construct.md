@@ -1,4 +1,4 @@
-# Wire::__construct()
+# $wire->__construct()
 
 Source: `wire/core/Wire.php`
 

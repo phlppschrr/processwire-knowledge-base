@@ -1,8 +1,9 @@
-# ProcessWire::getInstances()
+# ProcessWire::getInstances(): array
 
 Source: `wire/core/ProcessWire.php`
 
 Get all ProcessWire instances
 
+## Return value
 
-@return array
+array

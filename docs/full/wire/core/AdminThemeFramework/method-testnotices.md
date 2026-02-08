@@ -1,7 +1,9 @@
-# AdminThemeFramework::testNotices()
+# $adminThemeFramework->testNotices(): bool
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Test all notice types
 
-@return bool
+## Return value
+
+bool

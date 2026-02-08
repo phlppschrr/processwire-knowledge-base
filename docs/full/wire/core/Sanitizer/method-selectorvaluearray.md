@@ -1,11 +1,14 @@
-# Sanitizer::selectorValueArray()
+# $sanitizer->selectorValueArray(array $value, $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
 Wrapper for selectorValueV2() when it receives an array
 
-@param array $value
+## Arguments
 
-@param array $options See options for selectorValue()
+- array $value
+- array $options See options for selectorValue()
 
-@return string Always returns string unless you specify something different for 'emptyValue'
+## Return value
+
+string Always returns string unless you specify something different for 'emptyValue'

@@ -1,9 +1,13 @@
-# ProcessTemplateExportImport::getExportData()
+# $processTemplateExportImport->getExportData(array $exportTemplates): array
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
 Return export data for all given $exportTemplates
 
-@param array $exportTemplates template names
+## Arguments
 
-@return array
+- array $exportTemplates template names
+
+## Return value
+
+array

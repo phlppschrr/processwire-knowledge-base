@@ -1,12 +1,17 @@
-# Template::addTag()
+# $template->addTag($tag): $this
 
 Source: `wire/core/Template.php`
 
 Add tag
 
+## Arguments
 
-@param string $tag
+- string $tag
 
-@return $this
+## Return value
 
-@since 3.0.176
+$this
+
+## Meta
+
+- @since 3.0.176

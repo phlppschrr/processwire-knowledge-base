@@ -1,14 +1,18 @@
-# Permissions::___delete()
+# $permissions->___delete(Page $page, $recursive = false): bool
 
 Source: `wire/core/Permissions.php`
 
 Permanently delete a Permission
 
+## Arguments
 
-@param Permission|Page $page Permission to delete
+- Permission|Page $page Permission to delete
+- bool $recursive If set to true, then this will attempt to delete any pages below the Permission too.
 
-@param bool $recursive If set to true, then this will attempt to delete any pages below the Permission too.
+## Return value
 
-@return bool True on success, false on failure
+bool True on success, false on failure
 
-@throws WireException
+## Throws
+
+- WireException

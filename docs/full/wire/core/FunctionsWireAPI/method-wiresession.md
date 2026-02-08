@@ -1,11 +1,14 @@
-# FunctionsWireAPI::wireSession()
+# $functionsWireAPI->wireSession($key = '', $value = null): Session|mixed
 
 Source: `wire/core/FunctionsWireAPI.php`
 
 Access the $session API variable as a function
 
-@param string $key Optional property to get or set
+## Arguments
 
-@param null $value Optional value to set
+- string $key Optional property to get or set
+- null $value Optional value to set
 
-@return Session|mixed
+## Return value
+
+Session|mixed

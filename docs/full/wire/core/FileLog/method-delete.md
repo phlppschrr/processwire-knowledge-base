@@ -1,7 +1,9 @@
-# FileLog::delete()
+# $fileLog->delete(): bool
 
 Source: `wire/core/FileLog.php`
 
 Delete the log file
 
-@return bool
+## Return value
+
+bool

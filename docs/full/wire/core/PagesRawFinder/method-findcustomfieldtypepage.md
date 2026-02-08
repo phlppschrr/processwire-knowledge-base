@@ -1,11 +1,11 @@
-# PagesRawFinder::findCustomFieldtypePage()
+# $pagesRawFinder->findCustomFieldtypePage(Field $field, $fieldName, array $pageRefCols)
 
 Source: `wire/core/PagesRaw.php`
 
 Find and apply values for Page reference fields
 
-@param Field $field
+## Arguments
 
-@param string $fieldName
-
-@param array $pageRefCols
+- Field $field
+- string $fieldName
+- array $pageRefCols

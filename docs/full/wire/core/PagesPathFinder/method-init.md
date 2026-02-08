@@ -1,9 +1,10 @@
-# PagesPathFinder::init()
+# $pagesPathFinder->init($path, array $options)
 
 Source: `wire/core/PagesPathFinder.php`
 
 Init for new get()
 
-@param string $path
+## Arguments
 
-@param array $options
+- string $path
+- array $options

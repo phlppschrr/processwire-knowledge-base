@@ -1,13 +1,15 @@
-# WireHttp::downloadCURL()
+# $wireHttp->downloadCURL($fromURL, $fp, array $options): bool
 
 Source: `wire/core/WireHttp.php`
 
 Download file using CURL
 
-@param string $fromURL
+## Arguments
 
-@param resource $fp Open file pointer
+- string $fromURL
+- resource $fp Open file pointer
+- array $options
 
-@param array $options
+## Return value
 
-@return bool True if successful false if not
+bool True if successful false if not

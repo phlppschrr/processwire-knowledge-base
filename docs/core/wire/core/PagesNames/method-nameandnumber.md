@@ -1,4 +1,4 @@
-# PagesNames::nameAndNumber()
+# $pagesNames->nameAndNumber($name, $delimiter = ''): array
 
 Source: `wire/core/PagesNames.php`
 
@@ -7,9 +7,11 @@ If given name has a numbered suffix, return array with name (excluding suffix) a
 Returns array like `[ 'name', 123 ]` where `name` is name without the suffix, and `123` is the numbered suffix.
 If the name did not have a numbered suffix, then the 123 will be 0 and `name` will be the given `$name`.
 
+## Arguments
 
-@param string $name
+- string $name
+- string $delimiter Character(s) that separate name and numbered suffix
 
-@param string $delimiter Character(s) that separate name and numbered suffix
+## Return value
 
-@return array
+array

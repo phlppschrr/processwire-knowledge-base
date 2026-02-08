@@ -1,7 +1,9 @@
-# SystemUpdaterChecks::checkIndexFile()
+# $systemUpdaterChecks->checkIndexFile(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Check that index.php file is the correct version
 
-@return bool
+## Return value
+
+bool

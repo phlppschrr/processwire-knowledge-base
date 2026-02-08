@@ -1,7 +1,9 @@
-# PagesRequest::getRedirectUrl()
+# $pagesRequest->getRedirectUrl(): string
 
 Source: `wire/core/PagesRequest.php`
 
 Get the redirect URL
 
-@return string
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# Process::___install()
+# $process->___install()
 
 Source: `wire/core/Process.php`
 

@@ -1,7 +1,9 @@
-# AdminTheme::initConfig()
+# $adminTheme->initConfig()
 
 Source: `wire/core/AdminTheme.php`
 
 Initialize configuration properties and JS config for when this is current admin theme
 
-@since 3.0.173
+## Meta
+
+- @since 3.0.173

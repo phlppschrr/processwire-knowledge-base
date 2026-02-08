@@ -1,13 +1,21 @@
-# WireCacheDatabase::maintenance()
+# $wireCacheDatabase->maintenance($obj): bool
 
 Source: `wire/core/WireCacheDatabase.php`
 
 Database cache maintenance (every 10 minutes)
 
-@param Template|Page $obj
+## Arguments
 
-@return bool
+- Template|Page $obj
 
-@throws WireException
+## Return value
 
-@since 3.0.242
+bool
+
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.242

@@ -1,11 +1,14 @@
-# ProcessPageSearchLive::useType()
+# $processPageSearchLive->useType($type, $requestType = ''): bool
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Allow this search type?
 
-@param string $type Type to check
+## Arguments
 
-@param string $requestType Type specifically requested by user
+- string $type Type to check
+- string $requestType Type specifically requested by user
 
-@return bool
+## Return value
+
+bool

@@ -1,11 +1,17 @@
-# ImageSizerEngine::setSharpening()
+# $imageSizerEngine->setSharpening($value): self
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Set sharpening value: blank (for none), soft, medium, or strong
 
-@param mixed $value
+## Arguments
 
-@return self
+- mixed $value
 
-@throws WireException
+## Return value
+
+self
+
+## Throws
+
+- WireException

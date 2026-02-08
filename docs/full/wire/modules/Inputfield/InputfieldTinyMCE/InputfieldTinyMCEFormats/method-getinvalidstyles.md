@@ -1,4 +1,4 @@
-# InputfieldTinyMCEFormats::getInvalidStyles()
+# $inputfieldTinyMCEFormats->getInvalidStyles($value, $defaultValue, $merge = false): array|string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
@@ -12,10 +12,12 @@ In the above, line-height and color are disabled for all elements,
 background and background color are disabled for "a" elements,
 and height is disabled for "td" elements.
 
-@param string|array $value
+## Arguments
 
-@param array|string $defaultValue
+- string|array $value
+- array|string $defaultValue
+- bool $merge Merge with given defaultValue?
 
-@param bool $merge Merge with given defaultValue?
+## Return value
 
-@return array|string
+array|string

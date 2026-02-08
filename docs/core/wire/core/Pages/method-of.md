@@ -1,4 +1,4 @@
-# Pages::of()
+# $pages->of($of = null): bool
 
 Source: `wire/core/Pages.php`
 
@@ -20,7 +20,10 @@ if($pages->of()) {
 }
 ~~~~~
 
+## Arguments
 
-@param null|bool $of Specify boolean to set output formatting state, or omit to get output formatting state.
+- null|bool $of Specify boolean to set output formatting state, or omit to get output formatting state.
 
-@return bool Returns current output formatting state.
+## Return value
+
+bool Returns current output formatting state.

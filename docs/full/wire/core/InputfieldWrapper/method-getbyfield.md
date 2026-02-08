@@ -1,4 +1,4 @@
-# InputfieldWrapper::getByField()
+# $inputfieldWrapper->getByField($field): Inputfield|InputfieldWrapper|null
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,9 +8,14 @@ This is useful in cases where the input name may differ from the Field name
 that it represents, and you only know the field name. Applies only to
 Inputfields connected with a Page and Field (i.e. used for page editing).
 
+## Arguments
 
-@param Field|string|int $field
+- Field|string|int $field
 
-@return Inputfield|InputfieldWrapper|null
+## Return value
 
-@since 3.0.239
+Inputfield|InputfieldWrapper|null
+
+## Meta
+
+- @since 3.0.239

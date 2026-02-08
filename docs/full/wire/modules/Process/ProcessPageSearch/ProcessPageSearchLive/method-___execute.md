@@ -1,9 +1,13 @@
-# ProcessPageSearchLive::___execute()
+# $processPageSearchLive->___execute($getJSON = true): string|array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Execute live search and return JSON result
 
-@param bool $getJSON Get results as JSON string? Specify false to get array instead.
+## Arguments
 
-@return string|array
+- bool $getJSON Get results as JSON string? Specify false to get array instead.
+
+## Return value
+
+string|array

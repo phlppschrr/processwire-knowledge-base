@@ -1,12 +1,14 @@
-# WireDateTime::convertDateFormat()
+# $wireDateTime->convertDateFormat($format, $type): string
 
 Source: `wire/core/WireDateTime.php`
 
 Given a PHP date() format, convert it to either 'js', 'strftime' or 'regex' format
 
+## Arguments
 
-@param string $format PHP date() format
+- string $format PHP date() format
+- string $type New format to convert to: either 'js', 'strftime', or 'regex'
 
-@param string $type New format to convert to: either 'js', 'strftime', or 'regex'
+## Return value
 
-@return string
+string

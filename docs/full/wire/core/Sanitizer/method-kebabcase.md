@@ -1,12 +1,14 @@
-# Sanitizer::kebabCase()
+# $sanitizer->kebabCase($value, array $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
 Alias of hyphenCase()
 
+## Arguments
 
-@param string $value
+- string $value
+- array $options See hyphenCase()
 
-@param array $options See hyphenCase()
+## Return value
 
-@return string
+string

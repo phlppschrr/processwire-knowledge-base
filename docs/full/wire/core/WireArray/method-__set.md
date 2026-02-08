@@ -1,4 +1,4 @@
-# WireArray::__set()
+# $wireArray->__set($property, $value)
 
 Source: `wire/core/WireArray.php`
 
@@ -7,8 +7,11 @@ Enables setting of WireArray elements in object notation.
 Example: $myArray->myElement = 10;
 Not applicable to numerically indexed arrays.
 
-@param int|string $property Key of item to set.
+## Arguments
 
-@param int|string|array|object Value of item to set.
+- int|string $property Key of item to set.
+- int|string|array|object Value of item to set.
 
-@throws WireException
+## Throws
+
+- WireException

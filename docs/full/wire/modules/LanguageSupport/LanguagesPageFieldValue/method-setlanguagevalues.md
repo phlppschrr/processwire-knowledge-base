@@ -1,4 +1,4 @@
-# LanguagesPageFieldValue::setLanguageValues()
+# $languagesPageFieldValue->setLanguageValues(array $values, $reset = false): self
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
@@ -12,10 +12,15 @@ $page->title->setLanguageValues([
 ]);
 ~~~~~
 
-@param array $values Associative array of values where keys are language names or IDs.
+## Arguments
 
-@param bool $reset Reset any languages not specified to blank? (default=false)
+- array $values Associative array of values where keys are language names or IDs.
+- bool $reset Reset any languages not specified to blank? (default=false)
 
-@return self
+## Return value
 
-@since 3.0.236
+self
+
+## Meta
+
+- @since 3.0.236

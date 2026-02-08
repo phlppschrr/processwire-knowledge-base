@@ -1,15 +1,22 @@
-# PagesType::findIDs()
+# $pagesType->findIDs($selectorString, $options = array()): array
 
 Source: `wire/core/PagesType.php`
 
 Given a Selector string, return the page IDs that match
 
-@param string $selectorString
+## Arguments
 
-@param array $options
+- string $selectorString
+- array $options
 
-@return array
+## Return value
 
-@since 3.0.128
+array
 
-@see Pages::findIDs()
+## See also
+
+- [Pages::findIDs()](../Pages/method-findids.md)
+
+## Meta
+
+- @since 3.0.128

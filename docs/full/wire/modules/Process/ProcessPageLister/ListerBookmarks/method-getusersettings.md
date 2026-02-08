@@ -1,9 +1,13 @@
-# ListerBookmarks::getUserSettings()
+# $listerBookmarks->getUserSettings($userID = 0): array
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get user’s lister settings for current page
 
-@param int $userID
+## Arguments
 
-@return array
+- int $userID
+
+## Return value
+
+array

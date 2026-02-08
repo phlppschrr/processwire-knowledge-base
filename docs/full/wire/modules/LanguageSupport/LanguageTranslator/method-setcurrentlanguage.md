@@ -1,9 +1,13 @@
-# LanguageTranslator::setCurrentLanguage()
+# $languageTranslator->setCurrentLanguage(Language $language): $this
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Set the current language and reset current stored textdomains
 
-@param Language $language
+## Arguments
 
-@return $this
+- Language $language
+
+## Return value
+
+$this

@@ -1,7 +1,9 @@
-# WireMail::renderMailBody()
+# $wireMail->renderMailBody(): string
 
 Source: `wire/core/WireMail.php`
 
 Render mail body
 
-@return string
+## Return value
+
+string

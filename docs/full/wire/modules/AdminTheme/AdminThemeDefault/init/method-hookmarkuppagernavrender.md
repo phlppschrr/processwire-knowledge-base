@@ -1,7 +1,9 @@
-# init::hookMarkupPagerNavRender()
+# $init->hookMarkupPagerNavRender(HookEvent $event)
 
 Source: `wire/modules/AdminTheme/AdminThemeDefault/init.php`
 
 Change the default prev/next links for MarkupPagerNav
 
-@param HookEvent $event
+## Arguments
+
+- HookEvent $event

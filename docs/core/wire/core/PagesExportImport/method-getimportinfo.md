@@ -1,4 +1,4 @@
-# PagesExportImport::getImportInfo()
+# $pagesExportImport->getImportInfo(array &$a): array
 
 Source: `wire/core/PagesExportImport.php`
 
@@ -23,7 +23,10 @@ array(
 );
 ~~~~~
 
+## Arguments
 
-@param array $a Import data array
+- array $a Import data array
 
-@return array
+## Return value
+
+array

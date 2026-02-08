@@ -1,7 +1,9 @@
-# PagesPathFinder::setResultLanguageSegment()
+# $pagesPathFinder->setResultLanguageSegment($segment)
 
 Source: `wire/core/PagesPathFinder.php`
 
 Set result language segment
 
-@param string $segment
+## Arguments
+
+- string $segment

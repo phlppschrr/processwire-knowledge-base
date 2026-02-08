@@ -1,10 +1,13 @@
-# Field::setIcon()
+# $field->setIcon($icon): $this
 
 Source: `wire/core/Field.php`
 
 Set the icon for this field
 
+## Arguments
 
-@param string $icon Icon name
+- string $icon Icon name
 
-@return $this
+## Return value
+
+$this

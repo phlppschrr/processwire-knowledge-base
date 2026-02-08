@@ -1,4 +1,4 @@
-# WireCache::getFor()
+# $wireCache->getFor($ns, $name, $expire = null, $func = null): string|array|PageArray|mixed|null
 
 Source: `wire/core/WireCache.php`
 
@@ -17,14 +17,17 @@ $value = $cache->getFor('my-namespace', 'my-cache-name');
 $value = $cache->get($this, 'my-cache-name');
 ~~~~~
 
-@param string|object $ns Namespace
+## Arguments
 
-@param string $name Cache name
+- string|object $ns Namespace
+- string $name Cache name
+- null|int|string $expire Optional expiration
+- callable|null $func Optional cache generation function
 
-@param null|int|string $expire Optional expiration
+## Return value
 
-@param callable|null $func Optional cache generation function
+string|array|PageArray|mixed|null Returns null if cache doesn’t exist and no generation function provided.
 
-@return string|array|PageArray|mixed|null Returns null if cache doesn’t exist and no generation function provided.
+## See also
 
-@see WireCache::get()
+- [WireCache::get()](method-get.md)

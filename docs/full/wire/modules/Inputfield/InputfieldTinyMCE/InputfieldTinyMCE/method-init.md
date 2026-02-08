@@ -1,4 +1,4 @@
-# InputfieldTinyMCE::init()
+# $inputfieldTinyMCE->init()
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 

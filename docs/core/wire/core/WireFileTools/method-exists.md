@@ -1,4 +1,4 @@
-# WireFileTools::exists()
+# $wireFileTools->exists($filename, $options = ''): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -35,19 +35,19 @@ $exists = $files->exists('/path/dir/', 'writable dir');
 $exists = $files->exists('/path/file.ext', 'readable writable file');
 ~~~~~
 
+## Arguments
 
-@param string $filename
+- string $filename
+- array|string $options Can be specified as array or string: - `type` (string): Verify it is of type: 'file', 'link', 'dir' (default='') - `readable` (bool): Verify it is readable? (default=false) - `writable` (bool): Also verify the file is writable? (default=false) - `writeable` (bool): Alias of writable (default=false) - When specified as string, you can use any combination of the words: `readable, writable, file, link, dir` (separated by space or comma).
 
-@param array|string $options Can be specified as array or string:
- - `type` (string): Verify it is of type: 'file', 'link', 'dir' (default='')
- - `readable` (bool): Verify it is readable? (default=false)
- - `writable` (bool): Also verify the file is writable? (default=false)
- - `writeable` (bool): Alias of writable (default=false)
- - When specified as string, you can use any combination of the words:
-   `readable, writable, file, link, dir` (separated by space or comma).
+## Return value
 
-@return bool
+bool
 
-@throws WireException if given invalid or unrecognized $options
+## Throws
 
-@since 3.0.180
+- WireException if given invalid or unrecognized $options
+
+## Meta
+
+- @since 3.0.180

@@ -1,11 +1,17 @@
-# Templates::___getTags()
+# $templates->___getTags($getTemplateNames = false): array
 
 Source: `wire/core/Templates.php`
 
 Get all tags used by templates
 
-@param bool $getTemplateNames Get arrays of template names for each tag? (default=false)
+## Arguments
 
-@return array In return value both key and value are the tag
+- bool $getTemplateNames Get arrays of template names for each tag? (default=false)
 
-@since 3.0.176 + hookable in 3.0.179
+## Return value
+
+array In return value both key and value are the tag
+
+## Meta
+
+- @since 3.0.176 + hookable in 3.0.179

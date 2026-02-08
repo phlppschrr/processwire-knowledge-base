@@ -1,10 +1,13 @@
-# InputfieldWrapper::___processInput()
+# $inputfieldWrapper->___processInput(WireInputData $input): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Process input for all children
 
+## Arguments
 
-@param WireInputData $input
+- WireInputData $input
 
-@return $this
+## Return value
+
+$this

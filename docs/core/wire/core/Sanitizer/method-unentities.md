@@ -1,4 +1,4 @@
-# Sanitizer::unentities()
+# $sanitizer->unentities($str, $flags = ENT_QUOTES, $encoding = 'UTF-8'): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -14,14 +14,16 @@ decode than what PHP does. That will make it convert all UTF-8 entities (includi
 entities), and it will remove any remaining entity sequences if the could not be converted, ensuring there
 are no entities possible in returned value.
 
+## Arguments
 
-@param string $str String to remove entities from
+- string $str String to remove entities from
+- int|bool $flags See PHP html_entity_decode function for flags, OR specify boolean true to convert all entities and remove any that cannot be converted (since 3.0.105).
+- string $encoding Encoding (default="UTF-8").
 
-@param int|bool $flags See PHP html_entity_decode function for flags,
-  OR specify boolean true to convert all entities and remove any that cannot be converted (since 3.0.105).
+## Return value
 
-@param string $encoding Encoding (default="UTF-8").
+string String with entities removed.
 
-@return string String with entities removed.
+## See also
 
-@see Sanitizer::entities()
+- [Sanitizer::entities()](method-entities.md)

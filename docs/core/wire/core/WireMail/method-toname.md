@@ -1,4 +1,4 @@
-# WireMail::toName()
+# $wireMail->toName($name): $this
 
 Source: `wire/core/WireMail.php`
 
@@ -9,8 +9,14 @@ all properties can be set with direct access, i.e. $mailer->toName = 'User Name'
 
 This sets the 'to name' for whatever the last added 'to' email address was.
 
-@param string $name The 'to' name
+## Arguments
 
-@return $this
+- string $name The 'to' name
 
-@throws WireException if you attempt to set a toName before a to email.
+## Return value
+
+$this
+
+## Throws
+
+- WireException if you attempt to set a toName before a to email.

@@ -1,4 +1,4 @@
-# Functions::wireMail()
+# $functions->wireMail($to = '', $from = '', $subject = '', $body = '', $options = array()): int|WireMail
 
 Source: `wire/core/Functions.php`
 
@@ -29,20 +29,14 @@ $mail->to('user@domain.com')->from('you@company.com');
 $mail->subject('Mail Subject')->body('Mail Body Text')->bodyHTML('Body HTML');
 $numSent = $mail->send();
 
+## Arguments
 
-@param string|array $to Email address TO. For multiple, specify CSV string or array.
+- string|array $to Email address TO. For multiple, specify CSV string or array.
+- string $from Email address FROM. This may be an email address, or a combined name and email address. Example of combined name and email: `Karen Cramer <karen@processwire.com>`
+- string $subject Email subject
+- string|array $body Email body or omit to move straight to $options array
+- array|string $options Array of options OR the $bodyHTML string. Array $options are: - `bodyHTML` (string): Email body as HTML. - `body` (string): Email body as plain text. This is created automatically if you only provide $bodyHTML. - `headers` (array): Associative array of ['header name' => 'header value'] - Any additional options you provide will be sent along to the WireMail module or class, in tact.
 
-@param string $from Email address FROM. This may be an email address, or a combined name and email address.
-	Example of combined name and email: `Karen Cramer <karen@processwire.com>`
+## Return value
 
-@param string $subject Email subject
-
-@param string|array $body Email body or omit to move straight to $options array
-
-@param array|string $options Array of options OR the $bodyHTML string. Array $options are:
- - `bodyHTML` (string): Email body as HTML.
-	- `body` (string): Email body as plain text. This is created automatically if you only provide $bodyHTML.
-	- `headers` (array): Associative array of ['header name' => 'header value']
-	- Any additional options you provide will be sent along to the WireMail module or class, in tact.
-
-@return int|WireMail Returns number of messages sent or WireMail object if no arguments specified.
+int|WireMail Returns number of messages sent or WireMail object if no arguments specified.

@@ -1,11 +1,17 @@
-# WireDataDB::remove()
+# $wireDataDB->remove($key): self
 
 Source: `wire/core/WireDataDB.php`
 
 Remove value for a specific property/name/key
 
-@param string $key
+## Arguments
 
-@return self
+- string $key
 
-@throws WireException
+## Return value
+
+self
+
+## Throws
+
+- WireException

@@ -1,11 +1,17 @@
-# Tfa::getUserSettings()
+# $tfa->getUserSettings(User $user): array
 
 Source: `wire/core/Tfa.php`
 
 Get TFA data for given user from user_tfa field
 
-@param User $user
+## Arguments
 
-@return array
+- User $user
 
-@throws WireException
+## Return value
+
+array
+
+## Throws
+
+- WireException

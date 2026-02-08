@@ -1,15 +1,19 @@
-# ProcessPageListRender::getPageLabelDelimited()
+# $processPageListRender->getPageLabelDelimited(Page $page, $label, array $options): string
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get page label when label format is space delimited
 
-@param Page $page
+## Arguments
 
-@param string $label
+- Page $page
+- string $label
+- array $options
 
-@param array $options
+## Return value
 
-@return string
+string
 
-@since 3.0.163
+## Meta
+
+- @since 3.0.163

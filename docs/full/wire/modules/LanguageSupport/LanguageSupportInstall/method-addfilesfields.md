@@ -1,5 +1,8 @@
-# LanguageSupportInstall::addFilesFields()
+# $languageSupportInstall->addFilesFields($fieldgroup)
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 
-@param Fieldgroup $fieldgroup
+
+## Arguments
+
+- Fieldgroup $fieldgroup

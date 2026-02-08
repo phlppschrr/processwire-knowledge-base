@@ -1,7 +1,9 @@
-# ImageSizerEngine::isSingular()
+# $imageSizerEngine->isSingular(): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Module info: not singular
 
-@return bool
+## Return value
+
+bool

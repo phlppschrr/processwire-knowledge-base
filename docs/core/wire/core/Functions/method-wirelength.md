@@ -1,4 +1,4 @@
-# Functions::wireLength()
+# $functions->wireLength($value, $mb = true): int
 
 Source: `wire/core/Functions.php`
 
@@ -10,10 +10,15 @@ Returns string length of any type (string, array, object, bool, int, etc.)
 - If given array or object it duplicates the behavior of `wireCount()`.
 - If given null returns 0.
 
-@param string|array|object|int|bool|null $value
+## Arguments
 
-@param bool $mb Use multibyte string length when available (default=true)
+- string|array|object|int|bool|null $value
+- bool $mb Use multibyte string length when available (default=true)
 
-@return int
+## Return value
 
-@since 3.0.192
+int
+
+## Meta
+
+- @since 3.0.192

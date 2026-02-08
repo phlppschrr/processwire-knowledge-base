@@ -1,7 +1,9 @@
-# ProcessPageListRender::getChildren()
+# $processPageListRender->getChildren(): PageArray
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get children pages
 
-@return PageArray
+## Return value
+
+PageArray

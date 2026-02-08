@@ -1,15 +1,19 @@
-# WireInput::sanitizeValue()
+# $wireInput->sanitizeValue($method, $value, $getArray): array|int|float|string|null
 
 Source: `wire/core/WireInput.php`
 
 Sanitize the given value with the given method(s)
 
-@param string $method Sanitizer method name or CSV string of sanitizer method names
+## Arguments
 
-@param string|array|null $value
+- string $method Sanitizer method name or CSV string of sanitizer method names
+- string|array|null $value
+- bool $getArray
 
-@param bool $getArray
+## Return value
 
-@return array|int|float|string|null
+array|int|float|string|null
 
-@throws WireException If given unknown sanitizer method
+## Throws
+
+- WireException If given unknown sanitizer method

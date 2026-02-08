@@ -1,9 +1,13 @@
-# WireMail::subject()
+# $wireMail->subject($subject): $this
 
 Source: `wire/core/WireMail.php`
 
 Set the email subject
 
-@param string $subject Email subject text
+## Arguments
 
-@return $this
+- string $subject Email subject text
+
+## Return value
+
+$this

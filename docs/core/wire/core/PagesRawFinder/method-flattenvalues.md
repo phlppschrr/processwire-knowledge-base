@@ -1,15 +1,19 @@
-# PagesRawFinder::flattenValues()
+# $pagesRawFinder->flattenValues(array $values, $prefix = '', $delimiter = '.'): array
 
 Source: `wire/core/PagesRaw.php`
 
 Flatten multidimensional values from array['a']['b']['c'] to array['a.b.c']
 
-@param array $values
+## Arguments
 
-@param string $prefix Prefix for recursive use
+- array $values
+- string $prefix Prefix for recursive use
+- string $delimiter
 
-@param string $delimiter
+## Return value
 
-@return array
+array
 
-@since 3.0.193
+## Meta
+
+- @since 3.0.193

@@ -1,4 +1,4 @@
-# WireCache::deleteAll()
+# $wireCache->deleteAll(): int
 
 Source: `wire/core/WireCache.php`
 
@@ -6,6 +6,10 @@ Delete all caches (where allowed)
 
 This method deletes all caches other than those with `WireCache::expireReserved` status.
 
-@return int Quantity of caches deleted
+## Return value
 
-@since 3.0.130
+int Quantity of caches deleted
+
+## Meta
+
+- @since 3.0.130

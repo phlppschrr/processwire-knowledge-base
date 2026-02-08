@@ -1,9 +1,13 @@
-# LanguageTranslator::getTranslations()
+# $languageTranslator->getTranslations($textdomain): array
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Return ALL translations for the given textdomain
 
-@param string|object $textdomain Textdomain string, filename, or object.
+## Arguments
 
-@return array
+- string|object $textdomain Textdomain string, filename, or object.
+
+## Return value
+
+array

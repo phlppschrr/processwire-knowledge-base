@@ -1,13 +1,15 @@
-# FileLog::getChunkArray()
+# $fileLog->getChunkArray($chunkNum = 1, $chunkSize = 0, $reverse = true): array
 
 Source: `wire/core/FileLog.php`
 
 Get lines from the end of a file based on chunk size
 
-@param int $chunkSize
+## Arguments
 
-@param int $chunkNum
+- int $chunkSize
+- int $chunkNum
+- bool $reverse
 
-@param bool $reverse
+## Return value
 
-@return array
+array

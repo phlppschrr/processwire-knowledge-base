@@ -1,4 +1,4 @@
-# Page::matchesDatabase()
+# $page->matchesDatabase($s): bool
 
 Source: `wire/core/Page.php`
 
@@ -10,9 +10,14 @@ if($page->matchesDatabase("created>=today")) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|Selectors|array $s Selector to compare against (string, Selectors object, or array).
+- string|Selectors|array $s Selector to compare against (string, Selectors object, or array).
 
-@return bool Returns true if this page matches, or false if it doesn't.
+## Return value
 
-@since 3.0.225
+bool Returns true if this page matches, or false if it doesn't.
+
+## Meta
+
+- @since 3.0.225

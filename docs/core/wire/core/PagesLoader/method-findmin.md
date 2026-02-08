@@ -1,4 +1,4 @@
-# PagesLoader::findMin()
+# $pagesLoader->findMin($selector, array $options = array()): PageArray
 
 Source: `wire/core/PagesLoader.php`
 
@@ -30,15 +30,19 @@ While this method combines what find() and getById() do in one query, there does
 appear to be any overhead benefit when the two strategies are dealing with identical
 conditions, like the same autojoin fields.
 
+## Arguments
 
-@param string|array|Selectors $selector
+- string|array|Selectors $selector
+- array $options - `cache` (bool): Allow pulling from and saving results to cache? (default=true) - `joinFields` (array): Names of fields to also join into the page load
 
-@param array $options
- - `cache` (bool): Allow pulling from and saving results to cache? (default=true)
- - `joinFields` (array): Names of fields to also join into the page load
+## Return value
 
-@return PageArray
+PageArray
 
-@throws WireException
+## Throws
 
-@since 3.0.172
+- WireException
+
+## Meta
+
+- @since 3.0.172

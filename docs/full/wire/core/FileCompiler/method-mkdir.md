@@ -1,11 +1,14 @@
-# FileCompiler::mkdir()
+# $fileCompiler->mkdir($path, $recursive = true): bool
 
 Source: `wire/core/FileCompiler.php`
 
 Make a directory with proper permissions
 
-@param string $path Path of directory to create
+## Arguments
 
-@param bool $recursive Default is true
+- string $path Path of directory to create
+- bool $recursive Default is true
 
-@return bool
+## Return value
+
+bool

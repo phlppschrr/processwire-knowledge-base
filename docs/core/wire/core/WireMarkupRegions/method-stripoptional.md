@@ -1,11 +1,14 @@
-# WireMarkupRegions::stripOptional()
+# $wireMarkupRegions->stripOptional($markup, $debug = false): string
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Strip optional tags/comments from given markup
 
-@param string $markup
+## Arguments
 
-@param bool $debug
+- string $markup
+- bool $debug
 
-@return string
+## Return value
+
+string

@@ -1,7 +1,9 @@
-# WireShutdown::shutdown()
+# $wireShutdown->shutdown(): bool
 
 Source: `wire/core/WireShutdown.php`
 
 Shutdown function registered with PHP
 
-@return bool
+## Return value
+
+bool

@@ -1,11 +1,14 @@
-# WireDebugInfo::getDebugInfo()
+# $wireDebugInfo->getDebugInfo(Wire $obj, $small = false): array
 
 Source: `wire/core/WireDebugInfo.php`
 
 Get all debug info for the given Wire object
 
-@param Wire $obj
+## Arguments
 
-@param bool $small Return non-verbose debug info? (default=false)
+- Wire $obj
+- bool $small Return non-verbose debug info? (default=false)
 
-@return array
+## Return value
+
+array

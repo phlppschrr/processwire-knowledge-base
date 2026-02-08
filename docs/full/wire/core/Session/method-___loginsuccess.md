@@ -1,8 +1,9 @@
-# Session::___loginSuccess()
+# $session->___loginSuccess(User $user)
 
 Source: `wire/core/Session.php`
 
 Login success method for hooks
 
+## Arguments
 
-@param User $user
+- User $user

@@ -1,13 +1,15 @@
-# InputfieldHasSelectableOptions::addOptionLabel()
+# $inputfieldHasSelectableOptions->addOptionLabel($value, $label, $language = null): self|$this
 
 Source: `wire/core/Interfaces.php`
 
 Add selectable option with label, optionally for specific language
 
-@param string|int $value
+## Arguments
 
-@param string $label
+- string|int $value
+- string $label
+- Language|null $language
 
-@param Language|null $language
+## Return value
 
-@return self|$this
+self|$this

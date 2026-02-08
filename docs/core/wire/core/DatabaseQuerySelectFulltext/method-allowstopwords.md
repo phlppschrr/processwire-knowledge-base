@@ -1,11 +1,17 @@
-# DatabaseQuerySelectFulltext::allowStopwords()
+# $databaseQuerySelectFulltext->allowStopwords($allow = null): bool
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Get or set whether fulltext searches can fallback to LIKE searches to match stopwords
 
-@param null|bool $allow Specify bool to set or omit to get
+## Arguments
 
-@return bool
+- null|bool $allow Specify bool to set or omit to get
 
-@since 3.0.162
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.162

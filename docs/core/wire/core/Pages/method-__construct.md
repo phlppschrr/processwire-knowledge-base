@@ -1,7 +1,9 @@
-# Pages::__construct()
+# $pages->__construct(ProcessWire $wire)
 
 Source: `wire/core/Pages.php`
 
 Create the Pages object
 
-@param ProcessWire $wire
+## Arguments
+
+- ProcessWire $wire

@@ -1,7 +1,9 @@
-# AdminTheme::getBodyClass()
+# $adminTheme->getBodyClass(): string
 
 Source: `wire/core/AdminTheme.php`
 
 Get the body[class] attribute string
 
-@return string
+## Return value
+
+string

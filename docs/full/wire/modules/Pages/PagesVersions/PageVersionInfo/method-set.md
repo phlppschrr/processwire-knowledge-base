@@ -1,11 +1,14 @@
-# PageVersionInfo::set()
+# $pageVersionInfo->set($key, $value): self
 
 Source: `wire/modules/Pages/PagesVersions/PageVersionInfo.php`
 
 Set property
 
-@param string $key
+## Arguments
 
-@param string|int|Page $value
+- string $key
+- string|int|Page $value
 
-@return self
+## Return value
+
+self

@@ -1,9 +1,13 @@
-# RepeaterPage::get()
+# $repeaterPage->get($key): int|mixed|null
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return int|mixed|null
+- string $key
+
+## Return value
+
+int|mixed|null

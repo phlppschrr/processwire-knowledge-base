@@ -1,4 +1,4 @@
-# WireHttp::setValidateURLOptions()
+# $wireHttp->setValidateURLOptions(array $options = array()): array
 
 Source: `wire/core/WireHttp.php`
 
@@ -10,7 +10,10 @@ with the setAllowSchemes() method in this class.
 
 To return current validate URL options, omit the $options argument.
 
+## Arguments
 
-@param array $options Options to set, see the $sanitizer->url() method for details on options.
+- array $options Options to set, see the $sanitizer->url() method for details on options.
 
-@return array Always returns current options
+## Return value
+
+array Always returns current options

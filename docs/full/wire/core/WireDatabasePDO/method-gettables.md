@@ -1,4 +1,4 @@
-# WireDatabasePDO::getTables()
+# $wireDatabasePDO->getTables($allowCache = true): array
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -6,7 +6,10 @@ Get array of all tables in this database.
 
 Note that this method caches its result unless you specify boolean false for the $allowCache argument.
 
+## Arguments
 
-@param bool $allowCache Specify false if you don't want result to be cached or pulled from cache (default=true)
+- bool $allowCache Specify false if you don't want result to be cached or pulled from cache (default=true)
 
-@return array Returns array of table names
+## Return value
+
+array Returns array of table names

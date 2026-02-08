@@ -1,9 +1,13 @@
-# Selectors::matches()
+# $selectors->matches(Wire $item): bool
 
 Source: `wire/core/Selectors.php`
 
 Does the given Wire match these Selectors?
 
-@param Wire $item
+## Arguments
 
-@return bool
+- Wire $item
+
+## Return value
+
+bool

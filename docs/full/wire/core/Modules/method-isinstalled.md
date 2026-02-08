@@ -1,9 +1,13 @@
-# Modules::isInstalled()
+# $modules->isInstalled($class): bool
 
 Source: `wire/core/Modules.php`
 
 Is the given module name installed?
 
-@param string $class Just a module class name, or optionally: `ModuleClassName>=1.2.3` (operator and version)
+## Arguments
 
-@return bool True if installed, false if not
+- string $class Just a module class name, or optionally: `ModuleClassName>=1.2.3` (operator and version)
+
+## Return value
+
+bool True if installed, false if not

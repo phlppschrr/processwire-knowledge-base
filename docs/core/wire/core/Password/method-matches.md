@@ -1,9 +1,13 @@
-# Password::matches()
+# $password->matches($pass): bool
 
 Source: `wire/core/Password.php`
 
 Does this Password match the given string?
 
-@param string $pass Password to compare
+## Arguments
 
-@return bool
+- string $pass Password to compare
+
+## Return value
+
+bool

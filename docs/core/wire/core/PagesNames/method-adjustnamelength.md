@@ -1,12 +1,14 @@
-# PagesNames::adjustNameLength()
+# $pagesNames->adjustNameLength($name, $maxLength = 0): string
 
 Source: `wire/core/PagesNames.php`
 
 If name exceeds maxLength, truncate it, while keeping any numbered suffixes in place
 
+## Arguments
 
-@param string $name
+- string $name
+- int $maxLength
 
-@param int $maxLength
+## Return value
 
-@return string
+string

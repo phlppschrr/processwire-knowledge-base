@@ -1,4 +1,4 @@
-# WireInput::queryString()
+# $wireInput->queryString($overrides = array()): string
 
 Source: `wire/core/WireInput.php`
 
@@ -8,9 +8,14 @@ Note that the returned query string is not sanitized, so if you use it in any ou
 be sure to run it through `$sanitizer->entities()` first. An optional assoc array
 param can be used to add new GET params or override existing ones.
 
+## Arguments
 
-@param array $overrides Optional assoc array for overriding or adding GET params
+- array $overrides Optional assoc array for overriding or adding GET params
 
-@return string Returns the unsanitized query string
+## Return value
 
-@see WireInput::queryStringClean()
+string Returns the unsanitized query string
+
+## See also
+
+- [WireInput::queryStringClean()](method-querystringclean.md)

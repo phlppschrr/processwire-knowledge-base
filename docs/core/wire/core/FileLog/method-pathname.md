@@ -1,7 +1,9 @@
-# FileLog::pathname()
+# $fileLog->pathname(): string|bool
 
 Source: `wire/core/FileLog.php`
 
 Get file pathname
 
-@return string|bool
+## Return value
+
+string|bool

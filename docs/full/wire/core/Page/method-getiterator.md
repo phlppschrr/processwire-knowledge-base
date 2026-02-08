@@ -1,4 +1,4 @@
-# Page::getIterator()
+# $page->getIterator(): \ArrayObject
 
 Source: `wire/core/Page.php`
 
@@ -14,5 +14,6 @@ foreach($page as $name => $value) {
 }
 ~~~~~
 
+## Return value
 
-@return \ArrayObject
+\ArrayObject

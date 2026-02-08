@@ -1,9 +1,13 @@
-# FileLog::cleanStr()
+# $fileLog->cleanStr($str): string
 
 Source: `wire/core/FileLog.php`
 
 Clean a string for use in a log file entry
 
-@param $str
+## Arguments
 
-@return string
+- $str
+
+## Return value
+
+string

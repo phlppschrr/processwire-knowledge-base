@@ -1,9 +1,13 @@
-# Pagefile::___httpUrl()
+# $pagefile->___httpUrl(): string
 
 Source: `wire/core/Pagefile.php`
 
 Return the web accessible URL (with scheme and hostname) to this Pagefile.
 
-@return string
+## Return value
 
-@see Pagefile::url()
+string
+
+## See also
+
+- [Pagefile::url()](method-url.md)

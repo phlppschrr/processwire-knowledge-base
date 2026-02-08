@@ -1,15 +1,19 @@
-# WireMarkupFileRegions::populateRegions()
+# $wireMarkupFileRegions->populateRegions(array $fileRegions, &$html, array $options = []): string
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
 Populate file regions
 
-@param array $fileRegions Regions found by findRegions()
+## Arguments
 
-@param string $html HTML to populate them into
+- array $fileRegions Regions found by findRegions()
+- string $html HTML to populate them into
+- array $options
 
-@param array $options
+## Return value
 
-@return string Returned value only useful if autoInsert=true
+string Returned value only useful if autoInsert=true
 
-@since 3.0.254
+## Meta
+
+- @since 3.0.254

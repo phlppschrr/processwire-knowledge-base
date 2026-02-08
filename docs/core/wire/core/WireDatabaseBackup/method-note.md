@@ -1,10 +1,10 @@
-# WireDatabaseBackup::note()
+# $wireDatabaseBackup->note($key, $value)
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Record a note
 
+## Arguments
 
-@param $key
-
-@param $value
+- $key
+- $value

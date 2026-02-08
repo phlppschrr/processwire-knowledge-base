@@ -1,7 +1,9 @@
-# Password::salt()
+# $password->salt(): string
 
 Source: `wire/core/Password.php`
 
 Generate a random salt for the given hashType
 
-@return string
+## Return value
+
+string

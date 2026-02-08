@@ -1,4 +1,4 @@
-# Page::is()
+# $page->is($status): bool
 
 Source: `wire/core/Page.php`
 
@@ -7,7 +7,10 @@ Does this page have the specified status number or template name?
 See status flag constants at top of Page class.
 You may also use status names: hidden, locked, unpublished, system, systemID
 
+## Arguments
 
-@param int|string|Selectors $status Status number, status name, or Template name or selector string/object
+- int|string|Selectors $status Status number, status name, or Template name or selector string/object
 
-@return bool
+## Return value
+
+bool

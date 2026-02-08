@@ -1,11 +1,14 @@
-# WireMarkupRegions::populateSingles()
+# $wireMarkupRegions->populateSingles(&$htmlDocument, &$htmlRegions)
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Populate single-use tags as unnamed markup regions
 
-@param string $htmlDocument
+## Arguments
 
-@param array|string $htmlRegions
+- string $htmlDocument
+- array|string $htmlRegions
 
-@since 3.0.250
+## Meta
+
+- @since 3.0.250

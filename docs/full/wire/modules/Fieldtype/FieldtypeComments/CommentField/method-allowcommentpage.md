@@ -1,15 +1,19 @@
-# CommentField::allowCommentPage()
+# $commentField->allowCommentPage(Comment $comment, Page $page, $verbose = false): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Allow given comment to live on given page?
 
-@param Comment $comment
+## Arguments
 
-@param Page $page
+- Comment $comment
+- Page $page
+- bool $verbose Report reason why not to standard errors? (default=false)
 
-@param bool $verbose Report reason why not to standard errors? (default=false)
+## Return value
 
-@return bool
+bool
 
-@since 3.0.149
+## Meta
+
+- @since 3.0.149

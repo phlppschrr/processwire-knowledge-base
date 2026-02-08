@@ -1,7 +1,9 @@
-# PageFieldValueInterface::setField()
+# $pageFieldValueInterface->setField(Field $field)
 
 Source: `wire/core/Interfaces.php`
 
 Set the Field
 
-@param Field $field
+## Arguments
+
+- Field $field

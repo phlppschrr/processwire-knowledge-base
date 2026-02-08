@@ -1,4 +1,4 @@
-# FunctionsAPI::permissions()
+# $functionsAPI->permissions($selector = ''): Permissions|Permission|PageArray|null|NullPage
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -17,11 +17,14 @@ $ps = permissions()->find('name^=page'); // regular syntax
 $ps = permissions('name^=page'); // shortcut syntax
 ~~~~~
 
+## Arguments
 
-@param string|int $selector
- - Specify permission name or ID to retrieve that Permission (Permission)
- - Specify a selector string to return all permissions matching selector (PageArray)
+- string|int $selector - Specify permission name or ID to retrieve that Permission (Permission) - Specify a selector string to return all permissions matching selector (PageArray)
 
-@return Permissions|Permission|PageArray|null|NullPage
+## Return value
 
-@see Permissions
+Permissions|Permission|PageArray|null|NullPage
+
+## See also
+
+- Permissions

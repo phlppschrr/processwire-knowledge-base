@@ -1,9 +1,13 @@
-# WireUpload::setOverwriteFilename()
+# $wireUpload->setOverwriteFilename($filename): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set the filename that may be overwritten (i.e. myphoto.jpg) for single uploads only
 
-@param string $filename
+## Arguments
 
-@return $this
+- string $filename
+
+## Return value
+
+$this

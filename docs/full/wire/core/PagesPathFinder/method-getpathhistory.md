@@ -1,9 +1,13 @@
-# PagesPathFinder::getPathHistory()
+# $pagesPathFinder->getPathHistory($path): bool
 
 Source: `wire/core/PagesPathFinder.php`
 
 Attempt to match page path from PagePathHistory module
 
-@param string $path
+## Arguments
 
-@return bool
+- string $path
+
+## Return value
+
+bool

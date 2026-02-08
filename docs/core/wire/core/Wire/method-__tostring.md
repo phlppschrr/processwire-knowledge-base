@@ -1,7 +1,9 @@
-# Wire::__toString()
+# $wire->__toString(): string
 
 Source: `wire/core/Wire.php`
 
 Unless overridden, classes descending from Wire return their class name when typecast as a string
 
-@return string
+## Return value
+
+string

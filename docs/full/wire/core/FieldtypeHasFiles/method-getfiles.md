@@ -1,11 +1,14 @@
-# FieldtypeHasFiles::getFiles()
+# $fieldtypeHasFiles->getFiles(Page $page, Field $field): array
 
 Source: `wire/core/Interfaces.php`
 
 Get array of full path/file for all files managed by given page and field
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return array
+## Return value
+
+array

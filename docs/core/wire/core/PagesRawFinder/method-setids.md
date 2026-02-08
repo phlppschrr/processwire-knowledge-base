@@ -1,9 +1,13 @@
-# PagesRawFinder::setIds()
+# $pagesRawFinder->setIds(array $ids)
 
 Source: `wire/core/PagesRaw.php`
 
 Set the found IDs and init the $this->values array
 
-@param array $ids
+## Arguments
 
-@since 3.0.193
+- array $ids
+
+## Meta
+
+- @since 3.0.193

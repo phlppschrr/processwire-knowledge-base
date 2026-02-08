@@ -1,10 +1,13 @@
-# Template::getParentPages()
+# $template->getParentPages($checkAccess = false): PageArray
 
 Source: `wire/core/Template.php`
 
 Return all defined parent pages for this template
 
+## Arguments
 
-@param bool $checkAccess Specify true to exclude parents that user doesn't have access to add children to (default=false)
+- bool $checkAccess Specify true to exclude parents that user doesn't have access to add children to (default=false)
 
-@return PageArray
+## Return value
+
+PageArray

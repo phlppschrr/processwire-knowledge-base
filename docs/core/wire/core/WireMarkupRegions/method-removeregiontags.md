@@ -1,4 +1,4 @@
-# WireMarkupRegions::removeRegionTags()
+# $wireMarkupRegions->removeRegionTags(&$html): bool
 
 Source: `wire/core/WireMarkupRegions.php`
 
@@ -6,6 +6,10 @@ Remove any <region> or <pw-region> tags present in the markup, leaving their inn
 
 Also removes data-pw-id and pw-id attributes
 
-@param string $html
+## Arguments
 
-@return bool True if tags or attributes were removed, false if not
+- string $html
+
+## Return value
+
+bool True if tags or attributes were removed, false if not

@@ -1,14 +1,18 @@
-# Fieldgroup::set()
+# $fieldgroup->set($key, $value): Fieldgroup|WireArray
 
 Source: `wire/core/Fieldgroup.php`
 
 Set a fieldgroup property
 
+## Arguments
 
-@param string $key Name of property to set
+- string $key Name of property to set
+- string|int|object $value Value of property
 
-@param string|int|object $value Value of property
+## Return value
 
-@return Fieldgroup|WireArray $this
+Fieldgroup|WireArray $this
 
-@throws WireException if passed invalid data
+## Throws
+
+- WireException if passed invalid data

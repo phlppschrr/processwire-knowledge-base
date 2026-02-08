@@ -1,11 +1,17 @@
-# SelectableOptionArray::getByID()
+# $selectableOptionArray->getByID($id): SelectableOption|null
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Get option by ID
 
-@param int $id
+## Arguments
 
-@return SelectableOption|null
+- int $id
 
-@since 3.0.242
+## Return value
+
+SelectableOption|null
+
+## Meta
+
+- @since 3.0.242

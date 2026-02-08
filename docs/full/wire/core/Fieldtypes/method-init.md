@@ -1,4 +1,4 @@
-# Fieldtypes::init()
+# $fieldtypes->init()
 
 Source: `wire/core/Fieldtypes.php`
 

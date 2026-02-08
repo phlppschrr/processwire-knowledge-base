@@ -1,9 +1,13 @@
-# InputfieldPageListSelectCommon::getPageLabel()
+# $inputfieldPageListSelectCommon->getPageLabel(Page $page): string
 
 Source: `wire/modules/Inputfield/InputfieldPageListSelect/InputfieldPageListSelectCommon.php`
 
 Get label to represent given $page
 
-@param Page $page
+## Arguments
 
-@return string
+- Page $page
+
+## Return value
+
+string

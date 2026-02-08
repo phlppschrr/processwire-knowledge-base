@@ -1,4 +1,4 @@
-# PaginatedArray::getTotal()
+# $paginatedArray->getTotal(): int
 
 Source: `wire/core/PaginatedArray.php`
 
@@ -9,5 +9,6 @@ which would be the same as the `WireArray::count()` value. But when a limit is
 used, this number will typically be larger than the count, as it includes all
 items across all paginations, whether currently present or not.
 
+## Return value
 
-@return int Total number of items across all paginations.
+int Total number of items across all paginations.

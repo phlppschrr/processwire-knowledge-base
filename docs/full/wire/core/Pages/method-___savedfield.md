@@ -1,12 +1,14 @@
-# Pages::___savedField()
+# $pages->___savedField(Page $page, Field $field)
 
 Source: `wire/core/Pages.php`
 
 Hook called after Pages::saveField successfully executes
 
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
 
-@param Field $field
+## See also
 
-@see Pages::savedPageOrField()
+- [Pages::savedPageOrField()](method-___savedpageorfield.md)

@@ -1,4 +1,4 @@
-# WireSessionHandler::isAutoload()
+# $wireSessionHandler->isAutoload()
 
 Source: `wire/core/WireSessionHandler.php`
 

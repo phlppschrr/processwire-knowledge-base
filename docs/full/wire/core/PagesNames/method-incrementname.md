@@ -1,12 +1,14 @@
-# PagesNames::incrementName()
+# $pagesNames->incrementName($name, $num = null): string
 
 Source: `wire/core/PagesNames.php`
 
 Increment the suffix of a page name, or add one if not present
 
+## Arguments
 
-@param string $name
+- string $name
+- int|null $num Number to use, or omit to determine and increment automatically
 
-@param int|null $num Number to use, or omit to determine and increment automatically
+## Return value
 
-@return string
+string

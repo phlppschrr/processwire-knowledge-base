@@ -1,12 +1,17 @@
-# WireDatabasePDO::getAttribute()
+# $wireDatabasePDO->getAttribute($attribute): mixed
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Retrieve a database connection attribute
 
+## Arguments
 
-@param int $attribute
+- int $attribute
 
-@return mixed
+## Return value
 
-@link http://php.net/manual/en/pdo.getattribute.php
+mixed
+
+## Meta
+
+- @link http://php.net/manual/en/pdo.getattribute.php

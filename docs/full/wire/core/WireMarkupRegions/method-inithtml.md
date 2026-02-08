@@ -1,9 +1,13 @@
-# WireMarkupRegions::initHtml()
+# $wireMarkupRegions->initHtml(&$html)
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Initialize given HTML for markup regions
 
-@param string $html
+## Arguments
 
-@since 3.0.250
+- string $html
+
+## Meta
+
+- @since 3.0.250

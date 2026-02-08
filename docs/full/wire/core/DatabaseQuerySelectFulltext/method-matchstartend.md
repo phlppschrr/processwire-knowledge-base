@@ -1,4 +1,4 @@
-# DatabaseQuerySelectFulltext::matchStartEnd()
+# $databaseQuerySelectFulltext->matchStartEnd($value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
@@ -7,4 +7,6 @@ Match phrase at start or end of field value (also uses fulltext index when possi
 Ignores whitespace, punctuation and opening/closing tags, enabling it to match
 start/end words or phrases surrounded by non-word characters.
 
-@param $value
+## Arguments
+
+- $value

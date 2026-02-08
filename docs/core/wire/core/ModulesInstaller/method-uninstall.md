@@ -1,12 +1,17 @@
-# ModulesInstaller::uninstall()
+# $modulesInstaller->uninstall($class): bool
 
 Source: `wire/core/ModulesInstaller.php`
 
 Uninstall the given module name
 
+## Arguments
 
-@param string $class Module name (class name)
+- string $class Module name (class name)
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

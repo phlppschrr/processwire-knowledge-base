@@ -1,7 +1,9 @@
-# WireSaveableItems::makeBlankItem()
+# $wireSaveableItems->makeBlankItem(): Saveable|Wire
 
 Source: `wire/core/WireSaveableItems.php`
 
 Return a new blank item
 
-@return Saveable|Wire
+## Return value
+
+Saveable|Wire

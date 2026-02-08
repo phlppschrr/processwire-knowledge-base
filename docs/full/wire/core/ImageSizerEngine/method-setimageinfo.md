@@ -1,9 +1,10 @@
-# ImageSizerEngine::setImageInfo()
+# $imageSizerEngine->setImageInfo($width, $height)
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Save the width and height of the image
 
-@param int $width
+## Arguments
 
-@param int $height
+- int $width
+- int $height

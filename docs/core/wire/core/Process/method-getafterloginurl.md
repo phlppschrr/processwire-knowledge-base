@@ -1,4 +1,4 @@
-# Process::getAfterLoginUrl()
+# Process::getAfterLoginUrl(Page $page): bool|string
 
 Source: `wire/core/Process.php`
 
@@ -11,8 +11,14 @@ after user has successfully authenticated.
 If module does not support this, or only needs to support an integer 'id' GET var, then this
 method can return false.
 
-@param Page $page Requested page
+## Arguments
 
-@return bool|string
+- Page $page Requested page
 
-@sine 3.0.167
+## Return value
+
+bool|string
+
+## Meta
+
+- @sine 3.0.167

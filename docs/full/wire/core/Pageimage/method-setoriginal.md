@@ -1,10 +1,13 @@
-# Pageimage::setOriginal()
+# $pageimage->setOriginal(Pageimage $image): $this
 
 Source: `wire/core/Pageimage.php`
 
 Identify this Pageimage as a variation, by setting the Pageimage it was resized from.
 
+## Arguments
 
-@param Pageimage $image
+- Pageimage $image
 
-@return $this
+## Return value
+
+$this

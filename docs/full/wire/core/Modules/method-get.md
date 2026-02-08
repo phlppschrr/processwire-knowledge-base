@@ -1,4 +1,4 @@
-# Modules::get()
+# $modules->get($key): Module|_Module|null
 
 Source: `wire/core/Modules.php`
 
@@ -17,10 +17,19 @@ $table = $modules->get('MarkupAdminDataTable');
 $table = $modules->MarkupAdminDataTable;
 ~~~~~
 
-@param string|int $key Module name (also accepts database ID)
+## Arguments
 
-@return Module|_Module|null Returns a Module or null if not found
+- string|int $key Module name (also accepts database ID)
 
-@throws WirePermissionException If module requires a particular permission the user does not have
+## Return value
 
-@see Modules::getModule(), Modules::isInstalled()
+Module|_Module|null Returns a Module or null if not found
+
+## Throws
+
+- WirePermissionException If module requires a particular permission the user does not have
+
+## See also
+
+- [Modules::getModule()](method-getmodule.md)
+- [Modules::isInstalled()](method-isinstalled.md)

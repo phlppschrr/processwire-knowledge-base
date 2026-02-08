@@ -1,4 +1,4 @@
-# WireAction::init()
+# $wireAction->init()
 
 Source: `wire/core/WireAction.php`
 

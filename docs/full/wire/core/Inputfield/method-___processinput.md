@@ -1,4 +1,4 @@
-# Inputfield::___processInput()
+# $inputfield->___processInput(WireInputData $input): $this
 
 Source: `wire/core/Inputfield.php`
 
@@ -11,7 +11,10 @@ Inputfield modules should implement this method if the built-in one here doesn't
 If this one does solve their need, then they should add any additional sanitization or validation
 to the `Inputfield::setAttribute('value', $value)` method to occur when given the `value` attribute.
 
+## Arguments
 
-@param WireInputData $input User input where value should be pulled from (typically `$input->post`)
+- WireInputData $input User input where value should be pulled from (typically `$input->post`)
 
-@return $this
+## Return value
+
+$this

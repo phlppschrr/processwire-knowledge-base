@@ -1,10 +1,13 @@
-# InputfieldWrapper::___render()
+# $inputfieldWrapper->___render(): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Render this Inputfield and the output of its children.
 
+## Return value
 
-@todo this method has become too long/complex, move to its own pluggable class and split it up a lot
+string
 
-@return string
+## Meta
+
+- @todo this method has become too long/complex, move to its own pluggable class and split it up a lot

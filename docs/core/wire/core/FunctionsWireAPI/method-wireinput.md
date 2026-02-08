@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wireInput()
+# $functionsWireAPI->wireInput($type = '', $key = '', $sanitizer = null, $fallback = null): WireInput|WireInputData|array|string|int|null
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -21,12 +21,13 @@ $value = wireInput('get', 'sort', ['title', 'created', 'likes'], 'title'); // Re
 $value = wireInput()->get('sort', ['title', 'created', 'likes'], 'title'); // Same as above (3.0.125)
 ~~~~~
 
-@param string $type Optionally indicate "get", "post", "cookie" or "whitelist"
+## Arguments
 
-@param string $key If getting a value, specify name of property containing value
+- string $type Optionally indicate "get", "post", "cookie" or "whitelist"
+- string $key If getting a value, specify name of property containing value
+- string $sanitizer Optionally specify sanitizer name to run value through, or array containing whitelist of allowed values (3.0.125).
+- mixed $fallback Fallback value to return rather than null if value not present or does not validate (3.0.125+)
 
-@param string $sanitizer Optionally specify sanitizer name to run value through, or array containing whitelist of allowed values (3.0.125).
+## Return value
 
-@param mixed $fallback Fallback value to return rather than null if value not present or does not validate (3.0.125+)
-
-@return WireInput|WireInputData|array|string|int|null
+WireInput|WireInputData|array|string|int|null

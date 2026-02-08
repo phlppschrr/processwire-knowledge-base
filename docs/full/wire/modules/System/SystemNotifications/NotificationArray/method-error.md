@@ -1,11 +1,14 @@
-# NotificationArray::error()
+# $notificationArray->error($text, $flags = 0): Notification
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Record an error notification
 
-@param string $text
+## Arguments
 
-@param int|bool $flags See Notification flags
+- string $text
+- int|bool $flags See Notification flags
 
-@return Notification
+## Return value
+
+Notification

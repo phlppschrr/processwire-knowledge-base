@@ -1,4 +1,4 @@
-# Fieldtype::___exportConfigData()
+# $fieldtype->___exportConfigData(Field $field, array $data): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -8,9 +8,11 @@ Use this method to externalize any config values when necessary.
 For example, internal IDs should be converted to GUIDs where possible.
 Most Fieldtype modules can use the default implementation already provided here.
 
+## Arguments
 
-@param Field $field
+- Field $field
+- array $data
 
-@param array $data
+## Return value
 
-@return array
+array

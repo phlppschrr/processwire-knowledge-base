@@ -1,4 +1,4 @@
-# WireDatabaseBackup::restore()
+# $wireDatabaseBackup->restore($filename, array $options = array()): true
 
 Source: `wire/core/WireDatabaseBackup.php`
 
@@ -8,21 +8,19 @@ This method is designed to restore dump files created by the backup() method of 
 class, however it *may* also work with dump files created from other sources like
 mysqldump or PhpMyAdmin.
 
+## Arguments
 
-@param string $filename Filename to restore, optionally including path (if no path, then path set to construct is assumed)
+- string $filename Filename to restore, optionally including path (if no path, then path set to construct is assumed)
+- array $options Options to modify default behavior: - `tables` (array): table names to restore (empty=all) - `allowDrop` (bool): allow DROP TABLE statements (default=true) - `dropAll` (bool): DROP ALL tables before restore? The allowDrop optional must also be true. (default=false) - `haltOnError` (bool): halt execution when an error occurs? (default=false) - `maxSeconds` (int): max number of seconds allowed for execution (default=1200) - `findReplace` (array): find and replace in row data. Example: ['databass' => 'database'] - `findReplaceCreateTable` (array): find and replace in create table statements. Example: ['DEFAULT CHARSET=utf8;' => 'DEFAULT CHARSET=utf8mb4;']
 
-@param array $options Options to modify default behavior:
-- `tables` (array): table names to restore (empty=all)
-- `allowDrop` (bool): allow DROP TABLE statements (default=true)
-- `dropAll` (bool): DROP ALL tables before restore? The allowDrop optional must also be true. (default=false)
-- `haltOnError` (bool): halt execution when an error occurs? (default=false)
-- `maxSeconds` (int): max number of seconds allowed for execution (default=1200)
-- `findReplace` (array): find and replace in row data. Example: ['databass' => 'database']
-- `findReplaceCreateTable` (array): find and replace in create table statements.
-   Example: ['DEFAULT CHARSET=utf8;' => 'DEFAULT CHARSET=utf8mb4;']
+## Return value
 
-@return true on success, false on failure. Call the errors() method to retrieve errors.
+true on success, false on failure. Call the errors() method to retrieve errors.
 
-@throws \Exception on fatal error
+## Throws
 
-@see WireDatabaseBackup::backup()
+- \Exception on fatal error
+
+## See also
+
+- [WireDatabaseBackup::backup()](method-backup.md)

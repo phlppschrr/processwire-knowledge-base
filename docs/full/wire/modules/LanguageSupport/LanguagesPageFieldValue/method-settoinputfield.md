@@ -1,9 +1,13 @@
-# LanguagesPageFieldValue::setToInputfield()
+# $languagesPageFieldValue->setToInputfield(Inputfield $inputfield)
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Populate language values from this object to given Inputfield
 
-@param Inputfield $inputfield
+## Arguments
 
-@since 3.0.170
+- Inputfield $inputfield
+
+## Meta
+
+- @since 3.0.170

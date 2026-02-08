@@ -1,9 +1,13 @@
-# ImageSizerEngine::setAutoRotation()
+# $imageSizerEngine->setAutoRotation($value = true): self
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Turn on/off auto rotation
 
-@param bool $value Whether to auto-rotate or not (default = true)
+## Arguments
 
-@return self
+- bool $value Whether to auto-rotate or not (default = true)
+
+## Return value
+
+self

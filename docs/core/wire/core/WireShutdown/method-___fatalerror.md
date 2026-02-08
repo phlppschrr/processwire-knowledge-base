@@ -1,9 +1,13 @@
-# WireShutdown::___fatalError()
+# $wireShutdown->___fatalError($error)
 
 Source: `wire/core/WireShutdown.php`
 
 Hook called when fatal error received by shutdown()
 
-@param array $error
+## Arguments
 
-@since 3.0.173
+- array $error
+
+## Meta
+
+- @since 3.0.173

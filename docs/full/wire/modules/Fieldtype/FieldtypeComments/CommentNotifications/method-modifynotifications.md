@@ -1,15 +1,19 @@
-# CommentNotifications::modifyNotifications()
+# $commentNotifications->modifyNotifications($subcode, $enable, $all = false): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Given a subscriber code, modify notifications on any comments where their email is present
 
-@param string $subcode 40 digit subscriber code
+## Arguments
 
-@param bool $enable Whether to enable or disable notifications
+- string $subcode 40 digit subscriber code
+- bool $enable Whether to enable or disable notifications
+- bool $all Specify true to disable notifications site-wide, rather than just current page
 
-@param bool $all Specify true to disable notifications site-wide, rather than just current page
+## Return value
 
-@throws WireException
+bool
 
-@return bool
+## Throws
+
+- WireException

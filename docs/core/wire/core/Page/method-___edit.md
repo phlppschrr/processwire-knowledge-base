@@ -1,4 +1,4 @@
-# Page::___edit()
+# $page->___edit($key = null, $markup = null, $modal = null): string|bool|mixed
 
 Source: `wire/core/Page.php`
 
@@ -24,15 +24,20 @@ less likely to interfere with your front-end layout.
 $value = $page->edit('field_name');
 ~~~~~
 
+## Arguments
 
-@param string|bool|null $key Name of field, omit to get editor active status, or boolean true to enable editor.
+- string|bool|null $key Name of field, omit to get editor active status, or boolean true to enable editor.
+- string|bool|null $markup Markup user should click on to edit $fieldName (typically omitted).
+- bool|null $modal Specify true to force editable region to open a modal window (typically omitted).
 
-@param string|bool|null $markup Markup user should click on to edit $fieldName (typically omitted).
+## Return value
 
-@param bool|null $modal Specify true to force editable region to open a modal window (typically omitted).
+string|bool|mixed
 
-@return string|bool|mixed
+## See also
 
-@see https://processwire.com/docs/front-end/
+- [https://processwire.com/docs/front-end/](https://processwire.com/docs/front-end/)
 
-@since 3.0.0 This method is added by a hook in PageFrontEdit and only shown in this class for documentation purposes.
+## Meta
+
+- @since 3.0.0 This method is added by a hook in PageFrontEdit and only shown in this class for documentation purposes.

@@ -1,4 +1,4 @@
-# PagesTrash::getRestoreInfo()
+# $pagesTrash->getRestoreInfo(Page $page, $populateToPage = false): array
 
 Source: `wire/core/PagesTrash.php`
 
@@ -14,9 +14,11 @@ Returns array with the following info:
  - `namePrevious` (string): Previous name, if we had to modify the original name to make it restorable.
  - `name{id}` (string): Name that should be restored  to language where {id} is language ID (if appliable).
 
+## Arguments
 
-@param Page $page Page to restore
+- Page $page Page to restore
+- bool $populateToPage Populate this information to given page? (default=false)
 
-@param bool $populateToPage Populate this information to given page? (default=false)
+## Return value
 
-@return array
+array

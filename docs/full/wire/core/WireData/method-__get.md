@@ -1,4 +1,4 @@
-# WireData::__get()
+# $wireData->__get($name): mixed|null
 
 Source: `wire/core/WireData.php`
 
@@ -6,6 +6,10 @@ Provides direct reference access to variables in the $data array
 
 Otherwise the same as get()
 
-@param string $name
+## Arguments
 
-@return mixed|null
+- string $name
+
+## Return value
+
+mixed|null

@@ -1,7 +1,9 @@
-# WireProfilerInterface::maintenance()
+# $wireProfilerInterface->maintenance(): void
 
 Source: `wire/core/Interfaces.php`
 
 End of request maintenance
 
-@return void
+## Return value
+
+void

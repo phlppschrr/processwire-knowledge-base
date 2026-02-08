@@ -1,13 +1,18 @@
-# WireMail::from()
+# $wireMail->from($email, $name = null): $this
 
 Source: `wire/core/WireMail.php`
 
 Set the email 'from' address and optionally name
 
-@param string $email Must be a single email address or "User Name <user@example.com>" string.
+## Arguments
 
-@param string|null An optional FROM name (same as setting/calling fromName)
+- string $email Must be a single email address or "User Name <user@example.com>" string.
+- string|null An optional FROM name (same as setting/calling fromName)
 
-@return $this
+## Return value
 
-@throws WireException if provided email was invalid or in blacklist
+$this
+
+## Throws
+
+- WireException if provided email was invalid or in blacklist

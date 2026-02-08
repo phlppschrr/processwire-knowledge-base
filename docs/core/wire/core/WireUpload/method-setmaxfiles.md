@@ -1,9 +1,13 @@
-# WireUpload::setMaxFiles()
+# $wireUpload->setMaxFiles($maxFiles): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set the max allowed number of uploaded files
 
-@param int $maxFiles
+## Arguments
 
-@return $this
+- int $maxFiles
+
+## Return value
+
+$this

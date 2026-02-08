@@ -1,13 +1,15 @@
-# LanguageParser::buildMatch()
+# $languageParser->buildMatch(array $m, $key, $text): array
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Build the match abstracted away from the preg_match result
 
-@param array $m
+## Arguments
 
-@param int $key
+- array $m
+- int $key
+- string $text
 
-@param string $text
+## Return value
 
-@return array
+array

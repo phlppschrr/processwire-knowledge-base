@@ -1,4 +1,4 @@
-# FunctionsAPI::modules()
+# $functionsAPI->modules($name = ''): Modules|Module|ConfigurableModule|null
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -13,9 +13,14 @@ $module = modules()->get('ModuleName'); // Get a module
 $module = modules('ModuleName'); // Shortcut to get a module
 ~~~~~
 
+## Arguments
 
-@param string $name Optionally retrieve the given module name
+- string $name Optionally retrieve the given module name
 
-@return Modules|Module|ConfigurableModule|null
+## Return value
 
-@see Modules
+Modules|Module|ConfigurableModule|null
+
+## See also
+
+- Modules

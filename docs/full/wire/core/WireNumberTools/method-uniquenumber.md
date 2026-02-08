@@ -1,4 +1,4 @@
-# WireNumberTools::uniqueNumber()
+# $wireNumberTools->uniqueNumber($options = array()): int
 
 Source: `wire/core/WireNumberTools.php`
 
@@ -12,15 +12,18 @@ Generate and return an installation unique number/ID (integer)
 - You cannot reset the default namespace, so any caller is always assured a unique number.
 - This method creates table names that begin with `unique_num`.
 
-@param array|string $options Array of options or string for the namespace option.
- - `namespace` (string): Optional namespace for unique numbers, in table name format [_a-zA-Z0-9] (default='')
- - `getLast` (bool): Get last unique number rather than generating new one? (default=false)
- - `reset` (bool): Reset numbers in namespace by deleting its table? Namespace required (default=false)
+## Arguments
 
-@return int Returns unique number,
- or returns 0 if `reset` option is used,
- or returns 0 if `getLast` option is used and no numbers exist.
+- array|string $options Array of options or string for the namespace option. - `namespace` (string): Optional namespace for unique numbers, in table name format [_a-zA-Z0-9] (default='') - `getLast` (bool): Get last unique number rather than generating new one? (default=false) - `reset` (bool): Reset numbers in namespace by deleting its table? Namespace required (default=false)
 
-@throws WireException
+## Return value
 
-@since 3.0.213
+int Returns unique number, or returns 0 if `reset` option is used, or returns 0 if `getLast` option is used and no numbers exist.
+
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.213

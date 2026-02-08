@@ -1,4 +1,4 @@
-# WireArray::__get()
+# $wireArray->__get($name): Wire|WireData|Page|mixed|bool
 
 Source: `wire/core/WireArray.php`
 
@@ -8,6 +8,10 @@ Example: $myArray->myElement
 Not applicable to numerically indexed arrays.
 Fuel properties and hooked properties have precedence with this type of call.
 
-@param int|string $name
+## Arguments
 
-@return Wire|WireData|Page|mixed|bool Value of item requested, or false if it doesn't exist.
+- int|string $name
+
+## Return value
+
+Wire|WireData|Page|mixed|bool Value of item requested, or false if it doesn't exist.

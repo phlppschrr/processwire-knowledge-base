@@ -1,8 +1,9 @@
-# PagesType::getTemplates()
+# $pagesType->getTemplates(): array|Template[]
 
 Source: `wire/core/PagesType.php`
 
 Get the templates (plural) used by this type
 
+## Return value
 
-@return array|Template[] Array of Template objects indexed by template ID.
+array|Template[] Array of Template objects indexed by template ID.

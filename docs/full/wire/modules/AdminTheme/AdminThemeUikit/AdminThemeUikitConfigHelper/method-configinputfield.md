@@ -1,9 +1,10 @@
-# AdminThemeUikitConfigHelper::configInputfield()
+# $adminThemeUikitConfigHelper->configInputfield(Inputfield $inputfield, InputfieldWrapper $inputfields)
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/config.php`
 
 Uikit configuration for Inputfield
 
-@param Inputfield $inputfield
+## Arguments
 
-@param InputfieldWrapper $inputfields
+- Inputfield $inputfield
+- InputfieldWrapper $inputfields

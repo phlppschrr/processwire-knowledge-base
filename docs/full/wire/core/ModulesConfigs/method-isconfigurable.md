@@ -1,4 +1,4 @@
-# ModulesConfigs::isConfigurable()
+# $modulesConfigs->isConfigurable($class, $useCache = true): bool|string|int
 
 Source: `wire/core/ModulesConfigs.php`
 
@@ -53,17 +53,16 @@ if($configurable === true) {
 
 *This method is named isConfigurableModule() in ProcessWire versions prior to to 3.0.16.*
 
+## Arguments
 
-@param Module|string $class Module name
+- Module|string $class Module name
+- bool $useCache Use caching? This accepts a few options: - Specify boolean `true` to allow use of cache when available (default behavior). - Specify boolean `false` to disable retrieval of this property from getModuleInfo (forces a new check). - Specify string `interface` to check only if module implements ConfigurableModule interface. - Specify string `file` to check only if module has a separate configuration class/file.
 
-@param bool $useCache Use caching? This accepts a few options:
-	- Specify boolean `true` to allow use of cache when available (default behavior).
-	- Specify boolean `false` to disable retrieval of this property from getModuleInfo (forces a new check).
-	- Specify string `interface` to check only if module implements ConfigurableModule interface.
-	- Specify string `file` to check only if module has a separate configuration class/file.
+## Return value
 
-@return bool|string|int See details about return values in method description.
+bool|string|int See details about return values in method description.
 
-@since 3.0.16
+## Meta
 
-@todo this method has two distinct parts (file and interface) that need to be split in two methods.
+- @since 3.0.16
+- @todo this method has two distinct parts (file and interface) that need to be split in two methods.

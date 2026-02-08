@@ -1,9 +1,13 @@
-# PagefileExtra::exists()
+# $pagefileExtra->exists($clear = false): bool
 
 Source: `wire/core/PagefileExtra.php`
 
 Does the extra file currently exist?
 
-@param bool $clear Clear stat cache before checking? (default=false)
+## Arguments
 
-@return bool
+- bool $clear Clear stat cache before checking? (default=false)
+
+## Return value
+
+bool

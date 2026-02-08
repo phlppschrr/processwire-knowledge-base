@@ -1,7 +1,9 @@
-# PagesRequest::getPageNum()
+# $pagesRequest->getPageNum(): null|int
 
 Source: `wire/core/PagesRequest.php`
 
 Get the requested pagination number
 
-@return null|int
+## Return value
+
+null|int

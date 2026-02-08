@@ -1,13 +1,18 @@
-# Tfa::saveUserSettings()
+# $tfa->saveUserSettings(User $user, array $settings): bool
 
 Source: `wire/core/Tfa.php`
 
 Save TFA data for given user to user_tfa field
 
-@param User $user
+## Arguments
 
-@param array $settings
+- User $user
+- array $settings
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

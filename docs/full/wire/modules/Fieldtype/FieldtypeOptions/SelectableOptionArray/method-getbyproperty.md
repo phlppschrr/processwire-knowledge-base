@@ -1,13 +1,15 @@
-# SelectableOptionArray::getByProperty()
+# $selectableOptionArray->getByProperty($property, $value, $noValue = false): bool|null|SelectableOption
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Get SelectableOption by $property matching $value, or boolean false if not found
 
-@param string $property May be "title", "value" or "id"
+## Arguments
 
-@param string|int $value
+- string $property May be "title", "value" or "id"
+- string|int $value
+- bool|null $noValue Value to return if option not present (default=false)
 
-@param bool|null $noValue Value to return if option not present (default=false)
+## Return value
 
-@return bool|null|SelectableOption
+bool|null|SelectableOption

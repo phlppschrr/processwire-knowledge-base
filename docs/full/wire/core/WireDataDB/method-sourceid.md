@@ -1,11 +1,17 @@
-# WireDataDB::sourceID()
+# $wireDataDB->sourceID($id = null): int
 
 Source: `wire/core/WireDataDB.php`
 
 Get or set the the source ID for this instance
 
-@param int|null $id
+## Arguments
 
-@return int
+- int|null $id
 
-@throws WireException
+## Return value
+
+int
+
+## Throws
+
+- WireException

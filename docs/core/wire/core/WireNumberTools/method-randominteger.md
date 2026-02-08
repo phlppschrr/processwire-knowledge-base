@@ -1,15 +1,19 @@
-# WireNumberTools::randomInteger()
+# $wireNumberTools->randomInteger($min, $max, $throw = false): int
 
 Source: `wire/core/WireNumberTools.php`
 
 Return a random integer (cryptographically secure when available)
 
-@param int $min Minimum value (default=0)
+## Arguments
 
-@param int $max Maximum value (default=PHP_INT_MAX)
+- int $min Minimum value (default=0)
+- int $max Maximum value (default=PHP_INT_MAX)
+- bool $throw Throw WireException if we cannot achieve a cryptographically secure random number? (default=false)
 
-@param bool $throw Throw WireException if we cannot achieve a cryptographically secure random number? (default=false)
+## Return value
 
-@return int
+int
 
-@since 3.0.214
+## Meta
+
+- @since 3.0.214

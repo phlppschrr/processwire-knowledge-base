@@ -1,4 +1,4 @@
-# Pagefiles::getTag()
+# $pagefiles->getTag($tag): Pagefile|null
 
 Source: `wire/core/Pagefiles.php`
 
@@ -13,8 +13,16 @@ Given tag may be any of the following:
 
 3.0.17 Added support for multiple AND tags and allow tag specified as an array.
 
-@param string $tag
+## Arguments
 
-@return Pagefile|null
+- string $tag
 
-@see Pagefiles::findTag(), Pagefile::hasTag(), Pagefile::tags()
+## Return value
+
+Pagefile|null
+
+## See also
+
+- [Pagefiles::findTag()](method-findtag.md)
+- [Pagefile::hasTag()](../Pagefile/method-hastag.md)
+- [Pagefile::tags()](../Pagefile/method-tags.md)

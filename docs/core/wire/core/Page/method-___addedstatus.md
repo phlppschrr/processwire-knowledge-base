@@ -1,4 +1,4 @@
-# Page::___addedStatus()
+# $page->___addedStatus($name, $value)
 
 Source: `wire/core/Page.php`
 
@@ -13,9 +13,11 @@ $wire->addHook('Page::addedStatus', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param string $name Name of the status flag that was added, i.e. unpublished, hidden, trash, locked
+- string $name Name of the status flag that was added, i.e. unpublished, hidden, trash, locked
+- int $value Value of the status flag that was added, a `Page::status*` constant
 
-@param int $value Value of the status flag that was added, a `Page::status*` constant
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

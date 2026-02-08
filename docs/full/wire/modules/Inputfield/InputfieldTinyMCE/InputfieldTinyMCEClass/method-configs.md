@@ -1,5 +1,8 @@
-# InputfieldTinyMCEClass::configs()
+# $inputfieldTinyMCEClass->configs(): InputfieldTinyMCEConfigs
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEClass.php`
 
-@return InputfieldTinyMCEConfigs
+
+## Return value
+
+InputfieldTinyMCEConfigs

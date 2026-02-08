@@ -1,13 +1,18 @@
-# WireMailTools::from()
+# $wireMailTools->from($email, $name = null): WireMail
 
 Source: `wire/core/WireMailTools.php`
 
 Return new WireMail instance populated with “from” email
 
-@param string $email Must be a single email address or "User Name <user@example.com>" string.
+## Arguments
 
-@param string|null An optional FROM name
+- string $email Must be a single email address or "User Name <user@example.com>" string.
+- string|null An optional FROM name
 
-@return WireMail
+## Return value
 
-@since 3.0.113
+WireMail
+
+## Meta
+
+- @since 3.0.113

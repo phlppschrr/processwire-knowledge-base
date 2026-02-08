@@ -1,11 +1,17 @@
-# ListerBookmarks::getBookmarkTitle()
+# $listerBookmarks->getBookmarkTitle($bookmarkID): mixed|string
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get the title for the given bookmark ID or bookmark array
 
-@param int|array $bookmarkID
+## Arguments
 
-@return mixed|string
+- int|array $bookmarkID
 
-@throws WireException
+## Return value
+
+mixed|string
+
+## Throws
+
+- WireException

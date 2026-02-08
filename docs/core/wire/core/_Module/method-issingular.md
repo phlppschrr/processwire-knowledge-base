@@ -1,5 +1,8 @@
-# _Module::isSingular()
+# $module->isSingular(): bool
 
 Source: `wire/core/Module.php`
 
-@return bool
+
+## Return value
+
+bool

@@ -1,10 +1,13 @@
-# Template::getTags()
+# $template->getTags(): array
 
 Source: `wire/core/Template.php`
 
 Get tags array
 
+## Return value
 
-@return array
+array
 
-@since 3.0.176
+## Meta
+
+- @since 3.0.176

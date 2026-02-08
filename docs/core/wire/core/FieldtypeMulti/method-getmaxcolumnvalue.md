@@ -1,19 +1,24 @@
-# FieldtypeMulti::getMaxColumnValue()
+# $fieldtypeMulti->getMaxColumnValue(Page $page, Field $field, $column, $noValue = false): int|bool|mixed
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Get max value of column for given Page and Field or boolean false (or specified $noValue) if no rows present
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- string $column
+- int|bool $noValue Return this value if there are no rows to count from (default=false)
 
-@param string $column
+## Return value
 
-@param int|bool $noValue Return this value if there are no rows to count from (default=false)
+int|bool|mixed
 
-@return int|bool|mixed
+## Throws
 
-@throws WireException
+- WireException
 
-@since 3.0.154
+## Meta
+
+- @since 3.0.154

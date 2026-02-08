@@ -1,11 +1,14 @@
-# InputfieldTinyMCE::set()
+# $inputfieldTinyMCE->set($key, $value): self
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Set
 
-@param $key
+## Arguments
 
-@param $value
+- $key
+- $value
 
-@return self
+## Return value
+
+self

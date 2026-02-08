@@ -1,11 +1,17 @@
-# ProcessController::getProcessMethodName()
+# $processController->getProcessMethodName(Process $process): string
 
 Source: `wire/core/ProcessController.php`
 
 Get the name of the method to execute with the Process
 
-@param Process @process
+## Arguments
 
-@return string
+- Process @process
 
-@throws ProcessControllerPermissionException
+## Return value
+
+string
+
+## Throws
+
+- ProcessControllerPermissionException

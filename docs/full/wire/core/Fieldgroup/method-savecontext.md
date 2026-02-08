@@ -1,8 +1,9 @@
-# Fieldgroup::saveContext()
+# $fieldgroup->saveContext(): int
 
 Source: `wire/core/Fieldgroup.php`
 
 Save field contexts for this fieldgroup
 
+## Return value
 
-@return int Number of contexts saved
+int Number of contexts saved

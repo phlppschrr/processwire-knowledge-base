@@ -1,4 +1,4 @@
-# _sidenav-init::refreshTreePane()
+# $sidenavInit->refreshTreePane(pageID)
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

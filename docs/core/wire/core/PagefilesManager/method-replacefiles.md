@@ -1,16 +1,22 @@
-# PagefilesManager::replaceFiles()
+# $pagefilesManager->replaceFiles($fromPath, $move = false): int
 
 Source: `wire/core/PagefilesManager.php`
 
 Replace all page’s files with those from given path
 
+## Arguments
 
-@param string $fromPath
+- string $fromPath
+- bool $move Move files to destination rather than copy? (default=false)
 
-@param bool $move Move files to destination rather than copy? (default=false)
+## Return value
 
-@return int Number of files/directories copied.
+int Number of files/directories copied.
 
-@throws WireException if given a path that does not exist.
+## Throws
 
-@since 3.0.114
+- WireException if given a path that does not exist.
+
+## Meta
+
+- @since 3.0.114

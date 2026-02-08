@@ -1,4 +1,4 @@
-# Languages::setLanguage()
+# $languages->setLanguage($language): bool
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -11,10 +11,18 @@ a `$languages->unsetLanguage()` call.
 $languages->setLanguage('de');
 ~~~~~
 
-@param int|string|Language $language Language id, name or Language object
+## Arguments
 
-@return bool Returns false if no change necessary, true if language was changed
+- int|string|Language $language Language id, name or Language object
 
-@throws WireException if given $language argument doesn't resolve
+## Return value
 
-@see Languages::unsetLanguage()
+bool Returns false if no change necessary, true if language was changed
+
+## Throws
+
+- WireException if given $language argument doesn't resolve
+
+## See also
+
+- [Languages::unsetLanguage()](method-unsetlanguage.md)

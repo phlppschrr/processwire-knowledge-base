@@ -1,9 +1,13 @@
-# FieldtypeTextareaHelper::applyFieldHTML()
+# $fieldtypeTextareaHelper->applyFieldHTML(HookEvent $event)
 
 Source: `wire/modules/Fieldtype/FieldtypeTextareaHelper.php`
 
 Apply all htmlOptions to field values (hook to Session::redirect)
 
-@param HookEvent $event
+## Arguments
 
-@throws WireException
+- HookEvent $event
+
+## Throws
+
+- WireException

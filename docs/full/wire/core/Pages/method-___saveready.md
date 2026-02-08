@@ -1,4 +1,4 @@
-# Pages::___saveReady()
+# $pages->___saveReady(Page $page): array
 
 Source: `wire/core/Pages.php`
 
@@ -8,9 +8,15 @@ May be preferable to a before `Pages::save` hook because you know for sure a sav
 be executed immediately after this is called. Whereas you don't necessarily know
 that when the before `Pages::save` is called, as an error may prevent it.
 
+## Arguments
 
-@param Page $page The page about to be saved
+- Page $page The page about to be saved
 
-@return array Optional extra data to add to pages save query, which the hook can populate.
+## Return value
 
-@see Pages::savePageOrFieldReady(), Pages::saveFieldReady()
+array Optional extra data to add to pages save query, which the hook can populate.
+
+## See also
+
+- [Pages::savePageOrFieldReady()](method-___savepageorfieldready.md)
+- [Pages::saveFieldReady()](method-___savefieldready.md)

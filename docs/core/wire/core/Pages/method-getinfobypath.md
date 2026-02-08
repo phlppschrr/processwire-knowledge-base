@@ -1,4 +1,4 @@
-# Pages::getInfoByPath()
+# $pages->getInfoByPath($path, array $options = array()): array
 
 Source: `wire/core/Pages.php`
 
@@ -67,17 +67,11 @@ URL segment `bar` and has pagination enabled, it will return the following:
 ]
 ~~~~~
 
+## Arguments
 
-@param string $path Page path optionally including URL segments, language prefix, pagination number
+- string $path Page path optionally including URL segments, language prefix, pagination number
+- array $options - `useLanguages` (bool): Allow use of multi-language page names? (default=true) Requires LanguageSupportPageNames module installed. - `useShortcuts` (bool): Allow use of shortcut methods for optimization? (default=true) Recommend PagePaths module installed. - `useHistory` (bool): Allow use historical path names? (default=true) Requires PagePathHistory module installed. - `verbose` (bool): Return verbose array of information? (default=true) If false, some optional information will be omitted in return value.
 
-@param array $options
- - `useLanguages` (bool): Allow use of multi-language page names? (default=true)
-    Requires LanguageSupportPageNames module installed.
- - `useShortcuts` (bool): Allow use of shortcut methods for optimization? (default=true)
-    Recommend PagePaths module installed.
- - `useHistory` (bool): Allow use historical path names? (default=true)
-    Requires PagePathHistory module installed.
- - `verbose` (bool): Return verbose array of information? (default=true)
-    If false, some optional information will be omitted in return value.
+## Return value
 
-@return array
+array

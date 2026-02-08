@@ -1,4 +1,4 @@
-# ProcessPageListerBookmarks::executeSaveBookmark()
+# $processPageListerBookmarks->executeSaveBookmark()
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 

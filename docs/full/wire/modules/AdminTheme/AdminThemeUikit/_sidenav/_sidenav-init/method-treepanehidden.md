@@ -1,4 +1,4 @@
-# _sidenav-init::treePaneHidden()
+# $sidenavInit->treePaneHidden()
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

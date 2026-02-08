@@ -1,4 +1,4 @@
-# WireLog::error()
+# $wireLog->error($text, $flags = 0): Wire|WireLog
 
 Source: `wire/core/WireLog.php`
 
@@ -11,8 +11,11 @@ Note: Fatal errors should instead always throw a WireException.
 $log->error("Login attempt failed");
 ~~~~~
 
-@param string $text Text to save in the log
+## Arguments
 
-@param int|bool $flags Specify boolean true to also display the error interactively (admin only).
+- string $text Text to save in the log
+- int|bool $flags Specify boolean true to also display the error interactively (admin only).
 
-@return Wire|WireLog
+## Return value
+
+Wire|WireLog

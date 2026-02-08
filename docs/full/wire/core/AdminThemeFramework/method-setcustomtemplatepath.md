@@ -1,4 +1,4 @@
-# AdminThemeFramework::setCustomTemplatePath()
+# $adminThemeFramework->setCustomTemplatePath($path)
 
 Source: `wire/core/AdminThemeFramework.php`
 
@@ -7,6 +7,10 @@ Set custom path for admin theme templates
 This is for modules to optionally set a custom template path. If not set then the default
 in /site/templates/AdminTheme[Class]/ is used.
 
-@param string $path
+## Arguments
 
-@since 3.0.196
+- string $path
+
+## Meta
+
+- @since 3.0.196

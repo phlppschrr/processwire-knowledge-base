@@ -1,10 +1,10 @@
-# Pages::___deleted()
+# $pages->___deleted(Page $page, array $options = array())
 
 Source: `wire/core/Pages.php`
 
 Hook called after a page and its data have been deleted
 
+## Arguments
 
-@param Page $page Page that was deleted
-
-@param array $options Options passed to delete method (since 3.0.163)
+- Page $page Page that was deleted
+- array $options Options passed to delete method (since 3.0.163)

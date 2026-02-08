@@ -1,17 +1,20 @@
-# WireInput::getValidInputValue()
+# $wireInput->getValidInputValue(WireInputData $input, $key, $valid, $fallback): array|int|mixed|null|WireInputData|string
 
 Source: `wire/core/WireInput.php`
 
 Provides the implementation for get/post/cookie method validation and fallback features
 
-@param WireInputData $input
+## Arguments
 
-@param string $key Name of variable to pull from $input
+- WireInputData $input
+- string $key Name of variable to pull from $input
+- array|string|callable|mixed|null $valid String containing name of Sanitizer method, or array of allowed values.
+- string|array|int|mixed $fallback Return this value rather than null if input value is not present or not valid.
 
-@param array|string|callable|mixed|null $valid String containing name of Sanitizer method, or array of allowed values.
+## Return value
 
-@param string|array|int|mixed $fallback Return this value rather than null if input value is not present or not valid.
+array|int|mixed|null|WireInputData|string
 
-@return array|int|mixed|null|WireInputData|string
+## Throws
 
-@throws WireException if given unknown Sanitizer method or some other invalid arguments.
+- WireException if given unknown Sanitizer method or some other invalid arguments.

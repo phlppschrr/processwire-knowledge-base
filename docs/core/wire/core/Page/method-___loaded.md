@@ -1,4 +1,4 @@
-# Page::___loaded()
+# $page->___loaded()
 
 Source: `wire/core/Page.php`
 

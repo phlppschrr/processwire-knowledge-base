@@ -1,9 +1,13 @@
-# PageFinder::syntaxError()
+# $pageFinder->syntaxError($message)
 
 Source: `wire/core/PageFinder.php`
 
 Throw a fatal syntax error
 
-@param string $message
+## Arguments
 
-@throws PageFinderSyntaxException
+- string $message
+
+## Throws
+
+- PageFinderSyntaxException

@@ -1,9 +1,13 @@
-# WireSessionHandler::gc()
+# $wireSessionHandler->gc($seconds): bool
 
 Source: `wire/core/WireSessionHandler.php`
 
 Garbage collection: remove stale sessions
 
-@param int $seconds Max lifetime of a session
+## Arguments
 
-@return bool True on success, false on failure
+- int $seconds Max lifetime of a session
+
+## Return value
+
+bool True on success, false on failure

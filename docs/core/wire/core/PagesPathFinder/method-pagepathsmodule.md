@@ -1,7 +1,9 @@
-# PagesPathFinder::pagePathsModule()
+# $pagesPathFinder->pagePathsModule(): bool|PagePaths
 
 Source: `wire/core/PagesPathFinder.php`
 
 Get optional PathPaths module instance if it is installed, false if not
 
-@return bool|PagePaths
+## Return value
+
+bool|PagePaths

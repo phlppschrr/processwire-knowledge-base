@@ -1,12 +1,11 @@
-# Fields::___changeTypeReady()
+# $fields->___changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType)
 
 Source: `wire/core/Fields.php`
 
 Hook called right before a field is about to change type
 
+## Arguments
 
-@param Field $item
-
-@param Fieldtype $fromType
-
-@param Fieldtype $toType
+- Field $item
+- Fieldtype $fromType
+- Fieldtype $toType

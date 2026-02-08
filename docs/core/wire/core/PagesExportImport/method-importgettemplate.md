@@ -1,13 +1,15 @@
-# PagesExportImport::importGetTemplate()
+# $pagesExportImport->importGetTemplate(array &$a, array &$options, array &$errors): Template|null
 
 Source: `wire/core/PagesExportImport.php`
 
 Get the Page Template to use for import
 
-@param array $a Import data
+## Arguments
 
-@param array $options Import options
+- array $a Import data
+- array $options Import options
+- array $errors Errors array
 
-@param array $errors Errors array
+## Return value
 
-@return Template|null
+Template|null

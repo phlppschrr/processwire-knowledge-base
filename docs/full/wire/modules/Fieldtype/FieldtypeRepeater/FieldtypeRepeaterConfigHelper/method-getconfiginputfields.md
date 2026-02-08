@@ -1,13 +1,15 @@
-# FieldtypeRepeaterConfigHelper::getConfigInputfields()
+# $fieldtypeRepeaterConfigHelper->getConfigInputfields(InputfieldWrapper $inputfields, Template $template, Page $parent): InputfieldWrapper
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 Return configuration fields definable for each FieldtypePage
 
-@param InputfieldWrapper $inputfields
+## Arguments
 
-@param Template $template
+- InputfieldWrapper $inputfields
+- Template $template
+- Page $parent
 
-@param Page $parent
+## Return value
 
-@return InputfieldWrapper
+InputfieldWrapper

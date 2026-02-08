@@ -1,4 +1,4 @@
-# Sanitizer::___testAll()
+# $sanitizer->___testAll($value): array
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,7 +6,10 @@ Run value through all sanitizers, return array indexed by sanitizer name and res
 
 Used for debugging and testing purposes.
 
+## Arguments
 
-@param mixed $value
+- mixed $value
 
-@return array
+## Return value
+
+array

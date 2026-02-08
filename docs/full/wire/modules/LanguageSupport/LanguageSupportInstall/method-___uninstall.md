@@ -1,4 +1,4 @@
-# LanguageSupportInstall::___uninstall()
+# $languageSupportInstall->___uninstall()
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 

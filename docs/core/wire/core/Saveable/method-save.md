@@ -1,4 +1,4 @@
-# Saveable::save()
+# $saveable->save()
 
 Source: `wire/core/Interfaces.php`
 

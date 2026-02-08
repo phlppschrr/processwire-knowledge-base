@@ -1,11 +1,14 @@
-# Languages::findOther()
+# $languages->findOther($selector = '', $excludeLanguage = null): PageArray
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Find and return all languages except current user language
 
-@param string|Language $selector Optionally filter by a selector string
+## Arguments
 
-@param Language|null $excludeLanguage optionally specify language to exclude, if not user language (can also be 1st arg)
+- string|Language $selector Optionally filter by a selector string
+- Language|null $excludeLanguage optionally specify language to exclude, if not user language (can also be 1st arg)
 
-@return PageArray
+## Return value
+
+PageArray

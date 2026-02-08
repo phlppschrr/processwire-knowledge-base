@@ -1,9 +1,13 @@
-# Pagefile::filesize()
+# $pagefile->filesize($reset = false): int
 
 Source: `wire/core/Pagefile.php`
 
 Returns the filesize in number of bytes.
 
-@param bool $reset
+## Arguments
 
-@return int
+- bool $reset
+
+## Return value
+
+int

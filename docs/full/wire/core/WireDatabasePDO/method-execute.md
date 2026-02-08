@@ -1,4 +1,4 @@
-# WireDatabasePDO::execute()
+# $wireDatabasePDO->execute(\PDOStatement $query, $throw = true, $maxTries = 3): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -18,13 +18,16 @@ $query = $database->prepare("SELECT id, name FROM pages LIMIT 10");
 $database->execute($query);
 ~~~~~
 
+## Arguments
 
-@param \PDOStatement $query
+- \PDOStatement $query
+- bool $throw Whether or not to throw exception on query error (default=true)
+- int $maxTries Max number of times it will attempt to retry query on lost connection error
 
-@param bool $throw Whether or not to throw exception on query error (default=true)
+## Return value
 
-@param int $maxTries Max number of times it will attempt to retry query on lost connection error
+bool True on success, false on failure. Note if you want this, specify $throw=false in your arguments.
 
-@return bool True on success, false on failure. Note if you want this, specify $throw=false in your arguments.
+## Throws
 
-@throws \PDOException
+- \PDOException

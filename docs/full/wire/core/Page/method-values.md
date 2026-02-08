@@ -1,5 +1,8 @@
-# Page::values()
+# $page->values(): PageValues
 
 Source: `wire/core/Page.php`
 
-@return PageValues
+
+## Return value
+
+PageValues

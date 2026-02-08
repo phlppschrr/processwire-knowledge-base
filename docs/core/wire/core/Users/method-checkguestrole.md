@@ -1,9 +1,13 @@
-# Users::checkGuestRole()
+# $users->checkGuestRole(User $user)
 
 Source: `wire/core/Users.php`
 
 Check that given user has guest role and add it if not
 
-@param User $user
+## Arguments
 
-@since 3.0.198
+- User $user
+
+## Meta
+
+- @since 3.0.198

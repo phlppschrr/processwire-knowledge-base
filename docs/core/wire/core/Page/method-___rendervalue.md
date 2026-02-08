@@ -1,4 +1,4 @@
-# Page::___renderValue()
+# $page->___renderValue($value, $file = ''): mixed|string
 
 Source: `wire/core/Page.php`
 
@@ -12,9 +12,11 @@ $images = $page->images;
 echo $page->renderValue($images, 'my-images');
 ~~~~~
 
+## Arguments
 
-@param mixed $value Value to render
+- mixed $value Value to render
+- string $file Optionally specify file (in site/templates/fields/) to render with (may omit .php extension)
 
-@param string $file Optionally specify file (in site/templates/fields/) to render with (may omit .php extension)
+## Return value
 
-@return mixed|string Returns rendered value
+mixed|string Returns rendered value

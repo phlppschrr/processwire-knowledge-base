@@ -1,9 +1,13 @@
-# Notice::viewable()
+# $notice->viewable(): bool
 
 Source: `wire/core/Notice.php`
 
 Is this notice viewable at runtime?
 
-@return bool
+## Return value
 
-@since 3.0.254
+bool
+
+## Meta
+
+- @since 3.0.254

@@ -1,4 +1,4 @@
-# Sanitizer::selectorValueAdvanced()
+# $sanitizer->selectorValueAdvanced($value, array $options = array()): bool|mixed|string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -16,15 +16,20 @@ note that non-matching double quotes or parenthesis are removed.
 *Note: If double quotes are used in your selector value, this method will convert them to matching
 parenthesis, i.e. `+"phrase"` gets converted to `+(phrase)`.*
 
+## Arguments
 
-@param string|array $value
+- string|array $value
+- array $options See options for Sanitizer::selectorValue() method
 
-@param array $options See options for Sanitizer::selectorValue() method
+## Return value
 
-@return bool|mixed|string
+bool|mixed|string
 
-@since 3.0.182
+## See also
 
-@see Sanitizer::selectorValue()
+- [Sanitizer::selectorValue()](method-selectorvalue.md)
+- [https://processwire.com/docs/selectors/operators/#contains-advanced](https://processwire.com/docs/selectors/operators/#contains-advanced)
 
-@see https://processwire.com/docs/selectors/operators/#contains-advanced
+## Meta
+
+- @since 3.0.182

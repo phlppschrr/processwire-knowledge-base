@@ -1,15 +1,19 @@
-# PageComparison::selectorMatchesProperty()
+# $pageComparison->selectorMatchesProperty(Page $page, Selector $selector, $property): bool
 
 Source: `wire/core/PageComparison.php`
 
 Return whether single property from individual Selector matches Page
 
-@param Page $page
+## Arguments
 
-@param Selector $selector
+- Page $page
+- Selector $selector
+- string $property
 
-@param string $property
+## Return value
 
-@return bool
+bool
 
-@since 3.0.231
+## Meta
+
+- @since 3.0.231

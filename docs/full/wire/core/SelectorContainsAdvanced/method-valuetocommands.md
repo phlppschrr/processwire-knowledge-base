@@ -1,9 +1,13 @@
-# SelectorContainsAdvanced::valueToCommands()
+# $selectorContainsAdvanced->valueToCommands($value): array
 
 Source: `wire/core/Selector.php`
 
 Return array of advanced search commands from given value
 
-@param string $value
+## Arguments
 
-@return array
+- string $value
+
+## Return value
+
+array

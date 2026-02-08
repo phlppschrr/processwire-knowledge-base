@@ -1,7 +1,9 @@
-# AdminThemeFramework::getBrowserTitle()
+# $adminThemeFramework->getBrowserTitle(): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Get the browser <title>
 
-@return string
+## Return value
+
+string

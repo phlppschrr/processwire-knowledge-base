@@ -1,7 +1,9 @@
-# DatabaseQuerySelectFulltext::__construct()
+# $databaseQuerySelectFulltext->__construct(DatabaseQuerySelect $query)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Construct
 
-@param DatabaseQuerySelect|PageFinderDatabaseQuerySelect $query
+## Arguments
+
+- DatabaseQuerySelect|PageFinderDatabaseQuerySelect $query

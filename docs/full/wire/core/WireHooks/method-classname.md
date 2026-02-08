@@ -1,5 +1,8 @@
-# WireHooks::className()
+# $wireHooks->className(): string
 
 Source: `wire/core/WireHooks.php`
 
-@return string
+
+## Return value
+
+string

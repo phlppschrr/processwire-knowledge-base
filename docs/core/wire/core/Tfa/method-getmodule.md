@@ -1,9 +1,13 @@
-# Tfa::getModule()
+# $tfa->getModule(?User $user = null): Tfa|null
 
 Source: `wire/core/Tfa.php`
 
 Get the TFA module for given user or current session
 
-@param User|null $user Optionally specify user
+## Arguments
 
-@return Tfa|null
+- User|null $user Optionally specify user
+
+## Return value
+
+Tfa|null

@@ -1,4 +1,4 @@
-# Process::___uninstallPage()
+# $process->___uninstallPage(): int
 
 Source: `wire/core/Process.php`
 
@@ -8,5 +8,6 @@ If there is more than one page using this Process, it will trash them all.
 
 To be called by the Process module's ___uninstall() method.
 
+## Return value
 
-@return int Number of pages trashed
+int Number of pages trashed

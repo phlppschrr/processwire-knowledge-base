@@ -1,5 +1,8 @@
-# InputfieldDatetimeText::getDefaultSettings()
+# $inputfieldDatetimeText->getDefaultSettings(): array
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText.php`
 
-@return array
+
+## Return value
+
+array

@@ -1,4 +1,4 @@
-# WireDatabasePDO::columnExists()
+# $wireDatabasePDO->columnExists($table, $column = '', $getInfo = false): bool|array
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -23,16 +23,20 @@ if($exists) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $table Specify table name (or table and column name in format "table.column").
+- string $table Specify table name (or table and column name in format "table.column").
+- string $column Specify column name (or omit or blank string if already specified in $table argument).
+- bool $getInfo Return array of column info (with type info, etc.) rather than true when exists? (default=false) Note that the returned array is raw MySQL values from a SHOW COLUMNS command.
 
-@param string $column Specify column name (or omit or blank string if already specified in $table argument).
+## Return value
 
-@param bool $getInfo Return array of column info (with type info, etc.) rather than true when exists? (default=false)
-  Note that the returned array is raw MySQL values from a SHOW COLUMNS command.
+bool|array
 
-@return bool|array
+## Throws
 
-@since 3.0.154
+- WireDatabaseException
 
-@throws WireDatabaseException
+## Meta
+
+- @since 3.0.154

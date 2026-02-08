@@ -1,11 +1,14 @@
-# WireTempDir::mkdir()
+# $wireTempDir->mkdir($dir, $recursive = false): bool
 
 Source: `wire/core/WireTempDir.php`
 
 Create a temporary directory
 
-@param string $dir
+## Arguments
 
-@param bool $recursive
+- string $dir
+- bool $recursive
 
-@return bool
+## Return value
+
+bool

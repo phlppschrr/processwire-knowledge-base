@@ -1,4 +1,4 @@
-# WireArray::each()
+# $wireArray->each($func = null): array|null|string|WireArray
 
 Source: `wire/core/WireArray.php`
 
@@ -32,27 +32,15 @@ $titles = $page->children()->each("title");
 $properties = $page->children()->each(["title", "url"]);
 ~~~~~
 
+## Arguments
 
-@param callable|string|array|null $func Accepts any of the following:
-1. Callable function that each item will be passed to as first argument. If this
-   function returns a string, it will be appended to that of the other items and
-   the result returned by this each() method.
-2. Markup or text string with variable {tags} within it where each {tag} resolves
-   to a property in each item. This each() method will return the concatenated result.
-3. A property name (string) common to items in this WireArray. The result will be
-   returned as an array.
-4. An array of property names common to items in this WireArray. The result will be
-   returned as an array of associative arrays indexed by property name.
+- callable|string|array|null $func Accepts any of the following: 1. Callable function that each item will be passed to as first argument. If this function returns a string, it will be appended to that of the other items and the result returned by this each() method. 2. Markup or text string with variable {tags} within it where each {tag} resolves to a property in each item. This each() method will return the concatenated result. 3. A property name (string) common to items in this WireArray. The result will be returned as an array. 4. An array of property names common to items in this WireArray. The result will be returned as an array of associative arrays indexed by property name.
 
-@return array|null|string|WireArray Returns one of the following (related to numbers above):
-  - `$this` (1a): WireArray if given a function that has no return values (if using option #1 in arguments).
-  - `string` (1b): Containing the concatenated results of all function calls, if your function
-    returns strings (if using option #1 in arguments).
-  - `string` (2): Returns the processed and concatenated result (string) of all items in your
-    template string (if using option #2 in arguments).
-  - `array` (3): Returns regular PHP array of the property values for each item you requested
-    (if using option #3 in arguments).
-  - `array` (4): Returns an array of associative arrays containing the property values for each item
-    you requested (if using option #4 in arguments).
+## Return value
 
-@see WireArray::implode(), WireArray::explode()
+array|null|string|WireArray Returns one of the following (related to numbers above): - `$this` (1a): WireArray if given a function that has no return values (if using option #1 in arguments). - `string` (1b): Containing the concatenated results of all function calls, if your function returns strings (if using option #1 in arguments). - `string` (2): Returns the processed and concatenated result (string) of all items in your template string (if using option #2 in arguments). - `array` (3): Returns regular PHP array of the property values for each item you requested (if using option #3 in arguments). - `array` (4): Returns an array of associative arrays containing the property values for each item you requested (if using option #4 in arguments).
+
+## See also
+
+- [WireArray::implode()](method-implode.md)
+- [WireArray::explode()](method-explode.md)

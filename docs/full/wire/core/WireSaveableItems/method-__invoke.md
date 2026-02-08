@@ -1,9 +1,13 @@
-# WireSaveableItems::__invoke()
+# $wireSaveableItems->__invoke($key): Wire|null
 
 Source: `wire/core/WireSaveableItems.php`
 
 Enables use of $apivar('name') or wire()->apivar('name')
 
-@param $key
+## Arguments
 
-@return Wire|null
+- $key
+
+## Return value
+
+Wire|null

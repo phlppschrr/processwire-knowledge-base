@@ -1,4 +1,4 @@
-# _sidenav-init::toggleSidebarPane()
+# $sidenavInit->toggleSidebarPane()
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

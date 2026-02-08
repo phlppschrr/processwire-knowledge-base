@@ -1,13 +1,15 @@
-# InputfieldHasSelectableOptions::addOption()
+# $inputfieldHasSelectableOptions->addOption($value, $label = null, ?array $attributes = null): self|$this
 
 Source: `wire/core/Interfaces.php`
 
 Add a selectable option
 
-@param string|int $value
+## Arguments
 
-@param string|null $label
+- string|int $value
+- string|null $label
+- array|null $attributes
 
-@param array|null $attributes
+## Return value
 
-@return self|$this
+self|$this

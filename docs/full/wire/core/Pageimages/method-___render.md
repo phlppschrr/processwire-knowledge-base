@@ -1,4 +1,4 @@
-# Pageimages::___render()
+# $pageimages->___render($markup = '', $options = array()): string
 
 Source: `wire/core/Pageimages.php`
 
@@ -43,17 +43,15 @@ echo "<ul>" . $page->images->render([
 ]) . "</ul>";
 ~~~~~
 
-@param string|array $markup Markup template string or optional $options array if you do not want the template string here.
+## Arguments
 
-@param array|string $options Optionally resize image with these options sent to size() method:
- - `width` (int): Target width or 0 for current image size (or proportional if height specified).
- - `height` (int): Target height or 0 for current image size (or proportional if width specified).
- - `markup` (string): Markup template string (same as $markup argument), or omit for default (same as $markup argument).
- - `link` (bool): Link image to original size? Though you may prefer to do this with your own $markup (see examples). (default=false)
- - `limit` (int): Render no more than this many images (default=0, no limit).
- - Plus any option available to the $options argument on the `Pageimage::size()` method.
- - If you only need width and/or height, you can specify a width x height string, i.e. 123x456 (use 0 for proportional).
+- string|array $markup Markup template string or optional $options array if you do not want the template string here.
+- array|string $options Optionally resize image with these options sent to size() method: - `width` (int): Target width or 0 for current image size (or proportional if height specified). - `height` (int): Target height or 0 for current image size (or proportional if width specified). - `markup` (string): Markup template string (same as $markup argument), or omit for default (same as $markup argument). - `link` (bool): Link image to original size? Though you may prefer to do this with your own $markup (see examples). (default=false) - `limit` (int): Render no more than this many images (default=0, no limit). - Plus any option available to the $options argument on the `Pageimage::size()` method. - If you only need width and/or height, you can specify a width x height string, i.e. 123x456 (use 0 for proportional).
 
-@return string
+## Return value
 
-@since 3.0.126
+string
+
+## Meta
+
+- @since 3.0.126

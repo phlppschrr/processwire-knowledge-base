@@ -1,7 +1,9 @@
-# Language::__construct()
+# $language->__construct(?Template $tpl = null)
 
 Source: `wire/modules/LanguageSupport/Language.php`
 
 Construct a new Language instance
 
-@param Template|null $tpl
+## Arguments
+
+- Template|null $tpl

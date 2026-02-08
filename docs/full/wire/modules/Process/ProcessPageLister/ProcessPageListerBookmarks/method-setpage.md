@@ -1,7 +1,9 @@
-# ProcessPageListerBookmarks::setPage()
+# $processPageListerBookmarks->setPage(Page $page)
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
 Set the Lister page that bookmarks will be for
 
-@param Page $page
+## Arguments
+
+- Page $page

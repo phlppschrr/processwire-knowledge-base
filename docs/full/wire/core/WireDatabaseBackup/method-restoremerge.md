@@ -1,4 +1,4 @@
-# WireDatabaseBackup::restoreMerge()
+# $wireDatabaseBackup->restoreMerge($filename1, $filename2, $options): bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
@@ -10,13 +10,16 @@ CREATE TABLE statements in filename1 won't be executed if they also exist in fil
 
 This method assumes both files follow the SQL dump format created by this class.
 
+## Arguments
 
-@param string $filename1 Original filename
+- string $filename1 Original filename
+- string $filename2 Filename that may have statements that will update/override those in filename1
+- array $options
 
-@param string $filename2 Filename that may have statements that will update/override those in filename1
+## Return value
 
-@param array $options
+bool True on success, false on fail.
 
-@return bool True on success, false on fail.
+## Throws
 
-@throws \Exception|WireException if $options['haltOnErrors'] == true.
+- \Exception|WireException if $options['haltOnErrors'] == true.

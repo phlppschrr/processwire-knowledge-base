@@ -1,10 +1,13 @@
-# PagesNames::hasAutogenName()
+# $pagesNames->hasAutogenName(Page $page): string|bool
 
 Source: `wire/core/PagesNames.php`
 
 Does the given page have an auto-generated name (during this request)?
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return string|bool Returns auto-generated name if present, or boolean false if not
+## Return value
+
+string|bool Returns auto-generated name if present, or boolean false if not

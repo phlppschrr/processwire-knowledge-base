@@ -1,4 +1,4 @@
-# Fieldgroups::___delete()
+# $fieldgroups->___delete(Saveable $item): bool
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -6,8 +6,14 @@ Delete the given fieldgroup from the database
 
 Also deletes the references in fieldgroups_fields table
 
-@param Saveable|Fieldgroup $item
+## Arguments
 
-@return bool
+- Saveable|Fieldgroup $item
 
-@throws WireException
+## Return value
+
+bool
+
+## Throws
+
+- WireException

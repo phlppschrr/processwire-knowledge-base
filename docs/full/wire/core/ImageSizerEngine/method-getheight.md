@@ -1,7 +1,9 @@
-# ImageSizerEngine::getHeight()
+# $imageSizerEngine->getHeight(): int
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Return the image height
 
-@return int
+## Return value
+
+int

@@ -1,7 +1,9 @@
-# WireAction::___getConfigInputfields()
+# $wireAction->___getConfigInputfields(): InputfieldWrapper
 
 Source: `wire/core/WireAction.php`
 
 Return any Inputfields needed to configure this action
 
-@return InputfieldWrapper
+## Return value
+
+InputfieldWrapper

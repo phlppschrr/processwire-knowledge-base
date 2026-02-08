@@ -1,7 +1,9 @@
-# SelectableOptionArray::setPage()
+# $selectableOptionArray->setPage(Page $page)
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Set the these options live on
 
-@param Page $page
+## Arguments
+
+- Page $page

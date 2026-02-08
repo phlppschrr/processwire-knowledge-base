@@ -1,4 +1,4 @@
-# PagesPathFinder::applyResultHome()
+# $pagesPathFinder->applyResultHome()
 
 Source: `wire/core/PagesPathFinder.php`
 

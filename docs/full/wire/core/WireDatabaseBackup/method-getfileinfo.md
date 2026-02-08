@@ -1,10 +1,13 @@
-# WireDatabaseBackup::getFileInfo()
+# $wireDatabaseBackup->getFileInfo($filename): array
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Get information about a backup file
 
+## Arguments
 
-@param string $filename
+- string $filename
 
-@return array Returns associative array of information on success, empty array on failure
+## Return value
+
+array Returns associative array of information on success, empty array on failure

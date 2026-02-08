@@ -1,9 +1,13 @@
-# PagesPathFinder::pageNameToUTF8()
+# $pagesPathFinder->pageNameToUTF8($name): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Convert ascii page name to UTF-8
 
-@param string $name
+## Arguments
 
-@return string
+- string $name
+
+## Return value
+
+string

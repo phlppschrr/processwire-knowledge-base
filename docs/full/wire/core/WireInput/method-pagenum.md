@@ -1,4 +1,4 @@
-# WireInput::pageNum()
+# $wireInput->pageNum(): int
 
 Source: `wire/core/WireInput.php`
 
@@ -17,5 +17,6 @@ if($input->pageNum == 1) {
 }
 ~~~~~
 
+## Return value
 
-@return int Current pagination number
+int Current pagination number

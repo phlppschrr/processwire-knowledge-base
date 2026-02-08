@@ -1,4 +1,4 @@
-# Functions::WireArray()
+# $functions->WireArray($items = array()): WireArray
 
 Source: `wire/core/Functions.php`
 
@@ -13,9 +13,14 @@ $a = WireArray('foo'); // create WireArray with one "foo" string
 $a = WireArray(['foo', 'bar', 'baz']); // create WireArray with 3 strings
 ~~~~~~
 
+## Arguments
 
-@param array|WireArray|mixed $items
+- array|WireArray|mixed $items
 
-@return WireArray
+## Return value
 
-@since 3.0.123
+WireArray
+
+## Meta
+
+- @since 3.0.123

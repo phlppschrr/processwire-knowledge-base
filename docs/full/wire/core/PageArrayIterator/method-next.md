@@ -1,4 +1,4 @@
-# PageArrayIterator::next()
+# $pageArrayIterator->next()
 
 Source: `wire/core/PageArrayIterator.php`
 

@@ -1,4 +1,4 @@
-# User::hasTfa()
+# $user->hasTfa($getInstance = false): bool|string|Tfa
 
 Source: `wire/core/User.php`
 
@@ -16,9 +16,14 @@ When using `$getInstance` to return module instance, note that the module instan
 be initialized (hooks not added, etc.). To retrieve an initialized instance, you can get it
 from `$user->tfa_type` rather than calling this method.
 
+## Arguments
 
-@param bool $getInstance Get Tfa module instance when available? (default=false)
+- bool $getInstance Get Tfa module instance when available? (default=false)
 
-@return bool|string|Tfa
+## Return value
 
-@since 3.0.162
+bool|string|Tfa
+
+## Meta
+
+- @since 3.0.162

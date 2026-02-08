@@ -1,11 +1,14 @@
-# ModulesClass::log()
+# $modulesClass->log($str, $options = array()): WireLog
 
 Source: `wire/core/ModulesClass.php`
 
 Save to the modules log
 
-@param string $str Message to log
+## Arguments
 
-@param array|string $options Specify module name (string) or options array
+- string $str Message to log
+- array|string $options Specify module name (string) or options array
 
-@return WireLog
+## Return value
+
+WireLog

@@ -1,4 +1,4 @@
-# Pagefile::removeTag()
+# $pagefile->removeTag($tag): $this
 
 Source: `wire/core/Pagefile.php`
 
@@ -11,11 +11,20 @@ $file->removeTag('foo,bar,baz'); // remove multiple tags
 $file->removeTag(['foo', 'bar', 'baz']); // same as above, using array
 ~~~~~
 
+## Arguments
 
-@param string $tag Tag to remove, or array of tags to remove, or CSV string of tags to remove.
+- string $tag Tag to remove, or array of tags to remove, or CSV string of tags to remove.
 
-@return $this
+## Return value
 
-@since 3.0.17
+$this
 
-@see Pagefile::tags(), Pagefile::hasTag(), Pagefile::addTag()
+## See also
+
+- [Pagefile::tags()](method-tags.md)
+- [Pagefile::hasTag()](method-hastag.md)
+- [Pagefile::addTag()](method-addtag.md)
+
+## Meta
+
+- @since 3.0.17

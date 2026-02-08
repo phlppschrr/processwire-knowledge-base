@@ -1,7 +1,9 @@
-# Pagefiles::setPage()
+# $pagefiles->setPage(Page $page)
 
 Source: `wire/core/Pagefiles.php`
 
 Set the Page these files are assigned to
 
-@param Page $page
+## Arguments
+
+- Page $page

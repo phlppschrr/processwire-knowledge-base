@@ -1,9 +1,13 @@
-# RepeaterPageArray::setForPage()
+# $repeaterPageArray->setForPage(Page $forPage)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
 Set page this RepeaterPageArray is for
 
-@param Page $forPage
+## Arguments
 
-@since 3.0.188
+- Page $forPage
+
+## Meta
+
+- @since 3.0.188

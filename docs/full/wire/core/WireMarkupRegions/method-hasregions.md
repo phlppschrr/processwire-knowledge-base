@@ -1,9 +1,13 @@
-# WireMarkupRegions::hasRegions()
+# $wireMarkupRegions->hasRegions(&$html): bool
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Is the given HTML markup likely to have regions?
 
-@param string $html
+## Arguments
 
-@return bool
+- string $html
+
+## Return value
+
+bool

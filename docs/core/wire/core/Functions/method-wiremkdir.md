@@ -1,4 +1,4 @@
-# Functions::wireMkdir()
+# $functions->wireMkdir($path, $recursive = false, $chmod = null): bool
 
 Source: `wire/core/Functions.php`
 
@@ -6,14 +6,16 @@ Create a directory (optionally recursively) that is writable to ProcessWire and 
 
 This is procedural version of the `$files->mkdir()` method.
 
+## Arguments
 
-@param string $path
+- string $path
+- bool $recursive If set to true, all directories will be created as needed to reach the end.
+- string $chmod Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755" If omitted, then ProcessWire’s $config->chmodDir setting is used instead.
 
-@param bool $recursive If set to true, all directories will be created as needed to reach the end.
+## Return value
 
-@param string $chmod Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755"
-	If omitted, then ProcessWire’s $config->chmodDir setting is used instead.
+bool
 
-@return bool
+## See also
 
-@see WireFileTools::mkdir()
+- [WireFileTools::mkdir()](../WireFileTools/method-mkdir.md)

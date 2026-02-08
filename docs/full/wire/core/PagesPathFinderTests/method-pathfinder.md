@@ -1,5 +1,8 @@
-# PagesPathFinderTests::pathFinder()
+# $pagesPathFinderTests->pathFinder(): PagesPathFinder
 
 Source: `wire/core/PagesPathFinder.php`
 
-@return PagesPathFinder
+
+## Return value
+
+PagesPathFinder

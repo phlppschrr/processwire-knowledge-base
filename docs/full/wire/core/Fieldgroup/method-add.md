@@ -1,4 +1,4 @@
-# Fieldgroup::add()
+# $fieldgroup->add($item): $this
 
 Source: `wire/core/Fieldgroup.php`
 
@@ -9,9 +9,14 @@ $field = $fields->get('body');
 $fieldgroup->add($field);
 ~~~~~
 
+## Arguments
 
-@param Field|string $item Field object, field name or id.
+- Field|string $item Field object, field name or id.
 
-@return $this
+## Return value
 
-@throws WireException
+$this
+
+## Throws
+
+- WireException

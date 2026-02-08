@@ -1,10 +1,13 @@
-# Template::setIcon()
+# $template->setIcon($icon): $this
 
 Source: `wire/core/Template.php`
 
 Set the icon to use with this template
 
+## Arguments
 
-@param string $icon Font-awesome icon name
+- string $icon Font-awesome icon name
 
-@return $this
+## Return value
+
+$this

@@ -1,4 +1,4 @@
-# Pageimage::___filenameDoesNotExist()
+# $pageimage->___filenameDoesNotExist($filename): bool
 
 Source: `wire/core/Pageimage.php`
 
@@ -8,8 +8,14 @@ For the return value, override the default `false` return value and set
 it to `true` in order to make it continue as if the filename did exist,
 such as if your hook copied a file to $filename.
 
-@param string $filename
+## Arguments
 
-@return bool
+- string $filename
 
-@since 3.0.254
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.254

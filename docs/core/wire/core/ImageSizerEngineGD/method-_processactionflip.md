@@ -1,11 +1,14 @@
-# ImageSizerEngineGD::_processActionFlip()
+# $imageSizerEngineGD->_processActionFlip(&$img, $flipType): bool|resource
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Process flip action (internal)
 
-@param resource $img
+## Arguments
 
-@param string $flipType vertical, horizontal or both
+- resource $img
+- string $flipType vertical, horizontal or both
 
-@return bool|resource
+## Return value
+
+bool|resource

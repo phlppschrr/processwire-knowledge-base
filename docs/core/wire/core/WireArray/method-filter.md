@@ -1,4 +1,4 @@
-# WireArray::filter()
+# $wireArray->filter($selector): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -9,9 +9,14 @@ Filter this WireArray to only include items that match the given selector (destr
 $items->filter("featured=1");
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector Selector string or array to use as the filter.
+- string|array|Selectors $selector Selector string or array to use as the filter.
 
-@return $this reference to current instance.
+## Return value
 
-@see filterData
+$this reference to current instance.
+
+## See also
+
+- filterData

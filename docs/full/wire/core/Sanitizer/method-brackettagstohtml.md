@@ -1,11 +1,14 @@
-# Sanitizer::bracketTagsToHtml()
+# $sanitizer->bracketTagsToHtml($str, array $options): string
 
 Source: `wire/core/Sanitizer.php`
 
 Convert HTML bracket tags [tag]...[/tag] to HTML - helper method for entitiesMarkdown()
 
-@param string $str String containing bracket tags, should be entity encoded ahead of time
+## Arguments
 
-@param array $options
+- string $str String containing bracket tags, should be entity encoded ahead of time
+- array $options
 
-@return string
+## Return value
+
+string

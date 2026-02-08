@@ -1,13 +1,18 @@
-# SelectableOptionArray::removeByProperty()
+# $selectableOptionArray->removeByProperty($property, $value): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Remove item by property (value, title, id)
 
-@param string $property
+## Arguments
 
-@param string|int $value
+- string $property
+- string|int $value
 
-@return bool
+## Return value
 
-@since 3.0.242
+bool
+
+## Meta
+
+- @since 3.0.242

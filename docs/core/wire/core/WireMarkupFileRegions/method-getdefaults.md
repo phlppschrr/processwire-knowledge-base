@@ -1,7 +1,9 @@
-# WireMarkupFileRegions::getDefaults()
+# $wireMarkupFileRegions->getDefaults(): array
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
 Get default settings
 
-@return array
+## Return value
+
+array

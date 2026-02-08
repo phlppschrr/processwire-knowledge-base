@@ -1,4 +1,4 @@
-# PaginatedArray::setStart()
+# $paginatedArray->setStart($numStart): $this
 
 Source: `wire/core/PaginatedArray.php`
 
@@ -6,7 +6,10 @@ Set the starting offset number to use for pagination.
 
 This is typically the current page number (minus 1) multiplied by limit setting.
 
+## Arguments
 
-@param int $numStart
+- int $numStart
 
-@return $this
+## Return value
+
+$this

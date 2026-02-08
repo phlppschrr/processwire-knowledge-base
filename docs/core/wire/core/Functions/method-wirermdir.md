@@ -1,4 +1,4 @@
-# Functions::wireRmdir()
+# $functions->wireRmdir($path, $recursive = false): bool
 
 Source: `wire/core/Functions.php`
 
@@ -6,11 +6,15 @@ Remove a directory (optionally recursively)
 
 This is procedural version of the `$files->rmdir()` method. See that method for more options.
 
+## Arguments
 
-@param string $path
+- string $path
+- bool $recursive If set to true, all files and directories in $path will be recursively removed as well.
 
-@param bool $recursive If set to true, all files and directories in $path will be recursively removed as well.
+## Return value
 
-@return bool
+bool
 
-@see WireFileTools::rmdir()
+## See also
+
+- [WireFileTools::rmdir()](../WireFileTools/method-rmdir.md)

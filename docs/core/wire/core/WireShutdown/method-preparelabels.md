@@ -1,4 +1,4 @@
-# WireShutdown::prepareLabels()
+# $wireShutdown->prepareLabels()
 
 Source: `wire/core/WireShutdown.php`
 

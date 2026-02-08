@@ -1,9 +1,13 @@
-# LanguagesPageFieldValue::languageSupport()
+# $languagesPageFieldValue->languageSupport(): null|LanguageSupport
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
-@return null|LanguageSupport
 
-@throws WireException
+## Return value
 
-@throws WirePermissionException
+null|LanguageSupport
+
+## Throws
+
+- WireException
+- WirePermissionException

@@ -1,9 +1,10 @@
-# ListerBookmarks::__construct()
+# $listerBookmarks->__construct(Page $page, User $user)
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Construct
 
-@param Page $page
+## Arguments
 
-@param User $user
+- Page $page
+- User $user

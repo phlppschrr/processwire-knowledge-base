@@ -1,5 +1,8 @@
-# Page::comparison()
+# $page->comparison(): PageComparison
 
 Source: `wire/core/Page.php`
 
-@return PageComparison
+
+## Return value
+
+PageComparison

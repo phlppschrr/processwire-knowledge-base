@@ -1,7 +1,9 @@
-# InputfieldTinyMCESettings::getLanguagePackCode()
+# $inputfieldTinyMCESettings->getLanguagePackCode(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Get language pack code
 
-@return string
+## Return value
+
+string

@@ -1,9 +1,13 @@
-# FileLog::getTotalChunks()
+# $fileLog->getTotalChunks($chunkSize = 0): int
 
 Source: `wire/core/FileLog.php`
 
 Get the total number of chunks in the file
 
-@param int $chunkSize
+## Arguments
 
-@return int
+- int $chunkSize
+
+## Return value
+
+int

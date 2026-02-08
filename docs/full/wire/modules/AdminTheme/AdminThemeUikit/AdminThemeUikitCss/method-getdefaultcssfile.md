@@ -1,9 +1,13 @@
-# AdminThemeUikitCss::getDefaultCssFile()
+# $adminThemeUikitCss->getDefaultCssFile($getPath = false): string
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Get default Uikit CSS file URL or disk path
 
-@param bool $getPath
+## Arguments
 
-@return string
+- bool $getPath
+
+## Return value
+
+string

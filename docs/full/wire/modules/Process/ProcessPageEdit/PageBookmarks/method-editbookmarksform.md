@@ -1,9 +1,13 @@
-# PageBookmarks::editBookmarksForm()
+# $pageBookmarks->editBookmarksForm(): InputfieldForm
 
 Source: `wire/modules/Process/ProcessPageEdit/PageBookmarks.php`
 
 Provides the editor for bookmarks and returns InputfieldForm
 
-@return InputfieldForm
+## Return value
 
-@throws WirePermissionException|WireException
+InputfieldForm
+
+## Throws
+
+- WirePermissionException|WireException

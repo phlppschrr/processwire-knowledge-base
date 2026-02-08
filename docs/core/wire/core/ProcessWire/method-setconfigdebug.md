@@ -1,11 +1,17 @@
-# ProcessWire::setConfigDebug()
+# $processWire->setConfigDebug(Config $config): bool|int
 
 Source: `wire/core/ProcessWire.php`
 
 Determine whether debug mode should be enabled
 
-@param Config $config
+## Arguments
 
-@return bool|int Returns determined debug mode value
+- Config $config
 
-@since 3.0.212
+## Return value
+
+bool|int Returns determined debug mode value
+
+## Meta
+
+- @since 3.0.212

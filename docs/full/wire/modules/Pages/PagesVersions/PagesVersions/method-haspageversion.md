@@ -1,14 +1,14 @@
-# PagesVersions::hasPageVersion()
+# $pagesVersions->hasPageVersion(Page $page, $version = 0): bool|int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Does page have the given version?
 
+## Arguments
 
-@param Page $page
+- Page $page
+- int|string|PageVersionInfo $version Version number or omit to return quantity of versions
 
-@param int|string|PageVersionInfo $version Version number or omit to return quantity of versions
+## Return value
 
-@return bool|int
- - Returns boolean true or false if a non-empty $version argument was specified.
- - Returns integer with quantity of versions of no $version was specified.
+bool|int - Returns boolean true or false if a non-empty $version argument was specified. - Returns integer with quantity of versions of no $version was specified.

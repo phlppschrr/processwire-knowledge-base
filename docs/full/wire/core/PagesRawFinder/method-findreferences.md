@@ -1,4 +1,4 @@
-# PagesRawFinder::findReferences()
+# $pagesRawFinder->findReferences(array $colNames)
 
 Source: `wire/core/PagesRaw.php`
 
@@ -9,6 +9,10 @@ indexed by field name, specify `references.field` instead. To get something more
 of page references, specify properties or fields as `references.field_name` replacing `field_name`
 with a page property or field name, i.e. `references.title`.
 
-@param array $colNames
+## Arguments
 
-@since 3.0.193
+- array $colNames
+
+## Meta
+
+- @since 3.0.193

@@ -1,4 +1,4 @@
-# RepeaterPageArray::getNewItem()
+# $repeaterPageArray->getNewItem(): RepeaterPage
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
@@ -26,4 +26,6 @@ $item->save(); // save the item
 $page->save('repeater_field'); // save the page that has the repeater
 ~~~~~
 
-@return RepeaterPage
+## Return value
+
+RepeaterPage

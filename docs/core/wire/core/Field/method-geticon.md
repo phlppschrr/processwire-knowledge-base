@@ -1,10 +1,13 @@
-# Field::getIcon()
+# $field->getIcon($prefix = false): mixed|string
 
 Source: `wire/core/Field.php`
 
 Return the icon used by this field, or blank if none.
 
+## Arguments
 
-@param bool $prefix Whether or not you want the icon prefix included (i.e. "fa-")
+- bool $prefix Whether or not you want the icon prefix included (i.e. "fa-")
 
-@return mixed|string
+## Return value
+
+mixed|string

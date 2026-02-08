@@ -1,11 +1,17 @@
-# Field::removeTag()
+# $field->removeTag($tag): array
 
 Source: `wire/core/Field.php`
 
 Remove a tag
 
-@param string $tag
+## Arguments
 
-@return array Returns current tag list
+- string $tag
 
-@since 3.0.106
+## Return value
+
+array Returns current tag list
+
+## Meta
+
+- @since 3.0.106

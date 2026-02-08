@@ -1,11 +1,17 @@
-# WireClassLoader::findClassFile()
+# $wireClassLoader->findClassFile($className): bool|string
 
 Source: `wire/core/WireClassLoader.php`
 
 Find filename for given class name (primarily for API testing/debugging purposes)
 
-@param string $className Class name with namespace
+## Arguments
 
-@return bool|string Returns file on success or boolean false when not found
+- string $className Class name with namespace
 
-@since 3.0.152
+## Return value
+
+bool|string Returns file on success or boolean false when not found
+
+## Meta
+
+- @since 3.0.152

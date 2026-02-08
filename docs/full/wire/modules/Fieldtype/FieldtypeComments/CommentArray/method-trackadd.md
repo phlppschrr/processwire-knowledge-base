@@ -1,9 +1,10 @@
-# CommentArray::trackAdd()
+# $commentArray->trackAdd($item, $key)
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Track an item added
 
-@param Comment $item
+## Arguments
 
-@param int|string $key
+- Comment $item
+- int|string $key

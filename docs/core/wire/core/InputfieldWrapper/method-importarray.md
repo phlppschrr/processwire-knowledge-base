@@ -1,4 +1,4 @@
-# InputfieldWrapper::importArray()
+# $inputfieldWrapper->importArray(array $a, ?InputfieldWrapper $inputfields = null): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -48,9 +48,11 @@ array(
 // be the 'name' attribute.See the last item 'my_fieldset' above for an example.
 ~~~~~
 
+## Arguments
 
-@param array $a Array of Inputfield definitions
+- array $a Array of Inputfield definitions
+- InputfieldWrapper|null $inputfields Specify the wrapper you want them added to, or omit to use current.
 
-@param InputfieldWrapper|null $inputfields Specify the wrapper you want them added to, or omit to use current.
+## Return value
 
-@return $this
+$this

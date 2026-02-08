@@ -1,11 +1,17 @@
-# SelectableOptionArray::getByValue()
+# $selectableOptionArray->getByValue($value): SelectableOption|null
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Get option by value
 
-@param string $value
+## Arguments
 
-@return SelectableOption|null
+- string $value
 
-@since 3.0.242
+## Return value
+
+SelectableOption|null
+
+## Meta
+
+- @since 3.0.242

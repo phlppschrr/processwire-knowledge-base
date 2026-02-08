@@ -1,7 +1,9 @@
-# InputfieldTinyMCE::getModuleInfo()
+# InputfieldTinyMCE::getModuleInfo(): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Get module info
 
-@return array
+## Return value
+
+array

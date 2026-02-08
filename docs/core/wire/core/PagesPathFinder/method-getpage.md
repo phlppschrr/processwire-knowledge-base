@@ -1,4 +1,4 @@
-# PagesPathFinder::getPage()
+# $pagesPathFinder->getPage($path, array $options = array()): NullPage|Page
 
 Source: `wire/core/PagesPathFinder.php`
 
@@ -11,10 +11,15 @@ array returned by the `get()` method.
 
 Please access this method from `$pages->pathFinder()->getPage('…');`
 
-@param string $path
+## Arguments
 
-@param array $options
+- string $path
+- array $options
 
-@return NullPage|Page
+## Return value
 
-@see PagesPathFinder::get()
+NullPage|Page
+
+## See also
+
+- [PagesPathFinder::get()](method-get.md)

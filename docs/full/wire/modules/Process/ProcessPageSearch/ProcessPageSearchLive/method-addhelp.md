@@ -1,4 +1,4 @@
-# ProcessPageSearchLive::addHelp()
+# $processPageSearchLive->addHelp($group, array $examples): true
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -19,11 +19,15 @@ $wire->addHook('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
 });
 ~~~~~
 
+## Arguments
 
-@param string $group Group name for these search results
+- string $group Group name for these search results
+- array $examples Examples where keys are example queries and values are descriptions
 
-@param array $examples Examples where keys are example queries and values are descriptions
+## Return value
 
-@return true
+true
 
-@since 3.0.240
+## Meta
+
+- @since 3.0.240

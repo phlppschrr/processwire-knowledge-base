@@ -1,9 +1,13 @@
-# WireRandom::passCreate()
+# $wireRandom->passCreate(array $options): string
 
 Source: `wire/core/WireRandom.php`
 
 Create a password (for password method)
 
-@param array $options
+## Arguments
 
-@return string
+- array $options
+
+## Return value
+
+string

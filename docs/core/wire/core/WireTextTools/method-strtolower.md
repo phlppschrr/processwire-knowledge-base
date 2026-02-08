@@ -1,12 +1,17 @@
-# WireTextTools::strtolower()
+# $wireTextTools->strtolower($str): string
 
 Source: `wire/core/WireTextTools.php`
 
 Make a string lowercase
 
+## Arguments
 
-@param string $str
+- string $str
 
-@return string
+## Return value
 
-@see https://www.php.net/manual/en/function.strtolower.php
+string
+
+## See also
+
+- [https://www.php.net/manual/en/function.strtolower.php](https://www.php.net/manual/en/function.strtolower.php)

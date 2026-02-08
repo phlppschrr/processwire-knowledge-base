@@ -1,7 +1,9 @@
-# LanguagesPageFieldValue::__debugInfo()
+# $languagesPageFieldValue->__debugInfo(): array
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Debug info
 
-@return array
+## Return value
+
+array

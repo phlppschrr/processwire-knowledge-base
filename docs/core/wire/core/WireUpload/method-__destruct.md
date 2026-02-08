@@ -1,4 +1,4 @@
-# WireUpload::__destruct()
+# $wireUpload->__destruct()
 
 Source: `wire/core/WireUpload.php`
 

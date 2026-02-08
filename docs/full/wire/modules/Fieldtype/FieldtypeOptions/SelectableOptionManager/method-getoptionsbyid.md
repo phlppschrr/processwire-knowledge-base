@@ -1,11 +1,14 @@
-# SelectableOptionManager::getOptionsByID()
+# $selectableOptionManager->getOptionsByID(Field $field, array $ids): SelectableOptionArray|SelectableOption[]
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Shortcut to get options by ID number
 
-@param Field $field
+## Arguments
 
-@param array $ids
+- Field $field
+- array $ids
 
-@return SelectableOptionArray|SelectableOption[]
+## Return value
+
+SelectableOptionArray|SelectableOption[]

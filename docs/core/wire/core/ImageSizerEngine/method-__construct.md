@@ -1,4 +1,4 @@
-# ImageSizerEngine::__construct()
+# $imageSizerEngine->__construct()
 
 Source: `wire/core/ImageSizerEngine.php`
 

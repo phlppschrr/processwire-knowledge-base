@@ -1,10 +1,13 @@
-# PagefilesManager::moveFiles()
+# $pagefilesManager->moveFiles($toPath): int
 
 Source: `wire/core/PagefilesManager.php`
 
 Recursively move all files managed by this PagefilesManager into a new path.
 
+## Arguments
 
-@param $toPath string Path to move files into.
+- $toPath string Path to move files into.
 
-@return int Number of files/directories moved.
+## Return value
+
+int Number of files/directories moved.

@@ -1,4 +1,4 @@
-# ModulesDuplicates::updateDuplicates()
+# $modulesDuplicates->updateDuplicates()
 
 Source: `wire/core/ModulesDuplicates.php`
 

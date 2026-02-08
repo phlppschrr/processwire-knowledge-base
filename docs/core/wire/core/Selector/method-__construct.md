@@ -1,4 +1,4 @@
-# Selector::__construct()
+# $selector->__construct($field, $value)
 
 Source: `wire/core/Selector.php`
 
@@ -10,6 +10,7 @@ If the provided $value is an array of pipe "|" separated string, Selector may ma
 If only one field is provided as a string, and that field is prepended by an exclamation point, i.e. !field=something
 then the condition is reversed.
 
-@param string|array $field
+## Arguments
 
-@param string|int|array $value
+- string|array $field
+- string|int|array $value

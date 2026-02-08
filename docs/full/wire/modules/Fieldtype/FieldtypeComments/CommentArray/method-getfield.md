@@ -1,7 +1,9 @@
-# CommentArray::getField()
+# $commentArray->getField(): CommentField|Field
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Get the Field that these comments are on
 
-@return CommentField|Field
+## Return value
+
+CommentField|Field

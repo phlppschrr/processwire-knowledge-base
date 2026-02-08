@@ -1,4 +1,4 @@
-# WireArray::replace()
+# $wireArray->replace($itemA, $itemB): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -13,9 +13,11 @@ Replace one item with the other
 $items->replace($existingItem, $newItem);
 ~~~~~
 
+## Arguments
 
-@param Wire|string|int $itemA
+- Wire|string|int $itemA
+- Wire|string|int $itemB
 
-@param Wire|string|int $itemB
+## Return value
 
-@return $this
+$this

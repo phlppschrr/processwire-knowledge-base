@@ -1,4 +1,4 @@
-# Functions::wireCopy()
+# $functions->wireCopy($src, $dst, $options = array()): bool
 
 Source: `wire/core/Functions.php`
 
@@ -6,16 +6,16 @@ Copy all files recursively from one directory to another
 
 This is procedural version of the `$files->copy()` method.
 
+## Arguments
 
-@param string $src Path to copy files from
+- string $src Path to copy files from
+- string $dst Path to copy files to. Directory is created if it doesn’t already exist.
+- bool|array Array of options: - `recursive` (bool): Whether to copy directories within recursively. (default=true) - `allowEmptyDirs` (bool): Copy directories even if they are empty? (default=true) - If a boolean is specified for $options, it is assumed to be the 'recursive' option.
 
-@param string $dst Path to copy files to. Directory is created if it doesn’t already exist.
+## Return value
 
-@param bool|array Array of options:
-	- `recursive` (bool): Whether to copy directories within recursively. (default=true)
-	- `allowEmptyDirs` (bool): Copy directories even if they are empty? (default=true)
-	- If a boolean is specified for $options, it is assumed to be the 'recursive' option.
+bool True on success, false on failure.
 
-@return bool True on success, false on failure.
+## See also
 
-@see WireFileTools::copy()
+- [WireFileTools::copy()](../WireFileTools/method-copy.md)

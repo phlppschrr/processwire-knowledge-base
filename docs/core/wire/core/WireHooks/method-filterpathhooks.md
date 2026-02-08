@@ -1,13 +1,18 @@
-# WireHooks::filterPathHooks()
+# $wireHooks->filterPathHooks($requestPath, $has = false): array|bool
 
 Source: `wire/core/WireHooks.php`
 
 Return path hooks that have potential to match given request path
 
-@param string $requestPath
+## Arguments
 
-@param bool $has Specify true to change return value to boolean as to whether any can match (default=false)
+- string $requestPath
+- bool $has Specify true to change return value to boolean as to whether any can match (default=false)
 
-@return array|bool
+## Return value
 
-@since 3.0.174
+array|bool
+
+## Meta
+
+- @since 3.0.174

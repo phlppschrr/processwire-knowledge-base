@@ -1,4 +1,4 @@
-# FunctionsAPI::setting()
+# $functionsAPI->setting($name = '', $value = null): array|string|int|bool|mixed|null
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -33,9 +33,11 @@ $a = setting();
 setting(false, 'foo');
 ~~~~~
 
+## Arguments
 
-@param string|array $name Setting name, or array to set multiple
+- string|array $name Setting name, or array to set multiple
+- string|int|array|float|mixed $value Value to set, or omit if getting value of $name (default=null)
 
-@param string|int|array|float|mixed $value Value to set, or omit if getting value of $name (default=null)
+## Return value
 
-@return array|string|int|bool|mixed|null
+array|string|int|bool|mixed|null

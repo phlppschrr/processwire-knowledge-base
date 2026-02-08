@@ -1,4 +1,4 @@
-# CacheFile::remove()
+# $cacheFile->remove()
 
 Source: `wire/core/CacheFile.php`
 

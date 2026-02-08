@@ -1,9 +1,10 @@
-# ModulesDuplicates::addDuplicates()
+# $modulesDuplicates->addDuplicates($className, array $files)
 
 Source: `wire/core/ModulesDuplicates.php`
 
 Add multiple duplicates
 
-@param $className
+## Arguments
 
-@param array $files
+- $className
+- array $files

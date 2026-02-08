@@ -1,9 +1,13 @@
-# PagesParents::rebuildBranch()
+# $pagesParents->rebuildBranch($fromParent): int
 
 Source: `wire/core/PagesParents.php`
 
 Rebuild pages_parents branch starting at $fromParent and into all descendents
 
-@param Page|int $fromParent From parent Page or ID
+## Arguments
 
-@return int Number of rows inserted
+- Page|int $fromParent From parent Page or ID
+
+## Return value
+
+int Number of rows inserted

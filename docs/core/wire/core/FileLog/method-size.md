@@ -1,7 +1,9 @@
-# FileLog::size()
+# $fileLog->size(): int|false
 
 Source: `wire/core/FileLog.php`
 
 Get filesize
 
-@return int|false
+## Return value
+
+int|false

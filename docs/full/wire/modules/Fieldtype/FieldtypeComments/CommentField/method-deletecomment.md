@@ -1,13 +1,15 @@
-# CommentField::deleteComment()
+# $commentField->deleteComment(Page $page, Comment $comment, $notes = ''): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Delete a given comment
 
-@param Page $page
+## Arguments
 
-@param Comment $comment
+- Page $page
+- Comment $comment
+- string $notes
 
-@param string $notes
+## Return value
 
-@return mixed
+mixed

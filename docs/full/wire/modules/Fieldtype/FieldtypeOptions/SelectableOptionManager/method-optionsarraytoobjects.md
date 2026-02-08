@@ -1,11 +1,17 @@
-# SelectableOptionManager::optionsArrayToObjects()
+# $selectableOptionManager->optionsArrayToObjects(array $value): SelectableOptionArray
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Convert an array of option arrays, to a SelectableOptionArray of SelectableOption objects
 
-@param array $value
+## Arguments
 
-@return SelectableOptionArray
+- array $value
 
-@throws WireException
+## Return value
+
+SelectableOptionArray
+
+## Throws
+
+- WireException

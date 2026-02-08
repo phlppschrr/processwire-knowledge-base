@@ -1,11 +1,14 @@
-# Page::__set()
+# $page->__set($key, $value)
 
 Source: `wire/core/Page.php`
 
 Direct access set method
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@see set()
+## See also
+
+- set()

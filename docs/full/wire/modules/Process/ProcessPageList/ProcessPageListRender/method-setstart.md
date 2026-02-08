@@ -1,7 +1,9 @@
-# ProcessPageListRender::setStart()
+# $processPageListRender->setStart($n)
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Set pagination start
 
-@param int $n
+## Arguments
+
+- int $n

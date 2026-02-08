@@ -1,18 +1,24 @@
-# Field::getContext()
+# $field->getContext($for, $namespace = '', $has = false): Field|bool
 
 Source: `wire/core/Field.php`
 
 Get this field in context of a Page/Template
 
+## Arguments
 
-@param Page|Template|Fieldgroup|string $for Specify Page, Template, or template name string
+- Page|Template|Fieldgroup|string $for Specify Page, Template, or template name string
+- string $namespace Optional namespace (internal use)
+- bool $has Return boolean rather than Field to check if context exists? (default=false)
 
-@param string $namespace Optional namespace (internal use)
+## Return value
 
-@param bool $has Return boolean rather than Field to check if context exists? (default=false)
+Field|bool
 
-@return Field|bool
+## See also
 
-@since 3.0.162
+- [Fieldgroup::getFieldContext()](../Fieldgroup/method-getfieldcontext.md)
+- [Field::hasContext()](method-hascontext.md)
 
-@see Fieldgroup::getFieldContext(), Field::hasContext()
+## Meta
+
+- @since 3.0.162

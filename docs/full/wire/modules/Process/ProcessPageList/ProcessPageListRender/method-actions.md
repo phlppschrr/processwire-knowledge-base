@@ -1,7 +1,9 @@
-# ProcessPageListRender::actions()
+# $processPageListRender->actions(): null|ProcessPageListActions
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get the ProcessPageListActions instance
 
-@return null|ProcessPageListActions
+## Return value
+
+null|ProcessPageListActions

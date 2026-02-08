@@ -1,4 +1,4 @@
-# Page::find()
+# $page->find($selector = '', $options = array()): PageArray
 
 Source: `wire/core/Page.php`
 
@@ -11,11 +11,15 @@ This is the same as `Pages::find()` except that the results are limited to desce
 $items = $page->find("status=unpublished");
 ~~~~~
 
+## Arguments
 
-@param string|array $selector Selector string or array
+- string|array $selector Selector string or array
+- array $options Same as the $options array passed to $pages->find().
 
-@param array $options Same as the $options array passed to $pages->find().
+## Return value
 
-@return PageArray
+PageArray
 
-@see Pages::find()
+## See also
+
+- [Pages::find()](../Pages/method-___find.md)

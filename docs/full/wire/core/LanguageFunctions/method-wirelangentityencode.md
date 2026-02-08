@@ -1,4 +1,4 @@
-# LanguageFunctions::wireLangEntityEncode()
+# $languageFunctions->wireLangEntityEncode($value = ''): bool|int|string|null
 
 Source: `wire/core/LanguageFunctions.php`
 
@@ -15,9 +15,14 @@ The following can be used for the `$value` argument:
 
 To get current entity encoding state, call this function with no arguments.
 
+## Arguments
 
-@param bool|int|string|null $value
+- bool|int|string|null $value
 
-@return bool|int|string|null
+## Return value
 
-@since 3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, 'entityEncode', $value);
+bool|int|string|null
+
+## Meta
+
+- @since 3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, 'entityEncode', $value);

@@ -1,7 +1,9 @@
-# InputfieldTinyMCE::___render()
+# $inputfieldTinyMCE->___render(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Render Inputfield
 
-@return string
+## Return value
+
+string

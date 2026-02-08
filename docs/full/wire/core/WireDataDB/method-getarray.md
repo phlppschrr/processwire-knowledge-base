@@ -1,9 +1,13 @@
-# WireDataDB::getArray()
+# $wireDataDB->getArray(): array|mixed|null
 
 Source: `wire/core/WireDataDB.php`
 
 Get all values in an associative array
 
-@return array|mixed|null
+## Return value
 
-@throws WireException
+array|mixed|null
+
+## Throws
+
+- WireException

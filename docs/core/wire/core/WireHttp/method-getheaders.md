@@ -1,4 +1,4 @@
-# WireHttp::getHeaders()
+# $wireHttp->getHeaders(): array
 
 Source: `wire/core/WireHttp.php`
 
@@ -6,7 +6,10 @@ Get all currently set request headers in an associative array
 
 Note: To get response headers from a previously sent request, use `WireHttp::getResponseHeaders()` instead.
 
+## Return value
 
-@return array
+array
 
-@since 3.0.131
+## Meta
+
+- @since 3.0.131

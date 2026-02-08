@@ -1,11 +1,14 @@
-# FileCompiler::___compileData()
+# $fileCompiler->___compileData($data, $sourceFile): string
 
 Source: `wire/core/FileCompiler.php`
 
 Compile the given string of data
 
-@param string $data
+## Arguments
 
-@param string $sourceFile
+- string $data
+- string $sourceFile
 
-@return string
+## Return value
+
+string

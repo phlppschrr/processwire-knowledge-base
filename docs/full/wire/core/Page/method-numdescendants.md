@@ -1,4 +1,4 @@
-# Page::numDescendants()
+# $page->numDescendants($selector = null): int
 
 Source: `wire/core/Page.php`
 
@@ -16,12 +16,15 @@ If you want to find descendant pages (rather than count), use the `Page::find()`
 $qty = $page->numDescendants("modified>='-1 WEEK'");
 ~~~~~
 
+## Arguments
 
-@param bool|string|array $selector
-- When not specified, result includes all descendants without conditions, same as $page->numDescendants property.
-- When a string or array, a selector is assumed and quantity will be counted based on selector.
-- When boolean true, number includes only visible descendants (excludes unpublished, hidden, no-access, etc.)
+- bool|string|array $selector - When not specified, result includes all descendants without conditions, same as $page->numDescendants property. - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible descendants (excludes unpublished, hidden, no-access, etc.)
 
-@return int Number of descendants
+## Return value
 
-@see Page::numChildren(), Page::find()
+int Number of descendants
+
+## See also
+
+- [Page::numChildren()](method-numchildren.md)
+- [Page::find()](method-find.md)

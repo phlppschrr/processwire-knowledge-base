@@ -1,9 +1,13 @@
-# WireMarkupRegions::fileRegions()
+# $wireMarkupRegions->fileRegions(): WireMarkupFileRegions
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Get instance of WireMarkupFileRegions
 
-@return WireMarkupFileRegions
+## Return value
 
-@since 3.0.254
+WireMarkupFileRegions
+
+## Meta
+
+- @since 3.0.254

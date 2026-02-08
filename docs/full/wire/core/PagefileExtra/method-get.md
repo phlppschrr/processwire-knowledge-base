@@ -1,9 +1,13 @@
-# PagefileExtra::get()
+# $pagefileExtra->get($key): bool|int|mixed|null|string
 
 Source: `wire/core/PagefileExtra.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return bool|int|mixed|null|string
+- string $key
+
+## Return value
+
+bool|int|mixed|null|string

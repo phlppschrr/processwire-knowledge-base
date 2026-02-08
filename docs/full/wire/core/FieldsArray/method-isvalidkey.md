@@ -1,9 +1,13 @@
-# FieldsArray::isValidKey()
+# $fieldsArray->isValidKey($key): bool
 
 Source: `wire/core/FieldsArray.php`
 
 Per WireArray interface, Field keys have to be integers
 
-@param int $key
+## Arguments
 
-@return bool
+- int $key
+
+## Return value
+
+bool

@@ -1,4 +1,4 @@
-# Comment::wired()
+# $comment->wired()
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 

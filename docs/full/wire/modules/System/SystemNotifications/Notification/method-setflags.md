@@ -1,11 +1,14 @@
-# Notification::setFlags()
+# $notification->setFlags($names, $add = true): self
 
 Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Set multiple flags
 
-@param string $names space separated string of flag names
+## Arguments
 
-@param bool $add True to add, false to remove
+- string $names space separated string of flag names
+- bool $add True to add, false to remove
 
-@return self
+## Return value
+
+self

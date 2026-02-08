@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wireSetting()
+# $functionsWireAPI->wireSetting($name = '', $value = null): array|string|int|bool|mixed|null
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -31,8 +31,11 @@ $a = setting();
 setting(false, 'foo');
 ~~~~~
 
-@param string|array $name Setting name, or array to set multiple
+## Arguments
 
-@param string|int|array|float|mixed $value Value to set, or omit if getting value of $name (default=null)
+- string|array $name Setting name, or array to set multiple
+- string|int|array|float|mixed $value Value to set, or omit if getting value of $name (default=null)
 
-@return array|string|int|bool|mixed|null
+## Return value
+
+array|string|int|bool|mixed|null

@@ -1,4 +1,4 @@
-# Tfa::autoEnableSupported()
+# $tfa->autoEnableSupported(?User $user = null): bool
 
 Source: `wire/core/Tfa.php`
 
@@ -11,9 +11,14 @@ but cannot be supported by a module like TfaTotp which requires manual setup by 
 Modules that support auto-enable must implement this method to return true. Modules
 that do not support it can ignore this method, as the default returns false.
 
-@param User|null $user Specify user to also confirm it is supported for given user.
-  Omit to test if the module supports it in general.
+## Arguments
 
-@return bool
+- User|null $user Specify user to also confirm it is supported for given user. Omit to test if the module supports it in general.
 
-@since 3.0.160
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.160

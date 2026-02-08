@@ -1,12 +1,17 @@
-# Modules::___delete()
+# $modules->___delete($class): bool
 
 Source: `wire/core/Modules.php`
 
 Delete the given module, physically removing its files
 
+## Arguments
 
-@param string $class Module name (class name)
+- string $class Module name (class name)
 
-@return bool
+## Return value
 
-@throws WireException If module can't be deleted, exception will be thrown containing reason.
+bool
+
+## Throws
+
+- WireException If module can't be deleted, exception will be thrown containing reason.

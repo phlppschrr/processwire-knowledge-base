@@ -1,7 +1,9 @@
-# SystemNotificationsConfig::getInputfields()
+# $systemNotificationsConfig->getInputfields(): InputfieldWrapper
 
 Source: `wire/modules/System/SystemNotifications/SystemNotificationsConfig.php`
 
 Configure notifications
 
-@return InputfieldWrapper
+## Return value
+
+InputfieldWrapper

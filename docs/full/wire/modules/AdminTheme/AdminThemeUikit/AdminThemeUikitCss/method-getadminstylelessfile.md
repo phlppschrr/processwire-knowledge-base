@@ -1,7 +1,9 @@
-# AdminThemeUikitCss::getAdminStyleLessFile()
+# $adminThemeUikitCss->getAdminStyleLessFile(): string
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Get admin base style file to use
 
-@return string
+## Return value
+
+string

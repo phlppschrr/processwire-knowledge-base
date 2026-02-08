@@ -1,13 +1,15 @@
-# PageTraversal::prevAllSiblings()
+# $pageTraversal->prevAllSiblings(Page $page, $selector = '', ?PageArray $siblings = null): PageArray
 
 Source: `wire/core/PageTraversal.php`
 
 Return all sibling pages before this one, optionally matching a selector
 
-@param Page $page
+## Arguments
 
-@param string|array $selector Optional selector. When specified, will filter the found siblings.
+- Page $page
+- string|array $selector Optional selector. When specified, will filter the found siblings.
+- PageArray|null $siblings Optional siblings to use instead of the default.
 
-@param PageArray|null $siblings Optional siblings to use instead of the default.
+## Return value
 
-@return PageArray
+PageArray

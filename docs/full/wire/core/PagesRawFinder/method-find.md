@@ -1,4 +1,4 @@
-# PagesRawFinder::find()
+# $pagesRawFinder->find($selector, $field = '', $options = array()): array
 
 Source: `wire/core/PagesRaw.php`
 
@@ -22,12 +22,16 @@ How to use the `$field` argument:
   it as a field named 'headline' in the return value, you would specify the array
   `[ 'title' => 'headline' ]` for the $field argument. (3.0.176+)
 
-@param string|array|Selectors $selector
+## Arguments
 
-@param string|Field|int|array $field Field/property name or array of of them
+- string|array|Selectors $selector
+- string|Field|int|array $field Field/property name or array of of them
+- array $options See options for Pages::find
 
-@param array $options See options for Pages::find
+## Return value
 
-@return array
+array
 
-@since 3.0.172
+## Meta
+
+- @since 3.0.172

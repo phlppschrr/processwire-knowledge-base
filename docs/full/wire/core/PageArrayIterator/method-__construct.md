@@ -1,9 +1,10 @@
-# PageArrayIterator::__construct()
+# $pageArrayIterator->__construct(array $lazypages, array $options = [])
 
 Source: `wire/core/PageArrayIterator.php`
 
 Construct
 
-@param array $lazypages
+## Arguments
 
-@param array $options Options provided to $pages->find()
+- array $lazypages
+- array $options Options provided to $pages->find()

@@ -1,13 +1,15 @@
-# WireCacheInterface::save()
+# $wireCacheInterface->save($name, $data, $expire): bool
 
 Source: `wire/core/Interfaces.php`
 
 Save a cache
 
-@param string $name
+## Arguments
 
-@param string $data
+- string $name
+- string $data
+- string $expire
 
-@param string $expire
+## Return value
 
-@return bool
+bool

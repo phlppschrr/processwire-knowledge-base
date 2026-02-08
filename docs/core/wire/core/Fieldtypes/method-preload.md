@@ -1,4 +1,4 @@
-# Fieldtypes::preload()
+# $fieldtypes->preload()
 
 Source: `wire/core/Fieldtypes.php`
 

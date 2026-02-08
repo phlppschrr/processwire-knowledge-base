@@ -1,4 +1,4 @@
-# Sanitizer::path()
+# $sanitizer->path($value, $options = array()): bool|string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -13,13 +13,15 @@ and won't always work with paths outside ProcessWire.
 This method validates only and does not sanitize. See `$sanitizer->pagePathName()` for a similar
 method that does sanitiation.
 
+## Arguments
 
-@param string $value Path to validate
+- string $value Path to validate
+- int|array $options Options to modify behavior, or maxLength (int) may be specified. - `allowDotDot` (bool): Whether to allow ".." in a path (default=false) - `maxLength` (int): Maximum length of allowed path (default=1024)
 
-@param int|array $options Options to modify behavior, or maxLength (int) may be specified.
- - `allowDotDot` (bool): Whether to allow ".." in a path (default=false)
- - `maxLength` (int): Maximum length of allowed path (default=1024)
+## Return value
 
-@return bool|string Returns false if invalid, actual path (string) if valid.
+bool|string Returns false if invalid, actual path (string) if valid.
 
-@see Sanitizer::pagePathName()
+## See also
+
+- [Sanitizer::pagePathName()](method-pagepathname.md)

@@ -1,4 +1,4 @@
-# Pagefile::description()
+# $pagefile->description($language = null, $value = null): string|array
 
 Source: `wire/core/Pagefile.php`
 
@@ -22,16 +22,11 @@ echo $pagefile->description();
 echo $pagefile->description('de');
 ~~~~~
 
+## Arguments
 
-@param null|bool|Language|array
-- To GET in current user language: Omit arguments or specify null.
-- To GET in another language: Specify a Language name, id or object.
-- To GET in all languages as a JSON string: Specify boolean true (if LanguageSupport not installed, regular string returned).
-- To GET in all languages as an array indexed by language name: Specify boolean true for both arguments.
-- To SET for a language: Specify a language name, id or object, plus the $value as the 2nd argument.
-- To SET in all languages as a JSON string: Specify boolean true, plus the JSON string $value as the 2nd argument (internal use only).
-- To SET in all languages as an array: Specify the array here, indexed by language ID or name, and omit 2nd argument.
+- null|bool|Language|array - To GET in current user language: Omit arguments or specify null. - To GET in another language: Specify a Language name, id or object. - To GET in all languages as a JSON string: Specify boolean true (if LanguageSupport not installed, regular string returned). - To GET in all languages as an array indexed by language name: Specify boolean true for both arguments. - To SET for a language: Specify a language name, id or object, plus the $value as the 2nd argument. - To SET in all languages as a JSON string: Specify boolean true, plus the JSON string $value as the 2nd argument (internal use only). - To SET in all languages as an array: Specify the array here, indexed by language ID or name, and omit 2nd argument.
+- null|string $value Specify only when you are setting (single language) rather than getting a value.
 
-@param null|string $value Specify only when you are setting (single language) rather than getting a value.
+## Return value
 
-@return string|array
+string|array

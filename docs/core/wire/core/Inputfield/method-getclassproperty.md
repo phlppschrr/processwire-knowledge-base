@@ -1,4 +1,4 @@
-# Inputfield::getClassProperty()
+# $inputfield->getClassProperty($property): string
 
 Source: `wire/core/Inputfield.php`
 
@@ -6,8 +6,14 @@ Get the internal property name for given class property
 
 This converts things like 'wrap' to 'wrapClass', 'header' to 'headerClass', etc.
 
-@param string $property
+## Arguments
 
-@return string
+- string $property
 
-@since 3.0.204
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.204

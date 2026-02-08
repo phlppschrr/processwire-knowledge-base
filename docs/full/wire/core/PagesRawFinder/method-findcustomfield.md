@@ -1,11 +1,14 @@
-# PagesRawFinder::findCustomField()
+# $pagesRawFinder->findCustomField(Field $field, array $cols)
 
 Source: `wire/core/PagesRaw.php`
 
 Find raw custom field
 
-@param Field $field
+## Arguments
 
-@param array $cols
+- Field $field
+- array $cols
 
-@throws WireException
+## Throws
+
+- WireException

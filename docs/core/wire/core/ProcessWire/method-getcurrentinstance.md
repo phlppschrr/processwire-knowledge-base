@@ -1,8 +1,9 @@
-# ProcessWire::getCurrentInstance()
+# ProcessWire::getCurrentInstance(): ProcessWire|null
 
 Source: `wire/core/ProcessWire.php`
 
 Get the current ProcessWire instance
 
+## Return value
 
-@return ProcessWire|null
+ProcessWire|null

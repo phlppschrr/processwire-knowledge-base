@@ -1,4 +1,4 @@
-# CommentList::___renderItem()
+# $commentList->___renderItem(Comment $comment, $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
@@ -6,10 +6,15 @@ Render the comment (hookable version)
 
 Hookable since 3.0.138
 
-@param Comment $comment
+## Arguments
 
-@param array|int $options Options array
+- Comment $comment
+- array|int $options Options array
 
-@return string
+## Return value
 
-@see CommentArray::render()
+string
+
+## See also
+
+- [CommentArray::render()](../CommentArray/method-render.md)

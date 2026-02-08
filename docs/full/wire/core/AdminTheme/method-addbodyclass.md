@@ -1,7 +1,9 @@
-# AdminTheme::addBodyClass()
+# $adminTheme->addBodyClass($className)
 
 Source: `wire/core/AdminTheme.php`
 
 Add a <body> class to the admin theme
 
-@param string $className
+## Arguments
+
+- string $className

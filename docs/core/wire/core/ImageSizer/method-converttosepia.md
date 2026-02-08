@@ -1,9 +1,13 @@
-# ImageSizer::convertToSepia()
+# $imageSizer->convertToSepia($sepia = 55): bool
 
 Source: `wire/core/ImageSizer.php`
 
 Convert image to sepia tone
 
-@param int $sepia Sepia amount
+## Arguments
 
-@return bool
+- int $sepia Sepia amount
+
+## Return value
+
+bool

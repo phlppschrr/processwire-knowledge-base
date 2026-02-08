@@ -1,4 +1,4 @@
-# Sanitizer::maxLength()
+# $sanitizer->maxLength($value, $maxLength = 128, $maxBytes = null): array|float|int|string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -10,15 +10,20 @@ Limit length of given value to that specified
 - For floats, maxLength is assumed to be max allowed digits (including decimal point).
 - Returns the same type it is given: string, array, int or float
 
+## Arguments
 
-@param string|int|array|float $value
+- string|int|array|float $value
+- int $maxLength Maximum length (default=128)
+- null|int $maxBytes Maximum allowed bytes (used for string types only)
 
-@param int $maxLength Maximum length (default=128)
+## Return value
 
-@param null|int $maxBytes Maximum allowed bytes (used for string types only)
+array|float|int|string
 
-@return array|float|int|string
+## See also
 
-@since 3.0.125
+- [Sanitizer::minLength()](method-minlength.md)
 
-@see Sanitizer::minLength()
+## Meta
+
+- @since 3.0.125

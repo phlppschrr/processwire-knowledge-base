@@ -1,4 +1,4 @@
-# AdminThemeFramework::___getUserNavArray()
+# $adminThemeFramework->___getUserNavArray(): array
 
 Source: `wire/core/AdminThemeFramework.php`
 
@@ -19,4 +19,6 @@ Supported properties/attributes as of 3.0.248:
 - onclick (html attr)
 - data-* (html attr)
 
-@return array
+## Return value
+
+array

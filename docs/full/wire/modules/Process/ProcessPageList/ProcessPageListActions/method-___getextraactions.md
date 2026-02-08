@@ -1,4 +1,4 @@
-# ProcessPageListActions::___getExtraActions()
+# $processPageListActions->___getExtraActions(Page $page): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
@@ -16,6 +16,10 @@ $returnValue = [
   ],
 ];
 
-@param Page $page
+## Arguments
 
-@return array of $label => $url
+- Page $page
+
+## Return value
+
+array of $label => $url

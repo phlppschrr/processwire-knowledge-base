@@ -1,4 +1,4 @@
-# Inputfield::set()
+# $inputfield->set($key, $value): Inputfield|WireData
 
 Source: `wire/core/Inputfield.php`
 
@@ -9,9 +9,11 @@ Set a property or attribute to the Inputfield
 - If setting an attribute (like name, id, etc.) this will work, but it is preferable to use the `Inputfield::attr()` method.
 - If setting any kind of "class" it is preferable to use the `Inputfield::addClass()` method.
 
+## Arguments
 
-@param string $key Name of property to set
+- string $key Name of property to set
+- mixed $value Value of property
 
-@param mixed $value Value of property
+## Return value
 
-@return Inputfield|WireData
+Inputfield|WireData

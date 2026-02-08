@@ -1,4 +1,4 @@
-# Page::__clone()
+# $page->__clone()
 
 Source: `wire/core/Page.php`
 

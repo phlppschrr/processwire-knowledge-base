@@ -1,4 +1,4 @@
-# Fields::__construct()
+# $fields->__construct()
 
 Source: `wire/core/Fields.php`
 

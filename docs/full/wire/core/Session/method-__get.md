@@ -1,9 +1,13 @@
-# Session::__get()
+# $session->__get($name): SessionCSRF|mixed|null
 
 Source: `wire/core/Session.php`
 
 Provide non-namespaced $session->variable get access
 
-@param string $name
+## Arguments
 
-@return SessionCSRF|mixed|null
+- string $name
+
+## Return value
+
+SessionCSRF|mixed|null

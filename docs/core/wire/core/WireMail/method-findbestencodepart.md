@@ -1,4 +1,4 @@
-# WireMail::findBestEncodePart()
+# $wireMail->findBestEncodePart($input, $maxlen = 63, $isFirst = false): string
 
 Source: `wire/core/WireMail.php`
 
@@ -10,10 +10,12 @@ Makes sure that the quoted-printable encoded part is inside the 76 characters
 header limit (66 for first line that has the header name, minus a buffer
 of 2 characters for whitespace) given in rfc2047.
 
-@param string $input The subject to encode
+## Arguments
 
-@param int $maxlen Maximum length of unencoded string, defaults to 63
+- string $input The subject to encode
+- int $maxlen Maximum length of unencoded string, defaults to 63
+- bool $isFirst Set to true for first line to account for the header name
 
-@param bool $isFirst Set to true for first line to account for the header name
+## Return value
 
-@return string
+string

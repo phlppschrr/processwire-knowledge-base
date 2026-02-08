@@ -1,9 +1,13 @@
-# WireCacheInterface::delete()
+# $wireCacheInterface->delete($name): bool
 
 Source: `wire/core/Interfaces.php`
 
 Delete cache by name
 
-@param string $name
+## Arguments
 
-@return bool
+- string $name
+
+## Return value
+
+bool

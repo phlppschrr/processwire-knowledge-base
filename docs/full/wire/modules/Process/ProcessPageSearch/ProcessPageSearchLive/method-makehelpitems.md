@@ -1,11 +1,14 @@
-# ProcessPageSearchLive::makeHelpItems()
+# $processPageSearchLive->makeHelpItems(array $result, $type): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Make a search result item that displays property info
 
-@param array $result Result array returned by a SearchableModule::search() method
+## Arguments
 
-@param string $type
+- array $result Result array returned by a SearchableModule::search() method
+- string $type
 
-@return array
+## Return value
+
+array

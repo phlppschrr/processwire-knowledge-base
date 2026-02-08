@@ -1,4 +1,4 @@
-# LanguageFunctions::_n()
+# $languageFunctions->_n($textSingular, $textPlural, $count, $textdomain = null): string
 
 Source: `wire/core/LanguageFunctions.php`
 
@@ -11,18 +11,22 @@ echo _n('Found one item', 'Found multiple items', $qty);
 echo sprintf(_n('Found one item', 'Found %d items', $qty), $qty);
 ~~~~~
 
+## Arguments
 
-@param string $textSingular Singular version of text (when there is 1 item)
+- string $textSingular Singular version of text (when there is 1 item)
+- string $textPlural Plural version of text (when there are multiple items or 0 items)
+- int $count Quantity of items, should be 0 or more.
+- string $textdomain Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine automatically.
 
-@param string $textPlural Plural version of text (when there are multiple items or 0 items)
+## Return value
 
-@param int $count Quantity of items, should be 0 or more.
+string Translated text or original text if translation not available.
 
-@param string $textdomain Textdomain for the text, may be class name, filename, or something made up by you.
-  If omitted, a debug backtrace will attempt to determine automatically.
+## See also
 
-@return string Translated text or original text if translation not available.
+- __()
+- _x()
 
-@see __(), _x()
+## Meta
 
-@link https://processwire.com/docs/multi-language-support/code-i18n/
+- @link https://processwire.com/docs/multi-language-support/code-i18n/

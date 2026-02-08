@@ -1,4 +1,4 @@
-# PagesRequest::___getLoginPageOrUrl()
+# $pagesRequest->___getLoginPageOrUrl(?Page $page = null): string|Page|null
 
 Source: `wire/core/PagesRequest.php`
 
@@ -8,6 +8,10 @@ Get login Page object or URL to redirect to for login needed to access given $pa
 - When a string/URL is returned, it is suggested you redirect to it.
 - When null is returned no login page or URL could be identified and 404 should render.
 
-@param Page|null $page Page that access was requested to or omit to get admin login page
+## Arguments
 
-@return string|Page|null Login page object or string w/redirect URL, null if 404
+- Page|null $page Page that access was requested to or omit to get admin login page
+
+## Return value
+
+string|Page|null Login page object or string w/redirect URL, null if 404

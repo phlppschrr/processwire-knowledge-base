@@ -1,10 +1,13 @@
-# Templates::___getExportData()
+# $templates->___getExportData(Template $template): array
 
 Source: `wire/core/Templates.php`
 
 Export Template data for external use
 
+## Arguments
 
-@param Template $template Template you want to export
+- Template $template Template you want to export
 
-@return array Associative array of export data
+## Return value
+
+array Associative array of export data

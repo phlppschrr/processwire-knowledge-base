@@ -1,11 +1,14 @@
-# SelectableOptionManager::deleteOptionsByID()
+# $selectableOptionManager->deleteOptionsByID(Field $field, array $ids): int
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Delete the given option IDs
 
-@param Field $field
+## Arguments
 
-@param array $ids
+- Field $field
+- array $ids
 
-@return int Number of options deleted
+## Return value
+
+int Number of options deleted

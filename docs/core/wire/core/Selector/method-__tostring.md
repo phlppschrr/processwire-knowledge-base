@@ -1,4 +1,4 @@
-# Selector::__toString()
+# $selector->__toString()
 
 Source: `wire/core/Selector.php`
 

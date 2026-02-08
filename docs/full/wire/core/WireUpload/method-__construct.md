@@ -1,7 +1,9 @@
-# WireUpload::__construct()
+# $wireUpload->__construct($name)
 
 Source: `wire/core/WireUpload.php`
 
 Construct with the given input name
 
-@param string $name
+## Arguments
+
+- string $name

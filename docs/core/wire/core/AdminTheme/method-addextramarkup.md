@@ -1,9 +1,10 @@
-# AdminTheme::addExtraMarkup()
+# $adminTheme->addExtraMarkup($name, $value)
 
 Source: `wire/core/AdminTheme.php`
 
 Add extra markup to a region in the admin theme
 
-@param string $name
+## Arguments
 
-@param string $value
+- string $name
+- string $value

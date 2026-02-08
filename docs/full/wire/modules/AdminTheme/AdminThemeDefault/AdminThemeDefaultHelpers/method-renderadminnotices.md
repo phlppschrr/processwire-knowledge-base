@@ -1,11 +1,14 @@
-# AdminThemeDefaultHelpers::renderAdminNotices()
+# $adminThemeDefaultHelpers->renderAdminNotices($notices, array $options = array()): string
 
 Source: `wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers.php`
 
 Render runtime notices div#notices
 
-@param array $options See defaults in method
+## Arguments
 
-@param Notices $notices
+- array $options See defaults in method
+- Notices $notices
 
-@return string
+## Return value
+
+string

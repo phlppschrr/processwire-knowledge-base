@@ -1,4 +1,4 @@
-# WireUpload::wired()
+# $wireUpload->wired()
 
 Source: `wire/core/WireUpload.php`
 

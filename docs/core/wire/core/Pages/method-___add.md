@@ -1,4 +1,4 @@
-# Pages::___add()
+# $pages->___add($template, $parent, $name = '', array $values = array()): Page
 
 Source: `wire/core/Pages.php`
 
@@ -24,18 +24,22 @@ $building = $pages->add('skyscraper', '/skyscrapers/atlanta/', [
 ]);
 ~~~~~
 
+## Arguments
 
-@param string|Template $template Template name or Template object
+- string|Template $template Template name or Template object
+- string|int|Page $parent Parent path, ID or Page object
+- string $name Optional name or title of page. If none provided, one will be automatically assigned. If you want to specify a different name and title then specify the $name argument, and $values['title'].
+- array $values Field values to assign to page (optional). If $name is omitted, this may also be 3rd param.
 
-@param string|int|Page $parent Parent path, ID or Page object
+## Return value
 
-@param string $name Optional name or title of page. If none provided, one will be automatically assigned.
-	If you want to specify a different name and title then specify the $name argument, and $values['title'].
+Page New page ready to populate. Note that this page has output formatting off.
 
-@param array $values Field values to assign to page (optional). If $name is omitted, this may also be 3rd param.
+## Throws
 
-@return Page New page ready to populate. Note that this page has output formatting off.
+- WireException When some criteria prevents the page from being saved.
 
-@throws WireException When some criteria prevents the page from being saved.
+## See also
 
-@see Pages::new(), Pages::newPage()
+- [Pages::new()](method-___new.md)
+- [Pages::newPage()](method-newpage.md)

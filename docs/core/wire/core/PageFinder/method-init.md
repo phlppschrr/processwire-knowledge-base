@@ -1,11 +1,14 @@
-# PageFinder::init()
+# $pageFinder->init(Selectors $selectors, array $options): array
 
 Source: `wire/core/PageFinder.php`
 
 Initialize new find operation and prepare options
 
-@param Selectors $selectors
+## Arguments
 
-@param array $options
+- Selectors $selectors
+- array $options
 
-@return array Returns updated options with all present
+## Return value
+
+array Returns updated options with all present

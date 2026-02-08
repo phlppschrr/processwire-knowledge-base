@@ -1,4 +1,4 @@
-# ProcessModuleInstall::determineDestinationDir()
+# $processModuleInstall->determineDestinationDir(array $files, $modulePath = ''): bool|string
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
@@ -6,8 +6,11 @@ Given a list of files from a module (and their temp dir) return the recommended 
 
 i.e. /site/modules/[ModuleDir]/
 
-@param array $files Files found in the module's ZIP file
+## Arguments
 
-@param string $modulePath Path where module will live
+- array $files Files found in the module's ZIP file
+- string $modulePath Path where module will live
 
-@return bool|string Returns false if no module files found. Otherwise returns string with module path.
+## Return value
+
+bool|string Returns false if no module files found. Otherwise returns string with module path.

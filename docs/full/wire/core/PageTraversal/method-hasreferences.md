@@ -1,4 +1,4 @@
-# PageTraversal::hasReferences()
+# $pageTraversal->hasReferences(Page $page, $selector = '', $field = ''): int|array
 
 Source: `wire/core/PageTraversal.php`
 
@@ -8,10 +8,12 @@ Note that this excludes hidden, unpublished and otherwise non-accessible pages (
 If you do not want to exclude these, use the numFollowers() function instead, OR specify "include=all" for
 the $selector argument.
 
-@param Page $page
+## Arguments
 
-@param string $selector Filter count by this selector
+- Page $page
+- string $selector Filter count by this selector
+- string|Field|bool $field Limit count to given Field or specify boolean true to return array of counts.
 
-@param string|Field|bool $field Limit count to given Field or specify boolean true to return array of counts.
+## Return value
 
-@return int|array Returns count, or array of counts (if $field==true)
+int|array Returns count, or array of counts (if $field==true)

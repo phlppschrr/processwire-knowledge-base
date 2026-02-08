@@ -1,11 +1,14 @@
-# InputfieldTinyMCETools::jsonDecodeFile()
+# $inputfieldTinyMCETools->jsonDecodeFile($file, $propertyName): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
 Decode JSON file
 
-@param string $file
+## Arguments
 
-@param string $propertyName
+- string $file
+- string $propertyName
 
-@return array
+## Return value
+
+array

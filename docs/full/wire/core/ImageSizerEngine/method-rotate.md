@@ -1,11 +1,14 @@
-# ImageSizerEngine::rotate()
+# $imageSizerEngine->rotate($degrees, $dstFilename = ''): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Just rotate image by number of degrees
 
-@param int $degrees
+## Arguments
 
-@param string $dstFilename Optional destination filename. If not present, source will be overwritten.
+- int $degrees
+- string $dstFilename Optional destination filename. If not present, source will be overwritten.
 
-@return bool True on success, false on fail
+## Return value
+
+bool True on success, false on fail

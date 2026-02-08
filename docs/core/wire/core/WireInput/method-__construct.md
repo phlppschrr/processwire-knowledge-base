@@ -1,4 +1,4 @@
-# WireInput::__construct()
+# $wireInput->__construct()
 
 Source: `wire/core/WireInput.php`
 

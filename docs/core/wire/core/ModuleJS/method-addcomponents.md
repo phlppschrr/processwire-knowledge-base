@@ -1,9 +1,13 @@
-# ModuleJS::addComponents()
+# $moduleJS->addComponents(array $components): $this
 
 Source: `wire/core/ModuleJS.php`
 
 Add an array of optional components
 
-@param array $components
+## Arguments
 
-@return $this
+- array $components
+
+## Return value
+
+$this

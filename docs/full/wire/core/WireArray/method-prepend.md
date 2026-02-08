@@ -1,4 +1,4 @@
-# WireArray::prepend()
+# $wireArray->prepend($item): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -9,11 +9,18 @@ Prepend an item to the beginning of the WireArray.
 $items->prepend($item);
 ~~~~~
 
+## Arguments
 
-@param Wire|WireArray|mixed $item Item to prepend.
+- Wire|WireArray|mixed $item Item to prepend.
 
-@return $this This instance.
+## Return value
 
-@throws WireException
+$this This instance.
 
-@see WireArray::append()
+## Throws
+
+- WireException
+
+## See also
+
+- [WireArray::append()](method-append.md)

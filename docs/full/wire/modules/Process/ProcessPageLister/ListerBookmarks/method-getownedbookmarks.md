@@ -1,9 +1,13 @@
-# ListerBookmarks::getOwnedBookmarks()
+# $listerBookmarks->getOwnedBookmarks($userID = 0): array
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get owned bookmarks
 
-@param int $userID
+## Arguments
 
-@return array
+- int $userID
+
+## Return value
+
+array

@@ -1,7 +1,9 @@
-# Notices::hasWarnings()
+# $notices->hasWarnings(): bool
 
 Source: `wire/core/Notices.php`
 
 Are there NoticeWarning items present?
 
-@return bool
+## Return value
+
+bool

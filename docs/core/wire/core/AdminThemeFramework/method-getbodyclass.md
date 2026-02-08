@@ -1,7 +1,9 @@
-# AdminThemeFramework::getBodyClass()
+# $adminThemeFramework->getBodyClass(): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Get the classes that will be used in the <body class=''> tag
 
-@return string
+## Return value
+
+string

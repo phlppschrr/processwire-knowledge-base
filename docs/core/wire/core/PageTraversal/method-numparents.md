@@ -1,4 +1,4 @@
-# PageTraversal::numParents()
+# $pageTraversal->numParents(Page $page, $selector = ''): int
 
 Source: `wire/core/PageTraversal.php`
 
@@ -7,8 +7,11 @@ Return number of parents (depth relative to homepage) that this page has, option
 For example, homepage has 0 parents and root level pages have 1 parent (which is the homepage), and the
 number increases the deeper the page is in the pages structure.
 
-@param Page $page
+## Arguments
 
-@param string $selector Optional selector to filter by (default='')
+- Page $page
+- string $selector Optional selector to filter by (default='')
 
-@return int Number of parents
+## Return value
+
+int Number of parents

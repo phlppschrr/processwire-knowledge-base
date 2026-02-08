@@ -1,12 +1,14 @@
-# PagesLoaderCache::cacheGroup()
+# $pagesLoaderCache->cacheGroup(Page $page, $groupName)
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Cache given page into a named group that it can be uncached with
 
+## Arguments
 
-@param Page $page
+- Page $page
+- string $groupName
 
-@param string $groupName
+## Meta
 
-@since 3.0.198
+- @since 3.0.198

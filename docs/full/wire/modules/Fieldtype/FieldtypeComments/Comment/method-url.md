@@ -1,9 +1,13 @@
-# Comment::url()
+# $comment->url($http = false): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Return URL to view comment
 
-@param bool $http
+## Arguments
 
-@return string
+- bool $http
+
+## Return value
+
+string

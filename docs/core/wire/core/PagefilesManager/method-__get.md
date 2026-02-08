@@ -1,9 +1,13 @@
-# PagefilesManager::__get()
+# $pagefilesManager->__get($name): mixed
 
 Source: `wire/core/PagefilesManager.php`
 
 Handle non-function versions of some properties
 
-@param string $name
+## Arguments
 
-@return mixed
+- string $name
+
+## Return value
+
+mixed

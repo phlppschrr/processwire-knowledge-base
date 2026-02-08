@@ -1,4 +1,4 @@
-# WireHooks::removeHook()
+# $wireHooks->removeHook(Wire $object, $hookID): Wire
 
 Source: `wire/core/WireHooks.php`
 
@@ -9,8 +9,11 @@ function(HookEvent $event) {
   $event->removeHook(null); // remove self
 }
 
-@param Wire $object
+## Arguments
 
-@param string|array|null $hookID Can be single hook ID, array of hook IDs, or CSV string of hook IDs
+- Wire $object
+- string|array|null $hookID Can be single hook ID, array of hook IDs, or CSV string of hook IDs
 
-@return Wire
+## Return value
+
+Wire

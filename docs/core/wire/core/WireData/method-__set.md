@@ -1,9 +1,10 @@
-# WireData::__set()
+# $wireData->__set($key, $value)
 
 Source: `wire/core/WireData.php`
 
 Provides direct reference access to set values in the $data array
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value

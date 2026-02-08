@@ -1,9 +1,13 @@
-# AdminThemeFramework::get()
+# $adminThemeFramework->get($key): bool|int|mixed|null|string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Override get() method from WireData to support additional properties
 
-@param string $key
+## Arguments
 
-@return bool|int|mixed|null|string
+- string $key
+
+## Return value
+
+bool|int|mixed|null|string

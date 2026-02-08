@@ -1,9 +1,13 @@
-# WireCache::setCacheModule()
+# $wireCache->setCacheModule(WireCacheInterface $module)
 
 Source: `wire/core/WireCache.php`
 
 Set WireCache module to use for caching
 
-@param WireCacheInterface $module
+## Arguments
 
-@since 3.0.218
+- WireCacheInterface $module
+
+## Meta
+
+- @since 3.0.218

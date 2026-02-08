@@ -1,11 +1,17 @@
-# WireLog::deleteAll()
+# $wireLog->deleteAll($throw = false): array
 
 Source: `wire/core/WireLog.php`
 
 Delete all log files
 
-@param bool $throw Throw WireException if any delete fails? (default=false)
+## Arguments
 
-@return array Basenames of deleted log files
+- bool $throw Throw WireException if any delete fails? (default=false)
 
-@since 3.0.214
+## Return value
+
+array Basenames of deleted log files
+
+## Meta
+
+- @since 3.0.214

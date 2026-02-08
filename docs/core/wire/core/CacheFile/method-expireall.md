@@ -1,4 +1,4 @@
-# CacheFile::expireAll()
+# $cacheFile->expireAll()
 
 Source: `wire/core/CacheFile.php`
 

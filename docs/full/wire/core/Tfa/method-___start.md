@@ -1,4 +1,4 @@
-# Tfa::___start()
+# $tfa->___start($name, $pass): bool
 
 Source: `wire/core/Tfa.php`
 
@@ -12,8 +12,11 @@ TFA login, then this method returns true, but user still needs to be authenticat
 If preferred, you can ignore the return value, as this method will perform redirects whenever
 it needs to move on to the next 2FA step.
 
-@param string $name
+## Arguments
 
-@param string $pass
+- string $name
+- string $pass
 
-@return bool
+## Return value
+
+bool

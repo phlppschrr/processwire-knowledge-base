@@ -1,9 +1,13 @@
-# ImageSizerEngine::getProportionalHeight()
+# $imageSizerEngine->getProportionalHeight($targetWidth): int
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Given a target width, return the proportional height for this image
 
-@param int $targetWidth
+## Arguments
 
-@return int
+- int $targetWidth
+
+## Return value
+
+int

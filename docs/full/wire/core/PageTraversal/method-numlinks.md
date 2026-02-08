@@ -1,11 +1,14 @@
-# PageTraversal::numLinks()
+# $pageTraversal->numLinks(Page $page, $field = false): int
 
 Source: `wire/core/PageTraversal.php`
 
 Return total found number of pages linking to this one with no exclusions
 
-@param Page $page
+## Arguments
 
-@param bool $field
+- Page $page
+- bool $field
 
-@return int
+## Return value
+
+int

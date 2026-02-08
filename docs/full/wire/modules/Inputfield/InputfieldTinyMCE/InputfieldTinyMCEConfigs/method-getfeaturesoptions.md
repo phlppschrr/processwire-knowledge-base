@@ -1,7 +1,9 @@
-# InputfieldTinyMCEConfigs::getFeaturesOptions()
+# $inputfieldTinyMCEConfigs->getFeaturesOptions(): array[]
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
 Get features options
 
-@return array[]
+## Return value
+
+array[]

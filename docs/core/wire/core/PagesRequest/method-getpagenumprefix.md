@@ -1,7 +1,9 @@
-# PagesRequest::getPageNumPrefix()
+# $pagesRequest->getPageNumPrefix(): null|string
 
 Source: `wire/core/PagesRequest.php`
 
 Get the requested pagination number prefix
 
-@return null|string
+## Return value
+
+null|string

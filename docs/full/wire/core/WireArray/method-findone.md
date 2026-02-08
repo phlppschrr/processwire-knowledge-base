@@ -1,4 +1,4 @@
-# WireArray::findOne()
+# $wireArray->findOne($selector): Wire|bool
 
 Source: `wire/core/WireArray.php`
 
@@ -17,9 +17,14 @@ if($item) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector
+- string|array|Selectors $selector
 
-@return Wire|bool Returns item from WireArray or false if the result is empty.
+## Return value
 
-@see WireArray::find()
+Wire|bool Returns item from WireArray or false if the result is empty.
+
+## See also
+
+- [WireArray::find()](method-find.md)

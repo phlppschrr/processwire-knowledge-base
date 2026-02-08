@@ -1,13 +1,15 @@
-# WireDatabaseBackup::backupEndFile()
+# $wireDatabaseBackup->backupEndFile($file, array $summary = array(), array $options = array()): bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 End a new backup file, adding our footer to the bottom
 
-@param string|resource $file
+## Arguments
 
-@param array $summary
+- string|resource $file
+- array $summary
+- array $options
 
-@param array $options
+## Return value
 
-@return bool
+bool

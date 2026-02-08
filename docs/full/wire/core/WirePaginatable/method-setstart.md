@@ -1,9 +1,13 @@
-# WirePaginatable::setStart()
+# $wirePaginatable->setStart($numStart): $this
 
 Source: `wire/core/Interfaces.php`
 
 Set the starting offset that was used for pagination.
 
-@param int $numStart;
+## Arguments
 
-@return $this
+- int $numStart;
+
+## Return value
+
+$this

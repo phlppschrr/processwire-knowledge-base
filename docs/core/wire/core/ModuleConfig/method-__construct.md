@@ -1,4 +1,4 @@
-# ModuleConfig::__construct()
+# $moduleConfig->__construct()
 
 Source: `wire/core/ModuleConfig.php`
 

@@ -1,4 +1,4 @@
-# Functions::wireTempDir()
+# $functions->wireTempDir($name, $options = array()): WireTempDir
 
 Source: `wire/core/Functions.php`
 
@@ -13,14 +13,16 @@ $path = (string) $td; // or use $td->get();
 file_put_contents($path . 'some-file.txt', 'Hello world');
 ~~~~~
 
+## Arguments
 
-@param Object|string $name Provide the object that needs the temp dir, or name your own string
+- Object|string $name Provide the object that needs the temp dir, or name your own string
+- array|int $options Options array to modify default behavior: - `maxAge` (integer): Maximum age of temp dir files in seconds (default=120) - `basePath` (string): Base path where temp dirs should be created. Omit to use default (recommended). - Note: if you specify an integer for $options, then 'maxAge' is assumed.
 
-@param array|int $options Options array to modify default behavior:
- - `maxAge` (integer): Maximum age of temp dir files in seconds (default=120)
- - `basePath` (string): Base path where temp dirs should be created. Omit to use default (recommended).
- - Note: if you specify an integer for $options, then 'maxAge' is assumed.
+## Return value
 
-@return WireTempDir If you typecast return value to a string, it is the temp dir path (with trailing slash).
+WireTempDir If you typecast return value to a string, it is the temp dir path (with trailing slash).
 
-@see WireFileTools::tempDir(), WireTempDir
+## See also
+
+- [WireFileTools::tempDir()](../WireFileTools/method-tempdir.md)
+- WireTempDir

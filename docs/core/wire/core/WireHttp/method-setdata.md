@@ -1,10 +1,13 @@
-# WireHttp::setData()
+# $wireHttp->setData($data): $this
 
 Source: `wire/core/WireHttp.php`
 
 Set an array of data, or string of raw data to send with next GET/POST/etc. request (overwriting the existing data or rawData)
 
+## Arguments
 
-@param array|string $data Associative array of data or string of raw data
+- array|string $data Associative array of data or string of raw data
 
-@return $this
+## Return value
+
+$this

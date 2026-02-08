@@ -1,9 +1,13 @@
-# WireLog::path()
+# $wireLog->path(): string
 
 Source: `wire/core/WireLog.php`
 
 Return disk path to log files
 
-@return string
+## Return value
 
-@since 3.0.214
+string
+
+## Meta
+
+- @since 3.0.214

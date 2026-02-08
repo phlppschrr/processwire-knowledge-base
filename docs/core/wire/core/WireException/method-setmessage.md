@@ -1,4 +1,4 @@
-# WireException::setMessage()
+# $wireException->setMessage($message)
 
 Source: `wire/core/Exceptions.php`
 
@@ -6,6 +6,10 @@ Replace previously set message
 
 Public since 3.0.248
 
-@param string $message
+## Arguments
 
-@since 3.0.150
+- string $message
+
+## Meta
+
+- @since 3.0.150

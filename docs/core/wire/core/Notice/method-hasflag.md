@@ -1,11 +1,17 @@
-# Notice::hasFlag()
+# $notice->hasFlag($flag): bool
 
 Source: `wire/core/Notice.php`
 
 Does this Notice have given flag?
 
-@param int|string $flag
+## Arguments
 
-@return bool
+- int|string $flag
 
-@since 3.0.149
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.149

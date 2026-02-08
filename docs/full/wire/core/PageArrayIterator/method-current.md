@@ -1,7 +1,9 @@
-# PageArrayIterator::current()
+# $pageArrayIterator->current(): Page
 
 Source: `wire/core/PageArrayIterator.php`
 
 Get current Page
 
-@return Page
+## Return value
+
+Page

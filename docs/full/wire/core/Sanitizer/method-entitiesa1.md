@@ -1,18 +1,24 @@
-# Sanitizer::entitiesA1()
+# $sanitizer->entitiesA1($value, $flags = ENT_QUOTES, $encoding = 'UTF-8'): array|string|int|float|bool
 
 Source: `wire/core/Sanitizer.php`
 
 Same as entitiesA() but does not double encode
 
+## Arguments
 
-@param array|string|int|float|object|bool $value
+- array|string|int|float|object|bool $value
+- int $flags
+- string $encoding
 
-@param int $flags
+## Return value
 
-@param string $encoding
+array|string|int|float|bool
 
-@return array|string|int|float|bool
+## See also
 
-@since 3.0.194
+- [Sanitizer::entitiesA()](method-entitiesa.md)
+- [Sanitizer::entities1()](method-entities1.md)
 
-@see Sanitizer::entitiesA(), Sanitizer::entities1()
+## Meta
+
+- @since 3.0.194

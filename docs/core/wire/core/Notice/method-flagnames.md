@@ -1,13 +1,18 @@
-# Notice::flagNames()
+# $notice->flagNames($flags = null, $getString = false): array|string
 
 Source: `wire/core/Notice.php`
 
 Get string of names for given flags integer
 
-@param null|int $flags Specify flags integer or omit to return all flag names (default=null)
+## Arguments
 
-@param bool $getString Get a space separated string rather than an array (default=false)
+- null|int $flags Specify flags integer or omit to return all flag names (default=null)
+- bool $getString Get a space separated string rather than an array (default=false)
 
-@return array|string
+## Return value
 
-@since 3.0.149
+array|string
+
+## Meta
+
+- @since 3.0.149

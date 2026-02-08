@@ -1,9 +1,13 @@
-# PagesPathFinder::isHomePath()
+# $pagesPathFinder->isHomePath($path): bool
 
 Source: `wire/core/PagesPathFinder.php`
 
 Does given path refer to homepage?
 
-@param string $path
+## Arguments
 
-@return bool
+- string $path
+
+## Return value
+
+bool

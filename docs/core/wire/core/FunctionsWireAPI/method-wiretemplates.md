@@ -1,9 +1,13 @@
-# FunctionsWireAPI::wireTemplates()
+# $functionsWireAPI->wireTemplates($name = ''): Templates|Template|null
 
 Source: `wire/core/FunctionsWireAPI.php`
 
 Access the $templates API variable as a function
 
-@param string $name Optional template to retrieve
+## Arguments
 
-@return Templates|Template|null
+- string $name Optional template to retrieve
+
+## Return value
+
+Templates|Template|null

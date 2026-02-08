@@ -1,11 +1,14 @@
-# CommentArray::isIdentical()
+# $commentArray->isIdentical(WireArray $items, $strict = true): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Is the given CommentArray identical to this one?
 
-@param WireArray $items
+## Arguments
 
-@param bool|int $strict
+- WireArray $items
+- bool|int $strict
 
-@return bool
+## Return value
+
+bool

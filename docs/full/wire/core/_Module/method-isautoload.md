@@ -1,5 +1,8 @@
-# _Module::isAutoload()
+# $module->isAutoload(): bool
 
 Source: `wire/core/Module.php`
 
-@return bool
+
+## Return value
+
+bool

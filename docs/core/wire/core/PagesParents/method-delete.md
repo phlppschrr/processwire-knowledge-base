@@ -1,11 +1,17 @@
-# PagesParents::delete()
+# $pagesParents->delete($page): int
 
 Source: `wire/core/PagesParents.php`
 
 Delete page entirely from pages_parents table (both as page and parent)
 
-@param Page|int $page
+## Arguments
 
-@return int
+- Page|int $page
 
-@since 3.0.156
+## Return value
+
+int
+
+## Meta
+
+- @since 3.0.156

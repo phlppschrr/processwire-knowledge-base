@@ -1,4 +1,4 @@
-# WireHooks::addHooks()
+# $wireHooks->addHooks(Wire $object, $methods, $toObject, $toMethod = null, $options = array()): string
 
 Source: `wire/core/WireHooks.php`
 
@@ -7,18 +7,22 @@ Add a hooks to multiple methods at once
 This is the same as addHook() except that the $method argument is an array or CSV string of hook definitions.
 See the addHook() method for more detailed info on arguments.
 
-@param Wire $object
+## Arguments
 
-@param array|string $methods Array of one or more strings hook definitions, or CSV string of hook definitions
+- Wire $object
+- array|string $methods Array of one or more strings hook definitions, or CSV string of hook definitions
+- object|null|callable $toObject
+- string|array|null $toMethod
+- array $options
 
-@param object|null|callable $toObject
+## Return value
 
-@param string|array|null $toMethod
+string CSV string of hook IDs that were added
 
-@param array $options
+## Throws
 
-@return string CSV string of hook IDs that were added
+- WireException
 
-@throws WireException
+## Meta
 
-@since 3.0.137
+- @since 3.0.137

@@ -1,4 +1,4 @@
-# Comment::getMeta()
+# $comment->getMeta($key = null): string|array|int|float|mixed|null
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
@@ -8,8 +8,14 @@ Note: values returned are exactly as they were set and do not go through any run
 formatting for HTML entities or anything like that. Be sure to provide your own formatting
 where necessary.
 
-@param null|string $key Name of property to get
+## Arguments
 
-@return string|array|int|float|mixed|null Returns value or null if not found
+- null|string $key Name of property to get
 
-@since 3.0.203
+## Return value
+
+string|array|int|float|mixed|null Returns value or null if not found
+
+## Meta
+
+- @since 3.0.203

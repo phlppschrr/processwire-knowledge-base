@@ -1,7 +1,9 @@
-# TemplateFile::fileFinished()
+# $templateFile->fileFinished()
 
 Source: `wire/core/TemplateFile.php`
 
 Clean up after include specific file
 
-@since 3.0.154
+## Meta
+
+- @since 3.0.154

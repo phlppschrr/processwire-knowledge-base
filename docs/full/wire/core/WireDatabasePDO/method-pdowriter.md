@@ -1,9 +1,13 @@
-# WireDatabasePDO::pdoWriter()
+# $wireDatabasePDO->pdoWriter(): \PDO
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Return read-write (primary) PDO connection
 
-@return \PDO
+## Return value
 
-@since 3.0.175
+\PDO
+
+## Meta
+
+- @since 3.0.175

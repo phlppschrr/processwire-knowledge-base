@@ -1,4 +1,4 @@
-# Config::js()
+# $config->js($key = null, $value = null): array|mixed|null|$this
 
 Source: `wire/core/Config.php`
 
@@ -39,9 +39,11 @@ console.log(mySettings.foo);
 console.log(mySettings.bar);
 ~~~~~
 
+## Arguments
 
-@param string|array $key Property or array of properties
+- string|array $key Property or array of properties
+- mixed $value
 
-@param mixed $value
+## Return value
 
-@return array|mixed|null|$this
+array|mixed|null|$this

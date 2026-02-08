@@ -1,9 +1,13 @@
-# Fieldgroups::___getExportData()
+# $fieldgroups->___getExportData(Fieldgroup $fieldgroup): array
 
 Source: `wire/core/Fieldgroups.php`
 
 Export config data for the given fieldgroup
 
-@param Fieldgroup $fieldgroup
+## Arguments
 
-@return array
+- Fieldgroup $fieldgroup
+
+## Return value
+
+array

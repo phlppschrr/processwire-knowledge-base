@@ -1,11 +1,14 @@
-# CommentListCustom::renderList()
+# $commentListCustom->renderList($parent_id = 0, $depth = 0): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
 Render comment list
 
-@param int $parent_id
+## Arguments
 
-@param int $depth
+- int $parent_id
+- int $depth
 
-@return string
+## Return value
+
+string

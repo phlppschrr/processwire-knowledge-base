@@ -1,4 +1,4 @@
-# Pages::findMany()
+# $pages->findMany($selector, $options = array()): PageArray
 
 Source: `wire/core/Pages.php`
 
@@ -26,13 +26,20 @@ foreach($items as $item) {
 echo "Total cost is: $totalCost";
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector Selector to find pages
+- string|array|Selectors $selector Selector to find pages
+- array $options Options to modify behavior. See `Pages::find()` $options argument for details.
 
-@param array $options Options to modify behavior. See `Pages::find()` $options argument for details.
+## Return value
 
-@return PageArray
+PageArray
 
-@since 3.0.19
+## See also
 
-@see Pages::find(), Pages::findOne()
+- [Pages::find()](method-___find.md)
+- [Pages::findOne()](method-findone.md)
+
+## Meta
+
+- @since 3.0.19

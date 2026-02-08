@@ -1,11 +1,14 @@
-# CommentForm::setAttr()
+# $commentForm->setAttr($attr, $value)
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Set attribute
 
-@param string $attr
+## Arguments
 
-@param string $value
+- string $attr
+- string $value
 
-@deprecated Use attrs() method instead
+## Meta
+
+- @deprecated Use attrs() method instead

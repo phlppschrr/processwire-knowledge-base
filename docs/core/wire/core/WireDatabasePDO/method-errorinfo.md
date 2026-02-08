@@ -1,10 +1,13 @@
-# WireDatabasePDO::errorInfo()
+# $wireDatabasePDO->errorInfo(): array
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Fetch extended error information associated with the last operation on the database handle
 
+## Return value
 
-@return array
+array
 
-@link http://php.net/manual/en/pdo.errorinfo.php
+## Meta
+
+- @link http://php.net/manual/en/pdo.errorinfo.php

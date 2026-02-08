@@ -1,7 +1,9 @@
-# ImageSizerEngineGD::validSourceImageFormats()
+# $imageSizerEngineGD->validSourceImageFormats(): array
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Get formats GD and resize
 
-@return array
+## Return value
+
+array

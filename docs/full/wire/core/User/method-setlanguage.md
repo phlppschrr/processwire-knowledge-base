@@ -1,4 +1,4 @@
-# User::setLanguage()
+# $user->setLanguage($language): self
 
 Source: `wire/core/User.php`
 
@@ -7,11 +7,18 @@ Set language for user (quietly)
 - Sets the language without tracking it as a change to the user.
 - If language support is not installed this method silently does nothing.
 
+## Arguments
 
-@param Language|string|int $language Language object, name, or ID
+- Language|string|int $language Language object, name, or ID
 
-@return self
+## Return value
 
-@throws WireException if language support is installed and given an invalid/unknown language
+self
 
-@since 3.0.186
+## Throws
+
+- WireException if language support is installed and given an invalid/unknown language
+
+## Meta
+
+- @since 3.0.186

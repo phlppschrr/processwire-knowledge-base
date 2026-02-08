@@ -1,4 +1,4 @@
-# FieldgroupsArray::isValidKey()
+# $fieldgroupsArray->isValidKey($key)
 
 Source: `wire/core/FieldgroupsArray.php`
 

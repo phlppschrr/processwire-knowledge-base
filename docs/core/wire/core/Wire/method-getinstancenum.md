@@ -1,4 +1,4 @@
-# Wire::getInstanceNum()
+# $wire->getInstanceNum($getTotal = false): int
 
 Source: `wire/core/Wire.php`
 
@@ -8,7 +8,10 @@ Get this Wire object’s instance number
 - If this instance ID has not yet been set, this will set it.
 - Note that this is different from the ProcessWire instance ID.
 
+## Arguments
 
-@param bool $getTotal Specify true to get the total quantity of Wire instances rather than this instance number.
+- bool $getTotal Specify true to get the total quantity of Wire instances rather than this instance number.
 
-@return int Instance number
+## Return value
+
+int Instance number

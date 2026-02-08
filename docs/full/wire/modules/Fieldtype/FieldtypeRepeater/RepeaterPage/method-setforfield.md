@@ -1,9 +1,13 @@
-# RepeaterPage::setForField()
+# $repeaterPage->setForField(Field $forField): $this
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 Set the field that owns this repeater item
 
-@param Field $forField
+## Arguments
 
-@return $this
+- Field $forField
+
+## Return value
+
+$this

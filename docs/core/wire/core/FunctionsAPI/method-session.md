@@ -1,4 +1,4 @@
-# FunctionsAPI::session()
+# $functionsAPI->session($key = '', $value = null): Session|null|string|array|int|float
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -19,11 +19,15 @@ session()->set('foo', 'bar');  // regular syntax
 session('foo', 'bar'); // shortcut syntax
 ~~~~~
 
+## Arguments
 
-@param string $key Optional property to get or set
+- string $key Optional property to get or set
+- null $value Optional value to set
 
-@param null $value Optional value to set
+## Return value
 
-@return Session|null|string|array|int|float
+Session|null|string|array|int|float
 
-@see Session
+## See also
+
+- Session

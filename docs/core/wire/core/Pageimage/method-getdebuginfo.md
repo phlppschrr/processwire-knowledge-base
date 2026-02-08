@@ -1,4 +1,4 @@
-# Pageimage::getDebugInfo()
+# $pageimage->getDebugInfo($options = array(), $returnType = 'string'): array|object|string
 
 Source: `wire/core/Pageimage.php`
 
@@ -6,10 +6,15 @@ Verbose debug info (via @horst)
 
 Optionally with individual options array.
 
-@param array $options The individual options you also passes with your image variation creation
+## Arguments
 
-@param string $returnType 'string'|'array'|'object', default is 'string' and returns markup or plain text
+- array $options The individual options you also passes with your image variation creation
+- string $returnType 'string'|'array'|'object', default is 'string' and returns markup or plain text
 
-@return array|object|string
+## Return value
 
-@since 3.0.132
+array|object|string
+
+## Meta
+
+- @since 3.0.132

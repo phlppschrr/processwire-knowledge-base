@@ -1,9 +1,13 @@
-# AdminThemeUikitLessInterface::setOption()
+# $adminThemeUikitLessInterface->setOption($name, $value): self
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
-@param string $name
 
-@param mixed $value
+## Arguments
 
-@return self
+- string $name
+- mixed $value
+
+## Return value
+
+self

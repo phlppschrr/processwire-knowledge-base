@@ -1,4 +1,4 @@
-# WireInputData::find()
+# $wireInputData->find($pattern, array $options = array()): array
 
 Source: `wire/core/WireInputData.php`
 
@@ -23,14 +23,15 @@ $values = [
 ];
 ~~~~~
 
-@param string $pattern Wildcard string or PCRE regular expression
+## Arguments
 
-@param array $options
- - `type` (string): Specify "value" to match input value (rather input name), OR prefix pattern with "value=".
- - `limit` (int): Maximum number of items to return (default=0, no limit)
- - `sanitizer` (string): Name of sanitizer to run values through (default='', none)
- - `arrays` (bool): Also find on input varibles that are arrays? (default=false)
+- string $pattern Wildcard string or PCRE regular expression
+- array $options - `type` (string): Specify "value" to match input value (rather input name), OR prefix pattern with "value=". - `limit` (int): Maximum number of items to return (default=0, no limit) - `sanitizer` (string): Name of sanitizer to run values through (default='', none) - `arrays` (bool): Also find on input varibles that are arrays? (default=false)
 
-@return array Returns associative array of values `[ name => value ]` if found, or empty array if none found.
+## Return value
 
-@since 3.0.163
+array Returns associative array of values `[ name => value ]` if found, or empty array if none found.
+
+## Meta
+
+- @since 3.0.163

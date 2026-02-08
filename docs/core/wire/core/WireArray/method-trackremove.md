@@ -1,9 +1,10 @@
-# WireArray::trackRemove()
+# $wireArray->trackRemove($item, $key)
 
 Source: `wire/core/WireArray.php`
 
 Track an item removed
 
-@param Wire|mixed $item
+## Arguments
 
-@param int|string $key
+- Wire|mixed $item
+- int|string $key

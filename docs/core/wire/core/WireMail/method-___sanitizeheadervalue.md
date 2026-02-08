@@ -1,11 +1,17 @@
-# WireMail::___sanitizeHeaderValue()
+# $wireMail->___sanitizeHeaderValue($value): string
 
 Source: `wire/core/WireMail.php`
 
 Sanitize an email header header value
 
-@param string $value
+## Arguments
 
-@return string
+- string $value
 
-@since 3.0.132
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.132

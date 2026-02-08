@@ -1,12 +1,11 @@
-# Fields::___changedType()
+# $fields->___changedType(Saveable $item, Fieldtype $fromType, Fieldtype $toType)
 
 Source: `wire/core/Fields.php`
 
 Hook called when a field has changed type
 
+## Arguments
 
-@param Field $item
-
-@param Fieldtype $fromType
-
-@param Fieldtype $toType
+- Field $item
+- Fieldtype $fromType
+- Fieldtype $toType

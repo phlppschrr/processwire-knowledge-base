@@ -1,10 +1,13 @@
-# Session::removeAllFor()
+# $session->removeAllFor($ns): $this
 
 Source: `wire/core/Session.php`
 
 Remove all session variables in given namespace
 
+## Arguments
 
-@param string|object $ns
+- string|object $ns
 
-@return $this
+## Return value
+
+$this

@@ -1,9 +1,13 @@
-# WireHooks::getPathHookRedirect()
+# $wireHooks->getPathHookRedirect(): string
 
 Source: `wire/core/WireHooks.php`
 
 Return redirect URL required by an applicable path hook, or blank otherwise
 
-@return string
+## Return value
 
-@since 3.0.173
+string
+
+## Meta
+
+- @since 3.0.173

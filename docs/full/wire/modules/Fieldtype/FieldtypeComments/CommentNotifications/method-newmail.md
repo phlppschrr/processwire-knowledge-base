@@ -1,5 +1,8 @@
-# CommentNotifications::newMail()
+# $commentNotifications->newMail(): WireMail
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
-@return WireMail
+
+## Return value
+
+WireMail

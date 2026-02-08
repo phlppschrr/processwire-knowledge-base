@@ -1,9 +1,13 @@
-# ProcessPageListerBookmarks::executeEditBookmark()
+# $processPageListerBookmarks->executeEditBookmark(): string
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
 Implementation for editing a bookmark, URL segment: ./edit-bookmark/?n=bookmarkID
 
-@return string
+## Return value
 
-@throws WirePermissionException
+string
+
+## Throws
+
+- WirePermissionException

@@ -1,4 +1,4 @@
-# ModulesInfo::updateModuleVersionsCache()
+# $modulesInfo->updateModuleVersionsCache()
 
 Source: `wire/core/ModulesInfo.php`
 

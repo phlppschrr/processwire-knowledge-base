@@ -1,9 +1,10 @@
-# PageArray::trackRemove()
+# $pageArray->trackRemove($item, $key)
 
 Source: `wire/core/PageArray.php`
 
 Track an item removed
 
-@param Wire|mixed $item
+## Arguments
 
-@param int|string $key
+- Wire|mixed $item
+- int|string $key

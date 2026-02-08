@@ -1,14 +1,18 @@
-# WireDatabasePDO::query()
+# $wireDatabasePDO->query($statement, $note = ''): \PDOStatement
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Executes an SQL statement, returning a result set as a PDOStatement object
 
+## Arguments
 
-@param string $statement
+- string $statement
+- string $note
 
-@param string $note
+## Return value
 
-@return \PDOStatement
+\PDOStatement
 
-@link http://php.net/manual/en/pdo.query.php
+## Meta
+
+- @link http://php.net/manual/en/pdo.query.php

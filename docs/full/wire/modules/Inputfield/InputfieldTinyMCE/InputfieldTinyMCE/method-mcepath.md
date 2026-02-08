@@ -1,9 +1,13 @@
-# InputfieldTinyMCE::mcePath()
+# $inputfieldTinyMCE->mcePath($getUrl = false): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Return path or URL to TinyMCE files
 
-@param bool $getUrl
+## Arguments
 
-@return string
+- bool $getUrl
+
+## Return value
+
+string

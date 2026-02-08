@@ -1,11 +1,11 @@
-# PagesType::__construct()
+# $pagesType->__construct(ProcessWire $wire, $templates = array(), $parents = array())
 
 Source: `wire/core/PagesType.php`
 
 Construct this PagesType manager for the given parent and template
 
-@param ProcessWire $wire
+## Arguments
 
-@param Template|int|string|array $templates Template object or array of template objects, names or IDs
-
-@param int|Page|array $parents Parent ID or array of parent IDs (may also be Page or array of Page objects)
+- ProcessWire $wire
+- Template|int|string|array $templates Template object or array of template objects, names or IDs
+- int|Page|array $parents Parent ID or array of parent IDs (may also be Page or array of Page objects)

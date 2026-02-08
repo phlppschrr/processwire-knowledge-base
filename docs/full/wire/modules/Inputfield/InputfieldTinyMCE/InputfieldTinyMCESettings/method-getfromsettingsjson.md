@@ -1,7 +1,9 @@
-# InputfieldTinyMCESettings::getFromSettingsJSON()
+# $inputfieldTinyMCESettings->getFromSettingsJSON(): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Get settings from custom JSON
 
-@return array
+## Return value
+
+array

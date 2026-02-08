@@ -1,4 +1,4 @@
-# InputfieldPageTableAjax::__construct()
+# $inputfieldPageTableAjax->__construct()
 
 Source: `wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax.php`
 

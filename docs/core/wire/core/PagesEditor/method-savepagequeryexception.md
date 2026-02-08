@@ -1,4 +1,4 @@
-# PagesEditor::savePageQueryException()
+# $pagesEditor->savePageQueryException(Page $page, $query, $exception, array $options): bool
 
 Source: `wire/core/PagesEditor.php`
 
@@ -12,12 +12,13 @@ that trigger duplicate-entry exceptions.
 Example of actual exception text, for reference:
 Integrity constraint violation: 1062 Duplicate entry 'background-3552' for key 'name3894_parent_id'
 
-@param Page $page
+## Arguments
 
-@param \PDOStatement $query
+- Page $page
+- \PDOStatement $query
+- \PDOException|\Exception $exception
+- array $options
 
-@param \PDOException|\Exception $exception
+## Return value
 
-@param array $options
-
-@return bool True if it should give $query another shot, false if not
+bool True if it should give $query another shot, false if not

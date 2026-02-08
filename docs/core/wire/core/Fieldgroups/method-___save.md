@@ -1,4 +1,4 @@
-# Fieldgroups::___save()
+# $fieldgroups->___save(Saveable $item): bool
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -6,8 +6,14 @@ Save the Fieldgroup to DB
 
 If fields were removed from the Fieldgroup, then track them down and remove them from the associated field_* tables
 
-@param Saveable $item Fieldgroup to save
+## Arguments
 
-@return bool True on success, false on failure
+- Saveable $item Fieldgroup to save
 
-@throws WireException
+## Return value
+
+bool True on success, false on failure
+
+## Throws
+
+- WireException

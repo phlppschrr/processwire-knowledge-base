@@ -1,11 +1,14 @@
-# DatabaseQuerySelectFulltext::words()
+# $databaseQuerySelectFulltext->words($value, array $options = array()): array
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Get array of words from given value
 
-@param string $value
+## Arguments
 
-@param array $options
+- string $value
+- array $options
 
-@return array
+## Return value
+
+array

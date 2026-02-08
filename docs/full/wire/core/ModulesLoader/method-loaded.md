@@ -1,4 +1,4 @@
-# ModulesLoader::loaded()
+# $modulesLoader->loaded()
 
 Source: `wire/core/ModulesLoader.php`
 

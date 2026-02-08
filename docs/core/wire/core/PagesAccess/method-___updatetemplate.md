@@ -1,4 +1,4 @@
-# PagesAccess::___updateTemplate()
+# $pagesAccess->___updateTemplate(Template $template)
 
 Source: `wire/core/PagesAccess.php`
 
@@ -6,4 +6,6 @@ Update the pages_access table for the given Template
 
 To be called when a `$template->useRoles` property has changed.
 
-@param Template $template
+## Arguments
+
+- Template $template

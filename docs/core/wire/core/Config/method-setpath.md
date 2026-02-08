@@ -1,4 +1,4 @@
-# Config::setPath()
+# $config->setPath($for, $path): self
 
 Source: `wire/core/Config.php`
 
@@ -12,13 +12,19 @@ Change or set just the server disk path for the named location (leaving URL as-i
 - The `$for` argument can be: `cache`, `logs`, `files`, `tmp`, `templates`, or one of your own. Other named locations may
   also work, but since they can potentially be used before PW’s “ready” state, they may not be reliable.
 
+## Arguments
 
-@param string $for Named location from `$config->paths`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- string $for Named location from `$config->paths`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- string $path Path relative to PW installation root (no leading slash), or absolute path if not.
 
-@param string $path Path relative to PW installation root (no leading slash), or absolute path if not.
+## Return value
 
-@return self
+self
 
-@throws WireException
+## Throws
 
-@since 3.0.141
+- WireException
+
+## Meta
+
+- @since 3.0.141

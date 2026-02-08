@@ -1,9 +1,13 @@
-# ImageSizerEngine::setWebpOnly()
+# $imageSizerEngine->setWebpOnly($value): self
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Set flag to only create a webp file
 
-@param bool value$
+## Arguments
 
-@return self
+- bool value$
+
+## Return value
+
+self

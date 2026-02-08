@@ -1,4 +1,4 @@
-# Page::___rootParent()
+# $page->___rootParent(): Page
 
 Source: `wire/core/Page.php`
 
@@ -16,5 +16,6 @@ if($page->rootParent()->template == 'products') {
 }
 ~~~~~
 
+## Return value
 
-@return Page
+Page

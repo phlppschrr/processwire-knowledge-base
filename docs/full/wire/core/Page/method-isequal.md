@@ -1,13 +1,15 @@
-# Page::isEqual()
+# $page->isEqual($key, $value1, $value2): bool
 
 Source: `wire/core/Page.php`
 
 Is $value1 equal to $value2?
 
-@param string $key Name of the key that triggered the check (see WireData::set)
+## Arguments
 
-@param mixed $value1
+- string $key Name of the key that triggered the check (see WireData::set)
+- mixed $value1
+- mixed $value2
 
-@param mixed $value2
+## Return value
 
-@return bool
+bool

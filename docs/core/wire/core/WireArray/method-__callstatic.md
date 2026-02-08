@@ -1,13 +1,18 @@
-# WireArray::__callStatic()
+# WireArray::__callStatic($name, $arguments): WireArray
 
 Source: `wire/core/WireArray.php`
 
 Static method caller, primarily for support of WireArray::new() method
 
-@param string $name
+## Arguments
 
-@param array $arguments
+- string $name
+- array $arguments
 
-@return WireArray
+## Return value
 
-@throws WireException
+WireArray
+
+## Throws
+
+- WireException

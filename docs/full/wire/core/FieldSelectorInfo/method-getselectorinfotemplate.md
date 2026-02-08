@@ -1,7 +1,9 @@
-# FieldSelectorInfo::getSelectorInfoTemplate()
+# $fieldSelectorInfo->getSelectorInfoTemplate(): array
 
 Source: `wire/core/FieldSelectorInfo.php`
 
 Return the default selector info template array
 
-@return array
+## Return value
+
+array

@@ -1,4 +1,4 @@
-# ImageInspector::loadImageInfoJpg()
+# $imageInspector->loadImageInfoJpg()
 
 Source: `wire/core/ImageInspector.php`
 

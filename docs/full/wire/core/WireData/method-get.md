@@ -1,4 +1,4 @@
-# WireData::get()
+# $wireData->get($key): mixed|null
 
 Source: `wire/core/WireData.php`
 
@@ -19,9 +19,14 @@ $value = $item->get("property1|property2|property2");
 $value = $item["some_property"];
 ~~~~~
 
+## Arguments
 
-@param string|object $key Name of property you want to retrieve.
+- string|object $key Name of property you want to retrieve.
 
-@return mixed|null Returns value of requested property, or null if the property was not found.
+## Return value
 
-@see WireData::set()
+mixed|null Returns value of requested property, or null if the property was not found.
+
+## See also
+
+- [WireData::set()](method-set.md)

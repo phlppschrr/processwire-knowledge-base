@@ -1,9 +1,13 @@
-# InputfieldTinyMCEConfigs::getConfigInputfields()
+# $inputfieldTinyMCEConfigs->getConfigInputfields(InputfieldWrapper $inputfields): InputfieldFieldset
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
 Get field configuration
 
-@param InputfieldWrapper $inputfields
+## Arguments
 
-@return InputfieldFieldset
+- InputfieldWrapper $inputfields
+
+## Return value
+
+InputfieldFieldset

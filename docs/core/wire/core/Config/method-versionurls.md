@@ -1,4 +1,4 @@
-# Config::versionUrls()
+# $config->versionUrls($urls, $useVersion = null): array
 
 Source: `wire/core/Config.php`
 
@@ -26,17 +26,15 @@ foreach($config->styles->urls() as $url) {
 }
 ~~~~~
 
+## Arguments
 
-@param array|FilenameArray|WireArray|\ArrayObject $urls Array of URLs to file assets such as JS/CSS files.
+- array|FilenameArray|WireArray|\ArrayObject $urls Array of URLs to file assets such as JS/CSS files.
+- bool|null|string $useVersion What to use for the version string (`null` is default): - `true` (bool): Get version from filemtime. - `false` (bool): Never get file version, just use $config->version. - `null` (null): Auto-detect: use file version in debug mode or dev branch only, $config->version otherwise. - `foobar` (string): Specify any string to be the version to use on all URLs needing it. `- ?foo=bar` (string): Optionally specify your own query string variable=value. - The default value (null) can be overridden by the `$config->useVersionUrls` setting.
 
-@param bool|null|string $useVersion What to use for the version string (`null` is default):
- - `true` (bool): Get version from filemtime.
- - `false` (bool): Never get file version, just use $config->version.
- - `null` (null): Auto-detect: use file version in debug mode or dev branch only, $config->version otherwise.
- - `foobar` (string): Specify any string to be the version to use on all URLs needing it.
-`- ?foo=bar` (string): Optionally specify your own query string variable=value.
- - The default value (null) can be overridden by the `$config->useVersionUrls` setting.
+## Return value
 
-@return array Array of URLs updated with version strings where needed
+array Array of URLs updated with version strings where needed
 
-@since 3.0.227
+## Meta
+
+- @since 3.0.227

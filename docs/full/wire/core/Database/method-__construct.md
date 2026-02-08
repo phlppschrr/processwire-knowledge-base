@@ -1,4 +1,4 @@
-# Database::__construct()
+# $database->__construct($host = 'localhost', $user = null, $pass = null, $db = null, $port = null, $socket = null)
 
 Source: `wire/core/Database.php`
 
@@ -10,16 +10,15 @@ $o->dbUser, $o->dbPass, $o->dbHost, $o->dbName, $config->dbPort, $config->dbSock
 This would usually be from a ProcessWire Config ($config) API var, but kept as generic object
 in case someone wants to use this class elsewhere.
 
-@param string|Config $host Hostname or object with config properties.
+## Arguments
 
-@param string $user Username
+- string|Config $host Hostname or object with config properties.
+- string $user Username
+- string $pass Password
+- string $db Database name
+- int $port Port
+- string $socket Socket
 
-@param string $pass Password
+## Throws
 
-@param string $db Database name
-
-@param int $port Port
-
-@param string $socket Socket
-
-@throws WireDatabaseException
+- WireDatabaseException

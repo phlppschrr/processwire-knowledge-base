@@ -1,11 +1,14 @@
-# Notice::set()
+# $notice->set($key, $value): $this|WireData
 
 Source: `wire/core/Notice.php`
 
 Set property
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return $this|WireData
+## Return value
+
+$this|WireData

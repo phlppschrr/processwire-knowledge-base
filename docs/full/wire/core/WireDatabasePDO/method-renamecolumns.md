@@ -1,16 +1,22 @@
-# WireDatabasePDO::renameColumns()
+# $wireDatabasePDO->renameColumns($table, array $columns): int
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Rename table columns without changing type
 
+## Arguments
 
-@param string $table
+- string $table
+- array $columns Associative array with one or more of `[ 'old_name' => 'new_name' ]`
 
-@param array $columns Associative array with one or more of `[ 'old_name' => 'new_name' ]`
+## Return value
 
-@return int Number of columns renamed
+int Number of columns renamed
 
-@since 3.0.185
+## Throws
 
-@throws \PDOException
+- \PDOException
+
+## Meta
+
+- @since 3.0.185

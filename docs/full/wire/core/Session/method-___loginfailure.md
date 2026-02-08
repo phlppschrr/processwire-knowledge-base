@@ -1,10 +1,10 @@
-# Session::___loginFailure()
+# $session->___loginFailure($name, $reason)
 
 Source: `wire/core/Session.php`
 
 Login failure method for hooks
 
+## Arguments
 
-@param string $name Attempted login name
-
-@param string $reason Reason for login failure
+- string $name Attempted login name
+- string $reason Reason for login failure

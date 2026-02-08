@@ -1,4 +1,4 @@
-# FileCompiler::wired()
+# $fileCompiler->wired()
 
 Source: `wire/core/FileCompiler.php`
 

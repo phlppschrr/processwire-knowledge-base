@@ -1,10 +1,13 @@
-# WireDatabasePDO::rollBack()
+# $wireDatabasePDO->rollBack(): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Rolls back a transaction
 
+## Return value
 
-@return bool
+bool
 
-@link http://php.net/manual/en/pdo.rollback.php
+## Meta
+
+- @link http://php.net/manual/en/pdo.rollback.php

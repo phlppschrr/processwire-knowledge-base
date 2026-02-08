@@ -1,4 +1,4 @@
-# WireFileTools::getCSV()
+# $wireFileTools->getCSV($filename, array $options = array()): array|false
 
 Source: `wire/core/WireFileTools.php`
 
@@ -32,29 +32,20 @@ while($row = $files->getCSV('/path/to/foods.csv')) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $filename CSV filename to read from
+- string $filename CSV filename to read from
+- array $options - `header` (bool|array): Indicate whether CSV has header and how it should be used (default=true): True to treat first line as header and return rows as associative arrays indexed by the header values. False to indicate there is no header and/or to indicate it should return regular non-associative PHP arrays for rows. Array to use it as the header and return rows as associative arrays indexed by your values. - `length` (int): Optional. When specified, must be greater than the longest line (in characters) to be found in the CSV file (allowing for trailing line-end characters). Otherwise the line is split in chunks of length characters, unless the split would occur inside an enclosure. Omitting this parameter (or setting it to 0, or null in PHP 8.0.0 or later) the maximum line length is not limited, which is slightly slower. (default=0) - `separator` (string): The field separator/delimiter, one single-byte character only. (default=',') - `enclosure` (string): The field enclosure character, one single-byte character only. (default='"') - `escape` (string): The escape character, at most one single-byte character. An empty string ("") disables the proprietary escape mechanism. (default="\\") - `blanks` (bool): Allow blank rows? (default=false) - `convert` (bool): Convert digit-only strings to integers? (default=false)
 
-@param array $options
- - `header` (bool|array): Indicate whether CSV has header and how it should be used (default=true):
-    True to treat first line as header and return rows as associative arrays indexed by the header values.
-    False to indicate there is no header and/or to indicate it should return regular non-associative PHP arrays for rows.
-    Array to use it as the header and return rows as associative arrays indexed by your values.
- - `length` (int): Optional. When specified, must be greater than the longest line (in characters) to be found in the CSV file
-    (allowing for trailing line-end characters). Otherwise the line is split in chunks of length characters, unless the split
-    would occur inside an enclosure. Omitting this parameter (or setting it to 0, or null in PHP 8.0.0 or later) the maximum
-    line length is not limited, which is slightly slower. (default=0)
- - `separator` (string): The field separator/delimiter, one single-byte character only. (default=',')
- - `enclosure` (string): The field enclosure character, one single-byte character only. (default='"')
- - `escape` (string): The escape character, at most one single-byte character. An empty string ("") disables the proprietary
-    escape mechanism. (default="\\")
- - `blanks` (bool): Allow blank rows? (default=false)
- - `convert` (bool): Convert digit-only strings to integers? (default=false)
+## Return value
 
-@return array|false Returns array for next row or boolean false when there are no more rows.
+array|false Returns array for next row or boolean false when there are no more rows.
 
-@see https://www.php.net/manual/en/function.fgetcsv.php
+## See also
 
-@see getAllCSV()
+- [https://www.php.net/manual/en/function.fgetcsv.php](https://www.php.net/manual/en/function.fgetcsv.php)
+- getAllCSV()
 
-@since 3.0.197
+## Meta
+
+- @since 3.0.197

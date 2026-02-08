@@ -1,7 +1,9 @@
-# AdminThemeRenoHelpers::renderTopNav()
+# $adminThemeRenoHelpers->renderTopNav(): string
 
 Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
 Render top navigation items
 
-@return string
+## Return value
+
+string

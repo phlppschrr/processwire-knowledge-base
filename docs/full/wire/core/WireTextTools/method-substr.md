@@ -1,16 +1,19 @@
-# WireTextTools::substr()
+# $wireTextTools->substr($str, $start, $length = null): string
 
 Source: `wire/core/WireTextTools.php`
 
 Get part of a string
 
+## Arguments
 
-@param string $str
+- string $str
+- int $start
+- int|null $length Max chars to use from str. If omitted or NULL, extract all characters to the end of the string.
 
-@param int $start
+## Return value
 
-@param int|null $length Max chars to use from str. If omitted or NULL, extract all characters to the end of the string.
+string
 
-@return string
+## See also
 
-@see https://www.php.net/manual/en/function.substr.php
+- [https://www.php.net/manual/en/function.substr.php](https://www.php.net/manual/en/function.substr.php)

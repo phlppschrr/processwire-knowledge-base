@@ -1,4 +1,4 @@
-# Wire::__call()
+# $wire->__call($method, $arguments): mixed
 
 Source: `wire/core/Wire.php`
 
@@ -14,10 +14,15 @@ Hooks can also be added for methods that don't actually exist in the class, allo
 
 See the Wire::runHooks() method for the full implementation of hook calls.
 
-@param string $method
+## Arguments
 
-@param array $arguments
+- string $method
+- array $arguments
 
-@return mixed
+## Return value
 
-@throws WireException
+mixed
+
+## Throws
+
+- WireException

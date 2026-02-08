@@ -1,11 +1,14 @@
-# MarkupFieldtype::arrayToString()
+# $markupFieldtype->arrayToString($value, $encode = true): string
 
 Source: `wire/core/MarkupFieldtype.php`
 
 Render an unknown array or WireArray to a string
 
-@param array|WireArray $value
+## Arguments
 
-@param bool $encode
+- array|WireArray $value
+- bool $encode
 
-@return string
+## Return value
+
+string

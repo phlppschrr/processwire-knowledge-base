@@ -1,5 +1,8 @@
-# Page::access()
+# $page->access(): PageAccess
 
 Source: `wire/core/Page.php`
 
-@return PageAccess
+
+## Return value
+
+PageAccess

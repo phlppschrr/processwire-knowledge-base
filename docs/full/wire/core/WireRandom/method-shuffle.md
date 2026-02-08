@@ -1,4 +1,4 @@
-# WireRandom::shuffle()
+# $wireRandom->shuffle($value): string|array
 
 Source: `wire/core/WireRandom.php`
 
@@ -11,6 +11,10 @@ Unlike PHP’s shuffle() function, this method:
 - Returns a copy of the value rather than modifying the given value directly.
 - Is cryptographically secure if PHP7 or mcrypt available.
 
-@param string|array $value
+## Arguments
 
-@return string|array
+- string|array $value
+
+## Return value
+
+string|array

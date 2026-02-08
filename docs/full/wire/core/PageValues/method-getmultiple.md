@@ -1,4 +1,4 @@
-# PageValues::getMultiple()
+# $pageValues->getMultiple(Page $page, $keys, $assoc = false): array
 
 Source: `wire/core/PageValues.php`
 
@@ -24,10 +24,12 @@ $bar = $a['bar'];
 $a = $page->getMultiple('foo,bar');
 ~~~~~
 
-@param page $page
+## Arguments
 
-@param array|string $keys Array or CSV string of properties to get.
+- page $page
+- array|string $keys Array or CSV string of properties to get.
+- bool $assoc Get associative array indexed by given properties? (default=false)
 
-@param bool $assoc Get associative array indexed by given properties? (default=false)
+## Return value
 
-@return array
+array

@@ -1,9 +1,13 @@
-# Pagefiles::getFile()
+# $pagefiles->getFile($name): null|Pagefile
 
 Source: `wire/core/Pagefiles.php`
 
 Get the Pagefile having the given basename, or null if not found.
 
-@param string $name
+## Arguments
 
-@return null|Pagefile
+- string $name
+
+## Return value
+
+null|Pagefile

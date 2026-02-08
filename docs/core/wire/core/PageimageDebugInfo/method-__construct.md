@@ -1,7 +1,9 @@
-# PageimageDebugInfo::__construct()
+# $pageimageDebugInfo->__construct(Pageimage $pageimage)
 
 Source: `wire/core/PageimageDebugInfo.php`
 
 Construct
 
-@param Pageimage $pageimage
+## Arguments
+
+- Pageimage $pageimage

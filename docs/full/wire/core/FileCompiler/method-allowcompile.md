@@ -1,11 +1,14 @@
-# FileCompiler::allowCompile()
+# $fileCompiler->allowCompile(&$filename, &$basename): bool
 
 Source: `wire/core/FileCompiler.php`
 
 Allow the given filename to be compiled?
 
-@param string $filename Full path and filename to compile (this property can be modified by the function).
+## Arguments
 
-@param string $basename Just the basename (this property can be modified by the function).
+- string $filename Full path and filename to compile (this property can be modified by the function).
+- string $basename Just the basename (this property can be modified by the function).
 
-@return bool
+## Return value
+
+bool

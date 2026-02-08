@@ -1,12 +1,17 @@
-# WireDatabaseBackup::setPath()
+# $wireDatabaseBackup->setPath($path): $this
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Set path where database files are stored
 
+## Arguments
 
-@param string $path
+- string $path
 
-@return $this
+## Return value
 
-@throws \Exception if path has a problem
+$this
+
+## Throws
+
+- \Exception if path has a problem

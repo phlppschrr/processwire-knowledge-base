@@ -1,11 +1,17 @@
-# Notification::flagNameToFlag()
+# $notification->flagNameToFlag($name): int
 
 Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Given a flag name, return the corresponding flag value
 
-@param string $name
+## Arguments
 
-@return int mixed
+- string $name
 
-@throws WireException if given unknown flag
+## Return value
+
+int mixed
+
+## Throws
+
+- WireException if given unknown flag

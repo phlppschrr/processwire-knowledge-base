@@ -1,7 +1,9 @@
-# PagesRequest::__construct()
+# $pagesRequest->__construct(Pages $pages)
 
 Source: `wire/core/PagesRequest.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

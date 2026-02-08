@@ -1,4 +1,4 @@
-# Fields::___deleteFieldDataByTemplate()
+# $fields->___deleteFieldDataByTemplate(Field $field, Template $template): bool
 
 Source: `wire/core/Fields.php`
 
@@ -10,11 +10,15 @@ Fieldtype::deleteTemplateField
 If you need to remove a field from a Fieldgroup, use Fieldgroup::remove(), and this
 method will be call automatically at the appropriate time when save the fieldgroup.
 
+## Arguments
 
-@param Field $field
+- Field $field
+- Template $template
 
-@param Template $template
+## Return value
 
-@return bool Whether or not it was successful
+bool Whether or not it was successful
 
-@throws WireException when given a situation where deletion is not allowed
+## Throws
+
+- WireException when given a situation where deletion is not allowed

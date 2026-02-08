@@ -1,9 +1,13 @@
-# Fields::getWireArray()
+# $fields->getWireArray(): WireArray
 
 Source: `wire/core/Fields.php`
 
 Get WireArray container that items are stored in
 
-@return WireArray
+## Return value
 
-@since 3.0.194
+WireArray
+
+## Meta
+
+- @since 3.0.194

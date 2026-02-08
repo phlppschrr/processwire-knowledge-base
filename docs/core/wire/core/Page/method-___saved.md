@@ -1,4 +1,4 @@
-# Page::___saved()
+# $page->___saved(array $changes, $name = false)
 
 Source: `wire/core/Page.php`
 
@@ -21,11 +21,11 @@ $wire->addHook('Page:saved', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param array $changes Names of changed field names and/or properties
+- array $changes Names of changed field names and/or properties
+- string|false $name Indicates whether entire page was saved or just a field: - Populated with `string` field or property name if `$page->save($name)` was used rather than `$page->save();` - Populated with `false` if entire page was saved, i.e. `$page->save()`
 
-@param string|false $name Indicates whether entire page was saved or just a field:
- - Populated with `string` field or property name if `$page->save($name)` was used rather than `$page->save();`
- - Populated with `false` if entire page was saved, i.e. `$page->save()`
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

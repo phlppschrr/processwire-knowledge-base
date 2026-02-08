@@ -1,4 +1,4 @@
-# Functions::WireData()
+# $functions->WireData($data = array()): WireData
 
 Source: `wire/core/Functions.php`
 
@@ -8,9 +8,14 @@ Create a new WireData instance and optionally add given associative array of dat
 $data = WireData([ 'hello' => 'world', 'foo' => 'bar' ]);
 ~~~~~
 
+## Arguments
 
-@param array|\Traversable $data Can be an associative array or Traversable object of data to set, or omit if not needed
+- array|\Traversable $data Can be an associative array or Traversable object of data to set, or omit if not needed
 
-@return WireData
+## Return value
 
-@since 3.0.126
+WireData
+
+## Meta
+
+- @since 3.0.126

@@ -1,4 +1,4 @@
-# Modules::getModule()
+# $modules->getModule($key, array $options = array()): Module|_Module|null|string
 
 Source: `wire/core/Modules.php`
 
@@ -21,12 +21,19 @@ If the module is not installed, but is installable, it will be installed, instan
 If you don't want that behavior, call `$modules->isInstalled('ModuleName')` as a condition first, OR specify
 true for the `noInstall` option in the `$options` argument.
 
-@param string|int $key Module name or database ID.
+## Arguments
 
-@param array $options Optional settings to change load behavior, see method description for details.
+- string|int $key Module name or database ID.
+- array $options Optional settings to change load behavior, see method description for details.
 
-@return Module|_Module|null|string Returns ready-to-use module or NULL|string if not found (string if `returnError` option used).
+## Return value
 
-@throws WirePermissionException|\Exception If module requires a particular permission the user does not have
+Module|_Module|null|string Returns ready-to-use module or NULL|string if not found (string if `returnError` option used).
 
-@see Modules::get()
+## Throws
+
+- WirePermissionException|\Exception If module requires a particular permission the user does not have
+
+## See also
+
+- [Modules::get()](method-get.md)

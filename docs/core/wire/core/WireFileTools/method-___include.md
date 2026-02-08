@@ -1,4 +1,4 @@
-# WireFileTools::___include()
+# $wireFileTools->___include($filename, array $vars = array(), array $options = array()): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -14,16 +14,16 @@ This is the same as PHP’s `include()` function except for the following:
 Note this function produces direct output. To retrieve output as a return value, use the
 `$files->render()` function instead.
 
+## Arguments
 
-@param string $filename Filename to include
+- string $filename Filename to include
+- array $vars Optional variables you want to hand to the include (associative array)
+- array $options Array of options to modify behavior: - `func` (string): Function to use: include, include_once, require or require_once (default=include) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of start paths include files are allowed from. Note current dir is always allowed.
 
-@param array $vars Optional variables you want to hand to the include (associative array)
+## Return value
 
-@param array $options Array of options to modify behavior:
- - `func` (string): Function to use: include, include_once, require or require_once (default=include)
- - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php)
- - `allowedPaths` (array): Array of start paths include files are allowed from. Note current dir is always allowed.
+bool Always returns true
 
-@return bool Always returns true
+## Throws
 
-@throws WireException if file doesn’t exist or is not allowed
+- WireException if file doesn’t exist or is not allowed

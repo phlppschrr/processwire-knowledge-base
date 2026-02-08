@@ -1,9 +1,13 @@
-# AdminThemeUikitLessInterface::addFile()
+# $adminThemeUikitLessInterface->addFile($file, $url = ''): self
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
-@param string $file
 
-@param string $url
+## Arguments
 
-@return self
+- string $file
+- string $url
+
+## Return value
+
+self

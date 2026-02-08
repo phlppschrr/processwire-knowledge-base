@@ -1,4 +1,4 @@
-# Comment::quiet()
+# $comment->quiet($quiet = null): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
@@ -6,6 +6,10 @@ Get or set quiet mode
 
 When quiet mode is active, comment additions/changes don't trigger notifications and such.
 
-@param bool $quiet Specify only if setting
+## Arguments
 
-@return bool The current quiet mode
+- bool $quiet Specify only if setting
+
+## Return value
+
+bool The current quiet mode

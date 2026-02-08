@@ -1,9 +1,13 @@
-# InputfieldTinyMCE::useFeature()
+# $inputfieldTinyMCE->useFeature($name): bool
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Use the named feature?
 
-@param string $name
+## Arguments
 
-@return bool
+- string $name
+
+## Return value
+
+bool

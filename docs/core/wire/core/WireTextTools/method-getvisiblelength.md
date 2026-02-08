@@ -1,9 +1,13 @@
-# WireTextTools::getVisibleLength()
+# $wireTextTools->getVisibleLength($str): int
 
 Source: `wire/core/WireTextTools.php`
 
 Return visible length of string, which is length not counting markup or entities
 
-@param string $str
+## Arguments
 
-@return int
+- string $str
+
+## Return value
+
+int

@@ -1,11 +1,14 @@
-# ModulesDuplicates::getDuplicatesConfigData()
+# $modulesDuplicates->getDuplicatesConfigData($className, array $configData = array()): array
 
 Source: `wire/core/ModulesDuplicates.php`
 
 Populate duplicates info into config data, when applicable
 
-@param $className
+## Arguments
 
-@param array $configData
+- $className
+- array $configData
 
-@return array Updated configData
+## Return value
+
+array Updated configData

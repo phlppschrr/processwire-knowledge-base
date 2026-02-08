@@ -1,9 +1,13 @@
-# WireRandom::arrayValue()
+# $wireRandom->arrayValue(array $a): mixed|null
 
 Source: `wire/core/WireRandom.php`
 
 Get a random value from given array
 
-@param array $a Array to get random value from
+## Arguments
 
-@return mixed|null
+- array $a Array to get random value from
+
+## Return value
+
+mixed|null

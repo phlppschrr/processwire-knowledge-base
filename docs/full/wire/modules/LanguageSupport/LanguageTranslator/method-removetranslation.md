@@ -1,11 +1,14 @@
-# LanguageTranslator::removeTranslation()
+# $languageTranslator->removeTranslation($textdomain, $hash): $this
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Remove a translation
 
-@param string $textdomain
+## Arguments
 
-@param string $hash May be the translation hash or the translated text.
+- string $textdomain
+- string $hash May be the translation hash or the translated text.
 
-@return $this
+## Return value
+
+$this

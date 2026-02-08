@@ -1,4 +1,4 @@
-# Page::setStatus()
+# $page->setStatus($value): self
 
 Source: `wire/core/Page.php`
 
@@ -17,9 +17,15 @@ $page->setStatus('hidden, unpublished');
 $page->setStatus(Page::statusHidden | Page::statusUnpublished);
 ~~~~~
 
+## Arguments
 
-@param int|array|string Status value, array of status names or values, or status name string.
+- int|array|string Status value, array of status names or values, or status name string.
 
-@return self
+## Return value
 
-@see Page::addStatus(), Page::removeStatus()
+self
+
+## See also
+
+- [Page::addStatus()](method-addstatus.md)
+- [Page::removeStatus()](method-removestatus.md)

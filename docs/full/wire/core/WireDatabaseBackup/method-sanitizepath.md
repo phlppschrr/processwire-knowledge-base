@@ -1,9 +1,13 @@
-# WireDatabaseBackup::sanitizePath()
+# $wireDatabaseBackup->sanitizePath($path): string
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 For path: Normalizes slashes and ensures it ends with a slash
 
-@param $path
+## Arguments
 
-@return string
+- $path
+
+## Return value
+
+string

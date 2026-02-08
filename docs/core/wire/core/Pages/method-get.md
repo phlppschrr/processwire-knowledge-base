@@ -1,4 +1,4 @@
-# Pages::get()
+# $pages->get($selector, $options = array()): Page|NullPage
 
 Source: `wire/core/Pages.php`
 
@@ -17,11 +17,16 @@ $p = $pages->get('/about/contact/');
 $p = $pages->get('template=skyscraper, sort=random');
 ~~~~~~
 
+## Arguments
 
-@param string|array|Selectors|int $selector Selector string, array or Selectors object. May also be page path or ID.
+- string|array|Selectors|int $selector Selector string, array or Selectors object. May also be page path or ID.
+- array $options See `Pages::find()` for extra options that may be specified.
 
-@param array $options See `Pages::find()` for extra options that may be specified.
+## Return value
 
-@return Page|NullPage Always returns a Page object, but will return NullPage (with id=0) when no match found.
+Page|NullPage Always returns a Page object, but will return NullPage (with id=0) when no match found.
 
-@see Pages::findOne(), Pages::find()
+## See also
+
+- [Pages::findOne()](method-findone.md)
+- [Pages::find()](method-___find.md)

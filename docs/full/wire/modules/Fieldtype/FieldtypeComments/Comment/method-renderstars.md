@@ -1,9 +1,13 @@
-# Comment::renderStars()
+# $comment->renderStars(array $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Render stars markup
 
-@param array $options See CommentArray::renderStars for $options
+## Arguments
 
-@return string
+- array $options See CommentArray::renderStars for $options
+
+## Return value
+
+string

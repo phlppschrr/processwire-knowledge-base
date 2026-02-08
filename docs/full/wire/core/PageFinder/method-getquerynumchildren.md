@@ -1,13 +1,18 @@
-# PageFinder::getQueryNumChildren()
+# $pageFinder->getQueryNumChildren(DatabaseQuerySelect $query, $selector): string
 
 Source: `wire/core/PageFinder.php`
 
 Match a number of children count
 
-@param DatabaseQuerySelect $query
+## Arguments
 
-@param Selector $selector
+- DatabaseQuerySelect $query
+- Selector $selector
 
-@return string
+## Return value
 
-@throws WireException
+string
+
+## Throws
+
+- WireException

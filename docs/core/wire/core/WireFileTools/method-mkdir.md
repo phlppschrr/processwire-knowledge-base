@@ -1,4 +1,4 @@
-# WireFileTools::mkdir()
+# $wireFileTools->mkdir($path, $recursive = false, $chmod = null): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -17,12 +17,12 @@ if($files->mkdir($config->paths->cache . 'foo-bar/')) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $path Directory you want to create
+- string $path Directory you want to create
+- bool|string $recursive If set to true, all directories will be created as needed to reach the end.
+- string|null|bool $chmod Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755" If omitted, then ProcessWire's `$config->chmodDir` setting is used instead.
 
-@param bool|string $recursive If set to true, all directories will be created as needed to reach the end.
+## Return value
 
-@param string|null|bool $chmod Optional mode to set directory to (default: $config->chmodDir), format must be a string i.e. "0755"
-  If omitted, then ProcessWire's `$config->chmodDir` setting is used instead.
-
-@return bool True on success, false on failure
+bool True on success, false on failure

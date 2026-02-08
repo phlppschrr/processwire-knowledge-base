@@ -1,7 +1,9 @@
-# RepeaterPage::getDepth()
+# $repeaterPage->getDepth(): int
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 Get depth
 
-@return int
+## Return value
+
+int

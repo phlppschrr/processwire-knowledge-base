@@ -1,4 +1,4 @@
-# Page::___getMarkup()
+# $page->___getMarkup($key): string
 
 Source: `wire/core/Page.php`
 
@@ -9,9 +9,14 @@ Return the markup value for a given field name or {tag} string
 2. If given a string with field names referenced in `{tags}`, it will populate those
    tags and return the populated string.
 
+## Arguments
 
-@param string $key Field name or markup string with field {name} tags in it
+- string $key Field name or markup string with field {name} tags in it
 
-@return string
+## Return value
 
-@see Page::getText()
+string
+
+## See also
+
+- [Page::getText()](method-gettext.md)

@@ -1,4 +1,4 @@
-# WireData::getDot()
+# $wireData->getDot($key): null|mixed
 
 Source: `wire/core/WireData.php`
 
@@ -11,7 +11,10 @@ get() method as a syntax convenience.
 $value = $item->get("parent.title");
 ~~~~~
 
+## Arguments
 
-@param string $key Name of property you want to retrieve in "a.b" or "a.b.c" format
+- string $key Name of property you want to retrieve in "a.b" or "a.b.c" format
 
-@return null|mixed Returns value if found or null if not
+## Return value
+
+null|mixed Returns value if found or null if not

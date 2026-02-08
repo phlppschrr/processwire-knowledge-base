@@ -1,4 +1,4 @@
-# Permissions::has()
+# $permissions->has($name): bool
 
 Source: `wire/core/Permissions.php`
 
@@ -11,6 +11,10 @@ if($permissions->has('page-publish')) {
 }
 ~~~~~
 
-@param string $name Name of permission
+## Arguments
 
-@return bool True if system has a permission with this name, or false if not.
+- string $name Name of permission
+
+## Return value
+
+bool True if system has a permission with this name, or false if not.

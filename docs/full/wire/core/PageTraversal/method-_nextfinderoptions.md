@@ -1,13 +1,15 @@
-# PageTraversal::_nextFinderOptions()
+# $pageTraversal->_nextFinderOptions(Page $page, $selector, $options): array
 
 Source: `wire/core/PageTraversal.php`
 
 Builds the PageFinder options for the _next() method
 
-@param Page $page
+## Arguments
 
-@param string|array|Selectors $selector
+- Page $page
+- string|array|Selectors $selector
+- array $options
 
-@param array $options
+## Return value
 
-@return array
+array

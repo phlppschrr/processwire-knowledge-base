@@ -1,5 +1,8 @@
-# ProcessPageListerBookmarks::bookmarks()
+# $processPageListerBookmarks->bookmarks(): ListerBookmarks
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
-@return ListerBookmarks
+
+## Return value
+
+ListerBookmarks

@@ -1,4 +1,4 @@
-# PagesExportImport::arrayToPage()
+# $pagesExportImport->arrayToPage(array $a, array $options = array()): Page|NullPage
 
 Source: `wire/core/PagesExportImport.php`
 
@@ -29,11 +29,15 @@ The following options are for future use and not currently applicable:
  - `changeName` (bool): Allow name to be changed on existing pages? (default=false)
  - `replaceParents` (array): Array of import-data parent path to replacement parent path (default=[])
 
+## Arguments
 
-@param array $a
+- array $a
+- array $options Options to modify default behavior, see method description.
 
-@param array $options Options to modify default behavior, see method description.
+## Return value
 
-@return Page|NullPage
+Page|NullPage
 
-@throws WireException
+## Throws
+
+- WireException

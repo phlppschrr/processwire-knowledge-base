@@ -1,13 +1,15 @@
-# WireMarkupRegions::hasAttribute()
+# $wireMarkupRegions->hasAttribute($name, $value, &$html): bool
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Does the given attribute name and value appear somewhere in the given html?
 
-@param string $name
+## Arguments
 
-@param string|bool $value Value to find, or specify boolean true for boolean attribute without value
+- string $name
+- string|bool $value Value to find, or specify boolean true for boolean attribute without value
+- string $html
 
-@param string $html
+## Return value
 
-@return bool Returns false if it doesn't appear, true if it does
+bool Returns false if it doesn't appear, true if it does

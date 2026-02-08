@@ -1,11 +1,17 @@
-# SelectableOptionArray::getByTitle()
+# $selectableOptionArray->getByTitle($title): SelectableOption|null
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Get option by title
 
-@param string $title
+## Arguments
 
-@return SelectableOption|null
+- string $title
 
-@since 3.0.242
+## Return value
+
+SelectableOption|null
+
+## Meta
+
+- @since 3.0.242

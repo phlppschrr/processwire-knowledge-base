@@ -1,4 +1,4 @@
-# Inputfield::init()
+# $inputfield->init()
 
 Source: `wire/core/Inputfield.php`
 

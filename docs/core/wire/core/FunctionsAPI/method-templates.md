@@ -1,4 +1,4 @@
-# FunctionsAPI::templates()
+# $functionsAPI->templates($name = ''): Templates|Template|null
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -12,9 +12,14 @@ $t = templates()->get('basic-page'); // regular syntax
 $t = templates('basic-page'); // shortcut syntax
 ~~~~~~
 
+## Arguments
 
-@param string $name Optional template to retrieve
+- string $name Optional template to retrieve
 
-@return Templates|Template|null
+## Return value
 
-@see Templates
+Templates|Template|null
+
+## See also
+
+- Templates

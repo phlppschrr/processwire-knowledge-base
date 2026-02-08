@@ -1,7 +1,12 @@
-# AdminThemeUikitLessInterface::parser()
+# $adminThemeUikitLessInterface->parser($options = array()): object
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
-@param array $options
 
-@return object instance of \Less_Parser
+## Arguments
+
+- array $options
+
+## Return value
+
+object instance of \Less_Parser

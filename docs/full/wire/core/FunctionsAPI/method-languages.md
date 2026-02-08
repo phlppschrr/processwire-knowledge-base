@@ -1,4 +1,4 @@
-# FunctionsAPI::languages()
+# $functionsAPI->languages($name = ''): Languages|Language|NullPage|null
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -13,9 +13,16 @@ $de = languages()->get('de'); // Get another language
 $de = languages('de'); // Get another language (shorcut syntax)
 ~~~~
 
+## Arguments
 
-@param string|int $name Optional Language name or ID for language to retrieve
+- string|int $name Optional Language name or ID for language to retrieve
 
-@return Languages|Language|NullPage|null
+## Return value
 
-@see Languages, Languages::get(), Language
+Languages|Language|NullPage|null
+
+## See also
+
+- Languages
+- [Languages::get()](../../modules/LanguageSupport/Languages/index.md)
+- Language

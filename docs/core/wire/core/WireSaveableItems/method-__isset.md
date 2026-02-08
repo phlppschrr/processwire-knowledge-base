@@ -1,9 +1,13 @@
-# WireSaveableItems::__isset()
+# $wireSaveableItems->__isset($key): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Isset
 
-@param string|int $key
+## Arguments
 
-@return bool
+- string|int $key
+
+## Return value
+
+bool

@@ -1,9 +1,13 @@
-# WireInputData::remove()
+# $wireInputData->remove($key): $this
 
 Source: `wire/core/WireInputData.php`
 
 Remove a value from input
 
-@param string $key Name of input variable to remove value for
+## Arguments
 
-@return $this
+- string $key Name of input variable to remove value for
+
+## Return value
+
+$this

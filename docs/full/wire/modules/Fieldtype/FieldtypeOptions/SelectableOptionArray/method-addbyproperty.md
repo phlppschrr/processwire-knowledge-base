@@ -1,13 +1,18 @@
-# SelectableOptionArray::addByProperty()
+# $selectableOptionArray->addByProperty($property, $value): SelectableOption|false
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Add option by property (id, name, title)
 
-@param string $property One of id, name or title
+## Arguments
 
-@param string|int $value Value to match for above property
+- string $property One of id, name or title
+- string|int $value Value to match for above property
 
-@return SelectableOption|false Returns option added or false if not found
+## Return value
 
-@throws WireException
+SelectableOption|false Returns option added or false if not found
+
+## Throws
+
+- WireException

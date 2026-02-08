@@ -1,7 +1,9 @@
-# WireSessionHandlerAdaptor::__construct()
+# $wireSessionHandlerAdaptor->__construct(WireSessionHandler $handler)
 
 Source: `wire/core/WireSessionHandlerAdaptor.php`
 
 Construct
 
-@param WireSessionHandler $handler
+## Arguments
+
+- WireSessionHandler $handler

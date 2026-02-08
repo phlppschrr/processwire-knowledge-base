@@ -1,11 +1,14 @@
-# ImageSizerEngine::convertToSepia()
+# $imageSizerEngine->convertToSepia($dstFilename = '', $sepia = 55): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Convert image to sepia
 
-@param string $dstFilename If different from source file
+## Arguments
 
-@param float|int $sepia Sepia value
+- string $dstFilename If different from source file
+- float|int $sepia Sepia value
 
-@return bool
+## Return value
+
+bool

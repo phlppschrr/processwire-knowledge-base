@@ -1,4 +1,4 @@
-# WireInputDataCookie::options()
+# $wireInputDataCookie->options($key = null, $value = null): string|array|int|float|null|$this
 
 Source: `wire/core/WireInputDataCookie.php`
 
@@ -26,10 +26,15 @@ Options you can get or set:
    boolean `true` for all subdomains of current domain, `domain.com` for domain.com and *.domain.com [same as true], `www.domain.com`
    for www subdomain and and hostnames off of it, like dev.www.domain.com. (default=null, current hostname)
 
-@param string|array|null $key
+## Arguments
 
-@param string|array|int|float|null $value
+- string|array|null $key
+- string|array|int|float|null $value
 
-@return string|array|int|float|null|$this
+## Return value
 
-@since 3.0.141
+string|array|int|float|null|$this
+
+## Meta
+
+- @since 3.0.141

@@ -1,4 +1,4 @@
-# Sanitizer::entities()
+# $sanitizer->entities($str, $flags = ENT_QUOTES, $encoding = 'UTF-8', $doubleEncode = true): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -16,15 +16,18 @@ echo $sanitizer->entities($test);
 // result: ain&apos;t &lt;em&gt;nothing&lt;/em&gt; perfect but our brokenness
 ~~~~~
 
+## Arguments
 
-@param string $str String to entity encode
+- string $str String to entity encode
+- int|bool $flags See PHP htmlentities() function for flags.
+- string $encoding Encoding of string (default="UTF-8").
+- bool $doubleEncode Allow double encode? (default=true).
 
-@param int|bool $flags See PHP htmlentities() function for flags.
+## Return value
 
-@param string $encoding Encoding of string (default="UTF-8").
+string Entity encoded string
 
-@param bool $doubleEncode Allow double encode? (default=true).
+## See also
 
-@return string Entity encoded string
-
-@see Sanitizer::entities1(), Sanitizer::unentities()
+- [Sanitizer::entities1()](method-entities1.md)
+- [Sanitizer::unentities()](method-unentities.md)

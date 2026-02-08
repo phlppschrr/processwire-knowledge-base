@@ -1,7 +1,9 @@
-# Templates::__construct()
+# $templates->__construct(Fieldgroups $fieldgroups)
 
 Source: `wire/core/Templates.php`
 
 Construct the Templates
 
-@param Fieldgroups $fieldgroups Reference to the Fieldgroups
+## Arguments
+
+- Fieldgroups $fieldgroups Reference to the Fieldgroups

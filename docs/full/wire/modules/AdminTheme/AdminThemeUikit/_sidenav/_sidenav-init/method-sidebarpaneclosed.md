@@ -1,4 +1,4 @@
-# _sidenav-init::sidebarPaneClosed()
+# $sidenavInit->sidebarPaneClosed()
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

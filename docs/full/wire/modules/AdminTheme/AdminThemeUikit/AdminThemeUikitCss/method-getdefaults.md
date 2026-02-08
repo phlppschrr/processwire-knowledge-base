@@ -1,5 +1,8 @@
-# AdminThemeUikitCss::getDefaults()
+# $adminThemeUikitCss->getDefaults(): array
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
-@return array
+
+## Return value
+
+array

@@ -1,4 +1,4 @@
-# PagesLoader::getPath()
+# $pagesLoader->getPath($id, $options = array()): string
 
 Source: `wire/core/PagesLoader.php`
 
@@ -13,12 +13,11 @@ Please note
 4) It's possible for there to be Page::path() hooks, and this method completely bypasses them,
    which is another reason not to use it unless you know such hooks aren't applicable to you.
 
+## Arguments
 
-@param int|Page $id ID of the page you want the path to
+- int|Page $id ID of the page you want the path to
+- null|array|Language|int|string $options Specify $options array or Language object, id or name. Allowed options: - language (int|string|anguage): To retrieve in non-default language, specify language object, ID or name (default=null) - useCache (bool): Allow pulling paths from already loaded pages? (default=true) - usePagePaths (bool): Allow pulling paths from PagePaths module, if installed? (default=true)
 
-@param null|array|Language|int|string $options Specify $options array or Language object, id or name. Allowed options:
- - language (int|string|anguage): To retrieve in non-default language, specify language object, ID or name (default=null)
- - useCache (bool): Allow pulling paths from already loaded pages? (default=true)
- - usePagePaths (bool): Allow pulling paths from PagePaths module, if installed? (default=true)
+## Return value
 
-@return string Path to page or blank on error/not-found
+string Path to page or blank on error/not-found

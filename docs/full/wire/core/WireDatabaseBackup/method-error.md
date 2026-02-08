@@ -1,10 +1,13 @@
-# WireDatabaseBackup::error()
+# $wireDatabaseBackup->error($str = ''): string
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Add an error and return last error
 
+## Arguments
 
-@param string $str If omitted, no error is added
+- string $str If omitted, no error is added
 
-@return string
+## Return value
+
+string

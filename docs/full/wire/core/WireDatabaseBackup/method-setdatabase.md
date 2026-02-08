@@ -1,10 +1,13 @@
-# WireDatabaseBackup::setDatabase()
+# $wireDatabaseBackup->setDatabase($database)
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Set the PDO database connection
 
+## Arguments
 
-@param \PDO|WireDatabasePDO $database
+- \PDO|WireDatabasePDO $database
 
-@throws \PDOException on invalid connection
+## Throws
+
+- \PDOException on invalid connection

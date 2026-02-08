@@ -1,11 +1,17 @@
-# WireDataDB::get()
+# $wireDataDB->get($key): array|mixed|null
 
 Source: `wire/core/WireDataDB.php`
 
 Get the value for a specific property/name/key
 
-@param string $key
+## Arguments
 
-@return array|mixed|null
+- string $key
 
-@throws WireException
+## Return value
+
+array|mixed|null
+
+## Throws
+
+- WireException

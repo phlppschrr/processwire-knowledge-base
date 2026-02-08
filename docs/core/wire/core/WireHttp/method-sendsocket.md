@@ -1,14 +1,15 @@
-# WireHttp::sendSocket()
+# $wireHttp->sendSocket($url, $method = 'POST', $options = array()): bool|string
 
 Source: `wire/core/WireHttp.php`
 
 Alternate method of sending when allow_url_fopen isn't allowed
 
-@param string $url
+## Arguments
 
-@param string $method
+- string $url
+- string $method
+- array $options Optional settings: - timeout: number of seconds to timeout
 
-@param array $options Optional settings:
-	- timeout: number of seconds to timeout
+## Return value
 
-@return bool|string
+bool|string

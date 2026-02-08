@@ -1,4 +1,4 @@
-# Wire::___trackException()
+# $wire->___trackException($e, $severe = true, $text = null): $this
 
 Source: `wire/core/Wire.php`
 
@@ -12,15 +12,16 @@ Hookable method called when an Exception (or Error) occurs
 Please note that if your root /index.php version is less than 302 it will only receive
 Exception (and not Error) objects.
 
+## Arguments
 
-@param \Throwable $e Exception or Error object that was thrown.
+- \Throwable $e Exception or Error object that was thrown.
+- bool|int $severe Whether or not it should be considered severe (default=true).
+- string|array|object|true $text Additional details (optional): - When provided, it will be sent to `$this->error($text)` if $severe is true, or `$this->warning($text)` if $severe is false. - Specify boolean `true` to just send the `$e->getMessage()` to `$this->error()` or `$this->warning()`.
 
-@param bool|int $severe Whether or not it should be considered severe (default=true).
+## Return value
 
-@param string|array|object|true $text Additional details (optional):
-	- When provided, it will be sent to `$this->error($text)` if $severe is true, or `$this->warning($text)` if $severe is false.
-	- Specify boolean `true` to just send the `$e->getMessage()` to `$this->error()` or `$this->warning()`.
+$this
 
-@return $this
+## Throws
 
-@throws \Exception|\Error If `$severe==true` and `$config->allowExceptions==true`
+- \Exception|\Error If `$severe==true` and `$config->allowExceptions==true`

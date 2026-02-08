@@ -1,15 +1,19 @@
-# PagesVersionsFiles::deletePageFieldVersionFiles()
+# $pagesVersionsFiles->deletePageFieldVersionFiles(Page $page, Field $field, $version): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Delete files for given page and field version
 
-@todo is this method even needed?
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
+- int $version
 
-@param Field $field
+## Return value
 
-@param int $version
+int
 
-@return int
+## Meta
+
+- @todo is this method even needed?

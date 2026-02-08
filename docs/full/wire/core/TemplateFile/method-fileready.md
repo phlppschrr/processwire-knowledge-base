@@ -1,9 +1,13 @@
-# TemplateFile::fileReady()
+# $templateFile->fileReady($filename)
 
 Source: `wire/core/TemplateFile.php`
 
 Prepare to nclude specific file (whether prepend, main or append)
 
-@param string $filename
+## Arguments
 
-@since 3.0.154
+- string $filename
+
+## Meta
+
+- @since 3.0.154

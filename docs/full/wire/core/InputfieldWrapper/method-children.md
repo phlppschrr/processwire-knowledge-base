@@ -1,10 +1,13 @@
-# InputfieldWrapper::children()
+# $inputfieldWrapper->children($selector = ''): InputfieldsArray
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Return all children Inputfield objects
 
+## Arguments
 
-@param string $selector Optional selector string to filter the children by
+- string $selector Optional selector string to filter the children by
 
-@return InputfieldsArray
+## Return value
+
+InputfieldsArray

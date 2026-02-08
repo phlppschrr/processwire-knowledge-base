@@ -1,4 +1,4 @@
-# WireNumberTools::strToBytes()
+# $wireNumberTools->strToBytes($value, $unit = null): int
 
 Source: `wire/core/WireNumberTools.php`
 
@@ -8,10 +8,15 @@ Spaces, commas and case in given value do not matter. Only the first character o
 taken into account, whether it appears in the given value, or is given in the $unit argument.
 Meaning a unit like megabytes (for example) can be specified as 'm', 'mb', 'megabytes', etc.
 
-@param string|int|float $value
+## Arguments
 
-@param string|null $unit Optional unit that given value is in (b, kb, mb, gb, tb), or omit to auto-detect
+- string|int|float $value
+- string|null $unit Optional unit that given value is in (b, kb, mb, gb, tb), or omit to auto-detect
 
-@return int
+## Return value
 
-@since 3.0.214
+int
+
+## Meta
+
+- @since 3.0.214

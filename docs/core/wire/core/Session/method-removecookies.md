@@ -1,4 +1,4 @@
-# Session::removeCookies()
+# $session->removeCookies()
 
 Source: `wire/core/Session.php`
 

@@ -1,7 +1,9 @@
-# SystemUpdate::getName()
+# $systemUpdate->getName(): string
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdate.php`
 
 Get update name that appears in notices
 
-@return string
+## Return value
+
+string

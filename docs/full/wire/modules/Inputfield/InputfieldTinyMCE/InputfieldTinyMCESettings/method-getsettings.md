@@ -1,11 +1,14 @@
-# InputfieldTinyMCESettings::getSettings()
+# $inputfieldTinyMCESettings->getSettings($defaults = null, $cacheKey = ''): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Get settings from Inputfield vary from the $defaults
 
-@param array|null $defaults Default settings Default settings or omit to pull automatically
+## Arguments
 
-@param string $cacheKey Optionally cache with this key
+- array|null $defaults Default settings Default settings or omit to pull automatically
+- string $cacheKey Optionally cache with this key
 
-@return array
+## Return value
+
+array

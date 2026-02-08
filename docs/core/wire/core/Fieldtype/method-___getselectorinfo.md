@@ -1,12 +1,14 @@
-# Fieldtype::___getSelectorInfo()
+# $fieldtype->___getSelectorInfo(Field $field, array $data = array()): array
 
 Source: `wire/core/Fieldtype.php`
 
 Return array with information about what properties and operators can be used with this field.
 
+## Arguments
 
-@param Field $field
+- Field $field
+- array $data Array of extra data, when/if needed
 
-@param array $data Array of extra data, when/if needed
+## Return value
 
-@return array See `FieldSelectorInfo` class for details.
+array See `FieldSelectorInfo` class for details.

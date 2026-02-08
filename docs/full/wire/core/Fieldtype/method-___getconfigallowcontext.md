@@ -1,4 +1,4 @@
-# Fieldtype::___getConfigAllowContext()
+# $fieldtype->___getConfigAllowContext(Field $field): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,7 +10,10 @@ or getConfigArray().
 Inputfield field names returned from here are allowed to have unique values per Fieldgroup assignment, rather
 than sharing the same setting globally.
 
+## Arguments
 
-@param Field $field
+- Field $field
 
-@return array of Inputfield names
+## Return value
+
+array of Inputfield names

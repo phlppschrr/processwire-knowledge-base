@@ -1,4 +1,4 @@
-# WireMail::strReplace()
+# $wireMail->strReplace($str, $find, $replace = ''): string
 
 Source: `wire/core/WireMail.php`
 
@@ -8,10 +8,12 @@ This is better than using str_replace() because it handles cases where replaceme
 results in the construction of a new $find that was not present in original $str.
 Note: this function ignores case.
 
-@param string $str
+## Arguments
 
-@param string|array $find
+- string $str
+- string|array $find
+- string $replace
 
-@param string $replace
+## Return value
 
-@return string
+string

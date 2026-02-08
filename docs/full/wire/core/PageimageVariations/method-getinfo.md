@@ -1,4 +1,4 @@
-# PageimageVariations::getInfo()
+# $pageimageVariations->getInfo($basename, $options = array()): bool|string|array
 
 Source: `wire/core/PageimageVariations.php`
 
@@ -22,10 +22,11 @@ image between it and the original:
 - `suffixAll` (array): Contains all suffixes including among parent variations
 - `parent` (array): Variation info array of direct parent variation file
 
-@param string $basename Filename to check (basename, which excludes path)
+## Arguments
 
-@param array|bool $options Array of options to modify behavior, or boolean to only specify `allowSelf` option.
- - `allowSelf` (bool): When true, it will return variation info even if same as current Pageimage. (default=false)
- - `verbose` (bool): Return verbose array of info? If false, just returns basename (string) or false. (default=true)
+- string $basename Filename to check (basename, which excludes path)
+- array|bool $options Array of options to modify behavior, or boolean to only specify `allowSelf` option. - `allowSelf` (bool): When true, it will return variation info even if same as current Pageimage. (default=false) - `verbose` (bool): Return verbose array of info? If false, just returns basename (string) or false. (default=true)
 
-@return bool|string|array Returns false if not a variation, or array (verbose) or string (non-verbose) of info if it is.
+## Return value
+
+bool|string|array Returns false if not a variation, or array (verbose) or string (non-verbose) of info if it is.

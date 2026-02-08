@@ -1,10 +1,13 @@
-# PagesLoader::debug()
+# $pagesLoader->debug($debug = null): bool
 
 Source: `wire/core/PagesLoader.php`
 
 Get or set debug state
 
+## Arguments
 
-@param bool|null $debug
+- bool|null $debug
 
-@return bool
+## Return value
+
+bool

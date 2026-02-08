@@ -1,4 +1,4 @@
-# WireArray::findRandomTimed()
+# $wireArray->findRandomTimed($num, $seed = 'Ymd'): WireArray
 
 Source: `wire/core/WireArray.php`
 
@@ -17,14 +17,15 @@ $randomItems = $items->findRandomTimed(3);
 $randomItems = $items->findRandomTimed('YmdH');
 ~~~~~
 
+## Arguments
 
-@param int $num The amount of items to extract from the given list
+- int $num The amount of items to extract from the given list
+- int|string $seed Optionally provide one of the following: - A PHP [date()](http://php.net/manual/en/function.date.php) format string. - A number used to see the random number generator. - The default is the PHP date format "Ymd" which makes it randomize once daily.
 
-@param int|string $seed Optionally provide one of the following:
-  - A PHP [date()](http://php.net/manual/en/function.date.php) format string.
-  - A number used to see the random number generator.
-  - The default is the PHP date format "Ymd" which makes it randomize once daily.
+## Return value
 
-@return WireArray
+WireArray
 
-@see WireArray::findRandom()
+## See also
+
+- [WireArray::findRandom()](method-findrandom.md)

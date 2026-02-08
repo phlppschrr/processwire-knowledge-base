@@ -1,10 +1,13 @@
-# WireLog::getTotalEntries()
+# $wireLog->getTotalEntries($name): int
 
 Source: `wire/core/WireLog.php`
 
 Get the total number of entries present in the given log
 
+## Arguments
 
-@param string $name Name of log, not including path or extension
+- string $name Name of log, not including path or extension
 
-@return int Total number of entries
+## Return value
+
+int Total number of entries

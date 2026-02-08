@@ -1,4 +1,4 @@
-# Page::___cloneReady()
+# $page->___cloneReady(Page $copy)
 
 Source: `wire/core/Page.php`
 
@@ -11,7 +11,10 @@ $wire->addHook('Page::cloneReady', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param Page $copy The copy of this page that it will be cloned to
+- Page $copy The copy of this page that it will be cloned to
 
-@since 3.0.253
+## Meta
+
+- @since 3.0.253

@@ -1,15 +1,16 @@
-# FileLog::getDate()
+# $fileLog->getDate($dateFrom, $dateTo = 0, $pageNum = 1, $limit = 100): array
 
 Source: `wire/core/FileLog.php`
 
 Get log lines that lie within a date range
 
-@param int $dateFrom Starting date (unix timestamp or strtotime compatible string)
+## Arguments
 
-@param int $dateTo Ending date (unix timestamp or strtotime compatible string)
+- int $dateFrom Starting date (unix timestamp or strtotime compatible string)
+- int $dateTo Ending date (unix timestamp or strtotime compatible string)
+- int $pageNum Current pagination number (default=1)
+- int $limit Items per pagination (default=100), or specify 0 for no limit.
 
-@param int $pageNum Current pagination number (default=1)
+## Return value
 
-@param int $limit Items per pagination (default=100), or specify 0 for no limit.
-
-@return array
+array

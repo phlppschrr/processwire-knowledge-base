@@ -1,11 +1,14 @@
-# ImageSizerEngineGD::imRotate()
+# $imageSizerEngineGD->imRotate($im, $degree): resource
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Rotate image (@horst)
 
-@param resource $im
+## Arguments
 
-@param int $degree
+- resource $im
+- int $degree
 
-@return resource
+## Return value
+
+resource

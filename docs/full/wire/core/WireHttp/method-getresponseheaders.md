@@ -1,4 +1,4 @@
-# WireHttp::getResponseHeaders()
+# $wireHttp->getResponseHeaders($key = ''): array|string|null
 
 Source: `wire/core/WireHttp.php`
 
@@ -12,9 +12,14 @@ instead, which returns multi-value headers as arrays.
 This method always returns an associative array of strings, unless you specify the
 `$key` option in which case it will return a string, or NULL if the header is not present.
 
+## Arguments
 
-@param string $key Optional header name you want to get (if you only need one)
+- string $key Optional header name you want to get (if you only need one)
 
-@return array|string|null
+## Return value
 
-@see WireHttp::getResponseHeaderValues()
+array|string|null
+
+## See also
+
+- [WireHttp::getResponseHeaderValues()](method-getresponseheadervalues.md)

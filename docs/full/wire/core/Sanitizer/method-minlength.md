@@ -1,4 +1,4 @@
-# Sanitizer::minLength()
+# $sanitizer->minLength($value, $minLength = 1, $padChar = '', $padLeft = false): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -23,15 +23,17 @@ $value = $sanitizer->minLength('foo', 5, 'o'); // returns "foooo"
 $value = $sanitizer->minLength('foo', 5, 'o', true); // returns "oofoo"
 ~~~~~~
 
+## Arguments
 
-@param string $value Value to enforcer a minimum length for
+- string $value Value to enforcer a minimum length for
+- int $minLength Minimum allowed length
+- string $padChar Pad string with this character if it does not meet minimum length (default='')
+- bool $padLeft Pad to left rather than right? (default=false)
 
-@param int $minLength Minimum allowed length
+## Return value
 
-@param string $padChar Pad string with this character if it does not meet minimum length (default='')
+string
 
-@param bool $padLeft Pad to left rather than right? (default=false)
+## See also
 
-@return string
-
-@see Sanitizer::maxLength()
+- [Sanitizer::maxLength()](method-maxlength.md)

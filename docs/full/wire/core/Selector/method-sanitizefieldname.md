@@ -1,11 +1,17 @@
-# Selector::sanitizeFieldName()
+# $selector->sanitizeFieldName($fieldName): string|array
 
 Source: `wire/core/Selector.php`
 
 Sanitize field name
 
-@param string|array $fieldName
+## Arguments
 
-@return string|array
+- string|array $fieldName
 
-@todo This needs testing and then to be used by this class
+## Return value
+
+string|array
+
+## Meta
+
+- @todo This needs testing and then to be used by this class

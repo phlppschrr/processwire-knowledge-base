@@ -1,4 +1,4 @@
-# WireFileTools::chmod()
+# $wireFileTools->chmod($path, $recursive = false, $chmod = null): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -17,14 +17,16 @@ The `$recursive` or `$chmod` arguments may be optionally swapped in order (since
 $files->chmod($config->paths->cache . 'foo-bar/', true);
 ~~~~~
 
+## Arguments
 
-@param string $path Path or file that you want to adjust mode for (may be a path/directory or a filename).
+- string $path Path or file that you want to adjust mode for (may be a path/directory or a filename).
+- bool|string $recursive If set to true, all files and directories in $path will be recursively set as well (default=false).
+- string|null|bool $chmod If you want to set the mode to something other than ProcessWire's chmodFile/chmodDir settings, you may override it by specifying it here. Ignored otherwise. Format should be a string, like "0755".
 
-@param bool|string $recursive If set to true, all files and directories in $path will be recursively set as well (default=false).
+## Return value
 
-@param string|null|bool $chmod If you want to set the mode to something other than ProcessWire's chmodFile/chmodDir settings,
-you may override it by specifying it here. Ignored otherwise. Format should be a string, like "0755".
+bool Returns true if all changes were successful, or false if at least one chmod failed.
 
-@return bool Returns true if all changes were successful, or false if at least one chmod failed.
+## Throws
 
-@throws WireException when it receives incorrect chmod format
+- WireException when it receives incorrect chmod format

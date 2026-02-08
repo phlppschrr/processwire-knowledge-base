@@ -1,4 +1,4 @@
-# Wire::__get()
+# $wire->__get($name): mixed|null
 
 Source: `wire/core/Wire.php`
 
@@ -8,6 +8,10 @@ If not overridden, this is primarily used as a shortcut for the fuel() method.
 
 Descending classes may have their own __get() but must pass control to this one when they can't find something.
 
-@param string $name
+## Arguments
 
-@return mixed|null
+- string $name
+
+## Return value
+
+mixed|null

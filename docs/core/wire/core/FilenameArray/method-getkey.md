@@ -1,9 +1,13 @@
-# FilenameArray::getKey()
+# $filenameArray->getKey($filename): string
 
 Source: `wire/core/FilenameArray.php`
 
 Get key for $filename that excludes query strings
 
-@param string $filename
+## Arguments
 
-@return string
+- string $filename
+
+## Return value
+
+string

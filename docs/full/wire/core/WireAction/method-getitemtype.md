@@ -1,7 +1,9 @@
-# WireAction::getItemType()
+# $wireAction->getItemType(): string
 
 Source: `wire/core/WireAction.php`
 
 Return the string type (class name) of items that this action operates upon
 
-@return string
+## Return value
+
+string

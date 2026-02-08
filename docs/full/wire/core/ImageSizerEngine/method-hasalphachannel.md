@@ -1,7 +1,9 @@
-# ImageSizerEngine::hasAlphaChannel()
+# $imageSizerEngine->hasAlphaChannel(): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Check for alphachannel in PNGs
 
-@return bool
+## Return value
+
+bool

@@ -1,4 +1,4 @@
-# Inputfield::addClass()
+# $inputfield->addClass($class, $property = 'class'): $this
 
 Source: `wire/core/Inputfield.php`
 
@@ -41,22 +41,16 @@ name may be any one of the following:
 
 Class names prefixed with a minus sign i.e. `-class` will be removed rather than added.
 
+## Arguments
 
-@param string|array $class Specify one of the following:
-  - Class name you want to add.
-  - Multiple space-separated class names you want to add.
-  - Array of class names you want to add (since 3.0.16).
-  - Formatted string of classes as described in method description (since 3.0.204+).
+- string|array $class Specify one of the following: - Class name you want to add. - Multiple space-separated class names you want to add. - Array of class names you want to add (since 3.0.16). - Formatted string of classes as described in method description (since 3.0.204+).
+- string $property Optionally specify the type of class you want to add: - Omit for the default (which is "class"). - `class` (string): Add class to the input element (or whatever the Inputfield default is). - `wrapClass` (string): Add class to ".Inputfield" wrapping element, the most outer level element used for this Inputfield. - `headerClass` (string): Add class to ".InputfieldHeader" label element. - `contentClass` (string): Add class to ".InputfieldContent" wrapping element. - Or some other named class attribute designated by a descending Inputfield. - You can optionally omit the `Class` suffix in 3.0.204+, i.e. `wrap` rather than `wrapClass`.
 
-@param string $property Optionally specify the type of class you want to add:
-  - Omit for the default (which is "class").
-  - `class` (string): Add class to the input element (or whatever the Inputfield default is).
-  - `wrapClass` (string): Add class to ".Inputfield" wrapping element, the most outer level element used for this Inputfield.
-  - `headerClass` (string): Add class to ".InputfieldHeader" label element.
-  - `contentClass` (string): Add class to ".InputfieldContent" wrapping element.
-  - Or some other named class attribute designated by a descending Inputfield.
-  - You can optionally omit the `Class` suffix in 3.0.204+, i.e. `wrap` rather than `wrapClass`.
+## Return value
 
-@return $this
+$this
 
-@see Inputfield::hasClass(), Inputfield::removeClass()
+## See also
+
+- [Inputfield::hasClass()](method-hasclass.md)
+- [Inputfield::removeClass()](method-removeclass.md)

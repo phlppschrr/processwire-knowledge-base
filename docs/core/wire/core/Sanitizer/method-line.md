@@ -1,4 +1,4 @@
-# Sanitizer::line()
+# $sanitizer->line($value, $maxLength = 0, array $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -13,15 +13,21 @@ Please note that like with the text sanitizer, the max length refers to a maximu
 characters, not bytes. The maxBytes is automatically set to the maxLength * 4, or can be
 specifically set via the `maxBytes` option.
 
+## Arguments
 
-@param string $value String to sanitize
+- string $value String to sanitize
+- int|array $maxLength Maximum length in characters, omit (0) for no max-length, or substitute $options array
+- array $options Options to modify behavior, see text() sanitizer for all options.
 
-@param int|array $maxLength Maximum length in characters, omit (0) for no max-length, or substitute $options array
+## Return value
 
-@param array $options Options to modify behavior, see text() sanitizer for all options.
+string
 
-@return string
+## See also
 
-@see Sanitizer::text(), Sanitizer::lines()
+- [Sanitizer::text()](method-text.md)
+- [Sanitizer::lines()](method-lines.md)
 
-@since 3.0.157
+## Meta
+
+- @since 3.0.157

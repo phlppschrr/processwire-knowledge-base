@@ -1,7 +1,9 @@
-# Tfa::getModuleConfigInputfields()
+# $tfa->getModuleConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/core/Tfa.php`
 
 Module configuration
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- InputfieldWrapper $inputfields

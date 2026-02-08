@@ -1,10 +1,13 @@
-# WireArray::removeData()
+# $wireArray->removeData($key): $this
 
 Source: `wire/core/WireArray.php`
 
 Remove a property/value previously set with the WireArray::data() method.
 
+## Arguments
 
-@param string $key Name of property you want to remove
+- string $key Name of property you want to remove
 
-@return $this
+## Return value
+
+$this

@@ -1,4 +1,4 @@
-# PagesAccess::getAccessTemplates()
+# $pagesAccess->getAccessTemplates()
 
 Source: `wire/core/PagesAccess.php`
 

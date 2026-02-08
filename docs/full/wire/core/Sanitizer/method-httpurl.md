@@ -1,14 +1,18 @@
-# Sanitizer::httpUrl()
+# $sanitizer->httpUrl($value, $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
 URL with http or https scheme required
 
+## Arguments
 
-@param string $value URL to validate
+- string $value URL to validate
+- array $options See the url() method for all options.
 
-@param array $options See the url() method for all options.
+## Return value
 
-@return string Returns valid URL or blank string if it cannot be made valid.
+string Returns valid URL or blank string if it cannot be made valid.
 
-@since 3.0.129
+## Meta
+
+- @since 3.0.129

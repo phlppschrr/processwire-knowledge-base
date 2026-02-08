@@ -1,4 +1,4 @@
-# FieldgroupsArray::makeBlankItem()
+# $fieldgroupsArray->makeBlankItem()
 
 Source: `wire/core/FieldgroupsArray.php`
 

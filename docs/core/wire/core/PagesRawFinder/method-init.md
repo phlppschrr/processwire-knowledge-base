@@ -1,9 +1,10 @@
-# PagesRawFinder::init()
+# $pagesRawFinder->init($selector, $field, $options)
 
 Source: `wire/core/PagesRaw.php`
 
-@param string|int|array|Selectors
 
-@param string|array|Field $field
+## Arguments
 
-@param array $options
+- string|int|array|Selectors
+- string|array|Field $field
+- array $options

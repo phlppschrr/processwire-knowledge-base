@@ -1,9 +1,13 @@
-# PagesPathFinder::getPathPartsLanguage()
+# $pagesPathFinder->getPathPartsLanguage(array &$parts): Language|null
 
 Source: `wire/core/PagesPathFinder.php`
 
 Get language that path is in and apply it to result
 
-@param array $parts
+## Arguments
 
-@return Language|null
+- array $parts
+
+## Return value
+
+Language|null

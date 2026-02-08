@@ -1,7 +1,12 @@
-# FieldtypeRepeaterConfigHelper::getConfigInputfieldsStorage()
+# $fieldtypeRepeaterConfigHelper->getConfigInputfieldsStorage(InputfieldWrapper $inputfields): InputfieldFieldset
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
-@param InputfieldWrapper $inputfields
 
-@return InputfieldFieldset
+## Arguments
+
+- InputfieldWrapper $inputfields
+
+## Return value
+
+InputfieldFieldset

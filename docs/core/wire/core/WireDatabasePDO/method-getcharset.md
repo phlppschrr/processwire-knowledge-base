@@ -1,10 +1,13 @@
-# WireDatabasePDO::getCharset()
+# $wireDatabasePDO->getCharset(): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Get current database charset (lowercase)
 
+## Return value
 
-@return string
+string
 
-@since 3.0.160
+## Meta
+
+- @since 3.0.160

@@ -1,7 +1,9 @@
-# Notification::isExpired()
+# $notification->isExpired(): bool
 
 Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Is this Notification expired?
 
-@return bool
+## Return value
+
+bool

@@ -1,9 +1,10 @@
-# WireInputData::__set()
+# $wireInputData->__set($key, $value)
 
 Source: `wire/core/WireInputData.php`
 
 Set an input value
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value

@@ -1,9 +1,13 @@
-# WireSaveableItems::has()
+# $wireSaveableItems->has($item): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Do we have the given item or item by given key?
 
-@param string|int|Saveable|WireData $item
+## Arguments
 
-@return bool
+- string|int|Saveable|WireData $item
+
+## Return value
+
+bool

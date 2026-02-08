@@ -1,9 +1,13 @@
-# SystemUpdaterChecks::checkMemoryLimit()
+# $systemUpdaterChecks->checkMemoryLimit(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Check PHP memory_limit setting
 
-@return bool Always returns true as memory_limit errors not considered fatal
+## Return value
 
-@since 3.0.206
+bool Always returns true as memory_limit errors not considered fatal
+
+## Meta
+
+- @since 3.0.206

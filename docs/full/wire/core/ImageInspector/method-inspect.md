@@ -1,11 +1,14 @@
-# ImageInspector::inspect()
+# $imageInspector->inspect($filename = '', $parseAppmarker = false): null|false|array
 
 Source: `wire/core/ImageInspector.php`
 
 parse Image and return information
 
-@param string $filename the file we want to inspect
+## Arguments
 
-@param bool $parseAppmarker (IPTC), default is FALSE
+- string $filename the file we want to inspect
+- bool $parseAppmarker (IPTC), default is FALSE
 
-@return null|false|array
+## Return value
+
+null|false|array

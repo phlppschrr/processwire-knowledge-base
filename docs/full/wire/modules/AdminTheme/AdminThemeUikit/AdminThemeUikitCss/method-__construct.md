@@ -1,9 +1,10 @@
-# AdminThemeUikitCss::__construct()
+# $adminThemeUikitCss->__construct(AdminTheme $adminTheme, array $options = array())
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Construct
 
-@param AdminTheme $adminTheme
+## Arguments
 
-@param array $options
+- AdminTheme $adminTheme
+- array $options

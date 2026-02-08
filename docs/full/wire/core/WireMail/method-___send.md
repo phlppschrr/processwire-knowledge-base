@@ -1,4 +1,4 @@
-# WireMail::___send()
+# $wireMail->___send(): int
 
 Source: `wire/core/WireMail.php`
 
@@ -6,5 +6,6 @@ Send the email
 
 Call this method only after you have specified at least the `subject`, `to` and `body`.
 
+## Return value
 
-@return int Returns a positive number (indicating number of addresses emailed) or 0 on failure.
+int Returns a positive number (indicating number of addresses emailed) or 0 on failure.

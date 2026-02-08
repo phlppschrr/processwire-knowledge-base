@@ -1,4 +1,4 @@
-# Page::___saveReady()
+# $page->___saveReady(array $changes, $name = false)
 
 Source: `wire/core/Page.php`
 
@@ -22,11 +22,11 @@ $wire->addHook('Page:saveReady', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param array $changes Names of changed field names and/or properties
+- array $changes Names of changed field names and/or properties
+- string|false $name Indicates whether entire page was saved or just a field/property: - Populated with `string` field or property name if `$page->save($name)` was used rather than `$page->save();` - Populated with `false` if entire page is to be saved, i.e. `$page->save()`
 
-@param string|false $name Indicates whether entire page was saved or just a field/property:
- - Populated with `string` field or property name if `$page->save($name)` was used rather than `$page->save();`
- - Populated with `false` if entire page is to be saved, i.e. `$page->save()`
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

@@ -1,4 +1,4 @@
-# Config::requestMethod()
+# $config->requestMethod($match = ''): string
 
 Source: `wire/core/Config.php`
 
@@ -20,9 +20,14 @@ if($method) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|array $match Return found method if request method equals one given (blank if not), not case sensitive (default='')
+- string|array $match Return found method if request method equals one given (blank if not), not case sensitive (default='')
 
-@return string Returns one of GET, POST, HEAD, PUT, DELETE, OPTIONS, PATCH, OTHER or blank string if no match
+## Return value
 
-@since 3.0.175
+string Returns one of GET, POST, HEAD, PUT, DELETE, OPTIONS, PATCH, OTHER or blank string if no match
+
+## Meta
+
+- @since 3.0.175

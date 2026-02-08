@@ -1,10 +1,13 @@
-# SessionCSRF::getToken()
+# $sessionCSRF->getToken($id = ''): array
 
 Source: `wire/core/SessionCSRF.php`
 
 Get a CSRF Token name and value
 
+## Arguments
 
-@param int|string|null $id Optional unique ID for this token
+- int|string|null $id Optional unique ID for this token
 
-@return array ("name" => "token name", "value" => "token value", "time" => created timestamp)
+## Return value
+
+array ("name" => "token name", "value" => "token value", "time" => created timestamp)

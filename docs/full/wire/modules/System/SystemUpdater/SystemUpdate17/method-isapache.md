@@ -1,7 +1,9 @@
-# SystemUpdate17::isApache()
+# $systemUpdate17->isApache(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdate17.php`
 
 Are we running under Apache?
 
-@return bool
+## Return value
+
+bool

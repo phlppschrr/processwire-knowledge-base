@@ -1,9 +1,13 @@
-# FilenameArray::add()
+# $filenameArray->add($filename): $this
 
 Source: `wire/core/FilenameArray.php`
 
 Add a file
 
-@param string $filename
+## Arguments
 
-@return $this
+- string $filename
+
+## Return value
+
+$this

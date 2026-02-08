@@ -1,4 +1,4 @@
-# PagesPathFinder::finishResultRedirectPageNum()
+# $pagesPathFinder->finishResultRedirectPageNum($response, &$result): int
 
 Source: `wire/core/PagesPathFinder.php`
 
@@ -8,10 +8,15 @@ Most of the logic here allows for the special case of admin URLs, which work wit
 a custom pageNumUrlPrefix or the original/default one. This is a helper for the
 finishResult() method.
 
-@param int $response
+## Arguments
 
-@var array $result
+- int $response
 
-@return int
+## Return value
 
-@since 3.0.198
+int
+
+## Meta
+
+- @var array $result
+- @since 3.0.198

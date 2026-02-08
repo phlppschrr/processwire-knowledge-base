@@ -1,11 +1,14 @@
-# LanguagesPageFieldValue::setLanguageValue()
+# $languagesPageFieldValue->setLanguageValue($languageID, $value): $this
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Sets the value for a given language
 
-@param int|Language|string $languageID Language object, id, or name
+## Arguments
 
-@param mixed $value
+- int|Language|string $languageID Language object, id, or name
+- mixed $value
 
-@return $this
+## Return value
+
+$this

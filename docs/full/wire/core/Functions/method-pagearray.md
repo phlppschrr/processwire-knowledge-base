@@ -1,4 +1,4 @@
-# Functions::PageArray()
+# $functions->PageArray($items = array()): PageArray
 
 Source: `wire/core/Functions.php`
 
@@ -13,9 +13,14 @@ $a = PageArray($page); // create PageArray with one page
 $a = PageArray([ $page1, $page2, $page3 ]); // create PageArray with multiple items
 ~~~~~
 
+## Arguments
 
-@param array|PageArray $items
+- array|PageArray $items
 
-@return PageArray
+## Return value
 
-@since 3.0.123
+PageArray
+
+## Meta
+
+- @since 3.0.123

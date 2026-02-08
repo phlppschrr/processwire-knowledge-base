@@ -1,4 +1,4 @@
-# Sanitizer::fieldSubfield()
+# $sanitizer->fieldSubfield($value, $limit = 1): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -19,11 +19,15 @@ echo $sanitizer->fieldSubfield('foo bar.baz'); // outputs: foo_bar.baz
 echo $sanitizer->fieldSubfield('foo bar baz'); // outputs: foo_bar_baz
 ~~~~~~
 
+## Arguments
 
-@param string $value Value to sanitize
+- string $value Value to sanitize
+- int $limit Max allowed quantity of subfields, or use -1 for any quantity (default=1).
 
-@param int $limit Max allowed quantity of subfields, or use -1 for any quantity (default=1).
+## Return value
 
-@return string
+string
 
-@since 3.0.126
+## Meta
+
+- @since 3.0.126

@@ -1,4 +1,4 @@
-# Pages::__invoke()
+# $pages->__invoke($key): Page|Pages|PageArray
 
 Source: `wire/core/Pages.php`
 
@@ -8,6 +8,10 @@ When given an integer or page path string, it calls $pages->get(key);
 When given a string, it calls $pages->find($key);
 When given an array, it calls $pages->getById($key);
 
-@param string|int|array $key
+## Arguments
 
-@return Page|Pages|PageArray
+- string|int|array $key
+
+## Return value
+
+Page|Pages|PageArray

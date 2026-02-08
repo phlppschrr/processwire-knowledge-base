@@ -1,7 +1,12 @@
-# InputfieldTinyMCETools::__get()
+# $inputfieldTinyMCETools->__get($name): array|mixed|string|null
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
-@param string $name
 
-@return array|mixed|string|null
+## Arguments
+
+- string $name
+
+## Return value
+
+array|mixed|string|null

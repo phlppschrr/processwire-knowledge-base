@@ -1,4 +1,4 @@
-# WireAction::__construct()
+# $wireAction->__construct()
 
 Source: `wire/core/WireAction.php`
 

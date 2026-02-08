@@ -1,9 +1,13 @@
-# FilenameArray::append()
+# $filenameArray->append($filename): FilenameArray
 
 Source: `wire/core/FilenameArray.php`
 
 Append $filename to the end
 
-@param string $filename
+## Arguments
 
-@return FilenameArray
+- string $filename
+
+## Return value
+
+FilenameArray

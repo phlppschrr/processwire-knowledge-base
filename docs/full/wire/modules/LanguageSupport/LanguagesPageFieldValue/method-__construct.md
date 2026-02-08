@@ -1,11 +1,11 @@
-# LanguagesPageFieldValue::__construct()
+# $languagesPageFieldValue->__construct($page = null, $field = null, $values = null)
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Construct the multi language value
 
-@param Page|null $page
+## Arguments
 
-@param Field|null $field
-
-@param array|string $values
+- Page|null $page
+- Field|null $field
+- array|string $values

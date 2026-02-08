@@ -1,13 +1,15 @@
-# InputfieldPageTableAjax::addItem()
+# $inputfieldPageTableAjax->addItem(Page $page, Field $field, Page $item): bool
 
 Source: `wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax.php`
 
 Handler for the InputfieldPageTableAdd ajax action
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- Page $item
 
-@param Page $item
+## Return value
 
-@return bool
+bool

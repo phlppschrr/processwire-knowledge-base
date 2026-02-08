@@ -1,11 +1,17 @@
-# Pagefile::save()
+# $pagefile->save(): bool
 
 Source: `wire/core/Pagefile.php`
 
 Save this Pagefile independently of the Page it lives on
 
-@return bool
+## Return value
 
-@throws WireException
+bool
 
-@since 3.0.154
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.154

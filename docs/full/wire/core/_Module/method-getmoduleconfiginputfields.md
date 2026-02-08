@@ -1,7 +1,12 @@
-# _Module::getModuleConfigInputfields()
+# $module->getModuleConfigInputfields($data = null): InputfieldWrapper
 
 Source: `wire/core/Module.php`
 
-@param InputfieldWrapper|array|null $data
 
-@return InputfieldWrapper
+## Arguments
+
+- InputfieldWrapper|array|null $data
+
+## Return value
+
+InputfieldWrapper

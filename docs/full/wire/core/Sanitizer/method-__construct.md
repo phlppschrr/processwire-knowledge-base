@@ -1,4 +1,4 @@
-# Sanitizer::__construct()
+# $sanitizer->__construct()
 
 Source: `wire/core/Sanitizer.php`
 

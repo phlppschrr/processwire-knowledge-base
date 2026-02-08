@@ -1,4 +1,4 @@
-# ImageSizerEngineGD::unsharpMask()
+# $imageSizerEngineGD->unsharpMask($img, $amount, $radius, $threshold): resource
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
@@ -10,12 +10,13 @@ Please leave this notice.
 
 http://vikjavev.no/computing/ump.php
 
-@param resource $img
+## Arguments
 
-@param int $amount
+- resource $img
+- int $amount
+- int $radius
+- int $threshold
 
-@param int $radius
+## Return value
 
-@param int $threshold
-
-@return resource
+resource

@@ -1,12 +1,17 @@
-# WireDatabasePDO::quote()
+# $wireDatabasePDO->quote($str): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Quote and escape a string value
 
+## Arguments
 
-@param string $str
+- string $str
 
-@return string
+## Return value
 
-@link http://php.net/manual/en/pdo.quote.php
+string
+
+## Meta
+
+- @link http://php.net/manual/en/pdo.quote.php

@@ -1,13 +1,18 @@
-# Template::addRole()
+# $template->addRole($role, $type = 'view'): $this
 
 Source: `wire/core/Template.php`
 
 Add a Role to this template for view, edit, create, or add permission
 
-@param Role|int|string $role Role instance, id or name
+## Arguments
 
-@param string $type Type of role being added, one of: view, edit, create, add. (default=view)
+- Role|int|string $role Role instance, id or name
+- string $type Type of role being added, one of: view, edit, create, add. (default=view)
 
-@return $this
+## Return value
 
-@throws WireException If given $role cannot be resolved
+$this
+
+## Throws
+
+- WireException If given $role cannot be resolved

@@ -1,4 +1,4 @@
-# Languages::setLocale()
+# $languages->setLocale($category = LC_ALL, $locale = null): string|bool
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -40,11 +40,15 @@ $languages->setLocale(LC_ALL, 'en_US.UTF-8, en_US, en');
 $languages->setLocale(null, 'LC_CTYPE=en_US;LC_NUMERIC=de_DE;LC_TIME=es_ES');
 ~~~~~
 
-@param int|string|array|null|Language $category Specify a PHP “LC_” constant (int) or omit (or null) for default (LC_ALL).
+## Arguments
 
-@param int|string|array|null|Language $locale Specify string, array or CSV string of locale name(s),
-  omit (null) for current language locale, or specify Language object to pull locale from that language.
+- int|string|array|null|Language $category Specify a PHP “LC_” constant (int) or omit (or null) for default (LC_ALL).
+- int|string|array|null|Language $locale Specify string, array or CSV string of locale name(s), omit (null) for current language locale, or specify Language object to pull locale from that language.
 
-@return string|bool Returns the locale that was set or boolean false if requested locale cannot be set.
+## Return value
 
-@see Languages::getLocale()
+string|bool Returns the locale that was set or boolean false if requested locale cannot be set.
+
+## See also
+
+- [Languages::getLocale()](method-getlocale.md)

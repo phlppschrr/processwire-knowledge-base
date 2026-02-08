@@ -1,12 +1,11 @@
-# Pages::___sorted()
+# $pages->___sorted(Page $page, $children = false, $total = 0)
 
 Source: `wire/core/Pages.php`
 
 Hook called after a page has been sorted, or had its children re-sorted
 
+## Arguments
 
-@param Page $page Page given to have sort adjusted
-
-@param bool $children If true, children of $page have been all been re-sorted
-
-@param int $total Total number of pages that had sort adjusted as a result
+- Page $page Page given to have sort adjusted
+- bool $children If true, children of $page have been all been re-sorted
+- int $total Total number of pages that had sort adjusted as a result

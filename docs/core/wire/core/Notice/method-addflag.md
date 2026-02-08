@@ -1,9 +1,13 @@
-# Notice::addFlag()
+# $notice->addFlag($flag)
 
 Source: `wire/core/Notice.php`
 
 Add a flag
 
-@param int|string $flag
+## Arguments
 
-@since 3.0.149
+- int|string $flag
+
+## Meta
+
+- @since 3.0.149

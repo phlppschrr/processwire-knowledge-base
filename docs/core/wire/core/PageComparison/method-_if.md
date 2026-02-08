@@ -1,4 +1,4 @@
-# PageComparison::_if()
+# $pageComparison->_if(Page $page, $key, $yes = '', $no = ''): mixed|string|bool
 
 Source: `wire/core/PageComparison.php`
 
@@ -9,14 +9,17 @@ plus some useful PW type-specific logic, providing a useful output shortcut.
 
 See phpdoc in `Page::if()` for full details.
 
-@param Page $page
+## Arguments
 
-@param string|bool|int $key Name of field to check, selector string to evaluate, or boolean/int to evalute
+- Page $page
+- string|bool|int $key Name of field to check, selector string to evaluate, or boolean/int to evalute
+- string|callable|mixed $yes If value for $key is present, return or call this
+- string|callable|mixed $no If value for $key is empty, return or call this
 
-@param string|callable|mixed $yes If value for $key is present, return or call this
+## Return value
 
-@param string|callable|mixed $no If value for $key is empty, return or call this
+mixed|string|bool
 
-@return mixed|string|bool
+## Meta
 
-@since 3.0.126
+- @since 3.0.126

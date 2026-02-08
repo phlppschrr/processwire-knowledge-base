@@ -1,4 +1,4 @@
-# WireDatabasePDO::sqlMode()
+# $wireDatabasePDO->sqlMode($action = 'get', $mode = '', $minVersion = '', $pdo = null): string|bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -16,15 +16,17 @@ $database->sqlMode('add', 'STRICT_TRANS_TABLES');
 $database->sqlMode('remove', 'ONLY_FULL_GROUP_BY', '5.7.0');
 ~~~~~
 
-@param string $action Specify "get", "set", "add" or "remove". (default="get")
+## Arguments
 
-@param string $mode Mode string or CSV string with SQL mode(s), i.e. "STRICT_TRANS_TABLES,ONLY_FULL_GROUP_BY".
-  This argument should be omitted when using the "get" action.
+- string $action Specify "get", "set", "add" or "remove". (default="get")
+- string $mode Mode string or CSV string with SQL mode(s), i.e. "STRICT_TRANS_TABLES,ONLY_FULL_GROUP_BY". This argument should be omitted when using the "get" action.
+- string $minVersion Make the given action only apply if MySQL version is at least $minVersion, i.e. "5.7.0".
+- \PDO PDO connection to use or omit for current (default=null) 3.0.175+
 
-@param string $minVersion Make the given action only apply if MySQL version is at least $minVersion, i.e. "5.7.0".
+## Return value
 
-@param \PDO PDO connection to use or omit for current (default=null) 3.0.175+
+string|bool Returns string in "get" action, boolean false if required version not present, or true otherwise.
 
-@return string|bool Returns string in "get" action, boolean false if required version not present, or true otherwise.
+## Throws
 
-@throws WireException If given an invalid $action
+- WireException If given an invalid $action

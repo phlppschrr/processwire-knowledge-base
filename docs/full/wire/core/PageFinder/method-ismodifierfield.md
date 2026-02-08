@@ -1,9 +1,13 @@
-# PageFinder::isModifierField()
+# $pageFinder->isModifierField($name): string
 
 Source: `wire/core/PageFinder.php`
 
 Is given field name a modifier that does not directly refer to a field or column name?
 
-@param string $name
+## Arguments
 
-@return string Returns normalized modifier name if a modifier or boolean false if not
+- string $name
+
+## Return value
+
+string Returns normalized modifier name if a modifier or boolean false if not

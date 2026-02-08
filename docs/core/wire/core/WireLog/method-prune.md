@@ -1,14 +1,18 @@
-# WireLog::prune()
+# $wireLog->prune($name, $days): int
 
 Source: `wire/core/WireLog.php`
 
 Prune log file to contain only entries from last [n] days
 
+## Arguments
 
-@param string $name Name of log file, excluding path and extension.
+- string $name Name of log file, excluding path and extension.
+- int $days Number of days
 
-@param int $days Number of days
+## Return value
 
-@return int Number of items in newly pruned log file or boolean false on failure
+int Number of items in newly pruned log file or boolean false on failure
 
-@throws WireException
+## Throws
+
+- WireException

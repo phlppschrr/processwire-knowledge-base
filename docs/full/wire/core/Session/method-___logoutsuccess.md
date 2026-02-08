@@ -1,8 +1,9 @@
-# Session::___logoutSuccess()
+# $session->___logoutSuccess(User $user)
 
 Source: `wire/core/Session.php`
 
 Logout success method for hooks
 
+## Arguments
 
-@param User $user User that logged in
+- User $user User that logged in

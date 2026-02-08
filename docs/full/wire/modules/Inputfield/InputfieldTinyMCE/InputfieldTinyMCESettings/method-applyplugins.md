@@ -1,9 +1,10 @@
-# InputfieldTinyMCESettings::applyPlugins()
+# $inputfieldTinyMCESettings->applyPlugins(array &$settings, array $defaults)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Apply plugins settings
 
-@param array $settings
+## Arguments
 
-@param array $defaults
+- array $settings
+- array $defaults

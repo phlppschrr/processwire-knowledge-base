@@ -1,7 +1,9 @@
-# AdminThemeFramework::___getPrimaryNavArray()
+# $adminThemeFramework->___getPrimaryNavArray(): array
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Return nav array of primary navigation
 
-@return array
+## Return value
+
+array

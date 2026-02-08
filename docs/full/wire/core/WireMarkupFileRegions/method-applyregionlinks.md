@@ -1,4 +1,4 @@
-# WireMarkupFileRegions::applyRegionLinks()
+# $wireMarkupFileRegions->applyRegionLinks(&$html, $basename, $url, $ext, array $options): string
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
@@ -10,16 +10,18 @@ to `/site/assets/markup-regions/main.css`.
 If the autoInsert option is enabled and there is no existing `main.css` to update then it will return
 a string with the `<link>` tag to main.css in it.
 
-@param string $html
+## Arguments
 
-@param string $basename
+- string $html
+- string $basename
+- string $url
+- string $ext
+- array $options
 
-@param string $url
+## Return value
 
-@param string $ext
+string
 
-@param array $options
+## Meta
 
-@return string
-
-@since 3.0.254
+- @since 3.0.254

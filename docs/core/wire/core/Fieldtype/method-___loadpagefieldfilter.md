@@ -1,4 +1,4 @@
-# Fieldtype::___loadPageFieldFilter()
+# $fieldtype->___loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null
 
 Source: `wire/core/Fieldtype.php`
 
@@ -9,11 +9,12 @@ provided which can filter the returned value.
 
 As far as core Fieldtypes go, this one is only applicable to FieldtypeMulti derived types.
 
+## Arguments
 
-@param Page $page Page object to save.
+- Page $page Page object to save.
+- Field $field Field to retrieve from the page.
+- Selectors|string|array $selector
 
-@param Field $field Field to retrieve from the page.
+## Return value
 
-@param Selectors|string|array $selector
-
-@return mixed|null
+mixed|null

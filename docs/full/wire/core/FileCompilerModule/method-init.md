@@ -1,4 +1,4 @@
-# FileCompilerModule::init()
+# $fileCompilerModule->init()
 
 Source: `wire/core/FileCompilerModule.php`
 

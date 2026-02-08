@@ -1,4 +1,4 @@
-# Notices::removeNotice()
+# $notices->removeNotice($item): self
 
 Source: `wire/core/Notices.php`
 
@@ -6,8 +6,14 @@ Remove a Notice
 
 Like the remove() method but also removes persist notices.
 
-@param string|Notice $item Accepts a Notice object or Notice ID string.
+## Arguments
 
-@return self
+- string|Notice $item Accepts a Notice object or Notice ID string.
 
-@since 3.0.149
+## Return value
+
+self
+
+## Meta
+
+- @since 3.0.149

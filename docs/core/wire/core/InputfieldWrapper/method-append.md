@@ -1,10 +1,13 @@
-# InputfieldWrapper::append()
+# $inputfieldWrapper->append(Inputfield $item): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Append an Inputfield to this instance’s children.
 
+## Arguments
 
-@param Inputfield $item Item to append
+- Inputfield $item Item to append
 
-@return $this
+## Return value
+
+$this

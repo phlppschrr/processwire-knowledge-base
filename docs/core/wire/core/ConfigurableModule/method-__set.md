@@ -1,11 +1,14 @@
-# ConfigurableModule::__set()
+# $configurableModule->__set($key, $value): mixed
 
 Source: `wire/core/ConfigurableModule.php`
 
 Set a module config property
 
-@param $key
+## Arguments
 
-@param $value
+- $key
+- $value
 
-@return mixed
+## Return value
+
+mixed

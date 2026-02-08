@@ -1,12 +1,17 @@
-# WireDatabasePDO::lastInsertId()
+# $wireDatabasePDO->lastInsertId($name = null): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Returns the ID of the last inserted row or sequence value
 
+## Arguments
 
-@param string|null $name
+- string|null $name
 
-@return string
+## Return value
 
-@link http://php.net/manual/en/pdo.lastinsertid.php
+string
+
+## Meta
+
+- @link http://php.net/manual/en/pdo.lastinsertid.php

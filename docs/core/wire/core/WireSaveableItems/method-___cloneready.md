@@ -1,9 +1,10 @@
-# WireSaveableItems::___cloneReady()
+# $wireSaveableItems->___cloneReady(Saveable $item, Saveable $copy)
 
 Source: `wire/core/WireSaveableItems.php`
 
 Hook that runs right before item is to be cloned.
 
-@param Saveable $item
+## Arguments
 
-@param Saveable $copy
+- Saveable $item
+- Saveable $copy

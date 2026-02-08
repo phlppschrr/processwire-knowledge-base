@@ -1,4 +1,4 @@
-# CommentList::renderCheckActions()
+# $commentList->renderCheckActions(array $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
@@ -12,6 +12,10 @@ error.
 It also populates a session variable 'CommentApprovalMessage' with
 a text message of what occurred.
 
-@param array $options
+## Arguments
 
-@return string
+- array $options
+
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# Fieldtype::___exportValue()
+# $fieldtype->___exportValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -12,15 +12,13 @@ When applicable, this method should map things like internal IDs to named equiva
 If not overridden, this takes on the same behavior as `Fieldtype::sleepValue()`. However, if overridden,
 it is intended to be more verbose than wakeupValue, where applicable.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
+- string|int|float|array|object|null $value
+- array $options Optional settings to shape the exported value, if needed: - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false). - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
 
-@param Field $field
+## Return value
 
-@param string|int|float|array|object|null $value
-
-@param array $options Optional settings to shape the exported value, if needed:
- - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false).
- - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
-
-@return string|float|int|array
+string|float|int|array

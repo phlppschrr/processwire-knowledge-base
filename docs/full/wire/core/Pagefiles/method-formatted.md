@@ -1,9 +1,13 @@
-# Pagefiles::formatted()
+# $pagefiles->formatted($set = null): bool
 
 Source: `wire/core/Pagefiles.php`
 
 Get or set formatted state
 
-@param bool|null $set
+## Arguments
 
-@return bool
+- bool|null $set
+
+## Return value
+
+bool

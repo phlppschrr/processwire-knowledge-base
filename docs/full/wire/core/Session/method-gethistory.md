@@ -1,4 +1,4 @@
-# Session::getHistory()
+# $session->getHistory(): array
 
 Source: `wire/core/Session.php`
 
@@ -26,5 +26,6 @@ array(
 );
 ~~~~~
 
+## Return value
 
-@return array Array of arrays containing history entries.
+array Array of arrays containing history entries.

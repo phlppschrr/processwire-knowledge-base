@@ -1,4 +1,4 @@
-# FieldSelectorInfo::__construct()
+# $fieldSelectorInfo->__construct()
 
 Source: `wire/core/FieldSelectorInfo.php`
 

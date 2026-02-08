@@ -1,4 +1,4 @@
-# Page::delete()
+# $page->delete($recursive = false): bool|int
 
 Source: `wire/core/Page.php`
 
@@ -19,11 +19,18 @@ $item = $pages->get('/some-page/');
 $item->delete(true);
 ~~~~~
 
+## Arguments
 
-@param bool $recursive If set to true, then this will attempt to delete all children too.
+- bool $recursive If set to true, then this will attempt to delete all children too.
 
-@return bool|int True on success, false on failure, or int quantity of pages deleted when recursive option is true.
+## Return value
 
-@throws WireException when attempting to delete a page with children and $recursive option is not specified.
+bool|int True on success, false on failure, or int quantity of pages deleted when recursive option is true.
 
-@see Pages::delete()
+## Throws
+
+- WireException when attempting to delete a page with children and $recursive option is not specified.
+
+## See also
+
+- [Pages::delete()](../Pages/method-___delete.md)

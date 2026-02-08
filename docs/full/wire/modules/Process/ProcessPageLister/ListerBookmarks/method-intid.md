@@ -1,9 +1,13 @@
-# ListerBookmarks::intID()
+# $listerBookmarks->intID($val): int
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Given an id or string key, return an int ID
 
-@param string|int $val
+## Arguments
 
-@return int
+- string|int $val
+
+## Return value
+
+int

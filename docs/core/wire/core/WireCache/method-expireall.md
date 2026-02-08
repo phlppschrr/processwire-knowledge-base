@@ -1,4 +1,4 @@
-# WireCache::expireAll()
+# $wireCache->expireAll(): int
 
 Source: `wire/core/WireCache.php`
 
@@ -6,6 +6,10 @@ Deletes all caches that have expiration dates (only)
 
 This method does not delete caches that are expired by saving of resources or matching selectors.
 
-@return int
+## Return value
 
-@since 3.0.130
+int
+
+## Meta
+
+- @since 3.0.130

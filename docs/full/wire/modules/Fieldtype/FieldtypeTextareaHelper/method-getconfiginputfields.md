@@ -1,13 +1,18 @@
-# FieldtypeTextareaHelper::getConfigInputfields()
+# $fieldtypeTextareaHelper->getConfigInputfields(Field $field, InputfieldWrapper $inputfields): InputfieldWrapper
 
 Source: `wire/modules/Fieldtype/FieldtypeTextareaHelper.php`
 
 Handles field config for Textarea field
 
-@param Field $field
+## Arguments
 
-@param InputfieldWrapper $inputfields
+- Field $field
+- InputfieldWrapper $inputfields
 
-@return InputfieldWrapper
+## Return value
 
-@throws WireException
+InputfieldWrapper
+
+## Throws
+
+- WireException

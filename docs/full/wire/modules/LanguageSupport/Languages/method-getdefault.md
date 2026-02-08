@@ -1,4 +1,4 @@
-# Languages::getDefault()
+# $languages->getDefault(): Language
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -12,6 +12,10 @@ if($user->language->id == $languages->getDefault()->id) {
 }
 ~~~~~
 
-@return Language
+## Return value
 
-@throws WireException when default language hasn't yet been set
+Language
+
+## Throws
+
+- WireException when default language hasn't yet been set

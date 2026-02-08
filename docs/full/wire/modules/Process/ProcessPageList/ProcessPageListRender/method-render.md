@@ -1,7 +1,9 @@
-# ProcessPageListRender::render()
+# $processPageListRender->render(): string|array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Render page list
 
-@return string|array
+## Return value
+
+string|array

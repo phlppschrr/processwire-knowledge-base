@@ -1,10 +1,13 @@
-# Session::hasCookie()
+# $session->hasCookie($checkLogin = false): bool
 
 Source: `wire/core/Session.php`
 
 Are session cookie(s) present?
 
+## Arguments
 
-@param bool $checkLogin Specify true to check instead for challenge cookie (which indicates login may be active).
+- bool $checkLogin Specify true to check instead for challenge cookie (which indicates login may be active).
 
-@return bool Returns true if session cookie present, false if not.
+## Return value
+
+bool Returns true if session cookie present, false if not.

@@ -1,9 +1,13 @@
-# ProcessModuleInstall::getTempDir()
+# $processModuleInstall->getTempDir(): string|bool
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Returns a temporary directory (path) for use by this object
 
-@return string|bool Returns false if you specified $create=false, and the dir doesn't exist
+## Return value
 
-@throws WireException If can't create temporary dir
+string|bool Returns false if you specified $create=false, and the dir doesn't exist
+
+## Throws
+
+- WireException If can't create temporary dir

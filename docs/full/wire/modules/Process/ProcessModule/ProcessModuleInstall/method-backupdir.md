@@ -1,11 +1,17 @@
-# ProcessModuleInstall::backupDir()
+# $processModuleInstall->backupDir($moduleDir): bool
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Create a backup of a module directory
 
-@param string $moduleDir
+## Arguments
 
-@return bool
+- string $moduleDir
 
-@throws WireException
+## Return value
+
+bool
+
+## Throws
+
+- WireException

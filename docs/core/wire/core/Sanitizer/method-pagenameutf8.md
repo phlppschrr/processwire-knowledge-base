@@ -1,4 +1,4 @@
-# Sanitizer::pageNameUTF8()
+# $sanitizer->pageNameUTF8($value, $maxLength = 128): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -9,9 +9,11 @@ Sanitize and allow for UTF-8 characters in page name
 - This method does not convert to or from UTF-8, it only sanitizes it against the whitelist.
 - If given a value that has only ASCII characters, this will pass control to the regular page name sanitizer.
 
+## Arguments
 
-@param string $value Value to sanitize
+- string $value Value to sanitize
+- int $maxLength Maximum number of characters allowed
 
-@param int $maxLength Maximum number of characters allowed
+## Return value
 
-@return string Sanitized value
+string Sanitized value

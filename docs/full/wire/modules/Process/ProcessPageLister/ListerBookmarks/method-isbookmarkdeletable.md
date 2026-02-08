@@ -1,9 +1,13 @@
-# ListerBookmarks::isBookmarkDeletable()
+# $listerBookmarks->isBookmarkDeletable(array $bookmark): bool
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Is the given bookmark deletable?
 
-@param array $bookmark
+## Arguments
 
-@return bool
+- array $bookmark
+
+## Return value
+
+bool

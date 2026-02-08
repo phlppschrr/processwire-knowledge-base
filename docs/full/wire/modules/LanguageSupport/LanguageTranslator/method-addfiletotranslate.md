@@ -1,13 +1,15 @@
-# LanguageTranslator::addFileToTranslate()
+# $languageTranslator->addFileToTranslate($filename, $filenameIsTextdomain = false, $save = true): string|bool
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Given a source file to translate, create a new textdomain
 
-@param string $filename Filename or textdomain that we will be translating, relative to site root.
+## Arguments
 
-@param bool $filenameIsTextdomain Specify true if $filename is a textdomain instead.
+- string $filename Filename or textdomain that we will be translating, relative to site root.
+- bool $filenameIsTextdomain Specify true if $filename is a textdomain instead.
+- bool $save Whether to save the language
 
-@param bool $save Whether to save the language
+## Return value
 
-@return string|bool Returns textdomain string if successful, or false if not.
+string|bool Returns textdomain string if successful, or false if not.

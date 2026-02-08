@@ -1,11 +1,17 @@
-# WireClassLoader::path()
+# $wireClassLoader->path($path): string
 
 Source: `wire/core/WireClassLoader.php`
 
 Normalize a path
 
-@param string $path
+## Arguments
 
-@return string
+- string $path
 
-@since 3.0.152
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.152

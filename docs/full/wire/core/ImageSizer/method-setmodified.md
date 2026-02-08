@@ -1,9 +1,13 @@
-# ImageSizer::setModified()
+# $imageSizer->setModified($modified): $this
 
 Source: `wire/core/ImageSizer.php`
 
 Set whether a modification was made
 
-@param $modified
+## Arguments
 
-@return $this
+- $modified
+
+## Return value
+
+$this

@@ -1,10 +1,13 @@
-# Field::getFieldgroups()
+# $field->getFieldgroups($getCount = false): FieldgroupsArray|int
 
 Source: `wire/core/Field.php`
 
 Return the list of Fieldgroups using this field.
 
+## Arguments
 
-@param bool $getCount Get count rather than FieldgroupsArray? (default=false) 3.0.182+
+- bool $getCount Get count rather than FieldgroupsArray? (default=false) 3.0.182+
 
-@return FieldgroupsArray|int WireArray of Fieldgroup objects or count if requested
+## Return value
+
+FieldgroupsArray|int WireArray of Fieldgroup objects or count if requested

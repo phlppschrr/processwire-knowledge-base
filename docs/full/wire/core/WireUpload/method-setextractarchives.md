@@ -1,9 +1,13 @@
-# WireUpload::setExtractArchives()
+# $wireUpload->setExtractArchives($extract = true): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set whether or not ZIP files may be extracted
 
-@param bool $extract
+## Arguments
 
-@return $this
+- bool $extract
+
+## Return value
+
+$this

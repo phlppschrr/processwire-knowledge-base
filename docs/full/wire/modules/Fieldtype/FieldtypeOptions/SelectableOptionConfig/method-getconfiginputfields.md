@@ -1,9 +1,13 @@
-# SelectableOptionConfig::getConfigInputfields()
+# $selectableOptionConfig->getConfigInputfields(): InputfieldWrapper
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionConfig.php`
 
 Provides the FieldtypeOptions::getConfigInputfields
 
-@return InputfieldWrapper
+## Return value
 
-@throws WireException
+InputfieldWrapper
+
+## Throws
+
+- WireException

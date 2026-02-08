@@ -1,4 +1,4 @@
-# WireSaveableItemsLookup::getLookupTable()
+# $wireSaveableItemsLookup->getLookupTable()
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 

@@ -1,4 +1,4 @@
-# Inputfield::parent()
+# $inputfield->parent($parent = null): null|Inputfield|InputfieldWrapper
 
 Source: `wire/core/Inputfield.php`
 
@@ -12,9 +12,14 @@ InputfieldWrapper instance of the parent.
 To set parent, specify an InputfieldWrapper for the $parent argument. The return value
 is the current Inputfield for fluent interface.
 
+## Arguments
 
-@param null|InputfieldWrapper $parent
+- null|InputfieldWrapper $parent
 
-@return null|Inputfield|InputfieldWrapper
+## Return value
 
-@since 3.0.110
+null|Inputfield|InputfieldWrapper
+
+## Meta
+
+- @since 3.0.110

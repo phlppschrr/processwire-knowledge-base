@@ -1,4 +1,4 @@
-# Page::isChanged()
+# $page->isChanged($what = ''): bool
 
 Source: `wire/core/Page.php`
 
@@ -32,8 +32,16 @@ $this->addHookBefore('Pages::saveReady', function($event) {
 });
 ~~~~~
 
-@param string $what If specified, only checks the given property for changes rather than the whole page.
+## Arguments
 
-@return bool
+- string $what If specified, only checks the given property for changes rather than the whole page.
 
-@see Wire::setTrackChanges(), Wire::getChanges(), Wire::trackChange()
+## Return value
+
+bool
+
+## See also
+
+- [Wire::setTrackChanges()](../Wire/method-settrackchanges.md)
+- [Wire::getChanges()](../Wire/method-getchanges.md)
+- [Wire::trackChange()](../Wire/method-trackchange.md)

@@ -1,4 +1,4 @@
-# WireDatabasePDO::getPrimaryKey()
+# $wireDatabasePDO->getPrimaryKey($table, $verbose = false): string|array
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -11,11 +11,15 @@ If you specify boolean `true` for the verbose option then it returns an simplifi
 information about the primary key. If you specify integer `2` then it returns an array of
 raw MySQL SHOW INDEX information.
 
+## Arguments
 
-@param string $table
+- string $table
+- bool|int $verbose Get array of info rather than column(s) string? (default=false)
 
-@param bool|int $verbose Get array of info rather than column(s) string? (default=false)
+## Return value
 
-@return string|array
+string|array
 
-@since 3.0.182
+## Meta
+
+- @since 3.0.182

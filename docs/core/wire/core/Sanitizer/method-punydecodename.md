@@ -1,11 +1,14 @@
-# Sanitizer::punyDecodeName()
+# $sanitizer->punyDecodeName($value, $version = 0): string
 
 Source: `wire/core/Sanitizer.php`
 
 Decode a PW-punycode'd name value
 
-@param string $value
+## Arguments
 
-@param int $version 0=auto-detect, 1=original/buggy, 2=punycode library, 3=php idn function
+- string $value
+- int $version 0=auto-detect, 1=original/buggy, 2=punycode library, 3=php idn function
 
-@return string
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# WireArray::data()
+# $wireArray->data($key = null, $value = null): WireArray|mixed|array|null
 
 Source: `wire/core/WireArray.php`
 
@@ -19,18 +19,11 @@ $all = $a->data();
 
 [Introduction of data method](https://processwire.com/talk/topic/5098-new-wirearray-api-additions-on-dev/)
 
-@param string|null|array|bool $key Name of data property you want to get or set, or:
- - Omit to get all data properties.
- - Specify associative array of [property => value] to set multiple properties.
- - Specify associative array and boolean TRUE for $value argument to replace all data with the new array given in $key.
- - Specify regular array of property names to return multiple properties.
- - Specify boolean FALSE to unset property name specified in $value argument.
+## Arguments
 
-@param mixed|null|bool $value Value of data property you want to set. Omit when getting properties.
- - Specify boolean TRUE to replace all data with associative array of data given in $key argument.
+- string|null|array|bool $key Name of data property you want to get or set, or: - Omit to get all data properties. - Specify associative array of [property => value] to set multiple properties. - Specify associative array and boolean TRUE for $value argument to replace all data with the new array given in $key. - Specify regular array of property names to return multiple properties. - Specify boolean FALSE to unset property name specified in $value argument.
+- mixed|null|bool $value Value of data property you want to set. Omit when getting properties. - Specify boolean TRUE to replace all data with associative array of data given in $key argument.
 
-@return WireArray|mixed|array|null Returns one of the following, depending on specified arguments:
- - `mixed` when getting a single property: whatever you set is what you will get back.
- - `null` if the property you are trying to get does not exist in the data.
- - `$this` reference to this WireArray if you were setting a value.
- - `array` of all data if you specified no arguments or requested multiple keys.
+## Return value
+
+WireArray|mixed|array|null Returns one of the following, depending on specified arguments: - `mixed` when getting a single property: whatever you set is what you will get back. - `null` if the property you are trying to get does not exist in the data. - `$this` reference to this WireArray if you were setting a value. - `array` of all data if you specified no arguments or requested multiple keys.

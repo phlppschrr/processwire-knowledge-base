@@ -1,14 +1,18 @@
-# Fields::___changeFieldtype()
+# $fields->___changeFieldtype(Field $field1, $keepSettings = false): bool
 
 Source: `wire/core/Fields.php`
 
 Change a field's type
 
+## Arguments
 
-@param Field $field1 Field with the new type already assigned
+- Field $field1 Field with the new type already assigned
+- bool $keepSettings Whether or not to keep custom $data settings (default=false)
 
-@param bool $keepSettings Whether or not to keep custom $data settings (default=false)
+## Return value
 
-@throws WireException
+bool
 
-@return bool
+## Throws
+
+- WireException

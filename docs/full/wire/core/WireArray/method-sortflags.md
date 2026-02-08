@@ -1,4 +1,4 @@
-# WireArray::sortFlags()
+# $wireArray->sortFlags($sortFlags = false): int
 
 Source: `wire/core/WireArray.php`
 
@@ -19,9 +19,14 @@ The following constants may be used when setting the sort flags:
 
 For more details, see `$sort_flags` argument at: https://www.php.net/manual/en/function.sort.php
 
+## Arguments
 
-@param bool $sortFlags Optionally specify flag(s) to set
+- bool $sortFlags Optionally specify flag(s) to set
 
-@return int Returns current flags
+## Return value
 
-@since 3.0.129
+int Returns current flags
+
+## Meta
+
+- @since 3.0.129

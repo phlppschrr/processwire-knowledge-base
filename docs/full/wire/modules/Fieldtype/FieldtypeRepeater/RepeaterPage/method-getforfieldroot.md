@@ -1,9 +1,13 @@
-# RepeaterPage::getForFieldRoot()
+# $repeaterPage->getForFieldRoot(): Field
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 For nested repeaters, return the root-level field that this repeater item belongs to
 
-@return Field
+## Return value
 
-@since 3.0.132
+Field
+
+## Meta
+
+- @since 3.0.132

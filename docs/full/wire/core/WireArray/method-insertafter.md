@@ -1,4 +1,4 @@
-# WireArray::insertAfter()
+# $wireArray->insertAfter($item, $existingItem): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -8,9 +8,11 @@ Insert an item after an existing item
 $items->insertAfter($newItem, $existingItem);
 ~~~~~
 
+## Arguments
 
-@param Wire|string|int $item Item you want to insert
+- Wire|string|int $item Item you want to insert
+- Wire|string|int $existingItem Item already present that you want to insert after
 
-@param Wire|string|int $existingItem Item already present that you want to insert after
+## Return value
 
-@return $this
+$this

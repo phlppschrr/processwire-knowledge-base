@@ -1,10 +1,13 @@
-# WireDatabasePDO::escapeStr()
+# $wireDatabasePDO->escapeStr($str): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Escape a string value, same as $database->quote() but without surrounding quotes
 
+## Arguments
 
-@param string $str
+- string $str
 
-@return string
+## Return value
+
+string

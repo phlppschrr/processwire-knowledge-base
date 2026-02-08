@@ -1,4 +1,4 @@
-# PageArray::filterDataSelectors()
+# $pageArray->filterDataSelectors(Selectors $selectors)
 
 Source: `wire/core/PageArray.php`
 
@@ -6,4 +6,6 @@ Prepare selectors for filtering
 
 Template method for descending classes to modify selectors if needed
 
-@param Selectors $selectors
+## Arguments
+
+- Selectors $selectors

@@ -1,9 +1,13 @@
-# ProcessModuleInstall::canInstallFromFileUpload()
+# $processModuleInstall->canInstallFromFileUpload($notify = true): bool
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Module upload allowed?
 
-@param bool $notify
+## Arguments
 
-@return bool
+- bool $notify
+
+## Return value
+
+bool

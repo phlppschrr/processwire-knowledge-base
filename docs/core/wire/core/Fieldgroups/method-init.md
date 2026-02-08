@@ -1,4 +1,4 @@
-# Fieldgroups::init()
+# $fieldgroups->init()
 
 Source: `wire/core/Fieldgroups.php`
 

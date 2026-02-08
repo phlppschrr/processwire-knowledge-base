@@ -1,7 +1,9 @@
-# PagesLoaderCache::__construct()
+# $pagesLoaderCache->__construct(Pages $pages)
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

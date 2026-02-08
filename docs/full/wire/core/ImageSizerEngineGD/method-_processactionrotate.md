@@ -1,11 +1,14 @@
-# ImageSizerEngineGD::_processActionRotate()
+# $imageSizerEngineGD->_processActionRotate(&$img, $degrees): bool|resource
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Process rotate action (internal)
 
-@param resource $img
+## Arguments
 
-@param $degrees
+- resource $img
+- $degrees
 
-@return bool|resource
+## Return value
+
+bool|resource

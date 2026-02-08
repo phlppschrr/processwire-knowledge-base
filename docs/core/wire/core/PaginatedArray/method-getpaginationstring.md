@@ -1,4 +1,4 @@
-# PaginatedArray::getPaginationString()
+# $paginatedArray->getPaginationString($label = '', $usePageNum = false): string
 
 Source: `wire/core/PaginatedArray.php`
 
@@ -36,9 +36,11 @@ echo $items->getPaginationString(array(
 ));
 ~~~~~
 
+## Arguments
 
-@param string|array $label Label to identify item type, i.e. "Items" or "Page", etc. (default=empty).
+- string|array $label Label to identify item type, i.e. "Items" or "Page", etc. (default=empty).
+- bool|array $usePageNum Specify true to show page numbers rather than item numbers (default=false).
 
-@param bool|array $usePageNum Specify true to show page numbers rather than item numbers (default=false).
+## Return value
 
-@return string Formatted string
+string Formatted string

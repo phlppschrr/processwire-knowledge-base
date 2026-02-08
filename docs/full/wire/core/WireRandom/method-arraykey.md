@@ -1,9 +1,13 @@
-# WireRandom::arrayKey()
+# $wireRandom->arrayKey(array $a): string|int
 
 Source: `wire/core/WireRandom.php`
 
 Get a random key from given array
 
-@param array $a
+## Arguments
 
-@return string|int
+- array $a
+
+## Return value
+
+string|int

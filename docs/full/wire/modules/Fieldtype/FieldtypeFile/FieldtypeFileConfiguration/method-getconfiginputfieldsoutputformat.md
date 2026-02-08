@@ -1,7 +1,9 @@
-# FieldtypeFileConfiguration::getConfigInputfieldsOutputFormat()
+# $fieldtypeFileConfiguration->getConfigInputfieldsOutputFormat(Field $field, InputfieldWrapper $fs)
 
 Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
-@param Field $field
 
-@param InputfieldWrapper $fs
+## Arguments
+
+- Field $field
+- InputfieldWrapper $fs

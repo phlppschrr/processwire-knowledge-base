@@ -1,4 +1,4 @@
-# Fieldtype::getBlankValue()
+# $fieldtype->getBlankValue(Page $page, Field $field): string|int|object|null
 
 Source: `wire/core/Fieldtype.php`
 
@@ -6,9 +6,11 @@ Return the blank value for this fieldtype, whether that is a blank string, zero 
 
 Default/non-implemented behavior is to return a blanks string.
 
+## Arguments
 
-@param Page|NullPage $page
+- Page|NullPage $page
+- Field $field
 
-@param Field $field
+## Return value
 
-@return string|int|object|null
+string|int|object|null

@@ -1,11 +1,14 @@
-# PagesPathFinder::addLanguageSegment()
+# $pagesPathFinder->addLanguageSegment($path, $language): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Add language segment
 
-@param string $path
+## Arguments
 
-@param string|Language|int $language
+- string $path
+- string|Language|int $language
 
-@return string
+## Return value
+
+string

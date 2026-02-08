@@ -1,7 +1,9 @@
-# TemplateFile::renderFinished()
+# $templateFile->renderFinished()
 
 Source: `wire/core/TemplateFile.php`
 
 Cleanup after render
 
-@since 3.0.154
+## Meta
+
+- @since 3.0.154

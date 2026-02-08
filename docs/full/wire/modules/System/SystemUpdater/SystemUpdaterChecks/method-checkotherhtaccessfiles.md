@@ -1,7 +1,9 @@
-# SystemUpdaterChecks::checkOtherHtaccessFiles()
+# $systemUpdaterChecks->checkOtherHtaccessFiles(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Check that other useful htaccess files are present
 
-@return bool
+## Return value
+
+bool

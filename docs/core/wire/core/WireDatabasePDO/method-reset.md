@@ -1,4 +1,4 @@
-# WireDatabasePDO::reset()
+# $wireDatabasePDO->reset($type = null): self
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -8,12 +8,14 @@ This forces re-creation of the PDO instance(s), whether writer, reader or both.
 This may be useful to call after a "MySQL server has gone away" error to attempt
 to re-establish the connection.
 
+## Arguments
 
-@param string|null $type
- - Specify 'writer' to reset writer instance.
- - Specify 'reader' to reset reader instance.
- - Omit or null to reset both, or whichever one is in use.
+- string|null $type - Specify 'writer' to reset writer instance. - Specify 'reader' to reset reader instance. - Omit or null to reset both, or whichever one is in use.
 
-@return self
+## Return value
 
-@since 3.0.240
+self
+
+## Meta
+
+- @since 3.0.240

@@ -1,5 +1,8 @@
-# Page::traversal()
+# $page->traversal(): PageTraversal
 
 Source: `wire/core/Page.php`
 
-@return PageTraversal
+
+## Return value
+
+PageTraversal

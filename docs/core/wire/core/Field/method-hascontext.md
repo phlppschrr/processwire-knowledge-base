@@ -1,16 +1,22 @@
-# Field::hasContext()
+# $field->hasContext($for, $namespace = ''): Field|bool
 
 Source: `wire/core/Field.php`
 
 Does this field have context settings for given Page/Template?
 
+## Arguments
 
-@param Page|Template|Fieldgroup|string $for Specify Page, Template, or template name string
+- Page|Template|Fieldgroup|string $for Specify Page, Template, or template name string
+- string $namespace Optional namespace (internal use)
 
-@param string $namespace Optional namespace (internal use)
+## Return value
 
-@return Field|bool
+Field|bool
 
-@since 3.0.163
+## See also
 
-@see Field::getContext()
+- [Field::getContext()](method-getcontext.md)
+
+## Meta
+
+- @since 3.0.163

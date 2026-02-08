@@ -1,4 +1,4 @@
-# WireHooks::allowRunPathHook()
+# $wireHooks->allowRunPathHook($id, array &$arguments): bool
 
 Source: `wire/core/WireHooks.php`
 
@@ -8,10 +8,15 @@ This checks if the hook’s path matches the request path, allowing for both
 regular and regex matches and populating parenthesized portions to arguments
 that will appear in the HookEvent.
 
-@param string $id Hook ID
+## Arguments
 
-@param array $arguments
+- string $id Hook ID
+- array $arguments
 
-@return bool
+## Return value
 
-@since 3.0.173
+bool
+
+## Meta
+
+- @since 3.0.173

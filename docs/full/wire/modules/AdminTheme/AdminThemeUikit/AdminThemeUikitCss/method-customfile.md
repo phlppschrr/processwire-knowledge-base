@@ -1,11 +1,14 @@
-# AdminThemeUikitCss::customFile()
+# $adminThemeUikitCss->customFile($file, $requireExtension = ''): string
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Apply custom file/path replacements
 
-@param string $file
+## Arguments
 
-@param string $requireExtension Extension to require on given file
+- string $file
+- string $requireExtension Extension to require on given file
 
-@return string
+## Return value
+
+string

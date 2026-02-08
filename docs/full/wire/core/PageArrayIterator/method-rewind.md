@@ -1,4 +1,4 @@
-# PageArrayIterator::rewind()
+# $pageArrayIterator->rewind()
 
 Source: `wire/core/PageArrayIterator.php`
 

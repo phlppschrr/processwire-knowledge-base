@@ -1,4 +1,4 @@
-# Pageimage::size()
+# $pageimage->size($width, $height = 0, $options = array()): Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -91,16 +91,12 @@ If you change these and a variation image at the existing dimensions already exi
 To clear out an old version of an image, use the `Pageimage::removeVariations()` method in this class before calling
 size() with new quality or upscaling settings.
 
+## Arguments
 
-@param int|string $width Target width of new image or (3.0.151+) specify prefined image size name
+- int|string $width Target width of new image or (3.0.151+) specify prefined image size name
+- int|array $height Target height of new image or (3.0.151+) options array if no height argument needed
+- array|string|int $options Array of options to override default behavior: - Specify `array` of options as indicated in the section above. - Or you may specify type `string` containing "cropping" value. - Or you may specify type `int` containing "quality" value. - Or you may specify type `bool` containing "upscaling" value.
 
-@param int|array $height Target height of new image or (3.0.151+) options array if no height argument needed
+## Return value
 
-@param array|string|int $options Array of options to override default behavior:
- - Specify `array` of options as indicated in the section above.
- - Or you may specify type `string` containing "cropping" value.
- - Or you may specify type `int` containing "quality" value.
- - Or you may specify type `bool` containing "upscaling" value.
-
-@return Pageimage Returns a new Pageimage object that is a variation of the original.
- If the specified dimensions/options are the same as the original, then the original will be returned.
+Pageimage Returns a new Pageimage object that is a variation of the original. If the specified dimensions/options are the same as the original, then the original will be returned.

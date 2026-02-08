@@ -1,9 +1,13 @@
-# WireException::setCodeStr()
+# $wireException->setCodeStr($codeStr)
 
 Source: `wire/core/Exceptions.php`
 
 Set alphanumeric code string
 
-@param string $codeStr
+## Arguments
 
-@since 3.0.248
+- string $codeStr
+
+## Meta
+
+- @since 3.0.248

@@ -1,4 +1,4 @@
-# WireTempDir::maintenance()
+# $wireTempDir->maintenance(): bool
 
 Source: `wire/core/WireTempDir.php`
 
@@ -6,8 +6,14 @@ Perform maintenance by cleaning up old temporary directories
 
 Note: This is done automatically if any temporary directories are created during the request.
 
-@throws WireException
+## Return value
 
-@return bool
+bool
 
-@since 3.0.175
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.175

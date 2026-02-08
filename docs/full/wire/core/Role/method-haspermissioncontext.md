@@ -1,13 +1,15 @@
-# Role::hasPermissionContext()
+# $role->hasPermissionContext($has, Permission $permission, Wire $context): bool
 
 Source: `wire/core/Role.php`
 
 Return whether the role has the permission within the context of a Page or Template
 
-@param bool $has Result from the hasPermission() method
+## Arguments
 
-@param Permission $permission Permission to check
+- bool $has Result from the hasPermission() method
+- Permission $permission Permission to check
+- Wire $context Must be a Template or Page
 
-@param Wire $context Must be a Template or Page
+## Return value
 
-@return bool
+bool

@@ -1,9 +1,13 @@
-# MarkupFieldtype::renderInputfieldValue()
+# $markupFieldtype->renderInputfieldValue($value): string
 
 Source: `wire/core/MarkupFieldtype.php`
 
 Render a value using an Inputfield's renderValue() method
 
-@param $value
+## Arguments
 
-@return string
+- $value
+
+## Return value
+
+string

@@ -1,13 +1,21 @@
-# WireSaveableItems::makeItem()
+# $wireSaveableItems->makeItem(array $a = array()): Saveable|WireData|Wire
 
 Source: `wire/core/WireSaveableItems.php`
 
 Make an item and populate with given data
 
-@param array $a Associative array of data to populate
+## Arguments
 
-@return Saveable|WireData|Wire
+- array $a Associative array of data to populate
 
-@throws WireException
+## Return value
 
-@since 3.0.146
+Saveable|WireData|Wire
+
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.146

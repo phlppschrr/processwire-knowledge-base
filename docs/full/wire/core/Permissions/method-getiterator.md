@@ -1,4 +1,4 @@
-# Permissions::getIterator()
+# $permissions->getIterator(): array|PageArray|\Traversable
 
 Source: `wire/core/Permissions.php`
 
@@ -11,4 +11,6 @@ foreach($permissions as $permission) {
 }
 ~~~~~
 
-@return array|PageArray|\Traversable
+## Return value
+
+array|PageArray|\Traversable

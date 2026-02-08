@@ -1,7 +1,9 @@
-# ProcessTemplateExportImport::___buildExport()
+# $processTemplateExportImport->___buildExport(): InputfieldForm
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
 Execute export
 
-@return InputfieldForm
+## Return value
+
+InputfieldForm

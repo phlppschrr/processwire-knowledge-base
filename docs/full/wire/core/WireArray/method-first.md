@@ -1,4 +1,4 @@
-# WireArray::first()
+# $wireArray->first(): Wire|mixed|bool
 
 Source: `wire/core/WireArray.php`
 
@@ -10,5 +10,6 @@ Note that this resets the internal WireArray pointer, which would affect other a
 $item = $items->first();
 ~~~~~
 
+## Return value
 
-@return Wire|mixed|bool
+Wire|mixed|bool

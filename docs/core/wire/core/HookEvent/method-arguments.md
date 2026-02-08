@@ -1,4 +1,4 @@
-# HookEvent::arguments()
+# $hookEvent->arguments($n = null, $value = null): array|null|mixed
 
 Source: `wire/core/HookEvent.php`
 
@@ -21,10 +21,11 @@ $event->arguments(0, $page);
 $event->arguments('page', $page);
 ~~~~~
 
-@param int $n Zero based number of the argument you want to retrieve, where 0 is the first.
-	 May also be a string containing the argument name.
-  Omit to return array of all arguments.
+## Arguments
 
-@param mixed $value Value that you want to set to this argument, or omit to only return the argument.
+- int $n Zero based number of the argument you want to retrieve, where 0 is the first. May also be a string containing the argument name. Omit to return array of all arguments.
+- mixed $value Value that you want to set to this argument, or omit to only return the argument.
 
-@return array|null|mixed
+## Return value
+
+array|null|mixed

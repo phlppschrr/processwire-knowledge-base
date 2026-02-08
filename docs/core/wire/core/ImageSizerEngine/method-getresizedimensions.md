@@ -1,4 +1,4 @@
-# ImageSizerEngine::getResizeDimensions()
+# $imageSizerEngine->getResizeDimensions($targetWidth, $targetHeight): array
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -8,8 +8,11 @@ Note: Some code used in this method is adapted from code found in comments at ph
 
 Intended for use by the resize() method
 
-@param int $targetWidth
+## Arguments
 
-@param int $targetHeight
+- int $targetWidth
+- int $targetHeight
 
-@return array
+## Return value
+
+array

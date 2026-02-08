@@ -1,4 +1,4 @@
-# ProcessWire::__destruct()
+# $processWire->__destruct()
 
 Source: `wire/core/ProcessWire.php`
 

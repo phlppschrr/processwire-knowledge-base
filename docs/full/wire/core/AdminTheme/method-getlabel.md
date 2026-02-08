@@ -1,13 +1,18 @@
-# AdminTheme::getLabel()
+# $adminTheme->getLabel($key, $val = ''): string
 
 Source: `wire/core/AdminTheme.php`
 
 Get predefined translated label by key for labels shared among admin themes
 
-@param string $key
+## Arguments
 
-@param string $val Value to return if label not available
+- string $key
+- string $val Value to return if label not available
 
-@return string
+## Return value
 
-@since 3.0.162
+string
+
+## Meta
+
+- @since 3.0.162

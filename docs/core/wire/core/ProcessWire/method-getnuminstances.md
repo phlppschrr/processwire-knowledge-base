@@ -1,8 +1,9 @@
-# ProcessWire::getNumInstances()
+# ProcessWire::getNumInstances(): int
 
 Source: `wire/core/ProcessWire.php`
 
 Return number of instances
 
+## Return value
 
-@return int
+int

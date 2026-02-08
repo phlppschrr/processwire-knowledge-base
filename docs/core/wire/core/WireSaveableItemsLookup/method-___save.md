@@ -1,11 +1,17 @@
-# WireSaveableItemsLookup::___save()
+# $wireSaveableItemsLookup->___save(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 
 Save the provided item to database
 
-@param Saveable $item
+## Arguments
 
-@return bool
+- Saveable $item
 
-@throws WireException
+## Return value
+
+bool
+
+## Throws
+
+- WireException

@@ -1,9 +1,13 @@
-# PagesPathFinder::getBlankResult()
+# $pagesPathFinder->getBlankResult(array $result = array()): array
 
 Source: `wire/core/PagesPathFinder.php`
 
 Build blank result/return value array
 
-@param array $result Optionally return blank result merged with this one
+## Arguments
 
-@return array
+- array $result Optionally return blank result merged with this one
+
+## Return value
+
+array

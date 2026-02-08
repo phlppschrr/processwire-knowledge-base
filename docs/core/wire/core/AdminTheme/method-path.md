@@ -1,9 +1,13 @@
-# AdminTheme::path()
+# $adminTheme->path(): string
 
 Source: `wire/core/AdminTheme.php`
 
 Get disk path to this admin theme
 
-@return string
+## Return value
 
-@since 3.0.171
+string
+
+## Meta
+
+- @since 3.0.171

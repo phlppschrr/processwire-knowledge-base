@@ -1,4 +1,4 @@
-# Role::wired()
+# $role->wired()
 
 Source: `wire/core/Role.php`
 

@@ -1,7 +1,9 @@
-# AdminThemeFramework::getModuleConfigInputfields()
+# $adminThemeFramework->getModuleConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Module Configuration
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- InputfieldWrapper $inputfields

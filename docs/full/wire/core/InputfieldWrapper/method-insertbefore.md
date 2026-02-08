@@ -1,4 +1,4 @@
-# InputfieldWrapper::insertBefore()
+# $inputfieldWrapper->insertBefore($item, $existingItem): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -19,9 +19,11 @@ $form->insertBefore('first_name', 'last_name');
 $form->insertBefore([ 'type' => 'text', 'name' => 'first_name' ], 'last_name');
 ~~~~~
 
+## Arguments
 
-@param Inputfield|array|string $item Item to insert
+- Inputfield|array|string $item Item to insert
+- Inputfield|string $existingItem Existing item you want to insert before.
 
-@param Inputfield|string $existingItem Existing item you want to insert before.
+## Return value
 
-@return $this
+$this

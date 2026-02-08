@@ -1,4 +1,4 @@
-# Field::setRoles()
+# $field->setRoles($type, $roles)
 
 Source: `wire/core/Field.php`
 
@@ -6,9 +6,11 @@ Set the roles that are allowed to view or edit this field on pages.
 
 Applicable only if the `Field::flagAccess` is set to this field's flags.
 
+## Arguments
 
-@param string $type Must be either "view" or "edit"
+- string $type Must be either "view" or "edit"
+- PageArray|array|null $roles May be a PageArray of Role objects or an array of Role IDs.
 
-@param PageArray|array|null $roles May be a PageArray of Role objects or an array of Role IDs.
+## Throws
 
-@throws WireException if given invalid argument
+- WireException if given invalid argument

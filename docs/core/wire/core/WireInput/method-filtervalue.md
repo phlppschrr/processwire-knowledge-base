@@ -1,15 +1,19 @@
-# WireInput::filterValue()
+# $wireInput->filterValue($value, array $valid, $getArray): array|string|null
 
 Source: `wire/core/WireInput.php`
 
 Filter value against given $valid whitelist
 
-@param string|array $value
+## Arguments
 
-@param array $valid Whitelist of valid values
+- string|array $value
+- array $valid Whitelist of valid values
+- bool $getArray Filter to allow multiple values (array)?
 
-@param bool $getArray Filter to allow multiple values (array)?
+## Return value
 
-@return array|string|null
+array|string|null
 
-@throws WireException If given a multidimensional array for $valid argument
+## Throws
+
+- WireException If given a multidimensional array for $valid argument

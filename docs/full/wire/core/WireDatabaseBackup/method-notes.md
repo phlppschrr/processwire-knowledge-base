@@ -1,10 +1,13 @@
-# WireDatabaseBackup::notes()
+# $wireDatabaseBackup->notes($reset = false): array
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Get all notes
 
+## Arguments
 
-@param bool $reset
+- bool $reset
 
-@return array
+## Return value
+
+array

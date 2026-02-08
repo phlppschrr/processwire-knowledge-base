@@ -1,11 +1,17 @@
-# WireHooks::allowPathHooks()
+# $wireHooks->allowPathHooks($allow = null): bool
 
 Source: `wire/core/WireHooks.php`
 
 Get or set whether path hooks are allowed
 
-@param bool|null $allow
+## Arguments
 
-@return bool
+- bool|null $allow
 
-@since 3.0.173
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.173

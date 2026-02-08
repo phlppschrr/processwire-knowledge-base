@@ -1,9 +1,13 @@
-# WireShutdown::getErrorMessage()
+# $wireShutdown->getErrorMessage(array $error): string
 
 Source: `wire/core/WireShutdown.php`
 
 Create more informative error message from $error array
 
-@param array $error Error array from PHP’s error_get_last()
+## Arguments
 
-@return string
+- array $error Error array from PHP’s error_get_last()
+
+## Return value
+
+string

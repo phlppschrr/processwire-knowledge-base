@@ -1,4 +1,4 @@
-# Inputfield::renderReady()
+# $inputfield->renderReady(?Inputfield $parent = null, $renderValueMode = false): bool
 
 Source: `wire/core/Inputfield.php`
 
@@ -15,9 +15,11 @@ The return value is true if assets were just added, and false if assets have alr
 call. This distinction probably doesn't matter in most usages, but here just in case a descending class needs
 to know when/if to add additional assets (i.e. when this method returns true).
 
+## Arguments
 
-@param Inputfield|null The parent InputfieldWrapper that is rendering it, or null if no parent.
+- Inputfield|null The parent InputfieldWrapper that is rendering it, or null if no parent.
+- bool $renderValueMode Specify true only if this is for `Inputfield::renderValue()` rather than `Inputfield::render()`.
 
-@param bool $renderValueMode Specify true only if this is for `Inputfield::renderValue()` rather than `Inputfield::render()`.
+## Return value
 
-@return bool True if assets were just added, false if already added.
+bool True if assets were just added, false if already added.

@@ -1,7 +1,9 @@
-# Template::setCacheExpirePages()
+# $template->setCacheExpirePages($value)
 
 Source: `wire/core/Template.php`
 
 Set the cacheExpirePages property
 
-@param array $value
+## Arguments
+
+- array $value

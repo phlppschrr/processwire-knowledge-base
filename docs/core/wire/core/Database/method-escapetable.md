@@ -1,9 +1,13 @@
-# Database::escapeTable()
+# $database->escapeTable($table): string
 
 Source: `wire/core/Database.php`
 
 Sanitize a table name for _a-zA-Z0-9
 
-@param string $table
+## Arguments
 
-@return string
+- string $table
+
+## Return value
+
+string

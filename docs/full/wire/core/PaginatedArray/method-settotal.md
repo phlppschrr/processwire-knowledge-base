@@ -1,10 +1,13 @@
-# PaginatedArray::setTotal()
+# $paginatedArray->setTotal($total): $this
 
 Source: `wire/core/PaginatedArray.php`
 
 Set the total number of items, if more than are in the WireArray.
 
+## Arguments
 
-@param int $total
+- int $total
 
-@return $this
+## Return value
+
+$this

@@ -1,4 +1,4 @@
-# ModulesConfigs::saveConfig()
+# $modulesConfigs->saveConfig($class, $data, $value = null): bool
 
 Source: `wire/core/ModulesConfigs.php`
 
@@ -16,16 +16,24 @@ $modules->saveConfig('HelloWorld', $data);
 
 3.0.16 Changed name from the more verbose saveModuleConfigData(), which will still work.
 
-@param string|Module $class Module or module name
+## Arguments
 
-@param array|string $data Associative array of configuration data, or name of property you want to save.
+- string|Module $class Module or module name
+- array|string $data Associative array of configuration data, or name of property you want to save.
+- mixed|null $value If you specified a property in previous arg, the value for the property.
 
-@param mixed|null $value If you specified a property in previous arg, the value for the property.
+## Return value
 
-@return bool True on success, false on failure
+bool True on success, false on failure
 
-@throws WireException
+## Throws
 
-@see Modules::getConfig()
+- WireException
 
-@since 3.0.16 Use method saveModuleConfigData() with same arguments for prior versions (can also be used on any version).
+## See also
+
+- [Modules::getConfig()](../Modules/method-getconfig.md)
+
+## Meta
+
+- @since 3.0.16 Use method saveModuleConfigData() with same arguments for prior versions (can also be used on any version).

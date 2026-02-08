@@ -1,4 +1,4 @@
-# FileCompilerModule::___uninstall()
+# $fileCompilerModule->___uninstall()
 
 Source: `wire/core/FileCompilerModule.php`
 

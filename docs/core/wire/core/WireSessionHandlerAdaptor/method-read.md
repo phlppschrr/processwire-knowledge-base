@@ -1,4 +1,4 @@
-# WireSessionHandlerAdaptor::read()
+# $wireSessionHandlerAdaptor->read(string $id): string|false
 
 Source: `wire/core/WireSessionHandlerAdaptor.php`
 
@@ -6,6 +6,10 @@ Reads the session data from the session storage, and returns the results.
 
 Called right after the session starts or when `session_start()` is called.
 
-@param string $id
+## Arguments
 
-@return string|false
+- string $id
+
+## Return value
+
+string|false

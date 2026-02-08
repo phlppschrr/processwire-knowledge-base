@@ -1,12 +1,20 @@
-# Page::filesPath()
+# $page->filesPath(): string
 
 Source: `wire/core/Page.php`
 
 Returns the path for files, creating it if it does not yet exist
 
+## Return value
 
-@return string
+string
 
-@since 3.0.138 You can also use the equivalent but more verbose `$page->filesManager()->path()` in any version
+## See also
 
-@see filesUrl(), hasFilesPath(), hasFiles(), filesManager()
+- filesUrl()
+- hasFilesPath()
+- hasFiles()
+- filesManager()
+
+## Meta
+
+- @since 3.0.138 You can also use the equivalent but more verbose `$page->filesManager()->path()` in any version

@@ -1,4 +1,4 @@
-# Parsedown::pregReplaceElements()
+# Parsedown::pregReplaceElements($regexp, $Elements, $text)
 
 Source: `wire/modules/Textformatter/TextformatterMarkdownExtra/parsedown/Parsedown.php`
 

@@ -1,11 +1,14 @@
-# Modules::memcache()
+# $modules->memcache($name, $setValue = null): bool|array|mixed|null
 
 Source: `wire/core/Modules.php`
 
 Set a runtime memory cache
 
-@param string $name
+## Arguments
 
-@param mixed $setValue
+- string $name
+- mixed $setValue
 
-@return bool|array|mixed|null
+## Return value
+
+bool|array|mixed|null

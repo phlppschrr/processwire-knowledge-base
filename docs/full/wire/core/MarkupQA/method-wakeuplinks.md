@@ -1,4 +1,4 @@
-# MarkupQA::wakeupLinks()
+# $markupQA->wakeupLinks(&$value): array
 
 Source: `wire/core/MarkupQA.php`
 
@@ -7,6 +7,10 @@ Wakeup href attributes, using the data-pwid attribute to update the href attribu
 Should be used BEFORE wakeupUrls() is called so that href attributes are relative to "/" rather than
 a potential "/subdir/" that wouldn't be recognized as a page path.
 
-@param $value
+## Arguments
 
-@return array Returns array of replacements that were made (3.0.184+)
+- $value
+
+## Return value
+
+array Returns array of replacements that were made (3.0.184+)

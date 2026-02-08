@@ -1,4 +1,4 @@
-# Sanitizer::url()
+# $sanitizer->url($value, $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -14,23 +14,15 @@ $url = $sanitizer->url('processwire.com/api/');
 echo $sanitizer->entities($url); // outputs: http://processwire.com/api/
 ~~~~~~
 
+## Arguments
 
-@param string $value URL to validate
+- string $value URL to validate
+- bool|array $options Array of options to modify default behavior, including: - `allowRelative` (boolean): Whether to allow relative URLs, i.e. those without domains (default=true). - `allowIDN` (boolean): Whether to allow internationalized domain names (default=false). - `allowQuerystring` (boolean): Whether to allow query strings (default=true). - `allowSchemes` (array): Array of allowed schemes, lowercase (default=[] any). - `disallowSchemes` (array): Array of disallowed schemes, lowercase (default=['file']). - `requireScheme` (bool): Specify true to require a scheme in the URL, if one not present, it will be added to non-relative URLs (default=true). - `convertEncoded` (boolean): Convert most encoded hex characters characters (i.e. “%2F”) to non-encoded? (default=true) - `encodeSpace` (boolean): Encoded space to “%20” or allow “%20“ in URL? Only useful if convertEncoded is true. (default=false) - `stripTags` (bool): Specify false to prevent tags from being stripped (default=true). - `stripQuotes` (bool): Specify false to prevent quotes from being stripped (default=true). - `maxLength` (int): Maximum length in bytes allowed for URLs (default=4096). - `throw` (bool): Throw exceptions on invalid URLs (default=false).
 
-@param bool|array $options Array of options to modify default behavior, including:
- - `allowRelative` (boolean): Whether to allow relative URLs, i.e. those without domains (default=true).
- - `allowIDN` (boolean): Whether to allow internationalized domain names (default=false).
- - `allowQuerystring` (boolean): Whether to allow query strings (default=true).
- - `allowSchemes` (array): Array of allowed schemes, lowercase (default=[] any).
- - `disallowSchemes` (array): Array of disallowed schemes, lowercase (default=['file']).
- - `requireScheme` (bool): Specify true to require a scheme in the URL, if one not present, it will be added to non-relative URLs (default=true).
- - `convertEncoded` (boolean): Convert most encoded hex characters characters (i.e. “%2F”) to non-encoded? (default=true)
- - `encodeSpace` (boolean): Encoded space to “%20” or allow “%20“ in URL? Only useful if convertEncoded is true. (default=false)
- - `stripTags` (bool): Specify false to prevent tags from being stripped (default=true).
- - `stripQuotes` (bool): Specify false to prevent quotes from being stripped (default=true).
- - `maxLength` (int): Maximum length in bytes allowed for URLs (default=4096).
- - `throw` (bool): Throw exceptions on invalid URLs (default=false).
+## Return value
 
-@return string Returns a valid URL or blank string if it can’t be made valid.
+string Returns a valid URL or blank string if it can’t be made valid.
 
-@throws WireException on invalid URLs, only if `$options['throw']` is true.
+## Throws
+
+- WireException on invalid URLs, only if `$options['throw']` is true.

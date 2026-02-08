@@ -1,15 +1,19 @@
-# FieldsTableTools::valueExists()
+# $fieldsTableTools->valueExists(Field $field, $value, $col = 'data'): int
 
 Source: `wire/core/FieldsTableTools.php`
 
 Does given value exist anywhere in field table?
 
-@param Field $field
+## Arguments
 
-@param string|int $value
+- Field $field
+- string|int $value
+- string $col
 
-@param string $col
+## Return value
 
-@return int Returns page ID where value exists, if found. Otherwise returns 0.
+int Returns page ID where value exists, if found. Otherwise returns 0.
 
-@throws WireException
+## Throws
+
+- WireException

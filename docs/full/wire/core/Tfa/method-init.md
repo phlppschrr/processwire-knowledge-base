@@ -1,4 +1,4 @@
-# Tfa::init()
+# $tfa->init()
 
 Source: `wire/core/Tfa.php`
 

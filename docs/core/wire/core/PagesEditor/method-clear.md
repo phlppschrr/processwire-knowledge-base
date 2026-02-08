@@ -1,16 +1,22 @@
-# PagesEditor::clear()
+# $pagesEditor->clear(Page $page, array $options = array()): bool
 
 Source: `wire/core/PagesEditor.php`
 
 Clear a page of its data
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $options
 
-@param array $options
+## Return value
 
-@return bool
+bool
 
-@throws WireException
+## Throws
 
-@since 3.0.189
+- WireException
+
+## Meta
+
+- @since 3.0.189

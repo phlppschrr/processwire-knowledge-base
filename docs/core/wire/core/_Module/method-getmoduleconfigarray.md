@@ -1,5 +1,8 @@
-# _Module::getModuleConfigArray()
+# $module->getModuleConfigArray(): array
 
 Source: `wire/core/Module.php`
 
-@return array
+
+## Return value
+
+array

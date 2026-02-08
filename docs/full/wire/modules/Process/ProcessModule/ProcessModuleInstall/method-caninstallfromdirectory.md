@@ -1,9 +1,13 @@
-# ProcessModuleInstall::canInstallFromDirectory()
+# $processModuleInstall->canInstallFromDirectory($notify = true): bool
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Module install/upgrade from directory allowed?
 
-@param bool $notify
+## Arguments
 
-@return bool
+- bool $notify
+
+## Return value
+
+bool

@@ -1,17 +1,23 @@
-# Password::randomAlnum()
+# $password->randomAlnum($length = 0, array $options = array()): string
 
 Source: `wire/core/Password.php`
 
 Return cryptographically secure random alphanumeric, alpha or numeric string
 
-@param int $length Required length of string, or 0 for random length
+## Arguments
 
-@param array $options See WireRandom::alphanumeric() for options
+- int $length Required length of string, or 0 for random length
+- array $options See WireRandom::alphanumeric() for options
 
-@return string
+## Return value
 
-@throws WireException
+string
 
-@since 3.0.109
+## Throws
 
-@deprecated use WireRandom::alphanumeric() instead
+- WireException
+
+## Meta
+
+- @since 3.0.109
+- @deprecated use WireRandom::alphanumeric() instead

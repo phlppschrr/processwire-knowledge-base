@@ -1,4 +1,4 @@
-# Pages::getRaw()
+# $pages->getRaw($selector, $field = '', $options = array()): array
 
 Source: `wire/core/Pages.php`
 
@@ -11,11 +11,12 @@ Please see the documentation for the `$pages->findRaw()` method, which all appli
 The biggest difference is that this method returns data for just 1 page, unlike `$pages->findRaw()` which can
 return data for many pages at once.
 
+## Arguments
 
-@param string|array|Selectors|int $selector Page matching selector or page ID
+- string|array|Selectors|int $selector Page matching selector or page ID
+- string|array|Field $field Name of field/property to get, or array of them, or omit to get all (default='')
+- array $options
 
-@param string|array|Field $field Name of field/property to get, or array of them, or omit to get all (default='')
+## Return value
 
-@param array $options
-
-@return array
+array

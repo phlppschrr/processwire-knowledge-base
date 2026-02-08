@@ -1,15 +1,19 @@
-# CommentField::allowCommentParent()
+# $commentField->allowCommentParent(Comment $comment, $parent, $verbose = false): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Allow given Comment to have given parent comment?
 
-@param Comment $comment
+## Arguments
 
-@param Comment|int $parent
+- Comment $comment
+- Comment|int $parent
+- bool $verbose Report reason why not to standard errors? (default=false)
 
-@param bool $verbose Report reason why not to standard errors? (default=false)
+## Return value
 
-@return bool
+bool
 
-@since 3.0.149
+## Meta
+
+- @since 3.0.149

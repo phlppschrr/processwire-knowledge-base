@@ -1,11 +1,14 @@
-# Selector::set()
+# $selector->set($key, $value): Selector|WireData
 
 Source: `wire/core/Selector.php`
 
 Set a property of the Selector
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return Selector|WireData
+## Return value
+
+Selector|WireData

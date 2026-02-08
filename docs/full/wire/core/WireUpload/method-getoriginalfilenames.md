@@ -1,9 +1,13 @@
-# WireUpload::getOriginalFilenames()
+# $wireUpload->getOriginalFilenames(): array
 
 Source: `wire/core/WireUpload.php`
 
 Get unsanitized array of original filenames (basenames) indexed by completed basename
 
-@return array
+## Return value
 
-@since 3.0.212
+array
+
+## Meta
+
+- @since 3.0.212

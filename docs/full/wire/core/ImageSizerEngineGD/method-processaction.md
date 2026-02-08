@@ -1,17 +1,20 @@
-# ImageSizerEngineGD::processAction()
+# $imageSizerEngineGD->processAction($srcFilename, $dstFilename, $action, $value): bool
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Process a rotate or flip action
 
-@param string $srcFilename
+## Arguments
 
-@param string $dstFilename
+- string $srcFilename
+- string $dstFilename
+- string $action One of 'rotate' or 'flip'
+- int|string $value If rotate, specify int of degrees. If flip, specify one of 'vertical', 'horizontal' or 'both'.
 
-@param string $action One of 'rotate' or 'flip'
+## Return value
 
-@param int|string $value If rotate, specify int of degrees. If flip, specify one of 'vertical', 'horizontal' or 'both'.
+bool
 
-@return bool
+## Throws
 
-@throws WireException
+- WireException

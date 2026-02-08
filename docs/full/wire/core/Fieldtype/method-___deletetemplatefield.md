@@ -1,4 +1,4 @@
-# Fieldtype::___deleteTemplateField()
+# $fieldtype->___deleteTemplateField(Template $template, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -11,9 +11,11 @@ defines it's own ___deletePageField method (separate from the one above) then it
 This was added so that mass deletions can happen without loading every page, which may not be feasible
 when dealing with thousands of pages.
 
+## Arguments
 
-@param Template $template
+- Template $template
+- Field $field
 
-@param Field $field
+## Return value
 
-@return bool
+bool

@@ -1,14 +1,22 @@
-# Config::installedAfter()
+# $config->installedAfter($date): bool
 
 Source: `wire/core/Config.php`
 
 Was this ProcessWire installation installed after a particular date?
 
+## Arguments
 
-@param int|string $date Unix timestamp or strtotime() compatible date string
+- int|string $date Unix timestamp or strtotime() compatible date string
 
-@return bool
+## Return value
 
-@see Config::installedBefore(), Config::installed
+bool
 
-@since 3.0.129
+## See also
+
+- [Config::installedBefore()](method-installedbefore.md)
+- Config::installed
+
+## Meta
+
+- @since 3.0.129

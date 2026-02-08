@@ -1,9 +1,13 @@
-# Tfa::getSessionKey()
+# $tfa->getSessionKey($reset = false): string
 
 Source: `wire/core/Tfa.php`
 
 Get a unique key that can be used in the “tfa” GET variable used by this module
 
-@param bool $reset Reset to new key?
+## Arguments
 
-@return string
+- bool $reset Reset to new key?
+
+## Return value
+
+string

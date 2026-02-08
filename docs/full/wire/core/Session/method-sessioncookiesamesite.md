@@ -1,11 +1,17 @@
-# Session::sessionCookieSameSite()
+# $session->sessionCookieSameSite($value = null): string
 
 Source: `wire/core/Session.php`
 
 Get 'SameSite' value for session cookie
 
-@param string|null $value
+## Arguments
 
-@return string
+- string|null $value
 
-@since 3.0.178
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.178

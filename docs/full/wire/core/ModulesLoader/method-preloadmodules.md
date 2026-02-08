@@ -1,4 +1,4 @@
-# ModulesLoader::preloadModules()
+# $modulesLoader->preloadModules($path)
 
 Source: `wire/core/ModulesLoader.php`
 
@@ -17,6 +17,10 @@ Please note the above is specifically stating that the module must be in its
 own “site/ModuleName/” directory and have the “.module.php” extension. Using
 just the “.module” extension is not supported for preload modules.
 
-@param string $path
+## Arguments
 
-@since 3.0.173
+- string $path
+
+## Meta
+
+- @since 3.0.173

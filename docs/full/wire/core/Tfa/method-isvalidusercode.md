@@ -1,4 +1,4 @@
-# Tfa::isValidUserCode()
+# $tfa->isValidUserCode(User $user, $code, array $settings): bool|int
 
 Source: `wire/core/Tfa.php`
 
@@ -6,12 +6,16 @@ Return true if code is valid or false if not
 
 Modules MUST implement this method.
 
-@param User $user
+## Arguments
 
-@param string|int $code
+- User $user
+- string|int $code
+- array $settings User configured TFA settings
 
-@param array $settings User configured TFA settings
+## Return value
 
-@return bool|int Returns true if valid, false if not, or optionally integer 0 if code was valid but is now expired
+bool|int Returns true if valid, false if not, or optionally integer 0 if code was valid but is now expired
 
-@throws WireException
+## Throws
+
+- WireException

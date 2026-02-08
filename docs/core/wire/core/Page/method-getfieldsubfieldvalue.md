@@ -1,4 +1,4 @@
-# Page::getFieldSubfieldValue()
+# $page->getFieldSubfieldValue($key): mixed|null
 
 Source: `wire/core/Page.php`
 
@@ -6,8 +6,14 @@ If given a field.subfield string, returns the associated value
 
 This is like the getDot() method, but with additional protection during output formatting.
 
-@param $key
+## Arguments
 
-@return mixed|null
+- $key
 
-@deprecated Method no longer needed
+## Return value
+
+mixed|null
+
+## Meta
+
+- @deprecated Method no longer needed

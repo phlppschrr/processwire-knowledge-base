@@ -1,5 +1,8 @@
-# LanguagesPageFieldValue::defaultLanguagePageID()
+# $languagesPageFieldValue->defaultLanguagePageID(): int
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
-@return int
+
+## Return value
+
+int

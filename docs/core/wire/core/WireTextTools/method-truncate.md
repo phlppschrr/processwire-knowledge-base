@@ -1,4 +1,4 @@
-# WireTextTools::truncate()
+# $wireTextTools->truncate($str, $maxLength, $options = array()): string
 
 Source: `wire/core/WireTextTools.php`
 
@@ -38,24 +38,12 @@ $s = $sanitizer->truncate($str, [
 ]);
 ~~~~~~~
 
-@param string $str String to truncate
+## Arguments
 
-@param int|array $maxLength Maximum length of returned string, or specify $options array here.
+- string $str String to truncate
+- int|array $maxLength Maximum length of returned string, or specify $options array here.
+- array|string $options Options array, or specify `type` option (string). - `type` (string): Preferred truncation type of word, punctuation, sentence, or block. (default='word') This is a “preferred type”, not an absolute one, because it will adjust to match what it can within your maxLength. - `maxLength` (int): Max characters for truncation, used only if $options array substituted for $maxLength argument. - `maximize` (bool): Include as much as possible within specified type and max-length? (default=true) If you specify false for the maximize option, it will truncate to first word, puncutation, sentence or block. - `visible` (bool): When true, invisible text (markup, entities, etc.) does not count towards string length. (default=false) - `trim` (string): Characters to trim from returned string. (default=',;/ ') - `noTrim` (string): Never trim these from end of returned string. (default=')]>}”»') - `more` (string): Append this to truncated strings that do not end with sentence punctuation. (default='…') - `keepTags` (array): HTML tags that should be kept in returned string. (default=[]) - `keepFormatTags` (bool): Keep HTML text-formatting tags? Simpler alternative to keepTags option. (default=false) - `collapseLinesWith` (string): String to collapse lines with where the first is not punctuated. (default=' … ') - `convertEntities` (bool): Convert HTML entities to non-entity characters? (default=false) - `noEndSentence` (string): Strings that sentence may not end with, space-separated values (default='Mr. Mrs. …')
 
-@param array|string $options Options array, or specify `type` option (string).
- - `type` (string): Preferred truncation type of word, punctuation, sentence, or block. (default='word')
-      This is a “preferred type”, not an absolute one, because it will adjust to match what it can within your maxLength.
- - `maxLength` (int): Max characters for truncation, used only if $options array substituted for $maxLength argument.
- - `maximize` (bool): Include as much as possible within specified type and max-length? (default=true)
-      If you specify false for the maximize option, it will truncate to first word, puncutation, sentence or block.
- - `visible` (bool): When true, invisible text (markup, entities, etc.) does not count towards string length. (default=false)
- - `trim` (string): Characters to trim from returned string. (default=',;/ ')
- - `noTrim` (string): Never trim these from end of returned string. (default=')]>}”»')
- - `more` (string): Append this to truncated strings that do not end with sentence punctuation. (default='…')
- - `keepTags` (array): HTML tags that should be kept in returned string. (default=[])
- - `keepFormatTags` (bool): Keep HTML text-formatting tags? Simpler alternative to keepTags option. (default=false)
- - `collapseLinesWith` (string): String to collapse lines with where the first is not punctuated. (default=' … ')
- - `convertEntities` (bool): Convert HTML entities to non-entity characters? (default=false)
- - `noEndSentence` (string): Strings that sentence may not end with, space-separated values (default='Mr. Mrs. …')
+## Return value
 
-@return string
+string

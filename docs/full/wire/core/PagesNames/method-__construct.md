@@ -1,7 +1,9 @@
-# PagesNames::__construct()
+# $pagesNames->__construct(Pages $pages)
 
 Source: `wire/core/PagesNames.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

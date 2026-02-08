@@ -1,12 +1,17 @@
-# Roles::___save()
+# $roles->___save(Page $page): bool
 
 Source: `wire/core/Roles.php`
 
 Save a Role
 
+## Arguments
 
-@param Role|Page $page
+- Role|Page $page
 
-@return bool True on success, false on failure
+## Return value
 
-@throws WireException
+bool True on success, false on failure
+
+## Throws
+
+- WireException

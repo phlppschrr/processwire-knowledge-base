@@ -1,10 +1,13 @@
-# PagesNames::checkNameConflicts()
+# $pagesNames->checkNameConflicts(Page $page)
 
 Source: `wire/core/PagesNames.php`
 
 Check given page’s name for conflicts and increment as needed while also triggering a warning notice
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@since 3.0.127
+## Meta
+
+- @since 3.0.127

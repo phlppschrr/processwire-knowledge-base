@@ -1,7 +1,9 @@
-# PagesTrash::__construct()
+# $pagesTrash->__construct(Pages $pages)
 
 Source: `wire/core/PagesTrash.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

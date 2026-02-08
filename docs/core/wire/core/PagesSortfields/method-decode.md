@@ -1,4 +1,4 @@
-# PagesSortfields::decode()
+# $pagesSortfields->decode($sortfield, $default = 'sort'): string
 
 Source: `wire/core/PagesSortfields.php`
 
@@ -6,8 +6,11 @@ Decodes a sortfield from a signed integer or string to a field name
 
 The returned fieldname is preceded with a dash if the sortfield is reversed.
 
-@param string|int $sortfield
+## Arguments
 
-@param string $default Default sortfield name (default='sort')
+- string|int $sortfield
+- string $default Default sortfield name (default='sort')
 
-@return string
+## Return value
+
+string

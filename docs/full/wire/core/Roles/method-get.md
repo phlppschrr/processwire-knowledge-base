@@ -1,9 +1,13 @@
-# Roles::get()
+# $roles->get($selectorString): Role|NullPage|null
 
 Source: `wire/core/Roles.php`
 
 Get a Role by name, numeric ID or selector
 
-@param string $selectorString Role name or selector
+## Arguments
 
-@return Role|NullPage|null
+- string $selectorString Role name or selector
+
+## Return value
+
+Role|NullPage|null

@@ -1,4 +1,4 @@
-# PageValues::getInputfield()
+# $pageValues->getInputfield(Page $page, $fieldName): Inputfield|InputfieldWrapper|null
 
 Source: `wire/core/PageValues.php`
 
@@ -10,7 +10,10 @@ Get a single Inputfield for the given field name
 - Please note this method deals only with custom fields, not system fields name 'name' or 'status', etc.,
   as those are exclusive to the ProcessPageEdit page editor.
 
+## Arguments
 
-@param string $fieldName
+- string $fieldName
 
-@return Inputfield|InputfieldWrapper|null Returns Inputfield, or null if given field name doesn't match field for this page.
+## Return value
+
+Inputfield|InputfieldWrapper|null Returns Inputfield, or null if given field name doesn't match field for this page.

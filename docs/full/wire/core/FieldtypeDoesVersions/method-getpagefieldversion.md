@@ -1,13 +1,15 @@
-# FieldtypeDoesVersions::getPageFieldVersion()
+# $fieldtypeDoesVersions->getPageFieldVersion(Page $page, Field $field, $version): mixed
 
 Source: `wire/core/Interfaces.php`
 
 Get the value for given page, field and version
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- int $version
 
-@param int $version
+## Return value
 
-@return mixed
+mixed

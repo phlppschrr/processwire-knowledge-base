@@ -1,9 +1,13 @@
-# LanguageParser::unescapeText()
+# $languageParser->unescapeText($text): string
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Replace any escaped characters with non-escaped versions
 
-@param string $text
+## Arguments
 
-@return string
+- string $text
+
+## Return value
+
+string

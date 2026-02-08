@@ -1,7 +1,9 @@
-# WireCache::cacher()
+# $wireCache->cacher(): WireCacheInterface
 
 Source: `wire/core/WireCache.php`
 
 Get the current WireClassInterface instance
 
-@return WireCacheInterface
+## Return value
+
+WireCacheInterface

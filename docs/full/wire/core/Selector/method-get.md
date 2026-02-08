@@ -1,9 +1,13 @@
-# Selector::get()
+# $selector->get($key): array|mixed|null|string
 
 Source: `wire/core/Selector.php`
 
 Get a property
 
-@param string $key Property name
+## Arguments
 
-@return array|mixed|null|string Property value
+- string $key Property name
+
+## Return value
+
+array|mixed|null|string Property value

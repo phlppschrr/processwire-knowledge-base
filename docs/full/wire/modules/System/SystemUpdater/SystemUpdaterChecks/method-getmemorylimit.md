@@ -1,11 +1,17 @@
-# SystemUpdaterChecks::getMemoryLimit()
+# $systemUpdaterChecks->getMemoryLimit($getInUnit = 'M'): int|float
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Get memory limit
 
-@param string $getInUnit Get value in 'K' [kilobytes], 'M' [megabytes], 'G' [gigabytes] (default='M')
+## Arguments
 
-@return int|float
+- string $getInUnit Get value in 'K' [kilobytes], 'M' [megabytes], 'G' [gigabytes] (default='M')
 
-@since 3.0.206
+## Return value
+
+int|float
+
+## Meta
+
+- @since 3.0.206

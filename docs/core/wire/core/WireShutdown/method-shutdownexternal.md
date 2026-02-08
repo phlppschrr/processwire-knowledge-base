@@ -1,4 +1,4 @@
-# WireShutdown::shutdownExternal()
+# $wireShutdown->shutdownExternal()
 
 Source: `wire/core/WireShutdown.php`
 

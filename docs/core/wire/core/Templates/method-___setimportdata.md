@@ -1,4 +1,4 @@
-# Templates::___setImportData()
+# $templates->___setImportData(Template $template, array $data): array
 
 Source: `wire/core/Templates.php`
 
@@ -18,9 +18,11 @@ $returnValue = array(
 );
 ~~~~~~
 
+## Arguments
 
-@param Template $template Template you want to import to
+- Template $template Template you want to import to
+- array $data Import data array (must have been exported from getExportData() method).
 
-@param array $data Import data array (must have been exported from getExportData() method).
+## Return value
 
-@return array Returns array with list of changes (see example in method description)
+array Returns array with list of changes (see example in method description)

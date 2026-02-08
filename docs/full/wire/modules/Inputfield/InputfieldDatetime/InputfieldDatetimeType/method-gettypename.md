@@ -1,7 +1,9 @@
-# InputfieldDatetimeType::getTypeName()
+# $inputfieldDatetimeType->getTypeName(): string
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 Get name for this type
 
-@return string
+## Return value
+
+string

@@ -1,11 +1,14 @@
-# FieldtypeHasFiles::getFilesPath()
+# $fieldtypeHasFiles->getFilesPath(Page $page, Field $field): string
 
 Source: `wire/core/Interfaces.php`
 
 Get path where files are (or would be) stored
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return string
+## Return value
+
+string

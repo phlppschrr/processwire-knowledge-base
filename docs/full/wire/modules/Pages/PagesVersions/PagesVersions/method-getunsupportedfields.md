@@ -1,10 +1,13 @@
-# PagesVersions::getUnsupportedFields()
+# $pagesVersions->getUnsupportedFields(?Page $page = null): Field[]
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Get fields where versions are not supported
 
+## Arguments
 
-@param Page|null $page Page to limit check to or omit for all fields
+- Page|null $page Page to limit check to or omit for all fields
 
-@return Field[] Returned array of Field objects is indexed by Field name
+## Return value
+
+Field[] Returned array of Field objects is indexed by Field name

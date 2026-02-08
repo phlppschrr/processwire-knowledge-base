@@ -1,4 +1,4 @@
-# InputfieldWrapper::child()
+# $inputfieldWrapper->child($name = '', $recursive = true): Inputfield|null
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,11 +8,15 @@ This is an alternative to the `getChildByName()` method, with more options for w
 For instance, it can also accept a selector string or numeric index for the $name argument, and you
 can optionally disable the $recursive behavior.
 
+## Arguments
 
-@param string|int $name Name or selector string of child to find, omit for first child, or specify zero-based index of child to return.
+- string|int $name Name or selector string of child to find, omit for first child, or specify zero-based index of child to return.
+- bool $recursive Find child recursively? Looks for child in this wrapper, and all other wrappers below it. (default=true)
 
-@param bool $recursive Find child recursively? Looks for child in this wrapper, and all other wrappers below it. (default=true)
+## Return value
 
-@return Inputfield|null Returns Inputfield instance if found, or null if not.
+Inputfield|null Returns Inputfield instance if found, or null if not.
 
-@since 3.0.110
+## Meta
+
+- @since 3.0.110

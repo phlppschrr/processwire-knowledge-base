@@ -1,7 +1,9 @@
-# DatabaseQuerySelectFulltext::matchPhraseExpand()
+# $databaseQuerySelectFulltext->matchPhraseExpand($value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Match phrase with query expansion (*+=)
 
-@param string $value
+## Arguments
+
+- string $value

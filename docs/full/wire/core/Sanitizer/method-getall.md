@@ -1,12 +1,17 @@
-# Sanitizer::getAll()
+# $sanitizer->getAll($getReturnTypes = false): array
 
 Source: `wire/core/Sanitizer.php`
 
 Get all sanitizer method names and optionally types they return
 
+## Arguments
 
-@param bool $getReturnTypes Get array where method names are keys and values are return types?
+- bool $getReturnTypes Get array where method names are keys and values are return types?
 
-@return array
+## Return value
 
-@since 3.0.165
+array
+
+## Meta
+
+- @since 3.0.165

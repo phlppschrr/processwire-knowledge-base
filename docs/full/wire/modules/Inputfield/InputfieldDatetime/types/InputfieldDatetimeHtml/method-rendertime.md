@@ -1,7 +1,9 @@
-# InputfieldDatetimeHtml::renderTime()
+# $inputfieldDatetimeHtml->renderTime(): string
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeHtml.php`
 
 Render time input
 
-@return string
+## Return value
+
+string

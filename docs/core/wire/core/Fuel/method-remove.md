@@ -1,9 +1,13 @@
-# Fuel::remove()
+# $fuel->remove($key): bool
 
 Source: `wire/core/Fuel.php`
 
 Remove an API variable from the Fuel
 
-@param $key
+## Arguments
 
-@return bool Returns true on success
+- $key
+
+## Return value
+
+bool Returns true on success

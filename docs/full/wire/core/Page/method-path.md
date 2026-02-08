@@ -1,4 +1,4 @@
-# Page::path()
+# $page->path(): string
 
 Source: `wire/core/Page.php`
 
@@ -15,6 +15,11 @@ echo $page->path(); // outputs: /about/contact/
 echo $page->url();  // outputs: /my-site/about/contact/
 ~~~~~
 
-@return string Returns the page path, for example: `/about/contact/`
+## Return value
 
-@see Page::url(), Page::httpUrl()
+string Returns the page path, for example: `/about/contact/`
+
+## See also
+
+- [Page::url()](method-url.md)
+- [Page::httpUrl()](method-httpurl.md)

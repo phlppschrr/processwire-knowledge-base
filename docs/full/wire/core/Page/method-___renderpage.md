@@ -1,4 +1,4 @@
-# Page::___renderPage()
+# $page->___renderPage(array $options = []): string|mixed
 
 Source: `wire/core/Page.php`
 
@@ -33,20 +33,18 @@ $wire->addHookAfter('Page::renderPage', function(HookEvent $event) {
 });
 ~~~~~
 
+## Arguments
 
-@param array $options Custom variables to pass to template file, and/or options as described below:
- - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own).
-	- `filename` (string): Filename to render, typically relative to /site/templates/. Absolute paths must resolve somewhere in PW’s install. (default='')
-	- `prependFile` (string): Filename to prepend to output, must be in /site/templates/.
-	- `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/.
-	- `appendFile` (string): Filename to append to output, must be in /site/templates/.
-	- `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/.
-	- `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true)
-	- `forceBuildCache` (bool): If true, the cache will be re-created for this page. (default=false)
- -  Note that the prepend and append options above have default values in `$config` or with the Template.
+- array $options Custom variables to pass to template file, and/or options as described below: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. Absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/. - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
 
-@return string|mixed Renders the rendered output
+## Return value
 
-@throws WireException
+string|mixed Renders the rendered output
 
-@since 3.0.253
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.253

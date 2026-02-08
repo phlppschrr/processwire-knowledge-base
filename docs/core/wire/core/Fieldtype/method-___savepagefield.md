@@ -1,4 +1,4 @@
-# Fieldtype::___savePageField()
+# $fieldtype->___savePageField(Page $page, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -6,11 +6,15 @@ Save the given field from given page to the database.
 
 Possible template method: If overridden, it is likely not necessary to call this parent method.
 
+## Arguments
 
-@param Page $page Page object to save.
+- Page $page Page object to save.
+- Field $field Field to retrieve from the page.
 
-@param Field $field Field to retrieve from the page.
+## Return value
 
-@return bool True on success, false on DB save failure.
+bool True on success, false on DB save failure.
 
-@throws WireException|\PDOException|WireDatabaseException
+## Throws
+
+- WireException|\PDOException|WireDatabaseException

@@ -1,9 +1,10 @@
-# WireClassLoader::removeNamespace()
+# $wireClassLoader->removeNamespace($namespace, $path = '')
 
 Source: `wire/core/WireClassLoader.php`
 
 Remove defined paths (or single path) for given namespace
 
-@param string $namespace
+## Arguments
 
-@param string $path Optionally specify path to remove (default=remove all)
+- string $namespace
+- string $path Optionally specify path to remove (default=remove all)

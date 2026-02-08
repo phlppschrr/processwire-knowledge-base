@@ -1,4 +1,4 @@
-# HasLookupItems::getLookupItems()
+# $hasLookupItems->getLookupItems()
 
 Source: `wire/core/Interfaces.php`
 

@@ -1,4 +1,4 @@
-# PageValues::getBracketValue()
+# $pageValues->getBracketValue(Page $page, $key, $value = null): array|mixed|Page|PageArray|Wire|WireArray|WireData|string|\Traversable
 
 Source: `wire/core/PageValues.php`
 
@@ -10,10 +10,12 @@ $iterableValue = $page->get('field_name[]');
 Note: When requesting an iterable value, this method will return an empty array in cases where
 the Page::get() method would return null.
 
-@param Page $page
+## Arguments
 
-@param string $key
+- Page $page
+- string $key
+- mixed $value Value to use rather than pulling from $page
 
-@param mixed $value Value to use rather than pulling from $page
+## Return value
 
-@return array|mixed|Page|PageArray|Wire|WireArray|WireData|string|\Traversable
+array|mixed|Page|PageArray|Wire|WireArray|WireData|string|\Traversable

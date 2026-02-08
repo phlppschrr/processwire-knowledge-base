@@ -1,9 +1,13 @@
-# WireMail::get()
+# $wireMail->get($key): mixed|null
 
 Source: `wire/core/WireMail.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return mixed|null
+- string $key
+
+## Return value
+
+mixed|null

@@ -1,7 +1,9 @@
-# ImageSizerEngine::getExtension()
+# $imageSizerEngine->getExtension(): string
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Return the file extension
 
-@return string
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# Page::processFieldDataQueue()
+# $page->processFieldDataQueue()
 
 Source: `wire/core/Page.php`
 

@@ -1,4 +1,4 @@
-# Tfa::___install()
+# $tfa->___install()
 
 Source: `wire/core/Tfa.php`
 

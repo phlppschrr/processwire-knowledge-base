@@ -1,13 +1,18 @@
-# Inputfield::getClassArray()
+# $inputfield->getClassArray($property = 'class', $assoc = false): array
 
 Source: `wire/core/Inputfield.php`
 
 Get classes in array for given class property
 
-@param string $property One of 'wrap', 'header', 'content' or 'input' (or alias 'class')
+## Arguments
 
-@param bool $assoc Return as associative array where both keys and values are class names? (default=false)
+- string $property One of 'wrap', 'header', 'content' or 'input' (or alias 'class')
+- bool $assoc Return as associative array where both keys and values are class names? (default=false)
 
-@return array
+## Return value
 
-@since 3.0.204
+array
+
+## Meta
+
+- @since 3.0.204

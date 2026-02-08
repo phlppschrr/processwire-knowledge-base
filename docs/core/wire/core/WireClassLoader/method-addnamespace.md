@@ -1,4 +1,4 @@
-# WireClassLoader::addNamespace()
+# $wireClassLoader->addNamespace($namespace, $path)
 
 Source: `wire/core/WireClassLoader.php`
 
@@ -10,6 +10,7 @@ Multiple root paths may be specified for a single namespace by calling this meth
 $classLoader->addNamespace('HelloWorld', '/path/to/that/');
 ~~~~~
 
-@param string $namespace
+## Arguments
 
-@param string $path Full system path
+- string $namespace
+- string $path Full system path

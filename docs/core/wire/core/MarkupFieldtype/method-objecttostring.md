@@ -1,9 +1,13 @@
-# MarkupFieldtype::objectToString()
+# $markupFieldtype->objectToString($value): string
 
 Source: `wire/core/MarkupFieldtype.php`
 
 Render an object to a string
 
-@param Wire|object $value
+## Arguments
 
-@return string
+- Wire|object $value
+
+## Return value
+
+string

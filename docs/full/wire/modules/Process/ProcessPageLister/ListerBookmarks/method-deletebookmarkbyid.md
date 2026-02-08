@@ -1,9 +1,13 @@
-# ListerBookmarks::deleteBookmarkByID()
+# $listerBookmarks->deleteBookmarkByID($bookmarkID): bool
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Delete a bookmark by ID
 
-@param int $bookmarkID
+## Arguments
 
-@return bool
+- int $bookmarkID
+
+## Return value
+
+bool

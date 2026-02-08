@@ -1,4 +1,4 @@
-# Page::children()
+# $page->children($selector = '', $options = array()): PageArray|array
 
 Source: `wire/core/Page.php`
 
@@ -18,11 +18,18 @@ foreach($page->children() as $child) {
 $newest = $page->children("limit=3, sort=-created");
 ~~~~~
 
+## Arguments
 
-@param string $selector Selector to use, or omit to return all children.
+- string $selector Selector to use, or omit to return all children.
+- array $options Optional options to modify behavior, the same as those provided to Pages::find.
 
-@param array $options Optional options to modify behavior, the same as those provided to Pages::find.
+## Return value
 
-@return PageArray|array Returns PageArray for most cases. Returns regular PHP array if using the findIDs option.
+PageArray|array Returns PageArray for most cases. Returns regular PHP array if using the findIDs option.
 
-@see Page::child(), Page::find(), Page::numChildren(), Page::hasChildren()
+## See also
+
+- [Page::child()](method-child.md)
+- [Page::find()](method-find.md)
+- [Page::numChildren()](method-numchildren.md)
+- [Page::hasChildren()](method-haschildren.md)

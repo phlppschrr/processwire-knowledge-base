@@ -1,11 +1,14 @@
-# PagesVersionsFiles::restorePageVersionFiles()
+# $pagesVersionsFiles->restorePageVersionFiles(Page $page, $version): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Restore files from version into live $page
 
-@param Page $page
+## Arguments
 
-@param int $version
+- Page $page
+- int $version
 
-@return int
+## Return value
+
+int

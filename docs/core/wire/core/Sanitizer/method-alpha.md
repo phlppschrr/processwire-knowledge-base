@@ -1,14 +1,15 @@
-# Sanitizer::alpha()
+# $sanitizer->alpha($value, $beautify = false, $maxLength = 1024): string
 
 Source: `wire/core/Sanitizer.php`
 
 Sanitize to ASCII alpha (a-z A-Z)
 
+## Arguments
 
-@param string $value Value to sanitize
+- string $value Value to sanitize
+- bool|int $beautify Whether to beautify (See Sanitizer::translate option too)
+- int $maxLength Maximum length of returned value (default=1024)
 
-@param bool|int $beautify Whether to beautify (See Sanitizer::translate option too)
+## Return value
 
-@param int $maxLength Maximum length of returned value (default=1024)
-
-@return string
+string

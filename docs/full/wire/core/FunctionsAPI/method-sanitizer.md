@@ -1,4 +1,4 @@
-# FunctionsAPI::sanitizer()
+# $functionsAPI->sanitizer($name = '', $value = ''): Sanitizer|string|int|array|null|mixed
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -11,11 +11,15 @@ $clean = sanitizer()->pageName($dirty); // regular syntax
 $clean = sanitizer('pageName', $dirty); // shortcut syntax
 ~~~~~
 
+## Arguments
 
-@param string $name Optionally enter a sanitizer function name
+- string $name Optionally enter a sanitizer function name
+- string $value If $name populated, enter the value to sanitize
 
-@param string $value If $name populated, enter the value to sanitize
+## Return value
 
-@return Sanitizer|string|int|array|null|mixed
+Sanitizer|string|int|array|null|mixed
 
-@see Sanitizer
+## See also
+
+- Sanitizer

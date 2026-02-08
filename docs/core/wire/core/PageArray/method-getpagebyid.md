@@ -1,11 +1,17 @@
-# PageArray::getPageByID()
+# $pageArray->getPageByID($id): NullPage|Page
 
 Source: `wire/core/PageArray.php`
 
 Get Page from this PageArray having given ID, or return NullPage if not present
 
-@param int $id
+## Arguments
 
-@return NullPage|Page
+- int $id
 
-@since 3.0.162
+## Return value
+
+NullPage|Page
+
+## Meta
+
+- @since 3.0.162

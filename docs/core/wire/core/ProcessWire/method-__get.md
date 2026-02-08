@@ -1,9 +1,13 @@
-# ProcessWire::__get()
+# $processWire->__get($name): mixed
 
 Source: `wire/core/ProcessWire.php`
 
 Get API var directly
 
-@param string $name
+## Arguments
 
-@return mixed
+- string $name
+
+## Return value
+
+mixed

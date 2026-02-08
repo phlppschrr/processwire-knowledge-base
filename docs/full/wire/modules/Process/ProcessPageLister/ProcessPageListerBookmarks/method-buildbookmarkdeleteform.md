@@ -1,13 +1,18 @@
-# ProcessPageListerBookmarks::buildBookmarkDeleteForm()
+# $processPageListerBookmarks->buildBookmarkDeleteForm($bookmarkID): InputfieldFieldset
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
 Build form for deleting a bookmark
 
-@param int $bookmarkID Bookmark ID
+## Arguments
 
-@return InputfieldFieldset
+- int $bookmarkID Bookmark ID
 
-@throws WireException
+## Return value
 
-@throws WirePermissionException
+InputfieldFieldset
+
+## Throws
+
+- WireException
+- WirePermissionException

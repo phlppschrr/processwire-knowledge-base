@@ -1,4 +1,4 @@
-# WireDatabasePDO::exec()
+# $wireDatabasePDO->exec($statement, $note = ''): bool|int
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -6,13 +6,19 @@ Execute an SQL statement string
 
 If given a PDOStatement, this method behaves the same as the execute() method.
 
+## Arguments
 
-@param string|\PDOStatement $statement
+- string|\PDOStatement $statement
+- string $note
 
-@param string $note
+## Return value
 
-@return bool|int
+bool|int
 
-@throws \PDOException
+## Throws
 
-@link http://php.net/manual/en/pdo.exec.php
+- \PDOException
+
+## Meta
+
+- @link http://php.net/manual/en/pdo.exec.php

@@ -1,11 +1,14 @@
-# MarkupFieldtype::valueToString()
+# $markupFieldtype->valueToString($value, $encode = true): string
 
 Source: `wire/core/MarkupFieldtype.php`
 
 Convert any value to a string
 
-@param mixed $value
+## Arguments
 
-@param bool $encode
+- mixed $value
+- bool $encode
 
-@return string
+## Return value
+
+string

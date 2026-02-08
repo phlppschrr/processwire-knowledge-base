@@ -1,7 +1,9 @@
-# InputfieldTinyMCE::___getModuleConfigInputfields()
+# $inputfieldTinyMCE->___getModuleConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Module config
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- InputfieldWrapper $inputfields

@@ -1,4 +1,4 @@
-# Inputfield::___uninstall()
+# $inputfield->___uninstall()
 
 Source: `wire/core/Inputfield.php`
 

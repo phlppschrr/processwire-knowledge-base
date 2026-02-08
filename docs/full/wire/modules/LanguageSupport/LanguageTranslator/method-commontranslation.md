@@ -1,4 +1,4 @@
-# LanguageTranslator::commonTranslation()
+# $languageTranslator->commonTranslation($str): string
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
@@ -10,6 +10,10 @@ Returns blank string if given string is not a common phrase.
 Returns given $str if given string is common, but not translated here.
 Returns translated $str if common and translated.
 
-@param string $str
+## Arguments
 
-@return string
+- string $str
+
+## Return value
+
+string

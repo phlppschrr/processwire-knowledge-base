@@ -1,4 +1,4 @@
-# PagesRawFinder::splitFields()
+# $pagesRawFinder->splitFields()
 
 Source: `wire/core/PagesRaw.php`
 

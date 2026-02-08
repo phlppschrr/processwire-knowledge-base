@@ -1,4 +1,4 @@
-# Notices::add()
+# $notices->add($item): Notices|WireArray
 
 Source: `wire/core/Notices.php`
 
@@ -8,6 +8,10 @@ Add a Notice object
 $notices->add(new NoticeError("An error occurred!"));
 ~~~~
 
-@param Notice $item
+## Arguments
 
-@return Notices|WireArray
+- Notice $item
+
+## Return value
+
+Notices|WireArray

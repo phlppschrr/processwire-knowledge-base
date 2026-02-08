@@ -1,4 +1,4 @@
-# Wire::hasHook()
+# $wire->hasHook($name): bool
 
 Source: `wire/core/Wire.php`
 
@@ -15,11 +15,14 @@ if($pages->hasHook('find()')) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $name Method() name or property name:
-  - If checking for a hooked method, it should be in the form `method()`.
-  - If checking for a hooked property, it should be in the form `property`.
+- string $name Method() name or property name: - If checking for a hooked method, it should be in the form `method()`. - If checking for a hooked property, it should be in the form `property`.
 
-@return bool True if this class instance has the hook, false if not.
+## Return value
 
-@throws WireException When you try to call it with a Class::something() type method, which is not supported.
+bool True if this class instance has the hook, false if not.
+
+## Throws
+
+- WireException When you try to call it with a Class::something() type method, which is not supported.

@@ -1,4 +1,4 @@
-# Template::save()
+# $template->save(): Template|bool
 
 Source: `wire/core/Template.php`
 
@@ -6,5 +6,6 @@ Save the template to database
 
 This is the same as calling `$templates->save($template)`.
 
+## Return value
 
-@return Template|bool Returns Template if successful, or false if not
+Template|bool Returns Template if successful, or false if not

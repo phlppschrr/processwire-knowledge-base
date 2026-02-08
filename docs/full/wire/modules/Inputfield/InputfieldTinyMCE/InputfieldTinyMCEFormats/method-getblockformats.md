@@ -1,7 +1,9 @@
-# InputfieldTinyMCEFormats::getBlockFormats()
+# $inputfieldTinyMCEFormats->getBlockFormats(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Get block_formats
 
-@return string
+## Return value
+
+string

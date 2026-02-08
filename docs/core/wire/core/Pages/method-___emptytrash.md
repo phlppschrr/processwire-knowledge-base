@@ -1,4 +1,4 @@
-# Pages::___emptyTrash()
+# $pages->___emptyTrash(array $options = array()): int|array
 
 Source: `wire/core/Pages.php`
 
@@ -12,10 +12,15 @@ This method populates error notices when there are errors deleting specific page
 $pages->emptyTrash();
 ~~~~~
 
+## Arguments
 
-@param array $options See PagesTrash::emptyTrash() for advanced options
+- array $options See PagesTrash::emptyTrash() for advanced options
 
-@return int|array Returns total number of pages deleted from trash, or array if verbose option specified.
-	This number is negative or 0 if not all pages could be deleted and error notices may be present.
+## Return value
 
-@see Pages::trash(), Pages::restore()
+int|array Returns total number of pages deleted from trash, or array if verbose option specified. This number is negative or 0 if not all pages could be deleted and error notices may be present.
+
+## See also
+
+- [Pages::trash()](method-___trash.md)
+- [Pages::restore()](method-___restore.md)

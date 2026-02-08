@@ -1,10 +1,13 @@
-# WireFileTools::unixFileName()
+# $wireFileTools->unixFileName($file): string
 
 Source: `wire/core/WireFileTools.php`
 
 Convert given file name to use unix slashes (if it isn’t already)
 
+## Arguments
 
-@param string $file File name to adjust (if it needs it)
+- string $file File name to adjust (if it needs it)
 
-@return string Adjusted file name
+## Return value
+
+string Adjusted file name

@@ -1,4 +1,4 @@
-# InputfieldWrapper::__get()
+# $inputfieldWrapper->__get($key): mixed|null
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -6,6 +6,10 @@ Provides direct reference to attributes and settings, and falls back to Inputfie
 
 This is different behavior from the get() method.
 
-@param string $key
+## Arguments
 
-@return mixed|null
+- string $key
+
+## Return value
+
+mixed|null

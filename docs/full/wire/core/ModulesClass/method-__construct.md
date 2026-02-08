@@ -1,7 +1,9 @@
-# ModulesClass::__construct()
+# $modulesClass->__construct(Modules $modules)
 
 Source: `wire/core/ModulesClass.php`
 
 Construct
 
-@param Modules $modules
+## Arguments
+
+- Modules $modules

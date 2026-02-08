@@ -1,11 +1,14 @@
-# PagesVersions::getSleepValueFromPage()
+# $pagesVersions->getSleepValueFromPage(Page $page, Field $field): array|int|string|false
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Get sleep value from given live page
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return array|int|string|false
+## Return value
+
+array|int|string|false

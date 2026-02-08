@@ -1,9 +1,13 @@
-# WireUpload::setMaxFileSize()
+# $wireUpload->setMaxFileSize($bytes): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set the max allowed uploaded file size
 
-@param int $bytes
+## Arguments
 
-@return $this
+- int $bytes
+
+## Return value
+
+$this

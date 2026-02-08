@@ -1,12 +1,14 @@
-# WireDatabaseBackup::getAllTables()
+# $wireDatabaseBackup->getAllTables($count = false, $cache = true): array
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Get array of all table names
 
+## Arguments
 
-@param bool $count If true, returns array indexed by name with count of records as value
+- bool $count If true, returns array indexed by name with count of records as value
+- bool $cache Allow use of cache?
 
-@param bool $cache Allow use of cache?
+## Return value
 
-@return array
+array

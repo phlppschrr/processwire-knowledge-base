@@ -1,9 +1,10 @@
-# ProcessPageListRender::__construct()
+# $processPageListRender->__construct(Page $page, PageArray $children)
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Construct
 
-@param Page $page
+## Arguments
 
-@param PageArray $children
+- Page $page
+- PageArray $children

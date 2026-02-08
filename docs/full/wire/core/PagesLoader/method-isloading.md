@@ -1,10 +1,13 @@
-# PagesLoader::isLoading()
+# $pagesLoader->isLoading(): bool
 
 Source: `wire/core/PagesLoader.php`
 
 Are we currently loading pages?
 
+## Return value
 
-@return bool
+bool
 
-@since 3.0.195
+## Meta
+
+- @since 3.0.195

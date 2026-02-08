@@ -1,4 +1,4 @@
-# WireArray::find()
+# $wireArray->find($selector): WireArray
 
 Source: `wire/core/WireArray.php`
 
@@ -16,7 +16,10 @@ if($matches->count()) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector
+- string|array|Selectors $selector
 
-@return WireArray
+## Return value
+
+WireArray

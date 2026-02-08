@@ -1,9 +1,13 @@
-# PagesPathFinderTests::testPath()
+# $pagesPathFinderTests->testPath($path, $expectResponse = 0): array
 
 Source: `wire/core/PagesPathFinder.php`
 
-@param string $path
 
-@param int $expectResponse
+## Arguments
 
-@return array
+- string $path
+- int $expectResponse
+
+## Return value
+
+array

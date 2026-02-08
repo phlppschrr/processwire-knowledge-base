@@ -1,9 +1,13 @@
-# FieldtypeRepeaterConfigHelper::saveConfigInputfields()
+# $fieldtypeRepeaterConfigHelper->saveConfigInputfields(Template $template)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 Helper to getConfigInputfields, handles adding and removing of repeater fields
 
-@param Template $template
+## Arguments
 
-@throws WireException
+- Template $template
+
+## Throws
+
+- WireException

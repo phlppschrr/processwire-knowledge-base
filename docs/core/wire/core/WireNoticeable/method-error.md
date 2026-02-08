@@ -1,4 +1,4 @@
-# WireNoticeable::error()
+# $wireNoticeable->error($text, $flags = 0): $this
 
 Source: `wire/core/Interfaces.php`
 
@@ -8,8 +8,11 @@ This method automatically identifies the error as coming from this class.
 
 Fatal errors should still throw a WireException (or class derived from it)
 
-@param string $text
+## Arguments
 
-@param int $flags See Notices::flags
+- string $text
+- int $flags See Notices::flags
 
-@return $this
+## Return value
+
+$this

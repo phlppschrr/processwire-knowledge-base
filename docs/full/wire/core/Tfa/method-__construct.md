@@ -1,4 +1,4 @@
-# Tfa::__construct()
+# $tfa->__construct()
 
 Source: `wire/core/Tfa.php`
 

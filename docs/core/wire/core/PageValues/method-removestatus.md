@@ -1,4 +1,4 @@
-# PageValues::removeStatus()
+# $pageValues->removeStatus(Page $page, $statusFlag): Page
 
 Source: `wire/core/PageValues.php`
 
@@ -14,12 +14,20 @@ $page->removeStatus('hidden');
 $page->removeStatus(Page::statusHidden);
 ~~~~~
 
-@param Page $page
+## Arguments
 
-@param int|string $statusFlag Status flag constant or string representation (hidden, locked, unpublished, etc.)
+- Page $page
+- int|string $statusFlag Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
-@return Page
+## Return value
 
-@throws WireException If you attempt to remove `Page::statusSystem` or `Page::statusSystemID` statuses without first adding `Page::statusSystemOverride` status.
+Page
 
-@see Page::addStatus(), Page::hasStatus()
+## Throws
+
+- WireException If you attempt to remove `Page::statusSystem` or `Page::statusSystemID` statuses without first adding `Page::statusSystemOverride` status.
+
+## See also
+
+- [Page::addStatus()](../Page/method-addstatus.md)
+- [Page::hasStatus()](../Page/method-hasstatus.md)

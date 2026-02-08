@@ -1,11 +1,14 @@
-# ListerBookmarks::filterBookmarksByType()
+# $listerBookmarks->filterBookmarksByType(array $allBookmarks, $type): array
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Filter bookmarks, removing those that are not of the requested type
 
-@param array $allBookmarks
+## Arguments
 
-@param int $type
+- array $allBookmarks
+- int $type
 
-@return array
+## Return value
+
+array

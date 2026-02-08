@@ -1,9 +1,10 @@
-# PagesRequest::setResponseMessage()
+# $pagesRequest->setResponseMessage($message, $append = false)
 
 Source: `wire/core/PagesRequest.php`
 
 Set response message
 
-@param string $message
+## Arguments
 
-@param bool $append Append to existing message?
+- string $message
+- bool $append Append to existing message?

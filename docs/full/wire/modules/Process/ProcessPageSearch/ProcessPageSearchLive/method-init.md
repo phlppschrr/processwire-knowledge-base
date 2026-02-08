@@ -1,9 +1,13 @@
-# ProcessPageSearchLive::init()
+# $processPageSearchLive->init(array $presets = array()): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Initialize live search
 
-@param array $presets Additional info to populate in liveSearchInfo
+## Arguments
 
-@return array Current liveSearchInfo
+- array $presets Additional info to populate in liveSearchInfo
+
+## Return value
+
+array Current liveSearchInfo

@@ -1,4 +1,4 @@
-# InputfieldWrapper::preRenderChildren()
+# $inputfieldWrapper->preRenderChildren()
 
 Source: `wire/core/InputfieldWrapper.php`
 

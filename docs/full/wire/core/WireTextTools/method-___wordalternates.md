@@ -1,4 +1,4 @@
-# WireTextTools::___wordAlternates()
+# $wireTextTools->___wordAlternates($word, array $options): array
 
 Source: `wire/core/WireTextTools.php`
 
@@ -39,12 +39,15 @@ $words = $sanitizer->getTextTools()->getWordAlternates('cat');
 echo implode(', ', $words); // outputs: cats, kitty, kitten, feline, felines
 ~~~~~
 
+## Arguments
 
-@param string $word
+- string $word
+- array $options - `operator` (string): Operator being used, if applicable (default='')
 
-@param array $options
- - `operator` (string): Operator being used, if applicable (default='')
+## Return value
 
-@return array
+array
 
-@since 3.0.162
+## Meta
+
+- @since 3.0.162

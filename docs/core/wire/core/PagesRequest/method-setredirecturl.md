@@ -1,9 +1,10 @@
-# PagesRequest::setRedirectUrl()
+# $pagesRequest->setRedirectUrl($redirectUrl, $type = 301)
 
 Source: `wire/core/PagesRequest.php`
 
 Set the redirect URL
 
-@param string $redirectUrl
+## Arguments
 
-@param int $type
+- string $redirectUrl
+- int $type

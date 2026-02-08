@@ -1,9 +1,13 @@
-# WireDataDB::table()
+# $wireDataDB->table($tableName = ''): string
 
 Source: `wire/core/WireDataDB.php`
 
 Get the current table name
 
-@param string $tableName
+## Arguments
 
-@return string
+- string $tableName
+
+## Return value
+
+string

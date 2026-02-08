@@ -1,4 +1,4 @@
-# _sidenav-init::openTreePane()
+# $sidenavInit->openTreePane()
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

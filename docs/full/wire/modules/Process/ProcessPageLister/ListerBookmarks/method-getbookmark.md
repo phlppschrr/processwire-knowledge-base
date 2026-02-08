@@ -1,11 +1,14 @@
-# ListerBookmarks::getBookmark()
+# $listerBookmarks->getBookmark($bookmarkID, $type = null): array|null
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get a bookmark by ID (whether public or owned)
 
-@param string|int $bookmarkID
+## Arguments
 
-@param int|null $type
+- string|int $bookmarkID
+- int|null $type
 
-@return array|null
+## Return value
+
+array|null

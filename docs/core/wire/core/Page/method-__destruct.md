@@ -1,4 +1,4 @@
-# Page::__destruct()
+# $page->__destruct()
 
 Source: `wire/core/Page.php`
 

@@ -1,11 +1,17 @@
-# WireSaveableItems::___save()
+# $wireSaveableItems->___save(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Save the provided item to database
 
-@param Saveable $item The item to save
+## Arguments
 
-@return bool Returns true on success, false on failure
+- Saveable $item The item to save
 
-@throws WireException
+## Return value
+
+bool Returns true on success, false on failure
+
+## Throws
+
+- WireException

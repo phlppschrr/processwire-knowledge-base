@@ -1,4 +1,4 @@
-# LanguageFunctions::wireLangReplacements()
+# $languageFunctions->wireLangReplacements(array $values): array|string
 
 Source: `wire/core/LanguageFunctions.php`
 
@@ -60,9 +60,14 @@ wireLangReplacements([
 ]);
 ~~~~~
 
+## Arguments
 
-@param array $values
+- array $values
 
-@return array|string
+## Return value
 
-@since 3.0.154
+array|string
+
+## Meta
+
+- @since 3.0.154

@@ -1,9 +1,13 @@
-# ImageSizerEngine::setUpscaling()
+# $imageSizerEngine->setUpscaling($value = true): self
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Turn on/off upscaling
 
-@param bool $value Whether to upscale or not (default = true)
+## Arguments
 
-@return self
+- bool $value Whether to upscale or not (default = true)
+
+## Return value
+
+self

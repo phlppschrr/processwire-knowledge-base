@@ -1,4 +1,4 @@
-# CommentStars::__construct()
+# $commentStars->__construct()
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentStars.php`
 

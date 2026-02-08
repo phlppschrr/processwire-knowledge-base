@@ -1,4 +1,4 @@
-# Password::hash()
+# $password->hash($pass): string
 
 Source: `wire/core/Password.php`
 
@@ -6,8 +6,14 @@ Given an unhashed password, generate a hash of the password for database storage
 
 Note: When blowfish, returns the entire blowfish string which has the salt as the first 28 characters.
 
-@param string $pass Raw password
+## Arguments
 
-@return string
+- string $pass Raw password
 
-@throws WireException
+## Return value
+
+string
+
+## Throws
+
+- WireException

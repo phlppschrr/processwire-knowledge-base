@@ -1,11 +1,14 @@
-# Punycode::calculateThreshold()
+# $punycode->calculateThreshold($k, $bias): integer
 
 Source: `wire/core/Punycode.php`
 
 Calculate the bias threshold to fall between TMIN and TMAX
 
-@param integer $k
+## Arguments
 
-@param integer $bias
+- integer $k
+- integer $bias
 
-@return integer
+## Return value
+
+integer

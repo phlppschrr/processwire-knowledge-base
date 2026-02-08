@@ -1,13 +1,18 @@
-# DatabaseQuery::bindValueGetKey()
+# $databaseQuery->bindValueGetKey($value, $type = null): string
 
 Source: `wire/core/DatabaseQuery.php`
 
 Bind value and get unique key that refers to it in one step
 
-@param string|int|float $value
+## Arguments
 
-@param null|int|string $type
+- string|int|float $value
+- null|int|string $type
 
-@return string
+## Return value
 
-@since 3.0.157
+string
+
+## Meta
+
+- @since 3.0.157

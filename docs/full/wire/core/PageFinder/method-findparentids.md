@@ -1,11 +1,14 @@
-# PageFinder::findParentIDs()
+# $pageFinder->findParentIDs($selectors, $options = array()): array
 
 Source: `wire/core/PageFinder.php`
 
 Same as findIDs() but returns the parent IDs of the pages that matched
 
-@param Selectors|string|array $selectors Selectors object, selector string or selector array
+## Arguments
 
-@param array $options
+- Selectors|string|array $selectors Selectors object, selector string or selector array
+- array $options
 
-@return array of page parent IDs
+## Return value
+
+array of page parent IDs

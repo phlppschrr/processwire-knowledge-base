@@ -1,9 +1,13 @@
-# PagesVersionsFiles::fieldSupportsFiles()
+# $pagesVersionsFiles->fieldSupportsFiles($field): bool
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Does given field support files?
 
-@param Field|string|int $field
+## Arguments
 
-@return bool
+- Field|string|int $field
+
+## Return value
+
+bool

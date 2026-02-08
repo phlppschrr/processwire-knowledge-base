@@ -1,13 +1,15 @@
-# FieldtypeDoesVersions::savePageFieldVersion()
+# $fieldtypeDoesVersions->savePageFieldVersion(Page $page, Field $field, $version): bool
 
 Source: `wire/core/Interfaces.php`
 
 Save version of given page field
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- int $version
 
-@param int $version
+## Return value
 
-@return bool
+bool

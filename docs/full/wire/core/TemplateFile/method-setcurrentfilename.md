@@ -1,9 +1,13 @@
-# TemplateFile::setCurrentFilename()
+# $templateFile->setCurrentFilename($filename)
 
 Source: `wire/core/TemplateFile.php`
 
 Set the current filename being rendered
 
-@param string $filename
+## Arguments
 
-@deprecated Moved to fileReady() and fileFinished()
+- string $filename
+
+## Meta
+
+- @deprecated Moved to fileReady() and fileFinished()

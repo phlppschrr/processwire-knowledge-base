@@ -1,7 +1,9 @@
-# Comment::getPage()
+# $comment->getPage(): null|Page
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Get Page that this Comment belongs to
 
-@return null|Page
+## Return value
+
+null|Page

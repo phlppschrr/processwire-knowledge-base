@@ -1,9 +1,13 @@
-# WireMailInterface::bodyHTML()
+# $wireMailInterface->bodyHTML($body): self
 
 Source: `wire/core/WireMailInterface.php`
 
 Set the email message body (HTML only)
 
-@param string $body in HTML
+## Arguments
 
-@return self
+- string $body in HTML
+
+## Return value
+
+self

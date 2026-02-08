@@ -1,11 +1,17 @@
-# WireDatabasePDOStatement::executeDebug()
+# $wireDatabasePDOStatement->executeDebug($input_parameters = NULL): bool
 
 Source: `wire/core/WireDatabasePDOStatement.php`
 
 Execute prepared statement when in debug mode only
 
-@param array|null $input_parameters
+## Arguments
 
-@return bool
+- array|null $input_parameters
 
-@throws \PDOException
+## Return value
+
+bool
+
+## Throws
+
+- \PDOException

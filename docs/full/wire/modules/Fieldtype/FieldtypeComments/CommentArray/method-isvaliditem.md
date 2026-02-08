@@ -1,9 +1,13 @@
-# CommentArray::isValidItem()
+# $commentArray->isValidItem($item): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Per the WireArray interface, is the item a Comment
 
-@param Wire|Comment $item
+## Arguments
 
-@return bool
+- Wire|Comment $item
+
+## Return value
+
+bool

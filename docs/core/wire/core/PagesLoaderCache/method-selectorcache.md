@@ -1,14 +1,15 @@
-# PagesLoaderCache::selectorCache()
+# $pagesLoaderCache->selectorCache($selector, array $options, PageArray $pages): bool
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Cache the given selector string and options with the given PageArray
 
+## Arguments
 
-@param string $selector
+- string $selector
+- array $options
+- PageArray $pages
 
-@param array $options
+## Return value
 
-@param PageArray $pages
-
-@return bool True if pages were cached, false if not
+bool True if pages were cached, false if not

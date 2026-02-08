@@ -1,4 +1,4 @@
-# Page::findOne()
+# $page->findOne($selector = '', $options = array()): Page|NullPage
 
 Source: `wire/core/Page.php`
 
@@ -11,13 +11,20 @@ This is the same as `Pages::findOne()` except that the match is always a descend
 $item = $page->findOne("sort=-modified");
 ~~~~~
 
+## Arguments
 
-@param string|array $selector Selector string or array
+- string|array $selector Selector string or array
+- array $options Optional options to modify default bheavior, see options for `Pages::find()`.
 
-@param array $options Optional options to modify default bheavior, see options for `Pages::find()`.
+## Return value
 
-@return Page|NullPage Returns Page when found, or NullPage when nothing found.
+Page|NullPage Returns Page when found, or NullPage when nothing found.
 
-@see Pages::findOne(), Page::child()
+## See also
 
-@since 3.0.116
+- [Pages::findOne()](../Pages/method-findone.md)
+- [Page::child()](method-child.md)
+
+## Meta
+
+- @since 3.0.116

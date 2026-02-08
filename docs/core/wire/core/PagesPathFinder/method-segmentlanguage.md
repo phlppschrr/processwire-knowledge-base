@@ -1,11 +1,14 @@
-# PagesPathFinder::segmentLanguage()
+# $pagesPathFinder->segmentLanguage($segment, $getLanguageId = false): Language|null|int
 
 Source: `wire/core/PagesPathFinder.php`
 
 Return language identified by homepage name segment
 
-@param string $segment
+## Arguments
 
-@param bool $getLanguageId
+- string $segment
+- bool $getLanguageId
 
-@return Language|null|int
+## Return value
+
+Language|null|int

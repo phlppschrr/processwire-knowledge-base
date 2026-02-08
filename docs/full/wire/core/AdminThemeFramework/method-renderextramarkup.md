@@ -1,9 +1,13 @@
-# AdminThemeFramework::renderExtraMarkup()
+# $adminThemeFramework->renderExtraMarkup($for): mixed|string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Render an extra markup region
 
-@param string $for
+## Arguments
 
-@return mixed|string
+- string $for
+
+## Return value
+
+mixed|string

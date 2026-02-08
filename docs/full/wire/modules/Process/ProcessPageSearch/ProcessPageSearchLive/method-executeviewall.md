@@ -1,4 +1,4 @@
-# ProcessPageSearchLive::executeViewAll()
+# $processPageSearchLive->executeViewAll(): string
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -10,6 +10,10 @@ Expects these GET vars to be present:
  - property
  - q
 
-@return string
+## Return value
 
-@throws WireException
+string
+
+## Throws
+
+- WireException

@@ -1,7 +1,9 @@
-# PagesEditor::__construct()
+# $pagesEditor->__construct(Pages $pages)
 
 Source: `wire/core/PagesEditor.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

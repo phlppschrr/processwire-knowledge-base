@@ -1,4 +1,4 @@
-# Sanitizer::__toString()
+# $sanitizer->__toString()
 
 Source: `wire/core/Sanitizer.php`
 

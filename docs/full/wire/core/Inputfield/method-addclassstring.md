@@ -1,4 +1,4 @@
-# Inputfield::addClassString()
+# $inputfield->addClassString($class, $property = 'class'): self
 
 Source: `wire/core/Inputfield.php`
 
@@ -31,10 +31,15 @@ A string like `hello:world` where `hello` is not one of those element types list
 and is not prefixed with a plus sign `+`, will be added as a literal class name with the
 colon in it (such as those used by Tailwind).
 
-@param string $class Formatted class string to parse class types and names from
+## Arguments
 
-@param string $property Default/fallback element/property if not indicated in string
+- string $class Formatted class string to parse class types and names from
+- string $property Default/fallback element/property if not indicated in string
 
-@return self
+## Return value
 
-@since 3.0.204
+self
+
+## Meta
+
+- @since 3.0.204

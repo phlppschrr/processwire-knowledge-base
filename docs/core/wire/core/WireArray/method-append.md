@@ -1,4 +1,4 @@
-# WireArray::append()
+# $wireArray->append($item): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -12,9 +12,15 @@ naming consistency with the `WireArray::prepend()` method.
 $items->append($item);
 ~~~~~
 
+## Arguments
 
-@param Wire|WireArray|mixed $item Item to append.
+- Wire|WireArray|mixed $item Item to append.
 
-@return $this This instance.
+## Return value
 
-@see WireArray::prepend(), WireArray::add()
+$this This instance.
+
+## See also
+
+- [WireArray::prepend()](method-prepend.md)
+- [WireArray::add()](method-add.md)

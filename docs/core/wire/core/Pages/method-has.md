@@ -1,4 +1,4 @@
-# Pages::has()
+# $pages->has($selector, $verbose = false): array|int
 
 Source: `wire/core/Pages.php`
 
@@ -12,13 +12,20 @@ Is there any page that matches the given $selector in the system? (with no exclu
 When `$verbose` option is used, an array is returned instead. Verbose return array includes page `id`,
 `parent_id` and `templates_id` indexes.
 
+## Arguments
 
-@param string|int|array|Selectors $selector
+- string|int|array|Selectors $selector
+- bool $verbose Return verbose array with page id, parent_id, templates_id rather than just page id? (default=false)
 
-@param bool $verbose Return verbose array with page id, parent_id, templates_id rather than just page id? (default=false)
+## Return value
 
-@return array|int
+array|int
 
-@since 3.0.153
+## See also
 
-@see Pages::count(), Pages::get()
+- [Pages::count()](method-count.md)
+- [Pages::get()](method-get.md)
+
+## Meta
+
+- @since 3.0.153

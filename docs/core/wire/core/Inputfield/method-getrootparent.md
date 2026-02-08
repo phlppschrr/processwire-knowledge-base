@@ -1,4 +1,4 @@
-# Inputfield::getRootParent()
+# $inputfield->getRootParent(): InputfieldForm|InputfieldWrapper|null
 
 Source: `wire/core/Inputfield.php`
 
@@ -6,7 +6,10 @@ Get the root parent InputfieldWrapper element (farthest parent, commonly Inputfi
 
 This returns null only if Inputfield it is called from has not yet been added to an InputfieldWrapper.
 
+## Return value
 
-@return InputfieldForm|InputfieldWrapper|null
+InputfieldForm|InputfieldWrapper|null
 
-@since 3.0.106
+## Meta
+
+- @since 3.0.106

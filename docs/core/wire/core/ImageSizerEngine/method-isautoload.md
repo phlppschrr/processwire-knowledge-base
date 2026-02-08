@@ -1,7 +1,9 @@
-# ImageSizerEngine::isAutoload()
+# $imageSizerEngine->isAutoload(): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Module info: not-autoload
 
-@return bool
+## Return value
+
+bool

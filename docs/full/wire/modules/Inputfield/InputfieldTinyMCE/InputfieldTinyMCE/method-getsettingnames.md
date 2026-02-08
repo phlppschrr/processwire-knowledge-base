@@ -1,11 +1,17 @@
-# InputfieldTinyMCE::getSettingNames()
+# $inputfieldTinyMCE->getSettingNames($types): string[]
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Get all configurable setting names
 
-@param array|string $types Types to get, one or more of: 'tinymce', 'field', 'module', 'optionals'
+## Arguments
 
-@return string[]
+- array|string $types Types to get, one or more of: 'tinymce', 'field', 'module', 'optionals'
 
-@throws WireException if given unknown setting type
+## Return value
+
+string[]
+
+## Throws
+
+- WireException if given unknown setting type

@@ -1,17 +1,21 @@
-# WireHttp::head()
+# $wireHttp->head($url, $data = array(), array $options = array()): bool|array
 
 Source: `wire/core/WireHttp.php`
 
 Send to a URL using a HEAD request
 
+## Arguments
 
-@param string $url URL to request (including http:// or https://)
+- string $url URL to request (including http:// or https://)
+- array|string $data Array of data to send (if not already set before) or raw string data to send, such as JSON.
+- array $options Optional options to modify default behavior, see the send() method for details.
 
-@param array|string $data Array of data to send (if not already set before)
-  or raw string data to send, such as JSON.
+## Return value
 
-@param array $options Optional options to modify default behavior, see the send() method for details.
+bool|array False on failure or Array with ResponseHeaders on success.
 
-@return bool|array False on failure or Array with ResponseHeaders on success.
+## See also
 
-@see WireHttp::send(), WireHttp::post(), WireHttp::get()
+- [WireHttp::send()](method-___send.md)
+- [WireHttp::post()](method-post.md)
+- [WireHttp::get()](method-get.md)

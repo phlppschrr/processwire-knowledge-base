@@ -1,7 +1,9 @@
-# WireHttp::setResponseHeader()
+# $wireHttp->setResponseHeader(array $responseHeader)
 
 Source: `wire/core/WireHttp.php`
 
 Set the response header
 
-@param array
+## Arguments
+
+- array

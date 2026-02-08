@@ -1,4 +1,4 @@
-# FunctionsAPI::config()
+# $functionsAPI->config($key = '', $value = null): Config|mixed
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -15,11 +15,15 @@ config()->debug = true; // Set value of debug
 config('debug', true);  // Same as above, shortcut syntax
 ~~~~~
 
+## Arguments
 
-@param string $key
+- string $key
+- null $value
 
-@param null $value
+## Return value
 
-@return Config|mixed
+Config|mixed
 
-@see Config
+## See also
+
+- Config

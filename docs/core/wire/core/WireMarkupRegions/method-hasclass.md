@@ -1,11 +1,14 @@
-# WireMarkupRegions::hasClass()
+# $wireMarkupRegions->hasClass($class, array $classes): bool|string
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Does the given class exist in given $classes array?
 
-@param string $class May be class name, or class prefix if $class has "*" at end.
+## Arguments
 
-@param array $classes
+- string $class May be class name, or class prefix if $class has "*" at end.
+- array $classes
 
-@return bool|string Returns false if no match, or class name if matched
+## Return value
+
+bool|string Returns false if no match, or class name if matched

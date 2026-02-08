@@ -1,10 +1,13 @@
-# Template::getIcon()
+# $template->getIcon($prefix = false): string
 
 Source: `wire/core/Template.php`
 
 Return the icon name used by this template
 
+## Arguments
 
-@param bool $prefix Specify true if you want the icon prefix (icon- or fa-) to be included (default=false).
+- bool $prefix Specify true if you want the icon prefix (icon- or fa-) to be included (default=false).
 
-@return string Returns a font-awesome icon name
+## Return value
+
+string Returns a font-awesome icon name

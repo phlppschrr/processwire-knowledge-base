@@ -1,4 +1,4 @@
-# Page::next()
+# $page->next($selector = '', ?PageArray $siblings = null): Page|NullPage
 
 Source: `wire/core/Page.php`
 
@@ -18,10 +18,11 @@ $sibling = $page->next("created>$page->created");
 $sibling = $page->next("include=all");
 ~~~~~
 
+## Arguments
 
-@param string|array $selector Optional selector. When specified, will find nearest next sibling that matches.
+- string|array $selector Optional selector. When specified, will find nearest next sibling that matches.
+- PageArray $siblings Optional siblings to use instead of the default. Avoid using this argument as it forces this method to use the older/slower functions.
 
-@param PageArray $siblings Optional siblings to use instead of the default. Avoid using this argument
-  as it forces this method to use the older/slower functions.
+## Return value
 
-@return Page|NullPage Returns the next sibling page, or a NullPage if none found.
+Page|NullPage Returns the next sibling page, or a NullPage if none found.

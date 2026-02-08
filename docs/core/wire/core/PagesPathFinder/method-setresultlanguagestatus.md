@@ -1,7 +1,9 @@
-# PagesPathFinder::setResultLanguageStatus()
+# $pagesPathFinder->setResultLanguageStatus($status)
 
 Source: `wire/core/PagesPathFinder.php`
 
 Set result language status
 
-@param int|bool $status
+## Arguments
+
+- int|bool $status

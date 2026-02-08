@@ -1,4 +1,4 @@
-# InputfieldWrapper::populateValues()
+# $inputfieldWrapper->populateValues($data): array
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -11,7 +11,10 @@ the associated Inputfield.
 If given an array, it should be an associative with the field 'name' as the keys and
 the field 'value' as the array value, i.e. `['field_name' => 'field_value']`.
 
+## Arguments
 
-@param WireData|Wire|ConfigurableModule|array $data
+- WireData|Wire|ConfigurableModule|array $data
 
-@return array Returns array of field names that were populated
+## Return value
+
+array Returns array of field names that were populated

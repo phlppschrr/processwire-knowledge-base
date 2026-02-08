@@ -1,4 +1,4 @@
-# PagesPathFinder::getShortcutExcludeRoot()
+# $pagesPathFinder->getShortcutExcludeRoot($path): bool
 
 Source: `wire/core/PagesPathFinder.php`
 
@@ -8,6 +8,10 @@ Unlike other shortcuts, this one is an exclusion shortcut:
 Returns false if the root segment matched and further analysis should take place.
 Returns true if root segment is not in this site and 404 should be the result.
 
-@param string $path
+## Arguments
 
-@return bool
+- string $path
+
+## Return value
+
+bool

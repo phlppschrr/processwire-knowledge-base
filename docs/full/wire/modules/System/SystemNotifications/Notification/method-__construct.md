@@ -1,4 +1,4 @@
-# Notification::__construct()
+# $notification->__construct()
 
 Source: `wire/modules/System/SystemNotifications/Notification.php`
 

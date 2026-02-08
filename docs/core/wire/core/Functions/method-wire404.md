@@ -1,4 +1,4 @@
-# Functions::wire404()
+# $functions->wire404($message = '')
 
 Source: `wire/core/Functions.php`
 
@@ -8,9 +8,14 @@ This is an alternative to using a manual `throw new Wire404Exception()` and is r
 PW as a front-end 404 where PagePathHistory (or potentially other modules) are still allowed
 to change the behavior of the request from a 404 to something else (like a 301 redirect).
 
+## Arguments
 
-@param string $message Optional message to send to Exception message argument (not used in output by default)
+- string $message Optional message to send to Exception message argument (not used in output by default)
 
-@throws Wire404Exception
+## Throws
 
-@since 3.0.146
+- Wire404Exception
+
+## Meta
+
+- @since 3.0.146

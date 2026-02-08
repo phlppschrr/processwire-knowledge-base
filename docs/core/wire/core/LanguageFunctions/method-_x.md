@@ -1,4 +1,4 @@
-# LanguageFunctions::_x()
+# $languageFunctions->_x($text, $context, $textdomain = null): string
 
 Source: `wire/core/LanguageFunctions.php`
 
@@ -13,16 +13,21 @@ echo _x('Click for more', 'button');
 echo _x('Click for more', 'text-link');
 ~~~~~
 
+## Arguments
 
-@param string $text Text for translation.
+- string $text Text for translation.
+- string $context Name of context
+- string $textdomain Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine automatically.
 
-@param string $context Name of context
+## Return value
 
-@param string $textdomain Textdomain for the text, may be class name, filename, or something made up by you.
-  If omitted, a debug backtrace will attempt to determine automatically.
+string Translated text or original text if translation not available.
 
-@return string Translated text or original text if translation not available.
+## See also
 
-@see __(), _n()
+- __()
+- _n()
 
-@link https://processwire.com/docs/multi-language-support/code-i18n/
+## Meta
+
+- @link https://processwire.com/docs/multi-language-support/code-i18n/

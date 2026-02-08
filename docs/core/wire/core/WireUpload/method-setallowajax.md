@@ -1,9 +1,13 @@
-# WireUpload::setAllowAjax()
+# $wireUpload->setAllowAjax($allowAjax = true): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set whether or not AJAX uploads are allowed
 
-@param bool $allowAjax
+## Arguments
 
-@return $this
+- bool $allowAjax
+
+## Return value
+
+$this

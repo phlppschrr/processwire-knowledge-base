@@ -1,9 +1,10 @@
-# MarkupQA::checkUrls()
+# $markupQA->checkUrls(&$value, $sleep = false)
 
 Source: `wire/core/MarkupQA.php`
 
 Wake URLs for wakeup or sleep, converting root URLs as necessary
 
-@param string $value
+## Arguments
 
-@param bool $sleep
+- string $value
+- bool $sleep

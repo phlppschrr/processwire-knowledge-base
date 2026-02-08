@@ -1,4 +1,4 @@
-# Page::hasStatus()
+# $page->hasStatus($status): bool
 
 Source: `wire/core/Page.php`
 
@@ -21,9 +21,18 @@ if($page->isUnpublished()) { ... }
 if($page->isLocked()) { ... }
 ~~~~~
 
+## Arguments
 
-@param int|string $status Status flag constant or string representation (hidden, locked, unpublished, etc.)
+- int|string $status Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
-@return bool Returns true if page has the given status, or false if it doesn't.
+## Return value
 
-@see Page::addStatus(), Page::removeStatus(), Page::isHidden(), Page::isUnpublished(), Page::isLocked()
+bool Returns true if page has the given status, or false if it doesn't.
+
+## See also
+
+- [Page::addStatus()](method-addstatus.md)
+- [Page::removeStatus()](method-removestatus.md)
+- [Page::isHidden()](method-ishidden.md)
+- [Page::isUnpublished()](method-isunpublished.md)
+- [Page::isLocked()](method-islocked.md)

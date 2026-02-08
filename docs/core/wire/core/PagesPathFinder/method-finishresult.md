@@ -1,9 +1,13 @@
-# PagesPathFinder::finishResult()
+# $pagesPathFinder->finishResult($path): array
 
 Source: `wire/core/PagesPathFinder.php`
 
 Finish result/return value
 
-@param string|bool $path Path string or boolean false when 404
+## Arguments
 
-@return array
+- string|bool $path Path string or boolean false when 404
+
+## Return value
+
+array

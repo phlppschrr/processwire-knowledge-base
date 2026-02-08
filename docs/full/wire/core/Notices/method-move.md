@@ -1,16 +1,15 @@
-# Notices::move()
+# $notices->move(Wire $from, Wire $to, array $options = array()): int
 
 Source: `wire/core/Notices.php`
 
 Move notices from one Wire instance to another
 
-@param Wire $from
+## Arguments
 
-@param Wire $to
+- Wire $from
+- Wire $to
+- array $options Additional options: - `types` (array): Types to move (default=['messages','warnings','errors']) - `prefix` (string): Optional prefix to add to moved notices text (default='') - `suffix` (string): Optional suffix to add to moved notices text (default='')
 
-@param array $options Additional options:
- - `types` (array): Types to move (default=['messages','warnings','errors'])
- - `prefix` (string): Optional prefix to add to moved notices text (default='')
- - `suffix` (string): Optional suffix to add to moved notices text (default='')
+## Return value
 
-@return int Number of notices moved
+int Number of notices moved

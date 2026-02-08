@@ -1,4 +1,4 @@
-# Tfa::getTfaTypeName()
+# $tfa->getTfaTypeName(): string
 
 Source: `wire/core/Tfa.php`
 
@@ -6,6 +6,10 @@ Get translated Tfa type name (short name)
 
 When a module implements this, it should not make a a parent::getTfaTypeName() call.
 
-@return string
+## Return value
 
-@since 3.0.160
+string
+
+## Meta
+
+- @since 3.0.160

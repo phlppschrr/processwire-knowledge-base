@@ -1,4 +1,4 @@
-# WireArray::getProperty()
+# $wireArray->getProperty($property): Wire|mixed
 
 Source: `wire/core/WireArray.php`
 
@@ -22,7 +22,10 @@ $count = $items->getProperty('count');
 $count = $items->count;
 ~~~~~
 
+## Arguments
 
-@param string $property Name of property to retrieve
+- string $property Name of property to retrieve
 
-@return Wire|mixed
+## Return value
+
+Wire|mixed

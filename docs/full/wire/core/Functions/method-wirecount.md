@@ -1,4 +1,4 @@
-# Functions::wireCount()
+# $functions->wireCount($value): int
 
 Source: `wire/core/Functions.php`
 
@@ -10,7 +10,10 @@ Duplicates behavior of PHP count() function prior to PHP 7.2, which states:
 object with implemented Countable interface, 1 will be returned. There is one exception,
 if $value is NULL, 0 will be returned.
 
+## Arguments
 
-@param mixed $value
+- mixed $value
 
-@return int
+## Return value
+
+int

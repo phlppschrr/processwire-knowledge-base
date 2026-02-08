@@ -1,12 +1,17 @@
-# WireTextTools::strlen()
+# $wireTextTools->strlen($str): int
 
 Source: `wire/core/WireTextTools.php`
 
 Get string length
 
+## Arguments
 
-@param string $str
+- string $str
 
-@return int
+## Return value
 
-@see https://www.php.net/manual/en/function.strlen.php
+int
+
+## See also
+
+- [https://www.php.net/manual/en/function.strlen.php](https://www.php.net/manual/en/function.strlen.php)

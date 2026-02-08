@@ -1,5 +1,8 @@
-# Sanitizer::punycode()
+# $sanitizer->punycode(): Punycode
 
 Source: `wire/core/Sanitizer.php`
 
-@return Punycode
+
+## Return value
+
+Punycode

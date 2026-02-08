@@ -1,11 +1,14 @@
-# ProcessPageListRender::numChildren()
+# $processPageListRender->numChildren(Page $page, $selector = null): int
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Return number of children for page
 
-@param Page $page
+## Arguments
 
-@param string|int|bool|null $selector
+- Page $page
+- string|int|bool|null $selector
 
-@return int
+## Return value
+
+int

@@ -1,4 +1,4 @@
-# PagesEditor::setupPageName()
+# $pagesEditor->setupPageName(Page $page, array $options = array()): string
 
 Source: `wire/core/PagesEditor.php`
 
@@ -9,10 +9,11 @@ Typically this would be used only if page had no name or if it had a temporary u
 Page will be populated with the name given. This method will not populate names to pages that
 already have a name, unless the name is "untitled"
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $options - format: Optionally specify the format to use, or leave blank to auto-determine.
 
-@param array $options
-	- format: Optionally specify the format to use, or leave blank to auto-determine.
+## Return value
 
-@return string If a name was generated it is returned. If no name was generated blank is returned.
+string If a name was generated it is returned. If no name was generated blank is returned.

@@ -1,11 +1,14 @@
-# ModulesInfo::getModuleInfoSystem()
+# $modulesInfo->getModuleInfoSystem($moduleName, array $options = array()): array
 
 Source: `wire/core/ModulesInfo.php`
 
 Retrieve module info for system properties: PHP or ProcessWire
 
-@param string $moduleName
+## Arguments
 
-@param array $options
+- string $moduleName
+- array $options
 
-@return array
+## Return value
+
+array

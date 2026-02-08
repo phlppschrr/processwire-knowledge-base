@@ -1,9 +1,13 @@
-# DatabaseQuerySelectFulltext::isIndexableWord()
+# $databaseQuerySelectFulltext->isIndexableWord($word): bool
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Is given word not a stopword and long enough to be indexed?
 
-@param string $word
+## Arguments
 
-@return bool
+- string $word
+
+## Return value
+
+bool

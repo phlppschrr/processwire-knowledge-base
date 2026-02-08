@@ -1,9 +1,13 @@
-# ImageSizerEngineGD::getLibraryVersion()
+# $imageSizerEngineGD->getLibraryVersion(): string
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Get library version string
 
-@return string Returns version string or blank string if not applicable/available
+## Return value
 
-@since 3.0.138
+string Returns version string or blank string if not applicable/available
+
+## Meta
+
+- @since 3.0.138

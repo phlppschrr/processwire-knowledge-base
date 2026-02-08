@@ -1,10 +1,13 @@
-# PagesTrash::parseTrashPageName()
+# $pagesTrash->parseTrashPageName($name): array|bool
 
 Source: `wire/core/PagesTrash.php`
 
 Parse a trashed page name into an array of its components
 
+## Arguments
 
-@param string $name
+- string $name
 
-@return array|bool Returns array of info if name is a trash/restore name, or boolean false if not
+## Return value
+
+array|bool Returns array of info if name is a trash/restore name, or boolean false if not

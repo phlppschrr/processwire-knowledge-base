@@ -1,9 +1,13 @@
-# WireDataDB::uninstall()
+# $wireDataDB->uninstall(): bool
 
 Source: `wire/core/WireDataDB.php`
 
 Uninstall the table
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

@@ -1,4 +1,4 @@
-# WireDatabasePDO::getVersion()
+# $wireDatabasePDO->getVersion($getNumberOnly = false): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -9,9 +9,14 @@ Example return values:
  - 5.7.23
  - 10.1.34-MariaDB
 
+## Arguments
 
-@return string
+- bool $getNumberOnly Get only version number, exclude any vendor specific suffixes? (default=false) 3.0.185+
 
-@param bool $getNumberOnly Get only version number, exclude any vendor specific suffixes? (default=false) 3.0.185+
+## Return value
 
-@since 3.0.166
+string
+
+## Meta
+
+- @since 3.0.166

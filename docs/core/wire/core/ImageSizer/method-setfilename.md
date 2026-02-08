@@ -1,9 +1,13 @@
-# ImageSizer::setFilename()
+# $imageSizer->setFilename($filename): $this
 
 Source: `wire/core/ImageSizer.php`
 
 Set the filename
 
-@param $filename
+## Arguments
 
-@return $this
+- $filename
+
+## Return value
+
+$this

@@ -1,4 +1,4 @@
-# Pagefiles::__destruct()
+# $pagefiles->__destruct()
 
 Source: `wire/core/Pagefiles.php`
 

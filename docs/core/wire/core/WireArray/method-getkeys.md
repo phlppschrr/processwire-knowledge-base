@@ -1,8 +1,9 @@
-# WireArray::getKeys()
+# $wireArray->getKeys(): array
 
 Source: `wire/core/WireArray.php`
 
 Returns a regular PHP array of all keys used in this WireArray.
 
+## Return value
 
-@return array Keys used in the WireArray.
+array Keys used in the WireArray.

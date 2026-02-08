@@ -1,4 +1,4 @@
-# FunctionsAPI::paths()
+# $functionsAPI->paths($key = ''): null|Paths|string
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -12,9 +12,14 @@ $path = paths()->templates;
 $path = paths('templates');
 ~~~~~
 
+## Arguments
 
-@param string $key
+- string $key
 
-@return null|Paths|string
+## Return value
 
-@see Config::paths()
+null|Paths|string
+
+## See also
+
+- [Config::paths()](../Config/method-paths.md)

@@ -1,7 +1,9 @@
-# Process::getProcessPage()
+# $process->getProcessPage(): Page|NullPage
 
 Source: `wire/core/Process.php`
 
 Return the Page that this process lives on
 
-@return Page|NullPage
+## Return value
+
+Page|NullPage

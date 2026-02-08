@@ -1,12 +1,14 @@
-# WireHttp::setHeader()
+# $wireHttp->setHeader($key, $value): $this
 
 Source: `wire/core/WireHttp.php`
 
 Send an individual request header to send with GET/POST/etc. request
 
+## Arguments
 
-@param string $key Header name
+- string $key Header name
+- string $value Header value to set (or specify null to remove header, since 3.0.131)
 
-@param string $value Header value to set (or specify null to remove header, since 3.0.131)
+## Return value
 
-@return $this
+$this

@@ -1,9 +1,13 @@
-# ModuleConfig::add()
+# $moduleConfig->add(array $a): self
 
 Source: `wire/core/ModuleConfig.php`
 
 Set an array that defines Inputfields
 
-@param array $a
+## Arguments
 
-@return self
+- array $a
+
+## Return value
+
+self

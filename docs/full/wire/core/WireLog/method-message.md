@@ -1,4 +1,4 @@
-# WireLog::message()
+# $wireLog->message($text, $flags = 0): Wire|WireLog
 
 Source: `wire/core/WireLog.php`
 
@@ -9,8 +9,11 @@ Record an informational or 'success' message in the message log (messages.txt)
 $log->message("User updated profile");
 ~~~~~
 
-@param string $text Message to log
+## Arguments
 
-@param bool|int $flags Specify boolean true to also have the message displayed interactively (admin only).
+- string $text Message to log
+- bool|int $flags Specify boolean true to also have the message displayed interactively (admin only).
 
-@return Wire|WireLog
+## Return value
+
+Wire|WireLog

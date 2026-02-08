@@ -1,4 +1,4 @@
-# PagesEditor::isDeleteable()
+# $pagesEditor->isDeleteable(Page $page, $throw = false): bool
 
 Source: `wire/core/PagesEditor.php`
 
@@ -7,11 +7,15 @@ Is the given page deleteable from the API?
 Note: this does not account for user permission checking.
 It only checks if the page is in a state to be deleteable via the API.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- bool $throw Throw WireException with additional details?
 
-@param bool $throw Throw WireException with additional details?
+## Return value
 
-@return bool True if deleteable, False if not
+bool True if deleteable, False if not
 
-@throws WireException If requested to do so via $throw argument
+## Throws
+
+- WireException If requested to do so via $throw argument

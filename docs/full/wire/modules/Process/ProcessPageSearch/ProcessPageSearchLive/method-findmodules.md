@@ -1,11 +1,14 @@
-# ProcessPageSearchLive::findModules()
+# $processPageSearchLive->findModules(array &$liveSearch, array &$modulesInfo): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Find modules matching query
 
-@param array $liveSearch
+## Arguments
 
-@param array $modulesInfo
+- array $liveSearch
+- array $modulesInfo
 
-@return array
+## Return value
+
+array

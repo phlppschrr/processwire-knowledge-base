@@ -1,9 +1,13 @@
-# SelectableOptionManager::checkLanguagesAdded()
+# $selectableOptionManager->checkLanguagesAdded($languageAdded = null): array
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Check for added languages
 
-@param Language|null $languageAdded
+## Arguments
 
-@return array SQL statements to add language when appropriate
+- Language|null $languageAdded
+
+## Return value
+
+array SQL statements to add language when appropriate

@@ -1,9 +1,13 @@
-# Password::___setPass()
+# $password->___setPass($value)
 
 Source: `wire/core/Password.php`
 
 Set the 'pass' to the given value
 
-@param string $value
+## Arguments
 
-@throws WireException if given invalid $value
+- string $value
+
+## Throws
+
+- WireException if given invalid $value

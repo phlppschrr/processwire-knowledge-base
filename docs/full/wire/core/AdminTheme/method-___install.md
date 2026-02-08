@@ -1,4 +1,4 @@
-# AdminTheme::___install()
+# $adminTheme->___install()
 
 Source: `wire/core/AdminTheme.php`
 

@@ -1,4 +1,4 @@
-# Pages::getOneById()
+# $pages->getOneById($id, array $options = array()): Page|NullPage
 
 Source: `wire/core/Pages.php`
 
@@ -6,11 +6,15 @@ Get one page by ID
 
 This is the same as `getById()` with the `getOne` option.
 
+## Arguments
 
-@param int $id
+- int $id
+- array $options
 
-@param array $options
+## Return value
 
-@return Page|NullPage
+Page|NullPage
 
-@since 3.0.186
+## Meta
+
+- @since 3.0.186

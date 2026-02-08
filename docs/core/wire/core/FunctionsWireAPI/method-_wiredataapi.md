@@ -1,13 +1,15 @@
-# FunctionsWireAPI::_wireDataAPI()
+# $functionsWireAPI->_wireDataAPI($_apiVar, $key, $value): mixed|null|WireData|Page
 
 Source: `wire/core/FunctionsWireAPI.php`
 
 Common helper for API functions dealing with WireData objects
 
-@param $_apiVar
+## Arguments
 
-@param $key
+- $_apiVar
+- $key
+- $value
 
-@param $value
+## Return value
 
-@return mixed|null|WireData|Page
+mixed|null|WireData|Page

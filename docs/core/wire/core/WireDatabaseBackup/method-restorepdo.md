@@ -1,11 +1,14 @@
-# WireDatabaseBackup::restorePDO()
+# $wireDatabaseBackup->restorePDO($filename, array $options = array()): bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Import a database SQL file using PDO
 
-@param string $filename Filename to restore (must be SQL file exported by this class)
+## Arguments
 
-@param array $options See $restoreOptions
+- string $filename Filename to restore (must be SQL file exported by this class)
+- array $options See $restoreOptions
 
-@return bool true on success, false on failure. Call the errors() method to retrieve errors.
+## Return value
+
+bool true on success, false on failure. Call the errors() method to retrieve errors.

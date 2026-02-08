@@ -1,16 +1,22 @@
-# PagesLoader::getNativeColumnValue()
+# $pagesLoader->getNativeColumnValue($id, $column): int|string|bool
 
 Source: `wire/core/PagesLoader.php`
 
 Get value of of a native column in pages table for given page ID
 
+## Arguments
 
-@param int|Page $id Page ID
+- int|Page $id Page ID
+- string $column
 
-@param string $column
+## Return value
 
-@return int|string|bool Returns int/string value on success or boolean false if no matching row
+int|string|bool Returns int/string value on success or boolean false if no matching row
 
-@since 3.0.156
+## Throws
 
-@throws \PDOException|WireException
+- \PDOException|WireException
+
+## Meta
+
+- @since 3.0.156

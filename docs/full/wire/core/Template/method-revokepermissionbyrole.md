@@ -1,4 +1,4 @@
-# Template::revokePermissionByRole()
+# $template->revokePermissionByRole($permission, $role, $test = false): bool
 
 Source: `wire/core/Template.php`
 
@@ -6,10 +6,12 @@ Revoke a permission that applies to users having a specific role with pages usin
 
 Note that the change is not committed until you save() the template.
 
-@param Permission|int|string $permission Permission object, name, or id
+## Arguments
 
-@param Role|int|string $role Role object, name or id
+- Permission|int|string $permission Permission object, name, or id
+- Role|int|string $role Role object, name or id
+- bool $test Specify true to only test if an update would be made, without changing anything
 
-@param bool $test Specify true to only test if an update would be made, without changing anything
+## Return value
 
-@return bool Returns true if an update was made (or would be made), false if not
+bool Returns true if an update was made (or would be made), false if not

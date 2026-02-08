@@ -1,9 +1,13 @@
-# Templates::encodeData()
+# $templates->encodeData(array $value): string
 
 Source: `wire/core/Templates.php`
 
 Overridden from WireSaveableItems to retain specific keys
 
-@param array $value
+## Arguments
 
-@return string
+- array $value
+
+## Return value
+
+string

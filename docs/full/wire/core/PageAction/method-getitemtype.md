@@ -1,7 +1,9 @@
-# PageAction::getItemType()
+# $pageAction->getItemType(): string
 
 Source: `wire/core/PageAction.php`
 
 Return the string type (class name) of items that this action operates upon
 
-@return string
+## Return value
+
+string

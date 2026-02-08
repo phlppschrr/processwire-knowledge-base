@@ -1,4 +1,4 @@
-# ProcessController::__construct()
+# $processController->__construct()
 
 Source: `wire/core/ProcessController.php`
 

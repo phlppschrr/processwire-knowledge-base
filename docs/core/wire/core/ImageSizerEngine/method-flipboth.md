@@ -1,9 +1,13 @@
-# ImageSizerEngine::flipBoth()
+# $imageSizerEngine->flipBoth($dstFilename = ''): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Flip both vertically and horizontally
 
-@param string $dstFilename
+## Arguments
 
-@return bool
+- string $dstFilename
+
+## Return value
+
+bool

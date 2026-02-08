@@ -1,4 +1,4 @@
-# WireDateTime::date()
+# $wireDateTime->date($format = '', $ts = null): string|bool
 
 Source: `wire/core/WireDateTime.php`
 
@@ -14,19 +14,11 @@ formatting function.
 echo $datetime->date('relative');
 ~~~~~~
 
-@param string|int $format Use one of the following:
- - [PHP date](http://php.net/manual/en/function.date.php) format
- - [PHP strftime](http://php.net/manual/en/function.strftime.php) format (detected by presence of a '%' somewhere in it)
- - `relative` for a relative date/time string.
- - `relative-` for a relative date/time string with no tense.
- - `rel` for an abbreviated relative date/time string.
- - `rel-` for an abbreviated relative date/time string with no tense.
- - `r` for an extra-abbreviated relative date/time string.
- - `r-` for an extra-abbreviated relative date/time string with no tense.
- - `ts` makes it return a unix timestamp
- - blank string makes it use the system date format ($config->dateFormat)
- - If given an integer and no second argument specified, it is assumed to be the second ($ts) argument.
+## Arguments
 
-@param int|string|null $ts Optionally specify the date/time stamp or strtotime() compatible string. If not specified, current time is used.
+- string|int $format Use one of the following: - [PHP date](http://php.net/manual/en/function.date.php) format - [PHP strftime](http://php.net/manual/en/function.strftime.php) format (detected by presence of a '%' somewhere in it) - `relative` for a relative date/time string. - `relative-` for a relative date/time string with no tense. - `rel` for an abbreviated relative date/time string. - `rel-` for an abbreviated relative date/time string with no tense. - `r` for an extra-abbreviated relative date/time string. - `r-` for an extra-abbreviated relative date/time string with no tense. - `ts` makes it return a unix timestamp - blank string makes it use the system date format ($config->dateFormat) - If given an integer and no second argument specified, it is assumed to be the second ($ts) argument.
+- int|string|null $ts Optionally specify the date/time stamp or strtotime() compatible string. If not specified, current time is used.
 
-@return string|bool Formatted date/time, or boolean false on failure
+## Return value
+
+string|bool Formatted date/time, or boolean false on failure

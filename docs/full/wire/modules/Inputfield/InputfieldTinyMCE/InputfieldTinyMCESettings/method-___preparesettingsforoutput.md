@@ -1,4 +1,4 @@
-# InputfieldTinyMCESettings::___prepareSettingsForOutput()
+# $inputfieldTinyMCESettings->___prepareSettingsForOutput(array $settings): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
@@ -6,6 +6,10 @@ Prepare given settings ready for output
 
 This converts relative URLs to absolute, etc.
 
-@param array $settings
+## Arguments
 
-@return array
+- array $settings
+
+## Return value
+
+array

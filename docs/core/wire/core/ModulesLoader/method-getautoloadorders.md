@@ -1,7 +1,9 @@
-# ModulesLoader::getAutoloadOrders()
+# $modulesLoader->getAutoloadOrders(): array
 
 Source: `wire/core/ModulesLoader.php`
 
 Get the autoload orders
 
-@return array Array of [ moduleName (string => order (int) ]
+## Return value
+
+array Array of [ moduleName (string => order (int) ]

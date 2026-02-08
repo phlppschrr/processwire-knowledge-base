@@ -1,9 +1,13 @@
-# Field::__isset()
+# $field->__isset($key): bool
 
 Source: `wire/core/Field.php`
 
 Isset
 
-@param string $key
+## Arguments
 
-@return bool
+- string $key
+
+## Return value
+
+bool

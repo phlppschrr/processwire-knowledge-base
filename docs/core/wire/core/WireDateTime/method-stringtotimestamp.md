@@ -1,11 +1,14 @@
-# WireDateTime::stringToTimestamp()
+# $wireDateTime->stringToTimestamp($str, $format): int
 
 Source: `wire/core/WireDateTime.php`
 
 Given a date/time string and expected format, convert it to a unix timestamp
 
-@param string $str Date/time string
+## Arguments
 
-@param string $format Format of the date/time string in PHP date syntax
+- string $str Date/time string
+- string $format Format of the date/time string in PHP date syntax
 
-@return int Unix timestamp
+## Return value
+
+int Unix timestamp

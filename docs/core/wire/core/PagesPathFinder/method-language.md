@@ -1,9 +1,13 @@
-# PagesPathFinder::language()
+# $pagesPathFinder->language($value): Language|null
 
 Source: `wire/core/PagesPathFinder.php`
 
 Given a value return corresponding language
 
-@param string|int|Language $value
+## Arguments
 
-@return Language|null
+- string|int|Language $value
+
+## Return value
+
+Language|null

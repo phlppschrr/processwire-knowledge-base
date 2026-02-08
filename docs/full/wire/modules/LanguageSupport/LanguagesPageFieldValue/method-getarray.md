@@ -1,9 +1,13 @@
-# LanguagesPageFieldValue::getArray()
+# $languagesPageFieldValue->getArray(): array
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Get array of language values stored in here
 
-@return array
+## Return value
 
-@since 3.0.188
+array
+
+## Meta
+
+- @since 3.0.188

@@ -1,9 +1,13 @@
-# Selector::getCompareType()
+# Selector::getCompareType(): int
 
 Source: `wire/core/Selector.php`
 
 What type of comparson does Selector perform?
 
-@return int Returns a Selector::compareType* constant or 0 if not defined
+## Return value
 
-@since 3.0.154
+int Returns a Selector::compareType* constant or 0 if not defined
+
+## Meta
+
+- @since 3.0.154

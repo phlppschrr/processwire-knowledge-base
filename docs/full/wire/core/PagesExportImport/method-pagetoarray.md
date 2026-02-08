@@ -1,13 +1,14 @@
-# PagesExportImport::pageToArray()
+# $pagesExportImport->pageToArray(Page $page, array $options): array
 
 Source: `wire/core/PagesExportImport.php`
 
 Export Page object to an array
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $options - `exportTarget` (string): Export target of 'zip' or 'json' (default=json)
 
-@param array $options
- - `exportTarget` (string): Export target of 'zip' or 'json' (default=json)
+## Return value
 
-@return array
+array

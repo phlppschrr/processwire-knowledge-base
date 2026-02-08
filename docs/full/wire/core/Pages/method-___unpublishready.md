@@ -1,8 +1,9 @@
-# Pages::___unpublishReady()
+# $pages->___unpublishReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
 Hook called right before a published page is unpublished and saved
 
+## Arguments
 
-@param Page $page
+- Page $page

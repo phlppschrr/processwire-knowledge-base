@@ -1,4 +1,4 @@
-# Page::setAndSave()
+# $page->setAndSave($key, $value = null, array $options = array()): bool
 
 Source: `wire/core/Page.php`
 
@@ -31,12 +31,16 @@ $session->addHookAfter('loginSuccess', function($event) {
 
 [Blog post about setAndSave](https://processwire.com/blog/posts/processwire-2.6.9-core-updates-and-new-procache-version/)
 
-@param array|string $key Field or property name to set, or array of one or more ['property' => $value].
+## Arguments
 
-@param string|int|bool|object $value Value to set, or omit if you provided an array in first argument.
+- array|string $key Field or property name to set, or array of one or more ['property' => $value].
+- string|int|bool|object $value Value to set, or omit if you provided an array in first argument.
+- array $options See Pages::save() for additional $options that may be specified.
 
-@param array $options See Pages::save() for additional $options that may be specified.
+## Return value
 
-@return bool Returns true on success, false on failure
+bool Returns true on success, false on failure
 
-@see Pages::save()
+## See also
+
+- [Pages::save()](../Pages/method-___save.md)

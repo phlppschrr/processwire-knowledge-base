@@ -1,9 +1,10 @@
-# ProcessWire::initVar()
+# $processWire->initVar($name, $value)
 
 Source: `wire/core/ProcessWire.php`
 
 Initialize the given API var
 
-@param string $name
+## Arguments
 
-@param Fieldtypes|Fields|Fieldgroups|Templates|Pages|Session $value
+- string $name
+- Fieldtypes|Fields|Fieldgroups|Templates|Pages|Session $value

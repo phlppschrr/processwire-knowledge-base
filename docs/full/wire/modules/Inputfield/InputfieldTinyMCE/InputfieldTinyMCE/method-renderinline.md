@@ -1,7 +1,9 @@
-# InputfieldTinyMCE::renderInline()
+# $inputfieldTinyMCE->renderInline(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Render inline editor
 
-@return string
+## Return value
+
+string

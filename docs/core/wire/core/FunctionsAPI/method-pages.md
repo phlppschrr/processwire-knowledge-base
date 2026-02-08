@@ -1,4 +1,4 @@
-# FunctionsAPI::pages()
+# $functionsAPI->pages($selector = ''): Pages|PageArray|Page|NullPage
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -22,13 +22,14 @@ $page = pages("/path/to/page/");
 $page = pages("page-name");
 ~~~~
 
+## Arguments
 
-@param string|array|int $selector Specify one of the following:
- - Nothing, makes it return the $pages API variable.
- - Selector (string) to find matching pages, makes function return PageArray - equivalent to $pages->find("selector");
- - Page ID (int) to return a single matching Page - equivalent to $pages->get(123);
- - Page name (string) to return a single page having the given name - equivalent to $pages->get("name");
+- string|array|int $selector Specify one of the following: - Nothing, makes it return the $pages API variable. - Selector (string) to find matching pages, makes function return PageArray - equivalent to $pages->find("selector"); - Page ID (int) to return a single matching Page - equivalent to $pages->get(123); - Page name (string) to return a single page having the given name - equivalent to $pages->get("name");
 
-@return Pages|PageArray|Page|NullPage
+## Return value
 
-@see Pages
+Pages|PageArray|Page|NullPage
+
+## See also
+
+- Pages

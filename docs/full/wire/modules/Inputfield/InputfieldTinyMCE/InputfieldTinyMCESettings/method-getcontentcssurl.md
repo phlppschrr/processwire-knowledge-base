@@ -1,9 +1,13 @@
-# InputfieldTinyMCESettings::getContentCssUrl()
+# $inputfieldTinyMCESettings->getContentCssUrl($content_css = ''): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Get content_css URL
 
-@param string $content_css
+## Arguments
 
-@return string
+- string $content_css
+
+## Return value
+
+string

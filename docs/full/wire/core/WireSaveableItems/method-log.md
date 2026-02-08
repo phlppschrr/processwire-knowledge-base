@@ -1,11 +1,14 @@
-# WireSaveableItems::log()
+# $wireSaveableItems->log($str, ?Saveable $item = null): WireLog
 
 Source: `wire/core/WireSaveableItems.php`
 
 Save to activity log, if enabled in config
 
-@param $str
+## Arguments
 
-@param Saveable|null Item to log
+- $str
+- Saveable|null Item to log
 
-@return WireLog
+## Return value
+
+WireLog

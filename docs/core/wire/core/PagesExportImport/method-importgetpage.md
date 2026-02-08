@@ -1,13 +1,15 @@
-# PagesExportImport::importGetPage()
+# $pagesExportImport->importGetPage(array &$a, array &$options, array &$errors): NullPage|Page
 
 Source: `wire/core/PagesExportImport.php`
 
 Get the page to import to
 
-@param array $a Import data
+## Arguments
 
-@param array $options Import settings
+- array $a Import data
+- array $options Import settings
+- array $errors Errors array
 
-@param array $errors Errors array
+## Return value
 
-@return NullPage|Page
+NullPage|Page

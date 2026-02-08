@@ -1,13 +1,18 @@
-# ProcessController::hasUrlSegmentPermission()
+# $processController->hasUrlSegmentPermission($urlSegment, $throw = true): bool
 
 Source: `wire/core/ProcessController.php`
 
 Does user have permission for the given urlSegment in the current Process?
 
-@param string $urlSegment
+## Arguments
 
-@param bool $throw Throw exception if not permission?
+- string $urlSegment
+- bool $throw Throw exception if not permission?
 
-@return bool
+## Return value
 
-@throws ProcessControllerPermissionException
+bool
+
+## Throws
+
+- ProcessControllerPermissionException

@@ -1,4 +1,4 @@
-# LanguageTranslator::objectToTextdomain()
+# $languageTranslator->objectToTextdomain($o): string
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
@@ -8,6 +8,10 @@ This is accomplished with PHP's ReflectionClass to determine the file where the 
 and then convert that to a textdomain string. Once determined, we cache it so that we
 don't have to do this again.
 
-@param Wire|object $o
+## Arguments
 
-@return string
+- Wire|object $o
+
+## Return value
+
+string

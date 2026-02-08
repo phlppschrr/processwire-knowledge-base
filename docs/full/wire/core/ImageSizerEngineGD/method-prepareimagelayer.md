@@ -1,4 +1,4 @@
-# ImageSizerEngineGD::prepareImageLayer()
+# $imageSizerEngineGD->prepareImageLayer(&$im, &$image)
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
@@ -6,6 +6,7 @@ Prepares a new created GD image resource according to the IMAGETYPE
 
 Intended for use by the resize() method
 
-@param resource $im, destination resource needs to be prepared
+## Arguments
 
-@param resource $image, with GIF we need to read from source resource
+- resource $im, destination resource needs to be prepared
+- resource $image, with GIF we need to read from source resource

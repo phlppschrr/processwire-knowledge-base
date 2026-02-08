@@ -1,4 +1,4 @@
-# PageTraversal::urlOptions()
+# $pageTraversal->urlOptions(Page $page, $options = array()): string
 
 Source: `wire/core/PageTraversal.php`
 
@@ -33,10 +33,18 @@ Please also note regarding `$options`:
 - The `language` option requires that the `LanguageSupportPageNames` module is installed.
 - The prefix for page numbers honors `$config->pageNumUrlPrefix` and multi-language prefixes as well.
 
-@param Page $page
+## Arguments
 
-@param array|int|string|bool|Language $options Optionally specify options to modify default behavior (see method description).
+- Page $page
+- array|int|string|bool|Language $options Optionally specify options to modify default behavior (see method description).
 
-@return string Returns page URL, for example: `/my-site/about/contact/`
+## Return value
 
-@see Page::path(), Page::httpUrl(), Page::editUrl(), Page::localUrl()
+string Returns page URL, for example: `/my-site/about/contact/`
+
+## See also
+
+- [Page::path()](../Page/method-path.md)
+- [Page::httpUrl()](../Page/method-httpurl.md)
+- [Page::editUrl()](../Page/method-editurl.md)
+- [Page::localUrl()](../Page/index.md)

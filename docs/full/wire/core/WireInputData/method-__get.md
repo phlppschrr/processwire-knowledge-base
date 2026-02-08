@@ -1,9 +1,13 @@
-# WireInputData::__get()
+# $wireInputData->__get($key): mixed|null
 
 Source: `wire/core/WireInputData.php`
 
 Get an input value
 
-@param string $key
+## Arguments
 
-@return mixed|null
+- string $key
+
+## Return value
+
+mixed|null

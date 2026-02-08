@@ -1,4 +1,4 @@
-# PagesEditor::setupNew()
+# $pagesEditor->setupNew(Page $page)
 
 Source: `wire/core/PagesEditor.php`
 
@@ -11,7 +11,10 @@ Currently it does this:
 - Assigns a sort value.
 - Populates any default values for fields.
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@throws \Exception|WireException|\PDOException if failure occurs while in DB transaction
+## Throws
+
+- \Exception|WireException|\PDOException if failure occurs while in DB transaction

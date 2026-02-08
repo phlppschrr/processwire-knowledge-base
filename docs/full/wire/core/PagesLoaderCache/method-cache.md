@@ -1,10 +1,13 @@
-# PagesLoaderCache::cache()
+# $pagesLoaderCache->cache(Page $page): void
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Cache the given page in memory
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return void
+## Return value
+
+void

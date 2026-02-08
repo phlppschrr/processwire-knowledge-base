@@ -1,4 +1,4 @@
-# WireSessionHandler::attach()
+# $wireSessionHandler->attach()
 
 Source: `wire/core/WireSessionHandler.php`
 

@@ -1,10 +1,13 @@
-# InputfieldWrapper::remove()
+# $inputfieldWrapper->remove($key): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Remove an Inputfield from this instance’s children.
 
+## Arguments
 
-@param Inputfield|string $key Inputfield object or name
+- Inputfield|string $key Inputfield object or name
 
-@return $this
+## Return value
+
+$this

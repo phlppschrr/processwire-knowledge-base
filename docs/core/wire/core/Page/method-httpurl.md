@@ -1,4 +1,4 @@
-# Page::httpUrl()
+# $page->httpUrl($options = array()): string
 
 Source: `wire/core/Page.php`
 
@@ -17,9 +17,15 @@ Returns the URL to the page, including scheme and hostname
 echo "<a href='$page->httpUrl'>$page->title</a>";
 ~~~~~
 
+## Arguments
 
-@param array $options For details on usage see `Page::url()` options argument.
+- array $options For details on usage see `Page::url()` options argument.
 
-@return string Returns full URL to page, for example: `https://processwire.com/about/`
+## Return value
 
-@see Page::url(), Page::localHttpUrl()
+string Returns full URL to page, for example: `https://processwire.com/about/`
+
+## See also
+
+- [Page::url()](method-url.md)
+- [Page::localHttpUrl()](index.md)

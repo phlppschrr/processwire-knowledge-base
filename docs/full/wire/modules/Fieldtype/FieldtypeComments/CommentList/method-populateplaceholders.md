@@ -1,13 +1,15 @@
-# CommentList::populatePlaceholders()
+# $commentList->populatePlaceholders(Comment $comment, $out, $placeholders = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Populate comment {variable} placeholders
 
-@param Comment $comment
+## Arguments
 
-@param string $out
+- Comment $comment
+- string $out
+- array $placeholders Additional placeholders to populate as name => value (exclude the brackets)
 
-@param array $placeholders Additional placeholders to populate as name => value (exclude the brackets)
+## Return value
 
-@return string
+string

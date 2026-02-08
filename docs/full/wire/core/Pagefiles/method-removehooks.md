@@ -1,4 +1,4 @@
-# Pagefiles::removeHooks()
+# $pagefiles->removeHooks()
 
 Source: `wire/core/Pagefiles.php`
 

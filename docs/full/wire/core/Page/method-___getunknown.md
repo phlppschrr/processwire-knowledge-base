@@ -1,4 +1,4 @@
-# Page::___getUnknown()
+# $page->___getUnknown($key): null|mixed
 
 Source: `wire/core/Page.php`
 
@@ -6,7 +6,10 @@ Hookable method called when a request to a field was made that didn't match anyt
 
 Hooks that want to inject something here should hook after and modify the $event->return.
 
+## Arguments
 
-@param string $key Name of property.
+- string $key Name of property.
 
-@return null|mixed Returns null if property not known, or a value if it is.
+## Return value
+
+null|mixed Returns null if property not known, or a value if it is.

@@ -1,4 +1,4 @@
-# Field::__toString()
+# $field->__toString()
 
 Source: `wire/core/Field.php`
 

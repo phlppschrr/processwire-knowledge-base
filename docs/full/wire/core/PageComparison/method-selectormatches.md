@@ -1,13 +1,18 @@
-# PageComparison::selectorMatches()
+# $pageComparison->selectorMatches(Page $page, Selector $selector): bool
 
 Source: `wire/core/PageComparison.php`
 
 Return whether individual Selector object matches Page
 
-@param Page $page
+## Arguments
 
-@param Selector $selector
+- Page $page
+- Selector $selector
 
-@return bool
+## Return value
 
-@since 3.0.231
+bool
+
+## Meta
+
+- @since 3.0.231

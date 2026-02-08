@@ -1,4 +1,4 @@
-# Fieldtypes::__construct()
+# $fieldtypes->__construct()
 
 Source: `wire/core/Fieldtypes.php`
 

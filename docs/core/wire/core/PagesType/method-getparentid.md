@@ -1,8 +1,9 @@
-# PagesType::getParentID()
+# $pagesType->getParentID(): int
 
 Source: `wire/core/PagesType.php`
 
 Get the parent page ID used by this type (or first parent ID if there are multiple)
 
+## Return value
 
-@return int
+int

@@ -1,4 +1,4 @@
-# Sanitizer::entitiesA()
+# $sanitizer->entitiesA($value, $flags = ENT_QUOTES, $encoding = 'UTF-8', $doubleEncode = true): array|string|int|float|bool
 
 Source: `wire/core/Sanitizer.php`
 
@@ -12,17 +12,22 @@ This is similar to the existing entities() method with the following differences
 - Objects that do not implement __toString() are converted to a class name.
 - If given an int, float, bool, array or string, that is also the type returned.
 
+## Arguments
 
-@param array|string|int|float|object|bool $value
+- array|string|int|float|object|bool $value
+- int $flags
+- string $encoding
+- bool $doubleEncode
 
-@param int $flags
+## Return value
 
-@param string $encoding
+array|string|int|float|bool
 
-@param bool $doubleEncode
+## See also
 
-@return array|string|int|float|bool
+- [Sanitizer::entitiesA1()](method-entitiesa1.md)
+- [Sanitizer::entities()](method-entities.md)
 
-@since 3.0.194
+## Meta
 
-@see Sanitizer::entitiesA1(), Sanitizer::entities()
+- @since 3.0.194

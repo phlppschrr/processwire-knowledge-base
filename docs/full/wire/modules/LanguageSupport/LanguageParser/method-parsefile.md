@@ -1,9 +1,13 @@
-# LanguageParser::parseFile()
+# $languageParser->parseFile($file): array
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Run regexes on file contents to locate all translation functions
 
-@param string $file
+## Arguments
 
-@return array
+- string $file
+
+## Return value
+
+array

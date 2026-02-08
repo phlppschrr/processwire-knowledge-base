@@ -1,10 +1,13 @@
-# InputfieldWrapper::prepend()
+# $inputfieldWrapper->prepend(Inputfield $item): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Prepend an Inputfield to this instance’s children.
 
+## Arguments
 
-@param Inputfield $item Item to prepend
+- Inputfield $item Item to prepend
 
-@return $this
+## Return value
+
+$this

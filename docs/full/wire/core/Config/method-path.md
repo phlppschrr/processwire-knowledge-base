@@ -1,4 +1,4 @@
-# Config::path()
+# $config->path($for): null|string
 
 Source: `wire/core/Config.php`
 
@@ -14,7 +14,10 @@ $path = $config->path('root');
 $path = $config->paths->root;
 ~~~~~
 
+## Arguments
 
-@param string $for Predefined ProcessWire paths property or module class name
+- string $for Predefined ProcessWire paths property or module class name
 
-@return null|string
+## Return value
+
+null|string

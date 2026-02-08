@@ -1,12 +1,14 @@
-# WireTextTools::trim()
+# $wireTextTools->trim($str, $chars = ''): string
 
 Source: `wire/core/WireTextTools.php`
 
 Strip whitespace (or other characters) from the beginning and end of a string
 
+## Arguments
 
-@param string $str
+- string $str
+- string $chars Omit for default
 
-@param string $chars Omit for default
+## Return value
 
-@return string
+string

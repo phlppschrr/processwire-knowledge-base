@@ -1,4 +1,4 @@
-# WireArray::sort()
+# $wireArray->sort($properties, $flags = null): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -20,9 +20,11 @@ $items->sort("-created");
 $items->sort("last_name, first_name");
 ~~~~~
 
+## Arguments
 
-@param string|array $properties Field names to sort by (CSV string or array).
+- string|array $properties Field names to sort by (CSV string or array).
+- int|null $flags Optionally specify sort flags (see sortFlags method for details).
 
-@param int|null $flags Optionally specify sort flags (see sortFlags method for details).
+## Return value
 
-@return $this reference to current instance.
+$this reference to current instance.

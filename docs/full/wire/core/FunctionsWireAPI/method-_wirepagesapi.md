@@ -1,11 +1,14 @@
-# FunctionsWireAPI::_wirePagesAPI()
+# $functionsWireAPI->_wirePagesAPI($_apiVar, $selector): null|NullPage|Page|PageArray|Pages|PagesType
 
 Source: `wire/core/FunctionsWireAPI.php`
 
 Common helper for API functions dealing with pages
 
-@param $_apiVar
+## Arguments
 
-@param $selector
+- $_apiVar
+- $selector
 
-@return null|NullPage|Page|PageArray|Pages|PagesType
+## Return value
+
+null|NullPage|Page|PageArray|Pages|PagesType

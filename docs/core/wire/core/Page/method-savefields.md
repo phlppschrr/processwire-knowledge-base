@@ -1,17 +1,26 @@
-# Page::saveFields()
+# $page->saveFields($fields, array $options = array()): array
 
 Source: `wire/core/Page.php`
 
 Save only the given named fields for this page
 
-@param array|string $fields Array of field name(s) or string (CSV or space separated)
+## Arguments
 
-@param array $options See Pages::save() documentation for options.
+- array|string $fields Array of field name(s) or string (CSV or space separated)
+- array $options See Pages::save() documentation for options.
 
-@return array Names of fields that were saved
+## Return value
 
-@throws WireException on database error
+array Names of fields that were saved
 
-@see Page::save()
+## Throws
 
-@since 3.0.242
+- WireException on database error
+
+## See also
+
+- [Page::save()](method-save.md)
+
+## Meta
+
+- @since 3.0.242

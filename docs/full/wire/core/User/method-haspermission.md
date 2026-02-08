@@ -1,4 +1,4 @@
-# User::hasPermission()
+# $user->hasPermission($name, $context = null): bool|array
 
 Source: `wire/core/User.php`
 
@@ -16,11 +16,11 @@ if($user->hasPermission('page-publish', $page)) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|Permission $name Permission name, object or id.
+- string|Permission $name Permission name, object or id.
+- Page|Template|bool|string $context Page or Template... - or specify boolean true to return if user has permission OR if it was added at any template - or specify string "templates" to return array of Template objects where user has permission
 
-@param Page|Template|bool|string $context Page or Template...
- - or specify boolean true to return if user has permission OR if it was added at any template
- - or specify string "templates" to return array of Template objects where user has permission
+## Return value
 
-@return bool|array
+bool|array

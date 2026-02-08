@@ -1,9 +1,13 @@
-# WireUpload::setDestinationPath()
+# $wireUpload->setDestinationPath($destinationPath): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set the destination path for uploaded files
 
-@param string $destinationPath Include a trailing slash
+## Arguments
 
-@return $this
+- string $destinationPath Include a trailing slash
+
+## Return value
+
+$this

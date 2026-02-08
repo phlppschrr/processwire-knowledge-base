@@ -1,10 +1,13 @@
-# PagesTrash::getTrashPage()
+# $pagesTrash->getTrashPage(): Page
 
 Source: `wire/core/PagesTrash.php`
 
 Return the root parent trash page
 
+## Return value
 
-@return Page
+Page
 
-@throws WireException if trash page cannot be located (highly unlikely)
+## Throws
+
+- WireException if trash page cannot be located (highly unlikely)

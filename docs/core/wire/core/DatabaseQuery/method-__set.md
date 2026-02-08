@@ -1,7 +1,9 @@
-# DatabaseQuery::__set()
+# $databaseQuery->__set($key, $value)
 
 Source: `wire/core/DatabaseQuery.php`
 
-@param string $key
 
-@param mixed $value
+## Arguments
+
+- string $key
+- mixed $value

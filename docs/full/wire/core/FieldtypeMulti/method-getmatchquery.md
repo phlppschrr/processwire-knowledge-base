@@ -1,4 +1,4 @@
-# FieldtypeMulti::getMatchQuery()
+# $fieldtypeMulti->getMatchQuery($query, $table, $subfield, $operator, $value): PageFinderDatabaseQuerySelect|DatabaseQuerySelect
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -6,14 +6,14 @@ Get the query that matches a Fieldtype table's data with a given value
 
 Possible template method: If overridden, children should NOT call this parent method.
 
-@param PageFinderDatabaseQuerySelect $query
+## Arguments
 
-@param string $table The table name to use
+- PageFinderDatabaseQuerySelect $query
+- string $table The table name to use
+- string $subfield Name of the field (typically 'data', unless selector explicitly specified another)
+- string $operator The comparison operator
+- mixed $value The value to find
 
-@param string $subfield Name of the field (typically 'data', unless selector explicitly specified another)
+## Return value
 
-@param string $operator The comparison operator
-
-@param mixed $value The value to find
-
-@return PageFinderDatabaseQuerySelect|DatabaseQuerySelect $query
+PageFinderDatabaseQuerySelect|DatabaseQuerySelect $query

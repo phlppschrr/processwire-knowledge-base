@@ -1,5 +1,8 @@
-# DatabaseQuerySelectFulltext::matchType()
+# $databaseQuerySelectFulltext->matchType(): string
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
-@return string
+
+## Return value
+
+string

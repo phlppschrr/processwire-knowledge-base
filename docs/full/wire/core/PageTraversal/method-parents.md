@@ -1,11 +1,14 @@
-# PageTraversal::parents()
+# $pageTraversal->parents(Page $page, $selector = ''): PageArray
 
 Source: `wire/core/PageTraversal.php`
 
 Return this page's parent pages, or the parent pages matching the given selector.
 
-@param Page $page
+## Arguments
 
-@param string|array|bool $selector Optional selector string to filter parents by or boolean true for reverse order
+- Page $page
+- string|array|bool $selector Optional selector string to filter parents by or boolean true for reverse order
 
-@return PageArray
+## Return value
+
+PageArray

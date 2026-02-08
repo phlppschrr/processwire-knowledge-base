@@ -1,4 +1,4 @@
-# WireFileTools::zip()
+# $wireFileTools->zip($zipfile, $files, array $options = array()): array
 
 Source: `wire/core/WireFileTools.php`
 
@@ -23,25 +23,20 @@ if(count($result['errors'])) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $zipfile Full path and filename to create or update (i.e. /path/to/myfile.zip)
+- string $zipfile Full path and filename to create or update (i.e. /path/to/myfile.zip)
+- array|string $files Array of files to add (full path and filename), or directory (string) to add. If given a directory, it will recursively add everything in that directory.
+- array $options Associative array of options to modify default behavior: - `allowHidden` (boolean or array): allow hidden files? May be boolean, or array of hidden files (basenames) you allow. (default=false) Note that if you actually specify a hidden file in your $files argument, then that overrides this. - `allowEmptyDirs` (boolean): allow empty directories in the ZIP file? (default=true) - `overwrite` (boolean): Replaces ZIP file if already present (rather than adding to it) (default=false) - `maxDepth` (int): Max dir depth 0 for no limit (default=0). Specify 1 to stay only in dirs listed in $files. - `exclude` (array): Files or directories to exclude - `dir` (string): Directory name to prepend to added files in the ZIP
 
-@param array|string $files Array of files to add (full path and filename), or directory (string) to add.
-  If given a directory, it will recursively add everything in that directory.
+## Return value
 
-@param array $options Associative array of options to modify default behavior:
- - `allowHidden` (boolean or array): allow hidden files? May be boolean, or array of hidden files (basenames) you allow. (default=false)
-   Note that if you actually specify a hidden file in your $files argument, then that overrides this.
- - `allowEmptyDirs` (boolean): allow empty directories in the ZIP file? (default=true)
- - `overwrite` (boolean): Replaces ZIP file if already present (rather than adding to it) (default=false)
- - `maxDepth` (int): Max dir depth 0 for no limit (default=0). Specify 1 to stay only in dirs listed in $files.
- - `exclude` (array): Files or directories to exclude
- - `dir` (string): Directory name to prepend to added files in the ZIP
+array Returns associative array of: - `files` (array): all files that were added - `errors` (array): files that failed to add, if any
 
-@return array Returns associative array of:
- - `files` (array): all files that were added
- - `errors` (array): files that failed to add, if any
+## Throws
 
-@throws WireException Original ZIP file creation error conditions result in WireException being thrown.
+- WireException Original ZIP file creation error conditions result in WireException being thrown.
 
-@see WireFileTools::unzip()
+## See also
+
+- [WireFileTools::unzip()](method-unzip.md)

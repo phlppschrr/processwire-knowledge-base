@@ -1,4 +1,4 @@
-# Field::setName()
+# $field->setName($name): Field
 
 Source: `wire/core/Field.php`
 
@@ -7,9 +7,14 @@ Set the field’s name
 This method will throw a WireException when field name is a reserved word, is already in use,
 is a system field, or is in some format not accepted for a field name.
 
+## Arguments
 
-@param string $name
+- string $name
 
-@return Field $this
+## Return value
 
-@throws WireException
+Field $this
+
+## Throws
+
+- WireException

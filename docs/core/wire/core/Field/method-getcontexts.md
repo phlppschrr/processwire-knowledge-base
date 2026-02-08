@@ -1,9 +1,13 @@
-# Field::getContexts()
+# $field->getContexts(): array
 
 Source: `wire/core/Field.php`
 
 Get all contexts this field is used in
 
-@return array Array of 'fieldgroup-name' => [ contexts ]
+## Return value
 
-@since 3.0.182
+array Array of 'fieldgroup-name' => [ contexts ]
+
+## Meta
+
+- @since 3.0.182

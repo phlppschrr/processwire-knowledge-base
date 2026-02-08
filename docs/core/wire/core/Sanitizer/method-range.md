@@ -1,4 +1,4 @@
-# Sanitizer::range()
+# $sanitizer->range($value, $min = null, $max = null): int|float
 
 Source: `wire/core/Sanitizer.php`
 
@@ -14,13 +14,16 @@ $sanitizer->range($n, 0, 1.0); // returns 1.0
 $sanitizer->range($n, 1.1, 100.5); // returns 10.0
 ~~~~~
 
+## Arguments
 
-@param int|float|string $value
+- int|float|string $value
+- int|float|string|null $min Minimum allowed value or null for no minimum (default=null)
+- int|float|string|null $max Maximum allowed value or null for no maximum (default=null)
 
-@param int|float|string|null $min Minimum allowed value or null for no minimum (default=null)
+## Return value
 
-@param int|float|string|null $max Maximum allowed value or null for no maximum (default=null)
+int|float
 
-@return int|float
+## Meta
 
-@since 3.0.125
+- @since 3.0.125

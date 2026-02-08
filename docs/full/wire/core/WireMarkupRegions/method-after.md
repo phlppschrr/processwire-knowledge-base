@@ -1,15 +1,16 @@
-# WireMarkupRegions::after()
+# $wireMarkupRegions->after($selector, $content, $markup, array $options = array()): string
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Insert the region(s) that match the given $selector after the given $content markup
 
-@param string $selector See the update() method for details
+## Arguments
 
-@param string $content Markup to prepend
+- string $selector See the update() method for details
+- string $content Markup to prepend
+- string $markup Document markup where region(s) exist
+- array $options See the update() method for details
 
-@param string $markup Document markup where region(s) exist
+## Return value
 
-@param array $options See the update() method for details
-
-@return string
+string

@@ -1,4 +1,4 @@
-# Comment::__construct()
+# $comment->__construct()
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 

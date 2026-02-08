@@ -1,4 +1,4 @@
-# PagesEditor::move()
+# $pagesEditor->move(Page $child, $parent, array $options = array()): bool
 
 Source: `wire/core/PagesEditor.php`
 
@@ -10,13 +10,16 @@ for some cases with less code. This method:
 - Does not save the other custom fields of a page (if any are changed).
 - Does not require that output formatting be off (it manages that internally).
 
+## Arguments
 
-@param Page $child Page that you want to move.
+- Page $child Page that you want to move.
+- Page|int|string $parent Parent to move it under (may be Page object, path string, or ID integer).
+- array $options Options to modify behavior (see PagesEditor::save for options).
 
-@param Page|int|string $parent Parent to move it under (may be Page object, path string, or ID integer).
+## Return value
 
-@param array $options Options to modify behavior (see PagesEditor::save for options).
+bool True on success or false if not necessary.
 
-@return bool True on success or false if not necessary.
+## Throws
 
-@throws WireException if given parent does not exist, or move is not allowed
+- WireException if given parent does not exist, or move is not allowed

@@ -1,9 +1,13 @@
-# ProcessFieldExportImport::___buildImport()
+# $processFieldExportImport->___buildImport(): InputfieldForm
 
 Source: `wire/modules/Process/ProcessField/ProcessFieldExportImport.php`
 
 Execute import
 
-@return InputfieldForm
+## Return value
 
-@throws WireException if given invalid import data
+InputfieldForm
+
+## Throws
+
+- WireException if given invalid import data

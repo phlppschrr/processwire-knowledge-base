@@ -1,10 +1,13 @@
-# WireDatabasePDO::getEngine()
+# $wireDatabasePDO->getEngine(): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Get current database engine (lowercase)
 
+## Return value
 
-@return string
+string
 
-@since 3.0.160
+## Meta
+
+- @since 3.0.160

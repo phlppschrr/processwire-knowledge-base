@@ -1,9 +1,13 @@
-# FilenameArray::remove()
+# $filenameArray->remove($filename): $this
 
 Source: `wire/core/FilenameArray.php`
 
 Remove filename
 
-@param string $filename
+## Arguments
 
-@return $this
+- string $filename
+
+## Return value
+
+$this

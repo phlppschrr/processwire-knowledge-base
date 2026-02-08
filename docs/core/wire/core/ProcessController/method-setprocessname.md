@@ -1,4 +1,4 @@
-# ProcessController::setProcessName()
+# $processController->setProcessName($processName)
 
 Source: `wire/core/ProcessController.php`
 
@@ -8,4 +8,6 @@ No need to call this unless you want to override the one auto-determined from th
 
 If overridden, then make sure the name includes the prefix, and don't bother calling the setPrefix() method.
 
-@param string $processName
+## Arguments
+
+- string $processName

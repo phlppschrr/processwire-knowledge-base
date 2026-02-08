@@ -1,4 +1,4 @@
-# ModulesInfo::saveModuleInfoCache()
+# $modulesInfo->saveModuleInfoCache()
 
 Source: `wire/core/ModulesInfo.php`
 

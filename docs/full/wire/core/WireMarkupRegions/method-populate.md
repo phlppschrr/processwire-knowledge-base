@@ -1,4 +1,4 @@
-# WireMarkupRegions::populate()
+# $wireMarkupRegions->populate(&$htmlDocument, $htmlRegions, array $options = array()): int
 
 Source: `wire/core/WireMarkupRegions.php`
 
@@ -64,12 +64,12 @@ Inserting new elements
 
 ~~~~~~
 
-@param string $htmlDocument Document to populate regions to
+## Arguments
 
-@param string|array $htmlRegions Markup containing regions (or regions array from a find call)
+- string $htmlDocument Document to populate regions to
+- string|array $htmlRegions Markup containing regions (or regions array from a find call)
+- array $options Options to modify behavior: - `useClassActions` (bool): Allow "pw-*" actions to be specified in class names? Per original/legacy spec. (default=false) - `useFileRegions` (bool): Allow use of markup file regions? (default=false)
 
-@param array $options Options to modify behavior:
- - `useClassActions` (bool): Allow "pw-*" actions to be specified in class names? Per original/legacy spec. (default=false)
- - `useFileRegions` (bool): Allow use of markup file regions? (default=false)
+## Return value
 
-@return int Number of updates made to $htmlDocument
+int Number of updates made to $htmlDocument

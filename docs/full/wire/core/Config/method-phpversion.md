@@ -1,4 +1,4 @@
-# Config::phpVersion()
+# $config->phpVersion($minVersion): bool
 
 Source: `wire/core/Config.php`
 
@@ -10,9 +10,14 @@ if($config->phpVersion('7.0.0')) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|null $minVersion
+- string|null $minVersion
 
-@return bool
+## Return value
 
-@since 3.0.101
+bool
+
+## Meta
+
+- @since 3.0.101

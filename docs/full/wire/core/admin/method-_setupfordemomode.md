@@ -1,9 +1,10 @@
-# admin::_setupForDemoMode()
+# $admin->_setupForDemoMode($page, $wire)
 
 Source: `wire/core/admin.php`
 
 Setup for demo mode
 
-@param Page $page
+## Arguments
 
-@param ProcessWire $wire
+- Page $page
+- ProcessWire $wire

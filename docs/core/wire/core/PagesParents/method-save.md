@@ -1,9 +1,13 @@
-# PagesParents::save()
+# $pagesParents->save(Page $page): int
 
 Source: `wire/core/PagesParents.php`
 
 Check if saved page needs any pages_parents updates and perform them when applicable
 
-@param Page $page
+## Arguments
 
-@return int Number of rows updated
+- Page $page
+
+## Return value
+
+int Number of rows updated

@@ -1,9 +1,13 @@
-# InputfieldTinyMCEConfigs::label()
+# $inputfieldTinyMCEConfigs->label($name): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
 Get shared text label
 
-@param string $name
+## Arguments
 
-@return string
+- string $name
+
+## Return value
+
+string

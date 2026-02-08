@@ -1,9 +1,13 @@
-# WireArray::__isset()
+# $wireArray->__isset($key): bool
 
 Source: `wire/core/WireArray.php`
 
 Ensures that isset() and empty() work for this classes properties.
 
-@param string|int $key
+## Arguments
 
-@return bool
+- string|int $key
+
+## Return value
+
+bool

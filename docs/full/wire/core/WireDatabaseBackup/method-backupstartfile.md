@@ -1,11 +1,14 @@
-# WireDatabaseBackup::backupStartFile()
+# $wireDatabaseBackup->backupStartFile($file, array $options): bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Start a new backup file, adding our info header to the top
 
-@param string $file
+## Arguments
 
-@param array $options
+- string $file
+- array $options
 
-@return bool
+## Return value
+
+bool

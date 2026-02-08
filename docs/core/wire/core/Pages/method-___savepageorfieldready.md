@@ -1,12 +1,15 @@
-# Pages::___savePageOrFieldReady()
+# $pages->___savePageOrFieldReady(Page $page, $fieldName = '')
 
 Source: `wire/core/Pages.php`
 
 Hook called when either of Pages::save or Pages::saveField is ready to execute
 
+## Arguments
 
-@param Page $page
+- Page $page
+- string $fieldName Populated only if call originates from saveField
 
-@param string $fieldName Populated only if call originates from saveField
+## See also
 
-@see Pages::saveReady(), Pages::saveFieldReady()
+- [Pages::saveReady()](method-___saveready.md)
+- [Pages::saveFieldReady()](method-___savefieldready.md)

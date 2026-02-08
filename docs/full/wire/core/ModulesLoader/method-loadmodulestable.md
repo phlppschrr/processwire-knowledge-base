@@ -1,4 +1,4 @@
-# ModulesLoader::loadModulesTable()
+# $modulesLoader->loadModulesTable()
 
 Source: `wire/core/ModulesLoader.php`
 

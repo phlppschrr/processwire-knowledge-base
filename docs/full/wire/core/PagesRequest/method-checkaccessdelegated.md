@@ -1,4 +1,4 @@
-# PagesRequest::checkAccessDelegated()
+# $pagesRequest->checkAccessDelegated(Page $page): Page|null|bool
 
 Source: `wire/core/PagesRequest.php`
 
@@ -7,6 +7,10 @@ Check access to a delegated page (like a repeater)
 Note: this should move to PagePermissions.module or FieldtypeRepeater.module
 if a similar check is needed somewhere else in the core.
 
-@param Page $page
+## Arguments
 
-@return Page|null|bool
+- Page $page
+
+## Return value
+
+Page|null|bool

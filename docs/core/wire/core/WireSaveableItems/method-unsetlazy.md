@@ -1,9 +1,13 @@
-# WireSaveableItems::unsetLazy()
+# $wireSaveableItems->unsetLazy(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Remove item from lazy loading data/indexes
 
-@param Saveable $item
+## Arguments
 
-@return bool
+- Saveable $item
+
+## Return value
+
+bool

@@ -1,9 +1,13 @@
-# WireUpload::setOverwrite()
+# $wireUpload->setOverwrite($overwrite): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set whether or not overwrite is allowed
 
-@param bool $overwrite
+## Arguments
 
-@return $this
+- bool $overwrite
+
+## Return value
+
+$this

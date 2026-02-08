@@ -1,7 +1,9 @@
-# ImageSizerEngine::getFilename()
+# $imageSizerEngine->getFilename(): string
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Return the filename
 
-@return string
+## Return value
+
+string

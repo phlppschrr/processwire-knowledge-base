@@ -1,4 +1,4 @@
-# Page::setUnformatted()
+# $page->setUnformatted($key, $value): self
 
 Source: `wire/core/Page.php`
 
@@ -20,15 +20,26 @@ $page->setUnformatted('title', 'This & That');
 $page->setUnformatted('title', 'This &amp; That');
 ~~~~~
 
+## Arguments
 
-@param string $key
+- string $key
+- mixed $value
 
-@param mixed $value
+## Return value
 
-@return self
+self
 
-@since 3.0.169
+## Throws
 
-@throws WireException if given an object value that indicates it is already formatted.
+- WireException if given an object value that indicates it is already formatted.
 
-@see Page::getUnformatted(), Page::of(), Page::setOutputFormatting(), Page::outputFormatting()
+## See also
+
+- [Page::getUnformatted()](method-getunformatted.md)
+- [Page::of()](method-of.md)
+- [Page::setOutputFormatting()](index.md)
+- [Page::outputFormatting()](index.md)
+
+## Meta
+
+- @since 3.0.169

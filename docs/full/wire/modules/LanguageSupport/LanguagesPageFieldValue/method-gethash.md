@@ -1,11 +1,17 @@
-# LanguagesPageFieldValue::getHash()
+# $languagesPageFieldValue->getHash($verbose = false): string
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Get hash of all language values stored in here
 
-@param bool $verbose Specify true for the hash to also include page and field
+## Arguments
 
-@return string
+- bool $verbose Specify true for the hash to also include page and field
 
-@since 3.0.188
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.188

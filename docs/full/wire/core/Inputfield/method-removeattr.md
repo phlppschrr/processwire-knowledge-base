@@ -1,12 +1,18 @@
-# Inputfield::removeAttr()
+# $inputfield->removeAttr($key): $this
 
 Source: `wire/core/Inputfield.php`
 
 Remove an attribute
 
+## Arguments
 
-@param string $key Name of attribute to remove.
+- string $key Name of attribute to remove.
 
-@return $this
+## Return value
 
-@see Inputfield::attr(), Inputfield::removeClass()
+$this
+
+## See also
+
+- [Inputfield::attr()](method-attr.md)
+- [Inputfield::removeClass()](method-removeclass.md)

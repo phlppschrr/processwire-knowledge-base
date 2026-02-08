@@ -1,4 +1,4 @@
-# FileCompilerModule::___install()
+# $fileCompilerModule->___install()
 
 Source: `wire/core/FileCompilerModule.php`
 

@@ -1,9 +1,10 @@
-# PageFinder::initStatus()
+# $pageFinder->initStatus(Selectors $selectors, array $options)
 
 Source: `wire/core/PageFinder.php`
 
 Initialize status checks
 
-@param Selectors $selectors
+## Arguments
 
-@param array $options
+- Selectors $selectors
+- array $options

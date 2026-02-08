@@ -1,4 +1,4 @@
-# SessionCSRF::renderInput()
+# $sessionCSRF->renderInput($id = ''): string
 
 Source: `wire/core/SessionCSRF.php`
 
@@ -11,7 +11,10 @@ Render a form input[hidden] containing the token name and value, as looked for b
 </form>
 ~~~~~
 
+## Arguments
 
-@param int|string|null $id Optional unique ID for this token
+- int|string|null $id Optional unique ID for this token
 
-@return string
+## Return value
+
+string

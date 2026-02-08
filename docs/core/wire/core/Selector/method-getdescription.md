@@ -1,9 +1,13 @@
-# Selector::getDescription()
+# Selector::getDescription(): string
 
 Source: `wire/core/Selector.php`
 
 Get longer description that describes this Selector
 
-@return string
+## Return value
 
-@since 3.0.160
+string
+
+## Meta
+
+- @since 3.0.160

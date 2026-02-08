@@ -1,9 +1,13 @@
-# FieldsetPage::get()
+# $fieldsetPage->get($key): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldsetPage.php`
 
 Get a property
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

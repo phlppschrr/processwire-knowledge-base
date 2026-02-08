@@ -1,8 +1,9 @@
-# Languages::___added()
+# $languages->___added(Page $language)
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Hook called when a language is added
 
+## Arguments
 
-@param Page $language
+- Page $language

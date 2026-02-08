@@ -1,4 +1,4 @@
-# Session::___logout()
+# $session->___logout($startNew = true): $this
 
 Source: `wire/core/Session.php`
 
@@ -13,9 +13,14 @@ if($input->get('logout')) {
 }
 ~~~~~
 
+## Arguments
 
-@param bool $startNew Start a new session after logout? (default=true)
+- bool $startNew Start a new session after logout? (default=true)
 
-@return $this
+## Return value
 
-@throws WireException if session is disabled
+$this
+
+## Throws
+
+- WireException if session is disabled

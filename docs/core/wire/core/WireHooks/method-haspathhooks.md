@@ -1,11 +1,17 @@
-# WireHooks::hasPathHooks()
+# $wireHooks->hasPathHooks($requestPath = ''): bool
 
 Source: `wire/core/WireHooks.php`
 
 Return whether or not any path hooks are pending
 
-@param string $requestPath Optionally provide request path to determine if any might match (3.0.174+)
+## Arguments
 
-@return bool
+- string $requestPath Optionally provide request path to determine if any might match (3.0.174+)
 
-@since 3.0.173
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.173

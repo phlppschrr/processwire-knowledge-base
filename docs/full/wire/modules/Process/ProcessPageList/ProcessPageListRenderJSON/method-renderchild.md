@@ -1,9 +1,13 @@
-# ProcessPageListRenderJSON::renderChild()
+# $processPageListRenderJSON->renderChild(Page $page): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRenderJSON.php`
 
 Render page/child
 
-@param Page $page
+## Arguments
 
-@return array
+- Page $page
+
+## Return value
+
+array

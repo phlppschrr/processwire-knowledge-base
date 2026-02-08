@@ -1,4 +1,4 @@
-# PageValues::getField()
+# $pageValues->getField(Page $page, $field): Field|null
 
 Source: `wire/core/PageValues.php`
 
@@ -6,11 +6,15 @@ Get a Field object in context or NULL if not valid for this page
 
 Field in context is only returned when output formatting is on.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- string|int|Field $field
 
-@param string|int|Field $field
+## Return value
 
-@return Field|null
+Field|null
 
-@todo determine if we can always retrieve in context regardless of output formatting.
+## Meta
+
+- @todo determine if we can always retrieve in context regardless of output formatting.

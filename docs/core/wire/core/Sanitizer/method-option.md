@@ -1,12 +1,14 @@
-# Sanitizer::option()
+# $sanitizer->option($value, array $allowedValues = array()): string|int|null
 
 Source: `wire/core/Sanitizer.php`
 
 Return $value if it exists in $allowedValues, or null if it doesn't
 
+## Arguments
 
-@param string|int $value
+- string|int $value
+- array $allowedValues Whitelist of option values that are allowed
 
-@param array $allowedValues Whitelist of option values that are allowed
+## Return value
 
-@return string|int|null
+string|int|null

@@ -1,4 +1,4 @@
-# ProcessPageListRender::wired()
+# $processPageListRender->wired()
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 

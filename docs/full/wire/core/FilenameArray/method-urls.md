@@ -1,4 +1,4 @@
-# FilenameArray::urls()
+# $filenameArray->urls($useVersion = null): array
 
 Source: `wire/core/FilenameArray.php`
 
@@ -7,12 +7,22 @@ Get cache-busting URLs for this FilenameArray
 This is the same as iterating this FilenameArray except that it appends cache-busting
 query strings to the URLs that resolve to physical files.
 
-@param bool|null|string $useVersion See Config::versionUrls() for arument details
+## Arguments
 
-@return array
+- bool|null|string $useVersion See Config::versionUrls() for arument details
 
-@throws WireException
+## Return value
 
-@see Config::versionUrls()
+array
 
-@since 3.0.227
+## Throws
+
+- WireException
+
+## See also
+
+- [Config::versionUrls()](../Config/method-versionurls.md)
+
+## Meta
+
+- @since 3.0.227

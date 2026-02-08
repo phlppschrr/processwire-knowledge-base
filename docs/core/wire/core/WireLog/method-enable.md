@@ -1,13 +1,21 @@
-# WireLog::enable()
+# $wireLog->enable($name): self
 
 Source: `wire/core/WireLog.php`
 
 Enable a previously disabled log
 
-@param string $name Log name or specify '*' to reverse a previous disable('*') call.
+## Arguments
 
-@return self
+- string $name Log name or specify '*' to reverse a previous disable('*') call.
 
-@since 3.0.148
+## Return value
 
-@see WireLog::disable()
+self
+
+## See also
+
+- [WireLog::disable()](method-disable.md)
+
+## Meta
+
+- @since 3.0.148

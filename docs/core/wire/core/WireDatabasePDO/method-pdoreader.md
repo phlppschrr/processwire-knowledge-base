@@ -1,9 +1,13 @@
-# WireDatabasePDO::pdoReader()
+# $wireDatabasePDO->pdoReader(): \PDO
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Return read-only PDO connection if available or read/write PDO connection if not
 
-@return \PDO
+## Return value
 
-@since 3.0.175
+\PDO
+
+## Meta
+
+- @since 3.0.175

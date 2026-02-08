@@ -1,4 +1,4 @@
-# Pageimage::___crop()
+# $pageimage->___crop($x, $y, $width, $height, $options = array()): Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -14,16 +14,14 @@ $crop = $image->crop(100, 200, 150, 100);
 echo "<img src='$crop->url' />";
 ~~~~~
 
+## Arguments
 
-@param int $x Starting X position (left) in pixels
+- int $x Starting X position (left) in pixels
+- int $y Starting Y position (top) in pixels
+- int $width Width of crop in pixels
+- int $height Height of crop in pixels
+- array $options See options array for `Pageimage::size()` method. Avoid setting crop properties in $options since we are overriding them.
 
-@param int $y Starting Y position (top) in pixels
+## Return value
 
-@param int $width Width of crop in pixels
-
-@param int $height Height of crop in pixels
-
-@param array $options See options array for `Pageimage::size()` method.
-  Avoid setting crop properties in $options since we are overriding them.
-
-@return Pageimage
+Pageimage

@@ -1,12 +1,14 @@
-# Fieldtype::___upgrade()
+# $fieldtype->___upgrade($fromVersion, $toVersion)
 
 Source: `wire/core/Fieldtype.php`
 
 Called when module version changes
 
+## Arguments
 
-@param $fromVersion
+- $fromVersion
+- $toVersion
 
-@param $toVersion
+## Throws
 
-@throws WireException if upgrade fails
+- WireException if upgrade fails

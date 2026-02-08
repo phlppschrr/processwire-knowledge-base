@@ -1,4 +1,4 @@
-# Language::getLocale()
+# $language->getLocale($category = LC_ALL): string|bool
 
 Source: `wire/modules/LanguageSupport/Language.php`
 
@@ -6,8 +6,14 @@ Get locale for this language
 
 See the `Languages::getLocale()` method for full details.
 
-@param int $category Optional category (default=LC_ALL)
+## Arguments
 
-@return string|bool
+- int $category Optional category (default=LC_ALL)
 
-@see Languages::setLocale()
+## Return value
+
+string|bool
+
+## See also
+
+- [Languages::setLocale()](../Languages/method-setlocale.md)

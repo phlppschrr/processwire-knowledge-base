@@ -1,4 +1,4 @@
-# Inputfield::attr()
+# $inputfield->attr($key, $value = null): Inputfield|array|string|int|object|float
 
 Source: `wire/core/Inputfield.php`
 
@@ -30,16 +30,17 @@ $inputfield->attr("name+id", "foobar");
 $attrs = $inputfield->attr(true);
 ~~~~~
 
+## Arguments
 
-@param string|array|bool $key Specify one of the following:
-  - Name of attribute to get (if getting an attribute).
-  - Name of attribute to set (if setting an attribute, and also specifying a value).
-  - Aassociative array to set multiple attributes.
-  - String with attributes split by "+" or "|" to set them all to have the same value.
-  - Specify boolean true to get all attributes in an associative array.
+- string|array|bool $key Specify one of the following: - Name of attribute to get (if getting an attribute). - Name of attribute to set (if setting an attribute, and also specifying a value). - Aassociative array to set multiple attributes. - String with attributes split by "+" or "|" to set them all to have the same value. - Specify boolean true to get all attributes in an associative array.
+- string|int|bool|null $value Value to set (if setting), omit otherwise.
 
-@param string|int|bool|null $value Value to set (if setting), omit otherwise.
+## Return value
 
-@return Inputfield|array|string|int|object|float If setting an attribute, it returns this instance. If getting an attribute, the attribute is returned.
+Inputfield|array|string|int|object|float If setting an attribute, it returns this instance. If getting an attribute, the attribute is returned.
 
-@see Inputfield::removeAttr(), Inputfield::addClass(), Inputfield::removeClass()
+## See also
+
+- [Inputfield::removeAttr()](method-removeattr.md)
+- [Inputfield::addClass()](method-addclass.md)
+- [Inputfield::removeClass()](method-removeclass.md)

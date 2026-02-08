@@ -1,4 +1,4 @@
-# FunctionsAPI::pageId()
+# $functionsAPI->pageId($value): int|false
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -7,9 +7,14 @@ Return id for given page or false if it’s not a page
 Returns positive int (page id) for page that exists, 0 for NullPage,
 or false if given $value is not a Page.
 
+## Arguments
 
-@param Page|mixed $value
+- Page|mixed $value
 
-@return int|false
+## Return value
 
-@since 3.0.224
+int|false
+
+## Meta
+
+- @since 3.0.224

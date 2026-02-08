@@ -1,13 +1,18 @@
-# InputfieldWrapper::removeAttributeFromMarkup()
+# $inputfieldWrapper->removeAttributeFromMarkup($name, $markup): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Remove named attribute from given markup
 
-@param string $name
+## Arguments
 
-@param string $markup
+- string $name
+- string $markup
 
-@return string
+## Return value
 
-@since 3.0.250
+string
+
+## Meta
+
+- @since 3.0.250

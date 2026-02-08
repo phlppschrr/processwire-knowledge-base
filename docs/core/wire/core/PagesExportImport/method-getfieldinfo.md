@@ -1,4 +1,4 @@
-# PagesExportImport::getFieldInfo()
+# $pagesExportImport->getFieldInfo(Field $field): array
 
 Source: `wire/core/PagesExportImport.php`
 
@@ -9,7 +9,10 @@ Populates the following indexes in the returned array:
  - `exportable` (bool): True if field is exportable, false if not.
  - `reason` (string): Reason why field is not exportable (when exportable==false).
 
+## Arguments
 
-@param Field $field
+- Field $field
 
-@return array
+## Return value
+
+array

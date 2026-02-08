@@ -1,17 +1,20 @@
-# DatabaseQuerySelectFulltext::match()
+# $databaseQuerySelectFulltext->match($tableName, $fieldName, $operator, $value): $this
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Update the query (provided to the constructor) to match the given arguments
 
-@param string $tableName
+## Arguments
 
-@param string $fieldName
+- string $tableName
+- string $fieldName
+- string $operator
+- string|int|array $value Value to match. Array value support added 3.0.141 (not used by PageFinder)
 
-@param string $operator
+## Return value
 
-@param string|int|array $value Value to match. Array value support added 3.0.141 (not used by PageFinder)
+$this
 
-@return $this
+## Throws
 
-@throws WireException If given $operator argument is not implemented here
+- WireException If given $operator argument is not implemented here

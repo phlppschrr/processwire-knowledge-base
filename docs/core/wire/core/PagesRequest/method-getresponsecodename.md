@@ -1,4 +1,4 @@
-# PagesRequest::getResponseCodeName()
+# $pagesRequest->getResponseCodeName(): string
 
 Source: `wire/core/PagesRequest.php`
 
@@ -22,4 +22,6 @@ Returns string, one of:
 - methodNotAllowed: request method is not allowed by template (405)
 - pathTooLong: path too long or segment too long (414)
 
-@return string
+## Return value
+
+string

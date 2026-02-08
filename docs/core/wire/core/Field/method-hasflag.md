@@ -1,10 +1,13 @@
-# Field::hasFlag()
+# $field->hasFlag($flag): bool
 
 Source: `wire/core/Field.php`
 
 Does this field have the given bitmask flag?
 
+## Arguments
 
-@param int $flag
+- int $flag
 
-@return bool
+## Return value
+
+bool

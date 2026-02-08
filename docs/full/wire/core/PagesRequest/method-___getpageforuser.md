@@ -1,4 +1,4 @@
-# PagesRequest::___getPageForUser()
+# $pagesRequest->___getPageForUser(Page $page, User $user): Page|NullPage
 
 Source: `wire/core/PagesRequest.php`
 
@@ -8,8 +8,11 @@ Must be called once the current $user is known as it may change the $page.
 Returns NullPage if user lacks access or page out of bounds.
 Returns different page if it should be substituted due to lack of access (like login page).
 
-@param Page $page
+## Arguments
 
-@param User $user
+- Page $page
+- User $user
 
-@return Page|NullPage
+## Return value
+
+Page|NullPage

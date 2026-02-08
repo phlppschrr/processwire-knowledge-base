@@ -1,4 +1,4 @@
-# ImageSizer::getEngineInfo()
+# $imageSizer->getEngineInfo($name = ''): array
 
 Source: `wire/core/ImageSizer.php`
 
@@ -20,9 +20,14 @@ Returns array of arrays indexed by engine name, each with the following:
  - `priority` (int): Engine priority (lower is higher priority)
  - `runOrder` (int): Order ImageSizer will try this engine in relative to others (lower runs first), derived from priority.
 
-@param string $name Specify engine name to get info just for that engine or omit to get info for all engines (default)
+## Arguments
 
-@return array Array of arrays indexed by engine name, or if $name specified then just array of info for that engine.
-  Returns empty array on error.
+- string $name Specify engine name to get info just for that engine or omit to get info for all engines (default)
 
-@since 3.0.138
+## Return value
+
+array Array of arrays indexed by engine name, or if $name specified then just array of info for that engine. Returns empty array on error.
+
+## Meta
+
+- @since 3.0.138

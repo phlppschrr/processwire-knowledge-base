@@ -1,4 +1,4 @@
-# PagesVersions::deletePageVersion()
+# $pagesVersions->deletePageVersion(Page $page, $version = 0): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -14,9 +14,11 @@ $pageV2 = $pagesVersions->getPageVersion($page, 2);
 $pagesVersions->deletePageVersion($pageV2);
 ~~~~~~
 
+## Arguments
 
-@param Page $page Page to delete version from, or page having the version you want to delete.
+- Page $page Page to delete version from, or page having the version you want to delete.
+- int $version Version number to delete or omit if given $page is the version you want to delete.
 
-@param int $version Version number to delete or omit if given $page is the version you want to delete.
+## Return value
 
-@return int Number of DB rows deleted as part of the deletion process
+int Number of DB rows deleted as part of the deletion process

@@ -1,7 +1,9 @@
-# PagefileExtra::unlink()
+# $pagefileExtra->unlink(): bool
 
 Source: `wire/core/PagefileExtra.php`
 
 Unlink/delete the extra file
 
-@return bool
+## Return value
+
+bool

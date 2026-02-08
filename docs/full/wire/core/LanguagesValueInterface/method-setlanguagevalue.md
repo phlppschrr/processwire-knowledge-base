@@ -1,9 +1,10 @@
-# LanguagesValueInterface::setLanguageValue()
+# $languagesValueInterface->setLanguageValue($languageID, $value)
 
 Source: `wire/core/Interfaces.php`
 
 Sets the value for a given language
 
-@param int|Language $languageID
+## Arguments
 
-@param mixed $value
+- int|Language $languageID
+- mixed $value

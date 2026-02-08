@@ -1,15 +1,16 @@
-# PageTraversal::nextUntilSiblings()
+# $pageTraversal->nextUntilSiblings(Page $page, $selector = '', $filter = '', ?PageArray $siblings = null): PageArray
 
 Source: `wire/core/PageTraversal.php`
 
 Return all sibling pages after this one until matching the one specified
 
-@param Page $page
+## Arguments
 
-@param string|Page|array $selector May either be a selector or Page to stop at. Results will not include this.
+- Page $page
+- string|Page|array $selector May either be a selector or Page to stop at. Results will not include this.
+- string|array $filter Optional selector to filter matched pages by
+- PageArray|null $siblings Optional PageArray of siblings to use instead of all from the page.
 
-@param string|array $filter Optional selector to filter matched pages by
+## Return value
 
-@param PageArray|null $siblings Optional PageArray of siblings to use instead of all from the page.
-
-@return PageArray
+PageArray

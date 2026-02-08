@@ -1,4 +1,4 @@
-# Wire::trackChange()
+# $wire->trackChange($what, $old = null, $new = null): $this
 
 Source: `wire/core/Wire.php`
 
@@ -6,11 +6,12 @@ Track a change to a property in this object
 
 The change will only be recorded if change tracking is enabled for this object instance.
 
+## Arguments
 
-@param string $what Name of property that changed
+- string $what Name of property that changed
+- mixed $old Previous value before change
+- mixed $new New value
 
-@param mixed $old Previous value before change
+## Return value
 
-@param mixed $new New value
-
-@return $this
+$this

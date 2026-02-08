@@ -1,11 +1,11 @@
-# WireDatabasePDOStatement::setDebugParam()
+# $wireDatabasePDOStatement->setDebugParam($parameter, $value, $data_type = null)
 
 Source: `wire/core/WireDatabasePDOStatement.php`
 
 Set a named debug parameter
 
-@param string $parameter
+## Arguments
 
-@param int|string|null $value
-
-@param int|null $data_type \PDO::PARAM_* type
+- string $parameter
+- int|string|null $value
+- int|null $data_type \PDO::PARAM_* type

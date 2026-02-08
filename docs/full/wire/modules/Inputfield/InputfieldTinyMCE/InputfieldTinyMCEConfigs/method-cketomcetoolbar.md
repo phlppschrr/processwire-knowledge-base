@@ -1,9 +1,13 @@
-# InputfieldTinyMCEConfigs::ckeToMceToolbar()
+# $inputfieldTinyMCEConfigs->ckeToMceToolbar($value): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
 Convert CKE toolbar to MCE (future use)
 
-@param string $value
+## Arguments
 
-@return string
+- string $value
+
+## Return value
+
+string

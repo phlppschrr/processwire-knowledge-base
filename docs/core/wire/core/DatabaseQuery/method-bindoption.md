@@ -1,13 +1,18 @@
-# DatabaseQuery::bindOption()
+# $databaseQuery->bindOption($optionName, $optionValue = null): string|int|array
 
 Source: `wire/core/DatabaseQuery.php`
 
 Get or set a bind option
 
-@param string|bool $optionName One of 'prefix' or 'global', boolean true to get/set all
+## Arguments
 
-@param null|int|string|array $optionValue Omit when getting, Specify option value to set, or array when setting all
+- string|bool $optionName One of 'prefix' or 'global', boolean true to get/set all
+- null|int|string|array $optionValue Omit when getting, Specify option value to set, or array when setting all
 
-@return string|int|array
+## Return value
 
-@since 3.0.157
+string|int|array
+
+## Meta
+
+- @since 3.0.157

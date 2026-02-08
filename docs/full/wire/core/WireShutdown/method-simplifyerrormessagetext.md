@@ -1,11 +1,17 @@
-# WireShutdown::simplifyErrorMessageText()
+# $wireShutdown->simplifyErrorMessageText($text): string
 
 Source: `wire/core/WireShutdown.php`
 
 Simplify error message to remove unnecessary or redundant information
 
-@param string $text
+## Arguments
 
-@return string
+- string $text
 
-@since 3.0.175
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.175

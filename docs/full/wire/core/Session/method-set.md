@@ -1,4 +1,4 @@
-# Session::set()
+# $session->set($key, $value, $_value = null): $this
 
 Source: `wire/core/Session.php`
 
@@ -24,11 +24,12 @@ $session->firstName = 'Bob';
 $firstName = $session->firstName;
 ~~~~~
 
+## Arguments
 
-@param string|object $key Name of session variable to set (or object for namespace)
+- string|object $key Name of session variable to set (or object for namespace)
+- string|mixed $value Value to set (or name of variable, if first argument is namespace)
+- mixed $_value Value to set if first argument is namespace. Omit otherwise.
 
-@param string|mixed $value Value to set (or name of variable, if first argument is namespace)
+## Return value
 
-@param mixed $_value Value to set if first argument is namespace. Omit otherwise.
-
-@return $this
+$this

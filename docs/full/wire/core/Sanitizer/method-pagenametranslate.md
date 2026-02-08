@@ -1,4 +1,4 @@
-# Sanitizer::pageNameTranslate()
+# $sanitizer->pageNameTranslate($value, $maxLength = 128): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,9 +6,11 @@ Name filter for ProcessWire Page names with transliteration
 
 This is the same as calling pageName with the `Sanitizer::translate` option for the `$beautify` argument.
 
+## Arguments
 
-@param string $value Value to sanitize
+- string $value Value to sanitize
+- int $maxLength Maximum number of characters allowed in the name
 
-@param int $maxLength Maximum number of characters allowed in the name
+## Return value
 
-@return string Sanitized value
+string Sanitized value

@@ -1,10 +1,13 @@
-# PagesType::___added()
+# $pagesType->___added(Page $page)
 
 Source: `wire/core/PagesType.php`
 
 Hook called when a new page of this type has been added
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@since 3.0.128
+## Meta
+
+- @since 3.0.128

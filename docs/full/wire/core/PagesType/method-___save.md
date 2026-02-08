@@ -1,4 +1,4 @@
-# PagesType::___save()
+# $pagesType->___save(Page $page): bool
 
 Source: `wire/core/PagesType.php`
 
@@ -13,8 +13,14 @@ If you want to hook this method, please hook the `saveReady`, `saved`, or one of
 the `Pages::save*` methods instead, as hooking this method will not hook relevant pages
 saved directly through $pages->save().
 
-@param Page $page
+## Arguments
 
-@return bool True on success
+- Page $page
 
-@throws WireException
+## Return value
+
+bool True on success
+
+## Throws
+
+- WireException

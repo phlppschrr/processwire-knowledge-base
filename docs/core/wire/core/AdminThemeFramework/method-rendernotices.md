@@ -1,11 +1,14 @@
-# AdminThemeFramework::renderNotices()
+# $adminThemeFramework->renderNotices($notices, array $options = array()): string|array
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Render runtime notices div#notices
 
-@param Notices|bool $notices Notices object or specify boolean true to return array of all available $options
+## Arguments
 
-@param array $options See defaults in method
+- Notices|bool $notices Notices object or specify boolean true to return array of all available $options
+- array $options See defaults in method
 
-@return string|array Returns string unless you specify true for $notices argument, then it returns an array.
+## Return value
+
+string|array Returns string unless you specify true for $notices argument, then it returns an array.

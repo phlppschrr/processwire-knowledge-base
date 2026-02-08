@@ -1,11 +1,14 @@
-# Pageimage::set()
+# $pageimage->set($key, $value): Pageimage|WireData
 
 Source: `wire/core/Pageimage.php`
 
 Set property
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return Pageimage|WireData
+## Return value
+
+Pageimage|WireData

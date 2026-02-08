@@ -1,4 +1,4 @@
-# PagesLoader::findOne()
+# $pagesLoader->findOne($selector, $options = array()): Page|NullPage
 
 Source: `wire/core/PagesLoader.php`
 
@@ -16,9 +16,11 @@ override this, where appropriate.
 
 This method also accepts an `$options` array, whereas `Pages::get()` does not.
 
+## Arguments
 
-@param string|int|array|Selectors $selector
+- string|int|array|Selectors $selector
+- array|string $options See $options for `Pages::find`
 
-@param array|string $options See $options for `Pages::find`
+## Return value
 
-@return Page|NullPage
+Page|NullPage

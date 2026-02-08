@@ -1,5 +1,8 @@
-# InputfieldDatetimeType::render()
+# $inputfieldDatetimeType->render(): string
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
-@return string
+
+## Return value
+
+string

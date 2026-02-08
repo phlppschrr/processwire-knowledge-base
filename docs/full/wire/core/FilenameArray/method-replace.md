@@ -1,13 +1,18 @@
-# FilenameArray::replace()
+# $filenameArray->replace($oldFile, $newFile): $this
 
 Source: `wire/core/FilenameArray.php`
 
 Replace one file with another
 
-@param string $oldFile
+## Arguments
 
-@param string $newFile
+- string $oldFile
+- string $newFile
 
-@return $this
+## Return value
 
-@since 3.0.215
+$this
+
+## Meta
+
+- @since 3.0.215

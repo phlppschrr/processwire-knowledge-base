@@ -1,4 +1,4 @@
-# PagesVersions::restorePageVersion()
+# $pagesVersions->restorePageVersion(Page $page, $version = 0, array $options = []): Page|bool
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -18,17 +18,16 @@ $pageV2 = $pagesVersions->getPageVersion($page, 2);
 $pagesVersions->restore($pageV2);
 ~~~~~
 
+## Arguments
 
-@param Page $page Page to restore version to or a page that was loaded as a version.
+- Page $page Page to restore version to or a page that was loaded as a version.
+- int $version Version number to restore. Can be omitted if given $page is already a version.
+- array $options - `names` (array): Names of fields/properties to restore or omit for all (default=[]) - `useTempVersion` (bool): Create a temporary version and restore from that? (default=auto-detect). This is necessary for some Fieldtypes like nested repeaters. Use of it is auto-detected so it is not necessary to specify this when using the public API.
 
-@param int $version Version number to restore. Can be omitted if given $page is already a version.
+## Return value
 
-@param array $options
- - `names` (array): Names of fields/properties to restore or omit for all (default=[])
- - `useTempVersion` (bool): Create a temporary version and restore from that? (default=auto-detect).
-    This is necessary for some Fieldtypes like nested repeaters. Use of it is auto-detected so
-    it is not necessary to specify this when using the public API.
+Page|bool Returns restored version page on success or false on fail
 
-@return Page|bool Returns restored version page on success or false on fail
+## Throws
 
-@throws WireException
+- WireException

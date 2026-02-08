@@ -1,7 +1,9 @@
-# InputfieldTinyMCE::renderNormal()
+# $inputfieldTinyMCE->renderNormal(): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Render normal/classic editor
 
-@return string
+## Return value
+
+string

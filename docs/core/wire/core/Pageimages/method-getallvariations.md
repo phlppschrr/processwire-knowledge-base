@@ -1,4 +1,4 @@
-# Pageimages::getAllVariations()
+# $pageimages->getAllVariations(): array
 
 Source: `wire/core/Pageimages.php`
 
@@ -21,6 +21,10 @@ print_r($variations);
 // );
 ~~~~~
 
-@return array Array indexed by file name, each containing array of variation file names
+## Return value
 
-@see Pageimage::isVariation()
+array Array indexed by file name, each containing array of variation file names
+
+## See also
+
+- [Pageimage::isVariation()](../Pageimage/method-___isvariation.md)

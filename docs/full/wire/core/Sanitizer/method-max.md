@@ -1,4 +1,4 @@
-# Sanitizer::max()
+# $sanitizer->max($value, $max = PHP_INT_MAX): int|float
 
 Source: `wire/core/Sanitizer.php`
 
@@ -14,13 +14,19 @@ $sanitizer->max(100); // returns 10
 $sanitizer->max(100.0); // returns 10.0
 ~~~~~
 
+## Arguments
 
-@param int|float|string $value
+- int|float|string $value
+- int|float|string $max Maximum allowed value
 
-@param int|float|string $max Maximum allowed value
+## Return value
 
-@return int|float
+int|float
 
-@since 3.0.125
+## See also
 
-@see Sanitizer::min()
+- [Sanitizer::min()](method-min.md)
+
+## Meta
+
+- @since 3.0.125

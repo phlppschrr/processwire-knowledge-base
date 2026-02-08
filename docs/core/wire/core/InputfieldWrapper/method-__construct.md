@@ -1,4 +1,4 @@
-# InputfieldWrapper::__construct()
+# $inputfieldWrapper->__construct()
 
 Source: `wire/core/InputfieldWrapper.php`
 

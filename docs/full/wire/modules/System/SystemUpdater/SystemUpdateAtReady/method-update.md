@@ -1,5 +1,8 @@
-# SystemUpdateAtReady::update()
+# $systemUpdateAtReady->update(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdate.php`
 
-@return bool
+
+## Return value
+
+bool

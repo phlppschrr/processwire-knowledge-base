@@ -1,7 +1,9 @@
-# InputfieldDatetimeType::__construct()
+# $inputfieldDatetimeType->__construct(InputfieldDatetime $inputfield)
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 Construct
 
-@param InputfieldDatetime $inputfield
+## Arguments
+
+- InputfieldDatetime $inputfield

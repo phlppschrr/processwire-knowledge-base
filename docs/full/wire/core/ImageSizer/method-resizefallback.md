@@ -1,4 +1,4 @@
-# ImageSizer::resizeFallback()
+# $imageSizer->resizeFallback($targetWidth, $targetHeight = 0): bool
 
 Source: `wire/core/ImageSizer.php`
 
@@ -7,8 +7,11 @@ GD is the fallback ImageEngine, it gets invoked if there is no other Engine defi
 or if a defined Engine is not available,
 or if an invoked Engine failes with the image manipulation.
 
-@param mixed $targetWidth
+## Arguments
 
-@param mixed $targetHeight
+- mixed $targetWidth
+- mixed $targetHeight
 
-@return bool
+## Return value
+
+bool

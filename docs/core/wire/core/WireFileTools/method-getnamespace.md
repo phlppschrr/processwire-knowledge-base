@@ -1,12 +1,14 @@
-# WireFileTools::getNamespace()
+# $wireFileTools->getNamespace($file, $fileIsContents = false): string
 
 Source: `wire/core/WireFileTools.php`
 
 Get the namespace used in the given .php or .module file
 
+## Arguments
 
-@param string $file File name or file data (if file data, specify true for 2nd argument)
+- string $file File name or file data (if file data, specify true for 2nd argument)
+- bool $fileIsContents Specify true if the given $file is actually the contents of the file, rather than file name.
 
-@param bool $fileIsContents Specify true if the given $file is actually the contents of the file, rather than file name.
+## Return value
 
-@return string Actual found namespace or "\" (root namespace) if none found
+string Actual found namespace or "\" (root namespace) if none found

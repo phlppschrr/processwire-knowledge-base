@@ -1,4 +1,4 @@
-# WireDatabasePDO::indexExists()
+# $wireDatabasePDO->indexExists($table, $indexName, $getInfo = false): bool|array
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -19,17 +19,16 @@ if($info) {
 }
 ~~~~
 
+## Arguments
 
-@param string $table
+- string $table
+- string $indexName
+- bool $getInfo Return arrays of index information rather than boolean true? (default=false) Note that the verbose arrays are the raw MySQL return values from a SHOW INDEX command.
 
-@param string $indexName
+## Return value
 
-@param bool $getInfo Return arrays of index information rather than boolean true? (default=false)
-  Note that the verbose arrays are the raw MySQL return values from a SHOW INDEX command.
+bool|array Returns one of the following: - `false`: if index does not exist (regardless of $getInfo argument). - `true`: if index exists and $getInfo argument is omitted or false. - `array`: array of arrays with verbose information if index exists and $getInfo argument is true.
 
-@return bool|array Returns one of the following:
-  - `false`: if index does not exist (regardless of $getInfo argument).
-  - `true`: if index exists and $getInfo argument is omitted or false.
-  - `array`: array of arrays with verbose information if index exists and $getInfo argument is true.
+## Meta
 
-@since 3.0.182
+- @since 3.0.182

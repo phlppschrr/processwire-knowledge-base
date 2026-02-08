@@ -1,4 +1,4 @@
-# Functions::wireUnzipFile()
+# $functions->wireUnzipFile($file, $dst, array $options = []): array
 
 Source: `wire/core/Functions.php`
 
@@ -6,15 +6,20 @@ Unzips the given ZIP file to the destination directory
 
 This is procedural version of the `$files->unzip()` method. See that method for more details.
 
+## Arguments
 
-@param string $file ZIP file to extract
+- string $file ZIP file to extract
+- string $dst Directory where files should be unzipped into. Directory is created if it doesn’t exist.
+- array $options See `WireFileTools::unzip()` for options.
 
-@param string $dst Directory where files should be unzipped into. Directory is created if it doesn’t exist.
+## Return value
 
-@param array $options See `WireFileTools::unzip()` for options.
+array Returns an array of filenames (excluding $dst) that were unzipped.
 
-@return array Returns an array of filenames (excluding $dst) that were unzipped.
+## Throws
 
-@throws WireException All error conditions result in WireException being thrown.
+- WireException All error conditions result in WireException being thrown.
 
-@see WireFileTools::unzip()
+## See also
+
+- [WireFileTools::unzip()](../WireFileTools/method-unzip.md)

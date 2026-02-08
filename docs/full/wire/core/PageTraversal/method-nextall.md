@@ -1,13 +1,15 @@
-# PageTraversal::nextAll()
+# $pageTraversal->nextAll(Page $page, $selector = '', array $options = array()): PageArray
 
 Source: `wire/core/PageTraversal.php`
 
 Return all sibling pages after this one, optionally matching a selector
 
-@param Page $page
+## Arguments
 
-@param string|array|Selectors $selector Optional selector. When specified, will filter the found siblings.
+- Page $page
+- string|array|Selectors $selector Optional selector. When specified, will filter the found siblings.
+- array $options Options to pass to the _next() method
 
-@param array $options Options to pass to the _next() method
+## Return value
 
-@return PageArray Returns all matching pages after this one.
+PageArray Returns all matching pages after this one.

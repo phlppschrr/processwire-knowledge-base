@@ -1,16 +1,16 @@
-# SelectableOptionManager::findOptionsByProperty()
+# $selectableOptionManager->findOptionsByProperty(Field $field, $property, $operator, $value): SelectableOptionArray
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Perform a partial match on title of options
 
-@param Field $field
+## Arguments
 
-@param string $property Either 'title' or 'value'. May also be blank (to imply 'either') if operator is '=' or
-    '!='
+- Field $field
+- string $property Either 'title' or 'value'. May also be blank (to imply 'either') if operator is '=' or '!='
+- string $operator
+- string $value Value to find
 
-@param string $operator
+## Return value
 
-@param string $value Value to find
-
-@return SelectableOptionArray
+SelectableOptionArray

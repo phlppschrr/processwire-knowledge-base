@@ -1,4 +1,4 @@
-# PagesNames::pageNameFromFormat()
+# $pagesNames->pageNameFromFormat(Page $page, $format = '', array $options = array()): string
 
 Source: `wire/core/PagesNames.php`
 
@@ -27,13 +27,12 @@ Options for $format argument:
 For formats above that accept a wireDate() format, see `WireDateTime::date()` method for format details. It accepts PHP
 date() format, PHP strftime() format, as well as some other predefined options.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- string|array $format Optional format. If not specified, pulls from $page’s parent template.
+- array $options Options to modify behavior. May also be specified in $format argument. - `language` (Language|string): Language to use - `format` (string): Optional format to use, if $options were specified in $format argument.
 
-@param string|array $format Optional format. If not specified, pulls from $page’s parent template.
+## Return value
 
-@param array $options Options to modify behavior. May also be specified in $format argument.
- - `language` (Language|string): Language to use
- - `format` (string): Optional format to use, if $options were specified in $format argument.
-
-@return string
+string

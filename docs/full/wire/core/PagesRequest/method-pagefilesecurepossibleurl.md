@@ -1,11 +1,17 @@
-# PagesRequest::pagefileSecurePossibleUrl()
+# $pagesRequest->pagefileSecurePossibleUrl($url): bool
 
 Source: `wire/core/PagesRequest.php`
 
 Are secure pagefiles possible on this system and url?
 
-@param string $url
+## Arguments
 
-@return bool
+- string $url
 
-@since 3.0.166
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.166

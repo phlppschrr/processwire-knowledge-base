@@ -1,13 +1,18 @@
-# CommentField::getCommentParents()
+# $commentField->getCommentParents(Page $page, Comment $comment): CommentArray
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Get parent comments for given Comment
 
-@param Page $page
+## Arguments
 
-@param Comment $comment
+- Page $page
+- Comment $comment
 
-@return CommentArray
+## Return value
 
-@since 3.0.153
+CommentArray
+
+## Meta
+
+- @since 3.0.153

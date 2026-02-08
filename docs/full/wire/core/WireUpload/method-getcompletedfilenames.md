@@ -1,7 +1,9 @@
-# WireUpload::getCompletedFilenames()
+# $wireUpload->getCompletedFilenames(): array
 
 Source: `wire/core/WireUpload.php`
 
 Get array of uploaded filenames
 
-@return array
+## Return value
+
+array

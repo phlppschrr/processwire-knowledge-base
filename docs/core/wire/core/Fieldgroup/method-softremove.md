@@ -1,4 +1,4 @@
-# Fieldgroup::softRemove()
+# $fieldgroup->softRemove($field): bool|Fieldgroup|WireArray
 
 Source: `wire/core/Fieldgroup.php`
 
@@ -8,7 +8,10 @@ Removes a field from the fieldgroup without deleting any associated field data w
 is saved to the database. This is useful in the API when you want to move a field around within
 a fieldgroup, like when moving a field to a Fieldset within the Fieldgroup.
 
+## Arguments
 
-@param Field|string|int $field Field object, name or id.
+- Field|string|int $field Field object, name or id.
 
-@return bool|Fieldgroup|WireArray
+## Return value
+
+bool|Fieldgroup|WireArray

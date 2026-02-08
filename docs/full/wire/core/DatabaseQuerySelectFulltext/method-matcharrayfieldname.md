@@ -1,11 +1,14 @@
-# DatabaseQuerySelectFulltext::matchArrayFieldName()
+# $databaseQuerySelectFulltext->matchArrayFieldName(array $fieldNames, $value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Match when given $fieldName is an array
 
-@param array $fieldNames
+## Arguments
 
-@param mixed $value
+- array $fieldNames
+- mixed $value
 
-@since 3.0.169
+## Meta
+
+- @since 3.0.169

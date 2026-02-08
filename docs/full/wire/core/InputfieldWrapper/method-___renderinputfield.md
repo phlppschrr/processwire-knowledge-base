@@ -1,4 +1,4 @@
-# InputfieldWrapper::___renderInputfield()
+# $inputfieldWrapper->___renderInputfield(Inputfield $inputfield, $renderValueMode = false): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,9 +8,11 @@ This method takes care of all the pre-and-post requisites needed for rendering a
 among a group of Inputfields. It is used by the `InputfieldWrapper::render()` method for each
 Inputfield present in the children.
 
+## Arguments
 
-@param Inputfield $inputfield The Inputfield to render.
+- Inputfield $inputfield The Inputfield to render.
+- bool $renderValueMode Specify true if we are only rendering values (default=false).
 
-@param bool $renderValueMode Specify true if we are only rendering values (default=false).
+## Return value
 
-@return string Rendered output
+string Rendered output

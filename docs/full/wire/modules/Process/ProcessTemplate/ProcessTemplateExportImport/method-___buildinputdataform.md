@@ -1,7 +1,9 @@
-# ProcessTemplateExportImport::___buildInputDataForm()
+# $processTemplateExportImport->___buildInputDataForm(): InputfieldForm
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
 Build Textarea input form to past JSON data into
 
-@return InputfieldForm
+## Return value
+
+InputfieldForm

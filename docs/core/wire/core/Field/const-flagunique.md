@@ -8,4 +8,6 @@ When this flag is set and there is a non-empty $flagUnique property on the field
 is currently present. When only this flag is present (no property), it indicates a request to remove the index and flag.
 When only the property is present (no flag), it indicates a pending request to add unique index and flag.
 
-@since 3.0.150
+## Meta
+
+- @since 3.0.150

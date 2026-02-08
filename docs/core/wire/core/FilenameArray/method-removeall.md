@@ -1,7 +1,9 @@
-# FilenameArray::removeAll()
+# $filenameArray->removeAll(): $this
 
 Source: `wire/core/FilenameArray.php`
 
 Remove all filenames
 
-@return $this
+## Return value
+
+$this

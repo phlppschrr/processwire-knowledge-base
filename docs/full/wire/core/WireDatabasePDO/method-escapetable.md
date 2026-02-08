@@ -1,10 +1,13 @@
-# WireDatabasePDO::escapeTable()
+# $wireDatabasePDO->escapeTable($table): string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Sanitize a table name for _a-zA-Z0-9
 
+## Arguments
 
-@param string $table String containing table name
+- string $table String containing table name
 
-@return string Sanitized table name
+## Return value
+
+string Sanitized table name

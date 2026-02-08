@@ -1,12 +1,17 @@
-# Template::filename()
+# $template->filename($filename = null): string
 
 Source: `wire/core/Template.php`
 
 Return corresponding template filename including path, or set template filename
 
+## Arguments
 
-@param string $filename Specify basename or path+basename to set, or omit to get filename. This argument added 3.0.143.
+- string $filename Specify basename or path+basename to set, or omit to get filename. This argument added 3.0.143.
 
-@return string
+## Return value
 
-@throws WireException
+string
+
+## Throws
+
+- WireException

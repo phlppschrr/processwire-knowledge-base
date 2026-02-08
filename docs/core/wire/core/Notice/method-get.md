@@ -1,9 +1,13 @@
-# Notice::get()
+# $notice->get($key): mixed
 
 Source: `wire/core/Notice.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

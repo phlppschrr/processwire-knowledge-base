@@ -1,13 +1,12 @@
-# WireMarkupRegions::populateFileRegions()
+# $wireMarkupRegions->populateFileRegions(&$htmlDocument, &$htmlRegions, $options, $debug)
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Populate file regions
 
-@param string $htmlDocument
+## Arguments
 
-@param array|string $htmlRegions
-
-@param array $options
-
-@param bool $debug
+- string $htmlDocument
+- array|string $htmlRegions
+- array $options
+- bool $debug

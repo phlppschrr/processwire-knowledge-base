@@ -1,4 +1,4 @@
-# WireSessionHandler::init()
+# $wireSessionHandler->init()
 
 Source: `wire/core/WireSessionHandler.php`
 

@@ -1,4 +1,4 @@
-# Functions::wireEmpty()
+# $functions->wireEmpty($value): bool
 
 Source: `wire/core/Functions.php`
 
@@ -31,8 +31,14 @@ empty($v); // returns true
 wireEmpty($v); // returns true but with PHP’s warning triggered
 ~~~~~
 
-@param mixed $value Value to test if empty
+## Arguments
 
-@return bool
+- mixed $value Value to test if empty
 
-@since 3.0.143
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.143

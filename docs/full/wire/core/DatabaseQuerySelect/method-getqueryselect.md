@@ -1,7 +1,9 @@
-# DatabaseQuerySelect::getQuerySelect()
+# $databaseQuerySelect->getQuerySelect(): string
 
 Source: `wire/core/DatabaseQuerySelect.php`
 
 Get SELECT portion of SQL
 
-@return string
+## Return value
+
+string

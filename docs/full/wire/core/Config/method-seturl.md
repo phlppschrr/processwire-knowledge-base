@@ -1,4 +1,4 @@
-# Config::setUrl()
+# $config->setUrl($for, $url): self
 
 Source: `wire/core/Config.php`
 
@@ -34,13 +34,19 @@ if($page->template != 'admin) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $for Named location from `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- string $for Named location from `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- string $url URL relative to PW installation root (no leading slash) or absolute URL if not (optionally including scheme and domain).
 
-@param string $url URL relative to PW installation root (no leading slash) or absolute URL if not (optionally including scheme and domain).
+## Return value
 
-@return self
+self
 
-@throws WireException
+## Throws
 
-@since 3.0.141
+- WireException
+
+## Meta
+
+- @since 3.0.141

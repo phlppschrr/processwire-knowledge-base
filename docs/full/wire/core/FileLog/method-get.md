@@ -1,13 +1,18 @@
-# FileLog::get()
+# $fileLog->get($chunkSize = 0, $chunkNum = 1): array
 
 Source: `wire/core/FileLog.php`
 
 Get lines from the end of a file based on chunk size (deprecated)
 
-@param int $chunkSize
+## Arguments
 
-@param int $chunkNum
+- int $chunkSize
+- int $chunkNum
 
-@return array
+## Return value
 
-@deprecated Use find() instead
+array
+
+## Meta
+
+- @deprecated Use find() instead

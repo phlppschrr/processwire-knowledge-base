@@ -1,11 +1,17 @@
-# WireDatabaseBackup::sanitizeFilename()
+# $wireDatabaseBackup->sanitizeFilename($filename): string
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 For filename: Normalizes slashes and ensures it starts with a path
 
-@param $filename
+## Arguments
 
-@return string
+- $filename
 
-@throws \Exception if path has not yet been set
+## Return value
+
+string
+
+## Throws
+
+- \Exception if path has not yet been set

@@ -1,4 +1,4 @@
-# TemplateFile::renderReady()
+# $templateFile->renderReady()
 
 Source: `wire/core/TemplateFile.php`
 
@@ -6,4 +6,6 @@ Prepare to render
 
 Called right before render about to start
 
-@since 3.0.154
+## Meta
+
+- @since 3.0.154

@@ -1,13 +1,15 @@
-# LanguageTranslator::setTranslationFromHash()
+# $languageTranslator->setTranslationFromHash($textdomain, $hash, $translation): string
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Set a translation using an already known hash
 
-@param string $textdomain
+## Arguments
 
-@param string $hash
+- string $textdomain
+- string $hash
+- string $translation
 
-@param string $translation
+## Return value
 
-@return string
+string

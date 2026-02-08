@@ -1,4 +1,4 @@
-# HookEvent::__toString()
+# $hookEvent->__toString()
 
 Source: `wire/core/HookEvent.php`
 

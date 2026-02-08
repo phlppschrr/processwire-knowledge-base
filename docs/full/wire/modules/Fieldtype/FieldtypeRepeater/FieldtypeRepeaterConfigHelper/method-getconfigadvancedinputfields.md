@@ -1,7 +1,9 @@
-# FieldtypeRepeaterConfigHelper::getConfigAdvancedInputfields()
+# $fieldtypeRepeaterConfigHelper->getConfigAdvancedInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 Advanced config
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- InputfieldWrapper $inputfields

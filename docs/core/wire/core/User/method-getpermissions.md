@@ -1,4 +1,4 @@
-# User::getPermissions()
+# $user->getPermissions(?Page $page = null): PageArray
 
 Source: `wire/core/User.php`
 
@@ -12,7 +12,10 @@ $permissions = $user->getPermissions();
 $permissions = $user->getPermissions($page);
 ~~~~~
 
+## Arguments
 
-@param Page|null $page Optional page to check against
+- Page|null $page Optional page to check against
 
-@return PageArray of Permission objects
+## Return value
+
+PageArray of Permission objects

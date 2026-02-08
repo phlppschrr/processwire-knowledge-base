@@ -1,4 +1,4 @@
-# WireMailTools::send()
+# $wireMailTools->send($to = '', $from = '', $subject = '', $body = '', $options = array()): int|WireMail
 
 Source: `wire/core/WireMailTools.php`
 
@@ -26,20 +26,14 @@ $mail->send($to, $from, $subject, $body, $bodyHTML);
 $wireMail = $mail->send();
 ~~~~~
 
-@param string|array $to Email address TO. For multiple, specify CSV string or array.
+## Arguments
 
-@param string $from Email address FROM. This may be an email address, or a combined name and email address.
-  Example of combined name and email: `Karen Cramer <karen@processwire.com>`
+- string|array $to Email address TO. For multiple, specify CSV string or array.
+- string $from Email address FROM. This may be an email address, or a combined name and email address. Example of combined name and email: `Karen Cramer <karen@processwire.com>`
+- string $subject Email subject
+- string|array $body Email body or omit to move straight to $options
+- array|string $options Array of options OR the $bodyHTML string. Array $options are: - `body` (string): Email body (text) - `bodyHTML` (string): Email body (HTML) - `replyTo` (string): Reply-to email address - `headers` (array): Associative array of header name => header value - Any additional options will be sent along to the WireMail module or class, in tact.
 
-@param string $subject Email subject
+## Return value
 
-@param string|array $body Email body or omit to move straight to $options
-
-@param array|string $options Array of options OR the $bodyHTML string. Array $options are:
- - `body` (string): Email body (text)
- - `bodyHTML` (string): Email body (HTML)
- - `replyTo` (string): Reply-to email address
- - `headers` (array): Associative array of header name => header value
- - Any additional options will be sent along to the WireMail module or class, in tact.
-
-@return int|WireMail Returns number of messages sent or WireMail object if no arguments specified.
+int|WireMail Returns number of messages sent or WireMail object if no arguments specified.

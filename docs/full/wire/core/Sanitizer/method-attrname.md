@@ -1,14 +1,18 @@
-# Sanitizer::attrName()
+# $sanitizer->attrName($value, $maxLength = 255): string
 
 Source: `wire/core/Sanitizer.php`
 
 Sanitize to an ASCII-only HTML attribute name
 
+## Arguments
 
-@param string $value
+- string $value
+- int $maxLength
 
-@param int $maxLength
+## Return value
 
-@return string
+string
 
-@since 3.0.133
+## Meta
+
+- @since 3.0.133

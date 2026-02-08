@@ -1,9 +1,10 @@
-# PagefileExtra::__construct()
+# $pagefileExtra->__construct(Pagefile $pagefile, $extension)
 
 Source: `wire/core/PagefileExtra.php`
 
 Construct
 
-@param Pagefile|Pageimage $pagefile
+## Arguments
 
-@param $extension
+- Pagefile|Pageimage $pagefile
+- $extension

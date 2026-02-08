@@ -1,4 +1,4 @@
-# WireLog::getLogs()
+# $wireLog->getLogs($sortNewest = false): array
 
 Source: `wire/core/WireLog.php`
 
@@ -11,7 +11,10 @@ Each item in returned array is an associative array that includes the following:
 	- `size` (int): Size in bytes
 	- `modified` (int): Last modified date (unix timestamp)
 
+## Arguments
 
-@param bool $sortNewest Sort by newest to oldest rather than by name? (default=false) Added 3.0.143
+- bool $sortNewest Sort by newest to oldest rather than by name? (default=false) Added 3.0.143
 
-@return array Indexed by log name
+## Return value
+
+array Indexed by log name

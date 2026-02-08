@@ -1,13 +1,15 @@
-# WireHooks::filterHooks()
+# $wireHooks->filterHooks(array $hooks, $property, $value): array
 
 Source: `wire/core/WireHooks.php`
 
 Filter and return hooks matching given property and value
 
-@param array $hooks Hooks from getHooks() method
+## Arguments
 
-@param string $property Property name from hook (or hook options)
+- array $hooks Hooks from getHooks() method
+- string $property Property name from hook (or hook options)
+- string|bool|int $value Value to match
 
-@param string|bool|int $value Value to match
+## Return value
 
-@return array
+array

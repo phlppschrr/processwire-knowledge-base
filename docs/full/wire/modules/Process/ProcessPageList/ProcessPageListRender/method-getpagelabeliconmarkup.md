@@ -1,13 +1,18 @@
-# ProcessPageListRender::getPageLabelIconMarkup()
+# $processPageListRender->getPageLabelIconMarkup(Page $page, &$label): string
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get page label icon and modify $label to remove existing icon references
 
-@param Page $page
+## Arguments
 
-@param string $label
+- Page $page
+- string $label
 
-@return string
+## Return value
 
-@since 3.0.163
+string
+
+## Meta
+
+- @since 3.0.163

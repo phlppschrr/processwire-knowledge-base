@@ -1,15 +1,19 @@
-# Selectors::extractOperator()
+# $selectors->extractOperator(&$str, array $operatorChars): string
 
 Source: `wire/core/Selectors.php`
 
 Given a string starting with an operator, return that operator, and remove it from $str.
 
-@param string $str
+## Arguments
 
-@param array $operatorChars
+- string $str
+- array $operatorChars
 
-@return string
+## Return value
 
-@deprecated Replaced by extractOperators()
+string
 
-@todo this method can be removed once confirmed nothing else uses it
+## Meta
+
+- @deprecated Replaced by extractOperators()
+- @todo this method can be removed once confirmed nothing else uses it

@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wireLanguages()
+# $functionsWireAPI->wireLanguages($name = ''): Languages|Language|NullPage|null
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -13,6 +13,10 @@ $en = languages()->getDefault();
 $de = languages('de');
 ~~~~
 
-@param string|int $name Optional Language name or ID for language to retrieve
+## Arguments
 
-@return Languages|Language|NullPage|null
+- string|int $name Optional Language name or ID for language to retrieve
+
+## Return value
+
+Languages|Language|NullPage|null

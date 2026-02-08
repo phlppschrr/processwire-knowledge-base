@@ -1,7 +1,9 @@
-# SelectableOptionArray::setField()
+# $selectableOptionArray->setField(Field $field)
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Set the field these options are for
 
-@param Field $field
+## Arguments
+
+- Field $field

@@ -1,4 +1,4 @@
-# Selectors::getSelectorByFieldValue()
+# $selectors->getSelectorByFieldValue($fieldName, $value, $or = false, $all = false): Selector|array|null
 
 Source: `wire/core/Selectors.php`
 
@@ -12,14 +12,17 @@ Using **$all:** By default only the first matching selector is returned. If you 
 matching selectors in an array, then specify true for the $all argument. This changes the return value
 to always be an array of Selector objects, or a blank array if no match.
 
-@param string $fieldName Name of field to match
+## Arguments
 
-@param string|int $value Value that must match
+- string $fieldName Name of field to match
+- string|int $value Value that must match
+- bool $or Allow fields and values that appear in OR expressions? (default=false)
+- bool $all Return an array of all matching Selector objects? (default=false)
 
-@param bool $or Allow fields and values that appear in OR expressions? (default=false)
+## Return value
 
-@param bool $all Return an array of all matching Selector objects? (default=false)
+Selector|array|null Returns null if field not present in selectors (or blank array if $all mode)
 
-@return Selector|array|null Returns null if field not present in selectors (or blank array if $all mode)
+## Meta
 
-@since 3.0.142
+- @since 3.0.142

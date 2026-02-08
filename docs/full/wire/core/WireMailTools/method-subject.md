@@ -1,11 +1,17 @@
-# WireMailTools::subject()
+# $wireMailTools->subject($subject): WireMail
 
 Source: `wire/core/WireMailTools.php`
 
 Return new WireMail instance populated with subject
 
-@param string $subject
+## Arguments
 
-@return WireMail
+- string $subject
 
-@since 3.0.113
+## Return value
+
+WireMail
+
+## Meta
+
+- @since 3.0.113

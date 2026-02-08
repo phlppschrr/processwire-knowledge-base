@@ -1,19 +1,21 @@
-# WireHooks::addPathHook()
+# $wireHooks->addPathHook(Wire $object, $path, $toObject, $toMethod, $options = array()): string
 
 Source: `wire/core/WireHooks.php`
 
 Add a hook that handles a request path
 
-@param Wire $object
+## Arguments
 
-@param string $path
+- Wire $object
+- string $path
+- Wire|null|callable $toObject
+- string $toMethod
+- array $options
 
-@param Wire|null|callable $toObject
+## Return value
 
-@param string $toMethod
+string
 
-@param array $options
+## Throws
 
-@return string
-
-@throws WireException
+- WireException

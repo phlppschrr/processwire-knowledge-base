@@ -1,9 +1,13 @@
-# SystemUpdate17::update()
+# $systemUpdate17->update(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdate17.php`
 
 Apply the update
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

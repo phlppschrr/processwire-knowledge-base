@@ -1,4 +1,4 @@
-# WireCache::deleteFor()
+# $wireCache->deleteFor($ns, $name = ''): bool
 
 Source: `wire/core/WireCache.php`
 
@@ -12,8 +12,11 @@ $cache->deleteFor("my-namespace");
 $cache->deleteFor("my-namespace", "my-cache-name");
 ~~~~~
 
-@param string $ns Namespace of cache.
+## Arguments
 
-@param string $name Name of cache. If none specified, all for namespace are deleted.
+- string $ns Namespace of cache.
+- string $name Name of cache. If none specified, all for namespace are deleted.
 
-@return bool True on success, false on failure
+## Return value
+
+bool True on success, false on failure

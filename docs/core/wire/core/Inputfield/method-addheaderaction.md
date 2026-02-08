@@ -1,4 +1,4 @@
-# Inputfield::addHeaderAction()
+# $inputfield->addHeaderAction(array $settings = array()): array
 
 Source: `wire/core/Inputfield.php`
 
@@ -66,8 +66,14 @@ Settings for dropdown menu actions (3.0.241+)
     - NOTE 2: To use `callback` or `active` as functions, you must define your menu in JS instead.
     - NOTE 3: For examples see the addHeaderAction() method in /wire/templates-admin/scripts/inputfields.js
 
-@param array $settings Specify array containing the appropriate settings above.
+## Arguments
 
-@return array Returns all currently added actions.
+- array $settings Specify array containing the appropriate settings above.
 
-@since 3.0.240
+## Return value
+
+array Returns all currently added actions.
+
+## Meta
+
+- @since 3.0.240

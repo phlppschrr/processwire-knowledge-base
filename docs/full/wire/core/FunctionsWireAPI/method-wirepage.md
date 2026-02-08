@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wirePage()
+# $functionsWireAPI->wirePage($key = '', $value = null): Page|mixed
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -12,8 +12,11 @@ $headline = page('headline|title'); // Get headline or title
 page('headline', 'Setting headline value'); // Set headline
 ~~~~
 
-@param string $key Optional property to get or set
+## Arguments
 
-@param null $value Optional value to set
+- string $key Optional property to get or set
+- null $value Optional value to set
 
-@return Page|mixed
+## Return value
+
+Page|mixed

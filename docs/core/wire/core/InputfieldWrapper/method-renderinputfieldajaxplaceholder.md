@@ -1,11 +1,14 @@
-# InputfieldWrapper::renderInputfieldAjaxPlaceholder()
+# $inputfieldWrapper->renderInputfieldAjaxPlaceholder(Inputfield $inputfield, $renderValueMode): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Render a placeholder for an ajax-loaded Inputfield
 
-@param Inputfield $inputfield
+## Arguments
 
-@param bool $renderValueMode
+- Inputfield $inputfield
+- bool $renderValueMode
 
-@return string
+## Return value
+
+string

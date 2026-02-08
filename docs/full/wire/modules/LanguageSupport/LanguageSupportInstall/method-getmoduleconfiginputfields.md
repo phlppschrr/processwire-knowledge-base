@@ -1,5 +1,8 @@
-# LanguageSupportInstall::getModuleConfigInputfields()
+# $languageSupportInstall->getModuleConfigInputfields(): InputfieldWrapper
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 
-@return InputfieldWrapper
+
+## Return value
+
+InputfieldWrapper

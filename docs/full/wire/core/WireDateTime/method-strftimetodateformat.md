@@ -1,11 +1,17 @@
-# WireDateTime::strftimeToDateFormat()
+# $wireDateTime->strftimeToDateFormat($format): string
 
 Source: `wire/core/WireDateTime.php`
 
 Convert strftime() format to date() format
 
-@param string $format
+## Arguments
 
-@return string
+- string $format
 
-@since 3.0.197
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.197

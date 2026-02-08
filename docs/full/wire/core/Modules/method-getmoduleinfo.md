@@ -1,4 +1,4 @@
-# Modules::getModuleInfo()
+# $modules->getModuleInfo($class, array $options = array()): array
 
 Source: `wire/core/Modules.php`
 
@@ -53,23 +53,19 @@ $moduleInfo = $modules->getModuleInfo('InputfieldCKEditor');
 $moduleInfo = $modules->getModuleInfoVerbose('MarkupAdminDataTable');
 ~~~~~
 
-@param string|Module|int $class Specify one of the following:
- - Module object instance
- - Module class name (string)
- - Module ID (int)
- - To get info for ALL modules, specify `*` or `all`.
- - To get system information, specify `ProcessWire` or `PHP`.
- - To get a blank module info template, specify `info`.
+## Arguments
 
-@param array $options Optional options to modify behavior of what gets returned
- - `verbose` (bool): Makes the info also include verbose properties, which are otherwise blank. (default=false)
- - `minify` (bool): Remove non-applicable and properties that match defaults? (default=false, or true when getting `all`)
- - `noCache` (bool): prevents use of cache to retrieve the module info. (default=false)
+- string|Module|int $class Specify one of the following: - Module object instance - Module class name (string) - Module ID (int) - To get info for ALL modules, specify `*` or `all`. - To get system information, specify `ProcessWire` or `PHP`. - To get a blank module info template, specify `info`.
+- array $options Optional options to modify behavior of what gets returned - `verbose` (bool): Makes the info also include verbose properties, which are otherwise blank. (default=false) - `minify` (bool): Remove non-applicable and properties that match defaults? (default=false, or true when getting `all`) - `noCache` (bool): prevents use of cache to retrieve the module info. (default=false)
 
-@return array Associative array of module information.
- - On error, an `error` index is also populated with an error message.
- - When requesting a module that does not exist its `id` value will be `0` and its `name` will be blank.
+## Return value
 
-@see Modules::getModuleInfoVerbose()
+array Associative array of module information. - On error, an `error` index is also populated with an error message. - When requesting a module that does not exist its `id` value will be `0` and its `name` will be blank.
 
-@todo move all getModuleInfo methods to their own ModuleInfo class and break this method down further.
+## See also
+
+- [Modules::getModuleInfoVerbose()](method-getmoduleinfoverbose.md)
+
+## Meta
+
+- @todo move all getModuleInfo methods to their own ModuleInfo class and break this method down further.

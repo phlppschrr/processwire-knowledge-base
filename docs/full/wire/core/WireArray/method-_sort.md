@@ -1,4 +1,4 @@
-# WireArray::_sort()
+# $wireArray->_sort($properties, $numNeeded = null): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -10,8 +10,11 @@ $properties can be given as a sortByField string, i.e. "name, datestamp" OR as a
 You may also specify the properties as "property.subproperty", where property resolves to a Wire derived object,
 and subproperty resolves to a property within that object.
 
-@param string|array $properties Field names to sort by (comma separated string or an array). Prepend or append a minus "-" to reverse the sort (per field).
+## Arguments
 
-@param int $numNeeded *Internal* amount of rows that need to be sorted (optimization used by filterData)
+- string|array $properties Field names to sort by (comma separated string or an array). Prepend or append a minus "-" to reverse the sort (per field).
+- int $numNeeded *Internal* amount of rows that need to be sorted (optimization used by filterData)
 
-@return $this reference to current instance.
+## Return value
+
+$this reference to current instance.

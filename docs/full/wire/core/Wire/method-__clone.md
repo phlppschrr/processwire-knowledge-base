@@ -1,4 +1,4 @@
-# Wire::__clone()
+# $wire->__clone()
 
 Source: `wire/core/Wire.php`
 

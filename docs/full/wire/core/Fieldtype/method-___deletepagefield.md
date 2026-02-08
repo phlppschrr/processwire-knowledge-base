@@ -1,4 +1,4 @@
-# Fieldtype::___deletePageField()
+# $fieldtype->___deletePageField(Page $page, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -6,11 +6,15 @@ Delete the given Field from the given Page.
 
 Must delete entries from field's database table that belong to the Page.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field Field object
 
-@param Field $field Field object
+## Return value
 
-@return bool True on success, false on DB delete failure.
+bool True on success, false on DB delete failure.
 
-@throws WireException
+## Throws
+
+- WireException

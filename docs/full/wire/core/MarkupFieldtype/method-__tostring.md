@@ -1,7 +1,9 @@
-# MarkupFieldtype::__toString()
+# $markupFieldtype->__toString(): string
 
 Source: `wire/core/MarkupFieldtype.php`
 
 The string value of a MarkupFieldtype is always the fully rendered field
 
-@return string
+## Return value
+
+string

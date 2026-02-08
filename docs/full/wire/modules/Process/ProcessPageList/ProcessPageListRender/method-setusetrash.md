@@ -1,7 +1,9 @@
-# ProcessPageListRender::setUseTrash()
+# $processPageListRender->setUseTrash($useTrash)
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Set whether to use trash
 
-@param bool $useTrash
+## Arguments
+
+- bool $useTrash

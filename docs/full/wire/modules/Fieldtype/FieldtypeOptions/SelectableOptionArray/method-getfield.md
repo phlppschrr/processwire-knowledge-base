@@ -1,7 +1,9 @@
-# SelectableOptionArray::getField()
+# $selectableOptionArray->getField(): null|Field
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Returns Field object these options are for
 
-@return null|Field
+## Return value
+
+null|Field

@@ -1,9 +1,13 @@
-# WireMatchable::matches()
+# $wireMatchable->matches($s): bool
 
 Source: `wire/core/Interfaces.php`
 
 Does this object match the given Selectors object or string?
 
-@param Selectors|string $s
+## Arguments
 
-@return bool
+- Selectors|string $s
+
+## Return value
+
+bool

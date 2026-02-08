@@ -1,12 +1,14 @@
-# PagesExportImport::exportJSON()
+# $pagesExportImport->exportJSON(PageArray $items, array $options = array()): string
 
 Source: `wire/core/PagesExportImport.php`
 
 Export a PageArray to JSON string
 
+## Arguments
 
-@param PageArray $items
+- PageArray $items
+- array $options
 
-@param array $options
+## Return value
 
-@return string JSON string of pages
+string JSON string of pages

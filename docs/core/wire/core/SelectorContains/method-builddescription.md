@@ -1,9 +1,13 @@
-# SelectorContains::buildDescription()
+# SelectorContains::buildDescription($keys): string
 
 Source: `wire/core/Selector.php`
 
 Build description from predefined keys for SelectorContains* classes
 
-@param array|string $keys
+## Arguments
 
-@return string
+- array|string $keys
+
+## Return value
+
+string

@@ -1,12 +1,17 @@
-# Template::setFieldgroup()
+# $template->setFieldgroup(Fieldgroup $fieldgroup): $this
 
 Source: `wire/core/Template.php`
 
 Set this Template's Fieldgroup
 
+## Arguments
 
-@param Fieldgroup $fieldgroup
+- Fieldgroup $fieldgroup
 
-@return $this
+## Return value
 
-@throws WireException
+$this
+
+## Throws
+
+- WireException

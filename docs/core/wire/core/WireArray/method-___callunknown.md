@@ -1,4 +1,4 @@
-# WireArray::___callUnknown()
+# $wireArray->___callUnknown($method, $arguments): null|mixed
 
 Source: `wire/core/WireArray.php`
 
@@ -31,11 +31,15 @@ $titlesArray = $items->title();
 $titlesString = $items->title("\n");
 ~~~~~
 
+## Arguments
 
-@param string $method Requested method name
+- string $method Requested method name
+- array $arguments Arguments provided to the method
 
-@param array $arguments Arguments provided to the method
+## Return value
 
-@return null|mixed
+null|mixed
 
-@throws WireException
+## Throws
+
+- WireException

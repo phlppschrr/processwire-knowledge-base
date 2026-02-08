@@ -1,4 +1,4 @@
-# Pageimage::focus()
+# $pageimage->focus($top = null, $left = null, $zoom = null): array|bool|Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -14,24 +14,12 @@ unsetting focus, or getting focus in different ways, described in arguments belo
 
 A zoom argument/property is also present here for future use, but not currently supported.
 
+## Arguments
 
-@param null|float|int|array|false $top Omit to get focus array, or specify one of the following:
-  - GET: Omit all arguments to get focus array (default behavior).
-  - GET: Specify boolean TRUE to return TRUE if focus data is present or FALSE if not.
-  - GET: Specify integer 1 to make this method return pixel dimensions rather than percentages.
-  - SET: Specify both $top and $left arguments to set (values assumed to be percentages).
-  - SET: Specify array containing "top" and "left" indexes to set (percentages).
-  - SET: Specify array where index 0 is top and index 1 is left (percentages).
-  - SET: Specify string in the format "top left", i.e. "25 70" or "top left zoom", i.e. "25 70 30" (percentages).
-  - SET: Specify CSV key=value string in the format "top=25%, left=70%, zoom=30%" in any order
-  - UNSET: Specify boolean false to remove any focus values.
+- null|float|int|array|false $top Omit to get focus array, or specify one of the following: - GET: Omit all arguments to get focus array (default behavior). - GET: Specify boolean TRUE to return TRUE if focus data is present or FALSE if not. - GET: Specify integer 1 to make this method return pixel dimensions rather than percentages. - SET: Specify both $top and $left arguments to set (values assumed to be percentages). - SET: Specify array containing "top" and "left" indexes to set (percentages). - SET: Specify array where index 0 is top and index 1 is left (percentages). - SET: Specify string in the format "top left", i.e. "25 70" or "top left zoom", i.e. "25 70 30" (percentages). - SET: Specify CSV key=value string in the format "top=25%, left=70%, zoom=30%" in any order - UNSET: Specify boolean false to remove any focus values.
+- null|float|int $left Set left value (when $top value is float|int) - This argument is only used when setting focus and should be omitted otherwise.
+- null|int $zoom Zoom percent (not currently supported)
 
-@param null|float|int $left Set left value (when $top value is float|int)
-  - This argument is only used when setting focus and should be omitted otherwise.
+## Return value
 
-@param null|int $zoom Zoom percent (not currently supported)
-
-@return array|bool|Pageimage Returns one of the following:
-  - When getting returns array containing top, left and default properties.
-  - When TRUE was specified for the $top argument, it returns either TRUE (has focus) or FALSE (does not have).
-  - When setting or unsetting returns $this.
+array|bool|Pageimage Returns one of the following: - When getting returns array containing top, left and default properties. - When TRUE was specified for the $top argument, it returns either TRUE (has focus) or FALSE (does not have). - When setting or unsetting returns $this.

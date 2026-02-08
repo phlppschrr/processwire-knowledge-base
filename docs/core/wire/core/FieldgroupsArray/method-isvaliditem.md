@@ -1,4 +1,4 @@
-# FieldgroupsArray::isValidItem()
+# $fieldgroupsArray->isValidItem($item)
 
 Source: `wire/core/FieldgroupsArray.php`
 

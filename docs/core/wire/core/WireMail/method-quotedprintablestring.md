@@ -1,4 +1,4 @@
-# WireMail::quotedPrintableString()
+# $wireMail->quotedPrintableString($text): string
 
 Source: `wire/core/WireMail.php`
 
@@ -7,7 +7,10 @@ Return the text quoted-printable encoded
 Uses short notation for charset and encoding suitable for email headers
 as laid out in rfc2047.
 
+## Arguments
 
-@param string $text
+- string $text
 
-@return string
+## Return value
+
+string

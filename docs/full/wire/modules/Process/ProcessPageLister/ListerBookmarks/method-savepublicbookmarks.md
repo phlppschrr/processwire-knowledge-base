@@ -1,9 +1,13 @@
-# ListerBookmarks::savePublicBookmarks()
+# $listerBookmarks->savePublicBookmarks(array $bookmarks): bool
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Save public bookmarks (to module config)
 
-@param array $bookmarks
+## Arguments
 
-@return bool
+- array $bookmarks
+
+## Return value
+
+bool

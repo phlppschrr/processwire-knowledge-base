@@ -1,4 +1,4 @@
-# Functions::wireClassNamespace()
+# $functions->wireClassNamespace($className, $withClass = false, $strict = false): string|array
 
 Source: `wire/core/Functions.php`
 
@@ -24,18 +24,16 @@ if(is_array($val)) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|object $className
+- string|object $className
+- bool $withClass Include class name in returned namespace? (default=false)
+- bool $strict Return array of namespaces if multiple match? (default=false)
 
-@param bool $withClass Include class name in returned namespace? (default=false)
+## Return value
 
-@param bool $strict Return array of namespaces if multiple match? (default=false)
+string|array Returns one of the following: - String of `\Namespace\` (leading+trailing backslashes) if namespace found. - String of `\` if class in root namespace. - Blank string if unable to find namespace for class. - Array of namespaces only if $strict option is true AND multiple namespaces were found for class. - If the $withClass option is true, then return value(s) have class, i.e. `\Namespace\ClassName`.
 
-@return string|array Returns one of the following:
- - String of `\Namespace\` (leading+trailing backslashes) if namespace found.
- - String of `\` if class in root namespace.
- - Blank string if unable to find namespace for class.
- - Array of namespaces only if $strict option is true AND multiple namespaces were found for class.
- - If the $withClass option is true, then return value(s) have class, i.e. `\Namespace\ClassName`.
+## Meta
 
-@since 3.0.150
+- @since 3.0.150

@@ -1,11 +1,17 @@
-# Comment::removeMeta()
+# $comment->removeMeta($key): self
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Remove given meta data property or '*' to remove all
 
-@param string $key
+## Arguments
 
-@return self
+- string $key
 
-@since 3.0.203
+## Return value
+
+self
+
+## Meta
+
+- @since 3.0.203

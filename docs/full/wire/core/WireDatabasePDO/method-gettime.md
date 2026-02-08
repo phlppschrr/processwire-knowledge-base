@@ -1,12 +1,17 @@
-# WireDatabasePDO::getTime()
+# $wireDatabasePDO->getTime($getTimestamp = false): string|int
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Get current date/time ISO-8601 string or UNIX timestamp according to database
 
+## Arguments
 
-@param bool $getTimestamp Get unix timestamp rather than ISO-8601 string? (default=false)
+- bool $getTimestamp Get unix timestamp rather than ISO-8601 string? (default=false)
 
-@return string|int
+## Return value
 
-@since 3.0.183
+string|int
+
+## Meta
+
+- @since 3.0.183

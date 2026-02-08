@@ -1,4 +1,4 @@
-# Page::trash()
+# $page->trash(): bool
 
 Source: `wire/core/Page.php`
 
@@ -12,7 +12,10 @@ $item = $pages->get('/some-page/');
 $item->trash();
 ~~~~~
 
+## Return value
 
-@return bool True on success, false on failure
+bool True on success, false on failure
 
-@throws WireException
+## Throws
+
+- WireException

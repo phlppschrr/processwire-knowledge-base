@@ -1,4 +1,4 @@
-# HookEvent::argumentsByName()
+# $hookEvent->argumentsByName($n = ''): mixed|array
 
 Source: `wire/core/HookEvent.php`
 
@@ -14,6 +14,10 @@ $arguments = $event->argumentsByName();
 $page = $event->argumentsByName('page');
 ~~~~~
 
-@param string $n Optional name of argument value to return. If not specified, array of all argument values returned.
+## Arguments
 
-@return mixed|array Depending on whether you specify $n
+- string $n Optional name of argument value to return. If not specified, array of all argument values returned.
+
+## Return value
+
+mixed|array Depending on whether you specify $n

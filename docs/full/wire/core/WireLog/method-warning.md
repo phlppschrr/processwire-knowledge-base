@@ -1,4 +1,4 @@
-# WireLog::warning()
+# $wireLog->warning($text, $flags = 0): Wire|WireLog
 
 Source: `wire/core/WireLog.php`
 
@@ -9,8 +9,11 @@ Record a warning message in the warnings log (warnings.txt)
 $log->warning("This is a warning");
 ~~~~~
 
-@param string $text Text to save in the log
+## Arguments
 
-@param int|bool $flags Specify boolean true to also display the warning interactively (admin only).
+- string $text Text to save in the log
+- int|bool $flags Specify boolean true to also display the warning interactively (admin only).
 
-@return Wire|WireLog
+## Return value
+
+Wire|WireLog

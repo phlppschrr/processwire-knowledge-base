@@ -1,13 +1,15 @@
-# PagesVersionsFiles::restorePageFieldVersionFiles()
+# $pagesVersionsFiles->restorePageFieldVersionFiles(Page $page, Field $field, $version): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Restore files for given field from version into live $page
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- int $version
 
-@param int $version
+## Return value
 
-@return int
+int

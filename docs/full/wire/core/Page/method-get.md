@@ -1,4 +1,4 @@
-# Page::get()
+# $page->get($key): mixed
 
 Source: `wire/core/Page.php`
 
@@ -53,8 +53,14 @@ $titles = $page->get('categories[title%=design].title'); // array of strings
 $title = $page->get('categories[title%=design].title[0]'); // string or null
 ~~~~~
 
-@param string $key Name of property, format string or selector, per the details above.
+## Arguments
 
-@return mixed Value of found property, or NULL if not found.
+- string $key Name of property, format string or selector, per the details above.
 
-@see __get()
+## Return value
+
+mixed Value of found property, or NULL if not found.
+
+## See also
+
+- __get()

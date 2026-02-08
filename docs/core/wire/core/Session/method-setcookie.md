@@ -1,25 +1,24 @@
-# Session::setCookie()
+# $session->setCookie($name, $value, $expires = 0, $path = '/', $domain = null, $secure = false, $httponly = false, $samesite = 'Lax'): bool
 
 Source: `wire/core/Session.php`
 
 Add a SetCookie response header
 
-@param string $name
+## Arguments
 
-@param string|null|false $value
+- string $name
+- string|null|false $value
+- int $expires
+- string $path
+- string|null $domain
+- bool $secure
+- bool $httponly
+- string $samesite One of 'Strict', 'Lax', 'None'
 
-@param int $expires
+## Return value
 
-@param string $path
+bool
 
-@param string|null $domain
+## Meta
 
-@param bool $secure
-
-@param bool $httponly
-
-@param string $samesite One of 'Strict', 'Lax', 'None'
-
-@return bool
-
-@since 3.0.178
+- @since 3.0.178

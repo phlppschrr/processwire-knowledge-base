@@ -1,15 +1,16 @@
-# Wire::_notice()
+# $wire->_notice($text, $flags, $name, $class): $this
 
 Source: `wire/core/Wire.php`
 
 Record a Notice, internal use (contains the code for message, warning and error methods)
 
-@param string|array|Wire $text Title of notice
+## Arguments
 
-@param int|string $flags Flags bitmask or space separated string of flag names
+- string|array|Wire $text Title of notice
+- int|string $flags Flags bitmask or space separated string of flag names
+- string $name Name of container
+- string $class Name of Notice class
 
-@param string $name Name of container
+## Return value
 
-@param string $class Name of Notice class
-
-@return $this
+$this

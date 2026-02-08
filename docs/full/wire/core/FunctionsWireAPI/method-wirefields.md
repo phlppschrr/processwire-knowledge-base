@@ -1,9 +1,13 @@
-# FunctionsWireAPI::wireFields()
+# $functionsWireAPI->wireFields($name = ''): Fields|Field|null
 
 Source: `wire/core/FunctionsWireAPI.php`
 
 Access the $fields API variable as a function
 
-@param string $name Optional field name to retrieve
+## Arguments
 
-@return Fields|Field|null
+- string $name Optional field name to retrieve
+
+## Return value
+
+Fields|Field|null

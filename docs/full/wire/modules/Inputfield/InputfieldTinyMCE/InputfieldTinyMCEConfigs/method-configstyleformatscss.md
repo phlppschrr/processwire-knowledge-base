@@ -1,5 +1,8 @@
-# InputfieldTinyMCEConfigs::configStyleFormatsCSS()
+# $inputfieldTinyMCEConfigs->configStyleFormatsCSS(): InputfieldTextarea
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
-@return InputfieldTextarea
+
+## Return value
+
+InputfieldTextarea

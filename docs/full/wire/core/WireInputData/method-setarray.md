@@ -1,9 +1,13 @@
-# WireInputData::setArray()
+# $wireInputData->setArray(array $input): $this
 
 Source: `wire/core/WireInputData.php`
 
 Set associative array of variables to store
 
-@param array $input
+## Arguments
 
-@return $this
+- array $input
+
+## Return value
+
+$this

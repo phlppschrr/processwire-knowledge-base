@@ -1,4 +1,4 @@
-# Pages::___trash()
+# $pages->___trash(Page $page, $save = true): bool
 
 Source: `wire/core/Pages.php`
 
@@ -13,13 +13,21 @@ $product = $pages->get('/products/foo-bar-widget/');
 $pages->trash($product);
 ~~~~~
 
+## Arguments
 
-@param Page $page Page to trash
+- Page $page Page to trash
+- bool $save Set to false if you will perform your own save() call afterwards to complete the operation. Omit otherwise. Primarily for internal use.
 
-@param bool $save Set to false if you will perform your own save() call afterwards to complete the operation. Omit otherwise. Primarily for internal use.
+## Return value
 
-@return bool Returns true on success, false on failure.
+bool Returns true on success, false on failure.
 
-@throws WireException
+## Throws
 
-@see Pages::restore(), Pages::emptyTrash(), Pages::delete()
+- WireException
+
+## See also
+
+- [Pages::restore()](method-___restore.md)
+- [Pages::emptyTrash()](method-___emptytrash.md)
+- [Pages::delete()](method-___delete.md)

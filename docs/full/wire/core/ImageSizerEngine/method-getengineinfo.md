@@ -1,9 +1,13 @@
-# ImageSizerEngine::getEngineInfo()
+# $imageSizerEngine->getEngineInfo(): array
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Get array of information about this engine
 
-@return array
+## Return value
 
-@since 3.0.138
+array
+
+## Meta
+
+- @since 3.0.138

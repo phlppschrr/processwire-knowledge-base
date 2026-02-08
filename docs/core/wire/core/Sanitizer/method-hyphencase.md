@@ -1,4 +1,4 @@
-# Sanitizer::hyphenCase()
+# $sanitizer->hyphenCase($value, array $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,12 +6,11 @@ Convert string to be all hyphenated-lowercase (aka kabab-case, hyphen-case, dash
 
 For example, "Hello World" or "helloWorld" becomes "hello-world".
 
+## Arguments
 
-@param string $value
+- string $value
+- array $options - `hyphen` (string): Character to use as the hyphen (default='-') - `allow` (string): Characters to allow or range of characters to allow, for placement in regex (default='a-z0-9'). - `allowUnderscore` (bool): Allow underscores? (default=false)
 
-@param array $options
- - `hyphen` (string): Character to use as the hyphen (default='-')
- - `allow` (string): Characters to allow or range of characters to allow, for placement in regex (default='a-z0-9').
- - `allowUnderscore` (bool): Allow underscores? (default=false)
+## Return value
 
-@return string
+string

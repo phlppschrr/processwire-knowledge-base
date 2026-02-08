@@ -1,9 +1,13 @@
-# FileCompilerModule::compileMarkup()
+# $fileCompilerModule->compileMarkup($data): string
 
 Source: `wire/core/FileCompilerModule.php`
 
 Compile a section of markup
 
-@param string $data
+## Arguments
 
-@return string
+- string $data
+
+## Return value
+
+string

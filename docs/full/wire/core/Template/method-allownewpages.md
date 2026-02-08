@@ -1,10 +1,13 @@
-# Template::allowNewPages()
+# $template->allowNewPages(): bool
 
 Source: `wire/core/Template.php`
 
 Allow new pages that use this template?
 
+## Return value
 
-@return bool
+bool
 
-@since 3.0.153
+## Meta
+
+- @since 3.0.153

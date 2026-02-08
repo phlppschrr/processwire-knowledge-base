@@ -1,4 +1,4 @@
-# PagesVersions::getPageVersions()
+# $pagesVersions->getPageVersions(Page $page, array $options = []): PageVersionInfo[]|Page[]
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -12,17 +12,15 @@ foreach($versions as $p) {
 }
 ~~~~~
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $options - `getInfo` (bool): Specify true to instead get PageVersionInfo objects (default=false) - `sort` (string): Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created') - `version` (array): Limit to this version number, for internal use (default=0)
 
-@param array $options
- - `getInfo` (bool): Specify true to instead get PageVersionInfo objects (default=false)
- - `sort` (string): Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created')
- - `version` (array): Limit to this version number, for internal use (default=0)
+## Return value
 
-@return PageVersionInfo[]|Page[]
- - Returns Array of `Page` objects or array of `PageVersionInfo` objects if `getInfo` requested.
- - When returning pages, version info is in `$page->_version` value of each page,
-   which is a `PageVersionInfo` object.
+PageVersionInfo[]|Page[] - Returns Array of `Page` objects or array of `PageVersionInfo` objects if `getInfo` requested. - When returning pages, version info is in `$page->_version` value of each page, which is a `PageVersionInfo` object.
 
-@throws WireException
+## Throws
+
+- WireException

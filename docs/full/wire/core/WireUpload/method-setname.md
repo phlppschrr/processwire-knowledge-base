@@ -1,9 +1,13 @@
-# WireUpload::setName()
+# $wireUpload->setName($name): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set the upload field name (same as that provided to the constructor)
 
-@param string $name
+## Arguments
 
-@return $this
+- string $name
+
+## Return value
+
+$this

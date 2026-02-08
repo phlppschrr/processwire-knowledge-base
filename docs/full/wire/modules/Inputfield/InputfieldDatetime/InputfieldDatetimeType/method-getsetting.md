@@ -1,9 +1,13 @@
-# InputfieldDatetimeType::getSetting()
+# $inputfieldDatetimeType->getSetting($key): mixed
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 Get setting
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

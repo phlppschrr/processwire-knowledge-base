@@ -1,15 +1,19 @@
-# ImageSizer::newDefaultImageSizerEngine()
+# $imageSizer->newDefaultImageSizerEngine($filename = '', $options = array(), $inspectionResult = null): ImageSizerEngine|null
 
 Source: `wire/core/ImageSizer.php`
 
 Get the default/fallback ImageSizer engine
 
-@param string $filename
+## Arguments
 
-@param array $options
+- string $filename
+- array $options
+- null|array $inspectionResult
 
-@param null|array $inspectionResult
+## Return value
 
-@return ImageSizerEngine|null
+ImageSizerEngine|null
 
-@throws WireException
+## Throws
+
+- WireException

@@ -1,4 +1,4 @@
-# Page::hasChildren()
+# $page->hasChildren($selector = true): int
 
 Source: `wire/core/Page.php`
 
@@ -17,11 +17,10 @@ if($page->hasChildren()) {
 }
 ~~~~~
 
+## Arguments
 
-@param bool|string|array $selector
-- When not specified, result is quantity of visible children (excludes unpublished, hidden, no-access, etc.)
-- When a string or array, a selector is assumed and quantity will be counted based on selector.
-- When boolean true, number includes only visible children (this is the default behavior, so no need to specify this value).
-- When boolean false, number includes all children without conditions, including unpublished, hidden, no-access, etc.
+- bool|string|array $selector - When not specified, result is quantity of visible children (excludes unpublished, hidden, no-access, etc.) - When a string or array, a selector is assumed and quantity will be counted based on selector. - When boolean true, number includes only visible children (this is the default behavior, so no need to specify this value). - When boolean false, number includes all children without conditions, including unpublished, hidden, no-access, etc.
 
-@return int Number of children
+## Return value
+
+int Number of children

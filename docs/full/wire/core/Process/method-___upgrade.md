@@ -1,4 +1,4 @@
-# Process::___upgrade()
+# $process->___upgrade($fromVersion, $toVersion)
 
 Source: `wire/core/Process.php`
 
@@ -6,9 +6,11 @@ Called when module version changes
 
 See the `Module` interface and the `upgrade` method there for more details.
 
+## Arguments
 
-@param int|string $fromVersion Previous version
+- int|string $fromVersion Previous version
+- int|string $toVersion New version
 
-@param int|string $toVersion New version
+## Throws
 
-@throws WireException if upgrade fails
+- WireException if upgrade fails

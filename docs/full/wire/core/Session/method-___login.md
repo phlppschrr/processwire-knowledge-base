@@ -1,4 +1,4 @@
-# Session::___login()
+# $session->___login($name, $pass, $force = false): User|null
 
 Source: `wire/core/Session.php`
 
@@ -15,14 +15,16 @@ if($u) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|User $name May be user name or User object.
+- string|User $name May be user name or User object.
+- string $pass Raw, non-hashed password.
+- bool $force Specify boolean true to login user without requiring a password ($pass argument can be blank, or anything). You can also use the `$session->forceLogin($user)` method to force a login without a password.
 
-@param string $pass Raw, non-hashed password.
+## Return value
 
-@param bool $force Specify boolean true to login user without requiring a password ($pass argument can be blank, or anything).
-	You can also use the `$session->forceLogin($user)` method to force a login without a password.
+User|null Return the $user if the login was successful or null if not.
 
-@return User|null Return the $user if the login was successful or null if not.
+## Throws
 
-@throws WireException
+- WireException

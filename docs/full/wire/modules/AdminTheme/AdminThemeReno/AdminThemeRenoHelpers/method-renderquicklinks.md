@@ -1,15 +1,16 @@
-# AdminThemeRenoHelpers::renderQuicklinks()
+# $adminThemeRenoHelpers->renderQuicklinks(Page $page, array $items, $title, $json = ''): string
 
 Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
 Render quicklinks for templates/fields. Designed to be called by renderSideNav()
 
-@param Page $page
+## Arguments
 
-@param array $items
+- Page $page
+- array $items
+- string $title
+- string $json
 
-@param string $title
+## Return value
 
-@param string $json
-
-@return string
+string

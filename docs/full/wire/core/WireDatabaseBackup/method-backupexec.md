@@ -1,13 +1,18 @@
-# WireDatabaseBackup::backupExec()
+# $wireDatabaseBackup->backupExec($file, array $options): string|bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Create a mysql dump file using exec(mysqldump)
 
-@param string $file Path + filename to create
+## Arguments
 
-@param array $options
+- string $file Path + filename to create
+- array $options
 
-@return string|bool Returns the created file on success or false on error
+## Return value
 
-@todo add backupStartFile/backupEndFile support
+string|bool Returns the created file on success or false on error
+
+## Meta
+
+- @todo add backupStartFile/backupEndFile support

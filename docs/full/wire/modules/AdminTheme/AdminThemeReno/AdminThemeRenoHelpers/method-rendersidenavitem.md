@@ -1,4 +1,4 @@
-# AdminThemeRenoHelpers::renderSideNavItem()
+# $adminThemeRenoHelpers->renderSideNavItem(Page $p): string
 
 Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
@@ -6,6 +6,10 @@ Render a side navigation items
 
 This function designed primarily to be called by the renderSideNavItems() function.
 
-@param Page $p
+## Arguments
 
-@return string
+- Page $p
+
+## Return value
+
+string

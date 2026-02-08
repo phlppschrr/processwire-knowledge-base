@@ -1,9 +1,13 @@
-# Pageimages::getFile()
+# $pageimages->getFile($name): null|Pagefile|Pageimage
 
 Source: `wire/core/Pageimages.php`
 
 Does this field have the given file name? If so, return it, if not return null.
 
-@param string $name Basename is assumed
+## Arguments
 
-@return null|Pagefile|Pageimage Returns Pagefile object if found, null if not
+- string $name Basename is assumed
+
+## Return value
+
+null|Pagefile|Pageimage Returns Pagefile object if found, null if not

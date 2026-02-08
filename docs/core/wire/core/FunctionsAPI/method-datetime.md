@@ -1,4 +1,4 @@
-# FunctionsAPI::datetime()
+# $functionsAPI->datetime($format = '', $value = ''): WireDateTime|string|int
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -13,11 +13,15 @@ $str = datetime('Y-m-d');  // shortcut to formatDate method
 $str = datetime('Y-m-d', time()); // shortcut to formatDate method
 ~~~~~
 
+## Arguments
 
-@param string $format Optional date format
+- string $format Optional date format
+- string|int $value Optional date to format
 
-@param string|int $value Optional date to format
+## Return value
 
-@return WireDateTime|string|int
+WireDateTime|string|int
 
-@see WireDateTime
+## See also
+
+- WireDateTime

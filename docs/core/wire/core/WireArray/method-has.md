@@ -1,4 +1,4 @@
-# WireArray::has()
+# $wireArray->has($key): bool
 
 Source: `wire/core/WireArray.php`
 
@@ -23,7 +23,10 @@ if($items->has("something")) {
 }
 ~~~~~
 
+## Arguments
 
-@param int|string|Wire $key Key of item to check or selector.
+- int|string|Wire $key Key of item to check or selector.
 
-@return bool True if the item exists, false if not.
+## Return value
+
+bool True if the item exists, false if not.

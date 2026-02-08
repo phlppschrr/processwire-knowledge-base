@@ -1,9 +1,13 @@
-# ModuleJS::___use()
+# $moduleJS->___use($name): $this
 
 Source: `wire/core/ModuleJS.php`
 
 Use an extra named component
 
-@param $name
+## Arguments
 
-@return $this
+- $name
+
+## Return value
+
+$this

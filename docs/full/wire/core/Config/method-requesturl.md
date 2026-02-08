@@ -1,4 +1,4 @@
-# Config::requestUrl()
+# $config->requestUrl($match = '', $get = ''): string
 
 Source: `wire/core/Config.php`
 
@@ -21,11 +21,15 @@ if($config->requestUrl([ 'foo', 'bar', 'baz' ])) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|array $match Optionally return URL only if some part matches given string(s) (default='')
+- string|array $match Optionally return URL only if some part matches given string(s) (default='')
+- string $get Specify 'path' to get and/or match path, 'query' to get and/or match query string, or omit for URL (default='')
 
-@param string $get Specify 'path' to get and/or match path, 'query' to get and/or match query string, or omit for URL (default='')
+## Return value
 
-@return string Returns URL string or blank string if $match argument used and doesn’t match.
+string Returns URL string or blank string if $match argument used and doesn’t match.
 
-@since 3.0.175
+## Meta
+
+- @since 3.0.175

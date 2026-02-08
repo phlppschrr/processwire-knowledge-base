@@ -1,15 +1,22 @@
-# Users::setAdminThemeByRole()
+# $users->setAdminThemeByRole($adminTheme, Role $role): int
 
 Source: `wire/core/Users.php`
 
 Set admin theme for all users having role
 
-@param AdminTheme|string $adminTheme Admin theme instance or class/module name
+## Arguments
 
-@param Role $role
+- AdminTheme|string $adminTheme Admin theme instance or class/module name
+- Role $role
 
-@return int Number of users set for admin theme
+## Return value
 
-@throws WireException
+int Number of users set for admin theme
 
-@since 3.0.176
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.176

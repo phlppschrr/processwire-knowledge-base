@@ -1,9 +1,13 @@
-# InputfieldTinyMCEFormats::getStyleFormats()
+# $inputfieldTinyMCEFormats->getStyleFormats(array $defaults): array|mixed
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Get style_formats
 
-@param array $defaults
+## Arguments
 
-@return array|mixed
+- array $defaults
+
+## Return value
+
+array|mixed

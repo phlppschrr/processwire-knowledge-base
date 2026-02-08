@@ -1,9 +1,13 @@
-# CommentList::getReplies()
+# $commentList->getReplies($commentID): array
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Get replies to the given comment ID, or 0 for root level comments
 
-@param int|Comment $commentID
+## Arguments
 
-@return array
+- int|Comment $commentID
+
+## Return value
+
+array

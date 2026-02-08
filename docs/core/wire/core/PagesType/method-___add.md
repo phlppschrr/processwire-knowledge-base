@@ -1,4 +1,4 @@
-# PagesType::___add()
+# $pagesType->___add($name): Page|NullPage
 
 Source: `wire/core/PagesType.php`
 
@@ -11,6 +11,10 @@ Hook note:
 If you want to hook this method, please hook the `addReady`, `Pages::add`, or `Pages::addReady` method
 instead, as hooking this method will not hook relevant pages added directly through $pages->add().
 
-@param string $name Name to use for the new page
+## Arguments
 
-@return Page|NullPage
+- string $name Name to use for the new page
+
+## Return value
+
+Page|NullPage

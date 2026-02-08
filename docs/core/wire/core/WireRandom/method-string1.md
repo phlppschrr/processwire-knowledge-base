@@ -1,14 +1,15 @@
-# WireRandom::string1()
+# $wireRandom->string1($length, $allowed, array $options): string
 
 Source: `wire/core/WireRandom.php`
 
 Generate a random string using faster method
 
-@param int $length Required length
+## Arguments
 
-@param string $allowed Characters allowed
+- int $length Required length
+- string $allowed Characters allowed
+- array $options - `noRepeat` (bool): True if two of the same character may not be repeated in sequence.
 
-@param array $options
- - `noRepeat` (bool): True if two of the same character may not be repeated in sequence.
+## Return value
 
-@return string
+string

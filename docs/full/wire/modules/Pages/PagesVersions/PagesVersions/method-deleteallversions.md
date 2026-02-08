@@ -1,10 +1,13 @@
-# PagesVersions::deleteAllVersions()
+# $pagesVersions->deleteAllVersions($areYouSure = false): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Delete all versions across all pages
 
+## Arguments
 
-@param bool $areYouSure Specify true to indicate you are sure you want to do this
+- bool $areYouSure Specify true to indicate you are sure you want to do this
 
-@return int Quantity of versions deleted
+## Return value
+
+int Quantity of versions deleted

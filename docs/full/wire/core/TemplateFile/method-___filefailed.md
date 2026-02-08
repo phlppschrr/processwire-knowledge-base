@@ -1,14 +1,18 @@
-# TemplateFile::___fileFailed()
+# $templateFile->___fileFailed($filename, \Exception $e): bool
 
 Source: `wire/core/TemplateFile.php`
 
 Called when render of specific file failed with Exception
 
+## Arguments
 
-@param string $filename
+- string $filename
+- \Exception $e
 
-@param \Exception $e
+## Return value
 
-@return bool True if Exception $e should be thrown, false if it should be ignored
+bool True if Exception $e should be thrown, false if it should be ignored
 
-@since 3.0.154
+## Meta
+
+- @since 3.0.154

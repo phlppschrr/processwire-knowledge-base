@@ -1,4 +1,4 @@
-# WireTextTools::fixUnclosedTags()
+# $wireTextTools->fixUnclosedTags($str, $remove = true, $options = array()): string
 
 Source: `wire/core/WireTextTools.php`
 
@@ -16,11 +16,12 @@ When the remove option is false, it will attempt to close unclosed tags rather t
 remove them. It doesn't know exactly where they should be closed, so it appends the
 close tags to the end of the string.
 
-@param string $str
+## Arguments
 
-@param bool $remove Remove unclosed tags? If false, it will attempt to close them instead. (default=true)
+- string $str
+- bool $remove Remove unclosed tags? If false, it will attempt to close them instead. (default=true)
+- array $options - `ignoreTags` (array): Tags that can be ignored because they close themselves. (default=per HTML spec)
 
-@param array $options
- - `ignoreTags` (array): Tags that can be ignored because they close themselves. (default=per HTML spec)
+## Return value
 
-@return string
+string

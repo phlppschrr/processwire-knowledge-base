@@ -1,9 +1,10 @@
-# PageFinder::preProcessSubSelector()
+# $pageFinder->preProcessSubSelector(Selector $selector, Selectors $parentSelectors)
 
 Source: `wire/core/PageFinder.php`
 
 Pre-process a Selector that has a [quoted selector] embedded within its value
 
-@param Selector $selector
+## Arguments
 
-@param Selectors $parentSelectors
+- Selector $selector
+- Selectors $parentSelectors

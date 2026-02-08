@@ -1,4 +1,4 @@
-# AdminTheme::__construct()
+# $adminTheme->__construct()
 
 Source: `wire/core/AdminTheme.php`
 

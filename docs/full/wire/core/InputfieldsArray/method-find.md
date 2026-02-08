@@ -1,9 +1,13 @@
-# InputfieldsArray::find()
+# $inputfieldsArray->find($selector): WireArray|InputfieldsArray
 
 Source: `wire/core/InputfieldsArray.php`
 
 Extends the find capability of WireArray to descend into the Inputfield children
 
-@param string $selector
+## Arguments
 
-@return WireArray|InputfieldsArray
+- string $selector
+
+## Return value
+
+WireArray|InputfieldsArray

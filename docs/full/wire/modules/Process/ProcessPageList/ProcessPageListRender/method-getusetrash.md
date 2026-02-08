@@ -1,7 +1,9 @@
-# ProcessPageListRender::getUseTrash()
+# $processPageListRender->getUseTrash(): bool
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get whether or not to use trash
 
-@return bool
+## Return value
+
+bool

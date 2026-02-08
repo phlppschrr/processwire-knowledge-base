@@ -1,4 +1,4 @@
-# PagesNames::pageNameHasConflict()
+# $pagesNames->pageNameHasConflict(Page $page): string|bool
 
 Source: `wire/core/PagesNames.php`
 
@@ -6,11 +6,18 @@ Does given page have a name that has a conflict/collision?
 
 In multi-language environment this applies to default language only.
 
+## Arguments
 
-@param Page $page Page to check
+- Page $page Page to check
 
-@return string|bool Returns string with conflict reason or boolean false if no conflict
+## Return value
 
-@throws WireException If given invalid $options argument
+string|bool Returns string with conflict reason or boolean false if no conflict
 
-@since 3.0.127
+## Throws
+
+- WireException If given invalid $options argument
+
+## Meta
+
+- @since 3.0.127

@@ -1,4 +1,4 @@
-# Sanitizer::arrayVal()
+# $sanitizer->arrayVal($value, $options = array()): array
 
 Source: `wire/core/Sanitizer.php`
 
@@ -8,17 +8,19 @@ This is the same as the `array()` sanitizer except that it does not attempt to c
 delimited/csv strings to arrays. Meaning, a delimited string would simply become an array
 with the first item being that delimited string.
 
+## Arguments
 
-@param mixed $value
+- mixed $value
+- array $options - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) - `sanitizer` (string): Optionally specify sanitizer method name to apply to items (default='') - `keySanitizer` (string): Optionally sanitize associative array keys with this method (default='') Since 3.0.167
 
-@param array $options
-	- `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit)
- - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed)
-	- `sanitizer` (string): Optionally specify sanitizer method name to apply to items (default='')
-	- `keySanitizer` (string): Optionally sanitize associative array keys with this method (default='') Since 3.0.167
+## Return value
 
-@return array
+array
 
-@throws WireException
+## Throws
 
-@since 3.0.165
+- WireException
+
+## Meta
+
+- @since 3.0.165

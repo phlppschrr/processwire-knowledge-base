@@ -1,10 +1,13 @@
-# PagesLoader::isNativeColumn()
+# $pagesLoader->isNativeColumn($columnName): bool
 
 Source: `wire/core/PagesLoader.php`
 
 Is the given column name native to the pages table?
 
+## Arguments
 
-@param $columnName
+- $columnName
 
-@return bool
+## Return value
+
+bool

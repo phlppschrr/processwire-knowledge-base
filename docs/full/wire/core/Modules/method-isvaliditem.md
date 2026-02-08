@@ -1,4 +1,4 @@
-# Modules::isValidItem()
+# $modules->isValidItem($item)
 
 Source: `wire/core/Modules.php`
 

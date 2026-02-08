@@ -1,12 +1,14 @@
-# WireHttp::setAllowSchemes()
+# $wireHttp->setAllowSchemes($schemes, $replace = false): $this
 
 Source: `wire/core/WireHttp.php`
 
 Set schemes WireHttp is allowed to access (default=[http, https])
 
+## Arguments
 
-@param array|string $schemes Array of schemes or space-separated string of schemes
+- array|string $schemes Array of schemes or space-separated string of schemes
+- bool $replace Specify true to replace any existing schemes already allowed (default=false)
 
-@param bool $replace Specify true to replace any existing schemes already allowed (default=false)
+## Return value
 
-@return $this
+$this

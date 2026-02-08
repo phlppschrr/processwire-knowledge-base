@@ -1,9 +1,13 @@
-# InputfieldTinyMCE::___processInput()
+# $inputfieldTinyMCE->___processInput(WireInputData $input): $this
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Process input
 
-@param WireInputData $input
+## Arguments
 
-@return $this
+- WireInputData $input
+
+## Return value
+
+$this

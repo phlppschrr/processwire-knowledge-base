@@ -1,7 +1,9 @@
-# PagesRequest::getRequestPath()
+# $pagesRequest->getRequestPath(): string
 
 Source: `wire/core/PagesRequest.php`
 
 Get request path
 
-@return string
+## Return value
+
+string

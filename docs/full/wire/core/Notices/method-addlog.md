@@ -1,7 +1,9 @@
-# Notices::addLog()
+# $notices->addLog(Notice $item)
 
 Source: `wire/core/Notices.php`
 
 Add Notice to log
 
-@param Notice $item
+## Arguments
+
+- Notice $item

@@ -1,4 +1,4 @@
-# Selectors::init()
+# $selectors->init($selector)
 
 Source: `wire/core/Selectors.php`
 
@@ -9,4 +9,6 @@ $selectors = new Selectors();
 $selectors->init("sale_price|retail_price>100, currency=USD|EUR");
 ~~~~~
 
-@param string|array $selector
+## Arguments
+
+- string|array $selector

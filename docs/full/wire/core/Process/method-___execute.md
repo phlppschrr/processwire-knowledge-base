@@ -1,4 +1,4 @@
-# Process::___execute()
+# $process->___execute(): string|array
 
 Source: `wire/core/Process.php`
 
@@ -13,4 +13,6 @@ This execute() method is called when no URL segments are present. You may have a
 number of execute() methods, i.e. `executeFoo()` would be called for the URL `./foo/`
 and `executeBarBaz()` would be called for the URL `./bar-baz/`.
 
-@return string|array
+## Return value
+
+string|array

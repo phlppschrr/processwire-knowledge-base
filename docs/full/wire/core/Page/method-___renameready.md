@@ -1,4 +1,4 @@
-# Page::___renameReady()
+# $page->___renameReady($oldName, $newName)
 
 Source: `wire/core/Page.php`
 
@@ -12,9 +12,11 @@ $wire->addHook('Page::renameReady', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param string $oldName The old name
+- string $oldName The old name
+- string $newName The new name (read-only)
 
-@param string $newName The new name (read-only)
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

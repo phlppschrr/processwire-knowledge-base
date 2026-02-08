@@ -1,10 +1,13 @@
-# PagesVersions::___allowPageVersions()
+# $pagesVersions->___allowPageVersions(Page $page): bool
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Is given page allowed to have versions?
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return bool
+## Return value
+
+bool

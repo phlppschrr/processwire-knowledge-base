@@ -1,7 +1,9 @@
-# PagesParents::__construct()
+# $pagesParents->__construct(Pages $pages)
 
 Source: `wire/core/PagesParents.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

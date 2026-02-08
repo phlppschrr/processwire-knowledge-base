@@ -1,4 +1,4 @@
-# InputfieldWrapper::getErrors()
+# $inputfieldWrapper->getErrors($clear = false): array
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -6,7 +6,10 @@ Return an array of errors that occurred on any of the children during input proc
 
 Should only be called after `InputfieldWrapper::processInput()`.
 
+## Arguments
 
-@param bool $clear Specify true to clear out the errors (default=false).
+- bool $clear Specify true to clear out the errors (default=false).
 
-@return array Array of error strings
+## Return value
+
+array Array of error strings

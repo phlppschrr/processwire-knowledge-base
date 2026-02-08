@@ -1,13 +1,18 @@
-# WireDataDB::set()
+# $wireDataDB->set($key, $value): self
 
 Source: `wire/core/WireDataDB.php`
 
 Set and save a value for a specific property/name/key
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return self
+## Return value
 
-@throws WireException
+self
+
+## Throws
+
+- WireException

@@ -1,14 +1,21 @@
-# PagesLoader::getNumChildren()
+# $pagesLoader->getNumChildren($page): int
 
 Source: `wire/core/PagesLoader.php`
 
 Load total number of children from DB for given page
 
+## Arguments
 
-@param int|Page $page Page or Page ID
+- int|Page $page Page or Page ID
 
-@return int
+## Return value
 
-@throws WireException
+int
 
-@since 3.0.172
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.172

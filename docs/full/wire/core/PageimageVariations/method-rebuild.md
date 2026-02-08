@@ -1,4 +1,4 @@
-# PageimageVariations::rebuild()
+# $pageimageVariations->rebuild($mode = 0, array $suffix = array(), array $options = array()): array
 
 Source: `wire/core/PageimageVariations.php`
 
@@ -19,14 +19,12 @@ rebuild of the variation may not be exactly what was intended. The issues with o
 arise when the suffix means something about the technical details of the produced image, or when
 rebuilding variations that include crops from an original image that has since changed dimensions or crops.
 
-@param int $mode See the options for $mode argument above (default=0).
+## Arguments
 
-@param array $suffix Optional argument to specify suffixes to include or exclude (according to $mode).
+- int $mode See the options for $mode argument above (default=0).
+- array $suffix Optional argument to specify suffixes to include or exclude (according to $mode).
+- array $options See $options for `Pageimage::size()` for details.
 
-@param array $options See $options for `Pageimage::size()` for details.
+## Return value
 
-@return array Returns an associative array with with the following indexes:
- - `rebuilt` (array): Names of files that were rebuilt.
- - `skipped` (array): Names of files that were skipped.
- - `errors` (array): Names of files that had errors.
- - `reasons` (array): Reasons why files were skipped or had errors, associative array indexed by file name.
+array Returns an associative array with with the following indexes: - `rebuilt` (array): Names of files that were rebuilt. - `skipped` (array): Names of files that were skipped. - `errors` (array): Names of files that had errors. - `reasons` (array): Reasons why files were skipped or had errors, associative array indexed by file name.

@@ -1,9 +1,13 @@
-# DatabaseQuerySelectFulltext::isStopword()
+# $databaseQuerySelectFulltext->isStopword($word): bool
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Is given word a stopword?
 
-@param string $word
+## Arguments
 
-@return bool
+- string $word
+
+## Return value
+
+bool

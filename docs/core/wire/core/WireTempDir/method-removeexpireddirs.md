@@ -1,4 +1,4 @@
-# WireTempDir::removeExpiredDirs()
+# $wireTempDir->removeExpiredDirs($path, $maxAge): bool
 
 Source: `wire/core/WireTempDir.php`
 
@@ -6,8 +6,11 @@ Remove expired directories in the given $path
 
 Also removes $path if it's found that everything in it is expired.
 
-@param string $path
+## Arguments
 
-@param int Max age in seconds
+- string $path
+- int Max age in seconds
 
-@return bool
+## Return value
+
+bool

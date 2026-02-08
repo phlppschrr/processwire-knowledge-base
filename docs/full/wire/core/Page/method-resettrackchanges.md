@@ -1,4 +1,4 @@
-# Page::resetTrackChanges()
+# $page->resetTrackChanges($trackChanges = true): $this
 
 Source: `wire/core/Page.php`
 
@@ -9,9 +9,16 @@ present, but ProcessWire no longer knows they had been changed. Meaning, the cha
 the `$page->isChanged()` and `$page->getChanges()` methods, and the changes might be skipped over if/when
 the page is saved.
 
+## Arguments
 
-@param bool $trackChanges True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
+- bool $trackChanges True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
 
-@return $this
+## Return value
 
-@see Page::isChanged(), Page::getChanges(), Page::trackChanges()
+$this
+
+## See also
+
+- [Page::isChanged()](method-ischanged.md)
+- [Page::getChanges()](index.md)
+- [Page::trackChanges()](index.md)

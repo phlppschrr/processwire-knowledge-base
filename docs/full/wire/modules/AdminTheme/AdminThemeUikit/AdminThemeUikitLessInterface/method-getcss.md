@@ -1,5 +1,8 @@
-# AdminThemeUikitLessInterface::getCss()
+# $adminThemeUikitLessInterface->getCss(): string
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
-@return string
+
+## Return value
+
+string

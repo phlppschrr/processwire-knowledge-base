@@ -1,4 +1,4 @@
-# Session::get()
+# $session->get($key, $_key = null): mixed
 
 Source: `wire/core/Session.php`
 
@@ -25,9 +25,11 @@ $session->firstName = 'Bob';
 $firstName = $session->firstName;
 ~~~~~
 
+## Arguments
 
-@param string|object $key Name of session variable to retrieve (or object if using namespaces)
+- string|object $key Name of session variable to retrieve (or object if using namespaces)
+- string $_key Name of session variable to get if first argument is namespace, omit otherwise.
 
-@param string $_key Name of session variable to get if first argument is namespace, omit otherwise.
+## Return value
 
-@return mixed Returns value of seession variable, or NULL if not found.
+mixed Returns value of seession variable, or NULL if not found.

@@ -1,10 +1,13 @@
-# InputfieldWrapper::getErrorInputfields()
+# $inputfieldWrapper->getErrorInputfields(): array|Inputfield[]
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Get Inputfield objects that have errors
 
+## Return value
 
-@return array|Inputfield[] Array of Inputfield objects indexed by Inputfield name attribute
+array|Inputfield[] Array of Inputfield objects indexed by Inputfield name attribute
 
-@since 3.0.205
+## Meta
+
+- @since 3.0.205

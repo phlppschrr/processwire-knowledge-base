@@ -1,4 +1,4 @@
-# WireMarkupRegions::getTagInfo()
+# $wireMarkupRegions->getTagInfo($tag): array
 
 Source: `wire/core/WireMarkupRegions.php`
 
@@ -17,6 +17,10 @@ Returned info includes:
  - `tag` (string): The entire tag as given
  - `close` (string): The HTML string that would close this tag
 
-@param string $tag Must be a tag in format “<tag attrs>”
+## Arguments
 
-@return array
+- string $tag Must be a tag in format “<tag attrs>”
+
+## Return value
+
+array

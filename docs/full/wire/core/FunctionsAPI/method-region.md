@@ -1,4 +1,4 @@
-# FunctionsAPI::region()
+# $functionsAPI->region($key = '', $value = null): string|null|bool|array
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -38,14 +38,11 @@ region('content', '');
 region('*', '');
 ~~~~~
 
+## Arguments
 
-@param string $key Name of region to get or set.
- - Specify "*" to retrieve all defined regions in an array.
- - Prepend a "+" to the region name to have it prepend your given value to any existing value.
- - Append a "+" to the region name to have it append your given value to any existing value.
- - Prepend a "++" to region name to make future calls without "+" automatically prepend.
- - Append a "++" to region name to make future calls without "+" to automatically append.
+- string $key Name of region to get or set. - Specify "*" to retrieve all defined regions in an array. - Prepend a "+" to the region name to have it prepend your given value to any existing value. - Append a "+" to the region name to have it append your given value to any existing value. - Prepend a "++" to region name to make future calls without "+" automatically prepend. - Append a "++" to region name to make future calls without "+" to automatically append.
+- null|string $value If setting a region, the text that you want to set.
 
-@param null|string $value If setting a region, the text that you want to set.
+## Return value
 
-@return string|null|bool|array Returns string of text when getting a region, NULL if region not set, or TRUE if setting region.
+string|null|bool|array Returns string of text when getting a region, NULL if region not set, or TRUE if setting region.

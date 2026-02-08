@@ -1,4 +1,4 @@
-# PagesEditor::addStatus()
+# $pagesEditor->addStatus(Page $page, $status): bool
 
 Source: `wire/core/PagesEditor.php`
 
@@ -7,13 +7,20 @@ Silently add status flag to a Page and save
 This action does not update the Page modified date.
 It updates the status for both the given instantiated Page object and the value in the DB.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- int $status Use Page::status* constants
 
-@param int $status Use Page::status* constants
+## Return value
 
-@return bool
+bool
 
-@since 3.0.146
+## See also
 
-@see PagesEditor::setStatus(), PagesEditor::removeStatus()
+- [PagesEditor::setStatus()](index.md)
+- [PagesEditor::removeStatus()](method-removestatus.md)
+
+## Meta
+
+- @since 3.0.146

@@ -1,7 +1,9 @@
-# Users::getGuestUser()
+# $users->getGuestUser(): User
 
 Source: `wire/core/Users.php`
 
 Get the 'guest' user account
 
-@return User
+## Return value
+
+User

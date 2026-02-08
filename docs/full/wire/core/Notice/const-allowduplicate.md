@@ -6,4 +6,6 @@ Present duplicate notices separately rather than collapsing them to one
 
 String name can be referred to as 'allowDuplicate' or just 'duplicate'
 
-@since 3.0.208
+## Meta
+
+- @since 3.0.208

@@ -1,11 +1,17 @@
-# Notice::flags()
+# $notice->flags($value = null): int
 
 Source: `wire/core/Notice.php`
 
 Get or set flags
 
-@param string|int|array|null $value Accepts flags integer, or array of flag names, or space-separated string of flag names
+## Arguments
 
-@return int
+- string|int|array|null $value Accepts flags integer, or array of flag names, or space-separated string of flag names
 
-@since 3.0.149
+## Return value
+
+int
+
+## Meta
+
+- @since 3.0.149

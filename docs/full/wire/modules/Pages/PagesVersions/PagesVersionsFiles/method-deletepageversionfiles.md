@@ -1,11 +1,14 @@
-# PagesVersionsFiles::deletePageVersionFiles()
+# $pagesVersionsFiles->deletePageVersionFiles(Page $page, $version): bool
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Delete files for given version
 
-@param Page $page
+## Arguments
 
-@param int $version
+- Page $page
+- int $version
 
-@return bool
+## Return value
+
+bool

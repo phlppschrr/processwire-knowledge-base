@@ -1,4 +1,4 @@
-# PagesVersions::deletePageFieldVersion()
+# $pagesVersions->deletePageFieldVersion(Page $page, Field $field, $version): bool
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -7,10 +7,12 @@ Delete a page field version
 This should not be called independently of deletePageVersion() as this
 method does not delete any files connected to the version.
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- int $version
 
-@param int $version
+## Return value
 
-@return bool
+bool

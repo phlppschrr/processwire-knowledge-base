@@ -1,12 +1,14 @@
-# Session::___allowLogin()
+# $session->___allowLogin($name, $user = null): bool
 
 Source: `wire/core/Session.php`
 
 Allow the user $name to login? Provided for use by hooks.
 
+## Arguments
 
-@param string $name User login name
+- string $name User login name
+- User|null $user User object
 
-@param User|null $user User object
+## Return value
 
-@return bool True if allowed to login, false if not (hooks may modify this)
+bool True if allowed to login, false if not (hooks may modify this)

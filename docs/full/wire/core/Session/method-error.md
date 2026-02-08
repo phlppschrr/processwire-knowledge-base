@@ -1,12 +1,14 @@
-# Session::error()
+# $session->error($text, $flags = 0): $this
 
 Source: `wire/core/Session.php`
 
 Queue an error to appear on the next pageview
 
+## Arguments
 
-@param string $text Error to queue
+- string $text Error to queue
+- int $flags See Notice::flags
 
-@param int $flags See Notice::flags
+## Return value
 
-@return $this
+$this

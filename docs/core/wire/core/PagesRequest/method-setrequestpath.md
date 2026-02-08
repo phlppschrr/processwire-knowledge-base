@@ -1,7 +1,9 @@
-# PagesRequest::setRequestPath()
+# $pagesRequest->setRequestPath($requestPath)
 
 Source: `wire/core/PagesRequest.php`
 
 Set request path
 
-@param string $requestPath
+## Arguments
+
+- string $requestPath

@@ -1,4 +1,4 @@
-# Session::close()
+# $session->close()
 
 Source: `wire/core/Session.php`
 

@@ -1,4 +1,4 @@
-# CacheFile::__toString()
+# $cacheFile->__toString()
 
 Source: `wire/core/CacheFile.php`
 

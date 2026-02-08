@@ -1,4 +1,4 @@
-# Pages::___new()
+# $pages->___new($selector = ''): Page
 
 Source: `wire/core/Pages.php`
 
@@ -46,11 +46,19 @@ $p = $pages->new('path=/blog/posts/foo-bar-baz');
 $p = $pages->new('/blog/posts/foo-bar-baz');
 ~~~~~
 
+## Arguments
 
-@param string|array $selector Selector string or array of properties to set
+- string|array $selector Selector string or array of properties to set
 
-@return Page
+## Return value
 
-@since 3.0.191
+Page
 
-@see Pages::add(), Pages::newPage()
+## See also
+
+- [Pages::add()](method-___add.md)
+- [Pages::newPage()](method-newpage.md)
+
+## Meta
+
+- @since 3.0.191

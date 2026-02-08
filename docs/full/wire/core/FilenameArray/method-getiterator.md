@@ -1,7 +1,9 @@
-# FilenameArray::getIterator()
+# $filenameArray->getIterator(): \ArrayObject
 
 Source: `wire/core/FilenameArray.php`
 
 Make iterable
 
-@return \ArrayObject
+## Return value
+
+\ArrayObject

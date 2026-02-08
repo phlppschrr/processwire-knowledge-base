@@ -1,4 +1,4 @@
-# WireHooks::hasHook()
+# $wireHooks->hasHook(Wire $object, $method): bool
 
 Source: `wire/core/WireHooks.php`
 
@@ -15,12 +15,19 @@ more accurate. As a result, this method works well for more than just optimizati
 If checking for a hooked method, it should be in the form "method()".
 If checking for a hooked property, it should be in the form "property".
 
-@param Wire $object
+## Arguments
 
-@param string $method Method() or property name
+- Wire $object
+- string $method Method() or property name
 
-@return bool
+## Return value
 
-@throws WireException whe you try to call it with a Class::something() type method.
+bool
 
-@todo differentiate between "method()" and "property"
+## Throws
+
+- WireException whe you try to call it with a Class::something() type method.
+
+## Meta
+
+- @todo differentiate between "method()" and "property"

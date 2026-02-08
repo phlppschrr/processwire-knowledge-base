@@ -1,4 +1,4 @@
-# Inputfield::__construct()
+# $inputfield->__construct()
 
 Source: `wire/core/Inputfield.php`
 

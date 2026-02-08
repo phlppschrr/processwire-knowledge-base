@@ -1,15 +1,18 @@
-# WireTextTools::hasPlaceholders()
+# $wireTextTools->hasPlaceholders($str, array $options = array()): bool
 
 Source: `wire/core/WireTextTools.php`
 
 Does the string have any {placeholder} tags in it?
 
-@param string $str
+## Arguments
 
-@param array $options
-	- `tagOpen` (string): The required opening tag character(s), default is '{'
-	- `tagClose` (string): The required closing tag character(s), default is '}'
+- string $str
+- array $options - `tagOpen` (string): The required opening tag character(s), default is '{' - `tagClose` (string): The required closing tag character(s), default is '}'
 
-@return bool
+## Return value
 
-@since 3.0.126
+bool
+
+## Meta
+
+- @since 3.0.126

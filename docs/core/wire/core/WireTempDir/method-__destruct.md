@@ -1,4 +1,4 @@
-# WireTempDir::__destruct()
+# $wireTempDir->__destruct()
 
 Source: `wire/core/WireTempDir.php`
 

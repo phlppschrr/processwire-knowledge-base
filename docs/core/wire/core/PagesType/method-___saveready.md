@@ -1,12 +1,17 @@
-# PagesType::___saveReady()
+# $pagesType->___saveReady(Page $page): array
 
 Source: `wire/core/PagesType.php`
 
 Hook called just before a page of this type is saved
 
+## Arguments
 
-@param Page $page The page about to be saved
+- Page $page The page about to be saved
 
-@return array Optional extra data to add to pages save query.
+## Return value
 
-@since 3.0.128
+array Optional extra data to add to pages save query.
+
+## Meta
+
+- @since 3.0.128

@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wireSanitizer()
+# $functionsWireAPI->wireSanitizer($name = '', $value = ''): Sanitizer|string|int|array|null|mixed
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -10,8 +10,11 @@ $clean = sanitizer()->pageName($dirty);
 $clean = sanitizer('pageName', $dirty); // same as above
 ~~~~~
 
-@param string $name Optionally enter a sanitizer function name
+## Arguments
 
-@param string $value If $name populated, enter the value to sanitize
+- string $name Optionally enter a sanitizer function name
+- string $value If $name populated, enter the value to sanitize
 
-@return Sanitizer|string|int|array|null|mixed
+## Return value
+
+Sanitizer|string|int|array|null|mixed

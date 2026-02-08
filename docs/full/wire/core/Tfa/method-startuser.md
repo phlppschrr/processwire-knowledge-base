@@ -1,4 +1,4 @@
-# Tfa::startUser()
+# $tfa->startUser(User $user, array $settings): bool
 
 Source: `wire/core/Tfa.php`
 
@@ -24,8 +24,11 @@ C. Modules that do not generate or send codes, but only validate them (i.e. TOTP
    You can omit implementation, leaving just the built-in one below.
    But if you do implement it, make sure you call the parent::startUser($user).
 
-@param User $user
+## Arguments
 
-@param array $settings Settings configured by user
+- User $user
+- array $settings Settings configured by user
 
-@return bool True on success, false on fail
+## Return value
+
+bool True on success, false on fail

@@ -1,5 +1,8 @@
-# _Module::getModuleInfo()
+# _Module::getModuleInfo(): array
 
 Source: `wire/core/Module.php`
 
-@return array
+
+## Return value
+
+array

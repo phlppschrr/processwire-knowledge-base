@@ -1,11 +1,14 @@
-# WireHooks::getClassParents()
+# $wireHooks->getClassParents($object, $cache = true): array
 
 Source: `wire/core/WireHooks.php`
 
 Get an array of parent classes and interfaces for the given object
 
-@param Wire|string $object Maybe either object instance or class name
+## Arguments
 
-@param bool $cache Allow use of cache for getting or storing? (default=true)
+- Wire|string $object Maybe either object instance or class name
+- bool $cache Allow use of cache for getting or storing? (default=true)
 
-@return array
+## Return value
+
+array

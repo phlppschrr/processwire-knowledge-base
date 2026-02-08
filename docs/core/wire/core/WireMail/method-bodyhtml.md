@@ -1,4 +1,4 @@
-# WireMail::bodyHTML()
+# $wireMail->bodyHTML($body): $this
 
 Source: `wire/core/WireMail.php`
 
@@ -11,6 +11,10 @@ $m = wireMail();
 $m->bodyHTML('<html><body><h1>Hello world</h1></body></html>');
 ~~~~~
 
-@param string $body Email body in HTML
+## Arguments
 
-@return $this
+- string $body Email body in HTML
+
+## Return value
+
+$this

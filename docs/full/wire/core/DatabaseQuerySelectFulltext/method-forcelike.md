@@ -1,4 +1,4 @@
-# DatabaseQuerySelectFulltext::forceLike()
+# $databaseQuerySelectFulltext->forceLike($forceLike = null): bool
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
@@ -7,8 +7,14 @@ Call forceLike(true) to force use of LIKE, or omit argument to get current setti
 This forces LIKE only for matching operators that have a LIKE equivalent.
 This includes these operators: `*=`, `^=`, `$=`, `~=`, `~|=`.
 
-@param bool|null $forceLike
+## Arguments
 
-@return bool
+- bool|null $forceLike
 
-@since 3.0.182
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.182

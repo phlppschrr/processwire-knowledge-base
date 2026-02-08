@@ -1,10 +1,13 @@
-# Fieldtype::___cloneField()
+# $fieldtype->___cloneField(Field $field): Field
 
 Source: `wire/core/Fieldtype.php`
 
 Return a cloned copy of $field
 
+## Arguments
 
-@param Field $field
+- Field $field
 
-@return Field cloned copy
+## Return value
+
+Field cloned copy

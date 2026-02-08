@@ -1,11 +1,17 @@
-# ProcessModuleInstall::installDisabledLabel()
+# $processModuleInstall->installDisabledLabel($type): string
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Return label to indicate option is disabled and how to enable it
 
-@param string $type
+## Arguments
 
-@return string
+- string $type
 
-@since 3.0.162
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.162

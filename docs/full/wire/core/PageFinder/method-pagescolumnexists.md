@@ -1,9 +1,13 @@
-# PageFinder::pagesColumnExists()
+# $pageFinder->pagesColumnExists($name): bool
 
 Source: `wire/core/PageFinder.php`
 
 Does the given column name exist in the 'pages' table?
 
-@param string $name
+## Arguments
 
-@return bool
+- string $name
+
+## Return value
+
+bool

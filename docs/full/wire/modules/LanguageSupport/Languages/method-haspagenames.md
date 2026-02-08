@@ -1,9 +1,13 @@
-# Languages::hasPageNames()
+# $languages->hasPageNames(): bool
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Is LanguageSupportPageNames installed?
 
-@return bool
+## Return value
 
-@since 3.0.186
+bool
+
+## Meta
+
+- @since 3.0.186

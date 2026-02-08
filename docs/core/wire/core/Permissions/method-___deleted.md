@@ -1,10 +1,13 @@
-# Permissions::___deleted()
+# $permissions->___deleted(Page $page)
 
 Source: `wire/core/Permissions.php`
 
 Hook called when a permission is deleted
 
+## Arguments
 
-@param Page $page Page that was deleted
+- Page $page Page that was deleted
 
-@throws WireException
+## Throws
+
+- WireException

@@ -1,9 +1,13 @@
-# Punycode::decodePart()
+# $punycode->decodePart($input): string
 
 Source: `wire/core/Punycode.php`
 
 Decode a part of domain name, such as tld
 
-@param string $input Part of a domain name
+## Arguments
 
-@return string Unicode domain part
+- string $input Part of a domain name
+
+## Return value
+
+string Unicode domain part

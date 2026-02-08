@@ -1,7 +1,9 @@
-# MarkupQA::setPage()
+# $markupQA->setPage(Page $page)
 
 Source: `wire/core/MarkupQA.php`
 
 Set the current Page
 
-@param Page $page
+## Arguments
+
+- Page $page

@@ -1,4 +1,4 @@
-# Sanitizer::fieldName()
+# $sanitizer->fieldName($value, $beautify = false, $maxLength = 128): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -14,13 +14,12 @@ $test = "Hello world";
 echo $sanitizer->fieldName($test); // outputs: Hello_world
 ~~~~~
 
+## Arguments
 
-@param string $value Value you want to sanitize
+- string $value Value you want to sanitize
+- bool|int $beautify Should be true when using the name for a new field (default=false). You may also specify constant `Sanitizer::translate` (or number 2) for the $beautify param, which will make it translate letters based on the system page name translation settings.
+- int $maxLength Maximum number of characters allowed in the name (default=128).
 
-@param bool|int $beautify Should be true when using the name for a new field (default=false).
- You may also specify constant `Sanitizer::translate` (or number 2) for the $beautify param, which will make it translate letters
- based on the system page name translation settings.
+## Return value
 
-@param int $maxLength Maximum number of characters allowed in the name (default=128).
-
-@return string Sanitized string
+string Sanitized string

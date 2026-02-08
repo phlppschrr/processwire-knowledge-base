@@ -1,4 +1,4 @@
-# PagesLoader::preloadFields()
+# $pagesLoader->preloadFields(Page $page, array $fieldNames, $options = array()): array
 
 Source: `wire/core/PagesLoader.php`
 
@@ -17,16 +17,16 @@ purposes using the `useFieldtypeMulti` $options argument.
 
 NOTE: This function is currently experimental, recommended for testing only.
 
+## Arguments
 
-@param Page $page Page to preload fields for
+- Page $page Page to preload fields for
+- array $fieldNames Names of fields to preload
+- array $options - `debug` (bool): Specify true to include additional debug info in return value (default=false). - `useFieldtypeMulti` (bool): Enable FieldtypeMulti for testing purposes (default=false). - `loadPageRefs` (bool): Optimization to early load pages in page reference fields? (default=true)
 
-@param array $fieldNames Names of fields to preload
+## Return value
 
-@param array $options
- - `debug` (bool): Specify true to include additional debug info in return value (default=false).
- - `useFieldtypeMulti` (bool): Enable FieldtypeMulti for testing purposes (default=false).
- - `loadPageRefs` (bool): Optimization to early load pages in page reference fields? (default=true)
+array Array containing what was loaded and skipped
 
-@return array Array containing what was loaded and skipped
+## Meta
 
-@since 3.0.243
+- @since 3.0.243

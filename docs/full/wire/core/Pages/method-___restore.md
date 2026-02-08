@@ -1,4 +1,4 @@
-# Pages::___restore()
+# $pages->___restore(Page $page, $save = true): bool
 
 Source: `wire/core/Pages.php`
 
@@ -14,11 +14,15 @@ $trashedPage = $pages->get(1234);
 $pages->restore($trashedPage);
 ~~~~~
 
+## Arguments
 
-@param Page $page Page that is in the trash that you want to restore
+- Page $page Page that is in the trash that you want to restore
+- bool $save Set to false if you only want to prep the page for restore (i.e. you will save the page yourself later). Primarily for internal use.
 
-@param bool $save Set to false if you only want to prep the page for restore (i.e. you will save the page yourself later). Primarily for internal use.
+## Return value
 
-@return bool True on success, false on failure.
+bool True on success, false on failure.
 
-@see Pages::trash()
+## See also
+
+- [Pages::trash()](method-___trash.md)

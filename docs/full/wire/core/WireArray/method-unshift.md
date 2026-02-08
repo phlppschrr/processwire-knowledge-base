@@ -1,4 +1,4 @@
-# WireArray::unshift()
+# $wireArray->unshift($item): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -6,9 +6,15 @@ Unshift an element to the beginning of the WireArray (alias for prepend)
 
 This is for consistency with PHP's naming convention of the `array_unshift()` method.
 
+## Arguments
 
-@param Wire|WireArray|mixed $item Item to prepend.
+- Wire|WireArray|mixed $item Item to prepend.
 
-@return $this This instance.
+## Return value
 
-@see WireArray::shift(), WireArray::prepend()
+$this This instance.
+
+## See also
+
+- [WireArray::shift()](method-shift.md)
+- [WireArray::prepend()](method-prepend.md)

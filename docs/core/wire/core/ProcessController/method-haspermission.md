@@ -1,4 +1,4 @@
-# ProcessController::hasPermission()
+# $processController->hasPermission($permissionName, $throw = true): bool
 
 Source: `wire/core/ProcessController.php`
 
@@ -6,10 +6,15 @@ Does the current user have permission to execute the given process name?
 
 Note: an empty permission name is accessible only by the superuser
 
-@param string $permissionName
+## Arguments
 
-@param bool $throw Whether to throw an Exception if the user does not have permission
+- string $permissionName
+- bool $throw Whether to throw an Exception if the user does not have permission
 
-@return bool
+## Return value
 
-@throws ProcessControllerPermissionException
+bool
+
+## Throws
+
+- ProcessControllerPermissionException

@@ -1,7 +1,12 @@
-# DatabaseQuery::__get()
+# $databaseQuery->__get($key): array|mixed|null
 
 Source: `wire/core/DatabaseQuery.php`
 
-@param string $key
 
-@return array|mixed|null
+## Arguments
+
+- string $key
+
+## Return value
+
+array|mixed|null

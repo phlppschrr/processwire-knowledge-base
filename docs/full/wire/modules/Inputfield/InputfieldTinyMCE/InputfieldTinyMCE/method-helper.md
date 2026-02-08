@@ -1,9 +1,13 @@
-# InputfieldTinyMCE::helper()
+# $inputfieldTinyMCE->helper($name): InputfieldTinyMCEClass
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Get helper
 
-@param string $name
+## Arguments
 
-@return InputfieldTinyMCEClass
+- string $name
+
+## Return value
+
+InputfieldTinyMCEClass

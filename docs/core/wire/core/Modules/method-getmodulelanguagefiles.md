@@ -1,11 +1,17 @@
-# Modules::getModuleLanguageFiles()
+# $modules->getModuleLanguageFiles($module): array
 
 Source: `wire/core/Modules.php`
 
 Get module language translation files
 
-@param Module|string $module
+## Arguments
 
-@return array Array of translation files including full path, indexed by basename without extension
+- Module|string $module
 
-@since 3.0.181
+## Return value
+
+array Array of translation files including full path, indexed by basename without extension
+
+## Meta
+
+- @since 3.0.181

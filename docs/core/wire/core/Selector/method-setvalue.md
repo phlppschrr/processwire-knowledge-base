@@ -1,11 +1,17 @@
-# Selector::setValue()
+# $selector->setValue($value): self
 
 Source: `wire/core/Selector.php`
 
 Set selector value(s)
 
-@param string|int|array|mixed $value
+## Arguments
 
-@return self
+- string|int|array|mixed $value
 
-@since 3.0.160
+## Return value
+
+self
+
+## Meta
+
+- @since 3.0.160

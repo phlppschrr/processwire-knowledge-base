@@ -1,4 +1,4 @@
-# LanguageFunctions::__()
+# $languageFunctions->__($text, $textdomain = null, $context = ''): string|array
 
 Source: `wire/core/LanguageFunctions.php`
 
@@ -78,17 +78,21 @@ __([ 'New text', 'Old text' ]);
 _x([ 'Canada Goose', 'Canadian Goose' ], 'bird');
 ~~~~~
 
+## Arguments
 
-@param string|array|bool $text Text for translation.
+- string|array|bool $text Text for translation.
+- string|array $textdomain Textdomain for the text, may be class name, filename, or something made up by you. If omitted, a debug backtrace will attempt to determine it automatically.
+- string|bool|array $context Name of context - DO NOT USE with this function for translation as it will not be parsed for translation. Use only with the `_x()` function, which will be parsed.
 
-@param string|array $textdomain Textdomain for the text, may be class name, filename, or something made up by you.
-  If omitted, a debug backtrace will attempt to determine it automatically.
+## Return value
 
-@param string|bool|array $context Name of context - DO NOT USE with this function for translation as it will not be parsed for translation.
-  Use only with the `_x()` function, which will be parsed.
+string|array Translated text or original text if translation not available. Returns array only if getting/setting options.
 
-@return string|array Translated text or original text if translation not available. Returns array only if getting/setting options.
+## See also
 
-@see _x(), _n()
+- _x()
+- _n()
 
-@link https://processwire.com/docs/multi-language-support/code-i18n/
+## Meta
+
+- @link https://processwire.com/docs/multi-language-support/code-i18n/

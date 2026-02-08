@@ -1,7 +1,9 @@
-# LanguageParser::execute()
+# $languageParser->execute($file)
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Begin parsing given file
 
-@param string $file
+## Arguments
+
+- string $file

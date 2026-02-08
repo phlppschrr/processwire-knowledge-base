@@ -1,4 +1,4 @@
-# PagesSortfields::encode()
+# $pagesSortfields->encode($sortfield, $default = 'sort'): string|int
 
 Source: `wire/core/PagesSortfields.php`
 
@@ -6,8 +6,11 @@ Encodes a sortfield from a fieldname to a signed integer (ID) representing a cus
 
 The returned value will be a negative value (or string preceded by a dash) if the sortfield is reversed.
 
-@param string $sortfield
+## Arguments
 
-@param string $default Default sortfield name (default='sort')
+- string $sortfield
+- string $default Default sortfield name (default='sort')
 
-@return string|int
+## Return value
+
+string|int

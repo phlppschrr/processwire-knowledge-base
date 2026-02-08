@@ -1,4 +1,4 @@
-# Pagefile::url()
+# $pagefile->url(): string
 
 Source: `wire/core/Pagefile.php`
 
@@ -11,7 +11,10 @@ foreach($page->files as $file) {
 }
 ~~~~~
 
+## Return value
 
-@return string
+string
 
-@see Pagefile:httpUrl()
+## See also
+
+- Pagefile:httpUrl()

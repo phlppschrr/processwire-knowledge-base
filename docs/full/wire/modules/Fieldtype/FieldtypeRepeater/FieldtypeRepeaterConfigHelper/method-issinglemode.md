@@ -1,5 +1,8 @@
-# FieldtypeRepeaterConfigHelper::isSingleMode()
+# $fieldtypeRepeaterConfigHelper->isSingleMode(): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
-@return bool
+
+## Return value
+
+bool

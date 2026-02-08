@@ -1,4 +1,4 @@
-# InputfieldTinyMCESettings::applyAddSettings()
+# $inputfieldTinyMCESettings->applyAddSettings(array &$settings, array &$addSettings, array $defaults)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
@@ -6,8 +6,8 @@ Apply 'add_*' settings in $addSettings, plus merge all $addSettings into given $
 
 This updates the $settings and $addSettings variables directly
 
-@param array $settings
+## Arguments
 
-@param array $addSettings
-
-@param array $defaults
+- array $settings
+- array $addSettings
+- array $defaults

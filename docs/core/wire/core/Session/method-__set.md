@@ -1,11 +1,14 @@
-# Session::__set()
+# $session->__set($key, $value): $this
 
 Source: `wire/core/Session.php`
 
 Provide non-namespaced $session->variable = variable set access
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return $this
+## Return value
+
+$this

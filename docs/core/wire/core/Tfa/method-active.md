@@ -1,4 +1,4 @@
-# Tfa::active()
+# $tfa->active(): bool
 
 Source: `wire/core/Tfa.php`
 
@@ -10,4 +10,6 @@ Returns true if a TFA process is currently active
 - If this method returns false and login/pass submitted, then call `$tfa->start()`,
   or if login not submitted, then render login form.
 
-@return bool
+## Return value
+
+bool

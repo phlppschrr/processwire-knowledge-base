@@ -1,11 +1,17 @@
-# PagesParents::findParents()
+# $pagesParents->findParents(array $options = array()): array|PageArray
 
 Source: `wire/core/PagesParents.php`
 
 Find all pages that have children
 
-@param array $options
+## Arguments
 
-@return array|PageArray
+- array $options
 
-@since 3.0.156
+## Return value
+
+array|PageArray
+
+## Meta
+
+- @since 3.0.156

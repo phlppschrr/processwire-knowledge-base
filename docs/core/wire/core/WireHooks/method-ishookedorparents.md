@@ -1,4 +1,4 @@
-# WireHooks::isHookedOrParents()
+# $wireHooks->isHookedOrParents($class, $method, $type = 'either'): bool
 
 Source: `wire/core/WireHooks.php`
 
@@ -6,10 +6,12 @@ Similar to isHooked() method but also checks parent classes for the hooked metho
 
 This method is designed for fast determinations of whether something is hooked
 
-@param string|Wire $class
+## Arguments
 
-@param string $method Name of method or property
+- string|Wire $class
+- string $method Name of method or property
+- string $type May be either 'method', 'property' or 'either'
 
-@param string $type May be either 'method', 'property' or 'either'
+## Return value
 
-@return bool
+bool

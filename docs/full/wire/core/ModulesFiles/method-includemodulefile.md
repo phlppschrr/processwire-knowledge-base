@@ -1,11 +1,14 @@
-# ModulesFiles::includeModuleFile()
+# $modulesFiles->includeModuleFile($file, $moduleName): bool
 
 Source: `wire/core/ModulesFiles.php`
 
 Include the given filename
 
-@param string $file
+## Arguments
 
-@param string $moduleName
+- string $file
+- string $moduleName
 
-@return bool
+## Return value
+
+bool

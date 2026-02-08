@@ -1,13 +1,18 @@
-# WireSaveableItems::getLoadQuerySelectors()
+# $wireSaveableItems->getLoadQuerySelectors($selectors, DatabaseQuerySelect $query): DatabaseQuerySelect
 
 Source: `wire/core/WireSaveableItems.php`
 
 Provides additions to the ___load query for when selectors or selector string are provided
 
-@param Selectors $selectors
+## Arguments
 
-@param DatabaseQuerySelect $query
+- Selectors $selectors
+- DatabaseQuerySelect $query
 
-@throws WireException
+## Return value
 
-@return DatabaseQuerySelect
+DatabaseQuerySelect
+
+## Throws
+
+- WireException

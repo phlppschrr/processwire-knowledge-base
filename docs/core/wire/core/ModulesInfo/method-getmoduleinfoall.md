@@ -1,9 +1,13 @@
-# ModulesInfo::getModuleInfoAll()
+# $modulesInfo->getModuleInfoAll(array $options = array()): array
 
 Source: `wire/core/ModulesInfo.php`
 
 Get info arrays for all modules indexed by module name
 
-@param array $options See options for getModuleInfo() method
+## Arguments
 
-@return array
+- array $options See options for getModuleInfo() method
+
+## Return value
+
+array

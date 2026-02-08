@@ -1,4 +1,4 @@
-# Inputfield::___install()
+# $inputfield->___install()
 
 Source: `wire/core/Inputfield.php`
 

@@ -1,4 +1,4 @@
-# ModulesConfigs::getModuleEditUrl()
+# $modulesConfigs->getModuleEditUrl($className, $collapseInfo = true): string
 
 Source: `wire/core/ModulesConfigs.php`
 
@@ -6,9 +6,11 @@ Return the URL where the module can be edited, configured or uninstalled
 
 If module is not installed, it returns URL to install the module.
 
+## Arguments
 
-@param string|Module $className
+- string|Module $className
+- bool $collapseInfo
 
-@param bool $collapseInfo
+## Return value
 
-@return string
+string

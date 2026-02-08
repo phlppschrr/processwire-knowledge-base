@@ -1,4 +1,4 @@
-# Page::getInputfields()
+# $page->getInputfields($fieldName = ''): null|InputfieldWrapper
 
 Source: `wire/core/Page.php`
 
@@ -11,8 +11,10 @@ in the returned InputfieldWrapper.
 Please note this method deals only with custom fields, not system fields name 'name' or 'status', etc.,
 as those are exclusive to the ProcessPageEdit page editor.
 
+## Arguments
 
-@param string|array $fieldName Optional field to limit to, typically the name of a fieldset or tab.
- - Or optionally specify array of $options (See `Fieldgroup::getPageInputfields()` for options).
+- string|array $fieldName Optional field to limit to, typically the name of a fieldset or tab. - Or optionally specify array of $options (See `Fieldgroup::getPageInputfields()` for options).
 
-@return null|InputfieldWrapper Returns an InputfieldWrapper array of Inputfield objects, or NULL on failure.
+## Return value
+
+null|InputfieldWrapper Returns an InputfieldWrapper array of Inputfield objects, or NULL on failure.

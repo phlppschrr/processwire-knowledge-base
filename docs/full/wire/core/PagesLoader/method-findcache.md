@@ -1,4 +1,4 @@
-# PagesLoader::findCache()
+# $pagesLoader->findCache($selector, $expire = 60, $options = array()): PageArray|array
 
 Source: `wire/core/PagesLoader.php`
 
@@ -14,17 +14,16 @@ $items = $pages->findCache("title%=foo", 3600); // 1 hour
 $items = $pages->findCache("title%=foo", "+1 HOUR");  // same as above
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector
+- string|array|Selectors $selector
+- int|string|bool|null $expire When the cache should expire, one of the following: - Max age integer (in seconds). - Any string accepted by PHP’s `strtotime()` that specifies when the cache should be expired. - Any `WireCache::expire…` constant or anything accepted by the `WireCache::get()` $expire argument.
+- array $options Options to pass to `$pages->getByIDs()`, or: - `findIDs` (bool): Return just the page IDs rather then the actual pages? (default=false)
 
-@param int|string|bool|null $expire When the cache should expire, one of the following:
- - Max age integer (in seconds).
- - Any string accepted by PHP’s `strtotime()` that specifies when the cache should be expired.
- - Any `WireCache::expire…` constant or anything accepted by the `WireCache::get()` $expire argument.
+## Return value
 
-@param array $options Options to pass to `$pages->getByIDs()`, or:
- - `findIDs` (bool): Return just the page IDs rather then the actual pages? (default=false)
+PageArray|array
 
-@return PageArray|array
+## Meta
 
-@since 3.0.218
+- @since 3.0.218

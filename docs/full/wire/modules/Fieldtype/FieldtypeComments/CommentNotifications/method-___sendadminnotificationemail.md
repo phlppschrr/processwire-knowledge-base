@@ -1,9 +1,13 @@
-# CommentNotifications::___sendAdminNotificationEmail()
+# $commentNotifications->___sendAdminNotificationEmail(Comment $comment): int
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Send notification email to specified admin to review the comment
 
-@param Comment $comment
+## Arguments
 
-@return int Number of emails sent
+- Comment $comment
+
+## Return value
+
+int Number of emails sent

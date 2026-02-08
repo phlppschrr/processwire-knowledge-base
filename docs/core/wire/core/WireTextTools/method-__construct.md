@@ -1,4 +1,4 @@
-# WireTextTools::__construct()
+# $wireTextTools->__construct()
 
 Source: `wire/core/WireTextTools.php`
 

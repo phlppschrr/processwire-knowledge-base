@@ -1,11 +1,14 @@
-# AdminThemeFramework::renderIcon()
+# $adminThemeFramework->renderIcon($icon, $fw = false): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Render markup for a font-awesome icon
 
-@param string $icon Name of icon to render, excluding the “fa-” prefix
+## Arguments
 
-@param bool $fw Specify true to make fixed width (default=false).
+- string $icon Name of icon to render, excluding the “fa-” prefix
+- bool $fw Specify true to make fixed width (default=false).
 
-@return string
+## Return value
+
+string

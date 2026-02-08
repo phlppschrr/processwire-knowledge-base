@@ -1,4 +1,4 @@
-# WireShutdown::setFatalError()
+# $wireShutdown->setFatalError(\Throwable $e, $message = '')
 
 Source: `wire/core/WireShutdown.php`
 
@@ -6,8 +6,11 @@ Set shutdown fatal error
 
 Used only for index version >= 302
 
-@param \Throwable $e
+## Arguments
 
-@param string $message
+- \Throwable $e
+- string $message
 
-@since 3.0.253
+## Meta
+
+- @since 3.0.253

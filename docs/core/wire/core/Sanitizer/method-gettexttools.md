@@ -1,10 +1,13 @@
-# Sanitizer::getTextTools()
+# $sanitizer->getTextTools(): WireTextTools
 
 Source: `wire/core/Sanitizer.php`
 
 Get instance of WireTextTools
 
+## Return value
 
-@return WireTextTools
+WireTextTools
 
-@since 3.0.101
+## Meta
+
+- @since 3.0.101

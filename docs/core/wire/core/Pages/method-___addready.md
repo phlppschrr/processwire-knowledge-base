@@ -1,10 +1,13 @@
-# Pages::___addReady()
+# $pages->___addReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
 Hook called when a new page is about to be added and saved to the database
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@since 3.0.253
+## Meta
+
+- @since 3.0.253

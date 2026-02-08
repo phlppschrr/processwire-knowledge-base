@@ -1,4 +1,4 @@
-# HookEvent::removeHook()
+# $hookEvent->removeHook($hookId): HookEvent|WireData
 
 Source: `wire/core/HookEvent.php`
 
@@ -11,6 +11,10 @@ To remove the hook that this event is for, call it with the $hookId argument as 
 $event->removeHook(null);
 ~~~~~
 
-@param string|HookEvent|null $hookId
+## Arguments
 
-@return HookEvent|WireData $this
+- string|HookEvent|null $hookId
+
+## Return value
+
+HookEvent|WireData $this

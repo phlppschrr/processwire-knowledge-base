@@ -1,4 +1,4 @@
-# Sanitizer::pagePathName()
+# $sanitizer->pagePathName($value, $beautify = false, $maxLength = 2048): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,17 +6,12 @@ Sanitize a page path name
 
 Returned path is not guaranteed to be valid or match a page, just sanitized.
 
+## Arguments
 
-@param string $value Value to sanitize
+- string $value Value to sanitize
+- bool|int $beautify Beautify the value? (default=false). Maybe any of the following: - `true` (bool): Beautify the individual page names in the path to remove redundant and trailing punctuation and more. - `false` (bool): Do not perform any conversion or attempt to make it more pretty, just sanitize (default). - `Sanitizer::translate` (constant): Translate UTF-8 characters to visually similar ASCII (using InputfieldPageName module settings). - `Sanitizer::toAscii` (constant): Convert UTF-8 characters to punycode ASCII. - `Sanitizer::toUTF8` (constant): Convert punycode ASCII to UTF-8. - `Sanitizer::okUTF8` (constant): Allow UTF-8 characters to appear in path (implied if $config->pageNameCharset is 'UTF8').
+- int $maxLength Maximum length (default=2048)
 
-@param bool|int $beautify Beautify the value? (default=false). Maybe any of the following:
-- `true` (bool): Beautify the individual page names in the path to remove redundant and trailing punctuation and more.
-- `false` (bool): Do not perform any conversion or attempt to make it more pretty, just sanitize (default).
-- `Sanitizer::translate` (constant): Translate UTF-8 characters to visually similar ASCII (using InputfieldPageName module settings).
-- `Sanitizer::toAscii` (constant): Convert UTF-8 characters to punycode ASCII.
-- `Sanitizer::toUTF8` (constant): Convert punycode ASCII to UTF-8.
-- `Sanitizer::okUTF8` (constant): Allow UTF-8 characters to appear in path (implied if $config->pageNameCharset is 'UTF8').
+## Return value
 
-@param int $maxLength Maximum length (default=2048)
-
-@return string Sanitized path name
+string Sanitized path name

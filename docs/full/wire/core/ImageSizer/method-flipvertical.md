@@ -1,7 +1,9 @@
-# ImageSizer::flipVertical()
+# $imageSizer->flipVertical(): bool
 
 Source: `wire/core/ImageSizer.php`
 
 Flip image vertically
 
-@return bool
+## Return value
+
+bool

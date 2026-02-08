@@ -1,13 +1,18 @@
-# PageFinder::findTemplateIDs()
+# $pageFinder->findTemplateIDs($selectors, $options = array()): array
 
 Source: `wire/core/PageFinder.php`
 
 Find template ID for each page — returns array of template IDs indexed by page ID
 
-@param Selectors|string|array $selectors Selectors object, selector string or selector array
+## Arguments
 
-@param array $options
+- Selectors|string|array $selectors Selectors object, selector string or selector array
+- array $options
 
-@return array
+## Return value
 
-@since 3.0.152
+array
+
+## Meta
+
+- @since 3.0.152

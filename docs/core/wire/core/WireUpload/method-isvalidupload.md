@@ -1,4 +1,4 @@
-# WireUpload::isValidUpload()
+# $wireUpload->isValidUpload($name, $size, $error): bool
 
 Source: `wire/core/WireUpload.php`
 
@@ -6,10 +6,12 @@ Is the given upload information valid?
 
 Also populates $this->errors
 
-@param string $name Filename
+## Arguments
 
-@param int $size Size in bytes
+- string $name Filename
+- int $size Size in bytes
+- int $error Error code from PHP
 
-@param int $error Error code from PHP
+## Return value
 
-@return bool
+bool

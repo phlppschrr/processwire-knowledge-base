@@ -1,10 +1,14 @@
-# Inputfield::getParents()
+# $inputfield->getParents(): array
 
 Source: `wire/core/Inputfield.php`
 
 Get array of all parents of this Inputfield.
 
+## Return value
 
-@return array of InputfieldWrapper elements.
+array of InputfieldWrapper elements.
 
-@see Inputfield::getParent(), Inputfield::setParent()
+## See also
+
+- [Inputfield::getParent()](method-getparent.md)
+- [Inputfield::setParent()](method-setparent.md)

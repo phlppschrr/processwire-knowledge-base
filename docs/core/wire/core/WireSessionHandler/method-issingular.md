@@ -1,4 +1,4 @@
-# WireSessionHandler::isSingular()
+# $wireSessionHandler->isSingular()
 
 Source: `wire/core/WireSessionHandler.php`
 

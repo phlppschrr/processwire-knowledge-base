@@ -1,13 +1,15 @@
-# WireShutdown::saveFatalLog()
+# $wireShutdown->saveFatalLog($url, $userName, $message): bool
 
 Source: `wire/core/WireShutdown.php`
 
 Save fatal error to log
 
-@param string $url
+## Arguments
 
-@param string $userName
+- string $url
+- string $userName
+- string $message
 
-@param string $message
+## Return value
 
-@return bool
+bool

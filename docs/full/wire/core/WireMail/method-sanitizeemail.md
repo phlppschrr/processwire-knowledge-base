@@ -1,11 +1,17 @@
-# WireMail::sanitizeEmail()
+# $wireMail->sanitizeEmail($email): string
 
 Source: `wire/core/WireMail.php`
 
 Sanitize an email address or throw WireException if invalid or in blacklist
 
-@param string $email
+## Arguments
 
-@return string
+- string $email
 
-@throws WireException
+## Return value
+
+string
+
+## Throws
+
+- WireException

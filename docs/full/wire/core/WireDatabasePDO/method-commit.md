@@ -1,10 +1,13 @@
-# WireDatabasePDO::commit()
+# $wireDatabasePDO->commit(): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Commits a transaction
 
+## Return value
 
-@return bool
+bool
 
-@link http://php.net/manual/en/pdo.commit.php
+## Meta
+
+- @link http://php.net/manual/en/pdo.commit.php

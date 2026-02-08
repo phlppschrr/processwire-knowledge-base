@@ -1,9 +1,13 @@
-# PagesLoaderCache::optionsArrayToString()
+# $pagesLoaderCache->optionsArrayToString(array $options): string
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Convert an options array to a string
 
-@param array $options
+## Arguments
 
-@return string
+- array $options
+
+## Return value
+
+string

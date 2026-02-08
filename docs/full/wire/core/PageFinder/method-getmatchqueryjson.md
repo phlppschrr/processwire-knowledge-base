@@ -1,17 +1,17 @@
-# PageFinder::getMatchQueryJSON()
+# $pageFinder->getMatchQueryJSON(DatabaseQuerySelect $q, $tableAlias, $subfields, $operator, $value): bool
 
 Source: `wire/core/PageFinder.php`
 
 Get match query when data is stored in a JSON DB column (future use)
 
-@param PageFinderDatabaseQuerySelect DatabaseQuerySelect $q
+## Arguments
 
-@param string $tableAlias
+- PageFinderDatabaseQuerySelect DatabaseQuerySelect $q
+- string $tableAlias
+- string $subfields
+- string $operator
+- string|int|array $value
 
-@param string $subfields
+## Return value
 
-@param string $operator
-
-@param string|int|array $value
-
-@return bool
+bool

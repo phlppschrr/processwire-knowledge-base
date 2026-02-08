@@ -1,4 +1,4 @@
-# WireFileTools::filePutContents()
+# $wireFileTools->filePutContents($filename, $contents, $flags = 0): int|bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -7,17 +7,20 @@ Create (overwrite or append) a file, put the $contents in it, and adjust permiss
 This is the same as PHP’s `file_put_contents()` except that it’s preferable to use this in
 ProcessWire because it adjusts the file permissions configured with `$config->chmodFile`.
 
+## Arguments
 
-@param string $filename Filename to write to
+- string $filename Filename to write to
+- string|mixed $contents Contents to write to file
+- int $flags Flags to modify behavior: - `FILE_APPEND` (constant): Append to file if it already exists. - `LOCK_EX` (constant): Acquire exclusive lock to file while writing.
 
-@param string|mixed $contents Contents to write to file
+## Return value
 
-@param int $flags Flags to modify behavior:
- - `FILE_APPEND` (constant): Append to file if it already exists.
- - `LOCK_EX` (constant): Acquire exclusive lock to file while writing.
+int|bool Number of bytes written or boolean false on fail
 
-@return int|bool Number of bytes written or boolean false on fail
+## Throws
 
-@throws WireException if given invalid $filename (since 3.0.118)
+- WireException if given invalid $filename (since 3.0.118)
 
-@see WireFileTools::fileGetContents()
+## See also
+
+- [WireFileTools::fileGetContents()](method-filegetcontents.md)

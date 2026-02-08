@@ -1,10 +1,13 @@
-# Session::getAll()
+# $session->getAll($ns = null): array
 
 Source: `wire/core/Session.php`
 
 Get all session variables in an associative array
 
+## Arguments
 
-@param object|string $ns Optional namespace
+- object|string $ns Optional namespace
 
-@return array
+## Return value
+
+array

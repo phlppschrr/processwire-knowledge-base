@@ -1,9 +1,13 @@
-# WireUpload::execute()
+# $wireUpload->execute(): array
 
 Source: `wire/core/WireUpload.php`
 
 Execute/process the upload
 
-@return array of uploaded filenames
+## Return value
 
-@throws WireException
+array of uploaded filenames
+
+## Throws
+
+- WireException

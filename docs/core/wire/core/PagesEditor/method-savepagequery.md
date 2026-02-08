@@ -1,4 +1,4 @@
-# PagesEditor::savePageQuery()
+# $pagesEditor->savePageQuery(Page $page, array $options): bool
 
 Source: `wire/core/PagesEditor.php`
 
@@ -6,10 +6,15 @@ Execute query to save to pages table
 
 triggers hooks: addReady, saveReady, statusChangeReady (when status changed)
 
-@param Page $page
+## Arguments
 
-@param array $options
+- Page $page
+- array $options
 
-@return bool
+## Return value
 
-@throws WireException|\Exception
+bool
+
+## Throws
+
+- WireException|\Exception

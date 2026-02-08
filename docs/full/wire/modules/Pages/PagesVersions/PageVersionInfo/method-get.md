@@ -1,9 +1,13 @@
-# PageVersionInfo::get()
+# $pageVersionInfo->get($key): mixed|NullPage|Page|User|null
 
 Source: `wire/modules/Pages/PagesVersions/PageVersionInfo.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return mixed|NullPage|Page|User|null
+- string $key
+
+## Return value
+
+mixed|NullPage|Page|User|null

@@ -1,13 +1,18 @@
-# PageFinder::count()
+# $pageFinder->count($selectors, $options = array()): int
 
 Source: `wire/core/PageFinder.php`
 
 Return a count of pages that match
 
-@param Selectors|string|array $selectors Selectors object, selector string or selector array
+## Arguments
 
-@param array $options
+- Selectors|string|array $selectors Selectors object, selector string or selector array
+- array $options
 
-@return int
+## Return value
 
-@since 3.0.121
+int
+
+## Meta
+
+- @since 3.0.121

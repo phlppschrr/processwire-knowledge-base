@@ -1,4 +1,4 @@
-# Modules::getFlags()
+# $modules->getFlags($class)
 
 Source: `wire/core/Modules.php`
 

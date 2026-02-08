@@ -1,11 +1,14 @@
-# FieldtypeHasFiles::hasFiles()
+# $fieldtypeHasFiles->hasFiles(Page $page, Field $field): bool
 
 Source: `wire/core/Interfaces.php`
 
 Whether or not given Page/Field has any files connected with it
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return bool
+## Return value
+
+bool

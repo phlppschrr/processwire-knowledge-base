@@ -1,4 +1,4 @@
-# PageTraversal::prevSibling()
+# $pageTraversal->prevSibling(Page $page, $selector = '', ?PageArray $siblings = null): Page|NullPage
 
 Source: `wire/core/PageTraversal.php`
 
@@ -16,10 +16,12 @@ When using a selector, note that this method operates only on visible children. 
 or "include=hidden", they will not work in the selector. Instead, you should provide the siblings already retrieved with
 one of those modifiers, and provide those siblings as the second argument to this function.
 
-@param Page $page
+## Arguments
 
-@param string|array $selector Optional selector. When specified, will find nearest previous sibling that matches.
+- Page $page
+- string|array $selector Optional selector. When specified, will find nearest previous sibling that matches.
+- PageArray|null $siblings Optional siblings to use instead of the default. May also be specified as first argument when no selector needed.
 
-@param PageArray|null $siblings Optional siblings to use instead of the default. May also be specified as first argument when no selector needed.
+## Return value
 
-@return Page|NullPage Returns the previous sibling page, or a NullPage if none found.
+Page|NullPage Returns the previous sibling page, or a NullPage if none found.

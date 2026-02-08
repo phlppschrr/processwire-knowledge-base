@@ -1,15 +1,19 @@
-# Password::randomDigits()
+# $password->randomDigits($length = 0, array $options = array()): string
 
 Source: `wire/core/Password.php`
 
 Return string of random digits
 
-@param int $length Required length of string or 0 for random length
+## Arguments
 
-@param array $options See WireRandom::numeric() method
+- int $length Required length of string or 0 for random length
+- array $options See WireRandom::numeric() method
 
-@return string
+## Return value
 
-@since 3.0.109
+string
 
-@deprecated Use WireRandom::numeric() instead
+## Meta
+
+- @since 3.0.109
+- @deprecated Use WireRandom::numeric() instead

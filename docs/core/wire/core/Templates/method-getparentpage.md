@@ -1,4 +1,4 @@
-# Templates::getParentPage()
+# $templates->getParentPage(Template $template, $checkAccess = false, $getAll = false): Page|NullPage|null|PageArray
 
 Source: `wire/core/Templates.php`
 
@@ -9,11 +9,12 @@ Return the parent page that this template assumes new pages are added to
 - If there is no defined parent, NULL is returned.
 - If there are multiple defined parents, a NullPage is returned (use $getAll to get them).
 
-@param Template $template
+## Arguments
 
-@param bool $checkAccess Whether or not to check for user access to do this (default=false).
+- Template $template
+- bool $checkAccess Whether or not to check for user access to do this (default=false).
+- bool|int $getAll Specify true to return all possible parents (makes method always return a PageArray) Or specify int of maximum allowed `Page::status*` constant for items in returned PageArray (since 3.0.138).
 
-@param bool|int $getAll Specify true to return all possible parents (makes method always return a PageArray)
-  Or specify int of maximum allowed `Page::status*` constant for items in returned PageArray (since 3.0.138).
+## Return value
 
-@return Page|NullPage|null|PageArray
+Page|NullPage|null|PageArray

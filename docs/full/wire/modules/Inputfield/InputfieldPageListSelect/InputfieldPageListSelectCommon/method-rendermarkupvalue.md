@@ -1,9 +1,13 @@
-# InputfieldPageListSelectCommon::renderMarkupValue()
+# $inputfieldPageListSelectCommon->renderMarkupValue($value): string
 
 Source: `wire/modules/Inputfield/InputfieldPageListSelect/InputfieldPageListSelectCommon.php`
 
 Render markup value for PageListSelect/PageListSelectMultiple
 
-@param int|int[] $value
+## Arguments
 
-@return string
+- int|int[] $value
+
+## Return value
+
+string

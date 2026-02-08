@@ -1,9 +1,13 @@
-# AdminThemeFramework::getPageIcon()
+# $adminThemeFramework->getPageIcon(Page $p): mixed|null|string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Get icon used by the given page
 
-@param Page $p
+## Arguments
 
-@return mixed|null|string
+- Page $p
+
+## Return value
+
+mixed|null|string

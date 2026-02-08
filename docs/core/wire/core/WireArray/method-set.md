@@ -1,14 +1,18 @@
-# WireArray::set()
+# $wireArray->set($key, $value): $this
 
 Source: `wire/core/WireArray.php`
 
 Set an item by key in the WireArray.
 
+## Arguments
 
-@param int|string $key Key of item to set.
+- int|string $key Key of item to set.
+- int|string|array|object|Wire $value Item value to set.
 
-@param int|string|array|object|Wire $value Item value to set.
+## Return value
 
-@throws WireException If given an item not compatible with this WireArray.
+$this
 
-@return $this
+## Throws
+
+- WireException If given an item not compatible with this WireArray.

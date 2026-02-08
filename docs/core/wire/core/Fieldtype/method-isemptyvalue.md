@@ -1,4 +1,4 @@
-# Fieldtype::isEmptyValue()
+# $fieldtype->isEmptyValue(Field $field, $value): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -21,9 +21,11 @@ prefer to handle the match, or false if not. Fieldtype modules do not need
 to consider this unless they want to override the default empty value match
 behavior in PageFinder::whereEmptyValuePossible().
 
+## Arguments
 
-@param Field $field
+- Field $field
+- mixed $value
 
-@param mixed $value
+## Return value
 
-@return bool
+bool

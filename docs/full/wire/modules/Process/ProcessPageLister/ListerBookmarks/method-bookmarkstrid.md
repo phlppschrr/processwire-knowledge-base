@@ -1,11 +1,14 @@
-# ListerBookmarks::bookmarkStrID()
+# $listerBookmarks->bookmarkStrID($val, $type): int
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Given an id or string key, return an bookmark string ID
 
-@param string|int $val
+## Arguments
 
-@param int $type
+- string|int $val
+- int $type
 
-@return int
+## Return value
+
+int

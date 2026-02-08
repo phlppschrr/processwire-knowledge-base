@@ -1,8 +1,9 @@
-# Pages::___added()
+# $pages->___added(Page $page)
 
 Source: `wire/core/Pages.php`
 
 Hook called after a new page has been added
 
+## Arguments
 
-@param Page $page Page that was added.
+- Page $page Page that was added.

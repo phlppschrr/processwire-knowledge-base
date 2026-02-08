@@ -1,19 +1,17 @@
-# WireDatabaseBackup::setDatabaseConfig()
+# $wireDatabaseBackup->setDatabaseConfig($config): $this
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Set the database configuration information
 
+## Arguments
 
-@param array|Config|object $config Containing these properties:
- - dbUser
- - dbHost
- - dbPort
- - dbName
-	- dbPass
- - dbPath (optional)
- - dbCharset (optional)
+- array|Config|object $config Containing these properties: - dbUser - dbHost - dbPort - dbName - dbPass - dbPath (optional) - dbCharset (optional)
 
-@return $this
+## Return value
 
-@throws \Exception if missing required config settings
+$this
+
+## Throws
+
+- \Exception if missing required config settings

@@ -1,4 +1,4 @@
-# Pagefiles::tags()
+# $pagefiles->tags($value = null): string|array|Pagefiles
 
 Source: `wire/core/Pagefiles.php`
 
@@ -18,15 +18,15 @@ $tagsArray = $page->files->tags(true);
 $pagefiles = $page->files->tags('foobar');
 ~~~~~
 
+## Arguments
 
-@param bool|string|array $value Specify one of the following:
- - Omit to return all tags as a string.
- - Boolean true if you want to return tags as an array (rather than string).
- - Boolean false to return tags as an array, with lowercase enforced.
- - String if you want to return files matching tags (See `Pagefiles::findTag()` method for usage)
- - Array if you want to return files matching tags (See `Pagefiles::findTag()` method for usage)
+- bool|string|array $value Specify one of the following: - Omit to return all tags as a string. - Boolean true if you want to return tags as an array (rather than string). - Boolean false to return tags as an array, with lowercase enforced. - String if you want to return files matching tags (See `Pagefiles::findTag()` method for usage) - Array if you want to return files matching tags (See `Pagefiles::findTag()` method for usage)
 
-@return string|array|Pagefiles Returns all tags as a string or an array, or Pagefiles matching given tag(s).
-  When a tags array is returned, it is an associative array where the key and value are both the tag (keys are always lowercase).
+## Return value
 
-@see Pagefiles::findTag(), Pagefile::tags()
+string|array|Pagefiles Returns all tags as a string or an array, or Pagefiles matching given tag(s). When a tags array is returned, it is an associative array where the key and value are both the tag (keys are always lowercase).
+
+## See also
+
+- [Pagefiles::findTag()](method-findtag.md)
+- [Pagefile::tags()](../Pagefile/method-tags.md)

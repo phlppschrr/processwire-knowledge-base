@@ -1,11 +1,14 @@
-# FieldtypeHasPagefiles::getPagefiles()
+# $fieldtypeHasPagefiles->getPagefiles(Page $page, Field $field): Pagefiles|Pagefile[]
 
 Source: `wire/core/Interfaces.php`
 
 Get Pagefiles
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return Pagefiles|Pagefile[]
+## Return value
+
+Pagefiles|Pagefile[]

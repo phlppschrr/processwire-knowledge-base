@@ -1,4 +1,4 @@
-# DatabaseQuerySelect::getQuery()
+# $databaseQuerySelect->getQuery()
 
 Source: `wire/core/DatabaseQuerySelect.php`
 

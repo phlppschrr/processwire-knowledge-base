@@ -1,11 +1,11 @@
-# WireSaveableItems::___renameReady()
+# $wireSaveableItems->___renameReady(Saveable $item, $oldName, $newName)
 
 Source: `wire/core/WireSaveableItems.php`
 
 Hook that runs right before item is to be renamed.
 
-@param Saveable $item
+## Arguments
 
-@param string $oldName
-
-@param string $newName
+- Saveable $item
+- string $oldName
+- string $newName

@@ -1,4 +1,4 @@
-# WireArray::not()
+# $wireArray->not($selector): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -9,9 +9,14 @@ Filter this WireArray to only include items that DO NOT match the selector (dest
 $pages->not("nonav");
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector
+- string|array|Selectors $selector
 
-@return $this reference to current instance.
+## Return value
 
-@see filterData
+$this reference to current instance.
+
+## See also
+
+- filterData

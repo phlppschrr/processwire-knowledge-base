@@ -1,9 +1,13 @@
-# ImageSizer::setOptions()
+# $imageSizer->setOptions(array $options): $this
 
 Source: `wire/core/ImageSizer.php`
 
 Set multiple resize options
 
-@param array $options
+## Arguments
 
-@return $this
+- array $options
+
+## Return value
+
+$this

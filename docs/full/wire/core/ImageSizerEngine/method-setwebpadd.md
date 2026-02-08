@@ -1,11 +1,14 @@
-# ImageSizerEngine::setWebpAdd()
+# $imageSizerEngine->setWebpAdd($webpAdd, $webpOnly = null): self
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Set flag to also create a webp file or not
 
-@param bool $webpAdd
+## Arguments
 
-@param bool|null $webpOnly
+- bool $webpAdd
+- bool|null $webpOnly
 
-@return self
+## Return value
+
+self

@@ -1,11 +1,17 @@
-# ImageInspector::checkOrientation()
+# $imageInspector->checkOrientation($filename): array
 
 Source: `wire/core/ImageInspector.php`
 
 Check orientation (@horst)
 
-@param array
+## Arguments
 
-@return array
+- array
 
-@todo there is already a checkOrientation method in ImageSizerEngine - do we need both?
+## Return value
+
+array
+
+## Meta
+
+- @todo there is already a checkOrientation method in ImageSizerEngine - do we need both?

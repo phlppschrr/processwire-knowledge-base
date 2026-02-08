@@ -1,4 +1,4 @@
-# SelectableOptionManager::setOptionsString()
+# $selectableOptionManager->setOptionsString(Field $field, $value, $allowDelete = true): array
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
@@ -14,13 +14,12 @@ For new options, specify just the option title
 (or value|title) on its own line. Options should
 be in the desired sort order.
 
-@param Field $field
+## Arguments
 
-@param string $value
+- Field $field
+- string $value
+- bool $allowDelete Allow removed lines in the string to result in deleted options? If false, no options will be affected but you can call the getRemovedOptionIDs() method to retrieve them for confirmation.
 
-@param bool $allowDelete Allow removed lines in the string to result in deleted options?
-	If false, no options will be affected but you can call the getRemovedOptionIDs() method
-	to retrieve them for confirmation.
+## Return value
 
-@return array containing ('added' => cnt, 'updated' => cnt, 'deleted' => cnt, 'marked' => cnt)
-	note: 'marked' means marked for deletion
+array containing ('added' => cnt, 'updated' => cnt, 'deleted' => cnt, 'marked' => cnt) note: 'marked' means marked for deletion

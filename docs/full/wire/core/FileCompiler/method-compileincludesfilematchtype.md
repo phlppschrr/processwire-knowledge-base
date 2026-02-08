@@ -1,11 +1,14 @@
-# FileCompiler::compileIncludesFileMatchType()
+# $fileCompiler->compileIncludesFileMatchType($fileMatch, $funcMatch): string|bool
 
 Source: `wire/core/FileCompiler.php`
 
 Returns fileMatch type of 'var', 'file', 'func' or boolean false if not valid
 
-@param string $fileMatch The $fileMatch var from compileIncludes() method
+## Arguments
 
-@param string $funcMatch include function name
+- string $fileMatch The $fileMatch var from compileIncludes() method
+- string $funcMatch include function name
 
-@return string|bool
+## Return value
+
+string|bool

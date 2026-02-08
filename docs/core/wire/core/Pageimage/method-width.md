@@ -1,4 +1,4 @@
-# Pageimage::width()
+# $pageimage->width($n = 0, $options = array()): int|Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -16,8 +16,11 @@ $px = $image->width();
 $thumb = $image->width(200);
 ~~~~~
 
-@param int $n Optional width if you are creating a new size.
+## Arguments
 
-@param array|string|int|bool $options See `Pageimage::size()` $options argument for details.
+- int $n Optional width if you are creating a new size.
+- array|string|int|bool $options See `Pageimage::size()` $options argument for details.
 
-@return int|Pageimage Returns width (in px) when given no arguments, or Pageimage when given a width argument.
+## Return value
+
+int|Pageimage Returns width (in px) when given no arguments, or Pageimage when given a width argument.

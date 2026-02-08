@@ -1,11 +1,17 @@
-# WireDataDB::load()
+# $wireDataDB->load($name): array|mixed|null
 
 Source: `wire/core/WireDataDB.php`
 
 Load a value or all values
 
-@param string|bool $name Property name to load or boolean true to load all
+## Arguments
 
-@return array|mixed|null
+- string|bool $name Property name to load or boolean true to load all
 
-@throws WireException
+## Return value
+
+array|mixed|null
+
+## Throws
+
+- WireException

@@ -1,9 +1,13 @@
-# Fieldtypes::isValidItem()
+# $fieldtypes->isValidItem($item): bool
 
 Source: `wire/core/Fieldtypes.php`
 
 Per WireArray interface, items added to Fieldtypes must be Fieldtype instances
 
-@param Wire|Fieldtype $item
+## Arguments
 
-@return bool
+- Wire|Fieldtype $item
+
+## Return value
+
+bool

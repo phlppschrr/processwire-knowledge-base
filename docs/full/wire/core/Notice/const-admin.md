@@ -4,4 +4,6 @@ Source: `wire/core/Notice.php`
 
 Ignore notice unless user is somewhere in the admin (login page included)
 
-@since 3.0.149
+## Meta
+
+- @since 3.0.149

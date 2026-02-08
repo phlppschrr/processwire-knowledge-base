@@ -1,13 +1,12 @@
-# PagesExportImport::importFieldValue()
+# $pagesExportImport->importFieldValue(Page $page, Field $field, $importValue, array $options)
 
 Source: `wire/core/PagesExportImport.php`
 
 Import value for a single field
 
-@param Page $page
+## Arguments
 
-@param Field $field
-
-@param array|string|int|float $importValue
-
-@param array $options Looks only at 'commit' option to determine when testing
+- Page $page
+- Field $field
+- array|string|int|float $importValue
+- array $options Looks only at 'commit' option to determine when testing

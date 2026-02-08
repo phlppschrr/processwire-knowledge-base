@@ -1,4 +1,4 @@
-# Page::getFormatted()
+# $page->getFormatted($key): mixed
 
 Source: `wire/core/Page.php`
 
@@ -12,9 +12,15 @@ produce the same result as this method call.
 $body = $page->getFormatted('body');
 ~~~~~
 
+## Arguments
 
-@param string $key Field or property name to retrieve
+- string $key Field or property name to retrieve
 
-@return mixed
+## Return value
 
-@see Page::getUnformatted(), Page::of()
+mixed
+
+## See also
+
+- [Page::getUnformatted()](method-getunformatted.md)
+- [Page::of()](method-of.md)

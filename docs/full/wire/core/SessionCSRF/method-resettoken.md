@@ -1,8 +1,9 @@
-# SessionCSRF::resetToken()
+# $sessionCSRF->resetToken($id = '')
 
 Source: `wire/core/SessionCSRF.php`
 
 Clear out token value
 
+## Arguments
 
-@param int|string|null $id Optional unique ID for this token
+- int|string|null $id Optional unique ID for this token

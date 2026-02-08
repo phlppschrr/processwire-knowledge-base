@@ -1,4 +1,4 @@
-# PageArray::getItemPropertyValue()
+# $pageArray->getItemPropertyValue(Wire $item, $property): mixed
 
 Source: `wire/core/PageArray.php`
 
@@ -8,8 +8,11 @@ Used by the WireArray::sort method to retrieve a value from a Wire object.
 If output formatting is on, we turn it off to ensure that the sorting
 is performed without output formatting.
 
-@param Wire $item
+## Arguments
 
-@param string $property
+- Wire $item
+- string $property
 
-@return mixed
+## Return value
+
+mixed

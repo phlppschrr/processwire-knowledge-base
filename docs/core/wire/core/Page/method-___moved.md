@@ -1,4 +1,4 @@
-# Page::___moved()
+# $page->___moved($oldParent, $newParent)
 
 Source: `wire/core/Page.php`
 
@@ -13,9 +13,11 @@ $wire->addHook('Page::moved', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param Page $oldParent
+- Page $oldParent
+- Page $newParent
 
-@param Page $newParent
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

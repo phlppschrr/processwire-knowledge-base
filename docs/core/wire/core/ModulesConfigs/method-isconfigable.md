@@ -1,4 +1,4 @@
-# ModulesConfigs::isConfigable()
+# $modulesConfigs->isConfigable($class, $useCache = true): bool|int|string
 
 Source: `wire/core/ModulesConfigs.php`
 
@@ -8,10 +8,15 @@ Indicates whether module accepts config settings, whether interactively or API o
 - Returns integer `30` if module accepts config settings but is not interactively configurable.
 - Returns true, int or string if module is interactively configurable, see `Modules::isConfigurable()` return values.
 
-@param string|Module $class
+## Arguments
 
-@param bool $useCache
+- string|Module $class
+- bool $useCache
 
-@return bool|int|string
+## Return value
 
-@since 3.0.179
+bool|int|string
+
+## Meta
+
+- @since 3.0.179

@@ -1,13 +1,15 @@
-# PageTraversal::numReferences()
+# $pageTraversal->numReferences(Page $page, $selector = '', $field = ''): int|array
 
 Source: `wire/core/PageTraversal.php`
 
 Return number of ANY pages that are following (referencing) the given one by way of Page references
 
-@param Page $page
+## Arguments
 
-@param string $selector Filter count by this selector
+- Page $page
+- string $selector Filter count by this selector
+- string|Field|bool $field Limit count to given Field or specify boolean true to return array of counts.
 
-@param string|Field|bool $field Limit count to given Field or specify boolean true to return array of counts.
+## Return value
 
-@return int|array Returns count, or array of counts (if $field==true)
+int|array Returns count, or array of counts (if $field==true)

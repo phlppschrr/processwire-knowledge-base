@@ -1,4 +1,4 @@
-# Page::___render()
+# $page->___render($options = [], $options2 = null): string|mixed
 
 Source: `wire/core/Page.php`
 
@@ -37,23 +37,21 @@ or save a new cache. Caches are only saved on guest users.
 
 For simpler and more specific methods, we recommend using, hooking or overriding `renderPage()` or `renderField()` instead.
 
+## Arguments
 
-@param array|string $options String of filename to use for render, field name to render, or array of options:
- - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own).
-	- `filename` (string): Filename to render, typically relative to /site/templates/. But absolute paths must resolve somewhere in PW’s install. (default='')
-	- `prependFile` (string): Filename to prepend to output, must be in /site/templates/ (default=$config->prependTemplateFile)
-	- `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/.
-	- `appendFile` (string): Filename to append to output, must be in /site/templates/.
-	- `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/.
-	- `pageStack` (array): An array of pages, when recursively rendering. Used internally. You can examine it but not change it.
-	- `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true)
-	- `forceBuildCache` (bool): If true, the cache will be re-created for this page, regardless of whether it’s expired or not. (default=false)
- -  Note that the prepend and append options above have default values in `$config` or with the Template.
+- array|string $options String of filename to use for render, field name to render, or array of options: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. But absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/ (default=$config->prependTemplateFile) - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `pageStack` (array): An array of pages, when recursively rendering. Used internally. You can examine it but not change it. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page, regardless of whether it’s expired or not. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
+- array $options2 If a filename or field name was used for $options then you may optionally specify options array here instead.
 
-@param array $options2 If a filename or field name was used for $options then you may optionally specify options array here instead.
+## Return value
 
-@return string|mixed
+string|mixed
 
-@throws WireException
+## Throws
 
-@see Page::renderPage(), Page::renderField(), Page::renderValue()
+- WireException
+
+## See also
+
+- [Page::renderPage()](method-___renderpage.md)
+- [Page::renderField()](method-___renderfield.md)
+- [Page::renderValue()](method-___rendervalue.md)

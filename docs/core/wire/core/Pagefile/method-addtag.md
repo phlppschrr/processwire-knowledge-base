@@ -1,4 +1,4 @@
-# Pagefile::addTag()
+# $pagefile->addTag($tag): $this
 
 Source: `wire/core/Pagefile.php`
 
@@ -11,11 +11,20 @@ $file->addTag('foo,bar,baz'); // add multiple tags
 $file->addTag(['foo', 'bar', 'baz']); // same as above, using array
 ~~~~~
 
+## Arguments
 
-@param string|array $tag Tag to add, or array of tags to add, or CSV string of tags to add.
+- string|array $tag Tag to add, or array of tags to add, or CSV string of tags to add.
 
-@return $this
+## Return value
 
-@since 3.0.17
+$this
 
-@see Pagefile::tags(), Pagefile::hasTag(), Pagefile::removeTag()
+## See also
+
+- [Pagefile::tags()](method-tags.md)
+- [Pagefile::hasTag()](method-hastag.md)
+- [Pagefile::removeTag()](method-removetag.md)
+
+## Meta
+
+- @since 3.0.17

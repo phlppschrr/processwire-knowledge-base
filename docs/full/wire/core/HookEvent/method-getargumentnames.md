@@ -1,7 +1,9 @@
-# HookEvent::getArgumentNames()
+# $hookEvent->getArgumentNames(): array
 
 Source: `wire/core/HookEvent.php`
 
 Return an array of all argument names, indexed by their position
 
-@return array
+## Return value
+
+array

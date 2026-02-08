@@ -1,7 +1,9 @@
-# DatabaseQuerySelectFulltext::tableField()
+# $databaseQuerySelectFulltext->tableField(): string
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Get 'tableName.fieldName' string
 
-@return string
+## Return value
+
+string

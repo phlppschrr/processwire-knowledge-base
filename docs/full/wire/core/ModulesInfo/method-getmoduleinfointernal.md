@@ -1,11 +1,14 @@
-# ModulesInfo::getModuleInfoInternal()
+# $modulesInfo->getModuleInfoInternal($module, $namespace = ''): array
 
 Source: `wire/core/ModulesInfo.php`
 
 Retrieve module info from internal getModuleInfo function in the class
 
-@param Module|string $module
+## Arguments
 
-@param string $namespace
+- Module|string $module
+- string $namespace
 
-@return array
+## Return value
+
+array

@@ -1,4 +1,4 @@
-# Sanitizer::sanitize()
+# $sanitizer->sanitize($value, $method = 'text'): string|int|array|float|null
 
 Source: `wire/core/Sanitizer.php`
 
@@ -16,11 +16,15 @@ $value = $sanitizer->sanitize($value, 'text,entities');
 $value = $sanitizer->sanitize($value, 'text128,entities');
 ~~~~~
 
+## Arguments
 
-@param mixed $value
+- mixed $value
+- string $method Method name "method", or combined method name(s) "method1,method2,method3"
 
-@param string $method Method name "method", or combined method name(s) "method1,method2,method3"
+## Return value
 
-@return string|int|array|float|null
+string|int|array|float|null
 
-@since 3.0.125
+## Meta
+
+- @since 3.0.125

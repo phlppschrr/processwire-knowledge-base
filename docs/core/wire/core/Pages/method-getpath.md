@@ -1,4 +1,4 @@
-# Pages::getPath()
+# $pages->getPath($id, $options = array()): string
 
 Source: `wire/core/Pages.php`
 
@@ -17,16 +17,19 @@ $path = $pages->getPath(1234);
 echo "Path for page 1234 is: $path";
 ~~~~~
 
+## Arguments
 
-@param int|Page $id ID of the page you want the path to
+- int|Page $id ID of the page you want the path to
+- null|array|Language|int|string $options Specify $options array or Language object, id or name. Allowed options include: - `language` (int|string|anguage): To retrieve in non-default language, specify language object, ID or name (default=null) - `useCache` (bool): Allow pulling paths from already loaded pages? (default=true) - `usePagePaths` (bool): Allow pulling paths from PagePaths module, if installed? (default=true)
 
-@param null|array|Language|int|string $options Specify $options array or Language object, id or name. Allowed options include:
- - `language` (int|string|anguage): To retrieve in non-default language, specify language object, ID or name (default=null)
- - `useCache` (bool): Allow pulling paths from already loaded pages? (default=true)
- - `usePagePaths` (bool): Allow pulling paths from PagePaths module, if installed? (default=true)
+## Return value
 
-@return string Path to page or blank on error/not-found.
+string Path to page or blank on error/not-found.
 
-@since 3.0.6
+## See also
 
-@see Page::path()
+- [Page::path()](../Page/method-path.md)
+
+## Meta
+
+- @since 3.0.6

@@ -1,11 +1,14 @@
-# Sanitizer::selectorValueV1()
+# $sanitizer->selectorValueV1($value, $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
 Sanitize selector value (original, version 1)
 
-@param $value
+## Arguments
 
-@param array $options
+- $value
+- array $options
 
-@return string
+## Return value
+
+string

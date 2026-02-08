@@ -1,9 +1,13 @@
-# PagesType::selectorString()
+# $pagesType->selectorString($selectorString): string
 
 Source: `wire/core/PagesType.php`
 
 Convert the given selector string to qualify for the proper page type
 
-@param string $selectorString
+## Arguments
 
-@return string
+- string $selectorString
+
+## Return value
+
+string

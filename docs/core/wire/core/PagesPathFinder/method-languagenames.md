@@ -1,7 +1,9 @@
-# PagesPathFinder::languageNames()
+# $pagesPathFinder->languageNames(): array
 
 Source: `wire/core/PagesPathFinder.php`
 
 Return all language names indexed by language id
 
-@return array
+## Return value
+
+array

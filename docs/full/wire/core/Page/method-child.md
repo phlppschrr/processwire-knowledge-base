@@ -1,4 +1,4 @@
-# Page::child()
+# $page->child($selector = '', $options = array()): Page|NullPage
 
 Source: `wire/core/Page.php`
 
@@ -12,11 +12,15 @@ Meaning, this method will only ever return one Page.
 $newestChild = $page->child("sort=-created");
 ~~~~~
 
+## Arguments
 
-@param string|array|int $selector Selector to use, or blank to return the first child.
+- string|array|int $selector Selector to use, or blank to return the first child.
+- array $options Optional options per Pages::find
 
-@param array $options Optional options per Pages::find
+## Return value
 
-@return Page|NullPage
+Page|NullPage
 
-@see Page::children()
+## See also
+
+- [Page::children()](method-children.md)

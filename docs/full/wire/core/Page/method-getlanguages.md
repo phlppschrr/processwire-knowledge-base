@@ -1,8 +1,9 @@
-# Page::getLanguages()
+# $page->getLanguages(): PageArray|null
 
 Source: `wire/core/Page.php`
 
 Get languages active for this page and viewable by current user
 
+## Return value
 
-@return PageArray|null Returns PageArray of languages, or null if language support is not active.
+PageArray|null Returns PageArray of languages, or null if language support is not active.

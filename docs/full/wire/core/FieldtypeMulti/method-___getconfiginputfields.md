@@ -1,4 +1,4 @@
-# FieldtypeMulti::___getConfigInputfields()
+# $fieldtypeMulti->___getConfigInputfields(Field $field): InputfieldWrapper
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -12,7 +12,10 @@ In most cases, you will want to implement the getConfigInputfields() or getConfi
 NOTE: Inputfields with a name that starts with an underscore, i.e. "_myname" are assumed to be for runtime
 use and are NOT stored in the database.
 
+## Arguments
 
-@param Field $field
+- Field $field
 
-@return InputfieldWrapper
+## Return value
+
+InputfieldWrapper

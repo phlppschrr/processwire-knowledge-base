@@ -1,4 +1,4 @@
-# MarkupQA::verbose()
+# $markupQA->verbose($set = null): bool
 
 Source: `wire/core/MarkupQA.php`
 
@@ -9,6 +9,10 @@ Whether or not to set/track verbose information to page, i.e.
 
 When getting, if $page or $field have not been populated, verbose is always false.
 
-@param bool|null $set Omit this argument to get or specify bool to set
+## Arguments
 
-@return bool
+- bool|null $set Omit this argument to get or specify bool to set
+
+## Return value
+
+bool

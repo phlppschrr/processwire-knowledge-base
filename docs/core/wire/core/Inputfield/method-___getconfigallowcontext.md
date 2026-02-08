@@ -1,4 +1,4 @@
-# Inputfield::___getConfigAllowContext()
+# $inputfield->___getConfigAllowContext($field): array
 
 Source: `wire/core/Inputfield.php`
 
@@ -14,9 +14,14 @@ in the admin.
 This is the equivalent to the `Fieldtype::getConfigAllowContext()` method, but for the "Input"
 tab rather than the "Details" tab.
 
+## Arguments
 
-@param Field $field
+- Field $field
 
-@return array of Inputfield names
+## Return value
 
-@see Fieldtype::getConfigAllowContext()
+array of Inputfield names
+
+## See also
+
+- [Fieldtype::getConfigAllowContext()](../Fieldtype/method-___getconfigallowcontext.md)

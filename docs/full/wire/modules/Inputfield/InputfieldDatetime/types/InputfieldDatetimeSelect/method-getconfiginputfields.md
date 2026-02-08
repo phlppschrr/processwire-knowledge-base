@@ -1,5 +1,8 @@
-# InputfieldDatetimeSelect::getConfigInputfields()
+# $inputfieldDatetimeSelect->getConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeSelect.php`
 
-@param InputfieldWrapper $inputfields
+
+## Arguments
+
+- InputfieldWrapper $inputfields

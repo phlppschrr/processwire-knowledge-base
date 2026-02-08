@@ -1,7 +1,9 @@
-# WireArray::__debugInfo()
+# $wireArray->__debugInfo(): array
 
 Source: `wire/core/WireArray.php`
 
 debugInfo PHP 5.6+ magic method
 
-@return array
+## Return value
+
+array

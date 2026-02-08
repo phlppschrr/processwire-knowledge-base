@@ -1,10 +1,13 @@
-# InputfieldWrapper::find()
+# $inputfieldWrapper->find($selector): InputfieldsArray
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Find all children Inputfields matching a selector string
 
+## Arguments
 
-@param string $selector Required selector string to filter the children by
+- string $selector Required selector string to filter the children by
 
-@return InputfieldsArray
+## Return value
+
+InputfieldsArray

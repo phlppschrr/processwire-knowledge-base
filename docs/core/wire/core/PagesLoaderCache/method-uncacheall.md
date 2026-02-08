@@ -1,13 +1,14 @@
-# PagesLoaderCache::uncacheAll()
+# $pagesLoaderCache->uncacheAll(?Page $page = null, array $options = array()): int
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Remove all pages from the cache
 
+## Arguments
 
-@param Page|null $page Optional Page that initiated the uncacheAll
+- Page|null $page Optional Page that initiated the uncacheAll
+- array $options Additional options to modify behavior: - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent call to $page->uncache(), set 'shallow' => true.
 
-@param array $options Additional options to modify behavior:
-  - `shallow` (bool): By default, this method also calls $page->uncache(). To prevent call to $page->uncache(), set 'shallow' => true.
+## Return value
 
-@return int Number of pages uncached
+int Number of pages uncached

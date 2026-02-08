@@ -1,14 +1,18 @@
-# WireDatabasePDO::setAttribute()
+# $wireDatabasePDO->setAttribute($attribute, $value): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Sets an attribute on the database handle
 
+## Arguments
 
-@param int $attribute
+- int $attribute
+- mixed $value
 
-@param mixed $value
+## Return value
 
-@return bool
+bool
 
-@link http://php.net/manual/en/pdo.setattribute.php
+## Meta
+
+- @link http://php.net/manual/en/pdo.setattribute.php

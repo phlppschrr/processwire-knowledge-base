@@ -1,13 +1,15 @@
-# Punycode::adapt()
+# $punycode->adapt($delta, $numPoints, $firstTime): integer
 
 Source: `wire/core/Punycode.php`
 
 Bias adaptation
 
-@param integer $delta
+## Arguments
 
-@param integer $numPoints
+- integer $delta
+- integer $numPoints
+- boolean $firstTime
 
-@param boolean $firstTime
+## Return value
 
-@return integer
+integer

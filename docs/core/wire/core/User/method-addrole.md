@@ -1,4 +1,4 @@
-# User::addRole()
+# $user->addRole($role): bool
 
 Source: `wire/core/User.php`
 
@@ -12,7 +12,10 @@ $user->addRole('editor');
 $user->save();
 ~~~~~
 
+## Arguments
 
-@param string|int|Role $role May be Role name, object, or ID.
+- string|int|Role $role May be Role name, object, or ID.
 
-@return bool Returns false if role not recognized, true otherwise
+## Return value
+
+bool Returns false if role not recognized, true otherwise

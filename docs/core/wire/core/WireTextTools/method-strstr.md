@@ -1,16 +1,19 @@
-# WireTextTools::strstr()
+# $wireTextTools->strstr($haystack, $needle, $beforeNeedle = false): false|string
 
 Source: `wire/core/WireTextTools.php`
 
 Find the first occurrence of a string
 
+## Arguments
 
-@param string $haystack
+- string $haystack
+- string $needle
+- bool $beforeNeedle Return part of haystack before first occurrence of the needle? (default=false)
 
-@param string $needle
+## Return value
 
-@param bool $beforeNeedle Return part of haystack before first occurrence of the needle? (default=false)
+false|string
 
-@return false|string
+## See also
 
-@see https://www.php.net/manual/en/function.strstr.php
+- [https://www.php.net/manual/en/function.strstr.php](https://www.php.net/manual/en/function.strstr.php)

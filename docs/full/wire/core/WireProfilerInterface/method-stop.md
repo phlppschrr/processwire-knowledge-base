@@ -1,9 +1,13 @@
-# WireProfilerInterface::stop()
+# $wireProfilerInterface->stop($event): void
 
 Source: `wire/core/Interfaces.php`
 
 Stop profiling an event
 
-@param array|object|string $event Event returned by start()
+## Arguments
 
-@return void
+- array|object|string $event Event returned by start()
+
+## Return value
+
+void

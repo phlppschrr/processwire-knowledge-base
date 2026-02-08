@@ -1,9 +1,13 @@
-# FieldtypeMulti::lockForWriting()
+# $fieldtypeMulti->lockForWriting(Field $field): bool
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Lock field table for writing
 
-@param Field $field
+## Arguments
 
-@return bool
+- Field $field
+
+## Return value
+
+bool

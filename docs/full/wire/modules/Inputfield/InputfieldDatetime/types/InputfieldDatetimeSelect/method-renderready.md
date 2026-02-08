@@ -1,4 +1,4 @@
-# InputfieldDatetimeSelect::renderReady()
+# $inputfieldDatetimeSelect->renderReady()
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeSelect.php`
 

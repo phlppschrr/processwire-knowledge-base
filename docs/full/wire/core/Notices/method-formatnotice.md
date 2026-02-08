@@ -1,7 +1,9 @@
-# Notices::formatNotice()
+# $notices->formatNotice(Notice $item)
 
 Source: `wire/core/Notices.php`
 
 Format Notice text
 
-@param Notice $item
+## Arguments
+
+- Notice $item

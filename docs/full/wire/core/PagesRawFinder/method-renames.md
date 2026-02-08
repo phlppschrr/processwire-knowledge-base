@@ -1,9 +1,13 @@
-# PagesRawFinder::renames()
+# $pagesRawFinder->renames(&$values)
 
 Source: `wire/core/PagesRaw.php`
 
 Rename fields on request
 
-@param array $values
+## Arguments
 
-@since 3.0.167
+- array $values
+
+## Meta
+
+- @since 3.0.167

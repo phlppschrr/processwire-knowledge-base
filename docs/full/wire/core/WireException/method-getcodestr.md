@@ -1,9 +1,13 @@
-# WireException::getCodeStr()
+# $wireException->getCodeStr(): string
 
 Source: `wire/core/Exceptions.php`
 
 Get alphanumeric/string code if set, blank string if not
 
-@return string
+## Return value
 
-@since 3.0.248
+string
+
+## Meta
+
+- @since 3.0.248

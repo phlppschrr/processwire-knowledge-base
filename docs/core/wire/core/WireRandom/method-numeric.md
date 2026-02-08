@@ -1,13 +1,18 @@
-# WireRandom::numeric()
+# $wireRandom->numeric($length = 0, array $options = array()): string
 
 Source: `wire/core/WireRandom.php`
 
 Return string of random numbers/digits
 
-@param int $length Required length of string or 0 for random length
+## Arguments
 
-@param array $options See options for alphanumeric() method
+- int $length Required length of string or 0 for random length
+- array $options See options for alphanumeric() method
 
-@return string
+## Return value
 
-@since 3.0.111
+string
+
+## Meta
+
+- @since 3.0.111

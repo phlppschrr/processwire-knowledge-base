@@ -1,4 +1,4 @@
-# Fieldtype::getMatchQuery()
+# $fieldtype->getMatchQuery($query, $table, $subfield, $operator, $value): PageFinderDatabaseQuerySelect|DatabaseQuerySelect
 
 Source: `wire/core/Fieldtype.php`
 
@@ -16,21 +16,18 @@ Note the following additional properties are available from the $query argument:
  - `$query->parentQuery` (DatabaseQuerySelect): Parent database query that $query will be merged into.
  - `$query->pageFinder` (PageFinder): The PageFinder instance that initiated the query, for additional info.
 
+## Arguments
 
-@param PageFinderDatabaseQuerySelect $query
+- PageFinderDatabaseQuerySelect $query
+- string $table The table name to use
+- string $subfield Name of the subfield (typically 'data', unless selector explicitly specified another)
+- string $operator The comparison operator. - This base Fieldtype class accepts only database operators (=, !=, >, >=, <, <=, &). - Other Fieldtypes may choose to accept more operators according to need of Fieldtype.
+- mixed $value Value to find. - If given array, this base Fieldtype class (only) will match via OR condition. (3.0.182+) - Other Fieldtypes may choose to interpret array values differently according need of Fieldtype.
 
-@param string $table The table name to use
+## Return value
 
-@param string $subfield Name of the subfield (typically 'data', unless selector explicitly specified another)
+PageFinderDatabaseQuerySelect|DatabaseQuerySelect $query
 
-@param string $operator The comparison operator.
- - This base Fieldtype class accepts only database operators (=, !=, >, >=, <, <=, &).
- - Other Fieldtypes may choose to accept more operators according to need of Fieldtype.
+## Throws
 
-@param mixed $value Value to find.
- - If given array, this base Fieldtype class (only) will match via OR condition. (3.0.182+)
- - Other Fieldtypes may choose to interpret array values differently according need of Fieldtype.
-
-@return PageFinderDatabaseQuerySelect|DatabaseQuerySelect $query
-
-@throws WireException
+- WireException

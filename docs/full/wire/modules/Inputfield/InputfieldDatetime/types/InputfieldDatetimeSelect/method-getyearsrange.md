@@ -1,9 +1,13 @@
-# InputfieldDatetimeSelect::getYearsRange()
+# $inputfieldDatetimeSelect->getYearsRange($valueYear): array
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeSelect.php`
 
 Get years range
 
-@param int $valueYear
+## Arguments
 
-@return array of [ $yearFrom, $yearTo ]
+- int $valueYear
+
+## Return value
+
+array of [ $yearFrom, $yearTo ]

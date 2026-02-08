@@ -1,4 +1,4 @@
-# Fieldtype::___formatValue()
+# $fieldtype->___formatValue(Page $page, Field $field, $value): mixed
 
 Source: `wire/core/Fieldtype.php`
 
@@ -9,11 +9,12 @@ but only if output formatting `$page->of()` is enabled. The most common use of t
 need to have some text formatting applied to them, like Markdown, SmartyPants, Textile, etc. As a result,
 Fieldtype modules don't need to implement this unless it's applicable.
 
+## Arguments
 
-@param Page $page Page that the value lives on
+- Page $page Page that the value lives on
+- Field $field Field that represents the value
+- string|int|object $value The value to format
 
-@param Field $field Field that represents the value
+## Return value
 
-@param string|int|object $value The value to format
-
-@return mixed
+mixed

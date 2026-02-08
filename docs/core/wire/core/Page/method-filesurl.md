@@ -1,12 +1,18 @@
-# Page::filesUrl()
+# $page->filesUrl(): string
 
 Source: `wire/core/Page.php`
 
 Returns the URL for files, creating it if it does not yet exist
 
+## Return value
 
-@return string
+string
 
-@see filesPath(), filesManager()
+## See also
 
-@since 3.0.138 You can use the equivalent but more verbose `$page->filesManager()->url()` in any version
+- filesPath()
+- filesManager()
+
+## Meta
+
+- @since 3.0.138 You can use the equivalent but more verbose `$page->filesManager()->url()` in any version

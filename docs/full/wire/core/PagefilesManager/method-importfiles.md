@@ -1,14 +1,18 @@
-# PagefilesManager::importFiles()
+# $pagefilesManager->importFiles($fromPath, $move = false): int
 
 Source: `wire/core/PagefilesManager.php`
 
 Copy/import files from given path into the page’s files directory
 
+## Arguments
 
-@param string $fromPath Path to copy/import files from.
+- string $fromPath Path to copy/import files from.
+- bool $move Move files into directory rather than copy?
 
-@param bool $move Move files into directory rather than copy?
+## Return value
 
-@return int Number of files/directories copied.
+int Number of files/directories copied.
 
-@since 3.0.114
+## Meta
+
+- @since 3.0.114

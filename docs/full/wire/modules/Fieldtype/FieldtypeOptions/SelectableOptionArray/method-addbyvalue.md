@@ -1,11 +1,17 @@
-# SelectableOptionArray::addByValue()
+# $selectableOptionArray->addByValue($value): false|SelectableOption
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Add by option value
 
-@param string $value
+## Arguments
 
-@return false|SelectableOption Returns option added on success or false on fail
+- string $value
 
-@throws WireException
+## Return value
+
+false|SelectableOption Returns option added on success or false on fail
+
+## Throws
+
+- WireException

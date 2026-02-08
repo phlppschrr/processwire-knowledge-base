@@ -1,10 +1,13 @@
-# PagesVersions::getNextPageVersionNumber()
+# $pagesVersions->getNextPageVersionNumber(Page $page): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Get next available version number for given page
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return int
+## Return value
+
+int

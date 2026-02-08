@@ -1,15 +1,16 @@
-# CommentNotifications::___sendNotificationEmail()
+# $commentNotifications->___sendNotificationEmail(Comment $comment, $email, $subcode, array $options = array()): int
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Send a user (not admin) notification email
 
-@param Comment $comment
+## Arguments
 
-@param string|array $email
+- Comment $comment
+- string|array $email
+- string $subcode Subscribe/unsubscribe code or blank string if not in use
+- array $options
 
-@param string $subcode Subscribe/unsubscribe code or blank string if not in use
+## Return value
 
-@param array $options
-
-@return int
+int

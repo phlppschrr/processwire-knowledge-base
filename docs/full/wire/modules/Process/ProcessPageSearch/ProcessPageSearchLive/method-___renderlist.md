@@ -1,13 +1,15 @@
-# ProcessPageSearchLive::___renderList()
+# $processPageSearchLive->___renderList(array $items, $prefix = 'pw-search', $class = 'list'): string
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Render “view all” list
 
-@param array $items
+## Arguments
 
-@param string $prefix For CSS classes, default is "pw-search"
+- array $items
+- string $prefix For CSS classes, default is "pw-search"
+- string $class Class name for list, default is "list" which translates to "pw-search-list"
 
-@param string $class Class name for list, default is "list" which translates to "pw-search-list"
+## Return value
 
-@return string HTML markup
+string HTML markup

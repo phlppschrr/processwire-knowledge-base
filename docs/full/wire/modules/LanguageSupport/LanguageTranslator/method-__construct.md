@@ -1,7 +1,9 @@
-# LanguageTranslator::__construct()
+# $languageTranslator->__construct(Language $currentLanguage)
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Construct the translator and set the current language
 
-@param Language $currentLanguage
+## Arguments
+
+- Language $currentLanguage

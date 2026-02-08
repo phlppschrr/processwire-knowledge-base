@@ -1,4 +1,4 @@
-# Tfa::___uninstall()
+# $tfa->___uninstall()
 
 Source: `wire/core/Tfa.php`
 

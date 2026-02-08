@@ -1,7 +1,9 @@
-# DatabaseQuerySelect::getQueryLimit()
+# $databaseQuerySelect->getQueryLimit(): string
 
 Source: `wire/core/DatabaseQuerySelect.php`
 
 Get LIMIT section of SQL
 
-@return string
+## Return value
+
+string

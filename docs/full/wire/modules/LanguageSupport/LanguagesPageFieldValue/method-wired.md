@@ -1,4 +1,4 @@
-# LanguagesPageFieldValue::wired()
+# $languagesPageFieldValue->wired()
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 

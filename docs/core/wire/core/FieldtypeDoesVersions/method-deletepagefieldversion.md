@@ -1,13 +1,15 @@
-# FieldtypeDoesVersions::deletePageFieldVersion()
+# $fieldtypeDoesVersions->deletePageFieldVersion(Page $page, Field $field, $version): bool
 
 Source: `wire/core/Interfaces.php`
 
 Delete version
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- int $version
 
-@param int $version
+## Return value
 
-@return bool
+bool

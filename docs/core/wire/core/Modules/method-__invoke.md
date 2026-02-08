@@ -1,9 +1,13 @@
-# Modules::__invoke()
+# $modules->__invoke($key): Module|null
 
 Source: `wire/core/Modules.php`
 
 Enables use of $modules('ModuleName')
 
-@param string $key
+## Arguments
 
-@return Module|null
+- string $key
+
+## Return value
+
+Module|null

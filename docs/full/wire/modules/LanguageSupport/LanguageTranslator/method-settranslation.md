@@ -1,15 +1,16 @@
-# LanguageTranslator::setTranslation()
+# $languageTranslator->setTranslation($textdomain, $text, $translation, $context = ''): string
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Set a translation
 
-@param string $textdomain
+## Arguments
 
-@param string $text
+- string $textdomain
+- string $text
+- string $translation
+- string $context
 
-@param string $translation
+## Return value
 
-@param string $context
-
-@return string
+string

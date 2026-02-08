@@ -1,4 +1,4 @@
-# Language::setLocale()
+# $language->setLocale($category = LC_ALL): string|bool
 
 Source: `wire/modules/LanguageSupport/Language.php`
 
@@ -6,8 +6,14 @@ Set the current locale to use settings defined for this language
 
 See the `Languages::setLocale()` method for full details.
 
-@param int $category Optional category (default=LC_ALL)
+## Arguments
 
-@return string|bool Returns the locale that was set or boolean false if requested locale cannot be set.
+- int $category Optional category (default=LC_ALL)
 
-@see Languages::setLocale()
+## Return value
+
+string|bool Returns the locale that was set or boolean false if requested locale cannot be set.
+
+## See also
+
+- [Languages::setLocale()](../Languages/method-setlocale.md)

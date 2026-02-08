@@ -1,10 +1,13 @@
-# Pages::___restoreReady()
+# $pages->___restoreReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
 Hook called when a page is about to be moved OUT of the trash (restored)
 
+## Arguments
 
-@param Page $page Page that is about to be restored
+- Page $page Page that is about to be restored
 
-@since 3.0.235
+## Meta
+
+- @since 3.0.235

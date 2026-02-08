@@ -1,11 +1,14 @@
-# NotificationArray::warning()
+# $notificationArray->warning($text, $flags = 0): Notification
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Record a warning notification
 
-@param string $text
+## Arguments
 
-@param int|bool $flags See Notification flags
+- string $text
+- int|bool $flags See Notification flags
 
-@return Notification
+## Return value
+
+Notification

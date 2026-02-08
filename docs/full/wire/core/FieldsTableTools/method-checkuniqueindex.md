@@ -1,11 +1,14 @@
-# FieldsTableTools::checkUniqueIndex()
+# $fieldsTableTools->checkUniqueIndex(Field $field, $verbose = true)
 
 Source: `wire/core/FieldsTableTools.php`
 
 Check state of field unique 'data' index and update as needed
 
-@param Field $field
+## Arguments
 
-@param bool $verbose Show messages when changes made? (default=true)
+- Field $field
+- bool $verbose Show messages when changes made? (default=true)
 
-@throws WireException
+## Throws
+
+- WireException

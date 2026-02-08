@@ -1,4 +1,4 @@
-# Page::numParents()
+# $page->numParents($selector = ''): int
 
 Source: `wire/core/Page.php`
 
@@ -7,6 +7,10 @@ Return number of parents (depth relative to homepage) that this page has, option
 For example, homepage has 0 parents and root level pages have 1 parent (which is the homepage), and the
 number increases the deeper the page is in the pages structure.
 
-@param string $selector Optional selector to filter by (default='')
+## Arguments
 
-@return int Number of parents
+- string $selector Optional selector to filter by (default='')
+
+## Return value
+
+int Number of parents

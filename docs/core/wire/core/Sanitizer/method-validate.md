@@ -1,4 +1,4 @@
-# Sanitizer::validate()
+# $sanitizer->validate($value, $method = 'text', $fallback = null): null|mixed
 
 Source: `wire/core/Sanitizer.php`
 
@@ -20,12 +20,16 @@ $sanitizer->validate('abc', 'alpha'); // valid: returns 'abc'
 $sanitizer->validate('abc123', 'alpha'); invalid: returns null
 ~~~~~
 
-@param string|int|array|float $value Value to validate
+## Arguments
 
-@param string $method Saniatizer method name or CSV names combo
+- string|int|array|float $value Value to validate
+- string $method Saniatizer method name or CSV names combo
+- null|mixed mixed $fallback Optionally return this fallback value (rather than null) if value does not validate
 
-@param null|mixed mixed $fallback Optionally return this fallback value (rather than null) if value does not validate
+## Return value
 
-@return null|mixed Returns sanitized value if it validates or null (or given fallback) if value does not validate
+null|mixed Returns sanitized value if it validates or null (or given fallback) if value does not validate
 
-@since 3.0.125
+## Meta
+
+- @since 3.0.125

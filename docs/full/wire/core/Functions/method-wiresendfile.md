@@ -1,4 +1,4 @@
-# Functions::wireSendFile()
+# $functions->wireSendFile($filename, array $options = array(), array $headers = array())
 
 Source: `wire/core/Functions.php`
 
@@ -11,13 +11,17 @@ This function throws a WireException if the file can’t be sent for some reason
 
 This is procedural version of the `$files->send()` method. See that method for all options.
 
+## Arguments
 
-@param string $filename Full path and filename to send
+- string $filename Full path and filename to send
+- array $options Optional options that you may pass in (see `WireHttp::sendFile()` for details)
+- array $headers Optional headers that are sent (see `WireHttp::sendFile()` for details)
 
-@param array $options Optional options that you may pass in (see `WireHttp::sendFile()` for details)
+## Throws
 
-@param array $headers Optional headers that are sent (see `WireHttp::sendFile()` for details)
+- WireException
 
-@throws WireException
+## See also
 
-@see WireHttp::sendFile(), WireFileTools::send()
+- [WireHttp::sendFile()](../WireHttp/method-___sendfile.md)
+- [WireFileTools::send()](../WireFileTools/method-send.md)

@@ -1,5 +1,8 @@
-# WireArrayItem::getWireArray()
+# $wireArrayItem->getWireArray(): WireArray
 
 Source: `wire/core/Interfaces.php`
 
-@return WireArray
+
+## Return value
+
+WireArray

@@ -1,9 +1,13 @@
-# NotificationArray::add()
+# $notificationArray->add($item): self|NotificationArray|WireArray
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Add a Notification instance to this NotificationArray
 
-@param Notification $item
+## Arguments
 
-@return self|NotificationArray|WireArray
+- Notification $item
+
+## Return value
+
+self|NotificationArray|WireArray

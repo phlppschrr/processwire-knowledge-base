@@ -1,9 +1,13 @@
-# PageFinder::supportsLanguagePageNames()
+# $pageFinder->supportsLanguagePageNames(): bool
 
 Source: `wire/core/PageFinder.php`
 
 Are multi-language page names supported?
 
-@return bool
+## Return value
 
-@since 3.0.165
+bool
+
+## Meta
+
+- @since 3.0.165

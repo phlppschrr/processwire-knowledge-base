@@ -1,4 +1,4 @@
-# InputfieldWrapper::getByAttr()
+# $inputfieldWrapper->getByAttr($attrName, $attrValue): Inputfield|InputfieldWrapper|null
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -6,11 +6,15 @@ Given an attribute name and value, return the first matching Inputfield or null 
 
 This traverses all children recursively to find the requested Inputfield.
 
+## Arguments
 
-@param string $attrName Attribute to match, such as 'id', 'name', 'value', etc.
+- string $attrName Attribute to match, such as 'id', 'name', 'value', etc.
+- string $attrValue Attribute value to match
 
-@param string $attrValue Attribute value to match
+## Return value
 
-@return Inputfield|InputfieldWrapper|null
+Inputfield|InputfieldWrapper|null
 
-@since 3.0.196
+## Meta
+
+- @since 3.0.196

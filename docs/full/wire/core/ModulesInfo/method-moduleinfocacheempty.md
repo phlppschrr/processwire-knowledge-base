@@ -1,7 +1,9 @@
-# ModulesInfo::moduleInfoCacheEmpty()
+# $modulesInfo->moduleInfoCacheEmpty(): bool
 
 Source: `wire/core/ModulesInfo.php`
 
 Is the module info cache empty?
 
-@return bool
+## Return value
+
+bool

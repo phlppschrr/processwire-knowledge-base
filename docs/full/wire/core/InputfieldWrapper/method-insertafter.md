@@ -1,4 +1,4 @@
-# InputfieldWrapper::insertAfter()
+# $inputfieldWrapper->insertAfter($item, $existingItem): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -19,9 +19,11 @@ $form->insertBefore('last_name', 'first_name');
 $form->insertAfter([ 'type' => 'text', 'name' => 'last_name' ], 'first_name');
 ~~~~~
 
+## Arguments
 
-@param Inputfield|array|string $item Item to insert
+- Inputfield|array|string $item Item to insert
+- Inputfield|string $existingItem Existing item you want to insert after.
 
-@param Inputfield|string $existingItem Existing item you want to insert after.
+## Return value
 
-@return $this
+$this

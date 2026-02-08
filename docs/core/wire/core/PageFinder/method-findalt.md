@@ -1,13 +1,15 @@
-# PageFinder::findAlt()
+# $pageFinder->findAlt($selectors, $options, $matches): array
 
 Source: `wire/core/PageFinder.php`
 
 Perform an alternate/fallback find when first fails to match and alternate operators available
 
-@param Selectors $selectors
+## Arguments
 
-@param array $options
+- Selectors $selectors
+- array $options
+- array $matches
 
-@param array $matches
+## Return value
 
-@return array
+array

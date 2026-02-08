@@ -1,11 +1,17 @@
-# PagefileExtra::___noCacheURL()
+# $pagefileExtra->___noCacheURL($http = false): string
 
 Source: `wire/core/PagefileExtra.php`
 
 Get cache busted URL
 
-@param bool $http
+## Arguments
 
-@return string
+- bool $http
 
-@since 3.0.194
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.194

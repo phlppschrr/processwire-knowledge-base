@@ -1,10 +1,13 @@
-# FunctionsAPI::database()
+# $functionsAPI->database(): WireDatabasePDO
 
 Source: `wire/core/FunctionsAPI.php`
 
 Create and execute PDO database queries ($database API variable as a function)
 
+## Return value
 
-@return WireDatabasePDO
+WireDatabasePDO
 
-@see WireDatabasePDO
+## See also
+
+- WireDatabasePDO

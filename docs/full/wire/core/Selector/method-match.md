@@ -1,11 +1,14 @@
-# Selector::match()
+# $selector->match($value1, $value2): bool
 
 Source: `wire/core/Selector.php`
 
 Does $value1 match $value2?
 
-@param mixed $value1 Dynamic comparison value
+## Arguments
 
-@param string $value2 User-supplied value to compare against
+- mixed $value1 Dynamic comparison value
+- string $value2 User-supplied value to compare against
 
-@return bool
+## Return value
+
+bool

@@ -1,4 +1,4 @@
-# Page::addStatus()
+# $page->addStatus($statusFlag): $this
 
 Source: `wire/core/Page.php`
 
@@ -14,9 +14,15 @@ $page->addStatus('hidden');
 $page->addStatus(Page::statusHidden);
 ~~~~~
 
+## Arguments
 
-@param int|string $statusFlag Status flag constant or string representation (hidden, locked, unpublished, etc.)
+- int|string $statusFlag Status flag constant or string representation (hidden, locked, unpublished, etc.)
 
-@return $this
+## Return value
 
-@see Page::removeStatus(), Page::hasStatus()
+$this
+
+## See also
+
+- [Page::removeStatus()](method-removestatus.md)
+- [Page::hasStatus()](method-hasstatus.md)

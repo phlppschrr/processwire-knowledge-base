@@ -1,7 +1,9 @@
-# AdminThemeUikitConfigHelper::__construct()
+# $adminThemeUikitConfigHelper->__construct(AdminThemeUikit $adminTheme)
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/config.php`
 
 Construct
 
-@param AdminThemeUikit $adminTheme
+## Arguments
+
+- AdminThemeUikit $adminTheme

@@ -1,4 +1,4 @@
-# ProcessWire::___init()
+# $processWire->___init()
 
 Source: `wire/core/ProcessWire.php`
 

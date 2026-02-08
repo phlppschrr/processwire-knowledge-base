@@ -1,4 +1,4 @@
-# Wire::removeHook()
+# $wire->removeHook($hookId): $this
 
 Source: `wire/core/Wire.php`
 
@@ -23,8 +23,10 @@ $hookID = $pages->addHookAfter('find', function($event) {
 });
 ~~~~~
 
+## Arguments
 
-@param string|array|null $hookId ID of hook to remove (ID is returned by the addHook() methods)
- Since 3.0.137 it may also be an array or CSV string of hook IDs to remove.
+- string|array|null $hookId ID of hook to remove (ID is returned by the addHook() methods) Since 3.0.137 it may also be an array or CSV string of hook IDs to remove.
 
-@return $this
+## Return value
+
+$this

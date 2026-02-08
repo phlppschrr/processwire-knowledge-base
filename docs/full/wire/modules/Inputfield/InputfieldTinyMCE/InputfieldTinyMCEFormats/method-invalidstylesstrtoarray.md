@@ -1,11 +1,14 @@
-# InputfieldTinyMCEFormats::invalidStylesStrToArray()
+# $inputfieldTinyMCEFormats->invalidStylesStrToArray($value, array $a = array()): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Convert invalid_styles string to array
 
-@param string $value i.e. "line-height color a=background|background-color td=height"
+## Arguments
 
-@param array $a Optionally merge with these styles
+- string $value i.e. "line-height color a=background|background-color td=height"
+- array $a Optionally merge with these styles
 
-@return array
+## Return value
+
+array

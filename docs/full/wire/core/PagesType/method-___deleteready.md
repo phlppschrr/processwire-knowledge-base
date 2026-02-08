@@ -1,10 +1,13 @@
-# PagesType::___deleteReady()
+# $pagesType->___deleteReady(Page $page)
 
 Source: `wire/core/PagesType.php`
 
 Hook called when a page is about to be deleted, but before data has been touched
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@since 3.0.128
+## Meta
+
+- @since 3.0.128

@@ -1,4 +1,4 @@
-# Fieldtype::___loadPageField()
+# $fieldtype->___loadPageField(Page $page, Field $field): mixed|null
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,9 +10,11 @@ Load the given page field from the database table and return the value.
 - Typically this is only called for fields that don't have 'autojoin' turned on.
 - Any actual conversion of the value should be handled by the `Fieldtype::wakeupValue()` method.
 
+## Arguments
 
-@param Page $page Page object to save.
+- Page $page Page object to save.
+- Field $field Field to retrieve from the page.
 
-@param Field $field Field to retrieve from the page.
+## Return value
 
-@return mixed|null
+mixed|null

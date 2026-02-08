@@ -1,12 +1,17 @@
-# Sanitizer::textdomain()
+# $sanitizer->textdomain($value): string
 
 Source: `wire/core/Sanitizer.php`
 
 Sanitize as language textdomain
 
+## Arguments
 
-@param string $value
+- string $value
 
-@return string
+## Return value
 
-@since 3.0.181
+string
+
+## Meta
+
+- @since 3.0.181

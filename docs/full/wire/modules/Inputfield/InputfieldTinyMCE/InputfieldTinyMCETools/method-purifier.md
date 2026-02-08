@@ -1,5 +1,8 @@
-# InputfieldTinyMCETools::purifier()
+# $inputfieldTinyMCETools->purifier(): MarkupHTMLPurifier
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
-@return MarkupHTMLPurifier
+
+## Return value
+
+MarkupHTMLPurifier

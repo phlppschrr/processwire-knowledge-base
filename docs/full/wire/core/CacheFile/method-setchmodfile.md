@@ -1,9 +1,13 @@
-# CacheFile::setChmodFile()
+# $cacheFile->setChmodFile($mode)
 
 Source: `wire/core/CacheFile.php`
 
 Set the octal mode for files created by CacheFile
 
-@param string $mode
+## Arguments
 
-@deprecated No longer used
+- string $mode
+
+## Meta
+
+- @deprecated No longer used

@@ -1,7 +1,9 @@
-# LanguagesPageFieldValue::getField()
+# $languagesPageFieldValue->getField(): Field|null
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
 Get field that value is for
 
-@return Field|null
+## Return value
+
+Field|null

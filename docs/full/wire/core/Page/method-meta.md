@@ -1,4 +1,4 @@
-# Page::meta()
+# $page->meta($key = '', $value = null): WireDataDB|string|array|int|float
 
 Source: `wire/core/Page.php`
 
@@ -37,11 +37,15 @@ $meta = $page->meta();
 $values = $meta->getArray();
 ~~~~~
 
+## Arguments
 
-@param string|bool $key Omit to get the WireData instance or specify property name to get or set.
+- string|bool $key Omit to get the WireData instance or specify property name to get or set.
+- null|mixed $value Value to set for given $key or omit if getting a value.
 
-@param null|mixed $value Value to set for given $key or omit if getting a value.
+## Return value
 
-@return WireDataDB|string|array|int|float
+WireDataDB|string|array|int|float
 
-@since 3.0.133
+## Meta
+
+- @since 3.0.133

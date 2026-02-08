@@ -1,17 +1,17 @@
-# ProcessPageSearchLive::makeViewAllItem()
+# $processPageSearchLive->makeViewAllItem(&$liveSearch, $type, $group, $total, $url = ''): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Make a search result item that displays a “view all” link
 
-@param array $liveSearch
+## Arguments
 
-@param string $type
+- array $liveSearch
+- string $type
+- string $group
+- int $total
+- string $url If module provides its own view-all URL
 
-@param string $group
+## Return value
 
-@param int $total
-
-@param string $url If module provides its own view-all URL
-
-@return array
+array

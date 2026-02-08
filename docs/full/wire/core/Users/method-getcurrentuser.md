@@ -1,7 +1,9 @@
-# Users::getCurrentUser()
+# $users->getCurrentUser(): User
 
 Source: `wire/core/Users.php`
 
 Returns the current user object
 
-@return User
+## Return value
+
+User

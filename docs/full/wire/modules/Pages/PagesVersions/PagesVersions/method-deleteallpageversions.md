@@ -1,10 +1,13 @@
-# PagesVersions::deleteAllPageVersions()
+# $pagesVersions->deleteAllPageVersions(Page $page): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Delete all versions for given page
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return int Number of versions deleted
+## Return value
+
+int Number of versions deleted

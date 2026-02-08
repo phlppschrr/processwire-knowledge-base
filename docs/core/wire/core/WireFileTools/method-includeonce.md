@@ -1,4 +1,4 @@
-# WireFileTools::includeOnce()
+# $wireFileTools->includeOnce($filename, array $vars = array(), array $options = array()): bool
 
 Source: `wire/core/WireFileTools.php`
 
@@ -6,15 +6,20 @@ Same as include() method except that file will not be executed if it as previous
 
 See the `WireFileTools::include()` method for details, arguments and options.
 
+## Arguments
 
-@param string $filename
+- string $filename
+- array $vars
+- array $options
 
-@param array $vars
+## Return value
 
-@param array $options
+bool
 
-@return bool
+## See also
 
-@see WireFileTools::include()
+- [WireFileTools::include()](method-___include.md)
 
-@since 3.0.96
+## Meta
+
+- @since 3.0.96

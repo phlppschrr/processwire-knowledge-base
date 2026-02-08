@@ -1,13 +1,18 @@
-# PagesVersions::getSleepValueFromDatabase()
+# $pagesVersions->getSleepValueFromDatabase(Page $page, Field $field): array|int|mixed|string
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 Get sleep value from the page field’s field_name table data in database
 
-@todo method currently not used but may be later
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
 
-@param Field $field
+## Return value
 
-@return array|int|mixed|string
+array|int|mixed|string
+
+## Meta
+
+- @todo method currently not used but may be later

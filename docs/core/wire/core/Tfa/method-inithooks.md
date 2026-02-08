@@ -1,4 +1,4 @@
-# Tfa::initHooks()
+# $tfa->initHooks()
 
 Source: `wire/core/Tfa.php`
 

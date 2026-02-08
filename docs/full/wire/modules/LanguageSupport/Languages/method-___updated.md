@@ -1,10 +1,10 @@
-# Languages::___updated()
+# $languages->___updated(Page $language, $what)
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Hook called when a language is added or deleted
 
+## Arguments
 
-@param Page $language
-
-@param string $what What occurred? ('added' or 'deleted')
+- Page $language
+- string $what What occurred? ('added' or 'deleted')

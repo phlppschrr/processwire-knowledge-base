@@ -1,4 +1,4 @@
-# WireHooks::isMethodHooked()
+# $wireHooks->isMethodHooked($class, $method): bool
 
 Source: `wire/core/WireHooks.php`
 
@@ -6,8 +6,11 @@ Similar to isHooked() method but also checks parent classes for the hooked metho
 
 This method is designed for fast determinations of whether something is hooked
 
-@param string|Wire $class
+## Arguments
 
-@param string $method Name of method
+- string|Wire $class
+- string $method Name of method
 
-@return bool
+## Return value
+
+bool

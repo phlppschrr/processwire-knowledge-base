@@ -1,4 +1,4 @@
-# Fieldgroup::__toString()
+# $fieldgroup->__toString()
 
 Source: `wire/core/Fieldgroup.php`
 

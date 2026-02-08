@@ -1,9 +1,13 @@
-# WireMailInterface::subject()
+# $wireMailInterface->subject($subject): self
 
 Source: `wire/core/WireMailInterface.php`
 
 Set the email subject
 
-@param string $subject
+## Arguments
 
-@return self
+- string $subject
+
+## Return value
+
+self

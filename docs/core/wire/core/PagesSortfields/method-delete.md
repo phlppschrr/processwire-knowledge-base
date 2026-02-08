@@ -1,9 +1,13 @@
-# PagesSortfields::delete()
+# $pagesSortfields->delete(Page $page): bool
 
 Source: `wire/core/PagesSortfields.php`
 
 Delete the sortfield for a given Page
 
-@param Page
+## Arguments
 
-@return bool
+- Page
+
+## Return value
+
+bool

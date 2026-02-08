@@ -1,9 +1,13 @@
-# WireMarkupRegions::hasRegionActions()
+# $wireMarkupRegions->hasRegionActions(&$html): bool
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Does the given HTML markup have references to any pw-actions?
 
-@param string $html
+## Arguments
 
-@return bool
+- string $html
+
+## Return value
+
+bool

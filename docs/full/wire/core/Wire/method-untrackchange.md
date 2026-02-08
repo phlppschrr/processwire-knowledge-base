@@ -1,10 +1,13 @@
-# Wire::untrackChange()
+# $wire->untrackChange($what): $this
 
 Source: `wire/core/Wire.php`
 
 Untrack a change to a property in this object
 
+## Arguments
 
-@param string $what Name of property that you want to remove its change being tracked
+- string $what Name of property that you want to remove its change being tracked
 
-@return $this
+## Return value
+
+$this

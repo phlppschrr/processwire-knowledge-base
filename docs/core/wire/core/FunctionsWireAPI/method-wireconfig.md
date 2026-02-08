@@ -1,4 +1,4 @@
-# FunctionsWireAPI::wireConfig()
+# $functionsWireAPI->wireConfig($key = '', $value = null): Config|mixed
 
 Source: `wire/core/FunctionsWireAPI.php`
 
@@ -12,8 +12,11 @@ config()->debug = true; // Set value of debug
 config('debug', true);  // Same as above
 ~~~~~
 
-@param string $key
+## Arguments
 
-@param null $value
+- string $key
+- null $value
 
-@return Config|mixed
+## Return value
+
+Config|mixed

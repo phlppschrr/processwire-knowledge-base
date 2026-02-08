@@ -1,9 +1,13 @@
-# ListerBookmarks::isValidPageKey()
+# $listerBookmarks->isValidPageKey($val): bool
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Is the given page ID or key valid and existing?
 
-@param int|string $val
+## Arguments
 
-@return bool
+- int|string $val
+
+## Return value
+
+bool

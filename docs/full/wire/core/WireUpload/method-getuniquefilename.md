@@ -1,9 +1,13 @@
-# WireUpload::getUniqueFilename()
+# $wireUpload->getUniqueFilename($destination): string
 
 Source: `wire/core/WireUpload.php`
 
 Given a filename/path destination, adjust it to ensure it is unique
 
-@param string $destination
+## Arguments
 
-@return string
+- string $destination
+
+## Return value
+
+string

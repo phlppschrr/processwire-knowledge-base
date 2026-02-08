@@ -1,4 +1,4 @@
-# Session::setFor()
+# $session->setFor($ns, $key, $value): $this
 
 Source: `wire/core/Session.php`
 
@@ -11,11 +11,12 @@ To remove a namespace, use `$session->remove($namespace)`.
 $session->setFor($this, 'firstName', 'Bob');
 ~~~~~
 
+## Arguments
 
-@param string|object $ns Namespace string or object.
+- string|object $ns Namespace string or object.
+- string $key Name of session variable you want to set.
+- mixed $value Value you want to set, or specify null to unset.
 
-@param string $key Name of session variable you want to set.
+## Return value
 
-@param mixed $value Value you want to set, or specify null to unset.
-
-@return $this
+$this

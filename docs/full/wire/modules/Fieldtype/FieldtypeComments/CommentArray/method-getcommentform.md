@@ -1,11 +1,17 @@
-# CommentArray::getCommentForm()
+# $commentArray->getCommentForm(array $options = array()): CommentForm
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Return instance of CommentForm object
 
-@param array $options
+## Arguments
 
-@return CommentForm
+- array $options
 
-@throws WireException
+## Return value
+
+CommentForm
+
+## Throws
+
+- WireException

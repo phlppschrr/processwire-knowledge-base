@@ -1,9 +1,13 @@
-# Tfa::url()
+# $tfa->url($queryString = ''): string
 
 Source: `wire/core/Tfa.php`
 
 Get the start URL and optionally append query string
 
-@param string $queryString
+## Arguments
 
-@return string
+- string $queryString
+
+## Return value
+
+string

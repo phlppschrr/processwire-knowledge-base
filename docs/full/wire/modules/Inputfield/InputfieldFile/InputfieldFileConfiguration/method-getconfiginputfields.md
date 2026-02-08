@@ -1,9 +1,10 @@
-# InputfieldFileConfiguration::getConfigInputfields()
+# $inputfieldFileConfiguration->getConfigInputfields($field, $inputfields)
 
 Source: `wire/modules/Inputfield/InputfieldFile/config.php`
 
 Configuration settings for InputfieldFile
 
-@param InputfieldFile|Field $field
+## Arguments
 
-@param InputfieldWrapper $inputfields
+- InputfieldFile|Field $field
+- InputfieldWrapper $inputfields

@@ -1,4 +1,4 @@
-# WireInputDataCookie::get()
+# $wireInputDataCookie->get($key, $options = array()): string|int|float|array|null
 
 Source: `wire/core/WireInputDataCookie.php`
 
@@ -13,8 +13,11 @@ $val = $input->cookie->get('foo'); // same as above
 $val = $input->cookie->text('foo'); // get and use text sanitizer
 ~~~~~
 
-@param string $key Name of cookie to get
+## Arguments
 
-@param array|int|string $options Options not currently used, but available for descending classes or future use
+- string $key Name of cookie to get
+- array|int|string $options Options not currently used, but available for descending classes or future use
 
-@return string|int|float|array|null $value
+## Return value
+
+string|int|float|array|null $value

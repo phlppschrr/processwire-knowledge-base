@@ -1,4 +1,4 @@
-# PagesRequest::getPageInfo()
+# $pagesRequest->getPageInfo(): array
 
 Source: `wire/core/PagesRequest.php`
 
@@ -10,6 +10,10 @@ what this method returns.
 If this method returns a blank array, it means that the getPage()
 method has not yet been called or that it did not match a page.
 
-@return array
+## Return value
 
-@since 3.0.242
+array
+
+## Meta
+
+- @since 3.0.242

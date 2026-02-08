@@ -1,7 +1,12 @@
-# AdminThemeUikitLessInterface::addFiles()
+# $adminThemeUikitLessInterface->addFiles($files): self
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
-@param array $files
 
-@return self
+## Arguments
+
+- array $files
+
+## Return value
+
+self

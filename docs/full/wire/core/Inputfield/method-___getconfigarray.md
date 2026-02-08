@@ -1,4 +1,4 @@
-# Inputfield::___getConfigArray()
+# $inputfield->___getConfigArray(): array
 
 Source: `wire/core/Inputfield.php`
 
@@ -24,5 +24,6 @@ public function ___getConfigArray() {
 );
 ~~~~~
 
+## Return value
 
-@return array
+array

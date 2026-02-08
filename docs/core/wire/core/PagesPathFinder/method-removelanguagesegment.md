@@ -1,9 +1,13 @@
-# PagesPathFinder::removeLanguageSegment()
+# $pagesPathFinder->removeLanguageSegment($path): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Remove any language segments present on given path
 
-@param string $path
+## Arguments
 
-@return string
+- string $path
+
+## Return value
+
+string

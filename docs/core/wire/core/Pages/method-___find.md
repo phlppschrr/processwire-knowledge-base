@@ -1,4 +1,4 @@
-# Pages::___find()
+# $pages->___find($selector, $options = array()): PageArray|array
 
 Source: `wire/core/Pages.php`
 
@@ -17,28 +17,17 @@ Non-visible pages are excluded unless an `include=x` mode is specified in the se
 where `x` is `hidden`, `unpublished` or `all`. If `all` is specified, then non-accessible
 pages (via access control) can also be included.
 
+## Arguments
 
-@param string|int|array|Selectors $selector Specify selector (standard usage), but can also accept page ID or array of page IDs.
+- string|int|array|Selectors $selector Specify selector (standard usage), but can also accept page ID or array of page IDs.
+- array|string $options One or more options that can modify certain behaviors. May be associative array or "key=value" selector string. - `findOne` (bool): Apply optimizations for finding a single page (default=false). - `findAll` (bool): Find all pages with no exclusions, same as "include=all" option (default=false). - `findIDs` (bool|int): 1 to get array of page IDs, true to return verbose array, 2 to return verbose array with all cols in 3.0.153+. (default=false). - `getTotal` (bool): Whether to set returning PageArray's "total" property when finding multiple pages. (default=true) - `loadPages` (bool): Whether to populate the returned PageArray with found pages. The only reason why you'd want to change this to false would be if you only needed the count details from the PageArray: getTotal(), getStart(), getLimit, etc. This is intended as an optimization for $pages->count(). Does not apply if $selector argument is an array. (default=true) - `cache` (bool): Allow caching of selectors and loaded pages? Also sets loadOptions[cache]. (default=true) - `allowCustom` (boolean): Allow use of _custom="another selector" in given $selector? For specific uses. (default=false) - `caller` (string): Optional name of calling function, for debugging purposes, i.e. "pages.count" (default=blank). - `include` (string): Optional inclusion mode of 'hidden', 'unpublished' or 'all'. Typically you would specify this directly in the selector string, so the option is mainly useful if your first argument is not a string. (default=none) - `stopBeforeID` (int): Stop loading pages once page matching this ID is found (default=0). - `startAfterID` (int): Start loading pages once page matching this ID is found (default=0). - `lazy` (bool): Specify true to force lazy loading. This is the same as using the Pages::findMany() method (default=false). - `loadOptions` (array): Optional associative array of options to pass to getById() load options.
 
-@param array|string $options One or more options that can modify certain behaviors. May be associative array or "key=value" selector string.
- - `findOne` (bool): Apply optimizations for finding a single page (default=false).
- - `findAll` (bool): Find all pages with no exclusions, same as "include=all" option (default=false).
- - `findIDs` (bool|int): 1 to get array of page IDs, true to return verbose array, 2 to return verbose array with all cols in 3.0.153+. (default=false).
- - `getTotal` (bool): Whether to set returning PageArray's "total" property when finding multiple pages. (default=true)
- - `loadPages` (bool): Whether to populate the returned PageArray with found pages.
-	   The only reason why you'd want to change this to false would be if you only needed the count details from
-	   the PageArray: getTotal(), getStart(), getLimit, etc. This is intended as an optimization for $pages->count().
-	   Does not apply if $selector argument is an array. (default=true)
- - `cache` (bool): Allow caching of selectors and loaded pages? Also sets loadOptions[cache]. (default=true)
- - `allowCustom` (boolean): Allow use of _custom="another selector" in given $selector? For specific uses. (default=false)
- - `caller` (string): Optional name of calling function, for debugging purposes, i.e. "pages.count" (default=blank).
- - `include` (string): Optional inclusion mode of 'hidden', 'unpublished' or 'all'. Typically you would specify this
-    directly in the selector string, so the option is mainly useful if your first argument is not a string. (default=none)
- - `stopBeforeID` (int): Stop loading pages once page matching this ID is found (default=0).
- - `startAfterID` (int): Start loading pages once page matching this ID is found (default=0).
- - `lazy` (bool): Specify true to force lazy loading. This is the same as using the Pages::findMany() method (default=false).
- - `loadOptions` (array): Optional associative array of options to pass to getById() load options.
+## Return value
 
-@return PageArray|array PageArray of that matched the given selector, or array of page IDs (if using findIDs option).
+PageArray|array PageArray of that matched the given selector, or array of page IDs (if using findIDs option).
 
-@see Pages::findOne(), Pages::findMany(), Pages::get()
+## See also
+
+- [Pages::findOne()](method-findone.md)
+- [Pages::findMany()](method-findmany.md)
+- [Pages::get()](method-get.md)

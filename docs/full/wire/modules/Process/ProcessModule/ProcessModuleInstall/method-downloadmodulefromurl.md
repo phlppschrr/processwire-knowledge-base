@@ -1,13 +1,18 @@
-# ProcessModuleInstall::downloadModuleFromUrl()
+# $processModuleInstall->downloadModuleFromUrl($url, $destinationDir = ''): bool|string
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Download module from URL
 
-@param string $url
+## Arguments
 
-@param string $destinationDir
+- string $url
+- string $destinationDir
 
-@return bool|string
+## Return value
 
-@since 3.0.162
+bool|string
+
+## Meta
+
+- @since 3.0.162

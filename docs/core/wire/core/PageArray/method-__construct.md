@@ -1,4 +1,4 @@
-# PageArray::__construct()
+# $pageArray->__construct()
 
 Source: `wire/core/PageArray.php`
 

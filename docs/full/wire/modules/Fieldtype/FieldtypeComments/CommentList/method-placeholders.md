@@ -1,13 +1,18 @@
-# CommentList::placeholders()
+# $commentList->placeholders($name = '', $value = null): string|array
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Get or set placeholders that will be populated by populatePlaceholders() method
 
-@param string|array|false $name Specify placeholder name to get or set, array of placeholders to set, false to unset all, omit to get all
+## Arguments
 
-@param string|bool $value Specify placeholder value to set or boolean false to unset, or omit when getting
+- string|array|false $name Specify placeholder name to get or set, array of placeholders to set, false to unset all, omit to get all
+- string|bool $value Specify placeholder value to set or boolean false to unset, or omit when getting
 
-@return string|array
+## Return value
 
-@since 3.0.153
+string|array
+
+## Meta
+
+- @since 3.0.153

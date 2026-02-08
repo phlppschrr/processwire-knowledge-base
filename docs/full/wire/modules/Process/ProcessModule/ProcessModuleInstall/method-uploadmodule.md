@@ -1,11 +1,14 @@
-# ProcessModuleInstall::uploadModule()
+# $processModuleInstall->uploadModule($inputName = 'upload_module', $destinationDir = ''): bool|string
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Process a module upload
 
-@param string $inputName Optionally specify the name of the $_FILES input to look for (default=upload_module)
+## Arguments
 
-@param string $destinationDir Optionally specify destination path for completed unzipped files
+- string $inputName Optionally specify the name of the $_FILES input to look for (default=upload_module)
+- string $destinationDir Optionally specify destination path for completed unzipped files
 
-@return bool|string Returns destinationDir on success, false on failure.
+## Return value
+
+bool|string Returns destinationDir on success, false on failure.

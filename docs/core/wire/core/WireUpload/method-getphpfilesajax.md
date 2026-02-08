@@ -1,9 +1,13 @@
-# WireUpload::getPhpFilesAjax()
+# $wireUpload->getPhpFilesAjax(): array|bool
 
 Source: `wire/core/WireUpload.php`
 
 Handles an ajax file upload and constructs a resulting $_FILES
 
-@return array|bool
+## Return value
 
-@throws WireException
+array|bool
+
+## Throws
+
+- WireException

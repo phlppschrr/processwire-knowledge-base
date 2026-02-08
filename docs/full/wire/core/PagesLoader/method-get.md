@@ -1,12 +1,14 @@
-# PagesLoader::get()
+# $pagesLoader->get($selector, $options = array()): Page|NullPage
 
 Source: `wire/core/PagesLoader.php`
 
 Returns the first page matching the given selector with no exclusions
 
+## Arguments
 
-@param string|int|array|Selectors $selector
+- string|int|array|Selectors $selector
+- array $options See Pages::find method for options
 
-@param array $options See Pages::find method for options
+## Return value
 
-@return Page|NullPage Always returns a Page object, but will return NullPage (with id=0) when no match found
+Page|NullPage Always returns a Page object, but will return NullPage (with id=0) when no match found

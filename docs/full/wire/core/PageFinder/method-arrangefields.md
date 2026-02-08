@@ -1,9 +1,13 @@
-# PageFinder::arrangeFields()
+# $pageFinder->arrangeFields(array $fields): array
 
 Source: `wire/core/PageFinder.php`
 
 Arrange the order of field names where necessary
 
-@param array $fields
+## Arguments
 
-@return array
+- array $fields
+
+## Return value
+
+array

@@ -1,11 +1,14 @@
-# WireMail::set()
+# $wireMail->set($key, $value): $this|WireData
 
 Source: `wire/core/WireMail.php`
 
 Set property
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return $this|WireData
+## Return value
+
+$this|WireData

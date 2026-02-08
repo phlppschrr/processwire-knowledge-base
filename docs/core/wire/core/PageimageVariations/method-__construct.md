@@ -1,7 +1,9 @@
-# PageimageVariations::__construct()
+# $pageimageVariations->__construct(Pageimage $pageimage)
 
 Source: `wire/core/PageimageVariations.php`
 
 Construct
 
-@param Pageimage $pageimage
+## Arguments
+
+- Pageimage $pageimage

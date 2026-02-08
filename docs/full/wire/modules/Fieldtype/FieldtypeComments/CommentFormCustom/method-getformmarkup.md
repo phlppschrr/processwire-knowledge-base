@@ -1,4 +1,4 @@
-# CommentFormCustom::getFormMarkup()
+# $commentFormCustom->getFormMarkup(): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentFormCustom.php`
 
@@ -10,4 +10,6 @@ $markup = "...your custom form markup...";
 $commentForm->markup('form', $markup);
 ~~~~~
 
-@return string
+## Return value
+
+string

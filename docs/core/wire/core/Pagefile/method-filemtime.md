@@ -1,11 +1,17 @@
-# Pagefile::filemtime()
+# $pagefile->filemtime($reset = false): int
 
 Source: `wire/core/Pagefile.php`
 
 Get last modified time of file
 
-@param bool $reset
+## Arguments
 
-@return int Unix timestamp
+- bool $reset
 
-@since 3.0.154
+## Return value
+
+int Unix timestamp
+
+## Meta
+
+- @since 3.0.154

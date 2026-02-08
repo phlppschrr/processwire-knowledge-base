@@ -1,4 +1,4 @@
-# DatabaseQuery::__call()
+# $databaseQuery->__call($method, $arguments): $this
 
 Source: `wire/core/DatabaseQuery.php`
 
@@ -24,8 +24,11 @@ $query->where("name=?", $page->name);
 The "select" or "where" methods above may be any method supported by the class.
 Implied parameters (using "?") was added in 3.0.157.
 
-@param string $method
+## Arguments
 
-@param array $arguments
+- string $method
+- array $arguments
 
-@return $this
+## Return value
+
+$this

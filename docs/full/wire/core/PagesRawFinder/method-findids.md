@@ -1,15 +1,19 @@
-# PagesRawFinder::findIDs()
+# $pagesRawFinder->findIDs($selector, $verbose, array $options = array()): array
 
 Source: `wire/core/PagesRaw.php`
 
 Front-end to pages.findIDs that optionally accepts array of page IDs
 
-@param array|string|Selectors $selector
+## Arguments
 
-@param bool|string $verbose One of true, false, or '*'
+- array|string|Selectors $selector
+- bool|string $verbose One of true, false, or '*'
+- array $options
 
-@param array $options
+## Return value
 
-@return array
+array
 
-@throws WireException
+## Throws
+
+- WireException

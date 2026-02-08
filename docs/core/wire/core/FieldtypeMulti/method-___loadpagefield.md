@@ -1,4 +1,4 @@
-# FieldtypeMulti::___loadPageField()
+# $fieldtypeMulti->___loadPageField(Page $page, Field $field): array|null
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -16,9 +16,11 @@ If pagination is active, the following extra properties are populated to the ret
 - `_pagination_start` (int): The starting index of the pagination.
 - `_pagination_total` (int): The total number of items across all paginations.
 
+## Arguments
 
-@param Page $page Page object to save.
+- Page $page Page object to save.
+- Field $field Field to retrieve from the page.
 
-@param Field $field Field to retrieve from the page.
+## Return value
 
-@return array|null
+array|null

@@ -1,4 +1,4 @@
-# Process::___uninstall()
+# $process->___uninstall()
 
 Source: `wire/core/Process.php`
 

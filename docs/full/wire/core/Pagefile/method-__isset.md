@@ -1,9 +1,13 @@
-# Pagefile::__isset()
+# $pagefile->__isset($key): bool
 
 Source: `wire/core/Pagefile.php`
 
 Ensures that isset() and empty() work for dynamic class properties
 
-@param string $key
+## Arguments
 
-@return bool
+- string $key
+
+## Return value
+
+bool

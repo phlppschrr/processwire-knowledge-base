@@ -1,11 +1,14 @@
-# AdminThemeFramework::includeFile()
+# $adminThemeFramework->includeFile($basename, array $vars = array())
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Include an admin theme file
 
-@param string $basename
+## Arguments
 
-@param array $vars
+- string $basename
+- array $vars
 
-@since 3.0.196
+## Meta
+
+- @since 3.0.196

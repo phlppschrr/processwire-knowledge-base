@@ -1,4 +1,4 @@
-# Sanitizer::purify()
+# $sanitizer->purify($str, array $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,9 +6,11 @@ Purify HTML markup using HTML Purifier
 
 See: [htmlpurifier.org](http://htmlpurifier.org)
 
+## Arguments
 
-@param string $str String to purify
+- string $str String to purify
+- array $options See [config options](http://htmlpurifier.org/live/configdoc/plain.html).
 
-@param array $options See [config options](http://htmlpurifier.org/live/configdoc/plain.html).
+## Return value
 
-@return string Purified markup string.
+string Purified markup string.

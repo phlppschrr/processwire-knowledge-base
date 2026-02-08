@@ -1,9 +1,13 @@
-# WireCacheDatabase::executeQuery()
+# $wireCacheDatabase->executeQuery(\PDOStatement $query): bool
 
 Source: `wire/core/WireCacheDatabase.php`
 
 Execute query
 
-@param \PDOStatement $query
+## Arguments
 
-@return bool
+- \PDOStatement $query
+
+## Return value
+
+bool

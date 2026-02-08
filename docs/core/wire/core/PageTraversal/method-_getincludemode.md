@@ -1,9 +1,13 @@
-# PageTraversal::_getIncludeMode()
+# $pageTraversal->_getIncludeMode($selector): string
 
 Source: `wire/core/PageTraversal.php`
 
 Get include mode specified in selector or blank if none
 
-@param string|array|Selectors $selector
+## Arguments
 
-@return string
+- string|array|Selectors $selector
+
+## Return value
+
+string

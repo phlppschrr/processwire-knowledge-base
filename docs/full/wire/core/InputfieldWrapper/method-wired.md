@@ -1,4 +1,4 @@
-# InputfieldWrapper::wired()
+# $inputfieldWrapper->wired()
 
 Source: `wire/core/InputfieldWrapper.php`
 

@@ -1,11 +1,17 @@
-# LanguageTranslator::textdomainString()
+# $languageTranslator->textdomainString($textdomain): string
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Normalize a string, filename or object to be a textdomain string
 
-@param string|object $textdomain
+## Arguments
 
-@return string
+- string|object $textdomain
 
-@since 3.0.154 was protected in prior versions
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.154 was protected in prior versions

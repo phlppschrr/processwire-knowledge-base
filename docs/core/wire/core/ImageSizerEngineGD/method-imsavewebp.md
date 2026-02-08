@@ -1,14 +1,16 @@
-# ImageSizerEngineGD::imSaveWebP()
+# $imageSizerEngineGD->imSaveWebP($im, $filename, $quality = 90): boolean
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Create WebP image (@horst)
 Is requested by image options: ["webpAdd" => true] OR ["webpOnly" => true]
 
-@param resource $im
+## Arguments
 
-@param string $filename
+- resource $im
+- string $filename
+- int $quality
 
-@param int $quality
+## Return value
 
-@return boolean true | false
+boolean true | false

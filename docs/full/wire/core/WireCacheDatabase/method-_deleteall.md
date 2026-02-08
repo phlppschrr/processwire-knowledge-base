@@ -1,11 +1,17 @@
-# WireCacheDatabase::_deleteAll()
+# $wireCacheDatabase->_deleteAll($expireAll = false): int
 
 Source: `wire/core/WireCacheDatabase.php`
 
 Implementation for deleteAll and expireAll methods
 
-@param bool $expireAll
+## Arguments
 
-@return int
+- bool $expireAll
 
-@throws WireException
+## Return value
+
+int
+
+## Throws
+
+- WireException

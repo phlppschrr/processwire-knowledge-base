@@ -1,9 +1,13 @@
-# Pagefiles::getFiles()
+# $pagefiles->getFiles(): array
 
 Source: `wire/core/Pagefiles.php`
 
 Get all filenames associated with this Pagefiles object
 
-@return array
+## Return value
 
-@since 3.0.233
+array
+
+## Meta
+
+- @since 3.0.233

@@ -1,4 +1,4 @@
-# Fields::___save()
+# $fields->___save(Saveable $item): bool
 
 Source: `wire/core/Fields.php`
 
@@ -11,8 +11,14 @@ $field->label = 'Title or Headline';
 $fields->save($field);
 ~~~~~
 
-@param Field $item The field to save
+## Arguments
 
-@return bool True on success, false on failure
+- Field $item The field to save
 
-@throws WireException
+## Return value
+
+bool True on success, false on failure
+
+## Throws
+
+- WireException

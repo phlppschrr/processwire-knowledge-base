@@ -1,4 +1,4 @@
-# _sidenav-init::treePaneClosed()
+# $sidenavInit->treePaneClosed()
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

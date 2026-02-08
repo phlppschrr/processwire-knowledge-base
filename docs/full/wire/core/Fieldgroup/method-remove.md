@@ -1,4 +1,4 @@
-# Fieldgroup::remove()
+# $fieldgroup->remove($key): bool
 
 Source: `wire/core/Fieldgroup.php`
 
@@ -12,7 +12,10 @@ Performs a deletion by finding all templates using this fieldgroup, then finding
 calling upon the Fieldtype to delete them one at a time. This is a potentially expensive/time consuming method, and
 may need further consideration.
 
+## Arguments
 
-@param Field|string $key Field object or field name, or id.
+- Field|string $key Field object or field name, or id.
 
-@return bool True on success, false on failure.
+## Return value
+
+bool True on success, false on failure.

@@ -1,4 +1,4 @@
-# WireArray::_insert()
+# $wireArray->_insert($item, $existingItem, $insertBefore = true): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -6,12 +6,16 @@ Insert an item either before or after another
 
 Provides the implementation for the insertBefore and insertAfter functions
 
-@param int|string|array|object $item Item you want to insert
+## Arguments
 
-@param int|string|array|object $existingItem Item already present that you want to insert before/afer
+- int|string|array|object $item Item you want to insert
+- int|string|array|object $existingItem Item already present that you want to insert before/afer
+- bool $insertBefore True if you want to insert before, false if after
 
-@param bool $insertBefore True if you want to insert before, false if after
+## Return value
 
-@return $this
+$this
 
-@throws WireException if given an invalid item
+## Throws
+
+- WireException if given an invalid item

@@ -1,4 +1,4 @@
-# WireFileTools::__destruct()
+# $wireFileTools->__destruct()
 
 Source: `wire/core/WireFileTools.php`
 

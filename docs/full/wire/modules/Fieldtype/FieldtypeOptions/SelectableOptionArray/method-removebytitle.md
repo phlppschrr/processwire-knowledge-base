@@ -1,11 +1,17 @@
-# SelectableOptionArray::removeByTitle()
+# $selectableOptionArray->removeByTitle($title): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Remove option by title
 
-@param string $title
+## Arguments
 
-@return bool
+- string $title
 
-@since 3.0.242
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.242

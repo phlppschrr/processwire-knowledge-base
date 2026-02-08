@@ -1,7 +1,9 @@
-# ProcessPageListerBookmarks::__construct()
+# $processPageListerBookmarks->__construct(ProcessPageLister $lister)
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
 Construct
 
-@param ProcessPageLister $lister
+## Arguments
+
+- ProcessPageLister $lister

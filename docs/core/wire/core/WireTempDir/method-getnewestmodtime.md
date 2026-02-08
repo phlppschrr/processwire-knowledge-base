@@ -1,11 +1,14 @@
-# WireTempDir::getNewestModTime()
+# $wireTempDir->getNewestModTime($path, $maxDepth = 5): int
 
 Source: `wire/core/WireTempDir.php`
 
 Get the newest modification time of a file in $path, recursively
 
-@param string $path Path to start from
+## Arguments
 
-@param int $maxDepth
+- string $path Path to start from
+- int $maxDepth
 
-@return int
+## Return value
+
+int

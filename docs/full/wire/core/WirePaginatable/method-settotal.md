@@ -1,9 +1,13 @@
-# WirePaginatable::setTotal()
+# $wirePaginatable->setTotal($total): $this
 
 Source: `wire/core/Interfaces.php`
 
 Set the total number of items, if more than are in the WireArray.
 
-@param int $total
+## Arguments
 
-@return $this
+- int $total
+
+## Return value
+
+$this

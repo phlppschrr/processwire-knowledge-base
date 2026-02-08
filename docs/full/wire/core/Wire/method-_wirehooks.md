@@ -1,7 +1,12 @@
-# Wire::_wireHooks()
+# $wire->_wireHooks(): WireHooks|null
 
 Source: `wire/core/Wire.php`
 
-@return WireHooks|null
 
-@since 3.0.171
+## Return value
+
+WireHooks|null
+
+## Meta
+
+- @since 3.0.171

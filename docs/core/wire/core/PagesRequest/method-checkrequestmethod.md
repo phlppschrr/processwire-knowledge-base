@@ -1,9 +1,13 @@
-# PagesRequest::checkRequestMethod()
+# $pagesRequest->checkRequestMethod(Page $page): bool
 
 Source: `wire/core/PagesRequest.php`
 
 Check current request method
 
-@param Page $page
+## Arguments
 
-@return bool True if current request method allowed, false if not
+- Page $page
+
+## Return value
+
+bool True if current request method allowed, false if not

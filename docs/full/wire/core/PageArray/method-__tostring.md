@@ -1,4 +1,4 @@
-# PageArray::__toString()
+# $pageArray->__toString()
 
 Source: `wire/core/PageArray.php`
 

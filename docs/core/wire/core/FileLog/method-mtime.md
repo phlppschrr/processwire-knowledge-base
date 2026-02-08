@@ -1,7 +1,9 @@
-# FileLog::mtime()
+# $fileLog->mtime(): int|false
 
 Source: `wire/core/FileLog.php`
 
 Get file modification time
 
-@return int|false
+## Return value
+
+int|false

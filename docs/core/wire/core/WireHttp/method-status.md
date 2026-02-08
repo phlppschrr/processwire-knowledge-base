@@ -1,18 +1,21 @@
-# WireHttp::status()
+# $wireHttp->status($url, $data = array(), $textMode = false, array $options = array()): int|string
 
 Source: `wire/core/WireHttp.php`
 
 Send to a URL using a HEAD request and return the status code
 
+## Arguments
 
-@param string $url URL to request (including http:// or https://)
+- string $url URL to request (including http:// or https://)
+- mixed $data Array of data to send (if not already set before) or raw data
+- bool $textMode When true function will return a string rather than integer, see the statusText() method.
+- array $options Optional options to modify default behavior, see the send() method for details.
 
-@param mixed $data Array of data to send (if not already set before) or raw data
+## Return value
 
-@param bool $textMode When true function will return a string rather than integer, see the statusText() method.
+int|string Integer or string of status code (200, 404, etc.)
 
-@param array $options Optional options to modify default behavior, see the send() method for details.
+## See also
 
-@return int|string Integer or string of status code (200, 404, etc.)
-
-@see WireHttp::send(), WireHttp::statusText()
+- [WireHttp::send()](method-___send.md)
+- [WireHttp::statusText()](method-statustext.md)

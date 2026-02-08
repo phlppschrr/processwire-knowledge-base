@@ -1,9 +1,13 @@
-# Notice::removeFlag()
+# $notice->removeFlag($flag)
 
 Source: `wire/core/Notice.php`
 
 Remove a flag
 
-@param int|string $flag
+## Arguments
 
-@since 3.0.149
+- int|string $flag
+
+## Meta
+
+- @since 3.0.149

@@ -1,4 +1,4 @@
-# FileCompiler::_maintenance()
+# $fileCompiler->_maintenance($sourcePath, $targetPath): bool
 
 Source: `wire/core/FileCompiler.php`
 
@@ -6,8 +6,11 @@ Implementation for maintenance on a given path
 
 Logs maintenance actions to logs/file-compiler.txt
 
-@param $sourcePath
+## Arguments
 
-@param $targetPath
+- $sourcePath
+- $targetPath
 
-@return bool
+## Return value
+
+bool

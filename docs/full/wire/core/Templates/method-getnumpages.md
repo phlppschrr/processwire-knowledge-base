@@ -1,9 +1,13 @@
-# Templates::getNumPages()
+# $templates->getNumPages(Template $tpl): int
 
 Source: `wire/core/Templates.php`
 
 Return the number of pages using the provided Template
 
-@param Template $tpl Template you want to get count for
+## Arguments
 
-@return int Total number of pages in use by given Template
+- Template $tpl Template you want to get count for
+
+## Return value
+
+int Total number of pages in use by given Template

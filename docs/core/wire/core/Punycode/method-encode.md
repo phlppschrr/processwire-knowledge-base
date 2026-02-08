@@ -1,9 +1,13 @@
-# Punycode::encode()
+# $punycode->encode($input): string
 
 Source: `wire/core/Punycode.php`
 
 Encode a domain to its Punycode version
 
-@param string $input Domain name in Unicode to be encoded
+## Arguments
 
-@return string Punycode representation in ASCII
+- string $input Domain name in Unicode to be encoded
+
+## Return value
+
+string Punycode representation in ASCII

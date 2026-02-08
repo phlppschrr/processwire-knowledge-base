@@ -1,4 +1,4 @@
-# WireSaveableItems::___find()
+# $wireSaveableItems->___find($selectors): WireArray
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -8,6 +8,10 @@ This is a delegation to the WireArray associated with this DAO.
 This method assumes that all items are loaded. Desecending classes that don't load all items should
 override this to the ___load() method instead.
 
-@param Selectors|string $selectors
+## Arguments
 
-@return WireArray
+- Selectors|string $selectors
+
+## Return value
+
+WireArray

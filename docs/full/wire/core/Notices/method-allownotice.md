@@ -1,9 +1,13 @@
-# Notices::allowNotice()
+# $notices->allowNotice(Notice $item): bool
 
 Source: `wire/core/Notices.php`
 
 Allow given Notice to be added?
 
-@param Notice $item
+## Arguments
 
-@return bool
+- Notice $item
+
+## Return value
+
+bool

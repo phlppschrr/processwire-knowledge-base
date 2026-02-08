@@ -1,9 +1,13 @@
-# WireMail::___htmlToText()
+# $wireMail->___htmlToText($html): string
 
 Source: `wire/core/WireMail.php`
 
 Convert HTML mail body to TEXT mail body
 
-@param string $html
+## Arguments
 
-@return string
+- string $html
+
+## Return value
+
+string

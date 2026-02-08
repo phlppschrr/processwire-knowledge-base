@@ -1,4 +1,4 @@
-# WireArray::last()
+# $wireArray->last(): Wire|mixed|bool
 
 Source: `wire/core/WireArray.php`
 
@@ -10,5 +10,6 @@ Note that this resets the internal WireArray pointer, which would affect other a
 $item = $items->last();
 ~~~~~
 
+## Return value
 
-@return Wire|mixed|bool
+Wire|mixed|bool

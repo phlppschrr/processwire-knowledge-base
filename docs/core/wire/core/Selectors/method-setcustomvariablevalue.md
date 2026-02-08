@@ -1,4 +1,4 @@
-# Selectors::setCustomVariableValue()
+# Selectors::setCustomVariableValue($name, $value)
 
 Source: `wire/core/Selectors.php`
 
@@ -11,8 +11,11 @@ echo $s; // outputs: "name=bar"
 $pages->find("name=[foo]"); // finds pages with name=bar
 ~~~~
 
-@param string $name
+## Arguments
 
-@param string|int|array|WireData|float|null|bool $value
+- string $name
+- string|int|array|WireData|float|null|bool $value
 
-@since 3.0.255
+## Meta
+
+- @since 3.0.255

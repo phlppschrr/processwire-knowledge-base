@@ -1,7 +1,9 @@
-# admin::_hookSessionRedirectModal()
+# $admin->_hookSessionRedirectModal(HookEvent $event)
 
 Source: `wire/core/admin.php`
 
 Ensures a modal GET variable is retained through redirects, when appropriate
 
-@param HookEvent $event
+## Arguments
+
+- HookEvent $event

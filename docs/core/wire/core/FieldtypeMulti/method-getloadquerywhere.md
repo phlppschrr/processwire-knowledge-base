@@ -1,19 +1,21 @@
-# FieldtypeMulti::getLoadQueryWhere()
+# $fieldtypeMulti->getLoadQueryWhere(Field $field, DatabaseQuerySelect $query, $col, $operator, $value): DatabaseQuery
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Apply a where condition to a load query (used by getLoadQuery method)
 
-@param Field $field
+## Arguments
 
-@param DatabaseQuerySelect $query
+- Field $field
+- DatabaseQuerySelect $query
+- string $col The column name
+- string $operator The comparison operator
+- mixed $value The value to find
 
-@param string $col The column name
+## Return value
 
-@param string $operator The comparison operator
+DatabaseQuery $query
 
-@param mixed $value The value to find
+## Throws
 
-@return DatabaseQuery $query
-
-@throws WireException if given invalid or unrecognized arguments
+- WireException if given invalid or unrecognized arguments

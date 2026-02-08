@@ -1,11 +1,17 @@
-# PageArray::getPageByName()
+# $pageArray->getPageByName($name): NullPage|Page
 
 Source: `wire/core/PageArray.php`
 
 Get Page from this PageArray having given name, or return NullPage if not present
 
-@param string $name
+## Arguments
 
-@return NullPage|Page
+- string $name
 
-@since 3.0.162
+## Return value
+
+NullPage|Page
+
+## Meta
+
+- @since 3.0.162

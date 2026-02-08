@@ -1,4 +1,4 @@
-# Page::prev()
+# $page->prev($selector = '', ?PageArray $siblings = null): Page|NullPage
 
 Source: `wire/core/Page.php`
 
@@ -12,9 +12,11 @@ $sibling = $page->prev();
 $sibling = $page->prev("featured=1");
 ~~~~~
 
+## Arguments
 
-@param string|array $selector Optional selector. When specified, will find nearest previous sibling that matches.
+- string|array $selector Optional selector. When specified, will find nearest previous sibling that matches.
+- PageArray|null $siblings Optional siblings to use instead of the default.
 
-@param PageArray|null $siblings Optional siblings to use instead of the default.
+## Return value
 
-@return Page|NullPage Returns the previous sibling page, or a NullPage if none found.
+Page|NullPage Returns the previous sibling page, or a NullPage if none found.

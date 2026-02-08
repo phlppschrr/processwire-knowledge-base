@@ -1,7 +1,9 @@
-# SystemUpdaterChecks::checkFilePermissions()
+# $systemUpdaterChecks->checkFilePermissions(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Check for insecure file permissions
 
-@return bool
+## Return value
+
+bool

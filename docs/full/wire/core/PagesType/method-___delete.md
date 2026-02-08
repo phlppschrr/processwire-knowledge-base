@@ -1,4 +1,4 @@
-# PagesType::___delete()
+# $pagesType->___delete(Page $page, $recursive = false): bool
 
 Source: `wire/core/PagesType.php`
 
@@ -13,10 +13,15 @@ Hook note:
 If you want to hook this method, please hook the `deleteReady`, `deleted`, or `Pages::delete` method
 instead, as hooking this method will not hook relevant pages deleted directly through $pages->delete().
 
-@param Page $page
+## Arguments
 
-@param bool $recursive If set to true, then this will attempt to delete all children too.
+- Page $page
+- bool $recursive If set to true, then this will attempt to delete all children too.
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

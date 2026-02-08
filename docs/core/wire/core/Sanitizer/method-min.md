@@ -1,4 +1,4 @@
-# Sanitizer::min()
+# $sanitizer->min($value, $min = PHP_INT_MIN): int|float
 
 Source: `wire/core/Sanitizer.php`
 
@@ -14,13 +14,19 @@ $sanitizer->min(5); // returns 10
 $sanitizer->min(1.0); // returns 10.0
 ~~~~~
 
+## Arguments
 
-@param int|float|string $value
+- int|float|string $value
+- int|float|string $min Minimum allowed value
 
-@param int|float|string $min Minimum allowed value
+## Return value
 
-@return int|float
+int|float
 
-@since 3.0.125
+## See also
 
-@see Sanitizer::max()
+- [Sanitizer::max()](method-max.md)
+
+## Meta
+
+- @since 3.0.125

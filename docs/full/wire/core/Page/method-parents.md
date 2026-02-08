@@ -1,4 +1,4 @@
-# Page::parents()
+# $page->parents($selector = ''): PageArray
 
 Source: `wire/core/Page.php`
 
@@ -24,7 +24,10 @@ $parents = $page->parents("template!=home");
 $parents = $page->parents(true);
 ~~~~~
 
+## Arguments
 
-@param string|array|bool $selector Optional selector string to filter parents by or boolean true for reverse order
+- string|array|bool $selector Optional selector string to filter parents by or boolean true for reverse order
 
-@return PageArray All parent pages, or those matching the given selector.
+## Return value
+
+PageArray All parent pages, or those matching the given selector.

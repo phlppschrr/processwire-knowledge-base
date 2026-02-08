@@ -1,7 +1,9 @@
-# WireDatabasePDOStatement::setDebugNote()
+# $wireDatabasePDOStatement->setDebugNote($note)
 
 Source: `wire/core/WireDatabasePDOStatement.php`
 
 Set debug note
 
-@param string $note
+## Arguments
+
+- string $note

@@ -1,9 +1,13 @@
-# LanguageTranslator::textdomainFileExists()
+# $languageTranslator->textdomainFileExists($textdomain): bool
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Does a json translation file exist for the given textdomain?
 
-@param string $textdomain
+## Arguments
 
-@return bool
+- string $textdomain
+
+## Return value
+
+bool

@@ -1,11 +1,14 @@
-# FunctionsWireAPI::wireUser()
+# $functionsWireAPI->wireUser($key = '', $value = null): User|mixed
 
 Source: `wire/core/FunctionsWireAPI.php`
 
 Access the $user API variable as a function
 
-@param string $key Optional property to get or set
+## Arguments
 
-@param null $value Optional value to set
+- string $key Optional property to get or set
+- null $value Optional value to set
 
-@return User|mixed
+## Return value
+
+User|mixed

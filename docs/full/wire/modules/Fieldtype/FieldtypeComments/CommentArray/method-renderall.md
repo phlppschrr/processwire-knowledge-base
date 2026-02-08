@@ -1,9 +1,13 @@
-# CommentArray::renderAll()
+# $commentArray->renderAll(array $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Render all comments and a comments form below it
 
-@param array $options
+## Arguments
 
-@return string
+- array $options
+
+## Return value
+
+string

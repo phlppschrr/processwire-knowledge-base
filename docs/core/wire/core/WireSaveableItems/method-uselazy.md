@@ -1,9 +1,13 @@
-# WireSaveableItems::useLazy()
+# $wireSaveableItems->useLazy(): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Use lazy loading for this type?
 
-@return bool
+## Return value
 
-@since 3.0.194
+bool
+
+## Meta
+
+- @since 3.0.194

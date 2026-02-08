@@ -1,4 +1,4 @@
-# WireSaveableItemsLookup::___load()
+# $wireSaveableItemsLookup->___load(WireArray $items, $selectors = null): WireArray
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 
@@ -6,8 +6,11 @@ Load items from the database table and return them in the same type class that g
 
 A selector string or Selectors may be provided so that this can be used as a find() by descending classes that don't load all items at once.
 
-@param WireArray $items
+## Arguments
 
-@param Selectors|string|null $selectors Selectors or a selector string to find, or NULL to load all.
+- WireArray $items
+- Selectors|string|null $selectors Selectors or a selector string to find, or NULL to load all.
 
-@return WireArray Returns the same type as specified in the getAll() method.
+## Return value
+
+WireArray Returns the same type as specified in the getAll() method.

@@ -1,9 +1,13 @@
-# ProcessPageSearchLive::makeDebugItem()
+# $processPageSearchLive->makeDebugItem($liveSearch): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Make a search result item that displays debugging info
 
-@param array $liveSearch
+## Arguments
 
-@return array
+- array $liveSearch
+
+## Return value
+
+array

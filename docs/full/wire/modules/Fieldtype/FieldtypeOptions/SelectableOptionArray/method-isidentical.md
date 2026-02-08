@@ -1,11 +1,14 @@
-# SelectableOptionArray::isIdentical()
+# $selectableOptionArray->isIdentical(WireArray $items, $strict = true): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Is the given WireArray identical to this one?
 
-@param WireArray $items
+## Arguments
 
-@param bool|int $strict
+- WireArray $items
+- bool|int $strict
 
-@return bool
+## Return value
+
+bool

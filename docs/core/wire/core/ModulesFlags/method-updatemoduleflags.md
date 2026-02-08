@@ -1,9 +1,10 @@
-# ModulesFlags::updateModuleFlags()
+# $modulesFlags->updateModuleFlags($moduleID, array $info)
 
 Source: `wire/core/ModulesFlags.php`
 
 Update module flags if any happen to differ from what's in the given moduleInfo
 
-@param int $moduleID
+## Arguments
 
-@param array $info
+- int $moduleID
+- array $info

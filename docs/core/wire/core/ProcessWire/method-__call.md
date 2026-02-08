@@ -1,13 +1,18 @@
-# ProcessWire::__call()
+# $processWire->__call($method, $arguments): mixed
 
 Source: `wire/core/ProcessWire.php`
 
 Call method
 
-@param string $method
+## Arguments
 
-@param array $arguments
+- string $method
+- array $arguments
 
-@return mixed
+## Return value
 
-@throws WireException
+mixed
+
+## Throws
+
+- WireException

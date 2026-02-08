@@ -1,5 +1,8 @@
-# PageBookmarks::__construct()
+# $pageBookmarks->__construct(Process $process)
 
 Source: `wire/modules/Process/ProcessPageEdit/PageBookmarks.php`
 
-@param Process|ProcessPageEdit $process
+
+## Arguments
+
+- Process|ProcessPageEdit $process

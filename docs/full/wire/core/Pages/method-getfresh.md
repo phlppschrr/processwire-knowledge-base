@@ -1,4 +1,4 @@
-# Pages::getFresh()
+# $pages->getFresh($selectorOrPage, $options = array()): Page|NullPage
 
 Source: `wire/core/Pages.php`
 
@@ -19,11 +19,15 @@ $p3 = $pages->getFresh($p1);
 $p1 === $p3; // false: same Page but different instance
 ~~~~~
 
+## Arguments
 
-@param Page|string|array|Selectors|int $selectorOrPage Specify Page to get copy of, selector or ID
+- Page|string|array|Selectors|int $selectorOrPage Specify Page to get copy of, selector or ID
+- array $options Options to modify behavior
 
-@param array $options Options to modify behavior
+## Return value
 
-@return Page|NullPage
+Page|NullPage
 
-@since 3.0.172
+## Meta
+
+- @since 3.0.172

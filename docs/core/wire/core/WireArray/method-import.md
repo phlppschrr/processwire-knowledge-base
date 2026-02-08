@@ -1,4 +1,4 @@
-# WireArray::import()
+# $wireArray->import($items): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -7,9 +7,14 @@ Import the given item(s) into this WireArray.
 - Adds imported items to the end of the WireArray.
 - Skips over any items already present in the WireArray (when duplicateChecking is enabled)
 
+## Arguments
 
-@param array|WireArray $items Items to import.
+- array|WireArray $items Items to import.
 
-@return $this
+## Return value
 
-@throws WireException If given items not compatible with the WireArray
+$this
+
+## Throws
+
+- WireException If given items not compatible with the WireArray

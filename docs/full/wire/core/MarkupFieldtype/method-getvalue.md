@@ -1,7 +1,9 @@
-# MarkupFieldtype::getValue()
+# $markupFieldtype->getValue(): mixed
 
 Source: `wire/core/MarkupFieldtype.php`
 
 Get the value
 
-@return mixed
+## Return value
+
+mixed

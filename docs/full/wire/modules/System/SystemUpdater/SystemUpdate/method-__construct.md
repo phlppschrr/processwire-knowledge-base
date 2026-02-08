@@ -1,7 +1,9 @@
-# SystemUpdate::__construct()
+# $systemUpdate->__construct(SystemUpdater $updater)
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdate.php`
 
 Construct
 
-@param SystemUpdater $updater
+## Arguments
+
+- SystemUpdater $updater

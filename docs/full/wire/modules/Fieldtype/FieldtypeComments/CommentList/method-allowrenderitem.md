@@ -1,9 +1,13 @@
-# CommentList::allowRenderItem()
+# $commentList->allowRenderItem(Comment $comment): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Allow comment to be rendered in list?
 
-@param Comment $comment
+## Arguments
 
-@return bool
+- Comment $comment
+
+## Return value
+
+bool

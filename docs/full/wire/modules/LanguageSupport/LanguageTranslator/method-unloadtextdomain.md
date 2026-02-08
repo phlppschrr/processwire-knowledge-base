@@ -1,7 +1,9 @@
-# LanguageTranslator::unloadTextdomain()
+# $languageTranslator->unloadTextdomain($textdomain)
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Unload the given textdomain string from memory
 
-@param string $textdomain
+## Arguments
+
+- string $textdomain

@@ -1,13 +1,15 @@
-# ImageSizerEngine::getIntegerValue()
+# $imageSizerEngine->getIntegerValue($n, $min, $max): int
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Get integer value within given range
 
-@param int $n Number to require in given range
+## Arguments
 
-@param int $min Minimum allowed number
+- int $n Number to require in given range
+- int $min Minimum allowed number
+- int $max Maximum allowed number
 
-@param int $max Maximum allowed number
+## Return value
 
-@return int
+int

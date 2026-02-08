@@ -1,12 +1,14 @@
-# Pages::___insertAfter()
+# $pages->___insertAfter(Page $page, Page $afterPage)
 
 Source: `wire/core/Pages.php`
 
 Sort/move one page after another (for manually sorted pages)
 
+## Arguments
 
-@param Page $page Page you want to move/sort
+- Page $page Page you want to move/sort
+- Page $afterPage Page you want to insert after
 
-@param Page $afterPage Page you want to insert after
+## Throws
 
-@throws WireException
+- WireException

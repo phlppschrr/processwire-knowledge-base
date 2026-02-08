@@ -1,10 +1,13 @@
-# Inputfield::getParent()
+# $inputfield->getParent(): InputfieldWrapper|null
 
 Source: `wire/core/Inputfield.php`
 
 Get this Inputfield’s parent InputfieldWrapper, or NULL if it doesn’t have one.
 
+## Return value
 
-@return InputfieldWrapper|null
+InputfieldWrapper|null
 
-@see Inputfield::setParent()
+## See also
+
+- [Inputfield::setParent()](method-setparent.md)

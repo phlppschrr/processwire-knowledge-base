@@ -1,11 +1,14 @@
-# SelectableOptionManager::upgrade()
+# $selectableOptionManager->upgrade($fromVersion, $toVersion)
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Upgrade fieldtype_options table
 
-@param string $fromVersion
+## Arguments
 
-@param string $toVersion
+- string $fromVersion
+- string $toVersion
 
-@throws WireException
+## Throws
+
+- WireException

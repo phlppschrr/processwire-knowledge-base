@@ -1,4 +1,4 @@
-# PageArrayIterator::loadChunk()
+# $pageArrayIterator->loadChunk()
 
 Source: `wire/core/PageArrayIterator.php`
 

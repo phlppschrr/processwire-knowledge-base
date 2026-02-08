@@ -1,4 +1,4 @@
-# Functions::wireIconMarkup()
+# $functions->wireIconMarkup($icon, $class = ''): string
 
 Source: `wire/core/Functions.php`
 
@@ -23,14 +23,11 @@ echo wireIconMarkup('home', 'fw id=root-icon');
 echo wireIconMarkup('home fw id=root-icon'); // same as above
 ~~~~~
 
+## Arguments
 
-@param string $icon Icon name (currently a font-awesome icon name)
+- string $icon Icon name (currently a font-awesome icon name)
+- string $class Any of the following: - Additional attributes for class (example: "fw" for fixed width) - Your own custom class(es) separated by spaces - Any additional attributes in format `key="val" key='val' or key=val` string (3.0.229+) - An optional trailing space to append an `&nbsp;` to the return icon markup (3.0.229+) - Any of the above may also be specified in the $icon argument in 3.0.229+.
 
-@param string $class Any of the following:
- - Additional attributes for class (example: "fw" for fixed width)
- - Your own custom class(es) separated by spaces
- - Any additional attributes in format `key="val" key='val' or key=val` string (3.0.229+)
- - An optional trailing space to append an `&nbsp;` to the return icon markup (3.0.229+)
- - Any of the above may also be specified in the $icon argument in 3.0.229+.
+## Return value
 
-@return string
+string

@@ -1,13 +1,18 @@
-# WireInput::urlSegmentMatch()
+# $wireInput->urlSegmentMatch($get, $num = 0): string|int|bool
 
 Source: `wire/core/WireInput.php`
 
 Handles find/match logic for URL segment methods
 
-@param string $get URL segment match string
+## Arguments
 
-@param int $num Limit only to this URL segment number (default=0 to indicate ignore)
+- string $get URL segment match string
+- int $num Limit only to this URL segment number (default=0 to indicate ignore)
 
-@return string|int|bool
+## Return value
 
-@since 3.0.155
+string|int|bool
+
+## Meta
+
+- @since 3.0.155

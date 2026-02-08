@@ -1,13 +1,18 @@
-# Selectors::matchesOrGroups()
+# $selectors->matchesOrGroups(array $orGroups, Wire $item): bool
 
 Source: `wire/core/Selectors.php`
 
 Do the given OR-groups match the given Wire?
 
-@param array|string[]|array[] $orGroups
+## Arguments
 
-@param Wire $item
+- array|string[]|array[] $orGroups
+- Wire $item
 
-@return bool
+## Return value
 
-@since 3.0.330
+bool
+
+## Meta
+
+- @since 3.0.330

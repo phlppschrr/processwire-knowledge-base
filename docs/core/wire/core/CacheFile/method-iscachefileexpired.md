@@ -1,9 +1,13 @@
-# CacheFile::isCacheFileExpired()
+# $cacheFile->isCacheFileExpired($filename): bool
 
 Source: `wire/core/CacheFile.php`
 
 Is the given cache filename expired?
 
-@param string $filename
+## Arguments
 
-@return bool
+- string $filename
+
+## Return value
+
+bool

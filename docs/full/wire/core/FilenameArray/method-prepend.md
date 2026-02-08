@@ -1,9 +1,13 @@
-# FilenameArray::prepend()
+# $filenameArray->prepend($filename): $this
 
 Source: `wire/core/FilenameArray.php`
 
 Prepend $filename to the beginning
 
-@param string $filename
+## Arguments
 
-@return $this
+- string $filename
+
+## Return value
+
+$this

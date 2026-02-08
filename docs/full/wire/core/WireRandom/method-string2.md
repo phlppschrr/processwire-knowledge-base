@@ -1,13 +1,15 @@
-# WireRandom::string2()
+# $wireRandom->string2($length, $allowed, array $options): string
 
 Source: `wire/core/WireRandom.php`
 
 Generate random string using method that pulls from the base64 method
 
-@param int $length Required length
+## Arguments
 
-@param string $allowed Allowed characters
+- int $length Required length
+- string $allowed Allowed characters
+- array $options See options for alphanumeric() method
 
-@param array $options See options for alphanumeric() method
+## Return value
 
-@return string
+string

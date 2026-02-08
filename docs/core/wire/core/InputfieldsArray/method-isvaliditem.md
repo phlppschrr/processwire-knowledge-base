@@ -1,9 +1,13 @@
-# InputfieldsArray::isValidItem()
+# $inputfieldsArray->isValidItem($item): bool
 
 Source: `wire/core/InputfieldsArray.php`
 
 Per WireArray interface, only Inputfield instances are accepted.
 
-@param Wire $item
+## Arguments
 
-@return bool
+- Wire $item
+
+## Return value
+
+bool

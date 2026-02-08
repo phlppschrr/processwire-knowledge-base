@@ -1,4 +1,4 @@
-# WireSaveableItems::__debugInfo()
+# $wireSaveableItems->__debugInfo(): array
 
 Source: `wire/core/WireSaveableItems.php`
 
@@ -6,4 +6,6 @@ debugInfo PHP 5.6+ magic method
 
 This is used when you print_r() an object instance.
 
-@return array
+## Return value
+
+array

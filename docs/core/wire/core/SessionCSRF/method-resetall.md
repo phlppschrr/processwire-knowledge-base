@@ -1,4 +1,4 @@
-# SessionCSRF::resetAll()
+# $sessionCSRF->resetAll()
 
 Source: `wire/core/SessionCSRF.php`
 

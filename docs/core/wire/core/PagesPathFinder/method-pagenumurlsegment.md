@@ -1,11 +1,14 @@
-# PagesPathFinder::pageNumUrlSegment()
+# $pagesPathFinder->pageNumUrlSegment($pageNum, $langName = 'default'): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Get page number segment with given pageNum and and in given language name
 
-@param int $pageNum
+## Arguments
 
-@param string $langName
+- int $pageNum
+- string $langName
 
-@return string
+## Return value
+
+string

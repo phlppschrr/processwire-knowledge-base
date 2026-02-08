@@ -1,7 +1,9 @@
-# ImageSizerEngine::getImageType()
+# $imageSizerEngine->getImageType(): string|null
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Return the image type constant
 
-@return string|null
+## Return value
+
+string|null

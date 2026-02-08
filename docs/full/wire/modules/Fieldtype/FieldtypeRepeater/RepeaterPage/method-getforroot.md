@@ -1,11 +1,17 @@
-# RepeaterPage::getForRoot()
+# $repeaterPage->getForRoot($get = ''): array|Page|Field
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 For nested repeaters, returns the root level forPage and forField in an array
 
-@param string $get Specify 'page' or 'field' or omit for array of both
+## Arguments
 
-@return array|Page|Field
+- string $get Specify 'page' or 'field' or omit for array of both
 
-@since 3.0.132
+## Return value
+
+array|Page|Field
+
+## Meta
+
+- @since 3.0.132

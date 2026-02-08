@@ -1,11 +1,17 @@
-# Page::__get()
+# $page->__get($key): mixed
 
 Source: `wire/core/Page.php`
 
 Direct access get method
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
 
-@see get()
+## Return value
+
+mixed
+
+## See also
+
+- get()

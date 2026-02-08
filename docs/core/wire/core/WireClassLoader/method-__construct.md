@@ -1,5 +1,8 @@
-# WireClassLoader::__construct()
+# $wireClassLoader->__construct($wire = null)
 
 Source: `wire/core/WireClassLoader.php`
 
-@param ProcessWire $wire
+
+## Arguments
+
+- ProcessWire $wire

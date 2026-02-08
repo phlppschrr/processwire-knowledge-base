@@ -1,4 +1,4 @@
-# PagesAccess::___updatePage()
+# $pagesAccess->___updatePage(Page $page)
 
 Source: `wire/core/PagesAccess.php`
 
@@ -11,4 +11,6 @@ If there is no entry in this table, then the page is getting its access from its
 
 This is used by PageFinder to determine what pages to include in a find() operation based on user access.
 
-@param Page $page
+## Arguments
+
+- Page $page

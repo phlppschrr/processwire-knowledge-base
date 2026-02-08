@@ -1,4 +1,4 @@
-# Pages::findJoin()
+# $pages->findJoin($selector, $joinFields, $options = array()): PageArray
 
 Source: `wire/core/Pages.php`
 
@@ -35,13 +35,16 @@ $posts = $pages->findJoin("template=blog-post", false);
 $posts = $pages->find("template=blog-post, join=none"); // same as above
 ~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector
+- string|array|Selectors $selector
+- array|string|bool $joinFields Array or CSV string of field names to autojoin, or false to join none.
+- array $options
 
-@param array|string|bool $joinFields Array or CSV string of field names to autojoin, or false to join none.
+## Return value
 
-@param array $options
+PageArray
 
-@return PageArray
+## Meta
 
-@since 3.0.172
+- @since 3.0.172

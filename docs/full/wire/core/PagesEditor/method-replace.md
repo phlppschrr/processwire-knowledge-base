@@ -1,16 +1,22 @@
-# PagesEditor::replace()
+# $pagesEditor->replace(Page $oldPage, Page $newPage): Page
 
 Source: `wire/core/PagesEditor.php`
 
 Replace one page with another (work in progress)
 
+## Arguments
 
-@param Page $oldPage
+- Page $oldPage
+- Page $newPage
 
-@param Page $newPage
+## Return value
 
-@return Page
+Page
 
-@throws WireException
+## Throws
 
-@since 3.0.189 But not yet available in public API
+- WireException
+
+## Meta
+
+- @since 3.0.189 But not yet available in public API

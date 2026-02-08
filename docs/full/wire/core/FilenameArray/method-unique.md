@@ -1,9 +1,13 @@
-# FilenameArray::unique()
+# $filenameArray->unique(): FilenameArray
 
 Source: `wire/core/FilenameArray.php`
 
 Make FilenameArray unique (deprecated)
 
-@deprecated no longer necessary since the add() function ensures uniqueness
+## Return value
 
-@return FilenameArray
+FilenameArray
+
+## Meta
+
+- @deprecated no longer necessary since the add() function ensures uniqueness

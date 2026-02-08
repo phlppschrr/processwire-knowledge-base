@@ -1,11 +1,14 @@
-# ModulesDuplicates::setUseDuplicate()
+# $modulesDuplicates->setUseDuplicate($className, $pathname)
 
 Source: `wire/core/ModulesDuplicates.php`
 
 For a module that has duplicates, tell it which file to use
 
-@param string $className
+## Arguments
 
-@param string $pathname Full path and filename to module file
+- string $className
+- string $pathname Full path and filename to module file
 
-@throws WireException if given information that can't be resolved
+## Throws
+
+- WireException if given information that can't be resolved

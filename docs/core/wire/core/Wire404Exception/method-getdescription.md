@@ -1,9 +1,13 @@
-# Wire404Exception::getDescription()
+# $wire404Exception->getDescription(): string
 
 Source: `wire/core/Exceptions.php`
 
 Get description of source for 404 error
 
-@return string
+## Return value
 
-@since 3.0.255
+string
+
+## Meta
+
+- @since 3.0.255

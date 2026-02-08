@@ -1,9 +1,13 @@
-# Page::getUser()
+# $page->getUser($userType): User|NullPage
 
 Source: `wire/core/Page.php`
 
 Get page’s created or modified user
 
-@param string $userType One of 'created' or 'modified'
+## Arguments
 
-@return User|NullPage
+- string $userType One of 'created' or 'modified'
+
+## Return value
+
+User|NullPage

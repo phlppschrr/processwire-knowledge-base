@@ -1,9 +1,13 @@
-# ProcessWire::getHttpHost()
+# $processWire->getHttpHost(Config $config): string
 
 Source: `wire/core/ProcessWire.php`
 
 Safely determine the HTTP host
 
-@param Config $config
+## Arguments
 
-@return string
+- Config $config
+
+## Return value
+
+string

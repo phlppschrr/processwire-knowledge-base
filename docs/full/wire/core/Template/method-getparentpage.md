@@ -1,4 +1,4 @@
-# Template::getParentPage()
+# $template->getParentPage($checkAccess = false): Page|NullPage|null
 
 Source: `wire/core/Template.php`
 
@@ -10,7 +10,10 @@ It also takes into account user access, if requested (see arg 1).
 If there is no defined parent, NULL is returned.
 If there are multiple defined parents, a NullPage is returned.
 
+## Arguments
 
-@param bool $checkAccess Whether or not to check for user access to do this (default=false).
+- bool $checkAccess Whether or not to check for user access to do this (default=false).
 
-@return Page|NullPage|null
+## Return value
+
+Page|NullPage|null

@@ -1,11 +1,14 @@
-# WireSaveableItems::error()
+# $wireSaveableItems->error($text, $flags = 0): Wire|WireSaveableItems
 
 Source: `wire/core/WireSaveableItems.php`
 
 Record an error
 
-@param string $text
+## Arguments
 
-@param int|bool $flags See Notices::flags
+- string $text
+- int|bool $flags See Notices::flags
 
-@return Wire|WireSaveableItems
+## Return value
+
+Wire|WireSaveableItems

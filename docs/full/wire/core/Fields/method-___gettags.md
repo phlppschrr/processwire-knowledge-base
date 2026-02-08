@@ -1,4 +1,4 @@
-# Fields::___getTags()
+# $fields->___getTags($getFieldNames = false): array
 
 Source: `wire/core/Fields.php`
 
@@ -10,10 +10,14 @@ Get list of all tags used by fields
 - If you specify "reset" for the `$getFields` argument it returns a blank array and resets
   internal tags cache.
 
+## Arguments
 
-@param bool|string $getFieldNames Specify true to return associative array where keys are tags and values are field names
-  …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
+- bool|string $getFieldNames Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
 
-@return array Both keys and values are tags in return value
+## Return value
 
-@since 3.0.106 + made hookable in 3.0.179
+array Both keys and values are tags in return value
+
+## Meta
+
+- @since 3.0.106 + made hookable in 3.0.179

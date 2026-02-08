@@ -1,11 +1,14 @@
-# WireDatabasePDO::pdoType()
+# $wireDatabasePDO->pdoType(&$query, $getName = false): \PDO|string
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Return correct PDO instance type (reader or writer) based on given statement
 
-@param string|\PDOStatement $query
+## Arguments
 
-@param bool $getName Get name of PDO type rather than instance? (default=false)
+- string|\PDOStatement $query
+- bool $getName Get name of PDO type rather than instance? (default=false)
 
-@return \PDO|string
+## Return value
+
+\PDO|string

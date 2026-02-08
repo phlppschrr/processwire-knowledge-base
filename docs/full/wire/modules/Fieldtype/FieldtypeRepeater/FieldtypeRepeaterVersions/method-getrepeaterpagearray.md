@@ -1,13 +1,15 @@
-# FieldtypeRepeaterVersions::getRepeaterPageArray()
+# $fieldtypeRepeaterVersions->getRepeaterPageArray(Page $page, Field $field, $value): PageArray
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeaterVersions.php`
 
 Normalize a value to a RepeaterPageArray
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- RepeaterPage|RepeaterPageArray $value
 
-@param RepeaterPage|RepeaterPageArray $value
+## Return value
 
-@return PageArray
+PageArray

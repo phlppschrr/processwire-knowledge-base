@@ -1,9 +1,10 @@
-# LanguageParser::__construct()
+# $languageParser->__construct(LanguageTranslator $translator, $file)
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Construct the Language Parser
 
-@param LanguageTranslator $translator
+## Arguments
 
-@param string $file PHP filename to parse
+- LanguageTranslator $translator
+- string $file PHP filename to parse

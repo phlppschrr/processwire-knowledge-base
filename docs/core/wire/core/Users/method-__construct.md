@@ -1,11 +1,11 @@
-# Users::__construct()
+# $users->__construct(ProcessWire $wire, $templates = array(), $parents = array())
 
 Source: `wire/core/Users.php`
 
 Construct
 
-@param ProcessWire $wire
+## Arguments
 
-@param array $templates
-
-@param array $parents
+- ProcessWire $wire
+- array $templates
+- array $parents

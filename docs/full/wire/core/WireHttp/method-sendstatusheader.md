@@ -1,9 +1,13 @@
-# WireHttp::sendStatusHeader()
+# $wireHttp->sendStatusHeader($status)
 
 Source: `wire/core/WireHttp.php`
 
 Send an HTTP status header
 
-@param int|string $status Status code (i.e. '200') or code and text (i.e. '200 OK')
+## Arguments
 
-@since 3.0.166
+- int|string $status Status code (i.e. '200') or code and text (i.e. '200 OK')
+
+## Meta
+
+- @since 3.0.166

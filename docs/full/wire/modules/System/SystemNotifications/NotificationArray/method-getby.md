@@ -1,11 +1,14 @@
-# NotificationArray::getBy()
+# $notificationArray->getBy($property, $value): null|Notification
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Get a notification that contains the given value for $property
 
-@param string $property
+## Arguments
 
-@param mixed $value
+- string $property
+- mixed $value
 
-@return null|Notification
+## Return value
+
+null|Notification

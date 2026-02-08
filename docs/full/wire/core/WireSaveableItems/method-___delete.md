@@ -1,11 +1,17 @@
-# WireSaveableItems::___delete()
+# $wireSaveableItems->___delete(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Delete the provided item from the database
 
-@param Saveable $item Item to save
+## Arguments
 
-@return bool Returns true on success, false on failure
+- Saveable $item Item to save
 
-@throws WireException
+## Return value
+
+bool Returns true on success, false on failure
+
+## Throws
+
+- WireException

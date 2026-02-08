@@ -1,9 +1,13 @@
-# Notification::get()
+# $notification->get($key): mixed
 
 Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Retrieve a value from the Notification
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

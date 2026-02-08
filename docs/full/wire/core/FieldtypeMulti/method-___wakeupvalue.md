@@ -1,13 +1,15 @@
-# FieldtypeMulti::___wakeupValue()
+# $fieldtypeMulti->___wakeupValue(Page $page, Field $field, $value): WireArray
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Process the value to convert it from array to whatever object it needs to be
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- array $value
 
-@param array $value
+## Return value
 
-@return WireArray
+WireArray

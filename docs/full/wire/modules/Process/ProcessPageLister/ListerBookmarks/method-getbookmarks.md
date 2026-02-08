@@ -1,7 +1,9 @@
-# ListerBookmarks::getBookmarks()
+# $listerBookmarks->getBookmarks(): array
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get configured bookmarks allowed for current user, indexed by bookmark ID (int)
 
-@return array
+## Return value
+
+array

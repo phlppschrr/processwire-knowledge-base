@@ -1,9 +1,13 @@
-# ListerBookmarks::strID()
+# $listerBookmarks->strID($val): int
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Given an id or string key, return an string ID (with leading underscore)
 
-@param string|int $val
+## Arguments
 
-@return int
+- string|int $val
+
+## Return value
+
+int

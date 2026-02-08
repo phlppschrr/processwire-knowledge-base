@@ -1,4 +1,4 @@
-# WireInput::__get()
+# $wireInput->__get($key): string|int|null
 
 Source: `wire/core/WireInput.php`
 
@@ -7,6 +7,10 @@ Retrieve the get, post, cookie or whitelist vars using a direct reference, i.e. 
 Can also be used with URL segments, i.e. $input->urlSegment1, $input->urlSegment2, $input->urlSegment3, etc.
 And can also be used for $input->pageNum.
 
-@param string $key
+## Arguments
 
-@return string|int|null
+- string $key
+
+## Return value
+
+string|int|null

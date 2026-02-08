@@ -1,9 +1,13 @@
-# FileCompiler::compileIncludesValidLineOpen()
+# $fileCompiler->compileIncludesValidLineOpen($open): bool
 
 Source: `wire/core/FileCompiler.php`
 
 Test the given line $open preceding an include statement for validity
 
-@param string $open
+## Arguments
 
-@return bool Returns true if valid, false if not
+- string $open
+
+## Return value
+
+bool Returns true if valid, false if not

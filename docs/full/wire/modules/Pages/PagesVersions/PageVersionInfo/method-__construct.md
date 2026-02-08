@@ -1,5 +1,8 @@
-# PageVersionInfo::__construct()
+# $pageVersionInfo->__construct(array $data = [])
 
 Source: `wire/modules/Pages/PagesVersions/PageVersionInfo.php`
 
-@param array $data
+
+## Arguments
+
+- array $data

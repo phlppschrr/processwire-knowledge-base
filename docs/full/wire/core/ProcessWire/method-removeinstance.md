@@ -1,8 +1,9 @@
-# ProcessWire::removeInstance()
+# ProcessWire::removeInstance(ProcessWire $wire)
 
 Source: `wire/core/ProcessWire.php`
 
 Remove a ProcessWire instance
 
+## Arguments
 
-@param ProcessWire $wire
+- ProcessWire $wire

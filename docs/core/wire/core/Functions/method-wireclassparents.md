@@ -1,4 +1,4 @@
-# Functions::wireClassParents()
+# $functions->wireClassParents($className, $autoload = true): array
 
 Source: `wire/core/Functions.php`
 
@@ -9,9 +9,11 @@ ProcessWire namespace aware version of PHP’s class_parents() function
 Returns associative array where array keys are full namespaced class name, and
 values are the non-namespaced classname.
 
+## Arguments
 
-@param string|object $className
+- string|object $className
+- bool $autoload
 
-@param bool $autoload
+## Return value
 
-@return array
+array

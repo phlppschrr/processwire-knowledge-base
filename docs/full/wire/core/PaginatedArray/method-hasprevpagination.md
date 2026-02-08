@@ -1,10 +1,13 @@
-# PaginatedArray::hasPrevPagination()
+# $paginatedArray->hasPrevPagination(): bool
 
 Source: `wire/core/PaginatedArray.php`
 
 Is there a previous pagination before the current one?
 
+## Return value
 
-@return bool
+bool
 
-@since 3.0.120
+## Meta
+
+- @since 3.0.120

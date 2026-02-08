@@ -1,9 +1,13 @@
-# ProcessPageListRender::getOption()
+# $processPageListRender->getOption($key): mixed|null
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get option
 
-@param string $key
+## Arguments
 
-@return mixed|null
+- string $key
+
+## Return value
+
+mixed|null

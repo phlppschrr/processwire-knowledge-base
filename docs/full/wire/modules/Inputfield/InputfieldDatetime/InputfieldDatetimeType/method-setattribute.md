@@ -1,11 +1,14 @@
-# InputfieldDatetimeType::setAttribute()
+# $inputfieldDatetimeType->setAttribute($key, $value): self
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 Get attribute
 
-@param string $key
+## Arguments
 
-@param string $value
+- string $key
+- string $value
 
-@return self
+## Return value
+
+self

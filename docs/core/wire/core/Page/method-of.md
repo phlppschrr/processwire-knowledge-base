@@ -1,4 +1,4 @@
-# Page::of()
+# $page->of($outputFormatting = null): bool
 
 Source: `wire/core/Page.php`
 
@@ -21,9 +21,14 @@ $page->title = 'About Us';
 $page->save();
 ~~~~~
 
+## Arguments
 
-@param bool $outputFormatting If specified, sets output formatting state ON or OFF. If not specified, nothing is changed.
+- bool $outputFormatting If specified, sets output formatting state ON or OFF. If not specified, nothing is changed.
 
-@return bool Current output formatting state (before this function call, if it was changed)
+## Return value
 
-@link https://processwire.com/blog/posts/output-formatting/
+bool Current output formatting state (before this function call, if it was changed)
+
+## Meta
+
+- @link https://processwire.com/blog/posts/output-formatting/

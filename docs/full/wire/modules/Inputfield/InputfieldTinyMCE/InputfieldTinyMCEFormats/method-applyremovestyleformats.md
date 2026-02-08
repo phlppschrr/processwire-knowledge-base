@@ -1,9 +1,13 @@
-# InputfieldTinyMCEFormats::applyRemoveStyleFormats()
+# $inputfieldTinyMCEFormats->applyRemoveStyleFormats(array $styleFormats): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Remove style formats that have a 'remove=true' property
 
-@param array $styleFormats
+## Arguments
 
-@return array
+- array $styleFormats
+
+## Return value
+
+array

@@ -1,9 +1,13 @@
-# AdminThemeUikitCss::fileToUrl()
+# $adminThemeUikitCss->fileToUrl($file): string
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Get URL for given full path/file
 
-@param string $file
+## Arguments
 
-@return string
+- string $file
+
+## Return value
+
+string

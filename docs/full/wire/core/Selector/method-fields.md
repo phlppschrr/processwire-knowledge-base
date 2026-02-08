@@ -1,11 +1,17 @@
-# Selector::fields()
+# $selector->fields(): array
 
 Source: `wire/core/Selector.php`
 
 Return array of field(s) for this Selector
 
-@return array
+## Return value
 
-@see Selector::field()
+array
 
-@since 3.0.42 Prior versions just supported the 'fields' property.
+## See also
+
+- [Selector::field()](method-field.md)
+
+## Meta
+
+- @since 3.0.42 Prior versions just supported the 'fields' property.

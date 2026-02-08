@@ -1,7 +1,9 @@
-# FileLog::filename()
+# $fileLog->filename(): string
 
 Source: `wire/core/FileLog.php`
 
 Get file basename
 
-@return string
+## Return value
+
+string

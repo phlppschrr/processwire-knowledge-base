@@ -1,9 +1,13 @@
-# ImageSizerEngine::get()
+# $imageSizerEngine->get($key): mixed|null
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Get a property
 
-@param string $key
+## Arguments
 
-@return mixed|null
+- string $key
+
+## Return value
+
+mixed|null

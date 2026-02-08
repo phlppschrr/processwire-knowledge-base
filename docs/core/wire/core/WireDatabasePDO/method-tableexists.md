@@ -1,12 +1,17 @@
-# WireDatabasePDO::tableExists()
+# $wireDatabasePDO->tableExists($table): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Does the given table exist in this database?
 
+## Arguments
 
-@param string $table
+- string $table
 
-@return bool
+## Return value
 
-@since 3.0.133
+bool
+
+## Meta
+
+- @since 3.0.133

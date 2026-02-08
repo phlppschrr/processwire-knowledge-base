@@ -1,9 +1,13 @@
-# ModulesLoader::readyModule()
+# $modulesLoader->readyModule(Module $module): bool
 
 Source: `wire/core/ModulesLoader.php`
 
 Call ready for a single module
 
-@param Module $module
+## Arguments
 
-@return bool
+- Module $module
+
+## Return value
+
+bool

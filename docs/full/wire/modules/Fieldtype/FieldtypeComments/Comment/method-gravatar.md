@@ -1,13 +1,15 @@
-# Comment::gravatar()
+# $comment->gravatar($rating = 'g', $imageset = 'mm', $size = 80): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Returns a URL to this user's gravatar image
 
-@param string $rating Gravatar rating, one of [ g | pg | r | x ], default is g.
+## Arguments
 
-@param string $imageset Gravatar default imageset, one of [ 404 | mm | identicon | monsterid | wavatar | retro | blank ], default is mm.
+- string $rating Gravatar rating, one of [ g | pg | r | x ], default is g.
+- string $imageset Gravatar default imageset, one of [ 404 | mm | identicon | monsterid | wavatar | retro | blank ], default is mm.
+- int $size Gravatar image size, default is 80.
 
-@param int $size Gravatar image size, default is 80.
+## Return value
 
-@return string
+string

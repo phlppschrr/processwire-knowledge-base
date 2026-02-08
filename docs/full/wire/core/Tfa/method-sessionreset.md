@@ -1,9 +1,13 @@
-# Tfa::sessionReset()
+# $tfa->sessionReset($redirectURL = ''): false
 
 Source: `wire/core/Tfa.php`
 
 Remove all session variables set for this module
 
-@param string $redirectURL Optionally redirect to URL after reset
+## Arguments
 
-@return false
+- string $redirectURL Optionally redirect to URL after reset
+
+## Return value
+
+false

@@ -1,7 +1,9 @@
-# Role::__construct()
+# $role->__construct(?Template $tpl = null)
 
 Source: `wire/core/Role.php`
 
 Create a new Role page in memory.
 
-@param Template|null $tpl
+## Arguments
+
+- Template|null $tpl

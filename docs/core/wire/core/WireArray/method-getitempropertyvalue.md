@@ -1,4 +1,4 @@
-# WireArray::getItemPropertyValue()
+# $wireArray->getItemPropertyValue(Wire $item, $property): mixed
 
 Source: `wire/core/WireArray.php`
 
@@ -8,8 +8,11 @@ Used by the WireArray::sort method to retrieve a value from a Wire object.
 Primarily here as a template method so that it can be overridden.
 Lets it prepare the Wire for any states needed for sorting.
 
-@param Wire $item
+## Arguments
 
-@param string $property
+- Wire $item
+- string $property
 
-@return mixed
+## Return value
+
+mixed

@@ -1,7 +1,9 @@
-# FileCompilerModule::getModuleConfigInputfields()
+# $fileCompilerModule->getModuleConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/core/FileCompilerModule.php`
 
 Configure the FileCompiler module
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- InputfieldWrapper $inputfields

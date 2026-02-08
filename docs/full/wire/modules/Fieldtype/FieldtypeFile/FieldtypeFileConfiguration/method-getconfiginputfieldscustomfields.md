@@ -1,7 +1,9 @@
-# FieldtypeFileConfiguration::getConfigInputfieldsCustomFields()
+# $fieldtypeFileConfiguration->getConfigInputfieldsCustomFields(Field $field, InputfieldWrapper $inputfields)
 
 Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
-@param Field $field
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- Field $field
+- InputfieldWrapper $inputfields

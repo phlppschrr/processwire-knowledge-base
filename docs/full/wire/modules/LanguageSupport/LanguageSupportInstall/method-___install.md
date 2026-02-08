@@ -1,4 +1,4 @@
-# LanguageSupportInstall::___install()
+# $languageSupportInstall->___install()
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 

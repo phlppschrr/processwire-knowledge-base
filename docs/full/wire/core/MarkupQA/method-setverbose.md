@@ -1,14 +1,11 @@
-# MarkupQA::setVerbose()
+# $markupQA->setVerbose($verbose): string|array|int|null|$this
 
 Source: `wire/core/MarkupQA.php`
 
 Get or set a setting
 
-@param string $key Setting name to get or set, or omit to get all settings
 
-@param string|array|int|null $value Setting value to set, or omit when getting setting
 
-@return string|array|int|null|$this Returns value of $key
 
 public function setting($key = null, $value = null) {
 if($key === null) return $this->settings; // return all
@@ -17,3 +14,12 @@ if($key === 'ignorePaths') return $this->ignorePaths($value); // set specific
 $this->settings[$key] = $value; // set
 return $value;
 }
+
+## Arguments
+
+- string $key Setting name to get or set, or omit to get all settings
+- string|array|int|null $value Setting value to set, or omit when getting setting
+
+## Return value
+
+string|array|int|null|$this Returns value of $key

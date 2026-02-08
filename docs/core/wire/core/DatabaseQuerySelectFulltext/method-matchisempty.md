@@ -1,4 +1,4 @@
-# DatabaseQuerySelectFulltext::matchIsEmpty()
+# $databaseQuerySelectFulltext->matchIsEmpty()
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 

@@ -1,12 +1,17 @@
-# Template::hasTag()
+# $template->hasTag($tag): bool
 
 Source: `wire/core/Template.php`
 
 Does this template have given tag?
 
+## Arguments
 
-@param string $tag
+- string $tag
 
-@return bool
+## Return value
 
-@since 3.0.176
+bool
+
+## Meta
+
+- @since 3.0.176

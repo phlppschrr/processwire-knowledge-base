@@ -1,4 +1,4 @@
-# AdminTheme::setCurrent()
+# $adminTheme->setCurrent()
 
 Source: `wire/core/AdminTheme.php`
 

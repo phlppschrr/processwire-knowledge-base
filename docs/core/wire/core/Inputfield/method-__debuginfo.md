@@ -1,7 +1,9 @@
-# Inputfield::__debugInfo()
+# $inputfield->__debugInfo(): array
 
 Source: `wire/core/Inputfield.php`
 
 debugInfo PHP 5.6+ magic method
 
-@return array
+## Return value
+
+array

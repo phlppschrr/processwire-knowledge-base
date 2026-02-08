@@ -1,4 +1,4 @@
-# WireDatabasePDO::isOperator()
+# $wireDatabasePDO->isOperator($str, $operatorType = self::operatorTypeAny, $get = false): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
@@ -13,13 +13,12 @@ if($database->isOperator('>=')) {
 }
 ~~~~~
 
-@param string $str 1-2 character operator to test
+## Arguments
 
-@param bool|null|int $operatorType Specify a WireDatabasePDO::operatorType* constant (3.0.162+), or any one of the following (3.0.143+):
- - `NULL`: allow all operators (default value if not specified)
- - `FALSE`: allow only comparison operators
- - `TRUE`: allow only bitwise operators
+- string $str 1-2 character operator to test
+- bool|null|int $operatorType Specify a WireDatabasePDO::operatorType* constant (3.0.162+), or any one of the following (3.0.143+): - `NULL`: allow all operators (default value if not specified) - `FALSE`: allow only comparison operators - `TRUE`: allow only bitwise operators
+- bool $get Return the operator rather than true, when valid? (default=false) Added 3.0.162
 
-@param bool $get Return the operator rather than true, when valid? (default=false) Added 3.0.162
+## Return value
 
-@return bool True if valid, false if not
+bool True if valid, false if not

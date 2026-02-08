@@ -1,9 +1,13 @@
-# Pagefiles::getFieldsPage()
+# $pagefiles->getFieldsPage(): Page
 
 Source: `wire/core/Pagefiles.php`
 
 Get mock/placeholder Page object used for Pagefile custom fields
 
-@return Page
+## Return value
 
-@since 3.0.142
+Page
+
+## Meta
+
+- @since 3.0.142

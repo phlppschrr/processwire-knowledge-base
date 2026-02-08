@@ -1,13 +1,15 @@
-# InputfieldTinyMCETools::jsonEncode()
+# $inputfieldTinyMCETools->jsonEncode($a, $propertyName, $pretty = true): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
 Encode array to JSON
 
-@param array $a
+## Arguments
 
-@param string $propertyName Name of property JSON is for
+- array $a
+- string $propertyName Name of property JSON is for
+- bool $pretty
 
-@param bool $pretty
+## Return value
 
-@return string
+string

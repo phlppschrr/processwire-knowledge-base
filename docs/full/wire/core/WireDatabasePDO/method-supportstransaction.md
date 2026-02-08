@@ -1,10 +1,13 @@
-# WireDatabasePDO::supportsTransaction()
+# $wireDatabasePDO->supportsTransaction($table = ''): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Are transactions available with current DB engine (or table)?
 
+## Arguments
 
-@param string $table Optionally specify a table to specifically check to that table
+- string $table Optionally specify a table to specifically check to that table
 
-@return bool
+## Return value
+
+bool

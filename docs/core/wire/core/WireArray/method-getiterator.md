@@ -1,4 +1,4 @@
-# WireArray::getIterator()
+# $wireArray->getIterator(): \ArrayObject|Wire[]
 
 Source: `wire/core/WireArray.php`
 
@@ -14,5 +14,6 @@ foreach($items as $item) {
 }
 ~~~~~
 
+## Return value
 
-@return \ArrayObject|Wire[]
+\ArrayObject|Wire[]

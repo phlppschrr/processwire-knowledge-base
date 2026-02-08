@@ -1,11 +1,14 @@
-# CommentField::getCommentByID()
+# $commentField->getCommentByID($page, $id): Comment|null
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Get a comment by ID or NULL if not found
 
-@param Page|int|string $page
+## Arguments
 
-@param int $id
+- Page|int|string $page
+- int $id
 
-@return Comment|null
+## Return value
+
+Comment|null

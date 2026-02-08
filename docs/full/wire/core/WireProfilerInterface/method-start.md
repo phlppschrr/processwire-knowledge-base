@@ -1,4 +1,4 @@
-# WireProfilerInterface::start()
+# $wireProfilerInterface->start($name, $source = null, $data = array()): mixed
 
 Source: `wire/core/Interfaces.php`
 
@@ -6,10 +6,12 @@ Start profiling an event
 
 Return the event array to be used for stop profiling
 
-@param string $name Name of event in format "method" or "method.id" or "something"
+## Arguments
 
-@param Wire|object|string|null Source of event (may be object instance)
+- string $name Name of event in format "method" or "method.id" or "something"
+- Wire|object|string|null Source of event (may be object instance)
+- array $data
 
-@param array $data
+## Return value
 
-@return mixed Event to be used for stop call
+mixed Event to be used for stop call

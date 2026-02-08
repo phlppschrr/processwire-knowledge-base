@@ -1,4 +1,4 @@
-# Config::url()
+# $config->url($for): string|null
 
 Source: `wire/core/Config.php`
 
@@ -14,7 +14,10 @@ $url = $config->url('admin');
 $url = $config->urls->admin;
 ~~~~~
 
+## Arguments
 
-@param string|Wire $for Predefined ProcessWire URLs property or module name
+- string|Wire $for Predefined ProcessWire URLs property or module name
 
-@return string|null
+## Return value
+
+string|null

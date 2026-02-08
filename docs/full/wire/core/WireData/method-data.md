@@ -1,4 +1,4 @@
-# WireData::data()
+# $wireData->data($key = null, $value = null): array|WireData|null
 
 Source: `wire/core/WireData.php`
 
@@ -22,12 +22,11 @@ $item->data('some_property', 'some value');
 $value = $item->data('some_property');
 ~~~~~
 
-@param string|array $key Property you want to get or set, or associative array of properties you want to set.
+## Arguments
 
-@param mixed $value Optionally specify a value if you want to set rather than get.
- Or Specify boolean TRUE if setting an array via $key and you want to overwrite any existing values (rather than merge).
+- string|array $key Property you want to get or set, or associative array of properties you want to set.
+- mixed $value Optionally specify a value if you want to set rather than get. Or Specify boolean TRUE if setting an array via $key and you want to overwrite any existing values (rather than merge).
 
-@return array|WireData|null Returns one of the following:
-  - `mixed` - Actual value if getting a previously set value.
-  - `null` - If you are attempting to get a value that has not been set.
-  - `$this` - If you are setting a value.
+## Return value
+
+array|WireData|null Returns one of the following: - `mixed` - Actual value if getting a previously set value. - `null` - If you are attempting to get a value that has not been set. - `$this` - If you are setting a value.

@@ -1,11 +1,14 @@
-# WireHttp::sendOptions()
+# $wireHttp->sendOptions($url, array $options): array
 
 Source: `wire/core/WireHttp.php`
 
 Prepare options for send method(s)
 
-@param string $url
+## Arguments
 
-@param array $options
+- string $url
+- array $options
 
-@return array
+## Return value
+
+array

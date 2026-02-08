@@ -1,4 +1,4 @@
-# Template::__toString()
+# $template->__toString()
 
 Source: `wire/core/Template.php`
 

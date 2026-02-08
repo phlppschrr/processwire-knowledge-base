@@ -1,10 +1,13 @@
-# WireHttp::getHttpCode()
+# $wireHttp->getHttpCode($withText = false): int|string
 
 Source: `wire/core/WireHttp.php`
 
 Get last HTTP code
 
+## Arguments
 
-@param bool $withText Specify true to include the HTTP code text label with the code
+- bool $withText Specify true to include the HTTP code text label with the code
 
-@return int|string
+## Return value
+
+int|string

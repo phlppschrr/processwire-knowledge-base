@@ -1,4 +1,4 @@
-# PageValues::setName()
+# $pageValues->setName(Page $page, $value, $language = null): Page
 
 Source: `wire/core/PageValues.php`
 
@@ -15,8 +15,11 @@ $page->name = 'my-page-name';
 $page->setName('la-cerveza', 'es');
 ~~~~~
 
-@param string $value Page name that you want to set
+## Arguments
 
-@param Language|string|int|null $language Set language for name (can also be language name or string in format "name1234")
+- string $value Page name that you want to set
+- Language|string|int|null $language Set language for name (can also be language name or string in format "name1234")
 
-@return Page
+## Return value
+
+Page

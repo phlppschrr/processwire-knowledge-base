@@ -1,15 +1,22 @@
-# WireHttp::openWritableFile()
+# $wireHttp->openWritableFile($toFile, $fp = false): resource
 
 Source: `wire/core/WireHttp.php`
 
 Open a new file for writing (for download methods)
 
-@param string $toFile
+## Arguments
 
-@param resource|false $fp
+- string $toFile
+- resource|false $fp
 
-@return resource
+## Return value
 
-@throws WireException
+resource
 
-@since 3.0.222
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.222

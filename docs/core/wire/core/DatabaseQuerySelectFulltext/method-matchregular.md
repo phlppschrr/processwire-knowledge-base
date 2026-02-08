@@ -1,7 +1,9 @@
-# DatabaseQuerySelectFulltext::matchRegular()
+# $databaseQuerySelectFulltext->matchRegular($value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Perform a regular scored MATCH/AGAINST query (non-boolean)
 
-@param string $value
+## Arguments
+
+- string $value

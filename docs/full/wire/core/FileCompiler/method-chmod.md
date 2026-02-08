@@ -1,9 +1,13 @@
-# FileCompiler::chmod()
+# $fileCompiler->chmod($filename): bool
 
 Source: `wire/core/FileCompiler.php`
 
 Change file to correct mode for FileCompiler
 
-@param string $filename
+## Arguments
 
-@return bool
+- string $filename
+
+## Return value
+
+bool

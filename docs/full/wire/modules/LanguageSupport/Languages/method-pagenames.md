@@ -1,9 +1,13 @@
-# Languages::pageNames()
+# $languages->pageNames(): LanguageSupportPageNames|false
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Get LanguageSupportPageNames module if installed, false if not
 
-@return LanguageSupportPageNames|false
+## Return value
 
-@since 3.0.186
+LanguageSupportPageNames|false
+
+## Meta
+
+- @since 3.0.186

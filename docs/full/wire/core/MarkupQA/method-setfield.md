@@ -1,7 +1,9 @@
-# MarkupQA::setField()
+# $markupQA->setField(Field $field)
 
 Source: `wire/core/MarkupQA.php`
 
 Set the current Field
 
-@param Field $field
+## Arguments
+
+- Field $field

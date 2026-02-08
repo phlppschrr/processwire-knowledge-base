@@ -1,4 +1,4 @@
-# PagesEditor::savePageStatus()
+# $pagesEditor->savePageStatus($pageID, $status, $recursive = false, $remove = false): int
 
 Source: `wire/core/PagesEditor.php`
 
@@ -12,13 +12,13 @@ the status properties of those instantiated Page objects, it only updates the DB
 
 Note: Please use addStatus() or removeStatus() instead, unless you need to perform a recursive add/remove status.
 
+## Arguments
 
-@param int|array|Page|PageArray $pageID Page ID, Page, array of page IDs, or PageArray
+- int|array|Page|PageArray $pageID Page ID, Page, array of page IDs, or PageArray
+- int $status Status per flags in Page::status* constants. Status will be OR'd with existing status, unless $remove is used.
+- bool $recursive Should the status descend into the page's children, and grandchildren, etc? (default=false)
+- bool|int $remove Should the status be removed rather than added? Use integer 2 to overwrite (default=false)
 
-@param int $status Status per flags in Page::status* constants. Status will be OR'd with existing status, unless $remove is used.
+## Return value
 
-@param bool $recursive Should the status descend into the page's children, and grandchildren, etc? (default=false)
-
-@param bool|int $remove Should the status be removed rather than added? Use integer 2 to overwrite (default=false)
-
-@return int Number of pages updated
+int Number of pages updated

@@ -1,7 +1,9 @@
-# Tfa::hookBeforeInputfieldFormProcess()
+# $tfa->hookBeforeInputfieldFormProcess(HookEvent $event)
 
 Source: `wire/core/Tfa.php`
 
 Hook before InputfieldForm::processInput()
 
-@param HookEvent $event
+## Arguments
+
+- HookEvent $event

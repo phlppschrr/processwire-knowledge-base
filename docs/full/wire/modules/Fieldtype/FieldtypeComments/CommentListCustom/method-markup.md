@@ -1,11 +1,14 @@
-# CommentListCustom::markup()
+# $commentListCustom->markup($key = '', $value = null): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
 Get or set markup properties
 
-@param string|array $key Property to get or set, or array of properties to set
+## Arguments
 
-@param null|mixed $value Specify only if setting individual property
+- string|array $key Property to get or set, or array of properties to set
+- null|mixed $value Specify only if setting individual property
 
-@return mixed
+## Return value
+
+mixed

@@ -1,7 +1,9 @@
-# ProcessPageListRender::getMoreURL()
+# $processPageListRender->getMoreURL(): string
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Get URL to view more
 
-@return string
+## Return value
+
+string

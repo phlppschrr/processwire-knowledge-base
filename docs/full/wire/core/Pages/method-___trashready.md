@@ -1,10 +1,13 @@
-# Pages::___trashReady()
+# $pages->___trashReady(Page $page)
 
 Source: `wire/core/Pages.php`
 
 Hook called when a Page is about to be trashed
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@since 3.0.163
+## Meta
+
+- @since 3.0.163

@@ -1,9 +1,13 @@
-# ImageSizerEngine::iptcPrepareData()
+# $imageSizerEngine->iptcPrepareData($includeCustomTags = false): string
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Prepare IPTC data (@horst)
 
-@param bool $includeCustomTags (default=false)
+## Arguments
 
-@return string $iptcNew
+- bool $includeCustomTags (default=false)
+
+## Return value
+
+string $iptcNew

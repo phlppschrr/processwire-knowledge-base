@@ -1,11 +1,17 @@
-# SelectableOptionArray::removeByValue()
+# $selectableOptionArray->removeByValue($value): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Remove option by value
 
-@param string $value
+## Arguments
 
-@return bool
+- string $value
 
-@since 3.0.242
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.242

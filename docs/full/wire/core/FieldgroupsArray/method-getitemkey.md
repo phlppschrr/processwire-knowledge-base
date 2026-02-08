@@ -1,4 +1,4 @@
-# FieldgroupsArray::getItemKey()
+# $fieldgroupsArray->getItemKey($item)
 
 Source: `wire/core/FieldgroupsArray.php`
 

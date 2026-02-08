@@ -1,7 +1,9 @@
-# Notices::loadStoredNotices()
+# $notices->loadStoredNotices(): int
 
 Source: `wire/core/Notices.php`
 
 Load persist Notices stored in Session
 
-@return int Number of Notices loaded
+## Return value
+
+int Number of Notices loaded

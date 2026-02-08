@@ -1,9 +1,13 @@
-# ImageSizerEngine::checkOrientation()
+# $imageSizerEngine->checkOrientation(&$correctionArray): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Check orientation (@horst)
 
-@param array
+## Arguments
 
-@return bool
+- array
+
+## Return value
+
+bool

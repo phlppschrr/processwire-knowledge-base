@@ -1,9 +1,13 @@
-# HookEvent::get()
+# $hookEvent->get($key): mixed|null
 
 Source: `wire/core/HookEvent.php`
 
 Get
 
-@param object|string $key
+## Arguments
 
-@return mixed|null
+- object|string $key
+
+## Return value
+
+mixed|null

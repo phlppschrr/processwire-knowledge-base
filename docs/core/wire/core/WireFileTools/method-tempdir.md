@@ -1,4 +1,4 @@
-# WireFileTools::tempDir()
+# $wireFileTools->tempDir($name = '', $options = array()): WireTempDir
 
 Source: `wire/core/WireFileTools.php`
 
@@ -16,14 +16,15 @@ $path = $tempDir->get();
 file_put_contents($path . 'some-file.txt', 'Hello world');
 ~~~~~
 
-@param Object|string $name Any one of the following: (default='')
- - Omit this argument for auto-generated name, 3.0.178+
- - Name/word that you specify using fieldName format, i.e. [_a-zA-Z0-9].
- - Object instance that needs the temp dir.
+## Arguments
 
-@param array|int $options Deprecated argument. Call `WireTempDir` methods if you need more options.
+- Object|string $name Any one of the following: (default='') - Omit this argument for auto-generated name, 3.0.178+ - Name/word that you specify using fieldName format, i.e. [_a-zA-Z0-9]. - Object instance that needs the temp dir.
+- array|int $options Deprecated argument. Call `WireTempDir` methods if you need more options.
 
-@return WireTempDir Returns a WireTempDir instance. If you typecast return value to a string,
-   it is the temp dir path (with trailing slash).
+## Return value
 
-@see WireTempDir
+WireTempDir Returns a WireTempDir instance. If you typecast return value to a string, it is the temp dir path (with trailing slash).
+
+## See also
+
+- WireTempDir

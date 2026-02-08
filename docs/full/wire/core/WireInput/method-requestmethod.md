@@ -1,4 +1,4 @@
-# WireInput::requestMethod()
+# $wireInput->requestMethod($method = ''): string|bool
 
 Source: `wire/core/WireInput.php`
 
@@ -13,8 +13,14 @@ Possible return values are:
 - OPTIONS
 - or blank if not known
 
-@param string $method Optionally enter the request method to return bool if current method matches
+## Arguments
 
-@return string|bool
+- string $method Optionally enter the request method to return bool if current method matches
 
-@since 3.0.39
+## Return value
+
+string|bool
+
+## Meta
+
+- @since 3.0.39

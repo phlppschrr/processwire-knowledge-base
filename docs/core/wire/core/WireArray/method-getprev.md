@@ -1,12 +1,14 @@
-# WireArray::getPrev()
+# $wireArray->getPrev($item, $strict = true): Wire|null
 
 Source: `wire/core/WireArray.php`
 
 Given an item, get the item before it in the WireArray
 
+## Arguments
 
-@param Wire $item
+- Wire $item
+- bool $strict If false, string comparison will be used rather than exact instance comparison.
 
-@param bool $strict If false, string comparison will be used rather than exact instance comparison.
+## Return value
 
-@return Wire|null Returns item that comes before given item, or null if not found
+Wire|null Returns item that comes before given item, or null if not found

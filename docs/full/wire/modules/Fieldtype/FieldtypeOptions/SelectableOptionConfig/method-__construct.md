@@ -1,9 +1,10 @@
-# SelectableOptionConfig::__construct()
+# $selectableOptionConfig->__construct(Field $field, InputfieldWrapper $inputfields)
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionConfig.php`
 
 Construct
 
-@param Field $field
+## Arguments
 
-@param InputfieldWrapper $inputfields
+- Field $field
+- InputfieldWrapper $inputfields

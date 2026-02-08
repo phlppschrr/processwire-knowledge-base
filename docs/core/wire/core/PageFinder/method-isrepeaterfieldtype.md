@@ -1,9 +1,13 @@
-# PageFinder::isRepeaterFieldtype()
+# $pageFinder->isRepeaterFieldtype(Fieldtype $fieldtype): bool
 
 Source: `wire/core/PageFinder.php`
 
 Is the given Fieldtype for a repeater?
 
-@param Fieldtype $fieldtype
+## Arguments
 
-@return bool
+- Fieldtype $fieldtype
+
+## Return value
+
+bool

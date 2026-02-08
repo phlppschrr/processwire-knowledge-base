@@ -1,11 +1,17 @@
-# WireLog::exists()
+# $wireLog->exists($name): bool
 
 Source: `wire/core/WireLog.php`
 
 Does given log name exist?
 
-@param string $name
+## Arguments
 
-@return bool
+- string $name
 
-@since 3.0.176
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.176

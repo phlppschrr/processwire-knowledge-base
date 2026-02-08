@@ -1,11 +1,17 @@
-# Template::editUrl()
+# $template->editUrl($http = false): string
 
 Source: `wire/core/Template.php`
 
 URL to edit template settings (for administrator)
 
-@param bool $http Full http/https URL?
+## Arguments
 
-@return string
+- bool $http Full http/https URL?
 
-@since 3.0.170
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.170

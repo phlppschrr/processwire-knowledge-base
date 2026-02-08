@@ -1,4 +1,4 @@
-# Fieldtype::getFieldClass()
+# $fieldtype->getFieldClass(array $a = array()): string
 
 Source: `wire/core/Fieldtype.php`
 
@@ -6,8 +6,14 @@ Get class name to use Field objects of this type (must be class that extends Fie
 
 Return blank if default class (Field) should be used.
 
-@param array $a Field data from DB (if needed)
+## Arguments
 
-@return string Return class name or blank to use default Field class
+- array $a Field data from DB (if needed)
 
-@since 3.0.146
+## Return value
+
+string Return class name or blank to use default Field class
+
+## Meta
+
+- @since 3.0.146

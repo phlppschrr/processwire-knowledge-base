@@ -1,17 +1,23 @@
-# PagesParents::movePage()
+# $pagesParents->movePage(Page $page, Page $oldParent, Page $newParent): int
 
 Source: `wire/core/PagesParents.php`
 
 Rebuild pages_parents table for given page (experimental faster alternative/rewrite of rebuild method)
 
-@param Page $page
+## Arguments
 
-@param Page $oldParent
+- Page $page
+- Page $oldParent
+- Page $newParent
 
-@param Page $newParent
+## Return value
 
-@return int
+int
 
-@throws WireException
+## Throws
 
-@since 3.0.212
+- WireException
+
+## Meta
+
+- @since 3.0.212

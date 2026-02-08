@@ -1,14 +1,18 @@
-# PagesLoaderCache::uncacheGroup()
+# $pagesLoaderCache->uncacheGroup($groupName, array $options = array()): int
 
 Source: `wire/core/PagesLoaderCache.php`
 
 Uncache pages that were cached with given group name
 
+## Arguments
 
-@param string $groupName
+- string $groupName
+- array $options
 
-@param array $options
+## Return value
 
-@return int
+int
 
-@since 3.0.198
+## Meta
+
+- @since 3.0.198

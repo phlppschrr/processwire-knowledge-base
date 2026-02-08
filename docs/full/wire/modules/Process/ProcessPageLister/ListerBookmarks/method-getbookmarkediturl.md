@@ -1,9 +1,13 @@
-# ListerBookmarks::getBookmarkEditUrl()
+# $listerBookmarks->getBookmarkEditUrl($bookmarkID): string
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get the URL for a bookmark
 
-@param string $bookmarkID
+## Arguments
 
-@return string
+- string $bookmarkID
+
+## Return value
+
+string

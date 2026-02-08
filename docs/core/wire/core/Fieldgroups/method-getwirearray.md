@@ -1,5 +1,8 @@
-# Fieldgroups::getWireArray()
+# $fieldgroups->getWireArray(): WireArray|FieldgroupsArray
 
 Source: `wire/core/Fieldgroups.php`
 
-@return WireArray|FieldgroupsArray
+
+## Return value
+
+WireArray|FieldgroupsArray

@@ -1,7 +1,9 @@
-# DatabaseQuerySelectFulltext::matchPhrase()
+# $databaseQuerySelectFulltext->matchPhrase($value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Match contains entire phrase/string (*=)
 
-@param string $value
+## Arguments
+
+- string $value

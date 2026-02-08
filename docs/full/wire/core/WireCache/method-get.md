@@ -1,4 +1,4 @@
-# WireCache::get()
+# $wireCache->get($name, $expire = null, $func = null): string|array|PageArray|mixed|null
 
 Source: `wire/core/WireCache.php`
 
@@ -27,20 +27,16 @@ $str = $cache->get('foo', 3600, function() {
 });
 ~~~~~
 
-@param string|array $name Provide a single cache name, an array of cache names, or an asterisk cache name.
-- If given a single cache name (string) just the contents of that cache will be returned.
-- If given an array of names, multiple caches will be returned, indexed by cache name.
-- If given a cache name with an asterisk in it, it will return an array of all matching caches.
+## Arguments
 
-@param int|string|null|false $expire Optionally specify max age (in seconds) OR oldest date string, or false to ignore.
-- If cache exists and is older, then null returned. You may omit this to divert to whatever expiration
-  was specified at save() time. Note: The $expire and $func arguments may optionally be reversed.
-- If using a $func, the behavior of $expire becomes the same as that of save().
+- string|array $name Provide a single cache name, an array of cache names, or an asterisk cache name. - If given a single cache name (string) just the contents of that cache will be returned. - If given an array of names, multiple caches will be returned, indexed by cache name. - If given a cache name with an asterisk in it, it will return an array of all matching caches.
+- int|string|null|false $expire Optionally specify max age (in seconds) OR oldest date string, or false to ignore. - If cache exists and is older, then null returned. You may omit this to divert to whatever expiration was specified at save() time. Note: The $expire and $func arguments may optionally be reversed. - If using a $func, the behavior of $expire becomes the same as that of save().
+- callable $func Optionally provide a function/closure that generates the cache value and it will be used when needed. This option requires that only one cache is being retrieved (not an array of caches). Note: The $expire and $func arguments may optionally be reversed.
 
-@param callable $func Optionally provide a function/closure that generates the cache value and it
-	will be used when needed. This option requires that only one cache is being retrieved (not an array of caches).
-	Note: The $expire and $func arguments may optionally be reversed.
+## Return value
 
-@return string|array|PageArray|mixed|null Returns null if cache doesn’t exist and no generation function provided.
+string|array|PageArray|mixed|null Returns null if cache doesn’t exist and no generation function provided.
 
-@throws WireException if given invalid arguments
+## Throws
+
+- WireException if given invalid arguments

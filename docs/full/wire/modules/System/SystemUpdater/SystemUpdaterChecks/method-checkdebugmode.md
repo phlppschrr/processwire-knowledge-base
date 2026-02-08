@@ -1,4 +1,4 @@
-# SystemUpdaterChecks::checkDebugMode()
+# $systemUpdaterChecks->checkDebugMode()
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 

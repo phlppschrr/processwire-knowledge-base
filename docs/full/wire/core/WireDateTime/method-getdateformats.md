@@ -1,4 +1,4 @@
-# WireDateTime::getDateFormats()
+# $wireDateTime->getDateFormats(): array
 
 Source: `wire/core/WireDateTime.php`
 
@@ -10,5 +10,6 @@ $formats = $datetime->getDateFormats();
 echo "<pre>" . print_r($formats, true) . "</pre>";
 ~~~~~
 
+## Return value
 
-@return array Returns an array of strings containing recognized date formats
+array Returns an array of strings containing recognized date formats

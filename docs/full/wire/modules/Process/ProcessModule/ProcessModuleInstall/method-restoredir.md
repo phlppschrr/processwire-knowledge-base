@@ -1,11 +1,17 @@
-# ProcessModuleInstall::restoreDir()
+# $processModuleInstall->restoreDir($moduleDir): bool
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Restore a module directory
 
-@param string $moduleDir
+## Arguments
 
-@return bool
+- string $moduleDir
 
-@throws WireException
+## Return value
+
+bool
+
+## Throws
+
+- WireException

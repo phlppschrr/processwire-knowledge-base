@@ -1,4 +1,4 @@
-# Page::index()
+# $page->index($selector = ''): int
 
 Source: `wire/core/Page.php`
 
@@ -19,12 +19,14 @@ $n = $page->parent->numChildren();
 echo "This page is $i out of $n total pages";
 ~~~~~
 
+## Arguments
 
-@param bool|string|array Specify one of the following (since 3.0.121):
- - Boolean true to include hidden and unpublished pages as part of the index numbers (same as "include=all").
- - An "include=hidden", "include=unpublished" or "include=all" selector to include them in the index numbers.
- - A string selector or selector array to filter the criteria for the returned index number.
+- bool|string|array Specify one of the following (since 3.0.121): - Boolean true to include hidden and unpublished pages as part of the index numbers (same as "include=all"). - An "include=hidden", "include=unpublished" or "include=all" selector to include them in the index numbers. - A string selector or selector array to filter the criteria for the returned index number.
 
-@return int Returns index number (zero-based)
+## Return value
 
-@since 3.0.24
+int Returns index number (zero-based)
+
+## Meta
+
+- @since 3.0.24

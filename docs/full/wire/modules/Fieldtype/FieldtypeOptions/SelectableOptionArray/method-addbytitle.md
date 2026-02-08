@@ -1,11 +1,17 @@
-# SelectableOptionArray::addByTitle()
+# $selectableOptionArray->addByTitle($title): false|SelectableOption
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Add by option title
 
-@param string $title
+## Arguments
 
-@return false|SelectableOption Returns option added on success or false on fail
+- string $title
 
-@throws WireException
+## Return value
+
+false|SelectableOption Returns option added on success or false on fail
+
+## Throws
+
+- WireException

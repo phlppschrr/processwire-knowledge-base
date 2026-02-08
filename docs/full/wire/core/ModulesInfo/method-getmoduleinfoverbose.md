@@ -1,4 +1,4 @@
-# ModulesInfo::getModuleInfoVerbose()
+# $modulesInfo->getModuleInfoVerbose($class, array $options = array()): array
 
 Source: `wire/core/ModulesInfo.php`
 
@@ -15,12 +15,15 @@ This is the same as what’s returned by `Modules::getModuleInfo()` except that 
  - `permissions` (array): permissions installed by this module, associative array ('permission  - name' => 'Description').
  - `page` (array): definition of page to create for Process module (see Process class)
 
-@param string|Module|int $class May be class name, module instance, or module ID
+## Arguments
 
-@param array $options Optional options to modify behavior of what gets returned:
- - `noCache` (bool): prevents use of cache to retrieve the module info
- - `noInclude` (bool): prevents include() of the module file, applicable only if it hasn't already been included
+- string|Module|int $class May be class name, module instance, or module ID
+- array $options Optional options to modify behavior of what gets returned: - `noCache` (bool): prevents use of cache to retrieve the module info - `noInclude` (bool): prevents include() of the module file, applicable only if it hasn't already been included
 
-@return array Associative array of module information
+## Return value
 
-@see Modules::getModuleInfo()
+array Associative array of module information
+
+## See also
+
+- [Modules::getModuleInfo()](../Modules/method-getmoduleinfo.md)

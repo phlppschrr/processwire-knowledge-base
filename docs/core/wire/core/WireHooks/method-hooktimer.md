@@ -1,13 +1,15 @@
-# WireHooks::hookTimer()
+# $wireHooks->hookTimer($object, $method, $arguments): string
 
 Source: `wire/core/WireHooks.php`
 
 Start timing a hook and return the timer name
 
-@param Wire $object
+## Arguments
 
-@param String $method
+- Wire $object
+- String $method
+- array $arguments
 
-@param array $arguments
+## Return value
 
-@return string
+string

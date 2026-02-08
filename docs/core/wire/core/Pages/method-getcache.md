@@ -1,4 +1,4 @@
-# Pages::getCache()
+# $pages->getCache($id = null): Page|array|null
 
 Source: `wire/core/Pages.php`
 
@@ -8,7 +8,10 @@ If no ID is provided, then this will return an array copy of the full cache.
 
 You may also pass in the string "id=123", where 123 is the page_id
 
+## Arguments
 
-@param int|string|null $id
+- int|string|null $id
 
-@return Page|array|null
+## Return value
+
+Page|array|null

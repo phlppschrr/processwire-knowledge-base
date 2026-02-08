@@ -1,4 +1,4 @@
-# WireCacheDatabase::install()
+# $wireCacheDatabase->install()
 
 Source: `wire/core/WireCacheDatabase.php`
 

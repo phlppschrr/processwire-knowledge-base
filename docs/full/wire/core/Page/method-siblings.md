@@ -1,4 +1,4 @@
-# Page::siblings()
+# $page->siblings($selector = '', $includeCurrent = true): PageArray
 
 Source: `wire/core/Page.php`
 
@@ -20,10 +20,11 @@ $featured = $page->siblings("template=product-featured, sort=name");
 $featured = $page->siblings("template=product-featured, sort=name", false);
 ~~~~~
 
+## Arguments
 
-@param string|array|bool $selector Optional selector to filter siblings by, or omit for all siblings.
+- string|array|bool $selector Optional selector to filter siblings by, or omit for all siblings.
+- bool $includeCurrent Specify false to exclude current page in the returned siblings (default=true). If no $selector argument is given, this argument may optionally be specified as the first argument.
 
-@param bool $includeCurrent Specify false to exclude current page in the returned siblings (default=true).
-  If no $selector argument is given, this argument may optionally be specified as the first argument.
+## Return value
 
-@return PageArray
+PageArray

@@ -1,4 +1,4 @@
-# Wire::wire()
+# $wire->wire($name = '', $value = null, $lock = false): ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|PagesVersions|string|mixed
 
 Source: `wire/core/Wire.php`
 
@@ -54,12 +54,16 @@ $this->wire($widgets);
 $newPage = $this->wire(new Page());
 ~~~~~
 
-@param string|object $name Name of API variable to retrieve, set, or omit to retrieve the master ProcessWire object.
+## Arguments
 
-@param null|mixed $value Value to set if using this as a setter, otherwise omit.
+- string|object $name Name of API variable to retrieve, set, or omit to retrieve the master ProcessWire object.
+- null|mixed $value Value to set if using this as a setter, otherwise omit.
+- bool $lock When using as a setter, specify true if you want to lock the value from future changes (default=false).
 
-@param bool $lock When using as a setter, specify true if you want to lock the value from future changes (default=false).
+## Return value
 
-@return ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|PagesVersions|string|mixed
+ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|PagesVersions|string|mixed
 
-@throws WireException
+## Throws
+
+- WireException

@@ -1,9 +1,13 @@
-# ModulesInfo::moduleInfoCacheHas()
+# $modulesInfo->moduleInfoCacheHas($moduleID): bool
 
 Source: `wire/core/ModulesInfo.php`
 
 Does the module info cache have an entry for given module ID?
 
-@param int $moduleID
+## Arguments
 
-@return bool
+- int $moduleID
+
+## Return value
+
+bool

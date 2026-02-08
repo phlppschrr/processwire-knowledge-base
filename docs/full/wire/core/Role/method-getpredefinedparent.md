@@ -1,7 +1,9 @@
-# Role::getPredefinedParent()
+# $role->getPredefinedParent(): Page
 
 Source: `wire/core/Role.php`
 
 Get predefined parent page (template method)
 
-@return Page
+## Return value
+
+Page

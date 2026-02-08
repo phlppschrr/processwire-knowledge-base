@@ -1,7 +1,9 @@
-# ListerBookmarks::saveOwnedBookmarks()
+# $listerBookmarks->saveOwnedBookmarks(array $bookmarks)
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Save owned bookmarks
 
-@param array $bookmarks
+## Arguments
+
+- array $bookmarks

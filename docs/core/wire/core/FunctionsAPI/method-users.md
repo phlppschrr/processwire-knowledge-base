@@ -1,4 +1,4 @@
-# FunctionsAPI::users()
+# $functionsAPI->users($selector = ''): Users|PageArray|User|mixed
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -17,11 +17,15 @@ $us = users()->find('roles.name=editor');
 $us = users('roles.name=editor');
 ~~~~~~
 
+## Arguments
 
-@param string|array|int $selector Optional selector to send to find() or get()
- - Specify user name or ID to get and return that User
- - Specify a selector string to find all users matching selector (PageArray)
+- string|array|int $selector Optional selector to send to find() or get() - Specify user name or ID to get and return that User - Specify a selector string to find all users matching selector (PageArray)
 
-@return Users|PageArray|User|mixed
+## Return value
 
-@see pages(), Users
+Users|PageArray|User|mixed
+
+## See also
+
+- pages()
+- Users

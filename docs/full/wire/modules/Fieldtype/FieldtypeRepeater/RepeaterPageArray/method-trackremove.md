@@ -1,9 +1,10 @@
-# RepeaterPageArray::trackRemove()
+# $repeaterPageArray->trackRemove($item, $key)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
 Track an item removed
 
-@param Wire|mixed $item
+## Arguments
 
-@param int|string $key
+- Wire|mixed $item
+- int|string $key

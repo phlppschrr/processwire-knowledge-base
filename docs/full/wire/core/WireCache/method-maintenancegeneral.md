@@ -1,7 +1,9 @@
-# WireCache::maintenanceGeneral()
+# $wireCache->maintenanceGeneral(): bool
 
 Source: `wire/core/WireCache.php`
 
 General maintenance removes expired caches
 
-@return bool
+## Return value
+
+bool

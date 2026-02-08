@@ -1,13 +1,15 @@
-# WireMarkupFileRegions::apply()
+# $wireMarkupFileRegions->apply(&$htmlDocument, &$htmlRegions, array $options = []): int
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
 Apply file regions in given HTML document and regions markup
 
-@param string $htmlDocument
+## Arguments
 
-@param string $htmlRegions
+- string $htmlDocument
+- string $htmlRegions
+- array $options
 
-@param array $options
+## Return value
 
-@return int Number of file regions
+int Number of file regions

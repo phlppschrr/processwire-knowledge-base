@@ -1,4 +1,4 @@
-# Comment::getFormattedCommentText()
+# $comment->getFormattedCommentText(array $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
@@ -9,11 +9,14 @@ but without the first `<p>` and last `</p>` since it is assumed these will be th
 the comment in. If you want it to include the wrapping `<p>…</p>` tags then specify true for the
 `wrapParagraph` option in the `$options` argument.
 
-@param array $options
- - `useParagraphs` (bool): Convert newlines to paragraphs? (default=true)
- - `wrapParagraph` (bool): Use wrapping <p>…</p> tags around return value? (default=false)
- - `useLinebreaks` (bool): Convert single newlines to <br> tags? (default=true)
+## Arguments
 
-@return string
+- array $options - `useParagraphs` (bool): Convert newlines to paragraphs? (default=true) - `wrapParagraph` (bool): Use wrapping <p>…</p> tags around return value? (default=false) - `useLinebreaks` (bool): Convert single newlines to <br> tags? (default=true)
 
-@since 3.0.169
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.169

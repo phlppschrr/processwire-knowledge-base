@@ -1,4 +1,4 @@
-# Tfa::wired()
+# $tfa->wired()
 
 Source: `wire/core/Tfa.php`
 

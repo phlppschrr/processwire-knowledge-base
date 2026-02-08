@@ -1,5 +1,8 @@
-# InputfieldSupportsArrayValue::getArrayValue()
+# $inputfieldSupportsArrayValue->getArrayValue(): array
 
 Source: `wire/core/Interfaces.php`
 
-@return array
+
+## Return value
+
+array

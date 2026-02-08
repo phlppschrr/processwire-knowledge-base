@@ -1,7 +1,9 @@
-# PageAccess::getWire()
+# $pageAccess->getWire(): ProcessWire
 
 Source: `wire/core/PageAccess.php`
 
 Get the ProcessWire instance
 
-@return ProcessWire
+## Return value
+
+ProcessWire

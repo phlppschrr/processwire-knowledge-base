@@ -1,13 +1,18 @@
-# CommentForm::labels()
+# $commentForm->labels($name, $value = null): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Get or set label
 
-@param string $name
+## Arguments
 
-@param string|null $value
+- string $name
+- string|null $value
 
-@return string
+## Return value
 
-@since 3.0.153
+string
+
+## Meta
+
+- @since 3.0.153

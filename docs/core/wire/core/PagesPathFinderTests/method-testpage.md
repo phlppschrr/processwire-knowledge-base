@@ -1,7 +1,12 @@
-# PagesPathFinderTests::testPage()
+# $pagesPathFinderTests->testPage(Page $item): array
 
 Source: `wire/core/PagesPathFinder.php`
 
-@param Page $item
 
-@return array
+## Arguments
+
+- Page $item
+
+## Return value
+
+array

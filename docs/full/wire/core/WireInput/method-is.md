@@ -1,4 +1,4 @@
-# WireInput::is()
+# $wireInput->is($method): bool
 
 Source: `wire/core/WireInput.php`
 
@@ -13,8 +13,14 @@ $isPost = $input->is('post');
 $isPost = $input->requestMethod('post');
 ~~~~~
 
-@param string $method Specify one of: post, get, head, put, delete, options, patch (not case sensitive)
+## Arguments
 
-@return bool
+- string $method Specify one of: post, get, head, put, delete, options, patch (not case sensitive)
 
-@since 3.0.145
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.145

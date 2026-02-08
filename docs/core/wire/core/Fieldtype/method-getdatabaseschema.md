@@ -1,4 +1,4 @@
-# Fieldtype::getDatabaseSchema()
+# $fieldtype->getDatabaseSchema(Field $field): array
 
 Source: `wire/core/Fieldtype.php`
 
@@ -36,7 +36,10 @@ array(
 );
 ~~~~~~
 
+## Arguments
 
-@param Field $field In case it's needed for the schema, but typically isn't.
+- Field $field In case it's needed for the schema, but typically isn't.
 
-@return array
+## Return value
+
+array

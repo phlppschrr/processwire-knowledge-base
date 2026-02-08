@@ -1,9 +1,10 @@
-# PagesRequest::setResponseCode()
+# $pagesRequest->setResponseCode($code, $message = '')
 
 Source: `wire/core/PagesRequest.php`
 
 Set response code and type
 
-@param int $code
+## Arguments
 
-@param string $message Optional message string
+- int $code
+- string $message Optional message string

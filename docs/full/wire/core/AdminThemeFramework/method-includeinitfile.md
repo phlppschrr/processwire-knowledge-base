@@ -1,4 +1,4 @@
-# AdminThemeFramework::includeInitFile()
+# $adminThemeFramework->includeInitFile()
 
 Source: `wire/core/AdminThemeFramework.php`
 

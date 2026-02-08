@@ -1,4 +1,4 @@
-# Languages::getLocale()
+# $languages->getLocale($category = LC_ALL, $language = null): string|bool
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -9,12 +9,19 @@ the format: “category=locale;category=locale”, and so on.
 
 The first and second arguments may optionally be swapped and either can be omitted.
 
-@param int|Language|string|null $category Optionally specify a PHP LC constant (default=LC_ALL)
+## Arguments
 
-@param Language|string|int|null $language Optionally return locale for specific language (default=current locale, regardless of language)
+- int|Language|string|null $category Optionally specify a PHP LC constant (default=LC_ALL)
+- Language|string|int|null $language Optionally return locale for specific language (default=current locale, regardless of language)
 
-@return string|bool Locale(s) string or boolean false if not supported by the system.
+## Return value
 
-@see Languages::setLocale()
+string|bool Locale(s) string or boolean false if not supported by the system.
 
-@throws WireException if given a $language argument that is invalid
+## Throws
+
+- WireException if given a $language argument that is invalid
+
+## See also
+
+- [Languages::setLocale()](method-setlocale.md)

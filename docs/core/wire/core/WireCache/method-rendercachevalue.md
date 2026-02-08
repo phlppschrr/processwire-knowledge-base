@@ -1,4 +1,4 @@
-# WireCache::renderCacheValue()
+# $wireCache->renderCacheValue($name, $expire, $func): bool|string
 
 Source: `wire/core/WireCache.php`
 
@@ -11,12 +11,16 @@ Provided $func may either echo or return it's output. If any value is returned b
 the function it will be used as the cache value. If no value is returned, then
 the output buffer will be used as the cache value.
 
-@param string $name
+## Arguments
 
-@param int|string|null $expire
+- string $name
+- int|string|null $expire
+- callable $func
 
-@param callable $func
+## Return value
 
-@return bool|string
+bool|string
 
-@since 2.5.28
+## Meta
+
+- @since 2.5.28

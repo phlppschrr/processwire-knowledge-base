@@ -1,4 +1,4 @@
-# Comment::getFormatted()
+# $comment->getFormatted($key, array $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
@@ -7,8 +7,11 @@ Same as get() but with output formatting applied
 Note that we won't apply this to get() when $page->outputFormatting is active
 in order for backwards compatibility with older installations.
 
-@param string $key One of: text, cite, email, user_agent, website
+## Arguments
 
-@param array $options
+- string $key One of: text, cite, email, user_agent, website
+- array $options
 
-@return string
+## Return value
+
+string

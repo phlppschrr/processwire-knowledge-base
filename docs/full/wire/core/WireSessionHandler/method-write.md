@@ -1,11 +1,14 @@
-# WireSessionHandler::write()
+# $wireSessionHandler->write($id, $data): bool
 
 Source: `wire/core/WireSessionHandler.php`
 
 Write the given $data for the given session ID
 
-@param string $id Session ID
+## Arguments
 
-@param string Serialized data to write
+- string $id Session ID
+- string Serialized data to write
 
-@return bool
+## Return value
+
+bool

@@ -1,7 +1,9 @@
-# PagesPathFinder::getHomepage()
+# $pagesPathFinder->getHomepage(): Page
 
 Source: `wire/core/PagesPathFinder.php`
 
 Get homepage
 
-@return Page
+## Return value
+
+Page

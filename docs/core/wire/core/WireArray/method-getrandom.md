@@ -1,4 +1,4 @@
-# WireArray::getRandom()
+# $wireArray->getRandom($num = 1, $alwaysArray = false): WireArray|Wire|mixed|null
 
 Source: `wire/core/WireArray.php`
 
@@ -17,11 +17,16 @@ $randomItem = $items->getRandom();
 $randomItems = $items->getRandom(3);
 ~~~~~
 
+## Arguments
 
-@param int $num Number of items to return. Optional and defaults to 1.
+- int $num Number of items to return. Optional and defaults to 1.
+- bool $alwaysArray If true, then method will always return an array of items, even if it only contains 1 item.
 
-@param bool $alwaysArray If true, then method will always return an array of items, even if it only contains 1 item.
+## Return value
 
-@return WireArray|Wire|mixed|null Returns value of item, or new WireArray of items if more than one requested.
+WireArray|Wire|mixed|null Returns value of item, or new WireArray of items if more than one requested.
 
-@see WireArray::findRandom(), WireArray::findRandomTimed()
+## See also
+
+- [WireArray::findRandom()](method-findrandom.md)
+- [WireArray::findRandomTimed()](method-findrandomtimed.md)

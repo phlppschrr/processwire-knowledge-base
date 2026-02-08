@@ -1,4 +1,4 @@
-# Config::setLocation()
+# $config->setLocation($for, $dir, $url = ''): self
 
 Source: `wire/core/Config.php`
 
@@ -27,20 +27,20 @@ if($user->name == 'karen') {
 }
 ~~~~~
 
+## Arguments
 
-@param string $for Named location from `$config->paths` or `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- string $for Named location from `$config->paths` or `$config->urls`, one of: `cache`, `logs`, `files`, `tmp`, `templates`, or your own.
+- string $dir Directory or URL to the location. Should be either a path or URL relative to current installation root (recommended), or an absolute disk path that resolves somewhere in current installation root. If specifying an absolute path outside of the installation root, then you’ll also want to provide the $url argument since PW won’t know it. You may also specify a blank string for this argument if you only want to set the $url argument.
+- string|bool $url If the $dir argument represents both the path and URL relative to site root, you can omit this argument. If path and URL cannot be derived from one another, or you only want to modify the $url (leaving $dir blank), you can specify the URL in this argument. Specify boolean false if you only want to set the $dir (path) and not detect the $url from it.
 
-@param string $dir Directory or URL to the location. Should be either a path or URL relative to current installation root (recommended),
-  or an absolute disk path that resolves somewhere in current installation root. If specifying an absolute path outside of the installation
-  root, then you’ll also want to provide the $url argument since PW won’t know it. You may also specify a blank string for this argument
-  if you only want to set the $url argument.
+## Return value
 
-@param string|bool $url If the $dir argument represents both the path and URL relative to site root, you can omit this argument.
-  If path and URL cannot be derived from one another, or you only want to modify the $url (leaving $dir blank), you
-  can specify the URL in this argument. Specify boolean false if you only want to set the $dir (path) and not detect the $url from it.
+self
 
-@return self
+## Throws
 
-@throws WireException If request cannot be accommodated
+- WireException If request cannot be accommodated
 
-@since 3.0.141
+## Meta
+
+- @since 3.0.141

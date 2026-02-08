@@ -1,4 +1,4 @@
-# PageArray::getSelectors()
+# $pageArray->getSelectors($getString = false): Selectors|string|null
 
 Source: `wire/core/PageArray.php`
 
@@ -12,6 +12,10 @@ $products = $pages->find("template=product, featured=1, sort=-modified, limit=10
 echo $products->getSelectors(); // outputs the selector above
 ~~~~~
 
-@param bool $getString Specify true to get selector string rather than Selectors object (default=false) added in 3.0.142
+## Arguments
 
-@return Selectors|string|null Returns Selectors object if available, or null if not. Always return string if $getString argument is true.
+- bool $getString Specify true to get selector string rather than Selectors object (default=false) added in 3.0.142
+
+## Return value
+
+Selectors|string|null Returns Selectors object if available, or null if not. Always return string if $getString argument is true.

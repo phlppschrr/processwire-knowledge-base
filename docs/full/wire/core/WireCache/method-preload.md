@@ -1,4 +1,4 @@
-# WireCache::preload()
+# $wireCache->preload(array $names, $expire = null)
 
 Source: `wire/core/WireCache.php`
 
@@ -6,9 +6,11 @@ Preload the given caches, so that they will be returned without query on the nex
 
 After a preloaded cache is returned from a get() call, it is removed from local storage.
 
+## Arguments
 
-@param array $names
+- array $names
+- int|string|null $expire
 
-@param int|string|null $expire
+## Meta
 
-@deprecated
+- @deprecated

@@ -1,11 +1,14 @@
-# ProcessModuleInstall::findModuleFiles()
+# $processModuleInstall->findModuleFiles($path = '', $maxLevel = 4): array
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Find all module files, recursively in Path
 
-@param string $path Omit to use the default (/site/modules/)
+## Arguments
 
-@param int $maxLevel Max depth to pursue module files in (recursion level)
+- string $path Omit to use the default (/site/modules/)
+- int $maxLevel Max depth to pursue module files in (recursion level)
 
-@return array of module classname => full pathname to module file
+## Return value
+
+array of module classname => full pathname to module file

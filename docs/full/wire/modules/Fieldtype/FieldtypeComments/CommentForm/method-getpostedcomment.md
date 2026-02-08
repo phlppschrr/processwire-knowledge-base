@@ -1,4 +1,4 @@
-# CommentForm::getPostedComment()
+# $commentForm->getPostedComment()
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 

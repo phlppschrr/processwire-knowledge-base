@@ -1,13 +1,15 @@
-# WireHttp::sendCURL()
+# $wireHttp->sendCURL($url, $method = 'POST', $options = array()): bool|string
 
 Source: `wire/core/WireHttp.php`
 
 Send using CURL
 
-@param string $url
+## Arguments
 
-@param string $method
+- string $url
+- string $method
+- array $options
 
-@param array $options
+## Return value
 
-@return bool|string
+bool|string

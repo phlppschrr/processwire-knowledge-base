@@ -1,4 +1,4 @@
-# Sanitizer::bit()
+# $sanitizer->bit($value): int
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,11 +6,18 @@ Sanitize to a bit, returning only integer 0 or 1
 
 This works the same as the bool sanitizer except that it returns 0 or 1 rather than false or true.
 
+## Arguments
 
-@param string|int|array $value
+- string|int|array $value
 
-@return int
+## Return value
 
-@see Sanitizer::bool()
+int
 
-@since 3.0.125
+## See also
+
+- [Sanitizer::bool()](method-bool.md)
+
+## Meta
+
+- @since 3.0.125

@@ -1,9 +1,10 @@
-# PagesRequest::setRedirectPath()
+# $pagesRequest->setRedirectPath($redirectPath, $type = 301)
 
 Source: `wire/core/PagesRequest.php`
 
 Set the redirect path
 
-@param string $redirectPath
+## Arguments
 
-@param int $type 301 or 302
+- string $redirectPath
+- int $type 301 or 302

@@ -1,4 +1,4 @@
-# Fieldgroups::getNumTemplates()
+# $fieldgroups->getNumTemplates(Fieldgroup $fieldgroup): int
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -6,6 +6,10 @@ Get the number of templates using the given fieldgroup.
 
 Primarily used to determine if the Fieldgroup is deleteable.
 
-@param Fieldgroup $fieldgroup
+## Arguments
 
-@return int
+- Fieldgroup $fieldgroup
+
+## Return value
+
+int

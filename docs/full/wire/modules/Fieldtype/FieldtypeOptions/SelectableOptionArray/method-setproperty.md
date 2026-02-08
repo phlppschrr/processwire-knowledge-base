@@ -1,11 +1,14 @@
-# SelectableOptionArray::setProperty()
+# $selectableOptionArray->setProperty($property, $value): SelectableOption|SelectableOptionArray
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Enables this WireArray to behave like the first item (for setting properties)
 
-@param string $property
+## Arguments
 
-@param mixed $value
+- string $property
+- mixed $value
 
-@return SelectableOption|SelectableOptionArray
+## Return value
+
+SelectableOption|SelectableOptionArray

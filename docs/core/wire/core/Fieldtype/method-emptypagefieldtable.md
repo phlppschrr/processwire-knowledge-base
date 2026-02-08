@@ -1,15 +1,22 @@
-# Fieldtype::emptyPageFieldTable()
+# $fieldtype->emptyPageFieldTable(Page $page, Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
 Empty DB table of page field
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return bool
+## Return value
 
-@throws WireException
+bool
 
-@since 3.0.189
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.189

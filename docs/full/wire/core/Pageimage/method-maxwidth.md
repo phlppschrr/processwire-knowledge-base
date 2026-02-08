@@ -1,4 +1,4 @@
-# Pageimage::maxWidth()
+# $pageimage->maxWidth($n, array $options = array()): Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -10,9 +10,11 @@ then it will remain that way and the source image is returned (not a copy).
 If the source image is larger than the requested dimension, then a new copy
 will be returned at the requested dimension.
 
+## Arguments
 
-@param int $n Maximum width
+- int $n Maximum width
+- array $options See `Pageimage::size()` method for options
 
-@param array $options See `Pageimage::size()` method for options
+## Return value
 
-@return Pageimage
+Pageimage

@@ -1,9 +1,13 @@
-# PageAction::execute()
+# $pageAction->execute($item): bool
 
 Source: `wire/core/PageAction.php`
 
 Execute the action for the given page
 
-@param Page $item Item to operate upon
+## Arguments
 
-@return bool True if the item was successfully operated upon, false if not.
+- Page $item Item to operate upon
+
+## Return value
+
+bool True if the item was successfully operated upon, false if not.

@@ -1,4 +1,4 @@
-# Tfa::sessionSet()
+# $tfa->sessionSet($key, $value = null)
 
 Source: `wire/core/Tfa.php`
 
@@ -6,6 +6,7 @@ Set a session variable only for this module
 
 Optionally set several variables at once by specifying just $key as an associative array.
 
-@param string|array $key
+## Arguments
 
-@param mixed $value
+- string|array $key
+- mixed $value

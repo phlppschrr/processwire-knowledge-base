@@ -1,7 +1,9 @@
-# ProcessController::isAjax()
+# $processController->isAjax(): bool
 
 Source: `wire/core/ProcessController.php`
 
 Is this an AJAX request?
 
-@return bool
+## Return value
+
+bool

@@ -1,13 +1,18 @@
-# Comment::hasChild()
+# $comment->hasChild($comment, $recursive = true): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Does this comment have the given child comment?
 
-@param int|Comment $comment Comment or Comment ID
+## Arguments
 
-@param bool $recursive Check all descending children recursively? Use false to check only direct children. (default=true)
+- int|Comment $comment Comment or Comment ID
+- bool $recursive Check all descending children recursively? Use false to check only direct children. (default=true)
 
-@return bool
+## Return value
 
-@since 3.0.149
+bool
+
+## Meta
+
+- @since 3.0.149

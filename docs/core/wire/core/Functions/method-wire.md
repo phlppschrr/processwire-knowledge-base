@@ -1,4 +1,4 @@
-# Functions::wire()
+# $functions->wire($name = 'wire'): null|ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|string|mixed
 
 Source: `wire/core/Functions.php`
 
@@ -9,7 +9,10 @@ Return an API variable, or return current ProcessWire instance if given no argum
 - Call `wire('all')` or `wire('*')` to return an iterable object of all API variables.
 - Call `wire($object)` to attach $object to the current instance ($object must be Wire-derived object).
 
+## Arguments
 
-@param string $name If omitted, returns current ProcessWire instance.
+- string $name If omitted, returns current ProcessWire instance.
 
-@return null|ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|string|mixed Requested API variable or null if it does not exist
+## Return value
+
+null|ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|string|mixed Requested API variable or null if it does not exist

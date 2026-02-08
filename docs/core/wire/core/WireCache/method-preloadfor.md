@@ -1,12 +1,14 @@
-# WireCache::preloadFor()
+# $wireCache->preloadFor($ns, $expire = null)
 
 Source: `wire/core/WireCache.php`
 
 Preload all caches for the given object or namespace
 
+## Arguments
 
-@param object|string $ns
+- object|string $ns
+- int|string|null $expire
 
-@param int|string|null $expire
+## Meta
 
-@deprecated
+- @deprecated

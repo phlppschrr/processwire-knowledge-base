@@ -1,9 +1,13 @@
-# WireTempDir::createName()
+# $wireTempDir->createName($prefix = ''): string
 
 Source: `wire/core/WireTempDir.php`
 
 Create a randomized name for runtime temp dir
 
-@param string $prefix Optional prefix for name
+## Arguments
 
-@return string
+- string $prefix Optional prefix for name
+
+## Return value
+
+string

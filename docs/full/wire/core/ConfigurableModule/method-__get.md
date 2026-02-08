@@ -1,9 +1,13 @@
-# ConfigurableModule::__get()
+# $configurableModule->__get($key): mixed
 
 Source: `wire/core/ConfigurableModule.php`
 
 Get a module config property
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

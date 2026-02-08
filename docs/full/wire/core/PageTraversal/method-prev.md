@@ -1,11 +1,14 @@
-# PageTraversal::prev()
+# $pageTraversal->prev(Page $page, $selector = ''): Page|NullPage
 
 Source: `wire/core/PageTraversal.php`
 
 Return the previous sibling page
 
-@param Page $page
+## Arguments
 
-@param string|array|Selectors $selector Optional selector. When specified, will find nearest previous sibling that matches.
+- Page $page
+- string|array|Selectors $selector Optional selector. When specified, will find nearest previous sibling that matches.
 
-@return Page|NullPage Returns the previous sibling page, or a NullPage if none found.
+## Return value
+
+Page|NullPage Returns the previous sibling page, or a NullPage if none found.

@@ -1,9 +1,13 @@
-# RepeaterPage::setForPage()
+# $repeaterPage->setForPage(Page $forPage): $this
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 Set the page that owns this repeater item
 
-@param Page $forPage
+## Arguments
 
-@return $this
+- Page $forPage
+
+## Return value
+
+$this

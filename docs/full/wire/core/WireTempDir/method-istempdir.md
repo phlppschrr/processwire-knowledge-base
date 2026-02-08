@@ -1,9 +1,13 @@
-# WireTempDir::isTempDir()
+# $wireTempDir->isTempDir($dir): bool
 
 Source: `wire/core/WireTempDir.php`
 
 Is given directory/path created by this class?
 
-@param string $dir
+## Arguments
 
-@return bool
+- string $dir
+
+## Return value
+
+bool

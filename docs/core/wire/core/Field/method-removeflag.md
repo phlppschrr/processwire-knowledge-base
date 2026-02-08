@@ -1,10 +1,13 @@
-# Field::removeFlag()
+# $field->removeFlag($flag): $this
 
 Source: `wire/core/Field.php`
 
 Remove the given bitmask flag
 
+## Arguments
 
-@param int $flag
+- int $flag
 
-@return $this
+## Return value
+
+$this

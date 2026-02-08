@@ -1,9 +1,13 @@
-# CommentList::getCommentItemClasses()
+# $commentList->getCommentItemClasses(Comment $comment): array
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
 Get classes to use with comment item
 
-@param Comment $comment
+## Arguments
 
-@return array
+- Comment $comment
+
+## Return value
+
+array

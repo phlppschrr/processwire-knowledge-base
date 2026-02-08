@@ -1,10 +1,13 @@
-# ProcessWire::getInstance()
+# ProcessWire::getInstance($instanceID = null): null|ProcessWire
 
 Source: `wire/core/ProcessWire.php`
 
 Get a ProcessWire instance by ID
 
+## Arguments
 
-@param int|null $instanceID Omit this argument to return the current instance
+- int|null $instanceID Omit this argument to return the current instance
 
-@return null|ProcessWire
+## Return value
+
+null|ProcessWire

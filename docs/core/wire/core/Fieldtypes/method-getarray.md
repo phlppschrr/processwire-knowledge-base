@@ -1,4 +1,4 @@
-# Fieldtypes::getArray()
+# $fieldtypes->getArray()
 
 Source: `wire/core/Fieldtypes.php`
 

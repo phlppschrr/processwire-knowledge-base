@@ -1,9 +1,13 @@
-# Languages::unsetDefault()
+# $languages->unsetDefault(): void
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
 Restores whatever previous language a user had prior to a setDefault() call
 
-@return void
+## Return value
 
-@see Languages::setDefault()
+void
+
+## See also
+
+- [Languages::setDefault()](method-setdefault.md)

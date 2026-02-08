@@ -1,4 +1,4 @@
-# WireArray::stableSort()
+# $wireArray->stableSort(&$data, $properties, $numNeeded = null): array
 
 Source: `wire/core/WireArray.php`
 
@@ -6,10 +6,12 @@ Sort given array by first given property.
 
 This function contains additions and modifications by @niklaka.
 
-@param array|WireArray &$data Reference to an array to sort.
+## Arguments
 
-@param array $properties Array of properties: first property is used now and others in recursion, if needed.
+- array|WireArray &$data Reference to an array to sort.
+- array $properties Array of properties: first property is used now and others in recursion, if needed.
+- int $numNeeded *Internal* amount of rows that need to be sorted (optimization used by filterData)
 
-@param int $numNeeded *Internal* amount of rows that need to be sorted (optimization used by filterData)
+## Return value
 
-@return array Sorted array (at least $numNeeded items, if $numNeeded is given)
+array Sorted array (at least $numNeeded items, if $numNeeded is given)

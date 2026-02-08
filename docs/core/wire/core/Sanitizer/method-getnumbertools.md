@@ -1,10 +1,13 @@
-# Sanitizer::getNumberTools()
+# $sanitizer->getNumberTools(): WireNumberTools
 
 Source: `wire/core/Sanitizer.php`
 
 Get instance of WireNumberTools
 
+## Return value
 
-@return WireNumberTools
+WireNumberTools
 
-@since 3.0.214
+## Meta
+
+- @since 3.0.214

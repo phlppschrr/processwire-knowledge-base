@@ -1,7 +1,9 @@
-# Notices::hasErrors()
+# $notices->hasErrors(): bool
 
 Source: `wire/core/Notices.php`
 
 Are there NoticeError items present?
 
-@return bool
+## Return value
+
+bool

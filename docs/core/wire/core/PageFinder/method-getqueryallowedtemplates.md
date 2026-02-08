@@ -1,9 +1,10 @@
-# PageFinder::getQueryAllowedTemplates()
+# $pageFinder->getQueryAllowedTemplates(DatabaseQuerySelect $query, $options)
 
 Source: `wire/core/PageFinder.php`
 
 Determine which templates the user is allowed to view
 
-@param DatabaseQuerySelect $query
+## Arguments
 
-@param array $options
+- DatabaseQuerySelect $query
+- array $options

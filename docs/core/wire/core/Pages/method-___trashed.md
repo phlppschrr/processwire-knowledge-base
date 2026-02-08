@@ -1,8 +1,9 @@
-# Pages::___trashed()
+# $pages->___trashed(Page $page)
 
 Source: `wire/core/Pages.php`
 
 Hook called when a page has been moved to the trash
 
+## Arguments
 
-@param Page $page Page that was moved to the trash
+- Page $page Page that was moved to the trash

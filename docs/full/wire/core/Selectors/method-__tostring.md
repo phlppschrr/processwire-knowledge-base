@@ -1,7 +1,9 @@
-# Selectors::__toString()
+# $selectors->__toString(): string
 
 Source: `wire/core/Selectors.php`
 
 Value when typecast as string
 
-@return string
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# Wire::resetTrackChanges()
+# $wire->resetTrackChanges($trackChanges = true): $this
 
 Source: `wire/core/Wire.php`
 
@@ -9,7 +9,10 @@ Clears out any tracked changes and turns change tracking ON or OFF
 $page->resetTrackChanges();
 ~~~~
 
+## Arguments
 
-@param bool $trackChanges True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
+- bool $trackChanges True to turn change tracking ON, or false to turn OFF. Default of true is assumed.
 
-@return $this
+## Return value
+
+$this

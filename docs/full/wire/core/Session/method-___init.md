@@ -1,4 +1,4 @@
-# Session::___init()
+# $session->___init()
 
 Source: `wire/core/Session.php`
 

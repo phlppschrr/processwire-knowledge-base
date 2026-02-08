@@ -1,4 +1,4 @@
-# PagesRequest::___getClosestPage()
+# $pagesRequest->___getClosestPage(): Page|NullPage
 
 Source: `wire/core/PagesRequest.php`
 
@@ -15,4 +15,6 @@ if($p->id) {
 }
 ~~~~~
 
-@return Page|NullPage
+## Return value
+
+Page|NullPage

@@ -1,9 +1,13 @@
-# RepeaterPageArray::getForField()
+# $repeaterPageArray->getForField(): RepeaterField
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
 Get repeater field this RepeaterPageArray is for
 
-@return RepeaterField
+## Return value
 
-@since 3.0.188
+RepeaterField
+
+## Meta
+
+- @since 3.0.188

@@ -1,9 +1,10 @@
-# ProcessPageListRender::setLabel()
+# $processPageListRender->setLabel($key, $value)
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Set action label by name
 
-@param string $key
+## Arguments
 
-@param string $value
+- string $key
+- string $value

@@ -1,7 +1,9 @@
-# FileCompiler::init()
+# $fileCompiler->init()
 
 Source: `wire/core/FileCompiler.php`
 
 Initialize paths
 
-@throws WireException
+## Throws
+
+- WireException

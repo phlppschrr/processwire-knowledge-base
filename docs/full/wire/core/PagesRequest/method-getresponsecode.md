@@ -1,4 +1,4 @@
-# PagesRequest::getResponseCode()
+# $pagesRequest->getResponseCode(): int
 
 Source: `wire/core/PagesRequest.php`
 
@@ -20,4 +20,6 @@ Returns integer, one of:
 - 405: method not allowed
 - 414: request path too long or segment too long
 
-@return int
+## Return value
+
+int

@@ -1,4 +1,4 @@
-# Pageimage::__construct()
+# $pageimage->__construct(Pagefiles $pagefiles, $filename)
 
 Source: `wire/core/Pageimage.php`
 
@@ -9,8 +9,11 @@ Construct a new Pageimage
 $pageimage = new Pageimage($page->images, '/path/to/file.png');
 ~~~~~
 
-@param Pagefiles $pagefiles
+## Arguments
 
-@param string $filename Full path and filename to this pagefile
+- Pagefiles $pagefiles
+- string $filename Full path and filename to this pagefile
 
-@throws WireException
+## Throws
+
+- WireException

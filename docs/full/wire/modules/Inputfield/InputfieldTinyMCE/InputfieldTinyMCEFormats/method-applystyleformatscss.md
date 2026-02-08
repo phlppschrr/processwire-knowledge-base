@@ -1,4 +1,4 @@
-# InputfieldTinyMCEFormats::applyStyleFormatsCSS()
+# $inputfieldTinyMCEFormats->applyStyleFormatsCSS($css, array &$settings, $defaults)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
@@ -6,8 +6,8 @@ Add CSS that converts to style_formats and content_style
 
 Easier-to-use alternative to the importcss plugin
 
-@param string $css From the styleFormatsCSS setting
+## Arguments
 
-@param array $settings
-
-@param array $defaults
+- string $css From the styleFormatsCSS setting
+- array $settings
+- array $defaults

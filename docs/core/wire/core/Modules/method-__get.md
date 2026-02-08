@@ -1,9 +1,13 @@
-# Modules::__get()
+# $modules->__get($name): mixed
 
 Source: `wire/core/Modules.php`
 
 Direct read-only properties
 
-@param string $name
+## Arguments
 
-@return mixed
+- string $name
+
+## Return value
+
+mixed

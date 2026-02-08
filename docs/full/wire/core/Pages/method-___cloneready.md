@@ -1,10 +1,10 @@
-# Pages::___cloneReady()
+# $pages->___cloneReady(Page $page, Page $copy)
 
 Source: `wire/core/Pages.php`
 
 Hook called when a page is about to be cloned, but before data has been touched
 
+## Arguments
 
-@param Page $page The original page to be cloned
-
-@param Page $copy The actual clone about to be saved
+- Page $page The original page to be cloned
+- Page $copy The actual clone about to be saved

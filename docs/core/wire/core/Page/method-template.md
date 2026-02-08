@@ -1,11 +1,17 @@
-# Page::template()
+# $page->template($template = null): Template|null
 
 Source: `wire/core/Page.php`
 
 Get or set template
 
-@param null|Template|string|int $template
+## Arguments
 
-@return Template|null
+- null|Template|string|int $template
 
-@since 3.0.181
+## Return value
+
+Template|null
+
+## Meta
+
+- @since 3.0.181

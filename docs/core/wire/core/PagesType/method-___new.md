@@ -1,11 +1,17 @@
-# PagesType::___new()
+# $pagesType->___new(array $options = []): Page
 
 Source: `wire/core/PagesType.php`
 
 Create new instance of this page type
 
-@param array $options
+## Arguments
 
-@return Page
+- array $options
 
-@since 3.0.249
+## Return value
+
+Page
+
+## Meta
+
+- @since 3.0.249

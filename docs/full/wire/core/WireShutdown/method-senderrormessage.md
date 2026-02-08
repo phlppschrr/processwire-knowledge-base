@@ -1,11 +1,11 @@
-# WireShutdown::sendErrorMessage()
+# $wireShutdown->sendErrorMessage($message, $why, $useHTML)
 
 Source: `wire/core/WireShutdown.php`
 
 Render an error message and reason why
 
-@param string $message
+## Arguments
 
-@param string $why
-
-@param bool $useHTML
+- string $message
+- string $why
+- bool $useHTML

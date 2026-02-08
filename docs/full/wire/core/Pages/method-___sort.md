@@ -1,4 +1,4 @@
-# Pages::___sort()
+# $pages->___sort(Page $page, $value = false): int
 
 Source: `wire/core/Pages.php`
 
@@ -29,14 +29,15 @@ $pages->sort($page, 5);
 $pages->sort($page, true);
 ~~~~~
 
+## Arguments
 
-@param Page $page Page to sort (or parent of pages to sort, if using $value=true option)
+- Page $page Page to sort (or parent of pages to sort, if using $value=true option)
+- int|bool $value Specify one of the following: - Omit to set and use sort value from given $page. - Specify sort value (integer) to save that value. - Specify boolean true to instead rebuild sort for all of $page children.
 
-@param int|bool $value Specify one of the following:
- - Omit to set and use sort value from given $page.
- - Specify sort value (integer) to save that value.
- - Specify boolean true to instead rebuild sort for all of $page children.
+## Return value
 
-@return int Number of pages that had sort values adjusted
+int Number of pages that had sort values adjusted
 
-@throws WireException
+## Throws
+
+- WireException

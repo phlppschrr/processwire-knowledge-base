@@ -1,9 +1,13 @@
-# WireDatabaseBackup::restoreUseLine()
+# $wireDatabaseBackup->restoreUseLine($line): bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Returns true or false if a line should be used for restore
 
-@param $line
+## Arguments
 
-@return bool
+- $line
+
+## Return value
+
+bool

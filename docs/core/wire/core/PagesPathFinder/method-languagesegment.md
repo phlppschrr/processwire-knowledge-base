@@ -1,9 +1,13 @@
-# PagesPathFinder::languageSegment()
+# $pagesPathFinder->languageSegment($language): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Return homepage name segment used by given language
 
-@param string|int|Language $language
+## Arguments
 
-@return string
+- string|int|Language $language
+
+## Return value
+
+string

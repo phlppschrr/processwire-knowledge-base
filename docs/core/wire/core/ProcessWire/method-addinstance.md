@@ -1,10 +1,13 @@
-# ProcessWire::addInstance()
+# ProcessWire::addInstance(ProcessWire $wire): int
 
 Source: `wire/core/ProcessWire.php`
 
 Add a ProcessWire instance and return the instance ID
 
+## Arguments
 
-@param ProcessWire $wire
+- ProcessWire $wire
 
-@return int
+## Return value
+
+int

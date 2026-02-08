@@ -1,7 +1,9 @@
-# WireInputData::removeAll()
+# $wireInputData->removeAll(): $this
 
 Source: `wire/core/WireInputData.php`
 
 Remove all values from input
 
-@return $this
+## Return value
+
+$this

@@ -1,8 +1,9 @@
-# WireArray::shuffle()
+# $wireArray->shuffle(): $this
 
 Source: `wire/core/WireArray.php`
 
 Shuffle/randomize this WireArray
 
+## Return value
 
-@return $this This instance.
+$this This instance.

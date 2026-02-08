@@ -1,7 +1,12 @@
-# FileLog::__get()
+# $fileLog->__get($name): mixed
 
 Source: `wire/core/FileLog.php`
 
-@param string $name
 
-@return mixed
+## Arguments
+
+- string $name
+
+## Return value
+
+mixed

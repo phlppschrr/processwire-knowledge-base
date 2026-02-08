@@ -1,9 +1,13 @@
-# AdminThemeUikitCss::configPhpSettingsChanged()
+# $adminThemeUikitCss->configPhpSettingsChanged(): bool
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Have the $config->AdminThemeUikit settings changed?
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

@@ -1,4 +1,4 @@
-# PagesVersions::getPageVersionInfos()
+# $pagesVersions->getPageVersionInfos(Page $page, array $options = []): PageVersionInfo[]
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -15,10 +15,11 @@ foreach($infos as $info) {
 }
 ~~~~~
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $options - `sort`: Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created')
 
-@param array $options
- - `sort`: Sort by property, one of: 'created', '-created', 'version', '-version' (default='-created')
+## Return value
 
-@return PageVersionInfo[]
+PageVersionInfo[]

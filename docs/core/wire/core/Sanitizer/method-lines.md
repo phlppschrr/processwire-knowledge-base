@@ -1,4 +1,4 @@
-# Sanitizer::lines()
+# $sanitizer->lines($value, $maxLength = 0, $options = array()): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -13,15 +13,22 @@ Please note that like with the textarea sanitizer, the max length refers to a ma
 characters, not bytes. The maxBytes is automatically set to the maxLength * 4, or can be
 specifically set via the `maxBytes` option.
 
+## Arguments
 
-@param string $value String value to sanitize
+- string $value String value to sanitize
+- int|array $maxLength Maximum length in characters, omit (0) for no max-length, or substitute $options array
+- array $options Options to modify behavior, see textarea() sanitizer for all options.
 
-@param int|array $maxLength Maximum length in characters, omit (0) for no max-length, or substitute $options array
+## Return value
 
-@param array $options Options to modify behavior, see textarea() sanitizer for all options.
+string
 
-@return string
+## See also
 
-@see Sanitizer::textarea(), Sanitizer::purify(), Sanitizer::line()
+- [Sanitizer::textarea()](method-textarea.md)
+- [Sanitizer::purify()](method-purify.md)
+- [Sanitizer::line()](method-line.md)
 
-@since 3.0.157
+## Meta
+
+- @since 3.0.157

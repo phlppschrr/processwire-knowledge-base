@@ -1,4 +1,4 @@
-# InputfieldTinyMCE::renderReadyOnce()
+# $inputfieldTinyMCE->renderReadyOnce()
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 

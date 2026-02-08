@@ -1,11 +1,14 @@
-# ImageSizerEngine::loadImageInfo()
+# $imageSizerEngine->loadImageInfo($filename, $reloadAll = false)
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Load all image information from ImageInspector (Module)
 
-@param string $filename
+## Arguments
 
-@param bool $reloadAll
+- string $filename
+- bool $reloadAll
 
-@throws WireException
+## Throws
+
+- WireException

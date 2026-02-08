@@ -1,4 +1,4 @@
-# Field::___editable()
+# $field->___editable(?Page $page = null, ?User $user = null): bool
 
 Source: `wire/core/Field.php`
 
@@ -9,9 +9,11 @@ Is this field editable?
 - **Please note:** this does not check that the provided $page itself is editable. If you want that
   check, then use `$page->editable($field)` instead.
 
+## Arguments
 
-@param Page|null $page Optionally specify a Page for context
+- Page|null $page Optionally specify a Page for context
+- User|null $user Optionally specify a different user (default = current user)
 
-@param User|null $user Optionally specify a different user (default = current user)
+## Return value
 
-@return bool
+bool

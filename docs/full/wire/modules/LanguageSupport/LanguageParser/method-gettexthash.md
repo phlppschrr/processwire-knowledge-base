@@ -1,11 +1,14 @@
-# LanguageParser::getTextHash()
+# $languageParser->getTextHash($text, $context): string
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Get hash for given text + context
 
-@param string $text
+## Arguments
 
-@param string $context
+- string $text
+- string $context
 
-@return string
+## Return value
+
+string

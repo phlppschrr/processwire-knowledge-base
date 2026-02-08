@@ -1,11 +1,17 @@
-# Fields::getAllNames()
+# $fields->getAllNames($indexType = ''): array
 
 Source: `wire/core/Fields.php`
 
 Get all field names
 
-@param string $indexType One of 'name', 'id' or blank string for no index (default='')
+## Arguments
 
-@return array
+- string $indexType One of 'name', 'id' or blank string for no index (default='')
 
-@since 3.0.194
+## Return value
+
+array
+
+## Meta
+
+- @since 3.0.194

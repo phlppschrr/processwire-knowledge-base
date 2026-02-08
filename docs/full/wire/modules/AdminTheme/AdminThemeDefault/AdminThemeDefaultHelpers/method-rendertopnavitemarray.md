@@ -1,11 +1,14 @@
-# AdminThemeDefaultHelpers::renderTopNavItemArray()
+# $adminThemeDefaultHelpers->renderTopNavItemArray(Page $p, array $nav): string
 
 Source: `wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers.php`
 
 Renders static navigation from an array coming from getModuleInfo()['nav'] array (see wire/core/Process.php)
 
-@param Page $p
+## Arguments
 
-@param array $nav
+- Page $p
+- array $nav
 
-@return string
+## Return value
+
+string

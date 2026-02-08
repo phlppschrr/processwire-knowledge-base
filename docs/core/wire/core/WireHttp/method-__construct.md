@@ -1,4 +1,4 @@
-# WireHttp::__construct()
+# $wireHttp->__construct()
 
 Source: `wire/core/WireHttp.php`
 

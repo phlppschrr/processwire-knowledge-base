@@ -1,9 +1,13 @@
-# WireUpload::setLowercase()
+# $wireUpload->setLowercase($lowercase = true): $this
 
 Source: `wire/core/WireUpload.php`
 
 Set whether or not lowercase is enforced
 
-@param bool $lowercase
+## Arguments
 
-@return $this
+- bool $lowercase
+
+## Return value
+
+$this

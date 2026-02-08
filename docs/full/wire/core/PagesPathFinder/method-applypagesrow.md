@@ -1,11 +1,14 @@
-# PagesPathFinder::applyPagesRow()
+# $pagesPathFinder->applyPagesRow(array $parts, $row): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Apply a found pages table row to the $result and return corresponding path
 
-@param array $parts
+## Arguments
 
-@param array|null $row
+- array $parts
+- array|null $row
 
-@return string Path string
+## Return value
+
+string Path string

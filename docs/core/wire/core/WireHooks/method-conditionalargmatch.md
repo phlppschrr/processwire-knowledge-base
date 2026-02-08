@@ -1,13 +1,18 @@
-# WireHooks::conditionalArgMatch()
+# $wireHooks->conditionalArgMatch($argMatch, $argVal, $argMatchType): bool
 
 Source: `wire/core/WireHooks.php`
 
 Does given value match given match condition?
 
-@param Selectors|string $argMatch
+## Arguments
 
-@param mixed $argVal
+- Selectors|string $argMatch
+- mixed $argVal
 
-@return bool
+## Return value
 
-@since 3.0.247
+bool
+
+## Meta
+
+- @since 3.0.247

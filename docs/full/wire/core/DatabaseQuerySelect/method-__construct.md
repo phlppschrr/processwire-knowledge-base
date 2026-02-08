@@ -1,4 +1,4 @@
-# DatabaseQuerySelect::__construct()
+# $databaseQuerySelect->__construct()
 
 Source: `wire/core/DatabaseQuerySelect.php`
 

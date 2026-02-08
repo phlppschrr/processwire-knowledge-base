@@ -1,7 +1,9 @@
-# PagefileExtra::basename()
+# $pagefileExtra->basename(): string
 
 Source: `wire/core/PagefileExtra.php`
 
 Return just the basename (no path)
 
-@return string
+## Return value
+
+string

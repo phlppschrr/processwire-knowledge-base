@@ -1,7 +1,12 @@
-# PagesPathFinder::getShortcutRoot()
+# $pagesPathFinder->getShortcutRoot($path): bool
 
 Source: `wire/core/PagesPathFinder.php`
 
-@param string $path
 
-@return bool
+## Arguments
+
+- string $path
+
+## Return value
+
+bool

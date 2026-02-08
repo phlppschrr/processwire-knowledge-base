@@ -1,9 +1,13 @@
-# PagesPathFinder::getPagesRow()
+# $pagesPathFinder->getPagesRow(array $parts): array|null
 
 Source: `wire/core/PagesPathFinder.php`
 
 Find a row for given $parts in pages table
 
-@param array $parts
+## Arguments
 
-@return array|null
+- array $parts
+
+## Return value
+
+array|null

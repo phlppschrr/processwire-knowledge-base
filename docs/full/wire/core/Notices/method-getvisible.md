@@ -1,9 +1,13 @@
-# Notices::getVisible()
+# $notices->getVisible(): Notices
 
 Source: `wire/core/Notices.php`
 
 Get all notices visible to current user
 
-@return Notices Returns a new Notices object
+## Return value
 
-@since 3.0.252
+Notices Returns a new Notices object
+
+## Meta
+
+- @since 3.0.252

@@ -1,9 +1,13 @@
-# WireHooks::getAllPathHooks()
+# $wireHooks->getAllPathHooks(): array
 
 Source: `wire/core/WireHooks.php`
 
 Return all pending path hooks
 
-@return array
+## Return value
 
-@since 3.0.173
+array
+
+## Meta
+
+- @since 3.0.173

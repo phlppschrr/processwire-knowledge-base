@@ -1,4 +1,4 @@
-# Page::secureFiles()
+# $page->secureFiles(): bool|null
 
 Source: `wire/core/Page.php`
 
@@ -6,7 +6,10 @@ Does this Page use secure Pagefiles?
 
 See also `$template->pagefileSecure` and `$config->pagefileSecure` which determine the return value.
 
+## Return value
 
-@return bool|null Returns boolean true if yes, false if no, or null if not known
+bool|null Returns boolean true if yes, false if no, or null if not known
 
-@since 3.0.166
+## Meta
+
+- @since 3.0.166

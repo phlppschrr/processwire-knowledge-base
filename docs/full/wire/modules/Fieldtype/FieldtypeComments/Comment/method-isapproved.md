@@ -1,4 +1,4 @@
-# Comment::isApproved()
+# $comment->isApproved()
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 

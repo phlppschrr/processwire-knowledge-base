@@ -1,4 +1,4 @@
-# User::removeRole()
+# $user->removeRole($role): bool
 
 Source: `wire/core/User.php`
 
@@ -12,7 +12,10 @@ $user->removeRole('editor');
 $user->save();
 ~~~~~
 
+## Arguments
 
-@param string|int|Role $role May be Role name, object or ID.
+- string|int|Role $role May be Role name, object or ID.
 
-@return bool false if role not recognized, true otherwise
+## Return value
+
+bool false if role not recognized, true otherwise

@@ -1,9 +1,13 @@
-# RepeaterPageArray::getForPage()
+# $repeaterPageArray->getForPage(): Page
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
 Get page this RepeaterPageArray is for
 
-@return Page
+## Return value
 
-@since 3.0.188
+Page
+
+## Meta
+
+- @since 3.0.188

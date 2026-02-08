@@ -1,4 +1,4 @@
-# Users::___save()
+# $users->___save(Page $page): bool
 
 Source: `wire/core/Users.php`
 
@@ -19,8 +19,14 @@ $wire->addHookBefore('Pages::save(<User>)', function(HookEvent $e) {
 });
 ~~~~~
 
-@param Page $page
+## Arguments
 
-@return bool True on success
+- Page $page
 
-@throws WireException
+## Return value
+
+bool True on success
+
+## Throws
+
+- WireException

@@ -1,15 +1,19 @@
-# WireDataDB::save()
+# $wireDataDB->save($name, $value, $recursive = false): bool
 
 Source: `wire/core/WireDataDB.php`
 
 Save a value
 
-@param string $name
+## Arguments
 
-@param mixed $value
+- string $name
+- mixed $value
+- bool $recursive
 
-@param bool $recursive
+## Return value
 
-@return bool
+bool
 
-@throws WireException
+## Throws
+
+- WireException

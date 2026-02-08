@@ -1,9 +1,13 @@
-# WireShutdown::getError()
+# $wireShutdown->getError(): array
 
 Source: `wire/core/WireShutdown.php`
 
 Get last error
 
-@return array
+## Return value
 
-@since 3.0.253
+array
+
+## Meta
+
+- @since 3.0.253

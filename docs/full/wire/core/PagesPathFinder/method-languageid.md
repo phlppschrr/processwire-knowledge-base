@@ -1,9 +1,13 @@
-# PagesPathFinder::languageId()
+# $pagesPathFinder->languageId($language): int
 
 Source: `wire/core/PagesPathFinder.php`
 
 Return language id for given value (language name, name column or home segment)
 
-@param int|string|Language $language
+## Arguments
 
-@return int
+- int|string|Language $language
+
+## Return value
+
+int

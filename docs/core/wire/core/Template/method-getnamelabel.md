@@ -1,10 +1,13 @@
-# Template::getNameLabel()
+# $template->getNameLabel($language = null): string
 
 Source: `wire/core/Template.php`
 
 Return the overriden "page name" label, or blank if not overridden
 
+## Arguments
 
-@param Language|null $language
+- Language|null $language
 
-@return string
+## Return value
+
+string

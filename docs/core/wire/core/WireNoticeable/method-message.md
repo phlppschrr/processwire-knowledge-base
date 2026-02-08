@@ -1,4 +1,4 @@
-# WireNoticeable::message()
+# $wireNoticeable->message($text, $flags = 0): $this
 
 Source: `wire/core/Interfaces.php`
 
@@ -6,8 +6,11 @@ Record an informational or 'success' message in the system-wide notices.
 
 This method automatically identifies the message as coming from this class.
 
-@param string $text
+## Arguments
 
-@param int $flags See Notices::flags
+- string $text
+- int $flags See Notices::flags
 
-@return $this
+## Return value
+
+$this

@@ -1,5 +1,8 @@
-# Password::random()
+# $password->random(): WireRandom
 
 Source: `wire/core/Password.php`
 
-@return WireRandom
+
+## Return value
+
+WireRandom

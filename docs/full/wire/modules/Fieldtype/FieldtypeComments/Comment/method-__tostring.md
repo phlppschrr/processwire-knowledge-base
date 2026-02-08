@@ -1,4 +1,4 @@
-# Comment::__toString()
+# $comment->__toString()
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 

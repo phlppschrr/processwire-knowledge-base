@@ -1,10 +1,13 @@
-# Field::addFlag()
+# $field->addFlag($flag): $this
 
 Source: `wire/core/Field.php`
 
 Add the given bitmask flag
 
+## Arguments
 
-@param int $flag
+- int $flag
 
-@return $this
+## Return value
+
+$this

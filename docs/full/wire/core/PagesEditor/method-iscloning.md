@@ -1,10 +1,13 @@
-# PagesEditor::isCloning()
+# $pagesEditor->isCloning($getDepth = false): bool|int
 
 Source: `wire/core/PagesEditor.php`
 
 Are we currently in a page clone?
 
+## Arguments
 
-@param bool $getDepth Get depth (int) rather than state (bool)?
+- bool $getDepth Get depth (int) rather than state (bool)?
 
-@return bool|int
+## Return value
+
+bool|int

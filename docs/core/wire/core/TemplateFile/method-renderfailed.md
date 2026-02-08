@@ -1,11 +1,17 @@
-# TemplateFile::renderFailed()
+# $templateFile->renderFailed(\Exception $e): \Exception
 
 Source: `wire/core/TemplateFile.php`
 
 Called when overall render failed
 
-@param \Exception $e
+## Arguments
 
-@return \Exception
+- \Exception $e
 
-@since 3.0.154
+## Return value
+
+\Exception
+
+## Meta
+
+- @since 3.0.154

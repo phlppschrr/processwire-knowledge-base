@@ -1,7 +1,9 @@
-# DatabaseQuerySelectFulltext::matchLikePhrase()
+# $databaseQuerySelectFulltext->matchLikePhrase($value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Match LIKE phrase
 
-@param string $value
+## Arguments
+
+- string $value

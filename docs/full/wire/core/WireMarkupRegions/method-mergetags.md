@@ -1,4 +1,4 @@
-# WireMarkupRegions::mergeTags()
+# $wireMarkupRegions->mergeTags($htmlTag, $mergeTag): string
 
 Source: `wire/core/WireMarkupRegions.php`
 
@@ -9,8 +9,11 @@ Merge attributes from one HTML tag to another
 - Class attribute is combined with all classes from $htmlTag and $mergeTag.
 - The tag name from $htmlTag is used, and the one from $mergeTag is ignored.
 
-@param string $htmlTag HTML tag string, optionally containing attributes
+## Arguments
 
-@param array|string $mergeTag HTML tag to merge (or attributes array)
+- string $htmlTag HTML tag string, optionally containing attributes
+- array|string $mergeTag HTML tag to merge (or attributes array)
 
-@return string Updated HTML tag string with merged attributes
+## Return value
+
+string Updated HTML tag string with merged attributes

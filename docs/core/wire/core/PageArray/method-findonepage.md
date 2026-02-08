@@ -1,11 +1,17 @@
-# PageArray::findOnePage()
+# $pageArray->findOnePage($selector): Page|NullPage
 
 Source: `wire/core/PageArray.php`
 
 Same as find() or findOne() methods, but always returns a Page (whether Page or NullPage)
 
-@param string $selector
+## Arguments
 
-@return Page|NullPage
+- string $selector
 
-@since 3.0.162
+## Return value
+
+Page|NullPage
+
+## Meta
+
+- @since 3.0.162

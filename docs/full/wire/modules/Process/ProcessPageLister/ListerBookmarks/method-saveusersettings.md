@@ -1,9 +1,13 @@
-# ListerBookmarks::saveUserSettings()
+# $listerBookmarks->saveUserSettings(array $settings): bool
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Save user settings for current page
 
-@param array $settings
+## Arguments
 
-@return bool
+- array $settings
+
+## Return value
+
+bool

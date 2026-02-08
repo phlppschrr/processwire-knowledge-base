@@ -1,4 +1,4 @@
-# Config::requestPath()
+# $config->requestPath($match = ''): string
 
 Source: `wire/core/Config.php`
 
@@ -19,9 +19,14 @@ if($config->requestPath([ 'foo', 'bar', 'baz' ])) {
 }
 ~~~~~
 
+## Arguments
 
-@param string|array $match Optionally return path only if some part matches given string(s) (default='')
+- string|array $match Optionally return path only if some part matches given string(s) (default='')
 
-@return string Returns path string or blank string if $match argument used and doesn’t match.
+## Return value
 
-@since 3.0.175
+string Returns path string or blank string if $match argument used and doesn’t match.
+
+## Meta
+
+- @since 3.0.175

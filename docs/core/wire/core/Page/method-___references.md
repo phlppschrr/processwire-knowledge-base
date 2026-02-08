@@ -1,4 +1,4 @@
-# Page::___references()
+# $page->___references($selector = '', $field = ''): PageArray|array
 
 Source: `wire/core/Page.php`
 
@@ -8,13 +8,15 @@ By default this excludes pages that are hidden, unpublished and pages excluded d
 To prevent these exclusions specify an include mode in the selector, i.e. `include=all`, or you can use
 boolean `true` as a shortcut to specify that you do not want any exclusions.
 
+## Arguments
 
-@param string|bool $selector Optional selector to filter results by, or boolean true as shortcut for `include=all`.
+- string|bool $selector Optional selector to filter results by, or boolean true as shortcut for `include=all`.
+- Field|string|bool $field Optionally limit to pages using specified field (name or Field object), - OR specify boolean TRUE to return array of PageArrays indexed by field names. - If $field argument not specified, it searches all applicable Page fields.
 
-@param Field|string|bool $field Optionally limit to pages using specified field (name or Field object),
- - OR specify boolean TRUE to return array of PageArrays indexed by field names.
- - If $field argument not specified, it searches all applicable Page fields.
+## Return value
 
-@return PageArray|array
+PageArray|array
 
-@since 3.0.107
+## Meta
+
+- @since 3.0.107

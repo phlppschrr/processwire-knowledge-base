@@ -1,12 +1,17 @@
-# Config::urls()
+# $config->urls($for = ''): null|string|Paths
 
 Source: `wire/core/Config.php`
 
 Get URL for requested resource or module or get all URLs if no argument
 
+## Arguments
 
-@param string|Wire $for Predefined ProcessWire URLs property or module name
+- string|Wire $for Predefined ProcessWire URLs property or module name
 
-@return null|string|Paths
+## Return value
 
-@since 3.0.130
+null|string|Paths
+
+## Meta
+
+- @since 3.0.130

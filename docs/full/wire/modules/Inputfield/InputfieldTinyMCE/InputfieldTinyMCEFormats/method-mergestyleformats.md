@@ -1,11 +1,14 @@
-# InputfieldTinyMCEFormats::mergeStyleFormats()
+# $inputfieldTinyMCEFormats->mergeStyleFormats(array $styleFormats, array $addFormats): array
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Merge the given style formats
 
-@param array $styleFormats
+## Arguments
 
-@param array $addFormats
+- array $styleFormats
+- array $addFormats
 
-@return array
+## Return value
+
+array

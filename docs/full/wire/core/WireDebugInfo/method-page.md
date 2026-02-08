@@ -1,11 +1,14 @@
-# WireDebugInfo::Page()
+# $wireDebugInfo->Page(Page $page, $small = false): array
 
 Source: `wire/core/WireDebugInfo.php`
 
 Debug info specific to Page objects
 
-@param Page $page
+## Arguments
 
-@param bool $small
+- Page $page
+- bool $small
 
-@return array
+## Return value
+
+array

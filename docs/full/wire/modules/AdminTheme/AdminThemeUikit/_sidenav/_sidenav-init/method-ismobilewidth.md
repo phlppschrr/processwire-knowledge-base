@@ -1,4 +1,4 @@
-# _sidenav-init::isMobileWidth()
+# $sidenavInit->isMobileWidth()
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 

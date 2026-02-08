@@ -1,4 +1,4 @@
-# WireHooks::isPropertyHooked()
+# $wireHooks->isPropertyHooked($class, $property): bool
 
 Source: `wire/core/WireHooks.php`
 
@@ -6,8 +6,11 @@ Similar to isHooked() method but also checks parent classes for the hooked prope
 
 This method is designed for fast determinations of whether something is hooked
 
-@param string|Wire $class
+## Arguments
 
-@param string $property Name of property
+- string|Wire $class
+- string $property Name of property
 
-@return bool
+## Return value
+
+bool

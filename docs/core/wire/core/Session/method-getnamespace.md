@@ -1,12 +1,17 @@
-# Session::getNamespace()
+# $session->getNamespace($ns): string
 
 Source: `wire/core/Session.php`
 
 Given a namespace object or string, return the namespace string
 
+## Arguments
 
-@param object|string $ns
+- object|string $ns
 
-@return string
+## Return value
 
-@throws WireException if given invalid namespace type
+string
+
+## Throws
+
+- WireException if given invalid namespace type

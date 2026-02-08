@@ -1,13 +1,15 @@
-# CommentFormCustom::applyIf()
+# $commentFormCustom->applyIf($name, $value, $out): mixed|string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentFormCustom.php`
 
 Apply an {if.name} ... {endif.name} statement
 
-@param string $name Property name for if statement
+## Arguments
 
-@param bool $value If true the contents of the {if...} statement will stay, if false it will be removed
+- string $name Property name for if statement
+- bool $value If true the contents of the {if...} statement will stay, if false it will be removed
+- string $out
 
-@param string $out
+## Return value
 
-@return mixed|string
+mixed|string

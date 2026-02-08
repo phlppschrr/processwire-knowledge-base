@@ -1,9 +1,13 @@
-# WireSaveableItems::useFuel()
+# $wireSaveableItems->useFuel($useFuel = null): bool
 
 Source: `wire/core/WireSaveableItems.php`
 
 Enforce no locally-scoped fuel for this class
 
-@param bool|null $useFuel
+## Arguments
 
-@return bool
+- bool|null $useFuel
+
+## Return value
+
+bool

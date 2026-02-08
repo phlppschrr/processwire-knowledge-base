@@ -1,13 +1,15 @@
-# PagerNav::__construct()
+# $pagerNav->__construct($totalItems, $itemsPerPage, $currentPage)
 
 Source: `wire/modules/Markup/MarkupPagerNav/PagerNav.php`
 
 Construct the PagerNav
 
-@param int $totalItems Total number of items in the list to be paginated.
+## Arguments
 
-@param int $itemsPerPage The number of items you want to appear per page.
+- int $totalItems Total number of items in the list to be paginated.
+- int $itemsPerPage The number of items you want to appear per page.
+- int $currentPage The current page number (NOTE: 0 based, not 1 based)
 
-@param int $currentPage The current page number (NOTE: 0 based, not 1 based)
+## Throws
 
-@throws WireException if given itemsPerPage of 0
+- WireException if given itemsPerPage of 0

@@ -1,4 +1,4 @@
-# Fieldtype::__toString()
+# $fieldtype->__toString()
 
 Source: `wire/core/Fieldtype.php`
 

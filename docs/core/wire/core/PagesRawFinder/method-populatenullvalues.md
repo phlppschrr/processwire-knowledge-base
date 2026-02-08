@@ -1,4 +1,4 @@
-# PagesRawFinder::populateNullValues()
+# $pagesRawFinder->populateNullValues(&$values)
 
 Source: `wire/core/PagesRaw.php`
 
@@ -6,6 +6,7 @@ Populate null values for requested fields that were not present (the 'nulls' opt
 
 Applies only if specific fields were requested.
 
-@var array $values
+## Meta
 
-@since 3.0.198
+- @var array $values
+- @since 3.0.198

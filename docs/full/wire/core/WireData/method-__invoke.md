@@ -1,9 +1,13 @@
-# WireData::__invoke()
+# $wireData->__invoke($key): mixed
 
 Source: `wire/core/WireData.php`
 
 Enables use of $var('key')
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

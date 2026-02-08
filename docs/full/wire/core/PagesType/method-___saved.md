@@ -1,14 +1,15 @@
-# PagesType::___saved()
+# $pagesType->___saved(Page $page, array $changes = array(), $values = array())
 
 Source: `wire/core/PagesType.php`
 
 Hook called after a page of this type is successfully saved
 
+## Arguments
 
-@param Page $page The page that was saved
+- Page $page The page that was saved
+- array $changes Array of field names that changed
+- array $values Array of values that changed, if values were being recorded, see Wire::getChanges(true) for details.
 
-@param array $changes Array of field names that changed
+## Meta
 
-@param array $values Array of values that changed, if values were being recorded, see Wire::getChanges(true) for details.
-
-@since 3.0.128
+- @since 3.0.128

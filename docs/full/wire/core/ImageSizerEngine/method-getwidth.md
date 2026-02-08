@@ -1,7 +1,9 @@
-# ImageSizerEngine::getWidth()
+# $imageSizerEngine->getWidth(): int
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Return the image width
 
-@return int
+## Return value
+
+int

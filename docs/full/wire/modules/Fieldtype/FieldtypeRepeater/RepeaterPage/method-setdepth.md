@@ -1,7 +1,9 @@
-# RepeaterPage::setDepth()
+# $repeaterPage->setDepth($depth)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 Set depth
 
-@param int $depth
+## Arguments
+
+- int $depth

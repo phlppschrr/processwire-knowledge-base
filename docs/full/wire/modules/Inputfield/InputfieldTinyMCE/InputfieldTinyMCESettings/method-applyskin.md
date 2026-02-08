@@ -1,9 +1,10 @@
-# InputfieldTinyMCESettings::applySkin()
+# $inputfieldTinyMCESettings->applySkin(&$settings, $defaults)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Apply skin or skin_url directly to given settings/defaults
 
-@param array $settings
+## Arguments
 
-@param array $defaults
+- array $settings
+- array $defaults

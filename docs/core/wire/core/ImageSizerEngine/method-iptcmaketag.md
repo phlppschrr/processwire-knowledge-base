@@ -1,13 +1,15 @@
-# ImageSizerEngine::iptcMakeTag()
+# $imageSizerEngine->iptcMakeTag($rec, $dat, $val): string
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Make IPTC tag (@horst)
 
-@param string $rec
+## Arguments
 
-@param string $dat
+- string $rec
+- string $dat
+- string $val
 
-@param string $val
+## Return value
 
-@return string
+string

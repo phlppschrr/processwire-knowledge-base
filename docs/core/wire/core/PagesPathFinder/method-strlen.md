@@ -1,9 +1,13 @@
-# PagesPathFinder::strlen()
+# $pagesPathFinder->strlen($str): int
 
 Source: `wire/core/PagesPathFinder.php`
 
 Get string length, using mb_strlen() if available, strlen() if not
 
-@param string $str
+## Arguments
 
-@return int
+- string $str
+
+## Return value
+
+int

@@ -1,9 +1,13 @@
-# PageFinder::postProcessQuery()
+# $pageFinder->postProcessQuery($parentQuery)
 
 Source: `wire/core/PageFinder.php`
 
 Post process a DatabaseQuerySelect for page finder
 
-@param DatabaseQuerySelect $parentQuery
+## Arguments
 
-@throws WireException
+- DatabaseQuerySelect $parentQuery
+
+## Throws
+
+- WireException

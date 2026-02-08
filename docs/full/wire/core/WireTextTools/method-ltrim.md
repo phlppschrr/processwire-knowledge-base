@@ -1,14 +1,18 @@
-# WireTextTools::ltrim()
+# $wireTextTools->ltrim($str, $chars = ''): string
 
 Source: `wire/core/WireTextTools.php`
 
 Strip whitespace (or other characters) from the beginning of string only (aka left trim)
 
+## Arguments
 
-@param string $str
+- string $str
+- string $chars Omit for default
 
-@param string $chars Omit for default
+## Return value
 
-@return string
+string
 
-@since 3.0.168
+## Meta
+
+- @since 3.0.168

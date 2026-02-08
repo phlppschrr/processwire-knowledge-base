@@ -1,9 +1,13 @@
-# WireUpload::isValidExtension()
+# $wireUpload->isValidExtension($name): bool
 
 Source: `wire/core/WireUpload.php`
 
 Does the given filename have a valid extension?
 
-@param string $name
+## Arguments
 
-@return bool
+- string $name
+
+## Return value
+
+bool

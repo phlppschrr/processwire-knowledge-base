@@ -1,4 +1,4 @@
-# WireMailTools::___isBlacklistEmail()
+# $wireMailTools->___isBlacklistEmail($email, array $options = array()): bool|string
 
 Source: `wire/core/WireMailTools.php`
 
@@ -32,15 +32,19 @@ if($result === false) {
 }
 ~~~~~
 
-@param string $email Email to check
+## Arguments
 
-@param array $options
- - `blacklist` (array): Use this blacklist rather than `$config->emailBlacklist` (default=[])
- - `throw` (bool): Throw WireException if email is blacklisted? (default=false)
- - `why` (bool): Return string containing matching rule when email is blacklisted? (default=false)
+- string $email Email to check
+- array $options - `blacklist` (array): Use this blacklist rather than `$config->emailBlacklist` (default=[]) - `throw` (bool): Throw WireException if email is blacklisted? (default=false) - `why` (bool): Return string containing matching rule when email is blacklisted? (default=false)
 
-@return bool|string Returns true if email is blacklisted, false if not. Returns string if `why` option specified + email blacklisted.
+## Return value
 
-@throws WireException if given a blacklist that is not an array, or if requested to via `throw` option.
+bool|string Returns true if email is blacklisted, false if not. Returns string if `why` option specified + email blacklisted.
 
-@since 3.0.129
+## Throws
+
+- WireException if given a blacklist that is not an array, or if requested to via `throw` option.
+
+## Meta
+
+- @since 3.0.129

@@ -1,13 +1,21 @@
-# Fields::makeItem()
+# $fields->makeItem(array $a = array()): Saveable|Wire
 
 Source: `wire/core/Fields.php`
 
 Make an item and populate with given data
 
-@param array $a Associative array of data to populate
+## Arguments
 
-@return Saveable|Wire
+- array $a Associative array of data to populate
 
-@throws WireException
+## Return value
 
-@since 3.0.146
+Saveable|Wire
+
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.146

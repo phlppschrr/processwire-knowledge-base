@@ -1,4 +1,4 @@
-# Page::___removedStatus()
+# $page->___removedStatus($name, $value)
 
 Source: `wire/core/Page.php`
 
@@ -13,9 +13,11 @@ $wire->addHook('Page::removedStatus', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param string $name Name of the status flag that was removed, i.e. unpublished, hidden, trash, locked
+- string $name Name of the status flag that was removed, i.e. unpublished, hidden, trash, locked
+- int $value Value of the status flag that was removed, a `Page::status*` constant
 
-@param int $value Value of the status flag that was removed, a `Page::status*` constant
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

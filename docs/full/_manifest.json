@@ -2,155 +2,6 @@
   "profile": "full",
   "items": [
     {
-      "type": "file",
-      "name": "Functions",
-      "source": "wire/core/Functions.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/index.md",
-      "methods": [
-        {
-          "name": "wire",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wire.md"
-        },
-        {
-          "name": "wireInstance",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireinstance.md"
-        },
-        {
-          "name": "wireMkdir",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiremkdir.md"
-        },
-        {
-          "name": "wireRmdir",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirermdir.md"
-        },
-        {
-          "name": "wireChmod",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirechmod.md"
-        },
-        {
-          "name": "wireCopy",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirecopy.md"
-        },
-        {
-          "name": "wireUnzipFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireunzipfile.md"
-        },
-        {
-          "name": "wireZipFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirezipfile.md"
-        },
-        {
-          "name": "wireSendFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiresendfile.md"
-        },
-        {
-          "name": "wireRelativeTimeStr",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirerelativetimestr.md"
-        },
-        {
-          "name": "wireMail",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiremail.md"
-        },
-        {
-          "name": "wirePopulateStringTags",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirepopulatestringtags.md"
-        },
-        {
-          "name": "wireTempDir",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiretempdir.md"
-        },
-        {
-          "name": "wireRenderFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirerenderfile.md"
-        },
-        {
-          "name": "wireIncludeFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireincludefile.md"
-        },
-        {
-          "name": "wireDate",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiredate.md"
-        },
-        {
-          "name": "wireIconMarkup",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireiconmarkup.md"
-        },
-        {
-          "name": "wireIconMarkupFile",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireiconmarkupfile.md"
-        },
-        {
-          "name": "wireBytesStr",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirebytesstr.md"
-        },
-        {
-          "name": "wireClassName",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassname.md"
-        },
-        {
-          "name": "wireClassNamespace",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassnamespace.md"
-        },
-        {
-          "name": "wireClassExists",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassexists.md"
-        },
-        {
-          "name": "wireMethodExists",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiremethodexists.md"
-        },
-        {
-          "name": "wireClassImplements",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassimplements.md"
-        },
-        {
-          "name": "wireClassParents",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassparents.md"
-        },
-        {
-          "name": "wireInstanceOf",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireinstanceof.md"
-        },
-        {
-          "name": "wireIsCallable",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireiscallable.md"
-        },
-        {
-          "name": "wireCount",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirecount.md"
-        },
-        {
-          "name": "wireLength",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirelength.md"
-        },
-        {
-          "name": "wireLen",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirelen.md"
-        },
-        {
-          "name": "wireEmpty",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireempty.md"
-        },
-        {
-          "name": "wire404",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wire404.md"
-        },
-        {
-          "name": "WireArray",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirearray.md"
-        },
-        {
-          "name": "WireData",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiredata.md"
-        },
-        {
-          "name": "PageArray",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-pagearray.md"
-        }
-      ],
-      "constants": []
-    },
-    {
       "type": "class",
       "name": "Pagefiles",
       "source": "wire/core/Pagefiles.php",
@@ -561,39 +412,6 @@
         {
           "name": "___render",
           "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Pageimages/method-___render.md"
-        }
-      ],
-      "constants": []
-    },
-    {
-      "type": "file",
-      "name": "LanguageFunctions",
-      "source": "wire/core/LanguageFunctions.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/index.md",
-      "methods": [
-        {
-          "name": "__",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-__.md"
-        },
-        {
-          "name": "_x",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-_x.md"
-        },
-        {
-          "name": "_n",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-_n.md"
-        },
-        {
-          "name": "wireLangEntityEncode",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-wirelangentityencode.md"
-        },
-        {
-          "name": "wireLangTranslations",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-wirelangtranslations.md"
-        },
-        {
-          "name": "wireLangReplacements",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-wirelangreplacements.md"
         }
       ],
       "constants": []
@@ -1855,135 +1673,6 @@
         {
           "name": "trackRemove",
           "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/PageArray/method-trackremove.md"
-        }
-      ],
-      "constants": []
-    },
-    {
-      "type": "file",
-      "name": "FunctionsWireAPI",
-      "source": "wire/core/FunctionsWireAPI.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/index.md",
-      "methods": [
-        {
-          "name": "_wirePagesAPI",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-_wirepagesapi.md"
-        },
-        {
-          "name": "_wireDataAPI",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-_wiredataapi.md"
-        },
-        {
-          "name": "wirePages",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepages.md"
-        },
-        {
-          "name": "wirePage",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepage.md"
-        },
-        {
-          "name": "wirePageId",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepageid.md"
-        },
-        {
-          "name": "wireConfig",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireconfig.md"
-        },
-        {
-          "name": "wireModules",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiremodules.md"
-        },
-        {
-          "name": "wireUser",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireuser.md"
-        },
-        {
-          "name": "wireUsers",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireusers.md"
-        },
-        {
-          "name": "wireSession",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiresession.md"
-        },
-        {
-          "name": "wireFields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirefields.md"
-        },
-        {
-          "name": "wireTemplates",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiretemplates.md"
-        },
-        {
-          "name": "wireDatabase",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiredatabase.md"
-        },
-        {
-          "name": "wirePermissions",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepermissions.md"
-        },
-        {
-          "name": "wireRoles",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireroles.md"
-        },
-        {
-          "name": "wireSanitizer",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiresanitizer.md"
-        },
-        {
-          "name": "wireDatetime",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiredatetime.md"
-        },
-        {
-          "name": "wireFiles",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirefiles.md"
-        },
-        {
-          "name": "wireCache",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirecache.md"
-        },
-        {
-          "name": "wireLanguages",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirelanguages.md"
-        },
-        {
-          "name": "wireInput",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinput.md"
-        },
-        {
-          "name": "wireInputGet",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinputget.md"
-        },
-        {
-          "name": "wireInputPost",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinputpost.md"
-        },
-        {
-          "name": "wireInputCookie",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinputcookie.md"
-        },
-        {
-          "name": "wireLog",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirelog.md"
-        },
-        {
-          "name": "wireProfiler",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireprofiler.md"
-        },
-        {
-          "name": "wireUrls",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireurls.md"
-        },
-        {
-          "name": "wirePaths",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepaths.md"
-        },
-        {
-          "name": "wireSetting",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiresetting.md"
-        },
-        {
-          "name": "_wireFunctionsAPI",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-_wirefunctionsapi.md"
         }
       ],
       "constants": []
@@ -5235,31 +4924,6 @@
       "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/PWPNG/index.md",
       "groups": [],
       "methods": [],
-      "constants": []
-    },
-    {
-      "type": "file",
-      "name": "FieldsTableTools",
-      "source": "wire/core/FieldsTableTools.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/index.md",
-      "methods": [
-        {
-          "name": "checkUniqueIndex",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-checkuniqueindex.md"
-        },
-        {
-          "name": "deleteEmptyRows",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-deleteemptyrows.md"
-        },
-        {
-          "name": "getUniqueIndexInputfield",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-getuniqueindexinputfield.md"
-        },
-        {
-          "name": "valueExists",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-valueexists.md"
-        }
-      ],
       "constants": []
     },
     {
@@ -12578,35 +12242,6 @@
       "constants": []
     },
     {
-      "type": "file",
-      "name": "admin",
-      "source": "wire/core/admin.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/index.md",
-      "methods": [
-        {
-          "name": "_hookSessionRedirectModal",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_hooksessionredirectmodal.md"
-        },
-        {
-          "name": "_checkForHttpHostError",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_checkforhttphosterror.md"
-        },
-        {
-          "name": "_checkForTwoFactorAuth",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_checkfortwofactorauth.md"
-        },
-        {
-          "name": "_checkForMaxInputVars",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_checkformaxinputvars.md"
-        },
-        {
-          "name": "_setupForDemoMode",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_setupfordemomode.md"
-        }
-      ],
-      "constants": []
-    },
-    {
       "type": "class",
       "name": "Saveable",
       "source": "wire/core/Interfaces.php",
@@ -13689,107 +13324,6 @@
         {
           "name": "renderInput",
           "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/SessionCSRF/method-renderinput.md"
-        }
-      ],
-      "constants": []
-    },
-    {
-      "type": "file",
-      "name": "FunctionsAPI",
-      "source": "wire/core/FunctionsAPI.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/index.md",
-      "methods": [
-        {
-          "name": "pages",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-pages.md"
-        },
-        {
-          "name": "page",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-page.md"
-        },
-        {
-          "name": "pageId",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-pageid.md"
-        },
-        {
-          "name": "config",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-config.md"
-        },
-        {
-          "name": "modules",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-modules.md"
-        },
-        {
-          "name": "user",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-user.md"
-        },
-        {
-          "name": "users",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-users.md"
-        },
-        {
-          "name": "session",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-session.md"
-        },
-        {
-          "name": "fields",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-fields.md"
-        },
-        {
-          "name": "templates",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-templates.md"
-        },
-        {
-          "name": "database",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-database.md"
-        },
-        {
-          "name": "permissions",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-permissions.md"
-        },
-        {
-          "name": "roles",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-roles.md"
-        },
-        {
-          "name": "sanitizer",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-sanitizer.md"
-        },
-        {
-          "name": "datetime",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-datetime.md"
-        },
-        {
-          "name": "files",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-files.md"
-        },
-        {
-          "name": "cache",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-cache.md"
-        },
-        {
-          "name": "languages",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-languages.md"
-        },
-        {
-          "name": "input",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-input.md"
-        },
-        {
-          "name": "urls",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-urls.md"
-        },
-        {
-          "name": "paths",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-paths.md"
-        },
-        {
-          "name": "region",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-region.md"
-        },
-        {
-          "name": "setting",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-setting.md"
         }
       ],
       "constants": []
@@ -17564,19 +17098,6 @@
       "constants": []
     },
     {
-      "type": "file",
-      "name": "init",
-      "source": "wire/modules/AdminTheme/AdminThemeDefault/init.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeDefault/init/index.md",
-      "methods": [
-        {
-          "name": "hookMarkupPagerNavRender",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeDefault/init/method-hookmarkuppagernavrender.md"
-        }
-      ],
-      "constants": []
-    },
-    {
       "type": "class",
       "name": "AdminThemeDefaultHelpers",
       "source": "wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers.php",
@@ -17638,59 +17159,6 @@
         {
           "name": "renderJSConfig",
           "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers/method-renderjsconfig.md"
-        }
-      ],
-      "constants": []
-    },
-    {
-      "type": "file",
-      "name": "_sidenav-init",
-      "source": "wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php",
-      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/index.md",
-      "methods": [
-        {
-          "name": "isMobileWidth",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-ismobilewidth.md"
-        },
-        {
-          "name": "toggleSidebarPane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-togglesidebarpane.md"
-        },
-        {
-          "name": "toggleTreePane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-toggletreepane.md"
-        },
-        {
-          "name": "closeTreePane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-closetreepane.md"
-        },
-        {
-          "name": "hideTreePane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-hidetreepane.md"
-        },
-        {
-          "name": "openTreePane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-opentreepane.md"
-        },
-        {
-          "name": "showTreePane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-showtreepane.md"
-        },
-        {
-          "name": "treePaneClosed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-treepaneclosed.md"
-        },
-        {
-          "name": "treePaneHidden",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-treepanehidden.md"
-        },
-        {
-          "name": "sidebarPaneClosed",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-sidebarpaneclosed.md"
-        },
-        {
-          "name": "refreshTreePane",
-          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-refreshtreepane.md"
         }
       ],
       "constants": []
@@ -19463,6 +18931,538 @@
       "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/Page/PageFrontEdit/PageFrontEditConfig/index.md",
       "groups": [],
       "methods": [],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "Functions",
+      "source": "wire/core/Functions.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/index.md",
+      "methods": [
+        {
+          "name": "wire",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wire.md"
+        },
+        {
+          "name": "wireInstance",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireinstance.md"
+        },
+        {
+          "name": "wireMkdir",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiremkdir.md"
+        },
+        {
+          "name": "wireRmdir",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirermdir.md"
+        },
+        {
+          "name": "wireChmod",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirechmod.md"
+        },
+        {
+          "name": "wireCopy",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirecopy.md"
+        },
+        {
+          "name": "wireUnzipFile",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireunzipfile.md"
+        },
+        {
+          "name": "wireZipFile",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirezipfile.md"
+        },
+        {
+          "name": "wireSendFile",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiresendfile.md"
+        },
+        {
+          "name": "wireRelativeTimeStr",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirerelativetimestr.md"
+        },
+        {
+          "name": "wireMail",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiremail.md"
+        },
+        {
+          "name": "wirePopulateStringTags",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirepopulatestringtags.md"
+        },
+        {
+          "name": "wireTempDir",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiretempdir.md"
+        },
+        {
+          "name": "wireRenderFile",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirerenderfile.md"
+        },
+        {
+          "name": "wireIncludeFile",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireincludefile.md"
+        },
+        {
+          "name": "wireDate",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiredate.md"
+        },
+        {
+          "name": "wireIconMarkup",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireiconmarkup.md"
+        },
+        {
+          "name": "wireIconMarkupFile",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireiconmarkupfile.md"
+        },
+        {
+          "name": "wireBytesStr",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirebytesstr.md"
+        },
+        {
+          "name": "wireClassName",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassname.md"
+        },
+        {
+          "name": "wireClassNamespace",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassnamespace.md"
+        },
+        {
+          "name": "wireClassExists",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassexists.md"
+        },
+        {
+          "name": "wireMethodExists",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiremethodexists.md"
+        },
+        {
+          "name": "wireClassImplements",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassimplements.md"
+        },
+        {
+          "name": "wireClassParents",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireclassparents.md"
+        },
+        {
+          "name": "wireInstanceOf",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireinstanceof.md"
+        },
+        {
+          "name": "wireIsCallable",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireiscallable.md"
+        },
+        {
+          "name": "wireCount",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirecount.md"
+        },
+        {
+          "name": "wireLength",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirelength.md"
+        },
+        {
+          "name": "wireLen",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirelen.md"
+        },
+        {
+          "name": "wireEmpty",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wireempty.md"
+        },
+        {
+          "name": "wire404",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wire404.md"
+        },
+        {
+          "name": "WireArray",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wirearray.md"
+        },
+        {
+          "name": "WireData",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-wiredata.md"
+        },
+        {
+          "name": "PageArray",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/Functions/method-pagearray.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "LanguageFunctions",
+      "source": "wire/core/LanguageFunctions.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/index.md",
+      "methods": [
+        {
+          "name": "__",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-__.md"
+        },
+        {
+          "name": "_x",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-_x.md"
+        },
+        {
+          "name": "_n",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-_n.md"
+        },
+        {
+          "name": "wireLangEntityEncode",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-wirelangentityencode.md"
+        },
+        {
+          "name": "wireLangTranslations",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-wirelangtranslations.md"
+        },
+        {
+          "name": "wireLangReplacements",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/LanguageFunctions/method-wirelangreplacements.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "FunctionsWireAPI",
+      "source": "wire/core/FunctionsWireAPI.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/index.md",
+      "methods": [
+        {
+          "name": "_wirePagesAPI",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-_wirepagesapi.md"
+        },
+        {
+          "name": "_wireDataAPI",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-_wiredataapi.md"
+        },
+        {
+          "name": "wirePages",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepages.md"
+        },
+        {
+          "name": "wirePage",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepage.md"
+        },
+        {
+          "name": "wirePageId",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepageid.md"
+        },
+        {
+          "name": "wireConfig",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireconfig.md"
+        },
+        {
+          "name": "wireModules",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiremodules.md"
+        },
+        {
+          "name": "wireUser",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireuser.md"
+        },
+        {
+          "name": "wireUsers",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireusers.md"
+        },
+        {
+          "name": "wireSession",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiresession.md"
+        },
+        {
+          "name": "wireFields",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirefields.md"
+        },
+        {
+          "name": "wireTemplates",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiretemplates.md"
+        },
+        {
+          "name": "wireDatabase",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiredatabase.md"
+        },
+        {
+          "name": "wirePermissions",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepermissions.md"
+        },
+        {
+          "name": "wireRoles",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireroles.md"
+        },
+        {
+          "name": "wireSanitizer",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiresanitizer.md"
+        },
+        {
+          "name": "wireDatetime",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiredatetime.md"
+        },
+        {
+          "name": "wireFiles",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirefiles.md"
+        },
+        {
+          "name": "wireCache",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirecache.md"
+        },
+        {
+          "name": "wireLanguages",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirelanguages.md"
+        },
+        {
+          "name": "wireInput",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinput.md"
+        },
+        {
+          "name": "wireInputGet",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinputget.md"
+        },
+        {
+          "name": "wireInputPost",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinputpost.md"
+        },
+        {
+          "name": "wireInputCookie",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireinputcookie.md"
+        },
+        {
+          "name": "wireLog",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirelog.md"
+        },
+        {
+          "name": "wireProfiler",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireprofiler.md"
+        },
+        {
+          "name": "wireUrls",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wireurls.md"
+        },
+        {
+          "name": "wirePaths",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wirepaths.md"
+        },
+        {
+          "name": "wireSetting",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-wiresetting.md"
+        },
+        {
+          "name": "_wireFunctionsAPI",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsWireAPI/method-_wirefunctionsapi.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "FieldsTableTools",
+      "source": "wire/core/FieldsTableTools.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/index.md",
+      "methods": [
+        {
+          "name": "checkUniqueIndex",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-checkuniqueindex.md"
+        },
+        {
+          "name": "deleteEmptyRows",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-deleteemptyrows.md"
+        },
+        {
+          "name": "getUniqueIndexInputfield",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-getuniqueindexinputfield.md"
+        },
+        {
+          "name": "valueExists",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FieldsTableTools/method-valueexists.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "admin",
+      "source": "wire/core/admin.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/index.md",
+      "methods": [
+        {
+          "name": "_hookSessionRedirectModal",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_hooksessionredirectmodal.md"
+        },
+        {
+          "name": "_checkForHttpHostError",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_checkforhttphosterror.md"
+        },
+        {
+          "name": "_checkForTwoFactorAuth",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_checkfortwofactorauth.md"
+        },
+        {
+          "name": "_checkForMaxInputVars",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_checkformaxinputvars.md"
+        },
+        {
+          "name": "_setupForDemoMode",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/admin/method-_setupfordemomode.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "FunctionsAPI",
+      "source": "wire/core/FunctionsAPI.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/index.md",
+      "methods": [
+        {
+          "name": "pages",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-pages.md"
+        },
+        {
+          "name": "page",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-page.md"
+        },
+        {
+          "name": "pageId",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-pageid.md"
+        },
+        {
+          "name": "config",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-config.md"
+        },
+        {
+          "name": "modules",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-modules.md"
+        },
+        {
+          "name": "user",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-user.md"
+        },
+        {
+          "name": "users",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-users.md"
+        },
+        {
+          "name": "session",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-session.md"
+        },
+        {
+          "name": "fields",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-fields.md"
+        },
+        {
+          "name": "templates",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-templates.md"
+        },
+        {
+          "name": "database",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-database.md"
+        },
+        {
+          "name": "permissions",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-permissions.md"
+        },
+        {
+          "name": "roles",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-roles.md"
+        },
+        {
+          "name": "sanitizer",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-sanitizer.md"
+        },
+        {
+          "name": "datetime",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-datetime.md"
+        },
+        {
+          "name": "files",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-files.md"
+        },
+        {
+          "name": "cache",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-cache.md"
+        },
+        {
+          "name": "languages",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-languages.md"
+        },
+        {
+          "name": "input",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-input.md"
+        },
+        {
+          "name": "urls",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-urls.md"
+        },
+        {
+          "name": "paths",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-paths.md"
+        },
+        {
+          "name": "region",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-region.md"
+        },
+        {
+          "name": "setting",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/core/FunctionsAPI/method-setting.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "init",
+      "source": "wire/modules/AdminTheme/AdminThemeDefault/init.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeDefault/init/index.md",
+      "methods": [
+        {
+          "name": "hookMarkupPagerNavRender",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeDefault/init/method-hookmarkuppagernavrender.md"
+        }
+      ],
+      "constants": []
+    },
+    {
+      "type": "file",
+      "name": "_sidenav-init",
+      "source": "wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php",
+      "index": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/index.md",
+      "methods": [
+        {
+          "name": "isMobileWidth",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-ismobilewidth.md"
+        },
+        {
+          "name": "toggleSidebarPane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-togglesidebarpane.md"
+        },
+        {
+          "name": "toggleTreePane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-toggletreepane.md"
+        },
+        {
+          "name": "closeTreePane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-closetreepane.md"
+        },
+        {
+          "name": "hideTreePane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-hidetreepane.md"
+        },
+        {
+          "name": "openTreePane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-opentreepane.md"
+        },
+        {
+          "name": "showTreePane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-showtreepane.md"
+        },
+        {
+          "name": "treePaneClosed",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-treepaneclosed.md"
+        },
+        {
+          "name": "treePaneHidden",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-treepanehidden.md"
+        },
+        {
+          "name": "sidebarPaneClosed",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-sidebarpaneclosed.md"
+        },
+        {
+          "name": "refreshTreePane",
+          "file": "/Users/philipp/dev-toolbox/processwire-docs/docs/full/wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init/method-refreshtreepane.md"
+        }
+      ],
       "constants": []
     }
   ]

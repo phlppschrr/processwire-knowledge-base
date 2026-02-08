@@ -1,12 +1,17 @@
-# Config::paths()
+# $config->paths($for = ''): null|string|Paths
 
 Source: `wire/core/Config.php`
 
 Get disk path for requested resource or module or get all paths if no argument
 
+## Arguments
 
-@param string $for Predefined ProcessWire paths property or module name
+- string $for Predefined ProcessWire paths property or module name
 
-@return null|string|Paths
+## Return value
 
-@since 3.0.130
+null|string|Paths
+
+## Meta
+
+- @since 3.0.130

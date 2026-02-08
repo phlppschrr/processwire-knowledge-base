@@ -1,9 +1,13 @@
-# AdminTheme::get()
+# $adminTheme->get($key): int|mixed|null|string
 
 Source: `wire/core/AdminTheme.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return int|mixed|null|string
+- string $key
+
+## Return value
+
+int|mixed|null|string

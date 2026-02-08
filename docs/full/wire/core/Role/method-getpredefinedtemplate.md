@@ -1,7 +1,9 @@
-# Role::getPredefinedTemplate()
+# $role->getPredefinedTemplate(): Template
 
 Source: `wire/core/Role.php`
 
 Get predefined template (template method)
 
-@return Template
+## Return value
+
+Template

@@ -1,11 +1,17 @@
-# CommentArray::render()
+# $commentArray->render(array $options = array()): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
 Provides the default rendering of a comment list, which may or may not be what you want
 
-@param array $options
+## Arguments
 
-@return string
+- array $options
 
-@see CommentList class and override it to serve your needs
+## Return value
+
+string
+
+## See also
+
+- CommentList class and override it to serve your needs

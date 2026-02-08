@@ -1,7 +1,9 @@
-# PagesLoader::__construct()
+# $pagesLoader->__construct(Pages $pages)
 
 Source: `wire/core/PagesLoader.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

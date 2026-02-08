@@ -1,4 +1,4 @@
-# ImageSizerEngine::resize()
+# $imageSizerEngine->resize($finalWidth, $finalHeight): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -13,8 +13,11 @@ Pre-processing is:
 Post-processing is:
   Copy back and delete tempfile, write IPTC if necessary, reload imageinfo, set the modified flag.
 
-@param int $finalWidth
+## Arguments
 
-@param int $finalHeight
+- int $finalWidth
+- int $finalHeight
 
-@return bool
+## Return value
+
+bool

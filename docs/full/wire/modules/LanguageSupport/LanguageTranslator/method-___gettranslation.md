@@ -1,19 +1,16 @@
-# LanguageTranslator::___getTranslation()
+# $languageTranslator->___getTranslation($textdomain, $text, $context = '', array $options = array()): string|array|false
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Implementation for the getTranslation() function - you should call getTranslation() without underscores instead.
 
-@param string|object $textdomain Textdomain string, filename, or object.
+## Arguments
 
-@param string $text Text in default language (EN) that needs to be converted to current language.
+- string|object $textdomain Textdomain string, filename, or object.
+- string $text Text in default language (EN) that needs to be converted to current language.
+- string $context Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
+- array $options 3.0.237+ only - `getInfo` (bool): Get verbose array of info about translation? (default=false) - `getFalse` (bool): Return false rather than default language value if translation not found? (default=false)
 
-@param string $context Optional context label for the text, to differentiate from others that may be the same in English, but not other languages.
+## Return value
 
-@param array $options 3.0.237+ only
- - `getInfo` (bool): Get verbose array of info about translation? (default=false)
- - `getFalse` (bool): Return false rather than default language value if translation not found? (default=false)
-
-@return string|array|false Translation if available, or original EN version if translation not available.
- - Returns array if options[getInfo] is true.
- - Returns false if translation not found and options[getFalse] is true.
+string|array|false Translation if available, or original EN version if translation not available. - Returns array if options[getInfo] is true. - Returns false if translation not found and options[getFalse] is true.

@@ -1,11 +1,17 @@
-# WireHooks::prepareArgMatch()
+# $wireHooks->prepareArgMatch($argMatch): array
 
 Source: `wire/core/WireHooks.php`
 
 Prepare argument match
 
-@param string $argMatch
+## Arguments
 
-@return array
+- string $argMatch
 
-@since 3.0.247
+## Return value
+
+array
+
+## Meta
+
+- @since 3.0.247

@@ -1,11 +1,14 @@
-# InputfieldTinyMCESettings::mergeSetting()
+# $inputfieldTinyMCESettings->mergeSetting($value, $addValue): string|array|mixed
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
 Merge two setting values into one that combines them
 
-@param string|array|mixed $value
+## Arguments
 
-@param string|array|mixed $addValue
+- string|array|mixed $value
+- string|array|mixed $addValue
 
-@return string|array|mixed
+## Return value
+
+string|array|mixed

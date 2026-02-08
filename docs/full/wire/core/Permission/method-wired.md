@@ -1,4 +1,4 @@
-# Permission::wired()
+# $permission->wired()
 
 Source: `wire/core/Permission.php`
 

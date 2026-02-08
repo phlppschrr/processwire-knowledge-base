@@ -1,4 +1,4 @@
-# Page::___callUnknown()
+# $page->___callUnknown($method, $arguments): null|mixed
 
 Source: `wire/core/Page.php`
 
@@ -19,13 +19,19 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
+## Arguments
 
-@param string $method Requested method name
+- string $method Requested method name
+- array $arguments Arguments provided
 
-@param array $arguments Arguments provided
+## Return value
 
-@return null|mixed Return value of method (if applicable)
+null|mixed Return value of method (if applicable)
 
-@throws WireException
+## Throws
 
-@see Wire::callUnknown()
+- WireException
+
+## See also
+
+- [Wire::callUnknown()](../Wire/method-___callunknown.md)

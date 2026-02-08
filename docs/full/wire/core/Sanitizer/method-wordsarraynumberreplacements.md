@@ -1,11 +1,14 @@
-# Sanitizer::wordsArrayNumberReplacements()
+# $sanitizer->wordsArrayNumberReplacements(&$value, $prefix = 'REP'): array
 
 Source: `wire/core/Sanitizer.php`
 
 Identify decimals, minus signs and commas in numbers, replace them, and return the replacements array
 
-@param string $value
+## Arguments
 
-@param string $prefix
+- string $value
+- string $prefix
 
-@return array
+## Return value
+
+array

@@ -1,4 +1,4 @@
-# Modules::findByPrefix()
+# $modules->findByPrefix($prefix, $load = false): array
 
 Source: `wire/core/Modules.php`
 
@@ -17,13 +17,11 @@ $items = $modules->findByPrefix('Textformatter');
 $items = $modules->findByPrefix('Textformatter', true);
 ~~~~~
 
-@param string $prefix Specify prefix, i.e. "Process", "Fieldtype", "Inputfield", etc.
+## Arguments
 
-@param bool|int $load Specify one of the following (all indexed by module name):
- - Boolean true to return array of instantiated modules.
- - Boolean false to return array of module names (default).
- - Integer 1 to return array of module info for each matching module.
- - Integer 2 to return array of verbose module info for each matching module.
- - Integer 3 to return array of Module or ModulePlaceholder objects (whatever current state is). Added 3.0.146.
+- string $prefix Specify prefix, i.e. "Process", "Fieldtype", "Inputfield", etc.
+- bool|int $load Specify one of the following (all indexed by module name): - Boolean true to return array of instantiated modules. - Boolean false to return array of module names (default). - Integer 1 to return array of module info for each matching module. - Integer 2 to return array of verbose module info for each matching module. - Integer 3 to return array of Module or ModulePlaceholder objects (whatever current state is). Added 3.0.146.
 
-@return array Returns array of module class names, module info arrays, or Module objects. In all cases, array indexes are class names.
+## Return value
+
+array Returns array of module class names, module info arrays, or Module objects. In all cases, array indexes are class names.

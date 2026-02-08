@@ -1,10 +1,13 @@
-# Inputfield::has()
+# $inputfield->has($key): bool
 
 Source: `wire/core/Inputfield.php`
 
 Does this Inputfield have the requested property or attribute?
 
+## Arguments
 
-@param string $key Requested property or attribute.
+- string $key Requested property or attribute.
 
-@return bool True if it has it, false if it doesn't
+## Return value
+
+bool True if it has it, false if it doesn't

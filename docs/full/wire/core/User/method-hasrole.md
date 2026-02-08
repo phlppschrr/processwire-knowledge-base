@@ -1,4 +1,4 @@
-# User::hasRole()
+# $user->hasRole($role): bool
 
 Source: `wire/core/User.php`
 
@@ -11,6 +11,10 @@ if($user->hasRole('editor')) {
 }
 ~~~~~
 
-@param string|Role|int $role May be Role name, object or ID.
+## Arguments
 
-@return bool
+- string|Role|int $role May be Role name, object or ID.
+
+## Return value
+
+bool

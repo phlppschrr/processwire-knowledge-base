@@ -1,4 +1,4 @@
-# WireMail::param()
+# $wireMail->param($value): $this
 
 Source: `wire/core/WireMail.php`
 
@@ -12,7 +12,10 @@ See `$additional_parameters` at <http://www.php.net/manual/en/function.mail.php>
 This function may only be applicable if you don't have other WireMail modules
 installed as email params are only used by PHP's `mail()` function.
 
+## Arguments
 
-@param string $value
+- string $value
 
-@return $this
+## Return value
+
+$this

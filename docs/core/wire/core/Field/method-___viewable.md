@@ -1,4 +1,4 @@
-# Field::___viewable()
+# $field->___viewable(?Page $page = null, ?User $user = null): bool
 
 Source: `wire/core/Field.php`
 
@@ -10,8 +10,11 @@ Is this field viewable?
 - **Please note:** this does not check that the provided $page itself is viewable. If you want that
   check, then use `$page->viewable($field)` instead.
 
-@param Page|null $page Optionally specify a Page for context (i.e. Is field viewable on $page?)
+## Arguments
 
-@param User|null $user Optionally specify a different user for context (default=current user)
+- Page|null $page Optionally specify a Page for context (i.e. Is field viewable on $page?)
+- User|null $user Optionally specify a different user for context (default=current user)
 
-@return bool True if viewable, false if not
+## Return value
+
+bool True if viewable, false if not

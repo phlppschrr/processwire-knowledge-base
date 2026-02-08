@@ -1,7 +1,9 @@
-# PagesRawFinder::objects()
+# $pagesRawFinder->objects(&$values)
 
 Source: `wire/core/PagesRaw.php`
 
 Convert associative arrays to objects
 
-@param array $values
+## Arguments
+
+- array $values

@@ -1,5 +1,8 @@
-# CommentField::getFieldtype()
+# $commentField->getFieldtype(): FieldtypeComments|Fieldtype
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
-@return FieldtypeComments|Fieldtype
+
+## Return value
+
+FieldtypeComments|Fieldtype

@@ -1,4 +1,4 @@
-# PagesParents::findParentIDs()
+# $pagesParents->findParentIDs($fromParent = null): array
 
 Source: `wire/core/PagesParents.php`
 
@@ -21,9 +21,14 @@ $pages->parents()->findParents([
 ]);
 ~~~~~
 
-@param null|Page|int $fromParent Specify parent to limit results within, or negative int for minimum parent_id,
-  for instance a value of -2 would exclude homepage and items with homepage (id=1) as their parent.
+## Arguments
 
-@return array Returns array in format [ id => parent_id ]
+- null|Page|int $fromParent Specify parent to limit results within, or negative int for minimum parent_id, for instance a value of -2 would exclude homepage and items with homepage (id=1) as their parent.
 
-@since 3.0.156
+## Return value
+
+array Returns array in format [ id => parent_id ]
+
+## Meta
+
+- @since 3.0.156

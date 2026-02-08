@@ -1,4 +1,4 @@
-# Pageimage::height()
+# $pageimage->height($n = 0, $options = array()): int|Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -16,8 +16,11 @@ $px = $image->height();
 $thumb = $image->height(200);
 ~~~~~
 
-@param int $n Optional height if you are creating a new size.
+## Arguments
 
-@param array|string|int|bool $options See `Pageimage::size()` $options argument for details.
+- int $n Optional height if you are creating a new size.
+- array|string|int|bool $options See `Pageimage::size()` $options argument for details.
 
-@return int|Pageimage Returns height (in px) when given no arguments, or Pageimage when given a height argument.
+## Return value
+
+int|Pageimage Returns height (in px) when given no arguments, or Pageimage when given a height argument.

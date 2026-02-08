@@ -1,4 +1,4 @@
-# ProcessTemplateExportImport::___processImport()
+# $processTemplateExportImport->___processImport()
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 

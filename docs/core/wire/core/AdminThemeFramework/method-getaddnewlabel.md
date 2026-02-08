@@ -1,7 +1,9 @@
-# AdminThemeFramework::getAddNewLabel()
+# $adminThemeFramework->getAddNewLabel(): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Get the translated “Add New” label that’s used in a couple spots
 
-@return string
+## Return value
+
+string

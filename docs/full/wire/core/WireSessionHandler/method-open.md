@@ -1,11 +1,14 @@
-# WireSessionHandler::open()
+# $wireSessionHandler->open($path, $name): bool
 
 Source: `wire/core/WireSessionHandler.php`
 
 Open the session
 
-@param string $path Save path
+## Arguments
 
-@param string $name Name of session
+- string $path Save path
+- string $name Name of session
 
-@return bool True on success, false on failure
+## Return value
+
+bool True on success, false on failure

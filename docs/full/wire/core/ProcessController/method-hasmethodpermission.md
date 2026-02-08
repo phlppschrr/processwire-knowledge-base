@@ -1,13 +1,18 @@
-# ProcessController::hasMethodPermission()
+# $processController->hasMethodPermission($method, $throw = true): bool
 
 Source: `wire/core/ProcessController.php`
 
 Does user have permission for the given $method name in the current Process?
 
-@param string $method
+## Arguments
 
-@param bool $throw Throw exception if not permission?
+- string $method
+- bool $throw Throw exception if not permission?
 
-@return bool
+## Return value
 
-@throws ProcessControllerPermissionException
+bool
+
+## Throws
+
+- ProcessControllerPermissionException

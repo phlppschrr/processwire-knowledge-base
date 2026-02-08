@@ -1,11 +1,11 @@
-# PagesExportImport::importPageSettings()
+# $pagesExportImport->importPageSettings(Page $page, array $settings, array $options)
 
 Source: `wire/core/PagesExportImport.php`
 
 Import native page settings
 
-@param Page $page
+## Arguments
 
-@param array $settings Contents of the import data 'settings' array
-
-@param array $options
+- Page $page
+- array $settings Contents of the import data 'settings' array
+- array $options

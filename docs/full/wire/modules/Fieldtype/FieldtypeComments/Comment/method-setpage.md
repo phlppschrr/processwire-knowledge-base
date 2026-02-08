@@ -1,7 +1,9 @@
-# Comment::setPage()
+# $comment->setPage(Page $page)
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Set Page that this Comment belongs to
 
-@param Page $page
+## Arguments
+
+- Page $page

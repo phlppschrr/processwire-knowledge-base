@@ -1,4 +1,4 @@
-# WireArray::getItemThatMatches()
+# $wireArray->getItemThatMatches($key, $value): Wire|null
 
 Source: `wire/core/WireArray.php`
 
@@ -6,8 +6,11 @@ Return the first item in this WireArray having a property named $key with $value
 
 Used internally by get() and has() methods.
 
-@param string $key Property to match.
+## Arguments
 
-@param string|int|object $value $value to match.
+- string $key Property to match.
+- string|int|object $value $value to match.
 
-@return Wire|null
+## Return value
+
+Wire|null

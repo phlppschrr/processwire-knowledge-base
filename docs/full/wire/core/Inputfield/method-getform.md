@@ -1,4 +1,4 @@
-# Inputfield::getForm()
+# $inputfield->getForm(): InputfieldForm|null
 
 Source: `wire/core/Inputfield.php`
 
@@ -7,7 +7,10 @@ Get the InputfieldForm element that contains this field or null if not yet defin
 This is the same as the `getRootParent()` method except that it returns null if root parent
 is not an InputfieldForm.
 
+## Return value
 
-@return InputfieldForm|null
+InputfieldForm|null
 
-@since 3.0.106
+## Meta
+
+- @since 3.0.106

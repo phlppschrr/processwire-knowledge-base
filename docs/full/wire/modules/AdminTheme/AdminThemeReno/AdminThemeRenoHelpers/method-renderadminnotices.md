@@ -1,11 +1,14 @@
-# AdminThemeRenoHelpers::renderAdminNotices()
+# $adminThemeRenoHelpers->renderAdminNotices($notices, array $options = array()): string
 
 Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
 Render runtime notices div#notices
 
-@param Notices $notices
+## Arguments
 
-@param array $options
+- Notices $notices
+- array $options
 
-@return string
+## Return value
+
+string

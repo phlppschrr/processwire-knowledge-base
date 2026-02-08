@@ -1,4 +1,4 @@
-# WireMail::header()
+# $wireMail->header($key, $value): $this
 
 Source: `wire/core/WireMail.php`
 
@@ -7,9 +7,11 @@ Set any email header
 - Multiple calls will append existing headers.
 - To remove an existing header, specify NULL as the value.
 
+## Arguments
 
-@param string|array $key Header name
+- string|array $key Header name
+- string $value Header value or specify null to unset
 
-@param string $value Header value or specify null to unset
+## Return value
 
-@return $this
+$this

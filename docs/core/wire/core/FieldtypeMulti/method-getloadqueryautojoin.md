@@ -1,11 +1,14 @@
-# FieldtypeMulti::getLoadQueryAutojoin()
+# $fieldtypeMulti->getLoadQueryAutojoin(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect|NULL
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Return the query used for Autojoining this field (if different from getLoadQuery) or NULL if autojoin not allowed.
 
-@param Field $field
+## Arguments
 
-@param DatabaseQuerySelect $query
+- Field $field
+- DatabaseQuerySelect $query
 
-@return DatabaseQuerySelect|NULL
+## Return value
+
+DatabaseQuerySelect|NULL

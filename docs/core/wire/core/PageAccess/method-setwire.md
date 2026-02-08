@@ -1,7 +1,9 @@
-# PageAccess::setWire()
+# $pageAccess->setWire(ProcessWire $wire)
 
 Source: `wire/core/PageAccess.php`
 
 Set the ProcessWire instance
 
-@param ProcessWire $wire
+## Arguments
+
+- ProcessWire $wire

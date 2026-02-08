@@ -1,4 +1,4 @@
-# FieldtypeMulti::___savePageField()
+# $fieldtypeMulti->___savePageField(Page $page, Field $field): bool
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -7,10 +7,15 @@ Per the Fieldtype interface, Save the given Field from the given Page to the dat
 Because the number of values may have changed, this method plays it safe and deletes all the old values
 and reinserts them as new.
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return bool
+## Return value
 
-@throws \PDOException|WireException|WireDatabaseQueryException on failure
+bool
+
+## Throws
+
+- \PDOException|WireException|WireDatabaseQueryException on failure

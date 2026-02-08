@@ -1,4 +1,4 @@
-# AdminThemeFramework::renderNavIcon()
+# $adminThemeFramework->renderNavIcon($icon): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
@@ -7,6 +7,10 @@ Render markup for a font-awesome icon that precedes a navigation label
 This is the same as renderIcon() except that fixed-width is assumed and a "nav-nav-icon"
 class is added to it.
 
-@param string $icon Name of icon to render, excluding the “fa-” prefix
+## Arguments
 
-@return string
+- string $icon Name of icon to render, excluding the “fa-” prefix
+
+## Return value
+
+string

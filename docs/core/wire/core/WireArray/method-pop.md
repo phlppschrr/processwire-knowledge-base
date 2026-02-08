@@ -1,8 +1,9 @@
-# WireArray::pop()
+# $wireArray->pop(): Wire|mixed|null
 
 Source: `wire/core/WireArray.php`
 
 Pop an element off the end of the WireArray and return it
 
+## Return value
 
-@return Wire|mixed|null Item popped off the end or NULL if empty.
+Wire|mixed|null Item popped off the end or NULL if empty.

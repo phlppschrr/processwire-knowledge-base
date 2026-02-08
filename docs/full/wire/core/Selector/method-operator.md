@@ -1,9 +1,13 @@
-# Selector::operator()
+# $selector->operator(): string
 
 Source: `wire/core/Selector.php`
 
 Return the operator used by this Selector
 
-@return string
+## Return value
 
-@since 3.0.42 Prior versions just supported the 'operator' property.
+string
+
+## Meta
+
+- @since 3.0.42 Prior versions just supported the 'operator' property.

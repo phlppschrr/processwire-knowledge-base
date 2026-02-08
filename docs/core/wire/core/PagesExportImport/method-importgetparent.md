@@ -1,13 +1,15 @@
-# PagesExportImport::importGetParent()
+# $pagesExportImport->importGetParent(array &$a, array &$options, array &$errors): Page|NullPage
 
 Source: `wire/core/PagesExportImport.php`
 
 Get the parent of the page being imported
 
-@param array $a Import data
+## Arguments
 
-@param array $options Import options
+- array $a Import data
+- array $options Import options
+- array $errors Errors array
 
-@param array $errors Errors array
+## Return value
 
-@return Page|NullPage
+Page|NullPage

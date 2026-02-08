@@ -1,11 +1,17 @@
-# SelectableOptionManager::optionsStringToArray()
+# $selectableOptionManager->optionsStringToArray($value): array
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Given a newline separated options string, convert it to an array
 
-@param $value
+## Arguments
 
-@return array
+- $value
 
-@throws WireException
+## Return value
+
+array
+
+## Throws
+
+- WireException

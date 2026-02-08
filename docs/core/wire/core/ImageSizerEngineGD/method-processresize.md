@@ -1,21 +1,22 @@
-# ImageSizerEngineGD::processResize()
+# $imageSizerEngineGD->processResize($srcFilename, $dstFilename, $fullWidth, $fullHeight, $finalWidth, $finalHeight): bool
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Process the image resize
 
-@param string $srcFilename Source file
+## Arguments
 
-@param string $dstFilename Destination file
+- string $srcFilename Source file
+- string $dstFilename Destination file
+- int $fullWidth Current width
+- int $fullHeight Current height
+- int $finalWidth Requested final width
+- int $finalHeight Requested final height
 
-@param int $fullWidth Current width
+## Return value
 
-@param int $fullHeight Current height
+bool
 
-@param int $finalWidth Requested final width
+## Throws
 
-@param int $finalHeight Requested final height
-
-@return bool
-
-@throws WireException
+- WireException

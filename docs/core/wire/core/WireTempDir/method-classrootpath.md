@@ -1,15 +1,22 @@
-# WireTempDir::classRootPath()
+# $wireTempDir->classRootPath($createIfNotExists = false, $basePath = ''): string
 
 Source: `wire/core/WireTempDir.php`
 
 Return the class root path for cache files (i.e. /path/to/site/assets/cache/WireTempDir/)
 
-@param bool $createIfNotExists Create the directory if it does not exist? (default=false)
+## Arguments
 
-@param string $basePath Path to start from (default=/path/to/site/assets/cache/)
+- bool $createIfNotExists Create the directory if it does not exist? (default=false)
+- string $basePath Path to start from (default=/path/to/site/assets/cache/)
 
-@return string
+## Return value
 
-@throws WireException
+string
 
-@since 3.0.175
+## Throws
+
+- WireException
+
+## Meta
+
+- @since 3.0.175

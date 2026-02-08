@@ -1,11 +1,14 @@
-# PagesPathFinder::getPageLanguageStatus()
+# $pagesPathFinder->getPageLanguageStatus($pageId, $languageId): int
 
 Source: `wire/core/PagesPathFinder.php`
 
 Get value from page status column
 
-@param int $pageId
+## Arguments
 
-@param int $languageId
+- int $pageId
+- int $languageId
 
-@return int
+## Return value
+
+int

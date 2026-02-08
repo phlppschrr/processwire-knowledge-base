@@ -1,13 +1,18 @@
-# InputfieldWrapper::renderHeaderActions()
+# $inputfieldWrapper->renderHeaderActions(Inputfield $inputfield, array $actions): string
 
 Source: `wire/core/InputfieldWrapper.php`
 
 Render Inputfield header actions
 
-@param Inputfield $inputfield
+## Arguments
 
-@param array $actions
+- Inputfield $inputfield
+- array $actions
 
-@return string
+## Return value
 
-@since 3.0.240
+string
+
+## Meta
+
+- @since 3.0.240

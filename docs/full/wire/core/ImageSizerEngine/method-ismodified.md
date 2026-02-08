@@ -1,7 +1,9 @@
-# ImageSizerEngine::isModified()
+# $imageSizerEngine->isModified(): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Was the image modified?
 
-@return bool
+## Return value
+
+bool

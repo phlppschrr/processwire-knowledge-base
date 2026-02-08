@@ -1,14 +1,15 @@
-# Permissions::___saved()
+# $permissions->___saved(Page $page, array $changes = array(), $values = array())
 
 Source: `wire/core/Permissions.php`
 
 Hook called when a permission is saved
 
+## Arguments
 
-@param Page $page Page that was saved
+- Page $page Page that was saved
+- array $changes Array of changed field names
+- array $values Array of changed field values indexed by name (when enabled)
 
-@param array $changes Array of changed field names
+## Throws
 
-@param array $values Array of changed field values indexed by name (when enabled)
-
-@throws WireException
+- WireException

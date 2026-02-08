@@ -1,11 +1,11 @@
-# ModulesDuplicates::addDuplicate()
+# $modulesDuplicates->addDuplicate($className, $pathname, $current = false)
 
 Source: `wire/core/ModulesDuplicates.php`
 
 Add a duplicate to the list
 
-@param $className
+## Arguments
 
-@param $pathname
-
-@param bool $current Is this the current one in use?
+- $className
+- $pathname
+- bool $current Is this the current one in use?

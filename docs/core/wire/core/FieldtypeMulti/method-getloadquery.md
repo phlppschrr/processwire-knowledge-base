@@ -1,14 +1,18 @@
-# FieldtypeMulti::getLoadQuery()
+# $fieldtypeMulti->getLoadQuery(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Return the query used for loading all parts of the data from this field.
 
+## Arguments
 
-@param Field $field
+- Field $field
+- DatabaseQuerySelect $query
 
-@param DatabaseQuerySelect $query
+## Return value
 
-@return DatabaseQuerySelect
+DatabaseQuerySelect
 
-@throws WireException
+## Throws
+
+- WireException

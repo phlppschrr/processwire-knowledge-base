@@ -1,11 +1,17 @@
-# WireDatabaseBackup::unlink()
+# $wireDatabaseBackup->unlink($file): bool
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Unlink file using PW if available or PHP if not
 
-@param string $file
+## Arguments
 
-@return bool
+- string $file
 
-@throws WireException
+## Return value
+
+bool
+
+## Throws
+
+- WireException

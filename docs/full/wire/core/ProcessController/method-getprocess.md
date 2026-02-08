@@ -1,7 +1,9 @@
-# ProcessController::getProcess()
+# $processController->getProcess(): Process
 
 Source: `wire/core/ProcessController.php`
 
 Determine and return the Process to execute
 
-@return Process
+## Return value
+
+Process

@@ -1,11 +1,14 @@
-# SelectableOptionManager::updateOptions()
+# $selectableOptionManager->updateOptions(Field $field, $options): int
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Update options for field
 
-@param Field $field
+## Arguments
 
-@param array|SelectableOptionArray $options
+- Field $field
+- array|SelectableOptionArray $options
 
-@return int Number of options updated
+## Return value
+
+int Number of options updated

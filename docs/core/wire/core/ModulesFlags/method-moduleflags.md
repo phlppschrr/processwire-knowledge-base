@@ -1,4 +1,4 @@
-# ModulesFlags::moduleFlags()
+# $modulesFlags->moduleFlags($moduleID = null, $setValue = null): array|mixed|null
 
 Source: `wire/core/ModulesFlags.php`
 
@@ -8,8 +8,11 @@ Omit all arguments to get flags for all modules indexed by module ID.
 
 Returns null if given module ID not found.
 
-@param int $moduleID This method only accepts module ID
+## Arguments
 
-@param int $setValue Flag(s) to set
+- int $moduleID This method only accepts module ID
+- int $setValue Flag(s) to set
 
-@return array|mixed|null
+## Return value
+
+array|mixed|null

@@ -1,4 +1,4 @@
-# ProcessPageSearchLive::___getDefaultPageSearchFields()
+# $processPageSearchLive->___getDefaultPageSearchFields(): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -13,7 +13,10 @@ $wire->addHookAfter('ProcessPageSearchLive::getDefaultPageSearchFields', functio
 });
 ~~~~~
 
+## Return value
 
-@return array
+array
 
-@since 3.0.242
+## Meta
+
+- @since 3.0.242

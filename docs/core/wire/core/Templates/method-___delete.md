@@ -1,11 +1,17 @@
-# Templates::___delete()
+# $templates->___delete(Saveable $item): bool
 
 Source: `wire/core/Templates.php`
 
 Delete a Template
 
-@param Template|Saveable $item Template to delete
+## Arguments
 
-@return bool True on success, false on failure
+- Template|Saveable $item Template to delete
 
-@throws WireException Thrown when you attempt to delete a template in use, or a system template.
+## Return value
+
+bool True on success, false on failure
+
+## Throws
+
+- WireException Thrown when you attempt to delete a template in use, or a system template.

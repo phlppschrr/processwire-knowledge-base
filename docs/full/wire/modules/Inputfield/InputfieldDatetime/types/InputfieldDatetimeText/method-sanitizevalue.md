@@ -1,9 +1,13 @@
-# InputfieldDatetimeText::sanitizeValue()
+# $inputfieldDatetimeText->sanitizeValue($value): int|string
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText.php`
 
 Sanitize value
 
-@param int|string $value
+## Arguments
 
-@return int|string
+- int|string $value
+
+## Return value
+
+int|string

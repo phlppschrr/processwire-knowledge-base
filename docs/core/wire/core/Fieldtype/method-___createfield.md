@@ -1,4 +1,4 @@
-# Fieldtype::___createField()
+# $fieldtype->___createField(Field $field): bool
 
 Source: `wire/core/Fieldtype.php`
 
@@ -8,9 +8,14 @@ This method should execute the SQL query necessary to create $field->table
 It should throw a WireException if failure occurs.
 Most Fieldtype modules use this built-in implementation.
 
+## Arguments
 
-@param Field $field
+- Field $field
 
-@return bool
+## Return value
 
-@throws WireException
+bool
+
+## Throws
+
+- WireException

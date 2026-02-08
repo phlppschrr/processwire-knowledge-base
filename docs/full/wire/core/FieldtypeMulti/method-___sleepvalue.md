@@ -1,4 +1,4 @@
-# FieldtypeMulti::___sleepValue()
+# $fieldtypeMulti->___sleepValue(Page $page, Field $field, $value): array
 
 Source: `wire/core/FieldtypeMulti.php`
 
@@ -11,10 +11,12 @@ the table, so other fieldtypes may want to override this and return an array of 
 and any other fields that map to the table. i.e. $values[] = array('data' => $data, 'description' => $description), etc.
 See FieldtypePagefiles module class for an example of this.
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- WireArray $value
 
-@param WireArray $value
+## Return value
 
-@return array
+array

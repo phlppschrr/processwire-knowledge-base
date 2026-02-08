@@ -1,7 +1,9 @@
-# Pagefiles::__debugInfo()
+# $pagefiles->__debugInfo(): array
 
 Source: `wire/core/Pagefiles.php`
 
 Debug info
 
-@return array
+## Return value
+
+array

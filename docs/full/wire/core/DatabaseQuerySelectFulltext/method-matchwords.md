@@ -1,9 +1,13 @@
-# DatabaseQuerySelectFulltext::matchWords()
+# $databaseQuerySelectFulltext->matchWords($value)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Match contains words (full, any or partial)
 
-@param string $value
+## Arguments
 
-@since 3.0.160
+- string $value
+
+## Meta
+
+- @since 3.0.160

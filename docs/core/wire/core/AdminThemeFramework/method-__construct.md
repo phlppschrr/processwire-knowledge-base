@@ -1,4 +1,4 @@
-# AdminThemeFramework::__construct()
+# $adminThemeFramework->__construct()
 
 Source: `wire/core/AdminThemeFramework.php`
 

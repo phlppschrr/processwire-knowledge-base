@@ -1,9 +1,13 @@
-# PagesType::get()
+# $pagesType->get($selectorString): Page|NullPage|null
 
 Source: `wire/core/PagesType.php`
 
 Get the first match of your selector string
 
-@param string|int $selectorString
+## Arguments
 
-@return Page|NullPage|null
+- string|int $selectorString
+
+## Return value
+
+Page|NullPage|null

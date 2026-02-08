@@ -1,4 +1,4 @@
-# Pages::___moved()
+# $pages->___moved(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -6,5 +6,6 @@ Hook called when a page has been moved from one parent to another
 
 Note the previous parent is accessible in the `$page->parentPrevious` property.
 
+## Arguments
 
-@param Page $page Page that was moved.
+- Page $page Page that was moved.

@@ -1,10 +1,13 @@
-# WireDatabaseBackup::getDatabase()
+# $wireDatabaseBackup->getDatabase(): \PDO
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Get current database connection, initiating the connection if not yet active
 
+## Return value
 
-@return \PDO
+\PDO
 
-@throws \Exception
+## Throws
+
+- \Exception

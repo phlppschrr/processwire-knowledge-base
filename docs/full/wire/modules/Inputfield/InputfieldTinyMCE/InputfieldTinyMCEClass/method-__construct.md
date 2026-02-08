@@ -1,7 +1,9 @@
-# InputfieldTinyMCEClass::__construct()
+# $inputfieldTinyMCEClass->__construct(InputfieldTinyMCE $inputfield)
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEClass.php`
 
 Construct
 
-@param InputfieldTinyMCE $inputfield
+## Arguments
+
+- InputfieldTinyMCE $inputfield

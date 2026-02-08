@@ -1,13 +1,15 @@
-# WireUpload::saveUpload()
+# $wireUpload->saveUpload($tmp_name, $filename, $ajax = false): array|bool|string
 
 Source: `wire/core/WireUpload.php`
 
 Save the uploaded file
 
-@param string $tmp_name Temporary filename (full path and filename)
+## Arguments
 
-@param string $filename Actual filename (basename)
+- string $tmp_name Temporary filename (full path and filename)
+- string $filename Actual filename (basename)
+- bool $ajax Is this an AJAX upload?
 
-@param bool $ajax Is this an AJAX upload?
+## Return value
 
-@return array|bool|string Boolean false on fail, array of multiple filenames, or string of filename if maxFiles=1
+array|bool|string Boolean false on fail, array of multiple filenames, or string of filename if maxFiles=1

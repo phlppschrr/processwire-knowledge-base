@@ -1,4 +1,4 @@
-# Sanitizer::htmlClass()
+# $sanitizer->htmlClass($value): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -9,8 +9,14 @@ and instead focuses on the most commonly used ones. Characters allowed in HTML c
 attributes from this method include: `-_:@a-zA-Z0-9`. This method does not allow
 values that have no letters or digits.
 
-@param string $value
+## Arguments
 
-@return string
+- string $value
 
-@since 3.0.212
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.212

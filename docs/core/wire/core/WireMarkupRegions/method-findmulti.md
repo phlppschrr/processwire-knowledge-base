@@ -1,13 +1,15 @@
-# WireMarkupRegions::findMulti()
+# $wireMarkupRegions->findMulti($selector, $markup, array $options = array()): array
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Multi-selector version of find(), where $selector contains CSV
 
-@param string $selector
+## Arguments
 
-@param string $markup
+- string $selector
+- string $markup
+- array $options
 
-@param array $options
+## Return value
 
-@return array
+array

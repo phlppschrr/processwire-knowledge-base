@@ -1,7 +1,9 @@
-# PagesRawFinder::__construct()
+# $pagesRawFinder->__construct(Pages $pages)
 
 Source: `wire/core/PagesRaw.php`
 
 Construct
 
-@param Pages $pages
+## Arguments
+
+- Pages $pages

@@ -1,4 +1,4 @@
-# WireArray::findRandom()
+# $wireArray->findRandom($num): WireArray
 
 Source: `wire/core/WireArray.php`
 
@@ -11,9 +11,15 @@ Unlike `WireArray::getRandom()` this method always returns a WireArray (or deriv
 $randomItems = $items->findRandom(3);
 ~~~~~
 
+## Arguments
 
-@param int $num Number of items to return
+- int $num Number of items to return
 
-@return WireArray
+## Return value
 
-@see WireArray::getRandom(), WireArray::findRandomTimed()
+WireArray
+
+## See also
+
+- [WireArray::getRandom()](method-getrandom.md)
+- [WireArray::findRandomTimed()](method-findrandomtimed.md)

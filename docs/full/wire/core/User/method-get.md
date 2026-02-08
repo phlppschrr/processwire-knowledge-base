@@ -1,9 +1,13 @@
-# User::get()
+# $user->get($key): null|mixed
 
 Source: `wire/core/User.php`
 
 Get value
 
-@param string $key
+## Arguments
 
-@return null|mixed
+- string $key
+
+## Return value
+
+null|mixed

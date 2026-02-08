@@ -1,11 +1,14 @@
-# ProcessPageListRender::setOption()
+# $processPageListRender->setOption($key, $value): $this
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Set option
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return $this
+## Return value
+
+$this

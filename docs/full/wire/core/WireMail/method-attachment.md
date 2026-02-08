@@ -1,4 +1,4 @@
-# WireMail::attachment()
+# $wireMail->attachment($value, $filename = ''): $this
 
 Source: `wire/core/WireMail.php`
 
@@ -18,8 +18,11 @@ $m->send();
 - To remove the supplied attachments, specify NULL as the value.
 - Attachments may or may not be supported by 3rd party WireMail modules.
 
-@param string $value Full path and filename of file attachment
+## Arguments
 
-@param string $filename Optional different basename for file as it appears in the mail
+- string $value Full path and filename of file attachment
+- string $filename Optional different basename for file as it appears in the mail
 
-@return $this
+## Return value
+
+$this

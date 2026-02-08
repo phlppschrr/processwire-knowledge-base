@@ -1,11 +1,14 @@
-# FieldtypeFileConfiguration::getConfigAdvancedInputfields()
+# $fieldtypeFileConfiguration->getConfigAdvancedInputfields(Field $field, InputfieldWrapper $inputfields): InputfieldWrapper
 
 Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
 Fieldtype file field advanced configuration
 
-@param Field $field
+## Arguments
 
-@param InputfieldWrapper $inputfields
+- Field $field
+- InputfieldWrapper $inputfields
 
-@return InputfieldWrapper
+## Return value
+
+InputfieldWrapper

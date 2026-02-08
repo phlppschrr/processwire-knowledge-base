@@ -1,9 +1,13 @@
-# LanguageTranslator::loadTextdomain()
+# $languageTranslator->loadTextdomain($textdomain): $this
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Load translation group $textdomain into the current language translations
 
-@param string $textdomain
+## Arguments
 
-@return $this
+- string $textdomain
+
+## Return value
+
+$this

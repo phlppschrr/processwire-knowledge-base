@@ -1,11 +1,14 @@
-# ImageSizerEngineGD::imFlip()
+# $imageSizerEngineGD->imFlip($im, $vertical = false): resource
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
 Flip image (@horst)
 
-@param resource $im
+## Arguments
 
-@param bool $vertical (default = false)
+- resource $im
+- bool $vertical (default = false)
 
-@return resource
+## Return value
+
+resource

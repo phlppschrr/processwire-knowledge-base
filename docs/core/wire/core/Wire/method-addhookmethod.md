@@ -1,4 +1,4 @@
-# Wire::addHookMethod()
+# $wire->addHookMethod($method, $toObject, $toMethod = null, $options = array()): string
 
 Source: `wire/core/Wire.php`
 
@@ -38,25 +38,21 @@ if($page->myHasParent($parent)) {
 }
 ~~~~~
 
-@param string $method Name of method you want to add, must not collide with existing property or method names:
- - `Class::method` to add the method to all instances of Class.
- - `method` to just add to a single object instance.
- - Since 3.0.137 it may also be multiple methods to hook in CSV string or array.
+## Arguments
 
-@param object|null|callable $toObject Specify one of the following:
- - Object instance to call `$toMethod` from (like `$this`).
- - Inline function (closure) if providing implemention inline.
- - Procedural function name, if hook is implemented by a procedural function.
- - Null if you want to use the 3rd argument and don't need this argument.
+- string $method Name of method you want to add, must not collide with existing property or method names: - `Class::method` to add the method to all instances of Class. - `method` to just add to a single object instance. - Since 3.0.137 it may also be multiple methods to hook in CSV string or array.
+- object|null|callable $toObject Specify one of the following: - Object instance to call `$toMethod` from (like `$this`). - Inline function (closure) if providing implemention inline. - Procedural function name, if hook is implemented by a procedural function. - Null if you want to use the 3rd argument and don't need this argument.
+- string|array $toMethod Method from $toObject, or function name to call on a hook event. This argument can be sustituted as the 2nd argument when the 2nd argument isn’t needed, or it can be the $options argument.
+- array $options Options typically aren't used in this context, but see Wire::addHookBefore() $options if you'd like.
 
-@param string|array $toMethod Method from $toObject, or function name to call on a hook event.
-  This argument can be sustituted as the 2nd argument when the 2nd argument isn’t needed,
-  or it can be the $options argument.
+## Return value
 
-@param array $options Options typically aren't used in this context, but see Wire::addHookBefore() $options if you'd like.
+string A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
 
-@return string A special Hook ID (or CSV string of hook IDs) that should be retained if you need to remove the hook later.
+## See also
 
-@since 3.0.16 Added as an alias to addHook() for syntactic clarity, previous versions can use addHook() method with same arguments.
+- [https://processwire.com/docs/modules/hooks/](https://processwire.com/docs/modules/hooks/)
 
-@see https://processwire.com/docs/modules/hooks/
+## Meta
+
+- @since 3.0.16 Added as an alias to addHook() for syntactic clarity, previous versions can use addHook() method with same arguments.

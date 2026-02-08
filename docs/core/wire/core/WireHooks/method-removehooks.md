@@ -1,13 +1,18 @@
-# WireHooks::removeHooks()
+# $wireHooks->removeHooks(Wire $object, $hookIDs): Wire
 
 Source: `wire/core/WireHooks.php`
 
 Given a hook ID or multiple hook IDs (in array or CSV string) remove the hooks
 
-@param Wire $object
+## Arguments
 
-@param array|string $hookIDs
+- Wire $object
+- array|string $hookIDs
 
-@return Wire
+## Return value
 
-@since 3.0.137
+Wire
+
+## Meta
+
+- @since 3.0.137

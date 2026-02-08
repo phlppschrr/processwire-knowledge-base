@@ -1,4 +1,4 @@
-# PagesPathFinder::get()
+# $pagesPathFinder->get($path, array $options = array()): array
 
 Source: `wire/core/PagesPathFinder.php`
 
@@ -72,16 +72,15 @@ $array = $pages->pathFinder()->get('/en/foo/bar/page3');
 ]
 ~~~~~
 
-@param string $path Page path optionally including URL segments, language prefix, pagination number
+## Arguments
 
-@param array $options
- - `useLanguages` (bool): Allow use of multi-language page names? (default=true)
-    Requires LanguageSupportPageNames module installed.
- - `useHistory` (bool): Allow use historical path names? (default=true)
-    Requires PagePathHistory module installed.
- - `verbose` (bool): Return verbose array of information? (default=true)
-    If false, some optional information will be omitted in return value.
+- string $path Page path optionally including URL segments, language prefix, pagination number
+- array $options - `useLanguages` (bool): Allow use of multi-language page names? (default=true) Requires LanguageSupportPageNames module installed. - `useHistory` (bool): Allow use historical path names? (default=true) Requires PagePathHistory module installed. - `verbose` (bool): Return verbose array of information? (default=true) If false, some optional information will be omitted in return value.
 
-@return array
+## Return value
 
-@see PagesPathFinder::getPage()
+array
+
+## See also
+
+- [PagesPathFinder::getPage()](method-getpage.md)

@@ -1,7 +1,12 @@
-# InputfieldDatetimeHtml::processInput()
+# $inputfieldDatetimeHtml->processInput(WireInputData $input): string
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeHtml.php`
 
-@param WireInputData $input
 
-@return string
+## Arguments
+
+- WireInputData $input
+
+## Return value
+
+string

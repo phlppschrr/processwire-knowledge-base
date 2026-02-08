@@ -1,9 +1,13 @@
-# ModulesClass::moduleName()
+# $modulesClass->moduleName($id): string
 
 Source: `wire/core/ModulesClass.php`
 
 Convert given value to module name
 
-@param int|string|Module $id
+## Arguments
 
-@return string Returns blank string if not found
+- int|string|Module $id
+
+## Return value
+
+string Returns blank string if not found

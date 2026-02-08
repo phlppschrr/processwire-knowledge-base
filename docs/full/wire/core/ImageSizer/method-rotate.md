@@ -1,9 +1,13 @@
-# ImageSizer::rotate()
+# $imageSizer->rotate($degrees): bool
 
 Source: `wire/core/ImageSizer.php`
 
 Rotate image by given degrees
 
-@param int $degrees
+## Arguments
 
-@return bool
+- int $degrees
+
+## Return value
+
+bool

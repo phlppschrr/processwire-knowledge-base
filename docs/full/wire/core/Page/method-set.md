@@ -1,4 +1,4 @@
-# Page::set()
+# $page->set($key, $value): Page|WireData
 
 Source: `wire/core/Page.php`
 
@@ -14,13 +14,19 @@ $page->set('title', 'About Us');
 $page->title = 'About Us';
 ~~~~~
 
+## Arguments
 
-@param string $key Name of property to set
+- string $key Name of property to set
+- mixed $value Value to set
 
-@param mixed $value Value to set
+## Return value
 
-@return Page|WireData Reference to this Page
+Page|WireData Reference to this Page
 
-@see __set
+## Throws
 
-@throws WireException
+- WireException
+
+## See also
+
+- __set

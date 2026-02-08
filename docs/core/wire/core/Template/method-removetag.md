@@ -1,12 +1,17 @@
-# Template::removeTag()
+# $template->removeTag($tag): self
 
 Source: `wire/core/Template.php`
 
 Remove tag
 
+## Arguments
 
-@param string $tag
+- string $tag
 
-@return self
+## Return value
 
-@since 3.0.176
+self
+
+## Meta
+
+- @since 3.0.176

@@ -1,11 +1,14 @@
-# MarkupFieldtype::isLinkablePageProperty()
+# $markupFieldtype->isLinkablePageProperty(Page $page, $property): bool
 
 Source: `wire/core/MarkupFieldtype.php`
 
 Is the given page property/field name one that should be linked to the source page in output?
 
-@param Page $page
+## Arguments
 
-@param $property
+- Page $page
+- $property
 
-@return bool
+## Return value
+
+bool

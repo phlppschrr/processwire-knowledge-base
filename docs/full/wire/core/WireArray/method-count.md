@@ -1,4 +1,4 @@
-# WireArray::count()
+# $wireArray->count(): int
 
 Source: `wire/core/WireArray.php`
 
@@ -12,5 +12,6 @@ $qty = $items->count();
 $qty = count($items);
 ~~~~~
 
+## Return value
 
-@return int
+int

@@ -1,7 +1,9 @@
-# WireArray::__toString()
+# $wireArray->__toString(): string
 
 Source: `wire/core/WireArray.php`
 
 Returns a string representation of this WireArray.
 
-@return string
+## Return value
+
+string

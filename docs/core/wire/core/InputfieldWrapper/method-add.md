@@ -1,4 +1,4 @@
-# InputfieldWrapper::add()
+# $inputfieldWrapper->add($item): Inputfield|InputfieldWrapper|$this
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -7,9 +7,14 @@ Add an Inputfield item as a child (also accepts array definition)
 Since 3.0.110: If given a string value, it is assumed to be an Inputfield type that you
 want to add. In that case, it will create the Inputfield and return it instead of $this.
 
+## Arguments
 
-@param Inputfield|array|string $item
+- Inputfield|array|string $item
 
-@return Inputfield|InputfieldWrapper|$this
+## Return value
 
-@see InputfieldWrapper::import()
+Inputfield|InputfieldWrapper|$this
+
+## See also
+
+- [InputfieldWrapper::import()](method-import.md)

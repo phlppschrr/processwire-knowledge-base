@@ -1,11 +1,14 @@
-# WireTempDir::rmdir()
+# $wireTempDir->rmdir($dir, $recursive = false): bool
 
 Source: `wire/core/WireTempDir.php`
 
 Remove a temporary directory
 
-@param string $dir
+## Arguments
 
-@param bool $recursive
+- string $dir
+- bool $recursive
 
-@return bool
+## Return value
+
+bool

@@ -1,4 +1,4 @@
-# Config::jsConfig()
+# $config->jsConfig($key = null, $value = null): mixed|null|array|self
 
 Source: `wire/core/Config.php`
 
@@ -38,11 +38,15 @@ console.log(mySettings.foo);
 console.log(mySettings.bar);
 ~~~~~
 
+## Arguments
 
-@param string $key Name of property to get or set or omit to return all data
+- string $key Name of property to get or set or omit to return all data
+- mixed|null $value Specify value to set or omit (null) to get
 
-@param mixed|null $value Specify value to set or omit (null) to get
+## Return value
 
-@return mixed|null|array|self Returns null if $key not found, value when getting, self when setting, or array when getting all
+mixed|null|array|self Returns null if $key not found, value when getting, self when setting, or array when getting all
 
-@since 3.0.173
+## Meta
+
+- @since 3.0.173

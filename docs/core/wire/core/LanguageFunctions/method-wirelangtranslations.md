@@ -1,4 +1,4 @@
-# LanguageFunctions::wireLangTranslations()
+# $languageFunctions->wireLangTranslations(array $values = array()): array
 
 Source: `wire/core/LanguageFunctions.php`
 
@@ -32,9 +32,14 @@ wireLangTranslations([
 ]);
 ~~~~~
 
+## Arguments
 
-@param array $values
+- array $values
 
-@return array
+## Return value
 
-@since 3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, array $values);
+array
+
+## Meta
+
+- @since 3.0.154 Versions 3.0.125 to 3.0.153 can use __(true, array $values);

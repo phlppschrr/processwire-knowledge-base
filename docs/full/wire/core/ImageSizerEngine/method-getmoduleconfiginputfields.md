@@ -1,7 +1,9 @@
-# ImageSizerEngine::getModuleConfigInputfields()
+# $imageSizerEngine->getModuleConfigInputfields(InputfieldWrapper $inputfields)
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Module configuration
 
-@param InputfieldWrapper $inputfields
+## Arguments
+
+- InputfieldWrapper $inputfields

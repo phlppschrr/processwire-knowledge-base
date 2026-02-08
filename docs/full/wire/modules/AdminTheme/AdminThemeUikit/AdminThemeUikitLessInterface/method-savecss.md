@@ -1,9 +1,13 @@
-# AdminThemeUikitLessInterface::saveCss()
+# $adminThemeUikitLessInterface->saveCss($file, array $options = array()): bool
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/interfaces.php`
 
-@param string $file
 
-@param array $options
+## Arguments
 
-@return bool
+- string $file
+- array $options
+
+## Return value
+
+bool

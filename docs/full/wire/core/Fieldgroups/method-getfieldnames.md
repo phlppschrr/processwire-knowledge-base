@@ -1,4 +1,4 @@
-# Fieldgroups::getFieldNames()
+# $fieldgroups->getFieldNames($fieldgroup): array
 
 Source: `wire/core/Fieldgroups.php`
 
@@ -6,8 +6,14 @@ Get all field names used by given fieldgroup
 
 Use this when you want to identify the field names (or IDs) without loading the fieldgroup or fields in it.
 
-@param string|int|Fieldgroup $fieldgroup Fieldgroup name, ID or object
+## Arguments
 
-@return array Returned array of field names indexed by field ID
+- string|int|Fieldgroup $fieldgroup Fieldgroup name, ID or object
 
-@since 3.0.194
+## Return value
+
+array Returned array of field names indexed by field ID
+
+## Meta
+
+- @since 3.0.194

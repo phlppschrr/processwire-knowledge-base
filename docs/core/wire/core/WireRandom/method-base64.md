@@ -1,4 +1,4 @@
-# WireRandom::base64()
+# $wireRandom->base64($requiredLength = 22, $options = array()): string|array
 
 Source: `wire/core/WireRandom.php`
 
@@ -8,11 +8,11 @@ This is largely taken from Anthony Ferrara's password_compat library:
 https://github.com/ircmaxell/password_compat/blob/master/lib/password.php
 Modified for camelCase, variable names, and function-based context by Ryan.
 
-@param int $requiredLength Length of string you want returned (default=22)
+## Arguments
 
-@param array|bool $options Specify array of options or boolean to specify only `fast` option.
- - `fast` (bool): Use fastest, not cryptographically secure method (default=false).
- - `test` (bool|array): Return tests in a string (bool true), or specify array(true) to return tests array (default=false).
-   Note that if the test option is used, then the fast option is disabled.
+- int $requiredLength Length of string you want returned (default=22)
+- array|bool $options Specify array of options or boolean to specify only `fast` option. - `fast` (bool): Use fastest, not cryptographically secure method (default=false). - `test` (bool|array): Return tests in a string (bool true), or specify array(true) to return tests array (default=false). Note that if the test option is used, then the fast option is disabled.
 
-@return string|array Returns only array if you specify array for $test argument, otherwise returns string
+## Return value
+
+string|array Returns only array if you specify array for $test argument, otherwise returns string

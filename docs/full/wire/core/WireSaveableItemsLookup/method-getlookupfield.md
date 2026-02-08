@@ -1,4 +1,4 @@
-# WireSaveableItemsLookup::getLookupField()
+# $wireSaveableItemsLookup->getLookupField()
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 

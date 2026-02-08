@@ -1,12 +1,17 @@
-# Inputfield::setParent()
+# $inputfield->setParent(InputfieldWrapper $parent): $this
 
 Source: `wire/core/Inputfield.php`
 
 Set the parent (InputfieldWrapper) of this Inputfield.
 
+## Arguments
 
-@param InputfieldWrapper $parent
+- InputfieldWrapper $parent
 
-@return $this
+## Return value
 
-@see Inputfield::getParent()
+$this
+
+## See also
+
+- [Inputfield::getParent()](method-getparent.md)

@@ -1,7 +1,12 @@
-# WireDatabasePDO::__get()
+# $wireDatabasePDO->__get($name): mixed|null|\PDO
 
 Source: `wire/core/WireDatabasePDO.php`
 
-@param string $name
 
-@return mixed|null|\PDO
+## Arguments
+
+- string $name
+
+## Return value
+
+mixed|null|\PDO

@@ -1,9 +1,13 @@
-# WireHttp::getError()
+# $wireHttp->getError($getArray = false): string|array
 
 Source: `wire/core/WireHttp.php`
 
 Get a string of the last error message
 
-@param bool $getArray Specify true to receive an array of error messages, or omit for a string.
+## Arguments
 
-@return string|array
+- bool $getArray Specify true to receive an array of error messages, or omit for a string.
+
+## Return value
+
+string|array

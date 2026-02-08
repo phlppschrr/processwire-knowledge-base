@@ -1,9 +1,10 @@
-# InputfieldPageListSelectCommon::pageListReady()
+# $inputfieldPageListSelectCommon->pageListReady($name, $labelFieldName)
 
 Source: `wire/modules/Inputfield/InputfieldPageListSelect/InputfieldPageListSelectCommon.php`
 
 Render ready
 
-@param string $name
+## Arguments
 
-@param string $labelFieldName
+- string $name
+- string $labelFieldName

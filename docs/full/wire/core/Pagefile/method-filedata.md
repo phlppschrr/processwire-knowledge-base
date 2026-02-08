@@ -1,4 +1,4 @@
-# Pagefile::filedata()
+# $pagefile->filedata($key = '', $value = null): Pagefile|Pageimage|array|string|int|float|bool|null
 
 Source: `wire/core/Pagefile.php`
 
@@ -13,10 +13,11 @@ Filedata is any additional data that you want to store with the file’s databas
 - To unset, specify boolean false (or null) for $key, and the name of the property to unset as $value.
 - To unset, you can also get all values, unset it from the retuned array, and set the array back.
 
+## Arguments
 
-@param string|array|false|null $key Specify array to set all file data, or key (string) to set or get a property,
- Or specify boolean false to remove key specified by $value argument.
+- string|array|false|null $key Specify array to set all file data, or key (string) to set or get a property, Or specify boolean false to remove key specified by $value argument.
+- null|string|array|int|float $value Specify a value to set for given property
 
-@param null|string|array|int|float $value Specify a value to set for given property
+## Return value
 
-@return Pagefile|Pageimage|array|string|int|float|bool|null
+Pagefile|Pageimage|array|string|int|float|bool|null

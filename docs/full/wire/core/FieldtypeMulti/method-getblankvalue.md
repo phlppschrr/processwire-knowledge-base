@@ -1,11 +1,14 @@
-# FieldtypeMulti::getBlankValue()
+# $fieldtypeMulti->getBlankValue(Page $page, Field $field): WireArray
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Per Fieldtype interface, return a blank value of this Fieldtype
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
 
-@return WireArray
+## Return value
+
+WireArray

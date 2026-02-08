@@ -1,13 +1,15 @@
-# WireShutdown::sendFatalEmail()
+# $wireShutdown->sendFatalEmail($url, $userName, $message): bool
 
 Source: `wire/core/WireShutdown.php`
 
 Send fatal error email
 
-@param string $url
+## Arguments
 
-@param string $userName
+- string $url
+- string $userName
+- string $message
 
-@param string $message
+## Return value
 
-@return bool
+bool

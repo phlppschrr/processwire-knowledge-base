@@ -1,9 +1,13 @@
-# NotificationArray::isValidItem()
+# $notificationArray->isValidItem($item): bool
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Template method from WireArray
 
-@param Notification $item
+## Arguments
 
-@return bool
+- Notification $item
+
+## Return value
+
+bool

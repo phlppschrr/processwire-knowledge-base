@@ -1,4 +1,4 @@
-# Template::childTemplates()
+# $template->childTemplates($setValue = null): TemplatesArray|Template[]
 
 Source: `wire/core/Template.php`
 
@@ -8,9 +8,14 @@ Get or set child templates (templates allowed for children of pages using this t
 - To allow any template to be used for children, specify a blank array.
 - To disallow any children (other than what’s already in use) set the `$template->noChildren` property to 1.
 
+## Arguments
 
-@param array|TemplatesArray|null $setValue Specify only when setting, an iterable value containing Template objects, IDs or names
+- array|TemplatesArray|null $setValue Specify only when setting, an iterable value containing Template objects, IDs or names
 
-@return TemplatesArray|Template[]
+## Return value
 
-@since 3.0.153
+TemplatesArray|Template[]
+
+## Meta
+
+- @since 3.0.153

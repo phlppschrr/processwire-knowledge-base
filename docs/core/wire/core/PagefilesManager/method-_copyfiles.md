@@ -1,13 +1,15 @@
-# PagefilesManager::_copyFiles()
+# $pagefilesManager->_copyFiles($fromPath, $toPath, $rename = false): int
 
 Source: `wire/core/PagefilesManager.php`
 
 Recursively copy all files in $fromPath to $toPath, for internal use
 
-@param string $fromPath Path to copy from
+## Arguments
 
-@param string $toPath Path to copy to
+- string $fromPath Path to copy from
+- string $toPath Path to copy to
+- bool $rename Rename files rather than copy? (makes this perform like a move rather than copy)
 
-@param bool $rename Rename files rather than copy? (makes this perform like a move rather than copy)
+## Return value
 
-@return int Number of files copied
+int Number of files copied

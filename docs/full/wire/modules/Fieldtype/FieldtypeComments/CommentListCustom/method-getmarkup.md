@@ -1,9 +1,13 @@
-# CommentListCustom::getMarkup()
+# $commentListCustom->getMarkup($property = ''): array|mixed|null
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
 Get markup property or all markup
 
-@param string $property Specify property or omit to get all
+## Arguments
 
-@return array|mixed|null
+- string $property Specify property or omit to get all
+
+## Return value
+
+array|mixed|null

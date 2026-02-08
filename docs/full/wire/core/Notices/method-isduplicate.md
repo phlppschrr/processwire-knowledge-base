@@ -1,9 +1,13 @@
-# Notices::isDuplicate()
+# $notices->isDuplicate(Notice $item): bool|Notice
 
 Source: `wire/core/Notices.php`
 
 Is the given Notice a duplicate of one already here?
 
-@param Notice $item
+## Arguments
 
-@return bool|Notice Returns Notice that it duplicate sor false if not a duplicate
+- Notice $item
+
+## Return value
+
+bool|Notice Returns Notice that it duplicate sor false if not a duplicate

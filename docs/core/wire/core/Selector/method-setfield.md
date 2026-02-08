@@ -1,11 +1,17 @@
-# Selector::setField()
+# $selector->setField($field): self
 
 Source: `wire/core/Selector.php`
 
 Set field or fields
 
-@param string|array $field
+## Arguments
 
-@return self
+- string|array $field
 
-@since 3.0.160
+## Return value
+
+self
+
+## Meta
+
+- @since 3.0.160

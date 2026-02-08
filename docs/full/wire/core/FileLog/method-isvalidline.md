@@ -1,13 +1,15 @@
-# FileLog::isValidLine()
+# $fileLog->isValidLine($line, array $options, &$stopNow): bool
 
 Source: `wire/core/FileLog.php`
 
 Returns whether the given log line is valid to be considered a log entry
 
-@param $line
+## Arguments
 
-@param array $options
+- $line
+- array $options
+- bool $stopNow Populates this with true when it can determine no more lines are necessary.
 
-@param bool $stopNow Populates this with true when it can determine no more lines are necessary.
+## Return value
 
-@return bool Returns boolean true if valid, false if not.
+bool Returns boolean true if valid, false if not.

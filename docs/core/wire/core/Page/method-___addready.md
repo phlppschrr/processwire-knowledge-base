@@ -1,4 +1,4 @@
-# Page::___addReady()
+# $page->___addReady()
 
 Source: `wire/core/Page.php`
 
@@ -11,5 +11,6 @@ $wire->addHook('Page::addReady', function($e) {
 });
 ~~~~~
 
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

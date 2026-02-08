@@ -1,10 +1,13 @@
-# Users::___saveReady()
+# $users->___saveReady(Page $page): array
 
 Source: `wire/core/Users.php`
 
 Hook called just before a user is saved
 
+## Arguments
 
-@param Page $page The user about to be saved
+- Page $page The user about to be saved
 
-@return array Optional extra data to add to pages save query.
+## Return value
+
+array Optional extra data to add to pages save query.

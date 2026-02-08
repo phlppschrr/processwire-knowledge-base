@@ -1,4 +1,4 @@
-# CommentArray::getLimit()
+# $commentArray->getLimit(): int
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
@@ -8,4 +8,6 @@ If no limit set, then return number of comments currently here.
 
 Used for pagination.
 
-@return int
+## Return value
+
+int

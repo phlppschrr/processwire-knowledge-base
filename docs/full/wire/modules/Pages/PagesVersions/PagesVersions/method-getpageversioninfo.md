@@ -1,4 +1,4 @@
-# PagesVersions::getPageVersionInfo()
+# $pagesVersions->getPageVersionInfo(Page $page, $version): PageVersionInfo|null
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -16,9 +16,11 @@ if($info) {
 }
 ~~~~~
 
+## Arguments
 
-@param Page $page
+- Page $page
+- int $version
 
-@param int $version
+## Return value
 
-@return PageVersionInfo|null
+PageVersionInfo|null

@@ -1,9 +1,13 @@
-# Database::escapeLike()
+# $database->escapeLike($like): string
 
 Source: `wire/core/Database.php`
 
 Escape a string value, plus escape characters necessary for a MySQL 'LIKE' phrase
 
-@param string $like
+## Arguments
 
-@return string
+- string $like
+
+## Return value
+
+string

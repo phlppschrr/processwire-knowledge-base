@@ -1,7 +1,9 @@
-# SelectableOption::getValue()
+# $selectableOption->getValue(): string
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOption.php`
 
 Get the language-aware value
 
-@return string
+## Return value
+
+string

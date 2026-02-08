@@ -1,7 +1,9 @@
-# FieldsetPage::getForField()
+# $fieldsetPage->getForField(): Field
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldsetPage.php`
 
 Return the field that this repeater item belongs to
 
-@return Field
+## Return value
+
+Field

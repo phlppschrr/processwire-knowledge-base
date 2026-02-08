@@ -1,4 +1,4 @@
-# WireArray::insertBefore()
+# $wireArray->insertBefore($item, $existingItem): $this
 
 Source: `wire/core/WireArray.php`
 
@@ -8,9 +8,11 @@ Insert an item before an existing item
 $items->insertBefore($newItem, $existingItem);
 ~~~~~
 
+## Arguments
 
-@param Wire|string|int $item Item you want to insert.
+- Wire|string|int $item Item you want to insert.
+- Wire|string|int $existingItem Item already present that you want to insert before.
 
-@param Wire|string|int $existingItem Item already present that you want to insert before.
+## Return value
 
-@return $this
+$this

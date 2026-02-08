@@ -1,4 +1,4 @@
-# Selectors::___getCustomVariableValue()
+# $selectors->___getCustomVariableValue($name): null|string
 
 Source: `wire/core/Selectors.php`
 
@@ -10,8 +10,14 @@ variables typically wouldn't be available.
 
 If hooking this method, /site/ready.php is recommended.
 
-@param string $name
+## Arguments
 
-@return null|string
+- string $name
 
-@since 3.0.255
+## Return value
+
+null|string
+
+## Meta
+
+- @since 3.0.255

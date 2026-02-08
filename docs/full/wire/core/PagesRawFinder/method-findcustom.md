@@ -1,4 +1,4 @@
-# PagesRawFinder::findCustom()
+# $pagesRawFinder->findCustom()
 
 Source: `wire/core/PagesRaw.php`
 

@@ -1,9 +1,13 @@
-# Pagefiles::__get()
+# $pagefiles->__get($name): bool|mixed|Page|Wire|WireData
 
 Source: `wire/core/Pagefiles.php`
 
 Get for direct access to properties
 
-@param int|string $name
+## Arguments
 
-@return bool|mixed|Page|Wire|WireData
+- int|string $name
+
+## Return value
+
+bool|mixed|Page|Wire|WireData

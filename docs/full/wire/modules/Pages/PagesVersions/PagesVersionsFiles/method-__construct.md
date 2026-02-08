@@ -1,4 +1,4 @@
-# PagesVersionsFiles::__construct()
+# $pagesVersionsFiles->__construct(PagesVersions $pagesVersions)
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 

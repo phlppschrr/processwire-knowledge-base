@@ -1,13 +1,15 @@
-# CommentStars::renderCount()
+# $commentStars->renderCount($count, $stars = 0.0, $schema = ''): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentStars.php`
 
 Render a count of ratings
 
-@param int $count
+## Arguments
 
-@param float|int $stars
+- int $count
+- float|int $stars
+- string $schema May be "rdfa" or "microdata" or blank (default) to omit.
 
-@param string $schema May be "rdfa" or "microdata" or blank (default) to omit.
+## Return value
 
-@return string
+string

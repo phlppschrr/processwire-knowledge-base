@@ -1,11 +1,14 @@
-# WireRandom::randomBufferToSalt()
+# $wireRandom->randomBufferToSalt($buffer, $requiredLength): string
 
 Source: `wire/core/WireRandom.php`
 
 Given random buffer string of bytes return base64 encoded salt
 
-@param string $buffer
+## Arguments
 
-@param int $requiredLength
+- string $buffer
+- int $requiredLength
 
-@return string
+## Return value
+
+string

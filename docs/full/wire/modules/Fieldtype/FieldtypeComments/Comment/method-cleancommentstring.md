@@ -1,9 +1,13 @@
-# Comment::cleanCommentString()
+# $comment->cleanCommentString($str): string
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Clean a comment string by issuing several filters
 
-@param string $str
+## Arguments
 
-@return string
+- string $str
+
+## Return value
+
+string

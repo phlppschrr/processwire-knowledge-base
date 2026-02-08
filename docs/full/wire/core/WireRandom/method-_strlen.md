@@ -1,9 +1,13 @@
-# WireRandom::_strlen()
+# $wireRandom->_strlen($s): int
 
 Source: `wire/core/WireRandom.php`
 
 Return string length, using mb_strlen() when available, or strlen() when not
 
-@param string $s
+## Arguments
 
-@return int
+- string $s
+
+## Return value
+
+int

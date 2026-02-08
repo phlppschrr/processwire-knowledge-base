@@ -1,11 +1,17 @@
-# WireTempDir::get()
+# $wireTempDir->get($id = ''): string
 
 Source: `wire/core/WireTempDir.php`
 
 Returns a temporary directory (path)
 
-@param string $id Optional identifier to use (default=autogenerate)
+## Arguments
 
-@return string Returns path
+- string $id Optional identifier to use (default=autogenerate)
 
-@throws WireException If can't create temporary dir
+## Return value
+
+string Returns path
+
+## Throws
+
+- WireException If can't create temporary dir

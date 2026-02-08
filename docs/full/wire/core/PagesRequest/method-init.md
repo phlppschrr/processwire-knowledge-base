@@ -1,4 +1,4 @@
-# PagesRequest::init()
+# $pagesRequest->init()
 
 Source: `wire/core/PagesRequest.php`
 

@@ -1,4 +1,4 @@
-# WireHttp::getResponseHeaderValues()
+# $wireHttp->getResponseHeaderValues($key = '', $forceArrays = false): array|string|null
 
 Source: `wire/core/WireHttp.php`
 
@@ -11,9 +11,11 @@ an array.
 This method always returns an associative array of strings and arrays, unless you specify the
 `$key` option in which case it can return an array, string, or NULL if the header is not present.
 
+## Arguments
 
-@param string $key Optional header name you want to get (if you only need a specific header)
+- string $key Optional header name you want to get (if you only need a specific header)
+- bool $forceArrays If even single-value headers should be arrays, specify true (default=false).
 
-@param bool $forceArrays If even single-value headers should be arrays, specify true (default=false).
+## Return value
 
-@return array|string|null
+array|string|null

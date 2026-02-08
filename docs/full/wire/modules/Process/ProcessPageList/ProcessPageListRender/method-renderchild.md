@@ -1,9 +1,13 @@
-# ProcessPageListRender::renderChild()
+# $processPageListRender->renderChild(Page $page): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Render child item in page list
 
-@param Page $page
+## Arguments
 
-@return array
+- Page $page
+
+## Return value
+
+array

@@ -1,5 +1,8 @@
-# PagefileExtra::__toString()
+# $pagefileExtra->__toString(): string
 
 Source: `wire/core/PagefileExtra.php`
 
-@return string
+
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# Modules::getInstallable()
+# $modules->getInstallable()
 
 Source: `wire/core/Modules.php`
 

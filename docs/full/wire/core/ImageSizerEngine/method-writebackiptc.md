@@ -1,4 +1,4 @@
-# ImageSizerEngine::writeBackIPTC()
+# $imageSizerEngine->writeBackIPTC($filename, $includeCustomTags = false): bool|null
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -7,8 +7,11 @@ Default IPTC Handling
 If we've retrieved IPTC-Metadata from sourcefile, we write it into the variation here but we omit
 custom tags for internal use (@horst)
 
-@param string $filename the file we want write the IPTC data to
+## Arguments
 
-@param bool $includeCustomTags default is FALSE
+- string $filename the file we want write the IPTC data to
+- bool $includeCustomTags default is FALSE
 
-@return bool|null
+## Return value
+
+bool|null

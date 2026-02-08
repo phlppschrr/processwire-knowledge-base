@@ -1,9 +1,13 @@
-# WirePaginatable::setLimit()
+# $wirePaginatable->setLimit($numLimit): $this
 
 Source: `wire/core/Interfaces.php`
 
 Set the limit that was used in pagination.
 
-@param int $numLimit
+## Arguments
 
-@return $this
+- int $numLimit
+
+## Return value
+
+$this

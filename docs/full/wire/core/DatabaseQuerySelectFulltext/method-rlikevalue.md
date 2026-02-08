@@ -1,11 +1,14 @@
-# DatabaseQuerySelectFulltext::rlikeValue()
+# $databaseQuerySelectFulltext->rlikeValue($value, array $options = array()): string
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Prepare a word or phrase for use in an RLIKE statement
 
-@param string $value
+## Arguments
 
-@param array $options
+- string $value
+- array $options
 
-@return string
+## Return value
+
+string

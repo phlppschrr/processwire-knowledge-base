@@ -1,4 +1,4 @@
-# ProcessWire::__construct()
+# $processWire->__construct($config = null, $rootURL = '/')
 
 Source: `wire/core/ProcessWire.php`
 
@@ -21,14 +21,11 @@ $wire = new ProcessWire('/server/path/', '/url/');
 $wire = new ProcessWire('/server/path/', 'https://hostname/url/');
 ~~~~~
 
-@param Config|string|null $config May be any of the following:
- - A Config object as returned from ProcessWire::buildConfig().
- - A string path to PW installation.
- - You may optionally omit this argument if current dir is root of PW installation.
+## Arguments
 
-@param string $rootURL URL or scheme+host to installation.
- - This is only used if $config is omitted or a path string.
- - May also include scheme & hostname, i.e. "http://hostname.com/url" to force use of scheme+host.
- - If omitted, it is determined automatically.
+- Config|string|null $config May be any of the following: - A Config object as returned from ProcessWire::buildConfig(). - A string path to PW installation. - You may optionally omit this argument if current dir is root of PW installation.
+- string $rootURL URL or scheme+host to installation. - This is only used if $config is omitted or a path string. - May also include scheme & hostname, i.e. "http://hostname.com/url" to force use of scheme+host. - If omitted, it is determined automatically.
 
-@throws WireException if given invalid arguments
+## Throws
+
+- WireException if given invalid arguments

@@ -1,4 +1,4 @@
-# WireDatabasePDO::closeConnection()
+# $wireDatabasePDO->closeConnection()
 
 Source: `wire/core/WireDatabasePDO.php`
 

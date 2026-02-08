@@ -1,13 +1,18 @@
-# MarkupQA::getPagePathFromId()
+# $markupQA->getPagePathFromId($pageID, $language = null): string
 
 Source: `wire/core/MarkupQA.php`
 
 Given page ID return the path to it
 
-@param int $pageID
+## Arguments
 
-@param Language|null $language
+- int $pageID
+- Language|null $language
 
-@return string
+## Return value
 
-@since 3.0.231
+string
+
+## Meta
+
+- @since 3.0.231

@@ -1,9 +1,10 @@
-# RepeaterPageArray::__construct()
+# $repeaterPageArray->__construct(Page $parent, Field $field)
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
 Construct
 
-@param Page $parent
+## Arguments
 
-@param Field $field
+- Page $parent
+- Field $field

@@ -1,12 +1,17 @@
-# Permissions::___save()
+# $permissions->___save(Page $page): bool
 
 Source: `wire/core/Permissions.php`
 
 Save a Permission
 
+## Arguments
 
-@param Permission|Page $page
+- Permission|Page $page
 
-@return bool True on success, false on failure
+## Return value
 
-@throws WireException
+bool True on success, false on failure
+
+## Throws
+
+- WireException

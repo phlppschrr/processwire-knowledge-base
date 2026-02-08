@@ -1,7 +1,9 @@
-# ListerBookmarks::getPublicBookmarks()
+# $listerBookmarks->getPublicBookmarks(): array
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Get public bookmarks (from module config)
 
-@return array
+## Return value
+
+array

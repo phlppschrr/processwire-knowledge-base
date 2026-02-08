@@ -1,9 +1,13 @@
-# DatabaseQuerySelectFulltext::isShortword()
+# $databaseQuerySelectFulltext->isShortword($word): bool
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Is word too short for fulltext index?
 
-@param string $word
+## Arguments
 
-@return bool
+- string $word
+
+## Return value
+
+bool

@@ -1,10 +1,13 @@
-# WireMail::encodeSubject()
+# $wireMail->encodeSubject($subject): string
 
 Source: `wire/core/WireMail.php`
 
 Encode a subject, use mbstring if available
 
+## Arguments
 
-@param string $subject
+- string $subject
 
-@return string
+## Return value
+
+string

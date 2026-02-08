@@ -1,4 +1,4 @@
-# InputfieldWrapper::getChildByName()
+# $inputfieldWrapper->getChildByName($name): Inputfield|InputfieldWrapper|null
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -10,9 +10,15 @@ This is the same as the `InputfieldWrapper::get()` method except that it can
 only return Inputfield or null, and has no crossover with other settings,
 properties or API variables.
 
+## Arguments
 
-@param string $name Name of Inputfield
+- string $name Name of Inputfield
 
-@return Inputfield|InputfieldWrapper|null
+## Return value
 
-@see InputfieldWrapper::get(), InputfieldWrapper::children()
+Inputfield|InputfieldWrapper|null
+
+## See also
+
+- [InputfieldWrapper::get()](method-get.md)
+- [InputfieldWrapper::children()](method-children.md)

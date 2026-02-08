@@ -1,11 +1,14 @@
-# PagesVersionsFiles::pageVersion()
+# $pagesVersionsFiles->pageVersion(Page $page, $version): NullPage|Page
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Ensure that given page is given version, and return version page if it isn't already
 
-@param Page $page
+## Arguments
 
-@param int $version Page version or 0 to get live page
+- Page $page
+- int $version Page version or 0 to get live page
 
-@return NullPage|Page
+## Return value
+
+NullPage|Page

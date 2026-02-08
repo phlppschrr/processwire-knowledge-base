@@ -1,4 +1,4 @@
-# ImageSizerEngine::getFocusZoomCropDimensions()
+# $imageSizerEngine->getFocusZoomCropDimensions($zoom, $fullWidth, $fullHeight, $finalWidth, $finalHeight): array
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -6,14 +6,14 @@ Get an array of the 4 dimensions necessary to perform a cropExtra / cropBefore c
 
 Intended for use by the resize() method
 
-@param int $zoom
+## Arguments
 
-@param int $fullWidth
+- int $zoom
+- int $fullWidth
+- int $fullHeight
+- int $finalWidth
+- int $finalHeight
 
-@param int $fullHeight
+## Return value
 
-@param int $finalWidth
-
-@param int $finalHeight
-
-@return array
+array

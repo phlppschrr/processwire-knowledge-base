@@ -1,4 +1,4 @@
-# MarkupFieldtype::renderProperty()
+# $markupFieldtype->renderProperty($property, $value): string
 
 Source: `wire/core/MarkupFieldtype.php`
 
@@ -8,8 +8,11 @@ Applicable only if the value of the field is an array or object.
 
 Classes descending from MarkupFieldtype would implement their own method.
 
-@param string $property The property name being rendered.
+## Arguments
 
-@param mixed $value The value of the property.
+- string $property The property name being rendered.
+- mixed $value The value of the property.
 
-@return string
+## Return value
+
+string

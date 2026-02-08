@@ -1,4 +1,4 @@
-# PagesLoader::getById()
+# $pagesLoader->getById($_ids, $template = null, $parent_id = null): PageArray|Page|NullPage
 
 Source: `wire/core/PagesLoader.php`
 
@@ -33,16 +33,16 @@ Use the `$options` array for potential speed optimizations:
 - Specify false for 'findTemplates' so this method doesn't have to look them up. Potential speed optimization if you have few autojoin fields globally.
 - Note that if you specify false for 'findTemplates' the pageClass is assumed to be 'Page' unless you specify something different for the 'pageClass' option.
 
+## Arguments
 
-@param array|WireArray|string|int $_ids Array of page IDs, comma or pipe-separated string of IDs, or single page ID (string or int)
- or in 3.0.156+ array of associative arrays where each in format: [ 'id' => 123, 'templates_id' => 456 ]
+- array|WireArray|string|int $_ids Array of page IDs, comma or pipe-separated string of IDs, or single page ID (string or int) or in 3.0.156+ array of associative arrays where each in format: [ 'id' => 123, 'templates_id' => 456 ]
+- Template|array|string|int|null $template Specify a template to make the load faster, because it won't have to attempt to join all possible fields... just those used by the template. Optionally specify an $options array instead, see the method notes above.
+- int|null $parent_id Specify a parent to make the load faster, as it reduces the possibility for full table scans. This argument is ignored when an options array is supplied for the $template.
 
-@param Template|array|string|int|null $template Specify a template to make the load faster, because it won't have to attempt to join all possible fields...
- just those used by the template. Optionally specify an $options array instead, see the method notes above.
+## Return value
 
-@param int|null $parent_id Specify a parent to make the load faster, as it reduces the possibility for full table scans.
-	This argument is ignored when an options array is supplied for the $template.
+PageArray|Page|NullPage Returns Page only if the 'getOne' option is specified, otherwise always returns a PageArray.
 
-@return PageArray|Page|NullPage Returns Page only if the 'getOne' option is specified, otherwise always returns a PageArray.
+## Throws
 
-@throws WireException
+- WireException

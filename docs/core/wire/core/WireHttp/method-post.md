@@ -1,4 +1,4 @@
-# WireHttp::post()
+# $wireHttp->post($url, $data = array(), array $options = array()): bool|string
 
 Source: `wire/core/WireHttp.php`
 
@@ -16,14 +16,18 @@ if($response !== false) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $url URL to post to (including http:// or https://)
+- string $url URL to post to (including http:// or https://)
+- array|string $data Associative array of data to send (if not already set before), or raw string of data to send, such as JSON.
+- array $options Optional options to modify default behavior, see the send() method for details.
 
-@param array|string $data Associative array of data to send (if not already set before),
-  or raw string of data to send, such as JSON.
+## Return value
 
-@param array $options Optional options to modify default behavior, see the send() method for details.
+bool|string False on failure or string of contents received on success.
 
-@return bool|string False on failure or string of contents received on success.
+## See also
 
-@see WireHttp::send(), WireHttp::get(), WireHttp::head()
+- [WireHttp::send()](method-___send.md)
+- [WireHttp::get()](method-get.md)
+- [WireHttp::head()](method-head.md)

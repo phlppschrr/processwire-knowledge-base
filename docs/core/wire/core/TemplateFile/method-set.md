@@ -1,11 +1,14 @@
-# TemplateFile::set()
+# $templateFile->set($key, $value): $this|WireData
 
 Source: `wire/core/TemplateFile.php`
 
 Set a property
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return $this|WireData
+## Return value
+
+$this|WireData

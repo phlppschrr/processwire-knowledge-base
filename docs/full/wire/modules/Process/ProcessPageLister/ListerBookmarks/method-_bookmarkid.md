@@ -1,9 +1,13 @@
-# ListerBookmarks::_bookmarkID()
+# $listerBookmarks->_bookmarkID($bookmarkID): string
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Sanitize a bookmark ID
 
-@param string|array $bookmarkID
+## Arguments
 
-@return string
+- string|array $bookmarkID
+
+## Return value
+
+string

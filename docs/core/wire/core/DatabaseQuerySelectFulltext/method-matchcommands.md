@@ -1,9 +1,13 @@
-# DatabaseQuerySelectFulltext::matchCommands()
+# $databaseQuerySelectFulltext->matchCommands($text)
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Match text using boolean mode commands (Advanced search)
 
-@param string $text
+## Arguments
 
-@since 3.0.160
+- string $text
+
+## Meta
+
+- @since 3.0.160

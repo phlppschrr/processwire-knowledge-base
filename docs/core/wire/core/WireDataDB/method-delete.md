@@ -1,11 +1,17 @@
-# WireDataDB::delete()
+# $wireDataDB->delete($name): int
 
 Source: `wire/core/WireDataDB.php`
 
 Delete meta value or all meta values (if you specify true)
 
-@param string|bool $name Meta property name to delete or specify boolean true for all
+## Arguments
 
-@return int Number of rows deleted
+- string|bool $name Meta property name to delete or specify boolean true for all
 
-@throws WireException
+## Return value
+
+int Number of rows deleted
+
+## Throws
+
+- WireException

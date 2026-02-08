@@ -1,15 +1,16 @@
-# WireMarkupRegions::replace()
+# $wireMarkupRegions->replace($selector, $replace, $markup, array $options = array()): string
 
 Source: `wire/core/WireMarkupRegions.php`
 
 Replace the region(s) that match the given $selector with the given $replace markup
 
-@param string $selector See the update() method $selector argument for supported formats
+## Arguments
 
-@param string $replace Markup to replace with
+- string $selector See the update() method $selector argument for supported formats
+- string $replace Markup to replace with
+- string $markup Document markup where region(s) exist
+- array $options See $options argument for update() method
 
-@param string $markup Document markup where region(s) exist
+## Return value
 
-@param array $options See $options argument for update() method
-
-@return string
+string

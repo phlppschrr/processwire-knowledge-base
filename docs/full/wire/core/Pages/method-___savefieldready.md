@@ -1,12 +1,14 @@
-# Pages::___saveFieldReady()
+# $pages->___saveFieldReady(Page $page, Field $field)
 
 Source: `wire/core/Pages.php`
 
 Hook called when Pages::saveField is ready to execute
 
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
 
-@param Field $field
+## See also
 
-@see Pages::savePageOrFieldReady()
+- [Pages::savePageOrFieldReady()](method-___savepageorfieldready.md)

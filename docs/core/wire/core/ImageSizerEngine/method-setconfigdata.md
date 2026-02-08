@@ -1,7 +1,9 @@
-# ImageSizerEngine::setConfigData()
+# $imageSizerEngine->setConfigData(array $data)
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Set module config data for ConfigurableModule interface
 
-@param array $data
+## Arguments
+
+- array $data

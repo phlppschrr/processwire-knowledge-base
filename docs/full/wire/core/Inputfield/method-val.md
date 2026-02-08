@@ -1,4 +1,4 @@
-# Inputfield::val()
+# $inputfield->val($value = null): string|int|float|array|object|Wire|WireData|WireArray|Inputfield
 
 Source: `wire/core/Inputfield.php`
 
@@ -11,6 +11,10 @@ $value = $inputfield->val(); * // Getting
 $inputfield->val('foo'); * // Setting
 ~~~~~
 
-@param string|null $value
+## Arguments
 
-@return string|int|float|array|object|Wire|WireData|WireArray|Inputfield
+- string|null $value
+
+## Return value
+
+string|int|float|array|object|Wire|WireData|WireArray|Inputfield

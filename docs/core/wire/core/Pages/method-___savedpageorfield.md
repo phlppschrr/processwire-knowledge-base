@@ -1,12 +1,15 @@
-# Pages::___savedPageOrField()
+# $pages->___savedPageOrField(Page $page, array $changes = array())
 
 Source: `wire/core/Pages.php`
 
 Hook called after either of Pages::save or Pages::saveField successfully executes
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $changes Names of fields
 
-@param array $changes Names of fields
+## See also
 
-@see Pages::saved(), Pages::savedField()
+- [Pages::saved()](method-___saved.md)
+- [Pages::savedField()](method-___savedfield.md)

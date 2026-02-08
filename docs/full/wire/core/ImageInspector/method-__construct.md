@@ -1,7 +1,9 @@
-# ImageInspector::__construct()
+# $imageInspector->__construct($filename = '')
 
 Source: `wire/core/ImageInspector.php`
 
 Construct
 
-@param string $filename
+## Arguments
+
+- string $filename

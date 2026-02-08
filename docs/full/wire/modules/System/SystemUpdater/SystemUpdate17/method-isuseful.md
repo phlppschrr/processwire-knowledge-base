@@ -1,7 +1,9 @@
-# SystemUpdate17::isUseful()
+# $systemUpdate17->isUseful(): bool
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdate17.php`
 
 Is this update useful for this installation?
 
-@return bool
+## Return value
+
+bool

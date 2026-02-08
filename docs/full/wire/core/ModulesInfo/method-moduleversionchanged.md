@@ -1,4 +1,4 @@
-# ModulesInfo::moduleVersionChanged()
+# $modulesInfo->moduleVersionChanged(Module $module, $fromVersion, $toVersion)
 
 Source: `wire/core/ModulesInfo.php`
 
@@ -6,8 +6,8 @@ Module version changed
 
 This calls the module's ___upgrade($fromVersion, $toVersion) method.
 
-@param Module|_Module $module
+## Arguments
 
-@param int|string $fromVersion
-
-@param int|string $toVersion
+- Module|_Module $module
+- int|string $fromVersion
+- int|string $toVersion

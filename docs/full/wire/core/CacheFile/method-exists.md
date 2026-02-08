@@ -1,7 +1,9 @@
-# CacheFile::exists()
+# $cacheFile->exists(): bool
 
 Source: `wire/core/CacheFile.php`
 
 Does the cache file exist?
 
-@return bool
+## Return value
+
+bool

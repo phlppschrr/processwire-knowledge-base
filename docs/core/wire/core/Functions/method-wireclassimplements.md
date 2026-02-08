@@ -1,4 +1,4 @@
-# Functions::wireClassImplements()
+# $functions->wireClassImplements($className, $autoload = true): array
 
 Source: `wire/core/Functions.php`
 
@@ -7,9 +7,11 @@ Get an array of all the interfaces that the given class implements
 - ProcessWire namespace aware version of PHP’s class_implements() function.
 - Return value has array keys as class name with namespace and array values as class name without namespace.
 
+## Arguments
 
-@param string|object $className
+- string|object $className
+- bool $autoload
 
-@param bool $autoload
+## Return value
 
-@return array
+array

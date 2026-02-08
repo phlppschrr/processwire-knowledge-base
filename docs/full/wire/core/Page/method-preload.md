@@ -1,4 +1,4 @@
-# Page::preload()
+# $page->preload(array $fieldNames = array(), $options = array()): array
 
 Source: `wire/core/Page.php`
 
@@ -36,13 +36,15 @@ echo "
 ";
 ~~~~~
 
-@param array $fieldNames Names of fields to preload or omit (or blank array)
-  to preload all supported fields.
+## Arguments
 
-@param array $options Options to modify default behavior:
-- `debug` (bool): Specify true to return additional info in returned array (default=false).
-- See the `PagesLoader::preloadFields()` method for additional options.
+- array $fieldNames Names of fields to preload or omit (or blank array) to preload all supported fields.
+- array $options Options to modify default behavior: - `debug` (bool): Specify true to return additional info in returned array (default=false). - See the `PagesLoader::preloadFields()` method for additional options.
 
-@return array Array of details
+## Return value
 
-@since 3.0.243
+array Array of details
+
+## Meta
+
+- @since 3.0.243

@@ -1,9 +1,13 @@
-# WireMarkupFileRegions::getErrors()
+# $wireMarkupFileRegions->getErrors($key = ''): array
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
 Get errors
 
-@param string $key Optional context
+## Arguments
 
-@return array
+- string $key Optional context
+
+## Return value
+
+array

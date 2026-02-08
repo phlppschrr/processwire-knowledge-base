@@ -1,18 +1,23 @@
-# WireDatabasePDO::renameColumn()
+# $wireDatabasePDO->renameColumn($table, $oldName, $newName): bool
 
 Source: `wire/core/WireDatabasePDO.php`
 
 Rename a table column without changing type
 
+## Arguments
 
-@param string $table
+- string $table
+- string $oldName
+- string $newName
 
-@param string $oldName
+## Return value
 
-@param string $newName
+bool
 
-@return bool
+## Throws
 
-@throws \PDOException
+- \PDOException
 
-@since 3.0.185
+## Meta
+
+- @since 3.0.185

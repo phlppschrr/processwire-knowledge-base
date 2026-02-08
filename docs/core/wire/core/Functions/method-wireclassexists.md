@@ -1,4 +1,4 @@
-# Functions::wireClassExists()
+# $functions->wireClassExists($className, $autoload = true): bool
 
 Source: `wire/core/Functions.php`
 
@@ -8,9 +8,11 @@ ProcessWire namespace aware version of PHP’s class_exists() function
 
 If given a class name that does not include a namespace, the `\ProcessWire` namespace is assumed.
 
+## Arguments
 
-@param string $className
+- string $className
+- bool $autoload
 
-@param bool $autoload
+## Return value
 
-@return bool
+bool

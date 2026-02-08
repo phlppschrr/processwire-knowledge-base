@@ -1,4 +1,4 @@
-# Sanitizer::htmlClasses()
+# $sanitizer->htmlClasses($value, $getArray = false): string|array
 
 Source: `wire/core/Sanitizer.php`
 
@@ -6,10 +6,15 @@ Sanitize string to ASCII-only space-separated HTML class attribute values with n
 
 See additional notes in `Sanitizer::htmlClass()` method.
 
-@param string|array $value
+## Arguments
 
-@param bool $getArray Get array rather than string? (default=false)
+- string|array $value
+- bool $getArray Get array rather than string? (default=false)
 
-@return string|array
+## Return value
 
-@since 3.0.212
+string|array
+
+## Meta
+
+- @since 3.0.212

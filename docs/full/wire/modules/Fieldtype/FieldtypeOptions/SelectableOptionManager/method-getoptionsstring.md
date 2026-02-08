@@ -1,13 +1,18 @@
-# SelectableOptionManager::getOptionsString()
+# $selectableOptionManager->getOptionsString(SelectableOptionArray $options, $language = ''): string
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Get the options input string used for
 
-@param SelectableOptionArray $options
+## Arguments
 
-@param int|string|Language $language Language id, object, or name, if applicable
+- SelectableOptionArray $options
+- int|string|Language $language Language id, object, or name, if applicable
 
-@return string
+## Return value
 
-@throws WireException if given invalid language
+string
+
+## Throws
+
+- WireException if given invalid language

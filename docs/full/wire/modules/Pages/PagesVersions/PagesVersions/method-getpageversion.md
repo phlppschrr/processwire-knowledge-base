@@ -1,4 +1,4 @@
-# PagesVersions::getPageVersion()
+# $pagesVersions->getPageVersion(Page $page, $version, array $options = []): Page|NullPage
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -9,14 +9,12 @@ $page = $pages->get(1234);
 $pageV2 = $pagesVersions->getPageVersion($page, 2);
 ~~~~~
 
+## Arguments
 
-@param Page $page Page that version is for
+- Page $page Page that version is for
+- int $version Version number to get
+- array $options - `names` (array): Optionally load only these field/property names from version.
 
-@param int $version Version number to get
+## Return value
 
-@param array $options
- - `names` (array): Optionally load only these field/property names from version.
-
-@return Page|NullPage
- - Returned page is a clone/copy of the given page updated for version data.
- - Returns a `NullPage` if requested version is not found or not allowed.
+Page|NullPage - Returned page is a clone/copy of the given page updated for version data. - Returns a `NullPage` if requested version is not found or not allowed.

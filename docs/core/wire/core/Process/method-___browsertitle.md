@@ -1,4 +1,4 @@
-# Process::___browserTitle()
+# $process->___browserTitle($title): $this
 
 Source: `wire/core/Process.php`
 
@@ -8,6 +8,10 @@ Set the current browser title tag
 $this->browserTitle("Hello World");
 ~~~~~
 
-@param string $title
+## Arguments
 
-@return $this
+- string $title
+
+## Return value
+
+$this

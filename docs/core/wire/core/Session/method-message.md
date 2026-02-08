@@ -1,12 +1,14 @@
-# Session::message()
+# $session->message($text, $flags = 0): $this
 
 Source: `wire/core/Session.php`
 
 Queue a message to appear on the next pageview
 
+## Arguments
 
-@param string $text Message to queue
+- string $text Message to queue
+- int $flags Optional flags, See Notice::flags
 
-@param int $flags Optional flags, See Notice::flags
+## Return value
 
-@return $this
+$this

@@ -1,4 +1,4 @@
-# WireData::has()
+# $wireData->has($key): bool
 
 Source: `wire/core/WireData.php`
 
@@ -10,7 +10,10 @@ if($item->has('some_property')) {
 }
 ~~~~~
 
+## Arguments
 
-@param string $key Name of property you want to check.
+- string $key Name of property you want to check.
 
-@return bool True if it has the property, false if not.
+## Return value
+
+bool True if it has the property, false if not.

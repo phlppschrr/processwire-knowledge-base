@@ -1,9 +1,13 @@
-# WireCacheDatabase::delete()
+# $wireCacheDatabase->delete($name): bool
 
 Source: `wire/core/WireCacheDatabase.php`
 
 Delete a cache by name
 
-@param string $name
+## Arguments
 
-@return bool
+- string $name
+
+## Return value
+
+bool

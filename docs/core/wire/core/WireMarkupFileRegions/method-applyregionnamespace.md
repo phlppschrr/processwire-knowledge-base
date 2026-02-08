@@ -1,7 +1,9 @@
-# WireMarkupFileRegions::applyRegionNamespace()
+# $wireMarkupFileRegions->applyRegionNamespace(array &$region)
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
 Apply namespace to region content
 
-@param array $region
+## Arguments
+
+- array $region

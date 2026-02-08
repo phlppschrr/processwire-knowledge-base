@@ -1,9 +1,10 @@
-# WireHooks::__construct()
+# $wireHooks->__construct(ProcessWire $wire, Config $config)
 
 Source: `wire/core/WireHooks.php`
 
 Construct WireHooks
 
-@param ProcessWire $wire
+## Arguments
 
-@param Config $config
+- ProcessWire $wire
+- Config $config

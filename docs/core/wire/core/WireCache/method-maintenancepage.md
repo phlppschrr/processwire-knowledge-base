@@ -1,9 +1,13 @@
-# WireCache::maintenancePage()
+# $wireCache->maintenancePage(Page $page): bool
 
 Source: `wire/core/WireCache.php`
 
 Run maintenance for a page that was just saved or deleted
 
-@param Page $page
+## Arguments
 
-@return bool
+- Page $page
+
+## Return value
+
+bool

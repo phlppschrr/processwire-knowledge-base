@@ -1,17 +1,20 @@
-# FieldtypeRepeaterPorter::importValue()
+# $fieldtypeRepeaterPorter->importValue(Page $page, Field $field, $value, array $options = array()): bool|PageArray
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeaterPorter.php`
 
 Import repeater value previously exported by exportValue()
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- array $value
+- array $options
 
-@param array $value
+## Return value
 
-@param array $options
+bool|PageArray
 
-@return bool|PageArray
+## Throws
 
-@throws WireException
+- WireException

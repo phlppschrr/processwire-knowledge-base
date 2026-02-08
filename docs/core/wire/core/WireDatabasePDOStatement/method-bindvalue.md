@@ -1,13 +1,15 @@
-# WireDatabasePDOStatement::bindValue()
+# $wireDatabasePDOStatement->bindValue($parameter, $value, $data_type = \PDO::PARAM_STR): bool
 
 Source: `wire/core/WireDatabasePDOStatement.php`
 
 Bind a value for this statement
 
-@param string|int $parameter
+## Arguments
 
-@param mixed $value
+- string|int $parameter
+- mixed $value
+- int $data_type
 
-@param int $data_type
+## Return value
 
-@return bool
+bool

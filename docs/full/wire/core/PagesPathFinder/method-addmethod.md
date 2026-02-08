@@ -1,11 +1,11 @@
-# PagesPathFinder::addMethod()
+# $pagesPathFinder->addMethod($name, $code, $note = '')
 
 Source: `wire/core/PagesPathFinder.php`
 
 Add method debug info (verbose mode)
 
-@param string $name
+## Arguments
 
-@param int|bool $code
-
-@param string $note
+- string $name
+- int|bool $code
+- string $note

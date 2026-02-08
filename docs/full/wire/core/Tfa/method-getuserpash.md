@@ -1,4 +1,4 @@
-# Tfa::getUserPash()
+# $tfa->getUserPash(User $user): string
 
 Source: `wire/core/Tfa.php`
 
@@ -9,8 +9,14 @@ It helps to identify if a user’s password changed between the time they
 authenticated and the time they submitted the authentication code. While
 it seems extremely unlikely, I think we have to cover this, just in case.
 
-@param User $user
+## Arguments
 
-@return string
+- User $user
 
-@since 3.0.160
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.160

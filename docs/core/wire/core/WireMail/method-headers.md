@@ -1,9 +1,13 @@
-# WireMail::headers()
+# $wireMail->headers(array $headers): $this
 
 Source: `wire/core/WireMail.php`
 
 Set multiple email headers using associative array
 
-@param array $headers
+## Arguments
 
-@return $this
+- array $headers
+
+## Return value
+
+$this

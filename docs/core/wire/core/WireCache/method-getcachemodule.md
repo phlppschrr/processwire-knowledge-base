@@ -1,9 +1,13 @@
-# WireCache::getCacheModule()
+# $wireCache->getCacheModule(): WireCacheInterface
 
 Source: `wire/core/WireCache.php`
 
 Get WireCache module that is currently being used
 
-@return WireCacheInterface
+## Return value
 
-@since 3.0.218
+WireCacheInterface
+
+## Meta
+
+- @since 3.0.218

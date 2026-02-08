@@ -1,4 +1,4 @@
-# Functions::wireDate()
+# $functions->wireDate($format = '', $ts = null): string|bool
 
 Source: `wire/core/Functions.php`
 
@@ -15,18 +15,11 @@ echo wireDate('Y-m-d H:i:s'); // Outputs: 2019-01-20 06:48:11
 echo wireDate('relative', '2019-01-20 06:00'); // Outputs: 48 minutes ago
 ~~~~~
 
+## Arguments
 
-@param string|int $format Use any PHP date() or strftime() format, or one of the following:
-	- `relative` for a relative date/time string.
- - `relative-` for a relative date/time string with no tense.
-	- `rel` for an abbreviated relative date/time string.
-	- `rel-` for an abbreviated relative date/time string with no tense.
-	- `r` for an extra-abbreviated relative date/time string.
-	- `r-` for an extra-abbreviated relative date/time string with no tense.
-	- `ts` makes it return a unix timestamp.
-	- Specify blank string to make it use the system date format ($config->dateFormat) .
-	- If given an integer and no second argument specified, it is assumed to be the second ($ts) argument.
+- string|int $format Use any PHP date() or strftime() format, or one of the following: - `relative` for a relative date/time string. - `relative-` for a relative date/time string with no tense. - `rel` for an abbreviated relative date/time string. - `rel-` for an abbreviated relative date/time string with no tense. - `r` for an extra-abbreviated relative date/time string. - `r-` for an extra-abbreviated relative date/time string with no tense. - `ts` makes it return a unix timestamp. - Specify blank string to make it use the system date format ($config->dateFormat) . - If given an integer and no second argument specified, it is assumed to be the second ($ts) argument.
+- int|string|null $ts Optionally specify the date/time stamp or strtotime() compatible string. If not specified, current time is used.
 
-@param int|string|null $ts Optionally specify the date/time stamp or strtotime() compatible string. If not specified, current time is used.
+## Return value
 
-@return string|bool Formatted date/time, or boolean false on failure
+string|bool Formatted date/time, or boolean false on failure

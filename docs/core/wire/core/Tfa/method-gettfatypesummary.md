@@ -1,4 +1,4 @@
-# Tfa::getTfaTypeSummary()
+# $tfa->getTfaTypeSummary(): string
 
 Source: `wire/core/Tfa.php`
 
@@ -8,6 +8,10 @@ This is generally the same or similar to the module summary, though in a $this->
 so that it is translatable. When a module implements this, it should not make a
 parent::getTfaTypeLabel() call.
 
-@return string
+## Return value
 
-@since 3.0.160
+string
+
+## Meta
+
+- @since 3.0.160

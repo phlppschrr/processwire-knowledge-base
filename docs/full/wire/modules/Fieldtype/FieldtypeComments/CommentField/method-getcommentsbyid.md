@@ -1,13 +1,18 @@
-# CommentField::getCommentsByID()
+# $commentField->getCommentsByID(array $ids, $page = null): CommentArray
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Get multiple comments by ID
 
-@param int[] $ids Comment IDs
+## Arguments
 
-@param Page|null $page Optionally limit comments to this page
+- int[] $ids Comment IDs
+- Page|null $page Optionally limit comments to this page
 
-@return CommentArray
+## Return value
 
-@since 3.0.255
+CommentArray
+
+## Meta
+
+- @since 3.0.255

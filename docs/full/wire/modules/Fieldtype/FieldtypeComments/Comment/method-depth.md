@@ -1,9 +1,13 @@
-# Comment::depth()
+# $comment->depth(): int
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Get current comment depth
 
-@return int
+## Return value
 
-@since 3.0.149
+int
+
+## Meta
+
+- @since 3.0.149

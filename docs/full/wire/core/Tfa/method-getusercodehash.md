@@ -1,4 +1,4 @@
-# Tfa::getUserCodeHash()
+# $tfa->getUserCodeHash(User $user, $code): string
 
 Source: `wire/core/Tfa.php`
 
@@ -6,10 +6,15 @@ Get internal hash of given code for user
 
 This is used to identify and invalidate a previously used authentication code,
 
-@param User $user
+## Arguments
 
-@param string $code
+- User $user
+- string $code
 
-@return string
+## Return value
 
-@since 3.0.160
+string
+
+## Meta
+
+- @since 3.0.160

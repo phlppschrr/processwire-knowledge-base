@@ -1,4 +1,4 @@
-# Pages::newPage()
+# $pages->newPage($options = array()): Page
 
 Source: `wire/core/Pages.php`
 
@@ -35,14 +35,10 @@ $p = $pages->newPage('blog-post');
 $p = $pages->newPage('/blog/posts/hello-world');
 ~~~~~
 
+## Arguments
 
-@param array|string|Template $options Optionally specify array (or selector string in 3.0.191+) with any of the following:
- - `template` (Template|id|string): Template to use via object, ID or name. The `pageClass` will be auto-detected.
- - `parent` (Page|int|string): Parent page object, ID or path.
- - `name` (string): Name of page.
- - `path` (string): Specify /path/for/page/, name and parent (and maybe template) can be auto-detected. 3.0.191+
- - `pageClass` (string): Class to use for Page. If not specified, default is from template setting, or `Page` if no template.
- - Specify any other Page properties or fields you want to set (name, title, etc.). Note that most page fields will need to
-   have a `template` set first, so make sure to include it in your options array when providing other fields.
+- array|string|Template $options Optionally specify array (or selector string in 3.0.191+) with any of the following: - `template` (Template|id|string): Template to use via object, ID or name. The `pageClass` will be auto-detected. - `parent` (Page|int|string): Parent page object, ID or path. - `name` (string): Name of page. - `path` (string): Specify /path/for/page/, name and parent (and maybe template) can be auto-detected. 3.0.191+ - `pageClass` (string): Class to use for Page. If not specified, default is from template setting, or `Page` if no template. - Specify any other Page properties or fields you want to set (name, title, etc.). Note that most page fields will need to have a `template` set first, so make sure to include it in your options array when providing other fields.
 
-@return Page
+## Return value
+
+Page

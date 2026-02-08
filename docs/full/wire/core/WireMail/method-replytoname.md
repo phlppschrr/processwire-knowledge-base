@@ -1,9 +1,13 @@
-# WireMail::replyToName()
+# $wireMail->replyToName($name): $this
 
 Source: `wire/core/WireMail.php`
 
 Set the 'reply-to' name (where supported)
 
-@param string $name
+## Arguments
 
-@return $this
+- string $name
+
+## Return value
+
+$this

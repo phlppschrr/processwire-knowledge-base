@@ -1,9 +1,13 @@
-# WireSaveableItemsLookup::___delete()
+# $wireSaveableItemsLookup->___delete(Saveable $item): bool
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 
 Delete the provided item from the database
 
-@param Saveable $item
+## Arguments
 
-@return bool
+- Saveable $item
+
+## Return value
+
+bool

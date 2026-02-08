@@ -1,11 +1,17 @@
-# WireDatabaseBackup::dropAllTables()
+# $wireDatabaseBackup->dropAllTables(): int
 
 Source: `wire/core/WireDatabaseBackup.php`
 
 Drop all tables from database
 
-@return int Quantity of tables dropped
+## Return value
 
-@throws \Exception
+int Quantity of tables dropped
 
-@since 3.0.130
+## Throws
+
+- \Exception
+
+## Meta
+
+- @since 3.0.130

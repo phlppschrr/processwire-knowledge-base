@@ -1,9 +1,10 @@
-# WireInputData::__construct()
+# $wireInputData->__construct(&$input = array(), $lazy = false)
 
 Source: `wire/core/WireInputData.php`
 
 Construct
 
-@param array $input Associative array of variables to store
+## Arguments
 
-@param bool $lazy Use lazy loading?
+- array $input Associative array of variables to store
+- bool $lazy Use lazy loading?

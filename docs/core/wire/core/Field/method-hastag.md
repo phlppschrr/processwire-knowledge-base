@@ -1,11 +1,17 @@
-# Field::hasTag()
+# $field->hasTag($tag): bool
 
 Source: `wire/core/Field.php`
 
 Return true if this field has the given tag or false if not
 
-@param string $tag
+## Arguments
 
-@return bool
+- string $tag
 
-@since 3.0.106
+## Return value
+
+bool
+
+## Meta
+
+- @since 3.0.106

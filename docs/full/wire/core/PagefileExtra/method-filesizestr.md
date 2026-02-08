@@ -1,7 +1,9 @@
-# PagefileExtra::filesizeStr()
+# $pagefileExtra->filesizeStr(): string
 
 Source: `wire/core/PagefileExtra.php`
 
 Return human readable file size string
 
-@return string
+## Return value
+
+string

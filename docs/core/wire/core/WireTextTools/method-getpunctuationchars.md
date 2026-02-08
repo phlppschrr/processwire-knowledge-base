@@ -1,9 +1,13 @@
-# WireTextTools::getPunctuationChars()
+# $wireTextTools->getPunctuationChars($sentence = false): array
 
 Source: `wire/core/WireTextTools.php`
 
 Get array of punctuation characters
 
-@param bool $sentence Get only sentence-ending punctuation
+## Arguments
 
-@return array
+- bool $sentence Get only sentence-ending punctuation
+
+## Return value
+
+array

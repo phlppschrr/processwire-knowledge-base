@@ -1,4 +1,4 @@
-# Page::___renamed()
+# $page->___renamed($oldName, $newName)
 
 Source: `wire/core/Page.php`
 
@@ -12,9 +12,11 @@ $wire->addHook('Page::renamed', function($e) {
 });
 ~~~~~
 
+## Arguments
 
-@param string $oldName The old name
+- string $oldName The old name
+- string $newName The new name
 
-@param string $newName The new name
+## Meta
 
-@since 3.0.253
+- @since 3.0.253

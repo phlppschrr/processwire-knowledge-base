@@ -1,13 +1,18 @@
-# FieldsetPage::getOf()
+# $fieldsetPage->getOf($key, $of): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldsetPage.php`
 
 Get property in formatted (true) or unformatted (false) state
 
-@param string $key
+## Arguments
 
-@param bool $of
+- string $key
+- bool $of
 
-@return mixed
+## Return value
 
-@since 3.0.215
+mixed
+
+## Meta
+
+- @since 3.0.215

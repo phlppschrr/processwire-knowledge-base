@@ -1,4 +1,4 @@
-# WireData::set()
+# $wireData->set($key, $value): $this
 
 Source: `wire/core/WireData.php`
 
@@ -15,11 +15,16 @@ $item->foo = 'bar';
 $item['foo'] = 'bar';
 ~~~~~
 
+## Arguments
 
-@param string $key Name of property you want to set
+- string $key Name of property you want to set
+- mixed $value Value of property
 
-@param mixed $value Value of property
+## Return value
 
-@return $this
+$this
 
-@see WireData::setQuietly(), WireData::get()
+## See also
+
+- [WireData::setQuietly()](method-setquietly.md)
+- [WireData::get()](method-get.md)

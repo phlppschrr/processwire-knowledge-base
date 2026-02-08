@@ -1,7 +1,9 @@
-# FilenameArray::count()
+# $filenameArray->count(): int
 
 Source: `wire/core/FilenameArray.php`
 
 Return count of items in this FilenameArray
 
-@return int
+## Return value
+
+int

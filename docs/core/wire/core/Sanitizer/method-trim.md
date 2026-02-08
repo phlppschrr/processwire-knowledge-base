@@ -1,4 +1,4 @@
-# Sanitizer::trim()
+# $sanitizer->trim($str, $chars = '', $method = 'trim'): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -11,13 +11,16 @@ which enables you to trim out string sequences greater than one character long.
 If you do not need an extensive multibyte trim, use PHP’s trim() instead because this takes more overhead.
 PHP multibyte support (mb_string) is strongly recommended if using this function.
 
+## Arguments
 
-@param string $str
+- string $str
+- string|array $chars Array or string of chars to trim, or omit (blank string) for all whitespace (includes UTF-8 and HTML-entity whitespace too).
+- string $method Trim method, one of "trim" (both), "rtrim" (right-only) or "ltrim" (left-only). Or just "t", "r", "l" is also fine. 3.0.168+
 
-@param string|array $chars Array or string of chars to trim, or omit (blank string) for all whitespace (includes UTF-8 and HTML-entity whitespace too).
+## Return value
 
-@param string $method Trim method, one of "trim" (both), "rtrim" (right-only) or "ltrim" (left-only). Or just "t", "r", "l" is also fine. 3.0.168+
+string
 
-@return string
+## Meta
 
-@since 3.0.124
+- @since 3.0.124

@@ -1,4 +1,4 @@
-# Sanitizer::chars()
+# $sanitizer->chars($value, $allow = '', $replacement = '', $collapse = true, $mb = null): string
 
 Source: `wire/core/Sanitizer.php`
 
@@ -15,18 +15,18 @@ echo $sanitizer->chars('Decatur, GA 30030', '[alpha]', '-'); // Outputs: Decatur
 echo $sanitizer->chars('Decatur, GA 30030', '[alpha][digit]', '-'); // Outputs: Decatur-GA-30030
 ~~~~~
 
+## Arguments
 
-@param string $value Value to sanitize
+- string $value Value to sanitize
+- string|array $allow Allowed characters string. If omitted then only alphanumeric [ a-z A-Z 0-9 ] are allowed. Use shortcut `[alpha]` to refer to any “a-z A-Z” char or `[digit]` to refer to any digit.
+- string $replacement Replace disallowed chars with this char or string, or omit for blank. (default='')
+- bool $collapse Collapse multiple $replacement chars to one and trim from return value? (default=true)
+- bool|null $mb Specify bool to force use of multibyte on or off, or omit to auto-detect. (default=null)
 
-@param string|array $allow Allowed characters string. If omitted then only alphanumeric [ a-z A-Z 0-9 ] are allowed.
- Use shortcut `[alpha]` to refer to any “a-z A-Z” char or `[digit]` to refer to any digit.
+## Return value
 
-@param string $replacement Replace disallowed chars with this char or string, or omit for blank. (default='')
+string
 
-@param bool $collapse Collapse multiple $replacement chars to one and trim from return value? (default=true)
+## Meta
 
-@param bool|null $mb Specify bool to force use of multibyte on or off, or omit to auto-detect. (default=null)
-
-@return string
-
-@since 3.0.126
+- @since 3.0.126

@@ -1,4 +1,4 @@
-# PageTraversal::httpUrl()
+# $pageTraversal->httpUrl(Page $page, $options = array()): string
 
 Source: `wire/core/PageTraversal.php`
 
@@ -17,10 +17,16 @@ Returns the URL to the page, including scheme and hostname
 echo "<a href='$page->httpUrl'>$page->title</a>";
 ~~~~~
 
-@param Page $page
+## Arguments
 
-@param array $options For details on usage see `Page::url()` options argument.
+- Page $page
+- array $options For details on usage see `Page::url()` options argument.
 
-@return string Returns full URL to page, for example: `https://processwire.com/about/`
+## Return value
 
-@see Page::url(), Page::localHttpUrl()
+string Returns full URL to page, for example: `https://processwire.com/about/`
+
+## See also
+
+- [Page::url()](../Page/method-url.md)
+- [Page::localHttpUrl()](../Page/index.md)

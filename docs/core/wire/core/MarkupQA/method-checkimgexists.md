@@ -1,15 +1,16 @@
-# MarkupQA::checkImgExists()
+# $markupQA->checkImgExists(Pageimage $pagefile, $img, $src, &$value): int
 
 Source: `wire/core/MarkupQA.php`
 
 Attempt to re-create images that don't exist, when possible
 
-@param Pageimage $pagefile
+## Arguments
 
-@param $img
+- Pageimage $pagefile
+- $img
+- $src
+- $value
 
-@param $src
+## Return value
 
-@param $value
-
-@return int Returns 0 on no change, negative count on broken, positive count on fixed
+int Returns 0 on no change, negative count on broken, positive count on fixed

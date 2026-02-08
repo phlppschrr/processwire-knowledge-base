@@ -1,4 +1,4 @@
-# Pages::___deleteBranchReady()
+# $pages->___deleteBranchReady(Page $page, array $options)
 
 Source: `wire/core/Pages.php`
 
@@ -6,9 +6,11 @@ Hook called before a branch of pages is about to be deleted, called on root page
 
 Note: this is called only on deletions that had 'recursive' option true and 1+ children.
 
+## Arguments
 
-@param Page $page Page that was deleted
+- Page $page Page that was deleted
+- array $options Options passed to delete method
 
-@param array $options Options passed to delete method
+## Meta
 
-@since 3.0.163
+- @since 3.0.163

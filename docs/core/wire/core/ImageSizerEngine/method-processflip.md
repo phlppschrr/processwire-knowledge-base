@@ -1,13 +1,15 @@
-# ImageSizerEngine::processFlip()
+# $imageSizerEngine->processFlip($srcFilename, $dstFilename, $flipVertical): bool
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Process vertical or horizontal flip of an image
 
-@param string $srcFilename
+## Arguments
 
-@param string $dstFilename
+- string $srcFilename
+- string $dstFilename
+- bool $flipVertical True if flip is vertical, false if flip is horizontal
 
-@param bool $flipVertical True if flip is vertical, false if flip is horizontal
+## Return value
 
-@return bool
+bool

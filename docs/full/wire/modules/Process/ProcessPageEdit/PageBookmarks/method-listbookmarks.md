@@ -1,7 +1,9 @@
-# PageBookmarks::listBookmarks()
+# $pageBookmarks->listBookmarks(): string
 
 Source: `wire/modules/Process/ProcessPageEdit/PageBookmarks.php`
 
 Render list of current bookmarks
 
-@return string
+## Return value
+
+string

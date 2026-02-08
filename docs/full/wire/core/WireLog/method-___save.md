@@ -1,4 +1,4 @@
-# WireLog::___save()
+# $wireLog->___save($name, $text, $options = array()): bool
 
 Source: `wire/core/WireLog.php`
 
@@ -13,17 +13,16 @@ Save text to a named log
 $log->save("search", "User searched for: $phrase");
 ~~~~~
 
-@param string $name Name of log to save to (word consisting of only `[-._a-z0-9]` and no extension)
+## Arguments
 
-@param string $text Text to save to the log
+- string $name Name of log to save to (word consisting of only `[-._a-z0-9]` and no extension)
+- string $text Text to save to the log
+- array $options Options to modify default behavior: - `showUser` (bool): Include the username in the log entry? (default=true) - `showURL` (bool): Include the current URL in the log entry? (default=true) - `user` (User|string|null): User instance, user name, or null to use current User. (default=null) - `url` (bool): URL to record with the log entry (default=auto determine) - `delimiter` (string): Log entry delimiter (default="\t" aka tab)
 
-@param array $options Options to modify default behavior:
-  - `showUser` (bool): Include the username in the log entry? (default=true)
-  - `showURL` (bool): Include the current URL in the log entry? (default=true)
-  - `user` (User|string|null): User instance, user name, or null to use current User. (default=null)
-  - `url` (bool): URL to record with the log entry (default=auto determine)
-  - `delimiter` (string): Log entry delimiter (default="\t" aka tab)
+## Return value
 
-@return bool Whether it was written or not (generally always going to be true)
+bool Whether it was written or not (generally always going to be true)
 
-@throws WireException
+## Throws
+
+- WireException

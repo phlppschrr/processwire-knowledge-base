@@ -1,4 +1,4 @@
-# WireMailTools::mail()
+# $wireMailTools->mail($to, $subject, $message, $headers = array()): bool
 
 Source: `wire/core/WireMailTools.php`
 
@@ -28,18 +28,13 @@ $mail->mail('ryan@processwire.com', 'Subject', [
 ]);
 ~~~~~
 
-@param string|array $to Email address TO. For multiple, specify CSV string or array.
+## Arguments
 
-@param string $subject Email subject
+- string|array $to Email address TO. For multiple, specify CSV string or array.
+- string $subject Email subject
+- string|array $message Email body (PHP mail style), OR specify $options array with any of the following: - `bodyHTML` (string): Email body (HTML) - `body` (string): Email body (text). If not specified, and bodyHTML is, then text body will be auto-generated. - `from` (string): From email address - `replyTo` (string): Reply-to email address - `headers` (array): Associative array of header name => header value
+- array $headers Optional additional headers as [name=value] array or "Name: Value" newline-separated string. Use this argument to duplicate PHP mail() style arguments. No need to use if you used $options array for the $message argument.
 
-@param string|array $message Email body (PHP mail style), OR specify $options array with any of the following:
- - `bodyHTML` (string): Email body (HTML)
- - `body` (string): Email body (text). If not specified, and bodyHTML is, then text body will be auto-generated.
- - `from` (string): From email address
- - `replyTo` (string): Reply-to email address
- - `headers` (array): Associative array of header name => header value
+## Return value
 
-@param array $headers Optional additional headers as [name=value] array or "Name: Value" newline-separated string.
-  Use this argument to duplicate PHP mail() style arguments. No need to use if you used $options array for the $message argument.
-
-@return bool True on success, false on fail.
+bool True on success, false on fail.

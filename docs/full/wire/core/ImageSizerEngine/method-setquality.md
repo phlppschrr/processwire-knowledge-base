@@ -1,9 +1,13 @@
-# ImageSizerEngine::setQuality()
+# $imageSizerEngine->setQuality($n): self
 
 Source: `wire/core/ImageSizerEngine.php`
 
 Set the image quality 1-100, where 100 is highest quality
 
-@param int $n
+## Arguments
 
-@return self
+- int $n
+
+## Return value
+
+self

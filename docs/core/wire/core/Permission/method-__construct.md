@@ -1,7 +1,9 @@
-# Permission::__construct()
+# $permission->__construct(?Template $tpl = null)
 
 Source: `wire/core/Permission.php`
 
 Create a new Permission page in memory.
 
-@param Template|null $tpl Template object this page should use.
+## Arguments
+
+- Template|null $tpl Template object this page should use.

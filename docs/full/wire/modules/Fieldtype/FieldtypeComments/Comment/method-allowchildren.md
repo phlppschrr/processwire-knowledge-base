@@ -1,9 +1,13 @@
-# Comment::allowChildren()
+# $comment->allowChildren(): bool
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Are child comments (replies) allowed?
 
-@return bool
+## Return value
 
-@since 3.0.204
+bool
+
+## Meta
+
+- @since 3.0.204

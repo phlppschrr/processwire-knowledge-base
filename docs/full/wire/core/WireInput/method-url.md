@@ -1,4 +1,4 @@
-# WireInput::url()
+# $wireInput->url($options = array()): string
 
 Source: `wire/core/WireInput.php`
 
@@ -17,12 +17,15 @@ $url = $sanitizer->entities($url); // entity encode for output
 echo "You accessed this page at: $url";
 ~~~~~~
 
+## Arguments
 
-@param array|bool $options Specify `withQueryString` (bool) option, or in 3.0.167+ you can also use an options array:
- - `withQueryString` (bool): Include the query string as well? (if present, default=false)
- - `page` (Page): Page object to use, if different from $page (default=$page)
- - `pageNum` (int): Override current pagination number with this one, 1 to exclude pageNum, 0 for no override (default=0). 3.0.169+
+- array|bool $options Specify `withQueryString` (bool) option, or in 3.0.167+ you can also use an options array: - `withQueryString` (bool): Include the query string as well? (if present, default=false) - `page` (Page): Page object to use, if different from $page (default=$page) - `pageNum` (int): Override current pagination number with this one, 1 to exclude pageNum, 0 for no override (default=0). 3.0.169+
 
-@return string
+## Return value
 
-@see WireInput::httpUrl(), Page::url()
+string
+
+## See also
+
+- [WireInput::httpUrl()](method-httpurl.md)
+- [Page::url()](../Page/method-url.md)

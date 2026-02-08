@@ -1,4 +1,4 @@
-# Languages::setDefault()
+# $languages->setDefault(?Language $language = null): void
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
@@ -18,8 +18,15 @@ $languages->setDefault();
 $languages->unsetDefault();
 ~~~~~
 
-@param Language|null $language
+## Arguments
 
-@return void
+- Language|null $language
 
-@see Languages::unsetDefault(), Languages::setLanguage()
+## Return value
+
+void
+
+## See also
+
+- [Languages::unsetDefault()](method-unsetdefault.md)
+- [Languages::setLanguage()](method-setlanguage.md)

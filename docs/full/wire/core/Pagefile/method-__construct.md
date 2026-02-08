@@ -1,4 +1,4 @@
-# Pagefile::__construct()
+# $pagefile->__construct(Pagefiles $pagefiles, $filename)
 
 Source: `wire/core/Pagefile.php`
 
@@ -9,6 +9,7 @@ Construct a new Pagefile
 $pagefile = new Pagefile($page->files, '/path/to/file.pdf');
 ~~~~~
 
-@param Pagefiles $pagefiles The Pagefiles WireArray that will contain this file.
+## Arguments
 
-@param string $filename Full path and filename to this Pagefile.
+- Pagefiles $pagefiles The Pagefiles WireArray that will contain this file.
+- string $filename Full path and filename to this Pagefile.

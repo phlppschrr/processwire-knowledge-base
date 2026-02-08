@@ -1,9 +1,13 @@
-# Comment::get()
+# $comment->get($key): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Get property
 
-@param string $key
+## Arguments
 
-@return mixed
+- string $key
+
+## Return value
+
+mixed

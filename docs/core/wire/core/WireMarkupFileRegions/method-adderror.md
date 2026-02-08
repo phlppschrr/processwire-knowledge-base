@@ -1,9 +1,10 @@
-# WireMarkupFileRegions::addError()
+# $wireMarkupFileRegions->addError($key, $error)
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
 Add an error
 
-@param string $key Error context
+## Arguments
 
-@param string $error Error message
+- string $key Error context
+- string $error Error message

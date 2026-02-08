@@ -1,15 +1,19 @@
-# CommentNotifications::___sendConfirmationEmail()
+# $commentNotifications->___sendConfirmationEmail(Comment $comment, $email, $subcode): mixed
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Send confirmation/opt-in email for notifications (not yet active)
 
-@param Comment $comment
+## Arguments
 
-@param $email
+- Comment $comment
+- $email
+- $subcode
 
-@param $subcode
+## Return value
 
-@return mixed
+mixed
 
-@throws WireException
+## Throws
+
+- WireException

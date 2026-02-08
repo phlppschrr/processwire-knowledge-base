@@ -1,11 +1,17 @@
-# WireTempDir::create()
+# $wireTempDir->create($name = '', $basePath = ''): string
 
 Source: `wire/core/WireTempDir.php`
 
-@deprecated Use init() method instead
 
-@param string $name
+## Arguments
 
-@param string $basePath
+- string $name
+- string $basePath
 
-@return string
+## Return value
+
+string
+
+## Meta
+
+- @deprecated Use init() method instead

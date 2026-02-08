@@ -1,4 +1,4 @@
-# InputfieldWrapper::___new()
+# $inputfieldWrapper->___new($typeName, $name = '', $label = '', $settings = array()): Inputfield|InputfieldSelect|InputfieldWrapper
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -8,17 +8,21 @@ Create a new Inputfield, add it to this InputfieldWrapper, and return the new In
 - You may optionally substitute the $settings argument for the $name or $label arguments.
 - You may optionally substitute Inputfield “description” property for $settings argument.
 
+## Arguments
 
-@param string $typeName Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
+- string $typeName Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
+- string|array $name Name of input (or substitute $settings here).
+- string|array $label Label for input (or substitute $settings here).
+- array|string $settings Settings to add to Inputfield (optional). Or if string, assumed to be “description”.
 
-@param string|array $name Name of input (or substitute $settings here).
+## Return value
 
-@param string|array $label Label for input (or substitute $settings here).
+Inputfield|InputfieldSelect|InputfieldWrapper An Inputfield instance ready to populate with additional properties/attributes.
 
-@param array|string $settings Settings to add to Inputfield (optional). Or if string, assumed to be “description”.
+## Throws
 
-@return Inputfield|InputfieldSelect|InputfieldWrapper An Inputfield instance ready to populate with additional properties/attributes.
+- WireException If you request an unknown Inputfield type
 
-@throws WireException If you request an unknown Inputfield type
+## Meta
 
-@since 3.0.110
+- @since 3.0.110

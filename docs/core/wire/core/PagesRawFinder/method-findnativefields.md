@@ -1,4 +1,4 @@
-# PagesRawFinder::findNativeFields()
+# $pagesRawFinder->findNativeFields()
 
 Source: `wire/core/PagesRaw.php`
 

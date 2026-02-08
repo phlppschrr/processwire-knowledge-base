@@ -1,4 +1,4 @@
-# ModulesDuplicates::getDuplicates()
+# $modulesDuplicates->getDuplicates($className = ''): array
 
 Source: `wire/core/ModulesDuplicates.php`
 
@@ -19,6 +19,10 @@ Array(
    ...and so on...
 )
 
-@param string|Module|int $className Optionally return only duplicates for given module name
+## Arguments
 
-@return array
+- string|Module|int $className Optionally return only duplicates for given module name
+
+## Return value
+
+array

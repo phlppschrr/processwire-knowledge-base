@@ -1,4 +1,4 @@
-# Template::getRoles()
+# $template->getRoles($type = 'view'): PageArray
 
 Source: `wire/core/Template.php`
 
@@ -10,9 +10,14 @@ Get the role pages that are part of this template
 - If you make changes to returned roles, make sure to set it back to the template again with setRoles().
   It’s preferable to make changes with addRole() and removeRole() methods instead.
 
+## Arguments
 
-@param string $type Default is 'view', but you may also specify 'edit', 'create' or 'add' to retrieve those.
+- string $type Default is 'view', but you may also specify 'edit', 'create' or 'add' to retrieve those.
 
-@return PageArray of Role objects.
+## Return value
 
-@throws WireException if given an unknown roles type
+PageArray of Role objects.
+
+## Throws
+
+- WireException if given an unknown roles type

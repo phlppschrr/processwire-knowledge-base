@@ -1,4 +1,4 @@
-# Tfa::___buildAuthCodeForm()
+# $tfa->___buildAuthCodeForm(): InputfieldForm
 
 Source: `wire/core/Tfa.php`
 
@@ -8,4 +8,6 @@ This form typically appears on the screen after the user has submitted their log
 
 At minimum it must have an Inputfield with name “tfa_code”
 
-@return InputfieldForm
+## Return value
+
+InputfieldForm

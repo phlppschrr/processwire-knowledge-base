@@ -1,4 +1,4 @@
-# Page::save()
+# $page->save($field = null, array $options = array()): bool
 
 Source: `wire/core/Page.php`
 
@@ -17,13 +17,25 @@ $page->save();
 $page->save('title');
 ~~~~~
 
+## Arguments
 
-@param Field|string $field Optional field to save (name of field or Field object)
+- Field|string $field Optional field to save (name of field or Field object)
+- array $options See Pages::save() documentation for options. You may also specify $options as the first argument if no $field is needed.
 
-@param array $options See Pages::save() documentation for options. You may also specify $options as the first argument if no $field is needed.
+## Return value
 
-@return bool Returns true on success false on fail
+bool Returns true on success false on fail
 
-@throws WireException on database error
+## Throws
 
-@see Pages::save(), Page::saveFields(), Pages::saveField(), Pages::saveReady(), Pages::saveFieldReady(), Pages::saved(), Pages::fieldSaved()
+- WireException on database error
+
+## See also
+
+- [Pages::save()](../Pages/method-___save.md)
+- [Page::saveFields()](method-savefields.md)
+- [Pages::saveField()](../Pages/method-___savefield.md)
+- [Pages::saveReady()](../Pages/method-___saveready.md)
+- [Pages::saveFieldReady()](../Pages/method-___savefieldready.md)
+- [Pages::saved()](../Pages/method-___saved.md)
+- [Pages::fieldSaved()](../Pages/index.md)

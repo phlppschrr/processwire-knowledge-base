@@ -1,13 +1,18 @@
-# ProcessPageListActions::___processAction()
+# $processPageListActions->___processAction(Page $page, $action): array
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
 Process action
 
-@param Page $page
+## Arguments
 
-@param string $action
+- Page $page
+- string $action
 
-@return array
+## Return value
 
-@throws WireException
+array
+
+## Throws
+
+- WireException

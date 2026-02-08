@@ -1,9 +1,13 @@
-# WireSessionHandler::sessionExists()
+# $wireSessionHandler->sessionExists(): bool
 
 Source: `wire/core/WireSessionHandler.php`
 
 Does a session currently exist? (i.e. already one started)
 
-@return bool
+## Return value
 
-@since 3.0.158
+bool
+
+## Meta
+
+- @since 3.0.158

@@ -1,11 +1,14 @@
-# InputfieldTinyMCE::renderReady()
+# $inputfieldTinyMCE->renderReady(?Inputfield $parent = null, $renderValueMode = false): bool
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 Render ready
 
-@param Inputfield|null $parent
+## Arguments
 
-@param bool $renderValueMode
+- Inputfield|null $parent
+- bool $renderValueMode
 
-@return bool
+## Return value
+
+bool

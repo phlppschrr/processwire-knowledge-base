@@ -1,9 +1,13 @@
-# LanguageTranslator::encodeJSON()
+# $languageTranslator->encodeJSON($value): string
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 JSON encode language translation data
 
-@param array|string $value
+## Arguments
 
-@return string
+- array|string $value
+
+## Return value
+
+string

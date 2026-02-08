@@ -1,11 +1,14 @@
-# Tfa::sessionGet()
+# $tfa->sessionGet($key, $blankValue = null): mixed|null
 
 Source: `wire/core/Tfa.php`
 
 Get a session variable for this module
 
-@param string $key
+## Arguments
 
-@param mixed $blankValue Optionally provide replacement blank value if session var does not exist.
+- string $key
+- mixed $blankValue Optionally provide replacement blank value if session var does not exist.
 
-@return mixed|null
+## Return value
+
+mixed|null

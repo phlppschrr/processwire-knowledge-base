@@ -1,7 +1,9 @@
-# FieldSelectorInfo::getOperatorLabels()
+# $fieldSelectorInfo->getOperatorLabels(): array
 
 Source: `wire/core/FieldSelectorInfo.php`
 
 Get array of operators mapped to text labels
 
-@return array
+## Return value
+
+array

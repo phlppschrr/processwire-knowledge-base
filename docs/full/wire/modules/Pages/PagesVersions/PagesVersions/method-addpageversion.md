@@ -1,4 +1,4 @@
-# PagesVersions::addPageVersion()
+# $pagesVersions->addPageVersion(Page $page, array $options = []): int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
@@ -10,13 +10,15 @@ $version = $pagesVersions->addPageVersion($page);
 echo "Added version $version for page $page";
 ~~~~~
 
+## Arguments
 
-@param Page $page
+- Page $page
+- array $options - `description` (string): Optional text description for version. - `names` (array): Names of fields/properties to include in the version or omit for all.
 
-@param array $options
- - `description` (string): Optional text description for version.
- - `names` (array): Names of fields/properties to include in the version or omit for all.
+## Return value
 
-@return int Version number or 0 if no version created
+int Version number or 0 if no version created
 
-@throws WireException|\PDOException
+## Throws
+
+- WireException|\PDOException

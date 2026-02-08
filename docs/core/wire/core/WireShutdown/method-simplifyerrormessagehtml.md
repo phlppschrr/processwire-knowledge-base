@@ -1,11 +1,17 @@
-# WireShutdown::simplifyErrorMessageHTML()
+# $wireShutdown->simplifyErrorMessageHTML($html): string
 
 Source: `wire/core/WireShutdown.php`
 
 Simplify error message HTML for output (inclusive of simplifyErrorMessageText also)
 
-@param string $html
+## Arguments
 
-@return string
+- string $html
 
-@since 3.0.175
+## Return value
+
+string
+
+## Meta
+
+- @since 3.0.175

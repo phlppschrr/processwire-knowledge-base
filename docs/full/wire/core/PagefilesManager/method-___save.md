@@ -1,4 +1,4 @@
-# PagefilesManager::___save()
+# $pagefilesManager->___save()
 
 Source: `wire/core/PagefilesManager.php`
 

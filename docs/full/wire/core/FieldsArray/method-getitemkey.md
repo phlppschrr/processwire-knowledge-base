@@ -1,9 +1,13 @@
-# FieldsArray::getItemKey()
+# $fieldsArray->getItemKey($item): int
 
 Source: `wire/core/FieldsArray.php`
 
 Per WireArray interface, Field instances are keyed by their ID
 
-@param Field $item
+## Arguments
 
-@return int
+- Field $item
+
+## Return value
+
+int

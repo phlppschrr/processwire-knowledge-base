@@ -1,4 +1,4 @@
-# DatabaseQuery::__construct()
+# $databaseQuery->__construct()
 
 Source: `wire/core/DatabaseQuery.php`
 

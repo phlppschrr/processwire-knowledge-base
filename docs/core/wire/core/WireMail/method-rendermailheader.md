@@ -1,7 +1,9 @@
-# WireMail::renderMailHeader()
+# $wireMail->renderMailHeader(): string
 
 Source: `wire/core/WireMail.php`
 
 Render email header string
 
-@return string
+## Return value
+
+string

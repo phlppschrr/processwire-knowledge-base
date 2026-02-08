@@ -1,11 +1,17 @@
-# WireLog::pruneAll()
+# $wireLog->pruneAll($days): array
 
 Source: `wire/core/WireLog.php`
 
 Prune all log files to given number of days
 
-@param int $days
+## Arguments
 
-@return array
+- int $days
 
-@since 3.0.214
+## Return value
+
+array
+
+## Meta
+
+- @since 3.0.214

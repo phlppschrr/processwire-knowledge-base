@@ -1,4 +1,4 @@
-# Pages::___renamed()
+# $pages->___renamed(Page $page)
 
 Source: `wire/core/Pages.php`
 
@@ -15,5 +15,6 @@ Also note this hook may be called if a page's multi-language name changes.
 In those cases the language-specific name is stored in "name123" while the
 previous value is stored in "-name123" (where 123 is the language ID).
 
+## Arguments
 
-@param Page $page The $page that was renamed
+- Page $page The $page that was renamed

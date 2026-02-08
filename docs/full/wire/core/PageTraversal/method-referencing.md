@@ -1,13 +1,15 @@
-# PageTraversal::referencing()
+# $pageTraversal->referencing(Page $page, $field = false, $getCount = false): PageArray|int|array
 
 Source: `wire/core/PageTraversal.php`
 
 Return pages that this page is referencing by way of Page reference fields
 
-@param Page $page
+## Arguments
 
-@param bool|Field|string|int $field Limit results to requested field, or specify boolean true to return array indexed by field names.
+- Page $page
+- bool|Field|string|int $field Limit results to requested field, or specify boolean true to return array indexed by field names.
+- bool $getCount Specify true to return count(s) rather than pages.
 
-@param bool $getCount Specify true to return count(s) rather than pages.
+## Return value
 
-@return PageArray|int|array
+PageArray|int|array

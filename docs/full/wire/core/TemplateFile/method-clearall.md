@@ -1,9 +1,13 @@
-# TemplateFile::clearAll()
+# TemplateFile::clearAll(): int
 
 Source: `wire/core/TemplateFile.php`
 
 Clear out all pending output buffers
 
-@since 3.0.175
+## Return value
 
-@return int Number of output buffers cleaned
+int Number of output buffers cleaned
+
+## Meta
+
+- @since 3.0.175

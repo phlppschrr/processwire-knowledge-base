@@ -1,4 +1,4 @@
-# Pagefiles::deleteAll()
+# $pagefiles->deleteAll(): $this
 
 Source: `wire/core/Pagefiles.php`
 
@@ -6,5 +6,6 @@ Delete all files associated with this Pagefiles instance, leaving a blank Pagefi
 
 The actual deletion of the files does not take effect until `$page->save()`.
 
+## Return value
 
-@return $this
+$this

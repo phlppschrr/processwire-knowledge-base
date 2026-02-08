@@ -1,4 +1,4 @@
-# Page::count()
+# $page->count(): int
 
 Source: `wire/core/Page.php`
 
@@ -20,7 +20,11 @@ $page->of(false); // disable output formatting
 $numTotal = $page->count();
 ~~~~~
 
+## Return value
 
-@return int Quantity of children
+int Quantity of children
 
-@see Page::hasChildren(), Page::numChildren()
+## See also
+
+- [Page::hasChildren()](method-haschildren.md)
+- [Page::numChildren()](method-numchildren.md)

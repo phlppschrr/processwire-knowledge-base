@@ -1,4 +1,4 @@
-# Pageimage::sizeName()
+# $pageimage->sizeName($name, array $options = array()): Pageimage
 
 Source: `wire/core/Pageimage.php`
 
@@ -8,12 +8,19 @@ Settings for predefined sizes can be specified in `$config->imageSizes` array.
 Each named item in this array must contain at least 'width' and 'height, but can also
 contain any other option from the `Pageimage::size()` argument `$options`.
 
-@param string $name Image size name
+## Arguments
 
-@param array $options Optionally add or override options defined for size.
+- string $name Image size name
+- array $options Optionally add or override options defined for size.
 
-@return Pageimage
+## Return value
 
-@since 3.0.151
+Pageimage
 
-@throws WireException If given a $name that is not present in $config->imageSizes
+## Throws
+
+- WireException If given a $name that is not present in $config->imageSizes
+
+## Meta
+
+- @since 3.0.151

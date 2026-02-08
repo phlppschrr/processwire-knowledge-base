@@ -1,4 +1,4 @@
-# ImageSizerEngine::getFocusZoomPosition()
+# $imageSizerEngine->getFocusZoomPosition($focus, $sourceDimension, $cropDimension, $zoom): int
 
 Source: `wire/core/ImageSizerEngine.php`
 
@@ -6,12 +6,13 @@ Helper function to perform a cropExtra / cropBefore cropping
 
 Intended for use by the getFocusZoomCropDimensions() method
 
-@param string $focus (focus point in percent, like: 54.7%)
+## Arguments
 
-@param int $sourceDimension (source image width or height)
+- string $focus (focus point in percent, like: 54.7%)
+- int $sourceDimension (source image width or height)
+- int $cropDimension (target crop-image width or height)
+- int $zoom
 
-@param int $cropDimension (target crop-image width or height)
+## Return value
 
-@param int $zoom
-
-@return int $position (crop position x or y in pixel)
+int $position (crop position x or y in pixel)

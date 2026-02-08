@@ -1,14 +1,14 @@
-# Page::prevAll()
+# $page->prevAll($selector = '', $getQty = false): Page|NullPage|int
 
 Source: `wire/core/Page.php`
 
 Return all sibling pages before this one, optionally matching a selector
 
+## Arguments
 
-@param string|array|bool $selector Optional selector. When specified, will filter the found siblings.
+- string|array|bool $selector Optional selector. When specified, will filter the found siblings.
+- bool|PageArray $getQty Return a count instead of PageArray? (boolean) - If no $selector argument is needed, this may be specified as the first argument. - Legacy support: You may specify a PageArray of siblings to use instead of the default (deprecated, avoid it).
 
-@param bool|PageArray $getQty Return a count instead of PageArray? (boolean)
-  - If no $selector argument is needed, this may be specified as the first argument.
-  - Legacy support: You may specify a PageArray of siblings to use instead of the default (deprecated, avoid it).
+## Return value
 
-@return Page|NullPage|int Returns all matching pages before this one, or integer if $getQty requested.
+Page|NullPage|int Returns all matching pages before this one, or integer if $getQty requested.

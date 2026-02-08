@@ -1,9 +1,13 @@
-# ModulesInfo::getModuleInfoExternal()
+# $modulesInfo->getModuleInfoExternal($moduleName): array
 
 Source: `wire/core/ModulesInfo.php`
 
 Retrieve module info from ModuleName.info.json or ModuleName.info.php
 
-@param string $moduleName
+## Arguments
 
-@return array
+- string $moduleName
+
+## Return value
+
+array

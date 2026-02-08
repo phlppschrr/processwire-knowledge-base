@@ -1,11 +1,17 @@
-# PagesParents::clear()
+# $pagesParents->clear($page): int
 
 Source: `wire/core/PagesParents.php`
 
 Clear page from pages_parents index
 
-@param Page|int $page
+## Arguments
 
-@return int
+- Page|int $page
 
-@since 3.0.156
+## Return value
+
+int
+
+## Meta
+
+- @since 3.0.156

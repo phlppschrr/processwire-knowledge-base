@@ -1,9 +1,13 @@
-# LanguagesValueInterface::getLanguageValue()
+# $languagesValueInterface->getLanguageValue($languageID): string|mixed
 
 Source: `wire/core/Interfaces.php`
 
 Given a language, returns the value in that language
 
-@param Language|int
+## Arguments
 
-@return string|mixed
+- Language|int
+
+## Return value
+
+string|mixed

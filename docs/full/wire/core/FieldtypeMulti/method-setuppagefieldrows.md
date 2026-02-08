@@ -1,15 +1,19 @@
-# FieldtypeMulti::setupPageFieldRows()
+# $fieldtypeMulti->setupPageFieldRows(Page $page, Field $field, $value): WireArray
 
 Source: `wire/core/FieldtypeMulti.php`
 
 Prepare rows for save or delete
 
-@param Page $page
+## Arguments
 
-@param Field $field
+- Page $page
+- Field $field
+- $value
 
-@param $value
+## Return value
 
-@return WireArray
+WireArray
 
-@throws WireException
+## Throws
+
+- WireException

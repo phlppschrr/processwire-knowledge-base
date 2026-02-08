@@ -1,4 +1,4 @@
-# Pages::findOne()
+# $pages->findOne($selector, $options = array()): Page|NullPage
 
 Source: `wire/core/Pages.php`
 
@@ -14,13 +14,21 @@ This method also accepts an `$options` array, whereas `get()` does not.
 $blogPost = $pages->findOne("template=blog-post, sort=-created");
 ~~~~~~
 
+## Arguments
 
-@param string|array|Selectors $selector Selector string, array or Selectors object
+- string|array|Selectors $selector Selector string, array or Selectors object
+- array|string $options See $options for $pages->find()
 
-@param array|string $options See $options for $pages->find()
+## Return value
 
-@return Page|NullPage Returns a Page on success, or a NullPage (having id=0) on failure
+Page|NullPage Returns a Page on success, or a NullPage (having id=0) on failure
 
-@since 3.0.0
+## See also
 
-@see Pages::get(), Pages::find(), Pages::findMany()
+- [Pages::get()](method-get.md)
+- [Pages::find()](method-___find.md)
+- [Pages::findMany()](method-findmany.md)
+
+## Meta
+
+- @since 3.0.0

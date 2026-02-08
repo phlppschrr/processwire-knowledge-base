@@ -1,9 +1,10 @@
-# WireInputDataCookie::__construct()
+# $wireInputDataCookie->__construct(&$input = array(), $lazy = false)
 
 Source: `wire/core/WireInputDataCookie.php`
 
 Construct
 
-@param array $input Associative array of variables to store
+## Arguments
 
-@param bool $lazy Use lazy loading?
+- array $input Associative array of variables to store
+- bool $lazy Use lazy loading?

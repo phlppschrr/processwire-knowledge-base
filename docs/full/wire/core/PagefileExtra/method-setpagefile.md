@@ -1,7 +1,9 @@
-# PagefileExtra::setPagefile()
+# $pagefileExtra->setPagefile(Pagefile $pagefile)
 
 Source: `wire/core/PagefileExtra.php`
 
 Set Pagefile instance this extra is connected to
 
-@param Pagefile $pagefile
+## Arguments
+
+- Pagefile $pagefile

@@ -1,7 +1,9 @@
-# AdminThemeFramework::getHeadline()
+# $adminThemeFramework->getHeadline(): string
 
 Source: `wire/core/AdminThemeFramework.php`
 
 Get the current page headline
 
-@return string
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# ProcessPageSearchLive::find()
+# $processPageSearchLive->find(array &$liveSearch): array
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
@@ -29,6 +29,10 @@ $result = array(
   )
 );
 
-@param array $liveSearch
+## Arguments
 
-@return array Array of matches
+- array $liveSearch
+
+## Return value
+
+array Array of matches

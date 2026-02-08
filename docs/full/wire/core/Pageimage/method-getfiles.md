@@ -1,9 +1,13 @@
-# Pageimage::getFiles()
+# $pageimage->getFiles(): array
 
 Source: `wire/core/Pageimage.php`
 
 Get all filenames associated with this image
 
-@return array
+## Return value
 
-@since 3.0.233
+array
+
+## Meta
+
+- @since 3.0.233

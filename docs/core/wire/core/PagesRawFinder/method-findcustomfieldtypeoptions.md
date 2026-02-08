@@ -1,4 +1,4 @@
-# PagesRawFinder::findCustomFieldtypeOptions()
+# $pagesRawFinder->findCustomFieldtypeOptions(Field $field, $cols, $getArray, $getAllCols)
 
 Source: `wire/core/PagesRaw.php`
 
@@ -13,12 +13,13 @@ To use, specify one of the following in the fields to get (where field_name is a
 - `field_name.title` to include the selected option titles.
 - `field_name.value` to include the selected option values.
 
-@param Field $field
+## Arguments
 
-@param array $cols
+- Field $field
+- array $cols
+- bool $getArray
+- bool $getAllCols
 
-@param bool $getArray
+## Meta
 
-@param bool $getAllCols
-
-@since 3.0.193
+- @since 3.0.193

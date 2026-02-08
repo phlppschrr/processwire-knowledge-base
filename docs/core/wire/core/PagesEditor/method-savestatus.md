@@ -1,4 +1,4 @@
-# PagesEditor::saveStatus()
+# $pagesEditor->saveStatus(Page $page): bool
 
 Source: `wire/core/PagesEditor.php`
 
@@ -6,9 +6,14 @@ Silently save whatever the given Page’s status currently is
 
 This action does not update the Page modified date.
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return bool
+## Return value
 
-@since 3.0.146
+bool
+
+## Meta
+
+- @since 3.0.146

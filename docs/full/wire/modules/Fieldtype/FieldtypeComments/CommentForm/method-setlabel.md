@@ -1,11 +1,14 @@
-# CommentForm::setLabel()
+# $commentForm->setLabel($label, $value)
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
 Set label
 
-@param string $label Label name
+## Arguments
 
-@param string $value Label value
+- string $label Label name
+- string $value Label value
 
-@deprecated Use labels() method instead
+## Meta
+
+- @deprecated Use labels() method instead

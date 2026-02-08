@@ -1,4 +1,4 @@
-# FunctionsAPI::fields()
+# $functionsAPI->fields($name = ''): Fields|Field|null
 
 Source: `wire/core/FunctionsAPI.php`
 
@@ -12,9 +12,14 @@ $field = fields()->get('title'); // regular syntax
 $field = fields('title'); // shortcut syntax
 ~~~~~
 
+## Arguments
 
-@param string $name Optional field name to retrieve
+- string $name Optional field name to retrieve
 
-@return Fields|Field|null
+## Return value
 
-@see Fields
+Fields|Field|null
+
+## See also
+
+- Fields

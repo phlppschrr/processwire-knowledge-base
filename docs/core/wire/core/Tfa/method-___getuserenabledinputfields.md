@@ -1,4 +1,4 @@
-# Tfa::___getUserEnabledInputfields()
+# $tfa->___getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings)
 
 Source: `wire/core/Tfa.php`
 
@@ -6,8 +6,8 @@ Get fields for when user already has TFA enabled
 
 This method does not need to be implemented by TFA modules unless they want to add something to it.
 
-@param User $user
+## Arguments
 
-@param InputfieldWrapper $fieldset
-
-@param array $settings
+- User $user
+- InputfieldWrapper $fieldset
+- array $settings

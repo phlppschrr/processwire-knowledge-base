@@ -1,7 +1,9 @@
-# PageArrayIterator::key()
+# $pageArrayIterator->key(): int
 
 Source: `wire/core/PageArrayIterator.php`
 
 Get current key/position
 
-@return int
+## Return value
+
+int

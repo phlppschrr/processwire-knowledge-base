@@ -1,11 +1,17 @@
-# WireCache::arrayToPageArray()
+# $wireCache->arrayToPageArray(array $data): PageArray
 
 Source: `wire/core/WireCache.php`
 
 Convert a cacheable array to a PageArray
 
-@param array $data
+## Arguments
 
-@return PageArray
+- array $data
 
-@since 2.5.28
+## Return value
+
+PageArray
+
+## Meta
+
+- @since 2.5.28

@@ -1,9 +1,13 @@
-# PageProperties::statusToNames()
+# PageProperties::statusToNames($status): array
 
 Source: `wire/core/PageProperties.php`
 
 Given a status (flags int) return array of status names
 
-@param int $status
+## Arguments
 
-@return array
+- int $status
+
+## Return value
+
+array

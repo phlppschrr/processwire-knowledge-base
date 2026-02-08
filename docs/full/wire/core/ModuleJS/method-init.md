@@ -1,4 +1,4 @@
-# ModuleJS::init()
+# $moduleJS->init()
 
 Source: `wire/core/ModuleJS.php`
 

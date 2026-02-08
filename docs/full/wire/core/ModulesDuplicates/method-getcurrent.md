@@ -1,9 +1,13 @@
-# ModulesDuplicates::getCurrent()
+# $modulesDuplicates->getCurrent($className): string|null
 
 Source: `wire/core/ModulesDuplicates.php`
 
 Get the current duplicate in use (string) or null if not specified
 
-@param $className
+## Arguments
 
-@return string|null Pathname or null
+- $className
+
+## Return value
+
+string|null Pathname or null

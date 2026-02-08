@@ -1,9 +1,13 @@
-# InputfieldTinyMCEFormats::invalidStylesArrayToStr()
+# $inputfieldTinyMCEFormats->invalidStylesArrayToStr(array $a): string
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Convert invalid_styles array to string
 
-@param array $a
+## Arguments
 
-@return string
+- array $a
+
+## Return value
+
+string

@@ -1,4 +1,4 @@
-# Session::CSRF()
+# $session->CSRF(): SessionCSRF
 
 Source: `wire/core/Session.php`
 
@@ -19,7 +19,12 @@ if($session->CSRF->hasValidToken()) {
 }
 ~~~~
 
+## Return value
 
-@return SessionCSRF
+SessionCSRF
 
-@see SessionCSRF::renderInput(), SessionCSRF::validate(), SessionCSRF::hasValidToken()
+## See also
+
+- [SessionCSRF::renderInput()](../SessionCSRF/method-renderinput.md)
+- [SessionCSRF::validate()](../SessionCSRF/method-validate.md)
+- [SessionCSRF::hasValidToken()](../SessionCSRF/method-hasvalidtoken.md)

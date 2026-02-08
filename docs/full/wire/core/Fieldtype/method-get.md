@@ -1,10 +1,13 @@
-# Fieldtype::get()
+# $fieldtype->get($key): mixed
 
 Source: `wire/core/Fieldtype.php`
 
 Get a property from this Fieldtype’s data
 
+## Arguments
 
-@param string $key
+- string $key
 
-@return mixed
+## Return value
+
+mixed

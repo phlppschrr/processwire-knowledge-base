@@ -1,4 +1,4 @@
-# PageValues::getFields()
+# $pageValues->getFields(Page $page): FieldsArray
 
 Source: `wire/core/PageValues.php`
 
@@ -9,7 +9,10 @@ this method are in the context of this page/template. Meaning returned Field
 objects may have some properties that are different from the Field outside of
 the context of this page.
 
+## Arguments
 
-@param Page $page
+- Page $page
 
-@return FieldsArray of Field objects
+## Return value
+
+FieldsArray of Field objects

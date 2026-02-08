@@ -1,9 +1,13 @@
-# PagesPathFinder::languageName()
+# $pagesPathFinder->languageName($language): string
 
 Source: `wire/core/PagesPathFinder.php`
 
 Return name for given language id or object
 
-@param int|string|Language $language
+## Arguments
 
-@return string
+- int|string|Language $language
+
+## Return value
+
+string

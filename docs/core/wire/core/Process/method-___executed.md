@@ -1,8 +1,9 @@
-# Process::___executed()
+# $process->___executed($method)
 
 Source: `wire/core/Process.php`
 
 Hookable method automatically called after execute() method has finished.
 
+## Arguments
 
-@param string $method Name of method that was executed
+- string $method Name of method that was executed

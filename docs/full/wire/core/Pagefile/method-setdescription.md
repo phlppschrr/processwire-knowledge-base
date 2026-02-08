@@ -1,11 +1,14 @@
-# Pagefile::setDescription()
+# $pagefile->setDescription($value, ?Page $language = null): $this
 
 Source: `wire/core/Pagefile.php`
 
 Set a description, optionally parsing JSON language-specific descriptions to separate properties
 
-@param string|array $value
+## Arguments
 
-@param Language|null Langage to set it for. Omit to determine automatically.
+- string|array $value
+- Language|null Langage to set it for. Omit to determine automatically.
 
-@return $this
+## Return value
+
+$this

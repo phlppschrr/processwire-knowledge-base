@@ -1,13 +1,18 @@
-# WireInputData::___callUnknown()
+# $wireInputData->___callUnknown($method, $arguments): string|int|array|float|null
 
 Source: `wire/core/WireInputData.php`
 
 Maps to Sanitizer functions
 
-@param string $method
+## Arguments
 
-@param array $arguments
+- string $method
+- array $arguments
 
-@return string|int|array|float|null Returns null when input variable does not exist
+## Return value
 
-@throws WireException
+string|int|array|float|null Returns null when input variable does not exist
+
+## Throws
+
+- WireException

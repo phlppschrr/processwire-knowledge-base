@@ -1,11 +1,17 @@
-# SelectableOptionManager::deleteAllOptionsForField()
+# $selectableOptionManager->deleteAllOptionsForField(Field $field): int
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Delete all options for given field
 
-@param Field $field
+## Arguments
 
-@return int
+- Field $field
 
-@throws WireException
+## Return value
+
+int
+
+## Throws
+
+- WireException

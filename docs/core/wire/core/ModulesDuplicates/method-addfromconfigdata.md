@@ -1,9 +1,10 @@
-# ModulesDuplicates::addFromConfigData()
+# $modulesDuplicates->addFromConfigData($className, array $data)
 
 Source: `wire/core/ModulesDuplicates.php`
 
 Add duplicates from module config data
 
-@param $className
+## Arguments
 
-@param array $data
+- $className
+- array $data

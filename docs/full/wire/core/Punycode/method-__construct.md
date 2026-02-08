@@ -1,7 +1,9 @@
-# Punycode::__construct()
+# $punycode->__construct($encoding = 'UTF-8')
 
 Source: `wire/core/Punycode.php`
 
 Constructor
 
-@param string $encoding Character encoding
+## Arguments
+
+- string $encoding Character encoding

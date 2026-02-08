@@ -1,13 +1,18 @@
-# ProcessModuleInstall::unzipModule()
+# $processModuleInstall->unzipModule($zipFile, $destinationDir = ''): bool|string
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Unzip the module file to tempDir and then copy to destination directory
 
-@param string $zipFile File to unzip
+## Arguments
 
-@param string $destinationDir Directory to copy completed files into. Optionally omit to determine automatically.
+- string $zipFile File to unzip
+- string $destinationDir Directory to copy completed files into. Optionally omit to determine automatically.
 
-@return bool|string Returns destinationDir on success, false on failure
+## Return value
 
-@throws WireException
+bool|string Returns destinationDir on success, false on failure
+
+## Throws
+
+- WireException

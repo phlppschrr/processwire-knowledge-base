@@ -1,4 +1,4 @@
-# InputfieldWrapper::import()
+# $inputfieldWrapper->import($items): $this
 
 Source: `wire/core/InputfieldWrapper.php`
 
@@ -9,11 +9,19 @@ exclude the wrapper itself. This is different from `InputfieldWrapper::add()`
 in that add() would add the wrapper, not just the children. See also
 the `InputfieldWrapper::importArray()` method.
 
+## Arguments
 
-@param InputfieldWrapper|array|InputfieldsArray $items Wrapper containing items to add
+- InputfieldWrapper|array|InputfieldsArray $items Wrapper containing items to add
 
-@return $this
+## Return value
 
-@throws WireException
+$this
 
-@see InputfieldWrapper::add(), InputfieldWrapper::importArray()
+## Throws
+
+- WireException
+
+## See also
+
+- [InputfieldWrapper::add()](method-add.md)
+- [InputfieldWrapper::importArray()](method-importarray.md)

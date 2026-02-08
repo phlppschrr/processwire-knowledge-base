@@ -1,4 +1,4 @@
-# WireInput::httpsUrl()
+# $wireInput->httpsUrl($options = array()): string
 
 Source: `wire/core/WireInput.php`
 
@@ -6,11 +6,14 @@ Same as httpUrl() method but always uses https scheme, rather than current reque
 
 See httpUrl() method for argument and usage details.
 
+## Arguments
 
-@param array|bool $options Specify `withQueryString` (bool) option, or in 3.0.167+ you can also use an options array:
- - `withQueryString` (bool): Include the query string as well? (if present, default=false)
- - `page` (Page): Page object to use, if different from $page (default=$page)
+- array|bool $options Specify `withQueryString` (bool) option, or in 3.0.167+ you can also use an options array: - `withQueryString` (bool): Include the query string as well? (if present, default=false) - `page` (Page): Page object to use, if different from $page (default=$page)
 
-@return string
+## Return value
 
-@see WireInput::httpUrl()
+string
+
+## See also
+
+- [WireInput::httpUrl()](method-httpurl.md)

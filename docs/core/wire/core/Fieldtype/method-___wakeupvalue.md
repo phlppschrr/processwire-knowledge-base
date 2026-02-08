@@ -1,4 +1,4 @@
-# Fieldtype::___wakeupValue()
+# $fieldtype->___wakeupValue(Page $page, Field $field, $value): string|int|array|object
 
 Source: `wire/core/Fieldtype.php`
 
@@ -10,13 +10,16 @@ then this would be the method that converts that value to an object and returns 
 This method is called by the Page class, which takes the value provided by `Fieldtype::loadPageField()` and sends
 it to this method before making it a part of the Page.
 
+## Arguments
 
-@param Page $page
+- Page $page
+- Field $field
+- string|int|array $value
 
-@param Field $field
+## Return value
 
-@param string|int|array $value
+string|int|array|object $value
 
-@return string|int|array|object $value
+## See also
 
-@see Fieldtype::sleepValue()
+- [Fieldtype::sleepValue()](method-___sleepvalue.md)

@@ -1,4 +1,4 @@
-# Pagefiles::findTag()
+# $pagefiles->findTag($tag): Pagefiles
 
 Source: `wire/core/Pagefiles.php`
 
@@ -13,8 +13,16 @@ Given tag may be any of the following:
 
 3.0.17 Added support for multiple AND tags and allow tag specified as an array.
 
-@param string|array $tag
+## Arguments
 
-@return Pagefiles New Pagefiles array with items that matched the given tag(s).
+- string|array $tag
 
-@see Pagefiles::getTag(), Pagefile::hasTag(), Pagefile::tags()
+## Return value
+
+Pagefiles New Pagefiles array with items that matched the given tag(s).
+
+## See also
+
+- [Pagefiles::getTag()](method-gettag.md)
+- [Pagefile::hasTag()](../Pagefile/method-hastag.md)
+- [Pagefile::tags()](../Pagefile/method-tags.md)

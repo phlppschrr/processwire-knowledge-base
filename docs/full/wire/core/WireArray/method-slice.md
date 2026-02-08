@@ -1,4 +1,4 @@
-# WireArray::slice()
+# $wireArray->slice($start, $limit = 0): WireArray
 
 Source: `wire/core/WireArray.php`
 
@@ -12,9 +12,11 @@ If `$limit` is omitted, then it includes everything beyond the starting point.
 $myItems = $items->slice(0, 3);
 ~~~~~
 
+## Arguments
 
-@param int $start Starting index.
+- int $start Starting index.
+- int $limit Number of items to include. If omitted, includes the rest of the array.
 
-@param int $limit Number of items to include. If omitted, includes the rest of the array.
+## Return value
 
-@return WireArray Returns a new WireArray.
+WireArray Returns a new WireArray.

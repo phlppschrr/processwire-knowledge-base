@@ -1,11 +1,14 @@
-# PageValues::getDotValue()
+# $pageValues->getDotValue(Page $page, $key): mixed|null
 
 Source: `wire/core/PageValues.php`
 
 Given a 'field.subfield' type string traverse properties and return value
 
-@param Page $page
+## Arguments
 
-@param string $key
+- Page $page
+- string $key
 
-@return mixed|null
+## Return value
+
+mixed|null

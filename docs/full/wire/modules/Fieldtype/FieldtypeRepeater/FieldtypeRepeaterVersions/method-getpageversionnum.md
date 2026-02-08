@@ -1,7 +1,12 @@
-# FieldtypeRepeaterVersions::getPageVersionNum()
+# $fieldtypeRepeaterVersions->getPageVersionNum(Page $page): int
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeaterVersions.php`
 
-@param Page $page
 
-@return int
+## Arguments
+
+- Page $page
+
+## Return value
+
+int

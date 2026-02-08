@@ -1,4 +1,4 @@
-# Inputfield::___getConfigInputfields()
+# $inputfield->___getConfigInputfields(): InputfieldWrapper
 
 Source: `wire/core/Inputfield.php`
 
@@ -31,7 +31,10 @@ public function ___getConfigInputfields() {
 }
 ~~~~
 
+## Return value
 
-@return InputfieldWrapper Populated with Inputfield instances
+InputfieldWrapper Populated with Inputfield instances
 
-@see Inputfield::getConfigArray()
+## See also
+
+- [Inputfield::getConfigArray()](method-___getconfigarray.md)

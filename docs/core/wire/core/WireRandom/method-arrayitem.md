@@ -1,4 +1,4 @@
-# WireRandom::arrayItem()
+# $wireRandom->arrayItem(array $a, array $options = array()): mixed|array|null
 
 Source: `wire/core/WireRandom.php`
 
@@ -12,11 +12,11 @@ Get a random item (or items, key or keys) from the given array
 - When using the `getArray` option, returned array will have keys retained, except when `qty`
   option exceeds the number of items in given array `$a`, then keys will not be retained.
 
-@param array $a Array to get random item from
+## Arguments
 
-@param array $options Options to modify behavior:
- - `qty` (int): Return this quantity of item(s) (default=1).
- - `getKey` (bool): Return item key(s) rather than values.
- - `getArray` (bool): Return array (with original keys) rather than value (default=false if qty==1, true if not).
+- array $a Array to get random item from
+- array $options Options to modify behavior: - `qty` (int): Return this quantity of item(s) (default=1). - `getKey` (bool): Return item key(s) rather than values. - `getArray` (bool): Return array (with original keys) rather than value (default=false if qty==1, true if not).
 
-@return mixed|array|null
+## Return value
+
+mixed|array|null

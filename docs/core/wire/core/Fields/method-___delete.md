@@ -1,4 +1,4 @@
-# Fields::___delete()
+# $fields->___delete(Saveable $item): bool
 
 Source: `wire/core/Fields.php`
 
@@ -6,8 +6,14 @@ Delete a Field from the database
 
 This method will throw a WireException if you attempt to delete a field that is currently in use (i.e. assigned to one or more fieldgroups).
 
-@param Field $item Field to delete
+## Arguments
 
-@return bool True on success, false on failure
+- Field $item Field to delete
 
-@throws WireException
+## Return value
+
+bool True on success, false on failure
+
+## Throws
+
+- WireException

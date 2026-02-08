@@ -1,11 +1,14 @@
-# Comment::set()
+# $comment->set($key, $value): self|WireData
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Set property
 
-@param string $key
+## Arguments
 
-@param mixed $value
+- string $key
+- mixed $value
 
-@return self|WireData
+## Return value
+
+self|WireData

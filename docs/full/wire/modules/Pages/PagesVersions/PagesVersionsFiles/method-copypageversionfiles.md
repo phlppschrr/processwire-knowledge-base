@@ -1,11 +1,14 @@
-# PagesVersionsFiles::copyPageVersionFiles()
+# $pagesVersionsFiles->copyPageVersionFiles(Page $page, $version): bool|int
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Copy files for given $page into version directory
 
-@param Page $page
+## Arguments
 
-@param int $version
+- Page $page
+- int $version
 
-@return bool|int
+## Return value
+
+bool|int

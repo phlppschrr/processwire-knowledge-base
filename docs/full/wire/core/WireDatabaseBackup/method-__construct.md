@@ -1,4 +1,4 @@
-# WireDatabaseBackup::__construct()
+# $wireDatabaseBackup->__construct($path = '')
 
 Source: `wire/core/WireDatabaseBackup.php`
 
@@ -9,7 +9,10 @@ You should follow-up the construct call with one or both of the following:
 	- $backups->setDatabase(PDO|WireDatabasePDO);
 	- $backups->setDatabaseConfig(array|object);
 
+## Arguments
 
-@param string $path Path where database files are stored
+- string $path Path where database files are stored
 
-@throws \Exception
+## Throws
+
+- \Exception
