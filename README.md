@@ -41,6 +41,12 @@ This will:
 
 Downloads happen only if sources are missing. Use `python3 src/update_docs.py --fetch` to refresh.
 
+## Release Tags
+Generate a ProcessWire+date release tag (e.g. `pw-3.0.255-2026-02-09`):
+```bash
+python3 scripts/make_release_tag.py
+```
+
 ## Optional: Cache Official Docs (HTML)
 ```bash
 python3 src/cache_docs.py
