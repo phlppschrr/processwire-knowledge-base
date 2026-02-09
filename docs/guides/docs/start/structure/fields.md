@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/start/structure/fields/
 
-## Summary
-
-Fields in ProcessWire are where the content is actually stored. Any field may be one of many storing content for a Page and its output.
-
-## Key Points
-
-- Fields in ProcessWire are where the content is actually stored. Any field may be one of many storing content for a Page and its output.
-- Fields store a single type of content. For instance, a base ProcessWire installation has a field named "title" that contains the Title of each Page. Thus there is one Title field per Page. Most ProcessWire installations also have a field called "body" which stores the multi-line Body Copy of a Page.
-- These fields are defined in ProcessWire, and every installation can have a different set of fields. The relevant fields are added to each template in whatever combination and order the site developer chooses. A given field can be added to one or more templates, so fields are reusable across templates.
-
 ## Sections
 
 

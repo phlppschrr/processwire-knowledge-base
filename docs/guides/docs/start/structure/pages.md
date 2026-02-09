@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/start/structure/pages/
 
-## Summary
-
-Almost everything in ProcessWire is represented by a Page. The term “Page” refers to a webpage, though in ProcessWire it’s also much more.
-
-## Key Points
-
-- Almost everything in ProcessWire is represented by a Page. The term “Page” refers to a webpage, though in ProcessWire it’s also much more.
-- Page is the primarily type used in ProcessWire, representing everything from the pages on your website to the users that access it. But there's nothing complex about a Page, in fact, it's really very simple.
-- A webpage has a dedicated URL that you can type in your web browser and view. That accurately describes a ProcessWire Page too. A webpage usually has content, so does a Page in ProcessWire. Though in ProcessWire, a Page is not just something for the browser to load or the eyes to look at. It is a dedicated location with a unique URL where content is stored, whether visible to the browser or not.
-
 ## Sections
 
 

@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/front-end/front-end-editing/
 
-## Summary
-
-Edit pages on the front-end of your site with the core PageFrontEdit module.
-
-## Key Points
-
-- Front-end editing is available in ProcessWire 3.0 and newer.
-- The *PageFrontEdit* module must be installed. It is included with the core and can be found at: Admin > Modules > Core > Page > Front-end page editor.
-- Non-superusers must have [page-edit](/api/user-access/permissions/#page-edit) and [page-front-edit](/api/user-access/permissions/#page-edit-front) permission in order to make front-end page edits.
-
 ## Sections
 
 
@@ -24,7 +14,7 @@ Edit pages on the front-end of your site with the core PageFrontEdit module.
 
 - Front-end editing is available in ProcessWire 3.0 and newer.
 - The *PageFrontEdit* module must be installed. It is included with the core and can be found at: Admin > Modules > Core > Page > Front-end page editor.
-- Non-superusers must have [page-edit](/api/user-access/permissions/#page-edit) and [page-front-edit](/api/user-access/permissions/#page-edit-front) permission in order to make front-end page edits.
+- Non-superusers must have [page-edit](../user-access/permissions.md#page-edit) and [page-front-edit](../user-access/permissions.md#page-edit-front) permission in order to make front-end page edits.
 
 
 ## Enabling front-end editing

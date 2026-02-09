@@ -2,14 +2,6 @@
 
 Source: https://processwire.com/docs/front-end/
 
-## Summary
-
-Topics on using the ProcessWire API to render output on the front-end of your site with your template files.
-
-## Key Points
-
-- Topics on using the ProcessWire API to render output on the front-end of your site with your template files.
-
 ## Sections
 
 

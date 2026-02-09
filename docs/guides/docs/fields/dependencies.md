@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/fields/dependencies/
 
-## Summary
-
-Input and field dependencies enable you to specify the conditions under which a particular field in the page editor is shown or required.
-
-## Key Points
-
-- [Video: dependencies in action](#video)
-- [Types of field dependencies](#types)
-- [Selector string format](#selectors)
-- [Allowed operators](#operators)
-- [Limitations](#limitations)
-
 ## Sections
 
 
@@ -102,7 +90,7 @@ fullname!='', items>5
 When using selector strings with Inputfield dependencies, the format is largely the same as [regular selector strings](/docs/selectors/) except that not as many options are yet supported.
 
 - Currently, the "value" may not contain commas (as they are used to separate conditions) but that is only a short term limitation.
-- While you can specify OR conditions with "|" in the field or value you cannot use [OR groups](/api/selectors/#or-groups).
+- While you can specify OR conditions with "|" in the field or value you cannot use [OR groups](../selectors.md#or-groups).
 - The "~=" string matching operator is not supported.
 - Subfields are not yet supported, except for "count", i.e. "field_name.count".
 - Not all Inputfields will work with dependencies, though most should. We'll later update this page with a list of core Inputfields that are known not to work with dependencies.

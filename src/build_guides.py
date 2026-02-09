@@ -63,6 +63,32 @@ class GuidePage:
     kind: str = "page"
 
 
+@dataclass
+class ApiLinkIndex:
+    docs_root: Path
+    class_map: dict[str, Path]
+    method_map: dict[tuple[str, str], Path]
+
+
+API_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+
+API_CLASS_ALIASES = {
+    "functions": "functionsapi",
+    "input": "wireinput",
+    "log": "wirelog",
+}
+
+API_VARIABLE_ALIASES = {
+    "arrays": "wirearray",
+    "array": "wirearray",
+    "input": "wireinput",
+}
+
+API_REF_OVERRIDES = {
+    "markuppagernav": "full/wire/modules/Markup/MarkupPagerNav/PagerNav/index.md",
+}
+
+
 def should_suppress(element: Tag) -> bool:
     for attr in ["id", "class"]:
         val = element.get(attr)
@@ -81,6 +107,180 @@ def normalize_text(text: str) -> str:
     text = html.unescape(text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def normalize_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", value.lower())
+
+
+def build_api_link_index(docs_root: Path) -> ApiLinkIndex | None:
+    index_path = None
+    full_index = docs_root / "full" / "_search.json"
+    core_index = docs_root / "core" / "_search.json"
+    if full_index.exists():
+        index_path = full_index
+    elif core_index.exists():
+        index_path = core_index
+    class_map: dict[str, Path] = {}
+    method_map: dict[tuple[str, str], Path] = {}
+
+    if index_path is not None:
+        base_dir = index_path.parent
+        try:
+            data = json.loads(index_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            data = {}
+        for item in data.get("items", []):
+            item_type = item.get("type")
+            if item_type in {"class", "file"}:
+                name = item.get("name")
+                file = item.get("file")
+                if not name or not file:
+                    continue
+                class_map[normalize_key(name)] = base_dir / file
+            elif item_type == "method":
+                class_name = item.get("class")
+                name = item.get("name")
+                file = item.get("file")
+                if not class_name or not name or not file:
+                    continue
+                method_map[(normalize_key(class_name), normalize_key(name))] = base_dir / file
+
+    return ApiLinkIndex(
+        docs_root=docs_root,
+        class_map=class_map,
+        method_map=method_map,
+    )
+
+
+def extract_api_path(url: str) -> tuple[str, str, str, bool]:
+    raw = url.strip()
+    if raw.startswith("api/"):
+        raw = "/" + raw
+    if raw.startswith("//"):
+        parsed = urlparse("https:" + raw)
+    elif re.match(r"^[a-z][a-z0-9+.-]*://", raw):
+        parsed = urlparse(raw)
+    elif raw.startswith("processwire.com/") or raw.startswith("www.processwire.com/"):
+        parsed = urlparse("https://" + raw)
+    else:
+        parsed = urlparse(raw)
+
+    path = parsed.path or ""
+    is_processwire = "processwire.com" in (parsed.netloc or "").lower()
+    if not is_processwire and "processwire.com" in path:
+        idx = path.find("processwire.com")
+        path = path[idx + len("processwire.com") :]
+        if not path.startswith("/"):
+            path = "/" + path
+        is_processwire = True
+
+    return path, parsed.query, parsed.fragment, is_processwire
+
+
+def resolve_api_ref(path: str, index: ApiLinkIndex | None) -> Path | None:
+    if index is None:
+        return None
+    remainder = path.split("/api/ref/", 1)[1].strip("/")
+    if not remainder:
+        target = index.docs_root / "full" / "index.md"
+        if target.exists():
+            return target
+        target = index.docs_root / "core" / "index.md"
+        return target if target.exists() else None
+
+    parts = [p for p in remainder.split("/") if p]
+    if not parts:
+        return None
+
+    class_key = normalize_key(parts[0])
+    class_key = API_CLASS_ALIASES.get(class_key, class_key)
+    override = API_REF_OVERRIDES.get(class_key)
+    if override:
+        override_path = index.docs_root / override
+        if override_path.exists():
+            return override_path
+    class_target = index.class_map.get(class_key)
+    if not class_target:
+        return None
+
+    if len(parts) == 1:
+        return class_target
+
+    method_key = normalize_key(parts[1])
+    method_target = index.method_map.get((class_key, method_key))
+    return method_target or class_target
+
+
+def resolve_api_docs(path: str, index: ApiLinkIndex | None) -> Path | None:
+    remainder = path.split("/api/", 1)[1].strip("/")
+    if not remainder:
+        return None
+
+    docs_root = index.docs_root if index else None
+    if docs_root:
+        guide_candidate = docs_root / "guides" / "docs" / f"{remainder}.md"
+        if guide_candidate.exists():
+            return guide_candidate
+
+    if remainder.startswith("variables/"):
+        var_slug = remainder.split("/", 1)[1].strip("/")
+        class_key = normalize_key(var_slug)
+        class_key = API_VARIABLE_ALIASES.get(class_key, class_key)
+        if index and class_key in index.class_map:
+            return index.class_map[class_key]
+        return None
+
+    if remainder in {"arrays", "array"}:
+        class_key = normalize_key("WireArray")
+        if index and class_key in index.class_map:
+            return index.class_map[class_key]
+        return None
+
+    return None
+
+
+def rewrite_api_url(url: str, out_path: Path, index: ApiLinkIndex | None) -> str | None:
+    path, query, fragment, is_processwire = extract_api_path(url)
+    if not path:
+        return None
+    if not (is_processwire or path.startswith("/api/")):
+        return None
+    if not path.startswith("/api/"):
+        return None
+
+    target: Path | None
+    if path.startswith("/api/ref/"):
+        target = resolve_api_ref(path, index)
+    else:
+        target = resolve_api_docs(path, index)
+
+    if target is None:
+        return None
+
+    rel = Path(os.path.relpath(target, start=out_path.parent)).as_posix()
+    if query:
+        rel = f"{rel}?{query}"
+    if fragment:
+        rel = f"{rel}#{fragment}"
+    return rel
+
+
+def rewrite_api_links(lines: list[str], out_path: Path, index: ApiLinkIndex | None) -> list[str]:
+    if index is None:
+        return lines
+    updated: list[str] = []
+
+    def repl(match: re.Match) -> str:
+        text, url = match.group(1), match.group(2)
+        new_url = rewrite_api_url(url, out_path, index)
+        if new_url:
+            return f"[{text}]({new_url})"
+        return match.group(0)
+
+    for line in lines:
+        updated.append(API_LINK_RE.sub(repl, line))
+    return updated
 
 
 
@@ -314,6 +514,30 @@ def maybe_wrap_code(text: str) -> str:
     return text
 
 
+CODE_SNIPPET_RE = re.compile(
+    r"(\$[A-Za-z_][A-Za-z0-9_]*(?:->\w+(?:\([^)]*\))?)?)"
+)
+
+
+def wrap_inline_code_snippets(text: str) -> str:
+    if not text or "$" not in text:
+        return text
+    parts = text.split("`")
+    for idx in range(0, len(parts), 2):
+        parts[idx] = CODE_SNIPPET_RE.sub(r"`\1`", parts[idx])
+    return "`".join(parts)
+
+
+def wrap_table_key(text: str) -> str:
+    if not text:
+        return text
+    if text.startswith("`") and text.endswith("`"):
+        return text
+    if " " not in text and len(text) <= 60:
+        return f"`{text}`"
+    return text
+
+
 def render_markdown_table(rows: list[list[str]], has_header: bool = True) -> list[str]:
     """Render a List of Lists as a Markdown table."""
     if not rows:
@@ -331,8 +555,12 @@ def render_markdown_table(rows: list[list[str]], has_header: bool = True) -> lis
     clean_rows = []
     for row in rows:
         clean_row = []
-        for cell in row:
-            val = cell.replace("|", "\\|")
+        for idx, cell in enumerate(row):
+            val = cell
+            if not has_header and idx == 0:
+                val = wrap_table_key(val)
+            val = wrap_inline_code_snippets(val)
+            val = val.replace("|", "\\|")
             val = maybe_wrap_code(val)
             clean_row.append(val)
         
@@ -511,17 +739,8 @@ def load_url_groups(path: Path) -> list[tuple[str, list[str]]]:
     return groups
 
 
-def render_guide_page(doc: GuideDoc, out_path: Path) -> None:
+def render_guide_page(doc: GuideDoc, out_path: Path, link_index: ApiLinkIndex | None = None) -> None:
     lines: list[str] = [f"# {doc.title}", "", f"Source: {doc.url}", ""]
-    if doc.summary:
-        lines.extend(["## Summary", "", doc.summary, ""])
-
-    key_points = extract_key_points(doc.blocks)
-    if key_points:
-        lines.extend(["## Key Points", ""])
-        for point in key_points:
-            lines.append(f"- {point}")
-        lines.append("")
 
     sections = build_sections(doc.blocks)
     if sections:
@@ -529,6 +748,7 @@ def render_guide_page(doc: GuideDoc, out_path: Path) -> None:
         lines.extend(render_sections(sections, max_sections=None))
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = rewrite_api_links(lines, out_path, link_index)
     out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
@@ -549,6 +769,7 @@ def build_selectors_cheatsheet(
     selectors_doc: GuideDoc,
     operators_doc: GuideDoc,
     out_path: Path,
+    link_index: ApiLinkIndex | None = None,
 ) -> GuidePage:
     lines: list[str] = ["# Selector Cheatsheet", ""]
     lines.append(f"Source: {selectors_doc.url}")
@@ -564,6 +785,7 @@ def build_selectors_cheatsheet(
         lines.extend(render_table_as_list(rows, max_rows=80))
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = rewrite_api_links(lines, out_path, link_index)
     out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     return GuidePage(
         url=operators_doc.url,
@@ -581,6 +803,7 @@ def build_template_output_primer(
     fields_doc: GuideDoc,
     output_doc: GuideDoc,
     out_path: Path,
+    link_index: ApiLinkIndex | None = None,
 ) -> GuidePage:
     lines: list[str] = ["# Templates, Fields & Output Primer", ""]
     lines.append(f"Source: {pages_doc.url}")
@@ -601,6 +824,7 @@ def build_template_output_primer(
         lines.extend(["", "## Output Strategies", "", output_doc.summary])
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = rewrite_api_links(lines, out_path, link_index)
     out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     return GuidePage(
         url=output_doc.url,
@@ -636,13 +860,11 @@ def build_api_variables_map(
     variables_doc: GuideDoc,
     core_index: Path,
     out_path: Path,
+    link_index: ApiLinkIndex | None = None,
 ) -> GuidePage:
     lines: list[str] = ["# API Variables Map", ""]
     lines.append(f"Source: {variables_doc.url}")
     lines.append("")
-
-    if variables_doc.summary:
-        lines.extend(["## Summary", "", variables_doc.summary, ""])
 
     variables = extract_api_variables(core_index)
     if variables:
@@ -660,6 +882,7 @@ def build_api_variables_map(
                 lines.append(f"- ${name}")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = rewrite_api_links(lines, out_path, link_index)
     out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     return GuidePage(
         url=variables_doc.url,
@@ -676,6 +899,7 @@ def build_checklist(
     docs: list[GuideDoc],
     out_path: Path,
     category: str,
+    link_index: ApiLinkIndex | None = None,
 ) -> GuidePage:
     lines: list[str] = [f"# {title}", ""]
     for doc in docs:
@@ -688,6 +912,7 @@ def build_checklist(
         lines.append(f"- {doc.title}: {summary}")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = rewrite_api_links(lines, out_path, link_index)
     out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     return GuidePage(
         url=docs[0].url if docs else "",
@@ -800,6 +1025,7 @@ def main() -> int:
     cache_root = Path(args.cache)
     urls_path = Path(args.urls)
     out_dir = Path(args.out)
+    link_index = build_api_link_index(out_dir.parent)
 
     if args.fetch or not cache_root.exists() or not (cache_root / "_index.json").exists():
         try:
@@ -834,7 +1060,7 @@ def main() -> int:
             docs[url] = doc
             rel_out = url_to_out_path(url)
             page_path = out_dir / rel_out
-            render_guide_page(doc, page_path)
+            render_guide_page(doc, page_path, link_index=link_index)
             pages.append(
                 GuidePage(
                     url=url,
@@ -854,6 +1080,7 @@ def main() -> int:
                 selectors_doc,
                 operators_doc,
                 out_dir / "cheatsheets/selectors.md",
+                link_index=link_index,
             )
         )
 
@@ -869,6 +1096,7 @@ def main() -> int:
                 fields_doc,
                 output_doc,
                 out_dir / "cheatsheets/templates-output.md",
+                link_index=link_index,
             )
         )
 
@@ -880,6 +1108,7 @@ def main() -> int:
                 variables_doc,
                 core_index,
                 out_dir / "cheatsheets/api-variables.md",
+                link_index=link_index,
             )
         )
 
@@ -902,6 +1131,7 @@ def main() -> int:
                 security_docs,
                 out_dir / "cheatsheets/security.md",
                 "Cheatsheets",
+                link_index=link_index,
             )
         )
 
@@ -920,6 +1150,7 @@ def main() -> int:
                 language_docs,
                 out_dir / "cheatsheets/multi-language.md",
                 "Cheatsheets",
+                link_index=link_index,
             )
         )
 

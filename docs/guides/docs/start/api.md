@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/start/api/
 
-## Summary
-
-What the API is, why we think you'll like it, and how it makes ProcessWire a unique platform in the CMS landscape.
-
-## Key Points
-
-- What the API is, why we think you'll like it, and how it makes ProcessWire a unique platform in the CMS landscape.
-- API means application programming interface. In our context, it most commonly refers to the clearly defined interface (or tools) that the web developer uses to interact with content managed by the CMS. This interaction is most commonly used to produce output (like markup for the front-end of a site). In our case, the interactions can also be to manipulate content, create new content, and so on.
-- ProcessWire is entirely built around the API, and its admin panel is actually a website built using this API. ProcessWire was a headless CMS before there was a term for it. ProcessWire's easy-to-use API can do everything that you can do interactively in the admin, and more.
-
 ## Sections
 
 
@@ -63,7 +53,7 @@ ProcessWire’s API consists of a few different components:
 
 The API consists of a few variables (via PHP objects) which are provided to your site's template files. These variables enable you to get or modify anything from your content, much in the same way that jQuery enables you to get and modify anything from the DOM.
 
-The two most common API variables are [$page](/api/variables/page/) and [$pages](/docs/start/variables/pages/). For some sites, this is all that you will ever use. The $page API variables represents the current page being viewed, and $pages represents all the other pages in your site. These can be thought of like the `$()` object in jQuery.
+The two most common API variables are [$page](../../../full/wire/core/Page/index.md) and [$pages](/docs/start/variables/pages/). For some sites, this is all that you will ever use. The $page API variables represents the current page being viewed, and $pages represents all the other pages in your site. These can be thought of like the `$()` object in jQuery.
 
 ProcessWire's API variables provide access to all the components in ProcessWire, including all the site's pages, users, templates and fields. They provide a means of finding, getting, creating, modifying, saving and deleting these types of data.
 

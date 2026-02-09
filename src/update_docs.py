@@ -51,6 +51,11 @@ def main() -> int:
         help="Fetch sources if missing or refresh existing",
     )
     parser.add_argument(
+        "--guides",
+        action="store_true",
+        help="Build guide docs output (default: off)",
+    )
+    parser.add_argument(
         "--branch",
         default=None,
         help="ProcessWire branch to fetch",
@@ -101,19 +106,20 @@ def main() -> int:
         ]
     )
 
-    guides_cmd = [
-        sys.executable,
-        str(ROOT_DIR / "src/build_guides.py"),
-        "--cache",
-        args.cache,
-        "--urls",
-        args.urls,
-        "--out",
-        str(docs_root / "guides"),
-    ]
-    if args.fetch:
-        guides_cmd.append("--fetch")
-    run(guides_cmd)
+    if args.guides:
+        guides_cmd = [
+            sys.executable,
+            str(ROOT_DIR / "src/build_guides.py"),
+            "--cache",
+            args.cache,
+            "--urls",
+            args.urls,
+            "--out",
+            str(docs_root / "guides"),
+        ]
+        if args.fetch:
+            guides_cmd.append("--fetch")
+        run(guides_cmd)
 
     run(
         [

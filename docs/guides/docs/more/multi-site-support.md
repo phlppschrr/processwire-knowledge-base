@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/more/multi-site-support/
 
-## Summary
-
-The core supports multiple sites running on the same web account and ProcessWire installation, with each site maintaining its own database and /site/ directory. This section outlines how to install multiple sites on the same ProcessWire installation using this method.
-
-## Key Points
-
-- Sites remain independent from each other and thus highly organized and easy to maintain or move.
-- This method of multi-site support is built into ProcessWire's core and thus doesn't require installation of any other modules.
-- If your sites are different from one another in terms of design and function, then you'll find this approach may be preferable in keeping your site's templates, fields and modules more organized.
-
 ## Sections
 
 

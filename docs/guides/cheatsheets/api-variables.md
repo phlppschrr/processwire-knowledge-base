@@ -2,10 +2,6 @@
 
 Source: https://processwire.com/docs/start/variables/
 
-## Summary
-
-ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.
-
 ## Variables
 
 - $page (../../core/wire/core/Page/index.md)

@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/multi-language-support/multi-language-urls/
 
-## Summary
-
-Multi-language URLs and page names enable you to maintain different/translated URLs for each page, based on the language. It also lets you produce your site easily, as the language is determined automatically by the URL.
-
-## Key Points
-
-- [Overview](#overview)
-- [Example](#example)
-- [Getting started](#getting-started)
-- [Going further](#going-further)
-- [Implementing a language switcher](#language-switcher)
-
 ## Sections
 
 

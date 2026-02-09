@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/fields/ckeditor/
 
-## Summary
-
-CKEditor is the rich text editor used by ProcessWire via the module InputfieldCKEditor. On a default installation of ProcessWire, there is typically a “body” field which uses CKEditor.
-
-## Key Points
-
-- Multi-language textarea fields
-- Textarea fields in repeaters
-- Any instance where you have multiple (3+) CKEditor textarea fields in the same page editor.
-
 ## Sections
 
 

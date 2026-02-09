@@ -2,15 +2,6 @@
 
 Source: https://processwire.com/docs/multi-language-support/code-i18n/
 
-## Summary
-
-This page provides detailed documentation on everything you need to know to make your template files or modules translatable using ProcessWire's translation tools.
-
-## Key Points
-
-- When your translation needs occur outside of a class–such as in a template file–you must use the `__('string')` function call.
-- When your translation needs occur within a Processwire class–such as in a plugin module–it is preferable (though not required) to use `$this->_('string')`.
-
 ## Sections
 
 

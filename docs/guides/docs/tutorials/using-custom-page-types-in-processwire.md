@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/tutorials/using-custom-page-types-in-processwire/
 
-## Summary
-
-A look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types.
-
-## Key Points
-
-- A look at some lesser known advanced techniques that enable you to introduce new conveniences by creating custom page types.
-- An advanced tutorial by Benjamin Milde
-- As ProcessWire users you're probably aware of the fact that core objects like users, roles or languages are just pages. But that fact can actually be missed out quite easily as ProcessWire's api does offer lot's of conveniencies, which are specific to those objects.
-
 ## Sections
 
 

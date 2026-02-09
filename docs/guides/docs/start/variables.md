@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/start/variables/
 
-## Summary
-
-ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.
-
-## Key Points
-
-- ProcessWire provides various API variables to every template file. These variables provide full access to all site content. This page provides an introduction on how to use them.
-- API variables can be accessed in a few different ways. The most common way is as a variable. Here are a few different ways you might access the same $page API variable (as an example):
-- `$page` the most common access as a variable.
-
 ## Sections
 
 
@@ -39,7 +29,7 @@ API variables can be accessed in a few different ways. The most common way is as
 
 Accessing API variables as a function rather than a variable can be more convenient when the variable version may be out of scope, or if your IDE highlights API variables as undefined. So whenever we refer to an API variable, make note that access it however you'd like.
 
-This is just an introduction to some of ProcessWire's API variables. Once you are familiar with these, you'll want to use ProcessWire's full [API reference](/api/ref/) instead.
+This is just an introduction to some of ProcessWire's API variables. Once you are familiar with these, you'll want to use ProcessWire's full [API reference](../../../full/index.md) instead.
 
 
 ### Some of ProcessWire’s most common API variables

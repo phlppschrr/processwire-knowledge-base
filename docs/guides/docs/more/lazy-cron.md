@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/more/lazy-cron/
 
-## Summary
-
-This core module provides hooks that are automatically executed at various intervals.
-
-## Key Points
-
-- every30Seconds
-- everyMinute
-- every2Minutes
-- every3Minutes
-- every4Minutes
-
 ## Sections
 
 

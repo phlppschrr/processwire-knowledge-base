@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/start/api-access/
 
-## Summary
-
-In ProcessWire there are several ways that you can access the API and we take a look at the most common ones here. Regardless of what method you use, you are technically accessing what are called API variables.
-
-## Key Points
-
-- `$page` when $page in scope
-- `page()` when using functions API
-- `wire('page')` works anywhere
-- `$wire->page` when $wire in scope
-- `$this->page` when in Wire-derived classes
-
 ## Sections
 
 
@@ -21,7 +9,7 @@ In ProcessWire there are several ways that you can access the API and we take a 
 
 In ProcessWire there are several ways that you can access the API and we take a look at the most common ones here. Regardless of what method you use, you are technically accessing what are called API variables.
 
-Each API variable has a unique name to distinguish it from others. For instance, the “pages” (plural) API variable provides access to loading and saving pages, the “page” (singular) API variable provides access to the page being viewed, the “input” API variable provides access to user input, and so on. See the [API reference](/api/ref/) for a full list of ProcessWire’s core API variables.
+Each API variable has a unique name to distinguish it from others. For instance, the “pages” (plural) API variable provides access to loading and saving pages, the “page” (singular) API variable provides access to the page being viewed, the “input” API variable provides access to user input, and so on. See the [API reference](../../../full/index.md) for a full list of ProcessWire’s core API variables.
 
 There are several different ways to access these API variables. For instance, all of the following accesses to the $page API variable are synonyms of each other, though with different benefits depending on the context:
 
@@ -41,7 +29,7 @@ Whichever way you access an API variable, there’s no need for confusion, simpl
 
 In the same manner, you might have several different shoes that you wear, but it does not matter what shoes you wear because you are always the same person. Changing shoes does not cause you to become confused, thinking you are now a different person. You naturally choose different shoes depending on the context, like wearing boots in the snow, or sandals at the pool. Regardless of what shoes you wear, those shoes are still walking the same person. Likewise, you can choose different ways of accessing the ProcessWire API depending on the context. Though you don’t have to unless you want to—if you are comfortable with one particular access method, it's generally fine to stick with it. But, since you are reading this, I'm guessing you are interested in learning more…
 
-However you access the API variables, each has several methods/functions and/or properties that enable you to communicate with the API variable. This part is always the same, regardless of how you’ve accessed a particular API variable. For instance, with the “pages” API variable you might ask it to find pages using the [find()](/api/ref/pages/find/) method, i.e. `$pages->find('selector')` or `pages()->find('selector')`. Or on the “page” API variable, you might ask it for the “title” of the current page from the page title property, i.e. `$page->title` or `page()->title`.
+However you access the API variables, each has several methods/functions and/or properties that enable you to communicate with the API variable. This part is always the same, regardless of how you’ve accessed a particular API variable. For instance, with the “pages” API variable you might ask it to find pages using the [find()](../../../full/wire/core/Pages/method-___find.md) method, i.e. `$pages->find('selector')` or `pages()->find('selector')`. Or on the “page” API variable, you might ask it for the “title” of the current page from the page title property, i.e. `$page->title` or `page()->title`.
 
 So now you know—there are several different ways that you can access these API variables, and it doesn’t really matter how you do so. But over time you may find one method preferable over another, depending on the context. The most common context is from your site’s template files. Other contexts include the code of modules and/or PHP classes, or even other applications or scripts that you’ve booted ProcessWire from. We’ll cover all of these contexts here, though most users will likely be focused on the context of template files since that is where most site-specific development occurs.
 
@@ -120,7 +108,7 @@ Most web developers use a software for editing their template files that recogni
 
 The problem is that whenever you access an API $variable, the editor will flag it as an error since it can see that the variable has not previously been defined. Of course, the variable actually is defined (at runtime, rather than explicitly), but there’s not really a way for the editor to know that.
 
-Ignoring these “undefined” and “unknown” errors is a minor annoyance, but there’s another factor. Even if we turn off those “undefined” and “unknown” inspections, the editor still doesn’t know what the variable is. As far as it knows, `$pages` (or any other API variable) could be null, a string, an integer, or an instance of anything. It has no idea it is actually an instance of the [Pages](/api/ref/pages/) class. And as a result, it cannot provide us with code hinting, auto completion or argument details when we access anything from that API variable. We are essentially flying blind, using our IDE as if it were just a plain text editor. However, we can overcome that limitation by specifically telling our IDE what each variable is, like this:
+Ignoring these “undefined” and “unknown” errors is a minor annoyance, but there’s another factor. Even if we turn off those “undefined” and “unknown” inspections, the editor still doesn’t know what the variable is. As far as it knows, `$pages` (or any other API variable) could be null, a string, an integer, or an instance of anything. It has no idea it is actually an instance of the [Pages](../../../full/wire/core/Pages/index.md) class. And as a result, it cannot provide us with code hinting, auto completion or argument details when we access anything from that API variable. We are essentially flying blind, using our IDE as if it were just a plain text editor. However, we can overcome that limitation by specifically telling our IDE what each variable is, like this:
 
 ```
 /** @var Pages $pages */
@@ -153,7 +141,7 @@ API variables are distinctly different types from your own runtime variables. Ye
 
 ### The functions API also has adds extra helper functions
 
-This is a fairly minor point, but beyond just providing access to ProcessWire’s core API variables, enabling the functions API also enables some additional functions that are convenient for website development, such as [region()](/api/ref/functions/region/), [setting()](/api/ref/functions/setting/), and perhaps more down the road. The region() function stores runtime markup, while the setting() function enables you to maintain site-specific settings.
+This is a fairly minor point, but beyond just providing access to ProcessWire’s core API variables, enabling the functions API also enables some additional functions that are convenient for website development, such as [region()](../../../full/wire/core/FunctionsAPI/method-region.md), [setting()](../../../full/wire/core/FunctionsAPI/method-setting.md), and perhaps more down the road. The region() function stores runtime markup, while the setting() function enables you to maintain site-specific settings.
 
 
 ### Potential drawbacks of the functions API
@@ -199,7 +187,7 @@ While `$this->var` works, in most cases we recommend going a step further and in
 
 ### Accessing API variables from hooks
 
-Hooks have the same considerations as classes. You won’t be able to directly access variables like `$pages` because they are out of scope. However, if your hook function happens to be in a class, then you can access API variables the way that was described in the section before this one. Though there’s also another way. Very often hooks are defined as a function directly on the `addHook()` statement. Every hook receives a [HookEvent](/api/ref/hook-event/) object. You can access all of the API variables from the `wire()` method of the HookEvent. In the example below we are accessing the [$log](/api/ref/log/) API variable from the HookEvent’s wire() method:
+Hooks have the same considerations as classes. You won’t be able to directly access variables like `$pages` because they are out of scope. However, if your hook function happens to be in a class, then you can access API variables the way that was described in the section before this one. Though there’s also another way. Very often hooks are defined as a function directly on the `addHook()` statement. Every hook receives a [HookEvent](../../../full/wire/core/HookEvent/index.md) object. You can access all of the API variables from the `wire()` method of the HookEvent. In the example below we are accessing the [$log](../../../full/wire/core/WireLog/index.md) API variable from the HookEvent’s wire() method:
 
 ```php
 $pages->addHookAfter("saved", function(HookEvent $e) {

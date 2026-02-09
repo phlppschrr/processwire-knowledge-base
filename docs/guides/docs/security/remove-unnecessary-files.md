@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/security/remove-unnecessary-files/
 
-## Summary
-
-ProcessWire comes with several files that you will no longer need after installation.
-
-## Key Points
-
-- /install.php
-- /site-default/
-- /site-languages/
-- /site-beginner/
-- /site-blank/
-
 ## Sections
 
 

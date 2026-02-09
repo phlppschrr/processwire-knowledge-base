@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/user-access/permissions/
 
-## Summary
-
-Permissions represent a granular permission to access something or to perform some action. This page outlines permissions recognized by the core.
-
-## Key Points
-
-- Permissions represent a granular permission to access something or to perform some action. This page outlines permissions recognized by the core.
-- Your system may also have permissions beyond those mentioned here. Any given module may install its own permissions, and likewise you may add your own custom permissions. This page only documents permissions commonly used by the core.
-- Permissions in ProcessWire are objects of type Permission (a type of Page object). They each represent permission to access something, or to perform some action. Each permission has a name, and most are self describing. For instance, the page-edit permission is the foundation of providing page editing access.
-
 ## Sections
 
 

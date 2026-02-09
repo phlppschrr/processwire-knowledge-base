@@ -2,17 +2,6 @@
 
 Source: https://processwire.com/docs/modules/about-site-modules/
 
-## Summary
-
-This directory /site/modules/ is where you may install additional 3rd party plugin modules, or create your own. Modules in this directory are specific to your site only.
-
-## Key Points
-
-- To find and download new modules, see the [modules directory](https://processwire.com/modules/process-hello/).
-- For more information about modules, see the [modules documentation](https://processwire.com/docs/modules/).
-- For discussion and support of modules, see [modules support forum](https://processwire.com/talk/forum/4-modulesplugins/).
-- For commercially developed and supported 1st party modules see [Pro modules](/store/).
-
 ## Sections
 
 

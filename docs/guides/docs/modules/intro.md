@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/modules/intro/
 
-## Summary
-
-Learn about what modules are, what different flavors of modules are available, how to install them, and where to get them.
-
-## Key Points
-
-- Learn about what modules are, what different flavors of modules are available, how to install them, and where to get them.
-- At the simplest level, a module is a PHP file containing a class that adheres to ProcessWire’s *Module* interface. Modules enable a high level of extensibility and customization to ProcessWire. Much of ProcessWire itself is a collection of plugin modules. In fact, the ProcessWire admin application is just a group of modules.
-- In ProcessWire, there are *Core modules* and *Site modules*. Core modules (stored in /wire/modules/) are modules that are included with the core, many of which come pre-installed since they provide much of the functionality in ProcessWire. On the other hand, *Site modules* (stored in /site/modules/) are those that you obtain separately (or create) and install yourself.
-
 ## Sections
 
 

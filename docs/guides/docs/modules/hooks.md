@@ -2,14 +2,6 @@
 
 Source: https://processwire.com/docs/modules/hooks/
 
-## Summary
-
-ProcessWire contains many methods that you may easily hook in order to modify the behavior of the method. Hooks can also be used to add new methods to existing classes.
-
-## Key Points
-
-- **URL/path hooks:** A special type of hook that enables the ability to hook into ProcessWire's request URL routing to add your own custom handlers.
-
 ## Sections
 
 
@@ -28,9 +20,9 @@ ProcessWire contains many methods that you may easily hook in order to modify th
 
 ### What methods in ProcessWire are hookable?
 
-Any method that begins with 3 underscores, i.e. `___method()`, is hookable in ProcessWire.* There are hundreds of them. The ProcessWire [API reference](/api/ref/) outlines the hookable methods for every class and API variable in ProcessWire. Note the icon in the right column of each method list table which identifies hookable methods ([example](/docs/start/variables/pages/#pwapi-methods-hooker)). If you click on the details of any hookable method ([example](/api/ref/pages/saved/)), it also provides introduction of how to hook both before and after that method ([example](/api/ref/pages/saved/#pwapi-hooking)).
+Any method that begins with 3 underscores, i.e. `___method()`, is hookable in ProcessWire.* There are hundreds of them. The ProcessWire [API reference](../../../full/index.md) outlines the hookable methods for every class and API variable in ProcessWire. Note the icon in the right column of each method list table which identifies hookable methods ([example](/docs/start/variables/pages/#pwapi-methods-hooker)). If you click on the details of any hookable method ([example](../../../full/wire/core/Pages/method-___saved.md)), it also provides introduction of how to hook both before and after that method ([example](../../../full/wire/core/Pages/method-___saved.md#pwapi-hooking)).
 
-New methods added to a class via a hook are themselves hookable too. For example, `Page::render()`, `Page::viewable()` and `Page::editable()` are all methods added to the [Page](/api/ref/page/) class via method hooks. If you view the /wire/core/Page.php class, you'll see that none of these methods actually exist in the class. However, you can hook before or after any of them just as easily as if they were defined in the class.
+New methods added to a class via a hook are themselves hookable too. For example, `Page::render()`, `Page::viewable()` and `Page::editable()` are all methods added to the [Page](../../../full/wire/core/Page/index.md) class via method hooks. If you view the /wire/core/Page.php class, you'll see that none of these methods actually exist in the class. However, you can hook before or after any of them just as easily as if they were defined in the class.
 
 If you can't find a hook that you need (or just aren't sure) post a question in the [forum](/talk/). If we don't already have a hook for what you need, we can usually add one.
 
@@ -623,5 +615,5 @@ $wire->addHook('Inputfield::render', function(HookEvent $e) {
 ### Additional reading
 
 - Load the [Helloworld](http://modules.processwire.com/modules/helloworld/) module in your code/text editor for a good example of various hooks attached via an autoload module.
-- [HookEvent class](/api/ref/hook-event/)
+- [HookEvent class](../../../full/wire/core/HookEvent/index.md)
 - [URL/path hooks](/blog/posts/pw-3.0.173/#introducing-url-path-hooks)

@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/tutorials/how-to-structure-your-template-files/
 
-## Summary
-
-How to use some of the more common strategies used by developers in structuring template files. Includes pros and cons as well as extensive examples.
-
-## Key Points
-
-- include the head.inc file
-- output content
-- include the foot.inc file
-
 ## Sections
 
 

@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/front-end/how-to-use-url-segments/
 
-## Summary
-
-URL segments enable your page’s template file to become a URL router or controller to act upon different URLs sent to it.
-
-## Key Points
-
-- URL segments enable your page’s template file to become a URL router or controller to act upon different URLs sent to it.
-- URL segments are the parts of a URL or path delimited by slashes. So if you had the path /path/to/page/ then "path", "to", and "page" would each be a URL segment. But ProcessWire actually uses the term "URL segments" to refer to the extra parts of that URL/path that did not resolve to a page.
-- Lets assume that the path /products/tools/hammer/ resolved to an actual page in our site when accessed at that URL. But lets say that we accessed the URL /products/tools/hammer/photos/ and the /photos/ portion at the end does not resolve to a page. Because "photos" did not resolve to a page, ProcessWire considers this a URL segment for the "hammer" page. If URL segments are enabled for the page's template, then the "hammer" page will displayed, despite the fact that we had the "photos" segment at the end. Because it is the first URL segment that didn't resolve to a page, it is considered URL segment #1.
-
 ## Sections
 
 

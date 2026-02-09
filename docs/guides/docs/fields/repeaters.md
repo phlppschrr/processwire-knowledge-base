@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/fields/repeaters/
 
-## Summary
-
-The repeater fieldtype enables you to create a group of fields and make it repeatable in any quantity on your page. This opens many new possibilities with how you might manage and structure data.
-
-## Key Points
-
-- feet_high
-- num_floors
-- year_built
-
 ## Sections
 
 
@@ -64,7 +54,7 @@ Now you can edit or create any pages using that template and they will have the 
 
 ### Outputting repeatable fields
 
-The individual items contained in a repeater field are technically pages in ProcessWire. The value of a repeater field is a [PageArray](/api/ref/page-array/). As a result, you may interact with them exactly like you would any other group of pages in ProcessWire. You might iterate through and output the group of items like this (using the fictional buildings repeater, created in the previous section):
+The individual items contained in a repeater field are technically pages in ProcessWire. The value of a repeater field is a [PageArray](../../../full/wire/core/PageArray/index.md). As a result, you may interact with them exactly like you would any other group of pages in ProcessWire. You might iterate through and output the group of items like this (using the fictional buildings repeater, created in the previous section):
 
 ```
 foreach($page->buildings as $building) {
@@ -80,7 +70,7 @@ That's all there is to it. Everything that you know about outputting any other p
 
 ### Testing for an empty value
 
-Like with any other [PageArray](/api/ref/page-array/), you can tell how many items there are by using count():
+Like with any other [PageArray](../../../full/wire/core/PageArray/index.md), you can tell how many items there are by using count():
 
 ```
 if(count($page->buildings)) {

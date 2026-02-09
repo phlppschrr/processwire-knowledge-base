@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/modules/types/
 
-## Summary
-
-This page looks at the different predefined types of modules in ProcessWire and what they do. It also provides the recommended naming prefixes for modules so that ProcessWire can recognize your module type without actually loading it.
-
-## Key Points
-
-- [Fieldtype](/api/ref/fieldtype/) for defining field types.
-- [Inputfield](/api/ref/inputfield/) for defining types of form input fields.
-- [Process](/api/ref/process/) for creating admin processes/applications.
-- [Textformatter](/api/ref/textformatter/) for formatting text.
-- [AdminTheme](/api/ref/admin-theme-framework/) for creating themes in the admin.
-
 ## Sections
 
 
@@ -21,18 +9,18 @@ This page looks at the different predefined types of modules in ProcessWire and 
 
 This page looks at the different predefined types of modules in ProcessWire and what they do. It also provides the recommended naming prefixes for modules so that ProcessWire can recognize your module type without actually loading it.
 
-ProcessWire comes with a base [Module interface](/api/ref/module/) for implementing any kind of plugin, as well as a few abstract and base objects for predefined module types that can be extended to create a module of that type. Common examples of predefined module types in ProcessWire include:
+ProcessWire comes with a base [Module interface](../../../full/wire/core/_Module/index.md) for implementing any kind of plugin, as well as a few abstract and base objects for predefined module types that can be extended to create a module of that type. Common examples of predefined module types in ProcessWire include:
 
-- [Fieldtype](/api/ref/fieldtype/) for defining field types.
-- [Inputfield](/api/ref/inputfield/) for defining types of form input fields.
-- [Process](/api/ref/process/) for creating admin processes/applications.
-- [Textformatter](/api/ref/textformatter/) for formatting text.
-- [AdminTheme](/api/ref/admin-theme-framework/) for creating themes in the admin.
-- [WireMail](/api/ref/wire-mail/) for modules that send email and extend the *WireMail* class.
-- [Tfa](/api/ref/tfa/) for implementing a specific kind of two-factor authentication.
-- [ImageSizerEngine](/api/ref/image-sizer-engine/) for modules that extend *ImageSizerEngine* for resizing images.
-- [FileCompiler](/api/ref/file-compiler-module/) for modules that extend *FileCompilerModule* for compilation of files.
-- [FileValidator](/api/ref/file-validator-module/) for modules that extend *FileValidatorModule* for validation of files.
+- [Fieldtype](../../../full/wire/core/Fieldtype/index.md) for defining field types.
+- [Inputfield](../../../full/wire/core/Inputfield/index.md) for defining types of form input fields.
+- [Process](../../../full/wire/core/Process/index.md) for creating admin processes/applications.
+- [Textformatter](../../../full/wire/core/Textformatter/index.md) for formatting text.
+- [AdminTheme](../../../full/wire/core/AdminThemeFramework/index.md) for creating themes in the admin.
+- [WireMail](../../../full/wire/core/WireMail/index.md) for modules that send email and extend the *WireMail* class.
+- [Tfa](../../../full/wire/core/Tfa/index.md) for implementing a specific kind of two-factor authentication.
+- [ImageSizerEngine](../../../full/wire/core/ImageSizerEngine/index.md) for modules that extend *ImageSizerEngine* for resizing images.
+- [FileCompiler](../../../full/wire/core/FileCompilerModule/index.md) for modules that extend *FileCompilerModule* for compilation of files.
+- [FileValidator](../../../full/wire/core/FileValidatorModule/index.md) for modules that extend *FileValidatorModule* for validation of files.
 
 
 ### Naming conventions

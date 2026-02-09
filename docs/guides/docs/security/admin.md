@@ -2,17 +2,6 @@
 
 Source: https://processwire.com/docs/security/admin/
 
-## Summary
-
-Information about the design and purpose of the admin environment and how to protect it. Overview of securing your admin, preventing attacks, SSL certificates, tracking logins, enabling 2FA, managing page edit access and other security best practices.
-
-## Key Points
-
-- Login to your ProcessWire admin. In the page tree, click and edit the *Admin* page.
-- Click the *Settings* tab and change the *Name* field to something different. After changing it, save.
-- You will get a 404 error–this is normal, because your admin no longer lives at the previous URL.
-- In your browser address bar, enter your new admin URL and you are good to go.
-
 ## Sections
 
 

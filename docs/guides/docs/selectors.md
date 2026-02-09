@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/selectors/
 
-## Summary
-
-Selectors are simple strings of text that specify fields and values. These selectors are used throughout ProcessWire to find pages (and other types of data).
-
-## Key Points
-
-- [The components of a selector](#components)
-- [Where do you use selectors?](#where)
-- [Selector fields](#fields)
-- [Selector operators](#operators)
-- [Selector values](#values)
-
 ## Sections
 
 
@@ -185,7 +173,7 @@ After the operator comes the selector value that we want to match. At the basic 
 body*="sushi, tobiko"
 ```
 
-If you don't surround such a selector in quotes, then ProcessWire will assume the comma is starting another selector (see specifying multiple selectors, below). Selector values may not contain double quotes as part of the value to match, unless you escape them with a backslash character "\". Because the need to match double quotes is rare, a simpler approach is just to disallow double quotes from appearing in your selector values by filtering them out of user input. See the [$sanitizer->selectorValue()](/api/ref/sanitizer/selector-value/) method for a simple way to sanitize strings going into a selector.
+If you don't surround such a selector in quotes, then ProcessWire will assume the comma is starting another selector (see specifying multiple selectors, below). Selector values may not contain double quotes as part of the value to match, unless you escape them with a backslash character "\". Because the need to match double quotes is rare, a simpler approach is just to disallow double quotes from appearing in your selector values by filtering them out of user input. See the [$sanitizer->selectorValue()](../../full/wire/core/Sanitizer/method-selectorvalue.md) method for a simple way to sanitize strings going into a selector.
 
 Selector values may contain single quotes or apostrophes. For that reason, single quotes aren't interchangeable with double quotes for surrounding selector values.
 
@@ -500,7 +488,7 @@ Currently matching the same (1) row is known to be supported by multi-value Page
 
 ### Access control in selectors
 
-Pages with *hidden* or *unpublished* status will not appear in the results from database-querying selectors that can return multiple pages (i.e. functions that return the [PageArray](/api/ref/page-array/) type). For instance `$pages->find()`, `$page->children()`, etc. In addition, pages that the user does not have access to view (via access control in template settings) will also not appear in the results. All of this is usually expected and desirable behavior. However, there may be instances where you actually want to include hidden, unpublished or non-viewable pages in results. To do this, you can use the "include" or "check_access" properties in your selectors.
+Pages with *hidden* or *unpublished* status will not appear in the results from database-querying selectors that can return multiple pages (i.e. functions that return the [PageArray](../../full/wire/core/PageArray/index.md) type). For instance `$pages->find()`, `$page->children()`, etc. In addition, pages that the user does not have access to view (via access control in template settings) will also not appear in the results. All of this is usually expected and desirable behavior. However, there may be instances where you actually want to include hidden, unpublished or non-viewable pages in results. To do this, you can use the "include" or "check_access" properties in your selectors.
 
 These are best demonstrated by examples:
 
@@ -518,7 +506,7 @@ $pages->find("template=skyscraper, include=all");
 $pages->find("template=skyscraper, check_access=0");
 ```
 
-Note that [$pages->get(…);](/api/ref/pages/get/) is not subject to this behavior (or access control) and `include=all` is assumed. This is because requesting a single page is a very specific request, and not typically used for generating navigation. To put it another way, if you are asking for a single specific page, we assume you mean it. If you want to retrieve a single page where include=all is not assumed, then use [$pages->findOne(…)](/api/ref/pages/find-one/) instead.
+Note that [$pages->get(…);](../../full/wire/core/Pages/method-__get.md) is not subject to this behavior (or access control) and `include=all` is assumed. This is because requesting a single page is a very specific request, and not typically used for generating navigation. To put it another way, if you are asking for a single specific page, we assume you mean it. If you want to retrieve a single page where include=all is not assumed, then use [$pages->findOne(…)](../../full/wire/core/Pages/method-findone.md) instead.
 
 The examples above are all focused on including pages in results that wouldn't usually be included, among other pages. But lets say that you want to find only pages that have a hidden, unpublished or locked status. This is a fairly uncommon need, so no need to commit this to memory, but we'll include it for completeness. You can do it by querying the "status" property:
 
@@ -553,14 +541,14 @@ $year = (int) $input->post->year;
 $matches = $pages->find("year=$year");
 ```
 
-If your selector value needs to contain more arbitrary strings, like for text matching, you must sanitize the value before sending it to a selector. You may want to use ProcessWire's built in [$sanitizer](/docs/start/variables/sanitizer/) for that purpose, specifically [$sanitizer->selectorValue()](/api/ref/sanitizer/selector-value/). The sanitizer will remove any characters from the selector that could be problematic. Here is how to use it from your templates:
+If your selector value needs to contain more arbitrary strings, like for text matching, you must sanitize the value before sending it to a selector. You may want to use ProcessWire's built in [$sanitizer](/docs/start/variables/sanitizer/) for that purpose, specifically [$sanitizer->selectorValue()](../../full/wire/core/Sanitizer/method-selectorvalue.md). The sanitizer will remove any characters from the selector that could be problematic. Here is how to use it from your templates:
 
 ```php
 $keywords = $sanitizer->selectorValue($input->get->keywords); 
 $matches = $pages->find("keywords~=$keywords");
 ```
 
-Though less common, if you are using a field name provided by user input, you should sanitize it like this with [$sanitizer->selectorField()](/api/ref/sanitizer/selector-field/):
+Though less common, if you are using a field name provided by user input, you should sanitize it like this with [$sanitizer->selectorField()](../../full/wire/core/Sanitizer/index.md):
 
 ```php
 $field = $sanitizer->selectorField($input->get->field); 

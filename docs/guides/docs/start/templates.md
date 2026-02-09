@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/start/templates/
 
-## Summary
-
-Every time a page is loaded on your site, ProcessWire looks at what template is assigned to the page, loads it, gives it several API variables, and then runs it as a PHP script.
-
-## Key Points
-
-- Show 3 pages at the most
-- Only show press releases
-- Show a date
-- Show a summary
-- Sort them newest to oldest
-
 ## Sections
 
 

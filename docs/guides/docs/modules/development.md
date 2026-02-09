@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/modules/development/
 
-## Summary
-
-It is easy to develop a module in ProcessWire, though some PHP experience is helpful. This section introduces module development and guides you through a simple example to get you started.
-
-## Key Points
-
-- It is easy to develop a module in ProcessWire, though some PHP experience is helpful. This section introduces module development and guides you through a simple example to get you started.
-- To create a module, you simply create PHP class that extends one of ProcessWire’s core classes, and also implements the [Module interface](https://processwire.com/api/ref/module/). This Module interface doesn't actually have any required methods, but it serves as a way for ProcessWire to recognize PHP classes that are intended to be modules, and it provides guidance on how to implement various optional methods. If creating a module that isn't of a predefined type, it should extend the ProcessWire [WireData](https://processwire.com/api/ref/wire-data/) class, and this is a good place to start (we'll get into predefined types later). Here's an example to summarize the above:
-- Save the class that you create in a file with the same name as the class, but with the extension “.module” or “.module.php” (either works). For example, a module with class *Foo* (like above) would be in a file named Foo.module or Foo.module.php. The file should be placed in /site/modules/. Though we recommend placing it in a directory within that, having the same name as the module class, like /site/modules/Foo/Foo.module.
-
 ## Sections
 
 
@@ -22,7 +12,7 @@ It is easy to develop a module in ProcessWire, though some PHP experience is hel
 
 ### Creating a simple module
 
-To create a module, you simply create PHP class that extends one of ProcessWire’s core classes, and also implements the [Module interface](https://processwire.com/api/ref/module/). This Module interface doesn't actually have any required methods, but it serves as a way for ProcessWire to recognize PHP classes that are intended to be modules, and it provides guidance on how to implement various optional methods. If creating a module that isn't of a predefined type, it should extend the ProcessWire [WireData](https://processwire.com/api/ref/wire-data/) class, and this is a good place to start (we'll get into predefined types later). Here's an example to summarize the above:
+To create a module, you simply create PHP class that extends one of ProcessWire’s core classes, and also implements the [Module interface](../../../full/wire/core/_Module/index.md). This Module interface doesn't actually have any required methods, but it serves as a way for ProcessWire to recognize PHP classes that are intended to be modules, and it provides guidance on how to implement various optional methods. If creating a module that isn't of a predefined type, it should extend the ProcessWire [WireData](../../../full/wire/core/WireData/index.md) class, and this is a good place to start (we'll get into predefined types later). Here's an example to summarize the above:
 
 ```php
 <?php namespace ProcessWire;
@@ -157,7 +147,7 @@ public function ready() {
 }
 ```
 
-The `$event` argument that the hook function receives is a [HookEvent](https://processwire.com/api/ref/hook-event/) object. Since we are hooking *after* an existing method, it provides us the return value in `$event->return`, which we then modify by appending some more markup to it. It also provides all of the arguments the method received in `$event->arguments()`, and each argument can be retrieved by zero-based index, or by name. Were we using a *before* hook, we could also modify those arguments before they are received by the method we have hooked. For more about hooks and events, please see our [Hooks documentation](/docs/modules/hooks/).
+The `$event` argument that the hook function receives is a [HookEvent](../../../full/wire/core/HookEvent/index.md) object. Since we are hooking *after* an existing method, it provides us the return value in `$event->return`, which we then modify by appending some more markup to it. It also provides all of the arguments the method received in `$event->arguments()`, and each argument can be retrieved by zero-based index, or by name. Were we using a *before* hook, we could also modify those arguments before they are received by the method we have hooked. For more about hooks and events, please see our [Hooks documentation](/docs/modules/hooks/).
 
 
 ### Using an autoload module to add new methods to existing classes

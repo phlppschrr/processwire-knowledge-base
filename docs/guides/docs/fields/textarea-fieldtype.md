@@ -2,17 +2,6 @@
 
 Source: https://processwire.com/docs/fields/textarea-fieldtype/
 
-## Summary
-
-The Textarea Fieldtype is designed to hold any amount of text. Typically Textarea is used for multi-line text values. It is also used for rich text (CKEditor) fields.
-
-## Key Points
-
-- Populate blank alt attributes with file description - ensures changes to file description are reflected in img[alt] attribute.
-- Automatically re-create image size variations that do not exist, when possible.
-- Remove <img> tags that point to files that do not exist and cannot be re-created.
-- Record missing image errors to "markup-qa-errors" log file (Setup > Logs > markup-qa-errors).
-
 ## Sections
 
 

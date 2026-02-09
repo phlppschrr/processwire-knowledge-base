@@ -2,17 +2,6 @@
 
 Source: https://processwire.com/docs/security/migration/
 
-## Summary
-
-Unless the production server is a completely dedicated environment, don't assume that what was safe on your development server will also be safe on the production server.
-
-## Key Points
-
-- [Potential permissions for writable files and directories](/docs/security/file-permissions/#potential-permissions-for-writable-directories-and-files)
-- [How to change permissions of existing directories and files](/docs/security/file-permissions/#how-to-change-permissions-of-existing-files)
-- [Securing your /site/config.php file](/docs/security/file-permissions/#securing-your-site-config.php-file)
-- [Determining who Apache runs as](/docs/security/file-permissions/#determining-what-user-apache-runs-as)
-
 ## Sections
 
 

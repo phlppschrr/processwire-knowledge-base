@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/start/structure/files/
 
-## Summary
-
-An outline of ProcessWire’s file and directory structure, highlighting the locations where your site’s files go, where the core files live, where to place modules, and more.
-
-## Key Points
-
-- An outline of ProcessWire’s file and directory structure, highlighting the locations where your site’s files go, where the core files live, where to place modules, and more.
-- ProcessWire follows a simple directory structure which aims to do the following:
-- ProcessWire may be installed anywhere on your web server. While it's most common to install it in your web root (/) the software will run just as well under any directory structure.
-
 ## Sections
 
 
@@ -30,7 +20,7 @@ ProcessWire only creates two directories from your root. This includes /wire and
 
 |  |  |
 | --- | --- |
-| /.htaccess | Required directives to Apache |
+| `/.htaccess` | Required directives to Apache |
 | `/index.php` | Bootstrap index file |
 | `/install.php` | Installation script (you should delete this after installation) |
 
@@ -39,9 +29,9 @@ ProcessWire only creates two directories from your root. This includes /wire and
 
 |  |  |
 | --- | --- |
-| /wire/core/ | ProcessWire core |
-| /wire/modules/ | Default plugin modules |
-| /wire/templates-admin/ | Templates, stylesheets and scripts for the admin control panel |
+| `/wire/core/` | ProcessWire core |
+| `/wire/modules/` | Default plugin modules |
+| `/wire/templates-admin/` | Templates, stylesheets and scripts for the admin control panel |
 
 Note: To upgrade ProcessWire, you simply replace the entire /wire/ directory with that of the new version.
 
@@ -51,11 +41,11 @@ Note: To upgrade ProcessWire, you simply replace the entire /wire/ directory wit
 |  |  |
 | --- | --- |
 | `/site/config.php` | Your site's configuration file |
-| /site/assets/ | All writable assets including files, images, cache files, logs and temporary files created by ProcessWire. |
-| /site/install/ | Installation profile. You should delete this directory after installation. |
-| /site/modules/ | Any plugin modules unique to a given site (optional). |
-| /site/templates/ | Template files specific to your site |
-| /site/templates/styles/ | CSS files specific to your site. You may locate this directory elsewhere, and/or rename it, if you prefer. |
-| /site/templates/scripts/ | Javascript files specific to your site. You may locate this directory elsewhere, and/or rename it, if you prefer. |
+| `/site/assets/` | All writable assets including files, images, cache files, logs and temporary files created by ProcessWire. |
+| `/site/install/` | Installation profile. You should delete this directory after installation. |
+| `/site/modules/` | Any plugin modules unique to a given site (optional). |
+| `/site/templates/` | Template files specific to your site |
+| `/site/templates/styles/` | CSS files specific to your site. You may locate this directory elsewhere, and/or rename it, if you prefer. |
+| `/site/templates/scripts/` | Javascript files specific to your site. You may locate this directory elsewhere, and/or rename it, if you prefer. |
 
 Note: The /site/templates/ directory is the most used directory in developing a site.

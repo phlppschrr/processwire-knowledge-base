@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/security/file-permissions/
 
-## Summary
-
-Getting your file permissions right is one of the most important factors in maintaining the security of your ProcessWire installation, particularly in non-dedicated/shared environments.
-
-## Key Points
-
-- If the result is your account name, then Apache is running as you. This means you can most likely use more restricted permissions like 700, 750 or 755 for writable directories and 600, 640 or 644 for writable files.
-- If the result is something else, like "nobody" or "apache" (or another you don't recognize) then Apache is *not* running as you, and you'll have to open up write permissions to group (i.e. 770 and 660) or [worst case] everyone (like 777 and 666). But before you even consider using permissions like 777 and 666 in a non-dedicated environment, consult with your web host as they will hopefully have a better recommendation.
-- If you get an error message or nothing, then chances are `exec()` is not enabled for your server, as a security precaution. If that's the case, use this alternative script:
-
 ## Sections
 
 

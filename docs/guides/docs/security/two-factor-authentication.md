@@ -2,15 +2,6 @@
 
 Source: https://processwire.com/docs/security/two-factor-authentication/
 
-## Summary
-
-Two-factor (or multi-factor) authentication gives you an extra layer of account security relative to just using a password. ProcessWire versions 3.0.109 and newer include core support for two-factor authentication.
-
-## Key Points
-
-- [TfaTotp](/docs/security/two-factor-authentication/totp/) for TOTP 2-factor authentication (time-based one time protocol)
-- [TfaEmail](/docs/security/two-factor-authentication/email/) for Email/SMS 2-factor authentication
-
 ## Sections
 
 

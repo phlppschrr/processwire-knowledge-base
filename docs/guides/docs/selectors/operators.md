@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/selectors/operators/
 
-## Summary
-
-A selector like “field=value” consists of three parts—the field (or fields) you are looking for, an operator (like an equals “=” sign), and the value (or values) you want to match. On this page all of the available operators are covered in depth.
-
-## Key Points
-
-- `+word` MUST appear
-- `-word` MUST NOT appear
-- `word` (no prefix) MAY appear (increases rank)
-- `bar*` or `+bar*` matches bar, barn, barge
-- `-bar*` prevents matching bar, barn, barge, etc.
-
 ## Sections
 
 
@@ -307,7 +295,7 @@ Searches using this operator recognize special command characters that designate
 - `-(foo bar)` or `-"foo bar"` indicates the phrase "foo bar" MUST NOT appear
 - `(foo bar)` indicates the phrase MAY appear (increases rank)
 
-When using the advanced text search, we recommend surrounding the query text/commands in double quotes, or in ProcessWire 3.0.182 or newer, the [selectorValueAdvanced() sanitizer method](/api/ref/sanitizer/selector-value-advanced/) will take care of preparing and quoting the $value for you.
+When using the advanced text search, we recommend surrounding the query text/commands in double quotes, or in ProcessWire 3.0.182 or newer, the [selectorValueAdvanced() sanitizer method](../../../full/wire/core/Sanitizer/method-selectorvalueadvanced.md) will take care of preparing and quoting the $value for you.
 
 
 ### `&` Bitwise AND*

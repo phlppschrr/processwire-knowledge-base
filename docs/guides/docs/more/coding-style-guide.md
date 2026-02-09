@@ -2,14 +2,6 @@
 
 Source: https://processwire.com/docs/more/coding-style-guide/
 
-## Summary
-
-This PHP style guide represents the coding style preferred for the ProcessWire core.
-
-## Key Points
-
-- Make string constants translatable for multi-language support.*
-
 ## Sections
 
 

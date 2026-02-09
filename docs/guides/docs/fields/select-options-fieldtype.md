@@ -2,17 +2,6 @@
 
 Source: https://processwire.com/docs/fields/select-options-fieldtype/
 
-## Summary
-
-The Options Fieldtype provides single and multi choice selectable options in ProcessWire, as an alternative to using Page fields.
-
-## Key Points
-
-- Confim that you are running ProcessWire 2.5.17 or newer.
-- Install the Select Options Fieldtype module, if it is not already installed. Do this by going to Modules > Core > Fieldtype > Select Options (or from the drop-down menus: Modules > Install > FieldtypeOptions). If you don't see it, you may need to first click on Modules > Refresh, and try again.
-- Create a new field (Setup > Fields > Add New) and choose "Options" as the type.
-- After creating the field, click to the *Details* tab, where you can define your options.
-
 ## Sections
 
 

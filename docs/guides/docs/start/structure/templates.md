@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/start/structure/templates/
 
-## Summary
-
-Every Page has a template which defines the type of Page and what fields are present on pages using it. Every template may be used by one or more pages.
-
-## Key Points
-
-- Every Page has a template which defines the type of Page and what fields are present on pages using it. Every template may be used by one or more pages.
-- Each Page in ProcessWire is a storage container for content, and each Page also has a map for the structure of that content, called the “template.” The primary role of these templates is to define what fields are present on pages using them, but they also do much more.
-- We refer to the template when talking about the type of a Page. For example, a template called “product” might represent a product being sold that has a title, description and price. Every page that uses the "product" template would represent a single product having the ability to store each of those fields (title, description, price). When a Page uses the "product" template, we would refer to it as a “Product Page”, since the template defines the type of Page that it is.
-
 ## Sections
 
 

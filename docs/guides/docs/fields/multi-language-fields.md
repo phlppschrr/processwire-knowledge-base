@@ -2,18 +2,6 @@
 
 Source: https://processwire.com/docs/fields/multi-language-fields/
 
-## Summary
-
-Here we look in detail at multi-language fields and language-alternate fields, as well as how to use them. Also includes a video overview and examples of how to use language fields to create full multi-language websites.
-
-## Key Points
-
-- [Multi-language fields](#multi-language-fields)
-- [Language alternate fields](#language-alternate-fields)
-- [How language fields work from the $pages API](#how-language-fields-work)
-- [Getting and setting language-specific values in the API](#getting-and-setting)
-- [Multi-language field values](#multi-language-field-values)
-
 ## Sections
 
 

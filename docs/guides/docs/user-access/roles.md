@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/user-access/roles/
 
-## Summary
-
-Roles are a way of grouping multiple users and assigning permissions to that group. They are the connection of both users and templates to permissions.
-
-## Key Points
-
-- Roles are a way of grouping multiple users and assigning permissions to that group. They are the connection of both users and templates to permissions.
-- A user can have multiple roles, each with different permissions. Though for simple needs, it's common for a user to just have one non-guest role. However, you may assign as many roles to a user as you need, and the user will gain the access and permissions assigned to all of the roles they belong to.
-- ProcessWire includes two permanent roles by default, though you may add as many roles as you like. The two roles included with every ProcessWire installation are:
-
 ## Sections
 
 
@@ -37,7 +27,7 @@ You can also add as many other roles as you want and selectively assign them to 
 
 ### Checking if a user has a role
 
-To check if a user has a specific role from the API side, use the [$user->hasRole('roleName')](/api/ref/user/has-role/) method:
+To check if a user has a specific role from the API side, use the [$user->hasRole('roleName')](../../../full/wire/core/User/method-hasrole.md) method:
 
 ```
 if($user->hasRole('editor')) {

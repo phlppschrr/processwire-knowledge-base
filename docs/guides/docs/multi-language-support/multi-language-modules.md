@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/multi-language-support/multi-language-modules/
 
-## Summary
-
-To add multi-language translations to your module, you can export a CSV file of translations, give them names that reflect the language and copy them to /languages/ directory in your module’s files. We'll cover the details in 4 steps below.
-
-## Key Points
-
-- [Why use CSV for bundled translations?](/blog/posts/pw-3.0.181-hello/#why-csv)
-- [HelloWorld module with multi-language examples](/modules/helloworld/)
-- [ProcessHello module with multi-language examples](/modules/process-hello/)
-
 ## Sections
 
 

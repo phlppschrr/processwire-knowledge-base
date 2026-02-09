@@ -2,16 +2,6 @@
 
 Source: https://processwire.com/docs/front-end/include/
 
-## Summary
-
-Use ProcessWire’s API in other PHP apps and shell scripts… It’s easy!
-
-## Key Points
-
-- Use ProcessWire’s API in other PHP apps and shell scripts… It’s easy!
-- ProcessWire's API and data can be used from other PHP scripts, including command line PHP scripts. This is a simple matter of just including ProcessWire's ./index.php file from any other PHP script.
-- It doesn't matter if your intended use is HTTP or command line... ProcessWire will auto-detect the state from which it was included.
-
 ## Sections
 
 
@@ -134,4 +124,4 @@ We'll use the same example as in the shell script above, except that we'll use m
 </html>
 ```
 
-You can do anything with ProcessWire's API that you can do from a template, so everything you can do in template files still applies, as does everything in the [developer API](/api/ref/).
+You can do anything with ProcessWire's API that you can do from a template, so everything you can do in template files still applies, as does everything in the [developer API](../../../full/index.md).
