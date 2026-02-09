@@ -2,15 +2,19 @@
 
 Source: `wire/core/WireAction.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
+
+Groups:
+Group: [other](group-other.md)
+
 WireAction
 
 Base class for actions in ProcessWire
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

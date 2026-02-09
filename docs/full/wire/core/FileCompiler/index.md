@@ -2,15 +2,18 @@
 
 Source: `wire/core/FileCompiler.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 FileCompiler
 
 
 @todo determine whether we should make storage in dedicated table rather than using wire('cache').
 
 @todo handle race conditions for multiple requests attempting to compile the same file(s).
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

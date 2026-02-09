@@ -2,6 +2,9 @@
 
 Source: `wire/core/Textformatter.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
 ProcessWire Textformatter
 
 Provides the base class for Textformatting Modules

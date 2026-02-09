@@ -3322,6 +3322,24 @@
       "name_internal": "___uninstall"
     },
     {
+      "type": "method",
+      "name": "install()",
+      "class": "Tfa",
+      "file": "wire/core/Tfa/method-install.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": null
+    },
+    {
+      "type": "method",
+      "name": "uninstall()",
+      "class": "Tfa",
+      "file": "wire/core/Tfa/method-uninstall.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": null
+    },
+    {
       "type": "class",
       "name": "PageArray",
       "file": "wire/core/PageArray/index.md",
@@ -3984,6 +4002,69 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "select",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-select.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql, $params = array()",
+      "return": "$this"
+    },
+    {
+      "type": "method",
+      "name": "from",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-from.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql",
+      "return": "$this"
+    },
+    {
+      "type": "method",
+      "name": "join",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-join.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql, $params = array()",
+      "return": "$this"
+    },
+    {
+      "type": "method",
+      "name": "leftjoin",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-leftjoin.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql, $params = array()",
+      "return": "$this"
+    },
+    {
+      "type": "method",
+      "name": "where",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-where.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql, $params = array()",
+      "return": "$this"
+    },
+    {
+      "type": "method",
+      "name": "groupby",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-groupby.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql",
+      "return": "$this"
+    },
+    {
+      "type": "method",
+      "name": "limit",
+      "class": "DatabaseQuerySelect",
+      "file": "wire/core/DatabaseQuerySelect/method-limit.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql",
+      "return": "$this"
+    },
+    {
       "type": "class",
       "name": "PagesType",
       "file": "wire/core/PagesType/index.md",
@@ -4344,6 +4425,60 @@
       "hookable": true,
       "name_public": "add",
       "name_internal": "___add"
+    },
+    {
+      "type": "method",
+      "name": "find",
+      "class": "Roles",
+      "file": "wire/core/Roles/method-find.md",
+      "summary": "Return the Role(s) matching the the given selector.",
+      "signature": "$selector",
+      "return": "PageArray"
+    },
+    {
+      "type": "method",
+      "name": "saveReady",
+      "class": "Roles",
+      "file": "wire/core/Roles/method-saveready.md",
+      "summary": "Hook called just before a Role is saved",
+      "signature": "Page $page",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "saved",
+      "class": "Roles",
+      "file": "wire/core/Roles/method-saved.md",
+      "summary": "Hook called after a role has been saved",
+      "signature": "Page $page, array $changes = [], $values = []",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "added",
+      "class": "Roles",
+      "file": "wire/core/Roles/method-added.md",
+      "summary": "Hook called just after a Role is added",
+      "signature": "Page $page",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "deleteReady",
+      "class": "Roles",
+      "file": "wire/core/Roles/method-deleteready.md",
+      "summary": "Hook called before a Role is deleted",
+      "signature": "Page $page",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "new",
+      "class": "Roles",
+      "file": "wire/core/Roles/method-new.md",
+      "summary": "Create new Role instance in memory (3.0.249+)",
+      "signature": "$options = []",
+      "return": "Role"
     },
     {
       "type": "class",
@@ -4956,6 +5091,15 @@
       "hookable": true,
       "name_public": "applySetupName",
       "name_internal": "___applySetupName"
+    },
+    {
+      "type": "method",
+      "name": "get",
+      "class": "Fields",
+      "file": "wire/core/Fields/method-get.md",
+      "summary": "Get a field by name or id",
+      "signature": "$key",
+      "return": "Field|null"
     },
     {
       "type": "class",
@@ -7199,6 +7343,204 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "name",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-name.md",
+      "summary": "Get or set the name attribute. @since 3.0.110",
+      "signature": "$name = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "id",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-id.md",
+      "summary": "Get or set the id attribute. @since 3.0.110",
+      "signature": "$id = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "class",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-class.md",
+      "summary": "Get class attribute or add a class to the class attribute. @since 3.0.110",
+      "signature": "$class = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "label",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-label.md",
+      "summary": "Get or set the 'label' property via method. @since 3.0.110",
+      "signature": "$label = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "description",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-description.md",
+      "summary": "Get or set the 'description' property via method. @since 3.0.110",
+      "signature": "$description = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "notes",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-notes.md",
+      "summary": "Get or set the 'notes' property via method. @since 3.0.110",
+      "signature": "$notes = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "icon",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-icon.md",
+      "summary": "Get or set the 'icon' property via method. @since 3.0.110",
+      "signature": "$icon = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "requiredLabel",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-requiredlabel.md",
+      "summary": "Get or set the 'requiredLabel' property via method. @since 3.0.110",
+      "signature": "$requiredLabel = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "head",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-head.md",
+      "summary": "Get or set the 'head' property via method. @since 3.0.110",
+      "signature": "$head = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "prependMarkup",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-prependmarkup.md",
+      "summary": "Get or set the 'prependMarkup' property via method. @since 3.0.110",
+      "signature": "$markup = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "appendMarkup",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-appendmarkup.md",
+      "summary": "Get or set the 'appendMarkup' property via method. @since 3.0.110",
+      "signature": "$markup = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "collapsed",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-collapsed.md",
+      "summary": "Get or set collapsed property via method. @since 3.0.110",
+      "signature": "$collapsed = null",
+      "return": "int|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "showIf",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-showif.md",
+      "summary": "Get or set showIf selector property via method. @since 3.0.110",
+      "signature": "$showIf = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "columnWidth",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-columnwidth.md",
+      "summary": "Get or set columnWidth property via method. @since 3.0.110",
+      "signature": "$columnWidth = null",
+      "return": "int|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "skipLabel",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-skiplabel.md",
+      "summary": "Get or set the skipLabel constant property via method. @since 3.0.110",
+      "signature": "$skipLabel = null",
+      "return": "int|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "required",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-required.md",
+      "summary": "Get or set required state. @since 3.0.110",
+      "signature": "$required = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "requiredIf",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-requiredif.md",
+      "summary": "Get or set required-if selector. @since 3.0.110",
+      "signature": "$requiredIf = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "wrapClass",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-wrapclass.md",
+      "summary": "Get wrapper class attribute or add a class to it. @since 3.0.110",
+      "signature": "$class = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "headerClass",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-headerclass.md",
+      "summary": "Get header class attribute or add a class to it. @since 3.0.110",
+      "signature": "$class = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "contentClass",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-contentclass.md",
+      "summary": "Get content class attribute or add a class to it. @since 3.0.110",
+      "signature": "$class = null",
+      "return": "string|Inputfield"
+    },
+    {
+      "type": "method",
+      "name": "setLanguageValue",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-setlanguagevalue.md",
+      "summary": "Set language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238",
+      "signature": "$language, $value",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "getLanguageValue",
+      "class": "Inputfield",
+      "file": "wire/core/Inputfield/method-getlanguagevalue.md",
+      "summary": "Get language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238",
+      "signature": "$language",
+      "return": "string|mixed"
+    },
+    {
       "type": "class",
       "name": "WireInputData",
       "file": "wire/core/WireInputData/index.md",
@@ -7339,6 +7681,258 @@
       "hookable": true,
       "name_public": "callUnknown",
       "name_internal": "___callUnknown"
+    },
+    {
+      "type": "method",
+      "name": "name",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-name.md",
+      "summary": "Sanitize to ProcessWire name format",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "varName",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-varname.md",
+      "summary": "Sanitize to PHP variable name format",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "fieldName",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-fieldname.md",
+      "summary": "Sanitize to ProcessWire Field name format",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "templateName",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-templatename.md",
+      "summary": "Sanitize to ProcessWire Template name format",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "pageName",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-pagename.md",
+      "summary": "Sanitize to ProcessWire Page name format",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "pageNameTranslate",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-pagenametranslate.md",
+      "summary": "Sanitize to ProcessWire Page name format with translation of non-ASCII characters to ASCII equivalents",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "filename",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-filename.md",
+      "summary": "Sanitize to valid file basename as used by filenames in ProcessWire",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "pagePathName",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-pagepathname.md",
+      "summary": "Sanitize to what could be a valid page path in ProcessWire",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "email",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-email.md",
+      "summary": "Sanitize email address, converting to blank if invalid",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "emailHeader",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-emailheader.md",
+      "summary": "Sanitize string for use in an email header",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "text",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-text.md",
+      "summary": "Sanitize to single line of text up to 255 characters (1024 bytes max), HTML markup is removed",
+      "signature": "$varName, $options = array()",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "textarea",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-textarea.md",
+      "summary": "Sanitize to multi-line text up to 16k characters (48k bytes), HTML markup is removed",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "url",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-url.md",
+      "summary": "Sanitize to a valid URL, or convert to blank if it can't be sanitized",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "selectorField",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-selectorfield.md",
+      "summary": "Sanitize a field name for use in a selector string",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "selectorValue",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-selectorvalue.md",
+      "summary": "Sanitize a value for use in a selector string",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "entities",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-entities.md",
+      "summary": "Return an entity encoded version of the value",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "purify",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-purify.md",
+      "summary": "Return a value run through HTML Purifier (value assumed to contain HTML)",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "string",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-string.md",
+      "summary": "Return a value guaranteed to be a string, regardless of what type $varName is. Does not sanitize.",
+      "signature": "$varName",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "date",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-date.md",
+      "summary": "Validate and return $varName in the given PHP date() or strftime() format.",
+      "signature": "$varName, $dateFormat",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "int",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-int.md",
+      "summary": "Sanitize value to integer with optional min and max. Unsigned if max >= 0, signed if max < 0.",
+      "signature": "$varName, $min = 0, $max = null",
+      "return": "int"
+    },
+    {
+      "type": "method",
+      "name": "intUnsigned",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-intunsigned.md",
+      "summary": "Sanitize value to unsigned integer with optional min and max.",
+      "signature": "$varName, $min = null, $max = null",
+      "return": "int"
+    },
+    {
+      "type": "method",
+      "name": "intSigned",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-intsigned.md",
+      "summary": "Sanitize value to signed integer with optional min and max.",
+      "signature": "$varName, $min = null, $max = null",
+      "return": "int"
+    },
+    {
+      "type": "method",
+      "name": "float",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-float.md",
+      "summary": "Sanitize value to float with optional min and max values.",
+      "signature": "$varName, $min = null, $max = null, $precision = null",
+      "return": "float"
+    },
+    {
+      "type": "method",
+      "name": "array",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-array.md",
+      "summary": "Sanitize array or CSV String to an array, optionally running elements through specified $sanitizer.",
+      "signature": "$varName, $sanitizer = null",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "intArray",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-intarray.md",
+      "summary": "Sanitize array or CSV string to an array of integers with optional min and max values.",
+      "signature": "$varName, $min = 0, $max = null",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "option",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-option.md",
+      "summary": "Return value of $varName only if it exists in $allowedValues.",
+      "signature": "$varName, array $allowedValues",
+      "return": "string|null"
+    },
+    {
+      "type": "method",
+      "name": "options",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-options.md",
+      "summary": "Return all values in array $varName that also exist in $allowedValues.",
+      "signature": "$varName, array $allowedValues",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "bool",
+      "class": "WireInputData",
+      "file": "wire/core/WireInputData/method-bool.md",
+      "summary": "Sanitize value to boolean (true or false)",
+      "signature": "$varName",
+      "return": "bool"
     },
     {
       "type": "class",
@@ -7672,6 +8266,60 @@
       "hookable": true,
       "name_public": "deleted",
       "name_internal": "___deleted"
+    },
+    {
+      "type": "method",
+      "name": "find",
+      "class": "Permissions",
+      "file": "wire/core/Permissions/method-find.md",
+      "summary": "Return the permissions(s) matching the the given selector query.",
+      "signature": "$selector",
+      "return": "PageArray"
+    },
+    {
+      "type": "method",
+      "name": "get",
+      "class": "Permissions",
+      "file": "wire/core/Permissions/method-get.md",
+      "summary": "Return permission by given name, numeric ID or a selector string.",
+      "signature": "$selector",
+      "return": "Permission|NullPage"
+    },
+    {
+      "type": "method",
+      "name": "saveReady",
+      "class": "Permissions",
+      "file": "wire/core/Permissions/method-saveready.md",
+      "summary": "Hook called just before a Permission is saved",
+      "signature": "Page $page",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "added",
+      "class": "Permissions",
+      "file": "wire/core/Permissions/method-added.md",
+      "summary": "Hook called just after a Permission is added",
+      "signature": "Page $page",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "deleteReady",
+      "class": "Permissions",
+      "file": "wire/core/Permissions/method-deleteready.md",
+      "summary": "Hook called before a Permission is deleted",
+      "signature": "Page $page",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "new",
+      "class": "Permissions",
+      "file": "wire/core/Permissions/method-new.md",
+      "summary": "Create new Permission instance in memory (3.0.249+)",
+      "signature": "$options = []",
+      "return": "Permission"
     },
     {
       "type": "class",
@@ -8015,6 +8663,15 @@
       "hookable": true,
       "name_public": "install",
       "name_internal": "___install"
+    },
+    {
+      "type": "method",
+      "name": "uninstall",
+      "class": "AdminTheme",
+      "file": "wire/core/AdminTheme/method-uninstall.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": "void"
     },
     {
       "type": "class",
@@ -8934,6 +9591,15 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "where",
+      "class": "DatabaseQuery",
+      "file": "wire/core/DatabaseQuery/method-where.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$sql, array $params = array()",
+      "return": "$this"
+    },
+    {
       "type": "class",
       "name": "ModulesInstaller",
       "file": "wire/core/ModulesInstaller/index.md",
@@ -9842,6 +10508,51 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "urlSegment1",
+      "class": "WireInput",
+      "file": "wire/core/WireInput/method-urlsegment1.md",
+      "summary": "Same as urlSegment() method but apply only to 1st URL segment. (since 3.0.155)",
+      "signature": "$get = ''",
+      "return": "string|int|bool"
+    },
+    {
+      "type": "method",
+      "name": "urlSegment2",
+      "class": "WireInput",
+      "file": "wire/core/WireInput/method-urlsegment2.md",
+      "summary": "Same as urlSegment() method but apply only to 2nd URL segment. (since 3.0.155)",
+      "signature": "$get = ''",
+      "return": "string|int|bool"
+    },
+    {
+      "type": "method",
+      "name": "urlSegment3",
+      "class": "WireInput",
+      "file": "wire/core/WireInput/method-urlsegment3.md",
+      "summary": "Same as urlSegment() method but apply only to 3rd URL segment. (since 3.0.155)",
+      "signature": "$get = ''",
+      "return": "string|int|bool"
+    },
+    {
+      "type": "method",
+      "name": "urlSegmentLast",
+      "class": "WireInput",
+      "file": "wire/core/WireInput/method-urlsegmentlast.md",
+      "summary": "Same as urlSegment() method but apply only to last URL segment. (since 3.0.155)",
+      "signature": "$get = ''",
+      "return": "string|int|bool"
+    },
+    {
+      "type": "method",
+      "name": "urlSegmentFirst",
+      "class": "WireInput",
+      "file": "wire/core/WireInput/method-urlsegmentfirst.md",
+      "summary": "Same as urlSegment() method but apply only to first URL segment. (since 3.0.155)",
+      "signature": "$get = ''",
+      "return": "string|int|bool"
+    },
+    {
       "type": "class",
       "name": "DatabaseStopwords",
       "file": "wire/core/DatabaseStopwords/index.md",
@@ -10266,6 +10977,15 @@
       "hookable": true,
       "name_public": "getCustomVariableValue",
       "name_internal": "___getCustomVariableValue"
+    },
+    {
+      "type": "method",
+      "name": "getIterator",
+      "class": "Selectors",
+      "file": "wire/core/Selectors/method-getiterator.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": "Selector[]"
     },
     {
       "type": "class",
@@ -11972,6 +12692,24 @@
       "file": "wire/core/ProcessWire/method-buildconfig.md",
       "summary": "Static method to build a Config object for booting ProcessWire",
       "signature": "$rootPath = '', $rootURL = null, array $options = array()",
+      "return": null
+    },
+    {
+      "type": "method",
+      "name": "init()",
+      "class": "ProcessWire",
+      "file": "wire/core/ProcessWire/method-init.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": null
+    },
+    {
+      "type": "method",
+      "name": "ready()",
+      "class": "ProcessWire",
+      "file": "wire/core/ProcessWire/method-ready.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
       "return": null
     },
     {
@@ -14670,6 +15408,168 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "wireMail",
+      "class": "Config",
+      "file": "wire/core/Config/method-wiremail.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "imageSizes",
+      "class": "Config",
+      "file": "wire/core/Config/method-imagesizes.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "imageSizerOptions",
+      "class": "Config",
+      "file": "wire/core/Config/method-imagesizeroptions.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|bool|string|int|float"
+    },
+    {
+      "type": "method",
+      "name": "webpOptions",
+      "class": "Config",
+      "file": "wire/core/Config/method-webpoptions.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|int|bool"
+    },
+    {
+      "type": "method",
+      "name": "contentTypes",
+      "class": "Config",
+      "file": "wire/core/Config/method-contenttypes.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "fileContentTypes",
+      "class": "Config",
+      "file": "wire/core/Config/method-filecontenttypes.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "fileCompilerOptions",
+      "class": "Config",
+      "file": "wire/core/Config/method-filecompileroptions.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string|bool"
+    },
+    {
+      "type": "method",
+      "name": "dbOptions",
+      "class": "Config",
+      "file": "wire/core/Config/method-dboptions.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string|string[]"
+    },
+    {
+      "type": "method",
+      "name": "dbSqlModes",
+      "class": "Config",
+      "file": "wire/core/Config/method-dbsqlmodes.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string|string[]"
+    },
+    {
+      "type": "method",
+      "name": "pageList",
+      "class": "Config",
+      "file": "wire/core/Config/method-pagelist.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|int|bool"
+    },
+    {
+      "type": "method",
+      "name": "pageEdit",
+      "class": "Config",
+      "file": "wire/core/Config/method-pageedit.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|bool"
+    },
+    {
+      "type": "method",
+      "name": "pageAdd",
+      "class": "Config",
+      "file": "wire/core/Config/method-pageadd.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "moduleInstall",
+      "class": "Config",
+      "file": "wire/core/Config/method-moduleinstall.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "substituteModules",
+      "class": "Config",
+      "file": "wire/core/Config/method-substitutemodules.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "AdminThemeUikit",
+      "class": "Config",
+      "file": "wire/core/Config/method-adminthemeuikit.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string|bool"
+    },
+    {
+      "type": "method",
+      "name": "modals",
+      "class": "Config",
+      "file": "wire/core/Config/method-modals.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "markupQA",
+      "class": "Config",
+      "file": "wire/core/Config/method-markupqa.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|bool"
+    },
+    {
+      "type": "method",
+      "name": "statusFiles",
+      "class": "Config",
+      "file": "wire/core/Config/method-statusfiles.md",
+      "summary": "Declared in class docblock.",
+      "signature": "$key = '', $value = null",
+      "return": "array|string"
+    },
+    {
       "type": "class",
       "name": "PagesLoaderCache",
       "file": "wire/core/PagesLoaderCache/index.md",
@@ -14999,6 +15899,15 @@
       "summary": "debugInfo PHP 5.6+ magic method",
       "signature": "",
       "return": null
+    },
+    {
+      "type": "method",
+      "name": "renderPager",
+      "class": "PaginatedArray",
+      "file": "wire/core/PaginatedArray/method-renderpager.md",
+      "summary": "Renders pagination, when MarkupPageArray module installed",
+      "signature": "array $options = array()",
+      "return": "string"
     },
     {
       "type": "class",
@@ -16678,6 +17587,78 @@
       "name_internal": "___saveReady"
     },
     {
+      "type": "method",
+      "name": "find",
+      "class": "Users",
+      "file": "wire/core/Users/method-find.md",
+      "summary": "Return the User(s) matching the the given selector query.",
+      "signature": "$selector",
+      "return": "PageArray"
+    },
+    {
+      "type": "method",
+      "name": "add",
+      "class": "Users",
+      "file": "wire/core/Users/method-add.md",
+      "summary": "Add new User with the given name and return it.",
+      "signature": "$name",
+      "return": "User"
+    },
+    {
+      "type": "method",
+      "name": "delete",
+      "class": "Users",
+      "file": "wire/core/Users/method-delete.md",
+      "summary": "Delete the given User.",
+      "signature": "$user",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "saved",
+      "class": "Users",
+      "file": "wire/core/Users/method-saved.md",
+      "summary": "Hook called after a User has been saved",
+      "signature": "$user, array $changes",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "added",
+      "class": "Users",
+      "file": "wire/core/Users/method-added.md",
+      "summary": "Hook called just after a User is added",
+      "signature": "$user",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "deleteReady",
+      "class": "Users",
+      "file": "wire/core/Users/method-deleteready.md",
+      "summary": "Hook called before a User is deleted",
+      "signature": "$user",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "deleted",
+      "class": "Users",
+      "file": "wire/core/Users/method-deleted.md",
+      "summary": "Hook called after a User is deleted",
+      "signature": "$user",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "new",
+      "class": "Users",
+      "file": "wire/core/Users/method-new.md",
+      "summary": "Create new User instance in memory (3.0.249+)",
+      "signature": "$options = []",
+      "return": "User"
+    },
+    {
       "type": "class",
       "name": "FileCompilerModule",
       "file": "wire/core/FileCompilerModule/index.md",
@@ -17770,6 +18751,15 @@
       "summary": null,
       "signature": "",
       "return": null
+    },
+    {
+      "type": "method",
+      "name": "Protected",
+      "class": "Password",
+      "file": "wire/core/Password/method-protected.md",
+      "summary": "internal use method",
+      "signature": "",
+      "return": "setPass($value)"
     },
     {
       "type": "class",
@@ -19606,6 +20596,15 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "install($filename)",
+      "class": "Pageimage",
+      "file": "wire/core/Pageimage/method-install-filename.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": null
+    },
+    {
       "type": "class",
       "name": "WireHttp",
       "file": "wire/core/WireHttp/index.md",
@@ -20804,6 +21803,195 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "cache",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-cache.md",
+      "summary": "Access the $cache API variable as a function.",
+      "signature": "$name = '', $expire = null, $func = null",
+      "return": "WireCache|string|array|PageArray|null"
+    },
+    {
+      "type": "method",
+      "name": "config",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-config.md",
+      "summary": "Access the $config API variable as a function.",
+      "signature": "$key = '', $value = null",
+      "return": "Config|mixed"
+    },
+    {
+      "type": "method",
+      "name": "database",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-database.md",
+      "summary": "Access the $database API variable as a function.",
+      "signature": "",
+      "return": "WireDatabasePDO"
+    },
+    {
+      "type": "method",
+      "name": "datetime",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-datetime.md",
+      "summary": "Access the $datetime API variable as a function.",
+      "signature": "$format = '', $value = ''",
+      "return": "WireDateTime|string|int"
+    },
+    {
+      "type": "method",
+      "name": "fields",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-fields.md",
+      "summary": "Access the $fields API variable as a function.",
+      "signature": "$name = ''",
+      "return": "Field|Fields|null"
+    },
+    {
+      "type": "method",
+      "name": "files",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-files.md",
+      "summary": "Access the $files API variable as a function.",
+      "signature": "",
+      "return": "WireFileTools"
+    },
+    {
+      "type": "method",
+      "name": "input",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-input.md",
+      "summary": "Access the $input API variable as a function.",
+      "signature": "$type = '', $key = '', $sanitizer = ''",
+      "return": "WireInput|WireInputData|WireInputDataCookie|array|string|int|null"
+    },
+    {
+      "type": "method",
+      "name": "inputCookie",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-inputcookie.md",
+      "summary": "Access the $input->cookie() API variable as a function.",
+      "signature": "$key = '', $sanitizer = ''",
+      "return": "WireInputDataCookie|string|int|array|null"
+    },
+    {
+      "type": "method",
+      "name": "inputGet",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-inputget.md",
+      "summary": "Access the $input->get() API variable as a function.",
+      "signature": "$key = '', $sanitizer = ''",
+      "return": "WireInputData|string|int|array|null"
+    },
+    {
+      "type": "method",
+      "name": "inputPost",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-inputpost.md",
+      "summary": "Access the $input->post() API variable as a function.",
+      "signature": "$key = '', $sanitizer = ''",
+      "return": "WireInputData|string|int|array|null"
+    },
+    {
+      "type": "method",
+      "name": "languages",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-languages.md",
+      "summary": "Access the $languages API variable as a function.",
+      "signature": "$name = ''",
+      "return": "Languages|Language|NullPage|null"
+    },
+    {
+      "type": "method",
+      "name": "modules",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-modules.md",
+      "summary": "Access the $modules API variable as a function.",
+      "signature": "$name = ''",
+      "return": "Modules|Module|ConfigurableModule|null"
+    },
+    {
+      "type": "method",
+      "name": "page",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-page.md",
+      "summary": "Access the $page API variable as a function.",
+      "signature": "$key = '', $value = null",
+      "return": "Page|Mixed"
+    },
+    {
+      "type": "method",
+      "name": "pages",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-pages.md",
+      "summary": "Access the $pages API variable as a function.",
+      "signature": "$selector = ''",
+      "return": "Pages|PageArray|Page|NullPage"
+    },
+    {
+      "type": "method",
+      "name": "permissions",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-permissions.md",
+      "summary": "Access the $permissions API variable as a function.",
+      "signature": "$selector = ''",
+      "return": "Permissions|Permission|PageArray|null|NullPage"
+    },
+    {
+      "type": "method",
+      "name": "roles",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-roles.md",
+      "summary": "Access the $roles API variable as a function.",
+      "signature": "$selector = ''",
+      "return": "Roles|Role|PageArray|null|NullPage"
+    },
+    {
+      "type": "method",
+      "name": "sanitizer",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-sanitizer.md",
+      "summary": "Access the $sanitizer API variable as a function.",
+      "signature": "$name = '', $value = ''",
+      "return": "Sanitizer|string|int|array|null|mixed"
+    },
+    {
+      "type": "method",
+      "name": "session",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-session.md",
+      "summary": "Access the $session API variable as a function.",
+      "signature": "$key = '', $value = null",
+      "return": "Session|mixed"
+    },
+    {
+      "type": "method",
+      "name": "templates",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-templates.md",
+      "summary": "Access the $templates API variable as a function.",
+      "signature": "$name = ''",
+      "return": "Templates|Template|null"
+    },
+    {
+      "type": "method",
+      "name": "user",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-user.md",
+      "summary": "Access the $user API variable as a function.",
+      "signature": "$key = '', $value = null",
+      "return": "User|mixed"
+    },
+    {
+      "type": "method",
+      "name": "users",
+      "class": "Wire",
+      "file": "wire/core/Wire/method-users.md",
+      "summary": "Access the $users API variable as a function.",
+      "signature": "$selector = ''",
+      "return": "Users|PageArray|User|mixed"
+    },
+    {
       "type": "class",
       "name": "ModuleJS",
       "file": "wire/core/ModuleJS/index.md",
@@ -21869,6 +23057,15 @@
       "summary": "Execute the action for the given page",
       "signature": "$item",
       "return": null
+    },
+    {
+      "type": "method",
+      "name": "action",
+      "class": "PageAction",
+      "file": "wire/core/PageAction/method-action.md",
+      "summary": "Declared in class docblock.",
+      "signature": "Page $item",
+      "return": "bool"
     },
     {
       "type": "class",
@@ -23364,6 +24561,267 @@
       "hookable": true,
       "name_public": "removedStatus",
       "name_internal": "___removedStatus"
+    },
+    {
+      "type": "method",
+      "name": "viewable",
+      "class": "Page",
+      "file": "wire/core/Page/method-viewable.md",
+      "summary": "Returns true if the page (and optionally field) is viewable by the current user, false if not.",
+      "signature": "$field = '', $checkTemplateFile = true",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "editable",
+      "class": "Page",
+      "file": "wire/core/Page/method-editable.md",
+      "summary": "Returns true if the page (and optionally field) is editable by the current user, false if not.",
+      "signature": "$field = '', $checkPageEditable = true",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "publishable",
+      "class": "Page",
+      "file": "wire/core/Page/method-publishable.md",
+      "summary": "Returns true if the page is publishable by the current user, false if not.",
+      "signature": "",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "listable",
+      "class": "Page",
+      "file": "wire/core/Page/method-listable.md",
+      "summary": "Returns true if the page is listable by the current user, false if not.",
+      "signature": "",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "deleteable",
+      "class": "Page",
+      "file": "wire/core/Page/method-deleteable.md",
+      "summary": "Returns true if the page is deleteable by the current user, false if not.",
+      "signature": "",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "deletable",
+      "class": "Page",
+      "file": "wire/core/Page/method-deletable.md",
+      "summary": "Alias of deleteable().",
+      "signature": "",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "trashable",
+      "class": "Page",
+      "file": "wire/core/Page/method-trashable.md",
+      "summary": "Returns true if the page is trashable by the current user, false if not.",
+      "signature": "$orDeleteable = false",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "restorable",
+      "class": "Page",
+      "file": "wire/core/Page/method-restorable.md",
+      "summary": "Returns true if page is in the trash and is capable of being restored to its original location. @since 3.0.107",
+      "signature": "",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "addable",
+      "class": "Page",
+      "file": "wire/core/Page/method-addable.md",
+      "summary": "Returns true if the current user can add children to the page, false if not. Optionally specify the page to be added for additional access checking.",
+      "signature": "$pageToAdd = null",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "moveable",
+      "class": "Page",
+      "file": "wire/core/Page/method-moveable.md",
+      "summary": "Returns true if the current user can move this page. Optionally specify the new parent to check if the page is moveable to that parent.",
+      "signature": "$newParent = null",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "sortable",
+      "class": "Page",
+      "file": "wire/core/Page/method-sortable.md",
+      "summary": "Returns true if the current user can change the sort order of the current page (within the same parent).",
+      "signature": "",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "cloneable",
+      "class": "Page",
+      "file": "wire/core/Page/method-cloneable.md",
+      "summary": "Can current user clone this page? Specify false for $recursive argument to ignore whether children are cloneable. @since 3.0.239",
+      "signature": "$recursive = null",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "addUrl",
+      "class": "Page",
+      "file": "wire/core/Page/method-addurl.md",
+      "summary": "Add a new URL that redirects to this page and save immediately (returns false if already taken).",
+      "signature": "$url, $language = null",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "removeUrl",
+      "class": "Page",
+      "file": "wire/core/Page/method-removeurl.md",
+      "summary": "Remove a URL that redirects to this page and save immediately.",
+      "signature": "$url",
+      "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "setLanguageValue",
+      "class": "Page",
+      "file": "wire/core/Page/method-setlanguagevalue.md",
+      "summary": "Set value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).",
+      "signature": "$language, $field, $value",
+      "return": "Page"
+    },
+    {
+      "type": "method",
+      "name": "setLanguageValues",
+      "class": "Page",
+      "file": "wire/core/Page/method-setlanguagevalues.md",
+      "summary": "Set value for field in one or more languages (requires LanguageSupport module). $field should be field/property name (string), $values should be array of values indexed by language name. @since 3.0.236",
+      "signature": "$field, array $values",
+      "return": "Page"
+    },
+    {
+      "type": "method",
+      "name": "getLanguageValue",
+      "class": "Page",
+      "file": "wire/core/Page/method-getlanguagevalue.md",
+      "summary": "Get value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).",
+      "signature": "$language, $field",
+      "return": "mixed"
+    },
+    {
+      "type": "method",
+      "name": "getLanguageValues",
+      "class": "Page",
+      "file": "wire/core/Page/method-getlanguagevalues.md",
+      "summary": "Get values for field or one or more languages (requires LanguageSupport module). $field should be field/property name (string), $langs should be array of language names, or omit for all languages. Returns array of values indexed by language name. @since 3.0.236",
+      "signature": "$field, array $langs = []",
+      "return": "array"
+    },
+    {
+      "type": "method",
+      "name": "localName",
+      "class": "Page",
+      "file": "wire/core/Page/method-localname.md",
+      "summary": "Return the page name in the current user’s language, or specify $language argument (Language object, name, or ID), or TRUE to use default page name when blank (instead of 2nd argument).",
+      "signature": "$language = null, $useDefaultWhenEmpty = false",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "localPath",
+      "class": "Page",
+      "file": "wire/core/Page/method-localpath.md",
+      "summary": "Return the page path in the current user's language, or specify $language argument (Language object, name, or ID).",
+      "signature": "$language = null",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "localUrl",
+      "class": "Page",
+      "file": "wire/core/Page/method-localurl.md",
+      "summary": "Return the page URL in the current user's language, or specify $language argument (Language object, name, or ID).",
+      "signature": "$language = null",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "localHttpUrl",
+      "class": "Page",
+      "file": "wire/core/Page/method-localhttpurl.md",
+      "summary": "Return the page URL (including scheme and hostname) in the current user's language, or specify $language argument (Language object, name, or ID).",
+      "signature": "$language = null",
+      "return": "string"
+    },
+    {
+      "type": "method",
+      "name": "setLanguageStatus",
+      "class": "Page",
+      "file": "wire/core/Page/method-setlanguagestatus.md",
+      "summary": "Set active status for language(s), can be called as `$page->setLanguageStatus('es', true);` or `$page->setLanguageStatus([ 'es' => true, 'br' => false ]);` to set multiple. @since 3.0.236",
+      "signature": "$language, $status = null",
+      "return": "Page"
+    },
+    {
+      "type": "method",
+      "name": "getLanguageStatus",
+      "class": "Page",
+      "file": "wire/core/Page/method-getlanguagestatus.md",
+      "summary": "Get active status for language(s). If given a $language (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236",
+      "signature": "$language = []",
+      "return": "array|bool"
+    },
+    {
+      "type": "method",
+      "name": "setLanguageName",
+      "class": "Page",
+      "file": "wire/core/Page/method-setlanguagename.md",
+      "summary": "Set page name for language with `$page->setLanguageName('es', 'hola');` or set multiple with `$page->setLanguageName([ 'default' => 'hello', 'es' => 'hola' ]);` @since 3.0.236",
+      "signature": "$language, $name = null",
+      "return": "Page"
+    },
+    {
+      "type": "method",
+      "name": "getLanguageName",
+      "class": "Page",
+      "file": "wire/core/Page/method-getlanguagename.md",
+      "summary": "Get page name for language(s). If given a Language object, it returns a string. If given array of language names, or argument omitted, it returns an array like `[ 'default' => 'hello', 'es' => 'hola' ];`. @since 3.0.236",
+      "signature": "$language = []",
+      "return": "array|string"
+    },
+    {
+      "type": "method",
+      "name": "draft",
+      "class": "Page",
+      "file": "wire/core/Page/method-draft.md",
+      "summary": "Helper method for drafts (added by ProDrafts).",
+      "signature": "$key = null, $value = null",
+      "return": "ProDraft|int|string|Page|array"
+    },
+    {
+      "type": "method",
+      "name": "descendants",
+      "class": "Page",
+      "file": "wire/core/Page/method-descendants.md",
+      "summary": "Find descendant pages, alias of `Page::find()`, see that method for details. @since 3.0.116",
+      "signature": "$selector = '', array $options = array()",
+      "return": "PageArray"
+    },
+    {
+      "type": "method",
+      "name": "descendant",
+      "class": "Page",
+      "file": "wire/core/Page/method-descendant.md",
+      "summary": "Find one descendant page, alias of `Page::findOne()`, see that method for details. @since 3.0.116",
+      "signature": "$selector = '', array $options = array()",
+      "return": "Page|NullPage"
     },
     {
       "type": "class",
@@ -27894,6 +29352,15 @@
       "return": null
     },
     {
+      "type": "method",
+      "name": "save()",
+      "class": "PagefilesManager",
+      "file": "wire/core/PagefilesManager/method-save.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": null
+    },
+    {
       "type": "class",
       "name": "Permission",
       "file": "wire/core/Permission/index.md",
@@ -29878,6 +31345,33 @@
       "summary": "URL to redirect to after non-authenticated user is logged-in, or false if module does not support",
       "signature": "Page $page",
       "return": null
+    },
+    {
+      "type": "method",
+      "name": "executeUnknown",
+      "class": "Process",
+      "file": "wire/core/Process/method-executeunknown.md",
+      "summary": "Called when urlSegment matches no execute[Method], only if implemented.",
+      "signature": "",
+      "return": "string|array"
+    },
+    {
+      "type": "method",
+      "name": "ready",
+      "class": "Process",
+      "file": "wire/core/Process/method-ready.md",
+      "summary": "Declared in class docblock.",
+      "signature": "",
+      "return": "void"
+    },
+    {
+      "type": "method",
+      "name": "setConfigData",
+      "class": "Process",
+      "file": "wire/core/Process/method-setconfigdata.md",
+      "summary": "Declared in class docblock.",
+      "signature": "array $data",
+      "return": "void"
     },
     {
       "type": "class",

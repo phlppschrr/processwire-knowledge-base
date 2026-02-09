@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPageArray.php`
 
+Inherits: `PageArray`
+
 ProcessWire Repeater Page Array
 
 Special PageArray for use by repeaters that includes a `getNewItem()` method

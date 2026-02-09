@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModulesLoader.php`
 
+Inherits: `ModulesClass`
+
 ProcessWire Modules: Loader
 
 Methods:

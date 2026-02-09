@@ -2,7 +2,10 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterField.php`
 
-Repeater field
+Inherits: `Field`
+
 
 Groups:
 Group: [other](group-other.md)
+
+Repeater field

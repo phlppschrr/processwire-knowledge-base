@@ -2,6 +2,13 @@
 
 Source: `wire/core/Selector.php`
 
+Inherits: `WireData`
+
+
+Groups:
+Group: [other](group-other.md)
+Group: [properties](group-properties.md)
+
 ProcessWire Selector base type and implementation for various Selector types
 
 Selectors hold a field, operator and value and are used in finding things
@@ -63,10 +70,6 @@ if($s->matches($page)) {
 - `SelectorEnds`
 - `SelectorEndsLike`
 - `SelectorBitwiseAnd`
-
-Groups:
-Group: [other](group-other.md)
-Group: [properties](group-properties.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

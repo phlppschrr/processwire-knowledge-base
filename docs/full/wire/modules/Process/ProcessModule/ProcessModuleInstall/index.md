@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
+Inherits: `Wire`
+
 Installation helper for ProcessModule
 
 Provides methods for internative module installation for ProcessModule

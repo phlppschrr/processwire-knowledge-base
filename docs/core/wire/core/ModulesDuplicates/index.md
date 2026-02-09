@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModulesDuplicates.php`
 
+Inherits: `Wire`
+
 ProcessWire Modules Duplicates
 
 Provides functions for managing sitautions where more than one

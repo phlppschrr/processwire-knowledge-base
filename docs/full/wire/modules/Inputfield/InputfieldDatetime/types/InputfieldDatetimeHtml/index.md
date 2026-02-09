@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeHtml.php`
 
+Inherits: `InputfieldDatetimeType`
+
 HTML5 date/time input types
 
 Methods:

@@ -2,6 +2,15 @@
 
 Source: `wire/core/InputfieldWrapper.php`
 
+Inherits: `Inputfield`
+Implements: `Countable`, `IteratorAggregate`
+
+
+Groups:
+Group: [manipulation](group-manipulation.md)
+Group: [output](group-output.md)
+Group: [properties](group-properties.md)
+
 ProcessWire InputfieldWrapper
 
 
@@ -14,11 +23,6 @@ A type of Inputfield that contains other Inputfield objects as children. Commonl
 
 InputfieldWrapper is not designed to render an Inputfield specifically, but you can set a value attribute
 containing content that will be rendered before the wrapper.
-
-Groups:
-Group: [manipulation](group-manipulation.md)
-Group: [output](group-output.md)
-Group: [properties](group-properties.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

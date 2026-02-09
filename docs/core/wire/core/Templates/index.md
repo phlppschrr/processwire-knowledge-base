@@ -2,15 +2,18 @@
 
 Source: `wire/core/Templates.php`
 
+Inherits: `WireSaveableItems`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Templates
 
 Manages and provides access to all the Template instances
 
 
 Manages and provides access to all the Templates.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

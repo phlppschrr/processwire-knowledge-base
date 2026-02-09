@@ -2,6 +2,13 @@
 
 Source: `wire/core/WireMail.php`
 
+Inherits: `WireData`
+Implements: `WireMailInterface`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire WireMail
 
 
@@ -46,9 +53,6 @@ $m->param('-f you@company.com'); // PHP mail() param (envelope from example)
 // note that the send() function always returns the quantity of messages sent
 $numSent = $m->send();
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

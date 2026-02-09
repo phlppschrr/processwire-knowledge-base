@@ -2,6 +2,8 @@
 
 Source: `wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers.php`
 
+Inherits: `WireData`
+
 AdminThemeDefaultHelpers.php
 
 Rendering helper functions for use with ProcessWire admin theme.

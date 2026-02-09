@@ -2,6 +2,13 @@
 
 Source: `wire/core/AdminTheme.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Admin Theme Module
 
 An abstract module intended as a base for admin themes.
@@ -10,9 +17,6 @@ See the Module interface (Module.php) for details about each method.
 
 This file is licensed under the MIT license.
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [getModuleInfo()](method-getmoduleinfo.md)

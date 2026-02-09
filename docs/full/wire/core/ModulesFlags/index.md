@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModulesFlags.php`
 
+Inherits: `ModulesClass`
+
 ProcessWire Modules: Flags
 
 Methods:

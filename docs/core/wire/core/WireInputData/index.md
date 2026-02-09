@@ -2,6 +2,13 @@
 
 Source: `wire/core/WireInputData.php`
 
+Inherits: `Wire`
+Implements: `ArrayAccess`, `IteratorAggregate`, `Countable`
+
+
+Groups:
+Group: [other](group-other.md)
+
 WireInputData manages one of GET, POST, COOKIE, or whitelist
 
 WireInputData and the WireInput class together form a simple
@@ -19,9 +26,6 @@ Each WireInputData is not instantiated unless specifically asked for.
 
 
 @link http://processwire.com/api/ref/input/ Offical $input API variable documentation
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
+Inherits: `Wire`
+
 Class ProcessPageListerBookmarks
 
 Helper class for managing ProcessPageLister bookmarks

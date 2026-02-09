@@ -2,6 +2,7 @@
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
+Inherits: `WireData`
 
 Methods:
 Method: [__construct()](method-__construct.md)

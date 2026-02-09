@@ -2,6 +2,13 @@
 
 Source: `wire/core/WireData.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`, `ArrayAccess`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire WireData
 
 This is the base data container class used throughout ProcessWire.
@@ -19,9 +26,6 @@ array access like `$item[$property]`. If you `foreach()` a WireData object, the 
 iterate all of the properties/values present within it.
 
 May also be accessed as array.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [set()](method-set.md)

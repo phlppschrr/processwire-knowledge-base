@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModuleConfig.php`
 
+Inherits: `WireData`
+
 ModuleConfig class
 
 Serves as the base for classes dedicated to configuring modules.

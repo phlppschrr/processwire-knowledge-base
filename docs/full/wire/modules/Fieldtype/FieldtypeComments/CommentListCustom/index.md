@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
+Inherits: `CommentList`
+
 ProcessWire CommentListCustom
 
 Manages custom CommentList implementations where you specify your own markup

@@ -2,6 +2,8 @@
 
 Source: `wire/core/PageValues.php`
 
+Inherits: `Wire`
+
 ProcessWire Page Values
 
 Provides implementation for several Page value get() functions.

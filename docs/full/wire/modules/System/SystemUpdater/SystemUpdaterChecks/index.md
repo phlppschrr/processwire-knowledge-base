@@ -2,6 +2,8 @@
 
 Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
+Inherits: `Wire`
+
 Class to check for potential issues in the system that may require updates from the admin
 
 All check* methods in this class return true if the check was a success and there are no problem,

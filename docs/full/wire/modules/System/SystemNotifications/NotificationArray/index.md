@@ -2,6 +2,8 @@
 
 Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
+Inherits: `WireArray`
+
 Contains multiple Event objects for a single page
 
 @class NotificationArray

@@ -2,6 +2,8 @@
 
 Source: `wire/core/FileLog.php`
 
+Inherits: `Wire`
+
 ProcessWire FileLog
 
 Creates and maintains a text-based log file.

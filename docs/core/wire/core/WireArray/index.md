@@ -2,6 +2,13 @@
 
 Source: `wire/core/WireArray.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`, `ArrayAccess`, `Countable`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire WireArray
 
 WireArray is the base array access object used in the ProcessWire framework.
@@ -23,9 +30,6 @@ you will be interacting with regularly in the ProcessWire API, whether you know 
 Below are all the public methods you can use to interact with WireArray types in ProcessWire. In addition to these
 methods, you can also treat WireArray types like regular PHP arrays, in that you can `foreach()` them and get or
 set elements using array syntax, i.e. `$value = $items[$key];` to get an item or `$items[] = $item;` to add an item.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

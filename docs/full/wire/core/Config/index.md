@@ -2,20 +2,8 @@
 
 Source: `wire/core/Config.php`
 
-ProcessWire Config
+Inherits: `WireData`
 
-Handles ProcessWire configuration data
-
-This file is licensed under the MIT license
-https://processwire.com/about/license/mit/
-
-
-Holds ProcessWire configuration settings as defined in /wire/config.php and /site/config.php.
-For more detailed descriptions of these $config properties, including default values, see the
-[/wire/config.php](https://github.com/processwire/processwire/blob/master/wire/config.php) file.
-
-
-@see /wire/config.php for more detailed descriptions of all config properties.
 
 Groups:
 Group: [admin](group-admin.md)
@@ -33,6 +21,21 @@ Group: [system](group-system.md)
 Group: [system-IDs](group-system-ids.md)
 Group: [template-files](group-template-files.md)
 Group: [URLs](group-urls.md)
+
+ProcessWire Config
+
+Handles ProcessWire configuration data
+
+This file is licensed under the MIT license
+https://processwire.com/about/license/mit/
+
+
+Holds ProcessWire configuration settings as defined in /wire/config.php and /site/config.php.
+For more detailed descriptions of these $config properties, including default values, see the
+[/wire/config.php](https://github.com/processwire/processwire/blob/master/wire/config.php) file.
+
+
+@see /wire/config.php for more detailed descriptions of all config properties.
 
 Methods:
 Method: [url()](method-url.md)

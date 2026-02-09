@@ -2,6 +2,9 @@
 
 Source: `wire/core/WireDatabasePDO.php`
 
+Inherits: `Wire`
+Implements: `WireDatabase`
+
 Database class provides a layer on top of mysqli
 
 All database operations in ProcessWire are performed via this PDO-style database class.

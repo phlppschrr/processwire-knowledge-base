@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
+Inherits: `InputfieldTinyMCEClass`
+
 InputfieldTinyMCEFormats
 
 Helper for managing TinyMCE style_formats and related settings

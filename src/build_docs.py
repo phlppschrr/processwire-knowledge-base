@@ -27,6 +27,10 @@ LICENSE_HEADER_RE = re.compile(r"^ProcessWire\s+\d+(?:\.[0-9x]+)?\s*,\s*Copyrigh
 COPYRIGHT_LINE_RE = re.compile(r"^Copyright\s+\d{4}\b.*Ryan Cramer", re.I)
 PROCESSWIRE_URL_RE = re.compile(r"^https?://processwire\.com/?$", re.I)
 EXAMPLE_HEADER_RE = re.compile(r".*\bEXAMPLE\b.*:\s*$", re.I)
+SECTION_SPLIT_RE = re.compile(
+    r"^(Methods added by\b|Hookable methods\b|Hookable action methods\b|Alias/alternate methods\b)",
+    re.I,
+)
 
 KEEP_DIRECTIVES = {
     "headline",
@@ -67,6 +71,8 @@ class ClassInfo:
     rel_path: str
     use_constants: bool
     decl_pos: int
+    extends_name: str | None
+    implements: list[str]
 
 
 @dataclass
@@ -79,6 +85,7 @@ class MemberDoc:
     signature_params: str | None
     signature_return: str | None
     is_static: bool
+    is_virtual: bool = False
 
 
 @dataclass
@@ -202,27 +209,37 @@ def wrap_example_blocks(lines: list[str]) -> list[str]:
 def parse_method_tag_line(text: str) -> tuple[str | None, str | None, str | None, str]:
     if not text:
         return None, None, None, ""
-    match = re.match(
-        r"^(?P<ret>[^\s]+)\s+(?P<name>[A-Za-z_][A-Za-z0-9_]*)\s*(?P<sig>\([^)]*\))?\s*(?P<desc>.*)$",
-        text,
-    )
-    if match:
-        ret = match.group("ret").strip()
-        name = match.group("name")
-        sig = match.group("sig") or "()"
-        desc = match.group("desc").strip()
-        if "(" not in ret:
-            return ret, name, sig, desc
-    match = re.match(
-        r"^(?P<name>[A-Za-z_][A-Za-z0-9_]*)\s*(?P<sig>\([^)]*\))?\s*(?P<desc>.*)$",
-        text,
-    )
-    if match:
-        name = match.group("name")
-        sig = match.group("sig") or "()"
-        desc = match.group("desc").strip()
-        return None, name, sig, desc
-    return None, None, None, text.strip()
+
+    def extract_sig_and_desc(tail: str) -> tuple[str | None, str]:
+        tail = tail.lstrip()
+        if not tail.startswith("("):
+            return None, tail.strip()
+        end = find_matching_paren(tail, 0)
+        if end is None:
+            return None, tail.strip()
+        sig = tail[: end + 1]
+        desc = tail[end + 1 :].strip()
+        return sig, desc
+
+    parts = text.split(None, 1)
+    if not parts:
+        return None, None, None, ""
+
+    first = parts[0]
+    rest = parts[1] if len(parts) > 1 else ""
+    if rest.startswith("(") or rest == "":
+        name = first
+        sig, desc = extract_sig_and_desc(rest)
+        return None, name, sig or "()", desc
+
+    match = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)\s*(.*)$", rest)
+    if not match:
+        return None, None, None, text.strip()
+    ret_type = first
+    name = match.group(1)
+    tail = match.group(2)
+    sig, desc = extract_sig_and_desc(tail)
+    return ret_type, name, sig or "()", desc
 
 
 def parse_property_tag_line(text: str) -> tuple[str | None, str | None, str]:
@@ -254,16 +271,11 @@ def format_tag_lines(
             return lines[idx].lstrip().startswith(("@method", "@property"))
         return False
 
-    def last_nonempty_is_tag() -> bool:
-        for item in reversed(formatted):
-            if item.strip() == "":
-                continue
-            return item.startswith("- `")
-        return False
+    last_was_tag = False
 
     for i, line in enumerate(lines):
         stripped = line.strip()
-        if stripped == "" and last_nonempty_is_tag() and next_nonempty_is_tag(i):
+        if stripped == "" and last_was_tag and next_nonempty_is_tag(i):
             continue
 
         if stripped.startswith("@method"):
@@ -286,6 +298,7 @@ def format_tag_lines(
             if desc:
                 line_text = f"{line_text} {desc}"
             formatted.append(line_text.rstrip())
+            last_was_tag = True
             continue
 
         if stripped.startswith("@property"):
@@ -318,10 +331,64 @@ def format_tag_lines(
             if desc:
                 line_text = f"{line_text} {desc}"
             formatted.append(line_text.rstrip())
+            last_was_tag = True
             continue
 
         formatted.append(line)
+        last_was_tag = False
     return formatted
+
+
+def split_intro_sections(lines: list[str]) -> tuple[list[str], list[str]]:
+    for idx, line in enumerate(lines):
+        if SECTION_SPLIT_RE.match(line.strip()):
+            return lines[:idx], lines[idx:]
+    return lines, []
+
+
+def collect_virtual_members(
+    docblock: str,
+    existing_methods: set[str],
+    base_pos: int,
+) -> list[MemberDoc]:
+    lines = strip_docblock(docblock)
+    virtuals: list[MemberDoc] = []
+    seen: set[str] = set()
+    offset = 1
+    for line in lines:
+        if "#pw-internal" in line or "@internal" in line:
+            continue
+        stripped = line.strip()
+        if not stripped.startswith("@method"):
+            continue
+        cleaned = remove_inline_directives(stripped)
+        text = cleaned[len("@method") :].strip()
+        ret_type, name, sig, desc = parse_method_tag_line(text)
+        if not name:
+            continue
+        if name in seen or name in existing_methods or f"___{name}" in existing_methods:
+            continue
+        seen.add(name)
+        sig_params = None
+        if sig:
+            sig_params = sig[1:-1].strip()
+        doc_lines = [desc] if desc else ["Declared in class docblock."]
+        docblock_text = "\n".join(f" * {line}" for line in doc_lines)
+        virtuals.append(
+            MemberDoc(
+                name=name,
+                kind="method",
+                docblock=docblock_text,
+                pos=base_pos + offset,
+                decl_pos=base_pos + offset,
+                signature_params=sig_params,
+                signature_return=ret_type,
+                is_static=False,
+                is_virtual=True,
+            )
+        )
+        offset += 1
+    return virtuals
 
 
 def clean_docblock(lines: list[str], drop_if_internal: bool) -> list[str] | None:
@@ -1053,6 +1120,7 @@ def find_class_ranges(text: str, rel_path: str) -> list[ClassInfo]:
             if any(line.strip().startswith("#pw-internal") for line in doc_lines):
                 continue
         use_constants = docblock is not None and "#pw-use-constants" in docblock
+        extends_name, implements = parse_class_signature(masked, class_pos)
         classes.append(
             ClassInfo(
                 name=class_name,
@@ -1062,6 +1130,8 @@ def find_class_ranges(text: str, rel_path: str) -> list[ClassInfo]:
                 rel_path=rel_path,
                 use_constants=use_constants,
                 decl_pos=class_pos,
+                extends_name=extends_name,
+                implements=implements,
             )
         )
     return classes
@@ -1079,6 +1149,25 @@ def should_skip_path(path: Path) -> bool:
 def should_skip_rel(rel_path: str) -> bool:
     parts_lower = [p.lower() for p in Path(rel_path).parts]
     return any("htmlpurifier" in part for part in parts_lower)
+
+
+def parse_class_signature(masked_text: str, class_pos: int) -> tuple[str | None, list[str]]:
+    brace_start = masked_text.find("{", class_pos)
+    if brace_start == -1:
+        return None, []
+    header = masked_text[class_pos:brace_start]
+    header = " ".join(header.replace("\n", " ").replace("\r", " ").split())
+    extends_name = None
+    match = re.search(r"\bextends\s+([A-Za-z_][A-Za-z0-9_\\\\]*)", header)
+    if match:
+        extends_name = match.group(1).lstrip("\\")
+    implements: list[str] = []
+    match = re.search(r"\bimplements\s+(.+)$", header)
+    if match:
+        impl_text = match.group(1)
+        parts = [p.strip() for p in impl_text.split(",") if p.strip()]
+        implements = [p.lstrip("\\") for p in parts]
+    return extends_name, implements
 
 
 def find_first_decl_pos(text: str) -> int | None:
@@ -1527,17 +1616,22 @@ def write_doc(
     lines.append("")
     lines.append(f"Source: `{rel_path}`")
     lines.append("")
+    if class_info.extends_name:
+        lines.append(f"Inherits: `{class_info.extends_name}`")
+    if class_info.implements:
+        impl_label = ", ".join(f"`{name}`" for name in class_info.implements)
+        lines.append(f"Implements: {impl_label}")
+    if class_info.extends_name or class_info.implements:
+        lines.append("")
 
     ordered_names: list[str] = []
     grouped: dict[str, list[str]] = {}
     group_summaries: dict[str, str] = {}
+    intro_prefix: list[str] = []
+    intro_suffix: list[str] = []
 
     if class_info.docblock:
         intro_lines, grouped, order_groups, group_summaries = parse_class_docblock(class_info.docblock)
-        if intro_lines:
-            intro_lines = wrap_example_blocks(intro_lines)
-            intro_lines = format_tag_lines(intro_lines, class_info.name, doc_index, index_path)
-            lines.extend(intro_lines)
         if grouped:
             remaining = sorted(grouped.keys(), key=lambda k: k.lower())
             for name in order_groups:
@@ -1557,11 +1651,21 @@ def write_doc(
             for group_name in ordered_names:
                 group_file = f"group-{slugify(group_name)}.md"
                 lines.append(f"Group: [{group_name}]({group_file})")
+            lines.append("")
+        if intro_lines:
+            intro_lines = wrap_example_blocks(intro_lines)
+            intro_lines = format_tag_lines(intro_lines, class_info.name, doc_index, index_path)
+            intro_prefix, intro_suffix = split_intro_sections(intro_lines)
+
+    if intro_prefix:
+        lines.extend(intro_prefix)
 
     members_sorted = sorted(members, key=lambda m: m.pos)
     method_links: list[str] = []
     const_links: list[str] = []
     for member in members_sorted:
+        if member.is_virtual:
+            continue
         cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
         if not cleaned:
             continue
@@ -1575,13 +1679,20 @@ def write_doc(
             const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
 
     if method_links:
-        lines.append("")
+        if lines and lines[-1] != "":
+            lines.append("")
         lines.append("Methods:")
         lines.extend(method_links)
     if const_links:
-        lines.append("")
+        if lines and lines[-1] != "":
+            lines.append("")
         lines.append("Constants:")
         lines.extend(const_links)
+
+    if intro_suffix:
+        if lines and lines[-1] != "":
+            lines.append("")
+        lines.extend(intro_suffix)
 
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
@@ -1665,6 +1776,8 @@ def write_doc(
                 }
             )
     for member in members_sorted:
+        if member.is_virtual:
+            continue
         cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
         if not cleaned:
             continue
@@ -1716,6 +1829,8 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
     method_links: list[str] = []
     const_links: list[str] = []
     for member in members_sorted:
+        if member.is_virtual:
+            continue
         cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
         if not cleaned:
             continue
@@ -1768,6 +1883,8 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
         "constants": [],
     }
     for member in members_sorted:
+        if member.is_virtual:
+            continue
         cleaned = clean_docblock(strip_docblock(member.docblock), drop_if_internal=True)
         if not cleaned:
             continue
@@ -2304,6 +2421,22 @@ def main():
             if class_info.use_constants:
                 # constants are already in member_docs
                 pass
+            if class_info.docblock:
+                existing_methods: set[str] = set()
+                for member in members:
+                    if member.kind != "method":
+                        continue
+                    existing_methods.add(member.name)
+                    display_name, is_hookable = hookable_display_name(member.name)
+                    if is_hookable:
+                        existing_methods.add(display_name)
+                virtual_members = collect_virtual_members(
+                    class_info.docblock,
+                    existing_methods,
+                    class_info.end,
+                )
+                if virtual_members:
+                    members.extend(virtual_members)
 
             parsed_classes.append(ParsedClassDoc(rel_path=rel_path, class_info=class_info, members=members))
 

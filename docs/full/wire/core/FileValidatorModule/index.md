@@ -2,6 +2,9 @@
 
 Source: `wire/core/FileValidatorModule.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
 Base class for FileValidator modules
 
 Base class for FileValidator modules, which validate uploaded files.

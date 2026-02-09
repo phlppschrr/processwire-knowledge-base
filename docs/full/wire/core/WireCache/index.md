@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireCache.php`
 
+Inherits: `Wire`
+
 ProcessWire WireCache
 
 Simple cache for storing strings (encoded or otherwise) and serves as $cache API var

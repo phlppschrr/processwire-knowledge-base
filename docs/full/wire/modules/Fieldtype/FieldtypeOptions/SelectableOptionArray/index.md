@@ -2,10 +2,13 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
-ProcessWire Selectable Option Array, for FieldtypeOptions
+Inherits: `WireArray`
+
 
 Groups:
 Group: [other](group-other.md)
+
+ProcessWire Selectable Option Array, for FieldtypeOptions
 
 Methods:
 Method: [setPage()](method-setpage.md)

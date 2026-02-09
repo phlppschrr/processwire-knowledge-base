@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
+Inherits: `Wire`
+
 File management for PagesVersions
 
 Methods:

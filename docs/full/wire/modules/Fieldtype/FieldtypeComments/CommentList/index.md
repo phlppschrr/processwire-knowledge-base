@@ -2,10 +2,14 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
-CommentList provides the default implementation of the CommentListInterface interface.
+Inherits: `Wire`
+Implements: `CommentListInterface`
+
 
 Groups:
 Group: [other](group-other.md)
+
+CommentList provides the default implementation of the CommentListInterface interface.
 
 Methods:
 Method: [__construct()](method-__construct.md)

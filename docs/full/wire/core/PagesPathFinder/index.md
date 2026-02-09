@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesPathFinder.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Path Finder
 
 Pages Path Finder

@@ -2,6 +2,9 @@
 
 Source: `wire/core/FilenameArray.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`, `Countable`
+
 ProcessWire FilenameArray
 
 Manages array of filenames or file URLs, like for $config->scripts and $config->styles.

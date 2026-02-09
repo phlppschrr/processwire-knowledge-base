@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Markup/MarkupPagerNav/PagerNav.php`
 
+Implements: `IteratorAggregate`
+
 Collection of Pager items that determines which pagination links should be used
 
 USAGE EXAMPLE:

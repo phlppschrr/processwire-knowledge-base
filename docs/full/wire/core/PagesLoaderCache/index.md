@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesLoaderCache.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Loader Cache
 
 Pages Loader Cache

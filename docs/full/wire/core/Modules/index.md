@@ -2,6 +2,12 @@
 
 Source: `wire/core/Modules.php`
 
+Inherits: `WireArray`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Modules
 
 Loads and manages all runtime modules for ProcessWire
@@ -22,9 +28,6 @@ Note that when iterating, find(), or calling any other method that returns modul
 returned rather than a real Module. ModulePlaceholders are used in instances when the module may or may not be needed at runtime
 in order to save resources. As a result, anything iterating through these Modules should check to make sure it's not a ModulePlaceholder
 before using it. If it's a ModulePlaceholder, then the real Module can be instantiated/retrieved by $modules->get($className).
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

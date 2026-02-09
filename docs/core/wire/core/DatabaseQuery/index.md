@@ -2,6 +2,12 @@
 
 Source: `wire/core/DatabaseQuery.php`
 
+Inherits: `WireData`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire DatabaseQuery
 
 Serves as a base class for other DatabaseQuery classes
@@ -14,9 +20,6 @@ to build a complex query without worrying about correct syntax placement.
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

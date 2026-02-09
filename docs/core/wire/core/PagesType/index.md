@@ -2,6 +2,13 @@
 
 Source: `wire/core/PagesType.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`, `Countable`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire PagesType
 
 Pages Type
@@ -10,9 +17,6 @@ This class is primarily used by the core as an alternative to `$pages`, providin
 `User`, `Role`, `Permission`, and `Language`. The `$users`, `$roles`, `$permissions` and `$languages` API variables
 are all instances of `PagesType`. This class is typically not instantiated on its own and instead acts as a base class
 which is extended.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

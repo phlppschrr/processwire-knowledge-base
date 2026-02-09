@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesLoader.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Loader
 
 Pages Loader

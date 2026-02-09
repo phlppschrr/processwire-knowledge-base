@@ -2,14 +2,17 @@
 
 Source: `wire/core/Fieldgroups.php`
 
+Inherits: `WireSaveableItemsLookup`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Fieldgroups
 
 Maintains collections of Fieldgroup object instances and represents the `$fieldgroups` API variable.
 For full details on all methods available in a Fieldgroup, be sure to also see the `WireArray` class.
 $fieldgroups
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [init()](method-init.md)

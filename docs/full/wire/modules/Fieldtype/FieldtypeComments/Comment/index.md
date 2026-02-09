@@ -2,12 +2,15 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
-ProcessWire Fieldtype Comments > Comment
+Inherits: `WireData`
 
-Class that contains an individual comment.
 
 Groups:
 Group: [other](group-other.md)
+
+ProcessWire Fieldtype Comments > Comment
+
+Class that contains an individual comment.
 
 Methods:
 Method: [__construct()](method-__construct.md)

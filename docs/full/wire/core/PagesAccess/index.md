@@ -2,6 +2,12 @@
 
 Source: `wire/core/PagesAccess.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Pages Access
 
 Pages Access
@@ -16,9 +22,6 @@ The pages_access table contains just two columns:
 
 Pages using templates that already define their access (determined by $template->useRoles)
 are omitted from the pages_access table, as they aren't necessary.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

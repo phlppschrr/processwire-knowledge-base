@@ -2,6 +2,9 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 
+Inherits: `Wire`
+Implements: `CommentFormInterface`
+
 Default/example implementation of the CommentFormInterface
 
 Generates a user input form for comments, processes comment input, and saves to the page

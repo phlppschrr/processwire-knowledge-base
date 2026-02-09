@@ -2,6 +2,13 @@
 
 Source: `wire/core/FileCompilerModule.php`
 
+Inherits: `WireData`
+Implements: `Module`, `ConfigurableModule`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire File Compiler base module
 
 Provides the base class for FileCompiler modules
@@ -12,9 +19,6 @@ For example, FileCompilerTags.module
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [init()](method-init.md)

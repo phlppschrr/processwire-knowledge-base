@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesTrash.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Trash
 
 Pages Trash

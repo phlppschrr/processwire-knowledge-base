@@ -2,12 +2,15 @@
 
 Source: `wire/core/ProcessController.php`
 
-A Controller for Process* Modules
+Inherits: `Wire`
 
-Intended to be used by templates that call upon Process objects
 
 Groups:
 Group: [other](group-other.md)
+
+A Controller for Process* Modules
+
+Intended to be used by templates that call upon Process objects
 
 Methods:
 Method: [__construct()](method-__construct.md)

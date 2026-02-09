@@ -2,6 +2,12 @@
 
 Source: `wire/core/DatabaseQuerySelect.php`
 
+Inherits: `DatabaseQuery`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire DatabaseQuerySelect
 
 A wrapper for SELECT SQL queries.
@@ -20,9 +26,6 @@ https://processwire.com/about/license/mit/
 Below are Properties populated by DatabaseQuerySelect objects created by PageFinder.
 This is what gets passed to Fieldtype::getMatchQuery() method calls as properties
 available from the $query argument.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

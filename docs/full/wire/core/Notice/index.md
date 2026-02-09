@@ -2,6 +2,12 @@
 
 Source: `wire/core/Notice.php`
 
+Inherits: `WireData`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Notice
 
 Notice
@@ -11,9 +17,6 @@ Contains individual notices/messages used by the application to display to the u
 Notice items come in three different classes: NoticeMessage, NoticeWarning and NoticeError.
 They are all identical in terms of API, with the only difference being that they render as
 informational messages, warnings, or errors.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

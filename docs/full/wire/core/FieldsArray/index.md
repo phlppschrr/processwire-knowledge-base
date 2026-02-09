@@ -2,6 +2,8 @@
 
 Source: `wire/core/FieldsArray.php`
 
+Inherits: `WireArray`
+
 ProcessWire Fields Array
 
 WireArray of Field instances, as used by Fields class

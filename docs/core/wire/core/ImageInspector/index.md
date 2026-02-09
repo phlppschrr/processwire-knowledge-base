@@ -2,6 +2,8 @@
 
 Source: `wire/core/ImageInspector.php`
 
+Inherits: `WireData`
+
 Image Inspector
 
 Upgrades ImageSizer and ImageSizerEngines with more in depth information of imagefiles and -formats.

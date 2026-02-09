@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireNumberTools.php`
 
+Inherits: `Wire`
+
 Tools for working with numbers
 
 

@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Process/ProcessPageEdit/PageBookmarks.php`
 
+Inherits: `Wire`
+
 Class PageBookmarks
 
 Class for managing Page bookmarks, currently used by ProcessPageEdit and ProcessPageList

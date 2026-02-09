@@ -2,12 +2,15 @@
 
 Source: `wire/core/Permissions.php`
 
-The Permissions class serves as the $permissions API variable.
+Inherits: `PagesType`
 
-Provides management of all Permission pages independent of users, for access control.
 
 Groups:
 Group: [other](group-other.md)
+
+The Permissions class serves as the $permissions API variable.
+
+Provides management of all Permission pages independent of users, for access control.
 
 Methods:
 Method: [has()](method-has.md)

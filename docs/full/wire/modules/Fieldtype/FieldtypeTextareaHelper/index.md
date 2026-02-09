@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeTextareaHelper.php`
 
+Inherits: `Wire`
+
 Helper class for FieldtypeTextarea configuration
 
 Methods:

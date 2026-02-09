@@ -2,6 +2,13 @@
 
 Source: `wire/core/ModuleJS.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire ModuleJS
 
 An abstract module intended as a base for modules needing to autoload JS or CSS files.
@@ -14,9 +21,6 @@ See the Module interface (Module.php) for details about each method.
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [getModuleInfo()](method-getmoduleinfo.md)

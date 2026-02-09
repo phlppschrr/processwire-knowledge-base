@@ -2,6 +2,12 @@
 
 Source: `wire/modules/LanguageSupport/Languages.php`
 
+Inherits: `PagesType`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Languages (plural) Class
 
 API variable $languages enables access to all Language pages and various helper methods.
@@ -15,9 +21,6 @@ foreach($languages as $language) {
   echo "</li>";
 }
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

@@ -2,6 +2,12 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
+Inherits: `Field`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Comments Field
 
 Custom “Field” class for Comments fields.
@@ -9,9 +15,6 @@ Custom “Field” class for Comments fields.
 
 
 @todo Some more methods from FieldtypeComments can be moved into this class
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [find()](method-find.md)

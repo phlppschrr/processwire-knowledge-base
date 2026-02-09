@@ -2,6 +2,13 @@
 
 Source: `wire/core/PageArray.php`
 
+Inherits: `PaginatedArray`
+Implements: `WirePaginatable`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire PageArray
 
 PageArray provides an array-like means for storing PageReferences and is utilized throughout ProcessWire.
@@ -26,9 +33,6 @@ $a = PageArray(); // create blank
 $a = PageArray($page); // create + add one page
 $a = PageArray([ $page1, $page2, $page3 ]); // create + add pages
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

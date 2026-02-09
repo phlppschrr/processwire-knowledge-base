@@ -2,6 +2,8 @@
 
 Source: `wire/core/SessionCSRF.php`
 
+Inherits: `Wire`
+
 ProcessWire CSRF Protection
 
 Provides an API for cross site request forgery protection.

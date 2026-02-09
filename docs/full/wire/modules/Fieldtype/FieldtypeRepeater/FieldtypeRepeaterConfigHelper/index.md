@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
+Inherits: `Wire`
+
 Class FieldtypeRepeaterConfigHelper
 
 Helper class for configuring repeater fields

@@ -2,6 +2,9 @@
 
 Source: `wire/core/PageArrayIterator.php`
 
+Inherits: `Wire`
+Implements: `Iterator`
+
 PageArrayIterator for iteration of Page objects in a lazy-loaded fashion
 
 The custom Iterator that finds real Pages in chunks (in advance, and on demand), enabling memory

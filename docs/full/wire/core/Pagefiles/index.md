@@ -2,6 +2,14 @@
 
 Source: `wire/core/Pagefiles.php`
 
+Inherits: `WireArray`
+Implements: `PageFieldValueInterface`
+
+
+Groups:
+Group: [manipulation](group-manipulation.md)
+Group: [other](group-other.md)
+
 ProcessWire Pagefiles
 
 Pagefiles is a type of WireArray that contains Pagefile objects. It also acts as the value for multi-file fields in ProcessWire.
@@ -36,10 +44,6 @@ $pagefile = $page->files->last();
 
 Typically a Pagefiles object will be associated with a specific field attached to a Page.
 There may be multiple instances of Pagefiles attached to a given Page (depending on what fields are in it's fieldgroup).
-
-Groups:
-Group: [manipulation](group-manipulation.md)
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

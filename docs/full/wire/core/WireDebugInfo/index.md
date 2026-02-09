@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireDebugInfo.php`
 
+Inherits: `Wire`
+
 Helper class for PHP 5.6+ __debugInfo() methods in Wire classes
 
 Class WireDebugInfo

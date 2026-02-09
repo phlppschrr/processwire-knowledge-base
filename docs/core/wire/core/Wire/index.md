@@ -2,6 +2,13 @@
 
 Source: `wire/core/Wire.php`
 
+Implements: `WireTranslatable`, `WireFuelable`, `WireTrackable`
+
+
+Groups:
+Group: [api-helpers](group-api-helpers.md)
+Group: [other](group-other.md)
+
 ProcessWire Base Class "Wire"
 
 Wire is the base class for most ProcessWire classes and modules.
@@ -26,10 +33,6 @@ that return the API variable, whether documented below or not.
 
 
 Other standard hookable methods
-
-Groups:
-Group: [api-helpers](group-api-helpers.md)
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

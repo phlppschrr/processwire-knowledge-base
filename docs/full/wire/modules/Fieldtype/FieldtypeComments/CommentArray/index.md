@@ -2,6 +2,9 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 
+Inherits: `PaginatedArray`
+Implements: `WirePaginatable`
+
 ProcessWire FieldtypeComments > CommentArray
 
 Maintains an array of multiple Comment instances.

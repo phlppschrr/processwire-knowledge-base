@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireInputDataCookie.php`
 
+Inherits: `WireInputData`
+
 Provides methods for managing cookies via the $input->cookie API variable
 
 Enables getting, setting and removing cookies from the ProcessWire API using `$input->cookie`.

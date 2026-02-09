@@ -2,6 +2,8 @@
 
 Source: `wire/core/Notices.php`
 
+Inherits: `WireArray`
+
 ProcessWire Notices
 
 Notices

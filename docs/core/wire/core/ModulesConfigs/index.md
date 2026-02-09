@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModulesConfigs.php`
 
+Inherits: `ModulesClass`
+
 ProcessWire Modules: Configs
 
 Methods:

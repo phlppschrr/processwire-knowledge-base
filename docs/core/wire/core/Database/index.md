@@ -2,6 +2,8 @@
 
 Source: `wire/core/Database.php`
 
+Implements: `WireDatabase`
+
 Database class provides a layer on top of mysqli
 
 Methods:

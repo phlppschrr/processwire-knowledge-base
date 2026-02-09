@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireSaveableItemsLookup.php`
 
+Inherits: `WireSaveableItems`
+
 ProcessWire WireSaveableItemsLookup
 
 Provides same functionality as WireSaveableItems except that this class includes joining/modification of a related lookup table

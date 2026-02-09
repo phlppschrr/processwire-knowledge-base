@@ -2,6 +2,9 @@
 
 Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 
+Inherits: `Wire`
+Implements: `LanguagesValueInterface`, `IteratorAggregate`
+
 Serves as a multi-language value placeholder for field values that contain a value in more than one language.
 
 Methods:

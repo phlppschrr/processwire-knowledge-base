@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldsetPage.php`
 
+Inherits: `RepeaterPage`
+
 FieldsetPage represents Page objects used by the FieldtypeFieldsetPage module
 
 Methods:

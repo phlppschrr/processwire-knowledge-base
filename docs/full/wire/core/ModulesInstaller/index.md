@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModulesInstaller.php`
 
+Inherits: `ModulesClass`
+
 ProcessWire Modules: Installer
 
 Methods:

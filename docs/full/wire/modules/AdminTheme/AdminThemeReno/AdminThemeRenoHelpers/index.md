@@ -2,6 +2,7 @@
 
 Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
+Inherits: `AdminThemeDefaultHelpers`
 
 Methods:
 Method: [renderAdminNotices()](method-renderadminnotices.md)

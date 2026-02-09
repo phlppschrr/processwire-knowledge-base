@@ -2,6 +2,22 @@
 
 Source: `wire/core/Page.php`
 
+Inherits: `WireData`
+Implements: `Countable`, `WireMatchable`
+
+
+Groups:
+Group: [common](group-common.md)
+Group: [traversal](group-traversal.md)
+Group: [date-time](group-date-time.md)
+Group: [status](group-status.md)
+Group: [system](group-system.md)
+Group: [files](group-files.md)
+Group: [other](group-other.md)
+Group: [previous](group-previous.md)
+Group: [urls](group-urls.md)
+Group: [users](group-users.md)
+
 ProcessWire Page
 
 Page is the class used by all instantiated pages and it provides functionality for:
@@ -22,179 +38,6 @@ throughout the documentation, but you can substitute that with any variable name
 
 
 
-
-Methods added by PagePermissions.module:
-----------------------------------------
-
-- viewable($field = '', $checkTemplateFile = true): bool Returns true if the page (and optionally field) is viewable by the current user, false if not.
-
-- editable($field = '', $checkPageEditable = true): bool Returns true if the page (and optionally field) is editable by the current user, false if not.
-
-- publishable(): bool Returns true if the page is publishable by the current user, false if not.
-
-- listable(): bool Returns true if the page is listable by the current user, false if not.
-
-- deleteable(): bool Returns true if the page is deleteable by the current user, false if not.
-
-- deletable(): bool Alias of deleteable().
-
-- trashable($orDeleteable = false): bool Returns true if the page is trashable by the current user, false if not.
-
-- restorable(): bool Returns true if page is in the trash and is capable of being restored to its original location. @since 3.0.107
-
-- addable($pageToAdd = null): bool Returns true if the current user can add children to the page, false if not. Optionally specify the page to be added for additional access checking.
-
-- moveable($newParent = null): bool Returns true if the current user can move this page. Optionally specify the new parent to check if the page is moveable to that parent.
-
-- sortable(): bool Returns true if the current user can change the sort order of the current page (within the same parent).
-
-- cloneable($recursive = null): bool Can current user clone this page? Specify false for $recursive argument to ignore whether children are cloneable. @since 3.0.239
-
-- $viewable: bool
-
-- $editable: bool
-
-- $publishable: bool
-
-- $deleteable: bool
-
-- $deletable: bool
-
-- $trashable: bool
-
-- $addable: bool
-
-- $moveable: bool
-
-- $sortable: bool
-
-- $listable: bool
-
-- $cloneable: bool @since 3.0.239
-
-Methods added by PagePathHistory.module (installed by default)
---------------------------------------------------------------
-
-- addUrl($url, $language = null): bool Add a new URL that redirects to this page and save immediately (returns false if already taken).
-
-- removeUrl($url): bool Remove a URL that redirects to this page and save immediately.
-Note: you can use the $page->urls() method to get URLs added by PagePathHistory.
-
-Methods added by LanguageSupport.module (not installed by default)
------------------------------------------------------------------
-
-- setLanguageValue($language, $field, $value): Page Set value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).
-
-- setLanguageValues($field, array $values): Page Set value for field in one or more languages (requires LanguageSupport module). $field should be field/property name (string), $values should be array of values indexed by language name. @since 3.0.236
-
-- getLanguageValue($language, $field): mixed Get value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).
-
-- getLanguageValues($field, array $langs = []): array Get values for field or one or more languages (requires LanguageSupport module). $field should be field/property name (string), $langs should be array of language names, or omit for all languages. Returns array of values indexed by language name. @since 3.0.236
-
-Methods added by LanguageSupportPageNames.module (not installed by default)
----------------------------------------------------------------------------
-
-- localName($language = null, $useDefaultWhenEmpty = false): string Return the page name in the current user’s language, or specify $language argument (Language object, name, or ID), or TRUE to use default page name when blank (instead of 2nd argument).
-
-- localPath($language = null): string Return the page path in the current user's language, or specify $language argument (Language object, name, or ID).
-
-- localUrl($language = null): string Return the page URL in the current user's language, or specify $language argument (Language object, name, or ID).
-
-- localHttpUrl($language = null): string Return the page URL (including scheme and hostname) in the current user's language, or specify $language argument (Language object, name, or ID).
-
-- setLanguageStatus($language, $status = null): Page Set active status for language(s), can be called as `$page->setLanguageStatus('es', true);` or `$page->setLanguageStatus([ 'es' => true, 'br' => false ]);` to set multiple. @since 3.0.236
-
-- getLanguageStatus($language = []): array|bool Get active status for language(s). If given a $language (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236
-
-- setLanguageName($language, $name = null): Page Set page name for language with `$page->setLanguageName('es', 'hola');` or set multiple with `$page->setLanguageName([ 'default' => 'hello', 'es' => 'hola' ]);` @since 3.0.236
-
-- getLanguageName($language = []): array|string Get page name for language(s). If given a Language object, it returns a string. If given array of language names, or argument omitted, it returns an array like `[ 'default' => 'hello', 'es' => 'hola' ];`. @since 3.0.236
-
-Methods added by PageFrontEdit.module (not always installed by default)
------------------------------------------------------------------------
-
-- [edit($key = null, $markup = null, $modal = null): string|bool|mixed](method-___edit.md) Get front-end editable field output or get/set status.
-
-Methods added by ProDrafts.module (if installed)
-------------------------------------------------
-
-- draft($key = null, $value = null): ProDraft|int|string|Page|array Helper method for drafts (added by ProDrafts).
-
-Hookable methods
-----------------
-
-- [getUnknown($key): mixed](method-___getunknown.md) Last stop to find a property that we haven't been able to locate. Hook this method to provide a handler.
-
-- [loaded(): void](method-___loaded.md) Called when page is loaded into memory and is ready to use.
-
-- [render($options = [], $options2 = null): string|mixed](method-___render.md) Render page or field.
-
-- [renderPage(array $options = []): string|mixed](method-___renderpage.md) Render page.
-
-- [renderField($fieldName, $file = ''): string|mixed](method-___renderfield.md) Render field markup, optionally with file relative to templates/fields/.
-
-- [references($selector = '', $field = ''): PageArray](method-___references.md) Return pages that are pointing to this one by way of Page reference fields.
-
-- [links($selector = '', $field = ''): PageArray](method-___links.md) Return pages that link to this one contextually in Textarea/HTML fields.
-
-- [if($key, $yes, $no = ''): string|mixed](method-___if.md) If value is available for $key return or call $yes condition (with optional $no condition)
-
-Hookable action methods called before or after a page is saved (3.0.253+)
--------------------------------------------------------------------------
-
-- [editReady(InputfieldWrapper $form): void](method-___editready.md)
-
-- [saveReady(array $changes, $name = false): void](method-___saveready.md)
-
-- [saved(array $changes, $name = false): void](method-___saved.md)
-
-- [addReady(): void](method-___addready.md)
-
-- [added(): void](method-___added.md)
-
-- [moveReady(Page $oldParent, Page $newParent): void](method-___moveready.md)
-
-- [moved(Page $oldParent, Page $newParent): void](method-___moved.md)
-
-- [deleteReady(array $options): void](method-___deleteready.md)
-
-- [deleted(array $options): void](method-___deleted.md)
-
-- [cloneReady(Page $copy): void](method-___cloneready.md)
-
-- [cloned(Page $copy): void](method-___cloned.md)
-
-- [renameReady(string $oldName, string $newName): void](method-___renameready.md)
-
-- [renamed(string $oldName, string $newName): void](method-___renamed.md)
-
-- [addStatusReady($name, $value): void](method-___addstatusready.md)
-
-- [addedStatus(string $name, int $value): void](method-___addedstatus.md)
-
-- [removeStatusReady($name, $value): void](method-___removestatusready.md)
-
-- [removedStatus(string $name, int $value): void](method-___removedstatus.md)
-
-
-Alias/alternate methods
------------------------
-
-- descendants($selector = '', array $options = array(): PageArray ) Find descendant pages, alias of `Page::find()`, see that method for details. @since 3.0.116
-
-- descendant($selector = '', array $options = array(): Page|NullPage ) Find one descendant page, alias of `Page::findOne()`, see that method for details. @since 3.0.116
-
-Groups:
-Group: [common](group-common.md)
-Group: [traversal](group-traversal.md)
-Group: [date-time](group-date-time.md)
-Group: [status](group-status.md)
-Group: [system](group-system.md)
-Group: [files](group-files.md)
-Group: [other](group-other.md)
-Group: [previous](group-previous.md)
-Group: [urls](group-urls.md)
-Group: [users](group-users.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)
@@ -331,3 +174,107 @@ Constants:
 Const: [statusLocked](const-statuslocked.md)
 Const: [statusHidden](const-statushidden.md)
 Const: [statusUnpublished](const-statusunpublished.md)
+
+Methods added by PagePermissions.module:
+----------------------------------------
+
+- [viewable($field = '', $checkTemplateFile = true): bool](method-viewable.md) Returns true if the page (and optionally field) is viewable by the current user, false if not.
+- [editable($field = '', $checkPageEditable = true): bool](method-editable.md) Returns true if the page (and optionally field) is editable by the current user, false if not.
+- [publishable(): bool](method-publishable.md) Returns true if the page is publishable by the current user, false if not.
+- [listable(): bool](method-listable.md) Returns true if the page is listable by the current user, false if not.
+- [deleteable(): bool](method-deleteable.md) Returns true if the page is deleteable by the current user, false if not.
+- [deletable(): bool](method-deletable.md) Alias of deleteable().
+- [trashable($orDeleteable = false): bool](method-trashable.md) Returns true if the page is trashable by the current user, false if not.
+- [restorable(): bool](method-restorable.md) Returns true if page is in the trash and is capable of being restored to its original location. @since 3.0.107
+- [addable($pageToAdd = null): bool](method-addable.md) Returns true if the current user can add children to the page, false if not. Optionally specify the page to be added for additional access checking.
+- [moveable($newParent = null): bool](method-moveable.md) Returns true if the current user can move this page. Optionally specify the new parent to check if the page is moveable to that parent.
+- [sortable(): bool](method-sortable.md) Returns true if the current user can change the sort order of the current page (within the same parent).
+- [cloneable($recursive = null): bool](method-cloneable.md) Can current user clone this page? Specify false for $recursive argument to ignore whether children are cloneable. @since 3.0.239
+- [$viewable: bool](method-viewable.md)
+- [$editable: bool](method-editable.md)
+- [$publishable: bool](method-publishable.md)
+- [$deleteable: bool](method-deleteable.md)
+- [$deletable: bool](method-deletable.md)
+- [$trashable: bool](method-trashable.md)
+- [$addable: bool](method-addable.md)
+- [$moveable: bool](method-moveable.md)
+- [$sortable: bool](method-sortable.md)
+- [$listable: bool](method-listable.md)
+- [$cloneable: bool](method-cloneable.md) @since 3.0.239
+
+Methods added by PagePathHistory.module (installed by default)
+--------------------------------------------------------------
+
+- [addUrl($url, $language = null): bool](method-addurl.md) Add a new URL that redirects to this page and save immediately (returns false if already taken).
+- [removeUrl($url): bool](method-removeurl.md) Remove a URL that redirects to this page and save immediately.
+Note: you can use the $page->urls() method to get URLs added by PagePathHistory.
+
+Methods added by LanguageSupport.module (not installed by default)
+-----------------------------------------------------------------
+
+- [setLanguageValue($language, $field, $value): Page](method-setlanguagevalue.md) Set value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).
+- [setLanguageValues($field, array $values): Page](method-setlanguagevalues.md) Set value for field in one or more languages (requires LanguageSupport module). $field should be field/property name (string), $values should be array of values indexed by language name. @since 3.0.236
+- [getLanguageValue($language, $field): mixed](method-getlanguagevalue.md) Get value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).
+- [getLanguageValues($field, array $langs = []): array](method-getlanguagevalues.md) Get values for field or one or more languages (requires LanguageSupport module). $field should be field/property name (string), $langs should be array of language names, or omit for all languages. Returns array of values indexed by language name. @since 3.0.236
+
+Methods added by LanguageSupportPageNames.module (not installed by default)
+---------------------------------------------------------------------------
+
+- [localName($language = null, $useDefaultWhenEmpty = false): string](method-localname.md) Return the page name in the current user’s language, or specify $language argument (Language object, name, or ID), or TRUE to use default page name when blank (instead of 2nd argument).
+- [localPath($language = null): string](method-localpath.md) Return the page path in the current user's language, or specify $language argument (Language object, name, or ID).
+- [localUrl($language = null): string](method-localurl.md) Return the page URL in the current user's language, or specify $language argument (Language object, name, or ID).
+- [localHttpUrl($language = null): string](method-localhttpurl.md) Return the page URL (including scheme and hostname) in the current user's language, or specify $language argument (Language object, name, or ID).
+- [setLanguageStatus($language, $status = null): Page](method-setlanguagestatus.md) Set active status for language(s), can be called as `$page->setLanguageStatus('es', true);` or `$page->setLanguageStatus([ 'es' => true, 'br' => false ]);` to set multiple. @since 3.0.236
+- [getLanguageStatus($language = []): array|bool](method-getlanguagestatus.md) Get active status for language(s). If given a $language (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236
+- [setLanguageName($language, $name = null): Page](method-setlanguagename.md) Set page name for language with `$page->setLanguageName('es', 'hola');` or set multiple with `$page->setLanguageName([ 'default' => 'hello', 'es' => 'hola' ]);` @since 3.0.236
+- [getLanguageName($language = []): array|string](method-getlanguagename.md) Get page name for language(s). If given a Language object, it returns a string. If given array of language names, or argument omitted, it returns an array like `[ 'default' => 'hello', 'es' => 'hola' ];`. @since 3.0.236
+
+Methods added by PageFrontEdit.module (not always installed by default)
+-----------------------------------------------------------------------
+
+- [edit($key = null, $markup = null, $modal = null): string|bool|mixed](method-___edit.md) Get front-end editable field output or get/set status.
+
+Methods added by ProDrafts.module (if installed)
+------------------------------------------------
+
+- [draft($key = null, $value = null): ProDraft|int|string|Page|array](method-draft.md) Helper method for drafts (added by ProDrafts).
+
+Hookable methods
+----------------
+
+- [getUnknown($key): mixed](method-___getunknown.md) Last stop to find a property that we haven't been able to locate. Hook this method to provide a handler.
+- [loaded(): void](method-___loaded.md) Called when page is loaded into memory and is ready to use.
+- [render($options = [], $options2 = null): string|mixed](method-___render.md) Render page or field.
+- [renderPage(array $options = []): string|mixed](method-___renderpage.md) Render page.
+- [renderField($fieldName, $file = ''): string|mixed](method-___renderfield.md) Render field markup, optionally with file relative to templates/fields/.
+- [references($selector = '', $field = ''): PageArray](method-___references.md) Return pages that are pointing to this one by way of Page reference fields.
+- [links($selector = '', $field = ''): PageArray](method-___links.md) Return pages that link to this one contextually in Textarea/HTML fields.
+- [if($key, $yes, $no = ''): string|mixed](method-___if.md) If value is available for $key return or call $yes condition (with optional $no condition)
+
+Hookable action methods called before or after a page is saved (3.0.253+)
+-------------------------------------------------------------------------
+
+- [editReady(InputfieldWrapper $form): void](method-___editready.md)
+- [saveReady(array $changes, $name = false): void](method-___saveready.md)
+- [saved(array $changes, $name = false): void](method-___saved.md)
+- [addReady(): void](method-___addready.md)
+- [added(): void](method-___added.md)
+- [moveReady(Page $oldParent, Page $newParent): void](method-___moveready.md)
+- [moved(Page $oldParent, Page $newParent): void](method-___moved.md)
+- [deleteReady(array $options): void](method-___deleteready.md)
+- [deleted(array $options): void](method-___deleted.md)
+- [cloneReady(Page $copy): void](method-___cloneready.md)
+- [cloned(Page $copy): void](method-___cloned.md)
+- [renameReady(string $oldName, string $newName): void](method-___renameready.md)
+- [renamed(string $oldName, string $newName): void](method-___renamed.md)
+- [addStatusReady($name, $value): void](method-___addstatusready.md)
+- [addedStatus(string $name, int $value): void](method-___addedstatus.md)
+- [removeStatusReady($name, $value): void](method-___removestatusready.md)
+- [removedStatus(string $name, int $value): void](method-___removedstatus.md)
+
+
+Alias/alternate methods
+-----------------------
+
+- [descendants($selector = '', array $options = array()): PageArray](method-descendants.md) Find descendant pages, alias of `Page::find()`, see that method for details. @since 3.0.116
+- [descendant($selector = '', array $options = array()): Page|NullPage](method-descendant.md) Find one descendant page, alias of `Page::findOne()`, see that method for details. @since 3.0.116

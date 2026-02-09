@@ -2,6 +2,14 @@
 
 Source: `wire/core/WireInput.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+Group: [URL-segments](group-url-segments.md)
+Group: [URLs](group-urls.md)
+
 Manages the group of GET, POST, COOKIE and whitelist vars, each of which is a WireInputData object.
 
 Provides a means to get user input from URLs, GET, POST, and COOKIE variables and more.
@@ -13,11 +21,6 @@ Provides a means to get user input from URLs, GET, POST, and COOKIE variables an
 
 Note that properties and methods that end with numbers 1-3 above (like urlSegment1, urlSegment1(), etc.)
 continue for as many numbers as the system supports, so you may go beyond 3 where supported.
-
-Groups:
-Group: [other](group-other.md)
-Group: [URL-segments](group-url-segments.md)
-Group: [URLs](group-urls.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireTextTools.php`
 
+Inherits: `Wire`
+
 ProcessWire Text Tools
 
 Specific text and markup tools for ProcessWire $sanitizer and elsewhere.

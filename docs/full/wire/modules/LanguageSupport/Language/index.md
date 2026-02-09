@@ -2,10 +2,13 @@
 
 Source: `wire/modules/LanguageSupport/Language.php`
 
-A type of Page that represents a single Language in ProcessWire
+Inherits: `Page`
+
 
 Groups:
 Group: [other](group-other.md)
+
+A type of Page that represents a single Language in ProcessWire
 
 Methods:
 Method: [__construct()](method-__construct.md)

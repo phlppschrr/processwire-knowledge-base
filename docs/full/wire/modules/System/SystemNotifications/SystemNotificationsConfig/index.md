@@ -2,10 +2,13 @@
 
 Source: `wire/modules/System/SystemNotifications/SystemNotificationsConfig.php`
 
-Configuration class for the SystemNotifications module
+Inherits: `ModuleConfig`
+
 
 Groups:
 Group: [other](group-other.md)
+
+Configuration class for the SystemNotifications module
 
 Methods:
 Method: [getInputfields()](method-getinputfields.md)

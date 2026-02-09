@@ -2,6 +2,13 @@
 
 Source: `wire/core/Paths.php`
 
+Inherits: `WireData`
+
+
+Groups:
+Group: [other](group-other.md)
+Group: [paths-only](group-paths-only.md)
+
 ProcessWire configuration paths and URLs
 
 Configuration paths and URLs (Paths class)
@@ -59,37 +66,23 @@ The following properties are only in $config->urls
 ==================================================
 
 - $admin: string Admin URL
-
 - $next: string|null URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
-
 - $prev: string|null URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 
 The following are in $config->urls and equivalent to previously mentioned properties, but include scheme + host
 ===============================================================================================================
 
 - $httpRoot: string Full http/https URL to site root (i.e. https://domain.com/).
-
 - $httpTemplates: string Full http/https URL to site templates (i.e. https://domain.com/site/templates/).
-
 - $httpModules: string Full http/https URL to core (wire) modules.
-
 - $httpSiteModules: string Full http/https URL to site modules.
-
 - $httpMarkupRegions: string Full http/https URL to files added by Markup Regions. (3.0.254+)
-
 - $httpAssets: string Full http/https URL to site assets (i.e. https://domain.com/site/assets/).
-
 - $httpFiles: string Full http/https URL to site assets files (i.e. https://domain.com/site/assets/files/).
-
 - $httpNext: string Full http/https URL to next pagination of current page (when applicable).
-
 - $httpPrev: string Full http/https URL to prev pagination of current page (when applicable).
 
 The "http" may be optionally prepended to any property accessed from $config->urls (including those you add yourself).
-
-Groups:
-Group: [other](group-other.md)
-Group: [paths-only](group-paths-only.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

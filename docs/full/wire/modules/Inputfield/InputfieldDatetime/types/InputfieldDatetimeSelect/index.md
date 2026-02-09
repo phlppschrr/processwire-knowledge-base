@@ -2,6 +2,7 @@
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeSelect.php`
 
+Inherits: `InputfieldDatetimeType`
 
 Methods:
 Method: [getYearsRange()](method-getyearsrange.md)

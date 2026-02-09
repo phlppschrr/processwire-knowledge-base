@@ -2,15 +2,19 @@
 
 Source: `wire/core/Pagefile.php`
 
-ProcessWire Pagefile
+Inherits: `WireData`
+Implements: `WireArrayItem`
 
-Represents a single file item attached to a page, typically via a File Fieldtype.
-Pagefile objects are contained by a `Pagefiles` object.
 
 Groups:
 Group: [date-time](group-date-time.md)
 Group: [other](group-other.md)
 Group: [tags](group-tags.md)
+
+ProcessWire Pagefile
+
+Represents a single file item attached to a page, typically via a File Fieldtype.
+Pagefile objects are contained by a `Pagefiles` object.
 
 Methods:
 Method: [__construct()](method-__construct.md)

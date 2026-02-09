@@ -2,6 +2,13 @@
 
 Source: `wire/core/Tfa.php`
 
+Inherits: `WireData`
+Implements: `Module`, `ConfigurableModule`
+
+
+Groups:
+Group: [other](group-other.md)
+
 Tfa - ProcessWire Two Factor Authentication module base class
 
 This class is for “Tfa” modules to extend. See the TfaEmail and TfaTotp modules as examples.
@@ -34,11 +41,6 @@ if($tfa->success()) {
 SETTINGS
 
 TEXT LABELS
-
-HOOKABLE METHODS
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)
@@ -87,3 +89,5 @@ Method: [hookInputfieldFormRender()](method-hookinputfieldformrender.md)
 Method: [install()](method-___install.md) (hookable)
 Method: [install()](method-___install.md) (hookable)
 Method: [uninstall()](method-___uninstall.md) (hookable)
+
+HOOKABLE METHODS

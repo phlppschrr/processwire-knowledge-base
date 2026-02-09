@@ -2,6 +2,9 @@
 
 Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
+Inherits: `Wire`
+Implements: `Module`
+
 PagesVersions
 
 
@@ -32,13 +35,6 @@ $pagesVersions->restorePageVersion($pageV2);
 $pagesVersions->deletePageVersion($pageV2);
 ~~~~~
 
-HOOKABLE METHODS
-----------------
-
-- [allowPageVersions(Page $page): bool](method-___allowpageversions.md)
-
-@todo test change of template in version
-
 Methods:
 Method: [getPageVersion()](method-getpageversion.md)
 Method: [getPageVersion()](method-getpageversion.md)
@@ -64,3 +60,10 @@ Method: [getUnsupportedFields()](method-getunsupportedfields.md)
 Method: [allowPageVersions()](method-___allowpageversions.md) (hookable)
 Method: [getNextPageVersionNumber()](method-getnextpageversionnumber.md)
 Method: [hookBeforePagesSave()](method-hookbeforepagessave.md)
+
+HOOKABLE METHODS
+----------------
+
+- [allowPageVersions(Page $page): bool](method-___allowpageversions.md)
+
+@todo test change of template in version

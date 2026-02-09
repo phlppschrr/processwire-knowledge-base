@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
+Inherits: `InputfieldTinyMCEClass`
+
 InputfieldTinyMCEConfigHelper
 
 Helper for managing configuration settings in TinyMCE

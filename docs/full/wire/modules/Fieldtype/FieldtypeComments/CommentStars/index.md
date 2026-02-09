@@ -2,13 +2,16 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentStars.php`
 
+Inherits: `WireData`
+
+
+Groups:
+Group: [other](group-other.md)
+
 Class CommentStars
 
 Handles rendering of star ratings for comments.
 Additional code in comments.js and comments.css accompanies this.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

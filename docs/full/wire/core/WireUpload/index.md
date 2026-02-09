@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireUpload.php`
 
+Inherits: `Wire`
+
 ProcessWire WireUpload
 
 Saves uploads of single or multiple files, saving them to the destination path.

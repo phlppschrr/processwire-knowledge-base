@@ -40,4 +40,4 @@ $string = $page->httpUrl($options = array());
 ## See Also
 
 - [Page::url()](method-url.md)
-- [Page::localHttpUrl()](index.md)
+- [Page::localHttpUrl()](method-localhttpurl.md)

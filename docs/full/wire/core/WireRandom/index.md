@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireRandom.php`
 
+Inherits: `Wire`
+
 Random generators for ProcessWire
 
 Includes methods for random strings, numbers, arrays and passwords.

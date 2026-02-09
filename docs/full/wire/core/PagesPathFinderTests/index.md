@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesPathFinder.php`
 
+Inherits: `Wire`
+
 PagesPathFinder Tests
 
 Usage:

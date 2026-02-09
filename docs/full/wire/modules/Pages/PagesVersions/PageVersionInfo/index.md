@@ -2,14 +2,17 @@
 
 Source: `wire/modules/Pages/PagesVersions/PageVersionInfo.php`
 
+Inherits: `WireData`
+
+
+Groups:
+Group: [other](group-other.md)
+
 Page Version Info
 
 For pages that are a version, this class represents the `_version`
 property of the page. It is also used as the return value for some
 methods in the PagesVersions class to return version information.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

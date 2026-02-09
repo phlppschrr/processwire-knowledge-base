@@ -2,6 +2,12 @@
 
 Source: `wire/core/Fields.php`
 
+Inherits: `WireSaveableItems`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Fields
 
 Manages collection of ALL Field instances, not specific to any particular Fieldgroup
@@ -15,9 +21,6 @@ foreach($fields as $field) {
   echo "<p>Name: $field->name, Type: $field->type, Label: $field->label</p>";
 }
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

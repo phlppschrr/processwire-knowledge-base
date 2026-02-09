@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
+Inherits: `Wire`
+
 
 Groups:
 Group: [other](group-other.md)

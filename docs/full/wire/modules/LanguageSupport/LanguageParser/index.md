@@ -2,6 +2,8 @@
 
 Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
+Inherits: `Wire`
+
 ProcessWire Language Parser
 
 Parses a PHP file to locate all function calls containing translatable text and their optional comments.

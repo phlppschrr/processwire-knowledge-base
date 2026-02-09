@@ -2,6 +2,8 @@
 
 Source: `wire/core/ModulesClass.php`
 
+Inherits: `Wire`
+
 ProcessWire Modules: Class
 
 Base for Modules helper classes.

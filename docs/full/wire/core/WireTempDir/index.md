@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireTempDir.php`
 
+Inherits: `Wire`
+
 ProcessWire Temporary Directory Manager
 
 Methods:

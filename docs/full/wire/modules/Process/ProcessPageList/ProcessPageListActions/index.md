@@ -2,10 +2,13 @@
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
-Actions manager for ProcessPageList
+Inherits: `Wire`
+
 
 Groups:
 Group: [other](group-other.md)
+
+Actions manager for ProcessPageList
 
 Methods:
 Method: [setActionLabels()](method-setactionlabels.md)

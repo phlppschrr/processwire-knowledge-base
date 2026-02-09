@@ -2,13 +2,16 @@
 
 Source: `wire/core/Fieldtypes.php`
 
+Inherits: `WireArray`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Fieldtypes
 
 Maintains a collection of Fieldtype modules.
 $fieldtypes
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

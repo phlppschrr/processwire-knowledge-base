@@ -2,12 +2,15 @@
 
 Source: `wire/core/Users.php`
 
-The Users class serves as the $users API variable.
+Inherits: `PagesType`
 
-Manages all users (User objects) in ProcessWire.
 
 Groups:
 Group: [other](group-other.md)
+
+The Users class serves as the $users API variable.
+
+Manages all users (User objects) in ProcessWire.
 
 Methods:
 Method: [__construct()](method-__construct.md)

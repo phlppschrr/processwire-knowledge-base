@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesEditor.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Editor
 
 Pages Editor

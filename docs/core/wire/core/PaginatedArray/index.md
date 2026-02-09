@@ -2,6 +2,13 @@
 
 Source: `wire/core/PaginatedArray.php`
 
+Inherits: `WireArray`
+Implements: `WirePaginatable`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Paginated WireArray
 
 Like WireArray, but with the additional methods and properties needed for WirePaginatable interface.
@@ -10,9 +17,6 @@ PaginatedArray is a type of WireArray that supports pagination of items within i
 Here you will see methods specific to the pagination aspects of this class only. For full details on
 available methods outside of pagination, please see the `WireArray` class. The most common type of
 PaginatedArray is a `PageArray`.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [setTotal()](method-settotal.md)

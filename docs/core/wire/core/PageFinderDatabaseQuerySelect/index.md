@@ -2,7 +2,10 @@
 
 Source: `wire/core/PageFinder.php`
 
-Typehinting class for DatabaseQuerySelect object passed to Fieldtype::getMatchQuery()
+Inherits: `DatabaseQuerySelect`
+
 
 Groups:
 Group: [other](group-other.md)
+
+Typehinting class for DatabaseQuerySelect object passed to Fieldtype::getMatchQuery()

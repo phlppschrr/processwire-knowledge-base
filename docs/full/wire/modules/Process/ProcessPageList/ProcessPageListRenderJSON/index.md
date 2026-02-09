@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRenderJSON.php`
 
+Inherits: `ProcessPageListRender`
+
 JSON implementation of the Page List rendering
 
 Methods:

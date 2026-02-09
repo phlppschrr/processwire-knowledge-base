@@ -2,10 +2,13 @@
 
 Source: `wire/modules/Process/ProcessField/ProcessFieldExportImport.php`
 
-Handles import/export for ProcessField
+Inherits: `Wire`
+
 
 Groups:
 Group: [other](group-other.md)
+
+Handles import/export for ProcessField
 
 Methods:
 Method: [getExportData()](method-getexportdata.md)

@@ -2,6 +2,13 @@
 
 Source: `wire/core/Process.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Process
 
 Process is the base Module class for each part of ProcessWire's web admin.
@@ -12,9 +19,6 @@ Please be sure to see the `Module` interface for full details on methods you can
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

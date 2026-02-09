@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentFormCustom.php`
 
+Inherits: `CommentForm`
+
 CommentFormCustom
 
 CommentForm with 100% customizable form markup

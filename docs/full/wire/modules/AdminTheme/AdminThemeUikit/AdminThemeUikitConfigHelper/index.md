@@ -2,6 +2,7 @@
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/config.php`
 
+Inherits: `Wire`
 
 Methods:
 Method: [__construct()](method-__construct.md)

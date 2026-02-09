@@ -2,6 +2,9 @@
 
 Source: `wire/core/WireCacheDatabase.php`
 
+Inherits: `Wire`
+Implements: `WireCacheInterface`
+
 Database cache handler for WireCache
 
 

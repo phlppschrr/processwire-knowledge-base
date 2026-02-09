@@ -2,13 +2,16 @@
 
 Source: `wire/core/WireShutdown.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire shutdown handler
 
 
 Look for errors at shutdown and log them, plus echo the error if the page is editable
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

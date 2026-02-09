@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesSortfields.php`
 
+Inherits: `Wire`
+
 ProcessWire PagesSortfields
 
 Pages Sortfields

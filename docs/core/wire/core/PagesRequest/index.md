@@ -2,6 +2,12 @@
 
 Source: `wire/core/PagesRequest.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Pages Request
 
 Pages Request
@@ -11,9 +17,6 @@ Methods in this class should be accessed from `$pages->request()`, i.e.
 ~~~~~
 $page = $pages->request()->getPage();
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

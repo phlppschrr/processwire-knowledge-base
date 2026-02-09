@@ -2,6 +2,15 @@
 
 Source: `wire/core/User.php`
 
+Inherits: `Page`
+
+
+Groups:
+Group: [access](group-access.md)
+Group: [common](group-common.md)
+Group: [languages](group-languages.md)
+Group: [other](group-other.md)
+
 ProcessWire UserPage
 
 A type of Page used for storing an individual User
@@ -17,12 +26,6 @@ Additional notes regarding the $user->pass property:
 Note that when getting, this returns a hashed version of the password, so it is not typically useful to get this property.
 However, it is useful to set this property if you want to change the password. When you change a password, it is assumed
 to be the non-hashed/non-encrypted version. ProcessWire will hash it automatically when the user is saved.
-
-Groups:
-Group: [access](group-access.md)
-Group: [common](group-common.md)
-Group: [languages](group-languages.md)
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

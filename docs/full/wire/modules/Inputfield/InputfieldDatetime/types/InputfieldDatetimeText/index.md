@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText.php`
 
+Inherits: `InputfieldDatetimeType`
+
 Text date input types with optional jQuery UI datepicker
 
 Methods:

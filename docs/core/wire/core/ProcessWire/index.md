@@ -2,6 +2,8 @@
 
 Source: `wire/core/ProcessWire.php`
 
+Inherits: `Wire`
+
 ProcessWire API Bootstrap
 
 Represents an instance of ProcessWire connected with a set of API variables.
@@ -16,76 +18,41 @@ Default API vars (A-Z)
 ======================
 
 - $adminTheme: AdminTheme|AdminThemeFramework|null
-
 - $cache: WireCache
-
 - $classLoader: WireClassLoader
-
 - $config: Config
-
 - $database: WireDatabasePDO
-
 - $datetime: WireDateTime
-
 - $fieldgroups: Fieldgroups
-
 - $fields: Fields
-
 - $fieldtypes: Fieldtypes
-
 - $files: WireFileTools
-
 - $fuel: Fuel
-
 - $hooks: WireHooks
-
 - $input: WireInput
-
 - $languages: Languages (present only if LanguageSupport installed)
-
 - $log: WireLog
-
 - $mail: WireMailTools
-
 - $modules: Modules
-
 - $notices: Notices
-
 - $page: Page
-
 - $pages: Pages
-
 - $permissions: Permissions
-
 - $process: Process|ProcessPageView
-
 - $profiler: WireProfilerInterface
-
 - $roles: Roles
-
 - $sanitizer: Sanitizer
-
 - $session: Session
-
 - $templates: Templates
-
 - $urls: Paths
-
 - $user: User
-
 - $users: Users
-
 - $wire: ProcessWire
-
 - $shutdown: WireShutdown
-
 - $pagesVersions: PagesVersions|null
-
-- [init()](method-___init.md)
-
-- [ready()](method-___ready.md)
-
-- [finished(array $data)](method-___finished.md)
+- [init()()](method-init.md)
+- [ready()()](method-ready.md)
+- @method finished(array $data) finished(array $data)
 
 Methods:
 Method: [__construct()](method-__construct.md)

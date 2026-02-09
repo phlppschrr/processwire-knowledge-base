@@ -2,13 +2,17 @@
 
 Source: `wire/core/ImageSizerEngine.php`
 
+Inherits: `WireData`
+Implements: `Module`, `ConfigurableModule`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ImageSizer Engine Module (Abstract)
 
 Copyright (C) 2016-2019 by Horst Nogajski and Ryan Cramer
 This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

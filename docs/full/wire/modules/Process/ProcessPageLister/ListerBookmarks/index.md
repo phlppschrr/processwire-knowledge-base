@@ -2,6 +2,7 @@
 
 Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
+Inherits: `Wire`
 
 Methods:
 Method: [__construct()](method-__construct.md)

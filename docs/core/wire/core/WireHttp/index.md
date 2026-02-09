@@ -2,6 +2,12 @@
 
 Source: `wire/core/WireHttp.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire HTTP tools
 
 Provides capability for sending POST/GET requests to URLs
@@ -20,9 +26,6 @@ if($response !== false) {
 ~~~~~
 
 Thanks to @horst for his assistance with several methods in this class.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

@@ -2,6 +2,14 @@
 
 Source: `wire/core/Field.php`
 
+Inherits: `WireData`
+Implements: `Saveable`, `Exportable`
+
+
+Groups:
+Group: [access](group-access.md)
+Group: [properties](group-properties.md)
+
 ProcessWire Field
 
 The Field class corresponds to a record in the fields database table
@@ -17,30 +25,17 @@ Field objects are managed by the `$fields` API variable.
 Common Inputfield properties that Field objects store:
 
 - $required: int|bool|null Whether or not this field is required during input
-
 - $requiredIf: string|null A selector-style string that defines the conditions under which input is required
-
 - $showIf: string|null A selector-style string that defines the conditions under which the Inputfield is shown
-
 - $columnWidth: int|null The Inputfield column width (percent) 10-100.
-
 - $collapsed: int|null The Inputfield 'collapsed' value (see Inputfield collapsed constants).
-
 - $textFormat: int|null The Inputfield 'textFormat' value (see Inputfield textFormat constants).
-
 - [viewable(Page $page = null, User $user = null): bool](method-___viewable.md) Is the field viewable on the given $page by the given $user?
-
 - [editable(Page $page = null, User $user = null): bool](method-___editable.md) Is the field editable on the given $page by the given $user?
-
 - [getInputfield(Page $page, $contextStr = ''): Inputfield](method-___getinputfield.md) Get instance of the Inputfield module that collects input for this field.
-
 - [getConfigInputfields(): InputfieldWrapper](method-___getconfiginputfields.md) Get Inputfields needed to configure this field in the admin.
 
 @todo add modified date property
-
-Groups:
-Group: [access](group-access.md)
-Group: [properties](group-properties.md)
 
 Methods:
 Method: [set()](method-set.md)

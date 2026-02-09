@@ -2,6 +2,9 @@
 
 Source: `wire/core/WireSessionHandler.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
 ProcessWire Session Handler
 
 This is an abstract class for a session handler module to extend from.

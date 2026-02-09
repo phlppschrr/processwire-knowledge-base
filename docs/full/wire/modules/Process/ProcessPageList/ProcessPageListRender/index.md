@@ -2,10 +2,13 @@
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
-Base class for Page List rendering
+Inherits: `Wire`
+
 
 Groups:
 Group: [other](group-other.md)
+
+Base class for Page List rendering
 
 Methods:
 Method: [__construct()](method-__construct.md)

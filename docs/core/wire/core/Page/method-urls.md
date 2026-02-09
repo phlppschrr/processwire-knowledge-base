@@ -35,7 +35,7 @@ $array = $page->urls($options = array());
 
 ## See Also
 
-- [Page::addUrl()](index.md)
+- [Page::addUrl()](method-addurl.md)
 - page::removeUrl()
 
 ## Since

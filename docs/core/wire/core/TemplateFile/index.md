@@ -2,12 +2,15 @@
 
 Source: `wire/core/TemplateFile.php`
 
-ProcessWire TemplateFile
+Inherits: `WireData`
 
-A template file that will be loaded and executed as PHP and its output returned.
 
 Groups:
 Group: [other](group-other.md)
+
+ProcessWire TemplateFile
+
+A template file that will be loaded and executed as PHP and its output returned.
 
 Methods:
 Method: [__construct()](method-__construct.md)

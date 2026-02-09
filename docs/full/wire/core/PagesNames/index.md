@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesNames.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Names
 
 Pages Names

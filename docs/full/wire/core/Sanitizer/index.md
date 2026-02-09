@@ -2,6 +2,12 @@
 
 Source: `wire/core/Sanitizer.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Sanitizer
 
 Sanitizer provides shared sanitization functions as commonly used throughout ProcessWire core and modules
@@ -93,9 +99,6 @@ and thus it’ll return a non-value rather than a sanitized value. See the `Sani
 
 
 @link https://processwire.com/api/variables/sanitizer/ Offical $sanitizer API variable Documentation
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

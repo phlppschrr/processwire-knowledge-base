@@ -2,6 +2,12 @@
 
 Source: `wire/core/FieldtypeMulti.php`
 
+Inherits: `Fieldtype`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire FieldtypeMulti
 
 Interface and some functionality for Fieldtypes that can contain multiple values.
@@ -16,9 +22,6 @@ with the Field object in an $orderByCols property (array).
 To support pagination: Both the `$useOrderByCols` and the `$usePagination` properties of this Fieldtype must be set to
 boolean true, indicating the Fieldtype supports pagination (and sorting). When enabled, the wakeupValue() method will receive
 pagination information in the value it is given. All other aspects of pagination must be handled by the individual Fieldtype.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [getDatabaseSchema()](method-getdatabaseschema.md)

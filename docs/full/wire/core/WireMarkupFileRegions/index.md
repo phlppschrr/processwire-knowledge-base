@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireMarkupFileRegions.php`
 
+Inherits: `Wire`
+
 ProcessWire Markup File Regions
 
 Markup File Regions

@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
+Inherits: `Wire`
+
 
 Groups:
 Group: [other](group-other.md)

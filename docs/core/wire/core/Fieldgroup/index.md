@@ -2,6 +2,14 @@
 
 Source: `wire/core/Fieldgroup.php`
 
+Inherits: `WireArray`
+Implements: `Saveable`, `Exportable`, `HasLookupItems`
+
+
+Groups:
+Group: [other](group-other.md)
+Group: [retrieval](group-retrieval.md)
+
 ProcessWire Fieldgroup
 
 A group of fields that is ultimately attached to a Template.
@@ -13,10 +21,6 @@ The existance of Fieldgroups is hidden at the ProcessWire web admin level
 as it appears that fields are attached directly to Templates. However, they
 are separated in the API in case want want to have fieldgroups used by
 multiple templates in the future (like ProcessWire 1.x).
-
-Groups:
-Group: [other](group-other.md)
-Group: [retrieval](group-retrieval.md)
 
 Methods:
 Method: [add()](method-add.md)

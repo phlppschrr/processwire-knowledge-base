@@ -2,10 +2,7 @@
 
 Source: `wire/core/Password.php`
 
-- [setPass($value)](method-___setpass.md) Protected internal use method
-
+- [Protected(): setPass($value)](method-protected.md) internal use method
 - [$salt: string](method-salt.md)
-
 - [$hash: string](method-hash.md)
-
 - $pass: string

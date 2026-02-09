@@ -2,6 +2,8 @@
 
 Source: `wire/core/Selector.php`
 
+Inherits: `SelectorContains`
+
 Selector for advanced text searches that interprets specific search commands
 
 - `foo` Optional word has no prefix.

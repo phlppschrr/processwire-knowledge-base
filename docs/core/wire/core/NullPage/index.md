@@ -2,6 +2,13 @@
 
 Source: `wire/core/NullPage.php`
 
+Inherits: `Page`
+Implements: `WireNull`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire NullPage
 
 NullPage is a type of Page object returned by many API methods to indicate a non-match.
@@ -23,6 +30,3 @@ if($item instanceof NullPage) {
 
 Placeholder class for non-existant and non-saveable Page.
 Many API functions return a NullPage to indicate no match.
-
-Groups:
-Group: [other](group-other.md)

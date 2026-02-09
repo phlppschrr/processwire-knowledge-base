@@ -2,6 +2,12 @@
 
 Source: `wire/core/Selectors.php`
 
+Inherits: `WireArray`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Selectors
 
 Processes a selector string into a WireArray of Selector objects.
@@ -33,9 +39,6 @@ and [Selector Operators](https://processwire.com/docs/selectors/operators/).
 @todo Move static helper methods to dedicated API var/class so this class can be more focused
 
 @todo Determine whether Selector array handling methods would be better in separate/descending class
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

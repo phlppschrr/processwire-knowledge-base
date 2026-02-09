@@ -2,12 +2,15 @@
 
 Source: `wire/core/WireFileTools.php`
 
-ProcessWire File Tools ($files API variable)
+Inherits: `Wire`
 
-Helpers for working with files and directories.
 
 Groups:
 Group: [other](group-other.md)
+
+ProcessWire File Tools ($files API variable)
+
+Helpers for working with files and directories.
 
 Methods:
 Method: [__destruct()](method-__destruct.md)

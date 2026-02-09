@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesExportImport.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Export/Import Helpers
 
 Pages Exporter/Importer

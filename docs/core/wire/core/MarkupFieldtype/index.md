@@ -2,6 +2,9 @@
 
 Source: `wire/core/MarkupFieldtype.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
 Class MarkupFieldtype
 
 Provides pre-packaged markup rendering for Fieldtypes

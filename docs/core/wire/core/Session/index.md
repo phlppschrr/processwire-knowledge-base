@@ -2,6 +2,13 @@
 
 Source: `wire/core/Session.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Session
 
 Start a session with login/logout capability
@@ -30,9 +37,6 @@ bool $config->sessionCookieSecure Use secure cookies or session? (default=true)
 @todo enable login/forceLogin to recognize non-HTTP use of login, when no session needs to be maintained
 
 @todo add a default $config->apiUser to be used when non-HTTP/bootstrap usage
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

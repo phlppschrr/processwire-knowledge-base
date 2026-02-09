@@ -2,10 +2,13 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
-RepeaterPage represents an individual repeater page item
+Inherits: `Page`
+
 
 Groups:
 Group: [other](group-other.md)
+
+RepeaterPage represents an individual repeater page item
 
 Methods:
 Method: [setForPage()](method-setforpage.md)

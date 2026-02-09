@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesRaw.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Raw Finder
 
 Methods:

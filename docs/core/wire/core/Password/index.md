@@ -2,13 +2,16 @@
 
 Source: `wire/core/Password.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Password Fieldtype
 
 Class to hold combined password/salt info. Uses Blowfish when possible.
 Specially used by FieldtypePassword.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [matches()](method-matches.md)

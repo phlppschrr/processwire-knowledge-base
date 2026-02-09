@@ -2,6 +2,8 @@
 
 Source: `wire/core/FieldSelectorInfo.php`
 
+Inherits: `Wire`
+
 Class that provides information about selectors for Fieldtypes
 
 This is primarily a helper for the base Fieldtype class getSelectorInfo method

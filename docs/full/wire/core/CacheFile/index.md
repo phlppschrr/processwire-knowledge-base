@@ -2,6 +2,8 @@
 
 Source: `wire/core/CacheFile.php`
 
+Inherits: `Wire`
+
 ProcessWire CacheFile
 
 Class to manage individual cache files

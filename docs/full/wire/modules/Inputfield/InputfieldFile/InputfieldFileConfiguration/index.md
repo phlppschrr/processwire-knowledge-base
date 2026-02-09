@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Inputfield/InputfieldFile/config.php`
 
+Inherits: `Wire`
+
 ProcessWire File Inputfield (configuration)
 
 Methods:

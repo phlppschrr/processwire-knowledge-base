@@ -2,6 +2,12 @@
 
 Source: `wire/core/PagefilesManager.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire PagefilesManager
 
 Manages files and file directories for a page independent of a particular field.
@@ -27,9 +33,6 @@ The Page files manager can be accessed from any page’s `Page::filesManager()` 
 $filesPath = $page->filesManager->path();
 $filesURL = $page->filesManager->url();
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

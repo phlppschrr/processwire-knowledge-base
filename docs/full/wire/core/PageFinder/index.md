@@ -2,27 +2,12 @@
 
 Source: `wire/core/PageFinder.php`
 
+Inherits: `Wire`
+
 ProcessWire PageFinder
 
 Matches selector strings to pages
 
-
-Hookable methods:
-=================
-
-- [find(Selectors|string|array $selectors, $options = array(): array|DatabaseQuerySelect](method-___find.md) )
-
-- [getQuery($selectors, array $options): DatabaseQuerySelect](method-___getquery.md)
-
-- [getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string](method-___getqueryallowedtemplateswhere.md)
-
-- [getQueryJoinPath(DatabaseQuerySelect $query, $selector): void](method-___getqueryjoinpath.md)
-
-- [getQueryUnknownField($fieldName, array $data): bool|Field](method-___getqueryunknownfield.md) ;
-
-- $includeMode: string
-
-- $checkAccess: bool
 
 Methods:
 Method: [init()](method-init.md)
@@ -67,3 +52,14 @@ Method: [getQueryOwnerField()](method-getqueryownerfield.md)
 Method: [getPageArrayData()](method-getpagearraydata.md)
 Method: [hasNativeFieldName()](method-hasnativefieldname.md)
 Method: [syntaxError()](method-syntaxerror.md)
+
+Hookable methods:
+=================
+
+- [find(Selectors|string|array $selectors, $options = array()): array|DatabaseQuerySelect](method-___find.md)
+- [getQuery($selectors, array $options): DatabaseQuerySelect](method-___getquery.md)
+- [getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string](method-___getqueryallowedtemplateswhere.md)
+- [getQueryJoinPath(DatabaseQuerySelect $query, $selector): void](method-___getqueryjoinpath.md)
+- [getQueryUnknownField($fieldName, array $data): bool|Field](method-___getqueryunknownfield.md) ;
+- $includeMode: string
+- $checkAccess: bool

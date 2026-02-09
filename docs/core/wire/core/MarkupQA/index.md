@@ -2,6 +2,8 @@
 
 Source: `wire/core/MarkupQA.php`
 
+Inherits: `Wire`
+
 HTML Markup Quality Assurance
 
 Provides runtime quality assurance for markup stored in [textarea] field values.

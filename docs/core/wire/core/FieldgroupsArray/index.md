@@ -2,6 +2,8 @@
 
 Source: `wire/core/FieldgroupsArray.php`
 
+Inherits: `WireArray`
+
 ProcessWire Fieldgroups Array
 
 WireArray of Fieldgroup instances as used by Fieldgroups class.

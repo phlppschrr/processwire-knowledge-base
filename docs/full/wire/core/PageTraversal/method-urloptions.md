@@ -57,4 +57,4 @@ $string = $pageTraversal->urlOptions(Page $page, $options = array());
 - [Page::path()](../Page/method-path.md)
 - [Page::httpUrl()](../Page/method-httpurl.md)
 - [Page::editUrl()](../Page/method-editurl.md)
-- [Page::localUrl()](../Page/index.md)
+- [Page::localUrl()](../Page/method-localurl.md)

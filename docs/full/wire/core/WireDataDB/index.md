@@ -2,6 +2,9 @@
 
 Source: `wire/core/WireDataDB.php`
 
+Inherits: `WireData`
+Implements: `Countable`
+
 WireData with database storage
 
 A WireData object that maintains its data in a database table rather than just in memory.

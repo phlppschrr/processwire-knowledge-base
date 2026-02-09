@@ -41,4 +41,4 @@ $string = $pageTraversal->httpUrl(Page $page, $options = array());
 ## See Also
 
 - [Page::url()](../Page/method-url.md)
-- [Page::localHttpUrl()](../Page/index.md)
+- [Page::localHttpUrl()](../Page/method-localhttpurl.md)

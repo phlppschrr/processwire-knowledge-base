@@ -2,12 +2,15 @@
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
-InputfieldTinyMCETools
+Inherits: `InputfieldTinyMCEClass`
 
-Helper tools for InputfieldTinyMCE module.
 
 Groups:
 Group: [other](group-other.md)
+
+InputfieldTinyMCETools
+
+Helper tools for InputfieldTinyMCE module.
 
 Methods:
 Method: [sanitizeNames()](method-sanitizenames.md)

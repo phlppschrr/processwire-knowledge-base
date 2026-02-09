@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireSessionHandlerAdaptor.php`
 
+Implements: `SessionHandlerInterface`
+
 Adaptor between WireSessionHandler modules and PHP’s SessionHandlerInterface
 
 Used on PHP 8.4+ installations only. Necessary because:

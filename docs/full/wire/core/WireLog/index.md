@@ -2,6 +2,12 @@
 
 Source: `wire/core/WireLog.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Log
 
 WireLog represents the ProcessWire $log API variable.
@@ -12,9 +18,6 @@ Enables creation of logs, logging of events, and management of logs.
 
 
 @todo option to disable logs by name
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [message()](method-message.md)

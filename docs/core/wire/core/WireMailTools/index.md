@@ -2,6 +2,12 @@
 
 Source: `wire/core/WireMailTools.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Mail Tools ($mail API variable)
 
 
@@ -24,9 +30,6 @@ $numSent = $mail->subject('Hello world')
   ->bodyHTML('<h2>Hello there big world</h2>')
   ->send();
 ~~~~~
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [new()](method-___new.md) (hookable)

@@ -2,14 +2,17 @@
 
 Source: `wire/modules/Inputfield/InputfieldPageTable/InputfieldPageTableAjax.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 Ajax handler for FieldtypePageTable/InputfieldPageTable
 
 Concept by Antti Peisa
 Code by Ryan Cramer
 Sponsored by Avoine
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

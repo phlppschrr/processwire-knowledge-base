@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionConfig.php`
 
+Inherits: `Wire`
+
 Inputfields and processing for Select Options Fieldtype
 
 Methods:

@@ -2,6 +2,8 @@
 
 Source: `wire/core/WireMarkupRegions.php`
 
+Inherits: `Wire`
+
 ProcessWire Markup Regions
 
 Supports finding and manipulating of markup regions in an HTML document.

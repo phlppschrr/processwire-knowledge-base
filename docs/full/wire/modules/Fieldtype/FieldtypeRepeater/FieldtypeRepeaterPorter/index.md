@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeaterPorter.php`
 
+Inherits: `Wire`
+
 Export and Import tools for FieldtypeRepeater
 
 Methods:

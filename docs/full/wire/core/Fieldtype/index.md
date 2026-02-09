@@ -2,6 +2,9 @@
 
 Source: `wire/core/Fieldtype.php`
 
+Inherits: `WireData`
+Implements: `Module`
+
 ProcessWire Fieldtype Base
 
 Abstract base class from which all Fieldtype modules are descended from.
@@ -14,75 +17,6 @@ to work with the field data. Most Fieldtype modules only need to implement a few
 of most other methods provided in this Fieldtype class accounts for most situations already.
 
 
-
-Hookable methods
-================
-
-- [getConfigInputfields(Field $field): InputfieldWrapper](method-___getconfiginputfields.md)
-
-- [getConfigAdvancedInputfields(Field $field): InputfieldWrapper](method-___getconfigadvancedinputfields.md)
-
-- [getConfigArray(Field $field): array](method-___getconfigarray.md)
-
-- [getConfigAllowContext(Field $field): array](method-___getconfigallowcontext.md)
-
-- [exportConfigData(Field $field, array $data): array](method-___exportconfigdata.md)
-
-- [importConfigData(Field $field, array $data): array](method-___importconfigdata.md)
-
-- [getCompatibleFieldtypes(Field $field): Fieldtypes|null](method-___getcompatiblefieldtypes.md)
-
-- [formatValue(Page $page, Field $field, $value): mixed](method-___formatvalue.md)
-
-- [markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype](method-___markupvalue.md)
-
-- [wakeupValue(Page $page, Field $field, $value): mixed](method-___wakeupvalue.md)
-
-- [sleepValue(Page $page, Field $field, $value): string|int|array](method-___sleepvalue.md)
-
-- [exportValue(Page $page, Field $field, $value, array $options = array(): string|float|int|array](method-___exportvalue.md) )
-
-- importValue(Page $page, Field $field, $value, array $options = array(): string|float|int|array|object )
-
-- [createField(Field $field): bool](method-___createfield.md)
-
-- [getSelectorInfo(Field $field, array $data = array(): array](method-___getselectorinfo.md) )
-
-- [loadPageField(Page $page, Field $field): mixed|null](method-___loadpagefield.md)
-
-- [loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null](method-___loadpagefieldfilter.md)
-
-- [savePageField(Page $page, Field $field): bool](method-___savepagefield.md)
-
-- [deleteField(Field $field): bool](method-___deletefield.md)
-
-- [deletePageField(Page $page, Field $field): bool](method-___deletepagefield.md)
-
-- [emptyPageField(Page $page, Field $field): bool](method-___emptypagefield.md)
-
-- [replacePageField(Page $src, Page $dst, Field $field): bool](method-___replacepagefield.md)
-
-- [deleteTemplateField(Template $template, Field $field): bool](method-___deletetemplatefield.md)
-
-- [cloneField(Field $field): Field](method-___clonefield.md)
-
-- renamedField(Field $field, $prevName): void
-
-- savedField(Field $field): void
-
-- saveFieldReady(Field $field): void
-
-- [install(): void](method-___install.md)
-
-- [uninstall(): void](method-___uninstall.md)
-
-- getFieldSetups(): array
-
-- $name: string Name of Fieldtype module.
-
-- $shortName: string Short name of Fieldtype, which excludes the "Fieldtype" prefix.
-
-- $longName: string Long name of Fieldtype, which is typically the module title.
 
 Methods:
 Method: [getInputfield()](method-getinputfield.md)
@@ -124,3 +58,40 @@ Method: [install()](method-___install.md) (hookable)
 Method: [uninstall()](method-___uninstall.md) (hookable)
 Method: [upgrade()](method-___upgrade.md) (hookable)
 Method: [__toString()](method-__tostring.md)
+
+Hookable methods
+================
+
+- [getConfigInputfields(Field $field): InputfieldWrapper](method-___getconfiginputfields.md)
+- [getConfigAdvancedInputfields(Field $field): InputfieldWrapper](method-___getconfigadvancedinputfields.md)
+- [getConfigArray(Field $field): array](method-___getconfigarray.md)
+- [getConfigAllowContext(Field $field): array](method-___getconfigallowcontext.md)
+- [exportConfigData(Field $field, array $data): array](method-___exportconfigdata.md)
+- [importConfigData(Field $field, array $data): array](method-___importconfigdata.md)
+- [getCompatibleFieldtypes(Field $field): Fieldtypes|null](method-___getcompatiblefieldtypes.md)
+- [formatValue(Page $page, Field $field, $value): mixed](method-___formatvalue.md)
+- [markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype](method-___markupvalue.md)
+- [wakeupValue(Page $page, Field $field, $value): mixed](method-___wakeupvalue.md)
+- [sleepValue(Page $page, Field $field, $value): string|int|array](method-___sleepvalue.md)
+- [exportValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array](method-___exportvalue.md)
+- importValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array|object
+- [createField(Field $field): bool](method-___createfield.md)
+- [getSelectorInfo(Field $field, array $data = array()): array](method-___getselectorinfo.md)
+- [loadPageField(Page $page, Field $field): mixed|null](method-___loadpagefield.md)
+- [loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null](method-___loadpagefieldfilter.md)
+- [savePageField(Page $page, Field $field): bool](method-___savepagefield.md)
+- [deleteField(Field $field): bool](method-___deletefield.md)
+- [deletePageField(Page $page, Field $field): bool](method-___deletepagefield.md)
+- [emptyPageField(Page $page, Field $field): bool](method-___emptypagefield.md)
+- [replacePageField(Page $src, Page $dst, Field $field): bool](method-___replacepagefield.md)
+- [deleteTemplateField(Template $template, Field $field): bool](method-___deletetemplatefield.md)
+- [cloneField(Field $field): Field](method-___clonefield.md)
+- renamedField(Field $field, $prevName): void
+- savedField(Field $field): void
+- saveFieldReady(Field $field): void
+- [install(): void](method-___install.md)
+- [uninstall(): void](method-___uninstall.md)
+- getFieldSetups(): array
+- $name: string Name of Fieldtype module.
+- $shortName: string Short name of Fieldtype, which excludes the "Fieldtype" prefix.
+- $longName: string Long name of Fieldtype, which is typically the module title.

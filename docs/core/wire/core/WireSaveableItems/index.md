@@ -2,13 +2,17 @@
 
 Source: `wire/core/WireSaveableItems.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire WireSaveableItems
 
 Wire Data Access Object, provides reusable capability for loading, saving, creating, deleting,
 and finding items of descending class-defined types.
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [getAll()](method-getall.md)

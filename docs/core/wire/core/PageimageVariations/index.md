@@ -2,6 +2,9 @@
 
 Source: `wire/core/PageimageVariations.php`
 
+Inherits: `Wire`
+Implements: `IteratorAggregate`, `Countable`
+
 ProcessWire PageimageVariations
 
 Helper class for Pageimage that handles variation collection methods

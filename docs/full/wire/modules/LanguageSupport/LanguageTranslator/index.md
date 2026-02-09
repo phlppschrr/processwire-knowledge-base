@@ -2,6 +2,8 @@
 
 Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
+Inherits: `Wire`
+
 ProcessWire Language Translator
 
 Methods:

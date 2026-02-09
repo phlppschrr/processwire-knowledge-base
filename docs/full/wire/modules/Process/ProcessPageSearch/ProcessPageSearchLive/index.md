@@ -2,13 +2,16 @@
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
+Inherits: `Wire`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessPageSearch: Live Search (for PW admin)
 
 
 @todo support searching repeaters
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

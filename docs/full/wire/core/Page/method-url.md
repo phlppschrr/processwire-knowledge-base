@@ -125,4 +125,4 @@ $string = $page->url($options = null);
 - [Page::path()](method-path.md)
 - [Page::httpUrl()](method-httpurl.md)
 - [Page::editUrl()](method-editurl.md)
-- [Page::localUrl()](index.md)
+- [Page::localUrl()](method-localurl.md)

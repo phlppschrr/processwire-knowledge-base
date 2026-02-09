@@ -2,6 +2,12 @@
 
 Source: `wire/core/Fuel.php`
 
+Implements: `IteratorAggregate`
+
+
+Groups:
+Group: [other](group-other.md)
+
 ProcessWire Fuel
 
 Fuel maintains a single instance each of multiple objects used throughout the application.
@@ -10,9 +16,6 @@ $users, $fields, and so on. The fuel is required to keep the system running, so 
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [set()](method-set.md)

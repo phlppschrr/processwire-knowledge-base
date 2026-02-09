@@ -2,6 +2,8 @@
 
 Source: `wire/core/PagesParents.php`
 
+Inherits: `Wire`
+
 ProcessWire Pages Parents
 
 Pages Parents

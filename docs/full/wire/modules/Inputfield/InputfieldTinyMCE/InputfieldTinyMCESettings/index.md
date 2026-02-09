@@ -2,12 +2,15 @@
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php`
 
-InputfieldTinyMCETools
+Inherits: `InputfieldTinyMCEClass`
 
-Helper for managing TinyMCE settings and defaults
 
 Groups:
 Group: [other](group-other.md)
+
+InputfieldTinyMCETools
+
+Helper for managing TinyMCE settings and defaults
 
 Methods:
 Method: [getSettings()](method-getsettings.md)

@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
+Inherits: `Wire`
+
 ProcessWire Selectable Option Manager, for FieldtypeOptions
 
 Handles management of the fieldtype_options table and related field_[name] table

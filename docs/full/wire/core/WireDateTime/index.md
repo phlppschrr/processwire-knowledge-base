@@ -2,12 +2,15 @@
 
 Source: `wire/core/WireDateTime.php`
 
-ProcessWire Date/Time Tools ($datetime API variable)
+Inherits: `Wire`
 
-The $datetime API variable provides helpers for working with dates/times and conversion between formats.
 
 Groups:
 Group: [other](group-other.md)
+
+ProcessWire Date/Time Tools ($datetime API variable)
+
+The $datetime API variable provides helpers for working with dates/times and conversion between formats.
 
 Methods:
 Method: [getDateFormats()](method-getdateformats.md)

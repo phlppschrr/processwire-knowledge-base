@@ -2,10 +2,13 @@
 
 Source: `wire/core/ModulesInfo.php`
 
-ProcessWire Modules: Info
+Inherits: `ModulesClass`
+
 
 Groups:
 Group: [other](group-other.md)
+
+ProcessWire Modules: Info
 
 Methods:
 Method: [moduleInfoCacheEmpty()](method-moduleinfocacheempty.md)

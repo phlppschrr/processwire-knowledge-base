@@ -2,6 +2,12 @@
 
 Source: `wire/core/AdminThemeFramework.php`
 
+Inherits: `AdminTheme`
+
+
+Groups:
+Group: [other](group-other.md)
+
 AdminTheme Framework
 
 The methods in this class may eventually be merged to AdminTheme.php,
@@ -9,9 +15,6 @@ but are isolated to this class during development.
 
 This file is licensed under the MIT license.
 https://processwire.com/about/license/mit/
-
-Groups:
-Group: [other](group-other.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

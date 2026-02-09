@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
+Inherits: `Wire`
+
 ProcessWire File Fieldtype (configuration)
 
 Methods:
