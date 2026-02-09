@@ -13,9 +13,6 @@ populated queries are not ever used for actual database queries, just for logs.
 
 Note that this class only tracks bindValue() and does not track bindParam().
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [setDebugNote()](method-setdebugnote.md)

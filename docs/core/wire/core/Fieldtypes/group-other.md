@@ -2,82 +2,82 @@
 
 Source: `wire/core/Fieldtypes.php`
 
-@property FieldtypeCheckbox $FieldtypeCheckbox
+- $FieldtypeCheckbox: FieldtypeCheckbox
 
-@property FieldtypeCheckbox $checkbox
+- $checkbox: FieldtypeCheckbox
 
-@property FieldtypeComments|null $FieldtypeComments
+- $FieldtypeComments: FieldtypeComments|null
 
-@property FieldtypeComments|null $comments
+- $comments: FieldtypeComments|null
 
-@property FieldtypeDatetime $FieldtypeDatetime
+- $FieldtypeDatetime: FieldtypeDatetime
 
-@property FieldtypeDatetime $datetime
+- $datetime: FieldtypeDatetime
 
-@property FieldtypeEmail $FieldtypeEmail
+- $FieldtypeEmail: FieldtypeEmail
 
-@property FieldtypeEmail $email
+- $email: FieldtypeEmail
 
-@property FieldtypeFile $file
+- $file: FieldtypeFile
 
-@property FieldtypeFile $FieldtypeFile
+- $FieldtypeFile: FieldtypeFile
 
-@property FieldtypeFloat $FieldtypeFloat
+- $FieldtypeFloat: FieldtypeFloat
 
-@property FieldtypeFloat $float
+- $float: FieldtypeFloat
 
-@property FieldtypeImage $FieldtypeImage
+- $FieldtypeImage: FieldtypeImage
 
-@property FieldtypeImage $image
+- $image: FieldtypeImage
 
-@property FieldtypeInteger $FieldtypeInteger
+- $FieldtypeInteger: FieldtypeInteger
 
-@property FieldtypeInteger $integer
+- $integer: FieldtypeInteger
 
-@property FieldtypeModule $FieldtypeModule
+- $FieldtypeModule: FieldtypeModule
 
-@property FieldtypeModule $module
+- $module: FieldtypeModule
 
-@property FieldtypeOptions|null $FieldtypeOptions
+- $FieldtypeOptions: FieldtypeOptions|null
 
-@property FieldtypeOptions|null $options
+- $options: FieldtypeOptions|null
 
-@property FieldtypePage $FieldtypePage
+- $FieldtypePage: FieldtypePage
 
-@property FieldtypePage $page
+- $page: FieldtypePage
 
-@property FieldtypePageTable $FieldtypePageTable
+- $FieldtypePageTable: FieldtypePageTable
 
-@property FieldtypePageTable $pageTable
+- $pageTable: FieldtypePageTable
 
-@property FieldtypePageTitle $FieldtypePageTitle
+- $FieldtypePageTitle: FieldtypePageTitle
 
-@property FieldtypePageTitle $pageTitle
+- $pageTitle: FieldtypePageTitle
 
-@property FieldtypePassword $FieldtypePassword
+- $FieldtypePassword: FieldtypePassword
 
-@property FieldtypePassword $password
+- $password: FieldtypePassword
 
-@property FieldtypeRepeater|null $FieldtypeRepeater
+- $FieldtypeRepeater: FieldtypeRepeater|null
 
-@property FieldtypeRepeater|null $repeater
+- $repeater: FieldtypeRepeater|null
 
-@property FieldtypeSelector|null $FieldtypeSelector
+- $FieldtypeSelector: FieldtypeSelector|null
 
-@property FieldtypeSelector|null $selector
+- $selector: FieldtypeSelector|null
 
-@property FieldtypeText $FieldtypeText
+- $FieldtypeText: FieldtypeText
 
-@property FieldtypeText $text
+- $text: FieldtypeText
 
-@property FieldtypeTextarea $FieldtypeTextarea
+- $FieldtypeTextarea: FieldtypeTextarea
 
-@property FieldtypeTextarea $textarea
+- $textarea: FieldtypeTextarea
 
-@property FieldtypeToggle|null $FieldtypeToggle
+- $FieldtypeToggle: FieldtypeToggle|null
 
-@property FieldtypeToggle|null $toggle
+- $toggle: FieldtypeToggle|null
 
-@property FieldtypeURL $FieldtypeURL
+- $FieldtypeURL: FieldtypeURL
 
-@property FieldtypeURL $URL
+- $URL: FieldtypeURL

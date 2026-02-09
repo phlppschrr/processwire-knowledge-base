@@ -7,9 +7,6 @@ ProcessWire Page Traversal
 Provides implementation for Page traversal functions.
 Based upon the jQuery traversal functions.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [numChildren()](method-numchildren.md)
 Method: [numDescendants()](method-numdescendants.md)

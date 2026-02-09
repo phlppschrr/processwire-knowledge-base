@@ -6,9 +6,6 @@ ProcessWire FilenameArray
 
 Manages array of filenames or file URLs, like for $config->scripts and $config->styles.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [add()](method-add.md)
 Method: [getKey()](method-getkey.md)

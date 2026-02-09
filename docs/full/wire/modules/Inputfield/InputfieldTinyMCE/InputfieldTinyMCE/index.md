@@ -4,8 +4,6 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 
 InputfieldTinyMCE
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 TinyMCE 6.x, Copyright (c) 2023 Ephox Corporation DBA Tiny Technologies, Inc.
 https://www.tiny.cloud/docs/tinymce/6/
@@ -14,83 +12,83 @@ https://www.tiny.cloud/docs/tinymce/6/
 TinyMCE settings (these are also Field settings)
 ------------------------------------------------
 
-@property string $plugins Space-separated string of plugins to enable
+- $plugins: string Space-separated string of plugins to enable
 
-@property string $toolbar Space-separated string of tools to show in toolbar
+- $toolbar: string Space-separated string of tools to show in toolbar
 
-@property string $contextmenu Space-separated string of tools to show in context menu
+- $contextmenu: string Space-separated string of tools to show in context menu
 
-@property string $removed_menuitems Space-separated string of tools to remove from menubar
+- $removed_menuitems: string Space-separated string of tools to remove from menubar
 
-@property string $invalid_styles Space-separated string of invalid inline styles
+- $invalid_styles: string Space-separated string of invalid inline styles
 
-@property string $menubar Space-separated list of top-level menubar items
+- $menubar: string Space-separated list of top-level menubar items
 
-@property int $height Height of editor in pixels
+- $height: int Height of editor in pixels
 
 Field/Inputfield settings
 -------------------------
 
-@property int $inlineMode Use inline mode? 0=Regular editor, 1=Inline editor, 2=Fixed height inline editor
+- $inlineMode: int Use inline mode? 0=Regular editor, 1=Inline editor, 2=Fixed height inline editor
 
-@property int $lazyMode Use lazy-loading mode? 0=Off, 1=Lazy, 2=Extra lazy
+- $lazyMode: int Use lazy-loading mode? 0=Off, 1=Lazy, 2=Extra lazy
 
-@property array $toggles Markup toggles, see self::toggle* constants
+- $toggles: array Markup toggles, see self::toggle* constants
 
-@property array $features General features: toolbar, menubar, statusbar, stickybars, spellcheck, purifier, imgUpload, imgResize, pasteFilter
+- $features: array General features: toolbar, menubar, statusbar, stickybars, spellcheck, purifier, imgUpload, imgResize, pasteFilter
 
-@property array $headlines Allowed headline types
+- $headlines: array Allowed headline types
 
-@property string $settingsFile Location of optional custom-settings.json settings file (URL relative to PW root URL)
+- $settingsFile: string Location of optional custom-settings.json settings file (URL relative to PW root URL)
 
-@property string $settingsField Alternate field to inherit settings from rather than configure settings with this instance.
+- $settingsField: string Alternate field to inherit settings from rather than configure settings with this instance.
 
-@property string $settingsJSON JSON with custom settings that override the defaults
+- $settingsJSON: string JSON with custom settings that override the defaults
 
-@property string $styleFormatsCSS Style formats as CSS to parse and apply to style_formats and content_style
+- $styleFormatsCSS: string Style formats as CSS to parse and apply to style_formats and content_style
 
-@property array $extPlugins Additional plugins to enable for this field (URL paths from customPluginOptions)
+- $extPlugins: array Additional plugins to enable for this field (URL paths from customPluginOptions)
 
 Module settings
 ---------------
 
-@property string $content_css Basename of content CSS file to use or "custom" to use custom URL (default=wire)
+- $content_css: string Basename of content CSS file to use or "custom" to use custom URL (default=wire)
 
-@property string $content_css_url Applies only if $content_css has value "custom"
+- $content_css_url: string Applies only if $content_css has value "custom"
 
-@property string $skin Skin to use (default=oxide)
+- $skin: string Skin to use (default=oxide)
 
-@property string $skin_url URL to skin
+- $skin_url: string URL to skin
 
-@property string $extPluginOpts Newline separated URL paths (relative to PW root) of extra plugin .js files
+- $extPluginOpts: string Newline separated URL paths (relative to PW root) of extra plugin .js files
 
-@property string $defaultsFile Location of optional defaults.json file that merges with defaults.json (URL relative to PW root URL)
+- $defaultsFile: string Location of optional defaults.json file that merges with defaults.json (URL relative to PW root URL)
 
-@property string $defaultsJSON JSON that merges with the defaults.json for all instances
+- $defaultsJSON: string JSON that merges with the defaults.json for all instances
 
-@property array $optionals Names of optional settings that can be configured per-field
+- $optionals: array Names of optional settings that can be configured per-field
 
-@property bool|int $debugMode Makes InputfieldTinyMCE.js use verbose console.log() messages (default=false)
+- $debugMode: bool|int Makes InputfieldTinyMCE.js use verbose console.log() messages (default=false)
 
-@property string $extraCSS Extra CSS for editor, applies to all editors (appended to TinyMCE content_style setting)
+- $extraCSS: string Extra CSS for editor, applies to all editors (appended to TinyMCE content_style setting)
 
-@property string $pasteFilter Rule string of elements and attributes allowed during filtered paste
+- $pasteFilter: string Rule string of elements and attributes allowed during filtered paste
 
-@property array $imageFields Names of fields allowed for drag-drop in images
+- $imageFields: array Names of fields allowed for drag-drop in images
 There are also `$lang_name=packname` settings in multi-lang sites where "name" is lang name and "packname" is lang pack name
 
 Runtime settings
 ----------------
 
-@property string $configName Name of configuration set to use (default=blank)
+- $configName: string Name of configuration set to use (default=blank)
 
-@property-read bool $readonly Are we in read-only mode? Automatically set during renderValue mode. This is a read-only property. (default=false)
+- $readonly: bool Are we in read-only mode? Automatically set during renderValue mode. This is a read-only property. (default=false)
 
-@property-read bool $initialized Is the editor initialized? This is a read-only property. (default=false)
+- $initialized: bool Is the editor initialized? This is a read-only property. (default=false)
 
-@property array $external_plugins URLs of external plugins, this is also a TinyMCE setting
+- $external_plugins: array URLs of external plugins, this is also a TinyMCE setting
 
-@method void getModuleConfigInputfields(InputfieldWrapper $inputfields)
+- [getModuleConfigInputfields(InputfieldWrapper $inputfields): void](method-___getmoduleconfiginputfields.md)
 
 Methods:
 Method: [getModuleInfo()](method-getmoduleinfo.md)

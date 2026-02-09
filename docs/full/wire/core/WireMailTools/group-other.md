@@ -2,8 +2,8 @@
 
 Source: `wire/core/WireMailTools.php`
 
-@method WireMail new($options = array()) Create a new WireMail() instance
+- [new($options = array(): WireMail](method-___new.md) ) Create a new WireMail() instance
 
-@method bool|string isBlacklistEmail($email, array $options = array())
+- [isBlacklistEmail($email, array $options = array(): bool|string](method-___isblacklistemail.md) )
 
-@property WireMail new Get a new WireMail() instance (same as method version)
+- @property WireMail new Get a new WireMail() instance (same as method version) WireMail new Get a new WireMail() instance (same as method version)

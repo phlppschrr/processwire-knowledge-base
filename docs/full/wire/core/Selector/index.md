@@ -9,8 +9,6 @@ Selectors hold a field, operator and value and are used in finding things
 This file provides the base implementation for a Selector, as well as implementation
 for several actual Selector types under the main Selector class.
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
 
 Selector maintains a single selector consisting of field name, operator, and value.
 

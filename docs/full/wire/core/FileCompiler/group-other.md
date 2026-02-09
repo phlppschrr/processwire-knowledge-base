@@ -2,6 +2,6 @@
 
 Source: `wire/core/FileCompiler.php`
 
-@method string compile($sourceFile)
+- [compile($sourceFile): string](method-___compile.md)
 
-@method string compileData($data, $sourceFile)
+- [compileData($data, $sourceFile): string](method-___compiledata.md)

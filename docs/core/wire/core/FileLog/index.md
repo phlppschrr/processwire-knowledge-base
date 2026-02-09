@@ -6,9 +6,6 @@ ProcessWire FileLog
 
 Creates and maintains a text-based log file.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [wired()](method-wired.md)

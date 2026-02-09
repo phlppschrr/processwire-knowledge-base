@@ -11,8 +11,6 @@ be passed between methods and objects that add to it without knowledge
 of what other methods/objects have done to it. It also means being able
 to build a complex query without worrying about correct syntax placement.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/

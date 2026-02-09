@@ -11,9 +11,6 @@ Here you will see methods specific to the pagination aspects of this class only.
 available methods outside of pagination, please see the `WireArray` class. The most common type of
 PaginatedArray is a `PageArray`.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

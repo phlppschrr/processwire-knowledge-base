@@ -2,12 +2,12 @@
 
 Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
-@method renderList(array $items, $prefix = 'pw-search', $class = 'list')
+- [renderList(array $items, $prefix = 'pw-search', $class = 'list')](method-___renderlist.md)
 
-@method renderItem(array $item, $prefix = 'pw-search', $class = 'list')
+- [renderItem(array $item, $prefix = 'pw-search', $class = 'list')](method-___renderitem.md)
 
-@method string|array execute($getJSON = true)
+- [execute($getJSON = true): string|array](method-___execute.md)
 
-@method bool findCustom(array $data)
+- [findCustom(array $data): bool](method-___findcustom.md)
 
-@method array getDefaultPageSearchFields()
+- [getDefaultPageSearchFields(): array](method-___getdefaultpagesearchfields.md)

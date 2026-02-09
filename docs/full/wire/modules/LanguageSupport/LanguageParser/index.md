@@ -8,9 +8,6 @@ Parses a PHP file to locate all function calls containing translatable text and 
 
 Return the results by calling $parser->getUntranslated() and $parser->getComments();
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [getAlternates()](method-getalternates.md)

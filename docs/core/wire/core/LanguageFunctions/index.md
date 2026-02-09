@@ -6,9 +6,6 @@ ProcessWire Language Functions
 
 Provides GetText-like language translation functions to ProcessWire.
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__()](method-__.md)
 Method: [_x()](method-_x.md)

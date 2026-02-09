@@ -2,34 +2,34 @@
 
 Source: `wire/core/ImageSizerEngine.php`
 
-@property bool $autoRotation
+- $autoRotation: bool
 
-@property bool $upscaling
+- $upscaling: bool
 
-@property bool $interlace
+- $interlace: bool
 
-@property array|string|bool $cropping
+- $cropping: array|string|bool
 
-@property int $quality
+- $quality: int
 
-@property string $sharpening
+- $sharpening: string
 
-@property float $defaultGamma
+- $defaultGamma: float
 
-@property float $scale
+- $scale: float
 
-@property int $rotate
+- [$rotate: int](method-rotate.md)
 
-@property string $flip
+- $flip: string
 
-@property bool $useUSM
+- $useUSM: bool
 
-@property int $enginePriority Priority for use among other ImageSizerEngine modules (0=disabled, 1=first, 2=second, 3=and so on)
+- $enginePriority: int Priority for use among other ImageSizerEngine modules (0=disabled, 1=first, 2=second, 3=and so on)
 
-@property bool $webpAdd
+- $webpAdd: bool
 
-@property int $webpQuality
+- $webpQuality: int
 
-@property bool|null $webpResult
+- $webpResult: bool|null
 
-@property bool|null $webpOnly
+- $webpOnly: bool|null

@@ -2,4 +2,4 @@
 
 Source: `wire/core/ImageSizerEngineGD.php`
 
-@method bool imSaveReady($im, $filename)
+- [imSaveReady($im, $filename): bool](method-___imsaveready.md)

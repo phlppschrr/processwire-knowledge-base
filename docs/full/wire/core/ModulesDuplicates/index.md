@@ -7,9 +7,6 @@ ProcessWire Modules Duplicates
 Provides functions for managing sitautions where more than one
 copy of the same module is intalled. This is a helper for the Modules class.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [numNewDuplicates()](method-numnewduplicates.md)
 Method: [getCurrent()](method-getcurrent.md)

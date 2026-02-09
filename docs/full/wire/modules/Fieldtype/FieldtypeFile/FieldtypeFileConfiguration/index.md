@@ -4,9 +4,6 @@ Source: `wire/modules/Fieldtype/FieldtypeFile/config.php`
 
 ProcessWire File Fieldtype (configuration)
 
-ProcessWire 3.x, Copyright 2021 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [getConfigInputfields()](method-getconfiginputfields.md)

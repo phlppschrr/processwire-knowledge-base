@@ -2,24 +2,24 @@
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
-@property bool $upgrade Set to true when upgrading core Uikit version. (default=false)
+- $upgrade: bool Set to true when upgrading core Uikit version. (default=false)
 
-@property string $frameworkLessFile Full disk path to LESS file that includes the framework/Uikit.
+- $frameworkLessFile: string Full disk path to LESS file that includes the framework/Uikit.
 
-@property array $baseStyles Base style options (default=[ 'reno', 'rock' ])
+- $baseStyles: array Base style options (default=[ 'reno', 'rock' ])
 
-@property string $defaultStyle Default style (default='reno')
+- $defaultStyle: string Default style (default='reno')
 
-@property string $defaultCssFile Core CSS file to create when upgrading (relative to module root)
+- $defaultCssFile: string Core CSS file to create when upgrading (relative to module root)
 
-@property string $styleDir Directory where base .less files are located (relative to module root)
+- $styleDir: string Directory where base .less files are located (relative to module root)
 
-@property array $replacements Array of [find=>replace] for compiled CSS file.
+- $replacements: array Array of [find=>replace] for compiled CSS file.
 
-@property string $configPhpHash Hash used internally to detect changes to $config->AdminThemeUikit settings.
+- $configPhpHash: string Hash used internally to detect changes to $config->AdminThemeUikit settings.
 
-@property string $configPhpName Name of property in $config that holds custom settings (default='AdminThemeUikit').
+- $configPhpName: string Name of property in $config that holds custom settings (default='AdminThemeUikit').
 
-@property int $requireCssVersion
+- $requireCssVersion: int
 
-@property int $cssVersion
+- $cssVersion: int

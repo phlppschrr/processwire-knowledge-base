@@ -2,6 +2,6 @@
 
 Source: `wire/core/Interfaces.php`
 
-@property int $id
+- $id: int
 
-@property string $name
+- $name: string

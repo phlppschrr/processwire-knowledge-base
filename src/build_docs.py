@@ -23,6 +23,10 @@ FUNC_DECL_AT_RE = re.compile(
 CONST_DECL_AT_RE = re.compile(
     r"(?:(?:public|protected|private)\s+)?const\s+([A-Za-z_][A-Za-z0-9_]*)"
 )
+LICENSE_HEADER_RE = re.compile(r"^ProcessWire\s+\d+(?:\.[0-9x]+)?\s*,\s*Copyright\b", re.I)
+COPYRIGHT_LINE_RE = re.compile(r"^Copyright\s+\d{4}\b.*Ryan Cramer", re.I)
+PROCESSWIRE_URL_RE = re.compile(r"^https?://processwire\.com/?$", re.I)
+EXAMPLE_HEADER_RE = re.compile(r".*\bEXAMPLE\b.*:\s*$", re.I)
 
 KEEP_DIRECTIVES = {
     "headline",
@@ -113,12 +117,28 @@ def strip_docblock(doc: str) -> list[str]:
             line = line[1:]
             if line.startswith(" "):
                 line = line[1:]
-        cleaned.append(line.rstrip("\n"))
+        line = line.rstrip("\n")
+        if is_license_line(line):
+            continue
+        cleaned.append(line)
     return cleaned
 
 
 def remove_inline_directives(line: str) -> str:
     return re.sub(r"\s*#pw-[A-Za-z0-9_-]+", "", line).rstrip()
+
+
+def is_license_line(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped:
+        return False
+    if LICENSE_HEADER_RE.match(stripped):
+        return True
+    if COPYRIGHT_LINE_RE.match(stripped):
+        return True
+    if PROCESSWIRE_URL_RE.match(stripped):
+        return True
+    return False
 
 
 def slugify(value: str) -> str:
@@ -135,6 +155,173 @@ def insert_tag_breaks(lines: list[str]) -> list[str]:
             out.append("")
         out.append(line)
     return out
+
+
+def is_code_like_line(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped:
+        return False
+    if stripped.startswith(("<?php", "<?", "//", "/*", "*")):
+        return True
+    if stripped.startswith(("$", "if", "foreach", "for", "while", "switch", "return", "echo", "try", "catch", "}", "{")):
+        return True
+    if "$" in stripped and stripped.endswith(";"):
+        return True
+    if "->" in stripped or "::" in stripped:
+        return True
+    return False
+
+
+def wrap_example_blocks(lines: list[str]) -> list[str]:
+    out: list[str] = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if EXAMPLE_HEADER_RE.match(line.strip()):
+            out.append(line)
+            j = i + 1
+            while j < len(lines) and lines[j].strip() == "":
+                j += 1
+            if j < len(lines) and is_code_like_line(lines[j]):
+                out.append("")
+                out.append("```php")
+                i = j
+                while i < len(lines):
+                    if lines[i].strip() == "" or is_code_like_line(lines[i]):
+                        out.append(lines[i])
+                        i += 1
+                        continue
+                    break
+                out.append("```")
+                continue
+        out.append(line)
+        i += 1
+    return out
+
+
+def parse_method_tag_line(text: str) -> tuple[str | None, str | None, str | None, str]:
+    if not text:
+        return None, None, None, ""
+    match = re.match(
+        r"^(?P<ret>[^\s]+)\s+(?P<name>[A-Za-z_][A-Za-z0-9_]*)\s*(?P<sig>\([^)]*\))?\s*(?P<desc>.*)$",
+        text,
+    )
+    if match:
+        ret = match.group("ret").strip()
+        name = match.group("name")
+        sig = match.group("sig") or "()"
+        desc = match.group("desc").strip()
+        if "(" not in ret:
+            return ret, name, sig, desc
+    match = re.match(
+        r"^(?P<name>[A-Za-z_][A-Za-z0-9_]*)\s*(?P<sig>\([^)]*\))?\s*(?P<desc>.*)$",
+        text,
+    )
+    if match:
+        name = match.group("name")
+        sig = match.group("sig") or "()"
+        desc = match.group("desc").strip()
+        return None, name, sig, desc
+    return None, None, None, text.strip()
+
+
+def parse_property_tag_line(text: str) -> tuple[str | None, str | None, str]:
+    if not text:
+        return None, None, ""
+    match = re.match(
+        r"^(?P<type>[^\s]+)\s+(?P<name>\$[A-Za-z_][A-Za-z0-9_]*)\s*(?P<desc>.*)$",
+        text,
+    )
+    if match:
+        return match.group("type").strip(), match.group("name").strip(), match.group("desc").strip()
+    return None, None, text.strip()
+
+
+def format_tag_lines(
+    lines: list[str],
+    class_name: str,
+    doc_index: "DocIndex",
+    output_path: Path,
+) -> list[str]:
+    formatted: list[str] = []
+
+    def next_nonempty_is_tag(start: int) -> bool:
+        idx = start + 1
+        while idx < len(lines):
+            if lines[idx].strip() == "":
+                idx += 1
+                continue
+            return lines[idx].lstrip().startswith(("@method", "@property"))
+        return False
+
+    def last_nonempty_is_tag() -> bool:
+        for item in reversed(formatted):
+            if item.strip() == "":
+                continue
+            return item.startswith("- `")
+        return False
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped == "" and last_nonempty_is_tag() and next_nonempty_is_tag(i):
+            continue
+
+        if stripped.startswith("@method"):
+            text = stripped[len("@method") :].strip()
+            ret_type, name, sig, desc = parse_method_tag_line(text)
+            target: Path | None = None
+            if name:
+                target = doc_index.method_files.get((class_name, name))
+                if target is None:
+                    target = doc_index.method_files.get((class_name, f"___{name}"))
+            if name and sig:
+                ret_label = f": {ret_type}" if ret_type else ""
+                label = f"{name}{sig}{ret_label}"
+            else:
+                label = stripped
+            if target is not None and name:
+                rel_link = Path(os.path.relpath(str(target), start=str(output_path.parent)))
+                label = f"[{label}]({rel_link.as_posix()})"
+            line_text = f"- {label}"
+            if desc:
+                line_text = f"{line_text} {desc}"
+            formatted.append(line_text.rstrip())
+            continue
+
+        if stripped.startswith("@property"):
+            text = re.sub(r"^@property(?:-read|-write)?\s*", "", stripped).strip()
+            prop_type, name, desc = parse_property_tag_line(text)
+            target: Path | None = None
+            if name:
+                class_dir = doc_index.class_dirs.get(class_name)
+                if class_dir is not None:
+                    candidate = class_dir / f"property-{slugify(name.lstrip('$'))}.md"
+                    if candidate.exists():
+                        target = candidate
+                if target is None:
+                    fallback = name.lstrip("$")
+                    target = doc_index.method_files.get((class_name, fallback))
+                    if target is None:
+                        target = doc_index.method_files.get((class_name, f"___{fallback}"))
+            if target is not None and name:
+                rel_link = Path(os.path.relpath(str(target), start=str(output_path.parent)))
+                label = f"{name}: {prop_type}" if prop_type else name
+                label = f"[{label}]({rel_link.as_posix()})"
+            else:
+                if name and prop_type:
+                    label = f"{name}: {prop_type}"
+                elif name:
+                    label = name
+                else:
+                    label = stripped
+            line_text = f"- {label}"
+            if desc:
+                line_text = f"{line_text} {desc}"
+            formatted.append(line_text.rstrip())
+            continue
+
+        formatted.append(line)
+    return formatted
 
 
 def clean_docblock(lines: list[str], drop_if_internal: bool) -> list[str] | None:
@@ -211,6 +398,7 @@ def clean_docblock(lines: list[str], drop_if_internal: bool) -> list[str] | None
     while cleaned and cleaned[-1] == "":
         cleaned.pop()
 
+    cleaned = wrap_example_blocks(cleaned)
     return insert_tag_breaks(cleaned)
 
 
@@ -1347,6 +1535,8 @@ def write_doc(
     if class_info.docblock:
         intro_lines, grouped, order_groups, group_summaries = parse_class_docblock(class_info.docblock)
         if intro_lines:
+            intro_lines = wrap_example_blocks(intro_lines)
+            intro_lines = format_tag_lines(intro_lines, class_info.name, doc_index, index_path)
             lines.extend(intro_lines)
         if grouped:
             remaining = sorted(grouped.keys(), key=lambda k: k.lower())
@@ -1428,6 +1618,8 @@ def write_doc(
             if summary:
                 group_content.append(summary)
                 group_content.append("")
+            group_lines = wrap_example_blocks(group_lines)
+            group_lines = format_tag_lines(group_lines, class_info.name, doc_index, group_path)
             group_content.extend(group_lines)
             group_path.write_text("\n".join(group_content).rstrip() + "\n", encoding="utf-8")
 
@@ -1516,6 +1708,8 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
     if file_info.docblock:
         file_lines = clean_docblock(strip_docblock(file_info.docblock), drop_if_internal=True)
         if file_lines:
+            file_lines = wrap_example_blocks(file_lines)
+            file_lines = format_tag_lines(file_lines, file_info.name, doc_index, index_path)
             lines.extend(file_lines)
 
     members_sorted = sorted(file_info.members, key=lambda m: m.pos)

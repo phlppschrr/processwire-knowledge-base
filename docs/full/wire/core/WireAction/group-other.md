@@ -2,8 +2,8 @@
 
 Source: `wire/core/WireAction.php`
 
-@method bool action($item)
+- [action($item): bool](method-___action.md)
 
-@method int executeMultiple($items)
+- [executeMultiple($items): int](method-___executemultiple.md)
 
-@method InputfieldWrapper getConfigInputfields()
+- [getConfigInputfields(): InputfieldWrapper](method-___getconfiginputfields.md)

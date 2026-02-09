@@ -2,14 +2,14 @@
 
 Source: `wire/core/WireArray.php`
 
-@method WireArray and($item)
+- [and($item): WireArray](method-___and.md)
 
-@property int $count Number of items
+- [$count: int](method-count.md) Number of items
 
-@property Wire|null $first First item
+- [$first: Wire|null](method-first.md) First item
 
-@property Wire|null $last Last item
+- [$last: Wire|null](method-last.md) Last item
 
-@property array $keys All keys used in this WireArray
+- $keys: array All keys used in this WireArray
 
-@property array $values All values used in this WireArray
+- $values: array All values used in this WireArray

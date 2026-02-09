@@ -2,38 +2,38 @@
 
 Source: `wire/core/Modules.php`
 
-@method void refresh($showMessages = false) Refresh the cache that stores module files by recreating it
+- [refresh($showMessages = false): void](method-___refresh.md) Refresh the cache that stores module files by recreating it
 
-@method null|Module install($class, $options = array())
+- [install($class, $options = array(): null|Module](method-___install.md) )
 
-@method bool|int delete($class)
+- [delete($class): bool|int](method-___delete.md)
 
-@method bool uninstall($class)
+- [uninstall($class): bool](method-___uninstall.md)
 
-@method bool saveConfig($class, $data, $value = null)
+- [saveConfig($class, $data, $value = null): bool](method-___saveconfig.md)
 
-@property-read array $installableFiles
+- $installableFiles: array
 
-@property-read string $coreModulesDir
+- $coreModulesDir: string
 
-@property-read string $coreModulesPath
+- $coreModulesPath: string
 
-@property-read string $siteModulesPath
+- $siteModulesPath: string
 
-@property-read array $moduleIDs
+- $moduleIDs: array
 
-@property-read array $moduleNames
+- $moduleNames: array
 
-@property-read ModulesInfo $info
+- $info: ModulesInfo
 
-@property-read ModulesLoader $loader
+- $loader: ModulesLoader
 
-@property-read ModulesFlags $flags
+- $flags: ModulesFlags
 
-@property-read ModulesFiles $files
+- $files: ModulesFiles
 
-@property-read ModulesInstaller $installer
+- $installer: ModulesInstaller
 
-@property-read ModulesConfigs $configs
+- $configs: ModulesConfigs
 
-@property-read bool $refreshing
+- $refreshing: bool

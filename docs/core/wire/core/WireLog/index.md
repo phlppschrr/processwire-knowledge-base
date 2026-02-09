@@ -9,8 +9,6 @@ It is an API-friendly interface to the FileLog class.
 
 Enables creation of logs, logging of events, and management of logs.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 
 @todo option to disable logs by name

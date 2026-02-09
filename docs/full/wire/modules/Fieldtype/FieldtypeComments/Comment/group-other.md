@@ -2,60 +2,60 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
-@property int $id
+- $id: int
 
-@property int $parent_id
+- $parent_id: int
 
-@property string $text
+- $text: string
 
-@property string|null $textFormatted Text value formatted for output (runtime use only, must be set manually)
+- $textFormatted: string|null Text value formatted for output (runtime use only, must be set manually)
 
-@property int $sort
+- $sort: int
 
-@property int $status
+- $status: int
 
-@property int|null $prevStatus
+- $prevStatus: int|null
 
-@property int $flags
+- $flags: int
 
-@property int $created
+- $created: int
 
-@property string $email
+- $email: string
 
-@property string $cite
+- $cite: string
 
-@property string $website
+- $website: string
 
-@property string $ip
+- $ip: string
 
-@property string $user_agent
+- $user_agent: string
 
-@property int $created_users_id
+- $created_users_id: int
 
-@property string $code
+- $code: string
 
-@property string $subcode
+- $subcode: string
 
-@property int $upvotes
+- $upvotes: int
 
-@property int $downvotes
+- $downvotes: int
 
-@property int $stars
+- $stars: int
 
-@property null|bool $isNew Was this comment added in this request? (since 3.0.169)
+- $isNew: null|bool Was this comment added in this request? (since 3.0.169)
 
-@property null|string $approvalNote Runtime approval note for newly added comment, internal use (since 3.0.169)
+- $approvalNote: null|string Runtime approval note for newly added comment, internal use (since 3.0.169)
 
-@property-read Comment|null $parent Parent comment when depth is enabled or null if no parent (since 3.0.149)
+- [$parent: Comment|null](method-parent.md) Parent comment when depth is enabled or null if no parent (since 3.0.149)
 
-@property-read CommentArray $parents All parent comments (since 3.0.149)
+- [$parents: CommentArray](method-parents.md) All parent comments (since 3.0.149)
 
-@property-read CommentArray $children Immediate child comments (since 3.0.149)
+- [$children: CommentArray](method-children.md) Immediate child comments (since 3.0.149)
 
-@property-read int $depth Current comment depth (since 3.0.149)
+- [$depth: int](method-depth.md) Current comment depth (since 3.0.149)
 
-@property-read bool $loaded True when comment is fully loaded from DB (since 3.0.149)
+- $loaded: bool True when comment is fully loaded from DB (since 3.0.149)
 
-@property-read int $numChildren Number of children with no exclusions. See and use numChildren() method for more options. (since 3.0.154)
+- [$numChildren: int](method-numchildren.md) Number of children with no exclusions. See and use numChildren() method for more options. (since 3.0.154)
 
-@property-read User $createdUser User that created the comment
+- $createdUser: User User that created the comment

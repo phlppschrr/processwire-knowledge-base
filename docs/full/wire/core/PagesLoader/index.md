@@ -9,9 +9,6 @@ $pages->loader
 Implements page finding/loading methods for the $pages API variable.
 Please always use `$pages->method()` rather than `$pages->loader->method()` in cases where there is overlap.
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [setOutputFormatting()](method-setoutputformatting.md)

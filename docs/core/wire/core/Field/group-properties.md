@@ -2,34 +2,34 @@
 
 Source: `wire/core/Field.php`
 
-@property int $id Numeric ID of field in the database
+- $id: int Numeric ID of field in the database
 
-@property string $name Name of field
+- $name: string Name of field
 
-@property string $table Database table used by the field
+- $table: string Database table used by the field
 
-@property string $prevTable Previously database table (if field was renamed)
+- $prevTable: string Previously database table (if field was renamed)
 
-@property string $prevName Previously used name (if field was renamed), 3.0.164+
+- $prevName: string Previously used name (if field was renamed), 3.0.164+
 
-@property Fieldtype|null $type Fieldtype module that represents the type of this field
+- $type: Fieldtype|null Fieldtype module that represents the type of this field
 
-@property Fieldtype|null $prevFieldtype Previous Fieldtype, if type was changed
+- $prevFieldtype: Fieldtype|null Previous Fieldtype, if type was changed
 
-@property int $flags Bitmask of flags used by this field
+- $flags: int Bitmask of flags used by this field
 
-@property-read string $flagsStr Names of flags used by this field (readonly)
+- $flagsStr: string Names of flags used by this field (readonly)
 
-@property string $label Text string representing the label of the field
+- $label: string Text string representing the label of the field
 
-@property string $description Longer description text for the field
+- $description: string Longer description text for the field
 
-@property string $notes Additional notes text about the field
+- $notes: string Additional notes text about the field
 
-@property string $icon Icon name used by the field, if applicable
+- $icon: string Icon name used by the field, if applicable
 
-@property string $tags Tags that represent this field, if applicable (space separated string).
+- $tags: string Tags that represent this field, if applicable (space separated string).
 
-@property-read array $tagList Same as $tags property, but as an array.
+- $tagList: array Same as $tags property, but as an array.
 
-@property array $allowContexts Names of settings that are custom configured to be allowed for context.
+- $allowContexts: array Names of settings that are custom configured to be allowed for context.

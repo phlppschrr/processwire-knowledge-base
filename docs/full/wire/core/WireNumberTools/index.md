@@ -4,8 +4,6 @@ Source: `wire/core/WireNumberTools.php`
 
 Tools for working with numbers
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 @since 3.0.213
 

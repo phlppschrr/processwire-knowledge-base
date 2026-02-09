@@ -10,6 +10,7 @@ the same number, so we account for the possibility here by re-trying queries
 that trigger duplicate-entry exceptions.
 
 Example of actual exception text, for reference:
+Example of actual exception text, for reference:
 Integrity constraint violation: 1062 Duplicate entry 'background-3552' for key 'name3894_parent_id'
 
 ## Usage

@@ -2,4 +2,4 @@
 
 Source: `wire/core/WireShutdown.php`
 
-@method void fatalError(array $error)
+- [fatalError(array $error): void](method-___fatalerror.md)

@@ -2,4 +2,4 @@
 
 Source: `wire/core/WireLog.php`
 
-@method bool save($name, $text, $options = array())
+- [save($name, $text, $options = array(): bool](method-___save.md) )

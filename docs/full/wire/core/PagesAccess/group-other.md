@@ -2,6 +2,6 @@
 
 Source: `wire/core/PagesAccess.php`
 
-@method void updatePage(Page $page)
+- [updatePage(Page $page): void](method-___updatepage.md)
 
-@method void updateTemplate(Template $template)
+- [updateTemplate(Template $template): void](method-___updatetemplate.md)

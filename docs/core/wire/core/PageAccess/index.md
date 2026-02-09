@@ -6,9 +6,6 @@ ProcessWire Page Access
 
 Provides implementation for Page access functions.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getType()](method-gettype.md)
 Method: [getAccessParent()](method-getaccessparent.md)

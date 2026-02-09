@@ -6,9 +6,6 @@ ProcessWire Date/Time Tools ($datetime API variable)
 
 The $datetime API variable provides helpers for working with dates/times and conversion between formats.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

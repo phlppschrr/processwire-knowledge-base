@@ -50,8 +50,6 @@ instead of a URL. As indicated earlier, `$urls` can aso be accessed at the more 
 just the shortest option for example purposes.
 
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
@@ -60,32 +58,32 @@ https://processwire.com/about/license/mit/
 The following properties are only in $config->urls
 ==================================================
 
-@property string $admin Admin URL
+- $admin: string Admin URL
 
-@property string|null $next URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
+- $next: string|null URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 
-@property string|null $prev URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
+- $prev: string|null URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 
 The following are in $config->urls and equivalent to previously mentioned properties, but include scheme + host
 ===============================================================================================================
 
-@property-read string $httpRoot Full http/https URL to site root (i.e. https://domain.com/).
+- $httpRoot: string Full http/https URL to site root (i.e. https://domain.com/).
 
-@property-read string $httpTemplates  Full http/https URL to site templates (i.e. https://domain.com/site/templates/).
+- $httpTemplates: string Full http/https URL to site templates (i.e. https://domain.com/site/templates/).
 
-@property-read string $httpModules Full http/https URL to core (wire) modules.
+- $httpModules: string Full http/https URL to core (wire) modules.
 
-@property-read string $httpSiteModules Full http/https URL to site modules.
+- $httpSiteModules: string Full http/https URL to site modules.
 
-@property-read string $httpMarkupRegions Full http/https URL to files added by Markup Regions. (3.0.254+)
+- $httpMarkupRegions: string Full http/https URL to files added by Markup Regions. (3.0.254+)
 
-@property-read string $httpAssets Full http/https URL to site assets (i.e. https://domain.com/site/assets/).
+- $httpAssets: string Full http/https URL to site assets (i.e. https://domain.com/site/assets/).
 
-@property-read string $httpFiles Full http/https URL to site assets files (i.e. https://domain.com/site/assets/files/).
+- $httpFiles: string Full http/https URL to site assets files (i.e. https://domain.com/site/assets/files/).
 
-@property-read string $httpNext Full http/https URL to next pagination of current page (when applicable).
+- $httpNext: string Full http/https URL to next pagination of current page (when applicable).
 
-@property-read string $httpPrev Full http/https URL to prev pagination of current page (when applicable).
+- $httpPrev: string Full http/https URL to prev pagination of current page (when applicable).
 
 The "http" may be optionally prepended to any property accessed from $config->urls (including those you add yourself).
 

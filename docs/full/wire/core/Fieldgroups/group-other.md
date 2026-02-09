@@ -2,14 +2,14 @@
 
 Source: `wire/core/Fieldgroups.php`
 
-@method Fieldgroup clone(Saveable $item, $name = '')
+- [clone(Saveable $item, $name = ''): Fieldgroup](method-___clone.md)
 
-@method int saveContext(Fieldgroup $fieldgroup)
+- [saveContext(Fieldgroup $fieldgroup): int](method-___savecontext.md)
 
-@method array getExportData(Fieldgroup $fieldgroup)
+- [getExportData(Fieldgroup $fieldgroup): array](method-___getexportdata.md)
 
-@method array setImportData(Fieldgroup $fieldgroup, array $data)
+- [setImportData(Fieldgroup $fieldgroup, array $data): array](method-___setimportdata.md)
 
-@method void fieldRemoved(Fieldgroup $fieldgroup, Field $field)
+- [fieldRemoved(Fieldgroup $fieldgroup, Field $field): void](method-___fieldremoved.md)
 
-@method void fieldAdded(Fieldgroup $fieldgroup, Field $field)
+- [fieldAdded(Fieldgroup $fieldgroup, Field $field): void](method-___fieldadded.md)

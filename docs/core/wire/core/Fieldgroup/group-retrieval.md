@@ -2,6 +2,6 @@
 
 Source: `wire/core/Fieldgroup.php`
 
-@property int $id Fieldgroup database ID
+- $id: int Fieldgroup database ID
 
-@property string $name Fieldgroup name
+- $name: string Fieldgroup name

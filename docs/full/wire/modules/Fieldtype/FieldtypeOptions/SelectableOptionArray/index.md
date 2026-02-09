@@ -4,9 +4,6 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 ProcessWire Selectable Option Array, for FieldtypeOptions
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

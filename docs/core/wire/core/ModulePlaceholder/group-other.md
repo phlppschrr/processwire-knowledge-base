@@ -2,14 +2,14 @@
 
 Source: `wire/core/ModulePlaceholder.php`
 
-@property bool $autoload
+- $autoload: bool
 
-@property bool $singular
+- $singular: bool
 
-@property string $file
+- $file: string
 
-@property string $className
+- $className: string
 
-@property string $class alias of className
+- $class: string alias of className
 
-@property string $name alias of className
+- $name: string alias of className

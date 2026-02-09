@@ -7,9 +7,6 @@ ProcessWire Selectable Option Manager, for FieldtypeOptions
 Handles management of the fieldtype_options table and related field_[name] table
 to assist FieldtypeOptions module.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getRemovedOptionIDs()](method-getremovedoptionids.md)
 Method: [useLanguages()](method-uselanguages.md)

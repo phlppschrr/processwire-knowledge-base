@@ -4,9 +4,6 @@ Source: `wire/core/ModulesFiles.php`
 
 ProcessWire Modules: Files
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [moduleFileExt()](method-modulefileext.md)
 Method: [findModuleFiles()](method-findmodulefiles.md)

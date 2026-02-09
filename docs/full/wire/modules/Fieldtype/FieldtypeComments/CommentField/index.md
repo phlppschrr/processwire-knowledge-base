@@ -6,8 +6,6 @@ ProcessWire Comments Field
 
 Custom “Field” class for Comments fields.
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
 
 
 @todo Some more methods from FieldtypeComments can be moved into this class

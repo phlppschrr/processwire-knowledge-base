@@ -2,10 +2,10 @@
 
 Source: `wire/modules/Process/ProcessTemplate/ProcessTemplateExportImport.php`
 
-@method string buildExport()
+- [buildExport(): string](method-___buildexport.md)
 
-@method InputfieldForm buildInputDataForm()
+- [buildInputDataForm(): InputfieldForm](method-___buildinputdataform.md)
 
-@method string buildImport()
+- [buildImport(): string](method-___buildimport.md)
 
-@method void processImport()
+- [processImport(): void](method-___processimport.md)

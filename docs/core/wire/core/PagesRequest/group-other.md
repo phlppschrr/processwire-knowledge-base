@@ -2,10 +2,10 @@
 
 Source: `wire/core/PagesRequest.php`
 
-@method Page|NullPage getPage()
+- [getPage(): Page|NullPage](method-___getpage.md)
 
-@method Page|null getPageForUser(Page $page, User $user)
+- [getPageForUser(Page $page, User $user): Page|null](method-___getpageforuser.md)
 
-@method Page|NullPage getClosestPage()
+- [getClosestPage(): Page|NullPage](method-___getclosestpage.md)
 
-@method Page|string getLoginPageOrUrl(Page $page)
+- [getLoginPageOrUrl(Page $page): Page|string](method-___getloginpageorurl.md)

@@ -28,10 +28,6 @@ $filesPath = $page->filesManager->path();
 $filesURL = $page->filesManager->url();
 ~~~~~
 
-
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

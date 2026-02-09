@@ -4,9 +4,6 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldsetPage.php`
 
 FieldsetPage represents Page objects used by the FieldtypeFieldsetPage module
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [trackChange()](method-trackchange.md)
 Method: [get()](method-get.md)

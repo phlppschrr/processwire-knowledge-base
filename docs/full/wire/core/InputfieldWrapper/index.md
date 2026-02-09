@@ -4,8 +4,6 @@ Source: `wire/core/InputfieldWrapper.php`
 
 ProcessWire InputfieldWrapper
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 About InputfieldWrapper
 =======================

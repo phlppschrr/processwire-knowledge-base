@@ -2,8 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
-@property string $title
+- $title: string
 
-@property string $value
+- $value: string
 
-@property int $id
+- $id: int

@@ -7,8 +7,6 @@ ProcessWire Template
 Template is a Page’s connection to fields (via a Fieldgroup), access control, and output via a template file.
 Template objects also maintain several properties which can affect the render behavior of pages using it.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 @todo add multi-language option for redirectLogin setting
 

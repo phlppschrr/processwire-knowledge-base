@@ -2,4 +2,4 @@
 
 Source: `wire/core/ImageSizer.php`
 
-@method bool resize($targetWidth, $targetHeight = 0)
+- [resize($targetWidth, $targetHeight = 0): bool](method-___resize.md)

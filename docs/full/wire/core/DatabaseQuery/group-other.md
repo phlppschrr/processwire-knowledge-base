@@ -2,16 +2,16 @@
 
 Source: `wire/core/DatabaseQuery.php`
 
-@property array $where
+- $where: array
 
-@property array $bindValues
+- $bindValues: array
 
-@property array $bindKeys
+- $bindKeys: array
 
-@property array $bindOptions
+- $bindOptions: array
 
-@property string $query
+- $query: string
 
-@property string $sql
+- $sql: string
 
-@method $this where($sql, array $params = array())
+- where($sql, array $params = array(): $this )

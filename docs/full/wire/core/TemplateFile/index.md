@@ -6,9 +6,6 @@ ProcessWire TemplateFile
 
 A template file that will be loaded and executed as PHP and its output returned.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

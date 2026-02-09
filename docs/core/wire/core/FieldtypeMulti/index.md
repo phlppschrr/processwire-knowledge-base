@@ -6,8 +6,6 @@ ProcessWire FieldtypeMulti
 
 Interface and some functionality for Fieldtypes that can contain multiple values.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 
 

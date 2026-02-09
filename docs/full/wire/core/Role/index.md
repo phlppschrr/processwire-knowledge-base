@@ -10,9 +10,6 @@ Note that most public API-level access checking is typically performed from the 
 the Role(s), as it accounts for the combined roles. Please also see `User`, `Permission` and the
 access related methods on `Page`.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

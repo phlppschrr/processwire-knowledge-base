@@ -2,10 +2,10 @@
 
 Source: `wire/modules/Process/ProcessField/ProcessFieldExportImport.php`
 
-@method InputfieldForm buildExport()
+- [buildExport(): InputfieldForm](method-___buildexport.md)
 
-@method InputfieldForm buildImport()
+- [buildImport(): InputfieldForm](method-___buildimport.md)
 
-@method InputfieldForm buildInputDataForm()
+- [buildInputDataForm(): InputfieldForm](method-___buildinputdataform.md)
 
-@method void processImport()
+- [processImport(): void](method-___processimport.md)

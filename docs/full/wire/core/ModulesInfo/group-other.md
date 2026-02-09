@@ -2,12 +2,12 @@
 
 Source: `wire/core/ModulesInfo.php`
 
-@property-read array $moduleInfoCache
+- $moduleInfoCache: array
 
-@property-read array $moduleInfoCacheVerbose
+- $moduleInfoCacheVerbose: array
 
-@property-read array $moduleInfoCacheUninstalled
+- $moduleInfoCacheUninstalled: array
 
-@property-read array $moduleInfoVerboseKeys
+- $moduleInfoVerboseKeys: array
 
-@property-read array $modulesLastVersions
+- [$modulesLastVersions: array](method-moduleslastversions.md)

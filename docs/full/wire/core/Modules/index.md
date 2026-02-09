@@ -6,8 +6,6 @@ ProcessWire Modules
 
 Loads and manages all runtime modules for ProcessWire
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 Loads and manages all modules in ProcessWire.
 The `$modules` API variable is most commonly used for getting individual modules to use their API.

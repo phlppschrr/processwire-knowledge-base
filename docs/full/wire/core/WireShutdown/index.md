@@ -4,11 +4,8 @@ Source: `wire/core/WireShutdown.php`
 
 ProcessWire shutdown handler
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
 
 Look for errors at shutdown and log them, plus echo the error if the page is editable
-
-https://processwire.com
 
 Groups:
 Group: [other](group-other.md)

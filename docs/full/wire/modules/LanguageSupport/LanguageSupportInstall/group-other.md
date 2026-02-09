@@ -2,6 +2,6 @@
 
 Source: `wire/modules/LanguageSupport/LanguageSupportInstall.php`
 
-@method void install()
+- [install(): void](method-___install.md)
 
-@method void uninstall()
+- [uninstall(): void](method-___uninstall.md)

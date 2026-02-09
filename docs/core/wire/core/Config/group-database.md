@@ -2,36 +2,36 @@
 
 Source: `wire/core/Config.php`
 
-@property string $dbHost Database host
+- $dbHost: string Database host
 
-@property string $dbName Database name
+- $dbName: string Database name
 
-@property string $dbUser Database user
+- $dbUser: string Database user
 
-@property string $dbPass Database password
+- $dbPass: string Database password
 
-@property string $dbPort Database port (default=3306)
+- $dbPort: string Database port (default=3306)
 
-@property string $dbCharset Default is 'utf8' but 'utf8mb4' is also supported.
+- $dbCharset: string Default is 'utf8' but 'utf8mb4' is also supported.
 
-@property string $dbEngine Database engine (MyISAM or InnoDB)
+- $dbEngine: string Database engine (MyISAM or InnoDB)
 
-@property string $dbSocket Optional DB socket config for sites that need it.
+- $dbSocket: string Optional DB socket config for sites that need it.
 
-@property bool $dbCache Whether to allow MySQL query caching.
+- $dbCache: bool Whether to allow MySQL query caching.
 
-@property bool $dbLowercaseTables Force any created field_* tables to be lowercase.
+- $dbLowercaseTables: bool Force any created field_* tables to be lowercase.
 
-@property string $dbPath MySQL database exec path (Path to mysqldump)
+- $dbPath: string MySQL database exec path (Path to mysqldump)
 
-@property array $dbOptions Any additional driver options to pass as $options argument to "new PDO(...)".
+- $dbOptions: array Any additional driver options to pass as $options argument to "new PDO(...)".
 
-@property array $dbSqlModes Set or adjust SQL mode per MySQL version, where array keys are MySQL version and values are SQL mode command(s).
+- $dbSqlModes: array Set or adjust SQL mode per MySQL version, where array keys are MySQL version and values are SQL mode command(s).
 
-@property int $dbQueryLogMax Maximum number of queries WireDatabasePDO will log in memory, when debug mode is enabled (default=1000).
+- $dbQueryLogMax: int Maximum number of queries WireDatabasePDO will log in memory, when debug mode is enabled (default=1000).
 
-@property string $dbInitCommand Database init command, for PDO::MYSQL_ATTR_INIT_COMMAND. Note placeholder {charset} gets replaced with $config->dbCharset.
+- $dbInitCommand: string Database init command, for PDO::MYSQL_ATTR_INIT_COMMAND. Note placeholder {charset} gets replaced with $config->dbCharset.
 
-@property bool $dbStripMB4 When dbEngine is not utf8mb4 and this is true, we will attempt to remove 4-byte characters (like emoji) from inserts when possible. Note that this adds some overhead.
+- $dbStripMB4: bool When dbEngine is not utf8mb4 and this is true, we will attempt to remove 4-byte characters (like emoji) from inserts when possible. Note that this adds some overhead.
 
-@property array|null $dbReader Configuration values for read-only database connection (if available). @since 3.0.175
+- $dbReader: array|null Configuration values for read-only database connection (if available). @since 3.0.175

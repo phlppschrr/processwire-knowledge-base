@@ -2,20 +2,20 @@
 
 Source: `wire/core/AdminThemeFramework.php`
 
-@property bool $isSuperuser
+- $isSuperuser: bool
 
-@property bool $isEditor
+- $isEditor: bool
 
-@property bool $isLoggedIn
+- $isLoggedIn: bool
 
-@property bool|string $isModal
+- $isModal: bool|string
 
-@property bool|int $useAsLogin
+- $useAsLogin: bool|int
 
-@property string $browserTitle Optional custom browser title for this request (3.0.217+)
+- $browserTitle: string Optional custom browser title for this request (3.0.217+)
 
-@method array getUserNavArray()
+- [getUserNavArray(): array](method-___getusernavarray.md)
 
-@method array getPrimaryNavArray()
+- [getPrimaryNavArray(): array](method-___getprimarynavarray.md)
 
-@method string renderFile($basename, array $vars = [])
+- [renderFile($basename, array $vars = []): string](method-___renderfile.md)

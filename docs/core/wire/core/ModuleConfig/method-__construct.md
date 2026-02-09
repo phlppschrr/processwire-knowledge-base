@@ -6,7 +6,6 @@ Use the construct method if you are defining your module config fields as an arr
 
 Example for method body:
 
-$this->add(array(
   array(
     'name' => 'fullname'
     'type' => 'text',
@@ -21,6 +20,12 @@ $this->add(array(
     'value' => '',
   ),
 ));
+
+## Example
+
+```php
+$this->add(array(
+```
 
 ## Usage
 

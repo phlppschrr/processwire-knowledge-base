@@ -2,8 +2,8 @@
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListActions.php`
 
-@method array getExtraActions(Page $page)
+- [getExtraActions(Page $page): array](method-___getextraactions.md)
 
-@method array getActions(Page $page)
+- [getActions(Page $page): array](method-___getactions.md)
 
-@method array processAction(Page $page, $action)
+- [processAction(Page $page, $action): array](method-___processaction.md)

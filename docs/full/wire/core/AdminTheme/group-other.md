@@ -2,14 +2,14 @@
 
 Source: `wire/core/AdminTheme.php`
 
-@property int|string $version Current admin theme version
+- $version: int|string Current admin theme version
 
-@property string $url URL to admin theme
+- [$url: string](method-url.md) URL to admin theme
 
-@property string $path Disk path to admin theme
+- [$path: string](method-path.md) Disk path to admin theme
 
-@method void install()
+- [install(): void](method-___install.md)
 
-@method void uninstall()
+- uninstall(): void
 
-@method array getExtraMarkup()
+- [getExtraMarkup(): array](method-___getextramarkup.md)

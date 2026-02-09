@@ -14,8 +14,6 @@ Wire derived classes can specify which methods are “hookable” by precending 
 modifying arguments or return values. Several other hook methods are also provided for Wire derived
 classes that are hooking into others.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 
 

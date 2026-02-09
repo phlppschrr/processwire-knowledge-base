@@ -6,9 +6,6 @@ The Permissions class serves as the $permissions API variable.
 
 Provides management of all Permission pages independent of users, for access control.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

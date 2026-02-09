@@ -12,9 +12,6 @@ located in the same directory as the module it is configuring.
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [getDefaults()](method-getdefaults.md)

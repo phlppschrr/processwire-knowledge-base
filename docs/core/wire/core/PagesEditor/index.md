@@ -9,9 +9,6 @@ $pages->editor
 Implements page editing and manipulation methods for the $pages API variable.
 Please always use `$pages->method()` rather than `$pages->editor->method()` in cases where there is overlap.
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [isCloning()](method-iscloning.md)

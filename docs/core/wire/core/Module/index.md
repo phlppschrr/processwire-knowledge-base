@@ -6,8 +6,6 @@ ProcessWire Module Interface
 
 Provides the base interfaces required by modules.
 
-ProcessWire 3.x, Copyright 2018 by Ryan Cramer
-https://processwire.com
 
 Module is the primary PHP interface for module types in ProcessWire.
 The Module interface doesn't actually require any specific methods,

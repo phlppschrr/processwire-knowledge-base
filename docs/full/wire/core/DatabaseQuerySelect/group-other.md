@@ -2,44 +2,44 @@
 
 Source: `wire/core/DatabaseQuerySelect.php`
 
-@property array $select
+- $select: array
 
-@property array $join
+- $join: array
 
-@property array $from
+- $from: array
 
-@property array $leftjoin
+- $leftjoin: array
 
-@property array $where
+- $where: array
 
-@property array $orderby
+- [$orderby: array](method-orderby.md)
 
-@property array $groupby
+- $groupby: array
 
-@property array $limit
+- $limit: array
 
-@property string $comment Comments for query
+- $comment: string Comments for query
 
-@method $this select($sql, $params = array())
+- select($sql, $params = array(): $this )
 
-@method $this from($sql)
+- from($sql): $this
 
-@method $this join($sql, $params = array())
+- join($sql, $params = array(): $this )
 
-@method $this leftjoin($sql, $params = array())
+- leftjoin($sql, $params = array(): $this )
 
-@method $this where($sql, $params = array())
+- where($sql, $params = array(): $this )
 
-@method $this groupby($sql)
+- groupby($sql): $this
 
-@method $this limit($sql)
+- limit($sql): $this
 
-@property Field $field Field object that is referenced by this query.
+- $field: Field Field object that is referenced by this query.
 
-@property string $group Selector group (for OR-groups) if applicable.
+- $group: string Selector group (for OR-groups) if applicable.
 
-@property Selector $selector Selector object referenced by this query.
+- $selector: Selector Selector object referenced by this query.
 
-@property Selectors $selectors Original selectors (all) that $selector is part of.
+- $selectors: Selectors Original selectors (all) that $selector is part of.
 
-@property DatabaseQuerySelect $parentQuery Parent query object, if applicable.
+- $parentQuery: DatabaseQuerySelect Parent query object, if applicable.

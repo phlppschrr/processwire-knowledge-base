@@ -30,9 +30,6 @@ $form->classes('error', 'uk-alert-danger');
 echo $form->render();
 ~~~~~~
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getFormMarkup()](method-getformmarkup.md)
 Method: [applyIf()](method-applyif.md)

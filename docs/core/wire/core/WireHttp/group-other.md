@@ -2,8 +2,8 @@
 
 Source: `wire/core/WireHttp.php`
 
-@method bool|string send($url, $data = array(), $method = 'POST', array $options = array())
+- [send($url, $data = array(): bool|string](method-___send.md) , $method = 'POST', array $options = array())
 
-@method int sendFile($filename, array $options = array(), array $headers = array())
+- [sendFile($filename, array $options = array(): int](method-___sendfile.md) , array $headers = array())
 
-@method string download($fromURL, $toFile, array $options = array())
+- [download($fromURL, $toFile, array $options = array(): string](method-___download.md) )

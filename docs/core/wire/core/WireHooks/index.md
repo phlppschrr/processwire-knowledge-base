@@ -6,9 +6,6 @@ ProcessWire Hooks Manager
 
 This class is for internal use. You should manipulate hooks from Wire-derived classes instead.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [getHooks()](method-gethooks.md)

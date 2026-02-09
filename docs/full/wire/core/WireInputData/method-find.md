@@ -4,6 +4,8 @@ Source: `wire/core/WireInputData.php`
 
 Find all input vars that match given pattern in name (or optionally value)
 
+$values = [
+
 ## Example
 
 ~~~~~
@@ -17,7 +19,10 @@ $values = $input->post->find('*title*');
 $values = $input->post->find('/wire/i', [ 'type' => 'value' ]);
 
 // example of result from above find operation:
-$values = [
+
+```php
+
+```
   'title' => 'ProcessWire CMS',
   'subtitle' => 'Have plenty of caffeine to make sure you are wired',
   'sidebar' => 'Learn how to rewire a flux capacitor...',

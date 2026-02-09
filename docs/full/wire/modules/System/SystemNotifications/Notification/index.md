@@ -10,21 +10,21 @@ An individual notification item to be part of a NotificationArray for a Page
 data encoded vars, all optional
 ===============================
 
-@property int $id  unique ID (among others the user may have)
+- $id: int unique ID (among others the user may have)
 
-@property string $text  extended text
+- $text: string extended text
 
-@property string $html  extended text as HTML markup
+- $html: string extended text as HTML markup
 
-@property string $from  "from" text where applicable, like a class name
+- $from: string "from" text where applicable, like a class name
 
-@property string $icon  fa-icon when applicable
+- $icon: string fa-icon when applicable
 
-@property string $href  clicking notification goes to this URL
+- $href: string clicking notification goes to this URL
 
-@property int $progress  progress percent 0-100
+- $progress: int progress percent 0-100
 
-@property int $expires  datetime after which will automatically be deleted
+- $expires: int datetime after which will automatically be deleted
 
 Groups:
 Group: [other](group-other.md)

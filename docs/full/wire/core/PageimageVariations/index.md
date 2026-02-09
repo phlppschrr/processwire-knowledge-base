@@ -6,8 +6,6 @@ ProcessWire PageimageVariations
 
 Helper class for Pageimage that handles variation collection methods
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 @since 3.0.137
 

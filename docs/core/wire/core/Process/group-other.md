@@ -2,24 +2,24 @@
 
 Source: `wire/core/Process.php`
 
-@method string|array execute()
+- [execute(): string|array](method-___execute.md)
 
-@method string|array executeUnknown() Called when urlSegment matches no execute[Method], only if implemented.
+- executeUnknown(): string|array Called when urlSegment matches no execute[Method], only if implemented.
 
-@method Process headline(string $headline)
+- [headline(string $headline): Process](method-___headline.md)
 
-@method Process browserTitle(string $title)
+- [browserTitle(string $title): Process](method-___browsertitle.md)
 
-@method Process breadcrumb(string $href, string $label)
+- [breadcrumb(string $href, string $label): Process](method-___breadcrumb.md)
 
-@method void install()
+- [install(): void](method-___install.md)
 
-@method void uninstall()
+- [uninstall(): void](method-___uninstall.md)
 
-@method void upgrade($fromVersion, $toVersion)
+- [upgrade($fromVersion, $toVersion): void](method-___upgrade.md)
 
-@method void ready()
+- ready(): void
 
-@method void setConfigData(array $data)
+- setConfigData(array $data): void
 
-@method void executed($methodName) Hook called after a method has been executed in the Process
+- [executed($methodName): void](method-___executed.md) Hook called after a method has been executed in the Process

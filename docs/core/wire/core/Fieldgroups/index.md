@@ -8,9 +8,6 @@ Maintains collections of Fieldgroup object instances and represents the `$fieldg
 For full details on all methods available in a Fieldgroup, be sure to also see the `WireArray` class.
 $fieldgroups
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

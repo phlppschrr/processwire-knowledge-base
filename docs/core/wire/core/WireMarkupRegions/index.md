@@ -6,9 +6,6 @@ ProcessWire Markup Regions
 
 Supports finding and manipulating of markup regions in an HTML document.
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [find()](method-find.md)
 Method: [findMulti()](method-findmulti.md)

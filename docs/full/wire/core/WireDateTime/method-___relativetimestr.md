@@ -5,6 +5,7 @@ Source: `wire/core/WireDateTime.php`
 Given a unix timestamp (or date string), returns a formatted string indicating the time relative to now
 
 For example:
+For example:
 
 - 2 years ago
 - 3 months ago

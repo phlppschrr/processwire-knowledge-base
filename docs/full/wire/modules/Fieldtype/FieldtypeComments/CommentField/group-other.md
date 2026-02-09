@@ -2,38 +2,38 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
-@property int $moderate
+- $moderate: int
 
-@property int|bool $redirectAfterPost
+- $redirectAfterPost: int|bool
 
-@property int|bool $quietSave
+- $quietSave: int|bool
 
-@property string $notificationEmail
+- $notificationEmail: string
 
-@property string $fromEmail
+- $fromEmail: string
 
-@property int $notifySpam
+- $notifySpam: int
 
-@property int $useNotify See Comment::flagNotify* constants
+- $useNotify: int See Comment::flagNotify* constants
 
-@property bool|int $useNotifyText Include comment text in notification emails?
+- $useNotifyText: bool|int Include comment text in notification emails?
 
-@property int|bool $useAkismet
+- $useAkismet: int|bool
 
-@property int $deleteSpamDays
+- $deleteSpamDays: int
 
-@property int $depth
+- $depth: int
 
-@property int|bool $sortNewest
+- $sortNewest: int|bool
 
-@property int|bool $useWebsite
+- $useWebsite: int|bool
 
-@property string $dateFormat
+- $dateFormat: string
 
-@property int $useVotes
+- $useVotes: int
 
-@property int $useStars
+- $useStars: int
 
-@property string $useGravatar
+- $useGravatar: string
 
-@property int $schemaVersion
+- $schemaVersion: int

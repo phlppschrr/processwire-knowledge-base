@@ -7,9 +7,6 @@ ProcessWire WireUpload
 Saves uploads of single or multiple files, saving them to the destination path.
 If the destination path does not exist, it will be created.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [wired()](method-wired.md)

@@ -11,8 +11,6 @@ are doing what you want -- you may want to override them.
 
 See the Module interface (Module.php) for details about each method.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/

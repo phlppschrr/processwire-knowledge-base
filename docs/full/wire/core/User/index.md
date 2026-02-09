@@ -6,8 +6,6 @@ ProcessWire UserPage
 
 A type of Page used for storing an individual User
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 The $user API variable is a type of page representing the current user, and the User class is Page type used for all users.
 

@@ -7,53 +7,53 @@ Extra extension for Pagefile or Pageimage objects
 Properties
 ==========
 
-@property string $url Local URL/path to file
+- [$url: string](method-url.md) Local URL/path to file
 
-@property string $httpUrl Full HTTP URL with scheme and host
+- [$httpUrl: string](method-httpurl.md) Full HTTP URL with scheme and host
 
-@property string $URL No-cache version of url
+- $URL: string No-cache version of url
 
-@property string $HTTPURL No-cache version of httpUrl
+- $HTTPURL: string No-cache version of httpUrl
 
-@property string $filename Full disk path/file
+- [$filename: string](method-filename.md) Full disk path/file
 
-@property string $pathname Alias of filename
+- $pathname: string Alias of filename
 
-@property string $basename Just the basename without path
+- [$basename: string](method-basename.md) Just the basename without path
 
-@property string $extension File extension
+- $extension: string File extension
 
-@property string $ext Alias of extension
+- $ext: string Alias of extension
 
-@property bool $exists Does the file exist?
+- [$exists: bool](method-exists.md) Does the file exist?
 
-@property int $filesize Size of file in bytes
+- [$filesize: int](method-filesize.md) Size of file in bytes
 
-@property string $filesizeStr Human readable size of file
+- [$filesizeStr: string](method-filesizestr.md) Human readable size of file
 
-@property Pagefile|Pageimage $pagefile Source Pageimage object
+- $pagefile: Pagefile|Pageimage Source Pageimage object
 
-@property int $savings Bytes saved by this extra
+- $savings: int Bytes saved by this extra
 
-@property string $savingsStr Human readable savings by this extra
+- $savingsStr: string Human readable savings by this extra
 
-@property string $savingsPct Percent savings by this extra
+- $savingsPct: string Percent savings by this extra
 
 The following properties affect the behavior of the URL-related methods
 =======================================================================
 
-@property bool $useSrcUrlOnFail Use source Pagefile URL if extra image does not exist and cannot be created? (default=false)
+- $useSrcUrlOnFail: bool Use source Pagefile URL if extra image does not exist and cannot be created? (default=false)
 
-@property bool $useSrcUrlOnSize Use source Pagefile URL if extra file is larger than source file? (default=false)
+- $useSrcUrlOnSize: bool Use source Pagefile URL if extra file is larger than source file? (default=false)
 
-@property bool $useSrcExt Use longer filenames that also include the Pagefile’s extension? (default=false)
+- $useSrcExt: bool Use longer filenames that also include the Pagefile’s extension? (default=false)
 
 Hookable methods
 ================
 
-@method bool create()
+- [create(): bool](method-___create.md)
 
-@method string noCacheURL($http = false)
+- [noCacheURL($http = false): string](method-___nocacheurl.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

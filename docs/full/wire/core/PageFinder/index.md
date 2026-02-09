@@ -6,25 +6,23 @@ ProcessWire PageFinder
 
 Matches selector strings to pages
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
 
 Hookable methods:
 =================
 
-@method array|DatabaseQuerySelect find(Selectors|string|array $selectors, $options = array())
+- [find(Selectors|string|array $selectors, $options = array(): array|DatabaseQuerySelect](method-___find.md) )
 
-@method DatabaseQuerySelect getQuery($selectors, array $options)
+- [getQuery($selectors, array $options): DatabaseQuerySelect](method-___getquery.md)
 
-@method string getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where)
+- [getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string](method-___getqueryallowedtemplateswhere.md)
 
-@method void getQueryJoinPath(DatabaseQuerySelect $query, $selector)
+- [getQueryJoinPath(DatabaseQuerySelect $query, $selector): void](method-___getqueryjoinpath.md)
 
-@method bool|Field getQueryUnknownField($fieldName, array $data);
+- [getQueryUnknownField($fieldName, array $data): bool|Field](method-___getqueryunknownfield.md) ;
 
-@property string $includeMode
+- $includeMode: string
 
-@property bool $checkAccess
+- $checkAccess: bool
 
 Methods:
 Method: [init()](method-init.md)

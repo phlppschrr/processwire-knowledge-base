@@ -2,28 +2,28 @@
 
 Source: `wire/core/WireSaveableItems.php`
 
-@method WireArray load(WireArray $items, $selectors = null)
+- [load(WireArray $items, $selectors = null): WireArray](method-___load.md)
 
-@method bool save(Saveable $item)
+- [save(Saveable $item): bool](method-___save.md)
 
-@method bool delete(Saveable $item)
+- [delete(Saveable $item): bool](method-___delete.md)
 
-@method WireArray find($selectors)
+- [find($selectors): WireArray](method-___find.md)
 
-@method void saveReady(Saveable $item)
+- [saveReady(Saveable $item): void](method-___saveready.md)
 
-@method void deleteReady(Saveable $item)
+- [deleteReady(Saveable $item): void](method-___deleteready.md)
 
-@method void cloneReady(Saveable $item, Saveable $copy)
+- [cloneReady(Saveable $item, Saveable $copy): void](method-___cloneready.md)
 
-@method array saved(Saveable $item, array $changes = array())
+- [saved(Saveable $item, array $changes = array(): array](method-___saved.md) )
 
-@method void added(Saveable $item)
+- [added(Saveable $item): void](method-___added.md)
 
-@method void deleted(Saveable $item)
+- [deleted(Saveable $item): void](method-___deleted.md)
 
-@method void cloned(Saveable $item, Saveable $copy)
+- [cloned(Saveable $item, Saveable $copy): void](method-___cloned.md)
 
-@method void renameReady(Saveable $item, $oldName, $newName)
+- [renameReady(Saveable $item, $oldName, $newName): void](method-___renameready.md)
 
-@method void renamed(Saveable $item, $oldName, $newName)
+- [renamed(Saveable $item, $oldName, $newName): void](method-___renamed.md)

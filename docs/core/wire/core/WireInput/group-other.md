@@ -2,10 +2,10 @@
 
 Source: `wire/core/WireInput.php`
 
-@property WireInputData $post POST variables
+- [$post: WireInputData](method-post.md) POST variables
 
-@property WireInputData $get GET variables
+- [$get: WireInputData](method-get.md) GET variables
 
-@property WireInputDataCookie $cookie COOKIE variables
+- [$cookie: WireInputDataCookie](method-cookie.md) COOKIE variables
 
-@property WireInputData $whitelist Whitelisted variables
+- [$whitelist: WireInputData](method-whitelist.md) Whitelisted variables

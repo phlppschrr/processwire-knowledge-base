@@ -2,20 +2,20 @@
 
 Source: `wire/core/PageimageDebugInfo.php`
 
-@property string $url
+- $url: string
 
-@property string $filename
+- $filename: string
 
-@property string $basename
+- $basename: string
 
-@property Pageimage $original
+- $original: Pageimage
 
-@property int $width
+- $width: int
 
-@property int $height
+- $height: int
 
-@property bool $hasFocus
+- $hasFocus: bool
 
-@property string $focusStr
+- $focusStr: string
 
-@property string $suffixStr
+- $suffixStr: string

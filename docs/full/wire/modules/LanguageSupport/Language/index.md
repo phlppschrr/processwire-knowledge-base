@@ -4,9 +4,6 @@ Source: `wire/modules/LanguageSupport/Language.php`
 
 A type of Page that represents a single Language in ProcessWire
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

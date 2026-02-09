@@ -10,6 +10,7 @@ Provides methods for sanitizing and validating user input, preparing data for ou
 Sanitizer is useful for sanitizing input or any other kind of data that you need to match a particular type or format.
 The Sanitizer methods are accessed from the `$sanitizer` API variable and/or `sanitizer()` API variable/function.
 For example:
+For example:
 ~~~~~~
 $cleanValue = $sanitizer->text($dirtyValue);
 ~~~~~~
@@ -33,6 +34,7 @@ $name = $input->post->text('name');
 $comments = $input->post->textarea('comments');
 ~~~~~
 In ProcessWire 3.0.125 and newer you can also perform the same task as the above with one less `->` level like the
+example below:
 example below:
 ~~~~~
 $comments = $input->post('comments','textarea');
@@ -72,6 +74,7 @@ $cleanValue = $sanitizer->text_entities($dirtyValue);
 ~~~~~
 If you append a number to any sanitizer call that returns a string, it is assumed to be maximum allowed length. For
 example, the following would sanitize the value to be text of no more than 20 characters:
+example, the following would sanitize the value to be text of no more than 20 characters:
 ~~~~~
 $cleanValue = $sanitizer->text20($dirtyValue);
 ~~~~~
@@ -88,8 +91,6 @@ and thus it’ll return a non-value rather than a sanitized value. See the `Sani
 `Sanitizer::valid()` methods for usage details.
 
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 @link https://processwire.com/api/variables/sanitizer/ Offical $sanitizer API variable Documentation
 

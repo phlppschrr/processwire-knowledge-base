@@ -2,14 +2,14 @@
 
 Source: `wire/core/Page.php`
 
-@property int $created Unix timestamp of when the page was created.
+- $created: int Unix timestamp of when the page was created.
 
-@property string $createdStr Date/time when the page was created (formatted date/time string).
+- $createdStr: string Date/time when the page was created (formatted date/time string).
 
-@property int $modified Unix timestamp of when the page was last modified.
+- $modified: int Unix timestamp of when the page was last modified.
 
-@property string $modifiedStr Date/time when the page was last modified (formatted date/time string).
+- $modifiedStr: string Date/time when the page was last modified (formatted date/time string).
 
-@property int $published Unix timestamp of when the page was published.
+- $published: int Unix timestamp of when the page was published.
 
-@property string $publishedStr Date/time when the page was published (formatted date/time string).
+- $publishedStr: string Date/time when the page was published (formatted date/time string).

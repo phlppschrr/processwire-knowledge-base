@@ -71,10 +71,6 @@ $config->cookieOptions = [
 ];
 ~~~~~
 
-
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [options()](method-options.md)

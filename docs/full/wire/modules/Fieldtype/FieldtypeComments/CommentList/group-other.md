@@ -2,4 +2,4 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
-@method void renderItemReady(Comment $comment, $depth)
+- renderItemReady(Comment $comment, $depth): void

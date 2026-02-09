@@ -6,9 +6,6 @@ InputfieldTinyMCEConfigHelper
 
 Helper for managing configuration settings in TinyMCE
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [label()](method-label.md)
 Method: [getMceToolbars()](method-getmcetoolbars.md)

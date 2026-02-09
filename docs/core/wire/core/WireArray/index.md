@@ -12,8 +12,6 @@ WireArray is the base of the PageArray (subclass) which is the most used instanc
 
 @todo can we implement next() and prev() like on Page, as alias to getNext() and getPrev()?
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 
 WireArray is the base iterable array type used throughout the ProcessWire framework.

@@ -4,8 +4,6 @@ Source: `wire/core/HookEvent.php`
 
 ProcessWire HookEvent
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 Instances of HookEvent are passed to Hook handlers when their requested method has been called.
 
@@ -21,23 +19,23 @@ $wire->addHookAfter('Pages::saved', function(HookEvent $event) {
 
 HookEvents have the following properties available:
 
-@property-read Wire|WireData|WireArray|Module $object Instance of the object where the Hook event originated.
+- $object: Wire|WireData|WireArray|Module Instance of the object where the Hook event originated.
 
-@property-read string $method The name of the method that was called to generate the Hook event.
+- $method: string The name of the method that was called to generate the Hook event.
 
-@property array $arguments A numerically indexed array of the arguments sent to the above mentioned method.
+- [$arguments: array](method-arguments.md) A numerically indexed array of the arguments sent to the above mentioned method.
 
-@property mixed $return Applicable only for 'after' or ('replace' + 'before' hooks), contains the value returned by the above mentioned method. The hook handling method may modify this return value.
+- $return: mixed Applicable only for 'after' or ('replace' + 'before' hooks), contains the value returned by the above mentioned method. The hook handling method may modify this return value.
 
-@property bool $replace Set to boolean true in a 'before' hook if you want to prevent execution of the original hooked function. In such a case, your hook is replacing the function entirely. Not recommended, so be careful with this.
+- $replace: bool Set to boolean true in a 'before' hook if you want to prevent execution of the original hooked function. In such a case, your hook is replacing the function entirely. Not recommended, so be careful with this.
 
-@property array $options An optional array of user-specified data that gets sent to the hooked function. The hook handling method may access it from $event->data. Also includes all the default hook properties.
+- $options: array An optional array of user-specified data that gets sent to the hooked function. The hook handling method may access it from $event->data. Also includes all the default hook properties.
 
-@property-read string $id A unique identifier string that may be used with a call to `Wire::removeHook()`.
+- $id: string A unique identifier string that may be used with a call to `Wire::removeHook()`.
 
-@property-read string $when In an active hook, contains either the string 'before' or 'after', indicating whether it is executing before or after the hooked method.
+- $when: string In an active hook, contains either the string 'before' or 'after', indicating whether it is executing before or after the hooked method.
 
-@property bool $cancelHooks When true, all remaining hooks will be cancelled, making this HookEvent the last one (be careful with this).
+- $cancelHooks: bool When true, all remaining hooks will be cancelled, making this HookEvent the last one (be careful with this).
 
 Methods:
 Method: [__construct()](method-__construct.md)

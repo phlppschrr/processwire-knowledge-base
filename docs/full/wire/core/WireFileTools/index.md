@@ -6,9 +6,6 @@ ProcessWire File Tools ($files API variable)
 
 Helpers for working with files and directories.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

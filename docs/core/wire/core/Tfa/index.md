@@ -6,8 +6,6 @@ Tfa - ProcessWire Two Factor Authentication module base class
 
 This class is for “Tfa” modules to extend. See the TfaEmail and TfaTotp modules as examples.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 
 USAGE

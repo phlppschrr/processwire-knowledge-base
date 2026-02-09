@@ -9,8 +9,6 @@ Process is the base Module class for each part of ProcessWire's web admin.
 Process modules are self contained applications that run in the ProcessWire admin.
 Please be sure to see the `Module` interface for full details on methods you can specify in a Process module.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/

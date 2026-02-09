@@ -2,6 +2,6 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
-@method int sendAdminNotificationEmail(Comment $comment)
+- [sendAdminNotificationEmail(Comment $comment): int](method-___sendadminnotificationemail.md)
 
-@method int sendNotificationEmail(Comment $comment, $email, $subcode, array $options = array())
+- [sendNotificationEmail(Comment $comment, $email, $subcode, array $options = array(): int](method-___sendnotificationemail.md) )

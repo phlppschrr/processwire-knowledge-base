@@ -13,78 +13,76 @@ to work with the field data. Most Fieldtype modules only need to implement a few
 `Fieldtype::sanitizeValue()` (which is required) and `Fieldtype::getDatabaseSchema()`, as the default implementation
 of most other methods provided in this Fieldtype class accounts for most situations already.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 
 Hookable methods
 ================
 
-@method InputfieldWrapper getConfigInputfields(Field $field)
+- [getConfigInputfields(Field $field): InputfieldWrapper](method-___getconfiginputfields.md)
 
-@method InputfieldWrapper getConfigAdvancedInputfields(Field $field)
+- [getConfigAdvancedInputfields(Field $field): InputfieldWrapper](method-___getconfigadvancedinputfields.md)
 
-@method array getConfigArray(Field $field)
+- [getConfigArray(Field $field): array](method-___getconfigarray.md)
 
-@method array getConfigAllowContext(Field $field)
+- [getConfigAllowContext(Field $field): array](method-___getconfigallowcontext.md)
 
-@method array exportConfigData(Field $field, array $data)
+- [exportConfigData(Field $field, array $data): array](method-___exportconfigdata.md)
 
-@method array importConfigData(Field $field, array $data)
+- [importConfigData(Field $field, array $data): array](method-___importconfigdata.md)
 
-@method Fieldtypes|null getCompatibleFieldtypes(Field $field)
+- [getCompatibleFieldtypes(Field $field): Fieldtypes|null](method-___getcompatiblefieldtypes.md)
 
-@method mixed formatValue(Page $page, Field $field, $value)
+- [formatValue(Page $page, Field $field, $value): mixed](method-___formatvalue.md)
 
-@method string|MarkupFieldtype markupValue(Page $page, Field $field, $value = null, $property = '')
+- [markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype](method-___markupvalue.md)
 
-@method mixed wakeupValue(Page $page, Field $field, $value)
+- [wakeupValue(Page $page, Field $field, $value): mixed](method-___wakeupvalue.md)
 
-@method string|int|array sleepValue(Page $page, Field $field, $value)
+- [sleepValue(Page $page, Field $field, $value): string|int|array](method-___sleepvalue.md)
 
-@method string|float|int|array exportValue(Page $page, Field $field, $value, array $options = array())
+- [exportValue(Page $page, Field $field, $value, array $options = array(): string|float|int|array](method-___exportvalue.md) )
 
-@method string|float|int|array|object importValue(Page $page, Field $field, $value, array $options = array())
+- importValue(Page $page, Field $field, $value, array $options = array(): string|float|int|array|object )
 
-@method bool createField(Field $field)
+- [createField(Field $field): bool](method-___createfield.md)
 
-@method array getSelectorInfo(Field $field, array $data = array())
+- [getSelectorInfo(Field $field, array $data = array(): array](method-___getselectorinfo.md) )
 
-@method mixed|null loadPageField(Page $page, Field $field)
+- [loadPageField(Page $page, Field $field): mixed|null](method-___loadpagefield.md)
 
-@method mixed|null loadPageFieldFilter(Page $page, Field $field, $selector)
+- [loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null](method-___loadpagefieldfilter.md)
 
-@method bool savePageField(Page $page, Field $field)
+- [savePageField(Page $page, Field $field): bool](method-___savepagefield.md)
 
-@method bool deleteField(Field $field)
+- [deleteField(Field $field): bool](method-___deletefield.md)
 
-@method bool deletePageField(Page $page, Field $field)
+- [deletePageField(Page $page, Field $field): bool](method-___deletepagefield.md)
 
-@method bool emptyPageField(Page $page, Field $field)
+- [emptyPageField(Page $page, Field $field): bool](method-___emptypagefield.md)
 
-@method bool replacePageField(Page $src, Page $dst, Field $field)
+- [replacePageField(Page $src, Page $dst, Field $field): bool](method-___replacepagefield.md)
 
-@method bool deleteTemplateField(Template $template, Field $field)
+- [deleteTemplateField(Template $template, Field $field): bool](method-___deletetemplatefield.md)
 
-@method Field cloneField(Field $field)
+- [cloneField(Field $field): Field](method-___clonefield.md)
 
-@method void renamedField(Field $field, $prevName)
+- renamedField(Field $field, $prevName): void
 
-@method void savedField(Field $field)
+- savedField(Field $field): void
 
-@method void saveFieldReady(Field $field)
+- saveFieldReady(Field $field): void
 
-@method void install()
+- [install(): void](method-___install.md)
 
-@method void uninstall()
+- [uninstall(): void](method-___uninstall.md)
 
-@method array getFieldSetups()
+- getFieldSetups(): array
 
-@property string $name Name of Fieldtype module.
+- $name: string Name of Fieldtype module.
 
-@property string $shortName Short name of Fieldtype, which excludes the "Fieldtype" prefix.
+- $shortName: string Short name of Fieldtype, which excludes the "Fieldtype" prefix.
 
-@property string $longName Long name of Fieldtype, which is typically the module title.
+- $longName: string Long name of Fieldtype, which is typically the module title.
 
 Methods:
 Method: [getInputfield()](method-getinputfield.md)

@@ -2,4 +2,4 @@
 
 Source: `wire/core/ModuleJS.php`
 
-@method ModuleJS use(string $name)
+- [use(string $name): ModuleJS](method-___use.md)

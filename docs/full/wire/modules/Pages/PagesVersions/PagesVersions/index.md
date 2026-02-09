@@ -4,8 +4,6 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 
 PagesVersions
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 Provides a version control API for pages in ProcessWire.
 $pagesVersions
@@ -37,7 +35,7 @@ $pagesVersions->deletePageVersion($pageV2);
 HOOKABLE METHODS
 ----------------
 
-@method bool allowPageVersions(Page $page)
+- [allowPageVersions(Page $page): bool](method-___allowpageversions.md)
 
 @todo test change of template in version
 

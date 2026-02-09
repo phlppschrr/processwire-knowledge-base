@@ -10,6 +10,7 @@ If given a class name that’s already present, it won’t be added again.
 **Formatted string option (3.0.204+):**
 Classes can be added by formatted string that dictates what Inputfield element they
 should be added to, in the format `element:classNames` like in this example below:
+should be added to, in the format `element:classNames` like in this example below:
 Each line represents a group containing an element name and one or more space-separated
 classes. Groups may be separated by newline (like above) or with a comma. The element
 name may be any one of the following:

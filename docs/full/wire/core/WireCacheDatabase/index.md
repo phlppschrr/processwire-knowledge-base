@@ -4,8 +4,6 @@ Source: `wire/core/WireCacheDatabase.php`
 
 Database cache handler for WireCache
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 @since 2.0.218
 

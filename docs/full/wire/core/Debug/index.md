@@ -11,8 +11,6 @@ Currently only provides timer capability.
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
 
 ~~~~~
 $timer = Debug::startTimer();

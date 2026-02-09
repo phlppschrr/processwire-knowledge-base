@@ -2,20 +2,20 @@
 
 Source: `wire/core/Fields.php`
 
-@method Field|null get($key) Get a field by name or id
+- get($key): Field|null Get a field by name or id
 
-@method bool changeFieldtype(Field $field1, $keepSettings = false)
+- [changeFieldtype(Field $field1, $keepSettings = false): bool](method-___changefieldtype.md)
 
-@method bool saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = '')
+- [saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = ''): bool](method-___savefieldgroupcontext.md)
 
-@method bool deleteFieldDataByTemplate(Field $field, Template $template)
+- [deleteFieldDataByTemplate(Field $field, Template $template): bool](method-___deletefielddatabytemplate.md)
 
-@method void changedType(Saveable $item, Fieldtype $fromType, Fieldtype $toType)
+- [changedType(Saveable $item, Fieldtype $fromType, Fieldtype $toType): void](method-___changedtype.md)
 
-@method void changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType)
+- [changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType): void](method-___changetypeready.md)
 
-@method bool|Field clone(Field $item, $name = '') Clone a field and return it or return false on fail.
+- [clone(Field $item, $name = ''): bool|Field](method-___clone.md) Clone a field and return it or return false on fail.
 
-@method array getTags($getFieldNames = false) Get tags for all fields (3.0.179+)
+- [getTags($getFieldNames = false): array](method-___gettags.md) Get tags for all fields (3.0.179+)
 
-@method bool applySetupName(Field $field, $setupName = '')
+- [applySetupName(Field $field, $setupName = ''): bool](method-___applysetupname.md)

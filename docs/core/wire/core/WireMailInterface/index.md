@@ -4,9 +4,6 @@ Source: `wire/core/WireMailInterface.php`
 
 ProcessWire WireMail Interface
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [to()](method-to.md)
 Method: [from()](method-from.md)

@@ -6,9 +6,6 @@ Installation helper for ProcessModule
 
 Provides methods for internative module installation for ProcessModule
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getTempDir()](method-gettempdir.md)
 Method: [canUploadDownload()](method-canuploaddownload.md)

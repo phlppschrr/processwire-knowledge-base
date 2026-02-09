@@ -4,9 +4,6 @@ Source: `wire/modules/Process/ProcessField/ProcessFieldExportImport.php`
 
 Handles import/export for ProcessField
 
-ProcessWire 3.x, Copyright 2017 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

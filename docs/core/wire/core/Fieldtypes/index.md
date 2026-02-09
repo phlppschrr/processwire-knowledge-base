@@ -7,9 +7,6 @@ ProcessWire Fieldtypes
 Maintains a collection of Fieldtype modules.
 $fieldtypes
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

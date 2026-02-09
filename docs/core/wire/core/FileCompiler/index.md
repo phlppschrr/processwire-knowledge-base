@@ -4,8 +4,6 @@ Source: `wire/core/FileCompiler.php`
 
 FileCompiler
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 @todo determine whether we should make storage in dedicated table rather than using wire('cache').
 

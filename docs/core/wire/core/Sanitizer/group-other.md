@@ -2,6 +2,6 @@
 
 Source: `wire/core/Sanitizer.php`
 
-@method array($value, $sanitizer = null, array $options = array())
+- [array($value, $sanitizer = null, array $options = array()](method-___array.md) )
 
-@method array testAll($value)
+- [testAll($value): array](method-___testall.md)

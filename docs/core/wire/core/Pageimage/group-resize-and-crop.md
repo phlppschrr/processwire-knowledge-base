@@ -2,4 +2,4 @@
 
 Source: `wire/core/Pageimage.php`
 
-@property-read string $error Last image resizing error message, when applicable.
+- $error: string Last image resizing error message, when applicable.

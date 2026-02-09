@@ -2,10 +2,10 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentFilter.php`
 
-@property string $appUserAgent
+- $appUserAgent: string
 
-@property string $charset
+- $charset: string
 
-@property string $homeURL @deprecated
+- $homeURL: string @deprecated
 
-@property string $apiKey
+- $apiKey: string

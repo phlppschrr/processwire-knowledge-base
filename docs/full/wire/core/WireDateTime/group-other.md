@@ -2,4 +2,4 @@
 
 Source: `wire/core/WireDateTime.php`
 
-@method string relativeTimeStr($ts, $abbreviate = false, $useTense = true)
+- [relativeTimeStr($ts, $abbreviate = false, $useTense = true): string](method-___relativetimestr.md)

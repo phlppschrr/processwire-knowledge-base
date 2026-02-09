@@ -16,8 +16,6 @@ you want to use anything here.
 $numRows = $pages->parents()->rebuildAll();
 ~~~~~~
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
 
 @since 3.0.156
 

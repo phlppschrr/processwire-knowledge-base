@@ -7,8 +7,6 @@ Class CommentStars
 Handles rendering of star ratings for comments.
 Additional code in comments.js and comments.css accompanies this.
 
-Copyright 2016 by Ryan Cramer for ProcessWire
-
 Groups:
 Group: [other](group-other.md)
 

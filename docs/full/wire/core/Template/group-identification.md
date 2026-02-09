@@ -2,14 +2,14 @@
 
 Source: `wire/core/Template.php`
 
-@property int $id Numeric database ID.
+- $id: int Numeric database ID.
 
-@property string $name Name of template.
+- $name: string Name of template.
 
-@property string $label Optional short text label to describe Template.
+- $label: string Optional short text label to describe Template.
 
-@property int $flags Flags (bitmask) assigned to this template. See the flag constants.
+- $flags: int Flags (bitmask) assigned to this template. See the flag constants.
 
-@property string $ns Namespace found in the template file, or blank if not determined.
+- $ns: string Namespace found in the template file, or blank if not determined.
 
-@property string $pageClass Class for instantiated page objects. Page assumed if blank, or specify class name.
+- $pageClass: string Class for instantiated page objects. Page assumed if blank, or specify class name.

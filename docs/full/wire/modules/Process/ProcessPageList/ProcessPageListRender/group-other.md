@@ -2,8 +2,8 @@
 
 Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
-@method array getPageActions(Page $page)
+- [getPageActions(Page $page): array](method-___getpageactions.md)
 
-@method string getPageLabel(Page $page, array $options = array())
+- [getPageLabel(Page $page, array $options = array(): string](method-___getpagelabel.md) )
 
-@method int getNumChildren(Page $page, $selector = null) For hooks only, do not call directly
+- [getNumChildren(Page $page, $selector = null): int](method-___getnumchildren.md) For hooks only, do not call directly

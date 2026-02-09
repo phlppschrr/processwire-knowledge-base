@@ -4,8 +4,6 @@ Source: `wire/core/WireMailTools.php`
 
 ProcessWire Mail Tools ($mail API variable)
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 Provides an API interface to email and WireMail.
 ~~~~~

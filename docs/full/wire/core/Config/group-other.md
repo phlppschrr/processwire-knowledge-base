@@ -2,38 +2,38 @@
 
 Source: `wire/core/Config.php`
 
-@method array|string wireMail($key = '', $value = null)
+- wireMail($key = '', $value = null): array|string
 
-@method array imageSizes($key = '', $value = null)
+- imageSizes($key = '', $value = null): array
 
-@method array|bool|string|int|float imageSizerOptions($key = '', $value = null)
+- imageSizerOptions($key = '', $value = null): array|bool|string|int|float
 
-@method array|int|bool webpOptions($key = '', $value = null)
+- webpOptions($key = '', $value = null): array|int|bool
 
-@method array|string contentTypes($key = '', $value = null)
+- contentTypes($key = '', $value = null): array|string
 
-@method array|string fileContentTypes($key = '', $value = null)
+- fileContentTypes($key = '', $value = null): array|string
 
-@method array|string|bool fileCompilerOptions($key = '', $value = null)
+- fileCompilerOptions($key = '', $value = null): array|string|bool
 
-@method array|string|string[] dbOptions($key = '', $value = null)
+- dbOptions($key = '', $value = null): array|string|string[]
 
-@method array|string|string[] dbSqlModes($key = '', $value = null)
+- dbSqlModes($key = '', $value = null): array|string|string[]
 
-@method array|int|bool pageList($key = '', $value = null)
+- pageList($key = '', $value = null): array|int|bool
 
-@method array|bool pageEdit($key = '', $value = null)
+- pageEdit($key = '', $value = null): array|bool
 
-@method array|string pageAdd($key = '', $value = null)
+- pageAdd($key = '', $value = null): array|string
 
-@method array|string moduleInstall($key = '', $value = null)
+- moduleInstall($key = '', $value = null): array|string
 
-@method array|string substituteModules($key = '', $value = null)
+- substituteModules($key = '', $value = null): array|string
 
-@method array|string|bool AdminThemeUikit($key = '', $value = null)
+- AdminThemeUikit($key = '', $value = null): array|string|bool
 
-@method array|string modals($key = '', $value = null)
+- modals($key = '', $value = null): array|string
 
-@method array|bool markupQA($key = '', $value = null)
+- markupQA($key = '', $value = null): array|bool
 
-@method array|string statusFiles($key = '', $value = null)
+- statusFiles($key = '', $value = null): array|string

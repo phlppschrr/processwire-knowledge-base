@@ -2,10 +2,10 @@
 
 Source: `wire/core/PagefilesManager.php`
 
-@method save()
+- [save()](method-___save.md)
 
-@property string $path
+- [$path: string](method-path.md)
 
-@property string $url
+- [$url: string](method-url.md)
 
-@property Page $page Page that this files manager is for.
+- $page: Page Page that this files manager is for.

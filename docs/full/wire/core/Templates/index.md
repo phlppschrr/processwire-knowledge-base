@@ -6,8 +6,6 @@ ProcessWire Templates
 
 Manages and provides access to all the Template instances
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 Manages and provides access to all the Templates.
 

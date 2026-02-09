@@ -21,9 +21,6 @@ if($response !== false) {
 
 Thanks to @horst for his assistance with several methods in this class.
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

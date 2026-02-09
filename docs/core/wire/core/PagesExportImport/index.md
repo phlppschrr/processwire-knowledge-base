@@ -14,10 +14,6 @@ $porter = new PagesExportImport(); // works in any version
 $porter = $pages->porter(); // 3.0.253+ only
 ~~~~~
 
-
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getExportPath()](method-getexportpath.md)
 Method: [cleanupFiles()](method-cleanupfiles.md)

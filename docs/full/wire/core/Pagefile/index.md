@@ -7,9 +7,6 @@ ProcessWire Pagefile
 Represents a single file item attached to a page, typically via a File Fieldtype.
 Pagefile objects are contained by a `Pagefiles` object.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [date-time](group-date-time.md)
 Group: [other](group-other.md)

@@ -18,9 +18,6 @@ Provides runtime quality assurance for markup stored in [textarea] field values.
 
 Runtime errors are logged to: /site/assets/logs/markup-qa-errors.txt
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [setPage()](method-setpage.md)

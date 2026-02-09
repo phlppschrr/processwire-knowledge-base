@@ -2,6 +2,6 @@
 
 Source: `wire/core/FieldtypeMulti.php`
 
-@method bool savePageFieldRows(Page $page, Field $field, $value)
+- savePageFieldRows(Page $page, Field $field, $value): bool
 
-@method int deletePageFieldRows(Page $page, Field $field, $value)
+- deletePageFieldRows(Page $page, Field $field, $value): int

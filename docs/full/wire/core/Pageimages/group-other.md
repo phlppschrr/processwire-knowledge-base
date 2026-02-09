@@ -2,4 +2,4 @@
 
 Source: `wire/core/Pageimages.php`
 
-@method string render($markup = '', $options = array())
+- [render($markup = '', $options = array(): string](method-___render.md) )

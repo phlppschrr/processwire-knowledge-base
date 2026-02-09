@@ -12,8 +12,6 @@ Other user contributions as noted.
 Copyright (C) 2016-2019 by Horst Nogajski and Ryan Cramer
 This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

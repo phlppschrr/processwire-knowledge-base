@@ -16,19 +16,7 @@ The following optional features are available in ProcessWire version 3.0.125 and
 
 Note that the `$valid` and `$fallback` arguments are only applicable if a `$key` argument is provided.
 
-## Example
 
-~~~~~
-// Retrieve a "comments" POST variable, sanitize and output it
-$comments = $input->post('comments');
-$comments = $sanitizer->textarea($comments); // sanitize input as multi-line text with no HTML
-echo $sanitizer->entities($comments); // sanitize for output
-
-// You can also combine $input and one $sanitizer call like this,
-// replacing "text" with name of any $sanitizer method:
-$comments = $input->post->textarea('comments');
-
-// like the previous example, but specify sanitizer method as second argument (3.0.125+):
 $comments = $input->post('comments', 'textarea');
 
 // if you want more than one sanitizer, specify multiple in a CSV string (3.0.125+):
@@ -44,6 +32,24 @@ $color = $input->post('color', [ 'red', 'blue', 'green' ], 'red'); // return red
 
 // you may optionally provide a callback function to sanitize/validate with (3.0.125+):
 $isActive = $input->post('active', function($val) { return $val ? true : false; });
+
+## Example
+
+~~~~~
+// Retrieve a "comments" POST variable, sanitize and output it
+$comments = $input->post('comments');
+$comments = $sanitizer->textarea($comments); // sanitize input as multi-line text with no HTML
+echo $sanitizer->entities($comments); // sanitize for output
+
+// You can also combine $input and one $sanitizer call like this,
+// replacing "text" with name of any $sanitizer method:
+$comments = $input->post->textarea('comments');
+
+// like the previous example, but specify sanitizer method as second argument (3.0.125+):
+
+```php
+
+```
 ~~~~~
 
 ## Usage

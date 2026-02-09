@@ -2,26 +2,26 @@
 
 Source: `wire/core/Session.php`
 
-@method User login() login($name, $pass, $force = false) Login the user identified by $name and authenticated by $pass. Returns the user object on successful login or null on failure.
+- [login(): User](method-___login.md) login($name, $pass, $force = false) Login the user identified by $name and authenticated by $pass. Returns the user object on successful login or null on failure.
 
-@method Session logout() logout() Logout the current user, and clear all session variables.
+- [logout(): Session](method-___logout.md) logout() Logout the current user, and clear all session variables.
 
-@method void redirect() redirect($url, $http301 = true) Redirect this session to the specified URL.
+- [redirect(): void](method-___redirect.md) redirect($url, $http301 = true) Redirect this session to the specified URL.
 
-@method void init() Initialize session (called automatically by constructor)
+- [init(): void](method-___init.md) Initialize session (called automatically by constructor)
 
-@method bool authenticate(User $user, $pass)
+- [authenticate(User $user, $pass): bool](method-___authenticate.md)
 
-@method bool isValidSession($userID)
+- [isValidSession($userID): bool](method-___isvalidsession.md)
 
-@method bool allowLoginAttempt($name)
+- [allowLoginAttempt($name): bool](method-___allowloginattempt.md)
 
-@method bool allowLogin($name, User $user = null)
+- [allowLogin($name, User $user = null): bool](method-___allowlogin.md)
 
-@method void loginSuccess(User $user)
+- [loginSuccess(User $user): void](method-___loginsuccess.md)
 
-@method void loginFailure($name, $reason)
+- [loginFailure($name, $reason): void](method-___loginfailure.md)
 
-@method void logoutSuccess(User $user)
+- [logoutSuccess(User $user): void](method-___logoutsuccess.md)
 
-@property SessionCSRF $CSRF
+- [$CSRF: SessionCSRF](method-csrf.md)

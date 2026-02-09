@@ -27,9 +27,6 @@ $a = PageArray($page); // create + add one page
 $a = PageArray([ $page1, $page2, $page3 ]); // create + add pages
 ~~~~~
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

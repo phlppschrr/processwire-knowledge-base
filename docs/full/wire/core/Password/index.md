@@ -7,9 +7,6 @@ ProcessWire Password Fieldtype
 Class to hold combined password/salt info. Uses Blowfish when possible.
 Specially used by FieldtypePassword.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

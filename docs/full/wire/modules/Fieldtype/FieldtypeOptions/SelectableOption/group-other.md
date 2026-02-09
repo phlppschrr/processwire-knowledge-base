@@ -2,10 +2,10 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOption.php`
 
-@property int $id
+- $id: int
 
-@property int $sort
+- $sort: int
 
-@property string $title
+- $title: string
 
-@property string $value
+- $value: string

@@ -11,9 +11,6 @@ See the Module interface (Module.php) for details about each method.
 This file is licensed under the MIT license.
 https://processwire.com/about/license/mit/
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

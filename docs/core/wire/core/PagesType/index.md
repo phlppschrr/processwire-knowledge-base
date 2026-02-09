@@ -11,10 +11,6 @@ This class is primarily used by the core as an alternative to `$pages`, providin
 are all instances of `PagesType`. This class is typically not instantiated on its own and instead acts as a base class
 which is extended.
 
-
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

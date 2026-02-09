@@ -18,6 +18,8 @@ all correspond to the identically named PHP [fgetcsv](https://www.php.net/manual
 arguments.
 
 Example foods.csv file (first row is header):
+Example foods.csv file (first row is header):
+Example of reading the foods.csv file above:
 Example of reading the foods.csv file above:
 
 ## Example

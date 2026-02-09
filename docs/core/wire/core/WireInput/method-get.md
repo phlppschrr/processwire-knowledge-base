@@ -16,20 +16,6 @@ The following optional features are available in ProcessWire version 3.0.125 and
 
 Note that the `$valid` and `$fallback` arguments are only applicable if a `$key` argument is provided.
 
-## Example
-
-~~~~~
-// Retrieve a "q" GET variable, sanitize and output
-// Example request URL: domain.com/path/to/page/?q=TEST
-$q = $input->get('q'); // retrieve value
-$q = $sanitizer->text($q); // sanitize input as 1-line text
-echo $sanitizer->entities($q); // sanitize for output, outputs "TEST"
-
-// You can also combine $input and one $sanitizer call, replacing
-// the "text" method call with any $sanitizer method:
-$q = $input->get->text('q');
-
-// like the previous example, but specify sanitizer method as second argument (3.0.125+):
 $q = $input->get('q', 'text');
 
 // if you want more than one sanitizer, specify multiple in a CSV string (3.0.125+):
@@ -45,6 +31,25 @@ $color = $input->get('color', [ 'red', 'blue', 'green' ], 'red'); // return red 
 
 // you may optionally provide a callback function to sanitize/validate with (3.0.125+):
 $isActive = $input->get('active', function($val) { return $val ? true : false; });
+
+## Example
+
+~~~~~
+// Retrieve a "q" GET variable, sanitize and output
+// Example request URL: domain.com/path/to/page/?q=TEST
+$q = $input->get('q'); // retrieve value
+$q = $sanitizer->text($q); // sanitize input as 1-line text
+echo $sanitizer->entities($q); // sanitize for output, outputs "TEST"
+
+// You can also combine $input and one $sanitizer call, replacing
+// the "text" method call with any $sanitizer method:
+$q = $input->get->text('q');
+
+// like the previous example, but specify sanitizer method as second argument (3.0.125+):
+
+```php
+
+```
 ~~~~~
 
 ## Usage

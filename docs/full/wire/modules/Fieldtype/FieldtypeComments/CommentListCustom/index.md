@@ -22,9 +22,6 @@ $list->setMarkup([
 echo $list->render();
 ~~~~~~
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getMarkup()](method-getmarkup.md)
 Method: [setMarkup()](method-setmarkup.md)

@@ -6,8 +6,6 @@ ProcessWire Page Values
 
 Provides implementation for several Page value get() functions.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 @since 3.0.205
 

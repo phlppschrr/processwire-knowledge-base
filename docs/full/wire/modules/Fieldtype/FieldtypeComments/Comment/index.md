@@ -6,9 +6,6 @@ ProcessWire Fieldtype Comments > Comment
 
 Class that contains an individual comment.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

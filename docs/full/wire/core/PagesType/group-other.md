@@ -2,20 +2,20 @@
 
 Source: `wire/core/PagesType.php`
 
-@method Page add($name)
+- [add($name): Page](method-___add.md)
 
-@method Page new(array $options = []) 3.0.249
+- [new(array $options = []): Page](method-___new.md) 3.0.249
 
-@method bool save(Page $page)
+- [save(Page $page): bool](method-___save.md)
 
-@method bool delete(Page $page, $recursive = false)
+- [delete(Page $page, $recursive = false): bool](method-___delete.md)
 
-@method saveReady(Page $page)
+- [saveReady(Page $page)](method-___saveready.md)
 
-@method saved(Page $page, array $changes = array(), $values = array())
+- [saved(Page $page, array $changes = array()](method-___saved.md) , $values = array())
 
-@method added(Page $page)
+- [added(Page $page)](method-___added.md)
 
-@method deleteReady(Page $page)
+- [deleteReady(Page $page)](method-___deleteready.md)
 
-@method deleted(Page $page)
+- [deleted(Page $page)](method-___deleted.md)

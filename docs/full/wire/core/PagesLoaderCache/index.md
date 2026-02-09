@@ -8,9 +8,6 @@ Pages Loader Cache
 $pages->cacher
 Implements page caching of loaded pages and PageArrays for $pages API variable
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [getCacheStatus()](method-getcachestatus.md)

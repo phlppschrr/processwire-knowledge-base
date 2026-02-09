@@ -2,34 +2,34 @@
 
 Source: `wire/core/WireMail.php`
 
-@method int send() Send email.
+- [send(): int](method-___send.md) Send email.
 
-@method string htmlToText($html) Convert HTML email body to TEXT email body.
+- [htmlToText($html): string](method-___htmltotext.md) Convert HTML email body to TEXT email body.
 
-@property array $to To email address.
+- [$to: array](method-to.md) To email address.
 
-@property array $toName Optional person’s name to accompany “to” email address
+- [$toName: array](method-toname.md) Optional person’s name to accompany “to” email address
 
-@property string $from From email address.
+- [$from: string](method-from.md) From email address.
 
-@property string $fromName Optional person’s name to accompany “from” email address.
+- [$fromName: string](method-fromname.md) Optional person’s name to accompany “from” email address.
 
-@property string $replyTo Reply-to email address (where supported).
+- [$replyTo: string](method-replyto.md) Reply-to email address (where supported).
 
-@property string $replyToName Optional person’s name to accompany “reply-to” email address.
+- [$replyToName: string](method-replytoname.md) Optional person’s name to accompany “reply-to” email address.
 
-@property string $subject Subject line of email.
+- [$subject: string](method-subject.md) Subject line of email.
 
-@property string $body Plain text body of email.
+- [$body: string](method-body.md) Plain text body of email.
 
-@property string $bodyHTML HTML body of email.
+- [$bodyHTML: string](method-bodyhtml.md) HTML body of email.
 
-@property array $header Associative array of additional headers.
+- [$header: array](method-header.md) Associative array of additional headers.
 
-@property array $headers Alias of $header
+- [$headers: array](method-headers.md) Alias of $header
 
-@property array $param Associative array of aditional params (likely not applicable to most WireMail modules).
+- [$param: array](method-param.md) Associative array of aditional params (likely not applicable to most WireMail modules).
 
-@property array $attachments Array of file attachments (if populated and where supported)
+- $attachments: array Array of file attachments (if populated and where supported)
 
-@property string $newline Newline character, populated only if different from CRLF.
+- $newline: string Newline character, populated only if different from CRLF.

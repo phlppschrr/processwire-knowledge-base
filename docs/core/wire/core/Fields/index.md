@@ -6,8 +6,6 @@ ProcessWire Fields
 
 Manages collection of ALL Field instances, not specific to any particular Fieldgroup
 
-ProcessWire 3.x, Copyright 2024 by Ryan Cramer
-https://processwire.com
 
 Manages all custom fields in ProcessWire, independently of any Fieldgroup.
 $fields

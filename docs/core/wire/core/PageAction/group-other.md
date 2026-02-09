@@ -2,6 +2,6 @@
 
 Source: `wire/core/PageAction.php`
 
-@method bool action(Page $item)
+- action(Page $item): bool
 
-@method executeMultiple(PageArray $items)
+- executeMultiple(PageArray $items)

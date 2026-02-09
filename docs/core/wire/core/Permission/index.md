@@ -9,10 +9,6 @@ One or more Permission objects are attached to `Role` objects, which are then at
 and `Template` objects, forming ProcessWire's role-based access control system. Outside of roles,
 Permission objects are managed with the `$permissions` API variable.
 
-
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

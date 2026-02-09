@@ -4,9 +4,6 @@ Source: `wire/core/WireTempDir.php`
 
 ProcessWire Temporary Directory Manager
 
-ProcessWire 3.x, Copyright 2018 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [__destruct()](method-__destruct.md)

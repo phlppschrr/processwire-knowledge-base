@@ -4,8 +4,6 @@ Source: `wire/core/WireMail.php`
 
 ProcessWire WireMail
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 A module type that handles sending of email in ProcessWire
 $m

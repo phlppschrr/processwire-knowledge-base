@@ -16,8 +16,6 @@ $result = $pages->pathFinder()->get('/en/foo/bar/page3');
 Note that PagesPathFinder does not perform any access control checks, so if using this class then validate access
 afterwards when appropriate.
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
 
 @todo:
 Determine how to handle case where this class is called before

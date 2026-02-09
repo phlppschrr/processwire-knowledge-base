@@ -13,9 +13,6 @@ and these are automatically removed when the remove() method is called.
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [setSecondaryID()](method-setsecondaryid.md)

@@ -6,8 +6,6 @@ ProcessWire Functions
 
 Common API functions useful outside of class scope
 
-ProcessWire 3.x, Copyright 2016 by Ryan Cramer
-https://processwire.com
 
 These shortcuts for creating WireArray types are available in ProcessWire 3.0.123 and newer.
 These file system functions are procedural versions of some of those provided by the `$files` API variable.

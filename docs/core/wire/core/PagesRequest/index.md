@@ -12,9 +12,6 @@ Methods in this class should be accessed from `$pages->request()`, i.e.
 $page = $pages->request()->getPage();
 ~~~~~
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

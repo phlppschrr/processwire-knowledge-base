@@ -2,56 +2,56 @@
 
 Source: `wire/core/Fuel.php`
 
-@property ProcessWire $wire
+- $wire: ProcessWire
 
-@property Database $db
+- $db: Database
 
-@property WireDatabasePDO $database
+- $database: WireDatabasePDO
 
-@property Session $session
+- $session: Session
 
-@property Notices $notices
+- $notices: Notices
 
-@property Sanitizer $sanitizer
+- $sanitizer: Sanitizer
 
-@property Fields $fields
+- $fields: Fields
 
-@property Fieldtypes $fieldtypes
+- $fieldtypes: Fieldtypes
 
-@property Fieldgroups $fieldgroups
+- $fieldgroups: Fieldgroups
 
-@property Templates $templates
+- $templates: Templates
 
-@property Pages $pages
+- $pages: Pages
 
-@property Page $page
+- $page: Page
 
-@property Process $process
+- $process: Process
 
-@property Modules $modules
+- $modules: Modules
 
-@property Permissions $permissions
+- $permissions: Permissions
 
-@property Roles $roles
+- $roles: Roles
 
-@property Users $users
+- $users: Users
 
-@property User $user
+- $user: User
 
-@property WireCache $cache
+- $cache: WireCache
 
-@property WireInput $input
+- $input: WireInput
 
-@property Languages $languages If LanguageSupport installed
+- $languages: Languages If LanguageSupport installed
 
-@property Config $config
+- $config: Config
 
-@property Fuel $fuel
+- $fuel: Fuel
 
-@property WireProfilerInterface $profiler
+- $profiler: WireProfilerInterface
 
-@property WireFileTools $files
+- $files: WireFileTools
 
-@property WireMailTools $mail
+- $mail: WireMailTools
 
-@property WireDateTime $datetime
+- $datetime: WireDateTime

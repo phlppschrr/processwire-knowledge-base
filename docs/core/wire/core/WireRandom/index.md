@@ -6,8 +6,6 @@ Random generators for ProcessWire
 
 Includes methods for random strings, numbers, arrays and passwords.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 @since 3.0.111
 

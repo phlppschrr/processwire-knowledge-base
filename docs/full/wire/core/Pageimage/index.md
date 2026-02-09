@@ -20,77 +20,75 @@ foreach($page->images as $image) {
 }
 ~~~~~
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
 
 
 Properties inherited from Pagefile
 ==================================
 
-@property-read string $url URL to the file on the server.
+- [$url: string](method-url.md) URL to the file on the server.
 
-@property-read string $httpUrl URL to the file on the server including scheme and hostname.
+- $httpUrl: string URL to the file on the server including scheme and hostname.
 
-@property-read string $URL Same as $url property but with browser cache busting query string appended.
+- $URL: string Same as $url property but with browser cache busting query string appended.
 
-@property-read string $HTTPURL Same as the cache-busting uppercase “URL” property, but includes scheme and hostname.
+- $HTTPURL: string Same as the cache-busting uppercase “URL” property, but includes scheme and hostname.
 
-@property-read string $filename Full disk path to the file on the server.
+- [$filename: string](method-filename.md) Full disk path to the file on the server.
 
-@property-read string $name Returns the filename without the path, same as the "basename" property.
+- $name: string Returns the filename without the path, same as the "basename" property.
 
-@property-read string $hash Get a unique hash (for the page) representing this Pagefile.
+- $hash: string Get a unique hash (for the page) representing this Pagefile.
 
-@property-read array $tagsArray Get file tags as an array. @since 3.0.17
+- $tagsArray: array Get file tags as an array. @since 3.0.17
 
-@property string $basename Returns the filename without the path.
+- $basename: string Returns the filename without the path.
 
-@property string $description Value of the file’s description field (string), if enabled. Note you can also set this property directly.
+- $description: string Value of the file’s description field (string), if enabled. Note you can also set this property directly.
 
-@property string $tags Value of the file’s tags field (string), if enabled.
+- $tags: string Value of the file’s tags field (string), if enabled.
 
-@property string $ext File’s extension (i.e. last 3 or so characters)
+- $ext: string File’s extension (i.e. last 3 or so characters)
 
-@property-read int $filesize File size (number of bytes).
+- $filesize: int File size (number of bytes).
 
-@property int $modified Unix timestamp of when Pagefile (file, description or tags) was last modified.
+- $modified: int Unix timestamp of when Pagefile (file, description or tags) was last modified.
 
-@property-read string $modifiedStr Readable date/time string of when Pagefile was last modified.
+- $modifiedStr: string Readable date/time string of when Pagefile was last modified.
 
-@property-read int $mtime Unix timestamp of when file (only) was last modified.
+- $mtime: int Unix timestamp of when file (only) was last modified.
 
-@property-read string $mtimeStr Readable date/time string when file (only) was last modified.
+- $mtimeStr: string Readable date/time string when file (only) was last modified.
 
-@property int $created Unix timestamp of when file was created.
+- $created: int Unix timestamp of when file was created.
 
-@property-read string $createdStr Readable date/time string of when Pagefile was created
+- $createdStr: string Readable date/time string of when Pagefile was created
 
-@property string $filesizeStr File size as a formatted string, i.e. “123 Kb”.
+- $filesizeStr: string File size as a formatted string, i.e. “123 Kb”.
 
-@property Pagefiles $pagefiles The Pagefiles WireArray that contains this file.
+- $pagefiles: Pagefiles The Pagefiles WireArray that contains this file.
 
-@property Page $page The Page object that this file is part of.
+- $page: Page The Page object that this file is part of.
 
-@property Field $field The Field object that this file is part of.
+- $field: Field The Field object that this file is part of.
 
-@property PageimageDebugInfo $debugInfo
+- $debugInfo: PageimageDebugInfo
 
 Hookable methods
 ================
 
-@method bool|array isVariation($basename, $options = array())
+- [isVariation($basename, $options = array(): bool|array](method-___isvariation.md) )
 
-@method Pageimage crop($x, $y, $width, $height, $options = array())
+- [crop($x, $y, $width, $height, $options = array(): Pageimage](method-___crop.md) )
 
-@method array rebuildVariations($mode = 0, array $suffix = array(), array $options = array())
+- [rebuildVariations($mode = 0, array $suffix = array(): array](method-___rebuildvariations.md) , array $options = array())
 
-@method install($filename)
+- install($filename)
 
-@method render($markup = '', $options = array())
+- [render($markup = '', $options = array()](method-___render.md) )
 
-@method void createdVariation(Pageimage $image, array $data) Called after new image variation created (3.0.180+)
+- [createdVariation(Pageimage $image, array $data): void](method-___createdvariation.md) Called after new image variation created (3.0.180+)
 
-@method bool filenameDoesNotExist($filename) Hook called when a filename does not exist
+- [filenameDoesNotExist($filename): bool](method-___filenamedoesnotexist.md) Hook called when a filename does not exist
 
 Groups:
 Group: [resize-and-crop](group-resize-and-crop.md)

@@ -11,83 +11,81 @@ This class boots a ProcessWire instance. The current ProcessWire instance is rep
 $wire = new ProcessWire('/server/path/', 'https://hostname/url/');
 ~~~~~
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
 
 Default API vars (A-Z)
 ======================
 
-@property AdminTheme|AdminThemeFramework|null $adminTheme
+- $adminTheme: AdminTheme|AdminThemeFramework|null
 
-@property WireCache $cache
+- $cache: WireCache
 
-@property WireClassLoader $classLoader
+- $classLoader: WireClassLoader
 
-@property Config $config
+- $config: Config
 
-@property WireDatabasePDO $database
+- $database: WireDatabasePDO
 
-@property WireDateTime $datetime
+- $datetime: WireDateTime
 
-@property Fieldgroups $fieldgroups
+- $fieldgroups: Fieldgroups
 
-@property Fields $fields
+- $fields: Fields
 
-@property Fieldtypes $fieldtypes
+- $fieldtypes: Fieldtypes
 
-@property WireFileTools $files
+- $files: WireFileTools
 
-@property Fuel $fuel
+- $fuel: Fuel
 
-@property WireHooks $hooks
+- $hooks: WireHooks
 
-@property WireInput $input
+- $input: WireInput
 
-@property Languages $languages (present only if LanguageSupport installed)
+- $languages: Languages (present only if LanguageSupport installed)
 
-@property WireLog $log
+- $log: WireLog
 
-@property WireMailTools $mail
+- $mail: WireMailTools
 
-@property Modules $modules
+- $modules: Modules
 
-@property Notices $notices
+- $notices: Notices
 
-@property Page $page
+- $page: Page
 
-@property Pages $pages
+- $pages: Pages
 
-@property Permissions $permissions
+- $permissions: Permissions
 
-@property Process|ProcessPageView $process
+- $process: Process|ProcessPageView
 
-@property WireProfilerInterface $profiler
+- $profiler: WireProfilerInterface
 
-@property Roles $roles
+- $roles: Roles
 
-@property Sanitizer $sanitizer
+- $sanitizer: Sanitizer
 
-@property Session $session
+- $session: Session
 
-@property Templates $templates
+- $templates: Templates
 
-@property Paths $urls
+- $urls: Paths
 
-@property User $user
+- $user: User
 
-@property Users $users
+- $users: Users
 
-@property ProcessWire $wire
+- $wire: ProcessWire
 
-@property WireShutdown $shutdown
+- $shutdown: WireShutdown
 
-@property PagesVersions|null $pagesVersions
+- $pagesVersions: PagesVersions|null
 
-@method init()
+- [init()](method-___init.md)
 
-@method ready()
+- [ready()](method-___ready.md)
 
-@method finished(array $data)
+- [finished(array $data)](method-___finished.md)
 
 Methods:
 Method: [__construct()](method-__construct.md)

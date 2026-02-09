@@ -8,10 +8,6 @@ For pages that are a version, this class represents the `_version`
 property of the page. It is also used as the return value for some
 methods in the PagesVersions class to return version information.
 
-
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

@@ -24,8 +24,5 @@ if($item instanceof NullPage) {
 Placeholder class for non-existant and non-saveable Page.
 Many API functions return a NullPage to indicate no match.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)

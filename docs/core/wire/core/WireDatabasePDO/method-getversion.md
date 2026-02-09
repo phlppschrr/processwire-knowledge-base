@@ -5,6 +5,7 @@ Source: `wire/core/WireDatabasePDO.php`
 Get MySQL/MariaDB version
 
 Example return values:
+Example return values:
 
  - 5.7.23
  - 10.1.34-MariaDB

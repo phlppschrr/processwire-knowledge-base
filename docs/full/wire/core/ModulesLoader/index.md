@@ -4,9 +4,6 @@ Source: `wire/core/ModulesLoader.php`
 
 ProcessWire Modules: Loader
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [initModule()](method-initmodule.md)
 Method: [readyModule()](method-readymodule.md)

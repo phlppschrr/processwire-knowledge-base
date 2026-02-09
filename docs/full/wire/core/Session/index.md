@@ -13,8 +13,6 @@ used, but it's in a different namespace than this. A value set in $_SESSION won'
 and likewise a value set in $session won't appear in $_SESSION.  It's also good to use this class
 over the $_SESSION superglobal just in case we ever need to replace PHP's session handling in the future.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
 
 @see https://processwire.com/api/ref/session/ Session documentation
 

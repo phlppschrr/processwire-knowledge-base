@@ -6,8 +6,6 @@ ProcessWire Text Tools
 
 Specific text and markup tools for ProcessWire $sanitizer and elsewhere.
 
-ProcessWire 3.x, Copyright 2020 by Ryan Cramer
-https://processwire.com
 
 @since 3.0.101
 

@@ -4,44 +4,44 @@ Source: `wire/core/Wire.php`
 
 Shortcuts to ProcessWire API variables. Access without any arguments returns the API variable. Some support arguments as shortcuts to methods in the API variable.
 
-@method WireCache|string|array|PageArray|null cache($name = '', $expire = null, $func = null) Access the $cache API variable as a function.
+- cache($name = '', $expire = null, $func = null): WireCache|string|array|PageArray|null Access the $cache API variable as a function.
 
-@method Config|mixed config($key = '', $value = null) Access the $config API variable as a function.
+- config($key = '', $value = null): Config|mixed Access the $config API variable as a function.
 
-@method WireDatabasePDO database() Access the $database API variable as a function.
+- database(): WireDatabasePDO Access the $database API variable as a function.
 
-@method WireDateTime|string|int datetime($format = '', $value = '') Access the $datetime API variable as a function.
+- datetime($format = '', $value = ''): WireDateTime|string|int Access the $datetime API variable as a function.
 
-@method Field|Fields|null fields($name = '') Access the $fields API variable as a function.
+- fields($name = ''): Field|Fields|null Access the $fields API variable as a function.
 
-@method WireFileTools files() Access the $files API variable as a function.
+- files(): WireFileTools Access the $files API variable as a function.
 
-@method WireInput|WireInputData|WireInputDataCookie|array|string|int|null input($type = '', $key = '', $sanitizer = '') Access the $input API variable as a function.
+- input($type = '', $key = '', $sanitizer = ''): WireInput|WireInputData|WireInputDataCookie|array|string|int|null Access the $input API variable as a function.
 
-@method WireInputDataCookie|string|int|array|null inputCookie($key = '', $sanitizer = '') Access the $input->cookie() API variable as a function.
+- inputCookie($key = '', $sanitizer = ''): WireInputDataCookie|string|int|array|null Access the $input->cookie() API variable as a function.
 
-@method WireInputData|string|int|array|null inputGet($key = '', $sanitizer = '') Access the $input->get() API variable as a function.
+- inputGet($key = '', $sanitizer = ''): WireInputData|string|int|array|null Access the $input->get() API variable as a function.
 
-@method WireInputData|string|int|array|null inputPost($key = '', $sanitizer = '') Access the $input->post() API variable as a function.
+- inputPost($key = '', $sanitizer = ''): WireInputData|string|int|array|null Access the $input->post() API variable as a function.
 
-@method Languages|Language|NullPage|null languages($name = '') Access the $languages API variable as a function.
+- languages($name = ''): Languages|Language|NullPage|null Access the $languages API variable as a function.
 
-@method Modules|Module|ConfigurableModule|null modules($name = '') Access the $modules API variable as a function.
+- modules($name = ''): Modules|Module|ConfigurableModule|null Access the $modules API variable as a function.
 
-@method Page|Mixed page($key = '', $value = null) Access the $page API variable as a function.
+- page($key = '', $value = null): Page|Mixed Access the $page API variable as a function.
 
-@method Pages|PageArray|Page|NullPage pages($selector = '') Access the $pages API variable as a function.
+- pages($selector = ''): Pages|PageArray|Page|NullPage Access the $pages API variable as a function.
 
-@method Permissions|Permission|PageArray|null|NullPage permissions($selector = '') Access the $permissions API variable as a function.
+- permissions($selector = ''): Permissions|Permission|PageArray|null|NullPage Access the $permissions API variable as a function.
 
-@method Roles|Role|PageArray|null|NullPage roles($selector = '') Access the $roles API variable as a function.
+- roles($selector = ''): Roles|Role|PageArray|null|NullPage Access the $roles API variable as a function.
 
-@method Sanitizer|string|int|array|null|mixed sanitizer($name = '', $value = '') Access the $sanitizer API variable as a function.
+- sanitizer($name = '', $value = ''): Sanitizer|string|int|array|null|mixed Access the $sanitizer API variable as a function.
 
-@method Session|mixed session($key = '', $value = null) Access the $session API variable as a function.
+- session($key = '', $value = null): Session|mixed Access the $session API variable as a function.
 
-@method Templates|Template|null templates($name = '') Access the $templates API variable as a function.
+- templates($name = ''): Templates|Template|null Access the $templates API variable as a function.
 
-@method User|mixed user($key = '', $value = null) Access the $user API variable as a function.
+- user($key = '', $value = null): User|mixed Access the $user API variable as a function.
 
-@method Users|PageArray|User|mixed users($selector = '') Access the $users API variable as a function.
+- users($selector = ''): Users|PageArray|User|mixed Access the $users API variable as a function.

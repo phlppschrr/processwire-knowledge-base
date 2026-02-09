@@ -4,14 +4,14 @@ Source: `wire/core/Paths.php`
 
 These properties are only useful when accessed from `$config->paths` as they are not HTTP accessible as URLs.
 
-@property string $fieldTemplates Site field templates /site/templates/fields/
+- $fieldTemplates: string Site field templates /site/templates/fields/
 
-@property string $cache Site-specific cache: /site/assets/cache/
+- $cache: string Site-specific cache: /site/assets/cache/
 
-@property string $logs Site-specific logs: /site/assets/logs/
+- $logs: string Site-specific logs: /site/assets/logs/
 
-@property string $tmp Temporary files: /site/assets/tmp/
+- $tmp: string Temporary files: /site/assets/tmp/
 
-@property string $sessions Session files: /site/assets/sessions/
+- $sessions: string Session files: /site/assets/sessions/
 
-@property string $classes Site-specific class files: /site/classes/
+- $classes: string Site-specific class files: /site/classes/

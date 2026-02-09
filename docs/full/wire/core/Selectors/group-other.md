@@ -2,6 +2,6 @@
 
 Source: `wire/core/Selectors.php`
 
-@method Selector[] getIterator()
+- getIterator(): Selector[]
 
-@method null|string getCustomVariableValue($name, $property = '')
+- [getCustomVariableValue($name, $property = ''): null|string](method-___getcustomvariablevalue.md)

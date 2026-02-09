@@ -8,9 +8,6 @@ Pages Raw
 $pages->raw
 Methods for finding and loading raw page data
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [find()](method-find.md)

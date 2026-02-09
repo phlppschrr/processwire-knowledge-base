@@ -12,9 +12,6 @@ Notice items come in three different classes: NoticeMessage, NoticeWarning and N
 They are all identical in terms of API, with the only difference being that they render as
 informational messages, warnings, or errors.
 
-ProcessWire 3.x, Copyright 2025 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

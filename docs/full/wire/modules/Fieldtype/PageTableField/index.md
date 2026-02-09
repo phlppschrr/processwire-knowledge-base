@@ -7,27 +7,27 @@ Page Table Field (for FieldtypePageTable)
 Configured with FieldtypePageTable
 ==================================
 
-@property int|bool $autoTrash Deprecated, replaced by trashOnDelete
+- $autoTrash: int|bool Deprecated, replaced by trashOnDelete
 
-@property int $trashOnDelete
+- $trashOnDelete: int
 
-@property int $unpubOnTrash
+- $unpubOnTrash: int
 
-@property int $unpubOnUnpub
+- $unpubOnUnpub: int
 
-@property int|array $template_id
+- $template_id: int|array
 
-@property int $parent_id
+- $parent_id: int
 
-@property string $sortfields
+- $sortfields: string
 
 Configured with InputfieldPageTable
 ===================================
 
-@property string $columns
+- $columns: string
 
-@property string $nameFormat
+- $nameFormat: string
 
-@property int $noclose
+- $noclose: int
 
 @since 3.0.221

@@ -14,9 +14,6 @@ validation and improved help and error messaging when building/testing selectors
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [__construct()](method-__construct.md)
 Method: [getSelectorInfo()](method-getselectorinfo.md)

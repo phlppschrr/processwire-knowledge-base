@@ -20,9 +20,6 @@ iterate all of the properties/values present within it.
 
 May also be accessed as array.
 
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 

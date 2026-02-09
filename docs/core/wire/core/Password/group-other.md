@@ -2,10 +2,10 @@
 
 Source: `wire/core/Password.php`
 
-@method setPass($value) Protected internal use method
+- [setPass($value)](method-___setpass.md) Protected internal use method
 
-@property string $salt
+- [$salt: string](method-salt.md)
 
-@property string $hash
+- [$hash: string](method-hash.md)
 
-@property-write string $pass
+- $pass: string

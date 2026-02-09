@@ -17,8 +17,6 @@ InputData instances.
 
 Each WireInputData is not instantiated unless specifically asked for.
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
 
 @link http://processwire.com/api/ref/input/ Offical $input API variable documentation
 

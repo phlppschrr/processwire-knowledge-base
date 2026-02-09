@@ -2,10 +2,10 @@
 
 Source: `wire/core/Page.php`
 
-@property PagefilesManager $filesManager The object instance that manages files for this page.
+- [$filesManager: PagefilesManager](method-filesmanager.md) The object instance that manages files for this page.
 
-@property string $filesPath Get the disk path to store files for this page, creating it if it does not exist.
+- [$filesPath: string](method-filespath.md) Get the disk path to store files for this page, creating it if it does not exist.
 
-@property string $filesUrl Get the URL to store files for this page, creating it if it does not exist.
+- [$filesUrl: string](method-filesurl.md) Get the URL to store files for this page, creating it if it does not exist.
 
-@property bool $hasFiles Does this page have one or more files in its files path?
+- [$hasFiles: bool](method-hasfiles.md) Does this page have one or more files in its files path?

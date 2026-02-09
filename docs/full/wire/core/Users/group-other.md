@@ -2,22 +2,22 @@
 
 Source: `wire/core/Users.php`
 
-@method PageArray find($selector) Return the User(s) matching the the given selector query.
+- find($selector): PageArray Return the User(s) matching the the given selector query.
 
-@method User add($name) Add new User with the given name and return it.
+- add($name): User Add new User with the given name and return it.
 
-@method bool save($user) Save given User.
+- [save($user): bool](method-___save.md) Save given User.
 
-@method bool delete($user) Delete the given User.
+- delete($user): bool Delete the given User.
 
-@method array saveReady($user) Hook called just before a User is saved
+- [saveReady($user): array](method-___saveready.md) Hook called just before a User is saved
 
-@method void saved($user, array $changes) Hook called after a User has been saved
+- saved($user, array $changes): void Hook called after a User has been saved
 
-@method void added($user) Hook called just after a User is added
+- added($user): void Hook called just after a User is added
 
-@method void deleteReady($user) Hook called before a User is deleted
+- deleteReady($user): void Hook called before a User is deleted
 
-@method void deleted($user) Hook called after a User is deleted
+- deleted($user): void Hook called after a User is deleted
 
-@method User new($options = []) Create new User instance in memory (3.0.249+)
+- new($options = []): User Create new User instance in memory (3.0.249+)

@@ -7,35 +7,35 @@ Page Field (for FieldtypePage)
 Configured with FieldtypePage
 ==============================
 
-@property int $derefAsPage
+- $derefAsPage: int
 
-@property int|bool $allowUnpub
+- $allowUnpub: int|bool
 
 Configured with InputfieldPage
 ==============================
 
-@property int $template_id
+- $template_id: int
 
-@property array $template_ids
+- $template_ids: array
 
-@property int $parent_id
+- $parent_id: int
 
-@property string $inputfield Inputfield class used for input
+- $inputfield: string Inputfield class used for input
 
-@property string $labelFieldName Field name to use for label (note: this will be "." if $labelFieldFormat is in use).
+- $labelFieldName: string Field name to use for label (note: this will be "." if $labelFieldFormat is in use).
 
-@property string $labelFieldFormat Formatting string for $page->getMarkup() as alternative to $labelFieldName
+- $labelFieldFormat: string Formatting string for $page->getMarkup() as alternative to $labelFieldName
 
-@property string $findPagesCode
+- $findPagesCode: string
 
-@property string $findPagesSelector
+- $findPagesSelector: string
 
-@property string $findPagesSelect Same as findPageSelector, but configured interactively with InputfieldSelector.
+- $findPagesSelect: string Same as findPageSelector, but configured interactively with InputfieldSelector.
 
-@property int|bool $addable
+- $addable: int|bool
 
-@property-read string $inputfieldClass Public property alias of protected getInputfieldClass() method
+- $inputfieldClass: string Public property alias of protected getInputfieldClass() method
 
-@property array $inputfieldClasses
+- $inputfieldClasses: array
 
 @since 3.0.173

@@ -2,4 +2,4 @@
 
 Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
-@property-read $tableField
+- @property-read $tableField $tableField

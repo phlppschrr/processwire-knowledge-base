@@ -29,8 +29,6 @@ and [Selector Operators](https://processwire.com/docs/selectors/operators/).
 
 @link https://processwire.com/docs/selectors/ Official Selectors Documentation
 
-ProcessWire 3.x, Copyright 2026 by Ryan Cramer
-https://processwire.com
 
 @todo Move static helper methods to dedicated API var/class so this class can be more focused
 

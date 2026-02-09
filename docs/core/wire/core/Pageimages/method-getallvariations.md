@@ -6,12 +6,6 @@ Get an array of all image variations on this field indexed by original file name
 
 More information on any variation filename can be retrieved from `Pageimage::isVariation()`.
 
-## Example
-
-~~~~~
-$variations = $page->images->getAllVariations();
-print_r($variations);
-// Example output:
 // array(
 //   'foo.jpg' => array(
 //      'foo.100x100.jpg',
@@ -21,6 +15,17 @@ print_r($variations);
 //      'bar.300x300.jpg'
 //   )
 // );
+
+## Example
+
+~~~~~
+$variations = $page->images->getAllVariations();
+print_r($variations);
+// Example output:
+
+```php
+
+```
 ~~~~~
 
 ## Usage

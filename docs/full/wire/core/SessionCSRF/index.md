@@ -24,10 +24,6 @@ if($session->CSRF->hasValidToken()) {
 $session->CSRF->validate();
 ~~~~
 
-
-ProcessWire 3.x, Copyright 2022 by Ryan Cramer
-https://processwire.com
-
 Methods:
 Method: [getTokenName()](method-gettokenname.md)
 Method: [getTokenValue()](method-gettokenvalue.md)

@@ -53,6 +53,17 @@ Please also note the following about URL segments:
 - URL segments are already sanitized as page names.
 - Strongly recommended: throw a 404 when encountering URL segments you do not recognize.
 
+$sort = $input->urlSegment('sort=');
+if($sort === 'title') {
+  // sort by title
+} else if($sort === 'date') {
+  // sort by date
+} else if($sort === '-date') {
+  // reverse sort by date
+} else {
+  // no sort specified, use default
+}
+
 ## Example
 
 ~~~~~
@@ -131,16 +142,10 @@ if($sort === 'title') {
 // 9. Similar goal to above but with URL /path/to/page/sort/date/
 // that uses separate segment for sort value, which is a good
 // example of using the “next” segment feature:
-$sort = $input->urlSegment('sort=');
-if($sort === 'title') {
-  // sort by title
-} else if($sort === 'date') {
-  // sort by date
-} else if($sort === '-date') {
-  // reverse sort by date
-} else {
-  // no sort specified, use default
-}
+
+```php
+
+```
 ~~~~~
 
 ## Usage

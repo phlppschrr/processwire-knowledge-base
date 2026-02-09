@@ -6,10 +6,8 @@ ProcessWire Session Handler
 
 This is an abstract class for a session handler module to extend from.
 It provides the interface and some basic functions. For an example, see:
+It provides the interface and some basic functions. For an example, see:
 /wire/modules/Session/SessionHandlerDB/SessionHandlerDB.module
-
-ProcessWire 3.x, Copyright 2026 by Ryan Cramer
-https://processwire.com
 
 Methods:
 Method: [wired()](method-wired.md)

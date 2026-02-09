@@ -8,9 +8,6 @@ Concept by Antti Peisa
 Code by Ryan Cramer
 Sponsored by Avoine
 
-ProcessWire 3.x, Copyright 2023 by Ryan Cramer
-https://processwire.com
-
 Groups:
 Group: [other](group-other.md)
 
