@@ -2,7 +2,7 @@
 name: processwire-api-lookup
 version: 0.2.0
 description: A specialized tool for finding ProcessWire API documentation, core classes, methods, and hooks. Use this to explain how to use ProcessWire features.
-usage_tips: Prefer docs/core first to reduce context size. Read only the specific files needed.
+usage_tips: Prefer docs/api-core first to reduce context size. Read only the specific files needed.
 ---
 
 # ProcessWire API Lookup Logic
@@ -13,22 +13,22 @@ Use this skill to answer technical questions about ProcessWire classes, methods,
 Use this skill when the user asks about ProcessWire Core API, classes, methods, hooks, selectors, or core functionality (for example: how to find pages, save pages, use hooks, or build selectors).
 
 ## Entry Point
-- `docs/core/index.md` (core-only, recommended)
-- `docs/full/index.md` (full)
-- `docs/guides/index.md` (official guides + cheatsheets)
+- `docs/api-core/index.md` (core-only, recommended)
+- `docs/api-full/index.md` (full)
+- `docs/documentation/index.md` (official guides + cheatsheets)
 - `docs/_tasks.json` (task → relevant classes/methods)
 
 The index is organized into API Variables, Core Classes, and Functions. Categories are configured in `categories.json` (official API structure). If an entry is not listed there, heuristic grouping is used and it falls back to `Additional`/`Other`.
 
 ## Search Workflow
 1. Identify intent. Is it a specific class or a conceptual question?
-2. Consult index. Start with `docs/core/index.md`.
+2. Consult index. Start with `docs/api-core/index.md`.
 3. Task matching. If the user asks “How do I…”, check `docs/_tasks.json` first.
 4. Drill down. Open the specific class or method file only after locating it.
-5. Guides. If the question is conceptual, consult `docs/guides/` after core API.
+5. Guides. If the question is conceptual, consult `docs/documentation/` after core API.
 
 ## Retrieval Tips
-- Prefer `docs/core` for smaller context; fall back to `docs/full` only if needed.
+- Prefer `docs/api-core` for smaller context; fall back to `docs/api-full` only if needed.
 - Start from `index.md`, then drill down via group files (`group-*.md`) before opening method files.
 - Use `_search.json` for compact lookups before opening full files.
 
@@ -48,6 +48,6 @@ In `_manifest.json`, hookable methods include `hookable`, `name_public`, and `na
 
 ## Maintenance (For Developers Only)
 Only run these when explicitly asked to update documentation.
-- `python3 src/update_docs.py` to rebuild `docs/core`, `docs/full`, `docs/guides`, and `docs/_tasks.json`.
+- `python3 src/update_docs.py` to rebuild `docs/api-core`, `docs/api-full`, `docs/documentation`, `docs/blog-posts`, and `docs/_tasks.json`.
 - `python3 src/cache_docs.py` to refresh the local HTML cache for guides.
-- `python3 src/build_guides.py` to rebuild `docs/guides/` from cached HTML.
+- `python3 src/build_guides.py` to rebuild `docs/documentation/` and `docs/blog-posts/` from cached HTML.

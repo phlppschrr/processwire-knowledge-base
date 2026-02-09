@@ -117,8 +117,8 @@ def normalize_key(value: str) -> str:
 
 def build_api_link_index(docs_root: Path) -> ApiLinkIndex | None:
     index_path = None
-    full_index = docs_root / "full" / "_search.json"
-    core_index = docs_root / "core" / "_search.json"
+    full_index = docs_root / "api-full" / "_search.json"
+    core_index = docs_root / "api-core" / "_search.json"
     if full_index.exists():
         index_path = full_index
     elif core_index.exists():
@@ -185,10 +185,10 @@ def resolve_api_ref(path: str, index: ApiLinkIndex | None) -> Path | None:
         return None
     remainder = path.split("/api/ref/", 1)[1].strip("/")
     if not remainder:
-        target = index.docs_root / "full" / "index.md"
+        target = index.docs_root / "api-full" / "index.md"
         if target.exists():
             return target
-        target = index.docs_root / "core" / "index.md"
+        target = index.docs_root / "api-core" / "index.md"
         return target if target.exists() else None
 
     parts = [p for p in remainder.split("/") if p]
@@ -773,8 +773,27 @@ def url_to_out_path(url: str, date_prefix: str | None = None) -> Path:
     path = parsed.path.strip("/")
     if not path:
         path = "docs"
-    if path.endswith("/"):
-        path = path[:-1]
+
+    if path == "docs" or path.startswith("docs/"):
+        remainder = path[5:] if path.startswith("docs/") else ""
+        if remainder:
+            rel_path = f"documentation/{remainder}"
+        else:
+            rel_path = "documentation/index"
+        return Path(f"{rel_path}.md")
+
+    if path.startswith("blog/posts/") or path == "blog/posts":
+        remainder = path[len("blog/posts/") :] if path.startswith("blog/posts/") else ""
+        if remainder:
+            parts = remainder.split("/")
+            if date_prefix and parts:
+                parts[-1] = f"{date_prefix}-{parts[-1]}"
+            remainder = "/".join(parts)
+            rel_path = f"blog-posts/{remainder}"
+        else:
+            rel_path = "blog-posts/index"
+        return Path(f"{rel_path}.md")
+
     if date_prefix and is_blog_post_url(url):
         parts = path.split("/")
         if parts:
@@ -1079,7 +1098,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Build guide summaries from cached HTML")
     parser.add_argument("--cache", default="sources/docs-html", help="Cache root")
     parser.add_argument("--urls", default="sources/urls.txt", help="URL list")
-    parser.add_argument("--out", default="docs/guides", help="Output directory")
+    parser.add_argument("--out", default="docs", help="Output directory")
     parser.add_argument(
         "--fetch",
         action="store_true",
@@ -1102,7 +1121,7 @@ def main() -> int:
     cache_root = Path(args.cache)
     urls_path = Path(args.urls)
     out_dir = Path(args.out)
-    link_index = build_api_link_index(out_dir.parent)
+    link_index = build_api_link_index(out_dir)
 
     if args.fetch or not cache_root.exists() or not (cache_root / "_index.json").exists():
         try:
@@ -1157,7 +1176,7 @@ def main() -> int:
             build_selectors_cheatsheet(
                 selectors_doc,
                 operators_doc,
-                out_dir / "cheatsheets/selectors.md",
+                out_dir / "documentation/cheatsheets/selectors.md",
                 link_index=link_index,
             )
         )
@@ -1173,19 +1192,19 @@ def main() -> int:
                 templates_doc,
                 fields_doc,
                 output_doc,
-                out_dir / "cheatsheets/templates-output.md",
+                out_dir / "documentation/cheatsheets/templates-output.md",
                 link_index=link_index,
             )
         )
 
     variables_doc = docs.get("https://processwire.com/docs/start/variables/")
     if variables_doc:
-        core_index = Path("docs/core/index.md")
+        core_index = out_dir / "api-core" / "index.md"
         pages.append(
             build_api_variables_map(
                 variables_doc,
                 core_index,
-                out_dir / "cheatsheets/api-variables.md",
+                out_dir / "documentation/cheatsheets/api-variables.md",
                 link_index=link_index,
             )
         )
@@ -1207,7 +1226,7 @@ def main() -> int:
             build_checklist(
                 "Security Checklist",
                 security_docs,
-                out_dir / "cheatsheets/security.md",
+                out_dir / "documentation/cheatsheets/security.md",
                 "Cheatsheets",
                 link_index=link_index,
             )
@@ -1226,16 +1245,18 @@ def main() -> int:
             build_checklist(
                 "Multi-language Checklist",
                 language_docs,
-                out_dir / "cheatsheets/multi-language.md",
+                out_dir / "documentation/cheatsheets/multi-language.md",
                 "Cheatsheets",
                 link_index=link_index,
             )
         )
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    build_index(pages, out_dir / "index.md")
-    build_manifest(pages, out_dir / "_manifest.json", out_dir)
-    build_search_index(pages, out_dir / "_search.json", out_dir)
+    guides_root = out_dir / "documentation"
+    guides_root.mkdir(parents=True, exist_ok=True)
+    build_index(pages, guides_root / "index.md")
+    build_manifest(pages, guides_root / "_manifest.json", out_dir)
+    build_search_index(pages, guides_root / "_search.json", out_dir)
 
     return 0
 

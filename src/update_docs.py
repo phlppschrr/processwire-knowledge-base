@@ -90,7 +90,7 @@ def main() -> int:
         build_docs
         + [
             "--out",
-            str(docs_root / "core"),
+            str(docs_root / "api-core"),
             "--profile",
             "core",
         ]
@@ -100,7 +100,7 @@ def main() -> int:
         build_docs
         + [
             "--out",
-            str(docs_root / "full"),
+            str(docs_root / "api-full"),
             "--profile",
             "full",
         ]
@@ -115,7 +115,7 @@ def main() -> int:
             "--urls",
             args.urls,
             "--out",
-            str(docs_root / "guides"),
+            str(docs_root),
         ]
         if args.fetch:
             guides_cmd.append("--fetch")
@@ -126,9 +126,9 @@ def main() -> int:
             sys.executable,
             str(ROOT_DIR / "src/build_tasks.py"),
             "--core",
-            str(docs_root / "core"),
+            str(docs_root / "api-core"),
             "--full",
-            str(docs_root / "full"),
+            str(docs_root / "api-full"),
             "--tasks",
             args.tasks,
             "--out",

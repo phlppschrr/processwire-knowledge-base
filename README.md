@@ -3,9 +3,10 @@
 This repository builds an LLM-friendly documentation skill from ProcessWire core PHPDoc. It extracts text verbatim, treats `#pw-*` directives as metadata, and excludes `#pw-internal` and `@internal` items.
 
 ## Outputs
-- `docs/core/` — Core-only build (recommended for LLMs)
-- `docs/full/` — Full build (includes modules)
-- `docs/guides/` — Extracted official guides (summaries + cheatsheets)
+- `docs/api-core/` — Core-only build (recommended for LLMs)
+- `docs/api-full/` — Full build (includes modules)
+- `docs/documentation/` — Extracted official docs (summaries + cheatsheets)
+- `docs/blog-posts/` — Extracted ProcessWire blog posts
 - `docs/_hookable.json` — Global hookable index (core + full)
 - `docs/_tasks.json` — Tasks map (task → relevant classes/methods)
 
@@ -34,8 +35,8 @@ python3 src/update_docs.py
 ```
 
 This will:
-- Build `docs/core` and `docs/full` from `sources/processwire`
-- Build `docs/guides` from `sources/docs-html`
+- Build `docs/api-core` and `docs/api-full` from `sources/processwire`
+- Build `docs/documentation` and `docs/blog-posts` from `sources/docs-html`
 - Build `docs/_tasks.json`
 
 Downloads happen only if sources are missing. Use `python3 src/update_docs.py --fetch` to refresh.

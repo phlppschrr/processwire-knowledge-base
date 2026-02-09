@@ -197,8 +197,8 @@ def build_global_hookable(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build tasks map and global hookable index")
-    parser.add_argument("--core", default="docs/core", help="Core docs directory")
-    parser.add_argument("--full", default="docs/full", help="Full docs directory")
+    parser.add_argument("--core", default="docs/api-core", help="Core docs directory")
+    parser.add_argument("--full", default="docs/api-full", help="Full docs directory")
     parser.add_argument("--tasks", default="tasks.json", help="Tasks config")
     parser.add_argument("--out", default="docs", help="Output directory")
     args = parser.parse_args()

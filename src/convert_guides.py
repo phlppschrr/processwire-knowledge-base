@@ -245,6 +245,13 @@ def url_to_out_path(url, all_paths):
     
     # Construct relative path for output
     rel_path = parsed.path.strip("/") or "docs"
+
+    if rel_path == "docs" or rel_path.startswith("docs/"):
+        remainder = rel_path[5:] if rel_path.startswith("docs/") else ""
+        rel_path = f"documentation/{remainder}" if remainder else "documentation"
+    elif rel_path == "blog/posts" or rel_path.startswith("blog/posts/"):
+        remainder = rel_path[len("blog/posts/") :] if rel_path.startswith("blog/posts/") else ""
+        rel_path = f"blog-posts/{remainder}" if remainder else "blog-posts"
     
     if is_parent:
         return Path(f"{rel_path}/index.md")
@@ -327,5 +334,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--cache", default="sources/docs-html")
     parser.add_argument("--urls", default="sources/urls.txt")
-    parser.add_argument("--out", default="docs/guides")
+    parser.add_argument("--out", default="docs")
     convert_guides(**vars(parser.parse_args()))
