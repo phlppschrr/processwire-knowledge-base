@@ -27,7 +27,7 @@ Custom “Field” class for Comments fields.
 ## Methods
 - [`find($selectorString, array $options = array()): CommentArray`](method-find.md) Find comments matching given selector
 - [`count(string|null $selectorString): int`](method-count.md) Return total quantity of comments matching the selector
-- [`getNumComments(Page $page, array $options = array()): int`](method-getnumcomments.md) Get number of comments for Page, optionally limited by specific $options
+- [`getNumComments(Page $page, array $options = array()): int`](method-getnumcomments.md) Get number of comments for Page, optionally limited by specific `$options`
 - [`getCommentByCode(Page|int|string $page, string $code): Comment|null`](method-getcommentbycode.md) Given a comment code or subcode, return the associated comment ID or 0 if it doesn't exist
 - [`getCommentByID(Page|int|string $page, int $id): Comment|null`](method-getcommentbyid.md) Get a comment by ID or NULL if not found
 - [`getCommentsByID(array $ids, Page|null $page = null): CommentArray`](method-getcommentsbyid.md) Get multiple comments by ID

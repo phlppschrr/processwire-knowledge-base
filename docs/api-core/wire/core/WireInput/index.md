@@ -44,7 +44,7 @@ continue for as many numbers as the system supports, so you may go beyond 3 wher
 - [`pageNum(): int`](method-pagenum.md) Return the current pagination/page number (starting from 1)
 - [`pageNumStr(int $pageNum = 0): string`](method-pagenumstr.md) Return the string that represents the page number URL segment
 - [`setPageNum(int $num)`](method-setpagenum.md) Set the current page number.
-- [`__get(string $key): string|int|null`](method-__get.md) Retrieve the get, post, cookie or whitelist vars using a direct reference, i.e. $input->cookie
+- [`__get(string $key): string|int|null`](method-__get.md) Retrieve the get, post, cookie or whitelist vars using a direct reference, i.e. `$input->cookie`
 - [`url(array|bool $options = array()): string`](method-url.md) Get the URL that initiated the current request, including URL segments and page numbers
 - [`httpUrl(array|bool $options = array()): string`](method-httpurl.md) Get the http URL that initiated the current request, including scheme, URL segments and page numbers
 - [`httpsUrl(array|bool $options = array()): string`](method-httpsurl.md) Same as httpUrl() method but always uses https scheme, rather than current request scheme
@@ -56,6 +56,6 @@ continue for as many numbers as the system supports, so you may go beyond 3 wher
 - [`requestMethod(string $method = ''): string|bool`](method-requestmethod.md) Return the current request method (i.e. GET, POST, etc.) or blank if not known
 - [`is(string $method): bool`](method-is.md) Is the current request of the specified type?
 - [`getValidInputValue(WireInputData $input, string $key, array|string|callable|mixed|null $valid, string|array|int|mixed $fallback): array|int|mixed|null|WireInputData|string`](method-getvalidinputvalue.md) Provides the implementation for get/post/cookie method validation and fallback features
-- [`filterValue(string|array $value, array $valid, bool $getArray): array|string|null`](method-filtervalue.md) Filter value against given $valid whitelist
+- [`filterValue(string|array $value, array $valid, bool $getArray): array|string|null`](method-filtervalue.md) Filter value against given `$valid` whitelist
 - [`sanitizeValue(string $method, string|array|null $value, bool $getArray): array|int|float|string|null`](method-sanitizevalue.md) Sanitize the given value with the given method(s)
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method

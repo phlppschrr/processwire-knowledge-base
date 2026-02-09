@@ -93,7 +93,7 @@ if($s->matches($page)) {
 - [`getCompareType(): int`](method-getcomparetype.md) What type of comparson does Selector perform?
 - [`getLabel(): string`](method-getlabel.md) Get short label that describes this Selector
 - [`getDescription(): string`](method-getdescription.md) Get longer description that describes this Selector
-- [`match(mixed $value1, string $value2): bool`](method-match.md) Does $value1 match $value2?
+- [`match(mixed $value1, string $value2): bool`](method-match.md) Does `$value1` match `$value2`?
 - [`matches(string|int|Wire|array $value): bool`](method-matches.md) Does this Selector match the given value?
 - [`evaluate(bool $matches): bool`](method-evaluate.md) Provides the opportunity to override or NOT the condition
 - [`sanitizeFieldName(string|array $fieldName): string|array`](method-sanitizefieldname.md) Sanitize field name

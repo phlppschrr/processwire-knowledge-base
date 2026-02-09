@@ -23,7 +23,7 @@ Based upon the jQuery traversal functions.
 - [`child(Page $page, string|array $selector = '', array $options = array()): Page|NullPage`](method-child.md) Return the page's first single child that matches the given selector.
 - [`parents(Page $page, string|array|bool $selector = ''): PageArray`](method-parents.md) Return this page's parent pages, or the parent pages matching the given selector.
 - [`numParents(Page $page, string $selector = ''): int`](method-numparents.md) Return number of parents (depth relative to homepage) that this page has, optionally filtered by a selector
-- [`parentsUntil(Page $page, string|Page|array $selector = '', string|array $filter = ''): PageArray`](method-parentsuntil.md) Return all parent from current till the one matched by $selector
+- [`parentsUntil(Page $page, string|Page|array $selector = '', string|array $filter = ''): PageArray`](method-parentsuntil.md) Return all parent from current till the one matched by `$selector`
 - [`rootParent(Page $page): Page`](method-rootparent.md) Get the lowest-level, non-homepage parent of this page
 - [`siblings(Page $page, string $selector = ''): PageArray`](method-siblings.md) Return this Page's sibling pages, optionally filtered by a selector.
 - [`_getIncludeMode(string|array|Selectors $selector): string`](method-_getincludemode.md) Get include mode specified in selector or blank if none
@@ -36,7 +36,7 @@ Based upon the jQuery traversal functions.
 - [`prevAll(Page $page, string|array|Selectors $selector = '', array $options = array()): PageArray`](method-prevall.md) Return all sibling pages prior to this one, optionally matching a selector
 - [`nextUntil(Page $page, string|Page|array|Selectors $selector = '', string|array $filter = '', array $options = array()): PageArray`](method-nextuntil.md) Return all sibling pages after this one until matching the one specified
 - [`prevUntil(Page $page, string|Page|array $selector = '', string|array $filter = '', array $options = array()): PageArray`](method-prevuntil.md) Return all sibling pages prior to this one until matching the one specified
-- [`urlOptions(Page $page, array|int|string|bool|Language $options = array()): string`](method-urloptions.md) Returns the URL to the page with $options
+- [`urlOptions(Page $page, array|int|string|bool|Language $options = array()): string`](method-urloptions.md) Returns the URL to the page with `$options`
 - [`urls(Page $page, array $options = array()): array`](method-urls.md) Return all URLs that this page can be accessed from (excluding URL segments and pagination)
 - [`editUrl(Page $page, array|bool|string $options = array()): string`](method-editurl.md) Return the URL necessary to edit page
 - [`httpUrl(Page $page, array $options = array()): string`](method-httpurl.md) Returns the URL to the page, including scheme and hostname

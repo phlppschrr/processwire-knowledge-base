@@ -32,7 +32,7 @@ and finding items of descending class-defined types.
 - [`getLoadQuery(Selectors|string|null $selectors = null): DatabaseQuerySelect`](method-getloadquery.md) Get the DatabaseQuerySelect to perform the load operation of items
 - [`load(WireArray $items, Selectors|string|null $selectors = null): WireArray`](method-___load.md) (hookable) Load items from the database table and return them in the same type class that getAll() returns
 - [`loadRowsReady(array &$rows)`](method-loadrowsready.md) Called after rows loaded from DB but before populated to this instance
-- [`initItem(array &$row, ?WireArray $items = null): Saveable|WireData|Wire`](method-inititem.md) Create a new Saveable item from a raw array ($row) and add it to $items
+- [`initItem(array &$row, ?WireArray $items = null): Saveable|WireData|Wire`](method-inititem.md) Create a new Saveable item from a raw array (`$row`) and add it to `$items`
 - [`saveItemKey(string $key): bool`](method-saveitemkey.md) Should the given item key/field be saved in the database?
 - [`save(Saveable $item): bool`](method-___save.md) (hookable) Save the provided item to database
 - [`delete(Saveable $item): bool`](method-___delete.md) (hookable) Delete the provided item from the database
@@ -53,7 +53,7 @@ and finding items of descending class-defined types.
 - [`deleted(Saveable $item)`](method-___deleted.md) (hookable) Hook that runs right after an item has been deleted.
 - [`cloned(Saveable $item, Saveable $copy)`](method-___cloned.md) (hookable) Hook that runs right after an item has been cloned.
 - [`renamed(Saveable $item, string $oldName, string $newName)`](method-___renamed.md) (hookable) Hook that runs right after an item has been renamed.
-- [`__invoke($key): Wire|null`](method-__invoke.md) Enables use of $apivar('name') or wire()->apivar('name')
+- [`__invoke($key): Wire|null`](method-__invoke.md) Enables use of `$apivar`('name') or `wire()`->`apivar('name')`
 - [`log($str, ?Saveable $item = null): WireLog`](method-log.md) Save to activity log, if enabled in config
 - [`error(string $text, int|bool $flags = 0): Wire|WireSaveableItems`](method-error.md) Record an error
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method

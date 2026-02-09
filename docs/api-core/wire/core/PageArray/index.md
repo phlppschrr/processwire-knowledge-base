@@ -52,7 +52,7 @@ $a = PageArray([ $page1, $page2, $page3 ]); // create + add pages
 - [`getPageByName(string $name): NullPage|Page`](method-getpagebyname.md) Get Page from this PageArray having given name, or return NullPage if not present
 - [`getPageByID(int $id): NullPage|Page`](method-getpagebyid.md) Get Page from this PageArray having given ID, or return NullPage if not present
 - [`filterDataSelectors(Selectors $selectors)`](method-filterdataselectors.md) Prepare selectors for filtering
-- [`getItemPropertyValue(Wire $item, string $property): mixed`](method-getitempropertyvalue.md) Get the value of $property from $item
+- [`getItemPropertyValue(Wire $item, string $property): mixed`](method-getitempropertyvalue.md) Get the value of `$property` from `$item`
 - [`__toString()`](method-__tostring.md) PageArrays always return a string of the Page IDs separated by pipe "|" characters
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 - [`trackAdd(Wire|mixed $item, int|string $key)`](method-trackadd.md) Track an item added

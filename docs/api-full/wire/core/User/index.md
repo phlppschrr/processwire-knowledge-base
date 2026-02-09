@@ -46,7 +46,7 @@ to be the non-hashed/non-encrypted version. ProcessWire will hash it automatical
 - [`getPermissions(?Page $page = null): PageArray`](method-getpermissions.md) Get this user’s permissions, optionally within the context of a Page.
 - [`isSuperuser(): bool`](method-issuperuser.md) Does this user have the superuser role?
 - [`isGuest(): bool`](method-isguest.md) Is this the non-logged in guest user?
-- [`isLoggedin(): bool`](method-isloggedin.md) Is the current $user logged in and the same as this user?
+- [`isLoggedin(): bool`](method-isloggedin.md) Is the current `$user` logged in and the same as this user?
 - [`setLanguage(Language|string|int $language): self`](method-setlanguage.md) Set language for user (quietly)
 - [`get(string $key): null|mixed`](method-get.md) Get value
 - [`hasTfa(bool $getInstance = false): bool|string|Tfa`](method-hastfa.md) Does user have two-factor authentication (Tfa) enabled? (and what type?)

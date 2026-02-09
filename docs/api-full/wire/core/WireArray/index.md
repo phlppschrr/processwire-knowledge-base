@@ -58,7 +58,7 @@ set elements using array syntax, i.e. `$value = $items[$key];` to get an item or
 - [`get(int|string|array $key): WireData|Page|mixed|array|null`](method-get.md) Returns the value of the item at the given index, or null if not set.
 - [`__get(int|string $name): Wire|WireData|Page|mixed|bool`](method-__get.md) Enables derefencing of WireArray elements in object notation.
 - [`getProperty(string $property): Wire|mixed`](method-getproperty.md) Get a predefined property of the array, or extra data that has been set.
-- [`getItemThatMatches(string $key, string|int|object $value): Wire|null`](method-getitemthatmatches.md) Return the first item in this WireArray having a property named $key with $value, or NULL if not found.
+- [`getItemThatMatches(string $key, string|int|object $value): Wire|null`](method-getitemthatmatches.md) Return the first item in this WireArray having a property named `$key` with `$value`, or NULL if not found.
 - [`has(int|string|Wire $key): bool`](method-has.md) Does this WireArray have the given item, index, or match the given selector?
 - [`getArray(): array`](method-getarray.md) Get a PHP array of all the items in this WireArray with original keys maintained
 - [`getAll(): $this`](method-getall.md) Returns all items in the WireArray (for syntax convenience)
@@ -86,7 +86,7 @@ set elements using array syntax, i.e. `$value = $items[$key];` to get an item or
 - [`_sort(string|array $properties, int $numNeeded = null): $this`](method-_sort.md) Sort this WireArray by the given properties (internal use)
 - [`sortFlags(bool $sortFlags = false): int`](method-sortflags.md) Get or set sort flags that affect behavior of any sorting functions
 - [`stableSort(&$data, array $properties, int $numNeeded = null): array`](method-stablesort.md) Sort given array by first given property.
-- [`getItemPropertyValue(Wire $item, string $property): mixed`](method-getitempropertyvalue.md) Get the value of $property from $item
+- [`getItemPropertyValue(Wire $item, string $property): mixed`](method-getitempropertyvalue.md) Get the value of `$property` from `$item`
 - [`filterData(string|array|Selectors $selectors, bool|int $not = false): $this`](method-filterdata.md) Filter out Wires that don't match the selector.
 - [`filterDataSelectors(Selectors $selectors)`](method-filterdataselectors.md) Prepare selectors for filtering
 - [`filter(string|array|Selectors $selector): $this`](method-filter.md) Filter this WireArray to only include items that match the given selector (destructive)
@@ -110,10 +110,10 @@ set elements using array syntax, i.e. `$value = $items[$key];` to get an item or
 - [`and(Wire|WireArray $item): WireArray`](method-___and.md) (hookable) Return a new copy of this WireArray with the given item(s) appended
 - [`data(string|null|array|bool $key = null, mixed|null|bool $value = null): WireArray|mixed|array|null`](method-data.md) Store or retrieve an extra data value in this WireArray
 - [`removeData(string $key): $this`](method-removedata.md) Remove a property/value previously set with the WireArray::data() method.
-- [`__invoke(string $key): mixed`](method-__invoke.md) Enables use of $var('key')
+- [`__invoke(string $key): mixed`](method-__invoke.md) Enables use of `$var`('key')
 - [`callUnknown(string $method, array $arguments): null|mixed`](method-___callunknown.md) (hookable) Handler for when an unknown/unhooked method call is executed
 - [`each(callable|string|array|null $func = null): array|null|string|WireArray`](method-each.md) Perform an action upon each item in the WireArray
-- [`slices(int $qty): array`](method-slices.md) Divide this WireArray into $qty slices and return array of them (each being another WireArray)
+- [`slices(int $qty): array`](method-slices.md) Divide this WireArray into `$qty` slices and return array of them (each being another WireArray)
 - [`setDuplicateChecking(bool $value)`](method-setduplicatechecking.md) Set the current duplicate checking state
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 - [`__callStatic(string $name, array $arguments): WireArray`](method-__callstatic.md) Static method caller, primarily for support of WireArray::new() method

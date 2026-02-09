@@ -53,25 +53,25 @@ bool `$config->sessionCookieSecure` Use secure cookies or session? (default=true
 - [`isValidSession(int $userID): bool`](method-___isvalidsession.md) (hookable) Checks if the session is valid based on a challenge cookie and fingerprint
 - [`isValidFingerprint(): bool`](method-isvalidfingerprint.md) Returns whether or not the current session fingerprint is valid
 - [`get(string|object $key, string $_key = null): mixed`](method-get.md) Get a session variable
-- [`getVal(string $key, mixed $val = null): mixed`](method-getval.md) Get a session variable or return $val argument if session value not present
+- [`getVal(string $key, mixed $val = null): mixed`](method-getval.md) Get a session variable or return `$val` argument if session value not present
 - [`getAll(object|string $ns = null): array`](method-getall.md) Get all session variables in an associative array
 - [`getAllFor(string|Wire $ns): array`](method-getallfor.md) Get all session variables for given namespace and return associative array
 - [`set(string|object $key, string|mixed $value, mixed $_value = null): $this`](method-set.md) Set a session variable
 - [`getFor(string|object $ns, string $key): mixed`](method-getfor.md) Get a session variable within a given namespace
-- [`getValFor(string|object $ns, string $key, mixed $val = null): mixed`](method-getvalfor.md) Get a session variable or return $val argument if session value not present
+- [`getValFor(string|object $ns, string $key, mixed $val = null): mixed`](method-getvalfor.md) Get a session variable or return `$val` argument if session value not present
 - [`setFor(string|object $ns, string $key, mixed $value): $this`](method-setfor.md) Set a session variable within a given namespace
 - [`remove(string|object $key, string|bool|null $_key = null): $this`](method-remove.md) Unset a session variable
 - [`removeFor(string|object $ns, string $key): $this`](method-removefor.md) Unset a session variable within a namespace
 - [`removeAllFor(string|object $ns): $this`](method-removeallfor.md) Remove all session variables in given namespace
 - [`getNamespace(object|string $ns): string`](method-getnamespace.md) Given a namespace object or string, return the namespace string
-- [`__get(string $name): SessionCSRF|mixed|null`](method-__get.md) Provide non-namespaced $session->variable get access
-- [`__set(string $key, mixed $value): $this`](method-__set.md) Provide non-namespaced $session->variable = variable set access
+- [`__get(string $name): SessionCSRF|mixed|null`](method-__get.md) Provide non-namespaced `$session->variable` get access
+- [`__set(string $key, mixed $value): $this`](method-__set.md) Provide non-namespaced `$session->variable` = variable set access
 - [`getIP(bool $int = false, bool|int $useClient = false): string|int`](method-getip.md) Get the IP address of the current user
 - [`login(string|User $name, string $pass, bool $force = false): User|null`](method-___login.md) (hookable) Login a user with the given name and password
 - [`forceLogin(string|User $user): User|null`](method-forcelogin.md) Login a user without requiring a password
 - [`loginSuccess(User $user)`](method-___loginsuccess.md) (hookable) Login success method for hooks
 - [`loginFailure(string $name, string $reason)`](method-___loginfailure.md) (hookable) Login failure method for hooks
-- [`allowLogin(string $name, User|null $user = null): bool`](method-___allowlogin.md) (hookable) Allow the user $name to login? Provided for use by hooks.
+- [`allowLogin(string $name, User|null $user = null): bool`](method-___allowlogin.md) (hookable) Allow the user `$name` to login? Provided for use by hooks.
 - [`allowLoginAttempt(string $name): bool`](method-___allowloginattempt.md) (hookable) Allow login attempt for given name at all?
 - [`authenticate(User $user, string $pass): bool`](method-___authenticate.md) (hookable) Return true or false whether the user authenticated with the supplied password
 - [`logout(bool $startNew = true): $this`](method-___logout.md) (hookable) Logout the current user, and clear all session variables

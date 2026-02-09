@@ -26,6 +26,6 @@ Provides management of all Permission pages independent of users, for access con
 - [`delete(Page $page, bool $recursive = false): bool`](method-___delete.md) (hookable) Permanently delete a Permission
 - [`add(string $name): Permission|NullPage`](method-___add.md) (hookable) Add a new Permission with the given name and return it
 - [`getReducerPermissions(): array`](method-getreducerpermissions.md) Get permission names that can reduce existing access, when installed
-- [`getIterator(): array|PageArray|\Traversable`](method-getiterator.md) Returns all installed Permission pages and enables foreach() iteration of $permissions
+- [`getIterator(): array|PageArray|\Traversable`](method-getiterator.md) Returns all installed Permission pages and enables `foreach()` iteration of `$permissions`
 - [`saved(Page $page, array $changes = array(), array $values = array())`](method-___saved.md) (hookable) Hook called when a permission is saved
 - [`deleted(Page $page)`](method-___deleted.md) (hookable) Hook called when a permission is deleted

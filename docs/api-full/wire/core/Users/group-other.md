@@ -2,7 +2,7 @@
 
 Source: `wire/core/Users.php`
 
-- [`find($selector): PageArray`](method-find.md) Return the User(s) matching the the given selector query.
+- [`find($selector): PageArray`](method-find.md) Return the `User(s)` matching the the given selector query.
 - [`add($name): User`](method-add.md) Add new User with the given name and return it.
 - [`save($user): bool`](method-___save.md) Save given User.
 - [`delete($user): bool`](method-delete.md) Delete the given User.

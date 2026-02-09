@@ -92,10 +92,10 @@ Note: you can use the `$page->urls()` method to get URLs added by PagePathHistor
 - [`localPath($language = null): string`](method-localpath.md) Return the page path in the current user's language, or specify `$language` argument (Language object, name, or ID).
 - [`localUrl($language = null): string`](method-localurl.md) Return the page URL in the current user's language, or specify `$language` argument (Language object, name, or ID).
 - [`localHttpUrl($language = null): string`](method-localhttpurl.md) Return the page URL (including scheme and hostname) in the current user's language, or specify `$language` argument (Language object, name, or ID).
-- [`setLanguageStatus($language, $status = null): Page`](method-setlanguagestatus.md) Set active status for language(s), can be called as `$page->setLanguageStatus('es', true);` or `$page->setLanguageStatus([ 'es' => true, 'br' => false ]);` to set multiple. @since 3.0.236
-- [`getLanguageStatus($language = []): array|bool`](method-getlanguagestatus.md) Get active status for language(s). If given a `$language` (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236
+- [`setLanguageStatus($language, $status = null): Page`](method-setlanguagestatus.md) Set active status for `language(s)`, can be called as `$page->setLanguageStatus('es', true);` or `$page->setLanguageStatus([ 'es' => true, 'br' => false ]);` to set multiple. @since 3.0.236
+- [`getLanguageStatus($language = []): array|bool`](method-getlanguagestatus.md) Get active status for `language(s)`. If given a `$language` (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236
 - [`setLanguageName($language, $name = null): Page`](method-setlanguagename.md) Set page name for language with `$page->setLanguageName('es', 'hola');` or set multiple with `$page->setLanguageName([ 'default' => 'hello', 'es' => 'hola' ]);` @since 3.0.236
-- [`getLanguageName($language = []): array|string`](method-getlanguagename.md) Get page name for language(s). If given a Language object, it returns a string. If given array of language names, or argument omitted, it returns an array like `[ 'default' => 'hello', 'es' => 'hola' ];`. @since 3.0.236
+- [`getLanguageName($language = []): array|string`](method-getlanguagename.md) Get page name for `language(s)`. If given a Language object, it returns a string. If given array of language names, or argument omitted, it returns an array like `[ 'default' => 'hello', 'es' => 'hola' ];`. @since 3.0.236
 
 ## Methods Added By Pagefrontedit.Module (Not Always Installed By Default)
 
@@ -152,14 +152,14 @@ Note: you can use the `$page->urls()` method to get URLs added by PagePathHistor
 - [`getMultiple(array|string $keys, bool $assoc = false): array`](method-getmultiple.md) Get multiple Page property/field values in an array
 - [`getField(string|int|Field $field): Field|null`](method-getfield.md) Get a Field object in context or NULL if not valid for this page
 - [`getFields(): FieldsArray`](method-getfields.md) Returns a FieldsArray of all Field objects in the context of this Page
-- [`hasField(int|string|Field|array $field): bool|string`](method-hasfield.md) Returns whether or not given $field name, ID or object is valid for this Page
+- [`hasField(int|string|Field|array $field): bool|string`](method-hasfield.md) Returns whether or not given `$field` name, ID or object is valid for this Page
 - [`getFieldSubfieldValue($key): mixed|null`](method-getfieldsubfieldvalue.md) If given a field.subfield string, returns the associated value
 - [`preload(array $fieldNames = array(), array $options = array()): array`](method-preload.md) Preload multiple fields together as a group (experimental)
 - [`getUnknown(string $key): null|mixed`](method-___getunknown.md) (hookable) Hookable method called when a request to a field was made that didn't match anything
 - [`getFieldFirstValue(string $multiKey, bool $getKey = false): null|mixed`](method-getfieldfirstvalue.md) Given a Multi Key, determine if there are multiple keys requested and return the first non-empty value
 - [`getFieldValue(string $key, string $selector = ''): null|mixed`](method-getfieldvalue.md) Get the value for a non-native page field, and call upon Fieldtype to join it if not autojoined
 - [`formatFieldValue(Field $field, mixed $value): mixed`](method-formatfieldvalue.md) Return a value consistent with the page’s output formatting state
-- [`if(string|bool|int $key, string|callable|mixed $yes = '', string|callable|mixed $no = ''): mixed|string|bool`](method-___if.md) (hookable) If value is available for $key return or call $yes condition (with optional $no condition)
+- [`if(string|bool|int $key, string|callable|mixed $yes = '', string|callable|mixed $no = ''): mixed|string|bool`](method-___if.md) (hookable) If value is available for `$key` return or call `$yes` condition (with optional `$no` condition)
 - [`getMarkup(string $key): string`](method-___getmarkup.md) (hookable) Return the markup value for a given field name or {tag} string
 - [`getText(string $key, bool $oneLine = false, bool|null $entities = null): string`](method-gettext.md) Same as getMarkup() except returned value is plain text
 - [`setUnformatted(string $key, mixed $value): self`](method-setunformatted.md) Set the unformatted value of a field, regardless of current output formatting state
@@ -181,7 +181,7 @@ Note: you can use the `$page->urls()` method to get URLs added by PagePathHistor
 - [`parent(string|array $selector = ''): Page`](method-parent.md) Return this page’s parent Page, or–if given a selector–the closest matching parent.
 - [`parents(string|array|bool $selector = ''): PageArray`](method-parents.md) Return this page’s parent pages, or the parent pages matching the given selector.
 - [`numParents(string $selector = ''): int`](method-numparents.md) Return number of parents (depth relative to homepage) that this page has, optionally filtered by a selector
-- [`parentsUntil(string|Page|array $selector = '', string|array $filter = ''): PageArray`](method-parentsuntil.md) Return all parents from current page till the one matched by $selector
+- [`parentsUntil(string|Page|array $selector = '', string|array $filter = ''): PageArray`](method-parentsuntil.md) Return all parents from current page till the one matched by `$selector`
 - [`closest(string|array $selector): Page|NullPage`](method-closest.md) Find the closest parent page matching your selector
 - [`rootParent(): Page`](method-___rootparent.md) (hookable) Get the lowest-level, non-homepage parent of this page
 - [`siblings(string|array|bool $selector = '', bool $includeCurrent = true): PageArray`](method-siblings.md) Return this Page’s sibling pages, optionally filtered by a selector.
@@ -205,7 +205,7 @@ Note: you can use the `$page->urls()` method to get URLs added by PagePathHistor
 - [`isChanged(string $what = ''): bool`](method-ischanged.md) Has the Page changed since it was loaded?
 - [`resetTrackChanges(bool $trackChanges = true): $this`](method-resettrackchanges.md) Clears out any tracked changes and turns change tracking ON or OFF
 - [`path(): string`](method-path.md) Returns the Page’s path from the ProcessWire installation root.
-- [`url(array|int|string|bool|Language|null $options = null): string`](method-url.md) Returns the URL to the page (optionally with additional $options)
+- [`url(array|int|string|bool|Language|null $options = null): string`](method-url.md) Returns the URL to the page (optionally with additional `$options`)
 - [`urls(array $options = array()): array`](method-urls.md) Return all URLs that this page can be accessed from (excluding URL segments and pagination)
 - [`httpUrl(array $options = array()): string`](method-httpurl.md) Returns the URL to the page, including scheme and hostname
 - [`editUrl(array|bool|string $options = array()): string`](method-editurl.md) Return the URL necessary to edit this page
@@ -246,7 +246,7 @@ Note: you can use the `$page->urls()` method to get URLs added by PagePathHistor
 - [`getAccessTemplate(string $type = 'view'): Template|null`](method-getaccesstemplate.md) Returns the template from which role/access settings are inherited from
 - [`getAccessRoles(string $type = 'view'): PageArray`](method-getaccessroles.md) Return Roles (PageArray) that have access to this page
 - [`hasAccessRole(string|int|Role $role, string $type = 'view'): bool`](method-hasaccessrole.md) Returns whether this page has the given access role
-- [`isEqual(string $key, mixed $value1, mixed $value2): bool`](method-isequal.md) Is $value1 equal to $value2?
+- [`isEqual(string $key, mixed $value1, mixed $value2): bool`](method-isequal.md) Is `$value1` equal to `$value2`?
 - [`getHelperInstance(string $className): object|PageComparison|PageAccess|PageTraversal|PageValues`](method-gethelperinstance.md) Return a Page helper class instance that’s common among all Page (and derived) objects in this ProcessWire instance
 - [`comparison(): PageComparison`](method-comparison.md)
 - [`access(): PageAccess`](method-access.md)

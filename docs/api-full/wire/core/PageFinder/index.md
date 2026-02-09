@@ -46,7 +46,7 @@ Matches selector strings to pages
 - [`getQuery(Selectors $selectors, array $options): DatabaseQuerySelect`](method-___getquery.md) (hookable) Given one or more selectors, create the SQL query for finding pages.
 - [`getMatchQueryJSON(DatabaseQuerySelect $q, string $tableAlias, string $subfields, string $operator, string|int|array $value): bool`](method-getmatchqueryjson.md) Get match query when data is stored in a JSON DB column (future use)
 - [`postProcessQuery(DatabaseQuerySelect $parentQuery)`](method-postprocessquery.md) Post process a DatabaseQuerySelect for page finder
-- [`whereEmptyValuePossible(Field $field, string $col, Selector $selector, DatabaseQuerySelect $query, string $value, string &$where): bool`](method-whereemptyvaluepossible.md) Generate SQL and modify $query for situations where it should be possible to match empty values
+- [`whereEmptyValuePossible(Field $field, string $col, Selector $selector, DatabaseQuerySelect $query, string $value, string &$where): bool`](method-whereemptyvaluepossible.md) Generate SQL and modify `$query` for situations where it should be possible to match empty values
 - [`getQueryAllowedTemplates(DatabaseQuerySelect $query, array $options)`](method-getqueryallowedtemplates.md) Determine which templates the user is allowed to view
 - [`getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, string $where): string`](method-___getqueryallowedtemplateswhere.md) (hookable) Method that allows external hooks to add to or modify the access control WHERE conditions
 - [`getQueryJoinPath(DatabaseQuerySelect $query, Selector $selector)`](method-___getqueryjoinpath.md) (hookable) Special case when requested value is path or URL

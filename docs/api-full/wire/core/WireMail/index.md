@@ -91,5 +91,5 @@ $numSent = $m->send();
 - [`strReplace(string $str, string|array $find, string $replace = ''): string`](method-strreplace.md) Recursive string replacement
 - [`htmlToText(string $html): string`](method-___htmltotext.md) (hookable) Convert HTML mail body to TEXT mail body
 - [`encodeSubject(string $subject): string`](method-encodesubject.md) Encode a subject, use mbstring if available
-- [`findBestEncodePart(string $input, int $maxlen = 63, bool $isFirst = false): string`](method-findbestencodepart.md) Tries to split the passed subject at a whitespace at or before $maxlen, falling back to a hard substr if none was found, and returns the left part.
+- [`findBestEncodePart(string $input, int $maxlen = 63, bool $isFirst = false): string`](method-findbestencodepart.md) Tries to split the passed subject at a whitespace at or before `$maxlen`, falling back to a hard substr if none was found, and returns the left part.
 - [`quotedPrintableString(string $text): string`](method-quotedprintablestring.md) Return the text quoted-printable encoded

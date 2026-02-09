@@ -43,7 +43,7 @@ The most commonly used API methods include:
 - [`trash(Page $page, $save = true): bool`](method-___trash.md) Move a page to the trash. If you have already set the parent to somewhere in the trash, then this method won't attempt to set it again.
 - [`restore(Page $page, $save = true): bool`](method-___restore.md) Restore a trashed page to its original location.
 - [`emptyTrash(array $options = array()): int|array`](method-___emptytrash.md) Empty the trash and return number of pages deleted.
-- [`delete(Page $page, $recursive = false, array $options = array()): bool`](method-___delete.md) Permanently delete a page and it's fields. Unlike trash(), pages deleted here are not restorable. If you attempt to delete a page with children, and don't specifically set the `$recursive` param to True, then this method will throw an exception. If a recursive delete fails for any reason, an exception will be thrown.
+- [`delete(Page $page, $recursive = false, array $options = array()): bool`](method-___delete.md) Permanently delete a page and it's fields. Unlike `trash()`, pages deleted here are not restorable. If you attempt to delete a page with children, and don't specifically set the `$recursive` param to True, then this method will throw an exception. If a recursive delete fails for any reason, an exception will be thrown.
 - [`clone(Page $page, Page $parent = null, $recursive = true, $options = array()): Page|NullPage`](method-___clone.md) Clone an entire page, it's assets and children and return it.
 - [`add($template, $parent, $name = '', array $values = array()): Page|NullPage`](method-___add.md)
 - [`sort(Page $page, $value = false): int`](method-___sort.md) Set the “sort” value for given `$page` while adjusting siblings, or re-build sort for its children.
@@ -81,10 +81,10 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`published(Page $page)`](method-___published.md) Hook called after an unpublished page has just been published.
 - [`unpublishReady(Page $page)`](method-___unpublishready.md) Hook called just before a pubished page is unpublished.
 - [`unpublished(Page $page)`](method-___unpublished.md) Hook called after a published page has just been unpublished.
-- [`saveFieldReady(Page $page, Field $field)`](method-___savefieldready.md) Hook called just before a saveField() method saves a page fied.
-- [`savedField(Page $page, Field $field)`](method-___savedfield.md) Hook called after saveField() method successfully executes.
-- [`savePageOrFieldReady(Page $page, $fieldName = '')`](method-___savepageorfieldready.md) Hook inclusive of both saveReady() and saveFieldReady().
-- [`savedPageOrField(Page $page, array $changes)`](method-___savedpageorfield.md) Hook inclusive of both saved() and savedField().
+- [`saveFieldReady(Page $page, Field $field)`](method-___savefieldready.md) Hook called just before a `saveField()` method saves a page fied.
+- [`savedField(Page $page, Field $field)`](method-___savedfield.md) Hook called after `saveField()` method successfully executes.
+- [`savePageOrFieldReady(Page $page, $fieldName = '')`](method-___savepageorfieldready.md) Hook inclusive of both `saveReady()` and `saveFieldReady()`.
+- [`savedPageOrField(Page $page, array $changes)`](method-___savedpageorfield.md) Hook inclusive of both `saved()` and `savedField()`.
 - [`found(PageArray $pages, array $details)`](method-___found.md) Hook called at the end of a `$pages->find()`.
 
 ## Methods
@@ -101,7 +101,7 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`getFresh(Page|string|array|Selectors|int $selectorOrPage, array $options = array()): Page|NullPage`](method-getfresh.md) Get a fresh, non-cached copy of a Page from the database
 - [`getID(string|array|Selectors $selector, bool|array $options = array()): int|array`](method-getid.md) Get one ID of page matching given selector with no exclusions, like get() but returns ID rather than a Page
 - [`getByIDs(array|string|WireArray $ids, array $options = array()): PageArray|Page`](method-getbyids.md) Given array or CSV string of Page IDs, return a PageArray
-- [`has(string|int|array|Selectors $selector, bool $verbose = false): array|int`](method-has.md) Is there any page that matches the given $selector in the system? (with no exclusions)
+- [`has(string|int|array|Selectors $selector, bool $verbose = false): array|int`](method-has.md) Is there any page that matches the given `$selector` in the system? (with no exclusions)
 - [`save(Page $page, array $options = array()): bool`](method-___save.md) (hookable) Save a page object and its fields to database.
 - [`saveField(Page $page, string|Field $field, array|string $options = array()): bool`](method-___savefield.md) (hookable) Save only a field from the given page
 - [`saveFields(Page $page, array|string|string[]|Field[] $fields, array $options = array()): array`](method-___savefields.md) (hookable) Save multiple named fields from given page
@@ -116,19 +116,19 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`getOneById(int $id, array $options = array()): Page|NullPage`](method-getonebyid.md) Get one page by ID
 - [`getPath(int|Page $id, null|array|Language|int|string $options = array()): string`](method-getpath.md) Given an ID, return a path to a page, without loading the actual page
 - [`_path(int $id): string`](method-_path.md) Alias of getPath method for backwards compatibility
-- [`getByPath(string $path, array|bool $options = array()): Page|int`](method-getbypath.md) Get a page by its path, similar to $pages->get('/path/to/page/') but with more options
+- [`getByPath(string $path, array|bool $options = array()): Page|int`](method-getbypath.md) Get a page by its path, similar to `$pages->get('/path/to/page/')` but with more options
 - [`getInfoByPath(string $path, array $options = array()): array`](method-getinfobypath.md) Get verbose array of info about a given page path
 - [`touch(Page|PageArray|array $pages, null|int|string|array $options = null, string $type = 'modified'): bool`](method-___touch.md) (hookable) Update page modification time to now (or the given modification time)
-- [`sort(Page $page, int|bool $value = false): int`](method-___sort.md) (hookable) Set the “sort” value for given $page while adjusting siblings, or re-build sort for its children
+- [`sort(Page $page, int|bool $value = false): int`](method-___sort.md) (hookable) Set the “sort” value for given `$page` while adjusting siblings, or re-build sort for its children
 - [`insertBefore(Page $page, Page $beforePage)`](method-___insertbefore.md) (hookable) Sort/move one page above another (for manually sorted pages)
 - [`insertAfter(Page $page, Page $afterPage)`](method-___insertafter.md) (hookable) Sort/move one page after another (for manually sorted pages)
 - [`getCache(int|string|null $id = null): Page|array|null`](method-getcache.md) Given a Page ID, return it if it's cached, or NULL of it's not.
-- [`uncache(Page|PageArray|int|null $page = null, array $options = array()): int`](method-uncache.md) Remove the given page(s) from the cache, or uncache all by omitting $page argument
+- [`uncache(Page|PageArray|int|null $page = null, array $options = array()): int`](method-uncache.md) Remove the given `page(s)` from the cache, or uncache all by omitting `$page` argument
 - [`uncacheAll(?Page $page = null, array $options = array()): int`](method-uncacheall.md) Remove all pages from the cache (to clear memory)
 - [`__get(string $name): mixed`](method-__get.md) Return a fuel or other property set to the Pages instance
 - [`of(null|bool $of = null): bool`](method-of.md) Get or set the current output formatting state
 - [`newPage(array|string|Template $options = array()): Page`](method-newpage.md) Return a new Page object without saving it to the database
-- [`__invoke(string|int|array $key): Page|Pages|PageArray`](method-__invoke.md) Enables use of $pages(123), $pages('/path/') or $pages('selector string')
+- [`__invoke(string|int|array $key): Page|Pages|PageArray`](method-__invoke.md) Enables use of `$pages`(123), `$pages`('/path/') or `$pages`('selector string')
 - [`loader(): PagesLoader`](method-loader.md) Get PagesLoader instance which provides methods for finding and loading pages
 - [`editor(): PagesEditor`](method-editor.md) Get PagesEditor instance which provides methods for saving pages to the database
 - [`names(): PagesNames`](method-names.md) Get PagesNames instance which provides API methods specific to generating and modifying page names
@@ -165,7 +165,7 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`unpublished(Page $page)`](method-___unpublished.md) (hookable) Hook called after published page has just been unpublished
 - [`publishReady(Page $page)`](method-___publishready.md) (hookable) Hook called right before an unpublished page is published and saved
 - [`unpublishReady(Page $page)`](method-___unpublishready.md) (hookable) Hook called right before a published page is unpublished and saved
-- [`found(PageArray $pages, array $details)`](method-___found.md) (hookable) Hook called at the end of a $pages->find(), includes extra info not seen in the resulting PageArray
+- [`found(PageArray $pages, array $details)`](method-___found.md) (hookable) Hook called at the end of a `$pages->find()`, includes extra info not seen in the resulting PageArray
 - [`saveFieldReady(Page $page, Field $field)`](method-___savefieldready.md) (hookable) Hook called when Pages::saveField is ready to execute
 - [`savedField(Page $page, Field $field)`](method-___savedfield.md) (hookable) Hook called after Pages::saveField successfully executes
 - [`savePageOrFieldReady(Page $page, string $fieldName = '')`](method-___savepageorfieldready.md) (hookable) Hook called when either of Pages::save or Pages::saveField is ready to execute

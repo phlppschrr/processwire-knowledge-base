@@ -20,7 +20,7 @@ Source: `wire/core/WireInputData.php`
 - [`entities($varName): string`](method-entities.md) Return an entity encoded version of the value
 - [`purify($varName): string`](method-purify.md) Return a value run through HTML Purifier (value assumed to contain HTML)
 - [`string($varName): string`](method-string.md) Return a value guaranteed to be a string, regardless of what type `$varName` is. Does not sanitize.
-- [`date($varName, $dateFormat): string`](method-date.md) Validate and return `$varName` in the given PHP date() or strftime() format.
+- [`date($varName, $dateFormat): string`](method-date.md) Validate and return `$varName` in the given PHP `date()` or `strftime()` format.
 - [`int($varName, $min = 0, $max = null): int`](method-int.md) Sanitize value to integer with optional min and max. Unsigned if max >= 0, signed if max < 0.
 - [`intUnsigned($varName, $min = null, $max = null): int`](method-intunsigned.md) Sanitize value to unsigned integer with optional min and max.
 - [`intSigned($varName, $min = null, $max = null): int`](method-intsigned.md) Sanitize value to signed integer with optional min and max.

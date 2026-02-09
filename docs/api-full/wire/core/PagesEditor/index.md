@@ -25,7 +25,7 @@ Please always use `$pages->method()` rather than `$pages->editor->method()` in c
 - [`isCloning(bool $getDepth = false): bool|int`](method-iscloning.md) Are we currently in a page clone?
 - [`add(string|Template $template, string|int|Page $parent, string $name = '', array $values = array()): Page`](method-add.md) Add a new page using the given template to the given parent
 - [`isSaveable(Page $page, string &$reason, string|Field $fieldName = '', array $options = array()): bool`](method-issaveable.md) Is the given page in a state where it can be saved from the API?
-- [`isMoveable(Page $page, Page $oldParent, Page $newParent, string &$reason): bool`](method-ismoveable.md) Return whether given Page is moveable from $oldParent to $newParent
+- [`isMoveable(Page $page, Page $oldParent, Page $newParent, string &$reason): bool`](method-ismoveable.md) Return whether given Page is moveable from `$oldParent` to `$newParent`
 - [`isDeleteable(Page $page, bool $throw = false): bool`](method-isdeleteable.md) Is the given page deleteable from the API?
 - [`setupNew(Page $page)`](method-setupnew.md) Auto-populate some fields for a new page that does not yet exist
 - [`setupPageName(Page $page, array $options = array()): string`](method-setuppagename.md) Auto-assign a page name to gven page
@@ -44,8 +44,8 @@ Please always use `$pages->method()` rather than `$pages->editor->method()` in c
 - [`_clone(Page $page, ?Page $parent = null, bool $recursive = true, array|string $options = array()): Page|NullPage`](method-_clone.md) Clone an entire page (including fields, file assets, and optionally children) and return it.
 - [`touch(Page|PageArray|array $pages, null|int|string|array $options = null, string $type = 'modified'): bool`](method-touch.md) Update page modified/created/published time to now (or given time)
 - [`move(Page $child, Page|int|string $parent, array $options = array()): bool`](method-move.md) Move page to specified parent (work in progress)
-- [`sortPage(Page $page, int|null $sort = null, bool $after = false): int`](method-sortpage.md) Set page $sort value and increment siblings having same or greater sort value
+- [`sortPage(Page $page, int|null $sort = null, bool $after = false): int`](method-sortpage.md) Set page `$sort` value and increment siblings having same or greater sort value
 - [`insertBefore(Page $page, Page $sibling, bool $after = false)`](method-insertbefore.md) Sort one page before another (for pages using manual sort)
-- [`sortRebuild(Page $parent): int`](method-sortrebuild.md) Rebuild the “sort” values for all children of the given $parent page, fixing duplicates and gaps
+- [`sortRebuild(Page $parent): int`](method-sortrebuild.md) Rebuild the “sort” values for all children of the given `$parent` page, fixing duplicates and gaps
 - [`replace(Page $oldPage, Page $newPage): Page`](method-replace.md) Replace one page with another (work in progress)
 - [`clear(Page $page, array $options = array()): bool`](method-clear.md) Clear a page of its data

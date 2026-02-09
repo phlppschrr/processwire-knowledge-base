@@ -28,7 +28,7 @@ Group: [other](group-other.md)
 - [`getModuleInfoAll(array $options = array()): array`](method-getmoduleinfoall.md) Get info arrays for all modules indexed by module name
 - [`getModuleInfoVerbose(string|Module|int $class, array $options = array()): array`](method-getmoduleinfoverbose.md) Returns a verbose array of information for a Module
 - [`getModuleInfoProperty(Module|string $class, string $property, array $options = array()): mixed|null`](method-getmoduleinfoproperty.md) Get just a single property of module info
-- [`extractModuleOperatorVersion(string $require): array`](method-extractmoduleoperatorversion.md) Return array of ($module, $operator, $requiredVersion)
+- [`extractModuleOperatorVersion(string $require): array`](method-extractmoduleoperatorversion.md) Return array of (`$module`, `$operator`, `$requiredVersion`)
 - [`saveModuleInfoCache()`](method-savemoduleinfocache.md) Save the module information cache
 - [`clearModuleInfoCache(bool|null $showMessages = false)`](method-clearmoduleinfocache.md) Clear the module information cache
 - [`updateModuleVersionsCache()`](method-updatemoduleversionscache.md) Update the cache of queued module version changes

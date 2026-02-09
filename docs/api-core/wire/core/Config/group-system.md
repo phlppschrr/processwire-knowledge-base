@@ -25,5 +25,5 @@ Source: `wire/core/Config.php`
 - `$lazyPageChunkSize: int` Chunk size for for `$pages->findMany()` calls.
 - `$tableSalt: string` Additional hash for other (non-authentication) purposes. @since 3.0.164
 - [`$statusFiles: array`](method-statusfiles.md) File inclusions for ProcessWire’s runtime statuses/states. @since 3.0.142
-- `$phpMailAdditionalParameters: string|null` Additional params to pass to PHP’s mail() function (when used), see `$additional_params` argument at https://www.php.net/manual/en/function.mail.php
+- `$phpMailAdditionalParameters: string|null` Additional params to pass to PHP’s `mail()` function (when used), see `$additional_params` argument at https://www.php.net/manual/en/function.mail.php
 - `$installed: int` Timestamp of when this PW was installed, set automatically by the installer for future compatibility detection.

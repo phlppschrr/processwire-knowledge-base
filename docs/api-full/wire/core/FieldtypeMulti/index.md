@@ -46,7 +46,7 @@ pagination information in the value it is given. All other aspects of pagination
 - [`setupPageFieldRows(Page $page, Field $field, $value): WireArray`](method-setuppagefieldrows.md) Prepare rows for save or delete
 - [`lockForWriting(Field $field): bool`](method-lockforwriting.md) Lock field table for writing
 - [`unlockForWriting(): bool`](method-unlockforwriting.md) Unlock for writing
-- [`getMaxColumnValue(Page $page, Field $field, string $column, int|bool $noValue = false): int|bool|mixed`](method-getmaxcolumnvalue.md) Get max value of column for given Page and Field or boolean false (or specified $noValue) if no rows present
+- [`getMaxColumnValue(Page $page, Field $field, string $column, int|bool $noValue = false): int|bool|mixed`](method-getmaxcolumnvalue.md) Get max value of column for given Page and Field or boolean false (or specified `$noValue`) if no rows present
 - [`getLoadQueryAutojoin(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect|NULL`](method-getloadqueryautojoin.md) Return the query used for Autojoining this field (if different from getLoadQuery) or NULL if autojoin not allowed.
 - [`getMatchQuery(PageFinderDatabaseQuerySelect $query, string $table, string $subfield, string $operator, mixed $value): PageFinderDatabaseQuerySelect|DatabaseQuerySelect`](method-getmatchquery.md) Get the query that matches a Fieldtype table's data with a given value
 - [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get Inputfields for advanced settings of the Field and Fieldtype

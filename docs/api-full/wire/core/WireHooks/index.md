@@ -17,7 +17,7 @@ This class is for internal use. You should manipulate hooks from Wire-derived cl
 
 ## Methods
 - [`__construct(ProcessWire $wire, Config $config)`](method-__construct.md) Construct WireHooks
-- [`getHooks(Wire $object, string $method = '', int $getHooks = self::getHooksAll): array`](method-gethooks.md) Return all hooks associated with $object or method (if specified)
+- [`getHooks(Wire $object, string $method = '', int $getHooks = self::getHooksAll): array`](method-gethooks.md) Return all hooks associated with `$object` or method (if specified)
 - [`isHooked(string $method, ?Wire $instance = null): bool`](method-ishooked.md) Returns true if the method/property hooked, false if it isn't.
 - [`isHookedOrParents(string|Wire $class, string $method, string $type = 'either'): bool`](method-ishookedorparents.md) Similar to isHooked() method but also checks parent classes for the hooked method as well
 - [`isMethodHooked(string|Wire $class, string $method): bool`](method-ismethodhooked.md) Similar to isHooked() method but also checks parent classes for the hooked method as well

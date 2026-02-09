@@ -21,7 +21,7 @@ Group: [other](group-other.md)
 Helper for managing TinyMCE settings and defaults
 
 ## Methods
-- [`getSettings(array|null $defaults = null, string $cacheKey = ''): array`](method-getsettings.md) Get settings from Inputfield vary from the $defaults
+- [`getSettings(array|null $defaults = null, string $cacheKey = ''): array`](method-getsettings.md) Get settings from Inputfield vary from the `$defaults`
 - [`getDefaults($key = ''): array`](method-getdefaults.md) Default settings for ProcessWire.config.InputfieldTinyMCE
 - [`getOriginalDefaults(string $key = ''): array|mixed|null`](method-getoriginaldefaults.md) Get original defaults from source JSON, prior to being overriden by module default settings
 - [`getAddDefaults(): array|mixed`](method-getadddefaults.md) Get 'add_' or 'replace_' default settings
@@ -34,8 +34,8 @@ Helper for managing TinyMCE settings and defaults
 - [`prepareSettingsForOutput(array $settings): array`](method-___preparesettingsforoutput.md) (hookable) Prepare given settings ready for output
 - [`getLanguagePackCode(): string`](method-getlanguagepackcode.md) Get language pack code
 - [`getLanguageSettings(): array`](method-getlanguagesettings.md) Get language pack settings
-- [`applyAddSettings(array &$settings, array &$addSettings, array $defaults)`](method-applyaddsettings.md) Apply 'add_*' settings in $addSettings, plus merge all $addSettings into given $settings
+- [`applyAddSettings(array &$settings, array &$addSettings, array $defaults)`](method-applyaddsettings.md) Apply 'add_*' settings in `$addSettings`, plus merge all `$addSettings` into given `$settings`
 - [`mergeSetting(string|array|mixed $value, string|array|mixed $addValue): string|array|mixed`](method-mergesetting.md) Merge two setting values into one that combines them
 - [`mergeSettings(array $settings1, array $settings2 = array()): array`](method-mergesettings.md) Merge all settings in given array and combine those with "add_" prefix
 - [`applyRenderReadySettings(array $addSettings = array())`](method-applyrenderreadysettings.md) Determine which settings go where and apply to Inputfield
-- [`applySettingsField(string $fieldName): bool|Field`](method-applysettingsfield.md) Apply settings settings to $this->inputfield to inherit from another field
+- [`applySettingsField(string $fieldName): bool|Field`](method-applysettingsfield.md) Apply settings settings to `$this->inputfield` to inherit from another field

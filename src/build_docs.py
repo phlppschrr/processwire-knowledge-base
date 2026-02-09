@@ -700,7 +700,9 @@ def hookable_display_name(name: str) -> tuple[str, bool]:
 
 
 CODE_SNIPPET_RE = re.compile(
-    r"(\$[A-Za-z_][A-Za-z0-9_]*(?:->\w+(?:\([^)]*\))?)?)"
+    r"(\$[A-Za-z_][A-Za-z0-9_]*(?:->\w+(?:\([^)]*\))?)?"
+    r"|[A-Za-z_][A-Za-z0-9_]*::[A-Za-z_][A-Za-z0-9_]*\([^)]*\)"
+    r"|[A-Za-z_][A-Za-z0-9_]*\([^)]*\))"
 )
 
 
@@ -2093,7 +2095,9 @@ def write_doc(
             ret_label = f": {return_type}" if return_type else ""
             label = f"{display_name}{signature}{ret_label}"
             summary = extract_summary_from_docblock(member.docblock)
-            summary_label = f" {summary}" if summary else ""
+            summary_label = (
+                f" {wrap_inline_code_snippets(summary)}" if summary else ""
+            )
             method_links.append(
                 f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}{summary_label}"
             )
@@ -2151,7 +2155,7 @@ def write_doc(
             ]
             summary = summary_map.get(group_name.lower())
             if summary:
-                group_content.append(summary)
+                group_content.append(wrap_inline_code_snippets(summary))
                 group_content.append("")
             group_lines = normalize_heading_lines(group_lines)
             group_lines = wrap_example_blocks(group_lines)
@@ -2269,7 +2273,9 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
             ret_label = f": {return_type}" if return_type else ""
             label = f"{display_name}{signature}{ret_label}"
             summary = extract_summary_from_docblock(member.docblock)
-            summary_label = f" {summary}" if summary else ""
+            summary_label = (
+                f" {wrap_inline_code_snippets(summary)}" if summary else ""
+            )
             method_links.append(
                 f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}{summary_label}"
             )

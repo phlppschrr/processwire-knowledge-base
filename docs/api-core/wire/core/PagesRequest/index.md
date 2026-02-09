@@ -38,7 +38,7 @@ $page = $pages->request()->getPage();
 - [`getRequestPagePath(): bool|string`](method-getrequestpagepath.md) Get the requested path
 - [`checkRequestFile(string &$path): bool|Page|NullPage`](method-checkrequestfile.md) Check if the requested path is to a secured page file
 - [`checkRequestFilePrefix(string &$path): bool`](method-checkrequestfileprefix.md) Check for secured filename: method 2 (deprecated)
-- [`getLoginPageOrUrl(?Page $page = null): string|Page|null`](method-___getloginpageorurl.md) (hookable) Get login Page object or URL to redirect to for login needed to access given $page
+- [`getLoginPageOrUrl(?Page $page = null): string|Page|null`](method-___getloginpageorurl.md) (hookable) Get login Page object or URL to redirect to for login needed to access given `$page`
 - [`checkAccess(Page $page, User $user): Page|string|null`](method-checkaccess.md) Check that the current user has access to the page and return it
 - [`checkAccessDelegated(Page $page): Page|null|bool`](method-checkaccessdelegated.md) Check access to a delegated page (like a repeater)
 - [`checkAccessRepeater(Page $page): Page|null|bool`](method-checkaccessrepeater.md) Check access to a delegated repeater

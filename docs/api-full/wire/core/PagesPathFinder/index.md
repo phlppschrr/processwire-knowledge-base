@@ -37,16 +37,16 @@ LanguageSupport module has been loaded (for multi-language page names)
 - [`init(string $path, array $options)`](method-init.md) Init for new get()
 - [`get(string $path, array $options = array()): array`](method-get.md) Get verbose array of info about a given page path
 - [`getPage(string $path, array $options = array()): NullPage|Page`](method-getpage.md) Given a path, get a Page object or NullPage if not found
-- [`getPagesRow(array $parts): array|null`](method-getpagesrow.md) Find a row for given $parts in pages table
-- [`applyPagesRow(array $parts, array|null $row): string`](method-applypagesrow.md) Apply a found pages table row to the $result and return corresponding path
-- [`getPathParts(string $path): array`](method-getpathparts.md) Prepare $path and convert to array of $parts
+- [`getPagesRow(array $parts): array|null`](method-getpagesrow.md) Find a row for given `$parts` in pages table
+- [`applyPagesRow(array $parts, array|null $row): string`](method-applypagesrow.md) Apply a found pages table row to the `$result` and return corresponding path
+- [`getPathParts(string $path): array`](method-getpathparts.md) Prepare `$path` and convert to array of `$parts`
 - [`getPathPartsLanguage(array &$parts): Language|null`](method-getpathpartslanguage.md) Get language that path is in and apply it to result
 - [`getBlankResult(array $result = array())`](method-getblankresult.md) RESULT ********************************************************************************
 - [`getBlankResult(array $result = array()): array`](method-getblankresult.md) Build blank result/return value array
 - [`applyResultTemplate(string $path): bool`](method-applyresulttemplate.md) Update paths for template info like urlSegments and pageNum and populate urls property
 - [`applyResultHome()`](method-applyresulthome.md) Apply result for homepage match
 - [`applyResultLanguage(string $path): string`](method-applyresultlanguage.md) Identify and populate language information in result
-- [`applyResultPageNum(array &$parts)`](method-applyresultpagenum.md) Identify and populate pagination number from $result['urlSegments']
+- [`applyResultPageNum(array &$parts)`](method-applyresultpagenum.md) Identify and populate pagination number from `$result`['urlSegments']
 - [`finishResult(string|bool $path): array`](method-finishresult.md) Finish result/return value
 - [`getShortcut($path)`](method-getshortcut.md) SHORTCUTS *****************************************************************************
 - [`getShortcut(string $path): bool`](method-getshortcut.md) Attempt to match path to page using shortcuts and return true if shortcut found

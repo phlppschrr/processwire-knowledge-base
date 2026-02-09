@@ -48,7 +48,7 @@ For more detailed descriptions of these `$config` properties, including default 
 ## Methods
 - [`url(string|Wire $for): string|null`](method-url.md) Get URL for requested resource or module
 - [`urls(string|Wire $for = ''): null|string|Paths`](method-urls.md) Get URL for requested resource or module or get all URLs if no argument
-- [`setLocation(string $for, string $dir, string|bool $url = ''): self`](method-setlocation.md) Given a directory to a named location, updates $config->paths and $config->urls for it
+- [`setLocation(string $for, string $dir, string|bool $url = ''): self`](method-setlocation.md) Given a directory to a named location, updates `$config->paths` and `$config->urls` for it
 - [`setPath(string $for, string $path): self`](method-setpath.md) Change or set just the server disk path for the named location (leaving URL as-is)
 - [`setUrl(string $for, string $url): self`](method-seturl.md) Change or set just the URL for the named location (leaving server disk path as-is)
 - [`path(string $for): null|string`](method-path.md) Get disk path for requested resource or module

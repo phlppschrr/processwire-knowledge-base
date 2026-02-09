@@ -37,7 +37,7 @@ $name = $pages->names()->uniqueRandomPageName();
 - [`isUntitledPageName(string $name): bool`](method-isuntitledpagename.md) Does the given page have an untitled page name?
 - [`nameAndNumber(string $name, string $delimiter = ''): array`](method-nameandnumber.md) If given name has a numbered suffix, return array with name (excluding suffix) and the numbered suffix
 - [`hasNumberSuffix(string|Page $name, bool $getNamePrefix = false): int|bool|string`](method-hasnumbersuffix.md) Does the given name or Page have a number suffix? Returns the number if yes, or false if not
-- [`defaultPageNameFormat(Page $page, array $options = array()): string`](method-defaultpagenameformat.md) Get the name format string that should be used for given $page if no name was assigned
+- [`defaultPageNameFormat(Page $page, array $options = array()): string`](method-defaultpagenameformat.md) Get the name format string that should be used for given `$page` if no name was assigned
 - [`pageNameFromFormat(Page $page, string|array $format = '', array $options = array()): string`](method-pagenamefromformat.md) Create a page name from the given format
 - [`uniquePageName(string|Page|array $name = '', $page = null, array $options = array()): string`](method-uniquepagename.md) Get a unique page name
 - [`adjustNameLength(string $name, int $maxLength = 0): string`](method-adjustnamelength.md) If name exceeds maxLength, truncate it, while keeping any numbered suffixes in place

@@ -28,7 +28,7 @@ Common methods:
 - `$findPagesSelector: string`
 - `$findPagesSelect: string` Same as findPageSelector, but configured interactively with InputfieldSelector.
 - `$addable: int|bool`
-- `$inputfieldClass: string` Public property alias of protected getInputfieldClass() method
+- `$inputfieldClass: string` Public property alias of protected `getInputfieldClass()` method
 - `$inputfieldClasses: array`
 
 @since 3.0.173

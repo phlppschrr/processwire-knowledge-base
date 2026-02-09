@@ -73,7 +73,7 @@ This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 - [`hasAlphaChannel(): bool`](method-hasalphachannel.md) Check for alphachannel in PNGs
 - [`setModified(bool $modified): self`](method-setmodified.md) Set whether the image was modified
 - [`getModified(): bool`](method-getmodified.md) Get whether the image was modified
-- [`getCropDimensions(int &$w1, int &$h1, int $gdWidth, int $targetWidth, int $gdHeight, int $targetHeight)`](method-getcropdimensions.md) Check if cropping is needed, if yes, populate x- and y-position to params $w1 and $h1
+- [`getCropDimensions(int &$w1, int &$h1, int $gdWidth, int $targetWidth, int $gdHeight, int $targetHeight)`](method-getcropdimensions.md) Check if cropping is needed, if yes, populate x- and y-position to params `$w1` and `$h1`
 - [`resize(int $finalWidth, int $finalHeight): bool`](method-resize.md) Resize the image
 - [`rotate(int $degrees, string $dstFilename = ''): bool`](method-rotate.md) Just rotate image by number of degrees
 - [`flipVertical(string $dstFilename = ''): bool`](method-flipvertical.md) Flip vertically

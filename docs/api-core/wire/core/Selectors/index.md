@@ -54,11 +54,11 @@ and [Selector Operators](https://processwire.com/docs/selectors/operators/).
 - [`create(string $field, string $operator, string|array $value): Selector`](method-create.md) Create a new Selector object from a field name, operator, and value
 - [`extractString(string $str)`](method-extractstring.md) Given a selector string, populate to Selector objects in this Selectors instance
 - [`extractGroup(string &$str): null|string`](method-extractgroup.md) Given a string like name@field=... or @field=... extract the part that comes before the @
-- [`extractField(string &$str): string`](method-extractfield.md) Given a string starting with a field, return that field, and remove it from $str.
-- [`extractOperator(string &$str, array $operatorChars): string`](method-extractoperator.md) Given a string starting with an operator, return that operator, and remove it from $str.
-- [`extractOperators(string &$str): array`](method-extractoperators.md) Given a string starting with an operator, return that operator, and remove it from $str.
+- [`extractField(string &$str): string`](method-extractfield.md) Given a string starting with a field, return that field, and remove it from `$str`.
+- [`extractOperator(string &$str, array $operatorChars): string`](method-extractoperator.md) Given a string starting with an operator, return that operator, and remove it from `$str`.
+- [`extractOperators(string &$str): array`](method-extractoperators.md) Given a string starting with an operator, return that operator, and remove it from `$str`.
 - [`extractValueQuick(string &$str, string $openingQuote, string $closingQuote): false|string|string[]`](method-extractvaluequick.md) Early-exit optimizations for extractValue
-- [`extractValue(string &$str, string &$quote): array|string`](method-extractvalue.md) Given a string starting with a value, return that value, and remove it from $str.
+- [`extractValue(string &$str, string &$quote): array|string`](method-extractvalue.md) Given a string starting with a value, return that value, and remove it from `$str`.
 - [`getAllFields(bool $subfields = true): array`](method-getallfields.md) Return array of all field names referenced in all of the Selector objects here
 - [`getAllValues(): array`](method-getallvalues.md) Return array of all values referenced in all Selector objects here
 - [`matches(Wire $item): bool`](method-matches.md) Does the given Wire match these Selectors?

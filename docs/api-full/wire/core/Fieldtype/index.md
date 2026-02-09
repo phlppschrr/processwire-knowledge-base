@@ -97,7 +97,7 @@ of most other methods provided in this Fieldtype class accounts for most situati
 - [`emptyPageFieldTable(Page $page, Field $field): bool`](method-emptypagefieldtable.md) Empty DB table of page field
 - [`replacePageField(Page $src, Page $dst, Field $field): bool`](method-___replacepagefield.md) (hookable) Move this field’s data from one page to another.
 - [`deleteTemplateField(Template $template, Field $field): bool`](method-___deletetemplatefield.md) (hookable) Delete the given Field from all pages using the given template, without loading those pages.
-- [`cloneField(Field $field): Field`](method-___clonefield.md) (hookable) Return a cloned copy of $field
+- [`cloneField(Field $field): Field`](method-___clonefield.md) (hookable) Return a cloned copy of `$field`
 - [`get(string $key): mixed`](method-get.md) Get a property from this Fieldtype’s data
 - [`install()`](method-___install.md) (hookable) Install this Fieldtype, consistent with optional Module interface
 - [`uninstall()`](method-___uninstall.md) (hookable) Uninstall this Fieldtype, consistent with optional Module interface

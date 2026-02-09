@@ -72,8 +72,8 @@ TEXT LABELS
 - [`getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings)`](method-___getusersettingsinputfields.md) (hookable) CONFIG *******************************************************************************************
 - [`getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, array $settings)`](method-___getusersettingsinputfields.md) (hookable) Get fields needed for a user to configure and confirm TFA from their user profile
 - [`getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, array $settings)`](method-___getuserenabledinputfields.md) (hookable) Get fields for when user already has TFA enabled
-- [`processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, array $settings, array $settingsPrev): array`](method-___processusersettingsinputfields.md) (hookable) Called when the user config fieldset has been processed but before $settings have been saved
-- [`processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, array $settings, array $settingsPrev): array`](method-___processuserenabledinputfields.md) (hookable) Called when the user config fieldset has been processed (for enabled user) but before $settings have been saved
+- [`processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, array $settings, array $settingsPrev): array`](method-___processusersettingsinputfields.md) (hookable) Called when the user config fieldset has been processed but before `$settings` have been saved
+- [`processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, array $settings, array $settingsPrev): array`](method-___processuserenabledinputfields.md) (hookable) Called when the user config fieldset has been processed (for enabled user) but before `$settings` have been saved
 - [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-getmoduleconfiginputfields.md) Module configuration
 - [`sessionGet($key, $blankValue = null)`](method-sessionget.md) SESSION ******************************************************************************************
 - [`sessionGet(string $key, mixed $blankValue = null): mixed|null`](method-sessionget.md) Get a session variable for this module
@@ -81,7 +81,7 @@ TEXT LABELS
 - [`sessionReset(string $redirectURL = ''): false`](method-sessionreset.md) Remove all session variables set for this module
 - [`autoEnableSupported(?User $user = null)`](method-autoenablesupported.md) AUTOMATIC ENABLE *******************************************************************************
 - [`autoEnableSupported(?User $user = null): bool`](method-autoenablesupported.md) Does this TFA module support automatic enable?
-- [`autoEnableUser(User $user, array $settings = array())`](method-autoenableuser.md) Auto-enable this TFA module for given $user
+- [`autoEnableUser(User $user, array $settings = array())`](method-autoenableuser.md) Auto-enable this TFA module for given `$user`
 - [`getDefaultUserSettings(User $user)`](method-getdefaultusersettings.md) USER AND SETTINGS ******************************************************************************
 - [`getDefaultUserSettings(User $user): array`](method-getdefaultusersettings.md) Get default/blank user settings
 - [`getUserSettings(User $user): array`](method-getusersettings.md) Get TFA data for given user from user_tfa field

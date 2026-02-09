@@ -22,7 +22,7 @@ Provides capability for sending POST/GET requests to URLs
 
 WireHttp enables you to send HTTP requests to URLs, download files, and more.
 `$http`
-`$http` = new WireHttp();
+`$http` = new `WireHttp()`;
 ~~~~~
 // Get the contents of a URL
 $response = $http->get("http://domain.com/path/");
@@ -45,7 +45,7 @@ Thanks to @horst for his assistance with several methods in this class.
 - [`delete(string $url, array|string $data = array(), array $options = array()): bool|string`](method-delete.md) Send a DELETE request to a URL
 - [`patch(string $url, array|string $data = array(), array $options = array()): bool|string`](method-patch.md) Send a PATCH request to a URL
 - [`put(string $url, array|string $data = array(), array $options = array()): bool|string`](method-put.md) Send a PUT request to a URL
-- [`send(string $url, array $data = array(), string $method = 'POST', array $options = array()): bool|string`](method-___send.md) (hookable) Send the given $data array to a URL using given method (i.e. POST, GET, PUT, DELETE, etc.)
+- [`send(string $url, array $data = array(), string $method = 'POST', array $options = array()): bool|string`](method-___send.md) (hookable) Send the given `$data` array to a URL using given method (i.e. POST, GET, PUT, DELETE, etc.)
 - [`sendOptions(string $url, array $options): array`](method-sendoptions.md) Prepare options for send method(s)
 - [`sendFopen(string $url, string $method = 'POST', array $options = array()): bool|string`](method-sendfopen.md) Send using fopen
 - [`sendCURL(string $url, string $method = 'POST', array $options = array()): bool|string`](method-sendcurl.md) Send using CURL
@@ -77,7 +77,7 @@ Thanks to @horst for his assistance with several methods in this class.
 - [`getErrorCodes(): array`](method-geterrorcodes.md) Return array of all possible HTTP error codes as (code => description)
 - [`setAllowSchemes(array|string $schemes, bool $replace = false): $this`](method-setallowschemes.md) Set schemes WireHttp is allowed to access (default=[http, https])
 - [`getAllowSchemes(): array`](method-getallowschemes.md) Return array of allowed schemes
-- [`setValidateURLOptions(array $options = array()): array`](method-setvalidateurloptions.md) Set options array given to $sanitizer->url()
+- [`setValidateURLOptions(array $options = array()): array`](method-setvalidateurloptions.md) Set options array given to `$sanitizer->url()`
 - [`getUserAgent(): string`](method-getuseragent.md) Get the current user-agent header
 - [`setUserAgent(string $userAgent)`](method-setuseragent.md) Set the current user-agent header
 - [`setTimeout(int|float $seconds): $this`](method-settimeout.md) Set the number of seconds till connection times out

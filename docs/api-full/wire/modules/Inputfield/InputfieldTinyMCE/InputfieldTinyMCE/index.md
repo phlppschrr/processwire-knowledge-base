@@ -53,7 +53,7 @@ https://www.tiny.cloud/docs/tinymce/6/
 - `$defaultsFile: string` Location of optional defaults.json file that merges with defaults.json (URL relative to PW root URL)
 - `$defaultsJSON: string` JSON that merges with the defaults.json for all instances
 - `$optionals: array` Names of optional settings that can be configured per-field
-- `$debugMode: bool|int` Makes InputfieldTinyMCE.js use verbose console.log() messages (default=false)
+- `$debugMode: bool|int` Makes InputfieldTinyMCE.js use verbose console.`log()` messages (default=false)
 - `$extraCSS: string` Extra CSS for editor, applies to all editors (appended to TinyMCE content_style setting)
 - `$pasteFilter: string` Rule string of elements and attributes allowed during filtered paste
 - `$imageFields: array` Names of fields allowed for drag-drop in images

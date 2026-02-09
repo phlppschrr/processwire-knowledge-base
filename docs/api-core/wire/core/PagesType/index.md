@@ -39,7 +39,7 @@ which is extended.
 - [`get(string|int $selectorString): Page|NullPage|null`](method-get.md) Get the first match of your selector string
 - [`save(Page $page): bool`](method-___save.md) (hookable) Save a page object and its fields to database.
 - [`delete(Page $page, bool $recursive = false): bool`](method-___delete.md) (hookable) Permanently delete a page and its fields.
-- [`add(string $name): Page|NullPage`](method-___add.md) (hookable) Adds a new page with the given $name and returns it
+- [`add(string $name): Page|NullPage`](method-___add.md) (hookable) Adds a new page with the given `$name` and returns it
 - [`getTemplate(): Template`](method-gettemplate.md) Get the template used by this type (or first template if there are multiple)
 - [`getTemplates(): array|Template[]`](method-gettemplates.md) Get the templates (plural) used by this type
 - [`getParentID(): int`](method-getparentid.md) Get the parent page ID used by this type (or first parent ID if there are multiple)

@@ -24,7 +24,7 @@ Look for errors at shutdown and log them, plus echo the error if the page is edi
 - [`__construct(Config $config)`](method-__construct.md) Construct and register shutdown function
 - [`setFatalErrorResponse(array $options)`](method-setfatalerrorresponse.md) Set fatal error response info including http code, optional extra headers, and more
 - [`prepareLabels()`](method-preparelabels.md) Setup our translation labels
-- [`getErrorMessage(array $error): string`](method-geterrormessage.md) Create more informative error message from $error array
+- [`getErrorMessage(array $error): string`](method-geterrormessage.md) Create more informative error message from `$error` array
 - [`getWireInput(): WireInput`](method-getwireinput.md) Get WireInput instance and create it if not already present in the API
 - [`getCurrentUrl(): string`](method-getcurrenturl.md) Get the current request URL or "/?/" if it cannot be determined
 - [`amendErrorMessage(string $message): string`](method-amenderrormessage.md) Add helpful info or replace error message with something better, when possible

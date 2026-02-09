@@ -34,6 +34,6 @@ Provides implementation for several Page value get() functions.
 - [`getInputfield(Page $page, string $fieldName): Inputfield|InputfieldWrapper|null`](method-getinputfield.md) Get a single Inputfield for the given field name
 - [`getField(Page $page, string|int|Field $field): Field|null`](method-getfield.md) Get a Field object in context or NULL if not valid for this page
 - [`getFields(Page $page): FieldsArray`](method-getfields.md) Returns a FieldsArray of all Field objects in the context of this Page
-- [`hasField(Page $page, int|string|Field|array $field): bool|string`](method-hasfield.md) Returns whether or not given $field name, ID or object is valid for this Page
+- [`hasField(Page $page, int|string|Field|array $field): bool|string`](method-hasfield.md) Returns whether or not given `$field` name, ID or object is valid for this Page
 - [`getFieldValue(Page $page, string $key, string $selector = ''): null|mixed`](method-getfieldvalue.md) Get the value for a non-native page field, and call upon Fieldtype to join it if not autojoined
 - [`formatFieldValue(Page $page, Field $field, mixed $value): mixed`](method-formatfieldvalue.md) Return a value consistent with the page’s output formatting state

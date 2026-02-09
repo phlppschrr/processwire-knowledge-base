@@ -32,4 +32,4 @@ public static function getModuleInfo() {
 ~~~~~
 
 ## Methods
-- [`search(string $text, array $options = array()): array`](method-search.md) Search for items containing $text and return an array representation of them
+- [`search(string $text, array $options = array()): array`](method-search.md) Search for items containing `$text` and return an array representation of them

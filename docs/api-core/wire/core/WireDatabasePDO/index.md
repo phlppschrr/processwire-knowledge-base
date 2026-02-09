@@ -81,7 +81,7 @@ $db = new WireDatabasePDO([
 - [`escapeCol(string $col): string`](method-escapecol.md) Sanitize a column name for _a-zA-Z0-9
 - [`escapeTableCol(string $str): string`](method-escapetablecol.md) Sanitize a table.column string, where either part is optional
 - [`escapeOperator(string $operator, bool|int|null $operatorType = self::operatorTypeComparison, string $default = '='): string`](method-escapeoperator.md) Sanitize comparison operator
-- [`escapeStr(string $str): string`](method-escapestr.md) Escape a string value, same as $database->quote() but without surrounding quotes
+- [`escapeStr(string $str): string`](method-escapestr.md) Escape a string value, same as `$database->quote()` but without surrounding quotes
 - [`quote(string $str): string`](method-quote.md) Quote and escape a string value
 - [`escapeLike(string $like): string`](method-escapelike.md) Escape a string value, plus escape characters necessary for a MySQL 'LIKE' phrase
 - [`__get(string $name): mixed|null|\PDO`](method-__get.md)

@@ -31,9 +31,9 @@ Group: [other](group-other.md)
 - [`setHidePages(array $hidePages, array $hidePagesNot)`](method-sethidepages.md) Set when pages should be hidden in page list
 - [`setQtyType(string $qtyType)`](method-setqtytype.md) Set the quantity type
 - [`actions(): null|ProcessPageListActions`](method-actions.md) Get the ProcessPageListActions instance
-- [`getPageActions(Page $page): array`](method-___getpageactions.md) (hookable) Get an array of available Page actions, indexed by $label => $url
+- [`getPageActions(Page $page): array`](method-___getpageactions.md) (hookable) Get an array of available Page actions, indexed by `$label` => `$url`
 - [`getPageLabel(Page $page, array $options = array()): string`](method-___getpagelabel.md) (hookable) Return the Page's label text, whether that originates from the Page's name, headline, title, etc.
-- [`getPageLabelIconMarkup(Page $page, string &$label): string`](method-getpagelabeliconmarkup.md) Get page label icon and modify $label to remove existing icon references
+- [`getPageLabelIconMarkup(Page $page, string &$label): string`](method-getpagelabeliconmarkup.md) Get page label icon and modify `$label` to remove existing icon references
 - [`getPageLabelDelimited(Page $page, string $label, array $options): string`](method-getpagelabeldelimited.md) Get page label when label format is space delimited
 - [`renderChild(Page $page): array`](method-renderchild.md) Render child item in page list
 - [`render(): string|array`](method-render.md) Render page list

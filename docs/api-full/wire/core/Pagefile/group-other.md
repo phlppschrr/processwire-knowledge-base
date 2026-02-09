@@ -22,7 +22,7 @@ Source: `wire/core/Pagefile.php`
 - `$modified_users_id: int` ID of user that last modified the file or 0 if not known (3.0.154+).
 - `$createdUser: User|NullPage` User that added/uploaded the file or NullPage if not known (3.0.154)+.
 - `$modifiedUser: User|NullPage` User that last modified the file or NullPage if not known (3.0.154)+.
-- [`$uploadName: string`](method-uploadname.md) Original unsanitized filename at upload, see notes for uploadName() method (3.0.212+).
+- [`$uploadName: string`](method-uploadname.md) Original unsanitized filename at upload, see notes for `uploadName()` method (3.0.212+).
 - [`install($filename): void`](method-___install.md)
 - [`httpUrl(): string`](method-___httpurl.md)
 - `noCacheURL($http = false): string`

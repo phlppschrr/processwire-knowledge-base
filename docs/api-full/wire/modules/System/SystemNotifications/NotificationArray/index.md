@@ -22,7 +22,7 @@ Common methods:
 - [`isValidItem(Notification $item): bool`](method-isvaliditem.md) Template method from WireArray
 - [`add(Notification $item): self|NotificationArray|WireArray`](method-add.md) Add a Notification instance to this NotificationArray
 - [`get(int|string $key): Notification|null`](method-get.md) Retrieve a Notification by index or by id
-- [`getBy(string $property, mixed $value): null|Notification`](method-getby.md) Get a notification that contains the given value for $property
+- [`getBy(string $property, mixed $value): null|Notification`](method-getby.md) Get a notification that contains the given value for `$property`
 - [`save(): bool`](method-save.md) Save any changes or additions that were made to these Notifications
 - [`__toString(): string`](method-__tostring.md) Get string value of this NotificationArray
 - [`getNew(string $flag = 'message', bool $addNow = true): Notification`](method-getnew.md) Get a new Notification

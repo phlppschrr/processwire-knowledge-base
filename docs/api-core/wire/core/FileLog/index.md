@@ -23,7 +23,7 @@ Creates and maintains a text-based log file.
 - [`__get(string $name): mixed`](method-__get.md)
 - [`cleanStr($str): string`](method-cleanstr.md) Clean a string for use in a log file entry
 - [`save(string $str, array $options = array()): bool`](method-save.md) Save the given log entry string
-- [`removeLineFromChunk(string &$line, string &$chunk, int $chunkSize)`](method-removelinefromchunk.md) Remove given $line from $chunk and add counter to end of $line indicating quantity that was removed
+- [`removeLineFromChunk(string &$line, string &$chunk, int $chunkSize)`](method-removelinefromchunk.md) Remove given `$line` from `$chunk` and add counter to end of `$line` indicating quantity that was removed
 - [`size(): int|false`](method-size.md) Get filesize
 - [`filename(): string`](method-filename.md) Get file basename
 - [`pathname(): string|bool`](method-pathname.md) Get file pathname
@@ -38,7 +38,7 @@ Creates and maintains a text-based log file.
 - [`isValidLine($line, array $options, bool &$stopNow): bool`](method-isvalidline.md) Returns whether the given log line is valid to be considered a log entry
 - [`prune($bytes): bool|int`](method-prune.md) Prune to number of bytes
 - [`pruneBytes(int $bytes): int|bool`](method-prunebytes.md) Prune log file to specified number of bytes (from the end)
-- [`pruneDate(int|string $oldestDate): int`](method-prunedate.md) Prune log file to contain only entries newer than $oldestDate
+- [`pruneDate(int|string $oldestDate): int`](method-prunedate.md) Prune log file to contain only entries newer than `$oldestDate`
 - [`delete(): bool`](method-delete.md) Delete the log file
 - [`chunkSize(int $chunkSize = 0): int`](method-chunksize.md) Get or set the default chunk size used when reading from logs and not overridden by method argument
 - [`path(): string`](method-path.md) Get path where the log is stored (with trailing slash)

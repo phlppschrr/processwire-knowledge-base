@@ -12,7 +12,7 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentStars.php`
 - `$starPartialClass: string` Class for partial (half lit star)
 - `$wrapClass: string` Wrapping element class, required for JS and CSS
 - `$wrapClassInput: string` Wrapping input element class, required for JS and CSS
-- `$countClass: string` Class used for the renderCount() method
+- `$countClass: string` Class used for the `renderCount()` method
 - `$detailsLabel: string` Star details label
 - `$countLabelSingular: string` Single count label
 - `$countLabelPlural: string` Plural count label

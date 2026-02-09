@@ -59,7 +59,7 @@ before using it. If it's a ModulePlaceholder, then the real Module can be instan
 - [`refresh(bool $showMessages = false)`](method-___refresh.md) (hookable) Refresh the modules cache
 - [`getModuleFile(string|Module $class, array|bool $options = array()): bool|string`](method-getmodulefile.md) Get the path + filename (or optionally URL) for this module
 - [`getModuleLanguageFiles(Module|string $module): array`](method-getmodulelanguagefiles.md) Get module language translation files
-- [`__invoke(string $key): Module|null`](method-__invoke.md) Enables use of $modules('ModuleName')
+- [`__invoke(string $key): Module|null`](method-__invoke.md) Enables use of `$modules`('ModuleName')
 - [`memcache(string $name, mixed $setValue = null): bool|array|mixed|null`](method-memcache.md) Set a runtime memory cache
 - [`__get(string $name): mixed`](method-__get.md) Direct read-only properties
 

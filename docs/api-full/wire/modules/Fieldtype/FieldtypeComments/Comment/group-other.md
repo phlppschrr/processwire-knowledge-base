@@ -29,5 +29,5 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 - [`$children: CommentArray`](method-children.md) Immediate child comments (since 3.0.149)
 - [`$depth: int`](method-depth.md) Current comment depth (since 3.0.149)
 - `$loaded: bool` True when comment is fully loaded from DB (since 3.0.149)
-- [`$numChildren: int`](method-numchildren.md) Number of children with no exclusions. See and use numChildren() method for more options. (since 3.0.154)
+- [`$numChildren: int`](method-numchildren.md) Number of children with no exclusions. See and use `numChildren()` method for more options. (since 3.0.154)
 - `$createdUser: User` User that created the comment

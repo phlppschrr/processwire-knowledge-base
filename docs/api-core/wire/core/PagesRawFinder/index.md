@@ -35,8 +35,8 @@ Common methods:
 - [`objects(array &$values)`](method-objects.md) Convert associative arrays to objects
 - [`entities(mixed &$value)`](method-entities.md) Apply entity encoding to all strings in given value, recursively
 - [`renames(array &$values)`](method-renames.md) Rename fields on request
-- [`ids(bool $csv = false): array|string`](method-ids.md) Get or convert $this->ids to/from CSV
-- [`setIds(array $ids)`](method-setids.md) Set the found IDs and init the $this->values array
+- [`ids(bool $csv = false): array|string`](method-ids.md) Get or convert `$this->ids` to/from CSV
+- [`setIds(array $ids)`](method-setids.md) Set the found IDs and init the `$this->values` array
 - [`flattenValues(array $values, string $prefix = '', string $delimiter = '.'): array`](method-flattenvalues.md) Flatten multidimensional values from array['a']['b']['c'] to array['a.b.c']
 - [`populateNullValues(&$values)`](method-populatenullvalues.md) Populate null values for requested fields that were not present (the 'nulls' option)
-- [`processRequestFieldsArray(array $values, string $prefix = '')`](method-processrequestfieldsarray.md) Process given array of values to populate $this->requestFields and $this->renameFields
+- [`processRequestFieldsArray(array $values, string $prefix = '')`](method-processrequestfieldsarray.md) Process given array of values to populate `$this->requestFields` and `$this->renameFields`

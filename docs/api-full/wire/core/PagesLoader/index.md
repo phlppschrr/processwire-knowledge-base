@@ -35,11 +35,11 @@ Please always use `$pages->method()` rather than `$pages->loader->method()` in c
 - [`findOne(string|int|array|Selectors $selector, array|string $options = array()): Page|NullPage`](method-findone.md) Like find() but returns only the first match as a Page object (not PageArray)
 - [`findCache(string|array|Selectors $selector, int|string|bool|null $expire = 60, array $options = array()): PageArray|array`](method-findcache.md) Find pages and cache the result for specified period of time
 - [`get(string|int|array|Selectors $selector, array $options = array()): Page|NullPage`](method-get.md) Returns the first page matching the given selector with no exclusions
-- [`has(string|int|array|Selectors $selector, bool $verbose = false, array $options = array()): array|int`](method-has.md) Is there any page that matches the given $selector in the system? (with no exclusions)
+- [`has(string|int|array|Selectors $selector, bool $verbose = false, array $options = array()): array|int`](method-has.md) Is there any page that matches the given `$selector` in the system? (with no exclusions)
 - [`getById(array|WireArray|string|int $_ids, Template|array|string|int|null $template = null, int|null $parent_id = null): PageArray|Page|NullPage`](method-getbyid.md) Given an array or CSV string of Page IDs, return a PageArray
 - [`findByName(string $name, array $options = array()): array|NullPage|Page|PageArray`](method-findbyname.md) Find page(s) by name
 - [`getPath(int|Page $id, null|array|Language|int|string $options = array()): string`](method-getpath.md) Given an ID return a path to a page, without loading the actual page
-- [`getByPath(string $path, array|bool $options = array()): Page|int`](method-getbypath.md) Get a page by its path, similar to $pages->get('/path/to/page/') but with more options
+- [`getByPath(string $path, array|bool $options = array()): Page|int`](method-getbypath.md) Get a page by its path, similar to `$pages->get('/path/to/page/')` but with more options
 - [`getFresh(Page|string|array|Selectors|int $selectorOrPage, array $options = array()): Page|NullPage`](method-getfresh.md) Get a fresh, non-cached copy of a Page from the database
 - [`getNumChildren(int|Page $page): int`](method-getnumchildren.md) Load total number of children from DB for given page
 - [`count(string|array|Selectors $selector = '', array|string $options = array()): int`](method-count.md) Count and return how many pages will match the given selector string

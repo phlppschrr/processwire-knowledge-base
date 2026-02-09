@@ -20,9 +20,9 @@ Manages array of filenames or file URLs, like for `$config->scripts` and `$confi
 
 ## Methods
 - [`add(string $filename): $this`](method-add.md) Add a file
-- [`getKey(string $filename): string`](method-getkey.md) Get key for $filename that excludes query strings
-- [`prepend(string $filename): $this`](method-prepend.md) Prepend $filename to the beginning
-- [`append(string $filename): FilenameArray`](method-append.md) Append $filename to the end
+- [`getKey(string $filename): string`](method-getkey.md) Get key for `$filename` that excludes query strings
+- [`prepend(string $filename): $this`](method-prepend.md) Prepend `$filename` to the beginning
+- [`append(string $filename): FilenameArray`](method-append.md) Append `$filename` to the end
 - [`getIterator(): \ArrayObject`](method-getiterator.md) Make iterable
 - [`urls(bool|null|string $useVersion = null): array`](method-urls.md) Get cache-busting URLs for this FilenameArray
 - [`unique(): FilenameArray`](method-unique.md) Make FilenameArray unique (deprecated)

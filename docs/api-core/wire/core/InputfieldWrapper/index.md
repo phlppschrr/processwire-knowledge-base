@@ -33,7 +33,7 @@ containing content that will be rendered before the wrapper.
 ## Methods
 - [`__construct()`](method-__construct.md) Construct the Inputfield, setting defaults for all properties
 - [`wired()`](method-wired.md) Wired to API
-- [`get(string $key): Inputfield|mixed`](method-get.md) Get a child Inputfield having a name attribute matching the given $key.
+- [`get(string $key): Inputfield|mixed`](method-get.md) Get a child Inputfield having a name attribute matching the given `$key`.
 - [`__get(string $key): mixed|null`](method-__get.md) Provides direct reference to attributes and settings, and falls back to Inputfield children
 - [`add(Inputfield|array|string $item): Inputfield|InputfieldWrapper|$this`](method-add.md) Add an Inputfield item as a child (also accepts array definition)
 - [`new(string $typeName, string|array $name = '', string|array $label = '', array|string $settings = array()): Inputfield|InputfieldSelect|InputfieldWrapper`](method-___new.md) (hookable) Create a new Inputfield, add it to this InputfieldWrapper, and return the new Inputfield
@@ -72,4 +72,4 @@ containing content that will be rendered before the wrapper.
 - [`getAll(array $options = array()): InputfieldsArray`](method-getall.md) Get all Inputfields below this recursively in a flat InputfieldWrapper (children, and their children, etc.)
 - [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get configuration Inputfields for this InputfieldWrapper
 - [`importArray(array $a, ?InputfieldWrapper $inputfields = null): $this`](method-importarray.md) Import an array of Inputfield definitions to to this InputfieldWrapper instance
-- [`populateValues(WireData|Wire|ConfigurableModule|array $data): array`](method-populatevalues.md) Populate values for all Inputfields in this wrapper from the given $data object or array.
+- [`populateValues(WireData|Wire|ConfigurableModule|array $data): array`](method-populatevalues.md) Populate values for all Inputfields in this wrapper from the given `$data` object or array.

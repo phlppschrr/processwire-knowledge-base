@@ -47,8 +47,8 @@ https://processwire.com/about/license/mit/
 - [`escapeAgainst(string $str): string`](method-escapeagainst.md) Additional escape for use in a MySQL AGAINST
 - [`value(string $value): string`](method-value.md)
 - [`match(string $tableName, string $fieldName, string $operator, string|int|array $value): $this`](method-match.md) Update the query (provided to the constructor) to match the given arguments
-- [`matchArrayFieldName(array $fieldNames, mixed $value)`](method-matcharrayfieldname.md) Match when given $fieldName is an array
-- [`matchArrayValue(array $value)`](method-matcharrayvalue.md) Match when given $value is an array
+- [`matchArrayFieldName(array $fieldNames, mixed $value)`](method-matcharrayfieldname.md) Match when given `$fieldName` is an array
+- [`matchArrayValue(array $value)`](method-matcharrayvalue.md) Match when given `$value` is an array
 - [`matchEquals(string $value)`](method-matchequals.md) Match equals, not equals, less, greater, etc.
 - [`matchIsEmpty()`](method-matchisempty.md) Match is an empty empty string, null or not present
 - [`matchIsNotEmpty()`](method-matchisnotempty.md) Match is present, not null and not an empty string

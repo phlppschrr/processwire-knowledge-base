@@ -2,7 +2,7 @@
 
 Source: `wire/core/Permissions.php`
 
-- [`find($selector): PageArray`](method-find.md) Return the permissions(s) matching the the given selector query.
+- [`find($selector): PageArray`](method-find.md) Return the `permissions(s)` matching the the given selector query.
 - [`get($selector): Permission|NullPage`](method-get.md) Return permission by given name, numeric ID or a selector string.
 - [`saveReady(Page $page): array`](method-saveready.md) Hook called just before a Permission is saved
 - [`saved(Page $page, array $changes = array(), $values = []): void`](method-___saved.md)

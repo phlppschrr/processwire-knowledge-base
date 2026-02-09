@@ -33,10 +33,10 @@ Specific text and markup tools for ProcessWire `$sanitizer` and elsewhere.
 - [`wordAlternates(string $word, array $options): array`](method-___wordalternates.md) (hookable) Hookable method to return alternate words for given word
 - [`findPlaceholders(string $str, array $options = array()): array|bool`](method-findplaceholders.md) Find and return all {placeholder} tags found in given string
 - [`hasPlaceholders(string $str, array $options = array()): bool`](method-hasplaceholders.md) Does the string have any {placeholder} tags in it?
-- [`populatePlaceholders(string $str, WireData|object|array $vars, array $options = array()): string`](method-populateplaceholders.md) Given a string ($str) and values ($vars), populate placeholder “{tags}” in the string with the values
+- [`populatePlaceholders(string $str, WireData|object|array $vars, array $options = array()): string`](method-populateplaceholders.md) Given a string (`$str`) and values (`$vars`), populate placeholder “{tags}” in the string with the values
 - [`diffArray(array $oldArray, array $newArray): array`](method-diffarray.md) Given two arrays, return array of the changes with 'ins' and 'del' keys
-- [`diffMarkup(string $old, string $new, array $options = array()): string`](method-diffmarkup.md) Given two strings ($old and $new) return a diff string in HTML markup
-- [`findReplaceEscapeChars(&$str, array $escapeChars, array $options = array()): array`](method-findreplaceescapechars.md) Find escaped characters in $str, replace them with a placeholder, and return the placeholders
+- [`diffMarkup(string $old, string $new, array $options = array()): string`](method-diffmarkup.md) Given two strings (`$old` and `$new`) return a diff string in HTML markup
+- [`findReplaceEscapeChars(&$str, array $escapeChars, array $options = array()): array`](method-findreplaceescapechars.md) Find escaped characters in `$str`, replace them with a placeholder, and return the placeholders
 - [`substr($str, $start, $length = null)`](method-substr.md) ******************************************************************************************************** MULTIBYTE PHP STRING FUNCTIONS THAT FALLBACK WHEN MBSTRING NOT AVAILABLE
 - [`substr(string $str, int $start, int|null $length = null): string`](method-substr.md) Get part of a string
 - [`strpos(string $haystack, string $needle, int $offset = 0): bool|false|int`](method-strpos.md) Find position of first occurrence of string in a string

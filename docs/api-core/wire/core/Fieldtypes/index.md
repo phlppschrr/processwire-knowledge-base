@@ -23,7 +23,7 @@ Maintains a collection of Fieldtype modules.
 
 ## Methods
 - [`__construct()`](method-__construct.md) Construct
-- [`init()`](method-init.md) Construct the $fieldtypes API var (load all Fieldtype modules into it)
+- [`init()`](method-init.md) Construct the `$fieldtypes` API var (load all Fieldtype modules into it)
 - [`preload()`](method-preload.md) Convert all ModulePlaceholders to Fieldtype modules
 - [`isValidItem(Wire|Fieldtype $item): bool`](method-isvaliditem.md) Per WireArray interface, items added to Fieldtypes must be Fieldtype instances
 - [`isValidKey(string|int $key): bool`](method-isvalidkey.md) Per the WireArray interface, keys must be strings (fieldtype class names)

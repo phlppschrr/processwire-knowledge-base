@@ -24,12 +24,12 @@ If the destination path does not exist, it will be created.
 - [`init()`](method-init.md) Initialize
 - [`__destruct()`](method-__destruct.md) Destruct by removing overwritten backup files (if applicable)
 - [`execute(): array`](method-execute.md) Execute/process the upload
-- [`getPhpFiles(): array|bool`](method-getphpfiles.md) Returns PHP's $_FILES or one constructed from an ajax upload
+- [`getPhpFiles(): array|bool`](method-getphpfiles.md) Returns PHP's `$_FILES` or one constructed from an ajax upload
 - [`getUploadDir(): string`](method-getuploaddir.md) Get the directory where files should upload to
-- [`getPhpFilesAjax(): array|bool`](method-getphpfilesajax.md) Handles an ajax file upload and constructs a resulting $_FILES
+- [`getPhpFilesAjax(): array|bool`](method-getphpfilesajax.md) Handles an ajax file upload and constructs a resulting `$_FILES`
 - [`isValidExtension(string $name): bool`](method-isvalidextension.md) Does the given filename have a valid extension?
 - [`isValidUpload(string $name, int $size, int $error): bool`](method-isvalidupload.md) Is the given upload information valid?
-- [`checkDestinationPath(): bool`](method-checkdestinationpath.md) Check that the destination path exists and populate $this->errors with appropriate message if it doesn't
+- [`checkDestinationPath(): bool`](method-checkdestinationpath.md) Check that the destination path exists and populate `$this->errors` with appropriate message if it doesn't
 - [`getUniqueFilename(string $destination): string`](method-getuniquefilename.md) Given a filename/path destination, adjust it to ensure it is unique
 - [`validateFilename(string $value, array $extensions = array()): bool|string`](method-validatefilename.md) Sanitize/validate a given filename
 - [`saveUpload(string $tmp_name, string $filename, bool $ajax = false): array|bool|string`](method-saveupload.md) Save the uploaded file

@@ -24,11 +24,11 @@ extended for more specific needs in various Fieldtypes.
 
 USAGE:
 
-`$m` = new MarkupFieldtype(`$page`, `$field`, `$value`);
+`$m` = new `MarkupFieldtype($page, $field, $value)`;
 echo `$m->render()`;
 
 // Alternate usage:
-`$m` = new MarkupFieldtype();
+`$m` = new `MarkupFieldtype()`;
 `$m->setPage($page)`;
 `$m->setField($field)`;
 `$m->setValue($value)`;
@@ -40,8 +40,8 @@ echo `$m->render('property')`;
 ## Methods
 - [`__construct(?Page $page = null, ?Field $field = null, mixed $value = null)`](method-__construct.md) Construct the MarkupFieldtype
 - [`render(string $property = ''): string`](method-render.md) Render markup for the field or for the property from field
-- [`renderValue(mixed $value): string`](method-rendervalue.md) Render the entire $page->get($field->name) value.
-- [`renderProperty(string $property, mixed $value): string`](method-renderproperty.md) Render the just a property from the $page->get($field->name) value.
+- [`renderValue(mixed $value): string`](method-rendervalue.md) Render the entire `$page->get($field->name)` value.
+- [`renderProperty(string $property, mixed $value): string`](method-renderproperty.md) Render the just a property from the `$page->get($field->name)` value.
 - [`valueToString(mixed $value, bool $encode = true): string`](method-valuetostring.md) Convert any value to a string
 - [`arrayToString(array|WireArray $value, bool $encode = true): string`](method-arraytostring.md) Render an unknown array or WireArray to a string
 - [`objectToString(Wire|object $value): string`](method-objecttostring.md) Render an object to a string

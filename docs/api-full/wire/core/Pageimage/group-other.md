@@ -7,8 +7,8 @@ Source: `wire/core/Pageimage.php`
 - [`$focus: array`](method-focus.md) Focus array contains 'top' (float), 'left' (float), 'zoom' (int), and 'default' (bool) properties.
 - `$focusStr: string` Readable string containing focus information.
 - `$hasFocus: bool` Does this image have custom focus settings? (i.e. `$focus`['default'] == true)
-- [`$suffix: array`](method-suffix.md) Array containing file suffix(es).
-- `$suffixStr: string` String of file suffix(es) separated by comma.
+- [`$suffix: array`](method-suffix.md) Array containing file `suffix(es)`.
+- `$suffixStr: string` String of file `suffix(es)` separated by comma.
 - `$alt: string` Convenient alias for the 'description' property, unless overridden (since 3.0.125).
 - `$src: string` Convenient alias for the 'url' property, unless overridden (since 3.0.125).
 - [`$webp: PagefileExtra`](method-webp.md) Access webp version of image (since 3.0.132)

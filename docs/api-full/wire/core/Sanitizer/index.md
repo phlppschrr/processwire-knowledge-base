@@ -183,14 +183,14 @@ and thus it’ll return a non-value rather than a sanitized value. See the `Sani
 - [`float(float|string|int $value, array $options = array()): float|string`](method-float.md) Sanitize to floating point value
 - [`array(array|string|mixed $value, string|array $sanitizer = null, array $options = array()): array`](method-___array.md) (hookable) Sanitize array or CSV string to array of values, optionally sanitized by given method
 - [`arrayVal(mixed $value, array $options = array()): array`](method-arrayval.md) Simply sanitize value to array with no conversions
-- [`intArray(array|string|mixed $value, array|bool $options = array()): array`](method-intarray.md) Sanitize array or CSV string to array of unsigned integers (or signed integers if specified $min is less than 0)
+- [`intArray(array|string|mixed $value, array|bool $options = array()): array`](method-intarray.md) Sanitize array or CSV string to array of unsigned integers (or signed integers if specified `$min` is less than 0)
 - [`intArrayVal(array|string|mixed $value, array|bool $options = array()): array`](method-intarrayval.md) Sanitize array to be all unsigned integers with no conversions
 - [`minArray(array $data, bool|array $allowEmpty = false, bool $convert = false): array`](method-minarray.md) Minimize an array to remove empty values
 - [`flatArray(array $value, array $options = array()): array`](method-flatarray.md) Given a potentially multi-dimensional array, return a flat 1-dimensional array
 - [`wordsArray(string|array $value, array $options = array()): array`](method-wordsarray.md) Return array of all words in given value (excluding punctuation and other non-word characters)
 - [`wordsArrayNumberReplacements(string &$value, string $prefix = 'REP'): array`](method-wordsarraynumberreplacements.md) Identify decimals, minus signs and commas in numbers, replace them, and return the replacements array
-- [`option(string|int $value, array $allowedValues = array()): string|int|null`](method-option.md) Return $value if it exists in $allowedValues, or null if it doesn't
-- [`options(array $values, array $allowedValues = array()): array`](method-options.md) Return given values that that also exist in $allowedValues whitelist
+- [`option(string|int $value, array $allowedValues = array()): string|int|null`](method-option.md) Return `$value` if it exists in `$allowedValues`, or null if it doesn't
+- [`options(array $values, array $allowedValues = array()): array`](method-options.md) Return given values that that also exist in `$allowedValues` whitelist
 - [`bool($value): bool`](method-bool.md) Convert the given value to a boolean
 - [`bit(string|int|array $value): int`](method-bit.md) Sanitize to a bit, returning only integer 0 or 1
 - [`checkbox(int|bool|string|mixed|null $value, int|bool|string|mixed|null $yes = true, int|bool|string|mixed|null $no = false): int|bool|string|mixed|null`](method-checkbox.md) Sanitize checkbox value

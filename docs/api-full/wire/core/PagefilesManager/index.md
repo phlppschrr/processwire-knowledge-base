@@ -46,7 +46,7 @@ $filesURL = $page->filesManager->url();
 - [`__construct(Page $page)`](method-__construct.md) Construct the PagefilesManager and ensure all needed paths are created
 - [`getFiles(): array`](method-getfiles.md) Get an array of all published filenames on the current Page.
 - [`getFile(string $name): Pagefile|Pageimage|null`](method-getfile.md) Get the Pagefile object containing the given filename.
-- [`_copyFiles(string $fromPath, string $toPath, bool $rename = false): int`](method-_copyfiles.md) Recursively copy all files in $fromPath to $toPath, for internal use
+- [`_copyFiles(string $fromPath, string $toPath, bool $rename = false): int`](method-_copyfiles.md) Recursively copy all files in `$fromPath` to `$toPath`, for internal use
 - [`copyFiles($toPath): int`](method-copyfiles.md) Recursively copy all files managed by this PagefilesManager into a new path.
 - [`importFiles(string $fromPath, bool $move = false): int`](method-importfiles.md) Copy/import files from given path into the page’s files directory
 - [`replaceFiles(string $fromPath, bool $move = false): int`](method-replacefiles.md) Replace all page’s files with those from given path

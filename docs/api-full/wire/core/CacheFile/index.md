@@ -31,7 +31,7 @@ https://processwire.com/about/license/mit/
 - [`exists(): bool`](method-exists.md) Does the cache file exist?
 - [`get(): string`](method-get.md) Get the contents of the cache based on the primary or secondary ID
 - [`isCacheFileExpired(string $filename): bool`](method-iscachefileexpired.md) Is the given cache filename expired?
-- [`save(string $data): bool`](method-save.md) Saves $data to the cache
+- [`save(string $data): bool`](method-save.md) Saves `$data` to the cache
 - [`remove()`](method-remove.md) Removes all cache files for primaryID
 - [`removeFilename(string $filename)`](method-removefilename.md) Removes just the given file, as opposed to remove() which removes the entire cache for primaryID
 - [`expireAll()`](method-expireall.md) Causes all cache files in this type to be immediately expired

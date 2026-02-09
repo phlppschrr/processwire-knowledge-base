@@ -39,13 +39,13 @@ May also be accessed as array.
 - [`set(string $key, mixed $value): $this`](method-set.md) Set a value to this object’s data
 - [`setQuietly(string $key, mixed $value): $this`](method-setquietly.md) Same as set() but without change tracking
 - [`setArray(array $data): $this`](method-setarray.md) Set an array of key=value pairs
-- [`__set(string $key, mixed $value)`](method-__set.md) Provides direct reference access to set values in the $data array
+- [`__set(string $key, mixed $value)`](method-__set.md) Provides direct reference access to set values in the `$data` array
 - [`get(string|object $key): mixed|null`](method-get.md) Retrieve the value for a previously set property, or retrieve an API variable
 - [`data(string|array $key = null, mixed $value = null): array|WireData|null`](method-data.md) Get or set a low-level data value
 - [`getArray(): array`](method-getarray.md) Returns the full array of properties set to this object
 - [`getDot(string $key): null|mixed`](method-getdot.md) Get a property via dot syntax: field.subfield.subfield
-- [`__get(string $name): mixed|null`](method-__get.md) Provides direct reference access to variables in the $data array
-- [`__invoke(string $key): mixed`](method-__invoke.md) Enables use of $var('key')
+- [`__get(string $name): mixed|null`](method-__get.md) Provides direct reference access to variables in the `$data` array
+- [`__invoke(string $key): mixed`](method-__invoke.md) Enables use of `$var`('key')
 - [`remove(string $key): $this`](method-remove.md) Remove a previously set property
 - [`getIterator(): \ArrayObject`](method-getiterator.md) Enables the object data properties to be iterable as an array
 - [`has(string $key): bool`](method-has.md) Does this object have the given property?

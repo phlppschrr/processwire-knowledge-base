@@ -2,7 +2,7 @@
 
 Source: `wire/core/Roles.php`
 
-- [`find($selector): PageArray`](method-find.md) Return the Role(s) matching the the given selector.
+- [`find($selector): PageArray`](method-find.md) Return the `Role(s)` matching the the given selector.
 - [`add($name): Role`](method-___add.md) Add new Role with the given name and return it.
 - [`save(Role $role): bool`](method-___save.md) Save given role.
 - [`delete(Role $role): bool`](method-___delete.md) Delete the given role.

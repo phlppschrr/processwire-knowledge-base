@@ -29,7 +29,7 @@ Group: [other](group-other.md)
 - [`getProperty(string $property): mixed|null`](method-getproperty.md) Enables this WireArray to behave like the first item (for getting properties)
 - [`setProperty(string $property, mixed $value): SelectableOption|SelectableOptionArray`](method-setproperty.md) Enables this WireArray to behave like the first item (for setting properties)
 - [`isIdentical(WireArray $items, bool|int $strict = true): bool`](method-isidentical.md) Is the given WireArray identical to this one?
-- [`getByProperty(string $property, string|int $value, bool|null $noValue = false): bool|null|SelectableOption`](method-getbyproperty.md) Get SelectableOption by $property matching $value, or boolean false if not found
+- [`getByProperty(string $property, string|int $value, bool|null $noValue = false): bool|null|SelectableOption`](method-getbyproperty.md) Get SelectableOption by `$property` matching `$value`, or boolean false if not found
 - [`getOptionByProperty(string $property, string|int $value): bool|SelectableOption`](method-getoptionbyproperty.md) Alias of getByProperty
 - [`addByProperty(string $property, string|int $value): SelectableOption|false`](method-addbyproperty.md) Add option by property (id, name, title)
 - [`addByID(int $id): false|SelectableOption`](method-addbyid.md) Add by option ID

@@ -17,7 +17,7 @@ Common methods:
 
 ## Methods
 - [`moduleFileExt(string $class, int $setValue = null): int`](method-modulefileext.md) Get or set module file extension type (1 or 2)
-- [`findModuleFiles(string $path, bool $readCache = false, int $level = 0): array`](method-findmodulefiles.md) Find new module files in the given $path
+- [`findModuleFiles(string $path, bool $readCache = false, int $level = 0): array`](method-findmodulefiles.md) Find new module files in the given `$path`
 - [`getModuleFile(string|Module $class, array|bool $options = array()): bool|string`](method-getmodulefile.md) Get the path + filename (or optionally URL) for module
 - [`includeModuleFile(string $file, string $moduleName): bool`](method-includemodulefile.md) Include the given filename
 - [`compile(Module|string $moduleName, string $file = '', string|null $namespace = null): string|bool`](method-compile.md) Compile and return the given file for module, if allowed to do so
