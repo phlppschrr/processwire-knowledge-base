@@ -48,6 +48,6 @@ In `_manifest.json`, hookable methods include `hookable`, `name_public`, and `na
 
 ## Maintenance (For Developers Only)
 Only run these when explicitly asked to update documentation.
-- `scripts/update-docs.sh` to sync ProcessWire source and rebuild `docs/core` and `docs/full`.
-- `python3 scripts/cache-docs.py` to refresh the local HTML cache for guides.
+- `python3 src/update_docs.py` to rebuild `docs/core`, `docs/full`, `docs/guides`, and `docs/_tasks.json`.
+- `python3 src/cache_docs.py` to refresh the local HTML cache for guides.
 - `python3 src/build_guides.py` to rebuild `docs/guides/` from cached HTML.

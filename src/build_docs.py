@@ -7,6 +7,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
+from sync_processwire import sync_processwire
+
 DOCBLOCK_RE = re.compile(r"/\*\*(.*?)\*/", re.S)
 CLASS_DEF_RE = re.compile(
     r"^[ \t]*(?:abstract\s+|final\s+)?(class|interface|trait)\s+([A-Za-z_][A-Za-z0-9_]*)",
@@ -2039,13 +2041,53 @@ def clean_output_dir(out_dir: Path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--source", required=True, help="Path to ProcessWire source root")
+    parser.add_argument(
+        "--source",
+        default="sources/processwire",
+        help="Path to ProcessWire source root (default: sources/processwire)",
+    )
     parser.add_argument("--out", required=True, help="Output directory for docs")
     parser.add_argument("--profile", choices=[PROFILE_CORE, PROFILE_FULL], default=PROFILE_FULL)
+    parser.add_argument(
+        "--fetch",
+        action="store_true",
+        help="Fetch ProcessWire source if missing or refresh existing",
+    )
+    parser.add_argument(
+        "--branch",
+        default=os.getenv("PW_SOURCE_BRANCH", "dev"),
+        help="ProcessWire branch to fetch (default: PW_SOURCE_BRANCH or 'dev')",
+    )
+    parser.add_argument(
+        "--remote",
+        default=os.getenv("PW_SOURCE_REMOTE", "git@github.com:processwire/processwire.git"),
+        help="ProcessWire git remote URL",
+    )
+    parser.add_argument(
+        "--lock",
+        default=None,
+        help="Write lock file (default: <source>/../processwire.lock)",
+    )
     args = parser.parse_args()
 
     source_dir = Path(args.source)
     out_dir = Path(args.out)
+
+    if args.fetch or not source_dir.exists():
+        lock_path = Path(args.lock) if args.lock else source_dir.parent / "processwire.lock"
+        try:
+            sync_processwire(
+                source_dir=source_dir,
+                branch=args.branch,
+                remote_url=args.remote,
+                update=args.fetch,
+                lock_path=lock_path,
+            )
+        except Exception as exc:
+            raise SystemExit(str(exc))
+
+    if not source_dir.exists():
+        raise SystemExit(f"ProcessWire source not found: {source_dir}")
     out_dir.mkdir(parents=True, exist_ok=True)
     clean_output_dir(out_dir)
     prune_skipped_docs(out_dir)

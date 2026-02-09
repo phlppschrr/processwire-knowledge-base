@@ -1,6 +1,7 @@
 .DS_Store
-/source/processwire/
-/source/processwire.backup*
+/sources/processwire/
+/sources/processwire.backup*
+/sources/processwire.lock
 __pycache__/
 *.pyc
-/cache/docs-html/
+/sources/docs-html/

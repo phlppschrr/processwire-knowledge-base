@@ -6,16 +6,18 @@ import html
 import json
 import os
 import re
+import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urlparse
 from html.parser import HTMLParser
 
+from cache_docs import fetch_urls
 try:
     from bs4 import BeautifulSoup, Tag, NavigableString
 except ImportError:
     import sys
-    sys.exit("Error: 'bs4' module not found.\nPlease run './scripts/update-docs.sh' to set up the environment, or verify you have activated the virtual environment (source .venv/bin/activate).")
+    sys.exit("Error: 'bs4' module not found.\nPlease run 'python3 src/update_docs.py' to set up the environment, or verify you have activated the virtual environment (source .venv/bin/activate).")
 
 IGNORE_TAGS = {"script", "style", "noscript"}
 SUPPRESS_TOKENS = {
@@ -773,14 +775,44 @@ def build_search_index(pages: list[GuidePage], out_path: Path, root: Path) -> No
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build guide summaries from cached HTML")
-    parser.add_argument("--cache", default="cache/docs-html", help="Cache root")
-    parser.add_argument("--urls", default="cache/urls.txt", help="URL list")
+    parser.add_argument("--cache", default="sources/docs-html", help="Cache root")
+    parser.add_argument("--urls", default="sources/urls.txt", help="URL list")
     parser.add_argument("--out", default="docs/guides", help="Output directory")
+    parser.add_argument(
+        "--fetch",
+        action="store_true",
+        help="Fetch HTML cache if missing or refresh existing",
+    )
+    parser.add_argument(
+        "--sleep",
+        type=float,
+        default=0.5,
+        help="Sleep between requests in seconds (default: 0.5)",
+    )
+    parser.add_argument(
+        "--timeout",
+        type=float,
+        default=30.0,
+        help="Request timeout in seconds (default: 30)",
+    )
     args = parser.parse_args()
 
     cache_root = Path(args.cache)
     urls_path = Path(args.urls)
     out_dir = Path(args.out)
+
+    if args.fetch or not cache_root.exists() or not (cache_root / "_index.json").exists():
+        try:
+            fetch_urls(
+                urls_path,
+                cache_root,
+                refresh=args.fetch,
+                sleep=args.sleep,
+                timeout=args.timeout,
+                reporter=lambda msg: print(msg, file=sys.stderr),
+            )
+        except (FileNotFoundError, ValueError) as exc:
+            raise SystemExit(str(exc))
 
     if not cache_root.exists():
         raise SystemExit(f"Cache root not found: {cache_root}")

@@ -325,7 +325,7 @@ def convert_guides(cache, urls, out):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--cache", default="cache/docs-html")
-    parser.add_argument("--urls", default="cache/urls.txt")
+    parser.add_argument("--cache", default="sources/docs-html")
+    parser.add_argument("--urls", default="sources/urls.txt")
     parser.add_argument("--out", default="docs/guides")
     convert_guides(**vars(parser.parse_args()))

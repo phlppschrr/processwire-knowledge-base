@@ -9,7 +9,7 @@ import time
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Callable
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
@@ -112,17 +112,65 @@ def write_index(results: Iterable[CacheResult], out_dir: Path) -> None:
     )
 
 
+def fetch_urls(
+    url_path: Path,
+    out_dir: Path,
+    refresh: bool = False,
+    sleep: float = 0.5,
+    timeout: float = 30.0,
+    reporter: Callable[[str], None] | None = None,
+) -> tuple[list[CacheResult], dict]:
+    if not url_path.exists():
+        raise FileNotFoundError(f"URL list not found: {url_path}")
+
+    urls = load_urls(url_path)
+    if not urls:
+        raise ValueError("No URLs to fetch.")
+
+    results: list[CacheResult] = []
+    fetched = cached = failed = 0
+
+    for idx, url in enumerate(urls, start=1):
+        rel = url_to_relpath(url)
+        out_path = out_dir / rel
+        result = fetch_url(url, out_path, refresh, timeout)
+        results.append(result)
+        if result.status == "fetched":
+            fetched += 1
+        elif result.status == "cached":
+            cached += 1
+        else:
+            failed += 1
+        if reporter:
+            reporter(
+                f"[{idx}/{len(urls)}] {result.status.upper()}: {url} -> {out_path}"
+            )
+        if idx < len(urls) and sleep:
+            time.sleep(sleep)
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    write_index(results, out_dir)
+
+    stats = {
+        "fetched": fetched,
+        "cached": cached,
+        "failed": failed,
+        "index": str(out_dir / "_index.json"),
+    }
+    return results, stats
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Cache ProcessWire docs HTML")
     parser.add_argument(
         "--urls",
-        default="cache/urls.txt",
-        help="Path to URL list (default: cache/urls.txt)",
+        default="sources/urls.txt",
+        help="Path to URL list (default: sources/urls.txt)",
     )
     parser.add_argument(
         "--out",
-        default="cache/docs-html",
-        help="Output directory (default: cache/docs-html)",
+        default="sources/docs-html",
+        help="Output directory (default: sources/docs-html)",
     )
     parser.add_argument(
         "--refresh",
@@ -146,42 +194,24 @@ def main() -> int:
     url_path = Path(args.urls)
     out_dir = Path(args.out)
 
-    if not url_path.exists():
-        print(f"URL list not found: {url_path}", file=sys.stderr)
-        return 2
-
-    urls = load_urls(url_path)
-    if not urls:
-        print("No URLs to fetch.", file=sys.stderr)
-        return 2
-
-    results: list[CacheResult] = []
-    fetched = cached = failed = 0
-    for idx, url in enumerate(urls, start=1):
-        rel = url_to_relpath(url)
-        out_path = out_dir / rel
-        result = fetch_url(url, out_path, args.refresh, args.timeout)
-        results.append(result)
-        if result.status == "fetched":
-            fetched += 1
-        elif result.status == "cached":
-            cached += 1
-        else:
-            failed += 1
-        print(
-            f"[{idx}/{len(urls)}] {result.status.upper()}: {url} -> {out_path}",
-            file=sys.stderr,
+    try:
+        _, stats = fetch_urls(
+            url_path,
+            out_dir,
+            refresh=args.refresh,
+            sleep=args.sleep,
+            timeout=args.timeout,
+            reporter=lambda msg: print(msg, file=sys.stderr),
         )
-        if idx < len(urls) and args.sleep:
-            time.sleep(args.sleep)
+    except (FileNotFoundError, ValueError) as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-    write_index(results, out_dir)
     print(
-        f"Done. fetched={fetched} cached={cached} failed={failed} index={out_dir / '_index.json'}",
+        f"Done. fetched={stats['fetched']} cached={stats['cached']} failed={stats['failed']} index={stats['index']}",
         file=sys.stderr,
     )
-    return 0 if failed == 0 else 1
+    return 0 if stats["failed"] == 0 else 1
 
 
 if __name__ == "__main__":

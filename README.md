@@ -30,27 +30,30 @@ pip install -r requirements.txt
 
 ## Update
 ```bash
-./scripts/update-docs.sh
+python3 src/update_docs.py
 ```
 
 This will:
-- Sync ProcessWire source (DEV branch) into `source/processwire`
-- Build `docs/core` and `docs/full`
+- Build `docs/core` and `docs/full` from `sources/processwire`
+- Build `docs/guides` from `sources/docs-html`
+- Build `docs/_tasks.json`
+
+Downloads happen only if sources are missing. Use `python3 src/update_docs.py --fetch` to refresh.
 
 ## Optional: Cache Official Docs (HTML)
 ```bash
-python3 scripts/cache-docs.py
+python3 src/cache_docs.py
 ```
 
 This will:
-- Download the ProcessWire guides from `cache/urls.txt`
-- Store HTML under `cache/docs-html/` with an `_index.json` manifest
+- Download the ProcessWire guides from `sources/urls.txt`
+- Store HTML under `sources/docs-html/` with an `_index.json` manifest
 
 Then build the guides (Markdown):
 ```bash
-python3 src/convert_guides.py
+python3 src/build_guides.py
 ```
 
 ## Notes
 - HTMLPurifier-related docs are skipped.
-- Source is not committed (see `.gitignore`).
+- Sources are not committed (see `.gitignore`).
