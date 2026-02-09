@@ -86,6 +86,7 @@ class MemberDoc:
     signature_params: str | None
     signature_return: str | None
     is_static: bool
+    const_value: str | None = None
     is_virtual: bool = False
 
 
@@ -923,6 +924,115 @@ def build_hook_example(class_name: str, member: MemberDoc, after: bool) -> list[
     return lines
 
 
+def extract_const_value(text: str, decl_pos: int, name: str) -> str | None:
+    if decl_pos < 0 or decl_pos >= len(text):
+        return None
+    snippet = text[decl_pos:]
+    pattern = rf"\s*(?:(?:public|protected|private)\s+)?const\s+{re.escape(name)}\b"
+    match = re.match(pattern, snippet)
+    if not match:
+        return None
+    idx = decl_pos + match.end()
+    while idx < len(text) and text[idx].isspace():
+        idx += 1
+    if idx >= len(text) or text[idx] != "=":
+        return None
+    idx += 1
+    while idx < len(text) and text[idx].isspace():
+        idx += 1
+
+    buf: list[str] = []
+    depth_paren = 0
+    depth_brack = 0
+    depth_brace = 0
+    in_single = False
+    in_double = False
+    escape = False
+
+    while idx < len(text):
+        ch = text[idx]
+        if escape:
+            buf.append(ch)
+            escape = False
+            idx += 1
+            continue
+        if ch == "\\":
+            buf.append(ch)
+            escape = True
+            idx += 1
+            continue
+        if in_single:
+            buf.append(ch)
+            if ch == "'":
+                in_single = False
+            idx += 1
+            continue
+        if in_double:
+            buf.append(ch)
+            if ch == '"':
+                in_double = False
+            idx += 1
+            continue
+        if ch == "'":
+            in_single = True
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == '"':
+            in_double = True
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == "/" and idx + 1 < len(text):
+            nxt = text[idx + 1]
+            if nxt == "/":
+                break
+            if nxt == "*":
+                idx += 2
+                end = text.find("*/", idx)
+                if end == -1:
+                    break
+                idx = end + 2
+                continue
+        if ch == "(":
+            depth_paren += 1
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == ")":
+            depth_paren = max(depth_paren - 1, 0)
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == "[":
+            depth_brack += 1
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == "]":
+            depth_brack = max(depth_brack - 1, 0)
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == "{":
+            depth_brace += 1
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch == "}":
+            depth_brace = max(depth_brace - 1, 0)
+            buf.append(ch)
+            idx += 1
+            continue
+        if ch in {",", ";"} and depth_paren == 0 and depth_brack == 0 and depth_brace == 0:
+            break
+        buf.append(ch)
+        idx += 1
+
+    value = "".join(buf).strip()
+    return value or None
+
+
 def parse_order_groups(line: str) -> list[str]:
     stripped = line.strip()
     if not stripped.startswith("#pw-order-groups"):
@@ -1460,6 +1570,7 @@ def parse_docblocks(text: str, has_classes: bool):
                 )
             )
         elif kind == "const":
+            const_value = extract_const_value(text, decl_pos, name)
             members.append(
                 MemberDoc(
                     name=name,
@@ -1470,6 +1581,7 @@ def parse_docblocks(text: str, has_classes: bool):
                     signature_params=None,
                     signature_return=None,
                     is_static=False,
+                    const_value=const_value,
                 )
             )
 
@@ -1529,6 +1641,16 @@ def build_doc_index(
     return DocIndex(class_dirs=class_dirs, method_files=method_files, const_files=const_files)
 
 
+def format_const_inline_value(value: str | None) -> str | None:
+    if not value:
+        return None
+    if "\n" in value or "\r" in value:
+        return None
+    if len(value) > 80:
+        return None
+    return value
+
+
 def format_method_heading(
     class_name: str,
     member: MemberDoc,
@@ -1539,6 +1661,9 @@ def format_method_heading(
     sig = f"({params})"
     if member.kind != "method":
         label = f"{class_name}::{member.name}"
+        const_value = format_const_inline_value(member.const_value)
+        if const_value:
+            label = f"{label} = {const_value}"
         return f"# {label}"
 
     if member.is_static:
@@ -1644,6 +1769,18 @@ def render_member_doc(
         f"Source: `{rel_path}`",
         "",
     ]
+    if member.kind != "method" and member.const_value:
+        inline_value = format_const_inline_value(member.const_value)
+        if inline_value:
+            lines.append(f"Value: `{inline_value}`")
+            lines.append("")
+        else:
+            lines.append("Value:")
+            lines.append("")
+            lines.append("~~~~~")
+            lines.append(member.const_value)
+            lines.append("~~~~~")
+            lines.append("")
 
     description_lines, example_blocks = split_body_and_examples(body_lines)
     if description_lines:
@@ -1849,7 +1986,9 @@ def write_doc(
                 f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}{summary_label}"
             )
         else:
-            const_links.append(f"- [`{member.name}`](const-{slugify(member.name)}.md)")
+            const_value = format_const_inline_value(member.const_value)
+            const_label = f"{member.name} = {const_value}" if const_value else member.name
+            const_links.append(f"- [`{const_label}`](const-{slugify(member.name)}.md)")
 
     if method_links:
         if lines and lines[-1] != "":

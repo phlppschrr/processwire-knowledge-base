@@ -1,6 +1,8 @@
-# Notice::allowMarkup
+# Notice::allowMarkup = 32
 
 Source: `wire/core/Notice.php`
+
+Value: `32`
 
 Flag indicates the notice is allowed to contain markup and won’t be automatically entity encoded
 

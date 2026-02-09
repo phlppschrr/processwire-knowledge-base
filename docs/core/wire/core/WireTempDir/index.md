@@ -26,4 +26,4 @@ Methods:
 - [`create(string $name = '', string $basePath = ''): string`](method-create.md)
 
 Constants:
-- [`hiddenFileName`](const-hiddenfilename.md)
+- [`hiddenFileName = '.wtd'`](const-hiddenfilename.md)

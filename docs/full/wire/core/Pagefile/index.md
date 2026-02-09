@@ -50,4 +50,4 @@ Methods:
 - [`__debugInfo(): array`](method-__debuginfo.md) Debug info
 
 Constants:
-- [`createdTemp`](const-createdtemp.md)
+- [`createdTemp = 10`](const-createdtemp.md)

@@ -30,8 +30,8 @@ Methods:
 - [`getNamespaces(): array`](method-getnamespaces.md) Get an array of all unique, non-default, non-root module namespaces mapped to directory names
 
 Constants:
-- [`moduleInfoCacheName`](const-moduleinfocachename.md)
-- [`moduleInfoCacheVerboseName`](const-moduleinfocacheverbosename.md)
-- [`moduleInfoCacheUninstalledName`](const-moduleinfocacheuninstalledname.md)
-- [`moduleLastVersionsCacheName`](const-modulelastversionscachename.md)
-- [`defaultNamespace`](const-defaultnamespace.md)
+- [`moduleInfoCacheName = 'Modules.info'`](const-moduleinfocachename.md)
+- [`moduleInfoCacheVerboseName = 'ModulesVerbose.info'`](const-moduleinfocacheverbosename.md)
+- [`moduleInfoCacheUninstalledName = 'ModulesUninstalled.info'`](const-moduleinfocacheuninstalledname.md)
+- [`moduleLastVersionsCacheName = 'ModulesVersions.info'`](const-modulelastversionscachename.md)
+- [`defaultNamespace = "\\ProcessWire\\"`](const-defaultnamespace.md)

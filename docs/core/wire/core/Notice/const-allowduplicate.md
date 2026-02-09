@@ -1,6 +1,8 @@
-# Notice::allowDuplicate
+# Notice::allowDuplicate = 8388608
 
 Source: `wire/core/Notice.php`
+
+Value: `8388608`
 
 Present duplicate notices separately rather than collapsing them to one
 

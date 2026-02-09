@@ -1,6 +1,8 @@
-# Inputfield::collapsedTab
+# Inputfield::collapsedTab = 20
 
 Source: `wire/core/Inputfield.php`
+
+Value: `20`
 
 Collapsed into a separate tab
 

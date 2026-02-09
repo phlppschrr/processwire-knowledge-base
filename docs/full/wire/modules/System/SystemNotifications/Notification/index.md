@@ -41,4 +41,4 @@ Methods:
 - [`__toString(): string`](method-__tostring.md) String value of a Notification
 
 Constants:
-- [`flagDebug`](const-flagdebug.md)
+- [`flagDebug = 2`](const-flagdebug.md)

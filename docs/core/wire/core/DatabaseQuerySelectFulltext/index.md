@@ -69,4 +69,4 @@ Methods:
 - [`forceLike(bool|null $forceLike = null): bool`](method-forcelike.md) Call forceLike(true) to force use of LIKE, or omit argument to get current setting
 
 Constants:
-- [`maxQueryValueLength`](const-maxqueryvaluelength.md)
+- [`maxQueryValueLength = 500`](const-maxqueryvaluelength.md)

@@ -68,4 +68,4 @@ Methods:
 - [`getCustomVariableValue(string $name): null|string`](method-___getcustomvariablevalue.md) (hookable) Get the value for a custom [var] to populate in a selector (also works in PageFinder)
 
 Constants:
-- [`maxOperatorLength`](const-maxoperatorlength.md)
+- [`maxOperatorLength = 10`](const-maxoperatorlength.md)

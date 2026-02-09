@@ -41,4 +41,4 @@ Methods:
 - [`codePointToChar(integer $code): string`](method-codepointtochar.md) Convert a code point to its single or multi-byte character
 
 Constants:
-- [`BASE`](const-base.md)
+- [`BASE = 36`](const-base.md)

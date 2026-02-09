@@ -35,4 +35,4 @@ Methods:
 - [`uninstall()`](method-uninstall.md) Uninstall
 
 Constants:
-- [`optionsTable`](const-optionstable.md)
+- [`optionsTable = 'fieldtype_options'`](const-optionstable.md)

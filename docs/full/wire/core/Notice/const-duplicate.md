@@ -1,6 +1,8 @@
-# Notice::duplicate
+# Notice::duplicate = 8388608
 
 Source: `wire/core/Notice.php`
+
+Value: `8388608`
 
 Alias of allowDuplicate flag
 

@@ -1,6 +1,8 @@
-# Inputfield::collapsedTabAjax
+# Inputfield::collapsedTabAjax = 21
 
 Source: `wire/core/Inputfield.php`
+
+Value: `21`
 
 Collapsed into a separate tab and AJAX loaded
 

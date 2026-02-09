@@ -44,4 +44,4 @@ Methods:
 - [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get Inputfields for advanced settings of the Field and Fieldtype
 
 Constants:
-- [`multiValueSeparator`](const-multivalueseparator.md)
+- [`multiValueSeparator = "\0,"`](const-multivalueseparator.md)

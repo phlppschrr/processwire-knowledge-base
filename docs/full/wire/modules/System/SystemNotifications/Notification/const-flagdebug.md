@@ -1,6 +1,8 @@
-# Notification::flagDebug
+# Notification::flagDebug = 2
 
 Source: `wire/modules/System/SystemNotifications/Notification.php`
+
+Value: `2`
 
 Flag constants for Notification objects
 

@@ -163,5 +163,5 @@ Methods:
 - [`savedPageOrField(Page $page, array $changes = array())`](method-___savedpageorfield.md) (hookable) Hook called after either of Pages::save or Pages::saveField successfully executes
 
 Constants:
-- [`nameMaxLength`](const-namemaxlength.md)
-- [`defaultRootName`](const-defaultrootname.md)
+- [`nameMaxLength = 128`](const-namemaxlength.md)
+- [`defaultRootName = 'home'`](const-defaultrootname.md)

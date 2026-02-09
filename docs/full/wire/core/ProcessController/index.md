@@ -29,4 +29,4 @@ Methods:
 - [`isAjax(): bool`](method-isajax.md) Is this an AJAX request?
 
 Constants:
-- [`defaultProcessMethodName`](const-defaultprocessmethodname.md)
+- [`defaultProcessMethodName = 'execute'`](const-defaultprocessmethodname.md)

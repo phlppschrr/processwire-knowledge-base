@@ -31,4 +31,4 @@ Methods:
 - [`__toString()`](method-__tostring.md) CacheFile classes return a string of their cache filename
 
 Constants:
-- [`maxCacheFiles`](const-maxcachefiles.md)
+- [`maxCacheFiles = 999`](const-maxcachefiles.md)

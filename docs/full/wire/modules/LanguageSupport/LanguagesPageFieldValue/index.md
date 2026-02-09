@@ -31,5 +31,5 @@ Methods:
 - [`defaultLanguagePageID(): int`](method-defaultlanguagepageid.md)
 
 Constants:
-- [`langBlankInheritDefault`](const-langblankinheritdefault.md)
-- [`langBlankInheritNone`](const-langblankinheritnone.md)
+- [`langBlankInheritDefault = 0`](const-langblankinheritdefault.md)
+- [`langBlankInheritNone = 1`](const-langblankinheritnone.md)

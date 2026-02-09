@@ -1,6 +1,8 @@
-# ProcessWire::statusInit
+# ProcessWire::statusInit = 2
 
 Source: `wire/core/ProcessWire.php`
+
+Value: `2`
 
 Status when system and modules are initializing
 

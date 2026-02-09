@@ -75,5 +75,5 @@ Methods:
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
 Constants:
-- [`trackChangesOn`](const-trackchangeson.md)
-- [`trackChangesValues`](const-trackchangesvalues.md)
+- [`trackChangesOn = 2`](const-trackchangeson.md)
+- [`trackChangesValues = 4`](const-trackchangesvalues.md)

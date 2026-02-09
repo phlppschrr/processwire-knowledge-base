@@ -97,13 +97,13 @@ Methods:
 - [`editUrl(bool $http = false): string`](method-editurl.md) URL to edit template settings (for administrator)
 
 Constants:
-- [`flagSystem`](const-flagsystem.md)
-- [`flagSystemOverride`](const-flagsystemoverride.md)
-- [`cacheExpirePage`](const-cacheexpirepage.md)
-- [`cacheExpireSite`](const-cacheexpiresite.md)
-- [`cacheExpireParents`](const-cacheexpireparents.md)
-- [`cacheExpireSpecific`](const-cacheexpirespecific.md)
-- [`cacheExpireSelector`](const-cacheexpireselector.md)
-- [`cacheExpireNone`](const-cacheexpirenone.md)
+- [`flagSystem = 8`](const-flagsystem.md)
+- [`flagSystemOverride = 32768`](const-flagsystemoverride.md)
+- [`cacheExpirePage = 0`](const-cacheexpirepage.md)
+- [`cacheExpireSite = 1`](const-cacheexpiresite.md)
+- [`cacheExpireParents = 2`](const-cacheexpireparents.md)
+- [`cacheExpireSpecific = 3`](const-cacheexpirespecific.md)
+- [`cacheExpireSelector = 4`](const-cacheexpireselector.md)
+- [`cacheExpireNone = -1`](const-cacheexpirenone.md)
 
 Hookable methods

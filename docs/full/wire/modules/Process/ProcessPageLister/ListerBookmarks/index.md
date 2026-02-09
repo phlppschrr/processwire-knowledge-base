@@ -39,5 +39,5 @@ Methods:
 - [`readableBookmarkSelector(array $bookmark): string`](method-readablebookmarkselector.md) Return a readable selector from bookmark for output purposes
 
 Constants:
-- [`typePublic`](const-typepublic.md)
-- [`typeOwned`](const-typeowned.md)
+- [`typePublic = 0`](const-typepublic.md)
+- [`typeOwned = 1`](const-typeowned.md)

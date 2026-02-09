@@ -17,7 +17,7 @@ Methods:
 - [`getConfigInputfields(InputfieldWrapper $inputfields)`](method-getconfiginputfields.md)
 
 Constants:
-- [`datepickerNo`](const-datepickerno.md)
-- [`datepickerClick`](const-datepickerclick.md)
-- [`datepickerInline`](const-datepickerinline.md)
-- [`datepickerFocus`](const-datepickerfocus.md)
+- [`datepickerNo = 0`](const-datepickerno.md)
+- [`datepickerClick = 1`](const-datepickerclick.md)
+- [`datepickerInline = 2`](const-datepickerinline.md)
+- [`datepickerFocus = 3`](const-datepickerfocus.md)

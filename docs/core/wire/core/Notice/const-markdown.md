@@ -1,6 +1,8 @@
-# Notice::markdown
+# Notice::markdown = 4194304
 
 Source: `wire/core/Notice.php`
+
+Value: `4194304`
 
 Alias of allowMarkdown flag
 

@@ -40,4 +40,4 @@ Methods:
 - [`saveContext(): int`](method-savecontext.md) Save field contexts for this fieldgroup
 
 Constants:
-- [`contextNamespacePrefix`](const-contextnamespaceprefix.md)
+- [`contextNamespacePrefix = 'NS_'`](const-contextnamespaceprefix.md)

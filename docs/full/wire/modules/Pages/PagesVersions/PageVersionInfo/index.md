@@ -25,4 +25,4 @@ Methods:
 - [`__toString(): string`](method-__tostring.md) String value is version number as a string
 
 Constants:
-- [`actionRestore`](const-actionrestore.md)
+- [`actionRestore = 'restore'`](const-actionrestore.md)

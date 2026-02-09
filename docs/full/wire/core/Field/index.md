@@ -82,13 +82,13 @@ Methods:
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
 Constants:
-- [`flagAutojoin`](const-flagautojoin.md)
-- [`flagGlobal`](const-flagglobal.md)
-- [`flagSystem`](const-flagsystem.md)
-- [`flagPermanent`](const-flagpermanent.md)
-- [`flagAccess`](const-flagaccess.md)
-- [`flagAccessAPI`](const-flagaccessapi.md)
-- [`flagAccessEditor`](const-flagaccesseditor.md)
-- [`flagUnique`](const-flagunique.md)
-- [`flagFieldgroupContext`](const-flagfieldgroupcontext.md)
-- [`flagSystemOverride`](const-flagsystemoverride.md)
+- [`flagAutojoin = 1`](const-flagautojoin.md)
+- [`flagGlobal = 4`](const-flagglobal.md)
+- [`flagSystem = 8`](const-flagsystem.md)
+- [`flagPermanent = 16`](const-flagpermanent.md)
+- [`flagAccess = 32`](const-flagaccess.md)
+- [`flagAccessAPI = 64`](const-flagaccessapi.md)
+- [`flagAccessEditor = 128`](const-flagaccesseditor.md)
+- [`flagUnique = 256`](const-flagunique.md)
+- [`flagFieldgroupContext = 2048`](const-flagfieldgroupcontext.md)
+- [`flagSystemOverride = 32768`](const-flagsystemoverride.md)

@@ -88,5 +88,5 @@ Methods:
 - [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-___getmoduleconfiginputfields.md) (hookable) Module config
 
 Constants:
-- [`mceVersion`](const-mceversion.md)
+- [`mceVersion = '6.8.2'`](const-mceversion.md)
 - [`defaultPasteFilter`](const-defaultpastefilter.md)

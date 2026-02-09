@@ -53,5 +53,5 @@ Methods:
 - [`getTempPath(): string`](method-gettemppath.md) Return a path where temporary files can be stored unique to this ProcessWire instance
 
 Constants:
-- [`defaultSecurePathPrefix`](const-defaultsecurepathprefix.md)
-- [`extendedDirName`](const-extendeddirname.md)
+- [`defaultSecurePathPrefix = '.'`](const-defaultsecurepathprefix.md)
+- [`extendedDirName = '0/'`](const-extendeddirname.md)

@@ -59,5 +59,5 @@ Methods:
 - [`versionUrl(string $url, bool|null|string $useVersion = null): string`](method-versionurl.md) Given a file asset URLs return it with cache-busting version string
 
 Constants:
-- [`debugVerbose`](const-debugverbose.md)
-- [`debugDev`](const-debugdev.md)
+- [`debugVerbose = 2`](const-debugverbose.md)
+- [`debugDev = 'dev'`](const-debugdev.md)

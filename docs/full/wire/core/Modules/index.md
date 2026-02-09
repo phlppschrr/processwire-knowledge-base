@@ -56,11 +56,11 @@ Methods:
 - [`__get(string $name): mixed`](method-__get.md) Direct read-only properties
 
 Constants:
-- [`flagsSingular`](const-flagssingular.md)
-- [`flagsAutoload`](const-flagsautoload.md)
-- [`flagsDuplicate`](const-flagsduplicate.md)
-- [`flagsConditional`](const-flagsconditional.md)
-- [`flagsDisabled`](const-flagsdisabled.md)
-- [`flagsNoUserConfig`](const-flagsnouserconfig.md)
-- [`flagsNoFile`](const-flagsnofile.md)
-- [`flagsSystemCache`](const-flagssystemcache.md)
+- [`flagsSingular = 1`](const-flagssingular.md)
+- [`flagsAutoload = 2`](const-flagsautoload.md)
+- [`flagsDuplicate = 4`](const-flagsduplicate.md)
+- [`flagsConditional = 8`](const-flagsconditional.md)
+- [`flagsDisabled = 16`](const-flagsdisabled.md)
+- [`flagsNoUserConfig = 32`](const-flagsnouserconfig.md)
+- [`flagsNoFile = 64`](const-flagsnofile.md)
+- [`flagsSystemCache = 8192`](const-flagssystemcache.md)

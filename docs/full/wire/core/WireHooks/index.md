@@ -35,7 +35,7 @@ Methods:
 - [`className(): string`](method-classname.md)
 
 Constants:
-- [`___debug`](const-___debug.md)
-- [`getHooksAll`](const-gethooksall.md)
-- [`getHooksLocal`](const-gethookslocal.md)
-- [`getHooksStatic`](const-gethooksstatic.md)
+- [`___debug = false`](const-___debug.md)
+- [`getHooksAll = 0`](const-gethooksall.md)
+- [`getHooksLocal = 1`](const-gethookslocal.md)
+- [`getHooksStatic = 2`](const-gethooksstatic.md)

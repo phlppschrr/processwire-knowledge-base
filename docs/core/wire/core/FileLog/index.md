@@ -35,5 +35,5 @@ Methods:
 - [`path(): string`](method-path.md) Get path where the log is stored (with trailing slash)
 
 Constants:
-- [`defaultChunkSize`](const-defaultchunksize.md)
-- [`debug`](const-debug.md)
+- [`defaultChunkSize = 12288`](const-defaultchunksize.md)
+- [`debug = false`](const-debug.md)

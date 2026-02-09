@@ -46,13 +46,13 @@ Methods:
 - [`meta(string|array $key = null, mixed|null $value = null): array|string|int|mixed`](method-meta.md) Get or set meta data property
 
 Constants:
-- [`statusSpam`](const-statusspam.md)
-- [`statusPending`](const-statuspending.md)
-- [`statusApproved`](const-statusapproved.md)
-- [`statusFeatured`](const-statusfeatured.md)
-- [`statusDelete`](const-statusdelete.md)
-- [`flagNotifyReply`](const-flagnotifyreply.md)
-- [`flagNotifyAll`](const-flagnotifyall.md)
-- [`flagNotifyConfirmed`](const-flagnotifyconfirmed.md)
-- [`flagNotifyQueue`](const-flagnotifyqueue.md)
-- [`maxCommentBytes`](const-maxcommentbytes.md)
+- [`statusSpam = -2`](const-statusspam.md)
+- [`statusPending = 0`](const-statuspending.md)
+- [`statusApproved = 1`](const-statusapproved.md)
+- [`statusFeatured = 2`](const-statusfeatured.md)
+- [`statusDelete = 999`](const-statusdelete.md)
+- [`flagNotifyReply = 2`](const-flagnotifyreply.md)
+- [`flagNotifyAll = 4`](const-flagnotifyall.md)
+- [`flagNotifyConfirmed = 8`](const-flagnotifyconfirmed.md)
+- [`flagNotifyQueue = 16`](const-flagnotifyqueue.md)
+- [`maxCommentBytes = 81920`](const-maxcommentbytes.md)

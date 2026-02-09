@@ -76,4 +76,4 @@ Methods:
 - [`getTimeout(): float`](method-gettimeout.md) Get the number of seconds till connection times out
 
 Constants:
-- [`defaultPostContentType`](const-defaultpostcontenttype.md)
+- [`defaultPostContentType = 'application/x-www-form-urlencoded; charset=utf-8'`](const-defaultpostcontenttype.md)

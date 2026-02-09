@@ -1,6 +1,8 @@
-# WireHooks::___debug
+# WireHooks::___debug = false
 
 Source: `wire/core/WireHooks.php`
+
+Value: `false`
 
 Debug hooks
 

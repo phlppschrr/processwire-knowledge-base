@@ -37,5 +37,5 @@ Methods:
 - [`fileRegions(): WireMarkupFileRegions`](method-fileregions.md) Get instance of WireMarkupFileRegions
 
 Constants:
-- [`debug`](const-debug.md)
-- [`debugLandmark`](const-debuglandmark.md)
+- [`debug = false`](const-debug.md)
+- [`debugLandmark = "<!--PW-REGION-DEBUG-->"`](const-debuglandmark.md)

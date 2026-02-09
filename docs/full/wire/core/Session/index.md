@@ -82,8 +82,8 @@ Methods:
 - [`CSRF(): SessionCSRF`](method-csrf.md) Return an instance of ProcessWire’s CSRF object, which provides an API for cross site request forgery protection.
 
 Constants:
-- [`fingerprintRemoteAddr`](const-fingerprintremoteaddr.md)
-- [`fingerprintClientAddr`](const-fingerprintclientaddr.md)
-- [`fingerprintUseragent`](const-fingerprintuseragent.md)
-- [`fingerprintAccept`](const-fingerprintaccept.md)
-- [`challengeSuffix`](const-challengesuffix.md)
+- [`fingerprintRemoteAddr = 2`](const-fingerprintremoteaddr.md)
+- [`fingerprintClientAddr = 4`](const-fingerprintclientaddr.md)
+- [`fingerprintUseragent = 8`](const-fingerprintuseragent.md)
+- [`fingerprintAccept = 16`](const-fingerprintaccept.md)
+- [`challengeSuffix = '_challenge'`](const-challengesuffix.md)

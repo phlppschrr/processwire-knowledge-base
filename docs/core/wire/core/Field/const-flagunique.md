@@ -1,6 +1,8 @@
-# Field::flagUnique
+# Field::flagUnique = 256
 
 Source: `wire/core/Field.php`
+
+Value: `256`
 
 Field requires that the same value is not repeated more than once in its table 'data' column (when supported by Fieldtype)
 

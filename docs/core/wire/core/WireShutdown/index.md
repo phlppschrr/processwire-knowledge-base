@@ -38,5 +38,5 @@ Methods:
 - [`shutdownExternal()`](method-shutdownexternal.md) Secondary shutdown call when ProcessWire booted externally
 
 Constants:
-- [`defaultFatalErrorHTML`](const-defaultfatalerrorhtml.md)
-- [`defaultEmailBody`](const-defaultemailbody.md)
+- [`defaultFatalErrorHTML = '<p><b>{message}</b><br /><small>{why}</small></p>'`](const-defaultfatalerrorhtml.md)
+- [`defaultEmailBody = "URL: {url}\nUser: {user}\nVersion: {version}\n\n{message}"`](const-defaultemailbody.md)

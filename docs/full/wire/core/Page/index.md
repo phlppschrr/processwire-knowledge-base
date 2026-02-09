@@ -266,6 +266,6 @@ Methods:
 - [`removedStatus(string $name, int $value)`](method-___removedstatus.md) (hookable) Called when a status flag has been removed from this page (and saved)
 
 Constants:
-- [`statusLocked`](const-statuslocked.md)
-- [`statusHidden`](const-statushidden.md)
-- [`statusUnpublished`](const-statusunpublished.md)
+- [`statusLocked = 4`](const-statuslocked.md)
+- [`statusHidden = 1024`](const-statushidden.md)
+- [`statusUnpublished = 2048`](const-statusunpublished.md)

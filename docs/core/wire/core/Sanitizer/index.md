@@ -199,4 +199,4 @@ Methods:
 - [`valid(string|int|array|float $value, string $method = 'text', bool $strict = false): bool`](method-valid.md) Is given value valid? (i.e. unchanged by given sanitizer method)
 
 Constants:
-- [`translate`](const-translate.md)
+- [`translate = 2`](const-translate.md)
