@@ -64,32 +64,32 @@ Runtime settings
 - [`getModuleConfigInputfields(InputfieldWrapper $inputfields): void`](method-___getmoduleconfiginputfields.md)
 
 Methods:
-- [`getModuleInfo(): array`](method-getmoduleinfo.md)
-- [`__construct()`](method-__construct.md)
-- [`init()`](method-init.md)
-- [`useFeature(string $name): bool`](method-usefeature.md)
-- [`mcePath(bool $getUrl = false): string`](method-mcepath.md)
-- [`setConfigName(string $configName): $this`](method-setconfigname.md)
-- [`getConfigName(): string`](method-getconfigname.md)
-- [`configurable(bool $set = null): bool`](method-configurable.md)
-- [`get($key): array|mixed|string|null`](method-get.md)
-- [`set($key, $value): self`](method-set.md)
-- [`getExtraStyles(): string`](method-getextrastyles.md)
-- [`renderReadyOnce()`](method-renderreadyonce.md)
-- [`renderReady(?Inputfield $parent = null, bool $renderValueMode = false): bool`](method-renderready.md)
-- [`render(): string`](method-___render.md) (hookable)
-- [`renderNormal(): string`](method-rendernormal.md)
-- [`renderInline(): string`](method-renderinline.md)
-- [`renderInitScript(): string`](method-renderinitscript.md)
-- [`renderValue(): string`](method-___rendervalue.md) (hookable)
-- [`processInput(WireInputData $input): $this`](method-___processinput.md) (hookable)
-- [`getSettingNames(array|string $types): string[]`](method-getsettingnames.md)
-- [`addPlugin(string $file)`](method-addplugin.md)
-- [`removePlugin(string $file): bool`](method-removeplugin.md)
-- [`getDirectionality(): string`](method-getdirectionality.md)
-- [`helper(string $name): InputfieldTinyMCEClass`](method-helper.md)
-- [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable)
-- [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-___getmoduleconfiginputfields.md) (hookable)
+- [`getModuleInfo(): array`](method-getmoduleinfo.md) Get module info
+- [`__construct()`](method-__construct.md) Construct
+- [`init()`](method-init.md) Init Inputfield
+- [`useFeature(string $name): bool`](method-usefeature.md) Use the named feature?
+- [`mcePath(bool $getUrl = false): string`](method-mcepath.md) Return path or URL to TinyMCE files
+- [`setConfigName(string $configName): $this`](method-setconfigname.md) Set configuration name used to store settings in ProcessWire.config JS
+- [`getConfigName(): string`](method-getconfigname.md) Get configuration name used to store settings in ProcessWire.config JS
+- [`configurable(bool $set = null): bool`](method-configurable.md) Get or set configurable state
+- [`get($key): array|mixed|string|null`](method-get.md) Get
+- [`set($key, $value): self`](method-set.md) Set
+- [`getExtraStyles(): string`](method-getextrastyles.md) Get styles to add in <head>
+- [`renderReadyOnce()`](method-renderreadyonce.md) Render ready that only needs one call for entire request
+- [`renderReady(?Inputfield $parent = null, bool $renderValueMode = false): bool`](method-renderready.md) Render ready
+- [`render(): string`](method-___render.md) (hookable) Render Inputfield
+- [`renderNormal(): string`](method-rendernormal.md) Render normal/classic editor
+- [`renderInline(): string`](method-renderinline.md) Render inline editor
+- [`renderInitScript(): string`](method-renderinitscript.md) Render script to init editor
+- [`renderValue(): string`](method-___rendervalue.md) (hookable) Render non-editable value
+- [`processInput(WireInputData $input): $this`](method-___processinput.md) (hookable) Process input
+- [`getSettingNames(array|string $types): string[]`](method-getsettingnames.md) Get all configurable setting names
+- [`addPlugin(string $file)`](method-addplugin.md) Add an external plugin .js file
+- [`removePlugin(string $file): bool`](method-removeplugin.md) Remove an external plugin .js file
+- [`getDirectionality(): string`](method-getdirectionality.md) Get directionality, either 'ltr' or 'rtl'
+- [`helper(string $name): InputfieldTinyMCEClass`](method-helper.md) Get helper
+- [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get Inputfield configuration settings
+- [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-___getmoduleconfiginputfields.md) (hookable) Module config
 
 Constants:
 - [`mceVersion`](const-mceversion.md)

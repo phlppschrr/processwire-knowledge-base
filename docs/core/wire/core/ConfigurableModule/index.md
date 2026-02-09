@@ -52,7 +52,7 @@ A module *must not* contain both the ConfigModule and ConfigurableModule interfa
 in their implements definition at the same time, so choose just one.
 
 Methods:
-- [`__get($key): InputfieldWrapper`](method-__get.md)
-- [`__get($key): array`](method-__get.md)
-- [`__get(string $key): mixed`](method-__get.md)
-- [`__set($key, $value): mixed`](method-__set.md)
+- [`__get($key): InputfieldWrapper`](method-__get.md) ******************************************************************************* getModuleConfigInputfields method (static or non-static)
+- [`__get($key): array`](method-__get.md) ****************************************************************************** Return an array defining Inputfields (static or non-static)
+- [`__get(string $key): mixed`](method-__get.md) Get a module config property
+- [`__set($key, $value): mixed`](method-__set.md) Set a module config property

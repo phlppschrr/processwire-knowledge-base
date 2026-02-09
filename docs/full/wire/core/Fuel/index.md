@@ -19,4 +19,4 @@ https://processwire.com/about/license/mit/
 
 Methods:
 - [`set(string $key, object|mixed $value, bool $lock = false): $this`](method-set.md)
-- [`remove($key): bool`](method-remove.md)
+- [`remove($key): bool`](method-remove.md) Remove an API variable from the Fuel

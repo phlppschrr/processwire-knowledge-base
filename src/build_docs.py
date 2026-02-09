@@ -1743,8 +1743,10 @@ def write_doc(
             return_type = member.signature_return or extract_return_type(member.docblock)
             ret_label = f": {return_type}" if return_type else ""
             label = f"{display_name}{signature}{ret_label}"
+            summary = extract_summary_from_docblock(member.docblock)
+            summary_label = f" {summary}" if summary else ""
             method_links.append(
-                f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}"
+                f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}{summary_label}"
             )
         else:
             const_links.append(f"- [`{member.name}`](const-{slugify(member.name)}.md)")
@@ -1912,8 +1914,10 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
             return_type = member.signature_return or extract_return_type(member.docblock)
             ret_label = f": {return_type}" if return_type else ""
             label = f"{display_name}{signature}{ret_label}"
+            summary = extract_summary_from_docblock(member.docblock)
+            summary_label = f" {summary}" if summary else ""
             method_links.append(
-                f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}"
+                f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}{summary_label}"
             )
         else:
             const_links.append(f"- [`{member.name}`](const-{slugify(member.name)}.md)")

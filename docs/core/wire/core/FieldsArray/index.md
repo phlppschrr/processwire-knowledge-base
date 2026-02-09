@@ -9,7 +9,7 @@ ProcessWire Fields Array
 WireArray of Field instances, as used by Fields class
 
 Methods:
-- [`isValidItem(Wire $item): bool`](method-isvaliditem.md)
-- [`isValidKey(int $key): bool`](method-isvalidkey.md)
-- [`getItemKey(Field $item): int`](method-getitemkey.md)
-- [`makeBlankItem(): Field`](method-makeblankitem.md)
+- [`isValidItem(Wire $item): bool`](method-isvaliditem.md) Per WireArray interface, only Field instances may be added
+- [`isValidKey(int $key): bool`](method-isvalidkey.md) Per WireArray interface, Field keys have to be integers
+- [`getItemKey(Field $item): int`](method-getitemkey.md) Per WireArray interface, Field instances are keyed by their ID
+- [`makeBlankItem(): Field`](method-makeblankitem.md) Per WireArray interface, return a blank Field

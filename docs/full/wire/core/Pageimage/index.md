@@ -59,35 +59,35 @@ Properties inherited from Pagefile
 - `$debugInfo: PageimageDebugInfo`
 
 Methods:
-- [`__construct(Pagefiles $pagefiles, string $filename)`](method-__construct.md)
-- [`url(): string`](method-url.md)
-- [`filename(): string`](method-filename.md)
-- [`suffix(string $s = ''): array|bool`](method-suffix.md)
-- [`focus(null|float|int|array|false $top = null, null|float|int $left = null, null|int $zoom = null): array|bool|Pageimage`](method-focus.md)
-- [`set(string $key, mixed $value): Pageimage|WireData`](method-set.md)
-- [`size(int|string $width, int|array $height = 0, array|string|int $options = array()): Pageimage`](method-size.md)
-- [`sizeName(string $name, array $options = array()): Pageimage`](method-sizename.md)
-- [`crop(int $x, int $y, int $width, int $height, array $options = array()): Pageimage`](method-___crop.md) (hookable)
-- [`width(int $n = 0, array|string|int|bool $options = array()): int|Pageimage`](method-width.md)
-- [`height(int $n = 0, array|string|int|bool $options = array()): int|Pageimage`](method-height.md)
-- [`maxWidth(int $n, array $options = array()): Pageimage`](method-maxwidth.md)
-- [`maxHeight(int $n, array $options = array()): Pageimage`](method-maxheight.md)
-- [`maxSize(int $width, int $height, array $options = array()): Pageimage`](method-maxsize.md)
-- [`ratio(int $precision = 2): float`](method-ratio.md)
-- [`getVariations(array $options = array()): Pageimages|array`](method-getvariations.md)
-- [`rebuildVariations(int $mode = 0, array $suffix = array(), array $options = array()): array`](method-___rebuildvariations.md) (hookable)
-- [`isVariation(string $basename, array|bool $options = array()): bool|string|array`](method-___isvariation.md) (hookable)
-- [`removeVariations(array $options = array()): PageImageVariations|array`](method-removevariations.md)
-- [`createdVariation(Pageimage $image, array $data)`](method-___createdvariation.md) (hookable)
-- [`setOriginal(Pageimage $image): $this`](method-setoriginal.md)
-- [`getOriginal(): Pageimage|null`](method-getoriginal.md)
-- [`render(string|array $markup = '', array|string $options = array()): string`](method-___render.md) (hookable)
-- [`webp(array $webpOptions = array()): PagefileExtra`](method-webp.md)
-- [`rename(string $basename): string|bool`](method-rename.md)
-- [`getFiles(): array`](method-getfiles.md)
-- [`filenameDoesNotExist(string $filename): bool`](method-___filenamedoesnotexist.md) (hookable)
-- [`__debugInfo(): array`](method-__debuginfo.md)
-- [`getDebugInfo(array $options = array(), string $returnType = 'string'): array|object|string`](method-getdebuginfo.md)
+- [`__construct(Pagefiles $pagefiles, string $filename)`](method-__construct.md) Construct a new Pageimage
+- [`url(): string`](method-url.md) Return the web accessible URL to this image file
+- [`filename(): string`](method-filename.md) Returns the full disk path to the image file
+- [`suffix(string $s = ''): array|bool`](method-suffix.md) Returns array of suffixes for this file, or true/false if this file has the given suffix.
+- [`focus(null|float|int|array|false $top = null, null|float|int $left = null, null|int $zoom = null): array|bool|Pageimage`](method-focus.md) Get or set focus area for crops to use
+- [`set(string $key, mixed $value): Pageimage|WireData`](method-set.md) Set property
+- [`size(int|string $width, int|array $height = 0, array|string|int $options = array()): Pageimage`](method-size.md) Return an image (Pageimage) sized/cropped to the specified dimensions.
+- [`sizeName(string $name, array $options = array()): Pageimage`](method-sizename.md) Return image of size indicated by predefined setting
+- [`crop(int $x, int $y, int $width, int $height, array $options = array()): Pageimage`](method-___crop.md) (hookable) Create a crop and return it as a new Pageimage.
+- [`width(int $n = 0, array|string|int|bool $options = array()): int|Pageimage`](method-width.md) Return the width of this image OR return an image sized with a given width (and proportional height).
+- [`height(int $n = 0, array|string|int|bool $options = array()): int|Pageimage`](method-height.md) Return the height of this image OR return an image sized with a given height (and proportional width).
+- [`maxWidth(int $n, array $options = array()): Pageimage`](method-maxwidth.md) Return an image no larger than the given width.
+- [`maxHeight(int $n, array $options = array()): Pageimage`](method-maxheight.md) Return an image no larger than the given height.
+- [`maxSize(int $width, int $height, array $options = array()): Pageimage`](method-maxsize.md) Return an image no larger than the given width and height
+- [`ratio(int $precision = 2): float`](method-ratio.md) Get ratio of width divided by height
+- [`getVariations(array $options = array()): Pageimages|array`](method-getvariations.md) Get all size variations of this image
+- [`rebuildVariations(int $mode = 0, array $suffix = array(), array $options = array()): array`](method-___rebuildvariations.md) (hookable) Rebuilds variations of this image
+- [`isVariation(string $basename, array|bool $options = array()): bool|string|array`](method-___isvariation.md) (hookable) Given a file name (basename), return array of info if this is a variation for this instance’s file, or false if not.
+- [`removeVariations(array $options = array()): PageImageVariations|array`](method-removevariations.md) Delete all the alternate sizes associated with this Pageimage
+- [`createdVariation(Pageimage $image, array $data)`](method-___createdvariation.md) (hookable) Hook called after successful creation of image variation
+- [`setOriginal(Pageimage $image): $this`](method-setoriginal.md) Identify this Pageimage as a variation, by setting the Pageimage it was resized from.
+- [`getOriginal(): Pageimage|null`](method-getoriginal.md) If this image is a variation, return the original, otherwise return null.
+- [`render(string|array $markup = '', array|string $options = array()): string`](method-___render.md) (hookable) Render markup for this image (optionally using a provided markup template string and/or image size options)
+- [`webp(array $webpOptions = array()): PagefileExtra`](method-webp.md) Get WebP "extra" version of this Pageimage
+- [`rename(string $basename): string|bool`](method-rename.md) Rename this file
+- [`getFiles(): array`](method-getfiles.md) Get all filenames associated with this image
+- [`filenameDoesNotExist(string $filename): bool`](method-___filenamedoesnotexist.md) (hookable) Hook called by the size() method when a source/original filename does not exist
+- [`__debugInfo(): array`](method-__debuginfo.md) Basic debug info
+- [`getDebugInfo(array $options = array(), string $returnType = 'string'): array|object|string`](method-getdebuginfo.md) Verbose debug info (via @horst)
 
 Hookable methods
 ================

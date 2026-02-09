@@ -34,21 +34,21 @@ The following properties affect the behavior of the URL-related methods
 - `$useSrcExt: bool` Use longer filenames that also include the Pagefile’s extension? (default=false)
 
 Methods:
-- [`__construct(Pagefile $pagefile, $extension)`](method-__construct.md)
-- [`setPagefile(Pagefile $pagefile)`](method-setpagefile.md)
-- [`setExtension($extension)`](method-setextension.md)
-- [`exists(bool $clear = false): bool`](method-exists.md)
-- [`filesize(): int`](method-filesize.md)
-- [`filesizeStr(): string`](method-filesizestr.md)
-- [`filename(): string`](method-filename.md)
-- [`basename(): string`](method-basename.md)
-- [`url(bool $fallback = true): string`](method-url.md)
-- [`httpUrl(): string`](method-httpurl.md)
-- [`noCacheURL(bool $http = false): string`](method-___nocacheurl.md) (hookable)
-- [`unlink(): bool`](method-unlink.md)
-- [`rename(): bool`](method-rename.md)
-- [`create(): bool`](method-___create.md) (hookable)
-- [`get(string $key): bool|int|mixed|null|string`](method-get.md)
+- [`__construct(Pagefile $pagefile, $extension)`](method-__construct.md) Construct
+- [`setPagefile(Pagefile $pagefile)`](method-setpagefile.md) Set Pagefile instance this extra is connected to
+- [`setExtension($extension)`](method-setextension.md) Set extension for this extra
+- [`exists(bool $clear = false): bool`](method-exists.md) Does the extra file currently exist?
+- [`filesize(): int`](method-filesize.md) Return the file size in bytes
+- [`filesizeStr(): string`](method-filesizestr.md) Return human readable file size string
+- [`filename(): string`](method-filename.md) Return the full server disk path to the extra file, whether it exists or not
+- [`basename(): string`](method-basename.md) Return just the basename (no path)
+- [`url(bool $fallback = true): string`](method-url.md) Return the URL to the extra file, creating it if it does not already exist
+- [`httpUrl(): string`](method-httpurl.md) Return the HTTP URL to the extra file
+- [`noCacheURL(bool $http = false): string`](method-___nocacheurl.md) (hookable) Get cache busted URL
+- [`unlink(): bool`](method-unlink.md) Unlink/delete the extra file
+- [`rename(): bool`](method-rename.md) Rename the extra file to be consistent with Pagefile name
+- [`create(): bool`](method-___create.md) (hookable) Create the extra file
+- [`get(string $key): bool|int|mixed|null|string`](method-get.md) Get property
 - [`__toString(): string`](method-__tostring.md)
 
 Hookable methods

@@ -85,6 +85,6 @@ The following are in $config->urls and equivalent to previously mentioned proper
 The "http" may be optionally prepended to any property accessed from $config->urls (including those you add yourself).
 
 Methods:
-- [`__construct(string $root)`](method-__construct.md)
-- [`set(string $key, mixed $value): Paths|WireData`](method-set.md)
-- [`get(object|string $key): mixed|null|string`](method-get.md)
+- [`__construct(string $root)`](method-__construct.md) Construct the Paths
+- [`set(string $key, mixed $value): Paths|WireData`](method-set.md) Set a new path/URL location
+- [`get(object|string $key): mixed|null|string`](method-get.md) Return the requested path or URL (functionally the same as direct access)

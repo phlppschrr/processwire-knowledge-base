@@ -74,11 +74,11 @@ $config->cookieOptions = [
 ~~~~~
 
 Methods:
-- [`__construct(array &$input = array(), bool $lazy = false)`](method-__construct.md)
-- [`options(string|array|null $key = null, string|array|int|float|null $value = null): string|array|int|float|null|$this`](method-options.md)
-- [`__set(string $key, array|float|int|null|string $value)`](method-__set.md)
-- [`get(string $key, array|int|string $options = array()): string|int|float|array|null`](method-get.md)
-- [`set(string $key, string $value, array|int|string $options = array()): $this`](method-set.md)
-- [`remove(string $key): WireInputDataCookie|WireInputData|$this`](method-remove.md)
-- [`removeAll(): $this|WireInputData`](method-removeall.md)
-- [`allowSetCookie(string $name): bool`](method-allowsetcookie.md)
+- [`__construct(array &$input = array(), bool $lazy = false)`](method-__construct.md) Construct
+- [`options(string|array|null $key = null, string|array|int|float|null $value = null): string|array|int|float|null|$this`](method-options.md) Get or set cookie options
+- [`__set(string $key, array|float|int|null|string $value)`](method-__set.md) Set a cookie (directly)
+- [`get(string $key, array|int|string $options = array()): string|int|float|array|null`](method-get.md) Get a cookie value
+- [`set(string $key, string $value, array|int|string $options = array()): $this`](method-set.md) Set a cookie (optionally with options)
+- [`remove(string $key): WireInputDataCookie|WireInputData|$this`](method-remove.md) Remove a cookie value by name
+- [`removeAll(): $this|WireInputData`](method-removeall.md) Remove all cookies (other than those required for current session)
+- [`allowSetCookie(string $name): bool`](method-allowsetcookie.md) Allow cookie with given name to be set or unset?

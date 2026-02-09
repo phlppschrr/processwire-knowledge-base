@@ -348,7 +348,7 @@ void ready() For autoload modules only, called when the ProcessWire API is ready
 void setConfigData(array $data) Modules may optionally provide this method to receive config data from ProcessWire.
 
 Methods:
-- [`className($options = null): array`](method-classname.md)
-- [`className($options = null)`](method-classname.md)
-- [`className($options = null)`](method-classname.md)
-- [`className(array|bool|null $options = null): string`](method-classname.md)
+- [`className($options = null): array`](method-classname.md) Return an array of module information
+- [`className($options = null)`](method-classname.md) Method to initialize the module.
+- [`className($options = null)`](method-classname.md) Method called when API is fully ready and the $page is determined and set, but before a page is rendered.
+- [`className(array|bool|null $options = null): string`](method-classname.md) Return this object’s class name

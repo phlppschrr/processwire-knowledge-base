@@ -32,10 +32,10 @@ HookEvents have the following properties available:
 - `$cancelHooks: bool` When true, all remaining hooks will be cancelled, making this HookEvent the last one (be careful with this).
 
 Methods:
-- [`__construct(array $eventData = array())`](method-__construct.md)
-- [`arguments(int $n = null, mixed $value = null): array|null|mixed`](method-arguments.md)
-- [`argumentsByName(string $n = ''): mixed|array`](method-argumentsbyname.md)
-- [`getArgumentNames(): array`](method-getargumentnames.md)
-- [`removeHook(string|HookEvent|null $hookId): HookEvent|WireData`](method-removehook.md)
-- [`get(object|string $key): mixed|null`](method-get.md)
-- [`__toString()`](method-__tostring.md)
+- [`__construct(array $eventData = array())`](method-__construct.md) Construct the HookEvent and establish default values
+- [`arguments(int $n = null, mixed $value = null): array|null|mixed`](method-arguments.md) Retrieve or set a hooked function argument
+- [`argumentsByName(string $n = ''): mixed|array`](method-argumentsbyname.md) Returns an array of all arguments indexed by name, or the value of a single specified argument
+- [`getArgumentNames(): array`](method-getargumentnames.md) Return an array of all argument names, indexed by their position
+- [`removeHook(string|HookEvent|null $hookId): HookEvent|WireData`](method-removehook.md) Remove a hook by ID
+- [`get(object|string $key): mixed|null`](method-get.md) Get
+- [`__toString()`](method-__tostring.md) Return a string representing the HookEvent

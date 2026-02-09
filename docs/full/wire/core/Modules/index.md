@@ -30,43 +30,43 @@ in order to save resources. As a result, anything iterating through these Module
 before using it. If it's a ModulePlaceholder, then the real Module can be instantiated/retrieved by $modules->get($className).
 
 Methods:
-- [`__construct(string $path)`](method-__construct.md)
-- [`isValidItem($item)`](method-isvaliditem.md)
-- [`get($key)`](method-get.md)
-- [`get(string|int $key): Module|_Module|null`](method-get.md)
-- [`getModule(string|int $key, array $options = array()): Module|_Module|null|string`](method-getmodule.md)
-- [`findByPrefix($prefix, $load = false)`](method-findbyprefix.md)
-- [`findByPrefix(string $prefix, bool|int $load = false): array`](method-findbyprefix.md)
-- [`findByInfo(string|array $selector, bool|int $load = false): array`](method-findbyinfo.md)
-- [`getInstallable()`](method-getinstallable.md)
-- [`isInstalled(string $class): bool`](method-isinstalled.md)
-- [`install(string $class, array|bool $options = array()): null|Module`](method-___install.md) (hookable)
-- [`delete(string $class): bool`](method-___delete.md) (hookable)
-- [`uninstall(string $class): bool`](method-___uninstall.md) (hookable)
-- [`getFlags($class)`](method-getflags.md)
-- [`moduleInfoCache($moduleID = null, $property = '', $verbose = false)`](method-moduleinfocache.md)
-- [`getModuleID(string|int|Module $class): int`](method-getmoduleid.md)
-- [`getModuleInfo(string|Module|int $class, array $options = array()): array`](method-getmoduleinfo.md)
-- [`getModuleInfoVerbose(string|Module|int $class, array $options = array()): array`](method-getmoduleinfoverbose.md)
-- [`getModuleInfoProperty(Module|string $class, string $property, array $options = array()): mixed|null`](method-getmoduleinfoproperty.md)
-- [`getConfig($class, $property = '')`](method-getconfig.md)
-- [`getConfig(string|Module $class, string $property = ''): array|string|int|float`](method-getconfig.md)
-- [`saveConfig(string|Module $class, array|string $data, mixed|null $value = null): bool`](method-___saveconfig.md) (hookable)
-- [`isConfigurable(Module|string $class, bool $useCache = true): bool|string|int`](method-isconfigurable.md)
-- [`getModuleEditUrl(string|Module $className, bool $collapseInfo = true): string`](method-getmoduleediturl.md)
-- [`getModuleInstallUrl(string $className): string`](method-getmoduleinstallurl.md)
-- [`isSingular($module)`](method-issingular.md)
-- [`refresh(bool $showMessages = false)`](method-___refresh.md) (hookable)
-- [`getRequiredBy($class, $uninstalled = false, $installs = false)`](method-getrequiredby.md)
-- [`setSubstitute($moduleName, $substituteName = null)`](method-setsubstitute.md)
-- [`getModuleFile($class, $options = array())`](method-getmodulefile.md)
-- [`getModuleFile(string|Module $class, array|bool $options = array()): bool|string`](method-getmodulefile.md)
-- [`getModuleLanguageFiles(Module|string $module): array`](method-getmodulelanguagefiles.md)
-- [`__invoke($key)`](method-__invoke.md)
-- [`__invoke(string $key): Module|null`](method-__invoke.md)
-- [`memcache($name, $setValue = null)`](method-memcache.md)
-- [`memcache(string $name, mixed $setValue = null): bool|array|mixed|null`](method-memcache.md)
-- [`__get(string $name): mixed`](method-__get.md)
+- [`__construct(string $path)`](method-__construct.md) Construct the Modules
+- [`isValidItem($item)`](method-isvaliditem.md) ******************************************************************************************* WIREARRAY OVERRIDES
+- [`get($key)`](method-get.md) ******************************************************************************************* GETTING/LOADING MODULES
+- [`get(string|int $key): Module|_Module|null`](method-get.md) Get the requested Module
+- [`getModule(string|int $key, array $options = array()): Module|_Module|null|string`](method-getmodule.md) Get the requested Module (with options)
+- [`findByPrefix($prefix, $load = false)`](method-findbyprefix.md) ******************************************************************************************* FINDER METHODS
+- [`findByPrefix(string $prefix, bool|int $load = false): array`](method-findbyprefix.md) Find modules matching the given prefix (i.e. “Inputfield”)
+- [`findByInfo(string|array $selector, bool|int $load = false): array`](method-findbyinfo.md) Find modules by matching a property or properties in their module info
+- [`getInstallable()`](method-getinstallable.md) ******************************************************************************************* INSTALLER METHODS
+- [`isInstalled(string $class): bool`](method-isinstalled.md) Is the given module name installed?
+- [`install(string $class, array|bool $options = array()): null|Module`](method-___install.md) (hookable) Install the given module name
+- [`delete(string $class): bool`](method-___delete.md) (hookable) Delete the given module, physically removing its files
+- [`uninstall(string $class): bool`](method-___uninstall.md) (hookable) Uninstall the given module name
+- [`getFlags($class)`](method-getflags.md) ******************************************************************************************* MODULE FLAGS
+- [`moduleInfoCache($moduleID = null, $property = '', $verbose = false)`](method-moduleinfocache.md) ******************************************************************************************* MODULE INFO
+- [`getModuleID(string|int|Module $class): int`](method-getmoduleid.md) Returns the database ID of a given module class, or 0 if not found
+- [`getModuleInfo(string|Module|int $class, array $options = array()): array`](method-getmoduleinfo.md) Returns an associative array of information for a Module
+- [`getModuleInfoVerbose(string|Module|int $class, array $options = array()): array`](method-getmoduleinfoverbose.md) Returns a verbose array of information for a Module
+- [`getModuleInfoProperty(Module|string $class, string $property, array $options = array()): mixed|null`](method-getmoduleinfoproperty.md) Get just a single property of module info
+- [`getConfig($class, $property = '')`](method-getconfig.md) ******************************************************************************************* MODULE CONFIG
+- [`getConfig(string|Module $class, string $property = ''): array|string|int|float`](method-getconfig.md) Given a module name, return an associative array of configuration data for it
+- [`saveConfig(string|Module $class, array|string $data, mixed|null $value = null): bool`](method-___saveconfig.md) (hookable) Save provided configuration data for the given module
+- [`isConfigurable(Module|string $class, bool $useCache = true): bool|string|int`](method-isconfigurable.md) Is the given module interactively configurable?
+- [`getModuleEditUrl(string|Module $className, bool $collapseInfo = true): string`](method-getmoduleediturl.md) Return the URL where the module can be edited, configured or uninstalled
+- [`getModuleInstallUrl(string $className): string`](method-getmoduleinstallurl.md) Get URL where an administrator can install given module name
+- [`isSingular($module)`](method-issingular.md) ********************************************************************************************* TOOLS
+- [`refresh(bool $showMessages = false)`](method-___refresh.md) (hookable) Refresh the modules cache
+- [`getRequiredBy($class, $uninstalled = false, $installs = false)`](method-getrequiredby.md) ********************************************************************************** DEPENDENCIES
+- [`setSubstitute($moduleName, $substituteName = null)`](method-setsubstitute.md) ********************************************************************************** SUBSTITUTES
+- [`getModuleFile($class, $options = array())`](method-getmodulefile.md) ********************************************************************************** FILES
+- [`getModuleFile(string|Module $class, array|bool $options = array()): bool|string`](method-getmodulefile.md) Get the path + filename (or optionally URL) for this module
+- [`getModuleLanguageFiles(Module|string $module): array`](method-getmodulelanguagefiles.md) Get module language translation files
+- [`__invoke($key)`](method-__invoke.md) ********************************************************************************** DEBUG AND CLASS SUPPORT
+- [`__invoke(string $key): Module|null`](method-__invoke.md) Enables use of $modules('ModuleName')
+- [`memcache($name, $setValue = null)`](method-memcache.md) ********************************************************************************** CACHES
+- [`memcache(string $name, mixed $setValue = null): bool|array|mixed|null`](method-memcache.md) Set a runtime memory cache
+- [`__get(string $name): mixed`](method-__get.md) Direct read-only properties
 
 Constants:
 - [`flagsSingular`](const-flagssingular.md)

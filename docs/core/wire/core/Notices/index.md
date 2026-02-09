@@ -50,17 +50,17 @@ foreach($notices as $notice) {
 ~~~~~
 
 Methods:
-- [`allowNotice(Notice $item): bool`](method-allownotice.md)
-- [`formatNotice(Notice $item)`](method-formatnotice.md)
-- [`add(Notice $item): Notices|WireArray`](method-add.md)
-- [`storeNotice(Notice $item): bool`](method-storenotice.md)
-- [`loadStoredNotices(): int`](method-loadstorednotices.md)
-- [`removeNotice(string|Notice $item): self`](method-removenotice.md)
-- [`isDuplicate(Notice $item): bool|Notice`](method-isduplicate.md)
-- [`addLog(Notice $item)`](method-addlog.md)
-- [`hasErrors(): bool`](method-haserrors.md)
-- [`hasWarnings(): bool`](method-haswarnings.md)
-- [`move(Wire $from, Wire $to, array $options = array()): int`](method-move.md)
-- [`getVisible(): Notices`](method-getvisible.md)
-- [`render(array $options = []): string`](method-___render.md) (hookable)
-- [`renderText(): string`](method-___rendertext.md) (hookable)
+- [`allowNotice(Notice $item): bool`](method-allownotice.md) Allow given Notice to be added?
+- [`formatNotice(Notice $item)`](method-formatnotice.md) Format Notice text
+- [`add(Notice $item): Notices|WireArray`](method-add.md) Add a Notice object
+- [`storeNotice(Notice $item): bool`](method-storenotice.md) Store a persist Notice in Session
+- [`loadStoredNotices(): int`](method-loadstorednotices.md) Load persist Notices stored in Session
+- [`removeNotice(string|Notice $item): self`](method-removenotice.md) Remove a Notice
+- [`isDuplicate(Notice $item): bool|Notice`](method-isduplicate.md) Is the given Notice a duplicate of one already here?
+- [`addLog(Notice $item)`](method-addlog.md) Add Notice to log
+- [`hasErrors(): bool`](method-haserrors.md) Are there NoticeError items present?
+- [`hasWarnings(): bool`](method-haswarnings.md) Are there NoticeWarning items present?
+- [`move(Wire $from, Wire $to, array $options = array()): int`](method-move.md) Move notices from one Wire instance to another
+- [`getVisible(): Notices`](method-getvisible.md) Get all notices visible to current user
+- [`render(array $options = []): string`](method-___render.md) (hookable) Render these notices as HTML
+- [`renderText(): string`](method-___rendertext.md) (hookable) Render these Notices as plain text

@@ -8,4 +8,4 @@ PagesVersions implementation for FieldtypeRepeater
 
 Methods:
 - [`getPageVersionNum(Page $page): int`](method-getpageversionnum.md)
-- [`getRepeaterPageArray(Page $page, Field $field, RepeaterPage|RepeaterPageArray $value): PageArray`](method-getrepeaterpagearray.md)
+- [`getRepeaterPageArray(Page $page, Field $field, RepeaterPage|RepeaterPageArray $value): PageArray`](method-getrepeaterpagearray.md) Normalize a value to a RepeaterPageArray

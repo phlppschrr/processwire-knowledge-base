@@ -31,8 +31,8 @@ it references are from your template namespace.
 @var AdminTheme $adminTheme
 
 Methods:
-- [`_hookSessionRedirectModal(HookEvent $event)`](method-_hooksessionredirectmodal.md)
-- [`_checkForHttpHostError(Config $config)`](method-_checkforhttphosterror.md)
-- [`_checkForTwoFactorAuth(Session $session)`](method-_checkfortwofactorauth.md)
-- [`_checkForMaxInputVars(WireInput $input)`](method-_checkformaxinputvars.md)
-- [`_setupForDemoMode(Page $page, ProcessWire $wire)`](method-_setupfordemomode.md)
+- [`_hookSessionRedirectModal(HookEvent $event)`](method-_hooksessionredirectmodal.md) Ensures a modal GET variable is retained through redirects, when appropriate
+- [`_checkForHttpHostError(Config $config)`](method-_checkforhttphosterror.md) Check if the current HTTP host is recognized and generate error if not
+- [`_checkForTwoFactorAuth(Session $session)`](method-_checkfortwofactorauth.md) Check if two factor authentication is being required and display warning with link to configure
+- [`_checkForMaxInputVars(WireInput $input)`](method-_checkformaxinputvars.md) Check if POST request exceeds PHP’s max_input_vars
+- [`_setupForDemoMode(Page $page, ProcessWire $wire)`](method-_setupfordemomode.md) Setup for demo mode

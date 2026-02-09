@@ -32,12 +32,12 @@ $numSent = $mail->subject('Hello world')
 ~~~~~
 
 Methods:
-- [`new(array|string $options = array()): WireMail`](method-___new.md) (hookable)
-- [`send(string|array $to = '', string $from = '', string $subject = '', string|array $body = '', array|string $options = array()): int|WireMail`](method-send.md)
-- [`sendHTML(string|array $to = '', string $from = '', string $subject = '', string $bodyHTML = '', array|string $options = array()): int|WireMail`](method-sendhtml.md)
-- [`mail(string|array $to, string $subject, string|array $message, array $headers = array()): bool`](method-mail.md)
-- [`mailHTML(string|array $to, string $subject, $messageHTML, array $headers = array()): bool`](method-mailhtml.md)
-- [`to(string|array $email, string $name = null): WireMail`](method-to.md)
-- [`from(string $email, $name = null): WireMail`](method-from.md)
-- [`subject(string $subject): WireMail`](method-subject.md)
-- [`isBlacklistEmail(string $email, array $options = array()): bool|string`](method-___isblacklistemail.md) (hookable)
+- [`new(array|string $options = array()): WireMail`](method-___new.md) (hookable) Get a new WireMail instance for sending email
+- [`send(string|array $to = '', string $from = '', string $subject = '', string|array $body = '', array|string $options = array()): int|WireMail`](method-send.md) Send an email
+- [`sendHTML(string|array $to = '', string $from = '', string $subject = '', string $bodyHTML = '', array|string $options = array()): int|WireMail`](method-sendhtml.md) Send an email with given message text assumed to be HTML
+- [`mail(string|array $to, string $subject, string|array $message, array $headers = array()): bool`](method-mail.md) Send an email, drop-in replacement for PHP mail() that uses the same arguments
+- [`mailHTML(string|array $to, string $subject, $messageHTML, array $headers = array()): bool`](method-mailhtml.md) Send an email with message assumed to be in HTML
+- [`to(string|array $email, string $name = null): WireMail`](method-to.md) Return new WireMail instance populated with “to” email
+- [`from(string $email, $name = null): WireMail`](method-from.md) Return new WireMail instance populated with “from” email
+- [`subject(string $subject): WireMail`](method-subject.md) Return new WireMail instance populated with subject
+- [`isBlacklistEmail(string $email, array $options = array()): bool|string`](method-___isblacklistemail.md) (hookable) Is given email address in the blacklist?

@@ -55,34 +55,34 @@ $numSent = $m->send();
 ~~~~~
 
 Methods:
-- [`__construct()`](method-__construct.md)
-- [`get(string $key): mixed|null`](method-get.md)
-- [`set(string $key, mixed $value): $this|WireData`](method-set.md)
-- [`sanitizeEmail(string $email): string`](method-sanitizeemail.md)
-- [`sanitizeHeaderName(string $name): string`](method-___sanitizeheadername.md) (hookable)
-- [`sanitizeHeaderValue(string $value): string`](method-___sanitizeheadervalue.md) (hookable)
-- [`extractEmailAndName(string $email): array()`](method-extractemailandname.md)
-- [`bundleEmailAndName(string $email, string $name): string`](method-bundleemailandname.md)
-- [`to(string|array|null $email = null, string $name = null): $this`](method-to.md)
-- [`toName(string $name): $this`](method-toname.md)
-- [`from(string $email, $name = null): $this`](method-from.md)
-- [`fromName(string $name): $this`](method-fromname.md)
-- [`replyTo(string $email, $name = null): $this`](method-replyto.md)
-- [`replyToName(string $name): $this`](method-replytoname.md)
-- [`subject(string $subject): $this`](method-subject.md)
-- [`body(string $body): $this`](method-body.md)
-- [`bodyHTML(string $body): $this`](method-bodyhtml.md)
-- [`header(string|array $key, string $value): $this`](method-header.md)
-- [`headers(array $headers): $this`](method-headers.md)
-- [`param(string $value): $this`](method-param.md)
-- [`attachment(string $value, string $filename = ''): $this`](method-attachment.md)
-- [`multipartBoundary(string|bool $prefix = ''): string`](method-multipartboundary.md)
-- [`send(): int`](method-___send.md) (hookable)
-- [`renderMailHeader(): string`](method-rendermailheader.md)
-- [`renderMailBody(): string`](method-rendermailbody.md)
-- [`renderMailAttachments(): string`](method-rendermailattachments.md)
-- [`strReplace(string $str, string|array $find, string $replace = ''): string`](method-strreplace.md)
-- [`htmlToText(string $html): string`](method-___htmltotext.md) (hookable)
-- [`encodeSubject(string $subject): string`](method-encodesubject.md)
-- [`findBestEncodePart(string $input, int $maxlen = 63, bool $isFirst = false): string`](method-findbestencodepart.md)
-- [`quotedPrintableString(string $text): string`](method-quotedprintablestring.md)
+- [`__construct()`](method-__construct.md) Construct
+- [`get(string $key): mixed|null`](method-get.md) Get property
+- [`set(string $key, mixed $value): $this|WireData`](method-set.md) Set property
+- [`sanitizeEmail(string $email): string`](method-sanitizeemail.md) Sanitize an email address or throw WireException if invalid or in blacklist
+- [`sanitizeHeaderName(string $name): string`](method-___sanitizeheadername.md) (hookable) Sanitize and normalize a header name
+- [`sanitizeHeaderValue(string $value): string`](method-___sanitizeheadervalue.md) (hookable) Sanitize an email header header value
+- [`extractEmailAndName(string $email): array()`](method-extractemailandname.md) Given an email string like "User <user@example.com>" extract and return email and username separately
+- [`bundleEmailAndName(string $email, string $name): string`](method-bundleemailandname.md) Given an email and name, bundle it to an RFC 2822 string
+- [`to(string|array|null $email = null, string $name = null): $this`](method-to.md) Set the email to address
+- [`toName(string $name): $this`](method-toname.md) Set the 'to' name
+- [`from(string $email, $name = null): $this`](method-from.md) Set the email 'from' address and optionally name
+- [`fromName(string $name): $this`](method-fromname.md) Set the 'from' name
+- [`replyTo(string $email, $name = null): $this`](method-replyto.md) Set the 'reply-to' email address and optionally name (where supported)
+- [`replyToName(string $name): $this`](method-replytoname.md) Set the 'reply-to' name (where supported)
+- [`subject(string $subject): $this`](method-subject.md) Set the email subject
+- [`body(string $body): $this`](method-body.md) Set the email message body (text only)
+- [`bodyHTML(string $body): $this`](method-bodyhtml.md) Set the email message body (HTML only)
+- [`header(string|array $key, string $value): $this`](method-header.md) Set any email header
+- [`headers(array $headers): $this`](method-headers.md) Set multiple email headers using associative array
+- [`param(string $value): $this`](method-param.md) Set any email param
+- [`attachment(string $value, string $filename = ''): $this`](method-attachment.md) Add a file to be attached to the email
+- [`multipartBoundary(string|bool $prefix = ''): string`](method-multipartboundary.md) Get the multipart boundary string for this email
+- [`send(): int`](method-___send.md) (hookable) Send the email
+- [`renderMailHeader(): string`](method-rendermailheader.md) Render email header string
+- [`renderMailBody(): string`](method-rendermailbody.md) Render mail body
+- [`renderMailAttachments(): string`](method-rendermailattachments.md) Render mail attachments string for placement in body
+- [`strReplace(string $str, string|array $find, string $replace = ''): string`](method-strreplace.md) Recursive string replacement
+- [`htmlToText(string $html): string`](method-___htmltotext.md) (hookable) Convert HTML mail body to TEXT mail body
+- [`encodeSubject(string $subject): string`](method-encodesubject.md) Encode a subject, use mbstring if available
+- [`findBestEncodePart(string $input, int $maxlen = 63, bool $isFirst = false): string`](method-findbestencodepart.md) Tries to split the passed subject at a whitespace at or before $maxlen, falling back to a hard substr if none was found, and returns the left part.
+- [`quotedPrintableString(string $text): string`](method-quotedprintablestring.md) Return the text quoted-printable encoded

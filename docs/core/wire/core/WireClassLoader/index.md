@@ -14,15 +14,15 @@ https://processwire.com/about/license/mit/
 
 Methods:
 - [`__construct(ProcessWire $wire = null)`](method-__construct.md)
-- [`path(string $path): string`](method-path.md)
-- [`addExtension(string $ext)`](method-addextension.md)
-- [`addSuffix(string $suffix, string $path)`](method-addsuffix.md)
-- [`addPrefix(string $prefix, string $path)`](method-addprefix.md)
-- [`addNamespace(string $namespace, string $path)`](method-addnamespace.md)
-- [`getNamespace(string $namespace): array`](method-getnamespace.md)
-- [`hasNamespace(string $namespace): bool`](method-hasnamespace.md)
-- [`removeNamespace(string $namespace, string $path = '')`](method-removenamespace.md)
-- [`findClassFile(string $className): bool|string`](method-findclassfile.md)
-- [`loadClass(string $className)`](method-loadclass.md)
-- [`findClassInPaths(string $name, string|array $paths, string $dir = ''): string|bool`](method-findclassinpaths.md)
-- [`findInPrefixSuffixPaths(string $name): bool|string`](method-findinprefixsuffixpaths.md)
+- [`path(string $path): string`](method-path.md) Normalize a path
+- [`addExtension(string $ext)`](method-addextension.md) Add a recognized file extension for PHP files
+- [`addSuffix(string $suffix, string $path)`](method-addsuffix.md) Map a class suffix to a path
+- [`addPrefix(string $prefix, string $path)`](method-addprefix.md) Map a class prefix to a path
+- [`addNamespace(string $namespace, string $path)`](method-addnamespace.md) Add a namespace to point to a path root
+- [`getNamespace(string $namespace): array`](method-getnamespace.md) Return array of paths for the given namespace, or empty array if none found
+- [`hasNamespace(string $namespace): bool`](method-hasnamespace.md) Return true if namespace is defined with paths or false if not
+- [`removeNamespace(string $namespace, string $path = '')`](method-removenamespace.md) Remove defined paths (or single path) for given namespace
+- [`findClassFile(string $className): bool|string`](method-findclassfile.md) Find filename for given class name (primarily for API testing/debugging purposes)
+- [`loadClass(string $className)`](method-loadclass.md) Load the file for the given class
+- [`findClassInPaths(string $name, string|array $paths, string $dir = ''): string|bool`](method-findclassinpaths.md) Find class file among given paths and return full pathname to file if found
+- [`findInPrefixSuffixPaths(string $name): bool|string`](method-findinprefixsuffixpaths.md) Check prefix and suffix definition paths for given class name and return file if found

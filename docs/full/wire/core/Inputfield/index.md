@@ -118,47 +118,47 @@ MULTI-LANGUAGE METHODS (requires LanguageSupport module to be installed)
 - [`getLanguageValue($language): string|mixed`](method-getlanguagevalue.md) Get language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238
 
 Methods:
-- [`__construct()`](method-__construct.md)
-- [`init()`](method-init.md)
-- [`install()`](method-___install.md) (hookable)
-- [`uninstall()`](method-___uninstall.md) (hookable)
-- [`set(string $key, mixed $value): Inputfield|WireData`](method-set.md)
-- [`get(string $key): mixed|null`](method-get.md)
-- [`getSetting(string $key): mixed`](method-getsetting.md)
-- [`setParent(InputfieldWrapper $parent): $this`](method-setparent.md)
-- [`getParent(): InputfieldWrapper|null`](method-getparent.md)
-- [`getParents(): array`](method-getparents.md)
-- [`parent(null|InputfieldWrapper $parent = null): null|Inputfield|InputfieldWrapper`](method-parent.md)
-- [`parents(): array`](method-parents.md)
-- [`getRootParent(): InputfieldForm|InputfieldWrapper|null`](method-getrootparent.md)
-- [`getForm(): InputfieldForm|null`](method-getform.md)
-- [`removeAttr(string $key): $this`](method-removeattr.md)
-- [`attr(string|array|bool $key, string|int|bool|null $value = null): Inputfield|array|string|int|object|float`](method-attr.md)
-- [`val(string|null $value = null): string|int|float|array|object|Wire|WireData|WireArray|Inputfield`](method-val.md)
-- [`wrapAttr(string|null|bool $key = null, string|null|bool $value = null): Inputfield|string|array|null`](method-wrapattr.md)
-- [`addClass(string|array $class, string $property = 'class'): $this`](method-addclass.md)
-- [`addClassString(string $class, string $property = 'class'): self`](method-addclassstring.md)
-- [`hasClass(string|array $class, string $property = 'class'): bool`](method-hasclass.md)
-- [`getClassArray(string $property = 'class', bool $assoc = false): array`](method-getclassarray.md)
-- [`getClassProperty(string $property): string`](method-getclassproperty.md)
-- [`removeClass(string|array $class, string $property = 'class'): $this`](method-removeclass.md)
-- [`render(): string`](method-___render.md) (hookable)
-- [`renderValue(): string`](method-___rendervalue.md) (hookable)
-- [`renderReady(?Inputfield $parent = null, bool $renderValueMode = false): bool`](method-renderready.md)
-- [`renderReadyHook(?Inputfield $parent = null, bool $renderValueMode = false)`](method-___renderreadyhook.md) (hookable)
-- [`processInput(WireInputData $input): $this`](method-___processinput.md) (hookable)
-- [`isEmpty(): bool`](method-isempty.md)
-- [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable)
-- [`getConfigArray(): array`](method-___getconfigarray.md) (hookable)
-- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md) (hookable)
-- [`error(string $text, int $flags = 0): $this`](method-error.md)
-- [`getErrors(bool $clear = false): array`](method-geterrors.md)
-- [`clearErrors()`](method-clearerrors.md)
-- [`has(string $key): bool`](method-has.md)
-- [`entityEncode(string $str, bool|int $markdown = false): string`](method-entityencode.md)
-- [`editable(bool|null $setEditable = null): bool`](method-editable.md)
-- [`addHeaderAction(array $settings = array()): array`](method-addheaderaction.md)
-- [`__debugInfo(): array`](method-__debuginfo.md)
+- [`__construct()`](method-__construct.md) Construct the Inputfield, setting defaults for all properties
+- [`init()`](method-init.md) Per the Module interface, init() is called after any configuration data has been populated to the Inputfield, but before render.
+- [`install()`](method-___install.md) (hookable) Per the Module interface, this method is called when this Inputfield is installed
+- [`uninstall()`](method-___uninstall.md) (hookable) Per the Module interface, uninstall() is called when this Inputfield is uninstalled
+- [`set(string $key, mixed $value): Inputfield|WireData`](method-set.md) Set a property or attribute to the Inputfield
+- [`get(string $key): mixed|null`](method-get.md) Get a property or attribute from the Inputfield
+- [`getSetting(string $key): mixed`](method-getsetting.md) Gets a setting (or API variable) from the Inputfield, while ignoring attributes.
+- [`setParent(InputfieldWrapper $parent): $this`](method-setparent.md) Set the parent (InputfieldWrapper) of this Inputfield.
+- [`getParent(): InputfieldWrapper|null`](method-getparent.md) Get this Inputfield’s parent InputfieldWrapper, or NULL if it doesn’t have one.
+- [`getParents(): array`](method-getparents.md) Get array of all parents of this Inputfield.
+- [`parent(null|InputfieldWrapper $parent = null): null|Inputfield|InputfieldWrapper`](method-parent.md) Get or set parent of Inputfield
+- [`parents(): array`](method-parents.md) Get array of all parents of this Inputfield
+- [`getRootParent(): InputfieldForm|InputfieldWrapper|null`](method-getrootparent.md) Get the root parent InputfieldWrapper element (farthest parent, commonly InputfieldForm)
+- [`getForm(): InputfieldForm|null`](method-getform.md) Get the InputfieldForm element that contains this field or null if not yet defined
+- [`removeAttr(string $key): $this`](method-removeattr.md) Remove an attribute
+- [`attr(string|array|bool $key, string|int|bool|null $value = null): Inputfield|array|string|int|object|float`](method-attr.md) Get or set an attribute (or multiple attributes)
+- [`val(string|null $value = null): string|int|float|array|object|Wire|WireData|WireArray|Inputfield`](method-val.md) Shortcut for getting or setting “value” attribute
+- [`wrapAttr(string|null|bool $key = null, string|null|bool $value = null): Inputfield|string|array|null`](method-wrapattr.md) Get or set attribute for the element wrapping this Inputfield
+- [`addClass(string|array $class, string $property = 'class'): $this`](method-addclass.md) Add a class or classes to this Inputfield (or a wrapping element)
+- [`addClassString(string $class, string $property = 'class'): self`](method-addclassstring.md) Add class(es) by formatted string that lets you specify where class should be added
+- [`hasClass(string|array $class, string $property = 'class'): bool`](method-hasclass.md) Does this Inputfield have the given class name (or names)?
+- [`getClassArray(string $property = 'class', bool $assoc = false): array`](method-getclassarray.md) Get classes in array for given class property
+- [`getClassProperty(string $property): string`](method-getclassproperty.md) Get the internal property name for given class property
+- [`removeClass(string|array $class, string $property = 'class'): $this`](method-removeclass.md) Remove the given class (or classes) from this Inputfield
+- [`render(): string`](method-___render.md) (hookable) Render the HTML input element(s) markup, ready for insertion in an HTML form.
+- [`renderValue(): string`](method-___rendervalue.md) (hookable) Render just the value (not input) in text/markup for presentation purposes.
+- [`renderReady(?Inputfield $parent = null, bool $renderValueMode = false): bool`](method-renderready.md) Method called right before Inputfield markup is rendered, so that any dependencies can be loaded as well.
+- [`renderReadyHook(?Inputfield $parent = null, bool $renderValueMode = false)`](method-___renderreadyhook.md) (hookable) Hookable version of renderReady(), not called unless 'renderReadyHook' is hooked
+- [`processInput(WireInputData $input): $this`](method-___processinput.md) (hookable) Process input for this Inputfield directly from the POST (or GET) variables
+- [`isEmpty(): bool`](method-isempty.md) Is this Inputfield empty? (Value attribute reflects an empty state)
+- [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get any custom configuration fields for this Inputfield
+- [`getConfigArray(): array`](method-___getconfigarray.md) (hookable) Alternative method for configuration that allows for array definition
+- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md) (hookable) Return a list of config property names allowed for fieldgroup/template context
+- [`error(string $text, int $flags = 0): $this`](method-error.md) Record an error for this Inputfield
+- [`getErrors(bool $clear = false): array`](method-geterrors.md) Return array of strings containing errors that occurred during input processing
+- [`clearErrors()`](method-clearerrors.md) Clear errors from this Inputfield
+- [`has(string $key): bool`](method-has.md) Does this Inputfield have the requested property or attribute?
+- [`entityEncode(string $str, bool|int $markdown = false): string`](method-entityencode.md) Entity encode a string with optional Markdown support.
+- [`editable(bool|null $setEditable = null): bool`](method-editable.md) Get or set editable state for this Inputfield
+- [`addHeaderAction(array $settings = array()): array`](method-addheaderaction.md) Add header action
+- [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
 Constants:
 - [`collapsedNo`](const-collapsedno.md)

@@ -29,16 +29,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 Methods:
-- [`__construct(string $encoding = 'UTF-8')`](method-__construct.md)
-- [`encode(string $input): string`](method-encode.md)
-- [`encodePart(string $input): string`](method-encodepart.md)
-- [`decode(string $input): string`](method-decode.md)
-- [`decodePart(string $input): string`](method-decodepart.md)
-- [`calculateThreshold(integer $k, integer $bias): integer`](method-calculatethreshold.md)
-- [`adapt(integer $delta, integer $numPoints, boolean $firstTime): integer`](method-adapt.md)
-- [`listCodePoints(string $input): array`](method-listcodepoints.md)
-- [`charToCodePoint(string $char): integer`](method-chartocodepoint.md)
-- [`codePointToChar(integer $code): string`](method-codepointtochar.md)
+- [`__construct(string $encoding = 'UTF-8')`](method-__construct.md) Constructor
+- [`encode(string $input): string`](method-encode.md) Encode a domain to its Punycode version
+- [`encodePart(string $input): string`](method-encodepart.md) Encode a part of a domain name, such as tld, to its Punycode version
+- [`decode(string $input): string`](method-decode.md) Decode a Punycode domain name to its Unicode counterpart
+- [`decodePart(string $input): string`](method-decodepart.md) Decode a part of domain name, such as tld
+- [`calculateThreshold(integer $k, integer $bias): integer`](method-calculatethreshold.md) Calculate the bias threshold to fall between TMIN and TMAX
+- [`adapt(integer $delta, integer $numPoints, boolean $firstTime): integer`](method-adapt.md) Bias adaptation
+- [`listCodePoints(string $input): array`](method-listcodepoints.md) List code points for a given input
+- [`charToCodePoint(string $char): integer`](method-chartocodepoint.md) Convert a single or multi-byte character to its code point
+- [`codePointToChar(integer $code): string`](method-codepointtochar.md) Convert a code point to its single or multi-byte character
 
 Constants:
 - [`BASE`](const-base.md)

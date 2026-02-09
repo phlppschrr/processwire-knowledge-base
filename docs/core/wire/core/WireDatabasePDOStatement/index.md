@@ -14,9 +14,9 @@ populated queries are not ever used for actual database queries, just for logs.
 Note that this class only tracks bindValue() and does not track bindParam().
 
 Methods:
-- [`__construct(WireDatabasePDO $database)`](method-__construct.md)
-- [`setDebugNote(string $note)`](method-setdebugnote.md)
-- [`setDebugParam(string $parameter, int|string|null $value, int|null $data_type = null)`](method-setdebugparam.md)
-- [`bindValue(string|int $parameter, mixed $value, int $data_type = \PDO::PARAM_STR): bool`](method-bindvalue.md)
-- [`execute(array|null $input_parameters = NULL): bool`](method-execute.md)
-- [`executeDebug(array|null $input_parameters = NULL): bool`](method-executedebug.md)
+- [`__construct(WireDatabasePDO $database)`](method-__construct.md) Construct
+- [`setDebugNote(string $note)`](method-setdebugnote.md) Set debug note
+- [`setDebugParam(string $parameter, int|string|null $value, int|null $data_type = null)`](method-setdebugparam.md) Set a named debug parameter
+- [`bindValue(string|int $parameter, mixed $value, int $data_type = \PDO::PARAM_STR): bool`](method-bindvalue.md) Bind a value for this statement
+- [`execute(array|null $input_parameters = NULL): bool`](method-execute.md) Execute prepared statement
+- [`executeDebug(array|null $input_parameters = NULL): bool`](method-executedebug.md) Execute prepared statement when in debug mode only

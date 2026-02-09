@@ -29,15 +29,15 @@ echo $m->render();
 echo $m->render('property');
 
 Methods:
-- [`__construct(?Page $page = null, ?Field $field = null, mixed $value = null)`](method-__construct.md)
-- [`render(string $property = ''): string`](method-render.md)
-- [`renderValue(mixed $value): string`](method-rendervalue.md)
-- [`renderProperty(string $property, mixed $value): string`](method-renderproperty.md)
-- [`valueToString(mixed $value, bool $encode = true): string`](method-valuetostring.md)
-- [`arrayToString(array|WireArray $value, bool $encode = true): string`](method-arraytostring.md)
-- [`objectToString(Wire|object $value): string`](method-objecttostring.md)
-- [`renderInputfieldValue($value): string`](method-renderinputfieldvalue.md)
-- [`isLinkablePageProperty(Page $page, $property): bool`](method-islinkablepageproperty.md)
-- [`__toString(): string`](method-__tostring.md)
-- [`setValue($value)`](method-setvalue.md)
-- [`getValue(): mixed`](method-getvalue.md)
+- [`__construct(?Page $page = null, ?Field $field = null, mixed $value = null)`](method-__construct.md) Construct the MarkupFieldtype
+- [`render(string $property = ''): string`](method-render.md) Render markup for the field or for the property from field
+- [`renderValue(mixed $value): string`](method-rendervalue.md) Render the entire $page->get($field->name) value.
+- [`renderProperty(string $property, mixed $value): string`](method-renderproperty.md) Render the just a property from the $page->get($field->name) value.
+- [`valueToString(mixed $value, bool $encode = true): string`](method-valuetostring.md) Convert any value to a string
+- [`arrayToString(array|WireArray $value, bool $encode = true): string`](method-arraytostring.md) Render an unknown array or WireArray to a string
+- [`objectToString(Wire|object $value): string`](method-objecttostring.md) Render an object to a string
+- [`renderInputfieldValue($value): string`](method-renderinputfieldvalue.md) Render a value using an Inputfield's renderValue() method
+- [`isLinkablePageProperty(Page $page, $property): bool`](method-islinkablepageproperty.md) Is the given page property/field name one that should be linked to the source page in output?
+- [`__toString(): string`](method-__tostring.md) The string value of a MarkupFieldtype is always the fully rendered field
+- [`setValue($value)`](method-setvalue.md) Set the value
+- [`getValue(): mixed`](method-getvalue.md) Get the value

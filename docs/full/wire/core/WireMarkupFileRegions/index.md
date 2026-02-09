@@ -152,13 +152,13 @@ takes care of moving them to externally linked assets.
 @since 3.0.254
 
 Methods:
-- [`getDefaults(): array`](method-getdefaults.md)
-- [`apply(string &$htmlDocument, string &$htmlRegions, array $options = []): int`](method-apply.md)
-- [`findRegions(string &$html, array $options): array`](method-findregions.md)
-- [`populateRegions(array $fileRegions, string &$html, array $options = []): string`](method-populateregions.md)
-- [`applyRegionNamespace(array &$region)`](method-applyregionnamespace.md)
-- [`applyRegionLinks(string &$html, string $basename, string $url, string $ext, array $options): string`](method-applyregionlinks.md)
-- [`addNote(string $note)`](method-addnote.md)
-- [`getNotes(): array`](method-getnotes.md)
-- [`addError(string $key, string $error)`](method-adderror.md)
-- [`getErrors(string $key = ''): array`](method-geterrors.md)
+- [`getDefaults(): array`](method-getdefaults.md) Get default settings
+- [`apply(string &$htmlDocument, string &$htmlRegions, array $options = []): int`](method-apply.md) Apply file regions in given HTML document and regions markup
+- [`findRegions(string &$html, array $options): array`](method-findregions.md) Find and return file regions in given HTML
+- [`populateRegions(array $fileRegions, string &$html, array $options = []): string`](method-populateregions.md) Populate file regions
+- [`applyRegionNamespace(array &$region)`](method-applyregionnamespace.md) Apply namespace to region content
+- [`applyRegionLinks(string &$html, string $basename, string $url, string $ext, array $options): string`](method-applyregionlinks.md) Apply region links (optional)
+- [`addNote(string $note)`](method-addnote.md) Add a debug note
+- [`getNotes(): array`](method-getnotes.md) Get debug note
+- [`addError(string $key, string $error)`](method-adderror.md) Add an error
+- [`getErrors(string $key = ''): array`](method-geterrors.md) Get errors

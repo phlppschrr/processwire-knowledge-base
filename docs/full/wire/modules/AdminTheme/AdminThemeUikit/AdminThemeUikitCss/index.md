@@ -28,11 +28,11 @@ Settings that may be specified in $config->AdminThemeUikit array:
 @since 3.0.179
 
 Methods:
-- [`__construct(AdminTheme $adminTheme, array $options = array())`](method-__construct.md)
+- [`__construct(AdminTheme $adminTheme, array $options = array())`](method-__construct.md) Construct
 - [`getDefaults(): array`](method-getdefaults.md)
-- [`getCssFile(bool $getPath = false): string`](method-getcssfile.md)
-- [`fileToUrl(string $file): string`](method-filetourl.md)
-- [`getDefaultCssFile(bool $getPath = false): string`](method-getdefaultcssfile.md)
-- [`configPhpSettingsChanged(): bool`](method-configphpsettingschanged.md)
-- [`customFile(string $file, string $requireExtension = ''): string`](method-customfile.md)
-- [`getAdminStyleLessFile(): string`](method-getadminstylelessfile.md)
+- [`getCssFile(bool $getPath = false): string`](method-getcssfile.md) Get the primary Uikit CSS file URL to use (whether default or custom)
+- [`fileToUrl(string $file): string`](method-filetourl.md) Get URL for given full path/file
+- [`getDefaultCssFile(bool $getPath = false): string`](method-getdefaultcssfile.md) Get default Uikit CSS file URL or disk path
+- [`configPhpSettingsChanged(): bool`](method-configphpsettingschanged.md) Have the $config->AdminThemeUikit settings changed?
+- [`customFile(string $file, string $requireExtension = ''): string`](method-customfile.md) Apply custom file/path replacements
+- [`getAdminStyleLessFile(): string`](method-getadminstylelessfile.md) Get admin base style file to use

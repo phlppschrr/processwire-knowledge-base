@@ -19,45 +19,45 @@ of most other methods provided in this Fieldtype class accounts for most situati
 
 
 Methods:
-- [`getInputfield(Page $page, Field $field): Inputfield|null`](method-getinputfield.md)
-- [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable)
-- [`getConfigArray(Field $field): array`](method-___getconfigarray.md) (hookable)
-- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md) (hookable)
-- [`getConfigAdvancedInputfields(Field $field): InputfieldWrapper`](method-___getconfigadvancedinputfields.md) (hookable)
-- [`exportConfigData(Field $field, array $data): array`](method-___exportconfigdata.md) (hookable)
-- [`importConfigData(Field $field, array $data): array`](method-___importconfigdata.md) (hookable)
-- [`getCompatibleFieldtypes(Field $field): Fieldtypes|null`](method-___getcompatiblefieldtypes.md) (hookable)
-- [`sanitizeValue(Page $page, Field $field, string|int|WireArray|object $value): string|int|WireArray|object`](method-sanitizevalue.md)
-- [`formatValue(Page $page, Field $field, string|int|object $value): mixed`](method-___formatvalue.md) (hookable)
-- [`markupValue(Page $page, Field $field, mixed $value = null, string $property = ''): string|MarkupFieldtype`](method-___markupvalue.md) (hookable)
-- [`getBlankValue(Page $page, Field $field): string|int|object|null`](method-getblankvalue.md)
-- [`isDeleteValue(Page $page, Field $field, mixed $value): bool`](method-isdeletevalue.md)
-- [`isEmptyValue(Field $field, mixed $value): bool`](method-isemptyvalue.md)
-- [`wakeupValue(Page $page, Field $field, string|int|array $value): string|int|array|object`](method-___wakeupvalue.md) (hookable)
-- [`sleepValue(Page $page, Field $field, string|int|float|array|object $value): string|int|float|array`](method-___sleepvalue.md) (hookable)
-- [`exportValue(Page $page, Field $field, string|int|float|array|object|null $value, array $options = array()): string|float|int|array`](method-___exportvalue.md) (hookable)
-- [`getMatchQuery(PageFinderDatabaseQuerySelect $query, string $table, string $subfield, string $operator, mixed $value): PageFinderDatabaseQuerySelect|DatabaseQuerySelect`](method-getmatchquery.md)
-- [`createField(Field $field): bool`](method-___createfield.md) (hookable)
-- [`getDatabaseSchema(Field $field): array`](method-getdatabaseschema.md)
-- [`getFieldClass(array $a = array()): string`](method-getfieldclass.md)
-- [`getSelectorInfo(Field $field, array $data = array()): array`](method-___getselectorinfo.md) (hookable)
-- [`loadPageField(Page $page, Field $field): mixed|null`](method-___loadpagefield.md) (hookable)
-- [`loadPageFieldFilter(Page $page, Field $field, Selectors|string|array $selector): mixed|null`](method-___loadpagefieldfilter.md) (hookable)
-- [`getLoadQuery(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect`](method-getloadquery.md)
-- [`getLoadQueryAutojoin(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect|NULL`](method-getloadqueryautojoin.md)
-- [`savePageField(Page $page, Field $field): bool`](method-___savepagefield.md) (hookable)
-- [`deleteField(Field $field): bool`](method-___deletefield.md) (hookable)
-- [`deletePageField(Page $page, Field $field): bool`](method-___deletepagefield.md) (hookable)
-- [`emptyPageField(Page $page, Field $field): bool`](method-___emptypagefield.md) (hookable)
-- [`emptyPageFieldTable(Page $page, Field $field): bool`](method-emptypagefieldtable.md)
-- [`replacePageField(Page $src, Page $dst, Field $field): bool`](method-___replacepagefield.md) (hookable)
-- [`deleteTemplateField(Template $template, Field $field): bool`](method-___deletetemplatefield.md) (hookable)
-- [`cloneField(Field $field): Field`](method-___clonefield.md) (hookable)
-- [`get(string $key): mixed`](method-get.md)
-- [`install()`](method-___install.md) (hookable)
-- [`uninstall()`](method-___uninstall.md) (hookable)
-- [`upgrade($fromVersion, $toVersion)`](method-___upgrade.md) (hookable)
-- [`__toString()`](method-__tostring.md)
+- [`getInputfield(Page $page, Field $field): Inputfield|null`](method-getinputfield.md) Return new instance of the Inputfield module associated with this Fieldtype.
+- [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get any Inputfields used for configuration of this Fieldtype.
+- [`getConfigArray(Field $field): array`](method-___getconfigarray.md) (hookable) Same as getConfigInputfields but with definition as an array instead
+- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md) (hookable) Return an array of configuration field names from that are allowed in fieldgroup/template context
+- [`getConfigAdvancedInputfields(Field $field): InputfieldWrapper`](method-___getconfigadvancedinputfields.md) (hookable) Get Inputfields for advanced settings of the Field and Fieldtype
+- [`exportConfigData(Field $field, array $data): array`](method-___exportconfigdata.md) (hookable) Export configuration values for external consumption
+- [`importConfigData(Field $field, array $data): array`](method-___importconfigdata.md) (hookable) Convert an array of exported data to a format that will be understood internally
+- [`getCompatibleFieldtypes(Field $field): Fieldtypes|null`](method-___getcompatiblefieldtypes.md) (hookable) Get an array of Fieldtypes that are compatible with this one
+- [`sanitizeValue(Page $page, Field $field, string|int|WireArray|object $value): string|int|WireArray|object`](method-sanitizevalue.md) Sanitize the value for runtime storage and return it.
+- [`formatValue(Page $page, Field $field, string|int|object $value): mixed`](method-___formatvalue.md) (hookable) Format the given value for output and return a string of the formatted value
+- [`markupValue(Page $page, Field $field, mixed $value = null, string $property = ''): string|MarkupFieldtype`](method-___markupvalue.md) (hookable) Render a markup string of the value.
+- [`getBlankValue(Page $page, Field $field): string|int|object|null`](method-getblankvalue.md) Return the blank value for this fieldtype, whether that is a blank string, zero value, blank object or array
+- [`isDeleteValue(Page $page, Field $field, mixed $value): bool`](method-isdeletevalue.md) Is given value one that should cause the DB row(s) to be deleted rather than saved?
+- [`isEmptyValue(Field $field, mixed $value): bool`](method-isemptyvalue.md) Return whether the given value is considered empty or not.
+- [`wakeupValue(Page $page, Field $field, string|int|array $value): string|int|array|object`](method-___wakeupvalue.md) (hookable) Given a raw value (value as stored in database), return the value as it would appear in a Page object.
+- [`sleepValue(Page $page, Field $field, string|int|float|array|object $value): string|int|float|array`](method-___sleepvalue.md) (hookable) Given an 'awake' value, as set by wakeupValue(), convert the value back to a basic type for storage in database.
+- [`exportValue(Page $page, Field $field, string|int|float|array|object|null $value, array $options = array()): string|float|int|array`](method-___exportvalue.md) (hookable) Given a value, return an portable version of it as either a string, int, float or array
+- [`getMatchQuery(PageFinderDatabaseQuerySelect $query, string $table, string $subfield, string $operator, mixed $value): PageFinderDatabaseQuerySelect|DatabaseQuerySelect`](method-getmatchquery.md) Get the database query that matches a Fieldtype table’s data with a given value.
+- [`createField(Field $field): bool`](method-___createfield.md) (hookable) Create a new field table in the database.
+- [`getDatabaseSchema(Field $field): array`](method-getdatabaseschema.md) Get the database schema for this field
+- [`getFieldClass(array $a = array()): string`](method-getfieldclass.md) Get class name to use Field objects of this type (must be class that extends Field class)
+- [`getSelectorInfo(Field $field, array $data = array()): array`](method-___getselectorinfo.md) (hookable) Return array with information about what properties and operators can be used with this field.
+- [`loadPageField(Page $page, Field $field): mixed|null`](method-___loadpagefield.md) (hookable) Load the given page field from the database table and return the value.
+- [`loadPageFieldFilter(Page $page, Field $field, Selectors|string|array $selector): mixed|null`](method-___loadpagefieldfilter.md) (hookable) Load the given page field from the database table and return a *filtered* value.
+- [`getLoadQuery(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect`](method-getloadquery.md) Return the query used for loading all parts of the data from this field.
+- [`getLoadQueryAutojoin(Field $field, DatabaseQuerySelect $query): DatabaseQuerySelect|NULL`](method-getloadqueryautojoin.md) Return the query used for Autojoining this field (if different from getLoadQuery) or NULL if autojoin not allowed.
+- [`savePageField(Page $page, Field $field): bool`](method-___savepagefield.md) (hookable) Save the given field from given page to the database.
+- [`deleteField(Field $field): bool`](method-___deletefield.md) (hookable) Delete the given field, which implies: drop the table used by the field.
+- [`deletePageField(Page $page, Field $field): bool`](method-___deletepagefield.md) (hookable) Delete the given Field from the given Page.
+- [`emptyPageField(Page $page, Field $field): bool`](method-___emptypagefield.md) (hookable) Empty out the DB table data for page field, but leave everything else in tact.
+- [`emptyPageFieldTable(Page $page, Field $field): bool`](method-emptypagefieldtable.md) Empty DB table of page field
+- [`replacePageField(Page $src, Page $dst, Field $field): bool`](method-___replacepagefield.md) (hookable) Move this field’s data from one page to another.
+- [`deleteTemplateField(Template $template, Field $field): bool`](method-___deletetemplatefield.md) (hookable) Delete the given Field from all pages using the given template, without loading those pages.
+- [`cloneField(Field $field): Field`](method-___clonefield.md) (hookable) Return a cloned copy of $field
+- [`get(string $key): mixed`](method-get.md) Get a property from this Fieldtype’s data
+- [`install()`](method-___install.md) (hookable) Install this Fieldtype, consistent with optional Module interface
+- [`uninstall()`](method-___uninstall.md) (hookable) Uninstall this Fieldtype, consistent with optional Module interface
+- [`upgrade($fromVersion, $toVersion)`](method-___upgrade.md) (hookable) Called when module version changes
+- [`__toString()`](method-__tostring.md) The string value of Fieldtype is always the Fieldtype's name.
 
 Hookable methods
 ================

@@ -23,10 +23,10 @@ Used on PHP 8.4+ installations only. Necessary because:
 @since 3.0.255
 
 Methods:
-- [`__construct(WireSessionHandler $handler)`](method-__construct.md)
-- [`close(): bool`](method-close.md)
-- [`destroy(string $id): bool`](method-destroy.md)
-- [`gc(int $max_lifetime): int|false`](method-gc.md)
-- [`open(string $path, string $name): bool`](method-open.md)
-- [`read(string $id): string|false`](method-read.md)
-- [`write(string $id, string $data): bool`](method-write.md)
+- [`__construct(WireSessionHandler $handler)`](method-__construct.md) Construct
+- [`close(): bool`](method-close.md) Closes the current session.
+- [`destroy(string $id): bool`](method-destroy.md) Destroys a session.
+- [`gc(int $max_lifetime): int|false`](method-gc.md) Cleans up expired sessions.
+- [`open(string $path, string $name): bool`](method-open.md) Re-initialize existing session, or creates a new one.
+- [`read(string $id): string|false`](method-read.md) Reads the session data from the session storage, and returns the results.
+- [`write(string $id, string $data): bool`](method-write.md) Writes the session data to the session storage.

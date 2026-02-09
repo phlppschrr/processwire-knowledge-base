@@ -17,6 +17,6 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-- [`format(&$str): array`](method-format.md)
-- [`format(string &$str)`](method-format.md)
-- [`formatValue(Page $page, Field $field, string|mixed &$value)`](method-formatvalue.md)
+- [`format(&$str): array`](method-format.md) Return an array of module information
+- [`format(string &$str)`](method-format.md) Format the given text string, outside of specific Page or Field context.
+- [`formatValue(Page $page, Field $field, string|mixed &$value)`](method-formatvalue.md) Format the given text string with Page and Field provided.

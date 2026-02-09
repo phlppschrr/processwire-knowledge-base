@@ -47,33 +47,33 @@ if($success) {
 ~~~~~
 
 Methods:
-- [`__construct(string $path = '')`](method-__construct.md)
-- [`setDatabaseConfig(array|Config|object $config): $this`](method-setdatabaseconfig.md)
-- [`setDatabase(\PDO|WireDatabasePDO $database)`](method-setdatabase.md)
-- [`getDatabase(): \PDO`](method-getdatabase.md)
-- [`error(string $str = ''): string`](method-error.md)
-- [`errors(bool $reset = false): array`](method-errors.md)
-- [`note($key, $value)`](method-note.md)
-- [`notes(bool $reset = false): array`](method-notes.md)
-- [`setPath(string $path): $this`](method-setpath.md)
-- [`getPath(): string`](method-getpath.md)
-- [`getFiles(bool $getObjects = false): array|\SplFileInfo[]`](method-getfiles.md)
-- [`getFileInfo(string $filename): array`](method-getfileinfo.md)
-- [`getAllTables(bool $count = false, bool $cache = true): array`](method-getalltables.md)
-- [`backup(array $options = array()): string`](method-backup.md)
-- [`unlink(string $file): bool`](method-unlink.md)
-- [`backupStartFile(string $file, array $options): bool`](method-backupstartfile.md)
-- [`backupEndFile(string|resource $file, array $summary = array(), array $options = array()): bool`](method-backupendfile.md)
-- [`backupPDO(string $file, array $options = array()): string|bool`](method-backuppdo.md)
-- [`backupExec(string $file, array $options): string|bool`](method-backupexec.md)
-- [`restore(string $filename, array $options = array()): true`](method-restore.md)
-- [`restorePDO(string $filename, array $options = array()): bool`](method-restorepdo.md)
-- [`restoreExec(string $filename, array $options = array()): bool`](method-restoreexec.md)
-- [`restoreUseLine($line): bool`](method-restoreuseline.md)
-- [`restoreMerge(string $filename1, string $filename2, array $options): bool`](method-restoremerge.md)
-- [`dropAllTables(): int`](method-dropalltables.md)
-- [`findStatements(string $filename, string $regex, bool $multi = true): array`](method-findstatements.md)
-- [`executeQuery(string|\PDOStatement $query, bool|array $options = array()): bool`](method-executequery.md)
-- [`sanitizePath($path): string`](method-sanitizepath.md)
-- [`sanitizeFilename($filename): string`](method-sanitizefilename.md)
-- [`supportsExec(array $options = array()): bool`](method-supportsexec.md)
+- [`__construct(string $path = '')`](method-__construct.md) Construct
+- [`setDatabaseConfig(array|Config|object $config): $this`](method-setdatabaseconfig.md) Set the database configuration information
+- [`setDatabase(\PDO|WireDatabasePDO $database)`](method-setdatabase.md) Set the PDO database connection
+- [`getDatabase(): \PDO`](method-getdatabase.md) Get current database connection, initiating the connection if not yet active
+- [`error(string $str = ''): string`](method-error.md) Add an error and return last error
+- [`errors(bool $reset = false): array`](method-errors.md) Return all error messages that occurred
+- [`note($key, $value)`](method-note.md) Record a note
+- [`notes(bool $reset = false): array`](method-notes.md) Get all notes
+- [`setPath(string $path): $this`](method-setpath.md) Set path where database files are stored
+- [`getPath(): string`](method-getpath.md) Get path where database files are stored
+- [`getFiles(bool $getObjects = false): array|\SplFileInfo[]`](method-getfiles.md) Return array of all backup files
+- [`getFileInfo(string $filename): array`](method-getfileinfo.md) Get information about a backup file
+- [`getAllTables(bool $count = false, bool $cache = true): array`](method-getalltables.md) Get array of all table names
+- [`backup(array $options = array()): string`](method-backup.md) Perform a database export/dump
+- [`unlink(string $file): bool`](method-unlink.md) Unlink file using PW if available or PHP if not
+- [`backupStartFile(string $file, array $options): bool`](method-backupstartfile.md) Start a new backup file, adding our info header to the top
+- [`backupEndFile(string|resource $file, array $summary = array(), array $options = array()): bool`](method-backupendfile.md) End a new backup file, adding our footer to the bottom
+- [`backupPDO(string $file, array $options = array()): string|bool`](method-backuppdo.md) Create a mysql dump file using PDO
+- [`backupExec(string $file, array $options): string|bool`](method-backupexec.md) Create a mysql dump file using exec(mysqldump)
+- [`restore(string $filename, array $options = array()): true`](method-restore.md) Restore/import a MySQL database dump file
+- [`restorePDO(string $filename, array $options = array()): bool`](method-restorepdo.md) Import a database SQL file using PDO
+- [`restoreExec(string $filename, array $options = array()): bool`](method-restoreexec.md) Import a database SQL file using exec(mysql)
+- [`restoreUseLine($line): bool`](method-restoreuseline.md) Returns true or false if a line should be used for restore
+- [`restoreMerge(string $filename1, string $filename2, array $options): bool`](method-restoremerge.md) Restore from 2 SQL files while resolving table differences (think of it as array_merge for a DB restore)
+- [`dropAllTables(): int`](method-dropalltables.md) Drop all tables from database
+- [`findStatements(string $filename, string $regex, bool $multi = true): array`](method-findstatements.md) Returns array of all create table statements, indexed by table name
+- [`executeQuery(string|\PDOStatement $query, bool|array $options = array()): bool`](method-executequery.md) Execute an SQL query, either a string or PDOStatement
+- [`sanitizePath($path): string`](method-sanitizepath.md) For path: Normalizes slashes and ensures it ends with a slash
+- [`sanitizeFilename($filename): string`](method-sanitizefilename.md) For filename: Normalizes slashes and ensures it starts with a path
+- [`supportsExec(array $options = array()): bool`](method-supportsexec.md) Determine if exec is available for the given command

@@ -23,8 +23,8 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-- [`getModuleInfo()`](method-getmoduleinfo.md)
-- [`addComponent(string $name, string $file): $this`](method-addcomponent.md)
-- [`addComponents(array $components): $this`](method-addcomponents.md)
-- [`init()`](method-init.md)
-- [`use($name): $this`](method-___use.md) (hookable)
+- [`getModuleInfo()`](method-getmoduleinfo.md) Per the Module interface, return an array of information about the Module
+- [`addComponent(string $name, string $file): $this`](method-addcomponent.md) Add an optional component that can be used with this module
+- [`addComponents(array $components): $this`](method-addcomponents.md) Add an array of optional components
+- [`init()`](method-init.md) Per the Module interface, Initialize the Process, loading any related CSS or JS files
+- [`use($name): $this`](method-___use.md) (hookable) Use an extra named component

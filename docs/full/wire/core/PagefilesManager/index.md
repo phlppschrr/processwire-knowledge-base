@@ -35,22 +35,22 @@ $filesURL = $page->filesManager->url();
 ~~~~~
 
 Methods:
-- [`__construct(Page $page)`](method-__construct.md)
-- [`getFiles(): array`](method-getfiles.md)
-- [`getFile(string $name): Pagefile|Pageimage|null`](method-getfile.md)
-- [`_copyFiles(string $fromPath, string $toPath, bool $rename = false): int`](method-_copyfiles.md)
-- [`copyFiles($toPath): int`](method-copyfiles.md)
-- [`importFiles(string $fromPath, bool $move = false): int`](method-importfiles.md)
-- [`replaceFiles(string $fromPath, bool $move = false): int`](method-replacefiles.md)
-- [`moveFiles($toPath): int`](method-movefiles.md)
-- [`_createPath(string $path): bool`](method-_createpath.md)
-- [`emptyPath(bool $rmdir = false, bool $recursive = true): bool`](method-emptypath.md)
-- [`emptyAllPaths(): bool`](method-emptyallpaths.md)
-- [`path(): string`](method-path.md)
-- [`url(): string`](method-url.md)
-- [`save()`](method-___save.md) (hookable)
-- [`__get(string $name): mixed`](method-__get.md)
-- [`getTempPath(): string`](method-gettemppath.md)
+- [`__construct(Page $page)`](method-__construct.md) Construct the PagefilesManager and ensure all needed paths are created
+- [`getFiles(): array`](method-getfiles.md) Get an array of all published filenames on the current Page.
+- [`getFile(string $name): Pagefile|Pageimage|null`](method-getfile.md) Get the Pagefile object containing the given filename.
+- [`_copyFiles(string $fromPath, string $toPath, bool $rename = false): int`](method-_copyfiles.md) Recursively copy all files in $fromPath to $toPath, for internal use
+- [`copyFiles($toPath): int`](method-copyfiles.md) Recursively copy all files managed by this PagefilesManager into a new path.
+- [`importFiles(string $fromPath, bool $move = false): int`](method-importfiles.md) Copy/import files from given path into the page’s files directory
+- [`replaceFiles(string $fromPath, bool $move = false): int`](method-replacefiles.md) Replace all page’s files with those from given path
+- [`moveFiles($toPath): int`](method-movefiles.md) Recursively move all files managed by this PagefilesManager into a new path.
+- [`_createPath(string $path): bool`](method-_createpath.md) Create a directory with proper permissions, for internal use.
+- [`emptyPath(bool $rmdir = false, bool $recursive = true): bool`](method-emptypath.md) Empty out the published files (delete all of them)
+- [`emptyAllPaths(): bool`](method-emptyallpaths.md) Empties all file paths related to the Page, and removes the directories
+- [`path(): string`](method-path.md) Get the published path for files
+- [`url(): string`](method-url.md) Get the published URL for files
+- [`save()`](method-___save.md) (hookable) For hooks to listen to on page save action, for file-specific operations
+- [`__get(string $name): mixed`](method-__get.md) Handle non-function versions of some properties
+- [`getTempPath(): string`](method-gettemppath.md) Return a path where temporary files can be stored unique to this ProcessWire instance
 
 Constants:
 - [`defaultSecurePathPrefix`](const-defaultsecurepathprefix.md)

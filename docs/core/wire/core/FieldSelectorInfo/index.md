@@ -17,8 +17,8 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-- [`__construct()`](method-__construct.md)
-- [`getSelectorInfo(Field $field): array`](method-getselectorinfo.md)
-- [`getSelectorInfoTemplate(): array`](method-getselectorinfotemplate.md)
-- [`getOperators(string $inputType = ''): array`](method-getoperators.md)
-- [`getOperatorLabels(): array`](method-getoperatorlabels.md)
+- [`__construct()`](method-__construct.md) Construct
+- [`getSelectorInfo(Field $field): array`](method-getselectorinfo.md) Return array with information about what properties and operators can be used with this field
+- [`getSelectorInfoTemplate(): array`](method-getselectorinfotemplate.md) Return the default selector info template array
+- [`getOperators(string $inputType = ''): array`](method-getoperators.md) Get array of operators
+- [`getOperatorLabels(): array`](method-getoperatorlabels.md) Get array of operators mapped to text labels

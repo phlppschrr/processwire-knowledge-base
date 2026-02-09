@@ -17,11 +17,11 @@ the Role(s), as it accounts for the combined roles. Please also see `User`, `Per
 access related methods on `Page`.
 
 Methods:
-- [`__construct(?Template $tpl = null)`](method-__construct.md)
-- [`wired()`](method-wired.md)
-- [`getPredefinedTemplate(): Template`](method-getpredefinedtemplate.md)
-- [`getPredefinedParent(): Page`](method-getpredefinedparent.md)
-- [`hasPermission(string|int|Permission $permission, Page|Template|null $context = null): bool`](method-haspermission.md)
-- [`hasPermissionContext(bool $has, Permission $permission, Wire $context): bool`](method-haspermissioncontext.md)
-- [`addPermission(string|int|Permission $permission): bool`](method-addpermission.md)
-- [`removePermission(string|int|Permission $permission): bool`](method-removepermission.md)
+- [`__construct(?Template $tpl = null)`](method-__construct.md) Create a new Role page in memory.
+- [`wired()`](method-wired.md) Wired to API
+- [`getPredefinedTemplate(): Template`](method-getpredefinedtemplate.md) Get predefined template (template method)
+- [`getPredefinedParent(): Page`](method-getpredefinedparent.md) Get predefined parent page (template method)
+- [`hasPermission(string|int|Permission $permission, Page|Template|null $context = null): bool`](method-haspermission.md) Does this role have the given permission name, id or object?
+- [`hasPermissionContext(bool $has, Permission $permission, Wire $context): bool`](method-haspermissioncontext.md) Return whether the role has the permission within the context of a Page or Template
+- [`addPermission(string|int|Permission $permission): bool`](method-addpermission.md) Add the given Permission string, id or object.
+- [`removePermission(string|int|Permission $permission): bool`](method-removepermission.md) Remove the given permission string, id or object.

@@ -23,22 +23,22 @@ foreach($languages as $language) {
 ~~~~~
 
 Methods:
-- [`__construct(ProcessWire $wire, array $templates = array(), array $parents = array())`](method-__construct.md)
-- [`translator(Language $language): LanguageTranslator`](method-translator.md)
-- [`findOther(string|Language $selector = '', Language|null $excludeLanguage = null): PageArray`](method-findother.md)
-- [`findNonDefault(string $selector = ''): PageArray`](method-findnondefault.md)
-- [`getDefault(): Language`](method-getdefault.md)
-- [`setDefault(?Language $language = null): void`](method-setdefault.md)
-- [`unsetDefault(): void`](method-unsetdefault.md)
-- [`setLanguage(int|string|Language $language): bool`](method-setlanguage.md)
-- [`getLanguage(string|int $name = ''): Language|null`](method-getlanguage.md)
-- [`unsetLanguage(): bool`](method-unsetlanguage.md)
-- [`setLocale(int|string|array|null|Language $category = LC_ALL, int|string|array|null|Language $locale = null): string|bool`](method-setlocale.md)
-- [`getLocale(int|Language|string|null $category = LC_ALL, Language|string|int|null $language = null): string|bool`](method-getlocale.md)
-- [`deleted(Page $language)`](method-___deleted.md) (hookable)
-- [`added(Page $language)`](method-___added.md) (hookable)
-- [`updated(Page $language, string $what)`](method-___updated.md) (hookable)
-- [`pageNames(): LanguageSupportPageNames|false`](method-pagenames.md)
-- [`hasPageNames(): bool`](method-haspagenames.md)
-- [`editable(Language|int|string $language): bool`](method-editable.md)
-- [`importTranslationsFile(Language|string $language, string $file, bool $quiet = false): bool|int`](method-importtranslationsfile.md)
+- [`__construct(ProcessWire $wire, array $templates = array(), array $parents = array())`](method-__construct.md) Construct
+- [`translator(Language $language): LanguageTranslator`](method-translator.md) Return the LanguageTranslator instance for the given language
+- [`findOther(string|Language $selector = '', Language|null $excludeLanguage = null): PageArray`](method-findother.md) Find and return all languages except current user language
+- [`findNonDefault(string $selector = ''): PageArray`](method-findnondefault.md) Find and return all languages except default language
+- [`getDefault(): Language`](method-getdefault.md) Get the default language
+- [`setDefault(?Language $language = null): void`](method-setdefault.md) Set current user to have default language temporarily
+- [`unsetDefault(): void`](method-unsetdefault.md) Restores whatever previous language a user had prior to a setDefault() call
+- [`setLanguage(int|string|Language $language): bool`](method-setlanguage.md) Set the current user language for the current request
+- [`getLanguage(string|int $name = ''): Language|null`](method-getlanguage.md) Get the current language or optionally a specific named language
+- [`unsetLanguage(): bool`](method-unsetlanguage.md) Undo a previous setLanguage() call, restoring the previous user language
+- [`setLocale(int|string|array|null|Language $category = LC_ALL, int|string|array|null|Language $locale = null): string|bool`](method-setlocale.md) Set the current locale
+- [`getLocale(int|Language|string|null $category = LC_ALL, Language|string|int|null $language = null): string|bool`](method-getlocale.md) Return the current locale setting
+- [`deleted(Page $language)`](method-___deleted.md) (hookable) Hook called when a language is deleted
+- [`added(Page $language)`](method-___added.md) (hookable) Hook called when a language is added
+- [`updated(Page $language, string $what)`](method-___updated.md) (hookable) Hook called when a language is added or deleted
+- [`pageNames(): LanguageSupportPageNames|false`](method-pagenames.md) Get LanguageSupportPageNames module if installed, false if not
+- [`hasPageNames(): bool`](method-haspagenames.md) Is LanguageSupportPageNames installed?
+- [`editable(Language|int|string $language): bool`](method-editable.md) Does current user have edit access for page fields in given language?
+- [`importTranslationsFile(Language|string $language, string $file, bool $quiet = false): bool|int`](method-importtranslationsfile.md) Import a language translations file

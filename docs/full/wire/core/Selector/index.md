@@ -72,24 +72,24 @@ if($s->matches($page)) {
 - `SelectorBitwiseAnd`
 
 Methods:
-- [`__construct(string|array $field, string|int|array $value)`](method-__construct.md)
-- [`operator(): string`](method-operator.md)
-- [`field(bool|int $forceString = true): string|array|null`](method-field.md)
-- [`fields(): array`](method-fields.md)
-- [`value(bool|int $forceString = true): string|array|null`](method-value.md)
-- [`values(bool $nonEmpty = false): array`](method-values.md)
-- [`get(string $key): array|mixed|null|string`](method-get.md)
-- [`setField(string|array $field): self`](method-setfield.md)
-- [`setValue(string|int|array|mixed $value): self`](method-setvalue.md)
-- [`set(string $key, mixed $value): Selector|WireData`](method-set.md)
-- [`getCompareType(): int`](method-getcomparetype.md)
-- [`getLabel(): string`](method-getlabel.md)
-- [`getDescription(): string`](method-getdescription.md)
-- [`match(mixed $value1, string $value2): bool`](method-match.md)
-- [`matches(string|int|Wire|array $value): bool`](method-matches.md)
-- [`evaluate(bool $matches): bool`](method-evaluate.md)
-- [`sanitizeFieldName(string|array $fieldName): string|array`](method-sanitizefieldname.md)
-- [`__toString()`](method-__tostring.md)
+- [`__construct(string|array $field, string|int|array $value)`](method-__construct.md) Given a field name and value, construct the Selector.
+- [`operator(): string`](method-operator.md) Return the operator used by this Selector
+- [`field(bool|int $forceString = true): string|array|null`](method-field.md) Get the field(s) of this Selector
+- [`fields(): array`](method-fields.md) Return array of field(s) for this Selector
+- [`value(bool|int $forceString = true): string|array|null`](method-value.md) Get the value(s) of this Selector
+- [`values(bool $nonEmpty = false): array`](method-values.md) Return array of value(s) for this Selector
+- [`get(string $key): array|mixed|null|string`](method-get.md) Get a property
+- [`setField(string|array $field): self`](method-setfield.md) Set field or fields
+- [`setValue(string|int|array|mixed $value): self`](method-setvalue.md) Set selector value(s)
+- [`set(string $key, mixed $value): Selector|WireData`](method-set.md) Set a property of the Selector
+- [`getCompareType(): int`](method-getcomparetype.md) What type of comparson does Selector perform?
+- [`getLabel(): string`](method-getlabel.md) Get short label that describes this Selector
+- [`getDescription(): string`](method-getdescription.md) Get longer description that describes this Selector
+- [`match(mixed $value1, string $value2): bool`](method-match.md) Does $value1 match $value2?
+- [`matches(string|int|Wire|array $value): bool`](method-matches.md) Does this Selector match the given value?
+- [`evaluate(bool $matches): bool`](method-evaluate.md) Provides the opportunity to override or NOT the condition
+- [`sanitizeFieldName(string|array $fieldName): string|array`](method-sanitizefieldname.md) Sanitize field name
+- [`__toString()`](method-__tostring.md) The string value of Selector is always the selector string that it originated from
 
 Constants:
 - [`compareTypeExact`](const-comparetypeexact.md)

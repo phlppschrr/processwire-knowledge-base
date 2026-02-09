@@ -16,13 +16,13 @@ methods in the PagesVersions class to return version information.
 
 Methods:
 - [`__construct(array $data = [])`](method-__construct.md)
-- [`set(string $key, string|int|Page $value): self`](method-set.md)
-- [`get(string $key): mixed|NullPage|Page|User|null`](method-get.md)
-- [`getPage(): NullPage|Page`](method-getpage.md)
-- [`setPage(Page $page)`](method-setpage.md)
-- [`getCreatedUser(): NullPage|User`](method-getcreateduser.md)
-- [`getModifiedUser(): NullPage|User`](method-getmodifieduser.md)
-- [`__toString(): string`](method-__tostring.md)
+- [`set(string $key, string|int|Page $value): self`](method-set.md) Set property
+- [`get(string $key): mixed|NullPage|Page|User|null`](method-get.md) Get property
+- [`getPage(): NullPage|Page`](method-getpage.md) Get page that this version is for
+- [`setPage(Page $page)`](method-setpage.md) Set page that this version is for
+- [`getCreatedUser(): NullPage|User`](method-getcreateduser.md) Get user that created this version
+- [`getModifiedUser(): NullPage|User`](method-getmodifieduser.md) Get user that last modified this version
+- [`__toString(): string`](method-__tostring.md) String value is version number as a string
 
 Constants:
 - [`actionRestore`](const-actionrestore.md)

@@ -37,10 +37,10 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-- [`getModuleInfo(): array`](method-getmoduleinfo.md)
-- [`isValidFile(string $filename): bool|int`](method-isvalidfile.md)
-- [`isValid(string $filename): bool|int`](method-isvalid.md)
-- [`getPage(): NullPage|Page`](method-getpage.md)
-- [`getField(): null|Field`](method-getfield.md)
-- [`getPagefile(): Pagefile|null`](method-getpagefile.md)
-- [`log(string $str = '', array $options = array()): WireLog|null`](method-___log.md) (hookable)
+- [`getModuleInfo(): array`](method-getmoduleinfo.md) Get module information
+- [`isValidFile(string $filename): bool|int`](method-isvalidfile.md) Is the given file valid? (this is the method modules should implement)
+- [`isValid(string $filename): bool|int`](method-isvalid.md) Is the given file valid?
+- [`getPage(): NullPage|Page`](method-getpage.md) Get the Page associated with any isValid() calls
+- [`getField(): null|Field`](method-getfield.md) Get the Field object associated with any isValid() calls
+- [`getPagefile(): Pagefile|null`](method-getpagefile.md) Get the Pagefile or Pageimage object associated with any isValid() calls
+- [`log(string $str = '', array $options = array()): WireLog|null`](method-___log.md) (hookable) Log a message for this class

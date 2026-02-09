@@ -31,7 +31,7 @@ Typically a Pageimages object will be associated with a specific field attached 
 There may be multiple instances of Pageimages attached to a given Page (depending on what fields are in it's fieldgroup).
 
 Methods:
-- [`add(Pageimage|string $item): Pageimages|Pagefiles`](method-add.md)
-- [`getFile(string $name): null|Pagefile|Pageimage`](method-getfile.md)
-- [`getAllVariations(): array`](method-getallvariations.md)
-- [`render(string|array $markup = '', array|string $options = array()): string`](method-___render.md) (hookable)
+- [`add(Pageimage|string $item): Pageimages|Pagefiles`](method-add.md) Add a new Pageimage item, or create one from given filename and add it.
+- [`getFile(string $name): null|Pagefile|Pageimage`](method-getfile.md) Does this field have the given file name? If so, return it, if not return null.
+- [`getAllVariations(): array`](method-getallvariations.md) Get an array of all image variations on this field indexed by original file name.
+- [`render(string|array $markup = '', array|string $options = array()): string`](method-___render.md) (hookable) Render markup for all images here (optionally using a provided markup template string and/or image size options)

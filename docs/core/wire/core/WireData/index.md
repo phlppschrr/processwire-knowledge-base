@@ -28,18 +28,18 @@ iterate all of the properties/values present within it.
 May also be accessed as array.
 
 Methods:
-- [`set(string $key, mixed $value): $this`](method-set.md)
-- [`setQuietly(string $key, mixed $value): $this`](method-setquietly.md)
-- [`setArray(array $data): $this`](method-setarray.md)
-- [`__set(string $key, mixed $value)`](method-__set.md)
-- [`get(string|object $key): mixed|null`](method-get.md)
-- [`data(string|array $key = null, mixed $value = null): array|WireData|null`](method-data.md)
-- [`getArray(): array`](method-getarray.md)
-- [`getDot(string $key): null|mixed`](method-getdot.md)
-- [`__get(string $name): mixed|null`](method-__get.md)
-- [`__invoke(string $key): mixed`](method-__invoke.md)
-- [`remove(string $key): $this`](method-remove.md)
-- [`getIterator(): \ArrayObject`](method-getiterator.md)
-- [`has(string $key): bool`](method-has.md)
-- [`and(WireArray|WireData|string|null $items = null): WireArray`](method-___and.md) (hookable)
-- [`__debugInfo(): array`](method-__debuginfo.md)
+- [`set(string $key, mixed $value): $this`](method-set.md) Set a value to this object’s data
+- [`setQuietly(string $key, mixed $value): $this`](method-setquietly.md) Same as set() but without change tracking
+- [`setArray(array $data): $this`](method-setarray.md) Set an array of key=value pairs
+- [`__set(string $key, mixed $value)`](method-__set.md) Provides direct reference access to set values in the $data array
+- [`get(string|object $key): mixed|null`](method-get.md) Retrieve the value for a previously set property, or retrieve an API variable
+- [`data(string|array $key = null, mixed $value = null): array|WireData|null`](method-data.md) Get or set a low-level data value
+- [`getArray(): array`](method-getarray.md) Returns the full array of properties set to this object
+- [`getDot(string $key): null|mixed`](method-getdot.md) Get a property via dot syntax: field.subfield.subfield
+- [`__get(string $name): mixed|null`](method-__get.md) Provides direct reference access to variables in the $data array
+- [`__invoke(string $key): mixed`](method-__invoke.md) Enables use of $var('key')
+- [`remove(string $key): $this`](method-remove.md) Remove a previously set property
+- [`getIterator(): \ArrayObject`](method-getiterator.md) Enables the object data properties to be iterable as an array
+- [`has(string $key): bool`](method-has.md) Does this object have the given property?
+- [`and(WireArray|WireData|string|null $items = null): WireArray`](method-___and.md) (hookable) Take the current item and append the given item(s), returning a new WireArray
+- [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method

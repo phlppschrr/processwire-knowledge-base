@@ -33,6 +33,6 @@ echo $form->render();
 ~~~~~~
 
 Methods:
-- [`getFormMarkup(): string`](method-getformmarkup.md)
-- [`applyIf(string $name, bool $value, string $out): mixed|string`](method-applyif.md)
-- [`renderForm(string $id, string $class, array $attrs, array $labels, array $inputValues): string`](method-renderform.md)
+- [`getFormMarkup(): string`](method-getformmarkup.md) Get form markup
+- [`applyIf(string $name, bool $value, string $out): mixed|string`](method-applyif.md) Apply an {if.name} ... {endif.name} statement
+- [`renderForm(string $id, string $class, array $attrs, array $labels, array $inputValues): string`](method-renderform.md) Custom markup form render

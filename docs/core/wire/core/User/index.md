@@ -28,17 +28,17 @@ However, it is useful to set this property if you want to change the password. W
 to be the non-hashed/non-encrypted version. ProcessWire will hash it automatically when the user is saved.
 
 Methods:
-- [`__construct(?Template $tpl = null)`](method-__construct.md)
-- [`hasRole(string|Role|int $role): bool`](method-hasrole.md)
-- [`addRole(string|int|Role $role): bool`](method-addrole.md)
-- [`removeRole(string|int|Role $role): bool`](method-removerole.md)
-- [`hasPermission(string|Permission $name, Page|Template|bool|string $context = null): bool|array`](method-haspermission.md)
-- [`hasPagePermission($name, ?Page $page = null): bool`](method-___haspagepermission.md) (hookable)
-- [`hasTemplatePermission(string|Permission $name, Template|int|string $template): bool`](method-___hastemplatepermission.md) (hookable)
-- [`getPermissions(?Page $page = null): PageArray`](method-getpermissions.md)
-- [`isSuperuser(): bool`](method-issuperuser.md)
-- [`isGuest(): bool`](method-isguest.md)
-- [`isLoggedin(): bool`](method-isloggedin.md)
-- [`setLanguage(Language|string|int $language): self`](method-setlanguage.md)
-- [`get(string $key): null|mixed`](method-get.md)
-- [`hasTfa(bool $getInstance = false): bool|string|Tfa`](method-hastfa.md)
+- [`__construct(?Template $tpl = null)`](method-__construct.md) Create a new User page in memory.
+- [`hasRole(string|Role|int $role): bool`](method-hasrole.md) Does this user have the given Role?
+- [`addRole(string|int|Role $role): bool`](method-addrole.md) Add Role to this user
+- [`removeRole(string|int|Role $role): bool`](method-removerole.md) Remove Role from this user
+- [`hasPermission(string|Permission $name, Page|Template|bool|string $context = null): bool|array`](method-haspermission.md) Does the user have the given permission?
+- [`hasPagePermission($name, ?Page $page = null): bool`](method-___haspagepermission.md) (hookable) Does this user have named permission for the given Page?
+- [`hasTemplatePermission(string|Permission $name, Template|int|string $template): bool`](method-___hastemplatepermission.md) (hookable) Does this user have the given permission on the given template?
+- [`getPermissions(?Page $page = null): PageArray`](method-getpermissions.md) Get this user’s permissions, optionally within the context of a Page.
+- [`isSuperuser(): bool`](method-issuperuser.md) Does this user have the superuser role?
+- [`isGuest(): bool`](method-isguest.md) Is this the non-logged in guest user?
+- [`isLoggedin(): bool`](method-isloggedin.md) Is the current $user logged in and the same as this user?
+- [`setLanguage(Language|string|int $language): self`](method-setlanguage.md) Set language for user (quietly)
+- [`get(string $key): null|mixed`](method-get.md) Get value
+- [`hasTfa(bool $getInstance = false): bool|string|Tfa`](method-hastfa.md) Does user have two-factor authentication (Tfa) enabled? (and what type?)

@@ -7,5 +7,5 @@ Inherits: `Wire`
 ProcessWire File Inputfield (configuration)
 
 Methods:
-- [`getConfigInputfields(InputfieldFile|Field $field, InputfieldWrapper $inputfields)`](method-getconfiginputfields.md)
+- [`getConfigInputfields(InputfieldFile|Field $field, InputfieldWrapper $inputfields)`](method-getconfiginputfields.md) Configuration settings for InputfieldFile
 - [`getConfigInputfieldsDescription(Field|InputfieldFile $field): InputfieldFieldset`](method-getconfiginputfieldsdescription.md)

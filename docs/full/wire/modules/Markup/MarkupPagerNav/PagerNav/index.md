@@ -19,6 +19,6 @@ foreach($pager as $pageLabel => $pageNum) {
 ```
 
 Methods:
-- [`__construct(int $totalItems, int $itemsPerPage, int $currentPage)`](method-__construct.md)
-- [`getPager(): array`](method-getpager.md)
-- [`setLabels(string $previous, string $next)`](method-setlabels.md)
+- [`__construct(int $totalItems, int $itemsPerPage, int $currentPage)`](method-__construct.md) Construct the PagerNav
+- [`getPager(): array`](method-getpager.md) Returns an array contantaining $label => $pageNum
+- [`setLabels(string $previous, string $next)`](method-setlabels.md) Set the labels to use for the 'prev' and 'next' links
