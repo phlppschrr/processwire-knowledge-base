@@ -31,6 +31,7 @@ SECTION_SPLIT_RE = re.compile(
     r"^(Methods added by\b|Hookable methods\b|Hookable action methods\b|Alias/alternate methods\b)",
     re.I,
 )
+ASTERISK_LINE_RE = re.compile(r"^\*{6,}$")
 
 KEEP_DIRECTIVES = {
     "headline",
@@ -148,6 +149,49 @@ def is_license_line(line: str) -> bool:
     return False
 
 
+def is_underline_line(text: str) -> bool:
+    stripped = text.strip()
+    return stripped != "" and all(ch in "-=" for ch in stripped)
+
+
+def normalize_heading_lines(lines: list[str]) -> list[str]:
+    out: list[str] = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        if ASTERISK_LINE_RE.match(stripped):
+            i += 1
+            continue
+        if i + 1 < len(lines) and is_underline_line(lines[i + 1]):
+            title = stripped
+            if title:
+                out.append(f"## {title.title()}")
+            i += 2
+            continue
+        out.append(line)
+        i += 1
+    return out
+
+
+def is_decorative_docblock(doc: str) -> bool:
+    lines = strip_docblock(doc)
+    nonempty = [line.strip() for line in lines if line.strip()]
+    if not nonempty:
+        return True
+    if any(line.startswith("@") for line in nonempty):
+        return False
+    first = nonempty[0]
+    if first.startswith("/"):
+        first = first.lstrip("/")
+    if ASTERISK_LINE_RE.match(first):
+        if len(nonempty) <= 3:
+            return True
+        if all(re.fullmatch(r"[A-Z0-9 _/()+\\-]+", line) for line in nonempty[1:]):
+            return True
+    return False
+
+
 def slugify(value: str) -> str:
     slug = re.sub(r"[^A-Za-z0-9_-]+", "-", value.strip())
     slug = re.sub(r"-{2,}", "-", slug).strip("-")
@@ -227,6 +271,11 @@ def parse_method_tag_line(text: str) -> tuple[str | None, str | None, str | None
 
     first = parts[0]
     rest = parts[1] if len(parts) > 1 else ""
+    if "(" in first and first.endswith("(") is False:
+        name_part, sig_tail = first.split("(", 1)
+        if name_part:
+            sig, desc = extract_sig_and_desc("(" + sig_tail + (" " + rest if rest else ""))
+            return None, name_part, sig or "()", desc
     if rest.startswith("(") or rest == "":
         name = first
         sig, desc = extract_sig_and_desc(rest)
@@ -1334,6 +1383,8 @@ def parse_docblocks(text: str, has_classes: bool):
 
     for match in DOCBLOCK_RE.finditer(text):
         doc = match.group(1)
+        if is_decorative_docblock(doc):
+            continue
         if (
             not has_classes
             and file_docblock is None
@@ -1720,6 +1771,7 @@ def write_doc(
                 lines.append(f"Group: [{group_name}]({group_file})")
             lines.append("")
         if intro_lines:
+            intro_lines = normalize_heading_lines(intro_lines)
             intro_lines = wrap_example_blocks(intro_lines)
             intro_lines = format_tag_lines(intro_lines, class_info.name, doc_index, index_path)
             intro_prefix, intro_suffix = split_intro_sections(intro_lines)
@@ -1802,6 +1854,7 @@ def write_doc(
             if summary:
                 group_content.append(summary)
                 group_content.append("")
+            group_lines = normalize_heading_lines(group_lines)
             group_lines = wrap_example_blocks(group_lines)
             group_lines = format_tag_lines(group_lines, class_info.name, doc_index, group_path)
             group_content.extend(group_lines)
@@ -1894,6 +1947,7 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
     if file_info.docblock:
         file_lines = clean_docblock(strip_docblock(file_info.docblock), drop_if_internal=True)
         if file_lines:
+            file_lines = normalize_heading_lines(file_lines)
             file_lines = wrap_example_blocks(file_lines)
             file_lines = format_tag_lines(file_lines, file_info.name, doc_index, index_path)
             lines.extend(file_lines)

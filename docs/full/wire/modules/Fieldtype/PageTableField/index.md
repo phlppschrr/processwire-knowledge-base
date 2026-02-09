@@ -6,8 +6,7 @@ Inherits: `Field`
 
 Page Table Field (for FieldtypePageTable)
 
-Configured with FieldtypePageTable
-==================================
+## Configured With Fieldtypepagetable
 
 - `$autoTrash: int|bool` Deprecated, replaced by trashOnDelete
 - `$trashOnDelete: int`
@@ -17,8 +16,7 @@ Configured with FieldtypePageTable
 - `$parent_id: int`
 - `$sortfields: string`
 
-Configured with InputfieldPageTable
-===================================
+## Configured With Inputfieldpagetable
 
 - `$columns: string`
 - `$nameFormat: string`

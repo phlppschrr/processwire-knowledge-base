@@ -30,8 +30,7 @@ $inputfield->attr('value', 'Roderigo');
 $form->add($inputfield);
 ~~~~~
 
-ATTRIBUTES
-==========
+## Attributes
 
 - [`$name: string`](method-name.md) HTML 'name' attribute for Inputfield (required).
 - [`$id: string`](method-id.md) HTML 'id' attribute for the Inputfield (if not yet, determined automatically).
@@ -41,8 +40,7 @@ ATTRIBUTES
 - [`id($id = null): string|Inputfield`](method-id.md) Get or set the id attribute. @since 3.0.110
 - [`class($class = null): string|Inputfield`](method-class.md) Get class attribute or add a class to the class attribute. @since 3.0.110
 
-LABELS & CONTENT
-================
+## Labels & Content
 
 - [`$label: string`](method-label.md) Primary label text that appears above the input.
 - [`$description: string`](method-description.md) Optional description that appears under label to provide more detailed information.
@@ -63,8 +61,7 @@ LABELS & CONTENT
 - [`prependMarkup($markup = null): string|Inputfield`](method-prependmarkup.md) Get or set the 'prependMarkup' property via method. @since 3.0.110
 - [`appendMarkup($markup = null): string|Inputfield`](method-appendmarkup.md) Get or set the 'appendMarkup' property via method. @since 3.0.110
 
-APPEARANCE
-==========
+## Appearance
 
 - [`$collapsed: int`](method-collapsed.md) Whether the field is collapsed or visible, using one of the "collapsed" constants.
 - [`$showIf: string`](method-showif.md) Optional conditions under which the Inputfield appears in the form (selector string).
@@ -75,8 +72,7 @@ APPEARANCE
 - [`columnWidth($columnWidth = null): int|Inputfield`](method-columnwidth.md) Get or set columnWidth property via method. @since 3.0.110
 - [`skipLabel($skipLabel = null): int|Inputfield`](method-skiplabel.md) Get or set the skipLabel constant property via method. @since 3.0.110
 
-UIKIT THEME
-===========
+## Uikit Theme
 
 - `$themeOffset: bool|string` Offset/margin for Inputfield, one of 's', 'm', or 'l'.
 - `$themeBorder: string` Border style for Inputfield, one of 'none', 'card', 'hide' or 'line'.
@@ -85,8 +81,7 @@ UIKIT THEME
 - `$themeColor: string` Color theme for Inputfield, one of 'primary', 'secondary', 'warning', 'danger', 'success', 'highlight', 'none'.
 - `$themeBlank: bool` Makes <input> element display with no minimal container / no border when true.
 
-SETTINGS & BEHAVIOR
-===================
+## Settings & Behavior
 
 - [`$required: int|bool`](method-required.md) Set to true (or 1) to make input required, or false (or 0) to make not required (default=0).
 - [`$requiredIf: string`](method-requiredif.md) Optional conditions under which input is required (selector string).
@@ -111,11 +106,20 @@ SETTINGS & BEHAVIOR
 - [`headerClass($class = null): string|Inputfield`](method-headerclass.md) Get header class attribute or add a class to it. @since 3.0.110
 - [`contentClass($class = null): string|Inputfield`](method-contentclass.md) Get content class attribute or add a class to it. @since 3.0.110
 
-MULTI-LANGUAGE METHODS (requires LanguageSupport module to be installed)
-======================
+## Multi-Language Methods (Requires Languagesupport Module To Be Installed)
 
 - [`setLanguageValue($language, $value): void`](method-setlanguagevalue.md) Set language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238
 - [`getLanguageValue($language): string|mixed`](method-getlanguagevalue.md) Get language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238
+
+## Hookable Methods
+
+- [`render(): string`](method-___render.md)
+- [`renderValue(): string`](method-___rendervalue.md)
+- [`renderReadyHook(Inputfield $parent, $renderValueMode): void`](method-___renderreadyhook.md)
+- [`processInput(WireInputData $input): Inputfield`](method-___processinput.md)
+- [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md)
+- [`getConfigArray(): array`](method-___getconfigarray.md)
+- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md)
 
 Methods:
 - [`__construct()`](method-__construct.md) Construct the Inputfield, setting defaults for all properties
@@ -188,14 +192,3 @@ Constants:
 - [`renderValueMinimal`](const-rendervalueminimal.md)
 - [`renderValueNoWrap`](const-rendervaluenowrap.md)
 - [`renderValueFirst`](const-rendervaluefirst.md)
-
-HOOKABLE METHODS
-================
-
-- [`render(): string`](method-___render.md)
-- [`renderValue(): string`](method-___rendervalue.md)
-- [`renderReadyHook(Inputfield $parent, $renderValueMode): void`](method-___renderreadyhook.md)
-- [`processInput(WireInputData $input): Inputfield`](method-___processinput.md)
-- [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md)
-- [`getConfigArray(): array`](method-___getconfigarray.md)
-- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md)

@@ -36,7 +36,6 @@ Methods:
 - [`encodeData(array $value): string`](method-encodedata.md) Encode the 'data' portion of the table.
 - [`decodeData(string $value): array`](method-decodedata.md) Decode the 'data' portion of the table.
 - [`useFuel(bool|null $useFuel = null): bool`](method-usefuel.md) Enforce no locally-scoped fuel for this class
-- [`saveReady(Saveable $item)`](method-___saveready.md) (hookable) *********************************************************************************** HOOKERS
 - [`saveReady(Saveable $item)`](method-___saveready.md) (hookable) Hook that runs right before item is to be saved.
 - [`deleteReady(Saveable $item)`](method-___deleteready.md) (hookable) Hook that runs right before item is to be deleted.
 - [`cloneReady(Saveable $item, Saveable $copy)`](method-___cloneready.md) (hookable) Hook that runs right before item is to be cloned.
@@ -46,7 +45,6 @@ Methods:
 - [`deleted(Saveable $item)`](method-___deleted.md) (hookable) Hook that runs right after an item has been deleted.
 - [`cloned(Saveable $item, Saveable $copy)`](method-___cloned.md) (hookable) Hook that runs right after an item has been cloned.
 - [`renamed(Saveable $item, string $oldName, string $newName)`](method-___renamed.md) (hookable) Hook that runs right after an item has been renamed.
-- [`__invoke($key)`](method-__invoke.md) *********************************************************************************** OTHER
 - [`__invoke($key): Wire|null`](method-__invoke.md) Enables use of $apivar('name') or wire()->apivar('name')
 - [`log($str, ?Saveable $item = null): WireLog`](method-log.md) Save to activity log, if enabled in config
 - [`error(string $text, int|bool $flags = 0): Wire|WireSaveableItems`](method-error.md) Record an error

@@ -17,7 +17,6 @@ Methods:
 - [`save(): bool`](method-save.md) Save any changes or additions that were made to these Notifications
 - [`__toString(): string`](method-__tostring.md) Get string value of this NotificationArray
 - [`getNew(string $flag = 'message', bool $addNow = true): Notification`](method-getnew.md) Get a new Notification
-- [`message($text, $flags = 0)`](method-message.md) *********************************************************************************** The following methods are based on those in the base Wire class, but they override them to replace Notices functionality with Notifications
 - [`message(string $text, int|bool $flags = 0): Notification`](method-message.md) Record an informational or 'success' message
 - [`warning(string $text, int|bool $flags = 0): Notification`](method-warning.md) Record a warning notification
 - [`error(string $text, int|bool $flags = 0): Notification`](method-error.md) Record an error notification

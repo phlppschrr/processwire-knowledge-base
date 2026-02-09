@@ -12,8 +12,7 @@ TinyMCE 6.x, Copyright (c) 2023 Ephox Corporation DBA Tiny Technologies, Inc.
 https://www.tiny.cloud/docs/tinymce/6/
 
 
-TinyMCE settings (these are also Field settings)
-------------------------------------------------
+## Tinymce Settings (These Are Also Field Settings)
 
 - `$plugins: string` Space-separated string of plugins to enable
 - `$toolbar: string` Space-separated string of tools to show in toolbar
@@ -23,8 +22,7 @@ TinyMCE settings (these are also Field settings)
 - `$menubar: string` Space-separated list of top-level menubar items
 - `$height: int` Height of editor in pixels
 
-Field/Inputfield settings
--------------------------
+## Field/Inputfield Settings
 
 - `$inlineMode: int` Use inline mode? 0=Regular editor, 1=Inline editor, 2=Fixed height inline editor
 - `$lazyMode: int` Use lazy-loading mode? 0=Off, 1=Lazy, 2=Extra lazy
@@ -37,8 +35,7 @@ Field/Inputfield settings
 - `$styleFormatsCSS: string` Style formats as CSS to parse and apply to style_formats and content_style
 - `$extPlugins: array` Additional plugins to enable for this field (URL paths from customPluginOptions)
 
-Module settings
----------------
+## Module Settings
 
 - `$content_css: string` Basename of content CSS file to use or "custom" to use custom URL (default=wire)
 - `$content_css_url: string` Applies only if $content_css has value "custom"
@@ -54,8 +51,7 @@ Module settings
 - `$imageFields: array` Names of fields allowed for drag-drop in images
 There are also `$lang_name=packname` settings in multi-lang sites where "name" is lang name and "packname" is lang pack name
 
-Runtime settings
-----------------
+## Runtime Settings
 
 - `$configName: string` Name of configuration set to use (default=blank)
 - `$readonly: bool` Are we in read-only mode? Automatically set during renderValue mode. This is a read-only property. (default=false)

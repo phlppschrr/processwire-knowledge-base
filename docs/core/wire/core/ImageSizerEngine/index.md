@@ -15,9 +15,7 @@ Copyright (C) 2016-2019 by Horst Nogajski and Ryan Cramer
 This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 
 Methods:
-- [`__construct()`](method-__construct.md) **************************************************************************************************
 - [`prepare(string $filename, array $options = array(), null|array $inspectionResult = null)`](method-prepare.md) Prepare the ImageSizer (this should be the first method you call)
-- [`supported($action = 'imageformat')`](method-supported.md) ********************************************************************************************** ABSTRACT AND TEMPLATE METHODS
 - [`supported(string $action = 'imageformat'): bool`](method-supported.md) Is this ImageSizer class ready only means: does the server / system provide all Requirements!
 - [`processResize(string $srcFilename, string $dstFilename, int $fullWidth, int $fullHeight, int $finalWidth, int $finalHeight): bool`](method-processresize.md) Process the image resize
 - [`processRotate(string $srcFilename, string $dstFilename, int $degrees): bool`](method-processrotate.md) Process rotate of an image
@@ -26,7 +24,6 @@ Methods:
 - [`validTargetImageFormats(): array`](method-validtargetimageformats.md) Get an array of image file extensions this ImageSizerModule can create
 - [`getSupportedFormats(string $type = ''): array`](method-getsupportedformats.md) Get an array of image file formats this ImageSizerModule can use as source or target
 - [`getEngineInfo(): array`](method-getengineinfo.md) Get array of information about this engine
-- [`loadImageInfo($filename, $reloadAll = false)`](method-loadimageinfo.md) ********************************************************************************************** COMMON IMPLEMENTATION METHODS
 - [`loadImageInfo(string $filename, bool $reloadAll = false)`](method-loadimageinfo.md) Load all image information from ImageInspector (Module)
 - [`getImageInfo(bool $rawData = false): string|array`](method-getimageinfo.md) ImageInformation from Image Inspector in short form or full RawInfoData
 - [`writeBackIPTC(string $filename, bool $includeCustomTags = false): bool|null`](method-writebackiptc.md) Default IPTC Handling
@@ -69,7 +66,6 @@ Methods:
 - [`setModified(bool $modified): self`](method-setmodified.md) Set whether the image was modified
 - [`getModified(): bool`](method-getmodified.md) Get whether the image was modified
 - [`getCropDimensions(int &$w1, int &$h1, int $gdWidth, int $targetWidth, int $gdHeight, int $targetHeight)`](method-getcropdimensions.md) Check if cropping is needed, if yes, populate x- and y-position to params $w1 and $h1
-- [`resize($finalWidth, $finalHeight)`](method-resize.md) *********************************************************************************************
 - [`resize(int $finalWidth, int $finalHeight): bool`](method-resize.md) Resize the image
 - [`rotate(int $degrees, string $dstFilename = ''): bool`](method-rotate.md) Just rotate image by number of degrees
 - [`flipVertical(string $dstFilename = ''): bool`](method-flipvertical.md) Flip vertically

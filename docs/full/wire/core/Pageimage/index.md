@@ -30,8 +30,7 @@ foreach($page->images as $image) {
 
 
 
-Properties inherited from Pagefile
-==================================
+## Properties Inherited From Pagefile
 
 - [`$url: string`](method-url.md) URL to the file on the server.
 - `$httpUrl: string` URL to the file on the server including scheme and hostname.
@@ -57,6 +56,16 @@ Properties inherited from Pagefile
 - `$page: Page` The Page object that this file is part of.
 - `$field: Field` The Field object that this file is part of.
 - `$debugInfo: PageimageDebugInfo`
+
+## Hookable Methods
+
+- [`isVariation($basename, $options = array()): bool|array`](method-___isvariation.md)
+- [`crop($x, $y, $width, $height, $options = array()): Pageimage`](method-___crop.md)
+- [`rebuildVariations($mode = 0, array $suffix = array(), array $options = array()): array`](method-___rebuildvariations.md)
+- `install($filename)`
+- [`render($markup = '', $options = array())`](method-___render.md)
+- [`createdVariation(Pageimage $image, array $data): void`](method-___createdvariation.md) Called after new image variation created (3.0.180+)
+- [`filenameDoesNotExist($filename): bool`](method-___filenamedoesnotexist.md) Hook called when a filename does not exist
 
 Methods:
 - [`__construct(Pagefiles $pagefiles, string $filename)`](method-__construct.md) Construct a new Pageimage
@@ -88,14 +97,3 @@ Methods:
 - [`filenameDoesNotExist(string $filename): bool`](method-___filenamedoesnotexist.md) (hookable) Hook called by the size() method when a source/original filename does not exist
 - [`__debugInfo(): array`](method-__debuginfo.md) Basic debug info
 - [`getDebugInfo(array $options = array(), string $returnType = 'string'): array|object|string`](method-getdebuginfo.md) Verbose debug info (via @horst)
-
-Hookable methods
-================
-
-- [`isVariation($basename, $options = array()): bool|array`](method-___isvariation.md)
-- [`crop($x, $y, $width, $height, $options = array()): Pageimage`](method-___crop.md)
-- [`rebuildVariations($mode = 0, array $suffix = array(), array $options = array()): array`](method-___rebuildvariations.md)
-- [`install($filename)()`](method-install-filename.md)
-- `@method render($markup = '', $options = array())` render($markup = '', $options = array())
-- [`createdVariation(Pageimage $image, array $data): void`](method-___createdvariation.md) Called after new image variation created (3.0.180+)
-- [`filenameDoesNotExist($filename): bool`](method-___filenamedoesnotexist.md) Hook called when a filename does not exist

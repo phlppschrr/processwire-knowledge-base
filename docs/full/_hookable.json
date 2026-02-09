@@ -166,11 +166,6 @@
         "file": "wire/core/PagesType/method-___saveready.md"
       },
       {
-        "name": "saveReady",
-        "internal": "___saveReady",
-        "file": "wire/core/PagesType/method-___saveready.md"
-      },
-      {
         "name": "saved",
         "internal": "___saved",
         "file": "wire/core/PagesType/method-___saved.md"
@@ -796,11 +791,6 @@
         "file": "wire/core/Sanitizer/method-___array.md"
       },
       {
-        "name": "array",
-        "internal": "___array",
-        "file": "wire/core/Sanitizer/method-___array.md"
-      },
-      {
         "name": "testAll",
         "internal": "___testAll",
         "file": "wire/core/Sanitizer/method-___testall.md"
@@ -1359,11 +1349,6 @@
         "file": "wire/core/WireSaveableItems/method-___saveready.md"
       },
       {
-        "name": "saveReady",
-        "internal": "___saveReady",
-        "file": "wire/core/WireSaveableItems/method-___saveready.md"
-      },
-      {
         "name": "deleteReady",
         "internal": "___deleteReady",
         "file": "wire/core/WireSaveableItems/method-___deleteready.md"
@@ -1468,11 +1453,6 @@
         "file": "wire/core/Pages/method-___emptytrash.md"
       },
       {
-        "name": "emptyTrash",
-        "internal": "___emptyTrash",
-        "file": "wire/core/Pages/method-___emptytrash.md"
-      },
-      {
         "name": "touch",
         "internal": "___touch",
         "file": "wire/core/Pages/method-___touch.md"
@@ -1491,11 +1471,6 @@
         "name": "insertAfter",
         "internal": "___insertAfter",
         "file": "wire/core/Pages/method-___insertafter.md"
-      },
-      {
-        "name": "saveReady",
-        "internal": "___saveReady",
-        "file": "wire/core/Pages/method-___saveready.md"
       },
       {
         "name": "saveReady",

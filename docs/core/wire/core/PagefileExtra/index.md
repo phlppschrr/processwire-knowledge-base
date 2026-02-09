@@ -6,8 +6,7 @@ Inherits: `WireData`
 
 Extra extension for Pagefile or Pageimage objects
 
-Properties
-==========
+## Properties
 
 - [`$url: string`](method-url.md) Local URL/path to file
 - [`$httpUrl: string`](method-httpurl.md) Full HTTP URL with scheme and host
@@ -26,12 +25,16 @@ Properties
 - `$savingsStr: string` Human readable savings by this extra
 - `$savingsPct: string` Percent savings by this extra
 
-The following properties affect the behavior of the URL-related methods
-=======================================================================
+## The Following Properties Affect The Behavior Of The Url-Related Methods
 
 - `$useSrcUrlOnFail: bool` Use source Pagefile URL if extra image does not exist and cannot be created? (default=false)
 - `$useSrcUrlOnSize: bool` Use source Pagefile URL if extra file is larger than source file? (default=false)
 - `$useSrcExt: bool` Use longer filenames that also include the Pagefile’s extension? (default=false)
+
+## Hookable Methods
+
+- [`create(): bool`](method-___create.md)
+- [`noCacheURL($http = false): string`](method-___nocacheurl.md)
 
 Methods:
 - [`__construct(Pagefile $pagefile, $extension)`](method-__construct.md) Construct
@@ -50,9 +53,3 @@ Methods:
 - [`create(): bool`](method-___create.md) (hookable) Create the extra file
 - [`get(string $key): bool|int|mixed|null|string`](method-get.md) Get property
 - [`__toString(): string`](method-__tostring.md)
-
-Hookable methods
-================
-
-- [`create(): bool`](method-___create.md)
-- [`noCacheURL($http = false): string`](method-___nocacheurl.md)

@@ -38,7 +38,6 @@ Methods:
 - [`__construct()`](method-__construct.md) Construct
 - [`__clone()`](method-__clone.md) Clone this Wire instance
 - [`getInstanceNum(bool $getTotal = false): int`](method-getinstancenum.md) Get this Wire object’s instance number
-- [`className($options = null)`](method-classname.md) **************************************************************************************************** IDENTIFICATION
 - [`className(array|bool|null $options = null): string`](method-classname.md) Return this object’s class name
 - [`__toString(): string`](method-__tostring.md) Unless overridden, classes descending from Wire return their class name when typecast as a string
 - [`_wireHooks(): WireHooks|null`](method-_wirehooks.md)
@@ -68,7 +67,6 @@ Methods:
 - [`warnings(string|array $options = array()): Notices|array|string`](method-warnings.md) Return or manage warnings recorded by just this object or all Wire objects
 - [`messages(string|array $options = array()): Notices|array|string`](method-messages.md) Return or manage messages recorded by just this object or all Wire objects
 - [`log(string $str = '', array $options = array()): WireLog`](method-___log.md) (hookable) Log a message for this class
-- [`_($text)`](method-_.md) **************************************************************************************************** TRANSLATION
 - [`_(string|array $text): string`](method-_.md) Translate the given text string into the current language if available.
 - [`_x(string|array $text, string $context): string`](method-_x.md) Perform a language translation in a specific context
 - [`_n(string $textSingular, string $textPlural, int $count): string`](method-_n.md) Perform a language translation with singular and plural versions
@@ -77,6 +75,5 @@ Methods:
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
 Constants:
-- [`trackChangesOn`](const-trackchangeson.md)
 - [`trackChangesOn`](const-trackchangeson.md)
 - [`trackChangesValues`](const-trackchangesvalues.md)

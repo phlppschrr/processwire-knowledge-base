@@ -41,5 +41,5 @@ Source: `wire/core/Tfa.php`
 - [`getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings): void`](method-___getuserenabledinputfields.md)
 - [`processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array`](method-___processusersettingsinputfields.md)
 - [`processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array`](method-___processuserenabledinputfields.md)
-- [`install()()`](method-install.md)
-- [`uninstall()()`](method-uninstall.md)
+- [`install()`](method-___install.md)
+- [`uninstall()`](method-___uninstall.md)

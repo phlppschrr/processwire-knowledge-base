@@ -18,6 +18,42 @@ of most other methods provided in this Fieldtype class accounts for most situati
 
 
 
+## Hookable Methods
+
+- [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md)
+- [`getConfigAdvancedInputfields(Field $field): InputfieldWrapper`](method-___getconfigadvancedinputfields.md)
+- [`getConfigArray(Field $field): array`](method-___getconfigarray.md)
+- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md)
+- [`exportConfigData(Field $field, array $data): array`](method-___exportconfigdata.md)
+- [`importConfigData(Field $field, array $data): array`](method-___importconfigdata.md)
+- [`getCompatibleFieldtypes(Field $field): Fieldtypes|null`](method-___getcompatiblefieldtypes.md)
+- [`formatValue(Page $page, Field $field, $value): mixed`](method-___formatvalue.md)
+- [`markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype`](method-___markupvalue.md)
+- [`wakeupValue(Page $page, Field $field, $value): mixed`](method-___wakeupvalue.md)
+- [`sleepValue(Page $page, Field $field, $value): string|int|array`](method-___sleepvalue.md)
+- [`exportValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array`](method-___exportvalue.md)
+- `importValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array|object`
+- [`createField(Field $field): bool`](method-___createfield.md)
+- [`getSelectorInfo(Field $field, array $data = array()): array`](method-___getselectorinfo.md)
+- [`loadPageField(Page $page, Field $field): mixed|null`](method-___loadpagefield.md)
+- [`loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null`](method-___loadpagefieldfilter.md)
+- [`savePageField(Page $page, Field $field): bool`](method-___savepagefield.md)
+- [`deleteField(Field $field): bool`](method-___deletefield.md)
+- [`deletePageField(Page $page, Field $field): bool`](method-___deletepagefield.md)
+- [`emptyPageField(Page $page, Field $field): bool`](method-___emptypagefield.md)
+- [`replacePageField(Page $src, Page $dst, Field $field): bool`](method-___replacepagefield.md)
+- [`deleteTemplateField(Template $template, Field $field): bool`](method-___deletetemplatefield.md)
+- [`cloneField(Field $field): Field`](method-___clonefield.md)
+- `renamedField(Field $field, $prevName): void`
+- `savedField(Field $field): void`
+- `saveFieldReady(Field $field): void`
+- [`install(): void`](method-___install.md)
+- [`uninstall(): void`](method-___uninstall.md)
+- `getFieldSetups(): array`
+- `$name: string` Name of Fieldtype module.
+- `$shortName: string` Short name of Fieldtype, which excludes the "Fieldtype" prefix.
+- `$longName: string` Long name of Fieldtype, which is typically the module title.
+
 Methods:
 - [`getInputfield(Page $page, Field $field): Inputfield|null`](method-getinputfield.md) Return new instance of the Inputfield module associated with this Fieldtype.
 - [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get any Inputfields used for configuration of this Fieldtype.
@@ -58,40 +94,3 @@ Methods:
 - [`uninstall()`](method-___uninstall.md) (hookable) Uninstall this Fieldtype, consistent with optional Module interface
 - [`upgrade($fromVersion, $toVersion)`](method-___upgrade.md) (hookable) Called when module version changes
 - [`__toString()`](method-__tostring.md) The string value of Fieldtype is always the Fieldtype's name.
-
-Hookable methods
-================
-
-- [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md)
-- [`getConfigAdvancedInputfields(Field $field): InputfieldWrapper`](method-___getconfigadvancedinputfields.md)
-- [`getConfigArray(Field $field): array`](method-___getconfigarray.md)
-- [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md)
-- [`exportConfigData(Field $field, array $data): array`](method-___exportconfigdata.md)
-- [`importConfigData(Field $field, array $data): array`](method-___importconfigdata.md)
-- [`getCompatibleFieldtypes(Field $field): Fieldtypes|null`](method-___getcompatiblefieldtypes.md)
-- [`formatValue(Page $page, Field $field, $value): mixed`](method-___formatvalue.md)
-- [`markupValue(Page $page, Field $field, $value = null, $property = ''): string|MarkupFieldtype`](method-___markupvalue.md)
-- [`wakeupValue(Page $page, Field $field, $value): mixed`](method-___wakeupvalue.md)
-- [`sleepValue(Page $page, Field $field, $value): string|int|array`](method-___sleepvalue.md)
-- [`exportValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array`](method-___exportvalue.md)
-- `importValue(Page $page, Field $field, $value, array $options = array()): string|float|int|array|object`
-- [`createField(Field $field): bool`](method-___createfield.md)
-- [`getSelectorInfo(Field $field, array $data = array()): array`](method-___getselectorinfo.md)
-- [`loadPageField(Page $page, Field $field): mixed|null`](method-___loadpagefield.md)
-- [`loadPageFieldFilter(Page $page, Field $field, $selector): mixed|null`](method-___loadpagefieldfilter.md)
-- [`savePageField(Page $page, Field $field): bool`](method-___savepagefield.md)
-- [`deleteField(Field $field): bool`](method-___deletefield.md)
-- [`deletePageField(Page $page, Field $field): bool`](method-___deletepagefield.md)
-- [`emptyPageField(Page $page, Field $field): bool`](method-___emptypagefield.md)
-- [`replacePageField(Page $src, Page $dst, Field $field): bool`](method-___replacepagefield.md)
-- [`deleteTemplateField(Template $template, Field $field): bool`](method-___deletetemplatefield.md)
-- [`cloneField(Field $field): Field`](method-___clonefield.md)
-- `renamedField(Field $field, $prevName): void`
-- `savedField(Field $field): void`
-- `saveFieldReady(Field $field): void`
-- [`install(): void`](method-___install.md)
-- [`uninstall(): void`](method-___uninstall.md)
-- `getFieldSetups(): array`
-- `$name: string` Name of Fieldtype module.
-- `$shortName: string` Short name of Fieldtype, which excludes the "Fieldtype" prefix.
-- `$longName: string` Long name of Fieldtype, which is typically the module title.

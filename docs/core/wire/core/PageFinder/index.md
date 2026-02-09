@@ -9,6 +9,16 @@ ProcessWire PageFinder
 Matches selector strings to pages
 
 
+## Hookable Methods:
+
+- [`find(Selectors|string|array $selectors, $options = array()): array|DatabaseQuerySelect`](method-___find.md)
+- [`getQuery($selectors, array $options): DatabaseQuerySelect`](method-___getquery.md)
+- [`getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string`](method-___getqueryallowedtemplateswhere.md)
+- [`getQueryJoinPath(DatabaseQuerySelect $query, $selector): void`](method-___getqueryjoinpath.md)
+- [`getQueryUnknownField($fieldName, array $data): bool|Field`](method-___getqueryunknownfield.md) ;
+- `$includeMode: string`
+- `$checkAccess: bool`
+
 Methods:
 - [`init(Selectors $selectors, array $options): array`](method-init.md) Initialize new find operation and prepare options
 - [`initSelectors(Selectors $selectors, array $options): array`](method-initselectors.md) Initialize the selectors to add Page status checks
@@ -52,14 +62,3 @@ Methods:
 - [`getPageArrayData(?PageArray $pageArray = null): array`](method-getpagearraydata.md) Get data that should be populated back to any resulting PageArray’s data() method
 - [`hasNativeFieldName(string|array|Selector $fieldNames): bool`](method-hasnativefieldname.md) Are any of the given field name(s) native to PW system?
 - [`syntaxError(string $message)`](method-syntaxerror.md) Throw a fatal syntax error
-
-Hookable methods:
-=================
-
-- [`find(Selectors|string|array $selectors, $options = array()): array|DatabaseQuerySelect`](method-___find.md)
-- [`getQuery($selectors, array $options): DatabaseQuerySelect`](method-___getquery.md)
-- [`getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where): string`](method-___getqueryallowedtemplateswhere.md)
-- [`getQueryJoinPath(DatabaseQuerySelect $query, $selector): void`](method-___getqueryjoinpath.md)
-- [`getQueryUnknownField($fieldName, array $data): bool|Field`](method-___getqueryunknownfield.md) ;
-- `$includeMode: string`
-- `$checkAccess: bool`

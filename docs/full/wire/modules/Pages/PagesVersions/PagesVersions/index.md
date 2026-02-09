@@ -35,8 +35,13 @@ $pagesVersions->restorePageVersion($pageV2);
 $pagesVersions->deletePageVersion($pageV2);
 ~~~~~
 
+## Hookable Methods
+
+- [`allowPageVersions(Page $page): bool`](method-___allowpageversions.md)
+
+@todo test change of template in version
+
 Methods:
-- [`getPageVersion(Page $page, $version, array $options = [])`](method-getpageversion.md) ***************************************************************************** PUBLIC API
 - [`getPageVersion(Page $page, int $version, array $options = []): Page|NullPage`](method-getpageversion.md) Get requested page version in a copy of given page
 - [`loadPageVersion(Page $page, int|string|PageVersionInfo $version, array $options = []): bool`](method-loadpageversion.md) Load and populate version data to given page
 - [`getPageVersions(Page $page, array $options = []): PageVersionInfo[]|Page[]`](method-getpageversions.md) Get all versions for given page
@@ -51,7 +56,6 @@ Methods:
 - [`deleteAllPageVersions(Page $page): int`](method-deleteallpageversions.md) Delete all versions for given page
 - [`deleteAllVersions(bool $areYouSure = false): int`](method-deleteallversions.md) Delete all versions across all pages
 - [`restorePageVersion(Page $page, int $version = 0, array $options = []): Page|bool`](method-restorepageversion.md) Restore a page version to be the live version
-- [`getPageFieldVersion(Page $page, Field $field, $version, array $options = [])`](method-getpagefieldversion.md) ************************************************************************ INTERNAL API
 - [`getSleepValueFromPage(Page $page, Field $field): array|int|string|false`](method-getsleepvaluefrompage.md) Get sleep value from given live page
 - [`getSleepValueFromDatabase(Page $page, Field $field): array|int|mixed|string`](method-getsleepvaluefromdatabase.md) Get sleep value from the page field’s field_name table data in database
 - [`deletePageFieldVersion(Page $page, Field $field, int $version): bool`](method-deletepagefieldversion.md) Delete a page field version
@@ -59,11 +63,3 @@ Methods:
 - [`getUnsupportedFields(?Page $page = null): Field[]`](method-getunsupportedfields.md) Get fields where versions are not supported
 - [`allowPageVersions(Page $page): bool`](method-___allowpageversions.md) (hookable) Is given page allowed to have versions?
 - [`getNextPageVersionNumber(Page $page): int`](method-getnextpageversionnumber.md) Get next available version number for given page
-- [`hookBeforePagesSave(HookEvent $event)`](method-hookbeforepagessave.md) ***************************************************************************** HOOKS
-
-HOOKABLE METHODS
-----------------
-
-- [`allowPageVersions(Page $page): bool`](method-___allowpageversions.md)
-
-@todo test change of template in version

@@ -14,8 +14,7 @@ $wire = new ProcessWire('/server/path/', 'https://hostname/url/');
 ~~~~~
 
 
-Default API vars (A-Z)
-======================
+## Default Api Vars (A-Z)
 
 - `$adminTheme: AdminTheme|AdminThemeFramework|null`
 - `$cache: WireCache`
@@ -50,9 +49,9 @@ Default API vars (A-Z)
 - `$wire: ProcessWire`
 - `$shutdown: WireShutdown`
 - `$pagesVersions: PagesVersions|null`
-- [`init()()`](method-init.md)
-- [`ready()()`](method-ready.md)
-- `@method finished(array $data)` finished(array $data)
+- [`init()`](method-___init.md)
+- [`ready()`](method-___ready.md)
+- [`finished(array $data)`](method-___finished.md)
 
 Methods:
 - [`__construct(Config|string|null $config = null, string $rootURL = '/')`](method-__construct.md) Create a new ProcessWire instance

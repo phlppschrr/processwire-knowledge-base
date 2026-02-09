@@ -13,8 +13,7 @@ An individual notification item to be part of a NotificationArray for a Page
 @class Notification
 
 
-data encoded vars, all optional
-===============================
+## Data Encoded Vars, All Optional
 
 - `$id: int` unique ID (among others the user may have)
 - `$text: string` extended text

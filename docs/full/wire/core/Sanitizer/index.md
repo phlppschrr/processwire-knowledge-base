@@ -102,7 +102,6 @@ and thus it’ll return a non-value rather than a sanitized value. See the `Sani
 
 Methods:
 - [`__construct()`](method-__construct.md) Construct the sanitizer
-- [`nameFilter($value, array $allowedExtras, $replacementChar, $beautify = false, $maxLength = 128)`](method-namefilter.md) ********************************************************************************************************** STRING SANITIZERS
 - [`name(string $value, bool|int $beautify = false, int $maxLength = 128, string $replacement = '_', array $options = array()): string`](method-name.md) Sanitize in "name" format (ASCII alphanumeric letters/digits, hyphens, underscores, periods)
 - [`names(string|array $value, string $delimeter = ' ', array $allowedExtras = array('-', '_', '.'), string $replacementChar = '_', bool $beautify = false): string|array`](method-names.md) Sanitize a string or array containing multiple names
 - [`attrName(string $value, int $maxLength = 255): string`](method-attrname.md) Sanitize to an ASCII-only HTML attribute name
@@ -167,7 +166,6 @@ Methods:
 - [`date(string|int $value, string|null $format = null, array $options = array()): string|int|null`](method-date.md) Sanitize a date or date/time string, making sure it is valid, and return it
 - [`textdomain(string $value): string`](method-textdomain.md) Sanitize as language textdomain
 - [`match(string $value, string $regex): string`](method-match.md) Validate that given value matches regex pattern.
-- [`int($value, array $options = array())`](method-int.md) ********************************************************************************************************************** NUMBER SANITIZERS
 - [`int(mixed $value, array $options = array()): int`](method-int.md) Sanitized an integer (unsigned, unless you specify a negative minimum value)
 - [`intUnsigned(mixed $value, array $options = array()): int`](method-intunsigned.md) Sanitize to unsigned (0 or positive) integer
 - [`intSigned(mixed $value, array $options = array()): int`](method-intsigned.md) Sanitize to signed integer (negative or positive)
@@ -175,7 +173,6 @@ Methods:
 - [`min(int|float|string $value, int|float|string $min = PHP_INT_MIN): int|float`](method-min.md) Sanitize to have a minimum value
 - [`max(int|float|string $value, int|float|string $max = PHP_INT_MAX): int|float`](method-max.md) Sanitize to have a maximuim value
 - [`float(float|string|int $value, array $options = array()): float|string`](method-float.md) Sanitize to floating point value
-- [`array($value, $sanitizer = null, array $options = array())`](method-___array.md) (hookable) ******************************************************************************************************************** ARRAY SANITIZERS
 - [`array(array|string|mixed $value, string|array $sanitizer = null, array $options = array()): array`](method-___array.md) (hookable) Sanitize array or CSV string to array of values, optionally sanitized by given method
 - [`arrayVal(mixed $value, array $options = array()): array`](method-arrayval.md) Simply sanitize value to array with no conversions
 - [`intArray(array|string|mixed $value, array|bool $options = array()): array`](method-intarray.md) Sanitize array or CSV string to array of unsigned integers (or signed integers if specified $min is less than 0)
@@ -186,7 +183,6 @@ Methods:
 - [`wordsArrayNumberReplacements(string &$value, string $prefix = 'REP'): array`](method-wordsarraynumberreplacements.md) Identify decimals, minus signs and commas in numbers, replace them, and return the replacements array
 - [`option(string|int $value, array $allowedValues = array()): string|int|null`](method-option.md) Return $value if it exists in $allowedValues, or null if it doesn't
 - [`options(array $values, array $allowedValues = array()): array`](method-options.md) Return given values that that also exist in $allowedValues whitelist
-- [`bool($value)`](method-bool.md) ************************************************************************************************************************* OTHER SANITIZERS
 - [`bool($value): bool`](method-bool.md) Convert the given value to a boolean
 - [`bit(string|int|array $value): int`](method-bit.md) Sanitize to a bit, returning only integer 0 or 1
 - [`checkbox(int|bool|string|mixed|null $value, int|bool|string|mixed|null $yes = true, int|bool|string|mixed|null $no = false): int|bool|string|mixed|null`](method-checkbox.md) Sanitize checkbox value
@@ -197,9 +193,7 @@ Methods:
 - [`getAll(bool $getReturnTypes = false): array`](method-getall.md) Get all sanitizer method names and optionally types they return
 - [`getTextTools(): WireTextTools`](method-gettexttools.md) Get instance of WireTextTools
 - [`getNumberTools(): WireNumberTools`](method-getnumbertools.md) Get instance of WireNumberTools
-- [`validateFile($filename, array $options = array())`](method-validatefile.md) ******************************************************************************************************************* FILE VALIDATORS
 - [`validateFile(string $filename, array $options = array()): bool|array|null`](method-validatefile.md) Validate and sanitize a file using FileValidator modules
-- [`__toString()`](method-__tostring.md) ******************************************************************************************************************* CLASS HELPERS
 - [`sanitize(mixed $value, string $method = 'text'): string|int|array|float|null`](method-sanitize.md) Call a sanitizer method indirectly where method name can contain combined/combo methods
 - [`validate(string|int|array|float $value, string $method = 'text', $fallback = null): null|mixed`](method-validate.md) Validate that value remains unchanged by given sanitizer method, or return null if not
 - [`valid(string|int|array|float $value, string $method = 'text', bool $strict = false): bool`](method-valid.md) Is given value valid? (i.e. unchanged by given sanitizer method)

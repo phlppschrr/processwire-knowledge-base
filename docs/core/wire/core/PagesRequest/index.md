@@ -19,7 +19,6 @@ $page = $pages->request()->getPage();
 ~~~~~
 
 Methods:
-- [`__construct(Pages $pages)`](method-__construct.md) *********************************************************************************
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`init()`](method-init.md) Initialize
 - [`setPage(Page|NullPage|null $page): Page|NullPage|null`](method-setpage.md) Set current request page

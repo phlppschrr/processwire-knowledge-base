@@ -25,8 +25,7 @@ over the $_SESSION superglobal just in case we ever need to replace PHP's sessio
 
 
 
-Expected $config variables include:
-===================================
+## Expected $Config Variables Include:
 string $config->sessionName Name of session on http
 string $config->sessionNameSecure Name of session on https
 int $config->sessionExpireSeconds Number of seconds of inactivity before session expires

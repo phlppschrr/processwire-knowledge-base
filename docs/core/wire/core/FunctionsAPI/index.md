@@ -3,8 +3,6 @@
 Source: `wire/core/FunctionsAPI.php`
 
 ProcessWire functions API maps function names to common API variables
-
-=
 Provides an alternative to the API variables by providing functions of the same
 name, with these benefits:
 

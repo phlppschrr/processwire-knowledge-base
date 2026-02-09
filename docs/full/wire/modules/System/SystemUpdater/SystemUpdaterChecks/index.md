@@ -25,4 +25,3 @@ Methods:
 - [`checkMemoryLimit(): bool`](method-checkmemorylimit.md) Check PHP memory_limit setting
 - [`getMemoryLimit(string $getInUnit = 'M'): int|float`](method-getmemorylimit.md) Get memory limit
 - [`checkSystemTimes(): bool`](method-checksystemtimes.md) Check that database time and PHP time match
-- [`warning($text, $flags = 0)`](method-warning.md) *****************************************************************************************

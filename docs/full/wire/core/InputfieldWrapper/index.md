@@ -14,8 +14,7 @@ Group: [properties](group-properties.md)
 ProcessWire InputfieldWrapper
 
 
-About InputfieldWrapper
-=======================
+## About Inputfieldwrapper
 A type of Inputfield that is designed specifically to wrap other Inputfields.
 The most common example of an InputfieldWrapper is a <form>.
 

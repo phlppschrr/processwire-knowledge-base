@@ -11,8 +11,7 @@ https://processwire.com/about/license/mit/
 
 
 
-About the ConfigurableModule interface
-======================================
+## About The Configurablemodule Interface
 ConfigurableModule is an interface that indicates the module is configurable by providing
 `__get()` and `__set()` methods for getting and setting config values. Modules implementing
 this interface are assumed to also implement the `Module` interface.
@@ -36,8 +35,7 @@ You may optionally specify a handler method for configuration data: `setConfigDa
 If present, it will be used. See commented function reference in the interface below.
 
 
-About the ConfigModule interface (3.0.179+)
-===========================================
+## About The Configmodule Interface (3.0.179+)
 This interface indicates the module can receive config settings, but is not
 interactively configurable. Use this for modules where configuration will
 only be managed from the API/code side. Config settings must be saved using

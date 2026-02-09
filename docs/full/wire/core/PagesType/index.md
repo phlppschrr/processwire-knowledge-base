@@ -42,7 +42,6 @@ Methods:
 - [`getPageClass(): string`](method-getpageclass.md) Get the PHP class name used by Page objects of this type
 - [`count(string $selectorString = '', array $options = array()): int`](method-count.md) Return the number of pages in this type matching the given selector string
 - [`getJoinFieldNames(): array`](method-getjoinfieldnames.md) Get names of fields that should always be autojoined
-- [`saveReady(Page $page)`](method-___saveready.md) (hookable) ****************************************************************************************** HOOKS
 - [`saveReady(Page $page): array`](method-___saveready.md) (hookable) Hook called just before a page of this type is saved
 - [`saved(Page $page, array $changes = array(), array $values = array())`](method-___saved.md) (hookable) Hook called after a page of this type is successfully saved
 - [`added(Page $page)`](method-___added.md) (hookable) Hook called when a new page of this type has been added

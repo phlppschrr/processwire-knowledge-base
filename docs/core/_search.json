@@ -3322,24 +3322,6 @@
       "name_internal": "___uninstall"
     },
     {
-      "type": "method",
-      "name": "install()",
-      "class": "Tfa",
-      "file": "wire/core/Tfa/method-install.md",
-      "summary": "Declared in class docblock.",
-      "signature": "",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "uninstall()",
-      "class": "Tfa",
-      "file": "wire/core/Tfa/method-uninstall.md",
-      "summary": "Declared in class docblock.",
-      "signature": "",
-      "return": null
-    },
-    {
       "type": "class",
       "name": "PageArray",
       "file": "wire/core/PageArray/index.md",
@@ -4295,18 +4277,6 @@
       "summary": "Get names of fields that should always be autojoined",
       "signature": "",
       "return": null
-    },
-    {
-      "type": "method",
-      "name": "saveReady",
-      "class": "PagesType",
-      "file": "wire/core/PagesType/method-___saveready.md",
-      "summary": "****************************************************************************************** HOOKS",
-      "signature": "Page $page",
-      "return": null,
-      "hookable": true,
-      "name_public": "saveReady",
-      "name_internal": "___saveReady"
     },
     {
       "type": "method",
@@ -6105,29 +6075,11 @@
     },
     {
       "type": "method",
-      "name": "__construct",
-      "class": "ImageSizerEngine",
-      "file": "wire/core/ImageSizerEngine/method-__construct.md",
-      "summary": "**************************************************************************************************",
-      "signature": "",
-      "return": null
-    },
-    {
-      "type": "method",
       "name": "prepare",
       "class": "ImageSizerEngine",
       "file": "wire/core/ImageSizerEngine/method-prepare.md",
       "summary": "Prepare the ImageSizer (this should be the first method you call)",
       "signature": "$filename, $options = array(), $inspectionResult = null",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "supported",
-      "class": "ImageSizerEngine",
-      "file": "wire/core/ImageSizerEngine/method-supported.md",
-      "summary": "********************************************************************************************** ABSTRACT AND TEMPLATE METHODS",
-      "signature": "$action = 'imageformat'",
       "return": null
     },
     {
@@ -6200,15 +6152,6 @@
       "file": "wire/core/ImageSizerEngine/method-getengineinfo.md",
       "summary": "Get array of information about this engine",
       "signature": "",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "loadImageInfo",
-      "class": "ImageSizerEngine",
-      "file": "wire/core/ImageSizerEngine/method-loadimageinfo.md",
-      "summary": "********************************************************************************************** COMMON IMPLEMENTATION METHODS",
-      "signature": "$filename, $reloadAll = false",
       "return": null
     },
     {
@@ -6587,15 +6530,6 @@
       "file": "wire/core/ImageSizerEngine/method-getcropdimensions.md",
       "summary": "Check if cropping is needed, if yes, populate x- and y-position to params $w1 and $h1",
       "signature": "&$w1, &$h1, $gdWidth, $targetWidth, $gdHeight, $targetHeight",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "resize",
-      "class": "ImageSizerEngine",
-      "file": "wire/core/ImageSizerEngine/method-resize.md",
-      "summary": "*********************************************************************************************",
-      "signature": "$finalWidth, $finalHeight",
       "return": null
     },
     {
@@ -12695,24 +12629,6 @@
       "return": null
     },
     {
-      "type": "method",
-      "name": "init()",
-      "class": "ProcessWire",
-      "file": "wire/core/ProcessWire/method-init.md",
-      "summary": "Declared in class docblock.",
-      "signature": "",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "ready()",
-      "class": "ProcessWire",
-      "file": "wire/core/ProcessWire/method-ready.md",
-      "summary": "Declared in class docblock.",
-      "signature": "",
-      "return": null
-    },
-    {
       "type": "class",
       "name": "HookEvent",
       "file": "wire/core/HookEvent/index.md",
@@ -15940,15 +15856,6 @@
     },
     {
       "type": "method",
-      "name": "nameFilter",
-      "class": "Sanitizer",
-      "file": "wire/core/Sanitizer/method-namefilter.md",
-      "summary": "********************************************************************************************************** STRING SANITIZERS",
-      "signature": "$value, array $allowedExtras, $replacementChar, $beautify = false, $maxLength = 128",
-      "return": null
-    },
-    {
-      "type": "method",
       "name": "name",
       "class": "Sanitizer",
       "file": "wire/core/Sanitizer/method-name.md",
@@ -16528,15 +16435,6 @@
       "name": "int",
       "class": "Sanitizer",
       "file": "wire/core/Sanitizer/method-int.md",
-      "summary": "********************************************************************************************************************** NUMBER SANITIZERS",
-      "signature": "$value, array $options = array()",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "int",
-      "class": "Sanitizer",
-      "file": "wire/core/Sanitizer/method-int.md",
       "summary": "Sanitized an integer (unsigned, unless you specify a negative minimum value)",
       "signature": "$value, array $options = array()",
       "return": null
@@ -16594,18 +16492,6 @@
       "summary": "Sanitize to floating point value",
       "signature": "$value, array $options = array()",
       "return": null
-    },
-    {
-      "type": "method",
-      "name": "array",
-      "class": "Sanitizer",
-      "file": "wire/core/Sanitizer/method-___array.md",
-      "summary": "******************************************************************************************************************** ARRAY SANITIZERS",
-      "signature": "$value, $sanitizer = null, array $options = array()",
-      "return": null,
-      "hookable": true,
-      "name_public": "array",
-      "name_internal": "___array"
     },
     {
       "type": "method",
@@ -16698,15 +16584,6 @@
       "file": "wire/core/Sanitizer/method-options.md",
       "summary": "Return given values that that also exist in $allowedValues whitelist",
       "signature": "array $values, array $allowedValues = array()",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "bool",
-      "class": "Sanitizer",
-      "file": "wire/core/Sanitizer/method-bool.md",
-      "summary": "************************************************************************************************************************* OTHER SANITIZERS",
-      "signature": "$value",
       "return": null
     },
     {
@@ -16807,26 +16684,8 @@
       "name": "validateFile",
       "class": "Sanitizer",
       "file": "wire/core/Sanitizer/method-validatefile.md",
-      "summary": "******************************************************************************************************************* FILE VALIDATORS",
-      "signature": "$filename, array $options = array()",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "validateFile",
-      "class": "Sanitizer",
-      "file": "wire/core/Sanitizer/method-validatefile.md",
       "summary": "Validate and sanitize a file using FileValidator modules",
       "signature": "$filename, array $options = array()",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "__toString",
-      "class": "Sanitizer",
-      "file": "wire/core/Sanitizer/method-__tostring.md",
-      "summary": "******************************************************************************************************************* CLASS HELPERS",
-      "signature": "",
       "return": null
     },
     {
@@ -18753,15 +18612,6 @@
       "return": null
     },
     {
-      "type": "method",
-      "name": "Protected",
-      "class": "Password",
-      "file": "wire/core/Password/method-protected.md",
-      "summary": "internal use method",
-      "signature": "",
-      "return": "setPass($value)"
-    },
-    {
       "type": "class",
       "name": "Module",
       "file": "wire/core/Module/index.md",
@@ -19672,24 +19522,6 @@
     },
     {
       "type": "method",
-      "name": "isValidItem",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-isvaliditem.md",
-      "summary": "******************************************************************************************* WIREARRAY OVERRIDES",
-      "signature": "$item",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "get",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-get.md",
-      "summary": "******************************************************************************************* GETTING/LOADING MODULES",
-      "signature": "$key",
-      "return": null
-    },
-    {
-      "type": "method",
       "name": "get",
       "class": "Modules",
       "file": "wire/core/Modules/method-get.md",
@@ -19711,15 +19543,6 @@
       "name": "findByPrefix",
       "class": "Modules",
       "file": "wire/core/Modules/method-findbyprefix.md",
-      "summary": "******************************************************************************************* FINDER METHODS",
-      "signature": "$prefix, $load = false",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "findByPrefix",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-findbyprefix.md",
       "summary": "Find modules matching the given prefix (i.e. “Inputfield”)",
       "signature": "$prefix, $load = false",
       "return": null
@@ -19731,15 +19554,6 @@
       "file": "wire/core/Modules/method-findbyinfo.md",
       "summary": "Find modules by matching a property or properties in their module info",
       "signature": "$selector, $load = false",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "getInstallable",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-getinstallable.md",
-      "summary": "******************************************************************************************* INSTALLER METHODS",
-      "signature": "",
       "return": null
     },
     {
@@ -19789,24 +19603,6 @@
     },
     {
       "type": "method",
-      "name": "getFlags",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-getflags.md",
-      "summary": "******************************************************************************************* MODULE FLAGS",
-      "signature": "$class",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "moduleInfoCache",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-moduleinfocache.md",
-      "summary": "******************************************************************************************* MODULE INFO",
-      "signature": "$moduleID = null, $property = '', $verbose = false",
-      "return": null
-    },
-    {
-      "type": "method",
       "name": "getModuleID",
       "class": "Modules",
       "file": "wire/core/Modules/method-getmoduleid.md",
@@ -19839,15 +19635,6 @@
       "file": "wire/core/Modules/method-getmoduleinfoproperty.md",
       "summary": "Get just a single property of module info",
       "signature": "$class, $property, array $options = array()",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "getConfig",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-getconfig.md",
-      "summary": "******************************************************************************************* MODULE CONFIG",
-      "signature": "$class, $property = ''",
       "return": null
     },
     {
@@ -19900,15 +19687,6 @@
     },
     {
       "type": "method",
-      "name": "isSingular",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-issingular.md",
-      "summary": "********************************************************************************************* TOOLS",
-      "signature": "$module",
-      "return": null
-    },
-    {
-      "type": "method",
       "name": "refresh",
       "class": "Modules",
       "file": "wire/core/Modules/method-___refresh.md",
@@ -19918,33 +19696,6 @@
       "hookable": true,
       "name_public": "refresh",
       "name_internal": "___refresh"
-    },
-    {
-      "type": "method",
-      "name": "getRequiredBy",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-getrequiredby.md",
-      "summary": "********************************************************************************** DEPENDENCIES",
-      "signature": "$class, $uninstalled = false, $installs = false",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "setSubstitute",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-setsubstitute.md",
-      "summary": "********************************************************************************** SUBSTITUTES",
-      "signature": "$moduleName, $substituteName = null",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "getModuleFile",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-getmodulefile.md",
-      "summary": "********************************************************************************** FILES",
-      "signature": "$class, $options = array()",
-      "return": null
     },
     {
       "type": "method",
@@ -19969,26 +19720,8 @@
       "name": "__invoke",
       "class": "Modules",
       "file": "wire/core/Modules/method-__invoke.md",
-      "summary": "********************************************************************************** DEBUG AND CLASS SUPPORT",
-      "signature": "$key",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "__invoke",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-__invoke.md",
       "summary": "Enables use of $modules('ModuleName')",
       "signature": "$key",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "memcache",
-      "class": "Modules",
-      "file": "wire/core/Modules/method-memcache.md",
-      "summary": "********************************************************************************** CACHES",
-      "signature": "$name, $setValue = null",
       "return": null
     },
     {
@@ -20593,15 +20326,6 @@
       "file": "wire/core/Pageimage/method-getdebuginfo.md",
       "summary": "Verbose debug info (via @horst)",
       "signature": "$options = array(), $returnType = 'string'",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "install($filename)",
-      "class": "Pageimage",
-      "file": "wire/core/Pageimage/method-install-filename.md",
-      "summary": "Declared in class docblock.",
-      "signature": "",
       "return": null
     },
     {
@@ -21441,15 +21165,6 @@
       "name": "className",
       "class": "Wire",
       "file": "wire/core/Wire/method-classname.md",
-      "summary": "**************************************************************************************************** IDENTIFICATION",
-      "signature": "$options = null",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "className",
-      "class": "Wire",
-      "file": "wire/core/Wire/method-classname.md",
       "summary": "Return this object’s class name",
       "signature": "$options = null",
       "return": null
@@ -21555,13 +21270,6 @@
       "summary": "Given a Hook ID, remove the hook",
       "signature": "$hookId",
       "return": null
-    },
-    {
-      "type": "const",
-      "name": "trackChangesOn",
-      "class": "Wire",
-      "file": "wire/core/Wire/const-trackchangeson.md",
-      "summary": "**************************************************************************************************** CHANGE TRACKING"
     },
     {
       "type": "const",
@@ -21738,15 +21446,6 @@
       "hookable": true,
       "name_public": "log",
       "name_internal": "___log"
-    },
-    {
-      "type": "method",
-      "name": "_",
-      "class": "Wire",
-      "file": "wire/core/Wire/method-_.md",
-      "summary": "**************************************************************************************************** TRANSLATION",
-      "signature": "$text",
-      "return": null
     },
     {
       "type": "method",
@@ -23066,6 +22765,15 @@
       "summary": "Declared in class docblock.",
       "signature": "Page $item",
       "return": "bool"
+    },
+    {
+      "type": "method",
+      "name": "executeMultiple",
+      "class": "PageAction",
+      "file": "wire/core/PageAction/method-executemultiple.md",
+      "summary": "Declared in class docblock.",
+      "signature": "PageArray $items",
+      "return": null
     },
     {
       "type": "class",
@@ -25640,15 +25348,6 @@
       "class": "PagesRequest",
       "file": "wire/core/PagesRequest/group-other.md",
       "summary": null
-    },
-    {
-      "type": "method",
-      "name": "__construct",
-      "class": "PagesRequest",
-      "file": "wire/core/PagesRequest/method-__construct.md",
-      "summary": "*********************************************************************************",
-      "signature": "Pages $pages",
-      "return": null
     },
     {
       "type": "method",
@@ -29352,15 +29051,6 @@
       "return": null
     },
     {
-      "type": "method",
-      "name": "save()",
-      "class": "PagefilesManager",
-      "file": "wire/core/PagefilesManager/method-save.md",
-      "summary": "Declared in class docblock.",
-      "signature": "",
-      "return": null
-    },
-    {
       "type": "class",
       "name": "Permission",
       "file": "wire/core/Permission/index.md",
@@ -29695,18 +29385,6 @@
       "name": "saveReady",
       "class": "WireSaveableItems",
       "file": "wire/core/WireSaveableItems/method-___saveready.md",
-      "summary": "*********************************************************************************** HOOKERS",
-      "signature": "Saveable $item",
-      "return": null,
-      "hookable": true,
-      "name_public": "saveReady",
-      "name_internal": "___saveReady"
-    },
-    {
-      "type": "method",
-      "name": "saveReady",
-      "class": "WireSaveableItems",
-      "file": "wire/core/WireSaveableItems/method-___saveready.md",
       "summary": "Hook that runs right before item is to be saved.",
       "signature": "Saveable $item",
       "return": null,
@@ -29809,15 +29487,6 @@
       "hookable": true,
       "name_public": "renamed",
       "name_internal": "___renamed"
-    },
-    {
-      "type": "method",
-      "name": "__invoke",
-      "class": "WireSaveableItems",
-      "file": "wire/core/WireSaveableItems/method-__invoke.md",
-      "summary": "*********************************************************************************** OTHER",
-      "signature": "$key",
-      "return": null
     },
     {
       "type": "method",
@@ -30255,15 +29924,6 @@
       "name": "count",
       "class": "Pages",
       "file": "wire/core/Pages/method-count.md",
-      "summary": "************************************************************************************************************* BASIC PUBLIC PAGES API METHODS",
-      "signature": "$selector = '', $options = array()",
-      "return": null
-    },
-    {
-      "type": "method",
-      "name": "count",
-      "class": "Pages",
-      "file": "wire/core/Pages/method-count.md",
       "summary": "Count and return how many pages will match the given selector.",
       "signature": "$selector = '', $options = array()",
       "return": null
@@ -30486,18 +30146,6 @@
       "hookable": true,
       "name_public": "restore",
       "name_internal": "___restore"
-    },
-    {
-      "type": "method",
-      "name": "emptyTrash",
-      "class": "Pages",
-      "file": "wire/core/Pages/method-___emptytrash.md",
-      "summary": "************************************************************************************************************* ADVANCED PAGES API METHODS (more for internal use)",
-      "signature": "array $options = array()",
-      "return": null,
-      "hookable": true,
-      "name_public": "emptyTrash",
-      "name_internal": "___emptyTrash"
     },
     {
       "type": "method",
@@ -30765,18 +30413,6 @@
       "summary": "Get the PagesPathFinder instance which provides methods for finding pages by paths",
       "signature": "",
       "return": null
-    },
-    {
-      "type": "method",
-      "name": "saveReady",
-      "class": "Pages",
-      "file": "wire/core/Pages/method-___saveready.md",
-      "summary": "******************************************************************************************************************** COMMON PAGES HOOKS",
-      "signature": "Page $page",
-      "return": null,
-      "hookable": true,
-      "name_public": "saveReady",
-      "name_internal": "___saveReady"
     },
     {
       "type": "method",

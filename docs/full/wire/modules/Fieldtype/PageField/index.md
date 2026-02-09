@@ -6,14 +6,12 @@ Inherits: `Field`
 
 Page Field (for FieldtypePage)
 
-Configured with FieldtypePage
-==============================
+## Configured With Fieldtypepage
 
 - `$derefAsPage: int`
 - `$allowUnpub: int|bool`
 
-Configured with InputfieldPage
-==============================
+## Configured With Inputfieldpage
 
 - `$template_id: int`
 - `$template_ids: array`

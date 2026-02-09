@@ -86,8 +86,6 @@ module types include:
 
 These methods are outlined in more detail further down on this page.
 
------------------------------------------------------------------
-
 ## Module Information
 
 Modules must have some way to communicate information about
@@ -144,8 +142,6 @@ Your JSON file should contain nothing but an object/map of the module info:
 ~~~~~
 Note: The example JSON above just shows "title" and "version", but you would
 likely add more than that as needed, like shown in the static version above.
-
------------------------------------------------------------------
 
 ## Module information properties
 
@@ -220,8 +216,6 @@ likely add more than that as needed, like shown in the static version above.
    consistent with the SearchableModule interface. The value of the 'searchable' property should
    be the name that the search results are referred to, using ascii characters of a-z, 0-9, and
    underscore. See the SearchableModule interface in this file for more details.
-
------------------------------------------------------------------------------------------------
 
 ## Module Methods
 

@@ -62,15 +62,13 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 
-The following properties are only in $config->urls
-==================================================
+## The Following Properties Are Only In $Config->Urls
 
 - `$admin: string` Admin URL
 - `$next: string|null` URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 - `$prev: string|null` URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 
-The following are in $config->urls and equivalent to previously mentioned properties, but include scheme + host
-===============================================================================================================
+## The Following Are In $Config->Urls And Equivalent To Previously Mentioned Properties, But Include Scheme + Host
 
 - `$httpRoot: string` Full http/https URL to site root (i.e. https://domain.com/).
 - `$httpTemplates: string` Full http/https URL to site templates (i.e. https://domain.com/site/templates/).

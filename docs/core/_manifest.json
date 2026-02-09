@@ -2128,13 +2128,6 @@
           "name_internal": "___saveReady"
         },
         {
-          "name": "___saveReady",
-          "file": "wire/core/PagesType/method-___saveready.md",
-          "hookable": true,
-          "name_public": "saveReady",
-          "name_internal": "___saveReady"
-        },
-        {
           "name": "___saved",
           "file": "wire/core/PagesType/method-___saved.md",
           "hookable": true,
@@ -3206,16 +3199,8 @@
       ],
       "methods": [
         {
-          "name": "__construct",
-          "file": "wire/core/ImageSizerEngine/method-__construct.md"
-        },
-        {
           "name": "prepare",
           "file": "wire/core/ImageSizerEngine/method-prepare.md"
-        },
-        {
-          "name": "supported",
-          "file": "wire/core/ImageSizerEngine/method-supported.md"
         },
         {
           "name": "supported",
@@ -3248,10 +3233,6 @@
         {
           "name": "getEngineInfo",
           "file": "wire/core/ImageSizerEngine/method-getengineinfo.md"
-        },
-        {
-          "name": "loadImageInfo",
-          "file": "wire/core/ImageSizerEngine/method-loadimageinfo.md"
         },
         {
           "name": "loadImageInfo",
@@ -3420,10 +3401,6 @@
         {
           "name": "getCropDimensions",
           "file": "wire/core/ImageSizerEngine/method-getcropdimensions.md"
-        },
-        {
-          "name": "resize",
-          "file": "wire/core/ImageSizerEngine/method-resize.md"
         },
         {
           "name": "resize",
@@ -7913,10 +7890,6 @@
           "file": "wire/core/Sanitizer/method-__construct.md"
         },
         {
-          "name": "nameFilter",
-          "file": "wire/core/Sanitizer/method-namefilter.md"
-        },
-        {
           "name": "name",
           "file": "wire/core/Sanitizer/method-name.md"
         },
@@ -8177,10 +8150,6 @@
           "file": "wire/core/Sanitizer/method-int.md"
         },
         {
-          "name": "int",
-          "file": "wire/core/Sanitizer/method-int.md"
-        },
-        {
           "name": "intUnsigned",
           "file": "wire/core/Sanitizer/method-intunsigned.md"
         },
@@ -8203,13 +8172,6 @@
         {
           "name": "float",
           "file": "wire/core/Sanitizer/method-float.md"
-        },
-        {
-          "name": "___array",
-          "file": "wire/core/Sanitizer/method-___array.md",
-          "hookable": true,
-          "name_public": "array",
-          "name_internal": "___array"
         },
         {
           "name": "___array",
@@ -8259,10 +8221,6 @@
           "file": "wire/core/Sanitizer/method-bool.md"
         },
         {
-          "name": "bool",
-          "file": "wire/core/Sanitizer/method-bool.md"
-        },
-        {
           "name": "bit",
           "file": "wire/core/Sanitizer/method-bit.md"
         },
@@ -8304,14 +8262,6 @@
         {
           "name": "validateFile",
           "file": "wire/core/Sanitizer/method-validatefile.md"
-        },
-        {
-          "name": "validateFile",
-          "file": "wire/core/Sanitizer/method-validatefile.md"
-        },
-        {
-          "name": "__toString",
-          "file": "wire/core/Sanitizer/method-__tostring.md"
         },
         {
           "name": "sanitize",
@@ -9748,14 +9698,6 @@
           "file": "wire/core/Modules/method-__construct.md"
         },
         {
-          "name": "isValidItem",
-          "file": "wire/core/Modules/method-isvaliditem.md"
-        },
-        {
-          "name": "get",
-          "file": "wire/core/Modules/method-get.md"
-        },
-        {
           "name": "get",
           "file": "wire/core/Modules/method-get.md"
         },
@@ -9768,16 +9710,8 @@
           "file": "wire/core/Modules/method-findbyprefix.md"
         },
         {
-          "name": "findByPrefix",
-          "file": "wire/core/Modules/method-findbyprefix.md"
-        },
-        {
           "name": "findByInfo",
           "file": "wire/core/Modules/method-findbyinfo.md"
-        },
-        {
-          "name": "getInstallable",
-          "file": "wire/core/Modules/method-getinstallable.md"
         },
         {
           "name": "isInstalled",
@@ -9805,14 +9739,6 @@
           "name_internal": "___uninstall"
         },
         {
-          "name": "getFlags",
-          "file": "wire/core/Modules/method-getflags.md"
-        },
-        {
-          "name": "moduleInfoCache",
-          "file": "wire/core/Modules/method-moduleinfocache.md"
-        },
-        {
           "name": "getModuleID",
           "file": "wire/core/Modules/method-getmoduleid.md"
         },
@@ -9827,10 +9753,6 @@
         {
           "name": "getModuleInfoProperty",
           "file": "wire/core/Modules/method-getmoduleinfoproperty.md"
-        },
-        {
-          "name": "getConfig",
-          "file": "wire/core/Modules/method-getconfig.md"
         },
         {
           "name": "getConfig",
@@ -9856,27 +9778,11 @@
           "file": "wire/core/Modules/method-getmoduleinstallurl.md"
         },
         {
-          "name": "isSingular",
-          "file": "wire/core/Modules/method-issingular.md"
-        },
-        {
           "name": "___refresh",
           "file": "wire/core/Modules/method-___refresh.md",
           "hookable": true,
           "name_public": "refresh",
           "name_internal": "___refresh"
-        },
-        {
-          "name": "getRequiredBy",
-          "file": "wire/core/Modules/method-getrequiredby.md"
-        },
-        {
-          "name": "setSubstitute",
-          "file": "wire/core/Modules/method-setsubstitute.md"
-        },
-        {
-          "name": "getModuleFile",
-          "file": "wire/core/Modules/method-getmodulefile.md"
         },
         {
           "name": "getModuleFile",
@@ -9889,14 +9795,6 @@
         {
           "name": "__invoke",
           "file": "wire/core/Modules/method-__invoke.md"
-        },
-        {
-          "name": "__invoke",
-          "file": "wire/core/Modules/method-__invoke.md"
-        },
-        {
-          "name": "memcache",
-          "file": "wire/core/Modules/method-memcache.md"
         },
         {
           "name": "memcache",
@@ -10665,10 +10563,6 @@
           "file": "wire/core/Wire/method-classname.md"
         },
         {
-          "name": "className",
-          "file": "wire/core/Wire/method-classname.md"
-        },
-        {
           "name": "__toString",
           "file": "wire/core/Wire/method-__tostring.md"
         },
@@ -10797,10 +10691,6 @@
           "file": "wire/core/Wire/method-_.md"
         },
         {
-          "name": "_",
-          "file": "wire/core/Wire/method-_.md"
-        },
-        {
           "name": "_x",
           "file": "wire/core/Wire/method-_x.md"
         },
@@ -10822,10 +10712,6 @@
         }
       ],
       "constants": [
-        {
-          "name": "trackChangesOn",
-          "file": "wire/core/Wire/const-trackchangeson.md"
-        },
         {
           "name": "trackChangesOn",
           "file": "wire/core/Wire/const-trackchangeson.md"
@@ -12565,10 +12451,6 @@
         }
       ],
       "methods": [
-        {
-          "name": "__construct",
-          "file": "wire/core/PagesRequest/method-__construct.md"
-        },
         {
           "name": "__construct",
           "file": "wire/core/PagesRequest/method-__construct.md"
@@ -14917,13 +14799,6 @@
           "name_internal": "___saveReady"
         },
         {
-          "name": "___saveReady",
-          "file": "wire/core/WireSaveableItems/method-___saveready.md",
-          "hookable": true,
-          "name_public": "saveReady",
-          "name_internal": "___saveReady"
-        },
-        {
           "name": "___deleteReady",
           "file": "wire/core/WireSaveableItems/method-___deleteready.md",
           "hookable": true,
@@ -14978,10 +14853,6 @@
           "hookable": true,
           "name_public": "renamed",
           "name_internal": "___renamed"
-        },
-        {
-          "name": "__invoke",
-          "file": "wire/core/WireSaveableItems/method-__invoke.md"
         },
         {
           "name": "__invoke",
@@ -15197,10 +15068,6 @@
           "file": "wire/core/Pages/method-count.md"
         },
         {
-          "name": "count",
-          "file": "wire/core/Pages/method-count.md"
-        },
-        {
           "name": "___find",
           "file": "wire/core/Pages/method-___find.md",
           "hookable": true,
@@ -15313,13 +15180,6 @@
           "hookable": true,
           "name_public": "restore",
           "name_internal": "___restore"
-        },
-        {
-          "name": "___emptyTrash",
-          "file": "wire/core/Pages/method-___emptytrash.md",
-          "hookable": true,
-          "name_public": "emptyTrash",
-          "name_internal": "___emptyTrash"
         },
         {
           "name": "___emptyTrash",
@@ -15447,13 +15307,6 @@
         {
           "name": "pathFinder",
           "file": "wire/core/Pages/method-pathfinder.md"
-        },
-        {
-          "name": "___saveReady",
-          "file": "wire/core/Pages/method-___saveready.md",
-          "hookable": true,
-          "name_public": "saveReady",
-          "name_internal": "___saveReady"
         },
         {
           "name": "___saveReady",
