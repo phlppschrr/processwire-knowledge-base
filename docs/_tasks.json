@@ -46,8 +46,8 @@
         }
       ],
       "guides": [
-        "guides/cheatsheets/selectors.md",
-        "guides/docs/selectors.md"
+        "documentation/cheatsheets/selectors.md",
+        "documentation/selectors.md"
       ]
     },
     {
@@ -88,7 +88,7 @@
         }
       ],
       "guides": [
-        "guides/cheatsheets/selectors.md"
+        "documentation/cheatsheets/selectors.md"
       ]
     },
     {
@@ -136,7 +136,7 @@
         }
       ],
       "guides": [
-        "guides/docs/start/structure/pages.md"
+        "documentation/start/structure/pages.md"
       ]
     },
     {
@@ -177,7 +177,7 @@
         }
       ],
       "guides": [
-        "guides/docs/start/structure/pages.md"
+        "documentation/start/structure/pages.md"
       ]
     },
     {
@@ -216,8 +216,8 @@
         }
       ],
       "guides": [
-        "guides/docs/start/structure/templates.md",
-        "guides/docs/start/structure/fields.md"
+        "documentation/start/structure/templates.md",
+        "documentation/start/structure/fields.md"
       ]
     },
     {
@@ -246,8 +246,8 @@
         }
       ],
       "guides": [
-        "guides/cheatsheets/templates-output.md",
-        "guides/docs/front-end/output.md"
+        "documentation/cheatsheets/templates-output.md",
+        "documentation/front-end/output.md"
       ]
     },
     {
@@ -299,9 +299,9 @@
         }
       ],
       "guides": [
-        "guides/docs/user-access.md",
-        "guides/docs/user-access/roles.md",
-        "guides/docs/user-access/permissions.md"
+        "documentation/user-access.md",
+        "documentation/user-access/roles.md",
+        "documentation/user-access/permissions.md"
       ]
     },
     {
@@ -337,7 +337,7 @@
         }
       ],
       "guides": [
-        "guides/docs/modules/hooks.md"
+        "documentation/modules/hooks.md"
       ]
     },
     {
@@ -373,8 +373,8 @@
         }
       ],
       "guides": [
-        "guides/docs/modules.md",
-        "guides/docs/modules/intro.md"
+        "documentation/modules.md",
+        "documentation/modules/intro.md"
       ]
     },
     {
@@ -415,7 +415,7 @@
         }
       ],
       "guides": [
-        "guides/docs/fields/images.md"
+        "documentation/fields/images.md"
       ]
     },
     {
@@ -441,8 +441,8 @@
       ],
       "methods": [],
       "guides": [
-        "guides/cheatsheets/multi-language.md",
-        "guides/docs/multi-language-support.md"
+        "documentation/cheatsheets/multi-language.md",
+        "documentation/multi-language-support.md"
       ]
     },
     {
@@ -483,7 +483,7 @@
         }
       ],
       "guides": [
-        "guides/cheatsheets/security.md"
+        "documentation/cheatsheets/security.md"
       ]
     }
   ]

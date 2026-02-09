@@ -98,6 +98,16 @@ def build_tasks_map(
     full_hooks: HookIndex,
     out_path: Path,
 ) -> None:
+    def normalize_guide_path(path: str) -> str:
+        if not path:
+            return path
+        if path.startswith("guides/"):
+            remainder = path[len("guides/") :]
+            if remainder.startswith("docs/"):
+                remainder = remainder[len("docs/") :]
+            return f"documentation/{remainder}"
+        return path
+
     tasks_data = json.loads(tasks_path.read_text(encoding="utf-8"))
     tasks = tasks_data.get("tasks", [])
     out_items = []
@@ -111,7 +121,7 @@ def build_tasks_map(
             "keywords": task.get("keywords", []),
             "classes": [],
             "methods": [],
-            "guides": task.get("guides", []),
+            "guides": [normalize_guide_path(g) for g in task.get("guides", [])],
         }
 
         for cls in task.get("classes", []):
