@@ -22,6 +22,51 @@ $page = $process->installPage($name = '', $parent = null, $title = '', $template
 - Implementation: `___installPage`
 - Hook with: `$process->installPage()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Process::installPage', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+  $parent = $event->arguments(1);
+  $title = $event->arguments(2);
+  $template = $event->arguments(3);
+  $extras = $event->arguments(4);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $name);
+  $event->arguments(1, $parent);
+  $event->arguments(2, $title);
+  $event->arguments(3, $template);
+  $event->arguments(4, $extras);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Process::installPage', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+  $parent = $event->arguments(1);
+  $title = $event->arguments(2);
+  $template = $event->arguments(3);
+  $extras = $event->arguments(4);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$name` (optional) `string` Desired name of page, or omit (or blank) to use module name

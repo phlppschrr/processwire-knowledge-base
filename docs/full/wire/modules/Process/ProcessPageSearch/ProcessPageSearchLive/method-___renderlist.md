@@ -20,6 +20,45 @@ $string = $processPageSearchLive->renderList(array $items, $prefix = 'pw-search'
 - Implementation: `___renderList`
 - Hook with: `$processPageSearchLive->renderList()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessPageSearchLive::renderList', function(HookEvent $event) {
+  $processPageSearchLive = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+  $prefix = $event->arguments(1);
+  $class = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $items);
+  $event->arguments(1, $prefix);
+  $event->arguments(2, $class);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessPageSearchLive::renderList', function(HookEvent $event) {
+  $processPageSearchLive = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+  $prefix = $event->arguments(1);
+  $class = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$items` `array`

@@ -17,6 +17,30 @@ $string = $inputfieldTinyMCE->renderValue();
 - Implementation: `___renderValue`
 - Hook with: `$inputfieldTinyMCE->renderValue()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('InputfieldTinyMCE::renderValue', function(HookEvent $event) {
+  $inputfieldTinyMCE = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('InputfieldTinyMCE::renderValue', function(HookEvent $event) {
+  $inputfieldTinyMCE = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

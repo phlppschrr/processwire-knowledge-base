@@ -24,3 +24,27 @@ $result = $page->loaded();
 - Hookable method name: `loaded`
 - Implementation: `___loaded`
 - Hook with: `$page->loaded()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::loaded', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::loaded', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

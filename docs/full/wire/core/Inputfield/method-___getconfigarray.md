@@ -39,6 +39,30 @@ $array = $inputfield->getConfigArray();
 - Implementation: `___getConfigArray`
 - Hook with: `$inputfield->getConfigArray()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Inputfield::getConfigArray', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Inputfield::getConfigArray', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `array`

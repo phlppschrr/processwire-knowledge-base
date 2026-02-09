@@ -42,6 +42,48 @@ $page = $pages->add($template, $parent, $name = '', array $values = array());
 - Implementation: `___add`
 - Hook with: `$pages->add()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pages::add', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $template = $event->arguments(0);
+  $parent = $event->arguments(1);
+  $name = $event->arguments(2);
+  $values = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $template);
+  $event->arguments(1, $parent);
+  $event->arguments(2, $name);
+  $event->arguments(3, $values);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pages::add', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $template = $event->arguments(0);
+  $parent = $event->arguments(1);
+  $name = $event->arguments(2);
+  $values = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$template` `string|Template` Template name or Template object

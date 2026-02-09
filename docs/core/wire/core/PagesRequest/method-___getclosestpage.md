@@ -31,6 +31,30 @@ $page = $pagesRequest->getClosestPage();
 - Implementation: `___getClosestPage`
 - Hook with: `$pagesRequest->getClosestPage()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('PagesRequest::getClosestPage', function(HookEvent $event) {
+  $pagesRequest = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('PagesRequest::getClosestPage', function(HookEvent $event) {
+  $pagesRequest = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `Page|NullPage`

@@ -26,6 +26,30 @@ $result = $page->addReady();
 - Implementation: `___addReady`
 - Hook with: `$page->addReady()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::addReady', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::addReady', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Since
 
 3.0.253

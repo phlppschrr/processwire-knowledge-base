@@ -26,6 +26,42 @@ $bool = $fields->deleteFieldDataByTemplate(Field $field, Template $template);
 - Implementation: `___deleteFieldDataByTemplate`
 - Hook with: `$fields->deleteFieldDataByTemplate()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fields::deleteFieldDataByTemplate', function(HookEvent $event) {
+  $fields = $event->object;
+
+  // Get arguments
+  $field = $event->arguments(0);
+  $template = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $field);
+  $event->arguments(1, $template);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fields::deleteFieldDataByTemplate', function(HookEvent $event) {
+  $fields = $event->object;
+
+  // Get arguments
+  $field = $event->arguments(0);
+  $template = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$field` `Field`

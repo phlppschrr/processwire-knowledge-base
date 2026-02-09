@@ -20,6 +20,48 @@ $string = $languageTranslator->getTranslation($textdomain, $text, $context = '',
 - Implementation: `___getTranslation`
 - Hook with: `$languageTranslator->getTranslation()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('LanguageTranslator::getTranslation', function(HookEvent $event) {
+  $languageTranslator = $event->object;
+
+  // Get arguments
+  $textdomain = $event->arguments(0);
+  $text = $event->arguments(1);
+  $context = $event->arguments(2);
+  $options = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $textdomain);
+  $event->arguments(1, $text);
+  $event->arguments(2, $context);
+  $event->arguments(3, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('LanguageTranslator::getTranslation', function(HookEvent $event) {
+  $languageTranslator = $event->object;
+
+  // Get arguments
+  $textdomain = $event->arguments(0);
+  $text = $event->arguments(1);
+  $context = $event->arguments(2);
+  $options = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$textdomain` `string|object` Textdomain string, filename, or object.

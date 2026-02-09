@@ -17,6 +17,39 @@ $string = $wireMail->sanitizeHeaderName($name);
 - Implementation: `___sanitizeHeaderName`
 - Hook with: `$wireMail->sanitizeHeaderName()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireMail::sanitizeHeaderName', function(HookEvent $event) {
+  $wireMail = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $name);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireMail::sanitizeHeaderName', function(HookEvent $event) {
+  $wireMail = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$name` `string`

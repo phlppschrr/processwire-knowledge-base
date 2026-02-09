@@ -16,3 +16,27 @@ $result = $inputfieldPageTableAjax->checkAjax();
 - Hookable method name: `checkAjax`
 - Implementation: `___checkAjax`
 - Hook with: `$inputfieldPageTableAjax->checkAjax()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('InputfieldPageTableAjax::checkAjax', function(HookEvent $event) {
+  $inputfieldPageTableAjax = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('InputfieldPageTableAjax::checkAjax', function(HookEvent $event) {
+  $inputfieldPageTableAjax = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

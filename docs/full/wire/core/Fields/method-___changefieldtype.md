@@ -20,6 +20,42 @@ $bool = $fields->changeFieldtype(Field $field1, $keepSettings = false);
 - Implementation: `___changeFieldtype`
 - Hook with: `$fields->changeFieldtype()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fields::changeFieldtype', function(HookEvent $event) {
+  $fields = $event->object;
+
+  // Get arguments
+  $field1 = $event->arguments(0);
+  $keepSettings = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $field1);
+  $event->arguments(1, $keepSettings);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fields::changeFieldtype', function(HookEvent $event) {
+  $fields = $event->object;
+
+  // Get arguments
+  $field1 = $event->arguments(0);
+  $keepSettings = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$field1` `Field` Field with the new type already assigned

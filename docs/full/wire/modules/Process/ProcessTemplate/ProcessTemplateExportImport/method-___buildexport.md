@@ -17,6 +17,30 @@ $inputfieldForm = $processTemplateExportImport->buildExport();
 - Implementation: `___buildExport`
 - Hook with: `$processTemplateExportImport->buildExport()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessTemplateExportImport::buildExport', function(HookEvent $event) {
+  $processTemplateExportImport = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessTemplateExportImport::buildExport', function(HookEvent $event) {
+  $processTemplateExportImport = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `InputfieldForm`

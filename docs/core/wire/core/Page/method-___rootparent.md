@@ -31,6 +31,30 @@ $page = $page->rootParent();
 - Implementation: `___rootParent`
 - Hook with: `$page->rootParent()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::rootParent', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::rootParent', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `Page`

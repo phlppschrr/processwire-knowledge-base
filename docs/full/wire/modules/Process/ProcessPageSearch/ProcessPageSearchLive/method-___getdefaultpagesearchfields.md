@@ -28,6 +28,30 @@ $array = $processPageSearchLive->getDefaultPageSearchFields();
 - Implementation: `___getDefaultPageSearchFields`
 - Hook with: `$processPageSearchLive->getDefaultPageSearchFields()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessPageSearchLive::getDefaultPageSearchFields', function(HookEvent $event) {
+  $processPageSearchLive = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessPageSearchLive::getDefaultPageSearchFields', function(HookEvent $event) {
+  $processPageSearchLive = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `array`

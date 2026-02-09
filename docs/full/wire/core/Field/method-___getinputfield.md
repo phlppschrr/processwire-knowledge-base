@@ -20,6 +20,42 @@ $inputfield = $field->getInputfield(Page $page, $contextStr = '');
 - Implementation: `___getInputfield`
 - Hook with: `$field->getInputfield()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Field::getInputfield', function(HookEvent $event) {
+  $field = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $contextStr = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $contextStr);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Field::getInputfield', function(HookEvent $event) {
+  $field = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $contextStr = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that the Inputfield is for.

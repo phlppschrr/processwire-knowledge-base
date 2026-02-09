@@ -17,6 +17,39 @@ $string = $fileCompiler->compile($sourceFile);
 - Implementation: `___compile`
 - Hook with: `$fileCompiler->compile()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('FileCompiler::compile', function(HookEvent $event) {
+  $fileCompiler = $event->object;
+
+  // Get arguments
+  $sourceFile = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $sourceFile);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('FileCompiler::compile', function(HookEvent $event) {
+  $fileCompiler = $event->object;
+
+  // Get arguments
+  $sourceFile = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$sourceFile` `string` Source file to compile (relative to sourcePath given in constructor)

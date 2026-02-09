@@ -16,3 +16,27 @@ $result = $processFieldExportImport->processImport();
 - Hookable method name: `processImport`
 - Implementation: `___processImport`
 - Hook with: `$processFieldExportImport->processImport()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessFieldExportImport::processImport', function(HookEvent $event) {
+  $processFieldExportImport = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessFieldExportImport::processImport', function(HookEvent $event) {
+  $processFieldExportImport = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

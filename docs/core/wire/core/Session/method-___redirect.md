@@ -29,6 +29,42 @@ $result = $session->redirect($url, $status = 301);
 - Implementation: `___redirect`
 - Hook with: `$session->redirect()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Session::redirect', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Get arguments
+  $url = $event->arguments(0);
+  $status = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $url);
+  $event->arguments(1, $status);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Session::redirect', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Get arguments
+  $url = $event->arguments(0);
+  $status = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$url` `string` URL to redirect to

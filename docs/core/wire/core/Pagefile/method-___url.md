@@ -17,6 +17,30 @@ $string = $pagefile->url();
 - Implementation: `___url`
 - Hook with: `$pagefile->url()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pagefile::url', function(HookEvent $event) {
+  $pagefile = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pagefile::url', function(HookEvent $event) {
+  $pagefile = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

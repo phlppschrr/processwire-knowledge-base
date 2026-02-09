@@ -27,6 +27,39 @@ $result = $pagesAccess->updatePage(Page $page);
 - Implementation: `___updatePage`
 - Hook with: `$pagesAccess->updatePage()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('PagesAccess::updatePage', function(HookEvent $event) {
+  $pagesAccess = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('PagesAccess::updatePage', function(HookEvent $event) {
+  $pagesAccess = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`

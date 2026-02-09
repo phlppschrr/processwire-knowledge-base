@@ -96,6 +96,45 @@ $result = $page->if($key, $yes = '', $no = '');
 - Implementation: `___if`
 - Hook with: `$page->if()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::if', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $key = $event->arguments(0);
+  $yes = $event->arguments(1);
+  $no = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $key);
+  $event->arguments(1, $yes);
+  $event->arguments(2, $no);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::if', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $key = $event->arguments(0);
+  $yes = $event->arguments(1);
+  $no = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$key` `string|bool|int` Name of field to check, selector string to evaluate, or boolean/int to evalute

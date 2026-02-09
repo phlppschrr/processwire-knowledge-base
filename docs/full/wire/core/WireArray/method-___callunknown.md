@@ -46,6 +46,42 @@ $wireArray->callUnknown($method, $arguments);
 - Implementation: `___callUnknown`
 - Hook with: `$wireArray->callUnknown()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireArray::callUnknown', function(HookEvent $event) {
+  $wireArray = $event->object;
+
+  // Get arguments
+  $method = $event->arguments(0);
+  $arguments = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $method);
+  $event->arguments(1, $arguments);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireArray::callUnknown', function(HookEvent $event) {
+  $wireArray = $event->object;
+
+  // Get arguments
+  $method = $event->arguments(0);
+  $arguments = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$method` `string` Requested method name

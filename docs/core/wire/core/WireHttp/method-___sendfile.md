@@ -25,6 +25,45 @@ $int = $wireHttp->sendFile($filename, array $options = array(), array $headers =
 - Implementation: `___sendFile`
 - Hook with: `$wireHttp->sendFile()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireHttp::sendFile', function(HookEvent $event) {
+  $wireHttp = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+  $options = $event->arguments(1);
+  $headers = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $filename);
+  $event->arguments(1, $options);
+  $event->arguments(2, $headers);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireHttp::sendFile', function(HookEvent $event) {
+  $wireHttp = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+  $options = $event->arguments(1);
+  $headers = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$filename` `string|bool` Filename to send (or boolean false if sending $options[data] rather than file)

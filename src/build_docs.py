@@ -879,6 +879,50 @@ def parse_signature_optional_map(signature: str | None) -> dict[str, bool]:
     return optional_map
 
 
+def extract_signature_param_names(signature: str | None) -> list[str]:
+    if not signature:
+        return []
+    names: list[str] = []
+    for part in split_signature_params(signature):
+        match = re.search(r"\$[A-Za-z_][A-Za-z0-9_]*", part)
+        if match:
+            names.append(match.group(0))
+    return names
+
+
+def build_hook_example(class_name: str, member: MemberDoc, after: bool) -> list[str]:
+    display_name, _ = hookable_display_name(member.name)
+    hook_target = f"{class_name}::{display_name}"
+    instance_var = f"${camel_lower(class_name)}"
+    param_names = extract_signature_param_names(member.signature_params or "")
+    hook_label = "After" if after else "Before"
+    lines: list[str] = [
+        "~~~~~",
+        f"$this->addHook{hook_label}('{hook_target}', function(HookEvent $event) {{",
+        f"  {instance_var} = $event->object;",
+        "",
+    ]
+    if param_names:
+        lines.append("  // Get arguments")
+        for idx, name in enumerate(param_names):
+            lines.append(f"  {name} = $event->arguments({idx});")
+        lines.append("")
+    lines.append("  // Your code here")
+    if after:
+        lines.append("")
+        lines.append("  // Optionally modify return value")
+        lines.append("  $return = $event->return;")
+        lines.append("  $event->return = $return;")
+    elif param_names:
+        lines.append("")
+        lines.append("  // Optionally change arguments")
+        for idx, name in enumerate(param_names):
+            lines.append(f"  $event->arguments({idx}, {name});")
+    lines.append("});")
+    lines.append("~~~~~")
+    return lines
+
+
 def parse_order_groups(line: str) -> list[str]:
     stripped = line.strip()
     if not stripped.startswith("#pw-order-groups"):
@@ -1633,6 +1677,14 @@ def render_member_doc(
         else:
             instance = f"${camel_lower(class_name)}"
             lines.append(f"- Hook with: `{instance}->{display_name}()`")
+        lines.append("")
+        lines.append("## Hooking Before")
+        lines.append("")
+        lines.extend(build_hook_example(class_name, member, after=False))
+        lines.append("")
+        lines.append("## Hooking After")
+        lines.append("")
+        lines.extend(build_hook_example(class_name, member, after=True))
 
     if params:
         lines.append("")

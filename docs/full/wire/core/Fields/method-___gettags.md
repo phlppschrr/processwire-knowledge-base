@@ -26,6 +26,39 @@ $array = $fields->getTags($getFieldNames = false);
 - Implementation: `___getTags`
 - Hook with: `$fields->getTags()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fields::getTags', function(HookEvent $event) {
+  $fields = $event->object;
+
+  // Get arguments
+  $getFieldNames = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $getFieldNames);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fields::getTags', function(HookEvent $event) {
+  $fields = $event->object;
+
+  // Get arguments
+  $getFieldNames = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$getFieldNames` (optional) `bool|string` Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.

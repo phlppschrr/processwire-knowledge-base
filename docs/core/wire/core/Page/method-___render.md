@@ -56,6 +56,42 @@ $string = $page->render($options = [], $options2 = null);
 - Implementation: `___render`
 - Hook with: `$page->render()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::render', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $options = $event->arguments(0);
+  $options2 = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $options);
+  $event->arguments(1, $options2);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::render', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $options = $event->arguments(0);
+  $options2 = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array|string` String of filename to use for render, field name to render, or array of options: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. But absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/ (default=$config->prependTemplateFile) - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `pageStack` (array): An array of pages, when recursively rendering. Used internally. You can examine it but not change it. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page, regardless of whether it’s expired or not. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.

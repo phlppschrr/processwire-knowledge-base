@@ -17,6 +17,30 @@ $string = $processController->execute();
 - Implementation: `___execute`
 - Hook with: `$processController->execute()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessController::execute', function(HookEvent $event) {
+  $processController = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessController::execute', function(HookEvent $event) {
+  $processController = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

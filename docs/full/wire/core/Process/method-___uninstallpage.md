@@ -21,6 +21,30 @@ $int = $process->uninstallPage();
 - Implementation: `___uninstallPage`
 - Hook with: `$process->uninstallPage()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Process::uninstallPage', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Process::uninstallPage', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `int` Number of pages trashed

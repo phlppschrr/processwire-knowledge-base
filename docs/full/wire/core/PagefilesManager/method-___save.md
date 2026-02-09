@@ -21,3 +21,27 @@ $result = $pagefilesManager->save();
 - Hookable method name: `save`
 - Implementation: `___save`
 - Hook with: `$pagefilesManager->save()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('PagefilesManager::save', function(HookEvent $event) {
+  $pagefilesManager = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('PagefilesManager::save', function(HookEvent $event) {
+  $pagefilesManager = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

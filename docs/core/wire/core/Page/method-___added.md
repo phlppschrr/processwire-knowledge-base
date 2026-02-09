@@ -26,6 +26,30 @@ $result = $page->added();
 - Implementation: `___added`
 - Hook with: `$page->added()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::added', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::added', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Since
 
 3.0.253

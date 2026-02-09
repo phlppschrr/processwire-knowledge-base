@@ -29,6 +29,39 @@ $bool = $pagesType->save(Page $page);
 - Implementation: `___save`
 - Hook with: `$pagesType->save()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('PagesType::save', function(HookEvent $event) {
+  $pagesType = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('PagesType::save', function(HookEvent $event) {
+  $pagesType = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`

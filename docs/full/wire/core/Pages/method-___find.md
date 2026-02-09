@@ -36,6 +36,42 @@ $items = $pages->find($selector, $options = array());
 - Implementation: `___find`
 - Hook with: `$pages->find()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pages::find', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $selector = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $selector);
+  $event->arguments(1, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pages::find', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $selector = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$selector` `string|int|array|Selectors` Specify selector (standard usage), but can also accept page ID or array of page IDs.

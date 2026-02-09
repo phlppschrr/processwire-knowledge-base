@@ -30,6 +30,39 @@ $int = $pages->emptyTrash(array $options = array());
 - Implementation: `___emptyTrash`
 - Hook with: `$pages->emptyTrash()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pages::emptyTrash', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $options = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pages::emptyTrash', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $options = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$options` (optional) `array` See PagesTrash::emptyTrash() for advanced options

@@ -17,6 +17,39 @@ $permission = $permissions->add($name);
 - Implementation: `___add`
 - Hook with: `$permissions->add()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Permissions::add', function(HookEvent $event) {
+  $permissions = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $name);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Permissions::add', function(HookEvent $event) {
+  $permissions = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$name` `string` Name of permission you want to add, i.e. "hello-world"

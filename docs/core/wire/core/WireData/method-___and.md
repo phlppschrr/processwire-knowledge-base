@@ -30,6 +30,39 @@ $items = $wireData->and($items = null);
 - Implementation: `___and`
 - Hook with: `$wireData->and()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireData::and', function(HookEvent $event) {
+  $wireData = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $items);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireData::and', function(HookEvent $event) {
+  $wireData = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$items` (optional) `WireArray|WireData|string|null` May be any of the following: - `WireData` object (or derivative) - `WireArray` object (or derivative) - Name of any property from this object that returns one of the above. - Omit argument to simply return this object in a WireArray

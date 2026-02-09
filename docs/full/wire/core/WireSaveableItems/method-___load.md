@@ -22,6 +22,42 @@ $items = $wireSaveableItems->load(WireArray $items, $selectors = null);
 - Implementation: `___load`
 - Hook with: `$wireSaveableItems->load()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireSaveableItems::load', function(HookEvent $event) {
+  $wireSaveableItems = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+  $selectors = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $items);
+  $event->arguments(1, $selectors);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireSaveableItems::load', function(HookEvent $event) {
+  $wireSaveableItems = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+  $selectors = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$items` `WireArray`

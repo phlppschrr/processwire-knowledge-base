@@ -17,6 +17,30 @@ $array = $adminThemeFramework->getPrimaryNavArray();
 - Implementation: `___getPrimaryNavArray`
 - Hook with: `$adminThemeFramework->getPrimaryNavArray()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('AdminThemeFramework::getPrimaryNavArray', function(HookEvent $event) {
+  $adminThemeFramework = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('AdminThemeFramework::getPrimaryNavArray', function(HookEvent $event) {
+  $adminThemeFramework = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `array`

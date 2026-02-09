@@ -19,6 +19,39 @@ $bool = $session->allowLoginAttempt($name);
 - Implementation: `___allowLoginAttempt`
 - Hook with: `$session->allowLoginAttempt()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Session::allowLoginAttempt', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $name);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Session::allowLoginAttempt', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$name` `string`

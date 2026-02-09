@@ -19,6 +19,30 @@ $bool = $pagefileExtra->create();
 - Implementation: `___create`
 - Hook with: `$pagefileExtra->create()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('PagefileExtra::create', function(HookEvent $event) {
+  $pagefileExtra = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('PagefileExtra::create', function(HookEvent $event) {
+  $pagefileExtra = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `bool` Returns true on success, false on fail

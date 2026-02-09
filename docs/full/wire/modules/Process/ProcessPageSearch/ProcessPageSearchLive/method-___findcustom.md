@@ -34,6 +34,39 @@ $bool = $processPageSearchLive->findCustom(array $data);
 - Implementation: `___findCustom`
 - Hook with: `$processPageSearchLive->findCustom()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
+  $processPageSearchLive = $event->object;
+
+  // Get arguments
+  $data = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $data);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
+  $processPageSearchLive = $event->object;
+
+  // Get arguments
+  $data = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$data` `array` Data about the search including 'type', 'operator', 'q' (query) and more.

@@ -19,6 +19,30 @@ $int = $wireMail->send();
 - Implementation: `___send`
 - Hook with: `$wireMail->send()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireMail::send', function(HookEvent $event) {
+  $wireMail = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireMail::send', function(HookEvent $event) {
+  $wireMail = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `int` Returns a positive number (indicating number of addresses emailed) or 0 on failure.

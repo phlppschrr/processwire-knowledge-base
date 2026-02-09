@@ -27,6 +27,42 @@ $result = $page->renamed($oldName, $newName);
 - Implementation: `___renamed`
 - Hook with: `$page->renamed()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::renamed', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $oldName = $event->arguments(0);
+  $newName = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $oldName);
+  $event->arguments(1, $newName);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::renamed', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $oldName = $event->arguments(0);
+  $newName = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$oldName` `string` The old name

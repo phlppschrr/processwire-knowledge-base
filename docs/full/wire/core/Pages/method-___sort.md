@@ -47,6 +47,42 @@ $int = $pages->sort(Page $page, $value = false);
 - Implementation: `___sort`
 - Hook with: `$pages->sort()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pages::sort', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $value = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $value);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pages::sort', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $value = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page to sort (or parent of pages to sort, if using $value=true option)

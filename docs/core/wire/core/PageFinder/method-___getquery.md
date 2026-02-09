@@ -20,6 +20,42 @@ $databaseQuerySelect = $pageFinder->getQuery($selectors, array $options);
 - Implementation: `___getQuery`
 - Hook with: `$pageFinder->getQuery()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('PageFinder::getQuery', function(HookEvent $event) {
+  $pageFinder = $event->object;
+
+  // Get arguments
+  $selectors = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $selectors);
+  $event->arguments(1, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('PageFinder::getQuery', function(HookEvent $event) {
+  $pageFinder = $event->object;
+
+  // Get arguments
+  $selectors = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$selectors` `Selectors` Array of selectors.

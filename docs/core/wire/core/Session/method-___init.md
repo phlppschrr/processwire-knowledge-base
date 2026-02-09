@@ -19,3 +19,27 @@ $result = $session->init();
 - Hookable method name: `init`
 - Implementation: `___init`
 - Hook with: `$session->init()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Session::init', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Session::init', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

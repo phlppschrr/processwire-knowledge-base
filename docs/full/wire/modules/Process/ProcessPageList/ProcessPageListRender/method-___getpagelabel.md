@@ -20,6 +20,42 @@ $string = $processPageListRender->getPageLabel(Page $page, array $options = arra
 - Implementation: `___getPageLabel`
 - Hook with: `$processPageListRender->getPageLabel()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessPageListRender::getPageLabel', function(HookEvent $event) {
+  $processPageListRender = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessPageListRender::getPageLabel', function(HookEvent $event) {
+  $processPageListRender = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`

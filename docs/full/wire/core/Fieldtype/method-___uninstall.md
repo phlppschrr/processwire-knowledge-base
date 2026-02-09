@@ -22,6 +22,30 @@ $result = $fieldtype->uninstall();
 - Implementation: `___uninstall`
 - Hook with: `$fieldtype->uninstall()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fieldtype::uninstall', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fieldtype::uninstall', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Exceptions
 
 - `WireException` Should throw an Exception if uninstall can't be completed.

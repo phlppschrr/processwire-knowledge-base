@@ -36,6 +36,45 @@ $bool = $pages->touch($pages, $options = null, $type = 'modified');
 - Implementation: `___touch`
 - Hook with: `$pages->touch()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pages::touch', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $pages = $event->arguments(0);
+  $options = $event->arguments(1);
+  $type = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $pages);
+  $event->arguments(1, $options);
+  $event->arguments(2, $type);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pages::touch', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $pages = $event->arguments(0);
+  $options = $event->arguments(1);
+  $type = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$pages` `Page|PageArray|array` May be Page, PageArray or array of page IDs (integers)

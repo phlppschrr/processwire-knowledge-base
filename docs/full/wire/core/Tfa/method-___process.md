@@ -20,6 +20,30 @@ $user = $tfa->process();
 - Implementation: `___process`
 - Hook with: `$tfa->process()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Tfa::process', function(HookEvent $event) {
+  $tfa = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Tfa::process', function(HookEvent $event) {
+  $tfa = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `User|bool` Returns logged-in user object on successful code completion, or false on fail

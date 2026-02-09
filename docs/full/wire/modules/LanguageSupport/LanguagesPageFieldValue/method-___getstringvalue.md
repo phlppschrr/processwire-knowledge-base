@@ -17,6 +17,30 @@ $string = $languagesPageFieldValue->getStringValue();
 - Implementation: `___getStringValue`
 - Hook with: `$languagesPageFieldValue->getStringValue()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('LanguagesPageFieldValue::getStringValue', function(HookEvent $event) {
+  $languagesPageFieldValue = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('LanguagesPageFieldValue::getStringValue', function(HookEvent $event) {
+  $languagesPageFieldValue = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

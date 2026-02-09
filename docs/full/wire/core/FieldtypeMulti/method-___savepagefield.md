@@ -23,6 +23,42 @@ $bool = $fieldtypeMulti->savePageField(Page $page, Field $field);
 - Implementation: `___savePageField`
 - Hook with: `$fieldtypeMulti->savePageField()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('FieldtypeMulti::savePageField', function(HookEvent $event) {
+  $fieldtypeMulti = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $field);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('FieldtypeMulti::savePageField', function(HookEvent $event) {
+  $fieldtypeMulti = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`

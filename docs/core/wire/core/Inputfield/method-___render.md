@@ -19,6 +19,30 @@ $string = $inputfield->render();
 - Implementation: `___render`
 - Hook with: `$inputfield->render()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Inputfield::render', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Inputfield::render', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

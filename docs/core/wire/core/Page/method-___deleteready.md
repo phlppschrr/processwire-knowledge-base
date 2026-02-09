@@ -26,6 +26,30 @@ $result = $page->deleteReady();
 - Implementation: `___deleteReady`
 - Hook with: `$page->deleteReady()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::deleteReady', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::deleteReady', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Since
 
 3.0.253

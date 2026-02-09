@@ -32,6 +32,42 @@ $array = $fieldtypeMulti->loadPageField(Page $page, Field $field);
 - Implementation: `___loadPageField`
 - Hook with: `$fieldtypeMulti->loadPageField()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('FieldtypeMulti::loadPageField', function(HookEvent $event) {
+  $fieldtypeMulti = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $field);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('FieldtypeMulti::loadPageField', function(HookEvent $event) {
+  $fieldtypeMulti = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page object to save.

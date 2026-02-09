@@ -20,6 +20,48 @@ $int = $commentNotifications->sendNotificationEmail(Comment $comment, $email, $s
 - Implementation: `___sendNotificationEmail`
 - Hook with: `$commentNotifications->sendNotificationEmail()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('CommentNotifications::sendNotificationEmail', function(HookEvent $event) {
+  $commentNotifications = $event->object;
+
+  // Get arguments
+  $comment = $event->arguments(0);
+  $email = $event->arguments(1);
+  $subcode = $event->arguments(2);
+  $options = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $comment);
+  $event->arguments(1, $email);
+  $event->arguments(2, $subcode);
+  $event->arguments(3, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('CommentNotifications::sendNotificationEmail', function(HookEvent $event) {
+  $commentNotifications = $event->object;
+
+  // Get arguments
+  $comment = $event->arguments(0);
+  $email = $event->arguments(1);
+  $subcode = $event->arguments(2);
+  $options = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$comment` `Comment`

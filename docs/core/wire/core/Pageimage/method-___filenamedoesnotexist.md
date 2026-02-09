@@ -21,6 +21,39 @@ $bool = $pageimage->filenameDoesNotExist($filename);
 - Implementation: `___filenameDoesNotExist`
 - Hook with: `$pageimage->filenameDoesNotExist()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pageimage::filenameDoesNotExist', function(HookEvent $event) {
+  $pageimage = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $filename);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pageimage::filenameDoesNotExist', function(HookEvent $event) {
+  $pageimage = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`

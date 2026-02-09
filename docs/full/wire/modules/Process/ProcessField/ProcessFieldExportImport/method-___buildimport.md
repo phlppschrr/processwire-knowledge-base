@@ -17,6 +17,30 @@ $inputfieldForm = $processFieldExportImport->buildImport();
 - Implementation: `___buildImport`
 - Hook with: `$processFieldExportImport->buildImport()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessFieldExportImport::buildImport', function(HookEvent $event) {
+  $processFieldExportImport = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessFieldExportImport::buildImport', function(HookEvent $event) {
+  $processFieldExportImport = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `InputfieldForm`

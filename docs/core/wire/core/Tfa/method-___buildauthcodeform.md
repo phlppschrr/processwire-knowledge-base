@@ -21,6 +21,30 @@ $inputfieldForm = $tfa->buildAuthCodeForm();
 - Implementation: `___buildAuthCodeForm`
 - Hook with: `$tfa->buildAuthCodeForm()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Tfa::buildAuthCodeForm', function(HookEvent $event) {
+  $tfa = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Tfa::buildAuthCodeForm', function(HookEvent $event) {
+  $tfa = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `InputfieldForm`

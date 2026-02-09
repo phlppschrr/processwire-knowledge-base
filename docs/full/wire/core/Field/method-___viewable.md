@@ -26,6 +26,42 @@ $bool = $field->viewable(?Page $page = null, ?User $user = null);
 - Implementation: `___viewable`
 - Hook with: `$field->viewable()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Field::viewable', function(HookEvent $event) {
+  $field = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $user = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $user);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Field::viewable', function(HookEvent $event) {
+  $field = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $user = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` (optional) `Page|null` Optionally specify a Page for context (i.e. Is field viewable on $page?)

@@ -17,6 +17,30 @@ $string = $inputfieldWrapper->render();
 - Implementation: `___render`
 - Hook with: `$inputfieldWrapper->render()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('InputfieldWrapper::render', function(HookEvent $event) {
+  $inputfieldWrapper = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('InputfieldWrapper::render', function(HookEvent $event) {
+  $inputfieldWrapper = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

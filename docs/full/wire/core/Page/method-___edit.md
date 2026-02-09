@@ -42,6 +42,45 @@ $string = $page->edit($key = null, $markup = null, $modal = null);
 - Implementation: `___edit`
 - Hook with: `$page->edit()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::edit', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $key = $event->arguments(0);
+  $markup = $event->arguments(1);
+  $modal = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $key);
+  $event->arguments(1, $markup);
+  $event->arguments(2, $modal);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::edit', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $key = $event->arguments(0);
+  $markup = $event->arguments(1);
+  $modal = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$key` (optional) `string|bool|null` Name of field, omit to get editor active status, or boolean true to enable editor.

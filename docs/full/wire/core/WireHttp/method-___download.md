@@ -23,6 +23,45 @@ $string = $wireHttp->download($fromURL, $toFile, array $options = array());
 - Implementation: `___download`
 - Hook with: `$wireHttp->download()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireHttp::download', function(HookEvent $event) {
+  $wireHttp = $event->object;
+
+  // Get arguments
+  $fromURL = $event->arguments(0);
+  $toFile = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $fromURL);
+  $event->arguments(1, $toFile);
+  $event->arguments(2, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireHttp::download', function(HookEvent $event) {
+  $wireHttp = $event->object;
+
+  // Get arguments
+  $fromURL = $event->arguments(0);
+  $toFile = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$fromURL` `string` URL of file you want to download.

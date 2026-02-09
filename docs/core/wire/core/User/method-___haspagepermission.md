@@ -24,6 +24,42 @@ $bool = $user->hasPagePermission($name, ?Page $page = null);
 - Implementation: `___hasPagePermission`
 - Hook with: `$user->hasPagePermission()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('User::hasPagePermission', function(HookEvent $event) {
+  $user = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+  $page = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $name);
+  $event->arguments(1, $page);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('User::hasPagePermission', function(HookEvent $event) {
+  $user = $event->object;
+
+  // Get arguments
+  $name = $event->arguments(0);
+  $page = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - string|Permission

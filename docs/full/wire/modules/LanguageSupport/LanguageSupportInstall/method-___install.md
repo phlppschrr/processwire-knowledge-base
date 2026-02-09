@@ -16,3 +16,27 @@ $result = $languageSupportInstall->install();
 - Hookable method name: `install`
 - Implementation: `___install`
 - Hook with: `$languageSupportInstall->install()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('LanguageSupportInstall::install', function(HookEvent $event) {
+  $languageSupportInstall = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('LanguageSupportInstall::install', function(HookEvent $event) {
+  $languageSupportInstall = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

@@ -20,3 +20,27 @@ $result = $process->uninstall();
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
 - Hook with: `$process->uninstall()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Process::uninstall', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Process::uninstall', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

@@ -20,6 +20,42 @@ $bool = $templateFile->fileFailed($filename, \Exception $e);
 - Implementation: `___fileFailed`
 - Hook with: `$templateFile->fileFailed()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('TemplateFile::fileFailed', function(HookEvent $event) {
+  $templateFile = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+  $e = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $filename);
+  $event->arguments(1, $e);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('TemplateFile::fileFailed', function(HookEvent $event) {
+  $templateFile = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+  $e = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$filename` `string`

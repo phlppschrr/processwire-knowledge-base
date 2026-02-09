@@ -16,3 +16,27 @@ $result = $processWire->init();
 - Hookable method name: `init`
 - Implementation: `___init`
 - Hook with: `$processWire->init()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessWire::init', function(HookEvent $event) {
+  $processWire = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessWire::init', function(HookEvent $event) {
+  $processWire = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

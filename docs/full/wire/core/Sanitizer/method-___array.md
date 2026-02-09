@@ -23,6 +23,45 @@ $array = $sanitizer->array($value, $sanitizer = null, array $options = array());
 - Implementation: `___array`
 - Hook with: `$sanitizer->array()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Sanitizer::array', function(HookEvent $event) {
+  $sanitizer = $event->object;
+
+  // Get arguments
+  $value = $event->arguments(0);
+  $sanitizer = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $value);
+  $event->arguments(1, $sanitizer);
+  $event->arguments(2, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Sanitizer::array', function(HookEvent $event) {
+  $sanitizer = $event->object;
+
+  // Get arguments
+  $value = $event->arguments(0);
+  $sanitizer = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first item in array.

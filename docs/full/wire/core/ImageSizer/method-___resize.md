@@ -20,6 +20,42 @@ $bool = $imageSizer->resize($targetWidth, $targetHeight = 0);
 - Implementation: `___resize`
 - Hook with: `$imageSizer->resize()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ImageSizer::resize', function(HookEvent $event) {
+  $imageSizer = $event->object;
+
+  // Get arguments
+  $targetWidth = $event->arguments(0);
+  $targetHeight = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $targetWidth);
+  $event->arguments(1, $targetHeight);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ImageSizer::resize', function(HookEvent $event) {
+  $imageSizer = $event->object;
+
+  // Get arguments
+  $targetWidth = $event->arguments(0);
+  $targetHeight = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$targetWidth` `int` Target width in pixels, or 0 for proportional to height

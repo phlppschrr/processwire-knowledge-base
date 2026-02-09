@@ -20,6 +20,39 @@ $array = $templates->getTags($getTemplateNames = false);
 - Implementation: `___getTags`
 - Hook with: `$templates->getTags()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Templates::getTags', function(HookEvent $event) {
+  $templates = $event->object;
+
+  // Get arguments
+  $getTemplateNames = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $getTemplateNames);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Templates::getTags', function(HookEvent $event) {
+  $templates = $event->object;
+
+  // Get arguments
+  $getTemplateNames = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$getTemplateNames` (optional) `bool` Get arrays of template names for each tag? (default=false)

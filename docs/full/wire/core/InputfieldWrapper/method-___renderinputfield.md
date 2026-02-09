@@ -24,6 +24,42 @@ $string = $inputfieldWrapper->renderInputfield(Inputfield $inputfield, $renderVa
 - Implementation: `___renderInputfield`
 - Hook with: `$inputfieldWrapper->renderInputfield()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('InputfieldWrapper::renderInputfield', function(HookEvent $event) {
+  $inputfieldWrapper = $event->object;
+
+  // Get arguments
+  $inputfield = $event->arguments(0);
+  $renderValueMode = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $inputfield);
+  $event->arguments(1, $renderValueMode);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('InputfieldWrapper::renderInputfield', function(HookEvent $event) {
+  $inputfieldWrapper = $event->object;
+
+  // Get arguments
+  $inputfield = $event->arguments(0);
+  $renderValueMode = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$inputfield` `Inputfield` The Inputfield to render.

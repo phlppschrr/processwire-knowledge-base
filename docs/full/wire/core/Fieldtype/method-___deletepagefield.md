@@ -22,6 +22,42 @@ $bool = $fieldtype->deletePageField(Page $page, Field $field);
 - Implementation: `___deletePageField`
 - Hook with: `$fieldtype->deletePageField()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fieldtype::deletePageField', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $field);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fieldtype::deletePageField', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`

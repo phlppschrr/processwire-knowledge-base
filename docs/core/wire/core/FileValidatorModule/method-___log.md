@@ -23,6 +23,42 @@ $wireLog = $fileValidatorModule->log($str = '', array $options = array());
 - Implementation: `___log`
 - Hook with: `$fileValidatorModule->log()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('FileValidatorModule::log', function(HookEvent $event) {
+  $fileValidatorModule = $event->object;
+
+  // Get arguments
+  $str = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $str);
+  $event->arguments(1, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('FileValidatorModule::log', function(HookEvent $event) {
+  $fileValidatorModule = $event->object;
+
+  // Get arguments
+  $str = $event->arguments(0);
+  $options = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$str` (optional) `string` Text to log, or omit to just return the name of the log

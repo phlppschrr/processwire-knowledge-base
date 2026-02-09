@@ -22,6 +22,39 @@ $result = $modules->refresh($showMessages = false);
 - Implementation: `___refresh`
 - Hook with: `$modules->refresh()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Modules::refresh', function(HookEvent $event) {
+  $modules = $event->object;
+
+  // Get arguments
+  $showMessages = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $showMessages);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Modules::refresh', function(HookEvent $event) {
+  $modules = $event->object;
+
+  // Get arguments
+  $showMessages = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$showMessages` (optional) `bool` Show notification messages about what was found? (default=false) 3.0.172+

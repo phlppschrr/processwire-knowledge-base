@@ -16,3 +16,27 @@ $result = $fileCompilerModule->install();
 - Hookable method name: `install`
 - Implementation: `___install`
 - Hook with: `$fileCompilerModule->install()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('FileCompilerModule::install', function(HookEvent $event) {
+  $fileCompilerModule = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('FileCompilerModule::install', function(HookEvent $event) {
+  $fileCompilerModule = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

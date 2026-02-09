@@ -19,6 +19,39 @@ $page->getUnknown($key);
 - Implementation: `___getUnknown`
 - Hook with: `$page->getUnknown()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Page::getUnknown', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $key = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $key);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Page::getUnknown', function(HookEvent $event) {
+  $page = $event->object;
+
+  // Get arguments
+  $key = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$key` `string` Name of property.

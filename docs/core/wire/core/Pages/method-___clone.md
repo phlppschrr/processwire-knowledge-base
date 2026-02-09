@@ -42,6 +42,48 @@ $page = $pages->clone(Page $page, ?Page $parent = null, $recursive = true, $opti
 - Implementation: `___clone`
 - Hook with: `$pages->clone()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pages::clone', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $parent = $event->arguments(1);
+  $recursive = $event->arguments(2);
+  $options = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $parent);
+  $event->arguments(2, $recursive);
+  $event->arguments(3, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pages::clone', function(HookEvent $event) {
+  $pages = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $parent = $event->arguments(1);
+  $recursive = $event->arguments(2);
+  $options = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that you want to clone

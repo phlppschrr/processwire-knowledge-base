@@ -18,3 +18,27 @@ $result = $adminTheme->install();
 - Hookable method name: `install`
 - Implementation: `___install`
 - Hook with: `$adminTheme->install()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('AdminTheme::install', function(HookEvent $event) {
+  $adminTheme = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('AdminTheme::install', function(HookEvent $event) {
+  $adminTheme = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

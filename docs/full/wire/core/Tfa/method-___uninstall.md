@@ -18,3 +18,27 @@ $result = $tfa->uninstall();
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
 - Hook with: `$tfa->uninstall()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Tfa::uninstall', function(HookEvent $event) {
+  $tfa = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Tfa::uninstall', function(HookEvent $event) {
+  $tfa = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

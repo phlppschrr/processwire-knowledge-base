@@ -31,6 +31,39 @@ $result = $session->logout($startNew = true);
 - Implementation: `___logout`
 - Hook with: `$session->logout()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Session::logout', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Get arguments
+  $startNew = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $startNew);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Session::logout', function(HookEvent $event) {
+  $session = $event->object;
+
+  // Get arguments
+  $startNew = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$startNew` (optional) `bool` Start a new session after logout? (default=true)

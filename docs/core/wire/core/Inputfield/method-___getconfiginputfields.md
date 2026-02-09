@@ -44,6 +44,30 @@ $inputfieldWrapper = $inputfield->getConfigInputfields();
 - Implementation: `___getConfigInputfields`
 - Hook with: `$inputfield->getConfigInputfields()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Inputfield::getConfigInputfields', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Inputfield::getConfigInputfields', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `InputfieldWrapper` Populated with Inputfield instances

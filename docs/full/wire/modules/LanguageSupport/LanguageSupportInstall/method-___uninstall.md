@@ -16,3 +16,27 @@ $result = $languageSupportInstall->uninstall();
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
 - Hook with: `$languageSupportInstall->uninstall()`
+
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('LanguageSupportInstall::uninstall', function(HookEvent $event) {
+  $languageSupportInstall = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('LanguageSupportInstall::uninstall', function(HookEvent $event) {
+  $languageSupportInstall = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~

@@ -32,6 +32,48 @@ $string = $fieldtype->markupValue(Page $page, Field $field, $value = null, $prop
 - Implementation: `___markupValue`
 - Hook with: `$fieldtype->markupValue()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fieldtype::markupValue', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+  $value = $event->arguments(2);
+  $property = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+  $event->arguments(1, $field);
+  $event->arguments(2, $value);
+  $event->arguments(3, $property);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fieldtype::markupValue', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+  $field = $event->arguments(1);
+  $value = $event->arguments(2);
+  $property = $event->arguments(3);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page` Page that $value comes from

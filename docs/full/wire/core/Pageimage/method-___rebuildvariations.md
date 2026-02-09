@@ -35,6 +35,45 @@ $array = $pageimage->rebuildVariations($mode = 0, array $suffix = array(), array
 - Implementation: `___rebuildVariations`
 - Hook with: `$pageimage->rebuildVariations()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Pageimage::rebuildVariations', function(HookEvent $event) {
+  $pageimage = $event->object;
+
+  // Get arguments
+  $mode = $event->arguments(0);
+  $suffix = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $mode);
+  $event->arguments(1, $suffix);
+  $event->arguments(2, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Pageimage::rebuildVariations', function(HookEvent $event) {
+  $pageimage = $event->object;
+
+  // Get arguments
+  $mode = $event->arguments(0);
+  $suffix = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$mode` (optional) `int` See the options for $mode argument above (default=0).

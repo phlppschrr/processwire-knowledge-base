@@ -20,6 +20,30 @@ $string = $notices->renderText();
 - Implementation: `___renderText`
 - Hook with: `$notices->renderText()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Notices::renderText', function(HookEvent $event) {
+  $notices = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Notices::renderText', function(HookEvent $event) {
+  $notices = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string`

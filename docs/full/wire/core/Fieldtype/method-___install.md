@@ -21,6 +21,30 @@ $result = $fieldtype->install();
 - Implementation: `___install`
 - Hook with: `$fieldtype->install()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Fieldtype::install', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Fieldtype::install', function(HookEvent $event) {
+  $fieldtype = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Exceptions
 
 - `WireException` Should throw an Exception on failure to install

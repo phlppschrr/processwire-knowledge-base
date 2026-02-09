@@ -26,6 +26,30 @@ $string = $process->execute();
 - Implementation: `___execute`
 - Hook with: `$process->execute()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Process::execute', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Process::execute', function(HookEvent $event) {
+  $process = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `string|array`

@@ -32,6 +32,30 @@ $array = $adminThemeFramework->getUserNavArray();
 - Implementation: `___getUserNavArray`
 - Hook with: `$adminThemeFramework->getUserNavArray()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('AdminThemeFramework::getUserNavArray', function(HookEvent $event) {
+  $adminThemeFramework = $event->object;
+
+  // Your code here
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('AdminThemeFramework::getUserNavArray', function(HookEvent $event) {
+  $adminThemeFramework = $event->object;
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Return value
 
 - `array`

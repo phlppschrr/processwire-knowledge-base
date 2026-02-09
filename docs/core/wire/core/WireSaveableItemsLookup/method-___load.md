@@ -22,6 +22,42 @@ $items = $wireSaveableItemsLookup->load(WireArray $items, $selectors = null);
 - Implementation: `___load`
 - Hook with: `$wireSaveableItemsLookup->load()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireSaveableItemsLookup::load', function(HookEvent $event) {
+  $wireSaveableItemsLookup = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+  $selectors = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $items);
+  $event->arguments(1, $selectors);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireSaveableItemsLookup::load', function(HookEvent $event) {
+  $wireSaveableItemsLookup = $event->object;
+
+  // Get arguments
+  $items = $event->arguments(0);
+  $selectors = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$items` `WireArray`

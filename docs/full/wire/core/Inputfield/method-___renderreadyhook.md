@@ -22,6 +22,42 @@ $result = $inputfield->renderReadyHook(?Inputfield $parent = null, $renderValueM
 - Implementation: `___renderReadyHook`
 - Hook with: `$inputfield->renderReadyHook()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Inputfield::renderReadyHook', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Get arguments
+  $parent = $event->arguments(0);
+  $renderValueMode = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $parent);
+  $event->arguments(1, $renderValueMode);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Inputfield::renderReadyHook', function(HookEvent $event) {
+  $inputfield = $event->object;
+
+  // Get arguments
+  $parent = $event->arguments(0);
+  $renderValueMode = $event->arguments(1);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$parent` (optional) `Inputfield|null`

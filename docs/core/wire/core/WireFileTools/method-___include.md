@@ -30,6 +30,45 @@ $bool = $wireFileTools->include($filename, array $vars = array(), array $options
 - Implementation: `___include`
 - Hook with: `$wireFileTools->include()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('WireFileTools::include', function(HookEvent $event) {
+  $wireFileTools = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+  $vars = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $filename);
+  $event->arguments(1, $vars);
+  $event->arguments(2, $options);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('WireFileTools::include', function(HookEvent $event) {
+  $wireFileTools = $event->object;
+
+  // Get arguments
+  $filename = $event->arguments(0);
+  $vars = $event->arguments(1);
+  $options = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$filename` `string` Filename to include

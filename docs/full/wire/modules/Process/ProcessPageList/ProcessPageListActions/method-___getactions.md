@@ -20,6 +20,39 @@ $array = $processPageListActions->getActions(Page $page);
 - Implementation: `___getActions`
 - Hook with: `$processPageListActions->getActions()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('ProcessPageListActions::getActions', function(HookEvent $event) {
+  $processPageListActions = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $page);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('ProcessPageListActions::getActions', function(HookEvent $event) {
+  $processPageListActions = $event->object;
+
+  // Get arguments
+  $page = $event->arguments(0);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$page` `Page`

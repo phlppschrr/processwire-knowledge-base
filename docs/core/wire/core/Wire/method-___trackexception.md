@@ -28,6 +28,45 @@ $result = $wire->trackException($e, $severe = true, $text = null);
 - Implementation: `___trackException`
 - Hook with: `$wire->trackException()`
 
+## Hooking Before
+
+~~~~~
+$this->addHookBefore('Wire::trackException', function(HookEvent $event) {
+  $wire = $event->object;
+
+  // Get arguments
+  $e = $event->arguments(0);
+  $severe = $event->arguments(1);
+  $text = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally change arguments
+  $event->arguments(0, $e);
+  $event->arguments(1, $severe);
+  $event->arguments(2, $text);
+});
+~~~~~
+
+## Hooking After
+
+~~~~~
+$this->addHookAfter('Wire::trackException', function(HookEvent $event) {
+  $wire = $event->object;
+
+  // Get arguments
+  $e = $event->arguments(0);
+  $severe = $event->arguments(1);
+  $text = $event->arguments(2);
+
+  // Your code here
+
+  // Optionally modify return value
+  $return = $event->return;
+  $event->return = $return;
+});
+~~~~~
+
 ## Arguments
 
 - `$e` `\Throwable` Exception or Error object that was thrown.
