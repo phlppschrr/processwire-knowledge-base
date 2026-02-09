@@ -65,26 +65,26 @@ https://processwire.com/about/license/mit/
 The following properties are only in $config->urls
 ==================================================
 
-- $admin: string Admin URL
-- $next: string|null URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
-- $prev: string|null URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
+- `$admin: string` Admin URL
+- `$next: string|null` URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
+- `$prev: string|null` URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 
 The following are in $config->urls and equivalent to previously mentioned properties, but include scheme + host
 ===============================================================================================================
 
-- $httpRoot: string Full http/https URL to site root (i.e. https://domain.com/).
-- $httpTemplates: string Full http/https URL to site templates (i.e. https://domain.com/site/templates/).
-- $httpModules: string Full http/https URL to core (wire) modules.
-- $httpSiteModules: string Full http/https URL to site modules.
-- $httpMarkupRegions: string Full http/https URL to files added by Markup Regions. (3.0.254+)
-- $httpAssets: string Full http/https URL to site assets (i.e. https://domain.com/site/assets/).
-- $httpFiles: string Full http/https URL to site assets files (i.e. https://domain.com/site/assets/files/).
-- $httpNext: string Full http/https URL to next pagination of current page (when applicable).
-- $httpPrev: string Full http/https URL to prev pagination of current page (when applicable).
+- `$httpRoot: string` Full http/https URL to site root (i.e. https://domain.com/).
+- `$httpTemplates: string` Full http/https URL to site templates (i.e. https://domain.com/site/templates/).
+- `$httpModules: string` Full http/https URL to core (wire) modules.
+- `$httpSiteModules: string` Full http/https URL to site modules.
+- `$httpMarkupRegions: string` Full http/https URL to files added by Markup Regions. (3.0.254+)
+- `$httpAssets: string` Full http/https URL to site assets (i.e. https://domain.com/site/assets/).
+- `$httpFiles: string` Full http/https URL to site assets files (i.e. https://domain.com/site/assets/files/).
+- `$httpNext: string` Full http/https URL to next pagination of current page (when applicable).
+- `$httpPrev: string` Full http/https URL to prev pagination of current page (when applicable).
 
 The "http" may be optionally prepended to any property accessed from $config->urls (including those you add yourself).
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [set()](method-set.md)
-Method: [get()](method-get.md)
+- [`__construct(string $root)`](method-__construct.md)
+- [`set(string $key, mixed $value): Paths|WireData`](method-set.md)
+- [`get(object|string $key): mixed|null|string`](method-get.md)

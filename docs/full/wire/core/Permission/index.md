@@ -16,5 +16,5 @@ and `Template` objects, forming ProcessWire's role-based access control system. 
 Permission objects are managed with the `$permissions` API variable.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [wired()](method-wired.md)
+- [`__construct(?Template $tpl = null)`](method-__construct.md)
+- [`wired()`](method-wired.md)

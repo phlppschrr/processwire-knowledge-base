@@ -33,6 +33,6 @@ echo $form->render();
 ~~~~~~
 
 Methods:
-Method: [getFormMarkup()](method-getformmarkup.md)
-Method: [applyIf()](method-applyif.md)
-Method: [renderForm()](method-renderform.md)
+- [`getFormMarkup(): string`](method-getformmarkup.md)
+- [`applyIf(string $name, bool $value, string $out): mixed|string`](method-applyif.md)
+- [`renderForm(string $id, string $class, array $attrs, array $labels, array $inputValues): string`](method-renderform.md)

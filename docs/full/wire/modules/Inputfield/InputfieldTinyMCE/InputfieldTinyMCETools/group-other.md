@@ -2,4 +2,4 @@
 
 Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
-- $jsonBlankObjectProperties: array
+- `$jsonBlankObjectProperties: array`

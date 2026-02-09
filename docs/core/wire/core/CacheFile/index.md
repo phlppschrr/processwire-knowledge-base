@@ -16,19 +16,19 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [setSecondaryID()](method-setsecondaryid.md)
-Method: [buildFilename()](method-buildfilename.md)
-Method: [exists()](method-exists.md)
-Method: [get()](method-get.md)
-Method: [isCacheFileExpired()](method-iscachefileexpired.md)
-Method: [save()](method-save.md)
-Method: [remove()](method-remove.md)
-Method: [removeFilename()](method-removefilename.md)
-Method: [expireAll()](method-expireall.md)
-Method: [setChmodFile()](method-setchmodfile.md)
-Method: [setChmodDir()](method-setchmoddir.md)
-Method: [__toString()](method-__tostring.md)
+- [`__construct(string $path, string|int $id, int $cacheTimeSeconds)`](method-__construct.md)
+- [`setSecondaryID(string|int $id)`](method-setsecondaryid.md)
+- [`buildFilename(): string`](method-buildfilename.md)
+- [`exists(): bool`](method-exists.md)
+- [`get(): string`](method-get.md)
+- [`isCacheFileExpired(string $filename): bool`](method-iscachefileexpired.md)
+- [`save(string $data): bool`](method-save.md)
+- [`remove()`](method-remove.md)
+- [`removeFilename(string $filename)`](method-removefilename.md)
+- [`expireAll()`](method-expireall.md)
+- [`setChmodFile(string $mode)`](method-setchmodfile.md)
+- [`setChmodDir(string $mode)`](method-setchmoddir.md)
+- [`__toString()`](method-__tostring.md)
 
 Constants:
-Const: [maxCacheFiles](const-maxcachefiles.md)
+- [`maxCacheFiles`](const-maxcachefiles.md)

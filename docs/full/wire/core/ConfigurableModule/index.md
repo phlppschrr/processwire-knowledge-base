@@ -52,7 +52,7 @@ A module *must not* contain both the ConfigModule and ConfigurableModule interfa
 in their implements definition at the same time, so choose just one.
 
 Methods:
-Method: [__get()](method-__get.md)
-Method: [__get()](method-__get.md)
-Method: [__get()](method-__get.md)
-Method: [__set()](method-__set.md)
+- [`__get($key): InputfieldWrapper`](method-__get.md)
+- [`__get($key): array`](method-__get.md)
+- [`__get(string $key): mixed`](method-__get.md)
+- [`__set($key, $value): mixed`](method-__set.md)

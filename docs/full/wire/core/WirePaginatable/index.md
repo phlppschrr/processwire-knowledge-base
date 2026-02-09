@@ -5,9 +5,9 @@ Source: `wire/core/Interfaces.php`
 Interface that indicates the object supports its items being paginated
 
 Methods:
-Method: [setTotal()](method-settotal.md)
-Method: [getTotal()](method-gettotal.md)
-Method: [setLimit()](method-setlimit.md)
-Method: [getLimit()](method-getlimit.md)
-Method: [setStart()](method-setstart.md)
-Method: [getStart()](method-getstart.md)
+- [`setTotal(int $total): $this`](method-settotal.md)
+- [`getTotal(): int`](method-gettotal.md)
+- [`setLimit(int $numLimit): $this`](method-setlimit.md)
+- [`getLimit(): int`](method-getlimit.md)
+- [`setStart(int $numStart): $this`](method-setstart.md)
+- [`getStart(): int`](method-getstart.md)

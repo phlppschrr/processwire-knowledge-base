@@ -74,11 +74,11 @@ $config->cookieOptions = [
 ~~~~~
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [options()](method-options.md)
-Method: [__set()](method-__set.md)
-Method: [get()](method-get.md)
-Method: [set()](method-set.md)
-Method: [remove()](method-remove.md)
-Method: [removeAll()](method-removeall.md)
-Method: [allowSetCookie()](method-allowsetcookie.md)
+- [`__construct(array &$input = array(), bool $lazy = false)`](method-__construct.md)
+- [`options(string|array|null $key = null, string|array|int|float|null $value = null): string|array|int|float|null|$this`](method-options.md)
+- [`__set(string $key, array|float|int|null|string $value)`](method-__set.md)
+- [`get(string $key, array|int|string $options = array()): string|int|float|array|null`](method-get.md)
+- [`set(string $key, string $value, array|int|string $options = array()): $this`](method-set.md)
+- [`remove(string $key): WireInputDataCookie|WireInputData|$this`](method-remove.md)
+- [`removeAll(): $this|WireInputData`](method-removeall.md)
+- [`allowSetCookie(string $name): bool`](method-allowsetcookie.md)

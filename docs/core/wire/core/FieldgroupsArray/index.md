@@ -9,7 +9,7 @@ ProcessWire Fieldgroups Array
 WireArray of Fieldgroup instances as used by Fieldgroups class.
 
 Methods:
-Method: [isValidItem()](method-isvaliditem.md)
-Method: [getItemKey()](method-getitemkey.md)
-Method: [isValidKey()](method-isvalidkey.md)
-Method: [makeBlankItem()](method-makeblankitem.md)
+- [`isValidItem($item)`](method-isvaliditem.md)
+- [`getItemKey($item)`](method-getitemkey.md)
+- [`isValidKey($key)`](method-isvalidkey.md)
+- [`makeBlankItem()`](method-makeblankitem.md)

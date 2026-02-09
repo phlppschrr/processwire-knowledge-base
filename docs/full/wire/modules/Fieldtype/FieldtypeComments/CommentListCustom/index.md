@@ -25,8 +25,8 @@ echo $list->render();
 ~~~~~~
 
 Methods:
-Method: [getMarkup()](method-getmarkup.md)
-Method: [setMarkup()](method-setmarkup.md)
-Method: [markup()](method-markup.md)
-Method: [renderList()](method-renderlist.md)
-Method: [renderItem()](method-___renderitem.md) (hookable)
+- [`getMarkup(string $property = ''): array|mixed|null`](method-getmarkup.md)
+- [`setMarkup(array $markup)`](method-setmarkup.md)
+- [`markup(string|array $key = '', null|mixed $value = null): mixed`](method-markup.md)
+- [`renderList(int $parent_id = 0, int $depth = 0): string`](method-renderlist.md)
+- [`renderItem(Comment $comment, array|int $options = array()): string`](method-___renderitem.md) (hookable)

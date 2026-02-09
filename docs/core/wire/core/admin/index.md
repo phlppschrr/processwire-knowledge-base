@@ -31,8 +31,8 @@ it references are from your template namespace.
 @var AdminTheme $adminTheme
 
 Methods:
-Method: [_hookSessionRedirectModal()](method-_hooksessionredirectmodal.md)
-Method: [_checkForHttpHostError()](method-_checkforhttphosterror.md)
-Method: [_checkForTwoFactorAuth()](method-_checkfortwofactorauth.md)
-Method: [_checkForMaxInputVars()](method-_checkformaxinputvars.md)
-Method: [_setupForDemoMode()](method-_setupfordemomode.md)
+- [`_hookSessionRedirectModal(HookEvent $event)`](method-_hooksessionredirectmodal.md)
+- [`_checkForHttpHostError(Config $config)`](method-_checkforhttphosterror.md)
+- [`_checkForTwoFactorAuth(Session $session)`](method-_checkfortwofactorauth.md)
+- [`_checkForMaxInputVars(WireInput $input)`](method-_checkformaxinputvars.md)
+- [`_setupForDemoMode(Page $page, ProcessWire $wire)`](method-_setupfordemomode.md)

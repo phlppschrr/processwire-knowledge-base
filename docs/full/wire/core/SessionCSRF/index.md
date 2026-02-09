@@ -27,13 +27,13 @@ $session->CSRF->validate();
 ~~~~
 
 Methods:
-Method: [getTokenName()](method-gettokenname.md)
-Method: [getTokenValue()](method-gettokenvalue.md)
-Method: [getTokenTime()](method-gettokentime.md)
-Method: [getToken()](method-gettoken.md)
-Method: [getSingleUseToken()](method-getsingleusetoken.md)
-Method: [hasValidToken()](method-hasvalidtoken.md)
-Method: [validate()](method-validate.md)
-Method: [resetToken()](method-resettoken.md)
-Method: [resetAll()](method-resetall.md)
-Method: [renderInput()](method-renderinput.md)
+- [`getTokenName(int|string|null $id = ''): string`](method-gettokenname.md)
+- [`getTokenValue(int|string|null $id = ''): string`](method-gettokenvalue.md)
+- [`getTokenTime(int|string|null $id = ''): int`](method-gettokentime.md)
+- [`getToken(int|string|null $id = ''): array`](method-gettoken.md)
+- [`getSingleUseToken(int|string $id = ''): array`](method-getsingleusetoken.md)
+- [`hasValidToken(int|string|null $id = '', $reset = null): bool`](method-hasvalidtoken.md)
+- [`validate(int|string|null $id = ''): bool`](method-validate.md)
+- [`resetToken(int|string|null $id = '')`](method-resettoken.md)
+- [`resetAll()`](method-resetall.md)
+- [`renderInput(int|string|null $id = ''): string`](method-renderinput.md)

@@ -7,6 +7,6 @@ Inherits: `ProcessPageListRender`
 JSON implementation of the Page List rendering
 
 Methods:
-Method: [wired()](method-wired.md)
-Method: [renderChild()](method-renderchild.md)
-Method: [render()](method-render.md)
+- [`wired()`](method-wired.md)
+- [`renderChild(Page $page): array`](method-renderchild.md)
+- [`render(): string|array`](method-render.md)

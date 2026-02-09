@@ -13,13 +13,13 @@ The Users class serves as the $users API variable.
 Manages all users (User objects) in ProcessWire.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [get()](method-get.md)
-Method: [setCurrentUser()](method-setcurrentuser.md)
-Method: [loaded()](method-loaded.md)
-Method: [checkGuestRole()](method-checkguestrole.md)
-Method: [getCurrentUser()](method-getcurrentuser.md)
-Method: [getGuestUser()](method-getguestuser.md)
-Method: [setAdminThemeByRole()](method-setadminthemebyrole.md)
-Method: [save()](method-___save.md) (hookable)
-Method: [saveReady()](method-___saveready.md) (hookable)
+- [`__construct(ProcessWire $wire, array $templates = array(), array $parents = array())`](method-__construct.md)
+- [`get(string $selectorString): User|NullPage|null`](method-get.md)
+- [`setCurrentUser(User $user)`](method-setcurrentuser.md)
+- [`loaded(Page $page)`](method-loaded.md)
+- [`checkGuestRole(User $user)`](method-checkguestrole.md)
+- [`getCurrentUser(): User`](method-getcurrentuser.md)
+- [`getGuestUser(): User`](method-getguestuser.md)
+- [`setAdminThemeByRole(AdminTheme|string $adminTheme, Role $role): int`](method-setadminthemebyrole.md)
+- [`save(Page $page): bool`](method-___save.md) (hookable)
+- [`saveReady(Page $page): array`](method-___saveready.md) (hookable)

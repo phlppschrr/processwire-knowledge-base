@@ -15,14 +15,14 @@ property of the page. It is also used as the return value for some
 methods in the PagesVersions class to return version information.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [set()](method-set.md)
-Method: [get()](method-get.md)
-Method: [getPage()](method-getpage.md)
-Method: [setPage()](method-setpage.md)
-Method: [getCreatedUser()](method-getcreateduser.md)
-Method: [getModifiedUser()](method-getmodifieduser.md)
-Method: [__toString()](method-__tostring.md)
+- [`__construct(array $data = [])`](method-__construct.md)
+- [`set(string $key, string|int|Page $value): self`](method-set.md)
+- [`get(string $key): mixed|NullPage|Page|User|null`](method-get.md)
+- [`getPage(): NullPage|Page`](method-getpage.md)
+- [`setPage(Page $page)`](method-setpage.md)
+- [`getCreatedUser(): NullPage|User`](method-getcreateduser.md)
+- [`getModifiedUser(): NullPage|User`](method-getmodifieduser.md)
+- [`__toString(): string`](method-__tostring.md)
 
 Constants:
-Const: [actionRestore](const-actionrestore.md)
+- [`actionRestore`](const-actionrestore.md)

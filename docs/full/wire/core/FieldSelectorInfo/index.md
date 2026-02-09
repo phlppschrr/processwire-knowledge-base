@@ -17,8 +17,8 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [getSelectorInfo()](method-getselectorinfo.md)
-Method: [getSelectorInfoTemplate()](method-getselectorinfotemplate.md)
-Method: [getOperators()](method-getoperators.md)
-Method: [getOperatorLabels()](method-getoperatorlabels.md)
+- [`__construct()`](method-__construct.md)
+- [`getSelectorInfo(Field $field): array`](method-getselectorinfo.md)
+- [`getSelectorInfoTemplate(): array`](method-getselectorinfotemplate.md)
+- [`getOperators(string $inputType = ''): array`](method-getoperators.md)
+- [`getOperatorLabels(): array`](method-getoperatorlabels.md)

@@ -13,7 +13,7 @@ The Roles class serves as the $roles API variable.
 Provides management of all Role pages for access control.
 
 Methods:
-Method: [get()](method-get.md)
-Method: [save()](method-___save.md) (hookable)
-Method: [delete()](method-___delete.md) (hookable)
-Method: [add()](method-___add.md) (hookable)
+- [`get(string $selectorString): Role|NullPage|null`](method-get.md)
+- [`save(Page $page): bool`](method-___save.md) (hookable)
+- [`delete(Page $page, bool $recursive = false): bool`](method-___delete.md) (hookable)
+- [`add(string $name): Role|NullPage`](method-___add.md) (hookable)

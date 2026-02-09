@@ -7,9 +7,9 @@ Inherits: `Wire`
 ProcessWire File Fieldtype (configuration)
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
-Method: [getConfigInputfieldsOutputFormat()](method-getconfiginputfieldsoutputformat.md)
-Method: [getConfigInputfieldsCustomFields()](method-getconfiginputfieldscustomfields.md)
-Method: [getConfigAdvancedInputfields()](method-getconfigadvancedinputfields.md)
-Method: [getModuleConfigInputfields()](method-getmoduleconfiginputfields.md)
+- [`__construct(FieldtypeFile $fieldtype)`](method-__construct.md)
+- [`getConfigInputfields(Field $field, InputfieldWrapper $inputfields): InputfieldWrapper`](method-getconfiginputfields.md)
+- [`getConfigInputfieldsOutputFormat(Field $field, InputfieldWrapper $fs)`](method-getconfiginputfieldsoutputformat.md)
+- [`getConfigInputfieldsCustomFields(Field $field, InputfieldWrapper $inputfields)`](method-getconfiginputfieldscustomfields.md)
+- [`getConfigAdvancedInputfields(Field $field, InputfieldWrapper $inputfields): InputfieldWrapper`](method-getconfigadvancedinputfields.md)
+- [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-getmoduleconfiginputfields.md)

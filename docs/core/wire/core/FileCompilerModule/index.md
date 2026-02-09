@@ -21,10 +21,10 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [init()](method-init.md)
-Method: [compile()](method-compile.md)
-Method: [compileMarkup()](method-compilemarkup.md)
-Method: [install()](method-___install.md) (hookable)
-Method: [uninstall()](method-___uninstall.md) (hookable)
-Method: [getSourceFile()](method-getsourcefile.md)
-Method: [getModuleConfigInputfields()](method-getmoduleconfiginputfields.md)
+- [`init()`](method-init.md)
+- [`compile(string $data): string|array`](method-compile.md)
+- [`compileMarkup(string $data): string`](method-compilemarkup.md)
+- [`install()`](method-___install.md) (hookable)
+- [`uninstall()`](method-___uninstall.md) (hookable)
+- [`getSourceFile(): string`](method-getsourcefile.md)
+- [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-getmoduleconfiginputfields.md)

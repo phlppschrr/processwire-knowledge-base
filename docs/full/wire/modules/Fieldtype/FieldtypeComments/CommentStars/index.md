@@ -14,7 +14,7 @@ Handles rendering of star ratings for comments.
 Additional code in comments.js and comments.css accompanies this.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [setDefault()](method-setdefault.md)
-Method: [render()](method-render.md)
-Method: [renderCount()](method-rendercount.md)
+- [`__construct()`](method-__construct.md)
+- [`setDefault($key, $value)`](method-setdefault.md)
+- [`render(int|float|null $stars = 0, bool $allowInput = false): string`](method-render.md)
+- [`renderCount(int $count, float|int $stars = 0.0, string $schema = ''): string`](method-rendercount.md)

@@ -7,6 +7,6 @@ Inherits: `Wire`
 Helper class for FieldtypeTextarea configuration
 
 Methods:
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
-Method: [applyFieldHTML()](method-applyfieldhtml.md)
-Method: [getInputfieldError()](method-getinputfielderror.md)
+- [`getConfigInputfields(Field $field, InputfieldWrapper $inputfields): InputfieldWrapper`](method-getconfiginputfields.md)
+- [`applyFieldHTML(HookEvent $event)`](method-applyfieldhtml.md)
+- [`getInputfieldError(Field $field)`](method-getinputfielderror.md)

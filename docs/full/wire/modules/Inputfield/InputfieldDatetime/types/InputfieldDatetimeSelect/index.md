@@ -5,8 +5,8 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeSele
 Inherits: `InputfieldDatetimeType`
 
 Methods:
-Method: [getYearsRange()](method-getyearsrange.md)
-Method: [renderReady()](method-renderready.md)
-Method: [render()](method-render.md)
-Method: [processInput()](method-processinput.md)
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
+- [`getYearsRange(int $valueYear): array`](method-getyearsrange.md)
+- [`renderReady()`](method-renderready.md)
+- [`render(): string`](method-render.md)
+- [`processInput(WireInputData $input): string`](method-processinput.md)
+- [`getConfigInputfields(InputfieldWrapper $inputfields)`](method-getconfiginputfields.md)

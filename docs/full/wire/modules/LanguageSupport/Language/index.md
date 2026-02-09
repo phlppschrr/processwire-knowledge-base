@@ -11,9 +11,9 @@ Group: [other](group-other.md)
 A type of Page that represents a single Language in ProcessWire
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [wired()](method-wired.md)
-Method: [isDefault()](method-isdefault.md)
-Method: [isCurrent()](method-iscurrent.md)
-Method: [getLocale()](method-getlocale.md)
-Method: [setLocale()](method-setlocale.md)
+- [`__construct(?Template $tpl = null)`](method-__construct.md)
+- [`wired()`](method-wired.md)
+- [`isDefault(): bool`](method-isdefault.md)
+- [`isCurrent(): bool`](method-iscurrent.md)
+- [`getLocale(int $category = LC_ALL): string|bool`](method-getlocale.md)
+- [`setLocale(int $category = LC_ALL): string|bool`](method-setlocale.md)

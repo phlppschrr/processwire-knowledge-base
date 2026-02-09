@@ -17,11 +17,11 @@ the Role(s), as it accounts for the combined roles. Please also see `User`, `Per
 access related methods on `Page`.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [wired()](method-wired.md)
-Method: [getPredefinedTemplate()](method-getpredefinedtemplate.md)
-Method: [getPredefinedParent()](method-getpredefinedparent.md)
-Method: [hasPermission()](method-haspermission.md)
-Method: [hasPermissionContext()](method-haspermissioncontext.md)
-Method: [addPermission()](method-addpermission.md)
-Method: [removePermission()](method-removepermission.md)
+- [`__construct(?Template $tpl = null)`](method-__construct.md)
+- [`wired()`](method-wired.md)
+- [`getPredefinedTemplate(): Template`](method-getpredefinedtemplate.md)
+- [`getPredefinedParent(): Page`](method-getpredefinedparent.md)
+- [`hasPermission(string|int|Permission $permission, Page|Template|null $context = null): bool`](method-haspermission.md)
+- [`hasPermissionContext(bool $has, Permission $permission, Wire $context): bool`](method-haspermissioncontext.md)
+- [`addPermission(string|int|Permission $permission): bool`](method-addpermission.md)
+- [`removePermission(string|int|Permission $permission): bool`](method-removepermission.md)

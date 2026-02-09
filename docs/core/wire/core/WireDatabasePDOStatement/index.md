@@ -14,9 +14,9 @@ populated queries are not ever used for actual database queries, just for logs.
 Note that this class only tracks bindValue() and does not track bindParam().
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [setDebugNote()](method-setdebugnote.md)
-Method: [setDebugParam()](method-setdebugparam.md)
-Method: [bindValue()](method-bindvalue.md)
-Method: [execute()](method-execute.md)
-Method: [executeDebug()](method-executedebug.md)
+- [`__construct(WireDatabasePDO $database)`](method-__construct.md)
+- [`setDebugNote(string $note)`](method-setdebugnote.md)
+- [`setDebugParam(string $parameter, int|string|null $value, int|null $data_type = null)`](method-setdebugparam.md)
+- [`bindValue(string|int $parameter, mixed $value, int $data_type = \PDO::PARAM_STR): bool`](method-bindvalue.md)
+- [`execute(array|null $input_parameters = NULL): bool`](method-execute.md)
+- [`executeDebug(array|null $input_parameters = NULL): bool`](method-executedebug.md)

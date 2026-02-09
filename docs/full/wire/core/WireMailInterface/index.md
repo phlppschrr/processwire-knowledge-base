@@ -5,12 +5,12 @@ Source: `wire/core/WireMailInterface.php`
 ProcessWire WireMail Interface
 
 Methods:
-Method: [to()](method-to.md)
-Method: [from()](method-from.md)
-Method: [subject()](method-subject.md)
-Method: [body()](method-body.md)
-Method: [bodyHTML()](method-bodyhtml.md)
-Method: [header()](method-header.md)
-Method: [param()](method-param.md)
-Method: [send()](method-___send.md) (hookable)
-Method: [send()](method-___send.md) (hookable)
+- [`to(string|array|null $email = null, string $name = null): self`](method-to.md)
+- [`from($email, $name = null): self`](method-from.md)
+- [`subject(string $subject): self`](method-subject.md)
+- [`body(string $body): self`](method-body.md)
+- [`bodyHTML(string $body): self`](method-bodyhtml.md)
+- [`header(string $key, string $value): self`](method-header.md)
+- [`param(string $value): self`](method-param.md)
+- [`send(): self`](method-___send.md) (hookable)
+- [`send(): int`](method-___send.md) (hookable)

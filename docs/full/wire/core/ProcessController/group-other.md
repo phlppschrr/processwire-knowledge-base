@@ -2,4 +2,4 @@
 
 Source: `wire/core/ProcessController.php`
 
-- [execute(): string](method-___execute.md)
+- [`execute(): string`](method-___execute.md)

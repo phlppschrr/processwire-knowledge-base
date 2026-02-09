@@ -16,7 +16,7 @@ $a = $tester->testPages(PageArray $items);
 ~~~~~
 
 Methods:
-Method: [pathFinder()](method-pathfinder.md)
-Method: [testPath()](method-testpath.md)
-Method: [testPage()](method-testpage.md)
-Method: [testPages()](method-testpages.md)
+- [`pathFinder(): PagesPathFinder`](method-pathfinder.md)
+- [`testPath(string $path, int $expectResponse = 0): array`](method-testpath.md)
+- [`testPage(Page $item): array`](method-testpage.md)
+- [`testPages(string|PageArray $selector): array`](method-testpages.md)

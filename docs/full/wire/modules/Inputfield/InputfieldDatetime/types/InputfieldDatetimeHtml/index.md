@@ -7,9 +7,9 @@ Inherits: `InputfieldDatetimeType`
 HTML5 date/time input types
 
 Methods:
-Method: [renderReady()](method-renderready.md)
-Method: [render()](method-render.md)
-Method: [renderDate()](method-renderdate.md)
-Method: [renderTime()](method-rendertime.md)
-Method: [processInput()](method-processinput.md)
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
+- [`renderReady()`](method-renderready.md)
+- [`render(): string`](method-render.md)
+- [`renderDate(): string`](method-renderdate.md)
+- [`renderTime(): string`](method-rendertime.md)
+- [`processInput(WireInputData $input): string`](method-processinput.md)
+- [`getConfigInputfields(InputfieldWrapper $inputfields)`](method-getconfiginputfields.md)

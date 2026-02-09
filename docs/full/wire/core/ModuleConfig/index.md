@@ -15,8 +15,8 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [getDefaults()](method-getdefaults.md)
-Method: [getInputfields()](method-getinputfields.md)
-Method: [add()](method-add.md)
-Method: [identifyDefaults()](method-identifydefaults.md)
+- [`__construct()`](method-__construct.md)
+- [`getDefaults(): array`](method-getdefaults.md)
+- [`getInputfields(): InputfieldWrapper`](method-getinputfields.md)
+- [`add(array $a): self`](method-add.md)
+- [`identifyDefaults(array $a): array`](method-identifydefaults.md)

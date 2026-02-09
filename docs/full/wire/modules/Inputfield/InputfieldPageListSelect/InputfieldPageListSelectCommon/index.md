@@ -7,7 +7,7 @@ Common methods for InputfieldPageListSelect and InputfieldPageListSelectMultiple
 @since 3.0.231
 
 Methods:
-Method: [pageListReady()](method-pagelistready.md)
-Method: [renderMarkupValue()](method-rendermarkupvalue.md)
-Method: [getPageLabel()](method-getpagelabel.md)
-Method: [renderParentError()](method-renderparenterror.md)
+- [`pageListReady(string $name, string $labelFieldName)`](method-pagelistready.md)
+- [`renderMarkupValue(int|int[] $value): string`](method-rendermarkupvalue.md)
+- [`getPageLabel(Page $page): string`](method-getpagelabel.md)
+- [`renderParentError(): string`](method-renderparenterror.md)

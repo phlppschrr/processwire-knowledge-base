@@ -2,4 +2,4 @@
 
 Source: `wire/core/InputfieldWrapper.php`
 
-- [renderInputfield(Inputfield $inputfield, $renderValueMode = false): string](method-___renderinputfield.md)
+- [`renderInputfield(Inputfield $inputfield, $renderValueMode = false): string`](method-___renderinputfield.md)

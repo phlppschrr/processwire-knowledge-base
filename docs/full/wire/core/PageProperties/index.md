@@ -11,4 +11,4 @@ Except where indicated, please treat these properties as private to the
 Page class.
 
 Methods:
-Method: [statusToNames()](method-statustonames.md)
+- [`statusToNames(int $status): array`](method-statustonames.md)

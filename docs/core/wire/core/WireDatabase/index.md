@@ -5,4 +5,4 @@ Source: `wire/core/Interfaces.php`
 Interface for ProcessWire database layer
 
 Methods:
-Method: [isOperator()](method-isoperator.md)
+- [`isOperator(string $str): bool`](method-isoperator.md)

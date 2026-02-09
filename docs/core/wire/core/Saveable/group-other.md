@@ -2,5 +2,5 @@
 
 Source: `wire/core/Interfaces.php`
 
-- $id: int
-- $name: string
+- `$id: int`
+- `$name: string`

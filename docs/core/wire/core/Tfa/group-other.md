@@ -2,44 +2,44 @@
 
 Source: `wire/core/Tfa.php`
 
-- $codeLength: int Required length for authentication code (default=6)
-- $codeExpire: int Codes expire after this many seconds (default=180)
-- $codeType: int Type of TFA code to use, see codeType constants (default=0, which is Tfa::codeTypeDigits)
-- $startUrl: string URL we are operating from (default='./')
-- $rememberDays: int Number of days to "remember this browser", 0 to disable option, or -1 for no limit? (default=0)
-- $rememberFingerprints: array Fingerprints to remember: agent,agentVL,accept,scheme,host,ip,fwip (default=agentVL,accept,scheme,host)
-- $formAttrs: array Form <form> element attributes
-- $inputAttrs: array Code <input> element attributes
-- $submitAttrs: array Submit button attributes
-- $showCancel: bool Show a cancel link under authentication code form? (default=true)
-- $autoType: string Automatic/force TFA type (module name) to use when user doesn’t already have TFA enabled (default='')
-- $autoRoleIDs: array Role IDs to enforce $autoType or blank for all roles, applies only if $autoType set (default=[])
-- $cancelMarkup: string Markup to use for the cancel link that appears under auth code form, must have {url} and {label} placeholders.
-- $cancelLabel: string Label to use for Cancel link (default='Cancel', translatable)
-- $configureLabel: string Indicates that TFA needs to be configured
-- $enabledLabel: string Indicates TFA enabled
-- $enabledDescLabel: string Describes enabled TFA and how to change settings
-- $expiredCodeLabel: string Expired code error
-- $fieldTfaTypeLabel: string Select 2-factor auth type
-- $fieldTfaTypeDescLabel: string Description of 2-factor auth type
-- $inputLabel: string Label for code <input> element
-- $invalidCodeLabel: string Invalid code error
-- $maxAttemptsLabel: string Max attempts error
-- $rememberLabel: string Label for "remember this browser" option
-- $rememberSuccessLabel: string Indicates that browser has been saved/remembered for n days.
-- $rememberSkipLabel: string Indicates that code entry was skipped because browser is remembered
-- $rememberClearLabel: string Clear remembered browsers
-- $rememberClearedLabel: string Message after remembered browsers cleared
-- $sendCodeErrorLabel: string Error creating or sending code
-- $submitLabel: string Label for submit button
-- $timeLimitLabel: string Time limit reached error
-- [start($name, $pass): bool](method-___start.md)
-- [buildAuthCodeForm(): InputfieldForm](method-___buildauthcodeform.md)
-- [render(): string](method-___render.md)
-- [process(): User|bool](method-___process.md)
-- [getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings): void](method-___getusersettingsinputfields.md)
-- [getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings): void](method-___getuserenabledinputfields.md)
-- [processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array](method-___processusersettingsinputfields.md)
-- [processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array](method-___processuserenabledinputfields.md)
-- [install()()](method-install.md)
-- [uninstall()()](method-uninstall.md)
+- `$codeLength: int` Required length for authentication code (default=6)
+- `$codeExpire: int` Codes expire after this many seconds (default=180)
+- `$codeType: int` Type of TFA code to use, see codeType constants (default=0, which is Tfa::codeTypeDigits)
+- `$startUrl: string` URL we are operating from (default='./')
+- `$rememberDays: int` Number of days to "remember this browser", 0 to disable option, or -1 for no limit? (default=0)
+- `$rememberFingerprints: array` Fingerprints to remember: agent,agentVL,accept,scheme,host,ip,fwip (default=agentVL,accept,scheme,host)
+- `$formAttrs: array` Form <form> element attributes
+- `$inputAttrs: array` Code <input> element attributes
+- `$submitAttrs: array` Submit button attributes
+- `$showCancel: bool` Show a cancel link under authentication code form? (default=true)
+- `$autoType: string` Automatic/force TFA type (module name) to use when user doesn’t already have TFA enabled (default='')
+- `$autoRoleIDs: array` Role IDs to enforce $autoType or blank for all roles, applies only if $autoType set (default=[])
+- `$cancelMarkup: string` Markup to use for the cancel link that appears under auth code form, must have {url} and {label} placeholders.
+- `$cancelLabel: string` Label to use for Cancel link (default='Cancel', translatable)
+- `$configureLabel: string` Indicates that TFA needs to be configured
+- `$enabledLabel: string` Indicates TFA enabled
+- `$enabledDescLabel: string` Describes enabled TFA and how to change settings
+- `$expiredCodeLabel: string` Expired code error
+- `$fieldTfaTypeLabel: string` Select 2-factor auth type
+- `$fieldTfaTypeDescLabel: string` Description of 2-factor auth type
+- `$inputLabel: string` Label for code <input> element
+- `$invalidCodeLabel: string` Invalid code error
+- `$maxAttemptsLabel: string` Max attempts error
+- `$rememberLabel: string` Label for "remember this browser" option
+- `$rememberSuccessLabel: string` Indicates that browser has been saved/remembered for n days.
+- `$rememberSkipLabel: string` Indicates that code entry was skipped because browser is remembered
+- `$rememberClearLabel: string` Clear remembered browsers
+- `$rememberClearedLabel: string` Message after remembered browsers cleared
+- `$sendCodeErrorLabel: string` Error creating or sending code
+- `$submitLabel: string` Label for submit button
+- `$timeLimitLabel: string` Time limit reached error
+- [`start($name, $pass): bool`](method-___start.md)
+- [`buildAuthCodeForm(): InputfieldForm`](method-___buildauthcodeform.md)
+- [`render(): string`](method-___render.md)
+- [`process(): User|bool`](method-___process.md)
+- [`getUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings): void`](method-___getusersettingsinputfields.md)
+- [`getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings): void`](method-___getuserenabledinputfields.md)
+- [`processUserSettingsInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array`](method-___processusersettingsinputfields.md)
+- [`processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev): array`](method-___processuserenabledinputfields.md)
+- [`install()()`](method-install.md)
+- [`uninstall()()`](method-uninstall.md)

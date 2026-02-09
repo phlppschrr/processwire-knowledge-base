@@ -14,12 +14,12 @@ Maintains a collection of Fieldtype modules.
 $fieldtypes
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [init()](method-init.md)
-Method: [preload()](method-preload.md)
-Method: [isValidItem()](method-isvaliditem.md)
-Method: [isValidKey()](method-isvalidkey.md)
-Method: [getItemKey()](method-getitemkey.md)
-Method: [makeBlankItem()](method-makeblankitem.md)
-Method: [get()](method-get.md)
-Method: [getArray()](method-getarray.md)
+- [`__construct()`](method-__construct.md)
+- [`init()`](method-init.md)
+- [`preload()`](method-preload.md)
+- [`isValidItem(Wire|Fieldtype $item): bool`](method-isvaliditem.md)
+- [`isValidKey(string|int $key): bool`](method-isvalidkey.md)
+- [`getItemKey(Fieldtype $item): string`](method-getitemkey.md)
+- [`makeBlankItem(): null`](method-makeblankitem.md)
+- [`get(string $key): Fieldtype|null`](method-get.md)
+- [`getArray()`](method-getarray.md)

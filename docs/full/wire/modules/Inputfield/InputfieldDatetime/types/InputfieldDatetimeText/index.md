@@ -7,17 +7,17 @@ Inherits: `InputfieldDatetimeType`
 Text date input types with optional jQuery UI datepicker
 
 Methods:
-Method: [getDefaultSettings()](method-getdefaultsettings.md)
-Method: [renderReady()](method-renderready.md)
-Method: [render()](method-render.md)
-Method: [renderValue()](method-rendervalue.md)
-Method: [processInput()](method-processinput.md)
-Method: [getInputFormat()](method-getinputformat.md)
-Method: [sanitizeValue()](method-sanitizevalue.md)
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
+- [`getDefaultSettings(): array`](method-getdefaultsettings.md)
+- [`renderReady()`](method-renderready.md)
+- [`render(): string`](method-render.md)
+- [`renderValue(): string`](method-rendervalue.md)
+- [`processInput(WireInputData $input): int|string|bool`](method-processinput.md)
+- [`getInputFormat(bool $getArray = false): string|array`](method-getinputformat.md)
+- [`sanitizeValue(int|string $value): int|string`](method-sanitizevalue.md)
+- [`getConfigInputfields(InputfieldWrapper $inputfields)`](method-getconfiginputfields.md)
 
 Constants:
-Const: [datepickerNo](const-datepickerno.md)
-Const: [datepickerClick](const-datepickerclick.md)
-Const: [datepickerInline](const-datepickerinline.md)
-Const: [datepickerFocus](const-datepickerfocus.md)
+- [`datepickerNo`](const-datepickerno.md)
+- [`datepickerClick`](const-datepickerclick.md)
+- [`datepickerInline`](const-datepickerinline.md)
+- [`datepickerFocus`](const-datepickerfocus.md)

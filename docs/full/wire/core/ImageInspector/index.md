@@ -14,9 +14,9 @@ This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 For modules that extend this, use: autoload=false, singular=false.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [inspect()](method-inspect.md)
-Method: [checkOrientation()](method-checkorientation.md)
-Method: [loadImageInfoPng()](method-loadimageinfopng.md)
-Method: [loadImageInfoGif()](method-loadimageinfogif.md)
-Method: [loadImageInfoJpg()](method-loadimageinfojpg.md)
+- [`__construct(string $filename = '')`](method-__construct.md)
+- [`inspect(string $filename = '', bool $parseAppmarker = false): null|false|array`](method-inspect.md)
+- [`checkOrientation($filename): array`](method-checkorientation.md)
+- [`loadImageInfoPng(): bool`](method-loadimageinfopng.md)
+- [`loadImageInfoGif(): bool`](method-loadimageinfogif.md)
+- [`loadImageInfoJpg()`](method-loadimageinfojpg.md)

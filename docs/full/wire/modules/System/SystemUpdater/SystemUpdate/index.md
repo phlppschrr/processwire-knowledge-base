@@ -9,7 +9,7 @@ Class SystemUpdate
 Base class for individual system updates
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [execute()](method-execute.md)
-Method: [getName()](method-getname.md)
-Method: [getVersion()](method-getversion.md)
+- [`__construct(SystemUpdater $updater)`](method-__construct.md)
+- [`execute(): int|bool`](method-execute.md)
+- [`getName(): string`](method-getname.md)
+- [`getVersion(): int`](method-getversion.md)

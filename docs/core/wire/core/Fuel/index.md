@@ -18,5 +18,5 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [set()](method-set.md)
-Method: [remove()](method-remove.md)
+- [`set(string $key, object|mixed $value, bool $lock = false): $this`](method-set.md)
+- [`remove($key): bool`](method-remove.md)

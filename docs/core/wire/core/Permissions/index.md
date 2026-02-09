@@ -13,11 +13,11 @@ The Permissions class serves as the $permissions API variable.
 Provides management of all Permission pages independent of users, for access control.
 
 Methods:
-Method: [has()](method-has.md)
-Method: [save()](method-___save.md) (hookable)
-Method: [delete()](method-___delete.md) (hookable)
-Method: [add()](method-___add.md) (hookable)
-Method: [getReducerPermissions()](method-getreducerpermissions.md)
-Method: [getIterator()](method-getiterator.md)
-Method: [saved()](method-___saved.md) (hookable)
-Method: [deleted()](method-___deleted.md) (hookable)
+- [`has(string $name): bool`](method-has.md)
+- [`save(Page $page): bool`](method-___save.md) (hookable)
+- [`delete(Page $page, bool $recursive = false): bool`](method-___delete.md) (hookable)
+- [`add(string $name): Permission|NullPage`](method-___add.md) (hookable)
+- [`getReducerPermissions(): array`](method-getreducerpermissions.md)
+- [`getIterator(): array|PageArray|\Traversable`](method-getiterator.md)
+- [`saved(Page $page, array $changes = array(), array $values = array())`](method-___saved.md) (hookable)
+- [`deleted(Page $page)`](method-___deleted.md) (hookable)

@@ -2,4 +2,4 @@
 
 Source: `wire/core/WireData.php`
 
-- [and($items = null): WireArray](method-___and.md)
+- [`and($items = null): WireArray`](method-___and.md)

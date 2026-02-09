@@ -9,10 +9,10 @@ Class FieldtypeRepeaterConfigHelper
 Helper class for configuring repeater fields
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [getField()](method-getfield.md)
-Method: [isSingleMode()](method-issinglemode.md)
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
-Method: [getConfigInputfieldsStorage()](method-getconfiginputfieldsstorage.md)
-Method: [saveConfigInputfields()](method-saveconfiginputfields.md)
-Method: [getConfigAdvancedInputfields()](method-getconfigadvancedinputfields.md)
+- [`__construct(Field $field)`](method-__construct.md)
+- [`getField(): Field`](method-getfield.md)
+- [`isSingleMode(): bool`](method-issinglemode.md)
+- [`getConfigInputfields(InputfieldWrapper $inputfields, Template $template, Page $parent): InputfieldWrapper`](method-getconfiginputfields.md)
+- [`getConfigInputfieldsStorage(InputfieldWrapper $inputfields): InputfieldFieldset`](method-getconfiginputfieldsstorage.md)
+- [`saveConfigInputfields(Template $template)`](method-saveconfiginputfields.md)
+- [`getConfigAdvancedInputfields(InputfieldWrapper $inputfields)`](method-getconfigadvancedinputfields.md)

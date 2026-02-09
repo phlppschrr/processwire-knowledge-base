@@ -9,12 +9,12 @@ ProcessWire WireSaveableItemsLookup
 Provides same functionality as WireSaveableItems except that this class includes joining/modification of a related lookup table
 
 Methods:
-Method: [getLookupTable()](method-getlookuptable.md)
-Method: [getLookupField()](method-getlookupfield.md)
-Method: [getLoadQuery()](method-getloadquery.md)
-Method: [load()](method-___load.md) (hookable)
-Method: [initItem()](method-inititem.md)
-Method: [saveItemKey()](method-saveitemkey.md)
-Method: [save()](method-___save.md) (hookable)
-Method: [delete()](method-___delete.md) (hookable)
-Method: [__debugInfo()](method-__debuginfo.md)
+- [`getLookupTable()`](method-getlookuptable.md)
+- [`getLookupField()`](method-getlookupfield.md)
+- [`getLoadQuery(Selectors|string|null $selectors = null): DatabaseQuerySelect`](method-getloadquery.md)
+- [`load(WireArray $items, Selectors|string|null $selectors = null): WireArray`](method-___load.md) (hookable)
+- [`initItem(array &$row, ?WireArray $items = null): Saveable|HasLookupItems|WireData|Wire`](method-inititem.md)
+- [`saveItemKey(string $key): bool`](method-saveitemkey.md)
+- [`save(Saveable $item): bool`](method-___save.md) (hookable)
+- [`delete(Saveable $item): bool`](method-___delete.md) (hookable)
+- [`__debugInfo(): array`](method-__debuginfo.md)

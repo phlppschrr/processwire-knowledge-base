@@ -7,5 +7,5 @@ Inputfield that doesn’t have an array value by default but can return array va
 @since 3.0.176
 
 Methods:
-Method: [getArrayValue()](method-getarrayvalue.md)
-Method: [setArrayValue()](method-setarrayvalue.md)
+- [`getArrayValue(): array`](method-getarrayvalue.md)
+- [`setArrayValue(array $value)`](method-setarrayvalue.md)

@@ -27,4 +27,4 @@ public static function getModuleInfo() {
 ~~~~~
 
 Methods:
-Method: [search()](method-search.md)
+- [`search(string $text, array $options = array()): array`](method-search.md)

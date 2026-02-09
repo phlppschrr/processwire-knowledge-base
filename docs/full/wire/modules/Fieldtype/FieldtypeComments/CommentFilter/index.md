@@ -18,4 +18,4 @@ serve as an interface for adding more in the future.
 Note that portions of code in here arefrom Akismet API examples.
 
 Methods:
-Method: [httpPost()](method-httppost.md)
+- [`httpPost($request, $host, $path, int $port = 80): array|string`](method-httppost.md)

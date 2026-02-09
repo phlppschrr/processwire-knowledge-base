@@ -9,23 +9,23 @@ Page Field (for FieldtypePage)
 Configured with FieldtypePage
 ==============================
 
-- $derefAsPage: int
-- $allowUnpub: int|bool
+- `$derefAsPage: int`
+- `$allowUnpub: int|bool`
 
 Configured with InputfieldPage
 ==============================
 
-- $template_id: int
-- $template_ids: array
-- $parent_id: int
-- $inputfield: string Inputfield class used for input
-- $labelFieldName: string Field name to use for label (note: this will be "." if $labelFieldFormat is in use).
-- $labelFieldFormat: string Formatting string for $page->getMarkup() as alternative to $labelFieldName
-- $findPagesCode: string
-- $findPagesSelector: string
-- $findPagesSelect: string Same as findPageSelector, but configured interactively with InputfieldSelector.
-- $addable: int|bool
-- $inputfieldClass: string Public property alias of protected getInputfieldClass() method
-- $inputfieldClasses: array
+- `$template_id: int`
+- `$template_ids: array`
+- `$parent_id: int`
+- `$inputfield: string` Inputfield class used for input
+- `$labelFieldName: string` Field name to use for label (note: this will be "." if $labelFieldFormat is in use).
+- `$labelFieldFormat: string` Formatting string for $page->getMarkup() as alternative to $labelFieldName
+- `$findPagesCode: string`
+- `$findPagesSelector: string`
+- `$findPagesSelect: string` Same as findPageSelector, but configured interactively with InputfieldSelector.
+- `$addable: int|bool`
+- `$inputfieldClass: string` Public property alias of protected getInputfieldClass() method
+- `$inputfieldClasses: array`
 
 @since 3.0.173

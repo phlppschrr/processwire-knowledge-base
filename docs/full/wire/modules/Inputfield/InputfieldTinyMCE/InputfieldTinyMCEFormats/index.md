@@ -9,11 +9,11 @@ InputfieldTinyMCEFormats
 Helper for managing TinyMCE style_formats and related settings
 
 Methods:
-Method: [getBlockFormats()](method-getblockformats.md)
-Method: [getStyleFormats()](method-getstyleformats.md)
-Method: [mergeStyleFormats()](method-mergestyleformats.md)
-Method: [applyStyleFormatsCSS()](method-applystyleformatscss.md)
-Method: [applyRemoveStyleFormats()](method-applyremovestyleformats.md)
-Method: [getInvalidStyles()](method-getinvalidstyles.md)
-Method: [invalidStylesStrToArray()](method-invalidstylesstrtoarray.md)
-Method: [invalidStylesArrayToStr()](method-invalidstylesarraytostr.md)
+- [`getBlockFormats(): string`](method-getblockformats.md)
+- [`getStyleFormats(array $defaults): array|mixed`](method-getstyleformats.md)
+- [`mergeStyleFormats(array $styleFormats, array $addFormats): array`](method-mergestyleformats.md)
+- [`applyStyleFormatsCSS(string $css, array &$settings, array $defaults)`](method-applystyleformatscss.md)
+- [`applyRemoveStyleFormats(array $styleFormats): array`](method-applyremovestyleformats.md)
+- [`getInvalidStyles(string|array $value, array|string $defaultValue, bool $merge = false): array|string`](method-getinvalidstyles.md)
+- [`invalidStylesStrToArray(string $value, array $a = array()): array`](method-invalidstylesstrtoarray.md)
+- [`invalidStylesArrayToStr(array $a): string`](method-invalidstylesarraytostr.md)

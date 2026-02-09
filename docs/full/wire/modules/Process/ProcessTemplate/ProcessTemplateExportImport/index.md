@@ -9,9 +9,9 @@ Groups:
 Group: [other](group-other.md)
 
 Methods:
-Method: [getExportData()](method-getexportdata.md)
-Method: [buildExport()](method-___buildexport.md) (hookable)
-Method: [buildInputDataForm()](method-___buildinputdataform.md) (hookable)
-Method: [buildImport()](method-___buildimport.md) (hookable)
-Method: [processImport()](method-___processimport.md) (hookable)
-Method: [saveItem()](method-saveitem.md)
+- [`getExportData(array $exportTemplates): array`](method-getexportdata.md)
+- [`buildExport(): InputfieldForm`](method-___buildexport.md) (hookable)
+- [`buildInputDataForm(): InputfieldForm`](method-___buildinputdataform.md) (hookable)
+- [`buildImport(): string`](method-___buildimport.md) (hookable)
+- [`processImport()`](method-___processimport.md) (hookable)
+- [`saveItem(Template $item, array $changes)`](method-saveitem.md)

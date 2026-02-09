@@ -7,10 +7,10 @@ Inherits: `RepeaterPage`
 FieldsetPage represents Page objects used by the FieldtypeFieldsetPage module
 
 Methods:
-Method: [trackChange()](method-trackchange.md)
-Method: [get()](method-get.md)
-Method: [getOf()](method-getof.md)
-Method: [getUnformatted()](method-getunformatted.md)
-Method: [getFormatted()](method-getformatted.md)
-Method: [getForPage()](method-getforpage.md)
-Method: [getForField()](method-getforfield.md)
+- [`trackChange(string $what, mixed $old = null, mixed $new = null): $this`](method-trackchange.md)
+- [`get(string $key): mixed`](method-get.md)
+- [`getOf(string $key, bool $of): mixed`](method-getof.md)
+- [`getUnformatted(string $key): mixed`](method-getunformatted.md)
+- [`getFormatted(string $key): mixed`](method-getformatted.md)
+- [`getForPage(): Page`](method-getforpage.md)
+- [`getForField(): Field`](method-getforfield.md)

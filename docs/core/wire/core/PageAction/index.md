@@ -17,6 +17,6 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [getItemType()](method-getitemtype.md)
-Method: [getItemType()](method-getitemtype.md)
-Method: [execute()](method-execute.md)
+- [`getItemType(): array`](method-getitemtype.md)
+- [`getItemType(): string`](method-getitemtype.md)
+- [`execute(Page $item): bool`](method-execute.md)

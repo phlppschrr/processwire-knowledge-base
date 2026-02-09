@@ -7,6 +7,6 @@ Interface LanguagesValueInterface
 Interface for multi-language fields
 
 Methods:
-Method: [setLanguageValue()](method-setlanguagevalue.md)
-Method: [getLanguageValue()](method-getlanguagevalue.md)
-Method: [setFromInputfield()](method-setfrominputfield.md)
+- [`setLanguageValue(int|Language $languageID, mixed $value)`](method-setlanguagevalue.md)
+- [`getLanguageValue($languageID): string|mixed`](method-getlanguagevalue.md)
+- [`setFromInputfield(Inputfield $inputfield)`](method-setfrominputfield.md)

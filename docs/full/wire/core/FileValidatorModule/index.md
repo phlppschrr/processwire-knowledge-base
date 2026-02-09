@@ -37,10 +37,10 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [getModuleInfo()](method-getmoduleinfo.md)
-Method: [isValidFile()](method-isvalidfile.md)
-Method: [isValid()](method-isvalid.md)
-Method: [getPage()](method-getpage.md)
-Method: [getField()](method-getfield.md)
-Method: [getPagefile()](method-getpagefile.md)
-Method: [log()](method-___log.md) (hookable)
+- [`getModuleInfo(): array`](method-getmoduleinfo.md)
+- [`isValidFile(string $filename): bool|int`](method-isvalidfile.md)
+- [`isValid(string $filename): bool|int`](method-isvalid.md)
+- [`getPage(): NullPage|Page`](method-getpage.md)
+- [`getField(): null|Field`](method-getfield.md)
+- [`getPagefile(): Pagefile|null`](method-getpagefile.md)
+- [`log(string $str = '', array $options = array()): WireLog|null`](method-___log.md) (hookable)

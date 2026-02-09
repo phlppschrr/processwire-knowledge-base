@@ -293,7 +293,9 @@ def format_tag_lines(
                 label = stripped
             if target is not None and name:
                 rel_link = Path(os.path.relpath(str(target), start=str(output_path.parent)))
-                label = f"[{label}]({rel_link.as_posix()})"
+                label = f"[`{label}`]({rel_link.as_posix()})"
+            else:
+                label = f"`{label}`"
             line_text = f"- {label}"
             if desc:
                 line_text = f"{line_text} {desc}"
@@ -319,7 +321,7 @@ def format_tag_lines(
             if target is not None and name:
                 rel_link = Path(os.path.relpath(str(target), start=str(output_path.parent)))
                 label = f"{name}: {prop_type}" if prop_type else name
-                label = f"[{label}]({rel_link.as_posix()})"
+                label = f"[`{label}`]({rel_link.as_posix()})"
             else:
                 if name and prop_type:
                     label = f"{name}: {prop_type}"
@@ -327,6 +329,7 @@ def format_tag_lines(
                     label = name
                 else:
                     label = stripped
+                label = f"`{label}`"
             line_text = f"- {label}"
             if desc:
                 line_text = f"{line_text} {desc}"
@@ -344,6 +347,70 @@ def split_intro_sections(lines: list[str]) -> tuple[list[str], list[str]]:
         if SECTION_SPLIT_RE.match(line.strip()):
             return lines[:idx], lines[idx:]
     return lines, []
+
+
+def extract_param_type_map(docblock: str | None) -> dict[str, str]:
+    if not docblock:
+        return {}
+    types: dict[str, str] = {}
+    for raw in strip_docblock(docblock):
+        stripped = raw.strip()
+        if not stripped.startswith("@param"):
+            continue
+        cleaned = remove_inline_directives(stripped)
+        text = cleaned[len("@param") :].strip()
+        parsed = parse_param_tag(text)
+        if not parsed:
+            continue
+        param_type, param_name, _ = parsed
+        if param_type and param_name:
+            types[param_name] = param_type
+    return types
+
+
+def extract_return_type(docblock: str | None) -> str | None:
+    if not docblock:
+        return None
+    for raw in strip_docblock(docblock):
+        stripped = raw.strip()
+        if not stripped.startswith("@return"):
+            continue
+        cleaned = remove_inline_directives(stripped)
+        text = cleaned[len("@return") :].strip()
+        ret_type, _ = split_type_and_desc(text)
+        if ret_type:
+            return ret_type
+    return None
+
+
+def build_signature_with_types(member: MemberDoc) -> str:
+    sig = member.signature_params or ""
+    if sig.strip() == "":
+        return "()"
+    parts = split_signature_params(sig)
+    if not parts:
+        return "()"
+    param_types = extract_param_type_map(member.docblock)
+    updated_parts: list[str] = []
+    for part in parts:
+        match = re.search(r"(\$[A-Za-z_][A-Za-z0-9_]*)", part)
+        if not match:
+            updated_parts.append(part.strip())
+            continue
+        name = match.group(1)
+        prefix = part[: match.start()]
+        suffix = part[match.end() :]
+        prefix_clean = prefix.replace("&", "").replace("...", "").strip()
+        if prefix_clean == "" and name in param_types:
+            modifiers = prefix.strip()
+            if modifiers:
+                new_part = f"{param_types[name]} {modifiers}{name}{suffix}"
+            else:
+                new_part = f"{param_types[name]} {name}{suffix}"
+            updated_parts.append(new_part.strip())
+        else:
+            updated_parts.append(part.strip())
+    return f"({', '.join(updated_parts)})"
 
 
 def collect_virtual_members(
@@ -1672,11 +1739,15 @@ def write_doc(
         if member.kind == "method":
             display_name, is_hookable = hookable_display_name(member.name)
             hook_label = " (hookable)" if is_hookable else ""
+            signature = build_signature_with_types(member)
+            return_type = member.signature_return or extract_return_type(member.docblock)
+            ret_label = f": {return_type}" if return_type else ""
+            label = f"{display_name}{signature}{ret_label}"
             method_links.append(
-                f"Method: [{display_name}()](method-{slugify(member.name)}.md){hook_label}"
+                f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}"
             )
         else:
-            const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
+            const_links.append(f"- [`{member.name}`](const-{slugify(member.name)}.md)")
 
     if method_links:
         if lines and lines[-1] != "":
@@ -1837,18 +1908,24 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
         if member.kind == "method":
             display_name, is_hookable = hookable_display_name(member.name)
             hook_label = " (hookable)" if is_hookable else ""
+            signature = build_signature_with_types(member)
+            return_type = member.signature_return or extract_return_type(member.docblock)
+            ret_label = f": {return_type}" if return_type else ""
+            label = f"{display_name}{signature}{ret_label}"
             method_links.append(
-                f"Method: [{display_name}()](method-{slugify(member.name)}.md){hook_label}"
+                f"- [`{label}`](method-{slugify(member.name)}.md){hook_label}"
             )
         else:
-            const_links.append(f"Const: [{member.name}](const-{slugify(member.name)}.md)")
+            const_links.append(f"- [`{member.name}`](const-{slugify(member.name)}.md)")
 
     if method_links:
-        lines.append("")
+        if lines and lines[-1] != "":
+            lines.append("")
         lines.append("Methods:")
         lines.extend(method_links)
     if const_links:
-        lines.append("")
+        if lines and lines[-1] != "":
+            lines.append("")
         lines.append("Constants:")
         lines.extend(const_links)
 
@@ -2091,7 +2168,7 @@ def collect_function_entries(
             if not cleaned or member.kind != "method":
                 continue
             func_name = member.name
-            doc_path = (file_dir / f"method-{slugify(func_name)}.md").as_posix()
+            doc_path = rel_out_path(file_dir / f"method-{slugify(func_name)}.md", out_dir)
             entries.append({"key": func_name, "label": f"- [{func_name}()]({doc_path})"})
     return entries
 

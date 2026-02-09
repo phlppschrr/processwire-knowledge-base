@@ -9,19 +9,19 @@ Page Table Field (for FieldtypePageTable)
 Configured with FieldtypePageTable
 ==================================
 
-- $autoTrash: int|bool Deprecated, replaced by trashOnDelete
-- $trashOnDelete: int
-- $unpubOnTrash: int
-- $unpubOnUnpub: int
-- $template_id: int|array
-- $parent_id: int
-- $sortfields: string
+- `$autoTrash: int|bool` Deprecated, replaced by trashOnDelete
+- `$trashOnDelete: int`
+- `$unpubOnTrash: int`
+- `$unpubOnUnpub: int`
+- `$template_id: int|array`
+- `$parent_id: int`
+- `$sortfields: string`
 
 Configured with InputfieldPageTable
 ===================================
 
-- $columns: string
-- $nameFormat: string
-- $noclose: int
+- `$columns: string`
+- `$nameFormat: string`
+- `$noclose: int`
 
 @since 3.0.221

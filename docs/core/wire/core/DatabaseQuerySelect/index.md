@@ -28,9 +28,9 @@ This is what gets passed to Fieldtype::getMatchQuery() method calls as propertie
 available from the $query argument.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [getQuery()](method-getquery.md)
-Method: [orderby()](method-orderby.md)
-Method: [getQuerySelect()](method-getqueryselect.md)
-Method: [getQueryGroupby()](method-getquerygroupby.md)
-Method: [getQueryLimit()](method-getquerylimit.md)
+- [`__construct()`](method-__construct.md)
+- [`getQuery()`](method-getquery.md)
+- [`orderby(string|array $value, bool $prepend = false): $this`](method-orderby.md)
+- [`getQuerySelect(): string`](method-getqueryselect.md)
+- [`getQueryGroupby(): string`](method-getquerygroupby.md)
+- [`getQueryLimit(): string`](method-getquerylimit.md)

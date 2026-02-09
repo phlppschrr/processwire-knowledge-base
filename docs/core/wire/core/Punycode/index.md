@@ -29,16 +29,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [encode()](method-encode.md)
-Method: [encodePart()](method-encodepart.md)
-Method: [decode()](method-decode.md)
-Method: [decodePart()](method-decodepart.md)
-Method: [calculateThreshold()](method-calculatethreshold.md)
-Method: [adapt()](method-adapt.md)
-Method: [listCodePoints()](method-listcodepoints.md)
-Method: [charToCodePoint()](method-chartocodepoint.md)
-Method: [codePointToChar()](method-codepointtochar.md)
+- [`__construct(string $encoding = 'UTF-8')`](method-__construct.md)
+- [`encode(string $input): string`](method-encode.md)
+- [`encodePart(string $input): string`](method-encodepart.md)
+- [`decode(string $input): string`](method-decode.md)
+- [`decodePart(string $input): string`](method-decodepart.md)
+- [`calculateThreshold(integer $k, integer $bias): integer`](method-calculatethreshold.md)
+- [`adapt(integer $delta, integer $numPoints, boolean $firstTime): integer`](method-adapt.md)
+- [`listCodePoints(string $input): array`](method-listcodepoints.md)
+- [`charToCodePoint(string $char): integer`](method-chartocodepoint.md)
+- [`codePointToChar(integer $code): string`](method-codepointtochar.md)
 
 Constants:
-Const: [BASE](const-base.md)
+- [`BASE`](const-base.md)

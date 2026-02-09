@@ -5,7 +5,7 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/config.php`
 Inherits: `Wire`
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [configModule()](method-configmodule.md)
-Method: [configInputfield()](method-configinputfield.md)
-Method: [configTests()](method-configtests.md)
+- [`__construct(AdminThemeUikit $adminTheme)`](method-__construct.md)
+- [`configModule(InputfieldWrapper $inputfields)`](method-configmodule.md)
+- [`configInputfield(Inputfield $inputfield, InputfieldWrapper $inputfields)`](method-configinputfield.md)
+- [`configTests(InputfieldWrapper $inputfields)`](method-configtests.md)

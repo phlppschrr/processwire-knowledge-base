@@ -9,6 +9,6 @@ Helper class for PHP 5.6+ __debugInfo() methods in Wire classes
 Class WireDebugInfo
 
 Methods:
-Method: [getDebugInfo()](method-getdebuginfo.md)
-Method: [getHooksInfo()](method-gethooksinfo.md)
-Method: [Page()](method-page.md)
+- [`getDebugInfo(Wire $obj, bool $small = false): array`](method-getdebuginfo.md)
+- [`getHooksInfo(Wire $obj): array`](method-gethooksinfo.md)
+- [`Page(Page $page, bool $small = false): array`](method-page.md)

@@ -5,4 +5,4 @@ Source: `wire/core/Interfaces.php`
 Indicates Fieldtype manages Pageimage objects
 
 Methods:
-Method: [getPageimages()](method-getpageimages.md)
+- [`getPageimages(Page $page, Field $field): Pageimages|Pageimage[]`](method-getpageimages.md)

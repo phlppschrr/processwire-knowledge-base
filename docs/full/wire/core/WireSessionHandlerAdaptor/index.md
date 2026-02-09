@@ -23,10 +23,10 @@ Used on PHP 8.4+ installations only. Necessary because:
 @since 3.0.255
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [close()](method-close.md)
-Method: [destroy()](method-destroy.md)
-Method: [gc()](method-gc.md)
-Method: [open()](method-open.md)
-Method: [read()](method-read.md)
-Method: [write()](method-write.md)
+- [`__construct(WireSessionHandler $handler)`](method-__construct.md)
+- [`close(): bool`](method-close.md)
+- [`destroy(string $id): bool`](method-destroy.md)
+- [`gc(int $max_lifetime): int|false`](method-gc.md)
+- [`open(string $path, string $name): bool`](method-open.md)
+- [`read(string $id): string|false`](method-read.md)
+- [`write(string $id, string $data): bool`](method-write.md)

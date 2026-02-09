@@ -9,12 +9,12 @@ Class ProcessPageListerBookmarks
 Helper class for managing ProcessPageLister bookmarks
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [bookmarks()](method-bookmarks.md)
-Method: [setPage()](method-setpage.md)
-Method: [setUser()](method-setuser.md)
-Method: [buildBookmarkListForm()](method-buildbookmarklistform.md)
-Method: [buildBookmarkDeleteForm()](method-buildbookmarkdeleteform.md)
-Method: [buildBookmarkEditForm()](method-buildbookmarkeditform.md)
-Method: [executeEditBookmark()](method-executeeditbookmark.md)
-Method: [executeSaveBookmark()](method-executesavebookmark.md)
+- [`__construct(ProcessPageLister $lister)`](method-__construct.md)
+- [`bookmarks(): ListerBookmarks`](method-bookmarks.md)
+- [`setPage(Page $page)`](method-setpage.md)
+- [`setUser(User $user)`](method-setuser.md)
+- [`buildBookmarkListForm(): InputfieldForm`](method-buildbookmarklistform.md)
+- [`buildBookmarkDeleteForm(int $bookmarkID): InputfieldFieldset`](method-buildbookmarkdeleteform.md)
+- [`buildBookmarkEditForm(int $bookmarkID = 0): InputfieldWrapper`](method-buildbookmarkeditform.md)
+- [`executeEditBookmark(): string`](method-executeeditbookmark.md)
+- [`executeSaveBookmark()`](method-executesavebookmark.md)

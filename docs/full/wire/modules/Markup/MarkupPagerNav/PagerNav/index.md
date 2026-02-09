@@ -19,6 +19,6 @@ foreach($pager as $pageLabel => $pageNum) {
 ```
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [getPager()](method-getpager.md)
-Method: [setLabels()](method-setlabels.md)
+- [`__construct(int $totalItems, int $itemsPerPage, int $currentPage)`](method-__construct.md)
+- [`getPager(): array`](method-getpager.md)
+- [`setLabels(string $previous, string $next)`](method-setlabels.md)

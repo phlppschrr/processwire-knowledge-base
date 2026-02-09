@@ -9,5 +9,5 @@ A WireArray of Inputfield instances, as used by InputfieldWrapper.
 The default numeric indexing of a WireArray is not overridden.
 
 Methods:
-Method: [isValidItem()](method-isvaliditem.md)
-Method: [find()](method-find.md)
+- [`isValidItem(Wire $item): bool`](method-isvaliditem.md)
+- [`find(string $selector): WireArray|InputfieldsArray`](method-find.md)

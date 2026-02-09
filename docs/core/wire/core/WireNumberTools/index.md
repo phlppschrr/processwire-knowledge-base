@@ -10,8 +10,8 @@ Tools for working with numbers
 @since 3.0.213
 
 Methods:
-Method: [uniqueNumber()](method-uniquenumber.md)
-Method: [randomInteger()](method-randominteger.md)
-Method: [strToBytes()](method-strtobytes.md)
-Method: [bytesToStr()](method-bytestostr.md)
-Method: [locale()](method-locale.md)
+- [`uniqueNumber(array|string $options = array()): int`](method-uniquenumber.md)
+- [`randomInteger(int $min, int $max, bool $throw = false): int`](method-randominteger.md)
+- [`strToBytes(string|int|float $value, string|null $unit = null): int`](method-strtobytes.md)
+- [`bytesToStr(int|string $bytes, array|int $options = array()): string`](method-bytestostr.md)
+- [`locale(string $key = ''): array|string|int|null`](method-locale.md)

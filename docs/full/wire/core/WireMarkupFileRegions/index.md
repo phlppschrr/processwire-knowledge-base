@@ -152,13 +152,13 @@ takes care of moving them to externally linked assets.
 @since 3.0.254
 
 Methods:
-Method: [getDefaults()](method-getdefaults.md)
-Method: [apply()](method-apply.md)
-Method: [findRegions()](method-findregions.md)
-Method: [populateRegions()](method-populateregions.md)
-Method: [applyRegionNamespace()](method-applyregionnamespace.md)
-Method: [applyRegionLinks()](method-applyregionlinks.md)
-Method: [addNote()](method-addnote.md)
-Method: [getNotes()](method-getnotes.md)
-Method: [addError()](method-adderror.md)
-Method: [getErrors()](method-geterrors.md)
+- [`getDefaults(): array`](method-getdefaults.md)
+- [`apply(string &$htmlDocument, string &$htmlRegions, array $options = []): int`](method-apply.md)
+- [`findRegions(string &$html, array $options): array`](method-findregions.md)
+- [`populateRegions(array $fileRegions, string &$html, array $options = []): string`](method-populateregions.md)
+- [`applyRegionNamespace(array &$region)`](method-applyregionnamespace.md)
+- [`applyRegionLinks(string &$html, string $basename, string $url, string $ext, array $options): string`](method-applyregionlinks.md)
+- [`addNote(string $note)`](method-addnote.md)
+- [`getNotes(): array`](method-getnotes.md)
+- [`addError(string $key, string $error)`](method-adderror.md)
+- [`getErrors(string $key = ''): array`](method-geterrors.md)

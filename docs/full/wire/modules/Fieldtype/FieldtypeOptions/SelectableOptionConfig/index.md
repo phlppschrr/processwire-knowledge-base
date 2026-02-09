@@ -7,6 +7,6 @@ Inherits: `Wire`
 Inputfields and processing for Select Options Fieldtype
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [process()](method-process.md)
-Method: [getConfigInputfields()](method-getconfiginputfields.md)
+- [`__construct(Field $field, InputfieldWrapper $inputfields)`](method-__construct.md)
+- [`process(Inputfield $inputfield)`](method-process.md)
+- [`getConfigInputfields(): InputfieldWrapper`](method-getconfiginputfields.md)

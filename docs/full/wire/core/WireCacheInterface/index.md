@@ -10,8 +10,8 @@ WireCacheDatabase (core) and WireCacheFilesystem (module)
 @since 3.0.218
 
 Methods:
-Method: [find()](method-find.md)
-Method: [save()](method-save.md)
-Method: [delete()](method-delete.md)
-Method: [deleteAll()](method-deleteall.md)
-Method: [expireAll()](method-expireall.md)
+- [`find(array $options): array`](method-find.md)
+- [`save(string $name, string $data, string $expire): bool`](method-save.md)
+- [`delete(string $name): bool`](method-delete.md)
+- [`deleteAll(): int`](method-deleteall.md)
+- [`expireAll(): int`](method-expireall.md)

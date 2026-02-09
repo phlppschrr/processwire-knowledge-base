@@ -13,10 +13,10 @@ safety while maintaining reasonable speeds when iterating over a large set of Pa
 Thanks to Avoine and @sforsman for this.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [loadChunk()](method-loadchunk.md)
-Method: [rewind()](method-rewind.md)
-Method: [current()](method-current.md)
-Method: [key()](method-key.md)
-Method: [next()](method-next.md)
-Method: [valid()](method-valid.md)
+- [`__construct(array $lazypages, array $options = [])`](method-__construct.md)
+- [`loadChunk()`](method-loadchunk.md)
+- [`rewind()`](method-rewind.md)
+- [`current(): Page`](method-current.md)
+- [`key(): int`](method-key.md)
+- [`next()`](method-next.md)
+- [`valid(): bool`](method-valid.md)

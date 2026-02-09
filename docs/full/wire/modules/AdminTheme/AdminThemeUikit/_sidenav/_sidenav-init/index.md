@@ -2,16 +2,15 @@
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 
-
 Methods:
-Method: [isMobileWidth()](method-ismobilewidth.md)
-Method: [toggleSidebarPane()](method-togglesidebarpane.md)
-Method: [toggleTreePane()](method-toggletreepane.md)
-Method: [closeTreePane()](method-closetreepane.md)
-Method: [hideTreePane()](method-hidetreepane.md)
-Method: [openTreePane()](method-opentreepane.md)
-Method: [showTreePane()](method-showtreepane.md)
-Method: [treePaneClosed()](method-treepaneclosed.md)
-Method: [treePaneHidden()](method-treepanehidden.md)
-Method: [sidebarPaneClosed()](method-sidebarpaneclosed.md)
-Method: [refreshTreePane()](method-refreshtreepane.md)
+- [`isMobileWidth()`](method-ismobilewidth.md)
+- [`toggleSidebarPane()`](method-togglesidebarpane.md)
+- [`toggleTreePane()`](method-toggletreepane.md)
+- [`closeTreePane()`](method-closetreepane.md)
+- [`hideTreePane()`](method-hidetreepane.md)
+- [`openTreePane()`](method-opentreepane.md)
+- [`showTreePane()`](method-showtreepane.md)
+- [`treePaneClosed()`](method-treepaneclosed.md)
+- [`treePaneHidden()`](method-treepanehidden.md)
+- [`sidebarPaneClosed()`](method-sidebarpaneclosed.md)
+- [`refreshTreePane(pageID)`](method-refreshtreepane.md)

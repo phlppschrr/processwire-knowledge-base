@@ -15,8 +15,8 @@ Code by Ryan Cramer
 Sponsored by Avoine
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [checkAjax()](method-___checkajax.md) (hookable)
-Method: [renderAjax()](method-renderajax.md)
-Method: [addItem()](method-additem.md)
-Method: [sortItems()](method-sortitems.md)
+- [`__construct()`](method-__construct.md)
+- [`checkAjax()`](method-___checkajax.md) (hookable)
+- [`renderAjax(Page $page, Field $field)`](method-renderajax.md)
+- [`addItem(Page $page, Field $field, Page $item): bool`](method-additem.md)
+- [`sortItems(Page $page, Field $field, string $sort)`](method-sortitems.md)

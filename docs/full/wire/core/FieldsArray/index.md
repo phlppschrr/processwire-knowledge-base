@@ -9,7 +9,7 @@ ProcessWire Fields Array
 WireArray of Field instances, as used by Fields class
 
 Methods:
-Method: [isValidItem()](method-isvaliditem.md)
-Method: [isValidKey()](method-isvalidkey.md)
-Method: [getItemKey()](method-getitemkey.md)
-Method: [makeBlankItem()](method-makeblankitem.md)
+- [`isValidItem(Wire $item): bool`](method-isvaliditem.md)
+- [`isValidKey(int $key): bool`](method-isvalidkey.md)
+- [`getItemKey(Field $item): int`](method-getitemkey.md)
+- [`makeBlankItem(): Field`](method-makeblankitem.md)

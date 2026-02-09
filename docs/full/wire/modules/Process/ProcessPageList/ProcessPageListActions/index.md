@@ -11,8 +11,8 @@ Group: [other](group-other.md)
 Actions manager for ProcessPageList
 
 Methods:
-Method: [setActionLabels()](method-setactionlabels.md)
-Method: [setUseTrash()](method-setusetrash.md)
-Method: [getActions()](method-___getactions.md) (hookable)
-Method: [getExtraActions()](method-___getextraactions.md) (hookable)
-Method: [processAction()](method-___processaction.md) (hookable)
+- [`setActionLabels(array $actionLabels)`](method-setactionlabels.md)
+- [`setUseTrash(bool $useTrash)`](method-setusetrash.md)
+- [`getActions(Page $page): array`](method-___getactions.md) (hookable)
+- [`getExtraActions(Page $page): array`](method-___getextraactions.md) (hookable)
+- [`processAction(Page $page, string $action): array`](method-___processaction.md) (hookable)

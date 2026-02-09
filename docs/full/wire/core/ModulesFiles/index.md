@@ -7,10 +7,10 @@ Inherits: `ModulesClass`
 ProcessWire Modules: Files
 
 Methods:
-Method: [moduleFileExt()](method-modulefileext.md)
-Method: [findModuleFiles()](method-findmodulefiles.md)
-Method: [getModuleFile()](method-getmodulefile.md)
-Method: [includeModuleFile()](method-includemodulefile.md)
-Method: [compile()](method-compile.md)
-Method: [getModuleLanguageFiles()](method-getmodulelanguagefiles.md)
-Method: [setConfigPaths()](method-setconfigpaths.md)
+- [`moduleFileExt(string $class, int $setValue = null): int`](method-modulefileext.md)
+- [`findModuleFiles(string $path, bool $readCache = false, int $level = 0): array`](method-findmodulefiles.md)
+- [`getModuleFile(string|Module $class, array|bool $options = array()): bool|string`](method-getmodulefile.md)
+- [`includeModuleFile(string $file, string $moduleName): bool`](method-includemodulefile.md)
+- [`compile(Module|string $moduleName, string $file = '', string|null $namespace = null): string|bool`](method-compile.md)
+- [`getModuleLanguageFiles(Module|string $module): array`](method-getmodulelanguagefiles.md)
+- [`setConfigPaths(string $moduleName, string $path)`](method-setconfigpaths.md)

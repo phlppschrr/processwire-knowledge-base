@@ -13,9 +13,9 @@ InputfieldTinyMCEClass
 Helper for managing TinyMCE settings and defaults
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [__get()](method-__get.md)
-Method: [tools()](method-tools.md)
-Method: [configs()](method-configs.md)
-Method: [settings()](method-settings.md)
-Method: [formats()](method-formats.md)
+- [`__construct(InputfieldTinyMCE $inputfield)`](method-__construct.md)
+- [`__get($name): array|mixed|string|null`](method-__get.md)
+- [`tools(): InputfieldTinyMCETools`](method-tools.md)
+- [`configs(): InputfieldTinyMCEConfigs`](method-configs.md)
+- [`settings(): InputfieldTinyMCESettings`](method-settings.md)
+- [`formats(): InputfieldTinyMCEFormats`](method-formats.md)

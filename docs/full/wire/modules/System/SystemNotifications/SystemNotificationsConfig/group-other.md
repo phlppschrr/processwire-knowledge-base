@@ -2,4 +2,4 @@
 
 Source: `wire/modules/System/SystemNotifications/SystemNotificationsConfig.php`
 
-- $systemUserName: string
+- `$systemUserName: string`

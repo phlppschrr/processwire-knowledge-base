@@ -7,7 +7,7 @@ Inherits: `ModulesClass`
 ProcessWire Modules: Installer
 
 Methods:
-Method: [install()](method-install.md)
-Method: [delete()](method-delete.md)
-Method: [uninstall()](method-uninstall.md)
-Method: [getModuleInstallUrl()](method-getmoduleinstallurl.md)
+- [`install(string $class, array|bool $options = array()): null|Module`](method-install.md)
+- [`delete(string $class): bool`](method-delete.md)
+- [`uninstall(string $class): bool`](method-uninstall.md)
+- [`getModuleInstallUrl(string $className): string`](method-getmoduleinstallurl.md)

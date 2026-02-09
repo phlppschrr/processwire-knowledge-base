@@ -17,6 +17,6 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [format()](method-format.md)
-Method: [format()](method-format.md)
-Method: [formatValue()](method-formatvalue.md)
+- [`format(&$str): array`](method-format.md)
+- [`format(string &$str)`](method-format.md)
+- [`formatValue(Page $page, Field $field, string|mixed &$value)`](method-formatvalue.md)

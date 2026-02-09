@@ -18,4 +18,4 @@ Selector for advanced text searches that interprets specific search commands
 Note that to designate a phrase, it must be in "double quotes" (not 'single quotes').
 
 Methods:
-Method: [valueToCommands()](method-valuetocommands.md)
+- [`valueToCommands(string $value): array`](method-valuetocommands.md)

@@ -23,8 +23,8 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 Methods:
-Method: [getModuleInfo()](method-getmoduleinfo.md)
-Method: [addComponent()](method-addcomponent.md)
-Method: [addComponents()](method-addcomponents.md)
-Method: [init()](method-init.md)
-Method: [use()](method-___use.md) (hookable)
+- [`getModuleInfo()`](method-getmoduleinfo.md)
+- [`addComponent(string $name, string $file): $this`](method-addcomponent.md)
+- [`addComponents(array $components): $this`](method-addcomponents.md)
+- [`init()`](method-init.md)
+- [`use($name): $this`](method-___use.md) (hookable)

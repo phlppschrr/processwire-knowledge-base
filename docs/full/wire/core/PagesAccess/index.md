@@ -24,10 +24,10 @@ Pages using templates that already define their access (determined by $template-
 are omitted from the pages_access table, as they aren't necessary.
 
 Methods:
-Method: [__construct()](method-__construct.md)
-Method: [rebuild()](method-rebuild.md)
-Method: [updateTemplate()](method-___updatetemplate.md) (hookable)
-Method: [updatePage()](method-___updatepage.md) (hookable)
-Method: [deletePage()](method-deletepage.md)
-Method: [getTemplates()](method-gettemplates.md)
-Method: [getAccessTemplates()](method-getaccesstemplates.md)
+- [`__construct($item = null)`](method-__construct.md)
+- [`rebuild(int $parent_id = 1, int $accessTemplateID = 0, bool $doDeletions = true)`](method-rebuild.md)
+- [`updateTemplate(Template $template)`](method-___updatetemplate.md) (hookable)
+- [`updatePage(Page $page)`](method-___updatepage.md) (hookable)
+- [`deletePage(Page $page)`](method-deletepage.md)
+- [`getTemplates()`](method-gettemplates.md)
+- [`getAccessTemplates()`](method-getaccesstemplates.md)
