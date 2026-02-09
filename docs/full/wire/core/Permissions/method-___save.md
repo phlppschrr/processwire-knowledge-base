@@ -14,13 +14,21 @@ $bool = $permissions->save($page);
 $bool = $permissions->save(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Permission|Page`
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$permissions->save()`
+- Hook with: `Permissions::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Permissions::save', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Permissions::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Permissions::save', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('Permissions::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Permission|Page`
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

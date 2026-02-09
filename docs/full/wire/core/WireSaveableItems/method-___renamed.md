@@ -14,13 +14,19 @@ $result = $wireSaveableItems->renamed($item, $oldName, $newName);
 $result = $wireSaveableItems->renamed(Saveable $item, $oldName, $newName);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable`
+- `$oldName` `string`
+- `$newName` `string`
+
+## Hooking
 
 - Hookable method name: `renamed`
 - Implementation: `___renamed`
-- Hook with: `$wireSaveableItems->renamed()`
+- Hook with: `WireSaveableItems::renamed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::renamed', function(HookEvent $event) {
@@ -40,7 +46,7 @@ $this->addHookBefore('WireSaveableItems::renamed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::renamed', function(HookEvent $event) {
@@ -58,9 +64,3 @@ $this->addHookAfter('WireSaveableItems::renamed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable`
-- `$oldName` `string`
-- `$newName` `string`

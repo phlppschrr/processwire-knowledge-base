@@ -30,13 +30,22 @@ $array = $templates->setImportData($template, $data);
 $array = $templates->setImportData(Template $template, array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$template` `Template` Template you want to import to
+- `$data` `array` Import data array (must have been exported from getExportData() method).
+
+## Return value
+
+- `array` Returns array with list of changes (see example in method description)
+
+## Hooking
 
 - Hookable method name: `setImportData`
 - Implementation: `___setImportData`
-- Hook with: `$templates->setImportData()`
+- Hook with: `Templates::setImportData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::setImportData', function(HookEvent $event) {
@@ -54,7 +63,7 @@ $this->addHookBefore('Templates::setImportData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::setImportData', function(HookEvent $event) {
@@ -71,12 +80,3 @@ $this->addHookAfter('Templates::setImportData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$template` `Template` Template you want to import to
-- `$data` `array` Import data array (must have been exported from getExportData() method).
-
-## Return value
-
-- `array` Returns array with list of changes (see example in method description)

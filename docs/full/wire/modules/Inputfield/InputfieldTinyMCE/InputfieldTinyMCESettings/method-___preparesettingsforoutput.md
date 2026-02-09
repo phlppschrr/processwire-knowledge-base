@@ -16,13 +16,21 @@ $array = $inputfieldTinyMCESettings->prepareSettingsForOutput($settings);
 $array = $inputfieldTinyMCESettings->prepareSettingsForOutput(array $settings);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$settings` `array`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `prepareSettingsForOutput`
 - Implementation: `___prepareSettingsForOutput`
-- Hook with: `$inputfieldTinyMCESettings->prepareSettingsForOutput()`
+- Hook with: `InputfieldTinyMCESettings::prepareSettingsForOutput`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldTinyMCESettings::prepareSettingsForOutput', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('InputfieldTinyMCESettings::prepareSettingsForOutput', func
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldTinyMCESettings::prepareSettingsForOutput', function(HookEvent $event) {
@@ -54,11 +62,3 @@ $this->addHookAfter('InputfieldTinyMCESettings::prepareSettingsForOutput', funct
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$settings` `array`
-
-## Return value
-
-- `array`

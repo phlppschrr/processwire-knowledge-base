@@ -20,13 +20,22 @@ $bool = $fields->deleteFieldDataByTemplate($field, $template);
 $bool = $fields->deleteFieldDataByTemplate(Field $field, Template $template);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+- `$template` `Template`
+
+## Return value
+
+- `bool` Whether or not it was successful
+
+## Hooking
 
 - Hookable method name: `deleteFieldDataByTemplate`
 - Implementation: `___deleteFieldDataByTemplate`
-- Hook with: `$fields->deleteFieldDataByTemplate()`
+- Hook with: `Fields::deleteFieldDataByTemplate`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::deleteFieldDataByTemplate', function(HookEvent $event) {
@@ -44,7 +53,7 @@ $this->addHookBefore('Fields::deleteFieldDataByTemplate', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::deleteFieldDataByTemplate', function(HookEvent $event) {
@@ -61,15 +70,6 @@ $this->addHookAfter('Fields::deleteFieldDataByTemplate', function(HookEvent $eve
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-- `$template` `Template`
-
-## Return value
-
-- `bool` Whether or not it was successful
 
 ## Exceptions
 

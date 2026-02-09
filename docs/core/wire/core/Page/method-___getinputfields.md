@@ -16,13 +16,21 @@ $page->getInputfields();
 $page->getInputfields($fieldName = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldName` (optional) `string|array`
+
+## Return value
+
+- `null|InputfieldWrapper` Returns an InputfieldWrapper array of Inputfield objects, or NULL on failure.
+
+## Hooking
 
 - Hookable method name: `getInputfields`
 - Implementation: `___getInputfields`
-- Hook with: `$page->getInputfields()`
+- Hook with: `Page::getInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::getInputfields', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('Page::getInputfields', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::getInputfields', function(HookEvent $event) {
@@ -54,11 +62,3 @@ $this->addHookAfter('Page::getInputfields', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldName` (optional) `string|array`
-
-## Return value
-
-- `null|InputfieldWrapper` Returns an InputfieldWrapper array of Inputfield objects, or NULL on failure.

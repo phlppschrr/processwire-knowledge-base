@@ -14,13 +14,17 @@ $result = $session->logoutSuccess($user);
 $result = $session->logoutSuccess(User $user);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$user` `User` User that logged in
+
+## Hooking
 
 - Hookable method name: `logoutSuccess`
 - Implementation: `___logoutSuccess`
-- Hook with: `$session->logoutSuccess()`
+- Hook with: `Session::logoutSuccess`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::logoutSuccess', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Session::logoutSuccess', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::logoutSuccess', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Session::logoutSuccess', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$user` `User` User that logged in

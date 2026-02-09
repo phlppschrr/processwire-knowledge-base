@@ -20,13 +20,22 @@ $bool = $field->viewable();
 $bool = $field->viewable(?Page $page = null, ?User $user = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` (optional) `Page|null` Optionally specify a Page for context (i.e. Is field viewable on $page?)
+- `$user` (optional) `User|null` Optionally specify a different user for context (default=current user)
+
+## Return value
+
+- `bool` True if viewable, false if not
+
+## Hooking
 
 - Hookable method name: `viewable`
 - Implementation: `___viewable`
-- Hook with: `$field->viewable()`
+- Hook with: `Field::viewable`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Field::viewable', function(HookEvent $event) {
@@ -44,7 +53,7 @@ $this->addHookBefore('Field::viewable', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Field::viewable', function(HookEvent $event) {
@@ -61,12 +70,3 @@ $this->addHookAfter('Field::viewable', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` (optional) `Page|null` Optionally specify a Page for context (i.e. Is field viewable on $page?)
-- `$user` (optional) `User|null` Optionally specify a different user for context (default=current user)
-
-## Return value
-
-- `bool` True if viewable, false if not

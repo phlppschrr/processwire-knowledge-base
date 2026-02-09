@@ -11,13 +11,17 @@ Render Inputfield
 $string = $inputfieldTinyMCE->render();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$inputfieldTinyMCE->render()`
+- Hook with: `InputfieldTinyMCE::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldTinyMCE::render', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('InputfieldTinyMCE::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldTinyMCE::render', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('InputfieldTinyMCE::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

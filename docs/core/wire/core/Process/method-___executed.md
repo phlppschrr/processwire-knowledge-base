@@ -11,13 +11,17 @@ Hookable method automatically called after execute() method has finished.
 $result = $process->executed($method);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$method` `string` Name of method that was executed
+
+## Hooking
 
 - Hookable method name: `executed`
 - Implementation: `___executed`
-- Hook with: `$process->executed()`
+- Hook with: `Process::executed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::executed', function(HookEvent $event) {
@@ -33,7 +37,7 @@ $this->addHookBefore('Process::executed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::executed', function(HookEvent $event) {
@@ -49,7 +53,3 @@ $this->addHookAfter('Process::executed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$method` `string` Name of method that was executed

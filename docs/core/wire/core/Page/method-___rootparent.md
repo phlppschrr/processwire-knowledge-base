@@ -25,13 +25,17 @@ if($page->rootParent()->template == 'products') {
 $page = $page->rootParent();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `Page`
+
+## Hooking
 
 - Hookable method name: `rootParent`
 - Implementation: `___rootParent`
-- Hook with: `$page->rootParent()`
+- Hook with: `Page::rootParent`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::rootParent', function(HookEvent $event) {
@@ -41,7 +45,7 @@ $this->addHookBefore('Page::rootParent', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::rootParent', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('Page::rootParent', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `Page`

@@ -13,13 +13,13 @@ Please note: Tfa modules with their own install method must also call parent::__
 $result = $tfa->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$tfa->install()`
+- Hook with: `Tfa::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::install', function(HookEvent $event) {
@@ -29,7 +29,7 @@ $this->addHookBefore('Tfa::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::install', function(HookEvent $event) {

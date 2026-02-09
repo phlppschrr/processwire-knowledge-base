@@ -14,13 +14,23 @@ $result = $commentNotifications->sendConfirmationEmail($comment, $email, $subcod
 $result = $commentNotifications->sendConfirmationEmail(Comment $comment, $email, $subcode);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$comment` `Comment`
+- $email
+- $subcode
+
+## Return value
+
+- `mixed`
+
+## Hooking
 
 - Hookable method name: `sendConfirmationEmail`
 - Implementation: `___sendConfirmationEmail`
-- Hook with: `$commentNotifications->sendConfirmationEmail()`
+- Hook with: `CommentNotifications::sendConfirmationEmail`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('CommentNotifications::sendConfirmationEmail', function(HookEvent $event) {
@@ -40,7 +50,7 @@ $this->addHookBefore('CommentNotifications::sendConfirmationEmail', function(Hoo
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('CommentNotifications::sendConfirmationEmail', function(HookEvent $event) {
@@ -58,16 +68,6 @@ $this->addHookAfter('CommentNotifications::sendConfirmationEmail', function(Hook
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$comment` `Comment`
-- $email
-- $subcode
-
-## Return value
-
-- `mixed`
 
 ## Exceptions
 

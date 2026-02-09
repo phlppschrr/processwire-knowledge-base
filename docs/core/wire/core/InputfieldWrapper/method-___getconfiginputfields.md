@@ -11,13 +11,17 @@ Get configuration Inputfields for this InputfieldWrapper
 $inputfieldWrapper = $inputfieldWrapper->getConfigInputfields();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getConfigInputfields`
 - Implementation: `___getConfigInputfields`
-- Hook with: `$inputfieldWrapper->getConfigInputfields()`
+- Hook with: `InputfieldWrapper::getConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldWrapper::getConfigInputfields', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('InputfieldWrapper::getConfigInputfields', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldWrapper::getConfigInputfields', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('InputfieldWrapper::getConfigInputfields', function(HookEven
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldWrapper`

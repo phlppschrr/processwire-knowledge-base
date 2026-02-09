@@ -11,13 +11,17 @@ Send the email
 $int = $wireMailInterface->send();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `int` Returns number of messages sent or 0 on failure
+
+## Hooking
 
 - Hookable method name: `send`
 - Implementation: `___send`
-- Hook with: `$wireMailInterface->send()`
+- Hook with: `WireMailInterface::send`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireMailInterface::send', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('WireMailInterface::send', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireMailInterface::send', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('WireMailInterface::send', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `int` Returns number of messages sent or 0 on failure

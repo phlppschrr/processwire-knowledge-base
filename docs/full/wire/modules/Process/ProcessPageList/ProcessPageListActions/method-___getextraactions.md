@@ -26,13 +26,21 @@ $array = $processPageListActions->getExtraActions($page);
 $array = $processPageListActions->getExtraActions(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Return value
+
+- `array` of $label => $url
+
+## Hooking
 
 - Hookable method name: `getExtraActions`
 - Implementation: `___getExtraActions`
-- Hook with: `$processPageListActions->getExtraActions()`
+- Hook with: `ProcessPageListActions::getExtraActions`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageListActions::getExtraActions', function(HookEvent $event) {
@@ -48,7 +56,7 @@ $this->addHookBefore('ProcessPageListActions::getExtraActions', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageListActions::getExtraActions', function(HookEvent $event) {
@@ -64,11 +72,3 @@ $this->addHookAfter('ProcessPageListActions::getExtraActions', function(HookEven
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-
-## Return value
-
-- `array` of $label => $url

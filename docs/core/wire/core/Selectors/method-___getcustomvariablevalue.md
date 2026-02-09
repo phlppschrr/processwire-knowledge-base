@@ -17,13 +17,21 @@ If hooking this method, /site/ready.php is recommended.
 $selectors->getCustomVariableValue($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string`
+
+## Return value
+
+- `null|string`
+
+## Hooking
 
 - Hookable method name: `getCustomVariableValue`
 - Implementation: `___getCustomVariableValue`
-- Hook with: `$selectors->getCustomVariableValue()`
+- Hook with: `Selectors::getCustomVariableValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Selectors::getCustomVariableValue', function(HookEvent $event) {
@@ -39,7 +47,7 @@ $this->addHookBefore('Selectors::getCustomVariableValue', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Selectors::getCustomVariableValue', function(HookEvent $event) {
@@ -55,14 +63,6 @@ $this->addHookAfter('Selectors::getCustomVariableValue', function(HookEvent $eve
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string`
-
-## Return value
-
-- `null|string`
 
 ## Since
 

@@ -14,13 +14,18 @@ $result = $pages->found($pages, $details);
 $result = $pages->found(PageArray $pages, array $details);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$pages` `PageArray` The pages that were found
+- `$details` `array` Extra information on how the pages were found, including: - `pageFinder` (PageFinder): The PageFinder instance that was used. - `pagesInfo` (array): The array returned by PageFinder. - `options` (array): Options that were passed to $pages->find().
+
+## Hooking
 
 - Hookable method name: `found`
 - Implementation: `___found`
-- Hook with: `$pages->found()`
+- Hook with: `Pages::found`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::found', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::found', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::found', function(HookEvent $event) {
@@ -55,8 +60,3 @@ $this->addHookAfter('Pages::found', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$pages` `PageArray` The pages that were found
-- `$details` `array` Extra information on how the pages were found, including: - `pageFinder` (PageFinder): The PageFinder instance that was used. - `pagesInfo` (array): The array returned by PageFinder. - `options` (array): Options that were passed to $pages->find().

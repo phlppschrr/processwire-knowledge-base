@@ -14,13 +14,17 @@ $result = $pages->unpublishReady($page);
 $result = $pages->unpublishReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `unpublishReady`
 - Implementation: `___unpublishReady`
-- Hook with: `$pages->unpublishReady()`
+- Hook with: `Pages::unpublishReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::unpublishReady', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::unpublishReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::unpublishReady', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Pages::unpublishReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

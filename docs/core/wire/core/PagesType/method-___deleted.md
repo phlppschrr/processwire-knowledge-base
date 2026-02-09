@@ -14,13 +14,17 @@ $result = $pagesType->deleted($page);
 $result = $pagesType->deleted(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `deleted`
 - Implementation: `___deleted`
-- Hook with: `$pagesType->deleted()`
+- Hook with: `PagesType::deleted`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::deleted', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('PagesType::deleted', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::deleted', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('PagesType::deleted', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
 
 ## Since
 

@@ -11,13 +11,13 @@ Per the Module interface, this method is called when this Inputfield is installe
 $result = $inputfield->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$inputfield->install()`
+- Hook with: `Inputfield::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::install', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('Inputfield::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::install', function(HookEvent $event) {

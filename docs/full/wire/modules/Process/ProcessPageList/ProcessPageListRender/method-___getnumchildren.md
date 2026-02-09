@@ -27,13 +27,22 @@ $int = $processPageListRender->getNumChildren($page);
 $int = $processPageListRender->getNumChildren(Page $page, $selector = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$selector` (optional) `string|int|bool|null`
+
+## Return value
+
+- `int`
+
+## Hooking
 
 - Hookable method name: `getNumChildren`
 - Implementation: `___getNumChildren`
-- Hook with: `$processPageListRender->getNumChildren()`
+- Hook with: `ProcessPageListRender::getNumChildren`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageListRender::getNumChildren', function(HookEvent $event) {
@@ -51,7 +60,7 @@ $this->addHookBefore('ProcessPageListRender::getNumChildren', function(HookEvent
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageListRender::getNumChildren', function(HookEvent $event) {
@@ -68,12 +77,3 @@ $this->addHookAfter('ProcessPageListRender::getNumChildren', function(HookEvent 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$selector` (optional) `string|int|bool|null`
-
-## Return value
-
-- `int`

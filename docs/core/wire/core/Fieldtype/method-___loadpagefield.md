@@ -20,13 +20,22 @@ $result = $fieldtype->loadPageField($page, $field);
 $result = $fieldtype->loadPageField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
+
+## Return value
+
+- `mixed|null`
+
+## Hooking
 
 - Hookable method name: `loadPageField`
 - Implementation: `___loadPageField`
-- Hook with: `$fieldtype->loadPageField()`
+- Hook with: `Fieldtype::loadPageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::loadPageField', function(HookEvent $event) {
@@ -44,7 +53,7 @@ $this->addHookBefore('Fieldtype::loadPageField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::loadPageField', function(HookEvent $event) {
@@ -61,12 +70,3 @@ $this->addHookAfter('Fieldtype::loadPageField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page object to save.
-- `$field` `Field` Field to retrieve from the page.
-
-## Return value
-
-- `mixed|null`

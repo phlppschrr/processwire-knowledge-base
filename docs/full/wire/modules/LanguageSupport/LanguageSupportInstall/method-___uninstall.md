@@ -11,13 +11,13 @@ Uninstall the module and related modules
 $result = $languageSupportInstall->uninstall();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$languageSupportInstall->uninstall()`
+- Hook with: `LanguageSupportInstall::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('LanguageSupportInstall::uninstall', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('LanguageSupportInstall::uninstall', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('LanguageSupportInstall::uninstall', function(HookEvent $event) {

@@ -15,13 +15,13 @@ See the `Module` interface and the `uninstall` method there for more details.
 $result = $process->uninstall();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$process->uninstall()`
+- Hook with: `Process::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::uninstall', function(HookEvent $event) {
@@ -31,7 +31,7 @@ $this->addHookBefore('Process::uninstall', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::uninstall', function(HookEvent $event) {

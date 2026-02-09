@@ -14,13 +14,17 @@ Note that this method will perform redirects as needed.
 $user = $tfa->process();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `User|bool` Returns logged-in user object on successful code completion, or false on fail
+
+## Hooking
 
 - Hookable method name: `process`
 - Implementation: `___process`
-- Hook with: `$tfa->process()`
+- Hook with: `Tfa::process`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::process', function(HookEvent $event) {
@@ -30,7 +34,7 @@ $this->addHookBefore('Tfa::process', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::process', function(HookEvent $event) {
@@ -43,7 +47,3 @@ $this->addHookAfter('Tfa::process', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `User|bool` Returns logged-in user object on successful code completion, or false on fail

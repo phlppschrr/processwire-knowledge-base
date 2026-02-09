@@ -15,13 +15,21 @@ such as if your hook copied a file to $filename.
 $bool = $pageimage->filenameDoesNotExist($filename);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$filename` `string`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `filenameDoesNotExist`
 - Implementation: `___filenameDoesNotExist`
-- Hook with: `$pageimage->filenameDoesNotExist()`
+- Hook with: `Pageimage::filenameDoesNotExist`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pageimage::filenameDoesNotExist', function(HookEvent $event) {
@@ -37,7 +45,7 @@ $this->addHookBefore('Pageimage::filenameDoesNotExist', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pageimage::filenameDoesNotExist', function(HookEvent $event) {
@@ -53,14 +61,6 @@ $this->addHookAfter('Pageimage::filenameDoesNotExist', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$filename` `string`
-
-## Return value
-
-- `bool`
 
 ## Since
 

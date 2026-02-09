@@ -23,13 +23,21 @@ $bool = $pagesType->save($page);
 $bool = $pagesType->save(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Return value
+
+- `bool` True on success
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$pagesType->save()`
+- Hook with: `PagesType::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::save', function(HookEvent $event) {
@@ -45,7 +53,7 @@ $this->addHookBefore('PagesType::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::save', function(HookEvent $event) {
@@ -61,14 +69,6 @@ $this->addHookAfter('PagesType::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-
-## Return value
-
-- `bool` True on success
 
 ## Exceptions
 

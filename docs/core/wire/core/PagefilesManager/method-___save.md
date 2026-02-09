@@ -16,13 +16,13 @@ Hooks may retrieve the Page object being saved from `$event->object->page`.
 $result = $pagefilesManager->save();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$pagefilesManager->save()`
+- Hook with: `PagefilesManager::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagefilesManager::save', function(HookEvent $event) {
@@ -32,7 +32,7 @@ $this->addHookBefore('PagefilesManager::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagefilesManager::save', function(HookEvent $event) {

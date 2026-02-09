@@ -14,13 +14,22 @@ $array = $fieldtypeMulti->getSelectorInfo($field);
 $array = $fieldtypeMulti->getSelectorInfo(Field $field, array $data = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+- `$data` (optional) `array` Array of extra data, when/if needed
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getSelectorInfo`
 - Implementation: `___getSelectorInfo`
-- Hook with: `$fieldtypeMulti->getSelectorInfo()`
+- Hook with: `FieldtypeMulti::getSelectorInfo`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FieldtypeMulti::getSelectorInfo', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('FieldtypeMulti::getSelectorInfo', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FieldtypeMulti::getSelectorInfo', function(HookEvent $event) {
@@ -55,12 +64,3 @@ $this->addHookAfter('FieldtypeMulti::getSelectorInfo', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-- `$data` (optional) `array` Array of extra data, when/if needed
-
-## Return value
-
-- `array`

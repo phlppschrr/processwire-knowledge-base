@@ -14,13 +14,17 @@ $result = $wireSaveableItems->added($item);
 $result = $wireSaveableItems->added(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable`
+
+## Hooking
 
 - Hookable method name: `added`
 - Implementation: `___added`
-- Hook with: `$wireSaveableItems->added()`
+- Hook with: `WireSaveableItems::added`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::added', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('WireSaveableItems::added', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::added', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('WireSaveableItems::added', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable`

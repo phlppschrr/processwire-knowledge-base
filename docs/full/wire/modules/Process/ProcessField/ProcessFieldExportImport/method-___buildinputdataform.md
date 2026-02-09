@@ -11,13 +11,17 @@ Build Textarea input form to pass JSON data into
 $inputfieldForm = $processFieldExportImport->buildInputDataForm();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldForm`
+
+## Hooking
 
 - Hookable method name: `buildInputDataForm`
 - Implementation: `___buildInputDataForm`
-- Hook with: `$processFieldExportImport->buildInputDataForm()`
+- Hook with: `ProcessFieldExportImport::buildInputDataForm`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessFieldExportImport::buildInputDataForm', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('ProcessFieldExportImport::buildInputDataForm', function(Ho
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessFieldExportImport::buildInputDataForm', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('ProcessFieldExportImport::buildInputDataForm', function(Hoo
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldForm`

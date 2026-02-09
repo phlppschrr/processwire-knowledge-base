@@ -14,13 +14,18 @@ $result = $pages->savedPageOrField($page);
 $result = $pages->savedPageOrField(Page $page, array $changes = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$changes` (optional) `array` Names of fields
+
+## Hooking
 
 - Hookable method name: `savedPageOrField`
 - Implementation: `___savedPageOrField`
-- Hook with: `$pages->savedPageOrField()`
+- Hook with: `Pages::savedPageOrField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::savedPageOrField', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::savedPageOrField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::savedPageOrField', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pages::savedPageOrField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$changes` (optional) `array` Names of fields
 
 ## See Also
 

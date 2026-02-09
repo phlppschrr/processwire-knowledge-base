@@ -16,13 +16,13 @@ Uninstall this Fieldtype, consistent with optional Module interface
 $result = $fieldtype->uninstall();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$fieldtype->uninstall()`
+- Hook with: `Fieldtype::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::uninstall', function(HookEvent $event) {
@@ -32,7 +32,7 @@ $this->addHookBefore('Fieldtype::uninstall', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::uninstall', function(HookEvent $event) {

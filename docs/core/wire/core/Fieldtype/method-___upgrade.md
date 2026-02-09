@@ -11,13 +11,18 @@ Called when module version changes
 $result = $fieldtype->upgrade($fromVersion, $toVersion);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- $fromVersion
+- $toVersion
+
+## Hooking
 
 - Hookable method name: `upgrade`
 - Implementation: `___upgrade`
-- Hook with: `$fieldtype->upgrade()`
+- Hook with: `Fieldtype::upgrade`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::upgrade', function(HookEvent $event) {
@@ -35,7 +40,7 @@ $this->addHookBefore('Fieldtype::upgrade', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::upgrade', function(HookEvent $event) {
@@ -52,11 +57,6 @@ $this->addHookAfter('Fieldtype::upgrade', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- $fromVersion
-- $toVersion
 
 ## Exceptions
 

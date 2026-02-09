@@ -14,13 +14,17 @@ $result = $permissions->deleted($page);
 $result = $permissions->deleted(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was deleted
+
+## Hooking
 
 - Hookable method name: `deleted`
 - Implementation: `___deleted`
-- Hook with: `$permissions->deleted()`
+- Hook with: `Permissions::deleted`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Permissions::deleted', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Permissions::deleted', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Permissions::deleted', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('Permissions::deleted', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was deleted
 
 ## Exceptions
 

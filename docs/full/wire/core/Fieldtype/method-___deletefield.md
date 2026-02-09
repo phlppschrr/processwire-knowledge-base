@@ -17,13 +17,21 @@ $bool = $fieldtype->deleteField($field);
 $bool = $fieldtype->deleteField(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field` Field object
+
+## Return value
+
+- `bool` True on success, false on DB delete failure.
+
+## Hooking
 
 - Hookable method name: `deleteField`
 - Implementation: `___deleteField`
-- Hook with: `$fieldtype->deleteField()`
+- Hook with: `Fieldtype::deleteField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::deleteField', function(HookEvent $event) {
@@ -39,7 +47,7 @@ $this->addHookBefore('Fieldtype::deleteField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::deleteField', function(HookEvent $event) {
@@ -55,11 +63,3 @@ $this->addHookAfter('Fieldtype::deleteField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field` Field object
-
-## Return value
-
-- `bool` True on success, false on DB delete failure.

@@ -14,13 +14,17 @@ $result = $pages->restoreReady($page);
 $result = $pages->restoreReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that is about to be restored
+
+## Hooking
 
 - Hookable method name: `restoreReady`
 - Implementation: `___restoreReady`
-- Hook with: `$pages->restoreReady()`
+- Hook with: `Pages::restoreReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::restoreReady', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::restoreReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::restoreReady', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('Pages::restoreReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that is about to be restored
 
 ## Since
 

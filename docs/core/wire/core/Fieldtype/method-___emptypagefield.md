@@ -17,13 +17,22 @@ $bool = $fieldtype->emptyPageField($page, $field);
 $bool = $fieldtype->emptyPageField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field` Field object
+
+## Return value
+
+- `bool` True on success, false on DB delete failure.
+
+## Hooking
 
 - Hookable method name: `emptyPageField`
 - Implementation: `___emptyPageField`
-- Hook with: `$fieldtype->emptyPageField()`
+- Hook with: `Fieldtype::emptyPageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::emptyPageField', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('Fieldtype::emptyPageField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::emptyPageField', function(HookEvent $event) {
@@ -58,15 +67,6 @@ $this->addHookAfter('Fieldtype::emptyPageField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field` Field object
-
-## Return value
-
-- `bool` True on success, false on DB delete failure.
 
 ## Exceptions
 

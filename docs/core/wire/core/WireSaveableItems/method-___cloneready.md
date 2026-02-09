@@ -14,13 +14,18 @@ $result = $wireSaveableItems->cloneReady($item, $copy);
 $result = $wireSaveableItems->cloneReady(Saveable $item, Saveable $copy);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable`
+- `$copy` `Saveable`
+
+## Hooking
 
 - Hookable method name: `cloneReady`
 - Implementation: `___cloneReady`
-- Hook with: `$wireSaveableItems->cloneReady()`
+- Hook with: `WireSaveableItems::cloneReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::cloneReady', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('WireSaveableItems::cloneReady', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::cloneReady', function(HookEvent $event) {
@@ -55,8 +60,3 @@ $this->addHookAfter('WireSaveableItems::cloneReady', function(HookEvent $event) 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable`
-- `$copy` `Saveable`

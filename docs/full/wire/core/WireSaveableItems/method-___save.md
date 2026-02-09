@@ -14,13 +14,21 @@ $bool = $wireSaveableItems->save($item);
 $bool = $wireSaveableItems->save(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable` The item to save
+
+## Return value
+
+- `bool` Returns true on success, false on failure
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$wireSaveableItems->save()`
+- Hook with: `WireSaveableItems::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::save', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('WireSaveableItems::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::save', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('WireSaveableItems::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable` The item to save
-
-## Return value
-
-- `bool` Returns true on success, false on failure
 
 ## Exceptions
 

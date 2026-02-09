@@ -18,13 +18,21 @@ $string = $pagesRequest->getLoginPageOrUrl();
 $string = $pagesRequest->getLoginPageOrUrl(?Page $page = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` (optional) `Page|null` Page that access was requested to or omit to get admin login page
+
+## Return value
+
+- `string|Page|null` Login page object or string w/redirect URL, null if 404
+
+## Hooking
 
 - Hookable method name: `getLoginPageOrUrl`
 - Implementation: `___getLoginPageOrUrl`
-- Hook with: `$pagesRequest->getLoginPageOrUrl()`
+- Hook with: `PagesRequest::getLoginPageOrUrl`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesRequest::getLoginPageOrUrl', function(HookEvent $event) {
@@ -40,7 +48,7 @@ $this->addHookBefore('PagesRequest::getLoginPageOrUrl', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesRequest::getLoginPageOrUrl', function(HookEvent $event) {
@@ -56,11 +64,3 @@ $this->addHookAfter('PagesRequest::getLoginPageOrUrl', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` (optional) `Page|null` Page that access was requested to or omit to get admin login page
-
-## Return value
-
-- `string|Page|null` Login page object or string w/redirect URL, null if 404

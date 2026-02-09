@@ -14,13 +14,17 @@ $result = $pages->trashed($page);
 $result = $pages->trashed(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was moved to the trash
+
+## Hooking
 
 - Hookable method name: `trashed`
 - Implementation: `___trashed`
-- Hook with: `$pages->trashed()`
+- Hook with: `Pages::trashed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::trashed', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::trashed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::trashed', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Pages::trashed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was moved to the trash

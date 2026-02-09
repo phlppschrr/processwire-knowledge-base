@@ -19,13 +19,21 @@ $page = $pagesRequest->getPage();
 $page = $pagesRequest->getPage(array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$options` (optional) `array`
+
+## Return value
+
+- `Page|NullPage`
+
+## Hooking
 
 - Hookable method name: `getPage`
 - Implementation: `___getPage`
-- Hook with: `$pagesRequest->getPage()`
+- Hook with: `PagesRequest::getPage`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesRequest::getPage', function(HookEvent $event) {
@@ -41,7 +49,7 @@ $this->addHookBefore('PagesRequest::getPage', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesRequest::getPage', function(HookEvent $event) {
@@ -57,11 +65,3 @@ $this->addHookAfter('PagesRequest::getPage', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$options` (optional) `array`
-
-## Return value
-
-- `Page|NullPage`

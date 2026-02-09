@@ -15,13 +15,13 @@ Install this Fieldtype, consistent with optional Module interface
 $result = $fieldtype->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$fieldtype->install()`
+- Hook with: `Fieldtype::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::install', function(HookEvent $event) {
@@ -31,7 +31,7 @@ $this->addHookBefore('Fieldtype::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::install', function(HookEvent $event) {

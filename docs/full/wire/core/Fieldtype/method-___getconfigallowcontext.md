@@ -20,13 +20,21 @@ $array = $fieldtype->getConfigAllowContext($field);
 $array = $fieldtype->getConfigAllowContext(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `array` of Inputfield names
+
+## Hooking
 
 - Hookable method name: `getConfigAllowContext`
 - Implementation: `___getConfigAllowContext`
-- Hook with: `$fieldtype->getConfigAllowContext()`
+- Hook with: `Fieldtype::getConfigAllowContext`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::getConfigAllowContext', function(HookEvent $event) {
@@ -42,7 +50,7 @@ $this->addHookBefore('Fieldtype::getConfigAllowContext', function(HookEvent $eve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::getConfigAllowContext', function(HookEvent $event) {
@@ -58,11 +66,3 @@ $this->addHookAfter('Fieldtype::getConfigAllowContext', function(HookEvent $even
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `array` of Inputfield names

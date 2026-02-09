@@ -55,13 +55,22 @@ $string = $pageimages->render();
 $string = $pageimages->render($markup = '', $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$markup` (optional) `string|array` Markup template string or optional $options array if you do not want the template string here.
+- `$options` (optional) `array|string` Optionally resize image with these options sent to size() method: - `width` (int): Target width or 0 for current image size (or proportional if height specified). - `height` (int): Target height or 0 for current image size (or proportional if width specified). - `markup` (string): Markup template string (same as $markup argument), or omit for default (same as $markup argument). - `link` (bool): Link image to original size? Though you may prefer to do this with your own $markup (see examples). (default=false) - `limit` (int): Render no more than this many images (default=0, no limit). - Plus any option available to the $options argument on the `Pageimage::size()` method. - If you only need width and/or height, you can specify a width x height string, i.e. 123x456 (use 0 for proportional).
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$pageimages->render()`
+- Hook with: `Pageimages::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pageimages::render', function(HookEvent $event) {
@@ -79,7 +88,7 @@ $this->addHookBefore('Pageimages::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pageimages::render', function(HookEvent $event) {
@@ -96,15 +105,6 @@ $this->addHookAfter('Pageimages::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$markup` (optional) `string|array` Markup template string or optional $options array if you do not want the template string here.
-- `$options` (optional) `array|string` Optionally resize image with these options sent to size() method: - `width` (int): Target width or 0 for current image size (or proportional if height specified). - `height` (int): Target height or 0 for current image size (or proportional if width specified). - `markup` (string): Markup template string (same as $markup argument), or omit for default (same as $markup argument). - `link` (bool): Link image to original size? Though you may prefer to do this with your own $markup (see examples). (default=false) - `limit` (int): Render no more than this many images (default=0, no limit). - Plus any option available to the $options argument on the `Pageimage::size()` method. - If you only need width and/or height, you can specify a width x height string, i.e. 123x456 (use 0 for proportional).
-
-## Return value
-
-- `string`
 
 ## Since
 

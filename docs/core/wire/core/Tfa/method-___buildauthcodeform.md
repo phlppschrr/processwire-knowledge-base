@@ -15,13 +15,17 @@ At minimum it must have an Inputfield with name “tfa_code”
 $inputfieldForm = $tfa->buildAuthCodeForm();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldForm`
+
+## Hooking
 
 - Hookable method name: `buildAuthCodeForm`
 - Implementation: `___buildAuthCodeForm`
-- Hook with: `$tfa->buildAuthCodeForm()`
+- Hook with: `Tfa::buildAuthCodeForm`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::buildAuthCodeForm', function(HookEvent $event) {
@@ -31,7 +35,7 @@ $this->addHookBefore('Tfa::buildAuthCodeForm', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::buildAuthCodeForm', function(HookEvent $event) {
@@ -44,7 +48,3 @@ $this->addHookAfter('Tfa::buildAuthCodeForm', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldForm`

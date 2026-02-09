@@ -35,13 +35,23 @@ $bool = $modules->saveConfig($class, $data);
 $bool = $modules->saveConfig($class, $data, $value = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$class` `string|Module` Module or module name
+- `$data` `array|string` Associative array of configuration data, or name of property you want to save.
+- `$value` (optional) `mixed|null` If you specified a property in previous arg, the value for the property.
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `saveConfig`
 - Implementation: `___saveConfig`
-- Hook with: `$modules->saveConfig()`
+- Hook with: `Modules::saveConfig`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Modules::saveConfig', function(HookEvent $event) {
@@ -61,7 +71,7 @@ $this->addHookBefore('Modules::saveConfig', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Modules::saveConfig', function(HookEvent $event) {
@@ -79,16 +89,6 @@ $this->addHookAfter('Modules::saveConfig', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$class` `string|Module` Module or module name
-- `$data` `array|string` Associative array of configuration data, or name of property you want to save.
-- `$value` (optional) `mixed|null` If you specified a property in previous arg, the value for the property.
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

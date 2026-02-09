@@ -14,13 +14,21 @@ $array = $fieldgroups->getExportData($fieldgroup);
 $array = $fieldgroups->getExportData(Fieldgroup $fieldgroup);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldgroup` `Fieldgroup`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getExportData`
 - Implementation: `___getExportData`
-- Hook with: `$fieldgroups->getExportData()`
+- Hook with: `Fieldgroups::getExportData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::getExportData', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Fieldgroups::getExportData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::getExportData', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('Fieldgroups::getExportData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldgroup` `Fieldgroup`
-
-## Return value
-
-- `array`

@@ -14,13 +14,17 @@ $result = $session->loginSuccess($user);
 $result = $session->loginSuccess(User $user);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$user` `User`
+
+## Hooking
 
 - Hookable method name: `loginSuccess`
 - Implementation: `___loginSuccess`
-- Hook with: `$session->loginSuccess()`
+- Hook with: `Session::loginSuccess`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::loginSuccess', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Session::loginSuccess', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::loginSuccess', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Session::loginSuccess', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$user` `User`

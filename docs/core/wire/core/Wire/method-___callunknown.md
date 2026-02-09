@@ -34,13 +34,22 @@ $wire->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 $wire->callUnknown($method, $arguments);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$method` `string` Requested method name
+- `$arguments` `array` Arguments provided
+
+## Return value
+
+- `null|mixed` Return value of method (if applicable)
+
+## Hooking
 
 - Hookable method name: `callUnknown`
 - Implementation: `___callUnknown`
-- Hook with: `$wire->callUnknown()`
+- Hook with: `Wire::callUnknown`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
@@ -58,7 +67,7 @@ $this->addHookBefore('Wire::callUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Wire::callUnknown', function(HookEvent $event) {
@@ -75,15 +84,6 @@ $this->addHookAfter('Wire::callUnknown', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$method` `string` Requested method name
-- `$arguments` `array` Arguments provided
-
-## Return value
-
-- `null|mixed` Return value of method (if applicable)
 
 ## Exceptions
 

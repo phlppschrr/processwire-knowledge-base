@@ -22,13 +22,18 @@ $wire->addHook('Page::removedStatus', function($e) {
 $result = $page->removedStatus($name, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of the status flag that was removed, i.e. unpublished, hidden, trash, locked
+- `$value` `int` Value of the status flag that was removed, a `Page::status*` constant
+
+## Hooking
 
 - Hookable method name: `removedStatus`
 - Implementation: `___removedStatus`
-- Hook with: `$page->removedStatus()`
+- Hook with: `Page::removedStatus`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::removedStatus', function(HookEvent $event) {
@@ -46,7 +51,7 @@ $this->addHookBefore('Page::removedStatus', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::removedStatus', function(HookEvent $event) {
@@ -63,11 +68,6 @@ $this->addHookAfter('Page::removedStatus', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of the status flag that was removed, i.e. unpublished, hidden, trash, locked
-- `$value` `int` Value of the status flag that was removed, a `Page::status*` constant
 
 ## Since
 

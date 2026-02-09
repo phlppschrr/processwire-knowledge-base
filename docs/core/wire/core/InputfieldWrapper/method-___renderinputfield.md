@@ -18,13 +18,22 @@ $string = $inputfieldWrapper->renderInputfield($inputfield);
 $string = $inputfieldWrapper->renderInputfield(Inputfield $inputfield, $renderValueMode = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$inputfield` `Inputfield` The Inputfield to render.
+- `$renderValueMode` (optional) `bool` Specify true if we are only rendering values (default=false).
+
+## Return value
+
+- `string` Rendered output
+
+## Hooking
 
 - Hookable method name: `renderInputfield`
 - Implementation: `___renderInputfield`
-- Hook with: `$inputfieldWrapper->renderInputfield()`
+- Hook with: `InputfieldWrapper::renderInputfield`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldWrapper::renderInputfield', function(HookEvent $event) {
@@ -42,7 +51,7 @@ $this->addHookBefore('InputfieldWrapper::renderInputfield', function(HookEvent $
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldWrapper::renderInputfield', function(HookEvent $event) {
@@ -59,12 +68,3 @@ $this->addHookAfter('InputfieldWrapper::renderInputfield', function(HookEvent $e
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$inputfield` `Inputfield` The Inputfield to render.
-- `$renderValueMode` (optional) `bool` Specify true if we are only rendering values (default=false).
-
-## Return value
-
-- `string` Rendered output

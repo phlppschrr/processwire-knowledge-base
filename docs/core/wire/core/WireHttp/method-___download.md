@@ -17,13 +17,23 @@ $string = $wireHttp->download($fromURL, $toFile);
 $string = $wireHttp->download($fromURL, $toFile, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fromURL` `string` URL of file you want to download.
+- `$toFile` `string` Filename you want to save it to (including full path).
+- `$options` (optional) `array` Optional options array for PHP's stream_context_create(), plus these optional options: - `use` or `useMethod` (string): Specify "curl", "fopen" or "socket" to force a specific method (default=auto-detect). - `timeout` (float): Number of seconds till timeout or omit to use previously set timeout setting or default. - `fopen_bufferSize' (int): Buffer size (bytes) or 0 to disable buffer, used only by fopen method (default=1048576) 3.0.222+
+
+## Return value
+
+- `string` Filename that was downloaded (including full path).
+
+## Hooking
 
 - Hookable method name: `download`
 - Implementation: `___download`
-- Hook with: `$wireHttp->download()`
+- Hook with: `WireHttp::download`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireHttp::download', function(HookEvent $event) {
@@ -43,7 +53,7 @@ $this->addHookBefore('WireHttp::download', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireHttp::download', function(HookEvent $event) {
@@ -61,16 +71,6 @@ $this->addHookAfter('WireHttp::download', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fromURL` `string` URL of file you want to download.
-- `$toFile` `string` Filename you want to save it to (including full path).
-- `$options` (optional) `array` Optional options array for PHP's stream_context_create(), plus these optional options: - `use` or `useMethod` (string): Specify "curl", "fopen" or "socket" to force a specific method (default=auto-detect). - `timeout` (float): Number of seconds till timeout or omit to use previously set timeout setting or default. - `fopen_bufferSize' (int): Buffer size (bytes) or 0 to disable buffer, used only by fopen method (default=1048576) 3.0.222+
-
-## Return value
-
-- `string` Filename that was downloaded (including full path).
 
 ## Exceptions
 

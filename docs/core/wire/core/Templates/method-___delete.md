@@ -14,13 +14,21 @@ $bool = $templates->delete($item);
 $bool = $templates->delete(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Template|Saveable` Template to delete
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$templates->delete()`
+- Hook with: `Templates::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::delete', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Templates::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::delete', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('Templates::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Template|Saveable` Template to delete
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

@@ -11,13 +11,22 @@ Maps to Sanitizer functions
 $string = $wireInputData->callUnknown($method, $arguments);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$method` `string`
+- `$arguments` `array`
+
+## Return value
+
+- `string|int|array|float|null` Returns null when input variable does not exist
+
+## Hooking
 
 - Hookable method name: `callUnknown`
 - Implementation: `___callUnknown`
-- Hook with: `$wireInputData->callUnknown()`
+- Hook with: `WireInputData::callUnknown`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireInputData::callUnknown', function(HookEvent $event) {
@@ -35,7 +44,7 @@ $this->addHookBefore('WireInputData::callUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireInputData::callUnknown', function(HookEvent $event) {
@@ -52,15 +61,6 @@ $this->addHookAfter('WireInputData::callUnknown', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$method` `string`
-- `$arguments` `array`
-
-## Return value
-
-- `string|int|array|float|null` Returns null when input variable does not exist
 
 ## Exceptions
 

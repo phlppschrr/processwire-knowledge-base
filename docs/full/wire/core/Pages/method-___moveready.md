@@ -16,13 +16,17 @@ $result = $pages->moveReady($page);
 $result = $pages->moveReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that is about to be moved.
+
+## Hooking
 
 - Hookable method name: `moveReady`
 - Implementation: `___moveReady`
-- Hook with: `$pages->moveReady()`
+- Hook with: `Pages::moveReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::moveReady', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('Pages::moveReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::moveReady', function(HookEvent $event) {
@@ -54,10 +58,6 @@ $this->addHookAfter('Pages::moveReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that is about to be moved.
 
 ## Since
 

@@ -14,13 +14,21 @@ $result = $inputfieldWrapper->processInput($input);
 $result = $inputfieldWrapper->processInput(WireInputData $input);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$input` `WireInputData`
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `processInput`
 - Implementation: `___processInput`
-- Hook with: `$inputfieldWrapper->processInput()`
+- Hook with: `InputfieldWrapper::processInput`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldWrapper::processInput', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('InputfieldWrapper::processInput', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldWrapper::processInput', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('InputfieldWrapper::processInput', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$input` `WireInputData`
-
-## Return value
-
-- `$this`

@@ -11,13 +11,13 @@ Perform any uninstall procedures specific to this module, if needed.
 $result = $fileCompilerModule->uninstall();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$fileCompilerModule->uninstall()`
+- Hook with: `FileCompilerModule::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FileCompilerModule::uninstall', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('FileCompilerModule::uninstall', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FileCompilerModule::uninstall', function(HookEvent $event) {

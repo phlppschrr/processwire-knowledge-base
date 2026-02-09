@@ -14,13 +14,17 @@ $result = $languages->deleted($language);
 $result = $languages->deleted(Page $language);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$language` `Page`
+
+## Hooking
 
 - Hookable method name: `deleted`
 - Implementation: `___deleted`
-- Hook with: `$languages->deleted()`
+- Hook with: `Languages::deleted`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Languages::deleted', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Languages::deleted', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Languages::deleted', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Languages::deleted', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$language` `Page`

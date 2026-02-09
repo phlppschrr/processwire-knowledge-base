@@ -24,13 +24,17 @@ $result = $page->cloned($copy);
 $result = $page->cloned(Page $copy);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$copy` `Page` The new cloned copy of the page
+
+## Hooking
 
 - Hookable method name: `cloned`
 - Implementation: `___cloned`
-- Hook with: `$page->cloned()`
+- Hook with: `Page::cloned`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::cloned', function(HookEvent $event) {
@@ -46,7 +50,7 @@ $this->addHookBefore('Page::cloned', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::cloned', function(HookEvent $event) {
@@ -62,10 +66,6 @@ $this->addHookAfter('Page::cloned', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$copy` `Page` The new cloned copy of the page
 
 ## Since
 

@@ -14,13 +14,22 @@ $bool = $session->authenticate($user, $pass);
 $bool = $session->authenticate(User $user, $pass);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$user` `User` User attempting to login
+- `$pass` `string` Password they are attempting to login with
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `authenticate`
 - Implementation: `___authenticate`
-- Hook with: `$session->authenticate()`
+- Hook with: `Session::authenticate`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::authenticate', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('Session::authenticate', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::authenticate', function(HookEvent $event) {
@@ -55,12 +64,3 @@ $this->addHookAfter('Session::authenticate', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$user` `User` User attempting to login
-- `$pass` `string` Password they are attempting to login with
-
-## Return value
-
-- `bool`

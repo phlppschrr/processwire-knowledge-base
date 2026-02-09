@@ -14,13 +14,23 @@ $bool = $fields->saveFieldgroupContext($field, $fieldgroup);
 $bool = $fields->saveFieldgroupContext(Field $field, Fieldgroup $fieldgroup, $namespace = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field` Field to save context for
+- `$fieldgroup` `Fieldgroup` Context for when field is in this fieldgroup
+- `$namespace` (optional) `string` An optional namespace for additional context
+
+## Return value
+
+- `bool` True on success
+
+## Hooking
 
 - Hookable method name: `saveFieldgroupContext`
 - Implementation: `___saveFieldgroupContext`
-- Hook with: `$fields->saveFieldgroupContext()`
+- Hook with: `Fields::saveFieldgroupContext`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::saveFieldgroupContext', function(HookEvent $event) {
@@ -40,7 +50,7 @@ $this->addHookBefore('Fields::saveFieldgroupContext', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::saveFieldgroupContext', function(HookEvent $event) {
@@ -58,16 +68,6 @@ $this->addHookAfter('Fields::saveFieldgroupContext', function(HookEvent $event) 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field` Field to save context for
-- `$fieldgroup` `Fieldgroup` Context for when field is in this fieldgroup
-- `$namespace` (optional) `string` An optional namespace for additional context
-
-## Return value
-
-- `bool` True on success
 
 ## Exceptions
 

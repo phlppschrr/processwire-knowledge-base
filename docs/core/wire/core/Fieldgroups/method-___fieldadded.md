@@ -14,13 +14,18 @@ $result = $fieldgroups->fieldAdded($fieldgroup, $field);
 $result = $fieldgroups->fieldAdded(Fieldgroup $fieldgroup, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldgroup` `Fieldgroup`
+- `$field` `Field`
+
+## Hooking
 
 - Hookable method name: `fieldAdded`
 - Implementation: `___fieldAdded`
-- Hook with: `$fieldgroups->fieldAdded()`
+- Hook with: `Fieldgroups::fieldAdded`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::fieldAdded', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Fieldgroups::fieldAdded', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::fieldAdded', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Fieldgroups::fieldAdded', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldgroup` `Fieldgroup`
-- `$field` `Field`
 
 ## Since
 

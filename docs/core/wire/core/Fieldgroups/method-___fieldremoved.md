@@ -14,13 +14,18 @@ $result = $fieldgroups->fieldRemoved($fieldgroup, $field);
 $result = $fieldgroups->fieldRemoved(Fieldgroup $fieldgroup, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldgroup` `Fieldgroup`
+- `$field` `Field`
+
+## Hooking
 
 - Hookable method name: `fieldRemoved`
 - Implementation: `___fieldRemoved`
-- Hook with: `$fieldgroups->fieldRemoved()`
+- Hook with: `Fieldgroups::fieldRemoved`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::fieldRemoved', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Fieldgroups::fieldRemoved', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::fieldRemoved', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Fieldgroups::fieldRemoved', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldgroup` `Fieldgroup`
-- `$field` `Field`
 
 ## Since
 

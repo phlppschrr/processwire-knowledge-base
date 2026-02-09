@@ -14,13 +14,17 @@ $result = $pagesType->added($page);
 $result = $pagesType->added(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `added`
 - Implementation: `___added`
-- Hook with: `$pagesType->added()`
+- Hook with: `PagesType::added`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::added', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('PagesType::added', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::added', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('PagesType::added', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
 
 ## Since
 

@@ -17,13 +17,22 @@ $string = $pageFinder->getQueryAllowedTemplatesWhere($query, $where);
 $string = $pageFinder->getQueryAllowedTemplatesWhere(DatabaseQuerySelect $query, $where);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$query` `DatabaseQuerySelect`
+- `$where` `string` SQL string for WHERE statement, not including the actual "WHERE"
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `getQueryAllowedTemplatesWhere`
 - Implementation: `___getQueryAllowedTemplatesWhere`
-- Hook with: `$pageFinder->getQueryAllowedTemplatesWhere()`
+- Hook with: `PageFinder::getQueryAllowedTemplatesWhere`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PageFinder::getQueryAllowedTemplatesWhere', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('PageFinder::getQueryAllowedTemplatesWhere', function(HookE
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PageFinder::getQueryAllowedTemplatesWhere', function(HookEvent $event) {
@@ -58,12 +67,3 @@ $this->addHookAfter('PageFinder::getQueryAllowedTemplatesWhere', function(HookEv
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$query` `DatabaseQuerySelect`
-- `$where` `string` SQL string for WHERE statement, not including the actual "WHERE"
-
-## Return value
-
-- `string`

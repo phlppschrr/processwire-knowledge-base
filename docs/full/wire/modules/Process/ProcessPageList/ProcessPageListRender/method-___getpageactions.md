@@ -14,13 +14,21 @@ $array = $processPageListRender->getPageActions($page);
 $array = $processPageListRender->getPageActions(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Return value
+
+- `array` of $label => $url
+
+## Hooking
 
 - Hookable method name: `getPageActions`
 - Implementation: `___getPageActions`
-- Hook with: `$processPageListRender->getPageActions()`
+- Hook with: `ProcessPageListRender::getPageActions`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageListRender::getPageActions', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('ProcessPageListRender::getPageActions', function(HookEvent
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageListRender::getPageActions', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('ProcessPageListRender::getPageActions', function(HookEvent 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-
-## Return value
-
-- `array` of $label => $url

@@ -16,13 +16,17 @@ $result = $pages->statusChanged($page);
 $result = $pages->statusChanged(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `statusChanged`
 - Implementation: `___statusChanged`
-- Hook with: `$pages->statusChanged()`
+- Hook with: `Pages::statusChanged`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::statusChanged', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('Pages::statusChanged', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::statusChanged', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('Pages::statusChanged', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

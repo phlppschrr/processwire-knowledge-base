@@ -14,13 +14,18 @@ $result = $pageimage->createdVariation($image, $data);
 $result = $pageimage->createdVariation(Pageimage $image, array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$image` `Pageimage` The variation image that was created
+- `$data` `array` Verbose associative array of data used to create the variation
+
+## Hooking
 
 - Hookable method name: `createdVariation`
 - Implementation: `___createdVariation`
-- Hook with: `$pageimage->createdVariation()`
+- Hook with: `Pageimage::createdVariation`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pageimage::createdVariation', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pageimage::createdVariation', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pageimage::createdVariation', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pageimage::createdVariation', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$image` `Pageimage` The variation image that was created
-- `$data` `array` Verbose associative array of data used to create the variation
 
 ## Since
 

@@ -19,13 +19,23 @@ $result = $fieldtype->loadPageFieldFilter($page, $field, $selector);
 $result = $fieldtype->loadPageFieldFilter(Page $page, Field $field, $selector);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
+- `$selector` `Selectors|string|array`
+
+## Return value
+
+- `mixed|null`
+
+## Hooking
 
 - Hookable method name: `loadPageFieldFilter`
 - Implementation: `___loadPageFieldFilter`
-- Hook with: `$fieldtype->loadPageFieldFilter()`
+- Hook with: `Fieldtype::loadPageFieldFilter`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::loadPageFieldFilter', function(HookEvent $event) {
@@ -45,7 +55,7 @@ $this->addHookBefore('Fieldtype::loadPageFieldFilter', function(HookEvent $event
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::loadPageFieldFilter', function(HookEvent $event) {
@@ -63,13 +73,3 @@ $this->addHookAfter('Fieldtype::loadPageFieldFilter', function(HookEvent $event)
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page object to save.
-- `$field` `Field` Field to retrieve from the page.
-- `$selector` `Selectors|string|array`
-
-## Return value
-
-- `mixed|null`

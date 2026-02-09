@@ -24,13 +24,23 @@ $bool = $wireFileTools->include($filename);
 $bool = $wireFileTools->include($filename, array $vars = array(), array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$filename` `string` Filename to include
+- `$vars` (optional) `array` Optional variables you want to hand to the include (associative array)
+- `$options` (optional) `array` Array of options to modify behavior: - `func` (string): Function to use: include, include_once, require or require_once (default=include) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of start paths include files are allowed from. Note current dir is always allowed.
+
+## Return value
+
+- `bool` Always returns true
+
+## Hooking
 
 - Hookable method name: `include`
 - Implementation: `___include`
-- Hook with: `$wireFileTools->include()`
+- Hook with: `WireFileTools::include`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireFileTools::include', function(HookEvent $event) {
@@ -50,7 +60,7 @@ $this->addHookBefore('WireFileTools::include', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireFileTools::include', function(HookEvent $event) {
@@ -68,16 +78,6 @@ $this->addHookAfter('WireFileTools::include', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$filename` `string` Filename to include
-- `$vars` (optional) `array` Optional variables you want to hand to the include (associative array)
-- `$options` (optional) `array` Array of options to modify behavior: - `func` (string): Function to use: include, include_once, require or require_once (default=include) - `autoExtension` (string): Extension to assume when no ext in filename, make blank for no auto assumption (default=php) - `allowedPaths` (array): Array of start paths include files are allowed from. Note current dir is always allowed.
-
-## Return value
-
-- `bool` Always returns true
 
 ## Exceptions
 

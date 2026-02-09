@@ -11,13 +11,21 @@ Add a new Role with the given name and return it
 $role = $roles->add($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of role you want to add, i.e. "hello-world"
+
+## Return value
+
+- `Role|NullPage` Returns a Role page on success, or a NullPage on error
+
+## Hooking
 
 - Hookable method name: `add`
 - Implementation: `___add`
-- Hook with: `$roles->add()`
+- Hook with: `Roles::add`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Roles::add', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('Roles::add', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Roles::add', function(HookEvent $event) {
@@ -49,11 +57,3 @@ $this->addHookAfter('Roles::add', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of role you want to add, i.e. "hello-world"
-
-## Return value
-
-- `Role|NullPage` Returns a Role page on success, or a NullPage on error

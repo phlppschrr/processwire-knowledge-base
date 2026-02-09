@@ -11,13 +11,21 @@ Perform the action on the given item
 $bool = $wireAction->action($item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Wire` Item to operate upon
+
+## Return value
+
+- `bool` True if the item was successfully operated upon, false if not.
+
+## Hooking
 
 - Hookable method name: `action`
 - Implementation: `___action`
-- Hook with: `$wireAction->action()`
+- Hook with: `WireAction::action`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireAction::action', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('WireAction::action', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireAction::action', function(HookEvent $event) {
@@ -49,11 +57,3 @@ $this->addHookAfter('WireAction::action', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Wire` Item to operate upon
-
-## Return value
-
-- `bool` True if the item was successfully operated upon, false if not.

@@ -17,13 +17,21 @@ $this->browserTitle("Hello World");
 $result = $process->browserTitle($title);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$title` `string`
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `browserTitle`
 - Implementation: `___browserTitle`
-- Hook with: `$process->browserTitle()`
+- Hook with: `Process::browserTitle`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::browserTitle', function(HookEvent $event) {
@@ -39,7 +47,7 @@ $this->addHookBefore('Process::browserTitle', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::browserTitle', function(HookEvent $event) {
@@ -55,11 +63,3 @@ $this->addHookAfter('Process::browserTitle', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$title` `string`
-
-## Return value
-
-- `$this`

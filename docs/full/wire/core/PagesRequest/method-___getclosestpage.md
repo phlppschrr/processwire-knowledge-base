@@ -25,13 +25,17 @@ if($p->id) {
 $page = $pagesRequest->getClosestPage();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `Page|NullPage`
+
+## Hooking
 
 - Hookable method name: `getClosestPage`
 - Implementation: `___getClosestPage`
-- Hook with: `$pagesRequest->getClosestPage()`
+- Hook with: `PagesRequest::getClosestPage`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesRequest::getClosestPage', function(HookEvent $event) {
@@ -41,7 +45,7 @@ $this->addHookBefore('PagesRequest::getClosestPage', function(HookEvent $event) 
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesRequest::getClosestPage', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('PagesRequest::getClosestPage', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `Page|NullPage`

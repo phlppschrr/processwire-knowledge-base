@@ -14,13 +14,17 @@ $result = $inputfieldTinyMCE->getModuleConfigInputfields($inputfields);
 $result = $inputfieldTinyMCE->getModuleConfigInputfields(InputfieldWrapper $inputfields);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$inputfields` `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getModuleConfigInputfields`
 - Implementation: `___getModuleConfigInputfields`
-- Hook with: `$inputfieldTinyMCE->getModuleConfigInputfields()`
+- Hook with: `InputfieldTinyMCE::getModuleConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldTinyMCE::getModuleConfigInputfields', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('InputfieldTinyMCE::getModuleConfigInputfields', function(H
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldTinyMCE::getModuleConfigInputfields', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('InputfieldTinyMCE::getModuleConfigInputfields', function(Ho
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$inputfields` `InputfieldWrapper`

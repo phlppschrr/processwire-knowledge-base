@@ -11,13 +11,17 @@ Return the web accessible URL (with scheme and hostname) to this Pagefile.
 $string = $pagefile->httpUrl();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `httpUrl`
 - Implementation: `___httpUrl`
-- Hook with: `$pagefile->httpUrl()`
+- Hook with: `Pagefile::httpUrl`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pagefile::httpUrl', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('Pagefile::httpUrl', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pagefile::httpUrl', function(HookEvent $event) {
@@ -40,10 +44,6 @@ $this->addHookAfter('Pagefile::httpUrl', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`
 
 ## See Also
 

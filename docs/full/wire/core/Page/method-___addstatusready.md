@@ -24,13 +24,18 @@ $wire->addHook('Page::addStatusReady', function($e) {
 $result = $page->addStatusReady($name, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of the status flag to be added, i.e. unpublished, hidden, trash, locked
+- `$value` `int` Value of the status flag to be added, a `Page::status*` constant
+
+## Hooking
 
 - Hookable method name: `addStatusReady`
 - Implementation: `___addStatusReady`
-- Hook with: `$page->addStatusReady()`
+- Hook with: `Page::addStatusReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::addStatusReady', function(HookEvent $event) {
@@ -48,7 +53,7 @@ $this->addHookBefore('Page::addStatusReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::addStatusReady', function(HookEvent $event) {
@@ -65,11 +70,6 @@ $this->addHookAfter('Page::addStatusReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of the status flag to be added, i.e. unpublished, hidden, trash, locked
-- `$value` `int` Value of the status flag to be added, a `Page::status*` constant
 
 ## Since
 

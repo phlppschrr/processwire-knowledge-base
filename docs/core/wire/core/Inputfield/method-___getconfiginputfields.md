@@ -38,13 +38,17 @@ public function ___getConfigInputfields() {
 $inputfieldWrapper = $inputfield->getConfigInputfields();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldWrapper` Populated with Inputfield instances
+
+## Hooking
 
 - Hookable method name: `getConfigInputfields`
 - Implementation: `___getConfigInputfields`
-- Hook with: `$inputfield->getConfigInputfields()`
+- Hook with: `Inputfield::getConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::getConfigInputfields', function(HookEvent $event) {
@@ -54,7 +58,7 @@ $this->addHookBefore('Inputfield::getConfigInputfields', function(HookEvent $eve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::getConfigInputfields', function(HookEvent $event) {
@@ -67,10 +71,6 @@ $this->addHookAfter('Inputfield::getConfigInputfields', function(HookEvent $even
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldWrapper` Populated with Inputfield instances
 
 ## See Also
 

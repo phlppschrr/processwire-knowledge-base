@@ -18,13 +18,22 @@ $items = $page->references();
 $items = $page->references($selector = '', $field = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$selector` (optional) `string|bool` Optional selector to filter results by, or boolean true as shortcut for `include=all`.
+- `$field` (optional) `Field|string|bool` Optionally limit to pages using specified field (name or Field object), - OR specify boolean TRUE to return array of PageArrays indexed by field names. - If $field argument not specified, it searches all applicable Page fields.
+
+## Return value
+
+- `PageArray|array`
+
+## Hooking
 
 - Hookable method name: `references`
 - Implementation: `___references`
-- Hook with: `$page->references()`
+- Hook with: `Page::references`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::references', function(HookEvent $event) {
@@ -42,7 +51,7 @@ $this->addHookBefore('Page::references', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::references', function(HookEvent $event) {
@@ -59,15 +68,6 @@ $this->addHookAfter('Page::references', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$selector` (optional) `string|bool` Optional selector to filter results by, or boolean true as shortcut for `include=all`.
-- `$field` (optional) `Field|string|bool` Optionally limit to pages using specified field (name or Field object), - OR specify boolean TRUE to return array of PageArrays indexed by field names. - If $field argument not specified, it searches all applicable Page fields.
-
-## Return value
-
-- `PageArray|array`
 
 ## Since
 

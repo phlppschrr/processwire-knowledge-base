@@ -36,13 +36,24 @@ $page = $pages->clone($page);
 $page = $pages->clone(Page $page, ?Page $parent = null, $recursive = true, $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that you want to clone
+- `$parent` (optional) `Page|null` New parent, if different (default=null, which implies same parent)
+- `$recursive` (optional) `bool` Clone the children too? (default=true)
+- `$options` (optional) `array|string` Options that can be passed to modify default behavior of clone or save: - `forceID` (int): force a specific ID. - `set` (array): Array of properties to set to the clone (you can also do this later). - `recursionLevel` (int): recursion level, for internal use only.
+
+## Return value
+
+- `Page|NullPage` The newly cloned Page or a NullPage() with id=0 if unsuccessful.
+
+## Hooking
 
 - Hookable method name: `clone`
 - Implementation: `___clone`
-- Hook with: `$pages->clone()`
+- Hook with: `Pages::clone`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::clone', function(HookEvent $event) {
@@ -64,7 +75,7 @@ $this->addHookBefore('Pages::clone', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::clone', function(HookEvent $event) {
@@ -83,17 +94,6 @@ $this->addHookAfter('Pages::clone', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that you want to clone
-- `$parent` (optional) `Page|null` New parent, if different (default=null, which implies same parent)
-- `$recursive` (optional) `bool` Clone the children too? (default=true)
-- `$options` (optional) `array|string` Options that can be passed to modify default behavior of clone or save: - `forceID` (int): force a specific ID. - `set` (array): Array of properties to set to the clone (you can also do this later). - `recursionLevel` (int): recursion level, for internal use only.
-
-## Return value
-
-- `Page|NullPage` The newly cloned Page or a NullPage() with id=0 if unsuccessful.
 
 ## Exceptions
 

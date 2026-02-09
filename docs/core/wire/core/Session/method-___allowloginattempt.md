@@ -13,13 +13,21 @@ This method does nothing and is purely for hooks to modify return value.
 $bool = $session->allowLoginAttempt($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `allowLoginAttempt`
 - Implementation: `___allowLoginAttempt`
-- Hook with: `$session->allowLoginAttempt()`
+- Hook with: `Session::allowLoginAttempt`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::allowLoginAttempt', function(HookEvent $event) {
@@ -35,7 +43,7 @@ $this->addHookBefore('Session::allowLoginAttempt', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::allowLoginAttempt', function(HookEvent $event) {
@@ -51,11 +59,3 @@ $this->addHookAfter('Session::allowLoginAttempt', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string`
-
-## Return value
-
-- `bool`

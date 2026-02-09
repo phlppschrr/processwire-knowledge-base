@@ -14,13 +14,22 @@ $array = $processPageListActions->processAction($page, $action);
 $array = $processPageListActions->processAction(Page $page, $action);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$action` `string`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `processAction`
 - Implementation: `___processAction`
-- Hook with: `$processPageListActions->processAction()`
+- Hook with: `ProcessPageListActions::processAction`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageListActions::processAction', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('ProcessPageListActions::processAction', function(HookEvent
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageListActions::processAction', function(HookEvent $event) {
@@ -55,15 +64,6 @@ $this->addHookAfter('ProcessPageListActions::processAction', function(HookEvent 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$action` `string`
-
-## Return value
-
-- `array`
 
 ## Exceptions
 

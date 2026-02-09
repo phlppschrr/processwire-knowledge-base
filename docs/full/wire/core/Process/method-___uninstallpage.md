@@ -15,13 +15,17 @@ To be called by the Process module's ___uninstall() method.
 $int = $process->uninstallPage();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `int` Number of pages trashed
+
+## Hooking
 
 - Hookable method name: `uninstallPage`
 - Implementation: `___uninstallPage`
-- Hook with: `$process->uninstallPage()`
+- Hook with: `Process::uninstallPage`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::uninstallPage', function(HookEvent $event) {
@@ -31,7 +35,7 @@ $this->addHookBefore('Process::uninstallPage', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::uninstallPage', function(HookEvent $event) {
@@ -44,7 +48,3 @@ $this->addHookAfter('Process::uninstallPage', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `int` Number of pages trashed

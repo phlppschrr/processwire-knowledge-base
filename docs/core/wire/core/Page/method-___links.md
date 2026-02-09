@@ -16,13 +16,22 @@ $items = $page->links();
 $items = $page->links($selector = '', $field = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$selector` (optional) `string|bool` Optional selector to filter by or boolean true for “include=all”. (default='')
+- `$field` (optional) `string|Field` Optionally limit results to specified field. (default=all applicable Textarea fields)
+
+## Return value
+
+- `PageArray`
+
+## Hooking
 
 - Hookable method name: `links`
 - Implementation: `___links`
-- Hook with: `$page->links()`
+- Hook with: `Page::links`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::links', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Page::links', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::links', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('Page::links', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$selector` (optional) `string|bool` Optional selector to filter by or boolean true for “include=all”. (default='')
-- `$field` (optional) `string|Field` Optionally limit results to specified field. (default=all applicable Textarea fields)
-
-## Return value
-
-- `PageArray`
 
 ## Since
 

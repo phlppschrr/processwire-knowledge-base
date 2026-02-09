@@ -22,13 +22,21 @@ $inputfieldWrapper = $fieldtype->getConfigAdvancedInputfields($field);
 $inputfieldWrapper = $fieldtype->getConfigAdvancedInputfields(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getConfigAdvancedInputfields`
 - Implementation: `___getConfigAdvancedInputfields`
-- Hook with: `$fieldtype->getConfigAdvancedInputfields()`
+- Hook with: `Fieldtype::getConfigAdvancedInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::getConfigAdvancedInputfields', function(HookEvent $event) {
@@ -44,7 +52,7 @@ $this->addHookBefore('Fieldtype::getConfigAdvancedInputfields', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::getConfigAdvancedInputfields', function(HookEvent $event) {
@@ -60,11 +68,3 @@ $this->addHookAfter('Fieldtype::getConfigAdvancedInputfields', function(HookEven
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `InputfieldWrapper`

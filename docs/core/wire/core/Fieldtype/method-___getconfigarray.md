@@ -18,13 +18,21 @@ $array = $fieldtype->getConfigArray($field);
 $array = $fieldtype->getConfigArray(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getConfigArray`
 - Implementation: `___getConfigArray`
-- Hook with: `$fieldtype->getConfigArray()`
+- Hook with: `Fieldtype::getConfigArray`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::getConfigArray', function(HookEvent $event) {
@@ -40,7 +48,7 @@ $this->addHookBefore('Fieldtype::getConfigArray', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::getConfigArray', function(HookEvent $event) {
@@ -56,11 +64,3 @@ $this->addHookAfter('Fieldtype::getConfigArray', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `array`

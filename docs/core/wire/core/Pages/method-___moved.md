@@ -16,13 +16,17 @@ $result = $pages->moved($page);
 $result = $pages->moved(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was moved.
+
+## Hooking
 
 - Hookable method name: `moved`
 - Implementation: `___moved`
-- Hook with: `$pages->moved()`
+- Hook with: `Pages::moved`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::moved', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('Pages::moved', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::moved', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('Pages::moved', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was moved.

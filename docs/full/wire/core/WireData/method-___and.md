@@ -24,13 +24,21 @@ $items = $wireData->and();
 $items = $wireData->and($items = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$items` (optional) `WireArray|WireData|string|null` May be any of the following: - `WireData` object (or derivative) - `WireArray` object (or derivative) - Name of any property from this object that returns one of the above. - Omit argument to simply return this object in a WireArray
+
+## Return value
+
+- `WireArray` Returns a WireArray of this object *and* the one(s) given.
+
+## Hooking
 
 - Hookable method name: `and`
 - Implementation: `___and`
-- Hook with: `$wireData->and()`
+- Hook with: `WireData::and`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireData::and', function(HookEvent $event) {
@@ -46,7 +54,7 @@ $this->addHookBefore('WireData::and', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireData::and', function(HookEvent $event) {
@@ -62,14 +70,6 @@ $this->addHookAfter('WireData::and', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$items` (optional) `WireArray|WireData|string|null` May be any of the following: - `WireData` object (or derivative) - `WireArray` object (or derivative) - Name of any property from this object that returns one of the above. - Omit argument to simply return this object in a WireArray
-
-## Return value
-
-- `WireArray` Returns a WireArray of this object *and* the one(s) given.
 
 ## Exceptions
 

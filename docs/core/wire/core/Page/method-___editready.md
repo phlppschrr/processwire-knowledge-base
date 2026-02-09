@@ -25,13 +25,17 @@ $result = $page->editReady($form);
 $result = $page->editReady(InputfieldWrapper $form);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$form` `InputfieldWrapper` The page editing form
+
+## Hooking
 
 - Hookable method name: `editReady`
 - Implementation: `___editReady`
-- Hook with: `$page->editReady()`
+- Hook with: `Page::editReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::editReady', function(HookEvent $event) {
@@ -47,7 +51,7 @@ $this->addHookBefore('Page::editReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::editReady', function(HookEvent $event) {
@@ -63,10 +67,6 @@ $this->addHookAfter('Page::editReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$form` `InputfieldWrapper` The page editing form
 
 ## Since
 

@@ -14,13 +14,18 @@ $result = $pages->deleted($page);
 $result = $pages->deleted(Page $page, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was deleted
+- `$options` (optional) `array` Options passed to delete method (since 3.0.163)
+
+## Hooking
 
 - Hookable method name: `deleted`
 - Implementation: `___deleted`
-- Hook with: `$pages->deleted()`
+- Hook with: `Pages::deleted`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::deleted', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::deleted', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::deleted', function(HookEvent $event) {
@@ -55,8 +60,3 @@ $this->addHookAfter('Pages::deleted', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was deleted
-- `$options` (optional) `array` Options passed to delete method (since 3.0.163)

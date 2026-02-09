@@ -16,13 +16,21 @@ Return the markup value for a given field name or {tag} string
 $string = $page->getMarkup($key);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$key` `string` Field name or markup string with field {name} tags in it
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `getMarkup`
 - Implementation: `___getMarkup`
-- Hook with: `$page->getMarkup()`
+- Hook with: `Page::getMarkup`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::getMarkup', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('Page::getMarkup', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::getMarkup', function(HookEvent $event) {
@@ -54,14 +62,6 @@ $this->addHookAfter('Page::getMarkup', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$key` `string` Field name or markup string with field {name} tags in it
-
-## Return value
-
-- `string`
 
 ## See Also
 

@@ -22,13 +22,18 @@ $wire->addHook('Page::moved', function($e) {
 $result = $page->moved($oldParent, $newParent);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$oldParent` `Page`
+- `$newParent` `Page`
+
+## Hooking
 
 - Hookable method name: `moved`
 - Implementation: `___moved`
-- Hook with: `$page->moved()`
+- Hook with: `Page::moved`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::moved', function(HookEvent $event) {
@@ -46,7 +51,7 @@ $this->addHookBefore('Page::moved', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::moved', function(HookEvent $event) {
@@ -63,11 +68,6 @@ $this->addHookAfter('Page::moved', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$oldParent` `Page`
-- `$newParent` `Page`
 
 ## Since
 

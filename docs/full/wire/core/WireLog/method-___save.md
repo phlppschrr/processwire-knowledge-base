@@ -25,13 +25,23 @@ $bool = $wireLog->save($name, $text);
 $bool = $wireLog->save($name, $text, $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of log to save to (word consisting of only `[-._a-z0-9]` and no extension)
+- `$text` `string` Text to save to the log
+- `$options` (optional) `array` Options to modify default behavior: - `showUser` (bool): Include the username in the log entry? (default=true) - `showURL` (bool): Include the current URL in the log entry? (default=true) - `user` (User|string|null): User instance, user name, or null to use current User. (default=null) - `url` (bool): URL to record with the log entry (default=auto determine) - `delimiter` (string): Log entry delimiter (default="\t" aka tab)
+
+## Return value
+
+- `bool` Whether it was written or not (generally always going to be true)
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$wireLog->save()`
+- Hook with: `WireLog::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireLog::save', function(HookEvent $event) {
@@ -51,7 +61,7 @@ $this->addHookBefore('WireLog::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireLog::save', function(HookEvent $event) {
@@ -69,16 +79,6 @@ $this->addHookAfter('WireLog::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of log to save to (word consisting of only `[-._a-z0-9]` and no extension)
-- `$text` `string` Text to save to the log
-- `$options` (optional) `array` Options to modify default behavior: - `showUser` (bool): Include the username in the log entry? (default=true) - `showURL` (bool): Include the current URL in the log entry? (default=true) - `user` (User|string|null): User instance, user name, or null to use current User. (default=null) - `url` (bool): URL to record with the log entry (default=auto determine) - `delimiter` (string): Log entry delimiter (default="\t" aka tab)
-
-## Return value
-
-- `bool` Whether it was written or not (generally always going to be true)
 
 ## Exceptions
 

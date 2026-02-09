@@ -14,13 +14,18 @@ $result = $pages->insertAfter($page, $afterPage);
 $result = $pages->insertAfter(Page $page, Page $afterPage);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page you want to move/sort
+- `$afterPage` `Page` Page you want to insert after
+
+## Hooking
 
 - Hookable method name: `insertAfter`
 - Implementation: `___insertAfter`
-- Hook with: `$pages->insertAfter()`
+- Hook with: `Pages::insertAfter`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::insertAfter', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::insertAfter', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::insertAfter', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pages::insertAfter', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page you want to move/sort
-- `$afterPage` `Page` Page you want to insert after
 
 ## Exceptions
 

@@ -11,13 +11,17 @@ Get Inputfield configuration settings
 $inputfieldWrapper = $inputfieldTinyMCE->getConfigInputfields();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getConfigInputfields`
 - Implementation: `___getConfigInputfields`
-- Hook with: `$inputfieldTinyMCE->getConfigInputfields()`
+- Hook with: `InputfieldTinyMCE::getConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldTinyMCE::getConfigInputfields', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('InputfieldTinyMCE::getConfigInputfields', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldTinyMCE::getConfigInputfields', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('InputfieldTinyMCE::getConfigInputfields', function(HookEven
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldWrapper`

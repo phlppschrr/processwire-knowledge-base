@@ -22,13 +22,23 @@ $result = $wire->trackException($e);
 $result = $wire->trackException($e, $severe = true, $text = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$e` `\Throwable` Exception or Error object that was thrown.
+- `$severe` (optional) `bool|int` Whether or not it should be considered severe (default=true).
+- `$text` (optional) `string|array|object|true` Additional details (optional): - When provided, it will be sent to `$this->error($text)` if $severe is true, or `$this->warning($text)` if $severe is false. - Specify boolean `true` to just send the `$e->getMessage()` to `$this->error()` or `$this->warning()`.
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `trackException`
 - Implementation: `___trackException`
-- Hook with: `$wire->trackException()`
+- Hook with: `Wire::trackException`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Wire::trackException', function(HookEvent $event) {
@@ -48,7 +58,7 @@ $this->addHookBefore('Wire::trackException', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Wire::trackException', function(HookEvent $event) {
@@ -66,16 +76,6 @@ $this->addHookAfter('Wire::trackException', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$e` `\Throwable` Exception or Error object that was thrown.
-- `$severe` (optional) `bool|int` Whether or not it should be considered severe (default=true).
-- `$text` (optional) `string|array|object|true` Additional details (optional): - When provided, it will be sent to `$this->error($text)` if $severe is true, or `$this->warning($text)` if $severe is false. - Specify boolean `true` to just send the `$e->getMessage()` to `$this->error()` or `$this->warning()`.
-
-## Return value
-
-- `$this`
 
 ## Exceptions
 

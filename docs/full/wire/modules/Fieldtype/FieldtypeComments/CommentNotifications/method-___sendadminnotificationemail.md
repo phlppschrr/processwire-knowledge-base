@@ -14,13 +14,21 @@ $int = $commentNotifications->sendAdminNotificationEmail($comment);
 $int = $commentNotifications->sendAdminNotificationEmail(Comment $comment);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$comment` `Comment`
+
+## Return value
+
+- `int` Number of emails sent
+
+## Hooking
 
 - Hookable method name: `sendAdminNotificationEmail`
 - Implementation: `___sendAdminNotificationEmail`
-- Hook with: `$commentNotifications->sendAdminNotificationEmail()`
+- Hook with: `CommentNotifications::sendAdminNotificationEmail`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('CommentNotifications::sendAdminNotificationEmail', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('CommentNotifications::sendAdminNotificationEmail', functio
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('CommentNotifications::sendAdminNotificationEmail', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('CommentNotifications::sendAdminNotificationEmail', function
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$comment` `Comment`
-
-## Return value
-
-- `int` Number of emails sent

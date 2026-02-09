@@ -14,13 +14,22 @@ $databaseQuerySelect = $pageFinder->getQuery($selectors, $options);
 $databaseQuerySelect = $pageFinder->getQuery($selectors, array $options);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$selectors` `Selectors` Array of selectors.
+- `$options` `array`
+
+## Return value
+
+- `DatabaseQuerySelect`
+
+## Hooking
 
 - Hookable method name: `getQuery`
 - Implementation: `___getQuery`
-- Hook with: `$pageFinder->getQuery()`
+- Hook with: `PageFinder::getQuery`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PageFinder::getQuery', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('PageFinder::getQuery', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PageFinder::getQuery', function(HookEvent $event) {
@@ -55,15 +64,6 @@ $this->addHookAfter('PageFinder::getQuery', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$selectors` `Selectors` Array of selectors.
-- `$options` `array`
-
-## Return value
-
-- `DatabaseQuerySelect`
 
 ## Exceptions
 

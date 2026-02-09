@@ -16,13 +16,21 @@ $fieldtypes = $fieldtype->getCompatibleFieldtypes($field);
 $fieldtypes = $fieldtype->getCompatibleFieldtypes(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `Fieldtypes|null`
+
+## Hooking
 
 - Hookable method name: `getCompatibleFieldtypes`
 - Implementation: `___getCompatibleFieldtypes`
-- Hook with: `$fieldtype->getCompatibleFieldtypes()`
+- Hook with: `Fieldtype::getCompatibleFieldtypes`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::getCompatibleFieldtypes', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('Fieldtype::getCompatibleFieldtypes', function(HookEvent $e
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::getCompatibleFieldtypes', function(HookEvent $event) {
@@ -54,11 +62,3 @@ $this->addHookAfter('Fieldtype::getCompatibleFieldtypes', function(HookEvent $ev
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `Fieldtypes|null`

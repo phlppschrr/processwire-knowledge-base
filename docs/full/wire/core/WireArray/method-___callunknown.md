@@ -40,13 +40,22 @@ $titlesString = $items->title("\n");
 $wireArray->callUnknown($method, $arguments);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$method` `string` Requested method name
+- `$arguments` `array` Arguments provided to the method
+
+## Return value
+
+- `null|mixed`
+
+## Hooking
 
 - Hookable method name: `callUnknown`
 - Implementation: `___callUnknown`
-- Hook with: `$wireArray->callUnknown()`
+- Hook with: `WireArray::callUnknown`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireArray::callUnknown', function(HookEvent $event) {
@@ -64,7 +73,7 @@ $this->addHookBefore('WireArray::callUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireArray::callUnknown', function(HookEvent $event) {
@@ -81,15 +90,6 @@ $this->addHookAfter('WireArray::callUnknown', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$method` `string` Requested method name
-- `$arguments` `array` Arguments provided to the method
-
-## Return value
-
-- `null|mixed`
 
 ## Exceptions
 

@@ -11,13 +11,17 @@ Render this Inputfield and the output of its children.
 $string = $inputfieldWrapper->render();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$inputfieldWrapper->render()`
+- Hook with: `InputfieldWrapper::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldWrapper::render', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('InputfieldWrapper::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldWrapper::render', function(HookEvent $event) {
@@ -40,10 +44,6 @@ $this->addHookAfter('InputfieldWrapper::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`
 
 ## Details
 

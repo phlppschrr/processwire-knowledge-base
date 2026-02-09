@@ -17,13 +17,22 @@ $wireLog = $fileValidatorModule->log();
 $wireLog = $fileValidatorModule->log($str = '', array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$str` (optional) `string` Text to log, or omit to just return the name of the log
+- `$options` (optional) `array` Optional extras to include: - url (string): URL to record the with the log entry (default=auto-detect) - name (string): Name of log to use (default=auto-detect)
+
+## Return value
+
+- `WireLog|null`
+
+## Hooking
 
 - Hookable method name: `log`
 - Implementation: `___log`
-- Hook with: `$fileValidatorModule->log()`
+- Hook with: `FileValidatorModule::log`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FileValidatorModule::log', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('FileValidatorModule::log', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FileValidatorModule::log', function(HookEvent $event) {
@@ -58,12 +67,3 @@ $this->addHookAfter('FileValidatorModule::log', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$str` (optional) `string` Text to log, or omit to just return the name of the log
-- `$options` (optional) `array` Optional extras to include: - url (string): URL to record the with the log entry (default=auto-detect) - name (string): Name of log to use (default=auto-detect)
-
-## Return value
-
-- `WireLog|null`

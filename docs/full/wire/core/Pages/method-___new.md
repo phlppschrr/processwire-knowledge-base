@@ -58,13 +58,21 @@ $page = $pages->new();
 $page = $pages->new($selector = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$selector` (optional) `string|array` Selector string or array of properties to set
+
+## Return value
+
+- `Page`
+
+## Hooking
 
 - Hookable method name: `new`
 - Implementation: `___new`
-- Hook with: `$pages->new()`
+- Hook with: `Pages::new`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::new', function(HookEvent $event) {
@@ -80,7 +88,7 @@ $this->addHookBefore('Pages::new', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::new', function(HookEvent $event) {
@@ -96,14 +104,6 @@ $this->addHookAfter('Pages::new', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$selector` (optional) `string|array` Selector string or array of properties to set
-
-## Return value
-
-- `Page`
 
 ## See Also
 

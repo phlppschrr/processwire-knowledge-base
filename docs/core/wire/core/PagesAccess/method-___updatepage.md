@@ -21,13 +21,17 @@ $result = $pagesAccess->updatePage($page);
 $result = $pagesAccess->updatePage(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `updatePage`
 - Implementation: `___updatePage`
-- Hook with: `$pagesAccess->updatePage()`
+- Hook with: `PagesAccess::updatePage`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesAccess::updatePage', function(HookEvent $event) {
@@ -43,7 +47,7 @@ $this->addHookBefore('PagesAccess::updatePage', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesAccess::updatePage', function(HookEvent $event) {
@@ -59,7 +63,3 @@ $this->addHookAfter('PagesAccess::updatePage', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

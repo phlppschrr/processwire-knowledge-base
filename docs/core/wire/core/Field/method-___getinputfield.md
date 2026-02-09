@@ -14,13 +14,22 @@ $inputfield = $field->getInputfield($page);
 $inputfield = $field->getInputfield(Page $page, $contextStr = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that the Inputfield is for.
+- `$contextStr` (optional) `string` Optional context string to append to the Inputfield's name/id (for repeaters and such).
+
+## Return value
+
+- `Inputfield|null`
+
+## Hooking
 
 - Hookable method name: `getInputfield`
 - Implementation: `___getInputfield`
-- Hook with: `$field->getInputfield()`
+- Hook with: `Field::getInputfield`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Field::getInputfield', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('Field::getInputfield', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Field::getInputfield', function(HookEvent $event) {
@@ -55,12 +64,3 @@ $this->addHookAfter('Field::getInputfield', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that the Inputfield is for.
-- `$contextStr` (optional) `string` Optional context string to append to the Inputfield's name/id (for repeaters and such).
-
-## Return value
-
-- `Inputfield|null`

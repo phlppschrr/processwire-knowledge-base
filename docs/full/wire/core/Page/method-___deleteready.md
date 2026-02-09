@@ -20,13 +20,13 @@ $wire->addHook('Page::deleteReady', function($e) {
 $result = $page->deleteReady();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `deleteReady`
 - Implementation: `___deleteReady`
-- Hook with: `$page->deleteReady()`
+- Hook with: `Page::deleteReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::deleteReady', function(HookEvent $event) {
@@ -36,7 +36,7 @@ $this->addHookBefore('Page::deleteReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::deleteReady', function(HookEvent $event) {

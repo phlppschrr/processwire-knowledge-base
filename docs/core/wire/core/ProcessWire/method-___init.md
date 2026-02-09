@@ -11,13 +11,13 @@ Hookable init for anyone that wants to hook immediately before any autoload modu
 $result = $processWire->init();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `init`
 - Implementation: `___init`
-- Hook with: `$processWire->init()`
+- Hook with: `ProcessWire::init`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessWire::init', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('ProcessWire::init', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessWire::init', function(HookEvent $event) {

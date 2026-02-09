@@ -16,13 +16,22 @@ $bool = $wireSaveableItems->clone($item);
 $bool = $wireSaveableItems->clone(Saveable $item, $name = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable` Item to clone
+- `$name` (optional) `string` Optionally specify new name
+
+## Return value
+
+- `bool|Saveable` $item Returns the new clone on success, or false on failure
+
+## Hooking
 
 - Hookable method name: `clone`
 - Implementation: `___clone`
-- Hook with: `$wireSaveableItems->clone()`
+- Hook with: `WireSaveableItems::clone`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::clone', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('WireSaveableItems::clone', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::clone', function(HookEvent $event) {
@@ -57,12 +66,3 @@ $this->addHookAfter('WireSaveableItems::clone', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable` Item to clone
-- `$name` (optional) `string` Optionally specify new name
-
-## Return value
-
-- `bool|Saveable` $item Returns the new clone on success, or false on failure

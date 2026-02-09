@@ -14,13 +14,22 @@ $bool = $imageSizer->resize($targetWidth);
 $bool = $imageSizer->resize($targetWidth, $targetHeight = 0);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$targetWidth` `int` Target width in pixels, or 0 for proportional to height
+- `$targetHeight` (optional) `int` Target height in pixels, or 0 for proportional to width. Optional-if not specified, 0 is assumed.
+
+## Return value
+
+- `bool` True if the resize was successful, false if not
+
+## Hooking
 
 - Hookable method name: `resize`
 - Implementation: `___resize`
-- Hook with: `$imageSizer->resize()`
+- Hook with: `ImageSizer::resize`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ImageSizer::resize', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('ImageSizer::resize', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ImageSizer::resize', function(HookEvent $event) {
@@ -55,15 +64,6 @@ $this->addHookAfter('ImageSizer::resize', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$targetWidth` `int` Target width in pixels, or 0 for proportional to height
-- `$targetHeight` (optional) `int` Target height in pixels, or 0 for proportional to width. Optional-if not specified, 0 is assumed.
-
-## Return value
-
-- `bool` True if the resize was successful, false if not
 
 ## Exceptions
 

@@ -14,13 +14,21 @@ $string = $processPageSearchLive->execute();
 $string = $processPageSearchLive->execute($getJSON = true);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$getJSON` (optional) `bool` Get results as JSON string? Specify false to get array instead.
+
+## Return value
+
+- `string|array`
+
+## Hooking
 
 - Hookable method name: `execute`
 - Implementation: `___execute`
-- Hook with: `$processPageSearchLive->execute()`
+- Hook with: `ProcessPageSearchLive::execute`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageSearchLive::execute', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('ProcessPageSearchLive::execute', function(HookEvent $event
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageSearchLive::execute', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('ProcessPageSearchLive::execute', function(HookEvent $event)
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$getJSON` (optional) `bool` Get results as JSON string? Specify false to get array instead.
-
-## Return value
-
-- `string|array`

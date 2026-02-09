@@ -14,13 +14,17 @@ $result = $pages->published($page);
 $result = $pages->published(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `published`
 - Implementation: `___published`
-- Hook with: `$pages->published()`
+- Hook with: `Pages::published`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::published', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::published', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::published', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Pages::published', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

@@ -11,13 +11,22 @@ Does this user have the given permission on the given template?
 $bool = $user->hasTemplatePermission($name, $template);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string|Permission` Permission name
+- `$template` `Template|int|string` Template object, name or ID
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `hasTemplatePermission`
 - Implementation: `___hasTemplatePermission`
-- Hook with: `$user->hasTemplatePermission()`
+- Hook with: `User::hasTemplatePermission`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('User::hasTemplatePermission', function(HookEvent $event) {
@@ -35,7 +44,7 @@ $this->addHookBefore('User::hasTemplatePermission', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('User::hasTemplatePermission', function(HookEvent $event) {
@@ -52,15 +61,6 @@ $this->addHookAfter('User::hasTemplatePermission', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string|Permission` Permission name
-- `$template` `Template|int|string` Template object, name or ID
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

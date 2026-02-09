@@ -14,13 +14,17 @@ $string = $adminThemeRenoHelpers->topNavItems($items);
 $string = $adminThemeRenoHelpers->topNavItems(array $items);
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `topNavItems`
 - Implementation: `___topNavItems`
-- Hook with: `$adminThemeRenoHelpers->topNavItems()`
+- Hook with: `AdminThemeRenoHelpers::topNavItems`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('AdminThemeRenoHelpers::topNavItems', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('AdminThemeRenoHelpers::topNavItems', function(HookEvent $e
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('AdminThemeRenoHelpers::topNavItems', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('AdminThemeRenoHelpers::topNavItems', function(HookEvent $ev
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

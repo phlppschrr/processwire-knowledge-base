@@ -11,13 +11,17 @@ Execute import
 $string = $processTemplateExportImport->buildImport();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `buildImport`
 - Implementation: `___buildImport`
-- Hook with: `$processTemplateExportImport->buildImport()`
+- Hook with: `ProcessTemplateExportImport::buildImport`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessTemplateExportImport::buildImport', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('ProcessTemplateExportImport::buildImport', function(HookEv
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessTemplateExportImport::buildImport', function(HookEvent $event) {
@@ -40,10 +44,6 @@ $this->addHookAfter('ProcessTemplateExportImport::buildImport', function(HookEve
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`
 
 ## Exceptions
 

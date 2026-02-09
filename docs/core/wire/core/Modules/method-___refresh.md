@@ -16,13 +16,17 @@ $result = $modules->refresh();
 $result = $modules->refresh($showMessages = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$showMessages` (optional) `bool` Show notification messages about what was found? (default=false) 3.0.172+
+
+## Hooking
 
 - Hookable method name: `refresh`
 - Implementation: `___refresh`
-- Hook with: `$modules->refresh()`
+- Hook with: `Modules::refresh`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Modules::refresh', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('Modules::refresh', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Modules::refresh', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('Modules::refresh', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$showMessages` (optional) `bool` Show notification messages about what was found? (default=false) 3.0.172+

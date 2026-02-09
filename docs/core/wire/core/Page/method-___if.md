@@ -90,13 +90,23 @@ $result = $page->if($key);
 $result = $page->if($key, $yes = '', $no = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$key` `string|bool|int` Name of field to check, selector string to evaluate, or boolean/int to evalute
+- `$yes` (optional) `string|callable|mixed` If value for $key is present, return or call this
+- `$no` (optional) `string|callable|mixed` If value for $key is empty, return or call this
+
+## Return value
+
+- `mixed|string|bool`
+
+## Hooking
 
 - Hookable method name: `if`
 - Implementation: `___if`
-- Hook with: `$page->if()`
+- Hook with: `Page::if`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::if', function(HookEvent $event) {
@@ -116,7 +126,7 @@ $this->addHookBefore('Page::if', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::if', function(HookEvent $event) {
@@ -134,16 +144,6 @@ $this->addHookAfter('Page::if', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$key` `string|bool|int` Name of field to check, selector string to evaluate, or boolean/int to evalute
-- `$yes` (optional) `string|callable|mixed` If value for $key is present, return or call this
-- `$no` (optional) `string|callable|mixed` If value for $key is empty, return or call this
-
-## Return value
-
-- `mixed|string|bool`
 
 ## Since
 

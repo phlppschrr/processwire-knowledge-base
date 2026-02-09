@@ -20,13 +20,13 @@ $wire->addHook('Page::deleted', function($e) {
 $result = $page->deleted();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `deleted`
 - Implementation: `___deleted`
-- Hook with: `$page->deleted()`
+- Hook with: `Page::deleted`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::deleted', function(HookEvent $event) {
@@ -36,7 +36,7 @@ $this->addHookBefore('Page::deleted', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::deleted', function(HookEvent $event) {

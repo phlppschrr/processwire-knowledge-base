@@ -16,13 +16,22 @@ $array = $fieldgroups->setImportData($fieldgroup, $data);
 $array = $fieldgroups->setImportData(Fieldgroup $fieldgroup, array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldgroup` `Fieldgroup`
+- `$data` `array`
+
+## Return value
+
+- `array` Returns array( [property_name] => array( 'old' => 'old value',	// old value, always a string 'new' => 'new value',	// new value, always a string 'error' => 'error message or blank if no error' )
+
+## Hooking
 
 - Hookable method name: `setImportData`
 - Implementation: `___setImportData`
-- Hook with: `$fieldgroups->setImportData()`
+- Hook with: `Fieldgroups::setImportData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::setImportData', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Fieldgroups::setImportData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::setImportData', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('Fieldgroups::setImportData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldgroup` `Fieldgroup`
-- `$data` `array`
-
-## Return value
-
-- `array` Returns array( [property_name] => array( 'old' => 'old value',	// old value, always a string 'new' => 'new value',	// new value, always a string 'error' => 'error message or blank if no error' )
 
 ## Exceptions
 

@@ -11,13 +11,17 @@ Hook called when fatal error received by shutdown()
 $result = $wireShutdown->fatalError($error);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$error` `array`
+
+## Hooking
 
 - Hookable method name: `fatalError`
 - Implementation: `___fatalError`
-- Hook with: `$wireShutdown->fatalError()`
+- Hook with: `WireShutdown::fatalError`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireShutdown::fatalError', function(HookEvent $event) {
@@ -33,7 +37,7 @@ $this->addHookBefore('WireShutdown::fatalError', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireShutdown::fatalError', function(HookEvent $event) {
@@ -49,10 +53,6 @@ $this->addHookAfter('WireShutdown::fatalError', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$error` `array`
 
 ## Since
 

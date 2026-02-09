@@ -25,13 +25,17 @@ $result = $pages->renamed($page);
 $result = $pages->renamed(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` The $page that was renamed
+
+## Hooking
 
 - Hookable method name: `renamed`
 - Implementation: `___renamed`
-- Hook with: `$pages->renamed()`
+- Hook with: `Pages::renamed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::renamed', function(HookEvent $event) {
@@ -47,7 +51,7 @@ $this->addHookBefore('Pages::renamed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::renamed', function(HookEvent $event) {
@@ -63,7 +67,3 @@ $this->addHookAfter('Pages::renamed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` The $page that was renamed

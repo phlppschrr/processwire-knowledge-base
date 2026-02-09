@@ -36,13 +36,24 @@ $page = $pages->add($template, $parent);
 $page = $pages->add($template, $parent, $name = '', array $values = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$template` `string|Template` Template name or Template object
+- `$parent` `string|int|Page` Parent path, ID or Page object
+- `$name` (optional) `string` Optional name or title of page. If none provided, one will be automatically assigned. If you want to specify a different name and title then specify the $name argument, and $values['title'].
+- `$values` (optional) `array` Field values to assign to page (optional). If $name is omitted, this may also be 3rd param.
+
+## Return value
+
+- `Page` New page ready to populate. Note that this page has output formatting off.
+
+## Hooking
 
 - Hookable method name: `add`
 - Implementation: `___add`
-- Hook with: `$pages->add()`
+- Hook with: `Pages::add`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::add', function(HookEvent $event) {
@@ -64,7 +75,7 @@ $this->addHookBefore('Pages::add', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::add', function(HookEvent $event) {
@@ -83,17 +94,6 @@ $this->addHookAfter('Pages::add', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$template` `string|Template` Template name or Template object
-- `$parent` `string|int|Page` Parent path, ID or Page object
-- `$name` (optional) `string` Optional name or title of page. If none provided, one will be automatically assigned. If you want to specify a different name and title then specify the $name argument, and $values['title'].
-- `$values` (optional) `array` Field values to assign to page (optional). If $name is omitted, this may also be 3rd param.
-
-## Return value
-
-- `Page` New page ready to populate. Note that this page has output formatting off.
 
 ## Exceptions
 

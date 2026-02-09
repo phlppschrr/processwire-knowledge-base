@@ -16,13 +16,18 @@ $result = $inputfield->renderReadyHook();
 $result = $inputfield->renderReadyHook(?Inputfield $parent = null, $renderValueMode = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$parent` (optional) `Inputfield|null`
+- `$renderValueMode` (optional) `bool`
+
+## Hooking
 
 - Hookable method name: `renderReadyHook`
 - Implementation: `___renderReadyHook`
-- Hook with: `$inputfield->renderReadyHook()`
+- Hook with: `Inputfield::renderReadyHook`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::renderReadyHook', function(HookEvent $event) {
@@ -40,7 +45,7 @@ $this->addHookBefore('Inputfield::renderReadyHook', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::renderReadyHook', function(HookEvent $event) {
@@ -57,8 +62,3 @@ $this->addHookAfter('Inputfield::renderReadyHook', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$parent` (optional) `Inputfield|null`
-- `$renderValueMode` (optional) `bool`

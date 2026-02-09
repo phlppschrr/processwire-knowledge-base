@@ -11,13 +11,13 @@ Perform any installation procedures specific to this module, if needed.
 $result = $fileCompilerModule->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$fileCompilerModule->install()`
+- Hook with: `FileCompilerModule::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FileCompilerModule::install', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('FileCompilerModule::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FileCompilerModule::install', function(HookEvent $event) {

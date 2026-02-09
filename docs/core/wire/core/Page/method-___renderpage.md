@@ -45,13 +45,21 @@ $string = $page->renderPage();
 $string = $page->renderPage(array $options = []);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$options` (optional) `array` Custom variables to pass to template file, and/or options as described below: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. Absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/. - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
+
+## Return value
+
+- `string|mixed` Renders the rendered output
+
+## Hooking
 
 - Hookable method name: `renderPage`
 - Implementation: `___renderPage`
-- Hook with: `$page->renderPage()`
+- Hook with: `Page::renderPage`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::renderPage', function(HookEvent $event) {
@@ -67,7 +75,7 @@ $this->addHookBefore('Page::renderPage', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::renderPage', function(HookEvent $event) {
@@ -83,14 +91,6 @@ $this->addHookAfter('Page::renderPage', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$options` (optional) `array` Custom variables to pass to template file, and/or options as described below: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. Absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/. - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
-
-## Return value
-
-- `string|mixed` Renders the rendered output
 
 ## Exceptions
 

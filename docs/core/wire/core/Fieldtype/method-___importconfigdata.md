@@ -17,13 +17,22 @@ $array = $fieldtype->importConfigData($field, $data);
 $array = $fieldtype->importConfigData(Field $field, array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+- `$data` `array`
+
+## Return value
+
+- `array` Data as given and modified as needed. Also included is $data[errors], an associative array indexed by property name containing errors that occurred during import of config data.
+
+## Hooking
 
 - Hookable method name: `importConfigData`
 - Implementation: `___importConfigData`
-- Hook with: `$fieldtype->importConfigData()`
+- Hook with: `Fieldtype::importConfigData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::importConfigData', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('Fieldtype::importConfigData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::importConfigData', function(HookEvent $event) {
@@ -58,12 +67,3 @@ $this->addHookAfter('Fieldtype::importConfigData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-- `$data` `array`
-
-## Return value
-
-- `array` Data as given and modified as needed. Also included is $data[errors], an associative array indexed by property name containing errors that occurred during import of config data.

@@ -13,13 +13,18 @@ See the `Module` interface and the `upgrade` method there for more details.
 $result = $process->upgrade($fromVersion, $toVersion);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fromVersion` `int|string` Previous version
+- `$toVersion` `int|string` New version
+
+## Hooking
 
 - Hookable method name: `upgrade`
 - Implementation: `___upgrade`
-- Hook with: `$process->upgrade()`
+- Hook with: `Process::upgrade`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::upgrade', function(HookEvent $event) {
@@ -37,7 +42,7 @@ $this->addHookBefore('Process::upgrade', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::upgrade', function(HookEvent $event) {
@@ -54,11 +59,6 @@ $this->addHookAfter('Process::upgrade', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fromVersion` `int|string` Previous version
-- `$toVersion` `int|string` New version
 
 ## Exceptions
 

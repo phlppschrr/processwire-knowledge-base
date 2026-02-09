@@ -11,13 +11,17 @@ Get string value (for hooks)
 $string = $languagesPageFieldValue->getStringValue();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `getStringValue`
 - Implementation: `___getStringValue`
-- Hook with: `$languagesPageFieldValue->getStringValue()`
+- Hook with: `LanguagesPageFieldValue::getStringValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('LanguagesPageFieldValue::getStringValue', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('LanguagesPageFieldValue::getStringValue', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('LanguagesPageFieldValue::getStringValue', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('LanguagesPageFieldValue::getStringValue', function(HookEven
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

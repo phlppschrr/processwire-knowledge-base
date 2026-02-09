@@ -14,13 +14,21 @@ $array = $templates->getTags();
 $array = $templates->getTags($getTemplateNames = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$getTemplateNames` (optional) `bool` Get arrays of template names for each tag? (default=false)
+
+## Return value
+
+- `array` In return value both key and value are the tag
+
+## Hooking
 
 - Hookable method name: `getTags`
 - Implementation: `___getTags`
-- Hook with: `$templates->getTags()`
+- Hook with: `Templates::getTags`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::getTags', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Templates::getTags', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::getTags', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('Templates::getTags', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$getTemplateNames` (optional) `bool` Get arrays of template names for each tag? (default=false)
-
-## Return value
-
-- `array` In return value both key and value are the tag
 
 ## Since
 

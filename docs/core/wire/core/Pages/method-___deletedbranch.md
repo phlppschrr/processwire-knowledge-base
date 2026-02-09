@@ -16,13 +16,19 @@ $result = $pages->deletedBranch($page, $options, $numDeleted);
 $result = $pages->deletedBranch(Page $page, array $options, $numDeleted);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was the root of the branch
+- `$options` `array` Options passed to delete method
+- `$numDeleted` `int` Number of pages deleted
+
+## Hooking
 
 - Hookable method name: `deletedBranch`
 - Implementation: `___deletedBranch`
-- Hook with: `$pages->deletedBranch()`
+- Hook with: `Pages::deletedBranch`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::deletedBranch', function(HookEvent $event) {
@@ -42,7 +48,7 @@ $this->addHookBefore('Pages::deletedBranch', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::deletedBranch', function(HookEvent $event) {
@@ -60,12 +66,6 @@ $this->addHookAfter('Pages::deletedBranch', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was the root of the branch
-- `$options` `array` Options passed to delete method
-- `$numDeleted` `int` Number of pages deleted
 
 ## Since
 

@@ -16,13 +16,22 @@ $bool = $fieldtype->savePageField($page, $field);
 $bool = $fieldtype->savePageField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
+
+## Return value
+
+- `bool` True on success, false on DB save failure.
+
+## Hooking
 
 - Hookable method name: `savePageField`
 - Implementation: `___savePageField`
-- Hook with: `$fieldtype->savePageField()`
+- Hook with: `Fieldtype::savePageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::savePageField', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Fieldtype::savePageField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::savePageField', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('Fieldtype::savePageField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page object to save.
-- `$field` `Field` Field to retrieve from the page.
-
-## Return value
-
-- `bool` True on success, false on DB save failure.
 
 ## Exceptions
 

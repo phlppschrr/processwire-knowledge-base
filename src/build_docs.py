@@ -1666,26 +1666,6 @@ def render_member_doc(
         lines.append("")
         lines.extend(usage_block)
 
-    if is_hookable:
-        lines.append("")
-        lines.append("## Hookable")
-        lines.append("")
-        lines.append(f"- Hookable method name: `{display_name}`")
-        lines.append(f"- Implementation: `{member.name}`")
-        if member.is_static:
-            lines.append(f"- Hook with: `{class_name}::{display_name}()`")
-        else:
-            instance = f"${camel_lower(class_name)}"
-            lines.append(f"- Hook with: `{instance}->{display_name}()`")
-        lines.append("")
-        lines.append("## Hooking Before")
-        lines.append("")
-        lines.extend(build_hook_example(class_name, member, after=False))
-        lines.append("")
-        lines.append("## Hooking After")
-        lines.append("")
-        lines.extend(build_hook_example(class_name, member, after=True))
-
     if params:
         lines.append("")
         lines.append("## Arguments")
@@ -1717,6 +1697,22 @@ def render_member_doc(
                 lines.append(f"- `{ret_type}`")
             elif ret_desc:
                 lines.append(f"- {ret_desc}")
+
+    if is_hookable:
+        lines.append("")
+        lines.append("## Hooking")
+        lines.append("")
+        lines.append(f"- Hookable method name: `{display_name}`")
+        lines.append(f"- Implementation: `{member.name}`")
+        lines.append(f"- Hook with: `{class_name}::{display_name}`")
+        lines.append("")
+        lines.append("### Hooking Before")
+        lines.append("")
+        lines.extend(build_hook_example(class_name, member, after=False))
+        lines.append("")
+        lines.append("### Hooking After")
+        lines.append("")
+        lines.extend(build_hook_example(class_name, member, after=True))
 
     if throws:
         lines.append("")

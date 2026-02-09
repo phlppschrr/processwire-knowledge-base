@@ -26,13 +26,22 @@ $array = $fieldtypeMulti->loadPageField($page, $field);
 $array = $fieldtypeMulti->loadPageField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page object to save.
+- `$field` `Field` Field to retrieve from the page.
+
+## Return value
+
+- `array|null`
+
+## Hooking
 
 - Hookable method name: `loadPageField`
 - Implementation: `___loadPageField`
-- Hook with: `$fieldtypeMulti->loadPageField()`
+- Hook with: `FieldtypeMulti::loadPageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FieldtypeMulti::loadPageField', function(HookEvent $event) {
@@ -50,7 +59,7 @@ $this->addHookBefore('FieldtypeMulti::loadPageField', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FieldtypeMulti::loadPageField', function(HookEvent $event) {
@@ -67,12 +76,3 @@ $this->addHookAfter('FieldtypeMulti::loadPageField', function(HookEvent $event) 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page object to save.
-- `$field` `Field` Field to retrieve from the page.
-
-## Return value
-
-- `array|null`

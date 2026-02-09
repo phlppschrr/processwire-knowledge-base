@@ -20,13 +20,13 @@ $wire->addHook('Page::added', function($e) {
 $result = $page->added();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `added`
 - Implementation: `___added`
-- Hook with: `$page->added()`
+- Hook with: `Page::added`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::added', function(HookEvent $event) {
@@ -36,7 +36,7 @@ $this->addHookBefore('Page::added', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::added', function(HookEvent $event) {

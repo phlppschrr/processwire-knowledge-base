@@ -21,13 +21,21 @@ $result = $inputfield->processInput($input);
 $result = $inputfield->processInput(WireInputData $input);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$input` `WireInputData` User input where value should be pulled from (typically `$input->post`)
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `processInput`
 - Implementation: `___processInput`
-- Hook with: `$inputfield->processInput()`
+- Hook with: `Inputfield::processInput`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::processInput', function(HookEvent $event) {
@@ -43,7 +51,7 @@ $this->addHookBefore('Inputfield::processInput', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::processInput', function(HookEvent $event) {
@@ -59,11 +67,3 @@ $this->addHookAfter('Inputfield::processInput', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$input` `WireInputData` User input where value should be pulled from (typically `$input->post`)
-
-## Return value
-
-- `$this`

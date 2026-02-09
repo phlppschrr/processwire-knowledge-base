@@ -20,13 +20,21 @@ $array = $fields->getTags();
 $array = $fields->getTags($getFieldNames = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$getFieldNames` (optional) `bool|string` Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
+
+## Return value
+
+- `array` Both keys and values are tags in return value
+
+## Hooking
 
 - Hookable method name: `getTags`
 - Implementation: `___getTags`
-- Hook with: `$fields->getTags()`
+- Hook with: `Fields::getTags`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::getTags', function(HookEvent $event) {
@@ -42,7 +50,7 @@ $this->addHookBefore('Fields::getTags', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::getTags', function(HookEvent $event) {
@@ -58,14 +66,6 @@ $this->addHookAfter('Fields::getTags', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$getFieldNames` (optional) `bool|string` Specify true to return associative array where keys are tags and values are field names …or specify the string "reset" to force getTags() to reset its cache, forcing it to reload on the next call.
-
-## Return value
-
-- `array` Both keys and values are tags in return value
 
 ## Since
 

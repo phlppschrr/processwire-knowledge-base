@@ -11,13 +11,17 @@ Hookable version of url() method
 $string = $pagefile->url();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `url`
 - Implementation: `___url`
-- Hook with: `$pagefile->url()`
+- Hook with: `Pagefile::url`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pagefile::url', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('Pagefile::url', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pagefile::url', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('Pagefile::url', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

@@ -11,13 +11,21 @@ Delete the given module, physically removing its files
 $bool = $modules->delete($class);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$class` `string` Module name (class name)
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$modules->delete()`
+- Hook with: `Modules::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Modules::delete', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('Modules::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Modules::delete', function(HookEvent $event) {
@@ -49,14 +57,6 @@ $this->addHookAfter('Modules::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$class` `string` Module name (class name)
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

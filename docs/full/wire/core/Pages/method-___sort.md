@@ -41,13 +41,22 @@ $int = $pages->sort($page);
 $int = $pages->sort(Page $page, $value = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page to sort (or parent of pages to sort, if using $value=true option)
+- `$value` (optional) `int|bool` Specify one of the following: - Omit to set and use sort value from given $page. - Specify sort value (integer) to save that value. - Specify boolean true to instead rebuild sort for all of $page children.
+
+## Return value
+
+- `int` Number of pages that had sort values adjusted
+
+## Hooking
 
 - Hookable method name: `sort`
 - Implementation: `___sort`
-- Hook with: `$pages->sort()`
+- Hook with: `Pages::sort`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::sort', function(HookEvent $event) {
@@ -65,7 +74,7 @@ $this->addHookBefore('Pages::sort', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::sort', function(HookEvent $event) {
@@ -82,15 +91,6 @@ $this->addHookAfter('Pages::sort', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page to sort (or parent of pages to sort, if using $value=true option)
-- `$value` (optional) `int|bool` Specify one of the following: - Omit to set and use sort value from given $page. - Specify sort value (integer) to save that value. - Specify boolean true to instead rebuild sort for all of $page children.
-
-## Return value
-
-- `int` Number of pages that had sort values adjusted
 
 ## Exceptions
 

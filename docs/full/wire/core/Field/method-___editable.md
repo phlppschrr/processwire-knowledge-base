@@ -19,13 +19,22 @@ $bool = $field->editable();
 $bool = $field->editable(?Page $page = null, ?User $user = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` (optional) `Page|null` Optionally specify a Page for context
+- `$user` (optional) `User|null` Optionally specify a different user (default = current user)
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `editable`
 - Implementation: `___editable`
-- Hook with: `$field->editable()`
+- Hook with: `Field::editable`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Field::editable', function(HookEvent $event) {
@@ -43,7 +52,7 @@ $this->addHookBefore('Field::editable', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Field::editable', function(HookEvent $event) {
@@ -60,12 +69,3 @@ $this->addHookAfter('Field::editable', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` (optional) `Page|null` Optionally specify a Page for context
-- `$user` (optional) `User|null` Optionally specify a different user (default = current user)
-
-## Return value
-
-- `bool`

@@ -17,13 +17,17 @@ $result = $templates->fileModified($template);
 $result = $templates->fileModified(Template $template);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$template` `Template`
+
+## Hooking
 
 - Hookable method name: `fileModified`
 - Implementation: `___fileModified`
-- Hook with: `$templates->fileModified()`
+- Hook with: `Templates::fileModified`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::fileModified', function(HookEvent $event) {
@@ -39,7 +43,7 @@ $this->addHookBefore('Templates::fileModified', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::fileModified', function(HookEvent $event) {
@@ -55,10 +59,6 @@ $this->addHookAfter('Templates::fileModified', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$template` `Template`
 
 ## Since
 

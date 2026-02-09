@@ -25,13 +25,21 @@ $result = $session->logout();
 $result = $session->logout($startNew = true);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$startNew` (optional) `bool` Start a new session after logout? (default=true)
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `logout`
 - Implementation: `___logout`
-- Hook with: `$session->logout()`
+- Hook with: `Session::logout`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::logout', function(HookEvent $event) {
@@ -47,7 +55,7 @@ $this->addHookBefore('Session::logout', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::logout', function(HookEvent $event) {
@@ -63,14 +71,6 @@ $this->addHookAfter('Session::logout', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$startNew` (optional) `bool` Start a new session after logout? (default=true)
-
-## Return value
-
-- `$this`
 
 ## Exceptions
 

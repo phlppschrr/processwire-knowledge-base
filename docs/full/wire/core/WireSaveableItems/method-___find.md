@@ -15,13 +15,21 @@ override this to the ___load() method instead.
 $items = $wireSaveableItems->find($selectors);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$selectors` `Selectors|string`
+
+## Return value
+
+- `WireArray`
+
+## Hooking
 
 - Hookable method name: `find`
 - Implementation: `___find`
-- Hook with: `$wireSaveableItems->find()`
+- Hook with: `WireSaveableItems::find`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::find', function(HookEvent $event) {
@@ -37,7 +45,7 @@ $this->addHookBefore('WireSaveableItems::find', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::find', function(HookEvent $event) {
@@ -53,11 +61,3 @@ $this->addHookAfter('WireSaveableItems::find', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$selectors` `Selectors|string`
-
-## Return value
-
-- `WireArray`

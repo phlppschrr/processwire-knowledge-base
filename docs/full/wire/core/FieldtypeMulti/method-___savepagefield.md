@@ -17,13 +17,22 @@ $bool = $fieldtypeMulti->savePageField($page, $field);
 $bool = $fieldtypeMulti->savePageField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `savePageField`
 - Implementation: `___savePageField`
-- Hook with: `$fieldtypeMulti->savePageField()`
+- Hook with: `FieldtypeMulti::savePageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FieldtypeMulti::savePageField', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('FieldtypeMulti::savePageField', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FieldtypeMulti::savePageField', function(HookEvent $event) {
@@ -58,15 +67,6 @@ $this->addHookAfter('FieldtypeMulti::savePageField', function(HookEvent $event) 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

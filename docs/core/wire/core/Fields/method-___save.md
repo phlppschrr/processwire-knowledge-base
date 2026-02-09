@@ -23,13 +23,21 @@ $bool = $fields->save($item);
 $bool = $fields->save(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Field` The field to save
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$fields->save()`
+- Hook with: `Fields::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::save', function(HookEvent $event) {
@@ -45,7 +53,7 @@ $this->addHookBefore('Fields::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::save', function(HookEvent $event) {
@@ -61,14 +69,6 @@ $this->addHookAfter('Fields::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Field` The field to save
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

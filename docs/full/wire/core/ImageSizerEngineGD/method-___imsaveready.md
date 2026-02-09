@@ -13,13 +13,22 @@ Also Creates a webp file when settings indicate it should.
 $bool = $imageSizerEngineGD->imSaveReady($im, $filename);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$im` `resource`
+- `$filename` `string` Source filename
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `imSaveReady`
 - Implementation: `___imSaveReady`
-- Hook with: `$imageSizerEngineGD->imSaveReady()`
+- Hook with: `ImageSizerEngineGD::imSaveReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ImageSizerEngineGD::imSaveReady', function(HookEvent $event) {
@@ -37,7 +46,7 @@ $this->addHookBefore('ImageSizerEngineGD::imSaveReady', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ImageSizerEngineGD::imSaveReady', function(HookEvent $event) {
@@ -54,12 +63,3 @@ $this->addHookAfter('ImageSizerEngineGD::imSaveReady', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$im` `resource`
-- `$filename` `string` Source filename
-
-## Return value
-
-- `bool`

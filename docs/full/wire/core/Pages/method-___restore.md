@@ -26,13 +26,22 @@ $bool = $pages->restore($page);
 $bool = $pages->restore(Page $page, $save = true);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that is in the trash that you want to restore
+- `$save` (optional) `bool` Set to false if you only want to prep the page for restore (i.e. you will save the page yourself later). Primarily for internal use.
+
+## Return value
+
+- `bool` True on success, false on failure.
+
+## Hooking
 
 - Hookable method name: `restore`
 - Implementation: `___restore`
-- Hook with: `$pages->restore()`
+- Hook with: `Pages::restore`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::restore', function(HookEvent $event) {
@@ -50,7 +59,7 @@ $this->addHookBefore('Pages::restore', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::restore', function(HookEvent $event) {
@@ -67,15 +76,6 @@ $this->addHookAfter('Pages::restore', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that is in the trash that you want to restore
-- `$save` (optional) `bool` Set to false if you only want to prep the page for restore (i.e. you will save the page yourself later). Primarily for internal use.
-
-## Return value
-
-- `bool` True on success, false on failure.
 
 ## See Also
 

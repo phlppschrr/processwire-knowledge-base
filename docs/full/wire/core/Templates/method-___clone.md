@@ -16,13 +16,22 @@ $bool = $templates->clone($item);
 $bool = $templates->clone(Saveable $item, $name = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Template|Saveable` Template to clone
+- `$name` (optional) `string` Name of new template that will be created, or omit to auto-assign.
+
+## Return value
+
+- `bool|Template` $item Returns the new Template on success, or false on failure
+
+## Hooking
 
 - Hookable method name: `clone`
 - Implementation: `___clone`
-- Hook with: `$templates->clone()`
+- Hook with: `Templates::clone`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::clone', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Templates::clone', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::clone', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('Templates::clone', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Template|Saveable` Template to clone
-- `$name` (optional) `string` Name of new template that will be created, or omit to auto-assign.
-
-## Return value
-
-- `bool|Template` $item Returns the new Template on success, or false on failure
 
 ## Details
 

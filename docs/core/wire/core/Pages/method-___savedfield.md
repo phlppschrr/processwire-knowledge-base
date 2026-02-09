@@ -14,13 +14,18 @@ $result = $pages->savedField($page, $field);
 $result = $pages->savedField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+
+## Hooking
 
 - Hookable method name: `savedField`
 - Implementation: `___savedField`
-- Hook with: `$pages->savedField()`
+- Hook with: `Pages::savedField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::savedField', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::savedField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::savedField', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pages::savedField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
 
 ## See Also
 

@@ -19,13 +19,13 @@ $wire->addHook('Page::loaded', function($e) {
 $result = $page->loaded();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `loaded`
 - Implementation: `___loaded`
-- Hook with: `$page->loaded()`
+- Hook with: `Page::loaded`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::loaded', function(HookEvent $event) {
@@ -35,7 +35,7 @@ $this->addHookBefore('Page::loaded', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::loaded', function(HookEvent $event) {

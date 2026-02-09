@@ -16,13 +16,21 @@ $bool = $fieldgroups->save($item);
 $bool = $fieldgroups->save(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable` Fieldgroup to save
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$fieldgroups->save()`
+- Hook with: `Fieldgroups::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::save', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('Fieldgroups::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::save', function(HookEvent $event) {
@@ -54,14 +62,6 @@ $this->addHookAfter('Fieldgroups::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable` Fieldgroup to save
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

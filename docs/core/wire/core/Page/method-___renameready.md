@@ -21,13 +21,18 @@ $wire->addHook('Page::renameReady', function($e) {
 $result = $page->renameReady($oldName, $newName);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$oldName` `string` The old name
+- `$newName` `string` The new name (read-only)
+
+## Hooking
 
 - Hookable method name: `renameReady`
 - Implementation: `___renameReady`
-- Hook with: `$page->renameReady()`
+- Hook with: `Page::renameReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::renameReady', function(HookEvent $event) {
@@ -45,7 +50,7 @@ $this->addHookBefore('Page::renameReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::renameReady', function(HookEvent $event) {
@@ -62,11 +67,6 @@ $this->addHookAfter('Page::renameReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$oldName` `string` The old name
-- `$newName` `string` The new name (read-only)
 
 ## Since
 

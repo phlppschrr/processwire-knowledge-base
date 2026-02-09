@@ -17,13 +17,21 @@ $this->headline("Hello World");
 $result = $process->headline($headline);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$headline` `string`
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `headline`
 - Implementation: `___headline`
-- Hook with: `$process->headline()`
+- Hook with: `Process::headline`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::headline', function(HookEvent $event) {
@@ -39,7 +47,7 @@ $this->addHookBefore('Process::headline', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::headline', function(HookEvent $event) {
@@ -55,11 +63,3 @@ $this->addHookAfter('Process::headline', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$headline` `string`
-
-## Return value
-
-- `$this`

@@ -27,13 +27,23 @@ $array = $pages->saveFields($page, $fields);
 $array = $pages->saveFields(Page $page, $fields, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page to save
+- `$fields` `array|string|string[]|Field[]` Array of field names to save or CSV/space separated field names to save. These should only be Field names and not native page property names.
+- `$options` (optional) `array|string` Optionally specify one or more of the following to modify default behavior: - `quiet` (boolean): Specify true to bypass updating of modified user and time (default=false). - `noHooks` (boolean): Prevent before/after save hooks (default=false), please also use $pages->___saveField() for call. - See $options argument for Pages::save() for additional options
+
+## Return value
+
+- `array` Array of saved field names (may also include property names if they were modified)
+
+## Hooking
 
 - Hookable method name: `saveFields`
 - Implementation: `___saveFields`
-- Hook with: `$pages->saveFields()`
+- Hook with: `Pages::saveFields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::saveFields', function(HookEvent $event) {
@@ -53,7 +63,7 @@ $this->addHookBefore('Pages::saveFields', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::saveFields', function(HookEvent $event) {
@@ -71,16 +81,6 @@ $this->addHookAfter('Pages::saveFields', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page to save
-- `$fields` `array|string|string[]|Field[]` Array of field names to save or CSV/space separated field names to save. These should only be Field names and not native page property names.
-- `$options` (optional) `array|string` Optionally specify one or more of the following to modify default behavior: - `quiet` (boolean): Specify true to bypass updating of modified user and time (default=false). - `noHooks` (boolean): Prevent before/after save hooks (default=false), please also use $pages->___saveField() for call. - See $options argument for Pages::save() for additional options
-
-## Return value
-
-- `array` Array of saved field names (may also include property names if they were modified)
 
 ## Exceptions
 

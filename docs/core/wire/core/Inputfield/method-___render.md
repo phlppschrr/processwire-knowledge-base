@@ -13,13 +13,17 @@ This is an abstract method that descending Inputfield module classes are require
 $string = $inputfield->render();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$inputfield->render()`
+- Hook with: `Inputfield::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::render', function(HookEvent $event) {
@@ -29,7 +33,7 @@ $this->addHookBefore('Inputfield::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::render', function(HookEvent $event) {
@@ -42,7 +46,3 @@ $this->addHookAfter('Inputfield::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

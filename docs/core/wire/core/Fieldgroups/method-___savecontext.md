@@ -14,13 +14,21 @@ $int = $fieldgroups->saveContext($fieldgroup);
 $int = $fieldgroups->saveContext(Fieldgroup $fieldgroup);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldgroup` `Fieldgroup`
+
+## Return value
+
+- `int` Number of field contexts saved
+
+## Hooking
 
 - Hookable method name: `saveContext`
 - Implementation: `___saveContext`
-- Hook with: `$fieldgroups->saveContext()`
+- Hook with: `Fieldgroups::saveContext`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::saveContext', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Fieldgroups::saveContext', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::saveContext', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('Fieldgroups::saveContext', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldgroup` `Fieldgroup`
-
-## Return value
-
-- `int` Number of field contexts saved

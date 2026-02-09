@@ -21,13 +21,22 @@ $bool = $fieldtype->deleteTemplateField($template, $field);
 $bool = $fieldtype->deleteTemplateField(Template $template, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$template` `Template`
+- `$field` `Field`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `deleteTemplateField`
 - Implementation: `___deleteTemplateField`
-- Hook with: `$fieldtype->deleteTemplateField()`
+- Hook with: `Fieldtype::deleteTemplateField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::deleteTemplateField', function(HookEvent $event) {
@@ -45,7 +54,7 @@ $this->addHookBefore('Fieldtype::deleteTemplateField', function(HookEvent $event
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::deleteTemplateField', function(HookEvent $event) {
@@ -62,12 +71,3 @@ $this->addHookAfter('Fieldtype::deleteTemplateField', function(HookEvent $event)
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$template` `Template`
-- `$field` `Field`
-
-## Return value
-
-- `bool`

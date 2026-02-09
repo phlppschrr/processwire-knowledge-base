@@ -24,13 +24,22 @@ $result = $page->renderValue($value);
 $result = $page->renderValue($value, $file = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$value` `mixed` Value to render
+- `$file` (optional) `string` Optionally specify file (in site/templates/fields/) to render with (may omit .php extension)
+
+## Return value
+
+- `mixed|string` Returns rendered value
+
+## Hooking
 
 - Hookable method name: `renderValue`
 - Implementation: `___renderValue`
-- Hook with: `$page->renderValue()`
+- Hook with: `Page::renderValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::renderValue', function(HookEvent $event) {
@@ -48,7 +57,7 @@ $this->addHookBefore('Page::renderValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::renderValue', function(HookEvent $event) {
@@ -65,12 +74,3 @@ $this->addHookAfter('Page::renderValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$value` `mixed` Value to render
-- `$file` (optional) `string` Optionally specify file (in site/templates/fields/) to render with (may omit .php extension)
-
-## Return value
-
-- `mixed|string` Returns rendered value

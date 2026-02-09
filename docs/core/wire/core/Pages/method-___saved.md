@@ -17,13 +17,19 @@ $result = $pages->saved($page);
 $result = $pages->saved(Page $page, array $changes = array(), $values = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` The page that was saved
+- `$changes` (optional) `array` Array of field names that changed
+- `$values` (optional) `array` Array of values that changed, if values were being recorded, see Wire::getChanges(true) for details.
+
+## Hooking
 
 - Hookable method name: `saved`
 - Implementation: `___saved`
-- Hook with: `$pages->saved()`
+- Hook with: `Pages::saved`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::saved', function(HookEvent $event) {
@@ -43,7 +49,7 @@ $this->addHookBefore('Pages::saved', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::saved', function(HookEvent $event) {
@@ -61,12 +67,6 @@ $this->addHookAfter('Pages::saved', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` The page that was saved
-- `$changes` (optional) `array` Array of field names that changed
-- `$values` (optional) `array` Array of values that changed, if values were being recorded, see Wire::getChanges(true) for details.
 
 ## See Also
 

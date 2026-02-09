@@ -17,13 +17,23 @@ $array = $sanitizer->array($value);
 $array = $sanitizer->array($value, $sanitizer = null, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first item in array.
+- `$sanitizer` (optional) `string|array` Sanitizer method to apply to items in the array or omit/null for none, or in 3.0.165+ optionally substitute the $options argument here instead (default=null).
+- `$options` (optional) `array` Optional modifications to default behavior: - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) Since 3.0.160 - `trim` (bool): Trim whitespace from front/back of each string item in array? (default=true) Since 3.0.190 - `sanitizer` (string): Optionally specify sanitizer for array values as option rather than argument (default='') Since 3.0.165 - `keySanitizer` (string): Optionally sanitize associative array keys with this method (default='') Since 3.0.167 - The following options are only used if the provided $value is a string: - `csv` (bool): Allow conversion of delimited string to array? (default=true) Since 3.0.165 - `delimiter` (string): Single delimiter to use to identify CSV strings. Overrides the 'delimiters' option when specified (default=null) - `delimiters` (array): Delimiters to identify CSV strings. First found delimiter will be used, default=array("|", ",") - `enclosure` (string): Enclosure to use for CSV strings (default=double quote, i.e. `"`) - `escape` (string): Escape to use for CSV strings (default=backslash, i.e. "\\")
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `array`
 - Implementation: `___array`
-- Hook with: `$sanitizer->array()`
+- Hook with: `Sanitizer::array`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Sanitizer::array', function(HookEvent $event) {
@@ -43,7 +53,7 @@ $this->addHookBefore('Sanitizer::array', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Sanitizer::array', function(HookEvent $event) {
@@ -61,16 +71,6 @@ $this->addHookAfter('Sanitizer::array', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$value` `array|string|mixed` Accepts an array or CSV string. If given something else, it becomes first item in array.
-- `$sanitizer` (optional) `string|array` Sanitizer method to apply to items in the array or omit/null for none, or in 3.0.165+ optionally substitute the $options argument here instead (default=null).
-- `$options` (optional) `array` Optional modifications to default behavior: - `maxItems` (int): Maximum items allowed in each array (default=0, which means no limit) - `maxDepth` (int): Max nested array depth (default=0, which means no nesting allowed) Since 3.0.160 - `trim` (bool): Trim whitespace from front/back of each string item in array? (default=true) Since 3.0.190 - `sanitizer` (string): Optionally specify sanitizer for array values as option rather than argument (default='') Since 3.0.165 - `keySanitizer` (string): Optionally sanitize associative array keys with this method (default='') Since 3.0.167 - The following options are only used if the provided $value is a string: - `csv` (bool): Allow conversion of delimited string to array? (default=true) Since 3.0.165 - `delimiter` (string): Single delimiter to use to identify CSV strings. Overrides the 'delimiters' option when specified (default=null) - `delimiters` (array): Delimiters to identify CSV strings. First found delimiter will be used, default=array("|", ",") - `enclosure` (string): Enclosure to use for CSV strings (default=double quote, i.e. `"`) - `escape` (string): Escape to use for CSV strings (default=backslash, i.e. "\\")
-
-## Return value
-
-- `array`
 
 ## Exceptions
 

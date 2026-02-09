@@ -13,13 +13,17 @@ Must be implemented by a hook or by descending class
 $bool = $pagefileExtra->create();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `bool` Returns true on success, false on fail
+
+## Hooking
 
 - Hookable method name: `create`
 - Implementation: `___create`
-- Hook with: `$pagefileExtra->create()`
+- Hook with: `PagefileExtra::create`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagefileExtra::create', function(HookEvent $event) {
@@ -29,7 +33,7 @@ $this->addHookBefore('PagefileExtra::create', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagefileExtra::create', function(HookEvent $event) {
@@ -42,7 +46,3 @@ $this->addHookAfter('PagefileExtra::create', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `bool` Returns true on success, false on fail

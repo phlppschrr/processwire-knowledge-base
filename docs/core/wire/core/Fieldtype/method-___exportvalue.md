@@ -22,13 +22,24 @@ $string = $fieldtype->exportValue($page, $field, $value);
 $string = $fieldtype->exportValue(Page $page, Field $field, $value, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|float|array|object|null`
+- `$options` (optional) `array` Optional settings to shape the exported value, if needed: - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false). - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
+
+## Return value
+
+- `string|float|int|array`
+
+## Hooking
 
 - Hookable method name: `exportValue`
 - Implementation: `___exportValue`
-- Hook with: `$fieldtype->exportValue()`
+- Hook with: `Fieldtype::exportValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::exportValue', function(HookEvent $event) {
@@ -50,7 +61,7 @@ $this->addHookBefore('Fieldtype::exportValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::exportValue', function(HookEvent $event) {
@@ -69,14 +80,3 @@ $this->addHookAfter('Fieldtype::exportValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
-- `$value` `string|int|float|array|object|null`
-- `$options` (optional) `array` Optional settings to shape the exported value, if needed: - `system` (boolean): Indicates value is being used for a system export via $pages->export() call (default=false). - `human` (boolean): When true, Fieldtype may optionally emphasize human readability over importability (default=false).
-
-## Return value
-
-- `string|float|int|array`

@@ -18,13 +18,22 @@ $bool = $user->hasPagePermission($name);
 $bool = $user->hasPagePermission($name, ?Page $page = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- string|Permission
+- `$page` (optional) `Page|null` Optional page to check against
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `hasPagePermission`
 - Implementation: `___hasPagePermission`
-- Hook with: `$user->hasPagePermission()`
+- Hook with: `User::hasPagePermission`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('User::hasPagePermission', function(HookEvent $event) {
@@ -42,7 +51,7 @@ $this->addHookBefore('User::hasPagePermission', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('User::hasPagePermission', function(HookEvent $event) {
@@ -59,12 +68,3 @@ $this->addHookAfter('User::hasPagePermission', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- string|Permission
-- `$page` (optional) `Page|null` Optional page to check against
-
-## Return value
-
-- `bool`

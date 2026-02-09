@@ -32,13 +32,22 @@ $bool = $pageimage->isVariation($basename);
 $bool = $pageimage->isVariation($basename, $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$basename` `string` Filename to check (basename, which excludes path)
+- `$options` (optional) `array|bool` Array of options to modify behavior, or boolean to only specify `allowSelf` option. - `allowSelf` (bool): When true, it will return variation info even if same as current Pageimage. (default=false) - `verbose` (bool): Return verbose array of info? If false, just returns basename (string) or false. (default=true)
+
+## Return value
+
+- `bool|string|array` Returns false if not a variation, or array (verbose) or string (non-verbose) of info if it is.
+
+## Hooking
 
 - Hookable method name: `isVariation`
 - Implementation: `___isVariation`
-- Hook with: `$pageimage->isVariation()`
+- Hook with: `Pageimage::isVariation`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pageimage::isVariation', function(HookEvent $event) {
@@ -56,7 +65,7 @@ $this->addHookBefore('Pageimage::isVariation', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pageimage::isVariation', function(HookEvent $event) {
@@ -73,12 +82,3 @@ $this->addHookAfter('Pageimage::isVariation', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$basename` `string` Filename to check (basename, which excludes path)
-- `$options` (optional) `array|bool` Array of options to modify behavior, or boolean to only specify `allowSelf` option. - `allowSelf` (bool): When true, it will return variation info even if same as current Pageimage. (default=false) - `verbose` (bool): Return verbose array of info? If false, just returns basename (string) or false. (default=true)
-
-## Return value
-
-- `bool|string|array` Returns false if not a variation, or array (verbose) or string (non-verbose) of info if it is.

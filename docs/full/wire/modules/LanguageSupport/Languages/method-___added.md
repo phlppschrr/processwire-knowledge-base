@@ -14,13 +14,17 @@ $result = $languages->added($language);
 $result = $languages->added(Page $language);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$language` `Page`
+
+## Hooking
 
 - Hookable method name: `added`
 - Implementation: `___added`
-- Hook with: `$languages->added()`
+- Hook with: `Languages::added`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Languages::added', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Languages::added', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Languages::added', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Languages::added', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$language` `Page`

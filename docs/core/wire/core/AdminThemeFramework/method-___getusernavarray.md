@@ -26,13 +26,17 @@ Supported properties/attributes as of 3.0.248:
 $array = $adminThemeFramework->getUserNavArray();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getUserNavArray`
 - Implementation: `___getUserNavArray`
-- Hook with: `$adminThemeFramework->getUserNavArray()`
+- Hook with: `AdminThemeFramework::getUserNavArray`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('AdminThemeFramework::getUserNavArray', function(HookEvent $event) {
@@ -42,7 +46,7 @@ $this->addHookBefore('AdminThemeFramework::getUserNavArray', function(HookEvent 
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('AdminThemeFramework::getUserNavArray', function(HookEvent $event) {
@@ -55,7 +59,3 @@ $this->addHookAfter('AdminThemeFramework::getUserNavArray', function(HookEvent $
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `array`

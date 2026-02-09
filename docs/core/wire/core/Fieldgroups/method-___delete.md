@@ -16,13 +16,21 @@ $bool = $fieldgroups->delete($item);
 $bool = $fieldgroups->delete(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable|Fieldgroup`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$fieldgroups->delete()`
+- Hook with: `Fieldgroups::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::delete', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('Fieldgroups::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::delete', function(HookEvent $event) {
@@ -54,14 +62,6 @@ $this->addHookAfter('Fieldgroups::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable|Fieldgroup`
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

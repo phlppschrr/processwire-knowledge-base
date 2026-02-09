@@ -16,13 +16,19 @@ $result = $tfa->getUserEnabledInputfields($user, $fieldset, $settings);
 $result = $tfa->getUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$user` `User`
+- `$fieldset` `InputfieldWrapper`
+- `$settings` `array`
+
+## Hooking
 
 - Hookable method name: `getUserEnabledInputfields`
 - Implementation: `___getUserEnabledInputfields`
-- Hook with: `$tfa->getUserEnabledInputfields()`
+- Hook with: `Tfa::getUserEnabledInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::getUserEnabledInputfields', function(HookEvent $event) {
@@ -42,7 +48,7 @@ $this->addHookBefore('Tfa::getUserEnabledInputfields', function(HookEvent $event
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::getUserEnabledInputfields', function(HookEvent $event) {
@@ -60,9 +66,3 @@ $this->addHookAfter('Tfa::getUserEnabledInputfields', function(HookEvent $event)
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$user` `User`
-- `$fieldset` `InputfieldWrapper`
-- `$settings` `array`

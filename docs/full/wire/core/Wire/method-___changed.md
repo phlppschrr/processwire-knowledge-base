@@ -18,13 +18,19 @@ $result = $wire->changed($what);
 $result = $wire->changed($what, $old = null, $new = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$what` `string` Name of property that changed
+- `$old` (optional) `mixed` Previous value before change
+- `$new` (optional) `mixed` New value
+
+## Hooking
 
 - Hookable method name: `changed`
 - Implementation: `___changed`
-- Hook with: `$wire->changed()`
+- Hook with: `Wire::changed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Wire::changed', function(HookEvent $event) {
@@ -44,7 +50,7 @@ $this->addHookBefore('Wire::changed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Wire::changed', function(HookEvent $event) {
@@ -62,12 +68,6 @@ $this->addHookAfter('Wire::changed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$what` `string` Name of property that changed
-- `$old` (optional) `mixed` Previous value before change
-- `$new` (optional) `mixed` New value
 
 ## See Also
 

@@ -4,13 +4,13 @@ Source: `wire/core/WireHooks.php`
 
 Debug hooks
 
-## Hookable
+## Hooking
 
 - Hookable method name: `debug`
 - Implementation: `___debug`
-- Hook with: `$wireHooks->debug()`
+- Hook with: `WireHooks::debug`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireHooks::debug', function(HookEvent $event) {
@@ -20,7 +20,7 @@ $this->addHookBefore('WireHooks::debug', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireHooks::debug', function(HookEvent $event) {

@@ -14,13 +14,17 @@ The given $filename may be local (path) or external (URL).
 $result = $pagefile->install($filename);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$filename` `string` Full path and filename of file to install, or http/https URL to pull file from.
+
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$pagefile->install()`
+- Hook with: `Pagefile::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pagefile::install', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pagefile::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pagefile::install', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('Pagefile::install', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$filename` `string` Full path and filename of file to install, or http/https URL to pull file from.
 
 ## Exceptions
 

@@ -14,13 +14,19 @@ $result = $fields->changedType($item, $fromType, $toType);
 $result = $fields->changedType(Saveable $item, Fieldtype $fromType, Fieldtype $toType);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Field`
+- `$fromType` `Fieldtype`
+- `$toType` `Fieldtype`
+
+## Hooking
 
 - Hookable method name: `changedType`
 - Implementation: `___changedType`
-- Hook with: `$fields->changedType()`
+- Hook with: `Fields::changedType`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::changedType', function(HookEvent $event) {
@@ -40,7 +46,7 @@ $this->addHookBefore('Fields::changedType', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::changedType', function(HookEvent $event) {
@@ -58,9 +64,3 @@ $this->addHookAfter('Fields::changedType', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Field`
-- `$fromType` `Fieldtype`
-- `$toType` `Fieldtype`

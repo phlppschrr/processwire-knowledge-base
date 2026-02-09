@@ -24,13 +24,23 @@ $bool = $pages->saveField($page, $field);
 $bool = $pages->saveField(Page $page, $field, $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page to save
+- `$field` `string|Field` Field object or name (string)
+- `$options` (optional) `array|string` Optionally specify one or more of the following to modify default behavior: - `quiet` (boolean): Specify true to bypass updating of modified user and time (default=false). - `noHooks` (boolean): Prevent before/after save hooks (default=false), please also use $pages->___saveField() for call.
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `saveField`
 - Implementation: `___saveField`
-- Hook with: `$pages->saveField()`
+- Hook with: `Pages::saveField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::saveField', function(HookEvent $event) {
@@ -50,7 +60,7 @@ $this->addHookBefore('Pages::saveField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::saveField', function(HookEvent $event) {
@@ -68,16 +78,6 @@ $this->addHookAfter('Pages::saveField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page to save
-- `$field` `string|Field` Field object or name (string)
-- `$options` (optional) `array|string` Optionally specify one or more of the following to modify default behavior: - `quiet` (boolean): Specify true to bypass updating of modified user and time (default=false). - `noHooks` (boolean): Prevent before/after save hooks (default=false), please also use $pages->___saveField() for call.
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

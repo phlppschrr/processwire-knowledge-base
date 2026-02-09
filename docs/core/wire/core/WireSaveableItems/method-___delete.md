@@ -14,13 +14,21 @@ $bool = $wireSaveableItems->delete($item);
 $bool = $wireSaveableItems->delete(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable` Item to save
+
+## Return value
+
+- `bool` Returns true on success, false on failure
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$wireSaveableItems->delete()`
+- Hook with: `WireSaveableItems::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::delete', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('WireSaveableItems::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::delete', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('WireSaveableItems::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable` Item to save
-
-## Return value
-
-- `bool` Returns true on success, false on failure
 
 ## Exceptions
 

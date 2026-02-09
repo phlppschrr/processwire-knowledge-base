@@ -13,13 +13,17 @@ Call this method only after you have specified at least the `subject`, `to` and 
 $int = $wireMail->send();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `int` Returns a positive number (indicating number of addresses emailed) or 0 on failure.
+
+## Hooking
 
 - Hookable method name: `send`
 - Implementation: `___send`
-- Hook with: `$wireMail->send()`
+- Hook with: `WireMail::send`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireMail::send', function(HookEvent $event) {
@@ -29,7 +33,7 @@ $this->addHookBefore('WireMail::send', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireMail::send', function(HookEvent $event) {
@@ -42,7 +46,3 @@ $this->addHookAfter('WireMail::send', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `int` Returns a positive number (indicating number of addresses emailed) or 0 on failure.

@@ -11,13 +11,17 @@ Hookable implementation for the above isPublic function
 $bool = $page->isPublic();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `isPublic`
 - Implementation: `___isPublic`
-- Hook with: `$page->isPublic()`
+- Hook with: `Page::isPublic`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::isPublic', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('Page::isPublic', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::isPublic', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('Page::isPublic', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `bool`

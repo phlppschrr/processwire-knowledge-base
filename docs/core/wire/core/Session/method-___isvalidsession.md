@@ -13,13 +13,21 @@ These items may be disabled at the config level, in which case this method alway
 $bool = $session->isValidSession($userID);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$userID` `int`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `isValidSession`
 - Implementation: `___isValidSession`
-- Hook with: `$session->isValidSession()`
+- Hook with: `Session::isValidSession`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::isValidSession', function(HookEvent $event) {
@@ -35,7 +43,7 @@ $this->addHookBefore('Session::isValidSession', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::isValidSession', function(HookEvent $event) {
@@ -51,11 +59,3 @@ $this->addHookAfter('Session::isValidSession', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$userID` `int`
-
-## Return value
-
-- `bool`

@@ -40,13 +40,23 @@ $result = $page->renderField($fieldName);
 $result = $page->renderField($fieldName, $file = '', $value = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldName` `string` May be any custom field name or native page property.
+- `$file` (optional) `string` Optionally specify file (in site/templates/fields/) to render with (may optionally omit .php extension).
+- `$value` (optional) `mixed|null` Optionally specify value to render, otherwise it will be pulled from this page.
+
+## Return value
+
+- `mixed|string` Returns the rendered value of the field
+
+## Hooking
 
 - Hookable method name: `renderField`
 - Implementation: `___renderField`
-- Hook with: `$page->renderField()`
+- Hook with: `Page::renderField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::renderField', function(HookEvent $event) {
@@ -66,7 +76,7 @@ $this->addHookBefore('Page::renderField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::renderField', function(HookEvent $event) {
@@ -84,16 +94,6 @@ $this->addHookAfter('Page::renderField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldName` `string` May be any custom field name or native page property.
-- `$file` (optional) `string` Optionally specify file (in site/templates/fields/) to render with (may optionally omit .php extension).
-- `$value` (optional) `mixed|null` Optionally specify value to render, otherwise it will be pulled from this page.
-
-## Return value
-
-- `mixed|string` Returns the rendered value of the field
 
 ## See Also
 

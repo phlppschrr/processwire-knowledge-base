@@ -14,13 +14,22 @@ $bool = $session->allowLogin($name);
 $bool = $session->allowLogin($name, $user = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` User login name
+- `$user` (optional) `User|null` User object
+
+## Return value
+
+- `bool` True if allowed to login, false if not (hooks may modify this)
+
+## Hooking
 
 - Hookable method name: `allowLogin`
 - Implementation: `___allowLogin`
-- Hook with: `$session->allowLogin()`
+- Hook with: `Session::allowLogin`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::allowLogin', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('Session::allowLogin', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::allowLogin', function(HookEvent $event) {
@@ -55,12 +64,3 @@ $this->addHookAfter('Session::allowLogin', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` User login name
-- `$user` (optional) `User|null` User object
-
-## Return value
-
-- `bool` True if allowed to login, false if not (hooks may modify this)

@@ -13,13 +13,17 @@ Render the code input form
 $string = $tfa->render();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$tfa->render()`
+- Hook with: `Tfa::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::render', function(HookEvent $event) {
@@ -29,7 +33,7 @@ $this->addHookBefore('Tfa::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::render', function(HookEvent $event) {
@@ -42,7 +46,3 @@ $this->addHookAfter('Tfa::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

@@ -14,13 +14,13 @@ is called to provide an alternate save handler.
 $result = $session->init();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `init`
 - Implementation: `___init`
-- Hook with: `$session->init()`
+- Hook with: `Session::init`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::init', function(HookEvent $event) {
@@ -30,7 +30,7 @@ $this->addHookBefore('Session::init', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::init', function(HookEvent $event) {

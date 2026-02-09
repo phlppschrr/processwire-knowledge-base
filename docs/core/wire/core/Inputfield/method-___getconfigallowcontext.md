@@ -21,13 +21,21 @@ tab rather than the "Details" tab.
 $array = $inputfield->getConfigAllowContext($field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `array` of Inputfield names
+
+## Hooking
 
 - Hookable method name: `getConfigAllowContext`
 - Implementation: `___getConfigAllowContext`
-- Hook with: `$inputfield->getConfigAllowContext()`
+- Hook with: `Inputfield::getConfigAllowContext`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::getConfigAllowContext', function(HookEvent $event) {
@@ -43,7 +51,7 @@ $this->addHookBefore('Inputfield::getConfigAllowContext', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::getConfigAllowContext', function(HookEvent $event) {
@@ -59,14 +67,6 @@ $this->addHookAfter('Inputfield::getConfigAllowContext', function(HookEvent $eve
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `array` of Inputfield names
 
 ## See Also
 

@@ -25,13 +25,17 @@ $result = $pages->renameReady($page);
 $result = $pages->renameReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` The $page that was renamed
+
+## Hooking
 
 - Hookable method name: `renameReady`
 - Implementation: `___renameReady`
-- Hook with: `$pages->renameReady()`
+- Hook with: `Pages::renameReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::renameReady', function(HookEvent $event) {
@@ -47,7 +51,7 @@ $this->addHookBefore('Pages::renameReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::renameReady', function(HookEvent $event) {
@@ -63,10 +67,6 @@ $this->addHookAfter('Pages::renameReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` The $page that was renamed
 
 ## Since
 

@@ -17,13 +17,22 @@ $this->breadcrumb("../", "Widgets");
 $result = $process->breadcrumb($href, $label);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$href` `string` URL of breadcrumb
+- `$label` `string` Label for breadcrumb
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `breadcrumb`
 - Implementation: `___breadcrumb`
-- Hook with: `$process->breadcrumb()`
+- Hook with: `Process::breadcrumb`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::breadcrumb', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('Process::breadcrumb', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::breadcrumb', function(HookEvent $event) {
@@ -58,12 +67,3 @@ $this->addHookAfter('Process::breadcrumb', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$href` `string` URL of breadcrumb
-- `$label` `string` Label for breadcrumb
-
-## Return value
-
-- `$this`

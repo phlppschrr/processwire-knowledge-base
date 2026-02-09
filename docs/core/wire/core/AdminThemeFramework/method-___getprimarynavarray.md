@@ -11,13 +11,17 @@ Return nav array of primary navigation
 $array = $adminThemeFramework->getPrimaryNavArray();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getPrimaryNavArray`
 - Implementation: `___getPrimaryNavArray`
-- Hook with: `$adminThemeFramework->getPrimaryNavArray()`
+- Hook with: `AdminThemeFramework::getPrimaryNavArray`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('AdminThemeFramework::getPrimaryNavArray', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('AdminThemeFramework::getPrimaryNavArray', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('AdminThemeFramework::getPrimaryNavArray', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('AdminThemeFramework::getPrimaryNavArray', function(HookEven
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `array`

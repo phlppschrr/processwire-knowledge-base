@@ -16,13 +16,22 @@ $string = $commentList->renderItem($comment);
 $string = $commentList->renderItem(Comment $comment, $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$comment` `Comment`
+- `$options` (optional) `array|int` Options array
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `renderItem`
 - Implementation: `___renderItem`
-- Hook with: `$commentList->renderItem()`
+- Hook with: `CommentList::renderItem`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('CommentList::renderItem', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('CommentList::renderItem', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('CommentList::renderItem', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('CommentList::renderItem', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$comment` `Comment`
-- `$options` (optional) `array|int` Options array
-
-## Return value
-
-- `string`
 
 ## See Also
 

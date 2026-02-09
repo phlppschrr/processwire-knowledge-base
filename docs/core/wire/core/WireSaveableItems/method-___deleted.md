@@ -16,13 +16,17 @@ $result = $wireSaveableItems->deleted($item);
 $result = $wireSaveableItems->deleted(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable`
+
+## Hooking
 
 - Hookable method name: `deleted`
 - Implementation: `___deleted`
-- Hook with: `$wireSaveableItems->deleted()`
+- Hook with: `WireSaveableItems::deleted`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItems::deleted', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('WireSaveableItems::deleted', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItems::deleted', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('WireSaveableItems::deleted', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable`

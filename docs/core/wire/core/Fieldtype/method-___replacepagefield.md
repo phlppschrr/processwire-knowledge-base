@@ -14,13 +14,23 @@ $bool = $fieldtype->replacePageField($src, $dst, $field);
 $bool = $fieldtype->replacePageField(Page $src, Page $dst, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$src` `Page` Source Page
+- `$dst` `Page` Destination Page
+- `$field` `Field`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `replacePageField`
 - Implementation: `___replacePageField`
-- Hook with: `$fieldtype->replacePageField()`
+- Hook with: `Fieldtype::replacePageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::replacePageField', function(HookEvent $event) {
@@ -40,7 +50,7 @@ $this->addHookBefore('Fieldtype::replacePageField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::replacePageField', function(HookEvent $event) {
@@ -58,13 +68,3 @@ $this->addHookAfter('Fieldtype::replacePageField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$src` `Page` Source Page
-- `$dst` `Page` Destination Page
-- `$field` `Field`
-
-## Return value
-
-- `bool`

@@ -13,13 +13,21 @@ Used for debugging and testing purposes.
 $array = $sanitizer->testAll($value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$value` `mixed`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `testAll`
 - Implementation: `___testAll`
-- Hook with: `$sanitizer->testAll()`
+- Hook with: `Sanitizer::testAll`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Sanitizer::testAll', function(HookEvent $event) {
@@ -35,7 +43,7 @@ $this->addHookBefore('Sanitizer::testAll', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Sanitizer::testAll', function(HookEvent $event) {
@@ -51,11 +59,3 @@ $this->addHookAfter('Sanitizer::testAll', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$value` `mixed`
-
-## Return value
-
-- `array`

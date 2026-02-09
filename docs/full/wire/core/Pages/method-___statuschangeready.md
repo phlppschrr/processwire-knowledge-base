@@ -16,13 +16,17 @@ $result = $pages->statusChangeReady($page);
 $result = $pages->statusChangeReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `statusChangeReady`
 - Implementation: `___statusChangeReady`
-- Hook with: `$pages->statusChangeReady()`
+- Hook with: `Pages::statusChangeReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::statusChangeReady', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('Pages::statusChangeReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::statusChangeReady', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('Pages::statusChangeReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

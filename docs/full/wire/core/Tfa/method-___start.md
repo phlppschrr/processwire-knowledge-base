@@ -19,13 +19,22 @@ it needs to move on to the next 2FA step.
 $bool = $tfa->start($name, $pass);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string`
+- `$pass` `string`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `start`
 - Implementation: `___start`
-- Hook with: `$tfa->start()`
+- Hook with: `Tfa::start`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::start', function(HookEvent $event) {
@@ -43,7 +52,7 @@ $this->addHookBefore('Tfa::start', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::start', function(HookEvent $event) {
@@ -60,12 +69,3 @@ $this->addHookAfter('Tfa::start', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string`
-- `$pass` `string`
-
-## Return value
-
-- `bool`

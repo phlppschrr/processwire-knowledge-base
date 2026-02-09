@@ -20,13 +20,23 @@ $string = $fieldtype->wakeupValue($page, $field, $value);
 $string = $fieldtype->wakeupValue(Page $page, Field $field, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|array`
+
+## Return value
+
+- `string|int|array|object` $value
+
+## Hooking
 
 - Hookable method name: `wakeupValue`
 - Implementation: `___wakeupValue`
-- Hook with: `$fieldtype->wakeupValue()`
+- Hook with: `Fieldtype::wakeupValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::wakeupValue', function(HookEvent $event) {
@@ -46,7 +56,7 @@ $this->addHookBefore('Fieldtype::wakeupValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::wakeupValue', function(HookEvent $event) {
@@ -64,16 +74,6 @@ $this->addHookAfter('Fieldtype::wakeupValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
-- `$value` `string|int|array`
-
-## Return value
-
-- `string|int|array|object` $value
 
 ## See Also
 

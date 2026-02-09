@@ -26,13 +26,24 @@ $string = $fieldtype->markupValue($page, $field);
 $string = $fieldtype->markupValue(Page $page, Field $field, $value = null, $property = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that $value comes from
+- `$field` `Field` Field that $value comes from
+- `$value` (optional) `mixed` Optionally specify the value returned by `$page->getFormatted('field')`. When specified, value must be a formatted value. If null or not specified (recommended), it will be retrieved automatically.
+- `$property` (optional) `string` Optionally specify the property or index to render. If omitted, entire value is rendered.
+
+## Return value
+
+- `string|MarkupFieldtype` Returns a string or object that can be output as a string, ready for output. Return a MarkupFieldtype value when suitable so that the caller has potential specify additional config options before typecasting it to a string.
+
+## Hooking
 
 - Hookable method name: `markupValue`
 - Implementation: `___markupValue`
-- Hook with: `$fieldtype->markupValue()`
+- Hook with: `Fieldtype::markupValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::markupValue', function(HookEvent $event) {
@@ -54,7 +65,7 @@ $this->addHookBefore('Fieldtype::markupValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::markupValue', function(HookEvent $event) {
@@ -73,14 +84,3 @@ $this->addHookAfter('Fieldtype::markupValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that $value comes from
-- `$field` `Field` Field that $value comes from
-- `$value` (optional) `mixed` Optionally specify the value returned by `$page->getFormatted('field')`. When specified, value must be a formatted value. If null or not specified (recommended), it will be retrieved automatically.
-- `$property` (optional) `string` Optionally specify the property or index to render. If omitted, entire value is rendered.
-
-## Return value
-
-- `string|MarkupFieldtype` Returns a string or object that can be output as a string, ready for output. Return a MarkupFieldtype value when suitable so that the caller has potential specify additional config options before typecasting it to a string.

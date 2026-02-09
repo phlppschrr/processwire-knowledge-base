@@ -16,13 +16,17 @@ $result = $pagesAccess->updateTemplate($template);
 $result = $pagesAccess->updateTemplate(Template $template);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$template` `Template`
+
+## Hooking
 
 - Hookable method name: `updateTemplate`
 - Implementation: `___updateTemplate`
-- Hook with: `$pagesAccess->updateTemplate()`
+- Hook with: `PagesAccess::updateTemplate`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesAccess::updateTemplate', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('PagesAccess::updateTemplate', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesAccess::updateTemplate', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('PagesAccess::updateTemplate', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$template` `Template`

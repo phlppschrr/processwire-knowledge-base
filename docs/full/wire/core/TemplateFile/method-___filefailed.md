@@ -14,13 +14,22 @@ $bool = $templateFile->fileFailed($filename, $e);
 $bool = $templateFile->fileFailed($filename, \Exception $e);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$filename` `string`
+- `$e` `\Exception`
+
+## Return value
+
+- `bool` True if Exception $e should be thrown, false if it should be ignored
+
+## Hooking
 
 - Hookable method name: `fileFailed`
 - Implementation: `___fileFailed`
-- Hook with: `$templateFile->fileFailed()`
+- Hook with: `TemplateFile::fileFailed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('TemplateFile::fileFailed', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('TemplateFile::fileFailed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('TemplateFile::fileFailed', function(HookEvent $event) {
@@ -55,15 +64,6 @@ $this->addHookAfter('TemplateFile::fileFailed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$filename` `string`
-- `$e` `\Exception`
-
-## Return value
-
-- `bool` True if Exception $e should be thrown, false if it should be ignored
 
 ## Since
 

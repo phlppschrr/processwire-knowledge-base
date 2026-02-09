@@ -24,13 +24,18 @@ $wire->addHook('Page::removeStatusReady', function($e) {
 $result = $page->removeStatusReady($name, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of the status flag to be removed, i.e. unpublished, hidden, trash, locked
+- `$value` `int` Value of the status flag to be removed, a `Page::status*` constant
+
+## Hooking
 
 - Hookable method name: `removeStatusReady`
 - Implementation: `___removeStatusReady`
-- Hook with: `$page->removeStatusReady()`
+- Hook with: `Page::removeStatusReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::removeStatusReady', function(HookEvent $event) {
@@ -48,7 +53,7 @@ $this->addHookBefore('Page::removeStatusReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::removeStatusReady', function(HookEvent $event) {
@@ -65,11 +70,6 @@ $this->addHookAfter('Page::removeStatusReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of the status flag to be removed, i.e. unpublished, hidden, trash, locked
-- `$value` `int` Value of the status flag to be removed, a `Page::status*` constant
 
 ## Since
 

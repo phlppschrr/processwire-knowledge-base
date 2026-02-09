@@ -17,13 +17,22 @@ $pagefile = $pagefiles->clone($item);
 $pagefile = $pagefiles->clone(Pagefile $item, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Pagefile` Pagefile item to duplicate
+- `$options` (optional) `array` Options to modify default behavior: - `action` (string): Specify "append", "prepend", "after", "before" or blank to only return Pagefile. (default="after") - `pagefiles` (Pagefiles): Pagefiles instance file should be duplicated to. (default=$this)
+
+## Return value
+
+- `Pagefile|bool` Returns new Pagefile or boolean false on fail
+
+## Hooking
 
 - Hookable method name: `clone`
 - Implementation: `___clone`
-- Hook with: `$pagefiles->clone()`
+- Hook with: `Pagefiles::clone`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pagefiles::clone', function(HookEvent $event) {
@@ -41,7 +50,7 @@ $this->addHookBefore('Pagefiles::clone', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pagefiles::clone', function(HookEvent $event) {
@@ -58,12 +67,3 @@ $this->addHookAfter('Pagefiles::clone', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Pagefile` Pagefile item to duplicate
-- `$options` (optional) `array` Options to modify default behavior: - `action` (string): Specify "append", "prepend", "after", "before" or blank to only return Pagefile. (default="after") - `pagefiles` (Pagefiles): Pagefiles instance file should be duplicated to. (default=$this)
-
-## Return value
-
-- `Pagefile|bool` Returns new Pagefile or boolean false on fail

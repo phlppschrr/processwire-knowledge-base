@@ -14,13 +14,17 @@ $result = $pages->trashReady($page);
 $result = $pages->trashReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `trashReady`
 - Implementation: `___trashReady`
-- Hook with: `$pages->trashReady()`
+- Hook with: `Pages::trashReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::trashReady', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::trashReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::trashReady', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('Pages::trashReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
 
 ## Since
 

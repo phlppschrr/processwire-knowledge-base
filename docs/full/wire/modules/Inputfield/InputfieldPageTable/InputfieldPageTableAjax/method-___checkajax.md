@@ -11,13 +11,13 @@ Check if current request is a valid ajax request and call renderAjax() if it is.
 $result = $inputfieldPageTableAjax->checkAjax();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `checkAjax`
 - Implementation: `___checkAjax`
-- Hook with: `$inputfieldPageTableAjax->checkAjax()`
+- Hook with: `InputfieldPageTableAjax::checkAjax`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldPageTableAjax::checkAjax', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('InputfieldPageTableAjax::checkAjax', function(HookEvent $e
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldPageTableAjax::checkAjax', function(HookEvent $event) {

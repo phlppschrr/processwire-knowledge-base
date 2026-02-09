@@ -11,13 +11,21 @@ Use an extra named component
 $result = $moduleJS->use($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- $name
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `use`
 - Implementation: `___use`
-- Hook with: `$moduleJS->use()`
+- Hook with: `ModuleJS::use`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ModuleJS::use', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('ModuleJS::use', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ModuleJS::use', function(HookEvent $event) {
@@ -49,11 +57,3 @@ $this->addHookAfter('ModuleJS::use', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- $name
-
-## Return value
-
-- `$this`

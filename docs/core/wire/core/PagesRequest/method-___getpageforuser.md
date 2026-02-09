@@ -18,13 +18,22 @@ $page = $pagesRequest->getPageForUser($page, $user);
 $page = $pagesRequest->getPageForUser(Page $page, User $user);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$user` `User`
+
+## Return value
+
+- `Page|NullPage`
+
+## Hooking
 
 - Hookable method name: `getPageForUser`
 - Implementation: `___getPageForUser`
-- Hook with: `$pagesRequest->getPageForUser()`
+- Hook with: `PagesRequest::getPageForUser`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesRequest::getPageForUser', function(HookEvent $event) {
@@ -42,7 +51,7 @@ $this->addHookBefore('PagesRequest::getPageForUser', function(HookEvent $event) 
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesRequest::getPageForUser', function(HookEvent $event) {
@@ -59,12 +68,3 @@ $this->addHookAfter('PagesRequest::getPageForUser', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$user` `User`
-
-## Return value
-
-- `Page|NullPage`

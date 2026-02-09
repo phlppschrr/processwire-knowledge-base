@@ -21,13 +21,18 @@ $wire->addHook('Page::renamed', function($e) {
 $result = $page->renamed($oldName, $newName);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$oldName` `string` The old name
+- `$newName` `string` The new name
+
+## Hooking
 
 - Hookable method name: `renamed`
 - Implementation: `___renamed`
-- Hook with: `$page->renamed()`
+- Hook with: `Page::renamed`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::renamed', function(HookEvent $event) {
@@ -45,7 +50,7 @@ $this->addHookBefore('Page::renamed', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::renamed', function(HookEvent $event) {
@@ -62,11 +67,6 @@ $this->addHookAfter('Page::renamed', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$oldName` `string` The old name
-- `$newName` `string` The new name
 
 ## Since
 

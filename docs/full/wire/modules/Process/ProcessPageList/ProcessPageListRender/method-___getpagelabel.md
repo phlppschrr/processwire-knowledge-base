@@ -14,13 +14,22 @@ $string = $processPageListRender->getPageLabel($page);
 $string = $processPageListRender->getPageLabel(Page $page, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$options` (optional) `array` - `noTags` (bool): If true, HTML will be excluded [other than for icon] in returned text value (default=false) - `noIcon` (bool): If true, icon markup will be excluded from returned value (default=false)
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `getPageLabel`
 - Implementation: `___getPageLabel`
-- Hook with: `$processPageListRender->getPageLabel()`
+- Hook with: `ProcessPageListRender::getPageLabel`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageListRender::getPageLabel', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('ProcessPageListRender::getPageLabel', function(HookEvent $
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageListRender::getPageLabel', function(HookEvent $event) {
@@ -55,12 +64,3 @@ $this->addHookAfter('ProcessPageListRender::getPageLabel', function(HookEvent $e
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$options` (optional) `array` - `noTags` (bool): If true, HTML will be excluded [other than for icon] in returned text value (default=false) - `noIcon` (bool): If true, icon markup will be excluded from returned value (default=false)
-
-## Return value
-
-- `string`

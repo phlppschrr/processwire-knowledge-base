@@ -22,13 +22,17 @@ $wire->addHookAfter('ProcessPageSearchLive::getDefaultPageSearchFields', functio
 $array = $processPageSearchLive->getDefaultPageSearchFields();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getDefaultPageSearchFields`
 - Implementation: `___getDefaultPageSearchFields`
-- Hook with: `$processPageSearchLive->getDefaultPageSearchFields()`
+- Hook with: `ProcessPageSearchLive::getDefaultPageSearchFields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageSearchLive::getDefaultPageSearchFields', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('ProcessPageSearchLive::getDefaultPageSearchFields', functi
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageSearchLive::getDefaultPageSearchFields', function(HookEvent $event) {
@@ -51,10 +55,6 @@ $this->addHookAfter('ProcessPageSearchLive::getDefaultPageSearchFields', functio
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `array`
 
 ## Since
 

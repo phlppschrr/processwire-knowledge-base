@@ -24,13 +24,21 @@ if($page->parents->and($page)->has($featured)) {
 $items = $wireArray->and($item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Wire|WireArray` Item(s) to append
+
+## Return value
+
+- `WireArray` New WireArray containing this one and the given item(s).
+
+## Hooking
 
 - Hookable method name: `and`
 - Implementation: `___and`
-- Hook with: `$wireArray->and()`
+- Hook with: `WireArray::and`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireArray::and', function(HookEvent $event) {
@@ -46,7 +54,7 @@ $this->addHookBefore('WireArray::and', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireArray::and', function(HookEvent $event) {
@@ -62,11 +70,3 @@ $this->addHookAfter('WireArray::and', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Wire|WireArray` Item(s) to append
-
-## Return value
-
-- `WireArray` New WireArray containing this one and the given item(s).

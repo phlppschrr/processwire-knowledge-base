@@ -17,13 +17,18 @@ $result = $pages->deleteReady($page);
 $result = $pages->deleteReady(Page $page, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that is about to be deleted.
+- `$options` (optional) `array` Options passed to delete method (since 3.0.163)
+
+## Hooking
 
 - Hookable method name: `deleteReady`
 - Implementation: `___deleteReady`
-- Hook with: `$pages->deleteReady()`
+- Hook with: `Pages::deleteReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::deleteReady', function(HookEvent $event) {
@@ -41,7 +46,7 @@ $this->addHookBefore('Pages::deleteReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::deleteReady', function(HookEvent $event) {
@@ -58,8 +63,3 @@ $this->addHookAfter('Pages::deleteReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that is about to be deleted.
-- `$options` (optional) `array` Options passed to delete method (since 3.0.163)

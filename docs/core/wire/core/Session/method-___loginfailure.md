@@ -11,13 +11,18 @@ Login failure method for hooks
 $result = $session->loginFailure($name, $reason);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Attempted login name
+- `$reason` `string` Reason for login failure
+
+## Hooking
 
 - Hookable method name: `loginFailure`
 - Implementation: `___loginFailure`
-- Hook with: `$session->loginFailure()`
+- Hook with: `Session::loginFailure`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::loginFailure', function(HookEvent $event) {
@@ -35,7 +40,7 @@ $this->addHookBefore('Session::loginFailure', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::loginFailure', function(HookEvent $event) {
@@ -52,8 +57,3 @@ $this->addHookAfter('Session::loginFailure', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Attempted login name
-- `$reason` `string` Reason for login failure

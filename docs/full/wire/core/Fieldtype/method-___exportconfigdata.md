@@ -18,13 +18,22 @@ $array = $fieldtype->exportConfigData($field, $data);
 $array = $fieldtype->exportConfigData(Field $field, array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+- `$data` `array`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `exportConfigData`
 - Implementation: `___exportConfigData`
-- Hook with: `$fieldtype->exportConfigData()`
+- Hook with: `Fieldtype::exportConfigData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::exportConfigData', function(HookEvent $event) {
@@ -42,7 +51,7 @@ $this->addHookBefore('Fieldtype::exportConfigData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::exportConfigData', function(HookEvent $event) {
@@ -59,12 +68,3 @@ $this->addHookAfter('Fieldtype::exportConfigData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-- `$data` `array`
-
-## Return value
-
-- `array`

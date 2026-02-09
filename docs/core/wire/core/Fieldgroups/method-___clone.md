@@ -16,13 +16,22 @@ $fieldgroup = $fieldgroups->clone($item);
 $fieldgroup = $fieldgroups->clone(Saveable $item, $name = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable` Item to clone
+- `$name` (optional) `string`
+
+## Return value
+
+- `Fieldgroup|false` $item Returns the new clone on success, or false on failure
+
+## Hooking
 
 - Hookable method name: `clone`
 - Implementation: `___clone`
-- Hook with: `$fieldgroups->clone()`
+- Hook with: `Fieldgroups::clone`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldgroups::clone', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Fieldgroups::clone', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldgroups::clone', function(HookEvent $event) {
@@ -57,12 +66,3 @@ $this->addHookAfter('Fieldgroups::clone', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable` Item to clone
-- `$name` (optional) `string`
-
-## Return value
-
-- `Fieldgroup|false` $item Returns the new clone on success, or false on failure

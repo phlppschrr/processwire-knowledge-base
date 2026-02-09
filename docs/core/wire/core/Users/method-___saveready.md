@@ -14,13 +14,21 @@ $array = $users->saveReady($page);
 $array = $users->saveReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` The user about to be saved
+
+## Return value
+
+- `array` Optional extra data to add to pages save query.
+
+## Hooking
 
 - Hookable method name: `saveReady`
 - Implementation: `___saveReady`
-- Hook with: `$users->saveReady()`
+- Hook with: `Users::saveReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Users::saveReady', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Users::saveReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Users::saveReady', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('Users::saveReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` The user about to be saved
-
-## Return value
-
-- `array` Optional extra data to add to pages save query.

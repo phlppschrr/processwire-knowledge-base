@@ -18,13 +18,21 @@ instead, as hooking this method will not hook relevant pages added directly thro
 $page = $pagesType->add($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name to use for the new page
+
+## Return value
+
+- `Page|NullPage`
+
+## Hooking
 
 - Hookable method name: `add`
 - Implementation: `___add`
-- Hook with: `$pagesType->add()`
+- Hook with: `PagesType::add`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::add', function(HookEvent $event) {
@@ -40,7 +48,7 @@ $this->addHookBefore('PagesType::add', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::add', function(HookEvent $event) {
@@ -56,11 +64,3 @@ $this->addHookAfter('PagesType::add', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name to use for the new page
-
-## Return value
-
-- `Page|NullPage`

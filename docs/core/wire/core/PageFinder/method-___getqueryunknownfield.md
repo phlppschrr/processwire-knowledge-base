@@ -20,13 +20,22 @@ $bool = $pageFinder->getQueryUnknownField($fieldName, $data);
 $bool = $pageFinder->getQueryUnknownField($fieldName, array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$fieldName` `string`
+- `$data` `array` Array of data containing the following in it: - `subfield` (string): First subfield - `subfields` (string): All subfields separated by period (i.e. subfield.tertiaryfield) - `fields` (array): Array of all other field names being processed in this selector. - `query` (DatabaseQuerySelect): Database query select object - `selector` (Selector): Selector that contains this field - `selectors` (Selectors): All the selectors
+
+## Return value
+
+- `bool|Field|int`
+
+## Hooking
 
 - Hookable method name: `getQueryUnknownField`
 - Implementation: `___getQueryUnknownField`
-- Hook with: `$pageFinder->getQueryUnknownField()`
+- Hook with: `PageFinder::getQueryUnknownField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PageFinder::getQueryUnknownField', function(HookEvent $event) {
@@ -44,7 +53,7 @@ $this->addHookBefore('PageFinder::getQueryUnknownField', function(HookEvent $eve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PageFinder::getQueryUnknownField', function(HookEvent $event) {
@@ -61,15 +70,6 @@ $this->addHookAfter('PageFinder::getQueryUnknownField', function(HookEvent $even
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$fieldName` `string`
-- `$data` `array` Array of data containing the following in it: - `subfield` (string): First subfield - `subfields` (string): All subfields separated by period (i.e. subfield.tertiaryfield) - `fields` (array): Array of all other field names being processed in this selector. - `query` (DatabaseQuerySelect): Database query select object - `selector` (Selector): Selector that contains this field - `selectors` (Selectors): All the selectors
-
-## Return value
-
-- `bool|Field|int`
 
 ## Exceptions
 

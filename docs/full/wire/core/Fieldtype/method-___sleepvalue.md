@@ -20,13 +20,23 @@ $string = $fieldtype->sleepValue($page, $field, $value);
 $string = $fieldtype->sleepValue(Page $page, Field $field, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `string|int|float|array|object`
+
+## Return value
+
+- `string|int|float|array`
+
+## Hooking
 
 - Hookable method name: `sleepValue`
 - Implementation: `___sleepValue`
-- Hook with: `$fieldtype->sleepValue()`
+- Hook with: `Fieldtype::sleepValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::sleepValue', function(HookEvent $event) {
@@ -46,7 +56,7 @@ $this->addHookBefore('Fieldtype::sleepValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::sleepValue', function(HookEvent $event) {
@@ -64,16 +74,6 @@ $this->addHookAfter('Fieldtype::sleepValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
-- `$value` `string|int|float|array|object`
-
-## Return value
-
-- `string|int|float|array`
 
 ## See Also
 

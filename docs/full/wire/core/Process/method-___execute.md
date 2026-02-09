@@ -20,13 +20,17 @@ and `executeBarBaz()` would be called for the URL `./bar-baz/`.
 $string = $process->execute();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string|array`
+
+## Hooking
 
 - Hookable method name: `execute`
 - Implementation: `___execute`
-- Hook with: `$process->execute()`
+- Hook with: `Process::execute`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::execute', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Process::execute', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::execute', function(HookEvent $event) {
@@ -49,7 +53,3 @@ $this->addHookAfter('Process::execute', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string|array`

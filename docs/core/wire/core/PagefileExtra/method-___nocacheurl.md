@@ -14,13 +14,21 @@ $string = $pagefileExtra->noCacheURL();
 $string = $pagefileExtra->noCacheURL($http = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$http` (optional) `bool`
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `noCacheURL`
 - Implementation: `___noCacheURL`
-- Hook with: `$pagefileExtra->noCacheURL()`
+- Hook with: `PagefileExtra::noCacheURL`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagefileExtra::noCacheURL', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('PagefileExtra::noCacheURL', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagefileExtra::noCacheURL', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('PagefileExtra::noCacheURL', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$http` (optional) `bool`
-
-## Return value
-
-- `string`
 
 ## Since
 

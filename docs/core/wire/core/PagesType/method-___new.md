@@ -14,13 +14,21 @@ $page = $pagesType->new();
 $page = $pagesType->new(array $options = []);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$options` (optional) `array`
+
+## Return value
+
+- `Page`
+
+## Hooking
 
 - Hookable method name: `new`
 - Implementation: `___new`
-- Hook with: `$pagesType->new()`
+- Hook with: `PagesType::new`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::new', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('PagesType::new', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::new', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('PagesType::new', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$options` (optional) `array`
-
-## Return value
-
-- `Page`
 
 ## Since
 

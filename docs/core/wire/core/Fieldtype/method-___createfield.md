@@ -18,13 +18,21 @@ $bool = $fieldtype->createField($field);
 $bool = $fieldtype->createField(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `createField`
 - Implementation: `___createField`
-- Hook with: `$fieldtype->createField()`
+- Hook with: `Fieldtype::createField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::createField', function(HookEvent $event) {
@@ -40,7 +48,7 @@ $this->addHookBefore('Fieldtype::createField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::createField', function(HookEvent $event) {
@@ -56,14 +64,6 @@ $this->addHookAfter('Fieldtype::createField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

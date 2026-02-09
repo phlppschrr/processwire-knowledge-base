@@ -18,13 +18,24 @@ $inputfield = $inputfieldWrapper->new($typeName);
 $inputfield = $inputfieldWrapper->new($typeName, $name = '', $label = '', $settings = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$typeName` `string` Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
+- `$name` (optional) `string|array` Name of input (or substitute $settings here).
+- `$label` (optional) `string|array` Label for input (or substitute $settings here).
+- `$settings` (optional) `array|string` Settings to add to Inputfield (optional). Or if string, assumed to be “description”.
+
+## Return value
+
+- `Inputfield|InputfieldSelect|InputfieldWrapper` An Inputfield instance ready to populate with additional properties/attributes.
+
+## Hooking
 
 - Hookable method name: `new`
 - Implementation: `___new`
-- Hook with: `$inputfieldWrapper->new()`
+- Hook with: `InputfieldWrapper::new`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldWrapper::new', function(HookEvent $event) {
@@ -46,7 +57,7 @@ $this->addHookBefore('InputfieldWrapper::new', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldWrapper::new', function(HookEvent $event) {
@@ -65,17 +76,6 @@ $this->addHookAfter('InputfieldWrapper::new', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$typeName` `string` Inputfield type, i.e. “InputfieldCheckbox” or just “checkbox” for short.
-- `$name` (optional) `string|array` Name of input (or substitute $settings here).
-- `$label` (optional) `string|array` Label for input (or substitute $settings here).
-- `$settings` (optional) `array|string` Settings to add to Inputfield (optional). Or if string, assumed to be “description”.
-
-## Return value
-
-- `Inputfield|InputfieldSelect|InputfieldWrapper` An Inputfield instance ready to populate with additional properties/attributes.
 
 ## Exceptions
 

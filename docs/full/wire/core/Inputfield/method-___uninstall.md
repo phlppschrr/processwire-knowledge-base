@@ -11,13 +11,13 @@ Per the Module interface, uninstall() is called when this Inputfield is uninstal
 $result = $inputfield->uninstall();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$inputfield->uninstall()`
+- Hook with: `Inputfield::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::uninstall', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('Inputfield::uninstall', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::uninstall', function(HookEvent $event) {

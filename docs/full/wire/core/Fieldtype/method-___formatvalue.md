@@ -19,13 +19,23 @@ $result = $fieldtype->formatValue($page, $field, $value);
 $result = $fieldtype->formatValue(Page $page, Field $field, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that the value lives on
+- `$field` `Field` Field that represents the value
+- `$value` `string|int|object` The value to format
+
+## Return value
+
+- `mixed`
+
+## Hooking
 
 - Hookable method name: `formatValue`
 - Implementation: `___formatValue`
-- Hook with: `$fieldtype->formatValue()`
+- Hook with: `Fieldtype::formatValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::formatValue', function(HookEvent $event) {
@@ -45,7 +55,7 @@ $this->addHookBefore('Fieldtype::formatValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::formatValue', function(HookEvent $event) {
@@ -63,13 +73,3 @@ $this->addHookAfter('Fieldtype::formatValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that the value lives on
-- `$field` `Field` Field that represents the value
-- `$value` `string|int|object` The value to format
-
-## Return value
-
-- `mixed`

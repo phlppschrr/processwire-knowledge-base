@@ -14,13 +14,19 @@ $result = $permissions->saved($page);
 $result = $permissions->saved(Page $page, array $changes = array(), $values = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was saved
+- `$changes` (optional) `array` Array of changed field names
+- `$values` (optional) `array` Array of changed field values indexed by name (when enabled)
+
+## Hooking
 
 - Hookable method name: `saved`
 - Implementation: `___saved`
-- Hook with: `$permissions->saved()`
+- Hook with: `Permissions::saved`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Permissions::saved', function(HookEvent $event) {
@@ -40,7 +46,7 @@ $this->addHookBefore('Permissions::saved', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Permissions::saved', function(HookEvent $event) {
@@ -58,12 +64,6 @@ $this->addHookAfter('Permissions::saved', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was saved
-- `$changes` (optional) `array` Array of changed field names
-- `$values` (optional) `array` Array of changed field values indexed by name (when enabled)
 
 ## Exceptions
 

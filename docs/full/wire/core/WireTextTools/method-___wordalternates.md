@@ -51,13 +51,22 @@ $array = $wireTextTools->wordAlternates($word, $options);
 $array = $wireTextTools->wordAlternates($word, array $options);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$word` `string`
+- `$options` `array` - `operator` (string): Operator being used, if applicable (default='')
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `wordAlternates`
 - Implementation: `___wordAlternates`
-- Hook with: `$wireTextTools->wordAlternates()`
+- Hook with: `WireTextTools::wordAlternates`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireTextTools::wordAlternates', function(HookEvent $event) {
@@ -75,7 +84,7 @@ $this->addHookBefore('WireTextTools::wordAlternates', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireTextTools::wordAlternates', function(HookEvent $event) {
@@ -92,15 +101,6 @@ $this->addHookAfter('WireTextTools::wordAlternates', function(HookEvent $event) 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$word` `string`
-- `$options` `array` - `operator` (string): Operator being used, if applicable (default='')
-
-## Return value
-
-- `array`
 
 ## Since
 

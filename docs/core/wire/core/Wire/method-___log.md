@@ -24,13 +24,22 @@ $wireLog = $wire->log();
 $wireLog = $wire->log($str = '', array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$str` (optional) `string` Text to log, or omit to return the `$log` API variable.
+- `$options` (optional) `array` Optional extras to include: - `url` (string): URL to record the with the log entry (default=auto-detect) - `name` (string): Name of log to use (default=auto-detect) - `user` (User|string|null): User instance, user name, or null to log for current User. (default=null)
+
+## Return value
+
+- `WireLog`
+
+## Hooking
 
 - Hookable method name: `log`
 - Implementation: `___log`
-- Hook with: `$wire->log()`
+- Hook with: `Wire::log`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Wire::log', function(HookEvent $event) {
@@ -48,7 +57,7 @@ $this->addHookBefore('Wire::log', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Wire::log', function(HookEvent $event) {
@@ -65,12 +74,3 @@ $this->addHookAfter('Wire::log', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$str` (optional) `string` Text to log, or omit to return the `$log` API variable.
-- `$options` (optional) `array` Optional extras to include: - `url` (string): URL to record the with the log entry (default=auto-detect) - `name` (string): Name of log to use (default=auto-detect) - `user` (User|string|null): User instance, user name, or null to log for current User. (default=null)
-
-## Return value
-
-- `WireLog`

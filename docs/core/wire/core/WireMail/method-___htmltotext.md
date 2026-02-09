@@ -11,13 +11,21 @@ Convert HTML mail body to TEXT mail body
 $string = $wireMail->htmlToText($html);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$html` `string`
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `htmlToText`
 - Implementation: `___htmlToText`
-- Hook with: `$wireMail->htmlToText()`
+- Hook with: `WireMail::htmlToText`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireMail::htmlToText', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('WireMail::htmlToText', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireMail::htmlToText', function(HookEvent $event) {
@@ -49,11 +57,3 @@ $this->addHookAfter('WireMail::htmlToText', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$html` `string`
-
-## Return value
-
-- `string`

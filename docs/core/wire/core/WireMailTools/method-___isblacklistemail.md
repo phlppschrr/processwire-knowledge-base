@@ -44,13 +44,22 @@ $bool = $wireMailTools->isBlacklistEmail($email);
 $bool = $wireMailTools->isBlacklistEmail($email, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$email` `string` Email to check
+- `$options` (optional) `array` - `blacklist` (array): Use this blacklist rather than `$config->emailBlacklist` (default=[]) - `throw` (bool): Throw WireException if email is blacklisted? (default=false) - `why` (bool): Return string containing matching rule when email is blacklisted? (default=false)
+
+## Return value
+
+- `bool|string` Returns true if email is blacklisted, false if not. Returns string if `why` option specified + email blacklisted.
+
+## Hooking
 
 - Hookable method name: `isBlacklistEmail`
 - Implementation: `___isBlacklistEmail`
-- Hook with: `$wireMailTools->isBlacklistEmail()`
+- Hook with: `WireMailTools::isBlacklistEmail`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireMailTools::isBlacklistEmail', function(HookEvent $event) {
@@ -68,7 +77,7 @@ $this->addHookBefore('WireMailTools::isBlacklistEmail', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireMailTools::isBlacklistEmail', function(HookEvent $event) {
@@ -85,15 +94,6 @@ $this->addHookAfter('WireMailTools::isBlacklistEmail', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$email` `string` Email to check
-- `$options` (optional) `array` - `blacklist` (array): Use this blacklist rather than `$config->emailBlacklist` (default=[]) - `throw` (bool): Throw WireException if email is blacklisted? (default=false) - `why` (bool): Return string containing matching rule when email is blacklisted? (default=false)
-
-## Return value
-
-- `bool|string` Returns true if email is blacklisted, false if not. Returns string if `why` option specified + email blacklisted.
 
 ## Exceptions
 

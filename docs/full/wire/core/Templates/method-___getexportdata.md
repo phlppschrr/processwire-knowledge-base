@@ -14,13 +14,21 @@ $array = $templates->getExportData($template);
 $array = $templates->getExportData(Template $template);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$template` `Template` Template you want to export
+
+## Return value
+
+- `array` Associative array of export data
+
+## Hooking
 
 - Hookable method name: `getExportData`
 - Implementation: `___getExportData`
-- Hook with: `$templates->getExportData()`
+- Hook with: `Templates::getExportData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::getExportData', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Templates::getExportData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::getExportData', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('Templates::getExportData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$template` `Template` Template you want to export
-
-## Return value
-
-- `array` Associative array of export data

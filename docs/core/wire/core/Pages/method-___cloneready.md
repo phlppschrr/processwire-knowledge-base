@@ -14,13 +14,18 @@ $result = $pages->cloneReady($page, $copy);
 $result = $pages->cloneReady(Page $page, Page $copy);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` The original page to be cloned
+- `$copy` `Page` The actual clone about to be saved
+
+## Hooking
 
 - Hookable method name: `cloneReady`
 - Implementation: `___cloneReady`
-- Hook with: `$pages->cloneReady()`
+- Hook with: `Pages::cloneReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::cloneReady', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::cloneReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::cloneReady', function(HookEvent $event) {
@@ -55,8 +60,3 @@ $this->addHookAfter('Pages::cloneReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` The original page to be cloned
-- `$copy` `Page` The actual clone about to be saved

@@ -11,13 +11,17 @@ Render the template: execute it and return its output
 $string = $templateFile->render();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string|array` The output of the Template File
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$templateFile->render()`
+- Hook with: `TemplateFile::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('TemplateFile::render', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('TemplateFile::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('TemplateFile::render', function(HookEvent $event) {
@@ -40,10 +44,6 @@ $this->addHookAfter('TemplateFile::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string|array` The output of the Template File
 
 ## Exceptions
 

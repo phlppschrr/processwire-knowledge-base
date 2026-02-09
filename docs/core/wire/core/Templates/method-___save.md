@@ -20,13 +20,21 @@ $bool = $templates->save($item);
 $bool = $templates->save(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Saveable|Template` Template to save
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$templates->save()`
+- Hook with: `Templates::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Templates::save', function(HookEvent $event) {
@@ -42,7 +50,7 @@ $this->addHookBefore('Templates::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Templates::save', function(HookEvent $event) {
@@ -58,14 +66,6 @@ $this->addHookAfter('Templates::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Saveable|Template` Template to save
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

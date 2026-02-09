@@ -25,13 +25,22 @@ $bool = $pages->trash($page);
 $bool = $pages->trash(Page $page, $save = true);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page to trash
+- `$save` (optional) `bool` Set to false if you will perform your own save() call afterwards to complete the operation. Omit otherwise. Primarily for internal use.
+
+## Return value
+
+- `bool` Returns true on success, false on failure.
+
+## Hooking
 
 - Hookable method name: `trash`
 - Implementation: `___trash`
-- Hook with: `$pages->trash()`
+- Hook with: `Pages::trash`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::trash', function(HookEvent $event) {
@@ -49,7 +58,7 @@ $this->addHookBefore('Pages::trash', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::trash', function(HookEvent $event) {
@@ -66,15 +75,6 @@ $this->addHookAfter('Pages::trash', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page to trash
-- `$save` (optional) `bool` Set to false if you will perform your own save() call afterwards to complete the operation. Omit otherwise. Primarily for internal use.
-
-## Return value
-
-- `bool` Returns true on success, false on failure.
 
 ## Exceptions
 

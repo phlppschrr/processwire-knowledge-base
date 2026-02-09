@@ -16,13 +16,21 @@ $bool = $fields->delete($item);
 $bool = $fields->delete(Saveable $item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Field` Field to delete
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$fields->delete()`
+- Hook with: `Fields::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::delete', function(HookEvent $event) {
@@ -38,7 +46,7 @@ $this->addHookBefore('Fields::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::delete', function(HookEvent $event) {
@@ -54,14 +62,6 @@ $this->addHookAfter('Fields::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Field` Field to delete
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

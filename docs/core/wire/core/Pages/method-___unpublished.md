@@ -14,13 +14,17 @@ $result = $pages->unpublished($page);
 $result = $pages->unpublished(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `unpublished`
 - Implementation: `___unpublished`
-- Hook with: `$pages->unpublished()`
+- Hook with: `Pages::unpublished`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::unpublished', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::unpublished', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::unpublished', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Pages::unpublished', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

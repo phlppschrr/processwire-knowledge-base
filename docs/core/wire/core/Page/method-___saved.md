@@ -33,13 +33,18 @@ $result = $page->saved($changes);
 $result = $page->saved(array $changes, $name = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$changes` `array` Names of changed field names and/or properties
+- `$name` (optional) `string|false` Indicates whether entire page was saved or just a field: - Populated with `string` field or property name if `$page->save($name)` was used rather than `$page->save();` - Populated with `false` if entire page was saved, i.e. `$page->save()`
+
+## Hooking
 
 - Hookable method name: `saved`
 - Implementation: `___saved`
-- Hook with: `$page->saved()`
+- Hook with: `Page::saved`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::saved', function(HookEvent $event) {
@@ -57,7 +62,7 @@ $this->addHookBefore('Page::saved', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::saved', function(HookEvent $event) {
@@ -74,11 +79,6 @@ $this->addHookAfter('Page::saved', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$changes` `array` Names of changed field names and/or properties
-- `$name` (optional) `string|false` Indicates whether entire page was saved or just a field: - Populated with `string` field or property name if `$page->save($name)` was used rather than `$page->save();` - Populated with `false` if entire page was saved, i.e. `$page->save()`
 
 ## Since
 

@@ -14,13 +14,22 @@ $field = $fields->clone($item);
 $field = $fields->clone(Saveable $item, $name = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Field` Field to clone
+- `$name` (optional) `string` Optionally specify name for new cloned item
+
+## Return value
+
+- `Field` $item Returns the new clone on success, or false on failure
+
+## Hooking
 
 - Hookable method name: `clone`
 - Implementation: `___clone`
-- Hook with: `$fields->clone()`
+- Hook with: `Fields::clone`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::clone', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('Fields::clone', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::clone', function(HookEvent $event) {
@@ -55,12 +64,3 @@ $this->addHookAfter('Fields::clone', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Field` Field to clone
-- `$name` (optional) `string` Optionally specify name for new cloned item
-
-## Return value
-
-- `Field` $item Returns the new clone on success, or false on failure

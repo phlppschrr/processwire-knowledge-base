@@ -14,13 +14,18 @@ $result = $pages->insertBefore($page, $beforePage);
 $result = $pages->insertBefore(Page $page, Page $beforePage);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page you want to move/sort
+- `$beforePage` `Page` Page you want to insert before
+
+## Hooking
 
 - Hookable method name: `insertBefore`
 - Implementation: `___insertBefore`
-- Hook with: `$pages->insertBefore()`
+- Hook with: `Pages::insertBefore`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::insertBefore', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::insertBefore', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::insertBefore', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pages::insertBefore', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page you want to move/sort
-- `$beforePage` `Page` Page you want to insert before
 
 ## Exceptions
 

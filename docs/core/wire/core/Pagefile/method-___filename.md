@@ -11,13 +11,13 @@ Hookable version of filename() method
 $result = $pagefile->filename();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `filename`
 - Implementation: `___filename`
-- Hook with: `$pagefile->filename()`
+- Hook with: `Pagefile::filename`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pagefile::filename', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('Pagefile::filename', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pagefile::filename', function(HookEvent $event) {

@@ -14,13 +14,23 @@ $items = $fieldtypeMulti->wakeupValue($page, $field, $value);
 $items = $fieldtypeMulti->wakeupValue(Page $page, Field $field, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `array`
+
+## Return value
+
+- `WireArray`
+
+## Hooking
 
 - Hookable method name: `wakeupValue`
 - Implementation: `___wakeupValue`
-- Hook with: `$fieldtypeMulti->wakeupValue()`
+- Hook with: `FieldtypeMulti::wakeupValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FieldtypeMulti::wakeupValue', function(HookEvent $event) {
@@ -40,7 +50,7 @@ $this->addHookBefore('FieldtypeMulti::wakeupValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FieldtypeMulti::wakeupValue', function(HookEvent $event) {
@@ -58,13 +68,3 @@ $this->addHookAfter('FieldtypeMulti::wakeupValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
-- `$value` `array`
-
-## Return value
-
-- `WireArray`

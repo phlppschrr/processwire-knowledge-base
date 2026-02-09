@@ -14,13 +14,21 @@ $field = $fieldtype->cloneField($field);
 $field = $fieldtype->cloneField(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `Field` cloned copy
+
+## Hooking
 
 - Hookable method name: `cloneField`
 - Implementation: `___cloneField`
-- Hook with: `$fieldtype->cloneField()`
+- Hook with: `Fieldtype::cloneField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::cloneField', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Fieldtype::cloneField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::cloneField', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('Fieldtype::cloneField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `Field` cloned copy

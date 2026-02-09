@@ -11,13 +11,17 @@ Render just the value (not input) in text/markup for presentation purposes.
 $string = $inputfield->renderValue();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string` Text or markup where applicable
+
+## Hooking
 
 - Hookable method name: `renderValue`
 - Implementation: `___renderValue`
-- Hook with: `$inputfield->renderValue()`
+- Hook with: `Inputfield::renderValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::renderValue', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('Inputfield::renderValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::renderValue', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('Inputfield::renderValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string` Text or markup where applicable

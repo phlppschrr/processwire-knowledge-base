@@ -14,13 +14,21 @@ $bool = $roles->save($page);
 $bool = $roles->save(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Role|Page`
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$roles->save()`
+- Hook with: `Roles::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Roles::save', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Roles::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Roles::save', function(HookEvent $event) {
@@ -52,14 +60,6 @@ $this->addHookAfter('Roles::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Role|Page`
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

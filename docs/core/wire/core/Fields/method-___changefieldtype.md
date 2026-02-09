@@ -14,13 +14,22 @@ $bool = $fields->changeFieldtype($field1);
 $bool = $fields->changeFieldtype(Field $field1, $keepSettings = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field1` `Field` Field with the new type already assigned
+- `$keepSettings` (optional) `bool` Whether or not to keep custom $data settings (default=false)
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `changeFieldtype`
 - Implementation: `___changeFieldtype`
-- Hook with: `$fields->changeFieldtype()`
+- Hook with: `Fields::changeFieldtype`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::changeFieldtype', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('Fields::changeFieldtype', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::changeFieldtype', function(HookEvent $event) {
@@ -55,15 +64,6 @@ $this->addHookAfter('Fields::changeFieldtype', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field1` `Field` Field with the new type already assigned
-- `$keepSettings` (optional) `bool` Whether or not to keep custom $data settings (default=false)
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

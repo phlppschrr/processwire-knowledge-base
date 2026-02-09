@@ -14,13 +14,18 @@ $result = $pageFinder->getQueryJoinPath($query, $selector);
 $result = $pageFinder->getQueryJoinPath(DatabaseQuerySelect $query, $selector);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$query` `DatabaseQuerySelect`
+- `$selector` `Selector`
+
+## Hooking
 
 - Hookable method name: `getQueryJoinPath`
 - Implementation: `___getQueryJoinPath`
-- Hook with: `$pageFinder->getQueryJoinPath()`
+- Hook with: `PageFinder::getQueryJoinPath`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PageFinder::getQueryJoinPath', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('PageFinder::getQueryJoinPath', function(HookEvent $event) 
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PageFinder::getQueryJoinPath', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('PageFinder::getQueryJoinPath', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$query` `DatabaseQuerySelect`
-- `$selector` `Selector`
 
 ## Exceptions
 

@@ -16,13 +16,17 @@ $result = $pages->templateChanged($page);
 $result = $pages->templateChanged(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that had its template changed.
+
+## Hooking
 
 - Hookable method name: `templateChanged`
 - Implementation: `___templateChanged`
-- Hook with: `$pages->templateChanged()`
+- Hook with: `Pages::templateChanged`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::templateChanged', function(HookEvent $event) {
@@ -38,7 +42,7 @@ $this->addHookBefore('Pages::templateChanged', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::templateChanged', function(HookEvent $event) {
@@ -54,7 +58,3 @@ $this->addHookAfter('Pages::templateChanged', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that had its template changed.

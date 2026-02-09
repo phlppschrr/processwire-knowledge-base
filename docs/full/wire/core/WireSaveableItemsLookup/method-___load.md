@@ -16,13 +16,22 @@ $items = $wireSaveableItemsLookup->load($items);
 $items = $wireSaveableItemsLookup->load(WireArray $items, $selectors = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$items` `WireArray`
+- `$selectors` (optional) `Selectors|string|null` Selectors or a selector string to find, or NULL to load all.
+
+## Return value
+
+- `WireArray` Returns the same type as specified in the getAll() method.
+
+## Hooking
 
 - Hookable method name: `load`
 - Implementation: `___load`
-- Hook with: `$wireSaveableItemsLookup->load()`
+- Hook with: `WireSaveableItemsLookup::load`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireSaveableItemsLookup::load', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('WireSaveableItemsLookup::load', function(HookEvent $event)
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireSaveableItemsLookup::load', function(HookEvent $event) {
@@ -57,12 +66,3 @@ $this->addHookAfter('WireSaveableItemsLookup::load', function(HookEvent $event) 
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$items` `WireArray`
-- `$selectors` (optional) `Selectors|string|null` Selectors or a selector string to find, or NULL to load all.
-
-## Return value
-
-- `WireArray` Returns the same type as specified in the getAll() method.

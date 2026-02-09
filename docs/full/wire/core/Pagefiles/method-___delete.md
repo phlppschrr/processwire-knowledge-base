@@ -14,13 +14,21 @@ The actual deletion of the file does not take effect until `$page->save()`.
 $result = $pagefiles->delete($item);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Pagefile|string` Pagefile or basename
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$pagefiles->delete()`
+- Hook with: `Pagefiles::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pagefiles::delete', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('Pagefiles::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pagefiles::delete', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('Pagefiles::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Pagefile|string` Pagefile or basename
-
-## Return value
-
-- `$this`

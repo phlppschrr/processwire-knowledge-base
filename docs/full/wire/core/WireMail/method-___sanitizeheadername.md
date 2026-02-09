@@ -11,13 +11,21 @@ Sanitize and normalize a header name
 $string = $wireMail->sanitizeHeaderName($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string`
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `sanitizeHeaderName`
 - Implementation: `___sanitizeHeaderName`
-- Hook with: `$wireMail->sanitizeHeaderName()`
+- Hook with: `WireMail::sanitizeHeaderName`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireMail::sanitizeHeaderName', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('WireMail::sanitizeHeaderName', function(HookEvent $event) 
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireMail::sanitizeHeaderName', function(HookEvent $event) {
@@ -49,14 +57,6 @@ $this->addHookAfter('WireMail::sanitizeHeaderName', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string`
-
-## Return value
-
-- `string`
 
 ## Since
 

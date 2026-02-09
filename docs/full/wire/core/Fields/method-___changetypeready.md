@@ -14,13 +14,19 @@ $result = $fields->changeTypeReady($item, $fromType, $toType);
 $result = $fields->changeTypeReady(Saveable $item, Fieldtype $fromType, Fieldtype $toType);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `Field`
+- `$fromType` `Fieldtype`
+- `$toType` `Fieldtype`
+
+## Hooking
 
 - Hookable method name: `changeTypeReady`
 - Implementation: `___changeTypeReady`
-- Hook with: `$fields->changeTypeReady()`
+- Hook with: `Fields::changeTypeReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::changeTypeReady', function(HookEvent $event) {
@@ -40,7 +46,7 @@ $this->addHookBefore('Fields::changeTypeReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::changeTypeReady', function(HookEvent $event) {
@@ -58,9 +64,3 @@ $this->addHookAfter('Fields::changeTypeReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `Field`
-- `$fromType` `Fieldtype`
-- `$toType` `Fieldtype`

@@ -11,13 +11,13 @@ Install the module and related modules
 $result = $languageSupportInstall->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$languageSupportInstall->install()`
+- Hook with: `LanguageSupportInstall::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('LanguageSupportInstall::install', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('LanguageSupportInstall::install', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('LanguageSupportInstall::install', function(HookEvent $event) {

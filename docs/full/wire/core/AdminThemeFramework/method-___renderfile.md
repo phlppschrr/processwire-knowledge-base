@@ -16,13 +16,22 @@ $string = $adminThemeFramework->renderFile($file);
 $string = $adminThemeFramework->renderFile($file, array $vars = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$file` `string` Full path and filename
+- `$vars` (optional) `array` Associative array of variables to populate in rendered file
+
+## Return value
+
+- `string` Returns blank string when $echo is true
+
+## Hooking
 
 - Hookable method name: `renderFile`
 - Implementation: `___renderFile`
-- Hook with: `$adminThemeFramework->renderFile()`
+- Hook with: `AdminThemeFramework::renderFile`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('AdminThemeFramework::renderFile', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('AdminThemeFramework::renderFile', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('AdminThemeFramework::renderFile', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('AdminThemeFramework::renderFile', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$file` `string` Full path and filename
-- `$vars` (optional) `array` Associative array of variables to populate in rendered file
-
-## Return value
-
-- `string` Returns blank string when $echo is true
 
 ## Since
 

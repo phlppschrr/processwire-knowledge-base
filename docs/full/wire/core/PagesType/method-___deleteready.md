@@ -14,13 +14,17 @@ $result = $pagesType->deleteReady($page);
 $result = $pagesType->deleteReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `deleteReady`
 - Implementation: `___deleteReady`
-- Hook with: `$pagesType->deleteReady()`
+- Hook with: `PagesType::deleteReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::deleteReady', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('PagesType::deleteReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::deleteReady', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('PagesType::deleteReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
 
 ## Since
 

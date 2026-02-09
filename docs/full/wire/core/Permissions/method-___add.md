@@ -11,13 +11,21 @@ Add a new Permission with the given name and return it
 $permission = $permissions->add($name);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of permission you want to add, i.e. "hello-world"
+
+## Return value
+
+- `Permission|NullPage` Returns a Permission page on success, or a NullPage on error
+
+## Hooking
 
 - Hookable method name: `add`
 - Implementation: `___add`
-- Hook with: `$permissions->add()`
+- Hook with: `Permissions::add`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Permissions::add', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('Permissions::add', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Permissions::add', function(HookEvent $event) {
@@ -49,11 +57,3 @@ $this->addHookAfter('Permissions::add', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of permission you want to add, i.e. "hello-world"
-
-## Return value
-
-- `Permission|NullPage` Returns a Permission page on success, or a NullPage on error

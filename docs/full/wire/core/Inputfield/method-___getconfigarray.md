@@ -33,13 +33,17 @@ public function ___getConfigArray() {
 $array = $inputfield->getConfigArray();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `getConfigArray`
 - Implementation: `___getConfigArray`
-- Hook with: `$inputfield->getConfigArray()`
+- Hook with: `Inputfield::getConfigArray`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Inputfield::getConfigArray', function(HookEvent $event) {
@@ -49,7 +53,7 @@ $this->addHookBefore('Inputfield::getConfigArray', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Inputfield::getConfigArray', function(HookEvent $event) {
@@ -62,7 +66,3 @@ $this->addHookAfter('Inputfield::getConfigArray', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `array`

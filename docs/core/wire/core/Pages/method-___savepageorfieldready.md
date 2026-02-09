@@ -14,13 +14,18 @@ $result = $pages->savePageOrFieldReady($page);
 $result = $pages->savePageOrFieldReady(Page $page, $fieldName = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$fieldName` (optional) `string` Populated only if call originates from saveField
+
+## Hooking
 
 - Hookable method name: `savePageOrFieldReady`
 - Implementation: `___savePageOrFieldReady`
-- Hook with: `$pages->savePageOrFieldReady()`
+- Hook with: `Pages::savePageOrFieldReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::savePageOrFieldReady', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::savePageOrFieldReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::savePageOrFieldReady', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pages::savePageOrFieldReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$fieldName` (optional) `string` Populated only if call originates from saveField
 
 ## See Also
 

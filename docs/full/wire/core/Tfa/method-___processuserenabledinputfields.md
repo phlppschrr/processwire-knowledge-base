@@ -14,13 +14,24 @@ $array = $tfa->processUserEnabledInputfields($user, $fieldset, $settings, $setti
 $array = $tfa->processUserEnabledInputfields(User $user, InputfieldWrapper $fieldset, $settings, $settingsPrev);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$user` `User`
+- `$fieldset` `InputfieldWrapper`
+- `$settings` `array` Associative array of new/current settings after processing
+- `$settingsPrev` `array` Associative array of previous settings
+
+## Return value
+
+- `array` Return $newSettings array (modified as needed)
+
+## Hooking
 
 - Hookable method name: `processUserEnabledInputfields`
 - Implementation: `___processUserEnabledInputfields`
-- Hook with: `$tfa->processUserEnabledInputfields()`
+- Hook with: `Tfa::processUserEnabledInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::processUserEnabledInputfields', function(HookEvent $event) {
@@ -42,7 +53,7 @@ $this->addHookBefore('Tfa::processUserEnabledInputfields', function(HookEvent $e
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::processUserEnabledInputfields', function(HookEvent $event) {
@@ -61,14 +72,3 @@ $this->addHookAfter('Tfa::processUserEnabledInputfields', function(HookEvent $ev
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$user` `User`
-- `$fieldset` `InputfieldWrapper`
-- `$settings` `array` Associative array of new/current settings after processing
-- `$settingsPrev` `array` Associative array of previous settings
-
-## Return value
-
-- `array` Return $newSettings array (modified as needed)

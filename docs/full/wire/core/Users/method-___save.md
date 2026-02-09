@@ -32,13 +32,21 @@ $bool = $users->save($page);
 $bool = $users->save(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Return value
+
+- `bool` True on success
+
+## Hooking
 
 - Hookable method name: `save`
 - Implementation: `___save`
-- Hook with: `$users->save()`
+- Hook with: `Users::save`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Users::save', function(HookEvent $event) {
@@ -54,7 +62,7 @@ $this->addHookBefore('Users::save', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Users::save', function(HookEvent $event) {
@@ -70,14 +78,6 @@ $this->addHookAfter('Users::save', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-
-## Return value
-
-- `bool` True on success
 
 ## Exceptions
 

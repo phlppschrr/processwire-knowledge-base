@@ -13,13 +13,13 @@ Please note: Tfa modules with their own uninstall method must also call parent::
 $result = $tfa->uninstall();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$tfa->uninstall()`
+- Hook with: `Tfa::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Tfa::uninstall', function(HookEvent $event) {
@@ -29,7 +29,7 @@ $this->addHookBefore('Tfa::uninstall', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Tfa::uninstall', function(HookEvent $event) {

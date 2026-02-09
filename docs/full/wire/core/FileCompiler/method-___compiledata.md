@@ -11,13 +11,22 @@ Compile the given string of data
 $string = $fileCompiler->compileData($data, $sourceFile);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$data` `string`
+- `$sourceFile` `string`
+
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `compileData`
 - Implementation: `___compileData`
-- Hook with: `$fileCompiler->compileData()`
+- Hook with: `FileCompiler::compileData`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FileCompiler::compileData', function(HookEvent $event) {
@@ -35,7 +44,7 @@ $this->addHookBefore('FileCompiler::compileData', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FileCompiler::compileData', function(HookEvent $event) {
@@ -52,12 +61,3 @@ $this->addHookAfter('FileCompiler::compileData', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$data` `string`
-- `$sourceFile` `string`
-
-## Return value
-
-- `string`

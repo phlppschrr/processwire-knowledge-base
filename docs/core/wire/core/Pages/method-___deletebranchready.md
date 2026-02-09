@@ -16,13 +16,18 @@ $result = $pages->deleteBranchReady($page, $options);
 $result = $pages->deleteBranchReady(Page $page, array $options);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was deleted
+- `$options` `array` Options passed to delete method
+
+## Hooking
 
 - Hookable method name: `deleteBranchReady`
 - Implementation: `___deleteBranchReady`
-- Hook with: `$pages->deleteBranchReady()`
+- Hook with: `Pages::deleteBranchReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::deleteBranchReady', function(HookEvent $event) {
@@ -40,7 +45,7 @@ $this->addHookBefore('Pages::deleteBranchReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::deleteBranchReady', function(HookEvent $event) {
@@ -57,11 +62,6 @@ $this->addHookAfter('Pages::deleteBranchReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was deleted
-- `$options` `array` Options passed to delete method
 
 ## Since
 

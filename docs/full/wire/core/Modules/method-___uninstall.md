@@ -11,13 +11,21 @@ Uninstall the given module name
 $bool = $modules->uninstall($class);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$class` `string` Module name (class name)
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `uninstall`
 - Implementation: `___uninstall`
-- Hook with: `$modules->uninstall()`
+- Hook with: `Modules::uninstall`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Modules::uninstall', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('Modules::uninstall', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Modules::uninstall', function(HookEvent $event) {
@@ -49,14 +57,6 @@ $this->addHookAfter('Modules::uninstall', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$class` `string` Module name (class name)
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

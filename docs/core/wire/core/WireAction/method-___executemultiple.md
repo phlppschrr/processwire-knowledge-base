@@ -11,13 +11,21 @@ Execute the action for multiple items at once
 $int = $wireAction->executeMultiple($items);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$items` `array|WireArray` Items to operate upon
+
+## Return value
+
+- `int` Returns quantity of items successfully operated upon
+
+## Hooking
 
 - Hookable method name: `executeMultiple`
 - Implementation: `___executeMultiple`
-- Hook with: `$wireAction->executeMultiple()`
+- Hook with: `WireAction::executeMultiple`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireAction::executeMultiple', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('WireAction::executeMultiple', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireAction::executeMultiple', function(HookEvent $event) {
@@ -49,14 +57,6 @@ $this->addHookAfter('WireAction::executeMultiple', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$items` `array|WireArray` Items to operate upon
-
-## Return value
-
-- `int` Returns quantity of items successfully operated upon
 
 ## Exceptions
 

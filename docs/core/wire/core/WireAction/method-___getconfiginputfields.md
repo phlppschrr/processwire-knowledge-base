@@ -11,13 +11,17 @@ Return any Inputfields needed to configure this action
 $inputfieldWrapper = $wireAction->getConfigInputfields();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getConfigInputfields`
 - Implementation: `___getConfigInputfields`
-- Hook with: `$wireAction->getConfigInputfields()`
+- Hook with: `WireAction::getConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('WireAction::getConfigInputfields', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('WireAction::getConfigInputfields', function(HookEvent $eve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('WireAction::getConfigInputfields', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('WireAction::getConfigInputfields', function(HookEvent $even
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldWrapper`

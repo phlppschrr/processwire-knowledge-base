@@ -14,13 +14,23 @@ $string = $processPageSearchLive->renderList($items);
 $string = $processPageSearchLive->renderList(array $items, $prefix = 'pw-search', $class = 'list');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$items` `array`
+- `$prefix` (optional) `string` For CSS classes, default is "pw-search"
+- `$class` (optional) `string` Class name for list, default is "list" which translates to "pw-search-list"
+
+## Return value
+
+- `string` HTML markup
+
+## Hooking
 
 - Hookable method name: `renderList`
 - Implementation: `___renderList`
-- Hook with: `$processPageSearchLive->renderList()`
+- Hook with: `ProcessPageSearchLive::renderList`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageSearchLive::renderList', function(HookEvent $event) {
@@ -40,7 +50,7 @@ $this->addHookBefore('ProcessPageSearchLive::renderList', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageSearchLive::renderList', function(HookEvent $event) {
@@ -58,13 +68,3 @@ $this->addHookAfter('ProcessPageSearchLive::renderList', function(HookEvent $eve
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$items` `array`
-- `$prefix` (optional) `string` For CSS classes, default is "pw-search"
-- `$class` (optional) `string` Class name for list, default is "list" which translates to "pw-search-list"
-
-## Return value
-
-- `string` HTML markup

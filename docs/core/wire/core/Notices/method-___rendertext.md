@@ -14,13 +14,17 @@ through `$sanitizer->entities()` or `htmlspecialchars()` before outputting.
 $string = $notices->renderText();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `renderText`
 - Implementation: `___renderText`
-- Hook with: `$notices->renderText()`
+- Hook with: `Notices::renderText`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Notices::renderText', function(HookEvent $event) {
@@ -30,7 +34,7 @@ $this->addHookBefore('Notices::renderText', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Notices::renderText', function(HookEvent $event) {
@@ -43,10 +47,6 @@ $this->addHookAfter('Notices::renderText', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`
 
 ## Since
 

@@ -14,13 +14,17 @@ $result = $pages->publishReady($page);
 $result = $pages->publishReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `publishReady`
 - Implementation: `___publishReady`
-- Hook with: `$pages->publishReady()`
+- Hook with: `Pages::publishReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::publishReady', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::publishReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::publishReady', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Pages::publishReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`

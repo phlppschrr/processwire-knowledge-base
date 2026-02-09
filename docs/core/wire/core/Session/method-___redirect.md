@@ -23,13 +23,18 @@ $result = $session->redirect($url);
 $result = $session->redirect($url, $status = 301);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$url` `string` URL to redirect to
+- `$status` (optional) `bool|int` One of the following (or omit for 301): - `true` (bool): Permanent redirect (same as 301). - `false` (bool): Temporary redirect (same as 302). - `301` (int): Permanent redirect using GET. (3.0.166+) - `302` (int): “Found”, Temporary redirect using GET. (3.0.166+) - `303` (int): “See other”, Temporary redirect using GET. (3.0.166+) - `307` (int): Temporary redirect using current request method such as POST (repeat that request). (3.0.166+)
+
+## Hooking
 
 - Hookable method name: `redirect`
 - Implementation: `___redirect`
-- Hook with: `$session->redirect()`
+- Hook with: `Session::redirect`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Session::redirect', function(HookEvent $event) {
@@ -47,7 +52,7 @@ $this->addHookBefore('Session::redirect', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Session::redirect', function(HookEvent $event) {
@@ -64,11 +69,6 @@ $this->addHookAfter('Session::redirect', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$url` `string` URL to redirect to
-- `$status` (optional) `bool|int` One of the following (or omit for 301): - `true` (bool): Permanent redirect (same as 301). - `false` (bool): Temporary redirect (same as 302). - `301` (int): Permanent redirect using GET. (3.0.166+) - `302` (int): “Found”, Temporary redirect using GET. (3.0.166+) - `303` (int): “See other”, Temporary redirect using GET. (3.0.166+) - `307` (int): Temporary redirect using current request method such as POST (repeat that request). (3.0.166+)
 
 ## See Also
 

@@ -14,13 +14,18 @@ $result = $languages->updated($language, $what);
 $result = $languages->updated(Page $language, $what);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$language` `Page`
+- `$what` `string` What occurred? ('added' or 'deleted')
+
+## Hooking
 
 - Hookable method name: `updated`
 - Implementation: `___updated`
-- Hook with: `$languages->updated()`
+- Hook with: `Languages::updated`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Languages::updated', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Languages::updated', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Languages::updated', function(HookEvent $event) {
@@ -55,8 +60,3 @@ $this->addHookAfter('Languages::updated', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$language` `Page`
-- `$what` `string` What occurred? ('added' or 'deleted')

@@ -14,13 +14,24 @@ $int = $commentNotifications->sendNotificationEmail($comment, $email, $subcode);
 $int = $commentNotifications->sendNotificationEmail(Comment $comment, $email, $subcode, array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$comment` `Comment`
+- `$email` `string|array`
+- `$subcode` `string` Subscribe/unsubscribe code or blank string if not in use
+- `$options` (optional) `array`
+
+## Return value
+
+- `int`
+
+## Hooking
 
 - Hookable method name: `sendNotificationEmail`
 - Implementation: `___sendNotificationEmail`
-- Hook with: `$commentNotifications->sendNotificationEmail()`
+- Hook with: `CommentNotifications::sendNotificationEmail`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('CommentNotifications::sendNotificationEmail', function(HookEvent $event) {
@@ -42,7 +53,7 @@ $this->addHookBefore('CommentNotifications::sendNotificationEmail', function(Hoo
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('CommentNotifications::sendNotificationEmail', function(HookEvent $event) {
@@ -61,14 +72,3 @@ $this->addHookAfter('CommentNotifications::sendNotificationEmail', function(Hook
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$comment` `Comment`
-- `$email` `string|array`
-- `$subcode` `string` Subscribe/unsubscribe code or blank string if not in use
-- `$options` (optional) `array`
-
-## Return value
-
-- `int`

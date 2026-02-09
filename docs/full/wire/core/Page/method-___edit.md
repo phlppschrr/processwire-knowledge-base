@@ -36,13 +36,23 @@ $string = $page->edit();
 $string = $page->edit($key = null, $markup = null, $modal = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$key` (optional) `string|bool|null` Name of field, omit to get editor active status, or boolean true to enable editor.
+- `$markup` (optional) `string|bool|null` Markup user should click on to edit $fieldName (typically omitted).
+- `$modal` (optional) `bool|null` Specify true to force editable region to open a modal window (typically omitted).
+
+## Return value
+
+- `string|bool|mixed`
+
+## Hooking
 
 - Hookable method name: `edit`
 - Implementation: `___edit`
-- Hook with: `$page->edit()`
+- Hook with: `Page::edit`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::edit', function(HookEvent $event) {
@@ -62,7 +72,7 @@ $this->addHookBefore('Page::edit', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::edit', function(HookEvent $event) {
@@ -80,16 +90,6 @@ $this->addHookAfter('Page::edit', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$key` (optional) `string|bool|null` Name of field, omit to get editor active status, or boolean true to enable editor.
-- `$markup` (optional) `string|bool|null` Markup user should click on to edit $fieldName (typically omitted).
-- `$modal` (optional) `bool|null` Specify true to force editable region to open a modal window (typically omitted).
-
-## Return value
-
-- `string|bool|mixed`
 
 ## See Also
 

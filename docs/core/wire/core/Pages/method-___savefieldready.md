@@ -14,13 +14,18 @@ $result = $pages->saveFieldReady($page, $field);
 $result = $pages->saveFieldReady(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+
+## Hooking
 
 - Hookable method name: `saveFieldReady`
 - Implementation: `___saveFieldReady`
-- Hook with: `$pages->saveFieldReady()`
+- Hook with: `Pages::saveFieldReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::saveFieldReady', function(HookEvent $event) {
@@ -38,7 +43,7 @@ $this->addHookBefore('Pages::saveFieldReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::saveFieldReady', function(HookEvent $event) {
@@ -55,11 +60,6 @@ $this->addHookAfter('Pages::saveFieldReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
 
 ## See Also
 

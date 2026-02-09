@@ -11,13 +11,13 @@ Commit changed field data
 $result = $processFieldExportImport->processImport();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `processImport`
 - Implementation: `___processImport`
-- Hook with: `$processFieldExportImport->processImport()`
+- Hook with: `ProcessFieldExportImport::processImport`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessFieldExportImport::processImport', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('ProcessFieldExportImport::processImport', function(HookEve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessFieldExportImport::processImport', function(HookEvent $event) {

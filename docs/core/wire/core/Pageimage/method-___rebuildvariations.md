@@ -29,13 +29,23 @@ $array = $pageimage->rebuildVariations();
 $array = $pageimage->rebuildVariations($mode = 0, array $suffix = array(), array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$mode` (optional) `int` See the options for $mode argument above (default=0).
+- `$suffix` (optional) `array` Optional argument to specify suffixes to include or exclude (according to $mode).
+- `$options` (optional) `array` See $options for `Pageimage::size()` for details.
+
+## Return value
+
+- `array` Returns an associative array with with the following indexes: - `rebuilt` (array): Names of files that were rebuilt. - `skipped` (array): Names of files that were skipped. - `errors` (array): Names of files that had errors. - `reasons` (array): Reasons why files were skipped or had errors, associative array indexed by file name.
+
+## Hooking
 
 - Hookable method name: `rebuildVariations`
 - Implementation: `___rebuildVariations`
-- Hook with: `$pageimage->rebuildVariations()`
+- Hook with: `Pageimage::rebuildVariations`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pageimage::rebuildVariations', function(HookEvent $event) {
@@ -55,7 +65,7 @@ $this->addHookBefore('Pageimage::rebuildVariations', function(HookEvent $event) 
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pageimage::rebuildVariations', function(HookEvent $event) {
@@ -73,13 +83,3 @@ $this->addHookAfter('Pageimage::rebuildVariations', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$mode` (optional) `int` See the options for $mode argument above (default=0).
-- `$suffix` (optional) `array` Optional argument to specify suffixes to include or exclude (according to $mode).
-- `$options` (optional) `array` See $options for `Pageimage::size()` for details.
-
-## Return value
-
-- `array` Returns an associative array with with the following indexes: - `rebuilt` (array): Names of files that were rebuilt. - `skipped` (array): Names of files that were skipped. - `errors` (array): Names of files that had errors. - `reasons` (array): Reasons why files were skipped or had errors, associative array indexed by file name.

@@ -50,13 +50,22 @@ $string = $page->render();
 $string = $page->render($options = [], $options2 = null);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$options` (optional) `array|string` String of filename to use for render, field name to render, or array of options: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. But absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/ (default=$config->prependTemplateFile) - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `pageStack` (array): An array of pages, when recursively rendering. Used internally. You can examine it but not change it. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page, regardless of whether it’s expired or not. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
+- `$options2` (optional) `array` If a filename or field name was used for $options then you may optionally specify options array here instead.
+
+## Return value
+
+- `string|mixed`
+
+## Hooking
 
 - Hookable method name: `render`
 - Implementation: `___render`
-- Hook with: `$page->render()`
+- Hook with: `Page::render`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::render', function(HookEvent $event) {
@@ -74,7 +83,7 @@ $this->addHookBefore('Page::render', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::render', function(HookEvent $event) {
@@ -91,15 +100,6 @@ $this->addHookAfter('Page::render', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$options` (optional) `array|string` String of filename to use for render, field name to render, or array of options: - `foo_bar` (mixed): Specify any of your own variable names and values to send to the template file (foo_bar is just an example, use your own). - `filename` (string): Filename to render, typically relative to /site/templates/. But absolute paths must resolve somewhere in PW’s install. (default='') - `prependFile` (string): Filename to prepend to output, must be in /site/templates/ (default=$config->prependTemplateFile) - `prependFiles` (array): Array of additional filenames to prepend to output, must be relative to /site/templates/. - `appendFile` (string): Filename to append to output, must be in /site/templates/. - `appendFiles` (array): Array of additional filenames to append to output, must be relative to /site/templates/. - `pageStack` (array): An array of pages, when recursively rendering. Used internally. You can examine it but not change it. - `allowCache` (bool): Allow cache to be used when template settings ask for it? (default=true) - `forceBuildCache` (bool): If true, the cache will be re-created for this page, regardless of whether it’s expired or not. (default=false) -  Note that the prepend and append options above have default values in `$config` or with the Template.
-- `$options2` (optional) `array` If a filename or field name was used for $options then you may optionally specify options array here instead.
-
-## Return value
-
-- `string|mixed`
 
 ## Exceptions
 

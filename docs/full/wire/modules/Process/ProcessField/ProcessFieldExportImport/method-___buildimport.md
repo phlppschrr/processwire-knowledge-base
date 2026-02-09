@@ -11,13 +11,17 @@ Execute import
 $inputfieldForm = $processFieldExportImport->buildImport();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldForm`
+
+## Hooking
 
 - Hookable method name: `buildImport`
 - Implementation: `___buildImport`
-- Hook with: `$processFieldExportImport->buildImport()`
+- Hook with: `ProcessFieldExportImport::buildImport`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessFieldExportImport::buildImport', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('ProcessFieldExportImport::buildImport', function(HookEvent
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessFieldExportImport::buildImport', function(HookEvent $event) {
@@ -40,10 +44,6 @@ $this->addHookAfter('ProcessFieldExportImport::buildImport', function(HookEvent 
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldForm`
 
 ## Exceptions
 

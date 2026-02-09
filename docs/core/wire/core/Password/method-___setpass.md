@@ -11,13 +11,17 @@ Set the 'pass' to the given value
 $result = $password->setPass($value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$value` `string`
+
+## Hooking
 
 - Hookable method name: `setPass`
 - Implementation: `___setPass`
-- Hook with: `$password->setPass()`
+- Hook with: `Password::setPass`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Password::setPass', function(HookEvent $event) {
@@ -33,7 +37,7 @@ $this->addHookBefore('Password::setPass', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Password::setPass', function(HookEvent $event) {
@@ -49,10 +53,6 @@ $this->addHookAfter('Password::setPass', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$value` `string`
 
 ## Exceptions
 

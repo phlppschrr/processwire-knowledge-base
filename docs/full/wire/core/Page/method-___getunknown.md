@@ -13,13 +13,21 @@ Hooks that want to inject something here should hook after and modify the $event
 $page->getUnknown($key);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$key` `string` Name of property.
+
+## Return value
+
+- `null|mixed` Returns null if property not known, or a value if it is.
+
+## Hooking
 
 - Hookable method name: `getUnknown`
 - Implementation: `___getUnknown`
-- Hook with: `$page->getUnknown()`
+- Hook with: `Page::getUnknown`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::getUnknown', function(HookEvent $event) {
@@ -35,7 +43,7 @@ $this->addHookBefore('Page::getUnknown', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::getUnknown', function(HookEvent $event) {
@@ -51,11 +59,3 @@ $this->addHookAfter('Page::getUnknown', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$key` `string` Name of property.
-
-## Return value
-
-- `null|mixed` Returns null if property not known, or a value if it is.

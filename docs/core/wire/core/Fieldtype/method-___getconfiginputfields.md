@@ -22,13 +22,21 @@ $inputfieldWrapper = $fieldtype->getConfigInputfields($field);
 $inputfieldWrapper = $fieldtype->getConfigInputfields(Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field`
+
+## Return value
+
+- `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getConfigInputfields`
 - Implementation: `___getConfigInputfields`
-- Hook with: `$fieldtype->getConfigInputfields()`
+- Hook with: `Fieldtype::getConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::getConfigInputfields', function(HookEvent $event) {
@@ -44,7 +52,7 @@ $this->addHookBefore('Fieldtype::getConfigInputfields', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::getConfigInputfields', function(HookEvent $event) {
@@ -60,11 +68,3 @@ $this->addHookAfter('Fieldtype::getConfigInputfields', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field`
-
-## Return value
-
-- `InputfieldWrapper`

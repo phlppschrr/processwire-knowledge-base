@@ -11,13 +11,21 @@ Compile given source file and return compiled destination file
 $string = $fileCompiler->compile($sourceFile);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$sourceFile` `string` Source file to compile (relative to sourcePath given in constructor)
+
+## Return value
+
+- `string` Full path and filename of compiled file. Returns sourceFile is compilation is not necessary.
+
+## Hooking
 
 - Hookable method name: `compile`
 - Implementation: `___compile`
-- Hook with: `$fileCompiler->compile()`
+- Hook with: `FileCompiler::compile`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FileCompiler::compile', function(HookEvent $event) {
@@ -33,7 +41,7 @@ $this->addHookBefore('FileCompiler::compile', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FileCompiler::compile', function(HookEvent $event) {
@@ -49,14 +57,6 @@ $this->addHookAfter('FileCompiler::compile', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$sourceFile` `string` Source file to compile (relative to sourcePath given in constructor)
-
-## Return value
-
-- `string` Full path and filename of compiled file. Returns sourceFile is compilation is not necessary.
 
 ## Exceptions
 

@@ -14,13 +14,17 @@ $result = $pages->restored($page);
 $result = $pages->restored(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page` Page that was restored
+
+## Hooking
 
 - Hookable method name: `restored`
 - Implementation: `___restored`
-- Hook with: `$pages->restored()`
+- Hook with: `Pages::restored`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::restored', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::restored', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::restored', function(HookEvent $event) {
@@ -52,7 +56,3 @@ $this->addHookAfter('Pages::restored', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page` Page that was restored

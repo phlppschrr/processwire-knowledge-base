@@ -11,13 +11,17 @@ Get any Inputfields needed to configure the field in the admin.
 $inputfieldWrapper = $field->getConfigInputfields();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `InputfieldWrapper`
+
+## Hooking
 
 - Hookable method name: `getConfigInputfields`
 - Implementation: `___getConfigInputfields`
-- Hook with: `$field->getConfigInputfields()`
+- Hook with: `Field::getConfigInputfields`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Field::getConfigInputfields', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('Field::getConfigInputfields', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Field::getConfigInputfields', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('Field::getConfigInputfields', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `InputfieldWrapper`

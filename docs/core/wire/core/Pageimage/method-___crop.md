@@ -26,13 +26,25 @@ $pageimage = $pageimage->crop($x, $y, $width, $height);
 $pageimage = $pageimage->crop($x, $y, $width, $height, $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$x` `int` Starting X position (left) in pixels
+- `$y` `int` Starting Y position (top) in pixels
+- `$width` `int` Width of crop in pixels
+- `$height` `int` Height of crop in pixels
+- `$options` (optional) `array` See options array for `Pageimage::size()` method. Avoid setting crop properties in $options since we are overriding them.
+
+## Return value
+
+- `Pageimage`
+
+## Hooking
 
 - Hookable method name: `crop`
 - Implementation: `___crop`
-- Hook with: `$pageimage->crop()`
+- Hook with: `Pageimage::crop`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pageimage::crop', function(HookEvent $event) {
@@ -56,7 +68,7 @@ $this->addHookBefore('Pageimage::crop', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pageimage::crop', function(HookEvent $event) {
@@ -76,15 +88,3 @@ $this->addHookAfter('Pageimage::crop', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$x` `int` Starting X position (left) in pixels
-- `$y` `int` Starting Y position (top) in pixels
-- `$width` `int` Width of crop in pixels
-- `$height` `int` Height of crop in pixels
-- `$options` (optional) `array` See options array for `Pageimage::size()` method. Avoid setting crop properties in $options since we are overriding them.
-
-## Return value
-
-- `Pageimage`

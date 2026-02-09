@@ -23,13 +23,22 @@ $bool = $pagesType->delete($page);
 $bool = $pagesType->delete(Page $page, $recursive = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$recursive` (optional) `bool` If set to true, then this will attempt to delete all children too.
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$pagesType->delete()`
+- Hook with: `PagesType::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesType::delete', function(HookEvent $event) {
@@ -47,7 +56,7 @@ $this->addHookBefore('PagesType::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesType::delete', function(HookEvent $event) {
@@ -64,15 +73,6 @@ $this->addHookAfter('PagesType::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$recursive` (optional) `bool` If set to true, then this will attempt to delete all children too.
-
-## Return value
-
-- `bool`
 
 ## Exceptions
 

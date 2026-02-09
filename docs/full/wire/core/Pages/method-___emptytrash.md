@@ -24,13 +24,21 @@ $int = $pages->emptyTrash();
 $int = $pages->emptyTrash(array $options = array());
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$options` (optional) `array` See PagesTrash::emptyTrash() for advanced options
+
+## Return value
+
+- `int|array` Returns total number of pages deleted from trash, or array if verbose option specified. This number is negative or 0 if not all pages could be deleted and error notices may be present.
+
+## Hooking
 
 - Hookable method name: `emptyTrash`
 - Implementation: `___emptyTrash`
-- Hook with: `$pages->emptyTrash()`
+- Hook with: `Pages::emptyTrash`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::emptyTrash', function(HookEvent $event) {
@@ -46,7 +54,7 @@ $this->addHookBefore('Pages::emptyTrash', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::emptyTrash', function(HookEvent $event) {
@@ -62,14 +70,6 @@ $this->addHookAfter('Pages::emptyTrash', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$options` (optional) `array` See PagesTrash::emptyTrash() for advanced options
-
-## Return value
-
-- `int|array` Returns total number of pages deleted from trash, or array if verbose option specified. This number is negative or 0 if not all pages could be deleted and error notices may be present.
 
 ## See Also
 

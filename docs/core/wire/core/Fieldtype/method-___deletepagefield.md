@@ -16,13 +16,22 @@ $bool = $fieldtype->deletePageField($page, $field);
 $bool = $fieldtype->deletePageField(Page $page, Field $field);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field` Field object
+
+## Return value
+
+- `bool` True on success, false on DB delete failure.
+
+## Hooking
 
 - Hookable method name: `deletePageField`
 - Implementation: `___deletePageField`
-- Hook with: `$fieldtype->deletePageField()`
+- Hook with: `Fieldtype::deletePageField`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fieldtype::deletePageField', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Fieldtype::deletePageField', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fieldtype::deletePageField', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('Fieldtype::deletePageField', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field` Field object
-
-## Return value
-
-- `bool` True on success, false on DB delete failure.
 
 ## Exceptions
 

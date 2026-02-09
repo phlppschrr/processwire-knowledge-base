@@ -16,13 +16,13 @@ See the `Module` interface and the `install` method there for more details.
 $result = $process->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$process->install()`
+- Hook with: `Process::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Process::install', function(HookEvent $event) {
@@ -32,7 +32,7 @@ $this->addHookBefore('Process::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Process::install', function(HookEvent $event) {

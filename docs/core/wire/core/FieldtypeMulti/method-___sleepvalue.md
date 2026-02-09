@@ -21,13 +21,23 @@ $array = $fieldtypeMulti->sleepValue($page, $field, $value);
 $array = $fieldtypeMulti->sleepValue(Page $page, Field $field, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+- `$field` `Field`
+- `$value` `WireArray`
+
+## Return value
+
+- `array`
+
+## Hooking
 
 - Hookable method name: `sleepValue`
 - Implementation: `___sleepValue`
-- Hook with: `$fieldtypeMulti->sleepValue()`
+- Hook with: `FieldtypeMulti::sleepValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('FieldtypeMulti::sleepValue', function(HookEvent $event) {
@@ -47,7 +57,7 @@ $this->addHookBefore('FieldtypeMulti::sleepValue', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('FieldtypeMulti::sleepValue', function(HookEvent $event) {
@@ -65,13 +75,3 @@ $this->addHookAfter('FieldtypeMulti::sleepValue', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-- `$field` `Field`
-- `$value` `WireArray`
-
-## Return value
-
-- `array`

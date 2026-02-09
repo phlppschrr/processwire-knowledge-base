@@ -16,13 +16,22 @@ $bool = $fields->applySetupName($field);
 $bool = $fields->applySetupName(Field $field, $setupName = '');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$field` `Field` Newly created field
+- `$setupName` (optional) `string` Setup name to apply
+
+## Return value
+
+- `bool` True if setup was appled, false if not
+
+## Hooking
 
 - Hookable method name: `applySetupName`
 - Implementation: `___applySetupName`
-- Hook with: `$fields->applySetupName()`
+- Hook with: `Fields::applySetupName`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Fields::applySetupName', function(HookEvent $event) {
@@ -40,7 +49,7 @@ $this->addHookBefore('Fields::applySetupName', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Fields::applySetupName', function(HookEvent $event) {
@@ -57,15 +66,6 @@ $this->addHookAfter('Fields::applySetupName', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$field` `Field` Newly created field
-- `$setupName` (optional) `string` Setup name to apply
-
-## Return value
-
-- `bool` True if setup was appled, false if not
 
 ## Since
 

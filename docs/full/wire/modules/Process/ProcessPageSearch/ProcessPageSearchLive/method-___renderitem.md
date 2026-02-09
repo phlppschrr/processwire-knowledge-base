@@ -14,13 +14,23 @@ $string = $processPageSearchLive->renderItem($item);
 $string = $processPageSearchLive->renderItem(array $item, $prefix = 'pw-search', $class = 'item');
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$item` `array`
+- `$prefix` (optional) `string` For CSS classes, default is "pw-search"
+- `$class` (optional) `string` Class name for item, default is "item" which translates to "pw-search-item"
+
+## Return value
+
+- `string` HTML markup
+
+## Hooking
 
 - Hookable method name: `renderItem`
 - Implementation: `___renderItem`
-- Hook with: `$processPageSearchLive->renderItem()`
+- Hook with: `ProcessPageSearchLive::renderItem`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageSearchLive::renderItem', function(HookEvent $event) {
@@ -40,7 +50,7 @@ $this->addHookBefore('ProcessPageSearchLive::renderItem', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageSearchLive::renderItem', function(HookEvent $event) {
@@ -58,13 +68,3 @@ $this->addHookAfter('ProcessPageSearchLive::renderItem', function(HookEvent $eve
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$item` `array`
-- `$prefix` (optional) `string` For CSS classes, default is "pw-search"
-- `$class` (optional) `string` Class name for item, default is "item" which translates to "pw-search-item"
-
-## Return value
-
-- `string` HTML markup

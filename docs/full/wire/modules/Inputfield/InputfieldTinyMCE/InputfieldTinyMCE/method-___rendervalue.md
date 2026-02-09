@@ -11,13 +11,17 @@ Render non-editable value
 $string = $inputfieldTinyMCE->renderValue();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `string`
+
+## Hooking
 
 - Hookable method name: `renderValue`
 - Implementation: `___renderValue`
-- Hook with: `$inputfieldTinyMCE->renderValue()`
+- Hook with: `InputfieldTinyMCE::renderValue`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldTinyMCE::renderValue', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('InputfieldTinyMCE::renderValue', function(HookEvent $event
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldTinyMCE::renderValue', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('InputfieldTinyMCE::renderValue', function(HookEvent $event)
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `string`

@@ -14,13 +14,21 @@ $bool = $pagesVersions->allowPageVersions($page);
 $bool = $pagesVersions->allowPageVersions(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Return value
+
+- `bool`
+
+## Hooking
 
 - Hookable method name: `allowPageVersions`
 - Implementation: `___allowPageVersions`
-- Hook with: `$pagesVersions->allowPageVersions()`
+- Hook with: `PagesVersions::allowPageVersions`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('PagesVersions::allowPageVersions', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('PagesVersions::allowPageVersions', function(HookEvent $eve
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('PagesVersions::allowPageVersions', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('PagesVersions::allowPageVersions', function(HookEvent $even
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
-
-## Return value
-
-- `bool`

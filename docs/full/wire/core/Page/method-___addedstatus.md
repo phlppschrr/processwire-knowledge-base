@@ -22,13 +22,18 @@ $wire->addHook('Page::addedStatus', function($e) {
 $result = $page->addedStatus($name, $value);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$name` `string` Name of the status flag that was added, i.e. unpublished, hidden, trash, locked
+- `$value` `int` Value of the status flag that was added, a `Page::status*` constant
+
+## Hooking
 
 - Hookable method name: `addedStatus`
 - Implementation: `___addedStatus`
-- Hook with: `$page->addedStatus()`
+- Hook with: `Page::addedStatus`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::addedStatus', function(HookEvent $event) {
@@ -46,7 +51,7 @@ $this->addHookBefore('Page::addedStatus', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::addedStatus', function(HookEvent $event) {
@@ -63,11 +68,6 @@ $this->addHookAfter('Page::addedStatus', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$name` `string` Name of the status flag that was added, i.e. unpublished, hidden, trash, locked
-- `$value` `int` Value of the status flag that was added, a `Page::status*` constant
 
 ## Since
 

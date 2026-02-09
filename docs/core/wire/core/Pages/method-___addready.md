@@ -14,13 +14,17 @@ $result = $pages->addReady($page);
 $result = $pages->addReady(Page $page);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Page`
+
+## Hooking
 
 - Hookable method name: `addReady`
 - Implementation: `___addReady`
-- Hook with: `$pages->addReady()`
+- Hook with: `Pages::addReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Pages::addReady', function(HookEvent $event) {
@@ -36,7 +40,7 @@ $this->addHookBefore('Pages::addReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Pages::addReady', function(HookEvent $event) {
@@ -52,10 +56,6 @@ $this->addHookAfter('Pages::addReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Page`
 
 ## Since
 

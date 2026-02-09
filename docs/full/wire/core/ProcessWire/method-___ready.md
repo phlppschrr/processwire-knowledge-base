@@ -11,13 +11,13 @@ Hookable ready for anyone that wants to hook immediately before any autoload mod
 $result = $processWire->ready();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `ready`
 - Implementation: `___ready`
-- Hook with: `$processWire->ready()`
+- Hook with: `ProcessWire::ready`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessWire::ready', function(HookEvent $event) {
@@ -27,7 +27,7 @@ $this->addHookBefore('ProcessWire::ready', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessWire::ready', function(HookEvent $event) {

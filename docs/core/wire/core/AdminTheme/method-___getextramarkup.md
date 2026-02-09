@@ -11,13 +11,17 @@ Enables hooks to append extra markup to various sections of the admin page
 $array = $adminTheme->getExtraMarkup();
 ~~~~~
 
-## Hookable
+## Return value
+
+- `array` Associative array containing the following properties, any of which may be populated or empty: - head - body - masthead - content - footer - sidebar
+
+## Hooking
 
 - Hookable method name: `getExtraMarkup`
 - Implementation: `___getExtraMarkup`
-- Hook with: `$adminTheme->getExtraMarkup()`
+- Hook with: `AdminTheme::getExtraMarkup`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('AdminTheme::getExtraMarkup', function(HookEvent $event) {
@@ -27,7 +31,7 @@ $this->addHookBefore('AdminTheme::getExtraMarkup', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('AdminTheme::getExtraMarkup', function(HookEvent $event) {
@@ -40,7 +44,3 @@ $this->addHookAfter('AdminTheme::getExtraMarkup', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Return value
-
-- `array` Associative array containing the following properties, any of which may be populated or empty: - head - body - masthead - content - footer - sidebar

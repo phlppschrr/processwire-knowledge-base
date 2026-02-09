@@ -14,13 +14,21 @@ $result = $inputfieldTinyMCE->processInput($input);
 $result = $inputfieldTinyMCE->processInput(WireInputData $input);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$input` `WireInputData`
+
+## Return value
+
+- `$this`
+
+## Hooking
 
 - Hookable method name: `processInput`
 - Implementation: `___processInput`
-- Hook with: `$inputfieldTinyMCE->processInput()`
+- Hook with: `InputfieldTinyMCE::processInput`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('InputfieldTinyMCE::processInput', function(HookEvent $event) {
@@ -36,7 +44,7 @@ $this->addHookBefore('InputfieldTinyMCE::processInput', function(HookEvent $even
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('InputfieldTinyMCE::processInput', function(HookEvent $event) {
@@ -52,11 +60,3 @@ $this->addHookAfter('InputfieldTinyMCE::processInput', function(HookEvent $event
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$input` `WireInputData`
-
-## Return value
-
-- `$this`

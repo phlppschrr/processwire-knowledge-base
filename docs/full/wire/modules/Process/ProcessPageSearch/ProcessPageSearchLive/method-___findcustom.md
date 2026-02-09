@@ -28,13 +28,21 @@ $bool = $processPageSearchLive->findCustom($data);
 $bool = $processPageSearchLive->findCustom(array $data);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$data` `array` Data about the search including 'type', 'operator', 'q' (query) and more.
+
+## Return value
+
+- `bool` Optionally return false to stop search, making it use only results returned by this method.
+
+## Hooking
 
 - Hookable method name: `findCustom`
 - Implementation: `___findCustom`
-- Hook with: `$processPageSearchLive->findCustom()`
+- Hook with: `ProcessPageSearchLive::findCustom`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
@@ -50,7 +58,7 @@ $this->addHookBefore('ProcessPageSearchLive::findCustom', function(HookEvent $ev
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('ProcessPageSearchLive::findCustom', function(HookEvent $event) {
@@ -66,14 +74,6 @@ $this->addHookAfter('ProcessPageSearchLive::findCustom', function(HookEvent $eve
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$data` `array` Data about the search including 'type', 'operator', 'q' (query) and more.
-
-## Return value
-
-- `bool` Optionally return false to stop search, making it use only results returned by this method.
 
 ## Since
 

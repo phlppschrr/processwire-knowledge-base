@@ -14,13 +14,22 @@ $bool = $roles->delete($page);
 $bool = $roles->delete(Page $page, $recursive = false);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$page` `Role|Page` Permission to delete
+- `$recursive` (optional) `bool` If set to true, then this will attempt to delete any pages below the Permission too.
+
+## Return value
+
+- `bool` True on success, false on failure
+
+## Hooking
 
 - Hookable method name: `delete`
 - Implementation: `___delete`
-- Hook with: `$roles->delete()`
+- Hook with: `Roles::delete`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Roles::delete', function(HookEvent $event) {
@@ -38,7 +47,7 @@ $this->addHookBefore('Roles::delete', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Roles::delete', function(HookEvent $event) {
@@ -55,15 +64,6 @@ $this->addHookAfter('Roles::delete', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$page` `Role|Page` Permission to delete
-- `$recursive` (optional) `bool` If set to true, then this will attempt to delete any pages below the Permission too.
-
-## Return value
-
-- `bool` True on success, false on failure
 
 ## Exceptions
 

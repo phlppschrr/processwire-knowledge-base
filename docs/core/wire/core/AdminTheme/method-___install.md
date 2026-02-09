@@ -13,13 +13,13 @@ Other admin themes using an install() method must call this install before their
 $result = $adminTheme->install();
 ~~~~~
 
-## Hookable
+## Hooking
 
 - Hookable method name: `install`
 - Implementation: `___install`
-- Hook with: `$adminTheme->install()`
+- Hook with: `AdminTheme::install`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('AdminTheme::install', function(HookEvent $event) {
@@ -29,7 +29,7 @@ $this->addHookBefore('AdminTheme::install', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('AdminTheme::install', function(HookEvent $event) {

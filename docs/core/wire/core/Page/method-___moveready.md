@@ -22,13 +22,18 @@ $wire->addHook('Page::moveReady', function($e) {
 $result = $page->moveReady($oldParent, $newParent);
 ~~~~~
 
-## Hookable
+## Arguments
+
+- `$oldParent` `Page`
+- `$newParent` `Page`
+
+## Hooking
 
 - Hookable method name: `moveReady`
 - Implementation: `___moveReady`
-- Hook with: `$page->moveReady()`
+- Hook with: `Page::moveReady`
 
-## Hooking Before
+### Hooking Before
 
 ~~~~~
 $this->addHookBefore('Page::moveReady', function(HookEvent $event) {
@@ -46,7 +51,7 @@ $this->addHookBefore('Page::moveReady', function(HookEvent $event) {
 });
 ~~~~~
 
-## Hooking After
+### Hooking After
 
 ~~~~~
 $this->addHookAfter('Page::moveReady', function(HookEvent $event) {
@@ -63,11 +68,6 @@ $this->addHookAfter('Page::moveReady', function(HookEvent $event) {
   $event->return = $return;
 });
 ~~~~~
-
-## Arguments
-
-- `$oldParent` `Page`
-- `$newParent` `Page`
 
 ## Since
 
