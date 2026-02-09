@@ -6,6 +6,7 @@ import argparse
 import json
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -118,6 +119,7 @@ def fetch_urls(
     refresh: bool = False,
     sleep: float = 0.5,
     timeout: float = 30.0,
+    workers: int = 1,
     reporter: Callable[[str], None] | None = None,
 ) -> tuple[list[CacheResult], dict]:
     if not url_path.exists():
@@ -127,29 +129,58 @@ def fetch_urls(
     if not urls:
         raise ValueError("No URLs to fetch.")
 
-    results: list[CacheResult] = []
+    results: list[CacheResult | None] = [None] * len(urls)
     fetched = cached = failed = 0
 
-    for idx, url in enumerate(urls, start=1):
+    def run_one(index: int, url: str) -> tuple[int, CacheResult, Path]:
         rel = url_to_relpath(url)
         out_path = out_dir / rel
-        result = fetch_url(url, out_path, refresh, timeout)
-        results.append(result)
-        if result.status == "fetched":
-            fetched += 1
-        elif result.status == "cached":
-            cached += 1
-        else:
-            failed += 1
-        if reporter:
-            reporter(
-                f"[{idx}/{len(urls)}] {result.status.upper()}: {url} -> {out_path}"
-            )
-        if idx < len(urls) and sleep:
-            time.sleep(sleep)
+        return index, fetch_url(url, out_path, refresh, timeout), out_path
+
+    max_workers = max(1, int(workers))
+    max_workers = min(max_workers, len(urls))
+
+    if max_workers == 1:
+        for idx, url in enumerate(urls, start=1):
+            _, result, out_path = run_one(idx - 1, url)
+            results[idx - 1] = result
+            if result.status == "fetched":
+                fetched += 1
+            elif result.status == "cached":
+                cached += 1
+            else:
+                failed += 1
+            if reporter:
+                reporter(
+                    f"[{idx}/{len(urls)}] {result.status.upper()}: {url} -> {out_path}"
+                )
+            if idx < len(urls) and sleep:
+                time.sleep(sleep)
+    else:
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+            for idx, url in enumerate(urls, start=1):
+                futures.append(executor.submit(run_one, idx - 1, url))
+                if idx < len(urls) and sleep:
+                    time.sleep(sleep)
+            for future in as_completed(futures):
+                index, result, out_path = future.result()
+                results[index] = result
+                if result.status == "fetched":
+                    fetched += 1
+                elif result.status == "cached":
+                    cached += 1
+                else:
+                    failed += 1
+                if reporter:
+                    reporter(
+                        f"[{index + 1}/{len(urls)}] {result.status.upper()}: {result.url} -> {out_path}"
+                    )
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    write_index(results, out_dir)
+    if any(result is None for result in results):
+        raise RuntimeError("Fetch results incomplete.")
+    write_index([result for result in results if result is not None], out_dir)
 
     stats = {
         "fetched": fetched,
@@ -189,6 +220,12 @@ def main() -> int:
         default=30.0,
         help="Request timeout in seconds (default: 30)",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="Number of parallel workers (default: 1)",
+    )
 
     args = parser.parse_args()
     url_path = Path(args.urls)
@@ -201,6 +238,7 @@ def main() -> int:
             refresh=args.refresh,
             sleep=args.sleep,
             timeout=args.timeout,
+            workers=args.workers,
             reporter=lambda msg: print(msg, file=sys.stderr),
         )
     except (FileNotFoundError, ValueError) as exc:
