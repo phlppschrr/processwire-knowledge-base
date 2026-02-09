@@ -4,7 +4,16 @@ Source: `wire/core/CacheFile.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire CacheFile
+
+Common methods:
+- [`setSecondaryID()`](method-setsecondaryid.md)
+- [`buildFilename()`](method-buildfilename.md)
+- [`exists()`](method-exists.md)
+- [`get()`](method-get.md)
+- [`isCacheFileExpired()`](method-iscachefileexpired.md)
 
 Class to manage individual cache files
 
@@ -15,7 +24,7 @@ and these are automatically removed when the remove() method is called.
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct(string $path, string|int $id, int $cacheTimeSeconds)`](method-__construct.md) Construct the CacheFile
 - [`setSecondaryID(string|int $id)`](method-setsecondaryid.md) An extra part to be appended to the filename
 - [`buildFilename(): string`](method-buildfilename.md) Build a filename for use by the cache
@@ -30,5 +39,5 @@ Methods:
 - [`setChmodDir(string $mode)`](method-setchmoddir.md) Set the octal mode for dirs created by CacheFile
 - [`__toString()`](method-__tostring.md) CacheFile classes return a string of their cache filename
 
-Constants:
+## Constants
 - [`maxCacheFiles = 999`](const-maxcachefiles.md)

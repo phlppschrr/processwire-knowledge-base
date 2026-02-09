@@ -4,6 +4,8 @@ Source: `wire/modules/Fieldtype/PageTableField.php`
 
 Inherits: `Field`
 
+## Summary
+
 Page Table Field (for FieldtypePageTable)
 
 ## Configured With Fieldtypepagetable

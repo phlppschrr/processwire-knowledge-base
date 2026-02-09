@@ -4,11 +4,20 @@ Source: `wire/modules/Process/ProcessModule/ProcessModuleInstall.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Installation helper for ProcessModule
+
+Common methods:
+- [`getTempDir()`](method-gettempdir.md)
+- [`canUploadDownload()`](method-canuploaddownload.md)
+- [`canInstallFromFileUpload()`](method-caninstallfromfileupload.md)
+- [`canInstallFromDownloadUrl()`](method-caninstallfromdownloadurl.md)
+- [`canInstallFromDirectory()`](method-caninstallfromdirectory.md)
 
 Provides methods for internative module installation for ProcessModule
 
-Methods:
+## Methods
 - [`getTempDir(): string|bool`](method-gettempdir.md) Returns a temporary directory (path) for use by this object
 - [`canUploadDownload(bool $notify = true, string $type = ''): bool`](method-canuploaddownload.md) Check that the system supports direct upload and download of modules
 - [`canInstallFromFileUpload(bool $notify = true): bool`](method-caninstallfromfileupload.md) Module upload allowed?

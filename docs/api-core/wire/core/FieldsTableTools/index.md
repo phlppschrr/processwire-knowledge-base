@@ -2,7 +2,7 @@
 
 Source: `wire/core/FieldsTableTools.php`
 
-Methods:
+## Methods
 - [`checkUniqueIndex(Field $field, bool $verbose = true)`](method-checkuniqueindex.md) Check state of field unique 'data' index and update as needed
 - [`deleteEmptyRows(Field $field, string $col = 'data', bool $strict = true): bool|int`](method-deleteemptyrows.md) Delete rows having empty column value
 - [`getUniqueIndexInputfield(Field $field): InputfieldCheckbox`](method-getuniqueindexinputfield.md) Create a checkbox Inputfield to configure unique value state

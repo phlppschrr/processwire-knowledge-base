@@ -2,11 +2,20 @@
 
 Source: `wire/core/WireHooks.php`
 
+## Summary
+
 ProcessWire Hooks Manager
+
+Common methods:
+- [`getHooks()`](method-gethooks.md)
+- [`isHooked()`](method-ishooked.md)
+- [`isHookedOrParents()`](method-ishookedorparents.md)
+- [`isMethodHooked()`](method-ismethodhooked.md)
+- [`isPropertyHooked()`](method-ispropertyhooked.md)
 
 This class is for internal use. You should manipulate hooks from Wire-derived classes instead.
 
-Methods:
+## Methods
 - [`__construct(ProcessWire $wire, Config $config)`](method-__construct.md) Construct WireHooks
 - [`getHooks(Wire $object, string $method = '', int $getHooks = self::getHooksAll): array`](method-gethooks.md) Return all hooks associated with $object or method (if specified)
 - [`isHooked(string $method, ?Wire $instance = null): bool`](method-ishooked.md) Returns true if the method/property hooked, false if it isn't.
@@ -34,7 +43,7 @@ Methods:
 - [`getPathHookRedirect(): string`](method-getpathhookredirect.md) Return redirect URL required by an applicable path hook, or blank otherwise
 - [`className(): string`](method-classname.md)
 
-Constants:
+## Constants
 - [`___debug = false`](const-___debug.md)
 - [`getHooksAll = 0`](const-gethooksall.md)
 - [`getHooksLocal = 1`](const-gethookslocal.md)

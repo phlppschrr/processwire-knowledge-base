@@ -5,8 +5,16 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersions.module.php`
 Inherits: `Wire`
 Implements: `Module`
 
+## Summary
+
 PagesVersions
 
+Common methods:
+- [`getModuleInfo()`](method-getmoduleinfo.md)
+- [`getPageVersion()`](method-getpageversion.md)
+- [`loadPageVersion()`](method-loadpageversion.md)
+- [`getPageVersions()`](method-getpageversions.md)
+- [`getPageVersionInfo()`](method-getpageversioninfo.md)
 
 Provides a version control API for pages in ProcessWire.
 $pagesVersions
@@ -41,7 +49,7 @@ $pagesVersions->deletePageVersion($pageV2);
 
 @todo test change of template in version
 
-Methods:
+## Methods
 - [`getPageVersion(Page $page, int $version, array $options = []): Page|NullPage`](method-getpageversion.md) Get requested page version in a copy of given page
 - [`loadPageVersion(Page $page, int|string|PageVersionInfo $version, array $options = []): bool`](method-loadpageversion.md) Load and populate version data to given page
 - [`getPageVersions(Page $page, array $options = []): PageVersionInfo[]|Page[]`](method-getpageversions.md) Get all versions for given page

@@ -4,7 +4,16 @@ Source: `wire/core/WireMarkupFileRegions.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Markup File Regions
+
+Common methods:
+- [`getDefaults()`](method-getdefaults.md)
+- [`apply()`](method-apply.md)
+- [`findRegions()`](method-findregions.md)
+- [`populateRegions()`](method-populateregions.md)
+- [`applyRegionNamespace()`](method-applyregionnamespace.md)
 
 Markup File Regions
 Enables you to use the Markup Regions system to populate CSS and JS files.
@@ -151,7 +160,7 @@ takes care of moving them to externally linked assets.
 
 @since 3.0.254
 
-Methods:
+## Methods
 - [`getDefaults(): array`](method-getdefaults.md) Get default settings
 - [`apply(string &$htmlDocument, string &$htmlRegions, array $options = []): int`](method-apply.md) Apply file regions in given HTML document and regions markup
 - [`findRegions(string &$html, array $options): array`](method-findregions.md) Find and return file regions in given HTML

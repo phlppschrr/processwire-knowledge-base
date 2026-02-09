@@ -4,11 +4,20 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEFormats.php`
 
 Inherits: `InputfieldTinyMCEClass`
 
+## Summary
+
 InputfieldTinyMCEFormats
+
+Common methods:
+- [`getBlockFormats()`](method-getblockformats.md)
+- [`getStyleFormats()`](method-getstyleformats.md)
+- [`mergeStyleFormats()`](method-mergestyleformats.md)
+- [`applyStyleFormatsCSS()`](method-applystyleformatscss.md)
+- [`applyRemoveStyleFormats()`](method-applyremovestyleformats.md)
 
 Helper for managing TinyMCE style_formats and related settings
 
-Methods:
+## Methods
 - [`getBlockFormats(): string`](method-getblockformats.md) Get block_formats
 - [`getStyleFormats(array $defaults): array|mixed`](method-getstyleformats.md) Get style_formats
 - [`mergeStyleFormats(array $styleFormats, array $addFormats): array`](method-mergestyleformats.md) Merge the given style formats

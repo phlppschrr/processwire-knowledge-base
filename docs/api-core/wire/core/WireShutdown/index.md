@@ -4,16 +4,23 @@ Source: `wire/core/WireShutdown.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire shutdown handler
+
+Common methods:
+- [`setFatalErrorResponse()`](method-setfatalerrorresponse.md)
+- [`prepareLabels()`](method-preparelabels.md)
+- [`getErrorMessage()`](method-geterrormessage.md)
+- [`getWireInput()`](method-getwireinput.md)
+- [`getCurrentUrl()`](method-getcurrenturl.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire shutdown handler
-
-
 Look for errors at shutdown and log them, plus echo the error if the page is editable
 
-Methods:
+## Methods
 - [`__construct(Config $config)`](method-__construct.md) Construct and register shutdown function
 - [`setFatalErrorResponse(array $options)`](method-setfatalerrorresponse.md) Set fatal error response info including http code, optional extra headers, and more
 - [`prepareLabels()`](method-preparelabels.md) Setup our translation labels
@@ -37,6 +44,6 @@ Methods:
 - [`sendFatalEmail(string $url, string $userName, string $message): bool`](method-sendfatalemail.md) Send fatal error email
 - [`shutdownExternal()`](method-shutdownexternal.md) Secondary shutdown call when ProcessWire booted externally
 
-Constants:
+## Constants
 - [`defaultFatalErrorHTML = '<p><b>{message}</b><br /><small>{why}</small></p>'`](const-defaultfatalerrorhtml.md)
 - [`defaultEmailBody = "URL: {url}\nUser: {user}\nVersion: {version}\n\n{message}"`](const-defaultemailbody.md)

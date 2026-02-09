@@ -4,7 +4,12 @@ Source: `wire/modules/Fieldtype/PageField.php`
 
 Inherits: `Field`
 
+## Summary
+
 Page Field (for FieldtypePage)
+
+Common methods:
+- [`getTemplateAndParentIds()`](method-gettemplateandparentids.md)
 
 ## Configured With Fieldtypepage
 

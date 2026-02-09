@@ -4,11 +4,20 @@ Source: `wire/core/WireMarkupRegions.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Markup Regions
+
+Common methods:
+- [`find()`](method-find.md)
+- [`findMulti()`](method-findmulti.md)
+- [`hasClass()`](method-hasclass.md)
+- [`parseFindSelector()`](method-parsefindselector.md)
+- [`getTagRegion()`](method-gettagregion.md)
 
 Supports finding and manipulating of markup regions in an HTML document.
 
-Methods:
+## Methods
 - [`find(string $selector, string $markup, array $options = array()): array`](method-find.md) Locate and return all regions of markup having the given attribute
 - [`findMulti(string $selector, string $markup, array $options = array()): array`](method-findmulti.md) Multi-selector version of find(), where $selector contains CSV
 - [`hasClass(string $class, array $classes): bool|string`](method-hasclass.md) Does the given class exist in given $classes array?
@@ -36,6 +45,6 @@ Methods:
 - [`hasRegionActions(string &$html): bool`](method-hasregionactions.md) Does the given HTML markup have references to any pw-actions?
 - [`fileRegions(): WireMarkupFileRegions`](method-fileregions.md) Get instance of WireMarkupFileRegions
 
-Constants:
+## Constants
 - [`debug = false`](const-debug.md)
 - [`debugLandmark = "<!--PW-REGION-DEBUG-->"`](const-debuglandmark.md)

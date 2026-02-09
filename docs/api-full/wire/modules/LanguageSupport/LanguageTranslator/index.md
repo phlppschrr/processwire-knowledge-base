@@ -4,9 +4,18 @@ Source: `wire/modules/LanguageSupport/LanguageTranslator.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Language Translator
 
-Methods:
+Common methods:
+- [`setCurrentLanguage()`](method-setcurrentlanguage.md)
+- [`textdomainTemplate()`](method-textdomaintemplate.md)
+- [`objectToTextdomain()`](method-objecttotextdomain.md)
+- [`filenameToTextdomain()`](method-filenametotextdomain.md)
+- [`textdomainToFilename()`](method-textdomaintofilename.md)
+
+## Methods
 - [`__construct(Language $currentLanguage)`](method-__construct.md) Construct the translator and set the current language
 - [`setCurrentLanguage(Language $language): $this`](method-setcurrentlanguage.md) Set the current language and reset current stored textdomains
 - [`textdomainTemplate(string $file = '', string $textdomain = '', array $translations = array()): array`](method-textdomaintemplate.md) Return the array template for a textdomain, optionally populating it with data

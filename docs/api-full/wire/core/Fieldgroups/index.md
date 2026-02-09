@@ -4,17 +4,25 @@ Source: `wire/core/Fieldgroups.php`
 
 Inherits: `WireSaveableItemsLookup`
 
+## Summary
+
+ProcessWire Fieldgroups
+
+Common methods:
+- [`init()`](method-init.md)
+- [`getLoadQuery()`](method-getloadquery.md)
+- [`load()`](method-___load.md)
+- [`getAll()`](method-getall.md)
+- [`getWireArray()`](method-getwirearray.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Fieldgroups
 
 Maintains collections of Fieldgroup object instances and represents the `$fieldgroups` API variable.
 For full details on all methods available in a Fieldgroup, be sure to also see the `WireArray` class.
 $fieldgroups
 
-Methods:
+## Methods
 - [`init()`](method-init.md) Init
 - [`getLoadQuery(Selectors|string|null $selectors = null): DatabaseQuerySelect`](method-getloadquery.md) Get the DatabaseQuerySelect to perform the load operation of items
 - [`load(WireArray $items, Selectors|string|null $selectors = null): WireArray`](method-___load.md) (hookable) Load all the Fieldgroups from the database

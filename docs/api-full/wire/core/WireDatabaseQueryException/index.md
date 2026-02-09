@@ -4,6 +4,8 @@ Source: `wire/core/Exceptions.php`
 
 Inherits: `WireException`
 
+## Summary
+
 Thrown by DatabaseQuery classes on query exception
 
 May have \PDOException populated with call to its getPrevious(); method,

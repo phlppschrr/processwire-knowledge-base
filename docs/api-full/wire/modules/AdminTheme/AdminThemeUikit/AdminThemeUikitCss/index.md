@@ -4,11 +4,19 @@ Source: `wire/modules/AdminTheme/AdminThemeUikit/AdminThemeUikitCss.php`
 
 Inherits: `WireData`
 
+## Summary
+
+AdminThemeUikit CSS
+
+Common methods:
+- [`getDefaults()`](method-getdefaults.md)
+- [`getCssFile()`](method-getcssfile.md)
+- [`fileToUrl()`](method-filetourl.md)
+- [`getDefaultCssFile()`](method-getdefaultcssfile.md)
+- [`configPhpSettingsChanged()`](method-configphpsettingschanged.md)
 
 Groups:
 Group: [other](group-other.md)
-
-AdminThemeUikit CSS
 
 Manages selection of CSS file and determines when CSS file to be recompiled from LESS
 source files.
@@ -27,7 +35,7 @@ Settings that may be specified in $config->AdminThemeUikit array:
 
 @since 3.0.179
 
-Methods:
+## Methods
 - [`__construct(AdminTheme $adminTheme, array $options = array())`](method-__construct.md) Construct
 - [`getDefaults(): array`](method-getdefaults.md)
 - [`getCssFile(bool $getPath = false): string`](method-getcssfile.md) Get the primary Uikit CSS file URL to use (whether default or custom)

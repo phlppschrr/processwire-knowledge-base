@@ -4,7 +4,16 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentListCustom.php`
 
 Inherits: `CommentList`
 
+## Summary
+
 ProcessWire CommentListCustom
+
+Common methods:
+- [`getMarkup()`](method-getmarkup.md)
+- [`setMarkup()`](method-setmarkup.md)
+- [`markup()`](method-markup.md)
+- [`renderList()`](method-renderlist.md)
+- [`renderItem()`](method-___renderitem.md)
 
 Manages custom CommentList implementations where you specify your own markup
 
@@ -24,7 +33,7 @@ $list->setMarkup([
 echo $list->render();
 ~~~~~~
 
-Methods:
+## Methods
 - [`getMarkup(string $property = ''): array|mixed|null`](method-getmarkup.md) Get markup property or all markup
 - [`setMarkup(array $markup)`](method-setmarkup.md) Set markup
 - [`markup(string|array $key = '', null|mixed $value = null): mixed`](method-markup.md) Get or set markup properties

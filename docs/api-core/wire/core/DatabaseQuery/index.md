@@ -4,11 +4,19 @@ Source: `wire/core/DatabaseQuery.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire DatabaseQuery
+
+Common methods:
+- [`addQueryMethod()`](method-addquerymethod.md)
+- [`bindOption()`](method-bindoption.md)
+- [`bindValue()`](method-bindvalue.md)
+- [`bindValueGetKey()`](method-bindvaluegetkey.md)
+- [`bindValues()`](method-bindvalues.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire DatabaseQuery
 
 Serves as a base class for other DatabaseQuery classes
 
@@ -21,7 +29,7 @@ to build a complex query without worrying about correct syntax placement.
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`bindOption(string|bool $optionName, null|int|string|array $optionValue = null): string|int|array`](method-bindoption.md) Get or set a bind option
 - [`bindValue(string $key, mixed $value, $type = null): $this`](method-bindvalue.md) Bind a parameter value

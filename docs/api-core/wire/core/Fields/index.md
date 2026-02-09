@@ -4,11 +4,19 @@ Source: `wire/core/Fields.php`
 
 Inherits: `WireSaveableItems`
 
+## Summary
+
+ProcessWire Fields
+
+Common methods:
+- [`init()`](method-init.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
+- [`loadRowsReady()`](method-loadrowsready.md)
+- [`fieldIdToProperty()`](method-fieldidtoproperty.md)
+- [`makeItem()`](method-makeitem.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Fields
 
 Manages collection of ALL Field instances, not specific to any particular Fieldgroup
 
@@ -22,7 +30,7 @@ foreach($fields as $field) {
 }
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`loadRowsReady(array &$rows)`](method-loadrowsready.md) Called after rows loaded from DB but before populated to this instance
 - [`makeItem(array $a = array()): Saveable|Wire`](method-makeitem.md) Make an item and populate with given data

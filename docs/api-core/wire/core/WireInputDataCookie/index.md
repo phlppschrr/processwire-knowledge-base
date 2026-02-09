@@ -4,7 +4,16 @@ Source: `wire/core/WireInputDataCookie.php`
 
 Inherits: `WireInputData`
 
-Provides methods for managing cookies via the $input->cookie API variable
+## Summary
+
+Provides methods for managing cookies via the `$input->cookie` API variable
+
+Common methods:
+- [`init()`](method-init.md)
+- [`options()`](method-options.md)
+- [`get()`](method-get.md)
+- [`set()`](method-set.md)
+- [`remove()`](method-remove.md)
 
 Enables getting, setting and removing cookies from the ProcessWire API using `$input->cookie`.
 
@@ -73,7 +82,7 @@ $config->cookieOptions = [
 ];
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct(array &$input = array(), bool $lazy = false)`](method-__construct.md) Construct
 - [`options(string|array|null $key = null, string|array|int|float|null $value = null): string|array|int|float|null|$this`](method-options.md) Get or set cookie options
 - [`__set(string $key, array|float|int|null|string $value)`](method-__set.md) Set a cookie (directly)

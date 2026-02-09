@@ -4,7 +4,16 @@ Source: `wire/core/PagesExportImport.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Export/Import Helpers
+
+Common methods:
+- [`getExportPath()`](method-getexportpath.md)
+- [`cleanupFiles()`](method-cleanupfiles.md)
+- [`exportZIP()`](method-exportzip.md)
+- [`importZIP()`](method-importzip.md)
+- [`exportJSON()`](method-exportjson.md)
 
 Pages Exporter/Importer
 Methods for exporting and importing pages from one installation to another.
@@ -16,7 +25,7 @@ $porter = new PagesExportImport(); // works in any version
 $porter = $pages->porter(); // 3.0.253+ only
 ~~~~~
 
-Methods:
+## Methods
 - [`getExportPath(string $subdir = ''): string`](method-getexportpath.md) Get the path where ZIP exports are stored
 - [`cleanupFiles(int $maxAge = 3600): int`](method-cleanupfiles.md) Remove files and directories in /site/assets/backups/PagesExportImport/ that are older than $maxAge
 - [`exportZIP(PageArray $items, array $options = array()): string`](method-exportzip.md) Export given PageArray to a ZIP file

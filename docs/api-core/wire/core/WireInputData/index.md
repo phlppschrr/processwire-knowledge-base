@@ -5,11 +5,19 @@ Source: `wire/core/WireInputData.php`
 Inherits: `Wire`
 Implements: `ArrayAccess`, `IteratorAggregate`, `Countable`
 
+## Summary
+
+WireInputData manages one of GET, POST, COOKIE, or whitelist
+
+Common methods:
+- [`setArray()`](method-setarray.md)
+- [`getArray()`](method-getarray.md)
+- [`set()`](method-set.md)
+- [`get()`](method-get.md)
+- [`findOne()`](method-findone.md)
 
 Groups:
 Group: [other](group-other.md)
-
-WireInputData manages one of GET, POST, COOKIE, or whitelist
 
 WireInputData and the WireInput class together form a simple
 front end to PHP's $_GET, $_POST, and $_COOKIE superglobals.
@@ -27,7 +35,7 @@ Each WireInputData is not instantiated unless specifically asked for.
 
 @link http://processwire.com/api/ref/input/ Offical $input API variable documentation
 
-Methods:
+## Methods
 - [`__construct(array &$input = array(), bool $lazy = false)`](method-__construct.md) Construct
 - [`setArray(array $input): $this`](method-setarray.md) Set associative array of variables to store
 - [`getArray(): array`](method-getarray.md) Get associative array of all input variables

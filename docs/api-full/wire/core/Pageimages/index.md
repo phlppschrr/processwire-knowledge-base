@@ -4,11 +4,19 @@ Source: `wire/core/Pageimages.php`
 
 Inherits: `Pagefiles`
 
+## Summary
+
+ProcessWire Pageimages
+
+Common methods:
+- [`isValidItem()`](method-isvaliditem.md)
+- [`add()`](method-add.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
+- [`getFile()`](method-getfile.md)
+- [`getAllVariations()`](method-getallvariations.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Pageimages
 
 Pageimages are a type of WireArray containing Pageimage objects. They represent the value of multi-image field in ProcessWire.
 
@@ -30,7 +38,7 @@ foreach($page->images as $image) {
 Typically a Pageimages object will be associated with a specific field attached to a Page.
 There may be multiple instances of Pageimages attached to a given Page (depending on what fields are in it's fieldgroup).
 
-Methods:
+## Methods
 - [`add(Pageimage|string $item): Pageimages|Pagefiles`](method-add.md) Add a new Pageimage item, or create one from given filename and add it.
 - [`getFile(string $name): null|Pagefile|Pageimage`](method-getfile.md) Does this field have the given file name? If so, return it, if not return null.
 - [`getAllVariations(): array`](method-getallvariations.md) Get an array of all image variations on this field indexed by original file name.

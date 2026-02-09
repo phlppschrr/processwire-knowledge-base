@@ -2,6 +2,8 @@
 
 Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 
+## Summary
+
 ProcessWire CommentListInterface and CommentList
 
 CommentListInterface defines an interface for CommentLists.

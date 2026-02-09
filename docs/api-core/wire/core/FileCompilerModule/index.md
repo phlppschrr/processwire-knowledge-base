@@ -5,11 +5,19 @@ Source: `wire/core/FileCompilerModule.php`
 Inherits: `WireData`
 Implements: `Module`, `ConfigurableModule`
 
+## Summary
+
+ProcessWire File Compiler base module
+
+Common methods:
+- [`init()`](method-init.md)
+- [`compile()`](method-compile.md)
+- [`compileMarkup()`](method-compilemarkup.md)
+- [`install()`](method-___install.md)
+- [`uninstall()`](method-___uninstall.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire File Compiler base module
 
 Provides the base class for FileCompiler modules
 
@@ -20,7 +28,7 @@ For example, FileCompilerTags.module
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`init()`](method-init.md) Optional method to initialize the module.
 - [`compile(string $data): string|array`](method-compile.md) The compile method processes the contents of a file
 - [`compileMarkup(string $data): string`](method-compilemarkup.md) Compile a section of markup

@@ -4,11 +4,20 @@ Source: `wire/core/WireSaveableItemsLookup.php`
 
 Inherits: `WireSaveableItems`
 
+## Summary
+
 ProcessWire WireSaveableItemsLookup
+
+Common methods:
+- [`getLookupTable()`](method-getlookuptable.md)
+- [`getLookupField()`](method-getlookupfield.md)
+- [`getLoadQuery()`](method-getloadquery.md)
+- [`load()`](method-___load.md)
+- [`initItem()`](method-inititem.md)
 
 Provides same functionality as WireSaveableItems except that this class includes joining/modification of a related lookup table
 
-Methods:
+## Methods
 - [`getLookupTable()`](method-getlookuptable.md) If a lookup table should be left joined, this method should return the table name
 - [`getLookupField()`](method-getlookupfield.md) If a lookup table should be left joined, this method returns the name of the array field in $data that contains multiple values
 - [`getLoadQuery(Selectors|string|null $selectors = null): DatabaseQuerySelect`](method-getloadquery.md) Get the DatabaseQuerySelect to perform the load operation of items

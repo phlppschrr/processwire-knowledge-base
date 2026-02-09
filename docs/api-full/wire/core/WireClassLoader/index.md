@@ -2,7 +2,16 @@
 
 Source: `wire/core/WireClassLoader.php`
 
+## Summary
+
 ProcessWire class autoloader
+
+Common methods:
+- [`path()`](method-path.md)
+- [`addExtension()`](method-addextension.md)
+- [`addSuffix()`](method-addsuffix.md)
+- [`addPrefix()`](method-addprefix.md)
+- [`addNamespace()`](method-addnamespace.md)
 
 Similar to a PSR-4 autoloader but with knowledge of modules.
 
@@ -12,7 +21,7 @@ This class loader is similar to a PSR-4 autoloader but with knowledge of modules
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct(ProcessWire $wire = null)`](method-__construct.md)
 - [`path(string $path): string`](method-path.md) Normalize a path
 - [`addExtension(string $ext)`](method-addextension.md) Add a recognized file extension for PHP files

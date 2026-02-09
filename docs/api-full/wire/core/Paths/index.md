@@ -4,12 +4,18 @@ Source: `wire/core/Paths.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire configuration paths and URLs
+
+Common methods:
+- [`normalizeSeparators()`](method-normalizeseparators.md)
+- [`set()`](method-set.md)
+- [`get()`](method-get.md)
 
 Groups:
 Group: [other](group-other.md)
 Group: [paths-only](group-paths-only.md)
-
-ProcessWire configuration paths and URLs
 
 Configuration paths and URLs (Paths class)
 Maintains lists of file paths or URLs, primarily used by the ProcessWire $config->paths and $urls API variables.
@@ -82,7 +88,7 @@ https://processwire.com/about/license/mit/
 
 The "http" may be optionally prepended to any property accessed from $config->urls (including those you add yourself).
 
-Methods:
+## Methods
 - [`__construct(string $root)`](method-__construct.md) Construct the Paths
 - [`set(string $key, mixed $value): Paths|WireData`](method-set.md) Set a new path/URL location
 - [`get(object|string $key): mixed|null|string`](method-get.md) Return the requested path or URL (functionally the same as direct access)

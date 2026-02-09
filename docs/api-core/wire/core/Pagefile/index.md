@@ -5,18 +5,26 @@ Source: `wire/core/Pagefile.php`
 Inherits: `WireData`
 Implements: `WireArrayItem`
 
+## Summary
+
+ProcessWire Pagefile
+
+Common methods:
+- [`setFilename()`](method-setfilename.md)
+- [`install()`](method-___install.md)
+- [`set()`](method-set.md)
+- [`setUser()`](method-setuser.md)
+- [`getUser()`](method-getuser.md)
 
 Groups:
 Group: [date-time](group-date-time.md)
 Group: [other](group-other.md)
 Group: [tags](group-tags.md)
 
-ProcessWire Pagefile
-
 Represents a single file item attached to a page, typically via a File Fieldtype.
 Pagefile objects are contained by a `Pagefiles` object.
 
-Methods:
+## Methods
 - [`__construct(Pagefiles $pagefiles, string $filename)`](method-__construct.md) Construct a new Pagefile
 - [`install(string $filename)`](method-___install.md) (hookable) Install this Pagefile
 - [`filedata(string|array|false|null $key = '', null|string|array|int|float $value = null): Pagefile|Pageimage|array|string|int|float|bool|null`](method-filedata.md) Get or set filedata
@@ -49,5 +57,5 @@ Methods:
 - [`__isset(string $key): bool`](method-__isset.md) Ensures that isset() and empty() work for dynamic class properties
 - [`__debugInfo(): array`](method-__debuginfo.md) Debug info
 
-Constants:
+## Constants
 - [`createdTemp = 10`](const-createdtemp.md)

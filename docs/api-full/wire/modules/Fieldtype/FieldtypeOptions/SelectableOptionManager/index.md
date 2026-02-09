@@ -4,12 +4,21 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionManager.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Selectable Option Manager, for FieldtypeOptions
+
+Common methods:
+- [`getRemovedOptionIDs()`](method-getremovedoptionids.md)
+- [`useLanguages()`](method-uselanguages.md)
+- [`getOptionsByID()`](method-getoptionsbyid.md)
+- [`getOptions()`](method-getoptions.md)
+- [`findOptionsByProperty()`](method-findoptionsbyproperty.md)
 
 Handles management of the fieldtype_options table and related field_[name] table
 to assist FieldtypeOptions module.
 
-Methods:
+## Methods
 - [`getRemovedOptionIDs(): array`](method-getremovedoptionids.md) Return the option IDs found to have been removed from the last setOptions() call.
 - [`useLanguages(): bool`](method-uselanguages.md) Whether or not multi-language support is in use
 - [`getOptionsByID(Field $field, array $ids): SelectableOptionArray|SelectableOption[]`](method-getoptionsbyid.md) Shortcut to get options by ID number
@@ -34,5 +43,5 @@ Methods:
 - [`install()`](method-install.md) Install
 - [`uninstall()`](method-uninstall.md) Uninstall
 
-Constants:
+## Constants
 - [`optionsTable = 'fieldtype_options'`](const-optionstable.md)

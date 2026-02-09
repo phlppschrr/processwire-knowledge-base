@@ -2,12 +2,16 @@
 
 Source: `wire/core/WireDatabaseBackup.php`
 
-ProcessWire Database Backup and Restore
-$backup
-$backup = $database->backups();
-This class intentionally does not have any external dependencies (other than PDO)
-so that it can be included by outside tools for restoring/exporting, with the main
-example of that being the ProcessWire installer.
+## Summary
+
+ProcessWire Database Backup and Restore `$backup` `$backup` = `$database->backups()`; This class intentionally does not have any external dependencies (other than PDO) so that it can be included by outside tools for restoring/exporting, with the main example of that being the ProcessWire installer.
+
+Common methods:
+- [`setWire()`](method-setwire.md)
+- [`setDatabaseConfig()`](method-setdatabaseconfig.md)
+- [`setDatabase()`](method-setdatabase.md)
+- [`getDatabase()`](method-getdatabase.md)
+- [`error()`](method-error.md)
 
 The recommended way to access these backup methods is via the `$database` API variable
 method `$database->backups()`, which returns a `WireDatabaseBackup` instance, however
@@ -46,7 +50,7 @@ if($success) {
 }
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct(string $path = '')`](method-__construct.md) Construct
 - [`setDatabaseConfig(array|Config|object $config): $this`](method-setdatabaseconfig.md) Set the database configuration information
 - [`setDatabase(\PDO|WireDatabasePDO $database)`](method-setdatabase.md) Set the PDO database connection

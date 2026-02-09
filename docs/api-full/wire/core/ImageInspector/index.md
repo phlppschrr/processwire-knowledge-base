@@ -4,7 +4,16 @@ Source: `wire/core/ImageInspector.php`
 
 Inherits: `WireData`
 
+## Summary
+
 Image Inspector
+
+Common methods:
+- [`inspect()`](method-inspect.md)
+- [`checkOrientation()`](method-checkorientation.md)
+- [`loadImageInfoPng()`](method-loadimageinfopng.md)
+- [`loadImageInfoGif()`](method-loadimageinfogif.md)
+- [`loadImageInfoJpg()`](method-loadimageinfojpg.md)
 
 Upgrades ImageSizer and ImageSizerEngines with more in depth information of imagefiles and -formats.
 
@@ -13,7 +22,7 @@ This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 
 For modules that extend this, use: autoload=false, singular=false.
 
-Methods:
+## Methods
 - [`__construct(string $filename = '')`](method-__construct.md) Construct
 - [`inspect(string $filename = '', bool $parseAppmarker = false): null|false|array`](method-inspect.md) parse Image and return information
 - [`checkOrientation($filename): array`](method-checkorientation.md) Check orientation (@horst)

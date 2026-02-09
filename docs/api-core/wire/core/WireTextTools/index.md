@@ -4,14 +4,23 @@ Source: `wire/core/WireTextTools.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Text Tools
+
+Common methods:
+- [`markupToText()`](method-markuptotext.md)
+- [`fixUnclosedTags()`](method-fixunclosedtags.md)
+- [`collapse()`](method-collapse.md)
+- [`truncate()`](method-truncate.md)
+- [`truncateSentenceTests()`](method-truncatesentencetests.md)
 
 Specific text and markup tools for ProcessWire $sanitizer and elsewhere.
 
 
 @since 3.0.101
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`markupToText(string $str, array $options = array()): string`](method-markuptotext.md) Convert HTML markup to readable text
 - [`fixUnclosedTags(string $str, bool $remove = true, array $options = array()): string`](method-fixunclosedtags.md) Remove (or close) unclosed HTML tags from given string

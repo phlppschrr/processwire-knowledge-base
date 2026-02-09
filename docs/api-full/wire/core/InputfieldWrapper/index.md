@@ -5,14 +5,21 @@ Source: `wire/core/InputfieldWrapper.php`
 Inherits: `Inputfield`
 Implements: `Countable`, `IteratorAggregate`
 
+## Summary
+
+ProcessWire InputfieldWrapper
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`get()`](method-get.md)
+- [`add()`](method-add.md)
+- [`new()`](method-___new.md)
+- [`import()`](method-import.md)
 
 Groups:
 Group: [manipulation](group-manipulation.md)
 Group: [output](group-output.md)
 Group: [properties](group-properties.md)
-
-ProcessWire InputfieldWrapper
-
 
 ## About Inputfieldwrapper
 A type of Inputfield that is designed specifically to wrap other Inputfields.
@@ -23,7 +30,7 @@ A type of Inputfield that contains other Inputfield objects as children. Commonl
 InputfieldWrapper is not designed to render an Inputfield specifically, but you can set a value attribute
 containing content that will be rendered before the wrapper.
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct the Inputfield, setting defaults for all properties
 - [`wired()`](method-wired.md) Wired to API
 - [`get(string $key): Inputfield|mixed`](method-get.md) Get a child Inputfield having a name attribute matching the given $key.

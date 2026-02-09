@@ -4,15 +4,23 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCESettings.php
 
 Inherits: `InputfieldTinyMCEClass`
 
+## Summary
+
+InputfieldTinyMCETools
+
+Common methods:
+- [`getSettings()`](method-getsettings.md)
+- [`getDefaults()`](method-getdefaults.md)
+- [`getOriginalDefaults()`](method-getoriginaldefaults.md)
+- [`getAddDefaults()`](method-getadddefaults.md)
+- [`applyPlugins()`](method-applyplugins.md)
 
 Groups:
 Group: [other](group-other.md)
 
-InputfieldTinyMCETools
-
 Helper for managing TinyMCE settings and defaults
 
-Methods:
+## Methods
 - [`getSettings(array|null $defaults = null, string $cacheKey = ''): array`](method-getsettings.md) Get settings from Inputfield vary from the $defaults
 - [`getDefaults($key = ''): array`](method-getdefaults.md) Default settings for ProcessWire.config.InputfieldTinyMCE
 - [`getOriginalDefaults(string $key = ''): array|mixed|null`](method-getoriginaldefaults.md) Get original defaults from source JSON, prior to being overriden by module default settings

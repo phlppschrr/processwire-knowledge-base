@@ -4,7 +4,16 @@ Source: `wire/core/WireCache.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire WireCache
+
+Common methods:
+- [`cacher()`](method-cacher.md)
+- [`preload()`](method-preload.md)
+- [`preloadFor()`](method-preloadfor.md)
+- [`get()`](method-get.md)
+- [`renderCacheValue()`](method-rendercachevalue.md)
 
 Simple cache for storing strings (encoded or otherwise) and serves as $cache API var
 
@@ -19,7 +28,7 @@ $value = $cache->get('foo', 3600, function() {
 });
 ~~~~~
 
-Methods:
+## Methods
 - [`cacher(): WireCacheInterface`](method-cacher.md) Get the current WireClassInterface instance
 - [`preload(array $names, int|string|null $expire = null)`](method-preload.md) Preload the given caches, so that they will be returned without query on the next get() call
 - [`preloadFor(object|string $ns, int|string|null $expire = null)`](method-preloadfor.md) Preload all caches for the given object or namespace
@@ -43,7 +52,7 @@ Methods:
 - [`setCacheModule(WireCacheInterface $module)`](method-setcachemodule.md) Set WireCache module to use for caching
 - [`getCacheModule(): WireCacheInterface`](method-getcachemodule.md) Get WireCache module that is currently being used
 
-Constants:
+## Constants
 - [`defaultCacheClass = 'WireCacheDatabase'`](const-defaultcacheclass.md)
 - [`expireNever = '2010-04-08 03:10:10'`](const-expirenever.md)
 - [`expireNever = '2010-04-08 03:10:10'`](const-expirenever.md)

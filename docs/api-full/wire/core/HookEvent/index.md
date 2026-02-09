@@ -4,8 +4,16 @@ Source: `wire/core/HookEvent.php`
 
 Inherits: `WireData`
 
+## Summary
+
 ProcessWire HookEvent
 
+Common methods:
+- [`arguments()`](method-arguments.md)
+- [`argumentsByName()`](method-argumentsbyname.md)
+- [`setArgument()`](method-setargument.md)
+- [`getArgumentNames()`](method-getargumentnames.md)
+- [`removeHook()`](method-removehook.md)
 
 Instances of HookEvent are passed to Hook handlers when their requested method has been called.
 
@@ -31,7 +39,7 @@ HookEvents have the following properties available:
 - `$when: string` In an active hook, contains either the string 'before' or 'after', indicating whether it is executing before or after the hooked method.
 - `$cancelHooks: bool` When true, all remaining hooks will be cancelled, making this HookEvent the last one (be careful with this).
 
-Methods:
+## Methods
 - [`__construct(array $eventData = array())`](method-__construct.md) Construct the HookEvent and establish default values
 - [`arguments(int $n = null, mixed $value = null): array|null|mixed`](method-arguments.md) Retrieve or set a hooked function argument
 - [`argumentsByName(string $n = ''): mixed|array`](method-argumentsbyname.md) Returns an array of all arguments indexed by name, or the value of a single specified argument

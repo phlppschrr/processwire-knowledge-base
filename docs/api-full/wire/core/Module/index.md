@@ -2,7 +2,15 @@
 
 Source: `wire/core/Module.php`
 
+## Summary
+
 ProcessWire Module Interface
+
+Common methods:
+- [`className()`](method-classname.md)
+- [`className()`](method-classname.md)
+- [`className()`](method-classname.md)
+- [`className()`](method-classname.md)
 
 Provides the base interfaces required by modules.
 
@@ -341,7 +349,7 @@ void init() Called when the module is loaded, immediately after any configuratio
 void ready() For autoload modules only, called when the ProcessWire API is ready to use.
 void setConfigData(array $data) Modules may optionally provide this method to receive config data from ProcessWire.
 
-Methods:
+## Methods
 - [`className($options = null): array`](method-classname.md) Return an array of module information
 - [`className($options = null)`](method-classname.md) Method to initialize the module.
 - [`className($options = null)`](method-classname.md) Method called when API is fully ready and the $page is determined and set, but before a page is rendered.

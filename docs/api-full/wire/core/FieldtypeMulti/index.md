@@ -4,11 +4,19 @@ Source: `wire/core/FieldtypeMulti.php`
 
 Inherits: `Fieldtype`
 
+## Summary
+
+ProcessWire FieldtypeMulti
+
+Common methods:
+- [`getDatabaseSchema()`](method-getdatabaseschema.md)
+- [`getSelectorInfo()`](method-___getselectorinfo.md)
+- [`getCompatibleFieldtypes()`](method-___getcompatiblefieldtypes.md)
+- [`getBlankValue()`](method-getblankvalue.md)
+- [`sanitizeValue()`](method-sanitizevalue.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire FieldtypeMulti
 
 Interface and some functionality for Fieldtypes that can contain multiple values.
 
@@ -23,7 +31,7 @@ To support pagination: Both the `$useOrderByCols` and the `$usePagination` prope
 boolean true, indicating the Fieldtype supports pagination (and sorting). When enabled, the wakeupValue() method will receive
 pagination information in the value it is given. All other aspects of pagination must be handled by the individual Fieldtype.
 
-Methods:
+## Methods
 - [`getDatabaseSchema(Field $field): array`](method-getdatabaseschema.md) Modify the default schema provided by Fieldtype to include a 'sort' field, and integrate that into the primary key.
 - [`getSelectorInfo(Field $field, array $data = array()): array`](method-___getselectorinfo.md) (hookable) Return array with information about what properties and operators can be used with this field
 - [`getCompatibleFieldtypes(Field $field): Fieldtypes|null`](method-___getcompatiblefieldtypes.md) (hookable) Get an array of Fieldtypes that are compatible with this one (i.e. ones the user may change the type to)
@@ -43,5 +51,5 @@ Methods:
 - [`getMatchQuery(PageFinderDatabaseQuerySelect $query, string $table, string $subfield, string $operator, mixed $value): PageFinderDatabaseQuerySelect|DatabaseQuerySelect`](method-getmatchquery.md) Get the query that matches a Fieldtype table's data with a given value
 - [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get Inputfields for advanced settings of the Field and Fieldtype
 
-Constants:
+## Constants
 - [`multiValueSeparator = "\0,"`](const-multivalueseparator.md)

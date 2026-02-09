@@ -5,7 +5,16 @@ Source: `wire/core/Fieldtype.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
 ProcessWire Fieldtype Base
+
+Common methods:
+- [`init()`](method-init.md)
+- [`setLastAccessField()`](method-setlastaccessfield.md)
+- [`getLastAccessField()`](method-getlastaccessfield.md)
+- [`isSingular()`](method-issingular.md)
+- [`isAutoload()`](method-isautoload.md)
 
 Abstract base class from which all Fieldtype modules are descended from.
 
@@ -54,7 +63,7 @@ of most other methods provided in this Fieldtype class accounts for most situati
 - `$shortName: string` Short name of Fieldtype, which excludes the "Fieldtype" prefix.
 - `$longName: string` Long name of Fieldtype, which is typically the module title.
 
-Methods:
+## Methods
 - [`getInputfield(Page $page, Field $field): Inputfield|null`](method-getinputfield.md) Return new instance of the Inputfield module associated with this Fieldtype.
 - [`getConfigInputfields(Field $field): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get any Inputfields used for configuration of this Fieldtype.
 - [`getConfigArray(Field $field): array`](method-___getconfigarray.md) (hookable) Same as getConfigInputfields but with definition as an array instead

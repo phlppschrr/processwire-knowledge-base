@@ -4,7 +4,16 @@ Source: `wire/core/ProcessWire.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire API Bootstrap
+
+Common methods:
+- [`setConfig()`](method-setconfig.md)
+- [`setConfigDebug()`](method-setconfigdebug.md)
+- [`getHttpHost()`](method-gethttphost.md)
+- [`load()`](method-load.md)
+- [`initVar()`](method-initvar.md)
 
 Represents an instance of ProcessWire connected with a set of API variables.
 This class boots a ProcessWire instance. The current ProcessWire instance is represented by the `$wire` API variable.
@@ -53,7 +62,7 @@ $wire = new ProcessWire('/server/path/', 'https://hostname/url/');
 - [`ready()`](method-___ready.md)
 - [`finished(array $data)`](method-___finished.md)
 
-Methods:
+## Methods
 - [`__construct(Config|string|null $config = null, string $rootURL = '/')`](method-__construct.md) Create a new ProcessWire instance
 - [`__destruct()`](method-__destruct.md) Destruct
 - [`setConfig(Config $config)`](method-setconfig.md) Populate ProcessWire's configuration with runtime and optional variables
@@ -79,7 +88,7 @@ Methods:
 - [`getRootPath(bool|string $rootPath = ''): string`](method-getrootpath.md) Get root path, check it, and optionally auto-detect it if not provided
 - [`buildConfig(string $rootPath = '', string $rootURL = null, array $options = array()): Config`](method-buildconfig.md) Static method to build a Config object for booting ProcessWire
 
-Constants:
+## Constants
 - [`versionMajor = 3`](const-versionmajor.md)
 - [`versionMinor = 0`](const-versionminor.md)
 - [`versionRevision = 255`](const-versionrevision.md)

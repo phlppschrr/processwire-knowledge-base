@@ -4,9 +4,18 @@ Source: `wire/core/WireTempDir.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Temporary Directory Manager
 
-Methods:
+Common methods:
+- [`init()`](method-init.md)
+- [`classRootPath()`](method-classrootpath.md)
+- [`createName()`](method-createname.md)
+- [`setMaxAge()`](method-setmaxage.md)
+- [`setRemove()`](method-setremove.md)
+
+## Methods
 - [`__construct(string|object $name = '', string $basePath = '')`](method-__construct.md) Construct
 - [`__destruct()`](method-__destruct.md) Destruct
 - [`init(string|object $name = '', string $basePath = ''): string`](method-init.md) Initialize temporary directory
@@ -25,5 +34,5 @@ Methods:
 - [`maintenance(): bool`](method-maintenance.md) Perform maintenance by cleaning up old temporary directories
 - [`create(string $name = '', string $basePath = ''): string`](method-create.md)
 
-Constants:
+## Constants
 - [`hiddenFileName = '.wtd'`](const-hiddenfilename.md)

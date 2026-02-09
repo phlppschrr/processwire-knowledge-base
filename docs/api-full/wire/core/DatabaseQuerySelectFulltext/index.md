@@ -4,11 +4,19 @@ Source: `wire/core/DatabaseQuerySelectFulltext.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire DatabaseQuerySelectFulltext
+
+Common methods:
+- [`getQuery()`](method-getquery.md)
+- [`tableField()`](method-tablefield.md)
+- [`allowOrder()`](method-alloworder.md)
+- [`allowStopwords()`](method-allowstopwords.md)
+- [`matchType()`](method-matchtype.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire DatabaseQuerySelectFulltext
 
 A wrapper for SELECT SQL queries using FULLTEXT indexes
 
@@ -27,7 +35,7 @@ to build a complex query without worrying about correct syntax placement.
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct(DatabaseQuerySelect $query)`](method-__construct.md) Construct
 - [`__get(string $name): mixed|string`](method-__get.md)
 - [`getQuery(): DatabaseQuerySelect`](method-getquery.md) Get the query that was provided to the constructor
@@ -68,5 +76,5 @@ Methods:
 - [`getWordRoot(string $word): string`](method-getwordroot.md) Get root of word (currently not implemented)
 - [`forceLike(bool|null $forceLike = null): bool`](method-forcelike.md) Call forceLike(true) to force use of LIKE, or omit argument to get current setting
 
-Constants:
+## Constants
 - [`maxQueryValueLength = 500`](const-maxqueryvaluelength.md)

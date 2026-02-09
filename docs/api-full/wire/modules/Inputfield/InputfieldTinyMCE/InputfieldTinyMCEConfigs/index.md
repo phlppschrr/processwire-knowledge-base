@@ -4,11 +4,20 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEConfigs.php`
 
 Inherits: `InputfieldTinyMCEClass`
 
+## Summary
+
 InputfieldTinyMCEConfigHelper
+
+Common methods:
+- [`label()`](method-label.md)
+- [`getMceToolbars()`](method-getmcetoolbars.md)
+- [`getSkinOptions()`](method-getskinoptions.md)
+- [`getContentCssOptions()`](method-getcontentcssoptions.md)
+- [`getFeaturesOptions()`](method-getfeaturesoptions.md)
 
 Helper for managing configuration settings in TinyMCE
 
-Methods:
+## Methods
 - [`label(string $name): string`](method-label.md) Get shared text label
 - [`getMceToolbars(bool $splitToArray = true): array|string[]`](method-getmcetoolbars.md) Get TinyMCE toolbar names and details
 - [`getSkinOptions(): string[]`](method-getskinoptions.md) Get skin options (array of name => label)

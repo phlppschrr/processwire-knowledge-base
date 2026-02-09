@@ -4,7 +4,16 @@ Source: `wire/core/Notices.php`
 
 Inherits: `WireArray`
 
+## Summary
+
 ProcessWire Notices
+
+Common methods:
+- [`init()`](method-init.md)
+- [`isValidItem()`](method-isvaliditem.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
+- [`allowNotice()`](method-allownotice.md)
+- [`formatNotice()`](method-formatnotice.md)
 
 Notices
 $notices
@@ -49,7 +58,7 @@ foreach($notices as $notice) {
 }
 ~~~~~
 
-Methods:
+## Methods
 - [`allowNotice(Notice $item): bool`](method-allownotice.md) Allow given Notice to be added?
 - [`formatNotice(Notice $item)`](method-formatnotice.md) Format Notice text
 - [`add(Notice $item): Notices|WireArray`](method-add.md) Add a Notice object

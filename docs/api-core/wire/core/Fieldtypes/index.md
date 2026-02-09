@@ -4,16 +4,24 @@ Source: `wire/core/Fieldtypes.php`
 
 Inherits: `WireArray`
 
+## Summary
+
+ProcessWire Fieldtypes
+
+Common methods:
+- [`init()`](method-init.md)
+- [`preload()`](method-preload.md)
+- [`isValidItem()`](method-isvaliditem.md)
+- [`isValidKey()`](method-isvalidkey.md)
+- [`getItemKey()`](method-getitemkey.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire Fieldtypes
-
 Maintains a collection of Fieldtype modules.
 $fieldtypes
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`init()`](method-init.md) Construct the $fieldtypes API var (load all Fieldtype modules into it)
 - [`preload()`](method-preload.md) Convert all ModulePlaceholders to Fieldtype modules

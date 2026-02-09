@@ -4,18 +4,26 @@ Source: `wire/core/Templates.php`
 
 Inherits: `WireSaveableItems`
 
+## Summary
+
+ProcessWire Templates
+
+Common methods:
+- [`init()`](method-init.md)
+- [`getAll()`](method-getall.md)
+- [`getWireArray()`](method-getwirearray.md)
+- [`makeItem()`](method-makeitem.md)
+- [`loadAllLazyItems()`](method-loadalllazyitems.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Templates
 
 Manages and provides access to all the Template instances
 
 
 Manages and provides access to all the Templates.
 
-Methods:
+## Methods
 - [`__construct(Fieldgroups $fieldgroups)`](method-__construct.md) Construct the Templates
 - [`add(string $name, array $properties = array()): Template`](method-add.md) Add and save new template (and fieldgroup) with given name and return it
 - [`get(string|int $key): Template|null|string`](method-get.md) Get a template by name or ID

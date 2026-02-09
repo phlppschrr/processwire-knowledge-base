@@ -4,9 +4,18 @@ Source: `wire/core/PagesRaw.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Raw Finder
 
-Methods:
+Common methods:
+- [`init()`](method-init.md)
+- [`find()`](method-find.md)
+- [`splitFields()`](method-splitfields.md)
+- [`findNativeFields()`](method-findnativefields.md)
+- [`findCustom()`](method-findcustom.md)
+
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`init($selector, string|array|Field $field, array $options)`](method-init.md)
 - [`find(string|array|Selectors $selector, string|Field|int|array $field = '', array $options = array()): array`](method-find.md) Find pages and return raw data from them in a PHP array

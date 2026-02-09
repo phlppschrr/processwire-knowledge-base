@@ -4,11 +4,19 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentNotifications.php`
 
 Inherits: `Wire`
 
+## Summary
+
+Common methods:
+- [`setMailer()`](method-setmailer.md)
+- [`newMail()`](method-newmail.md)
+- [`sendAdminNotificationEmail()`](method-___sendadminnotificationemail.md)
+- [`parseEmails()`](method-parseemails.md)
+- [`checkActions()`](method-checkactions.md)
 
 Groups:
 Group: [other](group-other.md)
 
-Methods:
+## Methods
 - [`setMailer(string $mailer)`](method-setmailer.md) Set name of WireMail module to use for sending notifications
 - [`newMail(): WireMail`](method-newmail.md)
 - [`sendAdminNotificationEmail(Comment $comment): int`](method-___sendadminnotificationemail.md) (hookable) Send notification email to specified admin to review the comment

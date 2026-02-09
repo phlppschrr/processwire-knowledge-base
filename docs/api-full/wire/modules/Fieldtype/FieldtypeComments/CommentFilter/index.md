@@ -4,11 +4,15 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentFilter.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire FieldtypeComments > CommentFilter
+
+Common methods:
+- [`httpPost()`](method-httppost.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire FieldtypeComments > CommentFilter
 
 A base class for filtering comments from an external service.
 
@@ -17,5 +21,5 @@ serve as an interface for adding more in the future.
 
 Note that portions of code in here arefrom Akismet API examples.
 
-Methods:
+## Methods
 - [`httpPost($request, $host, $path, int $port = 80): array|string`](method-httppost.md) Send an HTTP POST request

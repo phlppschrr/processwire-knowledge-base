@@ -4,7 +4,16 @@ Source: `wire/core/PagesPathFinder.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Path Finder
+
+Common methods:
+- [`init()`](method-init.md)
+- [`get()`](method-get.md)
+- [`getPage()`](method-getpage.md)
+- [`getPagesRow()`](method-getpagesrow.md)
+- [`applyPagesRow()`](method-applypagesrow.md)
 
 Pages Path Finder
 $pages->pathFinder
@@ -23,7 +32,7 @@ afterwards when appropriate.
 Determine how to handle case where this class is called before
 LanguageSupport module has been loaded (for multi-language page names)
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`init(string $path, array $options)`](method-init.md) Init for new get()
 - [`get(string $path, array $options = array()): array`](method-get.md) Get verbose array of info about a given page path

@@ -4,11 +4,20 @@ Source: `wire/modules/Process/ProcessPageLister/ProcessPageListerBookmarks.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Class ProcessPageListerBookmarks
+
+Common methods:
+- [`bookmarks()`](method-bookmarks.md)
+- [`setPage()`](method-setpage.md)
+- [`setUser()`](method-setuser.md)
+- [`buildBookmarkListForm()`](method-buildbookmarklistform.md)
+- [`buildBookmarkDeleteForm()`](method-buildbookmarkdeleteform.md)
 
 Helper class for managing ProcessPageLister bookmarks
 
-Methods:
+## Methods
 - [`__construct(ProcessPageLister $lister)`](method-__construct.md) Construct
 - [`bookmarks(): ListerBookmarks`](method-bookmarks.md)
 - [`setPage(Page $page)`](method-setpage.md) Set the Lister page that bookmarks will be for

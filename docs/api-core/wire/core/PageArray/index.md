@@ -5,11 +5,19 @@ Source: `wire/core/PageArray.php`
 Inherits: `PaginatedArray`
 Implements: `WirePaginatable`
 
+## Summary
+
+ProcessWire PageArray
+
+Common methods:
+- [`isValidItem()`](method-isvaliditem.md)
+- [`isValidKey()`](method-isvalidkey.md)
+- [`getItemKey()`](method-getitemkey.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
+- [`makeNew()`](method-makenew.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire PageArray
 
 PageArray provides an array-like means for storing PageReferences and is utilized throughout ProcessWire.
 
@@ -34,7 +42,7 @@ $a = PageArray($page); // create + add one page
 $a = PageArray([ $page1, $page2, $page3 ]); // create + add pages
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`add(Page|PageArray|int $item): $this`](method-add.md) Add one or more Page objects to this PageArray.
 - [`getSelectors(bool $getString = false): Selectors|string|null`](method-getselectors.md) Return the Selectors that led to this PageArray, or null if not set/applicable.

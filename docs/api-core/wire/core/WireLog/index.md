@@ -4,11 +4,19 @@ Source: `wire/core/WireLog.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire Log
+
+Common methods:
+- [`message()`](method-message.md)
+- [`error()`](method-error.md)
+- [`warning()`](method-warning.md)
+- [`save()`](method-___save.md)
+- [`deprecatedCall()`](method-deprecatedcall.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Log
 
 WireLog represents the ProcessWire $log API variable.
 It is an API-friendly interface to the FileLog class.
@@ -19,7 +27,7 @@ Enables creation of logs, logging of events, and management of logs.
 
 @todo option to disable logs by name
 
-Methods:
+## Methods
 - [`message(string $text, bool|int $flags = 0): Wire|WireLog`](method-message.md) Record an informational or 'success' message in the message log (messages.txt)
 - [`error(string $text, int|bool $flags = 0): Wire|WireLog`](method-error.md) Record an error message in the error log (errors.txt)
 - [`warning(string $text, int|bool $flags = 0): Wire|WireLog`](method-warning.md) Record a warning message in the warnings log (warnings.txt)

@@ -4,15 +4,23 @@ Source: `wire/core/TemplateFile.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire TemplateFile
+
+Common methods:
+- [`setFilename()`](method-setfilename.md)
+- [`setPrependFilename()`](method-setprependfilename.md)
+- [`setAppendFilename()`](method-setappendfilename.md)
+- [`setThrowExceptions()`](method-setthrowexceptions.md)
+- [`setTrim()`](method-settrim.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire TemplateFile
-
 A template file that will be loaded and executed as PHP and its output returned.
 
-Methods:
+## Methods
 - [`__construct(string $filename = '')`](method-__construct.md) Construct the template file
 - [`setFilename(string $filename): bool`](method-setfilename.md) Sets the template file name, replacing whatever was set in the constructor
 - [`setPrependFilename(string $filename): bool`](method-setprependfilename.md) Set a file to prepend to the template file at render time

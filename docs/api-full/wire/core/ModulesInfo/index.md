@@ -4,13 +4,21 @@ Source: `wire/core/ModulesInfo.php`
 
 Inherits: `ModulesClass`
 
+## Summary
+
+ProcessWire Modules: Info
+
+Common methods:
+- [`moduleInfoCacheEmpty()`](method-moduleinfocacheempty.md)
+- [`moduleInfoCacheHas()`](method-moduleinfocachehas.md)
+- [`moduleInfoCache()`](method-moduleinfocache.md)
+- [`moduleInfoCacheVerbose()`](method-moduleinfocacheverbose.md)
+- [`getModuleInfoExternal()`](method-getmoduleinfoexternal.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire Modules: Info
-
-Methods:
+## Methods
 - [`moduleInfoCacheEmpty(): bool`](method-moduleinfocacheempty.md) Is the module info cache empty?
 - [`moduleInfoCacheHas(int $moduleID): bool`](method-moduleinfocachehas.md) Does the module info cache have an entry for given module ID?
 - [`getModuleInfoExternal(string $moduleName): array`](method-getmoduleinfoexternal.md) Retrieve module info from ModuleName.info.json or ModuleName.info.php
@@ -29,7 +37,7 @@ Methods:
 - [`moduleVersionChanged(Module $module, int|string $fromVersion, int|string $toVersion)`](method-moduleversionchanged.md) Module version changed
 - [`getNamespaces(): array`](method-getnamespaces.md) Get an array of all unique, non-default, non-root module namespaces mapped to directory names
 
-Constants:
+## Constants
 - [`moduleInfoCacheName = 'Modules.info'`](const-moduleinfocachename.md)
 - [`moduleInfoCacheVerboseName = 'ModulesVerbose.info'`](const-moduleinfocacheverbosename.md)
 - [`moduleInfoCacheUninstalledName = 'ModulesUninstalled.info'`](const-moduleinfocacheuninstalledname.md)

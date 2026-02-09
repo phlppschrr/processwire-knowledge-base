@@ -4,7 +4,16 @@ Source: `wire/core/PagesParents.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Parents
+
+Common methods:
+- [`getParents()`](method-getparents.md)
+- [`findParents()`](method-findparents.md)
+- [`findParentIDs()`](method-findparentids.md)
+- [`save()`](method-save.md)
+- [`rebuild()`](method-rebuild.md)
 
 Pages Parents
 $pages->parents
@@ -21,7 +30,7 @@ $numRows = $pages->parents()->rebuildAll();
 
 @since 3.0.156
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`getParents(Page|int $page, array $options = array()): array|PageArray`](method-getparents.md) Get parents for given Page and/or specific columns from them
 - [`findParents(array $options = array()): array|PageArray`](method-findparents.md) Find all pages that have children

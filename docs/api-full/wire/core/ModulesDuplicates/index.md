@@ -4,12 +4,21 @@ Source: `wire/core/ModulesDuplicates.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Modules Duplicates
+
+Common methods:
+- [`numNewDuplicates()`](method-numnewduplicates.md)
+- [`getCurrent()`](method-getcurrent.md)
+- [`hasDuplicate()`](method-hasduplicate.md)
+- [`addDuplicate()`](method-addduplicate.md)
+- [`addDuplicates()`](method-addduplicates.md)
 
 Provides functions for managing sitautions where more than one
 copy of the same module is intalled. This is a helper for the Modules class.
 
-Methods:
+## Methods
 - [`numNewDuplicates(): int`](method-numnewduplicates.md) Return quantity of new duplicates found while loading modules
 - [`getCurrent($className): string|null`](method-getcurrent.md) Get the current duplicate in use (string) or null if not specified
 - [`hasDuplicate(string $className, string $pathname = ''): bool`](method-hasduplicate.md) Does the given module class have a duplicate?

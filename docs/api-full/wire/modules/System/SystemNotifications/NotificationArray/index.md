@@ -4,11 +4,20 @@ Source: `wire/modules/System/SystemNotifications/NotificationArray.php`
 
 Inherits: `WireArray`
 
+## Summary
+
 Contains multiple Event objects for a single page
+
+Common methods:
+- [`isValidItem()`](method-isvaliditem.md)
+- [`add()`](method-add.md)
+- [`get()`](method-get.md)
+- [`getBy()`](method-getby.md)
+- [`save()`](method-save.md)
 
 @class NotificationArray
 
-Methods:
+## Methods
 - [`__construct(Page $page)`](method-__construct.md) Create a new NotificationArray
 - [`isValidItem(Notification $item): bool`](method-isvaliditem.md) Template method from WireArray
 - [`add(Notification $item): self|NotificationArray|WireArray`](method-add.md) Add a Notification instance to this NotificationArray

@@ -4,13 +4,21 @@ Source: `wire/modules/LanguageSupport/Language.php`
 
 Inherits: `Page`
 
+## Summary
+
+A type of Page that represents a single Language in ProcessWire
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`get()`](method-get.md)
+- [`translator()`](method-translator.md)
+- [`setIsDefaultLanguage()`](method-setisdefaultlanguage.md)
+- [`isDefault()`](method-isdefault.md)
 
 Groups:
 Group: [other](group-other.md)
 
-A type of Page that represents a single Language in ProcessWire
-
-Methods:
+## Methods
 - [`__construct(?Template $tpl = null)`](method-__construct.md) Construct a new Language instance
 - [`wired()`](method-wired.md) Wired to API
 - [`isDefault(): bool`](method-isdefault.md) Returns whether or not this is the default language

@@ -4,12 +4,21 @@ Source: `wire/core/WireUpload.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire WireUpload
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`init()`](method-init.md)
+- [`execute()`](method-execute.md)
+- [`getPhpFiles()`](method-getphpfiles.md)
+- [`getUploadDir()`](method-getuploaddir.md)
 
 Saves uploads of single or multiple files, saving them to the destination path.
 If the destination path does not exist, it will be created.
 
-Methods:
+## Methods
 - [`__construct(string $name)`](method-__construct.md) Construct with the given input name
 - [`wired()`](method-wired.md) Wired to API
 - [`init()`](method-init.md) Initialize

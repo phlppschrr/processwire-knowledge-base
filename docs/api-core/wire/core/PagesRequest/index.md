@@ -4,11 +4,19 @@ Source: `wire/core/PagesRequest.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire Pages Request
+
+Common methods:
+- [`init()`](method-init.md)
+- [`setPage()`](method-setpage.md)
+- [`getPage()`](method-___getpage.md)
+- [`getPageInfo()`](method-getpageinfo.md)
+- [`getPageForUser()`](method-___getpageforuser.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Pages Request
 
 Pages Request
 $pages->request
@@ -18,7 +26,7 @@ Methods in this class should be accessed from `$pages->request()`, i.e.
 $page = $pages->request()->getPage();
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`init()`](method-init.md) Initialize
 - [`setPage(Page|NullPage|null $page): Page|NullPage|null`](method-setpage.md) Set current request page

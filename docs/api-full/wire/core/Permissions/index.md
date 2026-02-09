@@ -4,15 +4,23 @@ Source: `wire/core/Permissions.php`
 
 Inherits: `PagesType`
 
+## Summary
+
+The Permissions class serves as the `$permissions` API variable.
+
+Common methods:
+- [`has()`](method-has.md)
+- [`getPermissionNameIds()`](method-getpermissionnameids.md)
+- [`save()`](method-___save.md)
+- [`delete()`](method-___delete.md)
+- [`add()`](method-___add.md)
 
 Groups:
 Group: [other](group-other.md)
 
-The Permissions class serves as the $permissions API variable.
-
 Provides management of all Permission pages independent of users, for access control.
 
-Methods:
+## Methods
 - [`has(string $name): bool`](method-has.md) Does the system have a permission with the given name?
 - [`save(Page $page): bool`](method-___save.md) (hookable) Save a Permission
 - [`delete(Page $page, bool $recursive = false): bool`](method-___delete.md) (hookable) Permanently delete a Permission

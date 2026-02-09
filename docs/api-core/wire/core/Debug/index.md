@@ -2,6 +2,8 @@
 
 Source: `wire/core/Debug.php`
 
+## Summary
+
 ProcessWire Debug
 
 Provides methods useful for debugging or development.

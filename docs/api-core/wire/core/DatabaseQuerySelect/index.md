@@ -4,11 +4,19 @@ Source: `wire/core/DatabaseQuerySelect.php`
 
 Inherits: `DatabaseQuery`
 
+## Summary
+
+ProcessWire DatabaseQuerySelect
+
+Common methods:
+- [`getQuery()`](method-getquery.md)
+- [`orderby()`](method-orderby.md)
+- [`getQuerySelect()`](method-getqueryselect.md)
+- [`getQueryGroupby()`](method-getquerygroupby.md)
+- [`getQueryLimit()`](method-getquerylimit.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire DatabaseQuerySelect
 
 A wrapper for SELECT SQL queries.
 
@@ -27,7 +35,7 @@ Below are Properties populated by DatabaseQuerySelect objects created by PageFin
 This is what gets passed to Fieldtype::getMatchQuery() method calls as properties
 available from the $query argument.
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Setup the components of a SELECT query
 - [`getQuery()`](method-getquery.md) Return the resulting SQL ready for execution with the database
 - [`orderby(string|array $value, bool $prepend = false): $this`](method-orderby.md) Add an ORDER BY section to the query

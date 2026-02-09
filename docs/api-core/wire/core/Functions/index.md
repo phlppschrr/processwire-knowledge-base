@@ -10,7 +10,7 @@ Common API functions useful outside of class scope
 These shortcuts for creating WireArray types are available in ProcessWire 3.0.123 and newer.
 These file system functions are procedural versions of some of those provided by the `$files` API variable.
 
-Methods:
+## Methods
 - [`wire(string $name = 'wire'): null|ProcessWire|Wire|Session|Page|Pages|Modules|User|Users|Roles|Permissions|Templates|Fields|Fieldtypes|Sanitizer|Config|Notices|WireDatabasePDO|WireHooks|WireDateTime|WireFileTools|WireMailTools|WireInput|string|mixed`](method-wire.md) Return an API variable, or return current ProcessWire instance if given no arguments
 - [`wireInstance(?Wire $wire = null): ProcessWire`](method-wireinstance.md) Get or set the current ProcessWire instance
 - [`wireMkdir(string $path, bool $recursive = false, string $chmod = null): bool`](method-wiremkdir.md) Create a directory (optionally recursively) that is writable to ProcessWire and uses the $config chmod settings

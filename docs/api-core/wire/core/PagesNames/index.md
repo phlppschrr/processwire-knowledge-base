@@ -4,7 +4,16 @@ Source: `wire/core/PagesNames.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Names
+
+Common methods:
+- [`setupNewPageName()`](method-setupnewpagename.md)
+- [`hasAutogenName()`](method-hasautogenname.md)
+- [`hasAdjustedName()`](method-hasadjustedname.md)
+- [`isUntitledPageName()`](method-isuntitledpagename.md)
+- [`nameAndNumber()`](method-nameandnumber.md)
 
 Pages Names
 $pages->names
@@ -20,7 +29,7 @@ if($pages->names()->pageNameExists('something')) {
 $name = $pages->names()->uniqueRandomPageName();
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`setupNewPageName(Page $page, string $format = ''): string`](method-setupnewpagename.md) Assign a name to given Page (if it doesn’t already have one)
 - [`hasAutogenName(Page $page): string|bool`](method-hasautogenname.md) Does the given page have an auto-generated name (during this request)?

@@ -4,7 +4,16 @@ Source: `wire/modules/Process/ProcessPageLister/ListerBookmarks.php`
 
 Inherits: `Wire`
 
-Methods:
+## Summary
+
+Common methods:
+- [`setPage()`](method-setpage.md)
+- [`setUser()`](method-setuser.md)
+- [`getOwnedBookmarks()`](method-getownedbookmarks.md)
+- [`saveOwnedBookmarks()`](method-saveownedbookmarks.md)
+- [`getUserSettings()`](method-getusersettings.md)
+
+## Methods
 - [`__construct(Page $page, User $user)`](method-__construct.md) Construct
 - [`setPage(Page $page)`](method-setpage.md) Set the Lister page that bookmarks will be for
 - [`setUser(User $user)`](method-setuser.md) Set user that bookmarks will be for
@@ -38,6 +47,6 @@ Methods:
 - [`isValidPageKey(int|string $val): bool`](method-isvalidpagekey.md) Is the given page ID or key valid and existing?
 - [`readableBookmarkSelector(array $bookmark): string`](method-readablebookmarkselector.md) Return a readable selector from bookmark for output purposes
 
-Constants:
+## Constants
 - [`typePublic = 0`](const-typepublic.md)
 - [`typeOwned = 1`](const-typeowned.md)

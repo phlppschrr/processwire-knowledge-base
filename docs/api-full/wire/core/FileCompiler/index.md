@@ -4,18 +4,25 @@ Source: `wire/core/FileCompiler.php`
 
 Inherits: `Wire`
 
-
-Groups:
-Group: [other](group-other.md)
+## Summary
 
 FileCompiler
 
+Common methods:
+- [`wired()`](method-wired.md)
+- [`init()`](method-init.md)
+- [`mkdir()`](method-mkdir.md)
+- [`chmod()`](method-chmod.md)
+- [`initTargetPath()`](method-inittargetpath.md)
+
+Groups:
+Group: [other](group-other.md)
 
 @todo determine whether we should make storage in dedicated table rather than using wire('cache').
 
 @todo handle race conditions for multiple requests attempting to compile the same file(s).
 
-Methods:
+## Methods
 - [`__construct(string $sourcePath, array $options = array())`](method-__construct.md) Construct
 - [`wired()`](method-wired.md) Wired to instance
 - [`init()`](method-init.md) Initialize paths

@@ -4,9 +4,18 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeText
 
 Inherits: `InputfieldDatetimeType`
 
+## Summary
+
 Text date input types with optional jQuery UI datepicker
 
-Methods:
+Common methods:
+- [`getDefaultSettings()`](method-getdefaultsettings.md)
+- [`renderReady()`](method-renderready.md)
+- [`render()`](method-render.md)
+- [`renderValue()`](method-rendervalue.md)
+- [`processInput()`](method-processinput.md)
+
+## Methods
 - [`getDefaultSettings(): array`](method-getdefaultsettings.md)
 - [`renderReady()`](method-renderready.md) Render ready
 - [`render(): string`](method-render.md)
@@ -16,7 +25,7 @@ Methods:
 - [`sanitizeValue(int|string $value): int|string`](method-sanitizevalue.md) Sanitize value
 - [`getConfigInputfields(InputfieldWrapper $inputfields)`](method-getconfiginputfields.md)
 
-Constants:
+## Constants
 - [`datepickerNo = 0`](const-datepickerno.md)
 - [`datepickerClick = 1`](const-datepickerclick.md)
 - [`datepickerInline = 2`](const-datepickerinline.md)

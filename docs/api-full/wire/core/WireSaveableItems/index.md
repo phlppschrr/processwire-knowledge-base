@@ -5,16 +5,24 @@ Source: `wire/core/WireSaveableItems.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`
 
+## Summary
+
+ProcessWire WireSaveableItems
+
+Common methods:
+- [`getAll()`](method-getall.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
+- [`getWireArray()`](method-getwirearray.md)
+- [`makeItem()`](method-makeitem.md)
+- [`getTable()`](method-gettable.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire WireSaveableItems
-
 Wire Data Access Object, provides reusable capability for loading, saving, creating, deleting,
 and finding items of descending class-defined types.
 
-Methods:
+## Methods
 - [`getAll(): WireArray`](method-getall.md) Return the WireArray that this DAO stores it's items in
 - [`makeBlankItem(): Saveable|Wire`](method-makeblankitem.md) Return a new blank item
 - [`makeItem(array $a = array()): Saveable|WireData|Wire`](method-makeitem.md) Make an item and populate with given data

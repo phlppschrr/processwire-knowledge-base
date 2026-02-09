@@ -4,13 +4,22 @@ Source: `wire/core/PagesLoaderCache.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Loader Cache
+
+Common methods:
+- [`getCacheStatus()`](method-getcachestatus.md)
+- [`getCache()`](method-getcache.md)
+- [`hasCache()`](method-hascache.md)
+- [`cache()`](method-cache.md)
+- [`cacheGroup()`](method-cachegroup.md)
 
 Pages Loader Cache
 $pages->cacher
 Implements page caching of loaded pages and PageArrays for $pages API variable
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`getCacheStatus(bool|null $verbose = null): array|string`](method-getcachestatus.md) Get cache status
 - [`getCache(int|string|null $id = null): Page|array|null`](method-getcache.md) Given a Page ID, return it if it's cached, or NULL of it's not.

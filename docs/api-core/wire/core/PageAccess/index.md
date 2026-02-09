@@ -2,11 +2,20 @@
 
 Source: `wire/core/PageAccess.php`
 
+## Summary
+
 ProcessWire Page Access
+
+Common methods:
+- [`getType()`](method-gettype.md)
+- [`getAccessParent()`](method-getaccessparent.md)
+- [`getAccessTemplate()`](method-getaccesstemplate.md)
+- [`getAccessRoles()`](method-getaccessroles.md)
+- [`hasAccessRole()`](method-hasaccessrole.md)
 
 Provides implementation for Page access functions.
 
-Methods:
+## Methods
 - [`getType(string|int|Permission $name): string`](method-gettype.md) Normalize a permission name type
 - [`getAccessParent(Page $page, string $type = 'view', int $level = 0): Page|NullPage`](method-getaccessparent.md) Returns the parent page that has the template from which we get our role/access settings from
 - [`getAccessTemplate(Page $page, string $type = 'view'): Template|null`](method-getaccesstemplate.md) Returns the template from which we get our role/access settings from

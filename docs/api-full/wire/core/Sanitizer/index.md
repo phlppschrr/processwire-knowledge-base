@@ -4,11 +4,19 @@ Source: `wire/core/Sanitizer.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire Sanitizer
+
+Common methods:
+- [`nameFilter()`](method-namefilter.md)
+- [`name()`](method-name.md)
+- [`names()`](method-names.md)
+- [`varName()`](method-varname.md)
+- [`attrName()`](method-attrname.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Sanitizer
 
 Sanitizer provides shared sanitization functions as commonly used throughout ProcessWire core and modules
 
@@ -100,7 +108,7 @@ and thus it’ll return a non-value rather than a sanitized value. See the `Sani
 
 @link https://processwire.com/api/variables/sanitizer/ Offical $sanitizer API variable Documentation
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct the sanitizer
 - [`name(string $value, bool|int $beautify = false, int $maxLength = 128, string $replacement = '_', array $options = array()): string`](method-name.md) Sanitize in "name" format (ASCII alphanumeric letters/digits, hyphens, underscores, periods)
 - [`names(string|array $value, string $delimeter = ' ', array $allowedExtras = array('-', '_', '.'), string $replacementChar = '_', bool $beautify = false): string|array`](method-names.md) Sanitize a string or array containing multiple names
@@ -198,5 +206,5 @@ Methods:
 - [`validate(string|int|array|float $value, string $method = 'text', $fallback = null): null|mixed`](method-validate.md) Validate that value remains unchanged by given sanitizer method, or return null if not
 - [`valid(string|int|array|float $value, string $method = 'text', bool $strict = false): bool`](method-valid.md) Is given value valid? (i.e. unchanged by given sanitizer method)
 
-Constants:
+## Constants
 - [`translate = 2`](const-translate.md)

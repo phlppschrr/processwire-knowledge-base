@@ -4,11 +4,20 @@ Source: `wire/modules/Process/ProcessPageEdit/PageBookmarks.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Class PageBookmarks
+
+Common methods:
+- [`initNavJSON()`](method-initnavjson.md)
+- [`listBookmarks()`](method-listbookmarks.md)
+- [`editBookmarksForm()`](method-editbookmarksform.md)
+- [`editBookmarks()`](method-editbookmarks.md)
+- [`checkProcessPage()`](method-checkprocesspage.md)
 
 Class for managing Page bookmarks, currently used by ProcessPageEdit and ProcessPageList
 
-Methods:
+## Methods
 - [`__construct(Process $process)`](method-__construct.md)
 - [`initNavJSON(array $options = array()): array`](method-initnavjson.md) Initialize/create the $options array for executeNavJSON() in Process modules
 - [`listBookmarks(): string`](method-listbookmarks.md) Render list of current bookmarks

@@ -4,14 +4,23 @@ Source: `wire/core/PageValues.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Page Values
+
+Common methods:
+- [`getDotValue()`](method-getdotvalue.md)
+- [`getBracketValue()`](method-getbracketvalue.md)
+- [`getMultiple()`](method-getmultiple.md)
+- [`getFieldFirstValue()`](method-getfieldfirstvalue.md)
+- [`getMarkup()`](method-getmarkup.md)
 
 Provides implementation for several Page value get() functions.
 
 
 @since 3.0.205
 
-Methods:
+## Methods
 - [`getDotValue(Page $page, string $key): mixed|null`](method-getdotvalue.md) Given a 'field.subfield' type string traverse properties and return value
 - [`getBracketValue(Page $page, string $key, mixed $value = null): array|mixed|Page|PageArray|Wire|WireArray|WireData|string|\Traversable`](method-getbracketvalue.md) Get value that ends with square brackets to get iterable value, filtered value or property value
 - [`getMultiple(Page $page, array|string $keys, bool $assoc = false): array`](method-getmultiple.md) Get multiple Page property/field values in an array

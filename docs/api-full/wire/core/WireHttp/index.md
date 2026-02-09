@@ -4,11 +4,19 @@ Source: `wire/core/WireHttp.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire HTTP tools
+
+Common methods:
+- [`post()`](method-post.md)
+- [`get()`](method-get.md)
+- [`getJSON()`](method-getjson.md)
+- [`head()`](method-head.md)
+- [`status()`](method-status.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire HTTP tools
 
 Provides capability for sending POST/GET requests to URLs
 
@@ -27,7 +35,7 @@ if($response !== false) {
 
 Thanks to @horst for his assistance with several methods in this class.
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct/initialize
 - [`post(string $url, array|string $data = array(), array $options = array()): bool|string`](method-post.md) Send a POST request to a URL
 - [`get(string $url, array|string $data = array(), array $options = array()): bool|string`](method-get.md) Send a GET request to URL
@@ -75,5 +83,5 @@ Methods:
 - [`setTimeout(int|float $seconds): $this`](method-settimeout.md) Set the number of seconds till connection times out
 - [`getTimeout(): float`](method-gettimeout.md) Get the number of seconds till connection times out
 
-Constants:
+## Constants
 - [`defaultPostContentType = 'application/x-www-form-urlencoded; charset=utf-8'`](const-defaultpostcontenttype.md)

@@ -5,11 +5,19 @@ Source: `wire/core/WireData.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`, `ArrayAccess`
 
+## Summary
+
+ProcessWire WireData
+
+Common methods:
+- [`set()`](method-set.md)
+- [`setQuietly()`](method-setquietly.md)
+- [`isEqual()`](method-isequal.md)
+- [`setArray()`](method-setarray.md)
+- [`get()`](method-get.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire WireData
 
 This is the base data container class used throughout ProcessWire.
 It provides get and set access to properties internally stored in a $data array.
@@ -27,7 +35,7 @@ iterate all of the properties/values present within it.
 
 May also be accessed as array.
 
-Methods:
+## Methods
 - [`set(string $key, mixed $value): $this`](method-set.md) Set a value to this object’s data
 - [`setQuietly(string $key, mixed $value): $this`](method-setquietly.md) Same as set() but without change tracking
 - [`setArray(array $data): $this`](method-setarray.md) Set an array of key=value pairs

@@ -5,11 +5,19 @@ Source: `wire/core/PaginatedArray.php`
 Inherits: `WireArray`
 Implements: `WirePaginatable`
 
+## Summary
+
+ProcessWire Paginated WireArray
+
+Common methods:
+- [`setTotal()`](method-settotal.md)
+- [`getTotal()`](method-gettotal.md)
+- [`setLimit()`](method-setlimit.md)
+- [`getLimit()`](method-getlimit.md)
+- [`setStart()`](method-setstart.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Paginated WireArray
 
 Like WireArray, but with the additional methods and properties needed for WirePaginatable interface.
 
@@ -18,7 +26,7 @@ Here you will see methods specific to the pagination aspects of this class only.
 available methods outside of pagination, please see the `WireArray` class. The most common type of
 PaginatedArray is a `PageArray`.
 
-Methods:
+## Methods
 - [`setTotal(int $total): $this`](method-settotal.md) Set the total number of items, if more than are in the WireArray.
 - [`getTotal(): int`](method-gettotal.md) Get the total number of items in the WireArray, including all paginations.
 - [`setLimit(int $numLimit): $this`](method-setlimit.md) Set the limit that was used in pagination.

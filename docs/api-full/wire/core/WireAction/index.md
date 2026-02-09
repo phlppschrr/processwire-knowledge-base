@@ -5,18 +5,26 @@ Source: `wire/core/WireAction.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
+WireAction
+
+Common methods:
+- [`init()`](method-init.md)
+- [`getItemType()`](method-getitemtype.md)
+- [`isValidItem()`](method-isvaliditem.md)
+- [`action()`](method-___action.md)
+- [`execute()`](method-execute.md)
 
 Groups:
 Group: [other](group-other.md)
-
-WireAction
 
 Base class for actions in ProcessWire
 
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Define any default values for configuration
 - [`init()`](method-init.md) Module initialization
 - [`getItemType(): string`](method-getitemtype.md) Return the string type (class name) of items that this action operates upon

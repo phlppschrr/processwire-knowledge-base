@@ -4,11 +4,19 @@ Source: `wire/core/Modules.php`
 
 Inherits: `WireArray`
 
+## Summary
+
+ProcessWire Modules
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`duplicates()`](method-duplicates.md)
+- [`installer()`](method-installer.md)
+- [`addPath()`](method-addpath.md)
+- [`getPaths()`](method-getpaths.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Modules
 
 Loads and manages all runtime modules for ProcessWire
 
@@ -29,7 +37,7 @@ returned rather than a real Module. ModulePlaceholders are used in instances whe
 in order to save resources. As a result, anything iterating through these Modules should check to make sure it's not a ModulePlaceholder
 before using it. If it's a ModulePlaceholder, then the real Module can be instantiated/retrieved by $modules->get($className).
 
-Methods:
+## Methods
 - [`__construct(string $path)`](method-__construct.md) Construct the Modules
 - [`get(string|int $key): Module|_Module|null`](method-get.md) Get the requested Module
 - [`getModule(string|int $key, array $options = array()): Module|_Module|null|string`](method-getmodule.md) Get the requested Module (with options)
@@ -55,7 +63,7 @@ Methods:
 - [`memcache(string $name, mixed $setValue = null): bool|array|mixed|null`](method-memcache.md) Set a runtime memory cache
 - [`__get(string $name): mixed`](method-__get.md) Direct read-only properties
 
-Constants:
+## Constants
 - [`flagsSingular = 1`](const-flagssingular.md)
 - [`flagsAutoload = 2`](const-flagsautoload.md)
 - [`flagsDuplicate = 4`](const-flagsduplicate.md)

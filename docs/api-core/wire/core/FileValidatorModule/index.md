@@ -5,7 +5,16 @@ Source: `wire/core/FileValidatorModule.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
 Base class for FileValidator modules
+
+Common methods:
+- [`getModuleInfo()`](method-getmoduleinfo.md)
+- [`isValidFile()`](method-isvalidfile.md)
+- [`isValid()`](method-isvalid.md)
+- [`getPage()`](method-getpage.md)
+- [`getField()`](method-getfield.md)
 
 Base class for FileValidator modules, which validate uploaded files.
 To create a FileValidator module:
@@ -36,7 +45,7 @@ class FileValidatorHTML extends FileValidatorModule {
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`getModuleInfo(): array`](method-getmoduleinfo.md) Get module information
 - [`isValidFile(string $filename): bool|int`](method-isvalidfile.md) Is the given file valid? (this is the method modules should implement)
 - [`isValid(string $filename): bool|int`](method-isvalid.md) Is the given file valid?

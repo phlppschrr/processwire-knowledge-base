@@ -5,11 +5,19 @@ Source: `wire/core/PagesType.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`, `Countable`
 
+## Summary
+
+ProcessWire PagesType
+
+Common methods:
+- [`new()`](method-___new.md)
+- [`addTemplates()`](method-addtemplates.md)
+- [`addParents()`](method-addparents.md)
+- [`selectorString()`](method-selectorstring.md)
+- [`loaded()`](method-loaded.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire PagesType
 
 Pages Type
 Provides an interface to the Pages class but specific to a given page class/type, with predefined parent and template.
@@ -18,7 +26,7 @@ This class is primarily used by the core as an alternative to `$pages`, providin
 are all instances of `PagesType`. This class is typically not instantiated on its own and instead acts as a base class
 which is extended.
 
-Methods:
+## Methods
 - [`__construct(ProcessWire $wire, Template|int|string|array $templates = array(), int|Page|array $parents = array())`](method-__construct.md) Construct this PagesType manager for the given parent and template
 - [`new(array $options = []): Page`](method-___new.md) (hookable) Create new instance of this page type
 - [`addTemplates(array|int|string $templates)`](method-addtemplates.md) Add one or more templates that this PagesType represents

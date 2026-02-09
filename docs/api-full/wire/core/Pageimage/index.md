@@ -4,13 +4,21 @@ Source: `wire/core/Pageimage.php`
 
 Inherits: `Pagefile`
 
+## Summary
+
+ProcessWire Pageimage
+
+Common methods:
+- [`url()`](method-url.md)
+- [`filename()`](method-filename.md)
+- [`suffix()`](method-suffix.md)
+- [`focus()`](method-focus.md)
+- [`set()`](method-set.md)
 
 Groups:
 Group: [resize-and-crop](group-resize-and-crop.md)
 Group: [variations](group-variations.md)
 Group: [other](group-other.md)
-
-ProcessWire Pageimage
 
 Represents an image item attached to a page, typically via an Image Fieldtype.
 Pageimage objects are usually contained by a `Pageimages` object, which is a type of `Pagefiles` and `WireArray`.
@@ -67,7 +75,7 @@ foreach($page->images as $image) {
 - [`createdVariation(Pageimage $image, array $data): void`](method-___createdvariation.md) Called after new image variation created (3.0.180+)
 - [`filenameDoesNotExist($filename): bool`](method-___filenamedoesnotexist.md) Hook called when a filename does not exist
 
-Methods:
+## Methods
 - [`__construct(Pagefiles $pagefiles, string $filename)`](method-__construct.md) Construct a new Pageimage
 - [`url(): string`](method-url.md) Return the web accessible URL to this image file
 - [`filename(): string`](method-filename.md) Returns the full disk path to the image file

@@ -4,15 +4,23 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/Comment.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire Fieldtype Comments > Comment
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`get()`](method-get.md)
+- [`getFormatted()`](method-getformatted.md)
+- [`getFormattedCommentText()`](method-getformattedcommenttext.md)
+- [`set()`](method-set.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire Fieldtype Comments > Comment
-
 Class that contains an individual comment.
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct a Comment and set defaults
 - [`wired()`](method-wired.md) Wired to API
 - [`get(string $key): mixed`](method-get.md) Get property
@@ -45,7 +53,7 @@ Methods:
 - [`removeMeta(string $key): self`](method-removemeta.md) Remove given meta data property or '*' to remove all
 - [`meta(string|array $key = null, mixed|null $value = null): array|string|int|mixed`](method-meta.md) Get or set meta data property
 
-Constants:
+## Constants
 - [`statusSpam = -2`](const-statusspam.md)
 - [`statusPending = 0`](const-statuspending.md)
 - [`statusApproved = 1`](const-statusapproved.md)

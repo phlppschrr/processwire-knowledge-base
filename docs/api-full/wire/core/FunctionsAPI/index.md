@@ -24,7 +24,7 @@ any of these functions by prefixing the word `wire` to them and using the format
 `wireFunction()` i.e. `wirePages()`, `wireUser()`, etc.
 Or, if you do not
 
-Methods:
+## Methods
 - [`pages(string|array|int $selector = ''): Pages|PageArray|Page|NullPage`](method-pages.md) Retrieve or save pages ($pages API variable as a function)
 - [`page(string $key = '', null $value = null): Page|mixed`](method-page.md) Returns the current Page being viewed ($page API variable as a function)
 - [`pageId(Page|mixed $value): int|false`](method-pageid.md) Return id for given page or false if it’s not a page

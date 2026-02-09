@@ -6,5 +6,5 @@ This init file is called before ProcessWire starts rendering the page or executi
 
 This is a place to attach hooks or modify render-specific settings before they are used.
 
-Methods:
+## Methods
 - [`hookMarkupPagerNavRender(HookEvent $event)`](method-hookmarkuppagernavrender.md) Change the default prev/next links for MarkupPagerNav

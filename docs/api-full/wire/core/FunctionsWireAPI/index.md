@@ -22,7 +22,7 @@ Shorter versions of these functions (without the leading "wire") can be found in
 FunctionsAPI.php file, which is used only if $config->useFunctionsAPI is true.
 The functions in this file are always available regardless of that setting.
 
-Methods:
+## Methods
 - [`_wirePagesAPI($_apiVar, $selector): null|NullPage|Page|PageArray|Pages|PagesType`](method-_wirepagesapi.md) Common helper for API functions dealing with pages
 - [`_wireDataAPI($_apiVar, $key, $value): mixed|null|WireData|Page`](method-_wiredataapi.md) Common helper for API functions dealing with WireData objects
 - [`wirePages(string|array $selector = ''): Pages|PageArray|Page|NullPage`](method-wirepages.md) Access the $pages API variable as a function

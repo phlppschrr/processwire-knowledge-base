@@ -4,7 +4,16 @@ Source: `wire/core/MarkupQA.php`
 
 Inherits: `Wire`
 
+## Summary
+
 HTML Markup Quality Assurance
+
+Common methods:
+- [`setPage()`](method-setpage.md)
+- [`setField()`](method-setfield.md)
+- [`ignorePaths()`](method-ignorepaths.md)
+- [`debug()`](method-debug.md)
+- [`verbose()`](method-verbose.md)
 
 Provides runtime quality assurance for markup stored in [textarea] field values.
 
@@ -20,7 +29,7 @@ Provides runtime quality assurance for markup stored in [textarea] field values.
 
 Runtime errors are logged to: /site/assets/logs/markup-qa-errors.txt
 
-Methods:
+## Methods
 - [`__construct(?Page $page = null, ?Field $field = null)`](method-__construct.md) Construct
 - [`setPage(Page $page)`](method-setpage.md) Set the current Page
 - [`setField(Field $field)`](method-setfield.md) Set the current Field

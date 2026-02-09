@@ -5,13 +5,21 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentList.php`
 Inherits: `Wire`
 Implements: `CommentListInterface`
 
+## Summary
+
+CommentList provides the default implementation of the CommentListInterface interface.
+
+Common methods:
+- [`options()`](method-options.md)
+- [`getReplies()`](method-getreplies.md)
+- [`getCommentListClasses()`](method-getcommentlistclasses.md)
+- [`getCommentItemClasses()`](method-getcommentitemclasses.md)
+- [`render()`](method-render.md)
 
 Groups:
 Group: [other](group-other.md)
 
-CommentList provides the default implementation of the CommentListInterface interface.
-
-Methods:
+## Methods
 - [`__construct(CommentArray $comments, array $options = array())`](method-__construct.md) Construct the CommentList
 - [`options(string|null|array $key = null, string|int|bool|null $value = null): array|string|int|bool|null`](method-options.md) Get or set options
 - [`getReplies(int|Comment $commentID): array`](method-getreplies.md) Get replies to the given comment ID, or 0 for root level comments

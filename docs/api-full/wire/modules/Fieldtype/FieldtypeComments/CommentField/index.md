@@ -4,11 +4,19 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentField.php`
 
 Inherits: `Field`
 
+## Summary
+
+ProcessWire Comments Field
+
+Common methods:
+- [`find()`](method-find.md)
+- [`count()`](method-count.md)
+- [`getNumComments()`](method-getnumcomments.md)
+- [`getCommentByCode()`](method-getcommentbycode.md)
+- [`getCommentByID()`](method-getcommentbyid.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Comments Field
 
 Custom “Field” class for Comments fields.
 
@@ -16,7 +24,7 @@ Custom “Field” class for Comments fields.
 
 @todo Some more methods from FieldtypeComments can be moved into this class
 
-Methods:
+## Methods
 - [`find($selectorString, array $options = array()): CommentArray`](method-find.md) Find comments matching given selector
 - [`count(string|null $selectorString): int`](method-count.md) Return total quantity of comments matching the selector
 - [`getNumComments(Page $page, array $options = array()): int`](method-getnumcomments.md) Get number of comments for Page, optionally limited by specific $options

@@ -4,9 +4,18 @@ Source: `wire/core/ModulesFiles.php`
 
 Inherits: `ModulesClass`
 
+## Summary
+
 ProcessWire Modules: Files
 
-Methods:
+Common methods:
+- [`moduleFileExt()`](method-modulefileext.md)
+- [`findModuleFiles()`](method-findmodulefiles.md)
+- [`getModuleFile()`](method-getmodulefile.md)
+- [`includeModuleFile()`](method-includemodulefile.md)
+- [`compile()`](method-compile.md)
+
+## Methods
 - [`moduleFileExt(string $class, int $setValue = null): int`](method-modulefileext.md) Get or set module file extension type (1 or 2)
 - [`findModuleFiles(string $path, bool $readCache = false, int $level = 0): array`](method-findmodulefiles.md) Find new module files in the given $path
 - [`getModuleFile(string|Module $class, array|bool $options = array()): bool|string`](method-getmodulefile.md) Get the path + filename (or optionally URL) for module

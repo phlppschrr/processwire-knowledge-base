@@ -5,12 +5,20 @@ Source: `wire/core/Pagefiles.php`
 Inherits: `WireArray`
 Implements: `PageFieldValueInterface`
 
+## Summary
+
+ProcessWire Pagefiles
+
+Common methods:
+- [`removeHooks()`](method-removehooks.md)
+- [`setPage()`](method-setpage.md)
+- [`setField()`](method-setfield.md)
+- [`getPage()`](method-getpage.md)
+- [`getField()`](method-getfield.md)
 
 Groups:
 Group: [manipulation](group-manipulation.md)
 Group: [other](group-other.md)
-
-ProcessWire Pagefiles
 
 Pagefiles is a type of WireArray that contains Pagefile objects. It also acts as the value for multi-file fields in ProcessWire.
 The items in a Pagefiles array are `Pagefile` objects, indexed by file basename, i.e. `myfile.pdf`.
@@ -45,7 +53,7 @@ $pagefile = $page->files->last();
 Typically a Pagefiles object will be associated with a specific field attached to a Page.
 There may be multiple instances of Pagefiles attached to a given Page (depending on what fields are in it's fieldgroup).
 
-Methods:
+## Methods
 - [`__construct(Page $page)`](method-__construct.md) Construct a Pagefiles object
 - [`__destruct()`](method-__destruct.md) Destruct and ensure that hooks are removed
 - [`removeHooks()`](method-removehooks.md) Remove hooks to the PagefilesManager instance

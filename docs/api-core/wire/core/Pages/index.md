@@ -4,7 +4,16 @@ Source: `wire/core/Pages.php`
 
 Inherits: `Wire`
 
-ProcessWire Pages ($pages API variable)
+## Summary
+
+ProcessWire Pages (`$pages` API variable)
+
+Common methods:
+- [`init()`](method-init.md)
+- [`count()`](method-count.md)
+- [`find()`](method-___find.md)
+- [`findOne()`](method-findone.md)
+- [`findMany()`](method-findmany.md)
 
 Pages
 The $pages API variable enables loading and manipulation of Page objects, to and from the database.
@@ -78,7 +87,7 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`savedPageOrField(Page $page, array $changes)`](method-___savedpageorfield.md) Hook inclusive of both saved() and savedField().
 - [`found(PageArray $pages, array $details)`](method-___found.md) Hook called at the end of a $pages->find().
 
-Methods:
+## Methods
 - [`__construct(ProcessWire $wire)`](method-__construct.md) Create the Pages object
 - [`count(string|array|Selectors $selector = '', array|string $options = array()): int`](method-count.md) Count and return how many pages will match the given selector.
 - [`find(string|int|array|Selectors $selector, array|string $options = array()): PageArray|array`](method-___find.md) (hookable) Given a Selector string, return the Page objects that match in a PageArray.
@@ -162,6 +171,6 @@ Methods:
 - [`savePageOrFieldReady(Page $page, string $fieldName = '')`](method-___savepageorfieldready.md) (hookable) Hook called when either of Pages::save or Pages::saveField is ready to execute
 - [`savedPageOrField(Page $page, array $changes = array())`](method-___savedpageorfield.md) (hookable) Hook called after either of Pages::save or Pages::saveField successfully executes
 
-Constants:
+## Constants
 - [`nameMaxLength = 128`](const-namemaxlength.md)
 - [`defaultRootName = 'home'`](const-defaultrootname.md)

@@ -4,15 +4,23 @@ Source: `wire/core/ProcessController.php`
 
 Inherits: `Wire`
 
+## Summary
+
+A Controller for Process* Modules
+
+Common methods:
+- [`setProcess()`](method-setprocess.md)
+- [`setProcessName()`](method-setprocessname.md)
+- [`setProcessMethodName()`](method-setprocessmethodname.md)
+- [`setPrefix()`](method-setprefix.md)
+- [`getProcess()`](method-getprocess.md)
 
 Groups:
 Group: [other](group-other.md)
 
-A Controller for Process* Modules
-
 Intended to be used by templates that call upon Process objects
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct the ProcessController
 - [`setProcess(Process $process)`](method-setprocess.md) Set the Process to execute.
 - [`setProcessName(string $processName)`](method-setprocessname.md) Set the name of the Process to execute.
@@ -28,5 +36,5 @@ Methods:
 - [`jsonMessage(string|array $msg, bool $error = false, bool $allowMarkup = false): string`](method-jsonmessage.md) Generate a message in JSON format, for use with AJAX output
 - [`isAjax(): bool`](method-isajax.md) Is this an AJAX request?
 
-Constants:
+## Constants
 - [`defaultProcessMethodName = 'execute'`](const-defaultprocessmethodname.md)

@@ -2,7 +2,7 @@
 
 Source: `wire/modules/AdminTheme/AdminThemeUikit/_sidenav/_sidenav-init.php`
 
-Methods:
+## Methods
 - [`isMobileWidth()`](method-ismobilewidth.md) Are we currently at mobile width?
 - [`toggleSidebarPane()`](method-togglesidebarpane.md) Toggle navigation sidebar pane open/closed
 - [`toggleTreePane()`](method-toggletreepane.md) Toggle tree sidebar pane open/closed

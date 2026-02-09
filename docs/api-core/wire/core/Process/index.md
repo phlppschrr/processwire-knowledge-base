@@ -5,11 +5,19 @@ Source: `wire/core/Process.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
+ProcessWire Process
+
+Common methods:
+- [`init()`](method-init.md)
+- [`execute()`](method-___execute.md)
+- [`executed()`](method-___executed.md)
+- [`get()`](method-get.md)
+- [`isSingular()`](method-issingular.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Process
 
 Process is the base Module class for each part of ProcessWire's web admin.
 
@@ -20,7 +28,7 @@ Please be sure to see the `Module` interface for full details on methods you can
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`execute(): string|array`](method-___execute.md) (hookable) Execute this Process and return the output. You may have any number of execute[name] methods, triggered by URL segments.
 - [`executed(string $method)`](method-___executed.md) (hookable) Hookable method automatically called after execute() method has finished.

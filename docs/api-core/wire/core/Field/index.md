@@ -5,12 +5,20 @@ Source: `wire/core/Field.php`
 Inherits: `WireData`
 Implements: `Saveable`, `Exportable`
 
+## Summary
+
+ProcessWire Field
+
+Common methods:
+- [`set()`](method-set.md)
+- [`setRawSetting()`](method-setrawsetting.md)
+- [`setFlags()`](method-setflags.md)
+- [`addFlag()`](method-addflag.md)
+- [`removeFlag()`](method-removeflag.md)
 
 Groups:
 Group: [access](group-access.md)
 Group: [properties](group-properties.md)
-
-ProcessWire Field
 
 The Field class corresponds to a record in the fields database table
 and is managed by the 'Fields' class.
@@ -37,7 +45,7 @@ Common Inputfield properties that Field objects store:
 
 @todo add modified date property
 
-Methods:
+## Methods
 - [`set(string $key, mixed $value): Field|WireData`](method-set.md) Set a native setting or a dynamic data property for this Field
 - [`setFlags(int $value)`](method-setflags.md) Set the bitmask of flags for the field
 - [`addFlag(int $flag): $this`](method-addflag.md) Add the given bitmask flag
@@ -81,7 +89,7 @@ Methods:
 - [`setSetupName(string $setupName = null): string`](method-setsetupname.md) Set setup name from Fieldtype to apply when field is saved
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
-Constants:
+## Constants
 - [`flagAutojoin = 1`](const-flagautojoin.md)
 - [`flagGlobal = 4`](const-flagglobal.md)
 - [`flagSystem = 8`](const-flagsystem.md)

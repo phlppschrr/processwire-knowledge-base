@@ -4,11 +4,19 @@ Source: `wire/core/AdminThemeFramework.php`
 
 Inherits: `AdminTheme`
 
+## Summary
+
+AdminTheme Framework
+
+Common methods:
+- [`get()`](method-get.md)
+- [`init()`](method-init.md)
+- [`includeInitFile()`](method-includeinitfile.md)
+- [`_()`](method-_.md)
+- [`getHeadline()`](method-getheadline.md)
 
 Groups:
 Group: [other](group-other.md)
-
-AdminTheme Framework
 
 The methods in this class may eventually be merged to AdminTheme.php,
 but are isolated to this class during development.
@@ -16,7 +24,7 @@ but are isolated to this class during development.
 This file is licensed under the MIT license.
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`get(string $key): bool|int|mixed|null|string`](method-get.md) Override get() method from WireData to support additional properties
 - [`init()`](method-init.md) Initialize and attach hooks

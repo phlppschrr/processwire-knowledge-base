@@ -5,16 +5,24 @@ Source: `wire/core/ImageSizerEngine.php`
 Inherits: `WireData`
 Implements: `Module`, `ConfigurableModule`
 
+## Summary
+
+ImageSizer Engine Module (Abstract)
+
+Common methods:
+- [`prepare()`](method-prepare.md)
+- [`supported()`](method-supported.md)
+- [`processResize()`](method-processresize.md)
+- [`processRotate()`](method-processrotate.md)
+- [`processFlip()`](method-processflip.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ImageSizer Engine Module (Abstract)
-
 Copyright (C) 2016-2019 by Horst Nogajski and Ryan Cramer
 This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 
-Methods:
+## Methods
 - [`prepare(string $filename, array $options = array(), null|array $inspectionResult = null)`](method-prepare.md) Prepare the ImageSizer (this should be the first method you call)
 - [`supported(string $action = 'imageformat'): bool`](method-supported.md) Is this ImageSizer class ready only means: does the server / system provide all Requirements!
 - [`processResize(string $srcFilename, string $dstFilename, int $fullWidth, int $fullHeight, int $finalWidth, int $finalHeight): bool`](method-processresize.md) Process the image resize

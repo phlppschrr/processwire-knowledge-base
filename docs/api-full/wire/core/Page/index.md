@@ -5,6 +5,16 @@ Source: `wire/core/Page.php`
 Inherits: `WireData`
 Implements: `Countable`, `WireMatchable`
 
+## Summary
+
+ProcessWire Page
+
+Common methods:
+- [`set()`](method-set.md)
+- [`setQuietly()`](method-setquietly.md)
+- [`setForced()`](method-setforced.md)
+- [`setFieldValue()`](method-setfieldvalue.md)
+- [`get()`](method-get.md)
 
 Groups:
 Group: [common](group-common.md)
@@ -17,8 +27,6 @@ Group: [other](group-other.md)
 Group: [previous](group-previous.md)
 Group: [urls](group-urls.md)
 Group: [users](group-users.md)
-
-ProcessWire Page
 
 Page is the class used by all instantiated pages and it provides functionality for:
 
@@ -134,7 +142,7 @@ Note: you can use the $page->urls() method to get URLs added by PagePathHistory.
 - [`descendants($selector = '', array $options = array()): PageArray`](method-descendants.md) Find descendant pages, alias of `Page::find()`, see that method for details. @since 3.0.116
 - [`descendant($selector = '', array $options = array()): Page|NullPage`](method-descendant.md) Find one descendant page, alias of `Page::findOne()`, see that method for details. @since 3.0.116
 
-Methods:
+## Methods
 - [`__construct(?Template $tpl = null)`](method-__construct.md) Create a new page in memory.
 - [`__destruct()`](method-__destruct.md) Destruct this page instance
 - [`__clone()`](method-__clone.md) Clone this page instance
@@ -265,7 +273,7 @@ Methods:
 - [`removeStatusReady(string $name, int $value)`](method-___removestatusready.md) (hookable) Called when status flag is about to removed from page but not yet saved
 - [`removedStatus(string $name, int $value)`](method-___removedstatus.md) (hookable) Called when a status flag has been removed from this page (and saved)
 
-Constants:
+## Constants
 - [`statusLocked = 4`](const-statuslocked.md)
 - [`statusHidden = 1024`](const-statushidden.md)
 - [`statusUnpublished = 2048`](const-statusunpublished.md)

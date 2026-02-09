@@ -4,11 +4,19 @@ Source: `wire/core/Selectors.php`
 
 Inherits: `WireArray`
 
+## Summary
+
+ProcessWire Selectors
+
+Common methods:
+- [`init()`](method-init.md)
+- [`setSelectorString()`](method-setselectorstring.md)
+- [`import()`](method-import.md)
+- [`isValidItem()`](method-isvaliditem.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Selectors
 
 Processes a selector string into a WireArray of Selector objects.
 This Selectors class is used internally by ProcessWire to provide selector string (and array) matching throughout the core.
@@ -40,7 +48,7 @@ and [Selector Operators](https://processwire.com/docs/selectors/operators/).
 
 @todo Determine whether Selector array handling methods would be better in separate/descending class
 
-Methods:
+## Methods
 - [`__construct(string|null|array $selector = null)`](method-__construct.md) Given a selector string, extract it into one or more corresponding Selector objects, iterable in this object.
 - [`init(string|array $selector)`](method-init.md) Set the selector string or array (if not set already from the constructor)
 - [`create(string $field, string $operator, string|array $value): Selector`](method-create.md) Create a new Selector object from a field name, operator, and value
@@ -67,5 +75,5 @@ Methods:
 - [`setCustomVariableValue(string $name, string|int|array|WireData|float|null|bool $value)`](method-setcustomvariablevalue.md) Set a custom [variable] value available to all Selectors and PageFinder class instances
 - [`getCustomVariableValue(string $name): null|string`](method-___getcustomvariablevalue.md) (hookable) Get the value for a custom [var] to populate in a selector (also works in PageFinder)
 
-Constants:
+## Constants
 - [`maxOperatorLength = 10`](const-maxoperatorlength.md)

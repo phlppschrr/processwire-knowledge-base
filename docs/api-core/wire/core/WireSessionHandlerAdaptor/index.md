@@ -4,7 +4,16 @@ Source: `wire/core/WireSessionHandlerAdaptor.php`
 
 Implements: `SessionHandlerInterface`
 
+## Summary
+
 Adaptor between WireSessionHandler modules and PHP’s SessionHandlerInterface
+
+Common methods:
+- [`close()`](method-close.md)
+- [`destroy()`](method-destroy.md)
+- [`gc()`](method-gc.md)
+- [`open()`](method-open.md)
+- [`read()`](method-read.md)
 
 Used on PHP 8.4+ installations only. Necessary because:
 
@@ -22,7 +31,7 @@ Used on PHP 8.4+ installations only. Necessary because:
 
 @since 3.0.255
 
-Methods:
+## Methods
 - [`__construct(WireSessionHandler $handler)`](method-__construct.md) Construct
 - [`close(): bool`](method-close.md) Closes the current session.
 - [`destroy(string $id): bool`](method-destroy.md) Destroys a session.

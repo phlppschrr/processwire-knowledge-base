@@ -6,7 +6,7 @@ ProcessWire Language Functions
 
 Provides GetText-like language translation functions to ProcessWire.
 
-Methods:
+## Methods
 - [`__(string|array|bool $text, string|array $textdomain = null, string|bool|array $context = ''): string|array`](method-__.md) Perform a language translation
 - [`_x(string $text, string $context, string $textdomain = null): string`](method-_x.md) Perform a language translation in a specific context
 - [`_n(string $textSingular, string $textPlural, int $count, string $textdomain = null): string`](method-_n.md) Perform a language translation with singular and plural versions

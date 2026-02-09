@@ -4,7 +4,16 @@ Source: `wire/core/WireRandom.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Random generators for ProcessWire
+
+Common methods:
+- [`alphanumeric()`](method-alphanumeric.md)
+- [`string1()`](method-string1.md)
+- [`string2()`](method-string2.md)
+- [`alpha()`](method-alpha.md)
+- [`numeric()`](method-numeric.md)
 
 Includes methods for random strings, numbers, arrays and passwords.
 
@@ -18,7 +27,7 @@ $s = $random->alphanumeric(10);
 $i = $random->integer(0, 10);
 ~~~~~
 
-Methods:
+## Methods
 - [`alphanumeric(int $length = 0, array $options = array()): string`](method-alphanumeric.md) Return random alphanumeric, alpha or numeric string
 - [`string1(int $length, string $allowed, array $options): string`](method-string1.md) Generate a random string using faster method
 - [`string2(int $length, string $allowed, array $options): string`](method-string2.md) Generate random string using method that pulls from the base64 method

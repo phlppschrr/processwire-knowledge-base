@@ -5,12 +5,21 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentArray.php`
 Inherits: `PaginatedArray`
 Implements: `WirePaginatable`
 
+## Summary
+
 ProcessWire FieldtypeComments > CommentArray
+
+Common methods:
+- [`isValidItem()`](method-isvaliditem.md)
+- [`render()`](method-render.md)
+- [`makeNew()`](method-makenew.md)
+- [`renderForm()`](method-renderform.md)
+- [`renderAll()`](method-renderall.md)
 
 Maintains an array of multiple Comment instances.
 Serves as the value referenced when a FieldtypeComment field is reference from a Page.
 
-Methods:
+## Methods
 - [`isValidItem(Wire|Comment $item): bool`](method-isvaliditem.md) Per the WireArray interface, is the item a Comment
 - [`render(array $options = array()): string`](method-render.md) Provides the default rendering of a comment list, which may or may not be what you want
 - [`makeNew(): CommentArray`](method-makenew.md) Make a new blank CommentArray setup for the same Page/Field as the one it is called on

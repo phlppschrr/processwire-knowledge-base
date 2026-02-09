@@ -4,13 +4,22 @@ Source: `wire/core/PagesTrash.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Trash
+
+Common methods:
+- [`trash()`](method-trash.md)
+- [`restore()`](method-restore.md)
+- [`getRestoreInfo()`](method-getrestoreinfo.md)
+- [`parseTrashPageName()`](method-parsetrashpagename.md)
+- [`emptyTrash()`](method-emptytrash.md)
 
 Pages Trash
 $pages->trasher
 Implements page trash/restore/empty methods for the $pages API variable.
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`trash(Page $page, bool $save = true): bool`](method-trash.md) Move a page to the trash
 - [`restore(Page $page, bool $save = true): bool`](method-restore.md) Restore a page from the trash back to a non-trash state

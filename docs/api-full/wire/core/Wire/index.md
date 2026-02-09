@@ -4,12 +4,20 @@ Source: `wire/core/Wire.php`
 
 Implements: `WireTranslatable`, `WireFuelable`, `WireTrackable`
 
+## Summary
+
+ProcessWire Base Class "Wire"
+
+Common methods:
+- [`getInstanceNum()`](method-getinstancenum.md)
+- [`setFuel()`](method-setfuel.md)
+- [`getFuel()`](method-getfuel.md)
+- [`getAllFuel()`](method-getallfuel.md)
+- [`fuel()`](method-fuel.md)
 
 Groups:
 Group: [api-helpers](group-api-helpers.md)
 Group: [other](group-other.md)
-
-ProcessWire Base Class "Wire"
 
 Wire is the base class for most ProcessWire classes and modules.
 Wire derived classes have a `$this->wire()` method that provides access to ProcessWire’s API variables.
@@ -34,7 +42,7 @@ that return the API variable, whether documented below or not.
 
 Other standard hookable methods
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`__clone()`](method-__clone.md) Clone this Wire instance
 - [`getInstanceNum(bool $getTotal = false): int`](method-getinstancenum.md) Get this Wire object’s instance number
@@ -74,6 +82,6 @@ Methods:
 - [`__get(string $name): mixed|null`](method-__get.md) Get an object property by direct reference or NULL if it doesn't exist
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
-Constants:
+## Constants
 - [`trackChangesOn = 2`](const-trackchangeson.md)
 - [`trackChangesValues = 4`](const-trackchangesvalues.md)

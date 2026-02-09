@@ -4,9 +4,17 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeaterPorter.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Export and Import tools for FieldtypeRepeater
 
-Methods:
+Common methods:
+- [`exportConfigData()`](method-exportconfigdata.md)
+- [`importConfigData()`](method-importconfigdata.md)
+- [`exportValue()`](method-exportvalue.md)
+- [`importValue()`](method-importvalue.md)
+
+## Methods
 - [`exportConfigData(Field $field, array $data): array`](method-exportconfigdata.md) Export configuration values for external consumption
 - [`importConfigData(Field $field, array $data, array &$errors): array`](method-importconfigdata.md) Convert an array of exported data to a format that will be understood internally
 - [`exportValue(Page $page, Field $field, RepeaterPageArray $value, array $options = array()): array`](method-exportvalue.md) Export repeater value

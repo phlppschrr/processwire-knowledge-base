@@ -4,9 +4,18 @@ Source: `wire/core/Database.php`
 
 Implements: `WireDatabase`
 
+## Summary
+
 Database class provides a layer on top of mysqli
 
-Methods:
+Common methods:
+- [`query()`](method-query.md)
+- [`queryLog()`](method-querylog.md)
+- [`getTables()`](method-gettables.md)
+- [`isOperator()`](method-isoperator.md)
+- [`setThrowExceptions()`](method-setthrowexceptions.md)
+
+## Methods
 - [`__construct(string|Config $host = 'localhost', string $user = null, string $pass = null, string $db = null, int $port = null, string $socket = null)`](method-__construct.md) Construct the Database
 - [`query(string $sql, int $resultmode = MYSQLI_STORE_RESULT): mixed`](method-query.md) Overrides default mysqli query method so that it also records and times queries.
 - [`queryLog(string $sql = ''): array|bool`](method-querylog.md) Log a query or return the query log

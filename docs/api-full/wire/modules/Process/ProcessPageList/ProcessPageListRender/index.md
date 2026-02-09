@@ -4,13 +4,21 @@ Source: `wire/modules/Process/ProcessPageList/ProcessPageListRender.php`
 
 Inherits: `Wire`
 
+## Summary
+
+Base class for Page List rendering
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`setOption()`](method-setoption.md)
+- [`getOption()`](method-getoption.md)
+- [`setStart()`](method-setstart.md)
+- [`setLimit()`](method-setlimit.md)
 
 Groups:
 Group: [other](group-other.md)
 
-Base class for Page List rendering
-
-Methods:
+## Methods
 - [`__construct(Page $page, PageArray $children)`](method-__construct.md) Construct
 - [`wired()`](method-wired.md) Wired to ProcessWire instance
 - [`setOption(string $key, mixed $value): $this`](method-setoption.md) Set option

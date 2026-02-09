@@ -5,11 +5,19 @@ Source: `wire/core/Tfa.php`
 Inherits: `WireData`
 Implements: `Module`, `ConfigurableModule`
 
+## Summary
+
+Tfa - ProcessWire Two Factor Authentication module base class
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`init()`](method-init.md)
+- [`getTfaTypeName()`](method-gettfatypename.md)
+- [`getTfaTypeTitle()`](method-gettfatypetitle.md)
+- [`getTfaTypeSummary()`](method-gettfatypesummary.md)
 
 Groups:
 Group: [other](group-other.md)
-
-Tfa - ProcessWire Two Factor Authentication module base class
 
 This class is for “Tfa” modules to extend. See the TfaEmail and TfaTotp modules as examples.
 
@@ -42,7 +50,7 @@ SETTINGS
 
 TEXT LABELS
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`wired()`](method-wired.md) Called when assigned to ProcessWire instance
 - [`init()`](method-init.md) Module init

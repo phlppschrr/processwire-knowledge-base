@@ -4,11 +4,20 @@ Source: `wire/core/FileLog.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire FileLog
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`cleanStr()`](method-cleanstr.md)
+- [`save()`](method-save.md)
+- [`removeLineFromChunk()`](method-removelinefromchunk.md)
+- [`size()`](method-size.md)
 
 Creates and maintains a text-based log file.
 
-Methods:
+## Methods
 - [`__construct(string $path, string $identifier = '')`](method-__construct.md) Construct the FileLog
 - [`wired()`](method-wired.md) Wired to API
 - [`__get(string $name): mixed`](method-__get.md)
@@ -34,6 +43,6 @@ Methods:
 - [`chunkSize(int $chunkSize = 0): int`](method-chunksize.md) Get or set the default chunk size used when reading from logs and not overridden by method argument
 - [`path(): string`](method-path.md) Get path where the log is stored (with trailing slash)
 
-Constants:
+## Constants
 - [`defaultChunkSize = 12288`](const-defaultchunksize.md)
 - [`debug = false`](const-debug.md)

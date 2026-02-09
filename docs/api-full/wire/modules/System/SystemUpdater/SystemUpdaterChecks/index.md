@@ -4,12 +4,21 @@ Source: `wire/modules/System/SystemUpdater/SystemUpdaterChecks.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Class to check for potential issues in the system that may require updates from the admin
+
+Common methods:
+- [`setShowNotices()`](method-setshownotices.md)
+- [`setTestAll()`](method-settestall.md)
+- [`execute()`](method-execute.md)
+- [`checkIndexFile()`](method-checkindexfile.md)
+- [`checkHtaccessFile()`](method-checkhtaccessfile.md)
 
 All check* methods in this class return true if the check was a success and there are no problem,
 or they return false if the check failed and there is a potential issue to resolve.
 
-Methods:
+## Methods
 - [`setShowNotices(bool $showNotices = true)`](method-setshownotices.md) Set whether or not to show verbose notices
 - [`setTestAll(bool $testAll = true)`](method-settestall.md) Set whether or not to test all checks (as if all checks failed)
 - [`execute(): array`](method-execute.md) Run all system checks and return array of results

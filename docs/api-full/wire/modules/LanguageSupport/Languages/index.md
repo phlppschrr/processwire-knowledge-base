@@ -4,11 +4,19 @@ Source: `wire/modules/LanguageSupport/Languages.php`
 
 Inherits: `PagesType`
 
+## Summary
+
+ProcessWire Languages (plural) Class
+
+Common methods:
+- [`translator()`](method-translator.md)
+- [`getPageClass()`](method-getpageclass.md)
+- [`getLoadOptions()`](method-getloadoptions.md)
+- [`getJoinFieldNames()`](method-getjoinfieldnames.md)
+- [`getAll()`](method-getall.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Languages (plural) Class
 
 API variable $languages enables access to all Language pages and various helper methods.
 The $languages API variable is most commonly used for iteration of all installed languages.
@@ -22,7 +30,7 @@ foreach($languages as $language) {
 }
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct(ProcessWire $wire, array $templates = array(), array $parents = array())`](method-__construct.md) Construct
 - [`translator(Language $language): LanguageTranslator`](method-translator.md) Return the LanguageTranslator instance for the given language
 - [`findOther(string|Language $selector = '', Language|null $excludeLanguage = null): PageArray`](method-findother.md) Find and return all languages except current user language

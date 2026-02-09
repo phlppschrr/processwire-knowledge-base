@@ -5,14 +5,23 @@ Source: `wire/core/PageimageVariations.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`, `Countable`
 
+## Summary
+
 ProcessWire PageimageVariations
+
+Common methods:
+- [`count()`](method-count.md)
+- [`getInfo()`](method-getinfo.md)
+- [`find()`](method-find.md)
+- [`rebuild()`](method-rebuild.md)
+- [`remove()`](method-remove.md)
 
 Helper class for Pageimage that handles variation collection methods
 
 
 @since 3.0.137
 
-Methods:
+## Methods
 - [`__construct(Pageimage $pageimage)`](method-__construct.md) Construct
 - [`count(array $options = array()): int`](method-count.md) Return a total or filtered count of variations
 - [`getInfo(string $basename, array|bool $options = array()): bool|string|array`](method-getinfo.md) Given a file name (basename), return array of info if this is a variation for this instance’s file, or false if not.

@@ -4,7 +4,15 @@ Source: `wire/core/FieldSelectorInfo.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Class that provides information about selectors for Fieldtypes
+
+Common methods:
+- [`getSelectorInfo()`](method-getselectorinfo.md)
+- [`getSelectorInfoTemplate()`](method-getselectorinfotemplate.md)
+- [`getOperators()`](method-getoperators.md)
+- [`getOperatorLabels()`](method-getoperatorlabels.md)
 
 This is primarily a helper for the base Fieldtype class getSelectorInfo method
 
@@ -16,7 +24,7 @@ validation and improved help and error messaging when building/testing selectors
 This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`getSelectorInfo(Field $field): array`](method-getselectorinfo.md) Return array with information about what properties and operators can be used with this field
 - [`getSelectorInfoTemplate(): array`](method-getselectorinfotemplate.md) Return the default selector info template array

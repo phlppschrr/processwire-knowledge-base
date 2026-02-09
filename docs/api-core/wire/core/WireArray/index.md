@@ -5,11 +5,19 @@ Source: `wire/core/WireArray.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`, `ArrayAccess`, `Countable`
 
+## Summary
+
+ProcessWire WireArray
+
+Common methods:
+- [`isValidItem()`](method-isvaliditem.md)
+- [`isValidKey()`](method-isvalidkey.md)
+- [`isIdentical()`](method-isidentical.md)
+- [`getItemKey()`](method-getitemkey.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire WireArray
 
 WireArray is the base array access object used in the ProcessWire framework.
 
@@ -31,7 +39,7 @@ Below are all the public methods you can use to interact with WireArray types in
 methods, you can also treat WireArray types like regular PHP arrays, in that you can `foreach()` them and get or
 set elements using array syntax, i.e. `$value = $items[$key];` to get an item or `$items[] = $item;` to add an item.
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`isValidItem(mixed $item): bool`](method-isvaliditem.md) Is the given item valid for storange in this array?
 - [`isValidKey(string|int $key): bool`](method-isvalidkey.md) Is the given item key valid for use in this array?

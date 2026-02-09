@@ -2,7 +2,16 @@
 
 Source: `wire/core/Punycode.php`
 
+## Summary
+
 Punycode implementation as described in RFC 3492
+
+Common methods:
+- [`encode()`](method-encode.md)
+- [`encodePart()`](method-encodepart.md)
+- [`decode()`](method-decode.md)
+- [`decodePart()`](method-decodepart.md)
+- [`calculateThreshold()`](method-calculatethreshold.md)
 
 @link http://tools.ietf.org/html/rfc3492
 
@@ -28,7 +37,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Methods:
+## Methods
 - [`__construct(string $encoding = 'UTF-8')`](method-__construct.md) Constructor
 - [`encode(string $input): string`](method-encode.md) Encode a domain to its Punycode version
 - [`encodePart(string $input): string`](method-encodepart.md) Encode a part of a domain name, such as tld, to its Punycode version
@@ -40,5 +49,5 @@ Methods:
 - [`charToCodePoint(string $char): integer`](method-chartocodepoint.md) Convert a single or multi-byte character to its code point
 - [`codePointToChar(integer $code): string`](method-codepointtochar.md) Convert a code point to its single or multi-byte character
 
-Constants:
+## Constants
 - [`BASE = 36`](const-base.md)

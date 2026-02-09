@@ -4,13 +4,21 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/RepeaterPage.php`
 
 Inherits: `Page`
 
+## Summary
+
+RepeaterPage represents an individual repeater page item
+
+Common methods:
+- [`setForPage()`](method-setforpage.md)
+- [`getForPage()`](method-getforpage.md)
+- [`setForField()`](method-setforfield.md)
+- [`getForField()`](method-getforfield.md)
+- [`getForRoot()`](method-getforroot.md)
 
 Groups:
 Group: [other](group-other.md)
 
-RepeaterPage represents an individual repeater page item
-
-Methods:
+## Methods
 - [`setForPage(Page $forPage): $this`](method-setforpage.md) Set the page that owns this repeater item
 - [`getForPage(): Page`](method-getforpage.md) Return the page that this repeater item is for
 - [`setForField(Field $forField): $this`](method-setforfield.md) Set the field that owns this repeater item

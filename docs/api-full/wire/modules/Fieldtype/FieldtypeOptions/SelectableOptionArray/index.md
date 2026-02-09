@@ -4,13 +4,21 @@ Source: `wire/modules/Fieldtype/FieldtypeOptions/SelectableOptionArray.php`
 
 Inherits: `WireArray`
 
+## Summary
+
+ProcessWire Selectable Option Array, for FieldtypeOptions
+
+Common methods:
+- [`setPage()`](method-setpage.md)
+- [`getPage()`](method-getpage.md)
+- [`setField()`](method-setfield.md)
+- [`getField()`](method-getfield.md)
+- [`of()`](method-of.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire Selectable Option Array, for FieldtypeOptions
-
-Methods:
+## Methods
 - [`setPage(Page $page)`](method-setpage.md) Set the these options live on
 - [`getPage(): NullPage|Page`](method-getpage.md) Returns page these options are for, if applicable (NullPage otherwise)
 - [`setField(Field $field)`](method-setfield.md) Set the field these options are for

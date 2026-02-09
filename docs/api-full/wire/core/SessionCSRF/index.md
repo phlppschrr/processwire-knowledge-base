@@ -4,7 +4,16 @@ Source: `wire/core/SessionCSRF.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire CSRF Protection
+
+Common methods:
+- [`getTokenName()`](method-gettokenname.md)
+- [`getTokenValue()`](method-gettokenvalue.md)
+- [`getTokenTime()`](method-gettokentime.md)
+- [`getToken()`](method-gettoken.md)
+- [`getSingleUseToken()`](method-getsingleusetoken.md)
 
 Provides an API for cross site request forgery protection.
 ~~~~
@@ -26,7 +35,7 @@ if($session->CSRF->hasValidToken()) {
 $session->CSRF->validate();
 ~~~~
 
-Methods:
+## Methods
 - [`getTokenName(int|string|null $id = ''): string`](method-gettokenname.md) Get a CSRF Token name, or create one if it doesn't yet exist
 - [`getTokenValue(int|string|null $id = ''): string`](method-gettokenvalue.md) Get a CSRF Token value as stored in the session, or create one if it doesn't yet exist
 - [`getTokenTime(int|string|null $id = ''): int`](method-gettokentime.md) Get a CSRF Token timestamp

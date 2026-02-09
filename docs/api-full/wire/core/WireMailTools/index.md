@@ -4,12 +4,19 @@ Source: `wire/core/WireMailTools.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire Mail Tools (`$mail` API variable)
+
+Common methods:
+- [`new()`](method-___new.md)
+- [`send()`](method-send.md)
+- [`sendHTML()`](method-sendhtml.md)
+- [`mail()`](method-mail.md)
+- [`mailHTML()`](method-mailhtml.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Mail Tools ($mail API variable)
-
 
 Provides an API interface to email and WireMail.
 ~~~~~
@@ -31,7 +38,7 @@ $numSent = $mail->subject('Hello world')
   ->send();
 ~~~~~
 
-Methods:
+## Methods
 - [`new(array|string $options = array()): WireMail`](method-___new.md) (hookable) Get a new WireMail instance for sending email
 - [`send(string|array $to = '', string $from = '', string $subject = '', string|array $body = '', array|string $options = array()): int|WireMail`](method-send.md) Send an email
 - [`sendHTML(string|array $to = '', string $from = '', string $subject = '', string $bodyHTML = '', array|string $options = array()): int|WireMail`](method-sendhtml.md) Send an email with given message text assumed to be HTML

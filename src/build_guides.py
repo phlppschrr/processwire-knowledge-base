@@ -63,6 +63,7 @@ class GuidePage:
     category: str
     file: Path
     kind: str = "page"
+    date: str | None = None
 
 
 @dataclass
@@ -550,12 +551,25 @@ def parse_html_doc(url: str, html_text: str) -> GuideDoc:
     summary = None
     for block in blocks:
         if block.kind == "paragraph" and block.text:
+            if is_blog_post_url(url) and is_blog_summary_noise(block.text):
+                continue
             summary = block.text
             break
     if not summary:
         summary = meta_desc
         
     return GuideDoc(url=url, title=title, summary=summary, blocks=blocks, date=post_date)
+
+
+def is_blog_summary_noise(text: str) -> bool:
+    if not text:
+        return False
+    lowered = text.lower()
+    if "comment" in lowered and " by " in lowered:
+        return True
+    if BLOG_DATE_RE.search(text) and " by " in lowered:
+        return True
+    return False
 
 
 def maybe_wrap_code(text: str) -> str:
@@ -1060,16 +1074,17 @@ def build_index(pages: list[GuidePage], out_path: Path) -> None:
 def build_manifest(pages: list[GuidePage], out_path: Path, root: Path) -> None:
     items = []
     for page in pages:
-        items.append(
-            {
-                "title": page.title,
-                "url": page.url,
-                "category": page.category,
-                "file": Path(page.file).relative_to(root).as_posix(),
-                "summary": page.summary,
-                "kind": page.kind,
-            }
-        )
+        item = {
+            "title": page.title,
+            "url": page.url,
+            "category": page.category,
+            "file": Path(page.file).relative_to(root).as_posix(),
+            "summary": page.summary,
+            "kind": page.kind,
+        }
+        if page.date:
+            item["date"] = page.date
+        items.append(item)
     out_path.write_text(
         json.dumps({"items": items}, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
@@ -1079,19 +1094,40 @@ def build_manifest(pages: list[GuidePage], out_path: Path, root: Path) -> None:
 def build_search_index(pages: list[GuidePage], out_path: Path, root: Path) -> None:
     items = []
     for page in pages:
-        items.append(
-            {
-                "title": page.title,
-                "category": page.category,
-                "file": Path(page.file).relative_to(root).as_posix(),
-                "summary": page.summary,
-                "kind": page.kind,
-            }
-        )
+        item = {
+            "title": page.title,
+            "category": page.category,
+            "file": Path(page.file).relative_to(root).as_posix(),
+            "summary": page.summary,
+            "kind": page.kind,
+        }
+        if page.date:
+            item["date"] = page.date
+        items.append(item)
     out_path.write_text(
         json.dumps({"items": items}, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
+
+
+def extract_date_from_filename(path: Path) -> str | None:
+    match = re.match(r"(\\d{4}-\\d{2}-\\d{2})-", path.name)
+    if not match:
+        return None
+    return match.group(1)
+
+
+def build_blog_index(pages: list[GuidePage], out_path: Path, root: Path) -> None:
+    def sort_key(page: GuidePage) -> tuple[str, str]:
+        date = page.date or extract_date_from_filename(page.file) or ""
+        return (date, page.title.lower())
+
+    lines: list[str] = ["# ProcessWire Blog Posts (Extracted)", ""]
+    for page in sorted(pages, key=sort_key, reverse=True):
+        date = page.date or extract_date_from_filename(page.file) or "unknown-date"
+        rel_link = Path(os.path.relpath(page.file, start=out_path.parent))
+        lines.append(f"- `{date}` [{page.title}]({rel_link.as_posix()})")
+    out_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
 def main() -> int:
@@ -1158,6 +1194,7 @@ def main() -> int:
             rel_out = url_to_out_path(url, date_prefix=date_prefix)
             page_path = out_dir / rel_out
             render_guide_page(doc, page_path, link_index=link_index)
+            is_blog = is_blog_post_url(url)
             pages.append(
                 GuidePage(
                     url=url,
@@ -1165,6 +1202,8 @@ def main() -> int:
                     summary=extract_summary_from_doc(doc),
                     category=category,
                     file=page_path,
+                    kind="blog-post" if is_blog else "page",
+                    date=doc.date if is_blog else None,
                 )
             )
 
@@ -1254,9 +1293,20 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     guides_root = out_dir / "documentation"
     guides_root.mkdir(parents=True, exist_ok=True)
-    build_index(pages, guides_root / "index.md")
-    build_manifest(pages, guides_root / "_manifest.json", out_dir)
-    build_search_index(pages, guides_root / "_search.json", out_dir)
+
+    docs_pages = [p for p in pages if p.category != "Blog"]
+    blog_pages = [p for p in pages if p.category == "Blog"]
+
+    build_index(docs_pages, guides_root / "index.md")
+    build_manifest(docs_pages, guides_root / "_manifest.json", out_dir)
+    build_search_index(docs_pages, guides_root / "_search.json", out_dir)
+
+    if blog_pages:
+        blog_root = out_dir / "blog-posts"
+        blog_root.mkdir(parents=True, exist_ok=True)
+        build_blog_index(blog_pages, blog_root / "index.md", out_dir)
+        build_manifest(blog_pages, blog_root / "_manifest.json", out_dir)
+        build_search_index(blog_pages, blog_root / "_search.json", out_dir)
 
     return 0
 

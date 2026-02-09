@@ -4,11 +4,19 @@ Source: `wire/core/Notice.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire Notice
+
+Common methods:
+- [`set()`](method-set.md)
+- [`get()`](method-get.md)
+- [`flags()`](method-flags.md)
+- [`flag()`](method-flag.md)
+- [`flagNames()`](method-flagnames.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Notice
 
 Notice
 Manages notifications in the ProcessWire admin, primarily for internal use.
@@ -18,7 +26,7 @@ Notice items come in three different classes: NoticeMessage, NoticeWarning and N
 They are all identical in terms of API, with the only difference being that they render as
 informational messages, warnings, or errors.
 
-Methods:
+## Methods
 - [`__construct(string $text, int|string|array $flags = 0)`](method-__construct.md) Create the Notice
 - [`set(string $key, mixed $value): $this|WireData`](method-set.md) Set property
 - [`get(string $key): mixed`](method-get.md) Get property
@@ -31,7 +39,7 @@ Methods:
 - [`getName(): string`](method-getname.md) Get the name for this type of Notice
 - [`viewable(): bool`](method-viewable.md) Is this notice viewable at runtime?
 
-Constants:
+## Constants
 - [`prepend = 1`](const-prepend.md)
 - [`debug = 2`](const-debug.md)
 - [`log = 8`](const-log.md)

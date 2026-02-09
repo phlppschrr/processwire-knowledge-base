@@ -4,9 +4,18 @@ Source: `wire/core/ModulesConfigs.php`
 
 Inherits: `ModulesClass`
 
+## Summary
+
 ProcessWire Modules: Configs
 
-Methods:
+Common methods:
+- [`configData()`](method-configdata.md)
+- [`getModuleEditUrl()`](method-getmoduleediturl.md)
+- [`getConfig()`](method-getconfig.md)
+- [`isConfigurable()`](method-isconfigurable.md)
+- [`isConfigable()`](method-isconfigable.md)
+
+## Methods
 - [`getModuleEditUrl(string|Module $className, bool $collapseInfo = true): string`](method-getmoduleediturl.md) Return the URL where the module can be edited, configured or uninstalled
 - [`getConfig(string|Module $class, string $property = ''): array|string|int|float`](method-getconfig.md) Given a module name, return an associative array of configuration data for it
 - [`isConfigurable(Module|string $class, bool $useCache = true): bool|string|int`](method-isconfigurable.md) Is the given module interactively configurable?

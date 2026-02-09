@@ -4,7 +4,12 @@ Source: `wire/core/Selector.php`
 
 Inherits: `SelectorContains`
 
+## Summary
+
 Selector for advanced text searches that interprets specific search commands
+
+Common methods:
+- [`valueToCommands()`](method-valuetocommands.md)
 
 - `foo` Optional word has no prefix.
 - `+foo` Required word has a "+" prefix.
@@ -17,5 +22,5 @@ Selector for advanced text searches that interprets specific search commands
 
 Note that to designate a phrase, it must be in "double quotes" (not 'single quotes').
 
-Methods:
+## Methods
 - [`valueToCommands(string $value): array`](method-valuetocommands.md) Return array of advanced search commands from given value

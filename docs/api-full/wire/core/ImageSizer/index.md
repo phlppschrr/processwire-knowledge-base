@@ -4,11 +4,19 @@ Source: `wire/core/ImageSizer.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire ImageSizer with Engines for ProcessWire 3.x
+
+Common methods:
+- [`getEngines()`](method-getengines.md)
+- [`getEngineInfo()`](method-getengineinfo.md)
+- [`newImageSizerEngine()`](method-newimagesizerengine.md)
+- [`newDefaultImageSizerEngine()`](method-newdefaultimagesizerengine.md)
+- [`resize()`](method-___resize.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire ImageSizer with Engines for ProcessWire 3.x
 
 ImageSizer handles resizing of a single JPG, GIF, or PNG image using GD2
 or another supported and configured engine. (Imagick, ImageMagick, Netpbm)
@@ -21,7 +29,7 @@ Other user contributions as noted.
 Copyright (C) 2016-2019 by Horst Nogajski and Ryan Cramer
 This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 
-Methods:
+## Methods
 - [`__construct(string $filename = '', array $options = array())`](method-__construct.md) Construct the ImageSizer for a single image
 - [`getEngines(bool $forceReload = false): array`](method-getengines.md) Get array of all available ImageSizer engine names in order of priority
 - [`getEngineInfo(string $name = ''): array`](method-getengineinfo.md) Get array of information for all ImageSizer engines (or optionally a specific ImageSizer engine)

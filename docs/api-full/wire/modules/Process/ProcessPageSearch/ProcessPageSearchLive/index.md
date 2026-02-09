@@ -4,16 +4,23 @@ Source: `wire/modules/Process/ProcessPageSearch/ProcessPageSearchLive.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessPageSearch: Live Search (for PW admin)
+
+Common methods:
+- [`setSearchTypesOrder()`](method-setsearchtypesorder.md)
+- [`setNoSearchTypes()`](method-setnosearchtypes.md)
+- [`setDefaultOperators()`](method-setdefaultoperators.md)
+- [`init()`](method-init.md)
+- [`execute()`](method-___execute.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessPageSearch: Live Search (for PW admin)
-
-
 @todo support searching repeaters
 
-Methods:
+## Methods
 - [`__construct(?Process $process = null, array $liveSearch = array())`](method-__construct.md) Construct
 - [`setSearchTypesOrder(array $types)`](method-setsearchtypesorder.md) Set order of search types
 - [`setNoSearchTypes(array $types)`](method-setnosearchtypes.md) Set types that should be excluded unless specifically asked for

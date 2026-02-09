@@ -4,15 +4,22 @@ Source: `wire/core/PageimageDebugInfo.php`
 
 Inherits: `WireData`
 
+## Summary
+
+Debug info for Pageimage
+
+Common methods:
+- [`get()`](method-get.md)
+- [`getBasicDebugInfo()`](method-getbasicdebuginfo.md)
+- [`getVerboseDebugInfo()`](method-getverbosedebuginfo.md)
+- [`arrayToObject()`](method-arraytoobject.md)
 
 Groups:
 Group: [other](group-other.md)
 
-Debug info for Pageimage
-
 By Horst Nogajski for ProcessWire
 
-Methods:
+## Methods
 - [`__construct(Pageimage $pageimage)`](method-__construct.md) Construct
 - [`get(string $key): mixed|null`](method-get.md) Get property
 - [`getBasicDebugInfo(): array`](method-getbasicdebuginfo.md) Get basic debug info, like that used for Pageimage::__debugInfo()

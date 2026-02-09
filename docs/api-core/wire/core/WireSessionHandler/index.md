@@ -5,14 +5,23 @@ Source: `wire/core/WireSessionHandler.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
 ProcessWire Session Handler
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`init()`](method-init.md)
+- [`hookSessionInit()`](method-hooksessioninit.md)
+- [`attach()`](method-attach.md)
+- [`open()`](method-open.md)
 
 This is an abstract class for a session handler module to extend from.
 It provides the interface and some basic functions. For an example, see:
 It provides the interface and some basic functions. For an example, see:
 /wire/modules/Session/SessionHandlerDB/SessionHandlerDB.module
 
-Methods:
+## Methods
 - [`wired()`](method-wired.md) Initialize the save handler when $modules sets the current instance
 - [`init()`](method-init.md) Initailize, called when module configuration has been populated
 - [`hookSessionInit(HookEvent $event)`](method-hooksessioninit.md) Hook before Session::init

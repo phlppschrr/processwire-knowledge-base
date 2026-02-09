@@ -4,13 +4,22 @@ Source: `wire/modules/AdminTheme/AdminThemeDefault/AdminThemeDefaultHelpers.php`
 
 Inherits: `WireData`
 
+## Summary
+
 AdminThemeDefaultHelpers.php
+
+Common methods:
+- [`_()`](method-_.md)
+- [`getHeadline()`](method-getheadline.md)
+- [`renderBreadcrumbs()`](method-renderbreadcrumbs.md)
+- [`renderAdminShortcuts()`](method-renderadminshortcuts.md)
+- [`renderAdminNotices()`](method-renderadminnotices.md)
 
 Rendering helper functions for use with ProcessWire admin theme.
 
 __('FOR TRANSLATORS: please translate the file /wire/templates-admin/default.php rather than this one.');
 
-Methods:
+## Methods
 - [`_(string $text): string`](method-_.md) Perform a translation, based on text from shared admin file: /wire/templates-admin/default.php
 - [`getHeadline(): string`](method-getheadline.md) Get the headline for the current admin page
 - [`renderBreadcrumbs(bool $appendCurrent = true): string`](method-renderbreadcrumbs.md) Render a list of breadcrumbs (list items), excluding the containing <ul>

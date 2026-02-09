@@ -4,14 +4,22 @@ Source: `wire/core/User.php`
 
 Inherits: `Page`
 
+## Summary
+
+ProcessWire UserPage
+
+Common methods:
+- [`wired()`](method-wired.md)
+- [`hasRole()`](method-hasrole.md)
+- [`addRole()`](method-addrole.md)
+- [`removeRole()`](method-removerole.md)
+- [`hasPermission()`](method-haspermission.md)
 
 Groups:
 Group: [access](group-access.md)
 Group: [common](group-common.md)
 Group: [languages](group-languages.md)
 Group: [other](group-other.md)
-
-ProcessWire UserPage
 
 A type of Page used for storing an individual User
 
@@ -27,7 +35,7 @@ Note that when getting, this returns a hashed version of the password, so it is 
 However, it is useful to set this property if you want to change the password. When you change a password, it is assumed
 to be the non-hashed/non-encrypted version. ProcessWire will hash it automatically when the user is saved.
 
-Methods:
+## Methods
 - [`__construct(?Template $tpl = null)`](method-__construct.md) Create a new User page in memory.
 - [`hasRole(string|Role|int $role): bool`](method-hasrole.md) Does this user have the given Role?
 - [`addRole(string|int|Role $role): bool`](method-addrole.md) Add Role to this user

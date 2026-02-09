@@ -5,8 +5,16 @@ Source: `wire/core/Inputfield.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
 ProcessWire Inputfield - base class for Inputfield modules.
 
+Common methods:
+- [`init()`](method-init.md)
+- [`install()`](method-___install.md)
+- [`uninstall()`](method-___uninstall.md)
+- [`isSingular()`](method-issingular.md)
+- [`isAutoload()`](method-isautoload.md)
 
 An Inputfield for an actual form input field widget, and this is provided as the base class
 for different kinds of form input widgets provided as modules.
@@ -121,7 +129,7 @@ $form->add($inputfield);
 - [`getConfigArray(): array`](method-___getconfigarray.md)
 - [`getConfigAllowContext(Field $field): array`](method-___getconfigallowcontext.md)
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct the Inputfield, setting defaults for all properties
 - [`init()`](method-init.md) Per the Module interface, init() is called after any configuration data has been populated to the Inputfield, but before render.
 - [`install()`](method-___install.md) (hookable) Per the Module interface, this method is called when this Inputfield is installed
@@ -164,7 +172,7 @@ Methods:
 - [`addHeaderAction(array $settings = array()): array`](method-addheaderaction.md) Add header action
 - [`__debugInfo(): array`](method-__debuginfo.md) debugInfo PHP 5.6+ magic method
 
-Constants:
+## Constants
 - [`collapsedNo = 0`](const-collapsedno.md)
 - [`collapsedYes = 1`](const-collapsedyes.md)
 - [`collapsedBlank = 2`](const-collapsedblank.md)

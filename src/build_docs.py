@@ -658,6 +658,32 @@ def extract_summary_from_docblock(docblock: str | None) -> str | None:
     return extract_summary_from_lines(body)
 
 
+def extract_intro_summary(lines: list[str]) -> tuple[str | None, list[str]]:
+    if not lines:
+        return None, lines
+    idx = 0
+    while idx < len(lines) and lines[idx].strip() == "":
+        idx += 1
+    if idx >= len(lines):
+        return None, lines
+    first = lines[idx].strip()
+    if first.startswith(("#", "-", "```", "~~~~~")):
+        return None, lines
+    paragraph: list[str] = []
+    i = idx
+    while i < len(lines) and lines[i].strip() != "":
+        paragraph.append(lines[i].strip())
+        i += 1
+    if not paragraph:
+        return None, lines
+    summary = " ".join(paragraph).strip()
+    j = i
+    while j < len(lines) and lines[j].strip() == "":
+        j += 1
+    remaining = lines[:idx] + lines[j:]
+    return summary, remaining
+
+
 def split_type_and_desc(text: str) -> tuple[str, str]:
     parts = text.split(None, 1)
     if not parts:
@@ -671,6 +697,55 @@ def hookable_display_name(name: str) -> tuple[str, bool]:
     if name.startswith("___") and len(name) > 3:
         return name[3:], True
     return name, False
+
+
+CODE_SNIPPET_RE = re.compile(
+    r"(\$[A-Za-z_][A-Za-z0-9_]*(?:->\w+(?:\([^)]*\))?)?)"
+)
+
+
+def wrap_inline_code_snippets(text: str) -> str:
+    if not text or "$" not in text:
+        return text
+    parts = text.split("`")
+    for idx in range(0, len(parts), 2):
+        parts[idx] = CODE_SNIPPET_RE.sub(r"`\1`", parts[idx])
+    return "`".join(parts)
+
+
+MAGIC_METHODS = {
+    "__construct",
+    "__destruct",
+    "__get",
+    "__set",
+    "__isset",
+    "__unset",
+    "__call",
+    "__callStatic",
+    "__clone",
+    "__invoke",
+    "__toString",
+    "__debugInfo",
+    "__sleep",
+    "__wakeup",
+    "__serialize",
+    "__unserialize",
+}
+
+
+def build_mini_method_links(members: list[MemberDoc], limit: int = 5) -> list[str]:
+    links: list[str] = []
+    for member in members:
+        if member.kind != "method" or member.is_virtual:
+            continue
+        if member.name in MAGIC_METHODS:
+            continue
+        display_name, _ = hookable_display_name(member.name)
+        label = f"{display_name}()"
+        links.append(f"- [`{label}`](method-{slugify(member.name)}.md)")
+        if len(links) >= limit:
+            break
+    return links
 
 
 def parse_param_tag(text: str) -> tuple[str, str, str] | None:
@@ -1932,6 +2007,7 @@ def write_doc(
     group_summaries: dict[str, str] = {}
     intro_prefix: list[str] = []
     intro_suffix: list[str] = []
+    group_block: list[str] = []
 
     if class_info.docblock:
         intro_lines, grouped, order_groups, group_summaries = parse_class_docblock(class_info.docblock)
@@ -1949,22 +2025,42 @@ def write_doc(
                 if g not in ordered_names:
                     ordered_names.append(g)
 
-            lines.append("")
-            lines.append("Groups:")
+            group_block.append("Groups:")
             for group_name in ordered_names:
                 group_file = f"group-{slugify(group_name)}.md"
-                lines.append(f"Group: [{group_name}]({group_file})")
-            lines.append("")
+                group_block.append(f"Group: [{group_name}]({group_file})")
         if intro_lines:
             intro_lines = normalize_heading_lines(intro_lines)
             intro_lines = wrap_example_blocks(intro_lines)
             intro_lines = format_tag_lines(intro_lines, class_info.name, doc_index, index_path)
             intro_prefix, intro_suffix = split_intro_sections(intro_lines)
 
+    members_sorted = sorted(members, key=lambda m: m.pos)
+    mini_method_links = build_mini_method_links(members_sorted)
+    class_summary = None
+    if intro_prefix:
+        class_summary, intro_prefix = extract_intro_summary(intro_prefix)
+    if class_summary is None and not intro_prefix:
+        class_summary = extract_summary_from_docblock(class_info.docblock)
+    if class_summary or mini_method_links:
+        lines.append("## Summary")
+        lines.append("")
+        if class_summary:
+            lines.append(wrap_inline_code_snippets(class_summary))
+            lines.append("")
+        if mini_method_links:
+            lines.append("Common methods:")
+            lines.extend(mini_method_links)
+            lines.append("")
+    if group_block:
+        if lines and lines[-1] != "":
+            lines.append("")
+        lines.extend(group_block)
+        lines.append("")
+
     if intro_prefix:
         lines.extend(intro_prefix)
 
-    members_sorted = sorted(members, key=lambda m: m.pos)
     method_links: list[str] = []
     const_links: list[str] = []
     for member in members_sorted:
@@ -1993,12 +2089,12 @@ def write_doc(
     if method_links:
         if lines and lines[-1] != "":
             lines.append("")
-        lines.append("Methods:")
+        lines.append("## Methods")
         lines.extend(method_links)
     if const_links:
         if lines and lines[-1] != "":
             lines.append("")
-        lines.append("Constants:")
+        lines.append("## Constants")
         lines.extend(const_links)
 
     if intro_suffix:
@@ -2166,12 +2262,12 @@ def write_file_doc(out_dir: Path, file_info: FileInfo, doc_index: DocIndex):
     if method_links:
         if lines and lines[-1] != "":
             lines.append("")
-        lines.append("Methods:")
+        lines.append("## Methods")
         lines.extend(method_links)
     if const_links:
         if lines and lines[-1] != "":
             lines.append("")
-        lines.append("Constants:")
+        lines.append("## Constants")
         lines.extend(const_links)
 
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")

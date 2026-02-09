@@ -5,11 +5,19 @@ Source: `wire/core/Session.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`
 
+## Summary
+
+ProcessWire Session
+
+Common methods:
+- [`hasCookie()`](method-hascookie.md)
+- [`hasLoginCookie()`](method-haslogincookie.md)
+- [`init()`](method-___init.md)
+- [`isValidSession()`](method-___isvalidsession.md)
+- [`isValidFingerprint()`](method-isvalidfingerprint.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire Session
 
 Start a session with login/logout capability
 
@@ -37,7 +45,7 @@ bool $config->sessionCookieSecure Use secure cookies or session? (default=true)
 
 @todo add a default $config->apiUser to be used when non-HTTP/bootstrap usage
 
-Methods:
+## Methods
 - [`__construct(ProcessWire $wire)`](method-__construct.md) Start the session and set the current User if a session is active
 - [`hasCookie(bool $checkLogin = false): bool`](method-hascookie.md) Are session cookie(s) present?
 - [`hasLoginCookie(): bool`](method-haslogincookie.md) Is a session login cookie present?
@@ -81,7 +89,7 @@ Methods:
 - [`removeNotices()`](method-removenotices.md) Remove queued notices
 - [`CSRF(): SessionCSRF`](method-csrf.md) Return an instance of ProcessWire’s CSRF object, which provides an API for cross site request forgery protection.
 
-Constants:
+## Constants
 - [`fingerprintRemoteAddr = 2`](const-fingerprintremoteaddr.md)
 - [`fingerprintClientAddr = 4`](const-fingerprintclientaddr.md)
 - [`fingerprintUseragent = 8`](const-fingerprintuseragent.md)

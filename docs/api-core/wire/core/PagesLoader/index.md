@@ -4,14 +4,23 @@ Source: `wire/core/PagesLoader.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Loader
+
+Common methods:
+- [`setOutputFormatting()`](method-setoutputformatting.md)
+- [`getOutputFormatting()`](method-getoutputformatting.md)
+- [`setAutojoin()`](method-setautojoin.md)
+- [`getAutojoin()`](method-getautojoin.md)
+- [`normalizeSelectorString()`](method-normalizeselectorstring.md)
 
 Pages Loader
 $pages->loader
 Implements page finding/loading methods for the $pages API variable.
 Please always use `$pages->method()` rather than `$pages->loader->method()` in cases where there is overlap.
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`setOutputFormatting(bool $outputFormatting = true)`](method-setoutputformatting.md) Set whether loaded pages have their outputFormatting turned on or off
 - [`getOutputFormatting(): bool`](method-getoutputformatting.md) Get whether loaded pages have their outputFormatting turned on or off

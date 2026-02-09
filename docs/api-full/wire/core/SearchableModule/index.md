@@ -2,7 +2,12 @@
 
 Source: `wire/core/Module.php`
 
+## Summary
+
 Interface SearchableModule
+
+Common methods:
+- [`search()`](method-search.md)
 
 Interface for modules that implement a method and expected array return value
 for completing basic text searches (primarily for admin search engine).
@@ -26,5 +31,5 @@ public static function getModuleInfo() {
 }
 ~~~~~
 
-Methods:
+## Methods
 - [`search(string $text, array $options = array()): array`](method-search.md) Search for items containing $text and return an array representation of them

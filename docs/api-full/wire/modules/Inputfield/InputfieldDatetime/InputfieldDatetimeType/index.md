@@ -4,7 +4,16 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/InputfieldDatetimeType.php`
 
 Inherits: `WireData`
 
-Methods:
+## Summary
+
+Common methods:
+- [`getTypeName()`](method-gettypename.md)
+- [`getTypeLabel()`](method-gettypelabel.md)
+- [`getAttribute()`](method-getattribute.md)
+- [`setAttribute()`](method-setattribute.md)
+- [`getSetting()`](method-getsetting.md)
+
+## Methods
 - [`__construct(InputfieldDatetime $inputfield)`](method-__construct.md) Construct
 - [`getTypeName(): string`](method-gettypename.md) Get name for this type
 - [`getTypeLabel(): string`](method-gettypelabel.md) Get type label

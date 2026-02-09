@@ -4,9 +4,18 @@ Source: `wire/core/ModulesLoader.php`
 
 Inherits: `ModulesClass`
 
+## Summary
+
 ProcessWire Modules: Loader
 
-Methods:
+Common methods:
+- [`triggerInit()`](method-triggerinit.md)
+- [`initModule()`](method-initmodule.md)
+- [`readyModule()`](method-readymodule.md)
+- [`triggerReady()`](method-triggerready.md)
+- [`triggerConditionalAutoload()`](method-triggerconditionalautoload.md)
+
+## Methods
 - [`initModule(Module $module, array $options = array()): bool`](method-initmodule.md) Initialize a single module
 - [`readyModule(Module $module): bool`](method-readymodule.md) Call ready for a single module
 - [`triggerConditionalAutoload(): array`](method-triggerconditionalautoload.md) Init conditional autoload modules, if conditions allow

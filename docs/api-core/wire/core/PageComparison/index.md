@@ -2,11 +2,20 @@
 
 Source: `wire/core/PageComparison.php`
 
+## Summary
+
 ProcessWire Page Comparison
+
+Common methods:
+- [`is()`](method-is.md)
+- [`_if()`](method-_if.md)
+- [`matches()`](method-matches.md)
+- [`selectorMatches()`](method-selectormatches.md)
+- [`selectorMatchesProperty()`](method-selectormatchesproperty.md)
 
 Provides implementation for Page comparison functions.
 
-Methods:
+## Methods
 - [`is(Page $page, int|string|array|Selectors|Page|Template $status): bool`](method-is.md) Is this page of the given type? (status, template, etc.)
 - [`_if(Page $page, string|bool|int $key, string|callable|mixed $yes = '', string|callable|mixed $no = ''): mixed|string|bool`](method-_if.md) If value is available for $key return or call $yes condition (with optional $no condition)
 - [`matches(Page $page, string|array|Selectors $s, array $options = array()): bool`](method-matches.md) Given a Selectors object or a selector string, return whether this Page matches it

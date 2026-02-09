@@ -4,15 +4,23 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCETools.php`
 
 Inherits: `InputfieldTinyMCEClass`
 
+## Summary
+
+InputfieldTinyMCETools
+
+Common methods:
+- [`sanitizeNames()`](method-sanitizenames.md)
+- [`getImageField()`](method-getimagefield.md)
+- [`purifyValue()`](method-purifyvalue.md)
+- [`purifyValueToggles()`](method-purifyvaluetoggles.md)
+- [`purifier()`](method-purifier.md)
 
 Groups:
 Group: [other](group-other.md)
 
-InputfieldTinyMCETools
-
 Helper tools for InputfieldTinyMCE module.
 
-Methods:
+## Methods
 - [`sanitizeNames(string|array $value): string`](method-sanitizenames.md) Sanitize toolbar or plugin names
 - [`getImageField(): Field|null`](method-getimagefield.md) Get field that images can be uploaded to or null if none found
 - [`purifyValue(string $value): string`](method-purifyvalue.md) Clean up a value that will be sent to/from the editor

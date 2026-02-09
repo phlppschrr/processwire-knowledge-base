@@ -4,15 +4,22 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCEClass.php`
 
 Inherits: `Wire`
 
+## Summary
+
+InputfieldTinyMCEClass
+
+Common methods:
+- [`tools()`](method-tools.md)
+- [`configs()`](method-configs.md)
+- [`settings()`](method-settings.md)
+- [`formats()`](method-formats.md)
 
 Groups:
 Group: [other](group-other.md)
 
-InputfieldTinyMCEClass
-
 Helper for managing TinyMCE settings and defaults
 
-Methods:
+## Methods
 - [`__construct(InputfieldTinyMCE $inputfield)`](method-__construct.md) Construct
 - [`__get($name): array|mixed|string|null`](method-__get.md) Get
 - [`tools(): InputfieldTinyMCETools`](method-tools.md)

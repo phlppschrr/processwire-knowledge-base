@@ -5,12 +5,21 @@ Source: `wire/core/WireDataDB.php`
 Inherits: `WireData`
 Implements: `Countable`
 
+## Summary
+
 WireData with database storage
+
+Common methods:
+- [`get()`](method-get.md)
+- [`getArray()`](method-getarray.md)
+- [`set()`](method-set.md)
+- [`remove()`](method-remove.md)
+- [`removeAll()`](method-removeall.md)
 
 A WireData object that maintains its data in a database table rather than just in memory.
 An example of usage is the `$page->meta()` method.
 
-Methods:
+## Methods
 - [`__construct(int $sourceID, string $tableName)`](method-__construct.md) Construct
 - [`get(string $key): array|mixed|null`](method-get.md) Get the value for a specific property/name/key
 - [`getArray(): array|mixed|null`](method-getarray.md) Get all values in an associative array

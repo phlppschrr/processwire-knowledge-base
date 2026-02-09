@@ -2,6 +2,8 @@
 
 Source: `wire/core/ConfigurableModule.php`
 
+## Summary
+
 ProcessWire ConfigurableModule and ConfigModule Interfaces
 
 Provides the base interfaces required by modules.
@@ -49,7 +51,7 @@ method nor will it use a configuration php or json file.
 A module *must not* contain both the ConfigModule and ConfigurableModule interfaces
 in their implements definition at the same time, so choose just one.
 
-Methods:
+## Methods
 - [`__get($key): InputfieldWrapper`](method-__get.md) ******************************************************************************* getModuleConfigInputfields method (static or non-static)
 - [`__get($key): array`](method-__get.md) ****************************************************************************** Return an array defining Inputfields (static or non-static)
 - [`__get(string $key): mixed`](method-__get.md) Get a module config property

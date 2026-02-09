@@ -2,12 +2,21 @@
 
 Source: `wire/core/PageTraversal.php`
 
+## Summary
+
 ProcessWire Page Traversal
+
+Common methods:
+- [`numChildren()`](method-numchildren.md)
+- [`numDescendants()`](method-numdescendants.md)
+- [`children()`](method-children.md)
+- [`child()`](method-child.md)
+- [`parents()`](method-parents.md)
 
 Provides implementation for Page traversal functions.
 Based upon the jQuery traversal functions.
 
-Methods:
+## Methods
 - [`numChildren(Page $page, bool|string|int|array $selector = null, array $options = array()): int`](method-numchildren.md) Return number of children, optionally with conditions
 - [`numDescendants(Page $page, bool|string|int|array $selector = null): int`](method-numdescendants.md) Return number of descendants, optionally with conditions
 - [`children(Page $page, string|array $selector = '', array $options = array()): PageArray`](method-children.md) Return this page's children pages, optionally filtered by a selector

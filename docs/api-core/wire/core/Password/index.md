@@ -4,16 +4,24 @@ Source: `wire/core/Password.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire Password Fieldtype
+
+Common methods:
+- [`matches()`](method-matches.md)
+- [`setPass()`](method-___setpass.md)
+- [`salt()`](method-salt.md)
+- [`randomBase64String()`](method-randombase64string.md)
+- [`isBlowfish()`](method-isblowfish.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire Password Fieldtype
-
 Class to hold combined password/salt info. Uses Blowfish when possible.
 Specially used by FieldtypePassword.
 
-Methods:
+## Methods
 - [`matches(string $pass): bool`](method-matches.md) Does this Password match the given string?
 - [`__get(string $name): mixed`](method-__get.md) Get a property via direct access ('salt' or 'hash')
 - [`__set(string $key, mixed $value)`](method-__set.md) Set a property

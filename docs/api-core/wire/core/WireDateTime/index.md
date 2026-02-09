@@ -4,15 +4,23 @@ Source: `wire/core/WireDateTime.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire Date/Time Tools (`$datetime` API variable)
+
+Common methods:
+- [`getDateFormats()`](method-getdateformats.md)
+- [`getTimeFormats()`](method-gettimeformats.md)
+- [`stringToTimestamp()`](method-stringtotimestamp.md)
+- [`formatDate()`](method-formatdate.md)
+- [`convertDateFormat()`](method-convertdateformat.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire Date/Time Tools ($datetime API variable)
-
 The $datetime API variable provides helpers for working with dates/times and conversion between formats.
 
-Methods:
+## Methods
 - [`getDateFormats(): array`](method-getdateformats.md) Return all predefined PHP date() formats for use as dates
 - [`getTimeFormats(): array`](method-gettimeformats.md) Return all predefined PHP date() formats for use as times
 - [`stringToTimestamp(string $str, string $format): int`](method-stringtotimestamp.md) Given a date/time string and expected format, convert it to a unix timestamp

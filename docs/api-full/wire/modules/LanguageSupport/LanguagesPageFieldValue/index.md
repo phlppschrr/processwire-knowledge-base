@@ -5,9 +5,18 @@ Source: `wire/modules/LanguageSupport/LanguagesPageFieldValue.php`
 Inherits: `Wire`
 Implements: `LanguagesValueInterface`, `IteratorAggregate`
 
+## Summary
+
 Serves as a multi-language value placeholder for field values that contain a value in more than one language.
 
-Methods:
+Common methods:
+- [`wired()`](method-wired.md)
+- [`importArray()`](method-importarray.md)
+- [`setLanguageValue()`](method-setlanguagevalue.md)
+- [`setLanguageValues()`](method-setlanguagevalues.md)
+- [`setFromInputfield()`](method-setfrominputfield.md)
+
+## Methods
 - [`__construct(Page|null $page = null, Field|null $field = null, array|string $values = null)`](method-__construct.md) Construct the multi language value
 - [`wired()`](method-wired.md) Wired to API
 - [`setLanguageValue(int|Language|string $languageID, mixed $value): $this`](method-setlanguagevalue.md) Sets the value for a given language
@@ -30,6 +39,6 @@ Methods:
 - [`languageSupport(): null|LanguageSupport`](method-languagesupport.md)
 - [`defaultLanguagePageID(): int`](method-defaultlanguagepageid.md)
 
-Constants:
+## Constants
 - [`langBlankInheritDefault = 0`](const-langblankinheritdefault.md)
 - [`langBlankInheritNone = 1`](const-langblankinheritnone.md)

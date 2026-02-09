@@ -4,6 +4,16 @@ Source: `wire/core/Config.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire Config
+
+Common methods:
+- [`get()`](method-get.md)
+- [`url()`](method-url.md)
+- [`urls()`](method-urls.md)
+- [`setLocation()`](method-setlocation.md)
+- [`setPath()`](method-setpath.md)
 
 Groups:
 Group: [admin](group-admin.md)
@@ -22,8 +32,6 @@ Group: [system-IDs](group-system-ids.md)
 Group: [template-files](group-template-files.md)
 Group: [URLs](group-urls.md)
 
-ProcessWire Config
-
 Handles ProcessWire configuration data
 
 This file is licensed under the MIT license
@@ -37,7 +45,7 @@ For more detailed descriptions of these $config properties, including default va
 
 @see /wire/config.php for more detailed descriptions of all config properties.
 
-Methods:
+## Methods
 - [`url(string|Wire $for): string|null`](method-url.md) Get URL for requested resource or module
 - [`urls(string|Wire $for = ''): null|string|Paths`](method-urls.md) Get URL for requested resource or module or get all URLs if no argument
 - [`setLocation(string $for, string $dir, string|bool $url = ''): self`](method-setlocation.md) Given a directory to a named location, updates $config->paths and $config->urls for it
@@ -58,6 +66,6 @@ Methods:
 - [`versionUrls(array|FilenameArray|WireArray|\ArrayObject $urls, bool|null|string $useVersion = null): array`](method-versionurls.md) Given array of file asset URLs return them with cache-busting version strings
 - [`versionUrl(string $url, bool|null|string $useVersion = null): string`](method-versionurl.md) Given a file asset URLs return it with cache-busting version string
 
-Constants:
+## Constants
 - [`debugVerbose = 2`](const-debugverbose.md)
 - [`debugDev = 'dev'`](const-debugdev.md)

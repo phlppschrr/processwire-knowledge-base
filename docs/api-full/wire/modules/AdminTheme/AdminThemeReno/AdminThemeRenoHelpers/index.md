@@ -4,7 +4,16 @@ Source: `wire/modules/AdminTheme/AdminThemeReno/AdminThemeRenoHelpers.php`
 
 Inherits: `AdminThemeDefaultHelpers`
 
-Methods:
+## Summary
+
+Common methods:
+- [`renderAdminNotices()`](method-renderadminnotices.md)
+- [`renderQuicklinks()`](method-renderquicklinks.md)
+- [`renderTopNav()`](method-rendertopnav.md)
+- [`topNavItems()`](method-___topnavitems.md)
+- [`renderSideNavItem()`](method-rendersidenavitem.md)
+
+## Methods
 - [`renderAdminNotices(Notices $notices, array $options = array()): string`](method-renderadminnotices.md) Render runtime notices div#notices
 - [`renderQuicklinks(Page $page, array $items, string $title, string $json = ''): string`](method-renderquicklinks.md) Render quicklinks for templates/fields. Designed to be called by renderSideNav()
 - [`renderTopNav(): string`](method-rendertopnav.md) Render top navigation items

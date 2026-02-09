@@ -4,9 +4,18 @@ Source: `wire/modules/Pages/PagesVersions/PagesVersionsFiles.php`
 
 Inherits: `Wire`
 
+## Summary
+
 File management for PagesVersions
 
-Methods:
+Common methods:
+- [`copyPageVersionFiles()`](method-copypageversionfiles.md)
+- [`deletePageVersionFiles()`](method-deletepageversionfiles.md)
+- [`restorePageVersionFiles()`](method-restorepageversionfiles.md)
+- [`copyPageFieldVersionFiles()`](method-copypagefieldversionfiles.md)
+- [`deletePageFieldVersionFiles()`](method-deletepagefieldversionfiles.md)
+
+## Methods
 - [`__construct(PagesVersions $pagesVersions)`](method-__construct.md) Construct
 - [`copyPageVersionFiles(Page $page, int $version): bool|int`](method-copypageversionfiles.md) Copy files for given $page into version directory
 - [`deletePageVersionFiles(Page $page, int $version): bool`](method-deletepageversionfiles.md) Delete files for given version

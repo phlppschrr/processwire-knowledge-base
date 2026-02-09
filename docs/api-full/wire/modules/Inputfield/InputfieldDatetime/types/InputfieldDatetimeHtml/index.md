@@ -4,9 +4,18 @@ Source: `wire/modules/Inputfield/InputfieldDatetime/types/InputfieldDatetimeHtml
 
 Inherits: `InputfieldDatetimeType`
 
+## Summary
+
 HTML5 date/time input types
 
-Methods:
+Common methods:
+- [`renderReady()`](method-renderready.md)
+- [`render()`](method-render.md)
+- [`renderDate()`](method-renderdate.md)
+- [`renderTime()`](method-rendertime.md)
+- [`processInput()`](method-processinput.md)
+
+## Methods
 - [`renderReady()`](method-renderready.md) Render ready
 - [`render(): string`](method-render.md)
 - [`renderDate(): string`](method-renderdate.md) Render date input

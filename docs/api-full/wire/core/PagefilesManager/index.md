@@ -4,11 +4,19 @@ Source: `wire/core/PagefilesManager.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire PagefilesManager
+
+Common methods:
+- [`init()`](method-init.md)
+- [`setPage()`](method-setpage.md)
+- [`getFiles()`](method-getfiles.md)
+- [`getFile()`](method-getfile.md)
+- [`_copyFiles()`](method-_copyfiles.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire PagefilesManager
 
 Manages files and file directories for a page independent of a particular field.
 Files in ProcessWire are always connected with a particular `Field` on a `Page`. This is typically
@@ -34,7 +42,7 @@ $filesPath = $page->filesManager->path();
 $filesURL = $page->filesManager->url();
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct(Page $page)`](method-__construct.md) Construct the PagefilesManager and ensure all needed paths are created
 - [`getFiles(): array`](method-getfiles.md) Get an array of all published filenames on the current Page.
 - [`getFile(string $name): Pagefile|Pageimage|null`](method-getfile.md) Get the Pagefile object containing the given filename.
@@ -52,6 +60,6 @@ Methods:
 - [`__get(string $name): mixed`](method-__get.md) Handle non-function versions of some properties
 - [`getTempPath(): string`](method-gettemppath.md) Return a path where temporary files can be stored unique to this ProcessWire instance
 
-Constants:
+## Constants
 - [`defaultSecurePathPrefix = '.'`](const-defaultsecurepathprefix.md)
 - [`extendedDirName = '0/'`](const-extendeddirname.md)

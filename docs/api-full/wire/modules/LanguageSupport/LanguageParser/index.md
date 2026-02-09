@@ -4,13 +4,22 @@ Source: `wire/modules/LanguageSupport/LanguageParser.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Language Parser
+
+Common methods:
+- [`getAlternates()`](method-getalternates.md)
+- [`getComments()`](method-getcomments.md)
+- [`getUntranslated()`](method-getuntranslated.md)
+- [`getNumFound()`](method-getnumfound.md)
+- [`getTextFromHash()`](method-gettextfromhash.md)
 
 Parses a PHP file to locate all function calls containing translatable text and their optional comments.
 
 Return the results by calling $parser->getUntranslated() and $parser->getComments();
 
-Methods:
+## Methods
 - [`__construct(LanguageTranslator $translator, string $file)`](method-__construct.md) Construct the Language Parser
 - [`getAlternates(string $hash = ''): array`](method-getalternates.md) Get phrase alternates
 - [`getComments(): array`](method-getcomments.md) Return all found comments, indexed by hash

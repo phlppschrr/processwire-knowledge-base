@@ -5,13 +5,22 @@ Source: `wire/modules/Fieldtype/FieldtypeComments/CommentForm.php`
 Inherits: `Wire`
 Implements: `CommentFormInterface`
 
+## Summary
+
 Default/example implementation of the CommentFormInterface
+
+Common methods:
+- [`setOptions()`](method-setoptions.md)
+- [`getOptions()`](method-getoptions.md)
+- [`arrayOption()`](method-arrayoption.md)
+- [`labels()`](method-labels.md)
+- [`attrs()`](method-attrs.md)
 
 Generates a user input form for comments, processes comment input, and saves to the page
 
 @see CommentArray::renderForm()
 
-Methods:
+## Methods
 - [`__construct(Page $page, CommentArray $comments, array $options = array())`](method-__construct.md) Construct a CommentForm
 - [`setOptions(array $options)`](method-setoptions.md) Initialize and set options
 - [`getOptions(): array`](method-getoptions.md) Get options

@@ -5,12 +5,19 @@ Source: `wire/core/WireMail.php`
 Inherits: `WireData`
 Implements: `WireMailInterface`
 
-
-Groups:
-Group: [other](group-other.md)
+## Summary
 
 ProcessWire WireMail
 
+Common methods:
+- [`get()`](method-get.md)
+- [`set()`](method-set.md)
+- [`sanitizeEmail()`](method-sanitizeemail.md)
+- [`sanitizeHeaderName()`](method-___sanitizeheadername.md)
+- [`sanitizeHeaderValue()`](method-___sanitizeheadervalue.md)
+
+Groups:
+Group: [other](group-other.md)
 
 A module type that handles sending of email in ProcessWire
 $m
@@ -54,7 +61,7 @@ $m->param('-f you@company.com'); // PHP mail() param (envelope from example)
 $numSent = $m->send();
 ~~~~~
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct
 - [`get(string $key): mixed|null`](method-get.md) Get property
 - [`set(string $key, mixed $value): $this|WireData`](method-set.md) Set property

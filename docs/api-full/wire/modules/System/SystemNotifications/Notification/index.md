@@ -4,11 +4,19 @@ Source: `wire/modules/System/SystemNotifications/Notification.php`
 
 Inherits: `WireData`
 
+## Summary
+
+An individual notification item to be part of a NotificationArray for a Page
+
+Common methods:
+- [`is()`](method-is.md)
+- [`flagNameToFlag()`](method-flagnametoflag.md)
+- [`flagNamesToFlags()`](method-flagnamestoflags.md)
+- [`setFlag()`](method-setflag.md)
+- [`addFlag()`](method-addflag.md)
 
 Groups:
 Group: [other](group-other.md)
-
-An individual notification item to be part of a NotificationArray for a Page
 
 @class Notification
 
@@ -24,7 +32,7 @@ An individual notification item to be part of a NotificationArray for a Page
 - `$progress: int` progress percent 0-100
 - `$expires: int` datetime after which will automatically be deleted
 
-Methods:
+## Methods
 - [`__construct()`](method-__construct.md) Construct a new Notification
 - [`is(string $name): bool`](method-is.md) Does this Notification match the given flag name(s)?
 - [`flagNameToFlag(string $name): int`](method-flagnametoflag.md) Given a flag name, return the corresponding flag value
@@ -40,5 +48,5 @@ Methods:
 - [`isExpired(): bool`](method-isexpired.md) Is this Notification expired?
 - [`__toString(): string`](method-__tostring.md) String value of a Notification
 
-Constants:
+## Constants
 - [`flagDebug = 2`](const-flagdebug.md)

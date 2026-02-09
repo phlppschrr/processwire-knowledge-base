@@ -4,14 +4,23 @@ Source: `wire/core/PagesEditor.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire Pages Editor
+
+Common methods:
+- [`isCloning()`](method-iscloning.md)
+- [`add()`](method-add.md)
+- [`isSaveable()`](method-issaveable.md)
+- [`isMoveable()`](method-ismoveable.md)
+- [`isDeleteable()`](method-isdeleteable.md)
 
 Pages Editor
 $pages->editor
 Implements page editing and manipulation methods for the $pages API variable.
 Please always use `$pages->method()` rather than `$pages->editor->method()` in cases where there is overlap.
 
-Methods:
+## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct
 - [`isCloning(bool $getDepth = false): bool|int`](method-iscloning.md) Are we currently in a page clone?
 - [`add(string|Template $template, string|int|Page $parent, string $name = '', array $values = array()): Page`](method-add.md) Add a new page using the given template to the given parent

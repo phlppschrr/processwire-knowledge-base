@@ -5,11 +5,20 @@ Source: `wire/core/FilenameArray.php`
 Inherits: `Wire`
 Implements: `IteratorAggregate`, `Countable`
 
+## Summary
+
 ProcessWire FilenameArray
+
+Common methods:
+- [`add()`](method-add.md)
+- [`getKey()`](method-getkey.md)
+- [`prepend()`](method-prepend.md)
+- [`append()`](method-append.md)
+- [`getIterator()`](method-getiterator.md)
 
 Manages array of filenames or file URLs, like for $config->scripts and $config->styles.
 
-Methods:
+## Methods
 - [`add(string $filename): $this`](method-add.md) Add a file
 - [`getKey(string $filename): string`](method-getkey.md) Get key for $filename that excludes query strings
 - [`prepend(string $filename): $this`](method-prepend.md) Prepend $filename to the beginning

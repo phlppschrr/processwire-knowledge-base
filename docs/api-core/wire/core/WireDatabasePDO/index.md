@@ -5,7 +5,16 @@ Source: `wire/core/WireDatabasePDO.php`
 Inherits: `Wire`
 Implements: `WireDatabase`
 
+## Summary
+
 Database class provides a layer on top of mysqli
+
+Common methods:
+- [`getInstance()`](method-getinstance.md)
+- [`_init()`](method-_init.md)
+- [`reset()`](method-reset.md)
+- [`close()`](method-close.md)
+- [`pdo()`](method-pdo.md)
 
 All database operations in ProcessWire are performed via this PDO-style database class.
 ProcessWire creates the database connection automatically at boot and this is available from the `$database` API variable.
@@ -34,7 +43,7 @@ $db = new WireDatabasePDO([
 ]);
 ~~~~~
 
-Methods:
+## Methods
 - [`reset(string|null $type = null): self`](method-reset.md) Reset the current PDO connection(s)
 - [`pdoWriter(): \PDO`](method-pdowriter.md) Return read-write (primary) PDO connection
 - [`pdoReader(): \PDO`](method-pdoreader.md) Return read-only PDO connection if available or read/write PDO connection if not

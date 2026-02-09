@@ -5,8 +5,16 @@ Source: `wire/modules/Inputfield/InputfieldTinyMCE/InputfieldTinyMCE.module.php`
 Inherits: `InputfieldTextarea`
 Implements: `ConfigurableModule`
 
+## Summary
+
 InputfieldTinyMCE
 
+Common methods:
+- [`getModuleInfo()`](method-getmoduleinfo.md)
+- [`init()`](method-init.md)
+- [`useFeature()`](method-usefeature.md)
+- [`mcePath()`](method-mcepath.md)
+- [`setConfigName()`](method-setconfigname.md)
 
 TinyMCE 6.x, Copyright (c) 2023 Ephox Corporation DBA Tiny Technologies, Inc.
 https://www.tiny.cloud/docs/tinymce/6/
@@ -59,7 +67,7 @@ There are also `$lang_name=packname` settings in multi-lang sites where "name" i
 - `$external_plugins: array` URLs of external plugins, this is also a TinyMCE setting
 - [`getModuleConfigInputfields(InputfieldWrapper $inputfields): void`](method-___getmoduleconfiginputfields.md)
 
-Methods:
+## Methods
 - [`getModuleInfo(): array`](method-getmoduleinfo.md) Get module info
 - [`__construct()`](method-__construct.md) Construct
 - [`init()`](method-init.md) Init Inputfield
@@ -87,6 +95,6 @@ Methods:
 - [`getConfigInputfields(): InputfieldWrapper`](method-___getconfiginputfields.md) (hookable) Get Inputfield configuration settings
 - [`getModuleConfigInputfields(InputfieldWrapper $inputfields)`](method-___getmoduleconfiginputfields.md) (hookable) Module config
 
-Constants:
+## Constants
 - [`mceVersion = '6.8.2'`](const-mceversion.md)
 - [`defaultPasteFilter`](const-defaultpastefilter.md)

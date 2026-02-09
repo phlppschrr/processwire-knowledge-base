@@ -2,9 +2,18 @@
 
 Source: `wire/core/WireMailInterface.php`
 
+## Summary
+
 ProcessWire WireMail Interface
 
-Methods:
+Common methods:
+- [`to()`](method-to.md)
+- [`from()`](method-from.md)
+- [`subject()`](method-subject.md)
+- [`body()`](method-body.md)
+- [`bodyHTML()`](method-bodyhtml.md)
+
+## Methods
 - [`to(string|array|null $email = null, string $name = null): self`](method-to.md) Set the email to address
 - [`from($email, $name = null): self`](method-from.md) Set the email from address
 - [`subject(string $subject): self`](method-subject.md) Set the email subject

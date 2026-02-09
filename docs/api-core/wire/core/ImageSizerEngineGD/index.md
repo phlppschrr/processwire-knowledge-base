@@ -4,11 +4,19 @@ Source: `wire/core/ImageSizerEngineGD.php`
 
 Inherits: `ImageSizerEngine`
 
+## Summary
+
+ProcessWire ImageSizerGD
+
+Common methods:
+- [`validSourceImageFormats()`](method-validsourceimageformats.md)
+- [`validTargetImageFormats()`](method-validtargetimageformats.md)
+- [`getLibraryVersion()`](method-getlibraryversion.md)
+- [`supported()`](method-supported.md)
+- [`processResize()`](method-processresize.md)
 
 Groups:
 Group: [other](group-other.md)
-
-ProcessWire ImageSizerGD
 
 Code for IPTC, auto rotation and sharpening by Horst Nogajski.
 http://nogajski.de/
@@ -18,7 +26,7 @@ Other user contributions as noted.
 Copyright (C) 2016-2019 by Horst Nogajski and Ryan Cramer
 This file licensed under Mozilla Public License v2.0 http://mozilla.org/MPL/2.0/
 
-Methods:
+## Methods
 - [`validSourceImageFormats(): array`](method-validsourceimageformats.md) Get formats GD and resize
 - [`validTargetImageFormats(): array`](method-validtargetimageformats.md) Get an array of image file extensions this ImageSizerModule can create
 - [`getLibraryVersion(): string`](method-getlibraryversion.md) Get library version string

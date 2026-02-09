@@ -4,7 +4,16 @@ Source: `wire/core/PagefileExtra.php`
 
 Inherits: `WireData`
 
+## Summary
+
 Extra extension for Pagefile or Pageimage objects
+
+Common methods:
+- [`setPagefile()`](method-setpagefile.md)
+- [`setExtension()`](method-setextension.md)
+- [`exists()`](method-exists.md)
+- [`filesize()`](method-filesize.md)
+- [`filesizeStr()`](method-filesizestr.md)
 
 ## Properties
 
@@ -36,7 +45,7 @@ Extra extension for Pagefile or Pageimage objects
 - [`create(): bool`](method-___create.md)
 - [`noCacheURL($http = false): string`](method-___nocacheurl.md)
 
-Methods:
+## Methods
 - [`__construct(Pagefile $pagefile, $extension)`](method-__construct.md) Construct
 - [`setPagefile(Pagefile $pagefile)`](method-setpagefile.md) Set Pagefile instance this extra is connected to
 - [`setExtension($extension)`](method-setextension.md) Set extension for this extra

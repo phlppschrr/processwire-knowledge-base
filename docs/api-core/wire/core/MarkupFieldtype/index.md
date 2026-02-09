@@ -5,7 +5,16 @@ Source: `wire/core/MarkupFieldtype.php`
 Inherits: `WireData`
 Implements: `Module`
 
+## Summary
+
 Class MarkupFieldtype
+
+Common methods:
+- [`render()`](method-render.md)
+- [`renderValue()`](method-rendervalue.md)
+- [`renderProperty()`](method-renderproperty.md)
+- [`valueToString()`](method-valuetostring.md)
+- [`arrayToString()`](method-arraytostring.md)
 
 Provides pre-packaged markup rendering for Fieldtypes
 and potentially serves as a module type. This base class
@@ -28,7 +37,7 @@ echo $m->render();
 // Render just a specific property:
 echo $m->render('property');
 
-Methods:
+## Methods
 - [`__construct(?Page $page = null, ?Field $field = null, mixed $value = null)`](method-__construct.md) Construct the MarkupFieldtype
 - [`render(string $property = ''): string`](method-render.md) Render markup for the field or for the property from field
 - [`renderValue(mixed $value): string`](method-rendervalue.md) Render the entire $page->get($field->name) value.

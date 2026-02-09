@@ -4,15 +4,23 @@ Source: `wire/core/WireFileTools.php`
 
 Inherits: `Wire`
 
+## Summary
+
+ProcessWire File Tools (`$files` API variable)
+
+Common methods:
+- [`mkdir()`](method-mkdir.md)
+- [`rmdir()`](method-rmdir.md)
+- [`chmod()`](method-chmod.md)
+- [`copy()`](method-copy.md)
+- [`unlink()`](method-unlink.md)
 
 Groups:
 Group: [other](group-other.md)
 
-ProcessWire File Tools ($files API variable)
-
 Helpers for working with files and directories.
 
-Methods:
+## Methods
 - [`__destruct()`](method-__destruct.md) Destruct
 - [`mkdir(string $path, bool|string $recursive = false, string|null|bool $chmod = null): bool`](method-mkdir.md) Create a directory that is writable to ProcessWire and uses the defined $config chmod settings
 - [`rmdir(string $path, bool $recursive = false, array|bool|string $options = array()): bool`](method-rmdir.md) Remove a directory and optionally everything within it (recursively)

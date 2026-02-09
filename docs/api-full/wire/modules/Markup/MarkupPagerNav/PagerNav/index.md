@@ -4,7 +4,13 @@ Source: `wire/modules/Markup/MarkupPagerNav/PagerNav.php`
 
 Implements: `IteratorAggregate`
 
+## Summary
+
 Collection of Pager items that determines which pagination links should be used
+
+Common methods:
+- [`getPager()`](method-getpager.md)
+- [`setLabels()`](method-setlabels.md)
 
 USAGE EXAMPLE:
 
@@ -18,7 +24,7 @@ foreach($pager as $pageLabel => $pageNum) {
 }
 ```
 
-Methods:
+## Methods
 - [`__construct(int $totalItems, int $itemsPerPage, int $currentPage)`](method-__construct.md) Construct the PagerNav
 - [`getPager(): array`](method-getpager.md) Returns an array contantaining $label => $pageNum
 - [`setLabels(string $previous, string $next)`](method-setlabels.md) Set the labels to use for the 'prev' and 'next' links

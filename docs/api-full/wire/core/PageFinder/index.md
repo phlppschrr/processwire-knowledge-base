@@ -4,7 +4,16 @@ Source: `wire/core/PageFinder.php`
 
 Inherits: `Wire`
 
+## Summary
+
 ProcessWire PageFinder
+
+Common methods:
+- [`init()`](method-init.md)
+- [`initSelectors()`](method-initselectors.md)
+- [`initStatus()`](method-initstatus.md)
+- [`find()`](method-___find.md)
+- [`findAlt()`](method-findalt.md)
 
 Matches selector strings to pages
 
@@ -19,7 +28,7 @@ Matches selector strings to pages
 - `$includeMode: string`
 - `$checkAccess: bool`
 
-Methods:
+## Methods
 - [`init(Selectors $selectors, array $options): array`](method-init.md) Initialize new find operation and prepare options
 - [`initSelectors(Selectors $selectors, array $options): array`](method-initselectors.md) Initialize the selectors to add Page status checks
 - [`initStatus(Selectors $selectors, array $options)`](method-initstatus.md) Initialize status checks

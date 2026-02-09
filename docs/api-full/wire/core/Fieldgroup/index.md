@@ -5,12 +5,20 @@ Source: `wire/core/Fieldgroup.php`
 Inherits: `WireArray`
 Implements: `Saveable`, `Exportable`, `HasLookupItems`
 
+## Summary
+
+ProcessWire Fieldgroup
+
+Common methods:
+- [`isValidItem()`](method-isvaliditem.md)
+- [`isValidKey()`](method-isvalidkey.md)
+- [`getItemKey()`](method-getitemkey.md)
+- [`makeBlankItem()`](method-makeblankitem.md)
+- [`add()`](method-add.md)
 
 Groups:
 Group: [other](group-other.md)
 Group: [retrieval](group-retrieval.md)
-
-ProcessWire Fieldgroup
 
 A group of fields that is ultimately attached to a Template.
 
@@ -22,7 +30,7 @@ as it appears that fields are attached directly to Templates. However, they
 are separated in the API in case want want to have fieldgroups used by
 multiple templates in the future (like ProcessWire 1.x).
 
-Methods:
+## Methods
 - [`add(Field|string $item): $this`](method-add.md) Add a field to this Fieldgroup
 - [`remove(Field|string $key): bool`](method-remove.md) Remove a field from this fieldgroup
 - [`softRemove(Field|string|int $field): bool|Fieldgroup|WireArray`](method-softremove.md) Remove a field without queueing it to be removed from database
@@ -39,5 +47,5 @@ Methods:
 - [`getNumTemplates(): int`](method-getnumtemplates.md) Get the number of templates using this Fieldgroup
 - [`saveContext(): int`](method-savecontext.md) Save field contexts for this fieldgroup
 
-Constants:
+## Constants
 - [`contextNamespacePrefix = 'NS_'`](const-contextnamespaceprefix.md)

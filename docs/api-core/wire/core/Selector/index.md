@@ -4,12 +4,20 @@ Source: `wire/core/Selector.php`
 
 Inherits: `WireData`
 
+## Summary
+
+ProcessWire Selector base type and implementation for various Selector types
+
+Common methods:
+- [`operator()`](method-operator.md)
+- [`field()`](method-field.md)
+- [`fields()`](method-fields.md)
+- [`value()`](method-value.md)
+- [`values()`](method-values.md)
 
 Groups:
 Group: [other](group-other.md)
 Group: [properties](group-properties.md)
-
-ProcessWire Selector base type and implementation for various Selector types
 
 Selectors hold a field, operator and value and are used in finding things
 
@@ -71,7 +79,7 @@ if($s->matches($page)) {
 - `SelectorEndsLike`
 - `SelectorBitwiseAnd`
 
-Methods:
+## Methods
 - [`__construct(string|array $field, string|int|array $value)`](method-__construct.md) Given a field name and value, construct the Selector.
 - [`operator(): string`](method-operator.md) Return the operator used by this Selector
 - [`field(bool|int $forceString = true): string|array|null`](method-field.md) Get the field(s) of this Selector
@@ -91,7 +99,7 @@ Methods:
 - [`sanitizeFieldName(string|array $fieldName): string|array`](method-sanitizefieldname.md) Sanitize field name
 - [`__toString()`](method-__tostring.md) The string value of Selector is always the selector string that it originated from
 
-Constants:
+## Constants
 - [`compareTypeExact = 1`](const-comparetypeexact.md)
 - [`compareTypeSort = 2`](const-comparetypesort.md)
 - [`compareTypeFind = 4`](const-comparetypefind.md)

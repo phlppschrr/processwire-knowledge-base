@@ -4,11 +4,20 @@ Source: `wire/modules/Fieldtype/FieldtypeRepeater/config.php`
 
 Inherits: `Wire`
 
+## Summary
+
 Class FieldtypeRepeaterConfigHelper
+
+Common methods:
+- [`getField()`](method-getfield.md)
+- [`isSingleMode()`](method-issinglemode.md)
+- [`getConfigInputfields()`](method-getconfiginputfields.md)
+- [`getConfigInputfieldsStorage()`](method-getconfiginputfieldsstorage.md)
+- [`saveConfigInputfields()`](method-saveconfiginputfields.md)
 
 Helper class for configuring repeater fields
 
-Methods:
+## Methods
 - [`__construct(Field $field)`](method-__construct.md) Construct
 - [`getField(): Field`](method-getfield.md)
 - [`isSingleMode(): bool`](method-issinglemode.md)
