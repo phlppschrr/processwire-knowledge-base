@@ -8,6 +8,7 @@ import os
 import re
 import sys
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 from html.parser import HTMLParser
@@ -51,6 +52,7 @@ class GuideDoc:
     title: str
     summary: str | None
     blocks: list[Block]
+    date: str | None = None
 
 
 @dataclass
@@ -464,12 +466,78 @@ def extract_title(text: str) -> str | None:
     return normalize_text(match.group(1))
 
 
+BLOG_DATE_RE = re.compile(
+    r"\b(\d{1,2}\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})\b"
+)
+
+
+def is_blog_post_url(url: str) -> bool:
+    parsed = urlparse(url)
+    path = (parsed.path or "").rstrip("/")
+    if not path.startswith("/blog/posts/"):
+        return False
+    slug = path[len("/blog/posts/") :]
+    return bool(slug) and "/" not in slug
+
+
+def parse_blog_date_text(text: str) -> str | None:
+    if not text:
+        return None
+    match = BLOG_DATE_RE.search(text)
+    if not match:
+        return None
+    date_text = match.group(1)
+    try:
+        return datetime.strptime(date_text, "%d %B %Y").strftime("%Y-%m-%d")
+    except ValueError:
+        return None
+
+
+def extract_blog_post_date(html_text: str, soup: BeautifulSoup | None = None) -> str | None:
+    if soup is not None:
+        date_node = soup.find("li", class_="date")
+        if date_node:
+            parsed = parse_blog_date_text(date_node.get_text(" ", strip=True))
+            if parsed:
+                return parsed
+    return parse_blog_date_text(html_text)
+
+
+def strip_blog_extras(soup: BeautifulSoup) -> None:
+    # Remove comments section
+    for comment_list in soup.select("ul#comments, ul.CommentList"):
+        heading = comment_list.find_previous(["h2", "h3", "h4", "h5"])
+        if heading and "comment" in heading.get_text(" ", strip=True).lower():
+            heading.decompose()
+        comment_list.decompose()
+    for comment_form in soup.select("form#CommentForm, form.CommentForm, .CommentForm"):
+        comment_form.decompose()
+    for comment_bits in soup.select(
+        ".CommentListItem, .CommentHeader, .CommentFooter, .CommentText"
+    ):
+        comment_bits.decompose()
+
+    # Remove prev/next post cards at the bottom
+    for article in soup.select("article.blog-post-summary"):
+        text = article.get_text(" ", strip=True).lower()
+        if text.startswith("prev") or text.startswith("next"):
+            article.decompose()
+    for container in soup.select("div.blog-posts"):
+        if not container.get_text(" ", strip=True):
+            container.decompose()
+
+
 def parse_html_doc(url: str, html_text: str) -> GuideDoc:
     meta_desc = extract_meta_description(html_text)
     main_html = extract_main_html(html_text)
     
     # Use html5lib to correctly handle implicitly closed tags (like <p>)
     soup = BeautifulSoup(main_html, "html5lib")
+
+    post_date = None
+    if is_blog_post_url(url):
+        strip_blog_extras(soup)
+        post_date = extract_blog_post_date(html_text, soup)
     
     blocks = extract_blocks_from_soup(soup)
     
@@ -487,7 +555,7 @@ def parse_html_doc(url: str, html_text: str) -> GuideDoc:
     if not summary:
         summary = meta_desc
         
-    return GuideDoc(url=url, title=title, summary=summary, blocks=blocks)
+    return GuideDoc(url=url, title=title, summary=summary, blocks=blocks, date=post_date)
 
 
 def maybe_wrap_code(text: str) -> str:
@@ -700,13 +768,18 @@ def url_to_cache_path(url: str) -> str:
     return f"{host}{path}"
 
 
-def url_to_out_path(url: str) -> Path:
+def url_to_out_path(url: str, date_prefix: str | None = None) -> Path:
     parsed = urlparse(url)
     path = parsed.path.strip("/")
     if not path:
         path = "docs"
     if path.endswith("/"):
         path = path[:-1]
+    if date_prefix and is_blog_post_url(url):
+        parts = path.split("/")
+        if parts:
+            parts[-1] = f"{date_prefix}-{parts[-1]}"
+            path = "/".join(parts)
     return Path(f"{path}.md")
 
 
@@ -725,6 +798,10 @@ def load_url_groups(path: Path) -> list[tuple[str, list[str]]]:
                 continue
             lower = label.lower()
             if lower.startswith("processwire docs pages") or lower.startswith("one url per line"):
+                continue
+            if label.startswith("http://") or label.startswith("https://"):
+                continue
+            if current_name == "Blog" and label != "Blog":
                 continue
             if label:
                 if current_urls:
@@ -1058,7 +1135,8 @@ def main() -> int:
             html_text = html_path.read_text(encoding="utf-8", errors="replace")
             doc = parse_html_doc(url, html_text)
             docs[url] = doc
-            rel_out = url_to_out_path(url)
+            date_prefix = doc.date if is_blog_post_url(url) else None
+            rel_out = url_to_out_path(url, date_prefix=date_prefix)
             page_path = out_dir / rel_out
             render_guide_page(doc, page_path, link_index=link_index)
             pages.append(

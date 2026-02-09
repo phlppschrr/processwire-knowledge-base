@@ -10,8 +10,17 @@
 
 ## Getting Started
 
+- [About the ProcessWire API](docs/start/api.md)
+- [API access](docs/start/api-access.md)
 - [Getting started with ProcessWire CMS](docs/start.md)
+- [Pages in ProcessWire CMS and how they work](docs/start/structure/pages.md)
+- [ProcessWire API variables](docs/start/variables.md)
+- [ProcessWire CMS template files (PHP)](docs/start/templates.md)
+- [ProcessWire fields and how they work (all custom fields)](docs/start/structure/fields.md)
+- [ProcessWire file system structure](docs/start/structure/files.md)
 - [ProcessWire installation guide](docs/start/install.md)
+- [ProcessWire structure (Pages, Templates, Fields)](docs/start/structure.md)
+- [ProcessWire templates and how they work](docs/start/structure/templates.md)
 
 ## Front-end
 
@@ -84,6 +93,8 @@
 
 ## Tutorials
 
+- [ProcessWire tutorial: how to structure template files](docs/tutorials/how-to-structure-your-template-files.md)
+- [ProcessWire tutorial: using custom page types](docs/tutorials/using-custom-page-types-in-processwire.md)
 - [ProcessWire tutorials](docs/tutorials.md)
 
 ## Other
