@@ -67,7 +67,7 @@ def fetch_url(url: str, out_path: Path, refresh: bool, timeout: float) -> CacheR
         req = Request(
             url,
             headers={
-                "User-Agent": "processwire-docs-skill/0.1 (+https://processwire.com/)"
+                "User-Agent": "processwire-knowledge-base/0.1 (+https://processwire.com/)"
             },
         )
         with urlopen(req, timeout=timeout) as resp:

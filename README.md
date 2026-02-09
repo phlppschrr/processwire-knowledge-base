@@ -1,12 +1,12 @@
-# ProcessWire Docs Skill
+# ProcessWire Knowledge Base Skill
 
-This repository builds an LLM-friendly documentation skill from ProcessWire core PHPDoc. It extracts text verbatim, treats `#pw-*` directives as metadata, and excludes `#pw-internal` and `@internal` items.
+This repository builds an LLM-friendly knowledge base skill from ProcessWire core PHPDoc and official guides. Content is extracted as Markdown, text is preserved verbatim where possible, `#pw-*` directives are treated as metadata, and `#pw-internal` / `@internal` items are excluded.
 
 ## Outputs
 - `docs/api-core/` — Core-only build (recommended for LLMs)
 - `docs/api-full/` — Full build (includes modules)
-- `docs/documentation/` — Extracted official docs (summaries + cheatsheets)
-- `docs/blog-posts/` — Extracted ProcessWire blog posts
+- `docs/documentation/` — Extracted official docs as Markdown (summaries + cheatsheets)
+- `docs/blog-posts/` — Extracted ProcessWire blog posts as Markdown
 - `docs/_hookable.json` — Global hookable index (core + full)
 - `docs/_tasks.json` — Tasks map (task → relevant classes/methods)
 
