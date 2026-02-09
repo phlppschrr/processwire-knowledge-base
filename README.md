@@ -58,3 +58,6 @@ python3 src/build_guides.py
 ## Notes
 - HTMLPurifier-related docs are skipped.
 - Sources are not committed (see `.gitignore`).
+
+## License
+This repository is licensed under the Mozilla Public License 2.0 (MPL-2.0). Documentation and blog content extracted from processwire.com remain subject to their original terms.
