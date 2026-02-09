@@ -2,8 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import json
+import re
 import subprocess
 import sys
+import datetime as dt
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -58,7 +61,8 @@ def main() -> int:
     parser.add_argument(
         "--branch",
         default=None,
-        help="ProcessWire branch to fetch",
+        choices=["dev", "master"],
+        help="ProcessWire branch to fetch (dev or master)",
     )
     parser.add_argument(
         "--remote",
@@ -73,6 +77,7 @@ def main() -> int:
     args = parser.parse_args()
 
     docs_root = Path(args.docs)
+    source_root = Path(args.source)
 
     build_docs = [
         sys.executable,
@@ -136,7 +141,64 @@ def main() -> int:
         ]
     )
 
+    write_version_meta(source_root, docs_root)
+
     return 0
+
+
+def write_version_meta(source_root: Path, docs_root: Path) -> None:
+    processwire_file = source_root / "wire/core/ProcessWire.php"
+    if not processwire_file.exists():
+        return
+    text = processwire_file.read_text(encoding="utf-8", errors="ignore")
+    version = extract_version(text)
+    suffix = extract_suffix(text)
+    if not version:
+        return
+
+    lock_path = source_root.parent / "processwire.lock"
+    branch = None
+    commit = None
+    if lock_path.exists():
+        for line in lock_path.read_text(encoding="utf-8").splitlines():
+            if line.startswith("branch="):
+                branch = line.split("=", 1)[1].strip() or None
+            elif line.startswith("commit="):
+                commit = line.split("=", 1)[1].strip() or None
+
+    meta = {
+        "version": version,
+        "suffix": suffix,
+        "branch": branch,
+        "commit": commit,
+        "generated": dt.date.today().strftime("%Y-%m-%d"),
+    }
+    out_path = docs_root / "_processwire_version.json"
+    out_path.write_text(
+        json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+
+def extract_version(text: str) -> str | None:
+    def find_const(name: str) -> str | None:
+        match = re.search(rf"const\s+{name}\s*=\s*(\d+)", text, re.I)
+        return match.group(1) if match else None
+
+    major = find_const("versionMajor")
+    minor = find_const("versionMinor")
+    revision = find_const("versionRevision")
+    if not (major and minor and revision):
+        return None
+    return f"{major}.{minor}.{revision}"
+
+
+def extract_suffix(text: str) -> str | None:
+    match = re.search(r"const\s+versionSuffix\s*=\s*'([^']*)'", text, re.I)
+    if not match:
+        return None
+    raw = match.group(1).strip()
+    return raw or None
 
 
 if __name__ == "__main__":

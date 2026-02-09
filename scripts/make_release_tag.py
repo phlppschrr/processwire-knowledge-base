@@ -6,10 +6,9 @@ import datetime as dt
 import re
 from pathlib import Path
 
-DEFAULT_SOURCE = (
-    Path(__file__).resolve().parents[1]
-    / "sources/processwire/wire/core/ProcessWire.php"
-)
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_SOURCE = ROOT / "sources/processwire/wire/core/ProcessWire.php"
+DEFAULT_META = ROOT / "docs/_processwire_version.json"
 
 VERSION_RE = {
     "major": re.compile(r"const\s+versionMajor\s*=\s*(\d+)", re.I),
@@ -59,23 +58,39 @@ def main() -> int:
         help="Path to ProcessWire.php (default: sources/processwire/wire/core/ProcessWire.php)",
     )
     parser.add_argument(
+        "--meta",
+        default=None,
+        help="Path to docs/_processwire_version.json (uses this instead of --source)",
+    )
+    parser.add_argument(
         "--date",
         default=None,
         help="Override date (YYYY-MM-DD). Defaults to today in local time.",
     )
     args = parser.parse_args()
 
-    source = Path(args.source)
-    if not source.exists():
-        raise SystemExit(f"Source file not found: {source}")
-
     if args.date:
         date_str = args.date
     else:
         date_str = dt.date.today().strftime("%Y-%m-%d")
 
-    text = source.read_text(encoding="utf-8", errors="ignore")
-    version, suffix = parse_version(text)
+    if args.meta:
+        meta_path = Path(args.meta)
+        if not meta_path.exists():
+            raise SystemExit(f"Meta file not found: {meta_path}")
+        import json
+
+        data = json.loads(meta_path.read_text(encoding="utf-8"))
+        version = data.get("version")
+        suffix = data.get("suffix")
+        if not version:
+            raise SystemExit("Meta file missing version")
+    else:
+        source = Path(args.source)
+        if not source.exists():
+            raise SystemExit(f"Source file not found: {source}")
+        text = source.read_text(encoding="utf-8", errors="ignore")
+        version, suffix = parse_version(text)
     tag = build_tag(version, suffix, date_str)
     print(tag)
     return 0

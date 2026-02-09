@@ -1,0 +1,73 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override release date (YYYY-MM-DD)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compute tag
+        id: tagger
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            tag=$(python3 scripts/make_release_tag.py --meta docs/_processwire_version.json --date "${{ github.event.inputs.date }}")
+          else
+            tag=$(python3 scripts/make_release_tag.py --meta docs/_processwire_version.json)
+          fi
+          echo "tag=$tag" >> $GITHUB_OUTPUT
+          echo "zip_name=processwire-knowledge-base-$tag.zip" >> $GITHUB_OUTPUT
+
+      - name: Build release notes
+        id: notes
+        shell: bash
+        run: |
+          python3 - <<'PY' > release_notes.md
+          import json
+          data = json.load(open('docs/_processwire_version.json', 'r', encoding='utf-8'))
+          print(f"ProcessWire version: {data.get('version')}")
+          if data.get('suffix'):
+              print(f"Suffix: {data.get('suffix')}")
+          if data.get('branch'):
+              print(f"Branch: {data.get('branch')}")
+          if data.get('commit'):
+              print(f"Commit: {data.get('commit')}")
+          if data.get('generated'):
+              print(f"Docs generated: {data.get('generated')}")
+          PY
+
+      - name: Package release
+        shell: bash
+        run: |
+          zip -r "${{ steps.tagger.outputs.zip_name }}" \
+            docs \
+            SKILL.md \
+            scripts \
+            README.md \
+            LICENSE \
+            NOTICE.md
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tagger.outputs.tag }}
+          name: ${{ steps.tagger.outputs.tag }}
+          body_path: release_notes.md
+          files: ${{ steps.tagger.outputs.zip_name }}

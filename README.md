@@ -41,11 +41,22 @@ This will:
 
 Downloads happen only if sources are missing. Use `python3 src/update_docs.py --fetch` to refresh.
 
+To pick the ProcessWire branch:
+```bash
+python3 src/update_docs.py --branch dev
+python3 src/update_docs.py --branch master
+```
+
 ## Release Tags
 Generate a ProcessWire+date release tag (e.g. `pw-3.0.255-2026-02-09`):
 ```bash
 python3 scripts/make_release_tag.py
 ```
+
+The docs build writes `docs/_processwire_version.json`, which is used by the release workflow.
+
+## Manual Release (GitHub Actions)
+Use the **Actions → Release** workflow and click **Run workflow**. You can optionally provide a date (YYYY-MM-DD). The workflow will tag the release and attach a ZIP with `docs/`, `SKILL.md`, and scripts.
 
 ## Optional: Cache Official Docs (HTML)
 ```bash
