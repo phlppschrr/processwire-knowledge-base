@@ -64,7 +64,7 @@ $db = new WireDatabasePDO([
 - [`prepare(string $statement, array|string|bool $driver_options = array(), string $note = ''): \PDOStatement|WireDatabasePDOStatement`](method-prepare.md) Prepare an SQL statement for accepting bound parameters
 - [`exec(string|\PDOStatement $statement, string $note = ''): bool|int`](method-exec.md) Execute an SQL statement string
 - [`execute(\PDOStatement $query, bool $throw = true, int $maxTries = 3): bool`](method-execute.md) Execute a PDO statement, with retry and error handling
-- [`queryLog(string|bool|int $sql = '', string $note = ''): array|bool`](method-querylog.md) Log a query, start/stop query logging, or return logged queries
+- [`queryLog(string|bool $sql = '', string $note = ''): array|bool`](method-querylog.md) Log a query, start/stop query logging, or return logged queries
 - [`getTables(bool $allowCache = true): array`](method-gettables.md) Get array of all tables in this database.
 - [`getColumns(string $table, bool|int|string $verbose = false): array`](method-getcolumns.md) Get all columns from given table
 - [`getIndexes(string $table, bool|int|string $verbose = false): array`](method-getindexes.md) Get all indexes from given table

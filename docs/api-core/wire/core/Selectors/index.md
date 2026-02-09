@@ -38,10 +38,8 @@ foreach($selectors as $selector) {
   echo "</p>";
 }
 ~~~~~
-For details on how to use selectors please see [Using Selectors](https://processwire.com/docs/selectors/)
-and [Selector Operators](https://processwire.com/docs/selectors/operators/).
 
-@link https://processwire.com/docs/selectors/ Official Selectors Documentation
+@link https://processwire.com/api/selectors/ Official Selectors Documentation
 
 
 @todo Move static helper methods to dedicated API var/class so this class can be more focused
