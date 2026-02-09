@@ -24,18 +24,18 @@ extended for more specific needs in various Fieldtypes.
 
 USAGE:
 
-$m = new MarkupFieldtype($page, $field, $value);
-echo $m->render();
+`$m` = new MarkupFieldtype(`$page`, `$field`, `$value`);
+echo `$m->render()`;
 
 // Alternate usage:
-$m = new MarkupFieldtype();
-$m->setPage($page);
-$m->setField($field);
-$m->setValue($value);
-echo $m->render();
+`$m` = new MarkupFieldtype();
+`$m->setPage($page)`;
+`$m->setField($field)`;
+`$m->setValue($value)`;
+echo `$m->render()`;
 
 // Render just a specific property:
-echo $m->render('property');
+echo `$m->render('property')`;
 
 ## Methods
 - [`__construct(?Page $page = null, ?Field $field = null, mixed $value = null)`](method-__construct.md) Construct the MarkupFieldtype

@@ -18,8 +18,8 @@ Common methods:
 Groups:
 Group: [other](group-other.md)
 
-API variable $languages enables access to all Language pages and various helper methods.
-The $languages API variable is most commonly used for iteration of all installed languages.
+API variable `$languages` enables access to all Language pages and various helper methods.
+The `$languages` API variable is most commonly used for iteration of all installed languages.
 ~~~~~
 foreach($languages as $language) {
   echo "<li>$language->title ($language->name) ";

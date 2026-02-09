@@ -18,8 +18,8 @@ Group: [other](group-other.md)
 Group: [paths-only](group-paths-only.md)
 
 Configuration paths and URLs (Paths class)
-Maintains lists of file paths or URLs, primarily used by the ProcessWire $config->paths and $urls API variables.
-$urls
+Maintains lists of file paths or URLs, primarily used by the ProcessWire `$config->paths` and `$urls` API variables.
+`$urls`
 
 The Paths class is used by `$config->paths` and `$config->urls` (or just `$urls`). The `$config->paths` refers to server disk paths
 while `$config->urls` refers to web server URLs. All of the same properties are present on both, though several properties
@@ -68,13 +68,13 @@ This file is licensed under the MIT license
 https://processwire.com/about/license/mit/
 
 
-## The Following Properties Are Only In $Config->Urls
+## The Following Properties Are Only In `$Config->Urls`
 
 - `$admin: string` Admin URL
 - `$next: string|null` URL to next pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 - `$prev: string|null` URL to previous pagination of current page, when applicable (populated by MarkupPagerNav, after render)
 
-## The Following Are In $Config->Urls And Equivalent To Previously Mentioned Properties, But Include Scheme + Host
+## The Following Are In `$Config->Urls` And Equivalent To Previously Mentioned Properties, But Include Scheme + Host
 
 - `$httpRoot: string` Full http/https URL to site root (i.e. https://domain.com/).
 - `$httpTemplates: string` Full http/https URL to site templates (i.e. https://domain.com/site/templates/).
@@ -86,7 +86,7 @@ https://processwire.com/about/license/mit/
 - `$httpNext: string` Full http/https URL to next pagination of current page (when applicable).
 - `$httpPrev: string` Full http/https URL to prev pagination of current page (when applicable).
 
-The "http" may be optionally prepended to any property accessed from $config->urls (including those you add yourself).
+The "http" may be optionally prepended to any property accessed from `$config->urls` (including those you add yourself).
 
 ## Methods
 - [`__construct(string $root)`](method-__construct.md) Construct the Paths

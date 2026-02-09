@@ -46,7 +46,7 @@ https://www.tiny.cloud/docs/tinymce/6/
 ## Module Settings
 
 - `$content_css: string` Basename of content CSS file to use or "custom" to use custom URL (default=wire)
-- `$content_css_url: string` Applies only if $content_css has value "custom"
+- `$content_css_url: string` Applies only if `$content_css` has value "custom"
 - `$skin: string` Skin to use (default=oxide)
 - `$skin_url: string` URL to skin
 - `$extPluginOpts: string` Newline separated URL paths (relative to PW root) of extra plugin .js files

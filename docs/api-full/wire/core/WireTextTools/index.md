@@ -15,7 +15,7 @@ Common methods:
 - [`truncate()`](method-truncate.md)
 - [`truncateSentenceTests()`](method-truncatesentencetests.md)
 
-Specific text and markup tools for ProcessWire $sanitizer and elsewhere.
+Specific text and markup tools for ProcessWire `$sanitizer` and elsewhere.
 
 
 @since 3.0.101

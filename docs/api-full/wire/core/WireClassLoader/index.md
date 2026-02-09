@@ -15,7 +15,7 @@ Common methods:
 
 Similar to a PSR-4 autoloader but with knowledge of modules.
 
-The ProcessWire $classLoader API variable handles autoloading of classes and modules.
+The ProcessWire `$classLoader` API variable handles autoloading of classes and modules.
 This class loader is similar to a PSR-4 autoloader but with knowledge of modules.
 
 This file is licensed under the MIT license

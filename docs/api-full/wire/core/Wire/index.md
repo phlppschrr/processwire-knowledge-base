@@ -32,7 +32,7 @@ classes that are hooking into others.
 
 
 
-API variables accessible as properties (unless $useFuel has been set to false):
+API variables accessible as properties (unless `$useFuel` has been set to false):
 
 
 The following map API variables to function names and apply only if another function in the class does not

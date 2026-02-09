@@ -13,7 +13,7 @@ Source: `wire/core/Tfa.php`
 - `$submitAttrs: array` Submit button attributes
 - `$showCancel: bool` Show a cancel link under authentication code form? (default=true)
 - `$autoType: string` Automatic/force TFA type (module name) to use when user doesn’t already have TFA enabled (default='')
-- `$autoRoleIDs: array` Role IDs to enforce $autoType or blank for all roles, applies only if $autoType set (default=[])
+- `$autoRoleIDs: array` Role IDs to enforce `$autoType` or blank for all roles, applies only if `$autoType` set (default=[])
 - `$cancelMarkup: string` Markup to use for the cancel link that appears under auth code form, must have {url} and {label} placeholders.
 - `$cancelLabel: string` Label to use for Cancel link (default='Cancel', translatable)
 - `$configureLabel: string` Indicates that TFA needs to be configured

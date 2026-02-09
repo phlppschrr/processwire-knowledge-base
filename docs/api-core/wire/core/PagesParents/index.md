@@ -16,10 +16,10 @@ Common methods:
 - [`rebuild()`](method-rebuild.md)
 
 Pages Parents
-$pages->parents
-Implements page parents helper methods for the $pages API variable and manages the pages_parents DB table.
+`$pages->parents`
+Implements page parents helper methods for the `$pages` API variable and manages the pages_parents DB table.
 This is not intended for the public API and instead used internally by
-the $pages classes, but available at `$pages->parents()->methodName()` if
+the `$pages` classes, but available at `$pages->parents()->methodName()` if
 you want to use anything here.
 
 ~~~~~~

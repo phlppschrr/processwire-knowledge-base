@@ -16,8 +16,8 @@ Common methods:
 - [`normalizeSelectorString()`](method-normalizeselectorstring.md)
 
 Pages Loader
-$pages->loader
-Implements page finding/loading methods for the $pages API variable.
+`$pages->loader`
+Implements page finding/loading methods for the `$pages` API variable.
 Please always use `$pages->method()` rather than `$pages->loader->method()` in cases where there is overlap.
 
 ## Methods

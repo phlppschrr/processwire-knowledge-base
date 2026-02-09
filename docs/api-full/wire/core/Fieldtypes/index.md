@@ -19,7 +19,7 @@ Groups:
 Group: [other](group-other.md)
 
 Maintains a collection of Fieldtype modules.
-$fieldtypes
+`$fieldtypes`
 
 ## Methods
 - [`__construct()`](method-__construct.md) Construct

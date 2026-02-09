@@ -713,6 +713,22 @@ def wrap_inline_code_snippets(text: str) -> str:
     return "`".join(parts)
 
 
+def wrap_inline_code_in_lines(lines: list[str]) -> list[str]:
+    out: list[str] = []
+    in_code = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```") or stripped.startswith("~~~~~"):
+            in_code = not in_code
+            out.append(line)
+            continue
+        if in_code:
+            out.append(line)
+            continue
+        out.append(wrap_inline_code_snippets(line))
+    return out
+
+
 MAGIC_METHODS = {
     "__construct",
     "__destruct",
@@ -2059,7 +2075,7 @@ def write_doc(
         lines.append("")
 
     if intro_prefix:
-        lines.extend(intro_prefix)
+        lines.extend(wrap_inline_code_in_lines(intro_prefix))
 
     method_links: list[str] = []
     const_links: list[str] = []
@@ -2100,7 +2116,7 @@ def write_doc(
     if intro_suffix:
         if lines and lines[-1] != "":
             lines.append("")
-        lines.extend(intro_suffix)
+        lines.extend(wrap_inline_code_in_lines(intro_suffix))
 
     index_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
@@ -2140,6 +2156,7 @@ def write_doc(
             group_lines = normalize_heading_lines(group_lines)
             group_lines = wrap_example_blocks(group_lines)
             group_lines = format_tag_lines(group_lines, class_info.name, doc_index, group_path)
+            group_lines = wrap_inline_code_in_lines(group_lines)
             group_content.extend(group_lines)
             group_path.write_text("\n".join(group_content).rstrip() + "\n", encoding="utf-8")
 

@@ -93,7 +93,7 @@ $form->add($inputfield);
 
 - [`$required: int|bool`](method-required.md) Set to true (or 1) to make input required, or false (or 0) to make not required (default=0).
 - [`$requiredIf: string`](method-requiredif.md) Optional conditions under which input is required (selector string).
-- `$requiredAttr: int|bool|null` Use HTML5 “required” attribute when used by Inputfield and $required is true? Default=null.
+- `$requiredAttr: int|bool|null` Use HTML5 “required” attribute when used by Inputfield and `$required` is true? Default=null.
 - `$hasFieldtype: null|bool|Fieldtype` The Fieldtype using this Inputfield, or boolean false when known not to have a Fieldtype, or null when not known.
 - `$hasField: null|Field` The Field object associated with this Inputfield, or null when not applicable or not known.
 - `$hasPage: null|Page` The Page object associated with this Inputfield, or null when not applicable or not known.
@@ -116,8 +116,8 @@ $form->add($inputfield);
 
 ## Multi-Language Methods (Requires Languagesupport Module To Be Installed)
 
-- [`setLanguageValue($language, $value): void`](method-setlanguagevalue.md) Set language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238
-- [`getLanguageValue($language): string|mixed`](method-getlanguagevalue.md) Get language value for Inputfield that supports it. Requires LanguageSupport module. $language can be Language, id (int) or name (string). @since 3.0.238
+- [`setLanguageValue($language, $value): void`](method-setlanguagevalue.md) Set language value for Inputfield that supports it. Requires LanguageSupport module. `$language` can be Language, id (int) or name (string). @since 3.0.238
+- [`getLanguageValue($language): string|mixed`](method-getlanguagevalue.md) Get language value for Inputfield that supports it. Requires LanguageSupport module. `$language` can be Language, id (int) or name (string). @since 3.0.238
 
 ## Hookable Methods
 

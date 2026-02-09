@@ -19,7 +19,7 @@ Groups:
 Group: [other](group-other.md)
 
 Pages Request
-$pages->request
+`$pages->request`
 Methods for identifying and loading page from current request URL.
 Methods in this class should be accessed from `$pages->request()`, i.e.
 ~~~~~

@@ -19,5 +19,5 @@ Source: `wire/core/Config.php`
 - `$userTemplateIDs: array` Array of template IDs when multiple allowed for users.
 - `$roleTemplateID: int` Template ID of the role template.
 - `$permissionTemplateID: int` Template ID of the permission template.
-- `$externalPageID: int` Page ID of page assigned to $page API variable when externally bootstrapped
+- `$externalPageID: int` Page ID of page assigned to `$page` API variable when externally bootstrapped
 - `$preloadPageIDs: array` Page IDs of pages that will always be preloaded at beginning of request

@@ -16,7 +16,7 @@ Common methods:
 - [`nameAndNumber()`](method-nameandnumber.md)
 
 Pages Names
-$pages->names
+`$pages->names`
 This class includes methods for generating and modifying page names.
 While these methods are mosty for internal core use, some may at times be useful from the public API as well.
 You can access methods from this class via the Pages API variable at `$pages->names()`.

@@ -6,7 +6,7 @@ Source: `wire/core/Pageimage.php`
 - [`$height: int`](method-height.md) Height of image, in pixels.
 - [`$focus: array`](method-focus.md) Focus array contains 'top' (float), 'left' (float), 'zoom' (int), and 'default' (bool) properties.
 - `$focusStr: string` Readable string containing focus information.
-- `$hasFocus: bool` Does this image have custom focus settings? (i.e. $focus['default'] == true)
+- `$hasFocus: bool` Does this image have custom focus settings? (i.e. `$focus`['default'] == true)
 - [`$suffix: array`](method-suffix.md) Array containing file suffix(es).
 - `$suffixStr: string` String of file suffix(es) separated by comma.
 - `$alt: string` Convenient alias for the 'description' property, unless overridden (since 3.0.125).

@@ -23,7 +23,7 @@ source files.
 
 
 
-Settings that may be specified in $config->AdminThemeUikit array:
+Settings that may be specified in `$config->AdminThemeUikit` array:
 
 - `$style: string` Configured style name to use, one of blank (for default), 'reno' or 'rock'.
 - `$recompile: bool` Recompile all LESS to CSS now? (set to true for 1 request only)

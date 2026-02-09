@@ -15,7 +15,7 @@ Common methods:
 - [`get()`](method-get.md)
 - [`renderCacheValue()`](method-rendercachevalue.md)
 
-Simple cache for storing strings (encoded or otherwise) and serves as $cache API var
+Simple cache for storing strings (encoded or otherwise) and serves as `$cache` API var
 
 
 Provides easy, persistent caching of markup, strings, arrays or PageArray objects.

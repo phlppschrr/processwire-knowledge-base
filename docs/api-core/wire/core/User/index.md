@@ -24,13 +24,13 @@ Group: [other](group-other.md)
 A type of Page used for storing an individual User
 
 
-The $user API variable is a type of page representing the current user, and the User class is Page type used for all users.
+The `$user` API variable is a type of page representing the current user, and the User class is Page type used for all users.
 
-@link http://processwire.com/api/variables/user/ Offical $user API variable Documentation
+@link http://processwire.com/api/variables/user/ Offical `$user` API variable Documentation
 
 
 
-Additional notes regarding the $user->pass property:
+Additional notes regarding the `$user->pass` property:
 Note that when getting, this returns a hashed version of the password, so it is not typically useful to get this property.
 However, it is useful to set this property if you want to change the password. When you change a password, it is assumed
 to be the non-hashed/non-encrypted version. ProcessWire will hash it automatically when the user is saved.

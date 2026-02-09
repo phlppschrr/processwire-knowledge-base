@@ -56,7 +56,7 @@ $comments = $input->post('comments','textarea');
 This is more convenient in some IDEs because it’ll never be flagged as an unrecognized function call. Though outside
 of that it makes little difference how you call it, as they both do the same thing.
 
-See the `$input` API variable for more details on how to call sanitizers directly from $input.
+See the `$input` API variable for more details on how to call sanitizers directly from `$input`.
 
 ### Adding your own sanitizers
 
@@ -106,7 +106,7 @@ and thus it’ll return a non-value rather than a sanitized value. See the `Sani
 
 
 
-@link https://processwire.com/api/variables/sanitizer/ Offical $sanitizer API variable Documentation
+@link https://processwire.com/api/variables/sanitizer/ Offical `$sanitizer` API variable Documentation
 
 ## Methods
 - [`__construct()`](method-__construct.md) Construct the sanitizer

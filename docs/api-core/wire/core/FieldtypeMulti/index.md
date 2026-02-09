@@ -25,7 +25,7 @@ Interface and some functionality for Fieldtypes that can contain multiple values
 
 To support automatic “order by” sorting: The `$useOrderByCols` property of this Fieldtype must be set to boolean true,
 indicating that the Fieldtype supports sorting. The actual columns to order by are an array of 'col' or '-col' specified
-with the Field object in an $orderByCols property (array).
+with the Field object in an `$orderByCols` property (array).
 
 To support pagination: Both the `$useOrderByCols` and the `$usePagination` properties of this Fieldtype must be set to
 boolean true, indicating the Fieldtype supports pagination (and sorting). When enabled, the wakeupValue() method will receive

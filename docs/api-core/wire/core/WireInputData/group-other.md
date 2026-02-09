@@ -19,14 +19,14 @@ Source: `wire/core/WireInputData.php`
 - [`selectorValue($varName): string`](method-selectorvalue.md) Sanitize a value for use in a selector string
 - [`entities($varName): string`](method-entities.md) Return an entity encoded version of the value
 - [`purify($varName): string`](method-purify.md) Return a value run through HTML Purifier (value assumed to contain HTML)
-- [`string($varName): string`](method-string.md) Return a value guaranteed to be a string, regardless of what type $varName is. Does not sanitize.
-- [`date($varName, $dateFormat): string`](method-date.md) Validate and return $varName in the given PHP date() or strftime() format.
+- [`string($varName): string`](method-string.md) Return a value guaranteed to be a string, regardless of what type `$varName` is. Does not sanitize.
+- [`date($varName, $dateFormat): string`](method-date.md) Validate and return `$varName` in the given PHP date() or strftime() format.
 - [`int($varName, $min = 0, $max = null): int`](method-int.md) Sanitize value to integer with optional min and max. Unsigned if max >= 0, signed if max < 0.
 - [`intUnsigned($varName, $min = null, $max = null): int`](method-intunsigned.md) Sanitize value to unsigned integer with optional min and max.
 - [`intSigned($varName, $min = null, $max = null): int`](method-intsigned.md) Sanitize value to signed integer with optional min and max.
 - [`float($varName, $min = null, $max = null, $precision = null): float`](method-float.md) Sanitize value to float with optional min and max values.
-- [`array($varName, $sanitizer = null): array`](method-array.md) Sanitize array or CSV String to an array, optionally running elements through specified $sanitizer.
+- [`array($varName, $sanitizer = null): array`](method-array.md) Sanitize array or CSV String to an array, optionally running elements through specified `$sanitizer`.
 - [`intArray($varName, $min = 0, $max = null): array`](method-intarray.md) Sanitize array or CSV string to an array of integers with optional min and max values.
-- [`option($varName, array $allowedValues): string|null`](method-option.md) Return value of $varName only if it exists in $allowedValues.
-- [`options($varName, array $allowedValues): array`](method-options.md) Return all values in array $varName that also exist in $allowedValues.
+- [`option($varName, array $allowedValues): string|null`](method-option.md) Return value of `$varName` only if it exists in `$allowedValues`.
+- [`options($varName, array $allowedValues): array`](method-options.md) Return all values in array `$varName` that also exist in `$allowedValues`.
 - [`bool($varName): bool`](method-bool.md) Sanitize value to boolean (true or false)

@@ -18,7 +18,7 @@ Common methods:
 Groups:
 Group: [other](group-other.md)
 
-WireLog represents the ProcessWire $log API variable.
+WireLog represents the ProcessWire `$log` API variable.
 It is an API-friendly interface to the FileLog class.
 
 Enables creation of logs, logging of events, and management of logs.

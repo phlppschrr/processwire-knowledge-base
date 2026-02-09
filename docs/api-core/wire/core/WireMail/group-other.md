@@ -14,7 +14,7 @@ Source: `wire/core/WireMail.php`
 - [`$body: string`](method-body.md) Plain text body of email.
 - [`$bodyHTML: string`](method-bodyhtml.md) HTML body of email.
 - [`$header: array`](method-header.md) Associative array of additional headers.
-- [`$headers: array`](method-headers.md) Alias of $header
+- [`$headers: array`](method-headers.md) Alias of `$header`
 - [`$param: array`](method-param.md) Associative array of aditional params (likely not applicable to most WireMail modules).
 - `$attachments: array` Array of file attachments (if populated and where supported)
 - `$newline: string` Newline character, populated only if different from CRLF.

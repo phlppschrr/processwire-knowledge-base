@@ -2,7 +2,7 @@
 
 Source: `wire/core/Config.php`
 
-- [`$urls: Paths`](method-urls.md) Items from $config->urls reflect the http path one would use to load a given location in the web browser. URLs retrieved from $config->urls always end with a trailing slash. This is the same as the $urls API variable.
+- [`$urls: Paths`](method-urls.md) Items from `$config->urls` reflect the http path one would use to load a given location in the web browser. URLs retrieved from `$config->urls` always end with a trailing slash. This is the same as the `$urls` API variable.
 - `$pageNameCharset: string` Character set for page names, must be 'ascii' (default, lowercase) or 'UTF8' (uppercase).
 - `$pageNameWhitelist: string` Whitelist of characters allowed in UTF8 page names.
 - `$pageNameUntitled: string` Name to use for untitled pages (default="untitled").

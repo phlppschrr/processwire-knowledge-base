@@ -21,7 +21,7 @@ this interface are assumed to also implement the `Module` interface.
 The module must also provide one (1) of the following:
 
 1. A `getModuleConfigInputfields([$data])` method (static or non-static); OR
-2. A separate `ModuleName.config.php` file that just populates $config array; OR
+2. A separate `ModuleName.config.php` file that just populates `$config` array; OR
 3. A separate `ModuleNameConfig.php` file that contains a ModuleConfig class.
 
 For more details about the above options, see the commented methods within

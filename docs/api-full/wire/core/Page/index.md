@@ -35,12 +35,12 @@ Page is the class used by all instantiated pages and it provides functionality f
 
 
 Class used by all Page objects in ProcessWire.
-$page
+`$page`
 The `$page` API variable represents the current page being viewed. However, the documentation
 here also applies to all Page objects that you may work with in the API. We use `$page` as the most common example
 throughout the documentation, but you can substitute that with any variable name representing a Page.
 
-@link http://processwire.com/api/ref/page/ Offical $page Documentation
+@link http://processwire.com/api/ref/page/ Offical `$page` Documentation
 
 @link http://processwire.com/api/selectors/ Official Selectors Documentation
 
@@ -60,7 +60,7 @@ throughout the documentation, but you can substitute that with any variable name
 - [`addable($pageToAdd = null): bool`](method-addable.md) Returns true if the current user can add children to the page, false if not. Optionally specify the page to be added for additional access checking.
 - [`moveable($newParent = null): bool`](method-moveable.md) Returns true if the current user can move this page. Optionally specify the new parent to check if the page is moveable to that parent.
 - [`sortable(): bool`](method-sortable.md) Returns true if the current user can change the sort order of the current page (within the same parent).
-- [`cloneable($recursive = null): bool`](method-cloneable.md) Can current user clone this page? Specify false for $recursive argument to ignore whether children are cloneable. @since 3.0.239
+- [`cloneable($recursive = null): bool`](method-cloneable.md) Can current user clone this page? Specify false for `$recursive` argument to ignore whether children are cloneable. @since 3.0.239
 - [`$viewable: bool`](method-viewable.md)
 - [`$editable: bool`](method-editable.md)
 - [`$publishable: bool`](method-publishable.md)
@@ -77,23 +77,23 @@ throughout the documentation, but you can substitute that with any variable name
 
 - [`addUrl($url, $language = null): bool`](method-addurl.md) Add a new URL that redirects to this page and save immediately (returns false if already taken).
 - [`removeUrl($url): bool`](method-removeurl.md) Remove a URL that redirects to this page and save immediately.
-Note: you can use the $page->urls() method to get URLs added by PagePathHistory.
+Note: you can use the `$page->urls()` method to get URLs added by PagePathHistory.
 
 ## Methods Added By Languagesupport.Module (Not Installed By Default)
 
-- [`setLanguageValue($language, $field, $value): Page`](method-setlanguagevalue.md) Set value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).
-- [`setLanguageValues($field, array $values): Page`](method-setlanguagevalues.md) Set value for field in one or more languages (requires LanguageSupport module). $field should be field/property name (string), $values should be array of values indexed by language name. @since 3.0.236
-- [`getLanguageValue($language, $field): mixed`](method-getlanguagevalue.md) Get value for field in language (requires LanguageSupport module). $language may be ID, language name or Language object. Field should be field name (string).
-- [`getLanguageValues($field, array $langs = []): array`](method-getlanguagevalues.md) Get values for field or one or more languages (requires LanguageSupport module). $field should be field/property name (string), $langs should be array of language names, or omit for all languages. Returns array of values indexed by language name. @since 3.0.236
+- [`setLanguageValue($language, $field, $value): Page`](method-setlanguagevalue.md) Set value for field in language (requires LanguageSupport module). `$language` may be ID, language name or Language object. Field should be field name (string).
+- [`setLanguageValues($field, array $values): Page`](method-setlanguagevalues.md) Set value for field in one or more languages (requires LanguageSupport module). `$field` should be field/property name (string), `$values` should be array of values indexed by language name. @since 3.0.236
+- [`getLanguageValue($language, $field): mixed`](method-getlanguagevalue.md) Get value for field in language (requires LanguageSupport module). `$language` may be ID, language name or Language object. Field should be field name (string).
+- [`getLanguageValues($field, array $langs = []): array`](method-getlanguagevalues.md) Get values for field or one or more languages (requires LanguageSupport module). `$field` should be field/property name (string), `$langs` should be array of language names, or omit for all languages. Returns array of values indexed by language name. @since 3.0.236
 
 ## Methods Added By Languagesupportpagenames.Module (Not Installed By Default)
 
-- [`localName($language = null, $useDefaultWhenEmpty = false): string`](method-localname.md) Return the page name in the current user’s language, or specify $language argument (Language object, name, or ID), or TRUE to use default page name when blank (instead of 2nd argument).
-- [`localPath($language = null): string`](method-localpath.md) Return the page path in the current user's language, or specify $language argument (Language object, name, or ID).
-- [`localUrl($language = null): string`](method-localurl.md) Return the page URL in the current user's language, or specify $language argument (Language object, name, or ID).
-- [`localHttpUrl($language = null): string`](method-localhttpurl.md) Return the page URL (including scheme and hostname) in the current user's language, or specify $language argument (Language object, name, or ID).
+- [`localName($language = null, $useDefaultWhenEmpty = false): string`](method-localname.md) Return the page name in the current user’s language, or specify `$language` argument (Language object, name, or ID), or TRUE to use default page name when blank (instead of 2nd argument).
+- [`localPath($language = null): string`](method-localpath.md) Return the page path in the current user's language, or specify `$language` argument (Language object, name, or ID).
+- [`localUrl($language = null): string`](method-localurl.md) Return the page URL in the current user's language, or specify `$language` argument (Language object, name, or ID).
+- [`localHttpUrl($language = null): string`](method-localhttpurl.md) Return the page URL (including scheme and hostname) in the current user's language, or specify `$language` argument (Language object, name, or ID).
 - [`setLanguageStatus($language, $status = null): Page`](method-setlanguagestatus.md) Set active status for language(s), can be called as `$page->setLanguageStatus('es', true);` or `$page->setLanguageStatus([ 'es' => true, 'br' => false ]);` to set multiple. @since 3.0.236
-- [`getLanguageStatus($language = []): array|bool`](method-getlanguagestatus.md) Get active status for language(s). If given a $language (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236
+- [`getLanguageStatus($language = []): array|bool`](method-getlanguagestatus.md) Get active status for language(s). If given a `$language` (Language or name of language) it returns a boolean. If given multiple language names (array), or argument omitted, it returns array like `[ 'default' => true, 'fr' => false ];`. @since 3.0.236
 - [`setLanguageName($language, $name = null): Page`](method-setlanguagename.md) Set page name for language with `$page->setLanguageName('es', 'hola');` or set multiple with `$page->setLanguageName([ 'default' => 'hello', 'es' => 'hola' ]);` @since 3.0.236
 - [`getLanguageName($language = []): array|string`](method-getlanguagename.md) Get page name for language(s). If given a Language object, it returns a string. If given array of language names, or argument omitted, it returns an array like `[ 'default' => 'hello', 'es' => 'hola' ];`. @since 3.0.236
 
@@ -114,7 +114,7 @@ Note: you can use the $page->urls() method to get URLs added by PagePathHistory.
 - [`renderField($fieldName, $file = ''): string|mixed`](method-___renderfield.md) Render field markup, optionally with file relative to templates/fields/.
 - [`references($selector = '', $field = ''): PageArray`](method-___references.md) Return pages that are pointing to this one by way of Page reference fields.
 - [`links($selector = '', $field = ''): PageArray`](method-___links.md) Return pages that link to this one contextually in Textarea/HTML fields.
-- [`if($key, $yes, $no = ''): string|mixed`](method-___if.md) If value is available for $key return or call $yes condition (with optional $no condition)
+- [`if($key, $yes, $no = ''): string|mixed`](method-___if.md) If value is available for `$key` return or call `$yes` condition (with optional `$no` condition)
 
 ## Hookable Action Methods Called Before Or After A Page Is Saved (3.0.253+)
 

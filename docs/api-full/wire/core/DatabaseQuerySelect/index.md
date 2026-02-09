@@ -33,7 +33,7 @@ https://processwire.com/about/license/mit/
 
 Below are Properties populated by DatabaseQuerySelect objects created by PageFinder.
 This is what gets passed to Fieldtype::getMatchQuery() method calls as properties
-available from the $query argument.
+available from the `$query` argument.
 
 ## Methods
 - [`__construct()`](method-__construct.md) Setup the components of a SELECT query

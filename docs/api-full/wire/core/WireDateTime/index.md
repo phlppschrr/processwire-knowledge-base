@@ -18,7 +18,7 @@ Common methods:
 Groups:
 Group: [other](group-other.md)
 
-The $datetime API variable provides helpers for working with dates/times and conversion between formats.
+The `$datetime` API variable provides helpers for working with dates/times and conversion between formats.
 
 ## Methods
 - [`getDateFormats(): array`](method-getdateformats.md) Return all predefined PHP date() formats for use as dates

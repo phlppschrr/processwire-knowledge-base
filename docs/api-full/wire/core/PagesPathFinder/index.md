@@ -16,7 +16,7 @@ Common methods:
 - [`applyPagesRow()`](method-applypagesrow.md)
 
 Pages Path Finder
-$pages->pathFinder
+`$pages->pathFinder`
 Enables finding pages by path, optionally with URL segments, pagination numbers, language prefixes, etc.
 This is built for use by the PagesRequest class and ProcessPageView module, but can also be useful from the public API.
 The most useful method is the `get()` method which returns a verbose array of information about the given path.

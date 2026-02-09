@@ -16,7 +16,7 @@ Common methods:
 - [`findMany()`](method-findmany.md)
 
 Pages
-The $pages API variable enables loading and manipulation of Page objects, to and from the database.
+The `$pages` API variable enables loading and manipulation of Page objects, to and from the database.
 Manages Page instances, providing find, load, save and delete capabilities.
 The implementation for most of the methods in this class are delegated to other classes (helpers)
 but this class provides the common and hookable interface to all of them.
@@ -27,7 +27,7 @@ The most commonly used API methods include:
 - `$pages->save($page);` Saves given page.
 
 
-@link http://processwire.com/api/variables/pages/ Offical $pages Documentation
+@link http://processwire.com/api/variables/pages/ Offical `$pages` Documentation
 
 @link http://processwire.com/api/selectors/ Official Selectors Documentation
 
@@ -37,16 +37,16 @@ The most commonly used API methods include:
 ## Hookable Methods
 
 - [`find($selectorString, array $options = array()): PageArray`](method-___find.md) Find and return all pages matching the given selector string. Returns a PageArray.
-- [`save(Page $page, $options = array()): bool`](method-___save.md) Save any changes made to the given $page. Same as $page->save(); Returns true on success.
-- [`saveField(Page $page, $field, array $options = array()): bool`](method-___savefield.md) Save just the named field from $page. Same as: $page->save('field')
-- [`saveFields(Page $page, $fields, array $options = array()): array`](method-___savefields.md) Saved multiple named fields for $page. @since 3.0.242
+- [`save(Page $page, $options = array()): bool`](method-___save.md) Save any changes made to the given `$page`. Same as `$page->save()`; Returns true on success.
+- [`saveField(Page $page, $field, array $options = array()): bool`](method-___savefield.md) Save just the named field from `$page`. Same as: `$page->save('field')`
+- [`saveFields(Page $page, $fields, array $options = array()): array`](method-___savefields.md) Saved multiple named fields for `$page`. @since 3.0.242
 - [`trash(Page $page, $save = true): bool`](method-___trash.md) Move a page to the trash. If you have already set the parent to somewhere in the trash, then this method won't attempt to set it again.
 - [`restore(Page $page, $save = true): bool`](method-___restore.md) Restore a trashed page to its original location.
 - [`emptyTrash(array $options = array()): int|array`](method-___emptytrash.md) Empty the trash and return number of pages deleted.
-- [`delete(Page $page, $recursive = false, array $options = array()): bool`](method-___delete.md) Permanently delete a page and it's fields. Unlike trash(), pages deleted here are not restorable. If you attempt to delete a page with children, and don't specifically set the $recursive param to True, then this method will throw an exception. If a recursive delete fails for any reason, an exception will be thrown.
+- [`delete(Page $page, $recursive = false, array $options = array()): bool`](method-___delete.md) Permanently delete a page and it's fields. Unlike trash(), pages deleted here are not restorable. If you attempt to delete a page with children, and don't specifically set the `$recursive` param to True, then this method will throw an exception. If a recursive delete fails for any reason, an exception will be thrown.
 - [`clone(Page $page, Page $parent = null, $recursive = true, $options = array()): Page|NullPage`](method-___clone.md) Clone an entire page, it's assets and children and return it.
 - [`add($template, $parent, $name = '', array $values = array()): Page|NullPage`](method-___add.md)
-- [`sort(Page $page, $value = false): int`](method-___sort.md) Set the “sort” value for given $page while adjusting siblings, or re-build sort for its children.
+- [`sort(Page $page, $value = false): int`](method-___sort.md) Set the “sort” value for given `$page` while adjusting siblings, or re-build sort for its children.
 - [`insertBefore(Page $page, Page $beforePage): void`](method-___insertbefore.md) Insert one page as a sibling before another.
 - [`insertAfter(Page $page, Page $afterPage): void`](method-___insertafter.md) Insert one page as a sibling after another.
 - [`touch($pages, $options = null, $type = 'modified'): bool`](method-___touch.md) Update page modification time to now (or the given modification time).
@@ -74,7 +74,7 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`cloned(Page $page, Page $copy)`](method-___cloned.md) Hook called after a page has been successfully cloned.
 - [`renameReady(Page $page)`](method-___renameready.md) Hook called when a page is about to be renamed.
 - [`renamed(Page $page)`](method-___renamed.md) Hook called after a page has been successfully renamed.
-- [`sorted(Page $page, $children = false, $total = 0)`](method-___sorted.md) Hook called after $page has been sorted.
+- [`sorted(Page $page, $children = false, $total = 0)`](method-___sorted.md) Hook called after `$page` has been sorted.
 - [`statusChangeReady(Page $page)`](method-___statuschangeready.md) Hook called when a page's status has changed and is about to be saved.
 - [`statusChanged(Page $page)`](method-___statuschanged.md) Hook called after a page status has been changed and saved.
 - [`publishReady(Page $page)`](method-___publishready.md) Hook called just before an unpublished page is published.
@@ -85,7 +85,7 @@ See the phpdoc in the actual methods for more details about arguments and additi
 - [`savedField(Page $page, Field $field)`](method-___savedfield.md) Hook called after saveField() method successfully executes.
 - [`savePageOrFieldReady(Page $page, $fieldName = '')`](method-___savepageorfieldready.md) Hook inclusive of both saveReady() and saveFieldReady().
 - [`savedPageOrField(Page $page, array $changes)`](method-___savedpageorfield.md) Hook inclusive of both saved() and savedField().
-- [`found(PageArray $pages, array $details)`](method-___found.md) Hook called at the end of a $pages->find().
+- [`found(PageArray $pages, array $details)`](method-___found.md) Hook called at the end of a `$pages->find()`.
 
 ## Methods
 - [`__construct(ProcessWire $wire)`](method-__construct.md) Create the Pages object

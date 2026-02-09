@@ -20,7 +20,7 @@ Groups:
 Group: [other](group-other.md)
 
 This is the base data container class used throughout ProcessWire.
-It provides get and set access to properties internally stored in a $data array.
+It provides get and set access to properties internally stored in a `$data` array.
 Otherwise it is identical to the Wire class.
 
 WireData is the base data-storage class used by many ProcessWire object types and most modules.

@@ -17,7 +17,7 @@ Common methods:
 - [`getPageVersionInfo()`](method-getpageversioninfo.md)
 
 Provides a version control API for pages in ProcessWire.
-$pagesVersions
+`$pagesVersions`
 
 ~~~~~
 // Note: API provided by $pagesVersions API variable

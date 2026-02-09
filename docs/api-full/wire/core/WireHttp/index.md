@@ -21,8 +21,8 @@ Group: [other](group-other.md)
 Provides capability for sending POST/GET requests to URLs
 
 WireHttp enables you to send HTTP requests to URLs, download files, and more.
-$http
-$http = new WireHttp();
+`$http`
+`$http` = new WireHttp();
 ~~~~~
 // Get the contents of a URL
 $response = $http->get("http://domain.com/path/");

@@ -17,7 +17,7 @@ Common methods:
 
 Pages Exporter/Importer
 Methods for exporting and importing pages from one installation to another.
-$porter
+`$porter`
 This class is primarily used interactively through the core `ProcessPagesExportImport` module, but
 can also be used from its API, described here.
 ~~~~~

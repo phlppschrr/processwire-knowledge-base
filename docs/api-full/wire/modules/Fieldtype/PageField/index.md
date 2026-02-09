@@ -22,8 +22,8 @@ Common methods:
 - `$template_ids: array`
 - `$parent_id: int`
 - `$inputfield: string` Inputfield class used for input
-- `$labelFieldName: string` Field name to use for label (note: this will be "." if $labelFieldFormat is in use).
-- `$labelFieldFormat: string` Formatting string for $page->getMarkup() as alternative to $labelFieldName
+- `$labelFieldName: string` Field name to use for label (note: this will be "." if `$labelFieldFormat` is in use).
+- `$labelFieldFormat: string` Formatting string for `$page->getMarkup()` as alternative to `$labelFieldName`
 - `$findPagesCode: string`
 - `$findPagesSelector: string`
 - `$findPagesSelect: string` Same as findPageSelector, but configured interactively with InputfieldSelector.

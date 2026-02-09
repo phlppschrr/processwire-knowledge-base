@@ -20,7 +20,7 @@ Group: [other](group-other.md)
 
 Maintains collections of Fieldgroup object instances and represents the `$fieldgroups` API variable.
 For full details on all methods available in a Fieldgroup, be sure to also see the `WireArray` class.
-$fieldgroups
+`$fieldgroups`
 
 ## Methods
 - [`init()`](method-init.md) Init

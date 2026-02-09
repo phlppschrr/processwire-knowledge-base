@@ -21,5 +21,5 @@ Source: `wire/core/DatabaseQuerySelect.php`
 - `$field: Field` Field object that is referenced by this query.
 - `$group: string` Selector group (for OR-groups) if applicable.
 - `$selector: Selector` Selector object referenced by this query.
-- `$selectors: Selectors` Original selectors (all) that $selector is part of.
+- `$selectors: Selectors` Original selectors (all) that `$selector` is part of.
 - `$parentQuery: DatabaseQuerySelect` Parent query object, if applicable.

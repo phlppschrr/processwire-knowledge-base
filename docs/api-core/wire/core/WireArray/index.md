@@ -22,7 +22,7 @@ Group: [other](group-other.md)
 WireArray is the base array access object used in the ProcessWire framework.
 
 Several methods are duplicated here for syntactical convenience and jQuery-like usability.
-Many methods act upon the array and return $this, which enables WireArrays to be used for fluent interfaces.
+Many methods act upon the array and return `$this`, which enables WireArrays to be used for fluent interfaces.
 WireArray is the base of the PageArray (subclass) which is the most used instance.
 
 @todo can we implement next() and prev() like on Page, as alias to getNext() and getPrev()?

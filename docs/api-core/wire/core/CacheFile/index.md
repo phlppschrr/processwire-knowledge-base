@@ -17,7 +17,7 @@ Common methods:
 
 Class to manage individual cache files
 
-Each cache file creates it's own directory based on the '$id' given.
+Each cache file creates it's own directory based on the '`$id`' given.
 The dir is created so that secondary cache files can be created too,
 and these are automatically removed when the remove() method is called.
 

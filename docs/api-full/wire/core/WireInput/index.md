@@ -22,7 +22,7 @@ Group: [URLs](group-urls.md)
 
 Provides a means to get user input from URLs, GET, POST, and COOKIE variables and more.
 
-@link https://processwire.com/api/ref/wire-input/ Offical $input API variable Documentation
+@link https://processwire.com/api/ref/wire-input/ Offical `$input` API variable Documentation
 
 
 

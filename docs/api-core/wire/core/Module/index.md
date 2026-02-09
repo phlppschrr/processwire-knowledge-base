@@ -326,11 +326,11 @@ restoring the system back to the state that it was in before the module was inst
 If the uninstall() method determines that it cannot proceed for some reason, it should throw
 a `WireException`.
 
-### upgrade($fromVersion, $toVersion)
+### upgrade(`$fromVersion`, `$toVersion`)
 
 This method is called when a version change is detected. This method should make any adjustments needed
-to support the module from one version to another. The previous known version ($fromVersion) and new
-version ($toVersion) are provided as arguments.
+to support the module from one version to another. The previous known version (`$fromVersion`) and new
+version (`$toVersion`) are provided as arguments.
 
 If implemented, upgrade() methods typically are defined hookable as `public function ___upgrade(...)`.
 If the upgrade cannot proceed for some reason, this method should throw a `WireException`.
@@ -343,11 +343,11 @@ The following methods may or may not be implemented, all are optional:
 
 void install() Called when module is installed.
 void uninstall() Called when module is uninstalled.
-void upgrade($fromVersion, $toVersion) Called when a version change is detected for the module.
+void upgrade(`$fromVersion`, `$toVersion`) Called when a version change is detected for the module.
 array getModuleInfo() Static method that returns array of module info (not required if module implements an info file instead).
 void init() Called when the module is loaded, immediately after any configuration data has been populated to it.
 void ready() For autoload modules only, called when the ProcessWire API is ready to use.
-void setConfigData(array $data) Modules may optionally provide this method to receive config data from ProcessWire.
+void setConfigData(array `$data`) Modules may optionally provide this method to receive config data from ProcessWire.
 
 ## Methods
 - [`className($options = null): array`](method-classname.md) Return an array of module information

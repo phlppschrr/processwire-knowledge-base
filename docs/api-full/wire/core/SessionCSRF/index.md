@@ -18,11 +18,11 @@ Common methods:
 Provides an API for cross site request forgery protection.
 ~~~~
 // output somewhere in form markup when rendering a form
-echo $session->CSRF->renderInput();
+echo `$session->CSRF`->renderInput();
 ~~~~
 ~~~~
 // when processing form (POST request), check to see if token is present
-if($session->CSRF->hasValidToken()) {
+if(`$session->CSRF`->hasValidToken()) {
   // form submission is valid
   // okay to process
 } else {
@@ -32,7 +32,7 @@ if($session->CSRF->hasValidToken()) {
 ~~~~
 ~~~~
 // this alternative to hasValidToken() throws WireCSRFException when invalid
-$session->CSRF->validate();
+`$session->CSRF`->validate();
 ~~~~
 
 ## Methods

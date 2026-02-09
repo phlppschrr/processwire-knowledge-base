@@ -2,7 +2,7 @@
 
 Source: `wire/core/TemplateFile.php`
 
-- [`$halt: bool`](method-halt.md) Set to true to halt during render, or use method $this->halt();
+- [`$halt: bool`](method-halt.md) Set to true to halt during render, or use method `$this->halt()`;
 - `$filename: string` Primary file to render.
 - `$prependFilename: array` Optional file name(s) used for prepend.
 - `$appendFilename: array` Optional file name(s) used for append.

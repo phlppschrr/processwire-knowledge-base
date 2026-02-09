@@ -20,7 +20,7 @@ Groups:
 Group: [other](group-other.md)
 
 WireInputData and the WireInput class together form a simple
-front end to PHP's $_GET, $_POST, and $_COOKIE superglobals.
+front end to PHP's `$_GET`, `$_POST`, and `$_COOKIE` superglobals.
 
 Vars retrieved from here will not have to consider magic_quotes.
 No sanitization or filtering is done, other than disallowing
@@ -33,7 +33,7 @@ InputData instances.
 Each WireInputData is not instantiated unless specifically asked for.
 
 
-@link http://processwire.com/api/ref/input/ Offical $input API variable documentation
+@link http://processwire.com/api/ref/input/ Offical `$input` API variable documentation
 
 ## Methods
 - [`__construct(array &$input = array(), bool $lazy = false)`](method-__construct.md) Construct

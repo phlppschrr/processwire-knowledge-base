@@ -17,7 +17,7 @@ Common methods:
 
 Parses a PHP file to locate all function calls containing translatable text and their optional comments.
 
-Return the results by calling $parser->getUntranslated() and $parser->getComments();
+Return the results by calling `$parser->getUntranslated()` and `$parser->getComments()`;
 
 ## Methods
 - [`__construct(LanguageTranslator $translator, string $file)`](method-__construct.md) Construct the Language Parser

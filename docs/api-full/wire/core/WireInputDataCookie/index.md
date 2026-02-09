@@ -19,7 +19,7 @@ Enables getting, setting and removing cookies from the ProcessWire API using `$i
 
 
 - Whether getting or setting, cookie values are always strings.
-- Values retrieved from `$input->cookie` are user input (like PHP’s $_COOKIE) and need to be sanitized and validated by you.
+- Values retrieved from `$input->cookie` are user input (like PHP’s `$_COOKIE`) and need to be sanitized and validated by you.
 - When removing/unsetting cookies, the path, domain, secure, and httponly options must be the same as when the cookie was set,
   as a result, it’s good to have these things predefined in `$config->cookieOptions` rather than setting during runtime.
 - Note that this class does not manage PW’s session cookies.

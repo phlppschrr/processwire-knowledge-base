@@ -12,8 +12,8 @@ Source: `wire/core/Config.php`
 - `$sessionChallenge: bool` Should login sessions have a challenge key? (for extra security, recommended)
 - `$sessionFingerprint: int|bool` Should login sessions be tied to IP and user agent? 0 or false: Fingerprint off. 1 or true: Fingerprint on with default/recommended setting (currently 10). 2: Fingerprint only the remote IP. 4: Fingerprint only the forwarded/client IP (can be spoofed). 8: Fingerprint only the useragent. 10: Fingerprint the remote IP and useragent (default). 12: Fingerprint the forwarded/client IP and useragent. 14: Fingerprint the remote IP, forwarded/client IP and useragent (all).
 - `$sessionHistory: int` Number of session entries to keep (default=0, which means off).
-- `$sessionForceIP: string` Force the client IP address returned by $session->getIP() to be this rather than auto-detect (useful with load balancer). Use for setting value only.
+- `$sessionForceIP: string` Force the client IP address returned by `$session->getIP()` to be this rather than auto-detect (useful with load balancer). Use for setting value only.
 - `$loginDisabledRoles: array` Array of role name(s) or ID(s) of roles where login is disallowed.
 - `$userAuthSalt: string` Salt generated at install time to be used as a secondary/non-database salt for the password system.
 - `$userAuthHashType: string` Default is 'sha1' - used only if Blowfish is not supported by the system.
-- `$userOutputFormatting: bool` Enable output formatting for current $user API variable at boot? (default=false) @since 3.0.241
+- `$userOutputFormatting: bool` Enable output formatting for current `$user` API variable at boot? (default=false) @since 3.0.241

@@ -16,7 +16,7 @@ Common methods:
 - [`formatNotice()`](method-formatnotice.md)
 
 Notices
-$notices
+`$notices`
 A class to contain multiple Notice instances, whether messages, warnings or errors.
 This class manages notices that have been sent by `Wire::message()`, `Wire::warning()` and `Wire::error()` calls.
 The message(), warning() and error() methods are available on every `Wire` derived object. This class is primarily

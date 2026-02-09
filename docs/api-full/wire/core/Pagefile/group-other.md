@@ -4,7 +4,7 @@ Source: `wire/core/Pagefile.php`
 
 - [`$url: string`](method-url.md) URL to the file on the server.
 - [`$httpUrl: string`](method-___httpurl.md) URL to the file on the server including scheme and hostname.
-- `$URL: string` Same as $url property but with browser cache busting query string appended.
+- `$URL: string` Same as `$url` property but with browser cache busting query string appended.
 - `$HTTPURL: string` Same as the cache-busting uppercase “URL” property, but includes scheme and hostname.
 - [`$filename: string`](method-filename.md) full disk path to the file on the server.
 - `$name: string` Returns the filename without the path, same as the "basename" property.

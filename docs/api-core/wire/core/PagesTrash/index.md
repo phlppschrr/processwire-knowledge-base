@@ -16,8 +16,8 @@ Common methods:
 - [`emptyTrash()`](method-emptytrash.md)
 
 Pages Trash
-$pages->trasher
-Implements page trash/restore/empty methods for the $pages API variable.
+`$pages->trasher`
+Implements page trash/restore/empty methods for the `$pages` API variable.
 
 ## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct

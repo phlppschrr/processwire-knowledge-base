@@ -9,11 +9,11 @@ Source: `wire/core/Page.php`
 - [`$hasChildren: int`](method-haschildren.md) The number of visible children this page has. Excludes unpublished, no-access, hidden, etc.
 - [`$numDescendants: int`](method-numdescendants.md) Number of descendants (quantity of children, and their children, and so on). @since 3.0.116
 - [`$numParents: int`](method-numparents.md) Number of parent pages (i.e. depth) @since 3.0.117
-- [`$children: PageArray`](method-children.md) All the children of this page. Returns a PageArray. See also $page->children($selector).
-- [`$child: Page|NullPage`](method-child.md) The first child of this page. Returns a Page. See also $page->child($selector).
-- [`$siblings: PageArray`](method-siblings.md) All the sibling pages of this page. Returns a PageArray. See also $page->siblings($selector).
-- [`$next: Page`](method-next.md) This page's next sibling page, or NullPage if it is the last sibling. See also $page->next($pageArray).
-- [`$prev: Page`](method-prev.md) This page's previous sibling page, or NullPage if it is the first sibling. See also $page->prev($pageArray).
+- [`$children: PageArray`](method-children.md) All the children of this page. Returns a PageArray. See also `$page->children($selector)`.
+- [`$child: Page|NullPage`](method-child.md) The first child of this page. Returns a Page. See also `$page->child($selector)`.
+- [`$siblings: PageArray`](method-siblings.md) All the sibling pages of this page. Returns a PageArray. See also `$page->siblings($selector)`.
+- [`$next: Page`](method-next.md) This page's next sibling page, or NullPage if it is the last sibling. See also `$page->next($pageArray)`.
+- [`$prev: Page`](method-prev.md) This page's previous sibling page, or NullPage if it is the first sibling. See also `$page->prev($pageArray)`.
 - [`$index: int`](method-index.md) Index of this page relative to its siblings, regardless of sort (starting from 0).
 - [`$references: PageArray`](method-___references.md) Return pages that are referencing the given one by way of Page references.
 - `$numReferences: int` Total number of pages referencing this page with Page reference fields.

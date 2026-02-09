@@ -16,8 +16,8 @@ Common methods:
 - [`isDeleteable()`](method-isdeleteable.md)
 
 Pages Editor
-$pages->editor
-Implements page editing and manipulation methods for the $pages API variable.
+`$pages->editor`
+Implements page editing and manipulation methods for the `$pages` API variable.
 Please always use `$pages->method()` rather than `$pages->editor->method()` in cases where there is overlap.
 
 ## Methods

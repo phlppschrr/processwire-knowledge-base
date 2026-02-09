@@ -16,7 +16,7 @@ Common methods:
 - [`append()`](method-append.md)
 - [`getIterator()`](method-getiterator.md)
 
-Manages array of filenames or file URLs, like for $config->scripts and $config->styles.
+Manages array of filenames or file URLs, like for `$config->scripts` and `$config->styles`.
 
 ## Methods
 - [`add(string $filename): $this`](method-add.md) Add a file

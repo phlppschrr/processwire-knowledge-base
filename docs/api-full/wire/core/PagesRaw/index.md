@@ -15,7 +15,7 @@ Common methods:
 - [`cols()`](method-cols.md)
 
 Pages Raw
-$pages->raw
+`$pages->raw`
 Methods for finding and loading raw page data
 
 ## Methods

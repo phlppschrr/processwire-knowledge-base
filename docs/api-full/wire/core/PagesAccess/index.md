@@ -28,7 +28,7 @@ The pages_access table contains just two columns:
 	- `pages_id` (int): Any given page
 	- `templates_id` (int): The template that sets this pages access
 
-Pages using templates that already define their access (determined by $template->useRoles)
+Pages using templates that already define their access (determined by `$template->useRoles`)
 are omitted from the pages_access table, as they aren't necessary.
 
 ## Methods

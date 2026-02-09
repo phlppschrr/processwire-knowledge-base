@@ -16,5 +16,5 @@ Source: `wire/core/Field.php`
 - `$notes: string` Additional notes text about the field
 - `$icon: string` Icon name used by the field, if applicable
 - `$tags: string` Tags that represent this field, if applicable (space separated string).
-- `$tagList: array` Same as $tags property, but as an array.
+- `$tagList: array` Same as `$tags` property, but as an array.
 - `$allowContexts: array` Names of settings that are custom configured to be allowed for context.

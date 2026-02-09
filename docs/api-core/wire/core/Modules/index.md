@@ -35,7 +35,7 @@ $m = $modules->MarkupPagerNav;
 Note that when iterating, find(), or calling any other method that returns module(s), excepting get(), a ModulePlaceholder may be
 returned rather than a real Module. ModulePlaceholders are used in instances when the module may or may not be needed at runtime
 in order to save resources. As a result, anything iterating through these Modules should check to make sure it's not a ModulePlaceholder
-before using it. If it's a ModulePlaceholder, then the real Module can be instantiated/retrieved by $modules->get($className).
+before using it. If it's a ModulePlaceholder, then the real Module can be instantiated/retrieved by `$modules->get($className)`.
 
 ## Methods
 - [`__construct(string $path)`](method-__construct.md) Construct the Modules

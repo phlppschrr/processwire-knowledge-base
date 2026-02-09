@@ -16,8 +16,8 @@ Common methods:
 - [`cacheGroup()`](method-cachegroup.md)
 
 Pages Loader Cache
-$pages->cacher
-Implements page caching of loaded pages and PageArrays for $pages API variable
+`$pages->cacher`
+Implements page caching of loaded pages and PageArrays for `$pages` API variable
 
 ## Methods
 - [`__construct(Pages $pages)`](method-__construct.md) Construct

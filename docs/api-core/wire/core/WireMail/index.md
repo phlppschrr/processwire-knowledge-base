@@ -20,7 +20,7 @@ Groups:
 Group: [other](group-other.md)
 
 A module type that handles sending of email in ProcessWire
-$m
+`$m`
 
 Below are 2 different ways you can get a new instance of WireMail.
 ~~~~~

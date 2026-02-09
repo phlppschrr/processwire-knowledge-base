@@ -39,7 +39,7 @@ https://processwire.com/about/license/mit/
 
 
 Holds ProcessWire configuration settings as defined in /wire/config.php and /site/config.php.
-For more detailed descriptions of these $config properties, including default values, see the
+For more detailed descriptions of these `$config` properties, including default values, see the
 [/wire/config.php](https://github.com/processwire/processwire/blob/master/wire/config.php) file.
 
 

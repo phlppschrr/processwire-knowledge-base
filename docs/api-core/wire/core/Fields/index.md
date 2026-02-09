@@ -22,8 +22,8 @@ Manages collection of ALL Field instances, not specific to any particular Fieldg
 
 
 Manages all custom fields in ProcessWire, independently of any Fieldgroup.
-$fields
-Each field returned is an object of type `Field`. The $fields API variable is iterable:
+`$fields`
+Each field returned is an object of type `Field`. The `$fields` API variable is iterable:
 ~~~~~
 foreach($fields as $field) {
   echo "<p>Name: $field->name, Type: $field->type, Label: $field->label</p>";
