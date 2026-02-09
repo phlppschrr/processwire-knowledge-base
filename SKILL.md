@@ -31,6 +31,32 @@ The index is organized into API Variables, Core Classes, and Functions. Categori
 - Prefer `docs/api-core` for smaller context; fall back to `docs/api-full` only if needed.
 - Start from `index.md`, then drill down via group files (`group-*.md`) before opening method files.
 - Use `_search.json` for compact lookups before opening full files.
+- If a broad keyword search is needed across `docs/`, use `scripts/search_docs.py` and prioritize hits from `docs/api-core`, then `docs/api-full`, then `docs/documentation`, then `docs/blog-posts`. Exact filename matches should be treated as highest priority.
+
+## Search Script
+Use the script when the user asks for broad keyword search across the docs folder or within a specific docs group.
+
+```bash
+python3 scripts/search_docs.py "selector" --limit 20
+python3 scripts/search_docs.py "selector" --limit 20 --format json
+python3 scripts/search_docs.py "selector" --source api-full
+python3 scripts/search_docs.py "selector" --source official-docs
+python3 scripts/search_docs.py "selector" --source blog-posts
+python3 scripts/search_docs.py "selector" --source blog-posts --per-file 3
+python3 scripts/search_docs.py "selector" --source blog-posts --show-score
+python3 scripts/search_docs.py "selector" --source blog-posts --context 2
+```
+
+Behavior:
+- Searches only `docs/` (no other folders).
+- Prefers ripgrep (`rg`) when available; falls back to pure Python for portability.
+- Ranking priority: `docs/api-core` > `docs/api-full` > `docs/documentation` > `docs/blog-posts`.
+- Filename matches (query appears in filename) receive the highest priority boost.
+- Blog posts are additionally ranked by recency based on the date in the filename (YYYY-MM-DD-...).
+- `--source` can restrict search to a docs group: `api-full`, `api-core`, `official-docs` (docs/documentation), `blog-posts`, or `all`.
+- `--per-file` limits results per file to reduce noise (default: 1).
+- `--show-score` appends the ranking score to each hit.
+- `--context N` prints N lines before and after each hit.
 
 ## Hookable Methods
 Methods implemented with a `___` prefix are hookable. In the docs:
