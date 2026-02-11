@@ -65,6 +65,8 @@ cat > "$out_dir/context7.json" <<'EOF'
   "$schema": "https://context7.com/schema/context7.json",
   "projectTitle": "ProcessWire API Docs",
   "description": "Unofficial auto-generated ProcessWire API docs in LLM-friendly Markdown format.",
+  "url": "https://context7.com/phlppschrr/processwire-api-docs",
+  "public_key": "pk_XuH2Gd8WMmwsUqMMUkUKG",
   "folders": [
     "api-docs"
   ],
