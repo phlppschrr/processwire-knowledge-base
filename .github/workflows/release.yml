@@ -71,3 +71,36 @@ jobs:
           name: ${{ steps.tagger.outputs.tag }}
           body_path: release_notes.md
           files: ${{ steps.tagger.outputs.zip_name }}
+
+      - name: Publish API docs repo payload
+        env:
+          API_DOCS_TARGET_REPO: phlppschrr/processwire-api-docs
+          API_DOCS_TARGET_BRANCH: main
+          API_DOCS_REPO_TOKEN: ${{ secrets.API_DOCS_REPO_TOKEN }}
+        shell: bash
+        run: |
+          if [ -z "$API_DOCS_REPO_TOKEN" ]; then
+            echo "Missing required secret: API_DOCS_REPO_TOKEN" >&2
+            exit 1
+          fi
+
+          export_dir="$(mktemp -d)"
+          scripts/build_api_docs_repo.sh "$export_dir"
+
+          repo_dir="$(mktemp -d)"
+          git clone "https://x-access-token:${API_DOCS_REPO_TOKEN}@github.com/${API_DOCS_TARGET_REPO}.git" "$repo_dir"
+
+          find "$repo_dir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R "$export_dir/." "$repo_dir/"
+
+          cd "$repo_dir"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No API docs changes to publish."
+            exit 0
+          fi
+
+          git commit -m "Publish API docs ${{ steps.tagger.outputs.tag }}"
+          git push origin "HEAD:${API_DOCS_TARGET_BRANCH}"
